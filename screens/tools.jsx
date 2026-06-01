@@ -262,8 +262,16 @@
         <window.LP_TopBar current="tools" onNav={onNav} />
         <main className="tools-shell">
           <header className="tools-hero">
-            <h1>Free Exam Tools</h1>
-            <p>Plan your prep, convert scores, check eligibility, time your reading and sharpen pronunciation — all free, all in your browser.</p>
+            <div className="home-hero-photo sa-hero-photo">
+              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1400&q=70"
+                   alt="Laptop, notebook and coffee — planning exam prep" loading="lazy"
+                   onError={(e) => { const p = e.target.closest(".home-hero-photo"); if (p) p.classList.add("no-photo"); }} />
+              <div className="hhp-overlay" />
+              <div className="ep-hero-cap">
+                <h1>Free Exam Tools</h1>
+                <p>Plan your prep, convert scores, check eligibility, time your reading and sharpen pronunciation — all free, in your browser.</p>
+              </div>
+            </div>
           </header>
           <Tabs tab={tab} setTab={setTab} />
           {tab === "planner" && (window.LP_StudyPlannerPanel
