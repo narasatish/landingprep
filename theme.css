@@ -21,6 +21,7 @@
   /* Brand — vibrant, modern */
   --accent:    #4F46E5;   /* indigo primary */
   --accent-2:  #7C3AED;   /* violet secondary */
+  --accent-3:  #06B6D4;   /* cyan tertiary (banners/accents) */
   --accent-ink: #FFFFFF;
   --ember:     #F97316;   /* warm orange */
   --leaf:      #10B981;   /* fresh green */
@@ -146,7 +147,9 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
   box-shadow: var(--shadow-sm);
+  transition: box-shadow 200ms ease, border-color 200ms ease;
 }
+.card:hover { box-shadow: var(--shadow); border-color: var(--line-2); }
 .card-soft {
   background: var(--tint);
   border: 1px solid var(--line);
