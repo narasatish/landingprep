@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-016",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 16",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-016-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You are a member of a community choir that is looking for a new rehearsal space. You have identified a local church hall that might be suitable.",
+      "recipient": "the church hall administrator",
+      "bulletPoints": [
+        "Describe your group and what the space would be used for",
+        "Ask about availability and rental fees",
+        "Enquire about any equipment or facilities that are included"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "Your child's school is planning to cut music and art classes due to budget constraints. Write a letter to the principal opposing this decision and explaining why these subjects are important.",
+      "modelAnswer": "Subject: Inquiry Regarding Church Hall Rental for Community Choir Rehearsals\n\nDear Church Hall Administrator,\n\nMy name is Sarah Chen, and I am a member of the Willow Creek Community Choir. We are a non-profit, volunteer-based choir of approximately 30 enthusiastic singers who perform at local events and senior residences. We are currently seeking a new, accessible rehearsal space, and your church hall has come highly recommended as a potential venue. We would primarily use the space for our weekly rehearsals, which typically run for two hours on a weekday evening, plus occasional extra sessions closer to performances.\n\nWe are very interested in learning more about the hall's availability, particularly for Tuesday or Wednesday evenings, and your current rental fee structure for community groups. Could you please provide details on both of these points?\n\nAdditionally, we would appreciate it if you could let us know what equipment or facilities are included with the rental. Specifically, we are curious if there are chairs, tables, a piano, or any audio equipment available for use.\n\nThank you for your time and consideration. We look forward to hearing from you soon and potentially discussing this further.\n\nSincerely,\n\nSarah Chen\nWillow Creek Community Choir Member"
+    },
+    {
+      "id": "celpip-writing-016-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your municipality is planning to reduce its budget and must choose between two areas to cut spending. Which cut do you think is more acceptable?",
+      "optionA": "Reduce the frequency of park maintenance and grass cutting",
+      "optionB": "Close one of the two public outdoor swimming pools during winter months",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A city planning department is seeking community input on a new neighbourhood development. Describe what features you would most like to see in the new development, why they are important to your community, and any concerns you have.",
+      "modelAnswer": "I believe that reducing the frequency of park maintenance and grass cutting is the more acceptable budget cut for our municipality. While aesthetically impactful, this option presents fewer long-term drawbacks and public health concerns compared to closing a swimming pool.\n\nFirstly, a slight reduction in maintenance frequency would not render parks unusable. Residents could still enjoy these spaces for walking, picnics, and recreation, albeit with slightly longer grass or less manicured flowerbeds. This is a minor inconvenience that most people would understand given the budget constraints. Furthermore, it might even foster a slightly wilder, more natural habitat for local wildlife, which some might appreciate.\n\nSecondly, closing a public outdoor swimming pool, even during winter months, carries greater implications. It removes a valuable recreational and fitness resource that some residents rely on for exercise and therapy, particularly those without access to private facilities. Moreover, maintaining two pools, even if one is closed, still incurs significant fixed costs like heating and chemical treatment for the operational pool, limiting the actual savings.\n\nWhile less frequent park maintenance might lead to a less pristine appearance, it preserves the functionality of our green spaces and avoids cutting off a crucial public health and recreational amenity like a swimming pool. The temporary aesthetic compromise is a small price to pay for maintaining essential services."
+    }
+  ]
+}

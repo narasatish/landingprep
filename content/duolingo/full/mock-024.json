@@ -1,0 +1,35 @@
+{
+  "id": "duolingo-full-024",
+  "exam": "duolingo",
+  "type": "full",
+  "title": "Duolingo English Test Full Mock Test 24",
+  "durationSeconds": 3600,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "adaptive",
+      "testId": "duolingo-adaptive-024",
+      "file": "duolingo/adaptive/test-024.json"
+    },
+    {
+      "section": "literacy",
+      "testId": "duolingo-literacy-024",
+      "file": "duolingo/literacy/test-024.json"
+    },
+    {
+      "section": "comprehension",
+      "testId": "duolingo-comprehension-024",
+      "file": "duolingo/comprehension/test-024.json"
+    },
+    {
+      "section": "conversation",
+      "testId": "duolingo-conversation-024",
+      "file": "duolingo/conversation/test-024.json"
+    },
+    {
+      "section": "production",
+      "testId": "duolingo-production-024",
+      "file": "duolingo/production/test-024.json"
+    }
+  ]
+}

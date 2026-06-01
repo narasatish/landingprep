@@ -1,0 +1,48 @@
+{
+  "id": "duolingo-production-020",
+  "exam": "duolingo",
+  "section": "production",
+  "type": "section",
+  "title": "Duolingo English Test Production Practice Test 20",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Write your response within the time limit. Use the rubric for review.",
+  "questions": [
+    {
+      "id": "duolingo-production-020-q01",
+      "questionType": "writing_task",
+      "prompt": "[1] Write an essay discussing the benefits and limitations of remote work.",
+      "modelAnswer": "A strong response should address remote work clearly, organize ideas logically, and include relevant examples without unsupported claims.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "remote work",
+      "fingerprint": "8a0279a8e95584b494"
+    },
+    {
+      "id": "duolingo-production-020-q02",
+      "questionType": "writing_task",
+      "prompt": "[2] Write a formal email requesting information about a programme related to remote work.",
+      "modelAnswer": "A strong response should address remote work clearly, organize ideas logically, and include relevant examples without unsupported claims.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "remote work",
+      "fingerprint": "6634ac1fbdfb6cd930"
+    }
+  ],
+  "fingerprints": [
+    "8a0279a8e95584b494",
+    "6634ac1fbdfb6cd930"
+  ]
+}

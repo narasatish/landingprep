@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-006",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 6",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-006",
+      "file": "gmat/quant/test-006.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-006",
+      "file": "gmat/verbal/test-006.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-006",
+      "file": "gmat/data-insights/test-006.json"
+    }
+  ]
+}

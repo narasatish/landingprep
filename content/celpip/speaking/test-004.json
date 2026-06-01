@@ -1,0 +1,192 @@
+{
+  "id": "celpip-speaking-004",
+  "exam": "celpip",
+  "section": "speaking",
+  "type": "section",
+  "title": "CELPIP Speaking Practice Test 4",
+  "durationSeconds": 1200,
+  "questionCount": 8,
+  "instructions": "You will complete 8 speaking tasks. Read the prompt carefully, use your preparation time, then speak clearly and at a natural pace. Aim to fill the response time fully.",
+  "scoringDimensions": [
+    "Content and Coherence",
+    "Vocabulary",
+    "Listenability",
+    "Task Fulfillment"
+  ],
+  "questions": [
+    {
+      "id": "celpip-speaking-004-q1",
+      "taskNumber": 1,
+      "taskType": "giving_advice",
+      "title": "Giving Advice",
+      "prepSeconds": 30,
+      "responseSeconds": 90,
+      "prompt": "Your neighbour is about to renovate their kitchen for the first time and is very nervous about going over budget and making the wrong choices. They have asked you for advice. What would you tell them to help them plan and execute the renovation successfully?",
+      "sceneDescription": null,
+      "optionA": null,
+      "optionB": null,
+      "tip": "Give 2–3 concrete, specific tips. Explain the potential consequences of not following the advice.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "celpip-speaking-004-q2",
+      "taskNumber": 2,
+      "taskType": "personal_experience",
+      "title": "Talking About a Personal Experience",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "Describe a time when you helped someone in an unexpected or difficult situation. What happened, how did you help, and what was the outcome?",
+      "sceneDescription": null,
+      "optionA": null,
+      "optionB": null,
+      "tip": "Include specific details about the person, the situation, and what you did.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "celpip-speaking-004-q3",
+      "taskNumber": 3,
+      "taskType": "describing_a_scene",
+      "title": "Describing a Scene",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "Describe everything you can see in this scene in as much detail as possible.",
+      "sceneDescription": "A hospital waiting room. Several people are seated in rows of chairs. A young woman is reading a magazine. An elderly man has his arm in a sling and looks tired. A mother is comforting a small child. A nurse is standing at the reception desk talking to a man who appears anxious. A television on the wall is showing a news programme.",
+      "optionA": null,
+      "optionB": null,
+      "tip": "Describe people, their appearances, expressions, activities, and the overall atmosphere.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "celpip-speaking-004-q4",
+      "taskNumber": 4,
+      "taskType": "making_predictions",
+      "title": "Making Predictions",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "What do you think is happening in this scene, and what do you predict will happen next? Give at least two predictions.",
+      "sceneDescription": "A group of university students is gathered around a table covered in empty coffee cups and open textbooks. One student has their head in their hands. It is clearly very late at night — the windows are dark and a clock on the wall shows 2:00 am.",
+      "optionA": null,
+      "optionB": null,
+      "tip": "Describe what you observe and give specific, reasoned predictions about what comes next.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "id": "celpip-speaking-004-q5",
+      "taskNumber": 5,
+      "taskType": "comparing_and_persuading",
+      "title": "Comparing and Persuading",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "Compare these two workplace options and convince your friend that one is better. Give clear reasons for your recommendation.",
+      "sceneDescription": null,
+      "optionA": {
+        "label": "Option A",
+        "description": "Work for a large established corporation — job security, good benefits, structured career path, but less creative freedom and potentially slower promotion."
+      },
+      "optionB": {
+        "label": "Option B",
+        "description": "Work for a small startup — exciting and fast-paced, more responsibility and creativity, but less job security and fewer structured benefits."
+      },
+      "tip": "Consider both options fairly, then argue for one with confidence.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Introduce both items being compared. Discuss key similarities and differences, using comparative language (e.g., 'while', 'whereas', 'on the other hand'). Conclude with an overall assessment or personal preference."
+    },
+    {
+      "id": "celpip-speaking-004-q6",
+      "taskNumber": 6,
+      "taskType": "dealing_with_situation",
+      "title": "Dealing with a Difficult Situation",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "You borrowed your roommate's bicycle without asking permission and accidentally damaged the front wheel. You need to tell your roommate what happened. What would you say, and how would you handle this conversation?",
+      "sceneDescription": null,
+      "optionA": null,
+      "optionB": null,
+      "tip": "Be honest, take responsibility, apologise sincerely, and offer a solution.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "celpip-speaking-004-q7",
+      "taskNumber": 7,
+      "taskType": "expressing_opinions",
+      "title": "Expressing Opinions",
+      "prepSeconds": 30,
+      "responseSeconds": 90,
+      "prompt": "Some people believe that social media companies should be legally responsible for all harmful content posted on their platforms. Others argue that it is impossible to moderate all content and that over-regulation would restrict freedom of speech. What is your view? Support your opinion with specific reasons and examples.",
+      "sceneDescription": null,
+      "optionA": null,
+      "optionB": null,
+      "tip": "Give a clear position and support it with 2–3 well-explained reasons.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "id": "celpip-speaking-004-q8",
+      "taskNumber": 8,
+      "taskType": "unusual_situation",
+      "title": "Describing an Unusual Situation",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "Describe what is unusual about this photo and suggest at least two possible explanations for why this might be happening.",
+      "sceneDescription": "A photograph showing an office where every desk has a live plant growing out of the computer keyboard. The plants are flowering and appear healthy. Employees at their desks appear to be working normally, as if this is completely ordinary.",
+      "optionA": null,
+      "optionB": null,
+      "tip": "Describe the image clearly, identify what is strange, and offer creative but plausible explanations.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    }
+  ]
+}

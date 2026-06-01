@@ -1,0 +1,41 @@
+{
+  "id": "gre-writing-006",
+  "exam": "gre",
+  "section": "writing",
+  "type": "section",
+  "title": "GRE Analytical Writing Practice Test 6",
+  "durationSeconds": 1800,
+  "questionCount": 1,
+  "instructions": "Complete both tasks. Task 1 (Issue): 30 minutes, 400–600 words recommended. Task 2 (Argument): 30 minutes, 400–600 words recommended.",
+  "questions": [
+    {
+      "id": "gre-writing-006-q1",
+      "taskType": "issue",
+      "taskNumber": 1,
+      "title": "Analyse an Issue",
+      "timeMinutes": 30,
+      "prompt": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "scoringCriteria": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "wordTarget": 500,
+      "questionType": "writing_task",
+      "writingInstructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "rubric": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "situation": "Individual behaviour is more important than government policy in solving environmental problems.",
+      "questionNumber": 1,
+      "modelAnswer": "The assertion that individual behavior outweighs government policy in addressing environmental challenges presents a compelling dichotomy, yet a nuanced understanding reveals that both are indispensable, often in a synergistic relationship. While individual actions, when aggregated, can certainly exert significant influence, government policies frequently provide the necessary framework, incentives, and enforcement mechanisms to scale these efforts and tackle issues beyond the scope of personal choice. Therefore, to claim one is \"more important\" than the other oversimplifies a complex interplay; rather, their relative importance shifts depending on the specific environmental problem and the stage of its remediation.\n\nIndividual behavior is undeniably crucial, particularly in fostering a culture of environmental stewardship and driving demand for sustainable practices. For instance, the widespread adoption of recycling programs in many Western countries largely stemmed from individual willingness to sort waste, coupled with local government infrastructure. Similarly, consumer choices to purchase energy-efficient appliances or electric vehicles, though initially driven by personal values or economic incentives, cumulatively pressure industries to innovate and shift production. This \"bottom-up\" pressure can create a market for green products and services, demonstrating that individual actions are not merely symbolic but can create tangible shifts in resource consumption and waste generation.\n\nHowever, the limits of individual action become apparent when confronting large-scale, systemic environmental issues that require collective action, significant capital investment, or regulatory oversight. Consider the problem of industrial pollution or widespread deforestation. An individual consumer choosing to buy sustainable wood products, while laudable, cannot single-handedly prevent illegal logging operations by large corporations. Here, government policies such as strict land-use regulations, international treaties (like CITES), and robust enforcement mechanisms are paramount. These policies can impose fines, mandate sustainable practices, or even nationalize critical ecosystems, actions that are impossible for individuals to undertake. Similarly, the transition to renewable energy sources on a national scale necessitates government subsidies, tax incentives, and regulatory frameworks that encourage investment in solar farms and wind power grids, far exceeding the capacity of individual rooftop solar installations.\n\nMoreover, government policy often acts as a critical accelerator or prerequisite for effective individual behavior. For instance, public transportation infrastructure, a government initiative, empowers individuals to reduce their carbon footprint by choosing not to drive. Without such infrastructure, even the most environmentally conscious individual might be forced to rely on private vehicles. Conversely, policies like carbon taxes or cap-and-trade systems can internalize the environmental costs of certain behaviors, thereby nudging individuals and corporations towards more sustainable choices by making environmentally damaging activities more expensive. This dynamic illustrates that while individual behavior is the ultimate executor of change, government policy frequently sets the stage and dictates the parameters within which those behaviors can effectively occur.\n\nIn conclusion, the assertion that individual behavior is *more* important than government policy in solving environmental problems is an oversimplification. While individual actions are vital for cultivating environmental consciousness and driving demand for sustainable solutions, government policies provide the essential framework, scale, and enforcement power necessary to address systemic issues, regulate industries, and incentivize widespread behavioral shifts. A truly effective approach to environmental challenges recognizes the symbiotic relationship between the two, where government creates the conditions for sustainable behavior, and individuals, in turn, reinforce and expand those gains."
+    }
+  ]
+}

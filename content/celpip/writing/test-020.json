@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-020",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 20",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-020-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You have been caring for an elderly parent at home for the past year and are finding it increasingly difficult to manage this alongside your work responsibilities.",
+      "recipient": "your employer or HR representative",
+      "bulletPoints": [
+        "Explain your caregiving situation briefly",
+        "Describe how it is affecting your work schedule",
+        "Request a flexible work arrangement and suggest what would help"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You recently witnessed a car accident near your home and want to inform the local authority about unsafe road conditions. Write a letter describing what happened, the state of the road, and what action you think should be taken.",
+      "modelAnswer": "Dear Ms. Chen,\n\nI am writing to discuss a personal matter that is increasingly impacting my work schedule and to propose a potential solution. For the past year, I have been the primary caregiver for my elderly mother, who requires constant supervision and assistance with daily living activities following a recent fall.\n\nWhile I have tried my best to manage both responsibilities, her needs have become more demanding. This has unfortunately led to a few instances where I've had to adjust my start time or take short breaks during the day to attend to her, particularly for medication reminders or unexpected needs. I am concerned that this might affect my productivity and commitment to my projects.\n\nTo ensure I can continue to perform my duties effectively while meeting my mother's care needs, I would like to request a flexible work arrangement. Specifically, I believe a hybrid schedule, allowing me to work from home three days a week (e.g., Mondays, Wednesdays, and Fridays) and in the office on Tuesdays and Thursdays, would be immensely helpful. Alternatively, a compressed work week, where I work longer hours four days a week, is another option I'd be willing to explore.\n\nI am confident that with a more flexible schedule, I can maintain my current output and meet all deadlines. I am available to discuss this further at your convenience.\n\nSincerely,\n\n[Your Name]"
+    },
+    {
+      "id": "celpip-writing-020-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your community is considering how to support local small businesses. Which approach would you recommend?",
+      "optionA": "Create a 'buy local' campaign to raise awareness and encourage residents to shop locally",
+      "optionB": "Lobby the municipality to reduce business property taxes for local shops",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A youth services organisation is asking parents and young people about after-school programmes. Describe what types of activities young people in your community need, what currently exists, and what gaps in programming you have noticed.",
+      "modelAnswer": "I strongly recommend creating a 'buy local' campaign to support small businesses in our community. This approach directly addresses the most common challenge local shops face: visibility and customer traffic. By raising awareness through targeted social media campaigns, local events, and partnerships with community groups, we can effectively encourage residents to consciously choose local businesses for their purchases. For example, a \"Local Business Spotlight\" series featuring entrepreneurs and their unique offerings could foster a personal connection with shoppers, while a \"Shop Local Rewards Program\" could incentivize repeat business.\n\nWhile reducing property taxes (Option B) might offer some financial relief, its impact is often less immediate or directly felt by the customer. Tax reductions might not translate into lower prices or increased foot traffic, which are crucial for sustained growth. A 'buy local' campaign, conversely, directly stimulates demand and cultivates a supportive community culture, creating a more vibrant and resilient local economy in the long run."
+    }
+  ]
+}

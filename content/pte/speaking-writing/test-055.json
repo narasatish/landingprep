@@ -1,0 +1,738 @@
+{
+  "id": "pte-speaking-writing-055",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 55",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-055-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Global Food Insecurity Challenges”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "food security",
+      "modelAnswer": "Food security is a complex global challenge, encompassing availability, access, utilization, and stability. Climate change, geopolitical conflicts, and economic disparities significantly exacerbate the problem, leading to chronic hunger and malnutrition in vulnerable populations. Sustainable agricultural practices, improved infrastructure, and equitable distribution systems are crucial for achieving a future where everyone has consistent access to nutritious food. Addressing this requires collaborative efforts from governments, international organizations, and local communities.",
+      "readText": "Food security is a complex global challenge, encompassing availability, access, utilization, and stability. Climate change, geopolitical conflicts, and economic disparities significantly exacerbate the problem, leading to chronic hunger and malnutrition in vulnerable populations. Sustainable agricultural practices, improved infrastructure, and equitable distribution systems are crucial for achieving a future where everyone has consistent access to nutritious food. Addressing this requires collaborative efforts from governments, international organizations, and local communities."
+    },
+    {
+      "id": "pte-speaking-writing-055-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Food Supply Chain Resilience”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Ensuring food security requires robust and resilient global supply chains to prevent shortages.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "food security",
+      "modelAnswer": "Ensuring food security requires robust and resilient global supply chains to prevent shortages.",
+      "audioScript": "Ensuring food security requires robust and resilient global supply chains to prevent shortages."
+    },
+    {
+      "id": "pte-speaking-writing-055-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a line graph titled \"Global Food Insecurity Trends (2018-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "food security",
+      "modelAnswer": "This line chart illustrates global food insecurity trends from 2018 to 2023, showing a concerning increase in both severe and moderate categories. The number of severely food insecure people rose significantly from 135 million in 2018 to 280 million in 2023, more than doubling over the period. Similarly, moderately food insecure individuals increased steadily from 650 million to 820 million. The steepest rise for severe insecurity occurred between 2019 and 2020, likely due to global events. Overall, the data highlights a worsening food security situation worldwide.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Food Insecurity Trends (2018-2023)",
+        "yLabel": "Number of People (Millions)",
+        "xAxis": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Severely Food Insecure",
+            "values": [
+              135,
+              150,
+              195,
+              230,
+              255,
+              280
+            ]
+          },
+          {
+            "label": "Moderately Food Insecure",
+            "values": [
+              650,
+              675,
+              720,
+              760,
+              790,
+              820
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-055-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Community Food Programs”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "food security",
+      "modelAnswer": "The lecture discussed the crucial role of community food programs in tackling food insecurity. These programs, like food banks and community gardens, offer immediate nutritional aid and promote social unity. They educate people on sustainable food practices, building stronger local food systems. The speaker emphasized that their effectiveness largely depends on active volunteer participation and backing from local government initiatives.",
+      "audioScript": "Community food programs play a vital role in mitigating food insecurity, often by establishing local food banks, community gardens, and meal delivery services. These initiatives not only provide immediate nutritional support but also foster social cohesion and empower residents through education on sustainable food practices. They address root causes by connecting people with resources and building a more resilient local food system. The success of these programs relies heavily on volunteer engagement and local government support.",
+      "keyPoints": [
+        "Local food banks and gardens",
+        "Nutritional support and social cohesion",
+        "Education on sustainable practices",
+        "Volunteer and government support"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-055-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Key Nutrient Source”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Carbohydrates",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "food security",
+      "modelAnswer": "Carbohydrates",
+      "audioScript": "What primary macronutrient is found abundantly in grains and potatoes?"
+    },
+    {
+      "id": "pte-speaking-writing-055-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Sustainable Agriculture's Role”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "food security",
+      "wordTarget": 75,
+      "modelAnswer": "Sustainable agriculture, characterized by biodiversity and reduced chemical use, is essential for global food security, ensuring long-term productivity while protecting environmental health and requiring investment in research and education.",
+      "readText": "Achieving global food security demands a fundamental shift towards sustainable agricultural practices. Traditional farming often depletes soil nutrients and relies heavily on chemical inputs, contributing to environmental degradation. Sustainable methods, conversely, focus on biodiversity, water conservation, and reduced chemical use, ensuring long-term productivity without compromising ecological balance. Implementing these practices is crucial for feeding a growing population while protecting planetary health. This transition requires significant investment in research, farmer education, and policy support to be truly effective."
+    },
+    {
+      "id": "pte-speaking-writing-055-q07",
+      "questionType": "write_essay",
+      "prompt": "Food security, the consistent access to sufficient, safe, and nutritious food, remains a significant global challenge despite technological advancements in agriculture. What are the primary causes of ongoing food insecurity worldwide, and what measures should governments and international organizations prioritize to effectively address this complex issue?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "food security",
+      "wordTarget": 200,
+      "modelAnswer": "Food security, or the lack thereof, is a pervasive global problem, intricately linked to a myriad of socioeconomic and environmental factors. While agricultural technology has undeniably progressed, the primary causes of persistent food insecurity often lie beyond mere production capabilities. Conflict and political instability are major drivers, disrupting supply chains, displacing populations, and destroying infrastructure essential for food distribution. Climate change also plays a critical role, leading to extreme weather events like droughts and floods that decimate crops and livestock, particularly in vulnerable regions. Furthermore, poverty and economic inequality limit access to food for many, even when it is available, due to insufficient purchasing power.\n\nTo effectively combat this multifaceted challenge, governments and international organizations must adopt a comprehensive strategy. Prioritizing sustainable agricultural practices is crucial, focusing on climate-resilient crops and water management techniques to mitigate the impacts of environmental shifts. Investing in infrastructure, such as rural roads and storage facilities, can reduce post-harvest losses and improve market access for farmers. Additionally, strengthening social safety nets and income generation programs can empower vulnerable populations to afford nutritious food. Finally, promoting peace and stability through diplomatic efforts is fundamental, as conflict resolution directly contributes to rebuilding food systems and ensuring consistent access for all. These coordinated efforts are essential to moving towards a food-secure world."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Bilingualism's Cognitive Edge”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q08",
+      "modelAnswer": "Research consistently demonstrates that bilingual individuals often exhibit superior cognitive flexibility and problem-solving skills compared to their monolingual counterparts. The constant switching between languages strengthens executive functions, including attention control and task-switching abilities. This cognitive advantage extends across the lifespan, potentially delaying the onset of age-related cognitive decline. Learning a second language, therefore, is not merely a linguistic achievement but a significant boost to brain health and overall mental agility.",
+      "readText": "Research consistently demonstrates that bilingual individuals often exhibit superior cognitive flexibility and problem-solving skills compared to their monolingual counterparts. The constant switching between languages strengthens executive functions, including attention control and task-switching abilities. This cognitive advantage extends across the lifespan, potentially delaying the onset of age-related cognitive decline. Learning a second language, therefore, is not merely a linguistic achievement but a significant boost to brain health and overall mental agility."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Microbiomes and Health”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q09",
+      "modelAnswer": "The human microbiome, a vast ecosystem of microorganisms residing within and on our bodies, plays a pivotal role in maintaining health. These microbial communities influence digestion, immune system development, and even mental well-being. Imbalances in the microbiome are increasingly linked to various diseases, from inflammatory bowel conditions to neurological disorders. Understanding and manipulating the microbiome through diet and probiotics offers promising avenues for preventing and treating a wide range of human ailments, revolutionizing personalized medicine.",
+      "readText": "The human microbiome, a vast ecosystem of microorganisms residing within and on our bodies, plays a pivotal role in maintaining health. These microbial communities influence digestion, immune system development, and even mental well-being. Imbalances in the microbiome are increasingly linked to various diseases, from inflammatory bowel conditions to neurological disorders. Understanding and manipulating the microbiome through diet and probiotics offers promising avenues for preventing and treating a wide range of human ailments, revolutionizing personalized medicine."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Cultural Preservation”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q10",
+      "modelAnswer": "The digital age presents both opportunities and challenges for cultural heritage preservation. While digitization allows for broader access and safeguards against physical deterioration, it also raises concerns about data longevity, authenticity, and intellectual property rights. Museums and archives are actively developing strategies to ensure that digital copies accurately represent original artifacts and remain accessible for future generations. This involves careful metadata creation, standardized formats, and robust long-term storage solutions to prevent digital obsolescence.",
+      "readText": "The digital age presents both opportunities and challenges for cultural heritage preservation. While digitization allows for broader access and safeguards against physical deterioration, it also raises concerns about data longevity, authenticity, and intellectual property rights. Museums and archives are actively developing strategies to ensure that digital copies accurately represent original artifacts and remain accessible for future generations. This involves careful metadata creation, standardized formats, and robust long-term storage solutions to prevent digital obsolescence."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Neuroplasticity and Learning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q11",
+      "modelAnswer": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, underpins lifelong learning. This concept challenges the traditional view of the adult brain as fixed, demonstrating its capacity for adaptation and growth in response to new experiences, skills, and even injuries. Engaging in mentally stimulating activities, learning new languages, or mastering musical instruments actively enhances neuroplasticity. This continuous adaptation is fundamental for cognitive resilience and personal development at any age.",
+      "readText": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, underpins lifelong learning. This concept challenges the traditional view of the adult brain as fixed, demonstrating its capacity for adaptation and growth in response to new experiences, skills, and even injuries. Engaging in mentally stimulating activities, learning new languages, or mastering musical instruments actively enhances neuroplasticity. This continuous adaptation is fundamental for cognitive resilience and personal development at any age."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Biodiversity and Ecosystems”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q12",
+      "modelAnswer": "Biodiversity loss represents a critical threat to ecosystem services, which are the essential benefits nature provides to humanity. These services include clean air and water, pollination of crops, and climate regulation. When species disappear, the intricate balance of ecosystems is disrupted, leading to cascading effects that undermine human well-being and economic stability. Protecting biodiversity is therefore not just an environmental issue but a fundamental requirement for sustainable development and the long-term health of the planet.",
+      "readText": "Biodiversity loss represents a critical threat to ecosystem services, which are the essential benefits nature provides to humanity. These services include clean air and water, pollination of crops, and climate regulation. When species disappear, the intricate balance of ecosystems is disrupted, leading to cascading effects that undermine human well-being and economic stability. Protecting biodiversity is therefore not just an environmental issue but a fundamental requirement for sustainable development and the long-term health of the planet."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The role of social media in modern communication has dramatically transformed global interactions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Impact”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q13",
+      "modelAnswer": "The role of social media in modern communication has dramatically transformed global interactions.",
+      "audioScript": "The role of social media in modern communication has dramatically transformed global interactions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration often leads to complex challenges in cultural integration within host societies.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Integration”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q14",
+      "modelAnswer": "International migration often leads to complex challenges in cultural integration within host societies.",
+      "audioScript": "International migration often leads to complex challenges in cultural integration within host societies."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation significantly impact employment trends and productivity across industries.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Automation's Economic Effects”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q15",
+      "modelAnswer": "The economics of automation significantly impact employment trends and productivity across industries.",
+      "audioScript": "The economics of automation significantly impact employment trends and productivity across industries."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Renewable energy infrastructure investment is crucial for transitioning to a sustainable global economy.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q16",
+      "modelAnswer": "Renewable energy infrastructure investment is crucial for transitioning to a sustainable global economy.",
+      "audioScript": "Renewable energy infrastructure investment is crucial for transitioning to a sustainable global economy."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Urban heat islands require innovative mitigation strategies to protect public health and comfort.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Heat Mitigation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q17",
+      "modelAnswer": "Urban heat islands require innovative mitigation strategies to protect public health and comfort.",
+      "audioScript": "Urban heat islands require innovative mitigation strategies to protect public health and comfort."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Financial literacy is essential for economic inclusion and personal well-being in today's world.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Financial Literacy Importance”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q18",
+      "modelAnswer": "Financial literacy is essential for economic inclusion and personal well-being in today's world.",
+      "audioScript": "Financial literacy is essential for economic inclusion and personal well-being in today's world."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Nanotechnology in materials science promises revolutionary advancements across many technological fields.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Nanotechnology in Materials”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q19",
+      "modelAnswer": "Nanotechnology in materials science promises revolutionary advancements across many technological fields.",
+      "audioScript": "Nanotechnology in materials science promises revolutionary advancements across many technological fields."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The science of sleep is vital for memory consolidation and overall cognitive function.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Sleep and Memory”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q20",
+      "modelAnswer": "The science of sleep is vital for memory consolidation and overall cognitive function.",
+      "audioScript": "The science of sleep is vital for memory consolidation and overall cognitive function."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Digital literacy in education is increasingly crucial for students' future academic and career success.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Digital Literacy in Education”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q21",
+      "modelAnswer": "Digital literacy in education is increasingly crucial for students' future academic and career success.",
+      "audioScript": "Digital literacy in education is increasingly crucial for students' future academic and career success."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Key Components and Products of Photosynthesis\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q22",
+      "modelAnswer": "The table illustrates the key components and products of photosynthesis, divided into two main stages. The first stage, Light-Dependent Reactions, requires sunlight and water as inputs, producing ATP, NADPH, and Oxygen, and occurs in the thylakoid membranes. The second stage, Light-Independent Reactions, also known as the Calvin Cycle, utilizes ATP, NADPH, and carbon dioxide as inputs. It yields glucose, ADP, and NADP+, taking place in the stroma. This highlights the intricate process where energy is captured and converted into sugar.",
+      "visual": {
+        "chartType": "table",
+        "title": "Key Components and Products of Photosynthesis",
+        "headers": [
+          "Process Stage",
+          "Inputs",
+          "Outputs",
+          "Location"
+        ],
+        "rows": [
+          [
+            "Light-Dependent Reactions",
+            "Sunlight, Water (H2O)",
+            "ATP, NADPH, Oxygen (O2)",
+            "Thylakoid Membranes"
+          ],
+          [
+            "Light-Independent Reactions (Calvin Cycle)",
+            "ATP, NADPH, Carbon Dioxide (CO2)",
+            "Glucose (C6H12O6), ADP, NADP+",
+            "Stroma"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Population Growth Projections (1950-2100)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q23",
+      "modelAnswer": "The line graph illustrates global population growth projections from 1950 to 2100, segmented by developed and developing regions. The total population, starting at 2.5 billion in 1950, shows a steady increase, projected to reach its peak around 10.9 billion by 2100. Developing regions consistently account for the largest share, growing from 1.7 billion to an anticipated 9.2 billion. In contrast, developed regions show a much slower growth, moving from 0.8 billion to 1.7 billion. The most significant growth period for the total population appears between 1950 and 2050.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Population Growth Projections (1950-2100)",
+        "yLabel": "Population (Billions)",
+        "xAxis": [
+          "1950",
+          "1975",
+          "2000",
+          "2025",
+          "2050",
+          "2075",
+          "2100"
+        ],
+        "series": [
+          {
+            "label": "Total Population",
+            "values": [
+              2.5,
+              4.1,
+              6.1,
+              8,
+              9.7,
+              10.5,
+              10.9
+            ]
+          },
+          {
+            "label": "Developing Regions",
+            "values": [
+              1.7,
+              3.1,
+              5,
+              6.7,
+              8.2,
+              8.9,
+              9.2
+            ]
+          },
+          {
+            "label": "Developed Regions",
+            "values": [
+              0.8,
+              1,
+              1.1,
+              1.3,
+              1.5,
+              1.6,
+              1.7
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Top 5 Languages by Number of Native Speakers (Millions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q24",
+      "modelAnswer": "This bar chart illustrates the top five languages by the number of native speakers, measured in millions. Mandarin Chinese is clearly the most spoken language, with an impressive 920 million native speakers. Spanish follows significantly, with 480 million, while English ranks third at 380 million. Hindi is spoken by 340 million native speakers, closely followed by Arabic with 310 million. The data highlights the vast difference between the most spoken language, Mandarin, and the others, which fall below half a billion speakers. Overall, it provides a clear overview of global linguistic dominance.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Top 5 Languages by Number of Native Speakers (Millions)",
+        "yLabel": "Number of Native Speakers (Millions)",
+        "xAxis": [
+          "Mandarin Chinese",
+          "Spanish",
+          "English",
+          "Hindi",
+          "Arabic"
+        ],
+        "series": [
+          {
+            "label": "Native Speakers",
+            "values": [
+              920,
+              480,
+              380,
+              340,
+              310
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Ocean pH Levels (1850-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q25",
+      "modelAnswer": "This line graph illustrates the global average ocean pH levels from 1850 to 2020. The x-axis represents the years, while the y-axis indicates the pH level. In 1850, the pH was approximately 8.20. A clear downward trend is visible throughout the period. By 1970, it had dropped to 8.08, and the most recent data point in 2020 shows a pH of 8.01. This represents a significant decrease from the starting point, indicating increasing ocean acidification over the past 170 years, with the sharpest decline occurring in recent decades.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Ocean pH Levels (1850-2020)",
+        "yLabel": "pH Level",
+        "xAxis": [
+          "1850",
+          "1880",
+          "1910",
+          "1940",
+          "1970",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Ocean pH",
+            "values": [
+              8.2,
+              8.18,
+              8.15,
+              8.12,
+              8.08,
+              8.05,
+              8.01
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global Water Usage by Sector\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q26",
+      "modelAnswer": "This pie chart illustrates global water usage across different sectors. The most striking feature is that agriculture accounts for the vast majority of water consumption, at a substantial 70%. Following this, the industrial sector utilizes 20% of the world's water resources. Finally, domestic use, encompassing household and municipal consumption, represents the smallest share, at just 10%. Overall, the chart clearly highlights agriculture's dominant role in global water demand, significantly outweighing industrial and domestic needs combined.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global Water Usage by Sector",
+        "slices": [
+          {
+            "label": "Agriculture",
+            "value": 70
+          },
+          {
+            "label": "Industry",
+            "value": 20
+          },
+          {
+            "label": "Domestic",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q27",
+      "modelAnswer": "The lecture focused on non-verbal communication, highlighting its importance beyond spoken words. The speaker explained that elements like gestures, facial expressions, and body posture convey significant meaning, often revealing emotions and intentions. Understanding these cues is vital for effective communication, helping to prevent misunderstandings and build better relationships. The lecture also stressed that cultural background greatly influences how these non-verbal signals are interpreted by different individuals.",
+      "audioScript": "Non-verbal communication, often overlooked, constitutes a significant portion of our daily interactions. It includes gestures, facial expressions, body posture, and even the tone of voice. These cues can convey emotions, intentions, and attitudes more powerfully than spoken words, sometimes even contradicting verbal messages. Understanding and interpreting non-verbal signals is crucial for effective communication, helping to build rapport, avoid misunderstandings, and navigate social situations successfully. Cultural context plays a huge role in interpreting these subtle signals.",
+      "keyPoints": [
+        "Gestures, expressions, posture, tone",
+        "Conveys emotions and intentions",
+        "Crucial for effective communication",
+        "Cultural context is important"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Barriers to Effective Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q28",
+      "modelAnswer": "The lecture discussed the various barriers hindering effective communication. The speaker identified internal factors like differing perceptions, emotional states, and personal biases, along with external issues such as noise and inadequate listening. To overcome these, the lecture emphasized the need for active listening, empathy, and clear articulation of messages. Ultimately, recognizing and addressing these diverse obstacles is essential for ensuring successful information exchange in all forms of communication.",
+      "audioScript": "Effective communication is frequently hampered by various barriers, both internal and external. Internal barriers include perceptual differences, emotional states, and biases that distort messages. External barriers involve noise, poor listening skills, and the choice of inappropriate communication channels. Overcoming these obstacles requires active listening, empathy, clear articulation, and selecting the most suitable medium for the message. Recognizing and addressing these barriers is fundamental for successful information exchange in any context, from personal relationships to professional settings.",
+      "keyPoints": [
+        "Internal barriers: perception, emotion, bias",
+        "External barriers: noise, poor listening",
+        "Active listening, empathy, clear articulation",
+        "Crucial for successful information exchange"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q29",
+      "modelAnswer": "Verbal",
+      "audioScript": "Which communication method involves speaking directly to another person?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Email",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Digital Communication Tool”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q30",
+      "modelAnswer": "Email",
+      "audioScript": "What common digital tool is used for sending instant written messages?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Feedback",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Feedback in Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q31",
+      "modelAnswer": "Feedback",
+      "audioScript": "What is the term for a receiver's response to a sender's message?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Symbol",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Visual Communication Element”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-055-q32",
+      "modelAnswer": "Symbol",
+      "audioScript": "What visual element conveys meaning without words, like a traffic sign?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Diet, Exercise, and Chronic Disease”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-055-q33",
+      "modelAnswer": "Regular physical activity and a balanced diet are crucial for preventing chronic diseases like heart disease and diabetes, as they improve cardiovascular health, manage weight, and provide essential nutrients, offering a powerful preventive strategy.",
+      "readText": "The prevalence of chronic diseases such as heart disease, diabetes, and certain cancers has escalated globally, largely attributed to sedentary lifestyles and poor dietary choices. Regular physical activity significantly reduces the risk of these conditions by improving cardiovascular health, managing weight, and boosting immune function. Similarly, a balanced diet rich in fruits, vegetables, and whole grains, while low in processed foods and saturated fats, provides essential nutrients and protective compounds. Integrating both diet and exercise into daily routines is a powerful preventive strategy, far more effective than treating symptoms after disease onset."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Technology has revolutionized communication, offering unprecedented connectivity but also raising concerns about depth of interaction. Discuss the advantages and disadvantages of technology's impact on human communication, providing examples to support your viewpoint.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-055-q34",
+      "modelAnswer": "The advent of technology has undeniably transformed the landscape of human communication, bringing forth both remarkable advantages and discernible disadvantages. On one hand, technology, particularly the internet and mobile devices, has fostered unprecedented connectivity. Individuals can instantly communicate across vast geographical distances, maintaining relationships with friends and family worldwide through video calls, messaging apps, and social media. This accessibility is invaluable for emergency situations, global collaboration, and bridging cultural divides, allowing for a broader exchange of ideas and perspectives. Educational resources and professional networks have also expanded exponentially, enabling continuous learning and career development.\n\nHowever, this technological convenience often comes at the cost of the depth and quality of interaction. The reliance on digital communication can lead to a decrease in face-to-face engagement, potentially weakening interpersonal skills and emotional intelligence. Misunderstandings are more frequent in text-based exchanges, where non-verbal cues like tone and body language are absent. Furthermore, the constant barrage of notifications and the pressure to maintain an online presence can contribute to anxiety and social isolation, paradoxically, despite being constantly 'connected.' The superficiality of many online interactions, often reduced to likes and brief comments, may also diminish the richness of genuine human connection. Therefore, while technology offers immense benefits in communication, it is crucial to balance its use with traditional, in-person interactions to cultivate meaningful relationships and foster holistic well-being."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "In today's digital age, employers increasingly monitor employees' online activities and communications. To what extent do you agree or disagree that employers have the right to monitor their employees' digital presence, both at work and outside of work, and what are the implications of such practices?",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-055-q35",
+      "modelAnswer": "The debate surrounding employer monitoring of employees' digital presence is complex, balancing legitimate business interests against individual privacy rights. I largely disagree with the notion that employers have an extensive right to monitor employees' digital activities, particularly outside of work, as this encroaches upon fundamental privacy and can have significant negative implications.\n\nWhile employers certainly have a right to monitor activities conducted on company-owned devices and networks during work hours to ensure productivity, prevent data breaches, and maintain a professional environment, this right should be limited. Monitoring private communications or personal social media accounts, even if accessed during work, becomes problematic. Employees are entitled to a reasonable expectation of privacy, and excessive surveillance can foster a climate of distrust, reduce morale, and stifle creativity. It suggests a lack of faith in the workforce and can lead to increased stress and anxiety among employees, potentially impacting their mental well-being and overall job performance.\n\nFurthermore, extending monitoring beyond work hours and onto personal devices or private social media accounts is an egregious overreach. What employees do in their personal time, provided it does not directly violate company policy or bring the company into disrepute, should remain private. Such monitoring can lead to unfair disciplinary actions based on personal opinions or activities unrelated to job performance. The implications are far-reaching: it blurs the lines between professional and personal life, potentially deterring individuals from expressing themselves authentically online, even outside of work. It can also lead to legal challenges concerning privacy violations and contribute to a corporate culture where surveillance is prioritized over trust and respect. Therefore, a cautious and limited approach to employee monitoring is essential, safeguarding both business interests and individual autonomy."
+    }
+  ]
+}

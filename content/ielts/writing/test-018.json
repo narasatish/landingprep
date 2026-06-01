@@ -1,0 +1,79 @@
+{
+  "id": "ielts-writing-018",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 18",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-018-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The chart below shows the proportion of people who were literate in five regions of the world in 1990 and 2022. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "literacy",
+      "modelAnswer": "The bar chart illustrates the percentage of literate people across five global regions in two distinct years: 1990 and 2022.\n\nOverall, it is clear that literacy rates increased in all regions over the 32-year period. Europe and North America consistently maintained the highest proportions of literate individuals, while Africa and Asia, despite significant improvements, remained the regions with the lowest literacy rates.\n\nIn 1990, North America had the highest literacy rate at 98%, closely followed by Europe at 95%. South America reported 80% literacy, while Asia stood at 70%. Africa had the lowest proportion, with just over half (55%) of its population being literate. By 2022, Europe and North America had nearly universal literacy, both reaching 99%. South America also saw a substantial rise to 96%.\n\nThe most dramatic increases in literacy were observed in Africa and Asia. Africa's literacy rate soared from 55% in 1990 to 78% in 2022, marking a 23-percentage-point gain. Similarly, Asia experienced a significant improvement, with its proportion of literate people increasing from 70% to 92% over the same period, narrowing the gap with the more developed regions.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Literacy Rates by Region (1990 vs. 2022)",
+        "yLabel": "Proportion Literate (%)",
+        "xAxis": [
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "South America"
+        ],
+        "series": [
+          {
+            "label": "1990",
+            "values": [
+              55,
+              70,
+              95,
+              98,
+              80
+            ]
+          },
+          {
+            "label": "2022",
+            "values": [
+              78,
+              92,
+              99,
+              99,
+              96
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-018-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Despite global progress in education, literacy rates in some parts of the world remain very low. What are the causes of this, and what can be done to improve the situation?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "literacy",
+      "modelAnswer": "Despite considerable worldwide advancements in educational attainment, a significant proportion of the global population still struggles with fundamental literacy. This persistent disparity stems from a confluence of socio-economic and political factors, and its amelioration necessitates multi-faceted interventions.\n\nForemost among the causes is the pervasive issue of poverty, which renders access to schooling an unaffordable luxury for many families. In developing nations, for instance, children are often compelled to enter the workforce prematurely to supplement household income, thereby sacrificing their educational prospects. A stark illustration of this can be observed in parts of Sub-Saharan Africa, where child labour in agriculture is widespread, directly correlating with alarmingly low primary school completion rates and, consequently, enduring illiteracy into adulthood. Furthermore, gender inequality often exacerbates this problem, with girls disproportionately denied educational opportunities in favour of their male siblings, particularly in conservative societies.\n\nTo address this crisis, concerted efforts must focus on both economic empowerment and educational reform. Governments and international organisations should implement conditional cash transfer programmes, incentivising families to keep children in school rather than sending them to work. Brazil’s ‘Bolsa Família’ programme, for example, has demonstrably improved school attendance and reduced child labour by linking financial aid to educational compliance. Additionally, investing in accessible, free, and high-quality public education, coupled with robust adult literacy initiatives, is crucial. Such programmes, when culturally sensitive and community-led, can empower individuals previously excluded from formal education.\n\nIn conclusion, the enduring challenge of low literacy rates is primarily rooted in poverty and societal inequalities. A comprehensive strategy combining economic support for vulnerable families with enhanced investment in inclusive and accessible education is essential to foster global literacy."
+    }
+  ],
+  "variant": "academic"
+}

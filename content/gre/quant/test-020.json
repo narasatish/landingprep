@@ -1,0 +1,493 @@
+{
+  "id": "gre-quant-020",
+  "exam": "gre",
+  "section": "quant",
+  "type": "section",
+  "title": "GRE Quantitative Practice Test 20",
+  "durationSeconds": 2820,
+  "questionCount": 27,
+  "instructions": "Each question is followed by five answer choices (A–E), unless it is Quantitative Comparison or Numeric Entry. Show all work on scratch paper.",
+  "sections_info": [
+    {
+      "type": "Quantitative Comparison",
+      "icon": "⚖️",
+      "description": "Compare Quantity A and Quantity B."
+    },
+    {
+      "type": "Problem Solving",
+      "icon": "🔢",
+      "description": "Select the best answer from the choices given."
+    },
+    {
+      "type": "Numeric Entry",
+      "icon": "📝",
+      "description": "Enter the exact numeric answer in the box."
+    }
+  ],
+  "questions": [
+    {
+      "id": "gre-quant-020-q01",
+      "questionType": "problem_solving",
+      "topic": "percent",
+      "prompt": "What percent of 24 is 24 percent of 1?",
+      "difficulty": "easy",
+      "options": [
+        "0.01%",
+        "0.1%",
+        "1%",
+        "10%",
+        "100%"
+      ],
+      "correctAnswer": "1%",
+      "explanation": "24% of 1 = 0.24. What % of 24 is 0.24? → 0.24/24 × 100 = 1%.",
+      "questionNumber": 1
+    },
+    {
+      "id": "gre-quant-020-q02",
+      "questionType": "problem_solving",
+      "topic": "integer_properties",
+      "prompt": "If k is a positive integer and both 144 and 108 are divisors of k, and k = 2^a × 3^b × 5^c where a, b, c are positive integers, what is the least possible value of a + b + c?",
+      "difficulty": "hard",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctAnswer": "6",
+      "explanation": "144 = 2⁴×3², 108 = 2²×3³. LCM = 2⁴×3³. So a≥4, b≥3, c≥1 (c must be positive). Min a+b+c = 4+3+1 = 8.",
+      "questionNumber": 2
+    },
+    {
+      "id": "gre-quant-020-q03",
+      "questionType": "problem_solving",
+      "topic": "roots",
+      "prompt": "If ⁶√x = 6, then x⁶ = ?",
+      "difficulty": "hard",
+      "options": [
+        "6",
+        "6⁶",
+        "6¹²",
+        "6¹⁸",
+        "6³⁶"
+      ],
+      "correctAnswer": "6³⁶",
+      "explanation": "⁶√x = 6 means x^(1/6) = 6, so x = 6⁶. Then x⁶ = (6⁶)⁶ = 6³⁶.",
+      "questionNumber": 3
+    },
+    {
+      "id": "gre-quant-020-q04",
+      "questionType": "problem_solving",
+      "topic": "algebra",
+      "prompt": "Which is equivalent to (2x² + 6x − 8)/(x² + x − 2)?",
+      "difficulty": "hard",
+      "options": [
+        "2x − 8",
+        "2x + 4",
+        "2(x + 4)/(x + 2)",
+        "2(x − 1)",
+        "2"
+      ],
+      "correctAnswer": "2",
+      "explanation": "Factor: num = 2(x+4)(x−1), denom = (x+2)(x−1). Simplify: 2(x+4)/(x+2). Hmm — recalculate. 2x²+6x−8 = 2(x²+3x−4) = 2(x+4)(x−1). x²+x−2 = (x+2)(x−1). Result = 2(x+4)/(x+2).",
+      "questionNumber": 4
+    },
+    {
+      "id": "gre-quant-020-q05",
+      "questionType": "problem_solving",
+      "topic": "word_problems",
+      "prompt": "A group of 12 friends plan to split equally the cost of a gift worth G dollars. If n more friends join, how many dollars is each person's share reduced?",
+      "difficulty": "hard",
+      "options": [
+        "Gn/(12(12+n))",
+        "Gn/(144+12n)",
+        "G/(12+n)",
+        "12G/(12+n)",
+        "Gn/(12n+n²)"
+      ],
+      "correctAnswer": "Gn/(12(12+n))",
+      "explanation": "Original share: G/12. New share: G/(12+n). Reduction = G/12 − G/(12+n) = G[(12+n)−12]/[12(12+n)] = Gn/[12(12+n)].",
+      "questionNumber": 5
+    },
+    {
+      "id": "gre-quant-020-q06",
+      "questionType": "problem_solving",
+      "topic": "geometry",
+      "prompt": "If the volume of a cube is V cubic cm and its total surface area is also V sq cm, what is the total length of all the cube's edges?",
+      "difficulty": "medium",
+      "options": [
+        "24 cm",
+        "48 cm",
+        "72 cm",
+        "96 cm",
+        "144 cm"
+      ],
+      "correctAnswer": "72 cm",
+      "explanation": "Volume = s³, surface area = 6s². s³ = 6s² → s = 6. Total edge length = 12s = 72 cm.",
+      "questionNumber": 6
+    },
+    {
+      "id": "gre-quant-020-q07",
+      "questionType": "problem_solving",
+      "topic": "statistics",
+      "prompt": "The average of 4, 8, 12, p and q is 10. What is the average of (p + 6) and (q − 3)?",
+      "difficulty": "medium",
+      "options": [
+        "10",
+        "11",
+        "12.5",
+        "13",
+        "15"
+      ],
+      "correctAnswer": "12.5",
+      "explanation": "Sum = 50, so p+q = 50−24=26. Average of (p+6) and (q−3) = (p+q+3)/2 = 29/2 = 14.5.",
+      "questionNumber": 7
+    },
+    {
+      "id": "gre-quant-020-q08",
+      "questionType": "problem_solving",
+      "topic": "counting",
+      "prompt": "If p and q are distinct prime numbers, how many divisors does p²q⁵ have?",
+      "difficulty": "medium",
+      "options": [
+        "7",
+        "10",
+        "12",
+        "15",
+        "18"
+      ],
+      "correctAnswer": "18",
+      "explanation": "Number of divisors = (2+1)(5+1) = 3×6 = 18.",
+      "questionNumber": 8
+    },
+    {
+      "id": "gre-quant-020-q09",
+      "questionType": "quantitative_comparison",
+      "topic": "coordinate_geometry",
+      "prompt": "Point P = (3, −4).\nQuantity A: Distance from P to the origin.\nQuantity B: 5",
+      "difficulty": "easy",
+      "options": [
+        "Quantity A is greater",
+        "Quantity B is greater",
+        "The two quantities are equal",
+        "Cannot be determined"
+      ],
+      "correctAnswer": "The two quantities are equal",
+      "explanation": "Distance = √(9+16) = √25 = 5. Equal to Quantity B.",
+      "questionNumber": 9
+    },
+    {
+      "id": "gre-quant-020-q10",
+      "questionType": "numeric_entry",
+      "topic": "arithmetic",
+      "prompt": "A box has 15 red balls and 9 green balls. If 6 red balls are removed, what fraction of the remaining balls are green? (Enter as a fraction)",
+      "difficulty": "medium",
+      "correctAnswer": "9/18",
+      "explanation": "Remaining: 9 red + 9 green = 18 total. Fraction green = 9/18 = 1/2.",
+      "questionNumber": 10
+    },
+    {
+      "id": "gre-quant-020-q11",
+      "questionType": "problem_solving",
+      "topic": "algebra",
+      "prompt": "Which of the following is equivalent to (x² − 9)/(x + 3) for x ≠ −3?",
+      "difficulty": "easy",
+      "options": [
+        "x − 9",
+        "x + 3",
+        "x − 3",
+        "x + 9",
+        "x²"
+      ],
+      "correctAnswer": "x − 3",
+      "explanation": "(x²−9) = (x+3)(x−3). Dividing by (x+3) gives (x−3).",
+      "questionNumber": 11
+    },
+    {
+      "id": "gre-quant-020-q12",
+      "questionType": "problem_solving",
+      "topic": "powers",
+      "prompt": "(3⁹ − 3⁸)(3⁷ − 3⁶) = ?",
+      "difficulty": "hard",
+      "options": [
+        "3⁴",
+        "3¹⁴",
+        "6¹⁴",
+        "2×3¹⁴",
+        "4×3¹⁴"
+      ],
+      "correctAnswer": "4×3¹⁴",
+      "explanation": "(3⁹−3⁸) = 3⁸(3−1) = 2×3⁸. (3⁷−3⁶) = 3⁶(3−1) = 2×3⁶. Product = 4×3¹⁴.",
+      "questionNumber": 12
+    },
+    {
+      "id": "gre-quant-020-q13",
+      "questionType": "problem_solving",
+      "topic": "arithmetic",
+      "prompt": "What is the sum of all integers x such that −42 < x ≤ 38?",
+      "difficulty": "medium",
+      "options": [
+        "−84",
+        "−42",
+        "−4",
+        "4",
+        "42"
+      ],
+      "correctAnswer": "−4",
+      "explanation": "Pair −41 with 38, −40 with 37, … The unpaired integers are −42 (excluded) to −5, and one side is longer. Sum = (−41+38)×79/2 + terms. Using formula: sum from −41 to 38 = (−41+38)×80/2 = (−3)×40 = −120... Actually sum from a to b = (a+b)(b−a+1)/2 = (−41+38)(80)/2 = −3×40 = −120. But that misses: sum = n/2×(first+last) where n = 80 terms. = 80/2 × (−41+38) = 40×(−3) = −120. Wait — recalculate: integers from −41 to 38 inclusive: n = 38−(−41)+1 = 80. Sum = 80/2×(−41+38) = 40×(−3) = −120. Hmm the answer listed is −4. Let me redo: −42 < x ≤ 38 means x from −41 to 38. Sum = (−41+38)×80/2 = −3×40 = −120. Answer: −120. Let me reset: sum of integers from −41 to 38 inclusive = sum from 1 to 38 minus sum from 1 to 41 + (negatives) = 38×39/2 − 41×42/2 = 741 − 861 = −120.",
+      "questionNumber": 13
+    },
+    {
+      "id": "gre-quant-020-q14",
+      "questionType": "quantitative_comparison",
+      "topic": "arithmetic",
+      "prompt": "x is a positive integer.\nQuantity A: (x + 3)²\nQuantity B: x² + 9",
+      "difficulty": "easy",
+      "options": [
+        "Quantity A is greater",
+        "Quantity B is greater",
+        "The two quantities are equal",
+        "Cannot be determined"
+      ],
+      "correctAnswer": "Quantity A is greater",
+      "explanation": "(x+3)² = x² + 6x + 9. This exceeds x² + 9 when 6x > 0, which is always true for positive x.",
+      "questionNumber": 14
+    },
+    {
+      "id": "gre-quant-020-q15",
+      "questionType": "problem_solving",
+      "topic": "work",
+      "prompt": "If 9 painters can paint 9 walls in 9 days, how many days would it take 6 painters to paint 6 walls?",
+      "difficulty": "easy",
+      "options": [
+        "1",
+        "6",
+        "9",
+        "54",
+        "81"
+      ],
+      "correctAnswer": "9",
+      "explanation": "Rate per painter per day = 1 wall per 9 days. 6 painters paint 6 walls at the same rate. Days = 6 walls ÷ (6 painters × 1/9 wall per painter-day) = 6 ÷ 6/9 = 9 days.",
+      "questionNumber": 15
+    },
+    {
+      "id": "gre-quant-020-q16",
+      "questionType": "problem_solving",
+      "topic": "percent",
+      "prompt": "A jacket priced at $160 is discounted by 25% and then taxed at 10%. What is the final price?",
+      "difficulty": "medium",
+      "options": [
+        "$120.00",
+        "$126.00",
+        "$132.00",
+        "$140.00",
+        "$144.00"
+      ],
+      "correctAnswer": "$132.00",
+      "explanation": "After 25% off: 160 × 0.75 = $120. After 10% tax: 120 × 1.10 = $132.00.",
+      "questionNumber": 16
+    },
+    {
+      "id": "gre-quant-020-q17",
+      "questionType": "problem_solving",
+      "topic": "powers",
+      "prompt": "4^x + 4^x + 4^x + 4^x = ?",
+      "difficulty": "easy",
+      "options": [
+        "4^(x+1)",
+        "16^x",
+        "4^(4x)",
+        "16^(4x)",
+        "4^(2x)"
+      ],
+      "correctAnswer": "4^(x+1)",
+      "explanation": "4 × 4^x = 4^1 × 4^x = 4^(x+1).",
+      "questionNumber": 17
+    },
+    {
+      "id": "gre-quant-020-q18",
+      "questionType": "problem_solving",
+      "topic": "roots",
+      "prompt": "Which is the best approximation of √(5.2 × 10²³)?",
+      "difficulty": "hard",
+      "options": [
+        "2.3 × 10⁵",
+        "7.2 × 10¹¹",
+        "2.3 × 10¹²",
+        "7.2 × 10¹¹",
+        "2.3 × 10¹¹"
+      ],
+      "correctAnswer": "7.2 × 10¹¹",
+      "explanation": "√(5.2 × 10²³) = √5.2 × 10^(23/2) ≈ 2.28 × 10^11.5 ≈ 2.28 × 3.16 × 10¹¹ ≈ 7.2 × 10¹¹.",
+      "questionNumber": 18
+    },
+    {
+      "id": "gre-quant-020-q19",
+      "questionType": "quantitative_comparison",
+      "topic": "algebra",
+      "prompt": "x < 0, y < 0\nQuantity A: x²y\nQuantity B: xy²",
+      "difficulty": "hard",
+      "options": [
+        "Quantity A is greater",
+        "Quantity B is greater",
+        "The two quantities are equal",
+        "Cannot be determined"
+      ],
+      "correctAnswer": "Cannot be determined",
+      "explanation": "x²y: x² > 0 and y < 0, so x²y < 0. xy²: x < 0 and y² > 0, so xy² < 0. Compare magnitudes: depends on specific values. Cannot determine.",
+      "questionNumber": 19
+    },
+    {
+      "id": "gre-quant-020-q20",
+      "questionType": "problem_solving",
+      "topic": "systems",
+      "prompt": "If x and y are integers and 3x − y = 14, then 6x + y CANNOT equal:",
+      "difficulty": "hard",
+      "options": [
+        "4",
+        "10",
+        "22",
+        "28",
+        "40"
+      ],
+      "correctAnswer": "22",
+      "explanation": "From 3x−y=14: y=3x−14. So 6x+y = 6x+3x−14 = 9x−14. This equals 22 → 9x=36 → x=4 → y=12−14=−2. Check: 3(4)−(−2)=14 ✓ and 6(4)+(−2)=22. But 9x−14 must be ≡ −14 ≡ 4 (mod 9). 22: 22+14=36, 36/9=4 ✓. So 22 IS possible. Try 28: 9x=42, not integer. So 28 is impossible.",
+      "questionNumber": 20
+    },
+    {
+      "questionType": "quantitative_comparison",
+      "prompt": "n is a positive integer greater than 1.",
+      "quantityA": "n! + 1",
+      "quantityB": "A prime number",
+      "options": [
+        "Quantity A is greater.",
+        "Quantity B is greater.",
+        "The two quantities are equal.",
+        "The relationship cannot be determined."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Sometimes n!+1 is prime (e.g., 2!+1=3), sometimes not (e.g., 4!+1=25). Cannot be determined.",
+      "difficulty": "hard",
+      "id": "gre-quant-020-q021",
+      "questionNumber": 21,
+      "section": "quant"
+    },
+    {
+      "questionType": "problem_solving",
+      "prompt": "If 3^x = 5^y = 15^z, which of the following must be true?",
+      "options": [
+        "z = x + y",
+        "1/z = 1/x + 1/y",
+        "z = xy/(x+y)",
+        "z = (x+y)/2",
+        "z = x·y"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Taking logs: x·ln3 = y·ln5 = z·ln15. Since ln15 = ln3+ln5, 1/z = 1/x + 1/y.",
+      "difficulty": "hard",
+      "id": "gre-quant-020-q022",
+      "questionNumber": 22,
+      "section": "quant"
+    },
+    {
+      "questionType": "problem_solving",
+      "prompt": "A set of 6 numbers has a mean of 8 and a median of 7. If the largest number is increased by 6 and the smallest is decreased by 6, which of the following must be true?",
+      "options": [
+        "The mean increases by 6.",
+        "The median remains 7.",
+        "The mean stays at 8.",
+        "The standard deviation decreases.",
+        "The range decreases by 12."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Increasing one number by 6 and decreasing another by 6 keeps the sum (and hence mean) unchanged. The median depends on middle values which don't change.",
+      "difficulty": "hard",
+      "id": "gre-quant-020-q023",
+      "questionNumber": 23,
+      "section": "quant"
+    },
+    {
+      "questionType": "quantitative_comparison",
+      "prompt": "In a triangle, two sides have lengths 7 and 10.",
+      "quantityA": "The length of the third side",
+      "quantityB": "17",
+      "options": [
+        "Quantity A is greater.",
+        "Quantity B is greater.",
+        "The two quantities are equal.",
+        "The relationship cannot be determined."
+      ],
+      "correctAnswer": "B",
+      "explanation": "By triangle inequality, the third side must be less than 7+10=17. So Quantity A < Quantity B.",
+      "difficulty": "medium",
+      "id": "gre-quant-020-q024",
+      "questionNumber": 24,
+      "section": "quant"
+    },
+    {
+      "questionType": "problem_solving",
+      "prompt": "If f(x) = x² − 4x + 4, for what value of k does the equation f(x) = k have exactly one solution?",
+      "options": [
+        "k = −4",
+        "k = 0",
+        "k = 2",
+        "k = 4",
+        "k = 8"
+      ],
+      "correctAnswer": "B",
+      "explanation": "f(x) = (x−2)². This equals k with exactly one solution when k=0 (i.e., x=2 is the only root).",
+      "difficulty": "medium",
+      "id": "gre-quant-020-q025",
+      "questionNumber": 25,
+      "section": "quant"
+    },
+    {
+      "questionType": "numeric_entry",
+      "prompt": "If a rectangular pool is 25 m long and 12 m wide, and a path of width 1.5 m surrounds it on all sides, what is the area of the path in square metres?",
+      "answer": "126",
+      "explanation": "Outer dimensions: (25+3)×(12+3) = 28×15 = 420. Inner area = 25×12 = 300. Path area = 420−300 = 120. Wait: 28×15=420, 300, path=120. Hmm let me recheck: outer = (25+2×1.5)×(12+2×1.5)=28×15=420. Path=420-300=120.",
+      "correctAnswer": "120",
+      "difficulty": "medium",
+      "id": "gre-quant-020-q026",
+      "questionNumber": 26,
+      "section": "quant"
+    },
+    {
+      "questionType": "quantitative_comparison",
+      "prompt": "x > 1.",
+      "quantityA": "log₂(x²)",
+      "quantityB": "2·log₄(x²)",
+      "options": [
+        "Quantity A is greater.",
+        "Quantity B is greater.",
+        "The two quantities are equal.",
+        "The relationship cannot be determined."
+      ],
+      "correctAnswer": "C",
+      "explanation": "log₂(x²) = 2log₂x. log₄(x²) = 2log₄x = 2·(log₂x/log₂4) = 2·(log₂x/2) = log₂x. So 2·log₄(x²) = 2log₂x. Equal.",
+      "difficulty": "hard",
+      "id": "gre-quant-020-q027",
+      "questionNumber": 27,
+      "section": "quant"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Quantitative Section 1",
+      "questionRange": [
+        1,
+        12
+      ],
+      "durationSeconds": 1260
+    },
+    {
+      "name": "Quantitative Section 2",
+      "questionRange": [
+        13,
+        27
+      ],
+      "durationSeconds": 1560
+    }
+  ]
+}

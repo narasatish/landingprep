@@ -1,0 +1,30 @@
+{
+  "id": "ielts-full-018",
+  "exam": "ielts",
+  "type": "full",
+  "title": "IELTS Full Mock Test 18",
+  "durationSeconds": 9900,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "ielts-listening-018",
+      "file": "ielts/listening/test-018.json"
+    },
+    {
+      "section": "reading",
+      "testId": "ielts-reading-018",
+      "file": "ielts/reading/test-018.json"
+    },
+    {
+      "section": "writing",
+      "testId": "ielts-writing-018",
+      "file": "ielts/writing/test-018.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "ielts-speaking-018",
+      "file": "ielts/speaking/test-018.json"
+    }
+  ]
+}

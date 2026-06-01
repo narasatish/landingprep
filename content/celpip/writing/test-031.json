@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-031",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 31",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-031-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to your new neighbour introducing yourself and suggesting a time to meet for coffee.",
+      "modelAnswer": "I wholeheartedly endorse Option B, advocating for the prioritization of mental health support, as it represents a more holistic and ultimately effective approach to societal well-being. While physical health is undoubtedly important, neglecting mental health can have profound and far-reaching consequences, undermining an individual's capacity to thrive.\n\nFirstly, unaddressed mental health issues often manifest as physical ailments, creating a cyclical problem. For instance, chronic stress and anxiety can lead to heart problems, digestive issues, and weakened immune systems. By investing in mental health services, we can prevent these secondary physical complications, ultimately reducing the overall burden on the healthcare system. Secondly, robust mental health support fosters greater productivity and social cohesion. Individuals with good mental health are more engaged in their work, contribute positively to their communities, and maintain healthier relationships. Conversely, untreated mental illness can lead to unemployment, social isolation, and increased crime rates, placing a significant strain on public resources.\n\nOption A, while seemingly straightforward, is less suitable because it overlooks the interconnectedness of physical and mental well-being. Focusing solely on physical health without addressing underlying psychological factors is akin to treating symptoms without curing the disease. A society with excellent physical health but widespread mental distress is not truly healthy or sustainable. Therefore, a comprehensive strategy that prioritizes mental well-being is the more progressive and impactful path forward.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "moving to a new neighbourhood",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-031-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short survey response about what community services are most important to you.",
+      "modelAnswer": "I unequivocally choose Option B: \"Focus on developing renewable energy sources.\" This approach offers a sustainable and future-proof solution to Canada's energy needs, aligning with global efforts to combat climate change.\n\nFirstly, investing in renewables like solar, wind, and hydroelectric power directly addresses environmental concerns by significantly reducing greenhouse gas emissions. Unlike fossil fuels, these sources produce minimal pollution during operation, contributing to cleaner air and water for all Canadians. For instance, expanding wind farms in the prairies or solar arrays in sunnier regions like British Columbia can drastically lower our carbon footprint.\n\nSecondly, developing renewable energy fosters innovation and creates new economic opportunities. This includes job creation in manufacturing, installation, and research and development, positioning Canada as a leader in green technology. Furthermore, reliance on domestic renewable sources enhances energy security, insulating us from volatile international oil markets and geopolitical instability.\n\nOption A, \"Invest in new technologies to make fossil fuels cleaner,\" while seemingly pragmatic, ultimately prolongs our dependence on finite, polluting resources. Even with advanced carbon capture, the extraction and processing of fossil fuels still carry significant environmental risks and contribute to global warming. It's a short-term fix that delays the inevitable transition to truly sustainable energy. Therefore, a robust commitment to renewable energy is the only viable path forward for Canada.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "moving to a new neighbourhood",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

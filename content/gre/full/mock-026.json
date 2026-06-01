@@ -1,0 +1,25 @@
+{
+  "id": "gre-full-026",
+  "exam": "gre",
+  "type": "full",
+  "title": "GRE Full Mock Test 26",
+  "durationSeconds": 10800,
+  "instructions": "Full GRE General Test mock. Complete all sections in order.",
+  "sections": [
+    {
+      "section": "verbal",
+      "testId": "gre-verbal-026",
+      "file": "gre/verbal/test-026.json"
+    },
+    {
+      "section": "quant",
+      "testId": "gre-quant-026",
+      "file": "gre/quant/test-026.json"
+    },
+    {
+      "section": "writing",
+      "testId": "gre-writing-026",
+      "file": "gre/writing/test-026.json"
+    }
+  ]
+}

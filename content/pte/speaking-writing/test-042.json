@@ -1,0 +1,738 @@
+{
+  "id": "pte-speaking-writing-042",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 42",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-042-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Budgeting for Future Security”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "financial planning",
+      "modelAnswer": "Effective financial planning involves setting clear monetary goals, creating a realistic budget, and consistently tracking expenditures. It's crucial to distinguish between needs and wants, prioritizing savings and investments for long-term security. Understanding risk tolerance and diversification strategies is also essential for building a resilient financial portfolio. Regular review and adjustment of the plan ensure it remains aligned with evolving personal circumstances and economic conditions, fostering fiscal responsibility and peace of mind.",
+      "readText": "Effective financial planning involves setting clear monetary goals, creating a realistic budget, and consistently tracking expenditures. It's crucial to distinguish between needs and wants, prioritizing savings and investments for long-term security. Understanding risk tolerance and diversification strategies is also essential for building a resilient financial portfolio. Regular review and adjustment of the plan ensure it remains aligned with evolving personal circumstances and economic conditions, fostering fiscal responsibility and peace of mind."
+    },
+    {
+      "id": "pte-speaking-writing-042-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Investment Diversification Strategy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Diversifying investments across various asset classes mitigates risk and enhances long-term growth potential.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "financial planning",
+      "modelAnswer": "Diversifying investments across various asset classes mitigates risk and enhances long-term growth potential.",
+      "audioScript": "Diversifying investments across various asset classes mitigates risk and enhances long-term growth potential."
+    },
+    {
+      "id": "pte-speaking-writing-042-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Annual Savings by Age Group\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "financial planning",
+      "modelAnswer": "This bar chart illustrates average annual savings across different age groups. The 45-54 age group shows the highest average annual savings at 10,000 USD, indicating a peak in financial planning during this period. In contrast, the 18-24 age group has the lowest savings, with only 1,500 USD annually. Savings generally increase with age, from 1,500 USD for 18-24 year olds to 10,000 USD for 45-54 year olds, before declining to 3,000 USD for those aged 65 and above. This trend suggests a strong correlation between career progression and savings capacity.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Savings by Age Group",
+        "yLabel": "Average Annual Savings (USD)",
+        "xAxis": [
+          "18-24",
+          "25-34",
+          "35-44",
+          "45-54",
+          "55-64",
+          "65+"
+        ],
+        "series": [
+          {
+            "label": "Average Savings",
+            "values": [
+              1500,
+              4500,
+              7000,
+              10000,
+              8500,
+              3000
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-042-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Low-Income Financial Strategies”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "financial planning",
+      "modelAnswer": "The lecture discussed practical financial planning for low-income individuals. It emphasized meticulous budgeting, tracking expenses, and distinguishing between needs and wants. Building even a small emergency fund was highlighted as crucial. Furthermore, the speaker mentioned exploring government assistance, negotiating bills, and finding ways to increase income. The overall message was that consistent small steps towards saving and debt reduction can significantly improve financial stability, making planning accessible to everyone regardless of income level.",
+      "audioScript": "Many individuals on low incomes believe financial planning is out of reach, but practical strategies exist. The key is meticulous budgeting: tracking every dollar, identifying essential expenses, and cutting non-essentials. Building an emergency fund, even small amounts, provides a crucial safety net. Exploring government assistance programs, negotiating bills, and finding ways to increase income through side hustles are also vital. Small, consistent steps towards debt reduction and saving can significantly improve financial stability over time, proving that planning is accessible to everyone.",
+      "keyPoints": [
+        "Meticulous budgeting and expense tracking",
+        "Building an emergency fund, however small",
+        "Utilizing government assistance and increasing income",
+        "Consistent small steps for debt reduction and saving"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-042-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Financial Record Keeping”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Budget",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "financial planning",
+      "modelAnswer": "Budget",
+      "audioScript": "What is the term for a detailed record of all money earned and spent?"
+    },
+    {
+      "id": "pte-speaking-writing-042-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “The Importance of Early Retirement Planning”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "financial planning",
+      "wordTarget": 75,
+      "modelAnswer": "Starting retirement planning early is crucial as it harnesses compound interest to significantly grow savings over time, providing greater financial security and flexibility for future adjustments.",
+      "readText": "Retirement planning often seems like a distant concern for young professionals, yet its importance cannot be overstated. Starting early allows individuals to leverage the power of compound interest, significantly growing their savings over decades. Even small, regular contributions in early career stages can accumulate into substantial wealth by retirement age, far more than larger contributions started later. Moreover, early planning provides flexibility, allowing adjustments for unexpected life events or market fluctuations, ensuring a more secure and comfortable future."
+    },
+    {
+      "id": "pte-speaking-writing-042-q07",
+      "questionType": "write_essay",
+      "prompt": "It is better for children to begin learning a foreign language at primary school rather than at secondary school. Do you agree or disagree?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "financial planning",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Preservation of Heritage”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q08",
+      "modelAnswer": "The digital age presents both challenges and unparalleled opportunities for cultural heritage preservation. Digitization allows for the creation of accessible archives, protecting fragile artifacts from physical decay and making them available to a global audience. However, ensuring the long-term viability and authenticity of digital data requires robust strategies for data migration, format obsolescence, and cybersecurity. Ethical considerations regarding access, ownership, and representation also necessitate careful navigation to truly safeguard our shared human history.",
+      "readText": "The digital age presents both challenges and unparalleled opportunities for cultural heritage preservation. Digitization allows for the creation of accessible archives, protecting fragile artifacts from physical decay and making them available to a global audience. However, ensuring the long-term viability and authenticity of digital data requires robust strategies for data migration, format obsolescence, and cybersecurity. Ethical considerations regarding access, ownership, and representation also necessitate careful navigation to truly safeguard our shared human history."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Brain Plasticity and Learning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q09",
+      "modelAnswer": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, underpins lifelong learning. This adaptability allows individuals to acquire new skills, recover from brain injuries, and adapt to changing environments. Engaging in novel experiences, continuously challenging oneself intellectually, and maintaining physical health are all critical for fostering and enhancing neuroplasticity. Understanding this principle empowers us to cultivate a growth mindset, recognizing that our cognitive abilities are not fixed but can continuously evolve and improve.",
+      "readText": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, underpins lifelong learning. This adaptability allows individuals to acquire new skills, recover from brain injuries, and adapt to changing environments. Engaging in novel experiences, continuously challenging oneself intellectually, and maintaining physical health are all critical for fostering and enhancing neuroplasticity. Understanding this principle empowers us to cultivate a growth mindset, recognizing that our cognitive abilities are not fixed but can continuously evolve and improve."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ecosystem Services in Crisis”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q10",
+      "modelAnswer": "Biodiversity loss poses a severe threat to the essential ecosystem services that underpin human well-being. These services, ranging from pollination and water purification to climate regulation and soil formation, are often taken for granted. When species disappear, the intricate balance of ecosystems is disrupted, leading to cascading effects that diminish the capacity of nature to provide these vital benefits. Urgent conservation efforts are required to protect biodiversity and ensure the continued provision of these indispensable services for future generations.",
+      "readText": "Biodiversity loss poses a severe threat to the essential ecosystem services that underpin human well-being. These services, ranging from pollination and water purification to climate regulation and soil formation, are often taken for granted. When species disappear, the intricate balance of ecosystems is disrupted, leading to cascading effects that diminish the capacity of nature to provide these vital benefits. Urgent conservation efforts are required to protect biodiversity and ensure the continued provision of these indispensable services for future generations."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Protecting Digital Identity”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q11",
+      "modelAnswer": "Digital privacy and data sovereignty are increasingly critical concerns in our interconnected world. Individuals and nations are grappling with how to control personal information and digital assets in an environment dominated by vast data collection. Establishing robust legal frameworks, implementing advanced encryption technologies, and fostering digital literacy are essential steps. These measures aim to empower users to make informed choices about their data, protecting their privacy and ensuring national control over crucial digital infrastructure and information flows.",
+      "readText": "Digital privacy and data sovereignty are increasingly critical concerns in our interconnected world. Individuals and nations are grappling with how to control personal information and digital assets in an environment dominated by vast data collection. Establishing robust legal frameworks, implementing advanced encryption technologies, and fostering digital literacy are essential steps. These measures aim to empower users to make informed choices about their data, protecting their privacy and ensuring national control over crucial digital infrastructure and information flows."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “AI's Impact on Employment”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q12",
+      "modelAnswer": "Artificial intelligence is poised to profoundly transform global job markets, creating new opportunities while simultaneously displacing certain existing roles. Automation driven by AI will likely increase productivity and efficiency in many sectors, but also necessitates a re-evaluation of workforce skills. Education and training systems must adapt to equip individuals with the competencies required for future jobs, emphasizing creativity, critical thinking, and complex problem-solving. Proactive policy development will be crucial to manage this transition equitably and harness AI's full economic potential.",
+      "readText": "Artificial intelligence is poised to profoundly transform global job markets, creating new opportunities while simultaneously displacing certain existing roles. Automation driven by AI will likely increase productivity and efficiency in many sectors, but also necessitates a re-evaluation of workforce skills. Education and training systems must adapt to equip individuals with the competencies required for future jobs, emphasizing creativity, critical thinking, and complex problem-solving. Proactive policy development will be crucial to manage this transition equitably and harness AI's full economic potential."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation often involves trade-offs between efficiency gains and job displacement.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Economics of Automation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q13",
+      "modelAnswer": "The economics of automation often involves trade-offs between efficiency gains and job displacement.",
+      "audioScript": "The economics of automation often involves trade-offs between efficiency gains and job displacement."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Significant investment is needed for renewable energy infrastructure to meet future global demands.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q14",
+      "modelAnswer": "Significant investment is needed for renewable energy infrastructure to meet future global demands.",
+      "audioScript": "Significant investment is needed for renewable energy infrastructure to meet future global demands."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Planting more trees can help mitigate the urban heat island effect in densely populated areas.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Heat Island Mitigation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q15",
+      "modelAnswer": "Planting more trees can help mitigate the urban heat island effect in densely populated areas.",
+      "audioScript": "Planting more trees can help mitigate the urban heat island effect in densely populated areas."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Financial literacy is crucial for economic inclusion and empowering individuals to make informed decisions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Financial Literacy and Inclusion”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q16",
+      "modelAnswer": "Financial literacy is crucial for economic inclusion and empowering individuals to make informed decisions.",
+      "audioScript": "Financial literacy is crucial for economic inclusion and empowering individuals to make informed decisions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Nanotechnology revolutionizes materials science by enabling the creation of novel properties at atomic scale.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Nanotechnology in Materials”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q17",
+      "modelAnswer": "Nanotechnology revolutionizes materials science by enabling the creation of novel properties at atomic scale.",
+      "audioScript": "Nanotechnology revolutionizes materials science by enabling the creation of novel properties at atomic scale."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The science of sleep highlights its vital role in memory consolidation and cognitive function.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Sleep and Memory”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q18",
+      "modelAnswer": "The science of sleep highlights its vital role in memory consolidation and cognitive function.",
+      "audioScript": "The science of sleep highlights its vital role in memory consolidation and cognitive function."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Developing strong digital literacy skills is essential for students in contemporary education systems.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Digital Literacy in Education”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q19",
+      "modelAnswer": "Developing strong digital literacy skills is essential for students in contemporary education systems.",
+      "audioScript": "Developing strong digital literacy skills is essential for students in contemporary education systems."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Antibiotic resistance poses a serious global health threat requiring urgent policy intervention and research.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Antibiotic Resistance Policy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q20",
+      "modelAnswer": "Antibiotic resistance poses a serious global health threat requiring urgent policy intervention and research.",
+      "audioScript": "Antibiotic resistance poses a serious global health threat requiring urgent policy intervention and research."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ocean acidification significantly threatens marine biodiversity, particularly coral reefs and shellfish populations.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ocean Acidification Impacts”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q21",
+      "modelAnswer": "Ocean acidification significantly threatens marine biodiversity, particularly coral reefs and shellfish populations.",
+      "audioScript": "Ocean acidification significantly threatens marine biodiversity, particularly coral reefs and shellfish populations."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Top 5 Languages by Native Speakers Worldwide (Millions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q22",
+      "modelAnswer": "This bar chart illustrates the top five languages globally by number of native speakers. Mandarin Chinese is clearly the most spoken native language, with an impressive 920 million speakers. Spanish follows, with 485 million, significantly less than Mandarin but still a large population. English comes in third at 380 million, slightly above Hindi's 345 million. Bengali rounds out the top five with 230 million native speakers. The data clearly shows a substantial difference between the top two languages and the others, highlighting the dominance of Mandarin Chinese in terms of native speakers.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Top 5 Languages by Native Speakers Worldwide (Millions)",
+        "yLabel": "Number of Native Speakers (Millions)",
+        "xAxis": [
+          "Mandarin Chinese",
+          "Spanish",
+          "English",
+          "Hindi",
+          "Bengali"
+        ],
+        "series": [
+          {
+            "label": "Native Speakers",
+            "values": [
+              920,
+              485,
+              380,
+              345,
+              230
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Ocean pH Levels (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q23",
+      "modelAnswer": "The line graph illustrates the global average ocean pH levels from 1990 to 2020. The most striking trend is a consistent decline over the three decades. Starting at approximately 8.10 in 1990, the pH level steadily decreased, reaching its lowest point of 7.98 by 2020. This represents a drop of 0.12 pH units. The graph clearly indicates ocean acidification is an ongoing issue, with pH levels falling below 8.00 in the last five years of the period shown, highlighting a significant environmental concern.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Ocean pH Levels (1990-2020)",
+        "yLabel": "pH Level",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Ocean pH",
+            "values": [
+              8.1,
+              8.08,
+              8.06,
+              8.04,
+              8.02,
+              8,
+              7.98
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global Water Usage by Sector\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q24",
+      "modelAnswer": "This pie chart illustrates global water usage across different sectors. The most significant portion, a staggering 70%, is allocated to agriculture, highlighting its immense demand for water resources. Industry accounts for the second largest share, utilizing 20% of global water. The smallest segment is domestic use, which includes household consumption, representing just 10%. Overall, the chart clearly indicates that agriculture is by far the dominant consumer of water worldwide, dwarfing industrial and domestic requirements considerably.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global Water Usage by Sector",
+        "slices": [
+          {
+            "label": "Agriculture",
+            "value": 70
+          },
+          {
+            "label": "Industry",
+            "value": 20
+          },
+          {
+            "label": "Domestic",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Components of the Water Cycle (Annual Global Averages)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q25",
+      "modelAnswer": "The table illustrates the key components of the water cycle, detailing annual global averages. Evaporation from the ocean is the largest process, accounting for 425,000 km³ per year, which is 78.7% of the total. Conversely, transpiration contributes 43,000 km³ or 7.9%. Precipitation over the ocean is 385,000 km³, significantly higher than land precipitation at 114,000 km³. Notably, runoff to the ocean, at 40,000 km³ per year, is crucial for balancing the land's water budget.",
+      "visual": {
+        "chartType": "table",
+        "title": "Components of the Water Cycle (Annual Global Averages)",
+        "headers": [
+          "Process",
+          "Volume (km³/year)",
+          "Percentage (%)"
+        ],
+        "rows": [
+          [
+            "Evaporation (Ocean)",
+            "425,000",
+            "78.7"
+          ],
+          [
+            "Evaporation (Land)",
+            "71,000",
+            "13.1"
+          ],
+          [
+            "Transpiration",
+            "43,000",
+            "7.9"
+          ],
+          [
+            "Precipitation (Ocean)",
+            "385,000",
+            "71.3"
+          ],
+          [
+            "Precipitation (Land)",
+            "114,000",
+            "21.1"
+          ],
+          [
+            "Runoff to Ocean",
+            "40,000",
+            "7.4"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Adult Literacy Rates by Region (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q26",
+      "modelAnswer": "The table illustrates global adult literacy rates across various regions in 2023, along with their changes from 2013. North America has the highest literacy rate at 99.1%, closely followed by Europe at 98.5%. In contrast, Sub-Saharan Africa shows the lowest rate at 70.4%, although it has experienced the most significant improvement, increasing by 4.5% since 2013. Latin America and the Caribbean also saw a substantial rise of 2.1% to reach 93.7%. Overall, the data indicates a positive global trend in literacy over the past decade.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Adult Literacy Rates by Region (2023)",
+        "headers": [
+          "Region",
+          "Literacy Rate (%)",
+          "Change from 2013 (%)"
+        ],
+        "rows": [
+          [
+            "North America",
+            "99.1",
+            "+0.2"
+          ],
+          [
+            "Europe",
+            "98.5",
+            "+0.5"
+          ],
+          [
+            "East Asia & Pacific",
+            "95.3",
+            "+1.8"
+          ],
+          [
+            "Latin America & Caribbean",
+            "93.7",
+            "+2.1"
+          ],
+          [
+            "Sub-Saharan Africa",
+            "70.4",
+            "+4.5"
+          ],
+          [
+            "South Asia",
+            "74.8",
+            "+3.9"
+          ],
+          [
+            "Arab States",
+            "82.1",
+            "+3.1"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q27",
+      "modelAnswer": "The lecture discussed the profound importance of non-verbal communication in conveying messages. It explained that non-verbal cues include elements like body language, facial expressions, gestures, and tone of voice. These signals can either contradict or support verbal communication, adding depth to interactions. For example, crossed arms might signal defensiveness. Ultimately, the speaker emphasized that understanding and interpreting these non-verbal cues is essential for truly effective communication and for fostering stronger interpersonal relationships.",
+      "audioScript": "Non-verbal communication plays a far more significant role in conveying messages than many realize. It encompasses a wide range of cues, including body language, facial expressions, gestures, and even tone of voice. Often, these non-verbal signals can contradict or reinforce spoken words, adding layers of meaning to an interaction. For instance, crossed arms might indicate defensiveness, regardless of what someone is saying verbally. Understanding and interpreting these cues is vital for effective communication, helping us gauge true intentions and build stronger interpersonal connections.",
+      "keyPoints": [
+        "Non-verbal cues include body language, expressions, gestures, and tone.",
+        "They can contradict or reinforce spoken words.",
+        "Examples like crossed arms indicate specific feelings.",
+        "Interpreting these cues is vital for effective communication and connection."
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Cross-Cultural Communication Barriers”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q28",
+      "modelAnswer": "The lecture highlighted the complexities of cross-cultural communication. It explained that politeness and directness vary significantly across cultures, impacting how messages are understood. The speaker differentiated between high-context cultures, which rely on subtle cues, and low-context cultures, which prefer explicit verbal communication. These differing styles often lead to misunderstandings in global interactions. Therefore, the lecture concluded that developing cultural sensitivity and adapting one's communication approach are essential for successful cross-cultural exchanges and collaborations.",
+      "audioScript": "Effective communication across different cultures presents unique challenges. What is considered polite or direct in one culture might be seen as rude or aggressive in another. Cultural context heavily influences how messages are encoded and decoded. For instance, high-context cultures rely on subtle non-verbal cues and shared understanding, while low-context cultures prioritize explicit verbal communication. Misunderstandings often arise from these differing communication styles, leading to breakdowns in negotiation or collaboration. Developing cultural sensitivity and adapting one's communication approach are therefore crucial for successful global interactions.",
+      "keyPoints": [
+        "Cultural differences impact communication norms (politeness, directness).",
+        "Context (high vs. low) influences message encoding/decoding.",
+        "Misunderstandings stem from differing communication styles.",
+        "Cultural sensitivity and adaptation are key for global interaction."
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Medium",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q29",
+      "modelAnswer": "Medium",
+      "audioScript": "What is the term for the channel through which a message is sent?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q30",
+      "modelAnswer": "Verbal",
+      "audioScript": "What type of communication involves spoken words?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Feedback",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Feedback in Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q31",
+      "modelAnswer": "Feedback",
+      "audioScript": "What is the receiver's response to a message called?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Active listening",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Active Listening”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-042-q32",
+      "modelAnswer": "Active listening",
+      "audioScript": "What skill involves fully concentrating on what is being said?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Global Urbanisation Trends”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-042-q33",
+      "modelAnswer": "Global urbanisation is a complex 21st-century trend driven by economic and social opportunities in cities, yet it presents challenges like infrastructure strain and pollution, necessitating sustainable urban planning for equitable development.",
+      "readText": "Global urbanisation is a defining trend of the 21st century, driven by a complex interplay of economic, social, and environmental factors. Economic opportunities, such as employment in industries and services, often draw rural populations to cities. Social factors like access to better education, healthcare, and cultural amenities also play a significant role. However, rapid urban growth also brings challenges, including strain on infrastructure, increased pollution, and the proliferation of informal settlements. Understanding these dynamics is crucial for sustainable urban planning and ensuring equitable development for growing city populations worldwide."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Technology has revolutionized how people communicate, offering both unprecedented connectivity and potential drawbacks. Discuss the advantages and disadvantages of technology on human communication, providing examples to support your viewpoint.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-042-q34",
+      "modelAnswer": "Technology's transformative impact on human communication is undeniable, ushering in an era of unparalleled connectivity while simultaneously introducing new challenges. On one hand, the advantages are profound. Platforms like email, instant messaging, and video conferencing have eliminated geographical barriers, enabling immediate and constant contact with family, friends, and colleagues across the globe. This fosters stronger personal relationships and facilitates global collaboration in business and academia. Social media, despite its criticisms, allows for the rapid dissemination of information and the formation of communities based on shared interests, giving a voice to diverse perspectives. Moreover, technology has democratized access to information and learning, allowing individuals to communicate and interact with educational resources previously out of reach. \n\nHowever, these advancements come with significant disadvantages. The reliance on digital communication can diminish the quality of face-to-face interactions, leading to a decline in non-verbal communication skills and empathy. The constant availability fostered by technology can blur the lines between work and personal life, contributing to stress and burnout. Furthermore, the proliferation of misinformation and the echo chambers created by algorithms on social media platforms pose serious threats to informed public discourse and critical thinking. The superficiality of online interactions, often reduced to likes and comments, can also lead to feelings of isolation despite being 'connected.' Therefore, while technology offers immense benefits for communication, it also demands a conscious effort to balance digital engagement with meaningful human interaction and critical information consumption."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Effective communication is paramount for success in any professional environment. Discuss the key elements of effective workplace communication and explain why it is crucial for team productivity and organizational success.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-042-q35",
+      "modelAnswer": "Effective communication is the bedrock of a successful professional environment, serving as the essential lubricant that enables teams to function efficiently and organizations to achieve their strategic objectives. Several key elements define effective workplace communication, including clarity, active listening, feedback, and empathy. Clarity ensures that messages are unambiguous and easily understood, minimizing misinterpretations and errors. Active listening, on the part of the receiver, demonstrates respect and ensures that the message is fully absorbed, preventing misunderstandings. Constructive feedback, both positive and corrective, is vital for continuous improvement and maintaining alignment on goals. Finally, empathy allows communicators to consider the perspective and feelings of others, fostering a supportive and inclusive atmosphere.\n\nThe crucial importance of these elements for team productivity and organizational success cannot be overstated. When communication is effective, teams experience enhanced collaboration, as members understand their roles, responsibilities, and how their work contributes to the larger goal. This leads to fewer conflicts, quicker problem-solving, and a more cohesive working environment. For the organization, clear communication streamlines processes, improves decision-making, and boosts morale, which directly impacts productivity and innovation. Employees who feel heard and understood are more engaged and motivated. Conversely, poor communication can lead to duplicated efforts, missed deadlines, low morale, and ultimately, a failure to achieve business objectives. Therefore, investing in and cultivating effective communication practices is not merely a soft skill but a strategic imperative for sustained success in today's dynamic professional landscape."
+    }
+  ]
+}

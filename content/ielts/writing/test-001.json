@@ -1,0 +1,79 @@
+{
+  "id": "ielts-writing-001",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 1",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-001-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The bar chart shows the percentage of students studying independently versus attending formal courses across five countries in 2023. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "self-study",
+      "modelAnswer": "The bar chart illustrates the proportion of students in five different countries who chose to study independently compared to those attending formal courses in 2023. Overall, independent study was the more prevalent method across all nations, although the difference between the two approaches varied significantly by country.\n\nIn the USA, Canada, and New Zealand, independent study was clearly favoured. The USA led with 65% of students studying independently, compared to just 35% attending formal courses. Similarly, 62% of Canadian students opted for independent learning, while 38% enrolled in formal courses. New Zealand also showed a notable preference for independent study at 60%, with 40% participating in formal instruction.\n\nConversely, the UK and Australia exhibited a narrower gap between the two study methods. In Australia, 55% of students studied independently, making it the lowest percentage for this category, with 45% attending formal courses. The UK followed a similar pattern, with 58% choosing independent study and 42% opting for formal courses. These two countries had the highest percentages of students attending formal courses among the five nations, indicating a relatively stronger inclination towards structured learning environments.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Student Study Methods Across Five Countries (2023)",
+        "yLabel": "Percentage of Students",
+        "xAxis": [
+          "USA",
+          "UK",
+          "Canada",
+          "Australia",
+          "New Zealand"
+        ],
+        "series": [
+          {
+            "label": "Studying Independently",
+            "values": [
+              65,
+              58,
+              62,
+              55,
+              60
+            ]
+          },
+          {
+            "label": "Attending Formal Courses",
+            "values": [
+              35,
+              42,
+              38,
+              45,
+              40
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-001-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "A huge number of students choose to study independently on a self-study basis rather than attend a formal course. However, without the assistance of a teacher, students often find it difficult to manage their studies. To what extent do you agree or disagree?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "self-study",
+      "modelAnswer": "While independent study offers valuable opportunities for self-directed learning, I agree that without proper support structures, students often encounter significant obstacles that require guidance from qualified instructors.\n\nThe advantages of self-study are evident. Students develop autonomy and time management skills that prove invaluable throughout their academic and professional careers. Furthermore, independent learners can tailor their pace and focus to suit their individual needs, potentially achieving deeper comprehension than classroom-bound students forced to follow standardised curricula.\n\nHowever, the challenges of unsupported self-study are substantial. Many students lack the discipline and motivation required to maintain consistent study habits without external accountability. Additionally, self-taught learners frequently develop misconceptions without an experienced educator to correct them—a problem particularly acute in subjects like mathematics and sciences where cumulative errors compound. The absence of guidance also deprives students of mentoring relationships that extend learning beyond content delivery.\n\nThe most effective approach integrates both models. Students benefit from a foundation of guided instruction in complex topics, supplemented by structured independent work that reinforces concepts and develops self-reliance. This hybrid model, successfully implemented in many progressive institutions, captures the benefits of both approaches.\n\nIn conclusion, while independent study should be encouraged, students require at least baseline teacher support to establish correct foundations and maintain motivation. Completely unguided self-study, though valuable for some exceptional learners, remains unsuitable as a primary learning pathway for most students."
+    }
+  ],
+  "variant": "academic"
+}

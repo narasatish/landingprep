@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-017",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 17",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-017",
+      "file": "gmat/quant/test-017.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-017",
+      "file": "gmat/verbal/test-017.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-017",
+      "file": "gmat/data-insights/test-017.json"
+    }
+  ]
+}

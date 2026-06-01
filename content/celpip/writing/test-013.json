@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-013",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 13",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-013-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "Your child recently started attending a new school. You would like to introduce yourself to the class teacher and share some important information about your child.",
+      "recipient": "your child's class teacher",
+      "bulletPoints": [
+        "Introduce yourself and your child",
+        "Share one or two important things about your child that would help the teacher",
+        "Express your willingness to stay involved and ask how you can best support your child's learning"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You are planning to adopt a pet and need to inform your landlord. Write a letter explaining why you want a pet, what type of pet you plan to adopt, and how you will ensure it does not cause any problems.",
+      "modelAnswer": "Dear Mr. Henderson,\n\nMy name is Sarah Chen, and I am Leo Chen’s mother. Leo recently started Grade 4 in your class, and he has been very excited about his new school and meeting his classmates.\n\nI wanted to introduce myself and share a couple of things that might be helpful. Leo is a very curious and enthusiastic learner, but he sometimes struggles with large group discussions. He tends to be a bit shy in these settings and might hold back from sharing his ideas. He thrives, however, in smaller group activities or one-on-one interactions. Additionally, Leo has a peanut allergy, so we would appreciate your vigilance regarding snacks and lunch breaks.\n\nI am keen to be actively involved in Leo’s education and support his learning journey. Please let me know if there are any specific ways I can contribute or volunteer, or if you have any suggestions for how I can best support him at home.\n\nThank you for your time and dedication.\n\nSincerely,\n\nSarah Chen"
+    },
+    {
+      "id": "celpip-writing-013-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your workplace is considering a new health and wellness initiative. Which option do you prefer?",
+      "optionA": "Provide standing desks and ergonomic equipment to all employees",
+      "optionB": "Offer subsidised healthy meal options in the staff cafeteria",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A community wellness programme is surveying residents about mental health support. Describe the mental health challenges you or people in your community face, what support currently exists, and what additional services are needed.",
+      "modelAnswer": "I strongly advocate for Option A: providing standing desks and ergonomic equipment to all employees. This initiative offers a foundational and long-term investment in employee well-being that surpasses the benefits of subsidised meals.\n\nFirstly, ergonomic equipment directly addresses the pervasive issue of sedentary lifestyles and poor posture, which are major contributors to chronic health problems like back pain, carpal tunnel syndrome, and even cardiovascular disease. By providing standing desks, we empower employees to easily alternate between sitting and standing, improving circulation, reducing discomfort, and boosting energy levels throughout the workday. For example, a software developer prone to neck strain could significantly alleviate their symptoms, leading to greater comfort and productivity.\n\nSecondly, this option promotes a proactive approach to health rather than a reactive one. While healthy meals are beneficial, their impact is often dependent on individual dietary choices and can be fleeting. Ergonomic equipment, however, continuously supports better physical health by modifying the work environment itself. It fosters a culture where physical well-being is integrated into daily work practices, potentially reducing long-term health-related absenteeism and healthcare costs.\n\nOption B, while seemingly attractive, is less suitable because its impact is more superficial. Subsidised meals, while convenient, don't tackle the root causes of workplace-related physical ailments and might not cater to all dietary needs or preferences, limiting their universal effectiveness. Investing in ergonomic infrastructure provides a more enduring and universally beneficial solution."
+    }
+  ]
+}

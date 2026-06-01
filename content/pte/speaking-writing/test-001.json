@@ -1,0 +1,765 @@
+{
+  "id": "pte-speaking-writing-001",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 1",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-001-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Impact of Digital Communication”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c96019fef030e8a0fc",
+      "modelAnswer": "The advent of digital communication technologies has profoundly reshaped societal interactions. Instant messaging, video calls, and social media platforms have collapsed geographical barriers, enabling real-time global connectivity. However, this ease of access also raises concerns about privacy, information overload, and the potential erosion of deeper, face-to-face engagements, necessitating a balanced approach to technology integration in daily life.",
+      "readText": "The advent of digital communication technologies has profoundly reshaped societal interactions. Instant messaging, video calls, and social media platforms have collapsed geographical barriers, enabling real-time global connectivity. However, this ease of access also raises concerns about privacy, information overload, and the potential erosion of deeper, face-to-face engagements, necessitating a balanced approach to technology integration in daily life."
+    },
+    {
+      "id": "pte-speaking-writing-001-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Effective Public Speaking”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Effective public speaking requires clear articulation and confident delivery of your message.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "97db5521cc07187055",
+      "modelAnswer": "Effective public speaking requires clear articulation and confident delivery of your message.",
+      "audioScript": "Effective public speaking requires clear articulation and confident delivery of your message."
+    },
+    {
+      "id": "pte-speaking-writing-001-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Growth of Digital Archive Collections (2018-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "6617a1e284ff93dfe4",
+      "modelAnswer": "This bar chart illustrates the significant growth of digital archive collections from 2018 to 2023. The number of archived items consistently increased each year, starting at 15 million in 2018. The most substantial growth occurred between 2022 and 2023, rising from 65 million to a peak of 85 million items. Overall, the chart clearly indicates an accelerating trend in digital archiving, highlighting its increasing importance. This sustained upward trajectory suggests continued expansion in future years.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Growth of Digital Archive Collections (2018-2023)",
+        "yLabel": "Number of Items (Millions)",
+        "xAxis": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Archived Items",
+            "values": [
+              15,
+              22,
+              35,
+              48,
+              65,
+              85
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-001-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Non-Verbal Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "f844d4a73d52c11e56",
+      "modelAnswer": "The lecture discussed the critical role of non-verbal communication, emphasizing that it constitutes over half of all communication. It highlighted various forms, such as gestures, facial expressions, and tone of voice, which either reinforce or contradict spoken words. Understanding these cues is essential for effective interpersonal communication, as they offer insights into a speaker's true intentions and help avoid misunderstandings, making their interpretation a key skill.",
+      "audioScript": "Non-verbal communication, often overlooked, plays a critical role in conveying meaning. Experts estimate that over half of all communication is non-verbal, encompassing gestures, facial expressions, posture, and even tone of voice. These cues can reinforce, contradict, or even substitute spoken words, providing valuable insights into a speaker's true intentions or emotions. Understanding and interpreting these signals is crucial for effective interpersonal communication, allowing individuals to better gauge reactions and tailor their message accordingly. Misinterpreting non-verbal signals can lead to misunderstandings, highlighting their significance.",
+      "keyPoints": [
+        "Non-verbal communication is vital, comprising over half of all meaning.",
+        "Includes gestures, facial expressions, posture, and tone.",
+        "Cues reinforce or contradict spoken words, revealing intentions.",
+        "Interpreting them is crucial for effective interpersonal communication."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-001-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Radio waves",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0e35d8498f163cbbcf",
+      "modelAnswer": "Radio waves",
+      "audioScript": "What is the primary medium for transmitting information wirelessly over long distances?"
+    },
+    {
+      "id": "pte-speaking-writing-001-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Evolution of Language”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "7ea8157616e294d8b4",
+      "modelAnswer": "Human language evolved from basic sounds and gestures, driven by cognitive advancements and social complexity, enabling the transmission of intricate ideas and cultural knowledge, which fundamentally shaped human society and cooperation.",
+      "readText": "The evolution of human language is a complex topic, with theories ranging from gestural origins to the development of sophisticated vocalizations. Early human communication likely involved a combination of simple sounds, body language, and rudimentary gestures. Over millennia, as cognitive abilities advanced and social structures became more intricate, the need for more nuanced expression drove the development of symbolic language. This allowed for the transmission of complex ideas, cultural knowledge, and abstract concepts, fundamentally shaping human society and enabling unprecedented levels of cooperation and innovation across generations."
+    },
+    {
+      "id": "pte-speaking-writing-001-q07",
+      "questionType": "essay",
+      "prompt": "Some people believe that technological advancements in communication have isolated individuals, while others argue they foster greater connection. Discuss both views and give your own opinion, supported by examples.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "9a4860ed83affd543b",
+      "modelAnswer": "The proliferation of communication technologies, from social media to instant messaging, has sparked a considerable debate regarding their impact on human connection. One perspective posits that these advancements contribute to social isolation. Proponents of this view argue that virtual interactions, while convenient, often lack the depth and authenticity of face-to-face encounters. Individuals may spend more time engaging with screens than with people physically present, leading to a decline in intimate relationships and an increase in feelings of loneliness, despite a vast network of online 'friends'. The curated nature of online profiles can also foster comparison and inadequacy, further alienating individuals.\n\nConversely, many contend that technology has undeniably enhanced global connectivity. They highlight how geographical barriers have been dismantled, allowing families and friends separated by continents to maintain regular contact through video calls and messaging apps. Furthermore, online communities provide platforms for individuals with niche interests or unique challenges to find support and belonging that might be unavailable in their immediate physical environment. Activist movements, educational initiatives, and professional networking have all been significantly amplified by these tools, demonstrating their capacity to foster collective action and shared purpose.\n\nIn my opinion, while the potential for isolation exists, the overall impact of communication technology leans towards fostering greater connection, provided it is used mindfully. The ability to bridge distances and form diverse communities is an immense benefit. However, it requires individuals to consciously balance their digital engagement with real-world interactions to prevent superficiality from replacing genuine human bonds. The issue is not the technology itself, but how it is integrated into our lives."
+    },
+    {
+      "id": "pte-speaking-writing-001-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “The Art of Persuasion”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "860ebfe43841706761",
+      "modelAnswer": "Persuasion is a fundamental aspect of human communication, essential in contexts ranging from marketing to diplomacy. It involves strategically presenting arguments, evidence, and appeals to influence an audience's beliefs, attitudes, or actions. Effective persuasion relies not only on logical reasoning but also on understanding emotional triggers and cultural nuances. Mastering this art requires empathy, critical thinking, and the ability to adapt one's message to diverse listeners.",
+      "readText": "Persuasion is a fundamental aspect of human communication, essential in contexts ranging from marketing to diplomacy. It involves strategically presenting arguments, evidence, and appeals to influence an audience's beliefs, attitudes, or actions. Effective persuasion relies not only on logical reasoning but also on understanding emotional triggers and cultural nuances. Mastering this art requires empathy, critical thinking, and the ability to adapt one's message to diverse listeners."
+    },
+    {
+      "id": "pte-speaking-writing-001-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Intercultural Communication Skills”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Developing intercultural communication skills is vital for global understanding and cooperation.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "1f00eb4849e67eb199",
+      "modelAnswer": "Developing intercultural communication skills is vital for global understanding and cooperation.",
+      "audioScript": "Developing intercultural communication skills is vital for global understanding and cooperation."
+    },
+    {
+      "id": "pte-speaking-writing-001-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Benefits of Urban Green Roofs (Perception Survey)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "d531c24feceaed38b2",
+      "modelAnswer": "This bar chart illustrates the perceived importance of various benefits of urban green roofs based on a survey. The most significant benefit highlighted is 'Aesthetic Value,' with 92% of respondents considering it important. 'Improved Air Quality' also scored very high at 85%, followed closely by 'Reduced Energy Costs' at 78%. 'Stormwater Management' was important to 72% of respondents, and 'Enhanced Biodiversity' to 65%. The least perceived benefit was 'Noise Reduction' at 58%. Overall, the chart effectively communicates the high value placed on the visual and environmental advantages of green roofs.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Benefits of Urban Green Roofs (Perception Survey)",
+        "yLabel": "Percentage of Respondents",
+        "xAxis": [
+          "Improved Air Quality",
+          "Reduced Energy Costs",
+          "Enhanced Biodiversity",
+          "Stormwater Management",
+          "Noise Reduction",
+          "Aesthetic Value"
+        ],
+        "series": [
+          {
+            "label": "Perceived Importance",
+            "values": [
+              85,
+              78,
+              65,
+              72,
+              58,
+              92
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-001-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Barriers to Effective Listening”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "67e827b308983203ea",
+      "modelAnswer": "The lecture highlighted that effective listening is an active process of understanding, not merely hearing. It outlined several barriers, including physical distractions like noise and psychological barriers such as biases or emotional states, which can distort messages. A significant impediment mentioned was internal monologue, where listeners focus on their response rather than the speaker. To overcome these, the speaker suggested practicing empathy, deferring judgment, and actively seeking clarification to ensure accurate comprehension.",
+      "audioScript": "Effective listening is far more than just hearing; it's an active process of understanding and interpreting messages. However, numerous barriers often impede this crucial skill. Physical distractions, such as noise or uncomfortable environments, can easily divert attention. Psychological barriers, like preconceived notions, biases, or emotional states, can distort the message received. Furthermore, internal monologue, where the listener is formulating their response instead of focusing, is a significant impediment. Overcoming these barriers requires conscious effort, including practicing empathy, deferring judgment, and actively seeking clarification to ensure accurate comprehension of the speaker's intent.",
+      "keyPoints": [
+        "Effective listening is active understanding, not just hearing.",
+        "Physical distractions (noise) and psychological barriers (biases) impede listening.",
+        "Internal monologue, planning a response, is a major impediment.",
+        "Overcoming barriers requires empathy, deferring judgment, and clarifying."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-001-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Oldest Form of Communication”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Gestures",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "75ad4385196ac291df",
+      "modelAnswer": "Gestures",
+      "audioScript": "What is generally considered the oldest form of human communication?"
+    },
+    {
+      "id": "pte-speaking-writing-001-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Role of Feedback”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "7507417c2f793d7d68",
+      "modelAnswer": "Feedback is vital in communication, forming a loop that informs senders about message effectiveness and allows for clarification and improvement, thereby fostering mutual understanding and stronger relationships by aligning expressed and perceived meanings.",
+      "readText": "Feedback is an indispensable component of the communication process, acting as a crucial loop that allows senders to gauge the effectiveness of their message. Without feedback, communication remains a one-way street, making it difficult to ascertain if the intended meaning has been successfully conveyed or if misunderstandings have arisen. Constructive feedback, whether verbal or non-verbal, provides opportunities for clarification, adjustment, and improvement in future interactions. It fosters a dynamic exchange, enhancing mutual understanding and strengthening relationships, both personal and professional, by ensuring alignment between expressed and perceived messages."
+    },
+    {
+      "id": "pte-speaking-writing-001-q14",
+      "questionType": "essay",
+      "prompt": "In today's interconnected world, the lines between formal and informal communication are often blurred. Discuss the advantages and disadvantages of each style, and argue which is more prevalent or effective in modern society.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "4e8fc27774a5cc63bd",
+      "modelAnswer": "The landscape of communication has undergone significant transformation, blurring the traditional distinctions between formal and informal styles. Each style possesses inherent advantages and disadvantages, and their prevalence and effectiveness often depend on the context and purpose of the interaction.\n\nFormal communication, characterized by its structured, precise, and often hierarchical nature, is essential in professional and academic settings. Its advantages include clarity, accountability, and the establishment of authority, making it suitable for official announcements, legal documents, and academic dissertations. It minimizes ambiguity and ensures that information is conveyed accurately and respectfully. However, its disadvantages can include being slow, rigid, and potentially creating distance between communicators, sometimes hindering creativity and open dialogue. It can also be perceived as impersonal, failing to build rapport.\n\nInformal communication, on the other hand, is spontaneous, relaxed, and often personal. Its primary advantages are speed, flexibility, and its ability to foster rapport and build relationships. It encourages open expression, facilitates brainstorming, and can quickly disseminate information within a network. This style is prevalent in social interactions, team collaborations, and casual workplace discussions. The downsides, however, include potential for misinterpretation, lack of accountability, and the spread of unverified information or rumors. It can also be unprofessional in inappropriate contexts.\n\nIn modern society, I believe informal communication is becoming more prevalent and, in many everyday contexts, more effective. The rise of digital platforms like instant messaging and social media has normalized a more casual approach to information exchange, even in professional environments. While formal communication remains indispensable for critical documentation and official protocols, the speed and relational benefits of informal communication often make it the default for daily interactions and problem-solving. Its effectiveness lies in its adaptability and capacity to build bridges, though it must be tempered with an understanding of when formality is truly required to maintain professionalism and clarity."
+    },
+    {
+      "id": "pte-speaking-writing-001-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Semantic Barriers in Communication”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "da62fa3c7929f83600",
+      "modelAnswer": "Semantic barriers are a common challenge in effective communication, arising from differences in language, interpretation of words, or cultural contexts. These barriers occur when the sender and receiver attach different meanings to the same words or symbols. Jargon, slang, abstract language, and ambiguous phrasing can all contribute to semantic noise, leading to misunderstandings and misinterpretations. Overcoming these requires clarity, simplicity, and active efforts to ensure shared understanding between parties.",
+      "readText": "Semantic barriers are a common challenge in effective communication, arising from differences in language, interpretation of words, or cultural contexts. These barriers occur when the sender and receiver attach different meanings to the same words or symbols. Jargon, slang, abstract language, and ambiguous phrasing can all contribute to semantic noise, leading to misunderstandings and misinterpretations. Overcoming these requires clarity, simplicity, and active efforts to ensure shared understanding between parties."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “The Role of Empathy”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q16",
+      "modelAnswer": "Empathy plays a crucial role in effective communication, enabling individuals to understand and share the feelings of others. When communicating empathetically, speakers can tailor their message to resonate with the listener's perspective, anticipating reactions and addressing concerns more effectively. This not only enhances clarity but also builds trust and strengthens interpersonal bonds. Cultivating empathy is therefore essential for fostering meaningful and productive exchanges in any context.",
+      "readText": "Empathy plays a crucial role in effective communication, enabling individuals to understand and share the feelings of others. When communicating empathetically, speakers can tailor their message to resonate with the listener's perspective, anticipating reactions and addressing concerns more effectively. This not only enhances clarity but also builds trust and strengthens interpersonal bonds. Cultivating empathy is therefore essential for fostering meaningful and productive exchanges in any context."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Divide Concerns”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q17",
+      "modelAnswer": "The digital divide refers to the gap between those who have ready access to computers and the Internet, and those who do not. This disparity creates significant challenges for equal access to information, education, and economic opportunities. Bridging this divide is crucial for fostering inclusive communication and ensuring that all members of society can participate fully in the digital age, preventing further marginalization of disadvantaged groups.",
+      "readText": "The digital divide refers to the gap between those who have ready access to computers and the Internet, and those who do not. This disparity creates significant challenges for equal access to information, education, and economic opportunities. Bridging this divide is crucial for fostering inclusive communication and ensuring that all members of society can participate fully in the digital age, preventing further marginalization of disadvantaged groups."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “The Power of Storytelling”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q18",
+      "modelAnswer": "Storytelling is an ancient and powerful form of communication, used across cultures to transmit knowledge, values, and experiences. Narratives engage listeners emotionally, making complex ideas more accessible and memorable than mere facts. From oral traditions to modern media, stories connect people, build empathy, and inspire action. Their enduring appeal lies in their ability to create shared meaning and foster a sense of collective identity within communities.",
+      "readText": "Storytelling is an ancient and powerful form of communication, used across cultures to transmit knowledge, values, and experiences. Narratives engage listeners emotionally, making complex ideas more accessible and memorable than mere facts. From oral traditions to modern media, stories connect people, build empathy, and inspire action. Their enduring appeal lies in their ability to create shared meaning and foster a sense of collective identity within communities."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Understanding different cultures is paramount for effective global communication strategies.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Understanding Different Cultures”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q19",
+      "modelAnswer": "Understanding different cultures is paramount for effective global communication strategies.",
+      "audioScript": "Understanding different cultures is paramount for effective global communication strategies."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Clarity in messages prevents misunderstandings and improves overall communication flow.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Clarity in Messages”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q20",
+      "modelAnswer": "Clarity in messages prevents misunderstandings and improves overall communication flow.",
+      "audioScript": "Clarity in messages prevents misunderstandings and improves overall communication flow."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Constructive feedback is essential for improving communication and fostering better understanding.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Feedback is Essential”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q21",
+      "modelAnswer": "Constructive feedback is essential for improving communication and fostering better understanding.",
+      "audioScript": "Constructive feedback is essential for improving communication and fostering better understanding."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Modern technology has fundamentally transformed how we communicate and interact globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Technology Transforms Communication”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q22",
+      "modelAnswer": "Modern technology has fundamentally transformed how we communicate and interact globally.",
+      "audioScript": "Modern technology has fundamentally transformed how we communicate and interact globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Developing active listening skills is crucial for professional and personal success.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Active Listening Skills”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q23",
+      "modelAnswer": "Developing active listening skills is crucial for professional and personal success.",
+      "audioScript": "Developing active listening skills is crucial for professional and personal success."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Non-verbal communication, like gestures and facial expressions, conveys significant meaning.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Non-Verbal Communication Importance”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q24",
+      "modelAnswer": "Non-verbal communication, like gestures and facial expressions, conveys significant meaning.",
+      "audioScript": "Non-verbal communication, like gestures and facial expressions, conveys significant meaning."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Overcoming communication barriers requires patience, empathy, and clear articulation.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Overcoming Communication Barriers”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q25",
+      "modelAnswer": "Overcoming communication barriers requires patience, empathy, and clear articulation.",
+      "audioScript": "Overcoming communication barriers requires patience, empathy, and clear articulation."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Digital platforms connect billions of people, enabling instant global communication.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Digital Platforms Connect”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q26",
+      "modelAnswer": "Digital platforms connect billions of people, enabling instant global communication.",
+      "audioScript": "Digital platforms connect billions of people, enabling instant global communication."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Temperature Change (1900-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q27",
+      "modelAnswer": "This line graph illustrates global average temperature changes from 1900 to 2020, showing temperature anomalies in degrees Celsius. Initially, temperatures were around -0.2°C in 1900, with a slight increase to 0.1°C by 1940 before stabilizing. A significant upward trend is evident from 1980, where the anomaly was 0.3°C, accelerating to 0.6°C by 2000. The highest point is recorded in 2020 at 1.0°C, indicating a substantial warming trend over the last few decades. The overall increase from 1900 to 2020 is a full 1.2 degrees.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Temperature Change (1900-2020)",
+        "yLabel": "Temperature Anomaly (°C)",
+        "xAxis": [
+          "1900",
+          "1920",
+          "1940",
+          "1960",
+          "1980",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Temperature Anomaly",
+            "values": [
+              -0.2,
+              -0.1,
+              0.1,
+              0,
+              0.3,
+              0.6,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Annual Deforestation in the Amazon Basin (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q28",
+      "modelAnswer": "This line chart illustrates the annual deforestation in the Amazon Basin from 1990 to 2020, measured in million hectares. Initially, deforestation showed an upward trend, starting at 1.5 million hectares in 1990 and peaking at 2.7 million hectares in 2005. Following this, there was a significant decline, reaching its lowest point of 0.9 million hectares in 2015. However, a slight increase is observed towards the end of the period, with 1.1 million hectares deforested in 2020. Overall, while the 2015 figures show improvement from the peak, deforestation remains a persistent concern.",
+      "visual": {
+        "chartType": "line",
+        "title": "Annual Deforestation in the Amazon Basin (1990-2020)",
+        "yLabel": "Area (million hectares)",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Deforested Area",
+            "values": [
+              1.5,
+              1.8,
+              2.3,
+              2.7,
+              1.2,
+              0.9,
+              1.1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Flowchart of the Scientific Method: Key Stages and Decisions\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q29",
+      "modelAnswer": "This table outlines the six key stages of the scientific method, presented as a clear flowchart. It begins with 'Observation & Question' as Stage 1, leading to 'Hypothesis Formation' in Stage 2. The most action-oriented stage, 'Experiment Design', is Stage 3, followed by 'Data Collection & Analysis' in Stage 4. The process culminates in 'Conclusion' at Stage 5, where data is interpreted against the hypothesis. Finally, 'Communication' is Stage 6, emphasizing sharing findings. Each stage details a 'Key Action/Question' and its 'Outcome/Next Step', providing a comprehensive overview of the systematic approach to scientific inquiry.",
+      "visual": {
+        "chartType": "table",
+        "title": "Flowchart of the Scientific Method: Key Stages and Decisions",
+        "headers": [
+          "Stage Number",
+          "Stage Description",
+          "Key Action/Question",
+          "Outcome/Next Step"
+        ],
+        "rows": [
+          [
+            "1",
+            "Observation & Question",
+            "Identify a phenomenon; ask 'why?' or 'how?'",
+            "Formulate a research question."
+          ],
+          [
+            "2",
+            "Hypothesis Formation",
+            "Propose a testable explanation.",
+            "Develop a specific, falsifiable hypothesis."
+          ],
+          [
+            "3",
+            "Experiment Design",
+            "Plan a method to test the hypothesis.",
+            "Outline variables, controls, and procedures."
+          ],
+          [
+            "4",
+            "Data Collection & Analysis",
+            "Execute the experiment; gather and interpret results.",
+            "Organize and analyze experimental data."
+          ],
+          [
+            "5",
+            "Conclusion",
+            "Interpret data relative to the hypothesis.",
+            "Support, reject, or revise the hypothesis."
+          ],
+          [
+            "6",
+            "Communication",
+            "Share findings with the scientific community.",
+            "Publish results; peer review."
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Key Components and Products of Photosynthesis\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q30",
+      "modelAnswer": "This table illustrates the key components and products of photosynthesis, divided into two main stages. The Light-Dependent Reactions, occurring in the thylakoid membranes, utilize sunlight and water to produce ATP, NADPH, and oxygen. Following this, the Light-Independent Reactions, also known as the Calvin Cycle, take place in the stroma. Here, ATP, NADPH, and carbon dioxide are consumed to synthesize glucose, ADP, and NADP+. A clear comparison shows that oxygen is an output only of the light-dependent stage, while glucose is the primary output of the light-independent stage, highlighting the sequential nature of these vital processes.",
+      "visual": {
+        "chartType": "table",
+        "title": "Key Components and Products of Photosynthesis",
+        "headers": [
+          "Process Stage",
+          "Inputs",
+          "Outputs",
+          "Location"
+        ],
+        "rows": [
+          [
+            "Light-Dependent Reactions",
+            "Sunlight, Water (H2O)",
+            "ATP, NADPH, Oxygen (O2)",
+            "Thylakoid Membranes"
+          ],
+          [
+            "Light-Independent Reactions (Calvin Cycle)",
+            "ATP, NADPH, Carbon Dioxide (CO2)",
+            "Glucose (C6H12O6), ADP, NADP+",
+            "Stroma"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “The Shannon-Weaver Model”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q31",
+      "modelAnswer": "The lecture described the Shannon-Weaver model as a foundational, linear theory of communication from 1948. It outlined the process involving a sender, encoder, message, channel, decoder, and receiver. A crucial concept introduced was 'noise,' which refers to any interference that can disrupt the message, hindering accurate understanding. Although initially for technical communication, this model provided a significant framework for analyzing information flow and potential communication breakdowns.",
+      "audioScript": "The Shannon-Weaver model, developed in 1948, is a foundational theory of communication often referred to as the 'mother of all models.' It conceptualizes communication as a linear process involving a sender, an encoder, a message, a channel, a decoder, and a receiver. A key element introduced was the concept of 'noise,' which represents any interference that can disrupt the message during transmission, preventing the receiver from accurately understanding the sender's intent. While initially designed for technical communication, it provided a framework for understanding how information travels and the potential points of breakdown, influencing subsequent communication theories significantly.",
+      "keyPoints": [
+        "Shannon-Weaver model is a linear communication theory.",
+        "Involves sender, encoder, message, channel, decoder, receiver.",
+        "Introduced 'noise' as interference disrupting message transmission.",
+        "Provided a framework for understanding information flow and breakdowns."
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Semiotics",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Study of Signs”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q32",
+      "modelAnswer": "Semiotics",
+      "audioScript": "What is the academic study of signs and symbols and their interpretation?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Mass communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Mass Communication Term”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q33",
+      "modelAnswer": "Mass communication",
+      "audioScript": "What term describes the process of imparting or exchanging information on a large scale to a wide range of people?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Intercultural communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Across Cultures”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-001-q34",
+      "modelAnswer": "Intercultural communication",
+      "audioScript": "What type of communication involves people from different cultural backgrounds?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-001-q01": "",
+    "pte-speaking-writing-001-q02": "",
+    "pte-speaking-writing-001-q03": "",
+    "pte-speaking-writing-001-q04": "",
+    "pte-speaking-writing-001-q05": "sample answer",
+    "pte-speaking-writing-001-q06": "",
+    "pte-speaking-writing-001-q07": "",
+    "pte-speaking-writing-001-q08": "",
+    "pte-speaking-writing-001-q09": "",
+    "pte-speaking-writing-001-q10": "",
+    "pte-speaking-writing-001-q11": "",
+    "pte-speaking-writing-001-q12": "sample answer",
+    "pte-speaking-writing-001-q13": "",
+    "pte-speaking-writing-001-q14": "",
+    "pte-speaking-writing-001-q15": ""
+  },
+  "fingerprints": [
+    "c96019fef030e8a0fc",
+    "97db5521cc07187055",
+    "6617a1e284ff93dfe4",
+    "f844d4a73d52c11e56",
+    "0e35d8498f163cbbcf",
+    "7ea8157616e294d8b4",
+    "9a4860ed83affd543b",
+    "860ebfe43841706761",
+    "1f00eb4849e67eb199",
+    "d531c24feceaed38b2",
+    "67e827b308983203ea",
+    "75ad4385196ac291df",
+    "7507417c2f793d7d68",
+    "4e8fc27774a5cc63bd",
+    "da62fa3c7929f83600"
+  ]
+}

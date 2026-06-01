@@ -1,0 +1,25 @@
+{
+  "id": "gre-full-005",
+  "exam": "gre",
+  "type": "full",
+  "title": "GRE Full Mock Test 5",
+  "durationSeconds": 10800,
+  "instructions": "Full GRE General Test mock. Complete all sections in order.",
+  "sections": [
+    {
+      "section": "verbal",
+      "testId": "gre-verbal-005",
+      "file": "gre/verbal/test-005.json"
+    },
+    {
+      "section": "quant",
+      "testId": "gre-quant-005",
+      "file": "gre/quant/test-005.json"
+    },
+    {
+      "section": "writing",
+      "testId": "gre-writing-005",
+      "file": "gre/writing/test-005.json"
+    }
+  ]
+}

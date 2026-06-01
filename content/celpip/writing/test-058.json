@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-058",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 58",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-058-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to a childcare centre requesting a tour and asking about their daily programme.",
+      "modelAnswer": "I wholeheartedly advocate for Option A: \"Prioritize local community initiatives, even if it means fewer large-scale national projects.\" This approach fosters stronger, more resilient communities from the ground up, ultimately leading to more sustainable national progress.\n\nFirstly, local initiatives directly address specific community needs and challenges, which often vary significantly across a nation. For instance, funding for a new community centre in a rural town might be far more impactful than a national arts festival in a major city, directly improving local well-being and social cohesion. Local projects also encourage greater civic engagement and volunteerism, as residents see tangible results in their immediate surroundings.\n\nSecondly, empowering local communities builds a robust foundation for national stability. By investing in local education, healthcare, and infrastructure, we reduce regional disparities and prevent the concentration of resources in a few urban centers. While large national projects can offer symbolic unity, they often fail to trickle down effectively to everyday citizens. The bureaucratic overhead and generalized approach of national programs can render them less efficient and responsive compared to agile, locally-driven efforts.\n\nOption B, \"Focus on large-scale national projects to foster unity and international competitiveness,\" while appealing in its vision of grandeur, often overlooks the granular needs that truly underpin a nation's strength. A nation is only as strong as its communities, and neglecting their specific requirements in favor of broad, often abstract national goals can create internal divisions and leave many feeling disenfranchised. True national unity is built on the collective strength and satisfaction of its diverse local components.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "childcare options in Canada",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-058-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short message to a friend asking for their recommendation for a childcare provider.",
+      "modelAnswer": "I wholeheartedly endorse Option B, advocating for the prioritization of community-based sports and arts programs. While professional sports undoubtedly offer entertainment, investing in local initiatives yields far more significant and widespread societal benefits.\n\nFirstly, these programs foster direct community engagement and social cohesion. By providing accessible and affordable opportunities for participation, they bring people of all ages and backgrounds together, building stronger social networks and a greater sense of belonging. For example, a local theatre group or youth soccer league creates a vibrant hub where residents connect, develop skills, and forge lasting friendships, strengthening the very fabric of the community.\n\nSecondly, community programs are crucial for promoting public health and well-being. They offer accessible avenues for physical activity and creative expression, combating sedentary lifestyles and fostering mental resilience. Imagine a free art class for seniors or a dance program for at-risk youth; these initiatives provide constructive outlets that improve physical health, boost self-esteem, and reduce social isolation, directly contributing to a healthier population.\n\nConversely, solely focusing on professional sports, as suggested by Option A, primarily benefits a select few athletes and large corporations. While it provides entertainment, the positive impact on the broader community is often indirect and limited compared to the tangible, direct benefits of widespread participatory programs. Professional sports, while captivating, lack the grassroots reach and transformative power that community-based initiatives offer.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "childcare options in Canada",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

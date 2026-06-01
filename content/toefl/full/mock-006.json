@@ -1,0 +1,30 @@
+{
+  "id": "toefl-full-006",
+  "exam": "toefl",
+  "type": "full",
+  "title": "TOEFL iBT Full Mock Test 6",
+  "durationSeconds": 6960,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "reading",
+      "testId": "toefl-reading-006",
+      "file": "toefl/reading/test-006.json"
+    },
+    {
+      "section": "listening",
+      "testId": "toefl-listening-006",
+      "file": "toefl/listening/test-006.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "toefl-speaking-006",
+      "file": "toefl/speaking/test-006.json"
+    },
+    {
+      "section": "writing",
+      "testId": "toefl-writing-006",
+      "file": "toefl/writing/test-006.json"
+    }
+  ]
+}

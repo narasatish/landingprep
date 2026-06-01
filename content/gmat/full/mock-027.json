@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-027",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 27",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-027",
+      "file": "gmat/quant/test-027.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-027",
+      "file": "gmat/verbal/test-027.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-027",
+      "file": "gmat/data-insights/test-027.json"
+    }
+  ]
+}

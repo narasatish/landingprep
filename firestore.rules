@@ -1,0 +1,32 @@
+rules_version = '2';
+// LandingPrep — Firestore security rules for Community Q&A + Leaderboard.
+// Paste this into Firebase Console → Firestore → Rules → Publish.
+// Anyone can READ; writes are allowed but tightly shape-validated and length-capped
+// to limit spam/abuse. Tighten further (e.g. require Auth) once you add Firebase Auth.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /questions/{id} {
+      allow read: if true;
+      allow create: if request.resource.data.title is string
+                    && request.resource.data.title.size() >= 8
+                    && request.resource.data.title.size() <= 140
+                    && request.resource.data.body.size() <= 2000
+                    && request.resource.data.author.size() <= 40;
+      // Allow updates only to votes/answers (for upvotes and posting answers).
+      allow update: if request.resource.data.title == resource.data.title;
+      allow delete: if false;
+    }
+
+    match /leaderboard/{id} {
+      allow read: if true;
+      allow create: if request.resource.data.exam is string
+                    && request.resource.data.exam.size() <= 20
+                    && request.resource.data.name.size() <= 40
+                    && request.resource.data.pct is number
+                    && request.resource.data.pct >= 0
+                    && request.resource.data.pct <= 100;
+      allow update, delete: if false;
+    }
+  }
+}

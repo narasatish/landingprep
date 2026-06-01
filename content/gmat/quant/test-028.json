@@ -1,0 +1,413 @@
+{
+  "id": "gmat-quant-028",
+  "exam": "gmat",
+  "section": "quant",
+  "type": "section",
+  "title": "GMAT Focus Quant Practice Test 28",
+  "durationSeconds": 2700,
+  "questionCount": 21,
+  "instructions": "GMAT Focus Edition Quantitative Reasoning: 21 Problem Solving questions, 45 minutes. An on-screen calculator is permitted.",
+  "questions": [
+    {
+      "id": "gmat-quant-028-q001",
+      "questionNumber": 1,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "options": [
+        "8",
+        "12",
+        "16",
+        "20",
+        "24"
+      ],
+      "correctAnswer": "16",
+      "answer": "C",
+      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q002",
+      "questionNumber": 2,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "options": [
+        "96",
+        "120",
+        "136",
+        "140",
+        "152"
+      ],
+      "correctAnswer": "136",
+      "answer": "C",
+      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q003",
+      "questionNumber": 3,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "What is the value of 2^5 × 2^3?",
+      "options": [
+        "64",
+        "128",
+        "256",
+        "512",
+        "1024"
+      ],
+      "correctAnswer": "256",
+      "answer": "C",
+      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q004",
+      "questionNumber": 4,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "options": [
+        "18",
+        "21",
+        "24",
+        "27",
+        "30"
+      ],
+      "correctAnswer": "21",
+      "answer": "B",
+      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q005",
+      "questionNumber": 5,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "What is 15% of 15% of 400?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "15",
+        "18"
+      ],
+      "correctAnswer": "9",
+      "answer": "B",
+      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q006",
+      "questionNumber": 6,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "options": [
+        "$57",
+        "$60",
+        "$63",
+        "$66",
+        "$70"
+      ],
+      "correctAnswer": "$63",
+      "answer": "C",
+      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q007",
+      "questionNumber": 7,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "options": [
+        "120 miles",
+        "135 miles",
+        "150 miles",
+        "165 miles",
+        "180 miles"
+      ],
+      "correctAnswer": "150 miles",
+      "answer": "C",
+      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q008",
+      "questionNumber": 8,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "15",
+        "16"
+      ],
+      "correctAnswer": "10",
+      "answer": "B",
+      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q009",
+      "questionNumber": 9,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "options": [
+        "1/5",
+        "2/5",
+        "1/2",
+        "3/5",
+        "2/3"
+      ],
+      "correctAnswer": "3/5",
+      "answer": "D",
+      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q010",
+      "questionNumber": 10,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "options": [
+        "29",
+        "30",
+        "32",
+        "35",
+        "38"
+      ],
+      "correctAnswer": "32",
+      "answer": "C",
+      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q011",
+      "questionNumber": 11,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "options": [
+        "1175",
+        "1225",
+        "1250",
+        "1275",
+        "1300"
+      ],
+      "correctAnswer": "1275",
+      "answer": "D",
+      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q012",
+      "questionNumber": 12,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "If x = 5, what is the value of x² − 9?",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": "16",
+      "answer": "C",
+      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q013",
+      "questionNumber": 13,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "30 is what percent of 120?",
+      "options": [
+        "20%",
+        "25%",
+        "30%",
+        "35%",
+        "40%"
+      ],
+      "correctAnswer": "25%",
+      "answer": "B",
+      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q014",
+      "questionNumber": 14,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "options": [
+        "8 days",
+        "9 days",
+        "10 days",
+        "11 days",
+        "16 days"
+      ],
+      "correctAnswer": "9 days",
+      "answer": "B",
+      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q015",
+      "questionNumber": 15,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "options": [
+        "13",
+        "14",
+        "15",
+        "16",
+        "18"
+      ],
+      "correctAnswer": "15",
+      "answer": "C",
+      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q016",
+      "questionNumber": 16,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "options": [
+        "15%",
+        "20%",
+        "25%",
+        "30%",
+        "35%"
+      ],
+      "correctAnswer": "30%",
+      "answer": "D",
+      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q017",
+      "questionNumber": 17,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "options": [
+        "7",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": "9",
+      "answer": "B",
+      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q018",
+      "questionNumber": 18,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "options": [
+        "36",
+        "40",
+        "42",
+        "48",
+        "54"
+      ],
+      "correctAnswer": "42",
+      "answer": "C",
+      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q019",
+      "questionNumber": 19,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "options": [
+        "24",
+        "28",
+        "30",
+        "36",
+        "60"
+      ],
+      "correctAnswer": "30",
+      "answer": "C",
+      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q020",
+      "questionNumber": 20,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "options": [
+        "132",
+        "144",
+        "154",
+        "168",
+        "176"
+      ],
+      "correctAnswer": "154",
+      "answer": "C",
+      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-028-q021",
+      "questionNumber": 21,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "options": [
+        "16 litres",
+        "18 litres",
+        "20 litres",
+        "22 litres",
+        "24 litres"
+      ],
+      "correctAnswer": "20 litres",
+      "answer": "C",
+      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "difficulty": "medium"
+    }
+  ],
+  "answerKey": {
+    "gmat-quant-028-q001": "16",
+    "gmat-quant-028-q002": "136",
+    "gmat-quant-028-q003": "256",
+    "gmat-quant-028-q004": "21",
+    "gmat-quant-028-q005": "9",
+    "gmat-quant-028-q006": "$63",
+    "gmat-quant-028-q007": "150 miles",
+    "gmat-quant-028-q008": "10",
+    "gmat-quant-028-q009": "3/5",
+    "gmat-quant-028-q010": "32",
+    "gmat-quant-028-q011": "1275",
+    "gmat-quant-028-q012": "16",
+    "gmat-quant-028-q013": "25%",
+    "gmat-quant-028-q014": "9 days",
+    "gmat-quant-028-q015": "15",
+    "gmat-quant-028-q016": "30%",
+    "gmat-quant-028-q017": "9",
+    "gmat-quant-028-q018": "42",
+    "gmat-quant-028-q019": "30",
+    "gmat-quant-028-q020": "154",
+    "gmat-quant-028-q021": "20 litres"
+  }
+}

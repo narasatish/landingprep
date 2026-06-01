@@ -1,0 +1,762 @@
+{
+  "id": "pte-speaking-writing-043",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 43",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-043-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Holistic Approach to Wellness”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "healthy lifestyles",
+      "modelAnswer": "Embracing a holistic approach to wellness involves more than just physical exercise; it encompasses mental, emotional, and spiritual well-being. This integrated perspective recognizes that all aspects of a person's life are interconnected and contribute to overall health. Prioritizing balanced nutrition, sufficient sleep, stress management, and meaningful social connections are crucial components for maintaining a vibrant and healthy lifestyle.",
+      "readText": "Embracing a holistic approach to wellness involves more than just physical exercise; it encompasses mental, emotional, and spiritual well-being. This integrated perspective recognizes that all aspects of a person's life are interconnected and contribute to overall health. Prioritizing balanced nutrition, sufficient sleep, stress management, and meaningful social connections are crucial components for maintaining a vibrant and healthy lifestyle."
+    },
+    {
+      "id": "pte-speaking-writing-043-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Daily Habits for Health”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Consistent daily habits are fundamental for cultivating a truly healthy lifestyle.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "healthy lifestyles",
+      "modelAnswer": "Consistent daily habits are fundamental for cultivating a truly healthy lifestyle.",
+      "audioScript": "Consistent daily habits are fundamental for cultivating a truly healthy lifestyle."
+    },
+    {
+      "id": "pte-speaking-writing-043-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Weekly Exercise Habits Across Age Groups (Minutes)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "healthy lifestyles",
+      "modelAnswer": "This bar chart illustrates weekly exercise habits across different age groups, measured in average minutes per week. The 18-29 age group shows the highest exercise level, averaging 210 minutes. Exercise duration generally decreases with age, with the 30-44 group at 180 minutes, and 45-59 year olds at 150 minutes. The lowest exercise level is observed in the 60-75 age group, averaging only 120 minutes per week. This trend indicates a clear decline in physical activity as individuals get older.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Weekly Exercise Habits Across Age Groups (Minutes)",
+        "yLabel": "Average Minutes Exercised per Week",
+        "xAxis": [
+          "18-29",
+          "30-44",
+          "45-59",
+          "60-75"
+        ],
+        "series": [
+          {
+            "label": "Average Exercise (Minutes)",
+            "values": [
+              210,
+              180,
+              150,
+              120
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-043-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Exercise and Longevity”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "healthy lifestyles",
+      "modelAnswer": "The lecture discussed the significant long-term health benefits of regular physical activity. It highlighted that consistent exercise reduces the risk of chronic illnesses such as heart disease, diabetes, and some cancers. Additionally, physical activity is crucial for improving cognitive abilities, strengthening bones, and boosting mental health. Essentially, engaging in regular exercise is a vital preventative strategy against age-related health decline and contributes to a better quality of life.",
+      "audioScript": "The benefits of regular physical activity extend far beyond immediate fitness gains, profoundly impacting long-term health and longevity. Studies consistently show that individuals who engage in moderate to vigorous exercise tend to have lower risks of chronic diseases like heart disease, type 2 diabetes, and certain cancers. Furthermore, physical activity improves cognitive function, bone density, and mental well-being, contributing to a higher quality of life in later years. It's a powerful preventative measure against age-related decline.",
+      "keyPoints": [
+        "Regular exercise lowers chronic disease risk",
+        "Improves cognitive function and bone density",
+        "Enhances mental well-being",
+        "Acts as a preventative measure against aging"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-043-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Source of Vitamin D”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Sunlight",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "healthy lifestyles",
+      "modelAnswer": "Sunlight",
+      "audioScript": "What natural source provides a significant amount of Vitamin D?"
+    },
+    {
+      "id": "pte-speaking-writing-043-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “The Mediterranean Diet”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "healthy lifestyles",
+      "wordTarget": 75,
+      "modelAnswer": "The Mediterranean diet, characterized by plant-based foods, healthy fats, and moderate animal protein, is consistently linked to reduced cardiovascular disease risk, improved brain health, and increased longevity due to its emphasis on fresh, unprocessed ingredients.",
+      "readText": "The Mediterranean diet, renowned for its health benefits, emphasizes plant-based foods, healthy fats, and moderate consumption of fish and poultry. Rich in fruits, vegetables, whole grains, legumes, and nuts, it also features olive oil as the primary fat source. This dietary pattern is consistently linked to reduced risks of cardiovascular disease, improved brain health, and enhanced longevity. Its focus on fresh, unprocessed ingredients and mindful eating practices contributes to its efficacy in promoting overall well-being and preventing chronic conditions."
+    },
+    {
+      "id": "pte-speaking-writing-043-q07",
+      "questionType": "write_essay",
+      "prompt": "Many people believe that international sporting events such as the Olympics are a waste of public money. Others think they bring important benefits. Discuss both views and give your own opinion.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "healthy lifestyles",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Brain Plasticity Throughout Life”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q08",
+      "modelAnswer": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, is fundamental to learning and memory. This capacity allows the brain to adapt to new experiences, learn new skills, and even recover from injury. Understanding neuroplasticity highlights that learning is not confined to childhood, but is an ongoing process that can be actively cultivated through continuous intellectual engagement and novel experiences, fostering lifelong cognitive vitality.",
+      "readText": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, is fundamental to learning and memory. This capacity allows the brain to adapt to new experiences, learn new skills, and even recover from injury. Understanding neuroplasticity highlights that learning is not confined to childhood, but is an ongoing process that can be actively cultivated through continuous intellectual engagement and novel experiences, fostering lifelong cognitive vitality."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ecosystem Health and Diversity”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q09",
+      "modelAnswer": "Biodiversity loss poses a severe threat to ecosystem services, which are the fundamental benefits that nature provides to humanity. These services include clean air and water, pollination of crops, soil fertility, and climate regulation. When biodiversity declines, the stability and resilience of ecosystems are compromised, leading to a reduction in their capacity to deliver these essential services. Protecting biodiversity is therefore critical for maintaining the ecological balance necessary for human survival and well-being.",
+      "readText": "Biodiversity loss poses a severe threat to ecosystem services, which are the fundamental benefits that nature provides to humanity. These services include clean air and water, pollination of crops, soil fertility, and climate regulation. When biodiversity declines, the stability and resilience of ecosystems are compromised, leading to a reduction in their capacity to deliver these essential services. Protecting biodiversity is therefore critical for maintaining the ecological balance necessary for human survival and well-being."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Safeguarding Personal Data”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q10",
+      "modelAnswer": "Digital privacy and data sovereignty are increasingly critical concerns in our interconnected world. Data sovereignty refers to the idea that digital data is subject to the laws and governance structures of the nation in which it is collected. Ensuring robust digital privacy means individuals have control over their personal information online, including how it's collected, stored, and used. These principles are essential for protecting individual rights and fostering trust in digital ecosystems.",
+      "readText": "Digital privacy and data sovereignty are increasingly critical concerns in our interconnected world. Data sovereignty refers to the idea that digital data is subject to the laws and governance structures of the nation in which it is collected. Ensuring robust digital privacy means individuals have control over their personal information online, including how it's collected, stored, and used. These principles are essential for protecting individual rights and fostering trust in digital ecosystems."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “AI's Influence on Employment”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q11",
+      "modelAnswer": "The impact of artificial intelligence on job markets is a complex and evolving phenomenon. While AI promises to automate repetitive tasks and create new industries, it also raises concerns about job displacement in certain sectors. Experts predict a shift in the types of skills demanded, with greater emphasis on creativity, critical thinking, and emotional intelligence. Adapting education and workforce training programs will be crucial to prepare for this transformation and harness AI's potential for economic growth.",
+      "readText": "The impact of artificial intelligence on job markets is a complex and evolving phenomenon. While AI promises to automate repetitive tasks and create new industries, it also raises concerns about job displacement in certain sectors. Experts predict a shift in the types of skills demanded, with greater emphasis on creativity, critical thinking, and emotional intelligence. Adapting education and workforce training programs will be crucial to prepare for this transformation and harness AI's potential for economic growth."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ancient Trade Routes' Legacy”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q12",
+      "modelAnswer": "The history of maritime trade routes is a testament to human ingenuity and economic ambition. From ancient Phoenician voyages across the Mediterranean to the Silk Road of the Sea connecting East and West, these routes facilitated the exchange of goods, ideas, and cultures for millennia. They spurred the development of advanced navigation, shipbuilding, and international law, profoundly shaping global economies and societies, and laying foundations for modern globalization.",
+      "readText": "The history of maritime trade routes is a testament to human ingenuity and economic ambition. From ancient Phoenician voyages across the Mediterranean to the Silk Road of the Sea connecting East and West, these routes facilitated the exchange of goods, ideas, and cultures for millennia. They spurred the development of advanced navigation, shipbuilding, and international law, profoundly shaping global economies and societies, and laying foundations for modern globalization."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology raises significant concerns about individual privacy and data security.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Tech and Data”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q13",
+      "modelAnswer": "Smart city technology raises significant concerns about individual privacy and data security.",
+      "audioScript": "Smart city technology raises significant concerns about individual privacy and data security."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation critically impacts indigenous land rights and traditional ways of life.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Forests and Indigenous Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q14",
+      "modelAnswer": "Deforestation critically impacts indigenous land rights and traditional ways of life.",
+      "audioScript": "Deforestation critically impacts indigenous land rights and traditional ways of life."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Social media platforms have fundamentally reshaped modern communication and information sharing.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q15",
+      "modelAnswer": "Social media platforms have fundamentally reshaped modern communication and information sharing.",
+      "audioScript": "Social media platforms have fundamentally reshaped modern communication and information sharing."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration often leads to complex challenges and opportunities for cultural integration.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Culture”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q16",
+      "modelAnswer": "International migration often leads to complex challenges and opportunities for cultural integration.",
+      "audioScript": "International migration often leads to complex challenges and opportunities for cultural integration."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation are transforming industries and labor markets globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Automation's Economic Impact”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q17",
+      "modelAnswer": "The economics of automation are transforming industries and labor markets globally.",
+      "audioScript": "The economics of automation are transforming industries and labor markets globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Renewable energy infrastructure investment is crucial for a sustainable future.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Funding”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q18",
+      "modelAnswer": "Renewable energy infrastructure investment is crucial for a sustainable future.",
+      "audioScript": "Renewable energy infrastructure investment is crucial for a sustainable future."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Urban heat islands require effective mitigation strategies to protect city dwellers.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Climate Issues”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q19",
+      "modelAnswer": "Urban heat islands require effective mitigation strategies to protect city dwellers.",
+      "audioScript": "Urban heat islands require effective mitigation strategies to protect city dwellers."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Financial literacy is essential for promoting economic inclusion across all demographics.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Money Skills and Inclusion”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q20",
+      "modelAnswer": "Financial literacy is essential for promoting economic inclusion across all demographics.",
+      "audioScript": "Financial literacy is essential for promoting economic inclusion across all demographics."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Nanotechnology offers revolutionary potential in advanced materials science and engineering applications.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Nano-materials Science”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q21",
+      "modelAnswer": "Nanotechnology offers revolutionary potential in advanced materials science and engineering applications.",
+      "audioScript": "Nanotechnology offers revolutionary potential in advanced materials science and engineering applications."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Ocean pH Levels (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q22",
+      "modelAnswer": "The line graph illustrates the global average ocean pH levels from 1990 to 2020. The pH level consistently decreased over this thirty-year period. In 1990, the pH was approximately 8.10, representing the highest recorded point. By 2020, it had fallen to its lowest point of 7.98. This indicates a clear trend of ocean acidification, with a noticeable drop of 0.12 pH units. The decline appears steady, reflecting ongoing environmental changes affecting marine ecosystems globally.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Ocean pH Levels (1990-2020)",
+        "yLabel": "pH Level",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Ocean pH",
+            "values": [
+              8.1,
+              8.08,
+              8.06,
+              8.04,
+              8.02,
+              8,
+              7.98
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global Water Usage by Sector\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q23",
+      "modelAnswer": "This pie chart illustrates global water usage across different sectors. The most significant portion, a substantial 70%, is allocated to agriculture, highlighting its dominant role in water consumption worldwide. Industry accounts for the second-largest share, utilizing 20% of global water. The smallest segment, at just 10%, is attributed to domestic use. This clearly indicates that agricultural activities are by far the largest consumers of water globally, significantly outweighing industrial and domestic demands combined.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global Water Usage by Sector",
+        "slices": [
+          {
+            "label": "Agriculture",
+            "value": 70
+          },
+          {
+            "label": "Industry",
+            "value": 20
+          },
+          {
+            "label": "Domestic",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Water Cycle: Evaporation, Transpiration & Precipitation (1900-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q24",
+      "modelAnswer": "This line chart illustrates the global water cycle components from 1900 to 2020, measured in gigatons per year. The most prominent trend is a steady increase across all four categories. Evaporation from the ocean consistently represents the highest values, starting at 425 gigatons in 1900 and rising to 468 gigatons by 2020. Conversely, evapotranspiration from land shows the lowest figures, ranging from 65 to 85 gigatons. Notably, ocean evaporation significantly exceeds ocean precipitation throughout the period, indicating a net transfer of water vapor to land.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Water Cycle: Evaporation, Transpiration & Precipitation (1900-2020)",
+        "yLabel": "Gigatons/Year",
+        "xAxis": [
+          "1900",
+          "1920",
+          "1940",
+          "1960",
+          "1980",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Evaporation (Ocean)",
+            "values": [
+              425,
+              430,
+              438,
+              445,
+              452,
+              460,
+              468
+            ]
+          },
+          {
+            "label": "Evapotranspiration (Land)",
+            "values": [
+              65,
+              68,
+              72,
+              75,
+              78,
+              82,
+              85
+            ]
+          },
+          {
+            "label": "Precipitation (Ocean)",
+            "values": [
+              385,
+              390,
+              398,
+              405,
+              412,
+              420,
+              428
+            ]
+          },
+          {
+            "label": "Precipitation (Land)",
+            "values": [
+              105,
+              108,
+              112,
+              115,
+              118,
+              122,
+              125
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Adult Literacy Rates by Region (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q25",
+      "modelAnswer": "The table illustrates global adult literacy rates by region in 2022 and their change from 2012. North America and Europe show the highest literacy rates at 99% and 98% respectively, with only a 1% increase over the decade. Conversely, South Asia and Sub-Saharan Africa have the lowest rates, at 76% and 78%. However, these regions demonstrate significant progress, with Sub-Saharan Africa achieving the largest increase of 9%. This indicates a positive global trend towards improved literacy, particularly in previously underserved areas, narrowing the gap between regions.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Adult Literacy Rates by Region (2022)",
+        "headers": [
+          "Region",
+          "Literacy Rate (%)",
+          "Change from 2012 (%)"
+        ],
+        "rows": [
+          [
+            "North America",
+            "99",
+            "+1"
+          ],
+          [
+            "Europe",
+            "98",
+            "+1"
+          ],
+          [
+            "East Asia & Pacific",
+            "96",
+            "+3"
+          ],
+          [
+            "Latin America & Caribbean",
+            "94",
+            "+4"
+          ],
+          [
+            "Sub-Saharan Africa",
+            "78",
+            "+9"
+          ],
+          [
+            "South Asia",
+            "76",
+            "+7"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Smartphone Adoption Rate (2014-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q26",
+      "modelAnswer": "This line graph illustrates the global smartphone adoption rate over a decade, from 2014 to 2023. Initially, in 2014, the adoption rate stood at 30 percent, showing significant room for growth. A consistent upward trend is evident throughout the period. By 2017, the rate had surpassed 50 percent, reaching 57 percent. The highest adoption rate is recorded in 2023 at 85 percent, indicating near market saturation. Overall, smartphone adoption has seen a remarkable increase of 55 percentage points, highlighting the pervasive impact of communication technology globally.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Smartphone Adoption Rate (2014-2023)",
+        "yLabel": "Adoption Rate (%)",
+        "xAxis": [
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Global Adoption Rate",
+            "values": [
+              30,
+              39,
+              49,
+              57,
+              64,
+              70,
+              75,
+              79,
+              82,
+              85
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q27",
+      "modelAnswer": "The lecture focused on the importance of non-verbal communication, stating that a large percentage of our daily interactions are conveyed without words. This includes elements like body language, facial expressions, gestures, and vocal tone. These non-verbal cues can either support or contradict our spoken words, significantly impacting how our messages are understood. The speaker emphasized that understanding and mastering non-verbal communication is crucial for effective interpersonal interactions and interpreting others' true intentions.",
+      "audioScript": "Today, I want to talk about the often-overlooked power of non-verbal communication. It's estimated that a significant portion of our daily interactions, perhaps even up to 70-80%, is conveyed without words. This includes body language, facial expressions, gestures, and even the tone of our voice. These non-verbal cues can reinforce, contradict, or even substitute for spoken words, profoundly influencing how our messages are received and interpreted. Mastering them is key to effective interpersonal communication, building rapport, and understanding others' true intentions.",
+      "keyPoints": [
+        "Non-verbal communication is a large part of interaction",
+        "Includes body language, expressions, tone",
+        "Can reinforce or contradict spoken words",
+        "Essential for effective interpersonal communication"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Digital Age Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q28",
+      "modelAnswer": "The lecture discussed how the digital age has transformed communication, offering both convenience and new challenges. It highlighted that tools like instant messaging and social media enable rapid global information exchange, removing geographical barriers. However, this often sacrifices nuance and depth because text-based communication lacks non-verbal cues. Additionally, the sheer volume of digital information can cause overload and misinterpretation. The speaker concluded that new literacies and digital etiquette are necessary to navigate these complexities effectively.",
+      "audioScript": "The digital age has fundamentally reshaped how we communicate, bringing both unprecedented convenience and new challenges. Instant messaging, email, and social media allow for rapid, global information exchange, breaking down geographical barriers. However, this shift often comes at the cost of nuance and depth, as text-based communication lacks the rich non-verbal cues present in face-to-face interactions. Moreover, the sheer volume of digital information can lead to overload and misinterpretation. Navigating these complexities requires developing new literacies and an awareness of digital etiquette.",
+      "keyPoints": [
+        "Digital age transformed communication",
+        "Offers rapid global exchange, convenience",
+        "Lacks non-verbal cues, depth",
+        "Can lead to information overload, misinterpretation"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Postal service",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Sending a Letter”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q29",
+      "modelAnswer": "Postal service",
+      "audioScript": "Which public service delivers letters and parcels?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Mass media",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Mass Media Term”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q30",
+      "modelAnswer": "Mass media",
+      "audioScript": "What is the general term for newspapers, television, and radio?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Email",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Electronic Message”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q31",
+      "modelAnswer": "Email",
+      "audioScript": "What do you call an electronic message sent over the internet?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Tone",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Tone of Voice”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-043-q32",
+      "modelAnswer": "Tone",
+      "audioScript": "What aspect of speech conveys emotion without words?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Global Freshwater Crisis”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-043-q33",
+      "modelAnswer": "Global freshwater management faces significant challenges from climate change, population growth, and pollution, necessitating international cooperation, innovative conservation, and sustainable consumption to ensure equitable access to this vital, unevenly distributed resource.",
+      "readText": "Managing global freshwater resources presents an immense challenge, exacerbated by climate change, population growth, and increasing industrial demand. While water covers much of the Earth, only a tiny fraction is accessible freshwater, and much of that is unevenly distributed. Pollution from agriculture and industry further contaminates vital supplies, rendering them unusable. Effective management requires international cooperation, innovative conservation strategies, and sustainable consumption practices to ensure equitable access for all, preventing future conflicts over this indispensable resource."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Digital communication technologies have fundamentally altered how individuals interact with each other and with institutions. Discuss the most significant advantages and disadvantages of these changes, providing examples to support your arguments.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-043-q34",
+      "modelAnswer": "The advent of digital communication technologies, such as social media, email, and instant messaging, has undeniably revolutionized human interaction. This transformation presents a duality of profound advantages and notable disadvantages, reshaping personal relationships, professional conduct, and societal engagement.\n\nAmong the primary advantages is the unprecedented speed and reach of communication. Information can be disseminated globally in an instant, fostering real-time collaboration across geographical boundaries and enabling rapid responses to crises. For instance, social media platforms have proven instrumental in organizing relief efforts during natural disasters or facilitating political discourse on a global scale. Moreover, digital tools allow individuals to maintain connections with friends and family living far away, strengthening social bonds that might otherwise weaken. The accessibility of diverse perspectives and information through online forums also enriches public debate and personal learning.\n\nHowever, these benefits are counterbalanced by significant drawbacks. A major disadvantage is the erosion of face-to-face interaction, which can lead to a decline in empathy and the misinterpretation of non-verbal cues crucial for effective communication. The prevalence of cyberbullying and online harassment highlights the darker side of anonymity and distance afforded by digital platforms. Furthermore, the constant influx of notifications and the pressure to be perpetually available can contribute to increased stress, anxiety, and a blurring of work-life boundaries. Concerns about privacy, data security, and the spread of misinformation also represent substantial challenges in the digital communication landscape.\n\nIn conclusion, while digital communication offers unparalleled efficiency and connectivity, its impact is complex. Societies must strive to leverage its advantages for progress while actively mitigating its inherent disadvantages to foster healthier, more meaningful forms of interaction in the digital age."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Effective communication is crucial for success in both personal and professional life. What are the key elements of effective communication, and how can individuals develop these skills? Provide specific strategies and examples.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-043-q35",
+      "modelAnswer": "Effective communication is the cornerstone of successful interactions, whether in personal relationships or professional environments. It involves not just transmitting information, but ensuring the message is received, understood, and acted upon as intended. Several key elements define effective communication, and fortunately, these are skills that can be consciously developed.\n\nOne fundamental element is active listening. This goes beyond merely hearing words; it involves fully concentrating on the speaker, understanding their message, asking clarifying questions, and providing verbal and non-verbal feedback. For instance, in a professional setting, an active listener might paraphrase a colleague's idea to confirm understanding, fostering trust and ensuring alignment. Another crucial element is clarity and conciseness. Messages should be direct, easy to understand, and free from jargon or unnecessary detail. In emails, this means using clear subject lines and bullet points, while in presentations, it involves structuring information logically with a clear main point.\n\nNon-verbal communication, including body language, eye contact, and tone of voice, is equally vital. These cues often convey more than words and can either reinforce or contradict a spoken message. Developing this skill involves self-awareness and practice; for example, maintaining open posture and consistent eye contact during a job interview projects confidence and engagement. Empathy, the ability to understand and share the feelings of another, is also essential. Communicating empathetically means considering the audience's perspective and tailoring the message accordingly, which can be practiced by consciously trying to see situations from different viewpoints before responding.\n\nTo develop these skills, individuals can employ several strategies. Firstly, seeking feedback from peers or mentors on their communication style can provide invaluable insights. Role-playing different scenarios, such as conflict resolution or negotiation, offers a safe space to practice. Additionally, engaging in public speaking opportunities, even informal ones, helps build confidence and refine delivery. Reading widely and critically analyzing various communication styles, from speeches to written reports, can also enhance understanding. Finally, mindfulness practices can improve active listening by training focus and reducing distractions.\n\nIn conclusion, effective communication is a multifaceted skill encompassing active listening, clarity, appropriate non-verbal cues, and empathy. By actively seeking feedback, practicing deliberately, and being mindful of their interactions, individuals can significantly enhance their ability to connect, influence, and succeed in all aspects of life."
+    }
+  ]
+}

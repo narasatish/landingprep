@@ -1,0 +1,54 @@
+{
+  "id": "toefl-writing-001",
+  "exam": "toefl",
+  "section": "writing",
+  "type": "section",
+  "title": "TOEFL iBT Writing Practice Test 1",
+  "variant": "ibt",
+  "durationSeconds": 1380,
+  "questionCount": 2,
+  "instructions": "There are 2 writing tasks. Task 1 (Integrated Writing): Read a passage for 3 minutes, listen to a lecture, then write a 150-225 word response explaining how the lecture relates to the reading. You have 20 minutes. Task 2 (Academic Discussion): Read a professor's question and two student responses, then write your own contribution of at least 100 words in 10 minutes.",
+  "questions": [
+    {
+      "id": "toefl-writing-001-q01",
+      "taskNum": 1,
+      "taskType": "integrated_writing",
+      "questionType": "integrated_writing",
+      "readingTitle": "Benefits of Remote Work for Employee Productivity",
+      "readingText": "Remote work arrangements offer several advantages that can significantly enhance employee productivity. First, working from home eliminates the daily commute, giving employees additional time that many use for preparation or exercise, arriving at their workday more focused. Second, home environments allow individuals to personalise their workspace in ways that suit their working style — adjusting lighting, temperature, and noise levels to optimise concentration. Third, studies indicate that remote workers often experience fewer workplace interruptions than office-based counterparts, allowing for longer periods of uninterrupted deep work. Surveys of remote workers consistently report higher levels of job satisfaction, which research links to greater motivation and sustained effort.",
+      "lectureDescription": "The professor challenges each point in the reading. First, home environments introduce their own distractions — family members, household chores, and the blurring of work and home boundaries actually reduce the quality of focus for many workers. Second, the professor cites a Stanford study showing that while some remote workers are more productive, the effect is highly variable and depends strongly on the individual's home circumstances. Third, regarding collaboration: the reading ignores that many forms of productive work require spontaneous interaction and team creativity, which are significantly harder to achieve remotely. The professor concludes that remote work benefits are real for some workers and tasks but are overstated as a universal solution.",
+      "prompt": "Summarise the points made in the lecture, being sure to explain how they cast doubt on the specific points made in the reading passage.",
+      "modelAnswer": "The reading argues that remote work enhances productivity through three main points: eliminating commutes, enabling personalised workspaces, and reducing interruptions. The professor challenges all three claims.\n\nOn commutes, the professor notes that home environments introduce their own distractions — family members and household responsibilities — that offset any time saved by avoiding travel. Rather than improving focus, working from home may blur the boundary between professional and personal life.\n\nRegarding personalised workspaces, the professor references a Stanford study showing productivity gains from remote work are highly inconsistent and depend heavily on individual home circumstances. Some workers benefit, but others do not, making the reading's claim overly broad.\n\nFinally, the professor argues that the reading overlooks the importance of spontaneous interaction and collaborative creativity, which are significantly harder to achieve when teams work remotely. Many productive activities require informal real-time collaboration that remote arrangements cannot replicate effectively.\n\nIn summary, the professor agrees that remote work benefits some workers, but contends that the reading overstates these benefits as universal advantages.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range"
+      ],
+      "timeSeconds": 1200,
+      "targetWords": "150-225"
+    },
+    {
+      "id": "toefl-writing-001-q02",
+      "taskNum": 2,
+      "taskType": "academic_discussion",
+      "questionType": "academic_discussion",
+      "professorName": "Dr Chen",
+      "professorQuestion": "This week we have been studying how organisations motivate employees. Consider the following question: Do you think financial rewards are more effective at motivating workers than non-financial rewards such as recognition, flexible hours, or meaningful work? Explain your view and give reasons.",
+      "student1Name": "Marcus",
+      "student1Response": "I think financial rewards are the most powerful motivator because money is universally useful. You can use it for anything — rent, travel, saving for the future. Recognition might feel good for a moment, but when bills are due, a bonus matters far more. Most people ultimately work because they need income, so increasing that income directly is the clearest way to motivate them.",
+      "student2Name": "Priya",
+      "student2Response": "I disagree. Research in psychology consistently shows that once people earn enough to meet their basic needs, additional money has diminishing returns on motivation. What keeps people genuinely engaged is autonomy, a sense of purpose, and the feeling that their work matters. A pay rise might boost effort briefly, but meaningful work sustains motivation over the long term.",
+      "prompt": "Your professor is teaching a class on organisational psychology. Write a post responding to the professor's question. In your response, express and support your personal opinion, and make a contribution to the discussion in your own words. An effective response will contain at least 100 words.",
+      "modelAnswer": "I largely agree with Priya's position, though I would add nuance to how we understand motivation in practice.\n\nMarcus makes a valid point that financial security is fundamental—without adequate income, people understandably prioritize earning over fulfillment. However, once this baseline is met, research from self-determination theory demonstrates that autonomy, competence, and relatedness become primary motivators. A salary increase that fails to provide meaningful work often produces short-term compliance rather than sustained engagement.\n\nI have observed this dynamic in my own work experience. Colleagues who received raises without any change to their tasks showed temporary enthusiasm that quickly faded. Conversely, colleagues given autonomy and responsibility in their roles showed remarkable persistence despite modest compensation. This suggests that financial rewards are necessary but insufficient motivators.\n\nMoreover, high-performing organisations increasingly recognise this reality. Companies like Google and 3M have built competitive advantages by providing meaningful work and autonomy alongside competitive salaries, not instead of them. They understand that the most talented employees are seldom motivated by money alone.\n\nIn summary, while financial rewards are essential for meeting basic needs and demonstrating valuation of work, non-financial rewards drive the sustained motivation and engagement that create exceptional organisational performance. The most effective approach combines adequate compensation with opportunities for autonomy, growth, and meaningful contribution.",
+      "rubric": [
+        "task response",
+        "coherence",
+        "lexical resource",
+        "grammar"
+      ],
+      "timeSeconds": 600,
+      "targetWords": "100+"
+    }
+  ]
+}

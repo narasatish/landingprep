@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-015",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 15 — Advice Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-015-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "advice",
+      "letterSituation": "A close friend of yours has written to tell you they are very unhappy in their current career as an accountant and are seriously considering leaving their stable job to start a small business selling handmade crafts online. They are anxious about the financial risk involved.",
+      "prompt": "A close friend of yours has written to tell you they are very unhappy in their current career as an accountant and are seriously considering leaving their stable job to start a small business selling handmade crafts online. They are anxious about the financial risk involved.\n\nWrite a letter in response to this situation. In your letter:\n• acknowledge how they are feeling about their current situation\n• offer specific and practical advice about starting a small business\n• suggest two or three concrete steps they could take before making a final decision\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "advice"
+    },
+    {
+      "id": "ielts-writing-gt-015-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Starting and running a small business involves significant financial risk. Do you think governments should do more to support people who want to become self-employed? Give reasons for your answer and include relevant examples.",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "advice"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ielts-full-016",
+  "exam": "ielts",
+  "type": "full",
+  "title": "IELTS Full Mock Test 16",
+  "durationSeconds": 9900,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "ielts-listening-016",
+      "file": "ielts/listening/test-016.json"
+    },
+    {
+      "section": "reading",
+      "testId": "ielts-reading-016",
+      "file": "ielts/reading/test-016.json"
+    },
+    {
+      "section": "writing",
+      "testId": "ielts-writing-016",
+      "file": "ielts/writing/test-016.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "ielts-speaking-016",
+      "file": "ielts/speaking/test-016.json"
+    }
+  ]
+}

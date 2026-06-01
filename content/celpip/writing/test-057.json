@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-057",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 57",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-057-q01",
+      "questionType": "writing_task",
+      "prompt": "Write an email to the farmer's market manager asking about becoming a vendor.",
+      "modelAnswer": "I firmly believe that Option B, focusing on a more structured and comprehensive approach to career development, is the superior choice for young people today. While Option A's emphasis on flexibility has its merits, the current professional landscape demands more than just adaptability; it requires strategic preparation.\n\nFirstly, a structured approach provides young individuals with essential foundational skills often overlooked in more flexible models. This includes robust training in professional communication, problem-solving methodologies, and project management – competencies that are universally valued across industries. For example, specific workshops on crafting effective resumes or mastering interview techniques provide tangible, immediate benefits.\n\nSecondly, comprehensive career development fosters a clearer understanding of potential career paths and the necessary steps to achieve them. This involves exposure to various industries and roles, perhaps through mentorship programs or extended internships, which allows young people to make informed decisions rather than simply \"finding their way.\" This prevents the aimless drifting that can result from too much flexibility, where choices are made without a solid understanding of long-term implications.\n\nOption A, while promoting adaptability, risks leaving young people without the foundational tools and clear direction needed to navigate an increasingly competitive and complex job market. While flexibility is important, it should complement, not replace, a strong base of knowledge and strategic planning.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "local farmer's markets",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-057-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short message to a friend recommending your favourite stall at the local market.",
+      "modelAnswer": "I firmly believe that Option B, focusing on a specific local issue and providing actionable solutions, is the superior approach for a community newspaper. This strategy directly engages readers by addressing a tangible problem within their immediate environment, fostering a sense of relevance and urgency that a broader national topic often lacks. For instance, investigating the lack of accessible public transport in a particular neighbourhood and proposing a new bus route or a car-sharing initiative would resonate deeply with residents affected daily by this issue. Such an article empowers the community, offering concrete steps they can take or advocate for, thereby transforming passive readers into active participants in local governance and problem-solving.\n\nConversely, Option A, discussing a national issue with a general call for awareness, while important, often feels detached and less impactful at a local level. While national issues certainly affect communities, a local newspaper's strength lies in its ability to dissect these issues through a hyper-local lens or, even better, to champion causes that are uniquely local. A general awareness piece on, say, climate change, without specific local implications or actions, risks being overlooked in a sea of similar national news. It fails to leverage the unique position of a local paper to instigate direct, observable change within its readership's daily lives.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "local farmer's markets",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

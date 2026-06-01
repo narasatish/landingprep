@@ -1,0 +1,741 @@
+{
+  "id": "pte-speaking-writing-035",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 35",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-035-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Community Garden Initiative Thrives”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "neighbourhood volunteering",
+      "modelAnswer": "The local neighbourhood volunteering initiative has successfully transformed an unused plot into a vibrant community garden. Residents of all ages contributed, dedicating weekends to planting, weeding, and building raised beds. This collaborative effort not only beautifies the area but also fosters stronger social bonds among neighbours. The garden now provides fresh produce for many families, demonstrating the tangible benefits of collective action and shared responsibility within the community.",
+      "readText": "The local neighbourhood volunteering initiative has successfully transformed an unused plot into a vibrant community garden. Residents of all ages contributed, dedicating weekends to planting, weeding, and building raised beds. This collaborative effort not only beautifies the area but also fosters stronger social bonds among neighbours. The garden now provides fresh produce for many families, demonstrating the tangible benefits of collective action and shared responsibility within the community."
+    },
+    {
+      "id": "pte-speaking-writing-035-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Volunteers Support Local Elderly”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Regular neighbourhood volunteering significantly enhances community spirit and local well-being.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "neighbourhood volunteering",
+      "modelAnswer": "Regular neighbourhood volunteering significantly enhances community spirit and local well-being.",
+      "audioScript": "Regular neighbourhood volunteering significantly enhances community spirit and local well-being."
+    },
+    {
+      "id": "pte-speaking-writing-035-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Neighbourhood Volunteering Activities (Last 12 Months)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "neighbourhood volunteering",
+      "modelAnswer": "This bar chart illustrates participation in various neighbourhood volunteering activities over the last 12 months. The most popular activity is Food Bank Support, attracting 210 volunteers, closely followed by Community Cleanup with 180 participants. Elderly Assistance also shows significant engagement with 150 volunteers. In contrast, Park Maintenance had the lowest participation, with only 90 volunteers, which is less than half the number involved in Food Bank Support. Youth Mentoring garnered 120 volunteers. Overall, the chart highlights the diverse ways residents contribute to their community, with a clear preference for direct social support initiatives.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Neighbourhood Volunteering Activities (Last 12 Months)",
+        "yLabel": "Number of Volunteers",
+        "xAxis": [
+          "Community Cleanup",
+          "Food Bank Support",
+          "Elderly Assistance",
+          "Park Maintenance",
+          "Youth Mentoring"
+        ],
+        "series": [
+          {
+            "label": "Volunteers",
+            "values": [
+              180,
+              210,
+              150,
+              90,
+              120
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-035-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Immigrant Support by Organisations”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "neighbourhood volunteering",
+      "modelAnswer": "The lecture highlighted the crucial role of community organisations in helping new immigrants integrate into society. These groups provide vital services like language education, job search assistance, and cultural guidance. By offering a strong support network, they enable newcomers to navigate new systems and overcome cultural differences. This assistance is essential for successful individual transitions and for building a more diverse and inclusive community, preventing isolation and facilitating faster integration.",
+      "audioScript": "Community organisations play a critical role in facilitating the integration of new immigrants into society. These groups often provide essential services, such as language classes, job placement assistance, and cultural orientation programs. By offering a supportive network, they help newcomers navigate unfamiliar systems, overcome cultural barriers, and build connections within their new environment. This support is vital for both the individual's successful transition and for fostering a more inclusive and diverse community. Without these dedicated organisations, the challenges faced by immigrants would be far more daunting, potentially leading to isolation and delayed integration.",
+      "keyPoints": [
+        "Community organisations assist immigrant integration.",
+        "Services include language, jobs, and cultural orientation.",
+        "Support network helps overcome barriers.",
+        "Crucial for successful transition and inclusive communities."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-035-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Volunteering Impact”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Community building",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "neighbourhood volunteering",
+      "modelAnswer": "Community building",
+      "audioScript": "What is a common benefit of volunteering in one's neighbourhood?"
+    },
+    {
+      "id": "pte-speaking-writing-035-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “The Power of Neighbourhood Action”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "neighbourhood volunteering",
+      "wordTarget": 75,
+      "modelAnswer": "Neighbourhood volunteering initiatives significantly enhance community well-being by fostering shared ownership, improving local environments, and strengthening social cohesion, leading to more connected and resilient communities.",
+      "readText": "Neighbourhood volunteering initiatives are increasingly recognized for their profound impact beyond immediate tasks. They cultivate a sense of shared ownership and pride among residents, transforming communal spaces and addressing local needs effectively. From organizing clean-up drives to establishing food banks, these efforts empower individuals to become active agents of change. This collective engagement not only improves the physical environment but also strengthens social cohesion, reducing isolation and fostering a supportive atmosphere where everyone feels connected and valued, ultimately leading to more resilient and vibrant communities."
+    },
+    {
+      "id": "pte-speaking-writing-035-q07",
+      "questionType": "write_essay",
+      "prompt": "Governments spend large amounts of money on public libraries. Some people think this money would be better spent on digital resources and the internet. To what extent do you agree?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "neighbourhood volunteering",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Global Food Production Economics”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q08",
+      "modelAnswer": "The economics of global food production are complex, influenced by factors like climate change, trade policies, and technological advancements. Subsidies in developed nations can distort international markets, impacting farmers in developing countries. Furthermore, the increasing demand for certain commodities, driven by shifting dietary preferences, places immense pressure on natural resources. Ensuring food security for a growing global population necessitates sustainable practices and equitable distribution systems, challenging existing economic models and requiring innovative solutions across the supply chain.",
+      "readText": "The economics of global food production are complex, influenced by factors like climate change, trade policies, and technological advancements. Subsidies in developed nations can distort international markets, impacting farmers in developing countries. Furthermore, the increasing demand for certain commodities, driven by shifting dietary preferences, places immense pressure on natural resources. Ensuring food security for a growing global population necessitates sustainable practices and equitable distribution systems, challenging existing economic models and requiring innovative solutions across the supply chain."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Space Colonisation Challenges”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q09",
+      "modelAnswer": "Space exploration and colonisation present formidable challenges, ranging from radiation exposure and microgravity's effects on the human body to the immense logistical hurdles of transporting resources. Establishing self-sustaining habitats requires advanced life support systems and resource utilization strategies, such as in-situ resource extraction. Overcoming these obstacles demands unprecedented scientific and engineering innovation, along with international collaboration, to make long-term extraterrestrial settlements a tangible reality for future generations, pushing the boundaries of human ingenuity.",
+      "readText": "Space exploration and colonisation present formidable challenges, ranging from radiation exposure and microgravity's effects on the human body to the immense logistical hurdles of transporting resources. Establishing self-sustaining habitats requires advanced life support systems and resource utilization strategies, such as in-situ resource extraction. Overcoming these obstacles demands unprecedented scientific and engineering innovation, along with international collaboration, to make long-term extraterrestrial settlements a tangible reality for future generations, pushing the boundaries of human ingenuity."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Decision-Making Psychology”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q10",
+      "modelAnswer": "The psychology of decision-making reveals how cognitive biases, emotions, and heuristics profoundly influence our choices. Confirmation bias, for instance, leads individuals to favor information that supports their existing beliefs, often ignoring contradictory evidence. Understanding these underlying psychological mechanisms is crucial for improving rationality and making more informed decisions, both personally and professionally. Research in this field aims to develop strategies that mitigate the impact of biases, promoting clearer thinking and more effective problem-solving in complex situations.",
+      "readText": "The psychology of decision-making reveals how cognitive biases, emotions, and heuristics profoundly influence our choices. Confirmation bias, for instance, leads individuals to favor information that supports their existing beliefs, often ignoring contradictory evidence. Understanding these underlying psychological mechanisms is crucial for improving rationality and making more informed decisions, both personally and professionally. Research in this field aims to develop strategies that mitigate the impact of biases, promoting clearer thinking and more effective problem-solving in complex situations."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Public Transport Evolution”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q11",
+      "modelAnswer": "The evolution of public transport systems reflects changing urban landscapes and technological progress. From horse-drawn omnibuses to electric trams and modern high-speed rail, each advancement aimed to improve efficiency and accessibility. Contemporary challenges include reducing carbon emissions, managing congestion, and integrating diverse modes of transport. Future developments will likely focus on autonomous vehicles, on-demand services, and smart infrastructure, striving to create sustainable, efficient, and user-friendly mobility solutions for increasingly dense urban populations worldwide.",
+      "readText": "The evolution of public transport systems reflects changing urban landscapes and technological progress. From horse-drawn omnibuses to electric trams and modern high-speed rail, each advancement aimed to improve efficiency and accessibility. Contemporary challenges include reducing carbon emissions, managing congestion, and integrating diverse modes of transport. Future developments will likely focus on autonomous vehicles, on-demand services, and smart infrastructure, striving to create sustainable, efficient, and user-friendly mobility solutions for increasingly dense urban populations worldwide."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Sustainable Urban Planning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q12",
+      "modelAnswer": "Sustainable urban planning increasingly incorporates green infrastructure to mitigate environmental impacts and enhance quality of life. This includes implementing features like green roofs, permeable pavements, and urban parks that manage stormwater, reduce heat island effects, and improve air quality. Integrating natural systems into city design fosters biodiversity, provides recreational spaces, and contributes to climate resilience. Such approaches are essential for creating healthier, more livable cities that can adapt to future environmental challenges and support the well-being of their inhabitants.",
+      "readText": "Sustainable urban planning increasingly incorporates green infrastructure to mitigate environmental impacts and enhance quality of life. This includes implementing features like green roofs, permeable pavements, and urban parks that manage stormwater, reduce heat island effects, and improve air quality. Integrating natural systems into city design fosters biodiversity, provides recreational spaces, and contributes to climate resilience. Such approaches are essential for creating healthier, more livable cities that can adapt to future environmental challenges and support the well-being of their inhabitants."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Promoting financial literacy is crucial for achieving greater economic inclusion globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Financial Inclusion Importance”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q13",
+      "modelAnswer": "Promoting financial literacy is crucial for achieving greater economic inclusion globally.",
+      "audioScript": "Promoting financial literacy is crucial for achieving greater economic inclusion globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Nanotechnology revolutionizes materials science by enabling the creation of novel properties.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Nanotechnology in Materials”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q14",
+      "modelAnswer": "Nanotechnology revolutionizes materials science by enabling the creation of novel properties.",
+      "audioScript": "Nanotechnology revolutionizes materials science by enabling the creation of novel properties."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deep sleep plays a vital role in memory consolidation and learning processes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Sleep and Memory”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q15",
+      "modelAnswer": "Deep sleep plays a vital role in memory consolidation and learning processes.",
+      "audioScript": "Deep sleep plays a vital role in memory consolidation and learning processes."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Developing strong digital literacy skills is essential for modern education and employment.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Digital Literacy Skills”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q16",
+      "modelAnswer": "Developing strong digital literacy skills is essential for modern education and employment.",
+      "audioScript": "Developing strong digital literacy skills is essential for modern education and employment."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Antibiotic resistance poses a significant threat to global health and requires urgent policy action.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Antibiotic Resistance Threat”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q17",
+      "modelAnswer": "Antibiotic resistance poses a significant threat to global health and requires urgent policy action.",
+      "audioScript": "Antibiotic resistance poses a significant threat to global health and requires urgent policy action."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ocean acidification severely impacts marine biodiversity and coral reef ecosystems worldwide.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ocean Health Crisis”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q18",
+      "modelAnswer": "Ocean acidification severely impacts marine biodiversity and coral reef ecosystems worldwide.",
+      "audioScript": "Ocean acidification severely impacts marine biodiversity and coral reef ecosystems worldwide."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The neuroscience of creativity explores how the brain generates innovative ideas.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Creativity Neuroscience”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q19",
+      "modelAnswer": "The neuroscience of creativity explores how the brain generates innovative ideas.",
+      "audioScript": "The neuroscience of creativity explores how the brain generates innovative ideas."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Addressing global water scarcity requires urgent conservation efforts and efficient management strategies.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Water Conservation Efforts”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q20",
+      "modelAnswer": "Addressing global water scarcity requires urgent conservation efforts and efficient management strategies.",
+      "audioScript": "Addressing global water scarcity requires urgent conservation efforts and efficient management strategies."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Genetic engineering raises profound ethical considerations regarding human intervention and natural processes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Genetic Engineering Ethics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q21",
+      "modelAnswer": "Genetic engineering raises profound ethical considerations regarding human intervention and natural processes.",
+      "audioScript": "Genetic engineering raises profound ethical considerations regarding human intervention and natural processes."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q22",
+      "modelAnswer": "This pie chart illustrates global CO2 emissions by sector in 2022. The largest contributor is 'Energy (Electricity & Heat)' at 28%, closely followed by 'Industry' at 24%. 'Transport' accounts for 18% of emissions, while 'Agriculture, Forestry & Land Use' contributes 15%. 'Buildings' make up 10% of the total, and 'Other Energy' represents the smallest share at 5%. Overall, the energy and industrial sectors are clearly the dominant sources, collectively responsible for over half of all global CO2 emissions.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy (Electricity & Heat)",
+            "value": 28
+          },
+          {
+            "label": "Industry",
+            "value": 24
+          },
+          {
+            "label": "Transport",
+            "value": 18
+          },
+          {
+            "label": "Agriculture, Forestry & Land Use",
+            "value": 15
+          },
+          {
+            "label": "Buildings",
+            "value": 10
+          },
+          {
+            "label": "Other Energy",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Renewable Energy Adoption by Country (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q23",
+      "modelAnswer": "This bar chart illustrates renewable energy adoption rates across five different countries in 2023, measured as a percentage of total energy consumption. Germany leads significantly with 45%, indicating strong commitment. Canada follows with 30%, while Australia shows 25%. Japan's adoption stands at 20%, and South Korea has the lowest rate at 15%. Overall, there's a clear disparity, with Germany demonstrating almost three times the adoption rate of South Korea, highlighting varying national efforts and policies in transitioning to sustainable energy sources.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Energy Adoption by Country (2023)",
+        "yLabel": "% of Total Energy Consumption",
+        "xAxis": [
+          "Germany",
+          "Canada",
+          "Japan",
+          "Australia",
+          "South Korea"
+        ],
+        "series": [
+          {
+            "label": "Renewable Energy Adoption",
+            "values": [
+              45,
+              30,
+              20,
+              25,
+              15
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Temperature Change (1900-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q24",
+      "modelAnswer": "This line graph illustrates the global average temperature change from 1900 to 2020, relative to the 1900-1920 average. Initially, temperatures fluctuated slightly, starting around -0.1°C in 1900 and reaching 0.1°C by 1940. A notable dip occurred around 1960, showing a slight decrease to 0.05°C. However, a significant upward trend began thereafter. The sharpest increase is observed from 1980, rising from 0.3°C to a peak of 0.9°C by 2020. This clearly indicates a substantial warming trend, particularly in the latter half of the century.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Temperature Change (1900-2020)",
+        "yLabel": "Temperature Change (°C relative to 1900-1920 average)",
+        "xAxis": [
+          "1900",
+          "1920",
+          "1940",
+          "1960",
+          "1980",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Global Temperature Anomaly",
+            "values": [
+              -0.1,
+              0,
+              0.1,
+              0.05,
+              0.3,
+              0.6,
+              0.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Amazon Deforestation (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q25",
+      "modelAnswer": "This line chart illustrates Amazon deforestation patterns between 1990 and 2020. The Y-axis represents the area deforested in million hectares, while the X-axis shows the years. Initially, deforestation increased from 1.5 million hectares in 1990 to a peak of 2.5 million hectares in 2000. Following this peak, there was a significant downward trend, reaching its lowest point of 0.9 million hectares in 2015. However, the data indicates a slight rebound in deforestation to 1.3 million hectares by 2020. Overall, despite fluctuations, the rate in 2020 was still lower than the peak in 2000.",
+      "visual": {
+        "chartType": "line",
+        "title": "Amazon Deforestation (1990-2020)",
+        "yLabel": "Area Deforested (million hectares)",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Total Deforestation",
+            "values": [
+              1.5,
+              2.1,
+              2.5,
+              1.8,
+              1.2,
+              0.9,
+              1.3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Flowchart of the Scientific Method\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q26",
+      "modelAnswer": "The table illustrates an eight-step flowchart of the scientific method, detailing the sequential process of scientific inquiry. It begins with 'Make an Observation', leading to a 'Question arises'. The second step is 'Formulate a Question', resulting in a 'Specific inquiry defined'. This is followed by 'Conduct Research' and 'Formulate a Hypothesis', which proposes a 'Testable explanation'. The core experimental phase involves 'Design and Perform Experiment' and 'Analyze Data', where 'Data collected' and 'Patterns identified'. The final steps are to 'Draw Conclusions', determining if the 'Hypothesis supported or refuted', and crucially, 'Communicate Results', ensuring 'Knowledge shared' to advance understanding.",
+      "visual": {
+        "chartType": "table",
+        "title": "Flowchart of the Scientific Method",
+        "headers": [
+          "Step",
+          "Action",
+          "Outcome"
+        ],
+        "rows": [
+          [
+            "1",
+            "Make an Observation",
+            "Question arises"
+          ],
+          [
+            "2",
+            "Formulate a Question",
+            "Specific inquiry defined"
+          ],
+          [
+            "3",
+            "Conduct Research",
+            "Existing knowledge gathered"
+          ],
+          [
+            "4",
+            "Formulate a Hypothesis",
+            "Testable explanation proposed"
+          ],
+          [
+            "5",
+            "Design and Perform Experiment",
+            "Data collected"
+          ],
+          [
+            "6",
+            "Analyze Data",
+            "Patterns identified"
+          ],
+          [
+            "7",
+            "Draw Conclusions",
+            "Hypothesis supported or refuted"
+          ],
+          [
+            "8",
+            "Communicate Results",
+            "Knowledge shared"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q27",
+      "modelAnswer": "The lecture discussed the significance of non-verbal communication, emphasizing its powerful and often subconscious role in human interaction. It involves various cues such as body language, facial expressions, gestures, and vocal tone, which convey emotions and intentions without spoken words. Understanding these non-verbal signals is vital for effective communication, as they can either support or contradict our verbal messages. Mastering their interpretation and use is a key skill for both personal and professional success.",
+      "audioScript": "Non-verbal communication is a powerful, often subconscious, aspect of human interaction. It encompasses body language, facial expressions, gestures, and even tone of voice. Unlike spoken words, non-verbal cues can convey emotions, attitudes, and intentions without uttering a single sound. For instance, crossed arms might signal defensiveness, while direct eye contact often indicates confidence or attentiveness. Understanding these signals is crucial for effective communication, as they can either reinforce or contradict verbal messages, sometimes more truthfully revealing a person's true feelings or thoughts. Mastering the interpretation and use of non-verbal cues is a key skill in both personal and professional settings.",
+      "keyPoints": [
+        "Non-verbal communication is subconscious and powerful.",
+        "Includes body language, facial expressions, gestures, tone.",
+        "Conveys emotions and intentions without words.",
+        "Crucial for effective communication, reinforcing or contradicting verbal messages."
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Barriers to Effective Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q28",
+      "modelAnswer": "The lecture explained that effective communication is frequently hindered by physical, semantic, and psychological barriers. Physical obstacles involve things like noise or distance, while semantic barriers stem from differences in language or word interpretation. Psychological barriers include emotions or prejudices that can distort messages. To overcome these, active listening, seeking clarification, and empathy are crucial for ensuring mutual understanding and preventing miscommunication in any interaction.",
+      "audioScript": "Effective communication is often hampered by various barriers, which can be categorized as physical, semantic, or psychological. Physical barriers include noise or distance, making it difficult to transmit or receive messages clearly. Semantic barriers arise from differences in language, jargon, or interpretation of words. For example, a technical term might be understood differently by a specialist and a layperson. Psychological barriers involve emotional states, prejudices, or preconceived notions that distort how messages are encoded or decoded. Overcoming these barriers requires active listening, clarification, and empathy to ensure mutual understanding and prevent misunderstandings in any communicative exchange.",
+      "keyPoints": [
+        "Effective communication faces physical, semantic, and psychological barriers.",
+        "Physical barriers: noise, distance.",
+        "Semantic barriers: language, jargon, interpretation differences.",
+        "Psychological barriers: emotions, prejudices, preconceived notions.",
+        "Overcoming requires active listening, clarification, empathy."
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Email",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q29",
+      "modelAnswer": "Email",
+      "audioScript": "Which medium is typically used for formal written communication?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Improvement",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Purpose of Feedback”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q30",
+      "modelAnswer": "Improvement",
+      "audioScript": "What is the primary purpose of feedback in communication?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Active listening",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Effective Listening”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q31",
+      "modelAnswer": "Active listening",
+      "audioScript": "What skill involves paying full attention to a speaker?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Channel",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Channel”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-035-q32",
+      "modelAnswer": "Channel",
+      "audioScript": "What is the term for the path a message travels?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Diet, Exercise, and Chronic Disease”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-035-q33",
+      "modelAnswer": "A balanced diet and regular exercise are crucial for preventing chronic diseases by improving metabolic health, reducing inflammation, and maintaining a healthy weight, thereby reducing individual health risks and healthcare burdens.",
+      "readText": "The intricate relationship between diet, exercise, and the prevention of chronic diseases like diabetes, heart disease, and certain cancers is well-documented. A balanced diet rich in whole foods, fruits, and vegetables, coupled with regular physical activity, significantly reduces inflammation, improves metabolic health, and helps maintain a healthy weight. Conversely, sedentary lifestyles and diets high in processed foods contribute to obesity and increase the risk of these debilitating conditions. Public health initiatives increasingly focus on promoting these lifestyle modifications as primary strategies for long-term health and disease prevention, emphasizing their profound impact on individual well-being and healthcare burdens."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "The advent of digital communication technologies has profoundly transformed how individuals interact. Discuss the advantages and disadvantages of this shift, and provide your opinion on whether these changes have ultimately improved or hindered human connection.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-035-q34",
+      "modelAnswer": "The rapid proliferation of digital communication technologies, such as social media, messaging apps, and video conferencing, has undeniably revolutionized human interaction. This paradigm shift presents a dual-edged sword, offering both significant advantages and notable disadvantages in how we connect.\n\nAmong the primary advantages is the unparalleled convenience and reach. Digital platforms allow instant communication across vast distances, fostering global connections and maintaining relationships with geographically dispersed friends and family. They also facilitate quick information exchange, collaborative work, and the formation of online communities based on shared interests. For many, these tools offer a sense of constant connection and accessibility, breaking down traditional barriers of time and space.\n\nHowever, the disadvantages are equally compelling. The superficiality of some digital interactions often replaces deeper, face-to-face engagements, potentially leading to feelings of isolation despite being constantly connected. Misunderstandings are more prevalent in text-based communication, lacking the nuances of tone and body language. Furthermore, the constant barrage of notifications and the pressure to maintain an online persona can contribute to anxiety and mental health issues, while privacy concerns remain a significant drawback.\n\nIn my opinion, while digital communication offers undeniable benefits in terms of accessibility and speed, it has, on balance, hindered genuine human connection. The quality of interactions has often been sacrificed for quantity, leading to a diluted sense of intimacy and presence. True connection thrives on shared physical space, immediate feedback, and the full spectrum of non-verbal cues, which digital mediums inherently struggle to replicate. Therefore, while a useful tool, it requires conscious effort to prevent it from eroding the essence of human connection."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "In today's digital age, employers often monitor employees' online activities and communications, both at work and, in some cases, outside of work. To what extent do you agree or disagree with employers having the right to monitor their employees' privacy?",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-035-q35",
+      "modelAnswer": "The question of employer monitoring of employee privacy is a contentious issue, balancing an organization's legitimate interests with an individual's right to personal space. While employers have a valid need to ensure productivity, protect company assets, and maintain a secure working environment, I largely disagree with extensive monitoring that infringes upon employee privacy, particularly outside work hours.\n\nProponents of monitoring argue that it is essential for preventing corporate espionage, data breaches, and misuse of company resources. They contend that employees using company equipment or networks should expect a certain level of oversight, as their actions can directly impact the business's reputation and financial stability. Furthermore, in certain highly regulated industries, monitoring might be mandated for compliance and accountability purposes. When limited to work-related activities on company devices, this level of supervision can be seen as a necessary measure for operational efficiency and security.\n\nHowever, the extent of such monitoring is where the disagreement arises. Intrusive surveillance, especially of personal communications or activities outside of work, constitutes a significant breach of privacy and trust. It can lead to a hostile work environment, stifle creativity, and create undue stress among employees who feel constantly scrutinized. The 'always-on' culture exacerbated by digital tools blurs the lines between professional and personal life, and excessive monitoring can further erode these boundaries, denying individuals their fundamental right to privacy and personal autonomy.\n\nMoreover, there are often less invasive ways to achieve the same objectives. Clear policies regarding acceptable use of company resources, combined with fostering a culture of trust and accountability, can be more effective than constant surveillance. Unless there is a clear, legally justifiable reason, such as suspected criminal activity or severe policy violations, employers should respect the privacy of their workforce. Over-monitoring can lead to decreased morale, higher turnover, and a less engaged workforce, ultimately harming the company more than it helps."
+    }
+  ]
+}

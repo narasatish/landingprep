@@ -1,0 +1,743 @@
+{
+  "id": "pte-speaking-writing-046",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 46",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-046-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Recycling's Environmental and Economic Impact”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "recycling and waste",
+      "modelAnswer": "Recycling plays a crucial role in modern waste management strategies, significantly reducing the volume of refuse sent to landfills and incinerators. Beyond its environmental benefits, such as conserving natural resources and decreasing pollution, recycling also stimulates economic activity. It creates jobs in collection, processing, and manufacturing sectors, fostering a circular economy where materials are continually reused rather than discarded, thereby minimizing the ecological footprint of consumption.",
+      "readText": "Recycling plays a crucial role in modern waste management strategies, significantly reducing the volume of refuse sent to landfills and incinerators. Beyond its environmental benefits, such as conserving natural resources and decreasing pollution, recycling also stimulates economic activity. It creates jobs in collection, processing, and manufacturing sectors, fostering a circular economy where materials are continually reused rather than discarded, thereby minimizing the ecological footprint of consumption."
+    },
+    {
+      "id": "pte-speaking-writing-046-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Waste Segregation Benefits”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Proper waste segregation at home significantly boosts recycling efficiency and reduces landfill burden.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "recycling and waste",
+      "modelAnswer": "Proper waste segregation at home significantly boosts recycling efficiency and reduces landfill burden.",
+      "audioScript": "Proper waste segregation at home significantly boosts recycling efficiency and reduces landfill burden."
+    },
+    {
+      "id": "pte-speaking-writing-046-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Global Waste Composition by Category (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "recycling and waste",
+      "modelAnswer": "This bar chart illustrates the global waste composition by category in 2022. The most significant component is Organic waste, accounting for a substantial 38%. Paper and Cardboard follow with 17%, while Plastics make up 12% of the total. Glass and Metal represent smaller proportions at 8% and 5% respectively. Interestingly, 'Other' waste categories collectively contribute a considerable 20%. Organic waste is clearly the largest category, more than three times higher than plastics, highlighting a key area for waste management and recycling efforts worldwide.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Global Waste Composition by Category (2022)",
+        "yLabel": "Percentage (%)",
+        "xAxis": [
+          "Organic",
+          "Paper/Cardboard",
+          "Plastics",
+          "Glass",
+          "Metal",
+          "Other"
+        ],
+        "series": [
+          {
+            "label": "Waste Composition",
+            "values": [
+              38,
+              17,
+              12,
+              8,
+              5,
+              20
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-046-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Household Recycling Benefits”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "recycling and waste",
+      "modelAnswer": "The speaker discussed how household recycling and waste reduction offer significant environmental advantages. Sorting materials like plastic and paper helps save raw resources and energy, while also cutting down on greenhouse gas emissions. Reducing overall waste through thoughtful consumption and composting food scraps further eases the pressure on landfills and diminishes pollution. Essentially, these individual actions are crucial for global sustainability and ensuring a healthier environment.",
+      "audioScript": "The lecture highlighted the profound environmental benefits of adopting comprehensive household recycling and waste reduction practices. By sorting recyclables like plastics, glass, and paper, households directly contribute to conserving raw materials, saving energy, and decreasing greenhouse gas emissions. Furthermore, reducing overall waste through mindful consumption and composting organic materials lessens the strain on landfills, mitigating soil and water pollution. These collective actions empower individuals to play a vital role in global sustainability efforts, fostering a healthier planet for future generations.",
+      "keyPoints": [
+        "Sorting recyclables conserves raw materials and energy.",
+        "Reduces greenhouse gas emissions and landfill strain.",
+        "Mindful consumption and composting lessen pollution.",
+        "Individuals contribute to global sustainability."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-046-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Recycling Material”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Newspapers",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "recycling and waste",
+      "modelAnswer": "Newspapers",
+      "audioScript": "Which common household item can be recycled to produce new paper products?"
+    },
+    {
+      "id": "pte-speaking-writing-046-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Circular Economy Principles”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "recycling and waste",
+      "wordTarget": 75,
+      "modelAnswer": "A circular economy, an alternative to the linear model, emphasizes designing durable and recyclable products to minimize waste, conserve resources, and reduce environmental impact by continuously reusing materials.",
+      "readText": "The concept of a circular economy is gaining traction as a sustainable alternative to the traditional linear 'take-make-dispose' model. It advocates for designing products with longevity and recyclability in mind, ensuring materials retain their value for as long as possible. This approach minimizes waste generation, reduces reliance on virgin resources, and lowers environmental impact. Businesses adopting circular principles often find innovative ways to reuse, repair, and recycle components, fostering economic resilience while contributing positively to planetary health."
+    },
+    {
+      "id": "pte-speaking-writing-046-q07",
+      "questionType": "write_essay",
+      "prompt": "Some experts believe that it is better for children to learn in mixed ability groups at school. Others disagree. Discuss both views.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "recycling and waste",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “AI's Transformative Job Market Impact”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q08",
+      "modelAnswer": "Artificial intelligence is rapidly transforming global job markets, leading to both displacement and creation of new roles. While some routine tasks are being automated, demand for skills in AI development, data analysis, and human-AI collaboration is surging. This shift necessitates a focus on lifelong learning and reskilling initiatives to prepare the workforce for an increasingly automated future. Understanding AI's capabilities and limitations is crucial for navigating these evolving professional landscapes effectively.",
+      "readText": "Artificial intelligence is rapidly transforming global job markets, leading to both displacement and creation of new roles. While some routine tasks are being automated, demand for skills in AI development, data analysis, and human-AI collaboration is surging. This shift necessitates a focus on lifelong learning and reskilling initiatives to prepare the workforce for an increasingly automated future. Understanding AI's capabilities and limitations is crucial for navigating these evolving professional landscapes effectively."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ancient Maritime Silk Road”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q09",
+      "modelAnswer": "The history of maritime trade routes dates back millennia, with the Maritime Silk Road being a prime example of ancient global connectivity. This network facilitated the exchange of goods like spices, silks, and ceramics, as well as ideas and cultures, between East Asia, Southeast Asia, India, the Arabian Peninsula, and East Africa. These routes were instrumental in shaping civilizations, fostering economic growth, and disseminating innovations across vast geographical distances for centuries.",
+      "readText": "The history of maritime trade routes dates back millennia, with the Maritime Silk Road being a prime example of ancient global connectivity. This network facilitated the exchange of goods like spices, silks, and ceramics, as well as ideas and cultures, between East Asia, Southeast Asia, India, the Arabian Peninsula, and East Africa. These routes were instrumental in shaping civilizations, fostering economic growth, and disseminating innovations across vast geographical distances for centuries."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Perovskite Solar Cell Innovation”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q10",
+      "modelAnswer": "Advances in renewable solar energy technology are accelerating, with perovskite solar cells emerging as a promising alternative to traditional silicon-based panels. Perovskites offer high efficiency, flexibility, and lower manufacturing costs, making them ideal for diverse applications, from building-integrated photovoltaics to portable electronics. Ongoing research focuses on improving their stability and scalability, potentially revolutionizing how we harness solar power and contribute to a greener energy future globally.",
+      "readText": "Advances in renewable solar energy technology are accelerating, with perovskite solar cells emerging as a promising alternative to traditional silicon-based panels. Perovskites offer high efficiency, flexibility, and lower manufacturing costs, making them ideal for diverse applications, from building-integrated photovoltaics to portable electronics. Ongoing research focuses on improving their stability and scalability, potentially revolutionizing how we harness solar power and contribute to a greener energy future globally."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Global Carbon Capture Initiatives”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q11",
+      "modelAnswer": "Climate change mitigation strategies encompass a broad range of actions designed to reduce greenhouse gas emissions and stabilize atmospheric concentrations. Among these, carbon capture and storage (CCS) technologies are gaining prominence, aiming to prevent large-scale CO2 emissions from industrial sources or even remove existing CO2 from the atmosphere. Implementing CCS alongside renewable energy expansion and energy efficiency measures is critical for achieving ambitious global warming targets and safeguarding planetary ecosystems.",
+      "readText": "Climate change mitigation strategies encompass a broad range of actions designed to reduce greenhouse gas emissions and stabilize atmospheric concentrations. Among these, carbon capture and storage (CCS) technologies are gaining prominence, aiming to prevent large-scale CO2 emissions from industrial sources or even remove existing CO2 from the atmosphere. Implementing CCS alongside renewable energy expansion and energy efficiency measures is critical for achieving ambitious global warming targets and safeguarding planetary ecosystems."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Food Security and Supply Chains”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q12",
+      "modelAnswer": "The economics of global food production are complex, influenced by factors such as climate change, geopolitical stability, and technological advancements. Ensuring food security for an ever-growing population requires efficient supply chains, sustainable agricultural practices, and equitable distribution systems. Volatility in commodity prices and trade policies can significantly impact food availability and affordability, making international cooperation essential for addressing hunger and promoting stable food markets worldwide.",
+      "readText": "The economics of global food production are complex, influenced by factors such as climate change, geopolitical stability, and technological advancements. Ensuring food security for an ever-growing population requires efficient supply chains, sustainable agricultural practices, and equitable distribution systems. Volatility in commodity prices and trade policies can significantly impact food availability and affordability, making international cooperation essential for addressing hunger and promoting stable food markets worldwide."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The neuroscience of creativity involves complex interactions between distinct brain regions and networks.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Neuroscience of Creativity”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q13",
+      "modelAnswer": "The neuroscience of creativity involves complex interactions between distinct brain regions and networks.",
+      "audioScript": "The neuroscience of creativity involves complex interactions between distinct brain regions and networks."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Global water scarcity demands urgent innovative conservation methods and international cooperation for future sustainability.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Global Water Scarcity”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q14",
+      "modelAnswer": "Global water scarcity demands urgent innovative conservation methods and international cooperation for future sustainability.",
+      "audioScript": "Global water scarcity demands urgent innovative conservation methods and international cooperation for future sustainability."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Genetic engineering raises profound ethical considerations regarding human intervention in natural biological processes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Genetic Engineering Ethics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q15",
+      "modelAnswer": "Genetic engineering raises profound ethical considerations regarding human intervention in natural biological processes.",
+      "audioScript": "Genetic engineering raises profound ethical considerations regarding human intervention in natural biological processes."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Recent quantum computing breakthroughs promise to revolutionize fields like medicine, materials science, and cryptography.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Quantum Computing Milestones”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q16",
+      "modelAnswer": "Recent quantum computing breakthroughs promise to revolutionize fields like medicine, materials science, and cryptography.",
+      "audioScript": "Recent quantum computing breakthroughs promise to revolutionize fields like medicine, materials science, and cryptography."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Childhood nutrition profoundly impacts cognitive development, influencing learning abilities and academic performance.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Childhood Nutrition and Cognition”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q17",
+      "modelAnswer": "Childhood nutrition profoundly impacts cognitive development, influencing learning abilities and academic performance.",
+      "audioScript": "Childhood nutrition profoundly impacts cognitive development, influencing learning abilities and academic performance."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Machine learning applications in healthcare are enhancing diagnostics, drug discovery, and personalized treatment plans.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Machine Learning in Healthcare”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q18",
+      "modelAnswer": "Machine learning applications in healthcare are enhancing diagnostics, drug discovery, and personalized treatment plans.",
+      "audioScript": "Machine learning applications in healthcare are enhancing diagnostics, drug discovery, and personalized treatment plans."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial mechanics and timekeeping.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ancient Astronomy History”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q19",
+      "modelAnswer": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial mechanics and timekeeping.",
+      "audioScript": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial mechanics and timekeeping."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The impact of noise pollution on wildlife disrupts communication, foraging, and reproductive behaviors significantly.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Noise Pollution's Wildlife Impact”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q20",
+      "modelAnswer": "The impact of noise pollution on wildlife disrupts communication, foraging, and reproductive behaviors significantly.",
+      "audioScript": "The impact of noise pollution on wildlife disrupts communication, foraging, and reproductive behaviors significantly."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Cross-cultural negotiations in business require sensitivity, adaptability, and a deep understanding of diverse communication styles.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Cross-Cultural Business Negotiations”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q21",
+      "modelAnswer": "Cross-cultural negotiations in business require sensitivity, adaptability, and a deep understanding of diverse communication styles.",
+      "audioScript": "Cross-cultural negotiations in business require sensitivity, adaptability, and a deep understanding of diverse communication styles."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Adult Literacy Rates by Region (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q22",
+      "modelAnswer": "This table displays global adult literacy rates by region for 2023 and the change from 2013. North America has the highest literacy rate at 99.0%, closely followed by Europe at 98.5%. In contrast, Sub-Saharan Africa shows the lowest rate at 70.1%, with South Asia at 74.8%. Interestingly, regions with lower current literacy rates, like Sub-Saharan Africa and South Asia, experienced the most significant improvements, with increases of 5.7% and 4.9% respectively. Overall, global literacy has positively trended over the past decade.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Adult Literacy Rates by Region (2023)",
+        "headers": [
+          "Region",
+          "Literacy Rate (%)",
+          "Change from 2013 (%)"
+        ],
+        "rows": [
+          [
+            "North America",
+            "99.0",
+            "+0.5"
+          ],
+          [
+            "Europe",
+            "98.5",
+            "+0.3"
+          ],
+          [
+            "East Asia & Pacific",
+            "96.2",
+            "+1.8"
+          ],
+          [
+            "Latin America & Caribbean",
+            "94.5",
+            "+2.1"
+          ],
+          [
+            "Sub-Saharan Africa",
+            "70.1",
+            "+5.7"
+          ],
+          [
+            "South Asia",
+            "74.8",
+            "+4.9"
+          ],
+          [
+            "Arab States",
+            "82.3",
+            "+3.5"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Smartphone Adoption Rate (2014-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q23",
+      "modelAnswer": "This line graph illustrates the global smartphone adoption rate from 2014 to 2023. Initially, in 2014, the adoption rate stood at 35%. There has been a consistent upward trend over the decade, indicating rapid growth in smartphone usage worldwide. By 2018, the rate reached 65%, signifying more than half the global population. The highest adoption rate is observed in 2023 at 85%, showing significant market penetration. This steady increase from 35% to 85% highlights the transformative impact of smartphones on global communication and daily life over the past ten years.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Smartphone Adoption Rate (2014-2023)",
+        "yLabel": "Percentage of Population (%)",
+        "xAxis": [
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Adoption Rate",
+            "values": [
+              35,
+              42,
+              50,
+              58,
+              65,
+              71,
+              76,
+              80,
+              83,
+              85
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q24",
+      "modelAnswer": "This bar chart illustrates the annual energy consumption per capita in kilowatt-hours for six different countries in 2022. The data clearly shows significant disparities globally. The USA has the highest consumption at 88,000 kWh per person, closely followed by Canada at 82,000 kWh. In contrast, India demonstrates the lowest consumption, with only 8,000 kWh per person, which is eleven times less than the USA. Other countries like Germany and Japan fall in the middle range, consuming 45,000 kWh and 39,000 kWh respectively, indicating varied energy demands and usage patterns across developed and developing nations.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Energy Consumption (kWh per person)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "Japan",
+          "China",
+          "India"
+        ],
+        "series": [
+          {
+            "label": "Consumption",
+            "values": [
+              88000,
+              82000,
+              45000,
+              39000,
+              32000,
+              8000
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Atmospheric CO2 Concentration (ppm) - 1950-2020\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q25",
+      "modelAnswer": "The line chart illustrates the trend of global atmospheric CO2 concentration in parts per million from 1950 to 2020. The concentration, which was approximately 310 ppm in 1950, shows a consistent and significant increase over the decades. By 1980, it had risen to 338 ppm, and by the turn of the millennium in 2000, it reached 369 ppm. The highest value recorded on the chart is 415 ppm in 2020, demonstrating a clear upward trend. This indicates a worrying increase in atmospheric carbon dioxide over seventy years.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Atmospheric CO2 Concentration (ppm) - 1950-2020",
+        "yLabel": "CO2 Concentration (ppm)",
+        "xAxis": [
+          "1950",
+          "1960",
+          "1970",
+          "1980",
+          "1990",
+          "2000",
+          "2010",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "CO2 Concentration",
+            "values": [
+              310,
+              316,
+              325,
+              338,
+              354,
+              369,
+              390,
+              415
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q26",
+      "modelAnswer": "This pie chart illustrates global CO2 emissions by sector for 2022. The largest contributor is clearly Energy Production, accounting for a significant 35% of total emissions. Transportation follows as the second-highest source at 22%, indicating a substantial impact from vehicles and shipping. Industrial Processes contribute 18%, while Agriculture and Land Use make up 15%. The smallest share comes from the Residential and Commercial sector, responsible for 10%. Overall, the chart highlights that energy generation and transportation are the dominant factors in global CO2 emissions, together comprising over half of the total.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy Production",
+            "value": 35
+          },
+          {
+            "label": "Transportation",
+            "value": 22
+          },
+          {
+            "label": "Industrial Processes",
+            "value": 18
+          },
+          {
+            "label": "Agriculture & Land Use",
+            "value": 15
+          },
+          {
+            "label": "Residential & Commercial",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Universe Formation and Dark Matter”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q27",
+      "modelAnswer": "The lecture described the universe's origin from the Big Bang, evolving into its current complex structure. A major puzzle is the existence of dark matter and dark energy, which are invisible but gravitationally influential. Dark matter is thought to be the framework for galaxy formation, explaining observed gravitational anomalies. Ultimately, comprehending these mysterious elements is essential for understanding the universe's composition and its eventual destiny.",
+      "audioScript": "The universe's formation, starting with the Big Bang, is a journey from an incredibly hot, dense state to the vast, complex cosmos we observe today. A significant portion of this cosmic structure, however, remains mysterious. Scientists theorize the existence of 'dark matter' and 'dark energy,' invisible components that exert gravitational influence but do not interact with light. Dark matter is believed to form the scaffolding upon which galaxies coalesce, explaining gravitational effects not accounted for by visible matter. Understanding these elusive components is crucial for unraveling the universe's ultimate fate and its fundamental composition.",
+      "keyPoints": [
+        "Universe formed from Big Bang's hot, dense state.",
+        "Dark matter and dark energy are invisible cosmic components.",
+        "Dark matter provides gravitational scaffolding for galaxies.",
+        "Understanding dark matter is key to universe's fate."
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q28",
+      "modelAnswer": "The speaker emphasized the importance of non-verbal communication, which includes elements like body language, facial expressions, and gestures. These unspoken signals significantly influence message interpretation, often reinforcing or even contradicting spoken words. For example, posture can reveal confidence or nervousness. Understanding these non-verbal cues is vital for effective communication, as it helps people grasp underlying emotions and intentions in both personal and professional interactions.",
+      "audioScript": "Non-verbal communication, often overlooked, plays a critical role in how we convey and interpret messages. It encompasses a wide array of cues, including body language, facial expressions, gestures, and even personal space. These unspoken signals can reinforce, contradict, or even replace verbal messages, providing rich context to interactions. For instance, a person's posture might indicate confidence or nervousness, irrespective of their spoken words. Mastering the interpretation of non-verbal cues is essential for effective communication, allowing individuals to better understand underlying emotions and intentions in various social and professional settings.",
+      "keyPoints": [
+        "Non-verbal communication is crucial for conveying messages.",
+        "Includes body language, facial expressions, gestures, personal space.",
+        "Cues can reinforce, contradict, or replace verbal messages.",
+        "Interpreting non-verbal cues improves understanding of emotions/intentions."
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Speech",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q29",
+      "modelAnswer": "Speech",
+      "audioScript": "What is the primary medium for transmitting information in a face-to-face conversation?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "SMS",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Digital Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q30",
+      "modelAnswer": "SMS",
+      "audioScript": "Which digital communication method primarily uses short text messages?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Language barrier",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barrier”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q31",
+      "modelAnswer": "Language barrier",
+      "audioScript": "What is a common barrier to effective communication when two people speak different languages?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Written communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Type”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-046-q32",
+      "modelAnswer": "Written communication",
+      "audioScript": "What type of communication involves sending messages through written words?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Economic Growth vs. Sustainability”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-046-q33",
+      "modelAnswer": "While historical economic growth often harmed the environment, proponents argue that green growth, through innovation and sustainable models like renewable energy, can achieve prosperity while protecting the planet, requiring global transition and cooperation.",
+      "readText": "The relationship between economic growth and environmental sustainability is a subject of intense debate. Historically, economic expansion has often come at the expense of natural resources and ecological balance, leading to pollution and climate change. However, proponents of 'green growth' argue that technological innovation and policy changes can decouple growth from environmental degradation. They suggest that investments in renewable energy, sustainable agriculture, and circular economy models can foster prosperity while simultaneously protecting the planet. The challenge lies in transitioning to these models globally, requiring significant political will and international cooperation."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Employers increasingly monitor employees' online activities and communications to ensure productivity and data security. To what extent do you agree or disagree with this practice, considering individual privacy rights versus legitimate business interests? Support your argument with relevant examples.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-046-q34",
+      "modelAnswer": "The practice of employers monitoring employees' online activities and communications presents a complex ethical dilemma, balancing an individual's right to privacy against a company's legitimate interests in productivity and security. While I acknowledge the valid concerns of businesses, I largely disagree with extensive monitoring due to its potential for privacy infringement and negative impact on employee trust and morale.\n\nFrom a business perspective, monitoring can be justified by the need to protect sensitive company data, prevent corporate espionage, ensure compliance with regulations, and maintain appropriate workplace conduct. For instance, in sectors dealing with intellectual property or classified information, strict oversight might be deemed necessary to mitigate risks. Employers also argue that they have a right to ensure employees are productive during work hours and not engaging in activities that could harm the company's reputation or resources.\n\nHowever, the erosion of privacy that comes with constant surveillance can have detrimental effects. Employees may feel distrusted, leading to decreased job satisfaction, higher stress levels, and a stifled sense of autonomy. This can ultimately reduce creativity and innovation, as individuals become hesitant to express themselves or explore ideas for fear of being scrutinized. Furthermore, the boundaries of 'work-related' activity can become blurred, potentially leading to monitoring of personal communications that inadvertently cross into work systems.\n\nInstead of pervasive monitoring, companies should focus on fostering a culture of trust and clear communication regarding acceptable use policies. Implementing robust security protocols, providing regular training on data protection, and clearly outlining consequences for breaches are more effective and less invasive alternatives. While some level of monitoring for critical security threats might be unavoidable, it should be proportionate, transparent, and strictly limited to legitimate business needs, with clear policies communicated to all employees. A balanced approach respects employee privacy while still safeguarding vital business interests."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Modern technology has revolutionized how people communicate, offering both unprecedented convenience and new challenges. Discuss the main advantages and disadvantages of contemporary communication methods, such as social media and instant messaging, on personal relationships and societal interactions.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-046-q35",
+      "modelAnswer": "Modern technology has undeniably transformed communication, ushering in an era of unparalleled convenience while simultaneously introducing novel challenges to personal relationships and societal interactions. While digital platforms like social media and instant messaging offer significant advantages in connectivity, they also pose considerable disadvantages.\n\nOne of the primary advantages is the enhanced ability to stay connected across vast distances. Families and friends can maintain relationships regardless of geographical separation, sharing updates and experiences in real-time. This fosters a sense of closeness that was previously impossible. Moreover, these tools facilitate rapid information dissemination, enabling quick responses in emergencies and fostering community engagement on important social issues. Social media, in particular, has empowered marginalized voices and created global communities united by shared interests or causes.\n\nHowever, the disadvantages are equally profound. The constant digital connection can lead to a decline in the quality of face-to-face interactions, as people often prioritize their phones over direct engagement. This can result in superficial relationships, where genuine empathy and nuanced understanding are replaced by brief, often misinterpreted, text-based exchanges. Furthermore, the curated nature of online personas can foster social comparison and mental health issues, as individuals perceive others' lives through an idealized lens. Societally, the rapid spread of misinformation and the creation of echo chambers are significant concerns, undermining informed discourse and potentially polarizing communities.\n\nIn conclusion, while modern communication technologies offer immense benefits in terms of connectivity and information sharing, their impact on personal relationships and societal interactions is a double-edged sword. It is crucial for individuals and society to cultivate digital literacy, prioritize meaningful in-person connections, and critically evaluate online content to mitigate the inherent challenges and harness the true potential of these advancements."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "duolingo-production-018",
+  "exam": "duolingo",
+  "section": "production",
+  "type": "section",
+  "title": "Duolingo English Test Production Practice Test 18",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Write your response within the time limit. Use the rubric for review.",
+  "questions": [
+    {
+      "id": "duolingo-production-018-q01",
+      "questionType": "writing_task",
+      "prompt": "[1] Write an essay discussing the benefits and limitations of online learning.",
+      "modelAnswer": "A strong response should address online learning clearly, organize ideas logically, and include relevant examples without unsupported claims.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "online learning",
+      "fingerprint": "abfa503a38fc89f5d7"
+    },
+    {
+      "id": "duolingo-production-018-q02",
+      "questionType": "writing_task",
+      "prompt": "[2] Write a formal email requesting information about a programme related to online learning.",
+      "modelAnswer": "A strong response should address online learning clearly, organize ideas logically, and include relevant examples without unsupported claims.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "online learning",
+      "fingerprint": "5fb5bbbf7672137bb4"
+    }
+  ],
+  "fingerprints": [
+    "abfa503a38fc89f5d7",
+    "5fb5bbbf7672137bb4"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-052",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 52",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-052-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to your community association volunteering to help organise a street festival.",
+      "modelAnswer": "I wholeheartedly advocate for Option B: prioritizing the development of advanced public transportation networks. This approach offers a more sustainable and equitable solution to urban congestion and environmental concerns.\n\nFirstly, investing in advanced public transport significantly reduces the number of private vehicles on the road. For example, a high-speed rail line connecting suburbs to city centers, or an expanded network of electric buses with dedicated lanes, can drastically cut down individual car commutes, thereby alleviating traffic jams and the associated stress. This directly translates to less fuel consumption and fewer emissions, a crucial step towards environmental preservation.\n\nSecondly, robust public transportation fosters greater social equity. Not everyone can afford a car, and relying solely on private vehicles creates barriers for low-income individuals, the elderly, or those with disabilities. An efficient, affordable, and accessible public transport system ensures that everyone has the means to commute to work, access essential services, and participate in community life, promoting inclusivity within the city.\n\nWhile Option A, expanding existing road networks, might offer a temporary reprieve, it is ultimately a short-sighted solution. Wider roads often induce more traffic in the long run, encouraging more people to drive and perpetuating the cycle of congestion and pollution. It fails to address the root causes of urban mobility issues and environmental degradation, making it a less suitable and less sustainable path forward.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "neighbourhood community events",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-052-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short invitation to a neighbour to attend a community event.",
+      "modelAnswer": "I would strongly advocate for Option B: prioritizing the development of robust public transportation networks over building more roads. This approach offers a more sustainable, equitable, and future-proof solution for urban growth.\n\nFirstly, investing in public transit directly addresses the critical issue of traffic congestion and its associated environmental impact. By providing efficient and reliable alternatives to private vehicles, we can significantly reduce the of cars on the road, leading to fewer emissions, less noise pollution, and improved air quality. For instance, expanded subway lines or dedicated bus rapid transit (BRT) routes can move far more people per hour than even multi-lane highways, particularly during peak times, without contributing to gridlock.\n\nSecondly, a strong public transportation system promotes social equity and accessibility. Not everyone can afford a car, and relying solely on road infrastructure disadvantages lower-income individuals, the elderly, and those with disabilities. Excellent public transit ensures that all citizens have affordable and convenient access to employment, education, healthcare, and recreational opportunities, fostering a more inclusive urban environment.\n\nWhile building more roads (Option A) might offer a temporary sense of relief, it ultimately encourages more driving, leading to induced demand that quickly fills new capacity. This creates a perpetual cycle of expansion that is both financially unsustainable and environmentally damaging, merely kicking the can down the road rather than solving the underlying problem. Therefore, a strategic shift towards public transportation is the more responsible and effective path forward.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "neighbourhood community events",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

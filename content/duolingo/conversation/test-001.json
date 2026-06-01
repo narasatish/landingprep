@@ -1,0 +1,68 @@
+{
+  "id": "duolingo-conversation-001",
+  "exam": "duolingo",
+  "section": "conversation",
+  "type": "section",
+  "title": "Duolingo English Test Conversation Practice Test 1",
+  "durationSeconds": 900,
+  "questionCount": 3,
+  "instructions": "Record responses and review using the rubric.",
+  "questions": [
+    {
+      "id": "duolingo-conversation-001-q01",
+      "questionType": "speaking_task",
+      "prompt": "[1] Talk about your personal experience with urban green roofs.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "urban green roofs",
+      "fingerprint": "35c78882a45a900a4c"
+    },
+    {
+      "id": "duolingo-conversation-001-q02",
+      "questionType": "speaking_task",
+      "prompt": "[2] Describe a situation where urban green roofs affected a school, workplace, or community.",
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "urban green roofs",
+      "fingerprint": "095fd827ae36c350be"
+    },
+    {
+      "id": "duolingo-conversation-001-q03",
+      "questionType": "speaking_task",
+      "prompt": "[3] Discuss whether urban green roofs will become more important in the future.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "urban green roofs",
+      "fingerprint": "8dd8733e9228598410"
+    }
+  ],
+  "fingerprints": [
+    "35c78882a45a900a4c",
+    "095fd827ae36c350be",
+    "8dd8733e9228598410"
+  ]
+}

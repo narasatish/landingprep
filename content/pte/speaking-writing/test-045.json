@@ -1,0 +1,739 @@
+{
+  "id": "pte-speaking-writing-045",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 45",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-045-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Exploring Childcare Options”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "childcare options",
+      "modelAnswer": "Choosing the right childcare option is a critical decision for many working parents. While traditional daycare centers offer structured environments and social interaction, in-home care, such as nannies or au pairs, provides personalized attention and flexible scheduling. Family-based care, often involving grandparents or relatives, can be a cost-effective solution, fostering strong familial bonds. Each option presents distinct advantages and disadvantages concerning cost, flexibility, and developmental benefits for the child.",
+      "readText": "Choosing the right childcare option is a critical decision for many working parents. While traditional daycare centers offer structured environments and social interaction, in-home care, such as nannies or au pairs, provides personalized attention and flexible scheduling. Family-based care, often involving grandparents or relatives, can be a cost-effective solution, fostering strong familial bonds. Each option presents distinct advantages and disadvantages concerning cost, flexibility, and developmental benefits for the child."
+    },
+    {
+      "id": "pte-speaking-writing-045-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Childcare Choices”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Many parents consider various childcare options, including nurseries and home-based carers.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "childcare options",
+      "modelAnswer": "Many parents consider various childcare options, including nurseries and home-based carers.",
+      "audioScript": "Many parents consider various childcare options, including nurseries and home-based carers."
+    },
+    {
+      "id": "pte-speaking-writing-045-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Popularity of Childcare Options (Ages 0-5)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "childcare options",
+      "modelAnswer": "This bar chart illustrates the popularity of various childcare options for children aged 0-5. The most popular choice is Daycare Centers, utilized by 40% of parents. Family/Relative Care follows closely behind at 35%, indicating a strong reliance on informal support networks. In-Home Nannies are chosen by 25% of parents, while Preschool Programs account for 15%. The least common option is an Au Pair, selected by only 5% of parents. Overall, formal daycare centers are significantly more popular than specialized in-home care like au pairs.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Popularity of Childcare Options (Ages 0-5)",
+        "yLabel": "Percentage of Parents",
+        "xAxis": [
+          "In-Home Nanny",
+          "Daycare Center",
+          "Family/Relative Care",
+          "Preschool Program",
+          "Au Pair"
+        ],
+        "series": [
+          {
+            "label": "Popularity",
+            "values": [
+              25,
+              40,
+              35,
+              15,
+              5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-045-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Benefits of Quality Childcare”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "childcare options",
+      "modelAnswer": "The lecture highlighted the significant economic and social benefits of accessible, high-quality childcare. Economically, it empowers parents to join the workforce, increasing productivity. Socially, children in such programs show enhanced cognitive and social development, leading to better educational achievements. Essentially, investing in early childhood care is crucial for national prosperity, creating a cycle of opportunity for both families and the wider community.",
+      "audioScript": "The provision of affordable, high-quality childcare yields substantial economic and social dividends. Economically, it enables parents, particularly mothers, to participate more fully in the workforce, boosting productivity and reducing welfare dependence. Socially, children in quality care settings often exhibit improved cognitive and social-emotional development, leading to better educational outcomes and reduced crime rates in the long run. Investing in early childhood education is thus an investment in a nation's future prosperity and well-being, creating a virtuous cycle of opportunity and growth for families and communities alike.",
+      "keyPoints": [
+        "Enables parental workforce participation",
+        "Boosts productivity and reduces welfare",
+        "Improves child cognitive and social development",
+        "Leads to better educational outcomes"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-045-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Childcare Setting”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Daycare",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "childcare options",
+      "modelAnswer": "Daycare",
+      "audioScript": "What is a common term for a place where children are cared for during the day?"
+    },
+    {
+      "id": "pte-speaking-writing-045-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Childcare Landscape”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "childcare options",
+      "wordTarget": 75,
+      "modelAnswer": "Childcare options range from formal institutions to individualized care, including emerging employer-sponsored models, all requiring parents to understand regulatory frameworks and accreditation standards to ensure quality and safety.",
+      "readText": "The landscape of childcare options is diverse, catering to a wide spectrum of parental needs and preferences. From formal institutional settings like daycare centers and preschools to more individualized arrangements such as nannies, au pairs, and family childcare homes, the choices reflect varying philosophies on early childhood education and care. Furthermore, employer-sponsored childcare and cooperative models are emerging, offering innovative solutions to address the challenges of work-life balance. Understanding the regulatory frameworks and accreditation standards is essential for parents evaluating these complex choices, ensuring safety and quality for their children."
+    },
+    {
+      "id": "pte-speaking-writing-045-q07",
+      "questionType": "write_essay",
+      "prompt": "Governments should make it compulsory for citizens to vote in elections. To what extent do you agree or disagree?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "childcare options",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Privacy Concerns”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q08",
+      "modelAnswer": "Digital privacy and data sovereignty have become paramount concerns in the modern interconnected world. Individuals and nations are increasingly demanding greater control over their personal data, challenging the traditional models of data collection and storage by large tech corporations. The concept of data sovereignty asserts that data is subject to the laws of the country in which it is collected, stored, or processed. This shift drives the development of new regulations and technologies aimed at enhancing user control and protecting sensitive information from unauthorized access.",
+      "readText": "Digital privacy and data sovereignty have become paramount concerns in the modern interconnected world. Individuals and nations are increasingly demanding greater control over their personal data, challenging the traditional models of data collection and storage by large tech corporations. The concept of data sovereignty asserts that data is subject to the laws of the country in which it is collected, stored, or processed. This shift drives the development of new regulations and technologies aimed at enhancing user control and protecting sensitive information from unauthorized access."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “AI's Job Market Impact”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q09",
+      "modelAnswer": "The impact of artificial intelligence on job markets is a subject of intense debate and research. While some predict widespread job displacement due to automation, others foresee a transformation of existing roles and the creation of entirely new industries. AI is expected to automate routine and repetitive tasks, allowing human workers to focus on more complex, creative, and interpersonal skills. Adapting to this evolving landscape will require significant investment in education and retraining programs to equip the workforce with future-proof competencies.",
+      "readText": "The impact of artificial intelligence on job markets is a subject of intense debate and research. While some predict widespread job displacement due to automation, others foresee a transformation of existing roles and the creation of entirely new industries. AI is expected to automate routine and repetitive tasks, allowing human workers to focus on more complex, creative, and interpersonal skills. Adapting to this evolving landscape will require significant investment in education and retraining programs to equip the workforce with future-proof competencies."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ancient Trade Routes”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q10",
+      "modelAnswer": "The history of maritime trade routes is a fascinating chronicle of human ingenuity and global connection. Ancient civilizations utilized rudimentary vessels to navigate vast oceans, exchanging goods, ideas, and cultures across continents. Routes like the Silk Road, which extended into maritime networks, facilitated the movement of spices, textiles, and precious metals, shaping economies and fostering intercultural exchange. These early trade arteries laid the groundwork for modern globalization, demonstrating the enduring human drive for exploration and commerce.",
+      "readText": "The history of maritime trade routes is a fascinating chronicle of human ingenuity and global connection. Ancient civilizations utilized rudimentary vessels to navigate vast oceans, exchanging goods, ideas, and cultures across continents. Routes like the Silk Road, which extended into maritime networks, facilitated the movement of spices, textiles, and precious metals, shaping economies and fostering intercultural exchange. These early trade arteries laid the groundwork for modern globalization, demonstrating the enduring human drive for exploration and commerce."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Solar Energy Breakthroughs”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q11",
+      "modelAnswer": "Advances in renewable solar energy technology are rapidly transforming the global energy landscape. Innovations in photovoltaic cell efficiency, energy storage solutions, and smart grid integration are making solar power increasingly competitive and accessible. Perovskite solar cells, for instance, offer the promise of cheaper and more flexible energy capture. These technological leaps are crucial for transitioning away from fossil fuels, contributing significantly to climate change mitigation efforts and establishing a more sustainable energy future for all.",
+      "readText": "Advances in renewable solar energy technology are rapidly transforming the global energy landscape. Innovations in photovoltaic cell efficiency, energy storage solutions, and smart grid integration are making solar power increasingly competitive and accessible. Perovskite solar cells, for instance, offer the promise of cheaper and more flexible energy capture. These technological leaps are crucial for transitioning away from fossil fuels, contributing significantly to climate change mitigation efforts and establishing a more sustainable energy future for all."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Climate Mitigation Strategies”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q12",
+      "modelAnswer": "Climate change mitigation strategies encompass a broad range of actions aimed at reducing greenhouse gas emissions and enhancing carbon sinks. Key approaches include transitioning to renewable energy sources, improving energy efficiency in buildings and transportation, and implementing sustainable land use practices like afforestation. Technological solutions such as carbon capture and storage also play a role, albeit with ongoing debates about their scalability and cost-effectiveness. International cooperation and policy frameworks are essential for effective global mitigation efforts.",
+      "readText": "Climate change mitigation strategies encompass a broad range of actions aimed at reducing greenhouse gas emissions and enhancing carbon sinks. Key approaches include transitioning to renewable energy sources, improving energy efficiency in buildings and transportation, and implementing sustainable land use practices like afforestation. Technological solutions such as carbon capture and storage also play a role, albeit with ongoing debates about their scalability and cost-effectiveness. International cooperation and policy frameworks are essential for effective global mitigation efforts."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Childhood nutrition significantly impacts cognitive development and overall academic performance.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Childhood Nutrition”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q13",
+      "modelAnswer": "Childhood nutrition significantly impacts cognitive development and overall academic performance.",
+      "audioScript": "Childhood nutrition significantly impacts cognitive development and overall academic performance."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Machine learning applications are revolutionizing diagnostics and personalized treatment plans in healthcare.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Machine Learning in Healthcare”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q14",
+      "modelAnswer": "Machine learning applications are revolutionizing diagnostics and personalized treatment plans in healthcare.",
+      "audioScript": "Machine learning applications are revolutionizing diagnostics and personalized treatment plans in healthcare."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The history of ancient astronomical observations reveals sophisticated understanding of celestial movements.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ancient Astronomy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q15",
+      "modelAnswer": "The history of ancient astronomical observations reveals sophisticated understanding of celestial movements.",
+      "audioScript": "The history of ancient astronomical observations reveals sophisticated understanding of celestial movements."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The impact of noise pollution on wildlife includes disrupted communication and altered behaviors.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Noise Pollution Effects”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q16",
+      "modelAnswer": "The impact of noise pollution on wildlife includes disrupted communication and altered behaviors.",
+      "audioScript": "The impact of noise pollution on wildlife includes disrupted communication and altered behaviors."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Cross-cultural negotiations in business require sensitivity to diverse communication styles and values.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Cross-Cultural Negotiations”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q17",
+      "modelAnswer": "Cross-cultural negotiations in business require sensitivity to diverse communication styles and values.",
+      "audioScript": "Cross-cultural negotiations in business require sensitivity to diverse communication styles and values."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Carbon capture and storage technologies aim to reduce industrial greenhouse gas emissions effectively.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Carbon Capture Technology”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q18",
+      "modelAnswer": "Carbon capture and storage technologies aim to reduce industrial greenhouse gas emissions effectively.",
+      "audioScript": "Carbon capture and storage technologies aim to reduce industrial greenhouse gas emissions effectively."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Wildlife corridor design is crucial for maintaining biodiversity and ecological connectivity.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Corridor Design”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q19",
+      "modelAnswer": "Wildlife corridor design is crucial for maintaining biodiversity and ecological connectivity.",
+      "audioScript": "Wildlife corridor design is crucial for maintaining biodiversity and ecological connectivity."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and mental states.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Philosophy of Consciousness”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q20",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and mental states.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and mental states."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology raises important questions regarding citizen privacy and data security.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q21",
+      "modelAnswer": "Smart city technology raises important questions regarding citizen privacy and data security.",
+      "audioScript": "Smart city technology raises important questions regarding citizen privacy and data security."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Water Cycle: Annual Fluxes (km³/year)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q22",
+      "modelAnswer": "This line chart illustrates the global water cycle's annual fluxes in cubic kilometers per year. The largest flux is Ocean Evaporation at 434,000 km³, significantly higher than any other component. Precipitation over the Ocean is also substantial at 394,000 km³. Conversely, Land Evaporation/Transpiration and Runoff to Ocean are equal at 71,000 km³/year, representing the lowest values shown. Atmospheric Transport from Ocean to Land accounts for 40,000 km³, while Precipitation over Land is 111,000 km³. Overall, the chart effectively highlights the immense scale of oceanic processes within the water cycle.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Water Cycle: Annual Fluxes (km³/year)",
+        "yLabel": "Volume (km³/year)",
+        "xAxis": [
+          "Ocean Evaporation",
+          "Land Evaporation/Transpiration",
+          "Atmospheric Transport (Ocean to Land)",
+          "Precipitation (Ocean)",
+          "Precipitation (Land)",
+          "Runoff to Ocean"
+        ],
+        "series": [
+          {
+            "label": "Annual Flux",
+            "values": [
+              434000,
+              71000,
+              40000,
+              394000,
+              111000,
+              71000
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Literacy Rates Across Global Regions (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q23",
+      "modelAnswer": "The table displays literacy rates across various global regions in 2023 for both adults and youth. North America and Europe show the highest rates, with adult literacy at 99.0% and 98.5% respectively, and youth literacy even higher. In stark contrast, Sub-Saharan Africa has the lowest adult literacy at 70.0% and youth literacy at 82.0%. South Asia also presents lower figures, with 74.0% adult literacy. Generally, youth literacy rates are consistently higher than adult rates across all regions, indicating ongoing educational progress, especially noticeable in regions like Sub-Saharan Africa and South Asia.",
+      "visual": {
+        "chartType": "table",
+        "title": "Literacy Rates Across Global Regions (2023)",
+        "headers": [
+          "Region",
+          "Adult Literacy Rate (%)",
+          "Youth Literacy Rate (%)"
+        ],
+        "rows": [
+          [
+            "North America",
+            "99.0",
+            "99.5"
+          ],
+          [
+            "Europe",
+            "98.5",
+            "99.0"
+          ],
+          [
+            "East Asia & Pacific",
+            "96.0",
+            "98.0"
+          ],
+          [
+            "Latin America & Caribbean",
+            "94.5",
+            "97.0"
+          ],
+          [
+            "Sub-Saharan Africa",
+            "70.0",
+            "82.0"
+          ],
+          [
+            "South Asia",
+            "74.0",
+            "88.0"
+          ],
+          [
+            "Arab States",
+            "85.0",
+            "92.0"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Smartphone Adoption Rate (2014-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q24",
+      "modelAnswer": "The line graph illustrates the global smartphone adoption rate from 2014 to 2023, showing a consistent upward trend. In 2014, the adoption rate was 35%, which steadily increased over the decade. By 2018, it had reached 65%, indicating significant growth in the first half of the period. The highest adoption rate was recorded in 2023 at 85%, demonstrating near saturation. This consistent growth highlights the increasing reliance on smartphones for communication and various other activities worldwide, almost tripling from its initial value.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Smartphone Adoption Rate (2014-2023)",
+        "yLabel": "Adoption Rate (%)",
+        "xAxis": [
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Adoption Rate",
+            "values": [
+              35,
+              42,
+              50,
+              58,
+              65,
+              71,
+              75,
+              79,
+              82,
+              85
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q25",
+      "modelAnswer": "This bar chart illustrates annual energy consumption per capita in megawatt-hours for several countries in 2022. Canada shows the highest consumption at 92 MWh, closely followed by the USA at 85 MWh. In stark contrast, India has the lowest consumption, only reaching 10 MWh. Germany consumes 45 MWh, while China and Brazil consume 30 MWh and 25 MWh respectively. The data clearly highlights significant disparities in energy usage globally, with developed Western nations consuming substantially more energy per person than developing Asian and South American countries.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Energy Consumption (MWh)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "China",
+          "India",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "MWh",
+            "values": [
+              85,
+              92,
+              45,
+              30,
+              10,
+              25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Atmospheric CO2 Concentration (1960-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q26",
+      "modelAnswer": "This line chart illustrates the significant increase in global atmospheric CO2 concentration from 1960 to 2020. In 1960, the concentration was approximately 315 parts per million (ppm), steadily rising to 338 ppm by 1980 and 370 ppm by 2000. The steepest increase is observed in the later decades, with the concentration reaching 415 ppm in 2020. This clearly shows a consistent upward trend, indicating a substantial rise in atmospheric carbon dioxide over these sixty years. The highest value of 415 ppm in 2020 is considerably higher than the initial 315 ppm in 1960.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Atmospheric CO2 Concentration (1960-2020)",
+        "yLabel": "CO2 Concentration (ppm)",
+        "xAxis": [
+          "1960",
+          "1970",
+          "1980",
+          "1990",
+          "2000",
+          "2010",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "CO2 Concentration",
+            "values": [
+              315,
+              325,
+              338,
+              354,
+              370,
+              390,
+              415
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q27",
+      "modelAnswer": "The lecture discussed the importance of non-verbal communication, emphasizing that it often carries more weight than spoken words. It highlighted how elements like body language, facial expressions, and gestures significantly impact message interpretation. Examples included eye contact indicating sincerity and crossed arms suggesting defensiveness. The speaker concluded that being skilled at both sending and interpreting these non-verbal signals is vital for effective communication and preventing misunderstandings in all aspects of life.",
+      "audioScript": "Communication is a multifaceted process, and non-verbal cues often convey more meaning than spoken words. Body language, facial expressions, gestures, and even silence can profoundly influence how a message is received and interpreted. For instance, maintaining eye contact can signal sincerity, while crossed arms might suggest defensiveness. Understanding these subtle signals is crucial in various contexts, from personal relationships to professional negotiations. Effective communicators are adept at both sending clear non-verbal messages and accurately interpreting those from others, enhancing mutual understanding and avoiding misunderstandings.",
+      "keyPoints": [
+        "Non-verbal cues convey significant meaning",
+        "Body language, expressions, gestures are key",
+        "Eye contact signals sincerity, crossed arms defensiveness",
+        "Understanding cues improves communication"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Digital Communication Evolution”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q28",
+      "modelAnswer": "The lecture focused on how digital communication has transformed interactions, accelerating information exchange and connecting people globally. However, this evolution brings challenges like information overload, the spread of misinformation, and privacy concerns. The speaker stressed the need for critical thinking, media literacy, and digital etiquette to ensure productive and secure communication in our interconnected world, emphasizing the importance of navigating the digital landscape thoughtfully to avoid pitfalls.",
+      "audioScript": "The evolution of digital communication has dramatically reshaped how individuals and organizations interact. From early email systems to modern social media platforms, technology has accelerated information exchange and fostered global connectivity. However, this rapid evolution also presents challenges, such as information overload, the spread of misinformation, and the erosion of privacy. Navigating the digital landscape effectively requires critical thinking, media literacy, and an awareness of digital etiquette to ensure communication remains productive, respectful, and secure in an increasingly interconnected world.",
+      "keyPoints": [
+        "Digital communication transformed interactions",
+        "Accelerated information exchange globally",
+        "Introduced challenges: overload, misinformation, privacy",
+        "Requires critical thinking and digital etiquette"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Email",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q29",
+      "modelAnswer": "Email",
+      "audioScript": "Which medium is primarily used for written communication over long distances?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Barrier",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barrier”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q30",
+      "modelAnswer": "Barrier",
+      "audioScript": "What is a common term for a misunderstanding during communication?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Television",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Mass Communication Tool”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q31",
+      "modelAnswer": "Television",
+      "audioScript": "What is a widely used platform for broadcasting news to a large audience?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-045-q32",
+      "modelAnswer": "Verbal",
+      "audioScript": "What kind of communication involves spoken words?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Healthy Lifestyle”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-045-q33",
+      "modelAnswer": "Consistent scientific evidence highlights that a healthy diet and regular exercise are crucial for preventing chronic diseases, improving longevity, and enhancing quality of life by strengthening the body and providing essential nutrients.",
+      "readText": "A robust body of scientific evidence consistently demonstrates the pivotal role of diet and exercise in preventing chronic diseases such as heart disease, type 2 diabetes, and certain cancers. Regular physical activity strengthens the cardiovascular system, aids in weight management, and improves insulin sensitivity. Concurrently, a balanced diet rich in fruits, vegetables, whole grains, and lean proteins provides essential nutrients and antioxidants, reducing inflammation and oxidative stress. Adopting these lifestyle habits early can significantly enhance longevity and quality of life, mitigating the societal burden of preventable illnesses."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Effective communication is paramount in both personal relationships and professional environments. Discuss the key components of effective communication and explain why it is considered a vital skill in today's interconnected world. Provide examples to support your points.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-045-q34",
+      "modelAnswer": "Effective communication is undeniably a cornerstone of successful interactions, whether in intimate personal relationships or complex professional settings. Its importance is amplified in our increasingly interconnected world, where misunderstandings can have far-reaching consequences. The key components of effective communication include active listening, clarity in expression, empathy, and non-verbal congruence.\n\nActive listening, for instance, involves fully concentrating on the speaker, understanding their message, and providing appropriate feedback. This ensures that the message is accurately received and interpreted, fostering trust and rapport. In a professional context, a project manager actively listening to team concerns can prevent critical errors and boost morale. Clarity in expression, both written and verbal, means conveying information in a concise and unambiguous manner. Jargon-free language in a business report ensures all stakeholders comprehend the objectives and strategies. Empathy, the ability to understand and share the feelings of another, allows communicators to tailor their message to the audience's emotional state, making it more impactful. A customer service representative demonstrating empathy can de-escalate a tense situation and retain customer loyalty.\n\nFurthermore, non-verbal congruence, where body language aligns with spoken words, reinforces sincerity and credibility. A speaker whose gestures and facial expressions match their message is perceived as more trustworthy. Conversely, a mismatch can create confusion and distrust. These components collectively ensure that messages are not only transmitted but also understood and accepted, building stronger relationships and facilitating collaboration.\n\nIn today's globalized and digitalized world, effective communication is vital because it bridges cultural divides, facilitates remote collaboration, and combats misinformation. Without it, organizations struggle with internal inefficiencies, and individuals face isolation. Therefore, mastering these communication skills is not merely beneficial; it is essential for navigating the complexities of modern life and achieving both personal and collective success."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "In many workplaces, employers monitor employees' online activities and communications to ensure productivity and security. Some argue this is a necessary measure, while others contend it is an invasion of privacy. To what extent do you agree or disagree with employer monitoring of online activities?",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-045-q35",
+      "modelAnswer": "The debate surrounding employer monitoring of employees' online activities and communications is a complex one, pitting legitimate business interests against fundamental individual privacy rights. While employers often justify such surveillance on grounds of productivity, security, and legal compliance, I largely disagree with extensive monitoring, believing it can erode trust, stifle creativity, and ultimately be counterproductive.\n\nProponents of monitoring argue that it is essential for maintaining a secure and productive work environment. They contend that employers have a right to protect proprietary information, prevent data breaches, and ensure employees are focused on work tasks rather than personal distractions. For instance, monitoring for illegal activities or harassment is legally defensible and ethically sound. Furthermore, in certain highly regulated industries, such as finance or healthcare, strict oversight might be necessary to comply with industry standards and legal requirements, protecting both the company and its clients from significant risks.\n\nHowever, the extent to which this monitoring is conducted is where the line is often crossed. Excessive surveillance can foster a climate of distrust, making employees feel undervalued and scrutinized rather than empowered. This can lead to decreased morale, reduced job satisfaction, and a chilling effect on open communication and innovation. Employees may become hesitant to express ideas or engage in legitimate, non-work-related discussions for fear of misinterpretation or punitive action. Moreover, such monitoring often blurs the lines between professional and personal life, infringing upon an individual's reasonable expectation of privacy, even within a work context.\n\nInstead of pervasive monitoring, employers should focus on clear policies, transparent communication, and fostering a culture of accountability. Educating employees on responsible internet use, data security protocols, and ethical conduct, combined with clear consequences for violations, can be far more effective than covert surveillance. While some level of monitoring might be unavoidable for critical security functions, it should be minimal, clearly communicated, and proportionate to the risks involved. Balancing security needs with respect for individual privacy is crucial for a healthy and productive workplace. Therefore, while limited, targeted monitoring might be acceptable under specific circumstances, widespread surveillance of online activities is generally an invasion of privacy that yields more negative than positive outcomes."
+    }
+  ]
+}

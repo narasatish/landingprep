@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-032",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 32",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-032-q01",
+      "questionType": "writing_task",
+      "prompt": "Write an email to your landlord reporting a maintenance issue in your apartment.",
+      "modelAnswer": "I would wholeheartedly choose Option A: \"Support local businesses through marketing campaigns and community events.\" This approach offers a multifaceted and sustainable path to economic growth, benefiting a wider array of individuals and fostering a stronger community spirit.\n\nFirstly, investing in marketing campaigns directly addresses a critical challenge for small businesses: visibility. Many local enterprises lack the resources or expertise to effectively promote their unique offerings. A concerted campaign, perhaps featuring a \"Shop Local\" initiative or highlighting specific businesses through social media and local media, can significantly increase foot traffic and sales. For instance, a \"Taste of Our Town\" event could showcase local restaurants and food producers, drawing new customers who might otherwise gravitate towards larger chains.\n\nSecondly, community events go beyond mere transactions; they build invaluable social capital. Festivals, farmers' markets, or craft fairs not only provide selling opportunities but also create vibrant public spaces where residents can connect, share experiences, and feel a sense of belonging. This strengthens the social fabric, making the area more attractive to both residents and potential new businesses. While Option B, \"Attract large corporations with tax incentives,\" might promise immediate job creation, it often comes at the cost of long-term local resilience. Large corporations can be fickle, relocating if better incentives arise elsewhere, leaving a void. Moreover, they rarely foster the unique community identity that local businesses cultivate. Therefore, supporting local businesses is a more organic, sustainable, and community-centric strategy for prosperity.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "renting an apartment",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-032-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a note to leave for a delivery person explaining where to leave a package.",
+      "modelAnswer": "I wholeheartedly advocate for Option A: \"Prioritizing the development of renewable energy sources.\" This approach offers a multifaceted and sustainable solution to our planet's pressing environmental and economic challenges.\n\nFirstly, investing in renewables like solar and wind power directly addresses climate change by significantly reducing greenhouse gas emissions. This mitigates extreme weather events, sea-level rise, and biodiversity loss, safeguarding our planet for future generations. For instance, countries like Denmark, which has heavily invested in wind energy, have drastically lowered their carbon footprint while simultaneously creating a robust green economy.\n\nSecondly, prioritizing renewables fosters energy independence and strengthens national security. By diversifying our energy portfolio away from volatile fossil fuel markets, we become less susceptible to geopolitical instability and price fluctuations. This provides long-term economic stability and allows resources to be reallocated from military protection of oil routes to domestic innovation.\n\nWhile Option B, \"Investing in carbon capture and storage technologies,\" has merit, it represents a reactive, end-of-pipe solution rather than a proactive preventative one. CCS is currently expensive, energy-intensive, and its long-term storage efficacy and safety are still debated. It doesn't eliminate the need for fossil fuel extraction and combustion, merely attempts to mitigate its consequences. Therefore, focusing our primary efforts on transitioning to clean energy sources is a far more effective and sustainable path forward.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "renting an apartment",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

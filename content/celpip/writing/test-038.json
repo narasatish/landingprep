@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-038",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 38",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-038-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to a new doctor's office requesting a first appointment and listing your medical history.",
+      "modelAnswer": "I wholeheartedly advocate for Option B, which suggests that educational institutions should prioritize teaching practical life skills. While academic subjects are undeniably important, a curriculum heavily weighted towards practical skills better equips students for immediate success and independent living in the real world.\n\nFirstly, practical skills foster greater self-sufficiency and confidence. Learning to manage personal finances, for instance, including budgeting and understanding investments, directly translates into responsible adult decision-making. Students who grasp basic home repairs, cooking, or even effective communication and problem-solving techniques are far better prepared to navigate daily challenges without constant external reliance. This proactive approach to life prepares them not just for a career, but for a well-rounded existence.\n\nSecondly, a focus on practical skills often leads to more immediate employability and entrepreneurship. Many academic pathways require further education, but proficiency in trades, digital literacy, or project management can open doors to vocational careers or even starting one's own business straight out of high school or college. This provides a valuable alternative for students who may not thrive in traditional academic settings, offering them viable and respected career paths.\n\nOption A, while seemingly noble in its aim to produce critical thinkers, often fails to bridge the gap between abstract thought and real-world application. Without the foundational practical skills, even the most critical thinker might struggle with basic life management, making their intellectual prowess less impactful in their day-to-day lives. Therefore, a practical skills-centric approach offers a more holistic and beneficial educational experience.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "finding a family doctor",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-038-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a message to a friend recommending a walk-in clinic you found helpful.",
+      "modelAnswer": "I wholeheartedly advocate for Option B, which suggests that libraries should prioritize digital resources and online access over physical books. This approach aligns with the evolving needs and preferences of modern society, offering unparalleled convenience and accessibility.\n\nFirstly, digital resources provide immediate, 24/7 access to information from anywhere with an internet connection. This eliminates geographical barriers and time constraints, benefiting students studying late at night, remote workers needing quick research, or individuals with mobility issues. Imagine a student in a rural area instantly accessing a rare academic journal without a lengthy trip to the city library. Secondly, digital platforms allow for a much broader and more diverse collection than any physical space could ever house. Libraries can offer thousands of e-books, audiobooks, academic databases, and streaming services without worrying about shelf space or wear and tear. This vastness caters to a wider range of interests and academic pursuits, ensuring everyone finds what they need.\n\nWhile physical books hold a certain nostalgic charm, Option A, focusing on them, is less suitable for a forward-thinking library. Physical collections are limited by space, prone to damage, and require significant maintenance, which diverts resources from expanding crucial digital offerings. The future of information access is undoubtedly digital, and libraries must embrace this shift to remain relevant and effective community hubs.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "finding a family doctor",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-045",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 45",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-045-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a professional email to a colleague asking for help with a workplace task.",
+      "modelAnswer": "I strongly advocate for Option A, which emphasizes investing in sustainable transportation infrastructure like electric buses and bike lanes, as the superior approach to improving urban life. This strategy offers multifaceted benefits that directly enhance environmental quality, public health, and economic stability.\n\nFirstly, a robust sustainable transportation network significantly reduces air pollution and carbon emissions. Replacing conventional vehicles with electric buses and encouraging cycling leads to cleaner air, mitigating respiratory illnesses and contributing to a healthier environment. For instance, cities like Copenhagen have seen drastic improvements in air quality and public health outcomes by prioritizing bike infrastructure.\n\nSecondly, promoting active transportation such as cycling and walking through dedicated lanes and safe pathways encourages physical activity, thereby improving public health and reducing healthcare burdens. It fosters a more active citizenry, combating sedentary lifestyles prevalent in modern society.\n\nWhile Option B, focusing on cultural centres and green spaces, is valuable, it addresses symptoms rather than root causes of urban decline. Without addressing the fundamental issues of pollution and congestion through sustainable transportation, the benefits of cultural amenities and green spaces would be diminished by a polluted and inaccessible urban environment. Sustainable transportation is a foundational investment that creates a healthier, more livable, and economically vibrant city for all.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "workplace communication",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-045-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short message to your supervisor explaining that you will be absent tomorrow.",
+      "modelAnswer": "I wholeheartedly endorse Option B, advocating for a significant increase in public funding for arts and cultural institutions. While Option A, maintaining current funding, might seem fiscally prudent, it fails to recognize the profound societal benefits that a robust arts sector provides.\n\nFirstly, enhanced funding would directly translate into greater accessibility and outreach. With additional resources, galleries, theatres, and museums could offer more free or subsidized programs, reaching underserved communities and fostering a love for the arts across all socioeconomic strata. Imagine free workshops for children in low-income areas or discounted senior matinees – these initiatives broaden participation and enrich lives.\n\nSecondly, increased investment fuels economic growth and job creation. Arts organizations are not merely cultural entities; they are employers, consumers, and tourist attractions. More funding allows for larger productions, expanded exhibitions, and infrastructure improvements, generating jobs for artists, technicians, administrators, and supporting local businesses like restaurants and hotels. This ripple effect strengthens the local economy.\n\nOption A, maintaining the status quo, is essentially a retreat. It suggests that the arts are a luxury rather than a fundamental component of a healthy, vibrant society. In an increasingly digital world, the unique, communal experience offered by live performances and physical exhibitions becomes even more critical for fostering empathy, critical thinking, and a shared cultural identity. Therefore, investing more in our cultural institutions is not just beneficial, but essential.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "workplace communication",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

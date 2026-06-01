@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-026",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 26 — Complaint Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-026-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "complaint",
+      "letterSituation": "You commute to work by bus every weekday. Over the past month the bus service on your regular route has become increasingly unreliable — buses run significantly late, are frequently overcrowded, and on two occasions scheduled services were cancelled without any prior notice, causing you to arrive late to work.",
+      "prompt": "You commute to work by bus every weekday. Over the past month the bus service on your regular route has become increasingly unreliable — buses run significantly late, are frequently overcrowded, and on two occasions scheduled services were cancelled without any prior notice, causing you to arrive late to work.\n\nWrite a letter in response to this situation. In your letter:\n• describe the specific problems you have experienced with the service in detail\n• explain the practical impact these disruptions are having on your work and daily routine\n• state clearly what improvements you expect the transport authority to make and by when\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "complaint"
+    },
+    {
+      "id": "ielts-writing-gt-026-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "A significant proportion of the population in many countries relies on public transport to commute to work each day. What are the main barriers that prevent more people from using public transport and what could be done to encourage greater usage?",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "complaint"
+    }
+  ]
+}

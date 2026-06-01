@@ -1,0 +1,37 @@
+{
+  "id": "ielts-writing-gt-002",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 2 — Request Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-002-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "request",
+      "letterSituation": "You are planning a two-week trip to a city you have never visited before. A friend of a friend lives there and has offered to let you stay with them, but you have never met this person.",
+      "prompt": "You are planning a two-week trip to a city you have never visited before. A friend of a friend lives there and has offered to let you stay with them, but you have never met this person.\n\nWrite a letter to this person. In your letter:\n• introduce yourself and explain how you know of them\n• describe your travel plans and the dates of your stay\n• ask if there is anything you can bring or do to help during your visit\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should introduce the writer warmly, explain the mutual connection clearly, provide specific travel dates, show consideration for the host by asking what help is needed, and maintain a friendly and polite tone throughout.",
+      "rubric": ["task achievement", "coherence and cohesion", "lexical resource", "grammatical range and accuracy"],
+      "difficulty": "medium",
+      "topic": "travel and accommodation"
+    },
+    {
+      "id": "ielts-writing-gt-002-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Tourism has grown enormously in recent decades. Some people argue that this has had negative effects on local communities and environments, while others believe it brings significant economic and cultural benefits. Discuss both sides and give your opinion.",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present both the economic benefits of tourism and its social and environmental drawbacks with specific examples, then state a clear personal stance supported by logical reasoning.",
+      "rubric": ["task response", "coherence and cohesion", "lexical resource", "grammatical range and accuracy"],
+      "difficulty": "medium",
+      "topic": "tourism"
+    }
+  ]
+}

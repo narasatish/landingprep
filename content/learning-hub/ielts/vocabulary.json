@@ -1,0 +1,833 @@
+{
+  "exam": "ielts",
+  "section": "vocabulary",
+  "lastUpdated": "2025",
+  "topicCount": 11,
+  "topics": [
+    {
+      "topic": "Academic Language",
+      "items": [
+        {
+          "word": "ameliorate",
+          "meaning": "To make a bad or unsatisfactory situation better.",
+          "example": "Several policies were introduced to ameliorate the living conditions of low-income families.",
+          "usageNote": "Common in academic writing; often contrasted with 'worsen' or 'exacerbate'.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "substantiate",
+          "meaning": "To provide evidence to support or prove the truth of something.",
+          "example": "The researcher was unable to substantiate her claims without further data.",
+          "usageNote": "Useful when discussing evidence in Task 2 or reading comprehension.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "phenomenon",
+          "meaning": "A fact or situation that is observed to exist or happen, especially one whose cause is in question.",
+          "example": "The urban heat island effect is a well-documented meteorological phenomenon.",
+          "usageNote": "Plural: phenomena. Frequently appears in IELTS reading passages.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "elaborate",
+          "meaning": "To add more detail or explanation to something.",
+          "example": "The report failed to elaborate on how the changes would be funded.",
+          "usageNote": "Can be used as verb ('please elaborate') or adjective ('an elaborate plan').",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "contentious",
+          "meaning": "Causing or likely to cause disagreement or controversy.",
+          "example": "The proposal to close the local library proved highly contentious among residents.",
+          "usageNote": "Synonym: controversial, disputed. Useful in discursive Task 2 essays.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "predominant",
+          "meaning": "Present as the strongest or main element; having the most influence.",
+          "example": "Agriculture remains the predominant industry in many rural economies.",
+          "usageNote": "Adverb form: predominantly. Common in both reading and writing.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "criterion (criteria)",
+          "meaning": "A principle or standard by which something is judged or decided.",
+          "example": "The selection criteria for the scholarship were published on the university website.",
+          "usageNote": "'Criteria' is the plural; 'criterion' is singular — a common IELTS error to avoid.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "coherent",
+          "meaning": "Logically consistent and clear; easy to understand.",
+          "example": "A coherent argument must address counterpoints as well as main claims.",
+          "usageNote": "Coherence is one of the four IELTS Writing marking criteria.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "advocate",
+          "meaning": "(v) To publicly support or recommend a cause or policy; (n) a person who does this.",
+          "example": "Many health professionals advocate reducing sugar consumption in processed foods.",
+          "usageNote": "Versatile word for Task 2 discussions of policy and opinion.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "albeit",
+          "meaning": "Although; even though.",
+          "example": "The results were promising, albeit based on a small sample size.",
+          "usageNote": "Formal linking word; signals a concession without using 'however'.",
+          "difficulty": "advanced"
+        }
+      ]
+    },
+    {
+      "topic": "Environment",
+      "items": [
+        {
+          "word": "biodiversity",
+          "meaning": "The variety of plant and animal life in a particular habitat or on Earth.",
+          "example": "Tropical rainforests support an extraordinary level of biodiversity.",
+          "usageNote": "Frequently tested in IELTS reading and useful in environmental Task 2 essays.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "sustainable",
+          "meaning": "Able to be maintained at a certain rate or level without depleting natural resources.",
+          "example": "Governments must develop sustainable alternatives to fossil fuel energy.",
+          "usageNote": "Common collocations: sustainable development, sustainable energy, sustainable agriculture.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "carbon footprint",
+          "meaning": "The total amount of greenhouse gases produced by human activities, expressed as carbon dioxide equivalent.",
+          "example": "Switching to public transport can significantly reduce your carbon footprint.",
+          "usageNote": "Central concept in environmental IELTS essays.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "deforestation",
+          "meaning": "The action of clearing a wide area of trees.",
+          "example": "Deforestation in the Amazon basin threatens thousands of animal and plant species.",
+          "usageNote": "Common in Task 2 essays on environment and development.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "renewable energy",
+          "meaning": "Energy from a source that is not depleted when used, such as wind, solar, or hydroelectric power.",
+          "example": "Denmark now generates more than half its electricity from renewable energy sources.",
+          "usageNote": "Contrasted with fossil fuels; key vocabulary for Task 2 energy essays.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "ecosystem",
+          "meaning": "A biological community of interacting organisms and their physical environment.",
+          "example": "Pollution from agricultural runoff can devastate freshwater ecosystems.",
+          "usageNote": "Appears frequently in IELTS reading passages about the natural world.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "emissions",
+          "meaning": "The production and discharge of gases, especially greenhouse gases, into the atmosphere.",
+          "example": "Stricter regulations are needed to control industrial emissions of nitrogen dioxide.",
+          "usageNote": "Often used in plural. Collocations: carbon emissions, greenhouse gas emissions.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "mitigation",
+          "meaning": "The action of reducing the severity, seriousness, or painfulness of something.",
+          "example": "Carbon capture technology is one form of climate change mitigation.",
+          "usageNote": "Contrasted with 'adaptation' — mitigation reduces the cause, adaptation manages the impact.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "contamination",
+          "meaning": "The process of making something impure, poisoned, or unfit for use by introducing harmful substances.",
+          "example": "Industrial waste has led to widespread contamination of the local groundwater.",
+          "usageNote": "Common in reading passages about pollution and public health.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "conservation",
+          "meaning": "The action of protecting animals, plants, and the natural environment.",
+          "example": "Wildlife conservation programmes have helped increase tiger populations in India.",
+          "usageNote": "Related: conserve, conservationist. Useful for both reading and writing.",
+          "difficulty": "basic"
+        }
+      ]
+    },
+    {
+      "topic": "Education",
+      "items": [
+        {
+          "word": "curriculum",
+          "meaning": "The subjects comprising a course of study in a school or university.",
+          "example": "Critics argue that the national curriculum places too much emphasis on rote learning.",
+          "usageNote": "Plural: curricula or curriculums. Common in education Task 2 essays.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "pedagogy",
+          "meaning": "The method and practice of teaching, especially as an academic subject.",
+          "example": "Modern pedagogy increasingly emphasises collaborative learning over direct instruction.",
+          "usageNote": "High-band vocabulary for education essays; related: pedagogical.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "literacy",
+          "meaning": "The ability to read and write; competence in a specified area.",
+          "example": "Improving literacy rates in rural areas remains a major challenge for developing nations.",
+          "usageNote": "Collocations: digital literacy, financial literacy, adult literacy.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "critical thinking",
+          "meaning": "The objective analysis and evaluation of an issue in order to form a judgement.",
+          "example": "Universities seek to develop critical thinking skills rather than mere memorisation.",
+          "usageNote": "Highly valued concept in IELTS Task 2 essays on education.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "extracurricular",
+          "meaning": "(Of activities) pursued in addition to the normal course of study.",
+          "example": "Participation in extracurricular activities develops leadership and teamwork skills.",
+          "usageNote": "Used as an adjective before nouns: extracurricular activities, extracurricular programme.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "rote learning",
+          "meaning": "Learning by memorisation rather than by understanding.",
+          "example": "The reliance on rote learning in many education systems discourages creativity.",
+          "usageNote": "Contrasted with 'critical thinking' or 'deep learning'.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "vocational",
+          "meaning": "Relating to an occupation or profession, especially practical skills.",
+          "example": "Vocational training programmes offer a practical alternative to university education.",
+          "usageNote": "Common in Task 2 essays comparing academic and vocational education.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "scholarship",
+          "meaning": "A grant or payment made to support a student's education; also, academic study.",
+          "example": "She was awarded a full scholarship to study medicine at the University of Edinburgh.",
+          "usageNote": "Two distinct meanings — financial award and academic activity.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "attainment",
+          "meaning": "The act of achieving something, especially a level of performance or qualification.",
+          "example": "The attainment gap between students from wealthy and poorer families has widened.",
+          "usageNote": "Academic term often used in reports on educational performance.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "mentorship",
+          "meaning": "The guidance provided by a mentor, especially in professional or academic contexts.",
+          "example": "Effective mentorship programmes significantly improve graduate employment rates.",
+          "usageNote": "Related: mentor, mentee. Useful in both education and workplace Task 2 essays.",
+          "difficulty": "intermediate"
+        }
+      ]
+    },
+    {
+      "topic": "Technology",
+      "items": [
+        {
+          "word": "automation",
+          "meaning": "The use of technology to perform tasks without human assistance.",
+          "example": "Automation in manufacturing has dramatically increased productivity but displaced many workers.",
+          "usageNote": "Central concept in IELTS Task 2 essays on the future of work.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "artificial intelligence",
+          "meaning": "The simulation of human intelligence processes by computer systems.",
+          "example": "Artificial intelligence is already transforming industries from medicine to finance.",
+          "usageNote": "Common abbreviation: AI. Increasingly appearing in IELTS reading and speaking topics.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "algorithm",
+          "meaning": "A set of rules or instructions followed by a computer to solve a problem.",
+          "example": "Social media companies use algorithms to determine what content users see.",
+          "usageNote": "No need to explain how algorithms work in detail — use it to describe automated decision-making.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "surveillance",
+          "meaning": "Close observation, especially of a suspected person or group.",
+          "example": "Many cities have expanded their surveillance systems in recent years in response to rising crime.",
+          "usageNote": "Can be used in essays on privacy, technology, and government control.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "proliferation",
+          "meaning": "Rapid increase in the number or amount of something.",
+          "example": "The proliferation of smartphones has transformed how people access information.",
+          "usageNote": "Slightly formal; often appears in reading passages about the spread of technology.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "obsolete",
+          "meaning": "No longer used or useful; out of date.",
+          "example": "Many skills considered essential a decade ago have already become obsolete.",
+          "usageNote": "Useful in Task 2 essays about jobs, technology, and the pace of change.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "digital divide",
+          "meaning": "The gulf between those who have ready access to computers and the internet and those who do not.",
+          "example": "The digital divide risks creating a two-tier education system in many developing countries.",
+          "usageNote": "Important concept for IELTS essays on inequality and technology.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "innovation",
+          "meaning": "The process of introducing something new, especially a new method, idea, or product.",
+          "example": "Government investment in research and development is essential to drive technological innovation.",
+          "usageNote": "Collocations: technological innovation, drive innovation, foster innovation.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "disruptive",
+          "meaning": "Causing radical change in an established industry or market.",
+          "example": "Ride-sharing apps have had a disruptive effect on the traditional taxi industry.",
+          "usageNote": "Often used positively in business contexts, negatively when describing social effects.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "cybersecurity",
+          "meaning": "The practice of protecting systems, networks, and programmes from digital attacks.",
+          "example": "As more services move online, cybersecurity has become a critical government priority.",
+          "usageNote": "A high-frequency topic in modern IELTS tests.",
+          "difficulty": "intermediate"
+        }
+      ]
+    },
+    {
+      "topic": "Health and Medicine",
+      "items": [
+        {
+          "word": "sedentary",
+          "meaning": "(Of a person or lifestyle) tending to spend much time seated; physically inactive.",
+          "example": "A sedentary lifestyle is strongly associated with an increased risk of cardiovascular disease.",
+          "usageNote": "Often appears in health-related IELTS reading passages; useful in Task 2 essays about obesity.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "epidemiologist",
+          "meaning": "A scientist who studies the spread and control of diseases in populations.",
+          "example": "Epidemiologists played a crucial role in tracking the spread of the pandemic.",
+          "usageNote": "Related: epidemic, epidemiology. Useful for reading passages and health essays.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "morbidity",
+          "meaning": "The condition of being diseased; the rate of disease in a population.",
+          "example": "Air pollution is a significant cause of respiratory morbidity in urban areas.",
+          "usageNote": "Distinguished from 'mortality' (death rate) — a common confusion in health writing.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "pandemic",
+          "meaning": "An outbreak of a disease that occurs over a wide geographic area affecting many people.",
+          "example": "The COVID-19 pandemic accelerated the adoption of telehealth services worldwide.",
+          "usageNote": "Contrasted with 'epidemic' (local) and 'endemic' (consistently present).",
+          "difficulty": "basic"
+        },
+        {
+          "word": "immunisation",
+          "meaning": "The process by which a person is made immune to an infectious disease, typically by vaccination.",
+          "example": "Mass immunisation programmes have successfully eradicated smallpox.",
+          "usageNote": "British spelling; American: immunization. Synonymous with vaccination in most contexts.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "preventable",
+          "meaning": "Capable of being avoided or stopped from happening.",
+          "example": "The report concluded that thousands of deaths each year are preventable through lifestyle changes.",
+          "usageNote": "Strong word for Task 2 health essays advocating preventive medicine.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "wellbeing",
+          "meaning": "The state of being comfortable, healthy, or happy.",
+          "example": "Mental wellbeing should be given the same priority as physical health in national health policy.",
+          "usageNote": "Can be written as 'well-being'. High-frequency in speaking Part 3 and Task 2 health essays.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "nutrition",
+          "meaning": "The process of providing or obtaining the food necessary for health and growth.",
+          "example": "Poor nutrition in early childhood can have lasting effects on cognitive development.",
+          "usageNote": "Related: nutritious, nutritional, malnourishment.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "chronic",
+          "meaning": "(Of a disease or condition) persisting for a long time or constantly recurring.",
+          "example": "The rising incidence of chronic diseases such as diabetes poses a challenge to health services.",
+          "usageNote": "Contrasted with 'acute'. Common in IELTS reading passages about public health.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "holistic",
+          "meaning": "Treating the whole person rather than just the symptoms of a disease.",
+          "example": "A holistic approach to healthcare considers a patient's mental and social situation alongside physical health.",
+          "usageNote": "Common in modern health writing; also used in education and management contexts.",
+          "difficulty": "intermediate"
+        }
+      ]
+    },
+    {
+      "topic": "Society and Culture",
+      "items": [
+        {
+          "word": "demographic",
+          "meaning": "Relating to the structure of populations; (n) a particular sector of a population.",
+          "example": "Ageing demographics are placing increasing pressure on public pension systems.",
+          "usageNote": "Often used in plural: demographics. Useful in essays on population and society.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "consumerism",
+          "meaning": "The preoccupation of society with the acquisition of consumer goods.",
+          "example": "Critics argue that consumerism encourages a disposable culture that harms the environment.",
+          "usageNote": "High-band vocabulary for Task 2 essays on culture, economy, and values.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "assimilation",
+          "meaning": "The process by which a person or group adopts the culture of another group.",
+          "example": "The speed of cultural assimilation among immigrant communities varies widely.",
+          "usageNote": "Also used in biology (digestion). In social contexts, sometimes viewed as controversial.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "inequality",
+          "meaning": "Difference in size, degree, or circumstances between people or groups.",
+          "example": "Economic inequality between urban and rural populations continues to widen in many countries.",
+          "usageNote": "Collocations: income inequality, gender inequality, social inequality.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "cohesion",
+          "meaning": "The action of forming a united whole; the quality that makes people or groups stick together.",
+          "example": "Strong community cohesion can help prevent social unrest.",
+          "usageNote": "Often used in the collocation 'social cohesion'. Relevant to IELTS essays on immigration and identity.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "stereotype",
+          "meaning": "A widely held but fixed and oversimplified image of a particular type of person or thing.",
+          "example": "Advertising often relies on gender stereotypes to sell products.",
+          "usageNote": "Can be used as both noun and verb. Useful in Task 2 essays on media and society.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "philanthropy",
+          "meaning": "The practice of donating money and time to help others, especially through charitable organisations.",
+          "example": "Corporate philanthropy can help bridge gaps in government provision of social services.",
+          "usageNote": "Related: philanthropist, philanthropic. High-band vocabulary for essays on business ethics.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "urbanisation",
+          "meaning": "The process by which towns and cities are formed and grow as more people begin living in them.",
+          "example": "Rapid urbanisation in developing countries has led to the growth of informal settlements.",
+          "usageNote": "Frequently tested in IELTS reading and Task 2 essays on cities and development.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "meritocracy",
+          "meaning": "A system in which advancement is based on individual ability and achievement.",
+          "example": "Many people believe that true meritocracy is impossible without equal access to quality education.",
+          "usageNote": "Useful in essays on education, equality, and social mobility.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "indigenous",
+          "meaning": "Originating or occurring naturally in a particular place; native.",
+          "example": "The rights of indigenous communities to their ancestral lands have long been contested.",
+          "usageNote": "Plural noun: indigenous peoples. Appears in IELTS passages on culture, history, and environment.",
+          "difficulty": "intermediate"
+        }
+      ]
+    },
+    {
+      "topic": "Economics and Work",
+      "items": [
+        {
+          "word": "productivity",
+          "meaning": "The effectiveness of productive effort measured in terms of output per unit of input.",
+          "example": "Remote working has been shown to increase productivity in many knowledge-based industries.",
+          "usageNote": "Collocations: boost productivity, low productivity, labour productivity.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "remuneration",
+          "meaning": "Money paid for work or services; payment.",
+          "example": "Many employees cite remuneration as the primary factor in job satisfaction surveys.",
+          "usageNote": "Formal synonym for 'pay' or 'salary'. Useful for high-band Task 2 essays on work.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "outsourcing",
+          "meaning": "Obtaining goods or services from an outside supplier rather than producing them internally.",
+          "example": "Companies often reduce costs by outsourcing customer service operations to countries with lower wages.",
+          "usageNote": "Common in Task 2 essays on globalisation and employment.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "inflation",
+          "meaning": "A general increase in prices and fall in the purchasing value of money.",
+          "example": "High inflation erodes the savings of ordinary households and reduces consumer spending.",
+          "usageNote": "Contrasted with 'deflation'. Essential vocabulary for economics Task 2 essays.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "entrepreneurship",
+          "meaning": "The activity of setting up a business, especially when this involves taking financial risks.",
+          "example": "Governments can encourage entrepreneurship by reducing bureaucratic barriers to starting a business.",
+          "usageNote": "Related: entrepreneur, entrepreneurial. Useful in Task 2 essays on economy and innovation.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "disposable income",
+          "meaning": "Income remaining after deduction of taxes and social security charges, available for spending or saving.",
+          "example": "A rise in disposable income typically leads to increased consumer spending.",
+          "usageNote": "Important economic concept for discussing consumer behaviour in Task 2 essays.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "subsidise",
+          "meaning": "To pay part of the cost of something to keep the price low for the consumer.",
+          "example": "Some governments subsidise public transport to encourage people to use it instead of private cars.",
+          "usageNote": "British spelling (American: subsidize). Related noun: subsidy.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "revenue",
+          "meaning": "Income generated from the sale of goods or services; income received by a government from taxes.",
+          "example": "Tax revenue from multinational corporations fell sharply as profits were moved offshore.",
+          "usageNote": "Distinguish from 'profit' — revenue is total income before costs are deducted.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "austerity",
+          "meaning": "Difficult economic conditions created by government measures to reduce public expenditure.",
+          "example": "Years of austerity measures resulted in significant cuts to healthcare and education budgets.",
+          "usageNote": "Politically loaded term; useful for Task 2 essays on government spending and social services.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "globalisation",
+          "meaning": "The process by which businesses and other organisations develop international influence or operate on an international scale.",
+          "example": "Critics of globalisation argue that it benefits wealthy nations disproportionately.",
+          "usageNote": "One of the most common IELTS Task 2 themes. Related: global, globalise.",
+          "difficulty": "basic"
+        }
+      ]
+    },
+    {
+      "topic": "IELTS Writing Collocations",
+      "items": [
+        {
+          "word": "it is widely acknowledged that",
+          "meaning": "A formal phrase used to introduce a point that most people accept as true.",
+          "example": "It is widely acknowledged that physical exercise is essential for both physical and mental health.",
+          "usageNote": "Strong opener for Task 2 opinion paragraphs. Avoid overusing.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "in recent decades",
+          "meaning": "Referring to the past 20–30 years.",
+          "example": "In recent decades, the proportion of women in senior management roles has increased significantly.",
+          "usageNote": "Useful for framing trends in Task 1 and Task 2 essays.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "far-reaching consequences",
+          "meaning": "Effects that extend a long way in scope or influence.",
+          "example": "Climate change will have far-reaching consequences for agriculture, public health, and migration.",
+          "usageNote": "Stronger and more specific than 'big effects'. Suitable for Task 2 conclusions.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "a viable alternative",
+          "meaning": "A practical option that can be used instead of something else.",
+          "example": "Electric vehicles are now considered a viable alternative to petrol-powered cars.",
+          "usageNote": "Very useful in Task 2 solution essays. 'Viable' implies it is both possible and practical.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "the root cause of",
+          "meaning": "The fundamental reason or origin of a problem.",
+          "example": "Poverty is often identified as the root cause of high crime rates in urban areas.",
+          "usageNote": "Preferred in formal writing over simply 'the cause of'. Useful in problem-solution essays.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "exacerbate",
+          "meaning": "To make a problem, bad situation, or feeling worse.",
+          "example": "Traffic congestion exacerbates air pollution and increases journey times.",
+          "usageNote": "Antonym: ameliorate. One of the highest-value vocabulary words for IELTS Task 2.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "it could be argued that",
+          "meaning": "A phrase used to introduce an argument that may be contested.",
+          "example": "It could be argued that competition between schools improves educational standards.",
+          "usageNote": "Used to present a view without full personal commitment. Useful in discussion essays.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "have a detrimental effect on",
+          "meaning": "To have a harmful or damaging effect on something.",
+          "example": "A sedentary lifestyle can have a detrimental effect on both physical and mental health.",
+          "usageNote": "More formal than 'hurt' or 'damage'. Strong collocation for Task 2 body paragraphs.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "there is growing evidence that",
+          "meaning": "Research and data are increasingly showing that something is true.",
+          "example": "There is growing evidence that ultra-processed foods are linked to a range of chronic diseases.",
+          "usageNote": "Useful for introducing research-based points in Task 2 essays.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "play a pivotal role in",
+          "meaning": "To have a very important and central role in something.",
+          "example": "Education plays a pivotal role in reducing social inequality.",
+          "usageNote": "More specific than 'have an important role'. Good for body paragraph topic sentences.",
+          "difficulty": "intermediate"
+        }
+      ]
+    },
+    {
+      "topic": "Reading Strategies Vocabulary",
+      "items": [
+        {
+          "word": "inference",
+          "meaning": "A conclusion reached based on evidence and reasoning rather than from explicit statements.",
+          "example": "The question required students to make an inference about the writer's attitude.",
+          "usageNote": "Related to 'not given' type questions — the answer is implied, not stated directly.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "paraphrase",
+          "meaning": "To express the meaning of something in different words.",
+          "example": "The IELTS Reading test often paraphrases information from the passage in its questions.",
+          "usageNote": "Key skill for all IELTS Reading question types — the questions rarely repeat words exactly.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "synonym",
+          "meaning": "A word or phrase that means the same or nearly the same as another.",
+          "example": "In IELTS Reading, the correct answer is often a synonym of a phrase in the passage.",
+          "usageNote": "Building a strong vocabulary of synonyms is essential for IELTS Reading and Writing.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "concession",
+          "meaning": "An admission that something is true or valid, typically after initial resistance.",
+          "example": "The writer makes a concession to her opponents before restating her main argument.",
+          "usageNote": "Recognising concession language ('although', 'while', 'despite') is crucial in Y/N/NG questions.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "distracter",
+          "meaning": "In a multiple-choice test, an incorrect option designed to appear plausible.",
+          "example": "The distractors in IELTS Reading often contain key words from the passage but change the meaning.",
+          "usageNote": "Recognising how distractors are constructed helps avoid common traps in MCQ questions.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "qualifier",
+          "meaning": "A word or phrase that modifies or limits the meaning of another word (e.g. 'only', 'mainly', 'sometimes').",
+          "example": "Pay attention to qualifiers like 'always' or 'never' in True/False/Not Given questions.",
+          "usageNote": "Absolute qualifiers ('always', 'never', 'all') are often the key to False answers in IELTS.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "gist",
+          "meaning": "The main point or substance of something.",
+          "example": "Skimming a passage for its gist before answering questions saves time in the exam.",
+          "usageNote": "Reading for gist is the first strategy recommended for IELTS Reading passages.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "nuance",
+          "meaning": "A subtle difference in meaning, expression, or sound.",
+          "example": "IELTS Not Given answers often depend on recognising a nuance the passage doesn't explicitly address.",
+          "usageNote": "Important for Y/N/NG questions — the passage may be similar to the statement but not identical.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "implication",
+          "meaning": "A conclusion that can be drawn from something although it is not stated explicitly.",
+          "example": "The writer does not state this directly, but the implication is clear.",
+          "usageNote": "Key for 'Yes/No/Not Given' questions where the answer depends on what is implied.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "assertion",
+          "meaning": "A confident and forceful statement of fact or belief.",
+          "example": "The passage contains several assertions that are not supported by evidence.",
+          "usageNote": "Related: assert, assertive. Useful for identifying the writer's tone in academic passages.",
+          "difficulty": "advanced"
+        }
+      ]
+    },
+    {
+      "topic": "Grammar for IELTS (Key Structures)",
+      "items": [
+        {
+          "word": "passive voice",
+          "meaning": "A grammatical construction in which the subject receives the action rather than performs it.",
+          "example": "Great strides have been made in renewable energy technology in recent years.",
+          "usageNote": "Essential for IELTS Task 1 graphs and processes; also lends formality to Task 2 writing.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "conditional sentences",
+          "meaning": "Sentences expressing a condition and its consequence, using structures like 'if...would/will/might'.",
+          "example": "If governments invested more in public transport, congestion levels would fall significantly.",
+          "usageNote": "Second conditional (if + past, would + inf.) is especially useful for Task 2 recommendations.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "relative clause",
+          "meaning": "A clause beginning with 'who', 'which', 'that', or 'where' that gives more information about a noun.",
+          "example": "The scientists who conducted the study were based at Cambridge University.",
+          "usageNote": "Defining (no commas) and non-defining (with commas) clauses are both tested in IELTS Grammar.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "cohesive device",
+          "meaning": "A word or phrase used to connect ideas in writing, such as 'however', 'in addition', or 'therefore'.",
+          "example": "The use of appropriate cohesive devices is assessed in the Coherence and Cohesion IELTS criterion.",
+          "usageNote": "Varied use of cohesive devices improves coherence scores. Avoid overusing 'furthermore'.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "concessive clause",
+          "meaning": "A clause introduced by 'although', 'even though', or 'while' that acknowledges a contrast.",
+          "example": "Although there are clear economic benefits, tourism can also cause environmental damage.",
+          "usageNote": "Concessive clauses allow nuanced arguments in Task 2 — essential for Band 7+ writing.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "noun phrase",
+          "meaning": "A group of words based on a noun that acts as a subject or object in a sentence.",
+          "example": "The rapid expansion of urban populations has placed enormous strain on infrastructure.",
+          "usageNote": "Using complex noun phrases makes your writing more sophisticated and academic.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "fronting",
+          "meaning": "Placing an element other than the subject at the beginning of a sentence for emphasis.",
+          "example": "Of particular concern to researchers is the long-term effect on biodiversity.",
+          "usageNote": "An advanced rhetorical device that adds variety to sentence structure in Task 2 essays.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "hedging language",
+          "meaning": "Cautious language used to indicate uncertainty or avoid making absolute claims.",
+          "example": "The results suggest that regular exercise may reduce the risk of developing diabetes.",
+          "usageNote": "Words like 'may', 'might', 'tend to', 'appear to', and 'suggest' are important hedges in academic writing.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "cleft sentence",
+          "meaning": "A construction that divides a sentence into two parts for emphasis, often starting with 'It is/was...that'.",
+          "example": "It was the invention of the printing press that made books affordable for ordinary people.",
+          "usageNote": "Cleft sentences add emphasis and stylistic variety — useful for Band 7+ writing.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "parallel structure",
+          "meaning": "Using the same grammatical form for elements that have the same function in a sentence.",
+          "example": "The programme aims to improve literacy, boost employment, and reduce poverty.",
+          "usageNote": "Parallel lists are required by IELTS Writing marking criteria under Grammatical Range.",
+          "difficulty": "intermediate"
+        }
+      ]
+    },
+    {
+      "topic": "Listening Vocabulary",
+      "items": [
+        {
+          "word": "form-filling",
+          "meaning": "The task of completing blanks in a form based on information heard in a listening script.",
+          "example": "In Section 1 of IELTS Listening, you are often required to complete a form with names, numbers, and dates.",
+          "usageNote": "Focus on spelling — one spelling mistake loses the mark, even if the word is correct.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "distractor",
+          "meaning": "Information in a listening script designed to mislead the listener from the correct answer.",
+          "example": "The speaker first mentions £45 but then corrects herself to £54 — the second figure is the answer.",
+          "usageNote": "Listen carefully for corrections, contrasts, and repeated information — these signal the real answer.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "signposting language",
+          "meaning": "Words and phrases a speaker uses to indicate what they are about to say or have just said.",
+          "example": "'Turning to the next point…' is a signposting phrase that tells you a new topic is beginning.",
+          "usageNote": "Recognising signposting helps you follow structure in IELTS Listening Sections 3 and 4.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "multiple-speaker dialogue",
+          "meaning": "A conversation involving more than one participant in a listening test.",
+          "example": "IELTS Listening Sections 1 and 3 typically feature multiple-speaker dialogues.",
+          "usageNote": "Track which speaker gives each piece of information — answers often come only from one speaker.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "paraphrase (listening)",
+          "meaning": "The use of different words in the listening script to express the same information as the question.",
+          "example": "The question says 'inexpensive' but the speaker says 'affordable' — these are paraphrases.",
+          "usageNote": "Most IELTS Listening answers require recognising paraphrases rather than identical words.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "note completion",
+          "meaning": "A listening task in which you complete notes or a summary from information heard.",
+          "example": "Section 4 of IELTS Listening often requires note completion from an academic lecture.",
+          "usageNote": "Read the notes carefully before listening — gaps tell you what type of word to listen for.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "label a diagram",
+          "meaning": "A listening task in which you identify parts of a diagram, map, or plan.",
+          "example": "In the listening test, you may need to label a floor plan of a building based on directions given.",
+          "usageNote": "Locate your starting point on the diagram before the recording begins.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "predict the answer type",
+          "meaning": "Using the questions to anticipate what kind of information (number, name, place, etc.) you will hear.",
+          "example": "If the gap comes after 'Date:', predict that you will hear a date in the recording.",
+          "usageNote": "Reading ahead during the 30-second preparation time is the single most effective IELTS Listening strategy.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "cardinal number",
+          "meaning": "A number denoting quantity (e.g. one, two, three) rather than order.",
+          "example": "The guide says the entrance fee is twelve pounds and fifty pence.",
+          "usageNote": "Write numbers carefully — '12.50' and 'twelve pounds fifty' are both acceptable answers.",
+          "difficulty": "basic"
+        },
+        {
+          "word": "false start",
+          "meaning": "When a speaker begins to say one thing and then changes to something else.",
+          "example": "'The meeting is on the… actually, it's been moved to Thursday.'",
+          "usageNote": "In listening, the corrected information — not the first attempt — is usually the answer.",
+          "difficulty": "intermediate"
+        }
+      ]
+    }
+  ]
+}

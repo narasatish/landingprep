@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-042",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 42",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-042-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to the community centre requesting information about programmes for seniors.",
+      "modelAnswer": "I wholeheartedly endorse Option A, advocating for increased investment in renewable energy sources. This approach offers a multifaceted solution to pressing global challenges, positioning it as a far more sustainable and future-oriented choice than continued reliance on fossil fuels.\n\nFirstly, prioritizing renewables directly addresses the critical issue of climate change. Unlike fossil fuels, which release greenhouse gases, solar, wind, and hydroelectric power produce minimal to no emissions during operation. Investing heavily in these technologies allows for a significant reduction in our carbon footprint, mitigating the devastating effects of global warming, such as extreme weather events and rising sea levels. For instance, expanding solar farms and offshore wind parks can replace coal-fired power plants, leading to cleaner air and a healthier environment.\n\nSecondly, renewable energy fosters long-term energy independence and economic stability. Countries rich in fossil fuels often wield considerable geopolitical influence, leading to volatile energy markets and supply chain vulnerabilities. By contrast, most nations possess abundant solar, wind, or geothermal resources. Developing these domestic resources creates local jobs in manufacturing, installation, and maintenance, stimulating economic growth and reducing reliance on foreign energy imports. A prime example is Germany's \"Energiewende,\" which, despite initial challenges, has spurred innovation and job creation in its renewable sector.\n\nWhile Option B, maintaining current fossil fuel investments, might seem appealing for its immediate economic stability, it is a short-sighted and ultimately unsustainable path. It perpetuates environmental degradation, leaves nations vulnerable to geopolitical shifts, and stifles innovation in cleaner technologies. The long-term costs of climate change and resource depletion far outweigh any temporary economic benefits. Therefore, a decisive shift towards renewables is not just an environmental imperative but also a sound economic strategy.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "community centre programmes",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-042-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short survey response about what new programme you would like the community centre to offer.",
+      "modelAnswer": "I wholeheartedly endorse Option A: \"The government should significantly increase funding for public transportation infrastructure, including expanding routes and improving service frequency.\" This approach directly addresses critical urban challenges and offers a multitude of benefits for both individuals and the environment.\n\nFirstly, enhanced public transportation significantly reduces traffic congestion. With more frequent and accessible routes, commuters are incentivized to leave their cars at home, leading to smoother traffic flow, shorter travel times, and a decrease in frustrating gridlock, as seen in cities like Vancouver after major SkyTrain expansions. This not only improves daily life but also boosts economic productivity by reducing delays for businesses.\n\nSecondly, it promotes environmental sustainability. A robust public transit system directly translates to fewer private vehicles on the road, thereby decreasing carbon emissions and improving air quality. This aligns with global efforts to combat climate change and creates healthier urban environments for residents. Investing in electric buses and trains further amplifies this positive impact.\n\nWhile Option B, \"The government should invest more in developing smart road technologies and expanding existing highways to accommodate more vehicles,\" might seem appealing, it ultimately offers a short-term fix. Expanding highways often induces more traffic in the long run, and smart road technologies, while helpful, don't fundamentally address the issue of individual car dependency or its environmental consequences. Prioritizing public transit offers a more sustainable, equitable, and future-proof solution.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "community centre programmes",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

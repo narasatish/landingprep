@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-015",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 15",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-015",
+      "file": "gmat/quant/test-015.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-015",
+      "file": "gmat/verbal/test-015.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-015",
+      "file": "gmat/data-insights/test-015.json"
+    }
+  ]
+}

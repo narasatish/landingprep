@@ -1,0 +1,112 @@
+{
+  "id": "ielts-writing-008",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 8",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-008-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The graph below shows the percentage of households with access to the internet in urban and rural areas of three developing countries from 2010 to 2022. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "digital divide",
+      "modelAnswer": "The line graph illustrates the proportion of households with internet access in urban and rural areas across three developing countries (A, B, and C) between 2010 and 2022.\n\nOverall, internet penetration significantly increased in all regions of the three countries over the twelve-year period. A consistent trend across all nations was that urban households had considerably higher internet access percentages than their rural counterparts throughout the entire timeframe.\n\nIn 2010, Country A's urban areas led with 30% internet access, rising sharply to 90% by 2022. Its rural areas, starting at just 5%, experienced substantial growth, reaching 50% by the end of the period. Similarly, Country B's urban households saw their access jump from 20% to 80%, while rural access grew from a mere 3% to 45%. Country C showed the lowest initial figures; its urban access began at 15% and peaked at 70% by 2022. Rural areas in Country C, starting at 2%, also demonstrated strong progress, achieving 40% internet penetration by 2022, narrowing the gap with Country B's rural areas.",
+      "visual": {
+        "chartType": "line",
+        "title": "Internet Access in Urban vs. Rural Households (2010-2022)",
+        "yLabel": "Percentage of Households",
+        "xAxis": [
+          "2010",
+          "2014",
+          "2018",
+          "2022"
+        ],
+        "series": [
+          {
+            "label": "Country A Urban",
+            "values": [
+              30,
+              55,
+              75,
+              90
+            ]
+          },
+          {
+            "label": "Country A Rural",
+            "values": [
+              5,
+              15,
+              30,
+              50
+            ]
+          },
+          {
+            "label": "Country B Urban",
+            "values": [
+              20,
+              40,
+              60,
+              80
+            ]
+          },
+          {
+            "label": "Country B Rural",
+            "values": [
+              3,
+              10,
+              25,
+              45
+            ]
+          },
+          {
+            "label": "Country C Urban",
+            "values": [
+              15,
+              35,
+              50,
+              70
+            ]
+          },
+          {
+            "label": "Country C Rural",
+            "values": [
+              2,
+              8,
+              20,
+              40
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-008-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "The internet has made a significant contribution to education, but access to it remains unequal between different parts of the world. How can this digital divide best be addressed?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "digital divide",
+      "modelAnswer": "The advent of the internet has undeniably revolutionised educational paradigms, offering unparalleled access to information and learning resources. However, this transformative power is not universally distributed, with significant disparities in internet access persisting globally. Addressing this digital divide necessitates a multi-faceted approach involving infrastructural development, affordability initiatives, and digital literacy programmes.\n\nOne primary strategy must focus on expanding robust internet infrastructure to underserved regions. Many developing countries lack the foundational fibre optic networks and cellular towers essential for reliable connectivity. Governments and international organisations should collaborate to fund and implement large-scale infrastructure projects, perhaps through public-private partnerships, to lay cables and erect necessary hardware. For instance, initiatives like Google's Project Loon, though discontinued, demonstrated the potential of innovative solutions like balloon-powered internet to bring connectivity to remote areas, highlighting the need for continued exploration of such technologies.\n\nFurthermore, ensuring affordability and enhancing digital literacy are crucial. Even where infrastructure exists, high costs for internet services and devices can be prohibitive for low-income populations. Subsidised internet plans, free public Wi-Fi zones, and affordable device schemes, perhaps through government grants or charitable donations of refurbished computers, could bridge this gap. Concurrently, educational programmes are vital to equip individuals with the skills to utilise the internet effectively and safely. For example, local community centres could offer free digital skills workshops, teaching everything from basic browsing to online safety, ensuring that access translates into meaningful engagement and empowerment.\n\nIn conclusion, while the internet’s educational impact is profound, its uneven distribution demands urgent attention. By prioritising infrastructural investment, promoting affordability, and fostering digital literacy, the global community can progressively dismantle the digital divide, ensuring equitable access to the vast educational opportunities the internet provides."
+    }
+  ],
+  "variant": "academic"
+}

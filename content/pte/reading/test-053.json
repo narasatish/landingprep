@@ -1,0 +1,265 @@
+{
+  "id": "pte-reading-053",
+  "exam": "pte",
+  "section": "reading",
+  "title": "PTE Core Reading Practice Test 23",
+  "durationSeconds": 3300,
+  "questionCount": 15,
+  "questions": [
+    {
+      "id": "pte-reading-053-rwfib",
+      "questionType": "reading_writing_fill_blanks",
+      "passage": "Food Security in the 21st Century is a __1__ field that has attracted growing scholarly attention. Researchers have documented __2__ effects on human wellbeing and environmental __3__. Policy responses have been __4__, reflecting the __5__ nature of the underlying science.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wordBank": [
+        "complex",
+        "substantial",
+        "outcomes",
+        "mixed",
+        "evolving",
+        "simple",
+        "minor",
+        "stable",
+        "uniform",
+        "superficial"
+      ],
+      "correctAnswers": [
+        "complex",
+        "substantial",
+        "outcomes",
+        "mixed",
+        "evolving"
+      ],
+      "explanation": "The passage requires words describing the complex, substantial, outcome-focused, mixed, and evolving nature of the field.",
+      "prompt": "Read the passage about the development of international trade law and select the correct word from each drop-down list to complete the text. Each blank has only one correct answer."
+    },
+    {
+      "id": "pte-reading-053-fib",
+      "questionType": "fill_in_blanks",
+      "passage": "Evidence suggests that Food Security in the 21st Century has a __1[significant|negligible|unproven|superficial]__ impact on contemporary society. Early research was __2[hampered|accelerated|simplified|ignored]__ by limited data availability. More recent studies have __3[confirmed|denied|complicated|trivialised]__ key hypotheses. Policymakers face increasing __4[pressure|freedom|immunity|incentive]__ to respond effectively.",
+      "explanation": "Select the most contextually appropriate word for each blank.",
+      "prompt": "Read the text about social media and political polarisation and drag words from the box below into the correct gaps in the passage."
+    },
+    {
+      "id": "pte-reading-053-reorder",
+      "questionType": "reorder_paragraphs",
+      "sentences": [
+        {
+          "id": "B",
+          "text": "Researchers began collecting structured data after concerns were raised in policy circles."
+        },
+        {
+          "id": "D",
+          "text": "These conclusions were translated into policy recommendations by international bodies."
+        },
+        {
+          "id": "A",
+          "text": "Initial observations about Food Security in the 21st Century were largely anecdotal and lacked systematic documentation."
+        },
+        {
+          "id": "C",
+          "text": "Longitudinal studies eventually provided the robust evidence base needed for confident conclusions."
+        },
+        {
+          "id": "E",
+          "text": "Implementation varied widely between countries depending on institutional capacity and political will."
+        }
+      ],
+      "correctOrder": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Arrange sentences in logical progression from observation to policy implementation.",
+      "prompt": "The text about the history of written language development has been scrambled. Arrange the text boxes below in the correct order to form a coherent passage."
+    },
+    {
+      "id": "pte-reading-053-mcqm",
+      "questionType": "multiple_choice_multiple",
+      "passage": "Food Security in the 21st Century has become one of the most actively debated topics in contemporary scholarship and policy discourse. Researchers focusing on population growth have produced an expanding body of evidence challenging earlier assumptions. A comprehensive meta-analysis synthesised data from more than eighty independent studies across multiple continents. The findings consistently indicated that targeted interventions produced measurable improvements in key outcome variables. Critics argue that methodological limitations, including small sample sizes and publication bias, inflate apparent effect sizes. Longitudinal research has provided stronger causal evidence than cross-sectional designs could achieve alone. Policymakers have responded by integrating research findings into national strategies with varying degrees of fidelity. Emerging economies face distinct challenges when applying frameworks developed in wealthier nations.",
+      "question": "Which TWO statements are directly supported by the passage about Food Security in the 21st Century?",
+      "options": [
+        "Research findings have consistently challenged earlier assumptions",
+        "Only a single disciplinary approach has proven effective",
+        "Longitudinal research provides stronger causal evidence than cross-sectional designs",
+        "Economic dimensions have been found to be negligible",
+        "Community stakeholders are always excluded from academic research"
+      ],
+      "correctAnswers": [
+        "Research findings have consistently challenged earlier assumptions",
+        "Longitudinal research provides stronger causal evidence than cross-sectional designs"
+      ],
+      "requiredCount": 2,
+      "explanation": "Both findings are explicitly stated in the passage text.",
+      "prompt": "Read the passage and answer the question. More than one response is correct. Select all that apply.",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "pte-reading-053-mcqs",
+      "questionType": "multiple_choice_single",
+      "passage": "Food Security in the 21st Century has become one of the most actively debated topics in contemporary scholarship and policy discourse. Researchers focusing on population growth have produced an expanding body of evidence challenging earlier assumptions. A comprehensive meta-analysis synthesised data from more than eighty independent studies across multiple continents. The findings consistently indicated that targeted interventions produced measurable improvements in key outcome variables. Critics argue that methodological limitations, including small sample sizes and publication bias, inflate apparent effect sizes. Longitudinal research has provided stronger causal evidence than cross-sectional designs could achieve alone. Policymakers have responded by integrating research findings into national strategies with varying degrees of fidelity. Emerging economies face distinct challenges when applying frameworks developed in wealthier nations.",
+      "question": "What does the passage suggest about international cooperation regarding Food Security in the 21st Century?",
+      "options": [
+        "It has been seamless due to shared economic interests",
+        "It has proved difficult due to divergent national interests",
+        "It is unnecessary as local solutions are sufficient",
+        "It has produced binding global treaties"
+      ],
+      "correctAnswer": "It has proved difficult due to divergent national interests",
+      "explanation": "The passage states international cooperation has proved difficult to sustain given divergent national interests.",
+      "prompt": "Read the passage and select the best answer from the choices below."
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about innovations in medical imaging technology and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-053-q06"
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the science of materials under extreme conditions and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-053-q07"
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about urban biodiversity and ecological corridors and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-053-q08"
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about digital transformation in financial services and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-053-q09"
+    },
+    {
+      "questionType": "fill_in_blanks",
+      "correctAnswer": "refer to passage",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the effects of microplastics on marine ecosystems and drag the words from the box into the correct gaps in the text.",
+      "wordBank": [
+        "critical",
+        "significant",
+        "established",
+        "demonstrated",
+        "revealed"
+      ],
+      "id": "pte-reading-053-q10"
+    },
+    {
+      "questionType": "fill_in_blanks",
+      "correctAnswer": "refer to passage",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the role of gut bacteria in mental health and drag the words from the box into the correct gaps in the text.",
+      "wordBank": [
+        "critical",
+        "significant",
+        "established",
+        "demonstrated",
+        "revealed"
+      ],
+      "id": "pte-reading-053-q11"
+    },
+    {
+      "questionType": "fill_in_blanks",
+      "correctAnswer": "refer to passage",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the development of international trade law and drag the words from the box into the correct gaps in the text. [Question 12 — test-053]",
+      "wordBank": [
+        "critical",
+        "significant",
+        "established",
+        "demonstrated",
+        "revealed"
+      ],
+      "id": "pte-reading-053-q12"
+    },
+    {
+      "questionType": "reorder_paragraphs",
+      "correctAnswer": "A, D, B, C",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "The text below about the chronological development of democratic governance has been scrambled. Arrange the sentences in the correct logical order.",
+      "sentences": [
+        "A. The process begins when raw materials are collected from the environment.",
+        "B. After transformation, the resulting product undergoes quality testing.",
+        "C. Finally, approved products are distributed to end users.",
+        "D. Raw materials are then processed using specialised machinery."
+      ],
+      "id": "pte-reading-053-q13"
+    },
+    {
+      "questionType": "multiple_choice_multiple",
+      "correctAnswer": "A, E",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Which of the following challenges are identified in the text regarding deep-sea exploration? (Choose TWO answers)",
+      "options": [
+        "A. Loss of biodiversity in surrounding areas",
+        "B. Disruption of traditional livelihoods",
+        "C. Increased rainfall in the region",
+        "D. Improved water quality downstream",
+        "E. Soil erosion and land degradation"
+      ],
+      "id": "pte-reading-053-q14"
+    },
+    {
+      "questionType": "multiple_choice_single",
+      "correctAnswer": "B",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "According to the author, what is the most significant challenge described?",
+      "options": [
+        "A. To argue that current policies are insufficient",
+        "B. To describe a problem and propose potential solutions",
+        "C. To compare two opposing scientific theories",
+        "D. To demonstrate that technological progress is inevitable"
+      ],
+      "id": "pte-reading-053-q15"
+    }
+  ]
+}

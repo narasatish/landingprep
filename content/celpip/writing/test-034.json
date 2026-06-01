@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-034",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 34",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-034-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to the library requesting information about their programmes for newcomers.",
+      "modelAnswer": "I firmly believe that Option B, focusing on a balance between traditional classroom instruction and modern technological tools, is the superior approach to education. This blended learning model offers the best of both worlds, preparing students comprehensively for a dynamic future.\n\nFirstly, traditional classroom instruction provides the invaluable benefit of direct interaction and personalized feedback from experienced educators. Complex concepts, particularly in subjects like mathematics or advanced literature, often require immediate clarification and tailored explanations that a human teacher can uniquely provide. This face-to-face engagement also fosters critical social skills, encouraging collaboration and debate among peers, which are essential for navigating real-world professional environments.\n\nSecondly, integrating modern technological tools enhances learning by providing access to a vast array of resources and adaptive learning platforms. Online simulations, interactive exercises, and virtual field trips can make abstract concepts tangible and engaging. Furthermore, technology can personalize learning paths, allowing students to progress at their own pace and revisit challenging material, thereby catering to diverse learning styles and abilities more effectively than a purely traditional model.\n\nOption A, relying solely on traditional methods, risks leaving students unprepared for a technologically driven world. While foundational, it often lacks the dynamic and individualized learning opportunities that modern tools offer, potentially limiting engagement and access to up-to-date information. Therefore, a balanced approach is undoubtedly the most effective.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "using public libraries",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-034-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short post for a community board about a book you recently enjoyed.",
+      "modelAnswer": "I wholeheartedly advocate for Option B, which champions a holistic approach to education encompassing vocational training, arts, and critical thinking, rather than solely focusing on academic subjects. This comprehensive model is far better suited to preparing students for the complexities of modern life and the evolving job market.\n\nFirstly, integrating vocational training directly addresses the growing demand for skilled trades and practical professions. Not every student is destined for university, and providing pathways to valuable, hands-on careers from an earlier age ensures that a significant portion of the workforce is equipped with employable skills upon graduation. For instance, offering courses in culinary arts, coding, or carpentry can lead directly to apprenticeships and fulfilling careers, reducing youth unemployment and fostering economic growth.\n\nSecondly, the inclusion of arts and critical thinking cultivates well-rounded individuals capable of innovation and adaptability. Arts education, whether music, drama, or visual arts, enhances creativity, problem-solving, and emotional intelligence—qualities highly sought after in any professional field. Similarly, fostering critical thinking skills empowers students to analyze information, make informed decisions, and navigate a world saturated with information, preparing them for roles that demand more than rote memorization.\n\nOption A, which prioritizes academic subjects exclusively, is less suitable because it creates a narrow educational experience. While academic rigor is important, an overemphasis can neglect the diverse talents and learning styles of students, potentially alienating those who thrive in practical or creative environments. This academic-centric model can leave many unprepared for the array of opportunities available beyond traditional higher education, limiting their potential and the overall dynamism of the workforce.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "using public libraries",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

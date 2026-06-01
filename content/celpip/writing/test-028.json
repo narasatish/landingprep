@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-028",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 28",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-028-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You recently returned from a trip abroad and discovered that your travel insurance company has declined to cover a significant medical expense you incurred due to a minor illness.",
+      "recipient": "the travel insurance company",
+      "bulletPoints": [
+        "Describe the medical situation and the expense incurred",
+        "Explain why you believe the claim should be covered",
+        "Request a review of the decision or an explanation of the grounds for refusal"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You are interested in joining a community sports team. Write a letter to the team coordinator expressing your interest, describing your experience and fitness level, and asking about training times and how to register.",
+      "modelAnswer": "Dear [Travel Insurance Company Name] Claims Department,\n\nI am writing to express my strong dissatisfaction regarding the recent denial of my claim for medical expenses incurred during my trip to Thailand (Policy Number: [Your Policy Number], Claim Reference: [Your Claim Number]).\n\nOn October 23rd, 2023, while staying in Chiang Mai, I developed a severe ear infection requiring immediate medical attention. I visited the Bangkok Hospital Chiang Mai and was prescribed antibiotics and pain medication. The total cost for this consultation and medication was 3,500 THB (approximately $100 CAD), which I paid out-of-pocket. This was a minor, unforeseen illness, precisely the kind of situation travel insurance is designed to cover. My policy explicitly states coverage for emergency medical treatment due to sudden and unexpected illness.\n\nI therefore believe the decision to decline my claim is unfounded. I request an immediate review of this decision. Alternatively, please provide a detailed explanation outlining the specific clause or condition under which this claim was refused, as the initial refusal letter lacked sufficient detail.\n\nI look forward to your prompt response and a satisfactory resolution.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]"
+    },
+    {
+      "id": "celpip-writing-028-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city is considering how to support aging residents. Which policy do you prefer?",
+      "optionA": "Expand home care services so seniors can remain independent in their own homes longer",
+      "optionB": "Build a new publicly funded seniors' centre offering social programmes and health services",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A local arts council is surveying the community about arts and cultural programmes. Describe how you engage with arts and culture in your community, what you value about these programmes, and what additional offerings you would like to see.",
+      "modelAnswer": "I strongly advocate for Option A: expanding home care services to enable seniors to remain independent in their own homes longer. This approach offers a more comprehensive and dignified solution for our aging population.\n\nFirstly, enhanced home care directly addresses the preference of most seniors to age in place. By providing assistance with daily tasks such as meal preparation, personal hygiene, and medication management, we empower them to maintain their familiar surroundings and social connections, which are crucial for mental well-being. For example, a senior struggling with mobility can receive in-home physiotherapy, preventing premature institutionalization.\n\nSecondly, expanding home care is a more cost-effective and scalable solution than constructing a new facility. Building and maintaining a seniors' centre involves significant capital outlay and ongoing operational costs, whereas home care utilizes existing infrastructure and can be tailored to individual needs, preventing the creation of underutilized or oversubscribed facilities.\n\nWhile a new seniors' centre (Option B) offers valuable social and health programs, its reach is limited to those able to travel to it, potentially excluding the most vulnerable or isolated. Furthermore, it doesn't address the fundamental need for daily support that allows seniors to avoid residential care. Therefore, prioritizing home care ensures a broader, more impactful, and person-centered approach to supporting our elderly residents."
+    }
+  ]
+}

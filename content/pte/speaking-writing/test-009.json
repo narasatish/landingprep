@@ -1,0 +1,756 @@
+{
+  "id": "pte-speaking-writing-009",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 9",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-009-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Citizen Science in Ecology”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "94f2503ddc6cf7063c",
+      "modelAnswer": "Community science projects are revolutionizing ecological research by engaging volunteers in data collection. These initiatives often focus on biodiversity monitoring, water quality testing, or climate change impact assessments. Participants contribute invaluable data, expanding the geographical and temporal scope of studies beyond what professional scientists alone could achieve. This collaborative approach fosters scientific literacy and strengthens community ties to environmental conservation efforts.",
+      "readText": "Community science projects are revolutionizing ecological research by engaging volunteers in data collection. These initiatives often focus on biodiversity monitoring, water quality testing, or climate change impact assessments. Participants contribute invaluable data, expanding the geographical and temporal scope of studies beyond what professional scientists alone could achieve. This collaborative approach fosters scientific literacy and strengthens community ties to environmental conservation efforts."
+    },
+    {
+      "id": "pte-speaking-writing-009-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Benefits of Urban Green Roofs”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Urban green roofs significantly reduce stormwater runoff and improve air quality in cities.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "d3c23e60e802adddf2",
+      "modelAnswer": "Urban green roofs significantly reduce stormwater runoff and improve air quality in cities.",
+      "audioScript": "Urban green roofs significantly reduce stormwater runoff and improve air quality in cities."
+    },
+    {
+      "id": "pte-speaking-writing-009-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Factors Impacting Wayfinding Difficulty\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "7f73860893c9b30a0e",
+      "modelAnswer": "This bar chart illustrates key factors influencing wayfinding difficulty, rated on a scale of one to ten. 'Poor Signage' is identified as the most significant challenge, scoring 8.5, followed closely by 'Complex Layout' at 7.9. 'Lack of Landmarks' also presents a high difficulty at 7.2. In contrast, 'Cultural Differences' has the lowest impact, rated at 4.1, suggesting it's less critical than environmental factors. Overall, the chart highlights that clear visual cues and intuitive design are paramount for effective wayfinding.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Factors Impacting Wayfinding Difficulty",
+        "yLabel": "Difficulty Rating (1-10)",
+        "xAxis": [
+          "Poor Signage",
+          "Complex Layout",
+          "Lack of Landmarks",
+          "Information Overload",
+          "Stress/Anxiety",
+          "Cultural Differences"
+        ],
+        "series": [
+          {
+            "label": "Average Rating",
+            "values": [
+              8.5,
+              7.9,
+              7.2,
+              6.5,
+              5.8,
+              4.1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-009-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “The Mariana Trench Expedition”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "8746c70f2d9ee28296",
+      "modelAnswer": "The lecture highlighted the difficulties of deep ocean exploration, specifically in the Mariana Trench, due to extreme pressure, darkness, and cold. Despite these challenges, advanced submersibles have uncovered diverse life forms adapted to this harsh environment. These discoveries are crucial as they profoundly influence our comprehension of life's adaptability and Earth's geological activities, expanding scientific knowledge of our planet's most extreme habitats.",
+      "audioScript": "Today, we're discussing the incredible challenges and discoveries of deep ocean exploration, particularly focusing on expeditions to the Mariana Trench. This abyssal zone, the deepest known part of Earth's oceans, presents extreme conditions: immense pressure, total darkness, and near-freezing temperatures. Despite these obstacles, specialized submersibles have revealed a surprisingly diverse ecosystem, teeming with unique, highly adapted life forms. These findings continue to reshape our understanding of life's resilience and the planet's geological processes.",
+      "keyPoints": [
+        "Challenges of Mariana Trench exploration (pressure, darkness, cold)",
+        "Specialized submersibles enable access",
+        "Discovery of diverse, adapted ecosystems",
+        "Reshapes understanding of life and geology"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-009-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Preserving Digital Information”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Digital archive",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "ce946e5caf38195ff2",
+      "modelAnswer": "Digital archive",
+      "audioScript": "What is a collection of electronic records and materials, often stored online for preservation?"
+    },
+    {
+      "id": "pte-speaking-writing-009-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “The Silk Road's Economic Impact”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "d930a721758d7f9372",
+      "modelAnswer": "The ancient Silk Road, a network of trade routes, significantly boosted economic growth and cultural exchange between East and West, though its eventual decline was influenced by political shifts and new maritime pathways.",
+      "readText": "The ancient Silk Road was not merely a single route but a vast network of trade pathways connecting East and West for over a millennium. It facilitated the exchange of goods like silk, spices, and precious metals, but also ideas, technologies, and religions. This extensive connectivity fostered significant economic growth in participating regions, leading to the rise of powerful empires and the development of sophisticated mercantile practices. Its decline was influenced by factors like political instability and the emergence of maritime trade routes, which offered more efficient transport."
+    },
+    {
+      "id": "pte-speaking-writing-009-q07",
+      "questionType": "essay",
+      "prompt": "The demand for sustainable energy solutions necessitates advancements in renewable battery design. Discuss the key challenges and potential innovations in creating more environmentally friendly and efficient energy storage systems. Provide examples to support your argument.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "f1ed2108975aae3ab0",
+      "modelAnswer": "The global push towards sustainable energy sources has placed an unprecedented demand on the development of renewable battery technologies. While current lithium-ion batteries have revolutionized portable electronics and electric vehicles, their environmental footprint, reliance on finite resources, and safety concerns present significant challenges. A primary hurdle is the extraction of raw materials like lithium, cobalt, and nickel, which often involve environmentally damaging mining practices and raise ethical questions. Furthermore, the limited lifespan and complex recycling processes of existing batteries contribute to electronic waste and resource depletion.\n\nInnovations are crucial to overcoming these obstacles. One promising avenue is the exploration of alternative chemistries, such as solid-state batteries, which offer higher energy density and improved safety by replacing liquid electrolytes. Another area of focus is the development of batteries using more abundant and less toxic materials, such as sodium-ion or even organic batteries. For instance, research into lignin-based carbon for battery electrodes could utilize a waste product from the paper industry. Additionally, advancements in smart battery management systems and grid-scale storage solutions, like flow batteries, are vital for integrating intermittent renewable energy sources effectively. Ultimately, a multi-faceted approach involving material science, engineering, and policy will be required to create truly sustainable and efficient energy storage systems for a renewable future."
+    },
+    {
+      "id": "pte-speaking-writing-009-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Effective Language Acquisition”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "1c724b43807cd436fa",
+      "modelAnswer": "Consistent daily practice is paramount for effective language learning. Engaging with authentic materials, such as podcasts or news articles, helps learners immerse themselves in the target language's nuances and cultural contexts. Additionally, actively seeking opportunities for conversational practice, even with non-native speakers, strengthens fluency and builds confidence. Regular review of grammar rules and vocabulary further consolidates knowledge, transforming passive understanding into active communication skills.",
+      "readText": "Consistent daily practice is paramount for effective language learning. Engaging with authentic materials, such as podcasts or news articles, helps learners immerse themselves in the target language's nuances and cultural contexts. Additionally, actively seeking opportunities for conversational practice, even with non-native speakers, strengthens fluency and builds confidence. Regular review of grammar rules and vocabulary further consolidates knowledge, transforming passive understanding into active communication skills."
+    },
+    {
+      "id": "pte-speaking-writing-009-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Impact of Health Campaigns”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Effective public health campaigns often rely on clear communication and community engagement.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "662e59408e3cba3d50",
+      "modelAnswer": "Effective public health campaigns often rely on clear communication and community engagement.",
+      "audioScript": "Effective public health campaigns often rely on clear communication and community engagement."
+    },
+    {
+      "id": "pte-speaking-writing-009-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Museum Conservation Challenges (2023 Survey)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "3de4dd7e38937242a9",
+      "modelAnswer": "This bar chart illustrates the primary challenges faced in museum conservation based on a 2023 survey. The most significant challenge identified is 'Funding Shortages,' affecting 75% of museums, making it the highest bar. This is closely followed by 'Lack of Skilled Staff' at 60%. 'Environmental Control' and 'Pest Infestation' are also notable, at 45% and 30% respectively. The least reported challenge is 'Public Access vs. Preservation,' impacting only 20% of institutions. Overall, financial constraints and human resources appear to be the dominant hurdles in effective museum conservation.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Museum Conservation Challenges (2023 Survey)",
+        "yLabel": "Percentage of Museums",
+        "xAxis": [
+          "Funding Shortages",
+          "Lack of Skilled Staff",
+          "Environmental Control",
+          "Pest Infestation",
+          "Public Access vs. Preservation"
+        ],
+        "series": [
+          {
+            "label": "Challenges",
+            "values": [
+              75,
+              60,
+              45,
+              30,
+              20
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-009-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Bird Counting Initiatives”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c1e9d3dd13398f68f1",
+      "modelAnswer": "The lecture discussed citizen science in ornithology, using examples like the Great Backyard Bird Count. It highlighted how volunteers collect crucial data by identifying and counting birds in their local environments. This collected data is then used by scientists to monitor bird populations, analyze migration trends, and assess environmental impacts. The speaker emphasized that such projects effectively engage the public and significantly contribute to our ecological knowledge and understanding.",
+      "audioScript": "Today, I want to talk about citizen science, specifically in the context of ornithology. Projects like the Great Backyard Bird Count or the Christmas Bird Count are fantastic examples. These initiatives empower ordinary people to contribute valuable data to scientific research. Volunteers identify and count birds in their local areas, submitting their observations to a central database. This massive influx of data helps scientists track bird populations, understand migration patterns, and monitor the impacts of environmental changes. It's a powerful way to engage the public and advance our ecological understanding.",
+      "keyPoints": [
+        "Citizen science in ornithology (e.g., bird counts)",
+        "Volunteers collect bird identification and count data",
+        "Data helps track populations, migration, and environmental impacts",
+        "Engages public and advances ecological understanding"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-009-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Stormwater Management Solution”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Green roof",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0c12743dfe9458bd8e",
+      "modelAnswer": "Green roof",
+      "audioScript": "What type of urban infrastructure helps absorb rainwater and reduce runoff?"
+    },
+    {
+      "id": "pte-speaking-writing-009-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Cognitive Maps and Navigation”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "84e42b5248f04e3a3e",
+      "modelAnswer": "Wayfinding, a key cognitive process, depends on subjective 'cognitive maps' influenced by environmental factors like landmarks and path structure, which informs the design of intuitive physical and digital navigation.",
+      "readText": "Wayfinding, the cognitive process of determining and following a path, is fundamental to human existence. It relies heavily on our ability to form and utilize 'cognitive maps'—mental representations of our environment. These internal maps are not precise replicas but rather simplified, subjective models incorporating landmarks, routes, and spatial relationships. Research in environmental psychology suggests that factors like familiarity, distinctiveness of landmarks, and the clarity of a path's structure significantly influence the accuracy and efficiency of our wayfinding abilities. Understanding these psychological mechanisms is crucial for designing intuitive urban spaces and digital navigation tools."
+    },
+    {
+      "id": "pte-speaking-writing-009-q14",
+      "questionType": "essay",
+      "prompt": "Deep ocean exploration has significantly advanced our understanding of Earth's geology, biology, and climate systems. Discuss the importance of continued investment in this field, considering both its scientific merits and potential for future discoveries. Support your arguments with specific examples.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "debf56c2719e177035",
+      "modelAnswer": "Deep ocean exploration represents one of humanity's last great frontiers, offering unparalleled insights into the fundamental processes governing our planet. Continued investment in this field is not merely an academic pursuit but a critical endeavor with far-reaching scientific and societal implications. Scientifically, the deep sea holds keys to understanding plate tectonics, hydrothermal vent ecosystems, and the origins of life itself. The discovery of chemosynthetic life around vents, for example, revolutionized our understanding of energy sources independent of sunlight, suggesting possibilities for life in extreme environments beyond Earth.\n\nFurthermore, the deep ocean plays a crucial role in regulating global climate by absorbing vast amounts of heat and carbon dioxide. Studying these processes helps scientists model future climate scenarios more accurately. The potential for future discoveries is immense. We have explored less than 5% of the global ocean, meaning countless new species, unique geological formations, and potentially valuable biochemical compounds remain undiscovered. For instance, novel enzymes from deep-sea microbes could have applications in medicine or industrial processes. Continued investment facilitates the development of advanced robotic submersibles, improved sensor technologies, and international collaborations, all of which are essential for overcoming the extreme challenges of deep-sea research. Neglecting this vital area would mean foregoing invaluable knowledge about our planet's past, present, and future, hindering our ability to address global challenges effectively."
+    },
+    {
+      "id": "pte-speaking-writing-009-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Digital Preservation Challenges”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "a9a0643f302e26c85d",
+      "modelAnswer": "Digital archives face unique challenges compared to their physical counterparts. Ensuring long-term accessibility requires constant migration of data formats as technology evolves, a process known as digital curation. Authenticity and integrity of digital records must also be meticulously maintained to prevent alteration or loss. Furthermore, the sheer volume of born-digital information necessitates robust storage solutions and sophisticated metadata management to facilitate efficient retrieval and preservation for future generations.",
+      "readText": "Digital archives face unique challenges compared to their physical counterparts. Ensuring long-term accessibility requires constant migration of data formats as technology evolves, a process known as digital curation. Authenticity and integrity of digital records must also be meticulously maintained to prevent alteration or loss. Furthermore, the sheer volume of born-digital information necessitates robust storage solutions and sophisticated metadata management to facilitate efficient retrieval and preservation for future generations."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Sustainable Urban Planning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q16",
+      "modelAnswer": "Sustainable urban planning integrates green infrastructure to create resilient cities. This approach involves incorporating features like permeable pavements, rain gardens, and urban forests, which collectively manage stormwater, improve air quality, and mitigate urban heat island effects. Such strategies enhance biodiversity and provide recreational spaces, fostering healthier, more livable environments for residents. Prioritizing green infrastructure is crucial for adapting to climate change and promoting long-term ecological balance within metropolitan areas.",
+      "readText": "Sustainable urban planning integrates green infrastructure to create resilient cities. This approach involves incorporating features like permeable pavements, rain gardens, and urban forests, which collectively manage stormwater, improve air quality, and mitigate urban heat island effects. Such strategies enhance biodiversity and provide recreational spaces, fostering healthier, more livable environments for residents. Prioritizing green infrastructure is crucial for adapting to climate change and promoting long-term ecological balance within metropolitan areas."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Bilingualism and Cognition”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q17",
+      "modelAnswer": "Research increasingly demonstrates the cognitive benefits associated with bilingualism. Individuals who regularly switch between two languages often exhibit enhanced executive functions, including better problem-solving skills, improved attention control, and greater cognitive flexibility. These advantages are believed to stem from the constant mental exercise involved in managing two linguistic systems. Bilingualism can also delay the onset of age-related cognitive decline, highlighting its profound impact on brain health and mental agility throughout life.",
+      "readText": "Research increasingly demonstrates the cognitive benefits associated with bilingualism. Individuals who regularly switch between two languages often exhibit enhanced executive functions, including better problem-solving skills, improved attention control, and greater cognitive flexibility. These advantages are believed to stem from the constant mental exercise involved in managing two linguistic systems. Bilingualism can also delay the onset of age-related cognitive decline, highlighting its profound impact on brain health and mental agility throughout life."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Human Microbiome Importance”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q18",
+      "modelAnswer": "The human microbiome, a vast community of microorganisms inhabiting our bodies, plays a critical role in maintaining health. These microbes influence digestion, nutrient absorption, and immune system development. An imbalance in the microbiome, often termed dysbiosis, has been linked to various diseases, including inflammatory bowel disease, obesity, and even neurological disorders. Understanding and manipulating the microbiome offers promising avenues for novel therapeutic interventions and personalized medicine approaches to improve overall human well-being.",
+      "readText": "The human microbiome, a vast community of microorganisms inhabiting our bodies, plays a critical role in maintaining health. These microbes influence digestion, nutrient absorption, and immune system development. An imbalance in the microbiome, often termed dysbiosis, has been linked to various diseases, including inflammatory bowel disease, obesity, and even neurological disorders. Understanding and manipulating the microbiome offers promising avenues for novel therapeutic interventions and personalized medicine approaches to improve overall human well-being."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Digital literacy in education exactly as you hear it is crucial for student success.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Digital Literacy in Education”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q19",
+      "modelAnswer": "Digital literacy in education exactly as you hear it is crucial for student success.",
+      "audioScript": "Digital literacy in education exactly as you hear it is crucial for student success."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Antibiotic resistance and global health policy exactly as you hear it demand urgent attention.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Antibiotic Resistance Policy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q20",
+      "modelAnswer": "Antibiotic resistance and global health policy exactly as you hear it demand urgent attention.",
+      "audioScript": "Antibiotic resistance and global health policy exactly as you hear it demand urgent attention."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ocean acidification and marine biodiversity exactly as you hear it are severely threatened.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ocean Acidification Impacts”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q21",
+      "modelAnswer": "Ocean acidification and marine biodiversity exactly as you hear it are severely threatened.",
+      "audioScript": "Ocean acidification and marine biodiversity exactly as you hear it are severely threatened."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The neuroscience of creativity exactly as you hear it explores how the brain generates novel ideas.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Neuroscience of Creativity”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q22",
+      "modelAnswer": "The neuroscience of creativity exactly as you hear it explores how the brain generates novel ideas.",
+      "audioScript": "The neuroscience of creativity exactly as you hear it explores how the brain generates novel ideas."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Global water scarcity and conservation exactly as you hear it are pressing environmental concerns.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Water Scarcity and Conservation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q23",
+      "modelAnswer": "Global water scarcity and conservation exactly as you hear it are pressing environmental concerns.",
+      "audioScript": "Global water scarcity and conservation exactly as you hear it are pressing environmental concerns."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Genetic engineering and ethical considerations exactly as you hear it provoke significant debate.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Genetic Engineering Ethics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q24",
+      "modelAnswer": "Genetic engineering and ethical considerations exactly as you hear it provoke significant debate.",
+      "audioScript": "Genetic engineering and ethical considerations exactly as you hear it provoke significant debate."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Quantum computing breakthroughs exactly as you hear it promise to revolutionize technology.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Quantum Computing Advances”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q25",
+      "modelAnswer": "Quantum computing breakthroughs exactly as you hear it promise to revolutionize technology.",
+      "audioScript": "Quantum computing breakthroughs exactly as you hear it promise to revolutionize technology."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Childhood nutrition and cognitive development exactly as you hear it are inextricably linked.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Childhood Nutrition and Cognition”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q26",
+      "modelAnswer": "Childhood nutrition and cognitive development exactly as you hear it are inextricably linked.",
+      "audioScript": "Childhood nutrition and cognitive development exactly as you hear it are inextricably linked."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Water Cycle: Evapotranspiration Contributions\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q27",
+      "modelAnswer": "This line chart illustrates the global water cycle focusing on evapotranspiration contributions. The y-axis represents volume in cubic kilometers per year. The most significant contributor is Ocean Evaporation, accounting for a massive 425,000 km³ annually. Land Evaporation contributes 71,000 km³, while Transpiration adds 49,000 km³ to the atmosphere. The chart clearly shows that the total evapotranspiration reaches 545,000 km³ per year. Overall, ocean evaporation is by far the largest component, dwarfing both land evaporation and transpiration.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Water Cycle: Evapotranspiration Contributions",
+        "yLabel": "Volume (km³ per year)",
+        "xAxis": [
+          "Ocean Evaporation",
+          "Land Evaporation",
+          "Transpiration",
+          "Total Evapotranspiration"
+        ],
+        "series": [
+          {
+            "label": "Average Annual Volume",
+            "values": [
+              425000,
+              71000,
+              49000,
+              545000
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Literacy Rates by Region (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q28",
+      "modelAnswer": "The table presents global literacy rates by region for 2023, distinguishing between adult and youth literacy. North America and Europe show the highest rates, with adult literacy at 99.0% and 98.5% respectively, and youth rates even higher. Conversely, Sub-Saharan Africa records the lowest figures, with an adult literacy rate of only 70.0% and youth at 82.0%. South Asia also has relatively low rates, 74.0% for adults. A clear trend across all regions is that youth literacy rates are consistently higher than adult literacy rates, indicating ongoing improvements in educational access globally.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Literacy Rates by Region (2023)",
+        "headers": [
+          "Region",
+          "Adult Literacy Rate (%)",
+          "Youth Literacy Rate (15-24) (%)"
+        ],
+        "rows": [
+          [
+            "North America",
+            "99.0",
+            "99.5"
+          ],
+          [
+            "Europe",
+            "98.5",
+            "99.0"
+          ],
+          [
+            "East Asia & Pacific",
+            "96.0",
+            "98.0"
+          ],
+          [
+            "Latin America & Caribbean",
+            "94.0",
+            "97.0"
+          ],
+          [
+            "Sub-Saharan Africa",
+            "70.0",
+            "82.0"
+          ],
+          [
+            "South Asia",
+            "74.0",
+            "88.0"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Smartphone Adoption Rate (2014-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q29",
+      "modelAnswer": "The line graph illustrates the global smartphone adoption rate from 2014 to 2023. It clearly shows a consistent upward trend over the decade. Starting at 35% in 2014, the adoption rate steadily increased, reaching 50% by 2016 and surpassing 70% by 2019. The highest adoption rate was recorded in 2023 at 86%, indicating near-saturation of the market. This significant growth highlights the increasing reliance on smartphones for communication and various daily activities, reflecting a major technological shift globally.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Smartphone Adoption Rate (2014-2023)",
+        "yLabel": "Percentage of Population (%)",
+        "xAxis": [
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Adoption Rate",
+            "values": [
+              35,
+              42,
+              50,
+              58,
+              65,
+              71,
+              75,
+              79,
+              83,
+              86
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q30",
+      "modelAnswer": "This bar chart illustrates the annual energy consumption per capita in gigajoules for five countries in 2022. Canada shows the highest consumption at 310 GJ, closely followed by the USA at 280 GJ. In stark contrast, India has the lowest consumption, registering only 30 GJ per person. Germany consumes 160 GJ, and China uses 100 GJ. The data clearly indicates significant disparities in energy usage across these nations, with North American countries consuming substantially more energy per capita than their Asian counterparts.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Gigajoules (GJ)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "China",
+          "India"
+        ],
+        "series": [
+          {
+            "label": "Energy Consumption",
+            "values": [
+              280,
+              310,
+              160,
+              100,
+              30
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q31",
+      "modelAnswer": "The lecture emphasized the critical role of non-verbal cues in communication, often surpassing spoken words. It highlighted how elements like body language, facial expressions, and vocal tone transmit significant information, frequently at a subconscious level. These cues profoundly impact how messages are understood and interpreted. Therefore, developing proficiency in non-verbal communication is presented as essential for successful interpersonal interactions in all aspects of life.",
+      "audioScript": "When we talk about communication, we often focus on the words we use. However, non-verbal cues play an equally, if not more, significant role. Things like body language, facial expressions, and even the tone of our voice convey a wealth of information. Think about how a simple nod can signal understanding, or how crossed arms might suggest defensiveness. These cues are often processed subconsciously, yet they heavily influence how our messages are received and interpreted. Mastering non-verbal communication is therefore essential for effective interpersonal interactions, both personally and professionally.",
+      "keyPoints": [
+        "Non-verbal cues are crucial in communication",
+        "Body language, facial expressions, tone convey information",
+        "Cues processed subconsciously, influencing message interpretation",
+        "Mastering non-verbal communication is vital for effective interaction"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q32",
+      "modelAnswer": "Communication",
+      "audioScript": "What is the primary way humans convey thoughts and feelings to one another?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Non-verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal vs. Non-Verbal”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q33",
+      "modelAnswer": "Non-verbal",
+      "audioScript": "Besides spoken words, what other form of communication involves gestures and facial expressions?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Both",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Purpose”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-009-q34",
+      "modelAnswer": "Both",
+      "audioScript": "What is the main goal of communication: to send or receive information?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-009-q01": "",
+    "pte-speaking-writing-009-q02": "",
+    "pte-speaking-writing-009-q03": "",
+    "pte-speaking-writing-009-q04": "",
+    "pte-speaking-writing-009-q05": "sample answer",
+    "pte-speaking-writing-009-q06": "",
+    "pte-speaking-writing-009-q07": "",
+    "pte-speaking-writing-009-q08": "",
+    "pte-speaking-writing-009-q09": "",
+    "pte-speaking-writing-009-q10": "",
+    "pte-speaking-writing-009-q11": "",
+    "pte-speaking-writing-009-q12": "sample answer",
+    "pte-speaking-writing-009-q13": "",
+    "pte-speaking-writing-009-q14": "",
+    "pte-speaking-writing-009-q15": ""
+  },
+  "fingerprints": [
+    "94f2503ddc6cf7063c",
+    "d3c23e60e802adddf2",
+    "7f73860893c9b30a0e",
+    "8746c70f2d9ee28296",
+    "ce946e5caf38195ff2",
+    "d930a721758d7f9372",
+    "f1ed2108975aae3ab0",
+    "1c724b43807cd436fa",
+    "662e59408e3cba3d50",
+    "3de4dd7e38937242a9",
+    "c1e9d3dd13398f68f1",
+    "0c12743dfe9458bd8e",
+    "84e42b5248f04e3a3e",
+    "debf56c2719e177035",
+    "a9a0643f302e26c85d"
+  ]
+}

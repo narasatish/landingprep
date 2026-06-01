@@ -1,0 +1,912 @@
+{
+  "id": "ielts-listening-004",
+  "exam": "ielts",
+  "section": "listening",
+  "title": "IELTS Listening Practice Test 4",
+  "durationSeconds": 2400,
+  "questionCount": 40,
+  "listeningScripts": [
+    {
+      "id": "ielts-listening-004-p1",
+      "part": 1,
+      "title": "Museum Tour Booking",
+      "text": "Museum: National History Museum, good afternoon.\nVisitor: Hello, I'd like to book a guided tour for a school group.\nMuseum: Of course. What date were you thinking?\nVisitor: The twenty-second of April, a Thursday.\nMuseum: And how many students?\nVisitor: Twenty-eight students, plus three adults.\nMuseum: Our school rate is four pounds fifty per student and adults are free. The tour lasts ninety minutes and covers ancient civilisations, natural history, and the special Victorian exhibition.\nVisitor: Wonderful. Should we arrive at the main entrance?\nMuseum: Yes — the North Gate on Pemberton Road. Please arrive fifteen minutes early. Bring a copy of your booking reference. May I take the school's name?\nVisitor: Greenfield Primary School.\nMuseum: And the lead teacher's name?\nVisitor: Mr. Stephen Adeyemi. A-D-E-Y-E-M-I.\nMuseum: Lovely. I'll email the confirmation to the school address. Will you need lunch facilities?\nVisitor: Yes please — we'll need the picnic area reserved.\nMuseum: Noted. I'll add that to the booking.",
+      "formLayout": {
+        "title": "National History Museum — Group Visit Booking",
+        "example": {
+          "label": "Visit type",
+          "content": "guided tour / self-guided"
+        },
+        "rows": [
+          {
+            "type": "blank",
+            "num": 1,
+            "label": "Visit date",
+            "prefix": "",
+            "suffix": " April",
+            "answer": "22nd / 22"
+          },
+          {
+            "type": "blank",
+            "num": 2,
+            "label": "Day of visit",
+            "prefix": "",
+            "suffix": "",
+            "answer": "Thursday"
+          },
+          {
+            "type": "blank",
+            "num": 3,
+            "label": "Number of students",
+            "prefix": "",
+            "suffix": "",
+            "answer": "28"
+          },
+          {
+            "type": "prefilled",
+            "label": "Number of adult supervisors",
+            "content": "3"
+          },
+          {
+            "type": "blank",
+            "num": 4,
+            "label": "Cost per student",
+            "prefix": "£",
+            "suffix": "",
+            "answer": "4.50"
+          },
+          {
+            "type": "blank",
+            "num": 5,
+            "label": "Tour duration",
+            "prefix": "",
+            "suffix": " minutes",
+            "answer": "90"
+          },
+          {
+            "type": "blank",
+            "num": 6,
+            "label": "Arrival gate",
+            "prefix": "",
+            "suffix": " Gate",
+            "answer": "North"
+          },
+          {
+            "type": "blank",
+            "num": 7,
+            "label": "Required to bring",
+            "prefix": "booking ",
+            "suffix": "",
+            "answer": "reference"
+          },
+          {
+            "type": "blank",
+            "num": 8,
+            "label": "School name",
+            "prefix": "",
+            "suffix": " Primary School",
+            "answer": "Greenfield"
+          },
+          {
+            "type": "blank",
+            "num": 9,
+            "labelBlank": true,
+            "labelSuffix": " teacher surname",
+            "rightContent": "Mr. Adeyemi",
+            "answer": "Lead"
+          },
+          {
+            "type": "blank",
+            "num": 10,
+            "label": "Lunch facility requested",
+            "prefix": "",
+            "suffix": " area",
+            "answer": "picnic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-listening-004-p2",
+      "part": 2,
+      "title": "Tour of International Airport Terminal 2",
+      "text": "Guide: Good morning everyone and welcome to the orientation tour of Terminal 2 at International Airport. My name is Sandra and I'll be your guide for the next thirty minutes. Whether you're a new member of airport staff, a travel agent, or simply a visitor who'd like to know the terminal better, I hope this tour gives you a really thorough understanding of the layout and services available here.\n\nSo, let's begin at the very beginning — the check-in zone. This is labelled Zone A on your map. Zone A is located on the ground floor and contains sixty self-service check-in kiosks as well as twenty-four staffed desks. The desks are open from four in the morning until eleven at night, seven days a week. Adjacent to Zone A you'll see the bag-drop counters which are exclusively for passengers who have already checked in online.\n\nFrom the check-in zone, passengers proceed to Zone B — the security screening area. This is the busiest part of the terminal during peak hours. On average, security processing takes under fifteen minutes, though we recommend passengers allow thirty minutes during the morning rush, typically between six and nine am. Zone B has eight security lanes, two of which are designated as fast-track lanes for premium passengers.\n\nOnce through security, passengers enter Zone C — the departure lounge. This is a large open area with seating for over three hundred passengers. You'll find a variety of restaurants and cafés here, ranging from quick snack bars to full sit-down restaurants. There is also a children's play zone in the eastern corner.\n\nDirectly off the departure lounge, to your right as you face the gates, is Zone D — the duty-free shopping area. This covers approximately two thousand square metres and features over forty retail units selling perfume, cosmetics, electronics, confectionery, and luxury goods. The duty-free zone opens as soon as the terminal opens and closes thirty minutes before the last departure of the day.\n\nPast the duty-free zone, passengers proceed into Zone E — the gate area, specifically gates G1 through to G15. Gate G7 is worth noting as it is the dedicated gate for wide-body aircraft, meaning long-haul flights to destinations such as North America, the Gulf, and Southeast Asia primarily depart from here. Each gate has its own seating area and boarding information screens.\n\nNow, between the business lounge and the medical centre, you will find Zone F — the prayer room and reflection space. This quiet room is open to passengers of all faiths and none, twenty-four hours a day. It is non-denominational and provides a calm environment away from the bustle of the terminal. Prayer mats and directional guidance are available inside.\n\nSpeaking of which, Zone G is the business lounge — situated on the mezzanine level above the departure lounge. Access is restricted to premium passengers and holders of certain frequent flyer cards. The lounge offers complimentary food and beverages, shower facilities, and a quiet working area with private pods. Guests may bring a maximum of two bags into the lounge.\n\nZone H is the medical centre, located near the eastern end of the terminal on the ground floor. It is staffed by qualified paramedics around the clock. The centre handles everything from minor first-aid needs to more serious medical situations. An automated external defibrillator is also located directly outside the medical centre entrance.\n\nZone I is the information desk, positioned centrally within the departure lounge for easy access. Staff here can assist with lost property, flight information, terminal navigation, and accessibility requests. This is also where you can collect pre-booked wheelchair assistance.\n\nFinally, Zone J — baggage reclaim — is on the ground floor of the arrivals hall, accessed via a separate set of lifts and escalators from the departure level. There are twelve baggage carousels and the average wait time from landing to baggage collection is approximately twenty-two minutes.\n\nAre there any questions before we begin the walk-through? No? Excellent — let's start at Zone A."
+    },
+    {
+      "id": "ielts-listening-004-p3",
+      "part": 3,
+      "title": "Seminar on Climate Change Adaptation in Agriculture",
+      "text": "Tutor: Today we're looking at how farmers are adapting to climate change. Sarah, you've been researching this — what are the main strategies?\nSarah: There are basically four categories: changing crop varieties, adjusting planting calendars, improving irrigation efficiency, and diversifying into non-crop income streams like agritourism.\nMike: From what I read, the shift to drought-resistant varieties is the most widely adopted strategy globally, though it depends heavily on seed availability and cost.\nTutor: What barriers prevent farmers from adapting?\nSarah: In developing countries, the main barriers are access to finance and lack of reliable weather forecasting at the local level. Farmers need hyper-local data, not national averages.\nMike: There's also a knowledge gap. Many smallholders rely on generational knowledge that may no longer match current climate conditions. Extension services have a critical role.\nTutor: How effective have government subsidy programmes been?\nSarah: Mixed results. Countries that tied subsidies to specific adaptation behaviours — like water-efficient irrigation — saw much better outcomes than those that gave blanket payments.\nMike: India's PM-KISAN scheme is often cited as an example of blanket support that failed to drive specific adaptive behaviours.\nTutor: What does the evidence suggest about the future food supply?\nSarah: If current emission trajectories continue, yield losses for staple crops like wheat and maize could reach thirty percent by 2080 in tropical regions.\nTutor: And what would reverse that?\nMike: A combination of accelerated breeding programmes, agroforestry, and precision agriculture technologies — but these require significant upfront investment."
+    },
+    {
+      "id": "ielts-listening-004-p4",
+      "part": 4,
+      "title": "Lecture: The History of Antibiotics",
+      "text": "Today I want to talk about the history of antibiotics — arguably one of the most important developments in twentieth-century medicine.\n\nThe story begins in 1928 when Alexander Fleming noticed that a mould called Penicillium notatum was inhibiting the growth of bacteria on one of his culture plates. He published his findings but was initially unable to isolate the active compound in large enough quantities to be clinically useful.\n\nIt wasn't until 1940 that Howard Florey and Ernst Chain at Oxford managed to purify penicillin and demonstrate its effectiveness in mice. The following year, in 1941, they treated the first human patient — a police officer with a severe infection — with remarkable results, though limited supplies meant the patient eventually relapsed.\n\nThe real breakthrough came during the Second World War, when mass production was achieved through collaboration between British and American pharmaceutical companies. By 1944, enough penicillin had been produced to treat all wounded Allied soldiers. This industrial-scale production required entirely new fermentation techniques.\n\nFollowing the war, the golden era of antibiotic discovery began, lasting roughly from 1950 to 1970. During this period, major antibiotic classes including tetracyclines, erythromycin, and vancomycin were discovered, largely from soil bacteria. Researchers estimated that soil contained thousands of antibiotic-producing organisms waiting to be identified.\n\nHowever, the overuse of antibiotics in both human medicine and agriculture has driven the evolution of resistant bacteria at an alarming rate. The World Health Organization now lists antimicrobial resistance as one of the greatest global health threats. New antibiotic approvals have declined sharply since the 1980s as pharmaceutical companies shifted resources toward more profitable chronic disease treatments.\n\nCurrent strategies to address resistance include antibiotic stewardship programmes, rapid diagnostic testing to avoid prescribing antibiotics for viral infections, and investment in novel antimicrobial compounds including bacteriophage therapy and antimicrobial peptides."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-listening-004-q1",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 1,
+      "label": "Visit date",
+      "prefix": "",
+      "suffix": " April",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "22nd / 22",
+      "explanation": "The answer \"22nd / 22\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the check-in time?",
+      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-004-q2",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 2,
+      "label": "Day of visit",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Thursday",
+      "explanation": "The answer \"Thursday\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
+      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-004-q3",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 3,
+      "label": "Number of students",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "28",
+      "explanation": "The answer \"28\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the total cost?",
+      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-004-q4",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 4,
+      "label": "Cost per student",
+      "prefix": "£",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "4.50",
+      "explanation": "The answer \"4.50\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
+      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-004-q5",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 5,
+      "label": "Tour duration",
+      "prefix": "",
+      "suffix": " minutes",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "90",
+      "explanation": "The answer \"90\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the breakfast option?",
+      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-004-q6",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 6,
+      "label": "Arrival gate",
+      "prefix": "",
+      "suffix": " Gate",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "North",
+      "explanation": "The answer \"North\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
+      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-004-q7",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 7,
+      "label": "Required to bring",
+      "prefix": "booking ",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "reference",
+      "explanation": "The answer \"reference\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the room type?",
+      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-004-q8",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 8,
+      "label": "School name",
+      "prefix": "",
+      "suffix": " Primary School",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Greenfield",
+      "explanation": "The answer \"Greenfield\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
+      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-004-q9",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 9,
+      "label": "",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": true,
+      "labelSuffix": " teacher surname",
+      "rightContent": "Mr. Adeyemi",
+      "answer": "Lead",
+      "explanation": "The answer \"Lead\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the cancellation policy?",
+      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-004-q10",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 10,
+      "label": "Lunch facility requested",
+      "prefix": "",
+      "suffix": " area",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "picnic",
+      "explanation": "The answer \"picnic\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
+      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-004-q11",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 11,
+      "prompt": "What is the maximum number of bags allowed into the business lounge?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The guide states 'Guests may bring a maximum of two bags into the lounge'"
+    },
+    {
+      "id": "ielts-listening-004-q12",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 12,
+      "prompt": "How long does security processing typically take?",
+      "options": [
+        "under 5 minutes",
+        "under 10 minutes",
+        "under 15 minutes",
+        "under 30 minutes"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The guide says 'security processing takes under fifteen minutes'"
+    },
+    {
+      "id": "ielts-listening-004-q13",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 13,
+      "prompt": "What is located next to the duty-free shopping area?",
+      "options": [
+        "the check-in zone",
+        "the departure lounge",
+        "the medical centre",
+        "the prayer room"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The duty-free zone is 'directly off the departure lounge'"
+    },
+    {
+      "id": "ielts-listening-004-q14",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 14,
+      "prompt": "Which gate is specifically mentioned as serving wide-body aircraft?",
+      "options": [
+        "G1",
+        "G7",
+        "G10",
+        "G15"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The guide says 'Gate G7 is the dedicated gate for wide-body aircraft'"
+    },
+    {
+      "id": "ielts-listening-004-q15",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 15,
+      "prompt": "Where is the prayer room located?",
+      "options": [
+        "between the café and the departure lounge",
+        "between the business lounge and medical centre",
+        "next to the information desk",
+        "above the check-in zone"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The guide says the prayer room is 'between the business lounge and the medical centre'"
+    },
+    {
+      "id": "ielts-listening-004-q16",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "International Airport Terminal 2 — Map",
+      "mapDescription": "Label the zones and areas A–J on the terminal map.",
+      "mapKey": {
+        "A": "Check-in zone",
+        "B": "Security screening",
+        "C": "Departure lounge",
+        "D": "Duty-free shopping",
+        "E": "Gate area G7",
+        "F": "Prayer room",
+        "G": "Business lounge",
+        "H": "Medical centre",
+        "I": "Information desk",
+        "J": "Baggage reclaim"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 16,
+      "prompt": "Ground floor check-in zone with kiosks and staffed desks",
+      "correctAnswer": "A",
+      "explanation": "The correct letter is A (Check-in zone)."
+    },
+    {
+      "id": "ielts-listening-004-q17",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "International Airport Terminal 2 — Map",
+      "mapDescription": "Label the zones and areas A–J on the terminal map.",
+      "mapKey": {
+        "A": "Check-in zone",
+        "B": "Security screening",
+        "C": "Departure lounge",
+        "D": "Duty-free shopping",
+        "E": "Gate area G7",
+        "F": "Prayer room",
+        "G": "Business lounge",
+        "H": "Medical centre",
+        "I": "Information desk",
+        "J": "Baggage reclaim"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 17,
+      "prompt": "Area with eight security lanes including fast-track lanes",
+      "correctAnswer": "B",
+      "explanation": "The correct letter is B (Security screening)."
+    },
+    {
+      "id": "ielts-listening-004-q18",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "International Airport Terminal 2 — Map",
+      "mapDescription": "Label the zones and areas A–J on the terminal map.",
+      "mapKey": {
+        "A": "Check-in zone",
+        "B": "Security screening",
+        "C": "Departure lounge",
+        "D": "Duty-free shopping",
+        "E": "Gate area G7",
+        "F": "Prayer room",
+        "G": "Business lounge",
+        "H": "Medical centre",
+        "I": "Information desk",
+        "J": "Baggage reclaim"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 18,
+      "prompt": "Large open seating area with restaurants after security",
+      "correctAnswer": "C",
+      "explanation": "The correct letter is C (Departure lounge)."
+    },
+    {
+      "id": "ielts-listening-004-q19",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "International Airport Terminal 2 — Map",
+      "mapDescription": "Label the zones and areas A–J on the terminal map.",
+      "mapKey": {
+        "A": "Check-in zone",
+        "B": "Security screening",
+        "C": "Departure lounge",
+        "D": "Duty-free shopping",
+        "E": "Gate area G7",
+        "F": "Prayer room",
+        "G": "Business lounge",
+        "H": "Medical centre",
+        "I": "Information desk",
+        "J": "Baggage reclaim"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 19,
+      "prompt": "Over forty retail units selling perfume, electronics and luxury goods",
+      "correctAnswer": "D",
+      "explanation": "The correct letter is D (Duty-free shopping)."
+    },
+    {
+      "id": "ielts-listening-004-q20",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "International Airport Terminal 2 — Map",
+      "mapDescription": "Label the zones and areas A–J on the terminal map.",
+      "mapKey": {
+        "A": "Check-in zone",
+        "B": "Security screening",
+        "C": "Departure lounge",
+        "D": "Duty-free shopping",
+        "E": "Gate area G7",
+        "F": "Prayer room",
+        "G": "Business lounge",
+        "H": "Medical centre",
+        "I": "Information desk",
+        "J": "Baggage reclaim"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 20,
+      "prompt": "Gates G1 to G15 including dedicated wide-body aircraft gate",
+      "correctAnswer": "E",
+      "explanation": "The correct letter is E (Gate area G7)."
+    },
+    {
+      "id": "ielts-listening-004-q21",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 21,
+      "prompt": "Which adaptation strategy is described as most widely adopted globally?",
+      "options": [
+        "adjusting planting calendars",
+        "agritourism diversification",
+        "drought-resistant crop varieties",
+        "improved irrigation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
+    },
+    {
+      "id": "ielts-listening-004-q22",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 22,
+      "prompt": "What type of weather data do farmers most need?",
+      "options": [
+        "national averages",
+        "seasonal forecasts",
+        "hyper-local data",
+        "satellite imagery"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sarah says 'Farmers need hyper-local data, not national averages'"
+    },
+    {
+      "id": "ielts-listening-004-q23",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 23,
+      "prompt": "Which country's scheme is cited as an example of ineffective blanket support?",
+      "options": [
+        "Bangladesh",
+        "Kenya",
+        "China",
+        "India"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mike cites 'India's PM-KISAN scheme'"
+    },
+    {
+      "id": "ielts-listening-004-q24",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 24,
+      "prompt": "By how much could tropical crop yields fall by 2080?",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "40%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
+    },
+    {
+      "id": "ielts-listening-004-q25",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 25,
+      "prompt": "What does Mike identify as a requirement for advanced adaptation technologies?",
+      "options": [
+        "international cooperation",
+        "significant upfront investment",
+        "government mandates",
+        "reduced crop prices"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mike says these 'require significant upfront investment'"
+    },
+    {
+      "id": "ielts-listening-004-q26",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 26,
+      "prompt": "introducing new equipment in the laboratory",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-004-q27",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 27,
+      "prompt": "keeping written records of experiments",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-004-q28",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 28,
+      "prompt": "sharing results with other research groups",
+      "correctAnswer": "B",
+      "explanation": "The speaker's attitude is B. She is undecided."
+    },
+    {
+      "id": "ielts-listening-004-q29",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 29,
+      "prompt": "the importance of the project deadline",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-004-q30",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 30,
+      "prompt": "the proposal to extend the study",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-004-q31",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 31,
+      "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
+      "correctAnswer": "mould",
+      "explanation": "The correct answer is: \"mould\".",
+      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
+      "audioContext": "A lecturer gives feedback on a history essay to a group of students.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-004-q32",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 32,
+      "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
+      "correctAnswer": "isolate / purify",
+      "explanation": "The correct answer is: \"isolate / purify\".",
+      "prompt": "The speaker describes the current research of the topic.",
+      "audioContext": "A lecturer gives feedback on a history essay to a group of students.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-004-q33",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 33,
+      "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
+      "correctAnswer": "Oxford",
+      "explanation": "The correct answer is: \"Oxford\".",
+      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
+      "audioContext": "A lecturer gives feedback on a history essay to a group of students.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-004-q34",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 34,
+      "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
+      "correctAnswer": "Police officer",
+      "explanation": "The correct answer is: \"Police officer\".",
+      "prompt": "The speaker describes the key challenge of the topic.",
+      "audioContext": "A lecturer gives feedback on a history essay to a group of students.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-004-q35",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 35,
+      "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
+      "correctAnswer": "fermentation",
+      "explanation": "The correct answer is: \"fermentation\".",
+      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
+      "audioContext": "A lecturer gives feedback on a history essay to a group of students.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-004-q36",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 36,
+      "prompt": "According to the lecture, the main reason antibiotic discovery declined after the 1980s was that",
+      "options": [
+        "A  resistant bacteria evolved too quickly",
+        "B  pharmaceutical companies moved to more profitable areas",
+        "C  all known antibiotic compounds had already been tested",
+        "D  government funding was withdrawn"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer says companies 'shifted resources toward more profitable chronic disease treatments'"
+    },
+    {
+      "id": "ielts-listening-004-q37",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 37,
+      "prompt": "The golden era of antibiotic discovery lasted approximately",
+      "options": [
+        "A  10 years",
+        "B  20 years",
+        "C  30 years",
+        "D  40 years"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The golden era ran 'from 1950 to 1970' — roughly 20 years"
+    },
+    {
+      "id": "ielts-listening-004-q38",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 38,
+      "prompt": "According to the lecturer, most antibiotics discovered in the golden era came from",
+      "options": [
+        "A  synthetic chemicals",
+        "B  marine organisms",
+        "C  soil bacteria",
+        "D  hospital environments"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer states they were discovered 'largely from soil bacteria'"
+    },
+    {
+      "id": "ielts-listening-004-q39",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 39,
+      "prompt": "The World Health Organization describes antimicrobial resistance as",
+      "options": [
+        "A  a manageable risk with current technology",
+        "B  one of the greatest global health threats",
+        "C  primarily a problem in developing countries",
+        "D  less serious than other infectious diseases"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer quotes WHO listing it as 'one of the greatest global health threats'"
+    },
+    {
+      "id": "ielts-listening-004-q40",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 40,
+      "prompt": "Which novel treatment approach is specifically mentioned as an alternative to conventional antibiotics?",
+      "options": [
+        "A  gene therapy",
+        "B  vaccination programmes",
+        "C  bacteriophage therapy",
+        "D  surgical interventions"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer mentions 'bacteriophage therapy' as a novel antimicrobial approach"
+    }
+  ],
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Part 1: Museum Audio Guide",
+      "audioDescription": "A recorded audio guide for visitors at the Natural History Museum.",
+      "context": "Guide describes the layout, exhibits, and special events at the museum.",
+      "questionRange": [
+        1,
+        10
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Part 2: Community Sports Centre",
+      "audioDescription": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "context": "Manager explains membership options, class timetables, and booking procedures.",
+      "questionRange": [
+        11,
+        20
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title": "Part 3: Research Project Discussion",
+      "audioDescription": "Two students discuss their environmental science research project with their tutor.",
+      "context": "Students review methodology, data collection, and presentation structure.",
+      "questionRange": [
+        21,
+        30
+      ]
+    },
+    {
+      "partNumber": 4,
+      "title": "Part 4: Assignment Feedback Session",
+      "audioDescription": "A lecturer gives feedback on a history essay to a group of students.",
+      "context": "Discussion of argument structure, evidence quality, and referencing standards.",
+      "questionRange": [
+        31,
+        40
+      ]
+    }
+  ]
+}

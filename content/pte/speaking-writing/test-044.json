@@ -1,0 +1,729 @@
+{
+  "id": "pte-speaking-writing-044",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 44",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-044-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Community Emergency Response Teams”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "emergency preparedness",
+      "modelAnswer": "Effective emergency preparedness requires a multi-faceted approach, encompassing individual, household, and community-level actions. Establishing clear communication protocols is paramount, ensuring that critical information can be disseminated rapidly during a crisis. Training community emergency response teams (CERT) empowers citizens with essential skills, enabling them to assist first responders and manage immediate needs. Regular drills and exercises are crucial for testing plans and identifying areas for improvement, fostering resilience and readiness.",
+      "readText": "Effective emergency preparedness requires a multi-faceted approach, encompassing individual, household, and community-level actions. Establishing clear communication protocols is paramount, ensuring that critical information can be disseminated rapidly during a crisis. Training community emergency response teams (CERT) empowers citizens with essential skills, enabling them to assist first responders and manage immediate needs. Regular drills and exercises are crucial for testing plans and identifying areas for improvement, fostering resilience and readiness."
+    },
+    {
+      "id": "pte-speaking-writing-044-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Emergency Kit Essentials”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Always keep a stocked emergency kit with food, water, and essential supplies.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "emergency preparedness",
+      "modelAnswer": "Always keep a stocked emergency kit with food, water, and essential supplies.",
+      "audioScript": "Always keep a stocked emergency kit with food, water, and essential supplies."
+    },
+    {
+      "id": "pte-speaking-writing-044-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Household Emergency Kit Components (Percentage of Households with Item)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "emergency preparedness",
+      "modelAnswer": "This bar chart illustrates the percentage of households possessing various emergency kit components. The most commonly owned items are 'Flashlight & batteries' at 95% and 'First-aid kit' at 92%, indicating high preparedness in these areas. 'Water (3-day supply)' and 'Non-perishable food (3-day)' are also well-represented at 85% and 78% respectively. Conversely, 'Whistle' is the least common, with only 45% of households owning one, significantly lower than the 60% for 'Manual can opener'. This suggests a potential gap in awareness for certain critical survival tools.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Household Emergency Kit Components (Percentage of Households with Item)",
+        "yLabel": "Percentage of Households (%)",
+        "xAxis": [
+          "Water (3-day supply)",
+          "Non-perishable food (3-day)",
+          "First-aid kit",
+          "Flashlight & batteries",
+          "Whistle",
+          "Manual can opener"
+        ],
+        "series": [
+          {
+            "label": "Households",
+            "values": [
+              85,
+              78,
+              92,
+              95,
+              45,
+              60
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-044-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Household Disaster Preparedness”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "emergency preparedness",
+      "modelAnswer": "The lecture discussed the vital aspects of preparing for natural disasters at both household and community levels. It highlighted the need for families to develop an emergency plan, including meeting points and contact information, and to assemble a comprehensive disaster kit. On a community scale, establishing early warning systems, clear evacuation routes, and encouraging volunteerism are crucial. The speaker stressed that regular education and drills are fundamental to enhancing overall preparedness and ensuring effective responses during emergencies.",
+      "audioScript": "Today's lecture focuses on how households and communities can effectively prepare for natural disasters. It emphasizes the importance of creating a family emergency plan, which includes designated meeting points and out-of-state contacts. Stocking a disaster kit with non-perishable food, water, first-aid supplies, and important documents is critical. Furthermore, communities should establish early warning systems and evacuation routes, while also encouraging volunteer participation in local emergency services. Education and drills are key to ensuring everyone knows their role.",
+      "keyPoints": [
+        "Family emergency plan and meeting points",
+        "Disaster kit with essentials",
+        "Community warning systems and evacuation routes",
+        "Volunteer participation and drills"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-044-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Emergency Broadcast System”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Emergency Broadcast System",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "emergency preparedness",
+      "modelAnswer": "Emergency Broadcast System",
+      "audioScript": "What system alerts the public to severe weather or other emergencies?"
+    },
+    {
+      "id": "pte-speaking-writing-044-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Psychological Impact of Disasters”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "emergency preparedness",
+      "wordTarget": 75,
+      "modelAnswer": "Natural disasters cause significant psychological trauma beyond physical harm, leading to long-term mental health issues, making integrated mental health support services crucial for community recovery and resilience.",
+      "readText": "Beyond immediate physical damage, natural disasters often inflict profound psychological trauma on affected populations. The disruption of daily life, loss of homes, and potential loss of loved ones can lead to long-term mental health challenges such as PTSD, anxiety, and depression. Effective emergency preparedness plans must therefore integrate robust mental health support services, including counseling and community-based psychological first aid. Addressing these invisible wounds is as crucial as rebuilding infrastructure to foster true community recovery and resilience in the aftermath of a catastrophe."
+    },
+    {
+      "id": "pte-speaking-writing-044-q07",
+      "questionType": "write_essay",
+      "prompt": "Some argue that individual responsibility is paramount in emergency preparedness, while others believe community-wide initiatives are more effective. Discuss both viewpoints and state which approach you believe is more crucial for ensuring public safety during disasters.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "emergency preparedness",
+      "wordTarget": 200,
+      "modelAnswer": "Emergency preparedness is a critical aspect of modern society, with ongoing debate about whether individual or community-based efforts hold greater importance. Proponents of individual responsibility emphasize the necessity for each person to maintain personal emergency kits, develop family evacuation plans, and acquire basic first aid skills. They argue that self-reliance reduces the burden on public services during crises and empowers individuals to protect themselves and their immediate families. This perspective highlights the immediate and direct control individuals have over their own safety and resources, suggesting that a prepared populace is inherently more resilient.\n\nConversely, advocates for community-wide initiatives contend that collective action is indispensable for effective disaster response and recovery. They point to the need for robust public infrastructure, coordinated emergency services, widespread early warning systems, and community-led mutual aid networks. In their view, large-scale emergencies often overwhelm individual capacities, making collective planning, resource pooling, and organized relief efforts essential. A well-coordinated community can provide support for vulnerable populations, manage critical resources, and facilitate a faster, more equitable recovery.\n\nWhile individual preparedness forms a vital foundation, I believe that community-wide initiatives are ultimately more crucial. Disasters frequently present challenges that no single individual can overcome alone, such as widespread power outages, damaged infrastructure, or mass evacuations. A strong community framework ensures that resources are allocated efficiently, information is disseminated effectively, and support systems are in place for everyone, especially those who cannot prepare adequately on their own. Individual efforts are strengthened and amplified when integrated into a comprehensive community strategy, creating a more robust and resilient society capable of facing diverse emergencies."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ecosystem Services and Biodiversity”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q08",
+      "modelAnswer": "Biodiversity loss poses a significant threat to global ecosystem services, which are the fundamental life-support systems provided by nature. These services include pollination of crops, purification of water, regulation of climate, and decomposition of waste. As species decline, the intricate web of interactions within ecosystems weakens, potentially leading to cascading failures. Protecting biodiversity is therefore not merely an environmental concern, but a critical investment in human well-being and sustainable development for future generations.",
+      "readText": "Biodiversity loss poses a significant threat to global ecosystem services, which are the fundamental life-support systems provided by nature. These services include pollination of crops, purification of water, regulation of climate, and decomposition of waste. As species decline, the intricate web of interactions within ecosystems weakens, potentially leading to cascading failures. Protecting biodiversity is therefore not merely an environmental concern, but a critical investment in human well-being and sustainable development for future generations."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Privacy and Data Control”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q09",
+      "modelAnswer": "The burgeoning digital age brings unprecedented challenges to individual privacy and data sovereignty. As personal information is increasingly collected, analyzed, and traded, concerns about surveillance and misuse grow. Users often lack transparency regarding how their data is handled, leading to a demand for stronger regulatory frameworks and enhanced data protection technologies. Reclaiming control over one's digital footprint is becoming a defining struggle, highlighting the need for ethical design and robust legal safeguards in the information economy.",
+      "readText": "The burgeoning digital age brings unprecedented challenges to individual privacy and data sovereignty. As personal information is increasingly collected, analyzed, and traded, concerns about surveillance and misuse grow. Users often lack transparency regarding how their data is handled, leading to a demand for stronger regulatory frameworks and enhanced data protection technologies. Reclaiming control over one's digital footprint is becoming a defining struggle, highlighting the need for ethical design and robust legal safeguards in the information economy."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “AI's Impact on Employment”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q10",
+      "modelAnswer": "Artificial intelligence is rapidly reshaping global job markets, prompting both excitement and apprehension. While AI promises to automate repetitive tasks and create new industries, it also raises concerns about widespread job displacement. Economists predict a significant shift in required skills, emphasizing creativity, critical thinking, and emotional intelligence over routine cognitive abilities. Societies must proactively invest in education and retraining programs to prepare their workforces for this transformative technological era, ensuring a just transition.",
+      "readText": "Artificial intelligence is rapidly reshaping global job markets, prompting both excitement and apprehension. While AI promises to automate repetitive tasks and create new industries, it also raises concerns about widespread job displacement. Economists predict a significant shift in required skills, emphasizing creativity, critical thinking, and emotional intelligence over routine cognitive abilities. Societies must proactively invest in education and retraining programs to prepare their workforces for this transformative technological era, ensuring a just transition."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ancient Maritime Trade”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q11",
+      "modelAnswer": "The history of maritime trade routes is a fascinating chronicle of human ingenuity and interconnectedness. From the ancient Phoenicians navigating the Mediterranean to the Silk Road of the seas linking East and West, these routes facilitated the exchange of goods, ideas, and cultures. They spurred technological innovations in shipbuilding and navigation, shaping geopolitical landscapes and fostering the rise of powerful port cities. Understanding these historical networks offers insights into globalization's enduring patterns and challenges.",
+      "readText": "The history of maritime trade routes is a fascinating chronicle of human ingenuity and interconnectedness. From the ancient Phoenicians navigating the Mediterranean to the Silk Road of the seas linking East and West, these routes facilitated the exchange of goods, ideas, and cultures. They spurred technological innovations in shipbuilding and navigation, shaping geopolitical landscapes and fostering the rise of powerful port cities. Understanding these historical networks offers insights into globalization's enduring patterns and challenges."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Solar Energy Breakthroughs”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q12",
+      "modelAnswer": "Recent advances in renewable solar energy technology are poised to revolutionize global power generation. Innovations in photovoltaic materials, such as perovskites, promise higher efficiency and lower manufacturing costs, making solar power more competitive. Furthermore, improved energy storage solutions, like advanced battery systems, address the intermittency challenge, allowing solar energy to be a reliable base-load power source. These developments accelerate the transition away from fossil fuels, paving the way for a sustainable energy future.",
+      "readText": "Recent advances in renewable solar energy technology are poised to revolutionize global power generation. Innovations in photovoltaic materials, such as perovskites, promise higher efficiency and lower manufacturing costs, making solar power more competitive. Furthermore, improved energy storage solutions, like advanced battery systems, address the intermittency challenge, allowing solar energy to be a reliable base-load power source. These developments accelerate the transition away from fossil fuels, paving the way for a sustainable energy future."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Effective cross-cultural negotiations in business require patience, empathy, and clear communication strategies.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Cross-Cultural Negotiations”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q13",
+      "modelAnswer": "Effective cross-cultural negotiations in business require patience, empathy, and clear communication strategies.",
+      "audioScript": "Effective cross-cultural negotiations in business require patience, empathy, and clear communication strategies."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Carbon capture and storage technologies are crucial for mitigating industrial emissions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Carbon Capture Development”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q14",
+      "modelAnswer": "Carbon capture and storage technologies are crucial for mitigating industrial emissions.",
+      "audioScript": "Carbon capture and storage technologies are crucial for mitigating industrial emissions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Wildlife corridor design and conservation are essential for maintaining genetic diversity.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Corridor Benefits”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q15",
+      "modelAnswer": "Wildlife corridor design and conservation are essential for maintaining genetic diversity.",
+      "audioScript": "Wildlife corridor design and conservation are essential for maintaining genetic diversity."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Philosophy of Consciousness”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q16",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and awareness."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology and privacy concerns often clash, requiring careful ethical consideration.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy Concerns”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q17",
+      "modelAnswer": "Smart city technology and privacy concerns often clash, requiring careful ethical consideration.",
+      "audioScript": "Smart city technology and privacy concerns often clash, requiring careful ethical consideration."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation and indigenous land rights are deeply intertwined global environmental issues.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation and Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q18",
+      "modelAnswer": "Deforestation and indigenous land rights are deeply intertwined global environmental issues.",
+      "audioScript": "Deforestation and indigenous land rights are deeply intertwined global environmental issues."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The role of social media in modern communication is constantly evolving and expanding.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q19",
+      "modelAnswer": "The role of social media in modern communication is constantly evolving and expanding.",
+      "audioScript": "The role of social media in modern communication is constantly evolving and expanding."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration and cultural integration present complex challenges and opportunities for societies.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Integration”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q20",
+      "modelAnswer": "International migration and cultural integration present complex challenges and opportunities for societies.",
+      "audioScript": "International migration and cultural integration present complex challenges and opportunities for societies."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation predict significant shifts in labor markets and productivity.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Automation Economics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q21",
+      "modelAnswer": "The economics of automation predict significant shifts in labor markets and productivity.",
+      "audioScript": "The economics of automation predict significant shifts in labor markets and productivity."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global Water Usage by Sector\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q22",
+      "modelAnswer": "This pie chart illustrates global water usage by sector. The most significant share, a dominant 70%, is consumed by agriculture, highlighting its immense demand for water resources worldwide. Industry accounts for the second-largest portion, using 20% of global water. The smallest segment is domestic use, representing just 10% of the total. Overall, the chart clearly demonstrates that agriculture is by far the biggest consumer of water globally, vastly outweighing industrial and domestic requirements combined, emphasizing the need for sustainable irrigation practices.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global Water Usage by Sector",
+        "slices": [
+          {
+            "label": "Agriculture",
+            "value": 70
+          },
+          {
+            "label": "Industry",
+            "value": 20
+          },
+          {
+            "label": "Domestic",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Water Cycle: Evapotranspiration Contributions\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q23",
+      "modelAnswer": "This line chart illustrates the global water cycle focusing on evapotranspiration contributions. The y-axis represents volume in cubic kilometers per year. Ocean evaporation is the highest contributor, accounting for a massive 434,000 km³/year. Land evaporation follows at 71,000 km³/year, and transpiration from plants adds 45,000 km³/year. Sublimation from ice and snow is the lowest contributor at 1,000 km³/year. The total estimated evapotranspiration across all sources reaches 551,000 km³/year, highlighting the ocean's dominant role in this crucial process.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Water Cycle: Evapotranspiration Contributions",
+        "yLabel": "Volume (km³/year)",
+        "xAxis": [
+          "Ocean Evaporation",
+          "Land Evaporation",
+          "Transpiration (Plants)",
+          "Sublimation (Ice/Snow)",
+          "Total Evapotranspiration"
+        ],
+        "series": [
+          {
+            "label": "Estimated Volume",
+            "values": [
+              434000,
+              71000,
+              45000,
+              1000,
+              551000
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Adult Literacy Rates by Region (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q24",
+      "modelAnswer": "The table illustrates global adult literacy rates by region for 2023, alongside changes since 2013. North America boasts the highest literacy rate at 99.0%, closely followed by Europe at 98.5%. In contrast, Sub-Saharan Africa has the lowest rate at 76.5%. Notably, regions with lower current literacy rates show the most significant improvement; Sub-Saharan Africa saw a substantial 5.5% increase, and South Asia improved by 4.0%. This indicates a positive global trend towards increasing literacy, particularly in developing regions, though disparities persist.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Adult Literacy Rates by Region (2023)",
+        "headers": [
+          "Region",
+          "Literacy Rate (%)",
+          "Change from 2013 (%)"
+        ],
+        "rows": [
+          [
+            "North America",
+            "99.0",
+            "+0.5"
+          ],
+          [
+            "Europe",
+            "98.5",
+            "+0.3"
+          ],
+          [
+            "East Asia & Pacific",
+            "96.8",
+            "+1.2"
+          ],
+          [
+            "Latin America & Caribbean",
+            "94.2",
+            "+1.8"
+          ],
+          [
+            "Sub-Saharan Africa",
+            "76.5",
+            "+5.5"
+          ],
+          [
+            "South Asia",
+            "78.0",
+            "+4.0"
+          ],
+          [
+            "Arab States",
+            "83.5",
+            "+3.0"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Smartphone Adoption Rate (2014-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q25",
+      "modelAnswer": "The line graph illustrates the global smartphone adoption rate from 2014 to 2023. It shows a consistent upward trend over the decade. In 2014, the adoption rate stood at 38%, which then steadily climbed, reaching 61% by 2017. The highest adoption rate was recorded in 2023 at 85%, significantly higher than the initial figure. This demonstrates a substantial increase in smartphone usage worldwide, indicating their widespread integration into daily life, nearly doubling over the ten-year period from its lowest point.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Smartphone Adoption Rate (2014-2023)",
+        "yLabel": "Adoption Rate (%)",
+        "xAxis": [
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Adoption Rate",
+            "values": [
+              38,
+              45,
+              54,
+              61,
+              67,
+              72,
+              76,
+              80,
+              83,
+              85
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q26",
+      "modelAnswer": "This bar chart illustrates the annual energy consumption per capita in megawatt-hours for six different countries in 2022. Canada had the highest consumption at 95 MWh per person, closely followed by the USA at 80 MWh. In stark contrast, India recorded the lowest consumption with only 10 MWh per person. Germany and China consumed 45 MWh and 35 MWh respectively, while Brazil used 25 MWh. The data clearly indicates a significant disparity in energy usage across these nations, with North American countries consuming substantially more than Asian and South American counterparts.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Energy Consumption (MWh)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "China",
+          "India",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "MWh per person",
+            "values": [
+              80,
+              95,
+              45,
+              35,
+              10,
+              25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q27",
+      "modelAnswer": "The lecture highlighted the immense importance of non-verbal communication, stating it accounts for over 70% of how we convey meaning. This includes elements like body language, facial expressions, and gestures, which often reveal a person's true intentions more accurately than their words. The speaker emphasized that understanding these cues is essential for effective interpersonal interactions, helping to build rapport and prevent misunderstandings. Finally, it was noted that cultural context plays a crucial role in how non-verbal signals are interpreted.",
+      "audioScript": "Today, we're examining the critical role of non-verbal communication in conveying meaning. It's estimated that over 70% of communication is non-verbal, encompassing body language, facial expressions, gestures, and even silence. These cues often reveal more about a person's true feelings or intentions than their spoken words. Understanding and interpreting non-verbal signals is vital for effective interpersonal interactions, helping to build rapport, avoid misunderstandings, and navigate complex social situations. Cultural differences, however, significantly impact how these cues are perceived and should always be considered.",
+      "keyPoints": [
+        "Non-verbal communication's significant role",
+        "Includes body language, expressions, gestures, silence",
+        "Reveals true feelings, aids interpersonal interaction",
+        "Cultural differences in interpretation"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Universe Formation and Dark Matter”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q28",
+      "modelAnswer": "The lecture discussed the formation of the universe, particularly emphasizing the crucial role of dark matter. The speaker explained that dark matter, an invisible substance, constitutes about 27% of the universe's mass-energy. It acts as a gravitational scaffold, essential for the formation of galaxies and galaxy clusters. Without its gravitational influence, the large-scale structures we observe in the cosmos would not have formed. Therefore, dark matter is fundamental to the universe's evolution and its current structure.",
+      "audioScript": "Our universe's formation, from the Big Bang to its current structure, is a complex journey. A significant portion of this journey is influenced by dark matter, an invisible substance that doesn't interact with light or other electromagnetic forces. Scientists believe dark matter constitutes about 27% of the universe's mass-energy, acting as a gravitational scaffold upon which galaxies and galaxy clusters form. Without dark matter's gravitational pull, the universe's large-scale structures simply wouldn't exist as we observe them today, making it fundamental to cosmic evolution.",
+      "keyPoints": [
+        "Universe formation from Big Bang",
+        "Role of dark matter (27% of universe)",
+        "Dark matter as gravitational scaffold for galaxies",
+        "Essential for cosmic structure and evolution"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Channel",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Channels”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q29",
+      "modelAnswer": "Channel",
+      "audioScript": "What is the term for the medium through which a message is sent?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Noise",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barriers”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q30",
+      "modelAnswer": "Noise",
+      "audioScript": "What is anything that interferes with the transmission of a message called?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Feedback",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Feedback in Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q31",
+      "modelAnswer": "Feedback",
+      "audioScript": "What is the receiver's response to a message called?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Written communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Types of Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-044-q32",
+      "modelAnswer": "Written communication",
+      "audioScript": "What type of communication uses written words or symbols?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Digital Transformation in Education”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-044-q33",
+      "modelAnswer": "Digital technology is revolutionizing education by enabling blended learning, enhancing engagement through interactive tools, and expanding access to resources, despite challenges concerning digital equity and teacher training.",
+      "readText": "Digital technology is profoundly transforming educational practices, moving beyond traditional classroom settings to embrace blended learning and online platforms. Tools like interactive whiteboards, educational apps, and virtual reality simulations enhance engagement and provide personalized learning experiences. This shift allows for greater accessibility to educational resources globally and fosters new pedagogical approaches centered on collaboration and critical thinking. However, challenges remain regarding digital equity, teacher training, and the need to balance screen time with traditional learning methods to ensure holistic development."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Digital communication technologies have revolutionized how people interact, both personally and professionally. Discuss the advantages and disadvantages of this shift in communication, and argue whether its overall impact is positive or negative.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-044-q34",
+      "modelAnswer": "The advent of digital communication technologies, encompassing everything from social media to instant messaging and video conferencing, has undeniably transformed human interaction. This paradigm shift presents a complex interplay of benefits and drawbacks, making its overall impact a subject of considerable debate.\n\nOn the one hand, the advantages are numerous and profound. Digital communication fosters unparalleled connectivity, allowing individuals to maintain relationships across vast geographical distances and enabling instant information exchange. For businesses, it facilitates global collaboration, streamlines workflows, and enhances customer service. The accessibility of information through digital platforms also empowers individuals with knowledge and promotes diverse perspectives. Furthermore, it often proves more efficient and cost-effective than traditional methods, breaking down barriers of time and expense.\n\nHowever, the disadvantages are equally compelling. The constant connectivity can lead to information overload, reduced attention spans, and a blurring of personal and professional boundaries. Over-reliance on digital interaction may erode face-to-face social skills, potentially leading to feelings of isolation despite being 'connected.' Concerns about privacy, cybersecurity, and the spread of misinformation are also significant. Moreover, the digital divide exacerbates existing inequalities, as not everyone has equal access to these technologies or the literacy required to navigate them effectively.\n\nConsidering both sides, I argue that the overall impact of digital communication is predominantly positive, provided that individuals and societies approach it with intentionality and critical awareness. While the pitfalls are real and require mitigation, the benefits of enhanced global connection, information access, and efficiency outweigh the negatives. The key lies in developing digital literacy, promoting responsible usage, and ensuring equitable access to harness its full potential while minimizing its inherent risks. The challenge is not to reject digital communication, but to master it wisely."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "In an increasingly globalized world, effective cross-cultural communication is vital. Discuss the challenges inherent in communicating across different cultures and propose strategies to overcome these barriers, ensuring successful interactions.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-044-q35",
+      "modelAnswer": "As globalization intertwines economies and societies, the ability to communicate effectively across diverse cultures has become an indispensable skill. However, this necessity is often met with significant challenges, stemming from varying linguistic, non-verbal, and contextual understandings. Overcoming these barriers is crucial for fostering successful interactions and preventing misunderstandings.\n\nOne primary challenge is linguistic diversity. Literal translation often fails to convey the nuances, idioms, or cultural connotations embedded within a language, leading to misinterpretations. Beyond words, non-verbal cues such as body language, eye contact, and personal space vary dramatically across cultures, and what is polite in one context might be offensive in another. Furthermore, cultural differences in communication styles – whether direct or indirect, high-context or low-context – can create friction. For instance, a direct approach might be perceived as rude in a culture that values subtlety, while an indirect approach might be seen as evasive in a culture that prioritizes clarity. Underlying these are differing values, beliefs, and assumptions that shape how messages are encoded and decoded.\n\nTo overcome these barriers, several strategies can be employed. Firstly, developing cultural awareness and empathy is paramount. This involves actively learning about the communication norms, values, and social etiquette of the target culture. Secondly, adopting a flexible and adaptable communication style is essential; this might mean adjusting one's pace of speech, choice of vocabulary, or even non-verbal behavior. Utilizing active listening techniques, such as paraphrasing and asking clarifying questions, can help confirm understanding. Moreover, leveraging technology, such as translation tools, carefully and with an awareness of their limitations, can be beneficial. Finally, fostering an open-minded attitude and being prepared for misunderstandings, viewing them as learning opportunities rather than failures, is critical. Engaging in direct, respectful dialogue about perceived miscommunications can also clarify intentions and build trust. By proactively addressing these challenges, individuals and organizations can significantly enhance their cross-cultural communication effectiveness, leading to more productive and harmonious global interactions."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "exam": "duolingo",
+  "label": "Duolingo English Test",
+  "strategies": [
+    {
+      "section": "general",
+      "title": "Answer with evidence",
+      "tips": [
+        "Read the question carefully",
+        "Underline the task demand",
+        "Use the passage/script/problem data before choosing"
+      ]
+    },
+    {
+      "section": "writing",
+      "title": "Build clear paragraphs",
+      "tips": [
+        "State your position clearly",
+        "Use topic sentences",
+        "Add one precise example",
+        "Check grammar and word count"
+      ]
+    },
+    {
+      "section": "speaking",
+      "title": "Speak in a simple structure",
+      "tips": [
+        "Answer directly",
+        "Give one example",
+        "Explain why it matters",
+        "Finish naturally"
+      ]
+    },
+    {
+      "section": "quant",
+      "title": "Show solution steps",
+      "tips": [
+        "Write the formula",
+        "Substitute values",
+        "Check units",
+        "Eliminate trap options"
+      ]
+    },
+    {
+      "section": "verbal",
+      "title": "Find the logic",
+      "tips": [
+        "Identify claim and evidence",
+        "Check assumptions",
+        "Avoid extreme options",
+        "Compare answer choices"
+      ]
+    }
+  ]
+}

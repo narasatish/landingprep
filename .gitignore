@@ -1,0 +1,19 @@
+# Secrets — NEVER commit
+.env
+.env.*
+data/                 # auth password hashes + community/leaderboard json (local only)
+
+# Dependencies / build noise
+node_modules/
+npm-debug.log*
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Firebase local
+.firebase/
+firebase-debug.log

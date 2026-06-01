@@ -1,0 +1,907 @@
+{
+  "id": "ielts-listening-005",
+  "exam": "ielts",
+  "section": "listening",
+  "title": "IELTS Listening Practice Test 5",
+  "durationSeconds": 2400,
+  "questionCount": 40,
+  "listeningScripts": [
+    {
+      "id": "ielts-listening-005-p1",
+      "part": 1,
+      "title": "Library Membership and Book Loan",
+      "text": "Librarian: Central Library, how can I assist you?\nCaller: I'd like to register for a library card and ask about borrowing rules.\nLibrarian: Of course. Your full name please?\nCaller: Patricia Osei. O-S-E-I.\nLibrarian: And your address?\nCaller: Flat 3, 18 Maple Street, Thornton, TH6 2PQ.\nLibrarian: Date of birth?\nCaller: Second of August, 1994.\nLibrarian: Our standard membership is free and allows you to borrow up to eight items at a time. Loans are for three weeks with one free renewal. Audiobooks and e-books are also available through our app.\nCaller: Are there fines for late returns?\nLibrarian: Ten pence per day for standard loans, twenty pence for reserved items.\nCaller: Can I reserve books online?\nLibrarian: Yes, through the library portal. There's a reservation fee of fifty pence per item. Your card will be ready to collect tomorrow from the information desk.",
+      "formLayout": {
+        "title": "Central Library — New Membership Form",
+        "example": {
+          "label": "Annual membership fee",
+          "content": "free"
+        },
+        "rows": [
+          {
+            "type": "blank",
+            "num": 1,
+            "label": "Surname",
+            "prefix": "",
+            "suffix": "",
+            "answer": "Osei"
+          },
+          {
+            "type": "blank",
+            "num": 2,
+            "label": "Address",
+            "prefix": "Flat 3, 18 ",
+            "suffix": ", Thornton",
+            "answer": "Maple Street"
+          },
+          {
+            "type": "blank",
+            "num": 3,
+            "label": "Postcode",
+            "prefix": "",
+            "suffix": "",
+            "answer": "TH6 2PQ"
+          },
+          {
+            "type": "blank",
+            "num": 4,
+            "label": "Date of birth",
+            "prefix": "2nd August ",
+            "suffix": "",
+            "answer": "1994"
+          },
+          {
+            "type": "blank",
+            "num": 5,
+            "label": "Maximum items allowed",
+            "prefix": "up to ",
+            "suffix": " items",
+            "answer": "8 / eight"
+          },
+          {
+            "type": "blank",
+            "num": 6,
+            "label": "Standard loan period",
+            "prefix": "",
+            "suffix": " weeks",
+            "answer": "3 / three"
+          },
+          {
+            "type": "blank",
+            "num": 7,
+            "labelBlank": true,
+            "labelSuffix": " fine per day",
+            "rightContent": "10p / 10 pence",
+            "answer": "Standard"
+          },
+          {
+            "type": "blank",
+            "num": 8,
+            "label": "Reserved item fine (per day)",
+            "prefix": "",
+            "suffix": "p",
+            "answer": "20 / twenty"
+          },
+          {
+            "type": "blank",
+            "num": 9,
+            "label": "Online reservation fee",
+            "prefix": "",
+            "suffix": "p per item",
+            "answer": "50 / fifty"
+          },
+          {
+            "type": "blank",
+            "num": 10,
+            "label": "Card collection point",
+            "prefix": "",
+            "suffix": "",
+            "answer": "information desk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-listening-005-p2",
+      "part": 2,
+      "title": "Guided Tour of the City Museum of Science and Industry",
+      "text": "Guide: Welcome everyone to the City Museum of Science and Industry. I'm your guide for this morning's orientation and I'm delighted to show you around one of the region's most celebrated museums. We have a wonderful collection spanning three centuries of scientific and industrial history, and I'm confident you'll find plenty to engage with during your visit today.\n\nLet's begin right where we are — in Zone A, the entrance foyer. As you can see, this is a large, light-filled atrium with a soaring glass roof. It serves as the central hub of the museum and you can access all other areas from here. The foyer contains our main welcome desk, a cloakroom, and display boards giving you an overview of current exhibitions. You'll also notice the large model of the solar system suspended from the ceiling — a firm favourite with younger visitors.\n\nDirectly to your right as you enter is Zone B — the gift shop. This is actually one of the most popular areas in the entire museum, and not just for children! We stock a wide range of books, science kits, educational toys, and locally produced gifts. All proceeds from the gift shop support the museum's education programmes.\n\nPast the gift shop, heading deeper into the building, you'll find yourself in Zone C — the Victorian Engine Hall. This is without doubt the largest room in the museum. It houses our collection of working steam engines, many of which were originally used in the textile mills that made this region famous during the industrial revolution. On selected days, the engines are powered up and visitors can watch them in operation — an extraordinary sight.\n\nTo the left of the engine hall is Zone D — the Interactive Science Gallery. This is our most hands-on area and is especially popular with school groups. You can experiment with electricity, magnetism, sound, and light, and there are guided demonstrations every hour on the hour. The gallery is designed for visitors of all ages, though children particularly love the water pressure experiments in the far corner.\n\nContinuing around the ground floor, you reach Zone E — the Textile History Room. This thoughtful exhibition traces the development of cloth production from hand-looming in the seventeenth century through to modern synthetic fibres. There are original looms you can observe in operation, and the exhibition also addresses the social history of mill workers, including the role of child labour and later labour reform.\n\nAt the back of the ground floor, adjacent to the textile room, is Zone F — the café. The café is open from nine in the morning until four thirty in the afternoon and serves hot meals, sandwiches, cakes, and a children's menu. Outside seating is available in fine weather in the adjoining courtyard. The café is self-service and accepts both cash and cards.\n\nHeading upstairs, you'll find Zone G — the lecture theatre. This seats two hundred and fifty and is used for public lectures, film screenings, and school presentations. Today at two o'clock there is a free public lecture on the history of computing. Tickets are available from the welcome desk.\n\nZone H is the Temporary Exhibitions Hall, also upstairs. This large gallery hosts rotating exhibitions throughout the year — currently featuring a display on the history of space exploration from Sputnik to the present day. The hall is only open during the museum's standard hours, which are nine to five Tuesday through Sunday.\n\nNestled behind the lecture theatre on the upper floor is Zone I — the Conservation Workshop. This is a working studio where our conservation team restores and maintains objects from the collection. A transparent viewing window allows visitors to watch the conservators at work. This is a real highlight for many visitors who have never considered the behind-the-scenes work that keeps museum collections alive.\n\nFinally, accessible via a dedicated staircase at the rear of the upper floor, is Zone J — the roof garden. This beautiful green space features drought-tolerant planting, a wildflower meadow section, and information boards on urban ecology. On clear days the views over the city are quite spectacular. The roof garden is open from April through to October, weather permitting.\n\nThe museum is open Tuesday to Sunday, nine to five. Adult tickets are seven pounds fifty, and children's tickets — for visitors aged five to sixteen — are four pounds. Children under five enter free. Guided tours run every day at ten thirty and two thirty and last approximately ninety minutes. I hope you enjoy your visit — please do ask me or any member of staff if you have questions."
+    },
+    {
+      "id": "ielts-listening-005-p3",
+      "part": 3,
+      "title": "Discussion About a Research Project on Urban Noise",
+      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+    },
+    {
+      "id": "ielts-listening-005-p4",
+      "part": 4,
+      "title": "Lecture: Behavioural Economics and Consumer Choice",
+      "text": "In today's lecture I want to explore how behavioural economics challenges the traditional economic model of the rational consumer, and what this means for public policy.\n\nClassical economics assumes that individuals make decisions by carefully weighing costs and benefits and choosing the option that maximises their utility. This is known as the rational actor model. However, decades of research by psychologists and economists has demonstrated that real human decision-making deviates from this ideal in systematic and predictable ways.\n\nOne of the most influential concepts is loss aversion, developed by Daniel Kahneman and Amos Tversky in their prospect theory, published in 1979. They found that losses feel approximately twice as painful as equivalent gains feel pleasurable. This explains why people hold onto failing investments far longer than is rational — a phenomenon known as the disposition effect in financial markets.\n\nAnother important bias is the default effect. When people are automatically enrolled in a programme — whether a pension scheme or an organ donation register — they are far more likely to remain in it than if they had to actively opt in. Several countries, including the UK, have used this insight to design opt-out organ donation systems, dramatically increasing donation rates.\n\nPresent bias describes our tendency to place disproportionate weight on immediate rewards compared to future ones. This helps explain low savings rates, poor diet choices, and insufficient exercise — we consistently undervalue future benefits. Commitment devices, such as automatically increasing pension contributions each year, can counteract this bias.\n\nNudge theory, popularised by Thaler and Sunstein in their 2008 book, proposes that policymakers can guide behaviour without mandates or financial incentives, simply by redesigning the choice environment. Placing healthy foods at eye level in cafeterias, for example, increases their selection rates by up to thirty percent without banning unhealthy options.\n\nCritics of nudge theory argue that it can be paternalistic and that transparency is essential — people should know when their choices are being structured. Despite this debate, governments worldwide are investing in behavioural insights units to improve policy outcomes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-listening-005-q1",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 1,
+      "label": "Surname",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Osei",
+      "explanation": "The answer \"Osei\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the check-in time?",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-005-q2",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 2,
+      "label": "Address",
+      "prefix": "Flat 3, 18 ",
+      "suffix": ", Thornton",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Maple Street",
+      "explanation": "The answer \"Maple Street\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-005-q3",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 3,
+      "label": "Postcode",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "TH6 2PQ",
+      "explanation": "The answer \"TH6 2PQ\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the total cost?",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-005-q4",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 4,
+      "label": "Date of birth",
+      "prefix": "2nd August ",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "1994",
+      "explanation": "The answer \"1994\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-005-q5",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 5,
+      "label": "Maximum items allowed",
+      "prefix": "up to ",
+      "suffix": " items",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "8 / eight",
+      "explanation": "The answer \"8 / eight\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the breakfast option?",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-005-q6",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 6,
+      "label": "Standard loan period",
+      "prefix": "",
+      "suffix": " weeks",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "3 / three",
+      "explanation": "The answer \"3 / three\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-005-q7",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 7,
+      "label": "",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": true,
+      "labelSuffix": " fine per day",
+      "rightContent": "10p / 10 pence",
+      "answer": "Standard",
+      "explanation": "The answer \"Standard\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the room type?",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-005-q8",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 8,
+      "label": "Reserved item fine (per day)",
+      "prefix": "",
+      "suffix": "p",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "20 / twenty",
+      "explanation": "The answer \"20 / twenty\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-005-q9",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 9,
+      "label": "Online reservation fee",
+      "prefix": "",
+      "suffix": "p per item",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "50 / fifty",
+      "explanation": "The answer \"50 / fifty\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the cancellation policy?",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-005-q10",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 10,
+      "label": "Card collection point",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "information desk",
+      "explanation": "The answer \"information desk\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-005-q11",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 11,
+      "prompt": "What time does the museum café close?",
+      "options": [
+        "4:00 pm",
+        "4:30 pm",
+        "5:00 pm",
+        "5:30 pm"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The guide says the café is open 'until four thirty in the afternoon'"
+    },
+    {
+      "id": "ielts-listening-005-q12",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 12,
+      "prompt": "How much does a child's ticket cost?",
+      "options": [
+        "£3.00",
+        "£4.00",
+        "£4.50",
+        "£5.00"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The guide states 'children's tickets are four pounds'"
+    },
+    {
+      "id": "ielts-listening-005-q13",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 13,
+      "prompt": "How frequently do guided demonstrations run in the Interactive Science Gallery?",
+      "options": [
+        "every thirty minutes",
+        "every hour",
+        "every two hours",
+        "twice daily"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The guide says 'there are guided demonstrations every hour on the hour'"
+    },
+    {
+      "id": "ielts-listening-005-q14",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 14,
+      "prompt": "Which is described as the largest room in the museum?",
+      "options": [
+        "the Interactive Science Gallery",
+        "the Temporary Exhibitions Hall",
+        "the Victorian Engine Hall",
+        "the lecture theatre"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The guide says the engine hall is 'without doubt the largest room in the museum'"
+    },
+    {
+      "id": "ielts-listening-005-q15",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 15,
+      "prompt": "Where is the café located?",
+      "options": [
+        "on the upper floor next to the lecture theatre",
+        "at the back of the ground floor adjacent to the textile room",
+        "in the entrance foyer",
+        "in the roof garden"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The guide says the café is 'at the back of the ground floor, adjacent to the textile room'"
+    },
+    {
+      "id": "ielts-listening-005-q16",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "City Museum of Science and Industry — Floor Plan",
+      "mapDescription": "Label the areas A–J on the museum map.",
+      "mapKey": {
+        "A": "Entrance foyer",
+        "B": "Gift shop",
+        "C": "Victorian Engine Hall",
+        "D": "Interactive Science Gallery",
+        "E": "Textile History Room",
+        "F": "Café",
+        "G": "Lecture theatre",
+        "H": "Temporary Exhibitions Hall",
+        "I": "Conservation Workshop",
+        "J": "Roof garden"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 16,
+      "prompt": "Main atrium with glass roof and solar system model",
+      "correctAnswer": "A",
+      "explanation": "The correct letter is A (Entrance foyer)."
+    },
+    {
+      "id": "ielts-listening-005-q17",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "City Museum of Science and Industry — Floor Plan",
+      "mapDescription": "Label the areas A–J on the museum map.",
+      "mapKey": {
+        "A": "Entrance foyer",
+        "B": "Gift shop",
+        "C": "Victorian Engine Hall",
+        "D": "Interactive Science Gallery",
+        "E": "Textile History Room",
+        "F": "Café",
+        "G": "Lecture theatre",
+        "H": "Temporary Exhibitions Hall",
+        "I": "Conservation Workshop",
+        "J": "Roof garden"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 17,
+      "prompt": "Shop selling science kits, books and educational toys",
+      "correctAnswer": "B",
+      "explanation": "The correct letter is B (Gift shop)."
+    },
+    {
+      "id": "ielts-listening-005-q18",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "City Museum of Science and Industry — Floor Plan",
+      "mapDescription": "Label the areas A–J on the museum map.",
+      "mapKey": {
+        "A": "Entrance foyer",
+        "B": "Gift shop",
+        "C": "Victorian Engine Hall",
+        "D": "Interactive Science Gallery",
+        "E": "Textile History Room",
+        "F": "Café",
+        "G": "Lecture theatre",
+        "H": "Temporary Exhibitions Hall",
+        "I": "Conservation Workshop",
+        "J": "Roof garden"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 18,
+      "prompt": "Largest room housing working steam engines",
+      "correctAnswer": "C",
+      "explanation": "The correct letter is C (Victorian Engine Hall)."
+    },
+    {
+      "id": "ielts-listening-005-q19",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "City Museum of Science and Industry — Floor Plan",
+      "mapDescription": "Label the areas A–J on the museum map.",
+      "mapKey": {
+        "A": "Entrance foyer",
+        "B": "Gift shop",
+        "C": "Victorian Engine Hall",
+        "D": "Interactive Science Gallery",
+        "E": "Textile History Room",
+        "F": "Café",
+        "G": "Lecture theatre",
+        "H": "Temporary Exhibitions Hall",
+        "I": "Conservation Workshop",
+        "J": "Roof garden"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 19,
+      "prompt": "Hands-on area with electricity and magnetism experiments",
+      "correctAnswer": "D",
+      "explanation": "The correct letter is D (Interactive Science Gallery)."
+    },
+    {
+      "id": "ielts-listening-005-q20",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "City Museum of Science and Industry — Floor Plan",
+      "mapDescription": "Label the areas A–J on the museum map.",
+      "mapKey": {
+        "A": "Entrance foyer",
+        "B": "Gift shop",
+        "C": "Victorian Engine Hall",
+        "D": "Interactive Science Gallery",
+        "E": "Textile History Room",
+        "F": "Café",
+        "G": "Lecture theatre",
+        "H": "Temporary Exhibitions Hall",
+        "I": "Conservation Workshop",
+        "J": "Roof garden"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 20,
+      "prompt": "Exhibition tracing cloth production from hand-looming to synthetic fibres",
+      "correctAnswer": "E",
+      "explanation": "The correct letter is E (Textile History Room)."
+    },
+    {
+      "id": "ielts-listening-005-q21",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 21,
+      "prompt": "What noise level does research link to increased stress hormones?",
+      "options": [
+        "55 dB",
+        "60 dB",
+        "65 dB",
+        "70 dB"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+    },
+    {
+      "id": "ielts-listening-005-q22",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 22,
+      "prompt": "What additional health risk did James find surprising in the literature?",
+      "options": [
+        "hearing loss",
+        "cardiovascular disease",
+        "respiratory problems",
+        "mental health disorders"
+      ],
+      "correctAnswer": "B",
+      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+    },
+    {
+      "id": "ielts-listening-005-q23",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 23,
+      "prompt": "How many residents will be surveyed?",
+      "options": [
+        "200",
+        "300",
+        "400",
+        "500"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Priya mentions 'a survey of five hundred residents'"
+    },
+    {
+      "id": "ielts-listening-005-q24",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 24,
+      "prompt": "What confidence level does their sample size achieve?",
+      "options": [
+        "90%",
+        "92%",
+        "95%",
+        "99%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "James refers to 'the ninety-five percent confidence level'"
+    },
+    {
+      "id": "ielts-listening-005-q25",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 25,
+      "prompt": "What does the tutor recommend they reference?",
+      "options": [
+        "WHO 2015 report",
+        "WHO 2018 guidelines",
+        "EU noise directive",
+        "national highway code"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+    },
+    {
+      "id": "ielts-listening-005-q26",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 26,
+      "prompt": "introducing new equipment in the laboratory",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-005-q27",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 27,
+      "prompt": "keeping written records of experiments",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-005-q28",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 28,
+      "prompt": "sharing results with other research groups",
+      "correctAnswer": "B",
+      "explanation": "The speaker's attitude is B. She is undecided."
+    },
+    {
+      "id": "ielts-listening-005-q29",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 29,
+      "prompt": "the importance of the project deadline",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-005-q30",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 30,
+      "prompt": "the proposal to extend the study",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-005-q31",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 31,
+      "sentenceText": "__BLANK__ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
+      "correctAnswer": "The rational actor model",
+      "explanation": "The correct answer is: \"The rational actor model\".",
+      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
+      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-005-q32",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 32,
+      "sentenceText": "Kahneman and Tversky found that losses feel approximately __BLANK__ as painful as an equivalent financial gain.",
+      "correctAnswer": "twice as",
+      "explanation": "The correct answer is: \"twice as\".",
+      "prompt": "The speaker describes the current research of the topic.",
+      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-005-q33",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 33,
+      "sentenceText": "The tendency to remain in programmes one is automatically enrolled in is known as the __BLANK__.",
+      "correctAnswer": "default effect",
+      "explanation": "The correct answer is: \"default effect\".",
+      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
+      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-005-q34",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 34,
+      "sentenceText": "__BLANK__ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
+      "correctAnswer": "Present bias",
+      "explanation": "The correct answer is: \"Present bias\".",
+      "prompt": "The speaker describes the key challenge of the topic.",
+      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-005-q35",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 35,
+      "sentenceText": "Thaler and Sunstein popularised nudge theory in a book published in __BLANK__.",
+      "correctAnswer": "2008",
+      "explanation": "The correct answer is: \"2008\".",
+      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
+      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-005-q36",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 36,
+      "prompt": "The 'disposition effect' refers to the tendency to",
+      "options": [
+        "A  invest heavily in new market opportunities",
+        "B  hold onto failing investments for too long",
+        "C  diversify financial portfolios excessively",
+        "D  avoid taking any financial risks"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer says it explains 'why people hold onto failing investments far longer than is rational'"
+    },
+    {
+      "id": "ielts-listening-005-q37",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 37,
+      "prompt": "Which country's opt-out organ donation system is specifically mentioned in the lecture?",
+      "options": [
+        "A  France",
+        "B  Australia",
+        "C  Germany",
+        "D  the United Kingdom"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The lecturer cites 'the UK' as a country using opt-out organ donation"
+    },
+    {
+      "id": "ielts-listening-005-q38",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 38,
+      "prompt": "Placing healthy food at eye level in cafeterias increases selection rates by up to",
+      "options": [
+        "A  ten percent",
+        "B  twenty percent",
+        "C  thirty percent",
+        "D  forty percent"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer states selection rates increase 'by up to thirty percent'"
+    },
+    {
+      "id": "ielts-listening-005-q39",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 39,
+      "prompt": "Critics of nudge theory argue that it",
+      "options": [
+        "A  is ineffective in real-world settings",
+        "B  costs too much to implement",
+        "C  can be paternalistic",
+        "D  ignores economic incentives entirely"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer says critics argue 'it can be paternalistic'"
+    },
+    {
+      "id": "ielts-listening-005-q40",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 40,
+      "prompt": "How are governments described as responding to behavioural insights research?",
+      "options": [
+        "A  banning unhealthy food products",
+        "B  making pension contributions compulsory",
+        "C  investing in behavioural insights units",
+        "D  removing consumer choice from markets"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer says 'governments worldwide are investing in behavioural insights units'"
+    }
+  ],
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Part 1: Biomimicry in Engineering",
+      "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "context": "Professor explains principles of biomimicry with examples from aeronautics and materials science.",
+      "questionRange": [
+        1,
+        10
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Part 2: Urban Migration Patterns",
+      "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
+      "context": "Speaker discusses push-pull factors, infrastructure challenges, and policy responses.",
+      "questionRange": [
+        11,
+        20
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title": "Part 3: The History of Coffee Trade",
+      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "questionRange": [
+        21,
+        30
+      ]
+    },
+    {
+      "partNumber": 4,
+      "title": "Part 4: Sleep and Memory Consolidation",
+      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
+      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "questionRange": [
+        31,
+        40
+      ]
+    }
+  ]
+}

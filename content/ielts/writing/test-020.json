@@ -1,0 +1,91 @@
+{
+  "id": "ielts-writing-020",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 20",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-020-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The charts compare the percentage of energy produced from different sources in a country in 2000 and 2022. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "fossil fuels",
+      "modelAnswer": "The two pie charts illustrate the proportion of electricity generated from five different sources in a particular country in the years 2000 and 2022.\n\nOverall, the most striking trend is the significant decline in coal's contribution and the substantial rise of natural gas and renewable energy sources. Oil and nuclear power saw relatively minor changes, with nuclear remaining constant.\n\nIn 2000, coal was by far the dominant energy source, accounting for 45% of total production. Natural gas followed at 25%, while oil contributed 20%. Renewable energy and nuclear power each supplied a modest 5% of the country's electricity. By 2022, coal's share had dramatically fallen to just 20%, a decrease of 25 percentage points. Conversely, natural gas became the leading source, increasing to 35%, and renewables experienced a five-fold increase, rising from 5% to 25% of the total energy mix. The proportion of oil decreased slightly from 20% to 15%, while nuclear power maintained its 5% share in both years.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Energy Production Sources in a Country (2000 vs. 2022)",
+        "slices": [
+          {
+            "label": "Coal (2000)",
+            "value": 45
+          },
+          {
+            "label": "Natural Gas (2000)",
+            "value": 25
+          },
+          {
+            "label": "Oil (2000)",
+            "value": 20
+          },
+          {
+            "label": "Renewables (2000)",
+            "value": 5
+          },
+          {
+            "label": "Nuclear (2000)",
+            "value": 5
+          },
+          {
+            "label": "Coal (2022)",
+            "value": 20
+          },
+          {
+            "label": "Natural Gas (2022)",
+            "value": 35
+          },
+          {
+            "label": "Oil (2022)",
+            "value": 15
+          },
+          {
+            "label": "Renewables (2022)",
+            "value": 25
+          },
+          {
+            "label": "Nuclear (2022)",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-020-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Many governments are trying to reduce their dependence on fossil fuels. What obstacles do they face, and how might these obstacles be overcome?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "fossil fuels",
+      "modelAnswer": "Governments worldwide are increasingly committed to lessening their reliance on fossil fuels. This transition, while crucial for environmental sustainability, is fraught with significant challenges, yet these can be effectively addressed through concerted international effort and technological innovation.\n\nOne primary obstacle is the colossal upfront investment required for renewable energy infrastructure. Shifting from established fossil fuel networks to nascent green technologies necessitates immense capital expenditure for the construction of solar farms, wind parks, and advanced battery storage facilities. For instance, developing nations, despite their vulnerability to climate change, often lack the financial muscle to undertake such large-scale projects without substantial external assistance. Overcoming this hurdle will demand robust international financing mechanisms, such as low-interest loans from development banks and grants from wealthier nations, alongside public-private partnerships that incentivise investment in green energy.\n\nFurthermore, the intermittency of many renewable sources presents a considerable technical challenge. Solar power is unavailable at night, and wind generation fluctuates, leading to inconsistencies in electricity supply that traditional grids struggle to manage. Germany, despite its ambitious Energiewende, still grapples with grid stability issues during periods of low wind and sunshine, occasionally relying on conventional power plants as backup. The solution lies in accelerating research and development into advanced energy storage solutions, including grid-scale batteries and hydrogen fuel cells, alongside smart grid technologies that optimise energy distribution and demand response. Additionally, diversifying the renewable energy mix to include geothermal or hydroelectric power, where feasible, can provide greater stability.\n\nIn conclusion, while the financial outlay and technical inconsistencies of renewable energy pose considerable barriers to reducing fossil fuel dependence, these are not insurmountable. Through strategic international funding and continuous innovation in energy storage and grid management, governments can successfully navigate this transition towards a sustainable energy future."
+    }
+  ],
+  "variant": "academic"
+}

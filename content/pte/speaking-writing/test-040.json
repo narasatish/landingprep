@@ -1,0 +1,709 @@
+{
+  "id": "pte-speaking-writing-040",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 40",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-040-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Tenant Rights and Responsibilities”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "housing and tenancy",
+      "modelAnswer": "Understanding tenancy agreements is crucial for both landlords and tenants. A standard lease outlines rent payment schedules, maintenance responsibilities, and conditions for termination. Tenants are generally expected to maintain the property in good condition, while landlords are responsible for major repairs and ensuring the property is habitable. Disputes often arise from unclear clauses or misunderstandings of legal obligations, emphasizing the need for thorough review before signing.",
+      "readText": "Understanding tenancy agreements is crucial for both landlords and tenants. A standard lease outlines rent payment schedules, maintenance responsibilities, and conditions for termination. Tenants are generally expected to maintain the property in good condition, while landlords are responsible for major repairs and ensuring the property is habitable. Disputes often arise from unclear clauses or misunderstandings of legal obligations, emphasizing the need for thorough review before signing."
+    },
+    {
+      "id": "pte-speaking-writing-040-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Rental Market Trends”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Rising interest rates have significantly impacted housing affordability and rental market dynamics.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "housing and tenancy",
+      "modelAnswer": "Rising interest rates have significantly impacted housing affordability and rental market dynamics.",
+      "audioScript": "Rising interest rates have significantly impacted housing affordability and rental market dynamics."
+    },
+    {
+      "id": "pte-speaking-writing-040-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Average Monthly Rent by Property Type (Downtown City)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "housing and tenancy",
+      "modelAnswer": "This bar chart illustrates the average monthly rent for different property types in Downtown City. The highest average rent is for a 3-bedroom house at 3500 AUD, significantly higher than other options. A 2-bedroom apartment costs 2800 AUD, while a townhouse is slightly less at 3000 AUD. The most affordable option is a studio apartment, priced at 1500 AUD, followed by a 1-bedroom apartment at 2000 AUD. This clearly shows a direct correlation between property size and rental cost in this area.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Average Monthly Rent by Property Type (Downtown City)",
+        "yLabel": "Average Monthly Rent (AUD)",
+        "xAxis": [
+          "Studio",
+          "1-Bedroom Apartment",
+          "2-Bedroom Apartment",
+          "3-Bedroom House",
+          "Townhouse"
+        ],
+        "series": [
+          {
+            "label": "Rent",
+            "values": [
+              1500,
+              2000,
+              2800,
+              3500,
+              3000
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-040-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Tenant-Landlord Legal Framework”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "housing and tenancy",
+      "modelAnswer": "The lecture discussed the legal framework for tenant-landlord relationships, emphasizing a balance of rights and responsibilities. Tenants are entitled to a safe home, privacy, and fair treatment, while being responsible for rent and property upkeep. Landlords must ensure safety, conduct repairs, and respect privacy. Understanding local housing laws and maintaining clear communication are crucial for managing potential disputes effectively.",
+      "audioScript": "The legal framework governing tenant-landlord relationships is designed to balance the rights and responsibilities of both parties. Tenants have the right to a safe and habitable living environment, privacy, and fair treatment. They are responsible for paying rent on time, maintaining the property, and adhering to lease terms. Landlords, in turn, must ensure the property meets safety standards, perform necessary repairs, and respect tenant privacy. Disputes, if they arise, often involve clear communication and understanding of local housing laws, which can vary significantly.",
+      "keyPoints": [
+        "Balance of rights and responsibilities",
+        "Tenant rights: safety, privacy, fair treatment",
+        "Tenant responsibilities: pay rent, maintain property",
+        "Landlord responsibilities: safety standards, repairs, privacy"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-040-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Common Housing Type”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Tenant",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "housing and tenancy",
+      "modelAnswer": "Tenant",
+      "audioScript": "What is a common term for a person who rents a property from a landlord?"
+    },
+    {
+      "id": "pte-speaking-writing-040-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Navigating Rental Applications”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "housing and tenancy",
+      "wordTarget": 75,
+      "modelAnswer": "The rental application process requires prospective tenants to provide income proof, references, and undergo credit checks, allowing landlords to assess reliability and financial capability in competitive markets.",
+      "readText": "Securing a rental property often involves a comprehensive application process. Prospective tenants typically need to provide proof of income, references from previous landlords or employers, and a credit check. Landlords use this information to assess a candidate's reliability and ability to meet financial obligations. A strong application demonstrates stability and a history of responsible tenancy, which can be crucial in competitive rental markets. Understanding what landlords look for can significantly improve a candidate's chances of approval."
+    },
+    {
+      "id": "pte-speaking-writing-040-q07",
+      "questionType": "write_essay",
+      "prompt": "Governments should invest more in public parks and green spaces in cities. To what extent do you agree or disagree?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "housing and tenancy",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Bilingualism's Cognitive Advantages”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q08",
+      "modelAnswer": "Bilingualism offers significant cognitive advantages beyond mere language proficiency. Research indicates that individuals fluent in two or more languages often exhibit enhanced problem-solving skills, better multitasking abilities, and improved selective attention. The constant mental toggling between languages strengthens executive functions, leading to greater cognitive flexibility. These benefits extend across the lifespan, potentially delaying the onset of age-related cognitive decline, making bilingualism a powerful asset for brain health.",
+      "readText": "Bilingualism offers significant cognitive advantages beyond mere language proficiency. Research indicates that individuals fluent in two or more languages often exhibit enhanced problem-solving skills, better multitasking abilities, and improved selective attention. The constant mental toggling between languages strengthens executive functions, leading to greater cognitive flexibility. These benefits extend across the lifespan, potentially delaying the onset of age-related cognitive decline, making bilingualism a powerful asset for brain health."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Microbiomes and Human Wellness”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q09",
+      "modelAnswer": "The human microbiome, a complex ecosystem of microorganisms residing within and on our bodies, plays a pivotal role in overall health. These microbial communities, particularly in the gut, influence digestion, nutrient absorption, and immune system development. Imbalances in the microbiome have been linked to various conditions, including metabolic disorders, allergies, and even neurological diseases. Understanding and nurturing a diverse, healthy microbiome is increasingly recognized as fundamental to preventative medicine and well-being.",
+      "readText": "The human microbiome, a complex ecosystem of microorganisms residing within and on our bodies, plays a pivotal role in overall health. These microbial communities, particularly in the gut, influence digestion, nutrient absorption, and immune system development. Imbalances in the microbiome have been linked to various conditions, including metabolic disorders, allergies, and even neurological diseases. Understanding and nurturing a diverse, healthy microbiome is increasingly recognized as fundamental to preventative medicine and well-being."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Preservation of Culture”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q10",
+      "modelAnswer": "The digital age presents both challenges and unparalleled opportunities for cultural heritage preservation. Digitizing ancient texts, artifacts, and historical sites ensures their accessibility to a global audience and safeguards them against physical degradation or loss. However, maintaining the authenticity and long-term viability of digital archives requires significant investment in technology, expertise, and standardized practices. Balancing innovation with traditional curatorial principles is key to securing our shared cultural legacy for future generations.",
+      "readText": "The digital age presents both challenges and unparalleled opportunities for cultural heritage preservation. Digitizing ancient texts, artifacts, and historical sites ensures their accessibility to a global audience and safeguards them against physical degradation or loss. However, maintaining the authenticity and long-term viability of digital archives requires significant investment in technology, expertise, and standardized practices. Balancing innovation with traditional curatorial principles is key to securing our shared cultural legacy for future generations."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Brain Plasticity and Learning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q11",
+      "modelAnswer": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, underpins the concept of lifelong learning. Far from being a static organ, the brain continuously adapts in response to new experiences, knowledge acquisition, and environmental changes. This inherent flexibility allows individuals to develop new skills, recover from injuries, and maintain cognitive vitality well into old age. Embracing new challenges actively promotes neuroplasticity, fostering intellectual growth and resilience.",
+      "readText": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, underpins the concept of lifelong learning. Far from being a static organ, the brain continuously adapts in response to new experiences, knowledge acquisition, and environmental changes. This inherent flexibility allows individuals to develop new skills, recover from injuries, and maintain cognitive vitality well into old age. Embracing new challenges actively promotes neuroplasticity, fostering intellectual growth and resilience."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Biodiversity and Ecosystem Health”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q12",
+      "modelAnswer": "Biodiversity loss poses a severe threat to ecosystem services, which are the essential benefits nature provides to humanity. Healthy ecosystems, rich in diverse species, regulate climate, purify water, pollinate crops, and control pests. When biodiversity declines, these critical services are compromised, leading to profound environmental and economic consequences. Protecting and restoring biodiversity is therefore not merely an ecological imperative but a fundamental requirement for human well-being and sustainable development.",
+      "readText": "Biodiversity loss poses a severe threat to ecosystem services, which are the essential benefits nature provides to humanity. Healthy ecosystems, rich in diverse species, regulate climate, purify water, pollinate crops, and control pests. When biodiversity declines, these critical services are compromised, leading to profound environmental and economic consequences. Protecting and restoring biodiversity is therefore not merely an ecological imperative but a fundamental requirement for human well-being and sustainable development."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ocean acidification is threatening marine biodiversity by dissolving the shells of many sea creatures.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Oceanic Acidification Impact”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q13",
+      "modelAnswer": "Ocean acidification is threatening marine biodiversity by dissolving the shells of many sea creatures.",
+      "audioScript": "Ocean acidification is threatening marine biodiversity by dissolving the shells of many sea creatures."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The neuroscience of creativity explores how brain networks interact to produce novel ideas and solutions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Creativity's Neural Basis”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q14",
+      "modelAnswer": "The neuroscience of creativity explores how brain networks interact to produce novel ideas and solutions.",
+      "audioScript": "The neuroscience of creativity explores how brain networks interact to produce novel ideas and solutions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Global water scarcity demands urgent conservation efforts and innovative water management strategies.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Water Scarcity Global Issue”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q15",
+      "modelAnswer": "Global water scarcity demands urgent conservation efforts and innovative water management strategies.",
+      "audioScript": "Global water scarcity demands urgent conservation efforts and innovative water management strategies."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Genetic engineering raises profound ethical considerations regarding human intervention in natural processes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ethical Gene Editing”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q16",
+      "modelAnswer": "Genetic engineering raises profound ethical considerations regarding human intervention in natural processes.",
+      "audioScript": "Genetic engineering raises profound ethical considerations regarding human intervention in natural processes."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Recent quantum computing breakthroughs promise to revolutionize fields like medicine and material science.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Quantum Computing Advances”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q17",
+      "modelAnswer": "Recent quantum computing breakthroughs promise to revolutionize fields like medicine and material science.",
+      "audioScript": "Recent quantum computing breakthroughs promise to revolutionize fields like medicine and material science."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Childhood nutrition profoundly influences cognitive development and long-term academic achievement.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Nutrition and Child Development”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q18",
+      "modelAnswer": "Childhood nutrition profoundly influences cognitive development and long-term academic achievement.",
+      "audioScript": "Childhood nutrition profoundly influences cognitive development and long-term academic achievement."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Machine learning applications in healthcare are transforming diagnostics, treatment, and drug discovery processes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “AI in Healthcare”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q19",
+      "modelAnswer": "Machine learning applications in healthcare are transforming diagnostics, treatment, and drug discovery processes.",
+      "audioScript": "Machine learning applications in healthcare are transforming diagnostics, treatment, and drug discovery processes."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial mechanics.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ancient Astronomy History”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q20",
+      "modelAnswer": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial mechanics.",
+      "audioScript": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial mechanics."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The impact of noise pollution on wildlife includes disrupted foraging, breeding, and migratory patterns.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Noise Pollution's Wildlife Effect”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q21",
+      "modelAnswer": "The impact of noise pollution on wildlife includes disrupted foraging, breeding, and migratory patterns.",
+      "audioScript": "The impact of noise pollution on wildlife includes disrupted foraging, breeding, and migratory patterns."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Key Stages and Inputs/Outputs of Photosynthesis\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q22",
+      "modelAnswer": "This table illustrates the key stages of photosynthesis, detailing their locations, inputs, and outputs. The first stage, Light-Dependent Reactions, occurs in the Thylakoid Membranes, utilizing light energy and water to produce oxygen, ATP, and NADPH. The second stage, Light-Independent Reactions, also known as the Calvin Cycle, takes place in the Stroma. It consumes carbon dioxide, ATP, and NADPH to yield glucose, ADP, and NADP+. A clear distinction is seen in inputs: light energy and water for the first stage, versus carbon dioxide for the second, highlighting the transformation from light energy capture to sugar synthesis.",
+      "visual": {
+        "chartType": "table",
+        "title": "Key Stages and Inputs/Outputs of Photosynthesis",
+        "headers": [
+          "Stage",
+          "Location",
+          "Inputs",
+          "Outputs"
+        ],
+        "rows": [
+          [
+            "Light-Dependent Reactions",
+            "Thylakoid Membranes",
+            "Light Energy, Water (H2O)",
+            "Oxygen (O2), ATP, NADPH"
+          ],
+          [
+            "Light-Independent Reactions (Calvin Cycle)",
+            "Stroma",
+            "Carbon Dioxide (CO2), ATP, NADPH",
+            "Glucose (C6H12O6), ADP, NADP+"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Population Growth Projections (2000-2100)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q23",
+      "modelAnswer": "The line chart illustrates global population growth projections from 2000 to 2100. In 2000, the world population stood at 6.1 billion, steadily rising to 7.8 billion by 2020. Projections indicate a peak around 10.9 billion by 2100, showing a significant upward trend throughout the century. The steepest growth occurs between 2000 and 2050, increasing by over 3.5 billion people. After 2070, the growth rate appears to slow down considerably, though the population continues to increase, reaching its highest point by the end of the projection period.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Population Growth Projections (2000-2100)",
+        "yLabel": "Population (Billions)",
+        "xAxis": [
+          "2000",
+          "2010",
+          "2020",
+          "2030",
+          "2040",
+          "2050",
+          "2060",
+          "2070",
+          "2080",
+          "2090",
+          "2100"
+        ],
+        "series": [
+          {
+            "label": "World Population",
+            "values": [
+              6.1,
+              6.9,
+              7.8,
+              8.5,
+              9.1,
+              9.7,
+              10.1,
+              10.4,
+              10.6,
+              10.8,
+              10.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Top 5 Languages by Native Speakers Worldwide (Millions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q24",
+      "modelAnswer": "This bar chart illustrates the top five languages by native speakers globally. Mandarin Chinese clearly dominates with approximately 920 million native speakers, making it the most spoken language. Spanish follows, with around 480 million native speakers, significantly less than Mandarin but still a major global language. English ranks third at 380 million, slightly above Hindi's 340 million. Arabic is shown as the fifth most spoken language, with approximately 310 million native speakers. The data highlights the vast difference in native speaker populations among these prominent languages, with Mandarin having almost three times more than Arabic.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Top 5 Languages by Native Speakers Worldwide (Millions)",
+        "yLabel": "Number of Native Speakers (Millions)",
+        "xAxis": [
+          "Mandarin Chinese",
+          "Spanish",
+          "English",
+          "Hindi",
+          "Arabic"
+        ],
+        "series": [
+          {
+            "label": "Native Speakers",
+            "values": [
+              920,
+              480,
+              380,
+              340,
+              310
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Ocean pH Levels (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q25",
+      "modelAnswer": "This line graph illustrates the trend of global average ocean pH levels from 1990 to 2020. The Y-axis represents the pH level, while the X-axis shows the years. Starting at approximately 8.12 in 1990, the pH level exhibits a consistent downward trend, indicating increasing ocean acidification. By 2005, it dropped to 8.06, and by 2020, it reached its lowest point at 8.00. This significant decline of 0.12 pH units over thirty years highlights a concerning environmental change, with ocean pH decreasing steadily across the entire period shown.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Ocean pH Levels (1990-2020)",
+        "yLabel": "pH Level",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Ocean pH",
+            "values": [
+              8.12,
+              8.1,
+              8.08,
+              8.06,
+              8.04,
+              8.02,
+              8
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global Water Usage by Sector\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q26",
+      "modelAnswer": "This pie chart illustrates global water usage across different sectors. The most significant portion, 70%, is consumed by agriculture, highlighting its dominant role in worldwide water demand. Industry accounts for the second largest share, utilizing 20% of the total water. Finally, domestic use, including household consumption, represents the smallest segment at 10%. This clearly indicates that agriculture is by far the biggest consumer of water globally, vastly outweighing industrial and domestic needs combined.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global Water Usage by Sector",
+        "slices": [
+          {
+            "label": "Agriculture",
+            "value": 70
+          },
+          {
+            "label": "Industry",
+            "value": 20
+          },
+          {
+            "label": "Domestic",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q27",
+      "modelAnswer": "The lecture discussed the critical role of non-verbal communication in human interaction. It highlighted how body language, facial expressions, gestures, and vocal tone convey messages, often subconsciously, reinforcing or contradicting spoken words. A large part of communication is non-verbal, making awareness of these cues vital. The speaker also noted that cultural differences in non-verbal signals can lead to significant misunderstandings, emphasizing the need for heightened awareness.",
+      "audioScript": "Non-verbal communication is a powerful, often subconscious, aspect of human interaction. It encompasses body language, facial expressions, gestures, and even tone of voice, conveying messages that can reinforce, contradict, or substitute for spoken words. Research shows that a significant portion of communication is non-verbal, highlighting its importance in conveying emotions, attitudes, and intentions. Misinterpretations of these cues can lead to misunderstandings, especially across different cultures where gestures and expressions may carry varied meanings. Developing awareness of non-verbal signals enhances effective communication.",
+      "keyPoints": [
+        "Non-verbal communication includes body language, facial expressions, gestures, tone.",
+        "Conveys emotions, attitudes, intentions, often subconsciously.",
+        "Significant portion of overall communication.",
+        "Cultural variations can lead to misunderstandings."
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “The Evolution of Digital Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q28",
+      "modelAnswer": "The lecture focused on the evolution of digital communication and its impact on human interaction. It traced the progression from early email to modern social media and video conferencing, noting how these technologies enable rapid, global information exchange. However, the speaker also emphasized the challenges, such as information overload, privacy issues, and the risk of miscommunication due to the lack of non-verbal cues, stressing the need to understand each medium's nuances.",
+      "audioScript": "The evolution of digital communication has fundamentally reshaped how humans interact. From early email to instant messaging, social media, and video conferencing, technology has continuously offered new avenues for connection. While these platforms facilitate rapid information exchange and global reach, they also introduce challenges like information overload, privacy concerns, and the potential for miscommunication due to the absence of non-verbal cues. Understanding the nuances of each digital medium is crucial for effective and responsible communication in our increasingly connected world.",
+      "keyPoints": [
+        "Digital communication transformed human interaction.",
+        "Evolution from email to social media and video conferencing.",
+        "Facilitates rapid information exchange and global reach.",
+        "Challenges: information overload, privacy, miscommunication without non-verbal cues."
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q29",
+      "modelAnswer": "Verbal",
+      "audioScript": "What type of communication uses spoken words?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Email",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Channel Example”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q30",
+      "modelAnswer": "Email",
+      "audioScript": "What is a common digital channel for sending written messages quickly?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Listening",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Listening Skill”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q31",
+      "modelAnswer": "Listening",
+      "audioScript": "What skill is essential for understanding spoken communication?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Nod",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Non-Verbal Gesture”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-040-q32",
+      "modelAnswer": "Nod",
+      "audioScript": "What is a common non-verbal gesture used to indicate agreement?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Preventing Chronic Disease”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-040-q33",
+      "modelAnswer": "Adopting a balanced diet and engaging in regular physical activity are crucial lifestyle factors that significantly prevent and manage chronic diseases by improving metabolic health and reducing risk factors.",
+      "readText": "Chronic diseases like heart disease, diabetes, and certain cancers are leading causes of mortality worldwide. While genetics play a role, lifestyle factors, particularly diet and exercise, are overwhelmingly influential in their prevention and management. A balanced diet rich in fruits, vegetables, and whole grains, combined with regular physical activity, significantly reduces risk. These habits contribute to maintaining a healthy weight, regulating blood pressure and cholesterol, and improving overall metabolic health, thereby offering a powerful defense against many debilitating conditions."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Digital communication has revolutionized how we interact, work, and learn. Discuss the significant advantages and disadvantages of this shift in communication, providing examples to support your arguments.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-040-q34",
+      "modelAnswer": "The advent of digital communication has ushered in an era of unprecedented connectivity, profoundly transforming nearly every facet of human existence. One of its most significant advantages is the immediate and widespread dissemination of information. Platforms like email, instant messaging, and social media enable individuals and organizations to communicate across geographical boundaries in real-time, fostering global collaboration in business and academia. For instance, remote teams can coordinate complex projects seamlessly, and students can access educational resources from anywhere in the world. Furthermore, digital communication democratizes access to information and facilitates the rapid spread of news and ideas, often empowering social movements and civic engagement. \n\nHowever, this technological leap is not without its drawbacks. A primary disadvantage is the potential for information overload and reduced attention spans. The constant influx of notifications and messages can create a sense of urgency and distraction, hindering deep work and focused learning. Moreover, the impersonal nature of digital interactions, often devoid of non-verbal cues, can lead to misinterpretations, strained relationships, and a decline in face-to-face social skills. Concerns about privacy and cybersecurity are also paramount, as personal data shared online is vulnerable to breaches and misuse. The spread of misinformation and disinformation, amplified by social media algorithms, poses another serious threat to informed public discourse. In conclusion, while digital communication offers unparalleled efficiency and reach, its benefits must be weighed against its challenges, necessitating mindful usage and robust digital literacy to mitigate its negative impacts."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "In an age of increasing technological surveillance, employers often monitor employees' online activities and communications. To what extent do you agree or disagree that companies have the right to monitor their employees' digital footprint, and what are the implications for privacy and productivity?",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-040-q35",
+      "modelAnswer": "The debate surrounding employer monitoring of employees' digital footprint is complex, balancing legitimate business interests against individual privacy rights. While I acknowledge some justification for monitoring, I largely disagree with extensive surveillance, believing it has more detrimental implications for privacy and productivity than benefits.\n\nProponents argue that monitoring is necessary for security, preventing data breaches, ensuring compliance with company policies, and protecting intellectual property. For example, a financial institution might monitor communications to prevent insider trading or ensure regulatory adherence. Similarly, companies might track internet usage to deter employees from accessing inappropriate content or engaging in activities that waste company time, thereby ostensibly boosting productivity. From this perspective, digital monitoring is a tool for risk management and maintaining a productive, secure work environment.\n\nHowever, the implications for employee privacy are profound and often negative. Constant surveillance can create a climate of distrust and anxiety, making employees feel that their personal space is being invaded, even during work hours. This erosion of privacy can lead to decreased morale and loyalty. Furthermore, the assumption that monitoring automatically equates to increased productivity is flawed. Instead, employees might become overly cautious, self-censoring their communications and activities, which can stifle creativity, open communication, and innovation. An environment where every action is scrutinized can breed resentment and disengagement, ultimately harming productivity rather than enhancing it. It also blurs the lines between professional and personal life, especially with the rise of remote work where personal devices might be used for work tasks.\n\nIn conclusion, while a minimal level of monitoring might be defensible for specific security or compliance reasons, pervasive surveillance of employees' digital footprints is an overreach. It significantly undermines privacy, fosters a culture of mistrust, and can paradoxically reduce productivity by stifling autonomy and creativity. A balanced approach that respects employee privacy while addressing genuine business needs is crucial for a healthy and effective workplace."
+    }
+  ]
+}

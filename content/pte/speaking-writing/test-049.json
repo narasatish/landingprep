@@ -1,0 +1,717 @@
+{
+  "id": "pte-speaking-writing-049",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 49",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-049-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Holistic Senior Care Approaches”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "senior care services",
+      "modelAnswer": "Modern senior care services increasingly emphasize holistic approaches, integrating physical health with mental well-being and social engagement. This shift reflects a growing understanding that comprehensive support significantly enhances the quality of life for older adults. Providers are now focusing on personalized care plans, incorporating activities that stimulate cognitive function, foster community connections, and ensure emotional stability, moving beyond mere medical attention to address the full spectrum of needs.",
+      "readText": "Modern senior care services increasingly emphasize holistic approaches, integrating physical health with mental well-being and social engagement. This shift reflects a growing understanding that comprehensive support significantly enhances the quality of life for older adults. Providers are now focusing on personalized care plans, incorporating activities that stimulate cognitive function, foster community connections, and ensure emotional stability, moving beyond mere medical attention to address the full spectrum of needs."
+    },
+    {
+      "id": "pte-speaking-writing-049-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Community-Based Senior Support”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Community-based programs are crucial for providing accessible senior care services to a diverse population.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "senior care services",
+      "modelAnswer": "Community-based programs are crucial for providing accessible senior care services to a diverse population.",
+      "audioScript": "Community-based programs are crucial for providing accessible senior care services to a diverse population."
+    },
+    {
+      "id": "pte-speaking-writing-049-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Senior Care Service Preferences (Ages 75+)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "senior care services",
+      "modelAnswer": "This bar chart illustrates senior care service preferences among individuals aged 75 and above. The most preferred option is clearly In-Home Care, chosen by 65% of respondents, indicating a strong desire to remain in their own homes. Family Support is also highly valued at 55%. In contrast, Nursing Homes are the least preferred, with only 15% of seniors opting for this service. Assisted Living and Community Programs show moderate preferences at 40% and 30% respectively. Overall, there's a significant inclination towards care that allows seniors to maintain independence and family connection.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Senior Care Service Preferences (Ages 75+)",
+        "yLabel": "Percentage of Respondents",
+        "xAxis": [
+          "In-Home Care",
+          "Assisted Living",
+          "Nursing Home",
+          "Community Programs",
+          "Family Support"
+        ],
+        "series": [
+          {
+            "label": "Preferences",
+            "values": [
+              65,
+              40,
+              15,
+              30,
+              55
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-049-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Aged Care Challenges”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "senior care services",
+      "modelAnswer": "The lecture discusses the complex challenges in providing aged care for growing elderly populations. It highlights the increasing demand for care and the financial strain on healthcare systems. A major issue is the scarcity of trained caregivers, alongside the necessity for new technologies to aid independent living. The speaker emphasized that governments, communities, and families must collaborate to develop sustainable and high-quality care solutions for older adults.",
+      "audioScript": "The global challenge of providing adequate aged care services for rapidly ageing populations is multifaceted. It encompasses not only the escalating demand for medical and personal care but also the economic burden on national healthcare systems. Furthermore, there's a significant shortage of skilled caregivers, coupled with the need for innovative technological solutions to support independent living. Addressing these issues requires a coordinated effort from governments, communities, and families to ensure sustainable, high-quality care for our elders.",
+      "keyPoints": [
+        "Escalating demand and economic burden",
+        "Shortage of skilled caregivers",
+        "Need for technological solutions",
+        "Coordinated effort for sustainable care"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-049-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Senior Care Terminology”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Senior care",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "senior care services",
+      "modelAnswer": "Senior care",
+      "audioScript": "What is the term for professional assistance provided to elderly individuals?"
+    },
+    {
+      "id": "pte-speaking-writing-049-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Innovation in Elder Support”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "senior care services",
+      "wordTarget": 75,
+      "modelAnswer": "Innovations like smart home technology and telehealth are revolutionizing senior care by enabling personalized, cost-effective, and independent living solutions for older adults, enhancing their autonomy and safety at home.",
+      "readText": "Innovations in senior care services are transforming how older adults receive support, moving towards more personalized and technology-assisted models. Smart home devices, remote monitoring systems, and telehealth platforms are becoming integral, enabling seniors to maintain independence and safety in their own homes for longer. This shift not only enhances quality of life but also offers more cost-effective alternatives to traditional institutional care. The focus is on empowering individuals with tools that adapt to their evolving needs, fostering a sense of autonomy and connection."
+    },
+    {
+      "id": "pte-speaking-writing-049-q07",
+      "questionType": "write_essay",
+      "prompt": "Many people believe that consumer culture encourages people to buy things they do not need. To what extent do you agree or disagree?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "senior care services",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Renewable Energy Transition”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q08",
+      "modelAnswer": "Transitioning to renewable energy sources is a cornerstone of climate change mitigation strategies, significantly reducing greenhouse gas emissions. Investment in solar, wind, and hydropower not only diversifies energy portfolios but also creates green jobs and fosters technological innovation. However, challenges remain in grid integration, energy storage, and ensuring equitable access to these technologies globally. Overcoming these hurdles is essential for achieving a sustainable, low-carbon future and limiting global warming.",
+      "readText": "Transitioning to renewable energy sources is a cornerstone of climate change mitigation strategies, significantly reducing greenhouse gas emissions. Investment in solar, wind, and hydropower not only diversifies energy portfolios but also creates green jobs and fosters technological innovation. However, challenges remain in grid integration, energy storage, and ensuring equitable access to these technologies globally. Overcoming these hurdles is essential for achieving a sustainable, low-carbon future and limiting global warming."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Food Production Economics”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q09",
+      "modelAnswer": "The economics of global food production are complex, influenced by factors such as climate change, geopolitical stability, and technological advancements. Supply chain disruptions, fluctuating commodity prices, and consumer demand patterns all play critical roles in determining food security and accessibility worldwide. Sustainable agricultural practices and efficient resource management are becoming increasingly vital to ensure a stable and equitable food system for a growing global population, addressing both economic viability and environmental impact.",
+      "readText": "The economics of global food production are complex, influenced by factors such as climate change, geopolitical stability, and technological advancements. Supply chain disruptions, fluctuating commodity prices, and consumer demand patterns all play critical roles in determining food security and accessibility worldwide. Sustainable agricultural practices and efficient resource management are becoming increasingly vital to ensure a stable and equitable food system for a growing global population, addressing both economic viability and environmental impact."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Space Colonisation Hurdles”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q10",
+      "modelAnswer": "Space exploration and colonization present monumental challenges, ranging from extreme environmental conditions to the psychological impact of isolation. Developing self-sustaining habitats, ensuring long-term resource availability, and protecting against radiation are critical engineering feats. Furthermore, the ethical considerations of planetary protection and potential life discovery add layers of complexity. Overcoming these obstacles requires unprecedented international collaboration, scientific innovation, and significant financial investment to realize humanity's extraterrestrial ambitions.",
+      "readText": "Space exploration and colonization present monumental challenges, ranging from extreme environmental conditions to the psychological impact of isolation. Developing self-sustaining habitats, ensuring long-term resource availability, and protecting against radiation are critical engineering feats. Furthermore, the ethical considerations of planetary protection and potential life discovery add layers of complexity. Overcoming these obstacles requires unprecedented international collaboration, scientific innovation, and significant financial investment to realize humanity's extraterrestrial ambitions."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Cognitive Biases in Decisions”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q11",
+      "modelAnswer": "The psychology of decision-making reveals that human choices are often influenced by cognitive biases rather than pure rationality. Heuristics, or mental shortcuts, can lead to systematic errors in judgment, affecting everything from financial investments to daily consumer choices. Understanding these biases, such as confirmation bias or anchoring, is crucial for improving critical thinking and making more informed decisions. Education and self-awareness can help individuals recognize and mitigate their impact.",
+      "readText": "The psychology of decision-making reveals that human choices are often influenced by cognitive biases rather than pure rationality. Heuristics, or mental shortcuts, can lead to systematic errors in judgment, affecting everything from financial investments to daily consumer choices. Understanding these biases, such as confirmation bias or anchoring, is crucial for improving critical thinking and making more informed decisions. Education and self-awareness can help individuals recognize and mitigate their impact."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Urban Transport Evolution”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q12",
+      "modelAnswer": "The evolution of public transport systems reflects changing urban landscapes and technological progress. From horse-drawn omnibuses to electric trams, and now to autonomous vehicles and hyperloops, each innovation has aimed to enhance efficiency, reduce congestion, and improve accessibility. Future developments are focused on integrated multimodal networks, leveraging data analytics and smart infrastructure to create seamless, sustainable, and user-centric mobility solutions for growing metropolitan areas worldwide.",
+      "readText": "The evolution of public transport systems reflects changing urban landscapes and technological progress. From horse-drawn omnibuses to electric trams, and now to autonomous vehicles and hyperloops, each innovation has aimed to enhance efficiency, reduce congestion, and improve accessibility. Future developments are focused on integrated multimodal networks, leveraging data analytics and smart infrastructure to create seamless, sustainable, and user-centric mobility solutions for growing metropolitan areas worldwide."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation directly impacts indigenous land rights and traditional ways of life.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation and Indigenous Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q13",
+      "modelAnswer": "Deforestation directly impacts indigenous land rights and traditional ways of life.",
+      "audioScript": "Deforestation directly impacts indigenous land rights and traditional ways of life."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Social media has fundamentally reshaped the landscape of modern communication and interaction.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Communication Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q14",
+      "modelAnswer": "Social media has fundamentally reshaped the landscape of modern communication and interaction.",
+      "audioScript": "Social media has fundamentally reshaped the landscape of modern communication and interaction."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration often leads to complex processes of cultural integration and adaptation.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Cultural Integration”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q15",
+      "modelAnswer": "International migration often leads to complex processes of cultural integration and adaptation.",
+      "audioScript": "International migration often leads to complex processes of cultural integration and adaptation."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation are transforming industries and labor markets globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Economics of Automation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q16",
+      "modelAnswer": "The economics of automation are transforming industries and labor markets globally.",
+      "audioScript": "The economics of automation are transforming industries and labor markets globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Significant investment is required for renewable energy infrastructure to meet future demands.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q17",
+      "modelAnswer": "Significant investment is required for renewable energy infrastructure to meet future demands.",
+      "audioScript": "Significant investment is required for renewable energy infrastructure to meet future demands."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Urban heat islands require effective mitigation strategies, like green infrastructure, to reduce temperatures.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Heat Island Mitigation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q18",
+      "modelAnswer": "Urban heat islands require effective mitigation strategies, like green infrastructure, to reduce temperatures.",
+      "audioScript": "Urban heat islands require effective mitigation strategies, like green infrastructure, to reduce temperatures."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Financial literacy is essential for economic inclusion and individual prosperity in modern society.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Financial Literacy and Inclusion”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q19",
+      "modelAnswer": "Financial literacy is essential for economic inclusion and individual prosperity in modern society.",
+      "audioScript": "Financial literacy is essential for economic inclusion and individual prosperity in modern society."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Nanotechnology is revolutionizing materials science, enabling the creation of novel substances.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Nanotechnology in Materials”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q20",
+      "modelAnswer": "Nanotechnology is revolutionizing materials science, enabling the creation of novel substances.",
+      "audioScript": "Nanotechnology is revolutionizing materials science, enabling the creation of novel substances."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The science of sleep plays a crucial role in memory consolidation and cognitive function.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Sleep and Memory Science”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q21",
+      "modelAnswer": "The science of sleep plays a crucial role in memory consolidation and cognitive function.",
+      "audioScript": "The science of sleep plays a crucial role in memory consolidation and cognitive function."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Carbon Dioxide Concentration (1800-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q22",
+      "modelAnswer": "This line chart illustrates the significant increase in global atmospheric carbon dioxide concentration from 1800 to 2020. Initially, CO2 levels were relatively stable, starting at 280 ppm in 1800 and only reaching 290 ppm by 1880. However, a noticeable upward trend began, accelerating significantly after 1920. By 1960, concentrations hit 330 ppm, and this sharp rise continued, reaching 370 ppm by 2000. The highest value shown is 415 ppm in 2020, representing a substantial increase of over 130 ppm since the turn of the 20th century.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Carbon Dioxide Concentration (1800-2020)",
+        "yLabel": "CO2 Concentration (ppm)",
+        "xAxis": [
+          "1800",
+          "1840",
+          "1880",
+          "1920",
+          "1960",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Atmospheric CO2",
+            "values": [
+              280,
+              282,
+              290,
+              305,
+              330,
+              370,
+              415
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q23",
+      "modelAnswer": "This pie chart illustrates global CO2 emissions by sector for the year 2022. The largest contributor is clearly Energy Production, accounting for a significant 35% of total emissions. Transportation follows as the second-highest sector at 22%, indicating a substantial impact from vehicle use. Industry represents 18%, while Agriculture and Land Use contribute 14%. Residential and Commercial sectors are responsible for 8%. The smallest share comes from Waste and Other, at just 3%. Overall, energy-related activities are the dominant source of CO2 emissions globally.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy Production",
+            "value": 35
+          },
+          {
+            "label": "Transportation",
+            "value": 22
+          },
+          {
+            "label": "Industry",
+            "value": 18
+          },
+          {
+            "label": "Agriculture & Land Use",
+            "value": 14
+          },
+          {
+            "label": "Residential & Commercial",
+            "value": 8
+          },
+          {
+            "label": "Waste & Other",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Renewable Energy Adoption by Country (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q24",
+      "modelAnswer": "The bar chart illustrates renewable energy adoption rates across five countries in 2023, measured as a percentage of total energy consumption. Brazil shows the highest adoption, with an impressive 60%. Germany follows with 45%, indicating strong commitment. Canada's adoption stands at 30%, while Australia is slightly lower at 25%. Japan records the lowest rate among the countries, at only 20%. Overall, Brazil significantly leads, demonstrating a substantial investment in renewable sources compared to the other nations, especially Japan.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Energy Adoption by Country (2023)",
+        "yLabel": "% of Total Energy Consumption",
+        "xAxis": [
+          "Germany",
+          "Canada",
+          "Japan",
+          "Australia",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "Renewable Energy",
+            "values": [
+              45,
+              30,
+              20,
+              25,
+              60
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Temperature Change (1900-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q25",
+      "modelAnswer": "This line graph illustrates global average temperature changes from 1900 to 2020, showing temperature anomalies in degrees Celsius. Initially, temperatures fluctuated, starting at -0.2°C in 1900, rising to 0.1°C by 1940, then dipping slightly. A clear upward trend began around 1980, when the anomaly was 0.3°C. The most significant increase occurred between 2000 and 2020, with temperatures rising from 0.6°C to a peak of 1.0°C. This demonstrates a consistent and accelerating warming trend, particularly in the last four decades of the period shown.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Temperature Change (1900-2020)",
+        "yLabel": "Temperature Anomaly (°C)",
+        "xAxis": [
+          "1900",
+          "1920",
+          "1940",
+          "1960",
+          "1980",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Temperature Anomaly",
+            "values": [
+              -0.2,
+              -0.1,
+              0.1,
+              0,
+              0.3,
+              0.6,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Annual Deforestation in the Amazon Basin (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q26",
+      "modelAnswer": "This line chart illustrates the annual deforestation in the Amazon Basin from 1990 to 2020, measured in million hectares. Initially, deforestation was 2.5 million hectares in 1990, showing a fluctuating trend. The highest point was in 1990, while the lowest deforestation rate was recorded in 2015, at 0.7 million hectares. There was a significant decrease from 2000 to 2015, dropping from 2.2 to 0.7 million hectares, indicating successful conservation efforts during that period. However, deforestation rose again to 1.2 million hectares by 2020, suggesting a recent reversal in the positive trend.",
+      "visual": {
+        "chartType": "line",
+        "title": "Annual Deforestation in the Amazon Basin (1990-2020)",
+        "yLabel": "Deforested Area (million hectares)",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Deforested Area",
+            "values": [
+              2.5,
+              1.8,
+              2.2,
+              1.5,
+              0.8,
+              0.7,
+              1.2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q27",
+      "modelAnswer": "The lecture highlighted the importance of non-verbal communication, noting it's a large part of how we interact. It encompasses various cues like gestures, facial expressions, and vocal tone, which can either support or contradict our spoken words. The speaker emphasized that understanding these non-verbal signals is crucial for effective communication, helping us to build relationships, show empathy, and navigate different social and cultural contexts successfully.",
+      "audioScript": "Non-verbal communication, often overlooked, constitutes a significant portion of our daily interactions. It includes gestures, facial expressions, posture, and even the tone of voice. These cues can reinforce, contradict, or even substitute spoken words, often conveying more authentic feelings than verbal expressions alone. Understanding and interpreting non-verbal signals is critical for effective communication, helping individuals build rapport, express empathy, and navigate social situations more successfully, bridging cultural differences and enhancing mutual understanding.",
+      "keyPoints": [
+        "Significant part of daily interaction",
+        "Includes gestures, expressions, posture, tone",
+        "Reinforces or contradicts spoken words",
+        "Critical for effective communication and rapport"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Digital Communication Evolution”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q28",
+      "modelAnswer": "The lecture discussed how digital communication has drastically changed human interaction, shifting from traditional methods to online platforms. While these technologies provide great connectivity and efficiency, they also present new problems. The speaker mentioned concerns like information overload, the rapid spread of misinformation, and a potential decrease in the depth of personal relationships. It was emphasized that finding a balance between using digital tools effectively and maintaining genuine human connection is crucial.",
+      "audioScript": "The evolution of digital communication has profoundly reshaped human interaction, moving from traditional face-to-face conversations to an array of online platforms. While these technologies offer unparalleled connectivity and efficiency, they also introduce new challenges. Issues such as information overload, the spread of misinformation, and the potential for reduced depth in personal relationships are significant concerns. Balancing the benefits of digital tools with the need for meaningful, authentic human connection remains a key task for individuals and society alike.",
+      "keyPoints": [
+        "Reshaped human interaction",
+        "Offers connectivity and efficiency",
+        "Challenges: information overload, misinformation",
+        "Need to balance digital tools with authentic connection"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Mediums”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q29",
+      "modelAnswer": "Communication",
+      "audioScript": "What is the primary medium for exchanging thoughts or information?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal Communication Form”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q30",
+      "modelAnswer": "Verbal",
+      "audioScript": "What form of communication uses spoken words?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Digital",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Digital Communication Term”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q31",
+      "modelAnswer": "Digital",
+      "audioScript": "What term describes communication via electronic devices?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Misunderstanding",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barrier”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-049-q32",
+      "modelAnswer": "Misunderstanding",
+      "audioScript": "What is a common obstacle to effective communication?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Digital Education Transformation”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-049-q33",
+      "modelAnswer": "Digital technology is revolutionizing education by creating personalized, dynamic learning environments through online platforms and AI tools, offering global access and diverse learning styles, while posing challenges related to equity and integration.",
+      "readText": "Digital technology is fundamentally transforming educational practices, moving beyond traditional classroom settings to create dynamic, personalized learning environments. Online platforms, interactive simulations, and artificial intelligence-powered tools are enabling students to access resources globally and learn at their own pace. This shift facilitates greater engagement and caters to diverse learning styles, but also raises questions about digital equity, teacher training, and the balance between screen time and face-to-face interaction. Educators are adapting to integrate these tools effectively, ensuring they enhance rather than detract from the learning experience."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Digital communication has revolutionized how individuals interact and organizations operate. Discuss the main advantages and disadvantages of this transformation, providing examples to support your arguments. Do the benefits outweigh the drawbacks?",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-049-q34",
+      "modelAnswer": "Digital communication has undeniably reshaped the landscape of human interaction and organizational functionality, offering both unprecedented opportunities and significant challenges. Its advantages are numerous, primarily centered on efficiency and connectivity. Individuals can now communicate instantly across vast distances, fostering global relationships and facilitating immediate information exchange. For businesses, digital platforms enable remote workforces, streamlined operations, and broader market reach, leading to increased productivity and innovation. For instance, video conferencing tools have allowed international teams to collaborate seamlessly, reducing travel costs and time.\n\nHowever, the disadvantages are equally profound. The constant connectivity can lead to information overload and a blurring of work-life boundaries, contributing to stress and burnout. The prevalence of social media and messaging apps has also been linked to reduced depth in interpersonal relationships, as face-to-face interactions diminish. Furthermore, digital communication channels are fertile ground for misinformation, cyberbullying, and privacy breaches, posing serious societal risks. For example, the rapid spread of unverified news during crises can cause widespread panic and undermine trust in credible sources.\n\nWhile the drawbacks are considerable, the benefits of digital communication, particularly in terms of global connectivity and efficiency, generally outweigh them. The ability to access information, connect with diverse communities, and drive economic growth on a global scale is transformative. The challenges, though serious, are largely issues of responsible use and regulation. With proper digital literacy education, robust privacy protections, and a conscious effort to balance online and offline interactions, society can harness the immense power of digital communication while mitigating its negative impacts. The ongoing evolution of these tools demands continuous adaptation and critical engagement to maximize their positive contributions."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "In today's rapidly evolving global workplace, effective communication skills are considered more vital than ever. Discuss the importance of strong communication skills for career success and organizational effectiveness. What are the key elements of effective workplace communication?",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-049-q35",
+      "modelAnswer": "Effective communication skills are paramount for navigating the complexities of the modern global workplace, directly influencing both individual career success and overall organizational effectiveness. In an era characterized by diverse teams, remote collaboration, and rapid technological advancements, the ability to articulate ideas clearly, listen actively, and convey messages persuasively is no longer merely an asset but a fundamental necessity.\n\nFor career success, strong communication skills enable individuals to build rapport with colleagues and clients, present ideas convincingly, negotiate effectively, and lead teams with clarity and empathy. Professionals who communicate well are better positioned for promotions, capable of resolving conflicts constructively, and adept at fostering a positive work environment. Conversely, poor communication can lead to misunderstandings, missed opportunities, and stalled career progression. For example, a project manager who can clearly explain complex tasks and expectations to their team is far more likely to achieve successful outcomes than one who struggles with conveying information.\n\nFrom an organizational perspective, effective communication is the bedrock of productivity, innovation, and employee engagement. Transparent internal communication ensures that all employees are aligned with company goals and values, reducing ambiguity and fostering a sense of belonging. Externally, clear and consistent communication with stakeholders, customers, and partners builds trust and strengthens reputation. Organizations with strong communication channels are better equipped to adapt to market changes, manage crises, and foster a collaborative culture that drives innovation. For instance, companies that prioritize open feedback loops often see higher employee retention and more creative problem-solving.\n\nThe key elements of effective workplace communication include clarity, conciseness, active listening, empathy, and adaptability. Clarity ensures messages are easily understood, while conciseness avoids unnecessary detail. Active listening demonstrates respect and ensures accurate comprehension. Empathy allows communicators to tailor their message to the audience's perspective and emotional state, fostering stronger connections. Finally, adaptability involves choosing the most appropriate communication channel and style for the message and recipient, whether it's a formal report, an informal email, or a face-to-face discussion. Mastering these elements empowers individuals and organizations to thrive in the dynamic global economy."
+    }
+  ]
+}

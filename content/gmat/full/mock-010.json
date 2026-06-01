@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-010",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 10",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-010",
+      "file": "gmat/quant/test-010.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-010",
+      "file": "gmat/verbal/test-010.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-010",
+      "file": "gmat/data-insights/test-010.json"
+    }
+  ]
+}

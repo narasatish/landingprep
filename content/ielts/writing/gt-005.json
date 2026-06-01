@@ -1,0 +1,37 @@
+{
+  "id": "ielts-writing-gt-005",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 5 — Advice Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-005-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "advice",
+      "letterSituation": "A friend from your home country has written to tell you they are planning to move to the city where you currently live. They will be looking for work and are unsure where to live, how to find a job, and how to meet new people.",
+      "prompt": "A friend from your home country has written to tell you they are planning to move to the city where you currently live. They will be looking for work and are unsure where to live, how to find a job, and how to meet new people.\n\nWrite a letter to your friend. In your letter:\n• welcome the news and say how you feel about them moving\n• give advice on finding accommodation and suitable areas to live\n• suggest ways to find work and make new friends in the city\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open warmly and enthusiastically, provide specific and practical advice on each of the three bullet points, maintain a supportive and encouraging tone, and show a good range of vocabulary related to housing, employment, and socialising.",
+      "rubric": ["task achievement", "coherence and cohesion", "lexical resource", "grammatical range and accuracy"],
+      "difficulty": "medium",
+      "topic": "relocation and advice"
+    },
+    {
+      "id": "ielts-writing-gt-005-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Many young people today find it difficult to afford housing in major cities. Some people think that governments should build more affordable housing, while others believe the private sector should solve the problem. Discuss both views and give your own opinion.",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should assess the role of government intervention and market-driven solutions in housing, weigh up their feasibility and effectiveness, and arrive at a clearly stated and well-supported personal position.",
+      "rubric": ["task response", "coherence and cohesion", "lexical resource", "grammatical range and accuracy"],
+      "difficulty": "medium",
+      "topic": "housing and urban policy"
+    }
+  ]
+}

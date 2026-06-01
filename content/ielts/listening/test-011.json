@@ -1,0 +1,912 @@
+{
+  "id": "ielts-listening-011",
+  "exam": "ielts",
+  "section": "listening",
+  "title": "IELTS Listening Practice Test 11",
+  "durationSeconds": 2400,
+  "questionCount": 40,
+  "listeningScripts": [
+    {
+      "id": "ielts-listening-011-p1",
+      "part": 1,
+      "title": "Booking a Language Course",
+      "text": "Agent: Good morning, City Language Centre, how can I help you?\nCaller: Hi, I'd like to book a place on one of your English courses.\nAgent: Of course. Can I take your full name please?\nCaller: Yes, it's Margaret Thornton. That's T-H-O-R-N-T-O-N.\nAgent: And a contact telephone number?\nCaller: 07823 441 096.\nAgent: Which course are you interested in?\nCaller: The advanced writing course. I saw it starts on the fourteenth of March.\nAgent: That's correct — it runs for eight weeks on Tuesday evenings from seven to nine pm. The fee is two hundred and forty pounds, which includes all materials.\nCaller: That's fine. Do I need to bring anything to the first session?\nAgent: Just a notepad. The course is held in Room 14 on the second floor. There's a lift if you need it.\nCaller: Perfect. And is there a registration deadline?\nAgent: We ask people to register at least five days before the start date. So no later than the ninth of March.\nCaller: Great, I'll pay by card now if that's alright.\nAgent: Of course. I'll email you a confirmation and the joining instructions to the address we have on file.",
+      "formLayout": {
+        "title": "City Language Centre — Enrolment Form",
+        "example": {
+          "label": "Contact name",
+          "content": "Ms Sandra Webb"
+        },
+        "rows": [
+          {
+            "type": "prefilled",
+            "label": "Course applied for",
+            "content": "Advanced Writing"
+          },
+          {
+            "type": "blank",
+            "num": 1,
+            "label": "Applicant surname",
+            "prefix": "",
+            "suffix": "",
+            "answer": "Thornton"
+          },
+          {
+            "type": "blank",
+            "num": 2,
+            "label": "Telephone number",
+            "prefix": "",
+            "suffix": "",
+            "answer": "07823 441 096"
+          },
+          {
+            "type": "blank",
+            "num": 3,
+            "label": "Start date",
+            "prefix": "",
+            "suffix": " March",
+            "answer": "14th"
+          },
+          {
+            "type": "blank",
+            "num": 4,
+            "label": "Duration",
+            "prefix": "",
+            "suffix": " weeks",
+            "answer": "eight / 8"
+          },
+          {
+            "type": "blank",
+            "num": 5,
+            "label": "Course fee",
+            "prefix": "£",
+            "suffix": "",
+            "answer": "240"
+          },
+          {
+            "type": "blank",
+            "num": 6,
+            "label": "Class times",
+            "prefix": "",
+            "suffix": " to 9 pm",
+            "answer": "7 / seven"
+          },
+          {
+            "type": "blank",
+            "num": 7,
+            "label": "Room",
+            "prefix": "Room ",
+            "suffix": "",
+            "answer": "14"
+          },
+          {
+            "type": "blank",
+            "num": 8,
+            "label": "Registration deadline",
+            "prefix": "9th ",
+            "suffix": "",
+            "answer": "March"
+          },
+          {
+            "type": "blank",
+            "num": 9,
+            "label": "Item to bring to first class",
+            "prefix": "",
+            "suffix": "",
+            "answer": "notepad"
+          },
+          {
+            "type": "blank",
+            "num": 10,
+            "labelBlank": true,
+            "labelSuffix": " method",
+            "rightContent": "card / by card",
+            "answer": "Payment"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-listening-011-p2",
+      "part": 2,
+      "title": "Tour of Riverside Community Centre",
+      "text": "Guide: Good morning everyone, and welcome to Riverside Community Centre. I'll be giving you a brief overview of the facilities and then we'll do a short tour of the building.\n\nAs you come in through the main entrance on Bridge Street, immediately to your left is the reception desk where staff can help with all enquiries and room bookings. Directly ahead of you, past the reception, is the main hall, which is used for events and community meetings. It can seat up to two hundred people.\n\nIf you turn right at reception, you'll find the café, which serves hot and cold food from eight in the morning until four in the afternoon. Next to the café, at the end of the corridor, is the children's activity room, which is open on weekday afternoons.\n\nOn your left as you walk down the main corridor are two meeting rooms — Room A and Room B — available for hire. At the far end of the building, overlooking the riverside garden, is the fitness studio, which runs yoga and pilates classes. The garden itself is accessible through the double doors next to the fitness studio.\n\nUpstairs, you'll find the computer suite with twenty workstations, the art room for community workshops, and the library corner with a reading area. The lift is located beside the staircase near the main entrance.\n\nNow let me take you on a brief tour. Please follow me through the main hall..."
+    },
+    {
+      "id": "ielts-listening-011-p3",
+      "part": 3,
+      "title": "Discussion About a Research Project on Urban Noise",
+      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+    },
+    {
+      "id": "ielts-listening-011-p4",
+      "part": 4,
+      "title": "Lecture: Behavioural Economics and Consumer Choice",
+      "text": "In today's lecture I want to explore how behavioural economics challenges the traditional economic model of the rational consumer, and what this means for public policy.\n\nClassical economics assumes that individuals make decisions by carefully weighing costs and benefits and choosing the option that maximises their utility. This is known as the rational actor model. However, decades of research by psychologists and economists has demonstrated that real human decision-making deviates from this ideal in systematic and predictable ways.\n\nOne of the most influential concepts is loss aversion, developed by Daniel Kahneman and Amos Tversky in their prospect theory, published in 1979. They found that losses feel approximately twice as painful as equivalent gains feel pleasurable. This explains why people hold onto failing investments far longer than is rational — a phenomenon known as the disposition effect in financial markets.\n\nAnother important bias is the default effect. When people are automatically enrolled in a programme — whether a pension scheme or an organ donation register — they are far more likely to remain in it than if they had to actively opt in. Several countries, including the UK, have used this insight to design opt-out organ donation systems, dramatically increasing donation rates.\n\nPresent bias describes our tendency to place disproportionate weight on immediate rewards compared to future ones. This helps explain low savings rates, poor diet choices, and insufficient exercise — we consistently undervalue future benefits. Commitment devices, such as automatically increasing pension contributions each year, can counteract this bias.\n\nNudge theory, popularised by Thaler and Sunstein in their 2008 book, proposes that policymakers can guide behaviour without mandates or financial incentives, simply by redesigning the choice environment. Placing healthy foods at eye level in cafeterias, for example, increases their selection rates by up to thirty percent without banning unhealthy options.\n\nCritics of nudge theory argue that it can be paternalistic and that transparency is essential — people should know when their choices are being structured. Despite this debate, governments worldwide are investing in behavioural insights units to improve policy outcomes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-listening-011-q1",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 1,
+      "label": "Applicant surname",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Thornton",
+      "explanation": "The answer \"Thornton\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the check-in time?",
+      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-011-q2",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 2,
+      "label": "Telephone number",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "07823 441 096",
+      "explanation": "The answer \"07823 441 096\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
+      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-011-q3",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 3,
+      "label": "Start date",
+      "prefix": "",
+      "suffix": " March",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "14th",
+      "explanation": "The answer \"14th\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the total cost?",
+      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-011-q4",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 4,
+      "label": "Duration",
+      "prefix": "",
+      "suffix": " weeks",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "eight / 8",
+      "explanation": "The answer \"eight / 8\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
+      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-011-q5",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 5,
+      "label": "Course fee",
+      "prefix": "£",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "240",
+      "explanation": "The answer \"240\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the breakfast option?",
+      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-011-q6",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 6,
+      "label": "Class times",
+      "prefix": "",
+      "suffix": " to 9 pm",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "7 / seven",
+      "explanation": "The answer \"7 / seven\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
+      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-011-q7",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 7,
+      "label": "Room",
+      "prefix": "Room ",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "14",
+      "explanation": "The answer \"14\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the room type?",
+      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-011-q8",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 8,
+      "label": "Registration deadline",
+      "prefix": "9th ",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "March",
+      "explanation": "The answer \"March\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
+      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-011-q9",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 9,
+      "label": "Item to bring to first class",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "notepad",
+      "explanation": "The answer \"notepad\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the cancellation policy?",
+      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-011-q10",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 10,
+      "label": "",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": true,
+      "labelSuffix": " method",
+      "rightContent": "card / by card",
+      "answer": "Payment",
+      "explanation": "The answer \"Payment\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
+      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-011-q11",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 11,
+      "prompt": "What is the maximum seating capacity of the main hall?",
+      "options": [
+        "150",
+        "200",
+        "250",
+        "300"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The guide states 'it can seat up to two hundred people'"
+    },
+    {
+      "id": "ielts-listening-011-q12",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 12,
+      "prompt": "What time does the café close?",
+      "options": [
+        "3 pm",
+        "4 pm",
+        "5 pm",
+        "6 pm"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The café serves food 'until four in the afternoon'"
+    },
+    {
+      "id": "ielts-listening-011-q13",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 13,
+      "prompt": "When is the children's activity room open?",
+      "options": [
+        "weekend mornings",
+        "all day weekdays",
+        "weekday afternoons",
+        "weekends only"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The guide says it is 'open on weekday afternoons'"
+    },
+    {
+      "id": "ielts-listening-011-q14",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 14,
+      "prompt": "How many workstations are in the computer suite?",
+      "options": [
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The guide mentions 'twenty workstations'"
+    },
+    {
+      "id": "ielts-listening-011-q15",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 15,
+      "prompt": "Where is the lift located?",
+      "options": [
+        "next to the fitness studio",
+        "near the main entrance",
+        "beside the art room",
+        "opposite the café"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The guide says the lift is 'beside the staircase near the main entrance'"
+    },
+    {
+      "id": "ielts-listening-011-q16",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Riverside Community Centre — Ground Floor Plan",
+      "mapDescription": "The map shows the ground floor. The main entrance is at the bottom. Label rooms A–J.",
+      "mapKey": {
+        "A": "Reception",
+        "B": "Main hall",
+        "C": "Café",
+        "D": "Children's activity room",
+        "E": "Room A (meeting room)",
+        "F": "Room B (meeting room)",
+        "G": "Fitness studio",
+        "H": "Riverside garden",
+        "I": "Computer suite",
+        "J": "Art room"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 16,
+      "prompt": "Room immediately left of main entrance",
+      "correctAnswer": "A",
+      "explanation": "The correct letter is A (Reception)."
+    },
+    {
+      "id": "ielts-listening-011-q17",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Riverside Community Centre — Ground Floor Plan",
+      "mapDescription": "The map shows the ground floor. The main entrance is at the bottom. Label rooms A–J.",
+      "mapKey": {
+        "A": "Reception",
+        "B": "Main hall",
+        "C": "Café",
+        "D": "Children's activity room",
+        "E": "Room A (meeting room)",
+        "F": "Room B (meeting room)",
+        "G": "Fitness studio",
+        "H": "Riverside garden",
+        "I": "Computer suite",
+        "J": "Art room"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 17,
+      "prompt": "Large room directly ahead past reception",
+      "correctAnswer": "B",
+      "explanation": "The correct letter is B (Main hall)."
+    },
+    {
+      "id": "ielts-listening-011-q18",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Riverside Community Centre — Ground Floor Plan",
+      "mapDescription": "The map shows the ground floor. The main entrance is at the bottom. Label rooms A–J.",
+      "mapKey": {
+        "A": "Reception",
+        "B": "Main hall",
+        "C": "Café",
+        "D": "Children's activity room",
+        "E": "Room A (meeting room)",
+        "F": "Room B (meeting room)",
+        "G": "Fitness studio",
+        "H": "Riverside garden",
+        "I": "Computer suite",
+        "J": "Art room"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 18,
+      "prompt": "Room to the right of reception",
+      "correctAnswer": "C",
+      "explanation": "The correct letter is C (Café)."
+    },
+    {
+      "id": "ielts-listening-011-q19",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Riverside Community Centre — Ground Floor Plan",
+      "mapDescription": "The map shows the ground floor. The main entrance is at the bottom. Label rooms A–J.",
+      "mapKey": {
+        "A": "Reception",
+        "B": "Main hall",
+        "C": "Café",
+        "D": "Children's activity room",
+        "E": "Room A (meeting room)",
+        "F": "Room B (meeting room)",
+        "G": "Fitness studio",
+        "H": "Riverside garden",
+        "I": "Computer suite",
+        "J": "Art room"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 19,
+      "prompt": "Room at end of right corridor, next to café",
+      "correctAnswer": "D",
+      "explanation": "The correct letter is D (Children's activity room)."
+    },
+    {
+      "id": "ielts-listening-011-q20",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Riverside Community Centre — Ground Floor Plan",
+      "mapDescription": "The map shows the ground floor. The main entrance is at the bottom. Label rooms A–J.",
+      "mapKey": {
+        "A": "Reception",
+        "B": "Main hall",
+        "C": "Café",
+        "D": "Children's activity room",
+        "E": "Room A (meeting room)",
+        "F": "Room B (meeting room)",
+        "G": "Fitness studio",
+        "H": "Riverside garden",
+        "I": "Computer suite",
+        "J": "Art room"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 20,
+      "prompt": "First meeting room on left corridor",
+      "correctAnswer": "E",
+      "explanation": "The correct letter is E (Room A (meeting room))."
+    },
+    {
+      "id": "ielts-listening-011-q21",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 21,
+      "prompt": "What noise level does research link to increased stress hormones?",
+      "options": [
+        "55 dB",
+        "60 dB",
+        "65 dB",
+        "70 dB"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+    },
+    {
+      "id": "ielts-listening-011-q22",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 22,
+      "prompt": "What additional health risk did James find surprising in the literature?",
+      "options": [
+        "hearing loss",
+        "cardiovascular disease",
+        "respiratory problems",
+        "mental health disorders"
+      ],
+      "correctAnswer": "B",
+      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+    },
+    {
+      "id": "ielts-listening-011-q23",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 23,
+      "prompt": "How many residents will be surveyed?",
+      "options": [
+        "200",
+        "300",
+        "400",
+        "500"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Priya mentions 'a survey of five hundred residents'"
+    },
+    {
+      "id": "ielts-listening-011-q24",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 24,
+      "prompt": "What confidence level does their sample size achieve?",
+      "options": [
+        "90%",
+        "92%",
+        "95%",
+        "99%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "James refers to 'the ninety-five percent confidence level'"
+    },
+    {
+      "id": "ielts-listening-011-q25",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 25,
+      "prompt": "What does the tutor recommend they reference?",
+      "options": [
+        "WHO 2015 report",
+        "WHO 2018 guidelines",
+        "EU noise directive",
+        "national highway code"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+    },
+    {
+      "id": "ielts-listening-011-q26",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 26,
+      "prompt": "introducing new equipment in the laboratory",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-011-q27",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 27,
+      "prompt": "keeping written records of experiments",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-011-q28",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 28,
+      "prompt": "sharing results with other research groups",
+      "correctAnswer": "B",
+      "explanation": "The speaker's attitude is B. She is undecided."
+    },
+    {
+      "id": "ielts-listening-011-q29",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 29,
+      "prompt": "the importance of the project deadline",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-011-q30",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 30,
+      "prompt": "the proposal to extend the study",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-011-q31",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 31,
+      "sentenceText": "__BLANK__ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
+      "correctAnswer": "The rational actor model",
+      "explanation": "The correct answer is: \"The rational actor model\".",
+      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
+      "audioContext": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-011-q32",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 32,
+      "sentenceText": "Kahneman and Tversky found that losses feel approximately __BLANK__ as painful as an equivalent financial gain.",
+      "correctAnswer": "twice as",
+      "explanation": "The correct answer is: \"twice as\".",
+      "prompt": "The speaker describes the current research of the topic.",
+      "audioContext": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-011-q33",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 33,
+      "sentenceText": "The tendency to remain in programmes one is automatically enrolled in is known as the __BLANK__.",
+      "correctAnswer": "default effect",
+      "explanation": "The correct answer is: \"default effect\".",
+      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
+      "audioContext": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-011-q34",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 34,
+      "sentenceText": "__BLANK__ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
+      "correctAnswer": "Present bias",
+      "explanation": "The correct answer is: \"Present bias\".",
+      "prompt": "The speaker describes the key challenge of the topic.",
+      "audioContext": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-011-q35",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 35,
+      "sentenceText": "Thaler and Sunstein popularised nudge theory in a book published in __BLANK__.",
+      "correctAnswer": "2008",
+      "explanation": "The correct answer is: \"2008\".",
+      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
+      "audioContext": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-011-q36",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 36,
+      "prompt": "The 'disposition effect' refers to the tendency to",
+      "options": [
+        "A  invest heavily in new market opportunities",
+        "B  hold onto failing investments for too long",
+        "C  diversify financial portfolios excessively",
+        "D  avoid taking any financial risks"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer says it explains 'why people hold onto failing investments far longer than is rational'"
+    },
+    {
+      "id": "ielts-listening-011-q37",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 37,
+      "prompt": "Which country's opt-out organ donation system is specifically mentioned in the lecture?",
+      "options": [
+        "A  France",
+        "B  Australia",
+        "C  Germany",
+        "D  the United Kingdom"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The lecturer cites 'the UK' as a country using opt-out organ donation"
+    },
+    {
+      "id": "ielts-listening-011-q38",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 38,
+      "prompt": "Placing healthy food at eye level in cafeterias increases selection rates by up to",
+      "options": [
+        "A  ten percent",
+        "B  twenty percent",
+        "C  thirty percent",
+        "D  forty percent"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer states selection rates increase 'by up to thirty percent'"
+    },
+    {
+      "id": "ielts-listening-011-q39",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 39,
+      "prompt": "Critics of nudge theory argue that it",
+      "options": [
+        "A  is ineffective in real-world settings",
+        "B  costs too much to implement",
+        "C  can be paternalistic",
+        "D  ignores economic incentives entirely"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer says critics argue 'it can be paternalistic'"
+    },
+    {
+      "id": "ielts-listening-011-q40",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 40,
+      "prompt": "How are governments described as responding to behavioural insights research?",
+      "options": [
+        "A  banning unhealthy food products",
+        "B  making pension contributions compulsory",
+        "C  investing in behavioural insights units",
+        "D  removing consumer choice from markets"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer says 'governments worldwide are investing in behavioural insights units'"
+    }
+  ],
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Part 1: Hotel Booking",
+      "audioDescription": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "context": "Customer calls to book a room at the Grand View Hotel for a conference.",
+      "questionRange": [
+        1,
+        10
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Part 2: Library Registration",
+      "audioDescription": "A new student registers at the university library and gets information about services.",
+      "context": "Library assistant explains membership cards, borrowing limits, and facilities.",
+      "questionRange": [
+        11,
+        20
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title": "Part 3: Museum Audio Guide",
+      "audioDescription": "A recorded audio guide for visitors at the Natural History Museum.",
+      "context": "Guide describes the layout, exhibits, and special events at the museum.",
+      "questionRange": [
+        21,
+        30
+      ]
+    },
+    {
+      "partNumber": 4,
+      "title": "Part 4: Community Sports Centre",
+      "audioDescription": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "context": "Manager explains membership options, class timetables, and booking procedures.",
+      "questionRange": [
+        31,
+        40
+      ]
+    }
+  ]
+}

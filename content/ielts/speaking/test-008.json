@@ -1,0 +1,72 @@
+{
+  "id": "ielts-speaking-008",
+  "exam": "ielts",
+  "section": "speaking",
+  "type": "section",
+  "title": "IELTS Speaking Practice Test 8",
+  "durationSeconds": 840,
+  "questionCount": 3,
+  "instructions": "Record responses and review using the rubric.",
+  "questions": [
+    {
+      "id": "ielts-speaking-008-q01",
+      "questionType": "speaking_task",
+      "prompt": "Talk about your personal experience with public health campaigns.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "public health campaigns",
+      "fingerprint": "6f670de60f7c75c33c",
+      "modelAnswer": "Begin by directly answering the question with a clear statement. Add 2–3 specific personal details or experiences that support your answer. Use transitional phrases to connect ideas and finish with a brief concluding remark."
+    },
+    {
+      "id": "ielts-speaking-008-q02",
+      "questionType": "speaking_task",
+      "prompt": "Describe a situation where public health campaigns affected a school, workplace, or community.",
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "public health campaigns",
+      "fingerprint": "7b294ef1c7b6559216",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "ielts-speaking-008-q03",
+      "questionType": "speaking_task",
+      "prompt": "Discuss whether public health campaigns will become more important in the future.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "public health campaigns",
+      "fingerprint": "bf09de178f6ba45862",
+      "modelAnswer": "A strong response would clearly address the prompt with specific details, organised ideas, and natural-sounding English. Include an introduction, supporting points with examples, and a brief conclusion. Aim for fluency, accuracy, and coherent structure throughout."
+    }
+  ],
+  "fingerprints": [
+    "6f670de60f7c75c33c",
+    "7b294ef1c7b6559216",
+    "bf09de178f6ba45862"
+  ],
+  "variant": "academic"
+}

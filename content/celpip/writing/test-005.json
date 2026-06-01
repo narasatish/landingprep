@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-005",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 5",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-005-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You recently completed a continuing education course at a local college and were very impressed by the instructor and the quality of the programme.",
+      "recipient": "the college's continuing education department",
+      "bulletPoints": [
+        "Describe what you enjoyed about the course",
+        "Comment on the instructor's teaching style",
+        "Suggest a topic for a follow-up course you would like to see offered"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You recently ordered furniture online and it arrived damaged. Write a letter to the company describing the damage, explaining how it has inconvenienced you, and requesting a replacement or refund.",
+      "modelAnswer": "Dear Continuing Education Department,\n\nI am writing to express my sincere appreciation for the \"Advanced Technical Writing for Professionals\" course (Course ID: CEW-403) that I recently completed. I was thoroughly impressed by the quality of the program and the exceptional instruction provided.\n\nWhat I particularly enjoyed was the practical, hands-on approach to complex topics like grant proposal writing and white paper development. The course materials were incredibly relevant, and the workshops allowed for immediate application of new skills, which greatly enhanced my learning experience.\n\nThe instructor, Dr. Evelyn Reed, was outstanding. Her teaching style was engaging and highly effective. She fostered a collaborative learning environment, encouraged lively discussions, and provided constructive feedback that was both insightful and encouraging. Her expertise was evident, and her ability to simplify intricate concepts was truly remarkable.\n\nGiven the success of this course, I would be very interested in a follow-up offering. I suggest a course focused on \"Strategic Content Marketing for B2B Audiences.\" This would be a valuable progression for professionals looking to leverage their enhanced writing skills in a broader marketing context.\n\nThank you again for providing such a high-calibre educational opportunity.\n\nSincerely,\n\nSamantha Chen\n(Student ID: SC98765)"
+    },
+    {
+      "id": "celpip-writing-005-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "A local organisation is considering a new fundraising approach. Which do you think would be more effective?",
+      "optionA": "Hold a large annual gala dinner event with ticket sales",
+      "optionB": "Launch an online crowdfunding campaign with monthly donor options",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A local employer is conducting a survey about work-life balance. Describe how you manage your work and personal life, what challenges you face, and what policies your employer could introduce to improve your balance.",
+      "modelAnswer": "I strongly advocate for launching an online crowdfunding campaign with monthly donor options as the more effective fundraising approach. This strategy offers unparalleled accessibility and sustained revenue, crucial for long-term organisational stability.\n\nFirstly, online crowdfunding transcends geographical limitations, allowing a broader donor base to contribute without the logistical constraints or high per-person cost of a physical event. A compelling digital campaign, shared across social media and email, can reach thousands globally, tapping into diverse networks of potential supporters who might never attend a local gala. For instance, a well-produced video sharing impact stories could go viral, attracting donations far beyond the local community.\n\nSecondly, the monthly donor option provides a predictable, recurring income stream, vital for operational planning and program delivery. While a gala offers a one-time influx, consistent smaller donations from numerous individuals build financial resilience. Donors appreciate the flexibility of contributing modest amounts regularly, making philanthropy more sustainable for them and the organisation.\n\nConversely, a large annual gala, while potentially lucrative, involves significant upfront costs, extensive planning, and relies heavily on high-value ticket sales and corporate sponsorships, which can be inconsistent year-to-year. Its exclusivity also limits participation, alienating potential smaller donors who might feel excluded."
+    }
+  ]
+}

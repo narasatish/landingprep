@@ -1,0 +1,80 @@
+{
+  "id": "toefl-speaking-015",
+  "exam": "toefl",
+  "section": "speaking",
+  "type": "section",
+  "title": "TOEFL iBT Speaking Practice Test 15",
+  "variant": "ibt",
+  "durationSeconds": 720,
+  "questionCount": 4,
+  "instructions": "There are 4 speaking tasks. Task 1 is independent — express your opinion on a given topic. Tasks 2 and 3 are integrated — read a short text and listen to a conversation or lecture, then speak. Task 4 is integrated — listen to a lecture and summarise key points.",
+  "questions": [
+    {
+      "id": "toefl-speaking-015-q01",
+      "taskNum": 1,
+      "taskType": "independent",
+      "questionType": "speaking_task",
+      "prompt": "Do you think that students learn more effectively in traditional classroom settings or through online education? Use specific reasons and examples to support your opinion.",
+      "prepSeconds": 15,
+      "responseSeconds": 45,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "id": "toefl-speaking-015-q02",
+      "taskNum": 2,
+      "taskType": "campus_integrated",
+      "questionType": "speaking_task",
+      "prompt": "The man expresses his opinion about expanding the pass/fail grading option. State his opinion and explain the reasons he gives.",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "readingTitle": "University to Expand Pass/Fail Grading Option",
+      "readingText": "The Academic Committee has approved an expansion of the pass/fail grading option, allowing students to designate up to two courses per semester as pass/fail rather than receiving a letter grade. Previously, the option was restricted to one course per semester. The committee stated the change is intended to encourage students to explore subjects outside their comfort zone without fear of damaging their GPA.",
+      "listeningDescription": "A male student enthusiastically supports the change — he says he always wanted to take an art course but was afraid of getting a low grade in a field he had no experience in. The female student he's talking to is sceptical — she says grades provide important feedback and that students might not take pass/fail courses as seriously, leading to lower learning quality.",
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "id": "toefl-speaking-015-q03",
+      "taskNum": 3,
+      "taskType": "academic_integrated",
+      "questionType": "speaking_task",
+      "prompt": "Using the example from the lecture, explain how it demonstrates the concept of spaced practice described in the reading.",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "readingTitle": "Spaced Practice in Learning",
+      "readingText": "Spaced practice, also called distributed practice, refers to the strategy of spreading learning sessions out over time rather than concentrating them in a single extended session. Research in cognitive psychology consistently shows that information studied in spaced intervals is retained more effectively than the same material studied in a single massed session — the phenomenon known as the spacing effect.",
+      "listeningDescription": "A professor describes a study in which two groups of students learned a set of vocabulary words. Group A studied the words in three consecutive days of study. Group B studied the same words but spread sessions across three weeks. In a test given one month later, Group B recalled significantly more words, demonstrating the spacing effect in a real educational context.",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "toefl-speaking-015-q04",
+      "taskNum": 4,
+      "taskType": "academic_integrated_lecture_only",
+      "questionType": "speaking_task",
+      "prompt": "Using points and examples from the lecture, describe how metacognition affects learning as discussed by the professor.",
+      "prepSeconds": 20,
+      "responseSeconds": 60,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "listeningDescription": "A professor discusses how metacognition — thinking about one's own thinking and learning — improves academic performance. Students who actively monitor their comprehension, identify gaps in their understanding, and adjust their study strategies accordingly consistently outperform students who do not engage in this self-monitoring. The professor notes that metacognitive skills can be explicitly taught and are particularly effective when combined with feedback.",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    }
+  ]
+}

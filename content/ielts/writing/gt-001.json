@@ -1,0 +1,37 @@
+{
+  "id": "ielts-writing-gt-001",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 1 — Complaint Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-001-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "complaint",
+      "letterSituation": "You recently bought a laptop from an online retailer. When it arrived, the screen was cracked and one of the USB ports was not working. You have tried to contact customer service by phone twice but received no response.",
+      "prompt": "You recently bought a laptop from an online retailer. When it arrived, the screen was cracked and one of the USB ports was not working. You have tried to contact customer service by phone twice but received no response.\n\nWrite a letter to the company's customer service manager. In your letter:\n• describe the problem with the laptop\n• explain what you have done to try to resolve it\n• say what action you would like the company to take\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should address the complaint clearly, state the problem with the laptop, mention the failed contact attempts, and firmly but politely request a replacement or full refund within a specific time frame.",
+      "rubric": ["task achievement", "coherence and cohesion", "lexical resource", "grammatical range and accuracy"],
+      "difficulty": "medium",
+      "topic": "consumer complaint"
+    },
+    {
+      "id": "ielts-writing-gt-001-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Some people think that the best way to deal with increasing levels of online shopping is to impose higher taxes on deliveries. Others believe that encouraging shoppers to use local businesses is more effective. Discuss both views and give your own opinion.",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should acknowledge both perspectives fairly, provide specific reasons and examples for each, and present a clear personal position backed by logical reasoning and appropriate vocabulary.",
+      "rubric": ["task response", "coherence and cohesion", "lexical resource", "grammatical range and accuracy"],
+      "difficulty": "medium",
+      "topic": "consumer behaviour"
+    }
+  ]
+}

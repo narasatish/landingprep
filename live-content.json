@@ -1,0 +1,33 @@
+{
+  "updated": "2026-05-31",
+  "note": "EDIT THIS FILE to update fees, patterns and changes site-wide. No rebuild needed — the site fetches /api/live at runtime and every page reflects your edits on the next load. Keep values factual and verify against official sources.",
+  "examFees": {
+    "ielts":    { "inr": "₹17,000–19,000", "usd": "$215–230", "updated": "2026-05" },
+    "toefl":    { "inr": "₹16,900–18,900", "usd": "$204–226", "updated": "2026-05" },
+    "pte":      { "inr": "₹15,254",        "usd": "$183–195", "updated": "2026-05" },
+    "celpip":   { "inr": "₹18,000–20,000", "usd": "$215–240", "updated": "2026-05" },
+    "duolingo": { "inr": "₹5,000–5,400",   "usd": "$65",      "updated": "2026-05" },
+    "gre":      { "inr": "₹22,550",        "usd": "$220 (most) / $213 (India)", "updated": "2026-05" },
+    "gmat":     { "inr": "₹24,830",        "usd": "$300",     "updated": "2026-05" }
+  },
+  "examPatternNotes": {
+    "ielts": "IELTS One Skill Retake is now available at most computer-delivered centres — retake a single skill instead of the whole test (2024+).",
+    "toefl": "TOEFL iBT is the shorter ~2-hour format (since 2023): no more long unscored questions; Reading and Listening trimmed; a single Writing 'Academic Discussion' task.",
+    "pte": "PTE Academic uses a shorter ~2-hour format with AI scoring and results typically in 48 hours.",
+    "celpip": "CELPIP-General remains fully computer-delivered and IRCC-designated for Canadian PR and citizenship.",
+    "duolingo": "The Duolingo English Test adds an interactive 'Interview' and writing sample; accepted by 5,500+ institutions.",
+    "gre": "The GRE is the shorter ~1h 58m format (since Sept 2023): fewer questions and no separate unscored/research section.",
+    "gmat": "GMAT Focus Edition (205–805 scale) is now the only version: Quant, Verbal and Data Insights, with no essay (AWA)."
+  },
+  "changes": [
+    { "date": "2026-05-28", "category": "PR", "scope": "Canada", "title": "Canada Express Entry: new CEC draw invites 3,000 at CRS 521", "text": "IRCC held a Canadian Experience Class (CEC) round under Express Entry, issuing 3,000 invitations to apply (ITAs) with a cut-off of CRS 521. Category-based draws continue to favour candidates with Canadian work experience, French-language ability and in-demand occupations (healthcare, trades, STEM). For students: a PGWP + 1 year of skilled Canadian work experience remains the strongest route into the CEC pool. Boost your CRS with a provincial nomination (+600), a valid job offer or strong language scores." },
+    { "date": "2026-05-20", "category": "Visa", "scope": "Australia", "title": "Australia raises student savings & English bar for Subclass 500", "text": "From the latest update, the financial-capacity (savings) requirement for the Subclass 500 student visa is AUD 29,710, and minimum English levels were lifted (IELTS ~6.0, with higher bands for some courses). The Genuine Student (GS) test continues to assess genuine study intent. Apply early, show clear and consistent proof of funds, and keep your study plan aligned with your career goals." },
+    { "date": "2026-05-12", "category": "Admission", "scope": "UK", "title": "UK: dependants restricted, Graduate Route retained at 2 years", "text": "Most taught-master's students can no longer bring dependants, while the post-study Graduate Route was retained at 2 years (3 for PhD) after a government review. The Skilled Worker salary threshold remains higher (~£38,700), so plan your post-study job search around eligible sponsors and roles." },
+    { "date": "2026-05-05", "category": "Admission", "scope": "Multiple", "title": "Common college requirement changes for 2026 intake", "text": "Several universities updated 2026 entry requirements: a few top programs now ask IELTS 7.0 (no band below 6.5), more US graduate programs made the GRE optional, and many schools tightened proof-of-funds and deadline rules. Always confirm the exact, program-specific requirement on the official admissions page before applying — and use the LandingPrep College Predictor to match your scores." },
+    { "date": "2026-04-22", "category": "Visa", "scope": "Germany", "title": "Germany Opportunity Card (Chancenkarte) live for job seekers", "text": "Germany's points-based Opportunity Card lets qualified non-EU graduates come to look for work without a prior job offer. Combined with the EU Blue Card's fast PR track (21–33 months with basic German), Germany remains one of the strongest study-to-PR routes — with near-free public-university tuition and a blocked account of about €11,904/yr." },
+    { "date": "2026-04-10", "category": "PR", "scope": "New Zealand", "title": "New Zealand tweaks Green List & AEWV settings", "text": "New Zealand adjusted Accredited Employer Work Visa (AEWV) settings and expanded the Green List of shortage occupations, which offer faster residence pathways. A post-study work visa (up to 3 years) plus a Green List role remains the clearest route to residence." },
+    { "date": "2026-03-15", "category": "Exam", "scope": "GRE", "title": "Shorter GRE is now standard worldwide", "text": "The shorter GRE (~1 hour 58 minutes) is standard everywhere — fewer questions and no separate unscored/research section. Plan about 2 hours including check-in, and note many programs now list the GRE as optional." },
+    { "date": "2026-02-18", "category": "Fees", "scope": "IELTS", "title": "IELTS fee update in India", "text": "The IELTS test fee in India is now approximately ₹17,000–19,000 depending on centre and format. One Skill Retake is available at most computer-delivered centres if you only need to lift one band." },
+    { "date": "2026-01-30", "category": "Admission", "scope": "USA", "title": "US student-visa vetting tightened — apply early", "text": "US consulates increased student-visa scrutiny, including social-media checks. Apply early, keep your documents and answers consistent, and be ready to clearly explain your study plan, funding and ties. STEM OPT remains 36 months." }
+  ]
+}

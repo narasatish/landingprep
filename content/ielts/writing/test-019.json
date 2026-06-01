@@ -1,0 +1,109 @@
+{
+  "id": "ielts-writing-019",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 19",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-019-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The line graph shows changes in the average age of first-time parents in five European countries between 1980 and 2020. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "family and society",
+      "modelAnswer": "The line graph illustrates the average age at which individuals became parents for the first time in five European countries – Italy, Spain, Germany, France, and Sweden – over a 40-year period from 1980 to 2020. Overall, there was a consistent upward trend in the average age of first-time parenthood across all five nations, with Italy consistently recording the highest ages throughout the period.\n\nIn 1980, the average age of first-time parents ranged from 23.0 in Sweden to 26.0 in Italy. Sweden, France, and Germany all started below 25 years, at 23.0, 23.5, and 24.0 respectively. Spain and Italy had slightly higher initial ages of 25.5 and 26.0. Over the subsequent two decades, these ages rose steadily, with all countries except Italy remaining below 29 years by 2000.\n\nThe trend continued into 2020, by which point all five countries saw their average age of first-time parenthood exceed 28 years. Italy maintained its position as the country with the oldest first-time parents, reaching 32.0 years. Spain followed closely at 31.5 years. Germany, France, and Sweden also experienced significant increases, ending the period at 29.5, 29.0, and 28.5 years respectively, indicating a universal societal shift towards later parenthood across these European nations.",
+      "visual": {
+        "chartType": "line",
+        "title": "Average Age of First-Time Parents in Five European Countries (1980-2020)",
+        "yLabel": "Age",
+        "xAxis": [
+          "1980",
+          "1990",
+          "2000",
+          "2010",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Italy",
+            "values": [
+              26,
+              27.5,
+              29,
+              30.5,
+              32
+            ]
+          },
+          {
+            "label": "Spain",
+            "values": [
+              25.5,
+              27,
+              28.5,
+              30,
+              31.5
+            ]
+          },
+          {
+            "label": "Germany",
+            "values": [
+              24,
+              25,
+              26.5,
+              28,
+              29.5
+            ]
+          },
+          {
+            "label": "France",
+            "values": [
+              23.5,
+              24.5,
+              26,
+              27.5,
+              29
+            ]
+          },
+          {
+            "label": "Sweden",
+            "values": [
+              23,
+              24,
+              25.5,
+              27,
+              28.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-019-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "In many countries, people are choosing to have children later in life. What are the reasons for this trend, and what are the advantages and disadvantages of starting a family later?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "family and society",
+      "modelAnswer": "The phenomenon of individuals deferring parenthood until later stages of life is becoming increasingly prevalent across numerous nations. This essay will explore the underlying causes of this shift, subsequently evaluating both the merits and drawbacks associated with embarking on family life at a more advanced age.\n\nSeveral factors contribute to the decision to postpone childbearing. Foremost among these is the pursuit of higher education and career progression. Modern society often necessitates extensive academic qualifications and a stable professional foundation before individuals feel equipped to undertake the responsibilities of raising children. For instance, many women now prioritise establishing their careers, often into their thirties, before considering maternity leave, thereby ensuring financial security and personal fulfilment. Furthermore, the rising cost of living and childcare expenses compel many to delay starting a family until they are more financially secure, often requiring dual incomes and substantial savings.\n\nWhile this trend presents certain benefits, it also carries potential disadvantages. On the positive side, older parents often possess greater emotional maturity, life experience, and financial stability, which can translate into a more nurturing and secure environment for their offspring. They may also have a clearer sense of identity and purpose, allowing them to dedicate themselves more fully to parenting. Conversely, delaying childbirth can lead to increased fertility challenges, particularly for women, and a higher risk of certain pregnancy complications. Moreover, older parents may face an energy gap when raising young children and could have a shorter period of active involvement in their children's adult lives.\n\nIn conclusion, the decision to have children later in life is predominantly driven by educational and career aspirations coupled with financial considerations. Although this offers advantages such as enhanced parental maturity and stability, it concurrently introduces potential challenges related to fertility and parental energy levels."
+    }
+  ],
+  "variant": "academic"
+}

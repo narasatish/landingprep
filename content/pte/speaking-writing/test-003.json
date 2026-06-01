@@ -1,0 +1,767 @@
+{
+  "id": "pte-speaking-writing-003",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 3",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-003-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Preserving Knowledge in Digital Archives”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "688c9c4e6eec972b49",
+      "modelAnswer": "Digital archives are transforming how historical and cultural heritage is preserved and accessed. They offer unprecedented opportunities for researchers and the public to engage with vast collections of documents, images, and multimedia, often from remote locations. However, challenges remain regarding long-term data integrity, format obsolescence, and the substantial resources required for ongoing maintenance and curation, demanding innovative solutions for future sustainability.",
+      "readText": "Digital archives are transforming how historical and cultural heritage is preserved and accessed. They offer unprecedented opportunities for researchers and the public to engage with vast collections of documents, images, and multimedia, often from remote locations. However, challenges remain regarding long-term data integrity, format obsolescence, and the substantial resources required for ongoing maintenance and curation, demanding innovative solutions for future sustainability."
+    },
+    {
+      "id": "pte-speaking-writing-003-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Ancient Trade Routes”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Ancient trade networks facilitated the exchange of goods, ideas, and technologies across vast distances.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "fcb27e755cde34e4b5",
+      "modelAnswer": "Ancient trade networks facilitated the exchange of goods, ideas, and technologies across vast distances.",
+      "audioScript": "Ancient trade networks facilitated the exchange of goods, ideas, and technologies across vast distances."
+    },
+    {
+      "id": "pte-speaking-writing-003-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Renewable Battery Design: Material Innovation Impact on Energy Density\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0d1cbafe4231731d43",
+      "modelAnswer": "This bar chart illustrates the projected impact of material innovation on renewable battery energy density from 2010 to 2035. Lithium-ion batteries in 2010 had an energy density of 150 Wh/kg. Solid-state technology improved this to 280 Wh/kg by 2020, and Lithium-Sulfur is projected to reach 400 Wh/kg by 2025, representing the highest density. Conversely, Redox Flow batteries in 2030 show the lowest projected density at 120 Wh/kg. Zinc-Air batteries are expected to achieve 350 Wh/kg by 2035, highlighting continuous advancements in battery design.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Battery Design: Material Innovation Impact on Energy Density",
+        "yLabel": "Energy Density (Wh/kg)",
+        "xAxis": [
+          "Lithium-ion (2010)",
+          "Solid-State (2020)",
+          "Lithium-Sulfur (2025)",
+          "Redox Flow (2030)",
+          "Zinc-Air (2035)"
+        ],
+        "series": [
+          {
+            "label": "Projected Energy Density",
+            "values": [
+              150,
+              280,
+              400,
+              120,
+              350
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-003-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Effective Language Learning Strategies”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "3399f9666f1b2cb8c0",
+      "modelAnswer": "The speaker discussed effective language learning, highlighting that practical application and immersion are more beneficial than solely focusing on grammar. They emphasized the importance of consistent exposure, interacting with native speakers, and viewing mistakes as part of the learning process. The core message was to foster an environment where the target language is used naturally and frequently, rather than just studied academically, to improve acquisition.",
+      "audioScript": "Many students struggle with language acquisition, often focusing too much on grammar rules and not enough on practical application. Research suggests that consistent exposure, active immersion, and regular interaction with native speakers are far more effective than rote memorization. Furthermore, embracing mistakes as part of the learning process significantly reduces anxiety and encourages more frequent practice. The key is creating an environment where the target language is used naturally and often, rather than just studied academically.",
+      "keyPoints": [
+        "Focus on practical application, not just grammar.",
+        "Consistent exposure, immersion, and interaction are crucial.",
+        "Embrace mistakes to reduce anxiety.",
+        "Create a natural language use environment."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-003-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Disease Prevention Campaigns”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Public health",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "6d0b3e14acc56f0cb1",
+      "modelAnswer": "Public health",
+      "audioScript": "What type of campaign aims to improve community health through education and awareness?"
+    },
+    {
+      "id": "pte-speaking-writing-003-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Innovations in Museum Preservation”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0f7406a3d3ae0f9a82",
+      "modelAnswer": "Museum conservation now employs scientific analysis, advanced technology, and ethical practices, from climate control to nanotechnology, to ensure the longevity and authenticity of artifacts for future generations.",
+      "readText": "Museum conservation is a dynamic field constantly evolving to meet new challenges posed by environmental factors, material degradation, and visitor interaction. Modern conservation practices integrate scientific analysis, advanced technology, and ethical considerations to ensure the longevity and authenticity of artifacts. This includes everything from climate control systems and specialized display cases to nanotechnology for material stabilization and digital imaging for documentation. The goal is not merely to slow decay but to understand the intrinsic properties of objects and their historical context, allowing for informed decisions about their care and presentation to future generations."
+    },
+    {
+      "id": "pte-speaking-writing-003-q07",
+      "questionType": "essay",
+      "prompt": "Community science projects involve public participation in scientific research. Discuss the potential benefits and drawbacks of these initiatives for both scientific progress and public engagement. Do the advantages outweigh the disadvantages?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "89a429d8187c193b82",
+      "modelAnswer": "Community science projects, often termed citizen science, have emerged as a powerful tool for scientific data collection and public engagement. A primary benefit is the sheer volume of data that can be gathered across vast geographical areas, enabling researchers to tackle projects that would otherwise be resource-intensive or impossible. This democratizes science, allowing individuals without formal training to contribute meaningfully, fostering scientific literacy and a deeper appreciation for research. Participants often develop new skills, and the shared endeavor can strengthen community bonds and promote environmental stewardship, particularly in conservation-focused projects. \n\nHowever, there are notable drawbacks. Data quality can be a significant concern; untrained volunteers might introduce inaccuracies or inconsistencies, requiring rigorous validation processes that can be time-consuming for professional scientists. Ethical considerations, such as data privacy and proper informed consent, also need careful management. Furthermore, the design of these projects requires considerable effort to ensure accessibility and clarity for non-experts, which can sometimes oversimplify complex scientific methodologies. \n\nDespite these challenges, the advantages of community science generally outweigh the disadvantages. While data quality and ethical oversight are crucial, the benefits of expanded data sets, increased public scientific literacy, and enhanced community engagement are profound. With proper training, oversight, and project design, citizen science offers an invaluable pathway to accelerate scientific discovery while simultaneously building a more scientifically informed and engaged society. The collaborative spirit it fosters is essential for addressing many global challenges."
+    },
+    {
+      "id": "pte-speaking-writing-003-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Benefits of Urban Green Roofs”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "79827506587fc199c4",
+      "modelAnswer": "Urban green roofs are increasingly recognized as vital components of sustainable city planning. They help mitigate the urban heat island effect by absorbing solar radiation, reduce stormwater runoff by retaining precipitation, and improve air quality by filtering pollutants. Furthermore, these vegetated spaces provide crucial habitats for biodiversity, enhance aesthetic appeal, and offer residents valuable recreational areas, contributing significantly to overall urban resilience and well-being.",
+      "readText": "Urban green roofs are increasingly recognized as vital components of sustainable city planning. They help mitigate the urban heat island effect by absorbing solar radiation, reduce stormwater runoff by retaining precipitation, and improve air quality by filtering pollutants. Furthermore, these vegetated spaces provide crucial habitats for biodiversity, enhance aesthetic appeal, and offer residents valuable recreational areas, contributing significantly to overall urban resilience and well-being."
+    },
+    {
+      "id": "pte-speaking-writing-003-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Understanding Human Navigation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "The psychology of wayfinding examines how people orient themselves and navigate through environments.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "62f58f09b425794639",
+      "modelAnswer": "The psychology of wayfinding examines how people orient themselves and navigate through environments.",
+      "audioScript": "The psychology of wayfinding examines how people orient themselves and navigate through environments."
+    },
+    {
+      "id": "pte-speaking-writing-003-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a line graph titled \"Evolution of Deep Ocean Communication Technologies (1960-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "14bd8ebff17667bb92",
+      "modelAnswer": "This line chart illustrates the evolution of deep ocean communication technologies from the 1960s to the 2020s, focusing on data transmission speed. Acoustic modems show a steady increase, starting at 0.1 kbps in the 1960s and reaching 500 kbps by the 2020s. Optical communication, initially absent, began in the 1990s with 0.5 kbps. Notably, optical communication experiences a dramatic surge, surpassing acoustic modems in the 2020s with 1000 kbps, indicating its rapid development and higher potential for future deep-sea data transfer.",
+      "visual": {
+        "chartType": "line",
+        "title": "Evolution of Deep Ocean Communication Technologies (1960-2020)",
+        "yLabel": "Data Transmission Speed (kbps)",
+        "xAxis": [
+          "1960s",
+          "1970s",
+          "1980s",
+          "1990s",
+          "2000s",
+          "2010s",
+          "2020s"
+        ],
+        "series": [
+          {
+            "label": "Acoustic Modems",
+            "values": [
+              0.1,
+              0.5,
+              2,
+              10,
+              50,
+              200,
+              500
+            ]
+          },
+          {
+            "label": "Optical Communication",
+            "values": [
+              0,
+              0,
+              0,
+              0.5,
+              5,
+              50,
+              1000
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-003-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Digital Preservation Challenges”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "2172ab39587d47808e",
+      "modelAnswer": "The speaker discussed the challenges of digital preservation, noting that digital data is fragile and prone to obsolescence, unlike physical artifacts. Key issues include format migration, data corruption, and managing vast information volumes. To prevent a 'digital dark age,' institutions need to invest in strong infrastructure, skilled staff, and flexible strategies to ensure digital records remain accessible and usable for future generations, emphasizing continuous management.",
+      "audioScript": "The proliferation of digital data presents both immense opportunities and significant challenges for long-term preservation. Unlike physical artifacts, digital files are fragile, susceptible to technological obsolescence, and require continuous management to remain accessible. The lecture highlighted that format migration, data corruption, and the sheer volume of information are constant hurdles. Institutions must invest in robust infrastructure, skilled personnel, and adaptable strategies to ensure that today's digital records are retrievable and usable decades from now, preventing a 'digital dark age' for future generations.",
+      "keyPoints": [
+        "Digital data is fragile and susceptible to obsolescence.",
+        "Challenges include format migration, data corruption, and volume.",
+        "Requires robust infrastructure, skilled personnel, and adaptable strategies.",
+        "Aims to prevent a 'digital dark age'."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-003-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Silk Road Commodity”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Silk",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "64609baecfa8040040",
+      "modelAnswer": "Silk",
+      "audioScript": "Which valuable fabric was a primary commodity traded along the ancient Silk Road?"
+    },
+    {
+      "id": "pte-speaking-writing-003-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Advancements in Renewable Battery Technology”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "bab5511ac880c890ae",
+      "modelAnswer": "The demand for sustainable energy storage has spurred research into next-generation battery designs like solid-state and organic batteries, which offer improved density, charging, and environmental benefits over traditional lithium-ion, crucial for renewable energy integration.",
+      "readText": "The global push towards renewable energy sources like solar and wind power has intensified the demand for efficient and sustainable energy storage solutions. Traditional lithium-ion batteries, while powerful, pose environmental concerns regarding raw material extraction and disposal. Consequently, researchers are exploring next-generation battery designs, including solid-state batteries, flow batteries, and even organic batteries, which promise higher energy density, faster charging times, and reduced ecological footprints. These innovations are crucial for overcoming the intermittency of renewables and building a truly sustainable energy infrastructure, moving beyond fossil fuels and their associated environmental impacts."
+    },
+    {
+      "id": "pte-speaking-writing-003-q14",
+      "questionType": "essay",
+      "prompt": "Modern technology offers numerous tools for language learning, from apps to virtual reality. Discuss the extent to which technology has revolutionized language acquisition and whether it can fully replace traditional classroom instruction. Support your answer with examples.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "ad71ed3006e41aecb2",
+      "modelAnswer": "The advent of modern technology has undeniably revolutionized language acquisition, making learning more accessible, personalized, and engaging than ever before. Language learning apps like Duolingo and Babbel provide gamified experiences, instant feedback, and structured lessons that cater to individual paces. Online platforms offer immersion opportunities through native speaker interaction, virtual exchanges, and access to authentic media like films and podcasts, which were once difficult to obtain. Virtual reality is even beginning to simulate real-world conversational scenarios, reducing anxiety and building confidence for learners.\n\nHowever, while technology significantly enhances the learning process, it cannot fully replace traditional classroom instruction. Classrooms offer a dynamic environment for spontaneous, nuanced communication and immediate, tailored feedback from experienced instructors that AI tools cannot yet perfectly replicate. The social aspect of learning, including collaborative tasks and peer interaction, fosters a sense of community and provides diverse perspectives that are crucial for developing comprehensive communicative competence. Furthermore, teachers can identify and address individual learning styles and difficulties with a depth of understanding that algorithms currently lack.\n\nIn conclusion, technology has transformed language acquisition by providing unprecedented resources and flexibility, empowering learners to take control of their progress. Nevertheless, the irreplaceable human element of classroom instruction, with its emphasis on genuine interaction, nuanced feedback, and communal learning, remains vital. The most effective approach likely involves a blended model, leveraging technology's strengths to augment and enrich, rather than entirely supplant, the invaluable role of the human teacher and the classroom setting."
+    },
+    {
+      "id": "pte-speaking-writing-003-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Impact of Public Health Campaigns”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "666e892e38836ead36",
+      "modelAnswer": "Public health campaigns play a critical role in shaping societal behaviors and improving overall well-being. By disseminating vital information through various media, they aim to raise awareness about prevalent health issues, promote preventive measures, and encourage healthier lifestyles. Successful campaigns often lead to significant reductions in disease incidence, increased vaccination rates, and a more informed public, demonstrating their profound impact on community health outcomes and resource allocation.",
+      "readText": "Public health campaigns play a critical role in shaping societal behaviors and improving overall well-being. By disseminating vital information through various media, they aim to raise awareness about prevalent health issues, promote preventive measures, and encourage healthier lifestyles. Successful campaigns often lead to significant reductions in disease incidence, increased vaccination rates, and a more informed public, demonstrating their profound impact on community health outcomes and resource allocation."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Solar Energy Breakthroughs”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q16",
+      "modelAnswer": "Recent advances in renewable solar energy technology are making it more efficient and affordable than ever before. Innovations in photovoltaic materials, such as perovskites, promise higher conversion rates and lower manufacturing costs. Furthermore, improved grid integration and energy storage solutions are addressing the intermittency challenge, paving the way for solar power to become a dominant global energy source, significantly reducing reliance on fossil fuels and mitigating climate change impacts.",
+      "readText": "Recent advances in renewable solar energy technology are making it more efficient and affordable than ever before. Innovations in photovoltaic materials, such as perovskites, promise higher conversion rates and lower manufacturing costs. Furthermore, improved grid integration and energy storage solutions are addressing the intermittency challenge, paving the way for solar power to become a dominant global energy source, significantly reducing reliance on fossil fuels and mitigating climate change impacts."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Global Climate Mitigation Efforts”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q17",
+      "modelAnswer": "Climate change mitigation strategies encompass a broad range of approaches aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy, improving energy efficiency, reforestation, and developing carbon capture technologies. International agreements and national policies are crucial for coordinating these efforts, but individual actions, from sustainable consumption to advocating for policy changes, also play a vital role in achieving global climate goals.",
+      "readText": "Climate change mitigation strategies encompass a broad range of approaches aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy, improving energy efficiency, reforestation, and developing carbon capture technologies. International agreements and national policies are crucial for coordinating these efforts, but individual actions, from sustainable consumption to advocating for policy changes, also play a vital role in achieving global climate goals."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Food Production Economics”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q18",
+      "modelAnswer": "The economics of global food production are complex, influenced by factors such as climate patterns, geopolitical stability, technological advancements, and consumer demand. Ensuring food security for an ever-growing population requires sustainable agricultural practices, efficient supply chains, and equitable distribution systems. Addressing price volatility and minimizing food waste are also critical challenges that impact both producers' livelihoods and consumers' access to nutritious food worldwide.",
+      "readText": "The economics of global food production are complex, influenced by factors such as climate patterns, geopolitical stability, technological advancements, and consumer demand. Ensuring food security for an ever-growing population requires sustainable agricultural practices, efficient supply chains, and equitable distribution systems. Addressing price volatility and minimizing food waste are also critical challenges that impact both producers' livelihoods and consumers' access to nutritious food worldwide."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The science of sleep directly influences memory consolidation exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Sleep and Memory”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q19",
+      "modelAnswer": "The science of sleep directly influences memory consolidation exactly as you hear it.",
+      "audioScript": "The science of sleep directly influences memory consolidation exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Digital literacy is increasingly crucial for effective education exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Digital Education”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q20",
+      "modelAnswer": "Digital literacy is increasingly crucial for effective education exactly as you hear it.",
+      "audioScript": "Digital literacy is increasingly crucial for effective education exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Antibiotic resistance poses a major challenge to global health policy exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Antibiotic Resistance”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q21",
+      "modelAnswer": "Antibiotic resistance poses a major challenge to global health policy exactly as you hear it.",
+      "audioScript": "Antibiotic resistance poses a major challenge to global health policy exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ocean acidification threatens marine biodiversity exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ocean Health”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q22",
+      "modelAnswer": "Ocean acidification threatens marine biodiversity exactly as you hear it.",
+      "audioScript": "Ocean acidification threatens marine biodiversity exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The neuroscience of creativity reveals fascinating brain mechanisms exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Brain and Creativity”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q23",
+      "modelAnswer": "The neuroscience of creativity reveals fascinating brain mechanisms exactly as you hear it.",
+      "audioScript": "The neuroscience of creativity reveals fascinating brain mechanisms exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Global water scarcity demands urgent conservation efforts exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Water Conservation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q24",
+      "modelAnswer": "Global water scarcity demands urgent conservation efforts exactly as you hear it.",
+      "audioScript": "Global water scarcity demands urgent conservation efforts exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Genetic engineering raises significant ethical considerations exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Genetic Ethics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q25",
+      "modelAnswer": "Genetic engineering raises significant ethical considerations exactly as you hear it.",
+      "audioScript": "Genetic engineering raises significant ethical considerations exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Quantum computing is achieving remarkable breakthroughs exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Quantum Computing”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q26",
+      "modelAnswer": "Quantum computing is achieving remarkable breakthroughs exactly as you hear it.",
+      "audioScript": "Quantum computing is achieving remarkable breakthroughs exactly as you hear it."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Stages of Effective Communication\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q27",
+      "modelAnswer": "The table illustrates the five crucial stages of effective communication, starting with 'Encoding' where the sender formulates the message, facing the challenge of 'Clarity & Conciseness'. This is followed by 'Transmission', where the message is sent, and 'Receiving', where the receiver gets the message, with 'Attention & Perception' being a key challenge. Next, 'Decoding' involves the receiver interpreting the message, tackling 'Interpretation & Bias'. Finally, 'Feedback' completes the cycle, with both sender and receiver engaging in responses, highlighting 'Timeliness & Honesty' as its main challenge. Overall, it clearly outlines the process and potential obstacles.",
+      "visual": {
+        "chartType": "table",
+        "title": "Stages of Effective Communication",
+        "headers": [
+          "Stage",
+          "Sender Action",
+          "Receiver Action",
+          "Key Challenge"
+        ],
+        "rows": [
+          [
+            "Encoding",
+            "Formulates message",
+            "N/A",
+            "Clarity & Conciseness"
+          ],
+          [
+            "Transmission",
+            "Sends message via medium",
+            "N/A",
+            "Medium Selection & Noise"
+          ],
+          [
+            "Receiving",
+            "N/A",
+            "Gets message",
+            "Attention & Perception"
+          ],
+          [
+            "Decoding",
+            "N/A",
+            "Interprets message",
+            "Interpretation & Bias"
+          ],
+          [
+            "Feedback",
+            "Responds",
+            "Acknowledges response",
+            "Timeliness & Honesty"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Key Components and Products of Photosynthesis\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q28",
+      "modelAnswer": "This table illustrates the key components and products of photosynthesis, divided into two main stages. The first stage, Light-Dependent Reactions, takes place in the Thylakoid Membranes. Its inputs are Sunlight and Water, producing Oxygen, ATP, and NADPH. The second stage, Light-Independent Reactions, also known as the Calvin Cycle, occurs in the Stroma. This stage utilizes Carbon Dioxide, ATP, and NADPH as inputs, resulting in Glucose, ADP, and NADP+. Clearly, water and sunlight are crucial initial inputs, while glucose is the primary energy output for plants.",
+      "visual": {
+        "chartType": "table",
+        "title": "Key Components and Products of Photosynthesis",
+        "headers": [
+          "Process Stage",
+          "Inputs",
+          "Outputs",
+          "Location"
+        ],
+        "rows": [
+          [
+            "Light-Dependent Reactions",
+            "Sunlight, Water (H2O)",
+            "Oxygen (O2), ATP, NADPH",
+            "Thylakoid Membranes"
+          ],
+          [
+            "Light-Independent Reactions (Calvin Cycle)",
+            "Carbon Dioxide (CO2), ATP, NADPH",
+            "Glucose (C6H12O6), ADP, NADP+",
+            "Stroma"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Population Growth Projections (1950-2100)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q29",
+      "modelAnswer": "The line chart illustrates global population growth projections from 1950 to 2100. In 1950, the world population was approximately 2.5 billion, steadily increasing to 6.1 billion by 2000. A significant upward trend is projected, reaching 7.9 billion in 2025 and an estimated peak of 10.9 billion by 2100. The steepest growth occurred between 1950 and 2050. After 2075, the growth rate appears to slow down considerably, indicating a potential stabilization around 10.9 billion by the end of the century. Overall, the chart clearly depicts a continuous increase in global population.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Population Growth Projections (1950-2100)",
+        "yLabel": "Population (Billions)",
+        "xAxis": [
+          "1950",
+          "1975",
+          "2000",
+          "2025",
+          "2050",
+          "2075",
+          "2100"
+        ],
+        "series": [
+          {
+            "label": "Population",
+            "values": [
+              2.5,
+              4.1,
+              6.1,
+              7.9,
+              9.7,
+              10.4,
+              10.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Top 5 Languages by Number of Native Speakers Worldwide (Millions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q30",
+      "modelAnswer": "This bar chart illustrates the top five languages globally by their number of native speakers, measured in millions. Mandarin Chinese is clearly the most spoken language, with an impressive 920 million native speakers. Spanish ranks second at 480 million, followed by English with 370 million. Hindi comes in fourth with 345 million native speakers, while Arabic is fifth with 310 million. The data highlights a significant gap between Mandarin Chinese and all other languages, demonstrating its dominant position in terms of native speakers worldwide.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Top 5 Languages by Number of Native Speakers Worldwide (Millions)",
+        "yLabel": "Number of Native Speakers (Millions)",
+        "xAxis": [
+          "Mandarin Chinese",
+          "Spanish",
+          "English",
+          "Hindi",
+          "Arabic"
+        ],
+        "series": [
+          {
+            "label": "Native Speakers",
+            "values": [
+              920,
+              480,
+              370,
+              345,
+              310
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q31",
+      "modelAnswer": "The speaker discussed the vital role of non-verbal communication, which includes body language, facial expressions, gestures, and tone of voice. They explained that a large part of our daily communication is non-verbal and impacts how verbal messages are understood. Examples like eye contact conveying sincerity or crossed arms indicating defensiveness were given. The lecture emphasized that understanding these subtle signals is essential for effective interpersonal interactions and building rapport.",
+      "audioScript": "Non-verbal communication, often overlooked, plays a crucial role in conveying messages and understanding social cues. It encompasses body language, facial expressions, gestures, and even tone of voice. Studies show that a significant portion of our daily communication is non-verbal, influencing how our verbal messages are perceived. For instance, maintaining eye contact can signal sincerity, while crossed arms might suggest defensiveness. Understanding and interpreting these subtle signals is vital for effective interpersonal interactions and building rapport in both personal and professional settings.",
+      "keyPoints": [
+        "Non-verbal communication includes body language, facial expressions, gestures, tone.",
+        "It significantly influences how verbal messages are perceived.",
+        "Examples: eye contact signals sincerity, crossed arms suggest defensiveness.",
+        "Interpreting these signals is crucial for effective interactions and rapport."
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Key to Understanding”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q32",
+      "modelAnswer": "Communication",
+      "audioScript": "What is the process of conveying information, ideas, or feelings through language or other means?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Method of Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q33",
+      "modelAnswer": "Verbal",
+      "audioScript": "What kind of communication involves spoken words?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Misinterpretation",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barrier”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-003-q34",
+      "modelAnswer": "Misinterpretation",
+      "audioScript": "What is a common obstacle to clear communication where messages are misunderstood?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-003-q01": "",
+    "pte-speaking-writing-003-q02": "",
+    "pte-speaking-writing-003-q03": "",
+    "pte-speaking-writing-003-q04": "",
+    "pte-speaking-writing-003-q05": "sample answer",
+    "pte-speaking-writing-003-q06": "",
+    "pte-speaking-writing-003-q07": "",
+    "pte-speaking-writing-003-q08": "",
+    "pte-speaking-writing-003-q09": "",
+    "pte-speaking-writing-003-q10": "",
+    "pte-speaking-writing-003-q11": "",
+    "pte-speaking-writing-003-q12": "sample answer",
+    "pte-speaking-writing-003-q13": "",
+    "pte-speaking-writing-003-q14": "",
+    "pte-speaking-writing-003-q15": ""
+  },
+  "fingerprints": [
+    "688c9c4e6eec972b49",
+    "fcb27e755cde34e4b5",
+    "0d1cbafe4231731d43",
+    "3399f9666f1b2cb8c0",
+    "6d0b3e14acc56f0cb1",
+    "0f7406a3d3ae0f9a82",
+    "89a429d8187c193b82",
+    "79827506587fc199c4",
+    "62f58f09b425794639",
+    "14bd8ebff17667bb92",
+    "2172ab39587d47808e",
+    "64609baecfa8040040",
+    "bab5511ac880c890ae",
+    "ad71ed3006e41aecb2",
+    "666e892e38836ead36"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "ielts-writing-006",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 6",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-006-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The table below shows data on screen time use among different age groups in three countries in 2022. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "technology and youth",
+      "modelAnswer": "The table illustrates the daily screen time usage across different age groups in three distinct countries (A, B, and C) in 2022. All figures are presented in hours per day.\n\nOverall, it is clear that younger individuals consistently spend more time on screens than older age groups across all three nations. Country B generally recorded the highest screen time across most categories, while Country C tended to have the lowest figures.\n\nLooking at the younger demographics, the 16-24 years age group showed the highest screen time, with Country B leading at 8.5 hours, followed by Country A at 7.8 hours, and Country C at 7.2 hours. Similarly, for those aged 25-44 years, Country B again had the most extensive usage at 7.3 hours, compared to 6.8 hours in Country C and 6.5 hours in Country A.\n\nAmong the older age groups, the pattern of decreasing screen time with increasing age is maintained. Individuals aged 45-64 years in Country B used screens for 6.0 hours daily, which was higher than Country C (5.5 hours) and Country A (5.2 hours). The 65+ years group had the lowest screen time across the board, ranging from 4.5 hours in Country B to 4.1 hours in Country C, with Country A reporting 3.9 hours.",
+      "visual": {
+        "chartType": "table",
+        "title": "Screen Time Use Among Different Age Groups in Three Countries, 2022 (Hours per day)",
+        "headers": [
+          "Age Group",
+          "Country A",
+          "Country B",
+          "Country C"
+        ],
+        "rows": [
+          [
+            "16-24 years",
+            "7.8",
+            "8.5",
+            "7.2"
+          ],
+          [
+            "25-44 years",
+            "6.5",
+            "7.3",
+            "6.8"
+          ],
+          [
+            "45-64 years",
+            "5.2",
+            "6.0",
+            "5.5"
+          ],
+          [
+            "65+ years",
+            "3.9",
+            "4.5",
+            "4.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-006-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "The widespread use of smartphones and social media is having a negative effect on young people's social skills and mental health. To what extent do you agree or disagree?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "technology and youth",
+      "modelAnswer": "The pervasive integration of mobile technology and online platforms into daily life has sparked considerable debate regarding its impact on the younger generation. While these digital tools offer undeniable benefits, I largely agree that their extensive use detrimentally affects adolescents' social competencies and psychological well-being.\n\nOne significant area of concern is the erosion of face-to-face communication skills. Young people, accustomed to interacting through screens, often struggle with the nuances of in-person social engagement, such as interpreting body language or maintaining eye contact. For instance, reliance on texting and instant messaging can lead to a reduced capacity for empathetic responses and effective conflict resolution in real-world interactions, as these digital mediums lack the immediate feedback and emotional depth of direct conversation. Consequently, genuine human connection can feel less natural and more challenging to cultivate.\n\nFurthermore, the constant exposure to curated online content can severely impact mental health. Social media platforms, by their very design, often present an idealised version of reality, fostering comparison and inadequacy among young users. A prime example is the phenomenon of 'doomscrolling' or the relentless pursuit of online validation through 'likes' and comments, which can exacerbate feelings of anxiety, depression, and low self-esteem when those expectations are not met. This perpetual digital performance often overshadows authentic self-expression and contributes to a heightened sense of loneliness, despite being constantly connected.\n\nIn conclusion, while smartphones and social media possess inherent advantages, their prevalent usage undeniably poses a significant threat to the development of robust social skills and stable mental health in young individuals. Addressing these challenges necessitates a more balanced approach to digital engagement."
+    }
+  ],
+  "variant": "academic"
+}

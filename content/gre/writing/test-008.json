@@ -1,0 +1,41 @@
+{
+  "id": "gre-writing-008",
+  "exam": "gre",
+  "section": "writing",
+  "type": "section",
+  "title": "GRE Analytical Writing Practice Test 8",
+  "durationSeconds": 1800,
+  "questionCount": 1,
+  "instructions": "Complete both tasks. Task 1 (Issue): 30 minutes, 400–600 words recommended. Task 2 (Argument): 30 minutes, 400–600 words recommended.",
+  "questions": [
+    {
+      "id": "gre-writing-008-q1",
+      "taskType": "issue",
+      "taskNumber": 1,
+      "title": "Analyse an Issue",
+      "timeMinutes": 30,
+      "prompt": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "scoringCriteria": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "wordTarget": 500,
+      "questionType": "writing_task",
+      "writingInstructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "rubric": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "situation": "Competition is ultimately more beneficial to society than cooperation.",
+      "questionNumber": 1,
+      "modelAnswer": "The assertion that competition ultimately benefits society more than cooperation presents a compelling dichotomy, yet a nuanced perspective reveals that the relationship is far more intricate and interdependent than a simple zero-sum game. While unfettered competition can indeed drive innovation and efficiency, its benefits are often maximized when tempered by cooperative frameworks that ensure equitable distribution and collective progress. Ultimately, a society that thrives understands that pure competition, without the balancing force of cooperation, risks exacerbating inequalities and undermining the very fabric of social cohesion necessary for long-term prosperity.\n\nOne significant way competition proves beneficial is in fostering innovation and technological advancement. The drive to outperform rivals often compels individuals and organizations to invest in research and development, streamline processes, and create superior products or services. For instance, the intense competition within the smartphone industry, particularly between giants like Apple and Samsung, has led to rapid advancements in mobile technology, camera quality, and user interfaces, benefiting consumers globally. This relentless pursuit of a competitive edge directly translates into a faster pace of progress than might be achieved through purely cooperative ventures, which can sometimes be slower due to consensus-building and a lack of direct financial incentive to outpace peers.\n\nHowever, the benefits of competition are often contingent upon a cooperative societal infrastructure that establishes fair rules and safety nets. Without robust regulatory bodies, for example, competition can devolve into monopolistic practices or unethical behavior, ultimately harming consumers and smaller businesses. Consider the financial crisis of 2008: unchecked competition in the banking sector, driven by a desire for ever-higher profits and market share, led to reckless lending practices and the creation of complex financial instruments without adequate oversight. The cooperative efforts of governments and international bodies were then required to mitigate the systemic risks and prevent a global economic collapse. This demonstrates that while competitive forces can generate significant wealth, their destructive potential necessitates a cooperative framework for governance and risk management.\n\nFurthermore, certain societal challenges are inherently unsuited to a purely competitive approach, demanding collective action and shared resources. Addressing global issues such as climate change, pandemics, or widespread poverty unequivocally requires international cooperation, shared scientific endeavors, and coordinated policy responses rather than individual nations or corporations competing to \"solve\" the problem in isolation. The development and distribution of COVID-19 vaccines, for instance, showcased both the competitive race among pharmaceutical companies and the critical cooperative efforts of governments, NGOs, and global health organizations like WHO to fund research, share data, and ensure equitable access. In such scenarios, competition may accelerate discovery, but cooperation is indispensable for effective and equitable implementation.\n\nIn conclusion, while competition undeniably serves as a powerful engine for progress, driving innovation and efficiency across various sectors, its ultimate benefit to society is inextricably linked to, and often enhanced by, cooperative structures. Unbridled competition risks generating significant societal costs, including increased inequality and systemic instability. A truly thriving society recognizes the symbiotic relationship between these two forces, strategically deploying competition to spur advancement while simultaneously cultivating cooperation to ensure fairness, stability, and the collective capacity to address shared challenges. The optimal path forward lies not in prioritizing one over the other, but in intelligently integrating both to achieve a more robust and equitable future."
+    }
+  ]
+}

@@ -1,0 +1,720 @@
+{
+  "id": "pte-speaking-writing-047",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 47",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-047-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Remote Work's Evolving Landscape”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "remote work trends",
+      "modelAnswer": "The recent surge in remote work has fundamentally reshaped corporate culture and employee expectations. Companies are now navigating complex decisions regarding office space, hybrid models, and digital infrastructure to support a distributed workforce. This shift necessitates a re-evaluation of traditional management styles, focusing on outcome-based performance rather than mere presence. Furthermore, it presents both opportunities and challenges for fostering team cohesion and professional development in a virtual environment.",
+      "readText": "The recent surge in remote work has fundamentally reshaped corporate culture and employee expectations. Companies are now navigating complex decisions regarding office space, hybrid models, and digital infrastructure to support a distributed workforce. This shift necessitates a re-evaluation of traditional management styles, focusing on outcome-based performance rather than mere presence. Furthermore, it presents both opportunities and challenges for fostering team cohesion and professional development in a virtual environment."
+    },
+    {
+      "id": "pte-speaking-writing-047-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Remote Work Impact”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Flexible work arrangements have significantly boosted productivity and employee satisfaction worldwide.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "remote work trends",
+      "modelAnswer": "Flexible work arrangements have significantly boosted productivity and employee satisfaction worldwide.",
+      "audioScript": "Flexible work arrangements have significantly boosted productivity and employee satisfaction worldwide."
+    },
+    {
+      "id": "pte-speaking-writing-047-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Remote Work Adoption by Industry (2020 vs. 2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "remote work trends",
+      "modelAnswer": "This bar chart illustrates remote work adoption across various industries in 2020 and 2023. IT/Software consistently shows the highest adoption, reaching 95% in 2023, up from 90% in 2020. Finance/Insurance also saw significant growth, increasing from 65% to 80%. Education and Healthcare experienced moderate rises, while Manufacturing remained the lowest, only increasing from 10% to 15%. Overall, all industries show an upward trend in remote work adoption over the three-year period, indicating its growing prevalence.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Remote Work Adoption by Industry (2020 vs. 2023)",
+        "yLabel": "Percentage of Workforce Working Remotely",
+        "xAxis": [
+          "IT/Software",
+          "Finance/Insurance",
+          "Education",
+          "Healthcare",
+          "Manufacturing"
+        ],
+        "series": [
+          {
+            "label": "2020",
+            "values": [
+              90,
+              65,
+              40,
+              20,
+              10
+            ]
+          },
+          {
+            "label": "2023",
+            "values": [
+              95,
+              80,
+              55,
+              35,
+              15
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-047-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Remote Work's Broader Implications”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "remote work trends",
+      "modelAnswer": "The speaker discussed how remote work profoundly affects employees, offering flexibility but risking isolation. For employers, it means lower costs and wider talent access, yet challenges in maintaining culture. Urban areas are also impacted, with potential shifts in population distribution and infrastructure needs. Overall, adapting to this new work paradigm requires careful planning to maximize benefits and minimize negative consequences for all stakeholders.",
+      "audioScript": "The lecture discussed the multifaceted impact of the global shift towards remote work. For employees, it offers greater flexibility and autonomy, but also risks isolation and burnout. Employers see reduced overheads and access to a wider talent pool, yet face challenges in maintaining corporate culture and oversight. Urban planning is also affected, with potential declines in city center vibrancy and increased demand for suburban infrastructure. This trend necessitates adaptive strategies across all sectors to harness its benefits while mitigating its drawbacks.",
+      "keyPoints": [
+        "Increased employee flexibility but also isolation",
+        "Reduced employer overheads but culture challenges",
+        "Impact on urban planning and city centers"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-047-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Remote Work Term”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Remote work",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "remote work trends",
+      "modelAnswer": "Remote work",
+      "audioScript": "What is the term for working from a location other than the traditional office?"
+    },
+    {
+      "id": "pte-speaking-writing-047-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Future of Remote Work”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "remote work trends",
+      "wordTarget": 75,
+      "modelAnswer": "Remote work, accelerated by the pandemic, has proven effective, leading companies to reassess traditional office spaces and adopt hybrid models, thereby permanently altering professional and societal structures with significant long-term implications for urban planning.",
+      "readText": "The pandemic-driven acceleration of remote work has firmly established it as a legitimate and often preferred mode of employment. While initial concerns about productivity and collaboration were prevalent, many organizations have reported sustained or even improved performance. This paradigm shift is prompting a re-evaluation of office spaces, with many companies opting for smaller footprints or hybrid models. The long-term implications for urban centers, public transport, and residential planning are still unfolding, suggesting a permanent alteration to the professional landscape and societal structures."
+    },
+    {
+      "id": "pte-speaking-writing-047-q07",
+      "questionType": "write_essay",
+      "prompt": "The widespread adoption of remote work models has significantly altered traditional office environments. Discuss the advantages and disadvantages of remote work for both employees and employers, and provide your opinion on whether this trend will continue to dominate the professional landscape.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "remote work trends",
+      "wordTarget": 200,
+      "modelAnswer": "The rise of remote work, accelerated by recent global events, has fundamentally reshaped the modern workplace. For employees, the primary advantages include increased flexibility, a better work-life balance, and the elimination of daily commutes, which saves time and money. This autonomy can lead to higher job satisfaction and reduced stress. However, disadvantages can arise from social isolation, potential distractions at home, and the blurring of lines between personal and professional life, making it difficult to switch off. Career progression might also be hindered by reduced visibility to management.\n\nFrom an employer's perspective, remote work offers access to a wider talent pool, lower overhead costs associated with office space, and potentially higher employee retention due to increased satisfaction. Nevertheless, challenges include maintaining team cohesion and company culture, ensuring effective communication and collaboration, and monitoring productivity without direct oversight. Cybersecurity concerns also intensify when employees access sensitive data from various locations.\n\nIn my opinion, the trend towards remote and hybrid work models is undoubtedly here to stay. While a complete return to pre-pandemic office norms is unlikely, a fully remote future is also improbable for many sectors. The most sustainable model will likely be a hybrid approach, combining the benefits of remote flexibility with the advantages of in-person collaboration for specific tasks and team building. This allows organizations to leverage technology while preserving the crucial human element of interaction and fostering a sense of community."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ancient Maritime Trade Routes”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q08",
+      "modelAnswer": "The history of maritime trade routes is a fascinating chronicle of human ingenuity and global interconnectedness. From the ancient Spice Routes connecting East and West to the transatlantic voyages of discovery, these watery highways facilitated not only the exchange of goods but also ideas, cultures, and technologies. They were instrumental in shaping empires, fostering economic growth, and driving exploration, leaving an indelible mark on the geopolitical landscape and the development of civilizations across continents.",
+      "readText": "The history of maritime trade routes is a fascinating chronicle of human ingenuity and global interconnectedness. From the ancient Spice Routes connecting East and West to the transatlantic voyages of discovery, these watery highways facilitated not only the exchange of goods but also ideas, cultures, and technologies. They were instrumental in shaping empires, fostering economic growth, and driving exploration, leaving an indelible mark on the geopolitical landscape and the development of civilizations across continents."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Solar Energy Innovations”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q09",
+      "modelAnswer": "Advances in renewable solar energy technology are rapidly transforming the global power landscape. Innovations in photovoltaic materials, such as perovskites, promise higher efficiency and lower manufacturing costs, making solar power more competitive than ever. Furthermore, improved energy storage solutions, like advanced battery systems, are addressing the intermittency challenge, enabling solar to provide reliable, round-the-clock electricity. These developments are crucial for transitioning away from fossil fuels and achieving sustainable energy independence.",
+      "readText": "Advances in renewable solar energy technology are rapidly transforming the global power landscape. Innovations in photovoltaic materials, such as perovskites, promise higher efficiency and lower manufacturing costs, making solar power more competitive than ever. Furthermore, improved energy storage solutions, like advanced battery systems, are addressing the intermittency challenge, enabling solar to provide reliable, round-the-clock electricity. These developments are crucial for transitioning away from fossil fuels and achieving sustainable energy independence."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Climate Change Solutions”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q10",
+      "modelAnswer": "Climate change mitigation strategies encompass a broad range of approaches aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy sources, improving energy efficiency, reforestation, and developing carbon capture technologies. International cooperation and policy frameworks are essential to implement these strategies effectively on a global scale. Addressing climate change requires concerted efforts from governments, industries, and individuals to secure a sustainable future for the planet.",
+      "readText": "Climate change mitigation strategies encompass a broad range of approaches aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy sources, improving energy efficiency, reforestation, and developing carbon capture technologies. International cooperation and policy frameworks are essential to implement these strategies effectively on a global scale. Addressing climate change requires concerted efforts from governments, industries, and individuals to secure a sustainable future for the planet."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Global Food Economics”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q11",
+      "modelAnswer": "The economics of global food production are complex, influenced by factors such as climate, trade policies, technological advancements, and consumer demand. Food security remains a critical concern, particularly in regions vulnerable to environmental changes or political instability. Efficient supply chains, sustainable farming practices, and equitable distribution systems are vital to ensuring adequate food for a growing global population. Understanding these dynamics is key to addressing hunger and promoting agricultural sustainability worldwide.",
+      "readText": "The economics of global food production are complex, influenced by factors such as climate, trade policies, technological advancements, and consumer demand. Food security remains a critical concern, particularly in regions vulnerable to environmental changes or political instability. Efficient supply chains, sustainable farming practices, and equitable distribution systems are vital to ensuring adequate food for a growing global population. Understanding these dynamics is key to addressing hunger and promoting agricultural sustainability worldwide."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Space Colonization Hurdles”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q12",
+      "modelAnswer": "Space exploration and colonization present immense scientific and engineering challenges. Establishing self-sustaining habitats on other celestial bodies requires overcoming extreme environmental conditions, radiation exposure, and resource scarcity. Developing closed-loop life support systems, advanced propulsion, and robust infrastructure are paramount. Beyond the technical hurdles, ethical considerations regarding planetary protection and the long-term governance of off-world settlements also demand careful consideration as humanity ventures further into the cosmos.",
+      "readText": "Space exploration and colonization present immense scientific and engineering challenges. Establishing self-sustaining habitats on other celestial bodies requires overcoming extreme environmental conditions, radiation exposure, and resource scarcity. Developing closed-loop life support systems, advanced propulsion, and robust infrastructure are paramount. Beyond the technical hurdles, ethical considerations regarding planetary protection and the long-term governance of off-world settlements also demand careful consideration as humanity ventures further into the cosmos."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deep sleep plays a crucial role in consolidating memories and learning new information.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Sleep and Memory”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q13",
+      "modelAnswer": "Deep sleep plays a crucial role in consolidating memories and learning new information.",
+      "audioScript": "Deep sleep plays a crucial role in consolidating memories and learning new information."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Developing digital literacy skills is essential for students in today's technologically advanced classrooms.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Digital Education”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q14",
+      "modelAnswer": "Developing digital literacy skills is essential for students in today's technologically advanced classrooms.",
+      "audioScript": "Developing digital literacy skills is essential for students in today's technologically advanced classrooms."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Antibiotic resistance poses a significant threat to global public health and requires urgent action.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Antibiotic Resistance”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q15",
+      "modelAnswer": "Antibiotic resistance poses a significant threat to global public health and requires urgent action.",
+      "audioScript": "Antibiotic resistance poses a significant threat to global public health and requires urgent action."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ocean acidification severely impacts marine biodiversity, threatening coral reefs and shellfish populations.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ocean Health”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q16",
+      "modelAnswer": "Ocean acidification severely impacts marine biodiversity, threatening coral reefs and shellfish populations.",
+      "audioScript": "Ocean acidification severely impacts marine biodiversity, threatening coral reefs and shellfish populations."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The neuroscience of creativity explores how brain networks facilitate novel idea generation and problem-solving.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Creativity's Neuroscience”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q17",
+      "modelAnswer": "The neuroscience of creativity explores how brain networks facilitate novel idea generation and problem-solving.",
+      "audioScript": "The neuroscience of creativity explores how brain networks facilitate novel idea generation and problem-solving."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Global water scarcity necessitates innovative conservation strategies and efficient resource management.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Water Conservation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q18",
+      "modelAnswer": "Global water scarcity necessitates innovative conservation strategies and efficient resource management.",
+      "audioScript": "Global water scarcity necessitates innovative conservation strategies and efficient resource management."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Genetic engineering raises complex ethical considerations concerning human intervention in natural processes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Genetic Engineering Ethics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q19",
+      "modelAnswer": "Genetic engineering raises complex ethical considerations concerning human intervention in natural processes.",
+      "audioScript": "Genetic engineering raises complex ethical considerations concerning human intervention in natural processes."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Quantum computing breakthroughs promise revolutionary advancements in cryptography and complex data analysis.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Quantum Breakthroughs”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q20",
+      "modelAnswer": "Quantum computing breakthroughs promise revolutionary advancements in cryptography and complex data analysis.",
+      "audioScript": "Quantum computing breakthroughs promise revolutionary advancements in cryptography and complex data analysis."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Adequate childhood nutrition is fundamental for healthy cognitive development and academic performance.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Childhood Nutrition”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q21",
+      "modelAnswer": "Adequate childhood nutrition is fundamental for healthy cognitive development and academic performance.",
+      "audioScript": "Adequate childhood nutrition is fundamental for healthy cognitive development and academic performance."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Smartphone Adoption Rate (2014-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q22",
+      "modelAnswer": "This line chart illustrates the global smartphone adoption rate from 2014 to 2023. The percentage of the population using smartphones has shown a consistent upward trend over the decade. Starting at 38% in 2014, it steadily increased, reaching 61% by 2017 and further climbing to 78% by 2020. The highest adoption rate is observed in 2023, at 88%, nearly tripling the initial figure. This significant growth highlights the widespread integration of smartphones into daily life, with an average increase of about 5% per year.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Smartphone Adoption Rate (2014-2023)",
+        "yLabel": "Percentage of Population (%)",
+        "xAxis": [
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Adoption Rate",
+            "values": [
+              38,
+              45,
+              53,
+              61,
+              68,
+              74,
+              78,
+              82,
+              85,
+              88
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q23",
+      "modelAnswer": "The bar chart illustrates the annual energy consumption per capita in megawatt-hours for six different countries in 2022. Canada recorded the highest consumption at 92 MWh per person, closely followed by the USA at 85 MWh. In stark contrast, India showed the lowest consumption, with only 10 MWh per capita. Germany and China consumed 45 MWh and 30 MWh respectively, while Brazil used 25 MWh. Overall, developed Western nations consumed significantly more energy per person than their developing counterparts.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Energy Consumption (MWh)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "China",
+          "India",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "MWh per person",
+            "values": [
+              85,
+              92,
+              45,
+              30,
+              10,
+              25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Atmospheric CO2 Concentration (1980-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q24",
+      "modelAnswer": "This line graph illustrates the global atmospheric CO2 concentration from 1980 to 2020. The x-axis shows the years, while the y-axis represents CO2 concentration in parts per million. A clear upward trend is evident throughout the period. In 1980, the concentration was approximately 338 ppm, steadily rising to 370 ppm by 2000. The highest recorded concentration is 412 ppm in 2020. This indicates a significant increase of over 70 ppm in four decades, highlighting the growing impact on the carbon cycle.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Atmospheric CO2 Concentration (1980-2020)",
+        "yLabel": "CO2 Concentration (ppm)",
+        "xAxis": [
+          "1980",
+          "1990",
+          "2000",
+          "2010",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "CO2 Concentration",
+            "values": [
+              338,
+              354,
+              370,
+              390,
+              412
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q25",
+      "modelAnswer": "The pie chart illustrates global CO2 emissions by sector for 2022. The largest contributor is clearly Energy Production, accounting for a significant 35% of total emissions. Transportation follows as the second-highest sector at 24%, indicating a major impact from vehicles and logistics. Industry contributes 18%, while Agriculture is responsible for 14%. The smallest share comes from the Residential and Commercial sector, at just 9%. This visual effectively highlights that energy generation and mobility are the primary drivers of global CO2 output.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy Production",
+            "value": 35
+          },
+          {
+            "label": "Transportation",
+            "value": 24
+          },
+          {
+            "label": "Industry",
+            "value": 18
+          },
+          {
+            "label": "Agriculture",
+            "value": 14
+          },
+          {
+            "label": "Residential & Commercial",
+            "value": 9
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Renewable Energy Adoption by Country (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q26",
+      "modelAnswer": "The bar chart illustrates renewable energy adoption across five countries in 2023, measured as a percentage of total energy consumption. Brazil leads significantly with 60% adoption, showcasing its strong commitment to renewables. Germany follows with a substantial 45%. In contrast, Japan shows the lowest adoption at 20%, indicating a potential area for growth. Australia and Canada are in the middle, with 25% and 30% respectively. Overall, the chart highlights a diverse landscape in renewable energy integration, with some nations making much greater progress than others.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Energy Adoption by Country (2023)",
+        "yLabel": "% of Total Energy Consumption",
+        "xAxis": [
+          "Germany",
+          "Canada",
+          "Japan",
+          "Australia",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "Renewable Energy Adoption",
+            "values": [
+              45,
+              30,
+              20,
+              25,
+              60
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q27",
+      "modelAnswer": "The lecture focused on the critical role of non-verbal communication, noting that body language and tone frequently outweigh verbal messages. It was emphasized that cultural backgrounds heavily influence how these cues are understood, potentially causing miscommunication. The speaker concluded that developing proficiency in non-verbal signals is vital for effective leadership, establishing connections, and navigating social contexts, advocating for awareness and adaptability to enhance interpersonal exchanges.",
+      "audioScript": "The lecture highlighted the profound importance of non-verbal communication, emphasizing that body language, facial expressions, and tone of voice often convey more meaning than spoken words. It explained how cultural differences significantly influence the interpretation of these cues, leading to potential misunderstandings in cross-cultural interactions. The speaker stressed that mastering non-verbal signals is crucial for effective leadership, building rapport, and navigating social situations successfully. Awareness and adaptation are key to improving interpersonal communication.",
+      "keyPoints": [
+        "Body language and tone convey significant meaning",
+        "Cultural differences impact non-verbal cue interpretation",
+        "Mastering non-verbal communication aids leadership and rapport"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Digital Communication Evolution”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q28",
+      "modelAnswer": "The lecture covered the evolution of digital communication, from early emails to modern social media, and its impact on interactions. It highlighted how these tools provide instant global connections but also create issues like information overload and privacy concerns. The speaker noted the move towards more synchronous communication, blurring work-life boundaries. Ultimately, understanding these developments is crucial for effectively and responsibly utilizing digital technologies in both personal and professional spheres.",
+      "audioScript": "This lecture explored the evolution of digital communication, from early email systems to contemporary social media platforms. It discussed how these technologies have transformed personal and professional interactions, enabling instant global connectivity while also introducing new challenges like information overload and privacy concerns. The speaker noted the shift from asynchronous to increasingly synchronous communication, blurring the lines between work and personal life. Understanding these changes is vital for individuals and organizations to leverage digital tools effectively and responsibly.",
+      "keyPoints": [
+        "Digital communication evolved from email to social media",
+        "Enabled global connectivity but caused information overload",
+        "Shifted to synchronous communication, blurring life boundaries"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Language",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q29",
+      "modelAnswer": "Language",
+      "audioScript": "What is the primary medium for conveying messages between people?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Sender",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Element”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q30",
+      "modelAnswer": "Sender",
+      "audioScript": "What is the term for the person who sends a message?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Noise",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barrier”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q31",
+      "modelAnswer": "Noise",
+      "audioScript": "What is the term for anything that interferes with the transmission or understanding of a message?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Non-verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Type”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-047-q32",
+      "modelAnswer": "Non-verbal",
+      "audioScript": "What type of communication involves gestures, facial expressions, and body language?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Global Urbanization Dynamics”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-047-q33",
+      "modelAnswer": "Global urbanization, fueled by economic opportunities and population growth, presents both benefits and significant challenges like infrastructure strain and environmental degradation, necessitating sustainable urban planning for future livable cities.",
+      "readText": "Global urbanization is a defining trend of the 21st century, driven by a complex interplay of economic, social, and environmental factors. Economic opportunities in cities, often perceived as centers of innovation and employment, attract vast populations from rural areas. This migration, coupled with natural population growth, leads to rapid expansion of urban centers. However, this growth also presents significant challenges, including strain on infrastructure, increased resource consumption, environmental degradation, and social inequality. Sustainable urban planning and governance are crucial to manage these consequences and foster livable, resilient cities for future generations."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Technology has revolutionized the way people communicate, offering both unprecedented connectivity and new challenges. Discuss the positive and negative impacts of technology on human communication, and provide examples to support your arguments.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-047-q34",
+      "modelAnswer": "The advent of technology has fundamentally reshaped human communication, ushering in an era of unparalleled connectivity while simultaneously introducing novel complexities. This transformation presents a dual nature, offering significant advantages alongside notable drawbacks.\n\nOn the positive side, technology has dramatically enhanced the speed and reach of communication. Platforms like email, instant messaging, and video conferencing enable individuals to connect across vast distances instantaneously, fostering global collaboration and maintaining personal relationships regardless of geographical barriers. For instance, families separated by continents can engage in real-time video calls, reducing feelings of isolation. Social media platforms, despite their criticisms, have facilitated the formation of communities around shared interests and have been instrumental in organizing social movements, giving voice to previously marginalized groups. The ease of information sharing has also democratized knowledge, allowing for rapid dissemination of news and educational content.\n\nHowever, the technological revolution in communication is not without its negatives. One significant concern is the erosion of face-to-face interaction, which can lead to a decline in nuanced social skills and empathy. Relying heavily on digital interfaces often removes the subtle non-verbal cues crucial for genuine human connection, potentially fostering superficial relationships. Furthermore, the constant barrage of notifications and the expectation of immediate responses contribute to information overload and increased stress levels. Privacy breaches and the spread of misinformation, or 'fake news,' through digital channels are also serious challenges, undermining trust and societal cohesion. The anonymity afforded by online platforms can also embolden cyberbullying and other forms of harmful communication.\n\nIn conclusion, while technology has undeniably broadened our communicative horizons, enabling instant global connections and information sharing, it has also introduced issues such as reduced face-to-face interaction, information overload, and the proliferation of misinformation. Striking a balance between leveraging technological benefits and preserving the quality of human connection remains a critical challenge for contemporary society."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Effective communication is often considered a critical skill in both personal and professional life. What are the key elements of effective communication, and why is it so important for success? Provide examples.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-047-q35",
+      "modelAnswer": "Effective communication stands as a cornerstone of success in virtually every facet of human existence, from personal relationships to professional endeavors. Its importance stems from its ability to foster understanding, build rapport, and facilitate collaboration. Several key elements contribute to its efficacy.\n\nFirstly, clarity and conciseness are paramount. A message must be delivered in a manner that is easily understood by the receiver, free from ambiguity or unnecessary jargon. In a professional setting, for example, a project manager providing clear, concise instructions to their team ensures that tasks are understood and executed correctly, avoiding costly errors and delays. Secondly, active listening is fundamental. Effective communication is a two-way street, requiring not only the ability to express oneself clearly but also to genuinely listen and comprehend the other person's perspective. A therapist, for instance, must actively listen to their client to understand their concerns fully and offer appropriate guidance, rather than simply waiting for their turn to speak.\n\nEmpathy and emotional intelligence also play a crucial role. Understanding and acknowledging the feelings and perspectives of others helps in tailoring communication to be more impactful and less confrontational. A salesperson demonstrating empathy towards a customer's needs, rather than just pushing a product, is more likely to build trust and close a sale. Lastly, non-verbal cues, such as body language, facial expressions, and tone of voice, significantly impact how a message is received. These cues can reinforce or contradict verbal messages, so alignment between them is vital. A leader who speaks confidently and maintains eye contact projects authority and sincerity, enhancing the credibility of their message.\n\nIn conclusion, effective communication, characterized by clarity, active listening, empathy, and congruent non-verbal cues, is indispensable for success. It enables individuals to build strong relationships, resolve conflicts, lead effectively, and achieve shared goals, making it a pivotal skill for navigating the complexities of both personal and professional landscapes."
+    }
+  ]
+}

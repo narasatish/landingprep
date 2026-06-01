@@ -1,0 +1,764 @@
+{
+  "id": "pte-speaking-writing-026",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 26",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-026-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Effective Language Learning Strategies”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "b0096782403216a382",
+      "modelAnswer": "Consistent daily exposure to a target language, even for short durations, significantly enhances retention and fluency. Learners who actively engage with authentic materials, such as podcasts or news articles, tend to develop a more nuanced understanding of cultural contexts and idiomatic expressions. Furthermore, regular practice in speaking, even with oneself, solidifies grammatical structures and improves pronunciation, making the learning process more effective and sustainable.",
+      "readText": "Consistent daily exposure to a target language, even for short durations, significantly enhances retention and fluency. Learners who actively engage with authentic materials, such as podcasts or news articles, tend to develop a more nuanced understanding of cultural contexts and idiomatic expressions. Furthermore, regular practice in speaking, even with oneself, solidifies grammatical structures and improves pronunciation, making the learning process more effective and sustainable."
+    },
+    {
+      "id": "pte-speaking-writing-026-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Childhood Immunization Campaigns”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Widespread public health campaigns are crucial for controlling infectious disease outbreaks.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0b8fff07252408704a",
+      "modelAnswer": "Widespread public health campaigns are crucial for controlling infectious disease outbreaks.",
+      "audioScript": "Widespread public health campaigns are crucial for controlling infectious disease outbreaks."
+    },
+    {
+      "id": "pte-speaking-writing-026-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Museum Conservation Challenges (2023 Survey)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "68694a317fb5993409",
+      "modelAnswer": "This bar chart illustrates the main museum conservation challenges in 2023. The most significant challenge identified is 'Funding Shortages,' affecting 75% of museums, making it the highest bar. This is closely followed by 'Lack of Skilled Staff' at 60% and 'Environmental Control' at 55%. In contrast, 'Visitor Damage' is the least reported issue, impacting only 25% of institutions. Interestingly, 'Digital Preservation' is a substantial concern for 45% of museums, highlighting a growing modern challenge, surpassing traditional issues like 'Pest Infestation' which stands at 30%.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Museum Conservation Challenges (2023 Survey)",
+        "yLabel": "Percentage of Museums",
+        "xAxis": [
+          "Funding Shortages",
+          "Lack of Skilled Staff",
+          "Environmental Control",
+          "Pest Infestation",
+          "Visitor Damage",
+          "Digital Preservation"
+        ],
+        "series": [
+          {
+            "label": "Challenges",
+            "values": [
+              75,
+              60,
+              55,
+              30,
+              25,
+              45
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-026-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Citizen Science in Ecology”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "24966e3d0afa2ca837",
+      "modelAnswer": "The lecture discussed how community science projects, like citizen bird counts, are transforming ecological research. Volunteers collect crucial data, providing long-term insights into population trends that professional scientists might not obtain independently. This collaborative approach significantly expands research capabilities while simultaneously boosting public engagement and awareness regarding environmental conservation. Ultimately, these projects empower individuals to contribute meaningfully to scientific understanding.",
+      "audioScript": "Community science projects are revolutionizing ecological research by engaging volunteers in data collection. For instance, bird counts conducted by citizens provide invaluable long-term datasets on avian population trends and migration patterns, which professional scientists might struggle to gather alone. These initiatives not only expand research capacity but also foster public awareness and engagement with environmental conservation. The collaborative nature of these projects empowers individuals to contribute meaningfully to scientific understanding, bridging the gap between academia and the public.",
+      "keyPoints": [
+        "Volunteers collect ecological data",
+        "Bird counts aid long-term research",
+        "Increases public environmental awareness",
+        "Empowers individuals in science"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-026-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Benefits of Urban Green Roofs”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Green roofs",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "01caf7c2bf1fa7bf35",
+      "modelAnswer": "Green roofs",
+      "audioScript": "What type of urban infrastructure helps reduce stormwater runoff and improve air quality?"
+    },
+    {
+      "id": "pte-speaking-writing-026-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Cognitive Aspects of Navigation”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "a5214f9798c98aed2e",
+      "modelAnswer": "Wayfinding is a complex cognitive process involving spatial memory and environmental cues, where individuals use strategies like landmarks and mental maps to navigate, making its understanding vital for designing intuitive environments.",
+      "readText": "Wayfinding, the cognitive process of orienting oneself and navigating through space, involves a complex interplay of spatial memory, environmental cues, and decision-making. Humans utilize various strategies, from relying on landmarks to constructing mental maps, to successfully reach their destinations. Disruptions in these cognitive processes, perhaps due to unfamiliar environments or neurological conditions, can lead to disorientation. Understanding the psychology behind wayfinding is crucial for designing intuitive environments and assisting individuals with navigational challenges."
+    },
+    {
+      "id": "pte-speaking-writing-026-q07",
+      "questionType": "essay",
+      "prompt": "Deep ocean exploration remains one of humanity's greatest scientific frontiers, yet it presents immense technological and financial challenges. Discuss the potential benefits and inherent difficulties of exploring the deep ocean, and argue whether increased investment in this field is justified.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "f5cd8d2a1192c476e1",
+      "modelAnswer": "Deep ocean exploration represents a formidable scientific frontier, promising discoveries that could reshape our understanding of life, geology, and even potential resources. The potential benefits are vast, including the identification of novel species with unique biochemical properties, the discovery of new mineral deposits, and a deeper comprehension of global climate regulation through ocean currents. Such knowledge could lead to advancements in medicine, biotechnology, and sustainable resource management. Furthermore, exploring these extreme environments pushes the boundaries of engineering and robotics, fostering innovation applicable to other fields.\n\nHowever, the challenges are equally immense. The extreme pressures, frigid temperatures, and complete darkness of the deep sea demand highly specialized and expensive equipment, making expeditions costly and technically demanding. Human access is severely limited, relying heavily on remotely operated vehicles (ROVs) and autonomous underwater vehicles (AUVs). Moreover, the delicate ecosystems encountered are vulnerable to disturbance, raising significant ethical considerations regarding environmental impact. The sheer scale of the deep ocean means that exploration is slow and often yields fragmented data, making comprehensive understanding elusive.\n\nDespite these difficulties, increased investment in deep ocean exploration is unequivocally justified. The potential for groundbreaking scientific discoveries, coupled with the imperative to understand our planet's largest and least-explored biome, outweighs the significant costs. The insights gained could provide solutions to pressing global issues, from climate change to disease. Moreover, the technological advancements driven by this exploration have broader societal benefits. While mindful of environmental protection, a concerted global effort to explore the deep ocean is not merely an scientific endeavor, but a strategic investment in humanity's future."
+    },
+    {
+      "id": "pte-speaking-writing-026-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Preserving Knowledge Digitally”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "a0ac0fbf5334893c29",
+      "modelAnswer": "Digital archives are transforming how historical documents and cultural artifacts are preserved and accessed globally. They offer unprecedented opportunities for researchers and the public to engage with materials that were once restricted by physical location or fragility. However, the long-term viability of digital formats and the challenges of ensuring perpetual access amidst rapidly evolving technology remain critical concerns for archivists and digital preservation specialists worldwide.",
+      "readText": "Digital archives are transforming how historical documents and cultural artifacts are preserved and accessed globally. They offer unprecedented opportunities for researchers and the public to engage with materials that were once restricted by physical location or fragility. However, the long-term viability of digital formats and the challenges of ensuring perpetual access amidst rapidly evolving technology remain critical concerns for archivists and digital preservation specialists worldwide."
+    },
+    {
+      "id": "pte-speaking-writing-026-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Early Civilizations and Trade”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Ancient trade networks facilitated the exchange of goods, ideas, and cultural practices.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "8a82a57646d99d9437",
+      "modelAnswer": "Ancient trade networks facilitated the exchange of goods, ideas, and cultural practices.",
+      "audioScript": "Ancient trade networks facilitated the exchange of goods, ideas, and cultural practices."
+    },
+    {
+      "id": "pte-speaking-writing-026-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Renewable Battery Design: Key Communication Technologies (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "82c8f0f3141d732fa6",
+      "modelAnswer": "This bar chart illustrates the prevalence of different communication technologies integrated into renewable battery designs in 2023. Bluetooth LE is the most dominant technology, accounting for 45% of designs, significantly higher than any other. Zigbee follows, representing 28%. LoRaWAN is used in 15% of batteries, while NB-IoT is present in 8%. Proprietary RF solutions are the least common, making up only 4%. Overall, short-range and low-power options like Bluetooth LE and Zigbee are clearly preferred in current renewable battery communication.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Battery Design: Key Communication Technologies (2023)",
+        "yLabel": "Percentage of Batteries (%)",
+        "xAxis": [
+          "Bluetooth LE",
+          "Zigbee",
+          "LoRaWAN",
+          "NB-IoT",
+          "Proprietary RF"
+        ],
+        "series": [
+          {
+            "label": "Integrated Communication",
+            "values": [
+              45,
+              28,
+              15,
+              8,
+              4
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-026-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Immersion vs. Formal Language Study”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "87ee0c10edaa25cf3a",
+      "modelAnswer": "The lecture discussed the ongoing debate regarding language acquisition methods: immersion versus formal instruction. Immersion can lead to quick fluency but might overlook grammar, potentially causing persistent errors. Formal learning offers systematic grammar and vocabulary but lacks real-world communication practice. The speaker suggested that neither method is perfect alone. Therefore, many experts now recommend a blended approach, combining the strengths of both to optimize language learning outcomes, allowing for both accuracy and fluency.",
+      "audioScript": "The debate between immersion and formal classroom instruction for language acquisition is ongoing. While immersion often leads to rapid conversational fluency and a natural grasp of idiom, it can sometimes neglect foundational grammar rules, potentially leading to fossilized errors. Conversely, structured classroom learning provides a systematic approach to grammar and vocabulary, but might lack the spontaneous communicative practice essential for real-world application. Many experts now advocate for a blended approach, combining the best elements of both methods to optimize learning outcomes. This hybrid model allows learners to develop both accuracy and fluency effectively.",
+      "keyPoints": [
+        "Immersion offers fluency but may lack grammar",
+        "Formal study provides grammar but limited practice",
+        "Both methods have pros and cons",
+        "Blended approach is often recommended"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-026-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Global Health Initiatives”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Vaccination campaigns",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "80d48cbf16591b35a3",
+      "modelAnswer": "Vaccination campaigns",
+      "audioScript": "What type of campaign aims to reduce the spread of infectious diseases worldwide?"
+    },
+    {
+      "id": "pte-speaking-writing-026-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Techniques in Museum Conservation”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "318853e696105f94ab",
+      "modelAnswer": "Museum conservation is a multidisciplinary field focused on preserving cultural heritage through scientific analysis, ethical considerations, and practical interventions like environmental control and restoration, aiming to stabilize artifacts and ensure their longevity and integrity.",
+      "readText": "Museum conservation is a multidisciplinary field dedicated to preserving cultural heritage for future generations. It involves scientific analysis, ethical considerations, and practical interventions to stabilize artifacts and prevent deterioration. Conservators employ a range of techniques, from environmental control and pest management to intricate restoration processes using advanced materials. The goal is not merely to repair damage but to understand the object's history and material properties, ensuring its longevity while respecting its original intent and integrity for scholarly study and public display."
+    },
+    {
+      "id": "pte-speaking-writing-026-q14",
+      "questionType": "essay",
+      "prompt": "Community science projects, where the public participates in scientific research, are gaining popularity. Discuss the advantages and disadvantages of such projects, and evaluate their overall contribution to scientific progress and public engagement.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "f955e1ddc9edb80f5a",
+      "modelAnswer": "Community science, often referred to as citizen science, has emerged as a powerful paradigm in scientific research, leveraging the collective efforts of the public to gather data and contribute to various fields. The advantages of these projects are manifold. Firstly, they enable the collection of vast amounts of data across wide geographical areas and over extended periods, which would be impossible for professional researchers alone due to resource constraints. This is particularly evident in ecological studies, astronomy, and public health monitoring. Secondly, citizen science fosters public engagement with science, increasing scientific literacy, critical thinking, and a sense of ownership over scientific discoveries. Participants often develop a deeper appreciation for the scientific method and environmental stewardship. Thirdly, these projects can democratize science, making it more accessible and inclusive.\n\nHowever, community science also presents several disadvantages. The primary concern revolves around data quality and reliability. Volunteers may lack formal training, leading to inconsistencies or errors in data collection, identification, or reporting. Ensuring data validity often requires robust training protocols, rigorous quality control measures, and sophisticated data analysis techniques, which can be resource-intensive. Another challenge is participant retention; maintaining engagement over long-term projects can be difficult. Ethical considerations, particularly regarding privacy when dealing with personal data, also need careful management. Moreover, the design of citizen science projects requires careful planning to ensure they address genuine scientific questions and produce meaningful results, rather than simply generating data for its own sake.\n\nDespite these challenges, the overall contribution of community science to scientific progress and public engagement is overwhelmingly positive. While professional oversight is crucial for data integrity, the benefits of expanded data collection, increased public understanding, and enhanced societal connection to science far outweigh the drawbacks. With proper design and management, citizen science projects are invaluable tools that not only accelerate scientific discovery but also cultivate a more scientifically literate and engaged citizenry, ultimately enriching both science and society."
+    },
+    {
+      "id": "pte-speaking-writing-026-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Benefits of Urban Greenery”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "03bec97f5ab724208a",
+      "modelAnswer": "Urban green roofs offer a multitude of environmental benefits, including mitigating the urban heat island effect by absorbing solar radiation. They also improve air quality by filtering pollutants and provide vital habitats for urban biodiversity, such as insects and birds. Furthermore, these vegetated surfaces help manage stormwater runoff, reducing the burden on municipal drainage systems and preventing localized flooding in densely populated areas.",
+      "readText": "Urban green roofs offer a multitude of environmental benefits, including mitigating the urban heat island effect by absorbing solar radiation. They also improve air quality by filtering pollutants and provide vital habitats for urban biodiversity, such as insects and birds. Furthermore, these vegetated surfaces help manage stormwater runoff, reducing the burden on municipal drainage systems and preventing localized flooding in densely populated areas."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Microbiome's Role in Health”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q16",
+      "modelAnswer": "The human microbiome, a vast ecosystem of microorganisms inhabiting our bodies, plays a critical role in maintaining overall health. These microbial communities influence digestion, nutrient absorption, and immune system development. Disruptions to the delicate balance of the microbiome have been linked to various diseases, highlighting its profound impact on both physical and mental well-being, and underscoring its importance in medical research.",
+      "readText": "The human microbiome, a vast ecosystem of microorganisms inhabiting our bodies, plays a critical role in maintaining overall health. These microbial communities influence digestion, nutrient absorption, and immune system development. Disruptions to the delicate balance of the microbiome have been linked to various diseases, highlighting its profound impact on both physical and mental well-being, and underscoring its importance in medical research."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Cultural Heritage”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q17",
+      "modelAnswer": "Cultural heritage preservation in the digital age presents both unprecedented opportunities and significant challenges. Digitization allows for wider access to artifacts and documents, democratizing knowledge and fostering global understanding. However, ensuring the long-term integrity and authenticity of digital records, alongside managing issues of intellectual property and digital obsolescence, requires continuous innovation and collaborative international strategies among institutions.",
+      "readText": "Cultural heritage preservation in the digital age presents both unprecedented opportunities and significant challenges. Digitization allows for wider access to artifacts and documents, democratizing knowledge and fostering global understanding. However, ensuring the long-term integrity and authenticity of digital records, alongside managing issues of intellectual property and digital obsolescence, requires continuous innovation and collaborative international strategies among institutions."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Brain Plasticity and Learning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q18",
+      "modelAnswer": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections, is fundamental to lifelong learning and adaptation. This capacity allows individuals to acquire new skills, recover from brain injuries, and continuously evolve their cognitive abilities throughout their lifespan. Engaging in mentally stimulating activities and new experiences actively promotes neuroplastic changes, enhancing cognitive resilience and overall brain health.",
+      "readText": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections, is fundamental to lifelong learning and adaptation. This capacity allows individuals to acquire new skills, recover from brain injuries, and continuously evolve their cognitive abilities throughout their lifespan. Engaging in mentally stimulating activities and new experiences actively promotes neuroplastic changes, enhancing cognitive resilience and overall brain health."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Adequate childhood nutrition significantly impacts cognitive development and academic performance.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Childhood Nutrition and Cognition”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q19",
+      "modelAnswer": "Adequate childhood nutrition significantly impacts cognitive development and academic performance.",
+      "audioScript": "Adequate childhood nutrition significantly impacts cognitive development and academic performance."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Machine learning algorithms are transforming diagnostics, drug discovery, and personalized medicine.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Machine Learning in Healthcare”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q20",
+      "modelAnswer": "Machine learning algorithms are transforming diagnostics, drug discovery, and personalized medicine.",
+      "audioScript": "Machine learning algorithms are transforming diagnostics, drug discovery, and personalized medicine."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ancient civilizations made precise astronomical observations, influencing calendars and navigation.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ancient Astronomical History”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q21",
+      "modelAnswer": "Ancient civilizations made precise astronomical observations, influencing calendars and navigation.",
+      "audioScript": "Ancient civilizations made precise astronomical observations, influencing calendars and navigation."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Noise pollution significantly disrupts wildlife communication, foraging, and reproductive behaviors.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Noise Pollution and Wildlife”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q22",
+      "modelAnswer": "Noise pollution significantly disrupts wildlife communication, foraging, and reproductive behaviors.",
+      "audioScript": "Noise pollution significantly disrupts wildlife communication, foraging, and reproductive behaviors."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Successful cross-cultural negotiations require understanding diverse communication styles and values.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Cross-Cultural Business”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q23",
+      "modelAnswer": "Successful cross-cultural negotiations require understanding diverse communication styles and values.",
+      "audioScript": "Successful cross-cultural negotiations require understanding diverse communication styles and values."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Carbon capture and storage technologies aim to mitigate industrial greenhouse gas emissions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Carbon Capture Technologies”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q24",
+      "modelAnswer": "Carbon capture and storage technologies aim to mitigate industrial greenhouse gas emissions.",
+      "audioScript": "Carbon capture and storage technologies aim to mitigate industrial greenhouse gas emissions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Wildlife corridor design is essential for maintaining biodiversity and genetic flow.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Corridor Conservation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q25",
+      "modelAnswer": "Wildlife corridor design is essential for maintaining biodiversity and genetic flow.",
+      "audioScript": "Wildlife corridor design is essential for maintaining biodiversity and genetic flow."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Philosophy of Consciousness”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q26",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and awareness."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Smartphone Adoption Rate (2013-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q27",
+      "modelAnswer": "This line graph illustrates the global smartphone adoption rate between 2013 and 2023, showing a consistent upward trend. In 2013, only 28% of the population had smartphones. This figure steadily increased, reaching 51% by 2016, indicating rapid growth in the first half of the decade. By 2023, the adoption rate had climbed significantly to 81%, representing the highest point on the graph. The data suggests that smartphone penetration has more than doubled over the past decade, highlighting their pervasive integration into daily communication globally.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Smartphone Adoption Rate (2013-2023)",
+        "yLabel": "Percentage of Population",
+        "xAxis": [
+          "2013",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Adoption Rate",
+            "values": [
+              28,
+              35,
+              43,
+              51,
+              58,
+              64,
+              69,
+              73,
+              76,
+              79,
+              81
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q28",
+      "modelAnswer": "This bar chart illustrates the annual energy consumption per capita in megawatt-hours for several countries in 2022. Canada shows the highest consumption at 82 MWh per person, closely followed by the USA at 75 MWh. In stark contrast, India has the lowest consumption, using only 10 MWh per person, which is significantly lower than all other nations presented. Germany and China consume moderately at 40 and 35 MWh respectively, while Brazil stands at 25 MWh. Overall, developed nations like Canada and the USA consume substantially more energy per capita than developing nations.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Energy Consumption (MWh)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "China",
+          "India",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "MWh per person",
+            "values": [
+              75,
+              82,
+              40,
+              35,
+              10,
+              25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Carbon Cycle: Major Reservoirs and Fluxes\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q29",
+      "modelAnswer": "The table illustrates the global carbon cycle, detailing major reservoirs and fluxes. The largest carbon reservoir is the Deep Oceans, holding an immense 37,000 gigatons, playing a crucial long-term storage role. Land Plants & Soil contain 2,000 gigatons, involved in photosynthesis and decomposition. The atmosphere holds 750 gigatons of CO2. Notably, human emissions, at 9 gigatons, represent a relatively small but impactful anthropogenic flux compared to the vast natural reservoirs like the oceans or fossil fuels, which store 10,000 gigatons. This highlights the scale of natural systems versus human impact on atmospheric carbon.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Carbon Cycle: Major Reservoirs and Fluxes",
+        "headers": [
+          "Component",
+          "Carbon (Gigatons)",
+          "Role"
+        ],
+        "rows": [
+          [
+            "Atmosphere",
+            "750",
+            "CO2 reservoir"
+          ],
+          [
+            "Oceans (surface)",
+            "900",
+            "CO2 absorption/release"
+          ],
+          [
+            "Oceans (deep)",
+            "37000",
+            "Largest long-term reservoir"
+          ],
+          [
+            "Land Plants & Soil",
+            "2000",
+            "Photosynthesis, decomposition"
+          ],
+          [
+            "Fossil Fuels",
+            "10000",
+            "Long-term storage"
+          ],
+          [
+            "Human Emissions",
+            "9",
+            "Anthropogenic flux"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q30",
+      "modelAnswer": "This pie chart illustrates global CO2 emissions by sector for the year 2022. The largest contributor to CO2 emissions is energy production, accounting for a significant 35%. Transportation follows as the second-highest sector at 24%, indicating a major area for emission reduction efforts. Industry contributes 18%, while agriculture and land use are responsible for 14%. The smallest share comes from the residential and commercial sector, at just 9%. Overall, energy-related activities are clearly the dominant source of global CO2 emissions, highlighting where interventions would have the most impact.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy Production",
+            "value": 35
+          },
+          {
+            "label": "Transportation",
+            "value": 24
+          },
+          {
+            "label": "Industry",
+            "value": 18
+          },
+          {
+            "label": "Agriculture & Land Use",
+            "value": 14
+          },
+          {
+            "label": "Residential & Commercial",
+            "value": 9
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Cosmic Origins and Dark Matter”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q31",
+      "modelAnswer": "The lecture described the universe's origin with the Big Bang, approximately 13.8 billion years ago. It cooled from a hot plasma, forming hydrogen and helium atoms, which then coalesced into stars and galaxies due to gravity. Interestingly, only 5% of the universe is ordinary matter. The remaining 95% is composed of dark matter and dark energy, which are mysterious components that gravitationally influence the cosmos but don't interact with light, posing a major challenge in cosmology.",
+      "audioScript": "The universe began with the Big Bang approximately 13.8 billion years ago, expanding from an incredibly hot, dense state. Initially, the universe was too hot for atoms to form, existing as a plasma of fundamental particles. As it cooled, protons and neutrons formed, followed by the first simple atoms, primarily hydrogen and helium. Gravity then began to pull these elements together, forming stars and galaxies. However, observations suggest that ordinary matter accounts for only about 5% of the universe. The remaining 95% is thought to consist of dark matter and dark energy, mysterious components that do not interact with light but exert gravitational influence, shaping the large-scale structure of the cosmos. Understanding these elusive components is one of the greatest challenges in modern cosmology.",
+      "keyPoints": [
+        "Universe began with Big Bang 13.8 billion years ago",
+        "Cooled to form simple atoms like hydrogen and helium",
+        "Gravity formed stars and galaxies",
+        "Dark matter and dark energy constitute 95% of universe"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Non-verbal communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Forms of Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q32",
+      "modelAnswer": "Non-verbal communication",
+      "audioScript": "What is the term for conveying information without using spoken words, such as through gestures or facial expressions?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Barrier",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barriers”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q33",
+      "modelAnswer": "Barrier",
+      "audioScript": "What is the term for anything that prevents effective communication, such as noise or cultural differences?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Written communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Written Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-026-q34",
+      "modelAnswer": "Written communication",
+      "audioScript": "What kind of communication involves transmitting messages through written symbols, such as emails or reports?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-026-q01": "",
+    "pte-speaking-writing-026-q02": "",
+    "pte-speaking-writing-026-q03": "",
+    "pte-speaking-writing-026-q04": "",
+    "pte-speaking-writing-026-q05": "sample answer",
+    "pte-speaking-writing-026-q06": "",
+    "pte-speaking-writing-026-q07": "",
+    "pte-speaking-writing-026-q08": "",
+    "pte-speaking-writing-026-q09": "",
+    "pte-speaking-writing-026-q10": "",
+    "pte-speaking-writing-026-q11": "",
+    "pte-speaking-writing-026-q12": "sample answer",
+    "pte-speaking-writing-026-q13": "",
+    "pte-speaking-writing-026-q14": "",
+    "pte-speaking-writing-026-q15": ""
+  },
+  "fingerprints": [
+    "b0096782403216a382",
+    "0b8fff07252408704a",
+    "68694a317fb5993409",
+    "24966e3d0afa2ca837",
+    "01caf7c2bf1fa7bf35",
+    "a5214f9798c98aed2e",
+    "f5cd8d2a1192c476e1",
+    "a0ac0fbf5334893c29",
+    "8a82a57646d99d9437",
+    "82c8f0f3141d732fa6",
+    "87ee0c10edaa25cf3a",
+    "80d48cbf16591b35a3",
+    "318853e696105f94ab",
+    "f955e1ddc9edb80f5a",
+    "03bec97f5ab724208a"
+  ]
+}

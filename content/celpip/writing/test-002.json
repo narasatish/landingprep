@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-002",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 2",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-002-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You borrowed a book from a friend three months ago and have been unable to return it because it was accidentally packed away during a house move.",
+      "recipient": "your friend",
+      "bulletPoints": [
+        "Apologise for not returning the book sooner",
+        "Explain what happened",
+        "Suggest how you will return it or make it up to your friend"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You borrowed a tool from your neighbour last week and have not yet returned it. Write a letter apologising for the delay, explaining why it was not returned sooner, and confirming when you will bring it back.",
+      "modelAnswer": "Hi Sarah,\n\nI am so incredibly sorry about not returning your copy of \"The Silent Patient\" sooner. I feel terrible about it, especially since I know how much you loved that book and probably wanted to re-read it.\n\nWhat happened was a complete disaster during our house move. We had so many boxes, and somehow, your book ended up in one of the \"miscellaneous\" boxes that got packed away in the back of the storage unit. I’ve been searching for it everywhere, but it's proving to be quite the treasure hunt! I promise it's safe, just very well hidden.\n\nI'm heading to the storage unit this weekend specifically to retrieve it. Once I find it, I'd love to drop it off at your place, and maybe we could grab a coffee or even dinner to properly catch up? My treat, of course, to make up for my disorganization and the delay. Let me know what works best for you.\n\nAgain, my apologies!\n\nTalk soon,\n[Your Name]"
+    },
+    {
+      "id": "celpip-writing-002-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your employer is deciding how to support staff wellbeing. Which policy do you think would be more effective?",
+      "optionA": "Provide free gym membership to all employees",
+      "optionB": "Allow employees to finish work one hour early every Friday",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A local health authority is asking residents about their experience with public healthcare. Describe your experience with local health services, what works well, what could be improved, and what additional services you would like to see.",
+      "modelAnswer": "I strongly advocate for Option B: allowing employees to finish work one hour early every Friday, as the more effective policy for supporting staff wellbeing. \n\nFirstly, this policy directly addresses the crucial need for increased leisure time, which is a universal stress reducer. An extra hour on a Friday afternoon allows individuals to kickstart their weekend earlier, whether that means spending quality time with family, pursuing a personal hobby, or simply decompressing after a demanding week. This immediate and tangible benefit contributes to improved mental health and a greater sense of work-life balance, fostering a more positive and refreshed workforce.\n\nSecondly, the early finish provides flexibility and autonomy, empowering employees to choose how they best utilize that extra time for their wellbeing. Unlike a gym membership, which caters to a specific interest and may not appeal to everyone, an early finish offers a broad appeal. It acknowledges that wellbeing is multifaceted and allows individuals to tailor their Friday afternoon to their unique needs and preferences, leading to higher engagement and satisfaction with the policy.\n\nWhile a free gym membership (Option A) is a thoughtful gesture, its effectiveness is limited to those already inclined towards physical fitness or motivated to start. Many employees might not utilize it due to lack of interest, time constraints, or existing fitness routines, making its impact less widespread. The early Friday finish, however, offers a universally valued commodity – time – directly benefiting a broader spectrum of employees and their diverse wellbeing needs."
+    }
+  ]
+}

@@ -1,0 +1,731 @@
+{
+  "id": "pte-speaking-writing-034",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 34",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-034-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Urban Commuter Rail Expansion”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "local transport",
+      "modelAnswer": "Modern urban planning increasingly prioritizes integrated public transport networks to alleviate traffic congestion and reduce carbon emissions. Expanding light rail systems and improving bus rapid transit routes are key strategies. These initiatives aim to provide efficient, reliable, and accessible alternatives to private vehicle use, fostering sustainable urban development. Investment in such infrastructure often yields significant economic and environmental benefits for metropolitan areas.",
+      "readText": "Modern urban planning increasingly prioritizes integrated public transport networks to alleviate traffic congestion and reduce carbon emissions. Expanding light rail systems and improving bus rapid transit routes are key strategies. These initiatives aim to provide efficient, reliable, and accessible alternatives to private vehicle use, fostering sustainable urban development. Investment in such infrastructure often yields significant economic and environmental benefits for metropolitan areas."
+    },
+    {
+      "id": "pte-speaking-writing-034-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Bus Fares Increase”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "The new bus schedule will be implemented next Monday, affecting peak hour commuters.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "local transport",
+      "modelAnswer": "The new bus schedule will be implemented next Monday, affecting peak hour commuters.",
+      "audioScript": "The new bus schedule will be implemented next Monday, affecting peak hour commuters."
+    },
+    {
+      "id": "pte-speaking-writing-034-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Local Transport Usage in City A (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "local transport",
+      "modelAnswer": "This bar chart illustrates local transport usage in City A during 2023. The bus is clearly the most popular mode, accounting for 35% of commuters. Car usage follows closely at 25%, while train transport is utilized by 20% of the population. Interestingly, cycling and walking share the lowest proportion, both at 10%. This indicates a strong reliance on public transport like buses, which are significantly more popular than individual methods like cycling or walking, collectively making up only a fifth of all commutes.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Local Transport Usage in City A (2023)",
+        "yLabel": "Percentage of Commuters",
+        "xAxis": [
+          "Bus",
+          "Train",
+          "Car",
+          "Bicycle",
+          "Walking"
+        ],
+        "series": [
+          {
+            "label": "Mode of Transport",
+            "values": [
+              35,
+              20,
+              25,
+              10,
+              10
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-034-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Urban Transport Challenges”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "local transport",
+      "modelAnswer": "The lecture focused on challenges in urban public transport, such as rising demand from urbanization, limited funding, old infrastructure, and competition from ride-sharing. The speaker suggested solutions like smart ticketing systems, integrating various transport options, and adopting green technologies. It was also emphasized that strong collaboration among governments, private companies, and communities is essential for developing sustainable and efficient urban mobility.",
+      "audioScript": "Today we're discussing the multifaceted challenges confronting urban public transport systems globally. Rapid urbanization has led to increased demand, often outpacing infrastructure development. Funding constraints, aging infrastructure, and the rise of ride-sharing services further complicate matters. Potential solutions involve smart ticketing, integrating diverse transport modes, and investing in green technologies. Effective planning also necessitates strong collaboration between government, private sectors, and local communities to create sustainable and efficient mobility solutions for future cities.",
+      "keyPoints": [
+        "Rapid urbanization and increased demand",
+        "Funding, aging infrastructure, ride-sharing",
+        "Smart ticketing, integrated modes, green tech",
+        "Collaboration for sustainable solutions"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-034-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Common City Transport”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Tram",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "local transport",
+      "modelAnswer": "Tram",
+      "audioScript": "What common mode of local transport uses tracks and overhead electric lines?"
+    },
+    {
+      "id": "pte-speaking-writing-034-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Future of Urban Mobility”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "local transport",
+      "wordTarget": 75,
+      "modelAnswer": "Urban mobility is transforming with autonomous vehicles and new apps, promising convenience and less environmental impact, but requiring careful planning for infrastructure, regulation, and equitable access.",
+      "readText": "The landscape of urban mobility is undergoing a profound transformation, driven by technological advancements and shifting consumer preferences. Autonomous vehicles, electric scooters, and integrated multimodal apps are reshaping how people navigate cities. This evolution promises greater convenience and reduced environmental impact, yet it also presents challenges regarding infrastructure adaptation, regulatory frameworks, and ensuring equitable access. Cities must proactively plan for these changes to harness their benefits while mitigating potential drawbacks and maintaining public safety and accessibility."
+    },
+    {
+      "id": "pte-speaking-writing-034-q07",
+      "questionType": "write_essay",
+      "prompt": "Some people believe that immigrants should fully adopt the culture and values of their new country. Others think they should be free to maintain their own culture. Discuss both views.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "local transport",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Renewable Energy Transition”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q08",
+      "modelAnswer": "Transitioning to renewable energy sources is a critical climate change mitigation strategy. This involves not only scaling up solar and wind power but also developing advanced energy storage solutions. Policy incentives, international cooperation, and public awareness campaigns are essential to accelerate this shift. Such a transition promises significant reductions in greenhouse gas emissions and enhanced energy security for nations worldwide, fostering a more sustainable global economy.",
+      "readText": "Transitioning to renewable energy sources is a critical climate change mitigation strategy. This involves not only scaling up solar and wind power but also developing advanced energy storage solutions. Policy incentives, international cooperation, and public awareness campaigns are essential to accelerate this shift. Such a transition promises significant reductions in greenhouse gas emissions and enhanced energy security for nations worldwide, fostering a more sustainable global economy."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Global Food Supply Chains”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q09",
+      "modelAnswer": "The economics of global food production are complex, influenced by factors such as climate patterns, trade policies, and technological advancements. Supply chain resilience, food waste reduction, and equitable distribution are paramount challenges. Ensuring food security for a growing global population requires sustainable agricultural practices and innovative approaches to production and consumption. Market dynamics and geopolitical stability also play crucial roles in this intricate system.",
+      "readText": "The economics of global food production are complex, influenced by factors such as climate patterns, trade policies, and technological advancements. Supply chain resilience, food waste reduction, and equitable distribution are paramount challenges. Ensuring food security for a growing global population requires sustainable agricultural practices and innovative approaches to production and consumption. Market dynamics and geopolitical stability also play crucial roles in this intricate system."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Extraterrestrial Habitation Hurdles”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q10",
+      "modelAnswer": "Space exploration and colonisation present immense scientific and engineering challenges. Establishing sustainable habitats on other celestial bodies requires overcoming issues like radiation exposure, resource scarcity, and psychological isolation. Developing closed-loop life support systems and advanced propulsion technologies are crucial steps. The long-term viability of human presence beyond Earth depends on innovative solutions to these formidable extraterrestrial habitation hurdles.",
+      "readText": "Space exploration and colonisation present immense scientific and engineering challenges. Establishing sustainable habitats on other celestial bodies requires overcoming issues like radiation exposure, resource scarcity, and psychological isolation. Developing closed-loop life support systems and advanced propulsion technologies are crucial steps. The long-term viability of human presence beyond Earth depends on innovative solutions to these formidable extraterrestrial habitation hurdles."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Cognitive Biases in Choices”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q11",
+      "modelAnswer": "The psychology of decision-making reveals that human choices are often influenced by cognitive biases rather than pure rationality. Heuristics, or mental shortcuts, can lead to systematic errors in judgment, especially under uncertainty or time pressure. Understanding these biases is crucial in fields ranging from economics to public policy. Awareness of such psychological mechanisms helps individuals and organizations make more informed and effective decisions in various complex scenarios.",
+      "readText": "The psychology of decision-making reveals that human choices are often influenced by cognitive biases rather than pure rationality. Heuristics, or mental shortcuts, can lead to systematic errors in judgment, especially under uncertainty or time pressure. Understanding these biases is crucial in fields ranging from economics to public policy. Awareness of such psychological mechanisms helps individuals and organizations make more informed and effective decisions in various complex scenarios."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Public Transport Evolution”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q12",
+      "modelAnswer": "The evolution of public transport systems mirrors societal and technological changes over centuries. From horse-drawn omnibuses to electric trams and modern high-speed rail, each advancement addressed growing urban populations and industrial needs. Today, integration with digital platforms and autonomous vehicles represents the next frontier. This continuous development aims to enhance efficiency, accessibility, and environmental sustainability, shaping how cities function and connect their inhabitants.",
+      "readText": "The evolution of public transport systems mirrors societal and technological changes over centuries. From horse-drawn omnibuses to electric trams and modern high-speed rail, each advancement addressed growing urban populations and industrial needs. Today, integration with digital platforms and autonomous vehicles represents the next frontier. This continuous development aims to enhance efficiency, accessibility, and environmental sustainability, shaping how cities function and connect their inhabitants."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Antibiotic resistance poses a significant threat to global health policy and public well-being.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Antibiotic Resistance”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q13",
+      "modelAnswer": "Antibiotic resistance poses a significant threat to global health policy and public well-being.",
+      "audioScript": "Antibiotic resistance poses a significant threat to global health policy and public well-being."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ocean acidification severely impacts marine biodiversity and delicate coral reef ecosystems.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ocean Acidification”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q14",
+      "modelAnswer": "Ocean acidification severely impacts marine biodiversity and delicate coral reef ecosystems.",
+      "audioScript": "Ocean acidification severely impacts marine biodiversity and delicate coral reef ecosystems."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The neuroscience of creativity explores brain networks involved in novel idea generation.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Neuroscience of Creativity”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q15",
+      "modelAnswer": "The neuroscience of creativity explores brain networks involved in novel idea generation.",
+      "audioScript": "The neuroscience of creativity explores brain networks involved in novel idea generation."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Global water scarcity demands urgent conservation efforts and international policy cooperation.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Global Water Scarcity”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q16",
+      "modelAnswer": "Global water scarcity demands urgent conservation efforts and international policy cooperation.",
+      "audioScript": "Global water scarcity demands urgent conservation efforts and international policy cooperation."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Genetic engineering raises profound ethical considerations regarding human intervention and nature.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Genetic Engineering Ethics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q17",
+      "modelAnswer": "Genetic engineering raises profound ethical considerations regarding human intervention and nature.",
+      "audioScript": "Genetic engineering raises profound ethical considerations regarding human intervention and nature."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Quantum computing breakthroughs promise revolutionary advancements across numerous scientific fields.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Quantum Computing”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q18",
+      "modelAnswer": "Quantum computing breakthroughs promise revolutionary advancements across numerous scientific fields.",
+      "audioScript": "Quantum computing breakthroughs promise revolutionary advancements across numerous scientific fields."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Childhood nutrition significantly influences cognitive development and long-term academic success.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Childhood Nutrition”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q19",
+      "modelAnswer": "Childhood nutrition significantly influences cognitive development and long-term academic success.",
+      "audioScript": "Childhood nutrition significantly influences cognitive development and long-term academic success."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Machine learning applications in healthcare are transforming diagnostics and personalized treatment plans.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Machine Learning Healthcare”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q20",
+      "modelAnswer": "Machine learning applications in healthcare are transforming diagnostics and personalized treatment plans.",
+      "audioScript": "Machine learning applications in healthcare are transforming diagnostics and personalized treatment plans."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial movements.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ancient Astronomy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q21",
+      "modelAnswer": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial movements.",
+      "audioScript": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial movements."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Carbon Reservoirs and Fluxes (Gigatons of Carbon)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q22",
+      "modelAnswer": "The table illustrates global carbon reservoirs and fluxes in Gigatons of Carbon. The largest reservoir is the deep oceans, holding a massive 37,000 GtC, significantly more than surface oceans at 900 GtC. Land, including soil and vegetation, contains 2,000 GtC, while the atmosphere holds 750 GtC. Photosynthesis represents the largest natural flux at 120 GtC, absorbing carbon. In contrast, human emissions are a comparatively small but impactful flux of 9 GtC. This data highlights the vast scale of natural carbon storage and the relatively small, but significant, human contribution to atmospheric carbon.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Carbon Reservoirs and Fluxes (Gigatons of Carbon)",
+        "headers": [
+          "Reservoir/Flux",
+          "Amount (GtC)"
+        ],
+        "rows": [
+          [
+            "Atmosphere",
+            "750"
+          ],
+          [
+            "Oceans (surface)",
+            "900"
+          ],
+          [
+            "Oceans (deep)",
+            "37000"
+          ],
+          [
+            "Land (soil/vegetation)",
+            "2000"
+          ],
+          [
+            "Fossil Fuels",
+            "4000"
+          ],
+          [
+            "Photosynthesis (flux)",
+            "120"
+          ],
+          [
+            "Respiration (flux)",
+            "60"
+          ],
+          [
+            "Ocean-Atmosphere Exchange (flux)",
+            "90"
+          ],
+          [
+            "Human Emissions (flux)",
+            "9"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q23",
+      "modelAnswer": "The pie chart illustrates global CO2 emissions by sector in 2022. Energy production is the largest contributor, accounting for a significant 35% of total emissions. This is followed by Industry at 24%, and Transportation at 19%, highlighting their substantial impact. Agriculture and Land Use contribute 14%, while Residential and Commercial Buildings make up the smallest portion at 8%. Overall, the chart clearly indicates that energy generation and heavy industry are the primary drivers of global CO2 emissions, together representing nearly 60% of the total.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy Production",
+            "value": 35
+          },
+          {
+            "label": "Industry",
+            "value": 24
+          },
+          {
+            "label": "Transportation",
+            "value": 19
+          },
+          {
+            "label": "Agriculture & Land Use",
+            "value": 14
+          },
+          {
+            "label": "Residential & Commercial Buildings",
+            "value": 8
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Renewable Energy Adoption by Country (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q24",
+      "modelAnswer": "This bar chart illustrates renewable energy adoption across five countries in 2023, measured as a percentage of total energy consumption. Brazil leads significantly with 65%, indicating strong commitment to renewables. Germany follows with 45%, demonstrating a substantial share. Australia and Canada show moderate adoption at 35% and 30% respectively. Japan records the lowest adoption among these countries at 20%. Overall, there's a clear disparity, with South American and European nations showing higher percentages compared to Asian and North American counterparts, highlighting varying global progress in sustainable energy transitions.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Energy Adoption by Country (2023)",
+        "yLabel": "% of Total Energy Consumption",
+        "xAxis": [
+          "Germany",
+          "Canada",
+          "Brazil",
+          "Japan",
+          "Australia"
+        ],
+        "series": [
+          {
+            "label": "Renewable Energy Adoption",
+            "values": [
+              45,
+              30,
+              65,
+              20,
+              35
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Temperature Change (1900-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q25",
+      "modelAnswer": "This line graph illustrates global average temperature changes from 1900 to 2020, showing temperature anomalies in degrees Celsius. Initially, temperatures were below the average, starting at -0.2°C in 1900. There was a slight increase by 1940 to 0.05°C, followed by a minor dip. However, a significant upward trend began around 1980, accelerating sharply into the 21st century. The highest anomaly was recorded in 2020, reaching 0.9°C. This indicates a clear and concerning warming trend, with temperatures almost consistently rising after the mid-20th century.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Temperature Change (1900-2020)",
+        "yLabel": "Temperature Anomaly (°C)",
+        "xAxis": [
+          "1900",
+          "1920",
+          "1940",
+          "1960",
+          "1980",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Global Temperature Anomaly",
+            "values": [
+              -0.2,
+              -0.1,
+              0.05,
+              -0.05,
+              0.2,
+              0.6,
+              0.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Annual Deforestation in the Amazon Basin (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q26",
+      "modelAnswer": "This line chart illustrates the annual deforestation in the Amazon Basin between 1990 and 2020, measured in million hectares. Initially, deforestation saw a significant increase, rising from 1.5 million hectares in 1990 to peak at 2.7 million hectares in 2005. Following this, there was a notable decline, reaching its lowest point of 1.2 million hectares in 2015. However, the trend reversed again towards the end of the period, with deforestation increasing to 1.6 million hectares by 2020. This indicates a fluctuating pattern, with a substantial reduction from the 2005 peak but a recent upward shift.",
+      "visual": {
+        "chartType": "line",
+        "title": "Annual Deforestation in the Amazon Basin (1990-2020)",
+        "yLabel": "Area (million hectares)",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Deforested Area",
+            "values": [
+              1.5,
+              1.8,
+              2.3,
+              2.7,
+              1.9,
+              1.2,
+              1.6
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Interpersonal Communication Skills”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q27",
+      "modelAnswer": "The lecture highlighted the importance of effective interpersonal communication in personal and professional life. It extends beyond just information exchange, encompassing active listening, empathy, and understanding non-verbal cues. The speaker explained that misunderstandings frequently occur due to poor listening or misinterpreting body language. Developing these skills, through conscious practice and self-awareness, can greatly improve relationships, encourage collaboration, and lead to more constructive conflict resolution.",
+      "audioScript": "Today's discussion centers on the critical role of effective interpersonal communication skills in both personal and professional contexts. Beyond merely exchanging information, it involves active listening, empathy, and non-verbal cues. Misunderstandings often arise from poor listening or misinterpreting body language. Developing these skills can significantly enhance relationships, foster collaboration, and resolve conflicts more constructively. It requires conscious practice and self-awareness to truly master the art of connecting with others on a deeper level.",
+      "keyPoints": [
+        "Importance of interpersonal communication",
+        "Active listening, empathy, non-verbal cues",
+        "Poor listening causes misunderstandings",
+        "Practice improves relationships and conflict resolution"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Digital Communication Evolution”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q28",
+      "modelAnswer": "The lecture discussed the rapid evolution of digital communication and its impact on human interaction. The speaker noted that platforms like email, instant messaging, and social media offer great connectivity but also bring challenges such as information overload, privacy issues, and misinterpretation due to the absence of non-verbal cues. It was emphasized that understanding the specific nuances of each digital medium is vital for effective and responsible communication in our interconnected world, balancing convenience with clarity.",
+      "audioScript": "We are witnessing a rapid evolution in digital communication, which has profoundly reshaped how we interact. From email to instant messaging and social media, these platforms offer unprecedented connectivity but also introduce new challenges. Issues like information overload, privacy concerns, and the potential for misinterpretation without non-verbal cues are prevalent. Understanding the nuances of each digital medium is crucial for effective and responsible communication in our increasingly connected world, balancing convenience with clarity and respect.",
+      "keyPoints": [
+        "Rapid evolution of digital communication",
+        "Platforms: email, messaging, social media",
+        "Challenges: overload, privacy, misinterpretation",
+        "Nuance for effective and responsible use"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "To convey information",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Purpose of Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q29",
+      "modelAnswer": "To convey information",
+      "audioScript": "What is the primary purpose of communication?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Channel",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Channel”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q30",
+      "modelAnswer": "Channel",
+      "audioScript": "What is the term for the medium through which a message is sent?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Non-verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Non-Verbal Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q31",
+      "modelAnswer": "Non-verbal",
+      "audioScript": "What form of communication involves body language and facial expressions?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Noise",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Barrier to Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-034-q32",
+      "modelAnswer": "Noise",
+      "audioScript": "What is a common obstacle that prevents effective communication?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Digital Education Transformation”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-034-q33",
+      "modelAnswer": "Digital technology is transforming education by offering virtual learning, personalized instruction, and AI tools, enhancing access and flexibility, but requiring attention to digital equity and literacy for successful implementation.",
+      "readText": "Digital technology has fundamentally reshaped educational practices, moving beyond traditional classroom settings to embrace virtual learning environments and personalized instruction. Online platforms, interactive simulations, and artificial intelligence-driven tools now offer unprecedented access to knowledge and tailored learning experiences. This transformation empowers students with greater flexibility and autonomy, catering to diverse learning styles and paces. However, it also necessitates addressing digital divides, ensuring equitable access to technology and fostering critical digital literacy skills among both educators and learners to fully leverage these advancements for improved outcomes."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Digital communication technologies have revolutionized how people interact globally. Discuss the advantages and disadvantages of this transformation, providing examples to support your arguments. What are the long-term societal implications?",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-034-q34",
+      "modelAnswer": "The advent of digital communication technologies, encompassing everything from social media to instant messaging and video conferencing, has undeniably reshaped human interaction on a global scale. This transformation presents a complex interplay of benefits and drawbacks, with significant long-term societal implications.\n\nOne primary advantage is the unprecedented ease and speed of connection. Individuals can maintain relationships across vast distances, families separated by continents can communicate daily, and businesses can collaborate internationally in real-time. This fosters cultural exchange, facilitates global commerce, and enables rapid dissemination of information during crises. For instance, platforms like WhatsApp allow immediate group communication, while Zoom meetings bridge geographical gaps for professional collaboration. Furthermore, digital tools have democratized communication, giving a voice to marginalized communities and enabling social movements to organize with greater efficiency.\n\nHowever, these advantages are tempered by considerable disadvantages. The constant connectivity can lead to information overload, mental fatigue, and a blurring of lines between personal and professional life. Privacy concerns are paramount, with personal data frequently exploited or compromised. Moreover, the superficiality of some online interactions can erode the depth of face-to-face relationships, potentially contributing to feelings of isolation despite being 'connected.' The spread of misinformation and disinformation, often amplified by algorithms, poses a serious threat to informed public discourse and democratic processes. Cyberbullying and online harassment are also prevalent issues, impacting mental health, especially among younger generations.\n\nThe long-term societal implications are profound. On one hand, we are moving towards a more interconnected, globally aware society capable of collective action on shared challenges. On the other hand, there is a risk of increased societal fragmentation due to echo chambers, heightened surveillance, and a decline in critical thinking skills as individuals become reliant on curated digital feeds. Addressing these implications requires a concerted effort to promote digital literacy, develop robust ethical guidelines for technology use, and foster environments that encourage meaningful human connection alongside digital convenience. Ultimately, society must learn to harness the power of digital communication responsibly to ensure it serves humanity's best interests."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Effective communication is crucial for success in the modern workplace. Discuss the key elements of effective workplace communication and explain how technology has both enhanced and complicated this process. What strategies can organizations employ to optimize communication?",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-034-q35",
+      "modelAnswer": "In the contemporary professional landscape, effective communication stands as a cornerstone of organizational success. It underpins teamwork, innovation, problem-solving, and overall productivity. Understanding its key elements and navigating the dual impact of technology are vital for any thriving enterprise.\n\nKey elements of effective workplace communication include clarity, conciseness, active listening, empathy, and feedback. Messages must be unambiguous, avoiding jargon where possible, and delivered succinctly to respect colleagues' time. Active listening ensures that information is fully understood and that speakers feel heard, fostering trust. Empathy helps in tailoring messages to different audiences and understanding underlying concerns. Finally, constructive feedback loops are essential for continuous improvement and resolving misunderstandings promptly. When these elements are consistently applied, they create an environment of transparency and mutual respect.\n\nTechnology has profoundly impacted workplace communication, offering both enhancements and complications. On the positive side, tools like email, instant messaging platforms (e.g., Slack, Microsoft Teams), and video conferencing (e.g., Zoom, Google Meet) have enabled unprecedented speed and reach. Teams can collaborate across time zones, documents can be shared instantly, and urgent matters can be addressed without physical proximity. This has fostered global teams and increased flexibility. However, technology also introduces complexities. The sheer volume of digital communication can lead to information overload, making it difficult to prioritize and focus. The lack of non-verbal cues in text-based communication often results in misinterpretations and conflicts. Furthermore, an over-reliance on digital tools can sometimes diminish face-to-face interaction, potentially weakening team cohesion and the development of deeper professional relationships.\n\nTo optimize communication, organizations can employ several strategies. Firstly, establishing clear communication protocols and guidelines for using different platforms can help manage information flow and expectations. For instance, defining when to use email versus instant message or when a video call is preferable to a text message. Secondly, investing in training for employees on active listening, giving constructive feedback, and digital etiquette is crucial. Thirdly, fostering a culture that values open dialogue and psychological safety encourages employees to speak up and share ideas without fear of reprisal. Lastly, balancing digital communication with intentional opportunities for in-person interaction, such as regular team meetings or social gatherings, can strengthen bonds and improve overall communication effectiveness. By thoughtfully integrating technology and cultivating strong interpersonal skills, organizations can harness communication as a powerful asset."
+    }
+  ]
+}

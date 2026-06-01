@@ -1,0 +1,907 @@
+{
+  "id": "ielts-listening-013",
+  "exam": "ielts",
+  "section": "listening",
+  "title": "IELTS Listening Practice Test 13",
+  "durationSeconds": 2400,
+  "questionCount": 40,
+  "listeningScripts": [
+    {
+      "id": "ielts-listening-013-p1",
+      "part": 1,
+      "title": "Arranging a Home Repair Service",
+      "text": "Operator: QuickFix Home Services, how can I help?\nCustomer: Hello, I need someone to repair a broken boiler.\nOperator: Of course. Name and address please?\nCustomer: Anna Petrov. 47 Chestnut Avenue, Barton, postcode BT4 8LD.\nOperator: And a contact number?\nCustomer: 01622 793 450.\nOperator: What type of boiler is it?\nCustomer: A gas combi boiler. The brand is Vaillant.\nOperator: When did it stop working?\nCustomer: Yesterday evening — around seven o'clock.\nOperator: We can send an engineer tomorrow between nine and twelve. The call-out fee is sixty-five pounds. Parts are extra if needed.\nCustomer: That's fine.\nOperator: Our engineer's name is Marcus Webb. He'll call thirty minutes before arriving. Do you need a parking permit?\nCustomer: No, there's free parking on the road.\nOperator: Perfect. You'll receive a text confirmation within the hour.",
+      "formLayout": {
+        "title": "QuickFix Home Services — Service Request Form",
+        "example": {
+          "label": "Service category",
+          "content": "boiler / plumbing / electrical"
+        },
+        "rows": [
+          {
+            "type": "blank",
+            "num": 1,
+            "label": "Customer name",
+            "prefix": "",
+            "suffix": "",
+            "answer": "Anna Petrov"
+          },
+          {
+            "type": "blank",
+            "num": 2,
+            "label": "House number",
+            "prefix": "",
+            "suffix": " Chestnut Avenue",
+            "answer": "47"
+          },
+          {
+            "type": "blank",
+            "num": 3,
+            "label": "Postcode",
+            "prefix": "",
+            "suffix": "",
+            "answer": "BT4 8LD"
+          },
+          {
+            "type": "blank",
+            "num": 4,
+            "label": "Contact telephone",
+            "prefix": "",
+            "suffix": "",
+            "answer": "01622 793 450"
+          },
+          {
+            "type": "blank",
+            "num": 5,
+            "label": "Boiler fuel type",
+            "prefix": "",
+            "suffix": " combi",
+            "answer": "gas"
+          },
+          {
+            "type": "blank",
+            "num": 6,
+            "label": "Boiler brand",
+            "prefix": "",
+            "suffix": "",
+            "answer": "Vaillant"
+          },
+          {
+            "type": "blank",
+            "num": 7,
+            "label": "Appointment window",
+            "prefix": "9 am to ",
+            "suffix": " pm",
+            "answer": "12"
+          },
+          {
+            "type": "blank",
+            "num": 8,
+            "label": "Call-out fee",
+            "prefix": "£",
+            "suffix": "",
+            "answer": "65"
+          },
+          {
+            "type": "blank",
+            "num": 9,
+            "labelBlank": true,
+            "labelSuffix": "'s name",
+            "rightContent": "Marcus Webb",
+            "answer": "Engineer"
+          },
+          {
+            "type": "blank",
+            "num": 10,
+            "label": "Confirmation method",
+            "prefix": "",
+            "suffix": "",
+            "answer": "text / text message"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-listening-013-p2",
+      "part": 2,
+      "title": "Nature Reserve Visitor Centre",
+      "text": "Ranger: Good morning and welcome to Blackwood Nature Reserve. I'm Ranger Clarke, and I'll be giving you an overview of what's on offer here today.\n\nAs you enter the reserve through the main gate, the Visitor Centre is immediately on your right. Inside, you'll find interactive displays about local wildlife, a gift shop, and toilets. We ask all visitors to sign in at reception before exploring.\n\nFrom the Visitor Centre, there are three walking trails marked in different colours. The yellow trail is the shortest — about one kilometre — and is fully paved, making it suitable for wheelchairs and pushchairs. It takes you past Heron Pond, where you can spot herons and kingfishers from the viewing platform at the water's edge.\n\nThe blue trail is three kilometres and takes roughly ninety minutes. It winds through the ancient oak woodland and leads to the Badger Watch Hide, which is particularly active at dawn and dusk. Dogs must be kept on leads along this section.\n\nThe red trail is our most challenging — six kilometres, taking around three hours. It climbs to the ridge viewpoint where on clear days you can see four counties. There's a shelter with picnic benches at the halfway point. Walking boots are strongly recommended.\n\nThe Meadow Café, serving hot drinks and light lunches, is located beyond the Visitor Centre, beside the car park. It closes at four thirty. Emergency services can be reached at the warden's station, which is near the start of the blue trail. Please remember — no fires, no litter, and no picking of plants.\n\nEnjoy your visit!"
+    },
+    {
+      "id": "ielts-listening-013-p3",
+      "part": 3,
+      "title": "Discussion About a Research Project on Urban Noise",
+      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+    },
+    {
+      "id": "ielts-listening-013-p4",
+      "part": 4,
+      "title": "Lecture: The History of Antibiotics",
+      "text": "Today I want to talk about the history of antibiotics — arguably one of the most important developments in twentieth-century medicine.\n\nThe story begins in 1928 when Alexander Fleming noticed that a mould called Penicillium notatum was inhibiting the growth of bacteria on one of his culture plates. He published his findings but was initially unable to isolate the active compound in large enough quantities to be clinically useful.\n\nIt wasn't until 1940 that Howard Florey and Ernst Chain at Oxford managed to purify penicillin and demonstrate its effectiveness in mice. The following year, in 1941, they treated the first human patient — a police officer with a severe infection — with remarkable results, though limited supplies meant the patient eventually relapsed.\n\nThe real breakthrough came during the Second World War, when mass production was achieved through collaboration between British and American pharmaceutical companies. By 1944, enough penicillin had been produced to treat all wounded Allied soldiers. This industrial-scale production required entirely new fermentation techniques.\n\nFollowing the war, the golden era of antibiotic discovery began, lasting roughly from 1950 to 1970. During this period, major antibiotic classes including tetracyclines, erythromycin, and vancomycin were discovered, largely from soil bacteria. Researchers estimated that soil contained thousands of antibiotic-producing organisms waiting to be identified.\n\nHowever, the overuse of antibiotics in both human medicine and agriculture has driven the evolution of resistant bacteria at an alarming rate. The World Health Organization now lists antimicrobial resistance as one of the greatest global health threats. New antibiotic approvals have declined sharply since the 1980s as pharmaceutical companies shifted resources toward more profitable chronic disease treatments.\n\nCurrent strategies to address resistance include antibiotic stewardship programmes, rapid diagnostic testing to avoid prescribing antibiotics for viral infections, and investment in novel antimicrobial compounds including bacteriophage therapy and antimicrobial peptides."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-listening-013-q1",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 1,
+      "label": "Customer name",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Anna Petrov",
+      "explanation": "The answer \"Anna Petrov\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the check-in time?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-013-q2",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 2,
+      "label": "House number",
+      "prefix": "",
+      "suffix": " Chestnut Avenue",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "47",
+      "explanation": "The answer \"47\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-013-q3",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 3,
+      "label": "Postcode",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "BT4 8LD",
+      "explanation": "The answer \"BT4 8LD\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the total cost?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-013-q4",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 4,
+      "label": "Contact telephone",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "01622 793 450",
+      "explanation": "The answer \"01622 793 450\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-013-q5",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 5,
+      "label": "Boiler fuel type",
+      "prefix": "",
+      "suffix": " combi",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "gas",
+      "explanation": "The answer \"gas\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the breakfast option?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-013-q6",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 6,
+      "label": "Boiler brand",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Vaillant",
+      "explanation": "The answer \"Vaillant\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-013-q7",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 7,
+      "label": "Appointment window",
+      "prefix": "9 am to ",
+      "suffix": " pm",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "12",
+      "explanation": "The answer \"12\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the room type?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-013-q8",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 8,
+      "label": "Call-out fee",
+      "prefix": "£",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "65",
+      "explanation": "The answer \"65\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-013-q9",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 9,
+      "label": "",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": true,
+      "labelSuffix": "'s name",
+      "rightContent": "Marcus Webb",
+      "answer": "Engineer",
+      "explanation": "The answer \"Engineer\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the cancellation policy?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-013-q10",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 10,
+      "label": "Confirmation method",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "text / text message",
+      "explanation": "The answer \"text / text message\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-013-q11",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 11,
+      "prompt": "What must visitors do before exploring the reserve?",
+      "options": [
+        "pay an entry fee",
+        "sign in at reception",
+        "collect a trail map",
+        "watch a safety video"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The ranger says 'We ask all visitors to sign in at reception'"
+    },
+    {
+      "id": "ielts-listening-013-q12",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 12,
+      "prompt": "Which trail is suitable for wheelchairs?",
+      "options": [
+        "red trail",
+        "blue trail",
+        "yellow trail",
+        "all trails"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The yellow trail is 'fully paved, making it suitable for wheelchairs and pushchairs'"
+    },
+    {
+      "id": "ielts-listening-013-q13",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 13,
+      "prompt": "When is the Badger Watch Hide most active?",
+      "options": [
+        "midday",
+        "afternoon",
+        "dawn and dusk",
+        "after dark"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The hide is 'particularly active at dawn and dusk'"
+    },
+    {
+      "id": "ielts-listening-013-q14",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 14,
+      "prompt": "What can be seen from the ridge viewpoint?",
+      "options": [
+        "three counties",
+        "four counties",
+        "the sea",
+        "the city skyline"
+      ],
+      "correctAnswer": "B",
+      "explanation": "On clear days 'you can see four counties'"
+    },
+    {
+      "id": "ielts-listening-013-q15",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 15,
+      "prompt": "What time does the Meadow Café close?",
+      "options": [
+        "3:30 pm",
+        "4:00 pm",
+        "4:30 pm",
+        "5:00 pm"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The café 'closes at four thirty'"
+    },
+    {
+      "id": "ielts-listening-013-q16",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Blackwood Nature Reserve — Site Map",
+      "mapDescription": "Label the locations A–J on the reserve map.",
+      "mapKey": {
+        "A": "Visitor Centre",
+        "B": "Heron Pond",
+        "C": "Viewing platform",
+        "D": "Oak woodland",
+        "E": "Badger Watch Hide",
+        "F": "Ridge viewpoint",
+        "G": "Picnic shelter",
+        "H": "Meadow Café",
+        "I": "Warden's station",
+        "J": "Kingfisher viewing area"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 16,
+      "prompt": "First building on right after main gate",
+      "correctAnswer": "A",
+      "explanation": "The correct letter is A (Visitor Centre)."
+    },
+    {
+      "id": "ielts-listening-013-q17",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Blackwood Nature Reserve — Site Map",
+      "mapDescription": "Label the locations A–J on the reserve map.",
+      "mapKey": {
+        "A": "Visitor Centre",
+        "B": "Heron Pond",
+        "C": "Viewing platform",
+        "D": "Oak woodland",
+        "E": "Badger Watch Hide",
+        "F": "Ridge viewpoint",
+        "G": "Picnic shelter",
+        "H": "Meadow Café",
+        "I": "Warden's station",
+        "J": "Kingfisher viewing area"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 17,
+      "prompt": "Water feature past yellow trail",
+      "correctAnswer": "B",
+      "explanation": "The correct letter is B (Heron Pond)."
+    },
+    {
+      "id": "ielts-listening-013-q18",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Blackwood Nature Reserve — Site Map",
+      "mapDescription": "Label the locations A–J on the reserve map.",
+      "mapKey": {
+        "A": "Visitor Centre",
+        "B": "Heron Pond",
+        "C": "Viewing platform",
+        "D": "Oak woodland",
+        "E": "Badger Watch Hide",
+        "F": "Ridge viewpoint",
+        "G": "Picnic shelter",
+        "H": "Meadow Café",
+        "I": "Warden's station",
+        "J": "Kingfisher viewing area"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 18,
+      "prompt": "Platform at water's edge for birdwatching",
+      "correctAnswer": "C",
+      "explanation": "The correct letter is C (Viewing platform)."
+    },
+    {
+      "id": "ielts-listening-013-q19",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Blackwood Nature Reserve — Site Map",
+      "mapDescription": "Label the locations A–J on the reserve map.",
+      "mapKey": {
+        "A": "Visitor Centre",
+        "B": "Heron Pond",
+        "C": "Viewing platform",
+        "D": "Oak woodland",
+        "E": "Badger Watch Hide",
+        "F": "Ridge viewpoint",
+        "G": "Picnic shelter",
+        "H": "Meadow Café",
+        "I": "Warden's station",
+        "J": "Kingfisher viewing area"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 19,
+      "prompt": "Wooded area on blue trail",
+      "correctAnswer": "D",
+      "explanation": "The correct letter is D (Oak woodland)."
+    },
+    {
+      "id": "ielts-listening-013-q20",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Blackwood Nature Reserve — Site Map",
+      "mapDescription": "Label the locations A–J on the reserve map.",
+      "mapKey": {
+        "A": "Visitor Centre",
+        "B": "Heron Pond",
+        "C": "Viewing platform",
+        "D": "Oak woodland",
+        "E": "Badger Watch Hide",
+        "F": "Ridge viewpoint",
+        "G": "Picnic shelter",
+        "H": "Meadow Café",
+        "I": "Warden's station",
+        "J": "Kingfisher viewing area"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 20,
+      "prompt": "Structure for watching wildlife on blue trail",
+      "correctAnswer": "E",
+      "explanation": "The correct letter is E (Badger Watch Hide)."
+    },
+    {
+      "id": "ielts-listening-013-q21",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 21,
+      "prompt": "What noise level does research link to increased stress hormones?",
+      "options": [
+        "55 dB",
+        "60 dB",
+        "65 dB",
+        "70 dB"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+    },
+    {
+      "id": "ielts-listening-013-q22",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 22,
+      "prompt": "What additional health risk did James find surprising in the literature?",
+      "options": [
+        "hearing loss",
+        "cardiovascular disease",
+        "respiratory problems",
+        "mental health disorders"
+      ],
+      "correctAnswer": "B",
+      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+    },
+    {
+      "id": "ielts-listening-013-q23",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 23,
+      "prompt": "How many residents will be surveyed?",
+      "options": [
+        "200",
+        "300",
+        "400",
+        "500"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Priya mentions 'a survey of five hundred residents'"
+    },
+    {
+      "id": "ielts-listening-013-q24",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 24,
+      "prompt": "What confidence level does their sample size achieve?",
+      "options": [
+        "90%",
+        "92%",
+        "95%",
+        "99%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "James refers to 'the ninety-five percent confidence level'"
+    },
+    {
+      "id": "ielts-listening-013-q25",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 25,
+      "prompt": "What does the tutor recommend they reference?",
+      "options": [
+        "WHO 2015 report",
+        "WHO 2018 guidelines",
+        "EU noise directive",
+        "national highway code"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+    },
+    {
+      "id": "ielts-listening-013-q26",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 26,
+      "prompt": "introducing new equipment in the laboratory",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-013-q27",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 27,
+      "prompt": "keeping written records of experiments",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-013-q28",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 28,
+      "prompt": "sharing results with other research groups",
+      "correctAnswer": "B",
+      "explanation": "The speaker's attitude is B. She is undecided."
+    },
+    {
+      "id": "ielts-listening-013-q29",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 29,
+      "prompt": "the importance of the project deadline",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-013-q30",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 30,
+      "prompt": "the proposal to extend the study",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-013-q31",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 31,
+      "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
+      "correctAnswer": "mould",
+      "explanation": "The correct answer is: \"mould\".",
+      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-013-q32",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 32,
+      "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
+      "correctAnswer": "isolate / purify",
+      "explanation": "The correct answer is: \"isolate / purify\".",
+      "prompt": "The speaker describes the current research of the topic.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-013-q33",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 33,
+      "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
+      "correctAnswer": "Oxford",
+      "explanation": "The correct answer is: \"Oxford\".",
+      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-013-q34",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 34,
+      "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
+      "correctAnswer": "Police officer",
+      "explanation": "The correct answer is: \"Police officer\".",
+      "prompt": "The speaker describes the key challenge of the topic.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-013-q35",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 35,
+      "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
+      "correctAnswer": "fermentation",
+      "explanation": "The correct answer is: \"fermentation\".",
+      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-013-q36",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 36,
+      "prompt": "According to the lecture, the main reason antibiotic discovery declined after the 1980s was that",
+      "options": [
+        "A  resistant bacteria evolved too quickly",
+        "B  pharmaceutical companies moved to more profitable areas",
+        "C  all known antibiotic compounds had already been tested",
+        "D  government funding was withdrawn"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer says companies 'shifted resources toward more profitable chronic disease treatments'"
+    },
+    {
+      "id": "ielts-listening-013-q37",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 37,
+      "prompt": "The golden era of antibiotic discovery lasted approximately",
+      "options": [
+        "A  10 years",
+        "B  20 years",
+        "C  30 years",
+        "D  40 years"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The golden era ran 'from 1950 to 1970' — roughly 20 years"
+    },
+    {
+      "id": "ielts-listening-013-q38",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 38,
+      "prompt": "According to the lecturer, most antibiotics discovered in the golden era came from",
+      "options": [
+        "A  synthetic chemicals",
+        "B  marine organisms",
+        "C  soil bacteria",
+        "D  hospital environments"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer states they were discovered 'largely from soil bacteria'"
+    },
+    {
+      "id": "ielts-listening-013-q39",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 39,
+      "prompt": "The World Health Organization describes antimicrobial resistance as",
+      "options": [
+        "A  a manageable risk with current technology",
+        "B  one of the greatest global health threats",
+        "C  primarily a problem in developing countries",
+        "D  less serious than other infectious diseases"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer quotes WHO listing it as 'one of the greatest global health threats'"
+    },
+    {
+      "id": "ielts-listening-013-q40",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 40,
+      "prompt": "Which novel treatment approach is specifically mentioned as an alternative to conventional antibiotics?",
+      "options": [
+        "A  gene therapy",
+        "B  vaccination programmes",
+        "C  bacteriophage therapy",
+        "D  surgical interventions"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer mentions 'bacteriophage therapy' as a novel antimicrobial approach"
+    }
+  ],
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Part 1: The History of Coffee Trade",
+      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "questionRange": [
+        1,
+        10
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Part 2: Sleep and Memory Consolidation",
+      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
+      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "questionRange": [
+        11,
+        20
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title": "Part 3: The History of Coffee Trade",
+      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "questionRange": [
+        21,
+        30
+      ]
+    },
+    {
+      "partNumber": 4,
+      "title": "Part 4: Sleep and Memory Consolidation",
+      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
+      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "questionRange": [
+        31,
+        40
+      ]
+    }
+  ]
+}

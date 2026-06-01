@@ -1,0 +1,30 @@
+{
+  "id": "toefl-full-023",
+  "exam": "toefl",
+  "type": "full",
+  "title": "TOEFL iBT Full Mock Test 23",
+  "durationSeconds": 6960,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "reading",
+      "testId": "toefl-reading-023",
+      "file": "toefl/reading/test-023.json"
+    },
+    {
+      "section": "listening",
+      "testId": "toefl-listening-023",
+      "file": "toefl/listening/test-023.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "toefl-speaking-023",
+      "file": "toefl/speaking/test-023.json"
+    },
+    {
+      "section": "writing",
+      "testId": "toefl-writing-023",
+      "file": "toefl/writing/test-023.json"
+    }
+  ]
+}

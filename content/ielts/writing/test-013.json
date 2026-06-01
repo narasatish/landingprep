@@ -1,0 +1,73 @@
+{
+  "id": "ielts-writing-013",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 13",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-013-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The chart shows the percentage of graduates from different fields who were employed within six months of graduation in a particular country in 2022. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "graduate employment",
+      "modelAnswer": "The bar chart illustrates the percentage of graduates from seven different academic fields who secured employment within six months of graduation in a specific country in 2022.\n\nOverall, it is clear that graduates from STEM-related fields enjoyed significantly higher employment rates compared to those from arts, humanities, and social sciences. Medicine consistently had the highest proportion of employed graduates, while Arts & Humanities had the lowest.\n\nSpecifically, medical graduates had the highest employment rate at 95%, closely followed by Engineering at 90% and Computer Science at 88%. Education graduates also showed a strong employment rate of 82%, indicating a high demand for professionals in this sector. Business graduates had a respectable 75% employment rate, placing them in the middle range.\n\nIn contrast, graduates from Social Sciences and Arts & Humanities faced greater challenges in securing employment. Social Sciences recorded an employment rate of 65%, while Arts & Humanities graduates had the lowest figure at 60%. This substantial gap highlights the varying demand for different skill sets in the job market within six months of graduation.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Employment Rates of Graduates by Field (2022)",
+        "yLabel": "Percentage Employed",
+        "xAxis": [
+          "Medicine",
+          "Engineering",
+          "Computer Science",
+          "Education",
+          "Business",
+          "Arts & Humanities",
+          "Social Sciences"
+        ],
+        "series": [
+          {
+            "label": "Employed within 6 months",
+            "values": [
+              95,
+              90,
+              88,
+              82,
+              75,
+              60,
+              65
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-013-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "In many countries, the number of graduates is increasing, but the rate of graduate unemployment is also rising. What problems does this create, and how can they best be solved?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "graduate employment",
+      "modelAnswer": "The global trend of increasing university graduates coupled with a simultaneous rise in graduate unemployment presents a complex socio-economic challenge. This essay will explore the significant problems arising from this paradox and propose practical solutions to mitigate them.\n\nOne primary issue is the widespread disillusionment and underutilisation of human capital. Graduates, after years of rigorous study and significant financial investment, often find themselves in jobs not commensurate with their qualifications or, worse, unemployed. For instance, in many developed nations, a substantial proportion of arts and humanities graduates struggle to secure roles directly related to their degrees, leading to brain drain or a \"skills mismatch\" within the domestic economy. This not only saps individual morale but also represents a colossal waste of educational resources and potential societal contribution. To address this, educational institutions must foster closer ties with industries, ensuring curricula are more responsive to current and future labour market demands, perhaps through integrated apprenticeships or mandatory practical placements.\n\nFurthermore, this situation exacerbates social inequality and can fuel economic instability. A large pool of unemployed or underemployed graduates can depress wages in entry-level positions, making it harder for younger generations to achieve financial independence and contribute to the economy through consumption and investment. Consider the burgeoning gig economy, where many highly educated individuals resort to precarious work, lacking benefits and career progression. A viable solution involves government intervention through targeted subsidies for companies hiring recent graduates in high-demand sectors like technology or green energy. Additionally, promoting entrepreneurship among graduates, coupled with accessible funding and mentorship programmes, could transform job seekers into job creators, stimulating innovation and economic growth.\n\nIn conclusion, the growing disparity between graduate numbers and employment opportunities generates profound individual and societal problems. By aligning education with industry needs and actively promoting entrepreneurial ventures, nations can effectively harness their educated populace and foster sustainable economic development."
+    }
+  ],
+  "variant": "academic"
+}

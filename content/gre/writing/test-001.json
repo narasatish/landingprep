@@ -1,0 +1,41 @@
+{
+  "id": "gre-writing-001",
+  "exam": "gre",
+  "section": "writing",
+  "type": "section",
+  "title": "GRE Analytical Writing Practice Test 1",
+  "durationSeconds": 1800,
+  "questionCount": 1,
+  "instructions": "Complete both tasks. Task 1 (Issue): 30 minutes, 400–600 words recommended. Task 2 (Argument): 30 minutes, 400–600 words recommended.",
+  "questions": [
+    {
+      "id": "gre-writing-001-q1",
+      "taskType": "issue",
+      "taskNumber": 1,
+      "title": "Analyse an Issue",
+      "timeMinutes": 30,
+      "prompt": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "scoringCriteria": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "wordTarget": 500,
+      "questionType": "writing_task",
+      "writingInstructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "rubric": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "situation": "Governments should prioritise economic growth over environmental protection.",
+      "questionNumber": 1,
+      "modelAnswer": "The assertion that governments should prioritize economic growth over environmental protection presents a false dichotomy, implying that these two critical objectives are inherently antagonistic. While a robust economy is undeniably essential for societal well-being, unfettered economic expansion at the expense of ecological health is ultimately self-defeating. A more nuanced perspective reveals that sustainable development, which integrates both economic prosperity and environmental stewardship, is not only achievable but imperative for long-term global stability and human flourishing.\n\nIndeed, there are circumstances where a short-term focus on economic growth might appear justifiable, particularly in developing nations striving to lift their populations out of poverty. For instance, a country like India, grappling with immense developmental challenges, might prioritize industrial expansion and infrastructure projects to create jobs and improve living standards, even if these initiatives initially entail a higher carbon footprint or localized pollution. In such cases, the immediate imperative to provide basic necessities and economic opportunity can overshadow long-term environmental concerns. However, even here, a complete disregard for environmental impact is perilous; unchecked pollution can lead to public health crises, resource depletion, and natural disasters, ultimately hindering the very economic progress it sought to accelerate. The catastrophic air quality in many Indian cities, for example, directly impacts worker productivity and healthcare costs, demonstrating the insidious feedback loop between environmental degradation and economic decline.\n\nConversely, the claim decidedly does not hold true when considering the long-term viability of any economy. Developed nations, having largely achieved economic stability, have a greater responsibility and capacity to invest in green technologies and enact stringent environmental regulations. Germany’s Energiewende, or energy transition, exemplifies a deliberate governmental choice to prioritize renewable energy sources and reduce reliance on fossil fuels, despite initial economic costs. While this transition has involved significant investment and some challenges for traditional industries, it has simultaneously spurred innovation, created new industries, and positioned Germany as a leader in sustainable technology. This demonstrates that environmental protection, when strategically implemented, can be a powerful engine for economic growth, fostering technological advancement and enhancing a nation's competitive edge in the global market.\n\nThe most compelling argument against prioritizing economic growth above all else is that a healthy environment provides the foundational resources upon which all economic activity depends. Clean water, fertile soil, breathable air, and stable climates are not externalities; they are indispensable natural capital. The overfishing of oceans, deforestation of rainforests, and depletion of freshwater reserves worldwide illustrate how short-sighted economic gains can decimate essential resources, leading to irreversible ecological damage and ultimately economic collapse. The collapse of the cod fishery in Newfoundland, Canada, due to decades of overfishing driven by economic incentives, serves as a stark reminder of how prioritizing immediate profit can lead to the destruction of an entire industry and ecosystem.\n\nIn conclusion, the notion that governments must choose between economic growth and environmental protection is a dangerous oversimplification. While there may be temporary trade-offs, a truly sustainable future demands an integrated approach where economic policies are designed with ecological limits in mind, and environmental protection is viewed as an investment rather than a cost. Governments should strive for a paradigm of sustainable development, recognizing that a thriving economy is inextricably linked to a healthy planet. Only through such a balanced and forward-thinking strategy can societies ensure enduring prosperity for current and future generations."
+    }
+  ]
+}

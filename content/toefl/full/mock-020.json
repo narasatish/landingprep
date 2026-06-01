@@ -1,0 +1,30 @@
+{
+  "id": "toefl-full-020",
+  "exam": "toefl",
+  "type": "full",
+  "title": "TOEFL iBT Full Mock Test 20",
+  "durationSeconds": 6960,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "reading",
+      "testId": "toefl-reading-020",
+      "file": "toefl/reading/test-020.json"
+    },
+    {
+      "section": "listening",
+      "testId": "toefl-listening-020",
+      "file": "toefl/listening/test-020.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "toefl-speaking-020",
+      "file": "toefl/speaking/test-020.json"
+    },
+    {
+      "section": "writing",
+      "testId": "toefl-writing-020",
+      "file": "toefl/writing/test-020.json"
+    }
+  ]
+}

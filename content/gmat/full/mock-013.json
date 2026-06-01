@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-013",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 13",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-013",
+      "file": "gmat/quant/test-013.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-013",
+      "file": "gmat/verbal/test-013.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-013",
+      "file": "gmat/data-insights/test-013.json"
+    }
+  ]
+}

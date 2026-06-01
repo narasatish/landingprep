@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-019",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 19 — Apology Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-019-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "apology",
+      "letterSituation": "You borrowed a significant sum of money from a good friend three months ago to cover an unexpected emergency, promising to repay it within four weeks. Due to ongoing financial difficulties you have been unable to repay it and have been avoiding contact with your friend out of embarrassment.",
+      "prompt": "You borrowed a significant sum of money from a good friend three months ago to cover an unexpected emergency, promising to repay it within four weeks. Due to ongoing financial difficulties you have been unable to repay it and have been avoiding contact with your friend out of embarrassment.\n\nWrite a letter in response to this situation. In your letter:\n• apologise sincerely for not repaying the money as agreed and for avoiding contact\n• explain the financial difficulties that have prevented you from repaying on time\n• propose a clear and realistic repayment plan that you can commit to\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "apology"
+    },
+    {
+      "id": "ielts-writing-gt-019-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Some people believe that borrowing money from friends or family members is always a bad idea because it can seriously damage relationships. Do you agree or disagree? Use specific reasons and examples to support your view.",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "apology"
+    }
+  ]
+}

@@ -1,0 +1,732 @@
+{
+  "id": "pte-speaking-writing-050",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 50",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-050-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Local Initiatives Boost Small Businesses”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "small business support",
+      "modelAnswer": "Government and community programmes are crucial for fostering a supportive ecosystem for small businesses. These initiatives often provide access to capital, mentorship, and training, which are vital for new ventures. Furthermore, they can help established small businesses adapt to changing market conditions and technological advancements, ensuring their long-term viability and contribution to local economies. Such support mechanisms are essential for job creation and economic diversification.",
+      "readText": "Government and community programmes are crucial for fostering a supportive ecosystem for small businesses. These initiatives often provide access to capital, mentorship, and training, which are vital for new ventures. Furthermore, they can help established small businesses adapt to changing market conditions and technological advancements, ensuring their long-term viability and contribution to local economies. Such support mechanisms are essential for job creation and economic diversification."
+    },
+    {
+      "id": "pte-speaking-writing-050-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Small Business Grants”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Many small businesses rely on local grants for their initial startup capital.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "small business support",
+      "modelAnswer": "Many small businesses rely on local grants for their initial startup capital.",
+      "audioScript": "Many small businesses rely on local grants for their initial startup capital."
+    },
+    {
+      "id": "pte-speaking-writing-050-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Small Business Support Program Participation (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "small business support",
+      "modelAnswer": "This bar chart illustrates small business support program participation in 2022. The highest participation was in Networking Events, attracting 5,100 businesses, indicating their popularity. Financial Grants also saw significant engagement with 4,500 participants. In contrast, Marketing Assistance had the lowest participation, with only 1,800 businesses. Mentorship Programs and Training Workshops had moderate engagement at 2,800 and 3,200 respectively. Overall, networking and financial support appear to be the most sought-after forms of assistance for small businesses, significantly outperforming specialized areas like marketing.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Small Business Support Program Participation (2022)",
+        "yLabel": "Number of Businesses",
+        "xAxis": [
+          "Mentorship Programs",
+          "Financial Grants",
+          "Training Workshops",
+          "Marketing Assistance",
+          "Networking Events"
+        ],
+        "series": [
+          {
+            "label": "Participants",
+            "values": [
+              2800,
+              4500,
+              3200,
+              1800,
+              5100
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-050-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Government and Community Support”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "small business support",
+      "modelAnswer": "The lecture focused on the vital support systems provided by governments and communities for small businesses. It explained how these entities offer crucial resources like funding, business development workshops, and networking. This assistance helps entrepreneurs overcome challenges in starting and growing their ventures, thereby strengthening the local economy and fostering innovation. The speaker underlined the importance of collaboration for sustainable growth.",
+      "audioScript": "The lecture discussed the critical role of both governmental bodies and community organisations in nurturing small businesses. It highlighted how these entities provide essential resources such as funding, business development workshops, and networking opportunities. These support systems are instrumental in helping entrepreneurs navigate the complexities of launching and scaling a business, ultimately contributing to local economic resilience and innovation. The speaker emphasized that a collaborative approach between public and private sectors is key to sustained growth.",
+      "keyPoints": [
+        "Government and community support for small businesses",
+        "Provision of funding, workshops, networking",
+        "Helps entrepreneurs launch and scale",
+        "Contributes to economic resilience and innovation"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-050-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Funding Source”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Loan",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "small business support",
+      "modelAnswer": "Loan",
+      "audioScript": "What type of financial assistance might a small business seek from a bank?"
+    },
+    {
+      "id": "pte-speaking-writing-050-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “The Economic Impact of Small Business”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "small business support",
+      "wordTarget": 75,
+      "modelAnswer": "Small businesses are vital for local economies, driving innovation and job creation, but they require robust government policies and community support to overcome challenges like limited capital and competition, ensuring their continued contribution to prosperity.",
+      "readText": "Small businesses are often considered the backbone of local economies, driving innovation, creating jobs, and fostering community development. They offer unique products and services that cater to specific local needs, differentiating them from larger corporations. However, they frequently face significant challenges, including limited access to capital, intense competition, and regulatory burdens. Effective government policies and community-led initiatives are therefore crucial in providing the necessary support structure, enabling these businesses to thrive and contribute significantly to economic prosperity and social well-being."
+    },
+    {
+      "id": "pte-speaking-writing-050-q07",
+      "questionType": "write_essay",
+      "prompt": "Advertising aimed at children should be strictly controlled or even banned. To what extent do you agree or disagree?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "small business support",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Global Food Production Economics”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q08",
+      "modelAnswer": "The economics of global food production are increasingly complex, influenced by factors such as climate change, geopolitical stability, and technological advancements. Ensuring food security for a growing world population necessitates sustainable farming practices and efficient supply chains. Price volatility in agricultural commodities can have significant impacts on both producers and consumers, particularly in developing nations. Addressing these challenges requires international cooperation and innovative policy solutions.",
+      "readText": "The economics of global food production are increasingly complex, influenced by factors such as climate change, geopolitical stability, and technological advancements. Ensuring food security for a growing world population necessitates sustainable farming practices and efficient supply chains. Price volatility in agricultural commodities can have significant impacts on both producers and consumers, particularly in developing nations. Addressing these challenges requires international cooperation and innovative policy solutions."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Space Colonisation Challenges”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q09",
+      "modelAnswer": "Space exploration and colonisation present immense technical and ethical challenges. Establishing self-sustaining habitats on other celestial bodies requires breakthroughs in life support systems, resource extraction, and radiation shielding. Furthermore, the psychological impact of long-duration space travel and isolation on human crews must be thoroughly understood and mitigated. These ambitious endeavors push the boundaries of human ingenuity and international collaboration, redefining our place in the cosmos.",
+      "readText": "Space exploration and colonisation present immense technical and ethical challenges. Establishing self-sustaining habitats on other celestial bodies requires breakthroughs in life support systems, resource extraction, and radiation shielding. Furthermore, the psychological impact of long-duration space travel and isolation on human crews must be thoroughly understood and mitigated. These ambitious endeavors push the boundaries of human ingenuity and international collaboration, redefining our place in the cosmos."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Psychology of Decision-Making”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q10",
+      "modelAnswer": "The psychology of decision-making reveals how cognitive biases and heuristics often influence our choices, sometimes leading to irrational outcomes. Individuals frequently rely on mental shortcuts, especially under pressure or with incomplete information, rather than engaging in exhaustive rational analysis. Understanding these underlying psychological mechanisms is critical in fields ranging from economics and marketing to public policy, allowing for more effective communication and intervention strategies.",
+      "readText": "The psychology of decision-making reveals how cognitive biases and heuristics often influence our choices, sometimes leading to irrational outcomes. Individuals frequently rely on mental shortcuts, especially under pressure or with incomplete information, rather than engaging in exhaustive rational analysis. Understanding these underlying psychological mechanisms is critical in fields ranging from economics and marketing to public policy, allowing for more effective communication and intervention strategies."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Public Transport Evolution”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q11",
+      "modelAnswer": "The evolution of public transport systems reflects societal changes and technological progress. From horse-drawn carriages to electric trams and high-speed rail, each innovation has aimed to improve efficiency, accessibility, and environmental sustainability. Modern urban planning increasingly prioritizes integrated multi-modal networks that reduce reliance on private vehicles, addressing issues of congestion and pollution. Future developments anticipate autonomous vehicles and personalized on-demand services.",
+      "readText": "The evolution of public transport systems reflects societal changes and technological progress. From horse-drawn carriages to electric trams and high-speed rail, each innovation has aimed to improve efficiency, accessibility, and environmental sustainability. Modern urban planning increasingly prioritizes integrated multi-modal networks that reduce reliance on private vehicles, addressing issues of congestion and pollution. Future developments anticipate autonomous vehicles and personalized on-demand services."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Sustainable Urban Planning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q12",
+      "modelAnswer": "Sustainable urban planning integrates green infrastructure to create resilient and livable cities. This approach involves incorporating elements like permeable pavements, rooftop gardens, and urban forests to manage stormwater, reduce heat island effects, and improve air quality. Beyond environmental benefits, green infrastructure enhances biodiversity and provides recreational spaces, contributing to the well-being of city residents. It represents a holistic strategy for future urban development.",
+      "readText": "Sustainable urban planning integrates green infrastructure to create resilient and livable cities. This approach involves incorporating elements like permeable pavements, rooftop gardens, and urban forests to manage stormwater, reduce heat island effects, and improve air quality. Beyond environmental benefits, green infrastructure enhances biodiversity and provides recreational spaces, contributing to the well-being of city residents. It represents a holistic strategy for future urban development."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Carbon capture and storage technologies are crucial for mitigating climate change impacts.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Carbon Capture Technology”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q13",
+      "modelAnswer": "Carbon capture and storage technologies are crucial for mitigating climate change impacts.",
+      "audioScript": "Carbon capture and storage technologies are crucial for mitigating climate change impacts."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Effective wildlife corridor design is essential for species conservation and genetic exchange.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Corridor Design”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q14",
+      "modelAnswer": "Effective wildlife corridor design is essential for species conservation and genetic exchange.",
+      "audioScript": "Effective wildlife corridor design is essential for species conservation and genetic exchange."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Philosophy of Consciousness”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q15",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and awareness."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology raises significant concerns regarding individual privacy and data security.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q16",
+      "modelAnswer": "Smart city technology raises significant concerns regarding individual privacy and data security.",
+      "audioScript": "Smart city technology raises significant concerns regarding individual privacy and data security."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation often impacts indigenous land rights and traditional ways of living.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation and Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q17",
+      "modelAnswer": "Deforestation often impacts indigenous land rights and traditional ways of living.",
+      "audioScript": "Deforestation often impacts indigenous land rights and traditional ways of living."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The role of social media in modern communication has dramatically altered interactions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q18",
+      "modelAnswer": "The role of social media in modern communication has dramatically altered interactions.",
+      "audioScript": "The role of social media in modern communication has dramatically altered interactions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration presents complex challenges for cultural integration and social cohesion.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Integration”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q19",
+      "modelAnswer": "International migration presents complex challenges for cultural integration and social cohesion.",
+      "audioScript": "International migration presents complex challenges for cultural integration and social cohesion."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation are transforming labor markets and industrial productivity globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Automation Economics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q20",
+      "modelAnswer": "The economics of automation are transforming labor markets and industrial productivity globally.",
+      "audioScript": "The economics of automation are transforming labor markets and industrial productivity globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Renewable energy infrastructure investment is accelerating worldwide to meet climate targets.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q21",
+      "modelAnswer": "Renewable energy infrastructure investment is accelerating worldwide to meet climate targets.",
+      "audioScript": "Renewable energy infrastructure investment is accelerating worldwide to meet climate targets."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q22",
+      "modelAnswer": "The pie chart illustrates global CO2 emissions by sector for 2022. The largest contributor is clearly Energy Production, accounting for a significant 35% of total emissions. Transportation is the second highest at 22%, followed by Industry at 18%. Agriculture contributes 12%, while Residential and Commercial sectors are responsible for 8%. The 'Other' category represents the smallest portion, at just 5%. It's evident that energy generation and mobility are the primary drivers of global CO2 output, together making up over half of all emissions.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy Production",
+            "value": 35
+          },
+          {
+            "label": "Transportation",
+            "value": 22
+          },
+          {
+            "label": "Industry",
+            "value": 18
+          },
+          {
+            "label": "Agriculture",
+            "value": 12
+          },
+          {
+            "label": "Residential & Commercial",
+            "value": 8
+          },
+          {
+            "label": "Other",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Renewable Energy Adoption by Country (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q23",
+      "modelAnswer": "The bar chart illustrates renewable energy adoption across five countries in 2023, measured as a percentage of total energy consumption. Brazil shows the highest adoption rate at 68%, significantly outperforming all other nations. Germany follows with 45%, demonstrating strong commitment. Canada adopted 32%, while Australia is at 25%. Japan has the lowest adoption among these countries, at a mere 18%. This data highlights a wide disparity in renewable energy integration globally, with Brazil leading the transition and Japan lagging behind in this comparison.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Energy Adoption by Country (2023)",
+        "yLabel": "% of Total Energy Consumption",
+        "xAxis": [
+          "Germany",
+          "Canada",
+          "Japan",
+          "Australia",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "Renewable Energy",
+            "values": [
+              45,
+              32,
+              18,
+              25,
+              68
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Temperature Change (1900-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q24",
+      "modelAnswer": "This line graph illustrates global average temperature changes from 1900 to 2020, showing temperature anomalies in degrees Celsius. Initially, temperatures fluctuated, starting at -0.2°C in 1900 and rising slightly to 0.1°C by 1940 before a minor dip. A significant upward trend is evident from 1960 onwards, with the anomaly increasing from 0.0°C to a peak of 1.0°C in 2020. This indicates a clear and accelerating warming trend, with the steepest rise occurring in the latter half of the period, highlighting a substantial increase in global temperatures over 120 years.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Temperature Change (1900-2020)",
+        "yLabel": "Temperature Anomaly (°C)",
+        "xAxis": [
+          "1900",
+          "1920",
+          "1940",
+          "1960",
+          "1980",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Temperature Anomaly",
+            "values": [
+              -0.2,
+              -0.1,
+              0.1,
+              0,
+              0.3,
+              0.6,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Amazon Deforestation by Country (2000-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q25",
+      "modelAnswer": "This bar chart illustrates deforestation in the Amazon basin by country from 2000 to 2020, measured in million hectares. Brazil accounts for the vast majority of deforestation, with a staggering 15.2 million hectares lost. Peru follows significantly behind with 1.8 million hectares, and Colombia with 1.1 million. Bolivia and Ecuador show 0.9 and 0.4 million hectares respectively. The lowest deforestation rates are seen in French Guiana, Suriname, and Guyana, with 0.03, 0.05, and 0.1 million hectares. The data clearly highlights Brazil's dominant contribution to Amazonian deforestation.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Amazon Deforestation by Country (2000-2020)",
+        "yLabel": "Area Deforested (Million Hectares)",
+        "xAxis": [
+          "Brazil",
+          "Peru",
+          "Colombia",
+          "Bolivia",
+          "Ecuador",
+          "Guyana",
+          "Suriname",
+          "French Guiana"
+        ],
+        "series": [
+          {
+            "label": "Deforested Area",
+            "values": [
+              15.2,
+              1.8,
+              1.1,
+              0.9,
+              0.4,
+              0.1,
+              0.05,
+              0.03
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Stages of the Scientific Method\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q26",
+      "modelAnswer": "The image presents a table detailing the six stages of the scientific method. It starts with Observation, where a phenomenon is noticed, leading to a Question. The second stage involves formulating a testable question, which then leads to developing a Hypothesis. The third stage is proposing a testable explanation. This is followed by the Experiment stage, where the hypothesis is tested and data is collected. The fifth stage, Analysis, involves interpreting this data. Finally, the Conclusion stage is where the hypothesis is accepted or rejected, and findings are explained, potentially leading to further research. This structured approach ensures systematic inquiry.",
+      "visual": {
+        "chartType": "table",
+        "title": "Stages of the Scientific Method",
+        "headers": [
+          "Stage",
+          "Key Activity",
+          "Outcome"
+        ],
+        "rows": [
+          [
+            "1. Observation",
+            "Notice a phenomenon or problem",
+            "Question formulated"
+          ],
+          [
+            "2. Question",
+            "Formulate a testable question (Why? How?)",
+            "Hypothesis developed"
+          ],
+          [
+            "3. Hypothesis",
+            "Propose a testable explanation",
+            "Experiment designed"
+          ],
+          [
+            "4. Experiment",
+            "Test the hypothesis through controlled procedures",
+            "Data collected"
+          ],
+          [
+            "5. Analysis",
+            "Interpret data, look for patterns",
+            "Conclusion drawn"
+          ],
+          [
+            "6. Conclusion",
+            "Accept or reject hypothesis, explain findings",
+            "Report/Further research"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q27",
+      "modelAnswer": "The lecture discussed the significant role of non-verbal communication, explaining that body language, facial expressions, and gestures are often more impactful than words. It stressed how cultural differences affect interpreting these cues, potentially causing misunderstandings. The speaker also mentioned that active listening requires observing these subtle signals to fully understand the message. Overall, mastering non-verbal communication is crucial for successful interpersonal relationships.",
+      "audioScript": "The lecture elaborated on the profound impact of non-verbal communication, emphasizing that body language, facial expressions, and gestures often convey more meaning than spoken words. It highlighted how cultural contexts significantly influence the interpretation of these cues, leading to potential misunderstandings in cross-cultural interactions. The speaker also discussed the importance of active listening, which involves not just hearing words, but also observing these subtle non-verbal signals to grasp the full message. Mastering non-verbal communication is vital for effective interpersonal relations.",
+      "keyPoints": [
+        "Non-verbal communication's profound impact",
+        "Body language, facial expressions, gestures convey meaning",
+        "Cultural context influences interpretation",
+        "Active listening involves observing non-verbal signals"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Digital Communication Evolution”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q28",
+      "modelAnswer": "The lecture focused on the swift evolution of digital communication, from early emails to current social media. It explained how these technologies have transformed interactions, allowing instant global connections while posing challenges such as information overload and privacy issues. The speaker suggested that despite the broad reach of digital tools, the quality of human connection might suffer. Therefore, adapting requires new literacy and critical thinking skills.",
+      "audioScript": "This lecture explored the rapid evolution of digital communication, from early email systems to today's pervasive social media platforms. It detailed how these technologies have fundamentally altered how individuals and organizations interact, enabling instant global connections but also introducing new challenges like information overload and privacy concerns. The speaker noted that while digital tools offer unprecedented reach, the quality and depth of human connection can sometimes be compromised. Adapting to these changes requires developing new literacies and critical thinking skills.",
+      "keyPoints": [
+        "Rapid evolution of digital communication",
+        "Impact on individual and organizational interaction",
+        "Benefits: instant global connections",
+        "Challenges: information overload, privacy concerns, depth of connection"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Speech",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q29",
+      "modelAnswer": "Speech",
+      "audioScript": "What is the primary method of transmitting messages through spoken words?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Feedback",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Feedback Mechanism”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q30",
+      "modelAnswer": "Feedback",
+      "audioScript": "What is the response from the receiver to the sender in a communication process?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Distraction",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barrier”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q31",
+      "modelAnswer": "Distraction",
+      "audioScript": "What is a psychological barrier that prevents effective listening?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Formal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Formal Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-050-q32",
+      "modelAnswer": "Formal",
+      "audioScript": "What term describes official communication flowing through established organizational channels?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Diet, Exercise, and Chronic Disease”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-050-q33",
+      "modelAnswer": "A balanced diet and regular exercise are crucial for preventing chronic diseases like type 2 diabetes and heart disease, as unhealthy lifestyles significantly increase risk, necessitating public health efforts to promote proactive wellness.",
+      "readText": "The intricate relationship between diet, exercise, and the prevention of chronic diseases such as type 2 diabetes, heart disease, and certain cancers is well-documented. A balanced diet rich in fruits, vegetables, and whole grains, combined with regular physical activity, significantly reduces the risk factors associated with these conditions. Conversely, sedentary lifestyles and diets high in processed foods and saturated fats contribute directly to their prevalence. Public health initiatives increasingly focus on promoting healthier habits to mitigate the societal burden of these preventable illnesses, emphasizing a proactive approach to wellness rather than reactive treatment."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Digital communication has revolutionized how we interact, offering both unprecedented connectivity and new challenges. Discuss the main advantages and disadvantages of digital communication in modern society. Provide examples to support your viewpoint.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-050-q34",
+      "modelAnswer": "Digital communication has undeniably transformed the fabric of modern society, fundamentally reshaping how individuals and organizations connect. One of its primary advantages is the unparalleled speed and reach it offers. Information can be transmitted globally in an instant, facilitating real-time collaboration across continents and enabling individuals to maintain relationships over vast distances. Platforms like email, instant messaging, and video conferencing have become indispensable tools for both personal and professional interactions, enhancing efficiency and productivity. Furthermore, digital communication democratizes access to information and fosters diverse communities, allowing people with shared interests to connect regardless of geographical barriers.\n\nHowever, these benefits are accompanied by significant disadvantages. The constant connectivity can lead to information overload, mental fatigue, and a blurring of the lines between work and personal life, contributing to increased stress and burnout. Privacy concerns are also paramount, as personal data shared online is vulnerable to breaches and misuse. Moreover, the impersonal nature of digital interactions can sometimes erode the depth and nuance found in face-to-face communication, potentially leading to misunderstandings and a sense of isolation despite being constantly 'connected.' The spread of misinformation and cyberbullying are additional societal challenges exacerbated by the widespread adoption of digital communication. Therefore, while offering immense advantages, navigating the digital landscape requires critical awareness and a balanced approach to mitigate its inherent drawbacks."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "In the modern workplace, employers often monitor employees' online activities and communications to ensure productivity and security. To what extent do you agree or disagree with this practice, considering both employee privacy and legitimate business interests?",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-050-q35",
+      "modelAnswer": "The practice of employers monitoring employees' online activities and communications presents a complex ethical dilemma, balancing an individual's right to privacy against an organization's legitimate interests in productivity and security. While I acknowledge the valid concerns of businesses, I largely disagree with extensive monitoring, believing it often infringes unduly on employee privacy and can foster a detrimental work environment.\n\nFrom a business perspective, monitoring can be justified on several grounds. Employers have a vested interest in protecting proprietary information, preventing data breaches, and ensuring compliance with legal and regulatory standards. Monitoring can also identify misuse of company resources, such as excessive personal browsing during work hours, which impacts productivity. In industries dealing with sensitive data, such as finance or healthcare, a degree of oversight is arguably necessary to mitigate significant risks and maintain public trust. This perspective emphasizes the employer's right to manage their assets and maintain operational integrity.\n\nHowever, the arguments against pervasive monitoring are compelling. Employees have a reasonable expectation of privacy, even within the workplace, especially concerning personal communications. Excessive surveillance can create a climate of distrust, leading to decreased morale, increased stress, and a feeling of being constantly scrutinized. This can stifle creativity and innovation, as employees may become hesitant to express themselves or take initiative for fear of misinterpretation. Furthermore, blanket monitoring can be an inefficient and overly broad approach, often failing to distinguish between genuine threats and innocent personal use. It also raises questions about data retention and who has access to potentially sensitive personal information.\n\nIn conclusion, while I recognize the need for businesses to protect their interests, I believe that extensive employee monitoring is generally an overreach. A more balanced approach would involve clear, transparent policies outlining acceptable use of company resources, focusing on outcomes rather than constant surveillance, and implementing targeted monitoring only when specific, justifiable security concerns arise. Prioritizing trust and respect for privacy ultimately fosters a more positive and productive workplace culture."
+    }
+  ]
+}

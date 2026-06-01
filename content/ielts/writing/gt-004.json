@@ -1,0 +1,37 @@
+{
+  "id": "ielts-writing-gt-004",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 4 — Apology Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-004-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "apology",
+      "letterSituation": "You were supposed to house-sit for a friend while they were on holiday for two weeks. However, a family emergency meant you had to leave after three days, and you arranged for another friend to take over without asking the first friend's permission. One of the plants died during this time.",
+      "prompt": "You were supposed to house-sit for a friend while they were on holiday for two weeks. However, a family emergency meant you had to leave after three days, and you arranged for another friend to take over without asking the first friend's permission. One of the plants died during this time.\n\nWrite a letter to your friend. In your letter:\n• apologise for the situation and explain what happened\n• explain what arrangements you made and why\n• offer to make it up to your friend\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with a sincere, direct apology, explain the emergency without making excuses, take responsibility for acting without permission, acknowledge the impact on the friend, and make a genuine and specific offer of reparation.",
+      "rubric": ["task achievement", "coherence and cohesion", "lexical resource", "grammatical range and accuracy"],
+      "difficulty": "medium",
+      "topic": "personal relationships"
+    },
+    {
+      "id": "ielts-writing-gt-004-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "The family unit has changed significantly in recent decades. Some argue that these changes have had a negative impact on society, while others believe modern families are better adapted to contemporary life. Discuss both views and give your own opinion.",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should explore both traditional family structures and their perceived social benefits and modern arrangements and their advantages, presenting a balanced yet opinionated conclusion supported by examples.",
+      "rubric": ["task response", "coherence and cohesion", "lexical resource", "grammatical range and accuracy"],
+      "difficulty": "medium",
+      "topic": "society and family"
+    }
+  ]
+}

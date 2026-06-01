@@ -1,0 +1,86 @@
+{
+  "id": "ielts-writing-015",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 15",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-015-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The diagram illustrates the water cycle, showing how water moves between the oceans, atmosphere, and land. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "water scarcity",
+      "modelAnswer": "The diagram illustrates the continuous movement of water across the Earth's major reservoirs: oceans, atmosphere, and land. It details both the volume of water stored in each component and the annual fluxes between them.\n\nOverall, the oceans represent by far the largest water store, while the atmosphere holds the least. The most significant water movements occur between the oceans and the atmosphere, with evaporation from the oceans forming the primary input to the atmosphere, which then returns water to both land and oceans through precipitation.\n\nSpecifically, the oceans store an immense 1,370 million km³ of water, experiencing an annual evaporation of 505 thousand km³ and receiving 458 thousand km³ in precipitation. In contrast, the atmosphere contains a mere 0.013 million km³, with its total annual precipitation and evaporation both recorded at 505 thousand km³. On land, ice and snow constitute the largest store at 24 million km³, followed by groundwater at 15 million km³. Lakes and rivers hold 0.125 million km³, and soil moisture contains 0.065 million km³. The land-based fluxes are considerably smaller, with 2 thousand km³ annually moving from ice/snow (melting/runoff) and groundwater (runoff to oceans), and 1 thousand km³ each for evaporation and precipitation in lakes/rivers.",
+      "visual": {
+        "chartType": "table",
+        "title": "Water Cycle - Estimated Global Water Stores and Annual Fluxes",
+        "headers": [
+          "Component",
+          "Store (10^6 km^3)",
+          "Annual Flux (10^3 km^3/year)"
+        ],
+        "rows": [
+          [
+            "Oceans",
+            "1370",
+            "505 (Evaporation) / 458 (Precipitation)"
+          ],
+          [
+            "Atmosphere",
+            "0.013",
+            "505 (Precipitation) / 505 (Evaporation)"
+          ],
+          [
+            "Land (Ice/Snow)",
+            "24",
+            "2 (Melting/Runoff)"
+          ],
+          [
+            "Land (Groundwater)",
+            "15",
+            "2 (Runoff to Oceans)"
+          ],
+          [
+            "Land (Lakes/Rivers)",
+            "0.125",
+            "1 (Evaporation) / 1 (Precipitation)"
+          ],
+          [
+            "Land (Soil Moisture)",
+            "0.065",
+            "0.5 (Evaporation)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-015-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Fresh water is becoming an increasingly scarce resource in many parts of the world. What are the main causes of this problem, and what steps can individuals and governments take to conserve water?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "water scarcity",
+      "modelAnswer": "The global availability of potable water is diminishing at an alarming rate, posing a significant challenge for numerous regions worldwide. This essay will explore the primary factors contributing to this scarcity and propose actionable measures that both individuals and governments can implement to safeguard this vital resource.\n\nA major driver of freshwater depletion is the burgeoning global population coupled with unsustainable agricultural practices. As the number of people on Earth continues to rise, so does the demand for food, leading to an intensification of farming that often relies heavily on irrigation. For instance, in many arid regions, extensive cultivation of water-intensive crops like rice and cotton drains underground aquifers far faster than natural replenishment rates, exemplified by the rapid decline of the Aral Sea due to diversion for irrigation. Furthermore, industrial pollution and inadequate wastewater treatment contaminate existing freshwater sources, rendering them unusable.\n\nAddressing this multifaceted crisis requires a concerted effort from all stakeholders. Individuals can play a crucial role by adopting water-saving habits in their daily lives, such as installing low-flow showerheads and toilets, fixing leaks promptly, and practicing xeriscaping in gardens. Governments, on the other hand, must implement comprehensive water management policies, including stricter regulations on industrial discharge, investment in advanced wastewater recycling technologies, and the promotion of drought-resistant crops. For example, Singapore's \"NEWater\" initiative, which treats and purifies used water to a high standard, demonstrates a successful governmental strategy for enhancing water security.\n\nIn conclusion, the escalating scarcity of freshwater is predominantly a consequence of population growth, inefficient agriculture, and pollution. Overcoming this challenge necessitates a dual approach where individuals embrace conservation habits and governments enact robust policies and invest in sustainable water management solutions."
+    }
+  ],
+  "variant": "academic"
+}

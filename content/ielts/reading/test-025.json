@@ -1,0 +1,602 @@
+{
+  "id": "ielts-reading-025",
+  "exam": "ielts",
+  "section": "reading",
+  "type": "section",
+  "title": "IELTS Academic Reading Practice Test 25",
+  "variant": "academic",
+  "durationSeconds": 3600,
+  "questionCount": 40,
+  "instructions": "Three passages totalling approximately 2,200–2,800 words. Answer all 40 questions. Transfer answers within the 60-minute time limit.",
+  "passages": [
+    {
+      "title": "Advanced Renewable Energy Storage Technologies",
+      "text": "The transition to renewable energy sources — solar, wind, and tidal — has accelerated global interest in energy storage technologies that can buffer the intermittency of these sources. A solar panel generates power only during daylight; wind turbines only when wind exceeds minimum speed thresholds. This variable output presents a fundamental challenge for grid stability and reliability. Battery technologies, thermal storage, and mechanical storage systems have all emerged as potential solutions.\n\nLithium-ion batteries, which power most consumer electronics and an increasing share of electric vehicles, have seen their costs decline by approximately 90% over the past decade. However, lithium-ion storage at grid scale faces challenges including limited lifespan (10–15 years), safety concerns at high temperatures, and the environmental cost of mining lithium, cobalt, and nickel. Alternatives such as flow batteries, which store energy in liquid electrolytes and can be scaled independently for power and capacity, have gained attention in research and pilot deployment.\n\nThermal energy storage — storing heat in molten salt or phase-change materials — can retain energy for extended periods at modest temperature loss. A concentrating solar power plant in Chile stores heat in molten salt at 565°C, allowing the facility to generate electricity at night. Compressed air energy storage and pumped hydroelectric storage, which store potential energy by compressing air or pumping water uphill, account for the vast majority of global energy storage capacity today, though their geographic constraints limit expansion.\n\nLong-duration energy storage — holding energy for weeks or months — remains largely unsolved. Hydrogen production via electrolysis powered by renewable electricity offers promise, though current electrolysers achieve only 60–70% efficiency. Seasonal thermal storage in insulated caverns or aquifers could potentially store summer solar energy for winter use, though pilot projects remain limited. As renewable energy penetration rises above 50% of electricity supply, long-duration storage becomes increasingly critical.",
+      "id": "ielts-reading-025-p1"
+    },
+    {
+      "title": "Microplastics and Environmental Health",
+      "text": "Microplastics — plastic particles smaller than 5 millimetres in diameter — have become ubiquitous in the environment. They originate from the breakdown of larger plastic waste, the shedding of synthetic textiles during laundering, the abrasion of car tyres, degradation of plastic microbeads in personal care products, and the fragmentation of plastic fishing gear. Microplastics have been detected in drinking water, rainwater, sea ice, ocean sediments, and the tissues of wild animals including fish, birds, and marine mammals.\n\nHuman ingestion of microplastics occurs through multiple pathways. Studies have found microplastics in human blood, lung tissue, and placental tissue, confirming that particles smaller than 10 micrometres can traverse the intestinal barrier and enter systemic circulation. A 2023 study in Environmental Science and Technology estimated that adults consuming shellfish, drinking water, and inhaling air may accumulate approximately 39,000 microplastic particles per year — rising to 52,000 for people who also drink from plastic bottles.\n\nThe toxicological effects of microplastics remain incompletely understood, but emerging research raises concerns. Microplastics can carry chemical additives including phthalates, bisphenol A, and flame retardants that leach from the plastic matrix. Some microplastics, particularly smaller nanoplastics, can cross the blood-brain barrier. Animal studies demonstrate that microplastic exposure can cause inflammation, reduced feeding behaviour, and impaired immune function in fish and crustaceans.\n\nMitigation strategies focus on reducing plastic production, improving waste management, preventing synthetic textile shedding through filter technologies in washing machines, and eliminating microbeads from consumer products. Several countries have banned single-use plastics and microbeads, though enforcement remains inconsistent. Remediation of existing microplastic pollution — removing accumulated particles from oceans and ecosystems — remains technologically and economically infeasible at current scales.",
+      "id": "ielts-reading-025-p2"
+    },
+    {
+      "title": "CRISPR Gene Editing and Human Germline Modification",
+      "text": "CRISPR-Cas9 has revolutionised molecular biology since its adaptation for gene editing around 2012. The system functions as a precise molecular scissors, guided to specific DNA sequences by programmable RNA, enabling the editing of genetic material with unprecedented ease and cost-effectiveness. CRISPR has been deployed to develop disease-resistant crops, to eliminate disease-causing mutations in somatic cells, and to advance fundamental biological research.\n\nThe ethical implications of germline editing — modifications to sperm, egg, or embryonic cells that propagate to all descendants — remain hotly contested. The 2018 announcement by He Jiankui that he had created the first gene-edited human babies, introducing a mutation intended to confer HIV resistance, sparked global outrage. He's work was conducted without proper ethical review, involved unproven technology, and employed an edit whose efficacy and safety in humans remained uncertain. The scientific community and international organisations have called for a global moratorium on human germline editing outside strictly limited clinical contexts.\n\nSomatic cell editing — modifying only non-reproductive cells — is less controversial. Clinical trials have demonstrated success in using CRISPR to treat sickle cell disease and beta-thalassemia by editing bone marrow stem cells. However, off-target editing (cuts at unintended locations in the genome) remains a concern, as does the difficulty of delivering CRISPR machinery to targeted tissues. Intramuscular injection can target muscles, but reaching the brain or other internal organs remains technically challenging.\n\nThe governance of CRISPR technology has become a priority for scientific organisations and governments. The consensus framework emphasises somatic cell applications for serious disease, robust ethical review before clinical deployment, transparency in research, and international coordination to prevent germline editing outside closely regulated research contexts. As the technology continues to advance, balancing therapeutic potential against safety and equity concerns will remain a central challenge.",
+      "id": "ielts-reading-025-p3"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-reading-025-q001",
+      "questionType": "true_false_not_given",
+      "question": "Solar panels and wind turbines produce power continuously.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Solar only during daylight; wind requires sufficient speed.",
+      "questionNumber": 1,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q002",
+      "questionType": "true_false_not_given",
+      "question": "Lithium-ion battery costs have declined by approximately 90% over a decade.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 2,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q003",
+      "questionType": "multiple_choice",
+      "question": "What is a major limitation of lithium-ion grid storage?",
+      "options": [
+        "Unlimited lifespan",
+        "Environmental mining costs",
+        "Too efficient",
+        "No safety concerns"
+      ],
+      "correctAnswer": "Environmental mining costs",
+      "explanation": "Multiple limitations listed; this is one.",
+      "questionNumber": 3,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q004",
+      "questionType": "true_false_not_given",
+      "question": "Lithium-ion battery lifespan is 10–15 years.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 4,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q005",
+      "questionType": "multiple_choice",
+      "question": "What advantage do flow batteries offer?",
+      "options": [
+        "Longer lifespan",
+        "Independent scaling for power and capacity",
+        "Higher cost efficiency",
+        "Room temperature operation"
+      ],
+      "correctAnswer": "Independent scaling for power and capacity",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 5,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q006",
+      "questionType": "short_answer",
+      "question": "What materials are used in thermal energy storage mentioned in the passage?",
+      "correctAnswer": "Molten salt or phase-change materials",
+      "questionNumber": 6,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q007",
+      "questionType": "true_false_not_given",
+      "question": "Thermal storage can retain energy for extended periods at modest temperature loss.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 7,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q008",
+      "questionType": "true_false_not_given",
+      "question": "Chile has a facility using molten salt at 565°C for thermal storage.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 8,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q009",
+      "questionType": "multiple_choice",
+      "question": "Which storage methods account for majority of global energy storage capacity?",
+      "options": [
+        "Flow batteries",
+        "Compressed air and pumped hydro",
+        "Thermal storage",
+        "Hydrogen storage"
+      ],
+      "correctAnswer": "Compressed air and pumped hydro",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 9,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q010",
+      "questionType": "true_false_not_given",
+      "question": "Long-duration energy storage is fully solved for grid scale.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Remains largely unsolved.",
+      "questionNumber": 10,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q011",
+      "questionType": "short_answer",
+      "question": "What is the efficiency of current electrolysers for hydrogen production?",
+      "correctAnswer": "60–70%",
+      "questionNumber": 11,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q012",
+      "questionType": "true_false_not_given",
+      "question": "Renewable energy penetration above 50% increases long-duration storage need.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 12,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q013",
+      "questionType": "multiple_choice",
+      "question": "What could store summer solar energy for winter use?",
+      "options": [
+        "Compressed air",
+        "Thermal batteries",
+        "Seasonal thermal storage in caverns",
+        "Hydrogen",
+        "Lithium-ion"
+      ],
+      "correctAnswer": "Seasonal thermal storage in caverns",
+      "explanation": "Explicitly mentioned.",
+      "questionNumber": 13,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-025-p1"
+    },
+    {
+      "id": "ielts-reading-025-q014",
+      "questionType": "true_false_not_given",
+      "question": "Microplastics are plastic particles smaller than 5 millimetres.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 14,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q015",
+      "questionType": "multiple_choice",
+      "question": "Which is NOT a source of microplastics mentioned?",
+      "options": [
+        "Textile shedding",
+        "Tyre abrasion",
+        "Solar panel degradation",
+        "Personal care microbeads"
+      ],
+      "correctAnswer": "Solar panel degradation",
+      "explanation": "Not mentioned.",
+      "questionNumber": 15,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q016",
+      "questionType": "true_false_not_given",
+      "question": "Microplastics have been detected in human blood.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 16,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q017",
+      "questionType": "multiple_choice",
+      "question": "According to a 2023 study, how many microplastic particles do adults accumulate annually?",
+      "options": [
+        "5,000",
+        "20,000",
+        "39,000 (shellfish, water, air)",
+        "100,000"
+      ],
+      "correctAnswer": "39,000 (shellfish, water, air)",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 17,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q018",
+      "questionType": "short_answer",
+      "question": "Name one chemical additive that microplastics can carry.",
+      "correctAnswer": "Phthalates (or bisphenol A or flame retardants)",
+      "questionNumber": 18,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q019",
+      "questionType": "true_false_not_given",
+      "question": "Some microplastics can cross the blood-brain barrier.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Nanoplastics explicitly mentioned.",
+      "questionNumber": 19,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q020",
+      "questionType": "multiple_choice",
+      "question": "What is an observed effect of microplastics on aquatic animals?",
+      "options": [
+        "Growth enhancement",
+        "Inflammation and reduced feeding",
+        "Increased reproduction",
+        "Improved immune function"
+      ],
+      "correctAnswer": "Inflammation and reduced feeding",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 20,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q021",
+      "questionType": "short_answer",
+      "question": "What has become ubiquitous in the environment?",
+      "correctAnswer": "Microplastics",
+      "questionNumber": 21,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q022",
+      "questionType": "true_false_not_given",
+      "question": "Microbeads are banned in all countries globally.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Several countries have banned them; enforcement remains inconsistent.",
+      "questionNumber": 22,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q023",
+      "questionType": "true_false_not_given",
+      "question": "Remediation of existing ocean microplastics is technologically feasible at scale.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Remains technologically and economically infeasible.",
+      "questionNumber": 23,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q024",
+      "questionType": "true_false_not_given",
+      "question": "CRISPR-Cas9 was adapted for gene editing around 2012.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 24,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q025",
+      "questionType": "multiple_choice",
+      "question": "How does CRISPR-Cas9 edit DNA?",
+      "options": [
+        "Adds new genes",
+        "Functions as molecular scissors at specific sequences",
+        "Repairs damaged DNA directly",
+        "Replaces entire chromosomes"
+      ],
+      "correctAnswer": "Functions as molecular scissors at specific sequences",
+      "explanation": "Explicitly described.",
+      "questionNumber": 25,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q026",
+      "questionType": "true_false_not_given",
+      "question": "He Jiankui's 2018 gene editing announcement was widely praised.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Sparked global outrage.",
+      "questionNumber": 26,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-025-p2"
+    },
+    {
+      "id": "ielts-reading-025-q027",
+      "questionType": "multiple_choice",
+      "question": "What was the stated intention of He Jiankui's genetic modification?",
+      "options": [
+        "Treat cancer",
+        "Confer HIV resistance",
+        "Increase intelligence",
+        "Enhance athletic ability"
+      ],
+      "correctAnswer": "Confer HIV resistance",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 27,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q028",
+      "questionType": "short_answer",
+      "question": "What call has the scientific community made regarding human germline editing?",
+      "correctAnswer": "Global moratorium (outside limited clinical contexts)",
+      "questionNumber": 28,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q029",
+      "questionType": "true_false_not_given",
+      "question": "He's work involved proper ethical review.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Conducted without proper ethical review.",
+      "questionNumber": 29,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q030",
+      "questionType": "multiple_choice",
+      "question": "What is a concern with off-target CRISPR editing?",
+      "options": [
+        "Efficiency loss",
+        "Cuts at unintended genome locations",
+        "Cost increase",
+        "Cellular rejection"
+      ],
+      "correctAnswer": "Cuts at unintended genome locations",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 30,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q031",
+      "questionType": "true_false_not_given",
+      "question": "CRISPR has been successfully used to treat sickle cell disease.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Clinical trials demonstrated success.",
+      "questionNumber": 31,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q032",
+      "questionType": "multiple_choice",
+      "question": "Which organ is most challenging to deliver CRISPR machinery to?",
+      "options": [
+        "Liver",
+        "Muscle",
+        "Brain",
+        "Kidney"
+      ],
+      "correctAnswer": "Brain",
+      "explanation": "Explicitly stated as difficult.",
+      "questionNumber": 32,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q033",
+      "questionType": "true_false_not_given",
+      "question": "Somatic cell editing is less controversial than germline editing.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 33,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q034",
+      "questionType": "short_answer",
+      "question": "Name one disease treated with CRISPR in clinical trials.",
+      "correctAnswer": "Sickle cell disease (or beta-thalassemia)",
+      "questionNumber": 34,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q035",
+      "questionType": "true_false_not_given",
+      "question": "Intramuscular injection can target muscles effectively.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 35,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q036",
+      "questionType": "multiple_choice",
+      "question": "What does the consensus framework emphasise for CRISPR governance?",
+      "options": [
+        "Unlimited development",
+        "Somatic cell applications for serious disease",
+        "Reduced ethical review",
+        "National control only"
+      ],
+      "correctAnswer": "Somatic cell applications for serious disease",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 36,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q037",
+      "questionType": "short_answer",
+      "question": "What is the central challenge balancing CRISPR's potential?",
+      "correctAnswer": "Therapeutic potential against safety and equity concerns",
+      "questionNumber": 37,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q038",
+      "questionType": "true_false_not_given",
+      "question": "He Jiankui's work involved an edit whose safety in humans remained unproven.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 38,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q039",
+      "questionType": "true_false_not_given",
+      "question": "CRISPR can be delivered to all tissues equally easily.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Some tissues (like brain) remain technically challenging.",
+      "questionNumber": 39,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    },
+    {
+      "id": "ielts-reading-025-q040",
+      "questionType": "multiple_choice",
+      "question": "What does CRISPR-Cas9 require to target specific DNA sequences?",
+      "options": [
+        "Additional enzymes",
+        "Programmable RNA",
+        "New genetic material",
+        "Temperature control"
+      ],
+      "correctAnswer": "Programmable RNA",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 40,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-025-p3"
+    }
+  ]
+}

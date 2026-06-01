@@ -1,0 +1,30 @@
+{
+  "id": "ielts-full-019",
+  "exam": "ielts",
+  "type": "full",
+  "title": "IELTS Full Mock Test 19",
+  "durationSeconds": 9900,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "ielts-listening-019",
+      "file": "ielts/listening/test-019.json"
+    },
+    {
+      "section": "reading",
+      "testId": "ielts-reading-019",
+      "file": "ielts/reading/test-019.json"
+    },
+    {
+      "section": "writing",
+      "testId": "ielts-writing-019",
+      "file": "ielts/writing/test-019.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "ielts-speaking-019",
+      "file": "ielts/speaking/test-019.json"
+    }
+  ]
+}

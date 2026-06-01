@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-041",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 41",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-041-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a message to a community group sharing winter safety tips you have found useful.",
+      "modelAnswer": "I would wholeheartedly choose Option A: \"Focus on developing renewable energy sources like solar and wind power.\" This approach offers the most sustainable and impactful path forward for our community.\n\nFirstly, investing in renewable energy provides long-term economic benefits. While the initial outlay for infrastructure might seem substantial, the decreasing reliance on volatile fossil fuel markets will lead to stable and predictable energy costs for residents and businesses. Furthermore, the development and maintenance of these new energy systems will create numerous local jobs in installation, engineering, and research, stimulating our local economy and fostering a skilled workforce. For example, a new solar farm could employ dozens of technicians and engineers for decades.\n\nSecondly, and crucially, this option directly addresses climate change and improves public health. Reducing our carbon footprint by transitioning away from fossil fuels will mitigate the environmental damage caused by traditional power generation, leading to cleaner air and water. This directly translates to fewer respiratory illnesses and a healthier population overall.\n\nOption B, \"Invest in upgrading existing fossil fuel power plants to be more efficient,\" while seemingly practical in the short term, is ultimately a band-aid solution. It perpetuates our dependence on finite, polluting resources and delays the inevitable transition to a truly sustainable energy future. It's a temporary fix that fails to tackle the root causes of our energy and environmental challenges.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "winter safety tips",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-041-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short email to your employer explaining that you were late due to icy roads.",
+      "modelAnswer": "I would unequivocally choose Option B, advocating for the comprehensive integration of artificial intelligence (AI) into our education system. This approach promises to revolutionize learning, making it more personalized and efficient.\n\nFirstly, AI can deliver truly individualized learning paths. Unlike human teachers who juggle multiple students, an AI tutor can meticulously track each student's progress, identify specific areas of difficulty, and provide tailored exercises and explanations. For instance, if a student struggles with quadratic equations, the AI could generate unlimited practice problems and offer diverse pedagogical approaches until mastery is achieved, something simply impossible in a traditional classroom setting.\n\nSecondly, AI tools can automate administrative tasks, freeing up educators to focus on higher-level teaching. Grading essays, preparing lesson plans, and even managing attendance can be streamlined by AI, allowing teachers more time for one-on-one student interaction, curriculum development, and professional growth. This reallocation of time ensures that human expertise is applied where it's most impactful: fostering critical thinking and emotional intelligence.\n\nOption A, while seemingly cautious, represents a missed opportunity. Limiting AI to administrative roles only scratches the surface of its potential. It fails to leverage AI's capacity to fundamentally enhance the learning experience itself, leaving students with a less dynamic and less personalized education. The benefits of a fully integrated system far outweigh the perceived risks of a partial adoption.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "winter safety tips",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

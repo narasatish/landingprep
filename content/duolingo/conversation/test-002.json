@@ -1,0 +1,68 @@
+{
+  "id": "duolingo-conversation-002",
+  "exam": "duolingo",
+  "section": "conversation",
+  "type": "section",
+  "title": "Duolingo English Test Conversation Practice Test 2",
+  "durationSeconds": 900,
+  "questionCount": 3,
+  "instructions": "Record responses and review using the rubric.",
+  "questions": [
+    {
+      "id": "duolingo-conversation-002-q01",
+      "questionType": "speaking_task",
+      "prompt": "[1] Talk about your personal experience with the psychology of wayfinding.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "the psychology of wayfinding",
+      "fingerprint": "eb2ec96009c6092218"
+    },
+    {
+      "id": "duolingo-conversation-002-q02",
+      "questionType": "speaking_task",
+      "prompt": "[2] Describe a situation where the psychology of wayfinding affected a school, workplace, or community.",
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "the psychology of wayfinding",
+      "fingerprint": "b438616f38948cb25b"
+    },
+    {
+      "id": "duolingo-conversation-002-q03",
+      "questionType": "speaking_task",
+      "prompt": "[3] Discuss whether the psychology of wayfinding will become more important in the future.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "the psychology of wayfinding",
+      "fingerprint": "aab729b5c0bc271b7c"
+    }
+  ],
+  "fingerprints": [
+    "eb2ec96009c6092218",
+    "b438616f38948cb25b",
+    "aab729b5c0bc271b7c"
+  ]
+}

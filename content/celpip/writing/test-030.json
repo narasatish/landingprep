@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-030",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 30",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-030-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You are part of a parent committee at your child's school. You want to write to the principal suggesting that the school start a breakfast programme for students who arrive without having eaten.",
+      "recipient": "the school principal",
+      "bulletPoints": [
+        "Explain why you believe a breakfast programme is needed",
+        "Describe what the programme could look like and who would run it",
+        "Ask for the principal's support and suggest a meeting to discuss the idea further"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You accidentally broke your neighbour's garden ornament while helping with their yard. Write a letter apologising, explaining what happened, and offering to replace or pay for the item.",
+      "modelAnswer": "Dear Principal Miller,\n\nI am writing to you today as a member of the parent committee to propose the implementation of a breakfast programme at our school. I believe such a programme is critically needed as many students arrive at school hungry, which significantly impacts their concentration, behaviour, and overall academic performance throughout the day. A nutritious start is fundamental to effective learning.\n\nMy vision for this programme is a simple, volunteer-run initiative offering basic, healthy options like toast, fruit, and milk in the cafeteria before classes begin. We could recruit parent volunteers, perhaps on a rotating schedule, to prepare and supervise the breakfast service. This approach would keep costs minimal while fostering greater community involvement within the school.\n\nWe are confident that with your support, this programme could make a substantial positive difference in our students' well-being and academic success. The parent committee is eager to assist with organisation and volunteer recruitment. Would you be available to meet sometime next week to discuss this idea further and explore potential next steps? Please let me know what time works best for you.\n\nThank you for considering this important proposal.\n\nSincerely,\n\nSarah Chen\nParent Committee Member"
+    },
+    {
+      "id": "celpip-writing-030-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your province is considering two policies to improve road safety. Which policy do you prefer?",
+      "optionA": "Lower the speed limit on all urban roads from 50 km/h to 40 km/h",
+      "optionB": "Install automated speed cameras on school zones and residential streets",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A new public wellness centre is asking residents what services they would use. Describe the wellness activities you enjoy or would like to try, what times and facilities would suit you best, and what would make you a regular user.",
+      "modelAnswer": "I strongly advocate for Policy Option B: installing automated speed cameras on school zones and residential streets. This targeted approach offers a more effective and justifiable solution to enhance road safety where it is most critically needed.\n\nFirstly, speed cameras in these specific areas directly address the heightened vulnerability of pedestrians, particularly children, and residents. Lowering speed limits province-wide, as in Option A, is a blanket measure that might face widespread non-compliance and resentment on roads where 50 km/h is already deemed safe. Cameras, however, provide a constant, unbiased deterrent in high-risk zones, forcing drivers to adhere to existing limits and significantly reducing the likelihood of severe accidents. For instance, a driver might ignore a 40 km/h sign on a wide arterial road, but the presence of a camera near a playground would compel immediate compliance.\n\nSecondly, this policy fosters a culture of accountability. Drivers will learn that speeding in sensitive areas carries a tangible consequence, rather than relying on sporadic police enforcement. While Option A aims to reduce speeds generally, it lacks the precise enforcement mechanism to ensure compliance where it matters most. Furthermore, the revenue generated from fines can be reinvested into other road safety initiatives, creating a self-sustaining improvement cycle.\n\nOption A, while well-intentioned, risks being overly broad and potentially inefficient. Reducing the speed limit across all urban roads could lead to increased traffic congestion and frustration on routes where the current limit is appropriate, without necessarily achieving the desired safety impact in critical zones. Option B is a focused, practical, and impactful strategy for genuine road safety improvement."
+    }
+  ]
+}

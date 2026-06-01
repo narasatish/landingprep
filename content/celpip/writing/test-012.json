@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-012",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 12",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-012-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "Your family is planning a birthday celebration for your parent's 60th birthday. You need to enquire about booking a private room at a local restaurant.",
+      "recipient": "the restaurant reservation team",
+      "bulletPoints": [
+        "Describe the event and the number of guests",
+        "Ask about availability and pricing for a private room",
+        "Enquire about menu options or any special arrangements"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You recently received a bill from your utility company that you believe is incorrect. Write a letter explaining the discrepancy, providing relevant details, and asking for a review of the charge.",
+      "modelAnswer": "Subject: Inquiry Regarding Private Room Booking - 60th Birthday Celebration\n\nDear Restaurant Reservation Team,\n\nI am writing to inquire about the possibility of booking a private room at your esteemed restaurant for a special occasion. My family is planning a 60th birthday celebration for my mother, and we are looking for a suitable venue to host this milestone event.\n\nWe anticipate having approximately 25-30 guests in attendance. We are hoping to hold the celebration on either Saturday, October 14th, or Sunday, October 15th, preferably for an evening dinner service. Could you please inform me about the availability of your private rooms for these dates and provide details on your pricing structure, including any minimum spend requirements or room rental fees?\n\nFurthermore, we would appreciate it if you could share information regarding your menu options for private events. Are there set menus available, or can we discuss a customized selection? We are also interested in any special arrangements you might offer, such as cake service or audio-visual equipment, should we wish to incorporate them.\n\nThank you for your time and assistance. We look forward to your prompt response and exploring the possibility of celebrating my mother's birthday at your restaurant.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Email Address]"
+    },
+    {
+      "id": "celpip-writing-012-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your neighbourhood association is deciding how to improve local safety. Which initiative do you support?",
+      "optionA": "Install more street lights on poorly lit roads and pathways",
+      "optionB": "Create a neighbourhood watch programme run by trained volunteers",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A regional recreation authority is asking residents about parks and outdoor spaces. Describe how you use parks in your area, what facilities are missing, and what improvements would most benefit the community.",
+      "modelAnswer": "I strongly advocate for installing more streetlights on poorly lit roads and pathways as the most effective initiative to improve local safety. This approach offers immediate, widespread, and passive protection for all residents.\n\nFirstly, enhanced lighting significantly deters crime. Criminals often target poorly lit areas to avoid detection, and the simple presence of brighter lights makes potential perpetrators more visible, thus less likely to commit offenses. For instance, a well-lit path makes it easier for residents to identify suspicious individuals and for security cameras to capture clear footage.\n\nSecondly, improved lighting drastically increases personal safety and comfort, especially after dark. Residents, particularly women and the elderly, feel much more secure walking, cycling, or waiting for public transport when their surroundings are illuminated. This fosters a stronger sense of community and encourages outdoor activity, which in itself can act as a deterrent.\n\nWhile a neighbourhood watch program has merit, its effectiveness relies heavily on consistent volunteer participation and training, which can fluctuate. Streetlights, once installed, provide a continuous, reliable safety measure that doesn't depend on human resources or schedules, offering a foundational level of security that complements any future community engagement efforts."
+    }
+  ]
+}

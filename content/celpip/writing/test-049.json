@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-049",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 49",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-049-q01",
+      "questionType": "writing_task",
+      "prompt": "Write an email to a government service asking how to complete a specific online task.",
+      "modelAnswer": "I wholeheartedly support Option A: investing in renewable energy sources. This approach offers a multifaceted solution to pressing global challenges, positioning us for a more sustainable and prosperous future.\n\nFirstly, renewable energy, unlike finite fossil fuels, provides long-term energy security and price stability. By harnessing solar, wind, and hydro power, nations can drastically reduce their reliance on volatile global oil markets, protecting economies from sudden price hikes and supply disruptions. For instance, countries like Denmark, heavily invested in wind energy, have achieved significant energy independence and lower electricity costs for consumers.\n\nSecondly, the environmental benefits are undeniable. Transitioning to renewables is crucial for mitigating climate change by drastically cutting greenhouse gas emissions. This directly combats extreme weather events, rising sea levels, and ecosystem degradation. Furthermore, renewable technologies produce significantly less air and water pollution compared to traditional power plants, leading to improved public health outcomes and reduced healthcare burdens.\n\nWhile Option B, increasing fossil fuel production, might offer a short-term boost to energy supply, it exacerbates climate change and perpetuates our dependence on a finite, polluting resource. It’s a backward step that ignores the overwhelming scientific consensus and the innovative solutions available today. The economic and environmental costs of continuing down this path far outweigh any immediate gains.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "using online government services",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-049-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short guide for a family member explaining how to use an online government portal.",
+      "modelAnswer": "I would strongly advocate for Option B, which prioritises funding for programs that teach new skills and provide job training for displaced workers. This approach offers a more sustainable and empowering solution for individuals and a more robust long-term benefit for the economy.\n\nFirstly, investing in skill development directly addresses the root cause of unemployment and underemployment. By equipping displaced workers with in-demand skills, such as coding, data analysis, or renewable energy installation, we enable them to re-enter the workforce in growing sectors. This not only restores their financial independence but also boosts their confidence and sense of purpose. For example, a former factory worker retrained as a wind turbine technician gains a future-proof career.\n\nSecondly, a skilled workforce is crucial for economic resilience and growth. These programs create a more adaptable labour pool, capable of meeting evolving industry needs and attracting new businesses. While direct financial aid (Option A) provides immediate relief, it is a temporary measure that doesn't foster long-term self-sufficiency or contribute to a dynamic economy. Dependency on aid can also disincentivize upskilling. Therefore, while compassionate, Option A is less effective in building a truly sustainable future for individuals and the broader community.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "using online government services",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

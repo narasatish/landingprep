@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-051",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 51",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-051-q01",
+      "questionType": "writing_task",
+      "prompt": "Write an email to a utilities company asking about the process for setting up electricity service.",
+      "modelAnswer": "I would unequivocally choose Option A: \"Invest more in public transportation infrastructure, such as subways and buses.\" This approach offers a far more sustainable and equitable solution to urban congestion and environmental concerns than further investment in road networks.\n\nFirstly, enhanced public transit significantly reduces the number of private vehicles on the road. A single subway train can transport thousands of commuters, a capacity unmatched by even multiple lanes of highway. This directly translates to decreased traffic jams, shorter commute times for everyone, and a substantial drop in carbon emissions, contributing to cleaner air in our cities. For instance, the expansion of Vancouver's SkyTrain system has demonstrably encouraged car-free commuting for many residents along its corridors.\n\nSecondly, robust public transportation provides accessibility and economic benefits for all demographics, not just car owners. It offers an affordable and reliable means of travel for students, seniors, low-income individuals, and those unable to drive, fostering greater social inclusion and economic opportunity. Investing in quality public transit also stimulates local economies by creating jobs in construction, operation, and maintenance.\n\nOption B, \"Expand existing road networks and build new highways,\" is a short-sighted solution. While seemingly addressing congestion, it often induces more traffic, leading to a temporary fix at best, followed by renewed gridlock. Furthermore, road expansion consumes valuable land, often at the expense of green spaces or existing communities, and perpetuates reliance on fossil fuels, exacerbating environmental damage. Therefore, investing in public transit is the superior path forward for our urban centres.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "setting up utilities",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-051-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short note to a housemate explaining how to submit a monthly meter reading.",
+      "modelAnswer": "I wholeheartedly endorse Option B, advocating for a significant increase in public funding for arts and cultural programs. This approach offers profound societal benefits that far outweigh the alternative.\n\nFirstly, enhanced funding directly fosters community cohesion and well-being. Arts programs, from local theatre groups to public art installations, create shared experiences and spaces for connection, enriching social fabric. For instance, increased support could enable free workshops for children and seniors, bridging generational gaps and promoting mental health through creative expression. This directly counters social isolation and strengthens community bonds.\n\nSecondly, investing in the arts stimulates economic growth and job creation. The cultural sector is a vital industry, employing artists, administrators, technicians, and educators. Greater funding translates into more projects, events, and institutions, which in turn attract tourism and local spending, generating revenue for businesses beyond the art world itself. Consider the economic ripple effect of a well-funded music festival or a thriving local gallery scene.\n\nWhile Option A, relying on private donations and corporate sponsorships, provides some support, it is inherently unreliable and often driven by commercial interests rather than community need. Private funding tends to be cyclical, project-specific, and may inadvertently favour popular or commercially viable art forms over experimental or community-focused initiatives. Public funding, conversely, ensures broader accessibility and a more equitable distribution of resources, allowing for long-term strategic planning and support for diverse cultural expressions that might not otherwise attract private investment. Therefore, robust public funding is the more sustainable and beneficial path forward.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "setting up utilities",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

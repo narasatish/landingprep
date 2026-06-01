@@ -1,0 +1,771 @@
+{
+  "id": "pte-speaking-writing-017",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 17",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-017-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Impact of Public Health Campaigns”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "abd7555a14c8bd8d97",
+      "modelAnswer": "Public health campaigns play a crucial role in shaping societal behaviors and improving overall well-being. Effective campaigns often utilize multi-faceted approaches, combining mass media messaging with community-level interventions. These initiatives aim to disseminate vital information, encourage preventative measures, and reduce the prevalence of various health risks, from infectious diseases to chronic conditions. Their success hinges on clear communication and deep understanding of target demographics.",
+      "readText": "Public health campaigns play a crucial role in shaping societal behaviors and improving overall well-being. Effective campaigns often utilize multi-faceted approaches, combining mass media messaging with community-level interventions. These initiatives aim to disseminate vital information, encourage preventative measures, and reduce the prevalence of various health risks, from infectious diseases to chronic conditions. Their success hinges on clear communication and deep understanding of target demographics."
+    },
+    {
+      "id": "pte-speaking-writing-017-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Museum Conservation Techniques”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Museum conservationists meticulously restore ancient artifacts using advanced scientific techniques.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "9620c9c6d7aad42824",
+      "modelAnswer": "Museum conservationists meticulously restore ancient artifacts using advanced scientific techniques.",
+      "audioScript": "Museum conservationists meticulously restore ancient artifacts using advanced scientific techniques."
+    },
+    {
+      "id": "pte-speaking-writing-017-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Community Science Project Participation by Communication Channel\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "aa81d3aa2d26208912",
+      "modelAnswer": "This bar chart illustrates community science project participation based on different communication channels. Word-of-Mouth is clearly the most effective channel, engaging 250 participants. Community Events also show strong engagement with 210 participants, followed by Social Media at 180. In contrast, Online Forums attracted the fewest participants, with only 90, slightly less than Local News which brought in 110. Overall, personal connections and direct outreach appear more impactful than digital or traditional media for recruiting community science project participants.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Community Science Project Participation by Communication Channel",
+        "yLabel": "Number of Participants",
+        "xAxis": [
+          "Social Media",
+          "Local News",
+          "Word-of-Mouth",
+          "Community Events",
+          "Online Forums"
+        ],
+        "series": [
+          {
+            "label": "Participants",
+            "values": [
+              180,
+              110,
+              250,
+              210,
+              90
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-017-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Benefits of Urban Green Roofs”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0585195279792a22e3",
+      "modelAnswer": "The lecture discussed the numerous advantages of implementing urban green roofs. Primarily, they help mitigate the urban heat island effect by absorbing solar radiation, which cools cities. Additionally, green roofs enhance air quality and effectively manage stormwater runoff, easing pressure on infrastructure. From an economic standpoint, they prolong roof durability and decrease energy costs associated with cooling buildings, offering substantial long-term benefits for urban areas.",
+      "audioScript": "Urban green roofs offer a multitude of environmental and economic benefits to city landscapes. They significantly reduce the urban heat island effect by absorbing sunlight rather than reflecting it, leading to cooler ambient temperatures. Furthermore, these vegetated surfaces improve air quality by filtering pollutants and managing stormwater runoff, thereby lessening the burden on drainage systems. Economically, green roofs can extend the lifespan of roofing materials and reduce energy consumption for building cooling, providing tangible savings over time.",
+      "keyPoints": [
+        "Reduce urban heat island effect",
+        "Improve air quality and manage stormwater",
+        "Extend roof lifespan and save energy"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-017-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Psychology of Wayfinding”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Wayfinding",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "fe00ca690ac245eead",
+      "modelAnswer": "Wayfinding",
+      "audioScript": "What cognitive process helps us navigate through unfamiliar environments?"
+    },
+    {
+      "id": "pte-speaking-writing-017-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Frontiers of Deep Ocean Exploration”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "229158840532fb84a0",
+      "modelAnswer": "Deep ocean exploration, utilizing advanced submersibles, uncovers unique ecosystems and geological features around hydrothermal vents, expanding biological knowledge and offering insights into planetary geology and potential extraterrestrial life.",
+      "readText": "Deep ocean exploration has consistently pushed the boundaries of human understanding, revealing ecosystems and geological features previously unimaginable. Submersibles equipped with advanced sonar and robotic arms now routinely descend to depths where light never penetrates, uncovering unique chemosynthetic life forms thriving around hydrothermal vents. This research not only expands our biological knowledge but also provides insights into planetary geology and the potential for extraterrestrial life, making it a critical frontier in scientific discovery that continues to challenge technological limits."
+    },
+    {
+      "id": "pte-speaking-writing-017-q07",
+      "questionType": "essay",
+      "prompt": "Digital archives are increasingly replacing physical repositories for historical documents and cultural artifacts. Discuss the advantages and disadvantages of this shift towards digital preservation. Do the benefits outweigh the drawbacks?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "dbb86624c538874598",
+      "modelAnswer": "The transition from physical to digital archives represents a significant paradigm shift in how societies preserve and access their collective memory. This evolution brings with it a host of advantages, primarily concerning accessibility and preservation. Digital archives allow for instantaneous access to vast collections from anywhere in the world, democratizing information and fostering global research collaboration. Furthermore, digital formats are immune to physical decay, fire, or flood, ensuring the longevity of priceless artifacts far beyond what traditional methods could guarantee. They also facilitate sophisticated search capabilities and cross-referencing, enhancing scholarly inquiry.\n\nHowever, this shift is not without its disadvantages. A major concern is digital obsolescence; file formats and storage technologies can become outdated, rendering data inaccessible without constant migration. Security is another critical issue; digital archives are vulnerable to cyberattacks, data corruption, and unauthorized access, posing risks to the integrity and authenticity of records. The initial cost of digitization can also be prohibitive for many institutions, and maintaining robust digital infrastructure requires ongoing investment and specialized expertise. Moreover, the tactile experience and unique aura of interacting with original physical documents are lost in the digital realm, which some argue diminishes the historical encounter.\n\nDespite these valid concerns, the benefits of digital archives generally outweigh the drawbacks. While challenges like obsolescence and security are real, they are addressable through continuous technological development and robust protocols. The unparalleled accessibility, enhanced preservation, and analytical capabilities offered by digital formats provide an invaluable resource for education, research, and cultural heritage, ensuring that knowledge remains available for future generations in an ever-evolving digital landscape."
+    },
+    {
+      "id": "pte-speaking-writing-017-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Early Transcontinental Trade Routes”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "fabe4c11a051eeaa65",
+      "modelAnswer": "Ancient trade networks were crucial for the exchange of goods, ideas, and technologies across vast distances. The Silk Road, for instance, connected the East and West for centuries, facilitating not only commerce but also cultural diffusion. These routes often traversed challenging terrains, relying on a complex system of caravans and way stations. Understanding these early networks provides insight into the interconnectedness of ancient civilizations and the foundations of global trade.",
+      "readText": "Ancient trade networks were crucial for the exchange of goods, ideas, and technologies across vast distances. The Silk Road, for instance, connected the East and West for centuries, facilitating not only commerce but also cultural diffusion. These routes often traversed challenging terrains, relying on a complex system of caravans and way stations. Understanding these early networks provides insight into the interconnectedness of ancient civilizations and the foundations of global trade."
+    },
+    {
+      "id": "pte-speaking-writing-017-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Innovations in Battery Technology”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Researchers are designing innovative renewable batteries for sustainable energy storage solutions.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0c8d44947bc6fa0110",
+      "modelAnswer": "Researchers are designing innovative renewable batteries for sustainable energy storage solutions.",
+      "audioScript": "Researchers are designing innovative renewable batteries for sustainable energy storage solutions."
+    },
+    {
+      "id": "pte-speaking-writing-017-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Preferred Language Learning Methods by Age Group\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "50d1d99002081314b3",
+      "modelAnswer": "This bar chart illustrates preferred language learning methods across different age groups. It shows three main methods: Mobile Apps, Online Courses, and Traditional Classes. Mobile Apps are most popular among the 18-24 age group at 70%, steadily declining to 15% for those 55+. Conversely, Traditional Classes show the opposite trend, peaking at 70% for the 55+ age group and lowest at 30% for 18-24. Online Courses remain relatively consistent, with the 25-34 group showing the highest preference at 65%. The data clearly indicates a shift from digital to traditional methods with increasing age.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Preferred Language Learning Methods by Age Group",
+        "yLabel": "Percentage (%)",
+        "xAxis": [
+          "18-24",
+          "25-34",
+          "35-44",
+          "45-54",
+          "55+"
+        ],
+        "series": [
+          {
+            "label": "Mobile Apps",
+            "values": [
+              70,
+              60,
+              45,
+              30,
+              15
+            ]
+          },
+          {
+            "label": "Online Courses",
+            "values": [
+              55,
+              65,
+              60,
+              50,
+              35
+            ]
+          },
+          {
+            "label": "Traditional Classes",
+            "values": [
+              30,
+              40,
+              50,
+              60,
+              70
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-017-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Effectiveness of Health Campaigns”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "5fc2814abd447a14ba",
+      "modelAnswer": "The lecture examined the variable effectiveness of public health campaigns. It highlighted that success hinges on clear, culturally relevant messaging and consistent media exposure. For instance, vaccination campaigns must tackle misinformation and adapt to community-specific worries. Therefore, effective campaigns necessitate thorough audience research and the utilization of multiple communication channels to achieve widespread impact and foster lasting behavioral modifications within the population.",
+      "audioScript": "Public health campaigns are designed to influence community behavior towards healthier choices, but their effectiveness can vary significantly. Factors like message clarity, cultural relevance, and sustained media presence are paramount. A campaign promoting vaccination, for example, might struggle if it doesn't address prevalent misinformation or if its messaging is not tailored to specific community concerns. Successful campaigns often involve extensive research into target audiences, employing diverse communication channels to ensure broad reach and resonance, ultimately aiming for long-term behavioral change.",
+      "keyPoints": [
+        "Effectiveness varies; depends on clarity, relevance, presence",
+        "Must address misinformation and tailor messages",
+        "Requires audience research and diverse channels for long-term change"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-017-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Museum Artifact Preservation”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Preservation",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "326962c44a2446552b",
+      "modelAnswer": "Preservation",
+      "audioScript": "What is the primary goal of museum conservation?"
+    },
+    {
+      "id": "pte-speaking-writing-017-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Rise of Community Science”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "2e7c59714e483ac2e0",
+      "modelAnswer": "Community science engages the public in scientific research, allowing for extensive data collection across broad areas and fostering scientific literacy, proving an invaluable tool despite occasional data quality concerns.",
+      "readText": "Community science, also known as citizen science, involves the public in scientific research, typically through data collection and observation. This collaborative approach has revolutionized fields from ornithology to astronomy, enabling researchers to gather vast amounts of data across wide geographical areas that would be impossible for professional scientists alone. Participants, ranging from amateur naturalists to students, contribute valuable insights, foster scientific literacy, and strengthen community engagement with scientific endeavors. While data quality can sometimes be a concern, robust protocols and training often mitigate these issues, making community science an increasingly vital tool for understanding complex global phenomena."
+    },
+    {
+      "id": "pte-speaking-writing-017-q14",
+      "questionType": "essay",
+      "prompt": "Urban areas face numerous environmental challenges, including heat islands and stormwater runoff. Discuss the extent to which green roofs can effectively address these issues and consider the practicalities of widespread implementation in modern cities.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "32c643332c840edd9f",
+      "modelAnswer": "Urban green roofs are increasingly recognized as a sustainable solution to some of the most pressing environmental challenges confronting modern cities. These vegetated layers on rooftops offer significant benefits in mitigating the urban heat island effect, where metropolitan areas are considerably warmer than surrounding rural regions. By absorbing solar radiation and through evapotranspiration, green roofs effectively cool buildings and their immediate surroundings, reducing energy consumption for air conditioning and improving thermal comfort. Furthermore, they play a crucial role in stormwater management by absorbing rainwater, thereby reducing runoff volume and delaying peak discharge, which alleviates pressure on drainage systems and lessens the risk of urban flooding. Green roofs also enhance biodiversity, improve air quality by filtering pollutants, and provide aesthetic and recreational spaces.\n\nHowever, the widespread implementation of green roofs presents several practical considerations. Initial installation costs can be substantial, encompassing structural reinforcement, waterproofing, drainage layers, and planting. The weight of the green roof system requires careful structural assessment, particularly for older buildings. Maintenance, including irrigation and plant care, is also an ongoing expense and requires specialized knowledge. Additionally, the availability of suitable rooftop space and the integration with existing urban planning regulations can pose challenges. Public awareness and incentives, such as subsidies or tax breaks, are often necessary to encourage adoption by building owners and developers.\n\nDespite these practical hurdles, the long-term environmental and economic benefits of green roofs strongly advocate for their widespread implementation. With thoughtful urban planning, supportive policies, and advancements in green roof technology, cities can progressively overcome these challenges. The cumulative positive impact on urban climate resilience, ecological health, and quality of life makes green roofs an indispensable component of future sustainable urban development strategies."
+    },
+    {
+      "id": "pte-speaking-writing-017-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Cognitive Aspects of Wayfinding”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "14f0a709e343558e50",
+      "modelAnswer": "The psychology of wayfinding explores how individuals orient themselves and navigate through physical spaces. This complex cognitive process involves spatial memory, environmental cues, and decision-making. Researchers study how people construct mental maps, interpret signs, and use landmarks to reach their destinations. Understanding these mechanisms is vital for designing user-friendly public spaces and improving navigation aids, especially in large, intricate environments like airports or hospitals.",
+      "readText": "The psychology of wayfinding explores how individuals orient themselves and navigate through physical spaces. This complex cognitive process involves spatial memory, environmental cues, and decision-making. Researchers study how people construct mental maps, interpret signs, and use landmarks to reach their destinations. Understanding these mechanisms is vital for designing user-friendly public spaces and improving navigation aids, especially in large, intricate environments like airports or hospitals."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Evolution of Maritime Trade”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q16",
+      "modelAnswer": "The history of maritime trade routes is a testament to human ingenuity and the enduring quest for commerce. From ancient Phoenician voyages to the modern global shipping lanes, these routes have facilitated the exchange of goods, cultures, and ideas across continents. Technological advancements in shipbuilding and navigation have continually expanded the reach and efficiency of sea trade, fundamentally shaping geopolitical landscapes and economic development throughout history.",
+      "readText": "The history of maritime trade routes is a testament to human ingenuity and the enduring quest for commerce. From ancient Phoenician voyages to the modern global shipping lanes, these routes have facilitated the exchange of goods, cultures, and ideas across continents. Technological advancements in shipbuilding and navigation have continually expanded the reach and efficiency of sea trade, fundamentally shaping geopolitical landscapes and economic development throughout history."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Solar Energy Innovations”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q17",
+      "modelAnswer": "Advances in renewable solar energy technology are rapidly transforming global power generation. Innovations in photovoltaic materials, such as perovskites, promise higher efficiencies and lower manufacturing costs, making solar power more competitive. Furthermore, improved energy storage solutions, like advanced battery systems, are addressing the intermittency challenge, ensuring a more reliable supply of solar electricity. These developments are crucial for accelerating the transition to a sustainable energy future.",
+      "readText": "Advances in renewable solar energy technology are rapidly transforming global power generation. Innovations in photovoltaic materials, such as perovskites, promise higher efficiencies and lower manufacturing costs, making solar power more competitive. Furthermore, improved energy storage solutions, like advanced battery systems, are addressing the intermittency challenge, ensuring a more reliable supply of solar electricity. These developments are crucial for accelerating the transition to a sustainable energy future."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Climate Change Solutions”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q18",
+      "modelAnswer": "Climate change mitigation strategies encompass a broad range of approaches aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy sources, improving energy efficiency, and implementing sustainable land use practices. Additionally, developing carbon capture and storage technologies is seen as a vital component for industries where emissions are difficult to abate. International cooperation is essential for the effective deployment of these diverse solutions.",
+      "readText": "Climate change mitigation strategies encompass a broad range of approaches aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy sources, improving energy efficiency, and implementing sustainable land use practices. Additionally, developing carbon capture and storage technologies is seen as a vital component for industries where emissions are difficult to abate. International cooperation is essential for the effective deployment of these diverse solutions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration often leads to complex challenges in cultural integration and social cohesion.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “International Migration and Cultural Integration”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q19",
+      "modelAnswer": "International migration often leads to complex challenges in cultural integration and social cohesion.",
+      "audioScript": "International migration often leads to complex challenges in cultural integration and social cohesion."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation predict significant shifts in labor markets and productivity.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “The Economics of Automation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q20",
+      "modelAnswer": "The economics of automation predict significant shifts in labor markets and productivity.",
+      "audioScript": "The economics of automation predict significant shifts in labor markets and productivity."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Investing in renewable energy infrastructure is critical for a sustainable global future.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Infrastructure Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q21",
+      "modelAnswer": "Investing in renewable energy infrastructure is critical for a sustainable global future.",
+      "audioScript": "Investing in renewable energy infrastructure is critical for a sustainable global future."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Urban heat islands require innovative mitigation strategies like green infrastructure.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Heat Islands and Mitigation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q22",
+      "modelAnswer": "Urban heat islands require innovative mitigation strategies like green infrastructure.",
+      "audioScript": "Urban heat islands require innovative mitigation strategies like green infrastructure."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Financial literacy is crucial for promoting economic inclusion and individual well-being.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Financial Literacy and Economic Inclusion”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q23",
+      "modelAnswer": "Financial literacy is crucial for promoting economic inclusion and individual well-being.",
+      "audioScript": "Financial literacy is crucial for promoting economic inclusion and individual well-being."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Nanotechnology is revolutionizing materials science with new properties and applications.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Nanotechnology in Materials Science”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q24",
+      "modelAnswer": "Nanotechnology is revolutionizing materials science with new properties and applications.",
+      "audioScript": "Nanotechnology is revolutionizing materials science with new properties and applications."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The science of sleep reveals its critical role in memory consolidation.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “The Science of Sleep and Memory Consolidation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q25",
+      "modelAnswer": "The science of sleep reveals its critical role in memory consolidation.",
+      "audioScript": "The science of sleep reveals its critical role in memory consolidation."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Digital literacy is an essential skill for modern education and future employment.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Digital Literacy in Education”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q26",
+      "modelAnswer": "Digital literacy is an essential skill for modern education and future employment.",
+      "audioScript": "Digital literacy is an essential skill for modern education and future employment."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Amazon Deforestation (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q27",
+      "modelAnswer": "This line chart illustrates Amazon deforestation patterns between 1990 and 2020, measured in million hectares. The trend shows an initial increase from 1.8 million hectares in 1990 to a peak of 2.8 million hectares in 2005. Following this, deforestation significantly decreased, reaching its lowest point of 1.2 million hectares in 2015. However, there was a subsequent rise to 1.9 million hectares by 2020. Overall, despite a mid-period reduction, the deforestation rate in 2020 remained higher than the 1990 figure, indicating ongoing environmental challenges in the Amazon basin.",
+      "visual": {
+        "chartType": "line",
+        "title": "Amazon Deforestation (1990-2020)",
+        "yLabel": "Area Deforested (million hectares)",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Annual Deforestation",
+            "values": [
+              1.8,
+              2.2,
+              2.5,
+              2.8,
+              1.5,
+              1.2,
+              1.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Stages of the Scientific Method\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q28",
+      "modelAnswer": "This table outlines the six sequential stages of the scientific method, a systematic approach to inquiry. It begins with 'Observation/Question' in Stage 1, where a phenomenon is identified. This leads to 'Research' in Stage 2 to gather background information. Stage 3 involves forming a 'Hypothesis', a testable explanation. The core of the method is 'Experiment' in Stage 4, followed by 'Analysis' of results in Stage 5. Finally, Stage 6, 'Conclusion', involves accepting or rejecting the hypothesis and communicating the findings, completing the cycle.",
+      "visual": {
+        "chartType": "table",
+        "title": "Stages of the Scientific Method",
+        "headers": [
+          "Stage Number",
+          "Process Step",
+          "Key Activity"
+        ],
+        "rows": [
+          [
+            "1",
+            "Observation/Question",
+            "Identify a phenomenon or problem"
+          ],
+          [
+            "2",
+            "Research",
+            "Gather information and background knowledge"
+          ],
+          [
+            "3",
+            "Hypothesis",
+            "Formulate a testable explanation"
+          ],
+          [
+            "4",
+            "Experiment",
+            "Design and conduct a test"
+          ],
+          [
+            "5",
+            "Analysis",
+            "Interpret data and results"
+          ],
+          [
+            "6",
+            "Conclusion",
+            "Accept or reject hypothesis; communicate findings"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Key Components and Outputs of Photosynthesis\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q29",
+      "modelAnswer": "This table illustrates the key components and outputs of photosynthesis, divided into two main stages. The Light-Dependent Reactions occur in the Thylakoid Membranes, utilizing Light Energy and Water as inputs to produce Oxygen, ATP, and NADPH. Following this, the Light-Independent Reactions, also known as the Calvin Cycle, take place in the Stroma. These reactions consume Carbon Dioxide, ATP, and NADPH, ultimately yielding Glucose, ADP, and NADP+. The most significant output for life is Oxygen from the first stage and Glucose from the second, highlighting the interconnectedness of these vital biological processes.",
+      "visual": {
+        "chartType": "table",
+        "title": "Key Components and Outputs of Photosynthesis",
+        "headers": [
+          "Process Stage",
+          "Inputs",
+          "Outputs",
+          "Location"
+        ],
+        "rows": [
+          [
+            "Light-Dependent Reactions",
+            "Light Energy, Water (H2O)",
+            "Oxygen (O2), ATP, NADPH",
+            "Thylakoid Membranes"
+          ],
+          [
+            "Light-Independent Reactions (Calvin Cycle)",
+            "Carbon Dioxide (CO2), ATP, NADPH",
+            "Glucose (C6H12O6), ADP, NADP+",
+            "Stroma"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Population Growth Projections (Billions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q30",
+      "modelAnswer": "The line chart illustrates global population growth projections from 1950 to 2100. In 1950, the world population was approximately 2.5 billion. It shows a steady increase, reaching 6.1 billion in 2000 and projected to hit 8.0 billion by 2025. The highest projected population is 10.9 billion in 2100, following a peak of 10.5 billion in 2075. The graph clearly indicates a significant upward trend in global population over this 150-year period, with growth slowing down towards the end of the century.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Population Growth Projections (Billions)",
+        "yLabel": "Population (Billions)",
+        "xAxis": [
+          "1950",
+          "1975",
+          "2000",
+          "2025",
+          "2050",
+          "2075",
+          "2100"
+        ],
+        "series": [
+          {
+            "label": "Population",
+            "values": [
+              2.5,
+              4.1,
+              6.1,
+              8,
+              9.7,
+              10.5,
+              10.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q31",
+      "modelAnswer": "The lecture highlighted the significance of non-verbal communication, which includes elements like gestures, facial expressions, and body language. These non-verbal cues can either support or contradict verbal messages, offering additional insight into a person's true sentiments. Understanding and utilizing these signals correctly is vital for successful social and professional interactions, as they frequently convey more meaning than spoken language.",
+      "audioScript": "Non-verbal communication is a powerful, often subconscious, aspect of human interaction. It encompasses gestures, facial expressions, body posture, and even tone of voice. These cues can reinforce, contradict, or even substitute for spoken words, providing deeper insights into a speaker's true feelings or intentions. For instance, folded arms might signal defensiveness, while sustained eye contact often conveys attentiveness. Mastering the interpretation and appropriate use of non-verbal signals is crucial for effective social and professional communication, often conveying more than words alone.",
+      "keyPoints": [
+        "Gestures, expressions, posture, tone are non-verbal",
+        "Reinforce, contradict, or substitute spoken words",
+        "Crucial for effective social and professional communication"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Elements of Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q32",
+      "modelAnswer": "Communication",
+      "audioScript": "What is the process of conveying information, ideas, or feelings?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Written",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Types of Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q33",
+      "modelAnswer": "Written",
+      "audioScript": "What type of communication involves written words or symbols?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Speech",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-017-q34",
+      "modelAnswer": "Speech",
+      "audioScript": "What is the primary medium for verbal communication?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-017-q01": "",
+    "pte-speaking-writing-017-q02": "",
+    "pte-speaking-writing-017-q03": "",
+    "pte-speaking-writing-017-q04": "",
+    "pte-speaking-writing-017-q05": "sample answer",
+    "pte-speaking-writing-017-q06": "",
+    "pte-speaking-writing-017-q07": "",
+    "pte-speaking-writing-017-q08": "",
+    "pte-speaking-writing-017-q09": "",
+    "pte-speaking-writing-017-q10": "",
+    "pte-speaking-writing-017-q11": "",
+    "pte-speaking-writing-017-q12": "sample answer",
+    "pte-speaking-writing-017-q13": "",
+    "pte-speaking-writing-017-q14": "",
+    "pte-speaking-writing-017-q15": ""
+  },
+  "fingerprints": [
+    "abd7555a14c8bd8d97",
+    "9620c9c6d7aad42824",
+    "aa81d3aa2d26208912",
+    "0585195279792a22e3",
+    "fe00ca690ac245eead",
+    "229158840532fb84a0",
+    "dbb86624c538874598",
+    "fabe4c11a051eeaa65",
+    "0c8d44947bc6fa0110",
+    "50d1d99002081314b3",
+    "5fc2814abd447a14ba",
+    "326962c44a2446552b",
+    "2e7c59714e483ac2e0",
+    "32c643332c840edd9f",
+    "14f0a709e343558e50"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-022",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 22",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-022",
+      "file": "gmat/quant/test-022.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-022",
+      "file": "gmat/verbal/test-022.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-022",
+      "file": "gmat/data-insights/test-022.json"
+    }
+  ]
+}

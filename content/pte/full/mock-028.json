@@ -1,0 +1,25 @@
+{
+  "id": "pte-full-028",
+  "exam": "pte",
+  "type": "full",
+  "title": "PTE Academic Full Mock Test 28",
+  "durationSeconds": 7200,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "speaking-writing",
+      "testId": "pte-speaking-writing-028",
+      "file": "pte/speaking-writing/test-028.json"
+    },
+    {
+      "section": "reading",
+      "testId": "pte-reading-028",
+      "file": "pte/reading/test-028.json"
+    },
+    {
+      "section": "listening",
+      "testId": "pte-listening-028",
+      "file": "pte/listening/test-028.json"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "toefl-writing-030",
+  "exam": "toefl",
+  "section": "writing",
+  "type": "section",
+  "title": "TOEFL iBT Writing Practice Test 30",
+  "variant": "ibt",
+  "durationSeconds": 1380,
+  "questionCount": 2,
+  "instructions": "There are 2 writing tasks. Task 1 (Integrated Writing): Read a passage for 3 minutes, listen to a lecture, then write a 150-225 word response explaining how the lecture relates to the reading. You have 20 minutes. Task 2 (Academic Discussion): Read a professor's question and two student responses, then write your own contribution of at least 100 words in 10 minutes.",
+  "questions": [
+    {
+      "id": "toefl-writing-030-q01",
+      "taskNum": 1,
+      "taskType": "integrated_writing",
+      "questionType": "integrated_writing",
+      "readingTitle": "The Case For Volunteering Requirements",
+      "readingText": "Proponents of Mandatory community service argue that the benefits are substantial and well-supported by evidence. Studies show that when properly implemented, this approach leads to improved outcomes across multiple dimensions — social, economic, and environmental. Experts in the field point to successful examples in various national contexts where clear benefits were observed. Furthermore, technological and administrative improvements have made implementation more feasible than in the past. Critics exist, but the mainstream of research supports a positive assessment.",
+      "lectureDescription": "The professor challenges the reading's optimistic view. First, the professor argues that the studies cited are often conducted in ideal conditions that do not reflect real-world implementation challenges. Second, the successful examples cited in the reading are often unrepresentative — they were selected because they succeeded, while failed attempts at the same policy are not mentioned. Third, the professor notes that costs — financial, social, or practical — are systematically underestimated in the literature that supports this position.",
+      "prompt": "Summarise the points made in the lecture, being sure to explain how they cast doubt on the specific points made in the reading passage.",
+      "modelAnswer": "The reading argues that Mandatory community service produces clear benefits supported by research and real-world examples. The professor challenges this position on three grounds.\n\nFirst, the professor argues that the studies cited in the reading were conducted under conditions that do not reflect real-world complexity, making their findings difficult to generalise. Real implementation faces obstacles the research does not account for.\n\nSecond, the professor questions the representativeness of the successful examples cited in the reading. These cases were selected because they worked well; failed attempts were excluded, creating an overly optimistic picture.\n\nThird, the professor contends that the costs of this approach — whether financial, social, or practical — are systematically underestimated by the literature the reading draws upon.\n\nIn summary, the professor does not deny that there are some benefits, but argues the reading presents an incomplete and overly positive picture that ignores significant limitations and real-world constraints.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range"
+      ],
+      "timeSeconds": 1200,
+      "targetWords": "150-225"
+    },
+    {
+      "id": "toefl-writing-030-q02",
+      "taskNum": 2,
+      "taskType": "academic_discussion",
+      "questionType": "academic_discussion",
+      "professorName": "Dr Fischer",
+      "professorQuestion": "We have been studying Mandatory community service this week. I want you to consider: what do you think are the most important factors that should guide decisions in this area? Are there trade-offs that are difficult to resolve? Share your view and explain your reasoning.",
+      "student1Name": "Tom",
+      "student1Response": "I think the most important factor is practical effectiveness. It doesn't matter how well-intentioned a policy is if it doesn't actually produce the intended results. We should focus on evidence — what has actually worked in other places — and be willing to change course when evidence shows something isn't working.",
+      "student2Name": "Chloe",
+      "student2Response": "I agree evidence matters, but I think fairness is equally important. Even if a policy is effective on average, we should ask: who benefits and who bears the costs? Policies that produce overall benefits but concentrate disadvantages on specific communities are not truly successful in my view.",
+      "prompt": "Write a post responding to the professor's question. Express and support your personal opinion and make a contribution to the discussion in your own words. An effective response will contain at least 100 words.",
+      "rubric": [
+        "task response",
+        "coherence",
+        "lexical resource",
+        "grammar"
+      ],
+      "timeSeconds": 600,
+      "targetWords": "100+",
+      "modelAnswer": "I find myself largely aligning with Chloe's emphasis on fairness, though I would extend her point to argue that the most important factor guiding decisions about mandatory community service is the equitable distribution of both burden and benefit. While practical effectiveness, as Tom advocates, is undoubtedly crucial, a program's efficacy is compromised if it exacerbates existing inequalities or disproportionately impacts certain groups.\n\nFor instance, if mandatory service disproportionately falls on students from low-income backgrounds who might need to work to support their families, the \"benefit\" of service learning is overshadowed by the \"cost\" of lost wages or educational opportunities. A trade-off here is difficult to resolve: how do we ensure broad participation and civic engagement without penalizing those already facing economic hardship? We must prioritize flexibility and provide support structures, such as childcare or transportation, to ensure that the service requirement doesn't become an undue burden on specific communities, making the \"effectiveness\" truly equitable."
+    }
+  ]
+}

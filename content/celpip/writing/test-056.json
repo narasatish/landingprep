@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-056",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 56",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-056-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to the festival organisers asking how to participate in a multicultural festival.",
+      "modelAnswer": "I wholeheartedly advocate for Option B: prioritizing human-centric skills and critical thinking in education. While technological proficiency is undeniably important, focusing on adaptable human attributes better prepares individuals for an unpredictable future.\n\nFirstly, fostering critical thinking equips students to analyze complex problems, discern reliable information, and develop innovative solutions, irrespective of the specific tools available. Technology evolves rapidly; the ability to learn, adapt, and think independently will always transcend the utility of any particular software or hardware. For example, a student trained in critical analysis can evaluate the ethical implications of AI, a skill not directly taught through coding.\n\nSecondly, emphasizing human-centric skills like empathy, collaboration, and communication cultivates well-rounded individuals capable of thriving in diverse professional and social environments. These interpersonal competencies are crucial for teamwork, leadership, and navigating the complexities of human interaction, aspects where technology serves merely as a facilitator, not a substitute. A project manager with strong communication skills will always outperform a technically brilliant but socially isolated counterpart.\n\nOption A, while seemingly pragmatic, risks creating a workforce narrowly specialized in current technologies, which could become obsolete. Over-reliance on specific tech skills without a foundational understanding of critical thought and human interaction leaves individuals vulnerable to rapid technological shifts. It’s akin to teaching someone to operate a specific machine without understanding the underlying engineering principles.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "cultural festivals in Canada",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-056-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short social media post sharing your experience of attending a cultural festival.",
+      "modelAnswer": "I firmly believe that Option A, prioritizing investment in renewable energy sources, is the more advantageous path forward for our community. While Option B, enhancing public transportation, holds merit, the long-term benefits and broader impact of renewable energy make it the superior choice.\n\nFirstly, investing in renewables directly addresses climate change, a pressing global issue with local ramifications. By developing solar farms or wind turbines, we reduce our reliance on fossil fuels, leading to cleaner air and a healthier environment for all residents. This not only improves public health by reducing respiratory illnesses but also positions our community as a leader in sustainable practices, attracting environmentally conscious businesses and residents. For instance, a new solar array could power municipal buildings, significantly cutting operational costs and carbon emissions.\n\nSecondly, renewable energy projects foster economic growth and job creation within the community. The development, installation, and maintenance of these systems require skilled labor, providing local employment opportunities that are often stable and well-paying. This contrasts with public transportation upgrades, which, while beneficial, typically offer fewer new, specialized job roles in the long run. Furthermore, energy independence through renewables can stabilize utility costs for residents and businesses, shielding them from volatile global fuel prices.\n\nWhile improved public transportation is undoubtedly valuable for reducing traffic congestion and increasing accessibility, its impact is more localized and incremental compared to the transformative potential of a robust renewable energy infrastructure. The benefits of cleaner air, a healthier environment, and sustained economic development through green jobs offer a more profound and far-reaching positive impact on the entire community.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "cultural festivals in Canada",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

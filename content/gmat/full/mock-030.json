@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-030",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 30",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-030",
+      "file": "gmat/quant/test-030.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-030",
+      "file": "gmat/verbal/test-030.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-030",
+      "file": "gmat/data-insights/test-030.json"
+    }
+  ]
+}

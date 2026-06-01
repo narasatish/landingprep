@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-002",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 2",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-002",
+      "file": "gmat/quant/test-002.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-002",
+      "file": "gmat/verbal/test-002.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-002",
+      "file": "gmat/data-insights/test-002.json"
+    }
+  ]
+}

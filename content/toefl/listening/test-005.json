@@ -1,0 +1,468 @@
+{
+  "id": "toefl-listening-005",
+  "exam": "toefl",
+  "section": "listening",
+  "type": "section",
+  "title": "TOEFL iBT Listening Practice Test 5",
+  "variant": "ibt",
+  "durationSeconds": 1350,
+  "questionCount": 28,
+  "instructions": "Listen to each conversation and lecture and answer the questions. You will hear each recording only once. Conversations have 5 questions each; lectures have 6 questions each.",
+  "listeningScripts": [
+    {
+      "id": "toefl-listening-005-s1",
+      "type": "conversation",
+      "title": "A student consults a professor about a failing grade on an essay",
+      "script": "A student meets with his English composition professor to understand why his essay received a failing grade. The professor explains that the essay lacked a clear thesis statement and that the body paragraphs did not develop the argument logically — they felt disconnected from one another. The student admits he wrote it the night before the deadline. The professor shows him examples of strong and weak thesis statements. She offers to accept a revised version if submitted within one week, with a maximum score of 70 percent. The professor also recommends the student visit the writing centre for support, noting that the writing centre tutors are specifically trained in composition. The student agrees and schedules a writing centre appointment."
+    },
+    {
+      "id": "toefl-listening-005-s2",
+      "type": "conversation",
+      "title": "A student discusses thesis research on renewable energy with her professor",
+      "script": "A graduate student meets with her thesis supervisor to discuss the direction of her research on community solar energy adoption. The supervisor suggests narrowing the focus from all renewable energy to specifically community solar, as the broader topic would be too large for a master's thesis. The student proposes using mixed methods — a survey combined with focus groups — to capture both quantitative data on adoption rates and qualitative insights about community attitudes. The supervisor is enthusiastic but recommends the student pilot-test the survey instrument with ten participants before full deployment to check for ambiguous questions. He also advises her to apply for IRB approval immediately since the process can take six to eight weeks."
+    },
+    {
+      "id": "toefl-listening-005-s3",
+      "type": "lecture",
+      "discipline": "ecology",
+      "title": "The Role of Fire in Forest Ecosystems",
+      "script": "Good morning. Today I want to talk about something that might seem counterintuitive at first — the idea that fire is not simply a destructive force in forest ecosystems but actually a critical ecological process.\n\nFor most of the twentieth century, land management agencies in North America pursued a policy of total fire suppression. The thinking was straightforward: fire destroys timber, kills wildlife, and threatens communities. But this policy had unintended consequences that we are still dealing with today.\n\nThe key concept I want you to understand is the fire regime — the characteristic pattern of fire frequency, intensity, and seasonality in a given ecosystem. Many ecosystems evolved under regular, low-intensity surface fires that cleared dead material, released nutrients into the soil, and created habitat diversity. When these fires were suppressed for decades, fuel loads — the accumulated dead wood and brush — built up to abnormal levels. When fires finally occur in these fuel-loaded landscapes, they often become catastrophic stand-replacing fires that kill even the largest trees.\n\nThe giant sequoia of California is a fascinating example. Its cones can remain closed on the tree for up to twenty years, held shut by a resin that only melts at the high temperatures produced by fire. When fire opens the cones, seeds fall onto the ash-fertilised mineral soil created by the fire — the ideal germination environment. Without periodic fire, the sequoia cannot regenerate effectively.\n\nEcologists distinguish between fire-adapted and fire-sensitive ecosystems. Fire-adapted communities — including many grasslands, pine forests, and Mediterranean shrublands — have evolved with regular fire and depend on it for nutrient cycling and species diversity. Fire-sensitive communities, such as temperate rainforests, rarely experience fire and can be severely damaged by it.\n\nModern land management has increasingly embraced prescribed burning — deliberately setting controlled fires under safe conditions — as a tool to restore natural fire regimes and reduce catastrophic fire risk. This requires careful planning, trained personnel, and community communication. But the ecological evidence strongly supports its use as a management strategy."
+    },
+    {
+      "id": "toefl-listening-005-s4",
+      "type": "lecture",
+      "discipline": "neuroscience",
+      "title": "The Neuroscience of Decision-Making",
+      "script": "Let's shift today to a question that touches both neuroscience and everyday life: how does the brain make decisions? This has been an active research area for about three decades, and the findings have overturned some long-held assumptions about human rationality.\n\nTraditionally, economists modelled human decision-making as a rational process in which people weigh costs and benefits, calculate probabilities, and choose the option that maximises their expected utility. This is called the rational actor model. The problem is that human behaviour frequently violates this model in systematic, predictable ways.\n\nDaniel Kahneman and Amos Tversky's work in the 1970s and 1980s identified what they called cognitive biases — systematic errors in judgment and reasoning. Their most famous finding was loss aversion: humans feel the pain of a loss roughly twice as strongly as they feel the pleasure of an equivalent gain. This is why people behave differently when the same choice is framed as avoiding a loss versus achieving a gain, even when the outcomes are mathematically identical.\n\nNeuroimaging studies have helped us understand the brain regions involved. The prefrontal cortex, particularly the ventromedial prefrontal cortex, integrates emotional signals with deliberate reasoning in value judgments. Patients with damage to this region make poor financial decisions and show deficits in long-term planning, even though their intelligence and short-term memory remain intact — this showed that emotion is not opposed to good decision-making but is actually necessary for it.\n\nThe amygdala, widely known for its role in processing fear and threat, also plays a role in economic decision-making, particularly under uncertainty and risk. Studies with patients who have amygdala damage show they are willing to take much greater financial risks than healthy controls and do not show normal aversion to losses.\n\nThe takeaway from this research is that human decision-making is not purely rational or purely emotional — it involves a continuous interaction between deliberate, slow reasoning and faster, automatic emotional responses. Understanding this interaction has applications in medicine, economics, public policy, and even courtroom law."
+    },
+    {
+      "id": "toefl-listening-005-s5",
+      "type": "lecture",
+      "discipline": "biology/medicine",
+      "title": "The History and Science of Vaccination",
+      "script": "Today I want to trace the history of vaccination from its earliest origins to its modern form, and explain the immunological principles that make it work.\n\nThe concept of deliberate inoculation to prevent disease predates the germ theory of disease by more than a century. In the early eighteenth century, Lady Mary Wortley Montagu observed the practice of variolation in Ottoman Turkey — deliberately exposing people to material from smallpox pustules to produce a mild infection and subsequent immunity. She introduced the practice to England in 1721. Variolation was effective but carried real risks: approximately 2 percent of those variolated died, though this compared favourably to the 30 percent mortality of natural smallpox.\n\nEdward Jenner's 1796 experiment transformed the field. Jenner noticed that milkmaids who had contracted the mild disease cowpox appeared immune to smallpox. He inoculated eight-year-old James Phipps with cowpox material, then deliberately exposed the boy to smallpox — and he did not develop the disease. Jenner called his procedure vaccination, from the Latin vacca, meaning cow. The cowpox virus is now known as vaccinia, and it is closely related enough to the smallpox virus that antibodies produced against one provide protection against the other.\n\nLouis Pasteur and others in the late nineteenth century extended vaccination to other diseases using attenuated — weakened — pathogens. Pasteur's vaccines for cholera in chickens and anthrax in sheep demonstrated that it was possible to systematically weaken a pathogen so that it could stimulate immunity without causing full disease. Robert Koch's identification of specific disease-causing bacteria provided the theoretical foundation for understanding what these vaccines were targeting.\n\nModern vaccines work by introducing an antigen — a substance that the immune system recognises as foreign — to stimulate the production of antibodies and the formation of immunological memory. This means that when the body encounters the real pathogen, it can mount a rapid, effective response before the infection establishes itself. Different vaccine platforms — live attenuated, inactivated, subunit, and the recently developed mRNA vaccines — all achieve this goal through different mechanisms.\n\nHerd immunity describes a threshold at which enough individuals in a population are immune that disease transmission chains cannot be sustained, providing indirect protection even to those who cannot be vaccinated. This threshold varies by pathogen: for measles, it is approximately 95 percent; for polio, roughly 80-85 percent. Declining vaccination rates in some populations have led to the re-emergence of diseases previously considered controlled."
+    }
+  ],
+  "questions": [
+    {
+      "id": "toefl-listening-005-q01",
+      "scriptId": "toefl-listening-005-s1",
+      "num": 1,
+      "questionType": "gist_purpose",
+      "prompt": "Why is the student meeting with the professor?",
+      "options": [
+        "To get an extension on an assignment",
+        "To discuss a failing essay grade",
+        "To complain about the course difficulty",
+        "To negotiate a letter of recommendation"
+      ],
+      "correctAnswer": "To discuss a failing essay grade",
+      "explanation": "The student visits to understand why his essay failed."
+    },
+    {
+      "id": "toefl-listening-005-q02",
+      "scriptId": "toefl-listening-005-s1",
+      "num": 2,
+      "questionType": "detail",
+      "prompt": "What specific problem does the professor identify with the essay?",
+      "options": [
+        "It was too long",
+        "It lacked a clear thesis and had disconnected paragraphs",
+        "The student used the wrong citation style",
+        "The essay covered the wrong topic"
+      ],
+      "correctAnswer": "It lacked a clear thesis and had disconnected paragraphs",
+      "explanation": "The professor cites a missing thesis and disconnected body paragraphs as the main issues."
+    },
+    {
+      "id": "toefl-listening-005-q03",
+      "scriptId": "toefl-listening-005-s1",
+      "num": 3,
+      "questionType": "inference",
+      "prompt": "What can be inferred from the student admitting he wrote the essay the night before?",
+      "options": [
+        "He is a strong student who works quickly",
+        "Rushed preparation contributed to the essay's weaknesses",
+        "The deadline was unfair",
+        "He always writes essays that way successfully"
+      ],
+      "correctAnswer": "Rushed preparation contributed to the essay's weaknesses",
+      "explanation": "The timing admission implies the essay problems resulted from lack of adequate preparation."
+    },
+    {
+      "id": "toefl-listening-005-q04",
+      "scriptId": "toefl-listening-005-s1",
+      "num": 4,
+      "questionType": "detail",
+      "prompt": "What is the maximum grade the student can receive for the revised essay?",
+      "options": [
+        "50 percent",
+        "60 percent",
+        "70 percent",
+        "100 percent"
+      ],
+      "correctAnswer": "70 percent",
+      "explanation": "The professor offers to accept a revision 'with a maximum score of 70 percent.'"
+    },
+    {
+      "id": "toefl-listening-005-q05",
+      "scriptId": "toefl-listening-005-s1",
+      "num": 5,
+      "questionType": "attitude",
+      "prompt": "What is the professor's attitude throughout the meeting?",
+      "options": [
+        "Angry and unwilling to help",
+        "Constructive and willing to offer support",
+        "Dismissive of the student's concerns",
+        "Uncertain about the grade she gave"
+      ],
+      "correctAnswer": "Constructive and willing to offer support",
+      "explanation": "She explains problems, offers examples, allows revision, and recommends the writing centre."
+    },
+    {
+      "id": "toefl-listening-005-q06",
+      "scriptId": "toefl-listening-005-s2",
+      "num": 6,
+      "questionType": "gist_content",
+      "prompt": "What is the main topic of this conversation?",
+      "options": [
+        "Undergraduate course selection",
+        "Graduate thesis research design",
+        "A funding application",
+        "A completed research paper"
+      ],
+      "correctAnswer": "Graduate thesis research design",
+      "explanation": "The conversation is about narrowing and designing the student's thesis research."
+    },
+    {
+      "id": "toefl-listening-005-q07",
+      "scriptId": "toefl-listening-005-s2",
+      "num": 7,
+      "questionType": "detail",
+      "prompt": "Why does the supervisor recommend narrowing the topic?",
+      "options": [
+        "The broader topic is not interesting",
+        "Community solar is more important than other renewables",
+        "The broader topic would be too large for a master's thesis",
+        "The library lacks resources on renewables"
+      ],
+      "correctAnswer": "The broader topic would be too large for a master's thesis",
+      "explanation": "The supervisor explicitly states the broader topic 'would be too large for a master's thesis.'"
+    },
+    {
+      "id": "toefl-listening-005-q08",
+      "scriptId": "toefl-listening-005-s2",
+      "num": 8,
+      "questionType": "function",
+      "prompt": "Why does the supervisor recommend pilot-testing the survey?",
+      "options": [
+        "To reduce the number of participants needed",
+        "To check for and identify ambiguous questions",
+        "To satisfy journal publication requirements",
+        "To earn extra credit in the research course"
+      ],
+      "correctAnswer": "To check for and identify ambiguous questions",
+      "explanation": "He recommends pilot-testing 'to check for ambiguous questions.'"
+    },
+    {
+      "id": "toefl-listening-005-q09",
+      "scriptId": "toefl-listening-005-s2",
+      "num": 9,
+      "questionType": "inference",
+      "prompt": "What can be inferred about the IRB approval process?",
+      "options": [
+        "It is automatic and takes only a day",
+        "It takes much longer than students often expect",
+        "The university rarely approves student research",
+        "It is optional for graduate students"
+      ],
+      "correctAnswer": "It takes much longer than students often expect",
+      "explanation": "The supervisor's advice to 'apply immediately' since it takes 6-8 weeks implies students underestimate the time."
+    },
+    {
+      "id": "toefl-listening-005-q10",
+      "scriptId": "toefl-listening-005-s2",
+      "num": 10,
+      "questionType": "attitude",
+      "prompt": "How does the supervisor react to the student's mixed-methods proposal?",
+      "options": [
+        "He rejects it entirely",
+        "He is enthusiastic but suggests a refinement",
+        "He says only quantitative methods should be used",
+        "He is indifferent"
+      ],
+      "correctAnswer": "He is enthusiastic but suggests a refinement",
+      "explanation": "The supervisor 'is enthusiastic' but recommends the pilot-test refinement."
+    },
+    {
+      "id": "toefl-listening-005-q11",
+      "scriptId": "toefl-listening-005-s3",
+      "num": 11,
+      "questionType": "gist_content",
+      "prompt": "What is the lecture mainly about?",
+      "options": [
+        "How to fight forest fires",
+        "The ecological role and management of fire in forests",
+        "Why all forests should be burned",
+        "The history of fire suppression policy only"
+      ],
+      "correctAnswer": "The ecological role and management of fire in forests",
+      "explanation": "The lecture covers fire's ecological role, the consequences of suppression, and modern management."
+    },
+    {
+      "id": "toefl-listening-005-q12",
+      "scriptId": "toefl-listening-005-s3",
+      "num": 12,
+      "questionType": "detail",
+      "prompt": "What does the professor say was the consequence of total fire suppression?",
+      "options": [
+        "Forests became more diverse",
+        "Fuel loads built up to abnormal levels",
+        "Wildlife populations increased dramatically",
+        "Water quality improved"
+      ],
+      "correctAnswer": "Fuel loads built up to abnormal levels",
+      "explanation": "Suppression allowed dead wood and brush to accumulate, increasing catastrophic fire risk."
+    },
+    {
+      "id": "toefl-listening-005-q13",
+      "scriptId": "toefl-listening-005-s3",
+      "num": 13,
+      "questionType": "function",
+      "prompt": "Why does the professor mention giant sequoia cones?",
+      "options": [
+        "To show that sequoias are endangered",
+        "To illustrate how some species depend on fire for reproduction",
+        "To compare California with other forest regions",
+        "To criticise fire suppression policies"
+      ],
+      "correctAnswer": "To illustrate how some species depend on fire for reproduction",
+      "explanation": "The sequoia example demonstrates fire-dependency in reproduction — cones open only in fire-generated heat."
+    },
+    {
+      "id": "toefl-listening-005-q14",
+      "scriptId": "toefl-listening-005-s3",
+      "num": 14,
+      "questionType": "inference",
+      "prompt": "What can be inferred about ecosystems that are fire-adapted?",
+      "options": [
+        "They are damaged by any fire",
+        "They evolved under conditions that included regular fire",
+        "They should never be subject to prescribed burning",
+        "They are found only in tropical regions"
+      ],
+      "correctAnswer": "They evolved under conditions that included regular fire",
+      "explanation": "The professor defines fire-adapted ecosystems as those that 'evolved under regular, low-intensity surface fires.'"
+    },
+    {
+      "id": "toefl-listening-005-q15",
+      "scriptId": "toefl-listening-005-s3",
+      "num": 15,
+      "questionType": "attitude",
+      "prompt": "What is the professor's attitude toward prescribed burning?",
+      "options": [
+        "Strongly opposed",
+        "Neutral and uncommitted",
+        "Supportive based on ecological evidence",
+        "Uncertain whether it is legal"
+      ],
+      "correctAnswer": "Supportive based on ecological evidence",
+      "explanation": "The professor states 'the ecological evidence strongly supports its use as a management strategy.'"
+    },
+    {
+      "id": "toefl-listening-005-q16",
+      "scriptId": "toefl-listening-005-s3",
+      "num": 16,
+      "questionType": "organization",
+      "prompt": "How does the professor organise the lecture?",
+      "options": [
+        "By listing unrelated facts about fire",
+        "By moving from historical policy to ecological concepts to a management solution",
+        "By presenting a debate between two scientists",
+        "By describing only one case study in detail"
+      ],
+      "correctAnswer": "By moving from historical policy to ecological concepts to a management solution",
+      "explanation": "The lecture progresses from suppression history → fire regime concept → examples → modern management."
+    },
+    {
+      "id": "toefl-listening-005-q17",
+      "scriptId": "toefl-listening-005-s4",
+      "num": 17,
+      "questionType": "gist_content",
+      "prompt": "(17) What is the lecture mainly about?",
+      "options": [
+        "How to make better financial investments",
+        "The neuroscience and psychology of human decision-making",
+        "A critique of the work of Daniel Kahneman",
+        "Brain surgery for decision disorders"
+      ],
+      "correctAnswer": "The neuroscience and psychology of human decision-making",
+      "explanation": "The lecture covers the psychology and neuroscience of how humans make decisions."
+    },
+    {
+      "id": "toefl-listening-005-q18",
+      "scriptId": "toefl-listening-005-s4",
+      "num": 18,
+      "questionType": "detail",
+      "prompt": "What is loss aversion as described in the lecture?",
+      "options": [
+        "The tendency to avoid all financial decisions",
+        "Feeling losses about twice as strongly as equivalent gains",
+        "A rare neurological condition",
+        "A strategy used by stock traders"
+      ],
+      "correctAnswer": "Feeling losses about twice as strongly as equivalent gains",
+      "explanation": "Kahneman and Tversky found humans 'feel the pain of a loss roughly twice as strongly as the pleasure of an equivalent gain.'"
+    },
+    {
+      "id": "toefl-listening-005-q19",
+      "scriptId": "toefl-listening-005-s4",
+      "num": 19,
+      "questionType": "function",
+      "prompt": "Why does the professor discuss patients with ventromedial prefrontal cortex damage?",
+      "options": [
+        "To show that intelligence predicts good decisions",
+        "To argue that emotion interferes with decision-making",
+        "To demonstrate that emotion is necessary for good decision-making",
+        "To criticise brain surgery as treatment"
+      ],
+      "correctAnswer": "To demonstrate that emotion is necessary for good decision-making",
+      "explanation": "These patients make poor decisions despite intact intelligence, showing emotion is required."
+    },
+    {
+      "id": "toefl-listening-005-q20",
+      "scriptId": "toefl-listening-005-s4",
+      "num": 20,
+      "questionType": "inference",
+      "prompt": "What does the amygdala damage research suggest about risk-taking?",
+      "options": [
+        "Fear responses are completely unrelated to financial decisions",
+        "Normal fear and loss aversion help regulate financial risk-taking",
+        "People without amygdalas make better investments",
+        "Risk-taking is controlled only by the prefrontal cortex"
+      ],
+      "correctAnswer": "Normal fear and loss aversion help regulate financial risk-taking",
+      "explanation": "Amygdala-damaged patients take excessive risks, suggesting the amygdala normally limits risk-taking."
+    },
+    {
+      "id": "toefl-listening-005-q21",
+      "scriptId": "toefl-listening-005-s4",
+      "num": 21,
+      "questionType": "detail",
+      "prompt": "What does the professor say about the rational actor model?",
+      "options": [
+        "It accurately predicts all human choices",
+        "Human behaviour frequently violates it in systematic ways",
+        "It was developed by neuroscientists",
+        "It explains loss aversion perfectly"
+      ],
+      "correctAnswer": "Human behaviour frequently violates it in systematic ways",
+      "explanation": "The professor states people 'frequently violate this model in systematic, predictable ways.'"
+    },
+    {
+      "id": "toefl-listening-005-q22",
+      "scriptId": "toefl-listening-005-s4",
+      "num": 22,
+      "questionType": "connecting_content",
+      "prompt": "According to the lecture, what is the relationship between emotion and reasoning in decision-making?",
+      "options": [
+        "They are entirely separate processes",
+        "Emotion always overrides reasoning",
+        "They continuously interact in producing decisions",
+        "Reasoning always controls emotion"
+      ],
+      "correctAnswer": "They continuously interact in producing decisions",
+      "explanation": "The professor concludes that decision-making 'involves a continuous interaction between deliberate, slow reasoning and faster, automatic emotional responses.'"
+    },
+    {
+      "id": "toefl-listening-005-q23",
+      "scriptId": "toefl-listening-005-s5",
+      "num": 23,
+      "questionType": "gist_content",
+      "prompt": "(23) What is the lecture mainly about?",
+      "options": [
+        "The dangers of modern vaccines",
+        "The history and immunological basis of vaccination",
+        "How to manufacture vaccines",
+        "A biography of Edward Jenner"
+      ],
+      "correctAnswer": "The history and immunological basis of vaccination",
+      "explanation": "The lecture traces vaccination from early history through modern immunology."
+    },
+    {
+      "id": "toefl-listening-005-q24",
+      "scriptId": "toefl-listening-005-s5",
+      "num": 24,
+      "questionType": "detail",
+      "prompt": "According to the lecture, what was the mortality rate of variolation?",
+      "options": [
+        "About 0.1 percent",
+        "About 2 percent",
+        "About 10 percent",
+        "About 30 percent"
+      ],
+      "correctAnswer": "About 2 percent",
+      "explanation": "The professor states variolation killed 'approximately 2 percent of those variolated.'"
+    },
+    {
+      "id": "toefl-listening-005-q25",
+      "scriptId": "toefl-listening-005-s5",
+      "num": 25,
+      "questionType": "function",
+      "prompt": "Why does the professor mention James Phipps?",
+      "options": [
+        "To show that Jenner's methods were unethical",
+        "To illustrate the experimental basis of Jenner's vaccination discovery",
+        "To argue that children should not be vaccinated",
+        "To compare Jenner's work with Pasteur's"
+      ],
+      "correctAnswer": "To illustrate the experimental basis of Jenner's vaccination discovery",
+      "explanation": "The Phipps case is Jenner's key experimental proof that cowpox exposure prevented smallpox."
+    },
+    {
+      "id": "toefl-listening-005-q26",
+      "scriptId": "toefl-listening-005-s5",
+      "num": 26,
+      "questionType": "vocabulary_in_context",
+      "prompt": "The word 'attenuated' as used in the lecture is closest in meaning to:",
+      "options": [
+        "strengthened",
+        "eliminated",
+        "weakened",
+        "concentrated"
+      ],
+      "correctAnswer": "weakened",
+      "explanation": "Pasteur worked with 'attenuated — weakened — pathogens.'"
+    },
+    {
+      "id": "toefl-listening-005-q27",
+      "scriptId": "toefl-listening-005-s5",
+      "num": 27,
+      "questionType": "inference",
+      "prompt": "What can be inferred about herd immunity and measles?",
+      "options": [
+        "Only 50 percent immunity is needed to stop measles",
+        "Measles requires a higher vaccination rate than most diseases to achieve herd immunity",
+        "Measles has no herd immunity threshold",
+        "Herd immunity only applies to polio"
+      ],
+      "correctAnswer": "Measles requires a higher vaccination rate than most diseases to achieve herd immunity",
+      "explanation": "Measles requires ~95% immunity versus ~80-85% for polio, indicating it needs a higher threshold."
+    },
+    {
+      "id": "toefl-listening-005-q28",
+      "scriptId": "toefl-listening-005-s5",
+      "num": 28,
+      "questionType": "connecting_content",
+      "prompt": "How are Jenner's and Pasteur's contributions to vaccination related?",
+      "options": [
+        "They worked together on the same vaccines",
+        "Jenner developed the concept; Pasteur extended it to other diseases using weakened pathogens",
+        "Pasteur discovered vaccines; Jenner improved them",
+        "They had conflicting theories about immunity"
+      ],
+      "correctAnswer": "Jenner developed the concept; Pasteur extended it to other diseases using weakened pathogens",
+      "explanation": "The lecture presents Jenner as the founder and Pasteur as extending the approach systematically."
+    }
+  ]
+}

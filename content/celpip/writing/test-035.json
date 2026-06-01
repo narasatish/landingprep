@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-035",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 35",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-035-q01",
+      "questionType": "writing_task",
+      "prompt": "Write an email to a friend explaining how to use the city's public transit system.",
+      "modelAnswer": "I strongly advocate for Option B: prioritizing a diverse range of recreational activities over Option A's focus on a state-of-the-art fitness centre. While a high-quality gym has its merits, a broader recreational offering fosters more comprehensive community well-being and caters to a wider demographic.\n\nFirstly, diverse activities promote social cohesion and inclusivity. Imagine community members bonding over a shared love for gardening in a new community garden, parents connecting at an enhanced playground, or seniors engaging in gentle tai chi classes in a multi-purpose hall. These options foster intergenerational connections and cater to varying physical abilities and interests, unlike a gym which primarily attracts those already inclined towards traditional fitness.\n\nSecondly, a varied approach encourages sustained engagement and mental well-being. Not everyone enjoys weightlifting or treadmills. Offering options like walking trails, art workshops, or even quiet reading nooks within a community centre can significantly reduce stress, stimulate creativity, and provide outlets for relaxation that a gym simply cannot.\n\nOption A, while appealing to a subset of the population, risks becoming a solitary pursuit for many and may not address the holistic needs of the entire community. A diverse recreational portfolio ensures that everyone finds an activity that resonates, ultimately leading to a more vibrant, healthy, and connected community.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "public transit in Canada",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-035-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a complaint letter to the transit authority about a service issue you experienced.",
+      "modelAnswer": "I wholeheartedly advocate for Option B: prioritizing a healthy work-life balance, even if it means slower career advancement. While career progression is undoubtedly valuable, a relentless pursuit of it at the expense of personal well-being is ultimately unsustainable and detrimental.\n\nFirstly, a healthy work-life balance fosters greater long-term productivity and creativity. When individuals have adequate time for rest, hobbies, and family, they return to work refreshed, focused, and more innovative. Conversely, burnout from overwork leads to decreased efficiency, poor decision-making, and increased stress, ultimately hindering professional growth despite initial accelerated advancement. For instance, an employee who takes regular breaks and holidays is less likely to make costly errors than one constantly working overtime.\n\nSecondly, prioritizing personal well-being cultivates a more fulfilling and sustainable life beyond professional achievements. Strong relationships, personal interests, and physical health are foundational to happiness and resilience. Sacrificing these for career advancement can lead to regret and isolation, irrespective of one's professional title or salary. A promotion gained at the cost of missing significant family milestones or neglecting one's health feels hollow in the long run.\n\nOption A, while appealing for its promise of rapid career growth, often overlooks the significant personal toll. The intense pressure and prolonged hours required to \"climb the ladder quickly\" frequently lead to burnout, strained personal relationships, and health issues, making the accelerated progress short-lived or unenjoyable. The trade-off is simply too high.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "public transit in Canada",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-006",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 6",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-006-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You are a tenant who needs to break your lease agreement six months early due to a job relocation to another city.",
+      "recipient": "your landlord",
+      "bulletPoints": [
+        "Explain your reason for needing to break the lease",
+        "State when you plan to vacate the property",
+        "Ask about the process and any potential penalties"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You attended a training workshop organised by your employer but found it unhelpful. Write a letter to your manager explaining your concerns, what you had expected, and what kind of training would be more beneficial.",
+      "modelAnswer": "Dear Mr. Henderson,\n\nI am writing to you today with an urgent matter regarding my tenancy at 123 Maple Street. As you know, my current lease agreement runs until August 31, 2024. However, due to unforeseen circumstances, I need to break the lease six months early.\n\nI recently received an unexpected job offer in Vancouver, which is a significant career advancement opportunity that I cannot decline. The new role requires me to relocate by March 1, 2024. Therefore, I plan to vacate the property by February 29, 2024.\n\nI understand that breaking a lease early has implications, and I am committed to cooperating fully to ensure a smooth transition. Could you please advise me on the proper procedure for early lease termination? I would also appreciate it if you could clarify any potential penalties or fees associated with breaking the lease early, as outlined in our agreement.\n\nThank you for your understanding and prompt attention to this matter. I look forward to hearing from you soon.\n\nSincerely,\n\nSarah Chen"
+    },
+    {
+      "id": "celpip-writing-006-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city is considering a new approach to reducing traffic congestion in the downtown core. Which policy do you prefer?",
+      "optionA": "Introduce a congestion charge for vehicles entering the downtown area on weekdays",
+      "optionB": "Expand free bicycle-sharing stations throughout the city to encourage cycling",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A national environmental agency is surveying Canadians about climate change concerns. Describe what environmental issue you are most concerned about, why it matters to you, and what action you would like government to take.",
+      "modelAnswer": "I strongly advocate for Option A: introducing a congestion charge for vehicles entering the downtown area on weekdays. This policy offers a direct and effective solution to reducing traffic congestion. Firstly, a congestion charge provides a powerful financial disincentive for non-essential vehicle use, compelling commuters to consider alternative transport like public transit or carpooling. For instance, cities like London have seen significant reductions in traffic volumes and journey times after implementing similar charges. \n\nSecondly, the revenue generated from these charges can be strategically reinvested into improving public transportation infrastructure, making it more appealing and efficient for citizens. This could include funding for new bus routes, increased train frequencies, or enhanced accessibility, creating a positive feedback loop for sustainable urban mobility.\n\nWhile Option B, expanding free bicycle-sharing stations, is commendable for promoting active transport, its impact on widespread congestion reduction in a large downtown core is likely to be limited. Cycling is not feasible for everyone due to distance, weather, or physical limitations, especially for those commuting from further suburbs or needing to transport goods. A congestion charge, conversely, targets the root cause of the problem by directly addressing vehicle volume."
+    }
+  ]
+}

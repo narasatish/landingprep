@@ -1,0 +1,91 @@
+{
+  "id": "ielts-writing-022",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 22",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-022-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The graph below shows the number of students enrolled in online courses compared with traditional classroom courses between 2015 and 2023. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "online education",
+      "modelAnswer": "The line graph illustrates the number of students enrolled in online courses compared with traditional classroom courses between 2015 and 2023. Units are presented in thousands.\n\nOverall, the most striking feature is the dramatic reversal in popularity between the two course types. While traditional classroom enrollment saw a steady decline over the period, online course enrollment experienced a significant and consistent rise, ultimately surpassing traditional courses by a substantial margin.\n\nIn 2015, traditional classroom courses were significantly more popular, with 400,000 students, whereas online courses attracted only 150,000. Over the next four years, traditional enrollment gradually fell to 320,000 in 2019, while online enrollment steadily increased, reaching 290,000 in the same year. The gap between the two was narrowing but traditional courses remained dominant.\n\nThe trend accelerated sharply from 2019 onwards. Online course enrollment surged, nearly doubling to 380,000 in 2020 and continuing its upward trajectory to peak at 520,000 students in 2023. Conversely, traditional classroom enrollment continued its decline, falling to 280,000 in 2020 and ending the period at just 210,000. By 2023, online courses had become the preferred option, enrolling more than twice the number of students as traditional courses.",
+      "visual": {
+        "chartType": "line",
+        "title": "Student Enrollment in Online vs. Traditional Courses (2015-2023)",
+        "yLabel": "Number of Students (thousands)",
+        "xAxis": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Online Courses",
+            "values": [
+              150,
+              170,
+              200,
+              240,
+              290,
+              380,
+              450,
+              490,
+              520
+            ]
+          },
+          {
+            "label": "Traditional Classroom Courses",
+            "values": [
+              400,
+              390,
+              370,
+              350,
+              320,
+              280,
+              250,
+              230,
+              210
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-022-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Online education is increasingly popular and offers many advantages. However, some argue that it can never fully replace traditional classroom learning. To what extent do you agree or disagree?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "online education",
+      "modelAnswer": "The growing prevalence of online learning platforms is undeniable, presenting numerous benefits that have transformed educational access. Nevertheless, a compelling argument persists that these virtual environments are inherently limited in their capacity to entirely supersede conventional, in-person pedagogical models. I strongly agree with the latter perspective, believing that while online education is valuable, it possesses intrinsic limitations preventing it from becoming a complete substitute for traditional classroom settings.\n\nProponents of classroom learning often highlight its unique social and interactive dimensions, which are difficult to replicate digitally. For instance, the spontaneous discussions, collaborative group projects, and immediate, nuanced feedback inherent in a physical classroom foster critical thinking, interpersonal skills, and a sense of community that online forums struggle to emulate. A university student studying literature, for example, benefits immensely from real-time debates with peers and a professor's direct, non-verbal cues during a Socratic seminar, aspects largely diminished in an asynchronous online discussion board, impacting the depth of intellectual engagement and social development.\n\nFurthermore, certain disciplines and practical skills necessitate a physical presence and hands-on experience that virtual instruction cannot adequately provide. Consider vocational training or scientific laboratory work; a medical student must perform dissections and surgical procedures under direct supervision, and an engineering student requires access to specialized equipment and workshops. While simulations offer some utility, they fundamentally lack the tactile feedback, unexpected challenges, and real-world consequences crucial for mastering these practical competencies, underscoring the indispensable role of traditional, equipped learning environments.\n\nIn conclusion, while online education offers unparalleled flexibility and reach, its inability to fully replicate the rich social dynamics, spontaneous interactions, and practical, hands-on experiences of conventional classrooms means it cannot, and should not, entirely replace them. The strengths of both approaches suggest a blended model might be the most effective way forward."
+    }
+  ],
+  "variant": "academic"
+}

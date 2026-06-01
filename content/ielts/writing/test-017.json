@@ -1,0 +1,94 @@
+{
+  "id": "ielts-writing-017",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 17",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-017-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The graphs show crime rates in a city before and after the introduction of a community policing scheme. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "crime and justice",
+      "modelAnswer": "The line graphs illustrate changes in four types of crime in a city before and after the implementation of a community policing scheme. Overall, it is clear that all categories of crime experienced a noticeable decline following the introduction of the scheme, with vandalism and burglary showing the most significant reductions.\n\nBefore the community policing scheme, crime rates were consistently higher. In the six months prior to the scheme (Jan-Jun Before), vandalism was the most prevalent crime at 150 incidents per 100,000 population, followed by burglary at 120, vehicle theft at 90, and assault at 70. These figures saw slight decreases in the subsequent six months (Jul-Dec Before), dropping to 140 for vandalism, 115 for burglary, 85 for vehicle theft, and 65 for assault.\n\nAfter the scheme was introduced, all crime rates fell considerably. From January to June After, vandalism dropped to 90 incidents, and burglary to 70. Vehicle theft decreased to 50, and assault saw a more modest reduction to 60. By the final period (Jul-Dec After), these downward trends continued, with vandalism reaching 80, burglary 60, vehicle theft 45, and assault 55. This demonstrates a sustained positive impact of community policing on crime reduction across the board.",
+      "visual": {
+        "chartType": "line",
+        "title": "Crime Rates Before and After Community Policing Scheme",
+        "yLabel": "Number of Incidents (per 100,000 population)",
+        "xAxis": [
+          "Jan-Jun Before",
+          "Jul-Dec Before",
+          "Jan-Jun After",
+          "Jul-Dec After"
+        ],
+        "series": [
+          {
+            "label": "Burglary",
+            "values": [
+              120,
+              115,
+              70,
+              60
+            ]
+          },
+          {
+            "label": "Vehicle Theft",
+            "values": [
+              90,
+              85,
+              50,
+              45
+            ]
+          },
+          {
+            "label": "Assault",
+            "values": [
+              70,
+              65,
+              60,
+              55
+            ]
+          },
+          {
+            "label": "Vandalism",
+            "values": [
+              150,
+              140,
+              90,
+              80
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-017-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Some people believe that the best way to reduce crime is through harsh punishments; others think that improving education and social conditions is more effective. Discuss both views and give your own opinion.",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "crime and justice",
+      "modelAnswer": "There is an ongoing debate regarding the most efficacious approach to crime reduction, with some advocating for stringent penalties while others champion improvements in societal infrastructure and educational opportunities. This essay will discuss both perspectives before contending that addressing underlying socio-economic factors is ultimately a more sustainable and humane solution.\n\nProponents of harsh punishments argue that severe deterrents are essential for maintaining law and order. The rationale here is that the fear of significant consequences, such as lengthy incarceration or considerable fines, will dissuade potential offenders from committing illegal acts. For instance, countries with zero-tolerance policies on drug offenses often cite lower rates of drug-related crime, suggesting a direct correlation between strict penalties and reduced illicit activity. This viewpoint emphasizes retribution and the immediate removal of criminals from society.\n\nConversely, a more progressive perspective asserts that crime is often a symptom of deeper societal failings, such as poverty, lack of educational access, and social marginalisation. Enhancing educational provisions and creating equitable social conditions can therefore tackle the root causes of criminal behaviour. A notable example is the significant decrease in youth offending rates observed in communities where investment in after-school programs, vocational training, and mental health services has provided young people with viable alternatives to crime and fostered a sense of belonging. Such initiatives not only prevent crime but also empower individuals to become productive members of society.\n\nIn conclusion, while harsh punishments may offer a temporary solution by deterring some individuals and isolating offenders, a more comprehensive and enduring strategy involves ameliorating the educational and social fabric of communities. It is my firm conviction that investing in people and creating opportunities is the most effective way to foster a society with genuinely lower crime rates."
+    }
+  ],
+  "variant": "academic"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-018",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 18",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-018",
+      "file": "gmat/quant/test-018.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-018",
+      "file": "gmat/verbal/test-018.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-018",
+      "file": "gmat/data-insights/test-018.json"
+    }
+  ]
+}

@@ -1,0 +1,753 @@
+{
+  "id": "celpip-listening-037",
+  "exam": "celpip",
+  "section": "listening",
+  "type": "section",
+  "title": "CELPIP General LS Listening Practice Test 37",
+  "variant": "general_ls",
+  "durationSeconds": 3060,
+  "questionCount": 38,
+  "instructions": "Listen to conversations and answer the questions.",
+  "listeningScripts": [
+    {
+      "id": "celpip-listening-037-s1",
+      "sectionPart": 1,
+      "title": "Conversation: Opening a bank account",
+      "script": "A bank teller explains to a new customer the different types of bank accounts available, the documents needed to open an account, and the differences between debit and credit cards.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
+    },
+    {
+      "id": "celpip-listening-037-s2",
+      "part": 2,
+      "type": "news",
+      "title": "News Report: Renewable Energy Initiative — about healthcare access in rural communities",
+      "script": "This news is about healthcare access in rural communities. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
+      "audioUrl": ""
+    },
+    {
+      "id": "celpip-listening-037-s3",
+      "part": 3,
+      "type": "discussion",
+      "title": "Discussion: Remote Work Policies — about healthcare access in rural communities",
+      "script": "This discussion is about healthcare access in rural communities. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
+      "audioUrl": ""
+    },
+    {
+      "id": "celpip-listening-037-s4",
+      "part": 4,
+      "type": "announcement",
+      "title": "Announcement: Community Centre Changes — about healthcare access in rural communities",
+      "script": "This announcement is about healthcare access in rural communities. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
+      "audioUrl": ""
+    },
+    {
+      "id": "celpip-listening-037-s5",
+      "part": 5,
+      "type": "office",
+      "title": "Office Conversation: Project Deadline — about healthcare access in rural communities",
+      "script": "This office is about healthcare access in rural communities. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
+      "audioUrl": ""
+    },
+    {
+      "id": "celpip-listening-037-s6",
+      "part": 6,
+      "type": "lecture",
+      "title": "Academic Lecture: Urban Planning — about healthcare access in rural communities",
+      "script": "This lecture is about healthcare access in rural communities. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
+      "audioUrl": ""
+    }
+  ],
+  "questions": [
+    {
+      "id": "celpip-listening-037-q01",
+      "questionType": "multiple_choice_single",
+      "part": 1,
+      "audioScriptId": "celpip-listening-037-s1",
+      "prompt": "What is the main purpose of this conversation?",
+      "options": [
+        "To explain a complaint procedure",
+        "To describe available community resources",
+        "To advertise a paid service",
+        "To explain a government policy"
+      ],
+      "correctAnswer": "To describe available community resources",
+      "explanation": "The conversation introduces resources for the community.",
+      "difficulty": "easy",
+      "topic": "opening a bank account"
+    },
+    {
+      "id": "celpip-listening-037-q02",
+      "questionType": "multiple_choice_single",
+      "part": 1,
+      "audioScriptId": "celpip-listening-037-s1",
+      "prompt": "What does the speaker recommend doing first?",
+      "options": [
+        "Visiting the office in person",
+        "Calling the helpline",
+        "Completing an online application",
+        "Asking a neighbour for advice"
+      ],
+      "correctAnswer": "Calling the helpline",
+      "explanation": "The speaker advises calling first to get information.",
+      "difficulty": "easy",
+      "topic": "opening a bank account"
+    },
+    {
+      "id": "celpip-listening-037-q03",
+      "questionType": "multiple_choice_single",
+      "part": 1,
+      "audioScriptId": "celpip-listening-037-s1",
+      "prompt": "What document does the speaker say is required?",
+      "options": [
+        "A passport",
+        "Proof of address",
+        "A reference letter",
+        "A medical certificate"
+      ],
+      "correctAnswer": "Proof of address",
+      "explanation": "The speaker specifies proof of address as the required document.",
+      "difficulty": "easy",
+      "topic": "opening a bank account"
+    },
+    {
+      "id": "celpip-listening-037-q04",
+      "questionType": "multiple_choice_single",
+      "part": 1,
+      "audioScriptId": "celpip-listening-037-s1",
+      "prompt": "What is the speaker's main recommendation?",
+      "options": [
+        "Use public transport",
+        "Compare options before deciding",
+        "Ask a professional for advice",
+        "Register as soon as possible"
+      ],
+      "correctAnswer": "Compare options before deciding",
+      "explanation": "The speaker emphasises comparing before making a choice.",
+      "difficulty": "medium",
+      "topic": "opening a bank account"
+    },
+    {
+      "id": "celpip-listening-037-q05",
+      "questionType": "multiple_choice_single",
+      "part": 1,
+      "audioScriptId": "celpip-listening-037-s1",
+      "prompt": "What problem does the speaker identify?",
+      "options": [
+        "High costs",
+        "Long waiting times",
+        "Lack of information",
+        "Inconvenient location"
+      ],
+      "correctAnswer": "Long waiting times",
+      "explanation": "The speaker notes that waiting times are a challenge.",
+      "difficulty": "medium",
+      "topic": "opening a bank account"
+    },
+    {
+      "id": "celpip-listening-037-q06",
+      "questionType": "multiple_choice_single",
+      "part": 1,
+      "audioScriptId": "celpip-listening-037-s1",
+      "prompt": "What will happen after the listener completes the first step?",
+      "options": [
+        "They will receive a confirmation by email",
+        "They will be called for an interview",
+        "A staff member will visit their home",
+        "They will need to attend a workshop"
+      ],
+      "correctAnswer": "They will receive a confirmation by email",
+      "explanation": "The speaker says email confirmation follows the first step.",
+      "difficulty": "medium",
+      "topic": "opening a bank account"
+    },
+    {
+      "id": "celpip-listening-037-q07",
+      "questionType": "multiple_choice_single",
+      "part": 1,
+      "audioScriptId": "celpip-listening-037-s1",
+      "prompt": "What does the speaker say about the cost?",
+      "options": [
+        "It is free",
+        "There is a one-time fee",
+        "It depends on income",
+        "It requires insurance"
+      ],
+      "correctAnswer": "It is free",
+      "explanation": "The speaker explicitly states the service is free of charge.",
+      "difficulty": "hard",
+      "topic": "opening a bank account"
+    },
+    {
+      "id": "celpip-listening-037-q08",
+      "questionType": "multiple_choice_single",
+      "part": 1,
+      "audioScriptId": "celpip-listening-037-s1",
+      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "options": [
+        "Improving language skills",
+        "Building community connections",
+        "Receiving financial assistance",
+        "Finding employment"
+      ],
+      "correctAnswer": "Receiving financial assistance",
+      "explanation": "Financial assistance is not mentioned as a programme benefit.",
+      "difficulty": "hard",
+      "topic": "opening a bank account"
+    },
+    {
+      "id": "celpip-listening-037-q09",
+      "questionType": "fill_in_the_blank",
+      "part": 1,
+      "audioScriptId": "celpip-listening-037-s1",
+      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
+      "correctAnswer": "research",
+      "difficulty": "medium",
+      "topic": "opening a bank account"
+    },
+    {
+      "id": "celpip-listening-037-q10",
+      "questionType": "fill_in_the_blank",
+      "part": 1,
+      "audioScriptId": "celpip-listening-037-s1",
+      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
+      "correctAnswer": "free",
+      "difficulty": "medium",
+      "topic": "opening a bank account"
+    },
+    {
+      "id": "celpip-listening-037-q11",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "audioScriptId": "celpip-listening-037-s2",
+      "num": 11,
+      "prompt": "What is the main focus of this news report?",
+      "options": [
+        "To promote solar panels",
+        "To discuss a government renewable energy programme",
+        "To criticise fossil fuels",
+        "To interview scientists"
+      ],
+      "correctAnswer": "To discuss a government renewable energy programme",
+      "explanation": "This answer is supported by the news about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q12",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "audioScriptId": "celpip-listening-037-s2",
+      "num": 12,
+      "prompt": "According to the report, what has increased in recent years?",
+      "options": [
+        "Energy costs",
+        "Renewable energy capacity",
+        "Oil imports",
+        "Population"
+      ],
+      "correctAnswer": "Renewable energy capacity",
+      "explanation": "This answer is supported by the news about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q13",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "audioScriptId": "celpip-listening-037-s2",
+      "num": 13,
+      "prompt": "What challenge does the reporter mention?",
+      "options": [
+        "Public opposition",
+        "High installation costs",
+        "Lack of sunlight",
+        "Government opposition"
+      ],
+      "correctAnswer": "High installation costs",
+      "explanation": "This answer is supported by the news about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q14",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "audioScriptId": "celpip-listening-037-s2",
+      "num": 14,
+      "prompt": "What does the spokesperson recommend?",
+      "options": [
+        "Investing in research",
+        "Increasing subsidies",
+        "Reducing regulations",
+        "Raising taxes"
+      ],
+      "correctAnswer": "Increasing subsidies",
+      "explanation": "This answer is supported by the news about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q15",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "audioScriptId": "celpip-listening-037-s2",
+      "num": 15,
+      "prompt": "What statistic is given in the report?",
+      "options": [
+        "10% increase",
+        "25% reduction",
+        "40% increase in capacity",
+        "Doubling of costs"
+      ],
+      "correctAnswer": "40% increase in capacity",
+      "explanation": "This answer is supported by the news about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q16",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "audioScriptId": "celpip-listening-037-s2",
+      "num": 16,
+      "prompt": "What will happen next according to the report?",
+      "options": [
+        "More studies will be done",
+        "A new policy will be announced",
+        "Prices will increase",
+        "Protests will occur"
+      ],
+      "correctAnswer": "A new policy will be announced",
+      "explanation": "This answer is supported by the news about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q17",
+      "questionType": "multiple_choice_single",
+      "part": 3,
+      "audioScriptId": "celpip-listening-037-s3",
+      "num": 17,
+      "prompt": "What are the two speakers mainly discussing?",
+      "options": [
+        "Office redesign",
+        "Remote work company policy",
+        "Vacation scheduling",
+        "Hiring new staff"
+      ],
+      "correctAnswer": "Remote work company policy",
+      "explanation": "This answer is supported by the discussion about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q18",
+      "questionType": "multiple_choice_single",
+      "part": 3,
+      "audioScriptId": "celpip-listening-037-s3",
+      "num": 18,
+      "prompt": "What advantage of remote work does the woman mention?",
+      "options": [
+        "Reduced commute time",
+        "Higher salaries",
+        "Better office equipment",
+        "More vacation days"
+      ],
+      "correctAnswer": "Reduced commute time",
+      "explanation": "This answer is supported by the discussion about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q19",
+      "questionType": "multiple_choice_single",
+      "part": 3,
+      "audioScriptId": "celpip-listening-037-s3",
+      "num": 19,
+      "prompt": "What concern does the man raise?",
+      "options": [
+        "Difficulty collaborating",
+        "Lower salaries",
+        "Smaller offices",
+        "Longer hours"
+      ],
+      "correctAnswer": "Difficulty collaborating",
+      "explanation": "This answer is supported by the discussion about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q20",
+      "questionType": "multiple_choice_single",
+      "part": 3,
+      "audioScriptId": "celpip-listening-037-s3",
+      "num": 20,
+      "prompt": "What solution do the speakers agree on?",
+      "options": [
+        "A hybrid schedule",
+        "Full remote work",
+        "Full office return",
+        "Flexible hours only"
+      ],
+      "correctAnswer": "A hybrid schedule",
+      "explanation": "This answer is supported by the discussion about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q21",
+      "questionType": "multiple_choice_single",
+      "part": 3,
+      "audioScriptId": "celpip-listening-037-s3",
+      "num": 21,
+      "prompt": "What does the woman say about productivity?",
+      "options": [
+        "It has decreased",
+        "It has stayed the same",
+        "It has improved for most employees",
+        "It is impossible to measure"
+      ],
+      "correctAnswer": "It has improved for most employees",
+      "explanation": "This answer is supported by the discussion about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q22",
+      "questionType": "multiple_choice_single",
+      "part": 3,
+      "audioScriptId": "celpip-listening-037-s3",
+      "num": 22,
+      "prompt": "What will the company do next month?",
+      "options": [
+        "Survey employees",
+        "Announce a new policy",
+        "Hire a consultant",
+        "Redesign the office"
+      ],
+      "correctAnswer": "Announce a new policy",
+      "explanation": "This answer is supported by the discussion about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q23",
+      "questionType": "multiple_choice_single",
+      "part": 4,
+      "audioScriptId": "celpip-listening-037-s4",
+      "num": 23,
+      "prompt": "What is the main purpose of this announcement?",
+      "options": [
+        "To introduce a new staff member",
+        "To announce changes to the community centre",
+        "To advertise a new gym",
+        "To cancel a programme"
+      ],
+      "correctAnswer": "To announce changes to the community centre",
+      "explanation": "This answer is supported by the announcement about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q24",
+      "questionType": "multiple_choice_single",
+      "part": 4,
+      "audioScriptId": "celpip-listening-037-s4",
+      "num": 24,
+      "prompt": "What change is being made to the facility?",
+      "options": [
+        "The swimming pool hours",
+        "The gym equipment",
+        "The parking facilities",
+        "The library section"
+      ],
+      "correctAnswer": "The swimming pool hours",
+      "explanation": "This answer is supported by the announcement about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q25",
+      "questionType": "multiple_choice_single",
+      "part": 4,
+      "audioScriptId": "celpip-listening-037-s4",
+      "num": 25,
+      "prompt": "When will the change take effect?",
+      "options": [
+        "Immediately",
+        "Next week",
+        "Next month",
+        "Next year"
+      ],
+      "correctAnswer": "Next month",
+      "explanation": "This answer is supported by the announcement about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q26",
+      "questionType": "multiple_choice_single",
+      "part": 4,
+      "audioScriptId": "celpip-listening-037-s4",
+      "num": 26,
+      "prompt": "Who is most directly affected by this change?",
+      "options": [
+        "Staff members",
+        "Children's programme participants",
+        "Regular gym users",
+        "Senior visitors"
+      ],
+      "correctAnswer": "Regular gym users",
+      "explanation": "This answer is supported by the announcement about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q27",
+      "questionType": "multiple_choice_single",
+      "part": 4,
+      "audioScriptId": "celpip-listening-037-s4",
+      "num": 27,
+      "prompt": "What alternative is offered to members?",
+      "options": [
+        "A discount membership",
+        "Use of a nearby facility",
+        "Free classes",
+        "Extended hours on weekends"
+      ],
+      "correctAnswer": "Use of a nearby facility",
+      "explanation": "This answer is supported by the announcement about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q28",
+      "questionType": "multiple_choice_single",
+      "part": 4,
+      "audioScriptId": "celpip-listening-037-s4",
+      "num": 28,
+      "prompt": "What should members do if they have questions?",
+      "options": [
+        "Call the main number",
+        "Visit in person",
+        "Send an email",
+        "Check the website"
+      ],
+      "correctAnswer": "Check the website",
+      "explanation": "This answer is supported by the announcement about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q29",
+      "questionType": "multiple_choice_single",
+      "part": 5,
+      "audioScriptId": "celpip-listening-037-s5",
+      "num": 29,
+      "prompt": "What problem are the speakers discussing?",
+      "options": [
+        "A missing report",
+        "A delayed project deadline",
+        "A budget shortfall",
+        "A staffing dispute"
+      ],
+      "correctAnswer": "A delayed project deadline",
+      "explanation": "This answer is supported by the office about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q30",
+      "questionType": "multiple_choice_single",
+      "part": 5,
+      "audioScriptId": "celpip-listening-037-s5",
+      "num": 30,
+      "prompt": "What does the supervisor suggest?",
+      "options": [
+        "Work overtime",
+        "Hire a contractor",
+        "Cancel the project",
+        "Request an extension"
+      ],
+      "correctAnswer": "Hire a contractor",
+      "explanation": "This answer is supported by the office about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q31",
+      "questionType": "multiple_choice_single",
+      "part": 5,
+      "audioScriptId": "celpip-listening-037-s5",
+      "num": 31,
+      "prompt": "What has caused the delay according to the employee?",
+      "options": [
+        "Software problems",
+        "Staff illness",
+        "Supplier delays",
+        "Budget cuts"
+      ],
+      "correctAnswer": "Supplier delays",
+      "explanation": "This answer is supported by the office about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q32",
+      "questionType": "multiple_choice_single",
+      "part": 5,
+      "audioScriptId": "celpip-listening-037-s5",
+      "num": 32,
+      "prompt": "What additional resource does the supervisor offer?",
+      "options": [
+        "Extra funding",
+        "A team member",
+        "New equipment",
+        "Training sessions"
+      ],
+      "correctAnswer": "A team member",
+      "explanation": "This answer is supported by the office about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q33",
+      "questionType": "multiple_choice_single",
+      "part": 5,
+      "audioScriptId": "celpip-listening-037-s5",
+      "num": 33,
+      "prompt": "What is the new deadline mentioned?",
+      "options": [
+        "End of this week",
+        "Two weeks from now",
+        "Next quarter",
+        "End of the month"
+      ],
+      "correctAnswer": "Two weeks from now",
+      "explanation": "This answer is supported by the office about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q34",
+      "questionType": "multiple_choice_single",
+      "part": 5,
+      "audioScriptId": "celpip-listening-037-s5",
+      "num": 34,
+      "prompt": "What will the employee do next?",
+      "options": [
+        "Update the schedule",
+        "Contact the supplier",
+        "Write a report",
+        "Brief the team"
+      ],
+      "correctAnswer": "Contact the supplier",
+      "explanation": "This answer is supported by the office about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q35",
+      "questionType": "multiple_choice_single",
+      "part": 6,
+      "audioScriptId": "celpip-listening-037-s6",
+      "num": 35,
+      "prompt": "What is the main topic of this lecture?",
+      "options": [
+        "Historical city design",
+        "Modern urban planning challenges",
+        "The future of architecture",
+        "Building construction methods"
+      ],
+      "correctAnswer": "Modern urban planning challenges",
+      "explanation": "This answer is supported by the lecture about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q36",
+      "questionType": "multiple_choice_single",
+      "part": 6,
+      "audioScriptId": "celpip-listening-037-s6",
+      "num": 36,
+      "prompt": "What historical problem does the professor describe?",
+      "options": [
+        "Poor sanitation",
+        "Traffic congestion",
+        "Lack of parks",
+        "Housing shortages"
+      ],
+      "correctAnswer": "Traffic congestion",
+      "explanation": "This answer is supported by the lecture about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q37",
+      "questionType": "multiple_choice_single",
+      "part": 6,
+      "audioScriptId": "celpip-listening-037-s6",
+      "num": 37,
+      "prompt": "What solution does the professor mention?",
+      "options": [
+        "Mixed-use zoning",
+        "More highways",
+        "Taller buildings",
+        "Suburban expansion"
+      ],
+      "correctAnswer": "Mixed-use zoning",
+      "explanation": "This answer is supported by the lecture about healthcare access in rural communities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "celpip-listening-037-q38",
+      "questionType": "multiple_choice_single",
+      "part": 6,
+      "audioScriptId": "celpip-listening-037-s6",
+      "num": 38,
+      "prompt": "According to the professor, what are two key benefits?",
+      "options": [
+        "Lower costs and faster commutes",
+        "Reduced pollution and more green space",
+        "Bigger buildings and more parking",
+        "Lower taxes and fewer regulations"
+      ],
+      "correctAnswer": "Reduced pollution and more green space",
+      "explanation": "This answer is supported by the lecture about healthcare access in rural communities.",
+      "difficulty": "medium"
+    }
+  ],
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Daily Conversations",
+      "questionRange": [
+        1,
+        7
+      ],
+      "audioDescription": "Part 1: Daily Conversations"
+    },
+    {
+      "partNumber": 2,
+      "title": "Workplace Discussions",
+      "questionRange": [
+        7,
+        13
+      ],
+      "audioDescription": "Part 2: Workplace Discussions"
+    },
+    {
+      "partNumber": 3,
+      "title": "Community Announcements",
+      "questionRange": [
+        13,
+        19
+      ],
+      "audioDescription": "Part 3: Community Announcements"
+    },
+    {
+      "partNumber": 4,
+      "title": "News Broadcasts",
+      "questionRange": [
+        19,
+        25
+      ],
+      "audioDescription": "Part 4: News Broadcasts"
+    },
+    {
+      "partNumber": 5,
+      "title": "Academic Interviews",
+      "questionRange": [
+        25,
+        31
+      ],
+      "audioDescription": "Part 5: Academic Interviews"
+    },
+    {
+      "partNumber": 6,
+      "title": "Extended Monologues",
+      "questionRange": [
+        31,
+        37
+      ],
+      "audioDescription": "Part 6: Extended Monologues"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "gre-writing-002",
+  "exam": "gre",
+  "section": "writing",
+  "type": "section",
+  "title": "GRE Analytical Writing Practice Test 2",
+  "durationSeconds": 1800,
+  "questionCount": 1,
+  "instructions": "Complete both tasks. Task 1 (Issue): 30 minutes, 400–600 words recommended. Task 2 (Argument): 30 minutes, 400–600 words recommended.",
+  "questions": [
+    {
+      "id": "gre-writing-002-q1",
+      "taskType": "issue",
+      "taskNumber": 1,
+      "title": "Analyse an Issue",
+      "timeMinutes": 30,
+      "prompt": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "scoringCriteria": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "wordTarget": 500,
+      "questionType": "writing_task",
+      "writingInstructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "rubric": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "situation": "Universities should focus exclusively on academic subjects and not offer vocational training.",
+      "questionNumber": 1,
+      "modelAnswer": "The assertion that universities should exclusively prioritize academic subjects, thereby eschewing vocational training, presents a compelling yet ultimately narrow view of higher education's multifaceted purpose. While the traditional role of universities has indeed been to cultivate intellectual rigor and advance theoretical knowledge, a complete divorce from vocational training would ignore the evolving needs of students, the labor market, and society itself. A balanced approach, recognizing the symbiotic relationship between theoretical understanding and practical application, is far more beneficial, though the *extent* of vocational integration certainly merits careful consideration.\n\nOne primary reason against an exclusive focus on academics is the imperative for universities to prepare graduates for successful careers in a rapidly changing global economy. A purely academic curriculum, however intellectually stimulating, may leave students ill-equipped for the practical demands of many professions. For instance, a computer science department that focuses solely on algorithms and theoretical computation without offering courses in software engineering, database management, or user interface design would produce graduates with profound knowledge but limited immediate utility in the tech industry. Such practical skills, while perhaps not \"academic\" in the classical sense, are crucial for translating theoretical knowledge into real-world solutions and for securing employment. Universities, as institutions supported by public and private funds, have a responsibility to ensure their graduates are employable and contribute to economic growth.\n\nFurthermore, integrating vocational elements can actually enrich academic subjects by providing tangible contexts for theoretical learning. Consider a university's architecture program. While a deep understanding of art history, structural mechanics, and urban planning theory is indispensable, students also greatly benefit from studios that simulate real-world design projects, workshops on sustainable building materials, or internships with architectural firms. These \"vocational\" components are not mere distractions; they are vital for students to apply abstract principles, understand practical constraints, and develop the problem-solving skills necessary to become effective architects. Without such practical engagement, the academic study of architecture risks becoming an abstract exercise disconnected from its ultimate purpose of shaping the built environment.\n\nHowever, a valid counterargument posits that blurring the lines too much risks diluting the distinct academic mission of universities, potentially transforming them into mere trade schools. This concern holds particular weight for institutions primarily dedicated to fundamental research and the advancement of pure science. A university whose physics department, for example, heavily emphasizes training for specific industrial applications over foundational research into quantum mechanics or astrophysics might indeed sacrifice its unique contribution to universal knowledge. The key lies in maintaining a clear distinction between universities and dedicated vocational colleges, ensuring that academic rigor remains paramount, and that any vocational training offered is either deeply integrated with academic disciplines or serves a specific, well-defined purpose within the university's broader educational mandate.\n\nIn conclusion, while the core mission of universities should remain the pursuit and dissemination of knowledge, an exclusive focus on academic subjects to the complete exclusion of vocational training would be a disservice to students and society. Integrating practical, career-oriented skills can enhance employability, deepen theoretical understanding through application, and ensure universities remain relevant institutions in a dynamic world. The challenge lies not in a stark choice between academics and vocation, but in judiciously blending them to create well-rounded individuals capable of both intellectual inquiry and practical contribution, without compromising the distinct academic identity that defines a university."
+    }
+  ]
+}

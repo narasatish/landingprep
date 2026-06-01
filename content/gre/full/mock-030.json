@@ -1,0 +1,25 @@
+{
+  "id": "gre-full-030",
+  "exam": "gre",
+  "type": "full",
+  "title": "GRE Full Mock Test 30",
+  "durationSeconds": 10800,
+  "instructions": "Full GRE General Test mock. Complete all sections in order.",
+  "sections": [
+    {
+      "section": "verbal",
+      "testId": "gre-verbal-030",
+      "file": "gre/verbal/test-030.json"
+    },
+    {
+      "section": "quant",
+      "testId": "gre-quant-030",
+      "file": "gre/quant/test-030.json"
+    },
+    {
+      "section": "writing",
+      "testId": "gre-writing-030",
+      "file": "gre/writing/test-030.json"
+    }
+  ]
+}

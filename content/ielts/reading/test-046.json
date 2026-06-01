@@ -1,0 +1,586 @@
+{
+  "id": "ielts-reading-046",
+  "exam": "ielts",
+  "section": "reading",
+  "type": "section",
+  "title": "IELTS Academic Reading Practice Test 46",
+  "variant": "academic",
+  "durationSeconds": 3600,
+  "questionCount": 40,
+  "instructions": "Three passages totalling approximately 2,200–2,800 words. Answer all 40 questions. Transfer answers within the 60-minute time limit.",
+  "passages": [
+    {
+      "title": "The Migration of Monarch Butterflies",
+      "text": "The monarch butterfly (Danaus plexippus) undertakes one of the most remarkable animal migrations on Earth. Each autumn, populations east of the Rocky Mountains travel up to 4,500 kilometres from their summer breeding grounds in Canada and the northern United States to overwintering sites in the mountains of central Mexico. What makes this feat particularly astonishing is that no individual butterfly completes a round trip — the generation that flies south in autumn is typically the great-grandchild of the generation that left Mexico the previous spring.\n\nThe navigation system that guides monarchs relies on a time-compensated sun compass. Sensory receptors in the antennae detect the position of the sun relative to the time of day, as measured by an internal circadian clock. Even on partially overcast days, monarchs can detect polarised ultraviolet light and use it for orientation. Researchers at the University of Massachusetts have demonstrated that removing the antennae entirely disorients monarchs, while transplanting magnetic crystals suggests that geomagnetic cues may provide a backup navigation system.\n\nThe overwintering colonies in Mexico congregate in oyamel fir forests at elevations of 2,400–3,600 metres. The cool temperatures at these altitudes keep butterflies in a state of reproductive diapause — a form of dormancy — reducing their metabolic demands dramatically. A single hectare of suitable forest can harbour tens of millions of butterflies. The combined weight of resting clusters causes branches to bow, and the sound of wing beats from a disturbed colony has been described as resembling a rushing stream.\n\nMonarch populations have declined by an estimated 80% over the past two decades. The primary drivers are habitat loss — particularly the agricultural conversion of milkweed-rich meadows, since milkweed is the sole food plant of monarch caterpillars — and deforestation of overwintering habitat in Mexico. Climate change introduces additional pressures, including phenological mismatches between butterfly emergence and milkweed availability, and an increased frequency of severe storms at overwintering sites.",
+      "id": "ielts-reading-046-p1"
+    },
+    {
+      "title": "The History of Public Libraries",
+      "text": "The concept of a library open to the general public is a surprisingly recent development. Although the great ancient libraries of Alexandria and Pergamon served intellectual elites, and monastic libraries of medieval Europe preserved knowledge through transcription, universal access to books emerged only in the nineteenth century, driven by industrialisation, mass literacy campaigns, and shifting democratic ideals.\n\nThe modern public library movement gained critical momentum in Britain with the passage of the Public Libraries Act of 1850, which empowered local councils to levy a halfpenny rate to fund free libraries. The philanthropist Andrew Carnegie subsequently transformed the movement into a global institution: between 1883 and 1929, Carnegie donated approximately 56 million dollars to fund the construction of 2,509 libraries worldwide, primarily across Britain, the United States, Canada, and Australia. Carnegie's motivation was explicitly meritocratic — he believed access to knowledge should be democratised.\n\nThroughout the twentieth century, public libraries evolved beyond their original function as book repositories. They became community hubs providing newspapers, periodicals, and later audiovisual materials, while also offering literacy classes, public lectures, and meeting spaces. In many communities, particularly in lower-income areas, they served as de facto social services, providing warmth, a safe environment, and connection to public information.\n\nThe digital revolution has prompted heated debate about the future of the public library. Circulation of physical books has fallen in many countries as e-books and online databases have proliferated. Library footfall, however, has not declined as sharply as predicted: many institutions report strong demand for computer access, digital literacy training, maker spaces, and community events. Librarians argue that their core value — providing equitable access to information — remains as relevant in the internet age as it was in the nineteenth century.",
+      "id": "ielts-reading-046-p2"
+    },
+    {
+      "title": "The Economics of Carbon Pricing",
+      "text": "Carbon pricing mechanisms assign a monetary cost to greenhouse gas emissions. The two dominant approaches are carbon taxes, which set a fixed price per tonne of CO₂ equivalent, and cap-and-trade systems, which limit total emissions and allow companies to buy and sell the right to emit within that ceiling. Both aim to internalise the social cost of carbon, which the Biden administration's Interagency Working Group estimated at 51 dollars per tonne in 2021, though some economists argue the true figure is far higher.\n\nBritish Columbia's carbon tax, introduced in 2008, is frequently cited as a successful example. Starting at 10 Canadian dollars per tonne and rising progressively to over 65 dollars by 2023, the tax has demonstrably reduced per capita fuel consumption in the province relative to the rest of Canada, while revenues have been partially returned to citizens as dividend cheques and used to reduce corporate and income taxes. Research published in Nature Climate Change found that BC's emissions would have been 5–15% higher without the policy.\n\nCritics of carbon pricing raise concerns on multiple fronts. Politically, carbon taxes are vulnerable to public backlash, as France's gilets jaunes movement illustrated when protests over fuel tax increases paralysed the country in 2018. Economically, critics argue that pricing alone may cause emissions to shift to unregulated jurisdictions — a phenomenon known as carbon leakage. From a distributional perspective, carbon taxes can be regressive, consuming a larger share of income from low-income households.\n\nNevertheless, as of 2024, carbon pricing schemes cover approximately 23% of global greenhouse gas emissions across 73 jurisdictions. The European Union Emissions Trading System, the world's largest carbon market, expanded its scope in 2023 to include shipping and plans to phase out free allowances to heavy industry by 2034. Economists broadly agree that effective carbon pricing, combined with revenue recycling policies, remains one of the most cost-efficient tools for rapid decarbonisation.",
+      "id": "ielts-reading-046-p3"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-reading-046-q001",
+      "questionType": "true_false_not_given",
+      "question": "Individual monarch butterflies complete a full round-trip migration each year.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "No individual completes a round trip.",
+      "questionNumber": 1,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q002",
+      "questionType": "true_false_not_given",
+      "question": "Monarchs can navigate using polarised ultraviolet light on overcast days.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Stated explicitly.",
+      "questionNumber": 2,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q003",
+      "questionType": "true_false_not_given",
+      "question": "Removing monarch antennae improves their navigational ability.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Removing antennae disorients them.",
+      "questionNumber": 3,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q004",
+      "questionType": "true_false_not_given",
+      "question": "Overwintering colonies in Mexico are found at sea level.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Found at 2,400–3,600 metres altitude.",
+      "questionNumber": 4,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q005",
+      "questionType": "multiple_choice",
+      "question": "What is the sole food plant of monarch caterpillars?",
+      "options": [
+        "Oyamel fir",
+        "Milkweed",
+        "Polarised plants",
+        "Fern"
+      ],
+      "correctAnswer": "Milkweed",
+      "explanation": "Milkweed is explicitly stated.",
+      "questionNumber": 5,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q006",
+      "questionType": "multiple_choice",
+      "question": "What causes reproductive diapause in monarchs?",
+      "options": [
+        "Low altitude",
+        "Warm temperatures",
+        "Cool temperatures",
+        "Magnetic fields"
+      ],
+      "correctAnswer": "Cool temperatures",
+      "explanation": "Cool temperatures cause diapause.",
+      "questionNumber": 6,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q007",
+      "questionType": "short_answer",
+      "question": "By what percentage have monarch populations declined?",
+      "correctAnswer": "80%",
+      "questionNumber": 7,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q008",
+      "questionType": "short_answer",
+      "question": "What term describes dormancy in monarchs?",
+      "correctAnswer": "Reproductive diapause",
+      "questionNumber": 8,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q009",
+      "questionType": "true_false_not_given",
+      "question": "Geomagnetic cues are confirmed as the primary navigation mechanism.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "Not Given",
+      "explanation": "Passage says 'may provide' backup only.",
+      "questionNumber": 9,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q010",
+      "questionType": "true_false_not_given",
+      "question": "A disturbed colony sounds like a rushing stream.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 10,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q011",
+      "questionType": "multiple_choice",
+      "question": "What is the primary driver of monarch population decline?",
+      "options": [
+        "Pollution",
+        "Habitat loss and milkweed conversion",
+        "Predation",
+        "Tourism"
+      ],
+      "correctAnswer": "Habitat loss and milkweed conversion",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 11,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q012",
+      "questionType": "true_false_not_given",
+      "question": "Climate change increases frequency of severe storms at overwintering sites.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 12,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q013",
+      "questionType": "short_answer",
+      "question": "What is the maximum distance eastern monarchs travel during autumn migration?",
+      "correctAnswer": "4,500 kilometres",
+      "questionNumber": 13,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-046-p1"
+    },
+    {
+      "id": "ielts-reading-046-q014",
+      "questionType": "true_false_not_given",
+      "question": "The ancient library of Alexandria was open to all members of the public.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Ancient libraries served intellectual elites.",
+      "questionNumber": 14,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q015",
+      "questionType": "true_false_not_given",
+      "question": "The British Public Libraries Act of 1850 empowered councils to raise local funds.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Councils could levy a halfpenny rate.",
+      "questionNumber": 15,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q016",
+      "questionType": "true_false_not_given",
+      "question": "Andrew Carnegie funded over 2,500 libraries worldwide.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "2,509 libraries mentioned.",
+      "questionNumber": 16,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q017",
+      "questionType": "multiple_choice",
+      "question": "What was Carnegie's primary motivation?",
+      "options": [
+        "Profit maximisation",
+        "Meritocratic democratisation of knowledge",
+        "Political advancement",
+        "Religious duty"
+      ],
+      "correctAnswer": "Meritocratic democratisation of knowledge",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 17,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q018",
+      "questionType": "multiple_choice",
+      "question": "What role did libraries serve in lower-income communities?",
+      "options": [
+        "Banking services",
+        "De facto social services",
+        "Government offices",
+        "Religious institutions"
+      ],
+      "correctAnswer": "De facto social services",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 18,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q019",
+      "questionType": "true_false_not_given",
+      "question": "Physical book circulation has declined while library footfall increased.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Footfall has not declined as sharply as predicted.",
+      "questionNumber": 19,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q020",
+      "questionType": "short_answer",
+      "question": "How much did Andrew Carnegie donate total for library construction?",
+      "correctAnswer": "56 million dollars",
+      "questionNumber": 20,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q021",
+      "questionType": "short_answer",
+      "question": "In what year was the Public Libraries Act passed in Britain?",
+      "correctAnswer": "1850",
+      "questionNumber": 21,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q022",
+      "questionType": "true_false_not_given",
+      "question": "Libraries today have abandoned their role in community development.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "They remain community hubs with strong demand.",
+      "questionNumber": 22,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q023",
+      "questionType": "true_false_not_given",
+      "question": "Librarians argue information access remains relevant in the digital age.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 23,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q024",
+      "questionType": "multiple_choice",
+      "question": "Which communities particularly benefited from library social services?",
+      "options": [
+        "Wealthy suburbs",
+        "Lower-income areas",
+        "University towns",
+        "Industrial cities"
+      ],
+      "correctAnswer": "Lower-income areas",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 24,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q025",
+      "questionType": "short_answer",
+      "question": "Name two services modern libraries offer beyond books.",
+      "correctAnswer": "Computer access and digital literacy training (or maker spaces, community events)",
+      "questionNumber": 25,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q026",
+      "questionType": "true_false_not_given",
+      "question": "Cap-and-trade systems set a fixed price per tonne of CO₂.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Fixed price is carbon tax; cap-and-trade limits total emissions.",
+      "questionNumber": 26,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-046-p2"
+    },
+    {
+      "id": "ielts-reading-046-q027",
+      "questionType": "true_false_not_given",
+      "question": "British Columbia's carbon tax started at 10 Canadian dollars per tonne.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 27,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q028",
+      "questionType": "true_false_not_given",
+      "question": "BC emissions would have been 5–15% higher without its carbon tax.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Nature Climate Change research cited.",
+      "questionNumber": 28,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q029",
+      "questionType": "multiple_choice",
+      "question": "What is 'carbon leakage'?",
+      "options": [
+        "Loss of carbon credits",
+        "Emissions shifting to unregulated areas",
+        "Carbon escape from storage",
+        "Tax evasion"
+      ],
+      "correctAnswer": "Emissions shifting to unregulated areas",
+      "explanation": "Defined in passage.",
+      "questionNumber": 29,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q030",
+      "questionType": "short_answer",
+      "question": "What percentage of global emissions does carbon pricing cover as of 2024?",
+      "correctAnswer": "23%",
+      "questionNumber": 30,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q031",
+      "questionType": "short_answer",
+      "question": "What is the world's largest carbon market?",
+      "correctAnswer": "European Union Emissions Trading System",
+      "questionNumber": 31,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q032",
+      "questionType": "true_false_not_given",
+      "question": "Carbon taxes affect lower-income households proportionally more.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Passage states they are regressive.",
+      "questionNumber": 32,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q033",
+      "questionType": "true_false_not_given",
+      "question": "The EU ETS plans to phase out free allowances to heavy industry by 2034.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 33,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q034",
+      "questionType": "multiple_choice",
+      "question": "How did British Columbia use carbon tax revenue?",
+      "options": [
+        "Renewable energy only",
+        "Dividend cheques and tax reductions",
+        "Reforestation exclusively",
+        "Public transport subsidies"
+      ],
+      "correctAnswer": "Dividend cheques and tax reductions",
+      "explanation": "Both uses mentioned.",
+      "questionNumber": 34,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q035",
+      "questionType": "short_answer",
+      "question": "What was the Biden administration's estimate of carbon's social cost per tonne?",
+      "correctAnswer": "51 dollars",
+      "questionNumber": 35,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q036",
+      "questionType": "true_false_not_given",
+      "question": "All economists agree the social cost of carbon is exactly 51 dollars per tonne.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Some argue the figure is far higher.",
+      "questionNumber": 36,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q037",
+      "questionType": "multiple_choice",
+      "question": "Carbon pricing is most effective when combined with:",
+      "options": [
+        "International sanctions",
+        "Revenue recycling policies",
+        "Import tariffs",
+        "Voluntary pledges"
+      ],
+      "correctAnswer": "Revenue recycling policies",
+      "explanation": "Economists confirm this.",
+      "questionNumber": 37,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q038",
+      "questionType": "true_false_not_given",
+      "question": "The EU ETS now includes shipping in its scope.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Expanded in 2023.",
+      "questionNumber": 38,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q039",
+      "questionType": "true_false_not_given",
+      "question": "France's gilets jaunes movement supported carbon tax increases.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Movement protested fuel tax increases.",
+      "questionNumber": 39,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    },
+    {
+      "id": "ielts-reading-046-q040",
+      "questionType": "multiple_choice",
+      "question": "Which region has monarch overwintering colonies?",
+      "options": [
+        "Canada",
+        "Northern US",
+        "Central Mexico",
+        "South America"
+      ],
+      "correctAnswer": "Central Mexico",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 40,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-046-p3"
+    }
+  ]
+}

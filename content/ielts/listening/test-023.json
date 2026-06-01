@@ -1,0 +1,907 @@
+{
+  "id": "ielts-listening-023",
+  "exam": "ielts",
+  "section": "listening",
+  "title": "IELTS Listening Practice Test 23",
+  "durationSeconds": 2400,
+  "questionCount": 40,
+  "listeningScripts": [
+    {
+      "id": "ielts-listening-023-p1",
+      "part": 1,
+      "title": "Arranging a Home Repair Service",
+      "text": "Operator: QuickFix Home Services, how can I help?\nCustomer: Hello, I need someone to repair a broken boiler.\nOperator: Of course. Name and address please?\nCustomer: Anna Petrov. 47 Chestnut Avenue, Barton, postcode BT4 8LD.\nOperator: And a contact number?\nCustomer: 01622 793 450.\nOperator: What type of boiler is it?\nCustomer: A gas combi boiler. The brand is Vaillant.\nOperator: When did it stop working?\nCustomer: Yesterday evening — around seven o'clock.\nOperator: We can send an engineer tomorrow between nine and twelve. The call-out fee is sixty-five pounds. Parts are extra if needed.\nCustomer: That's fine.\nOperator: Our engineer's name is Marcus Webb. He'll call thirty minutes before arriving. Do you need a parking permit?\nCustomer: No, there's free parking on the road.\nOperator: Perfect. You'll receive a text confirmation within the hour.",
+      "formLayout": {
+        "title": "QuickFix Home Services — Service Request Form",
+        "example": {
+          "label": "Service category",
+          "content": "boiler / plumbing / electrical"
+        },
+        "rows": [
+          {
+            "type": "blank",
+            "num": 1,
+            "label": "Customer name",
+            "prefix": "",
+            "suffix": "",
+            "answer": "Anna Petrov"
+          },
+          {
+            "type": "blank",
+            "num": 2,
+            "label": "House number",
+            "prefix": "",
+            "suffix": " Chestnut Avenue",
+            "answer": "47"
+          },
+          {
+            "type": "blank",
+            "num": 3,
+            "label": "Postcode",
+            "prefix": "",
+            "suffix": "",
+            "answer": "BT4 8LD"
+          },
+          {
+            "type": "blank",
+            "num": 4,
+            "label": "Contact telephone",
+            "prefix": "",
+            "suffix": "",
+            "answer": "01622 793 450"
+          },
+          {
+            "type": "blank",
+            "num": 5,
+            "label": "Boiler fuel type",
+            "prefix": "",
+            "suffix": " combi",
+            "answer": "gas"
+          },
+          {
+            "type": "blank",
+            "num": 6,
+            "label": "Boiler brand",
+            "prefix": "",
+            "suffix": "",
+            "answer": "Vaillant"
+          },
+          {
+            "type": "blank",
+            "num": 7,
+            "label": "Appointment window",
+            "prefix": "9 am to ",
+            "suffix": " pm",
+            "answer": "12"
+          },
+          {
+            "type": "blank",
+            "num": 8,
+            "label": "Call-out fee",
+            "prefix": "£",
+            "suffix": "",
+            "answer": "65"
+          },
+          {
+            "type": "blank",
+            "num": 9,
+            "labelBlank": true,
+            "labelSuffix": "'s name",
+            "rightContent": "Marcus Webb",
+            "answer": "Engineer"
+          },
+          {
+            "type": "blank",
+            "num": 10,
+            "label": "Confirmation method",
+            "prefix": "",
+            "suffix": "",
+            "answer": "text / text message"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-listening-023-p2",
+      "part": 2,
+      "title": "Nature Reserve Visitor Centre",
+      "text": "Ranger: Good morning and welcome to Blackwood Nature Reserve. I'm Ranger Clarke, and I'll be giving you an overview of what's on offer here today.\n\nAs you enter the reserve through the main gate, the Visitor Centre is immediately on your right. Inside, you'll find interactive displays about local wildlife, a gift shop, and toilets. We ask all visitors to sign in at reception before exploring.\n\nFrom the Visitor Centre, there are three walking trails marked in different colours. The yellow trail is the shortest — about one kilometre — and is fully paved, making it suitable for wheelchairs and pushchairs. It takes you past Heron Pond, where you can spot herons and kingfishers from the viewing platform at the water's edge.\n\nThe blue trail is three kilometres and takes roughly ninety minutes. It winds through the ancient oak woodland and leads to the Badger Watch Hide, which is particularly active at dawn and dusk. Dogs must be kept on leads along this section.\n\nThe red trail is our most challenging — six kilometres, taking around three hours. It climbs to the ridge viewpoint where on clear days you can see four counties. There's a shelter with picnic benches at the halfway point. Walking boots are strongly recommended.\n\nThe Meadow Café, serving hot drinks and light lunches, is located beyond the Visitor Centre, beside the car park. It closes at four thirty. Emergency services can be reached at the warden's station, which is near the start of the blue trail. Please remember — no fires, no litter, and no picking of plants.\n\nEnjoy your visit!"
+    },
+    {
+      "id": "ielts-listening-023-p3",
+      "part": 3,
+      "title": "Discussion About a Research Project on Urban Noise",
+      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+    },
+    {
+      "id": "ielts-listening-023-p4",
+      "part": 4,
+      "title": "Lecture: Behavioural Economics and Consumer Choice",
+      "text": "In today's lecture I want to explore how behavioural economics challenges the traditional economic model of the rational consumer, and what this means for public policy.\n\nClassical economics assumes that individuals make decisions by carefully weighing costs and benefits and choosing the option that maximises their utility. This is known as the rational actor model. However, decades of research by psychologists and economists has demonstrated that real human decision-making deviates from this ideal in systematic and predictable ways.\n\nOne of the most influential concepts is loss aversion, developed by Daniel Kahneman and Amos Tversky in their prospect theory, published in 1979. They found that losses feel approximately twice as painful as equivalent gains feel pleasurable. This explains why people hold onto failing investments far longer than is rational — a phenomenon known as the disposition effect in financial markets.\n\nAnother important bias is the default effect. When people are automatically enrolled in a programme — whether a pension scheme or an organ donation register — they are far more likely to remain in it than if they had to actively opt in. Several countries, including the UK, have used this insight to design opt-out organ donation systems, dramatically increasing donation rates.\n\nPresent bias describes our tendency to place disproportionate weight on immediate rewards compared to future ones. This helps explain low savings rates, poor diet choices, and insufficient exercise — we consistently undervalue future benefits. Commitment devices, such as automatically increasing pension contributions each year, can counteract this bias.\n\nNudge theory, popularised by Thaler and Sunstein in their 2008 book, proposes that policymakers can guide behaviour without mandates or financial incentives, simply by redesigning the choice environment. Placing healthy foods at eye level in cafeterias, for example, increases their selection rates by up to thirty percent without banning unhealthy options.\n\nCritics of nudge theory argue that it can be paternalistic and that transparency is essential — people should know when their choices are being structured. Despite this debate, governments worldwide are investing in behavioural insights units to improve policy outcomes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-listening-023-q1",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 1,
+      "label": "Customer name",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Anna Petrov",
+      "explanation": "The answer \"Anna Petrov\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the check-in time?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-023-q2",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 2,
+      "label": "House number",
+      "prefix": "",
+      "suffix": " Chestnut Avenue",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "47",
+      "explanation": "The answer \"47\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-023-q3",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 3,
+      "label": "Postcode",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "BT4 8LD",
+      "explanation": "The answer \"BT4 8LD\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the total cost?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-023-q4",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 4,
+      "label": "Contact telephone",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "01622 793 450",
+      "explanation": "The answer \"01622 793 450\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-023-q5",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 5,
+      "label": "Boiler fuel type",
+      "prefix": "",
+      "suffix": " combi",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "gas",
+      "explanation": "The answer \"gas\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the breakfast option?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-023-q6",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 6,
+      "label": "Boiler brand",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Vaillant",
+      "explanation": "The answer \"Vaillant\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-023-q7",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 7,
+      "label": "Appointment window",
+      "prefix": "9 am to ",
+      "suffix": " pm",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "12",
+      "explanation": "The answer \"12\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the room type?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-023-q8",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 8,
+      "label": "Call-out fee",
+      "prefix": "£",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "65",
+      "explanation": "The answer \"65\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-023-q9",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 9,
+      "label": "",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": true,
+      "labelSuffix": "'s name",
+      "rightContent": "Marcus Webb",
+      "answer": "Engineer",
+      "explanation": "The answer \"Engineer\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the cancellation policy?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-023-q10",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 10,
+      "label": "Confirmation method",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "text / text message",
+      "explanation": "The answer \"text / text message\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-023-q11",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 11,
+      "prompt": "What must visitors do before exploring the reserve?",
+      "options": [
+        "pay an entry fee",
+        "sign in at reception",
+        "collect a trail map",
+        "watch a safety video"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The ranger says 'We ask all visitors to sign in at reception'"
+    },
+    {
+      "id": "ielts-listening-023-q12",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 12,
+      "prompt": "Which trail is suitable for wheelchairs?",
+      "options": [
+        "red trail",
+        "blue trail",
+        "yellow trail",
+        "all trails"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The yellow trail is 'fully paved, making it suitable for wheelchairs and pushchairs'"
+    },
+    {
+      "id": "ielts-listening-023-q13",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 13,
+      "prompt": "When is the Badger Watch Hide most active?",
+      "options": [
+        "midday",
+        "afternoon",
+        "dawn and dusk",
+        "after dark"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The hide is 'particularly active at dawn and dusk'"
+    },
+    {
+      "id": "ielts-listening-023-q14",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 14,
+      "prompt": "What can be seen from the ridge viewpoint?",
+      "options": [
+        "three counties",
+        "four counties",
+        "the sea",
+        "the city skyline"
+      ],
+      "correctAnswer": "B",
+      "explanation": "On clear days 'you can see four counties'"
+    },
+    {
+      "id": "ielts-listening-023-q15",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 15,
+      "prompt": "What time does the Meadow Café close?",
+      "options": [
+        "3:30 pm",
+        "4:00 pm",
+        "4:30 pm",
+        "5:00 pm"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The café 'closes at four thirty'"
+    },
+    {
+      "id": "ielts-listening-023-q16",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Blackwood Nature Reserve — Site Map",
+      "mapDescription": "Label the locations A–J on the reserve map.",
+      "mapKey": {
+        "A": "Visitor Centre",
+        "B": "Heron Pond",
+        "C": "Viewing platform",
+        "D": "Oak woodland",
+        "E": "Badger Watch Hide",
+        "F": "Ridge viewpoint",
+        "G": "Picnic shelter",
+        "H": "Meadow Café",
+        "I": "Warden's station",
+        "J": "Kingfisher viewing area"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 16,
+      "prompt": "First building on right after main gate",
+      "correctAnswer": "A",
+      "explanation": "The correct letter is A (Visitor Centre)."
+    },
+    {
+      "id": "ielts-listening-023-q17",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Blackwood Nature Reserve — Site Map",
+      "mapDescription": "Label the locations A–J on the reserve map.",
+      "mapKey": {
+        "A": "Visitor Centre",
+        "B": "Heron Pond",
+        "C": "Viewing platform",
+        "D": "Oak woodland",
+        "E": "Badger Watch Hide",
+        "F": "Ridge viewpoint",
+        "G": "Picnic shelter",
+        "H": "Meadow Café",
+        "I": "Warden's station",
+        "J": "Kingfisher viewing area"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 17,
+      "prompt": "Water feature past yellow trail",
+      "correctAnswer": "B",
+      "explanation": "The correct letter is B (Heron Pond)."
+    },
+    {
+      "id": "ielts-listening-023-q18",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Blackwood Nature Reserve — Site Map",
+      "mapDescription": "Label the locations A–J on the reserve map.",
+      "mapKey": {
+        "A": "Visitor Centre",
+        "B": "Heron Pond",
+        "C": "Viewing platform",
+        "D": "Oak woodland",
+        "E": "Badger Watch Hide",
+        "F": "Ridge viewpoint",
+        "G": "Picnic shelter",
+        "H": "Meadow Café",
+        "I": "Warden's station",
+        "J": "Kingfisher viewing area"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 18,
+      "prompt": "Platform at water's edge for birdwatching",
+      "correctAnswer": "C",
+      "explanation": "The correct letter is C (Viewing platform)."
+    },
+    {
+      "id": "ielts-listening-023-q19",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Blackwood Nature Reserve — Site Map",
+      "mapDescription": "Label the locations A–J on the reserve map.",
+      "mapKey": {
+        "A": "Visitor Centre",
+        "B": "Heron Pond",
+        "C": "Viewing platform",
+        "D": "Oak woodland",
+        "E": "Badger Watch Hide",
+        "F": "Ridge viewpoint",
+        "G": "Picnic shelter",
+        "H": "Meadow Café",
+        "I": "Warden's station",
+        "J": "Kingfisher viewing area"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 19,
+      "prompt": "Wooded area on blue trail",
+      "correctAnswer": "D",
+      "explanation": "The correct letter is D (Oak woodland)."
+    },
+    {
+      "id": "ielts-listening-023-q20",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Blackwood Nature Reserve — Site Map",
+      "mapDescription": "Label the locations A–J on the reserve map.",
+      "mapKey": {
+        "A": "Visitor Centre",
+        "B": "Heron Pond",
+        "C": "Viewing platform",
+        "D": "Oak woodland",
+        "E": "Badger Watch Hide",
+        "F": "Ridge viewpoint",
+        "G": "Picnic shelter",
+        "H": "Meadow Café",
+        "I": "Warden's station",
+        "J": "Kingfisher viewing area"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 20,
+      "prompt": "Structure for watching wildlife on blue trail",
+      "correctAnswer": "E",
+      "explanation": "The correct letter is E (Badger Watch Hide)."
+    },
+    {
+      "id": "ielts-listening-023-q21",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 21,
+      "prompt": "What noise level does research link to increased stress hormones?",
+      "options": [
+        "55 dB",
+        "60 dB",
+        "65 dB",
+        "70 dB"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+    },
+    {
+      "id": "ielts-listening-023-q22",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 22,
+      "prompt": "What additional health risk did James find surprising in the literature?",
+      "options": [
+        "hearing loss",
+        "cardiovascular disease",
+        "respiratory problems",
+        "mental health disorders"
+      ],
+      "correctAnswer": "B",
+      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+    },
+    {
+      "id": "ielts-listening-023-q23",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 23,
+      "prompt": "How many residents will be surveyed?",
+      "options": [
+        "200",
+        "300",
+        "400",
+        "500"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Priya mentions 'a survey of five hundred residents'"
+    },
+    {
+      "id": "ielts-listening-023-q24",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 24,
+      "prompt": "What confidence level does their sample size achieve?",
+      "options": [
+        "90%",
+        "92%",
+        "95%",
+        "99%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "James refers to 'the ninety-five percent confidence level'"
+    },
+    {
+      "id": "ielts-listening-023-q25",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 25,
+      "prompt": "What does the tutor recommend they reference?",
+      "options": [
+        "WHO 2015 report",
+        "WHO 2018 guidelines",
+        "EU noise directive",
+        "national highway code"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+    },
+    {
+      "id": "ielts-listening-023-q26",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 26,
+      "prompt": "introducing new equipment in the laboratory",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-023-q27",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 27,
+      "prompt": "keeping written records of experiments",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-023-q28",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 28,
+      "prompt": "sharing results with other research groups",
+      "correctAnswer": "B",
+      "explanation": "The speaker's attitude is B. She is undecided."
+    },
+    {
+      "id": "ielts-listening-023-q29",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 29,
+      "prompt": "the importance of the project deadline",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-023-q30",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 30,
+      "prompt": "the proposal to extend the study",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-023-q31",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 31,
+      "sentenceText": "__BLANK__ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
+      "correctAnswer": "The rational actor model",
+      "explanation": "The correct answer is: \"The rational actor model\".",
+      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-023-q32",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 32,
+      "sentenceText": "Kahneman and Tversky found that losses feel approximately __BLANK__ as painful as an equivalent financial gain.",
+      "correctAnswer": "twice as",
+      "explanation": "The correct answer is: \"twice as\".",
+      "prompt": "The speaker describes the current research of the topic.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-023-q33",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 33,
+      "sentenceText": "The tendency to remain in programmes one is automatically enrolled in is known as the __BLANK__.",
+      "correctAnswer": "default effect",
+      "explanation": "The correct answer is: \"default effect\".",
+      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-023-q34",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 34,
+      "sentenceText": "__BLANK__ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
+      "correctAnswer": "Present bias",
+      "explanation": "The correct answer is: \"Present bias\".",
+      "prompt": "The speaker describes the key challenge of the topic.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-023-q35",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 35,
+      "sentenceText": "Thaler and Sunstein popularised nudge theory in a book published in __BLANK__.",
+      "correctAnswer": "2008",
+      "explanation": "The correct answer is: \"2008\".",
+      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-023-q36",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 36,
+      "prompt": "The 'disposition effect' refers to the tendency to",
+      "options": [
+        "A  invest heavily in new market opportunities",
+        "B  hold onto failing investments for too long",
+        "C  diversify financial portfolios excessively",
+        "D  avoid taking any financial risks"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer says it explains 'why people hold onto failing investments far longer than is rational'"
+    },
+    {
+      "id": "ielts-listening-023-q37",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 37,
+      "prompt": "Which country's opt-out organ donation system is specifically mentioned in the lecture?",
+      "options": [
+        "A  France",
+        "B  Australia",
+        "C  Germany",
+        "D  the United Kingdom"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The lecturer cites 'the UK' as a country using opt-out organ donation"
+    },
+    {
+      "id": "ielts-listening-023-q38",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 38,
+      "prompt": "Placing healthy food at eye level in cafeterias increases selection rates by up to",
+      "options": [
+        "A  ten percent",
+        "B  twenty percent",
+        "C  thirty percent",
+        "D  forty percent"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer states selection rates increase 'by up to thirty percent'"
+    },
+    {
+      "id": "ielts-listening-023-q39",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 39,
+      "prompt": "Critics of nudge theory argue that it",
+      "options": [
+        "A  is ineffective in real-world settings",
+        "B  costs too much to implement",
+        "C  can be paternalistic",
+        "D  ignores economic incentives entirely"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer says critics argue 'it can be paternalistic'"
+    },
+    {
+      "id": "ielts-listening-023-q40",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 40,
+      "prompt": "How are governments described as responding to behavioural insights research?",
+      "options": [
+        "A  banning unhealthy food products",
+        "B  making pension contributions compulsory",
+        "C  investing in behavioural insights units",
+        "D  removing consumer choice from markets"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer says 'governments worldwide are investing in behavioural insights units'"
+    }
+  ],
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Part 1: The History of Coffee Trade",
+      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "questionRange": [
+        1,
+        10
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Part 2: Sleep and Memory Consolidation",
+      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
+      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "questionRange": [
+        11,
+        20
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title": "Part 3: The History of Coffee Trade",
+      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "questionRange": [
+        21,
+        30
+      ]
+    },
+    {
+      "partNumber": 4,
+      "title": "Part 4: Sleep and Memory Consolidation",
+      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
+      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "questionRange": [
+        31,
+        40
+      ]
+    }
+  ]
+}

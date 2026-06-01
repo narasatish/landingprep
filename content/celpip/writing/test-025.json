@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-025",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 25",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-025-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You are writing to your local member of parliament about a crosswalk near a school that you believe is dangerous for children.",
+      "recipient": "your local Member of Parliament",
+      "bulletPoints": [
+        "Describe the location and why it is dangerous",
+        "Mention specific incidents or concerns from parents",
+        "Request a specific improvement such as a traffic light or crossing guard"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You are writing to a friend who is feeling stressed and overwhelmed. Write a letter acknowledging their feelings, sharing your own experiences with similar challenges, and offering practical suggestions for coping.",
+      "modelAnswer": "Dear Ms. Emily Chen,\n\nI am writing to you today as a concerned resident of the Willow Creek community regarding a highly dangerous crosswalk located on Maple Avenue, directly adjacent to Willow Creek Elementary School. This particular crossing, lacking any traffic signals or dedicated crossing guards, poses an unacceptable risk to the numerous children who use it daily.\n\nThe danger stems from the high volume of traffic on Maple Avenue, combined with drivers often exceeding the speed limit, especially during morning drop-off and afternoon pick-up times. Parents frequently share anecdotes of near-misses, with children narrowly avoiding collisions due to speeding vehicles failing to stop for pedestrians. Just last week, a Grade 3 student nearly stepped into the path of an accelerating car while attempting to cross. These incidents have created significant anxiety among parents and guardians.\n\nTo mitigate this serious hazard, I strongly urge your office to advocate for the immediate installation of a pedestrian-controlled traffic light at this intersection. Alternatively, the placement of a dedicated crossing guard during peak school hours would also provide a much-needed layer of safety. Prioritizing our children's safety is paramount.\n\nThank you for your time and consideration of this urgent matter. I look forward to your prompt attention to this critical community safety issue.\n\nSincerely,\n\nAisha Khan\nConcerned Resident"
+    },
+    {
+      "id": "celpip-writing-025-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your provincial government is considering how to reduce greenhouse gas emissions from transport. Which policy do you support?",
+      "optionA": "Offer cash rebates to residents who purchase electric vehicles",
+      "optionB": "Invest in expanding electric bus and light rail transit networks",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A language services organisation is surveying people who have used translation or interpretation services. Describe your experience using these services, in what situations they were most needed, and how the quality could be improved.",
+      "modelAnswer": "I strongly advocate for the provincial government to invest in expanding electric bus and light rail transit networks. This policy offers a more comprehensive and equitable solution to reducing greenhouse gas emissions compared to individual vehicle rebates.\n\nFirstly, enhanced public transit directly addresses a wider demographic, including those who cannot afford new electric vehicles, even with rebates. A robust network of electric buses and light rail encourages a systemic shift away from private car dependency, leading to a substantial reduction in overall traffic congestion and emissions. For instance, more frequent and accessible electric bus routes connecting suburban areas to urban centers would significantly lower the number of daily commuter cars.\n\nSecondly, public transit infrastructure has a ripple effect, fostering sustainable urban development. It reduces the need for extensive parking facilities and encourages walkability, further cutting down short-distance car trips. While rebates for electric vehicles are a step in the right direction, they primarily benefit a segment of the population and do not inherently reduce the total number of vehicles on the road or the associated urban sprawl. Public transit, conversely, offers a foundational change for a greener future."
+    }
+  ]
+}

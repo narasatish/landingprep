@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-018",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 18",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-018-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You recently moved to a new city for work and are looking for advice on the best neighbourhood to rent in. A former colleague lives there and you want to ask for their recommendations.",
+      "recipient": "your former colleague",
+      "bulletPoints": [
+        "Explain your situation and when you are planning to move",
+        "Describe what you are looking for in a neighbourhood",
+        "Ask for their specific recommendations and any tips they have"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You are applying for a volunteer position at a local food bank. Write a letter introducing yourself, explaining why you want to volunteer, and describing relevant experience or skills you have.",
+      "modelAnswer": "Subject: Catching up & a Quick Favour!\n\nHi [Colleague's Name],\n\nHope you're doing well! It's been a while since we last connected, but I was hoping you might be able to help me out. I recently accepted a position with [Company Name] here in [City Name] and will be relocating around late June/early July.\n\nI'm starting to look for a place to rent and was hoping to tap into your local expertise. I'm ideally looking for a neighbourhood that's well-connected by public transport, has a good selection of cafes and restaurants, and ideally a park or green space nearby. Safety and a friendly community feel are also high on my list. I'm open to different vibes, as long as it's not too isolated.\n\nDo you have any specific neighbourhood recommendations that you think would fit the bill? Any tips on areas to avoid, or even real estate agents you'd suggest, would be incredibly helpful.\n\nThanks so much in advance for your help – I really appreciate it! Let's definitely grab coffee once I'm settled.\n\nBest,\n\n[Your Name]"
+    },
+    {
+      "id": "celpip-writing-018-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your local government is considering a new approach to encouraging healthy eating. Which policy do you support?",
+      "optionA": "Impose a tax on sugary drinks and junk food",
+      "optionB": "Provide subsidies to make fresh produce cheaper at grocery stores",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A cycling infrastructure committee is consulting residents about bike lanes and cycling safety. Describe your experience cycling in the city, what dangers you encounter, and what infrastructure improvements would make cycling safer.",
+      "modelAnswer": "I strongly advocate for Option B: providing subsidies to make fresh produce cheaper at grocery stores. This policy offers a proactive and positive approach to fostering healthy eating habits within the community.\n\nFirstly, making fresh produce more affordable directly addresses a significant barrier to healthy eating for many families: cost. When nutritious options become financially accessible, more people will naturally gravitate towards them. This approach empowers individuals to make healthier choices without feeling penalized. For instance, a family struggling with food insecurity might opt for cheaper, less nutritious options out of necessity; subsidies remove this difficult trade-off.\n\nSecondly, this strategy promotes a culture of health and well-being rather than one of restriction and punishment. By making healthy food more appealing and attainable, the government encourages a long-term shift in dietary patterns. It avoids the potential backlash and regressive impact of taxes, which often disproportionately affect lower-income households.\n\nWhile a tax on sugary drinks and junk food (Option A) might seem appealing, it risks being punitive and could create resentment without necessarily guaranteeing a shift to healthier alternatives, especially if those alternatives remain expensive. Subsidies, conversely, offer a direct and universally beneficial solution, making healthy eating an easier and more attractive choice for everyone."
+    }
+  ]
+}

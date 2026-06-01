@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-029",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 29 — Apology Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-029-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "apology",
+      "letterSituation": "You borrowed your next-door neighbour's car for a weekend trip after they kindly offered it to you. Despite being careful, the car sustained a small but visible dent in the rear bumper while it was parked in a public car park. You returned the car without mentioning the damage, but your neighbour has now noticed it and has contacted you about it.",
+      "prompt": "You borrowed your next-door neighbour's car for a weekend trip after they kindly offered it to you. Despite being careful, the car sustained a small but visible dent in the rear bumper while it was parked in a public car park. You returned the car without mentioning the damage, but your neighbour has now noticed it and has contacted you about it.\n\nWrite a letter in response to this situation. In your letter:\n• apologise sincerely for the damage and for not reporting it to your neighbour immediately upon returning the car\n• explain exactly what happened that caused the damage and why you did not mention it at the time\n• offer to cover the full cost of having the damage repaired professionally and explain how you intend to arrange this\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "apology"
+    },
+    {
+      "id": "ielts-writing-gt-029-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Road traffic accidents continue to cause serious harm to individuals and significant costs to societies around the world. What are the main causes of traffic accidents and what specific measures could be introduced to reduce their frequency and severity?",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "apology"
+    }
+  ]
+}

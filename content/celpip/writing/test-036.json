@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-036",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 36",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-036-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to the licensing authority asking about the process for converting your foreign licence.",
+      "modelAnswer": "I wholeheartedly endorse Option A: \"The government should invest more in public transportation to reduce traffic congestion and environmental pollution.\" This approach represents a pragmatic and sustainable solution to pressing urban challenges.\n\nFirstly, enhanced public transportation directly addresses traffic congestion. A robust network of buses, subways, and trains encourages individuals to leave their cars at home, thereby decreasing the number of vehicles on the road. For instance, if commuters in major cities like Toronto or Vancouver had more frequent, reliable, and accessible transit options, many would opt out of daily drives, significantly easing rush-hour gridlock.\n\nSecondly, this investment yields substantial environmental benefits. Fewer cars translate to reduced greenhouse gas emissions and improved air quality. Public transit, especially when powered by electricity, offers a far more eco-friendly mode of transport per passenger-kilometre than individual vehicles. This aligns with broader climate change mitigation efforts and improves public health outcomes by curbing respiratory illnesses linked to smog.\n\nWhile Option B, \"The government should encourage carpooling and flexible work schedules,\" offers some merit, it places the onus largely on individual initiative and corporate policy, which can be inconsistent and difficult to enforce widely. Carpooling schemes often face logistical hurdles and lack the systemic impact of a comprehensive public transit overhaul. Flexible work schedules, while beneficial for some, don't inherently reduce the total number of vehicles on the road, as many still drive to work, albeit at different times. Therefore, investing in public transportation offers a more reliable and impactful path toward sustainable urban development.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "applying for a driver's licence",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-036-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short note to a friend explaining what you learned in a driving knowledge test.",
+      "modelAnswer": "I firmly believe that Option B, focusing on a more flexible work schedule and increased autonomy, is the superior approach for fostering a thriving and productive workforce.\n\nFirstly, a flexible schedule significantly enhances employee well-being by allowing for better work-life integration. For instance, parents can adjust their hours to attend school events, or individuals can schedule personal appointments without sacrificing vacation days. This autonomy reduces stress and burnout, leading to a more engaged and energetic workforce. Employees who feel trusted and respected to manage their time are demonstrably more loyal and committed to their organizations.\n\nSecondly, increased autonomy empowers employees to take ownership of their work and innovate. When individuals are given the freedom to decide *how* they achieve their goals, rather than being rigidly dictated, they often devise more efficient and creative solutions. This sense of ownership translates into higher quality output and a stronger drive to exceed expectations. For example, a marketing team given the latitude to experiment with new campaign strategies will likely achieve better results than one constrained by outdated methods.\n\nWhile Option A, focusing on team-building activities and collaborative projects, has its merits, it often falls short without the foundational elements of flexibility and trust. Mandatory team activities can sometimes feel performative rather than genuinely fostering connection, and collaboration can be stifled if employees are already feeling overwhelmed and micromanaged by rigid schedules. Ultimately, a flexible, autonomous environment creates the conditions for genuine collaboration to flourish organically, rather than being forced.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "applying for a driver's licence",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-010",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 10",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-010-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You volunteered at a local food bank last weekend and would like to encourage a friend who mentioned they are looking for ways to give back to the community.",
+      "recipient": "your friend",
+      "bulletPoints": [
+        "Describe your experience at the food bank",
+        "Explain what types of volunteers are needed",
+        "Encourage your friend to consider volunteering there"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You recently completed a course at a local college and would like to recommend it to a friend. Write a letter describing the course, what you learned, and why you think they would benefit from it.",
+      "modelAnswer": "Subject: My amazing weekend at the food bank!\n\nHi Sarah,\n\nHope you're having a great week! I wanted to tell you about my weekend volunteering at the Downtown Community Food Bank – it was such an incredibly rewarding experience, and it immediately made me think of you since you mentioned wanting to find ways to give back.\n\nI spent most of Saturday sorting through donations, checking expiry dates, and then helping to pack hampers for families. The atmosphere was so positive, and everyone, from the staff to the other volunteers, was genuinely dedicated. It felt fantastic knowing that my small contribution was directly helping people in need in our city.\n\nThey're always looking for more help, and there are so many different roles. While I was sorting, I saw people assisting with client registration, stocking shelves, and even helping with administrative tasks. They really need people who can commit to a regular shift, even if it's just once a month, but even one-off events are welcome.\n\nGiven your kind nature and how organised you are, I honestly think you'd be a perfect fit. Would you be open to checking out their website or even coming with me for a shift sometime? I'd love to go back soon.\n\nLet me know what you think!\n\nBest,\n\nMaria"
+    },
+    {
+      "id": "celpip-writing-010-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city is planning changes to how it manages public libraries. Which approach do you think is better?",
+      "optionA": "Keep all library branches open but reduce opening hours to save costs",
+      "optionB": "Close two smaller branches and use the savings to fully upgrade the central library",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A local business improvement association is surveying community members about the retail environment. Describe your shopping habits, what you like or dislike about local shops, and what would encourage you to shop locally more often.",
+      "modelAnswer": "I strongly advocate for Option A: keeping all library branches open while reducing opening hours to save costs. This approach prioritizes equitable access to information and community resources, which is fundamental to the public library system.\n\nFirstly, maintaining all branches ensures that residents across the city, particularly those in underserved neighbourhoods or with limited transportation, still have local access to books, internet, and educational programs. Closing branches, even smaller ones, disproportionately affects these communities, creating digital and knowledge deserts. For example, a student needing a quiet place to study or an elderly person seeking a community connection might struggle to reach a distant central library.\n\nSecondly, libraries are more than just book repositories; they are vital community hubs. Each branch fosters a sense of local identity and provides spaces for workshops, children's story times, and adult learning. Reducing hours, while inconvenient, is a manageable sacrifice that retains these essential community functions and physical spaces. In contrast, closing branches permanently erodes these critical local anchors.\n\nWhile upgrading the central library (Option B) has its merits, it cannot compensate for the loss of localized services. A state-of-the-art central facility is wonderful, but if it's inaccessible to a significant portion of the population, its benefits are limited. Therefore, preserving the network of branches, even with reduced hours, is the more inclusive and beneficial strategy for the entire city."
+    }
+  ]
+}

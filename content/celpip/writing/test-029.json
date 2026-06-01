@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-029",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 29",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-029-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You are writing to your local library to propose a new programme: a monthly book club for newcomers to Canada, designed to help participants practise English while connecting with their community.",
+      "recipient": "the library programme coordinator",
+      "bulletPoints": [
+        "Describe the programme you are proposing and who it is for",
+        "Explain why you think the library is the right place for such a programme",
+        "Ask what support or resources the library might be able to provide"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "A close friend recently supported you through a difficult period in your life. Write a letter thanking them for their help, describing what they did, and explaining how meaningful their support was.",
+      "modelAnswer": "Dear Library Programme Coordinator,\n\nI am writing to propose an exciting new initiative: a monthly book club specifically designed for newcomers to Canada. This programme, which I envision as a relaxed and welcoming space, would bring together recent immigrants and refugees to discuss pre-selected books, fostering English language practice in a natural, conversational setting. Participants would not only improve their fluency but also build community connections and gain insights into Canadian culture through literature.\n\nI believe the library is the ideal venue for such a programme. As a cornerstone of community engagement and a hub for learning, the library already provides an accessible and neutral environment. Its existing resources, including a diverse collection of books and comfortable meeting spaces, perfectly align with the needs of a book club. Furthermore, the library's reputation as a welcoming institution would naturally attract newcomers seeking support and connection.\n\nI would be grateful to learn what support or resources the library might be able to provide. Specifically, I am interested in potential access to a meeting room, assistance with promoting the club to your patrons, and perhaps guidance on selecting books that would be particularly engaging and relevant for newcomers. I am keen to volunteer my time to organize and facilitate the sessions.\n\nThank you for considering this proposal. I look forward to your response and the possibility of collaborating on this valuable community programme.\n\nSincerely,\n\n[Your Name]"
+    },
+    {
+      "id": "celpip-writing-029-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your workplace is considering a new policy to encourage professional development. Which approach do you prefer?",
+      "optionA": "Provide each employee with an annual budget to spend on any approved training or course",
+      "optionB": "Organise monthly in-house workshops delivered by senior staff members",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A regional water authority is asking residents about water conservation. Describe your current water use habits, what conservation measures you already take, and what more the authority could do to encourage residents to conserve water.",
+      "modelAnswer": "I strongly advocate for Option A: providing each employee with an annual budget for approved training or courses. This approach offers unparalleled flexibility and personalization, empowering individuals to pursue development opportunities directly aligned with their specific career goals and skill gaps. For instance, a marketing specialist could invest in a cutting-edge digital analytics course, while an HR professional might opt for advanced conflict resolution training, both directly enhancing their job performance and satisfaction.\n\nMoreover, this autonomy fosters a greater sense of ownership over one's professional growth, likely leading to higher engagement and more effective learning outcomes than a one-size-fits-all approach. While Option B, in-house workshops, offers convenience, it often struggles to cater to the diverse needs and varying expertise levels within a large workforce, potentially resulting in generic content that lacks the specialized depth many employees require to truly excel."
+    }
+  ]
+}

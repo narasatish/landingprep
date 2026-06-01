@@ -1,0 +1,71 @@
+{
+  "id": "ielts-writing-007",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 7",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-007-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The bar chart compares the average amount spent on healthcare per person in six countries in 2021. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "healthcare",
+      "modelAnswer": "The bar chart illustrates the average expenditure on healthcare per person across six different countries in the year 2021. Overall, there was a significant disparity in spending among the nations, with the USA allocating by far the most, while Japan spent the least.\n\nIn 2021, the United States recorded the highest per capita healthcare spending at $12,300, considerably exceeding all other countries. Switzerland followed with the second-highest expenditure, averaging $8,700 per person. Germany also showed substantial spending, with its citizens’ healthcare costs amounting to $7,200, placing it third among the six nations.\n\nThe remaining three countries spent considerably less on healthcare per person. Canada's average spending was $6,100, while the UK's figure stood at $5,300. Japan registered the lowest expenditure at $4,800 per person, which is less than half of what the USA spent. This data highlights a clear trend where North American and some European countries spent significantly more on healthcare than their counterparts in other regions.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Average Healthcare Spending Per Person in Six Countries, 2021",
+        "yLabel": "Spending (USD)",
+        "xAxis": [
+          "USA",
+          "Switzerland",
+          "Germany",
+          "Canada",
+          "UK",
+          "Japan"
+        ],
+        "series": [
+          {
+            "label": "Average Spending",
+            "values": [
+              12300,
+              8700,
+              7200,
+              6100,
+              5300,
+              4800
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-007-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Some people believe that governments should provide free healthcare for all citizens, while others think individuals should be responsible for their own health costs. Discuss both views and give your own opinion.",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "healthcare",
+      "modelAnswer": "The debate surrounding the funding of healthcare systems is a contentious one, with proponents on both sides arguing for different approaches to ensure public well-being. While some advocate for universal healthcare provided by the state, others maintain that individuals should bear the financial burden of their own medical care. This essay will explore both perspectives before asserting that a publicly funded system is the most equitable and effective solution.\n\nThose who argue for government-funded healthcare often highlight the principle of equality and social justice. They contend that access to medical treatment is a fundamental human right, not a privilege, and should therefore be available to all citizens regardless of their socioeconomic status. For instance, countries like the UK, with its National Health Service, demonstrate how a system funded through taxation can provide comprehensive care from preventative services to complex surgeries, ensuring that no one is denied essential treatment due to an inability to pay. Such a system fosters a healthier, more productive workforce and reduces the societal costs associated with untreated illness.\n\nConversely, proponents of individual responsibility argue that people should be accountable for their own health costs, believing this encourages healthier lifestyle choices and reduces the strain on public finances. They suggest that free healthcare can lead to over-utilisation of services and a lack of personal investment in preventative health. In systems where individuals pay directly or through private insurance, it is argued that market forces can drive efficiency and innovation. However, this approach inevitably creates a two-tiered system where the poor and uninsured are often left without adequate care, exacerbating existing social inequalities.\n\nIn conclusion, while individual responsibility for health is commendable, the provision of free, universal healthcare by governments is paramount. It ensures equitable access to vital services, promotes public health, and ultimately strengthens society as a whole."
+    }
+  ],
+  "variant": "academic"
+}

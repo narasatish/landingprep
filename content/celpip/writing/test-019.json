@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-019",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 19",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-019-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You are the organiser of a small community running club. You want to get permission to use a local park's paths for weekly group runs on Saturday mornings.",
+      "recipient": "the city parks department",
+      "bulletPoints": [
+        "Describe your running club and how many members attend",
+        "Explain what you are requesting and on which days and times",
+        "Ask whether any permits or conditions are required"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "A shop assistant in a local store was exceptionally helpful to you last week. Write a letter to the store manager praising the employee, describing what they did, and explaining why their service stood out.",
+      "modelAnswer": "Dear City Parks Department,\n\nI am writing to you today as the organizer of the \"Riverside Runners,\" a small, informal community running club based in the Riverside neighbourhood. We currently have approximately 25 active members who participate in our weekly group runs. Our club aims to promote health, fitness, and community spirit amongst local residents.\n\nWe are requesting permission to use the paved paths within Willow Creek Park for our weekly group runs. Our runs take place on Saturday mornings, typically starting at 8:00 AM and concluding by 9:30 AM. We anticipate using the park's main loop and connecting paths, ensuring we stay on designated routes and do not obstruct other park users.\n\nCould you please inform us if any specific permits or conditions are required for a small community group like ours to use the park paths in this manner? We are committed to being responsible park users and would appreciate any guidance you can provide regarding regulations, booking procedures, or potential fees.\n\nThank you for your time and consideration. We look forward to your response.\n\nSincerely,\n\n[Your Name]\nOrganizer, Riverside Runners"
+    },
+    {
+      "id": "celpip-writing-019-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city is debating how best to encourage residents to use public transit. Which approach do you prefer?",
+      "optionA": "Offer free monthly transit passes to residents who give up a parking permit",
+      "optionB": "Increase parking fees in the downtown core to make driving less attractive",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A senior services organisation is surveying older adults about programmes for independent living. Describe the main challenges seniors face in living independently, which services are most important, and how they could be better delivered.",
+      "modelAnswer": "I strongly advocate for Option A: offering free monthly transit passes to residents who surrender a parking permit. This approach is significantly more effective and equitable for several key reasons.\n\nFirstly, it provides a direct, tangible incentive for individuals to change their behaviour. Giving up a parking permit represents a clear commitment, and the immediate reward of a free transit pass makes public transport a financially attractive and convenient alternative. This positive reinforcement is crucial for encouraging long-term habit formation. For instance, someone currently driving to work might find the prospect of saving hundreds annually on parking and transit fares compelling enough to make the switch.\n\nSecondly, Option A directly addresses the issue of limited urban space. By reducing the number of cars requiring dedicated parking, it frees up valuable real estate that could be repurposed for green spaces, bike lanes, or additional pedestrian zones, enhancing the overall liveability of the city.\n\nIn contrast, Option B, increasing downtown parking fees, is a less desirable solution. While it aims to deter driving, it primarily functions as a punitive measure that disproportionately affects lower-income individuals and small businesses. It could also push parking to residential areas surrounding the core, creating new problems without necessarily encouraging transit use. A positive incentive, like free passes, offers a more inclusive and sustainable path towards a transit-oriented city."
+    }
+  ]
+}

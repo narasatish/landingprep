@@ -1,0 +1,79 @@
+{
+  "id": "ielts-writing-012",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 12",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-012-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The graphs below compare the average number of hours worked per week and the average wages in five countries in 2021. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "remote work",
+      "modelAnswer": "The two bar charts illustrate the average number of hours worked per week and the corresponding average weekly wages in five different countries (A, B, C, D, and E) in 2021.\n\nOverall, there is an inverse relationship between hours worked and wages for most countries, with those working fewer hours generally earning more. Country C recorded the highest number of working hours but the lowest wages, while Country D showed the opposite trend.\n\nIn terms of hours worked, Country C had the longest working week at 45 hours, followed closely by Country A at 42 hours. Country E required 40 hours per week, while Country B and Country D had the shortest working weeks, at 38 and 35 hours respectively. \n\nRegarding average weekly wages, Country D stood out with the highest earnings at $1050, despite its 35-hour week. Country B also had high wages, averaging $920 for 38 hours. In contrast, Country C, despite its 45-hour week, reported the lowest average wage of $780. Country A and Country E had intermediate wages, earning $850 and $880 respectively, for their 42 and 40-hour workweeks.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Average Weekly Hours Worked and Wages in Five Countries (2021)",
+        "yLabel": "Hours / Wages",
+        "xAxis": [
+          "Country A",
+          "Country B",
+          "Country C",
+          "Country D",
+          "Country E"
+        ],
+        "series": [
+          {
+            "label": "Hours Worked",
+            "values": [
+              42,
+              38,
+              45,
+              35,
+              40
+            ]
+          },
+          {
+            "label": "Average Weekly Wage ($)",
+            "values": [
+              850,
+              920,
+              780,
+              1050,
+              880
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-012-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Working from home has become increasingly popular in recent years. Some believe it benefits both employers and employees; others argue that it has serious disadvantages. Discuss both views and give your own opinion.",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "remote work",
+      "modelAnswer": "The phenomenon of remote work has gained considerable traction in contemporary society. While some proponents assert its mutual advantages for businesses and their staff, others contend that this arrangement carries significant drawbacks. This essay will explore both perspectives before concluding that, on balance, the benefits of working from home demonstrably outweigh its disadvantages.\n\nAdvocates for remote employment frequently highlight its positive impact on productivity and work-life balance. For employees, the elimination of a daily commute translates into more personal time, which can be dedicated to family or leisure, thereby reducing stress and burnout. For instance, a recent study by Stanford University found that remote workers were 13% more productive due to fewer distractions and greater autonomy over their schedules. Furthermore, businesses benefit from reduced overheads associated with office space and utilities, alongside access to a wider talent pool unconstrained by geographical location.\n\nConversely, critics raise valid concerns regarding potential isolation and difficulties in team collaboration. The absence of face-to-face interaction can foster feelings of detachment among employees, potentially hindering spontaneous innovation that often arises from casual office encounters. Moreover, managing remote teams effectively requires robust communication strategies and sophisticated technology, which may not be universally accessible or consistently implemented. For example, some companies struggle to maintain a cohesive company culture when employees are physically dispersed, leading to a fragmented sense of belonging.\n\nDespite these legitimate concerns, the strategic implementation of remote work, coupled with regular virtual team-building activities and clear communication protocols, largely mitigates its potential downsides. Therefore, I firmly believe that the flexibility, enhanced productivity, and cost efficiencies offered by remote work present a net positive for both employers and employees in the modern professional landscape."
+    }
+  ],
+  "variant": "academic"
+}

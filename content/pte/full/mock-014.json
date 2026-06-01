@@ -1,0 +1,25 @@
+{
+  "id": "pte-full-014",
+  "exam": "pte",
+  "type": "full",
+  "title": "PTE Academic Full Mock Test 14",
+  "durationSeconds": 7200,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "speaking-writing",
+      "testId": "pte-speaking-writing-014",
+      "file": "pte/speaking-writing/test-014.json"
+    },
+    {
+      "section": "reading",
+      "testId": "pte-reading-014",
+      "file": "pte/reading/test-014.json"
+    },
+    {
+      "section": "listening",
+      "testId": "pte-listening-014",
+      "file": "pte/listening/test-014.json"
+    }
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "id": "pte-speaking-writing-048",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 48",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-048-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Civic Engagement in Democracy”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "civic participation",
+      "modelAnswer": "Civic participation is fundamental to a thriving democracy, empowering citizens to influence public policy and hold elected officials accountable. It encompasses a wide range of activities, from voting and volunteering to attending public meetings and advocating for social change. Active engagement ensures diverse perspectives are considered, fostering more inclusive and representative governance. Ultimately, robust civic participation strengthens the social fabric and promotes collective well-being within communities.",
+      "readText": "Civic participation is fundamental to a thriving democracy, empowering citizens to influence public policy and hold elected officials accountable. It encompasses a wide range of activities, from voting and volunteering to attending public meetings and advocating for social change. Active engagement ensures diverse perspectives are considered, fostering more inclusive and representative governance. Ultimately, robust civic participation strengthens the social fabric and promotes collective well-being within communities."
+    },
+    {
+      "id": "pte-speaking-writing-048-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Community Involvement”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Volunteering in local initiatives is a direct way to strengthen community bonds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "civic participation",
+      "modelAnswer": "Volunteering in local initiatives is a direct way to strengthen community bonds.",
+      "audioScript": "Volunteering in local initiatives is a direct way to strengthen community bonds."
+    },
+    {
+      "id": "pte-speaking-writing-048-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Civic Participation Rates by Age Group (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "civic participation",
+      "modelAnswer": "This bar chart illustrates civic participation rates across different age groups in 2023, focusing on voting and volunteering. Voting participation generally increases with age, peaking at 88% for the 65+ demographic, which is significantly higher than the 18-24 age group at 45%. Volunteering also shows a rising trend, reaching its highest at 55% for the 55-64 age group, before slightly declining for those 65+. A key observation is that voting rates consistently surpass volunteering rates across all age brackets, highlighting a preference for electoral engagement over voluntary work.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Civic Participation Rates by Age Group (2023)",
+        "yLabel": "Participation Rate (%)",
+        "xAxis": [
+          "18-24",
+          "25-34",
+          "35-44",
+          "45-54",
+          "55-64",
+          "65+"
+        ],
+        "series": [
+          {
+            "label": "Voting",
+            "values": [
+              45,
+              62,
+              71,
+              78,
+              85,
+              88
+            ]
+          },
+          {
+            "label": "Volunteering",
+            "values": [
+              30,
+              35,
+              42,
+              48,
+              55,
+              50
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-048-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Strengthening Democracy and Community”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "civic participation",
+      "modelAnswer": "The lecture highlighted that civic participation is crucial for a healthy democracy, involving more than just voting. It emphasized that active engagement, such as volunteering and advocating for policy changes, directly contributes to more effective governance. This process ensures diverse voices are heard, thereby strengthening democratic institutions. Ultimately, such participation builds social capital and improves community services, addressing societal challenges through collective action.",
+      "audioScript": "Civic participation is the bedrock of any healthy democracy, extending far beyond simply casting a ballot. When citizens actively engage in local governance, volunteer for community services, or advocate for policy changes, they directly contribute to a more responsive and effective government. This engagement not only strengthens democratic institutions by ensuring diverse voices are heard but also builds social capital, fostering trust and cooperation within communities. It's through these collective actions that public services are improved, and societal challenges are addressed effectively.",
+      "keyPoints": [
+        "Civic participation is vital for healthy democracy.",
+        "Engagement goes beyond voting, including volunteering and advocacy.",
+        "It strengthens democratic institutions by including diverse voices.",
+        "Active participation builds social capital and improves community services."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-048-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Form of Civic Action”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Voting",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "civic participation",
+      "modelAnswer": "Voting",
+      "audioScript": "What is the act of casting a ballot in an election called?"
+    },
+    {
+      "id": "pte-speaking-writing-048-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “The Essence of Civic Responsibility”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "civic participation",
+      "wordTarget": 75,
+      "modelAnswer": "Civic participation is essential for a functional society, as it demonstrates collective commitment to community welfare, fostering a sense of shared responsibility and leading to sustainable solutions for public challenges.",
+      "readText": "Civic participation is not merely an option but a cornerstone of a functional society. It reflects the collective commitment of individuals to the welfare of their community and nation. When citizens actively engage in local governance, whether through town hall meetings, neighborhood watch programs, or environmental clean-up initiatives, they contribute to a more vibrant and resilient social fabric. This engagement fosters a sense of shared responsibility and ownership, leading to more sustainable solutions for public challenges and a stronger sense of belonging among residents."
+    },
+    {
+      "id": "pte-speaking-writing-048-q07",
+      "questionType": "write_essay",
+      "prompt": "Some people think that the best way to reduce crime is to increase the number of police officers. Others believe that social and economic reforms are more effective. Discuss both views.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "civic participation",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Solar Energy Breakthroughs”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q08",
+      "modelAnswer": "Recent advances in renewable solar energy technology are revolutionizing power generation. Innovations in photovoltaic materials have led to more efficient and flexible solar panels, capable of converting a higher percentage of sunlight into electricity. Furthermore, advancements in energy storage solutions, such as improved battery technologies, are making solar power a more reliable and consistent energy source, even during periods without direct sunlight. These developments are crucial for accelerating the global transition to sustainable energy systems.",
+      "readText": "Recent advances in renewable solar energy technology are revolutionizing power generation. Innovations in photovoltaic materials have led to more efficient and flexible solar panels, capable of converting a higher percentage of sunlight into electricity. Furthermore, advancements in energy storage solutions, such as improved battery technologies, are making solar power a more reliable and consistent energy source, even during periods without direct sunlight. These developments are crucial for accelerating the global transition to sustainable energy systems."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Mitigating Climate Change”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q09",
+      "modelAnswer": "Climate change mitigation strategies focus on reducing greenhouse gas emissions and enhancing carbon sinks. Key approaches include transitioning to renewable energy sources, improving energy efficiency in buildings and transportation, and implementing sustainable land use practices like reforestation. International cooperation and technological innovation are vital to deploying these strategies effectively on a global scale. Successful mitigation efforts are essential to limiting global warming and preventing its most severe impacts on ecosystems and human societies worldwide.",
+      "readText": "Climate change mitigation strategies focus on reducing greenhouse gas emissions and enhancing carbon sinks. Key approaches include transitioning to renewable energy sources, improving energy efficiency in buildings and transportation, and implementing sustainable land use practices like reforestation. International cooperation and technological innovation are vital to deploying these strategies effectively on a global scale. Successful mitigation efforts are essential to limiting global warming and preventing its most severe impacts on ecosystems and human societies worldwide."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Global Food Production Economics”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q10",
+      "modelAnswer": "The economics of global food production are complex, influenced by factors such as climate, trade policies, and technological advancements. Supply chains are increasingly globalized, connecting producers in one region to consumers across continents. However, this interconnectedness also exposes food systems to vulnerabilities, including price volatility, geopolitical instability, and environmental shocks. Ensuring food security for a growing global population requires careful management of these economic forces, alongside sustainable agricultural practices and equitable distribution systems.",
+      "readText": "The economics of global food production are complex, influenced by factors such as climate, trade policies, and technological advancements. Supply chains are increasingly globalized, connecting producers in one region to consumers across continents. However, this interconnectedness also exposes food systems to vulnerabilities, including price volatility, geopolitical instability, and environmental shocks. Ensuring food security for a growing global population requires careful management of these economic forces, alongside sustainable agricultural practices and equitable distribution systems."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Space Colonization Hurdles”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q11",
+      "modelAnswer": "Space exploration and colonisation present formidable challenges, ranging from engineering complexities to human physiological adaptations. Establishing self-sustaining habitats on celestial bodies requires innovative solutions for resource extraction, life support, and radiation shielding. Furthermore, the psychological impact of long-duration space travel and isolation on human crews must be thoroughly understood and mitigated. Overcoming these hurdles demands significant international collaboration, advanced technological development, and substantial financial investment over decades.",
+      "readText": "Space exploration and colonisation present formidable challenges, ranging from engineering complexities to human physiological adaptations. Establishing self-sustaining habitats on celestial bodies requires innovative solutions for resource extraction, life support, and radiation shielding. Furthermore, the psychological impact of long-duration space travel and isolation on human crews must be thoroughly understood and mitigated. Overcoming these hurdles demands significant international collaboration, advanced technological development, and substantial financial investment over decades."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Decision-Making Psychology”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q12",
+      "modelAnswer": "The psychology of decision-making explores how individuals choose among various options, often under conditions of uncertainty. Cognitive biases, such as confirmation bias and anchoring effect, significantly influence these processes, leading to deviations from purely rational choices. Emotions, past experiences, and social contexts also play crucial roles in shaping our judgments and preferences. Understanding these underlying psychological mechanisms is vital for improving personal and organizational decision-making outcomes in diverse settings.",
+      "readText": "The psychology of decision-making explores how individuals choose among various options, often under conditions of uncertainty. Cognitive biases, such as confirmation bias and anchoring effect, significantly influence these processes, leading to deviations from purely rational choices. Emotions, past experiences, and social contexts also play crucial roles in shaping our judgments and preferences. Understanding these underlying psychological mechanisms is vital for improving personal and organizational decision-making outcomes in diverse settings."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Significant investment is needed for expanding renewable energy infrastructure globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q13",
+      "modelAnswer": "Significant investment is needed for expanding renewable energy infrastructure globally.",
+      "audioScript": "Significant investment is needed for expanding renewable energy infrastructure globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Urban heat islands require mitigation strategies like green roofs and reflective surfaces.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Heat Mitigation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q14",
+      "modelAnswer": "Urban heat islands require mitigation strategies like green roofs and reflective surfaces.",
+      "audioScript": "Urban heat islands require mitigation strategies like green roofs and reflective surfaces."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Financial literacy is crucial for economic inclusion and personal financial stability.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Financial Literacy Importance”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q15",
+      "modelAnswer": "Financial literacy is crucial for economic inclusion and personal financial stability.",
+      "audioScript": "Financial literacy is crucial for economic inclusion and personal financial stability."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Nanotechnology is revolutionizing materials science with novel properties and applications.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Nanotechnology in Materials”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q16",
+      "modelAnswer": "Nanotechnology is revolutionizing materials science with novel properties and applications.",
+      "audioScript": "Nanotechnology is revolutionizing materials science with novel properties and applications."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The science of sleep is vital for memory consolidation and cognitive function.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Sleep and Memory”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q17",
+      "modelAnswer": "The science of sleep is vital for memory consolidation and cognitive function.",
+      "audioScript": "The science of sleep is vital for memory consolidation and cognitive function."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Digital literacy is an essential skill for modern education and workforce participation.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Digital Education Skills”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q18",
+      "modelAnswer": "Digital literacy is an essential skill for modern education and workforce participation.",
+      "audioScript": "Digital literacy is an essential skill for modern education and workforce participation."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Antibiotic resistance demands urgent global health policy and research initiatives.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Antibiotic Resistance Policy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q19",
+      "modelAnswer": "Antibiotic resistance demands urgent global health policy and research initiatives.",
+      "audioScript": "Antibiotic resistance demands urgent global health policy and research initiatives."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ocean acidification threatens marine biodiversity and coral reef ecosystems worldwide.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ocean Acidification Impact”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q20",
+      "modelAnswer": "Ocean acidification threatens marine biodiversity and coral reef ecosystems worldwide.",
+      "audioScript": "Ocean acidification threatens marine biodiversity and coral reef ecosystems worldwide."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The neuroscience of creativity explores brain mechanisms behind innovative thought processes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Creativity Neuroscience”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q21",
+      "modelAnswer": "The neuroscience of creativity explores brain mechanisms behind innovative thought processes.",
+      "audioScript": "The neuroscience of creativity explores brain mechanisms behind innovative thought processes."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q22",
+      "modelAnswer": "The bar chart illustrates the annual energy consumption per capita in Gigajoules for six different countries in 2022. Canada recorded the highest consumption at 310 GJ, closely followed by the USA at 280 GJ. In stark contrast, India had the lowest per capita consumption, at a mere 25 GJ. China's consumption stood at 100 GJ, while Germany was 160 GJ and Brazil was 60 GJ. Overall, there's a significant disparity in energy use, with developed Western nations consuming substantially more energy per person compared to developing countries.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Gigajoules (GJ)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "China",
+          "India",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "Energy Consumption",
+            "values": [
+              280,
+              310,
+              160,
+              100,
+              25,
+              60
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Carbon Reservoirs (Gigatons of Carbon - GtC)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q23",
+      "modelAnswer": "The table illustrates the major global carbon reservoirs and their carbon content in gigatons. The largest reservoir is the deep ocean, holding an immense 38,000 GtC, followed by fossil fuels with 5,000 GtC. Land, encompassing soil and plants, contains 2,000 GtC, which is double the amount found in surface oceans at 1,000 GtC. The atmosphere holds the smallest amount listed, at 750 GtC. This distribution highlights the vast quantities of carbon stored in various parts of the Earth, with oceans being the primary sink.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Carbon Reservoirs (Gigatons of Carbon - GtC)",
+        "headers": [
+          "Reservoir",
+          "Carbon Content (GtC)"
+        ],
+        "rows": [
+          [
+            "Atmosphere",
+            "750"
+          ],
+          [
+            "Oceans (surface)",
+            "1000"
+          ],
+          [
+            "Oceans (deep)",
+            "38000"
+          ],
+          [
+            "Land (soil & plants)",
+            "2000"
+          ],
+          [
+            "Fossil Fuels",
+            "5000"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q24",
+      "modelAnswer": "This pie chart illustrates global CO2 emissions by sector for 2022. The largest contributor is clearly Energy Production, accounting for a significant 35% of total emissions. Transportation follows as the second-highest sector, responsible for 22%. Industry contributes 18%, while Agriculture and Land Use accounts for 15%. The smallest share comes from the Residential and Commercial sector, at just 10%. Overall, the data highlights that energy generation is the dominant source, emitting over three times more CO2 than the combined residential and commercial sectors.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy Production",
+            "value": 35
+          },
+          {
+            "label": "Transportation",
+            "value": 22
+          },
+          {
+            "label": "Industry",
+            "value": 18
+          },
+          {
+            "label": "Agriculture & Land Use",
+            "value": 15
+          },
+          {
+            "label": "Residential & Commercial",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Renewable Energy Adoption by Country (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q25",
+      "modelAnswer": "This bar chart illustrates renewable energy adoption across five countries in 2023, measured as a percentage of total energy consumption. Brazil shows the highest adoption rate at 65%, significantly leading other nations. Germany follows with a substantial 45%. Canada and Australia demonstrate moderate adoption at 32% and 28% respectively. Japan has the lowest adoption among the group, with only 20% of its energy consumption from renewable sources. Overall, there's a clear disparity, with Brazil demonstrating strong leadership in renewable energy integration compared to the other four countries.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Energy Adoption by Country (2023)",
+        "yLabel": "% of Total Energy Consumption",
+        "xAxis": [
+          "Germany",
+          "Canada",
+          "Japan",
+          "Australia",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "Renewable Energy",
+            "values": [
+              45,
+              32,
+              20,
+              28,
+              65
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Temperature Change (1900-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q26",
+      "modelAnswer": "This line graph illustrates global average temperature changes from 1900 to 2020, showing temperature anomaly in degrees Celsius. In 1900, the anomaly was -0.2°C, remaining relatively stable until 1940 at 0.1°C. A slight dip occurred in 1960, returning to 0.0°C. However, a significant upward trend is evident from 1980, where it was 0.2°C, sharply rising to 0.5°C by 2000. The graph culminates in 2020 with the highest anomaly recorded at 1.0°C, indicating a substantial warming trend over the last few decades.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Temperature Change (1900-2020)",
+        "yLabel": "Temperature Anomaly (°C)",
+        "xAxis": [
+          "1900",
+          "1920",
+          "1940",
+          "1960",
+          "1980",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Temperature Anomaly",
+            "values": [
+              -0.2,
+              -0.1,
+              0.1,
+              0,
+              0.2,
+              0.5,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q27",
+      "modelAnswer": "The lecture discussed the significant role of non-verbal communication in human interaction, often conveying more than spoken words. It highlighted various forms, such as gestures, facial expressions, and body posture, noting their cultural dependency. The speaker emphasized that interpreting these cues can vary across societies. Ultimately, understanding non-verbal signals is crucial for effective communication, helping to build rapport, express empathy, and prevent misunderstandings in different contexts.",
+      "audioScript": "Non-verbal communication plays a profound role in human interaction, often conveying more meaning than spoken words. Gestures, facial expressions, body posture, and even eye contact can signal emotions, intentions, and attitudes. These cues are deeply embedded in cultural contexts, meaning their interpretation can vary significantly across different societies. Understanding non-verbal signals is critical for effective communication, helping individuals build rapport, express empathy, and avoid misunderstandings in diverse social and professional settings.",
+      "keyPoints": [
+        "Non-verbal communication is highly significant in human interaction.",
+        "It includes gestures, facial expressions, posture, and eye contact.",
+        "Non-verbal cues are culturally dependent.",
+        "Understanding them is crucial for effective communication and avoiding misunderstandings."
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “The Evolution of Digital Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q28",
+      "modelAnswer": "The lecture focused on the evolution of digital communication, from early email to modern social media and video conferencing. It highlighted how this development has significantly increased the speed and global reach of information exchange. However, the speaker also pointed out challenges like information overload and the spread of misinformation, along with potential reductions in face-to-face interaction. The main takeaway was the importance of balancing the advantages and disadvantages of digital connectivity in today's world.",
+      "audioScript": "Digital communication has transformed how we interact, evolving rapidly from early email systems to sophisticated social media platforms and video conferencing. This evolution has dramatically increased the speed and reach of information exchange, enabling instant global connections. However, it also presents challenges, such as information overload, the spread of misinformation, and the potential for reduced face-to-face interaction. Balancing the benefits of digital connectivity with its drawbacks is a key consideration for individuals and societies navigating the modern communication landscape.",
+      "keyPoints": [
+        "Digital communication evolved from email to social media and video conferencing.",
+        "It increased speed and reach of information exchange globally.",
+        "Challenges include information overload and misinformation.",
+        "Balancing benefits and drawbacks is crucial in the modern era."
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Email",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q29",
+      "modelAnswer": "Email",
+      "audioScript": "What is the primary medium for sending written messages electronically?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Talking",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal Communication Form”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q30",
+      "modelAnswer": "Talking",
+      "audioScript": "What is the act of speaking to convey information?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Charts",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Visual Communication Aid”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q31",
+      "modelAnswer": "Charts",
+      "audioScript": "What visual aid is often used in presentations to convey data?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Non-verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Type”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-048-q32",
+      "modelAnswer": "Non-verbal",
+      "audioScript": "What kind of communication involves gestures and body language?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Global Freshwater Crisis”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-048-q33",
+      "modelAnswer": "Managing global freshwater resources is an escalating challenge due to population growth, agricultural demands, and climate change, necessitating integrated strategies like conservation, improved irrigation, and international cooperation for sustainable distribution.",
+      "readText": "Managing global freshwater resources presents an escalating challenge due to increasing population, agricultural demands, and climate change. Many regions face severe water scarcity, impacting food security, economic development, and public health. Pollution further degrades available supplies, making clean water access a critical issue. Effective management requires integrated strategies, including conservation, improved irrigation technologies, wastewater treatment, and international cooperation to ensure equitable and sustainable distribution for future generations."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Digital communication has dramatically altered human interaction. Discuss the most significant advantages and disadvantages of this shift, and provide examples to support your arguments.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-048-q34",
+      "modelAnswer": "The advent of digital communication, encompassing everything from email to social media and instant messaging, has fundamentally reshaped how individuals interact globally. This transformation brings with it a host of profound advantages and disadvantages that warrant careful consideration.\n\nOne of the most significant advantages is the unprecedented speed and reach of information exchange. Digital platforms enable instant communication across vast distances, facilitating global collaboration in business and academia, and allowing families and friends to stay connected regardless of geographical barriers. For instance, a multinational project team can hold real-time video conferences, drastically reducing travel needs and accelerating decision-making. Moreover, digital communication has democratized information access, empowering social movements and providing platforms for diverse voices to be heard, such as during political campaigns or humanitarian crises.\n\nHowever, this shift is not without its drawbacks. A primary disadvantage is the potential for reduced quality of interpersonal relationships. Over-reliance on digital interactions can sometimes diminish the depth and nuance of face-to-face communication, leading to misunderstandings or a sense of emotional detachment. For example, sending a text message might lack the empathy conveyed through tone of voice or body language in a direct conversation. Furthermore, the constant influx of digital information can lead to information overload, anxiety, and a blurring of work-life boundaries, as individuals feel compelled to be constantly available. The proliferation of misinformation and 'fake news' through rapid digital sharing also poses a serious threat to informed public discourse.\n\nIn conclusion, while digital communication offers unparalleled efficiency and global connectivity, its widespread adoption also introduces challenges related to the quality of human interaction and information integrity. Striking a balance between leveraging its benefits and mitigating its drawbacks is crucial for fostering healthy personal relationships and a well-informed society in the digital age."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Effective communication across different cultures is increasingly important in today's globalized world. Discuss the main challenges involved and propose strategies to overcome them.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-048-q35",
+      "modelAnswer": "In an increasingly interconnected world, the ability to communicate effectively across diverse cultural backgrounds has become an indispensable skill. However, this necessity is often accompanied by significant challenges, which, if not addressed, can lead to misunderstandings and hinder global cooperation.\n\nOne of the primary challenges in cross-cultural communication stems from differences in verbal communication styles. Some cultures, for instance, prefer direct and explicit language, while others favor indirectness and rely heavily on context. A direct statement in one culture might be perceived as rude in another, where subtlety is valued. Non-verbal cues, such as gestures, eye contact, and personal space, also vary dramatically across cultures, leading to potential misinterpretations. For example, a thumbs-up gesture, positive in many Western countries, can be offensive elsewhere. Beyond superficial differences, underlying cultural values, beliefs, and assumptions about hierarchy, time, and individualism versus collectivism profoundly influence communication patterns and expectations, making true understanding difficult.\n\nTo overcome these challenges, several strategies can be employed. Firstly, developing cultural awareness and empathy is paramount. Individuals should actively research and learn about the communication norms, values, and customs of the cultures they interact with. This includes understanding both verbal and non-verbal signals. Secondly, practicing active listening and asking clarifying questions can help bridge gaps in understanding, ensuring that messages are received as intended. For instance, rather than assuming comprehension, one might say, \"Just to ensure I understand, could you rephrase that in your own words?\" Thirdly, adopting a flexible and adaptable communication style is crucial. This might involve adjusting one's pace of speech, choice of vocabulary, or even the formality of language to suit the cultural context. Finally, seeking feedback and being open to correcting one's own cultural biases can foster an environment of mutual respect and learning. For example, a shared debrief after a cross-cultural interaction can highlight areas for improvement.\n\nIn conclusion, while cross-cultural communication presents complex challenges rooted in linguistic, non-verbal, and value-based differences, these can be effectively navigated through proactive cultural awareness, empathetic listening, flexible communication approaches, and a commitment to continuous learning and feedback. Mastering these strategies is vital for fostering successful relationships and collaborations in our globalized society."
+    }
+  ]
+}

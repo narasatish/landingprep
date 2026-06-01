@@ -1,0 +1,80 @@
+{
+  "id": "toefl-speaking-010",
+  "exam": "toefl",
+  "section": "speaking",
+  "type": "section",
+  "title": "TOEFL iBT Speaking Practice Test 10",
+  "variant": "ibt",
+  "durationSeconds": 720,
+  "questionCount": 4,
+  "instructions": "There are 4 speaking tasks. Task 1 is independent — express your opinion on a given topic. Tasks 2 and 3 are integrated — read a short text and listen to a conversation or lecture, then speak. Task 4 is integrated — listen to a lecture and summarise key points.",
+  "questions": [
+    {
+      "id": "toefl-speaking-010-q01",
+      "taskNum": 1,
+      "taskType": "independent",
+      "questionType": "speaking_task",
+      "prompt": "Some people prefer to use technology such as smartphones and apps to help manage their daily tasks, while others prefer to manage tasks without technology. Which do you prefer and why?",
+      "prepSeconds": 15,
+      "responseSeconds": 45,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "modelAnswer": "Begin by directly answering the question with a clear statement. Add 2–3 specific personal details or experiences that support your answer. Use transitional phrases to connect ideas and finish with a brief concluding remark."
+    },
+    {
+      "id": "toefl-speaking-010-q02",
+      "taskNum": 2,
+      "taskType": "campus_integrated",
+      "questionType": "speaking_task",
+      "prompt": "The man expresses his opinion about the university's new digital study rooms. State his opinion and explain the reasons he gives for holding it.",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "readingTitle": "University Announces New Digital Study Rooms",
+      "readingText": "The university library will open 20 new digital study rooms next semester. Each room will be equipped with large-screen monitors, collaborative software, and soundproofing. Students will be able to book rooms through the library portal up to 48 hours in advance. Library staff will be available during peak hours to provide technical support.",
+      "listeningDescription": "A male student expresses enthusiasm about the digital study rooms to a female student. He says he's been struggling to find quiet space with good technology for group projects, and this solves that problem. The female student is less enthusiastic — she says the booking limit of 48 hours is too restrictive, and worries about technical problems during important study sessions.",
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "id": "toefl-speaking-010-q03",
+      "taskNum": 3,
+      "taskType": "academic_integrated",
+      "questionType": "speaking_task",
+      "prompt": "Using the example from the lecture, explain how it illustrates the concept of cognitive offloading described in the reading.",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "readingTitle": "Cognitive Offloading",
+      "readingText": "Cognitive offloading refers to the process of using external tools — such as notes, lists, or digital devices — to reduce the cognitive demands placed on working memory. When people store information externally, they free up mental resources for other tasks. Researchers argue that cognitive offloading is a normal and adaptive human strategy rather than a sign of intellectual laziness.",
+      "listeningDescription": "A professor gives an example of cognitive offloading in an experiment where participants who were allowed to photograph objects they needed to remember later performed better on subsequent memory tests than those who had to memorise objects without assistance. The professor notes this shows external tools can enhance rather than replace cognitive function.",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "toefl-speaking-010-q04",
+      "taskNum": 4,
+      "taskType": "academic_integrated_lecture_only",
+      "questionType": "speaking_task",
+      "prompt": "Using points from the lecture, explain how social media algorithms affect the content users see.",
+      "prepSeconds": 20,
+      "responseSeconds": 60,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "listeningDescription": "A professor discusses how algorithms on social media platforms use engagement metrics to determine what content users see. The professor explains that content designed to provoke strong emotional responses — particularly anger or outrage — generates more clicks and comments, which the algorithm interprets as high-value content. This creates an incentive structure that systematically amplifies emotionally provocative content regardless of its accuracy.",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    }
+  ]
+}

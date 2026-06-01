@@ -1,0 +1,48 @@
+{
+  "id": "duolingo-production-019",
+  "exam": "duolingo",
+  "section": "production",
+  "type": "section",
+  "title": "Duolingo English Test Production Practice Test 19",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Write your response within the time limit. Use the rubric for review.",
+  "questions": [
+    {
+      "id": "duolingo-production-019-q01",
+      "questionType": "writing_task",
+      "prompt": "[1] Write an essay discussing the benefits and limitations of public transport.",
+      "modelAnswer": "A strong response should address public transport clearly, organize ideas logically, and include relevant examples without unsupported claims.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "public transport",
+      "fingerprint": "d528941d9a31c5ab90"
+    },
+    {
+      "id": "duolingo-production-019-q02",
+      "questionType": "writing_task",
+      "prompt": "[2] Write a formal email requesting information about a programme related to public transport.",
+      "modelAnswer": "A strong response should address public transport clearly, organize ideas logically, and include relevant examples without unsupported claims.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "public transport",
+      "fingerprint": "a1cb3e7888fbf78676"
+    }
+  ],
+  "fingerprints": [
+    "d528941d9a31c5ab90",
+    "a1cb3e7888fbf78676"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-026",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 26",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-026-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You recently received a parking ticket that you believe was issued in error — you were parked legally in a valid permit zone but the officer did not notice your displayed permit.",
+      "recipient": "the city's parking authority",
+      "bulletPoints": [
+        "Explain the circumstances of the ticket",
+        "Describe the evidence you have to support your appeal",
+        "Request that the ticket be cancelled"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You recently purchased a language learning app and are very satisfied with it. Write a letter to the app's customer service team explaining what you like about the app, how it has helped you, and suggesting one improvement.",
+      "modelAnswer": "Dear Sir/Madam,\n\nI am writing to appeal Parking Violation Notice #P12345678, issued on October 26, 2023, at approximately 10:30 AM, for alleged parking in a permit-only zone without a valid permit. I believe this ticket was issued in error, as I was legally parked with a valid residential permit clearly displayed.\n\nMy vehicle, a grey Honda Civic (Licence Plate: ABC 123), was parked on the 300 block of Main Street, directly in front of my residence. I possess a valid Zone 2 residential parking permit, #Z2-98765, which was affixed to the inside of my front windshield, lower passenger side, as per city regulations. It appears the enforcement officer may have overlooked the permit when issuing the ticket.\n\nTo support my appeal, I have attached a scanned copy of the parking violation notice, a photograph clearly showing my valid Zone 2 residential permit displayed in my windshield at the time the ticket was issued (taken shortly after I discovered the ticket), and a copy of my permit registration details.\n\nGiven this evidence, I respectfully request that Parking Violation Notice #P12345678 be cancelled. Please let me know if any further information is required from my end.\n\nThank you for your time and consideration.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Email Address]"
+    },
+    {
+      "id": "celpip-writing-026-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city is planning to improve support for new immigrants. Which initiative do you think should be prioritised?",
+      "optionA": "Expand free language training programmes available in evenings and on weekends",
+      "optionB": "Create a mentorship programme matching new immigrants with established professionals in their field",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A community volunteerism initiative is asking residents why they do or do not volunteer. Describe your experience with volunteering, what motivates or prevents you from volunteering more, and what organisations or causes you would most like to support.",
+      "modelAnswer": "I firmly believe that expanding free language training programmes, especially those available in evenings and on weekends, should be the city's top priority for supporting new immigrants.\n\nFirstly, language proficiency is the fundamental gateway to virtually all other aspects of successful integration. Without strong English skills, immigrants struggle to access employment, navigate public services, understand healthcare information, and participate fully in community life. Enhanced language training directly addresses this foundational barrier, empowering individuals to communicate effectively and confidently from day one. For instance, an immigrant who can articulate their skills in an interview or understand instructions at a doctor's office is far more likely to thrive than one who cannot.\n\nSecondly, offering these courses during non-traditional hours significantly increases accessibility for new immigrants who often take entry-level jobs with demanding daytime schedules to support their families. This flexibility ensures that those most in need are not excluded due to work commitments, maximizing the reach and impact of the programmes.\n\nWhile a mentorship programme is valuable, its effectiveness is often predicated on a certain level of language proficiency to facilitate meaningful communication and knowledge transfer. Without adequate language skills, even the best mentorship match may struggle to achieve its full potential. Therefore, prioritising language training creates a more solid foundation upon which other integration initiatives, including mentorship, can be built and succeed."
+    }
+  ]
+}

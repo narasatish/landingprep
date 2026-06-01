@@ -1,0 +1,21 @@
+{
+  "name": "LandingPrep — Free Mock Tests",
+  "short_name": "LandingPrep",
+  "description": "Free IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE & GMAT mock tests with AI speaking & writing practice, model answers and instant scoring.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FBFCFE",
+  "theme_color": "#4F46E5",
+  "lang": "en",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Mock Tests", "url": "./#/exam-prep" },
+    { "name": "AI Agents", "url": "./#/agents" },
+    { "name": "Learning Club", "url": "./#/learning" }
+  ]
+}

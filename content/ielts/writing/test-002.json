@@ -1,0 +1,94 @@
+{
+  "id": "ielts-writing-002",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 2",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-002-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The graphs below show changes in the participation of women in the workforce in four European countries between 1990 and 2020. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "gender equality",
+      "modelAnswer": "The line graph illustrates the percentage of women participating in the workforce in four European countries (A, B, C, and D) over a 30-year period, from 1990 to 2020.\n\nOverall, there was a significant upward trend in female workforce participation across all four nations, with Country C consistently showing the highest percentages throughout the period. Country D, despite starting with the lowest figure, experienced the most dramatic growth.\n\nIn 1990, Country C had the highest participation rate at 60%, followed by Country A at 50%. Country B's figure stood at 45%, while Country D recorded the lowest at 35%. By 2000, all countries had seen an increase, with Country D experiencing a substantial jump to 48%, surpassing Country B's 52% and Country A's 58%. Country C maintained its lead at 62%.\n\nThe positive trend continued into 2010 and 2020. By 2020, Country C still had the highest rate at 72%, closely followed by Country A at 70%. Country B reached 68%, having steadily increased from 45% in 1990. Country D showed remarkable progress, climbing from 35% to 65% over the three decades, representing the largest proportional increase among the four countries.",
+      "visual": {
+        "chartType": "line",
+        "title": "Female Workforce Participation in Four European Countries (1990-2020)",
+        "yLabel": "Percentage (%)",
+        "xAxis": [
+          "1990",
+          "2000",
+          "2010",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Country A",
+            "values": [
+              50,
+              58,
+              65,
+              70
+            ]
+          },
+          {
+            "label": "Country B",
+            "values": [
+              45,
+              52,
+              60,
+              68
+            ]
+          },
+          {
+            "label": "Country C",
+            "values": [
+              60,
+              62,
+              68,
+              72
+            ]
+          },
+          {
+            "label": "Country D",
+            "values": [
+              35,
+              48,
+              55,
+              65
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-002-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "The position of women has changed a great deal in many societies over the past 50 years. However, these societies cannot claim to have achieved true gender equality. To what extent do you agree or disagree?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "gender equality",
+      "modelAnswer": "The metamorphosis in women's societal standing across numerous cultures over the last half-century is undeniable. While significant strides have been made, particularly in areas like education and employment, the assertion that these societies have yet to attain genuine gender parity resonates profoundly with my own perspective. I wholeheartedly agree that despite considerable progress, fundamental inequalities persist.\n\nOne primary reason for this continued disparity lies in the entrenched patriarchal structures and cultural biases that permeate many societies. Although women now have greater access to higher education and professional careers, they frequently encounter a 'glass ceiling' preventing their ascent to leadership roles, or are disproportionately burdened with domestic responsibilities. For instance, even in highly developed nations, women remain significantly underrepresented in corporate boardrooms and political offices, often facing the 'motherhood penalty' where their career progression stalls after having children, a phenomenon rarely experienced by their male counterparts. This societal expectation often forces women into a difficult choice between career advancement and family life, revealing a clear lack of true equality.\n\nFurthermore, economic disparities and the prevalence of gender-based violence underscore the ongoing struggle for true equality. Despite equal pay legislation in many countries, a persistent gender pay gap remains, with women earning less than men for comparable work across various sectors. Beyond economics, the alarming rates of domestic violence, sexual harassment, and femicide globally demonstrate that women are still not afforded the same fundamental safety and respect as men. These pervasive issues highlight that while women's roles have evolved, the systemic changes required for true equality, where women are valued and protected equally, are far from complete.\n\nIn conclusion, while the advancement of women over the past 50 years is a commendable achievement, it is premature to declare that true gender equality has been reached. Persistent systemic biases, economic inequities, and the continued prevalence of gender-based violence unequivocally indicate that much work remains to be done."
+    }
+  ],
+  "variant": "academic"
+}

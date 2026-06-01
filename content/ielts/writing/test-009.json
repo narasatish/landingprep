@@ -1,0 +1,82 @@
+{
+  "id": "ielts-writing-009",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 9",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-009-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The chart below shows participation rates in different types of physical activity among adults in the UK in 2019 and 2023. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "health and obesity",
+      "modelAnswer": "The bar chart illustrates the percentage of adults in the UK who participated in six different types of physical activity in two specific years, 2019 and 2023.\n\nOverall, walking remained the most popular activity in both years, showing a notable increase. While most activities saw a rise in participation, swimming and team sports experienced a decline over the four-year period.\n\nIn 2019, walking was the dominant activity at 65%, which then increased to 72% in 2023, solidifying its top position. Gym/fitness classes also saw a significant rise, from 30% to 38%. Cycling and running both experienced modest growth; cycling went from 22% to 25%, and running saw a more substantial jump from 18% to 24%, making it the third most popular activity in 2023, surpassing swimming.\n\nConversely, swimming, which had a participation rate of 28% in 2019, dropped to 20% in 2023. Team sports also became less popular, with its rate falling from 15% to 12%, making it the least participated activity in 2023.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Participation Rates in Physical Activities (UK Adults, 2019 vs. 2023)",
+        "yLabel": "Participation Rate (%)",
+        "xAxis": [
+          "Walking",
+          "Gym/Fitness Classes",
+          "Cycling",
+          "Swimming",
+          "Team Sports",
+          "Running"
+        ],
+        "series": [
+          {
+            "label": "2019",
+            "values": [
+              65,
+              30,
+              22,
+              28,
+              15,
+              18
+            ]
+          },
+          {
+            "label": "2023",
+            "values": [
+              72,
+              38,
+              25,
+              20,
+              12,
+              24
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-009-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "An increasing number of people are becoming obese. What do you think are the main causes of this problem, and what measures can be taken to address it?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "health and obesity",
+      "modelAnswer": "The escalating prevalence of obesity across the globe is a significant public health concern. This essay will delineate the primary contributors to this worrying trend and propose effective interventions to mitigate its impact.\n\nThe principal causes of rising obesity rates stem from profound shifts in lifestyle and dietary habits. Firstly, the ubiquitous availability and affordability of highly processed foods, which are typically energy-dense and nutrient-poor, have altered consumption patterns dramatically. For instance, fast-food outlets and convenience stores offer cheap, calorie-laden options that are often preferred over healthier, more expensive alternatives, especially by individuals with limited time or financial resources. Secondly, a pervasive decline in physical activity, largely attributable to sedentary occupations and technology-driven entertainment, exacerbates the problem. Modern work environments often involve prolonged sitting, and leisure time is increasingly spent engaging with screens rather than participating in active pursuits.\n\nAddressing this multifaceted issue requires a concerted effort involving both public health initiatives and individual responsibility. Governments could implement policies such as taxes on sugary drinks and unhealthy snacks, alongside subsidies for fresh produce, making nutritious food more accessible and appealing. Furthermore, urban planning should prioritise pedestrian and cycling infrastructure, encouraging active commuting and recreational activities. Simultaneously, educational campaigns are crucial to foster greater awareness of balanced nutrition and the benefits of regular exercise, empowering individuals to make informed choices about their health.\n\nIn conclusion, the surge in obesity is largely driven by readily available unhealthy foods and sedentary lifestyles. A combination of governmental policy interventions and public education is imperative to reverse this concerning trend and promote healthier societies."
+    }
+  ],
+  "variant": "academic"
+}

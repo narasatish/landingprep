@@ -1,0 +1,30 @@
+{
+  "id": "celpip-full-015",
+  "exam": "celpip",
+  "type": "full",
+  "title": "CELPIP Full Mock Test 15",
+  "durationSeconds": 12000,
+  "instructions": "Full CELPIP General mock test. Complete all four sections in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "celpip-listening-015",
+      "file": "celpip/listening/test-015.json"
+    },
+    {
+      "section": "reading",
+      "testId": "celpip-reading-015",
+      "file": "celpip/reading/test-015.json"
+    },
+    {
+      "section": "writing",
+      "testId": "celpip-writing-015",
+      "file": "celpip/writing/test-015.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "celpip-speaking-015",
+      "file": "celpip/speaking/test-015.json"
+    }
+  ]
+}

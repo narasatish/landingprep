@@ -1,0 +1,775 @@
+{
+  "id": "pte-speaking-writing-002",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 2",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-002-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Unveiling Deep Ocean Mysteries”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "eb1000847a1d33495d",
+      "modelAnswer": "Deep ocean exploration continues to reveal astonishing biodiversity and geological phenomena previously unknown. Remotely operated vehicles (ROVs) are crucial tools, allowing scientists to investigate hydrothermal vents, abyssal plains, and deep-sea trenches. These environments host unique extremophiles adapted to immense pressure, absolute darkness, and scarce nutrients, challenging our understanding of life's limits and potential origins. Further research promises to unlock more secrets of Earth's largest habitat.",
+      "readText": "Deep ocean exploration continues to reveal astonishing biodiversity and geological phenomena previously unknown. Remotely operated vehicles (ROVs) are crucial tools, allowing scientists to investigate hydrothermal vents, abyssal plains, and deep-sea trenches. These environments host unique extremophiles adapted to immense pressure, absolute darkness, and scarce nutrients, challenging our understanding of life's limits and potential origins. Further research promises to unlock more secrets of Earth's largest habitat."
+    },
+    {
+      "id": "pte-speaking-writing-002-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Digital Archives Preservation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Digital archives ensure the long-term preservation of invaluable historical documents and media.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "419b5ed4ba9f66d5d5",
+      "modelAnswer": "Digital archives ensure the long-term preservation of invaluable historical documents and media.",
+      "audioScript": "Digital archives ensure the long-term preservation of invaluable historical documents and media."
+    },
+    {
+      "id": "pte-speaking-writing-002-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Major Ancient Trade Routes: Peak Volume Estimates (100 BCE - 500 CE)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "20a244b5cd607890e5",
+      "modelAnswer": "This bar chart illustrates the estimated peak trade volumes of major ancient trade routes between 100 BCE and 500 CE. The Silk Road (Land) clearly dominated, reaching an impressive 150 million USD equivalent. The Spice Routes (Maritime) followed with 120 million, highlighting the significance of sea trade. In contrast, the Amber Road represents the lowest volume at 25 million, indicating a more localized network. The Incense Route and Trans-Saharan Trade also show substantial activity at 75 and 40 million respectively, demonstrating diverse ancient communication and economic connections across continents.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Major Ancient Trade Routes: Peak Volume Estimates (100 BCE - 500 CE)",
+        "yLabel": "Estimated Volume (Millions USD Equivalent)",
+        "xAxis": [
+          "Silk Road (Land)",
+          "Spice Routes (Maritime)",
+          "Incense Route",
+          "Trans-Saharan Trade",
+          "Amber Road"
+        ],
+        "series": [
+          {
+            "label": "Trade Volume",
+            "values": [
+              150,
+              120,
+              75,
+              40,
+              25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-002-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Innovations in Battery Design”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "bce048e09dad209961",
+      "modelAnswer": "The speaker highlighted the urgent demand for sustainable and efficient battery technologies, especially for renewable energy. Current lithium-ion batteries present issues with material scarcity and environmental impact. Researchers are investigating new chemistries, such as solid-state and organic options. The primary objective is to create batteries that are high-performing, cost-effective, safer, and environmentally friendly across their entire lifecycle, from manufacturing to recycling.",
+      "audioScript": "The lecture discussed the critical need for more sustainable and efficient battery technologies, particularly for renewable energy storage. Current lithium-ion batteries, while powerful, face challenges related to material scarcity, environmental impact from mining, and disposal. Researchers are exploring novel chemistries like solid-state batteries, flow batteries, and even organic alternatives. The goal is to develop batteries that are not only high-performing but also cost-effective, safer, and have a significantly reduced ecological footprint throughout their lifecycle, from production to recycling.",
+      "keyPoints": [
+        "Need for sustainable battery tech",
+        "Challenges of current lithium-ion",
+        "Exploring novel chemistries",
+        "Goal: cost-effective, safer, eco-friendly batteries"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-002-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Effective Language Learning”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Practice",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "3e777a9bb4b79e4f48",
+      "modelAnswer": "Practice",
+      "audioScript": "What is a common daily habit for effective language learning?"
+    },
+    {
+      "id": "pte-speaking-writing-002-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Impact of Public Health Campaigns”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "58e0ac271fb5a8c9e8",
+      "modelAnswer": "Public health campaigns significantly improve societal well-being by using evidence-based, culturally sensitive media to disseminate vital health information, leading to measurable changes in public health outcomes and reduced disease rates.",
+      "readText": "Public health campaigns play a crucial role in shaping societal behaviors and improving overall well-being. These initiatives often leverage various media channels to disseminate vital information about disease prevention, healthy lifestyle choices, and access to healthcare services. Effective campaigns are typically evidence-based, culturally sensitive, and utilize compelling messaging to resonate with target audiences. Their success can be measured by changes in public knowledge, attitudes, and ultimately, reductions in morbidity and mortality rates associated with specific health issues, demonstrating their profound impact on communities worldwide."
+    },
+    {
+      "id": "pte-speaking-writing-002-q07",
+      "questionType": "essay",
+      "prompt": "Museums face increasing pressure to balance the preservation of artifacts with public accessibility and modern display techniques. Discuss the challenges involved in museum conservation and argue whether traditional methods or innovative approaches are more beneficial for future cultural heritage. Provide examples to support your viewpoint.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "5768ad5582eae942e9",
+      "modelAnswer": "Museum conservation is a multifaceted discipline grappling with the inherent tension between safeguarding historical integrity and engaging contemporary audiences. Traditionally, conservation has prioritized environmental control, meticulous restoration, and limited handling to prevent deterioration. This approach, while effective in preserving physical objects, can sometimes render collections less accessible or visually appealing to the modern museum-goer, who often expects interactive and immersive experiences.\n\nThe challenges are substantial: artifacts degrade due to light, humidity, temperature fluctuations, and human interaction. Traditional methods, such as storing sensitive textiles in dark, temperature-controlled vaults or displaying fragile manuscripts behind thick glass, ensure longevity. However, they can also create a barrier, diminishing the emotional and educational impact on visitors. Innovative approaches, conversely, embrace technology like virtual reality, 3D printing for replicas, and digital archiving, which allow for broader access without risking original artifacts. For instance, creating high-resolution digital scans of ancient scrolls enables global study without physical handling, and virtual tours can transport viewers into historical contexts impossible with static displays.\n\nWhile traditional methods are indispensable for the physical preservation of unique objects, innovative approaches offer unparalleled opportunities for engagement and dissemination. A balanced strategy, integrating the best of both worlds, is arguably the most beneficial for future cultural heritage. Core artifacts should still receive the meticulous care of traditional conservation, but their stories and significance can be amplified through digital innovation. This hybrid model ensures that heritage remains both intact for future generations and vibrantly accessible to the present, fostering a deeper appreciation and understanding of our shared past."
+    },
+    {
+      "id": "pte-speaking-writing-002-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Citizen Science Initiatives”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "e3a03859e532881ac9",
+      "modelAnswer": "Community science projects, also known as citizen science, empower individuals to contribute to scientific research. Volunteers often collect data on local environmental conditions, wildlife populations, or astronomical phenomena. This collaborative approach expands research capabilities, generating vast datasets that professional scientists might otherwise struggle to acquire. Moreover, it fosters scientific literacy and engagement among the public, bridging the gap between scientific institutions and local communities, leading to more informed decision-making.",
+      "readText": "Community science projects, also known as citizen science, empower individuals to contribute to scientific research. Volunteers often collect data on local environmental conditions, wildlife populations, or astronomical phenomena. This collaborative approach expands research capabilities, generating vast datasets that professional scientists might otherwise struggle to acquire. Moreover, it fosters scientific literacy and engagement among the public, bridging the gap between scientific institutions and local communities, leading to more informed decision-making."
+    },
+    {
+      "id": "pte-speaking-writing-002-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Benefits of Urban Green Roofs”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Urban green roofs provide significant environmental benefits, including improved air quality and biodiversity.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "3db053cbaeec765730",
+      "modelAnswer": "Urban green roofs provide significant environmental benefits, including improved air quality and biodiversity.",
+      "audioScript": "Urban green roofs provide significant environmental benefits, including improved air quality and biodiversity."
+    },
+    {
+      "id": "pte-speaking-writing-002-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Impact of Wayfinding Cues on Navigation Success\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "e042f9ff5e52344005",
+      "modelAnswer": "This bar chart illustrates the impact of different wayfinding cues on navigation success rates. 'Signage + Landmarks' clearly shows the highest success rate at 85%, indicating its superior effectiveness. In contrast, 'No Cues' results in the lowest success at a mere 30%. 'Landmarks Only' and 'Digital Map' also show strong performance at 65% and 75% respectively, both significantly outperforming 'Signage Only' at 55%. Overall, combining visual and textual cues proves most beneficial for successful wayfinding.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Impact of Wayfinding Cues on Navigation Success",
+        "yLabel": "Success Rate (%)",
+        "xAxis": [
+          "No Cues",
+          "Signage Only",
+          "Landmarks Only",
+          "Signage + Landmarks",
+          "Digital Map"
+        ],
+        "series": [
+          {
+            "label": "Navigation Success",
+            "values": [
+              30,
+              55,
+              65,
+              85,
+              75
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-002-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “The Deep Ocean's Hidden Life”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "01a8c6f8f88771cc81",
+      "modelAnswer": "The lecture discussed the surprising biodiversity of the deep ocean, previously considered barren. New submersible technology has uncovered vibrant ecosystems near hydrothermal vents and cold seeps, which are sustained by chemosynthesis rather than sunlight. These distinct biological communities feature giant tube worms, specialized microbes, and unusual fish adapted to extreme conditions. Studying these ecosystems provides valuable insights into the origins of life and the possibility of extraterrestrial life, emphasizing the numerous mysteries still existing on Earth.",
+      "audioScript": "Today's lecture focused on the incredible biodiversity found in the deep ocean, an environment previously thought to be largely barren. Advanced submersible technologies have revealed thriving ecosystems around hydrothermal vents and cold seeps, powered not by sunlight but by chemosynthesis. These unique biological communities include giant tube worms, specialized microbes, and bizarre fish adapted to extreme pressure and perpetual darkness. Understanding these ecosystems offers insights into the origins of life and the potential for life in extraterrestrial environments, highlighting the vast unknowns still present on our own planet.",
+      "keyPoints": [
+        "Deep ocean biodiversity",
+        "Chemosynthesis at vents/seeps",
+        "Unique adapted life forms",
+        "Insights into life's origins and extraterrestrial potential"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-002-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Digital Archives Function”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Preservation",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "12b4d5e00c55bdc137",
+      "modelAnswer": "Preservation",
+      "audioScript": "What is the primary purpose of digital archives?"
+    },
+    {
+      "id": "pte-speaking-writing-002-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Ancient Silk Road Networks”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c661d62d2cb7e38096",
+      "modelAnswer": "The Silk Road, a vast network of ancient trade routes, facilitated not only the exchange of diverse goods like silk and spices but also profoundly influenced cultural diffusion, religious spread, and technological advancements, thereby shaping human history through early globalization.",
+      "readText": "The Silk Road was not merely a single route but a complex network of ancient trade routes that connected the East and West, facilitating the exchange of goods, ideas, religions, and technologies for over a millennium. While silk was a primary commodity, the network also saw the movement of spices, precious metals, textiles, and ceramics. Beyond commerce, these routes were instrumental in cultural diffusion, influencing art, architecture, and scientific advancements across vast civilizations. The interactions fostered along these pathways profoundly shaped the course of human history, demonstrating early globalization's enduring impact."
+    },
+    {
+      "id": "pte-speaking-writing-002-q14",
+      "questionType": "essay",
+      "prompt": "The demand for renewable energy is growing, but its widespread adoption depends heavily on efficient energy storage solutions. Discuss the challenges and opportunities in designing next-generation renewable batteries. Argue whether sustainable materials or increased energy density should be the primary focus for future development. Provide examples.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "1a99ebba59f9b43830",
+      "modelAnswer": "The escalating global demand for renewable energy sources like solar and wind power necessitates equally advanced energy storage solutions. Current battery technologies, predominantly lithium-ion, present limitations in terms of cost, safety, lifespan, and environmental impact. The challenges in designing next-generation renewable batteries are considerable, encompassing the need for improved energy density, faster charging capabilities, enhanced safety, and the use of more sustainable and readily available materials.\n\nOpportunities abound in exploring novel chemistries and architectures. For instance, solid-state batteries promise higher energy density and improved safety by replacing liquid electrolytes with solid ones. Flow batteries offer scalability for grid-level storage, decoupling power from energy capacity. However, a critical debate centers on whether the primary focus should be on sustainable materials or increased energy density. While higher energy density allows for longer operation and smaller footprints, sustainable materials address the environmental and ethical concerns associated with mining rare earth elements and the disposal of hazardous waste.\n\nI believe that sustainable materials should be the primary focus for future battery development, although energy density remains important. Batteries made from abundant, non-toxic, and easily recyclable materials, such as sodium-ion or even organic batteries, offer a more viable long-term solution. For example, research into iron-air batteries, which use abundant iron and oxygen, could drastically reduce costs and environmental harm, even if their energy density is initially lower than lithium-ion. Prioritizing sustainability ensures that the shift to renewable energy doesn't merely replace one environmental problem with another. While energy density improvements will naturally occur with research, a foundational commitment to eco-friendly materials will create a truly green energy future, aligning with the core principles of renewable energy itself."
+    },
+    {
+      "id": "pte-speaking-writing-002-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Effective Language Acquisition”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "e9dacd25ae72c4aaba",
+      "modelAnswer": "Developing strong language learning habits is crucial for fluency. Consistent daily exposure, even for short periods, significantly enhances vocabulary retention and grammatical understanding. Engaging with authentic materials like podcasts, news articles, or native speakers fosters practical application. Moreover, embracing mistakes as part of the learning process encourages risk-taking and ultimately accelerates progression towards communicative competence. These habits collectively build a solid foundation for mastering a new language.",
+      "readText": "Developing strong language learning habits is crucial for fluency. Consistent daily exposure, even for short periods, significantly enhances vocabulary retention and grammatical understanding. Engaging with authentic materials like podcasts, news articles, or native speakers fosters practical application. Moreover, embracing mistakes as part of the learning process encourages risk-taking and ultimately accelerates progression towards communicative competence. These habits collectively build a solid foundation for mastering a new language."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Maritime Trade History”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q16",
+      "modelAnswer": "The history of maritime trade routes is intricately linked to global exploration and economic development. From ancient Phoenician voyages to the vast networks of the Hanseatic League, sea lanes have facilitated the exchange of goods, cultures, and technologies. These routes were pivotal in the rise and fall of empires, driving innovation in shipbuilding and navigation. Understanding their evolution provides critical insights into historical globalization and the interconnectedness of human civilizations across continents.",
+      "readText": "The history of maritime trade routes is intricately linked to global exploration and economic development. From ancient Phoenician voyages to the vast networks of the Hanseatic League, sea lanes have facilitated the exchange of goods, cultures, and technologies. These routes were pivotal in the rise and fall of empires, driving innovation in shipbuilding and navigation. Understanding their evolution provides critical insights into historical globalization and the interconnectedness of human civilizations across continents."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Solar Energy Breakthroughs”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q17",
+      "modelAnswer": "Recent advances in renewable solar energy technology are making it more efficient and accessible than ever before. Innovations in photovoltaic materials, such as perovskite solar cells, promise higher conversion rates at lower manufacturing costs. Furthermore, improved energy storage solutions and smart grid integration are overcoming the intermittency challenges associated with solar power. These developments are crucial for accelerating the global transition away from fossil fuels and towards a sustainable energy future, impacting both industry and residential consumption.",
+      "readText": "Recent advances in renewable solar energy technology are making it more efficient and accessible than ever before. Innovations in photovoltaic materials, such as perovskite solar cells, promise higher conversion rates at lower manufacturing costs. Furthermore, improved energy storage solutions and smart grid integration are overcoming the intermittency challenges associated with solar power. These developments are crucial for accelerating the global transition away from fossil fuels and towards a sustainable energy future, impacting both industry and residential consumption."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Climate Change Solutions”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q18",
+      "modelAnswer": "Climate change mitigation strategies encompass a range of actions aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy, improving energy efficiency, and implementing sustainable land use practices. Reforestation and carbon capture technologies also play a vital role. Effective mitigation requires international cooperation and significant policy shifts to achieve the ambitious targets necessary to limit global warming and protect vulnerable ecosystems from irreversible damage.",
+      "readText": "Climate change mitigation strategies encompass a range of actions aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy, improving energy efficiency, and implementing sustainable land use practices. Reforestation and carbon capture technologies also play a vital role. Effective mitigation requires international cooperation and significant policy shifts to achieve the ambitious targets necessary to limit global warming and protect vulnerable ecosystems from irreversible damage."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The neuroscience of creativity examines brain networks involved in generating novel ideas.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Neuroscience of Creativity”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q19",
+      "modelAnswer": "The neuroscience of creativity examines brain networks involved in generating novel ideas.",
+      "audioScript": "The neuroscience of creativity examines brain networks involved in generating novel ideas."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Global water scarcity and conservation require urgent international cooperation and local initiatives.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Global Water Crisis”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q20",
+      "modelAnswer": "Global water scarcity and conservation require urgent international cooperation and local initiatives.",
+      "audioScript": "Global water scarcity and conservation require urgent international cooperation and local initiatives."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Genetic engineering and ethical considerations are complex topics debated by scientists and society.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Genetic Engineering Ethics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q21",
+      "modelAnswer": "Genetic engineering and ethical considerations are complex topics debated by scientists and society.",
+      "audioScript": "Genetic engineering and ethical considerations are complex topics debated by scientists and society."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Quantum computing breakthroughs promise to revolutionize fields like medicine and material science.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Quantum Computing Progress”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q22",
+      "modelAnswer": "Quantum computing breakthroughs promise to revolutionize fields like medicine and material science.",
+      "audioScript": "Quantum computing breakthroughs promise to revolutionize fields like medicine and material science."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Childhood nutrition significantly impacts cognitive development, academic performance, and overall health.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Childhood Nutrition”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q23",
+      "modelAnswer": "Childhood nutrition significantly impacts cognitive development, academic performance, and overall health.",
+      "audioScript": "Childhood nutrition significantly impacts cognitive development, academic performance, and overall health."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Machine learning applications in healthcare are transforming diagnostics, drug discovery, and personalized treatments.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Machine Learning in Healthcare”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q24",
+      "modelAnswer": "Machine learning applications in healthcare are transforming diagnostics, drug discovery, and personalized treatments.",
+      "audioScript": "Machine learning applications in healthcare are transforming diagnostics, drug discovery, and personalized treatments."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial mechanics.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ancient Astronomy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q25",
+      "modelAnswer": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial mechanics.",
+      "audioScript": "The history of ancient astronomical observations reveals sophisticated knowledge of celestial mechanics."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The impact of noise pollution on wildlife disrupts communication, foraging, and reproductive behaviors.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Noise Pollution's Wildlife Impact”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q26",
+      "modelAnswer": "The impact of noise pollution on wildlife disrupts communication, foraging, and reproductive behaviors.",
+      "audioScript": "The impact of noise pollution on wildlife disrupts communication, foraging, and reproductive behaviors."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Annual Deforestation in the Amazon Basin (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q27",
+      "modelAnswer": "The line chart illustrates annual deforestation in the Amazon Basin from 1990 to 2020, measured in square kilometers. Initially, deforestation increased, peaking around 20,000 km² in 2000. Following this, there was a significant decline, reaching a low of 6,500 km² by 2015. However, deforestation rates have shown a concerning increase in recent years, rising to 10,500 km² by 2020. This indicates that while efforts to reduce deforestation showed success for a period, the trend is unfortunately reversing, highlighting ongoing environmental challenges in the region.",
+      "visual": {
+        "chartType": "line",
+        "title": "Annual Deforestation in the Amazon Basin (1990-2020)",
+        "yLabel": "Area Deforested (km²)",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Deforested Area",
+            "values": [
+              15000,
+              18500,
+              20000,
+              13000,
+              7000,
+              6500,
+              10500
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Steps of the Scientific Method\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q28",
+      "modelAnswer": "The table clearly outlines the seven sequential steps of the scientific method. It begins with 'Observation/Question', leading to 'Research' and 'Hypothesis' formulation. The central phase, 'Experiment', is crucial for 'Data collected', followed by 'Analysis' to interpret these results. The 'Conclusion' step determines if the hypothesis is supported or refuted, providing an 'Answer to question'. Finally, 'Communication' is essential for 'Knowledge disseminated', highlighting the iterative and collaborative nature of scientific inquiry. Each step builds logically towards a comprehensive understanding.",
+      "visual": {
+        "chartType": "table",
+        "title": "Steps of the Scientific Method",
+        "headers": [
+          "Step Number",
+          "Step Name",
+          "Key Action",
+          "Outcome"
+        ],
+        "rows": [
+          [
+            "1",
+            "Observation/Question",
+            "Identify a phenomenon or ask a question",
+            "Problem identified"
+          ],
+          [
+            "2",
+            "Research",
+            "Gather background information",
+            "Knowledge base established"
+          ],
+          [
+            "3",
+            "Hypothesis",
+            "Formulate a testable explanation",
+            "Testable prediction"
+          ],
+          [
+            "4",
+            "Experiment",
+            "Design and conduct a controlled test",
+            "Data collected"
+          ],
+          [
+            "5",
+            "Analysis",
+            "Interpret data and draw conclusions",
+            "Results understood"
+          ],
+          [
+            "6",
+            "Conclusion",
+            "State whether hypothesis is supported or refuted",
+            "Answer to question"
+          ],
+          [
+            "7",
+            "Communication",
+            "Share findings with others",
+            "Knowledge disseminated"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Key Components and Products of Photosynthesis\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q29",
+      "modelAnswer": "The table illustrates the key components and products of photosynthesis, divided into two main stages. The Light-Dependent Reactions, occurring in the thylakoid membranes, utilize light energy and water as inputs, producing oxygen, ATP, and NADPH. The second stage, Light-Independent Reactions or the Calvin Cycle, takes place in the stroma. Its inputs are carbon dioxide, ATP, and NADPH, leading to the crucial outputs of glucose, ADP, and NADP+. This clearly shows how energy and matter are transformed, with oxygen being a byproduct of the first stage and glucose the main energy product of the second.",
+      "visual": {
+        "chartType": "table",
+        "title": "Key Components and Products of Photosynthesis",
+        "headers": [
+          "Process Stage",
+          "Inputs",
+          "Outputs",
+          "Location"
+        ],
+        "rows": [
+          [
+            "Light-Dependent Reactions",
+            "Light energy, Water (H2O)",
+            "Oxygen (O2), ATP, NADPH",
+            "Thylakoid membranes"
+          ],
+          [
+            "Light-Independent Reactions (Calvin Cycle)",
+            "Carbon Dioxide (CO2), ATP, NADPH",
+            "Glucose (C6H12O6), ADP, NADP+",
+            "Stroma"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Population Growth Projections (2000-2100)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q30",
+      "modelAnswer": "The line chart illustrates global population growth projections from 2000 to 2100. It shows a consistent upward trend, starting at 6.1 billion in 2000 and projected to reach 7.8 billion by 2020. The population is expected to peak around 10.9 billion by 2100. The steepest growth occurs between 2000 and 2050, increasing from 6.1 to 9.7 billion. After 2070, the growth rate significantly slows, with the population rising only from 10.4 billion to 10.9 billion over the last three decades, indicating a potential stabilization.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Population Growth Projections (2000-2100)",
+        "yLabel": "Population (Billions)",
+        "xAxis": [
+          "2000",
+          "2010",
+          "2020",
+          "2030",
+          "2040",
+          "2050",
+          "2060",
+          "2070",
+          "2080",
+          "2090",
+          "2100"
+        ],
+        "series": [
+          {
+            "label": "World Population",
+            "values": [
+              6.1,
+              6.9,
+              7.8,
+              8.5,
+              9.1,
+              9.7,
+              10.1,
+              10.4,
+              10.6,
+              10.8,
+              10.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Universe Formation and Dark Matter”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q31",
+      "modelAnswer": "The speaker discussed the universe's formation, beginning with the Big Bang, and highlighted dark matter's critical role. Dark matter, an invisible substance, makes up about 27% of the universe and is essential for galaxy formation due to its gravitational pull. Scientists understand its presence through its gravitational influence on visible matter. There are currently many experiments attempting to directly detect these mysterious particles, which remain a significant enigma in modern physics.",
+      "audioScript": "The lecture explored the prevailing cosmological model for the formation of the universe, starting with the Big Bang. It emphasized the crucial role of dark matter, an invisible substance that doesn't interact with light or other electromagnetic forces, yet constitutes about 27% of the universe's mass-energy content. Without dark matter, galaxies would not have formed as they did, as there wouldn't be enough gravitational pull to hold them together. Scientists infer its existence through its gravitational effects on visible matter, and numerous experiments are underway to directly detect these elusive particles, which remain one of the biggest mysteries in physics.",
+      "keyPoints": [
+        "Big Bang and universe formation",
+        "Dark matter's crucial role (27% of mass-energy)",
+        "Dark matter's gravitational effect on galaxies",
+        "Ongoing efforts to detect dark matter particles"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal Communication Form”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q32",
+      "modelAnswer": "Verbal",
+      "audioScript": "What type of communication involves spoken words?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Non-verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Non-Verbal Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q33",
+      "modelAnswer": "Non-verbal",
+      "audioScript": "What is communication without words, using gestures or facial expressions?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Digital",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Digital Communication Method”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-002-q34",
+      "modelAnswer": "Digital",
+      "audioScript": "What method of communication involves sending text messages or emails?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-002-q01": "",
+    "pte-speaking-writing-002-q02": "",
+    "pte-speaking-writing-002-q03": "",
+    "pte-speaking-writing-002-q04": "",
+    "pte-speaking-writing-002-q05": "sample answer",
+    "pte-speaking-writing-002-q06": "",
+    "pte-speaking-writing-002-q07": "",
+    "pte-speaking-writing-002-q08": "",
+    "pte-speaking-writing-002-q09": "",
+    "pte-speaking-writing-002-q10": "",
+    "pte-speaking-writing-002-q11": "",
+    "pte-speaking-writing-002-q12": "sample answer",
+    "pte-speaking-writing-002-q13": "",
+    "pte-speaking-writing-002-q14": "",
+    "pte-speaking-writing-002-q15": ""
+  },
+  "fingerprints": [
+    "eb1000847a1d33495d",
+    "419b5ed4ba9f66d5d5",
+    "20a244b5cd607890e5",
+    "bce048e09dad209961",
+    "3e777a9bb4b79e4f48",
+    "58e0ac271fb5a8c9e8",
+    "5768ad5582eae942e9",
+    "e3a03859e532881ac9",
+    "3db053cbaeec765730",
+    "e042f9ff5e52344005",
+    "01a8c6f8f88771cc81",
+    "12b4d5e00c55bdc137",
+    "c661d62d2cb7e38096",
+    "1a99ebba59f9b43830",
+    "e9dacd25ae72c4aaba"
+  ]
+}

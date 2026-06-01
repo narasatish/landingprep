@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-033",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 33",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-033-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a message to a friend recommending a grocery store and explaining why you like it.",
+      "modelAnswer": "I would unequivocally choose Option A: \"Invest more in public transportation infrastructure, such as expanding bus routes and building new light rail lines.\" This approach offers a multifaceted solution to urban challenges, directly addressing congestion, environmental concerns, and social equity.\n\nFirstly, enhanced public transit significantly reduces traffic congestion. With more frequent, reliable, and widespread bus and rail options, individuals are incentivized to leave their cars at home. This not only shortens commute times for everyone but also frees up existing road space, allowing for smoother traffic flow and less time wasted in gridlock. For instance, the expansion of a light rail network could connect residential areas directly to business districts, making driving a less appealing and often slower alternative.\n\nSecondly, investing in public transportation is a powerful step towards environmental sustainability. Buses and trains, especially modern electric or hybrid models, are far more fuel-efficient per passenger-mile than individual cars. A robust public transit system would lead to a substantial decrease in the number of private vehicles on the road, consequently lowering carbon emissions and improving air quality in urban centres. This directly combats climate change and creates healthier living environments.\n\nWhile Option B, \"Subsidize private car ownership for low-income individuals to improve their mobility,\" might seem to address a specific need, it ultimately exacerbates existing problems. Increasing the number of private cars, even for a deserving demographic, would inevitably worsen traffic congestion, increase demand for parking, and contribute further to pollution. It's a short-term fix that fails to address the systemic issues of urban mobility and environmental impact. Therefore, prioritizing public transit infrastructure is the more forward-thinking and sustainable choice for a thriving city.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "grocery shopping tips",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-033-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short response to a community survey about grocery services in your area.",
+      "modelAnswer": "I wholeheartedly advocate for Option B, which prioritizes a balanced work-life approach over a singular focus on career advancement. While career progression is undoubtedly important, a life solely dedicated to work is ultimately unsustainable and unfulfilling.\n\nMy primary reason for choosing Option B is the profound impact of work-life balance on mental and physical well-being. Overworking and neglecting personal life often lead to burnout, stress, and chronic health issues. For instance, a friend who relentlessly pursued promotions found himself constantly exhausted and eventually developed severe anxiety, necessitating a career break. A balanced approach, conversely, allows for rejuvenation, hobbies, and quality time with loved ones, all of which contribute to a more robust and resilient individual.\n\nSecondly, Option B fosters a more holistic personal development. Investing time in family, community, and personal interests cultivates empathy, broadens perspectives, and develops skills outside the professional sphere. These experiences, such as volunteering or pursuing a passion project, can unexpectedly enhance problem-solving abilities and creativity, making one a more well-rounded and effective contributor even in their career.\n\nOption A, while seemingly ambitious, often leads to a myopic existence. Sacrificing personal life for career advancement can result in strained relationships, missed life milestones, and a sense of regret later on, as professional achievements alone rarely provide complete contentment. Ultimately, a life rich in diverse experiences and meaningful connections, as promoted by Option B, offers a far greater chance of long-term happiness and success.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "grocery shopping tips",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

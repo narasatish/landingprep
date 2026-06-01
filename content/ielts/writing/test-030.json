@@ -1,0 +1,94 @@
+{
+  "id": "ielts-writing-030",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 30",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-030-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The chart shows the proportion of national budgets spent on different areas — education, defence, healthcare, and infrastructure — in four countries in 2022. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "government spending",
+      "modelAnswer": "The bar chart illustrates the percentage of national budgets allocated to four key sectors – education, defence, healthcare, and infrastructure – across four different countries (A, B, C, and D) in 2022.\n\nOverall, healthcare consistently received the largest share of national spending in most countries, with defence showing the most significant variation. Education and infrastructure generally accounted for smaller, more comparable proportions of the budgets.\n\nHealthcare expenditure was highest in Country C, at 35%, followed closely by Country A at 30%. Country D allocated 25% of its budget to healthcare, while Country B spent 20%. In contrast, defence spending varied considerably, with Country B dedicating the largest proportion at 25%. Country A spent 10% on defence, Country C 12%, and Country D the least, at 8%.\n\nRegarding education, Country D led with 22% of its budget, closely followed by Country A at 20% and Country C at 18%. Country B had the lowest allocation for education, at 15%. For infrastructure, Country C invested the most, at 20%, with Country D allocating 18%. Country A spent 15% on infrastructure, whereas Country B dedicated the smallest proportion, at 10%.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Proportion of National Budgets Spent on Key Areas in Four Countries (2022)",
+        "yLabel": "Percentage of National Budget",
+        "xAxis": [
+          "Country A",
+          "Country B",
+          "Country C",
+          "Country D"
+        ],
+        "series": [
+          {
+            "label": "Education",
+            "values": [
+              20,
+              15,
+              18,
+              22
+            ]
+          },
+          {
+            "label": "Defence",
+            "values": [
+              10,
+              25,
+              12,
+              8
+            ]
+          },
+          {
+            "label": "Healthcare",
+            "values": [
+              30,
+              20,
+              35,
+              25
+            ]
+          },
+          {
+            "label": "Infrastructure",
+            "values": [
+              15,
+              10,
+              20,
+              18
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-030-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Some people believe that governments spend too much money on defence and not enough on education and healthcare. To what extent do you agree or disagree?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "government spending",
+      "modelAnswer": "It is often contended that national budgets allocate excessive funds to military expenditure at the expense of crucial social services such as schooling and public health. I wholeheartedly agree with this perspective, believing that a re-prioritisation towards human development is both morally imperative and strategically beneficial.\n\nGovernments frequently justify substantial defence spending by citing national security concerns, yet the practical impact often falls short of the intended protection. For instance, many nations, particularly those with limited geopolitical threats, maintain large standing armies and acquire advanced weaponry that rarely sees active deployment or deters genuine threats effectively. These vast sums could instead transform educational systems, providing modern facilities, highly trained teachers, and accessible tertiary education, thereby empowering future generations and fostering innovation. Similarly, robust healthcare systems, offering universal access to quality medical care, preventative services, and cutting-edge research, would significantly improve public well-being and economic productivity, far surpassing the societal benefits derived from a disproportionately large defence apparatus.\n\nMoreover, the long-term prosperity and stability of a nation are more profoundly influenced by the health and education of its populace than by its military might. Investing in human capital through comprehensive educational programmes and universal healthcare initiatives creates a more skilled workforce, reduces poverty, and strengthens social cohesion, all of which contribute to a more resilient and secure society from within. Conversely, neglecting these fundamental sectors can lead to social unrest, economic stagnation, and a diminished capacity to respond to crises, regardless of military strength. Therefore, redirecting significant portions of defence budgets towards these vital services represents a more enlightened approach to national security and societal advancement.\n\nIn conclusion, I firmly believe that the current imbalance in government spending, favouring defence over education and healthcare, is misguided. A strategic shift towards prioritising human welfare would cultivate more prosperous, stable, and truly secure societies."
+    }
+  ],
+  "variant": "academic"
+}

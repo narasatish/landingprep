@@ -1,0 +1,742 @@
+{
+  "id": "pte-speaking-writing-031",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 31",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-031-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Local Community Outreach Programs”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "community services",
+      "modelAnswer": "Community services are vital for fostering social cohesion and supporting vulnerable populations. These programs often include food banks, homeless shelters, and youth mentorship initiatives, all designed to address specific societal needs. Effective community service delivery relies heavily on volunteer engagement and adequate funding, ensuring that resources reach those most in need and contribute to overall community well-being and resilience.",
+      "readText": "Community services are vital for fostering social cohesion and supporting vulnerable populations. These programs often include food banks, homeless shelters, and youth mentorship initiatives, all designed to address specific societal needs. Effective community service delivery relies heavily on volunteer engagement and adequate funding, ensuring that resources reach those most in need and contribute to overall community well-being and resilience."
+    },
+    {
+      "id": "pte-speaking-writing-031-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Volunteer Impact on Community”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Volunteers significantly enhance community services through their dedication and diverse skills.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "community services",
+      "modelAnswer": "Volunteers significantly enhance community services through their dedication and diverse skills.",
+      "audioScript": "Volunteers significantly enhance community services through their dedication and diverse skills."
+    },
+    {
+      "id": "pte-speaking-writing-031-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Community Service Volunteer Hours by Age Group (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "community services",
+      "modelAnswer": "This bar chart illustrates the average monthly volunteer hours for community services across different age groups in 2023. The 41-60 age group contributed the most, averaging 18 hours per month, significantly higher than other groups. Volunteers aged 26-40 followed with 12 hours, while the 61+ group averaged 15 hours. The youngest demographic, 18-25, recorded the lowest engagement, with only 8 hours per month. Overall, middle-aged adults appear to be the most active in community service volunteering, with a notable drop-off in the youngest demographic.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Community Service Volunteer Hours by Age Group (2023)",
+        "yLabel": "Average Hours per Month",
+        "xAxis": [
+          "18-25",
+          "26-40",
+          "41-60",
+          "61+"
+        ],
+        "series": [
+          {
+            "label": "Volunteer Hours",
+            "values": [
+              8,
+              12,
+              18,
+              15
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-031-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Neighbourhood Volunteering and Social Capital”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "community services",
+      "modelAnswer": "The lecture highlighted how neighbourhood volunteering is essential for developing social capital. By engaging in local volunteer activities, people build trust, encourage mutual support, and establish common values. This process significantly strengthens community ties and boosts civic participation, ultimately leading to a more robust and supportive local environment. The speaker emphasized that the benefits extend beyond the tasks themselves to the relationships formed.",
+      "audioScript": "Neighbourhood volunteering plays a crucial role in building social capital, which refers to the networks of relationships among people who live and work in a particular society, enabling that society to function effectively. When individuals volunteer within their local communities, they foster trust, reciprocity, and shared norms. This collective action strengthens community bonds, enhances civic engagement, and creates a more resilient and supportive environment for all residents. It's not just about the tasks performed, but the connections forged.",
+      "keyPoints": [
+        "Volunteering builds social capital",
+        "Fosters trust, reciprocity, and shared norms",
+        "Strengthens community bonds and civic engagement",
+        "Creates resilient, supportive environments"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-031-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Funding for Community Services”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Donations",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "community services",
+      "modelAnswer": "Donations",
+      "audioScript": "What primary source of financial support do many non-profit community services rely on?"
+    },
+    {
+      "id": "pte-speaking-writing-031-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “The Evolution of Community Support”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "community services",
+      "wordTarget": 75,
+      "modelAnswer": "Community services have transformed from informal mutual aid to structured charitable and governmental programs, reflecting an evolving societal commitment to collective well-being and social equity.",
+      "readText": "Historically, community services evolved from informal mutual aid networks to formalized charitable organizations. Early forms of community support often centered around religious institutions or local benevolent societies providing basic necessities. Over time, as societies became more complex, the demand for structured services grew, leading to the establishment of government-funded programs and large non-profit agencies. This evolution reflects a growing societal recognition of collective responsibility for citizen well-being and social equity, adapting to changing social landscapes."
+    },
+    {
+      "id": "pte-speaking-writing-031-q07",
+      "questionType": "write_essay",
+      "prompt": "Some people think that individuals should be responsible for their own health and lifestyle choices. Others believe governments should regulate unhealthy behaviours. Discuss both views and give your own opinion.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "community services",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “AI's Impact on Employment”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q08",
+      "modelAnswer": "Artificial intelligence is rapidly reshaping global job markets, creating new roles while automating others. While some fear widespread job displacement, many experts predict a shift in required skills, emphasizing human-centric abilities like creativity, critical thinking, and emotional intelligence. Education and vocational training must adapt to prepare the workforce for these emerging demands, ensuring a smooth transition and leveraging AI's potential for economic growth and societal advancement.",
+      "readText": "Artificial intelligence is rapidly reshaping global job markets, creating new roles while automating others. While some fear widespread job displacement, many experts predict a shift in required skills, emphasizing human-centric abilities like creativity, critical thinking, and emotional intelligence. Education and vocational training must adapt to prepare the workforce for these emerging demands, ensuring a smooth transition and leveraging AI's potential for economic growth and societal advancement."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ancient Maritime Trade Routes”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q09",
+      "modelAnswer": "The history of maritime trade routes dates back millennia, connecting distant civilizations and facilitating cultural exchange. Ancient Egyptians, Phoenicians, and later the Romans, utilized sea lanes for commerce, transporting goods like spices, textiles, and precious metals. These routes were not merely conduits for trade but also pathways for ideas, technologies, and even diseases, profoundly shaping the development of global societies and empires across continents and oceans.",
+      "readText": "The history of maritime trade routes dates back millennia, connecting distant civilizations and facilitating cultural exchange. Ancient Egyptians, Phoenicians, and later the Romans, utilized sea lanes for commerce, transporting goods like spices, textiles, and precious metals. These routes were not merely conduits for trade but also pathways for ideas, technologies, and even diseases, profoundly shaping the development of global societies and empires across continents and oceans."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Solar Energy Breakthroughs”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q10",
+      "modelAnswer": "Advances in renewable solar energy technology are accelerating the transition away from fossil fuels. Innovations in photovoltaic cell efficiency, energy storage solutions, and smart grid integration are making solar power increasingly cost-effective and reliable. These developments are crucial for meeting growing energy demands sustainably, reducing carbon emissions, and fostering energy independence globally, promising a cleaner and more secure energy future for everyone.",
+      "readText": "Advances in renewable solar energy technology are accelerating the transition away from fossil fuels. Innovations in photovoltaic cell efficiency, energy storage solutions, and smart grid integration are making solar power increasingly cost-effective and reliable. These developments are crucial for meeting growing energy demands sustainably, reducing carbon emissions, and fostering energy independence globally, promising a cleaner and more secure energy future for everyone."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Climate Change Mitigation Strategies”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q11",
+      "modelAnswer": "Climate change mitigation strategies encompass a broad range of actions aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy, improving energy efficiency, reforestation, and developing carbon capture technologies. International cooperation and robust policy frameworks are essential for implementing these strategies effectively and achieving the ambitious global targets required to avert the most severe impacts of climate change.",
+      "readText": "Climate change mitigation strategies encompass a broad range of actions aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy, improving energy efficiency, reforestation, and developing carbon capture technologies. International cooperation and robust policy frameworks are essential for implementing these strategies effectively and achieving the ambitious global targets required to avert the most severe impacts of climate change."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Global Food Production Economics”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q12",
+      "modelAnswer": "The economics of global food production are complex, influenced by factors such as climate, trade policies, and technological innovation. Ensuring food security for a growing population requires sustainable agricultural practices, efficient supply chains, and equitable distribution systems. Addressing issues like food waste and resource scarcity is critical to balancing economic viability with environmental stewardship and humanitarian needs across diverse regions worldwide.",
+      "readText": "The economics of global food production are complex, influenced by factors such as climate, trade policies, and technological innovation. Ensuring food security for a growing population requires sustainable agricultural practices, efficient supply chains, and equitable distribution systems. Addressing issues like food waste and resource scarcity is critical to balancing economic viability with environmental stewardship and humanitarian needs across diverse regions worldwide."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Effective wildlife corridor design is crucial for maintaining biodiversity and ecological connectivity.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Corridor Design”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q13",
+      "modelAnswer": "Effective wildlife corridor design is crucial for maintaining biodiversity and ecological connectivity.",
+      "audioScript": "Effective wildlife corridor design is crucial for maintaining biodiversity and ecological connectivity."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Philosophy of Consciousness”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q14",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and awareness."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology raises significant questions regarding individual privacy and data security.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy Concerns”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q15",
+      "modelAnswer": "Smart city technology raises significant questions regarding individual privacy and data security.",
+      "audioScript": "Smart city technology raises significant questions regarding individual privacy and data security."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation critically impacts indigenous land rights and traditional ways of life globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation and Indigenous Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q16",
+      "modelAnswer": "Deforestation critically impacts indigenous land rights and traditional ways of life globally.",
+      "audioScript": "Deforestation critically impacts indigenous land rights and traditional ways of life globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Social media profoundly shapes modern communication, influencing public discourse daily.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Communication Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q17",
+      "modelAnswer": "Social media profoundly shapes modern communication, influencing public discourse daily.",
+      "audioScript": "Social media profoundly shapes modern communication, influencing public discourse daily."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration presents both challenges and opportunities for cultural integration.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Cultural Integration”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q18",
+      "modelAnswer": "International migration presents both challenges and opportunities for cultural integration.",
+      "audioScript": "International migration presents both challenges and opportunities for cultural integration."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation are transforming labor markets and industrial productivity.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Economics of Automation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q19",
+      "modelAnswer": "The economics of automation are transforming labor markets and industrial productivity.",
+      "audioScript": "The economics of automation are transforming labor markets and industrial productivity."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Investment in renewable energy infrastructure is vital for a sustainable global future.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q20",
+      "modelAnswer": "Investment in renewable energy infrastructure is vital for a sustainable global future.",
+      "audioScript": "Investment in renewable energy infrastructure is vital for a sustainable global future."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Urban heat island effects require mitigation strategies like green roofs and cool pavements.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Heat Island Mitigation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q21",
+      "modelAnswer": "Urban heat island effects require mitigation strategies like green roofs and cool pavements.",
+      "audioScript": "Urban heat island effects require mitigation strategies like green roofs and cool pavements."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Literacy Rates by Region (2023 Estimates)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q22",
+      "modelAnswer": "This table presents global literacy rates by region for 2023, distinguishing between adult and youth literacy. North America & Europe demonstrate the highest adult literacy at 99.1% and youth literacy at 99.8%. Conversely, Sub-Saharan Africa shows the lowest rates, with adult literacy at 67.2% and youth literacy at 79.1%. Generally, youth literacy rates are higher than adult rates across all regions, indicating progress in education. For example, South Asia's adult literacy is 74.1%, while its youth literacy is significantly higher at 87.5%, highlighting ongoing improvements in educational access.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Literacy Rates by Region (2023 Estimates)",
+        "headers": [
+          "Region",
+          "Adult Literacy Rate (%)",
+          "Youth Literacy Rate (15-24) (%)"
+        ],
+        "rows": [
+          [
+            "North America & Europe",
+            "99.1",
+            "99.8"
+          ],
+          [
+            "East Asia & Pacific",
+            "96.5",
+            "99.0"
+          ],
+          [
+            "Latin America & Caribbean",
+            "94.3",
+            "98.5"
+          ],
+          [
+            "Sub-Saharan Africa",
+            "67.2",
+            "79.1"
+          ],
+          [
+            "South Asia",
+            "74.1",
+            "87.5"
+          ],
+          [
+            "Arab States",
+            "82.5",
+            "92.3"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Smartphone Adoption Rate (2014-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q23",
+      "modelAnswer": "The line chart illustrates the global smartphone adoption rate from 2014 to 2023. It clearly shows a consistent upward trend over the decade. Starting at 30% in 2014, the adoption rate steadily increased, reaching 52% by 2017. The most significant growth occurred in the earlier years. By 2020, over 70% of the global population had adopted smartphones, and this figure continued to climb, reaching its peak at 82% in 2023. This indicates a near saturation point for smartphone usage worldwide, highlighting its pervasive impact on communication.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Smartphone Adoption Rate (2014-2023)",
+        "yLabel": "Percentage of Population (%)",
+        "xAxis": [
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Adoption Rate",
+            "values": [
+              30,
+              37,
+              45,
+              52,
+              59,
+              65,
+              70,
+              75,
+              79,
+              82
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q24",
+      "modelAnswer": "This bar chart illustrates the annual energy consumption per capita for various countries in 2022. The USA shows the highest consumption at 80 MWh per person, closely followed by Canada at 75 MWh. Germany consumes significantly less, at 45 MWh, while China's consumption stands at 30 MWh. Brazil is at 25 MWh. India has the lowest consumption among the listed nations, with only 10 MWh per person. Overall, there's a clear disparity, with developed Western nations consuming substantially more energy per capita compared to developing economies.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Energy Consumption (MWh)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "China",
+          "India",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "MWh per person",
+            "values": [
+              80,
+              75,
+              45,
+              30,
+              10,
+              25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Carbon Cycle: Major Reservoirs and Fluxes\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q25",
+      "modelAnswer": "The table illustrates the major carbon reservoirs in the global carbon cycle. The largest reservoir is the deep oceans, containing an immense 38,000 Gigatons of Carbon (GtC), significantly dwarfing other components. Fossil fuels represent a substantial 4,000 GtC, while land soils hold 1,500 GtC. The atmosphere contains 750 GtC, slightly less than the surface oceans at 900 GtC. Land vegetation holds the smallest amount listed, at 610 GtC. This table clearly highlights the vast storage capacity of the oceans compared to terrestrial and atmospheric components.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Carbon Cycle: Major Reservoirs and Fluxes",
+        "headers": [
+          "Component",
+          "Carbon (GtC)"
+        ],
+        "rows": [
+          [
+            "Atmosphere",
+            "750"
+          ],
+          [
+            "Oceans (Surface)",
+            "900"
+          ],
+          [
+            "Oceans (Deep)",
+            "38000"
+          ],
+          [
+            "Land (Vegetation)",
+            "610"
+          ],
+          [
+            "Land (Soils)",
+            "1500"
+          ],
+          [
+            "Fossil Fuels",
+            "4000"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q26",
+      "modelAnswer": "The pie chart illustrates global CO2 emissions by sector for 2022. The largest contributor is clearly Energy Production, accounting for a significant 35% of total emissions. This is followed by Transportation at 22% and Industry at 18%, indicating these three sectors are major sources. Agriculture and Land Use contributes 14%, while Residential and Commercial use accounts for 9%. The smallest share comes from Waste Management, at a mere 2%. Overall, the data highlights the dominant role of energy generation and mobility in global carbon emissions.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy Production",
+            "value": 35
+          },
+          {
+            "label": "Transportation",
+            "value": 22
+          },
+          {
+            "label": "Industry",
+            "value": 18
+          },
+          {
+            "label": "Agriculture & Land Use",
+            "value": 14
+          },
+          {
+            "label": "Residential & Commercial",
+            "value": 9
+          },
+          {
+            "label": "Waste Management",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q27",
+      "modelAnswer": "The lecture discussed the significant impact of non-verbal communication, noting it often outweighs spoken words. It explained how gestures, facial expressions, and body language reveal emotions and intentions. For example, direct eye contact shows engagement, whereas crossed arms might indicate defensiveness. The speaker emphasized that understanding these non-verbal cues is crucial for effective communication, especially considering that their interpretation can vary greatly across different cultures.",
+      "audioScript": "Non-verbal communication is often more powerful than spoken words, conveying emotions and intentions through gestures, facial expressions, and body language. For instance, maintaining eye contact can signal engagement and honesty, while crossed arms might suggest defensiveness. Understanding these cues is essential for effective interpersonal communication and can significantly impact how messages are received and interpreted. Cultural differences also play a vital role, as what is acceptable in one society might be offensive in another.",
+      "keyPoints": [
+        "Non-verbal cues are powerful",
+        "Gestures, expressions, body language convey intent",
+        "Eye contact signals engagement, crossed arms defensiveness",
+        "Cultural differences impact interpretation"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “The Digital Divide in Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q28",
+      "modelAnswer": "The lecture defined the digital divide as the disparity in access to computers and the internet. It highlighted how this gap negatively impacts communication by restricting access to vital information, educational tools, and job prospects for many people worldwide. The speaker stressed the importance of closing this divide to create more inclusive societies. Efforts to address it involve improving infrastructure, making technology affordable, and enhancing digital literacy in disadvantaged communities.",
+      "audioScript": "The digital divide refers to the gap between those who have ready access to computers and the Internet, and those who do not. This disparity affects communication by limiting access to information, educational resources, and employment opportunities for a significant portion of the global population. Bridging this divide is crucial for fostering inclusive societies and ensuring equitable participation in the digital age. Initiatives focus on infrastructure development, affordability, and digital literacy training to empower underserved communities.",
+      "keyPoints": [
+        "Digital divide: access gap to internet/computers",
+        "Limits information, education, employment access",
+        "Bridging divide is crucial for inclusive societies",
+        "Focus on infrastructure, affordability, digital literacy"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Text message",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium for Quick Updates”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q29",
+      "modelAnswer": "Text message",
+      "audioScript": "Which communication medium is typically best for urgent, short messages?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Articulate",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Synonym for Effective Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q30",
+      "modelAnswer": "Articulate",
+      "audioScript": "What is another word for clear and concise communication?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Linguistic",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barrier Type”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q31",
+      "modelAnswer": "Linguistic",
+      "audioScript": "What kind of communication barrier arises from differences in language or dialect?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Video conferencing",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Modern Communication Tool”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-031-q32",
+      "modelAnswer": "Video conferencing",
+      "audioScript": "What widely used modern communication tool allows for instant video and audio calls over the internet?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Economic Growth vs. Environmental Sustainability”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-031-q33",
+      "modelAnswer": "The contentious relationship between economic growth and environmental sustainability highlights the need for sustainable development that integrates environmental protection and social equity to ensure long-term prosperity.",
+      "readText": "The relationship between economic growth and environmental sustainability is complex and often contentious. Traditional economic models frequently prioritize growth, assuming natural resources are limitless and environmental costs can be externalized. However, this approach has led to significant ecological degradation and resource depletion. Sustainable development advocates argue that true prosperity must integrate environmental protection and social equity, recognizing that a healthy planet is foundational to long-term economic well-being. Finding a balance requires innovative policies and a shift in societal values towards circular economies and responsible consumption."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "In many workplaces, employers monitor employees' internet usage, emails, and even phone calls. Do the benefits of security and productivity outweigh the employees' right to privacy? Discuss both sides and give your opinion.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-031-q34",
+      "modelAnswer": "The issue of workplace monitoring presents a significant dilemma between an employer's need for security and productivity, and an employee's fundamental right to privacy. Proponents of monitoring argue that it is a necessary tool for safeguarding company assets, preventing data breaches, and ensuring compliance with regulations. They contend that unchecked internet usage can lead to decreased productivity, while email and phone monitoring can detect inappropriate conduct, harassment, or the leaking of confidential information. From this perspective, the company's financial health and legal standing often depend on maintaining a secure and productive environment, thereby justifying a degree of surveillance.\n\nConversely, strong arguments exist for prioritizing employee privacy. Constant surveillance can foster an atmosphere of distrust and anxiety, potentially leading to lower morale and reduced creativity. Employees may feel their autonomy is undermined, impacting their overall job satisfaction and loyalty. Furthermore, personal data collected through monitoring could be misused or compromised, raising ethical concerns. Many believe that employees, even in a professional setting, retain a reasonable expectation of privacy, and intrusive monitoring can be seen as an overreach that infringes upon personal liberties. Finding a balance is crucial.\n\nIn my opinion, while a certain level of monitoring might be justifiable for specific security-critical roles or in cases where there is a clear suspicion of wrongdoing, blanket surveillance is generally detrimental. Employers should focus on transparent policies, clear communication about expectations, and performance-based metrics rather than pervasive monitoring. A trusting work environment, built on mutual respect rather than constant oversight, is more likely to foster genuine productivity and innovation in the long run. The benefits of trust and autonomy often outweigh the perceived gains from intrusive monitoring."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Technology has revolutionized how people communicate, offering both unprecedented connectivity and new challenges. Discuss the main advantages and disadvantages of modern communication technologies, and conclude whether the benefits outweigh the drawbacks.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-031-q35",
+      "modelAnswer": "Modern communication technologies, such as smartphones, social media, and video conferencing, have fundamentally transformed human interaction, bringing about both remarkable advantages and notable disadvantages. The advent of these tools has undeniably ushered in an era of unprecedented connectivity, allowing individuals to maintain relationships across vast distances and access information instantly.\n\nOne of the primary advantages is the ability to connect globally and instantly. Families and friends separated by continents can communicate face-to-face, fostering stronger bonds. Businesses benefit immensely from real-time collaboration, leading to increased efficiency and innovation. Furthermore, these technologies have democratized information access, enabling rapid dissemination of news and ideas, and empowering social movements. Educational opportunities have expanded, with online learning platforms making knowledge accessible to millions worldwide. The convenience and speed of communication have become indispensable in personal and professional spheres.\n\nHowever, these advancements are not without their drawbacks. A significant disadvantage is the erosion of face-to-face interaction, potentially leading to social isolation and a decline in genuine human connection. The constant bombardment of notifications and the pressure to be perpetually available can also contribute to increased stress and anxiety. Moreover, issues like cyberbullying, the spread of misinformation, and privacy concerns have become prevalent, posing serious societal challenges. The superficiality of online interactions often replaces deeper, more meaningful engagement, and addiction to digital devices is a growing concern.\n\nIn conclusion, while the challenges presented by modern communication technologies are considerable and require thoughtful mitigation, I believe their benefits largely outweigh the drawbacks. The ability to connect globally, access information, and collaborate efficiently has profoundly enriched lives and propelled societal progress. The key lies in developing digital literacy, promoting responsible usage, and ensuring that technology serves as a tool to enhance, rather than diminish, human connection and well-being."
+    }
+  ]
+}

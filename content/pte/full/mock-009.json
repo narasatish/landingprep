@@ -1,0 +1,25 @@
+{
+  "id": "pte-full-009",
+  "exam": "pte",
+  "type": "full",
+  "title": "PTE Academic Full Mock Test 9",
+  "durationSeconds": 7200,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "speaking-writing",
+      "testId": "pte-speaking-writing-009",
+      "file": "pte/speaking-writing/test-009.json"
+    },
+    {
+      "section": "reading",
+      "testId": "pte-reading-009",
+      "file": "pte/reading/test-009.json"
+    },
+    {
+      "section": "listening",
+      "testId": "pte-listening-009",
+      "file": "pte/listening/test-009.json"
+    }
+  ]
+}

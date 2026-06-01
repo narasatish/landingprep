@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-015",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 15",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-015-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You are writing to a non-profit organisation that provides free settlement services for newcomers to Canada. You need help with several things after recently arriving.",
+      "recipient": "the settlement services coordinator",
+      "bulletPoints": [
+        "Introduce yourself and explain your situation briefly",
+        "Describe two specific types of help you need",
+        "Ask how to access the services and what documents to bring"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You recently stayed at a hotel and were very dissatisfied with the service. Write a letter to the hotel manager describing what went wrong, how it affected your stay, and what compensation you expect.",
+      "modelAnswer": "Dear Settlement Services Coordinator,\n\nMy name is Anya Sharma, and I recently arrived in Canada as a permanent resident on May 15th. I am writing to your organization as I understand you provide invaluable support to newcomers, and I am in need of some assistance as I settle in.\n\nSpecifically, I am hoping to get help with two key areas. First, I am struggling to understand the process for obtaining a provincial health card and would appreciate guidance on how to apply and what documentation is required. Second, I am actively searching for employment in the administrative field and would be grateful for any resources or advice your team can offer regarding resume writing, job search strategies, or local job fairs.\n\nCould you please advise on how I can access these services? I would also appreciate it if you could let me know what documents I should bring with me for an initial consultation, such as my PR card or passport.\n\nThank you for your time and assistance. I look forward to hearing from you soon.\n\nSincerely,\n\nAnya Sharma"
+    },
+    {
+      "id": "celpip-writing-015-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your school is considering how to help students manage stress and mental health. Which approach do you think is more effective?",
+      "optionA": "Hire a dedicated school counsellor available to all students weekly",
+      "optionB": "Incorporate mindfulness and stress management into the regular curriculum",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A local food bank is asking for community input on food security. Describe the food security challenges in your area, who is most affected, and what strategies you think would most effectively reduce food insecurity.",
+      "modelAnswer": "I strongly advocate for Option A: hiring a dedicated school counsellor available to all students weekly. This approach offers targeted, professional support that is crucial for addressing the complex and often individual nature of student stress and mental health challenges.\n\nFirstly, a dedicated counsellor provides confidential, one-on-one sessions, allowing students to discuss sensitive issues without fear of judgment from peers or teachers. For instance, a student struggling with anxiety due to family issues or academic pressure might be hesitant to share this in a classroom setting, but would benefit immensely from a private conversation with a trained professional. Secondly, counsellors possess specialized expertise to identify, assess, and intervene in various mental health conditions, offering strategies far beyond what a general teacher could provide. They can offer coping mechanisms for panic attacks, guidance on healthy relationships, or even refer students to external specialists when necessary.\n\nWhile incorporating mindfulness into the curriculum (Option B) has its merits for general well-being, it lacks the depth and individualized attention required for students facing significant mental health struggles. It's a broad-stroke approach that cannot address specific crises or deep-seated issues that a professional counsellor is equipped to handle effectively."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pte-full-017",
+  "exam": "pte",
+  "type": "full",
+  "title": "PTE Academic Full Mock Test 17",
+  "durationSeconds": 7200,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "speaking-writing",
+      "testId": "pte-speaking-writing-017",
+      "file": "pte/speaking-writing/test-017.json"
+    },
+    {
+      "section": "reading",
+      "testId": "pte-reading-017",
+      "file": "pte/reading/test-017.json"
+    },
+    {
+      "section": "listening",
+      "testId": "pte-listening-017",
+      "file": "pte/listening/test-017.json"
+    }
+  ]
+}

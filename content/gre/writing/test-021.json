@@ -1,0 +1,41 @@
+{
+  "id": "gre-writing-021",
+  "exam": "gre",
+  "section": "writing",
+  "type": "section",
+  "title": "GRE Analytical Writing Practice Test 21",
+  "durationSeconds": 1800,
+  "questionCount": 1,
+  "instructions": "Complete both tasks. Task 1 (Issue): 30 minutes, 400–600 words recommended. Task 2 (Argument): 30 minutes, 400–600 words recommended.",
+  "questions": [
+    {
+      "id": "gre-writing-021-q1",
+      "taskType": "issue",
+      "taskNumber": 1,
+      "title": "Analyse an Issue",
+      "timeMinutes": 30,
+      "prompt": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "scoringCriteria": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "wordTarget": 500,
+      "questionType": "writing_task",
+      "writingInstructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "rubric": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "situation": "Privacy is a fundamental right that should never be compromised even in the interest of national security.",
+      "questionNumber": 1,
+      "modelAnswer": "The assertion that privacy is an absolute fundamental right, inviolable even in the face of national security concerns, presents a compelling ideal, yet it ultimately falters under the weight of practical and ethical considerations. While the right to privacy is undeniably crucial for individual liberty and societal well-being, an unqualified claim for its absolute supremacy over national security is untenable. A more nuanced perspective acknowledges that while privacy should be robustly protected, there are rare, exigent circumstances where limited, legally sanctioned, and oversight-driven compromises may be necessary to prevent catastrophic harm to the populace.\n\nTo categorically elevate privacy above all else risks creating a dangerous vulnerability that hostile actors could exploit, thereby undermining the very societal fabric that protects individual rights. Consider, for instance, the realm of international terrorism. If intelligence agencies were entirely prohibited from monitoring communications or financial transactions, even those with strong probable cause linking them to imminent threats, their capacity to preempt attacks would be severely hampered. The 9/11 Commission Report, for example, highlighted intelligence failures stemming partly from an inability to \"connect the dots\" across various data points due to privacy constraints, illustrating how an overly rigid adherence to privacy can inadvertently facilitate mass casualties. This is not to advocate for widespread surveillance, but rather for targeted, judicially authorized interventions when credible threats necessitate them.\n\nFurthermore, a blanket prohibition on compromising privacy fails to account for the collective right to safety and security, which is a prerequisite for the exercise of all other rights, including privacy itself. A society constantly under threat, or one that has suffered a major attack due to intelligence failures, is one where individual liberties are likely to erode, not flourish. For example, in cases of cyber warfare or state-sponsored espionage targeting critical infrastructure, the ability of national security agencies to monitor network traffic for anomalous patterns, even if it involves some level of data analysis, can be vital for safeguarding power grids, financial systems, and public services. A strict interpretation of absolute privacy would prevent such defensive measures, potentially leading to widespread societal disruption and a far greater loss of individual freedoms.\n\nHowever, the counterargument that such compromises inevitably lead to a slippery slope of pervasive surveillance and authoritarianism is potent and must be addressed. History is replete with examples where national security has been invoked to justify egregious violations of privacy, leading to abuses of power. The NSA's PRISM program, revealed by Edward Snowden, demonstrated how mass surveillance, even if ostensibly aimed at foreign threats, could inadvertently sweep up vast amounts of domestic data, raising legitimate concerns about government overreach. This underscores the critical importance of robust legal frameworks, judicial oversight, and transparency mechanisms to ensure that any privacy compromises are narrowly tailored, proportionate to the threat, and subject to public accountability. Without these safeguards, the argument for limited compromise indeed becomes a dangerous precedent.\n\nIn conclusion, while privacy is an indispensable cornerstone of a free society, its absolute and uncompromising supremacy over national security is a position that fails to fully grasp the complex interplay between individual rights and collective safety. A balanced approach recognizes that while privacy must be fiercely protected against unwarranted intrusion, there are exceptional, rigorously defined circumstances where limited and highly regulated compromises, subject to stringent oversight, may be necessary to avert catastrophic threats to national security. The challenge lies not in choosing between privacy and security, but in meticulously crafting policies that allow for the latter without unduly sacrificing the former, ensuring that any curtailment of privacy is a precise surgical tool, not a blunt instrument of mass surveillance."
+    }
+  ]
+}

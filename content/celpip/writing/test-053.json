@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-053",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 53",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-053-q01",
+      "questionType": "writing_task",
+      "prompt": "Write an email to a financial counsellor asking for advice on creating a household budget.",
+      "modelAnswer": "I would strongly advocate for Option B, which suggests that governments should prioritize funding for renewable energy research and development, even if it means diverting some funds from other areas. This approach offers a more sustainable and impactful solution to our long-term energy needs.\n\nFirstly, investing in renewable energy is crucial for combating climate change. The escalating frequency and intensity of extreme weather events underscore the urgency of transitioning away from fossil fuels. By funding research into solar, wind, and geothermal technologies, governments can accelerate the development of more efficient and affordable renewable solutions, thereby reducing carbon emissions and mitigating environmental degradation. For instance, breakthroughs in battery storage technology could make solar power viable 24/7, significantly reducing reliance on conventional power grids.\n\nSecondly, prioritizing renewable energy fosters economic growth and job creation. The burgeoning green energy sector presents immense opportunities for innovation, manufacturing, and installation. Government investment acts as a catalyst, attracting private capital and stimulating the creation of high-skilled jobs in engineering, research, and technical fields. This not only diversifies national economies but also positions countries as leaders in a rapidly expanding global market.\n\nWhile Option A, continuing to support traditional energy sources to ensure immediate stability, has its merits in the short term, it ultimately perpetuates a reliance on finite, polluting resources. Such an approach merely delays the inevitable transition and fails to address the fundamental challenges of energy security and environmental sustainability. The long-term benefits of investing in renewables far outweigh the temporary comfort of maintaining the status quo.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "managing household budgets",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-053-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short message to a family member sharing a budgeting tip you have found useful.",
+      "modelAnswer": "I firmly believe that Option B, focusing on a robust public transit system, offers the most significant advantages for our city's future. While Option A's investment in road infrastructure has its merits, it ultimately represents a short-sighted solution that fails to address core urban challenges.\n\nFirstly, an enhanced public transit system directly combats traffic congestion and reduces the city's carbon footprint. By providing a reliable, efficient, and widespread network of buses, trains, and subways, we incentivize citizens to leave their cars at home. This not only frees up roads but also dramatically improves air quality and contributes to our climate goals. Imagine fewer rush-hour jams and clearer skies – a tangible benefit for everyone.\n\nSecondly, prioritizing public transit fosters greater social equity and accessibility. Not everyone can afford a car, and for many, especially the elderly, students, and low-income individuals, public transport is their lifeline to jobs, education, and essential services. A comprehensive system ensures that all residents have equitable access to opportunities, reducing disparities and building a more inclusive community.\n\nConversely, merely expanding roads (Option A) often leads to induced demand, where more road capacity simply attracts more cars, perpetuating the very problem it seeks to solve. It also consumes valuable urban land and prioritizes individual car ownership over sustainable, collective solutions. Therefore, a strategic investment in public transit is the more progressive and impactful choice.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "managing household budgets",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

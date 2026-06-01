@@ -1,0 +1,587 @@
+{
+  "id": "ielts-reading-013",
+  "exam": "ielts",
+  "section": "reading",
+  "type": "section",
+  "title": "IELTS Academic Reading Practice Test 13",
+  "variant": "academic",
+  "durationSeconds": 3600,
+  "questionCount": 40,
+  "instructions": "Three passages totalling approximately 2,200–2,800 words. Answer all 40 questions. Transfer answers within the 60-minute time limit.",
+  "passages": [
+    {
+      "title": "The Columbian Exchange",
+      "text": "Few events in human history have altered the biological landscape of the planet as profoundly as Columbus's voyages of 1492. The encounter between the Old World and the New World initiated a massive transfer of plants, animals, microorganisms, and cultural practices across the Atlantic — a process the historian Alfred Crosby termed the Columbian Exchange in his 1972 book. Its consequences continue to shape global agriculture, diet, demographics, and ecology.\n\nThe flow of crops from the Americas to Europe, Africa, and Asia was transformative. Maize, potatoes, tomatoes, cacao, tobacco, and chilli peppers all originated in the Americas. The potato alone reshaped European demographics: its high caloric density and adaptability to cool, wet climates made it ideal for northern Europe. Ireland's catastrophic dependence on a single potato variety culminated in the Great Famine of 1845–1852, which killed approximately one million people and caused another million to emigrate.\n\nThe transfer of Old World livestock — cattle, horses, pigs, sheep, and chickens — had equally profound consequences. Horses transformed the cultures of many Plains tribes in North America, enabling the buffalo-hunting nomadic lifestyle. Cattle and pigs, reproducing without natural predators in ecologically naive environments, multiplied explosively, overgrazing native vegetation across the Americas.\n\nThe most devastating aspect was microbiological. Indigenous peoples of the Americas had no prior exposure to Old World diseases — smallpox, measles, influenza, and bubonic plague — and lacked the immunological defences that centuries of co-evolution had conferred on European populations. Historians estimate that 50–90% of the pre-Columbian indigenous population died in the century following European contact, a demographic catastrophe of unparalleled scale in recorded history.",
+      "id": "ielts-reading-013-p1"
+    },
+    {
+      "title": "Artificial Intelligence in Medical Diagnosis",
+      "text": "The application of artificial intelligence to medical imaging has progressed rapidly from laboratory demonstration to clinical deployment over the past decade. Machine learning algorithms — particularly convolutional neural networks trained on large annotated datasets — have achieved diagnostic accuracy on par with experienced human specialists across radiology, pathology, dermatology, and ophthalmology.\n\nIn 2016, a Stanford team demonstrated a deep learning algorithm trained on 129,450 clinical images that diagnosed skin cancer with accuracy equivalent to board-certified dermatologists. Similar results followed: Google DeepMind's Streams system demonstrated superiority to standard care in detecting acute kidney injury. In diabetic retinopathy screening, AI systems have matched or exceeded specialist ophthalmologists while processing images far faster and at lower cost.\n\nSignificant barriers to clinical adoption remain. AI systems trained on one population may perform poorly in a different demographic — a problem known as algorithmic bias or distributional shift. The black-box nature of many deep learning models makes it difficult for clinicians to understand their reasoning, raising medicolegal concerns about accountability. Many healthcare systems also lack the IT infrastructure to integrate AI tools seamlessly into clinical workflows.\n\nMedicine involves far more than pattern recognition. Clinical diagnosis requires integration of imaging findings with patient history, physical examination, laboratory data, and patient values. AI systems are powerful tools for specific tasks but lack the general reasoning, empathy, and contextual judgment that effective medical care demands. The most promising models for AI integration augment rather than replace clinician judgment — providing a first-pass screen, flagging findings for urgent attention, or quantifying uncertainty.",
+      "id": "ielts-reading-013-p2"
+    },
+    {
+      "title": "The Blue Economy and Ocean Resources",
+      "text": "The term 'blue economy' refers to the sustainable use of ocean resources for economic growth, improved livelihoods, and ocean ecosystem health. The concept gained international currency following the 2012 United Nations Conference on Sustainable Development in Rio de Janeiro, where it was proposed as an oceanic counterpart to the 'green economy' framework. Proponents argue that oceans represent an enormous and largely untapped reservoir of sustainable economic opportunity.\n\nThe global ocean economy is substantial. Pre-pandemic estimates placed the direct and indirect contribution of the ocean to global GDP at approximately 1.5 trillion US dollars annually, with fisheries and aquaculture, maritime transport, and coastal tourism as the dominant sectors. These figures significantly underestimate the ocean's full value, since ecosystem services — including carbon sequestration, oxygen production, climate regulation, and storm protection — are not captured in conventional economic metrics.\n\nOffshore wind energy has emerged as one of the fastest-growing components of the blue economy. Global installed offshore wind capacity exceeded 65 gigawatts by 2024, with the North Sea and coastal waters of China and South Korea accounting for the majority. Floating offshore wind technology attaches turbines to buoyant platforms rather than fixed seabed foundations, opening deep-water areas to development. Governments in Europe, the United States, Japan, and South Korea have announced ambitious offshore wind targets through the 2030s.\n\nThe governance challenge is formidable. More than 60% of ocean area lies beyond national jurisdiction in the high seas, historically governed by fragmented international agreements. Overfishing, plastic pollution, and deep-sea mining illustrate the tragedy of the commons dynamic when ocean resources are treated as open-access. The High Seas Treaty agreed in 2023 under the UN Convention on the Law of the Sea represents a significant attempt to create more comprehensive governance for international waters.",
+      "id": "ielts-reading-013-p3"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-reading-013-q001",
+      "questionType": "true_false_not_given",
+      "question": "The term 'Columbian Exchange' was coined by Alfred Crosby in 1972.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 1,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q002",
+      "questionType": "true_false_not_given",
+      "question": "Tomatoes and potatoes both originated in Europe.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Both originated in the Americas.",
+      "questionNumber": 2,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q003",
+      "questionType": "true_false_not_given",
+      "question": "Potatoes transformed European demographics through high caloric density.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 3,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q004",
+      "questionType": "multiple_choice",
+      "question": "How many people died in the Irish Great Famine?",
+      "options": [
+        "500,000",
+        "One million",
+        "Two million",
+        "Three million"
+      ],
+      "correctAnswer": "One million",
+      "explanation": "'Approximately one million' stated.",
+      "questionNumber": 4,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q005",
+      "questionType": "true_false_not_given",
+      "question": "Horses were native to the Americas before European contact.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Horses were Old World livestock.",
+      "questionNumber": 5,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q006",
+      "questionType": "multiple_choice",
+      "question": "What was the most devastating aspect of the Columbian Exchange?",
+      "options": [
+        "Crop transfer",
+        "Livestock introduction",
+        "Spread of Old World diseases",
+        "Tobacco trade"
+      ],
+      "correctAnswer": "Spread of Old World diseases",
+      "explanation": "Explicitly described as most devastating.",
+      "questionNumber": 6,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q007",
+      "questionType": "short_answer",
+      "question": "What percentage of pre-Columbian indigenous population died after contact?",
+      "correctAnswer": "50–90%",
+      "questionNumber": 7,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q008",
+      "questionType": "true_false_not_given",
+      "question": "Indigenous Americans had immunity to Old World diseases.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "They lacked immunological defences.",
+      "questionNumber": 8,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q009",
+      "questionType": "short_answer",
+      "question": "Name one crop originating in the Americas.",
+      "correctAnswer": "Maize (or potato, tomato, cacao, tobacco, chilli pepper)",
+      "questionNumber": 9,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q010",
+      "questionType": "true_false_not_given",
+      "question": "Old World pigs found predators controlling their populations in the Americas.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "They reproduced explosively.",
+      "questionNumber": 10,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q011",
+      "questionType": "multiple_choice",
+      "question": "How did horses transform Plains cultures?",
+      "options": [
+        "Enabled agriculture",
+        "Enabled buffalo-hunting nomadic lifestyle",
+        "Replaced dog sleds",
+        "Provided military advantage"
+      ],
+      "correctAnswer": "Enabled buffalo-hunting nomadic lifestyle",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 11,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q012",
+      "questionType": "short_answer",
+      "question": "Name one Old World disease introduced to the Americas.",
+      "correctAnswer": "Smallpox (or measles, influenza, bubonic plague)",
+      "questionNumber": 12,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q013",
+      "questionType": "true_false_not_given",
+      "question": "One million Irish people emigrated during the Great Famine.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "'Another million to emigrate' stated.",
+      "questionNumber": 13,
+      "passageIndex": 0,
+      "passageId": "ielts-reading-013-p1"
+    },
+    {
+      "id": "ielts-reading-013-q014",
+      "questionType": "true_false_not_given",
+      "question": "AI diagnostic algorithms have never matched specialist performance.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "They achieved equivalent or superior accuracy.",
+      "questionNumber": 14,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q015",
+      "questionType": "true_false_not_given",
+      "question": "The Stanford skin cancer study used 129,450 clinical images.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 15,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q016",
+      "questionType": "multiple_choice",
+      "question": "What is 'distributional shift' in AI medical systems?",
+      "options": [
+        "System slowdown",
+        "Poor performance in different populations",
+        "Unequal access to AI",
+        "Data labelling bias"
+      ],
+      "correctAnswer": "Poor performance in different populations",
+      "explanation": "Defined in passage.",
+      "questionNumber": 16,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q017",
+      "questionType": "true_false_not_given",
+      "question": "AI processes diabetic retinopathy images slower than human ophthalmologists.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "They process images far faster.",
+      "questionNumber": 17,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q018",
+      "questionType": "multiple_choice",
+      "question": "What is the most promising model for AI integration in medicine?",
+      "options": [
+        "Full clinician replacement",
+        "AI for admin only",
+        "Augmenting clinician judgment",
+        "AI independent analysis"
+      ],
+      "correctAnswer": "Augmenting clinician judgment",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 18,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q019",
+      "questionType": "short_answer",
+      "question": "What is Google DeepMind's acute kidney injury detection system called?",
+      "correctAnswer": "Streams",
+      "questionNumber": 19,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q020",
+      "questionType": "true_false_not_given",
+      "question": "Deep learning models clearly explain their reasoning to clinicians.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Many are black-box models.",
+      "questionNumber": 20,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q021",
+      "questionType": "short_answer",
+      "question": "Name two medical domains where AI diagnostic accuracy matches specialists.",
+      "correctAnswer": "Radiology, pathology, dermatology, or ophthalmology (any two)",
+      "questionNumber": 21,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q022",
+      "questionType": "multiple_choice",
+      "question": "What does clinical diagnosis require beyond pattern recognition?",
+      "options": [
+        "Faster computers",
+        "Patient history and context",
+        "More training data",
+        "Regulatory approval"
+      ],
+      "correctAnswer": "Patient history and context",
+      "explanation": "Stated explicitly.",
+      "questionNumber": 22,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q023",
+      "questionType": "true_false_not_given",
+      "question": "Medicolegal accountability concerns are barriers to clinical AI adoption.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly mentioned.",
+      "questionNumber": 23,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q024",
+      "questionType": "short_answer",
+      "question": "What term describes poor AI performance across different populations?",
+      "correctAnswer": "Algorithmic bias (or distributional shift)",
+      "questionNumber": 24,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q025",
+      "questionType": "true_false_not_given",
+      "question": "AI systems provide empathy and contextual judgment.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Passage states AI lacks these.",
+      "questionNumber": 25,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q026",
+      "questionType": "true_false_not_given",
+      "question": "The term 'blue economy' was proposed at the 2012 Rio UN Conference.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 26,
+      "passageIndex": 1,
+      "passageId": "ielts-reading-013-p2"
+    },
+    {
+      "id": "ielts-reading-013-q027",
+      "questionType": "multiple_choice",
+      "question": "What was ocean's annual GDP contribution pre-pandemic?",
+      "options": [
+        "500 billion",
+        "1.5 trillion",
+        "3 trillion",
+        "5 trillion"
+      ],
+      "correctAnswer": "1.5 trillion",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 27,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q028",
+      "questionType": "true_false_not_given",
+      "question": "Conventional metrics fully capture ocean ecosystem service value.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "These services are NOT captured.",
+      "questionNumber": 28,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q029",
+      "questionType": "short_answer",
+      "question": "By 2024, how much global offshore wind capacity had been installed?",
+      "correctAnswer": "65 gigawatts",
+      "questionNumber": 29,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q030",
+      "questionType": "multiple_choice",
+      "question": "What advantage does floating offshore wind provide?",
+      "options": [
+        "Lower cost",
+        "Shallow water access",
+        "Deep-water access",
+        "Better calm weather performance"
+      ],
+      "correctAnswer": "Deep-water access",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 30,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q031",
+      "questionType": "true_false_not_given",
+      "question": "More than 60% of ocean area lies within national jurisdiction.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "False",
+      "explanation": "Lies BEYOND national jurisdiction.",
+      "questionNumber": 31,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q032",
+      "questionType": "short_answer",
+      "question": "What international agreement on ocean governance was reached in 2023?",
+      "correctAnswer": "High Seas Treaty",
+      "questionNumber": 32,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q033",
+      "questionType": "true_false_not_given",
+      "question": "The High Seas Treaty was agreed under UNCLOS framework.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 33,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q034",
+      "questionType": "multiple_choice",
+      "question": "Which is NOT listed as a dominant ocean economy sector?",
+      "options": [
+        "Maritime transport",
+        "Coastal tourism",
+        "Fisheries and aquaculture",
+        "Military operations"
+      ],
+      "correctAnswer": "Military operations",
+      "explanation": "Not mentioned.",
+      "questionNumber": 34,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q035",
+      "questionType": "true_false_not_given",
+      "question": "Overfishing illustrates tragedy of the commons in high seas.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 35,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q036",
+      "questionType": "short_answer",
+      "question": "Name two ecosystem services oceans provide.",
+      "correctAnswer": "Carbon sequestration and oxygen production (or climate regulation, storm protection)",
+      "questionNumber": 36,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q037",
+      "questionType": "multiple_choice",
+      "question": "Where does majority of offshore wind capacity exist?",
+      "options": [
+        "Atlantic and Gulf",
+        "North Sea and China/South Korea coasts",
+        "Bay of Bengal",
+        "Arctic waters"
+      ],
+      "correctAnswer": "North Sea and China/South Korea coasts",
+      "explanation": "Stated explicitly.",
+      "questionNumber": 37,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q038",
+      "questionType": "true_false_not_given",
+      "question": "The blue economy concept is an oceanic equivalent of green economy.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Explicitly stated.",
+      "questionNumber": 38,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q039",
+      "questionType": "true_false_not_given",
+      "question": "Multiple nations announced ambitious offshore wind targets.",
+      "options": [
+        "True",
+        "False",
+        "Not Given"
+      ],
+      "correctAnswer": "True",
+      "explanation": "Europe, US, Japan, South Korea mentioned.",
+      "questionNumber": 39,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    },
+    {
+      "id": "ielts-reading-013-q040",
+      "questionType": "multiple_choice",
+      "question": "What does not contribute to demographic catastrophe in Americas?",
+      "options": [
+        "Disease exposure",
+        "Livestock competition",
+        "Crop failure",
+        "Population immunity"
+      ],
+      "correctAnswer": "Population immunity",
+      "explanation": "Indigenous lacked immunity.",
+      "questionNumber": 40,
+      "passageIndex": 2,
+      "passageId": "ielts-reading-013-p3"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ielts-full-024",
+  "exam": "ielts",
+  "type": "full",
+  "title": "IELTS Full Mock Test 24",
+  "durationSeconds": 9900,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "ielts-listening-024",
+      "file": "ielts/listening/test-024.json"
+    },
+    {
+      "section": "reading",
+      "testId": "ielts-reading-024",
+      "file": "ielts/reading/test-024.json"
+    },
+    {
+      "section": "writing",
+      "testId": "ielts-writing-024",
+      "file": "ielts/writing/test-024.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "ielts-speaking-024",
+      "file": "ielts/speaking/test-024.json"
+    }
+  ]
+}

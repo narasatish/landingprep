@@ -1,0 +1,79 @@
+{
+  "id": "ielts-writing-016",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 16",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-016-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The bar charts compare the average time spent on different leisure activities by adults in 2000 and 2020. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "work-life balance",
+      "modelAnswer": "The two bar charts illustrate the average weekly hours adults dedicated to various leisure activities in two different years: 2000 and 2020. \n\nOverall, it is clear that watching TV remained the most popular leisure activity in both years, experiencing a significant increase. Conversely, time spent on reading and socialising decreased over the two-decade period, while hobbies and sports saw slight rises.\n\nIn 2000, adults spent the most time watching TV, averaging 15 hours per week, which then surged to 22 hours in 2020, making it by far the dominant activity. Hobbies also gained popularity, rising from 8 hours per week in 2000 to 12 hours in 2020. Similarly, engagement in sports and exercise saw a modest increase from 5 hours to 6 hours per week over the same period.\n\nIn contrast, socialising experienced the most notable decline among the activities, dropping from 10 hours per week in 2000 to 7 hours in 2020. Reading also became less common, with average weekly hours falling from 7 in 2000 to just 4 in 2020, indicating a shift away from traditional forms of leisure.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Average Weekly Time Spent on Leisure Activities by Adults (2000 vs. 2020)",
+        "yLabel": "Hours per week",
+        "xAxis": [
+          "Watching TV",
+          "Socialising",
+          "Hobbies",
+          "Sports/Exercise",
+          "Reading"
+        ],
+        "series": [
+          {
+            "label": "2000",
+            "values": [
+              15,
+              10,
+              8,
+              5,
+              7
+            ]
+          },
+          {
+            "label": "2020",
+            "values": [
+              22,
+              7,
+              12,
+              6,
+              4
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-016-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Many people today prioritise work over their personal and family lives. Discuss the possible causes of this trend and suggest ways in which the balance between work and personal life can be improved.",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "work-life balance",
+      "modelAnswer": "In contemporary society, a notable inclination to privilege professional commitments above personal and familial responsibilities has become increasingly apparent. This essay will explore the underlying reasons for this shift and propose actionable strategies to foster a more harmonious equilibrium between one's career and private life.\n\nSeveral factors contribute to the modern emphasis on work. Firstly, the intensely competitive global job market often necessitates longer hours and greater dedication to secure employment and career progression. For instance, individuals in demanding industries like finance or technology frequently work beyond standard hours, driven by the pressure to meet targets and outpace peers, thereby leaving little time for family or leisure. Secondly, the pervasive influence of consumerism and rising living costs compels many to earn more to maintain a desired lifestyle or meet financial obligations, such as mortgage payments or educational expenses. This economic imperative often translates into a willingness to sacrifice personal time for increased income.\n\nTo mitigate this imbalance, a multi-pronged approach is required. Employers can play a crucial role by implementing flexible working arrangements, such as remote work options or compressed workweeks, which empower employees to manage their time more effectively. A prime example is the growing adoption of 'hybrid' models, allowing staff to split their week between home and office, significantly reducing commute stress and enabling better integration of personal duties. Furthermore, individuals themselves must cultivate a stronger sense of personal boundaries, learning to decline additional tasks when overloaded and consciously scheduling time for family and self-care. Governments could also support this by promoting policies that protect employees' right to disconnect outside working hours.\n\nIn conclusion, while the prioritisation of work stems from competitive pressures and economic realities, a healthier balance is attainable. This requires a concerted effort from both employers, through flexible policies, and individuals, by setting clear boundaries, to redefine societal norms around work-life integration."
+    }
+  ],
+  "variant": "academic"
+}

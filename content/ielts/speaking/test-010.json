@@ -1,0 +1,72 @@
+{
+  "id": "ielts-speaking-010",
+  "exam": "ielts",
+  "section": "speaking",
+  "type": "section",
+  "title": "IELTS Speaking Practice Test 10",
+  "durationSeconds": 840,
+  "questionCount": 3,
+  "instructions": "Record responses and review using the rubric.",
+  "questions": [
+    {
+      "id": "ielts-speaking-010-q01",
+      "questionType": "speaking_task",
+      "prompt": "Talk about your personal experience with community science projects.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "community science projects",
+      "fingerprint": "4d2b6e8a073b2e086f",
+      "modelAnswer": "Begin by directly answering the question with a clear statement. Add 2–3 specific personal details or experiences that support your answer. Use transitional phrases to connect ideas and finish with a brief concluding remark."
+    },
+    {
+      "id": "ielts-speaking-010-q02",
+      "questionType": "speaking_task",
+      "prompt": "Describe a situation where community science projects affected a school, workplace, or community.",
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "community science projects",
+      "fingerprint": "53d12e36fc8f63e9c0",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "ielts-speaking-010-q03",
+      "questionType": "speaking_task",
+      "prompt": "Discuss whether community science projects will become more important in the future.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "community science projects",
+      "fingerprint": "eaefef30d64cf74940",
+      "modelAnswer": "A strong response would clearly address the prompt with specific details, organised ideas, and natural-sounding English. Include an introduction, supporting points with examples, and a brief conclusion. Aim for fluency, accuracy, and coherent structure throughout."
+    }
+  ],
+  "fingerprints": [
+    "4d2b6e8a073b2e086f",
+    "53d12e36fc8f63e9c0",
+    "eaefef30d64cf74940"
+  ],
+  "variant": "academic"
+}

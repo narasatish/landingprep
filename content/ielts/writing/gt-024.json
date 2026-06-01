@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-024",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 24 — Thank You Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-024-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "thank_you",
+      "letterSituation": "You spent two weeks at the home of your aunt and uncle in another country while attending an international professional conference. During your stay they organised your transport to and from the conference venue each day, helped you rehearse your presentations, and introduced you to several of their professional contacts.",
+      "prompt": "You spent two weeks at the home of your aunt and uncle in another country while attending an international professional conference. During your stay they organised your transport to and from the conference venue each day, helped you rehearse your presentations, and introduced you to several of their professional contacts.\n\nWrite a letter in response to this situation. In your letter:\n• thank them sincerely and warmly for everything they did for you throughout your stay\n• mention specific things they did that were especially helpful or meaningful to you\n• explain how their generous support made a real difference to your experience at the conference\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "thank you"
+    },
+    {
+      "id": "ielts-writing-gt-024-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Family relationships play a crucial role in shaping a person's character, values, and chances of success in life. To what extent do you agree with this statement? Give reasons and specific examples to support your view.",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "thank you"
+    }
+  ]
+}

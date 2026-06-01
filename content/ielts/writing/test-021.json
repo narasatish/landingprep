@@ -1,0 +1,69 @@
+{
+  "id": "ielts-writing-021",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 21",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-021-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The bar chart shows the percentage of the population in five countries who reported high levels of life satisfaction in 2023. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "happiness",
+      "modelAnswer": "The bar chart illustrates the proportion of the population in five Nordic countries—Finland, Denmark, Iceland, Sweden, and Norway—who reported high levels of life satisfaction in the year 2023. Overall, it is clear that a significant majority of people in all five nations experienced high life satisfaction, with Finland leading the group and Norway reporting the lowest percentage.\n\nFinland recorded the highest percentage of its population reporting high life satisfaction, at 78%. Denmark followed closely behind with 75%, while Iceland registered 72%. These three countries formed the top tier, with their figures ranging from nearly three-quarters to over three-quarters of their respective populations expressing contentment.\n\nIn contrast, Sweden and Norway showed slightly lower, though still substantial, percentages. Sweden had 68% of its population reporting high life satisfaction, placing it fourth among the five nations. Norway came in last, with 65% of its residents indicating high levels of life satisfaction. Despite these differences, all countries demonstrated that well over half of their populations were highly satisfied with their lives in 2023.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Percentage of Population Reporting High Life Satisfaction in 2023",
+        "yLabel": "Percentage (%)",
+        "xAxis": [
+          "Finland",
+          "Denmark",
+          "Iceland",
+          "Sweden",
+          "Norway"
+        ],
+        "series": [
+          {
+            "label": "High Life Satisfaction",
+            "values": [
+              78,
+              75,
+              72,
+              68,
+              65
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-021-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Some researchers argue that happiness depends mainly on personal factors such as health and relationships; others believe that external factors such as wealth and government policy are more important. Discuss both views and give your own opinion.",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "happiness",
+      "modelAnswer": "The determinants of human contentment are a subject of ongoing debate, with some contending that individual circumstances like physical well-being and social bonds are paramount, while others assert that societal influences such as economic prosperity and governmental frameworks hold greater sway. This essay will explore both perspectives before arguing that personal factors ultimately play a more significant role in cultivating happiness.\n\nProponents of the view that personal attributes are key to happiness often highlight the intrinsic value of health and strong relationships. For instance, an individual who maintains a robust physical condition and enjoys supportive family and friendships is more likely to experience a profound sense of well-being, irrespective of their material possessions or political climate. Such internal resources provide resilience against life's inevitable challenges and foster a deep sense of belonging and purpose, which external factors alone cannot replicate.\n\nConversely, those who emphasise external factors point to the undeniable impact of wealth and effective governance on quality of life. A stable economy, for example, can alleviate financial stress and provide opportunities for advancement, while sound government policies can ensure access to education, healthcare, and safety. Consider a citizen living in a country with high unemployment and political instability; even with strong personal relationships, their overall happiness would likely be diminished by pervasive insecurity and lack of opportunity.\n\nWhile external conditions undoubtedly contribute to a conducive environment for happiness, I firmly believe that personal factors are ultimately more crucial. Wealth and policy can provide comfort and security, but genuine, lasting happiness stems from an individual's inner state, their connections with others, and their ability to find meaning, regardless of their external circumstances."
+    }
+  ],
+  "variant": "academic"
+}

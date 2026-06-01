@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-004",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 4",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-004",
+      "file": "gmat/quant/test-004.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-004",
+      "file": "gmat/verbal/test-004.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-004",
+      "file": "gmat/data-insights/test-004.json"
+    }
+  ]
+}

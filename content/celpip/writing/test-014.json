@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-014",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 14",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-014-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You recently adopted a rescue dog and are finding it difficult to take the dog to work. You want to ask your employer whether you can bring the dog to the office on certain days.",
+      "recipient": "your manager or HR department",
+      "bulletPoints": [
+        "Explain your situation and why you are making the request",
+        "Describe the dog and explain why it would not disrupt the workplace",
+        "Suggest specific days or conditions that would make the arrangement work"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "A colleague from another department helped you complete a difficult project. Write a letter thanking them, describing what they did, and explaining the impact of their contribution.",
+      "modelAnswer": "Dear Ms. Albright,\n\nI am writing to inquire about the possibility of occasionally bringing my new rescue dog, Sadie, to the office. As you know, I recently adopted Sadie, and while she’s settling in wonderfully, I’m finding it challenging to arrange midday walks and care for her on my longer office days.\n\nSadie is a three-year-old Labrador-shepherd mix, incredibly calm, quiet, and fully house-trained. She mostly naps during the day and is not a barker or a chewer. I'm confident she would not disrupt the office environment; she's excellent with people and other animals, and I would ensure she stays by my desk. I'd also be happy to keep her on a leash or in a crate if preferred.\n\nTo make this arrangement work, I was hoping to bring her in perhaps one or two days a week, specifically on Tuesdays and Thursdays, when I have longer hours. I could also commit to taking her out for breaks myself and ensuring she doesn't interfere with anyone's work or allergies. Please let me know if this is something we could explore.\n\nThank you for your consideration.\n\nSincerely,\n\n[Your Name]"
+    },
+    {
+      "id": "celpip-writing-014-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your provincial government is considering two policies to improve healthcare access. Which do you prefer?",
+      "optionA": "Expand the number of nurse practitioners authorised to work independently in rural clinics",
+      "optionB": "Launch a telehealth platform to give all residents free virtual doctor consultations",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A technology programme for seniors is seeking feedback from older adults and their families. Describe the technology challenges seniors face, what types of training would be most useful, and how programmes could be made more accessible.",
+      "modelAnswer": "I strongly advocate for Policy A: expanding the number of nurse practitioners (NPs) authorised to work independently in rural clinics. This approach offers a tangible, immediate, and sustainable solution to healthcare access challenges, particularly in underserved areas.\n\nFirstly, NPs provide comprehensive, hands-on care, addressing a wide range of medical needs from diagnostics and prescriptions to chronic disease management. For instance, a rural resident with a sprained ankle or a child needing vaccinations can receive prompt, in-person treatment without lengthy travel. This direct access to physical examination and intervention is crucial for effective care.\n\nSecondly, empowering NPs to work independently leverages existing professional capacity and integrates seamlessly into community healthcare infrastructure. They can establish lasting patient-provider relationships, fostering continuity of care and trust, which is often lacking in more transient virtual models.\n\nWhile Policy B, a telehealth platform, offers convenience, it inherently limits physical examination and diagnostic capabilities. It also assumes universal access to reliable internet and digital literacy, which can be significant barriers in the very rural communities most in need of improved access. Telehealth should supplement, not replace, the fundamental need for accessible, in-person primary care providers."
+    }
+  ]
+}

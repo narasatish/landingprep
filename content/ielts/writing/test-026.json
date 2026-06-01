@@ -1,0 +1,109 @@
+{
+  "id": "ielts-writing-026",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 26",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-026-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The graph shows changes in the average number of books read per person per year in four countries between 2000 and 2022. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "reading habits",
+      "modelAnswer": "The line graph illustrates the average number of books read per person per year in four different countries (A, B, C, and D) over a 22-year period, from 2000 to 2022.\n\nOverall, Country A and Country C experienced a steady increase in reading habits, while Country B and Country D saw a decline in the average number of books read. Country A maintained the highest figures for much of the period, though Country C showed the most significant proportional growth.\n\nIn 2000, Country B had the highest average at 25 books, followed by Country D at 20, Country A at 15, and Country C at 10. By 2022, Country B's figure had almost halved to 14, and Country D's had fallen to 16. In contrast, Country A consistently rose from 15 to 27 books per year, making it the top reader by the end of the period. Country C demonstrated the most dramatic improvement, more than doubling its initial figure from 10 books in 2000 to 22 books in 2022, surpassing Country D and nearly catching Country B's initial level.",
+      "visual": {
+        "chartType": "line",
+        "title": "Average Number of Books Read Per Person Per Year (2000-2022)",
+        "yLabel": "Number of Books",
+        "xAxis": [
+          "2000",
+          "2004",
+          "2008",
+          "2012",
+          "2016",
+          "2020",
+          "2022"
+        ],
+        "series": [
+          {
+            "label": "Country A",
+            "values": [
+              15,
+              18,
+              20,
+              22,
+              25,
+              26,
+              27
+            ]
+          },
+          {
+            "label": "Country B",
+            "values": [
+              25,
+              23,
+              20,
+              18,
+              16,
+              15,
+              14
+            ]
+          },
+          {
+            "label": "Country C",
+            "values": [
+              10,
+              12,
+              15,
+              17,
+              19,
+              21,
+              22
+            ]
+          },
+          {
+            "label": "Country D",
+            "values": [
+              20,
+              21,
+              22,
+              20,
+              18,
+              17,
+              16
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-026-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "The reading of books — both for pleasure and for knowledge — is declining in many countries. What are the causes of this trend, and how can it be reversed?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "reading habits",
+      "modelAnswer": "The consumption of literature, whether for enjoyment or enlightenment, is undeniably diminishing across numerous nations. This essay will explore the primary reasons behind this decline and propose viable strategies to reinvigorate reading culture.\n\nA significant contributing factor to this dwindling engagement with books is the pervasive influence of digital media. The advent of smartphones, social media platforms, and streaming services has created an ecosystem of instantaneous gratification and passive entertainment that inherently competes with the more demanding act of reading. For instance, a recent study indicated that individuals now spend an average of six hours daily on their mobile devices, often at the expense of activities like reading a novel or an academic text. Furthermore, the modern educational curriculum, often driven by standardised testing, frequently overlooks the cultivation of reading for pleasure, thereby failing to instil a lifelong appreciation for literature in younger generations.\n\nTo reverse this trend, a multifaceted approach is essential. Firstly, educational institutions must prioritise the promotion of intrinsic reading motivation, perhaps by integrating diverse literary genres into the curriculum and allocating dedicated time for independent reading without the pressure of assessment. Moreover, public libraries and community centres can play a crucial role by hosting engaging book clubs, author talks, and interactive storytelling sessions, particularly appealing to children and young adults. For example, initiatives like \"Reading Challenges\" where participants earn rewards for completing books have proven effective in fostering a renewed interest in reading within communities.\n\nIn conclusion, the decline in reading stems largely from the dominance of digital entertainment and systemic educational shortcomings. However, through targeted educational reforms and community-led initiatives, this invaluable practice can certainly be revitalised."
+    }
+  ],
+  "variant": "academic"
+}

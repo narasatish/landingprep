@@ -1,0 +1,907 @@
+{
+  "id": "ielts-listening-010",
+  "exam": "ielts",
+  "section": "listening",
+  "title": "IELTS Listening Practice Test 10",
+  "durationSeconds": 2400,
+  "questionCount": 40,
+  "listeningScripts": [
+    {
+      "id": "ielts-listening-010-p1",
+      "part": 1,
+      "title": "Library Membership and Book Loan",
+      "text": "Librarian: Central Library, how can I assist you?\nCaller: I'd like to register for a library card and ask about borrowing rules.\nLibrarian: Of course. Your full name please?\nCaller: Patricia Osei. O-S-E-I.\nLibrarian: And your address?\nCaller: Flat 3, 18 Maple Street, Thornton, TH6 2PQ.\nLibrarian: Date of birth?\nCaller: Second of August, 1994.\nLibrarian: Our standard membership is free and allows you to borrow up to eight items at a time. Loans are for three weeks with one free renewal. Audiobooks and e-books are also available through our app.\nCaller: Are there fines for late returns?\nLibrarian: Ten pence per day for standard loans, twenty pence for reserved items.\nCaller: Can I reserve books online?\nLibrarian: Yes, through the library portal. There's a reservation fee of fifty pence per item. Your card will be ready to collect tomorrow from the information desk.",
+      "formLayout": {
+        "title": "Central Library — New Membership Form",
+        "example": {
+          "label": "Annual membership fee",
+          "content": "free"
+        },
+        "rows": [
+          {
+            "type": "blank",
+            "num": 1,
+            "label": "Surname",
+            "prefix": "",
+            "suffix": "",
+            "answer": "Osei"
+          },
+          {
+            "type": "blank",
+            "num": 2,
+            "label": "Address",
+            "prefix": "Flat 3, 18 ",
+            "suffix": ", Thornton",
+            "answer": "Maple Street"
+          },
+          {
+            "type": "blank",
+            "num": 3,
+            "label": "Postcode",
+            "prefix": "",
+            "suffix": "",
+            "answer": "TH6 2PQ"
+          },
+          {
+            "type": "blank",
+            "num": 4,
+            "label": "Date of birth",
+            "prefix": "2nd August ",
+            "suffix": "",
+            "answer": "1994"
+          },
+          {
+            "type": "blank",
+            "num": 5,
+            "label": "Maximum items allowed",
+            "prefix": "up to ",
+            "suffix": " items",
+            "answer": "8 / eight"
+          },
+          {
+            "type": "blank",
+            "num": 6,
+            "label": "Standard loan period",
+            "prefix": "",
+            "suffix": " weeks",
+            "answer": "3 / three"
+          },
+          {
+            "type": "blank",
+            "num": 7,
+            "labelBlank": true,
+            "labelSuffix": " fine per day",
+            "rightContent": "10p / 10 pence",
+            "answer": "Standard"
+          },
+          {
+            "type": "blank",
+            "num": 8,
+            "label": "Reserved item fine (per day)",
+            "prefix": "",
+            "suffix": "p",
+            "answer": "20 / twenty"
+          },
+          {
+            "type": "blank",
+            "num": 9,
+            "label": "Online reservation fee",
+            "prefix": "",
+            "suffix": "p per item",
+            "answer": "50 / fifty"
+          },
+          {
+            "type": "blank",
+            "num": 10,
+            "label": "Card collection point",
+            "prefix": "",
+            "suffix": "",
+            "answer": "information desk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-listening-010-p2",
+      "part": 2,
+      "title": "Central Railway Station — Passenger Information",
+      "text": "Announcer: Good morning and welcome to Central Railway Station. My name is Chris and I'm one of the passenger services team. We're delighted that you're travelling with us today, and we'd like to take a few minutes to familiarise you with the layout of the station so you can find everything you need quickly and comfortably. Central Station serves over forty thousand passengers every day and is one of the busiest transport hubs in the region, so let me guide you through the key facilities.\n\nLet's begin at Zone A — the ticket office. This is located at the front of the station building, directly facing Market Square as you enter through the main doors. The ticket office has twelve staffed windows open from five in the morning until eleven at night, seven days a week. You can purchase tickets for any destination on the national rail network, collect pre-booked tickets, and get journey planning advice. The ticket office also handles railcard applications and group travel enquiries.\n\nImmediately to the right of the ticket office is Zone B — left luggage. This facility allows you to store your bags securely while you explore the city or wait for your connection. The service is available from six in the morning until ten at night, every day of the year including bank holidays. Charges are three pounds per item for up to four hours, and five pounds for up to twelve hours. Larger items such as bicycles and pushchairs can also be accommodated for an additional charge. You will need to show a valid photo ID when collecting your items.\n\nMoving through the main concourse from the ticket office, you'll reach the platforms. Platforms one to four — Zone C — are on the left-hand side of the concourse and are served by local and regional services, including commuter trains to the suburbs, the airport express, and cross-country services. The departure board for platforms one to four is displayed on a large overhead screen at the concourse entrance.\n\nPlatforms five to eight — Zone D — are on the right-hand side of the concourse and handle long-distance intercity services, including trains to London, Edinburgh, Birmingham, and Bristol. These platforms have their own waiting facilities including seating and vending machines. Platform 8 is the dedicated platform for the overnight sleeper service to Scotland, which departs at eleven fifty-five pm.\n\nZone E — the waiting room — is centrally located between the two platform groups on the main concourse. The waiting room is enclosed, heated in winter and air-conditioned in summer, and provides comfortable seating for around eighty passengers. It is open from five in the morning until the last service of the day. Children's pushchairs are welcome and there is a designated area for passengers with reduced mobility.\n\nZone F — the station café — is positioned in the western end of the main concourse, between the waiting room and the exit to the taxi rank. The café serves hot and cold food and drinks from five thirty in the morning until nine at night. A breakfast menu is available until midday, after which a full lunch and snack menu takes over. The café also has free wi-fi which you can access without needing to make a purchase.\n\nZone G — the taxi rank — is outside the western exit of the station, accessed via the covered walkway from the main concourse. Taxis are available here twenty-four hours a day and the rank typically has a queue of three to eight vehicles waiting at most times. A smartphone app is also available for pre-booking a taxi and tracking your driver's arrival. Private hire vehicles must use the designated drop-off and pick-up bay on the southern side of the building rather than the taxi rank.\n\nZone H — bicycle storage — is located at the eastern end of the station building, accessible from Platform Road on the eastern side. There are one hundred and twenty covered, secure bicycle spaces available, operated on a first-come, first-served basis. Season pass holders get a reserved space. The bicycle storage area is free to use for up to two hours and costs one pound per day thereafter. Cycle repair tools and a pump are available in the storage area at no charge.\n\nZone I — the customer services desk — is situated in the centre of the main concourse, directly in front of the main entrance. The team here handles journey planning, delays and compensation claims, lost property, accessibility arrangements, and station feedback. Customer services is open from seven in the morning until eight in the evening Monday to Saturday, and nine to five on Sundays. Outside these hours, the ticket office team can assist with urgent queries.\n\nFinally, Zone J — the accessible assistance point — is located near the entrance to Platforms one to four on the left of the main concourse. This is a staffed point specifically for passengers who need help boarding trains, using ramps, or navigating the station. Passengers who require assistance are strongly encouraged to pre-book the service at least twenty-four hours before travel by calling the station's accessibility line or booking online. However, our team will always do their best to assist passengers who arrive without prior booking.\n\nI hope that gives you a good sense of the station layout. If there's anything else we can help with, please don't hesitate to ask any member of the blue-uniformed passenger services team. Have a safe and comfortable journey today."
+    },
+    {
+      "id": "ielts-listening-010-p3",
+      "part": 3,
+      "title": "Seminar on Climate Change Adaptation in Agriculture",
+      "text": "Tutor: Today we're looking at how farmers are adapting to climate change. Sarah, you've been researching this — what are the main strategies?\nSarah: There are basically four categories: changing crop varieties, adjusting planting calendars, improving irrigation efficiency, and diversifying into non-crop income streams like agritourism.\nMike: From what I read, the shift to drought-resistant varieties is the most widely adopted strategy globally, though it depends heavily on seed availability and cost.\nTutor: What barriers prevent farmers from adapting?\nSarah: In developing countries, the main barriers are access to finance and lack of reliable weather forecasting at the local level. Farmers need hyper-local data, not national averages.\nMike: There's also a knowledge gap. Many smallholders rely on generational knowledge that may no longer match current climate conditions. Extension services have a critical role.\nTutor: How effective have government subsidy programmes been?\nSarah: Mixed results. Countries that tied subsidies to specific adaptation behaviours — like water-efficient irrigation — saw much better outcomes than those that gave blanket payments.\nMike: India's PM-KISAN scheme is often cited as an example of blanket support that failed to drive specific adaptive behaviours.\nTutor: What does the evidence suggest about the future food supply?\nSarah: If current emission trajectories continue, yield losses for staple crops like wheat and maize could reach thirty percent by 2080 in tropical regions.\nTutor: And what would reverse that?\nMike: A combination of accelerated breeding programmes, agroforestry, and precision agriculture technologies — but these require significant upfront investment."
+    },
+    {
+      "id": "ielts-listening-010-p4",
+      "part": 4,
+      "title": "Lecture: The History of Antibiotics",
+      "text": "Today I want to talk about the history of antibiotics — arguably one of the most important developments in twentieth-century medicine.\n\nThe story begins in 1928 when Alexander Fleming noticed that a mould called Penicillium notatum was inhibiting the growth of bacteria on one of his culture plates. He published his findings but was initially unable to isolate the active compound in large enough quantities to be clinically useful.\n\nIt wasn't until 1940 that Howard Florey and Ernst Chain at Oxford managed to purify penicillin and demonstrate its effectiveness in mice. The following year, in 1941, they treated the first human patient — a police officer with a severe infection — with remarkable results, though limited supplies meant the patient eventually relapsed.\n\nThe real breakthrough came during the Second World War, when mass production was achieved through collaboration between British and American pharmaceutical companies. By 1944, enough penicillin had been produced to treat all wounded Allied soldiers. This industrial-scale production required entirely new fermentation techniques.\n\nFollowing the war, the golden era of antibiotic discovery began, lasting roughly from 1950 to 1970. During this period, major antibiotic classes including tetracyclines, erythromycin, and vancomycin were discovered, largely from soil bacteria. Researchers estimated that soil contained thousands of antibiotic-producing organisms waiting to be identified.\n\nHowever, the overuse of antibiotics in both human medicine and agriculture has driven the evolution of resistant bacteria at an alarming rate. The World Health Organization now lists antimicrobial resistance as one of the greatest global health threats. New antibiotic approvals have declined sharply since the 1980s as pharmaceutical companies shifted resources toward more profitable chronic disease treatments.\n\nCurrent strategies to address resistance include antibiotic stewardship programmes, rapid diagnostic testing to avoid prescribing antibiotics for viral infections, and investment in novel antimicrobial compounds including bacteriophage therapy and antimicrobial peptides."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-listening-010-q1",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 1,
+      "label": "Surname",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Osei",
+      "explanation": "The answer \"Osei\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the check-in time?",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-010-q2",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 2,
+      "label": "Address",
+      "prefix": "Flat 3, 18 ",
+      "suffix": ", Thornton",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Maple Street",
+      "explanation": "The answer \"Maple Street\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-010-q3",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 3,
+      "label": "Postcode",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "TH6 2PQ",
+      "explanation": "The answer \"TH6 2PQ\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the total cost?",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-010-q4",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 4,
+      "label": "Date of birth",
+      "prefix": "2nd August ",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "1994",
+      "explanation": "The answer \"1994\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-010-q5",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 5,
+      "label": "Maximum items allowed",
+      "prefix": "up to ",
+      "suffix": " items",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "8 / eight",
+      "explanation": "The answer \"8 / eight\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the breakfast option?",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-010-q6",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 6,
+      "label": "Standard loan period",
+      "prefix": "",
+      "suffix": " weeks",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "3 / three",
+      "explanation": "The answer \"3 / three\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-010-q7",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 7,
+      "label": "",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": true,
+      "labelSuffix": " fine per day",
+      "rightContent": "10p / 10 pence",
+      "answer": "Standard",
+      "explanation": "The answer \"Standard\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the room type?",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-010-q8",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 8,
+      "label": "Reserved item fine (per day)",
+      "prefix": "",
+      "suffix": "p",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "20 / twenty",
+      "explanation": "The answer \"20 / twenty\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-010-q9",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 9,
+      "label": "Online reservation fee",
+      "prefix": "",
+      "suffix": "p per item",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "50 / fifty",
+      "explanation": "The answer \"50 / fifty\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the cancellation policy?",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-010-q10",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 10,
+      "label": "Card collection point",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "information desk",
+      "explanation": "The answer \"information desk\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
+      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-010-q11",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 11,
+      "prompt": "What are the left luggage operating hours?",
+      "options": [
+        "5 am to 11 pm",
+        "6 am to 10 pm",
+        "7 am to 9 pm",
+        "24 hours"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The announcer says left luggage is available 'from six in the morning until ten at night'"
+    },
+    {
+      "id": "ielts-listening-010-q12",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 12,
+      "prompt": "Where is the taxi rank located?",
+      "options": [
+        "on the eastern side of the building",
+        "outside the western exit",
+        "next to the ticket office",
+        "on the southern side of the building"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The announcer says the taxi rank is 'outside the western exit of the station'"
+    },
+    {
+      "id": "ielts-listening-010-q13",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 13,
+      "prompt": "How much does bicycle storage cost after the first two free hours?",
+      "options": [
+        "50p per day",
+        "£1 per day",
+        "£2 per day",
+        "£3 per day"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The announcer says bicycle storage 'costs one pound per day thereafter'"
+    },
+    {
+      "id": "ielts-listening-010-q14",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 14,
+      "prompt": "What are customer services desk hours on Sundays?",
+      "options": [
+        "7 am to 8 pm",
+        "8 am to 6 pm",
+        "9 am to 5 pm",
+        "10 am to 4 pm"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The announcer says customer services is open 'nine to five on Sundays'"
+    },
+    {
+      "id": "ielts-listening-010-q15",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 15,
+      "prompt": "How far in advance should passengers requiring accessible assistance book?",
+      "options": [
+        "6 hours",
+        "12 hours",
+        "24 hours",
+        "48 hours"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The announcer says passengers 'are strongly encouraged to pre-book the service at least twenty-four hours before travel'"
+    },
+    {
+      "id": "ielts-listening-010-q16",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Central Railway Station — Station Plan",
+      "mapDescription": "Label the facilities A–J on the station map.",
+      "mapKey": {
+        "A": "Ticket office",
+        "B": "Left luggage",
+        "C": "Platforms 1–4 area",
+        "D": "Platforms 5–8 area",
+        "E": "Waiting room",
+        "F": "Station café",
+        "G": "Taxi rank",
+        "H": "Bicycle storage",
+        "I": "Customer services desk",
+        "J": "Accessible assistance point"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 16,
+      "prompt": "Front of station facing Market Square, 12 windows open 5 am–11 pm",
+      "correctAnswer": "A",
+      "explanation": "The correct letter is A (Ticket office)."
+    },
+    {
+      "id": "ielts-listening-010-q17",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Central Railway Station — Station Plan",
+      "mapDescription": "Label the facilities A–J on the station map.",
+      "mapKey": {
+        "A": "Ticket office",
+        "B": "Left luggage",
+        "C": "Platforms 1–4 area",
+        "D": "Platforms 5–8 area",
+        "E": "Waiting room",
+        "F": "Station café",
+        "G": "Taxi rank",
+        "H": "Bicycle storage",
+        "I": "Customer services desk",
+        "J": "Accessible assistance point"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 17,
+      "prompt": "Right of ticket office, bag storage 6 am–10 pm, requires photo ID",
+      "correctAnswer": "B",
+      "explanation": "The correct letter is B (Left luggage)."
+    },
+    {
+      "id": "ielts-listening-010-q18",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Central Railway Station — Station Plan",
+      "mapDescription": "Label the facilities A–J on the station map.",
+      "mapKey": {
+        "A": "Ticket office",
+        "B": "Left luggage",
+        "C": "Platforms 1–4 area",
+        "D": "Platforms 5–8 area",
+        "E": "Waiting room",
+        "F": "Station café",
+        "G": "Taxi rank",
+        "H": "Bicycle storage",
+        "I": "Customer services desk",
+        "J": "Accessible assistance point"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 18,
+      "prompt": "Left concourse side handling local, regional and airport express services",
+      "correctAnswer": "C",
+      "explanation": "The correct letter is C (Platforms 1–4 area)."
+    },
+    {
+      "id": "ielts-listening-010-q19",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Central Railway Station — Station Plan",
+      "mapDescription": "Label the facilities A–J on the station map.",
+      "mapKey": {
+        "A": "Ticket office",
+        "B": "Left luggage",
+        "C": "Platforms 1–4 area",
+        "D": "Platforms 5–8 area",
+        "E": "Waiting room",
+        "F": "Station café",
+        "G": "Taxi rank",
+        "H": "Bicycle storage",
+        "I": "Customer services desk",
+        "J": "Accessible assistance point"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 19,
+      "prompt": "Right concourse side for intercity services including overnight sleeper",
+      "correctAnswer": "D",
+      "explanation": "The correct letter is D (Platforms 5–8 area)."
+    },
+    {
+      "id": "ielts-listening-010-q20",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "Central Railway Station — Station Plan",
+      "mapDescription": "Label the facilities A–J on the station map.",
+      "mapKey": {
+        "A": "Ticket office",
+        "B": "Left luggage",
+        "C": "Platforms 1–4 area",
+        "D": "Platforms 5–8 area",
+        "E": "Waiting room",
+        "F": "Station café",
+        "G": "Taxi rank",
+        "H": "Bicycle storage",
+        "I": "Customer services desk",
+        "J": "Accessible assistance point"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 20,
+      "prompt": "Enclosed heated/air-conditioned central concourse space for 80 passengers",
+      "correctAnswer": "E",
+      "explanation": "The correct letter is E (Waiting room)."
+    },
+    {
+      "id": "ielts-listening-010-q21",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 21,
+      "prompt": "Which adaptation strategy is described as most widely adopted globally?",
+      "options": [
+        "adjusting planting calendars",
+        "agritourism diversification",
+        "drought-resistant crop varieties",
+        "improved irrigation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
+    },
+    {
+      "id": "ielts-listening-010-q22",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 22,
+      "prompt": "What type of weather data do farmers most need?",
+      "options": [
+        "national averages",
+        "seasonal forecasts",
+        "hyper-local data",
+        "satellite imagery"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sarah says 'Farmers need hyper-local data, not national averages'"
+    },
+    {
+      "id": "ielts-listening-010-q23",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 23,
+      "prompt": "Which country's scheme is cited as an example of ineffective blanket support?",
+      "options": [
+        "Bangladesh",
+        "Kenya",
+        "China",
+        "India"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mike cites 'India's PM-KISAN scheme'"
+    },
+    {
+      "id": "ielts-listening-010-q24",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 24,
+      "prompt": "By how much could tropical crop yields fall by 2080?",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "40%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
+    },
+    {
+      "id": "ielts-listening-010-q25",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 25,
+      "prompt": "What does Mike identify as a requirement for advanced adaptation technologies?",
+      "options": [
+        "international cooperation",
+        "significant upfront investment",
+        "government mandates",
+        "reduced crop prices"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mike says these 'require significant upfront investment'"
+    },
+    {
+      "id": "ielts-listening-010-q26",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 26,
+      "prompt": "introducing new equipment in the laboratory",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-010-q27",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 27,
+      "prompt": "keeping written records of experiments",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-010-q28",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 28,
+      "prompt": "sharing results with other research groups",
+      "correctAnswer": "B",
+      "explanation": "The speaker's attitude is B. She is undecided."
+    },
+    {
+      "id": "ielts-listening-010-q29",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 29,
+      "prompt": "the importance of the project deadline",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-010-q30",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 30,
+      "prompt": "the proposal to extend the study",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-010-q31",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 31,
+      "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
+      "correctAnswer": "mould",
+      "explanation": "The correct answer is: \"mould\".",
+      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
+      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-010-q32",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 32,
+      "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
+      "correctAnswer": "isolate / purify",
+      "explanation": "The correct answer is: \"isolate / purify\".",
+      "prompt": "The speaker describes the current research of the topic.",
+      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-010-q33",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 33,
+      "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
+      "correctAnswer": "Oxford",
+      "explanation": "The correct answer is: \"Oxford\".",
+      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
+      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-010-q34",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 34,
+      "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
+      "correctAnswer": "Police officer",
+      "explanation": "The correct answer is: \"Police officer\".",
+      "prompt": "The speaker describes the key challenge of the topic.",
+      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-010-q35",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 35,
+      "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
+      "correctAnswer": "fermentation",
+      "explanation": "The correct answer is: \"fermentation\".",
+      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
+      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-010-q36",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 36,
+      "prompt": "According to the lecture, the main reason antibiotic discovery declined after the 1980s was that",
+      "options": [
+        "A  resistant bacteria evolved too quickly",
+        "B  pharmaceutical companies moved to more profitable areas",
+        "C  all known antibiotic compounds had already been tested",
+        "D  government funding was withdrawn"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer says companies 'shifted resources toward more profitable chronic disease treatments'"
+    },
+    {
+      "id": "ielts-listening-010-q37",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 37,
+      "prompt": "The golden era of antibiotic discovery lasted approximately",
+      "options": [
+        "A  10 years",
+        "B  20 years",
+        "C  30 years",
+        "D  40 years"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The golden era ran 'from 1950 to 1970' — roughly 20 years"
+    },
+    {
+      "id": "ielts-listening-010-q38",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 38,
+      "prompt": "According to the lecturer, most antibiotics discovered in the golden era came from",
+      "options": [
+        "A  synthetic chemicals",
+        "B  marine organisms",
+        "C  soil bacteria",
+        "D  hospital environments"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer states they were discovered 'largely from soil bacteria'"
+    },
+    {
+      "id": "ielts-listening-010-q39",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 39,
+      "prompt": "The World Health Organization describes antimicrobial resistance as",
+      "options": [
+        "A  a manageable risk with current technology",
+        "B  one of the greatest global health threats",
+        "C  primarily a problem in developing countries",
+        "D  less serious than other infectious diseases"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer quotes WHO listing it as 'one of the greatest global health threats'"
+    },
+    {
+      "id": "ielts-listening-010-q40",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 40,
+      "prompt": "Which novel treatment approach is specifically mentioned as an alternative to conventional antibiotics?",
+      "options": [
+        "A  gene therapy",
+        "B  vaccination programmes",
+        "C  bacteriophage therapy",
+        "D  surgical interventions"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer mentions 'bacteriophage therapy' as a novel antimicrobial approach"
+    }
+  ],
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Part 1: Biomimicry in Engineering",
+      "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "context": "Professor explains principles of biomimicry with examples from aeronautics and materials science.",
+      "questionRange": [
+        1,
+        10
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Part 2: Urban Migration Patterns",
+      "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
+      "context": "Speaker discusses push-pull factors, infrastructure challenges, and policy responses.",
+      "questionRange": [
+        11,
+        20
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title": "Part 3: The History of Coffee Trade",
+      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "questionRange": [
+        21,
+        30
+      ]
+    },
+    {
+      "partNumber": 4,
+      "title": "Part 4: Sleep and Memory Consolidation",
+      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
+      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "questionRange": [
+        31,
+        40
+      ]
+    }
+  ]
+}

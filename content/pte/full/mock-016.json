@@ -1,0 +1,25 @@
+{
+  "id": "pte-full-016",
+  "exam": "pte",
+  "type": "full",
+  "title": "PTE Academic Full Mock Test 16",
+  "durationSeconds": 7200,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "speaking-writing",
+      "testId": "pte-speaking-writing-016",
+      "file": "pte/speaking-writing/test-016.json"
+    },
+    {
+      "section": "reading",
+      "testId": "pte-reading-016",
+      "file": "pte/reading/test-016.json"
+    },
+    {
+      "section": "listening",
+      "testId": "pte-listening-016",
+      "file": "pte/listening/test-016.json"
+    }
+  ]
+}

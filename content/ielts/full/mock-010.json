@@ -1,0 +1,30 @@
+{
+  "id": "ielts-full-010",
+  "exam": "ielts",
+  "type": "full",
+  "title": "IELTS Full Mock Test 10",
+  "durationSeconds": 9900,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "ielts-listening-010",
+      "file": "ielts/listening/test-010.json"
+    },
+    {
+      "section": "reading",
+      "testId": "ielts-reading-010",
+      "file": "ielts/reading/test-010.json"
+    },
+    {
+      "section": "writing",
+      "testId": "ielts-writing-010",
+      "file": "ielts/writing/test-010.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "ielts-speaking-010",
+      "file": "ielts/speaking/test-010.json"
+    }
+  ]
+}

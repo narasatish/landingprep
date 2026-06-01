@@ -1,0 +1,705 @@
+{
+  "id": "pte-speaking-writing-056",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 56",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-056-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Conserving Our Precious Water”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "water conservation",
+      "modelAnswer": "Water conservation is paramount for sustaining life and ecosystems. Growing global populations and climate change exert immense pressure on freshwater resources, leading to scarcity in many regions. Implementing efficient irrigation techniques, repairing leaky infrastructure, and promoting responsible domestic water use are crucial steps. Education campaigns can empower individuals and communities to adopt sustainable practices, ensuring water availability for future generations and mitigating environmental degradation associated with overuse.",
+      "readText": "Water conservation is paramount for sustaining life and ecosystems. Growing global populations and climate change exert immense pressure on freshwater resources, leading to scarcity in many regions. Implementing efficient irrigation techniques, repairing leaky infrastructure, and promoting responsible domestic water use are crucial steps. Education campaigns can empower individuals and communities to adopt sustainable practices, ensuring water availability for future generations and mitigating environmental degradation associated with overuse."
+    },
+    {
+      "id": "pte-speaking-writing-056-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Water Conservation Efforts”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Implementing water-saving technologies is crucial for sustainable resource management.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "water conservation",
+      "modelAnswer": "Implementing water-saving technologies is crucial for sustainable resource management.",
+      "audioScript": "Implementing water-saving technologies is crucial for sustainable resource management."
+    },
+    {
+      "id": "pte-speaking-writing-056-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Household Water Consumption by Activity (Litres/Day)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "water conservation",
+      "modelAnswer": "This bar chart illustrates average household water consumption across various daily activities. Showers account for the highest usage at 100 litres per day, significantly more than any other category. Toilets follow with 80 litres, and laundry uses 70 litres daily. In contrast, gardening and 'other' activities represent the lowest consumption, at 40 and 20 litres respectively. Overall, personal hygiene and cleaning dominate water usage, indicating key areas for potential conservation efforts within households. The data clearly prioritizes where reductions could be most effective.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Household Water Consumption by Activity (Litres/Day)",
+        "yLabel": "Litres per Day",
+        "xAxis": [
+          "Showers",
+          "Toilets",
+          "Laundry",
+          "Kitchen",
+          "Gardening",
+          "Other"
+        ],
+        "series": [
+          {
+            "label": "Average Household",
+            "values": [
+              100,
+              80,
+              70,
+              50,
+              40,
+              20
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-056-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “The Imperative of Water Conservation”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "water conservation",
+      "modelAnswer": "The lecture highlighted that water scarcity is a significant global crisis affecting various sectors. It emphasized that conservation requires both large-scale systemic changes, such as industrial water recycling and drought-resistant agriculture, and individual efforts like fixing leaks and using efficient appliances. The speaker concluded by stressing the importance of collective action to manage and secure our precious water resources effectively for the future, mitigating the impact of over-extraction and pollution.",
+      "audioScript": "Water scarcity is a growing global crisis, impacting agriculture, industry, and human health. Over-extraction from rivers and aquifers, coupled with pollution, severely diminishes available freshwater. Conservation isn't just about turning off taps; it involves systemic changes like adopting drought-resistant crops, improving water recycling in industries, and developing smart urban water management. Individuals can contribute by fixing leaks, using efficient appliances, and practicing mindful consumption. Collective action is essential to secure water resources.",
+      "keyPoints": [
+        "Water scarcity is a global crisis.",
+        "Systemic changes and individual actions are needed.",
+        "Examples include efficient appliances and water recycling.",
+        "Collective action is essential for future water security."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-056-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Reducing Water Waste”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Saving water",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "water conservation",
+      "modelAnswer": "Saving water",
+      "audioScript": "What is the primary goal of turning off the tap while brushing teeth?"
+    },
+    {
+      "id": "pte-speaking-writing-056-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Global Water Challenges”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "water conservation",
+      "wordTarget": 75,
+      "modelAnswer": "Increasing global freshwater scarcity, driven by population growth and climate change, necessitates urgent sustainable management strategies like efficient irrigation and wastewater treatment to prevent future crises and geopolitical tensions.",
+      "readText": "Global freshwater resources are under unprecedented strain due to population growth, industrialization, and climate change. Many regions face chronic water shortages, impacting food security, economic development, and public health. Sustainable water management strategies are urgently needed, encompassing efficient irrigation, wastewater treatment, rainwater harvesting, and public awareness campaigns. Without concerted efforts to conserve and manage water wisely, future generations will face even more severe challenges, potentially leading to increased geopolitical tensions over this vital resource."
+    },
+    {
+      "id": "pte-speaking-writing-056-q07",
+      "questionType": "write_essay",
+      "prompt": "Some people think that having a career is more important than having a family. To what extent do you agree or disagree?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "water conservation",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Microbiomes and Human Health”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q08",
+      "modelAnswer": "The human microbiome, a complex community of microorganisms residing within and on our bodies, plays a pivotal role in health. These microbial ecosystems influence digestion, immune system development, and even mental well-being. Disruptions in the microbiome, often caused by diet or antibiotics, are linked to various diseases, including obesity, allergies, and autoimmune disorders. Understanding and modulating the microbiome offers promising avenues for novel therapeutic interventions and personalized medicine approaches.",
+      "readText": "The human microbiome, a complex community of microorganisms residing within and on our bodies, plays a pivotal role in health. These microbial ecosystems influence digestion, immune system development, and even mental well-being. Disruptions in the microbiome, often caused by diet or antibiotics, are linked to various diseases, including obesity, allergies, and autoimmune disorders. Understanding and modulating the microbiome offers promising avenues for novel therapeutic interventions and personalized medicine approaches."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Heritage Preservation”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q09",
+      "modelAnswer": "Cultural heritage preservation faces new frontiers in the digital age. Digitization offers unprecedented opportunities to document, archive, and disseminate cultural artifacts and traditions, making them accessible globally. However, it also introduces challenges such as data longevity, format obsolescence, and the authenticity of digital reproductions. Ensuring the long-term viability and integrity of digital heritage requires robust strategies for storage, migration, and ethical access, balancing innovation with traditional conservation principles.",
+      "readText": "Cultural heritage preservation faces new frontiers in the digital age. Digitization offers unprecedented opportunities to document, archive, and disseminate cultural artifacts and traditions, making them accessible globally. However, it also introduces challenges such as data longevity, format obsolescence, and the authenticity of digital reproductions. Ensuring the long-term viability and integrity of digital heritage requires robust strategies for storage, migration, and ethical access, balancing innovation with traditional conservation principles."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Neuroplasticity and Learning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q10",
+      "modelAnswer": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, underpins lifelong learning. This adaptability allows individuals to acquire new skills, recover from brain injuries, and adapt to changing environments. Engaging in novel experiences, continuous learning, and physical activity can enhance neuroplasticity, fostering cognitive resilience and improving overall brain health. Understanding this phenomenon is crucial for optimizing educational practices and therapeutic interventions for neurological conditions.",
+      "readText": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, underpins lifelong learning. This adaptability allows individuals to acquire new skills, recover from brain injuries, and adapt to changing environments. Engaging in novel experiences, continuous learning, and physical activity can enhance neuroplasticity, fostering cognitive resilience and improving overall brain health. Understanding this phenomenon is crucial for optimizing educational practices and therapeutic interventions for neurological conditions."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Biodiversity Loss Impacts”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q11",
+      "modelAnswer": "Biodiversity loss poses a severe threat to ecosystem services, which are the fundamental benefits nature provides to humanity. These services include clean air and water, pollination of crops, climate regulation, and nutrient cycling. The disappearance of species and habitats disrupts these intricate ecological processes, leading to reduced agricultural productivity, increased natural disasters, and diminished human well-being. Protecting biodiversity is therefore not merely an environmental concern but an economic and social imperative for sustainable development.",
+      "readText": "Biodiversity loss poses a severe threat to ecosystem services, which are the fundamental benefits nature provides to humanity. These services include clean air and water, pollination of crops, climate regulation, and nutrient cycling. The disappearance of species and habitats disrupts these intricate ecological processes, leading to reduced agricultural productivity, increased natural disasters, and diminished human well-being. Protecting biodiversity is therefore not merely an environmental concern but an economic and social imperative for sustainable development."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Privacy Concerns”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q12",
+      "modelAnswer": "Digital privacy and data sovereignty are increasingly critical issues in our interconnected world. As personal data is routinely collected, processed, and shared by various entities, concerns about surveillance, data breaches, and algorithmic bias grow. Individuals and nations are seeking greater control over their digital identities and information. Establishing robust legal frameworks, implementing strong encryption, and promoting ethical data practices are essential to safeguard individual rights and foster trust in the digital ecosystem.",
+      "readText": "Digital privacy and data sovereignty are increasingly critical issues in our interconnected world. As personal data is routinely collected, processed, and shared by various entities, concerns about surveillance, data breaches, and algorithmic bias grow. Individuals and nations are seeking greater control over their digital identities and information. Establishing robust legal frameworks, implementing strong encryption, and promoting ethical data practices are essential to safeguard individual rights and foster trust in the digital ecosystem."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Effective wildlife corridors are essential for maintaining genetic diversity across fragmented landscapes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Corridor Essentials”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q13",
+      "modelAnswer": "Effective wildlife corridors are essential for maintaining genetic diversity across fragmented landscapes.",
+      "audioScript": "Effective wildlife corridors are essential for maintaining genetic diversity across fragmented landscapes."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Consciousness and Philosophy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q14",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and awareness."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology raises significant questions regarding individual privacy and data security.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q15",
+      "modelAnswer": "Smart city technology raises significant questions regarding individual privacy and data security.",
+      "audioScript": "Smart city technology raises significant questions regarding individual privacy and data security."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation significantly impacts indigenous land rights and traditional ways of life.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation and Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q16",
+      "modelAnswer": "Deforestation significantly impacts indigenous land rights and traditional ways of life.",
+      "audioScript": "Deforestation significantly impacts indigenous land rights and traditional ways of life."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Social media profoundly influences modern communication and public discourse globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q17",
+      "modelAnswer": "Social media profoundly influences modern communication and public discourse globally.",
+      "audioScript": "Social media profoundly influences modern communication and public discourse globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration often leads to complex processes of cultural integration and adaptation.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Culture”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q18",
+      "modelAnswer": "International migration often leads to complex processes of cultural integration and adaptation.",
+      "audioScript": "International migration often leads to complex processes of cultural integration and adaptation."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation are transforming labor markets and global productivity.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Automation's Economics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q19",
+      "modelAnswer": "The economics of automation are transforming labor markets and global productivity.",
+      "audioScript": "The economics of automation are transforming labor markets and global productivity."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Investment in renewable energy infrastructure is crucial for combating climate change.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q20",
+      "modelAnswer": "Investment in renewable energy infrastructure is crucial for combating climate change.",
+      "audioScript": "Investment in renewable energy infrastructure is crucial for combating climate change."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Urban heat islands require innovative mitigation strategies to protect public health.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Heat Mitigation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q21",
+      "modelAnswer": "Urban heat islands require innovative mitigation strategies to protect public health.",
+      "audioScript": "Urban heat islands require innovative mitigation strategies to protect public health."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Population Growth Projections (Billions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q22",
+      "modelAnswer": "The line chart illustrates global population growth projections from 1950 to 2100. In 1950, the world population was approximately 2.5 billion, steadily increasing to 6.1 billion by 2000. A significant rise is projected, reaching 9.7 billion by 2050. The population is expected to peak around 10.9 billion by 2100, showing a slowdown in growth during the later part of the century. This consistent upward trend highlights substantial demographic changes over 150 years, with the steepest growth occurring between 1975 and 2050.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Population Growth Projections (Billions)",
+        "yLabel": "Population (Billions)",
+        "xAxis": [
+          "1950",
+          "1975",
+          "2000",
+          "2025",
+          "2050",
+          "2075",
+          "2100"
+        ],
+        "series": [
+          {
+            "label": "Total Population",
+            "values": [
+              2.5,
+              4.1,
+              6.1,
+              8,
+              9.7,
+              10.4,
+              10.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Top 5 Languages by Native Speakers Worldwide (Millions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q23",
+      "modelAnswer": "This bar chart illustrates the top five languages by native speakers worldwide. Mandarin Chinese is clearly the most spoken language, with an impressive 920 million native speakers. Spanish ranks second at 485 million, followed by English with 380 million. Hindi comes in fourth with 345 million, and Arabic rounds out the top five with 310 million native speakers. There's a significant difference between the top two languages, with Mandarin having almost double the native speakers of Spanish. The chart effectively highlights the global dominance of Mandarin Chinese in terms of native speakers.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Top 5 Languages by Native Speakers Worldwide (Millions)",
+        "yLabel": "Number of Native Speakers (Millions)",
+        "xAxis": [
+          "Mandarin Chinese",
+          "Spanish",
+          "English",
+          "Hindi",
+          "Arabic"
+        ],
+        "series": [
+          {
+            "label": "Native Speakers",
+            "values": [
+              920,
+              485,
+              380,
+              345,
+              310
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Ocean Surface pH (1850-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q24",
+      "modelAnswer": "This line graph illustrates the global average ocean surface pH levels from 1850 to 2020. The x-axis represents the years, while the y-axis shows the pH level. A clear downward trend is evident, indicating increasing ocean acidification over time. In 1850, the pH was approximately 8.20, steadily declining to 8.10 by 1970 and further dropping to 8.05 by 2020. This significant reduction highlights a concerning environmental change. The most substantial drop occurred between 1940 and 2020, emphasizing an accelerated rate of change in recent decades.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Ocean Surface pH (1850-2020)",
+        "yLabel": "pH Level",
+        "xAxis": [
+          "1850",
+          "1880",
+          "1910",
+          "1940",
+          "1970",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Ocean pH",
+            "values": [
+              8.2,
+              8.19,
+              8.17,
+              8.14,
+              8.1,
+              8.07,
+              8.05
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global Water Usage by Sector\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q25",
+      "modelAnswer": "This pie chart illustrates global water usage across different sectors. The most striking feature is that agriculture consumes the vast majority of water, accounting for a significant 70%. Following this, the industrial sector uses 20% of the world's water resources. Finally, domestic use, which includes household and municipal consumption, represents the smallest share at just 10%. This clearly indicates that agricultural practices are the dominant factor in global water demand, far outweighing industrial and domestic needs combined.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global Water Usage by Sector",
+        "slices": [
+          {
+            "label": "Agriculture",
+            "value": 70
+          },
+          {
+            "label": "Industry",
+            "value": 20
+          },
+          {
+            "label": "Domestic",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Water Cycle: Evapotranspiration Contributions\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q26",
+      "modelAnswer": "This line chart illustrates the global water cycle, specifically highlighting evapotranspiration contributions. The largest volume by far is Ocean Evaporation at 505,000 cubic kilometers per year. Land Evaporation contributes 71,000 and Transpiration adds 49,000 km³, totaling 120,000 km³ for land-based evapotranspiration. Precipitation over oceans is 458,000 km³, while land receives 118,000 km³. Runoff from land to oceans is the lowest at 47,000 km³ per year. This demonstrates the immense scale of oceanic processes compared to terrestrial ones in the global water budget.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Water Cycle: Evapotranspiration Contributions",
+        "yLabel": "Volume (km³ per year)",
+        "xAxis": [
+          "Ocean Evaporation",
+          "Land Evaporation",
+          "Transpiration",
+          "Runoff",
+          "Precipitation (Land)",
+          "Precipitation (Ocean)"
+        ],
+        "series": [
+          {
+            "label": "Water Volume",
+            "values": [
+              505000,
+              71000,
+              49000,
+              47000,
+              118000,
+              458000
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Effective Communication Strategies”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q27",
+      "modelAnswer": "The lecture emphasized that effective communication is crucial for both personal and professional achievements. It highlighted that communication goes beyond just clear speaking, encompassing active listening, interpreting non-verbal cues, and audience adaptation. The speaker noted that cultural differences and poor message encoding/decoding often lead to misunderstandings. To enhance communication, developing empathy and practicing reflective listening were suggested as key strategies for building stronger relationships and avoiding conflicts, especially with evolving technological channels.",
+      "audioScript": "Effective communication is fundamental to personal and professional success. It's not merely about speaking clearly, but also about active listening, understanding non-verbal cues, and tailoring your message to your audience. Misunderstandings often arise from poor encoding or decoding of messages, and cultural differences can further complicate the process. Developing empathy and practicing reflective listening can significantly improve communication effectiveness, fostering stronger relationships and preventing conflicts. Technology has introduced new communication channels, each with its own nuances and best practices.",
+      "keyPoints": [
+        "Communication is vital for success.",
+        "It involves active listening and non-verbal cues.",
+        "Misunderstandings stem from poor encoding/decoding.",
+        "Empathy and reflective listening improve effectiveness."
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “The Evolution of Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q28",
+      "modelAnswer": "The lecture discussed the significant evolution of human communication, starting from ancient methods like cave paintings to today's intricate digital networks. It highlighted how each major technological leap, such as the printing press and the internet, fundamentally changed information exchange and community formation. The speaker also pointed out that while digital platforms provide immense connectivity, they introduce new problems like information overload and misinformation. Understanding this historical progression is crucial for analyzing the impact of contemporary communication on society.",
+      "audioScript": "Human communication has evolved dramatically, from early cave paintings and oral traditions to the complex digital networks of today. Each technological advancement, from the printing press to the internet, has reshaped how we share information, form communities, and perceive the world. While digital platforms offer unprecedented connectivity, they also introduce challenges like information overload, echo chambers, and the spread of misinformation. Understanding this evolution helps us critically evaluate modern communication landscapes and their societal impacts.",
+      "keyPoints": [
+        "Communication evolved from ancient to digital.",
+        "Technology reshaped information sharing and community.",
+        "Digital platforms bring connectivity and challenges.",
+        "Understanding evolution helps evaluate modern impacts."
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "To transmit a message",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Basics”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q29",
+      "modelAnswer": "To transmit a message",
+      "audioScript": "What is the primary purpose of a sender in communication?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Non-verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Channels”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q30",
+      "modelAnswer": "Non-verbal",
+      "audioScript": "What is the term for communication without words, such as gestures?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Noise",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Elements of Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q31",
+      "modelAnswer": "Noise",
+      "audioScript": "What is the term for interference that distorts a message?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Feedback",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Feedback”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-056-q32",
+      "modelAnswer": "Feedback",
+      "audioScript": "What does a receiver provide after understanding a message?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Economy and Environment”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-056-q33",
+      "modelAnswer": "While economic growth historically degraded the environment, sustainable development integrating green technology and circular economy models can decouple prosperity from ecological harm, requiring political will and behavioral changes for long-term planetary health.",
+      "readText": "The relationship between economic growth and environmental sustainability is complex and often contentious. Historically, economic expansion has frequently come at the cost of natural resource depletion and pollution. However, a growing consensus suggests that sustainable development, which integrates environmental protection with economic progress, is not only possible but necessary. Innovations in green technology, circular economy models, and stricter environmental regulations can decouple growth from adverse ecological impacts, leading to long-term prosperity without compromising planetary health. This paradigm shift requires political will, international cooperation, and a fundamental change in consumer behavior and industrial practices."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "In many modern workplaces, employers monitor employees' internet usage, emails, and even phone calls. Discuss the ethical implications of such surveillance and argue to what extent you agree or disagree with this practice.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-056-q34",
+      "modelAnswer": "The increasing prevalence of workplace surveillance, encompassing internet usage, emails, and phone calls, raises significant ethical dilemmas concerning employee privacy versus employer security and productivity. While employers often justify these measures as necessary for preventing data breaches, ensuring compliance, and optimizing performance, the intrusion into an individual's digital life warrants critical examination.\n\nFrom an ethical standpoint, constant monitoring can erode trust, foster a culture of suspicion, and negatively impact employee morale and autonomy. Employees often feel their privacy is violated, leading to increased stress and a perception of being undervalued. Furthermore, such surveillance blurs the lines between professional and personal life, especially in an era where work-from-home models are common. The potential for misuse of personal information, even if inadvertently collected, is also a serious concern, raising questions about data security and individual rights.\n\nHowever, it is equally important to acknowledge the legitimate interests of employers. Businesses have a responsibility to protect sensitive company data, prevent industrial espionage, and ensure that employees are not engaging in activities that could harm the company's reputation or bottom line. In certain regulated industries, surveillance might even be a legal requirement to ensure compliance with specific standards or laws. Striking a balance is key; clear, transparent policies regarding surveillance, along with a focus on monitoring for specific, legitimate reasons rather than blanket oversight, could mitigate some ethical concerns.\n\nIn conclusion, while I understand the security and productivity motivations behind employer surveillance, I largely disagree with its extensive application without clear boundaries. A more ethical approach would involve establishing explicit, communicated policies, focusing on targeted monitoring when necessary, and prioritizing employee trust and well-being. The long-term benefits of a trusting and autonomous workforce often outweigh the perceived short-term gains of intrusive surveillance."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Rapid advancements in communication technology have transformed how people interact, access information, and form communities. Discuss the positive and negative impacts of these changes on modern society. Give reasons and relevant examples.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-056-q35",
+      "modelAnswer": "The relentless march of communication technology, from smartphones to social media platforms, has undeniably reshaped the fabric of modern society. These advancements have brought about profound changes in human interaction, information dissemination, and the formation of communities, presenting both significant advantages and notable drawbacks.\n\nOn the positive side, technological advancements have democratized access to information on an unprecedented scale. Knowledge is no longer confined to libraries or academic institutions; it is instantly available to billions, fostering education and informed citizenry. Furthermore, global connectivity has facilitated stronger social ties, allowing individuals to maintain relationships across vast distances and form communities based on shared interests rather than geographical proximity. This has been particularly beneficial for marginalized groups who can find support and solidarity online. Businesses have also thrived, leveraging these tools for global collaboration and market reach, accelerating innovation and economic growth.\n\nConversely, the negative impacts are equally pronounced. The sheer volume of information often leads to information overload and the spread of misinformation, as distinguishing credible sources from false ones becomes increasingly challenging. Social media, while connecting people, has also been implicated in fostering echo chambers, where individuals are only exposed to views that reinforce their own, leading to polarization and decreased empathy. Moreover, the constant digital connectivity can contribute to mental health issues, such as anxiety and loneliness, despite being 'connected.' The erosion of face-to-face communication skills and the rise of cyberbullying are further concerning consequences.\n\nIn conclusion, while modern communication technology offers unparalleled opportunities for connection and information access, its transformative power comes with a dual edge. Societies must actively navigate the challenges of misinformation, digital isolation, and the erosion of traditional communication, while simultaneously harnessing the immense potential for education, global collaboration, and community building that these technologies afford."
+    }
+  ]
+}

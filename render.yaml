@@ -1,0 +1,31 @@
+# LandingPrep — Render Blueprint for the Node backend (AI tutor proxy + live data).
+# In Render: New → Blueprint → connect your GitHub repo → it reads this file.
+# After it deploys, add the SECRET env vars (GEMINI_API_KEY, AUTH_SECRET) in the
+# Render dashboard (they are marked sync:false so they are NOT stored in git).
+services:
+  - type: web
+    name: landingprep-api
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: FRONTEND_ORIGIN
+        value: https://landingprep.com
+      - key: GEMINI_API_KEY
+        sync: false        # paste your Gemini key in the Render dashboard
+      - key: AUTH_SECRET
+        sync: false        # any long random string (for login tokens)
+      - key: SMTP_PASS
+        sync: false        # your support@landingprep.com mailbox password (for emails)
+      - key: SMTP_USER
+        value: support@landingprep.com
+      - key: SMTP_HOST
+        value: smtp.hostinger.com
+      - key: SMTP_PORT
+        value: "465"

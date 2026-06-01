@@ -1,0 +1,68 @@
+{
+  "id": "duolingo-conversation-008",
+  "exam": "duolingo",
+  "section": "conversation",
+  "type": "section",
+  "title": "Duolingo English Test Conversation Practice Test 8",
+  "durationSeconds": 900,
+  "questionCount": 3,
+  "instructions": "Record responses and review using the rubric.",
+  "questions": [
+    {
+      "id": "duolingo-conversation-008-q01",
+      "questionType": "speaking_task",
+      "prompt": "[1] Talk about your personal experience with public health campaigns.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "public health campaigns",
+      "fingerprint": "987ebe731fb724d838"
+    },
+    {
+      "id": "duolingo-conversation-008-q02",
+      "questionType": "speaking_task",
+      "prompt": "[2] Describe a situation where public health campaigns affected a school, workplace, or community.",
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "public health campaigns",
+      "fingerprint": "a290b4bb973d9532e8"
+    },
+    {
+      "id": "duolingo-conversation-008-q03",
+      "questionType": "speaking_task",
+      "prompt": "[3] Discuss whether public health campaigns will become more important in the future.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "public health campaigns",
+      "fingerprint": "9b5afaa458d06f6abd"
+    }
+  ],
+  "fingerprints": [
+    "987ebe731fb724d838",
+    "a290b4bb973d9532e8",
+    "9b5afaa458d06f6abd"
+  ]
+}

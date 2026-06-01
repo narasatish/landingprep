@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-024",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 24",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-024-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You signed up for a fitness class at a local gym but after attending twice, you realise the class is not at all as it was described in the brochure. The instructor also frequently arrives late.",
+      "recipient": "the gym manager",
+      "bulletPoints": [
+        "Describe the class as advertised and how it differs from what is being delivered",
+        "Mention the punctuality issue",
+        "Request a transfer to a different class or a refund"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "A library in your neighbourhood is at risk of closing due to lack of funding. Write a letter to the local government expressing your concern, explaining the library's importance to the community, and suggesting ways to save it.",
+      "modelAnswer": "Dear Gym Manager,\n\nI am writing to express my disappointment with the \"High-Intensity Interval Training\" class that I signed up for last month, which meets on Tuesdays and Thursdays at 6:00 PM. I have attended two sessions, and unfortunately, the class is not at all as described in your brochure.\n\nThe advertisement promoted a dynamic, challenging workout focusing on short bursts of intense exercise followed by brief recovery periods. However, the class I experienced was predominantly low-impact cardio with extended rest periods, featuring very few of the high-intensity intervals I expected. This is a significant deviation from what was promised.\n\nFurthermore, I must also bring to your attention that the instructor has been late to both sessions I attended, delaying the start of the class by 5-10 minutes each time. This lack of punctuality is unprofessional and further detracts from the overall experience.\n\nGiven these issues, I would like to request either a transfer to a different, more appropriately advertised fitness class or a full refund for the remaining sessions. Please let me know what options are available.\n\nThank you for your time and consideration.\n\nSincerely,\n\n[Your Name]"
+    },
+    {
+      "id": "celpip-writing-024-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your local council is considering two approaches to managing increasing numbers of tourists in popular natural areas. Which do you prefer?",
+      "optionA": "Introduce a visitor cap and booking system to limit daily entries to protected areas",
+      "optionB": "Invest in new infrastructure to support more visitors without damaging the environment",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A regional tourism board is gathering input on how to attract visitors to your area. Describe what you think makes your region unique, what attractions or events could draw visitors, and what improvements are needed to support tourism.",
+      "modelAnswer": "I strongly advocate for Option A: introducing a visitor cap and booking system to limit daily entries to protected natural areas. This approach offers a more sustainable and immediately effective solution for preserving our invaluable natural heritage.\n\nFirstly, a cap directly addresses the core problem of overcrowding, which leads to trail erosion, wildlife disturbance, and an diminished visitor experience. By limiting numbers, we can ensure the ecological integrity of these sensitive ecosystems, allowing flora and fauna to thrive undisturbed. For instance, popular hiking trails often suffer from compaction and widening, issues a cap would mitigate significantly.\n\nSecondly, a booking system fosters a sense of responsibility and planning among visitors, potentially reducing last-minute surges and ensuring a more controlled flow of people throughout the day. This also allows for better resource allocation by park staff.\n\nWhile Option B, investing in new infrastructure, seems appealing, it often entails further environmental disruption during construction and risks simply accommodating, rather than solving, the problem of over-tourism. New infrastructure might temporarily expand capacity, but the fundamental ecological limits of a natural area remain, and eventually, even expanded facilities will be overwhelmed if visitor numbers continue to rise unchecked. A cap, conversely, respects these inherent limits from the outset."
+    }
+  ]
+}

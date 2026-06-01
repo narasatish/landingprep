@@ -1,0 +1,623 @@
+{
+  "id": "gre-verbal-011",
+  "exam": "gre",
+  "section": "verbal",
+  "type": "section",
+  "title": "GRE Verbal Practice Test 11",
+  "durationSeconds": 2460,
+  "questionCount": 27,
+  "instructions": "Text Completion: select the best word(s) for each blank. Sentence Equivalence: select two answers that produce sentences alike in meaning. Reading Comprehension: answer questions based on the passage.",
+  "questions": [
+    {
+      "id": "gre-verbal-011-q01",
+      "questionType": "text_completion_3blank",
+      "topic": "globalisation",
+      "prompt": "Today, rapid communication and shared commerce have made the world far smaller, and distant nations have become our ____ neighbours. The mingling of cultures is producing an ____ of ideas, and we are gradually ____ that cooperation is more productive than conflict.",
+      "blanks": [
+        {
+          "label": "Blank 1",
+          "opts": [
+            "next-door",
+            "distant",
+            "imaginary"
+          ],
+          "a": "next-door"
+        },
+        {
+          "label": "Blank 2",
+          "opts": [
+            "amalgamation",
+            "ambiguity",
+            "dispersal"
+          ],
+          "a": "amalgamation"
+        },
+        {
+          "label": "Blank 3",
+          "opts": [
+            "realising",
+            "forgetting",
+            "denying"
+          ],
+          "a": "realising"
+        }
+      ],
+      "difficulty": "hard",
+      "questionNumber": 1,
+      "correctAnswer": [
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    {
+      "id": "gre-verbal-011-q02",
+      "questionType": "text_completion",
+      "topic": "literature",
+      "prompt": "The biographer's portrait of the poet was surprisingly ____; rather than celebrating her subject, she catalogued every personal failing and professional misstep.",
+      "options": [
+        "hagiographic",
+        "effusive",
+        "acerbic",
+        "laudatory",
+        "effervescent"
+      ],
+      "correctAnswer": "acerbic",
+      "explanation": "Acerbic = sharp and forthright, often critical.",
+      "difficulty": "medium",
+      "questionNumber": 2
+    },
+    {
+      "id": "gre-verbal-011-q03",
+      "questionType": "text_completion_2blank",
+      "topic": "psychology",
+      "prompt": "The committee praised the proposal's ambition, yet its final report was surprisingly ____ about the budget projections and deeply ____ regarding the timeline for implementation.",
+      "blanks": [
+        {
+          "label": "Blank 1",
+          "opts": [
+            "sanguine",
+            "reserved",
+            "celebratory"
+          ],
+          "a": "reserved",
+          "e": "Reserved = cautious about expressing enthusiasm."
+        },
+        {
+          "label": "Blank 2",
+          "opts": [
+            "sceptical",
+            "credulous",
+            "indifferent"
+          ],
+          "a": "sceptical",
+          "e": "Sceptical = not easily convinced."
+        }
+      ],
+      "difficulty": "medium",
+      "questionNumber": 3,
+      "correctAnswer": [
+        "A",
+        "A"
+      ]
+    },
+    {
+      "id": "gre-verbal-011-q04",
+      "questionType": "text_completion_3blank",
+      "topic": "observation",
+      "prompt": "Attracted by the stillness of the afternoon, a colleague and I recently walked to one of the paths near the river. Here we ____ together for some time before my companion stopped suddenly, caught me ____, and led me away from the main path. I could tell by her rapid ____ and by her frequent glances behind us that she was trying to avoid someone who was following.",
+      "blanks": [
+        {
+          "label": "Blank 1",
+          "opts": [
+            "sauntered",
+            "charged",
+            "disappeared"
+          ],
+          "a": "sauntered"
+        },
+        {
+          "label": "Blank 2",
+          "opts": [
+            "by the arm",
+            "off guard",
+            "in disbelief"
+          ],
+          "a": "by the arm"
+        },
+        {
+          "label": "Blank 3",
+          "opts": [
+            "breathing",
+            "reasoning",
+            "footsteps"
+          ],
+          "a": "footsteps"
+        }
+      ],
+      "difficulty": "hard",
+      "questionNumber": 4,
+      "correctAnswer": [
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    {
+      "id": "gre-verbal-011-q05",
+      "questionType": "text_completion",
+      "topic": "rhetoric",
+      "prompt": "The professor's lecture, though praised for its breadth, struck many students as oddly ____, touching on each topic just long enough to confirm how much remained unexplored.",
+      "options": [
+        "exhaustive",
+        "desultory",
+        "cogent",
+        "pedantic",
+        "incisive"
+      ],
+      "correctAnswer": "desultory",
+      "explanation": "Desultory = lacking a plan or purpose, going from topic to topic without clear direction.",
+      "difficulty": "medium",
+      "questionNumber": 5
+    },
+    {
+      "id": "gre-verbal-011-q06",
+      "questionType": "text_completion",
+      "topic": "economics",
+      "prompt": "Investors initially viewed the merger as ____; only later did the strategic advantages become apparent.",
+      "options": [
+        "prescient",
+        "reckless",
+        "fortuitous",
+        "inimical",
+        "superfluous"
+      ],
+      "correctAnswer": "reckless",
+      "explanation": "Reckless fits the pattern of initial negative perception reversed by later evidence.",
+      "difficulty": "medium",
+      "questionNumber": 6
+    },
+    {
+      "id": "gre-verbal-011-q07",
+      "questionType": "sentence_equivalence",
+      "topic": "physics",
+      "prompt": "The pressure felt by a diver keeps ____ with every additional metre of descent below the surface.",
+      "options": [
+        "Diminishing",
+        "Escalating",
+        "Mounting",
+        "Stabilising",
+        "Fluctuating",
+        "Tapering"
+      ],
+      "correctAnswer": [
+        "Escalating",
+        "Mounting"
+      ],
+      "explanation": "Both mean increasing progressively.",
+      "difficulty": "medium",
+      "questionNumber": 7
+    },
+    {
+      "id": "gre-verbal-011-q08",
+      "questionType": "sentence_equivalence",
+      "topic": "ecology",
+      "prompt": "With no plant material available in the deepest zones, there exists a constant ____ among deep-sea creatures for limited food resources.",
+      "options": [
+        "Truce",
+        "Competition",
+        "Rivalry",
+        "Cooperation",
+        "Expedition",
+        "Pursuit"
+      ],
+      "correctAnswer": [
+        "Competition",
+        "Rivalry"
+      ],
+      "explanation": "Both imply a struggle for the same resources.",
+      "difficulty": "medium",
+      "questionNumber": 8
+    },
+    {
+      "id": "gre-verbal-011-q13",
+      "questionType": "reading_comprehension",
+      "topic": "history_of_science",
+      "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
+      "prompt": "What claim do historians of science increasingly question?",
+      "options": [
+        "That Ibn al-Haytham existed",
+        "That the seventeenth century introduced a complete break from prior knowledge",
+        "That Galileo used mathematics",
+        "That peer review is effective"
+      ],
+      "correctAnswer": "That the seventeenth century introduced a complete break from prior knowledge",
+      "explanation": "The passage says historians question whether the narrative of rupture from prior knowledge is accurate.",
+      "difficulty": "hard",
+      "questionNumber": 9
+    },
+    {
+      "id": "gre-verbal-011-q14",
+      "questionType": "reading_comprehension",
+      "topic": "history_of_science",
+      "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
+      "prompt": "According to the passage, what was genuinely new about the seventeenth century scientific revolution?",
+      "options": [
+        "Mathematical techniques",
+        "Astronomical observations",
+        "Social and institutional infrastructure for validating knowledge",
+        "The concept of empiricism"
+      ],
+      "correctAnswer": "Social and institutional infrastructure for validating knowledge",
+      "explanation": "The passage states the seventeenth century introduced learned societies, journals, and peer criticism — not the knowledge itself.",
+      "difficulty": "hard",
+      "questionNumber": 10
+    },
+    {
+      "id": "gre-verbal-011-q15",
+      "questionType": "reading_comprehension",
+      "topic": "history_of_science",
+      "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
+      "prompt": "The passage suggests that popular accounts of science tend to:",
+      "options": [
+        "Overemphasise institutional factors",
+        "Undervalue Islamic scholarship",
+        "Focus excessively on individual genius",
+        "Ignore astronomical discoveries"
+      ],
+      "correctAnswer": "Focus excessively on individual genius",
+      "explanation": "The passage explicitly criticises popular history for treating Newton as originator rather than synthesiser, ignoring collaborative nature.",
+      "difficulty": "hard",
+      "questionNumber": 11
+    },
+    {
+      "id": "gre-verbal-011-q16",
+      "questionType": "reading_comprehension",
+      "topic": "history_of_science",
+      "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
+      "prompt": "The word 'effaces' as used in the final sentence most nearly means:",
+      "options": [
+        "Celebrates",
+        "Erases",
+        "Complicates",
+        "Exaggerates"
+      ],
+      "correctAnswer": "Erases",
+      "explanation": "Effaces = wipes out or obscures — popular history erases the collaborative nature by focusing on individual geniuses.",
+      "difficulty": "hard",
+      "questionNumber": 12
+    },
+    {
+      "id": "gre-verbal-011-q17",
+      "questionType": "reading_comprehension",
+      "topic": "sociology",
+      "passage": "Urbanisation has accelerated globally at a pace that has outstripped the capacity of many city governments to provide basic services. In sub-Saharan Africa, it is estimated that more than 60 percent of urban residents live in informal settlements — areas characterised by inadequate sanitation, insecure land tenure, and limited access to clean water. The conventional policy response has been slum clearance and relocation, moving residents to formal housing developments on the urban periphery.\n\nCritics argue that this approach consistently fails because it disregards the economic and social networks that informal settlements generate. Street vendors, repair workshops, childcare cooperatives, and informal credit systems create dense webs of mutual support that are not replicated in the standardised housing blocks to which residents are relocated. When communities are broken up by relocation, the social capital that sustained individual households is destroyed along with the physical structures.\n\nAn alternative approach — in-situ upgrading — involves improving services and tenure security within existing settlements rather than demolishing them. Studies from Brazil, India, and South Africa suggest that in-situ upgrading produces better health outcomes, stronger economic integration, and higher rates of resident satisfaction than relocation programmes.",
+      "prompt": "What is the main criticism of slum clearance as a policy approach?",
+      "options": [
+        "It is too expensive",
+        "It ignores the social and economic networks informal settlements create",
+        "It relocates residents too far from city centres",
+        "It requires international funding"
+      ],
+      "correctAnswer": "It ignores the social and economic networks informal settlements create",
+      "explanation": "The passage says clearance disregards economic and social networks that informal settlements generate.",
+      "difficulty": "hard",
+      "questionNumber": 13
+    },
+    {
+      "id": "gre-verbal-011-q18",
+      "questionType": "reading_comprehension",
+      "topic": "sociology",
+      "passage": "Urbanisation has accelerated globally at a pace that has outstripped the capacity of many city governments to provide basic services. In sub-Saharan Africa, it is estimated that more than 60 percent of urban residents live in informal settlements — areas characterised by inadequate sanitation, insecure land tenure, and limited access to clean water. The conventional policy response has been slum clearance and relocation, moving residents to formal housing developments on the urban periphery.\n\nCritics argue that this approach consistently fails because it disregards the economic and social networks that informal settlements generate. Street vendors, repair workshops, childcare cooperatives, and informal credit systems create dense webs of mutual support that are not replicated in the standardised housing blocks to which residents are relocated. When communities are broken up by relocation, the social capital that sustained individual households is destroyed along with the physical structures.\n\nAn alternative approach — in-situ upgrading — involves improving services and tenure security within existing settlements rather than demolishing them. Studies from Brazil, India, and South Africa suggest that in-situ upgrading produces better health outcomes, stronger economic integration, and higher rates of resident satisfaction than relocation programmes.",
+      "prompt": "According to the passage, what is 'social capital' in this context?",
+      "options": [
+        "Financial savings held in community banks",
+        "The collective networks and relationships that support individuals",
+        "Government funding allocated to social services",
+        "Educational qualifications of urban residents"
+      ],
+      "correctAnswer": "The collective networks and relationships that support individuals",
+      "explanation": "The passage describes social capital as the web of mutual support — networks, cooperatives, informal credit — that sustains households.",
+      "difficulty": "hard",
+      "questionNumber": 14
+    },
+    {
+      "id": "gre-verbal-011-q19",
+      "questionType": "reading_comprehension",
+      "topic": "sociology",
+      "passage": "Urbanisation has accelerated globally at a pace that has outstripped the capacity of many city governments to provide basic services. In sub-Saharan Africa, it is estimated that more than 60 percent of urban residents live in informal settlements — areas characterised by inadequate sanitation, insecure land tenure, and limited access to clean water. The conventional policy response has been slum clearance and relocation, moving residents to formal housing developments on the urban periphery.\n\nCritics argue that this approach consistently fails because it disregards the economic and social networks that informal settlements generate. Street vendors, repair workshops, childcare cooperatives, and informal credit systems create dense webs of mutual support that are not replicated in the standardised housing blocks to which residents are relocated. When communities are broken up by relocation, the social capital that sustained individual households is destroyed along with the physical structures.\n\nAn alternative approach — in-situ upgrading — involves improving services and tenure security within existing settlements rather than demolishing them. Studies from Brazil, India, and South Africa suggest that in-situ upgrading produces better health outcomes, stronger economic integration, and higher rates of resident satisfaction than relocation programmes.",
+      "prompt": "What does 'in-situ upgrading' involve?",
+      "options": [
+        "Demolishing informal settlements and building modern housing",
+        "Improving services within existing settlements",
+        "Relocating residents to peripheral areas",
+        "Privatising urban land"
+      ],
+      "correctAnswer": "Improving services within existing settlements",
+      "explanation": "The passage defines in-situ upgrading as improving services and tenure security within existing settlements rather than demolishing them.",
+      "difficulty": "hard",
+      "questionNumber": 15
+    },
+    {
+      "id": "gre-verbal-011-q20",
+      "questionType": "reading_comprehension",
+      "topic": "sociology",
+      "passage": "Urbanisation has accelerated globally at a pace that has outstripped the capacity of many city governments to provide basic services. In sub-Saharan Africa, it is estimated that more than 60 percent of urban residents live in informal settlements — areas characterised by inadequate sanitation, insecure land tenure, and limited access to clean water. The conventional policy response has been slum clearance and relocation, moving residents to formal housing developments on the urban periphery.\n\nCritics argue that this approach consistently fails because it disregards the economic and social networks that informal settlements generate. Street vendors, repair workshops, childcare cooperatives, and informal credit systems create dense webs of mutual support that are not replicated in the standardised housing blocks to which residents are relocated. When communities are broken up by relocation, the social capital that sustained individual households is destroyed along with the physical structures.\n\nAn alternative approach — in-situ upgrading — involves improving services and tenure security within existing settlements rather than demolishing them. Studies from Brazil, India, and South Africa suggest that in-situ upgrading produces better health outcomes, stronger economic integration, and higher rates of resident satisfaction than relocation programmes.",
+      "prompt": "Which of the following can be inferred from the passage?",
+      "options": [
+        "Urbanisation is slowing in sub-Saharan Africa",
+        "Relocation programmes have been universally abandoned",
+        "In-situ upgrading has been studied in multiple countries",
+        "Informal settlements lack any economic activity"
+      ],
+      "correctAnswer": "In-situ upgrading has been studied in multiple countries",
+      "explanation": "The passage explicitly mentions studies from Brazil, India, and South Africa.",
+      "difficulty": "hard",
+      "questionNumber": 16
+    },
+    {
+      "questionType": "sentence_equivalence",
+      "prompt": "The professor's lecture was so __________ that even students who had struggled with the material all semester found themselves able to follow the argument.",
+      "options": [
+        "abstruse",
+        "lucid",
+        "pellucid",
+        "arcane",
+        "recondite",
+        "opaque"
+      ],
+      "correctAnswer": [
+        "B",
+        "C"
+      ],
+      "explanation": "'Lucid' and 'pellucid' both mean clear and easy to understand, fitting the context.",
+      "difficulty": "medium",
+      "id": "gre-verbal-011-q017",
+      "questionNumber": 17,
+      "section": "verbal"
+    },
+    {
+      "questionType": "sentence_equivalence",
+      "prompt": "The diplomat's carefully __________ remarks left the other delegation uncertain about her nation's true position.",
+      "options": [
+        "blunt",
+        "hedged",
+        "forthright",
+        "equivocal",
+        "candid",
+        "evasive"
+      ],
+      "correctAnswer": [
+        "B",
+        "D"
+      ],
+      "explanation": "'Hedged' and 'equivocal' both suggest deliberate ambiguity.",
+      "difficulty": "hard",
+      "id": "gre-verbal-011-q018",
+      "questionNumber": 18,
+      "section": "verbal"
+    },
+    {
+      "questionType": "sentence_equivalence",
+      "prompt": "The findings of the study, while provocative, were ultimately __________ by the small sample size and lack of control groups.",
+      "options": [
+        "bolstered",
+        "corroborated",
+        "undermined",
+        "vitiated",
+        "confirmed",
+        "substantiated"
+      ],
+      "correctAnswer": [
+        "C",
+        "D"
+      ],
+      "explanation": "'Undermined' and 'vitiated' both mean weakened or invalidated.",
+      "difficulty": "hard",
+      "id": "gre-verbal-011-q019",
+      "questionNumber": 19,
+      "section": "verbal"
+    },
+    {
+      "questionType": "text_completion",
+      "prompt": "The novel's narrative structure, which alternates between three distinct timelines, initially __________ readers, but those who persist are rewarded with a coherent and emotionally resonant whole.",
+      "options": [
+        [
+          "disorients",
+          "captivates",
+          "enlightens"
+        ],
+        [
+          "trivial",
+          "unconventional",
+          "coherent"
+        ],
+        [
+          "unreliable",
+          "compelling",
+          "straightforward"
+        ]
+      ],
+      "blanks": 1,
+      "correctAnswer": [
+        "A"
+      ],
+      "explanation": "The structure that later becomes coherent but is rewarding to persist through would initially disorient readers.",
+      "difficulty": "medium",
+      "id": "gre-verbal-011-q020",
+      "questionNumber": 20,
+      "section": "verbal"
+    },
+    {
+      "questionType": "text_completion",
+      "prompt": "Although the committee's mandate was to examine policy __________, its report was widely criticised for being too __________ to provide useful guidance.",
+      "options": [
+        [
+          "failures",
+          "successes",
+          "innovations"
+        ],
+        [
+          "specific",
+          "vague",
+          "harsh"
+        ]
+      ],
+      "blanks": 2,
+      "correctAnswer": [
+        "A",
+        "B"
+      ],
+      "explanation": "Examining failures but producing a vague report creates the contrast implied by 'although'.",
+      "difficulty": "hard",
+      "id": "gre-verbal-011-q021",
+      "questionNumber": 21,
+      "section": "verbal"
+    },
+    {
+      "questionType": "reading_comprehension",
+      "prompt": "The passage suggests that the author's primary concern with the new regulatory framework is its:",
+      "passageText": "The recently enacted regulatory framework governing artificial intelligence applications in healthcare has been praised for its ambition. Proponents argue that it establishes clear liability standards and mandates transparency in algorithmic decision-making. Critics, however, contend that the framework's implementation timeline — requiring full compliance within six months — is not calibrated to the realities of hospital IT infrastructure, many of which require multi-year upgrade cycles. The result, they argue, will be nominal compliance on paper but persistent non-compliance in practice.",
+      "options": [
+        "A. philosophical opposition to regulatory intervention",
+        "B. unrealistic timeline relative to institutional capabilities",
+        "C. failure to address liability standards",
+        "D. excessive focus on algorithmic transparency"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The passage explicitly focuses on the criticism that the timeline is misaligned with hospital IT upgrade realities.",
+      "difficulty": "medium",
+      "id": "gre-verbal-011-q022",
+      "questionNumber": 22,
+      "section": "verbal"
+    },
+    {
+      "questionType": "reading_comprehension",
+      "prompt": "The author implies that a paradox exists in the relationship between:",
+      "passageText": "Economic growth, long considered the primary engine of poverty reduction, may have reached a point of diminishing returns in highly unequal societies. While aggregate GDP figures continue to rise, an increasing share of gains accrues to the wealthiest deciles, leaving median living standards stagnant. Some economists argue that this dynamic is self-reinforcing: concentrated wealth enables disproportionate political influence, which in turn shapes policy in ways that further entrench inequality. Growth, in this view, has become not merely insufficient but actively counterproductive for broad-based welfare.",
+      "options": [
+        "A. GDP growth and political stability",
+        "B. economic expansion and widespread welfare improvement",
+        "C. income inequality and political representation",
+        "D. poverty reduction policies and median income growth"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The paradox is that economic growth (usually expected to reduce poverty) may now be counterproductive for broad welfare.",
+      "difficulty": "hard",
+      "id": "gre-verbal-011-q023",
+      "questionNumber": 23,
+      "section": "verbal"
+    },
+    {
+      "questionType": "sentence_equivalence",
+      "prompt": "[V11-Q24] The professor's lecture was so __________ that even students who had struggled with the material all semester found themselves able to follow the argument.",
+      "options": [
+        "abstruse",
+        "lucid",
+        "pellucid",
+        "arcane",
+        "recondite",
+        "opaque"
+      ],
+      "correctAnswer": [
+        "B",
+        "C"
+      ],
+      "explanation": "'Lucid' and 'pellucid' both mean clear and easy to understand, fitting the context.",
+      "difficulty": "medium",
+      "id": "gre-verbal-011-q024",
+      "questionNumber": 24,
+      "section": "verbal"
+    },
+    {
+      "questionType": "sentence_equivalence",
+      "prompt": "[V11-Q25] The diplomat's carefully __________ remarks left the other delegation uncertain about her nation's true position.",
+      "options": [
+        "blunt",
+        "hedged",
+        "forthright",
+        "equivocal",
+        "candid",
+        "evasive"
+      ],
+      "correctAnswer": [
+        "B",
+        "D"
+      ],
+      "explanation": "'Hedged' and 'equivocal' both suggest deliberate ambiguity.",
+      "difficulty": "hard",
+      "id": "gre-verbal-011-q025",
+      "questionNumber": 25,
+      "section": "verbal"
+    },
+    {
+      "questionType": "sentence_equivalence",
+      "prompt": "[V11-Q26] The findings of the study, while provocative, were ultimately __________ by the small sample size and lack of control groups.",
+      "options": [
+        "bolstered",
+        "corroborated",
+        "undermined",
+        "vitiated",
+        "confirmed",
+        "substantiated"
+      ],
+      "correctAnswer": [
+        "C",
+        "D"
+      ],
+      "explanation": "'Undermined' and 'vitiated' both mean weakened or invalidated.",
+      "difficulty": "hard",
+      "id": "gre-verbal-011-q026",
+      "questionNumber": 26,
+      "section": "verbal"
+    },
+    {
+      "questionType": "text_completion",
+      "prompt": "[V11-Q27] The novel's narrative structure, which alternates between three distinct timelines, initially __________ readers, but those who persist are rewarded with a coherent and emotionally resonant whole.",
+      "options": [
+        [
+          "disorients",
+          "captivates",
+          "enlightens"
+        ],
+        [
+          "trivial",
+          "unconventional",
+          "coherent"
+        ],
+        [
+          "unreliable",
+          "compelling",
+          "straightforward"
+        ]
+      ],
+      "blanks": 1,
+      "correctAnswer": [
+        "A"
+      ],
+      "explanation": "The structure that later becomes coherent but is rewarding to persist through would initially disorient readers.",
+      "difficulty": "medium",
+      "id": "gre-verbal-011-q027",
+      "questionNumber": 27,
+      "section": "verbal"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Verbal Section 1",
+      "questionRange": [
+        1,
+        12
+      ],
+      "durationSeconds": 1080
+    },
+    {
+      "name": "Verbal Section 2",
+      "questionRange": [
+        13,
+        27
+      ],
+      "durationSeconds": 1380
+    }
+  ]
+}

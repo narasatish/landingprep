@@ -1,0 +1,80 @@
+{
+  "id": "toefl-speaking-014",
+  "exam": "toefl",
+  "section": "speaking",
+  "type": "section",
+  "title": "TOEFL iBT Speaking Practice Test 14",
+  "variant": "ibt",
+  "durationSeconds": 720,
+  "questionCount": 4,
+  "instructions": "There are 4 speaking tasks. Task 1 is independent — express your opinion on a given topic. Tasks 2 and 3 are integrated — read a short text and listen to a conversation or lecture, then speak. Task 4 is integrated — listen to a lecture and summarise key points.",
+  "questions": [
+    {
+      "id": "toefl-speaking-014-q01",
+      "taskNum": 1,
+      "taskType": "independent",
+      "questionType": "speaking_task",
+      "prompt": "Some people believe individuals can make a significant contribution to addressing environmental problems through personal lifestyle choices. Others think only government and business action can make a real difference. Which view do you agree with and why?",
+      "prepSeconds": 15,
+      "responseSeconds": 45,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "id": "toefl-speaking-014-q02",
+      "taskNum": 2,
+      "taskType": "campus_integrated",
+      "questionType": "speaking_task",
+      "prompt": "The woman expresses her opinion about the mandatory sustainability module. State her opinion and explain the reasons she gives.",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "readingTitle": "Campus Introduces Mandatory Sustainability Module",
+      "readingText": "Beginning next academic year, all undergraduate students will be required to complete a one-credit sustainability module in their first semester. The module will cover topics including carbon footprints, renewable energy, and sustainable consumer choices. The provost's office states the initiative is intended to prepare graduates to engage with environmental challenges in their professional lives.",
+      "listeningDescription": "A female student discusses the mandatory module with a male student. She supports it strongly — she says most students don't know basic facts about their environmental impact and this will fill that gap. The male student is critical — he argues it should be optional, as students already choose their courses based on their interests and goals, and a mandatory course reduces the value of elective choices.",
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "id": "toefl-speaking-014-q03",
+      "taskNum": 3,
+      "taskType": "academic_integrated",
+      "questionType": "speaking_task",
+      "prompt": "Using the example from the lecture, explain how it illustrates the concept of ecological resilience described in the reading.",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "readingTitle": "Ecological Resilience",
+      "readingText": "Ecological resilience refers to the capacity of an ecosystem to absorb disturbances — such as drought, fire, or flooding — and reorganise while undergoing change, retaining essentially the same function, structure, and identity. Highly resilient ecosystems can withstand significant stress without shifting to an alternative stable state. Diversity of species is considered a key component of resilience.",
+      "listeningDescription": "A professor discusses a study of grassland ecosystems that experienced severe drought. Grasslands with higher plant diversity maintained greater productivity during and after the drought compared to low-diversity grasslands. The professor explains that different plant species responded differently to water stress, so when some species declined, others compensated, maintaining the ecosystem's overall function.",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "toefl-speaking-014-q04",
+      "taskNum": 4,
+      "taskType": "academic_integrated_lecture_only",
+      "questionType": "speaking_task",
+      "prompt": "Using points and examples from the lecture, describe the benefits of urban trees as discussed by the professor.",
+      "prepSeconds": 20,
+      "responseSeconds": 60,
+      "rubric": [
+        "delivery",
+        "language use",
+        "topic development"
+      ],
+      "listeningDescription": "A professor explains how urban trees provide multiple ecosystem services in cities. Beyond aesthetic value, urban trees reduce air temperature through shading and evapotranspiration, intercept stormwater runoff, absorb air pollutants, and reduce noise levels. The professor notes that research shows proximity to urban green spaces is associated with improved mental health outcomes, and that urban trees increase property values in surrounding areas by measurable amounts.",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    }
+  ]
+}

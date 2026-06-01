@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-043",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 43",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-043-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to the food bank requesting information about how to access assistance.",
+      "modelAnswer": "I wholeheartedly advocate for Option B: prioritizing the development of robust public transportation networks. While Option A, encouraging carpooling and ride-sharing, offers some benefits, it ultimately represents a less impactful and sustainable solution compared to a wholesale investment in public transit.\n\nMy primary reason for supporting Option B lies in its capacity for systemic change. A well-developed public transportation system—comprising efficient subways, buses, and trains—drastically reduces the overall number of private vehicles on the road. This not only alleviates traffic congestion but also significantly lowers carbon emissions across the entire urban area. For instance, imagine a city where commuters can reliably get to work via a clean, punctual subway in less time than driving; this fundamentally shifts travel behaviour for thousands.\n\nSecondly, public transportation fosters greater social equity and accessibility. Not everyone owns a car, and relying solely on carpooling still excludes those without access to a vehicle or a compatible carpool group. An expansive public transit network ensures that all citizens, regardless of income or car ownership, can independently access employment, education, and essential services, promoting a more inclusive urban environment.\n\nOption A, while beneficial, merely scratches the surface. Carpooling still contributes to road wear and tear, and ride-sharing services often add to congestion rather than reducing it, particularly in peak hours. These are stop-gap measures that don't address the root cause of urban transportation issues. Investing in public transit, conversely, builds resilient infrastructure for the future.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "using a food bank",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-043-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a thank-you note to a food bank volunteer for their support.",
+      "modelAnswer": "I wholeheartedly advocate for Option B: prioritizing the development of advanced public transportation networks, even if it means deferring some road maintenance. This approach offers a more transformative and sustainable solution to urban congestion and environmental concerns.\n\nFirstly, investing in advanced public transport, such as high-speed rail or expanded subway systems, demonstrably reduces the overall number of private vehicles on the road. This isn't merely about easing traffic; it's about fundamentally shifting commuter behaviour. For instance, cities like Tokyo and London, with their extensive and efficient transit systems, see millions of daily commuters opting for public transport over cars, significantly lowering carbon emissions and journey times for everyone.\n\nSecondly, robust public transportation fosters more equitable and accessible urban environments. It provides reliable and affordable mobility for all demographics, including those who cannot afford or operate a personal vehicle, linking residential areas to employment hubs, educational institutions, and healthcare facilities. While road maintenance is undoubtedly important, deferring some non-critical repairs to fund a new rapid transit line will yield far greater long-term benefits in terms of urban planning, economic development, and quality of life for a wider segment of the population.\n\nOption A, focusing solely on road maintenance and expansion, is a short-sighted solution. While it offers temporary relief, it ultimately encourages more car dependency, leading to a perpetual cycle of congestion and the need for further road construction. It fails to address the root causes of urban transport issues and the pressing need for sustainable alternatives.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "using a food bank",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-047",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 47",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-047-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to a health information line asking about how to find a specialist in your area.",
+      "modelAnswer": "I would unequivocally choose Option A: Prioritizing local, community-focused initiatives. While global issues are undeniably critical, addressing problems at their root within our own communities offers more immediate, tangible, and sustainable benefits.\n\nFirstly, local engagement fosters a stronger sense of collective ownership and efficacy. When residents witness tangible improvements in their immediate surroundings—a cleaner park, a better-equipped community centre, or enhanced local support services—it galvanizes further participation and builds social capital. For instance, funding a local youth mentorship program directly reduces local crime rates and improves educational outcomes, creating a ripple effect of positive change that resonates directly with the taxpayers.\n\nSecondly, local solutions are often more adaptable and cost-effective because they are tailored to specific community needs and resources. A global initiative, while well-intentioned, might struggle with cultural nuances or logistical challenges across diverse regions. Conversely, a local food bank, run by volunteers and supported by local donations, can efficiently address food insecurity within its specific neighbourhood, leveraging existing networks and reducing overheads.\n\nOption B, focusing on global issues, while noble, often presents immense logistical hurdles and can feel abstract to individual citizens. While a portion of our resources should certainly address global crises, the direct impact and community empowerment derived from local investment make Option A the more strategically sound and immediately beneficial choice for our community.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "healthcare system navigation",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-047-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short email to a friend explaining what you learned from a health appointment.",
+      "modelAnswer": "I would wholeheartedly advocate for Option B: prioritizing the development of robust public transportation infrastructure. While admirable, focusing solely on individual car ownership (Option A) is a shortsighted solution to urban mobility challenges.\n\nFirstly, enhanced public transport significantly reduces traffic congestion and travel times for everyone, not just those who can afford a car. Imagine dedicated bus lanes and efficient subway systems whisking commuters across the city, freeing up roads and alleviating the frustration of gridlock. This benefits businesses through faster logistics and individuals through less stressful commutes.\n\nSecondly, public transportation is inherently more environmentally sustainable. A single bus can replace dozens of cars, drastically cutting carbon emissions and improving air quality. Investing in electric buses and trains aligns with global efforts to combat climate change, making our cities healthier and more liveable.\n\nFinally, excellent public transport promotes social equity. It provides affordable and reliable mobility for all residents, including students, seniors, and those with lower incomes who might not own a car. This accessibility fosters greater participation in the workforce, education, and social activities. While individual car ownership offers convenience, it exacerbates traffic, pollution, and social disparities. Option A caters to a privileged segment, whereas Option B creates a more equitable, efficient, and sustainable future for the entire urban population.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "healthcare system navigation",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

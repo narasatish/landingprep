@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-050",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 50",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-050-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to the health authority asking how to renew your health card.",
+      "modelAnswer": "I unequivocally endorse Option A: \"Focus on developing new public green spaces.\" While creating green spaces might seem like a long-term investment, its multifaceted benefits far outweigh the immediate gratification of improving existing ones.\n\nFirstly, new public green spaces directly address the increasing demand for recreational areas in growing urban centres. As cities expand, existing parks often become overcrowded and less accessible for new residents. By developing new spaces, we can ensure equitable access to nature for a larger segment of theCELPIP population, fostering community well-being and mitigating the stresses of urban living. For instance, converting an unused industrial lot into a vibrant park can rejuvenate an entire neighbourhood.\n\nSecondly, new green spaces offer unparalleled opportunities for ecological restoration and biodiversity enhancement. When designing new parks, we can incorporate native plant species, create natural habitats, and implement sustainable water management systems, thereby contributing to urban ecological resilience. This proactive approach is more impactful than merely retrofitting existing spaces, which often have established, sometimes non-native, landscapes.\n\nWhile improving existing spaces (Option B) has its merits, such as immediate usability and cost-effectiveness, it ultimately represents a limited vision. It fails to address the fundamental issue of insufficient green infrastructure in expanding cities and misses the chance to create truly innovative and ecologically rich environments. Therefore, investing in new public green spaces is the more strategic and impactful choice for the future health and livability of our communities.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "renewing a health card",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-050-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short message to a friend reminding them that their health card is about to expire.",
+      "modelAnswer": "I would choose Option B, advocating for a significant increase in public funding for arts education. This approach offers a more comprehensive and sustainable solution to fostering creativity and cultural appreciation within society.\n\nFirstly, embedding arts education directly into the curriculum ensures equitable access for all students, irrespective of their socioeconomic background. Currently, access to high-quality arts programs often depends on private lessons or well-funded schools, creating a disparity. Increased public funding would allow schools to hire specialist teachers, purchase necessary equipment, and develop diverse programs in music, visual arts, drama, and dance, making these enriching experiences a universal right rather than a privilege.\n\nSecondly, a robust arts education system cultivates critical thinking, problem-solving skills, and emotional intelligence – attributes essential for success in any field, not just the arts. Learning an instrument, for example, improves mathematical reasoning, while theatre builds empathy and public speaking skills. These transferable skills are invaluable in an increasingly complex world. While Option A, establishing more community arts centres, is beneficial, it often relies on voluntary participation and can struggle with consistent funding and outreach. A school-based approach, however, guarantees consistent exposure and integration into a child's developmental journey, making it a more impactful long-term investment in societal well-being and innovation.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "renewing a health card",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

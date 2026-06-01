@@ -1,0 +1,78 @@
+{
+  "totalJsonFiles": 990,
+  "totalQuestionsOrTasks": 11580,
+  "ieltsListening": {
+    "tests": 30,
+    "questionsPerTest": 40,
+    "part2Patterns": [
+      "multiple_choice_plus_matching",
+      "table_completion",
+      "map_labelling",
+      "multi_select",
+      "sentence_completion"
+    ]
+  },
+  "exams": {
+    "ielts": {
+      "sections": {
+        "listening": 30,
+        "reading": 30,
+        "writing": 30,
+        "speaking": 30
+      },
+      "fullMocks": 30
+    },
+    "toefl": {
+      "sections": {
+        "reading": 30,
+        "listening": 30,
+        "speaking": 30,
+        "writing": 30
+      },
+      "fullMocks": 30
+    },
+    "pte": {
+      "sections": {
+        "speaking-writing": 30,
+        "reading": 30,
+        "listening": 30
+      },
+      "fullMocks": 30
+    },
+    "celpip": {
+      "sections": {
+        "listening": 30,
+        "reading": 30,
+        "writing": 30,
+        "speaking": 30
+      },
+      "fullMocks": 30
+    },
+    "duolingo": {
+      "sections": {
+        "adaptive": 30,
+        "literacy": 30,
+        "comprehension": 30,
+        "conversation": 30,
+        "production": 30
+      },
+      "fullMocks": 30
+    },
+    "gre": {
+      "sections": {
+        "verbal": 30,
+        "quant": 30,
+        "writing": 30
+      },
+      "fullMocks": 30
+    },
+    "gmat": {
+      "sections": {
+        "quant": 30,
+        "verbal": 30,
+        "data-insights": 30
+      },
+      "fullMocks": 30
+    }
+  }
+}

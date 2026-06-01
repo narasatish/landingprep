@@ -1,0 +1,54 @@
+{
+  "id": "toefl-writing-003",
+  "exam": "toefl",
+  "section": "writing",
+  "type": "section",
+  "title": "TOEFL iBT Writing Practice Test 3",
+  "variant": "ibt",
+  "durationSeconds": 1380,
+  "questionCount": 2,
+  "instructions": "There are 2 writing tasks. Task 1 (Integrated Writing): Read a passage for 3 minutes, listen to a lecture, then write a 150-225 word response explaining how the lecture relates to the reading. You have 20 minutes. Task 2 (Academic Discussion): Read a professor's question and two student responses, then write your own contribution of at least 100 words in 10 minutes.",
+  "questions": [
+    {
+      "id": "toefl-writing-003-q01",
+      "taskNum": 1,
+      "taskType": "integrated_writing",
+      "questionType": "integrated_writing",
+      "readingTitle": "AI Tutoring Systems Enhance Student Learning",
+      "readingText": "Artificial intelligence tutoring systems offer several advantages over traditional instructional methods. First, these systems provide immediate, personalised feedback tailored to each student's performance level, allowing learners to identify and correct errors in real time rather than waiting for a teacher to review their work. Second, AI tutors are available around the clock, removing the time constraints of fixed class schedules and enabling students in different time zones or with demanding personal schedules to access quality instruction. Third, data collected by AI tutoring systems enables teachers to monitor individual student progress in detail, allowing them to allocate their limited instructional time to students who need the most support.",
+      "lectureDescription": "The professor raises concerns about each claimed advantage. On personalised feedback: AI systems are excellent at correcting factual and procedural errors but struggle with higher-order thinking — analysing arguments, evaluating evidence, developing original ideas. The feedback they provide is therefore useful for basic skills but inadequate for the most important aspects of education. On availability: constant access to AI instruction may undermine the development of self-regulated learning skills. Students need to develop the ability to manage their own learning schedules; having instant help always available may prevent this. On teacher data: the data AI systems collect focuses on measurable outcomes, potentially distorting instruction toward easily quantifiable skills at the expense of creativity and critical thinking.",
+      "prompt": "Summarise the points made in the lecture, explaining how they cast doubt on the specific points made in the reading passage.",
+      "modelAnswer": "The reading presents three advantages of AI tutoring systems: personalised feedback, around-the-clock availability, and detailed progress data for teachers. The professor challenges each of these claims.\n\nFirst, while acknowledging AI systems can correct basic errors effectively, the professor argues they struggle with higher-order thinking skills such as analysing arguments and developing original ideas. The feedback AI provides is therefore limited to foundational skills and misses the most important aspects of education.\n\nSecond, regarding constant availability, the professor argues this may actually harm students' development of self-regulated learning skills. Part of education involves learning to manage one's own time and motivation; having instant AI assistance always available may prevent students from developing this independence.\n\nThird, concerning teacher data, the professor notes that AI systems collect information on measurable, quantifiable outcomes. This risks distorting instruction toward easily measured skills — such as factual recall — at the expense of harder-to-measure but crucial abilities like creativity and critical thinking.\n\nIn conclusion, the professor does not deny that AI tutoring has some value, but argues that the reading overstates these advantages by failing to consider significant limitations.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range"
+      ],
+      "timeSeconds": 1200,
+      "targetWords": "150-225"
+    },
+    {
+      "id": "toefl-writing-003-q02",
+      "taskNum": 2,
+      "taskType": "academic_discussion",
+      "questionType": "academic_discussion",
+      "professorName": "Dr Williams",
+      "professorQuestion": "We have been discussing the integration of artificial intelligence into education. Some educators argue that AI tools such as chatbots and writing assistants should be freely available to students as learning aids. Others argue that allowing AI tools undermines the development of essential skills. What is your view?",
+      "student1Name": "Kenji",
+      "student1Response": "AI tools should be freely available. Students already use search engines, calculators, and spell checkers — these didn't stop people from learning. AI assistants are just the next step. The key is teaching students how to use these tools critically, not banning them. Banning AI in education would leave students unprepared for workplaces that use these tools constantly.",
+      "student2Name": "Sofia",
+      "student2Response": "I'm concerned that AI writing tools in particular undermine the development of writing skills. Writing forces you to think clearly and organise your ideas — if an AI generates your text, you skip that process entirely. A student who never struggles with their own writing never really learns to write. Some skills need to be developed through personal effort, not outsourced.",
+      "prompt": "Write a post responding to the professor's question. Express and support your personal opinion and make a contribution to the discussion in your own words. An effective response will contain at least 100 words.",
+      "rubric": [
+        "task response",
+        "coherence",
+        "lexical resource",
+        "grammar"
+      ],
+      "timeSeconds": 600,
+      "targetWords": "100+",
+      "modelAnswer": "I strongly believe that AI tools should be freely available to students, with a crucial emphasis on proper pedagogical integration. While I appreciate Sofia's concern about undermining skill development, I would argue that prohibiting these tools is a disservice to students. Just as calculators didn't eliminate the need to understand mathematical principles, AI writing assistants shouldn't preclude the development of critical thinking and organizational skills. The key, as Kenji points out, is to teach students *how* to use them effectively and ethically. For instance, instead of generating entire essays, AI can be leveraged as a sophisticated brainstorming partner, an outlining tool, or a feedback mechanism for early drafts, prompting students to refine their ideas rather than outsourcing the entire cognitive process. This approach prepares them for a future where AI proficiency will be a fundamental professional skill, not a taboo."
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "id": "gmat-quant-006",
+  "exam": "gmat",
+  "section": "quant",
+  "type": "section",
+  "title": "GMAT Focus Quant Practice Test 6",
+  "durationSeconds": 2700,
+  "questionCount": 21,
+  "instructions": "GMAT Focus Edition Quantitative Reasoning: 21 Problem Solving questions, 45 minutes. An on-screen calculator is permitted.",
+  "questions": [
+    {
+      "id": "gmat-quant-006-q001",
+      "questionNumber": 1,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "options": [
+        "24",
+        "28",
+        "30",
+        "36",
+        "60"
+      ],
+      "correctAnswer": "30",
+      "answer": "C",
+      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q002",
+      "questionNumber": 2,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "options": [
+        "132",
+        "144",
+        "154",
+        "168",
+        "176"
+      ],
+      "correctAnswer": "154",
+      "answer": "C",
+      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q003",
+      "questionNumber": 3,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "options": [
+        "16 litres",
+        "18 litres",
+        "20 litres",
+        "22 litres",
+        "24 litres"
+      ],
+      "correctAnswer": "20 litres",
+      "answer": "C",
+      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q004",
+      "questionNumber": 4,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "What is the value of 5! (5 factorial)?",
+      "options": [
+        "60",
+        "100",
+        "120",
+        "150",
+        "720"
+      ],
+      "correctAnswer": "120",
+      "answer": "C",
+      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q005",
+      "questionNumber": 5,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "options": [
+        "12",
+        "16",
+        "20",
+        "24",
+        "48"
+      ],
+      "correctAnswer": "24",
+      "answer": "D",
+      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q006",
+      "questionNumber": 6,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "options": [
+        "6",
+        "8",
+        "12",
+        "18",
+        "24"
+      ],
+      "correctAnswer": "12",
+      "answer": "C",
+      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q007",
+      "questionNumber": 7,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "options": [
+        "70",
+        "75",
+        "80",
+        "85",
+        "90"
+      ],
+      "correctAnswer": "80",
+      "answer": "C",
+      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q008",
+      "questionNumber": 8,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "options": [
+        "2 : 5",
+        "8 : 15",
+        "6 : 5",
+        "3 : 5",
+        "8 : 5"
+      ],
+      "correctAnswer": "8 : 15",
+      "answer": "B",
+      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q009",
+      "questionNumber": 9,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "options": [
+        "9",
+        "12",
+        "18",
+        "24",
+        "36"
+      ],
+      "correctAnswer": "24",
+      "answer": "D",
+      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q010",
+      "questionNumber": 10,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "options": [
+        "480",
+        "540",
+        "600",
+        "640",
+        "720"
+      ],
+      "correctAnswer": "600",
+      "answer": "C",
+      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q011",
+      "questionNumber": 11,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
+      "options": [
+        "45 mph",
+        "48 mph",
+        "50 mph",
+        "52 mph",
+        "55 mph"
+      ],
+      "correctAnswer": "48 mph",
+      "answer": "B",
+      "explanation": "Round-trip average = 2·v₁·v₂ ÷ (v₁+v₂) = 2 × 60 × 40 ÷ 100 = 4800 ÷ 100 = 48 mph.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q012",
+      "questionNumber": 12,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
+      "options": [
+        "$200",
+        "$250",
+        "$300",
+        "$350",
+        "$400"
+      ],
+      "correctAnswer": "$300",
+      "answer": "C",
+      "explanation": "SI = P × r × t = 2000 × 0.05 × 3 = 300.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q013",
+      "questionNumber": 13,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
+      "options": [
+        "$28",
+        "$30",
+        "$32",
+        "$36",
+        "$40"
+      ],
+      "correctAnswer": "$32",
+      "answer": "C",
+      "explanation": "Unit price = 20 ÷ 5 = $4. 8 pens = 8 × 4 = $32.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q014",
+      "questionNumber": 14,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
+      "options": [
+        "80 litres",
+        "90 litres",
+        "100 litres",
+        "110 litres",
+        "120 litres"
+      ],
+      "correctAnswer": "100 litres",
+      "answer": "C",
+      "explanation": "4/5 − 3/5 = 1/5 of capacity = 20 litres → capacity = 20 × 5 = 100 litres.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q015",
+      "questionNumber": 15,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "What is the value of √144 + √81?",
+      "options": [
+        "15",
+        "18",
+        "20",
+        "21",
+        "25"
+      ],
+      "correctAnswer": "21",
+      "answer": "D",
+      "explanation": "√144 = 12 and √81 = 9. 12 + 9 = 21.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q016",
+      "questionNumber": 16,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "options": [
+        "$14.00",
+        "$18.50",
+        "$21.50",
+        "$19.25",
+        "$20.00"
+      ],
+      "correctAnswer": "$21.50",
+      "answer": "C",
+      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q017",
+      "questionNumber": 17,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "options": [
+        "55 mph",
+        "58 mph",
+        "60 mph",
+        "65 mph",
+        "70 mph"
+      ],
+      "correctAnswer": "60 mph",
+      "answer": "C",
+      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q018",
+      "questionNumber": 18,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "options": [
+        "96",
+        "100",
+        "108",
+        "120",
+        "128"
+      ],
+      "correctAnswer": "120",
+      "answer": "D",
+      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q019",
+      "questionNumber": 19,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "options": [
+        "3 hours",
+        "12 hours",
+        "15 hours",
+        "18 hours",
+        "21 hours"
+      ],
+      "correctAnswer": "18 hours",
+      "answer": "D",
+      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q020",
+      "questionNumber": 20,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "options": [
+        "$170",
+        "$180",
+        "$190",
+        "$200",
+        "$210"
+      ],
+      "correctAnswer": "$180",
+      "answer": "B",
+      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gmat-quant-006-q021",
+      "questionNumber": 21,
+      "questionType": "problem_solving",
+      "section": "quant",
+      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "options": [
+        "$200",
+        "$210",
+        "$220",
+        "$240",
+        "$260"
+      ],
+      "correctAnswer": "$210",
+      "answer": "B",
+      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "difficulty": "medium"
+    }
+  ],
+  "answerKey": {
+    "gmat-quant-006-q001": "30",
+    "gmat-quant-006-q002": "154",
+    "gmat-quant-006-q003": "20 litres",
+    "gmat-quant-006-q004": "120",
+    "gmat-quant-006-q005": "24",
+    "gmat-quant-006-q006": "12",
+    "gmat-quant-006-q007": "80",
+    "gmat-quant-006-q008": "8 : 15",
+    "gmat-quant-006-q009": "24",
+    "gmat-quant-006-q010": "600",
+    "gmat-quant-006-q011": "48 mph",
+    "gmat-quant-006-q012": "$300",
+    "gmat-quant-006-q013": "$32",
+    "gmat-quant-006-q014": "100 litres",
+    "gmat-quant-006-q015": "21",
+    "gmat-quant-006-q016": "$21.50",
+    "gmat-quant-006-q017": "60 mph",
+    "gmat-quant-006-q018": "120",
+    "gmat-quant-006-q019": "18 hours",
+    "gmat-quant-006-q020": "$180",
+    "gmat-quant-006-q021": "$210"
+  }
+}

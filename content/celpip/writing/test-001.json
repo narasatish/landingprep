@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-001",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 1",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-001-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You recently moved into a new apartment building. You have noticed that the recycling bins in the building are often overflowing and recyclable items are being left on the floor beside them.",
+      "recipient": "your building manager",
+      "bulletPoints": [
+        "Describe the problem you have observed",
+        "Explain why this is a concern for residents",
+        "Suggest a solution or ask the manager to take action"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You recently moved to a new neighbourhood and would like to introduce yourself to your neighbour. Write a letter introducing yourself, describing your family, and suggesting a time to get together for coffee.",
+      "modelAnswer": "Subject: Recycling Bin Overflow Issue in Building\n\nDear [Building Manager's Name],\n\nI am writing to bring an important matter to your attention. Since moving in last month, I have observed that the recycling bins in our building are consistently overflowing, with recyclable items accumulating on the floor beside them. This situation occurs almost daily, creating an unsightly appearance in our common areas.\n\nThis problem concerns all residents for several reasons. Beyond aesthetics, overflowing bins attract pests and create health hazards. Additionally, items left on the floor obstruct pathways and pose safety risks, particularly for elderly residents and those with mobility challenges.\n\nI would like to suggest two possible solutions. First, we could increase bin collection frequency from weekly to twice weekly during peak seasons. Alternatively, the building could install larger bins or additional containers. I would appreciate your guidance on which option is most feasible given our building's budget and logistics.\n\nThank you for your prompt attention to this matter. I am confident that together we can maintain our building as a clean and safe environment for all residents.\n\nBest regards,\n[Your Name]"
+    },
+    {
+      "id": "celpip-writing-001-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city is considering one of the following changes to local transit. Which do you think is the better option?",
+      "optionA": "Reduce bus fares by 50% for all riders",
+      "optionB": "Add 20 new electric buses to extend service to underserved areas",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A community centre is conducting a survey about how to improve local services. Respond to the survey explaining which service is most important to you, why you value it, and how the centre could make it more accessible.",
+      "modelAnswer": "I believe Option B—adding 20 new electric buses to extend service to underserved areas—represents the better investment for our city.\n\nWhile reducing fares by 50% would benefit current transit users, this approach fails to address a critical problem: many residents in underserved neighbourhoods cannot access public transit at all, regardless of price. These communities are already disadvantaged, and a fare reduction helps only those who can already reach bus stops. Option B directly addresses this inequality by providing service where it is needed most.\n\nFurthermore, expanding electric bus service generates long-term environmental and economic benefits. Electric buses reduce emissions, improving air quality for residents in underserved areas who often experience higher pollution exposure. New routes also stimulate local economic development by improving job accessibility for lower-income residents who depend on public transit.\n\nWhile a fare reduction might boost ridership in already-served areas, Option B creates sustainable, equitable growth. It addresses both immediate transportation gaps and long-term community development goals.\n\nIn conclusion, Option B represents a more strategic and equitable use of city resources, creating lasting benefits for the residents who need public transit most."
+    }
+  ]
+}

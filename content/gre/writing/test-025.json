@@ -1,0 +1,41 @@
+{
+  "id": "gre-writing-025",
+  "exam": "gre",
+  "section": "writing",
+  "type": "section",
+  "title": "GRE Analytical Writing Practice Test 25",
+  "durationSeconds": 1800,
+  "questionCount": 1,
+  "instructions": "Complete both tasks. Task 1 (Issue): 30 minutes, 400–600 words recommended. Task 2 (Argument): 30 minutes, 400–600 words recommended.",
+  "questions": [
+    {
+      "id": "gre-writing-025-q1",
+      "taskType": "issue",
+      "taskNumber": 1,
+      "title": "Analyse an Issue",
+      "timeMinutes": 30,
+      "prompt": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "scoringCriteria": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "wordTarget": 500,
+      "questionType": "writing_task",
+      "writingInstructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "rubric": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "situation": "The rise of artificial intelligence presents greater risks than opportunities for humanity.",
+      "questionNumber": 1,
+      "modelAnswer": "The assertion that artificial intelligence (AI) presents greater risks than opportunities for humanity is a profound and timely one, necessitating careful consideration of its multifaceted implications. While acknowledging the legitimate concerns surrounding AI’s potential downsides, I largely disagree with the claim, believing instead that its opportunities, when harnessed responsibly and ethically, significantly outweigh its risks. The key lies in proactive governance, robust ethical frameworks, and an unwavering commitment to human-centric development.\n\nOne primary reason for optimism lies in AI's unparalleled potential to solve some of humanity's most intractable problems, particularly in fields like medicine and climate science. For instance, AI algorithms are revolutionizing drug discovery, accelerating the identification of novel compounds and predicting their efficacy with unprecedented speed and accuracy. This capability promises to drastically reduce the time and cost associated with developing treatments for diseases like Alzheimer's or cancer, offering tangible hope for millions. Similarly, AI models are crucial in analyzing vast datasets related to climate patterns, predicting extreme weather events, and optimizing renewable energy grids, thereby empowering humanity to mitigate the effects of climate change more effectively. While risks like data privacy breaches exist in these applications, their impact is dwarfed by the potential to save countless lives and secure a sustainable future.\n\nFurthermore, AI stands to democratize access to knowledge and specialized skills, fostering unprecedented global equity, provided that infrastructure and educational access are prioritized. Consider the transformative power of AI-driven educational platforms that can personalize learning experiences for students in remote areas, adapting to individual paces and styles, and overcoming geographical barriers to quality education. Similarly, AI-powered diagnostic tools can extend expert medical advice to underserved populations lacking access to specialists. While critics might point to the risk of job displacement due to automation, this concern, though valid, often overlooks the historical precedent of technological advancements creating new industries and roles that require uniquely human skills. The imperative is to invest in retraining and upskilling programs to manage this transition, rather than to stifle innovation that could uplift billions.\n\nHowever, it is crucial to acknowledge the legitimate risks that necessitate careful mitigation, lending some credence to the claim. The most pressing danger is the potential for AI to exacerbate existing inequalities or create new forms of societal control if developed without sufficient ethical oversight. For example, biased algorithms in facial recognition or predictive policing systems have been shown to disproportionately target minority groups, reinforcing systemic discrimination. This risk of algorithmic bias and the erosion of privacy is substantial and demands immediate and continuous attention. Yet, these are not inherent flaws of AI itself, but rather reflections of human biases embedded in data or design choices. The solution lies not in abandoning AI, but in developing robust regulatory frameworks, promoting explainable AI, and ensuring diverse representation in AI development teams to proactively identify and rectify these biases.\n\nIn conclusion, while the rise of artificial intelligence undoubtedly introduces formidable challenges and risks, particularly concerning ethical governance and potential societal disruption, its opportunities for advancing human welfare and solving global crises are far more profound and numerous. By prioritizing ethical development, inclusive access, and proactive regulatory frameworks, humanity can steer AI’s trajectory towards a future where its immense power serves to uplift, empower, and innovate, ultimately proving it to be a net positive for our species."
+    }
+  ]
+}

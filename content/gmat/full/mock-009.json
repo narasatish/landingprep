@@ -1,0 +1,25 @@
+{
+  "id": "gmat-full-009",
+  "exam": "gmat",
+  "type": "full",
+  "title": "GMAT Focus Full Mock Test 9",
+  "durationSeconds": 8100,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "quant",
+      "testId": "gmat-quant-009",
+      "file": "gmat/quant/test-009.json"
+    },
+    {
+      "section": "verbal",
+      "testId": "gmat-verbal-009",
+      "file": "gmat/verbal/test-009.json"
+    },
+    {
+      "section": "data-insights",
+      "testId": "gmat-data-insights-009",
+      "file": "gmat/data-insights/test-009.json"
+    }
+  ]
+}

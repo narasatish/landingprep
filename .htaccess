@@ -1,0 +1,46 @@
+# LandingPrep — Apache/LiteSpeed config for Hostinger shared hosting.
+# Use this ONLY if you serve the static files from shared hosting (public_html).
+# If you run the Node server on a VPS, you don't need this (nginx handles it).
+
+# ── Force HTTPS + non-www (canonical) ──────────────────────────────────────
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://landingprep.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.landingprep\.com [NC]
+RewriteRule ^(.*)$ https://landingprep.com/$1 [R=301,L]
+
+# ── Compression ────────────────────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml application/xml
+</IfModule>
+
+# ── Caching (long for hashed assets, short for HTML so deploys show up) ─────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+</IfModule>
+
+# ── Security headers ───────────────────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), camera=()"
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+  # Don't cache the service worker or HTML
+  <FilesMatch "(sw\.js|index\.html)$">
+    Header set Cache-Control "no-cache, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# Correct content types
+AddType application/manifest+json .webmanifest
+AddType text/plain .txt
+
+ErrorDocument 404 /index.html

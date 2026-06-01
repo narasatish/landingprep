@@ -1,0 +1,735 @@
+{
+  "id": "pte-speaking-writing-006",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 6",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-006-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Effective Language Learning Habits”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "11657fa99ab6d3c78c",
+      "modelAnswer": "Effective language learning extends beyond classroom instruction, emphasizing consistent daily engagement. Successful learners often integrate the target language into their routines, such as listening to podcasts, reading news articles, or even thinking in the new language. This immersive approach fosters natural acquisition and reinforces grammatical structures and vocabulary in context. Furthermore, regular interaction with native speakers, even through online platforms, significantly accelerates proficiency and builds confidence in practical communication scenarios.",
+      "readText": "Effective language learning extends beyond classroom instruction, emphasizing consistent daily engagement. Successful learners often integrate the target language into their routines, such as listening to podcasts, reading news articles, or even thinking in the new language. This immersive approach fosters natural acquisition and reinforces grammatical structures and vocabulary in context. Furthermore, regular interaction with native speakers, even through online platforms, significantly accelerates proficiency and builds confidence in practical communication scenarios."
+    },
+    {
+      "id": "pte-speaking-writing-006-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Public Health Initiative”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "The new public health campaign encourages regular exercise for improved community well-being.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "b875efebfb5c31839b",
+      "modelAnswer": "The new public health campaign encourages regular exercise for improved community well-being.",
+      "audioScript": "The new public health campaign encourages regular exercise for improved community well-being."
+    },
+    {
+      "id": "pte-speaking-writing-006-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Museum Conservation Efforts by Type (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "5bd332eff77fbef61e",
+      "modelAnswer": "This bar chart illustrates museum conservation efforts by type in 2022, measured in thousands of artifacts. Preventive Conservation was the highest priority, impacting 125,000 artifacts. Documentation and Environmental Control followed with 110,000 and 95,000 artifacts respectively. Restoration and Repair accounted for 80,000 artifacts. Public Education was the least focused area, involving only 40,000 artifacts. Overall, the chart highlights a strong emphasis on proactive and record-keeping conservation methods over direct repair or public outreach.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Museum Conservation Efforts by Type (2022)",
+        "yLabel": "Number of Artifacts (Thousands)",
+        "xAxis": [
+          "Preventive Conservation",
+          "Restoration & Repair",
+          "Documentation",
+          "Environmental Control",
+          "Public Education"
+        ],
+        "series": [
+          {
+            "label": "Artifacts",
+            "values": [
+              125,
+              80,
+              110,
+              95,
+              40
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-006-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Citizen Science in Ecology”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "d8e83c14519847fbd3",
+      "modelAnswer": "The lecture discussed how community science projects are transforming ecological research. Ordinary citizens are involved in collecting data on various environmental aspects, like bird migrations or water quality. This collaborative effort significantly broadens scientific understanding and promotes public engagement with environmental issues. The validated data from these projects often plays a crucial role in shaping policy decisions and conservation strategies, highlighting the importance of public participation in scientific endeavors.",
+      "audioScript": "Community science projects are revolutionizing ecological research by engaging ordinary citizens in data collection. Volunteers contribute to vast datasets on bird migrations, water quality, or plant phenology, which would be impossible for professional scientists to gather alone. This collaborative approach not only expands our scientific understanding of complex environmental issues but also fosters public engagement and environmental literacy. The data, once validated, often informs policy decisions and conservation strategies, demonstrating the profound impact of collective effort in scientific discovery.",
+      "keyPoints": [
+        "Citizens collect ecological data.",
+        "Expands scientific understanding.",
+        "Fosters public engagement.",
+        "Informs policy and conservation."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-006-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Benefits of Green Roofs”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Green roofs",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "eb1e6bc993e1011eb8",
+      "modelAnswer": "Green roofs",
+      "audioScript": "What kind of urban infrastructure helps reduce stormwater runoff and improve air quality?"
+    },
+    {
+      "id": "pte-speaking-writing-006-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Cognitive Mapping and Navigation”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c78ee899df1bec0e63",
+      "modelAnswer": "Wayfinding, a basic human ability, involves constructing and using cognitive maps of environments, which are influenced by familiarity and spatial abilities, to navigate effectively.",
+      "readText": "Wayfinding, the cognitive process of orienting oneself and navigating through space, is a fundamental human ability. Psychologists have long studied how individuals construct and utilize cognitive maps – mental representations of their environment – to move from one location to another. These maps are not always geographically accurate but incorporate landmarks, routes, and spatial relationships. Factors like familiarity with an environment, the clarity of signage, and individual spatial abilities all influence the efficiency and success of wayfinding. Understanding these psychological underpinnings is crucial for designing intuitive public spaces and navigation systems."
+    },
+    {
+      "id": "pte-speaking-writing-006-q07",
+      "questionType": "essay",
+      "prompt": "Deep ocean exploration remains a challenging frontier, offering potential scientific breakthroughs and resource discoveries. Discuss the importance of continuing deep ocean exploration despite its inherent difficulties, and propose ways to overcome these challenges.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "4b2c00dbd362edeb62",
+      "modelAnswer": "Deep ocean exploration represents one of humanity's last great frontiers, a vast, largely unknown realm with immense potential for scientific discovery and resource identification. Despite the formidable challenges, the imperative to continue exploring these abyssal depths is undeniable. The deep sea harbors unique ecosystems, novel biochemical compounds with pharmaceutical potential, and crucial insights into Earth's geological and climatic history. Understanding these environments is vital for comprehending global ecological processes and for developing sustainable practices.\n\nThe challenges are significant, primarily stemming from the extreme conditions: immense pressure, absolute darkness, and freezing temperatures. Technological hurdles include developing submersibles capable of withstanding these pressures for extended periods, creating advanced imaging and sampling equipment that can operate autonomously, and ensuring reliable communication over vast distances. Furthermore, the sheer cost of deep-sea missions is a major deterrent, requiring substantial investment.\n\nOvercoming these obstacles demands a multi-faceted approach. International collaboration is paramount to pool resources, share expertise, and distribute the financial burden. Innovations in robotics and artificial intelligence can lead to more durable, autonomous, and cost-effective underwater vehicles. Developing advanced sensor technologies will improve data collection in harsh environments. Moreover, fostering public awareness and political will through educational initiatives can secure sustained funding and prioritize deep ocean research on global agendas. By embracing these strategies, humanity can unlock the secrets of the deep, ensuring that this critical exploration continues to benefit future generations."
+    },
+    {
+      "id": "pte-speaking-writing-006-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Preserving Digital Heritage”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "7a2c52b75fc55971c0",
+      "modelAnswer": "Digital archives play a critical role in preserving cultural heritage and historical records in an increasingly digital world. Unlike physical documents, digital files require continuous management and migration to new formats to prevent obsolescence and data loss. Institutions face the complex task of ensuring long-term accessibility and authenticity, often necessitating specialized software and infrastructure. This ongoing effort guarantees that future generations can access and study our digital past, from government records to personal photographs, maintaining a comprehensive historical narrative.",
+      "readText": "Digital archives play a critical role in preserving cultural heritage and historical records in an increasingly digital world. Unlike physical documents, digital files require continuous management and migration to new formats to prevent obsolescence and data loss. Institutions face the complex task of ensuring long-term accessibility and authenticity, often necessitating specialized software and infrastructure. This ongoing effort guarantees that future generations can access and study our digital past, from government records to personal photographs, maintaining a comprehensive historical narrative."
+    },
+    {
+      "id": "pte-speaking-writing-006-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Ancient Trade Routes”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Ancient trade networks facilitated the exchange of goods and cultural ideas across vast continents.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "6ad8fd1f3afb39e096",
+      "modelAnswer": "Ancient trade networks facilitated the exchange of goods and cultural ideas across vast continents.",
+      "audioScript": "Ancient trade networks facilitated the exchange of goods and cultural ideas across vast continents."
+    },
+    {
+      "id": "pte-speaking-writing-006-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Renewable Battery Design: Key Performance Metrics (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "f0468eb6f223a74815",
+      "modelAnswer": "This bar chart illustrates key performance metrics for renewable battery design, comparing current performance against target performance in 2023. The 'Current Performance' generally scores lower than the 'Target Performance' across all categories. Energy Density and Environmental Impact currently stand at 7 out of 10, while Cycle Life is the highest at 8. Cost Efficiency is the lowest current metric at 5. The target aims for significant improvements, with most metrics targeting 9, indicating a strong focus on enhancing overall battery capabilities and sustainability in future designs.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Battery Design: Key Performance Metrics (2023)",
+        "yLabel": "Score (out of 10)",
+        "xAxis": [
+          "Energy Density",
+          "Cycle Life",
+          "Charge Rate",
+          "Cost Efficiency",
+          "Environmental Impact"
+        ],
+        "series": [
+          {
+            "label": "Current Performance",
+            "values": [
+              7,
+              8,
+              6,
+              5,
+              7
+            ]
+          },
+          {
+            "label": "Target Performance",
+            "values": [
+              9,
+              9,
+              8,
+              8,
+              9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-006-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Immersion for Language Acquisition”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "b16ba14afbcbc3c957",
+      "modelAnswer": "The lecture highlighted total immersion as a highly effective method for language acquisition. It involves being in an environment where only the target language is spoken, which promotes constant interaction and cognitive engagement. This approach rapidly improves fluency and comprehension by exposing learners to authentic pronunciation, idioms, and cultural aspects. Although initially challenging, the brain quickly adapts, but it does demand significant commitment and a willingness to tolerate uncertainty.",
+      "audioScript": "One of the most effective strategies for language acquisition is total immersion. This involves placing oneself in an environment where the target language is spoken exclusively, forcing constant interaction and cognitive engagement. Immersion accelerates learning by exposing individuals to authentic pronunciation, idiomatic expressions, and cultural nuances that are difficult to replicate in a classroom setting. While challenging initially, the brain quickly adapts, leading to rapid progress in fluency and comprehension. However, it requires significant commitment and the ability to tolerate ambiguity.",
+      "keyPoints": [
+        "Total immersion is effective.",
+        "Exposes to authentic language.",
+        "Accelerates fluency and comprehension.",
+        "Requires commitment and tolerance for ambiguity."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-006-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Pandemic Prevention”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "WHO",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "b095b2a004045c67f2",
+      "modelAnswer": "WHO",
+      "audioScript": "What global organization coordinates international efforts to combat epidemics and pandemics?"
+    },
+    {
+      "id": "pte-speaking-writing-006-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “The Science of Museum Conservation”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "5d5e511eb0addf4572",
+      "modelAnswer": "Museum conservation is a meticulous, interdisciplinary field that uses scientific analysis and specialized techniques to preserve artifacts, stabilize objects, and slow deterioration, ensuring their historical integrity for future generations.",
+      "readText": "Museum conservation is a meticulous discipline dedicated to preserving artifacts for future generations. It involves scientific analysis to understand material composition and degradation processes, followed by careful intervention. Conservators employ a range of techniques, from environmental controls like humidity and temperature regulation to specialized restoration methods for textiles, metals, or paper. The goal is not merely to repair damage but to stabilize objects, slow deterioration, and maintain their historical integrity, ensuring they can continue to educate and inspire. This interdisciplinary field combines art history, chemistry, and engineering to safeguard cultural heritage."
+    },
+    {
+      "id": "pte-speaking-writing-006-q14",
+      "questionType": "essay",
+      "prompt": "Community science projects, where public volunteers contribute to scientific research, are becoming increasingly popular. Discuss the benefits and potential drawbacks of this approach, and explain how its effectiveness can be maximized.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "70252927b707b146b8",
+      "modelAnswer": "Community science, often referred to as citizen science, has emerged as a powerful paradigm in scientific research, leveraging the enthusiasm and observational skills of public volunteers. This collaborative approach offers numerous benefits, yet it is not without its limitations. Understanding both aspects is crucial for maximizing its potential.\n\nOne of the primary benefits is the sheer scale of data collection that becomes possible. Volunteers can cover vast geographical areas or monitor phenomena over extended periods, generating datasets far larger than professional scientists could achieve alone. This is particularly valuable in fields like environmental monitoring, astronomy, and biodiversity tracking. Furthermore, community science fosters public engagement with science, enhancing scientific literacy and promoting a sense of ownership over research outcomes. It can also democratize science, making it accessible to individuals outside traditional academic institutions, and potentially inspiring future generations of scientists.\n\nHowever, potential drawbacks exist. The quality and reliability of data collected by untrained volunteers can be a concern. Inconsistent methodologies, misidentification, or biases might introduce errors, requiring rigorous validation processes. There can also be ethical considerations regarding data ownership and intellectual property, especially when projects lead to significant discoveries. Moreover, managing and coordinating large groups of volunteers effectively requires substantial effort and resources.\n\nTo maximize the effectiveness of community science, several strategies can be employed. Clear, user-friendly protocols and training materials are essential to ensure data consistency and accuracy. Utilizing technology, such as mobile apps with built-in validation checks and GPS tagging, can further improve data quality. Robust data review mechanisms by expert scientists are critical for verifying contributions. Finally, transparent communication with volunteers, providing feedback on their contributions and highlighting the impact of their work, can sustain engagement and foster a dedicated community. By addressing these aspects, community science can continue to be a powerful tool for scientific advancement and public education."
+    },
+    {
+      "id": "pte-speaking-writing-006-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Urban Green Infrastructure”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "9030d34f2a9cd3dc97",
+      "modelAnswer": "Urban green roofs are increasingly recognized as vital components of sustainable city planning. These vegetated layers on building rooftops offer numerous ecological and economic benefits, including reducing the urban heat island effect, improving stormwater management, and increasing biodiversity. They also contribute to better air quality and provide insulation, lowering energy consumption for heating and cooling. Implementing green roofs requires careful structural consideration and maintenance, but their long-term advantages significantly outweigh the initial investment, enhancing urban resilience and livability.",
+      "readText": "Urban green roofs are increasingly recognized as vital components of sustainable city planning. These vegetated layers on building rooftops offer numerous ecological and economic benefits, including reducing the urban heat island effect, improving stormwater management, and increasing biodiversity. They also contribute to better air quality and provide insulation, lowering energy consumption for heating and cooling. Implementing green roofs requires careful structural consideration and maintenance, but their long-term advantages significantly outweigh the initial investment, enhancing urban resilience and livability."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Interstellar Travel Hurdles”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q16",
+      "modelAnswer": "Space exploration and colonization present monumental challenges that transcend current technological capabilities. The vast distances involved necessitate propulsion systems far more advanced than anything currently available, making interstellar travel a multi-generational endeavor. Furthermore, establishing self-sustaining habitats on other celestial bodies requires overcoming extreme environmental conditions, from radiation exposure to lack of breathable atmosphere. Resource extraction, waste management, and the psychological impacts of isolation on colonists are equally critical hurdles, demanding innovative solutions and sustained global commitment.",
+      "readText": "Space exploration and colonization present monumental challenges that transcend current technological capabilities. The vast distances involved necessitate propulsion systems far more advanced than anything currently available, making interstellar travel a multi-generational endeavor. Furthermore, establishing self-sustaining habitats on other celestial bodies requires overcoming extreme environmental conditions, from radiation exposure to lack of breathable atmosphere. Resource extraction, waste management, and the psychological impacts of isolation on colonists are equally critical hurdles, demanding innovative solutions and sustained global commitment."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Cognitive Biases in Choices”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q17",
+      "modelAnswer": "The psychology of decision-making reveals that human choices are often influenced by cognitive biases rather than pure rationality. For instance, anchoring bias demonstrates how an initial piece of information, even if irrelevant, can disproportionately influence subsequent judgments. Confirmation bias leads individuals to seek out and interpret information that confirms their existing beliefs, ignoring contradictory evidence. Understanding these inherent mental shortcuts is crucial for improving critical thinking and making more objective choices in both personal and professional contexts, mitigating potential errors caused by systematic deviations from logic.",
+      "readText": "The psychology of decision-making reveals that human choices are often influenced by cognitive biases rather than pure rationality. For instance, anchoring bias demonstrates how an initial piece of information, even if irrelevant, can disproportionately influence subsequent judgments. Confirmation bias leads individuals to seek out and interpret information that confirms their existing beliefs, ignoring contradictory evidence. Understanding these inherent mental shortcuts is crucial for improving critical thinking and making more objective choices in both personal and professional contexts, mitigating potential errors caused by systematic deviations from logic."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Evolution of Urban Transit”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q18",
+      "modelAnswer": "The evolution of public transport systems reflects changing urban needs and technological advancements. From early horse-drawn omnibuses to modern electric trains and autonomous vehicles, each innovation has aimed to enhance efficiency, capacity, and accessibility. Historically, the expansion of tram and subway networks profoundly shaped city development, enabling suburban growth and decentralization. Today, challenges like congestion, environmental impact, and equitable access drive further innovation, pushing towards integrated, sustainable, and smart mobility solutions that cater to diverse commuter demands in rapidly growing metropolitan areas worldwide.",
+      "readText": "The evolution of public transport systems reflects changing urban needs and technological advancements. From early horse-drawn omnibuses to modern electric trains and autonomous vehicles, each innovation has aimed to enhance efficiency, capacity, and accessibility. Historically, the expansion of tram and subway networks profoundly shaped city development, enabling suburban growth and decentralization. Today, challenges like congestion, environmental impact, and equitable access drive further innovation, pushing towards integrated, sustainable, and smart mobility solutions that cater to diverse commuter demands in rapidly growing metropolitan areas worldwide."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Carbon capture and storage technologies are crucial for mitigating climate change impacts.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Carbon Capture Technologies”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q19",
+      "modelAnswer": "Carbon capture and storage technologies are crucial for mitigating climate change impacts.",
+      "audioScript": "Carbon capture and storage technologies are crucial for mitigating climate change impacts."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Wildlife corridor design and conservation are essential for preserving biodiversity across landscapes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Conservation Strategy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q20",
+      "modelAnswer": "Wildlife corridor design and conservation are essential for preserving biodiversity across landscapes.",
+      "audioScript": "Wildlife corridor design and conservation are essential for preserving biodiversity across landscapes."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Consciousness in Philosophy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q21",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and awareness.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and awareness."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology and privacy concerns are often debated in urban development.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy Concerns”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q22",
+      "modelAnswer": "Smart city technology and privacy concerns are often debated in urban development.",
+      "audioScript": "Smart city technology and privacy concerns are often debated in urban development."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation and indigenous land rights are critically linked environmental and social issues.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation and Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q23",
+      "modelAnswer": "Deforestation and indigenous land rights are critically linked environmental and social issues.",
+      "audioScript": "Deforestation and indigenous land rights are critically linked environmental and social issues."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The role of social media in modern communication has dramatically transformed interactions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q24",
+      "modelAnswer": "The role of social media in modern communication has dramatically transformed interactions.",
+      "audioScript": "The role of social media in modern communication has dramatically transformed interactions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration and cultural integration present complex challenges for societies globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Integration”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q25",
+      "modelAnswer": "International migration and cultural integration present complex challenges for societies globally.",
+      "audioScript": "International migration and cultural integration present complex challenges for societies globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation significantly impact labor markets and productivity worldwide.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Automation's Economic Impact”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q26",
+      "modelAnswer": "The economics of automation significantly impact labor markets and productivity worldwide.",
+      "audioScript": "The economics of automation significantly impact labor markets and productivity worldwide."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Top 5 Languages by Number of Native Speakers Worldwide (Millions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q27",
+      "modelAnswer": "This bar chart illustrates the top five languages globally by their number of native speakers. Mandarin Chinese clearly dominates with approximately 929 million native speakers, making it the most spoken language. Spanish follows as the second most prevalent, with 475 million native speakers. English ranks third with 379 million, closely trailed by Hindi at 341 million. Arabic rounds out the top five with around 310 million native speakers. The chart effectively highlights the significant disparity between Mandarin Chinese and the other languages, as it has more than double the native speakers of English.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Top 5 Languages by Number of Native Speakers Worldwide (Millions)",
+        "yLabel": "Number of Native Speakers (Millions)",
+        "xAxis": [
+          "Mandarin Chinese",
+          "Spanish",
+          "English",
+          "Hindi",
+          "Arabic"
+        ],
+        "series": [
+          {
+            "label": "Native Speakers",
+            "values": [
+              929,
+              475,
+              379,
+              341,
+              310
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Ocean pH Levels (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q28",
+      "modelAnswer": "This line graph illustrates the trend of global average ocean pH levels from 1990 to 2020. The Y-axis represents the pH level, while the X-axis shows the years. In 1990, the ocean pH was approximately 8.12. A clear downward trend is observable throughout the period, indicating increasing ocean acidification. By 2005, the pH had dropped to 8.06, and it continued to decline, reaching its lowest point of 8.00 in 2020. This consistent decrease highlights a significant environmental concern over the three decades.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Ocean pH Levels (1990-2020)",
+        "yLabel": "pH Level",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Ocean pH",
+            "values": [
+              8.12,
+              8.1,
+              8.08,
+              8.06,
+              8.04,
+              8.02,
+              8
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global Water Usage by Sector\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q29",
+      "modelAnswer": "This pie chart illustrates global water usage across different sectors. The most significant portion of water, a staggering 70%, is consumed by agriculture, highlighting its immense demand for irrigation and livestock. Industry accounts for the second largest share, using 20% of global water resources for manufacturing and cooling processes. The smallest segment, representing only 10%, is domestic usage, which includes household consumption and municipal services. Overall, the chart clearly indicates that agriculture is the dominant consumer of the world's freshwater supply, far surpassing industrial and domestic needs combined.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global Water Usage by Sector",
+        "slices": [
+          {
+            "label": "Agriculture",
+            "value": 70
+          },
+          {
+            "label": "Industry",
+            "value": 20
+          },
+          {
+            "label": "Domestic",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Water Cycle: Evapotranspiration Contributions\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q30",
+      "modelAnswer": "This line chart illustrates the global water cycle, specifically focusing on evapotranspiration contributions in cubic kilometers per year. The highest value is Ocean Evaporation at 434,000 km³/year, significantly contributing to the overall cycle. Land Evaporation accounts for 71,000 km³/year, while Transpiration, the lowest individual component, stands at 49,000 km³/year. The chart clearly shows that the sum of these processes leads to a Total Evapotranspiration of 554,000 km³/year, highlighting the ocean's dominant role compared to land-based processes.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Water Cycle: Evapotranspiration Contributions",
+        "yLabel": "Volume (km³/year)",
+        "xAxis": [
+          "Ocean Evaporation",
+          "Land Evaporation",
+          "Transpiration",
+          "Total Evapotranspiration"
+        ],
+        "series": [
+          {
+            "label": "Average Annual Volume",
+            "values": [
+              434000,
+              71000,
+              49000,
+              554000
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q31",
+      "modelAnswer": "The lecture discussed the significance of non-verbal communication in human interaction. It highlighted how gestures, facial expressions, posture, and even silence convey meaning, often subconsciously. These non-verbal cues can either support or contradict spoken words and are crucial for effective communication. The speaker emphasized that cultural differences play a significant role in interpreting these signals, which can lead to misunderstandings in cross-cultural exchanges.",
+      "audioScript": "Non-verbal communication is a powerful, often subconscious, aspect of human interaction, conveying meaning through gestures, facial expressions, posture, and even silence. It can reinforce, contradict, or substitute for verbal messages. For instance, a nod can affirm agreement, while crossed arms might signal defensiveness. Understanding these cues is essential for effective communication, as they often reveal true sentiments more reliably than spoken words. Cultural differences significantly impact the interpretation of non-verbal signals, making cross-cultural communication particularly complex and prone to misunderstandings.",
+      "keyPoints": [
+        "Non-verbal communication is powerful.",
+        "Conveys meaning through gestures, expressions.",
+        "Reinforces or contradicts verbal messages.",
+        "Cultural differences impact interpretation."
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Non-verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Types of Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q32",
+      "modelAnswer": "Non-verbal",
+      "audioScript": "What type of communication involves the exchange of information without the use of spoken words?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Channel”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q33",
+      "modelAnswer": "Verbal",
+      "audioScript": "Which communication channel provides immediate feedback in a face-to-face conversation?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Semantic noise",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barrier”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-006-q34",
+      "modelAnswer": "Semantic noise",
+      "audioScript": "What is a common barrier to effective communication caused by differing interpretations of words?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-006-q01": "",
+    "pte-speaking-writing-006-q02": "",
+    "pte-speaking-writing-006-q03": "",
+    "pte-speaking-writing-006-q04": "",
+    "pte-speaking-writing-006-q05": "sample answer",
+    "pte-speaking-writing-006-q06": "",
+    "pte-speaking-writing-006-q07": "",
+    "pte-speaking-writing-006-q08": "",
+    "pte-speaking-writing-006-q09": "",
+    "pte-speaking-writing-006-q10": "",
+    "pte-speaking-writing-006-q11": "",
+    "pte-speaking-writing-006-q12": "sample answer",
+    "pte-speaking-writing-006-q13": "",
+    "pte-speaking-writing-006-q14": "",
+    "pte-speaking-writing-006-q15": ""
+  },
+  "fingerprints": [
+    "11657fa99ab6d3c78c",
+    "b875efebfb5c31839b",
+    "5bd332eff77fbef61e",
+    "d8e83c14519847fbd3",
+    "eb1e6bc993e1011eb8",
+    "c78ee899df1bec0e63",
+    "4b2c00dbd362edeb62",
+    "7a2c52b75fc55971c0",
+    "6ad8fd1f3afb39e096",
+    "f0468eb6f223a74815",
+    "b16ba14afbcbc3c957",
+    "b095b2a004045c67f2",
+    "5d5e511eb0addf4572",
+    "70252927b707b146b8",
+    "9030d34f2a9cd3dc97"
+  ]
+}

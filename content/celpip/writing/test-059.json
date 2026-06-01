@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-059",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 59",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-059-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to a driving school asking about winter driving courses for new Canadians.",
+      "modelAnswer": "I strongly advocate for Option B: prioritizing the development of robust public transportation networks, even if it means a temporary increase in taxes. This approach offers a more sustainable and equitable solution for urban growth.\n\nFirstly, enhanced public transit directly alleviates traffic congestion. By providing efficient and reliable alternatives to private vehicles, a significant portion of commuters will opt for buses, subways, or trams, reducing the number of cars on the road and consequently lowering commute times and carbon emissions. For instance, cities like Vancouver, with its SkyTrain system, demonstrate how effective public transport can substantially decrease reliance on personal cars.\n\nSecondly, robust public transportation fosters greater accessibility and social equity. Not everyone can afford or operate a private vehicle, and an extensive transit system ensures that all residents, regardless of income or ability, can access employment, education, and essential services. This inclusivity strengthens the community fabric and supports economic participation across all demographics.\n\nWhile Option A, investing in road expansion, might offer a short-term fix for traffic, it often leads to induced demand, where new roads quickly fill with more cars, negating the initial benefits. It's a cyclical problem that doesn't address the root causes of congestion or promote long-term sustainability. Therefore, the strategic and future-oriented investment in public transportation, even with a temporary tax adjustment, presents a far superior path to a thriving urban environment.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "road safety for new Canadians",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-059-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short message to a friend explaining a road safety rule you recently learned.",
+      "modelAnswer": "I would strongly advocate for Option A: Implementing a robust mentorship program for new employees. This approach offers multifaceted benefits that directly address critical aspects of employee retention, skill development, and overall workplace culture.\n\nFirstly, a structured mentorship program significantly boosts new employees' confidence and accelerates their integration into the company. New hires often feel overwhelmed by new systems, colleagues, and expectations. A dedicated mentor provides a trusted resource for guidance, answering questions that might seem too trivial for managers, thereby reducing early-stage anxieties and improving job satisfaction. For instance, a mentor can demystify internal communication channels or explain unwritten office norms, making the new employee feel supported and less isolated.\n\nSecondly, mentorship facilitates rapid skill acquisition and knowledge transfer. Experienced employees, through their mentorship, can impart invaluable institutional knowledge and practical skills that go beyond formal training modules. This direct, personalised instruction ensures that new hires become productive members of the team much faster, contributing effectively to company goals. This also fosters a culture of continuous learning and collaboration, where senior staff are actively involved in developing the next generation of talent.\n\nWhile Option B, offering increased professional development workshops, has merit, it is less suitable as a primary solution. Workshops, while useful for specific skill upgrades, often lack the personalised, ongoing support crucial for new employees. They are typically one-off events and cannot replicate the continuous guidance and psychological safety a mentor provides, especially during the critical initial months of employment. Mentorship builds relationships, which workshops inherently cannot.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "road safety for new Canadians",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

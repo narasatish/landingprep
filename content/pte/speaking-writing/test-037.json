@@ -1,0 +1,765 @@
+{
+  "id": "pte-speaking-writing-037",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 37",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-037-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Crafting Effective Resumes”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "job application skills",
+      "modelAnswer": "Crafting an effective resume is paramount for securing job interviews. It must be concise, highlighting relevant skills and experiences tailored to each specific role. Quantifiable achievements, action verbs, and a clean layout significantly enhance its impact. Proofreading meticulously for any grammatical errors or typos is crucial, as these can immediately detract from a candidate's professionalism and attention to detail. A strong resume acts as your initial advocate.",
+      "readText": "Crafting an effective resume is paramount for securing job interviews. It must be concise, highlighting relevant skills and experiences tailored to each specific role. Quantifiable achievements, action verbs, and a clean layout significantly enhance its impact. Proofreading meticulously for any grammatical errors or typos is crucial, as these can immediately detract from a candidate's professionalism and attention to detail. A strong resume acts as your initial advocate."
+    },
+    {
+      "id": "pte-speaking-writing-037-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Interview Skills”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Effective communication and problem-solving skills are vital for successful job interviews.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "job application skills",
+      "modelAnswer": "Effective communication and problem-solving skills are vital for successful job interviews.",
+      "audioScript": "Effective communication and problem-solving skills are vital for successful job interviews."
+    },
+    {
+      "id": "pte-speaking-writing-037-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Essential Job Application Skills (Employer Survey)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "job application skills",
+      "modelAnswer": "This bar chart illustrates the essential job application skills according to an employer survey. Communication is clearly the most valued skill, cited by 88% of employers, followed closely by Problem-Solving at 82%. Teamwork and Adaptability also rank high at 75% and 68% respectively. In contrast, Technical Skills are considered important by 60%, while Leadership is the least emphasized skill, at 45%. This indicates a strong preference for soft skills over more specialized abilities in the initial application phase.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Essential Job Application Skills (Employer Survey)",
+        "yLabel": "Percentage of Employers",
+        "xAxis": [
+          "Communication",
+          "Problem-Solving",
+          "Teamwork",
+          "Adaptability",
+          "Technical Skills",
+          "Leadership"
+        ],
+        "series": [
+          {
+            "label": "Importance",
+            "values": [
+              88,
+              82,
+              75,
+              68,
+              60,
+              45
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-037-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Job Application Success”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "job application skills",
+      "modelAnswer": "The lecture discussed the multifaceted approach to job application success. It emphasized the importance of thorough company research and tailoring applications. Additionally, practicing interview responses and leveraging networking were highlighted as crucial. Finally, demonstrating genuine enthusiasm and a good cultural fit were presented as equally vital components for securing a desired position in today's competitive job market.",
+      "audioScript": "To truly succeed in the competitive job market, applicants must move beyond merely listing qualifications. A successful strategy involves deeply researching the target company and role, customizing every application document, and practicing interview responses extensively. Moreover, networking plays a pivotal role, often opening doors that traditional applications cannot. Finally, demonstrating genuine enthusiasm and cultural fit during interviews is often as important as technical competency. It's a holistic approach.",
+      "keyPoints": [
+        "Research company and role",
+        "Customize application documents",
+        "Practice interview responses",
+        "Network and show enthusiasm"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-037-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Resume Purpose”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Resume",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "job application skills",
+      "modelAnswer": "Resume",
+      "audioScript": "What document summarizes a job applicant's qualifications and work history?"
+    },
+    {
+      "id": "pte-speaking-writing-037-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Optimizing Job Search”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "job application skills",
+      "wordTarget": 75,
+      "modelAnswer": "Optimizing a job search involves strategic networking, customizing application materials like cover letters, thorough interview preparation including behavioral questions, and researching company culture, all while maintaining persistence and resilience.",
+      "readText": "Navigating the modern job market requires more than just a well-written resume; it demands a strategic approach. Job seekers should actively network, utilizing platforms like LinkedIn to connect with professionals in their desired fields. Tailoring cover letters to specific job descriptions, rather than using generic templates, significantly increases an applicant's chances. Furthermore, preparing for behavioral interview questions and researching company culture are critical steps. Persistence and resilience are also key attributes, as the job search process can often be lengthy and challenging."
+    },
+    {
+      "id": "pte-speaking-writing-037-q07",
+      "questionType": "write_essay",
+      "prompt": "Some people argue that international tourism causes more damage than benefit to local communities. To what extent do you agree or disagree?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "job application skills",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Cognitive Biases in Decisions”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q08",
+      "modelAnswer": "The psychology of decision-making reveals that human choices are frequently influenced by cognitive biases rather than pure rationality. Heuristics, or mental shortcuts, often lead to predictable errors in judgment, such as confirmation bias or anchoring. Understanding these inherent biases is crucial for improving decision quality, both individually and within organizational contexts. Deliberate strategies, like considering alternative perspectives, can mitigate their detrimental effects, fostering more objective outcomes.",
+      "readText": "The psychology of decision-making reveals that human choices are frequently influenced by cognitive biases rather than pure rationality. Heuristics, or mental shortcuts, often lead to predictable errors in judgment, such as confirmation bias or anchoring. Understanding these inherent biases is crucial for improving decision quality, both individually and within organizational contexts. Deliberate strategies, like considering alternative perspectives, can mitigate their detrimental effects, fostering more objective outcomes."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Public Transport Evolution”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q09",
+      "modelAnswer": "The evolution of public transport systems reflects societal and technological advancements. From horse-drawn omnibuses to electric trams and modern high-speed trains, each innovation aimed to enhance urban mobility and connectivity. Early systems primarily served industrial centers, but contemporary networks prioritize sustainability, accessibility, and integration with smart city initiatives. This continuous adaptation addresses growing population densities and environmental concerns, shaping the future of urban living.",
+      "readText": "The evolution of public transport systems reflects societal and technological advancements. From horse-drawn omnibuses to electric trams and modern high-speed trains, each innovation aimed to enhance urban mobility and connectivity. Early systems primarily served industrial centers, but contemporary networks prioritize sustainability, accessibility, and integration with smart city initiatives. This continuous adaptation addresses growing population densities and environmental concerns, shaping the future of urban living."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Sustainable Urban Planning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q10",
+      "modelAnswer": "Sustainable urban planning increasingly integrates green infrastructure to enhance city resilience and livability. Features like green roofs, permeable pavements, and urban parks help manage stormwater, reduce heat island effects, and improve air quality. These natural systems offer cost-effective alternatives to conventional grey infrastructure, simultaneously fostering biodiversity and creating recreational spaces for residents. Embracing green solutions is vital for future-proofing our rapidly expanding metropolitan areas.",
+      "readText": "Sustainable urban planning increasingly integrates green infrastructure to enhance city resilience and livability. Features like green roofs, permeable pavements, and urban parks help manage stormwater, reduce heat island effects, and improve air quality. These natural systems offer cost-effective alternatives to conventional grey infrastructure, simultaneously fostering biodiversity and creating recreational spaces for residents. Embracing green solutions is vital for future-proofing our rapidly expanding metropolitan areas."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Bilingualism's Cognitive Edge”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q11",
+      "modelAnswer": "Research consistently demonstrates that bilingualism offers significant cognitive benefits beyond mere language proficiency. Bilingual individuals often exhibit enhanced executive functions, including improved problem-solving, task switching, and selective attention. This 'bilingual advantage' is thought to stem from the constant mental exercise of managing two language systems, leading to greater cognitive flexibility. These benefits can even delay the onset of age-related cognitive decline, highlighting its profound impact.",
+      "readText": "Research consistently demonstrates that bilingualism offers significant cognitive benefits beyond mere language proficiency. Bilingual individuals often exhibit enhanced executive functions, including improved problem-solving, task switching, and selective attention. This 'bilingual advantage' is thought to stem from the constant mental exercise of managing two language systems, leading to greater cognitive flexibility. These benefits can even delay the onset of age-related cognitive decline, highlighting its profound impact."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Microbiomes and Health”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q12",
+      "modelAnswer": "The human microbiome, a complex community of microorganisms inhabiting our bodies, plays a critical role in maintaining health. These microbial ecosystems influence digestion, immunity, and even neurological functions. Imbalances in the microbiome are linked to various diseases, from inflammatory bowel conditions to obesity and mental health disorders. Understanding and manipulating these microbial populations offers promising avenues for novel therapeutic interventions and personalized medicine approaches.",
+      "readText": "The human microbiome, a complex community of microorganisms inhabiting our bodies, plays a critical role in maintaining health. These microbial ecosystems influence digestion, immunity, and even neurological functions. Imbalances in the microbiome are linked to various diseases, from inflammatory bowel conditions to obesity and mental health disorders. Understanding and manipulating these microbial populations offers promising avenues for novel therapeutic interventions and personalized medicine approaches."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and mental states.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Consciousness Philosophy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q13",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and mental states.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and mental states."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology raises significant concerns regarding individual privacy and data security.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q14",
+      "modelAnswer": "Smart city technology raises significant concerns regarding individual privacy and data security.",
+      "audioScript": "Smart city technology raises significant concerns regarding individual privacy and data security."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation critically impacts indigenous land rights and global biodiversity.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation and Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q15",
+      "modelAnswer": "Deforestation critically impacts indigenous land rights and global biodiversity.",
+      "audioScript": "Deforestation critically impacts indigenous land rights and global biodiversity."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Social media profoundly shapes modern communication and public discourse worldwide.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q16",
+      "modelAnswer": "Social media profoundly shapes modern communication and public discourse worldwide.",
+      "audioScript": "Social media profoundly shapes modern communication and public discourse worldwide."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration often leads to complex challenges in cultural integration.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Culture”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q17",
+      "modelAnswer": "International migration often leads to complex challenges in cultural integration.",
+      "audioScript": "International migration often leads to complex challenges in cultural integration."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation predict significant shifts in future labor markets.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Automation Economics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q18",
+      "modelAnswer": "The economics of automation predict significant shifts in future labor markets.",
+      "audioScript": "The economics of automation predict significant shifts in future labor markets."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Renewable energy infrastructure investment is crucial for achieving global climate goals.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q19",
+      "modelAnswer": "Renewable energy infrastructure investment is crucial for achieving global climate goals.",
+      "audioScript": "Renewable energy infrastructure investment is crucial for achieving global climate goals."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Urban heat islands require innovative mitigation strategies for public health.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Heat Mitigation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q20",
+      "modelAnswer": "Urban heat islands require innovative mitigation strategies for public health.",
+      "audioScript": "Urban heat islands require innovative mitigation strategies for public health."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Financial literacy is essential for promoting economic inclusion and stability.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Financial Inclusion”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q21",
+      "modelAnswer": "Financial literacy is essential for promoting economic inclusion and stability.",
+      "audioScript": "Financial literacy is essential for promoting economic inclusion and stability."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Temperature Change (1900-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q22",
+      "modelAnswer": "This line graph illustrates global average temperature changes from 1900 to 2020, showing temperature anomaly in degrees Celsius. Initially, temperatures were below the average, with a low of -0.2°C in 1900. There was a slight increase by 1940 to 0.05°C, followed by a minor dip. However, a significant upward trend began around 1980, accelerating sharply. By 2000, the anomaly reached 0.5°C, culminating in a peak of 0.9°C in 2020. This indicates a clear and concerning warming trend, particularly in the latter half of the depicted period.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Temperature Change (1900-2020)",
+        "yLabel": "Temperature Anomaly (°C)",
+        "xAxis": [
+          "1900",
+          "1920",
+          "1940",
+          "1960",
+          "1980",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Temperature Anomaly",
+            "values": [
+              -0.2,
+              -0.1,
+              0.05,
+              -0.05,
+              0.2,
+              0.5,
+              0.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Amazon Deforestation (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q23",
+      "modelAnswer": "The line chart illustrates Amazon deforestation patterns from 1990 to 2020, measured in thousands of square kilometers. Initially, deforestation was 20,000 sq km in 1990, showing a slight decrease to 16,000 sq km by 2000. A significant peak occurred in 2005, reaching 22,500 sq km, representing the highest recorded deforestation. Subsequently, there was a substantial decline, with the lowest point in 2015 at 10,500 sq km. However, the trend reversed, increasing to 18,000 sq km by 2020. Overall, despite periods of reduction, deforestation remains a persistent issue in the Amazon basin.",
+      "visual": {
+        "chartType": "line",
+        "title": "Amazon Deforestation (1990-2020)",
+        "yLabel": "Area Deforested (thousands of sq km)",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Deforestation",
+            "values": [
+              20,
+              18.5,
+              16,
+              22.5,
+              12,
+              10.5,
+              18
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Stages of the Scientific Method\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q24",
+      "modelAnswer": "The table illustrates the seven sequential stages of the scientific method, detailing each process step, key activities, and expected output. It begins with 'Observation/Question', leading to a 'Specific research question'. Stage three involves forming a 'Hypothesis', resulting in a 'Testable prediction'. The core experimental phase, 'Experimentation', yields 'Raw data', followed by 'Analysis' to produce 'Results'. The final stages are 'Conclusion', which answers the research question, and 'Communication', where findings are shared. This systematic approach ensures rigorous investigation and dissemination of knowledge.",
+      "visual": {
+        "chartType": "table",
+        "title": "Stages of the Scientific Method",
+        "headers": [
+          "Stage Number",
+          "Process Step",
+          "Key Activities",
+          "Output/Outcome"
+        ],
+        "rows": [
+          [
+            "1",
+            "Observation/Question",
+            "Identify a phenomenon; ask 'why' or 'how'",
+            "Specific research question"
+          ],
+          [
+            "2",
+            "Research/Background",
+            "Gather information; review existing literature",
+            "Informed understanding of topic"
+          ],
+          [
+            "3",
+            "Hypothesis",
+            "Formulate a testable explanation",
+            "Testable prediction (If...then...)"
+          ],
+          [
+            "4",
+            "Experimentation",
+            "Design and conduct controlled tests",
+            "Raw data"
+          ],
+          [
+            "5",
+            "Analysis",
+            "Interpret data; look for patterns",
+            "Results, graphs, statistical summaries"
+          ],
+          [
+            "6",
+            "Conclusion",
+            "Accept or reject hypothesis; discuss implications",
+            "Answer to research question; new questions"
+          ],
+          [
+            "7",
+            "Communication",
+            "Share findings with the scientific community",
+            "Published paper, presentation"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Key Components of Photosynthesis\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q25",
+      "modelAnswer": "The table illustrates the key components involved in photosynthesis. It categorizes each component by whether it's an input, output, catalyst, or location, and details its specific role. For instance, Carbon Dioxide, Water, and Sunlight are inputs, with Sunlight being the energy source. Glucose and Oxygen are outputs, where Glucose is the plant's primary energy and Oxygen is a byproduct. Chlorophyll acts as a catalyst, absorbing light, while Chloroplasts are the cellular location. This clear breakdown effectively communicates the essential elements and processes of photosynthesis.",
+      "visual": {
+        "chartType": "table",
+        "title": "Key Components of Photosynthesis",
+        "headers": [
+          "Component",
+          "Input/Output",
+          "Role"
+        ],
+        "rows": [
+          [
+            "Carbon Dioxide (CO2)",
+            "Input",
+            "Source of carbon atoms for glucose"
+          ],
+          [
+            "Water (H2O)",
+            "Input",
+            "Source of electrons and hydrogen ions"
+          ],
+          [
+            "Sunlight",
+            "Input",
+            "Energy source to drive the reaction"
+          ],
+          [
+            "Glucose (C6H12O6)",
+            "Output",
+            "Primary energy source for the plant"
+          ],
+          [
+            "Oxygen (O2)",
+            "Output",
+            "Byproduct released into the atmosphere"
+          ],
+          [
+            "Chlorophyll",
+            "Catalyst",
+            "Pigment that absorbs light energy"
+          ],
+          [
+            "Chloroplasts",
+            "Location",
+            "Organelle where photosynthesis occurs"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Population Growth Projections (Billions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q26",
+      "modelAnswer": "This line chart illustrates global population growth projections from 1950 to 2100. The world population has shown a consistent upward trend, starting at 2.5 billion in 1950 and reaching 6.1 billion by 2000. Projections indicate continued growth, reaching approximately 8 billion in 2025 and peaking around 10.9 billion by 2100. The steepest increase is observed between 1950 and 2000. While growth is projected to continue, the rate appears to slow down towards the end of the century, with a smaller increase from 10.5 billion in 2075 to 10.9 billion in 2100.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Population Growth Projections (Billions)",
+        "yLabel": "Population (Billions)",
+        "xAxis": [
+          "1950",
+          "1975",
+          "2000",
+          "2025",
+          "2050",
+          "2075",
+          "2100"
+        ],
+        "series": [
+          {
+            "label": "World Population",
+            "values": [
+              2.5,
+              4,
+              6.1,
+              8,
+              9.7,
+              10.5,
+              10.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q27",
+      "modelAnswer": "The lecture highlighted the importance of non-verbal communication, emphasizing that it conveys a substantial part of meaning beyond spoken words. It discussed various non-verbal cues like body language, facial expressions, and tone, noting they can even contradict verbal messages. The speaker stressed that developing an awareness of these cues, both in ourselves and others, is crucial for fostering effective and empathetic interactions, especially in diverse cultural contexts.",
+      "audioScript": "Communication is far more than just the words we speak; a significant portion of meaning is conveyed through non-verbal cues. These include body language, facial expressions, gestures, and even tone of voice. Often, non-verbal signals can contradict verbal messages, leading to misunderstanding or revealing true intentions. Cultivating an awareness of both our own and others' non-verbal communication is vital for effective and empathetic interaction, particularly in cross-cultural settings. It's a fundamental aspect of human connection.",
+      "keyPoints": [
+        "Non-verbal cues convey meaning",
+        "Body language, facial expressions, tone",
+        "Can contradict verbal messages",
+        "Awareness improves interaction"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Digital Communication Challenges”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q28",
+      "modelAnswer": "The lecture explored the challenges of digital communication despite its connectivity benefits. It pointed out that the lack of non-verbal feedback in text-based interactions often causes misunderstandings. Additionally, the constant flow of information leads to cognitive overload and shorter attention spans. The speaker concluded that developing digital literacy, encompassing critical evaluation and mindful usage, is crucial for maximizing its advantages and minimizing its negative impacts on effective communication.",
+      "audioScript": "The rise of digital communication, while offering unprecedented connectivity, also presents unique challenges. The absence of immediate non-verbal feedback in text-based interactions can lead to misinterpretations and escalated conflicts. Furthermore, the sheer volume of information and constant notifications contribute to cognitive overload and reduced attention spans. Developing digital literacy, including critical evaluation of sources and mindful usage, is essential to harness its benefits while mitigating its drawbacks for effective communication.",
+      "keyPoints": [
+        "Digital communication offers connectivity",
+        "Lacks non-verbal feedback, causes misinterpretation",
+        "Volume of info causes overload",
+        "Digital literacy is essential"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Verbal communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Mediums”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q29",
+      "modelAnswer": "Verbal communication",
+      "audioScript": "Which common communication medium uses spoken words and often involves immediate feedback?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Email",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Email Purpose”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q30",
+      "modelAnswer": "Email",
+      "audioScript": "What digital tool is primarily used for sending written messages over the internet?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Empathy",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Interpersonal Skills”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q31",
+      "modelAnswer": "Empathy",
+      "audioScript": "What skill involves understanding and sharing the feelings of another person?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Active listening",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Active Listening”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-037-q32",
+      "modelAnswer": "Active listening",
+      "audioScript": "What communication technique involves fully concentrating on what is being said?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Global Urbanization”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-037-q33",
+      "modelAnswer": "Global urbanization, fueled by economic opportunities and improved services, leads to rapid city growth but also creates challenges like resource pressure and environmental degradation, necessitating comprehensive planning for sustainable and equitable urban futures.",
+      "readText": "Global urbanization is an accelerating phenomenon, driven by a complex interplay of economic, social, and environmental factors. Economic opportunities in cities often act as a powerful magnet, attracting rural populations seeking better employment and improved living standards. Concurrently, advancements in infrastructure and services, though sometimes unevenly distributed, further enhance urban appeal. However, this rapid growth also presents significant challenges, including increased pressure on resources, environmental degradation, and the proliferation of informal settlements. Addressing these issues requires comprehensive urban planning and sustainable development strategies to ensure equitable and resilient cities for the future."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Modern technology has dramatically changed how people communicate. Discuss the advantages and disadvantages of these changes for individuals and society, and provide examples to support your arguments.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-037-q34",
+      "modelAnswer": "The advent of modern technology has undeniably revolutionized communication, offering a myriad of benefits alongside considerable drawbacks for both individuals and society. While instant global connectivity and unprecedented access to information have transformed interactions, these advancements also pose significant challenges to depth of connection and mental well-being.\n\nOne primary advantage is the unparalleled ease and speed of communication. Individuals can now connect with family and friends across continents instantly through video calls and messaging apps, fostering stronger long-distance relationships. For society, this translates into faster dissemination of news, facilitating emergency responses and global collaborations on critical issues like climate change or public health crises. Social media platforms, for instance, enable rapid information sharing and serve as powerful tools for social movements, giving voice to previously marginalized groups.\n\nHowever, these technological shifts are not without their downsides. The constant barrage of notifications and the expectation of immediate responses can lead to increased stress and anxiety, diminishing genuine face-to-face interactions. For society, the spread of misinformation and disinformation through these same channels poses a serious threat to informed public discourse and democratic processes. The echo chambers created by algorithms can polarize communities, making it harder to find common ground. Furthermore, the reliance on digital communication can sometimes lead to a decline in essential interpersonal skills, as people become less adept at interpreting nuanced non-verbal cues.\n\nIn conclusion, while modern communication technologies have brought about remarkable convenience and global interconnectedness, they also demand critical awareness. Striking a balance between leveraging their advantages for efficiency and connection, and mitigating their disadvantages related to mental health and societal cohesion, is crucial for navigating our increasingly digital world responsibly."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "The increasing reliance on digital communication, such as emails and social media, has diminished the importance of traditional face-to-face interaction. To what extent do you agree or disagree with this statement? Support your opinion with relevant reasons and examples.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-037-q35",
+      "modelAnswer": "The assertion that increasing reliance on digital communication has diminished the importance of traditional face-to-face interaction is a complex one, with valid arguments on both sides. While digital platforms certainly offer unparalleled convenience and reach, I largely disagree with the idea that they have rendered in-person communication less important; rather, they have redefined its role and often highlight its irreplaceable value.\n\nUndoubtedly, digital communication has become indispensable. Emails facilitate professional correspondence efficiently, allowing for detailed exchanges without geographical constraints. Social media platforms enable individuals to maintain contact with vast networks and share life updates, bridging distances that would otherwise be impractical. For example, a global business team can collaborate effectively through video conferencing, saving time and travel costs. These tools have democratized access to information and enabled immediate connection, which undeniably serves a crucial purpose in modern life.\n\nHowever, the depth and nuance conveyed through face-to-face interaction remain unparalleled. Non-verbal cues—body language, facial expressions, tone of voice—are vital components of human communication, often conveying more meaning than words alone. These elements are frequently lost or misinterpreted in digital exchanges, leading to misunderstandings or a lack of genuine empathy. Consider a difficult conversation, such as delivering sensitive news or resolving a conflict; these situations are almost always handled more effectively and empathetically in person, where immediate feedback and emotional resonance can be fully appreciated. Moreover, the sense of connection and trust built through shared physical presence is foundational for strong personal relationships and effective team dynamics, which digital interactions can only approximate.\n\nIn conclusion, while digital communication has undoubtedly expanded our communicative capabilities and offers distinct advantages in terms of speed and reach, it has not diminished the fundamental importance of face-to-face interaction. Instead, it has underscored the unique and irreplaceable value of in-person encounters for fostering deep understanding, emotional connection, and trust, particularly in critical personal and professional contexts."
+    }
+  ]
+}

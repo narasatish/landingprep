@@ -1,0 +1,297 @@
+{
+  "id": "pte-reading-004",
+  "exam": "pte",
+  "section": "reading",
+  "title": "PTE Academic Reading Practice Test 4",
+  "durationSeconds": 3300,
+  "questionCount": 15,
+  "questions": [
+    {
+      "id": "pte-reading-004-01-rwfib",
+      "questionType": "reading_writing_fill_blanks",
+      "passage": "Rapid urbanisation has created both opportunities and challenges for public health systems worldwide. Dense urban populations enable the cost-__1__ delivery of healthcare services and facilitate access to hospitals, clinics, and specialist care. However, overcrowding, inadequate __2__ infrastructure, and air pollution disproportionately affect low-income urban __3__, creating stark health inequalities within the same city. The World Health Organization estimates that more than 90 per cent of the world's urban __4__ breathe air that exceeds WHO __5__ limits for at least one major pollutant.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wordBank": [
+        "effective",
+        "sanitation",
+        "residents",
+        "population",
+        "guideline",
+        "expensive",
+        "rural",
+        "communities",
+        "regulatory",
+        "excess"
+      ],
+      "correctAnswers": [
+        "effective",
+        "sanitation",
+        "residents",
+        "population",
+        "guideline"
+      ],
+      "explanation": "Urbanisation enables healthcare access but creates health inequalities through overcrowding and pollution.",
+      "prompt": "Read the passage about the archaeology of ancient water management and select the correct word from each drop-down list to complete the text. Each blank has only one correct answer."
+    },
+    {
+      "id": "pte-reading-004-02",
+      "questionType": "reading_writing_fill_blanks",
+      "passage": "Rapid urbanisation has created both opportunities and challenges for public health systems worldwide. Dense urban populations enable the cost-__1__ delivery of healthcare services and facilitate access to hospitals, clinics, and specialist care. However, overcrowding, inadequate __2__ infrastructure, and air pollution disproportionately affect low-income urban __3__, creating stark health inequalities within the same city. The World Health Organization estimates that more than 90 per cent of the world's urban __4__ breathe air that exceeds WHO __5__ limits for at least one major pollutant.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wordBank": [
+        "effective",
+        "sanitation",
+        "residents",
+        "population",
+        "guideline",
+        "expensive",
+        "rural",
+        "communities",
+        "regulatory",
+        "excess"
+      ],
+      "correctAnswers": [
+        "effective",
+        "sanitation",
+        "residents",
+        "population",
+        "guideline"
+      ],
+      "explanation": "Urbanisation enables healthcare access but creates health inequalities through overcrowding and pollution.",
+      "prompt": "Read the passage about the mechanisms of climate regulation in temperate forests and select the correct word from each drop-down list to complete the text. Each blank has only one correct answer."
+    },
+    {
+      "id": "pte-reading-004-03-fib",
+      "questionType": "fill_in_blanks",
+      "passage": "Non-communicable diseases (NCDs) such as cardiovascular disease, diabetes, and cancer now __1[account|result|stem|contribute]__ for more than 70 per cent of global deaths. Urban environments can both __2[promote|restrict|prevent|eliminate]__ and protect against NCDs: cities typically offer better access to medical care and healthy food options, but also expose residents to elevated __3[stress|joy|relaxation|optimism]__, sedentary lifestyles, and environmental pollutants. Effective urban planning that integrates green __4[spaces|buildings|roads|markets]__ and active transport infrastructure has been shown to reduce NCD burden significantly.",
+      "explanation": "Urban design incorporating green spaces and active transport reduces non-communicable disease burden.",
+      "prompt": "Read the text about urban biodiversity and ecological corridors and drag words from the box below into the correct gaps in the passage."
+    },
+    {
+      "id": "pte-reading-004-04",
+      "questionType": "fill_in_blanks",
+      "passage": "Non-communicable diseases (NCDs) such as cardiovascular disease, diabetes, and cancer now __1[account|result|stem|contribute]__ for more than 70 per cent of global deaths. Urban environments can both __2[promote|restrict|prevent|eliminate]__ and protect against NCDs: cities typically offer better access to medical care and healthy food options, but also expose residents to elevated __3[stress|joy|relaxation|optimism]__, sedentary lifestyles, and environmental pollutants. Effective urban planning that integrates green __4[spaces|buildings|roads|markets]__ and active transport infrastructure has been shown to reduce NCD burden significantly.",
+      "explanation": "Urban design incorporating green spaces and active transport reduces non-communicable disease burden.",
+      "prompt": "Read the text about the economics of healthcare systems and drag words from the box below into the correct gaps in the passage."
+    },
+    {
+      "id": "pte-reading-004-05-reorder",
+      "questionType": "reorder_paragraphs",
+      "sentences": [
+        {
+          "id": "B",
+          "text": "Overcrowded tenements with poor ventilation provided ideal conditions for airborne transmission."
+        },
+        {
+          "id": "C",
+          "text": "Public health reformers campaigned for improved housing standards and sanitation infrastructure."
+        },
+        {
+          "id": "E",
+          "text": "This historical example demonstrates that urban design decisions can have profound long-term public health consequences."
+        },
+        {
+          "id": "D",
+          "text": "These interventions, combined with improved nutrition, dramatically reduced TB mortality before antibiotics were available."
+        },
+        {
+          "id": "A",
+          "text": "In the early twentieth century, tuberculosis was the leading cause of death in most industrialised cities."
+        }
+      ],
+      "correctOrder": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Arrange the sentences so that they form a coherent, logical paragraph.",
+      "prompt": "The text about the history of scientific measurement standards has been scrambled. Arrange the text boxes below in the correct order to form a coherent passage."
+    },
+    {
+      "id": "pte-reading-004-06",
+      "questionType": "reorder_paragraphs",
+      "sentences": [
+        {
+          "id": "D",
+          "text": "These interventions, combined with improved nutrition, dramatically reduced TB mortality before antibiotics were available."
+        },
+        {
+          "id": "A",
+          "text": "In the early twentieth century, tuberculosis was the leading cause of death in most industrialised cities."
+        },
+        {
+          "id": "E",
+          "text": "This historical example demonstrates that urban design decisions can have profound long-term public health consequences."
+        },
+        {
+          "id": "B",
+          "text": "Overcrowded tenements with poor ventilation provided ideal conditions for airborne transmission."
+        },
+        {
+          "id": "C",
+          "text": "Public health reformers campaigned for improved housing standards and sanitation infrastructure."
+        }
+      ],
+      "correctOrder": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Arrange the sentences so that they form a coherent, logical paragraph.",
+      "prompt": "The text about the role of gut bacteria in mental health has been scrambled. Arrange the text boxes below in the correct order to form a coherent passage."
+    },
+    {
+      "id": "pte-reading-004-07-mcqm",
+      "questionType": "multiple_choice_multiple",
+      "passage": "Walkable urban neighbourhoods — those with mixed land uses, well-maintained footpaths, and street-level retail — are associated with numerous health benefits. Residents of walkable areas accumulate more incidental physical activity through routine trips to shops, schools, and transit stops. Studies in multiple countries have linked neighbourhood walkability with lower rates of obesity, type 2 diabetes, and hypertension. Social benefits are also documented: walkable areas tend to have stronger community cohesion and lower rates of social isolation among older adults.",
+      "question": "Which TWO health benefits are associated with walkable neighbourhoods in the passage?",
+      "options": [
+        "Higher rates of obesity",
+        "Lower rates of type 2 diabetes",
+        "Increased social isolation",
+        "Lower rates of hypertension",
+        "Reduced access to specialist care"
+      ],
+      "correctAnswers": [
+        "Lower rates of type 2 diabetes",
+        "Lower rates of hypertension"
+      ],
+      "requiredCount": 2,
+      "explanation": "Correct: Lower rates of type 2 diabetes; Lower rates of hypertension",
+      "prompt": "Read the passage and answer the question. More than one response is correct. Select all that apply.",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "pte-reading-004-08-mcqs",
+      "questionType": "multiple_choice_single",
+      "passage": "Heat islands — urban areas that are significantly warmer than surrounding rural areas — pose a growing public health risk as global temperatures rise. The excess heat stems from the replacement of vegetation with heat-absorbing surfaces, reduced evapotranspiration, and waste heat from buildings and vehicles. Vulnerable populations including the elderly, young children, and outdoor workers face the greatest health risks during extreme heat events. Targeted greening interventions, such as street trees and green roofs, can reduce local temperatures by 2–8 degrees Celsius.",
+      "question": "Which group is identified in the passage as facing the greatest health risk from urban heat islands?",
+      "options": [
+        "Young professionals working indoors",
+        "The elderly, young children, and outdoor workers",
+        "Residents of rural areas surrounding cities",
+        "Building and construction planners"
+      ],
+      "correctAnswer": "The elderly, young children, and outdoor workers",
+      "explanation": "Correct answer: The elderly, young children, and outdoor workers",
+      "prompt": "Read the passage and select the best answer from the choices below."
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the history of written language development and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-004-q09"
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about cognitive theories of language acquisition and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-004-q10"
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the economics of healthcare systems and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-004-q11"
+    },
+    {
+      "questionType": "fill_in_blanks",
+      "correctAnswer": "refer to passage",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the development of international trade law and drag the words from the box into the correct gaps in the text.",
+      "wordBank": [
+        "critical",
+        "significant",
+        "established",
+        "demonstrated",
+        "revealed"
+      ],
+      "id": "pte-reading-004-q12"
+    },
+    {
+      "questionType": "fill_in_blanks",
+      "correctAnswer": "refer to passage",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about advances in battery technology for electric vehicles and drag the words from the box into the correct gaps in the text.",
+      "wordBank": [
+        "critical",
+        "significant",
+        "established",
+        "demonstrated",
+        "revealed"
+      ],
+      "id": "pte-reading-004-q13"
+    },
+    {
+      "questionType": "multiple_choice_multiple",
+      "correctAnswer": "A, E",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Which of the following are mentioned as effects of deforestation on local communities? (Choose TWO answers)",
+      "options": [
+        "A. Loss of biodiversity in surrounding areas",
+        "B. Disruption of traditional livelihoods",
+        "C. Increased rainfall in the region",
+        "D. Improved water quality downstream",
+        "E. Soil erosion and land degradation"
+      ],
+      "id": "pte-reading-004-q14"
+    },
+    {
+      "questionType": "multiple_choice_single",
+      "correctAnswer": "B",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Which statement best summarises the writer's viewpoint?",
+      "options": [
+        "A. To argue that current policies are insufficient",
+        "B. To describe a problem and propose potential solutions",
+        "C. To compare two opposing scientific theories",
+        "D. To demonstrate that technological progress is inevitable"
+      ],
+      "id": "pte-reading-004-q15"
+    }
+  ]
+}

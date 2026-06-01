@@ -1,0 +1,79 @@
+{
+  "id": "ielts-writing-023",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 23",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-023-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The chart shows the percentage of children engaging in regular physical activity in five countries in 2019 and 2023. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "children and screens",
+      "modelAnswer": "The bar chart illustrates the proportion of children participating in regular physical activity across five different countries (A, B, C, D, and E) in two specific years: 2019 and 2023.\n\nOverall, it is evident that there was an increase in the percentage of children engaging in regular physical activity in most countries over the four-year period. Country C consistently had the highest engagement, while Country D showed the most significant improvement.\n\nIn 2019, Country C recorded the highest percentage of active children at 65%, followed by Country A at 55% and Country E at 50%. Countries B and D had lower figures, with 40% and 30% respectively. By 2023, Country C remained the leader, though its percentage slightly decreased to 62%. Country A and Country E both saw modest increases, reaching 60% and 55% respectively.\n\nThe most notable changes occurred in Country B and Country D. Country B experienced an 8-percentage-point rise, from 40% in 2019 to 48% in 2023. Country D showed the most dramatic improvement, almost doubling its figure from 30% to 45% over the period. These two countries, despite their substantial growth, still had the lowest overall participation rates in 2023.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Percentage of Children Engaging in Regular Physical Activity (2019 vs. 2023)",
+        "yLabel": "Percentage (%)",
+        "xAxis": [
+          "Country A",
+          "Country B",
+          "Country C",
+          "Country D",
+          "Country E"
+        ],
+        "series": [
+          {
+            "label": "2019",
+            "values": [
+              55,
+              40,
+              65,
+              30,
+              50
+            ]
+          },
+          {
+            "label": "2023",
+            "values": [
+              60,
+              48,
+              62,
+              45,
+              55
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-023-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Children today spend too much time on screens and too little time engaged in physical activity. What are the consequences of this trend, and how can it be reversed?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "children and screens",
+      "modelAnswer": "The contemporary childhood experience is increasingly characterised by extensive screen engagement at the expense of vital physical activity. This pervasive trend carries significant ramifications for children's development, necessitating urgent and concerted efforts to redirect their attention towards more active pursuits.\n\nThe primary consequences of this sedentary lifestyle are multifaceted, impacting both physical and mental well-being. Physically, reduced activity levels contribute to a higher prevalence of childhood obesity, poor cardiovascular health, and underdeveloped motor skills. For instance, a child spending hours on a tablet instead of playing outdoors misses crucial opportunities for bone strengthening through weight-bearing exercise and coordination development. Mentally, excessive screen time has been linked to decreased attention spans, impaired social skills, and increased instances of anxiety and depression, as virtual interactions often displace real-world engagements that foster empathy and communication.\n\nReversing this trend requires a multi-pronged approach involving parents, educators, and policymakers. Parents must actively limit screen access, establishing clear boundaries and encouraging alternative activities such as family walks, cycling, or participation in sports clubs. Schools have a pivotal role in integrating more physical education into the curriculum, offering a diverse range of sports, and promoting active break times. For example, implementing \"active learning\" strategies where movement is incorporated into lessons can significantly boost daily physical expenditure. Furthermore, urban planners can contribute by designing child-friendly environments with accessible parks and safe play areas, thereby making physical activity a more convenient and appealing option for families. Ultimately, a collective societal shift in prioritising active play over passive entertainment is essential to cultivate healthier future generations."
+    }
+  ],
+  "variant": "academic"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "toefl-full-018",
+  "exam": "toefl",
+  "type": "full",
+  "title": "TOEFL iBT Full Mock Test 18",
+  "durationSeconds": 6960,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "reading",
+      "testId": "toefl-reading-018",
+      "file": "toefl/reading/test-018.json"
+    },
+    {
+      "section": "listening",
+      "testId": "toefl-listening-018",
+      "file": "toefl/listening/test-018.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "toefl-speaking-018",
+      "file": "toefl/speaking/test-018.json"
+    },
+    {
+      "section": "writing",
+      "testId": "toefl-writing-018",
+      "file": "toefl/writing/test-018.json"
+    }
+  ]
+}

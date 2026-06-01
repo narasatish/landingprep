@@ -1,0 +1,907 @@
+{
+  "id": "ielts-listening-028",
+  "exam": "ielts",
+  "section": "listening",
+  "title": "IELTS Listening Practice Test 28",
+  "durationSeconds": 2400,
+  "questionCount": 40,
+  "listeningScripts": [
+    {
+      "id": "ielts-listening-028-p1",
+      "part": 1,
+      "title": "Arranging a Home Repair Service",
+      "text": "Operator: QuickFix Home Services, how can I help?\nCustomer: Hello, I need someone to repair a broken boiler.\nOperator: Of course. Name and address please?\nCustomer: Anna Petrov. 47 Chestnut Avenue, Barton, postcode BT4 8LD.\nOperator: And a contact number?\nCustomer: 01622 793 450.\nOperator: What type of boiler is it?\nCustomer: A gas combi boiler. The brand is Vaillant.\nOperator: When did it stop working?\nCustomer: Yesterday evening — around seven o'clock.\nOperator: We can send an engineer tomorrow between nine and twelve. The call-out fee is sixty-five pounds. Parts are extra if needed.\nCustomer: That's fine.\nOperator: Our engineer's name is Marcus Webb. He'll call thirty minutes before arriving. Do you need a parking permit?\nCustomer: No, there's free parking on the road.\nOperator: Perfect. You'll receive a text confirmation within the hour.",
+      "formLayout": {
+        "title": "QuickFix Home Services — Service Request Form",
+        "example": {
+          "label": "Service category",
+          "content": "boiler / plumbing / electrical"
+        },
+        "rows": [
+          {
+            "type": "blank",
+            "num": 1,
+            "label": "Customer name",
+            "prefix": "",
+            "suffix": "",
+            "answer": "Anna Petrov"
+          },
+          {
+            "type": "blank",
+            "num": 2,
+            "label": "House number",
+            "prefix": "",
+            "suffix": " Chestnut Avenue",
+            "answer": "47"
+          },
+          {
+            "type": "blank",
+            "num": 3,
+            "label": "Postcode",
+            "prefix": "",
+            "suffix": "",
+            "answer": "BT4 8LD"
+          },
+          {
+            "type": "blank",
+            "num": 4,
+            "label": "Contact telephone",
+            "prefix": "",
+            "suffix": "",
+            "answer": "01622 793 450"
+          },
+          {
+            "type": "blank",
+            "num": 5,
+            "label": "Boiler fuel type",
+            "prefix": "",
+            "suffix": " combi",
+            "answer": "gas"
+          },
+          {
+            "type": "blank",
+            "num": 6,
+            "label": "Boiler brand",
+            "prefix": "",
+            "suffix": "",
+            "answer": "Vaillant"
+          },
+          {
+            "type": "blank",
+            "num": 7,
+            "label": "Appointment window",
+            "prefix": "9 am to ",
+            "suffix": " pm",
+            "answer": "12"
+          },
+          {
+            "type": "blank",
+            "num": 8,
+            "label": "Call-out fee",
+            "prefix": "£",
+            "suffix": "",
+            "answer": "65"
+          },
+          {
+            "type": "blank",
+            "num": 9,
+            "labelBlank": true,
+            "labelSuffix": "'s name",
+            "rightContent": "Marcus Webb",
+            "answer": "Engineer"
+          },
+          {
+            "type": "blank",
+            "num": 10,
+            "label": "Confirmation method",
+            "prefix": "",
+            "suffix": "",
+            "answer": "text / text message"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-listening-028-p2",
+      "part": 2,
+      "title": "National Sports Academy — Facilities Tour",
+      "text": "Guide: Welcome to the National Sports Academy. I'm delighted to be showing you around today and I hope by the end of this tour you'll have a clear picture of all the world-class facilities we have here. The Academy was founded in 1998 and has trained athletes who have gone on to represent their country at the highest level, including three Olympic medallists in the past decade alone. We're incredibly proud of what's been achieved here and we hope you'll feel inspired by what you see.\n\nLet's start at Zone A — the reception area. This is where you enter the Academy and where all visitors, members, and athletes sign in. The reception team can help with membership enquiries, timetable information, and facility bookings. There is also a notice board here displaying upcoming events, competitions, and community programmes.\n\nDirectly behind reception, through the double doors, is Zone B — the main gym. This is a substantial space measuring nearly two thousand square metres and can accommodate up to one hundred and fifty users at one time. It is equipped with a full complement of strength training equipment including free weights, cable machines, and resistance machines, as well as around sixty cardiovascular machines including treadmills, rowing machines, and cycling ergometers. The gym is open from five-thirty in the morning until ten at night, seven days a week.\n\nTo the left of the main gym is Zone C — the swimming pool. This is a fifty-metre competition-standard pool with ten lanes. The pool is used for training by our academy swimmers but is also available to the public during designated open swimming sessions. The viewing gallery above the pool can accommodate two hundred spectators, which comes in useful during inter-academy competitions.\n\nZone D is the indoor athletics track, located in the large hall at the rear of the building. This is a two-hundred-metre banked indoor track with a synthetic surface suitable for sprinting, distance running, and field events. The long jump pit and high jump area are located at the northern end of the hall. The track is bookable by clubs, schools, and individual athletes through our online system.\n\nIn the eastern wing of the building, off the main corridor from reception, are Zone E — the squash courts. There are six courts in total, all with glass back walls for spectating. Courts can be booked in forty-five minute slots up to seven days in advance. Rackets and balls can be hired from reception for two pounds per session.\n\nZone F is the physiotherapy centre, next to the squash courts in the eastern wing. The centre has eight treatment rooms and is staffed by six qualified physiotherapists. Appointments are essential — you cannot walk in without a prior booking. Sessions last either thirty or sixty minutes depending on the treatment required. The physiotherapy centre is available to both Academy members and members of the public with a referral from their GP.\n\nFurther along the eastern wing is Zone G — the sports science laboratory. This is a specialist research facility used by our performance team and by visiting researchers. The lab offers services including VO2 max testing, biomechanical analysis, body composition measurement, and lactate threshold testing. Access to the sports science lab is by appointment only and is available to elite athletes and research partners.\n\nZone H — the changing rooms — are centrally located between the main gym and the swimming pool for easy access from both. There are separate male, female, and gender-neutral changing facilities, each with lockers, showers, steam rooms, and hair dryers. A coin-operated locker system is in use — one pound coins or a pound deposit card available from reception.\n\nZone I is the café, located at the front of the building to the left of the main reception as you enter. The café specialises in sports nutrition and serves high-protein meals, fresh juices, smoothies, and energy-boosting snacks. It is open from six thirty in the morning until eight in the evening on weekdays, and from eight am to six pm on weekends. There is also a meal prep service available for athletes on structured nutrition plans.\n\nFinally, Zone J — the viewing gallery — is located on the upper level above the swimming pool and overlooks both the pool and, through a glass partition, part of the indoor athletics track. The gallery is open to spectators during all public sessions and during competitions. It seats two hundred and has its own small refreshment kiosk. Access is via the staircase or the lift near the reception area.\n\nAre there any questions before we start the tour proper? Excellent — let's head to the main gym first."
+    },
+    {
+      "id": "ielts-listening-028-p3",
+      "part": 3,
+      "title": "Seminar on Climate Change Adaptation in Agriculture",
+      "text": "Tutor: Today we're looking at how farmers are adapting to climate change. Sarah, you've been researching this — what are the main strategies?\nSarah: There are basically four categories: changing crop varieties, adjusting planting calendars, improving irrigation efficiency, and diversifying into non-crop income streams like agritourism.\nMike: From what I read, the shift to drought-resistant varieties is the most widely adopted strategy globally, though it depends heavily on seed availability and cost.\nTutor: What barriers prevent farmers from adapting?\nSarah: In developing countries, the main barriers are access to finance and lack of reliable weather forecasting at the local level. Farmers need hyper-local data, not national averages.\nMike: There's also a knowledge gap. Many smallholders rely on generational knowledge that may no longer match current climate conditions. Extension services have a critical role.\nTutor: How effective have government subsidy programmes been?\nSarah: Mixed results. Countries that tied subsidies to specific adaptation behaviours — like water-efficient irrigation — saw much better outcomes than those that gave blanket payments.\nMike: India's PM-KISAN scheme is often cited as an example of blanket support that failed to drive specific adaptive behaviours.\nTutor: What does the evidence suggest about the future food supply?\nSarah: If current emission trajectories continue, yield losses for staple crops like wheat and maize could reach thirty percent by 2080 in tropical regions.\nTutor: And what would reverse that?\nMike: A combination of accelerated breeding programmes, agroforestry, and precision agriculture technologies — but these require significant upfront investment."
+    },
+    {
+      "id": "ielts-listening-028-p4",
+      "part": 4,
+      "title": "Lecture: The History of Antibiotics",
+      "text": "Today I want to talk about the history of antibiotics — arguably one of the most important developments in twentieth-century medicine.\n\nThe story begins in 1928 when Alexander Fleming noticed that a mould called Penicillium notatum was inhibiting the growth of bacteria on one of his culture plates. He published his findings but was initially unable to isolate the active compound in large enough quantities to be clinically useful.\n\nIt wasn't until 1940 that Howard Florey and Ernst Chain at Oxford managed to purify penicillin and demonstrate its effectiveness in mice. The following year, in 1941, they treated the first human patient — a police officer with a severe infection — with remarkable results, though limited supplies meant the patient eventually relapsed.\n\nThe real breakthrough came during the Second World War, when mass production was achieved through collaboration between British and American pharmaceutical companies. By 1944, enough penicillin had been produced to treat all wounded Allied soldiers. This industrial-scale production required entirely new fermentation techniques.\n\nFollowing the war, the golden era of antibiotic discovery began, lasting roughly from 1950 to 1970. During this period, major antibiotic classes including tetracyclines, erythromycin, and vancomycin were discovered, largely from soil bacteria. Researchers estimated that soil contained thousands of antibiotic-producing organisms waiting to be identified.\n\nHowever, the overuse of antibiotics in both human medicine and agriculture has driven the evolution of resistant bacteria at an alarming rate. The World Health Organization now lists antimicrobial resistance as one of the greatest global health threats. New antibiotic approvals have declined sharply since the 1980s as pharmaceutical companies shifted resources toward more profitable chronic disease treatments.\n\nCurrent strategies to address resistance include antibiotic stewardship programmes, rapid diagnostic testing to avoid prescribing antibiotics for viral infections, and investment in novel antimicrobial compounds including bacteriophage therapy and antimicrobial peptides."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-listening-028-q1",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 1,
+      "label": "Customer name",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Anna Petrov",
+      "explanation": "The answer \"Anna Petrov\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the check-in time?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-028-q2",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 2,
+      "label": "House number",
+      "prefix": "",
+      "suffix": " Chestnut Avenue",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "47",
+      "explanation": "The answer \"47\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-028-q3",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 3,
+      "label": "Postcode",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "BT4 8LD",
+      "explanation": "The answer \"BT4 8LD\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the total cost?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-028-q4",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 4,
+      "label": "Contact telephone",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "01622 793 450",
+      "explanation": "The answer \"01622 793 450\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-028-q5",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 5,
+      "label": "Boiler fuel type",
+      "prefix": "",
+      "suffix": " combi",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "gas",
+      "explanation": "The answer \"gas\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the breakfast option?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-028-q6",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 6,
+      "label": "Boiler brand",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "Vaillant",
+      "explanation": "The answer \"Vaillant\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-028-q7",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 7,
+      "label": "Appointment window",
+      "prefix": "9 am to ",
+      "suffix": " pm",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "12",
+      "explanation": "The answer \"12\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the room type?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-028-q8",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 8,
+      "label": "Call-out fee",
+      "prefix": "£",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "65",
+      "explanation": "The answer \"65\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-028-q9",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 9,
+      "label": "",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": true,
+      "labelSuffix": "'s name",
+      "rightContent": "Marcus Webb",
+      "answer": "Engineer",
+      "explanation": "The answer \"Engineer\" is stated in the conversation.",
+      "prompt": "According to the recording, what is the cancellation policy?",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-028-q10",
+      "part": 1,
+      "questionType": "form_field",
+      "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "num": 10,
+      "label": "Confirmation method",
+      "prefix": "",
+      "suffix": "",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "text / text message",
+      "explanation": "The answer \"text / text message\" is stated in the conversation.",
+      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
+      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "partNumber": 1
+    },
+    {
+      "id": "ielts-listening-028-q11",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 11,
+      "prompt": "How many lanes does the swimming pool have?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The guide states 'This is a fifty-metre competition-standard pool with ten lanes'"
+    },
+    {
+      "id": "ielts-listening-028-q12",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 12,
+      "prompt": "What is the maximum capacity of the main gym?",
+      "options": [
+        "100",
+        "120",
+        "150",
+        "200"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The guide says the gym 'can accommodate up to one hundred and fifty users at one time'"
+    },
+    {
+      "id": "ielts-listening-028-q13",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 13,
+      "prompt": "What is required to use the physiotherapy centre?",
+      "options": [
+        "a gym membership",
+        "a doctor's referral for non-members",
+        "a prior appointment",
+        "a student ID"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The guide says 'Appointments are essential — you cannot walk in without a prior booking'"
+    },
+    {
+      "id": "ielts-listening-028-q14",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 14,
+      "prompt": "What time does the café open on weekdays?",
+      "options": [
+        "5:30 am",
+        "6:00 am",
+        "6:30 am",
+        "7:00 am"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The guide says the café is open 'from six thirty in the morning until eight in the evening on weekdays'"
+    },
+    {
+      "id": "ielts-listening-028-q15",
+      "part": 2,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 15,
+      "prompt": "What can be viewed from the viewing gallery?",
+      "options": [
+        "the main gym and the squash courts",
+        "the pool and part of the athletics track",
+        "the sports science lab and the pool",
+        "the changing rooms and the café"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The guide says the gallery 'overlooks both the pool and, through a glass partition, part of the indoor athletics track'"
+    },
+    {
+      "id": "ielts-listening-028-q16",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "National Sports Academy — Facilities Plan",
+      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "mapKey": {
+        "A": "Reception",
+        "B": "Main gym",
+        "C": "Swimming pool",
+        "D": "Indoor athletics track",
+        "E": "Squash courts",
+        "F": "Physiotherapy centre",
+        "G": "Sports science lab",
+        "H": "Changing rooms",
+        "I": "Café",
+        "J": "Viewing gallery"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 16,
+      "prompt": "Entry point where visitors and athletes sign in with notice board",
+      "correctAnswer": "A",
+      "explanation": "The correct letter is A (Reception)."
+    },
+    {
+      "id": "ielts-listening-028-q17",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "National Sports Academy — Facilities Plan",
+      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "mapKey": {
+        "A": "Reception",
+        "B": "Main gym",
+        "C": "Swimming pool",
+        "D": "Indoor athletics track",
+        "E": "Squash courts",
+        "F": "Physiotherapy centre",
+        "G": "Sports science lab",
+        "H": "Changing rooms",
+        "I": "Café",
+        "J": "Viewing gallery"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 17,
+      "prompt": "2000 sq metre training space with 60+ cardio machines, open 5:30 am–10 pm",
+      "correctAnswer": "B",
+      "explanation": "The correct letter is B (Main gym)."
+    },
+    {
+      "id": "ielts-listening-028-q18",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "National Sports Academy — Facilities Plan",
+      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "mapKey": {
+        "A": "Reception",
+        "B": "Main gym",
+        "C": "Swimming pool",
+        "D": "Indoor athletics track",
+        "E": "Squash courts",
+        "F": "Physiotherapy centre",
+        "G": "Sports science lab",
+        "H": "Changing rooms",
+        "I": "Café",
+        "J": "Viewing gallery"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 18,
+      "prompt": "50-metre 10-lane competition pool to left of main gym",
+      "correctAnswer": "C",
+      "explanation": "The correct letter is C (Swimming pool)."
+    },
+    {
+      "id": "ielts-listening-028-q19",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "National Sports Academy — Facilities Plan",
+      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "mapKey": {
+        "A": "Reception",
+        "B": "Main gym",
+        "C": "Swimming pool",
+        "D": "Indoor athletics track",
+        "E": "Squash courts",
+        "F": "Physiotherapy centre",
+        "G": "Sports science lab",
+        "H": "Changing rooms",
+        "I": "Café",
+        "J": "Viewing gallery"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 19,
+      "prompt": "200-metre banked indoor running track at rear of building",
+      "correctAnswer": "D",
+      "explanation": "The correct letter is D (Indoor athletics track)."
+    },
+    {
+      "id": "ielts-listening-028-q20",
+      "part": 2,
+      "questionType": "map_labelling",
+      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
+      "mapTitle": "National Sports Academy — Facilities Plan",
+      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "mapKey": {
+        "A": "Reception",
+        "B": "Main gym",
+        "C": "Swimming pool",
+        "D": "Indoor athletics track",
+        "E": "Squash courts",
+        "F": "Physiotherapy centre",
+        "G": "Sports science lab",
+        "H": "Changing rooms",
+        "I": "Café",
+        "J": "Viewing gallery"
+      },
+      "mapLetters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "num": 20,
+      "prompt": "Six glass-backed courts in eastern wing, bookable in 45-minute slots",
+      "correctAnswer": "E",
+      "explanation": "The correct letter is E (Squash courts)."
+    },
+    {
+      "id": "ielts-listening-028-q21",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 21,
+      "prompt": "Which adaptation strategy is described as most widely adopted globally?",
+      "options": [
+        "adjusting planting calendars",
+        "agritourism diversification",
+        "drought-resistant crop varieties",
+        "improved irrigation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
+    },
+    {
+      "id": "ielts-listening-028-q22",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 22,
+      "prompt": "What type of weather data do farmers most need?",
+      "options": [
+        "national averages",
+        "seasonal forecasts",
+        "hyper-local data",
+        "satellite imagery"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sarah says 'Farmers need hyper-local data, not national averages'"
+    },
+    {
+      "id": "ielts-listening-028-q23",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 23,
+      "prompt": "Which country's scheme is cited as an example of ineffective blanket support?",
+      "options": [
+        "Bangladesh",
+        "Kenya",
+        "China",
+        "India"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mike cites 'India's PM-KISAN scheme'"
+    },
+    {
+      "id": "ielts-listening-028-q24",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 24,
+      "prompt": "By how much could tropical crop yields fall by 2080?",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "40%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
+    },
+    {
+      "id": "ielts-listening-028-q25",
+      "part": 3,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 25,
+      "prompt": "What does Mike identify as a requirement for advanced adaptation technologies?",
+      "options": [
+        "international cooperation",
+        "significant upfront investment",
+        "government mandates",
+        "reduced crop prices"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mike says these 'require significant upfront investment'"
+    },
+    {
+      "id": "ielts-listening-028-q26",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 26,
+      "prompt": "introducing new equipment in the laboratory",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-028-q27",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 27,
+      "prompt": "keeping written records of experiments",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-028-q28",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 28,
+      "prompt": "sharing results with other research groups",
+      "correctAnswer": "B",
+      "explanation": "The speaker's attitude is B. She is undecided."
+    },
+    {
+      "id": "ielts-listening-028-q29",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 29,
+      "prompt": "the importance of the project deadline",
+      "correctAnswer": "A",
+      "explanation": "The speaker's attitude is A. She agrees."
+    },
+    {
+      "id": "ielts-listening-028-q30",
+      "part": 3,
+      "questionType": "matching_categorise",
+      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "categoryOptions": [
+        "A. She agrees",
+        "B. She is undecided",
+        "C. She disagrees"
+      ],
+      "num": 30,
+      "prompt": "the proposal to extend the study",
+      "correctAnswer": "C",
+      "explanation": "The speaker's attitude is C. She disagrees."
+    },
+    {
+      "id": "ielts-listening-028-q31",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 31,
+      "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
+      "correctAnswer": "mould",
+      "explanation": "The correct answer is: \"mould\".",
+      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-028-q32",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 32,
+      "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
+      "correctAnswer": "isolate / purify",
+      "explanation": "The correct answer is: \"isolate / purify\".",
+      "prompt": "The speaker describes the current research of the topic.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-028-q33",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 33,
+      "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
+      "correctAnswer": "Oxford",
+      "explanation": "The correct answer is: \"Oxford\".",
+      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-028-q34",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 34,
+      "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
+      "correctAnswer": "Police officer",
+      "explanation": "The correct answer is: \"Police officer\".",
+      "prompt": "The speaker describes the key challenge of the topic.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-028-q35",
+      "part": 4,
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "num": 35,
+      "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
+      "correctAnswer": "fermentation",
+      "explanation": "The correct answer is: \"fermentation\".",
+      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
+      "audioContext": "A new student registers at the university library and gets information about services.",
+      "partNumber": 4
+    },
+    {
+      "id": "ielts-listening-028-q36",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 36,
+      "prompt": "According to the lecture, the main reason antibiotic discovery declined after the 1980s was that",
+      "options": [
+        "A  resistant bacteria evolved too quickly",
+        "B  pharmaceutical companies moved to more profitable areas",
+        "C  all known antibiotic compounds had already been tested",
+        "D  government funding was withdrawn"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer says companies 'shifted resources toward more profitable chronic disease treatments'"
+    },
+    {
+      "id": "ielts-listening-028-q37",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 37,
+      "prompt": "The golden era of antibiotic discovery lasted approximately",
+      "options": [
+        "A  10 years",
+        "B  20 years",
+        "C  30 years",
+        "D  40 years"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The golden era ran 'from 1950 to 1970' — roughly 20 years"
+    },
+    {
+      "id": "ielts-listening-028-q38",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 38,
+      "prompt": "According to the lecturer, most antibiotics discovered in the golden era came from",
+      "options": [
+        "A  synthetic chemicals",
+        "B  marine organisms",
+        "C  soil bacteria",
+        "D  hospital environments"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer states they were discovered 'largely from soil bacteria'"
+    },
+    {
+      "id": "ielts-listening-028-q39",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 39,
+      "prompt": "The World Health Organization describes antimicrobial resistance as",
+      "options": [
+        "A  a manageable risk with current technology",
+        "B  one of the greatest global health threats",
+        "C  primarily a problem in developing countries",
+        "D  less serious than other infectious diseases"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecturer quotes WHO listing it as 'one of the greatest global health threats'"
+    },
+    {
+      "id": "ielts-listening-028-q40",
+      "part": 4,
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "num": 40,
+      "prompt": "Which novel treatment approach is specifically mentioned as an alternative to conventional antibiotics?",
+      "options": [
+        "A  gene therapy",
+        "B  vaccination programmes",
+        "C  bacteriophage therapy",
+        "D  surgical interventions"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecturer mentions 'bacteriophage therapy' as a novel antimicrobial approach"
+    }
+  ],
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Part 1: The History of Coffee Trade",
+      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "questionRange": [
+        1,
+        10
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Part 2: Sleep and Memory Consolidation",
+      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
+      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "questionRange": [
+        11,
+        20
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title": "Part 3: The History of Coffee Trade",
+      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "questionRange": [
+        21,
+        30
+      ]
+    },
+    {
+      "partNumber": 4,
+      "title": "Part 4: Sleep and Memory Consolidation",
+      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
+      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "questionRange": [
+        31,
+        40
+      ]
+    }
+  ]
+}

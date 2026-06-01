@@ -1,0 +1,111 @@
+{
+  "id": "ielts-writing-010",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 10",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-010-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The map shows changes in the layout of a town centre between 2000 and the present day. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "heritage and development",
+      "modelAnswer": "The map illustrates the significant transformations that have occurred in a town centre between the year 2000 and the present day. Overall, the town centre has undergone considerable development, with a clear emphasis on expanding commercial and public spaces while reducing private vehicle areas.\n\nIn 2000, the town centre was characterised by a Main Road running East-West, with a Shopping Centre to its South-East and a Car Park to its North-West. A Bus Station was situated South-West of the Main Road, and a Park lay North-East. Housing was located North of the Main Road, East of the River. The river itself ran North-South, East of the Main Road, forming a natural boundary.\n\nBy the present day, several key changes are evident. The Car Park has been entirely replaced by a new Pedestrian Zone, indicating a shift towards pedestrian-friendly infrastructure. The original Shopping Centre has expanded significantly, now occupying a larger area South of the Main Road and West of the River. To facilitate access, a new Bridge has been constructed, connecting the Main Road directly to the expanded Shopping Centre across the river. Furthermore, the Bus Station has also been enlarged, while the Park has been reduced in size. The housing area remains in its original location but appears to have increased in density.",
+      "visual": {
+        "chartType": "table",
+        "title": "Changes in Town Centre Layout (2000 vs. Present)",
+        "headers": [
+          "Feature",
+          "Location in 2000",
+          "Location in Present Day",
+          "Change"
+        ],
+        "rows": [
+          [
+            "Main Road",
+            "Runs East-West through centre",
+            "Runs East-West through centre",
+            "No Change"
+          ],
+          [
+            "Shopping Centre",
+            "South-East of Main Road",
+            "Expanded, now South of Main Road, West of River",
+            "Expanded, relocated slightly"
+          ],
+          [
+            "River",
+            "Runs North-South, East of Main Road",
+            "Runs North-South, East of Main Road",
+            "No Change"
+          ],
+          [
+            "Car Park",
+            "North-West of Main Road",
+            "Replaced by Pedestrian Zone",
+            "Removed"
+          ],
+          [
+            "Bus Station",
+            "South-West of Main Road",
+            "South-West of Main Road, larger",
+            "Expanded"
+          ],
+          [
+            "Park",
+            "North-East of Main Road, West of River",
+            "North-East of Main Road, West of River, smaller",
+            "Reduced in size"
+          ],
+          [
+            "Housing",
+            "North of Main Road, East of River",
+            "North of Main Road, East of River, more concentrated",
+            "Increased density"
+          ],
+          [
+            "Pedestrian Zone",
+            "None",
+            "North-West of Main Road (replacing Car Park)",
+            "Added"
+          ],
+          [
+            "Bridge",
+            "None",
+            "Connects Main Road to Shopping Centre across River",
+            "Added"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-010-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Some people believe that it is important to preserve old buildings and historic areas, even at great expense. Others think the money should be spent on building modern infrastructure. Discuss both views and give your own opinion.",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "heritage and development",
+      "modelAnswer": "The debate surrounding the preservation of historical architecture versus the development of contemporary infrastructure is a persistent one, with valid arguments on both sides. While some advocate for the substantial investment required to maintain ancient structures and historic districts, others contend that such funds would be better allocated to modern building projects. This essay will argue that while both have merits, the long-term societal and cultural benefits of preserving our heritage outweigh the immediate advantages of purely modern development.\n\nProponents of historical preservation often highlight the invaluable cultural and educational benefits these sites offer. Old buildings and historic areas are tangible links to our past, embodying centuries of human endeavour, artistic expression, and technological evolution. For example, the painstaking restoration of Venice’s historic Grand Canal not only protects its unique architectural heritage but also sustains a vital tourism industry and provides an irreplaceable educational resource for understanding past engineering and artistic achievements. To lose such sites would be to erase parts of our collective memory and identity, impoverishing future generations.\n\nConversely, those who prioritise modern infrastructure argue for its direct contribution to economic growth and improved living standards. Investing in new roads, bridges, and public transport systems can alleviate congestion, enhance connectivity, and facilitate trade, thereby boosting productivity and creating jobs. For instance, the extensive development of high-speed rail networks in countries like Japan and China has revolutionised travel and significantly accelerated economic activity by connecting major cities more efficiently. These modern amenities are crucial for a nation's competitive edge in the global economy and for the daily convenience of its citizens.\n\nIn conclusion, while the allure of modern infrastructure development for economic advancement is undeniable, the profound cultural and historical significance of preserving old buildings and areas must not be undervalued. My conviction is that a balanced approach is ideal, but where a choice must be made, the irreplaceable value of heritage preservation should take precedence, ensuring our past continues to inform and enrich our future."
+    }
+  ],
+  "variant": "academic"
+}

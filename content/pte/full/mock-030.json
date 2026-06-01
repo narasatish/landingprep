@@ -1,0 +1,25 @@
+{
+  "id": "pte-full-030",
+  "exam": "pte",
+  "type": "full",
+  "title": "PTE Academic Full Mock Test 30",
+  "durationSeconds": 7200,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "speaking-writing",
+      "testId": "pte-speaking-writing-030",
+      "file": "pte/speaking-writing/test-030.json"
+    },
+    {
+      "section": "reading",
+      "testId": "pte-reading-030",
+      "file": "pte/reading/test-030.json"
+    },
+    {
+      "section": "listening",
+      "testId": "pte-listening-030",
+      "file": "pte/listening/test-030.json"
+    }
+  ]
+}

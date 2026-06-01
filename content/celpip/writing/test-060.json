@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-060",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 60",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-060-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to your building manager asking for advice on seasonal home maintenance.",
+      "modelAnswer": "I would strongly advocate for Option B: prioritizing individual freedom and choice. While the intent behind regulating personal choices, as suggested in Option A, might be to improve public health or safety, it ultimately undermines fundamental human rights and often proves counterproductive.\n\nMy primary reason is the inherent right to autonomy. Competent adults should be free to make decisions about their own bodies and lifestyles, even if those decisions carry risks. This principle is a cornerstone of democratic societies. For instance, while smoking is detrimental, a complete ban infringes on an individual's right to choose, and instead, education and accessible cessation programs are more ethical and effective.\n\nSecondly, top-down regulation of personal choices breeds resentment and often leads to black markets or non-compliance. History is replete with examples, such as Prohibition, which failed to eliminate alcohol consumption and instead empowered organized crime. People tend to resist mandates that feel overly paternalistic, whereas informed choices, supported by accurate information, lead to more sustainable behavioral changes.\n\nOption A, while seemingly benevolent, risks creating a nanny state where personal responsibility is eroded, and the government dictates increasingly more aspects of private life. This slippery slope could lead to restrictions on diet, exercise, or even leisure activities, which is an unacceptable overreach. Therefore, empowering individuals to make their own choices, supported by robust public education, is the superior path.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "home maintenance basics",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-060-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short note to a housemate reminding them of a home maintenance task that needs to be done.",
+      "modelAnswer": "I wholeheartedly endorse Option B: \"Offer online courses and digital resources.\" This approach directly addresses the evolving landscape of education and provides unparalleled flexibility and accessibility, making it the most impactful way for our community centre to serve its members.\n\nFirstly, online courses transcend geographical barriers and scheduling conflicts. Many potential participants, be they working professionals, parents, or individuals with mobility challenges, find it difficult to attend in-person classes. Digital offerings allow them to learn at their own pace, from anywhere, significantly broadening our reach and ensuring inclusivity. For instance, someone working shifts could access a pre-recorded workshop on financial literacy at midnight, something impossible with a fixed in-person schedule.\n\nSecondly, digital resources are inherently scalable and cost-effective in the long run. Once developed, a course or resource can be accessed by hundreds, even thousands, of people without additional instructor fees or facility costs per user. This allows us to provide a wider array of high-quality content, from language learning modules to vocational skill tutorials, without substantial recurring expenditure.\n\nWhile Option A, \"Organize more in-person workshops and events,\" has its merits in fostering direct interaction, its limitations in reach and scalability are significant. It caters only to those who can physically attend at specific times, inadvertently excluding a large segment of our community. In an increasingly digital world, neglecting online provisions would be a missed opportunity to truly empower and educate the broadest possible audience.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "home maintenance basics",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

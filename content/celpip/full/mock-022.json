@@ -1,0 +1,30 @@
+{
+  "id": "celpip-full-022",
+  "exam": "celpip",
+  "type": "full",
+  "title": "CELPIP Full Mock Test 22",
+  "durationSeconds": 12000,
+  "instructions": "Full CELPIP General mock test. Complete all four sections in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "celpip-listening-022",
+      "file": "celpip/listening/test-022.json"
+    },
+    {
+      "section": "reading",
+      "testId": "celpip-reading-022",
+      "file": "celpip/reading/test-022.json"
+    },
+    {
+      "section": "writing",
+      "testId": "celpip-writing-022",
+      "file": "celpip/writing/test-022.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "celpip-speaking-022",
+      "file": "celpip/speaking/test-022.json"
+    }
+  ]
+}

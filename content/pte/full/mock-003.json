@@ -1,0 +1,25 @@
+{
+  "id": "pte-full-003",
+  "exam": "pte",
+  "type": "full",
+  "title": "PTE Academic Full Mock Test 3",
+  "durationSeconds": 7200,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "speaking-writing",
+      "testId": "pte-speaking-writing-003",
+      "file": "pte/speaking-writing/test-003.json"
+    },
+    {
+      "section": "reading",
+      "testId": "pte-reading-003",
+      "file": "pte/reading/test-003.json"
+    },
+    {
+      "section": "listening",
+      "testId": "pte-listening-003",
+      "file": "pte/listening/test-003.json"
+    }
+  ]
+}

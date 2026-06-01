@@ -1,0 +1,41 @@
+{
+  "id": "gre-writing-018",
+  "exam": "gre",
+  "section": "writing",
+  "type": "section",
+  "title": "GRE Analytical Writing Practice Test 18",
+  "durationSeconds": 1800,
+  "questionCount": 1,
+  "instructions": "Complete both tasks. Task 1 (Issue): 30 minutes, 400–600 words recommended. Task 2 (Argument): 30 minutes, 400–600 words recommended.",
+  "questions": [
+    {
+      "id": "gre-writing-018-q1",
+      "taskType": "issue",
+      "taskNumber": 1,
+      "title": "Analyse an Issue",
+      "timeMinutes": 30,
+      "prompt": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "instructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "scoringCriteria": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "wordTarget": 500,
+      "questionType": "writing_task",
+      "writingInstructions": "Write a response in which you discuss the extent to which you agree or disagree with the claim. Develop and support your position with reasons and examples. Consider ways in which the claim might or might not hold true.",
+      "rubric": [
+        "Clarity of position",
+        "Quality of reasoning",
+        "Use of relevant examples",
+        "Organisation and structure",
+        "Control of language"
+      ],
+      "situation": "Scientists should be ethically responsible for the consequences of their discoveries.",
+      "questionNumber": 1,
+      "modelAnswer": "The assertion that scientists should be ethically responsible for the consequences of their discoveries presents a compelling, yet complex, ethical dilemma. While it is certainly true that scientists, like all individuals, bear a moral obligation to consider the potential societal impact of their work, holding them solely or even primarily accountable for all eventualities stemming from their discoveries is an oversimplification that risks stifling innovation and misplacing blame. A nuanced perspective recognizes that responsibility is often diffuse, shared among researchers, policymakers, and the public, and that the foreseeability of consequences is a crucial determinant of culpability.\n\nOne powerful argument in favor of holding scientists accountable lies in instances where the potential for harm is reasonably foreseeable and directly linked to their research. The development of nuclear weapons, for example, undeniably placed a heavy ethical burden on the physicists involved in the Manhattan Project. While their initial motivations may have been defensive, the destructive power unleashed at Hiroshima and Nagasaki was a direct, albeit extreme, consequence of their scientific breakthroughs. In such cases, where the immediate and catastrophic implications are evident during the research phase, scientists have a clear ethical duty to advocate for responsible application, or even cessation, of their work. Their unique understanding of the technology's capabilities makes them uniquely positioned to warn against misuse.\n\nHowever, the claim falters when considering discoveries whose applications are far removed from the original intent or are manipulated by external forces. The discovery of the internet, for instance, revolutionized communication and access to information, overwhelmingly for the better. Yet, its subsequent weaponization through cyber warfare, the proliferation of misinformation, or its use in facilitating criminal activity could hardly be laid at the feet of the computer scientists who developed its foundational protocols. To hold them responsible for every subsequent misuse would be to demand prescience beyond human capacity, punishing innovation for the unpredictable actions of others. The line of ethical responsibility must logically extend only to consequences that are reasonably foreseeable and within the sphere of the scientist's influence or expertise.\n\nFurthermore, the very nature of scientific progress often involves unforeseen breakthroughs and applications. Penicillin, discovered by Alexander Fleming, revolutionized medicine, saving countless lives. Yet, its widespread use also led to the evolution of antibiotic-resistant bacteria, a significant public health crisis today. While Fleming could not have predicted this long-term ecological consequence, it would be absurd to hold him ethically culpable for bacterial resistance. The responsibility for addressing this issue falls to subsequent generations of scientists, medical professionals, and public health officials who understand the evolving challenge. This highlights that ethical responsibility is not static; it shifts and evolves as understanding deepens and new consequences emerge.\n\nIn conclusion, while scientists undoubtedly bear an ethical responsibility to consider the potential ramifications of their work, this responsibility is not absolute or all-encompassing. It is most compelling when consequences are reasonably foreseeable and directly attributable to their discoveries, as exemplified by the atomic bomb. However, extending this accountability to unforeseeable or externally manipulated outcomes risks paralyzing research and unfairly burdening innovators. A more balanced approach acknowledges that ethical responsibility is a shared endeavor, requiring vigilance from scientists, responsible governance from policymakers, and informed engagement from the public to navigate the complex landscape of scientific progress."
+    }
+  ]
+}

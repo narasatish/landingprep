@@ -1,0 +1,30 @@
+{
+  "id": "ielts-full-027",
+  "exam": "ielts",
+  "type": "full",
+  "title": "IELTS Full Mock Test 27",
+  "durationSeconds": 9900,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "ielts-listening-027",
+      "file": "ielts/listening/test-027.json"
+    },
+    {
+      "section": "reading",
+      "testId": "ielts-reading-027",
+      "file": "ielts/reading/test-027.json"
+    },
+    {
+      "section": "writing",
+      "testId": "ielts-writing-027",
+      "file": "ielts/writing/test-027.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "ielts-speaking-027",
+      "file": "ielts/speaking/test-027.json"
+    }
+  ]
+}

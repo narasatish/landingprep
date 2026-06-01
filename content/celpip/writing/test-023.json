@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-023",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 23",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-023-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You are writing on behalf of your sports team to ask a local business to become a sponsor for the upcoming season.",
+      "recipient": "the local business owner",
+      "bulletPoints": [
+        "Introduce your team and describe who participates",
+        "Explain what the sponsorship would involve",
+        "Describe the benefits the business would receive in return"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You have recently noticed signs of water damage in your rented apartment. Write a letter to your landlord describing the issue, where you first noticed it, and asking for a prompt inspection and repair.",
+      "modelAnswer": "Dear Mr. Henderson,\n\nI am writing to you today on behalf of the Northwood Hawks U13 soccer team, a vibrant and dedicated group of 11-12 year olds from our community. We are preparing for the upcoming season and are actively seeking local businesses to partner with us through sponsorship.\n\nA sponsorship from Henderson’s Hardware would be invaluable in helping us cover essential costs such as league fees, new uniforms, and equipment. We are aiming for a sponsorship of $500, which would ensure every player has a proper uniform and access to quality training tools. This support directly contributes to fostering teamwork, physical fitness, and community spirit among our young athletes.\n\nIn return for your generous contribution, Henderson’s Hardware would receive prominent visibility throughout the season. Your company logo would be proudly displayed on our team jerseys, which are worn at every game and practice, both home and away. Furthermore, we would feature your business on our team’s social media pages and give a special shout-out at our end-of-season banquet, acknowledging your commitment to local youth sports. This is a fantastic opportunity to connect with families across Northwood and showcase your community involvement.\n\nThank you for considering our request. We would be delighted to discuss this opportunity further at your convenience.\n\nSincerely,\n\nSarah Chen\nTeam Manager, Northwood Hawks U13"
+    },
+    {
+      "id": "celpip-writing-023-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city is considering a new policy to reduce food waste. Which approach do you prefer?",
+      "optionA": "Require restaurants and grocery stores to donate unsold food to food banks at the end of each day",
+      "optionB": "Launch a public campaign educating households on how to reduce food waste at home",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A public safety commission is asking for community feedback on neighbourhood safety. Describe the safety concerns in your area, what you think contributes to them, and what measures you would like the city to take.",
+      "modelAnswer": "I strongly advocate for Option A: requiring restaurants and grocery stores to donate unsold food to food banks at the end of each day. This approach offers a direct and immediate solution to both food waste and food insecurity, tackling the issue at its largest source.\n\nFirstly, commercial establishments are responsible for a significant proportion of food waste. Implementing a mandatory donation policy would divert vast quantities of perfectly edible food from landfills, where it currently contributes to greenhouse gas emissions, directly to those in need. For instance, a grocery store might discard dozens of loaves of bread nearing their \"best by\" date, which could easily feed numerous families through a food bank.\n\nSecondly, this policy leverages existing infrastructure and supply chains. Restaurants and grocery stores already have systems for managing inventory and deliveries, making the integration of donation protocols relatively straightforward. While there might be initial logistical adjustments, the long-term benefits of reducing waste and supporting communities far outweigh these challenges.\n\nWhile Option B, a public education campaign, has merit in raising awareness, its impact would be slower and less quantifiable. Relying solely on individual household behaviour change, though important, wouldn't address the massive scale of commercial food waste as effectively or immediately. Therefore, a mandatory donation policy offers a more robust and impactful solution."
+    }
+  ]
+}

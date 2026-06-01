@@ -1,0 +1,30 @@
+{
+  "id": "ielts-full-003",
+  "exam": "ielts",
+  "type": "full",
+  "title": "IELTS Full Mock Test 3",
+  "durationSeconds": 9900,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "ielts-listening-003",
+      "file": "ielts/listening/test-003.json"
+    },
+    {
+      "section": "reading",
+      "testId": "ielts-reading-003",
+      "file": "ielts/reading/test-003.json"
+    },
+    {
+      "section": "writing",
+      "testId": "ielts-writing-003",
+      "file": "ielts/writing/test-003.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "ielts-speaking-003",
+      "file": "ielts/speaking/test-003.json"
+    }
+  ]
+}

@@ -1,0 +1,764 @@
+{
+  "id": "pte-speaking-writing-024",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 24",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-024-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Ancient Silk Road Connections”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "efa79b7d7862f04919",
+      "modelAnswer": "The Silk Road, a vast network of trade routes, facilitated not only the exchange of goods like silk and spices but also the transmission of ideas, technologies, and religions across Asia, Africa, and Europe. This intricate system fostered cultural diffusion, profoundly shaping the development of civilizations from the Han Dynasty to the Roman Empire. Its legacy underscores the enduring impact of interconnectedness on human history.",
+      "readText": "The Silk Road, a vast network of trade routes, facilitated not only the exchange of goods like silk and spices but also the transmission of ideas, technologies, and religions across Asia, Africa, and Europe. This intricate system fostered cultural diffusion, profoundly shaping the development of civilizations from the Han Dynasty to the Roman Empire. Its legacy underscores the enduring impact of interconnectedness on human history."
+    },
+    {
+      "id": "pte-speaking-writing-024-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Renewable Battery Innovation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Engineers are developing new battery designs for more sustainable renewable energy storage.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "e8c0d8ff5135961f1b",
+      "modelAnswer": "Engineers are developing new battery designs for more sustainable renewable energy storage.",
+      "audioScript": "Engineers are developing new battery designs for more sustainable renewable energy storage."
+    },
+    {
+      "id": "pte-speaking-writing-024-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Preferred Language Learning Methods (Ages 18-35)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "95b0fc77dc708998b9",
+      "modelAnswer": "This bar chart illustrates preferred language learning methods among individuals aged 18-35. Mobile Apps are by far the most popular method, chosen by 45% of learners, highlighting a significant reliance on technology. Online Courses follow with 30%, indicating another strong digital preference. Language Exchange is preferred by 20%, while Immersion Travel accounts for 15%. Traditional Classes are the least favored, selected by only 10%. The data clearly shows a dominant trend towards digital and self-paced learning methods over conventional classroom settings in this age group.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Preferred Language Learning Methods (Ages 18-35)",
+        "yLabel": "Percentage of Learners",
+        "xAxis": [
+          "Mobile Apps",
+          "Online Courses",
+          "Language Exchange",
+          "Immersion Travel",
+          "Traditional Classes"
+        ],
+        "series": [
+          {
+            "label": "Method",
+            "values": [
+              45,
+              30,
+              20,
+              15,
+              10
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-024-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Impact of Public Health Campaigns”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0e475fe32bb58b19e2",
+      "modelAnswer": "The lecture discussed the vital role of public health campaigns in improving societal health. Historically, they successfully combated infectious diseases like smallpox. Currently, campaigns address lifestyle factors such as diet and exercise to prevent chronic illnesses. Their success hinges on clear communication, community involvement, and consistent funding, which ultimately leads to healthier populations globally.",
+      "audioScript": "Public health campaigns play a crucial role in shaping societal behaviors and improving overall well-being. Historically, initiatives targeting infectious diseases like smallpox or polio have demonstrated remarkable success, leading to widespread vaccination and eradication efforts. Modern campaigns often focus on lifestyle factors such as nutrition, exercise, and smoking cessation, aiming to prevent chronic diseases. The effectiveness of these campaigns relies heavily on clear communication, community engagement, and sustained funding, ultimately contributing to longer, healthier lives for populations worldwide.",
+      "keyPoints": [
+        "Crucial role in societal well-being",
+        "Historical success with infectious diseases",
+        "Modern focus on lifestyle factors",
+        "Relies on clear communication and engagement"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-024-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Museum Artifact Preservation”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Conservator",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c55d4b37c06145da1a",
+      "modelAnswer": "Conservator",
+      "audioScript": "What professional is primarily responsible for preserving artifacts in a museum?"
+    },
+    {
+      "id": "pte-speaking-writing-024-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Citizen Science Benefits”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "d5056fb6f2d1864783",
+      "modelAnswer": "Community science projects engage the public in data collection for scientific research, expanding inquiry while simultaneously fostering scientific literacy and bridging the gap between institutions and communities.",
+      "readText": "Community science projects, often referred to as citizen science, empower individuals without formal scientific training to contribute to research. Participants might collect data on bird migrations, water quality, or astronomical observations, significantly expanding the scope and scale of scientific inquiry. These projects not only provide valuable data for researchers but also foster scientific literacy among the public, encouraging critical thinking and engagement with environmental issues. The collaborative nature bridges the gap between scientific institutions and local communities, creating a more inclusive research landscape."
+    },
+    {
+      "id": "pte-speaking-writing-024-q07",
+      "questionType": "essay",
+      "prompt": "Green roofs are increasingly seen as a sustainable solution for urban environments, offering various ecological and economic benefits. Discuss the advantages and disadvantages of implementing widespread green roof initiatives in major cities.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "e0e085b017c97941e8",
+      "modelAnswer": "The implementation of green roofs in urban areas represents a significant step towards sustainable city planning, offering a multitude of ecological and economic advantages. Ecologically, green roofs mitigate the urban heat island effect by absorbing sunlight and cooling ambient temperatures, thereby reducing energy consumption for air conditioning. They also improve air quality by filtering pollutants, manage stormwater runoff by retaining precipitation, and create new habitats for biodiversity, supporting local ecosystems. Economically, green roofs can extend the lifespan of roofing membranes by protecting them from UV radiation and temperature fluctuations, leading to reduced maintenance costs.\n\nHowever, widespread adoption of green roof initiatives also presents several disadvantages. The initial installation cost can be considerably higher than traditional roofing due to the need for specialized structural support, waterproofing, and irrigation systems, making them less accessible for some developers or homeowners. Maintenance, although potentially lower in the long term, still requires specific horticultural knowledge and resources to ensure the health of the vegetation, especially in diverse climates. Furthermore, the added weight of soil and plants necessitates careful structural assessment of existing buildings, which can be a complex and costly undertaking. There are also concerns about potential water leakage if not properly installed and maintained.\n\nIn conclusion, while green roofs offer substantial environmental and economic benefits, their broader implementation in major cities requires overcoming significant financial and logistical challenges. A balanced approach, possibly involving government incentives and robust building regulations, could facilitate their integration into urban landscapes, maximizing their positive impact while addressing the practical hurdles."
+    },
+    {
+      "id": "pte-speaking-writing-024-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Cognitive Maps and Navigation”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "95603a8b036b27c20a",
+      "modelAnswer": "The psychology of wayfinding explores how humans navigate their environment, relying on cognitive maps—mental representations of spatial layouts. These internal maps integrate sensory input, memory, and spatial reasoning, allowing individuals to orient themselves, plan routes, and locate destinations. Effective wayfinding is crucial for daily life, and disruptions in this cognitive process can significantly impair independence and safety, highlighting its fundamental importance.",
+      "readText": "The psychology of wayfinding explores how humans navigate their environment, relying on cognitive maps—mental representations of spatial layouts. These internal maps integrate sensory input, memory, and spatial reasoning, allowing individuals to orient themselves, plan routes, and locate destinations. Effective wayfinding is crucial for daily life, and disruptions in this cognitive process can significantly impair independence and safety, highlighting its fundamental importance."
+    },
+    {
+      "id": "pte-speaking-writing-024-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Exploring Ocean Depths”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Advanced submersibles are crucial for exploring the deep ocean's unknown ecosystems.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0fc3d868f4c064a707",
+      "modelAnswer": "Advanced submersibles are crucial for exploring the deep ocean's unknown ecosystems.",
+      "audioScript": "Advanced submersibles are crucial for exploring the deep ocean's unknown ecosystems."
+    },
+    {
+      "id": "pte-speaking-writing-024-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Growth of Digital Archive Collections (2018-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "419fd344847e998f94",
+      "modelAnswer": "This bar chart illustrates the significant growth of digital archive collections between 2018 and 2023, measured in millions of items. In 2018, there were 15 million archived items, which steadily increased each year. The highest figure was recorded in 2023, reaching an impressive 85 million items. This represents a substantial upward trend, with the number of archived items more than doubling from 35 million in 2020 to 85 million by 2023, highlighting the increasing importance and expansion of digital archiving over this five-year period.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Growth of Digital Archive Collections (2018-2023)",
+        "yLabel": "Number of Items (Millions)",
+        "xAxis": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Archived Items",
+            "values": [
+              15,
+              22,
+              35,
+              50,
+              68,
+              85
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-024-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Ancient Maritime Trade Routes”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "9af6f9654aa07835a3",
+      "modelAnswer": "The lecture highlighted the crucial role of ancient maritime trade routes, like the Spice Route, in global connectivity. These sea lanes allowed for the efficient bulk transport of goods over long distances. They were instrumental in fostering cultural exchange, spreading technologies, and religious ideas. The success of these routes depended heavily on sophisticated shipbuilding and navigation, showcasing early human innovation in overcoming geographical challenges.",
+      "audioScript": "Beyond the terrestrial Silk Road, ancient maritime trade routes played an equally vital, albeit often less emphasized, role in global connectivity. These sea lanes, such as the Spice Route and networks across the Indian Ocean, allowed for the bulk transport of goods like spices, textiles, and precious metals over vast distances. They fostered interactions between diverse cultures, facilitating the spread of technologies, religious ideas, and even agricultural practices. The development of sophisticated shipbuilding and navigation techniques was paramount to their success, demonstrating early human ingenuity in overcoming geographical barriers.",
+      "keyPoints": [
+        "Maritime routes vital for global connectivity",
+        "Enabled bulk transport of goods",
+        "Fostered cultural interaction and spread of ideas",
+        "Relied on advanced shipbuilding and navigation"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-024-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Battery Component Material”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Lithium",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "97d2ede963d4ba4b0c",
+      "modelAnswer": "Lithium",
+      "audioScript": "What common metal is often used as the anode in rechargeable batteries?"
+    },
+    {
+      "id": "pte-speaking-writing-024-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Effective Language Learning”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "8d7ed49f439b7ce93f",
+      "modelAnswer": "Effective language learning extends beyond rote memorization, requiring consistent practice, immersion, and active engagement with native speakers and authentic media, alongside cultural understanding and sustained motivation, to achieve fluency.",
+      "readText": "Effective language acquisition is not merely about memorizing vocabulary and grammar rules; it's a complex process influenced by consistent practice, immersion, and active engagement with the target language. Learners who regularly interact with native speakers, consume authentic media, and practice speaking, even with mistakes, tend to achieve fluency faster. Additionally, understanding cultural contexts associated with the language significantly enhances comprehension and communication. Ultimately, sustained motivation and a willingness to embrace imperfection are key determinants of success in learning a new language."
+    },
+    {
+      "id": "pte-speaking-writing-024-q14",
+      "questionType": "essay",
+      "prompt": "Public health campaigns aim to improve population well-being through education and intervention. Discuss the most effective strategies for these campaigns and evaluate their potential limitations in diverse societies.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c331815f7c9d624313",
+      "modelAnswer": "Public health campaigns are vital instruments for improving societal well-being, leveraging education and intervention to promote healthier lifestyles and prevent disease. The most effective strategies often involve multi-faceted approaches that combine clear, accessible communication with community engagement and policy support. Tailoring messages to specific demographics, using trusted local figures, and employing various media channels – from social media to traditional advertising – significantly enhances reach and impact. Campaigns that provide practical tools and resources, such as free health screenings or smoking cessation programs, also tend to be more successful. Furthermore, integrating public health goals into broader policy frameworks, like encouraging active transport or regulating unhealthy food advertising, creates an environment conducive to healthier choices.\n\nHowever, the effectiveness of these campaigns can be significantly limited in diverse societies. Cultural nuances, language barriers, and differing health beliefs can impede message reception and acceptance. A strategy effective in one community might be culturally inappropriate or misunderstood in another, leading to resistance or distrust. Socioeconomic disparities also present major limitations; individuals facing poverty, lack of access to healthcare, or unstable living conditions may find it difficult to act on health advice, regardless of how well it's communicated. Distrust in government or scientific institutions, often stemming from historical injustices or misinformation, further complicates efforts to promote public health. Moreover, the sheer volume of information in modern society can lead to message fatigue, where people become desensitized to health warnings.\n\nIn conclusion, while effective public health campaigns rely on strategic communication and supportive policies, their success in diverse societies is contingent upon cultural sensitivity, addressing socioeconomic inequalities, and building trust. Overcoming these limitations requires a nuanced and adaptive approach that respects community values and addresses systemic barriers to health."
+    },
+    {
+      "id": "pte-speaking-writing-024-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Artifact Preservation Methods”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "b5f9a41b1173c0ffb5",
+      "modelAnswer": "Museum conservation is a meticulous field dedicated to the preservation and restoration of cultural artifacts. Conservators employ a range of scientific techniques, from environmental controls to chemical treatments, to prevent deterioration and repair damage. Their work ensures that historical objects remain accessible for research and public viewing, safeguarding our shared heritage for future generations. This requires interdisciplinary knowledge in art history, chemistry, and material science.",
+      "readText": "Museum conservation is a meticulous field dedicated to the preservation and restoration of cultural artifacts. Conservators employ a range of scientific techniques, from environmental controls to chemical treatments, to prevent deterioration and repair damage. Their work ensures that historical objects remain accessible for research and public viewing, safeguarding our shared heritage for future generations. This requires interdisciplinary knowledge in art history, chemistry, and material science."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Green Infrastructure Benefits”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q16",
+      "modelAnswer": "Sustainable urban planning increasingly integrates green infrastructure, such as parks, rain gardens, and tree-lined streets. These elements improve air quality, manage stormwater runoff, and mitigate urban heat island effects. Beyond environmental benefits, green spaces enhance public health and well-being, fostering community interaction and providing recreational opportunities. This holistic approach is crucial for resilient and livable cities.",
+      "readText": "Sustainable urban planning increasingly integrates green infrastructure, such as parks, rain gardens, and tree-lined streets. These elements improve air quality, manage stormwater runoff, and mitigate urban heat island effects. Beyond environmental benefits, green spaces enhance public health and well-being, fostering community interaction and providing recreational opportunities. This holistic approach is crucial for resilient and livable cities."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Bilingualism and Cognition”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q17",
+      "modelAnswer": "Bilingualism offers significant cognitive advantages, extending beyond mere language proficiency. Research indicates that individuals fluent in two or more languages often exhibit enhanced problem-solving skills, better multitasking abilities, and improved executive functions. This 'bilingual advantage' suggests that navigating between linguistic systems strengthens neural pathways, leading to greater cognitive flexibility and potentially delaying the onset of age-related cognitive decline, making it a valuable asset.",
+      "readText": "Bilingualism offers significant cognitive advantages, extending beyond mere language proficiency. Research indicates that individuals fluent in two or more languages often exhibit enhanced problem-solving skills, better multitasking abilities, and improved executive functions. This 'bilingual advantage' suggests that navigating between linguistic systems strengthens neural pathways, leading to greater cognitive flexibility and potentially delaying the onset of age-related cognitive decline, making it a valuable asset."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Microbiomes and Health”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q18",
+      "modelAnswer": "The human microbiome, a vast ecosystem of microorganisms residing within and on our bodies, plays a critical role in health. These microbial communities influence digestion, immune system development, and even mood regulation. Disruptions to the microbiome, often caused by diet or antibiotics, can lead to various diseases. Understanding and nurturing a balanced microbiome is increasingly recognized as fundamental to overall well-being and disease prevention.",
+      "readText": "The human microbiome, a vast ecosystem of microorganisms residing within and on our bodies, plays a critical role in health. These microbial communities influence digestion, immune system development, and even mood regulation. Disruptions to the microbiome, often caused by diet or antibiotics, can lead to various diseases. Understanding and nurturing a balanced microbiome is increasingly recognized as fundamental to overall well-being and disease prevention."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology raises significant privacy concerns regarding data collection and surveillance.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy Concerns”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q19",
+      "modelAnswer": "Smart city technology raises significant privacy concerns regarding data collection and surveillance.",
+      "audioScript": "Smart city technology raises significant privacy concerns regarding data collection and surveillance."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation severely impacts indigenous land rights and traditional ways of life.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation and Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q20",
+      "modelAnswer": "Deforestation severely impacts indigenous land rights and traditional ways of life.",
+      "audioScript": "Deforestation severely impacts indigenous land rights and traditional ways of life."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Social media now plays a pervasive role in modern communication and information dissemination.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q21",
+      "modelAnswer": "Social media now plays a pervasive role in modern communication and information dissemination.",
+      "audioScript": "Social media now plays a pervasive role in modern communication and information dissemination."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration often presents challenges and opportunities for cultural integration.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Integration”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q22",
+      "modelAnswer": "International migration often presents challenges and opportunities for cultural integration.",
+      "audioScript": "International migration often presents challenges and opportunities for cultural integration."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation are transforming labor markets and industrial productivity.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Automation Economics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q23",
+      "modelAnswer": "The economics of automation are transforming labor markets and industrial productivity.",
+      "audioScript": "The economics of automation are transforming labor markets and industrial productivity."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Investment in renewable energy infrastructure is crucial for combating climate change.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q24",
+      "modelAnswer": "Investment in renewable energy infrastructure is crucial for combating climate change.",
+      "audioScript": "Investment in renewable energy infrastructure is crucial for combating climate change."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Urban heat islands require mitigation strategies like green spaces and reflective surfaces.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Heat Mitigation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q25",
+      "modelAnswer": "Urban heat islands require mitigation strategies like green spaces and reflective surfaces.",
+      "audioScript": "Urban heat islands require mitigation strategies like green spaces and reflective surfaces."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Financial literacy is essential for promoting economic inclusion and individual prosperity.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Financial Inclusion”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q26",
+      "modelAnswer": "Financial literacy is essential for promoting economic inclusion and individual prosperity.",
+      "audioScript": "Financial literacy is essential for promoting economic inclusion and individual prosperity."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Evapotranspiration Rates by Biome (mm/year)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q27",
+      "modelAnswer": "The line chart illustrates global evapotranspiration rates across different biomes, measured in millimeters per year. The Tropical Rainforest biome shows the highest rate at 1500 mm/year, indicating significant water movement into the atmosphere. Conversely, the Tundra and Desert biomes exhibit the lowest rates, at 50 mm/year and 100 mm/year respectively, reflecting their dry or frozen conditions. The Ocean, surprisingly, contributes a substantial 1100 mm/year, highlighting its role in the water cycle. Temperate and Boreal Forests, along with Grasslands, fall in the mid-range, demonstrating varying degrees of water return to the atmosphere.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Evapotranspiration Rates by Biome (mm/year)",
+        "yLabel": "Evapotranspiration (mm/year)",
+        "xAxis": [
+          "Tropical Rainforest",
+          "Temperate Forest",
+          "Boreal Forest",
+          "Grassland",
+          "Desert",
+          "Tundra",
+          "Ocean"
+        ],
+        "series": [
+          {
+            "label": "Average Rate",
+            "values": [
+              1500,
+              900,
+              500,
+              650,
+              100,
+              50,
+              1100
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Literacy Rates by Region (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q28",
+      "modelAnswer": "The table displays global literacy rates by region for 2023, comparing adult and youth literacy. North America shows the highest rates, with 99.0% for adults and 99.5% for youth, closely followed by Europe. In stark contrast, Sub-Saharan Africa records the lowest literacy rates, at 65.0% for adults and 78.0% for youth, indicating a significant regional disparity. Interestingly, youth literacy consistently surpasses adult literacy across all regions, highlighting ongoing improvements in educational access. Overall, the data underscores global variations in literacy, with developed regions showing near-universal rates.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Literacy Rates by Region (2023)",
+        "headers": [
+          "Region",
+          "Adult Literacy Rate (%)",
+          "Youth Literacy Rate (%)"
+        ],
+        "rows": [
+          [
+            "North America",
+            "99.0",
+            "99.5"
+          ],
+          [
+            "Europe",
+            "98.5",
+            "99.0"
+          ],
+          [
+            "East Asia & Pacific",
+            "95.0",
+            "98.0"
+          ],
+          [
+            "Latin America & Caribbean",
+            "93.0",
+            "97.0"
+          ],
+          [
+            "Sub-Saharan Africa",
+            "65.0",
+            "78.0"
+          ],
+          [
+            "South Asia",
+            "74.0",
+            "85.0"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Smartphone Adoption Rate (2014-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q29",
+      "modelAnswer": "The line graph illustrates the global smartphone adoption rate from 2014 to 2023. Overall, there's a clear upward trend, indicating increasing smartphone penetration over the decade. Starting at 38% in 2014, the adoption rate grew steadily, reaching 60% by 2017. The highest adoption rate was observed in 2023 at 88%, showcasing a substantial increase of 50 percentage points from the initial year. This consistent growth highlights the smartphone's evolving role as a ubiquitous communication device worldwide.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Smartphone Adoption Rate (2014-2023)",
+        "yLabel": "Percentage of Population (%)",
+        "xAxis": [
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Adoption Rate",
+            "values": [
+              38,
+              44,
+              52,
+              60,
+              67,
+              73,
+              78,
+              82,
+              85,
+              88
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q30",
+      "modelAnswer": "This bar chart illustrates the annual energy consumption per capita in megawatt-hours for six different countries in 2022. Canada recorded the highest consumption at 92 MWh, closely followed by the USA with 85 MWh. In stark contrast, India had the lowest consumption, registering only 10 MWh per person. Germany and Japan showed moderate consumption levels at 45 MWh and 40 MWh respectively, while China consumed 35 MWh. Overall, developed Western nations consumed significantly more energy per capita than their Asian counterparts.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Energy Consumption (MWh)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "Japan",
+          "China",
+          "India"
+        ],
+        "series": [
+          {
+            "label": "MWh",
+            "values": [
+              85,
+              92,
+              45,
+              40,
+              35,
+              10
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q31",
+      "modelAnswer": "The lecture discussed non-verbal communication, emphasizing its power over spoken words. It involves body language, facial expressions, gestures, and vocal tone, which add crucial context to interactions and reveal emotions. Examples like crossed arms or eye contact illustrate its significance. Understanding these cues is essential for effective communication in personal, professional, and cross-cultural settings, ultimately enhancing social navigation and connection.",
+      "audioScript": "Non-verbal communication, often more powerful than spoken words, encompasses a vast array of cues including body language, facial expressions, gestures, and tone of voice. These unspoken signals provide crucial context to interactions, revealing emotions, attitudes, and intentions that verbal language alone might not convey. For instance, crossed arms can indicate defensiveness, while sustained eye contact often signifies attentiveness. Understanding these cues is vital not only for effective personal communication but also in professional settings and cross-cultural interactions, where interpretations can vary significantly. Mastering non-verbal literacy enhances one's ability to connect with others and navigate social situations successfully.",
+      "keyPoints": [
+        "More powerful than spoken words",
+        "Includes body language, facial expressions, tone",
+        "Provides crucial context and reveals intentions",
+        "Vital for personal, professional, and cross-cultural interactions"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Email",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Digital Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q32",
+      "modelAnswer": "Email",
+      "audioScript": "What is the term for sending written messages electronically between devices?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Audience awareness",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Audience Awareness in Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q33",
+      "modelAnswer": "Audience awareness",
+      "audioScript": "What skill involves adapting your message to suit your listener or reader?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Noise",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Barrier to Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-024-q34",
+      "modelAnswer": "Noise",
+      "audioScript": "What is a common obstacle that prevents clear understanding in communication?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-024-q01": "",
+    "pte-speaking-writing-024-q02": "",
+    "pte-speaking-writing-024-q03": "",
+    "pte-speaking-writing-024-q04": "",
+    "pte-speaking-writing-024-q05": "sample answer",
+    "pte-speaking-writing-024-q06": "",
+    "pte-speaking-writing-024-q07": "",
+    "pte-speaking-writing-024-q08": "",
+    "pte-speaking-writing-024-q09": "",
+    "pte-speaking-writing-024-q10": "",
+    "pte-speaking-writing-024-q11": "",
+    "pte-speaking-writing-024-q12": "sample answer",
+    "pte-speaking-writing-024-q13": "",
+    "pte-speaking-writing-024-q14": "",
+    "pte-speaking-writing-024-q15": ""
+  },
+  "fingerprints": [
+    "efa79b7d7862f04919",
+    "e8c0d8ff5135961f1b",
+    "95b0fc77dc708998b9",
+    "0e475fe32bb58b19e2",
+    "c55d4b37c06145da1a",
+    "d5056fb6f2d1864783",
+    "e0e085b017c97941e8",
+    "95603a8b036b27c20a",
+    "0fc3d868f4c064a707",
+    "419fd344847e998f94",
+    "9af6f9654aa07835a3",
+    "97d2ede963d4ba4b0c",
+    "8d7ed49f439b7ce93f",
+    "c331815f7c9d624313",
+    "b5f9a41b1173c0ffb5"
+  ]
+}

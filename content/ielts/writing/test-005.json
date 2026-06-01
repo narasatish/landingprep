@@ -1,0 +1,86 @@
+{
+  "id": "ielts-writing-005",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 5",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-005-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The diagram below shows the process by which solar panels convert sunlight into electricity for household use. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "energy",
+      "modelAnswer": "The table illustrates the efficiency losses and power output at different stages of the process by which solar panels convert sunlight into usable household electricity. Overall, the diagram details a five-step conversion, beginning with initial sunlight and culminating in electricity for domestic use, with a significant reduction in power throughout the process.\n\nInitially, 1000 watts of sunlight hit the solar panel. The first stage, involving the panel surface, incurs a 20% efficiency loss due to reflection and heat, reducing the power to 800 watts. Following this, the photovoltaic cells convert the sunlight, resulting in the most substantial loss of 30%, which decreases the power output further to 560 watts. These two stages account for the majority of the power reduction, from 1000 watts to just over half.\n\nThe subsequent stages involve smaller efficiency losses. The inverter, responsible for converting direct current (DC) to alternating current (AC), causes a 5% loss, bringing the power down to 532 watts. Finally, wiring and storage, which include transmission and battery systems, incur a minor 2% loss. Consequently, the usable household electricity stands at 521 watts, representing approximately 52.1% of the initial sunlight's power. This indicates that nearly half of the initial solar energy is lost before it can be used in the home.",
+      "visual": {
+        "chartType": "table",
+        "title": "Solar Panel Electricity Generation Efficiency",
+        "headers": [
+          "Component",
+          "Efficiency Loss (%)",
+          "Power Output (Watts)"
+        ],
+        "rows": [
+          [
+            "Solar Panel (Initial Sunlight)",
+            "0",
+            "1000"
+          ],
+          [
+            "Panel Surface (Reflection/Heat)",
+            "20",
+            "800"
+          ],
+          [
+            "Photovoltaic Cells (Conversion)",
+            "30",
+            "560"
+          ],
+          [
+            "Inverter (DC to AC Conversion)",
+            "5",
+            "532"
+          ],
+          [
+            "Wiring/Storage (Transmission/Battery)",
+            "2",
+            "521"
+          ],
+          [
+            "Usable Household Electricity",
+            "0",
+            "521"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-005-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Many countries are investing heavily in renewable energy sources such as solar and wind power. However, some argue that nuclear energy is a more reliable solution to the global energy crisis. Discuss both views and give your own opinion.",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "energy",
+      "modelAnswer": "Numerous nations are significantly channelling funds into sustainable energy technologies like solar and wind generation. While this trend is gaining momentum, a compelling argument persists that nuclear power offers a more dependable resolution to the worldwide energy shortage. This essay will explore both perspectives before asserting that, despite its challenges, nuclear energy presents a more consistent and scalable solution.\n\nProponents of renewable energy highlight its environmental benefits and long-term sustainability. Unlike fossil fuels, solar and wind power produce no greenhouse gas emissions during operation, making them crucial in mitigating climate change. For instance, countries like Germany have invested billions in offshore wind farms, demonstrating a commitment to carbon neutrality. However, the inherent intermittency of these sources, dependent on weather conditions, necessitates extensive energy storage solutions or backup power, which can be costly and technically challenging to implement on a national grid scale.\n\nConversely, nuclear energy offers a high-density, low-carbon power source with remarkable reliability. A single nuclear power plant can generate vast amounts of electricity continuously for extended periods, unaffected by daily weather fluctuations. France, for example, derives approximately 70% of its electricity from nuclear power, showcasing its capacity to provide consistent baseload power, thereby ensuring energy security. While concerns regarding waste disposal and the potential for accidents remain valid, modern reactor designs incorporate advanced safety features and produce significantly less waste than coal-fired plants for equivalent energy output.\n\nIn conclusion, while renewable energies are vital for a sustainable future, nuclear power's ability to provide consistent, large-scale electricity generation makes it a more reliable immediate answer to the global energy crisis. Despite the valid environmental and safety considerations, its consistent output and minimal operational emissions position it as a critical component in a diversified energy portfolio."
+    }
+  ],
+  "variant": "academic"
+}

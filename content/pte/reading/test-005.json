@@ -1,0 +1,297 @@
+{
+  "id": "pte-reading-005",
+  "exam": "pte",
+  "section": "reading",
+  "title": "PTE Academic Reading Practice Test 5",
+  "durationSeconds": 3300,
+  "questionCount": 15,
+  "questions": [
+    {
+      "id": "pte-reading-005-01-rwfib",
+      "questionType": "reading_writing_fill_blanks",
+      "passage": "Artificial intelligence is transforming medical __1__ by enabling algorithms to detect patterns in imaging data that would be invisible to the human eye. Deep learning models trained on millions of labelled radiographs have demonstrated __2__ performance in detecting diabetic retinopathy, skin cancer, and pulmonary nodules. Despite this promise, concerns remain about __3__ bias introduced by non-representative training datasets, and about the legal and ethical __4__ of AI-assisted clinical decisions. Robust __5__ and transparent regulatory frameworks are considered essential prerequisites for safe clinical deployment.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wordBank": [
+        "diagnosis",
+        "remarkable",
+        "algorithmic",
+        "liability",
+        "validation",
+        "basic",
+        "medical",
+        "opaque",
+        "subjective",
+        "experimental"
+      ],
+      "correctAnswers": [
+        "diagnosis",
+        "remarkable",
+        "algorithmic",
+        "liability",
+        "validation"
+      ],
+      "explanation": "AI shows strong diagnostic performance but faces bias, liability, and validation challenges before clinical deployment.",
+      "prompt": "Read the passage about the economics of healthcare systems and select the correct word from each drop-down list to complete the text. Each blank has only one correct answer."
+    },
+    {
+      "id": "pte-reading-005-02",
+      "questionType": "reading_writing_fill_blanks",
+      "passage": "Artificial intelligence is transforming medical __1__ by enabling algorithms to detect patterns in imaging data that would be invisible to the human eye. Deep learning models trained on millions of labelled radiographs have demonstrated __2__ performance in detecting diabetic retinopathy, skin cancer, and pulmonary nodules. Despite this promise, concerns remain about __3__ bias introduced by non-representative training datasets, and about the legal and ethical __4__ of AI-assisted clinical decisions. Robust __5__ and transparent regulatory frameworks are considered essential prerequisites for safe clinical deployment.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wordBank": [
+        "diagnosis",
+        "remarkable",
+        "algorithmic",
+        "liability",
+        "validation",
+        "basic",
+        "medical",
+        "opaque",
+        "subjective",
+        "experimental"
+      ],
+      "correctAnswers": [
+        "diagnosis",
+        "remarkable",
+        "algorithmic",
+        "liability",
+        "validation"
+      ],
+      "explanation": "AI shows strong diagnostic performance but faces bias, liability, and validation challenges before clinical deployment.",
+      "prompt": "Read the passage about digital transformation in financial services and select the correct word from each drop-down list to complete the text. Each blank has only one correct answer."
+    },
+    {
+      "id": "pte-reading-005-03-fib",
+      "questionType": "fill_in_blanks",
+      "passage": "Natural language processing (NLP) enables computers to __1[interpret|ignore|delete|encrypt]__ unstructured text in clinical notes, discharge summaries, and patient records. By extracting structured information from these documents, NLP systems can __2[identify|conceal|erase|duplicate]__ patients at risk of deterioration, flag potential drug interactions, and support clinical coding. However, clinical language is highly __3[specialised|generic|simple|standardised]__ and varies considerably between institutions, making it difficult to __4[generalise|memorise|translate|archive]__ models trained in one healthcare setting to another.",
+      "explanation": "NLP extracts insights from clinical text but struggles to generalise across institutions due to language variation.",
+      "prompt": "Read the text about the role of gut bacteria in mental health and drag words from the box below into the correct gaps in the passage."
+    },
+    {
+      "id": "pte-reading-005-04",
+      "questionType": "fill_in_blanks",
+      "passage": "Natural language processing (NLP) enables computers to __1[interpret|ignore|delete|encrypt]__ unstructured text in clinical notes, discharge summaries, and patient records. By extracting structured information from these documents, NLP systems can __2[identify|conceal|erase|duplicate]__ patients at risk of deterioration, flag potential drug interactions, and support clinical coding. However, clinical language is highly __3[specialised|generic|simple|standardised]__ and varies considerably between institutions, making it difficult to __4[generalise|memorise|translate|archive]__ models trained in one healthcare setting to another.",
+      "explanation": "NLP extracts insights from clinical text but struggles to generalise across institutions due to language variation.",
+      "prompt": "Read the text about tectonic plate movement and earthquake prediction and drag words from the box below into the correct gaps in the passage."
+    },
+    {
+      "id": "pte-reading-005-05-reorder",
+      "questionType": "reorder_paragraphs",
+      "sentences": [
+        {
+          "id": "E",
+          "text": "Regulatory bodies are increasingly requiring evidence of equitable performance before approving AI diagnostic tools."
+        },
+        {
+          "id": "D",
+          "text": "Addressing this requires deliberate efforts to diversify training datasets and to evaluate performance across demographic subgroups."
+        },
+        {
+          "id": "C",
+          "text": "For instance, a skin cancer detection model trained predominantly on images of light-skinned patients may miss lesions on darker skin."
+        },
+        {
+          "id": "B",
+          "text": "In healthcare, biased training data can lead to algorithms that perform poorly for underrepresented patient groups."
+        },
+        {
+          "id": "A",
+          "text": "Machine learning models learn from historical data, which means they can inherit and amplify existing biases."
+        }
+      ],
+      "correctOrder": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Arrange the sentences so that they form a coherent, logical paragraph.",
+      "prompt": "The text about artificial photosynthesis and renewable energy has been scrambled. Arrange the text boxes below in the correct order to form a coherent passage."
+    },
+    {
+      "id": "pte-reading-005-06",
+      "questionType": "reorder_paragraphs",
+      "sentences": [
+        {
+          "id": "C",
+          "text": "For instance, a skin cancer detection model trained predominantly on images of light-skinned patients may miss lesions on darker skin."
+        },
+        {
+          "id": "A",
+          "text": "Machine learning models learn from historical data, which means they can inherit and amplify existing biases."
+        },
+        {
+          "id": "B",
+          "text": "In healthcare, biased training data can lead to algorithms that perform poorly for underrepresented patient groups."
+        },
+        {
+          "id": "D",
+          "text": "Addressing this requires deliberate efforts to diversify training datasets and to evaluate performance across demographic subgroups."
+        },
+        {
+          "id": "E",
+          "text": "Regulatory bodies are increasingly requiring evidence of equitable performance before approving AI diagnostic tools."
+        }
+      ],
+      "correctOrder": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Arrange the sentences so that they form a coherent, logical paragraph.",
+      "prompt": "The text about social media and political polarisation has been scrambled. Arrange the text boxes below in the correct order to form a coherent passage."
+    },
+    {
+      "id": "pte-reading-005-07-mcqm",
+      "questionType": "multiple_choice_multiple",
+      "passage": "Robotic surgical systems, such as the da Vinci Surgical System, enable surgeons to perform minimally invasive procedures with enhanced precision, dexterity, and visualisation. Studies have shown reductions in blood loss, post-operative pain, and hospital length of stay compared with open surgery for selected procedures. Critics note, however, that robotic systems are expensive — both to purchase and to maintain — and that the evidence of superior long-term patient outcomes compared with conventional laparoscopic surgery remains mixed. Training surgeons to operate robotic systems also requires substantial time and investment.",
+      "question": "(7) According to the passage, which TWO advantages of robotic surgical systems are supported by evidence?",
+      "options": [
+        "Superior long-term outcomes compared to laparoscopic surgery",
+        "Reduced blood loss during procedures",
+        "Lower hospital purchase costs",
+        "Shorter post-operative hospital stay",
+        "Faster surgeon training times"
+      ],
+      "correctAnswers": [
+        "Reduced blood loss during procedures",
+        "Shorter post-operative hospital stay"
+      ],
+      "requiredCount": 2,
+      "explanation": "Correct: Reduced blood loss during procedures; Shorter post-operative hospital stay",
+      "prompt": "Read the passage and answer the question. More than one response is correct. Select all that apply.",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "pte-reading-005-08-mcqs",
+      "questionType": "multiple_choice_single",
+      "passage": "Predictive analytics tools in hospitals analyse patient data in real time to identify those at risk of clinical deterioration before obvious symptoms appear. Early warning scores, derived from vital signs and laboratory results, have been supplemented by machine learning models that incorporate nursing observations, medication records, and historical data. Studies at several major hospitals have demonstrated that machine learning-based early warning systems can identify at-risk patients several hours earlier than traditional scores, allowing timely clinical intervention.",
+      "question": "(8) What advantage do machine learning early warning systems have over traditional early warning scores?",
+      "options": [
+        "They are cheaper to implement in hospitals",
+        "They identify at-risk patients several hours earlier",
+        "They require no vital sign monitoring",
+        "They eliminate the need for nursing observations"
+      ],
+      "correctAnswer": "They identify at-risk patients several hours earlier",
+      "explanation": "Correct answer: They identify at-risk patients several hours earlier",
+      "prompt": "Read the passage and select the best answer from the choices below."
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the science of materials under extreme conditions and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-005-q09"
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about urban biodiversity and ecological corridors and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-005-q10"
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "(11) Read the passage about digital transformation in financial services and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer. [Question 11 — test-005]",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-005-q11"
+    },
+    {
+      "questionType": "fill_in_blanks",
+      "correctAnswer": "refer to passage",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the cultural significance of oral storytelling traditions and drag the words from the box into the correct gaps in the text.",
+      "wordBank": [
+        "critical",
+        "significant",
+        "established",
+        "demonstrated",
+        "revealed"
+      ],
+      "id": "pte-reading-005-q12"
+    },
+    {
+      "questionType": "fill_in_blanks",
+      "correctAnswer": "refer to passage",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the history of scientific measurement standards and drag the words from the box into the correct gaps in the text.",
+      "wordBank": [
+        "critical",
+        "significant",
+        "established",
+        "demonstrated",
+        "revealed"
+      ],
+      "id": "pte-reading-005-q13"
+    },
+    {
+      "questionType": "multiple_choice_multiple",
+      "correctAnswer": "A, E",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "What benefits does the author attribute to multilingual education? (Choose TWO answers)",
+      "options": [
+        "A. Loss of biodiversity in surrounding areas",
+        "B. Disruption of traditional livelihoods",
+        "C. Increased rainfall in the region",
+        "D. Improved water quality downstream",
+        "E. Soil erosion and land degradation"
+      ],
+      "id": "pte-reading-005-q14"
+    },
+    {
+      "questionType": "multiple_choice_single",
+      "correctAnswer": "B",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "What can be inferred from the final paragraph?",
+      "options": [
+        "A. To argue that current policies are insufficient",
+        "B. To describe a problem and propose potential solutions",
+        "C. To compare two opposing scientific theories",
+        "D. To demonstrate that technological progress is inevitable"
+      ],
+      "id": "pte-reading-005-q15"
+    }
+  ]
+}

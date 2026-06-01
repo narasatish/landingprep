@@ -1,0 +1,112 @@
+{
+  "id": "ielts-writing-029",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 29",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-029-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The graphs show changes in urban and rural population sizes in three continents between 1960 and 2020. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "urbanisation",
+      "modelAnswer": "The line graphs illustrate the shifts in urban and rural populations across Africa, Asia, and Europe between 1960 and 2020. Overall, urban populations saw significant growth in all three continents, while rural populations either increased at a slower rate or declined. Asia consistently had the largest populations throughout the period.\n\nAfrica and Asia experienced substantial increases in their urban populations. Africa's urban dwellers grew steadily from 50 million in 1960 to 600 million by 2020. Asia's urban population surged dramatically from 400 million to 2,800 million over the same six decades, making it the largest urban population by far. Europe's urban population also rose, but more modestly, from 300 million to 550 million.\n\nConversely, rural population trends varied. Europe's rural population decreased consistently, falling from 250 million in 1960 to just 100 million in 2020. Africa's rural population, while growing from 220 million to 620 million, was eventually surpassed by its urban counterpart. Asia's rural population initially rose from 1,400 million to a peak of 2,200 million in 2000 before slightly declining to 2,100 million by 2020, remaining the largest rural population.",
+      "visual": {
+        "chartType": "line",
+        "title": "Urban and Rural Population Sizes (Millions) in Three Continents (1960-2020)",
+        "yLabel": "Population (Millions)",
+        "xAxis": [
+          "1960",
+          "1980",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Africa Urban",
+            "values": [
+              50,
+              130,
+              280,
+              600
+            ]
+          },
+          {
+            "label": "Africa Rural",
+            "values": [
+              220,
+              350,
+              480,
+              620
+            ]
+          },
+          {
+            "label": "Asia Urban",
+            "values": [
+              400,
+              750,
+              1500,
+              2800
+            ]
+          },
+          {
+            "label": "Asia Rural",
+            "values": [
+              1400,
+              2000,
+              2200,
+              2100
+            ]
+          },
+          {
+            "label": "Europe Urban",
+            "values": [
+              300,
+              400,
+              500,
+              550
+            ]
+          },
+          {
+            "label": "Europe Rural",
+            "values": [
+              250,
+              200,
+              150,
+              100
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-029-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Many people are moving from rural areas to cities in search of better opportunities. What problems does rapid urbanisation cause, and how can these problems be managed?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "urbanisation",
+      "modelAnswer": "The increasing migration of populations from countryside to urban centres in pursuit of enhanced prospects is a defining characteristic of modern demographics. While offering potential benefits, this swift urbanisation invariably precipitates a cascade of complex issues that demand strategic intervention. This essay will explore the primary challenges stemming from this trend and propose viable management strategies.\n\nOne significant problem arising from rapid urbanisation is the severe strain on existing infrastructure and public services. Cities often lack the capacity to accommodate a sudden influx of residents, leading to overcrowded housing, inadequate sanitation, and overwhelmed transport systems. For instance, megacities like Mumbai grapple with extensive slum proliferation and chronic traffic congestion, directly attributable to the inability of infrastructure development to keep pace with population growth. To mitigate this, urban planning must adopt a proactive, long-term approach, investing heavily in smart city technologies and integrated public transport networks, alongside the construction of affordable, high-density housing units.\n\nFurthermore, accelerated urban growth frequently exacerbates social inequalities and environmental degradation. The competition for resources and employment can marginalise vulnerable groups, leading to increased crime rates and social unrest, while the expanded urban footprint contributes to habitat loss and heightened pollution levels. A pertinent example is the rise in air pollution in rapidly expanding Chinese cities, posing significant public health risks. Effective management necessitates the implementation of inclusive urban policies, such as job training programmes for new arrivals and social welfare provisions, alongside stringent environmental regulations, including the promotion of green building standards and the expansion of urban green spaces.\n\nIn conclusion, the challenges posed by rapid urbanisation are multifaceted, ranging from infrastructural strain to social and environmental pressures. However, through comprehensive and forward-thinking urban planning, coupled with inclusive social policies and robust environmental protection, these problems can be effectively managed, paving the way for sustainable and equitable urban development."
+    }
+  ],
+  "variant": "academic"
+}

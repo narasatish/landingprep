@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-048",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 48",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-048-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to a volunteer organisation expressing your interest in volunteering.",
+      "modelAnswer": "I advocate for the implementation of Option A: \"Invest heavily in renewable energy sources like solar and wind power, offering tax incentives for adoption.\" This approach offers a multi-faceted solution to environmental concerns and economic growth, making it demonstrably superior.\n\nFirstly, a concentrated investment in renewables directly addresses climate change by reducing reliance on fossil fuels, which are major contributors to greenhouse gas emissions. For instance, substantial government backing could accelerate the development of more efficient solar panels and wind turbines, making clean energy more accessible and affordable for both industries and individual households. This proactive stance positions the country as a leader in sustainable technology.\n\nSecondly, this strategy fosters significant economic opportunities. The burgeoning renewable energy sector creates numerous jobs in research and development, manufacturing, installation, and maintenance. Tax incentives further stimulate demand, encouraging businesses and homeowners to transition, thereby boosting local economies and attracting foreign investment in green technologies. This contrasts sharply with the finite nature of fossil fuel industries.\n\nOption B, \"Focus on carbon capture technologies for existing industries and promote electric vehicle adoption,\" while beneficial, is less comprehensive. Carbon capture, though promising, is still largely unproven at scale and expensive, essentially treating a symptom rather than the root cause. While electric vehicles are crucial, they represent only one aspect of reducing emissions and don't address the fundamental issue of energy generation. Option A offers a more holistic and sustainable path forward.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "volunteering locally",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-048-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short message to a friend encouraging them to volunteer in the community.",
+      "modelAnswer": "I strongly advocate for Option B, which suggests that governments should prioritize funding for renewable energy research and development. This approach offers a more sustainable and impactful solution to global energy needs than focusing solely on current energy costs.\n\nFirstly, investing in renewable energy R&D drives innovation, leading to more efficient and cost-effective technologies in the long run. While fossil fuels may seem cheaper now, their prices are volatile and their environmental impact is devastating. Breakthroughs in solar, wind, and geothermal technologies, for example, promise stable, inexhaustible energy sources that will eventually be more economical and accessible for everyone.\n\nSecondly, prioritizing renewables fosters job creation and economic growth in a future-proof industry. Shifting away from fossil fuels allows nations to become energy independent, reducing reliance on foreign oil and gas supplies and protecting their economies from geopolitical instability. This strategic investment positions a country as a leader in the green economy, attracting talent and capital.\n\nOption A, while seemingly pragmatic, only offers a short-term fix. Subsidizing current energy costs, predominantly fossil fuels, perpetuates our dependence on finite, polluting resources and diverts funds that could be used for genuine progress. It’s akin to treating a symptom rather than curing the disease. Therefore, a forward-thinking investment in renewable energy R&D is the only viable path to a secure and sustainable energy future.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "volunteering locally",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

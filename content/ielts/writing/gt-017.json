@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-017",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 17 — Request Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-017-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "request",
+      "letterSituation": "You saw an advertisement for a professional photography course being offered at a local college. The advertisement did not include details about the course fees, any prerequisites, the weekly schedule, or whether a certificate of completion would be issued to participants.",
+      "prompt": "You saw an advertisement for a professional photography course being offered at a local college. The advertisement did not include details about the course fees, any prerequisites, the weekly schedule, or whether a certificate of completion would be issued to participants.\n\nWrite a letter in response to this situation. In your letter:\n• explain why you are interested in enrolling in this particular course\n• ask about the specific details that were missing from the advertisement\n• enquire about whether any financial assistance or flexible payment options are available\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "request"
+    },
+    {
+      "id": "ielts-writing-gt-017-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "An increasing number of adults are returning to formal education later in life in order to gain new qualifications or change careers. What are the main reasons for this trend and is it a positive development overall?",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "request"
+    }
+  ]
+}

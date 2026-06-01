@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-009",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 9",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-009-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You noticed that a street near your home has a pothole that has been growing for several weeks and is now large enough to damage vehicles.",
+      "recipient": "your local city councillor",
+      "bulletPoints": [
+        "Describe the location and severity of the pothole",
+        "Explain the risks it poses to drivers",
+        "Request that it be repaired as soon as possible"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You are leaving your current job and want to write a farewell letter to your colleagues. Thank them for their support, mention a positive memory you share, and wish them well for the future.",
+      "modelAnswer": "Dear Councillor [Councillor's Last Name],\n\nI hope this email finds you well. I am writing to you today to report a significant and increasingly hazardous pothole on [Street Name], specifically located just west of the intersection with [Nearest Cross Street], in front of [House Number or Landmark, e.g., the community park].\n\nThis pothole has been growing steadily over the past several weeks and is now considerably large and deep, easily spanning a car tire and appearing to be at least six inches deep in places. Its severity poses a serious risk to drivers, particularly those unfamiliar with the area or travelling at night. Vehicles hitting it are subjected to sudden, violent impacts that could lead to tire damage, bent rims, or even suspension issues, potentially causing drivers to lose control.\n\nGiven the substantial damage it could inflict and the safety hazards it presents, I kindly request that this pothole be repaired as a matter of urgency. Prompt action would greatly contribute to the safety of our community's roads.\n\nThank you for your time and attention to this important matter.\n\nSincerely,\n\n[Your Name]\n[Your Street Name]\n[Your Phone Number, optional]"
+    },
+    {
+      "id": "celpip-writing-009-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your community is considering a new initiative to encourage environmental awareness. Which approach do you think would be more effective?",
+      "optionA": "Introduce a mandatory composting programme for all households",
+      "optionB": "Run a voluntary school-based environmental education programme",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A social services agency is asking for feedback on support programmes for newcomers to Canada. Describe what challenges newcomers face in your community, which services are most needed, and how existing programmes could be improved.",
+      "modelAnswer": "I firmly believe that introducing a mandatory composting programme for all households would be a more effective approach to fostering environmental awareness in our community.\n\nFirstly, a mandatory programme instills immediate behavioural change and accountability. By requiring every household to participate, composting becomes a non-negotiable part of daily life, much like recycling. This widespread adoption quickly normalizes the practice, leading to significant reductions in landfill waste and a tangible understanding of waste diversion. For example, once residents see how much organic material they are composting, they become more aware of their consumption patterns.\n\nSecondly, the impact of a mandatory programme is measurable and widespread, creating a collective sense of responsibility. The visible reduction in general waste bins across the community, coupled with data on diverted organic waste, provides concrete evidence of environmental improvement. This collective success can then foster a deeper appreciation for environmental stewardship among all age groups.\n\nWhile school-based programmes are valuable, their voluntary nature and limited reach mean they often preach to the already converted or have a slower, less comprehensive impact. A mandatory composting programme, conversely, ensures universal participation and immediate, measurable environmental benefits, making it the superior choice for driving community-wide environmental awareness."
+    }
+  ]
+}

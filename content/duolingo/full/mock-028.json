@@ -1,0 +1,35 @@
+{
+  "id": "duolingo-full-028",
+  "exam": "duolingo",
+  "type": "full",
+  "title": "Duolingo English Test Full Mock Test 28",
+  "durationSeconds": 3600,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "adaptive",
+      "testId": "duolingo-adaptive-028",
+      "file": "duolingo/adaptive/test-028.json"
+    },
+    {
+      "section": "literacy",
+      "testId": "duolingo-literacy-028",
+      "file": "duolingo/literacy/test-028.json"
+    },
+    {
+      "section": "comprehension",
+      "testId": "duolingo-comprehension-028",
+      "file": "duolingo/comprehension/test-028.json"
+    },
+    {
+      "section": "conversation",
+      "testId": "duolingo-conversation-028",
+      "file": "duolingo/conversation/test-028.json"
+    },
+    {
+      "section": "production",
+      "testId": "duolingo-production-028",
+      "file": "duolingo/production/test-028.json"
+    }
+  ]
+}

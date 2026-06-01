@@ -1,0 +1,109 @@
+{
+  "id": "ielts-writing-004",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 4",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-004-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The line graph shows changes in the number of international tourists visiting four countries between 2010 and 2022. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "tourism",
+      "modelAnswer": "The line graph illustrates the fluctuations in the number of international tourists visiting four distinct countries – A, B, C, and D – over a 12-year period from 2010 to 2022.\n\nOverall, the most striking feature is the significant dip in tourist numbers for all four countries in 2020, likely due to global events, followed by a strong recovery. Country B consistently attracted the highest number of visitors for most of the period, while Country C experienced a general decline.\n\nLooking at the individual trends, Country B started with 15 million tourists in 2010 and saw a steady increase, reaching 21 million by 2018, before plummeting to 8 million in 2020. It then rebounded sharply to 25 million in 2022, becoming the most popular destination. Country A followed a similar growth pattern, rising from 10 million in 2010 to 20 million in 2018, dropping to 5 million in 2020, and recovering to 22 million by 2022.\n\nIn contrast, Country C began with the highest figure of 20 million in 2010 but experienced a gradual decrease to 16 million by 2018. After a sharp fall to 4 million in 2020, it only partially recovered to 15 million in 2022, ending lower than its starting point. Country D showed consistent growth, increasing from 8 million in 2010 to 15 million in 2018, falling to 3 million in 2020, and subsequently reaching 18 million in 2022.",
+      "visual": {
+        "chartType": "line",
+        "title": "International Tourist Arrivals (2010-2022)",
+        "yLabel": "Number of Tourists (millions)",
+        "xAxis": [
+          "2010",
+          "2012",
+          "2014",
+          "2016",
+          "2018",
+          "2020",
+          "2022"
+        ],
+        "series": [
+          {
+            "label": "Country A",
+            "values": [
+              10,
+              12,
+              15,
+              18,
+              20,
+              5,
+              22
+            ]
+          },
+          {
+            "label": "Country B",
+            "values": [
+              15,
+              16,
+              17,
+              19,
+              21,
+              8,
+              25
+            ]
+          },
+          {
+            "label": "Country C",
+            "values": [
+              20,
+              19,
+              18,
+              17,
+              16,
+              4,
+              15
+            ]
+          },
+          {
+            "label": "Country D",
+            "values": [
+              8,
+              9,
+              11,
+              13,
+              15,
+              3,
+              18
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-004-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Tourism brings significant economic benefits to local communities, but it also causes serious environmental and cultural problems. To what extent do the disadvantages of tourism outweigh the advantages?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "tourism",
+      "modelAnswer": "While tourism undoubtedly injects substantial economic vitality into local areas, I contend that its detrimental environmental and cultural repercussions ultimately outweigh these benefits. The long-term damage inflicted often undermines the very resources that attract visitors in the first place, creating an unsustainable model.\n\nOne primary advantage of tourism is its capacity to generate significant revenue and employment. For instance, the Caribbean islands heavily rely on tourism, which provides vital foreign exchange, supports local businesses through visitor spending on accommodation, food, and excursions, and creates jobs ranging from hotel staff to tour guides. This economic injection can fund infrastructure improvements and public services, thereby elevating the overall quality of life for residents.\n\nHowever, the environmental degradation and cultural erosion precipitated by tourism present a more serious concern. Environmentally, the construction of resorts often leads to habitat destruction, increased waste generation, and excessive water consumption, particularly in arid regions. A stark example is the Great Barrier Reef, where mass tourism, including boat traffic and coral touching, has contributed to coral bleaching and ecosystem decline, jeopardising its future viability. Culturally, the commodification of local traditions and the displacement of indigenous populations to make way for tourist developments can dilute authentic heritage, turning vibrant cultures into mere spectacles for visitors.\n\nIn conclusion, while tourism offers immediate economic boons, these are frequently overshadowed by the profound and often irreversible environmental damage and cultural dilution it instigates. The imperative to preserve natural habitats and authentic cultural identities for future generations suggests that the disadvantages of tourism are indeed more significant."
+    }
+  ],
+  "variant": "academic"
+}

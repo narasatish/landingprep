@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-004",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 4",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-004-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "Your neighbour has recently started a home renovation project that involves very loud construction work beginning at 7:00 am on weekdays and on weekends.",
+      "recipient": "your neighbour",
+      "bulletPoints": [
+        "Explain how the noise is affecting you",
+        "Ask about the timeline for the renovation",
+        "Propose a compromise that would work for both of you"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You would like to start a neighbourhood watch programme in your area. Write a letter to your neighbours explaining what you have in mind, why it is important, and how they can get involved.",
+      "modelAnswer": "Subject: Checking in about the renovation noise\n\nDear [Neighbour's Name],\n\nI hope this email finds you well. I'm writing to you today regarding the renovation work that has recently started at your place.\n\nWhile I understand that home renovations can be a bit noisy, the current schedule of construction starting at 7:00 AM, even on weekends, has been quite disruptive for me and my family. The loud banging and machinery sounds at that early hour have made it difficult for us to get a full night's rest, especially since my partner works late shifts and needs to sleep in. We've also found it challenging to concentrate during the day with the continuous noise.\n\nCould you please let me know what the projected timeline is for the renovation project? Knowing the duration would help us plan accordingly.\n\nTo find a solution that works for both of us, I was wondering if it would be possible to start the louder work a little later, perhaps around 9:00 AM on weekdays and 10:00 AM on weekends? This would give us a couple of extra hours of uninterrupted sleep and make a significant difference.\n\nThank you for your understanding and consideration. I'm confident we can find a schedule that suits everyone.\n\nSincerely,\n\n[Your Name]"
+    },
+    {
+      "id": "celpip-writing-004-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city is planning to use a large vacant lot in the downtown area. Which do you think is the better use of the space?",
+      "optionA": "Build a new public park with green space and playgrounds",
+      "optionB": "Develop affordable housing units to address the housing shortage",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A city transport authority is surveying residents about public transit. Describe your experience using public transit, what challenges you face, and what improvements would make you more likely to use it.",
+      "modelAnswer": "I strongly advocate for developing affordable housing units on the vacant downtown lot. While a new park offers undeniable benefits, the critical housing shortage in our city demands immediate and pragmatic solutions.\n\nFirstly, affordable housing directly addresses a fundamental human need: shelter. Many residents, including essential workers and young families, are struggling to find suitable and reasonably priced accommodation, leading to increased homelessness and displacement. This development would provide tangible relief, offering stability and dignity to hundreds of individuals and families.\n\nSecondly, developing housing in a downtown location leverages existing infrastructure and promotes urban density. Residents would have easy access to public transit, jobs, and services, reducing reliance on cars and contributing to a more sustainable urban model. A park, while pleasant, would not alleviate the systemic pressures caused by an insufficient housing supply.\n\nWhile a park would enhance the city's green space and recreational opportunities, these benefits are secondary to the pressing social and economic crisis of housing unaffordability. Other locations, perhaps less central, could be considered for green spaces, whereas the downtown lot is uniquely positioned to maximize the impact of housing development."
+    }
+  ]
+}

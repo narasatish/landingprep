@@ -1,0 +1,99 @@
+{
+  "id": "ielts-writing-011",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 11",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-011-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The bar chart illustrates the proportion of people in five age groups who reported feeling lonely in four countries in 2022. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "loneliness",
+      "modelAnswer": "The bar chart illustrates the percentage of individuals across five distinct age groups who reported experiencing loneliness in four different countries during 2022. Overall, it is evident that younger age groups consistently reported higher levels of loneliness compared to older demographics across all countries. Country B generally recorded the highest proportions of lonely people, while Country C consistently showed the lowest figures.\n\nIn detail, Country B displayed the highest percentages of loneliness, starting at 42% for the 18-25 age group and remaining the highest across all subsequent categories, ending at 20% for those aged 71 and above. Country D followed a similar pattern, with 38% of 18-25 year olds feeling lonely, decreasing to 18% for the oldest group. Country A also showed significant figures, beginning at 35% for the youngest and falling to 15% for the over 70s.\n\nConversely, Country C consistently reported the lowest proportions of loneliness across all age brackets. It started at 28% for 18-25 year olds, which was still lower than the figures for the 26-40 age group in Country B (38%) and Country D (32%). The percentage for Country C steadily declined to just 10% for individuals aged 71 and over, making it the least lonely demographic presented on the chart.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Proportion of Lonely People by Age Group and Country (2022)",
+        "yLabel": "Percentage (%)",
+        "xAxis": [
+          "18-25 years",
+          "26-40 years",
+          "41-55 years",
+          "56-70 years",
+          "71+ years"
+        ],
+        "series": [
+          {
+            "label": "Country A",
+            "values": [
+              35,
+              28,
+              22,
+              18,
+              15
+            ]
+          },
+          {
+            "label": "Country B",
+            "values": [
+              42,
+              38,
+              30,
+              25,
+              20
+            ]
+          },
+          {
+            "label": "Country C",
+            "values": [
+              28,
+              20,
+              15,
+              12,
+              10
+            ]
+          },
+          {
+            "label": "Country D",
+            "values": [
+              38,
+              32,
+              25,
+              20,
+              18
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-011-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Despite being more connected than ever through technology, many people feel increasingly isolated and lonely. What are the causes of this problem, and what can be done to reduce it?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "loneliness",
+      "modelAnswer": "Paradoxically, an era defined by unparalleled digital connectivity has coincided with a pervasive sense of social detachment and solitude for many individuals. This concerning phenomenon stems from several technological and societal factors, and mitigating its impact necessitates multifaceted interventions.\n\nA primary cause lies in the superficiality of online interactions. While social media platforms offer an illusion of connection through likes and shares, these interactions often lack the depth and reciprocity characteristic of genuine human relationships. For instance, endlessly scrolling through curated online personas can foster feelings of inadequacy and envy, rather than authentic engagement, thereby exacerbating existing loneliness. Furthermore, the sheer volume of digital information can overwhelm individuals, leading them to withdraw from real-world interactions in favour of passive online consumption.\n\nAddressing this necessitates a two-pronged approach. Firstly, individuals must cultivate digital literacy, understanding the limitations of online interactions and actively prioritising face-to-face encounters. Secondly, communities and governments should invest in physical spaces that facilitate organic social interaction, such as community centres, parks, and libraries. Providing opportunities for shared experiences, hobbies, and volunteering can help individuals forge meaningful bonds that technology alone cannot replicate.\n\nIn conclusion, the increasing isolation felt amidst widespread technological connection is largely attributable to the superficial nature of digital engagement. Overcoming this challenge requires both individual conscious effort to seek genuine interactions and collective investment in real-world community building."
+    }
+  ],
+  "variant": "academic"
+}

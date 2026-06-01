@@ -1,0 +1,68 @@
+{
+  "id": "duolingo-conversation-020",
+  "exam": "duolingo",
+  "section": "conversation",
+  "type": "section",
+  "title": "Duolingo English Test Conversation Practice Test 20",
+  "durationSeconds": 900,
+  "questionCount": 3,
+  "instructions": "Record responses and review using the rubric.",
+  "questions": [
+    {
+      "id": "duolingo-conversation-020-q01",
+      "questionType": "speaking_task",
+      "prompt": "[1] Talk about your personal experience with community science projects.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "community science projects",
+      "fingerprint": "baec0ede3d94accf9e"
+    },
+    {
+      "id": "duolingo-conversation-020-q02",
+      "questionType": "speaking_task",
+      "prompt": "[2] Describe a situation where community science projects affected a school, workplace, or community.",
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "community science projects",
+      "fingerprint": "50b8d78f77e268c068"
+    },
+    {
+      "id": "duolingo-conversation-020-q03",
+      "questionType": "speaking_task",
+      "prompt": "[3] Discuss whether community science projects will become more important in the future.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "community science projects",
+      "fingerprint": "cfc7fd56189c7373bd"
+    }
+  ],
+  "fingerprints": [
+    "baec0ede3d94accf9e",
+    "50b8d78f77e268c068",
+    "cfc7fd56189c7373bd"
+  ]
+}

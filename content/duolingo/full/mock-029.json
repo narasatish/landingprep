@@ -1,0 +1,35 @@
+{
+  "id": "duolingo-full-029",
+  "exam": "duolingo",
+  "type": "full",
+  "title": "Duolingo English Test Full Mock Test 29",
+  "durationSeconds": 3600,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "adaptive",
+      "testId": "duolingo-adaptive-029",
+      "file": "duolingo/adaptive/test-029.json"
+    },
+    {
+      "section": "literacy",
+      "testId": "duolingo-literacy-029",
+      "file": "duolingo/literacy/test-029.json"
+    },
+    {
+      "section": "comprehension",
+      "testId": "duolingo-comprehension-029",
+      "file": "duolingo/comprehension/test-029.json"
+    },
+    {
+      "section": "conversation",
+      "testId": "duolingo-conversation-029",
+      "file": "duolingo/conversation/test-029.json"
+    },
+    {
+      "section": "production",
+      "testId": "duolingo-production-029",
+      "file": "duolingo/production/test-029.json"
+    }
+  ]
+}

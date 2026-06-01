@@ -1,0 +1,477 @@
+{
+  "id": "gmat-verbal-023",
+  "exam": "gmat",
+  "section": "verbal",
+  "type": "section",
+  "title": "GMAT Focus Verbal Practice Test 23",
+  "durationSeconds": 2700,
+  "questionCount": 23,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "gmat-verbal-023-q01",
+      "questionType": "critical_reasoning",
+      "num": 1,
+      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
+      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "options": [
+        "A. Customers reported preferring a relaxed shopping atmosphere",
+        "B. The upbeat music stores were in higher-traffic mall locations",
+        "C. A controlled experiment with randomly assigned music found the same 20% difference",
+        "D. Sales staff performed better when the music was upbeat",
+        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
+      "difficulty": "easy",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q02",
+      "questionType": "critical_reasoning",
+      "num": 2,
+      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
+      "question": "Which of the following most weakens the editorial's conclusion?",
+      "options": [
+        "A. Crime rates are influenced by many factors beyond unemployment",
+        "B. Employment programmes have reduced crime in some pilot cities",
+        "C. The editorial does not define 'crime' precisely",
+        "D. Reducing unemployment is expensive and politically difficult",
+        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
+      "difficulty": "easy",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q03",
+      "questionType": "critical_reasoning",
+      "num": 3,
+      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
+      "question": "The president's argument is flawed because it:",
+      "options": [
+        "A. Ignores that SAT preparation courses can inflate scores",
+        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
+        "C. Does not consider the diversity implications of the policy",
+        "D. Fails to define 'academic performance' precisely",
+        "E. Both A and B"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
+      "difficulty": "easy",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q04",
+      "questionType": "critical_reasoning",
+      "num": 4,
+      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
+      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "options": [
+        "A. Investing in diversified funds reduces portfolio risk over time",
+        "B. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
+        "C. A stock's five-year return is a better predictor of future performance than its one-year return",
+        "D. Historical market data is unreliable because markets change structurally over time",
+        "E. Companies with consistent earnings growth tend to have stable stock prices"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
+      "difficulty": "easy",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q05",
+      "questionType": "critical_reasoning",
+      "num": 5,
+      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "options": [
+        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
+        "B. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
+        "C. Customers report feeling more valued when using a loyalty programme",
+        "D. Competitors without loyalty programmes have seen declining sales",
+        "E. The loyalty programme was introduced simultaneously with a store renovation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
+      "difficulty": "easy",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q06",
+      "questionType": "critical_reasoning",
+      "num": 6,
+      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
+      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "options": [
+        "A. Other advertising channels were suspended during the same three months",
+        "B. Sign-ups had already been rising at 20,000 per month before the campaign",
+        "C. The lifetime value of a new user averages $50",
+        "D. Social media platforms reported the campaign reached 5 million unique users",
+        "E. Competitors saw no change in sign-ups over the same period"
+      ],
+      "correctAnswer": "C",
+      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
+      "difficulty": "easy",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q07",
+      "questionType": "critical_reasoning",
+      "num": 7,
+      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
+      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "options": [
+        "A. It assumes that lower temperatures are always desirable",
+        "B. It treats a correlation as evidence of a causal relationship",
+        "C. It ignores that tree planting is expensive",
+        "D. It fails to consider that trees require water",
+        "E. It overlooks that some neighbourhoods may not have space for trees"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
+      "difficulty": "easy",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q08",
+      "questionType": "critical_reasoning",
+      "num": 8,
+      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
+      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "options": [
+        "A. The airline also reduced the number of carry-on bags allowed during the same period",
+        "B. Passengers reported higher satisfaction with the new policy",
+        "C. Competing airlines have not adopted similar policies",
+        "D. Boarding time varies naturally between 15 and 35 minutes",
+        "E. The new policy was introduced on routes with larger aircraft"
+      ],
+      "correctAnswer": "A",
+      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
+      "difficulty": "medium",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q09",
+      "questionType": "critical_reasoning",
+      "num": 9,
+      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
+      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "options": [
+        "A. Does not define what type of consulting services were provided",
+        "B. Fails to compare the companies' growth with industry-wide growth trends",
+        "C. Ignores that some companies declined in revenue after hiring the firm",
+        "D. Does not specify what time period is covered by the data",
+        "E. Compares incomparable companies across different industries"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
+      "difficulty": "medium",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q10",
+      "questionType": "critical_reasoning",
+      "num": 10,
+      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
+      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "options": [
+        "A. Olive oil contains monounsaturated fats linked to heart health",
+        "B. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
+        "C. Heart disease rates have been declining globally regardless of fat consumption",
+        "D. The study followed individuals for 10 years",
+        "E. Olive oil is more expensive than butter in most markets"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
+      "difficulty": "medium",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q11",
+      "questionType": "critical_reasoning",
+      "num": 11,
+      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
+      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "options": [
+        "A. The cost of implementing mandatory calls would be prohibitive",
+        "B. Doctors who proactively call patients may also be more thorough in their overall care",
+        "C. Some patients do not have phones",
+        "D. Patients prefer in-person follow-up visits to phone calls",
+        "E. Phone calls are less effective than written instructions"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
+      "difficulty": "medium",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q12",
+      "questionType": "critical_reasoning",
+      "num": 12,
+      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
+      "question": "Which of the following, if true, most weakens the conclusion?",
+      "options": [
+        "A. Drug X has minor side effects including nausea",
+        "B. A control group taking a placebo experienced a 28% reduction in symptoms",
+        "C. The study included only 50 participants",
+        "D. Chronic pain affects millions of people worldwide",
+        "E. Drug X is expensive compared to existing treatments"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
+      "difficulty": "medium",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q13",
+      "questionType": "critical_reasoning",
+      "num": 13,
+      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
+      "question": "Which of the following most strengthens the director's conclusion?",
+      "options": [
+        "A. Exercise has been shown to improve blood flow to the brain in laboratory studies",
+        "B. Students with higher GPAs may have more structured schedules that allow for regular exercise",
+        "C. The university's highest-achieving students attend the fitness centre most frequently",
+        "D. Exercise programmes are popular at peer universities",
+        "E. Students who exercise report feeling less stressed"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
+      "difficulty": "medium",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q14",
+      "questionType": "critical_reasoning",
+      "num": 14,
+      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
+      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "options": [
+        "A. Cameras might violate driver privacy",
+        "B. Intersections chosen for cameras may have already been due for safety upgrades",
+        "C. The cost of cameras is high",
+        "D. Some drivers find cameras distracting",
+        "E. Cameras only capture rear-end collisions"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
+      "difficulty": "medium",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q15",
+      "questionType": "critical_reasoning",
+      "num": 15,
+      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
+      "question": "Which of the following most weakens the minister's conclusion?",
+      "options": [
+        "A. A separate economic boom added 100,000 jobs during the same year",
+        "B. Labour economists disagree on the effects of minimum wage increases",
+        "C. The minimum wage increase only affected 5% of workers",
+        "D. Some industries are more affected than others by wage increases",
+        "E. Other countries have raised minimum wages without unemployment rising"
+      ],
+      "correctAnswer": "A",
+      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
+      "difficulty": "hard",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q16",
+      "questionType": "critical_reasoning",
+      "num": 16,
+      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
+      "question": "The economist's argument contains which logical flaw?",
+      "options": [
+        "A. She draws a universal conclusion from limited data",
+        "B. She mistakes correlation for causation",
+        "C. She ignores that income affects education spending",
+        "D. She fails to define 'public spending'",
+        "E. Both B and C"
+      ],
+      "correctAnswer": "E",
+      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
+      "difficulty": "hard",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q17",
+      "questionType": "critical_reasoning",
+      "num": 17,
+      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
+      "question": "The critics' argument assumes which of the following?",
+      "options": [
+        "A. Arena events attract fans from outside the city who would not otherwise visit",
+        "B. Local restaurants cannot accommodate arena crowds",
+        "C. The arena's construction will not create permanent jobs",
+        "D. Fans have a fixed entertainment budget they will spend regardless of venue",
+        "E. The city already has sufficient sports facilities"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
+      "difficulty": "hard",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q18",
+      "questionType": "critical_reasoning",
+      "num": 18,
+      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
+      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "options": [
+        "A. The advertising campaign cost $5M over three months",
+        "B. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
+        "C. The ad was shown only on premium streaming services",
+        "D. The brand launched a new product line during the same period",
+        "E. Competitors also increased advertising spending during the same period"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
+      "difficulty": "hard",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q19",
+      "questionType": "critical_reasoning",
+      "num": 19,
+      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
+      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "options": [
+        "A. It provides an alternative interpretation of the first analyst's claim",
+        "B. It presents empirical evidence that undermines the first analyst's prediction",
+        "C. It demonstrates that road construction is always harmful",
+        "D. It suggests the first analyst has incorrect data",
+        "E. It proves that traffic will always increase regardless of policy"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
+      "difficulty": "hard",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q20",
+      "questionType": "critical_reasoning",
+      "num": 20,
+      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
+      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "options": [
+        "A. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
+        "B. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
+        "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
+        "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
+        "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
+      ],
+      "correctAnswer": "A",
+      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
+      "difficulty": "hard",
+      "topic": "verbal_reasoning"
+    },
+    {
+      "id": "gmat-verbal-023-q21",
+      "questionType": "reading_comprehension",
+      "num": 21,
+      "passageTitle": "The Economics of Open-Source Software",
+      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
+      "prompt": "The 'free rider problem' mentioned in the passage refers to:",
+      "options": [
+        "A. Programmers who use open-source software without contributing code",
+        "B. The tendency for rational actors to underinvest in public goods because they cannot exclude non-payers",
+        "C. The difficulty of coordinating large numbers of geographically dispersed contributors",
+        "D. The reluctance of firms to release proprietary software as open-source"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "difficulty": "medium",
+      "topic": "reading_comprehension"
+    },
+    {
+      "id": "gmat-verbal-023-q22",
+      "questionType": "reading_comprehension",
+      "num": 22,
+      "passageTitle": "The Economics of Open-Source Software",
+      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
+      "prompt": "According to the passage, which of the following does NOT explain why developers contribute to open-source projects?",
+      "options": [
+        "A. Gaining professional reputation in their field",
+        "B. Being employed by firms that benefit from specific projects",
+        "C. Receiving direct financial compensation from project users",
+        "D. Opportunities for skill development and learning"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "difficulty": "medium",
+      "topic": "reading_comprehension"
+    },
+    {
+      "id": "gmat-verbal-023-q23",
+      "questionType": "reading_comprehension",
+      "num": 23,
+      "passageTitle": "The Economics of Open-Source Software",
+      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
+      "prompt": "The author uses the phrase 'seeming paradox' to suggest that:",
+      "options": [
+        "A. Open-source development violates all known economic principles",
+        "B. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained",
+        "C. Economists have no theory that explains open-source development",
+        "D. Open-source software is economically irrational and will eventually disappear"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "difficulty": "medium",
+      "topic": "reading_comprehension"
+    }
+  ],
+  "answerKey": {
+    "gmat-verbal-023-q01": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q02": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q03": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q04": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q05": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q06": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q07": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q08": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q09": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q10": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q11": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q12": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q13": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q14": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q15": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q16": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q17": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q18": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q19": "A major software upgrade occurred at the same time",
+    "gmat-verbal-023-q20": "A major software upgrade occurred at the same time"
+  },
+  "fingerprints": [
+    "3118d82f6764be7641",
+    "1af24dbc1aaf21db15",
+    "3acba116646dbb762d",
+    "bf2c887902c84716df",
+    "faf40eb2aa9e279412",
+    "30967081104153852c",
+    "5ea834684ffc7bad26",
+    "70a25f15acbf208b97",
+    "bd26db0776b9d060ed",
+    "ec1f7f8bfbbd42940a",
+    "6afd5d0f548849e2ae",
+    "c3de47dc709d32d31d",
+    "7256e1c82f89ca1d18",
+    "8ab1640322689bfe40",
+    "0996dda68aaa9485c4",
+    "59dbd97a661eab4c84",
+    "445c1dc1cbae877924",
+    "1db5a6f52faade75c2",
+    "12b64b53683bbfa0a0",
+    "ebcbf583a05e2f6028"
+  ],
+  "readingPassages": [
+    {
+      "id": "gmat-verbal-023-rp1",
+      "title": "Business and Society",
+      "text": "The relationship between economic inequality and social mobility has been extensively studied. Some economists argue that inequality creates incentives for effort and innovation, while others maintain that high inequality undermines social mobility by restricting access to education and networks for those at the bottom of the income distribution. Longitudinal data from multiple countries suggests the latter effect is more significant."
+    }
+  ]
+}

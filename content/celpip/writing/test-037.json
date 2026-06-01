@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-037",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 37",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-037-q01",
+      "questionType": "writing_task",
+      "prompt": "Write an email to your bank asking about the process for setting up automatic bill payments.",
+      "modelAnswer": "I wholeheartedly endorse Option A, advocating for increased investment in public transportation, as it presents a more holistic and sustainable solution to urban challenges compared to the narrow focus on road infrastructure.\n\nFirstly, enhanced public transit directly addresses traffic congestion and its associated environmental impact. By providing efficient and reliable alternatives to private vehicles – such as expanded subway lines, dedicated bus rapid transit (BRT) lanes, and more frequent service – we can significantly reduce the number of cars on the road. This not only shortens commute times for everyone but also lowers carbon emissions and improves air quality, contributing to a healthier urban environment. For instance, imagine a city where a new light rail line connects residential areas to major business districts, enticing thousands of daily commuters to leave their cars at home.\n\nSecondly, robust public transportation fosters greater social equity and accessibility. Not everyone can afford or operate a private vehicle, and relying solely on road improvements can further marginalize these populations. A well-developed transit network ensures that low-income individuals, students, seniors, and those with disabilities have affordable and dependable access to employment, education, healthcare, and recreational opportunities. This inclusivity strengthens the social fabric of a city and reduces economic disparities.\n\nWhile Option B, focusing on road infrastructure, might offer some immediate relief for drivers, it often proves to be a temporary fix. Widening roads frequently induces more traffic, leading back to congestion in a short period – a phenomenon known as \"induced demand.\" It also consumes valuable urban land and prioritizes individual car use over collective well-being, failing to tackle the root causes of urban mobility issues. Therefore, investing in public transit is a far more forward-thinking and impactful strategy.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "opening a bank account",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-037-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short review of the customer service you received when opening your bank account.",
+      "modelAnswer": "I wholeheartedly endorse Option B, advocating for the prioritization of immediate, high-impact solutions to address pressing local issues, even if they are temporary. While long-term strategies are undeniably valuable, the urgency of certain problems demands immediate intervention to alleviate suffering and improve quality of life for residents.\n\nMy primary reason for this stance is the immediate tangible benefit to the community. For example, repairing a critical pothole-riddled road, even if a full reconstruction is years away, instantly improves safety and reduces vehicle damage for daily commuters. Similarly, setting up a temporary warming shelter during a cold snap directly saves lives, a far more impactful outcome than merely planning for a permanent facility in five years. These immediate solutions build trust and demonstrate responsiveness from local authorities, fostering a sense of being heard and cared for among residents.\n\nSecondly, temporary solutions can often serve as valuable pilot programs. Implementing a smaller, quicker fix allows the city to gather data, assess effectiveness, and identify unforeseen challenges before committing to a more extensive, permanent project. A temporary bike lane, for instance, can gauge rider demand and impact on traffic flow before a costly, permanent infrastructure overhaul.\n\nOption A, focusing solely on long-term solutions, while admirable in its vision, risks leaving critical issues unaddressed for extended periods. The community cannot afford to wait years for perfect solutions when immediate, albeit temporary, relief is possible and desperately needed. Such an approach can lead to increased frustration, declining quality of life, and a sense of abandonment among the populace.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "opening a bank account",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

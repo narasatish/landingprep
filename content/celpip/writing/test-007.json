@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-007",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 7",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-007-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You recently purchased a laptop from an electronics store. Within two weeks, the screen began showing lines and flickering, making it unusable for your work.",
+      "recipient": "the store's customer service department",
+      "bulletPoints": [
+        "Describe the problem with the laptop",
+        "Mention how the issue is affecting your work",
+        "Request a replacement or refund"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "A friend who lives in another city is planning to visit you for the first time. Write a letter welcoming them, describing what they can expect in your city, and suggesting some activities you could do together.",
+      "modelAnswer": "Dear [Store Name] Customer Service,\n\nI am writing to report a significant issue with a laptop I recently purchased from your [Location, e.g., downtown Vancouver] store. On [Date of purchase, e.g., October 26, 2023], I bought an [Laptop Brand and Model, e.g., HP Spectre x360] (receipt attached, serial number [Serial Number, if known]).\n\nWithin two weeks of purchase, the screen began displaying persistent vertical lines and flickering intermittently, making it impossible to use. The problem has progressively worsened, and the screen is now almost entirely unreadable. This defect is severely impacting my ability to work remotely as a graphic designer, as I rely heavily on a functional display for all my projects and client communication. The downtime is causing significant delays and potential financial losses.\n\nGiven that this is a brand-new device experiencing such a critical hardware failure so soon after purchase, I kindly request either a full refund or a direct replacement of the laptop. I am available to bring the faulty unit back to the store at your earliest convenience. Please let me know the next steps for resolving this matter promptly.\n\nThank you for your time and assistance.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Email Address]"
+    },
+    {
+      "id": "celpip-writing-007-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your school district is deciding how to spend a budget surplus. Which investment do you think should be prioritised?",
+      "optionA": "Purchase new tablets and technology equipment for all classrooms",
+      "optionB": "Hire additional specialist support teachers for students with learning differences",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A local school board is asking parents and community members for feedback on school programmes. Describe what you think students need most from their education, what is currently lacking, and what changes you would recommend.",
+      "modelAnswer": "While both options present valuable investments, I firmly believe the school district should prioritise hiring additional specialist support teachers for students with learning differences. This investment addresses a fundamental need for equitable and effective education, providing long-term, human-centric benefits that technology alone cannot replicate.\n\nFirstly, specialist teachers offer tailored, direct instruction crucial for students struggling with academic or social-emotional challenges. Unlike generic classroom teachers, these professionals possess specific training and strategies to diagnose learning gaps, implement individualized education plans, and foster essential coping mechanisms. This direct intervention can prevent students from falling further behind, boosting their confidence and academic outcomes significantly. For example, a dedicated learning specialist can provide one-on-one reading interventions that a classroom teacher, managing 30 students, simply cannot.\n\nSecondly, increased specialist support lightens the burden on regular classroom teachers, allowing them to focus more effectively on the broader curriculum. When students with learning differences receive appropriate external support, classroom teachers can dedicate more time to general instruction without compromising the needs of specific individuals.\n\nConversely, while new tablets and technology are appealing, their impact is often limited without expert pedagogical guidance. Technology is a tool; its effectiveness hinges on how it’s integrated into teaching. Without the foundational support provided by specialist teachers, new devices risk becoming underutilized or even a distraction for students who already struggle with engagement. Furthermore, technology rapidly becomes obsolete, whereas the expertise of a dedicated educator offers enduring value."
+    }
+  ]
+}

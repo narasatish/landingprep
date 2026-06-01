@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-054",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 54",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-054-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to your community welcome centre asking about social groups in your area.",
+      "modelAnswer": "I wholeheartedly endorse Option B, advocating for the prioritization of practical skills and work experience over formal academic qualifications. While traditional degrees have their place, the modern workforce increasingly demands tangible abilities and proven experience, which often cannot be fully simulated in a classroom setting.\n\nFirstly, practical skills are immediately applicable and demonstrably effective. For instance, a software developer with a robust portfolio of real-world projects, even without a computer science degree, will likely outperform a graduate who lacks practical application. Employers are often more interested in what a candidate *can do* rather than solely what they *has studied*. This hands-on experience also fosters problem-solving abilities and adaptability, crucial attributes in dynamic work environments.\n\nSecondly, work experience provides invaluable insights into workplace culture, teamwork, and professional responsibility. These soft skills, honed through actual employment, are often overlooked in academic curricula but are paramount for long-term career success. An individual who has navigated office politics, met deadlines under pressure, and collaborated effectively with colleagues is inherently better prepared for professional life than someone who has only experienced academic pressures.\n\nOption A, while emphasizing foundational knowledge, often falls short in preparing individuals for the immediate demands of the job market. While theoretical understanding is beneficial, without practical application, it remains largely abstract. The cost and time investment in formal education can also be prohibitive, whereas gaining practical skills and experience can often be achieved more efficiently through apprenticeships, internships, or self-directed learning. Therefore, a focus on practical skills and work experience offers a more direct and often more effective pathway to employment and career progression.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "connecting with neighbours",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-054-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short message to a new neighbour welcoming them to the street.",
+      "modelAnswer": "I would unequivocally choose Option A: \"Invest more in public transportation infrastructure and services.\" This approach offers a multifaceted solution to urban challenges, directly enhancing quality of life and fostering sustainable development.\n\nFirstly, a robust public transportation system significantly reduces traffic congestion and its associated problems. By providing efficient and reliable alternatives to private vehicles, we can decrease commute times, lower stress levels for commuters, and free up valuable urban space currently dedicated to parking and excessive road infrastructure. Imagine fewer gridlocks and more green spaces – a direct benefit of accessible transit.\n\nSecondly, investing in public transport is a powerful environmental initiative. It leads to a substantial reduction in carbon emissions and air pollution, contributing to healthier cities and combating climate change. A single bus can replace dozens of cars, drastically cutting per-passenger emissions. Furthermore, it promotes equitable access to employment, education, and services for all citizens, including those who cannot afford or operate a private vehicle, thereby fostering social inclusion.\n\nWhile Option B, \"Promote car-sharing and ride-sharing programs,\" has merits in optimizing existing vehicle use, it ultimately keeps private vehicles as the primary mode of transport, thus failing to address the root causes of congestion and pollution as effectively as a systemic shift towards public transit. It's a palliative rather than a cure.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "connecting with neighbours",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

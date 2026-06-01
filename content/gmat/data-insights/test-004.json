@@ -1,0 +1,706 @@
+{
+  "id": "gmat-data-insights-004",
+  "exam": "gmat",
+  "section": "data-insights",
+  "type": "section",
+  "title": "GMAT Focus Data Insights Practice Test 4",
+  "durationSeconds": 2700,
+  "questionCount": 20,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "gmat-data-insights-004-q01",
+      "questionType": "graphics_interpretation",
+      "num": 1,
+      "prompt": "A graph showing on-time performance by route in the airline operations sector presents the following data: Domestic short: 88%, Domestic long: 79%, International: 71%, Regional: 84%. According to the graph, which segment/period shows the highest value?",
+      "options": [
+        "A. The first listed value",
+        "B. The last listed value",
+        "C. The middle-ranked value",
+        "D. The value closest to the overall average",
+        "E. Cannot be determined from the data"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This graphics_interpretation question tests ability to interpret airline operations data on on-time performance by route.",
+      "difficulty": "easy",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "airline operations",
+        "topic": "on-time performance by route",
+        "data": "Domestic short: 88%, Domestic long: 79%, International: 71%, Regional: 84%"
+      },
+      "visual": {
+        "chartType": "bar",
+        "title": "On-Time Performance By Route — Airline Operations",
+        "yLabel": "%",
+        "xAxis": [
+          "Domestic short",
+          "Domestic long",
+          "International",
+          "Regional"
+        ],
+        "series": [
+          {
+            "label": "On-Time Performance By Route",
+            "values": [
+              88,
+              79,
+              71,
+              84
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q02",
+      "questionType": "graphics_interpretation",
+      "num": 2,
+      "prompt": "Based on the chart of customer satisfaction scores data (Food quality: 4.2/5, Service speed: 3.8/5, Value: 3.9/5, Ambiance: 4.1/5), which TWO values would combine to equal approximately the average?",
+      "options": [
+        "A. Values 1 and 3",
+        "B. Values 2 and 4",
+        "C. Values 1 and 4",
+        "D. Values 2 and 5",
+        "E. Values 3 and 5"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This graphics_interpretation question tests ability to interpret food service data on customer satisfaction scores.",
+      "difficulty": "easy",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "food service",
+        "topic": "customer satisfaction scores",
+        "data": "Food quality: 4.2/5, Service speed: 3.8/5, Value: 3.9/5, Ambiance: 4.1/5"
+      },
+      "visual": {
+        "chartType": "bar",
+        "title": "Customer Satisfaction Scores — Food Service",
+        "yLabel": "",
+        "xAxis": [
+          "Food quality",
+          "Service speed",
+          "Value",
+          "Ambiance"
+        ],
+        "series": [
+          {
+            "label": "Customer Satisfaction Scores",
+            "values": [
+              4.2,
+              3.8,
+              3.9,
+              4.1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q03",
+      "questionType": "graphics_interpretation",
+      "num": 3,
+      "prompt": "A scatter plot comparing defect rates by production line across manufacturing categories shows: Line A: 0.8%, Line B: 1.4%, Line C: 0.5%, Line D: 2.1%. If the trend continued, which projection is most consistent?",
+      "options": [
+        "A. The first listed value",
+        "B. The last listed value",
+        "C. The middle-ranked value",
+        "D. The value closest to the overall average",
+        "E. Cannot be determined from the data"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This graphics_interpretation question tests ability to interpret manufacturing data on defect rates by production line.",
+      "difficulty": "easy",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "manufacturing",
+        "topic": "defect rates by production line",
+        "data": "Line A: 0.8%, Line B: 1.4%, Line C: 0.5%, Line D: 2.1%"
+      },
+      "visual": {
+        "chartType": "bar",
+        "title": "Defect Rates By Production Line — Manufacturing",
+        "yLabel": "%",
+        "xAxis": [
+          "Line A",
+          "Line B",
+          "Line C",
+          "Line D"
+        ],
+        "series": [
+          {
+            "label": "Defect Rates By Production Line",
+            "values": [
+              0.8,
+              1.4,
+              0.5,
+              2.1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q04",
+      "questionType": "graphics_interpretation",
+      "num": 4,
+      "prompt": "A graph showing loan approval rates in the banking sector presents the following data: Personal: 64%, Mortgage: 71%, Business: 48%, Auto: 79%, Student: 85%. According to the graph, which segment/period shows the highest value?",
+      "options": [
+        "A. Values 1 and 3",
+        "B. Values 2 and 4",
+        "C. Values 1 and 4",
+        "D. Values 2 and 5",
+        "E. Values 3 and 5"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This graphics_interpretation question tests ability to interpret banking data on loan approval rates.",
+      "difficulty": "easy",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "banking",
+        "topic": "loan approval rates",
+        "data": "Personal: 64%, Mortgage: 71%, Business: 48%, Auto: 79%, Student: 85%"
+      },
+      "visual": {
+        "chartType": "bar",
+        "title": "Loan Approval Rates — Banking",
+        "yLabel": "%",
+        "xAxis": [
+          "Personal",
+          "Mortgage",
+          "Business",
+          "Auto",
+          "Student"
+        ],
+        "series": [
+          {
+            "label": "Loan Approval Rates",
+            "values": [
+              64,
+              71,
+              48,
+              79,
+              85
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q05",
+      "questionType": "two_part_analysis",
+      "num": 5,
+      "prompt": "Analysis of campaign conversion rates in marketing: Email: 3.2%, Social: 1.8%, Search: 4.7%, Display: 0.9%, Referral: 6.1%. Select the value closest to the median AND the value that represents the greatest deviation from the mean.",
+      "options": [
+        "A. See table row A",
+        "B. See table row B",
+        "C. See table row C",
+        "D. See table row D",
+        "E. See table row E"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This two_part_analysis question tests ability to interpret marketing data on campaign conversion rates.",
+      "difficulty": "easy",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "marketing",
+        "topic": "campaign conversion rates",
+        "data": "Email: 3.2%, Social: 1.8%, Search: 4.7%, Display: 0.9%, Referral: 6.1%"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q06",
+      "questionType": "two_part_analysis",
+      "num": 6,
+      "prompt": "Given telecommunications subscriber churn rates data: Postpaid: 2.1%, Prepaid: 8.4%, Broadband: 1.7%, Enterprise: 0.8%. In the left column select the highest-performing category; in the right column select the category that improved most year-over-year.",
+      "options": [
+        "A. See table row A",
+        "B. See table row B",
+        "C. See table row C",
+        "D. See table row D",
+        "E. See table row E"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This two_part_analysis question tests ability to interpret telecommunications data on subscriber churn rates.",
+      "difficulty": "easy",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "telecommunications",
+        "topic": "subscriber churn rates",
+        "data": "Postpaid: 2.1%, Prepaid: 8.4%, Broadband: 1.7%, Enterprise: 0.8%"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q07",
+      "questionType": "two_part_analysis",
+      "num": 7,
+      "prompt": "A education manager reviews student assessment pass rates: Mathematics: 73%, Science: 68%, English: 81%, History: 77%, Languages: 62%. Select: (1) the category requiring immediate attention and (2) the category that exceeds the target of the average by the greatest margin.",
+      "options": [
+        "A. See table row A",
+        "B. See table row B",
+        "C. See table row C",
+        "D. See table row D",
+        "E. See table row E"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This two_part_analysis question tests ability to interpret education data on student assessment pass rates.",
+      "difficulty": "easy",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "education",
+        "topic": "student assessment pass rates",
+        "data": "Mathematics: 73%, Science: 68%, English: 81%, History: 77%, Languages: 62%"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q08",
+      "questionType": "two_part_analysis",
+      "num": 8,
+      "prompt": "Analysis of claims processing times in insurance: Auto: 8.2 days, Home: 14.5 days, Health: 6.1 days, Life: 21.3 days. Select the value closest to the median AND the value that represents the greatest deviation from the mean.",
+      "options": [
+        "A. See table row A",
+        "B. See table row B",
+        "C. See table row C",
+        "D. See table row D",
+        "E. See table row E"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This two_part_analysis question tests ability to interpret insurance data on claims processing times.",
+      "difficulty": "medium",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "insurance",
+        "topic": "claims processing times",
+        "data": "Auto: 8.2 days, Home: 14.5 days, Health: 6.1 days, Life: 21.3 days"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q09",
+      "questionType": "multi_source_reasoning",
+      "num": 9,
+      "prompt": "Three data sources on construction project completion on schedule are provided: (Memo) Overall performance improved this quarter. (Table) Residential: 58%, Commercial: 44%, Infrastructure: 37%, Industrial: 51%. (Email) Stakeholders express concern about outliers. Which source most directly supports the memo's claim?",
+      "options": [
+        "A. Source 1 (Report) only",
+        "B. Source 2 (Email) only",
+        "C. Source 3 (Table) only",
+        "D. Sources 1 and 3 together",
+        "E. All three sources are equally relevant"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This multi_source_reasoning question tests ability to interpret construction data on project completion on schedule.",
+      "difficulty": "medium",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "construction",
+        "topic": "project completion on schedule",
+        "data": "Residential: 58%, Commercial: 44%, Infrastructure: 37%, Industrial: 51%"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q10",
+      "questionType": "multi_source_reasoning",
+      "num": 10,
+      "prompt": "Source 1 (Report): agriculture crop yield indices shows: Wheat: 108, Corn: 95, Rice: 112, Soybeans: 103, Cotton: 89. Source 2 (Email): The weakest performer needs a 20% improvement to meet targets. Source 3 (Table): Targets are set at the top-quartile value. Which category needs improvement?",
+      "options": [
+        "A. Source 1 (Report) only",
+        "B. Source 2 (Email) only",
+        "C. Source 3 (Table) only",
+        "D. Sources 1 and 3 together",
+        "E. All three sources are equally relevant"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This multi_source_reasoning question tests ability to interpret agriculture data on crop yield indices.",
+      "difficulty": "medium",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "agriculture",
+        "topic": "crop yield indices",
+        "data": "Wheat: 108, Corn: 95, Rice: 112, Soybeans: 103, Cotton: 89"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q11",
+      "questionType": "multi_source_reasoning",
+      "num": 11,
+      "prompt": "Reviewing e-commerce records: Source A shows return rates by product category: Electronics: 12%, Clothing: 28%, Home goods: 8%, Books: 3%, Sports: 15%. Source B notes the average. Source C flags values more than 25% above or below average. Which values would Source C flag?",
+      "options": [
+        "A. Source 1 (Report) only",
+        "B. Source 2 (Email) only",
+        "C. Source 3 (Table) only",
+        "D. Sources 1 and 3 together",
+        "E. All three sources are equally relevant"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This multi_source_reasoning question tests ability to interpret e-commerce data on return rates by product category.",
+      "difficulty": "medium",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "e-commerce",
+        "topic": "return rates by product category",
+        "data": "Electronics: 12%, Clothing: 28%, Home goods: 8%, Books: 3%, Sports: 15%"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q12",
+      "questionType": "multi_source_reasoning",
+      "num": 12,
+      "prompt": "Three data sources on consulting project profitability by industry are provided: (Memo) Overall performance improved this quarter. (Table) Technology: 24%, Finance: 31%, Healthcare: 18%, Government: 9%, Retail: 14%. (Email) Stakeholders express concern about outliers. Which source most directly supports the memo's claim?",
+      "options": [
+        "A. Source 1 (Report) only",
+        "B. Source 2 (Email) only",
+        "C. Source 3 (Table) only",
+        "D. Sources 1 and 3 together",
+        "E. All three sources are equally relevant"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This multi_source_reasoning question tests ability to interpret consulting data on project profitability by industry.",
+      "difficulty": "medium",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "consulting",
+        "topic": "project profitability by industry",
+        "data": "Technology: 24%, Finance: 31%, Healthcare: 18%, Government: 9%, Retail: 14%"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q13",
+      "questionType": "data_sufficiency",
+      "num": 13,
+      "prompt": "What is the relative ranking of categories in tourism visitor spending by activity? (1) Accommodation: 38%. (2) The remaining values follow a consistent trend.",
+      "options": [
+        "A. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "B. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "C. Both statements together are sufficient, but neither alone is sufficient",
+        "D. Each statement alone is sufficient",
+        "E. Neither statement alone nor together is sufficient"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This data_sufficiency question tests ability to interpret tourism data on visitor spending by activity.",
+      "difficulty": "medium",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "tourism",
+        "topic": "visitor spending by activity",
+        "data": "Accommodation: 38%, Food: 24%, Transport: 18%, Entertainment: 12%, Shopping: 8%"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q14",
+      "questionType": "data_sufficiency",
+      "num": 14,
+      "prompt": "Is the recruitment time-to-hire by department above the industry benchmark of the median? (1) Engineering: 47 days. (2) The range of all values is 19 days.",
+      "options": [
+        "A. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "B. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "C. Both statements together are sufficient, but neither alone is sufficient",
+        "D. Each statement alone is sufficient",
+        "E. Neither statement alone nor together is sufficient"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This data_sufficiency question tests ability to interpret recruitment data on time-to-hire by department.",
+      "difficulty": "medium",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "recruitment",
+        "topic": "time-to-hire by department",
+        "data": "Engineering: 47 days, Marketing: 31 days, Finance: 28 days, Sales: 22 days, HR: 19 days"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q15",
+      "questionType": "data_sufficiency",
+      "num": 15,
+      "prompt": "Can the average environmental emissions reduction by sector be calculated precisely? (1) Energy: -14%, Transport: -8%, Industry: -6%, Agriculture: -3%, Buildings: -11%. (2) All categories are measured using the same methodology.",
+      "options": [
+        "A. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "B. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "C. Both statements together are sufficient, but neither alone is sufficient",
+        "D. Each statement alone is sufficient",
+        "E. Neither statement alone nor together is sufficient"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This data_sufficiency question tests ability to interpret environmental data on emissions reduction by sector.",
+      "difficulty": "hard",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "environmental",
+        "topic": "emissions reduction by sector",
+        "data": "Energy: -14%, Transport: -8%, Industry: -6%, Agriculture: -3%, Buildings: -11%"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q16",
+      "questionType": "data_sufficiency",
+      "num": 16,
+      "prompt": "What is the relative ranking of categories in retail banking product penetration rates? (1) Current accounts: 100%. (2) The remaining values follow a consistent trend.",
+      "options": [
+        "A. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "B. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "C. Both statements together are sufficient, but neither alone is sufficient",
+        "D. Each statement alone is sufficient",
+        "E. Neither statement alone nor together is sufficient"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This data_sufficiency question tests ability to interpret retail banking data on product penetration rates.",
+      "difficulty": "hard",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "retail banking",
+        "topic": "product penetration rates",
+        "data": "Current accounts: 100%, Savings: 74%, Credit cards: 52%, Investments: 31%, Mortgages: 28%"
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q17",
+      "questionType": "table_analysis",
+      "num": 17,
+      "prompt": "Sort the streaming media content viewing patterns table: Drama: 35%, Comedy: 22%, Documentary: 18%, Action: 15%, Other: 10%. Which statement is accurate?",
+      "options": [
+        "A. The first row ranks highest",
+        "B. The second row ranks highest",
+        "C. The third row ranks highest",
+        "D. The ranking depends on the sort criterion",
+        "E. Insufficient data to determine rank"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This table_analysis question tests ability to interpret streaming media data on content viewing patterns.",
+      "difficulty": "hard",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "streaming media",
+        "topic": "content viewing patterns",
+        "data": "Drama: 35%, Comedy: 22%, Documentary: 18%, Action: 15%, Other: 10%"
+      },
+      "visual": {
+        "chartType": "table",
+        "title": "Content Viewing Patterns — Streaming Media",
+        "headers": [
+          "Category",
+          "Content Viewing Patterns"
+        ],
+        "rows": [
+          [
+            "Drama",
+            "35%"
+          ],
+          [
+            "Comedy",
+            "22%"
+          ],
+          [
+            "Documentary",
+            "18%"
+          ],
+          [
+            "Action",
+            "15%"
+          ],
+          [
+            "Other",
+            "10%"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q18",
+      "questionType": "table_analysis",
+      "num": 18,
+      "prompt": "A table comparing supply chain supplier performance scores shows: Quality: 87/100, Delivery: 79/100, Price: 83/100, Responsiveness: 91/100, Sustainability: 74/100. Indicate whether each statement is true, false, or cannot be determined.",
+      "options": [
+        "A. The first row ranks highest",
+        "B. The second row ranks highest",
+        "C. The third row ranks highest",
+        "D. The ranking depends on the sort criterion",
+        "E. Insufficient data to determine rank"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This table_analysis question tests ability to interpret supply chain data on supplier performance scores.",
+      "difficulty": "hard",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "supply chain",
+        "topic": "supplier performance scores",
+        "data": "Quality: 87/100, Delivery: 79/100, Price: 83/100, Responsiveness: 91/100, Sustainability: 74/100"
+      },
+      "visual": {
+        "chartType": "table",
+        "title": "Supplier Performance Scores — Supply Chain",
+        "headers": [
+          "Category",
+          "Supplier Performance Scores"
+        ],
+        "rows": [
+          [
+            "Quality",
+            "87/100"
+          ],
+          [
+            "Delivery",
+            "79/100"
+          ],
+          [
+            "Price",
+            "83/100"
+          ],
+          [
+            "Responsiveness",
+            "91/100"
+          ],
+          [
+            "Sustainability",
+            "74/100"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q19",
+      "questionType": "table_analysis",
+      "num": 19,
+      "prompt": "Based on the fitness gym membership usage table (Peak hours 6-8am: 42%, 12-2pm: 18%, 5-8pm: 56%, 8-10pm: 23%, Other: 12%), sort by the criteria given and identify which column would rank first.",
+      "options": [
+        "A. The first row ranks highest",
+        "B. The second row ranks highest",
+        "C. The third row ranks highest",
+        "D. The ranking depends on the sort criterion",
+        "E. Insufficient data to determine rank"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This table_analysis question tests ability to interpret fitness data on gym membership usage.",
+      "difficulty": "hard",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "fitness",
+        "topic": "gym membership usage",
+        "data": "Peak hours 6-8am: 42%, 12-2pm: 18%, 5-8pm: 56%, 8-10pm: 23%, Other: 12%"
+      },
+      "visual": {
+        "chartType": "table",
+        "title": "Gym Membership Usage — Fitness",
+        "headers": [
+          "Category",
+          "Gym Membership Usage"
+        ],
+        "rows": [
+          [
+            "Peak hours 6-8am",
+            "42%"
+          ],
+          [
+            "12-2pm",
+            "18%"
+          ],
+          [
+            "5-8pm",
+            "56%"
+          ],
+          [
+            "8-10pm",
+            "23%"
+          ],
+          [
+            "Other",
+            "12%"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "gmat-data-insights-004-q20",
+      "questionType": "table_analysis",
+      "num": 20,
+      "prompt": "Sort the cybersecurity incident response times table: Detection: 4.2h, Containment: 2.8h, Eradication: 6.1h, Recovery: 12.4h, Documentation: 3.9h. Which statement is accurate?",
+      "options": [
+        "A. The first row ranks highest",
+        "B. The second row ranks highest",
+        "C. The third row ranks highest",
+        "D. The ranking depends on the sort criterion",
+        "E. Insufficient data to determine rank"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This table_analysis question tests ability to interpret cybersecurity data on incident response times.",
+      "difficulty": "hard",
+      "topic": "data_interpretation",
+      "dataContext": {
+        "context": "cybersecurity",
+        "topic": "incident response times",
+        "data": "Detection: 4.2h, Containment: 2.8h, Eradication: 6.1h, Recovery: 12.4h, Documentation: 3.9h"
+      },
+      "visual": {
+        "chartType": "table",
+        "title": "Incident Response Times — Cybersecurity",
+        "headers": [
+          "Category",
+          "Incident Response Times"
+        ],
+        "rows": [
+          [
+            "Detection",
+            "4.2h"
+          ],
+          [
+            "Containment",
+            "2.8h"
+          ],
+          [
+            "Eradication",
+            "6.1h"
+          ],
+          [
+            "Recovery",
+            "12.4h"
+          ],
+          [
+            "Documentation",
+            "3.9h"
+          ]
+        ]
+      }
+    }
+  ],
+  "answerKey": {
+    "gmat-data-insights-004-q01": "108.67",
+    "gmat-data-insights-004-q02": "109.67",
+    "gmat-data-insights-004-q03": "110.67",
+    "gmat-data-insights-004-q04": "111.67",
+    "gmat-data-insights-004-q05": "112.67",
+    "gmat-data-insights-004-q06": "113.67",
+    "gmat-data-insights-004-q07": "114.67",
+    "gmat-data-insights-004-q08": "115.67",
+    "gmat-data-insights-004-q09": "116.67",
+    "gmat-data-insights-004-q10": "117.67",
+    "gmat-data-insights-004-q11": "118.67",
+    "gmat-data-insights-004-q12": "119.67",
+    "gmat-data-insights-004-q13": "120.67",
+    "gmat-data-insights-004-q14": "121.67",
+    "gmat-data-insights-004-q15": "122.67",
+    "gmat-data-insights-004-q16": "123.67",
+    "gmat-data-insights-004-q17": "124.67",
+    "gmat-data-insights-004-q18": "125.67",
+    "gmat-data-insights-004-q19": "126.67",
+    "gmat-data-insights-004-q20": "127.67"
+  },
+  "fingerprints": [
+    "eb3561a109e979d4ae",
+    "18e22d961becc65119",
+    "8d819d2bc15a5d92c7",
+    "23cd946111e67c1381",
+    "08f9fda33f9fa0e392",
+    "cbb444fc08f962a76d",
+    "cc420d5f4735caead4",
+    "f20e495a8dc362adee",
+    "fb9289c2415f275f6e",
+    "f0cd5133ff6bdea587",
+    "377982eef75dbda040",
+    "1f543b6ffd3fbe1f84",
+    "219f440ee18d71bd62",
+    "9ac6b5e8808298da5a",
+    "00c0813f043766e084",
+    "107bae5307df7b53a4",
+    "88da3dcb5cdbf1afe0",
+    "f5eed1389f019ea385",
+    "5a6d6accf9ea781980",
+    "28328b92a0544793cd"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ielts-full-023",
+  "exam": "ielts",
+  "type": "full",
+  "title": "IELTS Full Mock Test 23",
+  "durationSeconds": 9900,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "ielts-listening-023",
+      "file": "ielts/listening/test-023.json"
+    },
+    {
+      "section": "reading",
+      "testId": "ielts-reading-023",
+      "file": "ielts/reading/test-023.json"
+    },
+    {
+      "section": "writing",
+      "testId": "ielts-writing-023",
+      "file": "ielts/writing/test-023.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "ielts-speaking-023",
+      "file": "ielts/speaking/test-023.json"
+    }
+  ]
+}

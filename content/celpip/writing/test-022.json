@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-022",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 22",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-022-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "Your community is organising a winter fundraiser for a local charity and you want to recruit a friend who runs a small bakery to donate baked goods for the event.",
+      "recipient": "your friend who owns the bakery",
+      "bulletPoints": [
+        "Describe the event and the charity it supports",
+        "Explain specifically what you are hoping they can donate",
+        "Mention any benefits or recognition they would receive for their donation"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You are planning a community fundraiser for a local charity. Write a letter to potential sponsors explaining the cause, what the event involves, and how their support would make a difference.",
+      "modelAnswer": "Hi Maya,\n\nHope you’re doing wonderfully!\n\nI’m writing to you today with an exciting opportunity for a good cause. Our community is organizing a \"Winter Warmth Fundraiser\" on December 15th at the Community Hall, and we're raising money for the Downtown Youth Shelter. They provide essential services like warm meals, clothing, and safe spaces for vulnerable youth during the harsh winter months, and their needs are greater than ever this year.\n\nGiven your incredible talent and your bakery’s reputation, I immediately thought of you. We’re hoping you might be able to donate some of your delicious baked goods for our refreshment table. Even a few dozen cookies, brownies, or mini muffins would be a huge hit and greatly appreciated by attendees.\n\nOf course, we'd ensure your generosity doesn't go unnoticed! We'll prominently feature \"Maya's Delights Bakery\" on all our promotional materials, including event posters, social media shout-outs, and a special mention during the opening remarks. It would be fantastic exposure for your business while helping a truly deserving charity.\n\nLet me know if this is something you might be able to help with. I can provide more details if needed.\n\nThanks so much for considering!\n\nBest,\n\nLiam"
+    },
+    {
+      "id": "celpip-writing-022-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your school board is considering how to address low student engagement. Which strategy do you prefer?",
+      "optionA": "Introduce a peer mentoring programme pairing older and younger students",
+      "optionB": "Redesign the curriculum to include more project-based and hands-on learning",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A digital literacy programme is surveying residents about technology access and skills. Describe your level of confidence using technology, what challenges you face, and what training or resources would help you most.",
+      "modelAnswer": "I strongly advocate for redesigning the curriculum to incorporate more project-based and hands-on learning as the most effective strategy to combat low student engagement. This approach directly addresses the root causes of disinterest by making education relevant, interactive, and stimulating.\n\nFirstly, project-based learning fosters a deeper understanding of concepts by allowing students to apply theoretical knowledge to real-world scenarios. For instance, instead of memorizing historical dates, students could research and present a multimedia project on the impact of a specific historical event, requiring critical thinking and collaboration. This active participation transforms passive reception into meaningful engagement.\n\nSecondly, hands-on activities cater to diverse learning styles, particularly kinesthetic learners who thrive through doing. Science experiments, building models, or even community service projects provide tangible experiences that make learning memorable and enjoyable. This practical application significantly boosts motivation and retention, moving beyond rote memorization which often disengages students.\n\nWhile peer mentoring is valuable, it primarily addresses social and academic support rather than fundamental curriculum disengagement. A disengaged student, even with a mentor, will likely remain uninspired if the core learning experience itself is unstimulating. Therefore, a curriculum overhaul offers a more systemic and impactful solution to genuinely re-ignite student interest."
+    }
+  ]
+}

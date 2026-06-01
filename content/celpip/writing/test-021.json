@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-021",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 21",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-021-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You recently attended a professional development workshop that was paid for by your employer. You would like to share what you learned with your team.",
+      "recipient": "your team members",
+      "bulletPoints": [
+        "Briefly describe the workshop and what it covered",
+        "Share two key things you learned that are relevant to your team",
+        "Suggest a time to discuss how to apply these ideas at work"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "Your workplace recently introduced a new scheduling system that is causing difficulties for many employees. Write a letter to your human resources manager describing the problems, how staff are affected, and suggesting a solution.",
+      "modelAnswer": "Subject: Workshop Learnings & Discussion Opportunity\n\nHi Team,\n\nI hope you're all having a productive week.\n\nAs you know, I recently attended the \"Future-Proofing Project Management\" workshop, generously sponsored by the company. It was an intensive full-day session that delved into agile methodologies, risk mitigation strategies for complex projects, and leveraging AI tools for enhanced efficiency in project planning and execution.\n\nI wanted to share two key takeaways that I believe are highly relevant to our current projects and future workflow. Firstly, the emphasis on proactive stakeholder engagement, particularly through structured bi-weekly check-ins, really resonated with me. It highlighted how consistent, brief updates can drastically reduce miscommunication and scope creep. Secondly, the workshop introduced several AI-powered tools for automated task tracking and dependency mapping, which could significantly streamline our project management processes, freeing us up for more strategic work.\n\nI'd love to discuss these points further and brainstorm how we might integrate some of these ideas into our upcoming projects, perhaps starting with the \"Client Portal Revamp.\" Would Friday morning at 10:00 AM work for a quick 30-minute chat in Meeting Room B? Please let me know if that time suits you, or suggest an alternative.\n\nBest regards,\n\n[Your Name]"
+    },
+    {
+      "id": "celpip-writing-021-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city is considering how to address the shortage of affordable housing. Which approach do you prefer?",
+      "optionA": "Introduce rent control legislation to limit annual rent increases",
+      "optionB": "Provide incentives for developers to build more affordable units on underused land",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A local newspaper is conducting a survey about what topics the community wants covered. Describe the issues that matter most to you as a resident, what kind of information you look for in local news, and how the paper could serve the community better.",
+      "modelAnswer": "I strongly advocate for Option B: providing incentives for developers to build more affordable units on underused land. This approach offers a sustainable, long-term solution to the housing crisis.\n\nFirstly, increasing supply directly addresses the root cause of high prices – insufficient housing stock. By incentivizing developers, we can stimulate the construction of a diverse range of affordable homes, from apartments to townhouses, tailored to various income levels. This expands choices for residents and naturally pushes market prices down through competition. For instance, tax breaks or expedited permit processes could encourage the development of hundreds of units annually, significantly impacting availability.\n\nSecondly, utilizing underused land, such as abandoned commercial sites or disused industrial zones, revitalizes neglected areas. This not only creates much-needed housing but also spruces up neighbourhoods, potentially attracting new businesses and services, thus fostering community growth and economic development.\n\nWhile rent control (Option A) might offer immediate relief, it often discourages new construction and can lead to a decline in property maintenance as landlords find it less profitable to invest. It's a short-term fix that fails to address the fundamental supply deficit. Incentivizing new builds, conversely, offers a proactive, market-driven solution that benefits the entire city."
+    }
+  ]
+}

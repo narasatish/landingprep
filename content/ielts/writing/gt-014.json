@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-014",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 14 — Apology Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-014-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "apology",
+      "letterSituation": "Your close friend got married six months ago and you were invited as a guest but had to cancel at very short notice because of an urgent work commitment. You have not been in contact since then and feel you owe your friend both an explanation and a sincere apology.",
+      "prompt": "Your close friend got married six months ago and you were invited as a guest but had to cancel at very short notice because of an urgent work commitment. You have not been in contact since then and feel you owe your friend both an explanation and a sincere apology.\n\nWrite a letter in response to this situation. In your letter:\n• apologise sincerely for missing the wedding and for not being in contact since\n• explain the circumstances that forced you to cancel and why contact has been delayed\n• suggest a specific way that you could make it up to your friend\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "apology"
+    },
+    {
+      "id": "ielts-writing-gt-014-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Some people believe that friendship becomes increasingly difficult to maintain as people grow older and take on more responsibilities. To what extent do you agree or disagree with this view?",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "apology"
+    }
+  ]
+}

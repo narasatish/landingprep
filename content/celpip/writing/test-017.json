@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-017",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 17",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-017-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You ordered furniture online six weeks ago and the order still has not arrived. The tracking system shows the order has been stuck at a regional warehouse for three weeks.",
+      "recipient": "the online furniture company's customer service",
+      "bulletPoints": [
+        "Describe the order and how long you have been waiting",
+        "Explain the problem you can see in the tracking system",
+        "Request an immediate update and ask what compensation is available for the delay"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You have noticed that a local park in your area is not being properly maintained. Write a letter to the city council describing the problems, why they matter to the community, and requesting prompt action.",
+      "modelAnswer": "Dear Customer Service,\n\nI am writing to inquire about the status of my recent furniture order, placed on your website six weeks ago, on October 27th, 2023. The order number is #CELPIP2023-11-27. It includes a \"Nordic Loft\" dining table and six matching chairs.\n\nMy concern stems from the tracking information, which indicates that the order has been stagnant at your regional distribution warehouse in Calgary, Alberta, for the past three weeks, specifically since November 17th. This lack of movement is particularly frustrating given the initial six-week delivery estimate, which has now passed.\n\nCould you please provide an immediate update on the precise location and estimated delivery date of my order? I would also appreciate information regarding any compensation or remedies available for this significant delay, as I have been without a dining set for much longer than anticipated.\n\nThank you for your prompt attention to this matter.\n\nSincerely,\n\nA. Customer"
+    },
+    {
+      "id": "celpip-writing-017-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city is deciding how to use a special grant to improve outdoor spaces. Which project do you prefer?",
+      "optionA": "Build a covered outdoor skating rink for year-round use",
+      "optionB": "Restore a historic waterfront area with walking trails and seating",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A national immigration survey is asking newcomers about their settlement experience. Describe the challenges you or someone you know faced when settling in Canada, what help was most useful, and what gaps in services you identified.",
+      "modelAnswer": "I strongly advocate for Option B: restoring the historic waterfront area with walking trails and seating. This project offers a far more comprehensive and sustainable benefit to our community than the alternative.\n\nFirstly, revitalizing the waterfront would create an accessible, multi-purpose recreational space for all ages and abilities. The walking trails would encourage physical activity and provide serene environments for relaxation, appealing to families, seniors, and fitness enthusiasts alike. Seating areas would foster social interaction and offer picturesque spots for contemplation, enhancing the mental well-being of residents. This project addresses a broader spectrum of community needs, promoting both physical and mental health.\n\nSecondly, restoring the historic waterfront preserves and celebrates a vital part of our city’s heritage. It would draw tourists and residents interested in local history and natural beauty, boosting local businesses and instilling a sense of civic pride. The long-term economic and cultural advantages of this restoration far outweigh the singular recreational benefit of a skating rink.\n\nWhile a covered skating rink (Option A) offers year-round activity, its appeal is limited to a specific demographic and activity. The waterfront restoration, conversely, provides a diverse range of passive and active recreational opportunities, cultural enrichment, and economic stimulus that will benefit the entire community for generations."
+    }
+  ]
+}

@@ -1,0 +1,746 @@
+{
+  "id": "pte-speaking-writing-007",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 7",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-007-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Impact of Public Health Campaigns”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "056d5dce217323d626",
+      "modelAnswer": "Public health campaigns play a crucial role in shaping societal behaviors and improving overall well-being. Effective campaigns often utilize multi-platform approaches, integrating traditional media with digital outreach to maximize their reach. They aim not only to inform but also to persuade individuals to adopt healthier lifestyles, ranging from vaccination drives to promoting balanced nutrition. Success is frequently measured by changes in health indicators and public awareness.",
+      "readText": "Public health campaigns play a crucial role in shaping societal behaviors and improving overall well-being. Effective campaigns often utilize multi-platform approaches, integrating traditional media with digital outreach to maximize their reach. They aim not only to inform but also to persuade individuals to adopt healthier lifestyles, ranging from vaccination drives to promoting balanced nutrition. Success is frequently measured by changes in health indicators and public awareness."
+    },
+    {
+      "id": "pte-speaking-writing-007-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Museum Conservation Techniques”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Modern museum conservation employs advanced techniques to preserve delicate artifacts for future generations.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c94803401b27560520",
+      "modelAnswer": "Modern museum conservation employs advanced techniques to preserve delicate artifacts for future generations.",
+      "audioScript": "Modern museum conservation employs advanced techniques to preserve delicate artifacts for future generations."
+    },
+    {
+      "id": "pte-speaking-writing-007-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Community Science Project Participation by Communication Channel (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "68720c772b56b825fc",
+      "modelAnswer": "This bar chart illustrates community science project participation based on different communication channels in 2023. Word of Mouth was the most effective channel, attracting 2300 participants. Social Media also showed strong engagement with 1850 participants. In contrast, Online Forums had the lowest participation, with only 680 individuals. Local News and Community Events engaged 920 and 1500 participants respectively. Overall, personal recommendations and widespread digital platforms appear more impactful than traditional or niche online communication methods for recruiting community scientists.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Community Science Project Participation by Communication Channel (2023)",
+        "yLabel": "Number of Participants",
+        "xAxis": [
+          "Social Media",
+          "Local News",
+          "Community Events",
+          "Word of Mouth",
+          "Online Forums"
+        ],
+        "series": [
+          {
+            "label": "Participants",
+            "values": [
+              1850,
+              920,
+              1500,
+              2300,
+              680
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-007-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Benefits of Urban Green Roofs”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "1785fc5932414c9154",
+      "modelAnswer": "The lecture discussed the multifaceted benefits of urban green roofs. These installations are crucial for sustainable cities, primarily by mitigating the urban heat island effect and improving air quality. They also play a role in stormwater management and enhance urban biodiversity. Furthermore, green roofs offer economic advantages, such as extending roof longevity and decreasing building energy consumption, making them a comprehensive solution for urban environmental challenges.",
+      "audioScript": "Urban green roofs are gaining traction as a vital component of sustainable city planning. These vegetated layers on building tops offer numerous environmental benefits. They significantly reduce the urban heat island effect by absorbing solar radiation, unlike conventional dark roofs. Furthermore, green roofs improve air quality by filtering pollutants and managing stormwater runoff, alleviating pressure on drainage systems. They also provide habitat for urban wildlife, contributing to biodiversity within metropolitan areas. Economically, they can extend roof lifespan and reduce energy costs for heating and cooling buildings.",
+      "keyPoints": [
+        "Reduce urban heat island effect",
+        "Improve air quality and manage stormwater",
+        "Support urban biodiversity",
+        "Economic benefits: longer roof life, energy savings"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-007-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Cognitive Mapping in Wayfinding”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Cognitive mapping",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "f096d4347b209af621",
+      "modelAnswer": "Cognitive mapping",
+      "audioScript": "What mental process helps us navigate unfamiliar environments by forming internal representations of space?"
+    },
+    {
+      "id": "pte-speaking-writing-007-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Frontiers of Deep Ocean Exploration”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "fc86d61fc799efdfa6",
+      "modelAnswer": "Deep ocean exploration, despite immense challenges from extreme conditions, is being revolutionized by advanced submersible technology, revealing unique ecosystems and geological phenomena crucial for understanding Earth and potential biochemical discoveries.",
+      "readText": "Deep ocean exploration remains one of humanity's most challenging frontiers, with vast areas still unmapped and undiscovered. Advances in submersible technology, remotely operated vehicles (ROVs), and autonomous underwater vehicles (AUVs) have revolutionized our ability to access and study these extreme environments. Scientists are uncovering unique ecosystems, novel species, and geological phenomena, providing insights into Earth's processes and the potential for new biochemical discoveries. However, the immense pressures, extreme cold, and total darkness present significant operational hurdles, making each expedition a monumental undertaking requiring meticulous planning and cutting-edge engineering."
+    },
+    {
+      "id": "pte-speaking-writing-007-q07",
+      "questionType": "essay",
+      "prompt": "Digital archives are increasingly replacing physical repositories for historical documents and cultural artifacts. Discuss the advantages and disadvantages of this shift, and consider its long-term implications for accessibility and preservation.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "dc12cd8196934bdfcf",
+      "modelAnswer": "The transition from physical to digital archives represents a profound shift in how societies preserve and access their collective memory. This technological evolution brings with it a host of advantages, primarily concerning accessibility and storage. Digital archives allow instantaneous global access to vast collections, transcending geographical barriers and democratizing knowledge. They also eliminate the physical space constraints of traditional archives, offering seemingly limitless capacity for new acquisitions. Furthermore, digital formats can facilitate advanced search capabilities and cross-referencing, making research more efficient and comprehensive. The ability to create multiple backups also enhances security against physical damage or loss.\n\nHowever, this paradigm shift is not without its drawbacks. A significant concern is the long-term preservation of digital data. Technological obsolescence means that formats and storage media can become unreadable over time, requiring continuous migration and management—a process known as 'digital rot.' Furthermore, the authenticity and integrity of digital records can be more challenging to verify than physical documents, raising questions about forgery and manipulation. Issues of cybersecurity, copyright, and equitable access for populations without reliable internet infrastructure also present considerable challenges. The digital divide could, in fact, create new forms of exclusion.\n\nIn the long term, the implications for accessibility are largely positive, provided that robust and open access policies are maintained globally. However, for preservation, the implications are more complex. While digital archives offer resilience against localized disasters, they introduce new vulnerabilities related to technological change and data corruption. A hybrid approach, combining the best aspects of both physical and digital preservation, might ultimately be the most sustainable path forward, ensuring that our cultural heritage remains intact and accessible for future generations."
+    },
+    {
+      "id": "pte-speaking-writing-007-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Ancient Silk Road Routes”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "d1d06e3bae61ea70ae",
+      "modelAnswer": "The ancient Silk Road was not merely a single route but a complex network of trade pathways connecting East and West for centuries. It facilitated the exchange of goods like silk, spices, and precious metals, but also ideas, technologies, and religions. This vast intercultural conduit played a pivotal role in shaping civilizations across Eurasia, fostering economic growth and cultural diffusion, profoundly impacting the development of numerous societies along its expanse.",
+      "readText": "The ancient Silk Road was not merely a single route but a complex network of trade pathways connecting East and West for centuries. It facilitated the exchange of goods like silk, spices, and precious metals, but also ideas, technologies, and religions. This vast intercultural conduit played a pivotal role in shaping civilizations across Eurasia, fostering economic growth and cultural diffusion, profoundly impacting the development of numerous societies along its expanse."
+    },
+    {
+      "id": "pte-speaking-writing-007-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Innovations in Battery Technology”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Researchers are developing innovative renewable battery designs to improve energy storage efficiency.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "cdc685837af341e0b2",
+      "modelAnswer": "Researchers are developing innovative renewable battery designs to improve energy storage efficiency.",
+      "audioScript": "Researchers are developing innovative renewable battery designs to improve energy storage efficiency."
+    },
+    {
+      "id": "pte-speaking-writing-007-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Preferred Language Learning Methods (Ages 18-35)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "bb6c374704e7a4faae",
+      "modelAnswer": "This bar chart illustrates preferred language learning methods among individuals aged 18-35. The most popular method is online courses and apps, favored by 45% of learners, significantly outranking all other options. Language exchange partners come in second at 30%, indicating a strong preference for interactive learning. Immersion travel is chosen by 20%, while traditional classroom settings account for only 15%. The least popular method is self-study books and materials, preferred by just 10%. Overall, digital and interactive approaches dominate language learning habits in this age group.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Preferred Language Learning Methods (Ages 18-35)",
+        "yLabel": "Percentage of Learners",
+        "xAxis": [
+          "Online Courses/Apps",
+          "Language Exchange Partners",
+          "Immersion Travel",
+          "Traditional Classroom",
+          "Self-study Books/Materials"
+        ],
+        "series": [
+          {
+            "label": "Method",
+            "values": [
+              45,
+              30,
+              20,
+              15,
+              10
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-007-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Challenges in Public Health Communication”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "09599a4abbd10c7470",
+      "modelAnswer": "The lecture highlighted the complexities of effective public health communication, particularly in today's information-rich environment. Key challenges include adapting messages for diverse audiences with varying literacy and cultural backgrounds. Building and sustaining public trust is also crucial but often difficult due to inconsistent information. Moreover, public health advice struggles to be heard amidst online noise. Therefore, successful campaigns require clarity, consistency, and delivery via trusted sources to foster behavioral change.",
+      "audioScript": "Communicating public health messages effectively is a complex task, especially in an era of widespread misinformation. One major challenge is tailoring information to diverse audiences, considering varying levels of health literacy, cultural beliefs, and language barriers. Another significant hurdle is building and maintaining public trust, which can be eroded by inconsistent messaging or perceived political interference. Furthermore, the sheer volume of information available online makes it difficult for crucial health advice to cut through the noise. Campaigns must be clear, consistent, and delivered through trusted channels to resonate with the target population and drive behavioral change.",
+      "keyPoints": [
+        "Tailoring messages for diverse audiences",
+        "Building and maintaining public trust",
+        "Cutting through online misinformation",
+        "Need for clear, consistent, trusted communication"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-007-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Environmental Control in Museums”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Humidity",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "45ea354acab979d2b0",
+      "modelAnswer": "Humidity",
+      "audioScript": "What is the primary environmental factor conservators control to prevent decay in museum collections?"
+    },
+    {
+      "id": "pte-speaking-writing-007-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “The Rise of Community Science”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0f57616be77c9dd2cc",
+      "modelAnswer": "Community science, or citizen science, engages the public in scientific research, allowing individuals to contribute to data collection and analysis across diverse projects, thereby advancing scientific understanding and fostering public engagement beyond what professional scientists could achieve alone.",
+      "readText": "Community science, often referred to as 'citizen science,' involves public participation in scientific research. This collaborative approach empowers individuals, regardless of their formal scientific background, to contribute to data collection, analysis, and discovery. Projects range from tracking bird migrations and monitoring water quality to classifying galaxies. By engaging a broad network of volunteers, community science initiatives can collect vast amounts of data over wide geographic areas and extended periods, which would be impossible for professional scientists alone. This not only advances scientific understanding but also fosters scientific literacy and engagement among the public."
+    },
+    {
+      "id": "pte-speaking-writing-007-q14",
+      "questionType": "essay",
+      "prompt": "Urban green roofs are increasingly promoted as a solution for sustainable urban development. Discuss the main benefits and challenges associated with implementing green roofs on a large scale in metropolitan areas. What future role do you foresee for them?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "bac1035f6188a84f41",
+      "modelAnswer": "Urban green roofs, which involve covering building rooftops with vegetation, are rapidly gaining recognition as a key component of sustainable urban planning. Their benefits are multifaceted, addressing several critical environmental and economic challenges faced by dense metropolitan areas. Environmentally, green roofs significantly reduce the urban heat island effect by absorbing sunlight rather than reflecting it, leading to cooler city temperatures. They also improve air quality by filtering pollutants and play a crucial role in stormwater management, absorbing rainfall and reducing runoff, which alleviates pressure on drainage systems. Furthermore, they provide valuable habitats for urban biodiversity, connecting fragmented green spaces. Economically, green roofs can extend the lifespan of roofing membranes by protecting them from UV radiation and extreme temperatures, and they can reduce energy consumption for heating and cooling buildings, leading to cost savings.\n\nHowever, the widespread implementation of green roofs faces several challenges. Initial installation costs can be substantially higher than conventional roofs due to the need for specialized structural support, waterproofing, and irrigation systems. Maintenance, though often minimal, requires specific horticultural knowledge. Structural limitations of existing buildings can also preclude their adoption. Moreover, the public and private sectors need to be educated on their long-term value to encourage investment, as the immediate financial return isn't always obvious.\n\nDespite these hurdles, I foresee a significant and expanding role for urban green roofs in the future. As cities continue to grow and climate change impacts intensify, the imperative for sustainable infrastructure will only increase. Government incentives, advancements in lightweight and cost-effective green roof technologies, and greater public awareness will likely drive their broader adoption. They will evolve from niche installations to standard features in new urban developments and retrofits, becoming an integral part of resilient, livable, and eco-friendly cities, contributing substantially to urban sustainability goals."
+    },
+    {
+      "id": "pte-speaking-writing-007-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Environmental Cues in Wayfinding”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "0b5bb731e2b11d03e1",
+      "modelAnswer": "The psychology of wayfinding involves understanding how individuals orient themselves and navigate through physical spaces. It highlights the importance of environmental cues, such as landmarks, signage, and spatial configurations, in aiding cognitive mapping. Successful wayfinding systems minimize cognitive load, allowing people to efficiently reach their destinations without experiencing undue stress or confusion, thereby enhancing their overall experience within an environment.",
+      "readText": "The psychology of wayfinding involves understanding how individuals orient themselves and navigate through physical spaces. It highlights the importance of environmental cues, such as landmarks, signage, and spatial configurations, in aiding cognitive mapping. Successful wayfinding systems minimize cognitive load, allowing people to efficiently reach their destinations without experiencing undue stress or confusion, thereby enhancing their overall experience within an environment."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Heuristics in Decision Making”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q16",
+      "modelAnswer": "The psychology of decision-making explores the cognitive processes individuals employ when making choices. Often, people rely on mental shortcuts, known as heuristics, to simplify complex decisions. While heuristics can lead to efficient choices, they also introduce biases that may result in suboptimal or irrational outcomes. Understanding these cognitive mechanisms is crucial for improving decision-making in various contexts, from personal finance to public policy.",
+      "readText": "The psychology of decision-making explores the cognitive processes individuals employ when making choices. Often, people rely on mental shortcuts, known as heuristics, to simplify complex decisions. While heuristics can lead to efficient choices, they also introduce biases that may result in suboptimal or irrational outcomes. Understanding these cognitive mechanisms is crucial for improving decision-making in various contexts, from personal finance to public policy."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Evolution of Public Transport”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q17",
+      "modelAnswer": "The evolution of public transport systems reflects technological advancements and changing urban needs. From horse-drawn omnibuses to electric trams and modern high-speed rail, each innovation has reshaped cities and their connectivity. These systems are crucial for economic development, reducing traffic congestion, and promoting environmental sustainability. Future developments aim for integrated, autonomous, and energy-efficient solutions to meet growing global demands.",
+      "readText": "The evolution of public transport systems reflects technological advancements and changing urban needs. From horse-drawn omnibuses to electric trams and modern high-speed rail, each innovation has reshaped cities and their connectivity. These systems are crucial for economic development, reducing traffic congestion, and promoting environmental sustainability. Future developments aim for integrated, autonomous, and energy-efficient solutions to meet growing global demands."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Sustainable Urban Planning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q18",
+      "modelAnswer": "Sustainable urban planning emphasizes integrating green infrastructure to create resilient and livable cities. This approach incorporates elements like parks, green roofs, and permeable pavements to manage stormwater, improve air quality, and enhance biodiversity. By prioritizing ecological principles alongside economic and social factors, urban planners aim to mitigate environmental impacts and foster healthier, more sustainable communities for future generations, ensuring long-term urban vitality.",
+      "readText": "Sustainable urban planning emphasizes integrating green infrastructure to create resilient and livable cities. This approach incorporates elements like parks, green roofs, and permeable pavements to manage stormwater, improve air quality, and enhance biodiversity. By prioritizing ecological principles alongside economic and social factors, urban planners aim to mitigate environmental impacts and foster healthier, more sustainable communities for future generations, ensuring long-term urban vitality."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Machine learning applications in healthcare are revolutionizing diagnostics and personalized treatment plans.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Machine Learning in Healthcare”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q19",
+      "modelAnswer": "Machine learning applications in healthcare are revolutionizing diagnostics and personalized treatment plans.",
+      "audioScript": "Machine learning applications in healthcare are revolutionizing diagnostics and personalized treatment plans."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The history of ancient astronomical observations reveals sophisticated understandings of celestial mechanics.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ancient Astronomical Observations”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q20",
+      "modelAnswer": "The history of ancient astronomical observations reveals sophisticated understandings of celestial mechanics.",
+      "audioScript": "The history of ancient astronomical observations reveals sophisticated understandings of celestial mechanics."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The impact of noise pollution on wildlife significantly disrupts animal communication and migratory patterns.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Noise Pollution and Wildlife”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q21",
+      "modelAnswer": "The impact of noise pollution on wildlife significantly disrupts animal communication and migratory patterns.",
+      "audioScript": "The impact of noise pollution on wildlife significantly disrupts animal communication and migratory patterns."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Cross-cultural negotiations in business require careful attention to non-verbal cues and local customs.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Cross-Cultural Business Negotiations”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q22",
+      "modelAnswer": "Cross-cultural negotiations in business require careful attention to non-verbal cues and local customs.",
+      "audioScript": "Cross-cultural negotiations in business require careful attention to non-verbal cues and local customs."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Carbon capture and storage technologies are crucial for mitigating industrial greenhouse gas emissions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Carbon Capture Technologies”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q23",
+      "modelAnswer": "Carbon capture and storage technologies are crucial for mitigating industrial greenhouse gas emissions.",
+      "audioScript": "Carbon capture and storage technologies are crucial for mitigating industrial greenhouse gas emissions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Wildlife corridor design and conservation are essential for maintaining biodiversity across fragmented landscapes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Corridor Design”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q24",
+      "modelAnswer": "Wildlife corridor design and conservation are essential for maintaining biodiversity across fragmented landscapes.",
+      "audioScript": "Wildlife corridor design and conservation are essential for maintaining biodiversity across fragmented landscapes."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and mental states.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Philosophy of Consciousness”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q25",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and mental states.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and mental states."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology and privacy concerns are often debated regarding data collection and surveillance.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy Concerns”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q26",
+      "modelAnswer": "Smart city technology and privacy concerns are often debated regarding data collection and surveillance.",
+      "audioScript": "Smart city technology and privacy concerns are often debated regarding data collection and surveillance."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Ocean Surface pH Levels (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q27",
+      "modelAnswer": "This line graph illustrates the trend of global ocean surface pH levels between 1990 and 2020. The Y-axis represents the pH level, while the X-axis shows the years. A clear downward trend is visible, indicating increasing ocean acidification. In 1990, the average pH was approximately 8.10, which steadily declined to 7.98 by 2020. This represents a significant decrease over three decades, highlighting a concerning environmental issue. The lowest point recorded is 7.98 in 2020, contrasting with the highest at 8.10 in 1990. Overall, the graph effectively communicates the continuous drop in ocean pH.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Ocean Surface pH Levels (1990-2020)",
+        "yLabel": "pH Level",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Average Ocean pH",
+            "values": [
+              8.1,
+              8.08,
+              8.06,
+              8.04,
+              8.02,
+              8,
+              7.98
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global Water Usage by Sector\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q28",
+      "modelAnswer": "This pie chart illustrates global water usage across different sectors. The most striking feature is that agriculture accounts for the vast majority of water consumption, at a substantial 70%. Following this, industry uses 20% of the world's water resources. The smallest proportion is attributed to domestic use, representing only 10%. Clearly, agricultural practices are the dominant factor in global water demand, consuming seven times more water than domestic use and over three times more than the industrial sector combined.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global Water Usage by Sector",
+        "slices": [
+          {
+            "label": "Agriculture",
+            "value": 70
+          },
+          {
+            "label": "Industry",
+            "value": 20
+          },
+          {
+            "label": "Domestic",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Components of the Water Cycle in a Temperate Region\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q29",
+      "modelAnswer": "This line chart illustrates key components of the water cycle in a temperate region, measured in cubic kilometers per year. The highest volume is Evaporation from the Ocean at 425 km³/year, significantly contributing to atmospheric moisture. Precipitation over the Ocean is also substantial at 385 km³/year, indicating a vast water exchange. Conversely, Runoff, at 40 km³/year, represents the lowest volume depicted, showing less surface flow compared to other processes. Land-based evaporation (75 km³/year) combined with transpiration (50 km³/year) highlights evapotranspiration's role in the terrestrial water budget, totaling 125 km³/year, which is less than precipitation over land (115 km³/year).",
+      "visual": {
+        "chartType": "line",
+        "title": "Components of the Water Cycle in a Temperate Region",
+        "yLabel": "Volume (km³/year)",
+        "xAxis": [
+          "Evaporation (Ocean)",
+          "Evaporation (Land)",
+          "Transpiration",
+          "Precipitation (Ocean)",
+          "Precipitation (Land)",
+          "Runoff"
+        ],
+        "series": [
+          {
+            "label": "Average Annual Volume",
+            "values": [
+              425,
+              75,
+              50,
+              385,
+              115,
+              40
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Literacy Rates by Global Region (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q30",
+      "modelAnswer": "The table presents literacy rates across various global regions for 2023, distinguishing between adult and youth literacy. North America and Europe show the highest rates, with adult literacy at 99.0% and 98.5% respectively, and youth rates nearly 100%. Conversely, Sub-Saharan Africa records the lowest figures, with an adult literacy rate of 70.0% and youth literacy at 82.0%. South Asia also has lower rates compared to developed regions, at 76.5% for adults and 89.0% for youth. A consistent trend is that youth literacy rates are higher than adult rates in all regions.",
+      "visual": {
+        "chartType": "table",
+        "title": "Literacy Rates by Global Region (2023)",
+        "headers": [
+          "Region",
+          "Adult Literacy Rate (%)",
+          "Youth Literacy Rate (%)"
+        ],
+        "rows": [
+          [
+            "North America",
+            "99.0",
+            "99.8"
+          ],
+          [
+            "Europe",
+            "98.5",
+            "99.5"
+          ],
+          [
+            "East Asia & Pacific",
+            "96.2",
+            "98.5"
+          ],
+          [
+            "Latin America & Caribbean",
+            "94.5",
+            "97.0"
+          ],
+          [
+            "Sub-Saharan Africa",
+            "70.0",
+            "82.0"
+          ],
+          [
+            "South Asia",
+            "76.5",
+            "89.0"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q31",
+      "modelAnswer": "The lecture emphasized the significance of non-verbal communication, stating it often carries more weight than verbal messages. It involves various cues like body language, facial expressions, and gestures, which are highly influenced by culture. Understanding these cues is vital for successful interpersonal and professional interactions, as they help build rapport and convey empathy. Misinterpretations, however, can easily lead to communication failures.",
+      "audioScript": "Non-verbal communication is a powerful aspect of human interaction, often conveying more than spoken words. It encompasses a wide array of cues, including body language, facial expressions, gestures, and even silence. These signals are culturally dependent, meaning a gesture understood one way in a particular culture might have a completely different meaning elsewhere. Mastering non-verbal communication is crucial for effective interpersonal relationships and professional success, as it helps build rapport, express empathy, and manage perceptions. Misinterpreting these cues can lead to misunderstandings and communication breakdowns.",
+      "keyPoints": [
+        "More powerful than spoken words",
+        "Includes body language, facial expressions, gestures, silence",
+        "Culturally dependent meanings",
+        "Crucial for effective relationships and professional success"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Components of Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q32",
+      "modelAnswer": "Communication",
+      "audioScript": "What is the process of conveying information, ideas, or feelings through language or other means?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Active listening",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Active Listening Skill”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q33",
+      "modelAnswer": "Active listening",
+      "audioScript": "What skill involves fully concentrating on what is being said rather than just passively hearing the message?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Noise",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barriers”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-007-q34",
+      "modelAnswer": "Noise",
+      "audioScript": "What term describes anything that interferes with the clear transmission and reception of a message?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-007-q01": "",
+    "pte-speaking-writing-007-q02": "",
+    "pte-speaking-writing-007-q03": "",
+    "pte-speaking-writing-007-q04": "",
+    "pte-speaking-writing-007-q05": "sample answer",
+    "pte-speaking-writing-007-q06": "",
+    "pte-speaking-writing-007-q07": "",
+    "pte-speaking-writing-007-q08": "",
+    "pte-speaking-writing-007-q09": "",
+    "pte-speaking-writing-007-q10": "",
+    "pte-speaking-writing-007-q11": "",
+    "pte-speaking-writing-007-q12": "sample answer",
+    "pte-speaking-writing-007-q13": "",
+    "pte-speaking-writing-007-q14": "",
+    "pte-speaking-writing-007-q15": ""
+  },
+  "fingerprints": [
+    "056d5dce217323d626",
+    "c94803401b27560520",
+    "68720c772b56b825fc",
+    "1785fc5932414c9154",
+    "f096d4347b209af621",
+    "fc86d61fc799efdfa6",
+    "dc12cd8196934bdfcf",
+    "d1d06e3bae61ea70ae",
+    "cdc685837af341e0b2",
+    "bb6c374704e7a4faae",
+    "09599a4abbd10c7470",
+    "45ea354acab979d2b0",
+    "0f57616be77c9dd2cc",
+    "bac1035f6188a84f41",
+    "0b5bb731e2b11d03e1"
+  ]
+}

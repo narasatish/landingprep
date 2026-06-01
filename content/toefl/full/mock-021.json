@@ -1,0 +1,30 @@
+{
+  "id": "toefl-full-021",
+  "exam": "toefl",
+  "type": "full",
+  "title": "TOEFL iBT Full Mock Test 21",
+  "durationSeconds": 6960,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "reading",
+      "testId": "toefl-reading-021",
+      "file": "toefl/reading/test-021.json"
+    },
+    {
+      "section": "listening",
+      "testId": "toefl-listening-021",
+      "file": "toefl/listening/test-021.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "toefl-speaking-021",
+      "file": "toefl/speaking/test-021.json"
+    },
+    {
+      "section": "writing",
+      "testId": "toefl-writing-021",
+      "file": "toefl/writing/test-021.json"
+    }
+  ]
+}

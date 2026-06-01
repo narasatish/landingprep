@@ -1,0 +1,25 @@
+{
+  "id": "gre-full-016",
+  "exam": "gre",
+  "type": "full",
+  "title": "GRE Full Mock Test 16",
+  "durationSeconds": 10800,
+  "instructions": "Full GRE General Test mock. Complete all sections in order.",
+  "sections": [
+    {
+      "section": "verbal",
+      "testId": "gre-verbal-016",
+      "file": "gre/verbal/test-016.json"
+    },
+    {
+      "section": "quant",
+      "testId": "gre-quant-016",
+      "file": "gre/quant/test-016.json"
+    },
+    {
+      "section": "writing",
+      "testId": "gre-writing-016",
+      "file": "gre/writing/test-016.json"
+    }
+  ]
+}

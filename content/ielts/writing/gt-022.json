@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-022",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 22 — Job Application Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-022-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "job_application",
+      "letterSituation": "A local environmental charity called GreenFutures has placed an advertisement calling for volunteers to assist in running weekend beach clean-up events. Volunteers are expected to help with logistics, coordinate small groups of other volunteers, and engage positively with members of the public. No prior experience is required.",
+      "prompt": "A local environmental charity called GreenFutures has placed an advertisement calling for volunteers to assist in running weekend beach clean-up events. Volunteers are expected to help with logistics, coordinate small groups of other volunteers, and engage positively with members of the public. No prior experience is required.\n\nWrite a letter in response to this situation. In your letter:\n• explain why you are interested in volunteering specifically for this charity and this cause\n• describe any relevant experience, skills, or personal qualities you would bring to the role\n• ask about the training provided, the weekly time commitment expected, and when you would be able to start\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "job application"
+    },
+    {
+      "id": "ielts-writing-gt-022-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Volunteers make an essential contribution to communities and non-profit organisations around the world. However, some people argue that all work, including voluntary work, should be financially compensated. To what extent do you agree or disagree with this view?",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "job application"
+    }
+  ]
+}

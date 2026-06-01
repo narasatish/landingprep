@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-013",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 13 — Invitation Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-013-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "invitation",
+      "letterSituation": "You and your family have recently moved into a new home in the neighbourhood. You would like to introduce yourself to your neighbours and invite them to a small housewarming gathering you are planning for the coming weekend.",
+      "prompt": "You and your family have recently moved into a new home in the neighbourhood. You would like to introduce yourself to your neighbours and invite them to a small housewarming gathering you are planning for the coming weekend.\n\nWrite a letter in response to this situation. In your letter:\n• introduce yourself and your family to your neighbours\n• give details of the event including the date, time, and what guests can expect\n• let them know what to bring if anything and how they can confirm their attendance\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "invitation"
+    },
+    {
+      "id": "ielts-writing-gt-013-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Some people believe that living in a close-knit community where neighbours know each other well offers significant benefits. Others feel that personal privacy and independence are more important. Discuss both views and give your own opinion.",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "invitation"
+    }
+  ]
+}

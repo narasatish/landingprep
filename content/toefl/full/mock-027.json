@@ -1,0 +1,30 @@
+{
+  "id": "toefl-full-027",
+  "exam": "toefl",
+  "type": "full",
+  "title": "TOEFL iBT Full Mock Test 27",
+  "durationSeconds": 6960,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "reading",
+      "testId": "toefl-reading-027",
+      "file": "toefl/reading/test-027.json"
+    },
+    {
+      "section": "listening",
+      "testId": "toefl-listening-027",
+      "file": "toefl/listening/test-027.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "toefl-speaking-027",
+      "file": "toefl/speaking/test-027.json"
+    },
+    {
+      "section": "writing",
+      "testId": "toefl-writing-027",
+      "file": "toefl/writing/test-027.json"
+    }
+  ]
+}

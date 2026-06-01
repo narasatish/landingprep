@@ -1,0 +1,35 @@
+{
+  "id": "duolingo-full-016",
+  "exam": "duolingo",
+  "type": "full",
+  "title": "Duolingo English Test Full Mock Test 16",
+  "durationSeconds": 3600,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "adaptive",
+      "testId": "duolingo-adaptive-016",
+      "file": "duolingo/adaptive/test-016.json"
+    },
+    {
+      "section": "literacy",
+      "testId": "duolingo-literacy-016",
+      "file": "duolingo/literacy/test-016.json"
+    },
+    {
+      "section": "comprehension",
+      "testId": "duolingo-comprehension-016",
+      "file": "duolingo/comprehension/test-016.json"
+    },
+    {
+      "section": "conversation",
+      "testId": "duolingo-conversation-016",
+      "file": "duolingo/conversation/test-016.json"
+    },
+    {
+      "section": "production",
+      "testId": "duolingo-production-016",
+      "file": "duolingo/production/test-016.json"
+    }
+  ]
+}

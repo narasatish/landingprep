@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-027",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 27 — Request Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-027-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "request",
+      "letterSituation": "You have been working at your current company for four years. You would like to take three weeks of unpaid leave to care for a close family member who is recovering from a serious operation and has no one else available to help. Your manager verbally indicated support for the idea but has formally asked you to submit a written request.",
+      "prompt": "You have been working at your current company for four years. You would like to take three weeks of unpaid leave to care for a close family member who is recovering from a serious operation and has no one else available to help. Your manager verbally indicated support for the idea but has formally asked you to submit a written request.\n\nWrite a letter in response to this situation. In your letter:\n• state clearly what you are requesting, including the specific dates of the absence\n• explain the reason for the leave request and why this particular length of time is necessary\n• reassure your manager that your responsibilities will be properly covered and that it will not disrupt the team\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "request"
+    },
+    {
+      "id": "ielts-writing-gt-027-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Some people believe that employers have a genuine moral responsibility to support workers who need time away from work for family or personal reasons. Others think that managing personal matters in their own time is entirely the employee's responsibility. Discuss both views and give your own opinion.",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "request"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-044",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 44",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-044-q01",
+      "questionType": "writing_task",
+      "prompt": "Write an email to an employment centre asking to book an appointment with a career counsellor.",
+      "modelAnswer": "I wholeheartedly advocate for Option B: prioritizing the development of robust public transportation systems. This approach offers a multifaceted solution to urban challenges, far outweighing the individualistic benefits of expanding road networks.\n\nFirstly, enhanced public transport significantly reduces traffic congestion and its associated environmental impact. By providing efficient and reliable alternatives to private vehicles – think expanded subway lines or rapid bus transit – we encourage a modal shift, leading to fewer cars on the road, decreased emissions, and cleaner air. This directly improves public health and the quality of urban life.\n\nSecondly, strong public transportation fosters greater social equity and accessibility. Not everyone can afford a car, and relying solely on road expansion entrenches this disparity. A comprehensive public system ensures that all citizens, regardless of income or ability, have access to employment, education, and essential services, promoting a more inclusive and connected community. For instance, a well-placed tram network can revitalize underserved neighbourhoods by connecting them to economic hubs.\n\nWhile expanding road networks (Option A) might offer temporary relief for existing drivers, it ultimately induces more demand, leading back to congestion and sprawl. It's a short-sighted solution that fails to address the underlying issues of sustainable urban development. Option B, conversely, represents a forward-thinking investment in a greener, more equitable, and more efficient future for our cities.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "finding employment services",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-044-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short cover letter for a job you are interested in applying for.",
+      "modelAnswer": "I firmly believe that Option B, \"Introducing a mandatory community service program for high school students,\" is the more effective approach for fostering civic engagement and personal development.\n\nFirstly, a mandatory program ensures universal participation, exposing every student to the invaluable experience of contributing to their community. This contrasts with a voluntary program (Option A), which often attracts only those already inclined towards service, thus missing the opportunity to broaden the horizons of a wider student body. For instance, even a student initially reluctant might discover a passion for environmental clean-ups or assisting the elderly, thereby developing empathy and a sense of responsibility they might not otherwise have cultivated.\n\nSecondly, mandatory service can be strategically integrated into the curriculum, allowing schools to partner with diverse organizations and offer structured, meaningful experiences. This ensures quality and relevance, moving beyond sporadic individual initiatives. Students could, for example, dedicate a few hours weekly to local food banks, animal shelters, or even tutoring younger children, gaining practical skills and understanding societal needs firsthand.\n\nWhile Option A, \"Implementing a voluntary community service recognition program,\" might incentivize some, it lacks the foundational impact of universal participation. It primarily rewards existing engagement rather than cultivating it across the board. The goal should be to instill a civic mindset in all future citizens, not just to acknowledge those who already possess one. Therefore, the transformative potential of a mandatory program far outweighs the limited benefits of a voluntary one.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "finding employment services",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

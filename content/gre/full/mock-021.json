@@ -1,0 +1,25 @@
+{
+  "id": "gre-full-021",
+  "exam": "gre",
+  "type": "full",
+  "title": "GRE Full Mock Test 21",
+  "durationSeconds": 10800,
+  "instructions": "Full GRE General Test mock. Complete all sections in order.",
+  "sections": [
+    {
+      "section": "verbal",
+      "testId": "gre-verbal-021",
+      "file": "gre/verbal/test-021.json"
+    },
+    {
+      "section": "quant",
+      "testId": "gre-quant-021",
+      "file": "gre/quant/test-021.json"
+    },
+    {
+      "section": "writing",
+      "testId": "gre-writing-021",
+      "file": "gre/writing/test-021.json"
+    }
+  ]
+}

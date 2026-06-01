@@ -1,0 +1,68 @@
+{
+  "id": "duolingo-conversation-027",
+  "exam": "duolingo",
+  "section": "conversation",
+  "type": "section",
+  "title": "Duolingo English Test Conversation Practice Test 27",
+  "durationSeconds": 900,
+  "questionCount": 3,
+  "instructions": "Record responses and review using the rubric.",
+  "questions": [
+    {
+      "id": "duolingo-conversation-027-q01",
+      "questionType": "speaking_task",
+      "prompt": "[1] Talk about your personal experience with language learning habits.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "language learning habits",
+      "fingerprint": "ddb7e4bc68075268b7"
+    },
+    {
+      "id": "duolingo-conversation-027-q02",
+      "questionType": "speaking_task",
+      "prompt": "[2] Describe a situation where language learning habits affected a school, workplace, or community.",
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "language learning habits",
+      "fingerprint": "4f3166f232acec508d"
+    },
+    {
+      "id": "duolingo-conversation-027-q03",
+      "questionType": "speaking_task",
+      "prompt": "[3] Discuss whether language learning habits will become more important in the future.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "language learning habits",
+      "fingerprint": "0fe38106dfdecc153e"
+    }
+  ],
+  "fingerprints": [
+    "ddb7e4bc68075268b7",
+    "4f3166f232acec508d",
+    "0fe38106dfdecc153e"
+  ]
+}

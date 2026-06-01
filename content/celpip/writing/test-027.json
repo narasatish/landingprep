@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-027",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 27",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-027-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You are writing to a campground to book a camping spot for an upcoming long weekend trip with your family.",
+      "recipient": "the campground booking coordinator",
+      "bulletPoints": [
+        "State the dates you want to book and how many people will be in your group",
+        "Ask about available site types and amenities",
+        "Enquire about cancellation policies and payment methods"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "Your neighbourhood recently experienced a power outage that lasted for two days. Write a letter to the electricity company describing your experience, the impact it had, and requesting an explanation and preventive measures.",
+      "modelAnswer": "Dear Campground Booking Coordinator,\n\nI am writing to inquire about booking a campsite for an upcoming long weekend trip with my family. We are hoping to secure a spot from Friday, May 17th, to Monday, May 20th. Our group will consist of two adults and two children (ages 8 and 12).\n\nCould you please let me know what types of sites are available for those dates? We are flexible but would ideally prefer a site with electrical hookups. We are also interested in knowing about the amenities offered at your campground, such as washrooms, showers, and any recreational facilities.\n\nFinally, could you provide information regarding your cancellation policy and accepted payment methods? Understanding these details in advance would be very helpful for our planning.\n\nThank you for your time and assistance. We look forward to hearing from you soon.\n\nSincerely,\n\nSarah Chen"
+    },
+    {
+      "id": "celpip-writing-027-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city council is deciding how to support local arts and culture. Which investment do you prefer?",
+      "optionA": "Fund free outdoor summer concerts and community arts festivals",
+      "optionB": "Provide grants to help local artists set up permanent studios and galleries",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "An urban farming cooperative is seeking input on food growing in the city. Describe your interest in growing food, what obstacles prevent you from doing so, and what kind of support would help more residents grow their own food.",
+      "modelAnswer": "I strongly advocate for Option A: funding free outdoor summer concerts and community arts festivals. This approach offers unparalleled benefits in terms of accessibility and community engagement, fostering a vibrant cultural landscape for all residents.\n\nFirstly, these events are inherently inclusive, removing financial barriers that often prevent individuals from experiencing the arts. Families, seniors, and those with limited incomes can all participate, enjoying diverse performances and creative activities without cost. This broad participation strengthens community bonds and cultivates a shared sense of civic pride. For instance, a free jazz festival in a local park can attract hundreds, creating a buzzing atmosphere that enlivens public spaces and makes culture truly democratic.\n\nSecondly, outdoor festivals inject immediate vitality into the city, supporting local businesses through increased foot traffic and tourism. Vendors, restaurants, and shops all benefit from the influx of attendees, creating a tangible economic boost that circulates within the community. While Option B, providing grants for studios, supports artists directly, its impact on wider public engagement and immediate community vibrancy is significantly more limited. Permanent studios, while valuable, often serve a smaller, more niche audience compared to the widespread, immediate joy and communal experience of a summer festival."
+    }
+  ]
+}

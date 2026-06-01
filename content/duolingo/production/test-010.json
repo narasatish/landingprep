@@ -1,0 +1,48 @@
+{
+  "id": "duolingo-production-010",
+  "exam": "duolingo",
+  "section": "production",
+  "type": "section",
+  "title": "Duolingo English Test Production Practice Test 10",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Write your response within the time limit. Use the rubric for review.",
+  "questions": [
+    {
+      "id": "duolingo-production-010-q01",
+      "questionType": "writing_task",
+      "prompt": "[1] Write an essay discussing the benefits and limitations of school assessment.",
+      "modelAnswer": "A strong response should address school assessment clearly, organize ideas logically, and include relevant examples without unsupported claims.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "school assessment",
+      "fingerprint": "949f324511540c15b7"
+    },
+    {
+      "id": "duolingo-production-010-q02",
+      "questionType": "writing_task",
+      "prompt": "[2] Write a formal email requesting information about a programme related to school assessment.",
+      "modelAnswer": "A strong response should address school assessment clearly, organize ideas logically, and include relevant examples without unsupported claims.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "school assessment",
+      "fingerprint": "f59d2b4971347285a7"
+    }
+  ],
+  "fingerprints": [
+    "949f324511540c15b7",
+    "f59d2b4971347285a7"
+  ]
+}

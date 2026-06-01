@@ -1,0 +1,760 @@
+{
+  "id": "pte-speaking-writing-019",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 19",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-019-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Citizen Science Initiatives Flourish”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "49b324269d3035bf79",
+      "modelAnswer": "Community science projects offer an invaluable opportunity for the public to contribute directly to scientific research. Participants often collect data, monitor environmental changes, or classify astronomical images, thereby expanding the scope and scale of studies far beyond what professional scientists could achieve alone. These initiatives also foster a deeper understanding of scientific methodology and promote environmental stewardship among volunteers.",
+      "readText": "Community science projects offer an invaluable opportunity for the public to contribute directly to scientific research. Participants often collect data, monitor environmental changes, or classify astronomical images, thereby expanding the scope and scale of studies far beyond what professional scientists could achieve alone. These initiatives also foster a deeper understanding of scientific methodology and promote environmental stewardship among volunteers."
+    },
+    {
+      "id": "pte-speaking-writing-019-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Urban Green Roof Benefits”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Urban green roofs significantly reduce stormwater runoff and improve air quality in cities.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "9a2da2b66e3a548c11",
+      "modelAnswer": "Urban green roofs significantly reduce stormwater runoff and improve air quality in cities.",
+      "audioScript": "Urban green roofs significantly reduce stormwater runoff and improve air quality in cities."
+    },
+    {
+      "id": "pte-speaking-writing-019-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Factors Impacting Wayfinding Success\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "8cabc2eb78d1da1f20",
+      "modelAnswer": "This bar chart illustrates key factors influencing wayfinding success. Prior Experience shows the highest success rate at 92%, indicating its significant role. Clear Signage also contributes strongly, achieving 85% success. In contrast, Map Availability and Digital Navigation have lower success rates, at 65% and 70% respectively, suggesting they are less impactful than direct experience or clear physical cues. Distinct Landmarks are also important, contributing 78%. Overall, the chart highlights the psychological importance of familiarity and clear environmental information for effective wayfinding.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Factors Impacting Wayfinding Success",
+        "yLabel": "Success Rate (%)",
+        "xAxis": [
+          "Clear Signage",
+          "Distinct Landmarks",
+          "Map Availability",
+          "Prior Experience",
+          "Digital Navigation"
+        ],
+        "series": [
+          {
+            "label": "Success Rate",
+            "values": [
+              85,
+              78,
+              65,
+              92,
+              70
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-019-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Mysteries of the Abyssal Zone”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "cc0aecd56e59075bbf",
+      "modelAnswer": "The lecture discussed how the deep ocean, especially the abyssal zone, is largely unexplored. It highlighted the surprising diversity of life found there, which often relies on chemosynthesis for survival in the absence of light. The speaker also mentioned that new robotic technologies are helping scientists discover incredible biodiversity and complex ecosystems in these challenging deep-sea environments.",
+      "audioScript": "The deep ocean, particularly the abyssal zone, remains one of Earth's least explored frontiers. Despite immense pressure and complete darkness, it hosts a surprisingly diverse array of unique life forms, many of which utilize chemosynthesis rather than photosynthesis for energy. Recent technological advancements in remotely operated vehicles have begun to unveil the incredible biodiversity and complex ecosystems thriving in these extreme environments, challenging previous assumptions about life's limits on our planet.",
+      "keyPoints": [
+        "Abyssal zone is least explored",
+        "Diverse life forms use chemosynthesis",
+        "ROVs reveal biodiversity in extreme conditions"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-019-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Digital Preservation Importance”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Digital",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "7a398a2a68ddd200e9",
+      "modelAnswer": "Digital",
+      "audioScript": "What kind of resources are preserved in digital archives?"
+    },
+    {
+      "id": "pte-speaking-writing-019-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Bronze Age Trade Routes”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "5d15643c0c8e769695",
+      "modelAnswer": "Ancient trade networks in the Bronze Age were crucial for exchanging raw materials and luxury goods across continents, driving cultural diffusion and technological advancement while requiring complex logistical and diplomatic efforts for their maintenance.",
+      "readText": "During the Bronze Age, intricate trade networks connected disparate regions, facilitating the exchange of raw materials like tin and copper, essential for bronze production, as well as luxury goods. These networks extended across continents, from Mesopotamia to the Indus Valley and even into parts of Europe, fostering cultural diffusion and technological advancement. The establishment and maintenance of these routes required sophisticated navigation, diplomacy, and often, significant military protection, underscoring their economic and political importance in early civilizations."
+    },
+    {
+      "id": "pte-speaking-writing-019-q07",
+      "questionType": "essay",
+      "prompt": "The increasing demand for portable electronics and electric vehicles necessitates more sustainable and efficient battery technologies. Discuss the most critical factors that should guide future renewable battery design and development. Provide examples to support your arguments.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "b81dc5591e16758da4",
+      "modelAnswer": "The global push towards electrification and portable technology has made the development of sustainable and efficient batteries a paramount concern. Future renewable battery design must prioritize several critical factors, primarily focusing on environmental impact, material sourcing, and overall lifecycle. \n\nFirstly, minimizing environmental footprint is crucial. This involves reducing reliance on rare earth metals and toxic chemicals, which are often associated with environmentally destructive mining practices and difficult disposal. Research into solid-state batteries, for instance, promises higher energy density and improved safety, potentially reducing the need for volatile liquid electrolytes and exotic materials. Furthermore, developing batteries from abundant, non-toxic elements like sodium or even organic compounds offers a more sustainable alternative to lithium-ion chemistries.\n\nSecondly, ethical and sustainable material sourcing is indispensable. The extraction of cobalt, for example, has been linked to human rights abuses in certain regions. Future battery designs should actively seek materials that can be sourced responsibly, ideally from regions with stringent labor and environmental regulations. This also extends to promoting closed-loop recycling systems, where materials can be recovered and reused, thereby reducing the demand for virgin resources and lessening waste.\n\nFinally, the entire lifecycle of a battery, from manufacturing to end-of-life, needs to be considered. Designing batteries for easier disassembly and material recovery will significantly enhance their recyclability. Furthermore, extending battery lifespan through improved durability and efficient charging mechanisms will reduce the frequency of replacement, contributing to overall sustainability. \n\nIn conclusion, the future of renewable battery design must be holistic, addressing environmental impact, ethical sourcing, and lifecycle management. Innovations in material science, coupled with robust recycling infrastructure, will be key to achieving truly sustainable energy storage solutions for the modern world."
+    },
+    {
+      "id": "pte-speaking-writing-019-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Effective Language Learning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "82ae44d114d5ca7736",
+      "modelAnswer": "Consistent practice is paramount for effective language acquisition. Research suggests that daily immersion, even for short periods, yields better long-term retention than infrequent, intensive study sessions. Engaging with authentic materials, such as native speakers, films, or literature, further reinforces grammatical structures and expands vocabulary in a natural context. Moreover, actively seeking opportunities to speak, regardless of proficiency level, builds confidence and fluency over time.",
+      "readText": "Consistent practice is paramount for effective language acquisition. Research suggests that daily immersion, even for short periods, yields better long-term retention than infrequent, intensive study sessions. Engaging with authentic materials, such as native speakers, films, or literature, further reinforces grammatical structures and expands vocabulary in a natural context. Moreover, actively seeking opportunities to speak, regardless of proficiency level, builds confidence and fluency over time."
+    },
+    {
+      "id": "pte-speaking-writing-019-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Vaccination Campaign Success”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Public health campaigns have successfully increased vaccination rates across the population.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "d529f9b45cfd4d35c1",
+      "modelAnswer": "Public health campaigns have successfully increased vaccination rates across the population.",
+      "audioScript": "Public health campaigns have successfully increased vaccination rates across the population."
+    },
+    {
+      "id": "pte-speaking-writing-019-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Museum Conservation Challenges (2023 Survey)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "bf1db7a472af479b81",
+      "modelAnswer": "This bar chart illustrates the primary challenges faced by museums in conservation during 2023. The most significant issue identified is 'Funding Shortages,' impacting 65% of institutions, closely followed by 'Staffing Issues' at 58%. 'Environmental Control' and 'Storage Space' represent moderate concerns at 45% and 30% respectively. The least significant challenges appear to be 'Public Access Damage' at 22% and 'Digital Preservation' at only 15%. Overall, financial and human resource constraints are clearly the dominant hurdles in museum conservation efforts.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Museum Conservation Challenges (2023 Survey)",
+        "yLabel": "Percentage of Museums (%)",
+        "xAxis": [
+          "Funding Shortages",
+          "Staffing Issues",
+          "Environmental Control",
+          "Storage Space",
+          "Public Access Damage",
+          "Digital Preservation"
+        ],
+        "series": [
+          {
+            "label": "Challenges",
+            "values": [
+              65,
+              58,
+              45,
+              30,
+              22,
+              15
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-019-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Citizen Science in Ecology”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "29d8699f5615bc9c19",
+      "modelAnswer": "The lecture highlighted the growing importance of citizen science in ecological research, especially for monitoring biodiversity and environmental shifts across wide regions. It explained that volunteers, even without scientific backgrounds, gather crucial data on things like species and water quality. This collective data helps scientists understand ecological patterns and develop conservation plans on a much larger scale than they could alone, emphasizing the need for clear guidelines and easy data submission.",
+      "audioScript": "Citizen science projects are increasingly vital in ecological research, particularly for monitoring biodiversity and tracking environmental changes over large geographical areas. Volunteers, often without formal scientific training, contribute by collecting data on species observations, water quality, or phenological events. This vast dataset allows scientists to identify trends, understand ecological patterns, and inform conservation strategies at scales that would otherwise be impossible. The success of these initiatives relies heavily on clear protocols and accessible data submission platforms.",
+      "keyPoints": [
+        "Citizen science aids ecological research",
+        "Volunteers collect diverse environmental data",
+        "Data informs conservation strategies"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-019-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Green Roof Water Management”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Stormwater",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "2b1969105f545b4ce6",
+      "modelAnswer": "Stormwater",
+      "audioScript": "What do green roofs help manage in urban areas?"
+    },
+    {
+      "id": "pte-speaking-writing-019-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Cognitive Maps and Navigation”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "a99e6712b073940d36",
+      "modelAnswer": "The psychology of wayfinding investigates how humans create and utilize cognitive maps, which are influenced by experience and biases, employing different navigation strategies to traverse environments, making this understanding vital for designing public spaces and navigational aids.",
+      "readText": "The psychology of wayfinding explores how humans form cognitive maps of their environment to navigate effectively. These mental representations are not always accurate, often influenced by personal experiences, landmarks, and spatial biases. Research indicates that individuals employ various strategies, from egocentric (self-referenced) to allocentric (world-referenced) navigation, depending on familiarity with the area and the complexity of the route. Understanding these cognitive processes is crucial for designing intuitive public spaces and effective navigational tools, especially in increasingly complex urban landscapes."
+    },
+    {
+      "id": "pte-speaking-writing-019-q14",
+      "questionType": "essay",
+      "prompt": "Deep ocean exploration continues to unveil new species and geological phenomena, yet it remains largely underfunded compared to space exploration. Discuss the primary reasons for continued investment in deep ocean exploration and its potential benefits for humanity. Provide specific examples.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "2c19d026caba18f878",
+      "modelAnswer": "Deep ocean exploration, despite its inherent challenges and often limited funding compared to space ventures, represents a crucial frontier for scientific discovery and holds immense potential benefits for humanity. The vast majority of our planet's oceans remain unexplored, concealing mysteries that could revolutionize our understanding of life, geology, and even medicine.\n\nOne primary reason for continued investment is the unparalleled biodiversity found in the deep sea. Hydrothermal vents and cold seeps host unique ecosystems teeming with extremophiles—organisms that thrive in conditions previously thought impossible for life. Studying these organisms can provide insights into the origins of life on Earth and potentially reveal novel biochemical compounds with pharmaceutical applications, such as new antibiotics or anti-cancer agents. For example, enzymes from deep-sea microbes have already found uses in industrial processes due to their stability in extreme conditions.\n\nFurthermore, deep ocean exploration is vital for understanding Earth's geological processes. The mid-ocean ridges, where new crust is formed, and subduction zones are key drivers of plate tectonics and contribute significantly to global climate regulation. Mapping these underwater features helps us predict seismic activity, understand ocean currents, and even model climate change more accurately. Discoveries of new mineral deposits, though requiring careful ethical consideration for extraction, also highlight the economic potential.\n\nFinally, the deep ocean plays a critical role in global climate regulation by absorbing vast amounts of carbon dioxide and heat. Understanding these processes is essential for developing effective strategies to mitigate climate change. Continued exploration allows scientists to monitor the health of these crucial systems and assess the impact of human activities, such as pollution and overfishing, on marine ecosystems.\n\nIn conclusion, deep ocean exploration is not merely an academic pursuit but a strategic investment in our planet's future. Its potential to yield medical breakthroughs, enhance geological understanding, and inform climate action underscores why it deserves sustained and increased funding."
+    },
+    {
+      "id": "pte-speaking-writing-019-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Digital Archiving Challenges”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "fcca00ca09c6b75c3d",
+      "modelAnswer": "Digital archives face unique challenges in ensuring the long-term preservation and accessibility of electronic records. Unlike physical documents, digital files are susceptible to format obsolescence, media degradation, and cybersecurity threats. Institutions must constantly migrate data to newer formats, maintain robust backup systems, and develop sophisticated metadata strategies to ensure future generations can access and interpret these invaluable historical and cultural assets effectively.",
+      "readText": "Digital archives face unique challenges in ensuring the long-term preservation and accessibility of electronic records. Unlike physical documents, digital files are susceptible to format obsolescence, media degradation, and cybersecurity threats. Institutions must constantly migrate data to newer formats, maintain robust backup systems, and develop sophisticated metadata strategies to ensure future generations can access and interpret these invaluable historical and cultural assets effectively."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Climate Mitigation Strategies”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q16",
+      "modelAnswer": "Climate change mitigation strategies encompass a broad range of approaches aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy sources, improving energy efficiency, reforestation, and developing carbon capture technologies. Effective mitigation requires international cooperation, significant technological innovation, and widespread adoption of sustainable practices across all sectors of the economy and society to achieve meaningful global impact.",
+      "readText": "Climate change mitigation strategies encompass a broad range of approaches aimed at reducing greenhouse gas emissions and enhancing carbon sinks. These include transitioning to renewable energy sources, improving energy efficiency, reforestation, and developing carbon capture technologies. Effective mitigation requires international cooperation, significant technological innovation, and widespread adoption of sustainable practices across all sectors of the economy and society to achieve meaningful global impact."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Global Food Production”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q17",
+      "modelAnswer": "The economics of global food production are complex, influenced by factors such as climate, trade policies, technological advancements, and consumer demand. Ensuring food security for a growing global population requires optimizing agricultural practices, reducing waste, and developing resilient supply chains. Market fluctuations, geopolitical events, and environmental changes can significantly impact food prices and availability, posing ongoing challenges for policymakers and producers worldwide.",
+      "readText": "The economics of global food production are complex, influenced by factors such as climate, trade policies, technological advancements, and consumer demand. Ensuring food security for a growing global population requires optimizing agricultural practices, reducing waste, and developing resilient supply chains. Market fluctuations, geopolitical events, and environmental changes can significantly impact food prices and availability, posing ongoing challenges for policymakers and producers worldwide."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Space Colonization Hurdles”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q18",
+      "modelAnswer": "Space exploration and colonization present monumental challenges that demand innovative solutions across multiple scientific and engineering disciplines. Establishing self-sustaining habitats on other celestial bodies requires overcoming issues like radiation exposure, resource scarcity, and psychological isolation. Developing advanced life support systems, in-situ resource utilization, and robust transportation infrastructure are critical steps toward making humanity a multi-planetary species.",
+      "readText": "Space exploration and colonization present monumental challenges that demand innovative solutions across multiple scientific and engineering disciplines. Establishing self-sustaining habitats on other celestial bodies requires overcoming issues like radiation exposure, resource scarcity, and psychological isolation. Developing advanced life support systems, in-situ resource utilization, and robust transportation infrastructure are critical steps toward making humanity a multi-planetary species."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Noise pollution significantly disrupts animal communication and alters wildlife behavior patterns.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Noise Pollution Wildlife”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q19",
+      "modelAnswer": "Noise pollution significantly disrupts animal communication and alters wildlife behavior patterns.",
+      "audioScript": "Noise pollution significantly disrupts animal communication and alters wildlife behavior patterns."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Cross-cultural negotiations in business require careful attention to local customs and communication styles.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Business Negotiations Abroad”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q20",
+      "modelAnswer": "Cross-cultural negotiations in business require careful attention to local customs and communication styles.",
+      "audioScript": "Cross-cultural negotiations in business require careful attention to local customs and communication styles."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Carbon capture and storage technologies are crucial for mitigating industrial emissions and climate change.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Carbon Technologies Future”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q21",
+      "modelAnswer": "Carbon capture and storage technologies are crucial for mitigating industrial emissions and climate change.",
+      "audioScript": "Carbon capture and storage technologies are crucial for mitigating industrial emissions and climate change."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Wildlife corridor design connects fragmented habitats, promoting biodiversity and species movement.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Corridor Benefits”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q22",
+      "modelAnswer": "Wildlife corridor design connects fragmented habitats, promoting biodiversity and species movement.",
+      "audioScript": "Wildlife corridor design connects fragmented habitats, promoting biodiversity and species movement."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and mental states.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Consciousness Philosophical Views”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q23",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and mental states.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and mental states."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology raises important questions about individual privacy and data security.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy Concerns”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q24",
+      "modelAnswer": "Smart city technology raises important questions about individual privacy and data security.",
+      "audioScript": "Smart city technology raises important questions about individual privacy and data security."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation often impacts indigenous land rights and traditional ways of life globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation and Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q25",
+      "modelAnswer": "Deforestation often impacts indigenous land rights and traditional ways of life globally.",
+      "audioScript": "Deforestation often impacts indigenous land rights and traditional ways of life globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The role of social media in modern communication continues to evolve rapidly.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Communication Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q26",
+      "modelAnswer": "The role of social media in modern communication continues to evolve rapidly.",
+      "audioScript": "The role of social media in modern communication continues to evolve rapidly."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Key Components and Products of Photosynthesis\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q27",
+      "modelAnswer": "The table illustrates the key components and products of photosynthesis, divided into two main stages. The first stage, Light-Dependent Reactions, takes place in the Thylakoid Membranes. Its primary inputs are Sunlight and Water, yielding Oxygen, ATP, and NADPH as outputs. The second stage, Light-Independent Reactions, also known as the Calvin Cycle, occurs in the Stroma. This stage utilizes Carbon Dioxide, ATP, and NADPH as inputs, ultimately producing Glucose, ADP, and NADP+. A key difference is the output: oxygen is produced in the first stage, while glucose is the main product of the second.",
+      "visual": {
+        "chartType": "table",
+        "title": "Key Components and Products of Photosynthesis",
+        "headers": [
+          "Process Stage",
+          "Inputs",
+          "Outputs",
+          "Location"
+        ],
+        "rows": [
+          [
+            "Light-Dependent Reactions",
+            "Sunlight, Water (H2O)",
+            "Oxygen (O2), ATP, NADPH",
+            "Thylakoid Membranes"
+          ],
+          [
+            "Light-Independent Reactions (Calvin Cycle)",
+            "Carbon Dioxide (CO2), ATP, NADPH",
+            "Glucose (C6H12O6), ADP, NADP+",
+            "Stroma"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Population Growth Projections (1950-2100)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q28",
+      "modelAnswer": "The line chart illustrates global population growth projections from 1950 to 2100. The total population, starting at 2.5 billion in 1950, shows a significant upward trend, projected to reach 10.9 billion by 2100. Developing regions are the primary drivers of this growth, increasing from 1.7 billion to an estimated 9.2 billion over the same period. In contrast, developed regions show much slower growth, rising from 0.8 billion to 1.7 billion. The steepest increase for total population occurs between 1975 and 2050. The chart clearly indicates continued population expansion, predominantly in developing areas.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Population Growth Projections (1950-2100)",
+        "yLabel": "Population (Billions)",
+        "xAxis": [
+          "1950",
+          "1975",
+          "2000",
+          "2025",
+          "2050",
+          "2075",
+          "2100"
+        ],
+        "series": [
+          {
+            "label": "Total Population",
+            "values": [
+              2.5,
+              4.1,
+              6.1,
+              8,
+              9.7,
+              10.5,
+              10.9
+            ]
+          },
+          {
+            "label": "Developing Regions",
+            "values": [
+              1.7,
+              3.1,
+              5,
+              6.7,
+              8.2,
+              8.9,
+              9.2
+            ]
+          },
+          {
+            "label": "Developed Regions",
+            "values": [
+              0.8,
+              1,
+              1.1,
+              1.3,
+              1.5,
+              1.6,
+              1.7
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Top 5 Languages by Native Speakers Worldwide (Millions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q29",
+      "modelAnswer": "This bar chart illustrates the top five languages by the number of native speakers worldwide. Mandarin Chinese is clearly dominant, with approximately 920 million native speakers. Spanish follows as the second most spoken native language, with around 475 million speakers. English ranks third at 380 million, slightly above Hindi with 345 million. Arabic completes the top five, having approximately 310 million native speakers. The data highlights a significant gap between Mandarin and other languages, nearly doubling the number of Spanish speakers. Overall, it provides a clear snapshot of global linguistic prominence.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Top 5 Languages by Native Speakers Worldwide (Millions)",
+        "yLabel": "Number of Native Speakers (Millions)",
+        "xAxis": [
+          "Mandarin Chinese",
+          "Spanish",
+          "English",
+          "Hindi",
+          "Arabic"
+        ],
+        "series": [
+          {
+            "label": "Native Speakers",
+            "values": [
+              920,
+              475,
+              380,
+              345,
+              310
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Ocean pH Levels (1850-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q30",
+      "modelAnswer": "This line graph illustrates the global average ocean pH levels from 1850 to 2020. The x-axis represents the years, while the y-axis shows the pH level. In 1850, the pH was approximately 8.2. A clear downward trend is observable throughout the period, indicating increasing ocean acidification. By 2020, the pH had decreased significantly to around 8.02. This represents a decline of approximately 0.18 pH units over 170 years, highlighting a concerning environmental change. The most rapid drop appears after 1970.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Ocean pH Levels (1850-2020)",
+        "yLabel": "pH Level",
+        "xAxis": [
+          "1850",
+          "1880",
+          "1910",
+          "1940",
+          "1970",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Ocean pH",
+            "values": [
+              8.2,
+              8.18,
+              8.15,
+              8.12,
+              8.08,
+              8.05,
+              8.02
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q31",
+      "modelAnswer": "The lecture highlighted the profound impact of non-verbal communication, emphasizing that body language, facial expressions, and gestures often convey more than spoken words. It underscored that interpreting these subtle cues is crucial for effective interpersonal communication, particularly in diverse cultural contexts where meanings can differ. The speaker concluded that mastering non-verbal signals improves rapport and minimizes misunderstandings.",
+      "audioScript": "Non-verbal communication plays a profound role in how messages are conveyed and received, often more powerfully than spoken words. Body language, facial expressions, gestures, and even personal space can signal agreement, discomfort, or deception. Understanding these subtle cues is essential for effective interpersonal communication, especially across diverse cultural backgrounds where interpretations may vary significantly. Mastery of non-verbal signals enhances our ability to build rapport and avoid misunderstandings in social and professional settings.",
+      "keyPoints": [
+        "Non-verbal communication is powerful",
+        "Cues like body language, facial expressions signal meaning",
+        "Understanding cues is vital for effective, cross-cultural communication"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Language",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q32",
+      "modelAnswer": "Language",
+      "audioScript": "What is the primary medium for sharing ideas and information?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Messaging app",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Digital Communication Tool”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q33",
+      "modelAnswer": "Messaging app",
+      "audioScript": "What common digital tool is used for instant text communication?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Memo",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Formal Communication Example”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-019-q34",
+      "modelAnswer": "Memo",
+      "audioScript": "What formal document is often sent to communicate official information?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-019-q01": "",
+    "pte-speaking-writing-019-q02": "",
+    "pte-speaking-writing-019-q03": "",
+    "pte-speaking-writing-019-q04": "",
+    "pte-speaking-writing-019-q05": "sample answer",
+    "pte-speaking-writing-019-q06": "",
+    "pte-speaking-writing-019-q07": "",
+    "pte-speaking-writing-019-q08": "",
+    "pte-speaking-writing-019-q09": "",
+    "pte-speaking-writing-019-q10": "",
+    "pte-speaking-writing-019-q11": "",
+    "pte-speaking-writing-019-q12": "sample answer",
+    "pte-speaking-writing-019-q13": "",
+    "pte-speaking-writing-019-q14": "",
+    "pte-speaking-writing-019-q15": ""
+  },
+  "fingerprints": [
+    "49b324269d3035bf79",
+    "9a2da2b66e3a548c11",
+    "8cabc2eb78d1da1f20",
+    "cc0aecd56e59075bbf",
+    "7a398a2a68ddd200e9",
+    "5d15643c0c8e769695",
+    "b81dc5591e16758da4",
+    "82ae44d114d5ca7736",
+    "d529f9b45cfd4d35c1",
+    "bf1db7a472af479b81",
+    "29d8699f5615bc9c19",
+    "2b1969105f545b4ce6",
+    "a99e6712b073940d36",
+    "2c19d026caba18f878",
+    "fcca00ca09c6b75c3d"
+  ]
+}

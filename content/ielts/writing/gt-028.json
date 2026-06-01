@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-028",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 28 — Invitation Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-028-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "invitation",
+      "letterSituation": "Your mutual friend is turning 40 next month and a group of friends has agreed to organise a surprise birthday party for them. You have been asked to write to a friend, Jordan, who lives in another city, to personally invite them and ensure they have all the information needed to attend.",
+      "prompt": "Your mutual friend is turning 40 next month and a group of friends has agreed to organise a surprise birthday party for them. You have been asked to write to a friend, Jordan, who lives in another city, to personally invite them and ensure they have all the information needed to attend.\n\nWrite a letter in response to this situation. In your letter:\n• invite Jordan warmly to the surprise party and emphasise how important it is to keep it completely secret from the birthday person\n• give full details about the date, time, location, dress code, and what to expect at the event\n• suggest practical travel and accommodation options and offer your personal help in coordinating their arrival\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "invitation"
+    },
+    {
+      "id": "ielts-writing-gt-028-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Significant milestone birthdays such as 30th, 40th, and 50th birthdays are increasingly celebrated with large and elaborate parties. Some people consider this trend wasteful. Others see such celebrations as important social and cultural occasions. What is your opinion and why?",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "invitation"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pte-full-029",
+  "exam": "pte",
+  "type": "full",
+  "title": "PTE Academic Full Mock Test 29",
+  "durationSeconds": 7200,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "speaking-writing",
+      "testId": "pte-speaking-writing-029",
+      "file": "pte/speaking-writing/test-029.json"
+    },
+    {
+      "section": "reading",
+      "testId": "pte-reading-029",
+      "file": "pte/reading/test-029.json"
+    },
+    {
+      "section": "listening",
+      "testId": "pte-listening-029",
+      "file": "pte/listening/test-029.json"
+    }
+  ]
+}

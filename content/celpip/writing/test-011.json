@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-011",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 11",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-011-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You attended a job interview last week and would like to send a follow-up message to the hiring manager thanking them for their time.",
+      "recipient": "the hiring manager",
+      "bulletPoints": [
+        "Thank the interviewer for their time and the opportunity",
+        "Briefly reiterate your interest in the position",
+        "Mention one specific point from the interview that you found particularly interesting"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "You are organising a neighbourhood cleanup event. Write a letter to your neighbours explaining why you are organising the event, what the plan is, and how they can contribute.",
+      "modelAnswer": "Dear Ms. Thompson,\n\nI hope this email finds you well.\n\nI am writing to express my sincere gratitude for the opportunity to interview for the Senior Marketing Specialist position last Friday. I truly enjoyed our conversation and appreciate you taking the time out of your busy schedule to speak with me.\n\nOur discussion further solidified my strong interest in this role and my belief that my skills and experience align perfectly with the requirements of your team. I was particularly engaged by your insights into the company’s upcoming expansion into the European market, and how the Senior Marketing Specialist would play a pivotal role in shaping that strategy. I am confident I could contribute significantly to such an exciting initiative.\n\nThank you again for your time and consideration. I look forward to hearing from you regarding the next steps.\n\nSincerely,\n\nSarah Chen"
+    },
+    {
+      "id": "celpip-writing-011-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your city council is debating how to address homelessness in the downtown area. Which policy do you think should be prioritised?",
+      "optionA": "Invest in more emergency shelter beds to meet immediate needs",
+      "optionB": "Fund long-term supportive housing with on-site mental health services",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A public library is collecting feedback on its programmes and services. Describe how you use the library, which services you find most valuable, and what new programmes or resources you would like to see offered.",
+      "modelAnswer": "I strongly advocate for Option B: funding long-term supportive housing with on-site mental health services. While emergency shelters address immediate needs, they are a temporary solution that fails to tackle the root causes of homelessness, often creating a revolving door scenario.\n\nPrioritizing supportive housing offers a sustainable, humane, and ultimately more cost-effective approach. Firstly, it provides stability, a fundamental requirement for individuals to rebuild their lives. Imagine someone trying to secure employment or manage a chronic illness while constantly worrying about where they will sleep each night; the instability of shelters makes this almost impossible. Secondly, the integration of on-site mental health services is critical. A significant portion of the homeless population struggles with mental health issues or substance abuse, which often contribute to their homelessness and hinder their ability to maintain housing. Providing immediate, accessible professional support within their living environment dramatically increases their chances of recovery and self-sufficiency, reducing strain on emergency services and hospitals in the long run.\n\nWhile emergency shelter beds are necessary in the short term, they only manage the crisis, rather than resolving it. Without addressing the underlying issues through comprehensive, stable support systems, we are merely patching a leak instead of repairing the pipe."
+    }
+  ]
+}

@@ -1,0 +1,769 @@
+{
+  "id": "pte-speaking-writing-012",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Academic Speaking Writing Practice Test 12",
+  "durationSeconds": 4500,
+  "questionCount": 34,
+  "instructions": "Original exam-style practice test with answers and explanations.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-012-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Oceanic Trenches Revealed”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "e6ab068ef632f23be4",
+      "modelAnswer": "Deep ocean exploration has unveiled a myriad of astonishing life forms adapted to extreme pressures and perpetual darkness. Submersibles equipped with advanced sonar and robotic arms navigate hydrothermal vents and abyssal plains, revealing ecosystems thriving on chemosynthesis rather than photosynthesis. This research is crucial for understanding Earth's biodiversity and the potential for life in extraterrestrial environments, pushing the boundaries of scientific discovery.",
+      "readText": "Deep ocean exploration has unveiled a myriad of astonishing life forms adapted to extreme pressures and perpetual darkness. Submersibles equipped with advanced sonar and robotic arms navigate hydrothermal vents and abyssal plains, revealing ecosystems thriving on chemosynthesis rather than photosynthesis. This research is crucial for understanding Earth's biodiversity and the potential for life in extraterrestrial environments, pushing the boundaries of scientific discovery."
+    },
+    {
+      "id": "pte-speaking-writing-012-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Digital Archives”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "The digital archives preserve ancient manuscripts for future scholarly research.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "9ad455bd3a6d3dc8be",
+      "modelAnswer": "The digital archives preserve ancient manuscripts for future scholarly research.",
+      "audioScript": "The digital archives preserve ancient manuscripts for future scholarly research."
+    },
+    {
+      "id": "pte-speaking-writing-012-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a line graph titled \"Growth of Major Ancient Trade Networks (500 BCE - 500 CE)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "d1db65b21cd0bb091e",
+      "modelAnswer": "This line chart illustrates the growth of major ancient trade networks from 500 BCE to 500 CE. The Silk Road consistently shows the highest volume of goods traded, peaking at 120 thousand units by 200 CE, before declining to 80 thousand by 500 CE. The Incense Route and Trans-Saharan Trade also demonstrate growth, reaching 50 and 30 thousand units respectively by 200 CE. A clear trend is the general expansion of all networks until 200 CE, followed by a decrease across the board. The Trans-Saharan Trade always maintained the lowest volume throughout this period.",
+      "visual": {
+        "chartType": "line",
+        "title": "Growth of Major Ancient Trade Networks (500 BCE - 500 CE)",
+        "yLabel": "Volume of Goods Traded (Thousands of Units)",
+        "xAxis": [
+          "500 BCE",
+          "300 BCE",
+          "100 BCE",
+          "1 CE",
+          "200 CE",
+          "500 CE"
+        ],
+        "series": [
+          {
+            "label": "Silk Road",
+            "values": [
+              10,
+              25,
+              60,
+              90,
+              120,
+              80
+            ]
+          },
+          {
+            "label": "Incense Route",
+            "values": [
+              5,
+              15,
+              30,
+              45,
+              50,
+              35
+            ]
+          },
+          {
+            "label": "Trans-Saharan Trade",
+            "values": [
+              2,
+              8,
+              18,
+              25,
+              30,
+              20
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-012-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Innovative Battery Solutions”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "24f8928e759e26be03",
+      "modelAnswer": "The lecture highlighted the critical need for sustainable energy storage, driving innovation in renewable battery design. Researchers are exploring various technologies beyond traditional lithium-ion, such as solid-state and bio-batteries. The primary objective is to develop safer, more efficient, and environmentally friendly options capable of storing energy from intermittent sources like solar and wind, ultimately supporting a global transition to renewable power grids.",
+      "audioScript": "The urgent demand for sustainable energy storage has spurred innovation in renewable battery design. Researchers are moving beyond lithium-ion, exploring solid-state batteries, flow batteries, and even bio-batteries that use organic compounds. The goal is to create safer, more efficient, and environmentally friendly alternatives that can store vast amounts of energy from intermittent sources like solar and wind, thereby facilitating a global transition to renewable power grids. This shift necessitates advancements in material science and scalable manufacturing processes.",
+      "keyPoints": [
+        "Demand for sustainable energy storage",
+        "Beyond lithium-ion: solid-state, flow, bio-batteries",
+        "Safer, efficient, eco-friendly alternatives",
+        "Store energy from intermittent sources"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-012-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Language Learning Habits”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Fluency",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c5f4b52e264debd879",
+      "modelAnswer": "Fluency",
+      "audioScript": "What is the primary skill improved by regular conversation practice in a new language?"
+    },
+    {
+      "id": "pte-speaking-writing-012-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Efficacy of Public Health Initiatives”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c75347b79acaeca10b",
+      "modelAnswer": "Public health campaigns are crucial for improving societal well-being through clear messaging, cultural sensitivity, and sustained effort, requiring collaboration and data evaluation to maximize positive outcomes.",
+      "readText": "Public health campaigns play a pivotal role in shaping societal well-being by disseminating critical information and encouraging healthier behaviors. These initiatives often target specific issues, such as smoking cessation, vaccination uptake, or dietary improvements, utilizing various media channels to reach diverse populations. The effectiveness of such campaigns hinges on clear messaging, cultural sensitivity, and sustained effort, often requiring collaboration between government agencies, NGOs, and community leaders. Evaluating their impact through robust data collection is essential for refining strategies and maximizing positive outcomes across communities."
+    },
+    {
+      "id": "pte-speaking-writing-012-q07",
+      "questionType": "essay",
+      "prompt": "Museums face ongoing challenges in preserving historical artifacts while making them accessible to the public. Discuss the ethical considerations involved in balancing conservation needs with public display, and propose solutions for effective long-term preservation and engagement.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "fead85de667250a90d",
+      "modelAnswer": "Museums serve as custodians of humanity's cultural and historical legacy, tasked with the delicate balance of preserving artifacts for posterity and making them accessible for public education and enjoyment. This dual mandate presents significant ethical dilemmas, particularly concerning the impact of display on an object's longevity. Exposure to light, humidity, temperature fluctuations, and even human touch can accelerate degradation, necessitating stringent environmental controls and often restricting access.\n\nEthical considerations extend to the restoration process itself. While restoration can revive a damaged artifact, aggressive interventions might alter its original state or material integrity, raising questions about authenticity. Furthermore, the decision of what to display, and how, often reflects curatorial biases, potentially marginalizing certain narratives or cultures. The concept of 'preventative conservation' argues for minimal intervention, focusing instead on creating stable environments that slow decay, thereby preserving an artifact's original condition for as long as possible.\n\nTo navigate these challenges, museums can adopt multifaceted solutions. Investing in state-of-the-art climate control systems and display cases with UV filtering is fundamental. Digitalization offers a powerful avenue for engagement; high-resolution 3D models and virtual reality experiences can provide immersive access to fragile artifacts without exposing them to risk. Rotating exhibits, displaying replicas for public interaction while originals are carefully stored, and educating visitors about conservation practices can foster appreciation for preservation efforts. Collaborative research with material scientists can also lead to innovative, less invasive conservation techniques. Ultimately, a balanced approach combining advanced technology, ethical curatorial practices, and public education is vital for ensuring that our shared heritage endures for future generations."
+    },
+    {
+      "id": "pte-speaking-writing-012-q08",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Citizen Science Initiatives”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "d5d11841498587623f",
+      "modelAnswer": "Community science projects, also known as citizen science, empower individuals to contribute to scientific research. Volunteers collect data on diverse topics, from bird migration patterns to water quality, under the guidance of professional scientists. This collaborative approach expands data collection capabilities, fosters scientific literacy among the public, and generates valuable insights that would be unattainable through traditional research methods alone, bridging the gap between academia and everyday life.",
+      "readText": "Community science projects, also known as citizen science, empower individuals to contribute to scientific research. Volunteers collect data on diverse topics, from bird migration patterns to water quality, under the guidance of professional scientists. This collaborative approach expands data collection capabilities, fosters scientific literacy among the public, and generates valuable insights that would be unattainable through traditional research methods alone, bridging the gap between academia and everyday life."
+    },
+    {
+      "id": "pte-speaking-writing-012-q09",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Urban Green Roofs”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Urban green roofs mitigate heat island effects and improve air quality significantly.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c525b1a6b209e2c260",
+      "modelAnswer": "Urban green roofs mitigate heat island effects and improve air quality significantly.",
+      "audioScript": "Urban green roofs mitigate heat island effects and improve air quality significantly."
+    },
+    {
+      "id": "pte-speaking-writing-012-q10",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Impact of Wayfinding Cues on Navigation Success Rate\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "c5808d85625fc45717",
+      "modelAnswer": "This bar chart illustrates the impact of different wayfinding cues on navigation success rates. 'No Cues' shows the lowest success at 35%, highlighting the difficulty of unassisted navigation. 'Signage Only' and 'Landmarks Only' improve success to 50% and 65% respectively. 'Maps Only' further boosts this to 75%. The highest success rates are achieved with combined cues: 'Signage & Landmarks' reaches 85%, while 'All Cues Combined' demonstrates the most effective wayfinding strategy at 92%. This clearly indicates that a multi-modal approach significantly enhances navigation.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Impact of Wayfinding Cues on Navigation Success Rate",
+        "yLabel": "Success Rate (%)",
+        "xAxis": [
+          "No Cues",
+          "Signage Only",
+          "Landmarks Only",
+          "Maps Only",
+          "Signage & Landmarks",
+          "All Cues Combined"
+        ],
+        "series": [
+          {
+            "label": "Success Rate",
+            "values": [
+              35,
+              50,
+              65,
+              75,
+              85,
+              92
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-012-q11",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Deep-Sea Discoveries”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "a6649d7236e82840d0",
+      "modelAnswer": "The lecture discussed the deep ocean as an unexplored frontier, revealing incredible biodiversity and geological features. Recent expeditions using ROVs have discovered new species, hydrothermal vents, and mineral deposits, which significantly challenge our understanding of life and planetary processes. However, the potential for deep-sea resource exploitation also raises serious ecological concerns for these fragile environments, emphasizing the need for international regulation and scientific assessment.",
+      "audioScript": "The deep ocean remains one of Earth's last unexplored frontiers, harboring an astonishing array of biodiversity and geological wonders. Recent expeditions utilizing remotely operated vehicles (ROVs) and human-occupied submersibles have uncovered entirely new species, hydrothermal vent ecosystems, and vast mineral deposits. These discoveries challenge our understanding of life's adaptability and planetary processes. The pressure to exploit deep-sea resources, however, also raises concerns about potential ecological damage to these fragile and poorly understood environments, necessitating careful international regulation and scientific assessment before any large-scale extraction.",
+      "keyPoints": [
+        "Deep ocean unexplored frontier",
+        "New species, vents, minerals found",
+        "Challenges understanding of life, processes",
+        "Concerns about resource exploitation, ecological damage"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-012-q12",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Digital Preservation”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Accessibility",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "4d91bc3b7c5b925539",
+      "modelAnswer": "Accessibility",
+      "audioScript": "What is the primary benefit of digitizing historical documents?"
+    },
+    {
+      "id": "pte-speaking-writing-012-q13",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Silk Road's Enduring Legacy”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "3f1d08095104b96e1b",
+      "modelAnswer": "The Silk Road was a vital network of ancient trade routes that fostered economic, cultural, and intellectual exchange between East and West, profoundly influencing civilizations despite its eventual decline due to maritime trade.",
+      "readText": "The Silk Road was not merely a single route but a complex network of ancient trade routes connecting the East and West, facilitating the exchange of goods, ideas, and cultures for over a millennium. Beyond silk, commodities like spices, precious metals, and technologies traveled across vast distances, shaping economies and fostering intercontinental diplomacy. Crucially, it also served as a conduit for the spread of religions, philosophies, and even diseases, profoundly influencing the development of civilizations along its path. Its decline was gradual, hastened by the rise of maritime trade routes and geopolitical shifts, but its legacy of interconnectedness endures."
+    },
+    {
+      "id": "pte-speaking-writing-012-q14",
+      "questionType": "essay",
+      "prompt": "The development of renewable battery technology is crucial for a sustainable future. Discuss the main challenges in designing next-generation batteries and propose how these challenges can be overcome to accelerate the global energy transition.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "5e036a3f65ff276467",
+      "modelAnswer": "The transition to a sustainable global energy system hinges significantly on advancements in renewable battery technology. While current lithium-ion batteries have facilitated the initial phase of this transition, their limitations in terms of cost, safety, energy density, and supply chain ethics present considerable challenges for widespread adoption and grid-scale storage. Designing next-generation batteries involves overcoming these hurdles to create more efficient, durable, and environmentally benign solutions.\n\nOne primary challenge is improving energy density without compromising safety. Many promising chemistries, such as solid-state or lithium-sulfur batteries, offer higher theoretical energy capacities but face issues with dendrite formation, thermal runaway, or cycling stability. Another significant obstacle is the sourcing and sustainability of raw materials; the extraction of cobalt, nickel, and lithium often carries environmental and human rights concerns. Furthermore, the cost of manufacturing and the overall lifespan of batteries remain barriers to broader economic viability, especially for large-scale grid applications.\n\nOvercoming these challenges requires a multi-pronged approach. Intensive research into novel materials and battery architectures, including alternatives to critical minerals, is essential. For instance, sodium-ion batteries, though less energy-dense, utilize abundant resources. Investment in closed-loop recycling processes for existing battery components can mitigate resource scarcity and environmental impact. Governments and industries must also collaborate to establish ethical supply chains and incentivize the development of sustainable mining practices. Moreover, fostering international partnerships for research and development can accelerate breakthroughs and standardize manufacturing processes, ultimately driving down costs. By addressing these technical, economic, and ethical dimensions concurrently, we can accelerate the deployment of advanced battery technologies crucial for a truly sustainable and renewable energy future."
+    },
+    {
+      "id": "pte-speaking-writing-012-q15",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Effective Language Acquisition”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "communication",
+      "fingerprint": "051c1b751158d37e4f",
+      "modelAnswer": "Effective language learning habits extend beyond classroom instruction, emphasizing consistent exposure and active engagement. Immersion, even through media like films or podcasts, significantly boosts comprehension and vocabulary. Regular practice with native speakers, focusing on both listening and speaking, refines pronunciation and builds confidence. Furthermore, setting realistic goals and celebrating small achievements are crucial for maintaining motivation throughout the challenging yet rewarding journey of mastering a new language.",
+      "readText": "Effective language learning habits extend beyond classroom instruction, emphasizing consistent exposure and active engagement. Immersion, even through media like films or podcasts, significantly boosts comprehension and vocabulary. Regular practice with native speakers, focusing on both listening and speaking, refines pronunciation and builds confidence. Furthermore, setting realistic goals and celebrating small achievements are crucial for maintaining motivation throughout the challenging yet rewarding journey of mastering a new language."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Heritage Preservation”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q16",
+      "modelAnswer": "Cultural heritage preservation in the digital age presents both opportunities and challenges. While digital archiving allows for wider access and safeguards against physical deterioration or loss, it also introduces concerns about data longevity, format obsolescence, and the authenticity of digital reproductions. Striking a balance between innovative digital solutions and traditional conservation methods is crucial for ensuring that future generations can meaningfully engage with our shared past.",
+      "readText": "Cultural heritage preservation in the digital age presents both opportunities and challenges. While digital archiving allows for wider access and safeguards against physical deterioration or loss, it also introduces concerns about data longevity, format obsolescence, and the authenticity of digital reproductions. Striking a balance between innovative digital solutions and traditional conservation methods is crucial for ensuring that future generations can meaningfully engage with our shared past."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Brain Plasticity Insights”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q17",
+      "modelAnswer": "Neuroplasticity, the brain's remarkable ability to reorganize itself throughout life, fundamentally underpins lifelong learning. This process involves forming new neural connections and strengthening existing ones in response to experiences, learning, and even injury. Understanding neuroplasticity helps explain how adults can acquire new skills, adapt to new environments, and recover from neurological damage, emphasizing the brain's dynamic and adaptable nature beyond early development.",
+      "readText": "Neuroplasticity, the brain's remarkable ability to reorganize itself throughout life, fundamentally underpins lifelong learning. This process involves forming new neural connections and strengthening existing ones in response to experiences, learning, and even injury. Understanding neuroplasticity helps explain how adults can acquire new skills, adapt to new environments, and recover from neurological damage, emphasizing the brain's dynamic and adaptable nature beyond early development."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ecosystem Services and Decline”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q18",
+      "modelAnswer": "Biodiversity loss poses a severe threat to ecosystem services, which are the many benefits nature provides to humans, such as clean air and water, pollination, and climate regulation. The decline in species richness and habitat destruction destabilizes ecological systems, impairing their ability to deliver these essential services. Protecting and restoring biodiversity is therefore not just an environmental issue, but a critical investment in human well-being and economic stability globally.",
+      "readText": "Biodiversity loss poses a severe threat to ecosystem services, which are the many benefits nature provides to humans, such as clean air and water, pollination, and climate regulation. The decline in species richness and habitat destruction destabilizes ecological systems, impairing their ability to deliver these essential services. Protecting and restoring biodiversity is therefore not just an environmental issue, but a critical investment in human well-being and economic stability globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Wildlife corridor design and conservation exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Corridor Design”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q19",
+      "modelAnswer": "Wildlife corridor design and conservation exactly as you hear it.",
+      "audioScript": "Wildlife corridor design and conservation exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Philosophy of Consciousness”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q20",
+      "modelAnswer": "The philosophy of consciousness exactly as you hear it.",
+      "audioScript": "The philosophy of consciousness exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology and privacy exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q21",
+      "modelAnswer": "Smart city technology and privacy exactly as you hear it.",
+      "audioScript": "Smart city technology and privacy exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation and indigenous land rights exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation and Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q22",
+      "modelAnswer": "Deforestation and indigenous land rights exactly as you hear it.",
+      "audioScript": "Deforestation and indigenous land rights exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The role of social media in modern communication exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q23",
+      "modelAnswer": "The role of social media in modern communication exactly as you hear it.",
+      "audioScript": "The role of social media in modern communication exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "International migration and cultural integration exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Migration and Integration”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q24",
+      "modelAnswer": "International migration and cultural integration exactly as you hear it.",
+      "audioScript": "International migration and cultural integration exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The economics of automation exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Economics of Automation”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q25",
+      "modelAnswer": "The economics of automation exactly as you hear it.",
+      "audioScript": "The economics of automation exactly as you hear it."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Renewable energy infrastructure investment exactly as you hear it.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Renewable Energy Investment”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q26",
+      "modelAnswer": "Renewable energy infrastructure investment exactly as you hear it.",
+      "audioScript": "Renewable energy infrastructure investment exactly as you hear it."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q27",
+      "modelAnswer": "This bar chart illustrates the annual energy consumption per capita for six different countries in 2022. Canada shows the highest consumption at 310 Gigajoules, closely followed by the USA at 280 Gigajoules. Germany's consumption is considerably lower at 160 Gigajoules, while China stands at 105 Gigajoules. India has the lowest consumption at just 25 Gigajoules per person, highlighting significant disparities in global energy use. Brazil consumes 60 Gigajoules, indicating a mid-range position compared to the other nations depicted.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Gigajoules (GJ)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "China",
+          "India",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "Energy Consumption",
+            "values": [
+              280,
+              310,
+              160,
+              105,
+              25,
+              60
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Global Carbon Reservoirs (Gigatons of Carbon)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q28",
+      "modelAnswer": "The table illustrates the distribution of carbon across Earth's major reservoirs, measured in gigatons of carbon. The deep oceans represent the largest reservoir, holding a staggering 37,000 GtC, significantly more than any other. Fossil fuels are another substantial reservoir, estimated at 10,000 GtC. In contrast, the atmosphere contains the least amount, at 800 GtC, closely followed by surface oceans with 900 GtC. Land plants and soil hold 2,000 GtC. This data highlights the vast capacity of oceans and fossil fuels to store carbon.",
+      "visual": {
+        "chartType": "table",
+        "title": "Global Carbon Reservoirs (Gigatons of Carbon)",
+        "headers": [
+          "Reservoir",
+          "Carbon Amount (GtC)"
+        ],
+        "rows": [
+          [
+            "Oceans (surface)",
+            "900"
+          ],
+          [
+            "Oceans (deep)",
+            "37000"
+          ],
+          [
+            "Atmosphere",
+            "800"
+          ],
+          [
+            "Land Plants & Soil",
+            "2000"
+          ],
+          [
+            "Fossil Fuels (estimated)",
+            "10000"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q29",
+      "modelAnswer": "The pie chart illustrates global CO2 emissions by sector for the year 2022. It clearly shows that energy production is the largest contributor, accounting for a significant 35% of total emissions. Transportation follows as the second-highest sector at 22%, with industry close behind at 18%. Agriculture contributes 12%, while residential and commercial sources make up 8%. The smallest proportion comes from the 'Other' category, representing only 5%. Overall, the chart highlights the dominance of energy-related activities in global carbon dioxide emissions, with over half attributed to energy production and transportation combined.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy Production",
+            "value": 35
+          },
+          {
+            "label": "Transportation",
+            "value": 22
+          },
+          {
+            "label": "Industry",
+            "value": 18
+          },
+          {
+            "label": "Agriculture",
+            "value": 12
+          },
+          {
+            "label": "Residential & Commercial",
+            "value": 8
+          },
+          {
+            "label": "Other",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Renewable Energy Adoption by Country (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q30",
+      "modelAnswer": "The bar chart illustrates renewable energy adoption across five countries in 2023, measured as a percentage of total energy consumption. Brazil shows the highest adoption rate, with an impressive 58%, significantly outperforming all other nations. Germany follows, with 42% of its energy from renewable sources. Canada and Australia show moderate adoption at 28% and 22% respectively. Japan records the lowest share at 18%, indicating a considerable gap compared to leading countries. Overall, the chart highlights varying levels of commitment to renewable energy globally.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Energy Adoption by Country (2023)",
+        "yLabel": "% of Total Energy Consumption",
+        "xAxis": [
+          "Germany",
+          "Canada",
+          "Japan",
+          "Australia",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "Renewable Energy Share",
+            "values": [
+              42,
+              28,
+              18,
+              22,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q31",
+      "modelAnswer": "The lecture emphasized the powerful role of non-verbal communication, which often surpasses verbal content in conveying messages. It highlighted how gestures, facial expressions, posture, and eye contact can drastically change a statement's interpretation. The speaker noted the importance of understanding these cues, especially in cross-cultural interactions where meanings differ, stressing that effective communicators must adapt to these unspoken signals for accurate communication.",
+      "audioScript": "Beyond spoken words, non-verbal communication plays a crucial role in conveying messages, often more powerfully than verbal content. Gestures, facial expressions, posture, and even eye contact can significantly alter the interpretation of a statement. For example, crossed arms might signal defensiveness, while direct eye contact can convey sincerity or challenge. Understanding these subtle cues is vital in cross-cultural interactions, as their meanings can vary dramatically, leading to misunderstandings if not properly interpreted. Effective communicators learn to read and adapt to these unspoken signals, enhancing their ability to connect and convey their intended meaning accurately.",
+      "keyPoints": [
+        "Non-verbal cues are powerful",
+        "Gestures, expressions, posture, eye contact",
+        "Meanings vary cross-culturally",
+        "Effective communicators adapt to signals"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Types”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q32",
+      "modelAnswer": "Verbal",
+      "audioScript": "What type of communication involves written words?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Feedback",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Feedback Mechanism”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q33",
+      "modelAnswer": "Feedback",
+      "audioScript": "What is the process of a receiver responding to a sender's message?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Distraction",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Barrier”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-012-q34",
+      "modelAnswer": "Distraction",
+      "audioScript": "What is a common obstacle to clear communication caused by noise?"
+    }
+  ],
+  "answerKey": {
+    "pte-speaking-writing-012-q01": "",
+    "pte-speaking-writing-012-q02": "",
+    "pte-speaking-writing-012-q03": "",
+    "pte-speaking-writing-012-q04": "",
+    "pte-speaking-writing-012-q05": "sample answer",
+    "pte-speaking-writing-012-q06": "",
+    "pte-speaking-writing-012-q07": "",
+    "pte-speaking-writing-012-q08": "",
+    "pte-speaking-writing-012-q09": "",
+    "pte-speaking-writing-012-q10": "",
+    "pte-speaking-writing-012-q11": "",
+    "pte-speaking-writing-012-q12": "sample answer",
+    "pte-speaking-writing-012-q13": "",
+    "pte-speaking-writing-012-q14": "",
+    "pte-speaking-writing-012-q15": ""
+  },
+  "fingerprints": [
+    "e6ab068ef632f23be4",
+    "9ad455bd3a6d3dc8be",
+    "d1db65b21cd0bb091e",
+    "24f8928e759e26be03",
+    "c5f4b52e264debd879",
+    "c75347b79acaeca10b",
+    "fead85de667250a90d",
+    "d5d11841498587623f",
+    "c525b1a6b209e2c260",
+    "c5808d85625fc45717",
+    "a6649d7236e82840d0",
+    "4d91bc3b7c5b925539",
+    "3f1d08095104b96e1b",
+    "5e036a3f65ff276467",
+    "051c1b751158d37e4f"
+  ]
+}

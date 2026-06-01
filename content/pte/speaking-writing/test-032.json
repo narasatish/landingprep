@@ -1,0 +1,723 @@
+{
+  "id": "pte-speaking-writing-032",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 32",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-032-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Ensuring Workplace Safety Protocols”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "workplace safety",
+      "modelAnswer": "Effective workplace safety protocols are paramount for preventing accidents and fostering a secure environment. Regular training sessions on hazard identification and emergency procedures are crucial. Employees must be familiar with all safety equipment and understand their roles during an incident. Compliance with industry-specific regulations not only protects workers but also enhances overall operational efficiency and reduces potential liabilities for the organization. Proactive measures are always more effective than reactive responses.",
+      "readText": "Effective workplace safety protocols are paramount for preventing accidents and fostering a secure environment. Regular training sessions on hazard identification and emergency procedures are crucial. Employees must be familiar with all safety equipment and understand their roles during an incident. Compliance with industry-specific regulations not only protects workers but also enhances overall operational efficiency and reduces potential liabilities for the organization. Proactive measures are always more effective than reactive responses."
+    },
+    {
+      "id": "pte-speaking-writing-032-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Prioritizing Safety Training”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Regular safety drills significantly reduce the risk of workplace injuries and enhance preparedness.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "workplace safety",
+      "modelAnswer": "Regular safety drills significantly reduce the risk of workplace injuries and enhance preparedness.",
+      "audioScript": "Regular safety drills significantly reduce the risk of workplace injuries and enhance preparedness."
+    },
+    {
+      "id": "pte-speaking-writing-032-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Workplace Accidents by Industry Sector (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "workplace safety",
+      "modelAnswer": "This bar chart illustrates workplace accidents across different industry sectors in 2023. The construction sector recorded the highest number of accidents, with 2,300 incidents, closely followed by manufacturing at 1,850. In stark contrast, administrative services experienced the fewest accidents, registering only 350. Healthcare and transportation sectors saw moderate figures of 950 and 1,400 respectively. Overall, the data clearly highlights industries like construction and manufacturing as requiring greater focus on safety measures compared to administrative services, which had significantly fewer incidents.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Workplace Accidents by Industry Sector (2023)",
+        "yLabel": "Number of Accidents",
+        "xAxis": [
+          "Manufacturing",
+          "Construction",
+          "Healthcare",
+          "Retail",
+          "Transportation",
+          "Admin Services"
+        ],
+        "series": [
+          {
+            "label": "Accidents",
+            "values": [
+              1850,
+              2300,
+              950,
+              600,
+              1400,
+              350
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-032-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Safety Culture Benefits”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "workplace safety",
+      "modelAnswer": "The lecture discussed how a strong workplace safety culture is a strategic investment. It explained that companies prioritizing safety see fewer accidents and reduced costs. This also results in higher employee satisfaction, better morale, and increased productivity. Furthermore, it creates an environment of trust where everyone contributes to safety, benefiting both the workforce and the company's financial performance. It's a comprehensive approach to improve the workplace.",
+      "audioScript": "The implementation of a strong workplace safety culture is not merely about compliance; it's a strategic investment. Companies that prioritize safety often experience a significant reduction in accidents and associated costs. Furthermore, employees in such environments report higher job satisfaction and morale, leading to increased productivity and lower turnover rates. This proactive approach cultivates an atmosphere of trust and responsibility, where every individual feels empowered to contribute to a safer working environment. It's a holistic benefit for both the workforce and the bottom line.",
+      "keyPoints": [
+        "Safety culture reduces accidents and costs.",
+        "Increases employee satisfaction and morale.",
+        "Leads to higher productivity and lower turnover.",
+        "Fosters trust and shared responsibility."
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-032-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Emergency Evacuation Role”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Evacuation",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "workplace safety",
+      "modelAnswer": "Evacuation",
+      "audioScript": "What is the primary purpose of an emergency exit in a building?"
+    },
+    {
+      "id": "pte-speaking-writing-032-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Workplace Hazard Identification”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "workplace safety",
+      "wordTarget": 75,
+      "modelAnswer": "Systematic workplace hazard identification, involving inspections and feedback, is crucial for assessing risks and implementing control measures to protect employees and prevent operational disruptions.",
+      "readText": "Workplace hazard identification is a foundational element of any effective safety management system. It involves systematically identifying potential sources of harm to workers, such as unsafe conditions, dangerous equipment, or hazardous substances. This process requires regular inspections, employee feedback, and analysis of past incidents. Once identified, hazards must be assessed for their risk level and appropriate control measures implemented. Without thorough hazard identification, companies cannot adequately protect their employees, leading to increased incidents and operational disruptions."
+    },
+    {
+      "id": "pte-speaking-writing-032-q07",
+      "questionType": "write_essay",
+      "prompt": "Workplace safety is a critical concern, impacting employee well-being and organizational productivity. Discuss the primary reasons why companies must prioritize safety measures and elaborate on effective strategies they can implement to foster a culture of safety. Provide examples to support your viewpoint.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "workplace safety",
+      "wordTarget": 200,
+      "modelAnswer": "Workplace safety is not merely a regulatory obligation but a fundamental pillar of a thriving organization, directly influencing employee welfare, morale, and overall operational efficiency. Companies must prioritize safety primarily because it safeguards human life and prevents injuries, fulfilling a moral imperative to protect their workforce. Furthermore, a safe environment reduces costly accidents, minimizing medical expenses, lost workdays, and potential legal liabilities, all of which can significantly impact a company's bottom line. High safety standards also enhance employee trust and loyalty, leading to increased productivity and lower staff turnover.\n\nTo foster a robust culture of safety, companies should implement several effective strategies. Firstly, comprehensive training programs are essential, educating employees on potential hazards, safe operating procedures, and emergency protocols. For instance, regular drills for fire evacuations or chemical spills ensure preparedness. Secondly, management must lead by example, consistently demonstrating a commitment to safety through adherence to rules and active participation in safety audits. Thirdly, establishing clear reporting mechanisms for hazards and near-misses, coupled with non-punitive policies, encourages employees to identify and address risks without fear of reprisal. Finally, investing in appropriate personal protective equipment (PPE) and maintaining machinery through regular inspections are practical steps. For example, providing hard hats and safety glasses on construction sites, or ensuring machinery has proper guards, directly prevents injuries. Ultimately, a proactive and collaborative approach to safety creates a workplace where employees feel valued and secure, leading to a more productive and sustainable enterprise."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Ancient Maritime Routes”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q08",
+      "modelAnswer": "The history of maritime trade routes is a fascinating chronicle of human exploration and economic development. From the ancient Silk Road's sea lanes to the Spice Routes, these pathways facilitated the exchange of goods, cultures, and ideas across continents for millennia. Early navigators, using rudimentary tools, braved treacherous waters to connect distant civilizations. These routes not only shaped global economies but also fostered technological advancements in shipbuilding and navigation, laying the groundwork for modern international commerce and cultural diffusion.",
+      "readText": "The history of maritime trade routes is a fascinating chronicle of human exploration and economic development. From the ancient Silk Road's sea lanes to the Spice Routes, these pathways facilitated the exchange of goods, cultures, and ideas across continents for millennia. Early navigators, using rudimentary tools, braved treacherous waters to connect distant civilizations. These routes not only shaped global economies but also fostered technological advancements in shipbuilding and navigation, laying the groundwork for modern international commerce and cultural diffusion."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Solar Energy Innovations”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q09",
+      "modelAnswer": "Recent advances in renewable solar energy technology are revolutionizing power generation. Innovations in photovoltaic cell efficiency now allow for greater electricity production from smaller surface areas. Additionally, developments in energy storage solutions, such as advanced battery systems, address the intermittency of solar power, ensuring a consistent supply. These breakthroughs make solar energy more competitive with traditional fossil fuels, accelerating the global transition towards sustainable energy sources and reducing carbon emissions significantly.",
+      "readText": "Recent advances in renewable solar energy technology are revolutionizing power generation. Innovations in photovoltaic cell efficiency now allow for greater electricity production from smaller surface areas. Additionally, developments in energy storage solutions, such as advanced battery systems, address the intermittency of solar power, ensuring a consistent supply. These breakthroughs make solar energy more competitive with traditional fossil fuels, accelerating the global transition towards sustainable energy sources and reducing carbon emissions significantly."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Climate Change Solutions”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q10",
+      "modelAnswer": "Climate change mitigation strategies encompass a broad range of actions aimed at reducing greenhouse gas emissions and stabilizing atmospheric concentrations. Key approaches include transitioning to renewable energy, enhancing energy efficiency, and implementing carbon capture technologies. Reforestation and sustainable land management also play vital roles by increasing carbon sequestration. International cooperation and policy frameworks are essential to drive these efforts globally, ensuring a collective response to this pressing environmental challenge and safeguarding future generations.",
+      "readText": "Climate change mitigation strategies encompass a broad range of actions aimed at reducing greenhouse gas emissions and stabilizing atmospheric concentrations. Key approaches include transitioning to renewable energy, enhancing energy efficiency, and implementing carbon capture technologies. Reforestation and sustainable land management also play vital roles by increasing carbon sequestration. International cooperation and policy frameworks are essential to drive these efforts globally, ensuring a collective response to this pressing environmental challenge and safeguarding future generations."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Global Food Economy”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q11",
+      "modelAnswer": "The economics of global food production is a complex system influenced by numerous factors, including climate, technology, trade policies, and consumer demand. Agricultural subsidies in developed nations often distort international markets, affecting producers in developing countries. Supply chain efficiencies and logistical challenges also impact food prices and availability worldwide. Addressing food security requires a holistic approach that considers sustainable farming practices, equitable distribution, and resilience to climate-related disruptions, ensuring access for all populations.",
+      "readText": "The economics of global food production is a complex system influenced by numerous factors, including climate, technology, trade policies, and consumer demand. Agricultural subsidies in developed nations often distort international markets, affecting producers in developing countries. Supply chain efficiencies and logistical challenges also impact food prices and availability worldwide. Addressing food security requires a holistic approach that considers sustainable farming practices, equitable distribution, and resilience to climate-related disruptions, ensuring access for all populations."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Space Colonisation Hurdles”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q12",
+      "modelAnswer": "Space exploration and colonisation present formidable challenges beyond mere technological prowess. Sustaining human life in extraterrestrial environments requires advanced life support systems, radiation shielding, and psychological support for long-duration missions. The immense costs associated with launching materials and personnel, coupled with the engineering complexities of building self-sufficient habitats, demand unprecedented international collaboration. Overcoming these hurdles will define humanity's future beyond Earth, pushing the boundaries of scientific innovation and human endurance.",
+      "readText": "Space exploration and colonisation present formidable challenges beyond mere technological prowess. Sustaining human life in extraterrestrial environments requires advanced life support systems, radiation shielding, and psychological support for long-duration missions. The immense costs associated with launching materials and personnel, coupled with the engineering complexities of building self-sufficient habitats, demand unprecedented international collaboration. Overcoming these hurdles will define humanity's future beyond Earth, pushing the boundaries of scientific innovation and human endurance."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ancient civilizations meticulously charted celestial movements, revealing profound astronomical observations.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ancient Astronomy History”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q13",
+      "modelAnswer": "Ancient civilizations meticulously charted celestial movements, revealing profound astronomical observations.",
+      "audioScript": "Ancient civilizations meticulously charted celestial movements, revealing profound astronomical observations."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Noise pollution significantly disrupts wildlife behavior, affecting their communication and migration patterns.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Noise Impact”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q14",
+      "modelAnswer": "Noise pollution significantly disrupts wildlife behavior, affecting their communication and migration patterns.",
+      "audioScript": "Noise pollution significantly disrupts wildlife behavior, affecting their communication and migration patterns."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Successful cross-cultural negotiations in business require understanding diverse communication styles and values.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Business Negotiations”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q15",
+      "modelAnswer": "Successful cross-cultural negotiations in business require understanding diverse communication styles and values.",
+      "audioScript": "Successful cross-cultural negotiations in business require understanding diverse communication styles and values."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Carbon capture and storage technologies are crucial for mitigating industrial greenhouse gas emissions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Carbon Capture Technology”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q16",
+      "modelAnswer": "Carbon capture and storage technologies are crucial for mitigating industrial greenhouse gas emissions.",
+      "audioScript": "Carbon capture and storage technologies are crucial for mitigating industrial greenhouse gas emissions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Effective wildlife corridor design is vital for connecting fragmented habitats and ensuring species survival.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Wildlife Conservation Design”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q17",
+      "modelAnswer": "Effective wildlife corridor design is vital for connecting fragmented habitats and ensuring species survival.",
+      "audioScript": "Effective wildlife corridor design is vital for connecting fragmented habitats and ensuring species survival."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The philosophy of consciousness explores the nature of subjective experience and mental states.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Consciousness Philosophy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q18",
+      "modelAnswer": "The philosophy of consciousness explores the nature of subjective experience and mental states.",
+      "audioScript": "The philosophy of consciousness explores the nature of subjective experience and mental states."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Smart city technology raises significant concerns regarding data privacy and surveillance implications.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Smart City Privacy”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q19",
+      "modelAnswer": "Smart city technology raises significant concerns regarding data privacy and surveillance implications.",
+      "audioScript": "Smart city technology raises significant concerns regarding data privacy and surveillance implications."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Deforestation critically impacts indigenous land rights and traditional ways of life globally.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Deforestation Rights”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q20",
+      "modelAnswer": "Deforestation critically impacts indigenous land rights and traditional ways of life globally.",
+      "audioScript": "Deforestation critically impacts indigenous land rights and traditional ways of life globally."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Social media plays a transformative role in modern communication, shaping public discourse.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Social Media's Role”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q21",
+      "modelAnswer": "Social media plays a transformative role in modern communication, shaping public discourse.",
+      "audioScript": "Social media plays a transformative role in modern communication, shaping public discourse."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Smartphone Adoption Rate (2014-2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q22",
+      "modelAnswer": "The line graph illustrates the global smartphone adoption rate from 2014 to 2023, showing a consistent upward trend. Starting at 35% in 2014, the adoption rate steadily increased, reaching 51% by 2016 and surpassing two-thirds, at 65%, in 2018. By 2020, during the pandemic, it climbed to 75%, indicating accelerated reliance on smartphones. The highest point is recorded in 2023 at 88%, nearly nine out of ten people globally. This significant growth highlights the widespread integration of smartphones into daily life over the past decade.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Smartphone Adoption Rate (2014-2023)",
+        "yLabel": "Adoption Rate (%)",
+        "xAxis": [
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "series": [
+          {
+            "label": "Global Adoption Rate",
+            "values": [
+              35,
+              42,
+              51,
+              58,
+              65,
+              71,
+              75,
+              80,
+              84,
+              88
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Annual Energy Consumption Per Capita (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q23",
+      "modelAnswer": "This bar chart illustrates the annual energy consumption per capita for various countries in 2022. Canada shows the highest consumption at 92 MWh, closely followed by the USA at 85 MWh. In stark contrast, India has the lowest consumption, registering only 10 MWh per person. Germany consumes 45 MWh, while China and Brazil consume 30 MWh and 25 MWh respectively. The data clearly highlights a significant disparity in energy usage between developed nations and emerging economies, with North American countries leading the consumption.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Annual Energy Consumption Per Capita (2022)",
+        "yLabel": "Energy Consumption (MWh)",
+        "xAxis": [
+          "USA",
+          "Canada",
+          "Germany",
+          "China",
+          "India",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "label": "MWh",
+            "values": [
+              85,
+              92,
+              45,
+              30,
+              10,
+              25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Atmospheric CO2 Concentration (1960-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q24",
+      "modelAnswer": "This line chart illustrates the significant increase in global atmospheric CO2 concentration from 1960 to 2020. In 1960, the concentration was approximately 315 parts per million (ppm), steadily rising to 338 ppm by 1980. The upward trend continued, reaching 370 ppm in 2000 and peaking at 412 ppm in 2020. This clearly shows a consistent and substantial increase over the 60-year period, indicating a growing imbalance in the carbon cycle. The concentration more than doubled from 1960 to 2020, highlighting an alarming environmental trend.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Atmospheric CO2 Concentration (1960-2020)",
+        "yLabel": "CO2 Concentration (ppm)",
+        "xAxis": [
+          "1960",
+          "1970",
+          "1980",
+          "1990",
+          "2000",
+          "2010",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "CO2 Concentration",
+            "values": [
+              315,
+              325,
+              338,
+              354,
+              370,
+              390,
+              412
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a pie chart titled \"Global CO2 Emissions by Sector (2022)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q25",
+      "modelAnswer": "The pie chart illustrates global CO2 emissions by sector for the year 2022. The largest contributor to CO2 emissions is Energy Production, accounting for a significant 35%. Transportation follows as the second-highest emitter at 22%, closely trailed by Industry at 18%. Agriculture and Land Use contributes 14%, while Residential and Commercial Buildings are responsible for 8%. The smallest segment is Waste and Other, representing just 3% of total emissions. This highlights that energy generation and mobility are the primary areas requiring focus to reduce global CO2 levels.",
+      "visual": {
+        "chartType": "pie",
+        "title": "Global CO2 Emissions by Sector (2022)",
+        "slices": [
+          {
+            "label": "Energy Production",
+            "value": 35
+          },
+          {
+            "label": "Transportation",
+            "value": 22
+          },
+          {
+            "label": "Industry",
+            "value": 18
+          },
+          {
+            "label": "Agriculture & Land Use",
+            "value": 14
+          },
+          {
+            "label": "Residential & Commercial Buildings",
+            "value": 8
+          },
+          {
+            "label": "Waste & Other",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Renewable Energy Adoption by Country (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q26",
+      "modelAnswer": "The bar chart illustrates renewable energy adoption rates across five countries in 2023, measured as a percentage of total energy consumption. Brazil shows the highest adoption, with an impressive 68%. Germany follows with 45%, while Canada's rate is 32%. Australia registers 25%, and Japan has the lowest adoption at 18%. Overall, there's a significant disparity in renewable energy integration, with Brazil leading substantially compared to other developed nations like Japan and Australia, highlighting varied national energy policies and resource availability influencing these figures.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Renewable Energy Adoption by Country (2023)",
+        "yLabel": "% of Total Energy Consumption",
+        "xAxis": [
+          "Germany",
+          "Canada",
+          "Japan",
+          "Brazil",
+          "Australia"
+        ],
+        "series": [
+          {
+            "label": "Renewable Energy",
+            "values": [
+              45,
+              32,
+              18,
+              68,
+              25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Digital Communication Evolution”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q27",
+      "modelAnswer": "The lecture discussed how digital technologies have fundamentally changed human communication, allowing instant global connection. This has created global communities and enhanced participation. However, it also presents challenges like the spread of misinformation, the existence of digital divides, and a potential decrease in face-to-face interaction skills. The speaker emphasized the importance of understanding these dynamics to effectively navigate our interconnected world, maximizing benefits while addressing the negative aspects of technology.",
+      "audioScript": "The advent of digital technologies has profoundly transformed human communication. Once limited by geographical distance and slow postal services, we now communicate instantaneously across the globe. This shift has brought both unprecedented connectivity and new challenges. While digital platforms foster global communities and democratic participation, they also introduce issues like misinformation, digital divides, and the erosion of face-to-face interaction skills. Understanding these dynamics is crucial for navigating our increasingly interconnected world effectively and responsibly, leveraging technology's benefits while mitigating its drawbacks.",
+      "keyPoints": [
+        "Digital tech transformed communication instantly.",
+        "Offers global connectivity and community building.",
+        "Introduces challenges: misinformation, digital divides.",
+        "Impacts face-to-face interaction skills."
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Cues”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q28",
+      "modelAnswer": "The lecture explained that non-verbal communication, through gestures, expressions, posture, and eye contact, is incredibly powerful, often more so than spoken words. It highlighted that a large part of a message's impact comes from these unspoken cues. The speaker emphasized that cultural differences significantly affect how these signals are interpreted. Therefore, understanding and appropriately using non-verbal communication is crucial for effective interpersonal interactions, helping to build understanding and rapport in various cultural contexts.",
+      "audioScript": "Non-verbal communication is often more powerful than spoken words, conveying a wealth of information through gestures, facial expressions, posture, and eye contact. In fact, studies suggest that a significant portion of a message's impact comes from these unspoken cues. Cultural differences greatly influence the interpretation of non-verbal signals, meaning what is polite in one context might be offensive in another. Mastering the ability to read and appropriately use non-verbal communication is essential for effective interpersonal interactions, fostering understanding and building rapport in diverse settings.",
+      "keyPoints": [
+        "Non-verbal cues convey significant information.",
+        "Gestures, expressions, posture, eye contact are key.",
+        "Cultural differences impact interpretation.",
+        "Mastering non-verbal communication is vital for effective interaction."
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Email",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Method”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q29",
+      "modelAnswer": "Email",
+      "audioScript": "What is the fastest way to send a message over a long distance?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Lecture",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal Communication Form”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q30",
+      "modelAnswer": "Lecture",
+      "audioScript": "What do you call a formal discussion on a specific topic in front of an audience?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Chart",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Visual Communication Aid”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q31",
+      "modelAnswer": "Chart",
+      "audioScript": "What visual aid is often used in presentations to display data?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Phone",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Basic Communication Tool”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-032-q32",
+      "modelAnswer": "Phone",
+      "audioScript": "What do people use to talk to someone when they are not physically together?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Global Urbanisation Trends”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-032-q33",
+      "modelAnswer": "Global urbanization, driven by economic opportunities and services, leads to both economic growth and significant challenges like resource pressure and environmental degradation, necessitating sustainable planning for future livable cities.",
+      "readText": "Global urbanisation is a defining trend of the 21st century, with more than half of the world's population now residing in urban areas. This rapid shift is driven by factors such as economic opportunities, improved infrastructure, and access to services in cities. However, it also brings significant challenges, including increased pressure on resources, environmental degradation, and the proliferation of informal settlements. While urban areas serve as engines of economic growth and innovation, sustainable planning and equitable development are crucial to mitigate the negative consequences and ensure livable cities for future generations."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Technology has fundamentally changed how people communicate, offering both unprecedented opportunities and significant drawbacks. Discuss the advantages and disadvantages of technology's impact on human communication, providing examples to support your arguments.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-032-q34",
+      "modelAnswer": "The pervasive integration of technology into daily life has undeniably reshaped the landscape of human communication, presenting a dichotomy of unparalleled opportunities and considerable drawbacks. On the one hand, technology has democratized access to information and fostered global connectivity. Platforms like video conferencing and instant messaging allow individuals to communicate across vast distances in real-time, strengthening personal relationships and facilitating international business collaboration. Social media networks enable rapid dissemination of news and ideas, empowering social movements and providing a voice to marginalized communities. This instantaneous, borderless communication was unimaginable a few decades ago, fostering a more interconnected and informed global society.\n\nHowever, the technological revolution in communication is not without its downsides. A significant disadvantage is the potential for reduced quality of interpersonal interactions. Over-reliance on digital communication can diminish face-to-face social skills, leading to feelings of isolation despite constant connectivity. The prevalence of misinformation and 'fake news' on social media platforms also poses a serious threat, eroding trust and polarizing public discourse. Furthermore, issues such as cyberbullying, privacy breaches, and the addictive nature of digital devices highlight the darker aspects of this technological advancement. While technology offers remarkable tools for connection, it demands critical awareness and responsible usage to mitigate its adverse effects on human interaction and societal well-being. Balancing convenience with genuine connection remains a crucial challenge."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "In various contexts, individuals choose between formal and informal communication styles. Analyze the key differences between these two styles and discuss situations where each approach is most appropriate, supporting your answer with relevant examples.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-032-q35",
+      "modelAnswer": "Communication styles vary significantly depending on context, ranging from highly formal to distinctly informal. The primary distinction lies in their adherence to established rules, vocabulary, and structure. Formal communication is characterized by precise language, adherence to etiquette, and a structured delivery, often employing technical jargon or official terminology. It typically occurs in professional, academic, or ceremonial settings, where clarity, authority, and respect are paramount. Examples include business reports, academic essays, legal documents, and official presentations, where the objective is to convey information accurately and maintain a professional demeanor. The emphasis is on objectivity and avoiding personal biases or colloquialisms.\n\nConversely, informal communication is relaxed, spontaneous, and personal, often using colloquialisms, slang, and a more conversational tone. It is prevalent in casual social interactions, among friends, family, or close colleagues, where the primary goal is to build rapport, express personal feelings, or share information without rigid constraints. Text messages, casual conversations, personal emails, and social media interactions are prime examples. While informal communication fosters warmth and immediacy, it can lead to misunderstandings or be perceived as unprofessional in inappropriate settings. Choosing the correct style is crucial for effective communication; a formal approach ensures credibility and seriousness in official contexts, whereas an informal style promotes openness and connection in personal ones. Misjudging the appropriate style can have significant social or professional repercussions."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "ielts-writing-028",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 28",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-028-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The bar chart compares the percentage of workers in different industries who reported high levels of job satisfaction in 2022. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "job satisfaction",
+      "modelAnswer": "The bar chart illustrates the proportion of workers who reported high levels of job satisfaction across six different industries in 2022.\n\nOverall, there was a significant disparity in job satisfaction levels among the sectors, with technology and service-based industries generally reporting higher percentages than those in goods production or direct customer service roles. The range of satisfaction varied considerably, from a high of 85% to a low of 25%.\n\nIT professionals experienced the highest job satisfaction, with 85% reporting high levels, closely followed by healthcare and education, which saw 78% and 72% respectively. These three sectors clearly led in worker contentment, all exceeding the 70% mark. \n\nIn stark contrast, the retail sector recorded a satisfaction rate of 45%, less than half that of IT. Manufacturing followed with an even lower 38%, while the hospitality industry reported the lowest satisfaction, with only a quarter (25%) of its workforce expressing high contentment. This indicates a clear divide between knowledge-based and service-oriented professions versus more traditional or high-pressure customer-facing roles.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Job Satisfaction Levels Across Industries (2022)",
+        "yLabel": "Percentage of Workers Reporting High Satisfaction",
+        "xAxis": [
+          "IT",
+          "Healthcare",
+          "Education",
+          "Retail",
+          "Manufacturing",
+          "Hospitality"
+        ],
+        "series": [
+          {
+            "label": "High Satisfaction",
+            "values": [
+              85,
+              78,
+              72,
+              45,
+              38,
+              25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-028-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Job satisfaction is considered more important than salary by many workers today. What factors contribute to job satisfaction, and how can employers create a more satisfying work environment?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "job satisfaction",
+      "modelAnswer": "The prevailing sentiment among a significant portion of the modern workforce suggests that contentment derived from one's profession now outweighs the financial remuneration it offers. This essay will explore the multifaceted elements that foster job satisfaction and subsequently outline strategies employers can implement to cultivate a more fulfilling workplace.\n\nNumerous intrinsic and extrinsic factors contribute to an individual's sense of professional gratification. Foremost among these is the feeling of purpose and the opportunity for personal growth. When employees perceive their work as meaningful and are provided avenues for skill development and career progression, their satisfaction levels significantly increase. For instance, a software engineer who is regularly challenged with innovative projects and sees their contributions directly impact product success will likely experience greater fulfilment than one who merely performs repetitive coding tasks, regardless of salary. Furthermore, a supportive work culture, characterised by positive colleague relationships and fair management practices, is crucial. The ability to collaborate effectively and feel valued within a team environment can profoundly enhance daily work experience.\n\nTo foster a more satisfying work environment, employers must adopt a holistic approach that prioritises employee well-being and professional development. Firstly, companies should invest in robust training programmes and mentorship schemes, offering clear pathways for advancement and skill acquisition. This demonstrates a commitment to their employees' long-term careers, rather than just their immediate output. Secondly, cultivating a culture of recognition and transparency is vital. Regularly acknowledging achievements, providing constructive feedback, and involving employees in decision-making processes can significantly boost morale and a sense of ownership. For example, Google's emphasis on employee autonomy, creative freedom, and open communication channels has consistently resulted in high job satisfaction ratings, proving that a focus on empowerment yields positive outcomes.\n\nIn conclusion, job satisfaction is driven by a complex interplay of purpose, growth, and a supportive environment. Employers who strategically invest in their workforce's development, foster a culture of appreciation, and empower their employees will undoubtedly cultivate a more engaged and satisfied team."
+    }
+  ],
+  "variant": "academic"
+}

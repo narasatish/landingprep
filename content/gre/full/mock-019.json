@@ -1,0 +1,25 @@
+{
+  "id": "gre-full-019",
+  "exam": "gre",
+  "type": "full",
+  "title": "GRE Full Mock Test 19",
+  "durationSeconds": 10800,
+  "instructions": "Full GRE General Test mock. Complete all sections in order.",
+  "sections": [
+    {
+      "section": "verbal",
+      "testId": "gre-verbal-019",
+      "file": "gre/verbal/test-019.json"
+    },
+    {
+      "section": "quant",
+      "testId": "gre-quant-019",
+      "file": "gre/quant/test-019.json"
+    },
+    {
+      "section": "writing",
+      "testId": "gre-writing-019",
+      "file": "gre/writing/test-019.json"
+    }
+  ]
+}

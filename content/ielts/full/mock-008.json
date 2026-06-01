@@ -1,0 +1,30 @@
+{
+  "id": "ielts-full-008",
+  "exam": "ielts",
+  "type": "full",
+  "title": "IELTS Full Mock Test 8",
+  "durationSeconds": 9900,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "ielts-listening-008",
+      "file": "ielts/listening/test-008.json"
+    },
+    {
+      "section": "reading",
+      "testId": "ielts-reading-008",
+      "file": "ielts/reading/test-008.json"
+    },
+    {
+      "section": "writing",
+      "testId": "ielts-writing-008",
+      "file": "ielts/writing/test-008.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "ielts-speaking-008",
+      "file": "ielts/speaking/test-008.json"
+    }
+  ]
+}

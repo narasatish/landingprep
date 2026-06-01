@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-008",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 8",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-008-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "Your co-worker recently helped you complete a major project when you were ill and behind schedule. You want to write a message acknowledging their support.",
+      "recipient": "your co-worker",
+      "bulletPoints": [
+        "Thank them for their specific help during the project",
+        "Explain how their support made a difference to you",
+        "Suggest a way to show your appreciation"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "Your landlord has not responded to your request to fix the heating system, which has been broken for three weeks. Write a letter reminding them of the problem, describing how it has affected you, and asking for immediate action.",
+      "modelAnswer": "Subject: A Huge Thank You for the [Project Name] Project!\n\nHi [Co-worker's Name],\n\nI wanted to send a sincere thank you for all your incredible help with the [Project Name] project while I was out sick. I truly appreciate you stepping in and taking over the [specific task 1, e.g., data analysis, client communication] and the [specific task 2, e.g., report drafting, presentation prep] when I was falling behind schedule.\n\nYour support made an enormous difference. I was honestly quite worried about missing the deadline and letting the team down, especially with how crucial the [specific project aspect, e.g., Q3 report, client proposal] was. Knowing you had things covered allowed me to focus on my recovery without the added stress of work piling up, and because of you, we delivered an excellent project on time.\n\nI’d love to properly thank you for going above and beyond. Are you free sometime next week for lunch on me? My treat, of course! Let me know what day works best for you.\n\nThanks again for everything!\n\nBest,\n\n[Your Name]"
+    },
+    {
+      "id": "celpip-writing-008-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your company is considering a change to its work schedule policy. Which option do you prefer?",
+      "optionA": "A four-day work week with longer daily hours",
+      "optionB": "Standard five-day week but with two mandatory work-from-home days",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A community housing organisation is surveying residents about affordable housing needs. Describe the housing challenges in your area, who is most affected, and what solutions you think the government should prioritise.",
+      "modelAnswer": "I strongly advocate for Option A: a four-day work week with longer daily hours. This schedule offers unparalleled benefits for both employee well-being and company productivity.\n\nFirstly, the extended three-day weekend provides a significant boost to work-life balance. Employees gain an entire extra day for personal pursuits, family time, or self-care, leading to reduced stress and burnout. Imagine the ability to plan short trips, pursue hobbies, or simply rejuvenate without the pressure of an impending workday – this translates directly into a more engaged and motivated workforce.\n\nSecondly, a compressed work week can enhance focus and reduce distractions. Knowing that the work week is shorter, employees are more likely to maximize their productivity during working hours, leading to greater efficiency and output. Commute times are also reduced by 20%, saving both time and money.\n\nWhile Option B offers flexibility, mandatory work-from-home days can blur the lines between professional and personal life, potentially leading to 'always-on' syndrome and isolation from colleagues. The four-day week, conversely, clearly delineates work and leisure, fostering a healthier overall dynamic."
+    }
+  ]
+}

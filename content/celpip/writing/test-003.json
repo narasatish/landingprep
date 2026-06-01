@@ -1,0 +1,60 @@
+{
+  "id": "celpip-writing-003",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP Writing Practice Test 3",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks. Aim for 150–200 words per response. You will be assessed on content, vocabulary, grammar, and task fulfillment.",
+  "questions": [
+    {
+      "id": "celpip-writing-003-q1",
+      "taskNumber": 1,
+      "taskType": "email",
+      "title": "Email Writing",
+      "timeMinutes": 27,
+      "wordCountGuideline": "150–200 words",
+      "scenario": "You attended a local restaurant last week and were disappointed by the service and the quality of the food. You had made a reservation but the table was not ready for 45 minutes.",
+      "recipient": "the restaurant manager",
+      "bulletPoints": [
+        "Describe your experience in detail",
+        "State how the situation affected you",
+        "Request some form of compensation or resolution"
+      ],
+      "formatGuidance": "Include a subject line, a greeting, a structured body addressing all three bullet points, and a closing with your name.",
+      "rubric": [
+        "task fulfillment",
+        "coherence and cohesion",
+        "vocabulary",
+        "grammar",
+        "format"
+      ],
+      "modelAnswerNotes": "A strong response will address all three bullet points clearly, maintain an appropriate formal or semi-formal tone, and use varied vocabulary and accurate grammar.",
+      "prompt": "Your local community centre has recently cancelled a programme that you and many neighbours valued. Write a letter to the director expressing your disappointment, explaining the programme's value, and asking them to reconsider.",
+      "modelAnswer": "Dear [Restaurant Manager Name],\n\nI am writing to express my significant disappointment regarding a recent dining experience at your restaurant on Friday, October 27th, at 7:00 PM, under a reservation made in the name of Sarah Chen. My party and I were eagerly anticipating our visit, but unfortunately, it fell far short of expectations.\n\nDespite having a confirmed reservation, our table was not ready for an additional 45 minutes. This delay was particularly frustrating as we had tickets for a show afterwards, causing us considerable stress and rushing through our meal. When we were finally seated, the service remained slow and inattentive. Furthermore, the quality of the food was subpar; my salmon, for instance, was overcooked and dry, a stark contrast to the excellent reputation your establishment usually holds.\n\nThis experience not only wasted our valuable time but also detracted from what was meant to be a special evening out. I would appreciate it if you could consider offering some form of compensation, perhaps a voucher for a future meal or a refund for a portion of our bill, as a gesture of goodwill. I hope to hear from you soon regarding this matter.\n\nSincerely,\n\nSarah Chen"
+    },
+    {
+      "id": "celpip-writing-003-q2",
+      "taskNumber": 2,
+      "taskType": "survey_response",
+      "title": "Responding to Survey Questions",
+      "timeMinutes": 26,
+      "wordCountGuideline": "150–200 words",
+      "surveyPrompt": "Your neighbourhood community centre is planning a new programme. Which option do you think should be prioritised?",
+      "optionA": "A free after-school programme for children aged 6–12",
+      "optionB": "A free social programme for seniors aged 65 and older",
+      "formatGuidance": "Clearly state which option you prefer. Give at least two reasons with supporting details. You may briefly acknowledge the other option.",
+      "rubric": [
+        "task fulfillment",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "argument quality"
+      ],
+      "modelAnswerNotes": "A strong response will state a clear preference, develop two or more well-explained reasons, and conclude with a summary statement.",
+      "prompt": "A university is collecting feedback from the public about continuing education programmes. Describe what type of programme you would be most interested in, when you would prefer to attend, and what would encourage you to enrol.",
+      "modelAnswer": "I believe the neighbourhood community centre should prioritise Option A: a free after-school programme for children aged 6-12. This initiative offers more far-reaching and impactful benefits for the community as a whole.\n\nFirstly, such a programme directly addresses the critical need for safe and stimulating environments for children during unsupervised hours. Many working parents struggle to find affordable childcare, and this programme would alleviate financial burdens while ensuring children are engaged in constructive activities rather than potentially being exposed to negative influences. It fosters positive development, academic support through homework help, and social skills development crucial for their formative years.\n\nSecondly, investing in children is an investment in our future. By providing these resources, we are nurturing the next generation of community members, promoting healthy habits, and potentially reducing future social issues. While the needs of seniors are undoubtedly important, many already have access to various social groups and activities, or family support. The gap in accessible, high-quality after-school care for children, especially for lower-income families, is often more pronounced and has broader societal implications. Prioritising children’s well-being creates a stronger, more vibrant community for everyone in the long run."
+    }
+  ]
+}

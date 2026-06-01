@@ -1,0 +1,72 @@
+{
+  "id": "ielts-speaking-027",
+  "exam": "ielts",
+  "section": "speaking",
+  "type": "section",
+  "title": "IELTS Speaking Practice Test 27",
+  "durationSeconds": 840,
+  "questionCount": 3,
+  "instructions": "Record responses and review using the rubric.",
+  "questions": [
+    {
+      "id": "ielts-speaking-027-q01",
+      "questionType": "speaking_task",
+      "prompt": "Talk about your personal experience with language learning habits.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "language learning habits",
+      "fingerprint": "e01a56d605a0da8d13",
+      "modelAnswer": "Begin by directly answering the question with a clear statement. Add 2–3 specific personal details or experiences that support your answer. Use transitional phrases to connect ideas and finish with a brief concluding remark."
+    },
+    {
+      "id": "ielts-speaking-027-q02",
+      "questionType": "speaking_task",
+      "prompt": "Describe a situation where language learning habits affected a school, workplace, or community.",
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "language learning habits",
+      "fingerprint": "7392c7cf37b8b44304",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "ielts-speaking-027-q03",
+      "questionType": "speaking_task",
+      "prompt": "Discuss whether language learning habits will become more important in the future.",
+      "prepSeconds": 15,
+      "responseSeconds": 120,
+      "rubric": [
+        "fluency",
+        "coherence",
+        "vocabulary",
+        "grammar",
+        "pronunciation"
+      ],
+      "difficulty": "medium",
+      "topic": "language learning habits",
+      "fingerprint": "ba55988de97b220eb1",
+      "modelAnswer": "A strong response would clearly address the prompt with specific details, organised ideas, and natural-sounding English. Include an introduction, supporting points with examples, and a brief conclusion. Aim for fluency, accuracy, and coherent structure throughout."
+    }
+  ],
+  "fingerprints": [
+    "e01a56d605a0da8d13",
+    "7392c7cf37b8b44304",
+    "ba55988de97b220eb1"
+  ],
+  "variant": "academic"
+}

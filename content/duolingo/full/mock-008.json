@@ -1,0 +1,35 @@
+{
+  "id": "duolingo-full-008",
+  "exam": "duolingo",
+  "type": "full",
+  "title": "Duolingo English Test Full Mock Test 8",
+  "durationSeconds": 3600,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "adaptive",
+      "testId": "duolingo-adaptive-008",
+      "file": "duolingo/adaptive/test-008.json"
+    },
+    {
+      "section": "literacy",
+      "testId": "duolingo-literacy-008",
+      "file": "duolingo/literacy/test-008.json"
+    },
+    {
+      "section": "comprehension",
+      "testId": "duolingo-comprehension-008",
+      "file": "duolingo/comprehension/test-008.json"
+    },
+    {
+      "section": "conversation",
+      "testId": "duolingo-conversation-008",
+      "file": "duolingo/conversation/test-008.json"
+    },
+    {
+      "section": "production",
+      "testId": "duolingo-production-008",
+      "file": "duolingo/production/test-008.json"
+    }
+  ]
+}

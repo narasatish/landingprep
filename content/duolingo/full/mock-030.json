@@ -1,0 +1,35 @@
+{
+  "id": "duolingo-full-030",
+  "exam": "duolingo",
+  "type": "full",
+  "title": "Duolingo English Test Full Mock Test 30",
+  "durationSeconds": 3600,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "adaptive",
+      "testId": "duolingo-adaptive-030",
+      "file": "duolingo/adaptive/test-030.json"
+    },
+    {
+      "section": "literacy",
+      "testId": "duolingo-literacy-030",
+      "file": "duolingo/literacy/test-030.json"
+    },
+    {
+      "section": "comprehension",
+      "testId": "duolingo-comprehension-030",
+      "file": "duolingo/comprehension/test-030.json"
+    },
+    {
+      "section": "conversation",
+      "testId": "duolingo-conversation-030",
+      "file": "duolingo/conversation/test-030.json"
+    },
+    {
+      "section": "production",
+      "testId": "duolingo-production-030",
+      "file": "duolingo/production/test-030.json"
+    }
+  ]
+}

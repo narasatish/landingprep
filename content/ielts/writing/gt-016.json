@@ -1,0 +1,48 @@
+{
+  "id": "ielts-writing-gt-016",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 16 — Complaint Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "version": 1,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-016-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "complaint",
+      "letterSituation": "You stayed at a hotel during a recent business trip and paid a premium nightly rate. However, your room was considerably smaller than advertised on the hotel website, the air conditioning was not working, and the complimentary breakfast that was confirmed in your booking was not available.",
+      "prompt": "You stayed at a hotel during a recent business trip and paid a premium nightly rate. However, your room was considerably smaller than advertised on the hotel website, the air conditioning was not working, and the complimentary breakfast that was confirmed in your booking was not available.\n\nWrite a letter in response to this situation. In your letter:\n• describe your complaints in specific detail\n• explain the impact these problems had on your overall stay and business commitments\n• state clearly what compensation or remedial action you expect from the hotel management\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should open with an appropriate greeting, address each bullet point in a separate paragraph with specific detail, maintain the correct register throughout, and close with a suitable sign-off.",
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "complaint"
+    },
+    {
+      "id": "ielts-writing-gt-016-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "The global hospitality and tourism industry has expanded rapidly in recent decades. What are the benefits and drawbacks of this rapid growth for local communities in popular tourist destinations?",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position supported by well-developed arguments, relevant specific examples, and a logical structure including a focused introduction, detailed body paragraphs, and a concise conclusion.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "complaint"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "duolingo-full-025",
+  "exam": "duolingo",
+  "type": "full",
+  "title": "Duolingo English Test Full Mock Test 25",
+  "durationSeconds": 3600,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "adaptive",
+      "testId": "duolingo-adaptive-025",
+      "file": "duolingo/adaptive/test-025.json"
+    },
+    {
+      "section": "literacy",
+      "testId": "duolingo-literacy-025",
+      "file": "duolingo/literacy/test-025.json"
+    },
+    {
+      "section": "comprehension",
+      "testId": "duolingo-comprehension-025",
+      "file": "duolingo/comprehension/test-025.json"
+    },
+    {
+      "section": "conversation",
+      "testId": "duolingo-conversation-025",
+      "file": "duolingo/conversation/test-025.json"
+    },
+    {
+      "section": "production",
+      "testId": "duolingo-production-025",
+      "file": "duolingo/production/test-025.json"
+    }
+  ]
+}

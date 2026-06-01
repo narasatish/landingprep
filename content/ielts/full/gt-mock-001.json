@@ -1,0 +1,27 @@
+{
+  "id": "ielts-full-gt-001",
+  "exam": "ielts",
+  "type": "full_mock",
+  "variant": "general_training",
+  "title": "IELTS General Training Full Mock Test 1",
+  "durationSeconds": 10800,
+  "instructions": "This is a full-length IELTS General Training mock test. It includes all four sections: Listening, Reading, Writing, and Speaking. Complete each section within the allotted time. Do not move between sections unless instructed.",
+  "sections": [
+    {
+      "section": "listening",
+      "file": "ielts/listening/test-031.json"
+    },
+    {
+      "section": "reading",
+      "file": "ielts/reading/test-031.json"
+    },
+    {
+      "section": "writing",
+      "file": "ielts/writing/gt-001.json"
+    },
+    {
+      "section": "speaking",
+      "file": "ielts/speaking/test-001.json"
+    }
+  ]
+}

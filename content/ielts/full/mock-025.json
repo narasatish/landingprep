@@ -1,0 +1,30 @@
+{
+  "id": "ielts-full-025",
+  "exam": "ielts",
+  "type": "full",
+  "title": "IELTS Full Mock Test 25",
+  "durationSeconds": 9900,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "ielts-listening-025",
+      "file": "ielts/listening/test-025.json"
+    },
+    {
+      "section": "reading",
+      "testId": "ielts-reading-025",
+      "file": "ielts/reading/test-025.json"
+    },
+    {
+      "section": "writing",
+      "testId": "ielts-writing-025",
+      "file": "ielts/writing/test-025.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "ielts-speaking-025",
+      "file": "ielts/speaking/test-025.json"
+    }
+  ]
+}

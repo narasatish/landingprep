@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-040",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 40",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-040-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a note to your building manager asking for clarification on the recycling programme.",
+      "modelAnswer": "I strongly advocate for Option A, which posits that a balanced approach to technology integration, focusing on digital literacy and critical thinking, is most beneficial for students. This approach is superior because it equips students with essential skills for both academic success and future employment, rather than merely introducing tools.\n\nFirstly, fostering digital literacy ensures students can discern credible information from the vast online landscape. For instance, teaching them to evaluate sources for bias and accuracy, rather than simply having them use a search engine, prepares them for university-level research and informed decision-making in life. This goes beyond basic operational skills, cultivating a deeper understanding of the digital world.\n\nSecondly, emphasizing critical thinking alongside technology use transforms students from passive consumers into active creators and problem-solvers. Instead of merely typing an essay on a word processor, they might use collaborative online tools to analyze data, brainstorm solutions to complex problems, and present their findings creatively. This develops higher-order thinking skills crucial for innovation and adaptability in a rapidly changing world.\n\nOption B, focusing solely on access to cutting-edge technology, while seemingly progressive, falls short by neglecting the pedagogical framework necessary for effective learning. Without the critical skills to utilize these tools meaningfully, students might merely engage in superficial interactions or become proficient in obsolete software, rather than developing transferable intellectual capabilities. Therefore, a balanced approach is undoubtedly the most advantageous.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "recycling and composting in Canada",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-040-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short message to a neighbour explaining why it is important to sort recyclables correctly.",
+      "modelAnswer": "I strongly advocate for Option A: Implementing a robust mentorship program for new employees. This approach offers unparalleled benefits for both individual growth and overall organizational success.\n\nFirstly, a structured mentorship program fosters accelerated skill development and knowledge transfer. New hires, often overwhelmed by new systems and cultural nuances, can quickly gain practical insights and best practices from experienced colleagues. For instance, a junior marketing associate mentored by a senior manager can learn effective campaign strategies and client communication techniques far more rapidly than through self-study or generic training modules alone. This direct guidance reduces the learning curve significantly, allowing new employees to become productive contributors much sooner.\n\nSecondly, mentorship programs significantly enhance employee retention and engagement. When new employees feel supported, valued, and connected to their colleagues, their sense of belonging and commitment to the organization increases. This personalized attention combats the isolation often felt by newcomers, reducing early attrition rates. Conversely, simply offering more training workshops (Option B) often lacks the individualized support and relationship-building crucial for long-term engagement. While workshops are valuable for specific skill acquisition, they don't address the broader integration and emotional support needs that a mentorship program inherently provides. Therefore, Option A is a more holistic and impactful investment.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "recycling and composting in Canada",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

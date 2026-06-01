@@ -1,0 +1,81 @@
+{
+  "id": "ielts-writing-014",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 14",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-014-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The table shows data on car ownership and public transport use in five cities in 2023. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "transport",
+      "modelAnswer": "The table presents data on car ownership rates and daily public transport usage across five different cities in 2023. Overall, there is a clear inverse relationship between car ownership and public transport use, with cities having fewer cars per capita generally showing higher public transport ridership. Dubai stands out with the highest car ownership, while Tokyo leads significantly in public transport use.\n\nDubai recorded the highest number of cars per 1000 people, at 700, which correlates with the lowest daily public transport usage among the cities, at 1,500 thousand users. New York and London show moderate figures for both categories; New York has 420 cars per 1000 people and 5,800 thousand public transport users, while London has 350 cars per 1000 people and 4,500 thousand users daily.\n\nIn contrast, cities with lower car ownership demonstrate substantially higher reliance on public transport. Singapore has the lowest car ownership rate at 180 cars per 1000 people and a significant 3,800 thousand daily public transport users. Tokyo exemplifies this trend most dramatically, with only 280 cars per 1000 people, yet it boasts by far the highest daily public transport usage, accommodating 12,000 thousand users, which is more than double that of New York, the next highest.",
+      "visual": {
+        "chartType": "table",
+        "title": "Car Ownership and Public Transport Use in Five Cities (2023)",
+        "headers": [
+          "City",
+          "Cars per 1000 People",
+          "Daily Public Transport Users (thousands)"
+        ],
+        "rows": [
+          [
+            "London",
+            "350",
+            "4500"
+          ],
+          [
+            "New York",
+            "420",
+            "5800"
+          ],
+          [
+            "Tokyo",
+            "280",
+            "12000"
+          ],
+          [
+            "Dubai",
+            "700",
+            "1500"
+          ],
+          [
+            "Singapore",
+            "180",
+            "3800"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-014-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Some people argue that governments should invest more money in developing public transport to reduce traffic congestion in cities; others think building more roads is the better solution. Discuss both views and give your own opinion.",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "transport",
+      "modelAnswer": "The escalating problem of urban traffic congestion has led to a debate regarding the most effective governmental intervention. While some advocate for substantial investment in public transport infrastructure, others contend that expanding road networks offers a superior remedy. This essay will discuss both perspectives before arguing that prioritizing public transport is the more sustainable and beneficial approach.\n\nProponents of enhanced public transport argue that it directly addresses the root causes of congestion by reducing the number of private vehicles on the road. A comprehensive, efficient, and affordable public system, encompassing buses, trams, and trains, encourages commuters to leave their cars at home. For instance, cities like Zurich have successfully minimized traffic by creating an integrated public transport network that is so reliable and extensive that car ownership becomes largely unnecessary for daily travel. This approach not only alleviates traffic but also contributes to reduced air pollution and a more liveable urban environment.\n\nConversely, those who favour road expansion believe that increasing capacity is the most direct way to accommodate growing vehicle numbers. They argue that new roads, bypasses, and multi-lane highways can absorb more cars, thereby smoothing traffic flow. A classic example is the expansion of motorways around cities like Los Angeles, which, despite massive investment, often sees new lanes quickly fill with additional traffic, a phenomenon known as induced demand. This suggests that simply building more roads often provides only a temporary reprieve, failing to offer a long-term solution to congestion.\n\nIn conclusion, while road construction might offer short-term relief, it frequently stimulates further demand, negating its initial benefits. Investing heavily in public transport, however, offers a more sustainable and environmentally conscious solution by fundamentally altering commuting habits. Therefore, governments should unequivocally prioritize the development of robust public transport systems to effectively tackle urban traffic congestion."
+    }
+  ],
+  "variant": "academic"
+}

@@ -1,0 +1,192 @@
+{
+  "id": "celpip-speaking-015",
+  "exam": "celpip",
+  "section": "speaking",
+  "type": "section",
+  "title": "CELPIP Speaking Practice Test 15",
+  "durationSeconds": 1200,
+  "questionCount": 8,
+  "instructions": "You will complete 8 speaking tasks. Read the prompt carefully, use your preparation time, then speak clearly and at a natural pace. Aim to fill the response time fully.",
+  "scoringDimensions": [
+    "Content and Coherence",
+    "Vocabulary",
+    "Listenability",
+    "Task Fulfillment"
+  ],
+  "questions": [
+    {
+      "id": "celpip-speaking-015-q1",
+      "taskNumber": 1,
+      "taskType": "giving_advice",
+      "title": "Giving Advice",
+      "prepSeconds": 30,
+      "responseSeconds": 90,
+      "prompt": "A friend who recently moved to Canada is struggling to make friends and feels isolated in their new city. They have been spending most of their time at home. What advice would you give them to help build a social life and connect with their community?",
+      "sceneDescription": null,
+      "optionA": null,
+      "optionB": null,
+      "tip": "Suggest 2–3 specific and practical actions. Explain why each would help.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Acknowledge the situation, then offer 2–3 practical and specific suggestions. Use conditional or modal language (e.g., 'you might consider', 'it would help to'). Close with an encouraging statement."
+    },
+    {
+      "id": "celpip-speaking-015-q2",
+      "taskNumber": 2,
+      "taskType": "personal_experience",
+      "title": "Talking About a Personal Experience",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "Describe a time when you had to adapt to a new situation or environment. What was the situation, how did you cope, and what did you learn from the experience?",
+      "sceneDescription": null,
+      "optionA": null,
+      "optionB": null,
+      "tip": "Use specific details. Organise your response with a clear beginning, middle, and reflection.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "celpip-speaking-015-q3",
+      "taskNumber": 3,
+      "taskType": "describing_a_scene",
+      "title": "Describing a Scene",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "Describe everything you can see in the scene in as much detail as possible.",
+      "sceneDescription": "A busy Saturday morning farmers' market in a town square. There are colourful stalls selling fresh vegetables, baked goods, and flowers. A family is browsing the vegetable stall on the left. A musician is playing guitar near the fountain in the centre. A child is pointing at some strawberries while their parent holds a cloth bag. People are chatting and the square is crowded.",
+      "optionA": null,
+      "optionB": null,
+      "tip": "Describe the foreground, background, people, activities, and atmosphere.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Organise your description logically — from general to specific, or following a spatial/temporal sequence. Use vivid, precise vocabulary and vary your sentence structure. Ensure your listener can visualise or understand what you're describing without seeing it."
+    },
+    {
+      "id": "celpip-speaking-015-q4",
+      "taskNumber": 4,
+      "taskType": "making_predictions",
+      "title": "Making Predictions",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "Based on what you see, describe what you think is happening and what might happen next. Give at least two predictions.",
+      "sceneDescription": "A woman in a business suit is standing outside an office building, looking at her phone with a concerned expression. A taxi is parked at the kerb with its door open. She is carrying a laptop bag and what appears to be an interview portfolio folder.",
+      "optionA": null,
+      "optionB": null,
+      "tip": "Use future tense and give reasons for your predictions based on what you see.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "id": "celpip-speaking-015-q5",
+      "taskNumber": 5,
+      "taskType": "comparing_and_persuading",
+      "title": "Comparing and Persuading",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "Compare these two living options and persuade your partner that one is better than the other. Give clear reasons for your choice.",
+      "sceneDescription": null,
+      "optionA": {
+        "label": "Option A",
+        "description": "Live in a small town — quiet environment, lower cost of living, close community, but fewer job opportunities and less access to services."
+      },
+      "optionB": {
+        "label": "Option B",
+        "description": "Live in a large city — wide job market, excellent public services and transit, but higher living costs and more crowded and fast-paced."
+      },
+      "tip": "Acknowledge the strengths of both, then argue convincingly for one.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Introduce both items being compared. Discuss key similarities and differences, using comparative language (e.g., 'while', 'whereas', 'on the other hand'). Conclude with an overall assessment or personal preference."
+    },
+    {
+      "id": "celpip-speaking-015-q6",
+      "taskNumber": 6,
+      "taskType": "dealing_with_situation",
+      "title": "Dealing with a Difficult Situation",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "You are a team leader at work. One of your team members has been consistently arriving late and missing deadlines, which is affecting the rest of the team. You need to speak with this person. What would you say, and how would you handle the conversation?",
+      "sceneDescription": null,
+      "optionA": null,
+      "optionB": null,
+      "tip": "Be diplomatic but clear. Acknowledge, explain the impact, and offer support or a path forward.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Begin by directly answering the question with a clear statement. Add 2–3 specific personal details or experiences that support your answer. Use transitional phrases to connect ideas and finish with a brief concluding remark."
+    },
+    {
+      "id": "celpip-speaking-015-q7",
+      "taskNumber": 7,
+      "taskType": "expressing_opinions",
+      "title": "Expressing Opinions",
+      "prepSeconds": 30,
+      "responseSeconds": 90,
+      "prompt": "Some people believe that university education should be free for all citizens, funded entirely by the government. Others believe students should pay tuition fees because they benefit personally from higher education. What is your opinion? Give specific reasons and examples to support your view.",
+      "sceneDescription": null,
+      "optionA": null,
+      "optionB": null,
+      "tip": "State your position clearly, give 2–3 reasons, and acknowledge the opposing view briefly.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "id": "celpip-speaking-015-q8",
+      "taskNumber": 8,
+      "taskType": "unusual_situation",
+      "title": "Describing an Unusual Situation",
+      "prepSeconds": 30,
+      "responseSeconds": 60,
+      "prompt": "Describe what is unusual about this situation and suggest reasons why the family might have done this. What do you think is going on?",
+      "sceneDescription": "A photograph of a living room where everything — the sofa, the bookshelf, the TV, and even the plant — is wrapped in bubble wrap. The family appears to have done this deliberately. A child is sitting on the bubble-wrap-covered sofa looking content.",
+      "optionA": null,
+      "optionB": null,
+      "tip": "Be creative but logical. Describe the scene, explain what is strange, and give at least two possible explanations.",
+      "rubric": [
+        "content_coherence",
+        "vocabulary",
+        "listenability",
+        "task_fulfillment"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    }
+  ]
+}

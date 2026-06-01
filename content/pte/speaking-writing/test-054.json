@@ -1,0 +1,729 @@
+{
+  "id": "pte-speaking-writing-054",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 54",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-054-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Understanding Mental Health Stigma”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "mental health awareness",
+      "modelAnswer": "Mental health awareness campaigns play a crucial role in destigmatizing conditions often misunderstood or ignored. By fostering open dialogue and providing accurate information, these initiatives encourage individuals to seek help without fear of judgment. This collective effort is vital for creating supportive communities where mental well-being is prioritized and accessible resources are readily available for everyone struggling.",
+      "readText": "Mental health awareness campaigns play a crucial role in destigmatizing conditions often misunderstood or ignored. By fostering open dialogue and providing accurate information, these initiatives encourage individuals to seek help without fear of judgment. This collective effort is vital for creating supportive communities where mental well-being is prioritized and accessible resources are readily available for everyone struggling."
+    },
+    {
+      "id": "pte-speaking-writing-054-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Support for Mental Health”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "Early intervention and community support are vital for improving mental health outcomes.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "mental health awareness",
+      "modelAnswer": "Early intervention and community support are vital for improving mental health outcomes.",
+      "audioScript": "Early intervention and community support are vital for improving mental health outcomes."
+    },
+    {
+      "id": "pte-speaking-writing-054-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Awareness of Mental Health Support Services (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "mental health awareness",
+      "modelAnswer": "This bar chart illustrates awareness levels of various mental health support services in 2023. Crisis Hotlines show the highest awareness at 85% of respondents, indicating strong public knowledge. Private Therapy Clinics also demonstrate high recognition at 75%. In contrast, Local Community Centers have the lowest awareness, only reaching 40%. Workplace EAPs are known by 65% and Online Therapy Platforms by 50%. Overall, while crisis support is well-known, community-based services require significant improvement in public awareness.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Awareness of Mental Health Support Services (2023)",
+        "yLabel": "Percentage of Respondents",
+        "xAxis": [
+          "Workplace EAP",
+          "Online Therapy Platforms",
+          "Local Community Centers",
+          "Private Therapy Clinics",
+          "Crisis Hotlines"
+        ],
+        "series": [
+          {
+            "label": "Awareness",
+            "values": [
+              65,
+              50,
+              40,
+              75,
+              85
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-054-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Workplace Well-being Programs”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "mental health awareness",
+      "modelAnswer": "The lecture discussed how many companies are now implementing comprehensive workplace wellness programs. These programs often include access to confidential counseling, stress management workshops, and flexible working arrangements. The main goal is to create a supportive environment for employees, which helps reduce burnout and improve productivity. Ultimately, these initiatives lead to higher employee retention and a more positive organizational culture, demonstrating a strong return on investment for businesses.",
+      "audioScript": "Many progressive companies are now implementing comprehensive workplace wellness programs designed to boost employee mental health and overall well-being. These initiatives often include access to confidential counseling services, stress management workshops, and flexible working arrangements. The goal is to create a supportive environment where employees feel valued, reducing burnout and improving productivity. Studies show a direct correlation between these programs and higher employee retention rates, alongside a more positive organizational culture, demonstrating a clear return on investment for businesses that prioritize their staff's psychological welfare.",
+      "keyPoints": [
+        "Companies implementing wellness programs",
+        "Counseling, workshops, flexible work included",
+        "Reduces burnout, improves productivity",
+        "Higher retention, positive culture"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-054-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “Mental Health Professional”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Psychiatrist",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "mental health awareness",
+      "modelAnswer": "Psychiatrist",
+      "audioScript": "What kind of medical professional specializes in treating mental illnesses?"
+    },
+    {
+      "id": "pte-speaking-writing-054-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Impact of Social Media on Mental Health”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "mental health awareness",
+      "wordTarget": 75,
+      "modelAnswer": "Social media significantly impacts adolescent mental health by fostering cyberbullying, unrealistic standards, and social comparison, which increases anxiety and depression; thus, digital literacy is crucial for mitigating these negative effects.",
+      "readText": "The pervasive influence of social media platforms on adolescent mental health is a growing concern for researchers and educators alike. While these platforms offer avenues for connection and self-expression, they also expose young people to cyberbullying, unrealistic beauty standards, and constant social comparison, leading to increased anxiety, depression, and low self-esteem. Developing digital literacy skills and promoting critical engagement with online content are essential strategies to mitigate the negative impacts and foster healthier online interactions among youth, ensuring a more balanced digital experience."
+    },
+    {
+      "id": "pte-speaking-writing-054-q07",
+      "questionType": "write_essay",
+      "prompt": "Some people believe that young people should be required to do community service. Others think this should be optional. Discuss both views and give your opinion.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "mental health awareness",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Green Infrastructure Benefits”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q08",
+      "modelAnswer": "Sustainable urban planning increasingly integrates green infrastructure, such as parks, green roofs, and permeable pavements. These elements help manage stormwater, reduce urban heat island effects, and improve air quality. Beyond environmental benefits, green spaces enhance biodiversity and provide residents with vital recreational areas, fostering healthier communities. This holistic approach ensures cities are resilient and livable for future generations, balancing ecological needs with human well-being effectively.",
+      "readText": "Sustainable urban planning increasingly integrates green infrastructure, such as parks, green roofs, and permeable pavements. These elements help manage stormwater, reduce urban heat island effects, and improve air quality. Beyond environmental benefits, green spaces enhance biodiversity and provide residents with vital recreational areas, fostering healthier communities. This holistic approach ensures cities are resilient and livable for future generations, balancing ecological needs with human well-being effectively."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Bilingualism and Cognition”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q09",
+      "modelAnswer": "Research consistently demonstrates that bilingualism offers significant cognitive advantages beyond mere linguistic proficiency. Individuals fluent in two languages often exhibit enhanced problem-solving skills, improved multitasking abilities, and a greater capacity for selective attention. These benefits are attributed to the constant mental exercise involved in switching between languages and inhibiting one while using the other. This cognitive flexibility can even delay the onset of age-related cognitive decline, making bilingualism a powerful asset.",
+      "readText": "Research consistently demonstrates that bilingualism offers significant cognitive advantages beyond mere linguistic proficiency. Individuals fluent in two languages often exhibit enhanced problem-solving skills, improved multitasking abilities, and a greater capacity for selective attention. These benefits are attributed to the constant mental exercise involved in switching between languages and inhibiting one while using the other. This cognitive flexibility can even delay the onset of age-related cognitive decline, making bilingualism a powerful asset."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Microbiomes and Health”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q10",
+      "modelAnswer": "The human microbiome, a complex ecosystem of microorganisms residing within and on our bodies, is increasingly recognized as fundamental to overall health. These microbial communities play vital roles in digestion, immune system development, and even mental well-being. Disruptions to the delicate balance of the microbiome have been linked to various diseases, from inflammatory bowel conditions to obesity. Understanding and nurturing a healthy microbiome is therefore a key frontier in modern medicine and preventative care.",
+      "readText": "The human microbiome, a complex ecosystem of microorganisms residing within and on our bodies, is increasingly recognized as fundamental to overall health. These microbial communities play vital roles in digestion, immune system development, and even mental well-being. Disruptions to the delicate balance of the microbiome have been linked to various diseases, from inflammatory bowel conditions to obesity. Understanding and nurturing a healthy microbiome is therefore a key frontier in modern medicine and preventative care."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Digital Cultural Preservation”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q11",
+      "modelAnswer": "In the digital age, preserving cultural heritage faces both new challenges and unprecedented opportunities. Digitalization allows for the creation of vast archives of artifacts, texts, and oral histories, making them accessible globally and ensuring their long-term survival against physical degradation or conflict. However, issues of digital obsolescence, data security, and equitable access must be carefully managed to truly harness technology's potential for safeguarding our shared human legacy for future generations.",
+      "readText": "In the digital age, preserving cultural heritage faces both new challenges and unprecedented opportunities. Digitalization allows for the creation of vast archives of artifacts, texts, and oral histories, making them accessible globally and ensuring their long-term survival against physical degradation or conflict. However, issues of digital obsolescence, data security, and equitable access must be carefully managed to truly harness technology's potential for safeguarding our shared human legacy for future generations."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Neuroplasticity and Learning”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q12",
+      "modelAnswer": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections, underpins the concept of lifelong learning. This inherent adaptability allows individuals to acquire new skills, knowledge, and even recover from brain injuries throughout their entire lifespan. Engaging in novel experiences, challenging cognitive tasks, and continuous education actively promotes neuroplastic changes, demonstrating that the brain remains a dynamic and evolving organ, capable of growth at any age.",
+      "readText": "Neuroplasticity, the brain's remarkable ability to reorganize itself by forming new neural connections, underpins the concept of lifelong learning. This inherent adaptability allows individuals to acquire new skills, knowledge, and even recover from brain injuries throughout their entire lifespan. Engaging in novel experiences, challenging cognitive tasks, and continuous education actively promotes neuroplastic changes, demonstrating that the brain remains a dynamic and evolving organ, capable of growth at any age."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Urban heat islands exacerbate city temperatures, demanding effective mitigation strategies.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Urban Heat Islands”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q13",
+      "modelAnswer": "Urban heat islands exacerbate city temperatures, demanding effective mitigation strategies.",
+      "audioScript": "Urban heat islands exacerbate city temperatures, demanding effective mitigation strategies."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Financial literacy is crucial for individuals to achieve economic inclusion and stability.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Financial Literacy Importance”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q14",
+      "modelAnswer": "Financial literacy is crucial for individuals to achieve economic inclusion and stability.",
+      "audioScript": "Financial literacy is crucial for individuals to achieve economic inclusion and stability."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Nanotechnology is revolutionizing materials science with its innovative applications and properties.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Nanotechnology Advances”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q15",
+      "modelAnswer": "Nanotechnology is revolutionizing materials science with its innovative applications and properties.",
+      "audioScript": "Nanotechnology is revolutionizing materials science with its innovative applications and properties."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The science of sleep directly impacts memory consolidation and overall cognitive function.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Sleep and Memory”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q16",
+      "modelAnswer": "The science of sleep directly impacts memory consolidation and overall cognitive function.",
+      "audioScript": "The science of sleep directly impacts memory consolidation and overall cognitive function."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Digital literacy is an essential skill for students navigating modern education.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Digital Literacy in Schools”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q17",
+      "modelAnswer": "Digital literacy is an essential skill for students navigating modern education.",
+      "audioScript": "Digital literacy is an essential skill for students navigating modern education."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Antibiotic resistance poses a significant global health threat requiring urgent policy changes.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Antibiotic Resistance”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q18",
+      "modelAnswer": "Antibiotic resistance poses a significant global health threat requiring urgent policy changes.",
+      "audioScript": "Antibiotic resistance poses a significant global health threat requiring urgent policy changes."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Ocean acidification severely threatens marine biodiversity and delicate ecosystems worldwide.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ocean Acidification”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q19",
+      "modelAnswer": "Ocean acidification severely threatens marine biodiversity and delicate ecosystems worldwide.",
+      "audioScript": "Ocean acidification severely threatens marine biodiversity and delicate ecosystems worldwide."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The neuroscience of creativity explores how our brains generate novel ideas.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Neuroscience of Creativity”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q20",
+      "modelAnswer": "The neuroscience of creativity explores how our brains generate novel ideas.",
+      "audioScript": "The neuroscience of creativity explores how our brains generate novel ideas."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Global water scarcity demands urgent conservation efforts and innovative solutions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Water Scarcity Solutions”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q21",
+      "modelAnswer": "Global water scarcity demands urgent conservation efforts and innovative solutions.",
+      "audioScript": "Global water scarcity demands urgent conservation efforts and innovative solutions."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Flowchart of the Scientific Method\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q22",
+      "modelAnswer": "This table outlines the seven key steps of the scientific method, from initial observation to final communication. Each step has a clear description and a key action. It begins with 'Observation' and 'Research', focusing on information gathering. The core involves 'Hypothesis' formulation, followed by 'Experiment' for testing, and 'Analysis' for data interpretation. The 'Conclusion' step determines if the hypothesis is supported, leading to 'Decision Making'. Finally, 'Communication' is crucial for disseminating findings, highlighting its importance in scientific progress. This systematic approach ensures rigorous inquiry and verifiable results.",
+      "visual": {
+        "chartType": "table",
+        "title": "Flowchart of the Scientific Method",
+        "headers": [
+          "Step",
+          "Description",
+          "Key Action"
+        ],
+        "rows": [
+          [
+            "1. Observation",
+            "Notice a phenomenon or problem.",
+            "Questioning"
+          ],
+          [
+            "2. Research",
+            "Gather background information.",
+            "Information Gathering"
+          ],
+          [
+            "3. Hypothesis",
+            "Propose a testable explanation.",
+            "Formulation"
+          ],
+          [
+            "4. Experiment",
+            "Design and conduct a test.",
+            "Testing"
+          ],
+          [
+            "5. Analysis",
+            "Examine results and data.",
+            "Interpretation"
+          ],
+          [
+            "6. Conclusion",
+            "Determine if hypothesis is supported.",
+            "Decision Making"
+          ],
+          [
+            "7. Communication",
+            "Share findings with others.",
+            "Dissemination"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Key Components and Outputs of Photosynthesis\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q23",
+      "modelAnswer": "The table illustrates the key components and outputs of photosynthesis, detailing two main process stages. The first stage, Light-Dependent Reactions, requires sunlight and water, producing oxygen, ATP, and NADPH, and occurs in the thylakoid membranes. The second stage, Light-Independent Reactions, also known as the Calvin Cycle, requires carbon dioxide, ATP, and NADPH. This stage produces glucose, ADP, and NADP+, taking place in the stroma. A clear distinction is the input of sunlight and water in the first stage versus carbon dioxide in the second, leading to different critical outputs like oxygen and glucose respectively.",
+      "visual": {
+        "chartType": "table",
+        "title": "Key Components and Outputs of Photosynthesis",
+        "headers": [
+          "Process Stage",
+          "Inputs Required",
+          "Outputs Produced",
+          "Location"
+        ],
+        "rows": [
+          [
+            "Light-Dependent Reactions",
+            "Sunlight, Water (H2O)",
+            "Oxygen (O2), ATP, NADPH",
+            "Thylakoid Membranes"
+          ],
+          [
+            "Light-Independent Reactions (Calvin Cycle)",
+            "Carbon Dioxide (CO2), ATP, NADPH",
+            "Glucose (C6H12O6), ADP, NADP+",
+            "Stroma"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Population Growth Projections (Billions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q24",
+      "modelAnswer": "The line chart illustrates global population growth projections from 1950 to 2100. In 1950, the world population was approximately 2.5 billion. It shows a significant increase over the decades, reaching 6.1 billion in 2000 and projected to be 8.0 billion by 2025. The population is expected to peak around 10.9 billion in 2100, showing a steady but slowing growth rate in the later years. This trend indicates a continuous rise in global population, nearly quadrupling from 1950 to 2100.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Population Growth Projections (Billions)",
+        "yLabel": "Population (Billions)",
+        "xAxis": [
+          "1950",
+          "1975",
+          "2000",
+          "2025",
+          "2050",
+          "2075",
+          "2100"
+        ],
+        "series": [
+          {
+            "label": "Population",
+            "values": [
+              2.5,
+              4.1,
+              6.1,
+              8,
+              9.7,
+              10.5,
+              10.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a bar chart titled \"Top 5 Languages by Native Speakers Worldwide (Millions)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q25",
+      "modelAnswer": "This bar chart illustrates the top five languages by native speakers worldwide, measured in millions. Mandarin Chinese is clearly the most spoken language, with an impressive 920 million native speakers. Following this, Spanish ranks second with 475 million, and English third with 380 million. Hindi and Arabic complete the top five, having 345 million and 310 million native speakers respectively. The chart highlights a significant disparity, as Mandarin Chinese has almost three times more native speakers than Arabic, the fifth language on the list, demonstrating its global prevalence.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Top 5 Languages by Native Speakers Worldwide (Millions)",
+        "yLabel": "Number of Native Speakers (Millions)",
+        "xAxis": [
+          "Mandarin Chinese",
+          "Spanish",
+          "English",
+          "Hindi",
+          "Arabic"
+        ],
+        "series": [
+          {
+            "label": "Native Speakers",
+            "values": [
+              920,
+              475,
+              380,
+              345,
+              310
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Ocean Surface pH Levels (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q26",
+      "modelAnswer": "This line graph illustrates the trend of global ocean surface pH levels from 1990 to 2020. The Y-axis represents the pH level, while the X-axis shows the years. The data clearly indicates a consistent decline in ocean pH over three decades. Starting at approximately 8.10 in 1990, the pH level steadily decreased, reaching its lowest point of 7.98 by 2020. This represents a significant drop of 0.12 pH units, highlighting a worrying trend of ocean acidification. The graph effectively communicates this environmental change.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Ocean Surface pH Levels (1990-2020)",
+        "yLabel": "pH Level",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Average Ocean pH",
+            "values": [
+              8.1,
+              8.08,
+              8.06,
+              8.04,
+              8.02,
+              8,
+              7.98
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “The Universe and Dark Matter”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q27",
+      "modelAnswer": "The lecture discussed the critical role of dark matter in the universe's formation. Although dark matter cannot be directly observed, its gravitational effects are clearly evident in galaxy rotation and cosmic structure. It accounts for about 27% of the universe's mass, significantly more than visible matter. Scientists believe dark matter's gravitational pull was essential for galaxies to form, providing the necessary scaffolding for ordinary matter to coalesce into the stars and galaxies we see today.",
+      "audioScript": "The formation of the universe, as we understand it, is deeply intertwined with the mysterious concept of dark matter. While we cannot directly observe dark matter, its gravitational effects are evident in the rotation of galaxies and the large-scale structure of the cosmos. Scientists estimate that dark matter constitutes about 27% of the universe's total mass-energy content, far outweighing visible matter. Without its gravitational pull, galaxies would simply fly apart. Current theories suggest it provided the gravitational scaffolding for ordinary matter to coalesce into stars and galaxies, making it a critical, yet elusive, component in cosmic evolution.",
+      "keyPoints": [
+        "Dark matter crucial for universe formation",
+        "Cannot observe directly, but its gravity is seen",
+        "Makes up 27% of universe's mass-energy",
+        "Provided scaffolding for galaxies to form"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Effective Communication Strategies”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q28",
+      "modelAnswer": "The lecture emphasized that effective communication is essential for success in all aspects of life. It involves not just verbal content but also non-verbal cues like body language and tone. Active listening is equally important to avoid misunderstandings. The speaker also highlighted adapting one's communication style to the audience and being culturally sensitive to ensure messages are well-received and interactions are productive. Overall, communication is a complex, multifaceted skill.",
+      "audioScript": "Effective communication is fundamental to success in both personal and professional spheres. It's not merely about what you say, but how you say it, including non-verbal cues like body language and tone of voice. Active listening is equally vital; truly understanding the other person's perspective minimizes misunderstandings. Furthermore, adapting your communication style to your audience ensures your message resonates effectively. In today's diverse world, cultural sensitivity also plays a significant role in bridging gaps and fostering productive interactions, making communication a complex, multifaceted skill.",
+      "keyPoints": [
+        "Communication crucial for success",
+        "Includes non-verbal cues, active listening",
+        "Adapt style to audience",
+        "Cultural sensitivity important"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Language",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Communication Medium”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q29",
+      "modelAnswer": "Language",
+      "audioScript": "What is the primary medium for transmitting information and ideas between people?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "One-way",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “One-Way Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q30",
+      "modelAnswer": "One-way",
+      "audioScript": "What type of communication involves a sender transmitting a message without expecting immediate feedback?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Messaging app",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Digital Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q31",
+      "modelAnswer": "Messaging app",
+      "audioScript": "What common digital platform allows for instant text-based communication between individuals?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Non-verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Non-Verbal Communication”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-054-q32",
+      "modelAnswer": "Non-verbal",
+      "audioScript": "What aspect of communication involves gestures, facial expressions, and body language?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Digital Transformation in Education”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-054-q33",
+      "modelAnswer": "Digital technology is transforming education by offering interactive tools, personalized learning, and global access, yet challenges like the digital divide and educator training must be addressed to ensure equitable and effective learning environments.",
+      "readText": "The rapid advancement of digital technology has profoundly reshaped educational practices across all levels. From interactive online courses and virtual reality simulations to personalized learning algorithms, technology offers unprecedented opportunities to enhance engagement, tailor content to individual needs, and provide access to education globally. However, this transformation also presents challenges, including the digital divide, ensuring equitable access, and the necessity for educators to continuously update their pedagogical skills. Balancing innovation with inclusivity is crucial to fully leverage technology's potential in creating more dynamic and effective learning environments for the 21st century."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Digital communication technologies, such as social media and instant messaging, have fundamentally altered how individuals interact. Discuss the positive and negative impacts of these technologies on human communication and relationships. Provide examples to support your arguments.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-054-q34",
+      "modelAnswer": "The advent of digital communication technologies has undeniably revolutionized human interaction, presenting a complex interplay of both beneficial and detrimental effects on communication and relationships. On one hand, these technologies offer unparalleled opportunities for connectivity and maintaining social ties across geographical distances. Platforms like WhatsApp and Facebook enable individuals to stay in touch with friends and family worldwide, fostering a sense of belonging and community that was previously difficult to sustain. They facilitate immediate information sharing, collaborative projects, and the formation of interest-based groups, enriching social lives and expanding professional networks. For instance, instant messaging allows for quick coordination among colleagues, boosting productivity and team cohesion.\n\nHowever, the pervasive nature of digital communication also carries significant drawbacks. The constant bombardment of notifications can lead to a state of perpetual distraction, eroding the quality of face-to-face interactions. People often prioritize their digital devices over present company, leading to feelings of neglect and diminished genuine connection. Furthermore, the curated nature of online personas can foster unrealistic social comparisons, contributing to anxiety and low self-esteem. The brevity and informality of digital messages can also strip away crucial non-verbal cues, leading to misinterpretations and conflicts that might be avoided in richer, in-person communication. Cyberbullying and the spread of misinformation are additional grave concerns that digital platforms have amplified, negatively impacting mental health and societal trust. In conclusion, while digital communication has undoubtedly enhanced our ability to connect, it is imperative to cultivate mindful usage to preserve the depth and authenticity of human relationships."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Effective communication skills are often considered as important as academic knowledge for students' future success. To what extent do you agree with this statement? Argue your position, providing relevant reasons and examples.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-054-q35",
+      "modelAnswer": "The assertion that effective communication skills are as crucial as academic knowledge for a student's future success holds significant merit. While a strong foundation in academic subjects is indispensable for understanding complex concepts and critical thinking, the ability to articulate those ideas, collaborate with others, and influence opinions is equally, if not more, vital in navigating the modern world. I strongly agree with this statement, as communication skills act as a multiplier for academic prowess.\n\nFirstly, in professional settings, possessing vast knowledge is only valuable if one can effectively convey it. Whether presenting research findings, negotiating deals, or leading a team, clear and persuasive communication is paramount. Employers consistently rank communication as a top desired skill, often above specific technical expertise, because it underpins teamwork, problem-solving, and leadership. For example, an engineer with groundbreaking ideas will struggle to implement them without the ability to explain their vision to stakeholders or collaborate with a diverse project team. Similarly, in academia, publishing research and lecturing effectively require sophisticated communication.\n\nSecondly, communication skills are essential for personal development and civic engagement. Individuals who can express themselves clearly and listen empathetically are better equipped to build strong relationships, resolve conflicts, and participate meaningfully in their communities. In a democratic society, the ability to articulate one's views and engage in constructive dialogue is fundamental to informed decision-making and societal progress. A student might excel in history but fail to understand contemporary political issues without the ability to critically analyze and discuss different perspectives.\n\nIn conclusion, while academic knowledge provides the content, communication skills provide the context and means for that content to be applied, shared, and impactful. Therefore, educational institutions should prioritize the development of robust communication abilities alongside traditional academic subjects to truly prepare students for success in all facets of life."
+    }
+  ]
+}

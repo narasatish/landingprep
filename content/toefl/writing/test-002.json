@@ -1,0 +1,54 @@
+{
+  "id": "toefl-writing-002",
+  "exam": "toefl",
+  "section": "writing",
+  "type": "section",
+  "title": "TOEFL iBT Writing Practice Test 2",
+  "variant": "ibt",
+  "durationSeconds": 1380,
+  "questionCount": 2,
+  "instructions": "There are 2 writing tasks. Task 1 (Integrated Writing): Read a passage for 3 minutes, listen to a lecture, then write a 150-225 word response explaining how the lecture relates to the reading. You have 20 minutes. Task 2 (Academic Discussion): Read a professor's question and two student responses, then write your own contribution of at least 100 words in 10 minutes.",
+  "questions": [
+    {
+      "id": "toefl-writing-002-q01",
+      "taskNum": 1,
+      "taskType": "integrated_writing",
+      "questionType": "integrated_writing",
+      "readingTitle": "Urban Green Spaces Improve Public Health Outcomes",
+      "readingText": "Research consistently demonstrates that access to parks, urban forests, and other green spaces produces measurable improvements in public health. Physical activity levels rise when green spaces are accessible, as parks provide safe, attractive environments for walking, cycling, and recreation. Mental health benefits are also well documented: exposure to natural environments reduces cortisol levels and is associated with lower rates of anxiety and depression. Additionally, urban trees and vegetation improve air quality by absorbing particulate matter and ozone, reducing the incidence of respiratory conditions such as asthma.",
+      "lectureDescription": "The professor questions whether green space access truly drives these health improvements. On physical activity: studies show people who live near parks are already more likely to be physically active for reasons unrelated to the park — socioeconomic status, neighbourhood safety, and personal health consciousness all correlate with both park access and physical activity. On mental health: self-report studies are subject to demand bias — people who enjoy nature report feeling better partly because they expected to. Controlled experiments produce smaller effects. On air quality: urban trees provide modest air quality benefits, but these are concentrated in tree canopy areas and do not significantly improve air quality at the street level where most pollution exposure occurs.",
+      "prompt": "Summarise the points made in the lecture, being sure to explain how they cast doubt on specific points made in the reading passage.",
+      "modelAnswer": "The reading claims that urban green spaces improve public health in three ways: increasing physical activity, improving mental health, and reducing air pollution. The professor questions all three arguments.\n\nFirst, on physical activity, the professor argues that people who live near parks are already more active for reasons unrelated to the parks themselves — factors like socioeconomic status and neighbourhood safety explain both park access and active lifestyles. The correlation may not reflect a causal relationship.\n\nSecond, regarding mental health, the professor notes that self-report studies are subject to demand bias. People who spend time in nature may report feeling better partly because they expected to. Controlled experimental studies show much smaller mental health effects than survey-based research.\n\nThird, while acknowledging trees absorb some pollutants, the professor argues that air quality benefits from urban greenery are limited to the canopy level and do not significantly reduce pollution at street level, where people actually experience most of their air pollution exposure.\n\nOverall, the professor suggests that the public health case for urban green spaces, while not entirely without merit, is less clear-cut than the reading implies.",
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range"
+      ],
+      "timeSeconds": 1200,
+      "targetWords": "150-225"
+    },
+    {
+      "id": "toefl-writing-002-q02",
+      "taskNum": 2,
+      "taskType": "academic_discussion",
+      "questionType": "academic_discussion",
+      "professorName": "Dr Patel",
+      "professorQuestion": "Urban planners must decide how to use limited city space. Some argue that cities should prioritise building affordable housing on available land. Others argue that protecting and expanding parks and green spaces should take priority. What is your view? Which should cities prioritise, and why?",
+      "student1Name": "Aisha",
+      "student1Response": "Housing has to come first. A park is nice, but it doesn't help someone who can't afford rent. Cities are experiencing housing crises — homelessness is rising and families are spending 50 percent or more of their income on housing. Prioritising parks when people have nowhere affordable to live seems like the wrong set of values.",
+      "student2Name": "Lucas",
+      "student2Response": "But green spaces provide health benefits that reduce long-term healthcare costs, improve air quality, and give families places to exercise and relax. If we build housing on every available plot, we lose those benefits permanently. Cities need a long-term vision that includes both housing and green space, and we shouldn't sacrifice one entirely for the other.",
+      "prompt": "Write a post responding to the professor's question. Express and support your personal opinion and make a contribution to the discussion in your own words. An effective response will contain at least 100 words.",
+      "rubric": [
+        "task response",
+        "coherence",
+        "lexical resource",
+        "grammar"
+      ],
+      "timeSeconds": 600,
+      "targetWords": "100+",
+      "modelAnswer": "I agree with Aisha that addressing the critical need for affordable housing must take precedence in urban planning. While Lucas rightly points out the invaluable long-term benefits of green spaces, these benefits become less accessible or even irrelevant to individuals and families struggling with housing insecurity. The immediate crisis of homelessness and exorbitant rent burdens many city dwellers, directly impacting their well-being and stability.\n\nFor instance, a family spending over half their income on rent has little disposable income for leisure activities, even if a beautiful park is nearby. Furthermore, the psychological stress of housing precarity can negate many of the mental health benefits green spaces offer. A balanced approach is ideal, but when faced with limited resources, solving the fundamental human need for shelter provides a more immediate and profound impact on citizens' quality of life, allowing them to then fully appreciate and utilize urban amenities like parks."
+    }
+  ]
+}

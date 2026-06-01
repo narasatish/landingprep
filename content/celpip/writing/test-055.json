@@ -1,0 +1,47 @@
+{
+  "id": "celpip-writing-055",
+  "exam": "celpip",
+  "section": "writing",
+  "type": "section",
+  "title": "CELPIP General LS Writing Practice Test 55",
+  "variant": "general_ls",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Complete both writing tasks within the time limit.",
+  "questions": [
+    {
+      "id": "celpip-writing-055-q01",
+      "questionType": "writing_task",
+      "prompt": "Write a letter to the parks authority asking about outdoor programmes available in your area.",
+      "modelAnswer": "I would strongly advocate for Option A: Implementing a robust online learning platform with interactive modules and virtual classrooms. This approach offers unparalleled flexibility and accessibility, addressing the diverse needs of students in today's dynamic educational landscape.\n\nFirstly, an online platform transcends geographical barriers, allowing students from remote areas or those with mobility challenges to access quality education without the need for physical relocation. This significantly broadens participation and promotes inclusivity. For instance, a student living in a rural community can participate in live virtual classes and collaborate on projects with peers across the country, an opportunity often unavailable through traditional methods.\n\nSecondly, interactive online modules cater to varied learning styles and paces. Students can revisit complex topics, engage with multimedia content, and complete self-paced quizzes, fostering deeper understanding and retention. Unlike static textbooks, these platforms can be continuously updated with the latest information and incorporate gamification elements, making learning more engaging and effective.\n\nWhile Option B, increasing the number of physical classrooms and hiring more in-person teachers, has its merits, it presents significant logistical and financial hurdles. The cost of acquiring land, constructing new buildings, and maintaining additional facilities is substantial and time-consuming. Moreover, it offers less flexibility and may not adequately address the evolving demands for remote learning and personalized educational experiences that an online platform can readily provide. Therefore, Option A represents a more forward-thinking and sustainable solution.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "outdoor recreation in Canada",
+      "wordTarget": 150,
+      "letterType": "semi-formal"
+    },
+    {
+      "id": "celpip-writing-055-q02",
+      "questionType": "writing_task",
+      "prompt": "Write a short message to a friend inviting them to join you for an outdoor activity.",
+      "modelAnswer": "I would choose Option B, advocating for a significant investment in renewable energy sources. This approach offers a powerful two-pronged solution to several pressing global challenges, positioning a nation for long-term prosperity and environmental responsibility.\n\nFirstly, focusing on renewables like solar and wind power directly addresses climate change by reducing reliance on fossil fuels. This not only mitigates environmental damage but also improves air quality, leading to better public health outcomes and reduced healthcare costs. For instance, large-scale solar farms can generate clean electricity for thousands of homes without producing greenhouse gases, unlike coal-fired power plants.\n\nSecondly, a robust renewable energy sector fosters economic growth and job creation. Developing and deploying these technologies requires a skilled workforce, from engineers and manufacturers to installers and maintenance technicians. This creates new industries and opportunities for innovation, reducing dependence on volatile international oil markets and enhancing energy security. Countries that invest early in this transition are poised to become leaders in a global green economy, exporting expertise and technology.\n\nOption A, while seemingly offering immediate economic benefits, is a short-sighted solution. Expanding oil and gas production exacerbates climate change, locks nations into outdated energy infrastructure, and exposes them to the inherent volatility of the fossil fuel market. The long-term environmental and economic costs far outweigh any temporary gains, making it an unsustainable path forward.",
+      "rubric": [
+        "task response",
+        "organization",
+        "vocabulary",
+        "grammar",
+        "development"
+      ],
+      "difficulty": "medium",
+      "topic": "outdoor recreation in Canada",
+      "wordTarget": 75,
+      "letterType": "informal"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "ielts-writing-024",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 24",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-024-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The table below compares the amount of food wasted per person per year in six countries in 2021. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "food waste",
+      "modelAnswer": "The table illustrates the amount of food wasted per person per year in six different countries in 2021. Figures are presented in kilograms.\n\nOverall, it is clear that there was a significant disparity in food waste levels among the selected nations, with North American countries demonstrating the highest amounts and an Asian country, Japan, showing the lowest. All countries wasted at least 55 kg of food per person annually.\n\nIn 2021, the USA recorded the highest food waste per person, at 105 kg, closely followed by Canada with 98 kg. Australia also showed a considerable amount of waste, at 92 kg, placing it third among the six nations. The UK had a slightly lower figure of 87 kg per person per year.\n\nGermany reported a moderate level of food waste, with 75 kg per person. In stark contrast to the other countries, Japan had the lowest figure by a significant margin, wasting only 55 kg of food per person annually. This figure is nearly half that of the USA, highlighting a substantial difference in waste management or consumption patterns.",
+      "visual": {
+        "chartType": "table",
+        "title": "Food Waste Per Person Per Year in Six Countries (2021)",
+        "headers": [
+          "Country",
+          "Food Waste (kg)"
+        ],
+        "rows": [
+          [
+            "USA",
+            "105"
+          ],
+          [
+            "Canada",
+            "98"
+          ],
+          [
+            "UK",
+            "87"
+          ],
+          [
+            "Germany",
+            "75"
+          ],
+          [
+            "Australia",
+            "92"
+          ],
+          [
+            "Japan",
+            "55"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-024-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Food waste is a growing problem in many countries. What are the main causes of this issue, and what measures can individuals and governments take to reduce it?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "food waste",
+      "modelAnswer": "The escalating issue of food wastage presents a significant challenge globally. This essay will explore the primary factors contributing to this problem and propose actionable strategies for both individuals and governments to mitigate its impact.\n\nA major cause of food waste stems from consumer behaviour and retail practices. Supermarkets, for instance, often reject aesthetically imperfect produce, even if it is perfectly edible, to meet consumer expectations for blemish-free fruits and vegetables. This pursuit of cosmetic perfection leads to vast quantities of nutritious food being discarded before it even reaches the shelves. Furthermore, large portion sizes in restaurants and households, coupled with inadequate meal planning, frequently result in uneaten food being thrown away. For example, a family buying too much fresh produce without a clear plan for its use often finds items spoiling before consumption.\n\nAddressing this multifaceted problem requires a concerted effort. Individuals can significantly reduce waste by adopting mindful shopping habits, such as creating meal plans, buying only what is needed, and understanding \"best before\" versus \"use by\" dates. Governments, on the other hand, should implement policies to encourage food donation from retailers and restaurants to charities, as well as invest in educational campaigns to raise public awareness about the environmental and economic costs of food waste. France’s law, compelling supermarkets to donate unsold food, serves as an exemplary model for other nations to emulate.\n\nIn conclusion, food waste is predominantly driven by consumer preferences and commercial inefficiencies. Through a combination of individual responsibility in consumption and governmental initiatives promoting redistribution and education, this pervasive issue can be effectively tackled."
+    }
+  ],
+  "variant": "academic"
+}

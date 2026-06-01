@@ -1,0 +1,100 @@
+{
+  "id": "ielts-writing-027",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 27",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-027-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The diagram shows the stages involved in the production and delivery of bottled water. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "bottled water",
+      "modelAnswer": "The table outlines the six main stages involved in the production and delivery of bottled water, from source collection to final distribution. Overall, the process is sequential, with significant variations in duration, water volume, and energy consumption across different stages. Distribution is the longest and most energy-intensive stage, while bottle production and packaging do not directly involve water volume tracking.\n\nThe initial stages, Source Water Collection and Filtration & Purification, together take 8-12 hours. Collection extracts 10,000 litres of water with a relatively low energy use of 50 kWh. Purification, however, consumes significantly more energy at 250 kWh over 6-8 hours, processing 9,800 litres after initial losses. Bottle Production, lasting 3-5 hours, is the most energy-intensive manufacturing step, requiring 300 kWh, but does not involve water volume.\n\nThe final stages, Bottling & Sealing, Packaging & Storage, and Distribution, handle 9,500 litres of water. Bottling and sealing takes 4-6 hours and uses 180 kWh, while packaging and storage is the shortest stage at 2-3 hours, consuming 100 kWh. The longest single stage is Distribution, taking 8-12 hours, and it also demands the highest energy input at 400 kWh to transport the bottled product to retailers.",
+      "visual": {
+        "chartType": "table",
+        "title": "Stages in Bottled Water Production and Delivery",
+        "headers": [
+          "Stage",
+          "Key Activities",
+          "Duration (hours)",
+          "Water Volume (litres/batch)",
+          "Energy Consumption (kWh/batch)"
+        ],
+        "rows": [
+          [
+            "Source Water Collection",
+            "Extraction from natural springs/boreholes",
+            "2-4",
+            "10,000",
+            "50"
+          ],
+          [
+            "Filtration & Purification",
+            "Multi-stage filtering, UV sterilization, reverse osmosis",
+            "6-8",
+            "9,800",
+            "250"
+          ],
+          [
+            "Bottle Production",
+            "PET preform moulding, blow moulding",
+            "3-5",
+            "N/A",
+            "300"
+          ],
+          [
+            "Bottling & Sealing",
+            "Filling bottles, capping, labelling",
+            "4-6",
+            "9,500",
+            "180"
+          ],
+          [
+            "Packaging & Storage",
+            "Shrink-wrapping, palletizing, warehouse storage",
+            "2-3",
+            "N/A",
+            "100"
+          ],
+          [
+            "Distribution",
+            "Loading, transportation to retailers",
+            "8-12",
+            "9,500",
+            "400"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-027-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "The sale of bottled water has grown enormously in recent decades. Some argue this is a waste of resources when clean tap water is available in many countries. To what extent do you agree or disagree?",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "bottled water",
+      "modelAnswer": "The ubiquitous presence of bottled water has become a defining feature of modern consumerism, despite the readily accessible and often high-quality tap water in numerous nations. While acknowledging certain niche benefits, I largely agree that this phenomenon represents an inefficient allocation of resources, posing significant environmental and economic drawbacks.\n\nFirstly, the production, transportation, and disposal of bottled water contribute substantially to resource depletion and pollution. Manufacturing plastic bottles requires vast quantities of crude oil and energy, leading to considerable carbon emissions. For instance, reports indicate that producing a single litre of bottled water can consume up to three litres of water in the manufacturing process itself, a stark paradox. Furthermore, the global logistics involved in moving these products across continents burn immense amounts of fossil fuels, exacerbating air pollution and climate change. The resultant plastic waste, often non-biodegradable, then chokes landfills and pollutes oceans, threatening marine life and ecosystems for centuries.\n\nSecondly, the widespread reliance on bottled water can undermine public investment in and trust of municipal water infrastructure. When consumers opt for bottled alternatives, there is less incentive for governments to maintain and upgrade existing tap water systems, potentially leading to a decline in quality over time, particularly in developing regions. For example, communities in some parts of Africa, where tap water quality is questionable, are often targeted by bottled water companies, diverting resources and attention from sustainable, long-term solutions for public water provision. This perpetuates a cycle where bottled water becomes not just a convenience, but a perceived necessity, despite its far higher cost to both individuals and the planet.\n\nIn conclusion, while bottled water may offer a convenient option in specific emergencies or in regions lacking safe tap water, its pervasive sale globally is fundamentally wasteful. The environmental cost of production and disposal, coupled with its potential to detract from crucial public infrastructure, firmly positions it as an unsustainable and largely unnecessary practice."
+    }
+  ],
+  "variant": "academic"
+}

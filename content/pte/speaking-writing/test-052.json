@@ -1,0 +1,737 @@
+{
+  "id": "pte-speaking-writing-052",
+  "exam": "pte",
+  "section": "speaking-writing",
+  "type": "section",
+  "title": "PTE Core Speaking Writing Practice Test 52",
+  "variant": "core",
+  "durationSeconds": 4500,
+  "questionCount": 35,
+  "instructions": "PTE Core Speaking & Writing practice test. Tasks reflect everyday and workplace contexts relevant to permanent residency applicants.",
+  "questions": [
+    {
+      "id": "pte-speaking-writing-052-q01",
+      "questionType": "read_aloud",
+      "prompt": "Read Aloud — “Library Digital Resources Access”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "public library resources",
+      "modelAnswer": "Public libraries increasingly serve as vital hubs for digital literacy, offering free access to high-speed internet, computers, and a vast array of online databases. These resources extend beyond traditional books, encompassing e-books, audiobooks, research journals, and even language learning software. They play a crucial role in bridging the digital divide, empowering individuals to acquire essential skills and access information regardless of socioeconomic status, fostering continuous learning and community engagement.",
+      "readText": "Public libraries increasingly serve as vital hubs for digital literacy, offering free access to high-speed internet, computers, and a vast array of online databases. These resources extend beyond traditional books, encompassing e-books, audiobooks, research journals, and even language learning software. They play a crucial role in bridging the digital divide, empowering individuals to acquire essential skills and access information regardless of socioeconomic status, fostering continuous learning and community engagement."
+    },
+    {
+      "id": "pte-speaking-writing-052-q02",
+      "questionType": "repeat_sentence",
+      "prompt": "Repeat Sentence — “Library Access to Resources”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "correctAnswer": "The library offers diverse resources from research databases to free computer access.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "public library resources",
+      "modelAnswer": "The library offers diverse resources from research databases to free computer access.",
+      "audioScript": "The library offers diverse resources from research databases to free computer access."
+    },
+    {
+      "id": "pte-speaking-writing-052-q03",
+      "questionType": "describe_image",
+      "prompt": "Look at a bar chart titled \"Public Library Resource Usage (2023)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "public library resources",
+      "modelAnswer": "This bar chart illustrates public library resource usage in 2023, measured in thousands of users. The most popular resource is E-books/Audiobooks, with 210,000 users, slightly surpassing Physical Books at 180,000 users. Computer Access and Workshops/Events also show significant engagement, attracting 95,000 and 120,000 users respectively. Database Access is the least utilized resource, with only 75,000 users. Overall, digital resources appear to be more popular than traditional physical books, highlighting a shift in library service preferences.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Public Library Resource Usage (2023)",
+        "yLabel": "Number of Users (Thousands)",
+        "xAxis": [
+          "Physical Books",
+          "E-books/Audiobooks",
+          "Computer Access",
+          "Workshops/Events",
+          "Database Access"
+        ],
+        "series": [
+          {
+            "label": "Users",
+            "values": [
+              180,
+              210,
+              95,
+              120,
+              75
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pte-speaking-writing-052-q04",
+      "questionType": "retell_lecture",
+      "prompt": "Re-tell Lecture — “Libraries: Learning and Community”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "difficulty": "medium",
+      "topic": "public library resources",
+      "modelAnswer": "The lecture discussed how public libraries are dynamic community centers, not just book repositories. They provide free access to information, technology, and educational programs for all ages, from early literacy to adult digital skills. Libraries also host book clubs, cultural events, and meeting spaces, fostering interaction and stronger community bonds. Their role in supporting intellectual growth and civic engagement is indispensable, constantly adapting to meet evolving societal needs.",
+      "audioScript": "Public libraries are far more than just repositories for books; they are dynamic community centers fostering lifelong learning and social connection. They provide free access to information, technology, and educational programs for all ages, from early literacy initiatives to adult workshops on digital skills and career development. Libraries host book clubs, cultural events, and meeting spaces, creating vital opportunities for residents to interact, share knowledge, and build stronger community bonds. Their role in supporting intellectual growth and civic engagement is indispensable in modern society, adapting continuously to serve evolving needs.",
+      "keyPoints": [
+        "Libraries are dynamic community centers",
+        "Offer free access to information, tech, programs",
+        "Host events, book clubs, meeting spaces",
+        "Indispensable for intellectual growth and civic engagement"
+      ]
+    },
+    {
+      "id": "pte-speaking-writing-052-q05",
+      "questionType": "answer_short_question",
+      "prompt": "Answer Short Question — “What's in a library?”. You will hear a short question; answer it in one or a few words.",
+      "correctAnswer": "Books",
+      "rubric": [
+        "content"
+      ],
+      "difficulty": "easy",
+      "topic": "public library resources",
+      "modelAnswer": "Books",
+      "audioScript": "What is a primary resource found in a public library?"
+    },
+    {
+      "id": "pte-speaking-writing-052-q06",
+      "questionType": "summarize_written_text",
+      "prompt": "Summarize Written Text — “Evolving Library Services”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling"
+      ],
+      "difficulty": "medium",
+      "topic": "public library resources",
+      "wordTarget": 75,
+      "modelAnswer": "Modern public libraries have expanded beyond physical books to offer extensive digital collections and essential community services like computer access and educational workshops, crucial for bridging the digital divide and supporting lifelong learning.",
+      "readText": "Modern public libraries have significantly expanded their services beyond lending physical books. They now offer extensive digital collections, including e-books, audiobooks, and streaming media, accessible from anywhere with an internet connection. Furthermore, libraries provide essential community services such as computer access, free Wi-Fi, job search assistance, and educational workshops. These institutions are critical in bridging the digital divide and supporting lifelong learning, ensuring that all members of society have equitable access to information and resources necessary for personal and professional development in an increasingly digital world."
+    },
+    {
+      "id": "pte-speaking-writing-052-q07",
+      "questionType": "write_essay",
+      "prompt": "It is more important to spend money on preventing illness than treating it. To what extent do you agree or disagree?",
+      "correctAnswer": "",
+      "rubric": [
+        "content",
+        "form",
+        "grammar",
+        "vocabulary",
+        "spelling",
+        "discourse"
+      ],
+      "difficulty": "medium",
+      "topic": "public library resources",
+      "wordTarget": 200,
+      "modelAnswer": "State your opinion clearly in the opening sentence. Support it with two or three specific reasons or examples drawn from personal experience or general knowledge. Acknowledge an alternative view briefly before reinforcing your own position."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Heuristics in Decision Making”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q08",
+      "modelAnswer": "The psychology of decision-making reveals that individuals often rely on cognitive shortcuts, known as heuristics, to simplify complex choices. While these mental shortcuts can facilitate rapid judgments, they also introduce systematic biases, leading to irrational or suboptimal outcomes. Understanding these inherent biases, such as confirmation bias or availability heuristic, is crucial for improving critical thinking and making more informed decisions in both personal and professional contexts, mitigating potential pitfalls in judgment.",
+      "readText": "The psychology of decision-making reveals that individuals often rely on cognitive shortcuts, known as heuristics, to simplify complex choices. While these mental shortcuts can facilitate rapid judgments, they also introduce systematic biases, leading to irrational or suboptimal outcomes. Understanding these inherent biases, such as confirmation bias or availability heuristic, is crucial for improving critical thinking and making more informed decisions in both personal and professional contexts, mitigating potential pitfalls in judgment."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Urban Transport Evolution”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q09",
+      "modelAnswer": "The evolution of public transport systems reflects a continuous adaptation to urban growth and technological advancements. From horse-drawn carriages and early electric streetcars to modern high-speed rail and autonomous vehicles, each innovation has reshaped cityscapes and commuting patterns. These systems are pivotal in reducing traffic congestion, mitigating environmental pollution, and ensuring equitable access to opportunities for urban populations, driving economic development and social mobility across diverse metropolitan areas globally.",
+      "readText": "The evolution of public transport systems reflects a continuous adaptation to urban growth and technological advancements. From horse-drawn carriages and early electric streetcars to modern high-speed rail and autonomous vehicles, each innovation has reshaped cityscapes and commuting patterns. These systems are pivotal in reducing traffic congestion, mitigating environmental pollution, and ensuring equitable access to opportunities for urban populations, driving economic development and social mobility across diverse metropolitan areas globally."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Green Infrastructure Benefits”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q10",
+      "modelAnswer": "Sustainable urban planning increasingly incorporates green infrastructure, such as parks, green roofs, and permeable pavements, to enhance environmental quality and resilience. These elements provide numerous benefits, including improved air and water quality, reduced urban heat island effect, and enhanced biodiversity. Integrating green infrastructure not only creates more livable and aesthetically pleasing cities but also plays a crucial role in climate change adaptation, offering natural solutions to manage stormwater and support urban ecosystems effectively.",
+      "readText": "Sustainable urban planning increasingly incorporates green infrastructure, such as parks, green roofs, and permeable pavements, to enhance environmental quality and resilience. These elements provide numerous benefits, including improved air and water quality, reduced urban heat island effect, and enhanced biodiversity. Integrating green infrastructure not only creates more livable and aesthetically pleasing cities but also plays a crucial role in climate change adaptation, offering natural solutions to manage stormwater and support urban ecosystems effectively."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Bilingualism Cognitive Advantages”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q11",
+      "modelAnswer": "Research consistently demonstrates that bilingualism offers significant cognitive benefits, extending beyond mere language proficiency. Bilingual individuals often exhibit enhanced executive functions, including improved problem-solving skills, better task switching, and increased cognitive flexibility. These advantages are attributed to the constant mental exercise involved in managing two language systems, leading to a more robust and adaptable brain. Furthermore, bilingualism has been linked to a delayed onset of age-related cognitive decline, underscoring its profound impact on brain health.",
+      "readText": "Research consistently demonstrates that bilingualism offers significant cognitive benefits, extending beyond mere language proficiency. Bilingual individuals often exhibit enhanced executive functions, including improved problem-solving skills, better task switching, and increased cognitive flexibility. These advantages are attributed to the constant mental exercise involved in managing two language systems, leading to a more robust and adaptable brain. Furthermore, bilingualism has been linked to a delayed onset of age-related cognitive decline, underscoring its profound impact on brain health."
+    },
+    {
+      "questionType": "read_aloud",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Read Aloud — “Microbiomes and Human Health”. You have 35 seconds to prepare, then read the text below aloud for 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q12",
+      "modelAnswer": "The human microbiome, a complex ecosystem of microorganisms residing within and on our bodies, plays a pivotal role in maintaining health. These microbial communities influence digestion, nutrient absorption, immune system development, and even mental well-being. Disruptions to the microbiome, often caused by diet or antibiotics, can lead to various diseases. Understanding and manipulating this intricate ecosystem offers promising avenues for preventing and treating a wide range of conditions, revolutionizing personalized medicine approaches.",
+      "readText": "The human microbiome, a complex ecosystem of microorganisms residing within and on our bodies, plays a pivotal role in maintaining health. These microbial communities influence digestion, nutrient absorption, immune system development, and even mental well-being. Disruptions to the microbiome, often caused by diet or antibiotics, can lead to various diseases. Understanding and manipulating this intricate ecosystem offers promising avenues for preventing and treating a wide range of conditions, revolutionizing personalized medicine approaches."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Global water scarcity demands immediate conservation efforts and innovative solutions.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Global Water Scarcity”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q13",
+      "modelAnswer": "Global water scarcity demands immediate conservation efforts and innovative solutions.",
+      "audioScript": "Global water scarcity demands immediate conservation efforts and innovative solutions."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Genetic engineering raises profound ethical considerations regarding human intervention in nature.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Genetic Engineering Ethics”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q14",
+      "modelAnswer": "Genetic engineering raises profound ethical considerations regarding human intervention in nature.",
+      "audioScript": "Genetic engineering raises profound ethical considerations regarding human intervention in nature."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Recent quantum computing breakthroughs promise to revolutionize numerous scientific fields.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Quantum Computing Advances”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q15",
+      "modelAnswer": "Recent quantum computing breakthroughs promise to revolutionize numerous scientific fields.",
+      "audioScript": "Recent quantum computing breakthroughs promise to revolutionize numerous scientific fields."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Childhood nutrition significantly impacts cognitive development and academic performance later.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Childhood Nutrition Impact”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q16",
+      "modelAnswer": "Childhood nutrition significantly impacts cognitive development and academic performance later.",
+      "audioScript": "Childhood nutrition significantly impacts cognitive development and academic performance later."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Machine learning applications in healthcare are transforming diagnostics and personalized treatment plans.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Machine Learning Healthcare”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q17",
+      "modelAnswer": "Machine learning applications in healthcare are transforming diagnostics and personalized treatment plans.",
+      "audioScript": "Machine learning applications in healthcare are transforming diagnostics and personalized treatment plans."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The history of ancient astronomical observations reveals sophisticated early scientific methods.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Ancient Astronomy History”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q18",
+      "modelAnswer": "The history of ancient astronomical observations reveals sophisticated early scientific methods.",
+      "audioScript": "The history of ancient astronomical observations reveals sophisticated early scientific methods."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "The impact of noise pollution on wildlife significantly disrupts natural behaviors.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Noise Pollution on Wildlife”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q19",
+      "modelAnswer": "The impact of noise pollution on wildlife significantly disrupts natural behaviors.",
+      "audioScript": "The impact of noise pollution on wildlife significantly disrupts natural behaviors."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Cross-cultural negotiations in business require sensitivity and deep understanding.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Cross-Cultural Business”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q20",
+      "modelAnswer": "Cross-cultural negotiations in business require sensitivity and deep understanding.",
+      "audioScript": "Cross-cultural negotiations in business require sensitivity and deep understanding."
+    },
+    {
+      "questionType": "repeat_sentence",
+      "correctAnswer": "Carbon capture and storage technologies are crucial for mitigating climate change.",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Repeat Sentence — “Carbon Capture Technology”. You will hear a sentence; after it plays, repeat it exactly as you heard it.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q21",
+      "modelAnswer": "Carbon capture and storage technologies are crucial for mitigating climate change.",
+      "audioScript": "Carbon capture and storage technologies are crucial for mitigating climate change."
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Average Temperature Change (1900-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q22",
+      "modelAnswer": "This line graph illustrates global average temperature changes from 1900 to 2020, showing temperature anomalies in degrees Celsius. The temperature anomaly was around -0.2°C in 1900 and remained relatively stable until the 1940s. A significant upward trend began in the 1980s, accelerating into the new millennium. The lowest point was -0.2°C in 1900, while the highest anomaly was observed in 2020 at 0.9°C. This represents more than a one-degree Celsius increase over the entire period, clearly indicating a warming planet, especially in recent decades.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Average Temperature Change (1900-2020)",
+        "yLabel": "Temperature Anomaly (°C)",
+        "xAxis": [
+          "1900",
+          "1920",
+          "1940",
+          "1960",
+          "1980",
+          "2000",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Temperature Anomaly",
+            "values": [
+              -0.2,
+              -0.1,
+              0,
+              -0.05,
+              0.2,
+              0.5,
+              0.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Annual Deforestation in the Amazon Basin (1990-2020)\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q23",
+      "modelAnswer": "This line chart illustrates annual deforestation in the Amazon Basin from 1990 to 2020, measured in square kilometers. The highest deforestation occurred in 2000, reaching 20,000 km², indicating a peak in forest loss. Subsequently, there was a significant decline, with the lowest point recorded in 2010 at 7,000 km². However, the trend shows an increase again towards 2020, reaching 11,000 km². Overall, while there was a notable reduction between 2000 and 2010, deforestation rates have risen in the last decade, highlighting ongoing environmental challenges in the region.",
+      "visual": {
+        "chartType": "line",
+        "title": "Annual Deforestation in the Amazon Basin (1990-2020)",
+        "yLabel": "Area Deforested (km²)",
+        "xAxis": [
+          "1990",
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2015",
+          "2020"
+        ],
+        "series": [
+          {
+            "label": "Deforested Area",
+            "values": [
+              15000,
+              18500,
+              20000,
+              13000,
+              7000,
+              8500,
+              11000
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Stages of Effective Communication Flow\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q24",
+      "modelAnswer": "The table illustrates the five stages of effective communication flow. It details the sender's and receiver's actions at each stage, alongside potential obstacles. The process begins with 'Idea Generation' by the sender, where 'Ambiguity' is a key obstacle. This is followed by 'Encoding' and 'Transmission'. The receiver's role becomes active during 'Transmission' by 'actively listening' and 'Decoding' by 'understanding meaning', where 'Misinterpretation' can occur. The final stage, 'Feedback', is crucial for monitoring response, with 'Lack of Response' being a significant obstacle. Understanding these stages is vital for clear communication.",
+      "visual": {
+        "chartType": "table",
+        "title": "Stages of Effective Communication Flow",
+        "headers": [
+          "Stage",
+          "Sender Action",
+          "Receiver Action",
+          "Potential Obstacle"
+        ],
+        "rows": [
+          [
+            "1. Idea Generation",
+            "Formulate clear message",
+            "N/A",
+            "Ambiguity/Lack of Clarity"
+          ],
+          [
+            "2. Encoding",
+            "Translate idea into words/symbols",
+            "N/A",
+            "Inappropriate Medium/Jargon"
+          ],
+          [
+            "3. Transmission",
+            "Send message via chosen channel",
+            "Actively listen/read",
+            "Noise/Distraction"
+          ],
+          [
+            "4. Decoding",
+            "Interpret message",
+            "Understand meaning",
+            "Misinterpretation/Bias"
+          ],
+          [
+            "5. Feedback",
+            "Monitor receiver's response",
+            "Provide verbal/non-verbal cues",
+            "Lack of Response/Delayed Feedback"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a table titled \"Key Components and Outputs of Photosynthesis\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q25",
+      "modelAnswer": "This table illustrates the key components and outputs of photosynthesis, divided into two main stages. The first stage, Light-Dependent Reactions, requires sunlight and water as inputs, producing oxygen, ATP, and NADPH, occurring in the thylakoid membranes. The second stage, Light-Independent Reactions, also known as the Calvin Cycle, utilizes carbon dioxide, ATP, and NADPH as inputs. This stage yields glucose, which is the plant's food, along with ADP and NADP+, taking place in the stroma. Together, these processes convert light energy into chemical energy.",
+      "visual": {
+        "chartType": "table",
+        "title": "Key Components and Outputs of Photosynthesis",
+        "headers": [
+          "Process Stage",
+          "Inputs",
+          "Outputs",
+          "Location"
+        ],
+        "rows": [
+          [
+            "Light-Dependent Reactions",
+            "Sunlight, Water (H2O)",
+            "Oxygen (O2), ATP, NADPH",
+            "Thylakoid Membranes"
+          ],
+          [
+            "Light-Independent Reactions (Calvin Cycle)",
+            "Carbon Dioxide (CO2), ATP, NADPH",
+            "Glucose (C6H12O6), ADP, NADP+",
+            "Stroma"
+          ]
+        ]
+      }
+    },
+    {
+      "questionType": "describe_image",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Look at a line graph titled \"Global Population Growth Projections: 2000-2100\". You have 40 seconds to describe what it shows in as much detail as you can, then your spoken response is recorded.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q26",
+      "modelAnswer": "This line chart illustrates global population growth projections from 2000 to 2100. The world population was approximately 6.1 billion in 2000, steadily rising to 7.8 billion by 2020. A significant upward trend continues, with the population projected to reach 9.7 billion by mid-century, specifically 2050. The growth rate appears to slow down in the latter half of the century, peaking around 10.9 billion in 2100. This indicates a consistent increase over the entire period, though with a decelerating pace towards the end of the century.",
+      "visual": {
+        "chartType": "line",
+        "title": "Global Population Growth Projections: 2000-2100",
+        "yLabel": "Population (Billions)",
+        "xAxis": [
+          "2000",
+          "2010",
+          "2020",
+          "2030",
+          "2040",
+          "2050",
+          "2060",
+          "2070",
+          "2080",
+          "2090",
+          "2100"
+        ],
+        "series": [
+          {
+            "label": "World Population",
+            "values": [
+              6.1,
+              6.9,
+              7.8,
+              8.5,
+              9.1,
+              9.7,
+              10.1,
+              10.4,
+              10.6,
+              10.8,
+              10.9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Non-Verbal Communication Nuances”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q27",
+      "modelAnswer": "The lecture discussed how communication is a complex process where non-verbal elements transmit a significant portion of meaning. Body language, facial expressions, gestures, and even silence are crucial non-verbal cues that can reinforce or contradict spoken words. These signals often reveal underlying emotions. The speaker emphasized that understanding and interpreting these subtle non-verbal signals is critical for effective interpersonal communication, helping to prevent misunderstandings and build rapport.",
+      "audioScript": "Communication is a multifaceted process, and while spoken words convey explicit messages, a significant portion of meaning is transmitted non-verbally. Body language, facial expressions, gestures, and even silence all contribute to how messages are received and interpreted. These non-verbal cues can reinforce, contradict, or substitute verbal communication, often revealing underlying emotions or intentions that words alone might obscure. Understanding and interpreting these subtle signals is critical for effective interpersonal communication, preventing misunderstandings and building rapport in diverse social and professional settings.",
+      "keyPoints": [
+        "Communication is multifaceted",
+        "Non-verbal cues transmit significant meaning",
+        "Body language, expressions, gestures, silence contribute",
+        "Crucial for effective communication and rapport"
+      ]
+    },
+    {
+      "questionType": "retell_lecture",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Re-tell Lecture — “Universe Formation & Dark Matter”. Listen to the lecture, then retell it in your own words in 40 seconds.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q28",
+      "modelAnswer": "The lecture described the universe's formation starting with the Big Bang, about 13.8 billion years ago. As the universe expanded and cooled, particles, atoms, and eventually stars and galaxies formed. A key, mysterious element discussed was dark matter. Although invisible, its gravitational influence is essential for galaxy rotation and the large-scale structure of the cosmos. The speaker emphasized that without dark matter, galaxies wouldn't hold together, proving its fundamental role in cosmic evolution.",
+      "audioScript": "The formation of the universe is a grand narrative, beginning with the Big Bang approximately 13.8 billion years ago. From a hot, dense state, the universe expanded and cooled, allowing fundamental particles to form, then atoms, and eventually stars and galaxies. A critical, yet mysterious, component in this process is dark matter. Though invisible and undetectable by conventional means, dark matter's gravitational influence is essential for explaining the rotation curves of galaxies and the large-scale structure of the cosmos. Without its pervasive presence, galaxies simply wouldn't hold together as observed, highlighting its fundamental role in cosmic evolution.",
+      "keyPoints": [
+        "Universe began with Big Bang 13.8 billion years ago",
+        "Expansion and cooling led to particle, atom, star, galaxy formation",
+        "Dark matter is a critical, mysterious component",
+        "Its gravitational influence explains galaxy rotation and cosmic structure"
+      ]
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Communication",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Basic Communication Element”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q29",
+      "modelAnswer": "Communication",
+      "audioScript": "What is the process of conveying information, ideas, or feelings?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Speech",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Verbal Communication Form”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q30",
+      "modelAnswer": "Speech",
+      "audioScript": "What is the use of spoken words to exchange information?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Non-verbal",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Non-Verbal Communication Example”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q31",
+      "modelAnswer": "Non-verbal",
+      "audioScript": "What type of communication involves body language and facial expressions?"
+    },
+    {
+      "questionType": "answer_short_question",
+      "correctAnswer": "Writing",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Answer Short Question — “Written Communication Element”. You will hear a short question; answer it in one or a few words.",
+      "rubric": [
+        "content",
+        "pronunciation",
+        "fluency"
+      ],
+      "id": "pte-speaking-writing-052-q32",
+      "modelAnswer": "Writing",
+      "audioScript": "What do you call a message conveyed through text?"
+    },
+    {
+      "questionType": "summarize_written_text",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Summarize Written Text — “Global Urbanization Dynamics”. Read the passage and write ONE sentence of 5–75 words. You have 10 minutes.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-052-q33",
+      "modelAnswer": "Global urbanization, driven by migration and natural growth, offers economic opportunities and better services but also creates challenges like strain on services, housing shortages, and environmental degradation, necessitating sustainable urban planning and policy interventions for livable cities.",
+      "readText": "Global urbanization is a transformative demographic trend, driven primarily by rural-to-urban migration and natural population growth within cities. This shift is often fueled by the perception of greater economic opportunities, better access to services like education and healthcare, and improved infrastructure in urban centers. However, rapid urbanization also presents significant challenges, including the strain on public services, housing shortages, increased traffic congestion, and environmental degradation. Sustainable urban planning strategies are therefore crucial to manage this growth effectively, ensuring livable cities that can support growing populations without compromising environmental integrity or social equity, requiring comprehensive policy interventions and infrastructure development."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Modern technology has fundamentally altered the way people communicate. Discuss the advantages and disadvantages of these changes, providing specific examples to support your viewpoint. Do the benefits outweigh the drawbacks?",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-052-q34",
+      "modelAnswer": "Modern technology has undeniably revolutionized communication, bringing forth a myriad of advantages alongside notable disadvantages. On the one hand, the ubiquity of smartphones and the internet has fostered unprecedented connectivity, allowing instantaneous global communication through messaging apps, video calls, and social media. This has proven invaluable for maintaining personal relationships across distances, facilitating international business collaboration, and enabling rapid dissemination of information during crises. Educational resources and professional networks are now more accessible than ever, breaking down geographical barriers and fostering a more interconnected world. For instance, families separated by continents can share daily moments, and businesses can conduct meetings with participants from diverse locations without costly travel.\n\nHowever, these technological advancements are not without their drawbacks. The constant connectivity can lead to information overload, reduced attention spans, and a blurring of lines between work and personal life, contributing to increased stress and burnout. Furthermore, the reliance on digital communication can erode face-to-face social skills, potentially leading to feelings of isolation despite being 'connected' online. Issues such as cyberbullying, the spread of misinformation, and privacy concerns are also significant negative consequences. For example, while social media connects, it also creates platforms for online harassment and the rapid spread of fake news, impacting societal trust and individual well-being.\n\nIn conclusion, while the disadvantages of modern communication technology are considerable and require careful management, the immense benefits of enhanced global connectivity, accessibility to information, and streamlined collaboration generally outweigh the drawbacks. The key lies in developing digital literacy and responsible usage habits to harness technology's power positively while mitigating its potential harms."
+    },
+    {
+      "questionType": "essay",
+      "correctAnswer": "",
+      "difficulty": "medium",
+      "topic": "communication",
+      "prompt": "Effective interpersonal communication is crucial for success in both personal and professional life. Discuss the key components of effective interpersonal communication and explain why these skills are so important. Provide examples.",
+      "rubric": [
+        "content",
+        "form",
+        "fluency",
+        "vocabulary"
+      ],
+      "id": "pte-speaking-writing-052-q35",
+      "modelAnswer": "Effective interpersonal communication is a cornerstone for success in nearly every facet of life, from nurturing personal relationships to excelling in professional environments. Its importance stems from its ability to foster understanding, resolve conflicts, build trust, and facilitate collaboration. Key components of this vital skill set include active listening, clear verbal expression, appropriate non-verbal cues, and empathy.\n\nActive listening, for instance, involves fully concentrating on what is being said, both verbally and non-verbally, rather than merely waiting for one's turn to speak. This demonstrates respect and ensures accurate comprehension, preventing misunderstandings. In a professional setting, a manager who actively listens to employee feedback can identify issues early and foster a more engaged team. Similarly, clear verbal expression means articulating thoughts concisely and unambiguously, avoiding jargon where possible. This is crucial in academic presentations or client meetings, where precision ensures the message is received as intended.\n\nNon-verbal cues, such as eye contact, posture, and gestures, significantly impact how a message is perceived. Positive body language can convey confidence and openness, while negative cues might suggest disinterest or defensiveness. In a job interview, confident posture and steady eye contact can leave a powerful positive impression. Finally, empathy, the ability to understand and share the feelings of another, allows communicators to tailor their message and approach to the recipient's perspective, strengthening rapport and trust. A salesperson demonstrating empathy towards a customer's needs is more likely to build a lasting relationship than one solely focused on making a sale.\n\nIn conclusion, mastering these components of interpersonal communication is paramount because they enable individuals to build stronger relationships, collaborate effectively, and navigate complex social dynamics, ultimately leading to greater personal satisfaction and professional achievement."
+    }
+  ]
+}

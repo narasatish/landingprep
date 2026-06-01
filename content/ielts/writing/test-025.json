@@ -1,0 +1,69 @@
+{
+  "id": "ielts-writing-025",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "title": "IELTS Academic Writing Practice Test 25",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "You have 60 minutes for both tasks. Spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.",
+  "questions": [
+    {
+      "id": "ielts-writing-025-q01",
+      "questionType": "writing_task",
+      "taskNumber": 1,
+      "prompt": "The bar chart shows the percentage of adults who speak more than one language in five European countries in 2023. Summarise the main features and make comparisons where relevant.",
+      "minWords": 150,
+      "rubric": [
+        "task achievement",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "language learning",
+      "modelAnswer": "The bar chart illustrates the proportion of adults in five European countries who are proficient in more than one language in the year 2023. Overall, the Netherlands reported the highest percentage of multilingual adults, while Germany had the lowest. There was a noticeable variation across the countries, with figures ranging from just over a third to nearly two-thirds of the adult population.\n\nLooking at the individual countries, the Netherlands stood out with 65% of its adult population speaking more than one language, making it the most multilingual nation among those presented. Italy also showed a high percentage, with 58% of its adults being bilingual or multilingual. Spain followed with 48%, indicating that nearly half of its adult population could converse in multiple languages.\n\nIn contrast, France and Germany exhibited lower percentages of multilingual adults. France recorded 42%, which was slightly less than Spain but still a significant proportion. Germany had the lowest figure at 35%, meaning just over a third of its adult population spoke more than one language. This places Germany considerably below the other countries, especially the Netherlands, which had almost double its percentage.",
+      "visual": {
+        "chartType": "bar",
+        "title": "Percentage of Multilingual Adults in Five European Countries, 2023",
+        "yLabel": "Percentage (%)",
+        "xAxis": [
+          "Germany",
+          "France",
+          "Italy",
+          "Spain",
+          "Netherlands"
+        ],
+        "series": [
+          {
+            "label": "Adults speaking more than one language",
+            "values": [
+              35,
+              42,
+              58,
+              48,
+              65
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ielts-writing-025-q02",
+      "questionType": "writing_task",
+      "taskNumber": 2,
+      "prompt": "Learning a foreign language has many benefits, but some argue that the time and resources required would be better spent on other subjects. Discuss both views and give your own opinion.",
+      "minWords": 250,
+      "rubric": [
+        "task response",
+        "coherence and cohesion",
+        "lexical resource",
+        "grammatical range and accuracy"
+      ],
+      "difficulty": "medium",
+      "topic": "language learning",
+      "modelAnswer": "The acquisition of an additional language offers a plethora of advantages, yet a counter-argument posits that the considerable investment of time and resources might be more productively allocated to alternative academic pursuits. While acknowledging the validity of this perspective, I firmly believe that the multifaceted benefits of language learning far outweigh any potential drawbacks.\n\nProponents of foreign language education often highlight its cognitive and cultural enrichment. Engaging with a new linguistic system demonstrably enhances critical thinking, problem-solving skills, and memory retention, as individuals are compelled to navigate different grammatical structures and semantic nuances. For instance, studies have shown that bilingual children consistently outperform monolingual peers in tasks requiring executive function, demonstrating improved mental flexibility and attention control. Furthermore, understanding another language provides direct access to diverse cultures, fostering empathy and a more globalised worldview, which is increasingly vital in our interconnected world.\n\nConversely, those who advocate for prioritising other subjects often point to the immediate practical applications of disciplines like mathematics or science. They argue that foundational skills in STEM subjects are directly transferable to economic productivity and technological advancement, potentially offering a more tangible return on investment for individuals and societies. For example, a student excelling in coding or engineering might secure employment more readily in certain sectors than one proficient in, say, Mandarin. However, this perspective overlooks the transferable skills developed through language learning, such as enhanced communication and intercultural competence, which are invaluable in any professional context.\n\nIn conclusion, while the demands of language acquisition are undeniable, its profound cognitive, cultural, and practical advantages render it an exceptionally worthwhile endeavour. The intellectual stimulation and broadened horizons it offers significantly surpass the perceived benefits of exclusively focusing on other subjects."
+    }
+  ],
+  "variant": "academic"
+}

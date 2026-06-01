@@ -1,0 +1,37 @@
+{
+  "id": "ielts-writing-gt-003",
+  "exam": "ielts",
+  "section": "writing",
+  "type": "section",
+  "variant": "general_training",
+  "title": "IELTS GT Writing Practice Test 3 — Invitation Letter",
+  "durationSeconds": 3600,
+  "questionCount": 2,
+  "instructions": "Task 1: Write a letter of at least 150 words. Task 2: Write an essay of at least 250 words.",
+  "questions": [
+    {
+      "id": "ielts-writing-gt-003-q01",
+      "questionType": "writing_task",
+      "taskType": "general_task_1_letter",
+      "letterType": "invitation",
+      "letterSituation": "You are organising a farewell dinner for a colleague who is leaving your workplace to take up a position in another country. You would like to invite another colleague who lives in a different city and may need to make travel arrangements.",
+      "prompt": "You are organising a farewell dinner for a colleague who is leaving your workplace to take up a position in another country. You would like to invite another colleague who lives in a different city and may need to make travel arrangements.\n\nWrite a letter to your colleague. In your letter:\n• explain the purpose of the event and why it is being held\n• give details of the date, time and venue\n• suggest accommodation options and offer to help with arrangements\n\nWrite at least 150 words. You do NOT need to write any addresses.",
+      "wordTarget": 150,
+      "modelAnswer": "A strong response should warmly convey the purpose of the gathering, provide clear logistical details (date, time, venue), proactively address travel and accommodation concerns, and maintain an enthusiastic and welcoming tone.",
+      "rubric": ["task achievement", "coherence and cohesion", "lexical resource", "grammatical range and accuracy"],
+      "difficulty": "medium",
+      "topic": "workplace events"
+    },
+    {
+      "id": "ielts-writing-gt-003-q02",
+      "questionType": "writing_task",
+      "taskType": "academic_task_2_essay",
+      "prompt": "Many people argue that international travel broadens a person's outlook and improves intercultural understanding. Others feel it can increase cultural tensions and damage local traditions. To what extent do you agree or disagree?",
+      "wordTarget": 250,
+      "modelAnswer": "A strong response should present a clear position, acknowledge counterarguments fairly, and support the main argument with specific examples drawn from cultural exchange, education, and community impact.",
+      "rubric": ["task response", "coherence and cohesion", "lexical resource", "grammatical range and accuracy"],
+      "difficulty": "medium",
+      "topic": "globalisation and culture"
+    }
+  ]
+}
