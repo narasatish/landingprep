@@ -41,6 +41,7 @@ function viewToHash(view, examId) {
       return "#/colleges";
     case "login":     return "#/login";
     case "blog":      return "#/blog";
+    case "languages": return "#/languages";
     case "mock":      return null; // do not push history for mock — let the back button take user out of the test
     default:          return "#/";
   }
@@ -70,6 +71,7 @@ function hashToView(hash, exams) {
   if (head === "planner")   return { view: "tools",    examId: null };
   if (head === "login")     return { view: "login",    examId: null };
   if (head === "blog")      return { view: "blog",     examId: null };
+  if (head === "languages") return { view: "languages", examId: null };
   return { view: "home", examId: null };
 }
 
@@ -253,6 +255,7 @@ function App() {
     if (id === "exams")     { setView("guide");     setExam(exam || exams[0]); return; }
     if (id === "exam-prep") { setExam(null); window.location.hash = "#/exam-prep"; setView("exam-prep"); return; }
     if (id === "blog")      { setView("blog");      return; }
+    if (id === "languages") { setView("languages"); return; }
     if (id === "tools")     { setView("tools");     return; }
     if (id === "colleges")  { setCollegesTab(null); setCollegesCountry(null); setView("colleges"); return; }
     if (id === "planner")   { setView("tools");     return; }
@@ -340,6 +343,8 @@ function App() {
     content = <window.LP_Colleges onNav={onNav} initialTab={collegesTab} initialCountry={collegesCountry} />;
   } else if (view === "blog") {
     content = <window.LP_Blog onNav={onNav} />;
+  } else if (view === "languages") {
+    content = <window.LP_Languages onNav={onNav} />;
   } else if (view === "login") {
     content = <window.LP_LoginScreen onNav={onNav} onSuccess={() => setView("progress")} />;
   } else {

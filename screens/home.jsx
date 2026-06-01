@@ -483,6 +483,7 @@ function TopBar({ current = "home", onNav }) {
     ["colleges", "Study Abroad"],
     ["tools", "Tools"],
     ["learning", "Learning"],
+    ["languages", "Languages"],
     ["blog", "Blog"],
   ];
   // The slide-out drawer (mobile) offers the full set for discoverability.
@@ -494,6 +495,7 @@ function TopBar({ current = "home", onNav }) {
     ["colleges", "Study Abroad"],
     ["tools", "Tools"],
     ["learning", "Learning Club"],
+    ["languages", "Learn German & French"],
     ["blog", "Blog"],
     ["progress", "My Progress"],
   ];

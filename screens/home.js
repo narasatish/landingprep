@@ -310,6 +310,7 @@ function TopBar({ current = "home", onNav }) {
     ["colleges", "Study Abroad"],
     ["tools", "Tools"],
     ["learning", "Learning"],
+    ["languages", "Languages"],
     ["blog", "Blog"]
   ];
   const drawerItems = [
@@ -320,6 +321,7 @@ function TopBar({ current = "home", onNav }) {
     ["colleges", "Study Abroad"],
     ["tools", "Tools"],
     ["learning", "Learning Club"],
+    ["languages", "Learn German & French"],
     ["blog", "Blog"],
     ["progress", "My Progress"]
   ];
