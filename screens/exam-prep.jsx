@@ -89,6 +89,13 @@
     celpip: { general_ls: ["reading","writing"] },
   };
 
+  // Sections that are IDENTICAL across variants — show ALL their tests for every
+  // variant instead of filtering (IELTS Speaking is the same for Academic & GT,
+  // so General Training speaking must not be empty).
+  const VARIANT_AGNOSTIC_SECTIONS = {
+    ielts: ["speaking"],
+  };
+
   // ─────────── Detail: full + sections nav ───────────
   function ExamDetail({ examId, examMeta, onBack, onOpenSection, onOpenFull }) {
     const brand = EXAM_BRAND[examId] || { color: "#4f46e5", icon: "📋", tagline: "" };
@@ -184,8 +191,10 @@
 
     // Determine if this list supports variant filtering
     const variants = EXAM_VARIANTS[examId];
-    // Show variant pills for full mocks OR any section of an exam that has variants defined
-    const showVariantPills = !!variants;
+    // Variant-agnostic sections (e.g. IELTS Speaking) show ALL tests for any variant.
+    const variantAgnostic = !isFullMock && (VARIANT_AGNOSTIC_SECTIONS[examId] || []).includes(section);
+    // Show variant pills for full mocks OR any section that actually filters by variant
+    const showVariantPills = !!variants && !variantAgnostic;
     const defaultVariant = variants ? variants[0].id : null;
     const [variant, setVariant] = useState(defaultVariant);
 

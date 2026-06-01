@@ -3662,10 +3662,12 @@ html[data-theme="dark"] {
 .tools-hero { text-align: center; margin: 10px 0 22px; }
 .tools-hero h1 { font-size: clamp(28px, 4vw, 40px); margin: 0 0 8px; color: var(--ink); }
 .tools-hero p { color: var(--ink-3); font-size: 17px; margin: 0 auto; max-width: 620px; }
-.tools-tabs { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 0 0 22px; }
-.tools-tab { border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); padding: 9px 16px; border-radius: 999px; font-weight: 600; cursor: pointer; font-size: 14px; transition: all .15s; }
-.tools-tab:hover { border-color: var(--accent); }
-.tools-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+/* Sub-tabs render as a contained "segmented control" so they read clearly as a
+   SECOND level below the bold gradient group-tabs (no more same-size confusion). */
+.tools-tabs { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; width: fit-content; max-width: 100%; margin: 0 auto 22px; padding: 5px; background: var(--tint); border: 1px solid var(--line); border-radius: 16px; }
+.tools-tab { border: 0; background: transparent; color: var(--ink-3); padding: 7px 15px; border-radius: 11px; font-weight: 600; cursor: pointer; font-size: 13px; transition: all .15s; }
+.tools-tab:hover { color: var(--accent); background: color-mix(in srgb, var(--accent) 9%, transparent); }
+.tools-tab.active { background: var(--surface); color: var(--accent); box-shadow: 0 2px 8px -2px rgba(15,23,42,0.20); }
 .tool-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px 26px; box-shadow: 0 4px 18px rgba(15,23,42,.05); }
 .tool-card h2 { margin: 0 0 6px; color: var(--ink); font-size: 22px; }
 .tool-sub { color: var(--ink-3); margin: 0 0 18px; font-size: 15px; }

@@ -68,6 +68,9 @@
   const VARIANT_HIDDEN_SECTIONS = {
     celpip: { general_ls: ["reading", "writing"] }
   };
+  const VARIANT_AGNOSTIC_SECTIONS = {
+    ielts: ["speaking"]
+  };
   function ExamDetail({ examId, examMeta, onBack, onOpenSection, onOpenFull }) {
     const brand = EXAM_BRAND[examId] || { color: "#4f46e5", icon: "\u{1F4CB}", tagline: "" };
     const allSections = Object.keys((examMeta == null ? void 0 : examMeta.sections) || {});
@@ -146,7 +149,8 @@
     const brand = EXAM_BRAND[examId] || { color: "#4f46e5" };
     const pres = isFullMock ? { name: "Full Mock Tests", icon: "\u{1F4DD}" } : SECTION_PRESENTATION[section] || { name: section, icon: "\u{1F4CB}" };
     const variants = EXAM_VARIANTS[examId];
-    const showVariantPills = !!variants;
+    const variantAgnostic = !isFullMock && (VARIANT_AGNOSTIC_SECTIONS[examId] || []).includes(section);
+    const showVariantPills = !!variants && !variantAgnostic;
     const defaultVariant = variants ? variants[0].id : null;
     const [variant, setVariant] = useState(defaultVariant);
     useEffect(() => {

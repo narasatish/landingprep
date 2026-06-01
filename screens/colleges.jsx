@@ -73,16 +73,8 @@
         <window.LP_TopBar current="colleges" onNav={onNav} />
         <main className="tools-shell">
           <header className="tools-hero">
-            <div className="home-hero-photo sa-hero-photo">
-              <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1400&q=70"
-                   alt="Bright modern university campus library abroad" loading="lazy"
-                   onError={(e) => { const p = e.target.closest(".home-hero-photo"); if (p) p.classList.add("no-photo"); }} />
-              <div className="hhp-overlay" />
-              <div className="ep-hero-cap">
-                <h1>Study Abroad — by Country</h1>
-                <p>Pick your destination, then explore its top universities, admission, scholarships, costs, visa & immigration — all free.</p>
-              </div>
-            </div>
+            <h1>Study Abroad — by Country</h1>
+            <p>Pick your destination, then explore its top universities, admission, scholarships, costs, visa &amp; immigration — all free.</p>
           </header>
 
           {scoped && (

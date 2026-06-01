@@ -6,17 +6,22 @@
 //
 // Run:  node scripts/precompile-jsx.mjs   (also part of `npm run build`)
 import { transformSync } from "esbuild";
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, existsSync } from "fs";
 import path from "path";
 
 const root = process.cwd();
 const html = readFileSync(path.join(root, "index.html"), "utf8");
 
-// Collect every .jsx referenced as a <script src="...jsx">.
-const re = /src="([^"?]+\.jsx)(?:\?v=\d+)?"/g;
+// index.html loads precompiled `.js` files; map each back to its `.jsx` source
+// (skip any .js that has no .jsx, e.g. third-party). Also accept legacy `.jsx`
+// references so this works before/after the migration.
+const re = /src="([^"?]+)\.jsx?(?:\?v=\d+)?"/g;
 const files = new Set();
 let m;
-while ((m = re.exec(html))) files.add(m[1]);
+while ((m = re.exec(html))) {
+  const jsx = m[1] + ".jsx";
+  if (existsSync(path.join(root, jsx))) files.add(jsx);
+}
 
 let ok = 0;
 const errors = [];
