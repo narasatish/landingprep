@@ -115,8 +115,16 @@
         <div className="ep-breadcrumb">
           <a onClick={(e) => { e.preventDefault(); onBack(); }} href="#/exam-prep">Exam Prep</a> <span>/</span> <span>{label}</span>
         </div>
-        <h1 style={{ borderLeft: `4px solid ${brand.color}`, paddingLeft: 16 }}>{label}</h1>
-        <p className="ep-exam-tag">{brand.tagline}</p>
+        <div className="ep-detail-banner">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=70"
+               alt={label + " exam preparation"} loading="lazy"
+               onError={(e) => { const p = e.target.closest(".ep-detail-banner"); if (p) p.classList.add("no-photo"); }} />
+          <div className="ep-detail-tint" style={{ background: `linear-gradient(120deg, ${brand.color}e6, ${brand.color}99)` }} />
+          <div className="ep-detail-cap">
+            <span className="ep-detail-icon">{brand.icon}</span>
+            <div><h1>{label}</h1><p>{brand.tagline}</p></div>
+          </div>
+        </div>
 
         {/* Variant selector at detail level */}
         {variants && (

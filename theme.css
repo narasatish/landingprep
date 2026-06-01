@@ -4379,8 +4379,8 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 
 /* ── Home hero photo ── */
 .home-hero-photo {
-  position: relative; margin: 22px auto 0; max-width: 1080px; height: 300px;
-  border-radius: 22px; overflow: hidden; box-shadow: 0 24px 60px -28px rgba(15,23,42,0.5);
+  position: relative; margin: 26px auto 0; max-width: 1180px; height: 440px;
+  border-radius: 26px; overflow: hidden; box-shadow: 0 30px 70px -30px rgba(15,23,42,0.55);
   background: linear-gradient(120deg, #4F46E5, #06b6d4 55%, #9333EA);
 }
 .home-hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -4390,10 +4390,21 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
   position: absolute; left: 28px; bottom: 22px; right: 28px; color: #fff;
   font-weight: 700; font-size: clamp(16px, 2.2vw, 22px); text-shadow: 0 2px 16px rgba(0,0,0,0.5);
 }
-@media (max-width: 640px) { .home-hero-photo { height: 200px; border-radius: 16px; } }
+@media (max-width: 640px) { .home-hero-photo { height: 240px; border-radius: 18px; } }
 
 /* Exam-prep index hero photo caption */
 .ep-hero-photo { margin: 6px 0 26px; }
 .ep-hero-cap { position: absolute; left: 28px; right: 28px; bottom: 22px; }
 .ep-hero-cap h1 { margin: 0 0 4px; color: #fff; font-size: clamp(26px, 4vw, 40px); text-shadow: 0 2px 18px rgba(0,0,0,0.5); }
 .ep-hero-cap p { margin: 0; color: #eef2ff; font-size: clamp(14px, 1.6vw, 18px); text-shadow: 0 2px 14px rgba(0,0,0,0.5); }
+
+/* Per-exam detail banner (study photo tinted with the exam's brand colour) */
+.ep-detail-banner { position: relative; height: 150px; border-radius: 16px; overflow: hidden; margin: 6px 0 22px; box-shadow: 0 14px 34px -20px rgba(15,23,42,0.4); }
+.ep-detail-banner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ep-detail-banner.no-photo img { display: none; }
+.ep-detail-tint { position: absolute; inset: 0; }
+.ep-detail-cap { position: absolute; inset: 0; display: flex; align-items: center; gap: 16px; padding: 0 26px; }
+.ep-detail-icon { font-size: 38px; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3)); }
+.ep-detail-cap h1 { margin: 0; color: #fff; font-size: clamp(24px, 3.4vw, 34px); text-shadow: 0 2px 14px rgba(0,0,0,0.35); border: 0; padding: 0; }
+.ep-detail-cap p { margin: 2px 0 0; color: #f1f5f9; font-size: 14px; text-shadow: 0 2px 12px rgba(0,0,0,0.35); }
+@media (max-width: 640px) { .ep-detail-banner { height: 120px; } }
