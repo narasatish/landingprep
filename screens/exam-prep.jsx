@@ -52,9 +52,15 @@
     }, []);
     return (
       <div className="ep-index">
-        <div className="ep-hero">
-          <h1>Exam Prep</h1>
-          <p>990 practice tests across 7 international exams. Pick an exam to start.</p>
+        <div className="home-hero-photo ep-hero-photo">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1280&q=70"
+               alt="Students preparing for international exams" loading="lazy"
+               onError={(e) => { const p = e.target.closest(".home-hero-photo"); if (p) p.classList.add("no-photo"); }} />
+          <div className="hhp-overlay" />
+          <div className="ep-hero-cap">
+            <h1>Exam Prep</h1>
+            <p>990 free practice tests across 7 international exams. Pick an exam to start.</p>
+          </div>
         </div>
         <div className="ep-exam-grid">
           {EXAM_ORDER.map(eid => {

@@ -3370,7 +3370,13 @@ button.send:hover:not(:disabled) { transform: scale(1.08); }
   color: var(--ink); transition: border-color .2s ease, box-shadow .2s ease;
 }
 .lc-search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent); }
-.lc-topic-list { display: flex; flex-direction: column; gap: 12px; }
+.lc-topic-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; align-items: start; }
+@media (max-width: 720px) { .lc-topic-list { grid-template-columns: 1fr; } }
+/* An opened card expands to full width so its model answer has room to breathe. */
+.lc-topic-list .topic-card.is-open { grid-column: 1 / -1; }
+.lc-topic-list .topic-card { position: relative; }
+.lc-topic-list .topic-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent), #06b6d4); opacity: 0; transition: opacity .2s ease; }
+.lc-topic-list .topic-card:hover::before, .lc-topic-list .topic-card.is-open::before { opacity: .9; }
 .topic-card { border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease, transform .15s ease; }
 .topic-card:hover { border-color: var(--line-2); box-shadow: 0 8px 26px -14px rgba(15,23,42,0.18); }
 .topic-card.is-open { border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); box-shadow: 0 12px 32px -16px rgba(79,70,229,0.25); }
@@ -4385,3 +4391,9 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
   font-weight: 700; font-size: clamp(16px, 2.2vw, 22px); text-shadow: 0 2px 16px rgba(0,0,0,0.5);
 }
 @media (max-width: 640px) { .home-hero-photo { height: 200px; border-radius: 16px; } }
+
+/* Exam-prep index hero photo caption */
+.ep-hero-photo { margin: 6px 0 26px; }
+.ep-hero-cap { position: absolute; left: 28px; right: 28px; bottom: 22px; }
+.ep-hero-cap h1 { margin: 0 0 4px; color: #fff; font-size: clamp(26px, 4vw, 40px); text-shadow: 0 2px 18px rgba(0,0,0,0.5); }
+.ep-hero-cap p { margin: 0; color: #eef2ff; font-size: clamp(14px, 1.6vw, 18px); text-shadow: 0 2px 14px rgba(0,0,0,0.5); }
