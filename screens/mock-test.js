@@ -199,9 +199,40 @@ function buildTest(examId, testType) {
       });
     }
     if (testType === "full" || testType === "section_speaking") {
-      const speakingArr = get("ielts.speaking", []);
-      const part2 = Array.isArray(speakingArr) ? speakingArr.find((p) => p.part === 2) : null;
-      const cards = part2 && Array.isArray(part2.cueCards) && part2.cueCards.length ? part2.cueCards : defaultSpeakingCards;
+      const sp = get("ielts.speaking", []);
+      const arr = Array.isArray(sp) ? sp : [];
+      const partsObj = arr.find((p) => p && p.part === 2);
+      const flat = arr.filter((p) => p && (p.prompt || p.topic) && !p.part);
+      const cueSource = partsObj && Array.isArray(partsObj.cueCards) && partsObj.cueCards[0] || flat[0] || defaultSpeakingCards[0] || {};
+      const cueText = cueSource.prompt || cueSource.cue || cueSource.topic || "Describe a memorable experience. You should say what it was, when it happened, who was with you, and explain why it was memorable.";
+      const P1 = [
+        "Let's talk about where you live. Do you live in a house or a flat?",
+        "What do you like most about your home or neighbourhood?",
+        "Do you work, or are you a student at the moment?",
+        "What do you usually enjoy doing in your free time?"
+      ];
+      const P3extra = [
+        "How has this changed compared with the past?",
+        "Do you think this will be different in the future? Why or why not?",
+        "How do people in your country generally feel about this?"
+      ];
+      const cards = [];
+      P1.forEach((q, i) => cards.push({ part: 1, id: "sp_p1_" + i, prompt: q }));
+      cards.push({
+        part: 2,
+        isCueCard: true,
+        id: "sp_p2",
+        prompt: cueText,
+        sampleAnswer: cueSource.modelAnswer || cueSource.sampleAnswer || ""
+      });
+      flat.slice(1, 3).forEach((p, i) => cards.push({
+        part: 3,
+        id: "sp_p3_" + i,
+        prompt: p.prompt || p.topic,
+        sampleAnswer: p.modelAnswer || ""
+      }));
+      const need = Math.max(0, 4 - cards.filter((c) => c.part === 3).length);
+      P3extra.slice(0, need).forEach((q, i) => cards.push({ part: 3, id: "sp_p3g_" + i, prompt: q }));
       sections.push({
         id: "speaking",
         name: "Speaking",
