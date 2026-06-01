@@ -4339,3 +4339,17 @@ h4.md-h { font-size: 14px; letter-spacing: .01em; }
 .seo-content-inner p { color: var(--ink-2); font-size: 15px; line-height: 1.75; margin: 0 0 14px; }
 .seo-content-inner a { color: var(--accent); font-weight: 600; }
 .seo-content-inner a:hover { text-decoration: underline; }
+
+/* ── Blog cards: clean colored accent (top gradient bar + soft pill tag) ── */
+.seo-grid .seo-card { position: relative; overflow: hidden; padding-top: 24px; }
+.seo-grid .seo-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--accent), #06b6d4 65%, #f59e0b);
+  opacity: 0.95;
+}
+.seo-grid .seo-card .tag {
+  display: inline-block; background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent); padding: 4px 10px; border-radius: 999px; letter-spacing: 0.08em;
+}
+.seo-grid .seo-card .seo-readtime { color: var(--ink-3); font-size: 12px; font-weight: 600; }
+html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb, var(--accent) 22%, transparent); }

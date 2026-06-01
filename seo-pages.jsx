@@ -145,8 +145,15 @@
       ]
     }
   ];
-  // Append country admission/immigration-change articles (from blog-data.jsx).
-  try { if (window.LP_BLOG_EXTRA) ARTICLES.unshift(...window.LP_BLOG_EXTRA); } catch (e) {}
+  // Append extra articles (from blog-data.jsx), skipping any whose id already
+  // exists so a post can never render twice (fixes the duplicate-blogs bug).
+  try {
+    if (window.LP_BLOG_EXTRA) {
+      const have = new Set(ARTICLES.map((a) => a.id));
+      const fresh = window.LP_BLOG_EXTRA.filter((a) => a && a.id && !have.has(a.id));
+      ARTICLES.unshift(...fresh);
+    }
+  } catch (e) {}
 
   function BlogIndex({ onNav, onOpen }) {
     return (
@@ -160,13 +167,6 @@
               Evidence-based strategies, score targets by country, exam comparisons, and study plans — written for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE, and GMAT Focus.
             </p>
           </div>
-
-          {window.LP_ChangesFeed && (
-            <div className="blog-live-updates">
-              <window.LP_ChangesFeed title="🌍 Latest immigration, visa & admission updates" limit={8} />
-              <p className="tool-note" style={{ marginTop: 8 }}>Auto-updates from our live feed — refreshed as immigration and admission rules change (Canada Express Entry / CEC draws, Australia & UK visa rules, college requirements and more).</p>
-            </div>
-          )}
 
           <div className="seo-grid">
             {ARTICLES.map((a) => {

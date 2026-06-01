@@ -201,6 +201,49 @@
         { h: "Tips to score higher", body: "Speak clearly and at length (don't stop early), use varied vocabulary and grammar, manage the strict timers, and prepare your quiet, well-lit room to meet the test's proctoring rules." },
         { h: "Practise free", body: "Take free Duolingo-style practice on LandingPrep and convert your target score to IELTS/TOEFL with the free Score & Eligibility tool." }
       ]
+    },
+    {
+      id: "best-countries-study-abroad-2026", tag: "Study Abroad", date: "2026",
+      title: "Best Countries to Study Abroad in 2026: Cost, Work Rights & PR Compared",
+      excerpt: "A clear, no-hype comparison of the top study destinations — tuition, living cost, post-study work length, and how easy it is to stay long-term. Pick the country that fits your goal and budget.",
+      kw: "best countries to study abroad 2026, cheapest country to study abroad, study abroad with work rights, post study work visa comparison, study abroad PR pathway",
+      sections: [
+        { h: "How to choose", body: "Don't pick by ranking alone. Weigh four things: total cost (tuition + living), how many hours you can work while studying, the length of the post-study work visa, and how realistic permanent residency is. The right country depends on whether your goal is the cheapest degree, the best job market, or settling long-term." },
+        { h: "USA", body: "Highest earning potential and research strength, but also the highest cost. F-1 students get up to 3 years of OPT (STEM). PR is competitive (H-1B lottery → green card). Best for top STEM students aiming high." },
+        { h: "Canada", body: "Strong student-to-PR pathway via Express Entry, though 2025–26 rules tightened (caps, higher funds). PGWP up to 3 years. Mid-range cost. Best for those prioritising settlement." },
+        { h: "UK", body: "One-year master's saves money and time; 2-year Graduate Route to work after. Settlement needs a sponsored Skilled Worker job (£38,700+). Best for fast, focused master's study." },
+        { h: "Germany & Europe", body: "Public universities in Germany charge little to no tuition; you mainly fund living costs. An 18-month job-seeker visa follows graduation. Best for budget-conscious students comfortable with some German." },
+        { h: "Australia & New Zealand", body: "Good lifestyle, strong work rights, and post-study work visas (2–4 years). Higher living costs in big cities. Solid PR points systems. Best for a balanced study-work-settle plan." },
+        { h: "Next step", body: "Use LandingPrep's free College Predictor and Cost & ROI calculator to compare real universities and total costs for your shortlist — then take a free mock test for the exam they require." }
+      ]
+    },
+    {
+      id: "how-to-get-scholarship-study-abroad", tag: "Scholarships", date: "2026",
+      title: "How to Get a Scholarship to Study Abroad: A Step-by-Step 2026 Guide",
+      excerpt: "Most students never apply for the scholarships they'd actually win. Here's the practical system — where to find them, what wins, and how to write an application that stands out.",
+      kw: "how to get scholarship to study abroad, fully funded scholarships 2026, scholarship application tips, merit scholarships international students, study abroad funding",
+      sections: [
+        { h: "Start 12 months early", body: "The biggest reason students miss scholarships is timing — many close 8–10 months before the intake. Build a calendar of deadlines the moment you shortlist universities. LandingPrep's Scholarship finder lists deadlines so you don't miss them." },
+        { h: "Three types worth targeting", body: "1) University merit scholarships (automatic or by application — often the easiest to win). 2) Government schemes (Chevening, Fulbright, DAAD, Australia Awards — prestigious, competitive). 3) Private/NGO and country-specific awards (smaller but less contested). Apply to all three tiers, not just the famous ones." },
+        { h: "What actually wins", body: "Strong academics matter, but committees pick people, not transcripts. A clear goal, evidence of leadership or impact, and a specific reason you chose that programme beat a generic 'I am hardworking' essay every time. Quantify everything — 'raised ₹2 lakh for a clinic' beats 'did social work'." },
+        { h: "Write a sharp essay", body: "Open with a specific moment, not a cliché. State your goal, why this scholarship enables it, and what you'll give back. Mirror the scholarship's values in your examples. Keep one essay per scholarship — never send a copy-paste." },
+        { h: "Get strong recommenders", body: "Pick referees who can give specific stories about you, and give them your CV, goal, and a deadline reminder. A vivid, detailed letter from a lecturer who knows you beats a vague one from a famous name." },
+        { h: "Use the free tools", body: "Find awards with LandingPrep's Scholarship finder, draft your essay with the SOP builder, and polish it — all free. Apply to 10+ scholarships; the more strong applications you send, the better your odds." }
+      ]
+    },
+    {
+      id: "ielts-vs-pte-which-easier-2026", tag: "IELTS", date: "2026",
+      title: "IELTS vs PTE in 2026: Which Is Easier and Which Should You Take?",
+      excerpt: "IELTS and PTE are both widely accepted — but they suit different people. Compare scoring, speaking format, results speed, and who each test favours, so you book the right one.",
+      kw: "ielts vs pte, which is easier ielts or pte, pte vs ielts 2026, pte academic for student visa, ielts or pte for australia canada",
+      sections: [
+        { h: "Quick verdict", body: "If you're nervous about a face-to-face speaking exam and want fast, computer-scored results, PTE often feels easier. If you prefer a human examiner and lots of free practice material, IELTS may suit you. Both are accepted for most universities and visas in the UK, Australia, Canada and New Zealand — confirm your specific programme." },
+        { h: "Speaking format", body: "IELTS Speaking is a live 11–14 minute interview with a human examiner. PTE Speaking is recorded and scored by AI, with tasks like Read Aloud and Repeat Sentence. Confident speakers who freeze on tech may prefer IELTS; those who dislike face-to-face exams prefer PTE." },
+        { h: "Scoring & accuracy", body: "IELTS uses 0–9 bands marked partly by humans. PTE uses 10–90 AI scoring that rewards clear pronunciation and fluency mechanically — you can 'game' it with technique. PTE's integrated tasks score multiple skills at once, so high-leverage tasks (Read Aloud, Repeat Sentence) lift your whole score." },
+        { h: "Results speed", body: "PTE typically returns results in 2–5 days; IELTS computer-delivered in 3–5 days, paper-based in up to 13 days. If you're racing a visa or admission deadline, PTE's speed can matter." },
+        { h: "Which to pick", body: "Take a free practice section of each on LandingPrep and see which scoring style fits you. Strong pronunciation + comfort with computers → PTE. Prefer human interaction + abundant prep resources → IELTS. There's no universally 'easier' test — only the one that fits you." },
+        { h: "Practise both free", body: "LandingPrep has free IELTS and PTE mock tests with instant scoring and an AI speaking partner — try both before you pay the booking fee." }
+      ]
     }
   ];
 

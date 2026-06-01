@@ -1,0 +1,44 @@
+name: Weekly Newsletter
+
+# Sends the weekly digest every Monday 09:00 UTC. You can also run it on demand
+# from the Actions tab (workflow_dispatch) with custom subject/headline/body.
+#
+# SETUP (one time):
+#   1. In Render → your service → Environment, add  ADMIN_SECRET = <a long random string>
+#   2. In GitHub → repo Settings → Secrets and variables → Actions → New secret:
+#        ADMIN_SECRET  = <the SAME string as in Render>
+#   That's it — nothing here exposes the secret.
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"   # every Monday 09:00 UTC
+  workflow_dispatch:
+    inputs:
+      subject:
+        description: "Email subject"
+        default: "Your weekly study-abroad boost ✈️"
+      headline:
+        description: "Big headline inside the email"
+        default: "This week on LandingPrep"
+      body:
+        description: "HTML body"
+        default: "<p>Fresh free mock tests, new scholarship deadlines, and the latest visa updates are live. Keep your prep streak going!</p>"
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger newsletter send on the backend
+        env:
+          ADMIN_SECRET: ${{ secrets.ADMIN_SECRET }}
+          SUBJECT: ${{ github.event.inputs.subject || 'Your weekly study-abroad boost ✈️' }}
+          HEADLINE: ${{ github.event.inputs.headline || 'This week on LandingPrep' }}
+          BODY: ${{ github.event.inputs.body || '<p>Fresh free mock tests, new scholarship deadlines, and the latest visa updates are live. Keep your prep streak going!</p>' }}
+        run: |
+          if [ -z "$ADMIN_SECRET" ]; then echo "ADMIN_SECRET secret not set — skipping."; exit 0; fi
+          payload=$(jq -nc --arg s "$SUBJECT" --arg h "$HEADLINE" --arg b "$BODY" \
+            '{subject:$s, headline:$h, body:$b}')
+          curl -fsS -X POST "https://landingprep.com/api/admin/send-newsletter" \
+            -H "X-Admin-Key: $ADMIN_SECRET" \
+            -H "Content-Type: application/json" \
+            -d "$payload"

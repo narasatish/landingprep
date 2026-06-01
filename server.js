@@ -43,6 +43,45 @@ app.use(cors({
   methods: ["GET","POST","OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
+
+// Render/most hosts run behind a reverse proxy — trust it so client IPs & HTTPS detection work.
+app.set("trust proxy", 1);
+app.disable("x-powered-by");
+
+// ── Security headers (defence-in-depth on every response) ──────────────────────
+app.use((req, res, next) => {
+  res.setHeader("X-Content-Type-Options", "nosniff");      // block MIME sniffing
+  res.setHeader("X-Frame-Options", "SAMEORIGIN");          // anti-clickjacking
+  res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+  res.setHeader("Permissions-Policy", "geolocation=(), microphone=(self), camera=()");
+  res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+  if (req.secure || req.headers["x-forwarded-proto"] === "https") {
+    res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains"); // force HTTPS
+  }
+  next();
+});
+
+// ── Lightweight in-memory rate limiting (brute-force / abuse / DDoS dampening) ──
+function rateLimiter({ windowMs, max, message }) {
+  const hits = new Map(); // ip -> { count, reset }
+  setInterval(() => { const now = Date.now(); for (const [k, v] of hits) if (v.reset <= now) hits.delete(k); }, windowMs).unref();
+  return (req, res, next) => {
+    const ip = (req.headers["x-forwarded-for"] || "").split(",")[0].trim() || req.socket.remoteAddress || "unknown";
+    const now = Date.now();
+    let rec = hits.get(ip);
+    if (!rec || rec.reset <= now) { rec = { count: 0, reset: now + windowMs }; hits.set(ip, rec); }
+    rec.count++;
+    if (rec.count > max) {
+      res.setHeader("Retry-After", Math.ceil((rec.reset - now) / 1000));
+      return res.status(429).json({ error: message || "Too many requests. Please slow down." });
+    }
+    next();
+  };
+}
+// 120 API calls/min/IP overall; 20 auth attempts/15min/IP (stops password brute-force).
+app.use("/api/", rateLimiter({ windowMs: 60 * 1000, max: 120, message: "Too many requests — please wait a minute." }));
+app.use("/api/auth/", rateLimiter({ windowMs: 15 * 60 * 1000, max: 20, message: "Too many attempts — please try again in 15 minutes." }));
+
 app.use(express.json({ limit: "512kb" }));
 
 // Serve static files from the same directory
@@ -369,6 +408,45 @@ async function sendMail(to, subject, html) {
   try { await t.sendMail({ from: SMTP.from, to, subject, html, replyTo: SMTP.user }); return true; }
   catch (e) { console.warn("[mail] send failed:", e.message); return false; }
 }
+
+// ── Newsletter (weekly digest) ─────────────────────────────────────────────────
+// One-click unsubscribe via a signed link (no login needed) + an admin-only send
+// endpoint. Schedule the send with a GitHub Action (.github/workflows/newsletter.yml).
+const ADMIN_SECRET = process.env.ADMIN_SECRET || "";
+function unsubToken(email) { return crypto.createHmac("sha256", AUTH_SECRET).update("unsub|" + String(email).toLowerCase()).digest("base64url"); }
+function unsubLink(email) { return "https://landingprep.com/api/newsletter/unsubscribe?email=" + encodeURIComponent(email) + "&token=" + unsubToken(email); }
+
+app.get("/api/newsletter/unsubscribe", (req, res) => {
+  const email = String(req.query.email || "").toLowerCase();
+  const token = String(req.query.token || "");
+  if (!validEmail(email) || token !== unsubToken(email)) return res.status(400).send("Invalid or expired unsubscribe link.");
+  if (STORE.users[email]) { STORE.users[email].noNewsletter = true; persist(); }
+  res.set("Content-Type", "text/html").send(
+    "<div style='font-family:system-ui;max-width:540px;margin:60px auto;text-align:center'>" +
+    "<h2>You're unsubscribed ✅</h2><p style='color:#475569'>You won't receive LandingPrep newsletters anymore. " +
+    "You can re-enable them anytime from your account. <a href='https://landingprep.com/'>Back to LandingPrep</a></p></div>");
+});
+
+// Admin-only: send the weekly newsletter to all opted-in users.
+//   POST /api/admin/send-newsletter   header: X-Admin-Key: <ADMIN_SECRET>
+//   body: { subject, headline, body }   (body may contain simple HTML)
+app.post("/api/admin/send-newsletter", async (req, res) => {
+  if (!ADMIN_SECRET || req.headers["x-admin-key"] !== ADMIN_SECRET) return res.status(403).json({ error: "Forbidden" });
+  if (!mailer()) return res.status(503).json({ error: "SMTP not configured — set SMTP_PASS." });
+  const { subject, headline, body } = req.body || {};
+  if (!subject || !body) return res.status(400).json({ error: "subject and body are required." });
+  const recipients = Object.values(STORE.users).filter((u) => u && validEmail(u.email) && !u.noNewsletter);
+  let sent = 0, failed = 0;
+  for (const u of recipients) {
+    const html = emailTemplate("newsletter", {
+      NAME: (u.name || "there").split(" ")[0], SUBJECT: subject,
+      HEADLINE: headline || subject, BODY: body, UNSUB_LINK: unsubLink(u.email),
+    });
+    (await sendMail(u.email, subject, html)) ? sent++ : failed++;
+    await new Promise((r) => setTimeout(r, 120)); // gentle pacing for SMTP limits
+  }
+  res.json({ ok: true, recipients: recipients.length, sent, failed });
+});
 
 app.post("/api/auth/signup", (req, res) => {
   const { name, email, password } = req.body || {};
