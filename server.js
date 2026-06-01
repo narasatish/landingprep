@@ -351,6 +351,53 @@ function persist() {
     catch (e) { console.warn("[auth] persist failed:", e.message); }
   }, 200);
 }
+
+// ── Durable store via Firebase Admin (Firestore) — OPTIONAL but recommended ─────
+// Render's free disk is wiped on every redeploy, so the JSON file above is not
+// durable. When FIREBASE_SERVICE_ACCOUNT is set (the service-account JSON, as one
+// line, in Render's Environment), user accounts + history are mirrored to Firestore
+// and reloaded on boot — so nothing is lost across redeploys/restarts.
+//   Get the JSON: Firebase Console → ⚙ Project settings → Service accounts →
+//   "Generate new private key". Paste the whole file into the env var.
+let FS_DB = null;
+(function initFirestore() {
+  const raw = process.env.FIREBASE_SERVICE_ACCOUNT || "";
+  if (!raw) { console.log("[firestore] not configured — using local file store (not durable on Render free)."); return; }
+  try {
+    const admin = require("firebase-admin");
+    const cred = JSON.parse(raw);
+    admin.initializeApp({ credential: admin.credential.cert(cred), projectId: cred.project_id });
+    FS_DB = admin.firestore();
+    console.log("[firestore] connected — user accounts are now durable.");
+  } catch (e) { console.warn("[firestore] init failed; using local file store:", e.message); }
+})();
+
+async function fsHydrate() {
+  if (!FS_DB) return;
+  try {
+    const snap = await FS_DB.collection("accounts").get();
+    snap.forEach((doc) => {
+      const d = doc.data() || {};
+      STORE.users[doc.id] = { name: d.name, email: d.email, hash: d.hash, createdAt: d.createdAt, noNewsletter: !!d.noNewsletter };
+      if (Array.isArray(d.history)) STORE.history[doc.id] = d.history;
+    });
+    console.log("[firestore] hydrated " + snap.size + " account(s) from Firestore.");
+  } catch (e) { console.warn("[firestore] hydrate failed:", e.message); }
+}
+
+function fsSaveUser(key) {
+  if (!FS_DB || !STORE.users[key]) return;
+  const u = STORE.users[key];
+  FS_DB.collection("accounts").doc(key).set({
+    name: u.name || "", email: u.email || "", hash: u.hash || "",
+    createdAt: u.createdAt || Date.now(), noNewsletter: !!u.noNewsletter,
+    history: (STORE.history[key] || []).slice(0, 100),
+  }, { merge: true }).catch((e) => console.warn("[firestore] save failed:", e.message));
+}
+
+// Write-through: persist to the local file (fast) AND mirror this user to Firestore (durable).
+function persistUser(key) { persist(); fsSaveUser(key); }
+
 function hashPw(password) {
   const salt = crypto.randomBytes(16).toString("hex");
   const hash = crypto.scryptSync(password, salt, 32).toString("hex");
@@ -420,7 +467,7 @@ app.get("/api/newsletter/unsubscribe", (req, res) => {
   const email = String(req.query.email || "").toLowerCase();
   const token = String(req.query.token || "");
   if (!validEmail(email) || token !== unsubToken(email)) return res.status(400).send("Invalid or expired unsubscribe link.");
-  if (STORE.users[email]) { STORE.users[email].noNewsletter = true; persist(); }
+  if (STORE.users[email]) { STORE.users[email].noNewsletter = true; persistUser(email); }
   res.set("Content-Type", "text/html").send(
     "<div style='font-family:system-ui;max-width:540px;margin:60px auto;text-align:center'>" +
     "<h2>You're unsubscribed ✅</h2><p style='color:#475569'>You won't receive LandingPrep newsletters anymore. " +
@@ -456,7 +503,7 @@ app.post("/api/auth/signup", (req, res) => {
   const key = String(email).toLowerCase();
   if (STORE.users[key]) return res.status(409).json({ error: "An account with this email already exists. Try signing in." });
   STORE.users[key] = { name, email, hash: hashPw(password), createdAt: Date.now() };
-  persist();
+  persistUser(key);
   // Fire-and-forget welcome email (never blocks signup).
   sendMail(email, "Welcome to LandingPrep 🎓", emailTemplate("welcome", { NAME: (name || "there").split(" ")[0] }));
   res.json({ ok: true, user: { name, email }, token: signToken(key) });
@@ -476,7 +523,7 @@ app.post("/api/auth/reset", (req, res) => {
   if (!STORE.users[key]) return res.status(404).json({ error: "No account found with this email." });
   if (String(password || "").length < 6) return res.status(400).json({ error: "New password must be at least 6 characters." });
   STORE.users[key].hash = hashPw(password);
-  persist();
+  persistUser(key);
   // Security notification email (fire-and-forget).
   sendMail(STORE.users[key].email, "Your LandingPrep password was changed",
     emailTemplate("password-reset", { NAME: (STORE.users[key].name || "there").split(" ")[0], RESET_LINK: (process.env.FRONTEND_ORIGIN || "https://landingprep.com") + "/#/login" }));
@@ -513,7 +560,7 @@ app.post("/api/auth/history", (req, res) => {
   if (!email) return res.status(401).json({ error: "Not authenticated." });
   const list = Array.isArray(req.body && req.body.history) ? req.body.history : [];
   STORE.history[email] = list.slice(0, 100);
-  persist();
+  persistUser(email);
   res.json({ ok: true, count: STORE.history[email].length });
 });
 
@@ -604,6 +651,7 @@ app.post("/api/leaderboard/submit", (req, res) => {
 
 // ── Start ─────────────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
+  fsHydrate(); // load durable accounts from Firestore (if configured) on boot
   console.log(`\n🚀  LandingPrep server running at http://localhost:${PORT}`);
   console.log(`   Gemini key: ${GEMINI_API_KEY ? "✅ loaded from .env" : "❌ NOT SET — add to .env"}`);
   console.log(`   CORS origin: ${FRONTEND_ORIGIN}`);
