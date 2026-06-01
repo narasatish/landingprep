@@ -464,6 +464,7 @@ function TopBar({ current = "home", onNav }) {
   // Slim primary nav (5 items). Exam Hub is folded into "Exams"; AI Agents and
   // Progress live in the profile menu + mobile drawer.
   const items = [
+    ["home", "Home"],
     ["exam-prep", "Exams"],
     ["exams", "Exam Hub"],
     ["colleges", "Study Abroad"],

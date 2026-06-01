@@ -251,7 +251,7 @@ function App() {
     if (id === "writing")   { setView("agents");    return; }
     if (id === "progress")  { setView("progress");  return; }
     if (id === "exams")     { setView("guide");     setExam(exam || exams[0]); return; }
-    if (id === "exam-prep") { setView("exam-prep"); return; }
+    if (id === "exam-prep") { setExam(null); window.location.hash = "#/exam-prep"; setView("exam-prep"); return; }
     if (id === "blog")      { setView("blog");      return; }
     if (id === "tools")     { setView("tools");     return; }
     if (id === "colleges")  { setCollegesTab(null); setCollegesCountry(null); setView("colleges"); return; }
