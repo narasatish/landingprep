@@ -9,7 +9,8 @@
     "seo": "node scripts/generate-seo-pages.mjs",
     "precompile": "node scripts/precompile-jsx.mjs",
     "build": "node scripts/precompile-jsx.mjs && node scripts/generate-seo-pages.mjs",
-    "test": "node tools/run-tests.js"
+    "test": "node tools/run-tests.js && node tools/exam-validation.mjs",
+    "test:exams": "node tools/exam-validation.mjs"
   },
   "dependencies": {
     "cors": "^2.8.5",
