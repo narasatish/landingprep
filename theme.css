@@ -4392,6 +4392,10 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 }
 @media (max-width: 640px) { .home-hero-photo { height: 240px; border-radius: 18px; } }
 
+/* Study-Abroad page header photo (shorter than the home hero) */
+.sa-hero-photo { height: 240px; margin: 4px auto 20px; }
+@media (max-width: 640px) { .sa-hero-photo { height: 170px; } }
+
 /* Exam-prep index hero photo caption */
 .ep-hero-photo { margin: 6px 0 26px; }
 .ep-hero-cap { position: absolute; left: 28px; right: 28px; bottom: 22px; }
