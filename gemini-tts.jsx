@@ -22,7 +22,9 @@
     if (k) localStorage.setItem(KEY_STORAGE, k);
     else localStorage.removeItem(KEY_STORAGE);
   }
-  function isEnabled() { return !!getApiKey(); }
+  // Natural voice is served by the backend /api/tts proxy, so it's ON by default
+  // (no client key needed). Users can opt out via the lp_tts_off flag.
+  function isEnabled() { try { return localStorage.getItem("lp_tts_off") !== "1"; } catch (e) { return true; } }
 
   // ── PCM → WAV conversion ──────────────────────────────────────────────
   function base64ToBytes(b64) {
@@ -74,32 +76,24 @@
 
   // ── API call ──────────────────────────────────────────────────────────
   async function fetchTTSBase64(text, voiceName) {
-    const key = getApiKey();
-    if (!key) throw new Error("No Gemini API key");
     const cached = getCached(text, voiceName);
     if (cached) return cached;
 
-    const body = {
-      contents: [{ parts: [{ text }] }],
-      generationConfig: {
-        responseModalities: ["AUDIO"],
-        speechConfig: {
-          voiceConfig: { prebuiltVoiceConfig: { voiceName } }
-        }
-      }
-    };
-    const res = await fetch(`${ENDPOINT}?key=${encodeURIComponent(key)}`, {
+    // Call the backend TTS proxy (it holds the Gemini key) — natural neural voice
+    // without exposing any key in the browser.
+    const base = (window.LP_API_BASE || "");
+    const res = await fetch(base + "/api/tts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body)
+      body: JSON.stringify({ text, voice: voiceName }),
     });
     if (!res.ok) {
       const err = await res.text();
-      throw new Error(`Gemini TTS ${res.status}: ${err.slice(0, 200)}`);
+      throw new Error(`TTS ${res.status}: ${err.slice(0, 160)}`);
     }
     const json = await res.json();
-    const b64 = json?.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
-    if (!b64) throw new Error("Empty audio in Gemini response");
+    const b64 = json && json.audio;
+    if (!b64) throw new Error("Empty audio from TTS proxy");
     setCached(text, voiceName, b64);
     return b64;
   }

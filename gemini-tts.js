@@ -12,7 +12,11 @@
     else localStorage.removeItem(KEY_STORAGE);
   }
   function isEnabled() {
-    return !!getApiKey();
+    try {
+      return localStorage.getItem("lp_tts_off") !== "1";
+    } catch (e) {
+      return true;
+    }
   }
   function base64ToBytes(b64) {
     const bin = atob(b64);
@@ -66,32 +70,21 @@
     }
   }
   async function fetchTTSBase64(text, voiceName) {
-    var _a, _b, _c, _d, _e, _f;
-    const key = getApiKey();
-    if (!key) throw new Error("No Gemini API key");
     const cached = getCached(text, voiceName);
     if (cached) return cached;
-    const body = {
-      contents: [{ parts: [{ text }] }],
-      generationConfig: {
-        responseModalities: ["AUDIO"],
-        speechConfig: {
-          voiceConfig: { prebuiltVoiceConfig: { voiceName } }
-        }
-      }
-    };
-    const res = await fetch(`${ENDPOINT}?key=${encodeURIComponent(key)}`, {
+    const base = window.LP_API_BASE || "";
+    const res = await fetch(base + "/api/tts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body)
+      body: JSON.stringify({ text, voice: voiceName })
     });
     if (!res.ok) {
       const err = await res.text();
-      throw new Error(`Gemini TTS ${res.status}: ${err.slice(0, 200)}`);
+      throw new Error(`TTS ${res.status}: ${err.slice(0, 160)}`);
     }
     const json = await res.json();
-    const b64 = (_f = (_e = (_d = (_c = (_b = (_a = json == null ? void 0 : json.candidates) == null ? void 0 : _a[0]) == null ? void 0 : _b.content) == null ? void 0 : _c.parts) == null ? void 0 : _d[0]) == null ? void 0 : _e.inlineData) == null ? void 0 : _f.data;
-    if (!b64) throw new Error("Empty audio in Gemini response");
+    const b64 = json && json.audio;
+    if (!b64) throw new Error("Empty audio from TTS proxy");
     setCached(text, voiceName, b64);
     return b64;
   }

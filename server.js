@@ -96,6 +96,34 @@ app.get("/api/health", (_req, res) => {
   });
 });
 
+// ── Text-to-speech proxy (natural Gemini voice) ───────────────────────────────
+// The frontend can't hold the Gemini key, so it calls THIS endpoint, which
+// proxies to Gemini 2.5 TTS using the server key and returns base64 audio. This
+// is what gives the natural human examiner/listening voice across the site.
+app.post("/api/tts", async (req, res) => {
+  if (!GEMINI_API_KEY) return res.status(503).json({ error: "TTS unavailable (no key)" });
+  const text = String((req.body && req.body.text) || "").slice(0, 2000);
+  const voice = (String((req.body && req.body.voice) || "Kore").replace(/[^A-Za-z]/g, "").slice(0, 24)) || "Kore";
+  if (!text.trim()) return res.status(400).json({ error: "text required" });
+  try {
+    const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=" + GEMINI_API_KEY;
+    const r = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: "Say the following clearly and naturally in a warm, friendly voice: " + text }] }],
+        generationConfig: { responseModalities: ["AUDIO"], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: voice } } } },
+      }),
+    });
+    if (!r.ok) { const e = await r.text(); return res.status(502).json({ error: "tts upstream " + r.status, detail: e.slice(0, 160) }); }
+    const j = await r.json();
+    const b64 = j && j.candidates && j.candidates[0] && j.candidates[0].content && j.candidates[0].content.parts && j.candidates[0].content.parts[0] && j.candidates[0].content.parts[0].inlineData && j.candidates[0].content.parts[0].inlineData.data;
+    if (!b64) return res.status(502).json({ error: "empty audio" });
+    res.set("Cache-Control", "public, max-age=86400");
+    res.json({ audio: b64 });
+  } catch (e) { res.status(500).json({ error: "tts failed", detail: e.message }); }
+});
+
 // ── Live content feed ────────────────────────────────────────────────────────
 // Serves live-content.json read fresh on every request (no cache) so editing
 // the file updates fees / patterns / change-feed across the whole site with no
