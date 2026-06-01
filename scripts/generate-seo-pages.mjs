@@ -168,6 +168,8 @@ function head({ title, desc, path, kw, jsonLdBlocks }) {
 <meta name="twitter:description" content="${esc(desc)}"/>
 <meta name="theme-color" content="#4F46E5"/>
 <link rel="icon" href="/icon.svg" type="image/svg+xml"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ60SKWWKH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XZ60SKWWKH');</script>
 ${jsonLdBlocks.join("\n")}
 <style>
 :root{--brand:#4F46E5;--ink:#0f172a;--muted:#64748b;--bg:#f8fafc;--card:#fff;--line:#e2e8f0}
