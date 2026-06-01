@@ -8,6 +8,21 @@
   const COUNTRIES = () => window.LP_COUNTRY_DATA || [];
   const COLLEGES = () => window.LP_COLLEGES || [];
 
+  // Real destination photos (royalty-free Unsplash CDN). If any fails to load,
+  // the banner gracefully falls back to a gradient (see .no-photo in theme.css).
+  // Swap any URL for your own image anytime.
+  const COUNTRY_PHOTO = {
+    usa: "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=1280&q=70",
+    canada: "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=1280&q=70",
+    uk: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1280&q=70",
+    australia: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1280&q=70",
+    germany: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1280&q=70",
+    ireland: "https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=1280&q=70",
+    "new-zealand": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=1280&q=70",
+    singapore: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1280&q=70",
+    netherlands: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=1280&q=70",
+  };
+
   // ── Destinations: per-country profile (controlled by the page country) ─────
   function DestinationsPanel({ onNav, country, onFindColleges }) {
     const list = COUNTRIES();
@@ -19,6 +34,14 @@
     const vsClass = c.visaSuccess >= 85 ? "good" : c.visaSuccess >= 70 ? "ok" : "warn";
     return (
       <div className="dest-panel">
+        <div className="dest-photo-banner">
+          {COUNTRY_PHOTO[c.id] && (
+            <img src={COUNTRY_PHOTO[c.id]} alt={"Study in " + c.name} loading="lazy"
+                 onError={(e) => { const p = e.target.closest(".dest-photo-banner"); if (p) p.classList.add("no-photo"); }} />
+          )}
+          <div className="dest-photo-overlay" />
+          <div className="dest-photo-cap"><span className="dest-photo-flag">{c.flag}</span> Study in {c.name}</div>
+        </div>
         <div className="dest-hero tool-card">
           {window.LP_Landmark ? <div className="dest-landmark"><window.LP_Landmark id={c.id} /></div> : <div className="dest-hero-icon">{c.icon}</div>}
           <div className="dest-hero-info">
