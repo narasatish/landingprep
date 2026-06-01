@@ -220,7 +220,7 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=121" />
+  <link rel="stylesheet" href="theme.css?v=122" />
 </head>
 <body>
   <div id="root"></div>
@@ -232,68 +232,65 @@
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
           integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
           crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
-          integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
-          crossorigin="anonymous"></script>
 
   <!-- Data layer -->
-  <script type="text/babel" src="data.jsx?v=121"></script>
-  <script type="text/babel" src="data-questions.jsx?v=121"></script>
-  <script type="text/babel" src="gemini-tts.jsx?v=121"></script>
-  <script type="text/babel" src="seo.jsx?v=121"></script>
-  <script type="text/babel" src="test-catalog.jsx?v=121"></script>
-  <script type="text/babel" src="normalize-test.jsx?v=121"></script>
-  <script type="text/babel" src="learning-hub-catalog.jsx?v=121"></script>
-  <script type="text/babel" src="visual-renderer.jsx?v=121"></script>
+  <script src="data.js?v=122"></script>
+  <script src="data-questions.js?v=122"></script>
+  <script src="gemini-tts.js?v=122"></script>
+  <script src="seo.js?v=122"></script>
+  <script src="test-catalog.js?v=122"></script>
+  <script src="normalize-test.js?v=122"></script>
+  <script src="learning-hub-catalog.js?v=122"></script>
+  <script src="visual-renderer.js?v=122"></script>
 
   <!-- Auth + AI Tutor + Chatbot (must load before screens) -->
-  <script type="text/babel" src="auth.jsx?v=121"></script>
-  <script type="text/babel" src="reminders.jsx?v=121"></script>
-  <script type="text/babel" src="md.jsx?v=121"></script>
-  <script type="text/babel" src="ai-tutor.jsx?v=121"></script>
-  <script type="text/babel" src="chatbot-widget.jsx?v=121"></script>
+  <script src="auth.js?v=122"></script>
+  <script src="reminders.js?v=122"></script>
+  <script src="md.js?v=122"></script>
+  <script src="ai-tutor.js?v=122"></script>
+  <script src="chatbot-widget.js?v=122"></script>
 
   <!-- Screens -->
-  <script type="text/babel" src="screens/pte-renderer.jsx?v=121"></script>
-  <script type="text/babel" src="screens/pte-listening-renderer.jsx?v=121"></script>
-  <script type="text/babel" src="screens/pte-sw-renderer.jsx?v=121"></script>
-  <script type="text/babel" src="screens/celpip-renderer.jsx?v=121"></script>
-  <script type="text/babel" src="screens/home.jsx?v=121"></script>
-  <script type="text/babel" src="screens/guide.jsx?v=121"></script>
-  <script type="text/babel" src="screens/mock-test.jsx?v=121"></script>
-  <script type="text/babel" src="screens/learning-club.jsx?v=121"></script>
-  <script type="text/babel" src="screens/speaking-agent.jsx?v=121"></script>
-  <script type="text/babel" src="screens/writing-agent.jsx?v=121"></script>
-  <script type="text/babel" src="screens/error-log.jsx?v=121"></script>
-  <script type="text/babel" src="screens/progress.jsx?v=121"></script>
-  <script type="text/babel" src="screens/exam-prep.jsx?v=121"></script>
-  <script type="text/babel" src="college-data.jsx?v=121"></script>
-  <script type="text/babel" src="screens/college-tools.jsx?v=121"></script>
-  <script type="text/babel" src="screens/sop-tool.jsx?v=121"></script>
-  <script type="text/babel" src="screens/calculators.jsx?v=121"></script>
-  <script type="text/babel" src="scholarship-data.jsx?v=121"></script>
-  <script type="text/babel" src="screens/scholarship-tool.jsx?v=121"></script>
-  <script type="text/babel" src="country-data.jsx?v=121"></script>
-  <script type="text/babel" src="live-data.jsx?v=121"></script>
-  <script type="text/babel" src="firebase-config.jsx?v=121"></script>
-  <script type="text/babel" src="country-landmarks.jsx?v=121"></script>
-  <script type="text/babel" src="screens/destinations.jsx?v=121"></script>
-  <script type="text/babel" src="screens/counsellor.jsx?v=121"></script>
-  <script type="text/babel" src="screens/profile-eval.jsx?v=121"></script>
-  <script type="text/babel" src="screens/compare.jsx?v=121"></script>
-  <script type="text/babel" src="screens/apply-partners.jsx?v=121"></script>
-  <script type="text/babel" src="screens/visa-interview.jsx?v=121"></script>
-  <script type="text/babel" src="screens/onboarding.jsx?v=121"></script>
-  <script type="text/babel" src="screens/community.jsx?v=121"></script>
-  <script type="text/babel" src="screens/leaderboard.jsx?v=121"></script>
-  <script type="text/babel" src="screens/tools.jsx?v=121"></script>
-  <script type="text/babel" src="screens/colleges.jsx?v=121"></script>
-  <script type="text/babel" src="screens/study-planner.jsx?v=121"></script>
-  <script type="text/babel" src="blog-data.jsx?v=121"></script>
-  <script type="text/babel" src="seo-pages.jsx?v=121"></script>
+  <script src="screens/pte-renderer.js?v=122"></script>
+  <script src="screens/pte-listening-renderer.js?v=122"></script>
+  <script src="screens/pte-sw-renderer.js?v=122"></script>
+  <script src="screens/celpip-renderer.js?v=122"></script>
+  <script src="screens/home.js?v=122"></script>
+  <script src="screens/guide.js?v=122"></script>
+  <script src="screens/mock-test.js?v=122"></script>
+  <script src="screens/learning-club.js?v=122"></script>
+  <script src="screens/speaking-agent.js?v=122"></script>
+  <script src="screens/writing-agent.js?v=122"></script>
+  <script src="screens/error-log.js?v=122"></script>
+  <script src="screens/progress.js?v=122"></script>
+  <script src="screens/exam-prep.js?v=122"></script>
+  <script src="college-data.js?v=122"></script>
+  <script src="screens/college-tools.js?v=122"></script>
+  <script src="screens/sop-tool.js?v=122"></script>
+  <script src="screens/calculators.js?v=122"></script>
+  <script src="scholarship-data.js?v=122"></script>
+  <script src="screens/scholarship-tool.js?v=122"></script>
+  <script src="country-data.js?v=122"></script>
+  <script src="live-data.js?v=122"></script>
+  <script src="firebase-config.js?v=122"></script>
+  <script src="country-landmarks.js?v=122"></script>
+  <script src="screens/destinations.js?v=122"></script>
+  <script src="screens/counsellor.js?v=122"></script>
+  <script src="screens/profile-eval.js?v=122"></script>
+  <script src="screens/compare.js?v=122"></script>
+  <script src="screens/apply-partners.js?v=122"></script>
+  <script src="screens/visa-interview.js?v=122"></script>
+  <script src="screens/onboarding.js?v=122"></script>
+  <script src="screens/community.js?v=122"></script>
+  <script src="screens/leaderboard.js?v=122"></script>
+  <script src="screens/tools.js?v=122"></script>
+  <script src="screens/colleges.js?v=122"></script>
+  <script src="screens/study-planner.js?v=122"></script>
+  <script src="blog-data.js?v=122"></script>
+  <script src="seo-pages.js?v=122"></script>
 
   <!-- App router (must be last) -->
-  <script type="text/babel" src="app.jsx?v=121"></script>
+  <script src="app.js?v=122"></script>
 </body>
 </html>
 

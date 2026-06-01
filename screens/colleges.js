@@ -1,0 +1,75 @@
+"use strict";
+(function() {
+  const { useState, useEffect } = React;
+  const COUNTRIES = [
+    ["USA", "\u{1F1FA}\u{1F1F8}"],
+    ["UK", "\u{1F1EC}\u{1F1E7}"],
+    ["Canada", "\u{1F1E8}\u{1F1E6}"],
+    ["Australia", "\u{1F1E6}\u{1F1FA}"],
+    ["Germany", "\u{1F1E9}\u{1F1EA}"],
+    ["Ireland", "\u{1F1EE}\u{1F1EA}"],
+    ["New Zealand", "\u{1F1F3}\u{1F1FF}"],
+    ["Singapore", "\u{1F1F8}\u{1F1EC}"],
+    ["Netherlands", "\u{1F1F3}\u{1F1F1}"]
+  ];
+  const TABS = [
+    ["destinations", "\u{1F30D} Country Guide"],
+    ["onboard", "\u{1F680} Build My Plan"],
+    ["predictor", "\u{1F3DB}\uFE0F Find Colleges"],
+    ["rankings", "\u{1F3C6} Universities"],
+    ["scholarships", "\u{1F4B8} Scholarships"],
+    ["apply", "\u{1F393} Apply Now"],
+    ["counsellor", "\u{1F4AC} AI Counsellor"],
+    ["visa", "\u{1F6C2} Visa Interview"],
+    ["community", "\u{1F64B} Community Q&A"],
+    ["leaderboard", "\u{1F3C6} Leaderboard"],
+    ["updates", "\u2753 Help & FAQ"],
+    ["loan", "\u{1F4B0} Loans & Costs"],
+    ["sop", "\u270D\uFE0F Documents"],
+    ["apps", "\u{1F4CB} My Applications"]
+  ];
+  const TAB_LABEL = Object.fromEntries(TABS);
+  const GROUPS = [
+    { id: "explore", label: "\u{1F30D} Explore", tabs: ["destinations", "rankings"] },
+    { id: "plan", label: "\u{1F9ED} Plan", tabs: ["onboard", "predictor"] },
+    { id: "apply", label: "\u{1F393} Apply", tabs: ["apply", "scholarships", "sop", "apps"] },
+    { id: "guidance", label: "\u{1F4AC} Guidance", tabs: ["counsellor", "visa", "loan"] },
+    { id: "community", label: "\u{1F310} Community", tabs: ["community", "leaderboard", "updates"] }
+  ];
+  const COUNTRY_TABS = ["destinations", "onboard", "predictor", "rankings", "scholarships", "apply", "counsellor", "visa"];
+  const modeToggle = (cur, set, opts) => /* @__PURE__ */ React.createElement("div", { className: "tab-modes" }, opts.map(([id, label]) => /* @__PURE__ */ React.createElement("button", { key: id, className: "tab-mode" + (cur === id ? " active" : ""), onClick: () => set(id) }, label)));
+  const loadingCard = (msg) => /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, msg));
+  function Colleges({ onNav, initialTab, initialCountry }) {
+    const valid = TABS.map((t) => t[0]);
+    const validCountry = COUNTRIES.some(([c]) => c === initialCountry);
+    const [tab, setTab] = useState(valid.includes(initialTab) ? initialTab : "destinations");
+    const [country, setCountry] = useState(validCountry ? initialCountry : "USA");
+    const [findMode, setFindMode] = useState("predict");
+    const [uniMode, setUniMode] = useState("rankings");
+    useEffect(() => {
+      if (!window.LP_SEO) return;
+      const n = (window.LP_COLLEGES || []).length || 99;
+      window.LP_SEO.set({
+        title: "Study Abroad by Country \u2014 Predictor, Compare, Scholarships, Visa & SOP | LandingPrep",
+        description: `Choose your destination and explore ${n} top universities by country (USA, UK, Canada, Australia, Germany & more): fees, IELTS/GRE requirements, admission process, scholarships, visa-success rates and immigration. Free profile evaluation, college predictor, university & country comparison, scholarship finder, SOP builder and live exam/visa updates.`,
+        keywords: "study abroad by country, college predictor usa, profile evaluation, compare universities, compare study abroad countries, study in uk, study in canada, study in australia, study in germany, top universities by country, scholarships by country, university admission process, student visa, sop builder, study abroad updates"
+      });
+    }, []);
+    const scoped = COUNTRY_TABS.includes(tab);
+    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "colleges", onNav }), /* @__PURE__ */ React.createElement("main", { className: "tools-shell" }, /* @__PURE__ */ React.createElement("header", { className: "tools-hero" }, /* @__PURE__ */ React.createElement("div", { className: "home-hero-photo sa-hero-photo" }, /* @__PURE__ */ React.createElement(
+      "img",
+      {
+        src: "https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1400&q=70",
+        alt: "Bright modern university campus library abroad",
+        loading: "lazy",
+        onError: (e) => {
+          const p = e.target.closest(".home-hero-photo");
+          if (p) p.classList.add("no-photo");
+        }
+      }
+    ), /* @__PURE__ */ React.createElement("div", { className: "hhp-overlay" }), /* @__PURE__ */ React.createElement("div", { className: "ep-hero-cap" }, /* @__PURE__ */ React.createElement("h1", null, "Study Abroad \u2014 by Country"), /* @__PURE__ */ React.createElement("p", null, "Pick your destination, then explore its top universities, admission, scholarships, costs, visa & immigration \u2014 all free.")))), scoped && /* @__PURE__ */ React.createElement("div", { className: "country-select" }, /* @__PURE__ */ React.createElement("div", { className: "country-select-label" }, "\u{1F30D} Choose your destination"), /* @__PURE__ */ React.createElement("div", { className: "country-select-grid" }, COUNTRIES.map(([c, f]) => /* @__PURE__ */ React.createElement("button", { key: c, className: "country-pick" + (country === c ? " active" : ""), onClick: () => setCountry(c) }, /* @__PURE__ */ React.createElement("span", { className: "country-pick-flag" }, f), /* @__PURE__ */ React.createElement("span", null, c))))), /* @__PURE__ */ React.createElement("div", { className: "tools-groups" }, GROUPS.map((g) => /* @__PURE__ */ React.createElement("button", { key: g.id, className: "tools-group" + (g.tabs.includes(tab) ? " active" : ""), onClick: () => {
+      if (!g.tabs.includes(tab)) setTab(g.tabs[0]);
+    } }, g.label))), /* @__PURE__ */ React.createElement("div", { className: "tools-tabs" }, (GROUPS.find((g) => g.tabs.includes(tab)) || GROUPS[0]).tabs.map((id) => /* @__PURE__ */ React.createElement("button", { key: id, className: "tools-tab" + (tab === id ? " active" : ""), onClick: () => setTab(id) }, TAB_LABEL[id]))), tab === "destinations" && (window.LP_DestinationsPanel ? /* @__PURE__ */ React.createElement(window.LP_DestinationsPanel, { onNav, country, setCountry, onFindColleges: () => setTab("predictor") }) : loadingCard("Country guide is loading\u2026")), tab === "onboard" && (window.LP_OnboardingPanel ? /* @__PURE__ */ React.createElement(window.LP_OnboardingPanel, { onNav, country, onOpenTab: setTab }) : loadingCard("Plan builder is loading\u2026")), tab === "predictor" && /* @__PURE__ */ React.createElement(React.Fragment, null, modeToggle(findMode, setFindMode, [["predict", "\u{1F52E} Predict my chances"], ["program", "\u{1F3AF} Search by program"]]), findMode === "predict" ? window.LP_CollegePredictorPanel ? /* @__PURE__ */ React.createElement(window.LP_CollegePredictorPanel, { onNav, country }) : loadingCard("College predictor is loading\u2026") : window.LP_ProgramFinderPanel ? /* @__PURE__ */ React.createElement(window.LP_ProgramFinderPanel, { onNav, country }) : loadingCard("Course finder is loading\u2026")), tab === "rankings" && /* @__PURE__ */ React.createElement(React.Fragment, null, modeToggle(uniMode, setUniMode, [["rankings", "\u{1F3C6} Top rankings"], ["compare", "\u2696\uFE0F Compare"]]), uniMode === "rankings" ? window.LP_RankingsPanel ? /* @__PURE__ */ React.createElement(window.LP_RankingsPanel, { country }) : loadingCard("Rankings are loading\u2026") : window.LP_ComparePanel ? /* @__PURE__ */ React.createElement(window.LP_ComparePanel, { country }) : loadingCard("Compare is loading\u2026")), tab === "scholarships" && (window.LP_ScholarshipPanel ? /* @__PURE__ */ React.createElement(window.LP_ScholarshipPanel, { onNav, country }) : loadingCard("Scholarship finder is loading\u2026")), tab === "apply" && (window.LP_ApplyPanel ? /* @__PURE__ */ React.createElement(window.LP_ApplyPanel, { country, onOpenTab: setTab }) : loadingCard("Apply panel is loading\u2026")), tab === "counsellor" && (window.LP_CounsellorPanel ? /* @__PURE__ */ React.createElement(window.LP_CounsellorPanel, { country }) : loadingCard("AI counsellor is loading\u2026")), tab === "visa" && (window.LP_VisaInterviewPanel ? /* @__PURE__ */ React.createElement(window.LP_VisaInterviewPanel, { country }) : loadingCard("Visa interview is loading\u2026")), tab === "community" && (window.LP_CommunityPanel ? /* @__PURE__ */ React.createElement(window.LP_CommunityPanel, { country }) : loadingCard("Community is loading\u2026")), tab === "leaderboard" && (window.LP_LeaderboardPanel ? /* @__PURE__ */ React.createElement(window.LP_LeaderboardPanel, null) : loadingCard("Leaderboard is loading\u2026")), tab === "updates" && (window.LP_UpdatesPanel ? /* @__PURE__ */ React.createElement(window.LP_UpdatesPanel, { onOpenTab: setTab }) : loadingCard("Help is loading\u2026")), tab === "loan" && /* @__PURE__ */ React.createElement(React.Fragment, null, window.LP_LoanPanel ? /* @__PURE__ */ React.createElement(window.LP_LoanPanel, { onNav }) : loadingCard("Loan comparison is loading\u2026"), window.LP_CalculatorsPanel ? /* @__PURE__ */ React.createElement(window.LP_CalculatorsPanel, null) : null), tab === "sop" && (window.LP_SOPPanel ? /* @__PURE__ */ React.createElement(window.LP_SOPPanel, null) : loadingCard("SOP tool is loading\u2026")), tab === "apps" && (window.LP_ApplicationsPanel ? /* @__PURE__ */ React.createElement(window.LP_ApplicationsPanel, { onNav, onOpenTab: setTab }) : loadingCard("Applications tracker is loading\u2026")), /* @__PURE__ */ React.createElement("div", { className: "tools-foot" }, /* @__PURE__ */ React.createElement("a", { className: "tool-btn ghost", onClick: () => onNav && onNav("tools") }, "\u{1F9F0} English-test tools & study planner \u2192"))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
+  }
+  window.LP_Colleges = Colleges;
+})();

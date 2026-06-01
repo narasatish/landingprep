@@ -125,7 +125,7 @@ check("all LP_* components referenced in app.jsx are defined", undefinedRefs.len
 check("PTE SW renderer registered", /window\.LP_PTE_SW\s*=/.test(read("screens/pte-sw-renderer.jsx")));
 check("PTE SW normaliser routes correctly", /normalisePteSpeakingWriting/.test(read("normalize-test.jsx")));
 check("PTE SW dispatched in mock-test", /sec\.type === "pte_sw"/.test(read("screens/mock-test.jsx")));
-check("pte-sw-renderer loaded in index.html", /pte-sw-renderer\.jsx/.test(html));
+check("pte-sw-renderer loaded in index.html", /pte-sw-renderer\.jsx?/.test(html));
 // visual renderer wired for the 4 visual paths
 check("VisualRenderer consumed by QuestionCard (GMAT DI)", /q\.visual && window\.LP_VisualRenderer/.test(read("screens/mock-test.jsx")));
 check("Blog in nav", /\["blog", "Blog"\]/.test(read("screens/home.jsx")));
@@ -142,7 +142,7 @@ check("colleges view renders LP_Colleges", /view === "colleges"/.test(appSrc) &&
 check("planner deep-link folds into tools", /head === "planner"/.test(appSrc) && /id === "planner"/.test(appSrc));
 check("every screen jsx is included in index.html", (() => {
   const screens = fs.readdirSync(path.join(ROOT, "screens")).filter(f => f.endsWith(".jsx"));
-  const miss = screens.filter(f => !html.includes("screens/" + f));
+  const miss = screens.filter(f => !html.includes("screens/" + f) && !html.includes("screens/" + f.replace(/\.jsx$/, ".js")));
   return miss.length === 0 || miss.join(",");
 })() === true, "some screens not in index.html");
 
@@ -198,7 +198,7 @@ check("icon.svg exists", exists("icon.svg"));
 check("manifest.json valid JSON", exists("manifest.json") && (() => { try { JSON.parse(read("manifest.json")); return true; } catch (e) { return false; } })());
 check("service worker exists & versioned", exists("sw.js") && /CACHE_VERSION\s*=\s*"lp-v\d+"/.test(read("sw.js")));
 check("visual renderer (charts/images) present", exists("visual-renderer.jsx") && /window\.LP_VisualRenderer/.test(read("visual-renderer.jsx")));
-check("TTS audio engine present & loaded", exists("gemini-tts.jsx") && /window\.LP_TTS/.test(read("gemini-tts.jsx")) && /gemini-tts\.jsx/.test(html));
+check("TTS audio engine present & loaded", exists("gemini-tts.jsx") && /window\.LP_TTS/.test(read("gemini-tts.jsx")) && /gemini-tts\.jsx?/.test(html));
 check("IELTS listening map scenes present", /SCENES|pickScene/.test(read("screens/mock-test.jsx")));
 check("og:image referenced", /og:image/.test(html));
 

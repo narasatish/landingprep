@@ -7,7 +7,8 @@
     "start": "node server.js",
     "dev": "node --watch server.js",
     "seo": "node scripts/generate-seo-pages.mjs",
-    "build": "node scripts/generate-seo-pages.mjs",
+    "precompile": "node scripts/precompile-jsx.mjs",
+    "build": "node scripts/precompile-jsx.mjs && node scripts/generate-seo-pages.mjs",
     "test": "node tools/run-tests.js"
   },
   "dependencies": {
@@ -16,5 +17,8 @@
     "express": "^4.19.2",
     "firebase-admin": "^12.7.0",
     "nodemailer": "^8.0.10"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
   }
 }
