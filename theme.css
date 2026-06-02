@@ -4501,3 +4501,5 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 .lang-type { display: flex; gap: 8px; }
 .lang-type .lc-input { flex: 1; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); font-size: 14px; }
 .lang-type .lc-input:focus { outline: none; border-color: var(--accent); }
+.lang-mock-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; gap: 10px; }
+.lang-mock-passage { background: var(--tint); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 8px 0 14px; line-height: 1.8; font-size: 15px; color: var(--ink-2); }
