@@ -1522,6 +1522,60 @@ ${relatedGrid([
   });
 }
 
+// ── "[Exam] for [Country] PR / immigration" pages (very high intent) ─────────
+const PR_TARGETS = [
+  { exam: "IELTS", k: "ielts", country: "Canada", scheme: "Express Entry (Federal Skilled Worker)", slug: "ielts-for-canada-pr",
+    levels: [["Minimum eligibility — CLB 7", "IELTS General 6.0 in each skill (L, R, W, S)", "Required to enter the Express Entry pool."], ["Strong CLB 9", "Listening 8.0, Reading 7.0, Writing 7.0, Speaking 7.0", "Earns the maximum language points in the CRS — a big score boost."]],
+    tests: "IELTS General Training, CELPIP-General and PTE Core are accepted for English; TEF/TCF for French (extra points).",
+    note: "Use IELTS General Training (not Academic) for Canadian PR. Higher CLB also raises your Comprehensive Ranking System (CRS) score for an invitation to apply." },
+  { exam: "PTE", k: "pte", country: "Canada", scheme: "Express Entry (PTE Core)", slug: "pte-for-canada-pr",
+    levels: [["Minimum — CLB 7", "PTE Core ~60 in each skill", "Eligibility for the Express Entry pool."], ["Strong — CLB 9", "PTE Core ~88 listening / 78 reading / 79 writing / 84 speaking (approx)", "Maximum language points."]],
+    tests: "PTE Core is now accepted by IRCC for Express Entry alongside IELTS General and CELPIP.",
+    note: "PTE Core (not PTE Academic) is the version accepted for Canadian economic immigration." },
+  { exam: "IELTS", k: "ielts", country: "Australia", scheme: "Skilled Migration (189/190/491)", slug: "ielts-for-australia-pr",
+    levels: [["Competent", "IELTS 6.0 in each band", "Minimum to be eligible — 0 points."], ["Proficient", "IELTS 7.0 in each band", "+10 points toward your skilled visa."], ["Superior", "IELTS 8.0 in each band", "+20 points — the maximum English points."]],
+    tests: "IELTS, PTE Academic, TOEFL iBT, OET and Cambridge C1/C2 are accepted for Australian skilled migration.",
+    note: "Points matter: moving from Competent to Superior English can add 20 points to your skilled-visa score." },
+  { exam: "PTE", k: "pte", country: "Australia", scheme: "Skilled Migration (189/190/491)", slug: "pte-for-australia-pr",
+    levels: [["Competent", "PTE Academic 50 in each skill", "Minimum eligibility — 0 points."], ["Proficient", "PTE Academic 65 in each skill", "+10 points."], ["Superior", "PTE Academic 79 in each skill", "+20 points (maximum)."]],
+    tests: "PTE Academic is fully accepted for Australian skilled migration and student visas.",
+    note: "PTE's fast results make it popular for Australian migration — aim for 79+ to bank the full 20 points." },
+  { exam: "IELTS", k: "ielts", country: "UK", scheme: "Settlement (ILR) & Citizenship", slug: "ielts-for-uk-settlement",
+    levels: [["ILR / Citizenship", "CEFR B1 — e.g. IELTS Life Skills B1 (Speaking & Listening)", "Required for indefinite leave to remain and naturalisation."], ["Some visas", "CEFR B2 or higher", "Skilled Worker and others may need a higher level."]],
+    tests: "Use an approved Secure English Language Test (SELT): IELTS for UKVI / IELTS Life Skills, or another Home Office-approved provider.",
+    note: "For settlement you also pass the Life in the UK test. Always book an approved UKVI SELT, not a standard IELTS." },
+  { exam: "IELTS", k: "ielts", country: "New Zealand", scheme: "Skilled Migrant Category resident visa", slug: "ielts-for-new-zealand-pr",
+    levels: [["Principal applicant", "IELTS General or Academic 6.5 overall (or equivalent)", "Standard English requirement for the resident visa."], ["Other evidence", "Recognised qualification or work in English", "May satisfy the requirement instead of a test."]],
+    tests: "IELTS, PTE Academic, TOEFL iBT and other approved tests are accepted by Immigration New Zealand.",
+    note: "Requirements change — always confirm on the Immigration New Zealand website before booking." },
+];
+function examForPRPage(x) {
+  const path = `/${x.slug}/`;
+  const title = `${x.exam} Score for ${x.country} PR — ${esc(x.scheme)} Requirements (2026) | ${BRAND}`;
+  const desc = `What ${x.exam} score do you need for ${x.country} PR / immigration (${x.scheme})? See the exact levels (minimum to maximum points), accepted tests and a free plan to reach your target.`;
+  const rows = x.levels.map((l) => `<tr><td><strong>${esc(l[0])}</strong></td><td>${esc(l[1])}</td><td>${esc(l[2])}</td></tr>`).join("");
+  const faqs = [
+    { q: `What ${x.exam} score do I need for ${x.country} PR?`, a: `For ${x.scheme}: ${x.levels.map((l) => `${l[0]} = ${l[1]}`).join("; ")}. ${x.note}` },
+    { q: `Which English tests are accepted for ${x.country} immigration?`, a: x.tests },
+    { q: `How do I reach that score for free?`, a: `Take free ${x.exam} mock tests, learn the strategy in the prep lessons, and check your writing/speaking band with the free AI band checker.` },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › ${x.exam} for ${x.country} PR</p>
+<section class="hero"><div class="badges"><span class="badge">${esc(x.country)} PR</span><span class="badge">${x.exam}</span><span class="badge">2026</span></div>
+<h1>${x.exam} Score for ${x.country} PR / Immigration</h1>
+<p class="lead">For <strong>${esc(x.scheme)}</strong>, your ${x.exam} score directly affects eligibility and points. ${esc(x.note)}</p>
+<a class="cta" href="/mock-test/${x.k}/">▶ Take a free ${x.exam} mock test</a></section>
+<div class="card"><h2>${x.exam} levels for ${x.country} immigration</h2><table class="cmp-table"><thead><tr><th>Level</th><th>${x.exam} requirement</th><th>What it means</th></tr></thead><tbody>${rows}</tbody></table><p class="note">${esc(x.tests)}</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `Free ${x.exam} mock test`, href: `/mock-test/${x.k}/` },
+  { label: `${x.exam} score for ${x.country} (study)`, href: `/${x.k}-for-${x.country.toLowerCase().replace(/\s+/g, "-")}/` },
+  { label: "Free AI band checker", href: "/ielts-writing-checker/" },
+  { label: "Move-abroad checklist", href: "/#/relocate" },
+])}`;
+  emit(path, head({ title, desc, path, kw: `${x.exam.toLowerCase()} for ${x.country.toLowerCase()} pr, ${x.exam.toLowerCase()} score for ${x.country.toLowerCase()} immigration, ${x.country.toLowerCase()} pr english requirement, ${x.exam.toLowerCase()} ${x.country.toLowerCase()} express entry points, ${x.country.toLowerCase()} skilled migration english`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${x.exam} for ${x.country} PR`, path }])] }) + shell(inner));
+}
+
 Object.keys(LANG_SEO).forEach(languageLandingPage);
 prepLessonsPage();
 bandCheckerPage("writing");
@@ -1535,6 +1589,7 @@ EXAM_VS.forEach(examVsExamPage);
 COLLEGES.forEach(examForUniPage);
 COLLEGES.forEach((c) => ALT_EXAMS.forEach((ex) => altExamForUniPage(c, ex)));
 scholarshipCountryPages();
+PR_TARGETS.forEach(examForPRPage);
 
 // Write files
 PAGES.forEach(({ path, html }) => {
