@@ -25,6 +25,8 @@ function viewToHash(view, examId) {
       return "#/blog";
     case "languages":
       return "#/languages";
+    case "lessons":
+      return "#/lessons";
     case "mock":
       return null;
     // do not push history for mock — let the back button take user out of the test
@@ -57,6 +59,7 @@ function hashToView(hash, exams) {
   if (head === "login") return { view: "login", examId: null };
   if (head === "blog") return { view: "blog", examId: null };
   if (head === "languages") return { view: "languages", examId: null };
+  if (head === "lessons") return { view: "lessons", examId: null };
   return { view: "home", examId: null };
 }
 const AGENT_SUPPORT = {
@@ -222,6 +225,10 @@ function App() {
       setView("languages");
       return;
     }
+    if (id === "lessons") {
+      setView("lessons");
+      return;
+    }
     if (id === "tools") {
       setView("tools");
       return;
@@ -336,6 +343,8 @@ function App() {
     content = /* @__PURE__ */ React.createElement(window.LP_Blog, { onNav });
   } else if (view === "languages") {
     content = /* @__PURE__ */ React.createElement(window.LP_Languages, { onNav });
+  } else if (view === "lessons") {
+    content = /* @__PURE__ */ React.createElement(window.LP_Lessons, { onNav });
   } else if (view === "login") {
     content = /* @__PURE__ */ React.createElement(window.LP_LoginScreen, { onNav, onSuccess: () => setView("progress") });
   } else {

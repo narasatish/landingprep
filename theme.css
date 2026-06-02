@@ -4443,3 +4443,32 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 .lang-opt.correct { background: #16a34a; border-color: #16a34a; color: #fff; }
 .lang-opt.wrong { background: #dc2626; border-color: #dc2626; color: #fff; }
 .lang-result { margin-top: 14px; padding: 14px 16px; border-radius: 10px; background: var(--tint); border: 1px solid var(--line); font-size: 15px; }
+
+/* ── Prep Lessons (slide decks) ── */
+.deck-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 8px; }
+.deck-card { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); cursor: pointer; text-align: left; transition: transform .15s, border-color .15s, box-shadow .15s; }
+.deck-card:not(.soon):hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: 0 12px 28px -16px rgba(79,70,229,.3); }
+.deck-card.soon { opacity: .55; cursor: not-allowed; }
+.deck-card-emoji { font-size: 26px; }
+.deck-card-name { font-weight: 700; color: var(--ink); }
+.deck-card-meta { font-size: 12.5px; color: var(--accent); font-weight: 600; }
+.deck-card.soon .deck-card-meta { color: var(--ink-3); }
+.deck-stage { max-width: 760px; margin: 0 auto; }
+.deck-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.deck-back { color: var(--accent); cursor: pointer; font-weight: 600; font-size: 14px; }
+.deck-title-mini { font-size: 13px; color: var(--ink-3); font-weight: 600; }
+.deck-progress { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; margin-bottom: 16px; }
+.deck-progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), #06b6d4); transition: width .25s ease; }
+.slide { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 32px 30px; min-height: 360px; box-shadow: 0 18px 44px -26px rgba(15,23,42,.35); }
+.slide-num { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.slide-emoji { font-size: 52px; margin: 6px 0 4px; }
+.slide-title { font-size: clamp(22px, 3vw, 30px); margin: 0 0 16px; color: var(--ink); }
+.slide-points { margin: 0; padding-left: 22px; }
+.slide-points li { margin: 9px 0; font-size: 16px; line-height: 1.6; color: var(--ink-2); }
+.slide-example { margin-top: 16px; padding: 12px 16px; border-radius: 12px; background: color-mix(in srgb, #06b6d4 10%, transparent); border: 1px solid color-mix(in srgb, #06b6d4 30%, var(--line)); font-size: 15px; color: var(--ink-2); }
+.slide-tip { margin-top: 12px; padding: 11px 15px; border-radius: 12px; background: color-mix(in srgb, var(--accent) 10%, transparent); border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line)); font-size: 14.5px; color: var(--ink-2); }
+.slide-warn { margin-top: 12px; padding: 11px 15px; border-radius: 12px; background: color-mix(in srgb, #f59e0b 14%, transparent); border: 1px solid color-mix(in srgb, #f59e0b 38%, var(--line)); font-size: 14.5px; color: var(--ink-2); }
+.deck-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 18px; }
+.deck-dots { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; flex: 1; }
+.deck-dot { width: 9px; height: 9px; border-radius: 999px; background: var(--line); cursor: pointer; transition: background .15s, transform .15s; }
+.deck-dot.on { background: var(--accent); transform: scale(1.25); }
