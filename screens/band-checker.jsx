@@ -80,6 +80,7 @@
             {open && <div className="bc-rewrite">{data.band9Rewrite || data.modelAnswer}</div>}
           </div>
         ) : null}
+        <button className="btn" style={{ marginTop: 12 }} onClick={() => window.LP_ShareCard && window.LP_ShareCard.make({ title: (rewriteLabel || "").indexOf("rewrite") >= 0 ? "My IELTS Writing band" : "My IELTS Speaking band", big: overall, label: "Estimated Band", sub: "Checked free with the AI band-score checker — TR/CC/LR/GRA breakdown" })}>📤 Share / save my band</button>
         <p className="tool-note" style={{ marginTop: 10 }}>⚖️ AI estimate for guidance — calibrated to the official band descriptors but not an official score. Confirm with a teacher for high-stakes decisions.</p>
       </div>
     );

@@ -54,7 +54,7 @@
   ];
 
   function Tabs({ tab, setTab }) {
-    const t = [["planner", "📅 Study Plan"], ["convert", "🔁 Score & Eligibility"], ["reading", "⚡ Reading Speed"], ["shadow", "🎤 Listen & Repeat"]];
+    const t = [["planner", "📅 Study Plan"], ["convert", "🔁 Score & Eligibility"], ["writing", "📊 Word & Readability"], ["reading", "⚡ Reading Speed"], ["shadow", "🎤 Listen & Repeat"]];
     return (
       <div className="tools-tabs">
         {t.map(([id, label]) => (
@@ -242,10 +242,68 @@
     );
   }
 
+  // ── 5. Word count & readability (for IELTS/TOEFL writing + speaking pace) ──
+  function syllables(w) {
+    w = w.toLowerCase().replace(/[^a-z]/g, "");
+    if (w.length <= 3) return w ? 1 : 0;
+    w = w.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, "").replace(/^y/, "");
+    const m = w.match(/[aeiouy]{1,2}/g);
+    return m ? m.length : 1;
+  }
+  function WordCheck() {
+    const [text, setText] = useState("");
+    const words = (text.trim().match(/\b[\w'-]+\b/g) || []);
+    const wc = words.length;
+    const sentences = (text.match(/[.!?]+(?:\s|$)/g) || []).length || (text.trim() ? 1 : 0);
+    const paras = text.trim() ? text.trim().split(/\n\s*\n/).filter(Boolean).length : 0;
+    const chars = text.replace(/\s/g, "").length;
+    const syl = words.reduce((a, w) => a + syllables(w), 0);
+    const avgSentLen = sentences ? wc / sentences : 0;
+    const flesch = wc ? Math.max(0, Math.min(100, Math.round(206.835 - 1.015 * avgSentLen - 84.6 * (syl / wc)))) : 0;
+    const grade = wc ? Math.max(1, Math.round(0.39 * avgSentLen + 11.8 * (syl / wc) - 15.59)) : 0;
+    const readMin = (wc / 200), speakMin = (wc / 130);
+    const fmt = (m) => m < 1 ? Math.round(m * 60) + "s" : Math.floor(m) + "m " + Math.round((m % 1) * 60) + "s";
+    const longSent = (text.match(/[^.!?]+[.!?]+/g) || []).map((s) => ({ s: s.trim(), n: (s.trim().match(/\b[\w'-]+\b/g) || []).length })).filter((x) => x.n > 30).sort((a, b) => b.n - a.n).slice(0, 3);
+    const ease = flesch >= 60 ? "easy to read" : flesch >= 40 ? "fairly hard (academic)" : "very hard / dense";
+    return (
+      <div>
+        <div className="tool-card">
+          <h3>📊 Word count &amp; readability</h3>
+          <p className="tool-sub">Paste your essay or speaking script. Check word count against IELTS/TOEFL targets, reading/speaking time and readability — all in your browser, nothing stored.</p>
+          <textarea className="bc-textarea" rows={10} placeholder="Paste your text here…" value={text} onChange={(e) => setText(e.target.value)} />
+        </div>
+        {wc > 0 && (
+          <>
+            <div className="wc-grid">
+              <div className="wc-stat"><div className="wc-num">{wc}</div><div className="wc-lbl">words</div></div>
+              <div className="wc-stat"><div className="wc-num">{sentences}</div><div className="wc-lbl">sentences</div></div>
+              <div className="wc-stat"><div className="wc-num">{paras}</div><div className="wc-lbl">paragraphs</div></div>
+              <div className="wc-stat"><div className="wc-num">{chars}</div><div className="wc-lbl">characters</div></div>
+              <div className="wc-stat"><div className="wc-num">{Math.round(avgSentLen)}</div><div className="wc-lbl">avg words/sentence</div></div>
+              <div className="wc-stat"><div className="wc-num">{fmt(speakMin)}</div><div className="wc-lbl">speaking time</div></div>
+            </div>
+            <div className="tool-card">
+              <h4>Readability</h4>
+              <p className="tool-sub" style={{ marginTop: 4 }}>Flesch reading ease <strong>{flesch}/100</strong> ({ease}) · approx. grade level <strong>{grade}</strong> · reading time {fmt(readMin)}.</p>
+              <div className="wc-targets">
+                <span className={"wc-pill " + (wc >= 250 ? "ok" : "")}>IELTS Task 2: 250+ {wc >= 250 ? "✓" : "(" + (250 - wc) + " more)"}</span>
+                <span className={"wc-pill " + (wc >= 150 ? "ok" : "")}>IELTS Task 1: 150+ {wc >= 150 ? "✓" : "(" + (150 - wc) + " more)"}</span>
+                <span className="wc-pill">TOEFL essay: 300+</span>
+              </div>
+              {longSent.length > 0 && (
+                <div className="wc-warn"><strong>⚠️ Long sentences ({longSent.length}):</strong> over 30 words can hurt clarity. Consider splitting:<ul>{longSent.map((x, i) => <li key={i}>{x.n} words — “{x.s.slice(0, 80)}…”</li>)}</ul></div>
+              )}
+            </div>
+          </>
+        )}
+      </div>
+    );
+  }
+
   function Tools({ onNav, initialTab }) {
     // Exam-prep tools. College selection lives on its own #/colleges page.
     // Default to the Study Plan tab (also the #/planner back-compat target).
-    const validTabs = ["planner", "convert", "reading", "shadow"];
+    const validTabs = ["planner", "convert", "writing", "reading", "shadow"];
     // Back-compat: the old "eligibility" tab is now merged into "convert".
     const startTab = initialTab === "eligibility" ? "convert" : initialTab;
     const [tab, setTab] = useState(validTabs.includes(startTab) ? startTab : "planner");
@@ -278,6 +336,7 @@
             ? <window.LP_StudyPlannerPanel onNav={onNav} />
             : <div className="tool-card"><p className="tool-sub">Study planner is loading…</p></div>)}
           {tab === "convert" && <><Converter /><Eligibility /></>}
+          {tab === "writing" && <WordCheck />}
           {tab === "reading" && <ReadingSpeed />}
           {tab === "shadow" && <Shadow />}
           <div className="tools-foot">
