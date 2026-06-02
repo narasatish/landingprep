@@ -1,0 +1,363 @@
+{
+  "preDeparture": [
+    {
+      "group": "3 months before",
+      "items": [
+        "Apply for visa and gather required documents (passport, university admission letter, bank statements)",
+        "Book accommodation near campus or join student housing Facebook groups",
+        "Check vaccination requirements and schedule any needed immunizations",
+        "Purchase international health insurance or check coverage through your university",
+        "Open an international bank account or arrange forex exchange",
+        "Research phone plans and SIM card options in your destination country"
+      ]
+    },
+    {
+      "group": "1 month before",
+      "items": [
+        "Book your flight and arrange airport pickup or transportation",
+        "Notify your bank about travel dates to avoid fraud blocks on cards",
+        "Get travel insurance that covers luggage, trip cancellation, and emergency evacuation",
+        "Submit any final documents to your university (registration, proof of accommodation)",
+        "Arrange mail forwarding for your home address if needed",
+        "Purchase adapter plugs and voltage converters for your electronics"
+      ]
+    },
+    {
+      "group": "1 week before",
+      "items": [
+        "Confirm flight details and check-in 24 hours before departure",
+        "Pack essentials: medications, documents, university IDs, and one set of business clothes",
+        "Download offline maps of your university and city on your phone",
+        "Take photos of important documents and store copies in cloud storage",
+        "Transfer emergency contact information to your phone",
+        "Charge all devices and pack chargers and power banks"
+      ]
+    },
+    {
+      "group": "arrival week",
+      "items": [
+        "Register with your embassy or consulate in the country",
+        "Complete university registration and collect your student ID",
+        "Set up a local phone plan and top-up your prepaid account",
+        "Open a local bank account within the first week if you haven't already",
+        "Attend student orientation and join clubs or societies",
+        "Get familiar with public transportation and buy a student transport card if available"
+      ]
+    }
+  ],
+  "visaTimeline": {
+    "USA": [
+      {
+        "step": "Receive I-20 from university",
+        "when": "1-2 months before your start date",
+        "detail": "Your university issues the I-20 form confirming your acceptance and financial support."
+      },
+      {
+        "step": "Pay SEVIS fee (Student and Exchange Visitor Program)",
+        "when": "After receiving I-20",
+        "detail": "Pay the $350 SEVIS fee online and receive the payment receipt (required for visa application)."
+      },
+      {
+        "step": "Apply for F-1 visa at US embassy or consulate",
+        "when": "After SEVIS payment, at least 1 month before travel",
+        "detail": "Submit DS-160 form, pay visa fee ($185), and schedule an interview at your nearest US embassy."
+      },
+      {
+        "step": "Attend visa interview",
+        "when": "1 month before your start date",
+        "detail": "Bring I-20, SEVIS receipt, passport, bank statements, and university admission letter. Demonstrate ties to your home country."
+      },
+      {
+        "step": "Receive visa in your passport",
+        "when": "Usually within 2-4 weeks after interview",
+        "detail": "Your visa will be stamped in your passport. Valid for the duration of status (D/S)."
+      },
+      {
+        "step": "Arrival at US port of entry",
+        "when": "Within the validity period on your I-20",
+        "detail": "Expect questioning about your field of study, financial support, and return plans. Carry all documents."
+      },
+      {
+        "step": "Check-in at university SEVIS adviser",
+        "when": "First week on campus",
+        "detail": "Register with your university's international office to confirm your status and receive updates."
+      }
+    ],
+    "UK": [
+      {
+        "step": "Receive Confirmation of Acceptance for Studies (CAS)",
+        "when": "2-3 months before your start date",
+        "detail": "Your university issues a CAS letter confirming your admission and financial sponsorship."
+      },
+      {
+        "step": "Apply for Student visa online",
+        "when": "After receiving CAS, at least 3 weeks before travel",
+        "detail": "Submit your Student visa application (Subclass SK) on the UK Visas and Immigration website."
+      },
+      {
+        "step": "Pay Immigration Health Surcharge (IHS)",
+        "when": "As part of online visa application",
+        "detail": "Pay approximately GBP 1,035 per year (or GBP 719 for postgraduates) for access to NHS healthcare."
+      },
+      {
+        "step": "Provide biometrics (fingerprints and photo)",
+        "when": "After submitting online application",
+        "detail": "Visit a UK Visas and Immigration service point to provide your biometric information."
+      },
+      {
+        "step": "Receive decision and BRP card",
+        "when": "Normally within 3 weeks",
+        "detail": "You will receive a Biometric Residence Permit (BRP) card in the post or at a collection point."
+      },
+      {
+        "step": "Arrival in the UK",
+        "when": "Before your course start date",
+        "detail": "Enter the UK with your passport and CAS letter. Keep BRP card safe as proof of status."
+      },
+      {
+        "step": "Register with your university and local police (if required)",
+        "when": "First week on campus",
+        "detail": "Some universities and police stations require international student registration for record-keeping."
+      }
+    ],
+    "Canada": [
+      {
+        "step": "Receive Letter of Acceptance from your institution",
+        "when": "After being accepted to a Canadian school",
+        "detail": "Your college or university issues this letter confirming your admission and meets DLI requirements."
+      },
+      {
+        "step": "Gather required documents",
+        "when": "Before applying for study permit",
+        "detail": "Prepare passport, Letter of Acceptance, proof of funds (CAD 20,000-30,000), and medical exam results."
+      },
+      {
+        "step": "Pass medical exam from approved physician",
+        "when": "2-3 months before arrival",
+        "detail": "Book a medical examination with a panel physician approved by Immigration, Refugees and Citizenship Canada (IRCC)."
+      },
+      {
+        "step": "Create an online account and apply for study permit",
+        "when": "At least 4 months before your start date",
+        "detail": "Submit your application through the Government of Canada website with all required documents."
+      },
+      {
+        "step": "Pay application fee",
+        "when": "As part of study permit application",
+        "detail": "Pay CAD 150 online for study permit processing."
+      },
+      {
+        "step": "Receive approval and study permit",
+        "when": "Typically within 4-8 weeks",
+        "detail": "You will receive your study permit approval document or physical permit at the port of entry."
+      },
+      {
+        "step": "Arrival at Canadian port of entry",
+        "when": "On or before your course start date",
+        "detail": "Present your passport, study permit approval, and Letter of Acceptance to immigration officials."
+      }
+    ],
+    "Australia": [
+      {
+        "step": "Receive confirmation of enrolment (CoE)",
+        "when": "After enrollment is finalized at your Australian institution",
+        "detail": "Your university issues a CoE certifying your enrolment and confirming your place in a course."
+      },
+      {
+        "step": "Gather required documents",
+        "when": "Before submitting visa application",
+        "detail": "Prepare passport, CoE, proof of financial capacity (AUD 25,000+), and evidence of English proficiency."
+      },
+      {
+        "step": "Pass health examination and police checks",
+        "when": "2-3 months before your intended arrival",
+        "detail": "Complete medical exams at a panel doctor and obtain police certificates from your home country."
+      },
+      {
+        "step": "Pay Australian Health Insurance Levy (AHIMR)",
+        "when": "As part of visa fees",
+        "detail": "Pay approximately AUD 650 per year for required health insurance during your stay."
+      },
+      {
+        "step": "Submit Student visa application (subclass 500) online",
+        "when": "At least 3 months before intended arrival",
+        "detail": "Use the online portal to lodge your application with all supporting documents."
+      },
+      {
+        "step": "Receive visa grant notice",
+        "when": "Typically within 2-12 weeks",
+        "detail": "You will receive an electronic Confirmation of Visa Granted, allowing you to travel to Australia."
+      },
+      {
+        "step": "Arrival and initial registration",
+        "when": "On or before your course start date",
+        "detail": "Present your visa and CoE at Australian border control. Register with your university within the first week."
+      }
+    ],
+    "Germany": [
+      {
+        "step": "Receive admission letter from German university",
+        "when": "After being accepted to a German institution",
+        "detail": "Your university issues the formal admission letter required for visa application."
+      },
+      {
+        "step": "Open blocked account or proof of funds",
+        "when": "2-3 months before visa application",
+        "detail": "Deposit approximately EUR 11,208 in a blocked account or show proof of financial support."
+      },
+      {
+        "step": "Gather required documents",
+        "when": "Before applying for national visa",
+        "detail": "Prepare passport, admission letter, proof of funds, health insurance documentation, and language certificate (if required)."
+      },
+      {
+        "step": "Apply for German student visa at embassy or consulate",
+        "when": "At least 2-3 months before intended start date",
+        "detail": "Submit your application at the German embassy in your home country with all required documents."
+      },
+      {
+        "step": "Attend visa interview",
+        "when": "After submitting application",
+        "detail": "Attend an interview to confirm your intentions, financial capacity, and language ability (if applicable)."
+      },
+      {
+        "step": "Receive visa in passport",
+        "when": "Typically within 2-4 weeks after interview",
+        "detail": "Your visa will be stamped in your passport, valid for entry into Germany and residence permit processing."
+      },
+      {
+        "step": "Register with Auslanderbehorde (immigration office) upon arrival",
+        "when": "Within 3 months of arriving in Germany",
+        "detail": "Complete your residence permit registration at the immigration office in your university city."
+      }
+    ]
+  },
+  "cityGuides": [
+    {
+      "city": "London",
+      "country": "UK",
+      "emoji": "🇬🇧",
+      "intro": "London is a vibrant global hub with world-class universities and diverse student communities. The city offers excellent museums, parks, and cultural events, though accommodation and dining can be expensive.",
+      "cost": "GBP 1,400-1,800 per month (accommodation GBP 700-1,200, food GBP 250-400, transport GBP 150, entertainment GBP 200-300)",
+      "transport": "Students rely on the London Underground (Tube), buses, and the Oyster Card for affordable weekly travel passes. Many universities offer student railcards for discounts on national trains.",
+      "tips": [
+        "Join your university's student union and attend freshers' events to meet people",
+        "Use Tesco and Sainsbury's Nectar cards for grocery discounts",
+        "Explore free museums (British Museum, National Gallery, V&A Museum) with your student ID",
+        "Buy a 16-25 railcard for 30% off national train fares",
+        "Live in areas like Stratford, Southwark, or Clapham for affordability with good transport links"
+      ],
+      "studentAreas": [
+        "Bloomsbury (near UCL, great for academics and culture)",
+        "South Kensington (near Imperial and RCA, expensive but vibrant)",
+        "Stratford (affordable, near Queen Mary University)",
+        "Clapham (trendy, good nightlife, slightly south of central London)"
+      ]
+    },
+    {
+      "city": "Toronto",
+      "country": "Canada",
+      "emoji": "🇨🇦",
+      "intro": "Toronto is Canada's largest city with major universities and a multicultural vibe. It offers excellent job opportunities, diverse neighborhoods, and a strong international student community despite cold winters.",
+      "cost": "CAD 1,600-2,100 per month (accommodation CAD 900-1,300, food CAD 300-400, transport CAD 150, entertainment CAD 250-400)",
+      "transport": "The Toronto Transit Commission (TTC) operates subway, streetcars, and buses. Students get discounted Metropass fares (around CAD 56/month) and universities offer additional transit benefits.",
+      "tips": [
+        "Buy a winter coat early—temperatures drop to -10°C in January",
+        "Get a PRESTO card for seamless TTC payment across all transit",
+        "Explore Kensington Market and St. Lawrence Market for affordable groceries",
+        "Join university clubs and attend orientation events to build your social network",
+        "Look for student housing in Chinatown, Kensington, or near your campus for best prices"
+      ],
+      "studentAreas": [
+        "University District (near U of T, walkable and vibrant)",
+        "Chinatown (affordable, great food, good transit)",
+        "Kensington Market (bohemian, affordable, cultural events)",
+        "Queen West (trendy, nightlife, slightly pricier)"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "country": "Australia",
+      "emoji": "🇦🇺",
+      "intro": "Sydney combines stunning beaches, outdoor culture, and world-class universities. It's an excellent place to study with great weather most of the year, though accommodation and living costs are high.",
+      "cost": "AUD 2,000-2,600 per month (accommodation AUD 1,200-1,600, food AUD 350-500, transport AUD 180, entertainment AUD 270-400)",
+      "transport": "Opal Card provides discounted fares on trains, buses, ferries, and light rail. Student cards offer 50% off most journeys, and ferries are an affordable way to travel while enjoying the harbor.",
+      "tips": [
+        "Get an Opal card immediately upon arrival for cheapest public transport",
+        "Visit Bondi, Coogee, and Manly beaches on weekends—many are free",
+        "Join university clubs and student organizations for social events and networking",
+        "Shop at Aldi and Woolworths for budget groceries",
+        "Check out free events like Open-air cinema, live music, and food festivals in summer"
+      ],
+      "studentAreas": [
+        "Newtown (bohemian, affordable, great cafes and nightlife)",
+        "Glebe (near University of Sydney, leafy, trendy shops)",
+        "Redfern (affordable, cultural diversity, good transport)",
+        "Coogee (beachside, fun nightlife, slightly pricier)"
+      ]
+    },
+    {
+      "city": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "intro": "Berlin is one of Europe's most affordable capitals for students, with cutting-edge art, music, and tech scenes. It offers excellent value for money and a youthful, international atmosphere perfect for studying abroad.",
+      "cost": "EUR 850-1,200 per month (accommodation EUR 450-700, food EUR 200-300, transport EUR 30, entertainment EUR 170-200)",
+      "transport": "BVG operates an efficient subway, tram, and bus network. Student discounts are available, and a monthly pass costs around EUR 30 for Berlin's ABC zones, making it very affordable.",
+      "tips": [
+        "Get a BVG student monthly pass for EUR 30—one of Europe's cheapest transit deals",
+        "Eat at student canteens (Mensen) affiliated with your university for cheap, filling meals",
+        "Visit free museums on Thursdays after 6 PM and explore Berlin's street art scene",
+        "Use Flixbus for affordable travel to other European cities on weekends",
+        "Explore vintage shops, flea markets, and beer gardens—Berlin's culture is affordable"
+      ],
+      "studentAreas": [
+        "Kreuzberg (alternative, affordable, vibrant nightlife)",
+        "Friedrichshain (trendy, tech scene, good restaurants)",
+        "Charlottenburg (leafy, quieter, good for families)",
+        "Tempelhof (spacious, artistic community, budget-friendly)"
+      ]
+    },
+    {
+      "city": "New York",
+      "country": "USA",
+      "emoji": "🗽",
+      "intro": "New York City offers world-class universities and unmatched career opportunities, but comes with high costs. The diverse neighborhoods and cultural attractions make it exciting despite the expense and fast-paced environment.",
+      "cost": "USD 2,400-3,200 per month (accommodation USD 1,300-1,800, food USD 400-600, transport USD 133, entertainment USD 300-500)",
+      "transport": "The MTA operates the subway (the fastest way to get around) and buses. Students get a reduced MetroCard fare (around USD 27/week) making the subway affordable for daily commutes.",
+      "tips": [
+        "Buy a 7-day or 30-day MetroCard to save on subway and bus fares",
+        "Use your student ID at restaurants and museums for discounts",
+        "Explore affordable neighborhoods like Astoria (Queens), Sunset Park (Brooklyn), and Washington Heights (Manhattan)",
+        "Join your university's clubs and student organizations immediately—social life is key",
+        "Use Citi Bike for short trips and weekend exploring at just USD 15/month for students"
+      ],
+      "studentAreas": [
+        "Morningside Heights / Harlem (near Columbia, vibrant culture, affordable)",
+        "Astoria, Queens (affordable, diverse, good transport to Manhattan)",
+        "Sunset Park, Brooklyn (up-and-coming, cheap, trendy)",
+        "Washington Heights (very affordable, residential, good subway access)"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "country": "Ireland",
+      "emoji": "🇮🇪",
+      "intro": "Dublin is a vibrant, English-speaking destination with excellent universities and a legendary social scene. It offers a blend of historical charm and modern culture, though prices have risen in recent years.",
+      "cost": "EUR 1,200-1,700 per month (accommodation EUR 700-1,000, food EUR 250-350, transport EUR 80, entertainment EUR 170-300)",
+      "transport": "Dublin Bus and Luas (light rail) are the main systems. A student leap card costs around EUR 20-25/week and works on all public transport, including taxis and ferries.",
+      "tips": [
+        "Get a Leap Card (student version) for discounted transport across all modes",
+        "Visit Temple Bar (busy and touristy) but explore quieter pubs in other neighborhoods",
+        "Shop at Aldi, Lidl, and Dunnes Stores for budget groceries",
+        "Explore free attractions like Trinity College campus, St. Stephen's Green park, and the Guinness Storehouse discounts with student ID",
+        "Attend university events and pub quizzes—Dublin's social scene revolves around pubs"
+      ],
+      "studentAreas": [
+        "Ballymun and Drumcondra (affordable, residential, good bus links)",
+        "Rathmines (artsy, cafes, nightlife, good transport)",
+        "Temple Bar area (vibrant but pricey, full of tourists)",
+        "Stoneybatter (trendy, emerging food scene, good pubs)"
+      ]
+    }
+  ]
+}

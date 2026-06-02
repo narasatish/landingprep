@@ -505,6 +505,7 @@ function TopBar({ current = "home", onNav }) {
     ["vocabulary", "📖 Vocabulary"],
     ["agents", "AI Speaking & Writing"],
     ["colleges", "Study Abroad"],
+    ["relocate", "✈️ Move Abroad (checklist + visa)"],
     ["tools", "Tools"],
     ["languages", "Learn German & French"],
     ["blog", "Blog"],

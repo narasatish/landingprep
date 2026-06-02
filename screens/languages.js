@@ -1,6 +1,6 @@
 "use strict";
 (function() {
-  const { useState, useEffect } = React;
+  const { useState, useEffect, useRef } = React;
   function pronounce(text) {
     try {
       if (window.LP_TTS && window.LP_TTS.speakOne) window.LP_TTS.speakOne(text, "Kore");
@@ -46,6 +46,37 @@
   function ExamsView({ lang, onNav }) {
     return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h3", null, "Why learn ", lang.name, "?"), /* @__PURE__ */ React.createElement("ul", { className: "dest-why" }, lang.why.map((w, i) => /* @__PURE__ */ React.createElement("li", { key: i }, w)))), /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h3", null, lang.name, " proficiency exams"), /* @__PURE__ */ React.createElement("div", { className: "lang-exams" }, lang.exams.map((e, i) => /* @__PURE__ */ React.createElement("div", { className: "lang-exam", key: i }, /* @__PURE__ */ React.createElement("strong", null, e.name), /* @__PURE__ */ React.createElement("span", null, e.desc))))), /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h3", null, "Pair ", lang.name, " with your study-abroad plan"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Free college predictor, scholarships, SOP and visa tools \u2014 all in one place."), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12" }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNav("colleges") }, "Explore universities \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("tools") }, "Free tools"))));
   }
+  function StoriesView({ langId }) {
+    const stories = window.LP_LANG_STORIES && window.LP_LANG_STORIES[langId] || [];
+    const code = langId === "french" ? "fr" : "de";
+    const [active, setActive] = useState(null);
+    const [playing, setPlaying] = useState(false);
+    const stopRef = useRef(false);
+    function speakLine(t) {
+      try {
+        if (window.LP_TTS && window.LP_TTS.speakOne) return window.LP_TTS.speakOne(t, "Kore", null, code);
+      } catch (e) {
+      }
+      return Promise.resolve();
+    }
+    async function readAll(lines) {
+      setPlaying(true);
+      stopRef.current = false;
+      for (const l of lines) {
+        if (stopRef.current) break;
+        await speakLine(l.t);
+      }
+      setPlaying(false);
+    }
+    if (!stories.length) return /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Stories are loading\u2026"));
+    if (!active) {
+      return /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h3", null, "\u{1F4D6} Graded reading stories"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Short stories & dialogues with audio and a glossary \u2014 the natural way to absorb ", langId === "french" ? "French" : "German", "."), /* @__PURE__ */ React.createElement("div", { className: "deck-grid" }, stories.map((s) => /* @__PURE__ */ React.createElement("button", { key: s.id, className: "deck-card", onClick: () => setActive(s) }, /* @__PURE__ */ React.createElement("span", { className: "deck-card-emoji" }, s.emoji || "\u{1F4D6}"), /* @__PURE__ */ React.createElement("span", { className: "deck-card-name" }, s.title), /* @__PURE__ */ React.createElement("span", { className: "deck-card-meta" }, s.level, " \xB7 ", s.lines.length, " lines \u2192")))));
+    }
+    return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "lang-mock-bar" }, /* @__PURE__ */ React.createElement("a", { className: "deck-back", onClick: () => {
+      stopRef.current = true;
+      setActive(null);
+    } }, "\u2190 All stories"), /* @__PURE__ */ React.createElement("span", { className: "deck-title-mini" }, active.emoji, " ", active.title, " \xB7 ", active.level)), /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => playing ? stopRef.current = true : readAll(active.lines) }, playing ? "\u23F9 Stop" : "\u25B6 Read the whole story"), /* @__PURE__ */ React.createElement("div", { className: "story-lines" }, active.lines.map((l, i) => /* @__PURE__ */ React.createElement("div", { className: "story-line", key: i }, /* @__PURE__ */ React.createElement("button", { className: "lang-say", title: "Hear this line", onClick: () => speakLine(l.t) }, "\u{1F50A}"), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "story-native" }, l.t), /* @__PURE__ */ React.createElement("div", { className: "story-gloss" }, l.en)))))), active.glossary && active.glossary.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h4", null, "Glossary"), /* @__PURE__ */ React.createElement("div", { className: "lang-vocab" }, active.glossary.map((g, i) => /* @__PURE__ */ React.createElement("div", { className: "lang-vrow", key: i }, /* @__PURE__ */ React.createElement("button", { className: "lang-say", onClick: () => speakLine(g.w) }, "\u{1F50A}"), /* @__PURE__ */ React.createElement("div", { className: "lang-w" }, /* @__PURE__ */ React.createElement("strong", null, g.w), /* @__PURE__ */ React.createElement("span", null, g.en)))))));
+  }
   function Languages({ onNav }) {
     const langs = window.LP_LANGUAGES || {};
     const order = window.LP_LANGUAGE_ORDER || Object.keys(langs);
@@ -62,7 +93,7 @@
     return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "languages", onNav }), /* @__PURE__ */ React.createElement("main", { className: "tools-shell tools-shell-wide" }, /* @__PURE__ */ React.createElement("header", { className: "tools-hero" }, /* @__PURE__ */ React.createElement("h1", null, "Learn ", lang.name, " \u2014 100% Free \u{1F3A7}"), /* @__PURE__ */ React.createElement("p", null, lang.blurb)), /* @__PURE__ */ React.createElement("div", { className: "tools-groups" }, order.map((id) => /* @__PURE__ */ React.createElement("button", { key: id, className: "tools-group" + (langId === id ? " active" : ""), onClick: () => {
       setLangId(id);
       setTab("learn");
-    } }, langs[id].flag, " ", langs[id].name))), /* @__PURE__ */ React.createElement("div", { className: "tools-tabs" }, [["learn", "\u{1F4DA} Learn"], ["vocab", "\u{1F5C2} Vocabulary"], ["speak", "\u{1F399}\uFE0F AI Speaking"], ["test", "\u2705 Placement Test"], ["mock", "\u{1F4DD} Mock Test"], ["exams", "\u{1F393} Exams & Why"]].map(([id, label]) => /* @__PURE__ */ React.createElement("button", { key: id, className: "tools-tab" + (tab === id ? " active" : ""), onClick: () => setTab(id) }, label))), tab === "learn" && /* @__PURE__ */ React.createElement(LearnView, { lang }), tab === "vocab" && /* @__PURE__ */ React.createElement(VocabView, { lang }), tab === "speak" && (window.LP_LangSpeak ? /* @__PURE__ */ React.createElement(window.LP_LangSpeak, { langId, key: langId }) : /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Loading speaking partner\u2026"))), tab === "test" && /* @__PURE__ */ React.createElement(TestView, { lang, key: langId }), tab === "mock" && (window.LP_LangMock ? /* @__PURE__ */ React.createElement(window.LP_LangMock, { langId, key: langId }) : /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Loading mock tests\u2026"))), tab === "exams" && /* @__PURE__ */ React.createElement(ExamsView, { lang, onNav })), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
+    } }, langs[id].flag, " ", langs[id].name))), /* @__PURE__ */ React.createElement("div", { className: "tools-tabs" }, [["learn", "\u{1F4DA} Learn"], ["vocab", "\u{1F5C2} Vocabulary"], ["stories", "\u{1F4D6} Stories"], ["speak", "\u{1F399}\uFE0F AI Speaking"], ["test", "\u2705 Placement Test"], ["mock", "\u{1F4DD} Mock Test"], ["exams", "\u{1F393} Exams & Why"]].map(([id, label]) => /* @__PURE__ */ React.createElement("button", { key: id, className: "tools-tab" + (tab === id ? " active" : ""), onClick: () => setTab(id) }, label))), tab === "learn" && /* @__PURE__ */ React.createElement(LearnView, { lang }), tab === "vocab" && /* @__PURE__ */ React.createElement(VocabView, { lang }), tab === "stories" && /* @__PURE__ */ React.createElement(StoriesView, { langId, key: langId }), tab === "speak" && (window.LP_LangSpeak ? /* @__PURE__ */ React.createElement(window.LP_LangSpeak, { langId, key: langId }) : /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Loading speaking partner\u2026"))), tab === "test" && /* @__PURE__ */ React.createElement(TestView, { lang, key: langId }), tab === "mock" && (window.LP_LangMock ? /* @__PURE__ */ React.createElement(window.LP_LangMock, { langId, key: langId }) : /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Loading mock tests\u2026"))), tab === "exams" && /* @__PURE__ */ React.createElement(ExamsView, { lang, onNav })), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
   }
   window.LP_Languages = Languages;
 })();

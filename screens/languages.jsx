@@ -3,7 +3,7 @@
 // LandingPrep — Language Learning Hub (German flagship + French). Reuses the live
 // natural voice (LP_TTS.speakOne) for pronunciation and the shared card styles.
 (function () {
-  const { useState, useEffect } = React;
+  const { useState, useEffect, useRef } = React;
 
   function pronounce(text) {
     try {
@@ -128,6 +128,62 @@
     );
   }
 
+  function StoriesView({ langId }) {
+    const stories = (window.LP_LANG_STORIES && window.LP_LANG_STORIES[langId]) || [];
+    const code = langId === "french" ? "fr" : "de";
+    const [active, setActive] = useState(null);
+    const [playing, setPlaying] = useState(false);
+    const stopRef = useRef(false);
+    function speakLine(t) { try { if (window.LP_TTS && window.LP_TTS.speakOne) return window.LP_TTS.speakOne(t, "Kore", null, code); } catch (e) {} return Promise.resolve(); }
+    async function readAll(lines) {
+      setPlaying(true); stopRef.current = false;
+      for (const l of lines) { if (stopRef.current) break; await speakLine(l.t); }
+      setPlaying(false);
+    }
+    if (!stories.length) return <div className="tool-card"><p className="tool-sub">Stories are loading…</p></div>;
+    if (!active) {
+      return (
+        <div className="tool-card">
+          <h3>📖 Graded reading stories</h3>
+          <p className="tool-sub">Short stories &amp; dialogues with audio and a glossary — the natural way to absorb {langId === "french" ? "French" : "German"}.</p>
+          <div className="deck-grid">
+            {stories.map((s) => (
+              <button key={s.id} className="deck-card" onClick={() => setActive(s)}>
+                <span className="deck-card-emoji">{s.emoji || "📖"}</span>
+                <span className="deck-card-name">{s.title}</span>
+                <span className="deck-card-meta">{s.level} · {s.lines.length} lines →</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      );
+    }
+    return (
+      <div>
+        <div className="lang-mock-bar">
+          <a className="deck-back" onClick={() => { stopRef.current = true; setActive(null); }}>← All stories</a>
+          <span className="deck-title-mini">{active.emoji} {active.title} · {active.level}</span>
+        </div>
+        <div className="tool-card">
+          <button className={"btn btn-primary"} onClick={() => playing ? (stopRef.current = true) : readAll(active.lines)}>{playing ? "⏹ Stop" : "▶ Read the whole story"}</button>
+          <div className="story-lines">
+            {active.lines.map((l, i) => (
+              <div className="story-line" key={i}>
+                <button className="lang-say" title="Hear this line" onClick={() => speakLine(l.t)}>🔊</button>
+                <div><div className="story-native">{l.t}</div><div className="story-gloss">{l.en}</div></div>
+              </div>
+            ))}
+          </div>
+        </div>
+        {active.glossary && active.glossary.length > 0 && (
+          <div className="tool-card"><h4>Glossary</h4><div className="lang-vocab">{active.glossary.map((g, i) => (
+            <div className="lang-vrow" key={i}><button className="lang-say" onClick={() => speakLine(g.w)}>🔊</button><div className="lang-w"><strong>{g.w}</strong><span>{g.en}</span></div></div>
+          ))}</div></div>
+        )}
+      </div>
+    );
+  }
+
   function Languages({ onNav }) {
     const langs = window.LP_LANGUAGES || {};
     const order = window.LP_LANGUAGE_ORDER || Object.keys(langs);
@@ -158,12 +214,13 @@
             ))}
           </div>
           <div className="tools-tabs">
-            {[["learn", "📚 Learn"], ["vocab", "🗂 Vocabulary"], ["speak", "🎙️ AI Speaking"], ["test", "✅ Placement Test"], ["mock", "📝 Mock Test"], ["exams", "🎓 Exams & Why"]].map(([id, label]) => (
+            {[["learn", "📚 Learn"], ["vocab", "🗂 Vocabulary"], ["stories", "📖 Stories"], ["speak", "🎙️ AI Speaking"], ["test", "✅ Placement Test"], ["mock", "📝 Mock Test"], ["exams", "🎓 Exams & Why"]].map(([id, label]) => (
               <button key={id} className={"tools-tab" + (tab === id ? " active" : "")} onClick={() => setTab(id)}>{label}</button>
             ))}
           </div>
           {tab === "learn" && <LearnView lang={lang} />}
           {tab === "vocab" && <VocabView lang={lang} />}
+          {tab === "stories" && <StoriesView langId={langId} key={langId} />}
           {tab === "speak" && (window.LP_LangSpeak ? <window.LP_LangSpeak langId={langId} key={langId} /> : <div className="tool-card"><p className="tool-sub">Loading speaking partner…</p></div>)}
           {tab === "test" && <TestView lang={lang} key={langId} />}
           {tab === "mock" && (window.LP_LangMock ? <window.LP_LangMock langId={langId} key={langId} /> : <div className="tool-card"><p className="tool-sub">Loading mock tests…</p></div>)}
