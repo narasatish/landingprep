@@ -3659,6 +3659,7 @@ html[data-theme="dark"] {
 
 /* ── Free Tools hub ─────────────────────────────────────────────────────── */
 .tools-shell { max-width: 860px; margin: 0 auto; padding: 28px 20px 60px; }
+.tools-shell-wide { max-width: 1080px; }
 .tools-hero { text-align: center; margin: 10px 0 22px; }
 .tools-hero h1 { font-size: clamp(28px, 4vw, 40px); margin: 0 0 8px; color: var(--ink); }
 .tools-hero p { color: var(--ink-3); font-size: 17px; margin: 0 auto; max-width: 620px; }
@@ -4420,15 +4421,17 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 
 /* ── Language Learning Hub ── */
 .lang-units { display: flex; flex-direction: column; gap: 12px; }
-.lang-vocab { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
-.lang-vrow { display: grid; grid-template-columns: 38px minmax(150px, 1.1fr) 1.4fr; align-items: center; gap: 12px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
-.lang-say { width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--line); background: color-mix(in srgb, var(--accent) 10%, transparent); cursor: pointer; font-size: 15px; transition: transform .1s ease, background .15s ease; }
-.lang-say:hover { background: color-mix(in srgb, var(--accent) 20%, transparent); transform: scale(1.06); }
-.lang-w strong { display: block; font-size: 15px; color: var(--ink); }
+.lang-vocab { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; margin-top: 10px; }
+.lang-vrow { display: grid; grid-template-columns: 36px 1fr; grid-template-areas: "say word" "ex ex"; align-items: center; gap: 5px 12px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); transition: border-color .15s ease, box-shadow .15s ease; }
+.lang-vrow:hover { border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); box-shadow: 0 3px 12px rgba(0,0,0,.05); }
+.lang-say { grid-area: say; width: 34px; height: 34px; border-radius: 9px; border: 1px solid var(--line); background: color-mix(in srgb, var(--accent) 10%, transparent); cursor: pointer; font-size: 15px; transition: transform .1s ease, background .15s ease; }
+.lang-say:hover { background: color-mix(in srgb, var(--accent) 22%, transparent); transform: scale(1.08); }
+.lang-w { grid-area: word; min-width: 0; }
+.lang-w strong { display: block; font-size: 15.5px; color: var(--ink); line-height: 1.25; }
 .lang-w span { font-size: 12.5px; color: var(--ink-3); }
-.lang-ex { font-size: 13.5px; color: var(--ink-2); font-style: italic; cursor: pointer; }
+.lang-ex { grid-area: ex; font-size: 13px; color: var(--ink-2); font-style: italic; cursor: pointer; padding-left: 48px; line-height: 1.55; }
 .lang-ex:hover { color: var(--accent); }
-@media (max-width: 640px) { .lang-vrow { grid-template-columns: 34px 1fr; } .lang-ex { grid-column: 1 / -1; padding-left: 46px; } }
+@media (max-width: 560px) { .lang-vocab { grid-template-columns: 1fr; } }
 .lang-exams { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
 @media (max-width: 640px) { .lang-exams { grid-template-columns: 1fr; } }
 .lang-exam { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--surface); }

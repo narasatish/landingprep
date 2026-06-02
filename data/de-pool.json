@@ -1,0 +1,597 @@
+{
+  "reading": [
+    {
+      "topic": "Introducing a student",
+      "passage": "Mein Name ist Anna. Ich bin 16 Jahre alt und komme aus München. Ich gehe in die 10. Klasse und lerne Deutsch und Englisch. Meine Hobbys sind Musik und Sport. Am Wochenende spiele ich Tennis.",
+      "questions": [
+        {
+          "q": "Wie alt ist Anna? (How old is Anna?)",
+          "options": ["13 Jahre alt", "16 Jahre alt", "18 Jahre alt", "20 Jahre alt"],
+          "answer": 1
+        },
+        {
+          "q": "Woher kommt Anna? (Where is Anna from?)",
+          "options": ["Berlin", "Hamburg", "München", "Köln"],
+          "answer": 2
+        },
+        {
+          "q": "Was sind Annas Hobbys? (What are Anna's hobbies?)",
+          "options": ["Musik und Lesen", "Sport und Malen", "Musik und Sport", "Tanzen und Reisen"],
+          "answer": 2
+        },
+        {
+          "q": "Was macht Anna am Wochenende? (What does Anna do on the weekend?)",
+          "options": ["Sie liest Bücher", "Sie spielt Tennis", "Sie geht ins Kino", "Sie malt Bilder"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "topic": "Describing a daily routine",
+      "passage": "Tom steht um 7 Uhr auf. Er duscht und frühstückt. Dann geht er zur Schule. In der Schule hat er Mathe, Deutsch und Englisch. Nach der Schule macht er Hausaufgaben. Am Abend sieht er fern und geht um 22 Uhr ins Bett.",
+      "questions": [
+        {
+          "q": "Wann steht Tom auf? (What time does Tom wake up?)",
+          "options": ["6 Uhr", "7 Uhr", "8 Uhr", "9 Uhr"],
+          "answer": 1
+        },
+        {
+          "q": "Welche Fächer hat Tom in der Schule? (Which subjects does Tom have at school?)",
+          "options": ["Mathe, Deutsch, Englisch", "Mathe, Biologie, Sport", "Deutsch, Englisch, Kunst", "Mathe, Geschichte, Englisch"],
+          "answer": 0
+        },
+        {
+          "q": "Was macht Tom nach der Schule? (What does Tom do after school?)",
+          "options": ["Er spielt Fußball", "Er trifft Freunde", "Er macht Hausaufgaben", "Er geht spazieren"],
+          "answer": 2
+        },
+        {
+          "q": "Wann geht Tom ins Bett? (When does Tom go to bed?)",
+          "options": ["20 Uhr", "21 Uhr", "22 Uhr", "23 Uhr"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "topic": "A family in a restaurant",
+      "passage": "Die Familie Schmidt sitzt im Restaurant. Der Vater bestellt Schnitzel und Kartoffeln. Die Mutter möchte Fisch mit Salat. Die Tochter isst ein Hähnchen und die Sohn trinkt Cola. Alle essen gerne zusammen. Das Essen ist sehr lecker.",
+      "questions": [
+        {
+          "q": "Wo sitzt die Familie? (Where is the family sitting?)",
+          "options": ["Im Café", "Im Restaurant", "Im Geschäft", "Im Haus"],
+          "answer": 1
+        },
+        {
+          "q": "Was bestellt der Vater? (What does the father order?)",
+          "options": ["Schnitzel und Kartoffeln", "Fisch mit Salat", "Hähnchen und Reis", "Pasta und Tomaten"],
+          "answer": 0
+        },
+        {
+          "q": "Was isst die Tochter? (What does the daughter eat?)",
+          "options": ["Fisch mit Salat", "Schnitzel und Kartoffeln", "Ein Hähnchen", "Kartoffeln mit Gemüse"],
+          "answer": 2
+        },
+        {
+          "q": "Wie ist das Essen? (How is the food?)",
+          "options": ["Furchtbar", "Nicht gut", "Sehr lecker", "Zu heiß"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "topic": "Shopping for clothes",
+      "passage": "Lisa geht ins Geschäft. Sie sucht ein neues Kleid. Das rote Kleid kostet 50 Euro. Das blaue Kleid kostet 35 Euro. Lisa kauft das blaue Kleid, weil es billiger ist. Sie bezahlt mit ihrer Kreditkarte. Das Kleid passt perfekt.",
+      "questions": [
+        {
+          "q": "Was sucht Lisa? (What is Lisa looking for?)",
+          "options": ["Schuhe", "Ein Kleid", "Eine Jacke", "Einen Mantel"],
+          "answer": 1
+        },
+        {
+          "q": "Wie viel kostet das rote Kleid? (How much does the red dress cost?)",
+          "options": ["30 Euro", "35 Euro", "50 Euro", "60 Euro"],
+          "answer": 2
+        },
+        {
+          "q": "Welches Kleid kauft Lisa? (Which dress does Lisa buy?)",
+          "options": ["Das rote Kleid", "Das blaue Kleid", "Das grüne Kleid", "Das gelbe Kleid"],
+          "answer": 1
+        },
+        {
+          "q": "Warum kauft Lisa das blaue Kleid? (Why does Lisa buy the blue dress?)",
+          "options": ["Es ist größer", "Es ist billiger", "Es ist schöner", "Es ist lang"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "topic": "A vacation plan",
+      "passage": "Im Sommer fahrt Peters Familie nach Österreich in den Urlaub. Sie bleiben zwei Wochen. Sie wohnen in einem kleinen Hotel in den Bergen. Tagsüber wandern sie oder schwimmen im See. Am Abend essen sie im Restaurant. Die Berge sind wunderschön und das Wetter ist warm.",
+      "questions": [
+        {
+          "q": "Wohin fahrt Peters Familie? (Where does Peter's family go?)",
+          "options": ["Nach Schweiz", "Nach Österreich", "Nach Deutschland", "Nach Frankreich"],
+          "answer": 1
+        },
+        {
+          "q": "Wie lange bleiben sie? (How long do they stay?)",
+          "options": ["Eine Woche", "Zwei Wochen", "Drei Wochen", "Ein Monat"],
+          "answer": 1
+        },
+        {
+          "q": "Wo wohnen sie? (Where do they stay?)",
+          "options": ["In einem großen Hotel in der Stadt", "In einem kleinen Hotel in den Bergen", "In einer Berghütte", "Im Ferienhaus"],
+          "answer": 1
+        },
+        {
+          "q": "Was machen sie tagsüber? (What do they do during the day?)",
+          "options": ["Sie arbeiten", "Sie spielen Videospiele", "Sie wandern oder schwimmen", "Sie schlafen"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "topic": "A birthday celebration",
+      "passage": "Heute ist Julias Geburtstag. Sie wird 14 Jahre alt. Ihre Freunde bringen Geschenke mit. Im Wohnzimmer gibt es Musik und Tänze. Die Mutter hat einen großen Kuchen gebacken. Alle singen ein Geburtstagslied. Julia ist sehr glücklich.",
+      "questions": [
+        {
+          "q": "Wie alt wird Julia? (How old is Julia turning?)",
+          "options": ["13 Jahre", "14 Jahre", "15 Jahre", "16 Jahre"],
+          "answer": 1
+        },
+        {
+          "q": "Was bringen die Freunde mit? (What do the friends bring?)",
+          "options": ["Kuchen", "Getränke", "Geschenke", "Musik"],
+          "answer": 2
+        },
+        {
+          "q": "Wer bäckt einen Kuchen? (Who bakes a cake?)",
+          "options": ["Der Vater", "Die Mutter", "Die Großmutter", "Julia"],
+          "answer": 1
+        },
+        {
+          "q": "Was ist Julias Gefühl? (What is Julia's feeling?)",
+          "options": ["Traurig", "Langweilig", "Glücklich", "Müde"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "topic": "A school day",
+      "passage": "Michael hat heute vier Unterrichtsstunden. Die erste Stunde ist Englisch. Der Englischlehrer ist sehr freundlich. In der zweiten Stunde hat er Mathematik. Das ist schwierig. Nach der dritten Stunde haben alle Schüler eine Pause. Sie essen Äpfel und Brote. Die letzte Stunde ist Kunst.",
+      "questions": [
+        {
+          "q": "Wie viele Unterrichtsstunden hat Michael? (How many lessons does Michael have?)",
+          "options": ["Zwei", "Drei", "Vier", "Fünf"],
+          "answer": 2
+        },
+        {
+          "q": "Welches ist die erste Stunde? (What is the first lesson?)",
+          "options": ["Mathematik", "Deutsch", "Englisch", "Sport"],
+          "answer": 2
+        },
+        {
+          "q": "Wie ist der Englischlehrer? (What is the English teacher like?)",
+          "options": ["Streng", "Freundlich", "Müde", "Langweilig"],
+          "answer": 1
+        },
+        {
+          "q": "Was essen die Schüler in der Pause? (What do the students eat during break?)",
+          "options": ["Pizza und Cola", "Äpfel und Brote", "Schokolade und Wasser", "Käse und Wurst"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "topic": "Meeting a new neighbor",
+      "passage": "Herr und Frau Müller sind die neuen Nachbarn. Sie kommen aus Hamburg. Herr Müller ist Arzt und Frau Müller ist Lehrerin. Sie haben zwei Kinder: einen Sohn und eine Tochter. Die Familie ist sehr nett und freundlich. Sie laden alle Nachbarn zu einem Fest ein.",
+      "questions": [
+        {
+          "q": "Woher kommen Herr und Frau Müller? (Where do Mr. and Mrs. Müller come from?)",
+          "options": ["München", "Hamburg", "Berlin", "Köln"],
+          "answer": 1
+        },
+        {
+          "q": "Was ist Herr Müller von Beruf? (What is Mr. Müller's profession?)",
+          "options": ["Lehrer", "Arzt", "Ingenieur", "Verkäufer"],
+          "answer": 1
+        },
+        {
+          "q": "Was ist Frau Müller von Beruf? (What is Mrs. Müller's profession?)",
+          "options": ["Ärztin", "Lehrerin", "Krankenschwester", "Kellnerin"],
+          "answer": 1
+        },
+        {
+          "q": "Wie viele Kinder haben sie? (How many children do they have?)",
+          "options": ["Ein Kind", "Zwei Kinder", "Drei Kinder", "Vier Kinder"],
+          "answer": 1
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "q": "Das ist ___ Buch. (This is ___ book.)",
+      "options": ["ein", "eine", "der", "den"],
+      "answer": 0
+    },
+    {
+      "q": "___ Frau ist Ärztin. (The woman is a doctor.)",
+      "options": ["Der", "Die", "Das", "Den"],
+      "answer": 1
+    },
+    {
+      "q": "Das Kind ___ zehn Jahre alt. (The child is ten years old.)",
+      "options": ["bin", "bist", "ist", "sind"],
+      "answer": 2
+    },
+    {
+      "q": "Ich ___ einen Bruder. (I have a brother.)",
+      "options": ["habe", "hab", "hast", "hat"],
+      "answer": 0
+    },
+    {
+      "q": "___ hast du einen Hund? (Do you have a dog?)",
+      "options": ["Was", "Wo", "Wie", "Warum"],
+      "answer": 3
+    },
+    {
+      "q": "Die Katzen sind ___ Haus. (The cats are in the house.)",
+      "options": ["in", "im", "im dem", "in dem"],
+      "answer": 1
+    },
+    {
+      "q": "Er ___ Fußball jeden Tag. (He plays football every day.)",
+      "options": ["spiele", "spielst", "spielt", "spielen"],
+      "answer": 2
+    },
+    {
+      "q": "Das ist ___ Auto von meinem Vater. (This is my father's car.)",
+      "options": ["das", "dem", "den", "der"],
+      "answer": 0
+    },
+    {
+      "q": "___ möchte du trinken? (What would you like to drink?)",
+      "options": ["Wie", "Was", "Wer", "Wo"],
+      "answer": 1
+    },
+    {
+      "q": "Die ___ sind rot und grün. (The apples are red and green.)",
+      "options": ["Apfel", "Apfels", "Äpfel", "Apfelss"],
+      "answer": 2
+    },
+    {
+      "q": "Ich ___ nicht glücklich. (I am not happy.)",
+      "options": ["bin", "bin nicht", "nicht bin", "ist nicht"],
+      "answer": 0
+    },
+    {
+      "q": "Das ist kein ___ Bleistift, das ist mein Bleistift. (That is not a pencil, that is my pencil.)",
+      "options": ["ein", "eine", "der", "das"],
+      "answer": 0
+    },
+    {
+      "q": "___ kommt Thomas? (Where does Thomas come from?)",
+      "options": ["Welcher", "Wer", "Woher", "Was"],
+      "answer": 2
+    },
+    {
+      "q": "Die Mutter ___ das Essen. (The mother cooks the food.)",
+      "options": ["koche", "kochst", "kocht", "kochen"],
+      "answer": 2
+    },
+    {
+      "q": "Wir ___ Deutsch und Englisch. (We speak German and English.)",
+      "options": ["spreche", "sprechst", "spricht", "sprechen"],
+      "answer": 3
+    },
+    {
+      "q": "___ ist das Fenster? Dort! (Where is the window? There!)",
+      "options": ["Was", "Wo", "Wie", "Wer"],
+      "answer": 1
+    },
+    {
+      "q": "Das sind ___ Bücher. (These are my books.)",
+      "options": ["mein", "meine", "meiner", "meines"],
+      "answer": 1
+    },
+    {
+      "q": "Ich kaufe ___ neues Kleid. (I buy a new dress.)",
+      "options": ["ein", "eine", "einen", "einem"],
+      "answer": 1
+    },
+    {
+      "q": "Die Schüler ___ nie spät zur Schule. (The students never come late to school.)",
+      "options": ["kommst", "kommt", "komme", "kommen"],
+      "answer": 3
+    },
+    {
+      "q": "Das ist ___ Computer. (This is his computer.)",
+      "options": ["sein", "seine", "seiner", "seines"],
+      "answer": 0
+    },
+    {
+      "q": "___ trinkt du Tee oder Kaffee? (Do you drink tea or coffee?)",
+      "options": ["Wie", "Was", "Wo", "Wer"],
+      "answer": 1
+    },
+    {
+      "q": "Der Mann ___ 45 Jahre alt. (The man is 45 years old.)",
+      "options": ["bin", "bist", "ist", "sind"],
+      "answer": 2
+    },
+    {
+      "q": "Das ist ___ Stuhl von dem Lehrer. (This is the teacher's chair.)",
+      "options": ["der", "die", "das", "den"],
+      "answer": 2
+    },
+    {
+      "q": "Die Fenster sind ___ Klassenzimmer. (The windows are in the classroom.)",
+      "options": ["in", "im", "in den", "in das"],
+      "answer": 2
+    },
+    {
+      "q": "Der Junge ___ einen Ball. (The boy has a ball.)",
+      "options": ["habe", "hast", "hat", "habt"],
+      "answer": 2
+    },
+    {
+      "q": "___ möchte ein Stück Kuchen? (Who wants a piece of cake?)",
+      "options": ["Was", "Wer", "Wo", "Wie"],
+      "answer": 1
+    },
+    {
+      "q": "Das ist ___ Haus. (This is her house.)",
+      "options": ["ihr", "ihre", "ihres", "ihrer"],
+      "answer": 0
+    },
+    {
+      "q": "Wir ___ im Park. (We walk in the park.)",
+      "options": ["gehe", "gehst", "geht", "gehen"],
+      "answer": 3
+    },
+    {
+      "q": "___ ist der Preis für das Buch? (What is the price of the book?)",
+      "options": ["Wie", "Was", "Wo", "Wer"],
+      "answer": 1
+    },
+    {
+      "q": "Die Mädchen ___ zehn und elf Jahre alt. (The girls are ten and eleven years old.)",
+      "options": ["bin", "bist", "ist", "sind"],
+      "answer": 3
+    },
+    {
+      "q": "Das sind ___ Schuhe. (These are our shoes.)",
+      "options": ["unser", "unsere", "unserer", "unseres"],
+      "answer": 1
+    },
+    {
+      "q": "Ich ___ ins Kino. (I go to the cinema.)",
+      "options": ["gehe", "gehst", "geht", "gehen"],
+      "answer": 0
+    },
+    {
+      "q": "___ kommst du aus? (Where do you come from?)",
+      "options": ["Was", "Woher", "Wie", "Wann"],
+      "answer": 1
+    },
+    {
+      "q": "Der Lehrer ___ eine Klasse. (The teacher has a class.)",
+      "options": ["habe", "hast", "hat", "habt"],
+      "answer": 2
+    },
+    {
+      "q": "Das ist kein___es Haus, das ist groß. (This is not a small house, it is big.)",
+      "options": ["klein", "kleines", "kleine", "kleiner"],
+      "answer": 1
+    },
+    {
+      "q": "___ trinkt du jeden Morgen? (What do you drink every morning?)",
+      "options": ["Wie", "Was", "Wo", "Wer"],
+      "answer": 1
+    },
+    {
+      "q": "Ich bin nicht ___ . (I am not tall.)",
+      "options": ["lang", "groß", "klein", "schnell"],
+      "answer": 1
+    },
+    {
+      "q": "Das ist ___ Nummer: 23. (This is my number: 23.)",
+      "options": ["mein", "meine", "meiner", "meines"],
+      "answer": 0
+    },
+    {
+      "q": "Die ___ sind gelb und grün. (The houses are yellow and green.)",
+      "options": ["Haus", "Hauses", "Häuser", "Hausern"],
+      "answer": 2
+    }
+  ],
+  "listening": [
+    {
+      "audio": "Ich heiße Sara und ich bin 14 Jahre alt.",
+      "q": "How old is Sara?",
+      "options": ["12 years old", "13 years old", "14 years old", "15 years old"],
+      "answer": 2
+    },
+    {
+      "audio": "Das Buch kostet 12 Euro.",
+      "q": "How much does the book cost?",
+      "options": ["10 euros", "11 euros", "12 euros", "13 euros"],
+      "answer": 2
+    },
+    {
+      "audio": "Ich komme aus Berlin.",
+      "q": "Where does the speaker come from?",
+      "options": ["Munich", "Berlin", "Hamburg", "Cologne"],
+      "answer": 1
+    },
+    {
+      "audio": "Es ist halb zehn.",
+      "q": "What time is it?",
+      "options": ["9:30", "9:50", "10:00", "10:30"],
+      "answer": 0
+    },
+    {
+      "audio": "Ich möchte einen Kaffee.",
+      "q": "What does the speaker want?",
+      "options": ["Tea", "A coffee", "Water", "Juice"],
+      "answer": 1
+    },
+    {
+      "audio": "Die Fahrkarte kostet 8 Euro 50.",
+      "q": "How much is the ticket?",
+      "options": ["8 euros", "8 euros 50", "8 euros 30", "8 euros 60"],
+      "answer": 1
+    },
+    {
+      "audio": "Ich bin um 7 Uhr aufgestanden.",
+      "q": "What time did the speaker wake up?",
+      "options": ["6:00", "7:00", "8:00", "9:00"],
+      "answer": 1
+    },
+    {
+      "audio": "Montag ist mein Lieblings-Wochentag.",
+      "q": "What is the speaker's favorite day?",
+      "options": ["Sunday", "Monday", "Tuesday", "Wednesday"],
+      "answer": 1
+    },
+    {
+      "audio": "Meine Schwester ist 16 Jahre alt.",
+      "q": "How old is the speaker's sister?",
+      "options": ["14 years old", "15 years old", "16 years old", "17 years old"],
+      "answer": 2
+    },
+    {
+      "audio": "Das Essen ist sehr lecker.",
+      "q": "What is true about the food?",
+      "options": ["It is cold", "It is spicy", "It is very delicious", "It is bad"],
+      "answer": 2
+    },
+    {
+      "audio": "Der Zug fährt um 14 Uhr.",
+      "q": "When does the train leave?",
+      "options": ["13:00", "14:00", "15:00", "16:00"],
+      "answer": 1
+    },
+    {
+      "audio": "Wir gehen ins Kino.",
+      "q": "Where are they going?",
+      "options": ["To the park", "To the cinema", "To the school", "To the restaurant"],
+      "answer": 1
+    },
+    {
+      "audio": "Ich habe einen Bruder und zwei Schwestern.",
+      "q": "How many siblings does the speaker have?",
+      "options": ["One brother", "One brother and two sisters", "Two brothers and one sister", "Three brothers"],
+      "answer": 1
+    },
+    {
+      "audio": "Der Kurs beginnt am Dienstag.",
+      "q": "What day does the course start?",
+      "options": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      "answer": 1
+    },
+    {
+      "audio": "Das ist meine Telefonnummer: 030-456789.",
+      "q": "What is being given?",
+      "options": ["An address", "A phone number", "A license plate", "A zip code"],
+      "answer": 1
+    },
+    {
+      "audio": "Der Supermarkt ist links von der Kirche.",
+      "q": "Where is the supermarket?",
+      "options": ["Right of the church", "Left of the church", "Behind the church", "In front of the church"],
+      "answer": 1
+    },
+    {
+      "audio": "Mein Geburtstag ist am 25. März.",
+      "q": "When is the speaker's birthday?",
+      "options": ["March 15", "March 25", "March 5", "April 25"],
+      "answer": 1
+    },
+    {
+      "audio": "Das Hemd kostet 35 Euro.",
+      "q": "How much is the shirt?",
+      "options": ["30 euros", "35 euros", "40 euros", "45 euros"],
+      "answer": 1
+    },
+    {
+      "audio": "Ich wohne in der Bergstraße 12.",
+      "q": "What is the speaker's address?",
+      "options": ["Bergstraße 10", "Bergstraße 12", "Bergstraße 20", "Bergstraße 22"],
+      "answer": 1
+    },
+    {
+      "audio": "Der Film endet um 20 Uhr 30.",
+      "q": "When does the film end?",
+      "options": ["19:30", "20:00", "20:30", "21:00"],
+      "answer": 2
+    },
+    {
+      "audio": "Ich bin Studentinnen aus Polen.",
+      "q": "Where is the speaker from?",
+      "options": ["Germany", "Poland", "France", "Spain"],
+      "answer": 1
+    },
+    {
+      "audio": "Das Wasser kostet 2 Euro 50.",
+      "q": "How much is the water?",
+      "options": ["2 euros", "2 euros 50", "3 euros", "3 euros 50"],
+      "answer": 1
+    },
+    {
+      "audio": "Der Unterricht ist von 9 Uhr bis 13 Uhr.",
+      "q": "When is the class?",
+      "options": ["8:00 to 12:00", "9:00 to 13:00", "10:00 to 14:00", "9:00 to 12:00"],
+      "answer": 1
+    },
+    {
+      "audio": "Ich brauche einen neuen Computer.",
+      "q": "What does the speaker need?",
+      "options": ["A new phone", "A new computer", "A new car", "A new book"],
+      "answer": 1
+    },
+    {
+      "audio": "Die Prüfung ist am 15. Juni.",
+      "q": "When is the exam?",
+      "options": ["June 5", "June 10", "June 15", "June 20"],
+      "answer": 2
+    },
+    {
+      "audio": "Der Biergarten ist rechts von dem Museum.",
+      "q": "Where is the beer garden?",
+      "options": ["Left of the museum", "Right of the museum", "Behind the museum", "In front of the museum"],
+      "answer": 1
+    },
+    {
+      "audio": "Meine E-Mail-Adresse ist anna@mail.de.",
+      "q": "What is the speaker's email address?",
+      "options": ["anna@mail.com", "anna@mail.de", "anna@mail.org", "anna@mail.net"],
+      "answer": 1
+    },
+    {
+      "audio": "Das Restaurant öffnet um 11 Uhr 30.",
+      "q": "When does the restaurant open?",
+      "options": ["11:00", "11:15", "11:30", "12:00"],
+      "answer": 2
+    },
+    {
+      "audio": "Wir fahren nach Österreich.",
+      "q": "Where are they going?",
+      "options": ["To Switzerland", "To Austria", "To Germany", "To Belgium"],
+      "answer": 1
+    },
+    {
+      "audio": "Das Picknick beginnt um 14 Uhr.",
+      "q": "When does the picnic start?",
+      "options": ["13:00", "14:00", "15:00", "16:00"],
+      "answer": 1
+    },
+    {
+      "audio": "Ich spreche Deutsch, Englisch und Französisch.",
+      "q": "Which languages does the speaker speak?",
+      "options": ["German and English", "German, English and French", "German and Spanish", "French and Spanish"],
+      "answer": 1
+    }
+  ]
+}

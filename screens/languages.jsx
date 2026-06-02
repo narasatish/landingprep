@@ -31,7 +31,7 @@
             <div className="tc-head" onClick={() => setOpen(open === u.id ? null : u.id)}>
               <span className="tc-index" style={{ background: "rgba(79,70,229,.12)", color: "var(--accent)" }}>{u.level}</span>
               <div className="tc-head-main"><div className="tc-title">{u.title}</div></div>
-              <span className="tc-toggle">{open === u.id ? "−" : "+"}</span>
+              <span className="tc-toggle">+</span>
             </div>
             {open === u.id && (
               <div className="tc-body">
@@ -140,12 +140,12 @@
         `Free ${lang.name} course (A1+) with natural-voice pronunciation, vocabulary, a placement test and ${lang.name} exam guidance (Goethe, TestDaF, DELF). Built for study abroad.`);
     }, [langId]);
 
-    if (!lang) return (<><window.LP_TopBar current="languages" onNav={onNav} /><main className="tools-shell"><div className="tool-card"><p className="tool-sub">Loading languages…</p></div></main></>);
+    if (!lang) return (<><window.LP_TopBar current="languages" onNav={onNav} /><main className="tools-shell tools-shell-wide"><div className="tool-card"><p className="tool-sub">Loading languages…</p></div></main></>);
 
     return (
       <>
         <window.LP_TopBar current="languages" onNav={onNav} />
-        <main className="tools-shell">
+        <main className="tools-shell tools-shell-wide">
           <header className="tools-hero">
             <h1>Learn {lang.name} — 100% Free 🎧</h1>
             <p>{lang.blurb}</p>

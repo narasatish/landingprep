@@ -1,0 +1,602 @@
+{
+  "reading": [
+    {
+      "topic": "Family Introduction",
+      "passage": "Je m'appelle Marie. Je suis française. J'habite à Paris avec ma famille. Ma mère est professeur et mon père est médecin. J'ai un frère qui s'appelle Thomas. Il a seize ans.",
+      "questions": [
+        {
+          "q": "Where does Marie live? (Où habite Marie?)",
+          "options": ["Lyon", "Paris", "Marseille", "Strasbourg"],
+          "answer": 1
+        },
+        {
+          "q": "What is Marie's mother's job? (Quel est le métier de la mère de Marie?)",
+          "options": ["Docteur", "Professeur", "Infirmière", "Avocate"],
+          "answer": 1
+        },
+        {
+          "q": "How old is Thomas? (Quel âge a Thomas?)",
+          "options": ["15 ans", "17 ans", "16 ans", "18 ans"],
+          "answer": 2
+        },
+        {
+          "q": "What nationality is Marie? (Quelle est la nationalité de Marie?)",
+          "options": ["Belge", "Française", "Suisse", "Canadienne"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "topic": "Daily Routine",
+      "passage": "Bonjour! Je m'appelle Jean. Chaque matin, je me réveille à sept heures. Je prends mon petit déjeuner à sept heures et demie. À huit heures, je vais à l'école. À midi, je mange à la cantine avec mes amis. L'après-midi, j'ai cours jusqu'à cinq heures.",
+      "questions": [
+        {
+          "q": "What time does Jean wake up? (À quelle heure Jean se réveille-t-il?)",
+          "options": ["6h30", "7h00", "7h30", "8h00"],
+          "answer": 1
+        },
+        {
+          "q": "Where does Jean eat lunch? (Où Jean mange-t-il à midi?)",
+          "options": ["À la maison", "Au restaurant", "À la cantine", "Au parc"],
+          "answer": 2
+        },
+        {
+          "q": "When does Jean's afternoon class end? (À quelle heure les cours de l'après-midi finissent?)",
+          "options": ["3h00", "4h00", "5h00", "6h00"],
+          "answer": 2
+        },
+        {
+          "q": "What does Jean do at 7:30? (Que fait Jean à sept heures et demie?)",
+          "options": ["Il se réveille", "Il prend son petit déjeuner", "Il va à l'école", "Il joue"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "topic": "Shopping at the Market",
+      "passage": "Aujourd'hui, je vais au marché. J'achète des pommes, des bananes et des oranges. Les pommes coûtent deux euros le kilo. Je veux aussi du fromage et du pain. Le boulanger est très sympa. Je dépense dix euros au total.",
+      "questions": [
+        {
+          "q": "What fruit does he NOT buy? (Quel fruit n'achète-t-il pas?)",
+          "options": ["Pommes", "Raisins", "Bananes", "Oranges"],
+          "answer": 1
+        },
+        {
+          "q": "How much do the apples cost per kilo? (Combien coûtent les pommes par kilo?)",
+          "options": ["1 euro", "2 euros", "3 euros", "5 euros"],
+          "answer": 1
+        },
+        {
+          "q": "What does he buy from the baker? (Qu'achète-t-il chez le boulanger?)",
+          "options": ["Du fromage et du lait", "Du pain et du beurre", "Du fromage et du pain", "Du lait et des œufs"],
+          "answer": 2
+        },
+        {
+          "q": "How much does he spend in total? (Combien dépense-t-il au total?)",
+          "options": ["5 euros", "10 euros", "15 euros", "20 euros"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "topic": "Vacation Plans",
+      "passage": "Cet été, je vais en vacances avec ma famille. Nous allons à la mer en Bretagne. Je suis très content parce que j'aime nager et jouer sur la plage. Ma sœur préfère lire des livres sous un parasol. Nous partons le quinze juillet pour trois semaines.",
+      "questions": [
+        {
+          "q": "Where are they going on vacation? (Où vont-ils en vacances?)",
+          "options": ["À la montagne", "À la mer en Bretagne", "À la campagne", "À la ville"],
+          "answer": 1
+        },
+        {
+          "q": "What does the speaker like to do at the beach? (Que aime-t-il faire à la plage?)",
+          "options": ["Lire des livres", "Nager et jouer", "Dormir", "Manger"],
+          "answer": 1
+        },
+        {
+          "q": "What does his sister prefer to do? (Que préfère faire sa sœur?)",
+          "options": ["Nager", "Jouer au football", "Lire des livres sous un parasol", "Danser"],
+          "answer": 2
+        },
+        {
+          "q": "How long are they staying? (Combien de temps restent-ils?)",
+          "options": ["Une semaine", "Deux semaines", "Trois semaines", "Un mois"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "topic": "School Schedule",
+      "passage": "À mon école, j'ai cinq cours chaque jour. Le lundi, j'ai français, mathématiques, histoire, éducation physique et anglais. Mes cours préférés sont français et histoire parce que les professeurs sont intéressants. Le français commence à neuf heures et finit à dix heures.",
+      "questions": [
+        {
+          "q": "How many classes does the student have each day? (Combien de cours par jour?)",
+          "options": ["Trois", "Quatre", "Cinq", "Six"],
+          "answer": 2
+        },
+        {
+          "q": "Which class does NOT the student have? (Quel cours n'a-t-il pas?)",
+          "options": ["Français", "Géographie", "Mathématiques", "Anglais"],
+          "answer": 1
+        },
+        {
+          "q": "What are the student's favorite subjects? (Quels sont ses cours préférés?)",
+          "options": ["Français et anglais", "Mathématiques et histoire", "Français et histoire", "Éducation physique et français"],
+          "answer": 2
+        },
+        {
+          "q": "What time does French class start? (À quelle heure commence le cours de français?)",
+          "options": ["8h00", "9h00", "10h00", "11h00"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "topic": "Restaurant Visit",
+      "passage": "Je suis au restaurant avec mes amis. Je commande un steak-frites et une salade. Mon ami commande une pizza et une limonade. Ma copine veut une soupe à l'oignon et du pain. Pour le dessert, je prends une glace au chocolat. L'addition est trente euros.",
+      "questions": [
+        {
+          "q": "What main course does the speaker order? (Quel plat principal commande-t-il?)",
+          "options": ["Une pizza", "Un steak-frites", "Une soupe", "Du poulet"],
+          "answer": 1
+        },
+        {
+          "q": "What drink does the friend order? (Qu'est-ce que l'ami commande comme boisson?)",
+          "options": ["Un café", "Un jus d'orange", "Une limonade", "De l'eau"],
+          "answer": 2
+        },
+        {
+          "q": "What does the girlfriend want with her soup? (Que veut la copine avec sa soupe?)",
+          "options": ["Du fromage", "Du pain", "Des fruits", "Des légumes"],
+          "answer": 1
+        },
+        {
+          "q": "What is the total bill? (Combien coûte l'addition?)",
+          "options": ["20 euros", "25 euros", "30 euros", "40 euros"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "topic": "Hobbies and Sports",
+      "passage": "J'aime jouer au football le mercredi après l'école. Mon meilleur ami préfère jouer au tennis. Ma cousine joue du piano et de la guitare. Mon frère ne fait pas de sport, il regarde des films et lit des bandes dessinées. Nous jouons ensemble aux jeux vidéo le weekend.",
+      "questions": [
+        {
+          "q": "When does the speaker play football? (Quand joue-t-il au football?)",
+          "options": ["Le lundi", "Le mercredi après l'école", "Le samedi", "Le dimanche"],
+          "answer": 1
+        },
+        {
+          "q": "What sport does the best friend prefer? (Quel sport préfère le meilleur ami?)",
+          "options": ["Le football", "Le tennis", "La natation", "Le basketball"],
+          "answer": 1
+        },
+        {
+          "q": "What instruments does the cousin play? (Quels instruments joue la cousine?)",
+          "options": ["Du piano et de la guitare", "Du piano et de la flûte", "De la guitare et du violon", "Du piano seulement"],
+          "answer": 0
+        },
+        {
+          "q": "What does the brother do instead of sports? (Que fait le frère au lieu du sport?)",
+          "options": ["Il danse", "Il étudie", "Il regarde des films et lit des bandes dessinées", "Il peint"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "topic": "Weather and Seasons",
+      "passage": "En hiver, il fait très froid et souvent il neige. Je mets mon manteau, mon bonnet et mes gants. J'aime faire du ski avec ma famille à la montagne. Au printemps, il fait beau et les fleurs commencent à pousser. En été, il fait très chaud et j'aime aller à la plage. L'automne est ma saison préférée parce que le climat est agréable.",
+      "questions": [
+        {
+          "q": "What does the speaker wear in winter? (Que porte-t-il en hiver?)",
+          "options": ["Un t-shirt et un short", "Un manteau, un bonnet et des gants", "Seulement un pull", "Des sandales et un chapeau"],
+          "answer": 1
+        },
+        {
+          "q": "What does the speaker like to do in winter? (Qu'aime-t-il faire en hiver?)",
+          "options": ["Nager", "Faire du ski", "Faire un pique-nique", "Jouer au football"],
+          "answer": 1
+        },
+        {
+          "q": "What happens in spring? (Que se passe-t-il au printemps?)",
+          "options": ["Il pleut beaucoup", "Il neige", "Les fleurs commencent à pousser", "Il fait très chaud"],
+          "answer": 2
+        },
+        {
+          "q": "Which season is the speaker's favorite? (Quelle est sa saison préférée?)",
+          "options": ["L'hiver", "Le printemps", "L'été", "L'automne"],
+          "answer": 3
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "q": "Choose the correct definite article: ___ fille est intelligente.",
+      "options": ["Le", "La", "Les", "Un"],
+      "answer": 1
+    },
+    {
+      "q": "Choose the correct form: ___ garçon et ___ fille.",
+      "options": ["un, une", "le, la", "un, un", "le, un"],
+      "answer": 0
+    },
+    {
+      "q": "Complete: Je ___ français.",
+      "options": ["suis", "suis", "ai", "être"],
+      "answer": 0
+    },
+    {
+      "q": "Choose the plural: Les ___ sont rouges.",
+      "options": ["maison", "maisons", "maison-es", "maisonne"],
+      "answer": 1
+    },
+    {
+      "q": "Complete: Tu ___ une voiture?",
+      "options": ["as", "es", "être", "avoir"],
+      "answer": 0
+    },
+    {
+      "q": "What is the correct negation? Je ___ suis ___ français.",
+      "options": ["ne, pas", "non, pas", "ne, non", "pas, ne"],
+      "answer": 0
+    },
+    {
+      "q": "Choose the correct question word: ___ t'appelles-tu?",
+      "options": ["Qu'est-ce que", "Comment", "Où", "Pourquoi"],
+      "answer": 1
+    },
+    {
+      "q": "Complete: Il ___ à l'école.",
+      "options": ["va", "vais", "allez", "allons"],
+      "answer": 0
+    },
+    {
+      "q": "Correct form: ___ livres sont intéressants.",
+      "options": ["Ces", "Ce", "Cet", "Cette"],
+      "answer": 0
+    },
+    {
+      "q": "Choose: Vous ___ students?",
+      "options": ["êtes", "est", "es", "sont"],
+      "answer": 0
+    },
+    {
+      "q": "Complete: Nous ___ au parc aujourd'hui.",
+      "options": ["allons", "allez", "va", "vas"],
+      "answer": 0
+    },
+    {
+      "q": "What is the correct article? ___ eau est froide.",
+      "options": ["Un", "Une", "Le", "La"],
+      "answer": 3
+    },
+    {
+      "q": "Choose the correct form: J'___  dix ans.",
+      "options": ["ai", "suis", "as", "sommes"],
+      "answer": 0
+    },
+    {
+      "q": "Complete: Elles ___ contentes.",
+      "options": ["sommes", "sont", "suis", "êtes"],
+      "answer": 1
+    },
+    {
+      "q": "What question word? ___ habites-tu?",
+      "options": ["Qu'est-ce que", "Où", "Quand", "Pourquoi"],
+      "answer": 1
+    },
+    {
+      "q": "Choose the plural correctly: Le ___ → Les ___",
+      "options": ["enfant, enfantes", "enfant, enfants", "enfant, enfante", "enfantes, enfantes"],
+      "answer": 1
+    },
+    {
+      "q": "Complete: Je ne ___ pas de chien.",
+      "options": ["ai", "suis", "have", "être"],
+      "answer": 0
+    },
+    {
+      "q": "Correct form: ___ ans a-t-il? (How old is he?)",
+      "options": ["Comment", "Quel", "Où", "Qu'est-ce"],
+      "answer": 1
+    },
+    {
+      "q": "Choose: Vous ___ ingénieurs.",
+      "options": ["sommes", "êtes", "es", "suis"],
+      "answer": 1
+    },
+    {
+      "q": "Complete: Il ___ français mais elle ___ belge.",
+      "options": ["est, est", "est, es", "es, est", "suis, est"],
+      "answer": 0
+    },
+    {
+      "q": "What article? ___ pomme est verte.",
+      "options": ["Un", "Une", "Le", "Les"],
+      "answer": 1
+    },
+    {
+      "q": "Choose: Ils ___ des amis.",
+      "options": ["avons", "ont", "as", "ai"],
+      "answer": 1
+    },
+    {
+      "q": "Complete: Tu ___ professeur?",
+      "options": ["es", "suis", "sommes", "êtes"],
+      "answer": 0
+    },
+    {
+      "q": "Correct negation: Elle ___ ___ étudiante.",
+      "options": ["n'est pas", "ne est pas", "n'ai pas", "ne pas"],
+      "answer": 0
+    },
+    {
+      "q": "Question word: ___ est ton ami?",
+      "options": ["Où", "Qu'est-ce que", "Qui", "Quand"],
+      "answer": 2
+    },
+    {
+      "q": "Choose plural: ___ stylos sont noirs.",
+      "options": ["Le", "Les", "Un", "Une"],
+      "answer": 1
+    },
+    {
+      "q": "Complete: Vous ___ un chat?",
+      "options": ["avez", "as", "ont", "ai"],
+      "answer": 0
+    },
+    {
+      "q": "Correct: Je ___ à Paris.",
+      "options": ["suis", "vais", "habite", "reste"],
+      "answer": 2
+    },
+    {
+      "q": "Choose article: ___ école est grande.",
+      "options": ["Un", "Une", "Le", "Les"],
+      "answer": 1
+    },
+    {
+      "q": "Complete number: Je suis né en mil neuf cent ___.",
+      "options": ["quatre-vingt-dix-neuf", "quatre-vingt-neuf", "quatre vingt-neuf", "quatre-vingts-neuf"],
+      "answer": 1
+    },
+    {
+      "q": "Negation: Tu ___ ___ timide.",
+      "options": ["ne es pas", "n'es pas", "ne suis pas", "n'ai pas"],
+      "answer": 1
+    },
+    {
+      "q": "Choose: Elles ___ de la musique.",
+      "options": ["écoutent", "écoute", "écoutes", "écoutez"],
+      "answer": 0
+    },
+    {
+      "q": "Question: ___ font-ils?",
+      "options": ["Que", "Quoi", "Qu'est-ce que", "Qui"],
+      "answer": 2
+    },
+    {
+      "q": "Complete: Il ___ les mathématiques.",
+      "options": ["n'aime", "n'aimes", "n'aimez", "ne aime"],
+      "answer": 0
+    },
+    {
+      "q": "Correct form: ___ chemises sont blanches.",
+      "options": ["Le", "La", "Les", "Une"],
+      "answer": 2
+    },
+    {
+      "q": "Choose: Nous ___ faim.",
+      "options": ["sommes", "avons", "soyons", "ayons"],
+      "answer": 1
+    },
+    {
+      "q": "Complete: Elle ___ danser.",
+      "options": ["aimer", "aime", "aimes", "aimez"],
+      "answer": 1
+    },
+    {
+      "q": "Verb form: Ils ___ l'anglais.",
+      "options": ["parles", "parle", "parlent", "parlons"],
+      "answer": 2
+    },
+    {
+      "q": "Article: ___ ordinateur est neuf.",
+      "options": ["Un", "Une", "Le", "Les"],
+      "answer": 0
+    },
+    {
+      "q": "Complete: Je ___ à la maison.",
+      "options": ["reste", "restez", "restes", "restons"],
+      "answer": 0
+    }
+  ],
+  "listening": [
+    {
+      "audio": "Je m'appelle Sophie et j'habite à Paris.",
+      "q": "What is the speaker's name and where does she live?",
+      "options": ["Marie, Lyon", "Sophie, Paris", "Sophie, Marseille", "Marie, Paris"],
+      "answer": 1
+    },
+    {
+      "audio": "Il est trois heures de l'après-midi.",
+      "q": "What time is it?",
+      "options": ["2:00 PM", "3:00 PM", "4:00 PM", "3:30 PM"],
+      "answer": 1
+    },
+    {
+      "audio": "Une pomme coûte deux euros.",
+      "q": "How much does one apple cost?",
+      "options": ["1 euro", "2 euros", "3 euros", "4 euros"],
+      "answer": 1
+    },
+    {
+      "audio": "Je suis français et je viens de Lyon.",
+      "q": "Where is the speaker from?",
+      "options": ["Paris", "Marseille", "Lyon", "Bordeaux"],
+      "answer": 2
+    },
+    {
+      "audio": "Je voudrais un café au lait, s'il vous plaît.",
+      "q": "What does the speaker want to order?",
+      "options": ["Tea with milk", "Coffee with milk", "Water", "Orange juice"],
+      "answer": 1
+    },
+    {
+      "audio": "Mon numéro de téléphone est le zéro deux un deux trois quatre cinq six sept.",
+      "q": "What is the first digit of the phone number?",
+      "options": ["1", "2", "0", "3"],
+      "answer": 2
+    },
+    {
+      "audio": "Nous avons cours le lundi, mercredi et vendredi.",
+      "q": "On which days do they have class?",
+      "options": ["Monday and Friday", "Tuesday and Thursday", "Monday, Wednesday, Friday", "All weekdays"],
+      "answer": 2
+    },
+    {
+      "audio": "Mon anniversaire est le dix-sept décembre.",
+      "q": "When is the speaker's birthday?",
+      "options": ["December 10", "December 17", "November 17", "December 27"],
+      "answer": 1
+    },
+    {
+      "audio": "Il faut tourner à droite au feu rouge.",
+      "q": "What direction should you turn?",
+      "options": ["Left", "Right", "Straight", "Back"],
+      "answer": 1
+    },
+    {
+      "audio": "La gare est près de la cathédrale.",
+      "q": "Where is the train station located?",
+      "options": ["Near the park", "Near the cathedral", "Near the museum", "Near the school"],
+      "answer": 1
+    },
+    {
+      "audio": "Je me réveille à sept heures du matin.",
+      "q": "What time does the speaker wake up?",
+      "options": ["6:00 AM", "7:00 AM", "8:00 AM", "7:30 AM"],
+      "answer": 1
+    },
+    {
+      "audio": "Elle a vingt-cinq ans.",
+      "q": "How old is she?",
+      "options": ["22 years old", "23 years old", "25 years old", "24 years old"],
+      "answer": 2
+    },
+    {
+      "audio": "Combien ça coûte? Ça coûte quinze euros.",
+      "q": "How much does it cost?",
+      "options": ["5 euros", "10 euros", "15 euros", "20 euros"],
+      "answer": 2
+    },
+    {
+      "audio": "Je viens de la Suisse. Je suis suisse.",
+      "q": "What nationality is the speaker?",
+      "options": ["French", "Belgian", "Swiss", "German"],
+      "answer": 2
+    },
+    {
+      "audio": "Le mercredi, je joue au tennis avec mes amis.",
+      "q": "When does the speaker play tennis?",
+      "options": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      "answer": 2
+    },
+    {
+      "audio": "Où sont les toilettes? Les toilettes sont au fond du couloir.",
+      "q": "Where are the toilets located?",
+      "options": ["On the left", "At the end of the hallway", "Near the stairs", "On the right"],
+      "answer": 1
+    },
+    {
+      "audio": "J'aime manger des spaghettis le jeudi soir.",
+      "q": "What does the speaker like to eat on Thursday evening?",
+      "options": ["Pizza", "Chicken", "Spaghetti", "Fish"],
+      "answer": 2
+    },
+    {
+      "audio": "Il y a une boulangerie à côté de ma maison.",
+      "q": "What is next to the speaker's house?",
+      "options": ["A pharmacy", "A bakery", "A library", "A park"],
+      "answer": 1
+    },
+    {
+      "audio": "Je prends le bus numéro huit pour aller à l'école.",
+      "q": "Which bus number does the speaker take?",
+      "options": ["Bus 5", "Bus 8", "Bus 6", "Bus 10"],
+      "answer": 1
+    },
+    {
+      "audio": "Ma mère me dit: lève-toi à sept heures!",
+      "q": "What time does the mother want the child to wake up?",
+      "options": ["6:00 AM", "7:00 AM", "8:00 AM", "8:30 AM"],
+      "answer": 1
+    },
+    {
+      "audio": "L'été, nous allons à la mer tous les jours.",
+      "q": "Where do they go in summer?",
+      "options": ["To the mountains", "To the beach", "To the countryside", "To the city"],
+      "answer": 1
+    },
+    {
+      "audio": "Je dois faire mes devoirs avant de jouer.",
+      "q": "What must the speaker do before playing?",
+      "options": ["Eat", "Sleep", "Do homework", "Clean"],
+      "answer": 2
+    },
+    {
+      "audio": "Le concert est samedi à vingt heures.",
+      "q": "When is the concert?",
+      "options": ["Friday at 8 PM", "Saturday at 8 PM", "Saturday at 7 PM", "Sunday at 8 PM"],
+      "answer": 1
+    },
+    {
+      "audio": "Elle porte une robe rouge très jolie.",
+      "q": "What color dress is she wearing?",
+      "options": ["Blue", "Green", "Red", "Yellow"],
+      "answer": 2
+    },
+    {
+      "audio": "Je voudrais un ticket pour le musée, s'il vous plaît.",
+      "q": "What does the speaker want a ticket for?",
+      "options": ["A movie", "A museum", "A concert", "A theater"],
+      "answer": 1
+    },
+    {
+      "audio": "Elle habite au troisième étage.",
+      "q": "Which floor does she live on?",
+      "options": ["First floor", "Second floor", "Third floor", "Fourth floor"],
+      "answer": 2
+    },
+    {
+      "audio": "Il pleut, donc je ne sors pas aujourd'hui.",
+      "q": "Why isn't the speaker going out today?",
+      "options": ["It's cold", "It's raining", "It's hot", "It's sunny"],
+      "answer": 1
+    },
+    {
+      "audio": "Nous mangeons du pain et du fromage à midi.",
+      "q": "What do they eat at noon?",
+      "options": ["Pasta and vegetables", "Bread and cheese", "Rice and chicken", "Fish and salad"],
+      "answer": 1
+    },
+    {
+      "audio": "Le film commence à vingt heures trente.",
+      "q": "What time does the film start?",
+      "options": ["8:00 PM", "8:30 PM", "7:30 PM", "9:00 PM"],
+      "answer": 1
+    },
+    {
+      "audio": "Je voudrais deux billets, s'il vous plaît.",
+      "q": "How many tickets does the speaker want?",
+      "options": ["One", "Two", "Three", "Four"],
+      "answer": 1
+    },
+    {
+      "audio": "L'école ferme le dimanche et le lundi.",
+      "q": "Which days is the school closed?",
+      "options": ["Saturday and Sunday", "Sunday and Monday", "Monday and Tuesday", "Friday and Saturday"],
+      "answer": 1
+    }
+  ]
+}
