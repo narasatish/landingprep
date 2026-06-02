@@ -363,7 +363,7 @@
       clearTimeout(silenceRef.current);
       try { recRef.current && recRef.current.stop(); } catch (_) {}
       // Speaking time ≈ (now − silence window) − first-speech time.
-      const dur = speechStartRef.current ? Math.max(0, (Date.now() - 1600) - speechStartRef.current) : 0;
+      const dur = speechStartRef.current ? Math.max(0, (Date.now() - 1000) - speechStartRef.current) : 0;
       speechStartRef.current = 0;
       if (text) onResult(text, dur);
     }, [onResult]);
@@ -387,7 +387,7 @@
           if (!speechStartRef.current) speechStartRef.current = Date.now(); // first speech
           // restart the silence countdown on every bit of speech
           clearTimeout(silenceRef.current);
-          silenceRef.current = setTimeout(submit, 1600);
+          silenceRef.current = setTimeout(submit, 1000);
         }
       };
       r.onend = () => { setListening(false); activeRef.current = false; };
@@ -426,22 +426,11 @@
       window.speechSynthesis.speak(utt);
     }, []);
 
-    // Prefer Gemini neural TTS (LP_TTS) for a natural examiner voice; fall
-    // back to the browser's built-in voice if no key is configured.
+    // Use the INSTANT browser-native voice (no network round-trip) so the examiner
+    // replies with no lag — a real conversation. The Gemini neural voice added 1–3s
+    // of fetch latency per turn, which broke the back-and-forth flow.
     const speak = useCallback((text, onDone) => {
       if (!text) { onDone && onDone(); return; }
-      const tts = window.LP_TTS;
-      if (tts && tts.isEnabled && tts.isEnabled()) {
-        try { ttsAbortRef.current?.abort(); } catch (_) {}
-        const ctrl = new AbortController();
-        ttsAbortRef.current = ctrl;
-        setSpeaking(true);
-        // "Kore" = natural female examiner voice.
-        tts.speakOne(text.slice(0, 900), "Kore", ctrl.signal)
-          .then(() => { setSpeaking(false); onDone && onDone(); })
-          .catch(() => { setSpeaking(false); speakNative(text, onDone); });
-        return;
-      }
       speakNative(text, onDone);
     }, [speakNative]);
 

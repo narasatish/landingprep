@@ -83,7 +83,7 @@
     }, []);
 
     const body = (openId && decks[openId])
-      ? <main className="tools-shell tools-shell-wide"><DeckViewer deck={decks[openId]} onExit={() => setOpenId(null)} /></main>
+      ? <main className="tools-shell tools-shell-deck"><DeckViewer deck={decks[openId]} onExit={() => setOpenId(null)} /></main>
       : (
         <main className="tools-shell tools-shell-wide">
           {!embedded && (

@@ -332,7 +332,7 @@ Reply as the examiner in 1\u20133 short sentences: briefly and warmly acknowledg
         recRef.current && recRef.current.stop();
       } catch (_) {
       }
-      const dur = speechStartRef.current ? Math.max(0, Date.now() - 1600 - speechStartRef.current) : 0;
+      const dur = speechStartRef.current ? Math.max(0, Date.now() - 1e3 - speechStartRef.current) : 0;
       speechStartRef.current = 0;
       if (text) onResult(text, dur);
     }, [onResult]);
@@ -354,7 +354,7 @@ Reply as the examiner in 1\u20133 short sentences: briefly and warmly acknowledg
         if (final || interim.trim()) {
           if (!speechStartRef.current) speechStartRef.current = Date.now();
           clearTimeout(silenceRef.current);
-          silenceRef.current = setTimeout(submit, 1600);
+          silenceRef.current = setTimeout(submit, 1e3);
         }
       };
       r.onend = () => {
@@ -412,27 +412,8 @@ Reply as the examiner in 1\u20133 short sentences: briefly and warmly acknowledg
       window.speechSynthesis.speak(utt);
     }, []);
     const speak = useCallback((text, onDone) => {
-      var _a;
       if (!text) {
         onDone && onDone();
-        return;
-      }
-      const tts = window.LP_TTS;
-      if (tts && tts.isEnabled && tts.isEnabled()) {
-        try {
-          (_a = ttsAbortRef.current) == null ? void 0 : _a.abort();
-        } catch (_) {
-        }
-        const ctrl = new AbortController();
-        ttsAbortRef.current = ctrl;
-        setSpeaking(true);
-        tts.speakOne(text.slice(0, 900), "Kore", ctrl.signal).then(() => {
-          setSpeaking(false);
-          onDone && onDone();
-        }).catch(() => {
-          setSpeaking(false);
-          speakNative(text, onDone);
-        });
         return;
       }
       speakNative(text, onDone);

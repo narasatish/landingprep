@@ -1,17 +1,29 @@
 /* global React, window */
 "use strict";
-// LandingPrep — German/French AI speaking partner. HANDS-FREE continuous mode:
-// press Start once, then just talk. The agent listens, replies in simple German/
-// French (+ English), speaks it in the native accent, then automatically listens
-// again — a natural back-and-forth. Mic is muted while the agent speaks (no echo).
-// Press Stop to end. No "tap to speak" — it's a real conversation.
+// LandingPrep — German/French AI speaking partner. HANDS-FREE, LOW-LATENCY:
+//  • Continuous recognition with silence-detection — understands you the FIRST time,
+//    no gaps, no "speak again". Submits ~0.9s after you stop talking.
+//  • Replies in an INSTANT browser-native German/French voice (no TTS network round-
+//    trip) so there's no lag — feels like a real back-and-forth.
+//  • Backend is pre-warmed on mount so the first reply isn't a cold start.
+//  • One Start / Stop button. Mic is muted while the agent speaks (no echo).
 (function () {
   const { useState, useRef, useEffect } = React;
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+  const SS = window.speechSynthesis || null;
   const META = {
-    german: { name: "German", code: "de-DE", tts: "de", tutor: "Anna", hi: "Hallo! Wie heißt du?", hiEn: "Hello! What's your name?", retry: "Entschuldigung, sag das noch einmal.", retryEn: "Sorry, say that again.", fallback: "Sehr gut! Und du? (Very good! And you?)" },
-    french: { name: "French", code: "fr-FR", tts: "fr", tutor: "Marie", hi: "Bonjour ! Comment tu t'appelles ?", hiEn: "Hello! What's your name?", retry: "Désolée, répète encore une fois.", retryEn: "Sorry, say that again.", fallback: "Très bien ! Et toi ? (Very good! And you?)" },
+    german: { name: "German", code: "de-DE", lang: "de", tutor: "Anna", hi: "Hallo! Wie heißt du?", hiEn: "Hello! What's your name?", retry: "Sag das noch einmal, bitte.", retryEn: "Say that again, please.", cont: "Weiter geht's!", fallback: "Sehr gut! Und du? (Very good! And you?)" },
+    french: { name: "French", code: "fr-FR", lang: "fr", tutor: "Marie", hi: "Bonjour ! Comment tu t'appelles ?", hiEn: "Hello! What's your name?", retry: "Répète, s'il te plaît.", retryEn: "Say that again, please.", cont: "On continue !", fallback: "Très bien ! Et toi ? (Very good! And you?)" },
   };
+
+  // Cache native voices (load asynchronously in some browsers).
+  let VOICES = [];
+  function refreshVoices() { try { VOICES = SS ? SS.getVoices() : []; } catch (e) { VOICES = []; } }
+  if (SS) { refreshVoices(); try { SS.onvoiceschanged = refreshVoices; } catch (e) {} }
+  function pickVoice(prefix) {
+    const m = VOICES.filter((v) => v.lang && v.lang.toLowerCase().replace("_", "-").startsWith(prefix));
+    return m.find((v) => /google/i.test(v.name)) || m.find((v) => /natural|neural|premium/i.test(v.name)) || m[0] || null;
+  }
 
   async function aiReply(prompt, signal) {
     const base = window.LP_API_BASE || "";
@@ -39,59 +51,84 @@
 
     const activeRef = useRef(false);
     const recRef = useRef(null);
-    const ttsAbort = useRef(null);
+    const silenceRef = useRef(null);
+    const finalRef = useRef("");
+    const busyRef = useRef(false);
     const aiAbort = useRef(null);
-    const busyRef = useRef(false);   // true while thinking/speaking (mic must stay off)
     const scrollRef = useRef(null);
 
-    useEffect(() => () => stop(), []);            // cleanup on unmount
+    // Pre-warm the backend so the first reply isn't a cold start.
+    useEffect(() => {
+      const base = window.LP_API_BASE || "";
+      try { fetch(base + "/api/ai/health", { method: "GET" }).catch(() => {}); } catch (e) {}
+      refreshVoices();
+      return () => stop();
+    }, []);
     useEffect(() => { if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight; }, [msgs, phase, interim]);
 
+    // INSTANT native voice — no network. Resolves when finished.
     function speak(text) {
-      try {
-        if (!(window.LP_TTS && window.LP_TTS.speakOne)) return Promise.resolve();
-        ttsAbort.current = new AbortController();
-        return window.LP_TTS.speakOne(text, "Kore", ttsAbort.current.signal, m.tts);
-      } catch (e) { return Promise.resolve(); }
+      return new Promise((resolve) => {
+        if (!SS) { resolve(); return; }
+        try {
+          SS.cancel();
+          const u = new SpeechSynthesisUtterance(text);
+          u.lang = m.code; u.rate = 0.96; u.pitch = 1.0;
+          const v = pickVoice(m.lang); if (v) u.voice = v;
+          u.onend = resolve; u.onerror = resolve;
+          SS.speak(u);
+          // Safety: never hang if the engine drops onend.
+          setTimeout(resolve, Math.min(9000, 1200 + text.length * 75));
+        } catch (e) { resolve(); }
+      });
     }
 
-    // Start one listening turn. Auto-restarts on silence so it feels always-on.
-    function listenTurn() {
+    function startListening() {
       if (!activeRef.current || busyRef.current || !SR) return;
-      let got = false;
       let rec;
       try { rec = new SR(); } catch (e) { return; }
       recRef.current = rec;
-      rec.lang = m.code; rec.interimResults = true; rec.maxAlternatives = 1; rec.continuous = false;
+      finalRef.current = "";
+      rec.lang = m.code; rec.continuous = true; rec.interimResults = true; rec.maxAlternatives = 1;
       setPhase("listening"); setInterim("");
+      const armSilence = () => {
+        clearTimeout(silenceRef.current);
+        silenceRef.current = setTimeout(() => {
+          const text = finalRef.current.trim();
+          try { rec.stop(); } catch (e) {}
+          if (text) handleUser(text);
+        }, 900);   // submit ~0.9s after the user stops talking
+      };
       rec.onresult = (e) => {
-        let finalTxt = "", interimTxt = "";
+        let interimTxt = "";
         for (let i = e.resultIndex; i < e.results.length; i++) {
           const res = e.results[i];
-          if (res.isFinal) finalTxt += res[0].transcript; else interimTxt += res[0].transcript;
+          if (res.isFinal) finalRef.current += res[0].transcript + " ";
+          else interimTxt += res[0].transcript;
         }
-        if (interimTxt) setInterim(interimTxt);
-        if (finalTxt.trim()) { got = true; try { rec.stop(); } catch (e2) {} handleUser(finalTxt.trim()); }
+        setInterim(interimTxt || finalRef.current);
+        if (finalRef.current.trim() || interimTxt.trim()) armSilence();
       };
-      rec.onerror = (ev) => {
-        // no-speech / aborted are normal — just keep the loop alive.
-        if (ev && ev.error === "not-allowed") { stop(); return; }
-      };
+      rec.onerror = (ev) => { if (ev && ev.error === "not-allowed") { stop(); } };
       rec.onend = () => {
-        if (got) return;                                   // handled by onresult
-        if (activeRef.current && !busyRef.current) listenTurn();  // silence → listen again
+        clearTimeout(silenceRef.current);
+        // If it ended on its own (no submission yet) and we're still listening, revive it.
+        if (activeRef.current && !busyRef.current && phase !== "thinking" && !finalRef.current.trim()) {
+          try { rec.start(); } catch (e) { startListening(); }
+        }
       };
       try { rec.start(); } catch (e) { /* already running */ }
     }
 
     async function handleUser(text) {
       if (!text) return;
-      busyRef.current = true; setInterim("");
+      busyRef.current = true; clearTimeout(silenceRef.current); setInterim("");
+      try { recRef.current && recRef.current.stop(); } catch (e) {}
       setMsgs((x) => x.concat([{ role: "you", native: text }]));
       setPhase("thinking");
       try {
         aiAbort.current = new AbortController();
-        const prompt = `You are ${m.tutor}, a warm, encouraging ${m.name} conversation partner for an absolute A1 beginner learning ${m.name} for study abroad. The student just said: "${text}". Reply with ONE or TWO very simple ${m.name} sentences (A1 level) that respond AND ask ONE easy follow-up question. Then add the English translation in parentheses at the very end. Keep it short. Output ONLY the reply.`;
+        const prompt = `You are ${m.tutor}, a warm ${m.name} conversation partner for an A1 beginner. The student just said: "${text}". Reply with ONE short, simple ${m.name} sentence that answers AND asks one easy follow-up. Then the English translation in parentheses. Be brief. Output ONLY the reply.`;
         const raw = await aiReply(prompt, aiAbort.current.signal);
         if (!activeRef.current) return;
         const { native, gloss } = splitReply(raw || m.fallback);
@@ -105,29 +142,31 @@
         await speak(m.retry);
       }
       busyRef.current = false;
-      if (activeRef.current) listenTurn();                 // back to listening — hands-free
+      if (activeRef.current) startListening();
     }
 
     async function start() {
       if (activeRef.current) return;
+      try { if (SS) SS.resume(); } catch (e) {}     // unlock audio on the user gesture
       activeRef.current = true; setActive(true);
       const first = msgs.length === 0;
       if (first) setMsgs([{ role: "tutor", native: m.hi, gloss: m.hiEn }]);
       busyRef.current = true; setPhase("speaking");
-      await speak(first ? m.hi : (m.name === "German" ? "Weiter geht's!" : "On continue !"));
+      await speak(first ? m.hi : m.cont);
       busyRef.current = false;
-      if (activeRef.current) listenTurn();
+      if (activeRef.current) startListening();
     }
 
     function stop() {
       activeRef.current = false; busyRef.current = false; setActive(false); setPhase("idle"); setInterim("");
+      clearTimeout(silenceRef.current);
       try { recRef.current && recRef.current.stop(); } catch (e) {}
-      try { ttsAbort.current && ttsAbort.current.abort(); } catch (e) {}
+      try { SS && SS.cancel(); } catch (e) {}
       try { aiAbort.current && aiAbort.current.abort(); } catch (e) {}
     }
 
     const statusText = phase === "listening" ? "🎙️ Listening… just talk"
-      : phase === "thinking" ? "💭 " + m.tutor + " is thinking…"
+      : phase === "thinking" ? "💭 " + m.tutor + " is replying…"
       : phase === "speaking" ? "🔊 " + m.tutor + " is speaking…"
       : "Press Start to begin a real conversation";
 
@@ -139,11 +178,11 @@
         </div>
 
         <div className="lang-chat" ref={scrollRef}>
-          {msgs.length === 0 && <div className="lang-speak-empty">👋 Press <strong>Start</strong> and say hello in {m.name}. {m.tutor} will chat back and keep the conversation going — no buttons to press.</div>}
+          {msgs.length === 0 && <div className="lang-speak-empty">👋 Press <strong>Start</strong> and say hello in {m.name}. {m.tutor} listens the moment you stop talking and replies instantly — no buttons to press.</div>}
           {msgs.map((mm, i) => (
             <div key={i} className={"lang-bubble " + (mm.role === "you" ? "you" : "tutor")}>
               <div className="lb-native">
-                {mm.role === "tutor" && <button className="lang-say" title="Hear it again" onClick={() => { try { window.LP_TTS.speakOne(mm.native, "Kore", null, m.tts); } catch (e) {} }}>🔊</button>}
+                {mm.role === "tutor" && <button className="lang-say" title="Hear it again" onClick={() => speak(mm.native)}>🔊</button>}
                 {mm.native}
               </div>
               {mm.gloss && <div className="lb-gloss">{mm.gloss}</div>}
@@ -165,7 +204,7 @@
               </form>
             )}
         </div>
-        <p className="tool-note" style={{ marginTop: 10 }}>💡 Hands-free: press Start once and just speak. {m.tutor} replies in simple {m.name} (with English) and listens again automatically. Mistakes are welcome — that's how you learn!</p>
+        <p className="tool-note" style={{ marginTop: 10 }}>💡 Hands-free &amp; instant: press Start once and just speak. {m.tutor} understands the moment you pause and replies right away. Mistakes are welcome — that's how you learn!</p>
       </div>
     );
   }
