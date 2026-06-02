@@ -204,6 +204,10 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 .uni-flag{font-size:13px;font-weight:700;opacity:.92;text-transform:uppercase;letter-spacing:.04em}
 .uni-addr{font-size:14px;opacity:.95}.uni-addr a{color:#fff;text-decoration:underline}
 @media(max-width:560px){.uni-banner{flex-direction:column;text-align:center;align-items:center}}
+.cmp-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:15px}
+.cmp-table th,.cmp-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.cmp-table thead th{background:#eef2ff;color:var(--brand);font-weight:700}
+.cmp-table td:first-child{background:#f8fafc;width:120px}
 </style>
 </head>`;
 }
@@ -1295,6 +1299,124 @@ ${relatedGrid([
   });
 }
 
+// ── Per-band × per-section IELTS pages ("Band 7 in Writing") ─────────────────
+const SEC_RAW = { "6": "23/40", "6.5": "27/40", "7": "30/40", "7.5": "32/40", "8": "35/40" };
+const SECTIONS = [
+  { s: "Listening", emoji: "🎧", raw: true, tips: ["Read the questions and predict answers before the audio plays.", "Obey the word limit (e.g. 'NO MORE THAN TWO WORDS').", "If you miss one, let it go and keep listening — don't freeze.", "Drill spelling, names and numbers — they are easy marks."] },
+  { s: "Reading", emoji: "📖", raw: true, tips: ["Skim for structure first, then scan for keywords and synonyms.", "Spend about 20 minutes per passage; leave the hardest for last.", "Master True/False/Not Given vs Yes/No/Not Given logic.", "Locate, decide, move on — don't read every word."] },
+  { s: "Writing", emoji: "✍️", raw: false, tips: ["Answer the exact question — Task Response is 25% of the mark.", "Plan for 5 minutes; one clear idea per paragraph.", "Use a range of linkers and precise, topic-specific vocabulary.", "Vary your sentence structures and proofread grammar at the end."] },
+  { s: "Speaking", emoji: "🗣️", raw: false, tips: ["Extend every answer with a reason and an example.", "Use the Part 2 prep minute to jot quick notes.", "Don't memorise scripts — speak naturally and keep flowing.", "Work on pronunciation, word stress and intonation."] },
+];
+function bandSectionPage(band, sec) {
+  const b = band.b;
+  const path = `/ielts-band-${b.replace(".", "-")}-${sec.s.toLowerCase()}/`;
+  const need = sec.raw ? `about ${SEC_RAW[b]} correct out of 40` : `consistently meeting the Band ${b} descriptors`;
+  const title = `How to Get IELTS Band ${b} in ${sec.s} (2026) | ${BRAND}`;
+  const desc = `Get IELTS Band ${b} in ${sec.s}: what you need (${need}), the exact strategy, common mistakes and free practice. Step-by-step plan with mock tests${sec.raw ? "" : " and a free AI band checker"}.`;
+  const steps = [
+    { name: "Know the target", text: sec.raw ? `For ${sec.s}, Band ${b} is ${need} (boundaries shift slightly per test).` : `For ${sec.s}, Band ${b} means ${need} — there is no raw score; examiners use the public band descriptors.` },
+    { name: "Diagnose", text: `Take a free IELTS ${sec.s} mock to see your current band and your specific weaknesses.` },
+    ...sec.tips.map((t, i) => ({ name: "Tactic " + (i + 1), text: t })),
+    { name: sec.raw ? "Practise under timing" : "Get feedback and redo", text: sec.raw ? `Do timed ${sec.s} sections until you hit ${need} two or three times in a row.` : `Use the free AI band checker to score your ${sec.s.toLowerCase()} on each criterion, then rewrite/re-record your weak answers.` },
+  ];
+  const faqs = [
+    { q: `What do I need for Band ${b} in IELTS ${sec.s}?`, a: `You need ${need}. ${sec.raw ? "Every question is one mark with no negative marking, so never leave a blank." : "Focus on the four criteria for this section equally."}` },
+    { q: `Is Band ${b} in ${sec.s} hard to get?`, a: `It's very achievable with focused, feedback-driven practice — most learners gain about 0.5 band in 4–6 weeks. The free mocks and AI checker show your progress.` },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/ielts-band-${b.replace(".", "-")}/">IELTS Band ${b}</a> › ${sec.s}</p>
+<section class="hero"><div class="badges"><span class="badge">${sec.emoji} ${sec.s}</span><span class="badge">Band ${b}</span><span class="badge">Free plan</span></div>
+<h1>How to Get IELTS Band ${b} in ${sec.s}</h1>
+<p class="lead">To score <strong>Band ${b}</strong> in IELTS ${sec.s} you need ${need}. Here's the exact strategy — free.</p>
+<a class="cta" href="${sec.raw ? "/mock-test/ielts/" : "/ielts-" + (sec.s === "Writing" ? "writing" : "speaking") + "-checker/"}">▶ ${sec.raw ? "Take a free IELTS mock" : "Check your " + sec.s.toLowerCase() + " band free"}</a></section>
+<div class="card"><h2>Step-by-step plan</h2><ol>${steps.map((s) => `<li><strong>${s.name}.</strong> ${esc(s.text)}</li>`).join("")}</ol></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `All IELTS Band ${b} requirements`, href: `/ielts-band-${b.replace(".", "-")}/` },
+  { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
+  { label: "IELTS prep lessons (PPT)", href: "/prep-lessons/" },
+  { label: "Free AI band checker", href: "/ielts-writing-checker/" },
+])}`;
+  emit(path, head({ title, desc, path, kw: `ielts band ${b} ${sec.s.toLowerCase()}, how to get band ${b} in ${sec.s.toLowerCase()}, ielts ${sec.s.toLowerCase()} band ${b}, ielts ${sec.s.toLowerCase()} tips band ${b}`, jsonLdBlocks: [
+    { "@context": "https://schema.org", "@type": "HowTo", name: title.replace(` | ${BRAND}`, ""), description: desc, step: steps.map((s) => ({ "@type": "HowToStep", name: s.name, text: s.text })) },
+    faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `Band ${b}`, path: `/ielts-band-${b.replace(".", "-")}/` }, { name: sec.s, path }]),
+  ] }) + shell(inner));
+}
+
+// ── "[Exam] for [Country]" requirement pages ────────────────────────────────
+const EXAM_COUNTRY = [
+  { exam: "IELTS", slug: "ielts", c: "Canada", study: "6.0–6.5 overall (most courses want 6.5 with no band under 6.0)", extra: "For Express Entry PR, CLB 9 = IELTS Listening 8.0, Reading 7.0, Writing 7.0, Speaking 7.0 earns maximum language points. Accepted by IRCC and all Canadian universities." },
+  { exam: "IELTS", slug: "ielts", c: "UK", study: "6.0–6.5 overall for most degrees (6.5–7.0 for top universities)", extra: "For a UK Student visa below degree level you need IELTS for UKVI (SELT) at the required CEFR level. Pre-sessional English can lower the entry score." },
+  { exam: "IELTS", slug: "ielts", c: "Australia", study: "6.0–6.5 overall for study", extra: "For the subclass 500 student visa a minimum around 5.5–6.0 applies. For skilled PR: 'competent' = 6, 'proficient' = 7, 'superior' = 8 (which gives the most points)." },
+  { exam: "IELTS", slug: "ielts", c: "Germany", study: "6.0–6.5 overall for English-taught programmes", extra: "German-taught degrees need German (TestDaF/DSH) instead. Many Master's are taught fully in English with IELTS 6.5." },
+  { exam: "IELTS", slug: "ielts", c: "Ireland", study: "6.0–6.5 overall (often 6.5 for postgraduate)", extra: "Accepted by all Irish universities; the Stamp 1G graduate route lets you stay and work after study." },
+  { exam: "IELTS", slug: "ielts", c: "New Zealand", study: "6.0–6.5 overall for most degrees", extra: "Accepted for study and for the Skilled Migrant residence pathway." },
+  { exam: "TOEFL", slug: "toefl", c: "USA", study: "78–100 on TOEFL iBT (top universities want 100+)", extra: "There is no central English requirement for the F-1 visa — the score is set by each university. TOEFL is the most widely accepted test in the USA." },
+  { exam: "PTE", slug: "pte", c: "Australia", study: "50–65 on the PTE Academic Global Scale", extra: "PTE Academic is fully accepted for Australian student visas and skilled migration (50 = competent, 65 = proficient, 79 = superior)." },
+  { exam: "PTE", slug: "pte", c: "Canada", study: "60+ on PTE Academic for most universities", extra: "PTE Academic is now accepted for Canadian study permits and (PTE Core) for Express Entry." },
+  { exam: "Duolingo", slug: "duolingo", c: "USA", study: "105–120 on the Duolingo English Test", extra: "Accepted by thousands of US universities; cheaper and faster than IELTS/TOEFL, with results in about two days." },
+];
+function examForCountryPage(x) {
+  const path = `/${x.slug}-for-${x.c.toLowerCase().replace(/\s+/g, "-")}/`;
+  const title = `${x.exam} Score for ${x.c} — Study &amp; Visa Requirements (2026) | ${BRAND}`;
+  const desc = `What ${x.exam} score do you need for ${x.c}? Typical study requirement: ${x.study}. ${x.extra} Free ${x.exam} mock tests and prep.`;
+  const faqs = [
+    { q: `What ${x.exam} score do I need for ${x.c}?`, a: `Typically ${x.study}. ${x.extra}` },
+    { q: `Is ${x.exam} accepted in ${x.c}?`, a: `Yes — ${x.extra}` },
+    { q: `How can I reach that score for free?`, a: `Take free ${x.exam} mock tests, learn the strategy in the PPT lessons, and check your writing/speaking band with the free AI checker.` },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › ${x.exam} for ${x.c}</p>
+<section class="hero"><div class="badges"><span class="badge">${x.exam}</span><span class="badge">${x.c}</span><span class="badge">2026</span></div>
+<h1>${x.exam} Score for ${x.c}: Study &amp; Visa Requirements</h1>
+<p class="lead">For ${x.c}, the typical ${x.exam} requirement is <strong>${x.study}</strong>. ${esc(x.extra)}</p>
+<a class="cta" href="/mock-test/${x.slug}/">▶ Take a free ${x.exam} mock test</a></section>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `Free ${x.exam} mock test`, href: `/mock-test/${x.slug}/` },
+  { label: `${x.exam} prep lessons`, href: "/prep-lessons/" },
+  { label: "Free AI band checker", href: "/ielts-writing-checker/" },
+  { label: `Student guide to ${x.c === "USA" ? "New York" : x.c === "Canada" ? "Toronto" : x.c === "Australia" ? "Sydney" : x.c === "UK" ? "London" : x.c === "Germany" ? "Berlin" : "Dublin"}`, href: "/student-city-guides/" },
+])}`;
+  emit(path, head({ title, desc, path, kw: `${x.exam.toLowerCase()} score for ${x.c.toLowerCase()}, ${x.exam.toLowerCase()} requirement ${x.c.toLowerCase()}, ${x.exam.toLowerCase()} for ${x.c.toLowerCase()} study visa, study in ${x.c.toLowerCase()} ${x.exam.toLowerCase()}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${x.exam} for ${x.c}`, path }])] }) + shell(inner));
+}
+
+// ── "[Exam] vs [Exam]" comparison pages ─────────────────────────────────────
+const EXAM_VS = [
+  { a: "IELTS", b: "TOEFL", rows: [["Scoring", "Band 0–9", "0–120"], ["Format", "Paper or computer; face-to-face speaking", "Internet-based; speak into a microphone"], ["Length", "About 2h 45m", "About 2 hours"], ["Speaking", "Live, with a real examiner", "Recorded, AI + human scored"], ["Best for", "UK, Australia, Canada, Ireland, NZ", "USA, and widely accepted worldwide"]], verdict: "Pick IELTS if you prefer a human speaking examiner or are heading to the UK/Australia; pick TOEFL for the USA or if you like an all-computer test." },
+  { a: "IELTS", b: "PTE", rows: [["Scoring", "Band 0–9", "10–90 (Global Scale of English)"], ["Marking", "Human examiners", "Fully computer (AI) scored"], ["Results", "3–13 days", "Often within 48 hours"], ["Speaking", "With a real examiner", "Into a microphone, AI scored"], ["Best for", "Those who prefer human marking", "Fast results and Australia migration"]], verdict: "Choose PTE for fast, fully-computer scoring and quick turnaround; choose IELTS if you prefer a human examiner and the most universal recognition." },
+  { a: "TOEFL", b: "PTE", rows: [["Scoring", "0–120", "10–90"], ["Marking", "AI + human", "Fully AI"], ["Results", "4–8 days", "~48 hours"], ["Strength", "Strong US recognition", "Fast, growing acceptance"], ["Best for", "USA universities", "Australia, fast results"]], verdict: "Both are computer-based; TOEFL is the safer choice for the USA, PTE for the fastest results and Australian migration." },
+  { a: "IELTS", b: "Duolingo", rows: [["Scoring", "Band 0–9", "10–160"], ["Cost", "Higher (~US$200+)", "Much cheaper (~US$65)"], ["Length", "~2h 45m, at a centre", "~1 hour, at home"], ["Results", "3–13 days", "~2 days"], ["Acceptance", "Universal", "Thousands of universities, growing"]], verdict: "Duolingo is far cheaper, shorter and taken at home — great if your university accepts it. IELTS has the widest acceptance including visas/PR." },
+  { a: "GRE", b: "GMAT", rows: [["Used for", "Most Master's & PhD programmes", "MBA & business Master's"], ["Score", "260–340 (+ AWA 0–6)", "205–805 (Focus Edition)"], ["Maths", "Calculator allowed", "No calculator (Quant)"], ["Length", "~1h 58m", "~2h 15m"], ["Best for", "Broad grad-school options", "Top business schools"]], verdict: "Take the GRE for the widest range of graduate programmes; take the GMAT Focus if you're targeting competitive MBA programmes that prefer it." },
+];
+function examVsExamPage(v) {
+  const path = `/${v.a.toLowerCase()}-vs-${v.b.toLowerCase()}/`;
+  const title = `${v.a} vs ${v.b} — Which Is Easier &amp; Which Should You Take? (2026) | ${BRAND}`;
+  const desc = `${v.a} vs ${v.b}: a clear side-by-side comparison of scoring, format, length, results and acceptance — and which test to choose. Free practice for both.`;
+  const table = `<div class="card"><h2>${v.a} vs ${v.b} at a glance</h2><table class="cmp-table"><thead><tr><th></th><th>${v.a}</th><th>${v.b}</th></tr></thead><tbody>${v.rows.map((r) => `<tr><td><strong>${esc(r[0])}</strong></td><td>${esc(r[1])}</td><td>${esc(r[2])}</td></tr>`).join("")}</tbody></table></div>`;
+  const faqs = [
+    { q: `Is ${v.a} easier than ${v.b}?`, a: `Neither is universally easier — it depends on your strengths. ${v.verdict}` },
+    { q: `Which is more accepted, ${v.a} or ${v.b}?`, a: v.verdict },
+    { q: `Can I practise both for free?`, a: `Yes — LandingPrep has free full-length mock tests, strategy lessons and an AI band checker for both ${v.a} and ${v.b}.` },
+  ];
+  const slugA = v.a.toLowerCase(), slugB = v.b.toLowerCase();
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › ${v.a} vs ${v.b}</p>
+<section class="hero"><div class="badges"><span class="badge">${v.a}</span><span class="badge">vs</span><span class="badge">${v.b}</span></div>
+<h1>${v.a} vs ${v.b}: Which Should You Take?</h1>
+<p class="lead">${esc(v.verdict)}</p>
+<a class="cta" href="/mock-test/${slugA}/">▶ Try a free ${v.a} mock test</a></section>
+${table}
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `Free ${v.a} mock test`, href: `/mock-test/${slugA}/` },
+  { label: `Free ${v.b} mock test`, href: `/mock-test/${slugB}/` },
+  { label: "Score converter", href: "/tools/english-test-score-converter/" },
+  { label: "Prep lessons", href: "/prep-lessons/" },
+])}`;
+  emit(path, head({ title, desc, path, kw: `${slugA} vs ${slugB}, ${slugA} or ${slugB}, ${slugA} vs ${slugB} which is easier, difference between ${slugA} and ${slugB}, ${slugA} ${slugB} comparison`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${v.a} vs ${v.b}`, path }])] }) + shell(inner));
+}
+
 Object.keys(LANG_SEO).forEach(languageLandingPage);
 prepLessonsPage();
 bandCheckerPage("writing");
@@ -1302,6 +1424,9 @@ bandCheckerPage("speaking");
 vocabularyPages();
 BANDS.forEach(bandPage);
 cityGuidePages();
+BANDS.filter((b) => SEC_RAW[b.b]).forEach((b) => SECTIONS.forEach((sec) => bandSectionPage(b, sec)));
+EXAM_COUNTRY.forEach(examForCountryPage);
+EXAM_VS.forEach(examVsExamPage);
 
 // Write files
 PAGES.forEach(({ path, html }) => {
