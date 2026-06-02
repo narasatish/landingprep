@@ -4,16 +4,38 @@
 (function () {
   const { useState, useEffect } = React;
 
-  function Slide({ s, idx, total }) {
+  // Title with one optional accent-coloured word (s.accent). Falls back to plain.
+  function renderTitle(s) {
+    if (s.accent && s.title.indexOf(s.accent) >= 0) {
+      const parts = s.title.split(s.accent);
+      return <>{parts[0]}<span className="slide-accent">{s.accent}</span>{parts.slice(1).join(s.accent)}</>;
+    }
+    return s.title;
+  }
+
+  function Slide({ s, idx, total, deck }) {
+    const note = s.note || s.tip;
+    const caption = s.visualCaption || (deck && deck.section) || "";
     return (
       <div className="slide">
-        <div className="slide-num">Slide {idx + 1} / {total}</div>
-        <div className="slide-emoji">{s.emoji || "📌"}</div>
-        <h2 className="slide-title">{s.title}</h2>
-        <ul className="slide-points">{(s.points || []).map((p, i) => <li key={i}>{p}</li>)}</ul>
-        {s.example && <div className="slide-example"><strong>{s.example.label}: </strong>{s.example.text}</div>}
-        {s.tip && <div className="slide-tip">💡 <strong>Tip:</strong> {s.tip}</div>}
-        {s.warn && <div className="slide-warn">⚠️ {s.warn}</div>}
+        <span className="slide-blob slide-blob-tr" />
+        <span className="slide-blob slide-blob-bl" />
+        <div className="slide-grid">
+          <div className="slide-left">
+            <div className="slide-num">{idx + 1} / {total}</div>
+            <h2 className="slide-title">{renderTitle(s)}</h2>
+            <ul className="slide-points">{(s.points || []).map((p, i) => <li key={i}>{p}</li>)}</ul>
+            {s.example && <div className="slide-example"><strong>{s.example.label}: </strong>{s.example.text}</div>}
+            {s.warn && <div className="slide-warn">⚠️ {s.warn}</div>}
+            {note && <div className="slide-note">🎙️ {note}</div>}
+          </div>
+          <div className="slide-right">
+            <div className="slide-visual">
+              <div className="slide-visual-emoji">{s.emoji || "📌"}</div>
+              {caption && <div className="slide-visual-cap">{caption}</div>}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
@@ -35,7 +57,7 @@
           <span className="deck-title-mini">{deck.emoji} {deck.examName} · {deck.section}</span>
         </div>
         <div className="deck-progress"><div className="deck-progress-fill" style={{ width: ((i + 1) / total * 100) + "%" }} /></div>
-        <Slide s={deck.slides[i]} idx={i} total={total} />
+        <div className="slide-frame"><Slide s={deck.slides[i]} idx={i} total={total} deck={deck} /></div>
         <div className="deck-controls">
           <button className="btn" disabled={i === 0} onClick={prev}>← Back</button>
           <div className="deck-dots">{deck.slides.map((_, d) => <span key={d} className={"deck-dot" + (d === i ? " on" : "")} onClick={() => setI(d)} />)}</div>
