@@ -1417,6 +1417,42 @@ ${relatedGrid([
   emit(path, head({ title, desc, path, kw: `${slugA} vs ${slugB}, ${slugA} or ${slugB}, ${slugA} vs ${slugB} which is easier, difference between ${slugA} and ${slugB}, ${slugA} ${slugB} comparison`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${v.a} vs ${v.b}`, path }])] }) + shell(inner));
 }
 
+// ── "IELTS score for [University]" pages (long-tail, high-intent) ────────────
+function examForUniPage(c) {
+  if (!c || !c.id || c.ielts == null) return;
+  const band = c.ielts;
+  const path = `/ielts-for-${c.id}/`;
+  const bandStr = String(band);
+  const bandLink = ["6", "6.5", "7", "7.5", "8"].includes(bandStr) ? `/ielts-band-${bandStr.replace(".", "-")}/` : "/ielts-band-7/";
+  const title = `IELTS Score for ${esc(c.name)} — Requirement &amp; How to Get It (2026) | ${BRAND}`;
+  const desc = `What IELTS score do you need for ${c.name} (${c.country})? The typical requirement is around Band ${band} overall. See the exact target and a free plan to reach it with mock tests and an AI band checker.`;
+  const faqs = [
+    { q: `What IELTS score do I need for ${c.name}?`, a: `${c.name} typically requires around IELTS Band ${band} overall. Undergraduate courses are often 0.5 lower and some postgraduate or professional programmes higher — always confirm on the official admissions page for your course.` },
+    { q: `Does ${c.name} accept IELTS?`, a: `Yes — ${c.name} accepts IELTS Academic for admission. Many programmes also accept TOEFL iBT or PTE Academic.` },
+    { q: `How can I reach Band ${band} for free?`, a: `Take free IELTS mock tests to find your weak section, learn the strategy in the PPT lessons, and check your Writing/Speaking band with the free AI band checker.` },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/university/${c.id}/">${esc(c.name)}</a> › IELTS score</p>
+<section class="hero"><div class="badges"><span class="badge">${esc(c.country)}</span><span class="badge">Band ${band}</span><span class="badge">2026</span></div>
+<h1>IELTS Score for ${esc(c.name)}</h1>
+<p class="lead">To study at <strong>${esc(c.name)}</strong>${c.city ? " in " + esc(c.city) : ""}, you typically need around <strong>IELTS Band ${band}</strong> overall. Undergraduate courses may accept a little lower; competitive postgraduate programmes can ask for more.</p>
+<a class="cta" href="/mock-test/ielts/">▶ Take a free IELTS mock test</a></section>
+<div class="card"><h2>How to reach Band ${band}</h2><ol>
+<li><strong>Diagnose.</strong> Take a free IELTS mock to see your band in each skill.</li>
+<li><strong>Target the gap.</strong> See exactly what <a href="${bandLink}">Band ${band}</a> needs in each section.</li>
+<li><strong>Learn the strategy.</strong> Use the free <a href="/prep-lessons/">IELTS prep lessons</a> for your weak sections.</li>
+<li><strong>Get feedback.</strong> Check your Writing &amp; Speaking with the free <a href="/ielts-writing-checker/">AI band checker</a> and redo weak answers.</li>
+</ol></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `${esc(c.name)} — full profile`, href: `/university/${c.id}/` },
+  { label: `How to get IELTS Band ${band}`, href: bandLink },
+  { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
+  { label: "Free AI band checker", href: "/ielts-writing-checker/" },
+])}`;
+  emit(path, head({ title, desc, path, kw: `ielts score for ${c.name.toLowerCase()}, ielts requirement ${c.name.toLowerCase()}, ${c.name.toLowerCase()} ielts, ielts band for ${c.name.toLowerCase()}, english requirement ${c.name.toLowerCase()}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: c.name, path: `/university/${c.id}/` }, { name: "IELTS score", path }])] }) + shell(inner));
+}
+
 Object.keys(LANG_SEO).forEach(languageLandingPage);
 prepLessonsPage();
 bandCheckerPage("writing");
@@ -1427,6 +1463,7 @@ cityGuidePages();
 BANDS.filter((b) => SEC_RAW[b.b]).forEach((b) => SECTIONS.forEach((sec) => bandSectionPage(b, sec)));
 EXAM_COUNTRY.forEach(examForCountryPage);
 EXAM_VS.forEach(examVsExamPage);
+COLLEGES.forEach(examForUniPage);
 
 // Write files
 PAGES.forEach(({ path, html }) => {
