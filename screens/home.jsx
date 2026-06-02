@@ -237,7 +237,7 @@ function Home({ onGuide, onPractice, onNav }) {
             {[
               ["📝", "1,000+ realistic mocks", "Real timings & patterns across all 7 exams with instant scoring.", "exam-prep"],
               ["🎤", "AI speaking practice", "Speak into your mic, get live transcripts, follow-ups & fluency scoring.", "agents"],
-              ["✍️", "AI writing feedback", "Paste any essay for rubric feedback — plus free Band 7+ model answers.", "agents"],
+              ["✍️", "AI band-score checker", "Paste an essay or record a Part 2 — instant IELTS band, TR/CC/LR/GRA breakdown & Band 9 model.", "writing-checker"],
               ["🏛️", "College Predictor", "99 top universities with fees, requirements & Safe/Target/Reach matches.", "colleges"],
               ["💸", "Scholarships & loans", "Country-based scholarship finder and a 10-lender education-loan compare.", "colleges"],
               ["🛂", "Visa, PR & immigration", "Visa types, settlement options and a step-by-step student→PR roadmap.", "colleges"],

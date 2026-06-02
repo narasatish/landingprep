@@ -30,6 +30,8 @@ function viewToHash(view, examId) {
       if ((window.location.hash || "").indexOf("#/exam-prep") === 0) return window.location.hash;
       return "#/exam-prep" + (examId ? "/" + examId : "");
     case "guide":     return "#/exam-hub" + (examId ? "/" + examId : "");
+    case "writing-checker":  return "#/writing-checker";
+    case "speaking-checker": return "#/speaking-checker";
     case "learn":     return "#/learn";
     case "learning":  return "#/learning";
     case "agents":    return "#/agents";
@@ -62,6 +64,8 @@ function hashToView(hash, exams) {
     const ex = find(parts[1]);
     return { view: "guide", examId: ex ? ex.id : (exams && exams[0] ? exams[0].id : null) };
   }
+  if (head === "writing-checker")  return { view: "writing-checker",  examId: null };
+  if (head === "speaking-checker") return { view: "speaking-checker", examId: null };
   if (head === "learn")     return { view: "learn",    examId: null };
   if (head === "learning")  return { view: "learning", examId: null };
   if (head === "agents")    return { view: "agents",   examId: null };
@@ -251,6 +255,8 @@ function App() {
   // ── Navigation functions ─────────────────────────────────────────────
   const onNav = (id) => {
     if (id === "home")      { setView("home");     setExam(null); return; }
+    if (id === "writing-checker")  { setView("writing-checker");  return; }
+    if (id === "speaking-checker") { setView("speaking-checker"); return; }
     if (id === "learn")     { setView("learn");     return; }
     if (id === "learning")  { setView("learning");  return; }
     if (id === "agents")    { setView("agents");    return; }
@@ -335,6 +341,10 @@ function App() {
       }}
       onNav={onNav}
     />;
+  } else if (view === "writing-checker") {
+    content = <window.LP_BandChecker onNav={onNav} initialMode="writing" />;
+  } else if (view === "speaking-checker") {
+    content = <window.LP_BandChecker onNav={onNav} initialMode="speaking" />;
   } else if (view === "learn") {
     content = <window.LP_LearnHub onNav={onNav} exams={exams} initialTab="lessons" />;
   } else if (view === "learning") {

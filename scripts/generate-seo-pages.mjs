@@ -1082,8 +1082,62 @@ ${relatedGrid([
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Prep Lessons", path }]),
   ] }) + shell(inner));
 }
+function bandCheckerPage(mode) {
+  const isW = mode === "writing";
+  const path = isW ? `/ielts-writing-checker/` : `/ielts-speaking-checker/`;
+  const title = isW
+    ? `Free IELTS Writing Checker — Instant AI Band Score (Task 1 &amp; 2) | ${BRAND}`
+    : `Free IELTS Speaking Checker — Instant AI Band Score &amp; Feedback | ${BRAND}`;
+  const desc = isW
+    ? `Free AI IELTS Writing checker: paste your Task 1 or Task 2 answer and get an instant estimated band with a Task Response, Coherence, Lexical Resource &amp; Grammar breakdown, corrections and a Band 9 rewrite. No signup.`
+    : `Free AI IELTS Speaking checker: record a Part 2 answer and get an instant estimated band with Fluency, Lexical, Grammar &amp; Pronunciation feedback and a Band 9 model answer. No signup.`;
+  const kw = isW
+    ? "free ielts writing checker, ielts band score checker, ielts essay checker free, ai ielts writing feedback, ielts writing task 2 checker, ielts writing task 1 checker, check my ielts essay band, ielts writing evaluator free, ielts essay band score calculator"
+    : "free ielts speaking checker, ielts speaking band score, ai ielts speaking test free, ielts speaking practice with band score, check my ielts speaking, ielts speaking evaluator, ielts part 2 practice free";
+  const faqs = isW ? [
+    { q: "Is the IELTS Writing checker really free?", a: "Yes — paste your essay and get an instant estimated band with a full criterion breakdown, corrections and a Band 9 rewrite. No signup, no payment." },
+    { q: "How accurate is the AI band score?", a: "It's calibrated to the official IELTS public band descriptors and is a strong guide for practice (most AI checkers are 80–90% accurate). For a high-stakes decision, confirm with a certified teacher." },
+    { q: "Does it score Task 1 and Task 2?", a: "Both. Pick Task 1 (report/letter) or Task 2 (essay) and the checker applies the right descriptors (Task Achievement vs Task Response)." },
+    { q: "What feedback do I get?", a: "An overall band, sub-scores for Task Response/Achievement, Coherence & Cohesion, Lexical Resource and Grammatical Range & Accuracy, your key mistakes corrected, and a full Band 9 rewrite to learn from." },
+  ] : [
+    { q: "Is the IELTS Speaking checker free?", a: "Yes — record a Part 2 long-turn answer and get an instant estimated band with feedback and a Band 9 model answer. No signup." },
+    { q: "How does it work?", a: "You get a real Part 2 cue card, record your 1–2 minute answer (it transcribes live), and the AI examiner scores Fluency & Coherence, Lexical Resource, Grammar and Pronunciation against the band descriptors." },
+    { q: "How accurate is it?", a: "It's a strong practice guide calibrated to the IELTS descriptors; pronunciation is estimated from the transcript, so pair it with a teacher for a precise pronunciation score." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › ${isW ? "IELTS Writing Checker" : "IELTS Speaking Checker"}</p>
+<section class="hero">
+  <div class="badges"><span class="badge">100% Free</span><span class="badge">Instant band</span><span class="badge">No signup</span><span class="badge">Band 9 ${isW ? "rewrite" : "model"}</span></div>
+  <h1>Free IELTS ${isW ? "Writing" : "Speaking"} Checker — Instant AI Band Score</h1>
+  <p class="lead">${isW ? "Paste your Task 1 or Task 2 answer" : "Record a Part 2 answer"} and get an estimated IELTS band in seconds, with a full criterion breakdown, ${isW ? "corrections and a Band 9 rewrite" : "feedback and a Band 9 model answer"}. Free, unlimited, no account.</p>
+  <a class="cta" href="/#/${isW ? "writing-checker" : "speaking-checker"}">▶ Check my band score</a>
+</section>
+<div class="card">
+  <h2>How it works</h2>
+  <ul>
+    <li><strong>1.</strong> ${isW ? "Pick Task 1 or Task 2 and paste your answer." : "Get a real Part 2 cue card and record your answer (it transcribes as you speak)."}</li>
+    <li><strong>2.</strong> Our AI examiner applies the official IELTS band descriptors.</li>
+    <li><strong>3.</strong> Get your overall band + ${isW ? "Task Response, Coherence, Lexical Resource &amp; Grammar" : "Fluency, Lexical, Grammar &amp; Pronunciation"} sub-scores, ${isW ? "key corrections and a Band 9 rewrite" : "targeted tips and a Band 9 model answer"}.</li>
+  </ul>
+</div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: isW ? "Open the Writing checker" : "Open the Speaking checker", href: `/#/${isW ? "writing-checker" : "speaking-checker"}` },
+  { label: isW ? "Free IELTS Speaking checker" : "Free IELTS Writing checker", href: isW ? "/ielts-speaking-checker/" : "/ielts-writing-checker/" },
+  { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
+  { label: "IELTS prep lessons (PPT)", href: "/prep-lessons/" },
+])}`;
+  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
+    { "@context": "https://schema.org", "@type": "WebApplication", name: `Free IELTS ${isW ? "Writing" : "Speaking"} Checker`, applicationCategory: "EducationalApplication", operatingSystem: "Web", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, description: desc },
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: isW ? "IELTS Writing Checker" : "IELTS Speaking Checker", path }]),
+  ] }) + shell(inner));
+}
+
 Object.keys(LANG_SEO).forEach(languageLandingPage);
 prepLessonsPage();
+bandCheckerPage("writing");
+bandCheckerPage("speaking");
 
 // Write files
 PAGES.forEach(({ path, html }) => {
