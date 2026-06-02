@@ -4636,6 +4636,13 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 .rl-city-areas { font-size: 13px; color: var(--ink-2); margin: 6px 0; }
 .rl-city-tips { margin: 8px 0 0; padding-left: 18px; }
 .rl-city-tips li { font-size: 13.5px; color: var(--ink-2); line-height: 1.55; margin: 4px 0; }
+/* Homepage popular-tools strip */
+.hp-tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.hp-tool-card { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); cursor: pointer; transition: border-color .15s ease, box-shadow .15s ease, transform .1s ease; }
+.hp-tool-card:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); box-shadow: 0 8px 24px -14px rgba(0,0,0,.25); transform: translateY(-2px); }
+.hp-tool-ic { font-size: 30px; }
+.hp-tool-t { font-weight: 800; font-size: 16px; color: var(--ink); }
+.hp-tool-d { font-size: 13px; color: var(--ink-2); line-height: 1.45; }
 .gam-goal.done { color: #15803d; }
 .gam-more { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--accent); text-decoration: none; }
 .gam-more:hover { text-decoration: underline; }

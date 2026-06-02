@@ -313,6 +313,27 @@ function Home({ onGuide, onPractice, onNav }) {
         </section>
       ) : null}
 
+      {/* Popular free tools — discovery + internal links for crawlers */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="shell">
+          <div className="eyebrow" style={{ marginBottom: 12 }}>Popular free tools</div>
+          <div className="hp-tools-grid">
+            {[
+              ["🎯", "AI Band Checker", "Instant IELTS Writing/Speaking band + Band 9 model", "writing-checker"],
+              ["📖", "Vocabulary by topic", "Band-9 words with audio for every IELTS topic", "vocabulary"],
+              ["📊", "Prep Lessons", "600+ PPT strategy slides for all 7 exams", "learn"],
+              ["✈️", "Move Abroad", "Pre-departure checklist, visa timeline & city guides", "relocate"],
+            ].map(([ic, t, d, id]) => (
+              <button key={id} className="hp-tool-card" onClick={() => onNav(id)}>
+                <span className="hp-tool-ic">{ic}</span>
+                <span className="hp-tool-t">{t}</span>
+                <span className="hp-tool-d">{d}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Learning Club CTA */}
       <section className="section">
         <div className="shell">
@@ -630,13 +651,13 @@ function Footer() {
           <div>
             <h4>Practice</h4>
             <ul>
-              <li><a href="#/exam-prep">Mock tests</a></li><li><a href="#/exam-prep">Section drills</a></li><li><a href="#/learning">Learning Club</a></li><li><a href="#/agents">AI Speaking</a></li><li><a href="#/agents">AI Writing review</a></li>
+              <li><a href="#/exam-prep">Mock tests</a></li><li><a href="/ielts-writing-checker/">AI Band Checker</a></li><li><a href="/ielts-vocabulary/">Vocabulary</a></li><li><a href="/prep-lessons/">Prep Lessons</a></li><li><a href="#/learning">Learning Club</a></li><li><a href="#/agents">AI Speaking &amp; Writing</a></li>
             </ul>
           </div>
           <div>
             <h4>Resources</h4>
             <ul>
-              <li><a href="#/blog">Study tips & strategy</a></li><li><a href="#/blog">Exam comparisons</a></li><li><a href="#/blog">Score targets</a></li><li><a href="#/exam-hub/ielts">Exam guides</a></li><li><a href="#/progress">My Progress</a></li>
+              <li><a href="/ielts-band-7/">IELTS band requirements</a></li><li><a href="#/relocate">Move Abroad checklist</a></li><li><a href="/student-city-guides/">Student city guides</a></li><li><a href="/learn-german/">Learn German &amp; French</a></li><li><a href="#/blog">Study tips & strategy</a></li><li><a href="#/progress">My Progress</a></li>
             </ul>
           </div>
         </div>
