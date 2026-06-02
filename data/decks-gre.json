@@ -1,0 +1,1112 @@
+{
+  "gre-verbal": {
+    "id": "gre-verbal",
+    "exam": "gre",
+    "examName": "GRE",
+    "section": "Verbal",
+    "emoji": "📚",
+    "title": "GRE Verbal — Tips, Tricks & Strategy",
+    "summary": "Master Reading Comprehension, Text Completion, and Sentence Equivalence to score 160+.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "What is GRE Verbal?",
+        "points": [
+          "Tests reading comprehension, vocabulary in context, and logical reasoning",
+          "Two sections, 20 questions each, 30 minutes per section",
+          "Adaptive: second section difficulty depends on first-section performance",
+          "Score range: 130–170 (scale changed post-2023)"
+        ],
+        "example": {
+          "label": "Format Overview",
+          "text": "Verbal Reasoning = 40 questions across 2 sections; one essay-reading comprehension pair may have multiple questions"
+        },
+        "tip": "Adaptive scoring rewards accuracy on harder questions; don't rush to finish."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Verbal Section Timing & Strategy",
+        "points": [
+          "30 minutes for 20 questions ≈ 1.5 min/question average",
+          "Text Completion: 30 seconds. Sentence Equivalence: 45 seconds. Reading: 2–3 min per passage",
+          "Read the question/prompt FIRST before reading full text",
+          "Flag unknowns; come back after easier questions if time permits"
+        ],
+        "tip": "Pacing is critical. Practice timed sections to build speed without sacrificing accuracy.",
+        "warn": "Avoid guessing randomly; eliminate wrong answers systematically."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Text Completion Overview",
+        "points": [
+          "Fill in 1–3 blanks in a sentence or short passage",
+          "Logic clues (contrast, causation, parallelism) hint at the answer",
+          "Single-blank: straightforward meaning. Multi-blank: all blanks must fit",
+          "~20% of Verbal section"
+        ],
+        "example": {
+          "label": "Single-Blank Example",
+          "text": "Despite her _____ demeanor, she was known for her sharp intellect. (A) affable (B) acerbic (C) candid) → Answer: (A) affable, contrasts with 'despite' + 'sharp intellect'"
+        },
+        "tip": "Cover the choices first; predict your own answer, then match."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Text Completion: Multi-Blank Mastery",
+        "points": [
+          "Identify relationships between blanks (same direction or opposite)",
+          "Eliminate one blank pair at a time if stuck",
+          "Punctuation and conjunctions signal logic flow",
+          "One wrong blank invalidates the whole answer"
+        ],
+        "example": {
+          "label": "Two-Blank Example",
+          "text": "The CEO's _____ approach to innovation was both _____ and risky. (A) cautious...prudent (B) audacious...reckless (C) deliberate...conservative → Answer: (B) or (C) fit, but (B) better captures 'risky'"
+        },
+        "tip": "Start with the blank that feels most constrained by context."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Sentence Equivalence Strategy",
+        "points": [
+          "Pick TWO words that create the SAME meaning in the sentence",
+          "Not synonyms alone; they must produce identical sentence logic",
+          "~10% of Verbal. Same difficulty as Text Completion blanks",
+          "6 choices, only one correct pair"
+        ],
+        "example": {
+          "label": "Sentence Equivalence Example",
+          "text": "The critic's _____ remarks about the film were surprising given her previous praise. (A) acerbic (B) caustic (C) favorable (D) laudatory (E) scathing (F) encomium → Answer: (A) acerbic + (E) scathing (both mean harsh/cutting)"
+        },
+        "tip": "Eliminate pairs that don't both fit; focus on primary definition fit first."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Reading Comprehension Basics",
+        "points": [
+          "~50% of Verbal section; passages: 1 short (100 words), 1–2 medium (250–400 words)",
+          "Question types: main idea, inference, author's tone, sentence function, vocabulary",
+          "Adaptive CAT: harder passages = more points per correct answer",
+          "Active reading: underline topic sentences, contrasts, claims"
+        ],
+        "example": {
+          "label": "Passage Structure",
+          "text": "Intro (thesis) → Evidence 1 → Counter/nuance → Evidence 2 → Conclusion. Typical academic journal format"
+        },
+        "tip": "Read the passage first (don't skim), then tackle questions without re-reading full text unless asked."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Reading: Main Idea & Author's Purpose",
+        "points": [
+          "Main idea: the overarching claim, not just the topic",
+          "Author's purpose: to argue, explain, criticize, defend, compare",
+          "Avoid overly broad or narrow summaries",
+          "Watch for 'which of the following best' — not just 'true,' but BEST"
+        ],
+        "example": {
+          "label": "Wrong vs. Right",
+          "text": "Wrong: 'The passage is about photosynthesis.' Right: 'The author argues that recent discoveries have fundamentally changed our understanding of photosynthesis efficiency.'"
+        },
+        "tip": "State the main idea in one sentence before checking answer choices."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Reading: Inference & Detail Questions",
+        "points": [
+          "Inference: what logically follows from the text (not stated directly)",
+          "Detail: what is explicitly mentioned (safe to reference by line number)",
+          "Distinguish between 'author implies' and 'author states'",
+          "Use line references to eliminate ambiguity"
+        ],
+        "example": {
+          "label": "Inference Example",
+          "text": "Text: 'The study found no correlation between variable X and outcome Y.' Inference: 'The researchers likely had a hypothesis linking X and Y, but data contradicted it.'"
+        },
+        "tip": "For inference, never go beyond one logical step; avoid wild extrapolations."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Reading: Tone, Attitude & Author's Stance",
+        "points": [
+          "Tone: How does the author SOUND? Critical, supportive, neutral, skeptical?",
+          "Tone ≠ topic. A neutral treatment of controversial material is possible",
+          "Watch for qualifiers: 'arguably,' 'perhaps,' 'some scholars believe' → hedging",
+          "Single-word tone labels: didactic, pedantic, sardonic, nostalgic, etc."
+        ],
+        "example": {
+          "label": "Tone Recognition",
+          "text": "'The proponents of this theory claim...' (skeptical/distant) vs. 'The elegant theory explains...' (supportive/appreciative)"
+        },
+        "tip": "Identify adjectives/adverbs the author uses to describe ideas; they reveal stance."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Reading: Function & Rhetorical Questions",
+        "points": [
+          "Why did the author include this sentence/phrase? (Not what does it mean)",
+          "Function: introduces example, concedes a point, strengthens argument, etc.",
+          "Rhetorical questions: posed for effect, not to be answered directly",
+          "Transitions (however, moreover, instead) signal shifts in function"
+        ],
+        "example": {
+          "label": "Function Example",
+          "text": "Sentence: 'Even critics concede that the method is cost-effective.' Function: Acknowledge counterargument to strengthen main claim"
+        },
+        "tip": "Restate the function in gerund form: 'introducing,' 'contrasting,' 'supporting.'"
+      },
+      {
+        "emoji": "🔘",
+        "title": "Vocabulary Strategy for Verbal",
+        "points": [
+          "GRE rewards high-frequency, nuanced words (not obscure memorization)",
+          "Root-based learning: Latin/Greek roots unlock meaning of related words",
+          "Context clues: synonyms, antonyms, definitions, examples in text",
+          "Use Anki or flashcard decks for 500+ GRE-common words"
+        ],
+        "example": {
+          "label": "Root Mastery",
+          "text": "Root 'mal-' (bad): malady, malign, malapropism, malevolent. Learn one root = 10+ words"
+        },
+        "tip": "For unknown words, look for structural clues (prefix/suffix) before guessing."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Verbal: Common Trap Answers",
+        "points": [
+          "Synonym bait: sounds right but doesn't fit the blank context",
+          "Extreme language: 'always,' 'never,' 'all,' 'none' often incorrect",
+          "Author's opinion confusion: picking what author believes, not what passage claims",
+          "Literal vs. figurative: passage may use metaphor; answer is literal"
+        ],
+        "example": {
+          "label": "Trap Example",
+          "text": "Blank: 'His speech was _____.' Choices: (A) brief (B) terse. Both mean short, but 'terse' = curtly short, 'brief' = simply short. Context determines fit"
+        },
+        "warn": "Never pick an answer because it's a real word; it must fit the specific sentence logic."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Passage Mapping for Efficiency",
+        "points": [
+          "For longer passages, write a one-line summary per paragraph",
+          "Mark paragraph numbers and main idea on test booklet",
+          "Highlight contrast/counter-arguments (signal words: 'but,' 'yet,' 'however')",
+          "Reduces re-reading time on inference and tone questions"
+        ],
+        "example": {
+          "label": "Passage Map Sample",
+          "text": "Para 1: Historical background. Para 2: Traditional view (wrong). Para 3: New evidence. Para 4: Implications."
+        },
+        "tip": "Spend 2 min reading + mapping; save 1 min on 3–4 questions."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Short vs. Long Reading Passages",
+        "points": [
+          "Short (~100 words): 1 question, high precision needed; re-read if uncertain",
+          "Long (~350 words): 3–4 questions, multiple-choice or select-all-that-apply",
+          "Select-all: pick every true statement (not 'best' — all correct count)",
+          "If unsure on select-all, safer to pick fewer and recheck logic"
+        ],
+        "example": {
+          "label": "Select-All Example",
+          "text": "Q: 'Which of the following are true?' (A) Author criticizes theory. (B) Study supports theory. (C) Both A & B are stated. → Pick all that apply based on text"
+        },
+        "tip": "For select-all, verify each choice independently before submitting."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Comparison & Parallel Passage Reading",
+        "points": [
+          "Two passages (200–300 words each) on related topics",
+          "Questions ask: similarity, difference, author's relationship, implicit connection",
+          "Passage A vs. Passage B comparison: read both fully before answering",
+          "Avoid conflating the two; each author has distinct voice/intent"
+        ],
+        "example": {
+          "label": "Comparison Q",
+          "text": "Passage A: 'Theory X is outdated.' Passage B: 'Theory X remains relevant.' Q: How do authors differ? → Contradictory positions"
+        },
+        "tip": "Mark agreement/disagreement zones for quick comparison-question reference."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Analytical vs. Opinion Questions",
+        "points": [
+          "Analytical: factual; grounded in passage statements or clear inferences",
+          "Opinion: speculation about author's beliefs; dangerous unless clearly signaled",
+          "GRE favors analytical; opinions only if passage explicitly states belief",
+          "Phrases: 'author likely believes' vs. 'author explicitly states' — big difference"
+        ],
+        "example": {
+          "label": "Analytical vs. Opinion",
+          "text": "Text: 'The data shows a correlation.' Analytical: 'A correlation exists.' Opinion: 'The author thinks causation is likely.'"
+        },
+        "warn": "Avoid inferring author's intent beyond what the passage supports."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Sentence Completion in Context",
+        "points": [
+          "Rarely standalone; usually within a passage (2–3 sentences surrounding blank)",
+          "Use full context: the sentence before and after guide meaning",
+          "Parallel structure often signals the answer (same part of speech, tense)",
+          "Not about vocabulary; it's about logical fit"
+        ],
+        "example": {
+          "label": "Context Example",
+          "text": "Prior: 'She had worked tirelessly.' Blank: 'Her _____ efforts.' Parallel: 'tireless,' 'relentless' fit; 'lazy' doesn't, despite being a real adjective"
+        },
+        "tip": "Use surrounding sentences to narrow options before guessing."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Critical Reading: Bias & Subjectivity",
+        "points": [
+          "All authors have a perspective; identify their lens (scientific, political, personal)",
+          "Bias ≠ bad; a biased argument can be well-reasoned",
+          "Watch for loaded language: 'obviously,' 'clearly,' 'undoubtedly' → author asserting without proof",
+          "GRE tests your ability to recognize and evaluate bias, not to condemn it"
+        ],
+        "example": {
+          "label": "Bias Recognition",
+          "text": "Author A: 'The evidence clearly shows...' vs. Author B: 'Some scholars argue...' → A is more assertive/opinionated"
+        },
+        "tip": "Distinguish between author's claim and its validity; GRE rewards objectivity in analysis."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Verbal Scoring & Your Target",
+        "points": [
+          "Scale: 130 (no correct) to 170 (all correct); ~1 point per question correct on average",
+          "160+: ~35–36 correct per section. 150+: ~28–29 correct per section",
+          "Adaptive: easier 2nd section if you miss many in 1st; harder 2nd if you do well",
+          "Each correct answer on harder questions = more points (hidden scoring)"
+        ],
+        "example": {
+          "label": "Score Breakdown",
+          "text": "30/40 correct = ~160–163. 35/40 correct = ~168–170. Difficulty of correct answers varies the exact score"
+        },
+        "tip": "Aim for 75%+ accuracy (30/40) to hit 160+; perfectionism isn't required."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Top 5 Verbal Mistakes",
+        "points": [
+          "Rushing through reading; missing nuance costs 3–5 points per passage",
+          "Vocabulary guessing without context; GRE tests words in context, not isolation",
+          "Over-inferring; going 2–3 logical steps beyond text",
+          "Ignoring negation ('not,' 'neither,' 'except') in questions; flips meaning",
+          "Freezing on a hard question; skip and return with fresh eyes"
+        ],
+        "tip": "Practice under timed conditions to internalize pacing and avoid panic skipping.",
+        "warn": "Wrong answers are often partially correct; they test your discernment, not guessing."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Practice Strategy for Verbal",
+        "points": [
+          "Week 1–2: untimed; focus on understanding question types and logic",
+          "Week 3–4: section practice at 30 min per section; build speed",
+          "Week 5–6: full tests under exam conditions (adaptive CAT simulations)",
+          "Review errors: categorize by type (vocab, inference, pacing) and drill weak areas"
+        ],
+        "example": {
+          "label": "Weekly Drill",
+          "text": "Monday: 10 Text Completions (untimed). Tuesday: 5 Reading passages (timed). Wed–Fri: mixed section drills. Weekend: full 40-question section"
+        },
+        "tip": "Use official ETS PowerPrep tests; unofficial materials may not reflect real difficulty."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Free GRE Verbal Mocks & Resources",
+        "points": [
+          "ETS PowerPrep+ (free two full tests): https://www.ets.org/gre/revised_general/prepare",
+          "Magoosh GRE Vocabulary app: 1000+ words with spaced repetition",
+          "Manhattan Prep 5-lb. book: 1000+ practice questions by type",
+          "Read quality articles: The Economist, Scientific American, academic journals"
+        ],
+        "example": {
+          "label": "Reading Practice",
+          "text": "Read one Economist article daily; time yourself; answer comprehension Qs without re-reading. Builds speed & retention"
+        },
+        "tip": "Complement formal prep with 10–15 min daily reading of challenging material."
+      },
+      {
+        "emoji": "🔘",
+        "title": "GRE Verbal: Final Tips",
+        "points": [
+          "Confidence matters: familiar question types save mental energy",
+          "Adaptive CAT exploits hesitation; make decisions decisively, move forward",
+          "On test day: read carefully, eliminate aggressively, skip strategically",
+          "Post-test: review wrong answers for patterns, not just correct answers"
+        ],
+        "tip": "A high Verbal score (160+) takes practice; consistency beats last-minute cramming.",
+        "warn": "Vocabulary growth takes months; start prep 3–4 months before test if English is non-native."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Next: Free GRE Mock Tests",
+        "points": [
+          "Take a full adaptive mock this week to measure baseline",
+          "Review Verbal section errors in detail",
+          "Target 3–4 more mocks over 6–8 weeks",
+          "Use results to refine your strategy and timing"
+        ],
+        "example": {
+          "label": "Mock Test Schedule",
+          "text": "Week 1: Baseline mock. Weeks 2–3: Focused drills. Week 4: Mock 2. Weeks 5–6: Intensive review. Week 7: Mock 3. Week 8: Final test"
+        },
+        "tip": "Our Codex platform offers AI-powered GRE Verbal drills and personalized feedback. Start free today!"
+      }
+    ]
+  },
+  "gre-quant": {
+    "id": "gre-quant",
+    "exam": "gre",
+    "examName": "GRE",
+    "section": "Quant",
+    "emoji": "🔢",
+    "title": "GRE Quant — Tips, Tricks & Strategy",
+    "summary": "Conquer Quantitative Comparison, Numeric Entry, and Data Interpretation to score 165+.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "What is GRE Quant?",
+        "points": [
+          "Tests math reasoning, problem-solving, and data interpretation",
+          "Two sections, 20 questions each, 35 minutes per section",
+          "Adaptive: second section difficulty depends on first-section performance",
+          "Score range: 130–170 (post-2023 shortened GRE)"
+        ],
+        "example": {
+          "label": "Question Types Breakdown",
+          "text": "Quantitative Comparison (QC): ~7 q/section. Multiple-choice/multiple-answers: ~10 q/section. Numeric Entry: ~2 q/section. Data Interpretation: ~1 q/section"
+        },
+        "tip": "No calculator on many older GRE tests, but modern version allows calculator on-screen for all Quant."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Quant Section Timing & Strategy",
+        "points": [
+          "35 minutes for 20 questions ≈ 1.75 min/question average",
+          "Quantitative Comparison: 60–90 seconds. Multiple-choice: 90–120 seconds. Numeric: 60 seconds",
+          "Harder questions at end; allocate more time if adaptive sends you there",
+          "Skip and return strategy: if stuck >90 sec, flag and move on"
+        ],
+        "tip": "Use on-screen calculator for arithmetic; save mental energy for strategy.",
+        "warn": "Calculator speeds some problems but can create false confidence; always estimate first."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Quantitative Comparison (QC) Basics",
+        "points": [
+          "Compare Quantity A vs. Quantity B; choose A > B, A < B, A = B, or 'cannot be determined'",
+          "~35% of Quant section; tests reasoning more than computation",
+          "No calculator advantage; focus on structure and comparison logic",
+          "Answer (D) 'cannot be determined' is rare (~10% of QC); be suspicious"
+        ],
+        "example": {
+          "label": "Simple QC Example",
+          "text": "Quantity A: sqrt(144). Quantity B: 12. Answer: (C) The quantities are equal"
+        },
+        "tip": "Plug in numbers (especially negatives, zero, fractions) to find cases where A vs. B changes."
+      },
+      {
+        "emoji": "🔘",
+        "title": "QC Strategy: Canceling Common Terms",
+        "points": [
+          "If both A and B contain the same factor or term, cancel it",
+          "Reduces complexity; compare what remains",
+          "Example: A = 2x+5, B = 3x+5. Cancel 5; compare 2x vs. 3x (depends on sign of x)",
+          "Useful for algebraic QC; saves computation time"
+        ],
+        "example": {
+          "label": "Canceling Example",
+          "text": "A: 1/7 + 1/8. B: 2/15. Find common denominator? No. Compare numerically: A ≈ 0.018 + 0.125 = 0.143 > B ≈ 0.133. Answer: A > B"
+        },
+        "tip": "Cancel only when you're certain both quantities contain the term; don't cancel blindly."
+      },
+      {
+        "emoji": "🔘",
+        "title": "QC Trap: Testing Edge Cases",
+        "points": [
+          "Negative vs. positive: if x appears, test x > 0 and x < 0 separately",
+          "Zero: if x ≥ 0 allowed, test x = 0",
+          "Fractions: test x = 1/2, x = 2; different outcomes from integers",
+          "If outcome changes based on the value, answer is (D) 'cannot be determined'"
+        ],
+        "example": {
+          "label": "Edge Case Flip",
+          "text": "A: x². B: x. If x = 0: A = B = 0. If x = 2: A = 4 > B = 2. If x = -1: A = 1 > B = -1. Answer: (D) cannot be determined (depends on x)"
+        },
+        "warn": "Many QC problems hinge on one edge case; always test at least {-1, 0, 1, 1/2, 2}."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Multiple-Choice (Single Answer)",
+        "points": [
+          "Pick one best answer from 5 choices",
+          "~40% of Quant; tests calculation, interpretation, and reasoning",
+          "Read carefully: 'which of the following,' 'the most nearly equal,' 'approximately'",
+          "Use estimation to eliminate extremes quickly"
+        ],
+        "example": {
+          "label": "Estimation Example",
+          "text": "Q: If 7x + 3 = 52, what is x? A) 6 B) 7 C) 8 D) 9 E) 10. Solve: 7x = 49, x = 7. Answer: (B)"
+        },
+        "tip": "Even if you can solve, estimate answer range first to catch calculation errors."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Multiple-Choice: Multiple Answers (Select All)",
+        "points": [
+          "Select all answers that satisfy the condition",
+          "No partial credit; all correct boxes checked = points, any error = 0",
+          "Typically 2–3 correct answers out of 5–7 choices",
+          "Verify each choice independently; don't assume pattern from first correct one"
+        ],
+        "example": {
+          "label": "Select-All Example",
+          "text": "Q: Which of the following are divisible by 3? (A) 9 (B) 15 (C) 22 (D) 27 (E) 30. Answer: (A), (B), (D), (E). Test: 9/3=3✓, 15/3=5✓, 22/3=7.33✗, 27/3=9✓, 30/3=10✓"
+        },
+        "tip": "Recheck your logic before clicking 'confirm'; all-or-nothing means zero tolerance for slips."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Numeric Entry (Fill-in-the-Blank)",
+        "points": [
+          "Type exact numerical answer; no multiple choices",
+          "~10% of Quant; often tests final calculation (last step of multi-step problem)",
+          "Units may or may not be requested; read carefully",
+          "Decimals and fractions both accepted; round only if instructed"
+        ],
+        "example": {
+          "label": "Numeric Entry Example",
+          "text": "Q: If a rectangle has length 5 and width 3, what is its area? Answer: Type 15 (no unit unless asked)"
+        },
+        "tip": "Double-check your arithmetic; there's no answer-choice check, only your calculation."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Numeric Entry: Rounding & Precision",
+        "points": [
+          "If the question says 'round to the nearest integer,' enter 7 not 7.0",
+          "If it says 'round to the nearest hundredth,' enter 3.14 (not 3.1 or 3.1400)",
+          "Some answers are exact (fractions): 1/2 is better than 0.5 if fractions accepted",
+          "Check the instructions; they change what you enter"
+        ],
+        "example": {
+          "label": "Rounding Precision",
+          "text": "2/3 ≈ 0.667. If asked for nearest hundredth: 0.67. If exact answer requested: 2/3"
+        },
+        "warn": "Rounding errors (entering 0.6667 instead of 0.67) will be marked wrong."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Data Interpretation Basics",
+        "points": [
+          "Read charts, tables, graphs, and extract quantitative information",
+          "~5% of Quant (1 question per section, often a multi-part set)",
+          "Typical formats: bar chart, line graph, scatterplot, table, two-way frequency table",
+          "Questions ask: trends, comparisons, calculations from the data"
+        ],
+        "example": {
+          "label": "Data Interpretation Sample",
+          "text": "Table: Sales by quarter. Q: Which quarter had the highest sales? A: Read max value from table. Q: What was the % increase from Q1 to Q2? A: (Q2-Q1)/Q1 × 100"
+        },
+        "tip": "Read axis labels and legends carefully; mislabeling is a common trap."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Arithmetic Fundamentals",
+        "points": [
+          "Order of operations: PEMDAS (Parentheses, Exponents, Multiply/Divide, Add/Subtract)",
+          "Fractions: addition (common denominator), multiplication (numerator × numerator, denominator × denominator)",
+          "Decimals: align decimal points when adding/subtracting; count places when multiplying",
+          "Percentages: part = (percent/100) × whole"
+        ],
+        "example": {
+          "label": "Percent Calculation",
+          "text": "30% of 200 = (30/100) × 200 = 0.3 × 200 = 60. Reverse: 60 is what % of 200? (60/200) × 100 = 30%"
+        },
+        "tip": "Master fraction ↔ decimal ↔ percent conversions; GRE loves mixing formats."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Algebra: Equations & Variables",
+        "points": [
+          "Solve for x: isolate variable on one side using inverse operations",
+          "Quadratic equations: factor, complete the square, or use quadratic formula",
+          "Inequalities: reverse inequality sign when multiplying/dividing by negative",
+          "Systems: substitute or eliminate; pick the faster method"
+        ],
+        "example": {
+          "label": "Quadratic Example",
+          "text": "x² - 5x + 6 = 0. Factor: (x-2)(x-3) = 0. Solutions: x = 2 or x = 3. Verify: 4 - 10 + 6 = 0 ✓"
+        },
+        "tip": "Always check solutions by substituting back into the original equation."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Geometry Essentials: Shapes & Area",
+        "points": [
+          "Rectangle: Area = length × width. Perimeter = 2(l + w)",
+          "Triangle: Area = (1/2) × base × height. Angles sum to 180°",
+          "Circle: Area = πr². Circumference = 2πr. Sector angle/360 = area/total area",
+          "Pythagorean theorem: a² + b² = c² for right triangles"
+        ],
+        "example": {
+          "label": "Right Triangle",
+          "text": "Sides 3, 4, and ?: 3² + 4² = 9 + 16 = 25 = 5². Hypotenuse = 5. Area = (1/2) × 3 × 4 = 6"
+        },
+        "tip": "Memorize common Pythagorean triples: (3,4,5), (5,12,13), (8,15,17), (7,24,25)."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Geometry: Volume & 3D",
+        "points": [
+          "Rectangular box: Volume = length × width × height. Surface area = 2(lw + lh + wh)",
+          "Cylinder: Volume = πr²h. Surface area = 2πr² + 2πrh",
+          "Sphere: Volume = (4/3)πr³. Surface area = 4πr²",
+          "Cone: Volume = (1/3)πr²h"
+        ],
+        "example": {
+          "label": "Cylinder Volume",
+          "text": "Radius 2, height 5: V = π × 2² × 5 = 20π ≈ 62.8"
+        },
+        "tip": "GRE rarely asks obscure formulas; these are the main ones. Memorize and practice."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Word Problems: Setting Up Equations",
+        "points": [
+          "Read twice: once for overall sense, again for specific numbers/unknowns",
+          "Define variables clearly: let x = unknown quantity",
+          "Translate English to math: 'is' → =, 'product' → ×, 'sum' → +, 'more than' → +",
+          "Solve and verify: plug answer back into the problem"
+        ],
+        "example": {
+          "label": "Distance-Rate-Time Example",
+          "text": "Tom travels 60 mph for 2 hours, then 40 mph for 3 hours. Total distance? D = 60(2) + 40(3) = 120 + 120 = 240 miles"
+        },
+        "tip": "Draw a diagram (distance line, work table, Venn diagram) for complex word problems."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Word Problems: Work & Rate",
+        "points": [
+          "Work rate: (1/time) = (1/rate). Combined: 1/total = 1/A + 1/B",
+          "If A does a job in 4 hours, rate = 1/4 job per hour",
+          "Two workers: combined rate = 1/4 + 1/6 = 3/12 + 2/12 = 5/12 job per hour",
+          "Time to finish together = 12/5 = 2.4 hours"
+        ],
+        "example": {
+          "label": "Two-Worker Problem",
+          "text": "Alice paints a room in 6 hours. Bob paints it in 4 hours. Together? Combined rate = 1/6 + 1/4 = 2/12 + 3/12 = 5/12. Time = 12/5 = 2.4 hours"
+        },
+        "tip": "Always use the reciprocal of time for rates; add rates, then take reciprocal of sum for combined time."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Probability & Counting",
+        "points": [
+          "Probability = (favorable outcomes) / (total outcomes). Range: 0 to 1",
+          "Counting: permutations (order matters) = n!/(n-r)!. Combinations (order doesn't) = n! / (r!(n-r)!)",
+          "AND rule: multiply probabilities (if independent). OR rule: add (mutually exclusive)",
+          "Conditional probability: P(A|B) = P(A and B) / P(B)"
+        ],
+        "example": {
+          "label": "Combination Example",
+          "text": "Pick 2 colors from 5. Combinations = 5!/(2!3!) = (5×4)/(2×1) = 10 ways. Order doesn't matter (red-blue = blue-red)"
+        },
+        "tip": "Distinguish permutations (order matters) from combinations; most GRE questions use combinations."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Statistics: Mean, Median, Mode, Range",
+        "points": [
+          "Mean (average): sum / count. Affected by outliers",
+          "Median (middle): arrange in order, pick middle value. Not affected by outliers",
+          "Mode (most frequent): most common value. May have none or multiple",
+          "Range: max - min. Measures spread"
+        ],
+        "example": {
+          "label": "Stats Example",
+          "text": "Data: 1, 2, 2, 5, 100. Mean = 110/5 = 22. Median = 2. Mode = 2. Range = 100 - 1 = 99. (Mean is skewed by outlier 100)"
+        },
+        "tip": "Median is more robust to outliers; use it when extreme values exist in the data."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Statistics: Standard Deviation & Variance",
+        "points": [
+          "Variance: average squared distance from mean",
+          "Standard deviation: square root of variance; measures spread in same units as data",
+          "Low SD = data clustered near mean. High SD = data spread out",
+          "GRE rarely asks for calculation; more about interpretation and comparison"
+        ],
+        "example": {
+          "label": "SD Interpretation",
+          "text": "Test A: mean 80, SD 5. Test B: mean 80, SD 15. Both have same average, but B's scores are more spread out"
+        },
+        "tip": "Understand that ±1 SD includes ~68% of data; ±2 SD includes ~95% (normal distribution)."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Calculator Tips & Pitfalls",
+        "points": [
+          "Use calculator for arithmetic, not strategy. Think first, calculate second",
+          "Common error: forgetting order of operations with calculator input",
+          "Estimation first: rough answer in head, then refine with calculator",
+          "Watch for decimal-point misplacement: 0.123 vs. 12.3 vs. 123"
+        ],
+        "example": {
+          "label": "Calculator Pitfall",
+          "text": "Compute (5 + 3) × 2. Wrong: 5 + 3 × 2 = 5 + 6 = 11. Right: (5+3) × 2 = 8 × 2 = 16. Use parentheses!"
+        },
+        "warn": "Calculator speeds computation but doesn't replace thinking; lazy calculation leads to careless errors."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Quant Scoring & Target",
+        "points": [
+          "Scale: 130 (0 correct) to 170 (all 40 correct); ~1 point per question",
+          "165+: ~36–38 correct. 155+: ~28–30 correct. 150+: ~24–25 correct",
+          "Adaptive: second section difficulty = feedback from first-section performance",
+          "Harder questions = more points each; perfection isn't required to score 160+"
+        ],
+        "example": {
+          "label": "Score Estimate",
+          "text": "35/40 correct = ~167. 32/40 correct = ~162. 30/40 correct = ~160. (Exact score depends on difficulty of correct answers)"
+        },
+        "tip": "Aim for 80%+ accuracy (32/40) to hit 160+; prioritize accuracy over speed."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Top 5 Quant Mistakes",
+        "points": [
+          "Misreading the question: 'which is NOT' vs. 'which IS' changes answer completely",
+          "Careless arithmetic: order of operations, decimal misplacement, sign errors",
+          "Skipping the setup: jumping to calculation without understanding the problem",
+          "Ignoring units: answer is 240 feet, not 240; units matter",
+          "Over-trusting calculator: GRE tests reasoning; easy to auto-pilot through wrong approach"
+        ],
+        "tip": "Re-read the question after solving; verify you answered what was asked.",
+        "warn": "Most Quant errors are careless, not conceptual. Slow down, double-check arithmetic."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Practice Strategy for Quant",
+        "points": [
+          "Week 1–2: drill by topic (arithmetic, algebra, geometry) untimed",
+          "Week 3–4: mixed-topic, timed sections (35 min per 20 q)",
+          "Week 5–6: full adaptive CAT mocks under test conditions",
+          "Review: categorize errors (concept, arithmetic, reading) and restudy weak topics"
+        ],
+        "example": {
+          "label": "Weekly Quant Schedule",
+          "text": "Mon: 10 QC (Quant Comparison). Tue: 8 word problems. Wed: 5 data interpretation. Thu–Fri: mixed drills. Sat: full section. Sun: review errors"
+        },
+        "tip": "Use official ETS PowerPrep+ for realistic difficulty; third-party prep may be harder or easier than real GRE."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Free GRE Quant Mocks & Resources",
+        "points": [
+          "ETS PowerPrep+ (free): https://www.ets.org/gre/revised_general/prepare",
+          "Khan Academy GRE Math: free video lessons on all topics (arithmetic to geometry)",
+          "GMAT Club forums: unofficial problems with detailed solutions",
+          "Magoosh GRE Math: 600+ practice problems with video explanations"
+        ],
+        "example": {
+          "label": "Free Resource Combo",
+          "text": "Monday: Khan Academy video on algebra. Tue–Thu: problem drills (GMAT Club or Magoosh free trial). Fri: timed section. Sat: full mock (PowerPrep)"
+        },
+        "tip": "Start with Khan Academy if you need conceptual review; then move to practice problems."
+      },
+      {
+        "emoji": "🔘",
+        "title": "GRE Quant: Final Tips",
+        "points": [
+          "Confidence = speed. Familiar concepts reduce cognitive load",
+          "Adaptive CAT: every question is harder/easier based on your prior performance",
+          "If you encounter a very hard section, you're likely doing well; don't panic",
+          "On test day: pace yourself, estimate before calculating, verify answers"
+        ],
+        "tip": "A high Quant score (160+) requires deep fluency in fundamentals; cramming formulas won't suffice.",
+        "warn": "Quant is skill-building; start prep 8–12 weeks before test if math is weak."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Next: Free GRE Mock Tests",
+        "points": [
+          "Take a full adaptive mock to measure Quant baseline",
+          "Review errors: concept gaps vs. careless mistakes",
+          "Drill weak topics 3–5 times per week for 4–6 weeks",
+          "Retake a full mock every 2 weeks to track improvement"
+        ],
+        "example": {
+          "label": "Mock Test Iteration",
+          "text": "Week 1: Baseline mock. Identify weak topic (e.g., geometry). Weeks 2–3: Daily geometry drills. Week 4: Mock 2 to retest. Repeat for next weak topic"
+        },
+        "tip": "Our Codex platform offers AI-powered Quant drills with step-by-step solutions. Start free today and score 165+!"
+      }
+    ]
+  },
+  "gre-writing": {
+    "id": "gre-writing",
+    "exam": "gre",
+    "examName": "GRE",
+    "section": "Analytical Writing",
+    "emoji": "✍️",
+    "title": "GRE Analytical Writing — Tips, Tricks & Strategy",
+    "summary": "Craft compelling essays to score 5.0+ on the Analyze an Issue task.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "What is GRE Analytical Writing (AWA)?",
+        "points": [
+          "One timed essay: 'Analyze an Issue.' 30 minutes to read prompt, plan, and write",
+          "Score: 0–6 (half-point increments). No multiple-choice; human and AI graders evaluate",
+          "~5% of total application weight (Verbal & Quant are 50% each)",
+          "Required for all GRE test-takers; few schools emphasize AWA beyond 'submitted'"
+        ],
+        "example": {
+          "label": "AWA Task",
+          "text": "Prompt: 'Some argue that technology isolates people; others say it connects them. Discuss both views and take a position.' Write ~400–500 words in 30 minutes"
+        },
+        "tip": "AWA is often overlooked by students; a strong essay (5.5–6) can stand out, especially for admission borderline cases."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Scoring Rubric: What Graders Look For",
+        "points": [
+          "Thesis clarity: do you take a clear, defensible stance? (Not neutral fence-sitting)",
+          "Evidence & examples: specific, relevant examples (not vague generalizations)",
+          "Reasoning: logical flow; how do your ideas connect? (Avoid non-sequiturs)",
+          "Writing quality: grammar, vocabulary, clarity, sentence variety"
+        ],
+        "example": {
+          "label": "Scoring Breakdown",
+          "text": "6 = insightful thesis + strong evidence + sophisticated reasoning. 5 = clear thesis + adequate evidence + good reasoning. 4 = adequate thesis + some evidence + okay reasoning. <4 = unclear thesis or weak evidence"
+        },
+        "tip": "Graders prioritize clear thesis and evidence; perfect grammar matters less than coherent argument."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Essay Structure: The 5-Paragraph Formula",
+        "points": [
+          "Paragraph 1 (Intro): acknowledge both viewpoints, state your thesis clearly (1–2 sentences)",
+          "Paragraphs 2–3 (Body): each presents one strand of your argument with specific example",
+          "Paragraph 4: counter-argument or limitation; show you've thought deeply",
+          "Paragraph 5 (Conclusion): restate thesis, summarize key points, broader implication"
+        ],
+        "example": {
+          "label": "Structure Template",
+          "text": "Intro: 'While both technology's isolating and connecting effects are valid, connection ultimately outweighs isolation because [thesis].' Body 1: Evidence of connection. Body 2: Response to isolation concern. Conclusion: Thesis + implications"
+        },
+        "tip": "5 paragraphs is a safe baseline; 4–6 paragraphs are all acceptable if ideas flow logically."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Crafting a Strong Thesis",
+        "points": [
+          "Take a clear side: 'agree,' 'disagree,' or 'nuanced position' (e.g., 'mostly agree but...')",
+          "Avoid fence-sitting: 'both views have merit' is weak; specify WHY your side is stronger",
+          "One sentence, if possible: readers (and graders) want immediate clarity",
+          "Establish scope: 'in modern education' is stronger than 'always and everywhere'"
+        ],
+        "example": {
+          "label": "Thesis Examples",
+          "text": "Weak: 'Technology has both positive and negative effects.' Strong: 'While technology creates some isolation risks, its capacity to facilitate global collaboration and access to information makes it a net positive force in society.'"
+        },
+        "tip": "Your thesis is your argument's skeleton; everything else hangs on it. Make it explicit."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Evidence: Specific Examples vs. Generalizations",
+        "points": [
+          "Use concrete examples: 'Social media platforms like LinkedIn enable professionals to collaborate across continents'",
+          "Avoid vague claims: 'Technology is great' has zero credibility",
+          "Personal experience is valid: 'I used video conferencing to work with a team across three countries'",
+          "Hypothetical scenarios: 'Imagine a student without internet access vs. one with unlimited bandwidth...'"
+        ],
+        "example": {
+          "label": "Example Strength",
+          "text": "Weak: 'Technology helps people.' Strong: 'The rise of telemedicine has allowed rural patients to consult specialist doctors without traveling hundreds of miles, reducing both cost and time barriers.'"
+        },
+        "tip": "Every claim needs at least one supporting example; graders downgrade essays that assert without evidence."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Building Your Argument: Logical Flow",
+        "points": [
+          "Claim → Evidence → Analysis (so what?). Don't just list examples; explain their relevance",
+          "Topic sentences: start each body paragraph with a claim, then support it",
+          "Transitions: 'Furthermore,' 'In contrast,' 'However,' 'To illustrate' guide readers through logic",
+          "Avoid logical fallacies: hasty generalization, false cause, ad hominem, strawman"
+        ],
+        "example": {
+          "label": "Logical Flow",
+          "text": "Claim: 'Technology enables global collaboration.' Evidence: 'Open-source software projects like Linux involve thousands of developers across continents.' Analysis: 'This demonstrates that technology removes geographic barriers, allowing diverse talent to pool expertise in ways previously impossible.'"
+        },
+        "tip": "After writing, read your essay aloud; if the logic feels choppy, add transitions or reorganize paragraphs."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Counter-Argument & Nuance",
+        "points": [
+          "Acknowledge the opposing view: show intellectual honesty and depth",
+          "Concede valid points: 'It is true that social media can foster addiction.' Then reframe",
+          "Distinguish your position: 'However, the benefits of information access outweigh addiction risks if users practice digital literacy'",
+          "Avoid strawmanning: don't misrepresent the other side"
+        ],
+        "example": {
+          "label": "Concession & Reframe",
+          "text": "Opposing view: 'Technology isolates people by replacing face-to-face interaction.' Your counter: 'While some isolation risk exists, technology enables isolated individuals (rural, disabled, homebound) to build communities they could never access offline. The net effect is greater connection.'"
+        },
+        "tip": "A 6-level essay engages both sides thoughtfully; a 5-level essay may ignore counter-arguments."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Writing Quality: Vocabulary & Clarity",
+        "points": [
+          "Vary sentence length: mix short + long sentences to maintain reader engagement",
+          "Use precise verbs: 'facilitate' is stronger than 'help'; 'exacerbate' vs. 'make worse'",
+          "Avoid jargon: clarity beats sophistication; if you use technical terms, define them",
+          "Proofread: minor grammar errors don't tank a score, but many errors do"
+        ],
+        "example": {
+          "label": "Vocabulary Upgrade",
+          "text": "Weak: 'Technology is good because it helps people.' Better: 'Technology democratizes access to knowledge and facilitates collaboration, fundamentally reshaping how people learn and work.'"
+        },
+        "tip": "You don't need $5 vocabulary; clear, direct writing beats flowery language with errors."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Common Writing Mistakes in AWA",
+        "points": [
+          "Lack of clear thesis: grader struggles to identify your position",
+          "Unsupported claims: assertions without examples collapse under scrutiny",
+          "Repetition: restating the same point in different words wastes space and bores readers",
+          "Tangents: straying from your main argument (e.g., discussing unrelated tech examples)"
+        ],
+        "example": {
+          "label": "Mistake Example",
+          "text": "Weak: 'Technology is used by many people in the world. Many people use it every day. It's important.' No thesis, no examples, no argument. Grader scores 2–3"
+        },
+        "warn": "Each paragraph must advance your thesis; if a paragraph doesn't, delete it or integrate it."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Time Management: 30 Minutes for an Essay",
+        "points": [
+          "Minutes 1–2: read prompt, identify both viewpoints, brainstorm position",
+          "Minutes 3–5: outline (thesis + 2–3 body points + counter-arg). Write on test booklet",
+          "Minutes 6–27: draft 4–5 paragraphs. Don't aim for perfect; aim for complete",
+          "Minutes 28–30: proofread. Fix glaring errors; don't rewrite entire sentences"
+        ],
+        "example": {
+          "label": "Time Allocation",
+          "text": "Outline (5 min) → Draft intro + 2 body paragraphs (10 min) → Draft counter + conclusion (7 min) → Proofread (3 min). Total: 25 min, 5 min buffer"
+        },
+        "tip": "Writing a complete, imperfect essay is better than a polished 3-paragraph essay. Graders reward substance."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Analyze an Issue: The Standard AWA Prompt",
+        "points": [
+          "Prompt structure: 'Some argue X. Others argue Y. Discuss both sides and state your view.'",
+          "Your job: present both perspectives fairly, then argue your position with evidence",
+          "Avoid the 'Analyze an Argument' task (that's a different essay, not on modern GRE)",
+          "Modern GRE has ONLY 'Analyze an Issue'; the other task is no longer used"
+        ],
+        "example": {
+          "label": "Issue Prompt Example",
+          "text": "Prompt: 'Some believe that increasing automation will lead to widespread unemployment; others argue it will create new job categories. Discuss both views and present your own.' Essay: Intro (both views) → Body (evidence for job creation) → Counter (valid unemployment concern) → Conclusion"
+        },
+        "tip": "Understand prompt types; the modern GRE only tests 'Analyze an Issue.' (No argument essays.)"
+      },
+      {
+        "emoji": "🔘",
+        "title": "Topic-Specific Examples: Tech, Education, Society",
+        "points": [
+          "Technology: social media, automation, privacy, AI, digital divide",
+          "Education: standardized testing, online learning, traditional vs. progressive education",
+          "Society: immigration, economic inequality, free speech, globalization",
+          "Keep examples recent and relevant; timeless examples (Shakespeare, historical figures) also work"
+        ],
+        "example": {
+          "label": "Example Arsenal",
+          "text": "For tech prompt: ChatGPT/AI example. For education: remote learning post-pandemic. For society: social movements using digital platforms. Combine personal observation + current events"
+        },
+        "tip": "Build a list of 5–10 strong, versatile examples before test day; you'll reuse them."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Advanced: Nuanced Positioning",
+        "points": [
+          "Don't just pick a side; pick an angle: 'X is true in context A but false in context B'",
+          "Example: 'Technology isolates people in developed nations but connects isolated communities in developing regions'",
+          "This shows sophisticated thinking; graders reward context-awareness",
+          "Stronger than flat agree/disagree"
+        ],
+        "example": {
+          "label": "Nuanced Thesis",
+          "text": "Weak: 'Technology connects people.' Better: 'Technology's impact on human connection is context-dependent: it enhances collaboration among dispersed professionals but may diminish face-to-face depth in social relationships. On balance, the gains outweigh the losses in modern society.'"
+        },
+        "tip": "A 6-level essay often uses conditional framing (if, when, where) that acknowledges complexity."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Avoiding Overconfidence: The Humility Factor",
+        "points": [
+          "Absolute language ('always,' 'never,' 'all') is risky; use 'often,' 'generally,' 'typically'",
+          "Hedge your claims slightly: 'It is reasonable to argue...' or 'One could contend...'",
+          "This doesn't weaken your essay; it shows intellectual maturity",
+          "Graders respect writers who acknowledge complexity"
+        ],
+        "example": {
+          "label": "Balanced Language",
+          "text": "Weak: 'Technology always isolates people.' Better: 'Technology often creates isolation in social contexts, particularly when it replaces face-to-face interaction without intentional effort to maintain connection.'"
+        },
+        "tip": "Strong writers qualify claims; weak writers make sweeping statements they can't defend."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Proofreading Under Time Pressure",
+        "points": [
+          "Scan for the BIG issues first: misplaced modifiers, subject-verb disagreement, run-on sentences",
+          "Grammar: fix obvious errors (spelling, tense consistency, pronoun reference)",
+          "Don't obsess: minor errors (a/an, comma placement) don't tank your score",
+          "If you're unsure of a word's spelling, change it to a word you're confident about"
+        ],
+        "example": {
+          "label": "Priority Fixes",
+          "text": "High priority: 'The team were' → 'The team was' (subject-verb). Medium: comma splice. Low: 'utilize' vs. 'use' (either is fine). Skip low-priority items if time is tight"
+        },
+        "tip": "One final pass for clarity: does each sentence make sense? If not, simplify it."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Sample High-Scoring Essay Structure",
+        "points": [
+          "Intro (3–4 sentences): both views + clear thesis",
+          "Body 1 (5–7 sentences): claim + specific example + why it matters",
+          "Body 2 (5–7 sentences): second supporting claim + example + analysis",
+          "Counter-argument (3–4 sentences): concede opposing view, reframe your position",
+          "Conclusion (3–4 sentences): restate thesis, bigger implications, memorable closing"
+        ],
+        "example": {
+          "label": "Full Essay Skeleton",
+          "text": "Intro: ~50 words. Body 1: ~100 words. Body 2: ~100 words. Counter: ~60 words. Conclusion: ~50 words. Total: ~360 words (lean) to ~550 words (robust). Both are acceptable"
+        },
+        "tip": "Word count ranges: 350–600 words. More isn't better; substance is what counts."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Grading Process: Human + AI Evaluation",
+        "points": [
+          "Both human rater and AI score the essay. If scores differ by >1 point, a second human rates it",
+          "Final score is average of two human scores (or human + AI average)",
+          "Graders scan for: thesis clarity (immediately visible), evidence quality, reasoning coherence",
+          "Writing quality matters for score, but logic matters more"
+        ],
+        "example": {
+          "label": "Scoring Scenario",
+          "text": "Human scores 5.5. AI scores 5.0. Final = 5.25. If they scored 5.5 and 4.0 (>1 pt diff), second human rates; final = (5.5 + 5.0) / 2 or (5.5 + 4.0) / 2"
+        },
+        "tip": "Graders have read thousands of essays; they spot a strong thesis and solid evidence instantly."
+      },
+      {
+        "emoji": "🔘",
+        "title": "What Score Do You Need?",
+        "points": [
+          "Top schools: 5.0–6.0 competitive (5.0 is solid; 5.5+ is strong)",
+          "Mid-tier schools: 4.5+ sufficient; AWA is often secondary",
+          "Many schools ignore AWA entirely; focus on Verbal + Quant for admissions",
+          "But a 5.5–6 essay can strengthen a borderline application"
+        ],
+        "example": {
+          "label": "Score Interpretations",
+          "text": "6.0: Exceptionally articulate, insightful, well-developed. 5.0: Well-reasoned, clear, competent. 4.0: Adequate but weak. <4: Problematic logic or writing."
+        },
+        "tip": "A 5.0+ is your target. Spend your prep time on Verbal + Quant first; they carry more weight."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Practice Strategy for AWA",
+        "points": [
+          "Week 1–2: read 3–5 sample essays (ETS official samples); identify strong vs. weak essays",
+          "Week 3–4: write 2–3 untimed essays; focus on structure and evidence",
+          "Week 5: write 2–3 timed essays (30 min); build pacing stamina",
+          "Week 6: review error patterns; refine your template (intro, 2 bodies, counter, conclusion)"
+        ],
+        "example": {
+          "label": "AWA Practice Schedule",
+          "text": "Monday: Read 1 sample essay + analyze. Wednesday: Untimed essay. Friday: Timed essay (30 min). Sunday: Review + refine outline template"
+        },
+        "tip": "AWA requires less prep than Verbal/Quant (since it's lower-stakes), but consistency matters."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Free AWA Resources",
+        "points": [
+          "ETS Official GRE Guide: includes sample prompts and scored essays with grader comments",
+          "ETS website: https://www.ets.org/gre/revised_general/prepare → writing topics + samples",
+          "Reddit r/GRE: community shares essays for feedback",
+          "Your grad school advisor or writing center: free feedback on practice essays"
+        ],
+        "example": {
+          "label": "Free Resource Path",
+          "text": "Read ETS samples (understand scoring). Write 1–2 practice essays. Share on r/GRE for peer feedback. Refine based on comments. Repeat 2–3 cycles"
+        },
+        "tip": "Don't overthink AWA; a competent 4.5–5.0 essay is sufficient for most programs."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Top Mistakes in AWA Essays",
+        "points": [
+          "Fence-sitting: 'Both sides are valid' without taking a stance → automatic 4.0 cap",
+          "No examples: abstract arguments without concrete evidence → graders downgrade",
+          "Unbalanced essay: spend 90% of space on one side, ignore the other",
+          "Unclear thesis: grader can't identify your position → confusion = low score"
+        ],
+        "example": {
+          "label": "Mistake Impact",
+          "text": "Mistake: Spend 3 paragraphs on side A, 1 sentence on side B, no clear position. Result: 3.5–4.0 (incomplete engagement). Fix: acknowledge both sides evenly, then argue your position = 4.5–5.5"
+        },
+        "warn": "Graders penalize incomplete engagement with the prompt. Address both viewpoints."
+      },
+      {
+        "emoji": "🔘",
+        "title": "GRE AWA: Final Tips",
+        "points": [
+          "Confidence in your structure = faster writing. Memorize your 5-paragraph template",
+          "Examples are your essay's skeleton; without them, your argument collapses",
+          "It's okay if your writing isn't literary; clear and logical beats flowery and confusing",
+          "On test day: read prompt carefully, brainstorm for 2 min, outline for 3 min, write 20 min"
+        ],
+        "tip": "Most students underestimate AWA then scramble at the end. Practice early; it pays off.",
+        "warn": "A sloppy essay (typos, unclear logic, weak examples) scores 3–4. Invest time in one good draft."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Next: Integrated Prep Plan",
+        "points": [
+          "Week 1–3: Verbal drills + 1 AWA practice essay",
+          "Week 4–5: Quant drills + 1 more AWA essay",
+          "Week 6–7: Full practice tests (Verbal + Quant + AWA together)",
+          "Week 8: Final mock + targeted review based on weakest section"
+        ],
+        "example": {
+          "label": "8-Week Plan",
+          "text": "Weeks 1–3: Verbal 60%, Quant 30%, AWA 10%. Weeks 4–5: Quant catch-up. Weeks 6–7: Balanced practice tests. Week 8: Final mock + final review"
+        },
+        "tip": "Our Codex platform offers timed AWA prompts, instant feedback, and AI scoring. Start free today and get 5.0+ on test day!"
+      }
+    ]
+  }
+}

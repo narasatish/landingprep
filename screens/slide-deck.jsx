@@ -69,11 +69,12 @@
     );
   }
 
-  function Lessons({ onNav }) {
+  function Lessons({ onNav, embedded }) {
     const plan = window.LP_SLIDE_DECK_PLAN || [];
     const decks = window.LP_SLIDE_DECKS || {};
     const [openId, setOpenId] = useState(null);
     useEffect(() => {
+      if (embedded) return;
       try {
         document.title = "Free Exam Prep Lessons — Tips, Tricks & Strategy Slides | LandingPrep";
         const m = document.querySelector('meta[name="description"]');
@@ -81,19 +82,18 @@
       } catch (e) {}
     }, []);
 
-    if (openId && decks[openId]) {
-      return (<><window.LP_TopBar current="lessons" onNav={onNav} /><main className="tools-shell"><DeckViewer deck={decks[openId]} onExit={() => setOpenId(null)} /></main><window.LP_Footer /></>);
-    }
-    return (
-      <>
-        <window.LP_TopBar current="lessons" onNav={onNav} />
-        <main className="tools-shell">
-          <header className="tools-hero">
-            <h1>📊 Exam Prep Lessons</h1>
-            <p>Quick, visual slide lessons — tips, tricks and traps for each section. Learn the strategy here, then practise with our free mocks.</p>
-          </header>
+    const body = (openId && decks[openId])
+      ? <main className="tools-shell tools-shell-wide"><DeckViewer deck={decks[openId]} onExit={() => setOpenId(null)} /></main>
+      : (
+        <main className="tools-shell tools-shell-wide">
+          {!embedded && (
+            <header className="tools-hero">
+              <h1>📊 Exam Prep Lessons</h1>
+              <p>Quick, visual slide lessons — tips, tricks and traps for each section. Learn the strategy here, then practise with our free mocks.</p>
+            </header>
+          )}
           {plan.map((ex) => (
-            <div className="tool-card" key={ex.exam}>
+            <div className="tool-card lesson-group" key={ex.exam}>
               <h3>{ex.emoji} {ex.examName}</h3>
               <div className="deck-grid">
                 {ex.decks.map((d, di) => {
@@ -110,9 +110,10 @@
             </div>
           ))}
         </main>
-        <window.LP_Footer />
-      </>
-    );
+      );
+
+    if (embedded) return body;
+    return (<><window.LP_TopBar current="lessons" onNav={onNav} />{body}<window.LP_Footer /></>);
   }
 
   window.LP_Lessons = Lessons;

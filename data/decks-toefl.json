@@ -1,0 +1,1232 @@
+{
+  "toefl-reading": {
+    "id": "toefl-reading",
+    "exam": "toefl",
+    "examName": "TOEFL iBT",
+    "section": "Reading",
+    "emoji": "📖",
+    "title": "TOEFL Reading — Tips, Tricks & Strategy",
+    "summary": "Master academic reading comprehension: passage types, question styles, time management, and proven strategies to boost your score.",
+    "slides": [
+      {
+        "emoji": "📖",
+        "title": "What is TOEFL Reading?",
+        "points": [
+          "Academic reading comprehension section of the TOEFL iBT exam",
+          "Tests your ability to understand English academic texts and lectures",
+          "Part of an integrated, four-skill test for international students",
+          "Widely accepted by universities, colleges, and institutions worldwide"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Reading Section Format & Timing",
+        "points": [
+          "3 passages, each 250–350 words long",
+          "10 questions per passage, 30 questions total",
+          "54 minutes total time (18 minutes per passage)",
+          "Question types: single-select, multiple-select, fill-in-a-table, insert-sentence"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "TOEFL Reading Scoring",
+        "points": [
+          "Scored out of 30 points (raw: 0–30)",
+          "Each correct answer = 1 point on average",
+          "Multiple-select and table-completion worth more (2–3 points each)",
+          "No penalty for incorrect answers; guess on time pressure"
+        ]
+      },
+      {
+        "emoji": "📌",
+        "title": "Understanding Passage Types",
+        "points": [
+          "Social sciences: history, anthropology, business, education topics",
+          "Natural sciences: biology, physics, chemistry, geology, environment",
+          "Humanities: art, music, literature, philosophy, culture",
+          "All passages are factual, neutral, academic in tone"
+        ]
+      },
+      {
+        "emoji": "❓",
+        "title": "Main Idea & Purpose Questions",
+        "points": [
+          "Identify the central idea or primary purpose of the passage",
+          "Read the first and last sentences carefully for main idea",
+          "Look for topic sentence in opening paragraphs",
+          "Eliminate answers that focus on minor details only"
+        ],
+        "tip": "Main idea questions often use phrasing: 'The passage is mainly about' or 'The primary purpose of the passage is to'.",
+        "warn": "Do not confuse a supporting detail with the main idea. Reread the entire passage if unsure."
+      },
+      {
+        "emoji": "❓",
+        "title": "Factual Information & Detail Questions",
+        "points": [
+          "Answer based on explicit information in the passage",
+          "Look for specific facts: numbers, names, dates, findings",
+          "Use keywords from the question to locate the relevant paragraph",
+          "Paraphrase is common; answer may reword the passage text"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Q: According to the passage, when did the process begin? A: Find the paragraph mentioning time, match keywords like 'began', 'started', or 'in [year]'."
+        },
+        "warn": "Watch for close but incorrect alternatives. The passage must directly support the answer."
+      },
+      {
+        "emoji": "❓",
+        "title": "Inference Questions",
+        "points": [
+          "Infer what the author implies but does not directly state",
+          "Use evidence from the passage to support your inference",
+          "Connect facts or statements that suggest a conclusion",
+          "Inference is logical, not a wild guess from background knowledge"
+        ],
+        "tip": "Look for phrases: 'The passage implies', 'It can be inferred', 'suggests that'.",
+        "warn": "Inferences must be supported by the text. Do not use outside knowledge to answer."
+      },
+      {
+        "emoji": "❓",
+        "title": "Vocabulary in Context Questions",
+        "points": [
+          "Determine the meaning of a word as used in the passage",
+          "Read the surrounding sentences for clues (synonyms, definitions, examples)",
+          "Consider different word meanings; use context to narrow down",
+          "Often tested on academic or technical terms with multiple meanings"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Word 'critical' in 'The critical factor was timing' likely means 'important', not 'negative'. Use context clues."
+        }
+      },
+      {
+        "emoji": "❓",
+        "title": "Reference & Pronoun Questions",
+        "points": [
+          "Identify what a pronoun (he, she, it, they, this, that) refers to",
+          "Look backward in the text for the nearest appropriate noun",
+          "Ensure the pronoun agrees in number and context with the noun",
+          "Test your choice by substituting the noun for the pronoun"
+        ],
+        "tip": "Pronouns usually refer to the most recently mentioned noun that matches in number (singular/plural).",
+        "warn": "Don't assume the nearest noun is always correct. Read for logical sense."
+      },
+      {
+        "emoji": "❓",
+        "title": "Rhetorical Purpose Questions",
+        "points": [
+          "Identify why the author included a specific sentence or example",
+          "Consider the function: support main idea, provide evidence, give contrast, illustrate",
+          "Reread the context before and after the referenced text",
+          "Questions often ask: 'Why does the author mention...?'"
+        ],
+        "tip": "Examples are usually included to support or illustrate a point. Look for the claim being supported."
+      },
+      {
+        "emoji": "❓",
+        "title": "Sentence Insertion (Insert Text) Questions",
+        "points": [
+          "Choose the best location in the passage to insert a given sentence",
+          "Read the provided sentence and find the logical position",
+          "Check for pronoun reference and topic flow",
+          "Ensure the inserted sentence connects smoothly with surrounding text"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "If inserting a sentence with 'However', it should contrast with the previous sentence. Check logical flow."
+        },
+        "warn": "Smooth transition is key. Wrong placement breaks paragraph coherence and logic."
+      },
+      {
+        "emoji": "❓",
+        "title": "Fill-in-a-Table (Summary) Questions",
+        "points": [
+          "Select 3 or more correct answers from 6–7 options to complete a table or summary",
+          "Distinguish main ideas from supporting details",
+          "Some answers may be true but not directly support the passage's main points",
+          "The table often organizes ideas by category, comparison, or chronology"
+        ],
+        "tip": "Look at the table structure first. It shows you what categories or relationships the passage covers.",
+        "warn": "Correct but irrelevant answers are included. Match answers to the table's purpose, not just accuracy."
+      },
+      {
+        "emoji": "❓",
+        "title": "Multiple-Select Questions",
+        "points": [
+          "Choose 2 or 3 correct answers from 4 options",
+          "All correct answers must be directly supported by the passage",
+          "One answer is typically plausible but incorrect or contradicted by text",
+          "Partial credit may apply (check test instructions)"
+        ],
+        "tip": "Read each option against the passage. Multiple-correct questions reward precision.",
+        "warn": "Eliminate answers carefully. One wrong choice means zero points for that question on some tests."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Time Management Strategy",
+        "points": [
+          "Allocate 18 minutes per passage (54 minutes ÷ 3 passages)",
+          "Read the passage first (6–7 minutes), then answer questions (10–11 minutes)",
+          "Mark difficult questions and return if time permits",
+          "Spend more time on high-point questions (multiple-select, tables)"
+        ],
+        "tip": "Skimming entire passage first helps you locate information faster when answering questions."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Pre-Reading & Skimming Techniques",
+        "points": [
+          "Read the first sentence of each paragraph (topic sentences)",
+          "Scan for paragraph structure: main claim followed by support",
+          "Notice transitions (however, therefore, similarly) that signal relationships",
+          "Identify the passage's overall organization before diving into questions"
+        ],
+        "tip": "Active skimming takes 5–6 minutes and gives you a mental map of the passage, speeding up question-answering."
+      },
+      {
+        "emoji": "🔑",
+        "title": "Keyword Strategy for Locating Answers",
+        "points": [
+          "Extract key words from each question before searching the passage",
+          "Look for the same words or synonyms in the passage",
+          "Use the find-and-replace feature (Ctrl+F) if testing on computer",
+          "Narrow your search to a specific paragraph; read it carefully"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Q: 'According to the passage, what caused the extinction?' Keywords: extinction, caused. Search passage for these terms."
+        }
+      },
+      {
+        "emoji": "📝",
+        "title": "Effective Note-Taking During Reading",
+        "points": [
+          "Write brief notes on the passage structure (intro, main points, conclusion)",
+          "Record paragraph topics next to paragraph numbers",
+          "Jot down key figures, dates, names as you encounter them",
+          "Use abbreviations and symbols (→ for 'caused', + for 'added', etc.)"
+        ],
+        "tip": "Notes should take <2 minutes total and fit in margins. They're a safety net, not a complete summary."
+      },
+      {
+        "emoji": "❌",
+        "title": "Top Reading Mistakes & Traps",
+        "points": [
+          "Confusing main idea with a supporting detail",
+          "Using background knowledge instead of passage evidence",
+          "Misreading similar answer choices; read all options carefully",
+          "Running out of time due to slow reading or rereading entire passage"
+        ],
+        "warn": "Many wrong answers are plausible. Eliminate based on passage support, not on what 'sounds right'."
+      },
+      {
+        "emoji": "🚩",
+        "title": "Common Distractor Patterns",
+        "points": [
+          "Correct in general knowledge, but not stated in this passage",
+          "Opposite of the correct answer (tricky for inference questions)",
+          "Too narrow: mentions part of the idea, not the full picture",
+          "Too broad: general statement that doesn't match the passage's focus"
+        ],
+        "tip": "When unsure, eliminate distractors first. Narrow the field before selecting an answer."
+      },
+      {
+        "emoji": "📚",
+        "title": "Academic Vocabulary to Know",
+        "points": [
+          "Common academic terms: hypothesis, theory, mechanism, facilitate, deteriorate, adapt, evolve",
+          "Transition words: moreover, conversely, subsequently, whereas, albeit",
+          "Comparison words: analogous, parallel, similar, divergent, distinct",
+          "Cause-effect: precipitate, consequence, attribute, stem from, yield"
+        ],
+        "tip": "Learn word families: evolve, evolution, evolving. Academic texts repeat related terms."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Worked Example: Science Passage",
+        "points": [
+          "Passage: 'Photosynthesis is the process by which plants convert sunlight into chemical energy...'",
+          "Main idea Q: Answer focuses on the overall process, not just chlorophyll or glucose details.",
+          "Detail Q: 'According to the passage, what do plants use as an energy source?' Answer: sunlight (directly stated).",
+          "Inference Q: 'What can be inferred about plants in shade?' Answer: Logic from passage that light is essential."
+        ],
+        "example": {
+          "label": "Strategy",
+          "text": "Locate key term in passage (photosynthesis) → Read around it → Match to question → Eliminate wrong answers."
+        }
+      },
+      {
+        "emoji": "🎬",
+        "title": "Worked Example: History Passage",
+        "points": [
+          "Passage: 'The Renaissance began in Italy in the 14th century due to trade and wealth accumulation.'",
+          "Detail Q: 'When did the Renaissance begin?' Answer: 14th century (directly stated).",
+          "Inference Q: 'Why did the Renaissance likely start in Italy?' Answer: Trade and wealth accumulation (reasons given).",
+          "Multiple-select: Identify 3 factors that led to the Renaissance from passage evidence."
+        ],
+        "tip": "History passages often explain causes, effects, and sequences. Track timelines and causal chains."
+      },
+      {
+        "emoji": "✅",
+        "title": "Pre-Test Checklist",
+        "points": [
+          "Have you read academic articles or journals in the past month?",
+          "Can you quickly identify main ideas in unfamiliar texts?",
+          "Do you know 50+ high-frequency academic vocabulary words?",
+          "Can you complete a 18-minute passage with 10 questions in one sitting?"
+        ],
+        "tip": "If any answer is no, spend 1–2 weeks on targeted practice before test day."
+      },
+      {
+        "emoji": "💡",
+        "title": "Advanced: Scanning for Patterns",
+        "points": [
+          "Problem-solution passages: introduction of problem, followed by proposed solutions, evaluation",
+          "Cause-effect passages: events are linked by causation; note the sequence",
+          "Comparison passages: two or more items contrasted; watch for 'however', 'unlike', 'differs'",
+          "Chronological passages: events ordered by time; track dates and 'before', 'after'"
+        ],
+        "tip": "Recognizing passage structure helps you predict where the author is going and answer questions faster."
+      },
+      {
+        "emoji": "🏆",
+        "title": "Target Scores & Practice Plan",
+        "points": [
+          "Beginner (0–19): Read 2–3 academic articles weekly, focus on main idea and basic detail questions",
+          "Intermediate (20–24): Practice all question types, time yourself, review errors daily",
+          "Advanced (25–30): Aim for 100% accuracy on detail and vocabulary, speed up to 15 minutes per passage"
+        ],
+        "tip": "Use official TOEFL practice tests (ets.org). Official material is the best predictor of test performance."
+      },
+      {
+        "emoji": "📱",
+        "title": "Reading on Computer vs. Paper",
+        "points": [
+          "TOEFL iBT is delivered on computer; practice reading digitally",
+          "Use highlighter tool on screen to mark key sentences",
+          "No scrolling back to earlier passages; read each passage once and move on",
+          "Adapt to screen brightness and font size; practice in similar conditions"
+        ],
+        "warn": "Screen fatigue is real. Practice in 54-minute blocks to build stamina for test day."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Next: Practice & Mock Tests",
+        "points": [
+          "Take full-length TOEFL reading simulations (54 minutes, 3 passages)",
+          "Review every wrong answer: why was it wrong, what did you miss?",
+          "Track your weak areas: main idea, inference, vocabulary, time management",
+          "Use Syllab's free TOEFL reading mock tests to build confidence and accuracy"
+        ],
+        "example": {
+          "label": "Action",
+          "text": "Complete 3 full mock tests this week. Spend 10 minutes reviewing errors after each test."
+        }
+      }
+    ]
+  },
+  "toefl-listening": {
+    "id": "toefl-listening",
+    "exam": "toefl",
+    "examName": "TOEFL iBT",
+    "section": "Listening",
+    "emoji": "🎧",
+    "title": "TOEFL Listening — Tips, Tricks & Strategy",
+    "summary": "Master academic listening: conversation and lecture formats, question types, note-taking strategies, and proven techniques to maximize your score.",
+    "slides": [
+      {
+        "emoji": "🎧",
+        "title": "What is TOEFL Listening?",
+        "points": [
+          "Academic listening comprehension section of the TOEFL iBT exam",
+          "Tests your ability to understand English in academic and campus settings",
+          "Audio is played once; you cannot rewind or replay during the test",
+          "Uses realistic university dialogues and lectures with natural accents"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Listening Section Format & Timing",
+        "points": [
+          "3–4 conversations (3 minutes each) and 2–3 lectures (5–6 minutes each)",
+          "Each conversation has 5 questions; each lecture has 6 questions",
+          "Total: 28–34 questions in 41–56 minutes of actual listening plus answering",
+          "Questions appear on screen after each conversation or lecture"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "TOEFL Listening Scoring",
+        "points": [
+          "Scored out of 30 points (raw: 0–30)",
+          "Each question worth approximately 1 point",
+          "Multiple-select and replay-able sections worth slightly more",
+          "No penalty for incorrect answers; answer all questions before time expires"
+        ]
+      },
+      {
+        "emoji": "👥",
+        "title": "Conversation Types & Topics",
+        "points": [
+          "Student-professor office hours: course advice, assignment clarification, grade concerns",
+          "Student-staff interactions: registration, housing, financial aid, campus services",
+          "Settings: campus buildings, registrar's office, student center, dorm, library",
+          "Tone: friendly, informative, often with a problem or request for help"
+        ]
+      },
+      {
+        "emoji": "🎓",
+        "title": "Lecture Types & Topics",
+        "points": [
+          "Science lectures: biology, chemistry, physics, environmental science, astronomy",
+          "Social science lectures: history, psychology, economics, anthropology, sociology",
+          "Humanities lectures: literature, philosophy, art history, music, cultural studies",
+          "Lectures include main ideas, supporting details, examples, and sometimes discussion"
+        ]
+      },
+      {
+        "emoji": "❓",
+        "title": "Main Idea & Purpose Questions",
+        "points": [
+          "Identify the primary topic or purpose of the conversation or lecture",
+          "Listen for what the speaker emphasizes or returns to repeatedly",
+          "Main idea is usually stated early; later details support it",
+          "Lectures often open with 'Today we'll discuss...' or 'The topic is...'"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Lecture: 'Today we're exploring photosynthesis. Photosynthesis is the process... Let me explain why it matters...' Main idea: What photosynthesis is and why it's important."
+        },
+        "tip": "If you miss the opening, listen for repetition. The speaker will restate the main idea."
+      },
+      {
+        "emoji": "❓",
+        "title": "Detail Questions",
+        "points": [
+          "Answer based on specific information: facts, numbers, reasons, outcomes",
+          "Listen for supporting examples and explanations after the main point",
+          "Speaker may list details: 'First... Second... Finally...' or 'For example...'",
+          "Details are often harder to catch; good note-taking helps here"
+        ],
+        "tip": "When you hear 'for instance' or 'in other words', the speaker is likely providing a detail or clarification."
+      },
+      {
+        "emoji": "❓",
+        "title": "Inference Questions",
+        "points": [
+          "Infer meaning from tone, emphasis, and what is NOT directly stated",
+          "Pay attention to the speaker's attitude: enthusiastic, skeptical, cautious, confident",
+          "Implied information from the context: 'The student didn't show up' implies absence or failure",
+          "Inference in listening relies heavily on speaker tone and emphasis"
+        ],
+        "tip": "Listen to how things are said, not just what. Sarcasm, hesitation, and emphasis carry meaning.",
+        "warn": "Inferences are logical guesses based on audio cues, not assumptions from outside knowledge."
+      },
+      {
+        "emoji": "❓",
+        "title": "Function Questions",
+        "points": [
+          "Identify why the speaker said something: to clarify, give an example, change direction, summarize",
+          "Listen for: 'Let me explain', 'For instance', 'Actually', 'In conclusion', 'However'",
+          "Function questions ask: 'Why does the speaker mention...?' or 'What does the speaker mean by...?'",
+          "Common functions: explain, exemplify, contradict, summarize, persuade"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Speaker: 'That's one approach, but I think there's a better way...' Function: Introduce an alternative or contradict the previous point."
+        }
+      },
+      {
+        "emoji": "❓",
+        "title": "Attitude & Tone Questions",
+        "points": [
+          "Identify the speaker's attitude: positive, negative, neutral, surprised, skeptical",
+          "Listen for word choice: 'amazingly', 'unfortunately', 'interestingly'",
+          "Tone is conveyed through voice speed, pitch, and emphasis",
+          "A professor's hesitation or sarcasm reveals attitude toward a topic"
+        ],
+        "tip": "When answers include emotional words (frustrated, fascinated, dismissive), listen for matching tone in audio.",
+        "warn": "The speaker's attitude toward one topic does not necessarily reflect attitude toward another."
+      },
+      {
+        "emoji": "❓",
+        "title": "Sequence & Organization Questions",
+        "points": [
+          "Understand the order of events, steps in a process, or flow of ideas",
+          "Listen for time markers: 'first', 'next', 'after that', 'finally', 'then'",
+          "Lectures often explain a process step-by-step or in chronological order",
+          "Conversations reveal sequence of what happened or what will happen"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Lecture: 'The water cycle has three main steps: evaporation, condensation, and precipitation. First, evaporation occurs...'"
+        }
+      },
+      {
+        "emoji": "❓",
+        "title": "Multiple-Select Questions",
+        "points": [
+          "Choose 2 or 3 correct answers from 4–5 options",
+          "All correct answers must be supported by the audio",
+          "One plausible-sounding answer is typically wrong",
+          "Questions often ask: 'Which of the following are mentioned...?'"
+        ],
+        "tip": "Listen for specific supporting points. Eliminate answers that were not mentioned or are contradicted."
+      },
+      {
+        "emoji": "📝",
+        "title": "Note-Taking Strategy for Listening",
+        "points": [
+          "Write short phrases, not full sentences (too slow)",
+          "Use abbreviations: Prof = professor, bio = biology, w/ = with, b/c = because",
+          "Symbol system: → (leads to), ↑ (increases), X (problem), ✓ (good point)",
+          "Organize by topic: main idea at top, details below, indented"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Note: 'Photosyn = plants convert light → chemical energy. Steps: 1) light reaction, 2) dark reaction.' Brief, scannable, complete."
+        },
+        "tip": "Review your notes immediately after the audio ends. If something is unclear, jot a clarification."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Active Listening Techniques",
+        "points": [
+          "Predict: before each audio, read the questions if available and anticipate the topic",
+          "Engage: Mentally summarize main points as the speaker talks",
+          "Verify: Compare what you predict with what you hear",
+          "Recap: After the audio, write a one-sentence summary of the main idea"
+        ],
+        "tip": "Active listening prevents mind-wandering. Engage your brain from sentence one."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Handling Unfamiliar Accents & Speech Rates",
+        "points": [
+          "TOEFL audio features diverse accents (British, Australian, North American, Indian)",
+          "Speakers vary pace and clarity; some are faster, some slower",
+          "Context clues help: if you miss a word, listen to surrounding words",
+          "Most TOEFL audio is clear; poor audio quality is not a major issue"
+        ],
+        "tip": "Practice listening to diverse English accents outside the test (YouTube, podcasts, Ted Talks) to build ear adaptability.",
+        "warn": "Do not assume you misheard. Trust your ears and move forward; dwelling slows you down."
+      },
+      {
+        "emoji": "❌",
+        "title": "Top Listening Mistakes & Traps",
+        "points": [
+          "Daydreaming: mind wanders during a lecture; miss entire segments",
+          "Fixating on one word: getting stuck on an unknown word and losing the rest of the audio",
+          "Overwriting notes: trying to transcribe too much, hands cramping, missing content",
+          "Answering too fast: selecting an answer based on the first matching word, not full context"
+        ],
+        "warn": "If you miss something, let it go. Focusing on what's past wastes energy on what's ahead."
+      },
+      {
+        "emoji": "🚩",
+        "title": "Common Distractor Patterns",
+        "points": [
+          "Mentioned in audio but not relevant to the question asked",
+          "Opposite of what the speaker said (common for inference questions)",
+          "Partially correct: captures part of the idea but misses the full picture",
+          "Requires outside knowledge not in the audio (trap for educated guesses)"
+        ],
+        "tip": "Eliminate answers that were not explicitly or implicitly stated in the audio."
+      },
+      {
+        "emoji": "🎓",
+        "title": "Academic Listening Vocabulary",
+        "points": [
+          "Transition phrases: furthermore, in addition, on the other hand, as a result, in conclusion",
+          "Lecture markers: 'The key point is', 'This is important', 'Let me clarify', 'Don't forget that'",
+          "Expressions: 'Come to my office hours', 'Let me know by Friday', 'I'll send you the reading list'",
+          "Hedging language: 'I think', 'It seems', 'It could be', 'possibly', 'apparently'"
+        ],
+        "tip": "Speakers use hedging when uncertain. Pay attention: certainty vs. speculation matters for inference."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Worked Example: Conversation",
+        "points": [
+          "Audio: Student asks professor about a missed class and upcoming exam.",
+          "Main idea Q: Student seeking guidance on makeup work and exam preparation.",
+          "Detail Q: 'What is the exam date?' Listen for the professor's specific response.",
+          "Function Q: 'Why does the student mention missing class?' To explain absence and request help.",
+          "Inference Q: 'What can you infer about the student's attitude?' Audio shows concern, diligence."
+        ],
+        "example": {
+          "label": "Note-taking",
+          "text": "Student missed class. Exam next Fri. Prof says review Ch 5-7, come to office hours Thurs. Student seems worried but motivated."
+        }
+      },
+      {
+        "emoji": "🎬",
+        "title": "Worked Example: Lecture",
+        "points": [
+          "Audio: Biology lecture on cellular respiration, phases, and energy production.",
+          "Main idea: Cells break down glucose to produce ATP (energy) in multiple stages.",
+          "Detail Q: 'What are the three main stages?' Glycolysis, Krebs cycle, electron transport chain.",
+          "Inference Q: 'Why does the professor emphasize ATP production?' Shows importance for cell function.",
+          "Multiple-select: Which statements about glycolysis are mentioned? (Identify correct answers from audio.)"
+        ],
+        "tip": "Science lectures often explain process. Draw diagrams or flow charts in your notes to track steps."
+      },
+      {
+        "emoji": "✅",
+        "title": "Pre-Test Listening Habits",
+        "points": [
+          "Listen to English podcasts, documentaries, or lectures 3–5 times weekly",
+          "Watch English movies or videos with subtitles, then without",
+          "Attend live university lectures or TED Talks to adjust to pacing and accent",
+          "Practice note-taking while listening to academic content"
+        ],
+        "tip": "Consistent exposure builds listening stamina. Test day should not be your first time hearing academic lectures."
+      },
+      {
+        "emoji": "🏆",
+        "title": "Target Scores & Practice Plan",
+        "points": [
+          "Beginner (0–19): Listen to 2–3 short conversations daily, focus on main idea",
+          "Intermediate (20–24): Practice full conversations and lectures, refine note-taking, review errors",
+          "Advanced (25–30): Aim for 100% accuracy on detail, function, and inference questions; speed up note-taking"
+        ],
+        "tip": "Official TOEFL listening practice materials (ets.org) are the most accurate representation of test audio."
+      },
+      {
+        "emoji": "🎙️",
+        "title": "Using Keyboard Shortcuts During Test",
+        "points": [
+          "Pause button: Use only if you finish notes early and need to mentally prepare for questions",
+          "Play button: Some questions allow replaying portions of audio; use strategically",
+          "Volume: Adjust at the very beginning; poor audio should be reported to proctor",
+          "Headphones: Ensure fit is comfortable before audio begins; do not adjust once playing"
+        ],
+        "warn": "Wasting time adjusting settings costs you answering time. Get comfortable before the audio starts."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Next: Practice & Mock Tests",
+        "points": [
+          "Complete full-length TOEFL listening simulations (3–4 conversations, 2–3 lectures)",
+          "Review each question: Did you understand the question? Did you hear the answer?",
+          "Track weak areas: specific question types, certain speakers, fast speech",
+          "Use Syllab's free TOEFL listening mock tests with real audio and question formats"
+        ],
+        "example": {
+          "label": "Action",
+          "text": "Take 3 full listening mocks this week. After each, identify 2 questions you got wrong and understand why."
+        }
+      }
+    ]
+  },
+  "toefl-speaking": {
+    "id": "toefl-speaking",
+    "exam": "toefl",
+    "examName": "TOEFL iBT",
+    "section": "Speaking",
+    "emoji": "🗣️",
+    "title": "TOEFL Speaking — Tips, Tricks & Strategy",
+    "summary": "Master academic speaking: task formats, integrated and independent tasks, preparation tips, delivery strategies, and scoring rubrics to maximize your score.",
+    "slides": [
+      {
+        "emoji": "🗣️",
+        "title": "What is TOEFL Speaking?",
+        "points": [
+          "Academic speaking section tests your ability to speak English clearly and coherently",
+          "You speak into a microphone; responses are recorded and later scored",
+          "Includes independent speaking (your own ideas) and integrated speaking (reading + listening + speaking)",
+          "Designed to measure university-level communication skills"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Speaking Section Format & Timing",
+        "points": [
+          "4 tasks total: 1 independent (Task 1), 3 integrated (Tasks 2–4)",
+          "Task 1: 15 seconds prep, 45 seconds response (independent opinion)",
+          "Tasks 2–3: 30 seconds prep, 60 seconds response (read passage, listen, speak)",
+          "Task 4: 20 seconds prep, 60 seconds response (listen, speak without reading)",
+          "Total: 16 minutes (3 minutes speaking + 13 minutes prep/reading/listening)"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "TOEFL Speaking Scoring",
+        "points": [
+          "Scored out of 30 points (each task weighted equally at 0–30)",
+          "Rubric evaluates: delivery (clarity, pace, pronunciation), language use (grammar, vocabulary), topic development (completeness, coherence)",
+          "Raters listen for natural, fluent speech; near-native pronunciation not required",
+          "Common score range: 18–26 for strong test-takers"
+        ]
+      },
+      {
+        "emoji": "🗣️",
+        "title": "Task 1: Independent Speaking",
+        "points": [
+          "You are asked for your personal opinion on a topic (e.g., 'Describe a memorable experience')",
+          "15 seconds to prepare; 45 seconds to speak",
+          "No reading or listening required; draw from your own experience and ideas",
+          "Goal: Share a clear opinion with 2–3 relevant details or examples"
+        ],
+        "example": {
+          "label": "Example Topic",
+          "text": "Describe a hobby or interest you enjoy. Why do you find it rewarding? Use specific details in your explanation."
+        },
+        "tip": "Use the prep time to plan: main idea (45 seconds = roughly 110–130 words), 2 supporting points, brief conclusion."
+      },
+      {
+        "emoji": "🗣️",
+        "title": "Task 1: Strategies & Template",
+        "points": [
+          "Template: Introduction (topic + main reason) → Detail 1 (explain + example) → Detail 2 (explain + example) → Conclusion (restate reason)",
+          "Keep introduction short (15 seconds of your 45-second response) to leave time for details",
+          "Use connectors: 'First of all', 'Specifically', 'Another reason is', 'In conclusion'",
+          "Sound conversational; avoid sounding robotic or overly scripted"
+        ],
+        "tip": "Personal examples are stronger than abstract statements. Use 'I' and specific details.",
+        "warn": "Pausing to think is okay; awkward silence is not. Speak smoothly and confidently."
+      },
+      {
+        "emoji": "🗣️",
+        "title": "Task 2: Integrated Speaking (Read-Listen-Speak)",
+        "points": [
+          "Read a short passage (75–100 words) about a campus announcement, policy, or academic topic",
+          "Listen to a conversation (60–90 seconds) between a student and professor/staff responding to the announcement",
+          "45 seconds to speak: summarize the conversation and the speaker's opinion",
+          "You must include both the announcement and the student's personal perspective"
+        ]
+      },
+      {
+        "emoji": "🗣️",
+        "title": "Task 2: Strategies & Template",
+        "points": [
+          "During reading: Note the announcement key points (what changed, when, why)",
+          "During listening: Focus on the student's opinion and reasons (agrees, disagrees, concerned, excited)",
+          "Template: Announcement (the change) → Student's opinion (agree/disagree) → Reason 1 → Reason 2 → Conclusion",
+          "Balance: Give equal time to announcement and student's view"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Announcement: Library hours extended. Student says: Great! Can study late. Prefers quiet at night. Easier to find resources after class."
+        },
+        "tip": "The student's opinion is the focus. Announcement is context. Lead with what the student thinks."
+      },
+      {
+        "emoji": "🗣️",
+        "title": "Task 3: Integrated Speaking (Read-Listen-Speak, Lecture)",
+        "points": [
+          "Read a short academic passage (75–100 words) introducing a concept or theory",
+          "Listen to a lecture excerpt (90–120 seconds) expanding on the concept with examples",
+          "60 seconds to speak: explain the concept and how the lecture example illustrates it",
+          "Focus is academic understanding, not personal opinion"
+        ]
+      },
+      {
+        "emoji": "🗣️",
+        "title": "Task 3: Strategies & Template",
+        "points": [
+          "During reading: Identify the main concept or theory name, definition, key characteristics",
+          "During lecture: Listen for the professor's explanation and specific examples that clarify the concept",
+          "Template: Concept definition → Key characteristic or feature → Professor's example → How example illustrates concept → Conclusion",
+          "Use academic language: 'The lecture illustrates', 'This concept is demonstrated by', 'The professor explains'"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Concept: Operant conditioning (behavior shaped by consequences). Lecture: Examples of reinforcement (rewards) in animal training. Student explains how rewards reinforce behavior."
+        },
+        "tip": "Show you understand the concept. The example should clearly connect to the theory."
+      },
+      {
+        "emoji": "🗣️",
+        "title": "Task 4: Integrated Speaking (Listen-Speak, No Reading)",
+        "points": [
+          "Listen to a lecture excerpt (90–120 seconds) on an academic topic",
+          "No reading; you take notes during listening",
+          "60 seconds to speak: summarize the main idea and supporting details from the lecture",
+          "Pure listening comprehension and summarization; no personal opinion"
+        ]
+      },
+      {
+        "emoji": "🗣️",
+        "title": "Task 4: Strategies & Note-Taking",
+        "points": [
+          "Listen for: Main topic (what the lecture is about), key points or themes, examples or evidence",
+          "Use symbols and abbreviations: → (leads to), ↑ (increases), ex. (example), w/ (with)",
+          "Template: Main idea → Key point 1 (with supporting detail) → Key point 2 (with supporting detail) → Conclusion",
+          "Speak from your notes; you do not need to memorize the lecture word-for-word"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Lecture: Evolution through natural selection. Fittest organisms survive. Ex: Peppered moths (dark moths survived industrial England). Notes: Nat. sel. → fittest survive; ex. peppered moths."
+        },
+        "tip": "Structure your summary clearly. Listeners should follow your organization, not the lecture's complexity."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Delivery: Pronunciation & Clarity",
+        "points": [
+          "Speak clearly: Distinct consonants, steady pace (not too fast, not too slow)",
+          "Intonation: Vary pitch to emphasize key words and avoid monotone delivery",
+          "Confidence: Project your voice; speak as if addressing a classroom, not muttering",
+          "Accent: Near-native pronunciation is not required. Clear, intelligible English is the goal"
+        ],
+        "tip": "Practice speaking aloud, not in your head. Record yourself and listen. Identify unclear words.",
+        "warn": "Speaking too fast under nervousness is a common trap. Pause for breath and emphasis."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Language Use: Grammar & Vocabulary",
+        "points": [
+          "Use complex sentences: 'Although X, Y because Z.' Show range of structures.",
+          "Vocabulary: Academic and topic-specific words when appropriate (not slang)",
+          "Fluency: Smooth transitions between ideas; avoid long pauses or filler words ('um', 'like')",
+          "Accuracy: Grammatical errors are okay if they do not impede understanding"
+        ],
+        "tip": "Varied sentence structures show language control. Mix simple and complex sentences naturally.",
+        "warn": "Filler words and long pauses are marked down. Practice speaking without them."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Topic Development: Completeness & Coherence",
+        "points": [
+          "Directly answer the question or prompt",
+          "Provide 2–3 supporting details or reasons (Tasks 1–2) or key points from lecture (Tasks 3–4)",
+          "Explain how details support your main idea; do not just list facts",
+          "Conclude by restating your main point or summarizing the concept"
+        ],
+        "example": {
+          "label": "Strong Response",
+          "text": "Main idea stated → Detail 1 explained → Detail 2 explained → Conclusion. Each part connected by transitions."
+        },
+        "warn": "Incomplete responses (missing details, no conclusion) score lower. Budget your 45–60 seconds wisely."
+      },
+      {
+        "emoji": "❌",
+        "title": "Top Speaking Mistakes & Traps",
+        "points": [
+          "Running out of time: Spending too long on the opening, rushing details, missing conclusion",
+          "Off-topic: Not directly answering the question; rambling to fill time",
+          "Unclear speech: Speaking too fast, mumbling, inconsistent volume",
+          "Poor organization: Ideas scattered, no clear structure, difficult to follow"
+        ],
+        "warn": "Raters expect clear, organized responses. Practice structure as much as vocabulary."
+      },
+      {
+        "emoji": "🚩",
+        "title": "Common Scoring Traps",
+        "points": [
+          "Accent is NOT scored; intelligibility is. Slight accents are fine.",
+          "Small grammar errors are forgivable; major errors that confuse meaning are not",
+          "Memorized responses sound unnatural and score lower than extemporaneous speech",
+          "Reading directly from notes scores lower than using notes as a guide and speaking naturally"
+        ],
+        "tip": "Practice extemporaneous speaking (speaking on the spot with brief prep). That's what the test measures."
+      },
+      {
+        "emoji": "📝",
+        "title": "Note-Taking for Integrated Tasks",
+        "points": [
+          "Task 2 (read passage): Jot announcement key points in 15 seconds (e.g., 'Library hours: 8am–midnight')",
+          "Task 3 (read passage): Write concept name and 1–2 defining features (e.g., 'Operant conditioning: behavior shaped by consequences')",
+          "Task 4 (lecture only): Organize notes by main point and supporting details",
+          "Use legible writing and abbreviations. You'll have <30 seconds to review before speaking."
+        ],
+        "tip": "Your notes are for your reference, not to be read word-for-word. Use them as bullet points, not a script."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Time Management During Speaking Section",
+        "points": [
+          "Task 1: Spend 10 seconds planning, 35 seconds speaking (leave 5 seconds buffer)",
+          "Tasks 2–3: Spend 20 seconds reviewing notes, 40 seconds speaking (leave 5 seconds)",
+          "Task 4: Spend 15 seconds reviewing notes, 45 seconds speaking (leave 5 seconds)",
+          "Do not waste remaining time after you finish speaking; the recording auto-stops"
+        ],
+        "tip": "During prep, write just enough to trigger your memory. Over-detailed notes waste time during delivery."
+      },
+      {
+        "emoji": "🎓",
+        "title": "Academic Speaking Vocabulary",
+        "points": [
+          "Discourse markers: Furthermore, As a result, In contrast, To summarize, Therefore",
+          "Academic phrases: 'The main point is', 'This illustrates', 'One key aspect', 'In conclusion'",
+          "Linking ideas: 'Not only X but also Y', 'Both X and Y', 'X, whereas Y', 'X is similar to Y'",
+          "Subject-specific terms: vary by discipline (biology, history, business, psychology)"
+        ],
+        "tip": "Academic language boosts scores. Practice using phrases like 'This example demonstrates' instead of 'This shows'."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Worked Example: Task 1 (Independent)",
+        "points": [
+          "Prompt: 'Describe an important goal you have. Why is this goal important to you?'",
+          "Prep plan: Choose goal (studying abroad) → Why (adventure, education) → Details (new skills, independence)",
+          "Response: Intro (goal is study abroad) → Detail 1 (learn new culture) → Detail 2 (develop independence) → Conclusion (growth matters)",
+          "Delivery: Speak clearly, vary pace, use transitions. Aim for ~110 words in 45 seconds."
+        ],
+        "example": {
+          "label": "Sample Response",
+          "text": "My important goal is to study abroad. This is important because I want to experience a new culture and become more independent. First, I'll learn a different perspective on education... Second, living alone will help me... In conclusion, this goal will help me grow..."
+        }
+      },
+      {
+        "emoji": "🎬",
+        "title": "Worked Example: Task 2 (Integrated)",
+        "points": [
+          "Announcement: Dining hall changing hours (now open until midnight instead of 10pm)",
+          "Conversation: Student says great because late-night studying and can eat after events",
+          "Response structure: Announcement (hours extended) → Student opinion (positive) → Reason 1 (study late) → Reason 2 (eat late) → Conclusion",
+          "Delivery: Balance announcement and student perspective. Use connectors like 'The student thinks this is good because'."
+        ],
+        "tip": "Task 2 is about the student's opinion first, announcement context second. Lead with the student."
+      },
+      {
+        "emoji": "✅",
+        "title": "Pre-Test Speaking Habits",
+        "points": [
+          "Practice speaking aloud daily: Read news aloud, summarize videos, record yourself",
+          "Join conversation groups or language exchanges to practice extemporaneous speaking",
+          "Record your responses and listen critically: clarity, pace, organization, grammar",
+          "Simulate test conditions: 15–45 seconds prep, 45–60 seconds response, no revisions"
+        ],
+        "tip": "Silent practice (thinking through responses) does NOT prepare you for speaking. Speak out loud, always."
+      },
+      {
+        "emoji": "🏆",
+        "title": "Target Scores & Practice Plan",
+        "points": [
+          "Beginner (0–19): Practice Task 1 daily, focus on clarity and basic organization",
+          "Intermediate (20–24): Add integrated tasks (2–4), work on fluency and detail",
+          "Advanced (25–30): Aim for natural delivery, complex structures, detailed examples; practice all task types"
+        ],
+        "tip": "Official TOEFL speaking practice with sample responses (ets.org) shows what high scores sound like."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Next: Practice & Mock Tests",
+        "points": [
+          "Complete full-length speaking simulations: Task 1 (independent), Tasks 2–4 (integrated)",
+          "Record and self-evaluate: Is it clear? Organized? Detailed? Do I answer the prompt?",
+          "Compare your response to sample high-scoring responses. Note differences.",
+          "Use Syllab's free TOEFL speaking mock tests for realistic practice and feedback"
+        ],
+        "example": {
+          "label": "Action",
+          "text": "This week, record 3 full speaking tests. Listen to your recordings and identify 2 areas to improve for next week."
+        }
+      }
+    ]
+  },
+  "toefl-writing": {
+    "id": "toefl-writing",
+    "exam": "toefl",
+    "examName": "TOEFL iBT",
+    "section": "Writing",
+    "emoji": "✍️",
+    "title": "TOEFL Writing — Tips, Tricks & Strategy",
+    "summary": "Master academic writing: integrated essay and discussion task, essay structure, grammar, time management, and proven strategies to achieve higher scores.",
+    "slides": [
+      {
+        "emoji": "✍️",
+        "title": "What is TOEFL Writing?",
+        "points": [
+          "Academic writing section tests your ability to write clear, coherent English essays",
+          "2 tasks: 1 integrated (reading, listening, writing) and 1 independent (discussion/opinion)",
+          "Focuses on organizing ideas, supporting claims, and using accurate grammar",
+          "Essays are scored by human raters using a detailed rubric"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Writing Section Format & Timing",
+        "points": [
+          "Task 1 (Integrated): Read passage (3 min) → listen to lecture (2 min) → write 150–225 words (20 min)",
+          "Task 2 (Academic Discussion): Read discussion prompt and posts (3 min) → write 100–150 words (10 min)",
+          "Total writing time: 30 minutes (20 minutes integrated, 10 minutes discussion)",
+          "No word count penalty for exceeding limits; quality is assessed regardless of length"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "TOEFL Writing Scoring",
+        "points": [
+          "Each task scored 0–5; total writing score = 0–30 (weighted combination)",
+          "Rubric evaluates: task completion (answering the prompt), organization, language (vocabulary, grammar), development (supporting details)",
+          "Common scores: 22–26 for strong test-takers; 26–30 is advanced",
+          "Coherence and clear argument are prioritized over perfect grammar"
+        ]
+      },
+      {
+        "emoji": "✍️",
+        "title": "Task 1: Integrated Writing (Read-Listen-Write)",
+        "points": [
+          "Read a short academic passage (250–300 words) on a topic",
+          "Listen to a 2–3 minute lecture that CONTRADICTS or COMPLICATES the passage",
+          "Write 150–225 words summarizing the lecture's main points and how they relate to the reading",
+          "You are NOT stating your own opinion; you are reporting what the lecture says"
+        ]
+      },
+      {
+        "emoji": "✍️",
+        "title": "Task 1: Reading Strategy",
+        "points": [
+          "Identify the passage's main argument or claim in the first 2 paragraphs",
+          "Note 2–3 supporting points from the passage (examples, evidence, explanation)",
+          "Expect the lecture to challenge, refute, or modify one or more of these points",
+          "Key question: What is the passage saying, and how will the lecture respond?"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Passage: 'Traditional zoos protect endangered species through breeding programs.' Lecture likely: Challenges effectiveness, discusses wild conservation instead, or questions welfare concerns."
+        }
+      },
+      {
+        "emoji": "✍️",
+        "title": "Task 1: Listening & Note-Taking",
+        "points": [
+          "Focus on how the lecture contradicts, expands, or refines the passage",
+          "Note the professor's main point and 2–3 supporting reasons or examples",
+          "Use abbreviations: Prof = professor, trad = traditional, ex = example, w/ = with",
+          "Structure notes: Main claim → Supporting point 1 → Supporting point 2"
+        ],
+        "tip": "The lecture's job is to complicate the reading. Expect a 'But' or 'However' tone. Identify what the lecture argues INSTEAD.",
+        "warn": "Do not mix up the passage's claim with the lecture's claim. Your essay reports both, showing the relationship."
+      },
+      {
+        "emoji": "✍️",
+        "title": "Task 1: Essay Template",
+        "points": [
+          "Intro: Passage claims X (one sentence). Lecture challenges/expands this by stating Y (one sentence).",
+          "Paragraph 1: Passage point A + Lecture response to A (with evidence)",
+          "Paragraph 2: Passage point B + Lecture response to B (with evidence)",
+          "Conclusion: Restate how lecture complicates/modifies passage's argument"
+        ],
+        "example": {
+          "label": "Structure",
+          "text": "Para 1: Passage says zoos breed endangered animals. Lecture: Breeding often fails in wild; zoos cause stress. Para 2: Passage: zoos educate. Lecture: Visitors learn misconceptions. Conclusion: Lecture questions zoos' effectiveness."
+        }
+      },
+      {
+        "emoji": "✍️",
+        "title": "Task 1: Sample Integrated Essay",
+        "points": [
+          "Intro: The reading suggests zoos protect species. The lecture argues zoos may harm conservation and animal welfare.",
+          "Para 1: Reading: zoos breed endangered species. Lecture: Species bred in zoos often cannot survive in wild. Programs often fail.",
+          "Para 2: Reading: zoos educate visitors about wildlife. Lecture: Visitors see confined animals, learning incorrect behaviors. Education is misguided.",
+          "Conclusion: While reading supports zoos, lecture demonstrates limitations in conservation and education."
+        ],
+        "tip": "Show clear relationships between passage and lecture. Use phrases: 'The lecture contradicts this by', 'This supports the claim', 'However, the lecture notes'."
+      },
+      {
+        "emoji": "✍️",
+        "title": "Task 2: Academic Discussion Task",
+        "points": [
+          "Read a discussion prompt and 1–2 sample student posts on a topic",
+          "Write 100–150 words making an argument related to the discussion",
+          "You respond to the prompt, NOT to the student posts. Do not argue directly with other students.",
+          "Provide one clear claim with supporting evidence or reasoning"
+        ]
+      },
+      {
+        "emoji": "✍️",
+        "title": "Task 2: Understanding the Prompt",
+        "points": [
+          "Prompt typically asks: 'Do you agree or disagree?' or 'Which perspective is stronger?'",
+          "Example: 'Should universities require in-person attendance? Why or why not?'",
+          "Student posts might argue for or against; you take a position, not summarize both",
+          "Your response adds a new perspective or reinforces an existing one with new evidence"
+        ],
+        "tip": "Read the prompt carefully. Some ask for agreement, others ask for comparison. Answer the exact question asked.",
+        "warn": "Do not simply agree with one post. Develop your own argument supported by reasoning."
+      },
+      {
+        "emoji": "✍️",
+        "title": "Task 2: Essay Template",
+        "points": [
+          "Intro: State your position clearly (agree/disagree or preference) in 1 sentence",
+          "Body: Provide 1–2 reasons with explanation or example. Keep it concise (100–150 words total).",
+          "Conclusion: Restate your position briefly and summarize why"
+        ],
+        "example": {
+          "label": "Example Response",
+          "text": "I believe universities should require in-person attendance because face-to-face interaction improves learning. Students engage in discussions, ask questions, and receive immediate feedback. Additionally, campus community building fosters collaboration. In conclusion, despite flexibility online offers, in-person attendance strengthens education."
+        }
+      },
+      {
+        "emoji": "🎯",
+        "title": "Organization & Clarity",
+        "points": [
+          "Use clear paragraph breaks: introduction, body paragraphs, conclusion",
+          "Topic sentences start each paragraph and signal the main idea",
+          "Transition words connect ideas: Furthermore, However, As a result, For example",
+          "Conclusion summarizes main argument; avoid introducing new information"
+        ],
+        "tip": "Organize ideas logically. A reader should follow your argument effortlessly from start to finish."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Grammar & Vocabulary",
+        "points": [
+          "Use varied sentence structures: simple, compound, complex sentences",
+          "Academic vocabulary: utilize, significant, contribute, demonstrate, substantial, relevant",
+          "Avoid repetition: vary word choice; use pronouns (this, that) to refer back",
+          "Check grammar: subject-verb agreement, tense consistency, apostrophes in contractions"
+        ],
+        "tip": "Accuracy matters more than complexity. Clear, correct sentences score higher than fancy but awkward phrasing.",
+        "warn": "Grammatical errors do not automatically lower scores if overall meaning is clear. However, repeated errors hurt."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Development & Support",
+        "points": [
+          "Task 1: Report the lecture's points with specific evidence (direct quotes, paraphrases)",
+          "Task 2: Support your claim with reasons, examples, or explanations",
+          "Avoid unsupported assertions. Every main idea needs supporting detail.",
+          "Use your time to develop 1–2 strong points rather than listing 5 weak ideas"
+        ],
+        "example": {
+          "label": "Weak vs. Strong",
+          "text": "Weak: 'In-person attendance is important.' Strong: 'In-person attendance improves learning because students interact directly with professors, asking clarifying questions in real-time.'"
+        }
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Time Management for Task 1",
+        "points": [
+          "0–3 min: Read the passage, identify main claim and 2 supporting points",
+          "3–5 min: Listen and take notes on how lecture challenges/complicates passage",
+          "5–7 min: Plan essay outline (intro, 2 body paragraphs, conclusion)",
+          "7–25 min: Write essay (150–225 words = roughly 20 minutes of typing)",
+          "25–27 min: Review for grammar and clarity"
+        ],
+        "tip": "Plan your essay before typing. A clear outline saves time and improves coherence."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Time Management for Task 2",
+        "points": [
+          "0–2 min: Read prompt and student posts, identify the exact question",
+          "2–3 min: Decide your position and plan 1–2 supporting points",
+          "3–9 min: Write essay (100–150 words = roughly 6 minutes of typing)",
+          "9–10 min: Proofread and fix obvious errors"
+        ],
+        "tip": "Task 2 is short. Keep it tight. One strong argument beats multiple weak ones."
+      },
+      {
+        "emoji": "❌",
+        "title": "Top Writing Mistakes & Traps",
+        "points": [
+          "Task 1: Mixing passage and lecture claims; unclear which argument belongs where",
+          "Task 1: Adding your own opinion (prompt asks only for reporting, not analysis)",
+          "Task 2: Not answering the prompt; rambling on related topics instead",
+          "Both: Running out of time due to poor planning; incomplete essays",
+          "Both: Over-writing. More words do not equal higher scores; clarity and development do"
+        ],
+        "warn": "Incomplete essays (missing conclusion, underdeveloped body) score significantly lower. Plan time to finish."
+      },
+      {
+        "emoji": "🚩",
+        "title": "Common Scoring Traps",
+        "points": [
+          "Task 1: Summarizing the lecture but not connecting it to the passage = lower score",
+          "Task 1: Stating your opinion on the topic instead of reporting the lecture = off-task penalty",
+          "Task 2: Listing ideas without supporting reasons = underdeveloped",
+          "Both: Grammatically correct but incomprehensible organization = lower score for development"
+        ],
+        "tip": "Re-read the prompt before writing. 'Report the lecture' ≠ 'Argue your opinion.' Know which you're doing."
+      },
+      {
+        "emoji": "📝",
+        "title": "Proofreading Checklist",
+        "points": [
+          "Did I answer the prompt fully (Task 1: report lecture + passage; Task 2: take a position)?",
+          "Does each paragraph have a clear topic sentence?",
+          "Are ideas connected with transition words?",
+          "Are sentences grammatically correct? (Subject-verb agreement, tense, punctuation)",
+          "Did I include supporting details or examples?",
+          "Is my conclusion present and meaningful (not just restating the intro)?"
+        ],
+        "tip": "Set a 2-minute timer for proofreading. Fix obvious errors; do not rewrite entire paragraphs."
+      },
+      {
+        "emoji": "🎓",
+        "title": "Academic Writing Vocabulary",
+        "points": [
+          "Transition phrases: Furthermore, However, On the other hand, As a result, In contrast, Additionally",
+          "Reporting verbs: The lecture argues, The author contends, The passage suggests, Research demonstrates",
+          "Qualifying language: suggests, may, appears, indicates (not absolute claims)",
+          "Academic nouns: evidence, benefit, drawback, consequence, contribution, limitation"
+        ],
+        "tip": "Academic vocabulary elevates your writing. Use 'utilize' instead of 'use', 'significant' instead of 'big'."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Worked Example: Task 1 Full Essay",
+        "points": [
+          "Passage: Electric vehicles reduce emissions and combat climate change.",
+          "Lecture: Manufacturing batteries causes pollution; electricity from coal negates benefits.",
+          "Intro: Passage argues EVs reduce emissions. Lecture questions the net environmental benefit.",
+          "Para 1: Passage: EVs emit zero tailpipe. Lecture: Electricity production from coal generates emissions elsewhere.",
+          "Para 2: Passage: EVs reduce climate impact. Lecture: Battery manufacturing pollutes; recycling is limited.",
+          "Conclusion: Lecture complicates passage by shifting focus from use-phase to production-phase emissions."
+        ],
+        "example": {
+          "label": "Sample Essay (150+ words)",
+          "text": "The reading claims electric vehicles reduce emissions and combat climate change. However, the lecture complicates this argument by highlighting hidden environmental costs. The passage suggests EVs produce zero tailpipe emissions, making them cleaner than gasoline cars. But the lecture notes that electricity generation often relies on coal power, meaning EVs simply shift emissions from tailpipes to power plants. Additionally, the reading emphasizes climate benefits, while the lecture argues battery manufacturing causes substantial pollution, and recycling infrastructure remains underdeveloped. In conclusion, while the passage presents a straightforward environmental argument for EVs, the lecture demonstrates that full lifecycle impacts are more complicated and potentially less beneficial than commonly believed."
+        }
+      },
+      {
+        "emoji": "🎬",
+        "title": "Worked Example: Task 2 Discussion Response",
+        "points": [
+          "Prompt: 'Should universities prioritize teaching job skills or liberal arts education?'",
+          "Student 1: Job skills are essential for employment.",
+          "Student 2: Liberal arts develop critical thinking.",
+          "Your position: Argue for one, or propose a balance.",
+          "Response: Develop 1–2 reasons with explanation, then conclude"
+        ],
+        "example": {
+          "label": "Sample Response (100–150 words)",
+          "text": "While job skills are important, I believe universities should prioritize liberal arts education because critical thinking applies across all careers. Students who understand history, literature, and philosophy can analyze complex problems creatively, adapting to changing job markets. Job training becomes obsolete quickly, but skills like writing and reasoning remain valuable throughout life. Additionally, liberal arts education encourages informed citizenship, helping graduates contribute to society beyond their profession. In conclusion, universities serve students best by emphasizing liberal arts, which provides foundational skills that support both career success and meaningful citizenship."
+        }
+      },
+      {
+        "emoji": "✅",
+        "title": "Pre-Test Writing Habits",
+        "points": [
+          "Write daily: journal, summaries, opinion essays on topics you care about",
+          "Read academic articles and note structure: intro claim, supporting points, conclusion",
+          "Practice integrated essays: read + listen + write on similar formats to Task 1",
+          "Get feedback: exchange essays with peers or tutors; identify recurring errors"
+        ],
+        "tip": "Consistent writing practice builds fluency and accuracy. Practice is the best teacher."
+      },
+      {
+        "emoji": "🏆",
+        "title": "Target Scores & Practice Plan",
+        "points": [
+          "Beginner (0–19): Write 5 Task 1 essays weekly, focus on clear organization and grammar",
+          "Intermediate (20–24): Add Task 2 essays, practice time limits, refine vocabulary",
+          "Advanced (25–30): Aim for sophisticated arguments, minimal errors, strong development; practice all formats"
+        ],
+        "tip": "Official TOEFL writing sample essays (ets.org) show what different score levels look like."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Next: Practice & Mock Tests",
+        "points": [
+          "Complete full-length writing simulations: Task 1 (integrated, 20 min) + Task 2 (discussion, 10 min)",
+          "After each essay, review: Did I answer the prompt? Is it organized? Are ideas developed?",
+          "Compare your essay to sample high-scoring responses from ETS",
+          "Use Syllab's free TOEFL writing mock tests for realistic practice and feedback"
+        ],
+        "example": {
+          "label": "Action",
+          "text": "This week, write 3 full integrated essays and 3 discussion responses. Proofread carefully, then review against sample essays to identify gaps."
+        }
+      }
+    ]
+  }
+}

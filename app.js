@@ -8,6 +8,8 @@ function viewToHash(view, examId) {
       return "#/exam-prep" + (examId ? "/" + examId : "");
     case "guide":
       return "#/exam-hub" + (examId ? "/" + examId : "");
+    case "learn":
+      return "#/learn";
     case "learning":
       return "#/learning";
     case "agents":
@@ -45,6 +47,7 @@ function hashToView(hash, exams) {
     const ex = find(parts[1]);
     return { view: "guide", examId: ex ? ex.id : exams && exams[0] ? exams[0].id : null };
   }
+  if (head === "learn") return { view: "learn", examId: null };
   if (head === "learning") return { view: "learning", examId: null };
   if (head === "agents") return { view: "agents", examId: null };
   if (head === "progress") return { view: "progress", examId: null };
@@ -184,6 +187,10 @@ function App() {
     if (id === "home") {
       setView("home");
       setExam(null);
+      return;
+    }
+    if (id === "learn") {
+      setView("learn");
       return;
     }
     if (id === "learning") {
@@ -327,8 +334,10 @@ function App() {
         onNav
       }
     );
+  } else if (view === "learn") {
+    content = /* @__PURE__ */ React.createElement(window.LP_LearnHub, { onNav, exams, initialTab: "lessons" });
   } else if (view === "learning") {
-    content = /* @__PURE__ */ React.createElement(window.LP_LearningClub, { onNav, exams });
+    content = /* @__PURE__ */ React.createElement(window.LP_LearnHub, { onNav, exams, initialTab: "club" });
   } else if (view === "agents") {
     content = /* @__PURE__ */ React.createElement(AgentsHub, { onNav, exams, exam: activeExam, onSelectExam: (e) => setExam(e) });
   } else if (view === "progress") {
@@ -344,7 +353,7 @@ function App() {
   } else if (view === "languages") {
     content = /* @__PURE__ */ React.createElement(window.LP_Languages, { onNav });
   } else if (view === "lessons") {
-    content = /* @__PURE__ */ React.createElement(window.LP_Lessons, { onNav });
+    content = /* @__PURE__ */ React.createElement(window.LP_LearnHub, { onNav, exams, initialTab: "lessons" });
   } else if (view === "login") {
     content = /* @__PURE__ */ React.createElement(window.LP_LoginScreen, { onNav, onSuccess: () => setView("progress") });
   } else {

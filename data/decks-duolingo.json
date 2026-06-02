@@ -1,0 +1,520 @@
+{
+  "duolingo-full": {
+    "id": "duolingo-full",
+    "exam": "duolingo",
+    "examName": "Duolingo",
+    "section": "Full Test Strategy",
+    "emoji": "⚡",
+    "title": "Duolingo English Test — Full Strategy",
+    "summary": "Master the adaptive Duolingo English Test (DET) with question-by-question strategies, timing tactics, and proven techniques to score 120+ on the 10–160 scale.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "What Is The Duolingo English Test?",
+        "points": [
+          "Online English proficiency exam, ~1 hour duration, taken from home",
+          "Adaptive: difficulty scales up/down based on your answers",
+          "AI-proctored + occasional human review; strict rules (no looking away, no notes, one face)",
+          "Cost: ~$65 USD; results delivered in 48 hours",
+          "Accepted by 4,000+ universities and institutions worldwide"
+        ],
+        "example": {
+          "label": "Test Flow",
+          "text": "Take exam at home → Duolingo system grades + flags for review → Human proctor spot-checks → Score arrives in 2 days"
+        },
+        "tip": "Book your test slot online; ensure quiet room, stable internet, and webcam visible to AI.",
+        "warn": "Late arrival or proctoring violations result in cancellation and fee forfeiture."
+      },
+      {
+        "emoji": "📊",
+        "title": "DET Scoring: 10–160 Scale + 4 Subscores",
+        "points": [
+          "Overall score: 10–160 (reported every 5 points: 10, 15, 20, etc.)",
+          "Literacy (reading accuracy): measures spelling, grammar recognition",
+          "Comprehension (listening/reading understanding): vocabulary, detail recall",
+          "Conversation (dialogue flow, turn-taking): naturalness and responsiveness",
+          "Production (speaking/writing quality): clarity, fluency, structure"
+        ],
+        "example": {
+          "label": "Sample Report",
+          "text": "Total: 130 | Literacy: 135 | Comprehension: 128 | Conversation: 125 | Production: 130"
+        },
+        "tip": "Universities usually want 100+; competitive schools prefer 120+. Check each school's DET requirement.",
+        "warn": "Low Conversation or Production scores flag language poverty; practise real dialogue, not robotic speech."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Test Structure & Timing",
+        "points": [
+          "Total: ~45–60 minutes (adaptive; harder path = longer)",
+          "20–25 task items across 14 question types (mix of reading, listening, speaking, writing)",
+          "No breaks; AI watches the whole time",
+          "Easier items first; difficulty jumps if you answer correctly",
+          "Each item takes 1–4 minutes (varies by type)"
+        ],
+        "example": {
+          "label": "Typical Session",
+          "text": "Read and Complete (2 min) → Read Aloud (1 min) → Listen and Type (2 min) → Write About Photo (3 min) → ... → Speaking/Writing samples (5 min each)"
+        },
+        "tip": "Pace yourself: spend 1–2 min per short task, 3–4 min per long ones. Don't freeze on hard items.",
+        "warn": "Running out of time on the final speaking/writing sample hurts your Production score heavily."
+      },
+      {
+        "emoji": "📖",
+        "title": "Read and Complete (C-Test)",
+        "points": [
+          "5–7 sentences; every few words replaced with a blank",
+          "Choose from 2–3 word options per blank",
+          "Tests grammar, vocabulary, collocation",
+          "Usually the easiest question type; Literacy score driver"
+        ],
+        "example": {
+          "label": "Sample",
+          "text": "The meeting was __1__ (cancelled/postponed) due to ___2___ (weather/rain). All attendees were __3__ (notified/aware) via email."
+        },
+        "tip": "Eliminate wrong words (verb tense, gender, part of speech). Read the full sentence context before choosing.",
+        "warn": "Don't guess randomly; use grammar rules (tense consistency, word order) to narrow options."
+      },
+      {
+        "emoji": "🎤",
+        "title": "Read Aloud",
+        "points": [
+          "Read a 1–2 sentence passage aloud; AI grades pronunciation, intonation, fluency",
+          "40–60 seconds to speak",
+          "Production score driver; major impression point",
+          "Accent: less important than clarity and confidence"
+        ],
+        "example": {
+          "label": "Sample Prompt",
+          "text": "A good leader listens to their team and adapts strategies based on feedback."
+        },
+        "tip": "Speak clearly and naturally; don't rush or monotone. Pause between sentences. Make eye contact with webcam.",
+        "warn": "Mumbling, extreme speed, or lack of confidence tanks the score even if words are correct."
+      },
+      {
+        "emoji": "👂",
+        "title": "Listen and Type (Dictation)",
+        "points": [
+          "Audio clip (1–2 sentences); you type what you hear",
+          "30–60 second clip; play once or twice",
+          "Comprehension + Literacy test (spelling, word recognition)",
+          "Accent varies (American, British, Indian accents common)"
+        ],
+        "example": {
+          "label": "Sample Audio",
+          "text": "[Female US voice] The quarterly report highlighted a twenty-five percent increase in customer satisfaction."
+        },
+        "tip": "Listen for whole phrases, not word-by-word. Capitalize proper nouns. Don't overthink spelling.",
+        "warn": "Missing a word or misspelling hurts the Literacy score; listen a second time if unsure."
+      },
+      {
+        "emoji": "📸",
+        "title": "Write About the Photo",
+        "points": [
+          "Image shown; you write 1–2 sentences describing it",
+          "Open-ended; graded on grammar, vocabulary, relevance",
+          "30–90 seconds to write",
+          "Production score driver"
+        ],
+        "example": {
+          "label": "Sample Prompt",
+          "text": "[Image of a crowded market] Describe what you see in the photo."
+        },
+        "tip": "Describe objects, actions, colors, mood. Use compound sentences (and, but, because). Aim for 2 well-formed sentences.",
+        "warn": "One-word answers or irrelevant text score zero. Spelling matters; grammar must be correct."
+      },
+      {
+        "emoji": "✓",
+        "title": "Read and Select (Fake Word Detection)",
+        "points": [
+          "4–5 words shown; 1 is NOT a real English word",
+          "You select the fake word",
+          "Tests vocabulary and word recognition",
+          "Literacy score contributor"
+        ],
+        "example": {
+          "label": "Sample",
+          "text": "A) flourish  B) fleeced  C) fluminate  D) flinch | Answer: C (not a real word)"
+        },
+        "tip": "Sound out unfamiliar words. Most are real; only one is fake. Don't overthink.",
+        "warn": "Confusing English with other languages (e.g., French -ment endings) leads to wrong guesses."
+      },
+      {
+        "emoji": "🔊",
+        "title": "Listen and Select (Multiple Choice Listening)",
+        "points": [
+          "Audio clip (20–40 seconds); answer multiple-choice question",
+          "4–5 answer options; 1–2 correct details hidden in the clip",
+          "Comprehension score driver",
+          "Distractors include similar-sounding wrong answers"
+        ],
+        "example": {
+          "label": "Sample Prompt",
+          "text": "Audio: [Person talks about moving to Berlin for a job] | Q: Why did the person move? A) Job B) School C) Family D) Travel"
+        },
+        "tip": "Focus on key facts (who, what, when, why). Ignore minor details. Re-listen if you miss the answer.",
+        "warn": "Accent and speed can hide the answer; don't panic if you don't catch every word."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Speak About the Photo",
+        "points": [
+          "Image shown; you speak for 40–60 seconds describing it",
+          "Graded on pronunciation, grammar, vocabulary, fluency",
+          "Major Production score contributor",
+          "Conversation and Production both affected"
+        ],
+        "example": {
+          "label": "Sample Prompt",
+          "text": "[Image of a family cooking together] Describe what's happening in this photo."
+        },
+        "tip": "Describe setting, people, actions, emotions. Use complete sentences. Pause naturally; don't rush.",
+        "warn": "Silence or filler sounds (um, uh) too often lowers the fluency score significantly."
+      },
+      {
+        "emoji": "🔄",
+        "title": "Read Then Speak",
+        "points": [
+          "Read a 1–2 sentence prompt; then speak your response (40–60 seconds)",
+          "Example: 'What do you do to stay healthy?' or 'Describe your ideal vacation.'",
+          "Production + Conversation scores both tested",
+          "Requires preparation time (~20 seconds) before you speak"
+        ],
+        "example": {
+          "label": "Sample Prompt",
+          "text": "Question: If you could travel anywhere, where would it be and why? | You respond: I would go to Japan because I love the culture and food..."
+        },
+        "tip": "Plan briefly (use the prep time). Structure: introduction + 2–3 reasons + conclusion. Speak naturally.",
+        "warn": "Rambling without structure or excessive hesitation reduces the fluency and coherence scores."
+      },
+      {
+        "emoji": "👂🎤",
+        "title": "Listen Then Speak",
+        "points": [
+          "Listen to a question (20–40 seconds); then answer it out loud (40–60 seconds)",
+          "Tests comprehension + ability to respond spontaneously",
+          "Conversation score driver (turn-taking simulation)",
+          "Accent and naturalness matter"
+        ],
+        "example": {
+          "label": "Sample",
+          "text": "Audio question: 'What's your opinion on remote work?' | You respond: I think remote work has many advantages, like flexibility, but it can also feel isolating."
+        },
+        "tip": "Listen for the key question. Answer directly; don't repeat the question. Use complete sentences.",
+        "warn": "Misunderstanding the question and answering off-topic scores very low on Comprehension."
+      },
+      {
+        "emoji": "✍️",
+        "title": "Writing Sample (Essay)",
+        "points": [
+          "Prompt given (e.g., 'Describe your biggest achievement'); you write for 3–5 minutes",
+          "150–300 words expected; graded on grammar, vocabulary, organization, relevance",
+          "Production score driver; major impact on final score",
+          "One chance; no editing after submission"
+        ],
+        "example": {
+          "label": "Sample Prompt",
+          "text": "Describe a time you overcame a challenge. What was it? How did you handle it? What did you learn?"
+        },
+        "tip": "Outline first: intro (1 sentence) + body (2–3 reasons/examples) + conclusion (1 sentence). Use topic sentences.",
+        "warn": "Spelling and grammar errors accumulate; aim for zero critical errors. Don't ramble off-topic."
+      },
+      {
+        "emoji": "🗣️",
+        "title": "Speaking Sample (Monologue)",
+        "points": [
+          "Prompt given (e.g., 'Tell us about your family'); you speak for 1–2 minutes",
+          "Graded on pronunciation, grammar, vocabulary, fluency, coherence",
+          "Major Production + Conversation score contributor",
+          "Naturalness and confidence heavily weighted"
+        ],
+        "example": {
+          "label": "Sample Prompt",
+          "text": "Describe your ideal job. What would you do? Why appeals to you? What skills would you need?"
+        },
+        "tip": "Speak naturally; pauses are OK. Structure: intro → body (2–3 points) → conclusion. Make eye contact with webcam.",
+        "warn": "Sounding robotic, scripted, or overly formal reduces the Conversation score even if grammar is perfect."
+      },
+      {
+        "emoji": "📖",
+        "title": "Interactive Reading",
+        "points": [
+          "Longer passage (3–5 paragraphs); multiple-choice or fill-in-blank questions",
+          "Tests comprehension of main idea, details, inference",
+          "Comprehension score driver",
+          "Adaptive: harder passages if you answer correctly"
+        ],
+        "example": {
+          "label": "Sample Passage",
+          "text": "A 3-paragraph article on renewable energy; questions ask about main idea, specific facts, or author's intent."
+        },
+        "tip": "Skim the passage first; focus on topic sentences. Look for keyword matches between question and text.",
+        "warn": "Don't overthink implied meanings; answers are usually explicit in the passage."
+      },
+      {
+        "emoji": "🎧",
+        "title": "Interactive Listening",
+        "points": [
+          "Longer audio clip (1–2 minutes, e.g., lecture, podcast, conversation); multiple-choice questions",
+          "Tests comprehension of main idea, details, speaker intent",
+          "Comprehension score driver",
+          "Various accents and speaking speeds common"
+        ],
+        "example": {
+          "label": "Sample Audio",
+          "text": "A 90-second podcast on productivity tips; 4–5 questions about key points."
+        },
+        "tip": "Take notes on key ideas. Listen for signal words (first, next, however, in conclusion). Don't focus on every word.",
+        "warn": "Speed and accent vary widely; focus on comprehension, not perfect word-for-word understanding."
+      },
+      {
+        "emoji": "💬",
+        "title": "Summarize the Conversation",
+        "points": [
+          "Listen to a 2–3 minute dialogue (2 speakers); then summarize it in 1–2 minutes of speech",
+          "Tests comprehension + spoken summarization ability",
+          "Conversation + Production + Comprehension all scored",
+          "Requires you to identify key points and omit details"
+        ],
+        "example": {
+          "label": "Sample Dialogue",
+          "text": "[Person A asks Person B about their new job] | You summarize: The dialogue is about [Person B]'s new job. [They] mentioned the role involves [X], and [they] felt [emotion] about the transition."
+        },
+        "tip": "Identify the main topic (who, what). List 2–3 key points. Speak clearly and organized.",
+        "warn": "Repeating every detail makes your summary too long; focus on the main idea and 1–2 supporting facts."
+      },
+      {
+        "emoji": "👀",
+        "title": "Proctoring Rules (AI + Human)",
+        "points": [
+          "Webcam must show your face and upper body the entire test",
+          "Don't look away, leave the frame, or look at other screens",
+          "No notes, books, earbuds, or second monitor visible",
+          "Solo room; no one else can be present",
+          "One face per test; multiple people = automatic cancellation"
+        ],
+        "example": {
+          "label": "Setup Check",
+          "text": "Quiet room, good lighting, webcam at eye level, desk clear except keyboard/mouse, internet stable."
+        },
+        "tip": "Test your setup 24 hours before. Do a practice test to ensure AI recognizes your face.",
+        "warn": "Frequent pausing, looking away, or suspicious background activity flags you for human review or cancellation."
+      },
+      {
+        "emoji": "⏰",
+        "title": "Timing Strategy: What To Rush & What To Slow Down",
+        "points": [
+          "Spend 1–2 min per short task (Read and Complete, Read Aloud, Listen and Type)",
+          "Spend 2–3 min per medium task (Listen and Select, Speak About Photo, Read Then Speak)",
+          "Spend 3–5 min per long task (Writing/Speaking Sample, Interactive tasks)",
+          "Leave 2 min buffer for unexpected delays"
+        ],
+        "example": {
+          "label": "60-Min Test Allocation",
+          "text": "Short tasks (10 min) → Medium tasks (15 min) → Long tasks (30 min) → Buffer (5 min)"
+        },
+        "tip": "If a task is hard, skip it mentally and move forward; come back if time allows. Don't lose time on one item.",
+        "warn": "Running out of time on the writing/speaking sample tanks your Production score heavily; prioritize those."
+      },
+      {
+        "emoji": "❌",
+        "title": "Top Mistakes & How To Avoid Them",
+        "points": [
+          "Guessing randomly on Read and Select or Listen and Select: use logic and word recognition instead.",
+          "Speaking too fast on Read Aloud and Speak About Photo: clarity and confidence beat speed.",
+          "Writing short, choppy sentences on Writing Sample: use compound/complex sentences to show grammar.",
+          "Misunderstanding questions on Listen Then Speak: ask yourself the question in your mind before answering."
+        ],
+        "example": {
+          "label": "Common Error",
+          "text": "Student rushes through Listen and Type, misses 3 words → spelling/comprehension score drops. Fix: replay audio twice."
+        },
+        "tip": "Review your own speaking/writing before submitting; catch obvious grammar errors or incomplete sentences.",
+        "warn": "Over-relying on scripted answers on spontaneous tasks (Listen Then Speak) sounds unnatural and scores lower."
+      },
+      {
+        "emoji": "📝",
+        "title": "Writing Sample: Structure & Grammar Checklist",
+        "points": [
+          "Outline: intro (state main point) → body (2–3 reasons or examples) → conclusion (restate + broader thought)",
+          "Grammar: subject-verb agreement, consistent tense, no sentence fragments, correct punctuation",
+          "Vocabulary: use varied words; avoid repeating the same adjective (good, good, good = bad)",
+          "Length: 150–300 words; don't pad with irrelevant sentences"
+        ],
+        "example": {
+          "label": "Good Intro",
+          "text": "One of my biggest achievements was earning my degree while working full-time. This required discipline, time management, and support from family."
+        },
+        "tip": "Use transition words (first, next, however, in conclusion) to link ideas. End with a strong conclusion that reflects on the lesson learned.",
+        "warn": "Repetitive or circular writing (saying the same thing twice) wastes words and suggests low English level."
+      },
+      {
+        "emoji": "🎙️",
+        "title": "Speaking Sample: Fluency & Naturalness",
+        "points": [
+          "Speak at natural pace; don't rush or drag. Pauses between thoughts are normal.",
+          "Use contractions (I'm, that's, don't) like a native speaker; don't sound stiff",
+          "Vary sentence structure: simple, compound, complex sentences all mixed",
+          "Emphasize key words naturally; avoid robotic monotone",
+          "Filler sounds (um, uh, like) hurt fluency; silence is better than filler"
+        ],
+        "example": {
+          "label": "Good vs. Bad",
+          "text": "Good: 'I would go to Japan because, um, I love the food and culture. The temples are amazing.' Bad: 'I like Japan. It is good. Japan has food. I like food.'"
+        },
+        "tip": "Record yourself speaking the same prompt 3 times; pick the most natural take for your final answer.",
+        "warn": "Sounding like you're reading a script (flat intonation, perfect but robotic) scores lower than slightly imperfect but natural speech."
+      },
+      {
+        "emoji": "🔊",
+        "title": "Read Aloud: Pronunciation & Confidence Tips",
+        "points": [
+          "Pronounce unfamiliar words phonetically; don't guess wildly",
+          "Use natural intonation: rise at end of questions, fall at end of statements",
+          "Stress correct syllables (proNOUNCE, not PROnouce); check a dictionary if unsure",
+          "Smile while speaking; it comes through in your tone even over audio",
+          "Speak loudly enough to be clearly heard; don't whisper"
+        ],
+        "example": {
+          "label": "Word Stress Matters",
+          "text": "RECORD (noun, RECord) vs. reCORD (verb, reKORD) — wrong stress changes meaning."
+        },
+        "tip": "If you mispronounce a word, keep going naturally; don't stop and correct yourself.",
+        "warn": "Extreme accent or unintelligible words (even if grammatically correct) lower Production score; clarity is key."
+      },
+      {
+        "emoji": "📚",
+        "title": "Interactive Reading: Main Idea vs. Detail Questions",
+        "points": [
+          "Main idea: 'What is the passage mostly about?' — pick the broadest, most general answer",
+          "Detail: 'According to the passage, what did X do?' — find exact words or paraphrase in text",
+          "Inference: 'What can you infer about X?' — answer must be supported by the passage, not outside knowledge",
+          "Wrong answers (distractors): often include true facts from the passage but don't answer the question"
+        ],
+        "example": {
+          "label": "Main Idea Example",
+          "text": "Passage about solar energy benefits. Q: Main idea? A) Solar panels are made of silicon (detail, not main) → Wrong. A) Solar energy is a renewable alternative to fossil fuels (main) → Correct."
+        },
+        "tip": "For detail questions, search the text for keyword matches. Don't use outside knowledge.",
+        "warn": "Picking a true statement that doesn't answer the question is a common trap."
+      },
+      {
+        "emoji": "🎧",
+        "title": "Interactive Listening: Note-Taking Technique",
+        "points": [
+          "Don't write full sentences; use abbreviations (BC = because, → = leads to, + = and, w/ = with)",
+          "Focus on WHO, WHAT, WHEN, WHERE, WHY for main idea questions",
+          "Underline or star key numbers, names, or contradictions",
+          "Leave blank lines for points you miss; keep listening rather than stopping"
+        ],
+        "example": {
+          "label": "Sample Notes",
+          "text": "Speaker A: needs new job → low salary. Speaker B: suggests startup → high risk but growth. Decision: A considers it."
+        },
+        "tip": "Review your notes immediately after listening; circle the answer to each question based on your notes.",
+        "warn": "Over-writing causes you to miss the next sentence; balance note-taking with active listening."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Adaptive Difficulty Strategy",
+        "points": [
+          "Early questions are easy: answer carefully but don't over-think; correct answers unlock harder material",
+          "Harder questions give you more points: don't panic if they seem impossible; even 1–2 correct helps",
+          "Adaptive direction: correct → harder next, incorrect → easier next. This balances your ceiling.",
+          "Your score depends on the hardest items you got right, not the total number correct"
+        ],
+        "example": {
+          "label": "Adaptive Path",
+          "text": "Q1 Easy ✓ → Q2 Harder ✓ → Q3 Hard ✓ → Q4 Very Hard ✗ → Q5 Hard (different topic) ✓ → Final score based on max difficulty reached."
+        },
+        "tip": "Don't celebrate early correct answers or feel defeated by wrong ones; focus on your next question.",
+        "warn": "Skipping or rushing early items costs points; the easier questions still contribute to your overall score."
+      },
+      {
+        "emoji": "🛠️",
+        "title": "Test Day Checklist (24 Hours Before)",
+        "points": [
+          "Internet speed: test your connection (5+ Mbps download/upload minimum)",
+          "Webcam & microphone: test both; ensure they're not covered by stickers or reflections",
+          "Room lighting: bright and even; no harsh shadows on your face",
+          "Background: clear, plain wall behind you; no visible chaos or distractions",
+          "Audio: close other tabs, silence phone, ask housemates not to make noise"
+        ],
+        "example": {
+          "label": "Quick Test",
+          "text": "Run a free Duolingo English Test practice; verify the proctoring AI can see your face clearly and mic picks up your voice."
+        },
+        "tip": "Do a full dry run of the exam software 24 hours before; fix tech issues early.",
+        "warn": "Discovering webcam or internet problems during the test = cancellation and lost fee."
+      },
+      {
+        "emoji": "🎓",
+        "title": "Worked Example: Full Question Flow",
+        "points": [
+          "Scenario: You're on Q11 of 22. Medium difficulty, no pattern yet.",
+          "Task type: Listen Then Speak. Audio asks: 'What's your favourite subject and why?'",
+          "Your approach: Listen once (1 min), jot 'fav subject = biology, why = patient, hands-on'",
+          "Response: 'My favourite subject is biology. I like it because it's hands-on and teaches me how living things work.' (45 sec)",
+          "Grade: clear, natural, on-topic → Comprehension and Conversation both score +. Harder Q12 next."
+        ],
+        "example": {
+          "label": "Q12 (Harder)",
+          "text": "Summarize the Conversation: 2-min dialogue about choosing a career. You summarize in 90 seconds."
+        },
+        "tip": "This example shows the adaptive flow; each correct answer raises the bar, but the structure and strategy stay the same.",
+        "warn": "If Q12 is too hard, your next item might drop back to medium; this is normal and helps calibrate your score."
+      },
+      {
+        "emoji": "🏁",
+        "title": "After The Test: What To Expect",
+        "points": [
+          "AI-generated score sent within 2 hours (provisional; may update after human review)",
+          "Human proctor reviews 2–5% of tests randomly; most scores final after 24 hours",
+          "If flagged for unusual patterns (e.g., perfect speaking sample + poor writing), human may adjust score",
+          "Score report includes overall + 4 subscores; sent via email and DET portal",
+          "University access: you choose which schools get your score (free send to 5 schools)"
+        ],
+        "example": {
+          "label": "Timeline",
+          "text": "12:30 pm: Finish test → 1:00 pm: AI score arrives → 2:00 pm–48 hrs: Human review possible → Score finalized."
+        },
+        "tip": "If your score is lower than expected, Duolingo allows retakes; data shows second attempts often improve Conversation and Production.",
+        "warn": "Scores are valid for 2 years. Don't wait too long to submit to universities."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Next Steps: Free Duolingo Mocks & Practice",
+        "points": [
+          "Take 2–3 free DET practice tests on Duolingo's website (simulates full adaptive experience)",
+          "Record yourself on each speaking task; compare to good models (YouTube has DET tutorials)",
+          "Write 5–10 sample essays on common prompts (travel, achievement, career, learning, relationships)",
+          "Listen to TED talks and podcasts at 1.5x speed to build comprehension stamina",
+          "Join DET study groups (Reddit, Discord) to hear others' speaking samples and get feedback"
+        ],
+        "example": {
+          "label": "7-Day Prep Plan",
+          "text": "Day 1–2: Full mock + review | Day 3–4: Task-type drills + speaking recordings | Day 5–6: Writing samples + listening practice | Day 7: Final mock + rest."
+        },
+        "tip": "Duolingo offers free practice tests (not full official tests) on their prep portal; use them to identify weak areas.",
+        "warn": "Official paid test is different from free practice; expect real test to feel harder. But strategies here apply to both."
+      },
+      {
+        "emoji": "⭐",
+        "title": "Final Mindset: DET Success Principles",
+        "points": [
+          "Adaptive = no fixed 'hard' or 'easy'; your goal is to answer thoughtfully at your current level",
+          "Natural > Perfect: sounding like a native speaker who sometimes hesitates beats flawless robot speech",
+          "Time management > Perfection: finish all sections even if some answers are rushed; partial credit beats skipped sections",
+          "Confidence shows: clear voice, steady pace, eye contact with webcam matter as much as words",
+          "Practice with real tasks: Duolingo mocks are your best friends; don't just read about the test"
+        ],
+        "example": {
+          "label": "Scoring Mindset",
+          "text": "A 125 is not 'perfect English' — it's conversational competence + strong grammar + minor mistakes accepted. Aim for 120+, celebrate 110+."
+        },
+        "tip": "On test day, treat the AI proctor like a friendly conversation partner, not a judge. Relax, speak clearly, and trust your prep.",
+        "warn": "Overthinking during the test (e.g., worrying about accent) causes stumbling and lowers fluency; stay focused on the task."
+      }
+    ]
+  }
+}

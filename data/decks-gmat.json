@@ -1,0 +1,1294 @@
+{
+  "gmat-quant": {
+    "id": "gmat-quant",
+    "exam": "gmat",
+    "examName": "GMAT Focus",
+    "section": "Quant",
+    "emoji": "🔢",
+    "title": "GMAT Quant — Tips, Tricks & Strategy",
+    "summary": "Master GMAT Focus Quantitative Reasoning: Problem Solving only, 21 questions in 45 minutes with section-level adaptive difficulty and smart time management.",
+    "slides": [
+      {
+        "emoji": "📋",
+        "title": "GMAT Focus Edition Overview",
+        "points": [
+          "Three sections: Quant, Verbal, Data Insights (45 min each)",
+          "Adaptive at section level — first 5 questions set difficulty range",
+          "Score ranges: 60–90 per section, 205–805 total (new scale)",
+          "Can bookmark and edit answers to up to 3 questions per section",
+          "No calculator in Quant; calculator in Data Insights"
+        ],
+        "example": {
+          "label": "Adaptive Flow",
+          "text": "Easy Q1→Q2→Q3 = slightly easier Q4–5. Hard Q1→Q2→Q3 = slightly harder Q4–5."
+        },
+        "tip": "Use the bookmark feature strategically on time-consuming problems; return if you finish early.",
+        "warn": "You cannot skip sections or return to previous sections once done."
+      },
+      {
+        "emoji": "⏱",
+        "title": "Quant Timing & Format",
+        "points": [
+          "21 questions in 45 minutes (~2 min 8 sec per question)",
+          "Problem Solving ONLY — Data Sufficiency removed in Focus Edition",
+          "Questions get harder/easier based on accuracy (adaptive)",
+          "No scratch paper allowed; use on-screen tools for work",
+          "Multiple choice: 5 answer choices per question"
+        ],
+        "example": {
+          "label": "Time Budget",
+          "text": "Easy questions (Q1–7): ~1:30–1:45 each. Medium (Q8–16): ~2:00–2:15. Hard (Q17–21): ~2:30–3:00."
+        },
+        "tip": "Speed comes from pattern recognition, not rushed calculation. Slow down on setup.",
+        "warn": "Do NOT aim for 100% accuracy; targeting 80–85% correct with smart time saves you."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Problem Solving Strategies",
+        "points": [
+          "Read the question twice; identify what's being asked",
+          "Ballpark before diving into algebra or long calculations",
+          "Use answer choices to guide approach (plug-in, backsolve)",
+          "Number line / coordinate system sketches save time",
+          "Avoid calculator dependency — estimate when possible"
+        ],
+        "example": {
+          "label": "Plug & Check",
+          "text": "If Q asks 'which value of x?' — plug each answer choice into the problem, starting with C or middle value."
+        },
+        "tip": "Estimate first. If 5 answer choices cluster, use that to narrow before calculating exactly.",
+        "warn": "Careless algebra mistakes (sign errors, distribution) account for ~30% of wrong answers."
+      },
+      {
+        "emoji": "🔢",
+        "title": "Arithmetic & Number Properties",
+        "points": [
+          "Integers, primes, divisibility, remainders, factors, multiples",
+          "Fractions, decimals, percentages, ratios, rates",
+          "Powers, roots, exponents, scientific notation",
+          "Absolute value, odd/even, positive/negative",
+          "GCD, LCM, number bases"
+        ],
+        "example": {
+          "label": "Remainders",
+          "text": "If 47 ÷ 5 = 9 remainder 2, then 47 = 5(9) + 2. Use remainders to solve 'what number leaves remainder 3 when divided by 7?'"
+        },
+        "tip": "Memorize: squares up to 20, primes up to 50, key fractions (1/6, 1/8, etc.).",
+        "warn": "Percent problems: 'increase by 20%' ≠ 'is 20% more.' Read modifiers carefully."
+      },
+      {
+        "emoji": "📐",
+        "title": "Algebra Fundamentals",
+        "points": [
+          "Linear equations, systems of equations, inequalities",
+          "Quadratic equations: factoring, completing the square, quadratic formula",
+          "Polynomials, exponent rules, radicals",
+          "Functions, domain and range, substitution",
+          "Graphing lines and parabolas"
+        ],
+        "example": {
+          "label": "Quadratic",
+          "text": "Solve 2x² + 5x − 3 = 0. Factor as (2x − 1)(x + 3) = 0, so x = 1/2 or x = −3."
+        },
+        "tip": "If a quadratic doesn't factor easily, use the quadratic formula; don't waste time guessing.",
+        "warn": "When solving inequalities, FLIP the sign if multiplying/dividing by a negative number."
+      },
+      {
+        "emoji": "📊",
+        "title": "Word Problems: Setup & Translation",
+        "points": [
+          "Identify unknowns and define variables clearly",
+          "Translate English to math: 'sum' = +, 'product' = ×, 'percent of' = multiply",
+          "Set up equation step-by-step; don't jump to the answer",
+          "Check units (hours, dollars, people) match throughout",
+          "Plug your answer back into the original problem"
+        ],
+        "example": {
+          "label": "Work Rate",
+          "text": "If Alice does 1/3 of a job per hour and Bob does 1/5 per hour, together they do 1/3 + 1/5 = 8/15 per hour."
+        },
+        "tip": "For rate problems, use: rate × time = work. For mixture, track each component separately.",
+        "warn": "Read carefully: 'three times as many' ≠ 'three more than.' These flip the equation."
+      },
+      {
+        "emoji": "🛣",
+        "title": "Distance, Rate & Time Problems",
+        "points": [
+          "Distance = Rate × Time. Rearrange for rate or time as needed.",
+          "Average speed ≠ average of speeds. Use total distance / total time.",
+          "Relative speed: approaching = sum of speeds, same direction = difference",
+          "Use a table for multi-leg journeys (leg 1: d, r, t; leg 2: d, r, t; total: Σd, avg r, Σt)",
+          "Watch units: convert hours/minutes, miles/km consistently"
+        ],
+        "example": {
+          "label": "Average Speed",
+          "text": "Drive 120 miles at 60 mph, then 120 miles at 40 mph. Average speed = 240 / (2 + 3) = 48 mph, not 50 mph."
+        },
+        "tip": "If told 'A leaves at 8 AM, B leaves at 9 AM,' track the head start explicitly in your table.",
+        "warn": "Do NOT average speeds by adding and dividing by 2 unless distances are equal."
+      },
+      {
+        "emoji": "💰",
+        "title": "Percentage & Profit/Loss Problems",
+        "points": [
+          "Percent = (part / whole) × 100. Watch direction: 'X is what percent of Y?'",
+          "Percent increase = (new − old) / old × 100",
+          "Compound growth: Final = Initial × (1 + rate)^n",
+          "Profit = Revenue − Cost. Profit margin = (Profit / Cost) × 100",
+          "Successive percents multiply: 10% increase then 10% decrease ≠ back to original"
+        ],
+        "example": {
+          "label": "Compound",
+          "text": "Invest $1000 at 5% annual interest for 2 years: Final = 1000 × (1.05)² = $1102.50."
+        },
+        "tip": "For successive discounts, multiply multipliers: 20% off then 10% off = 0.8 × 0.9 = 0.72 (28% off total).",
+        "warn": "Interest: simple vs compound matters. Simple = P + (P × r × t). Compound = P(1 + r)^t."
+      },
+      {
+        "emoji": "👥",
+        "title": "Combination & Permutation Basics",
+        "points": [
+          "Permutation (order matters): n! / (n−r)! or nPr. Example: arrange 3 books from 5 = 5×4×3.",
+          "Combination (order doesn't): n! / (r!(n−r)!) or nCr. Example: choose 3 books from 5 = 10.",
+          "Factorial: n! = n × (n−1) × ... × 1. (0! = 1, 1! = 1)",
+          "Probability = favorable outcomes / total outcomes",
+          "Independent events: P(A AND B) = P(A) × P(B)"
+        ],
+        "example": {
+          "label": "Combination",
+          "text": "Choose 2 people from 4 for a committee: C(4,2) = 4! / (2! × 2!) = 6 ways."
+        },
+        "tip": "Ask: does order matter? If yes, permutation. If no, combination.",
+        "warn": "Probability ≠ odds. P(event) = 1/3 means odds are 1:2 (not 1:3)."
+      },
+      {
+        "emoji": "📐",
+        "title": "Geometry: Angles, Triangles & Polygons",
+        "points": [
+          "Angle sum in triangle = 180°. In n-gon = (n−2) × 180°.",
+          "Right triangle: Pythagorean theorem a² + b² = c². Special triangles: 45-45-90, 30-60-90.",
+          "Triangle inequality: sum of any two sides > third side",
+          "Congruent triangles: SSS, SAS, ASA, AAS, HL",
+          "Similar triangles: angles equal, sides proportional. Ratio of areas = (ratio of sides)²"
+        ],
+        "example": {
+          "label": "Special Right Triangle",
+          "text": "In 45-45-90: if leg = 5, hypotenuse = 5√2. In 30-60-90: if short leg = 3, long leg = 3√3, hypotenuse = 6."
+        },
+        "tip": "Sketch triangles. Label angles and sides. Use Pythagorean theorem even if you don't see a right angle yet.",
+        "warn": "Similar ≠ congruent. Similar triangles have same shape, different size."
+      },
+      {
+        "emoji": "⭕",
+        "title": "Circles, Area & Perimeter",
+        "points": [
+          "Circle: circumference = 2πr, area = πr². Radius, diameter, chord, arc, sector.",
+          "Arc length = (θ/360°) × 2πr (θ in degrees) or θ × r (θ in radians)",
+          "Sector area = (θ/360°) × πr²",
+          "Inscribed angle = 1/2 central angle",
+          "Tangent line perpendicular to radius at point of tangency"
+        ],
+        "example": {
+          "label": "Sector",
+          "text": "Circle with radius 6, sector angle 60°. Sector area = (60/360) × π(6)² = 6π."
+        },
+        "tip": "Memorize π ≈ 3.14 or 22/7 for quick estimation in multiple-choice.",
+        "warn": "Don't confuse arc length with arc area. Arc length is a distance; sector area is area."
+      },
+      {
+        "emoji": "🎲",
+        "title": "3D Geometry: Volume & Surface Area",
+        "points": [
+          "Rectangular solid: V = l × w × h, surface area = 2(lw + lh + wh)",
+          "Cylinder: V = πr²h, lateral area = 2πrh, total surface = 2πr² + 2πrh",
+          "Sphere: V = (4/3)πr³, surface area = 4πr²",
+          "Cone: V = (1/3)πr²h, lateral area = πrl (l = slant height)",
+          "Diagonal of rectangular solid = √(l² + w² + h²)"
+        ],
+        "example": {
+          "label": "Cylinder",
+          "text": "Cylinder with r = 3, h = 10. Volume = π(3)²(10) = 90π. Surface area = 2π(3)² + 2π(3)(10) = 78π."
+        },
+        "tip": "For tricky shapes, break into simpler solids and add/subtract volumes.",
+        "warn": "Slant height ≠ height. Slant height is on the surface; height is perpendicular to base."
+      },
+      {
+        "emoji": "📍",
+        "title": "Coordinate Geometry & Distance",
+        "points": [
+          "Distance formula: d = √[(x₂ − x₁)² + (y₂ − y₁)²]",
+          "Midpoint: M = ((x₁ + x₂)/2, (y₁ + y₂)/2)",
+          "Slope: m = (y₂ − y₁) / (x₂ − x₁). Parallel slopes equal. Perpendicular slopes = negative reciprocal.",
+          "Line equation: y = mx + b (slope-intercept), or Ax + By = C (standard)",
+          "Reflection, rotation, translation preserve distance and angles"
+        ],
+        "example": {
+          "label": "Distance",
+          "text": "Points A(1, 2) and B(4, 6). Distance = √[(4−1)² + (6−2)²] = √[9 + 16] = 5."
+        },
+        "tip": "Sketch on graph paper. Visual check often catches errors faster than algebra.",
+        "warn": "Slope of vertical line is undefined (not infinity). Slope of horizontal line is 0."
+      },
+      {
+        "emoji": "📈",
+        "title": "Statistics: Mean, Median, Mode & Range",
+        "points": [
+          "Mean (average) = sum / count",
+          "Median = middle value when ordered (average of two middle if even count)",
+          "Mode = most frequent value. No mode if all values appear once.",
+          "Range = max − min",
+          "Standard deviation measures spread. Higher SD = wider spread."
+        ],
+        "example": {
+          "label": "Median",
+          "text": "Set {3, 7, 2, 9, 5}. Ordered: {2, 3, 5, 7, 9}. Median = 5 (middle). Mean = 26/5 = 5.2."
+        },
+        "tip": "If mean > median, data is skewed right (outliers pull mean up). Left skew = mean < median.",
+        "warn": "Median is less affected by outliers than mean. Use median for skewed distributions."
+      },
+      {
+        "emoji": "🎲",
+        "title": "Probability & Expected Value",
+        "points": [
+          "Probability P(event) ∈ [0, 1]. Sum of all outcomes = 1.",
+          "P(A or B) = P(A) + P(B) − P(A and B) [inclusion-exclusion]",
+          "P(A and B) = P(A) × P(B|A) [conditional]. For independent: P(A) × P(B).",
+          "Expected value E(X) = Σ(outcome × probability)",
+          "Standard deviation σ = √(variance)"
+        ],
+        "example": {
+          "label": "Independent Events",
+          "text": "Flip coin (1/2 heads), roll die (1/6 six). P(heads AND six) = 1/2 × 1/6 = 1/12."
+        },
+        "tip": "For 'at least one' problems, use complement: P(at least one) = 1 − P(none).",
+        "warn": "Conditional probability P(A|B) ≠ P(A). Include the given condition in your sample space."
+      },
+      {
+        "emoji": "🔄",
+        "title": "Sequences & Series (Arithmetic & Geometric)",
+        "points": [
+          "Arithmetic sequence: each term = previous + common difference d. nth term = a + (n−1)d.",
+          "Arithmetic sum: S_n = n/2 × (first + last)",
+          "Geometric sequence: each term = previous × common ratio r. nth term = a × r^(n−1).",
+          "Geometric sum (finite): S_n = a(1 − r^n) / (1 − r)",
+          "Geometric sum (infinite, |r| < 1): S = a / (1 − r)"
+        ],
+        "example": {
+          "label": "Arithmetic",
+          "text": "Sequence 2, 5, 8, 11, ... has d = 3. 10th term = 2 + (10−1)(3) = 29."
+        },
+        "tip": "Identify the pattern first: constant difference = arithmetic; constant ratio = geometric.",
+        "warn": "For infinite geometric series, convergence requires |r| < 1. If |r| ≥ 1, sum diverges."
+      },
+      {
+        "emoji": "🧮",
+        "title": "Exponents & Radicals Rules",
+        "points": [
+          "a^m × a^n = a^(m+n). a^m / a^n = a^(m−n). (a^m)^n = a^(mn).",
+          "a^(−n) = 1/a^n. a^(1/n) = nth root of a.",
+          "√(ab) = √a × √b. √(a/b) = √a / √b.",
+          "Rationalize: 1/√2 = √2/2. (1/(a+√b)) × (a−√b)/(a−√b) to eliminate radicals.",
+          "Note: √a² = |a| (not always a). For positive a: √a² = a."
+        ],
+        "example": {
+          "label": "Exponent Simplification",
+          "text": "Simplify 2^3 × 2^(−1) / 2^2 = 2^(3−1−2) = 2^0 = 1."
+        },
+        "tip": "Convert radicals to fractional exponents for easier algebra: ∛(x²) = x^(2/3).",
+        "warn": "√(a² + b²) ≠ a + b. Do NOT split radicals across addition/subtraction."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Common Trap: Algebra Pitfalls",
+        "points": [
+          "Distributing wrong: 2(x + 3) = 2x + 6, not 2x + 3.",
+          "Crossing products in proportion: if a/b = c/d, then ad = bc (not ac = bd).",
+          "Squaring both sides introduces extraneous solutions. Always check.",
+          "Dividing by a variable or expression may exclude solutions. Be careful with zero.",
+          "Absolute value: |x| = 5 means x = 5 OR x = −5. Don't forget the negative case."
+        ],
+        "example": {
+          "label": "Extraneous Solutions",
+          "text": "Solve √(x+2) = x. Square both sides: x+2 = x². Rearrange: x² − x − 2 = 0. Solutions: x = 2 or x = −1. Check: √(2+2) = 2 ✓; √(−1+2) = −1 ✗. Answer: x = 2 only."
+        },
+        "tip": "Always substitute your final answer back into the original equation to verify.",
+        "warn": "Negative numbers under even roots are undefined (in real numbers). Watch domain restrictions."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Test Strategy: Pacing & Bookmarks",
+        "points": [
+          "Scan all 21 questions first (30 sec). Mark any looking 'tricky' to return to.",
+          "Do confident, faster questions first. Build momentum and time bank.",
+          "Use 2-3 bookmarks on genuinely difficult or time-heavy problems.",
+          "If stuck after 1 min 30 sec, bookmark, guess, move on. Return if time allows.",
+          "Last 5 min: quick review of bookmarked Qs. Don't change correct answers."
+        ],
+        "example": {
+          "label": "Example Pacing",
+          "text": "Q1–5 (easy, ~1:30 each): 7:30 elapsed. Q6–10 (medium, ~2 min): 17:30 elapsed. Q11–21 (hard, ~2:30): 42:30 elapsed."
+        },
+        "tip": "Spend less time on early questions, more on later ones (they're worth more in adaptive scoring).",
+        "warn": "Rushing early questions for speed is a trap. Get them right; time comes naturally from confidence."
+      },
+      {
+        "emoji": "⚠️",
+        "title": "Top Mistakes in Quant",
+        "points": [
+          "Careless arithmetic: typos in long calculations. Double-check multiplications.",
+          "Misreading: 'of' = multiply; 'is' = equals. Read modifiers (percent, ratio, rate).",
+          "Wrong approach: spending 3+ min on one problem when backsolving would take 30 sec.",
+          "Forgetting to check both positive and negative solutions (e.g., √x = 3 → x = 9, not −9).",
+          "Using calculator mindlessly. Estimate first; calculator is for verification."
+        ],
+        "example": {
+          "label": "Misreading Trap",
+          "text": "Q: '3 times as many apples as oranges.' If o = oranges, then a = 3o (not a = o + 3)."
+        },
+        "tip": "On Practice tests, log your mistakes (arithmetic vs strategy vs misread). Fix patterns.",
+        "warn": "The hardest GMAT Quant problems test logic and setup, not calculator skill."
+      },
+      {
+        "emoji": "🎓",
+        "title": "Data Sufficiency Removal: What Changed",
+        "points": [
+          "GMAT Focus removed Data Sufficiency from Quant entirely.",
+          "All 21 Quant questions are now Problem Solving only.",
+          "This means 25% more word problems, rates, geometry, and algebra—not 'is this info enough' logic.",
+          "Freed-up brain space: focus on solving, not analyzing two statements.",
+          "Old GMAT prep books still mix DS questions—filter for Focus Edition only."
+        ],
+        "example": {
+          "label": "Old vs New",
+          "text": "Old GMAT Quant: 11 PS + 10 DS. New GMAT Focus Quant: 21 PS, 0 DS."
+        },
+        "tip": "If you studied Data Sufficiency, unlearning it takes mental discipline. Redirect that energy to problem-solving depth.",
+        "warn": "Do NOT use old Data Sufficiency questions for practice. They don't reflect the current test."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Advanced Technique: Backsolving",
+        "points": [
+          "Plug answer choices into the problem instead of solving algebraically.",
+          "Start with middle choice (C) if answer choices are ordered numerically.",
+          "If C is too big, try A or B next. If too small, try D or E.",
+          "Saves setup time and algebra errors on complicated word problems.",
+          "Only works for 'find the value' questions, not 'which statement' type."
+        ],
+        "example": {
+          "label": "Backsolve Example",
+          "text": "Q: 'If x is an integer and 2x + 5 = 13, find x.' Try C (x = 4): 2(4) + 5 = 13 ✓. Answer: x = 4."
+        },
+        "tip": "Backsolving is faster on time-pressure questions. Master it for test day.",
+        "warn": "Not all problems have 'nice' numeric answer choices. Backsolving fails on 'which expression' answers."
+      },
+      {
+        "emoji": "🔬",
+        "title": "Advanced Technique: Number Picking",
+        "points": [
+          "Replace variables with concrete numbers (small, positive integers or 0/1).",
+          "Plug into the question and answer choices to eliminate wrong answers.",
+          "Especially useful for ratio, percent, and algebra problems.",
+          "Avoid 0, 1, negative, or fractions on first pick unless specifically needed.",
+          "Check multiple numbers if several answers seem right."
+        ],
+        "example": {
+          "label": "Pick Numbers",
+          "text": "Q: 'If x is 20% of y, then y is what percent of x?' Pick y = 10, so x = 2. Then x/y = 2/10 = 20%. Answer is 'x is 20% of y.'"
+        },
+        "tip": "Number picking works best when the problem has 'variables in the answers' (all choices have x, y, or %).",
+        "warn": "Always verify your picked numbers satisfy the original condition. Don't introduce extraneous solutions."
+      },
+      {
+        "emoji": "📚",
+        "title": "Building Problem Intuition",
+        "points": [
+          "Solve 50+ problems of each type (rates, geometry, sequences, etc.) with a target.",
+          "Time each: track how fast you solve correctly vs how long you waste on traps.",
+          "After each problem, read the official explanation—learn the 'cleaner' method.",
+          "Group similar problems and find the underlying pattern (e.g., 'all use Pythagorean theorem').",
+          "Review wrong answers in a notebook: what triggered the mistake? (arithmetic, logic, misread?)"
+        ],
+        "example": {
+          "label": "Pattern Recognition",
+          "text": "After 10 work-rate problems, you notice: always use 1/(rate) for time per job, then sum rates. Pattern = leverage."
+        },
+        "tip": "Volume beats speed. Solve many; do not overthink 1–2 hard problems.",
+        "warn": "Studying explanations is NOT the same as solving. Always solve first, then read why your approach was wrong."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Practice Resources & Next Steps",
+        "points": [
+          "Official GMAC tests (GMATPrep) have real, adaptive questions—use these for full-length mocks.",
+          "Syllab's free GMAT mocks (gmat section drills) build timing and adaptive feedback.",
+          "Khan Academy covers fundamentals; GMAT Club forums have solved problems.",
+          "Target 80–85% accuracy on Quant (not 100%) to manage time well.",
+          "Simulate test conditions: 45 min, timed, no pausing, pen & paper for scrap work."
+        ],
+        "example": {
+          "label": "Practice Plan",
+          "text": "Weeks 1–4: drill by topic (algebra, geometry, rates 50 Qs each). Weeks 5–7: full-section tests. Week 8: review errors, resimulate."
+        },
+        "tip": "Take a full GMAT Focus mock after 3 weeks to establish baseline; use results to prioritize weak areas.",
+        "warn": "Avoid 'analysis paralysis'—practice > review for most test-takers. Solve, review errors, move on."
+      },
+      {
+        "emoji": "🏁",
+        "title": "Final Checklist: Day Before the Test",
+        "points": [
+          "Review your error log (top 5 patterns: careless math, misreading, wrong approach).",
+          "Do ONE full 45-min timed Quant section (not a full 3-section mock).",
+          "Verify you know formulas (circle, Pythagorean, rate = distance/time, etc.).",
+          "Sleep well. No cramming new topics the day before.",
+          "On test day: warm up with 3–4 easy problems. Build confidence before hard ones start adapting."
+        ],
+        "example": {
+          "label": "Warm-Up Routine",
+          "text": "Test day, before Quant starts: do 2 mental arithmetic Qs (no calculator), 1 basic algebra. Sharpen mindset."
+        },
+        "tip": "Confidence and calm matter more than last-minute cramming. Trust your 4–6 weeks of prep.",
+        "warn": "Do NOT try new techniques on test day. Stick to methods you drilled."
+      },
+      {
+        "emoji": "💡",
+        "title": "Closing: Your Quant Win",
+        "points": [
+          "GMAT Focus Quant is 21 Problem Solving questions, 45 minutes, no Data Sufficiency.",
+          "Success = accuracy (80–85%) + pacing (2–3 min/Q average) + calm under pressure.",
+          "Master the topic fundamentals first; then learn tricks and shortcuts.",
+          "Use the 3-bookmark feature to flag time-heavy or uncertain problems.",
+          "Practice with realistic mocks to build adaptive instinct."
+        ],
+        "example": {
+          "label": "Your Target",
+          "text": "Score goal: Q80–90 (75th+ percentile). Strategy: 80% accuracy, strong fundamentals, calm pacing."
+        },
+        "tip": "Every Q you solve correctly increases your odds of seeing harder, higher-scoring questions next.",
+        "warn": "There is no 'trick' to GMAT Quant—only solid fundamentals, practice, and discipline. Embrace it."
+      }
+    ]
+  },
+  "gmat-verbal": {
+    "id": "gmat-verbal",
+    "exam": "gmat",
+    "examName": "GMAT Focus",
+    "section": "Verbal",
+    "emoji": "📚",
+    "title": "GMAT Verbal — Tips, Tricks & Strategy",
+    "summary": "Master GMAT Focus Verbal: Critical Reasoning and Reading Comprehension only, 23 questions in 45 minutes with section-level adaptive pacing and real passage analysis.",
+    "slides": [
+      {
+        "emoji": "📋",
+        "title": "Verbal Section Overview (GMAT Focus Edition)",
+        "points": [
+          "23 questions in 45 minutes (~1 min 57 sec per question)",
+          "Two question types ONLY: Critical Reasoning (CR) and Reading Comprehension (RC)",
+          "NO Sentence Correction in Focus Edition (grammar-only questions removed)",
+          "Section-level adaptive: first 5 Qs set difficulty band for remaining 18",
+          "Can bookmark up to 3 questions and edit answers during the section"
+        ],
+        "example": {
+          "label": "Composition",
+          "text": "Typical mix: 10–11 CR questions + 12–13 RC questions. Passages are long (400–600 words) and require careful reading."
+        },
+        "tip": "Since no grammar rules are tested in Focus, you must focus on argument logic and comprehension, not syntax.",
+        "warn": "Old prep materials with Sentence Correction are NOT applicable to GMAT Focus. Ignore them."
+      },
+      {
+        "emoji": "⏱",
+        "title": "Verbal Timing & Pacing Strategy",
+        "points": [
+          "CR questions: ~1:30–1:45 per question (shorter passages, quicker)",
+          "RC questions: ~2:30–3:00 per question (long passages, slower)",
+          "Read the question first, then the passage, to know what to hunt for",
+          "Do easy questions first to build confidence and time bank",
+          "Flag 2–3 genuinely tough Qs; return if time remains (last 2–3 min)"
+        ],
+        "example": {
+          "label": "Time Budget",
+          "text": "10 CR @ 1:45 = 17:30. 13 RC @ 2:45 = 35:45. 9:15 min buffer for review."
+        },
+        "tip": "Easier CR questions often appear first; harder RC passages come later. Expect the difficulty ramp.",
+        "warn": "Do NOT spend 3+ min on a single RC question. Guess, flag, return after finishing the passage."
+      },
+      {
+        "emoji": "🔍",
+        "title": "Critical Reasoning: Argument Anatomy",
+        "points": [
+          "Every CR question has: premise (evidence) + conclusion (claim) + sometimes assumption",
+          "Identify what the author claims and why they claim it",
+          "Assumptions are UNSTATED beliefs the argument relies on",
+          "Logical flaws: circular reasoning, false cause, false analogy, overgeneralization",
+          "Question type tells you what to assess: strengthen, weaken, assumption, inference, paradox"
+        ],
+        "example": {
+          "label": "Argument Breakdown",
+          "text": "P: 'Vitamin D improves bone health.' P: 'Study X shows people taking Vitamin D have stronger bones.' C: 'Everyone should take Vitamin D.' (Assumption: the study is representative of all populations.)"
+        },
+        "tip": "Mark the premises with 'P' and conclusion with 'C' in your scratch work. It clarifies the argument.",
+        "warn": "Conclusion often appears at the START of the argument, not at the end. Read for signal words: 'thus,' 'so,' 'therefore.'"
+      },
+      {
+        "emoji": "💪",
+        "title": "Critical Reasoning: Strengthen the Argument",
+        "points": [
+          "Find the assumption first. Then ask: which answer supports that assumption?",
+          "Strengthen = add evidence that makes the conclusion more likely",
+          "New evidence that bridges the gap between premise and conclusion is strongest",
+          "Avoid answers that 'seem related' but don't logically support the claim",
+          "Eliminate answers that weaken, contradict, or are irrelevant"
+        ],
+        "example": {
+          "label": "Strengthen",
+          "text": "Argument: 'Coffee drinkers live longer, so coffee extends lifespan.' Assumption: correlation = causation. Strengthen: 'Studies controlling for diet and exercise still show coffee drinkers live 3 years longer.'"
+        },
+        "tip": "Strongest answers remove a reasonable objection to the argument. What would a skeptic say?",
+        "warn": "Answers that 'support the topic' are not the same as 'strengthen the argument.' Stay focused on the logic chain."
+      },
+      {
+        "emoji": "⚡",
+        "title": "Critical Reasoning: Weaken the Argument",
+        "points": [
+          "Weaken = introduce doubt about the conclusion",
+          "Attack the assumption, not the premise. Premises are given; you can't disprove them.",
+          "Alternative explanation: show the conclusion could be false even if premises are true",
+          "Eliminate the necessity of the conclusion: show the evidence could lead elsewhere",
+          "Avoid extreme weakeners; subtle logical undermining is often correct"
+        ],
+        "example": {
+          "label": "Weaken",
+          "text": "Argument: 'Ice cream sales increase in summer, so warmer weather causes people to eat ice cream.' Weaken: 'Ice cream sales also spike around holidays, when weather is cold.' (Alternative cause: holidays, not heat.)"
+        },
+        "tip": "The best weaken answers point out a logical gap the author overlooked, not a minor factual error.",
+        "warn": "Do NOT confuse 'weaken' with 'support an opposite conclusion.' You're questioning the current logic, not proving the opposite."
+      },
+      {
+        "emoji": "🤔",
+        "title": "Critical Reasoning: Assumption & Inference",
+        "points": [
+          "Assumption: unstated belief required for the argument to work. Ask: 'What MUST be true?'",
+          "Inference (conclusion): what logically follows from the premises. Ask: 'What CAN you conclude?'",
+          "Assumption answers are often negations: 'The author assumes X is NOT the case.'",
+          "Inference is weaker than logical proof; it's based on the passage, not external knowledge",
+          "For inference, choose the most supported answer, not the most extreme conclusion"
+        ],
+        "example": {
+          "label": "Assumption vs Inference",
+          "text": "Premise: 'All birds lay eggs.' Premise: 'Penguins are birds.' Assumption: 'Eggs are the typical bird offspring.' Inference: 'Penguins lay eggs.'"
+        },
+        "tip": "Negation test for assumptions: if you negate the answer and the argument falls apart, it's the assumption.",
+        "warn": "Inferences must be supported by the passage. Don't bring outside knowledge or 'common sense.'"
+      },
+      {
+        "emoji": "🎭",
+        "title": "Critical Reasoning: Paradox & Explain the Discrepancy",
+        "points": [
+          "Paradox question: two facts seem to contradict. Find the answer that resolves it.",
+          "The resolution must explain how BOTH facts can be true simultaneously",
+          "Look for hidden scope: 'coffee extends lifespan' (for whom? which group?) vs 'coffee shortens lifespan' (for different group)",
+          "Time-based resolutions: 'coffee helps short-term, hurts long-term' reconciles opposite findings",
+          "Avoid answers that simply restate the facts. You need a bridging explanation."
+        ],
+        "example": {
+          "label": "Paradox",
+          "text": "Fact 1: 'Smartphones increase teen anxiety.' Fact 2: 'Teens with smartphones report better social connections.' Resolution: 'Smartphones improve online social bonds but reduce face-to-face interactions, increasing overall anxiety.'"
+        },
+        "tip": "Paradox resolutions often exploit scope differences (adults vs teens, short-term vs long-term, online vs offline).",
+        "warn": "The 'explain the discrepancy' answer doesn't need to be what's actually true—just logically possible given the facts."
+      },
+      {
+        "emoji": "🏗",
+        "title": "Critical Reasoning: Logical Fallacies to Know",
+        "points": [
+          "Ad hominem: attacks the person, not the argument ('You're biased, so your claim is false.')",
+          "Circular reasoning: conclusion is the same as a premise ('X is true because X is true.')",
+          "False cause: 'A happened before B, so A caused B.' (Post hoc ergo propter hoc)",
+          "False analogy: two things seem similar but differ in a crucial way",
+          "Overgeneralization: 'Some Xs have property Y, therefore all Xs have Y.'"
+        ],
+        "example": {
+          "label": "Fallacy",
+          "text": "Argument: 'My neighbor smoked and got cancer, so smoking causes cancer in my neighborhood.' Fallacy: anecdote ≠ evidence, overgeneralization."
+        },
+        "tip": "Recognize fallacies during the first read. They are often the basis of weaken or flaw questions.",
+        "warn": "Not every logical jump is a 'fallacy.' The GMAT tests common, teachable flaws, not esoteric logical errors."
+      },
+      {
+        "emoji": "📖",
+        "title": "Reading Comprehension: First Read Strategy",
+        "points": [
+          "Preview the questions first (10–15 sec) to know the passage's 'hot spots' (main idea, author tone, specific details)",
+          "Read the passage ONCE, without stopping to re-read. Pace: 2.5–3 min per passage.",
+          "Mark main idea in paragraph 1 and any shifts in logic (but, however, on the other hand)",
+          "Note tone (critical, neutral, supportive) and author's purpose (explain, argue, defend, critique)",
+          "Do not highlight excessively. Annotation is a guide, not a study tool."
+        ],
+        "example": {
+          "label": "Preview & Read",
+          "text": "Questions mention 'author's view on X' and 'details about Y.' Read looking for these. Mark ¶ where X and Y appear."
+        },
+        "tip": "GMAT RC passages are dense but purposeful. Every sentence serves a function. Understand the structure.",
+        "warn": "Do NOT re-read the passage for every question. Use your margin notes and move on."
+      },
+      {
+        "emoji": "❓",
+        "title": "Reading Comprehension: Main Idea & Tone",
+        "points": [
+          "Main idea ≠ topic. Topic is the subject (e.g., 'photosynthesis'). Main idea is the author's point about it.",
+          "Tone reflects the author's attitude: critical, appreciative, neutral, skeptical, etc.",
+          "Scope: narrow ('the history of X in region Y') vs broad ('X across all regions')",
+          "Purpose: explain a phenomenon, defend a position, critique a theory, reconcile a contradiction",
+          "Wrong main-idea answers overstate, understate, or reverse the author's actual point"
+        ],
+        "example": {
+          "label": "Main Idea",
+          "text": "Topic: 'Artificial Intelligence.' Main idea: 'AI is transforming healthcare diagnostics, though privacy concerns remain unresolved.' Tone: optimistic but cautious."
+        },
+        "tip": "Main idea is the 'takeaway' after finishing the passage. It should fit in one sentence.",
+        "warn": "Avoid extremes like 'completely revolutionized' or 'utterly failed' if the passage is measured and balanced."
+      },
+      {
+        "emoji": "🔎",
+        "title": "Reading Comprehension: Inference & Evidence",
+        "points": [
+          "Inference: what follows logically from the passage, even if not explicitly stated",
+          "Look for signal words: 'suggests,' 'implies,' 'indicates,' 'most likely'",
+          "Wrong inference answers require outside knowledge or contradict the passage",
+          "Textual evidence: every correct answer has support within 5–10 lines of the passage",
+          "For 'according to the passage,' answer must match the text exactly (not close, exact)"
+        ],
+        "example": {
+          "label": "Inference",
+          "text": "Passage: 'The company reported a 30% decline in Q4 revenue but maintains aggressive expansion plans.' Inference: 'The company is optimistic despite recent losses' (supported by 'maintains expansion') vs 'The company failed' (too extreme)."
+        },
+        "tip": "For inference, choose the most conservative answer supported by the text. Avoid leaps.",
+        "warn": "Inference ≠ assumption. Inference is what the passage implies; assumption is what the author takes for granted."
+      },
+      {
+        "emoji": "✏️",
+        "title": "Reading Comprehension: Detail Questions",
+        "points": [
+          "Detail questions ask for specific facts: numbers, names, sequence, definition",
+          "Correct answers are usually reworded, not copied from the passage (watch for synonyms)",
+          "Wrong details often invert the truth: 'increased' becomes 'decreased' or 'true' becomes 'false'",
+          "Use line numbers from questions to locate the relevant section (usually 5–15 lines)",
+          "If unsure, re-read that section carefully and eliminate half-truths"
+        ],
+        "example": {
+          "label": "Detail Question",
+          "text": "Q: 'The 18th-century movement emphasized individual liberty.' Correct reword: 'The 18th-century era valued personal autonomy.' Wrong: 'The 18th century invented the concept of freedom' (too broad)."
+        },
+        "tip": "Detail questions are often faster than inference. Use them to build momentum.",
+        "warn": "Rewordings can be subtle. 'Some experts' ≠ 'all experts.' 'May' ≠ 'will.' Read carefully."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Reading Comprehension: Author's Opinion vs Fact",
+        "points": [
+          "Distinguish factual statements (neutral) from author's commentary (opinionated)",
+          "Author's opinion appears in thesis, topic sentences, conclusions, and signal phrases: 'I believe,' 'unfortunately,' 'notably'",
+          "If a passage says 'some argue X' but 'the author contends Y,' those are different",
+          "Questions like 'the author would agree' require identifying the author's stance, not just the topic",
+          "Tone and opinion are closely linked. Negative tone = critical opinion."
+        ],
+        "example": {
+          "label": "Opinion vs Fact",
+          "text": "Fact: 'The climate has warmed 1.1°C since 1850.' Opinion: 'This alarming trend demands immediate action.' (Author opinion = action is needed.)"
+        },
+        "tip": "Highlight topic sentences and the conclusion. The author's opinion is concentrated there.",
+        "warn": "Quoted or paraphrased opinions (e.g., 'Critics claim...') are NOT automatically the author's view. Determine if the author endorses them."
+      },
+      {
+        "emoji": "🔗",
+        "title": "Reading Comprehension: Structure & Organization",
+        "points": [
+          "Passages follow patterns: Problem-Solution, Compare-Contrast, Chronology, Definition-Example, Argument-Counterargument",
+          "Structural transitions: 'However,' 'yet,' 'despite' signal a contrast or pivot",
+          "Identifying structure helps answer 'why did the author include this paragraph?' questions",
+          "Questions about paragraph function: 'provide evidence,' 'introduce a counterargument,' 'offer an alternative'",
+          "Poor structure: jumping between unrelated ideas, unclear cause-and-effect"
+        ],
+        "example": {
+          "label": "Structure",
+          "text": "¶1: Problem (healthcare costs rising). ¶2: Current solution (insurance reform). ¶3: Counterargument (critics say insurance alone won't work). ¶4: Author's position (both are needed). Pattern: Argument + Counterargument + Resolution."
+        },
+        "tip": "Mapping the structure (e.g., P-S-C-R) takes 30 sec and helps answer 5+ questions.",
+        "warn": "Structure is often tested; don't overlook 'why is paragraph 3 included' type questions."
+      },
+      {
+        "emoji": "⚡",
+        "title": "Reading Comprehension: Traps & Distractors",
+        "points": [
+          "Adjacent plausible answers: two seem right, but only one matches the specific question",
+          "Out-of-scope: correct fact, but doesn't answer the question asked",
+          "Reversed logic: answer is the opposite of the passage",
+          "Overgeneralization: passage says 'some'; answer says 'all'",
+          "Emotional language: answer uses extreme words ('obviously,' 'utterly') not in the passage"
+        ],
+        "example": {
+          "label": "Trap",
+          "text": "Q: 'Why did the author mention the 1920s?' Trap A: Correct fact from the 1920s section, but not the REASON it was mentioned. Correct B: Explains how the 1920s reference supports the main argument."
+        },
+        "tip": "When multiple answers seem right, reread the question. It's usually more specific than you first noticed.",
+        "warn": "The GMAT rewards close reading. One word difference can flip an answer from wrong to right."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Verbal Strategy: Picking Your Battles",
+        "points": [
+          "Not all questions are worth the same effort. Some RC passages are harder to parse.",
+          "Read question types and estimate effort: 'main idea' is faster than 'infer the author's opinion.'",
+          "If a passage is dense, consider flagging its toughest question and returning if time allows",
+          "Accuracy > speed. A wrong answer costs more than a guessed answer.",
+          "For CR, time-consuming 'explain the paradox' questions can be worth skipping on first pass"
+        ],
+        "example": {
+          "label": "Effort Estimate",
+          "text": "Passage on 18th-century philosophy (dense, technical): Q1 main idea (1 min), Q2 detail (45 sec), Q3 inference (2 min)—SKIP Q3 if time is short."
+        },
+        "tip": "Mark a question as 'return later' if you've spent 90 sec and aren't confident. Move on.",
+        "warn": "Skipping too many Qs hurts guessing. Aim for ~1 skip per 45-min section, not more."
+      },
+      {
+        "emoji": "🔤",
+        "title": "Sentence Correction Removal: What Changed",
+        "points": [
+          "GMAT Focus removed Sentence Correction from Verbal entirely.",
+          "Grammar rules (subject-verb agreement, modifiers, tense) are NO LONGER tested.",
+          "Verbal now focuses purely on argument analysis (CR) and reading comprehension (RC).",
+          "Old GMAT prep books mix Sentence Correction questions—filter for Focus Edition only.",
+          "This shift benefits non-native English speakers (one fewer grammar-heavy section)."
+        ],
+        "example": {
+          "label": "Old vs New",
+          "text": "Old GMAT Verbal: ~6 SC + ~12 CR + ~12 RC. New GMAT Focus Verbal: 0 SC + 10–11 CR + 12–13 RC."
+        },
+        "tip": "If you studied grammar extensively, good news: you don't need it anymore. Focus on logic and comprehension.",
+        "warn": "Do NOT use old Sentence Correction materials. They test rules not in GMAT Focus."
+      },
+      {
+        "emoji": "📚",
+        "title": "Building Vocabulary for GMAT Verbal",
+        "points": [
+          "GMAT Verbal uses sophisticated but learnable vocabulary: 'ameliorate,' 'mitigate,' 'erudite,' 'specious'",
+          "Vocabulary matters most in CR (arguments use precise words) and some RC passages",
+          "Learn word roots, prefixes, suffixes to infer meaning (e.g., 'mis-' = wrong, 'mal-' = bad, 'bene-' = good)",
+          "Context clues in passages help you infer meaning even if you don't know the exact word",
+          "Practice: flashcards (Anki), etymology lists, reading dense articles (The Economist, journal articles)"
+        ],
+        "example": {
+          "label": "Root Dissection",
+          "text": "'Counterargument' = against + statement. 'Mitigating circumstances' = lessening factors. Roots unlock meaning."
+        },
+        "tip": "Learn 50–100 'high-probability GMAT words.' Frequency lists are available free online.",
+        "warn": "Memorizing a dictionary is inefficient. Focus on words that appear in GMAT prep materials, not random vocab."
+      },
+      {
+        "emoji": "🎓",
+        "title": "Critical Reasoning: Argument Types & Patterns",
+        "points": [
+          "Causal argument: 'X caused Y.' Assumption: no other cause explains Y.",
+          "Statistical argument: 'Study shows X.' Assumption: study is representative and methodology is sound.",
+          "Analogy argument: 'A is like B, so A will do what B does.' Assumption: A and B are similar in the relevant way.",
+          "Authority argument: 'Expert says X, so X is true.' Assumption: the expert is credible.",
+          "Definitional argument: 'X meets the definition of Y, so X is Y.' Assumption: the definition is correct."
+        ],
+        "example": {
+          "label": "Causal",
+          "text": "Argument: 'Sales increased after we launched ads, so ads drove sales.' Assumption: no other factor (seasonal, competitor exit, economic shift) explains the increase."
+        },
+        "tip": "Identifying the argument type helps you spot the assumption and what kind of evidence would weaken it.",
+        "warn": "Correlation ≠ causation. Many GMAT arguments confuse these. Weaken answers exploit this confusion."
+      },
+      {
+        "emoji": "🏁",
+        "title": "Verbal Practice: Build Accuracy Systematically",
+        "points": [
+          "Accuracy > speed. Aim for 75–80% on practice before targeting speed.",
+          "Do 20–30 CR questions by type: strengthen, weaken, assumption, inference, paradox.",
+          "Read 3–4 RC passages per week. Vary difficulty and subject (science, history, social science).",
+          "Time yourself only after mastering accuracy. Then optimize pacing.",
+          "Log errors: missed inference, misread a detail, overlooked scope. Fix patterns, not one-offs."
+        ],
+        "example": {
+          "label": "Practice Schedule",
+          "text": "Week 1: 30 CR (10 strengthen, 10 weaken, 10 assumption). Week 2: 4 RC passages + 20 CR mixed. Week 3: full-section timed (23 Qs, 45 min)."
+        },
+        "tip": "Review explanations even for correct answers. They reveal faster solution paths.",
+        "warn": "Memorizing arguments or passages doesn't improve skill. Practice diverse passages to build intuition."
+      },
+      {
+        "emoji": "💡",
+        "title": "Advanced: Cross-Passage Comparison (Dual RC)",
+        "points": [
+          "Some RC sections include a paired-passage format: two shorter passages on related topics",
+          "Compare structure, tone, and argument between the two passages",
+          "Questions ask: 'How do the authors differ?' 'Which passage supports X?'",
+          "Strategy: read both passages first (no interleaving), then answer all questions together",
+          "Comparison questions often require inference about how authors would react to each other's ideas"
+        ],
+        "example": {
+          "label": "Comparison",
+          "text": "Passage 1: AI is beneficial. Passage 2: AI poses privacy risks. Q: 'How would Author 2 respond to Author 1's argument?' Answer: 'Author 2 would note that benefits don't address privacy.' (Inference from Passage 2's concern.)"
+        },
+        "tip": "Skim both passages to find the key disagreement first. Then answer comparison Qs.",
+        "warn": "Do NOT confuse Passage 1's view with Passage 2's. Mark 'A1 says X' and 'A2 says Y' to avoid mix-ups."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Final Checklist: Verbal Mastery",
+        "points": [
+          "CR: identify premise, conclusion, assumption. Weaken = attack assumption or find alternative cause.",
+          "RC: preview questions, read once for structure and tone, use margin notes, don't re-read unless lost.",
+          "Pacing: 1:45 per CR, 2:45 per RC Qs. Flag 2–3 toughest; return if time allows.",
+          "Vocabulary: learn 50–100 'high-prob GMAT words' and root patterns.",
+          "Accuracy target: 80% on practice before optimizing speed."
+        ],
+        "example": {
+          "label": "Your Score Target",
+          "text": "Verbal goal: V40–45 (75th+ percentile). Strategy: 80% accuracy, strategic skipping, confident fundamentals."
+        },
+        "tip": "Verbal rewards careful reading and logical thinking more than any 'trick.' Invest in understanding.",
+        "warn": "Rushing Verbal questions is the #1 mistake. Read completely, analyze fully, answer confidently."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Practice Resources & Next Steps",
+        "points": [
+          "Official GMAC tests (GMATPrep) have real, adaptive Verbal sections—essential for pacing.",
+          "Syllab's free GMAT mocks provide Verbal-specific drills and adaptive feedback.",
+          "GMAT Club forums have solved CR and RC explanations for deeper understanding.",
+          "Read challenging articles (The Economist, science journals) to build comprehension speed.",
+          "Take one full 45-min Verbal section every week to simulate test conditions."
+        ],
+        "example": {
+          "label": "Weekly Practice",
+          "text": "Mon/Wed: 20 CR by type + 15 min reading (article). Tue/Thu: 2 RC passages + 15 CR mixed. Sat: full-section mock."
+        },
+        "tip": "Engage with passages actively. Ask, 'Why did the author write this?' for every main idea question.",
+        "warn": "Passive reading (highlighting without thinking) doesn't build inference skills. Annotate purposefully."
+      },
+      {
+        "emoji": "💬",
+        "title": "Verbal Test Day: Confidence & Execution",
+        "points": [
+          "Warm-up: read 2 short articles (5 min) to get into 'reading mode' before the test.",
+          "Mental reset between questions: breathe, clear your head, focus on the next Q.",
+          "Do NOT second-guess correct answers. If you're confident, move on.",
+          "Flag tough Qs but don't dwell. Guess and move on if you're past 2 min.",
+          "Last 2–3 min: quick gut check on flagged Qs. Change only if you spot a clear error."
+        ],
+        "example": {
+          "label": "Test Day Flow",
+          "text": "Read 1 article (3 min). Sit for Verbal. Q1–5 (build momentum). Q6–23 (pace, flag as needed). Last 2 min: review flags."
+        },
+        "tip": "Confidence comes from practice, not luck. By test day, you've solved 100+ CR and RC Qs. Trust it.",
+        "warn": "Anxiety is normal. Expect hard passages and tricky questions. They're testing everyone equally."
+      },
+      {
+        "emoji": "🌟",
+        "title": "Closing: Your Verbal Win",
+        "points": [
+          "GMAT Focus Verbal is 23 questions (10–11 CR + 12–13 RC), 45 minutes, no grammar.",
+          "Success = accurate argument analysis, careful reading, and strategic pacing.",
+          "Master CR fundamentals: premise, conclusion, assumption, common fallacies.",
+          "Master RC: read for structure, answer from the text, avoid outside knowledge.",
+          "Practice with official materials and real passages. Consistency beats intensity."
+        ],
+        "example": {
+          "label": "Your Target",
+          "text": "Score goal: V40–45 (75th+ percentile). Strategy: 80% accuracy, solid argument intuition, confident comprehension."
+        },
+        "tip": "Verbal skill improves slowly but steadily. Invest 6–8 weeks of consistent practice for a 10-point gain.",
+        "warn": "There is no shortcut to Verbal mastery—only active reading, argument dissection, and deliberate error review."
+      }
+    ]
+  },
+  "gmat-di": {
+    "id": "gmat-di",
+    "exam": "gmat",
+    "examName": "GMAT Focus",
+    "section": "Data Insights",
+    "emoji": "📈",
+    "title": "GMAT Data Insights — Tips, Tricks & Strategy",
+    "summary": "Master GMAT Focus Data Insights: Data Sufficiency, Multi-Source Reasoning, Table Analysis, Graphics Interpretation, and Two-Part Analysis with data interpretation and logical analysis.",
+    "slides": [
+      {
+        "emoji": "📋",
+        "title": "Data Insights Section Overview (GMAT Focus Edition)",
+        "points": [
+          "20 questions in 45 minutes (~2 min 15 sec per question)",
+          "Five question types: Data Sufficiency (DS), Multi-Source Reasoning (MSR), Table Analysis (TA), Graphics Interpretation (GI), Two-Part Analysis (TPA)",
+          "Integrated reasoning section—combines math, logic, and data analysis",
+          "Section-level adaptive: first 5 Qs set difficulty band for remaining 15",
+          "Calculator allowed (on-screen tool). Can bookmark up to 3 questions."
+        ],
+        "example": {
+          "label": "Composition",
+          "text": "Typical: 3–4 DS + 2–3 MSR (one set of sources) + 2–3 TA + 2–3 GI + 2–3 TPA = 20 total."
+        },
+        "tip": "Unlike Quant, all DI questions count equally toward your 60–90 DI score. One wrong = one point lost.",
+        "warn": "There is NO partial credit. Each question is binary: correct or incorrect. All or nothing."
+      },
+      {
+        "emoji": "⏱",
+        "title": "Data Insights Timing & Pacing Strategy",
+        "points": [
+          "DS questions: ~1:30–2:00 (short, quick logic)",
+          "MSR questions: ~3:00–4:00 (read sources, answer 3–4 Qs per set)",
+          "TA questions: ~2:30–3:00 (scan table, apply conditions)",
+          "GI questions: ~2:00–2:30 (read graph, extract data)",
+          "TPA questions: ~2:00–2:30 (understand relationship, solve both parts)"
+        ],
+        "example": {
+          "label": "Time Budget",
+          "text": "4 DS @ 1:45 = 7 min. 3 MSR @ 3:30 = 10:30. 3 TA @ 2:45 = 8:15. 3 GI @ 2:15 = 6:45. 3 TPA @ 2:15 = 6:45. Total: ~40 min + 5 min buffer."
+        },
+        "tip": "If a question feels like it will take 3+ min, bookmark and move on. Return if time allows.",
+        "warn": "Don't get stuck on one MSR source set—it contains 3–4 Qs. If one Q is hard, answer the other easy ones first."
+      },
+      {
+        "emoji": "✋",
+        "title": "Data Sufficiency: Concept & Approach",
+        "points": [
+          "Question format: 'Is statement 1 sufficient? Is statement 2 sufficient? Is both together sufficient?'",
+          "Answer choices (always the same 5): A (1 only), B (2 only), C (both), D (each alone), E (neither)",
+          "Sufficiency = can you determine a unique answer? (Yes/No counts as 'sufficient.')",
+          "Do NOT solve the problem. Only assess whether you COULD solve it with the given info.",
+          "Test both statements independently first, then together if neither alone was sufficient"
+        ],
+        "example": {
+          "label": "Sufficiency, Not Solution",
+          "text": "Q: 'Is x > 0?' S1: 'x² = 4.' (Sufficient: x = 2 or x = −2, so you know x could be negative or positive—answer is No.) S2: 'x × 3 = 12.' (Sufficient: x = 4, answer is Yes.)"
+        },
+        "tip": "Abbreviate: S1/S2 sufficient (✓) or insufficient (✗). After testing both, pick your answer from the 5 choices.",
+        "warn": "Sufficiency ≠ uniqueness. You don't need ONE answer; you need to know the answer EXISTS (even if it's no)."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Data Sufficiency: Testing Method & Common Mistakes",
+        "points": [
+          "Test statement 1 alone: assume it's true, ignore statement 2. Can you answer the question?",
+          "Test statement 2 alone: assume it's true, ignore statement 1. Can you answer the question?",
+          "If either alone is sufficient, write 'D' (each alone sufficient) or 'A'/'B' (one is sufficient).",
+          "If neither alone works, test both together. If together is sufficient, answer 'C.' If not, answer 'E.'",
+          "Trap: assuming information from the question text. Only use the statements."
+        ],
+        "example": {
+          "label": "Testing Order",
+          "text": "Q: 'What is the value of x?' S1: 'x + 5 = 10.' (✓ sufficient: x = 5.) S2: 'x² = 25.' (✗ insufficient: x = 5 or x = −5.) Answer: A (statement 1 only)."
+        },
+        "tip": "Write out 'S1 sufficient?' and 'S2 sufficient?' side by side. Avoid re-reading the question.",
+        "warn": "If you're not sure, guess A, B, C, or D (avoid E unless you're confident both statements are useless)."
+      },
+      {
+        "emoji": "🔧",
+        "title": "Data Sufficiency: Algebraic Sufficiency Tricks",
+        "points": [
+          "One equation, one unknown = usually sufficient (e.g., 2x + 3 = 7 → x = 2).",
+          "One equation, two unknowns = usually insufficient (e.g., x + y = 10 has infinite solutions).",
+          "Two equations, two unknowns = usually sufficient (if independent).",
+          "Watch out: sometimes one statement can be derived from another (not independent).",
+          "Inequalities: x > 5 tells you x is bounded below, but 'what is x?' is still unanswered (insufficient)."
+        ],
+        "example": {
+          "label": "Trick",
+          "text": "S1: x + y = 10. S2: 2x + 2y = 20. Together: S2 is just 2 × S1 (same line). NOT sufficient. Answer: E."
+        },
+        "tip": "For two equations, check if one is a multiple of the other (dependent) or truly independent.",
+        "warn": "Be careful: two equations can look different but be equivalent. Simplify before deciding."
+      },
+      {
+        "emoji": "📊",
+        "title": "Multi-Source Reasoning: Reading & Logic",
+        "points": [
+          "Format: 3–4 information sources (tabs, passages, tables) + 3–4 related questions",
+          "Questions may ask: 'Which statement is true?' 'What can be inferred?' 'Is the claim supported?'",
+          "Answer types: True/False, Yes/No, For each statement pick Yes/No (3 binary answers)",
+          "Strategy: understand the sources first, then answer Qs that reference specific sources",
+          "Don't assume info from outside sources. Base answers ONLY on the given data."
+        ],
+        "example": {
+          "label": "MSR Format",
+          "text": "Tab 1: Company financials 2022–2024. Tab 2: Market report. Tab 3: CEO statement. Q: 'Is the CEO's claim about market share supported by Tab 2?' Answer: Yes/No based on Tab 2 data."
+        },
+        "tip": "Read the question first to know which source(s) to focus on. Skim the others quickly.",
+        "warn": "Common trap: mixing data from different years or companies. Note the context of each source."
+      },
+      {
+        "emoji": "✅",
+        "title": "Multi-Source Reasoning: True/False & Inference",
+        "points": [
+          "True statement: directly stated or logically derived from the sources",
+          "False statement: contradicts the sources or is unsupported",
+          "Inference: conclusion that follows logically from the data, even if not explicitly stated",
+          "Do NOT bring outside knowledge. Answer based solely on what's given.",
+          "For 'most likely' or 'can be inferred' questions, the answer should feel almost certain from the sources"
+        ],
+        "example": {
+          "label": "Inference",
+          "text": "Source: 'Revenue increased 15% YoY. Operating costs increased 5% YoY.' Inference: 'Profit margin improved.' (True: more revenue, less cost growth = higher margin.)"
+        },
+        "tip": "Reread the source if an answer surprises you. GMAT rarely tricks; re-reading often clarifies.",
+        "warn": "Avoid extreme inferences ('definitely,' 'impossible'). Stick to what the data directly supports."
+      },
+      {
+        "emoji": "📊",
+        "title": "Table Analysis: Sorting & Filtering",
+        "points": [
+          "Format: a large data table with sortable columns (click to sort A–Z or Z–A)",
+          "Questions: 'How many rows meet X criteria?' 'What's the sum of Y where Z > 100?'",
+          "Strategy: read the question, identify the column(s) needed, sort if helpful, extract data",
+          "Answers: usually numbers (counts, sums, averages) or Yes/No (statement true/false)",
+          "Sorting is often the key: sort by relevant column to group data visually"
+        ],
+        "example": {
+          "label": "TA Strategy",
+          "text": "Q: 'How many products have sales > $1M and profit margin > 20%?' 1. Sort by Sales (Z–A) to see high sales. 2. Scan Margin column. 3. Count rows meeting both criteria."
+        },
+        "tip": "Sketch the calculation before clicking sort. Know what you're looking for.",
+        "warn": "Sorting changes the order but doesn't change the data. Always verify totals are unchanged after sorting."
+      },
+      {
+        "emoji": "📈",
+        "title": "Table Analysis: Aggregation & Calculation",
+        "points": [
+          "Common questions: sum, average, count, percentage, ratio",
+          "Sum: total all values in a column or subset",
+          "Average: sum / count",
+          "Percentage: (part / whole) × 100 or part / whole as decimal",
+          "Ratio: A : B (simplify if needed)",
+          "Always double-check arithmetic, especially with large numbers"
+        ],
+        "example": {
+          "label": "Calculation",
+          "text": "Table: Q1 sales $10M, Q2 $12M, Q3 $15M, Q4 $13M. Q: 'What % of annual sales occurred in Q3?' Answer: 15 / (10+12+15+13) = 15/50 = 30%."
+        },
+        "tip": "Use the calculator for verification, not as a crutch. Know the formula first.",
+        "warn": "Be careful with units: $M vs $K vs %. Mismatched units cause wrong answers."
+      },
+      {
+        "emoji": "📉",
+        "title": "Graphics Interpretation: Reading Charts & Graphs",
+        "points": [
+          "Formats: bar charts, line graphs, pie charts, scatter plots, histograms",
+          "Key elements: title, axes labels, units, legend, data points",
+          "Questions: 'What was the value in 2020?' 'Which year had the highest X?' 'What's the trend?'",
+          "Answer format: usually fill-in-the-blank (number) or dropdown (select from options)",
+          "Strategy: identify the axis (x/y), find the data point, read the value"
+        ],
+        "example": {
+          "label": "GI Read",
+          "text": "Bar chart: Y-axis = Revenue ($M), X-axis = Year (2020–2024). Q: 'Revenue in 2022?' Find 2022 bar height, read Y-value (e.g., $50M)."
+        },
+        "tip": "Check axis labels and units FIRST. A '$M' label means multiply by 1,000,000.",
+        "warn": "Don't eyeball. Use gridlines or the value label on the graph. Estimating leads to errors."
+      },
+      {
+        "emoji": "📊",
+        "title": "Graphics Interpretation: Trends & Comparisons",
+        "points": [
+          "Trend questions: is the trend increasing, decreasing, or flat? At what rate?",
+          "Comparison: which category/year has the highest/lowest value? What's the difference?",
+          "Slope/rate: rise / run. Steep slope = fast change; flat = little change",
+          "Outliers: look for unusual spikes or dips. They're often tested.",
+          "Correlation: two variables move together (positive) or opposite directions (negative)"
+        ],
+        "example": {
+          "label": "Trend",
+          "text": "Line graph: 2020 Revenue $40M, 2021 $50M, 2022 $55M, 2023 $56M. Trend: increasing but slowing (gap shrinking). Rate: +$10M (2020–2021), +$5M (2021–2022), +$1M (2022–2023)."
+        },
+        "tip": "Note rate changes. 'Accelerating' vs 'decelerating' trends are common questions.",
+        "warn": "Correlation ≠ causation. Two variables moving together doesn't mean one caused the other."
+      },
+      {
+        "emoji": "🔗",
+        "title": "Two-Part Analysis: Relationship & Constraints",
+        "points": [
+          "Format: two related questions (Part A and Part B) sharing context",
+          "Part A: identify one value/variable. Part B: identify another value/variable.",
+          "Constraint: Part B often depends on Part A's answer (or they're independent)",
+          "Answers: usually numbers (calculated) or selections from a list",
+          "Strategy: solve Part A, use it to constrain Part B, verify both answers are logical"
+        ],
+        "example": {
+          "label": "TPA Structure",
+          "text": "Context: profit = revenue − cost. Part A: 'If revenue = $100M and cost = $30M, profit = ___.' Answer: $70M. Part B: 'If profit must be $50M, cost = ___.' Answer: $50M (using Part A logic or independently)."
+        },
+        "tip": "The two parts are often related but sometimes independent. Read the context carefully.",
+        "warn": "Do not assume Part B uses Part A's answer unless the context explicitly links them."
+      },
+      {
+        "emoji": "🧮",
+        "title": "Two-Part Analysis: Optimization & Trade-offs",
+        "points": [
+          "Optimization: find the best value under constraints (maximize profit, minimize cost)",
+          "Trade-off: choose between conflicting goals (high quality vs low cost)",
+          "Constraints: limits on variables (budget, time, resources)",
+          "Sensitivity: how much can one variable change before the answer shifts?",
+          "Both parts must satisfy the overall objective stated in the context"
+        ],
+        "example": {
+          "label": "Trade-off",
+          "text": "Context: Allocate $100 budget between marketing (returns $2 per $1 spent) and R&D (returns $3 per $1 spent). Part A: 'Maximize ROI. Allocate to marketing: ___.' Answer: $0 (R&D has higher return). Part B: 'Allocate to marketing if minimum $10M marketing expense required: ___.' Answer: $10M."
+        },
+        "tip": "Optimization questions test your ability to compare options. Set up a comparison table.",
+        "warn": "Always check constraints. A 'best' answer that violates a constraint is wrong."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Data Insights Test Strategy: Question Selection",
+        "points": [
+          "Not all question types are equally hard. DSs and GIs tend to be faster.",
+          "MSR sets often have 1–2 easy Qs and 1–2 harder Qs. Do the easy ones first.",
+          "If a DI question feels like 3+ min, bookmark and move on. Guess strategically.",
+          "All questions worth 1 point. Prioritize accuracy over completeness.",
+          "Aim for 13–15 correct out of 20 for a strong score (V60–70 range)."
+        ],
+        "example": {
+          "label": "Priority Order",
+          "text": "1. Do all easy DS Qs (1:30 each). 2. Do GI Qs (2:00 each). 3. TA Qs (2:30 each). 4. MSR easy Qs per set. 5. Return to tough Qs / guess if time runs out."
+        },
+        "tip": "Bookmark freely. DI is time-pressured; strategic guessing is expected.",
+        "warn": "Avoid getting trapped in one hard MSR set. Answer the other Qs in the set, then revisit."
+      },
+      {
+        "emoji": "⚠️",
+        "title": "Common Traps in Data Insights",
+        "points": [
+          "Misreading axes or units (interpreting 'millions' as 'thousands')",
+          "Assuming data when it's not provided. Only use the sources given.",
+          "Arithmetic errors: miscalculating percentages or ratios under time pressure",
+          "Over-interpreting: inferring causation from correlation or trends",
+          "Ignoring constraints in TPA: finding an optimal answer that violates a requirement"
+        ],
+        "example": {
+          "label": "Trap",
+          "text": "Graph Y-axis labeled '$M' (millions). You read $50 as 'fifty dollars' instead of '50 million dollars.' Off by 1,000,000x."
+        },
+        "tip": "After entering an answer, pause and verify units/scale. One second of checking saves wrong answers.",
+        "warn": "Pressure makes careless errors. Double-check all arithmetic and unit conversions."
+      },
+      {
+        "emoji": "📚",
+        "title": "Integrating Data & Logic: Hybrid Thinking",
+        "points": [
+          "DI questions blend math (calculation) with reasoning (logic and inference)",
+          "Don't over-rely on calculator. First understand what the question is asking logically.",
+          "Estimate before calculating. Ballpark answers often reveal arithmetic errors.",
+          "Use verbal reasoning: 'revenue increased 20%, costs increased 5%, so profit margins improved' (logic first).",
+          "Then verify with math. Combining both saves time and catches errors."
+        ],
+        "example": {
+          "label": "Hybrid",
+          "text": "Q: 'Profit margin for 2023?' Step 1 (Logic): 'Margin = (Revenue − Cost) / Revenue. Higher revenue and controlled cost growth = higher margin.' Step 2 (Math): Calculate exactly."
+        },
+        "tip": "Talk through the logic before calculating. This clarifies what you're solving.",
+        "warn": "Purely mathematical solving without understanding the question leads to wrong interpretations."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Advanced: Multi-Step MSR Logic Chains",
+        "points": [
+          "Some MSR questions form a chain: Q1's answer informs Q2, which informs Q3",
+          "If you get Q1 wrong, Q2's 'correct' answer may hinge on your wrong Q1 answer",
+          "Strategy: verify Q1's answer before moving to Q2. Don't cascade errors.",
+          "Alternative: answer all Qs independently using the source data (ignore other Qs)",
+          "This approach takes more time but avoids cascading errors"
+        ],
+        "example": {
+          "label": "Chain",
+          "text": "Q1: 'Total revenue 2020–2024?' A1: $250M. Q2: 'Average revenue?' Expected: $250M / 5 = $50M. But if your Q1 answer was wrong, Q2 will be wrong too."
+        },
+        "tip": "For chained Qs, solve independently if unsure about Q1. Sacrifice speed for accuracy.",
+        "warn": "If a Q1 answer seems obviously wrong, recalculate before proceeding to Q2."
+      },
+      {
+        "emoji": "🔬",
+        "title": "Data Insights Practice: Build Speed & Accuracy",
+        "points": [
+          "Start untimed: master accuracy on all DI question types (aim 90%+)",
+          "Then introduce time: aim for 2–3 min per Q, achieving 75–80% accuracy",
+          "Full-section mocks: 20 Qs in 45 min, simulating real conditions",
+          "Log errors: careless math, misreading, overcomplicated logic",
+          "Review explanations. DI explanations often reveal faster solution paths."
+        ],
+        "example": {
+          "label": "Practice Plan",
+          "text": "Week 1: 30 untimed DI Qs (10 DS, 10 TA/GI, 10 TPA). Week 2: same, timed (45 min, 85%+). Week 3: full-section mocks."
+        },
+        "tip": "Speed comes naturally from repeated practice. Forcing speed first leads to errors.",
+        "warn": "Do NOT skip to timed practice too early. Build accuracy first; speed follows."
+      },
+      {
+        "emoji": "📖",
+        "title": "Data Sufficiency Deep Dive: Tricky Cases",
+        "points": [
+          "Negative results: 'Is x > 5?' Statement: 'x = 3.' Answer: Yes, sufficient (it's definitively NOT greater than 5).",
+          "Range vs unique: 'What is x?' Statement: 'x ∈ [1, 5].' Insufficient (multiple possible values).",
+          "Hidden assumptions: 'Is the car fast?' needs a definition of 'fast.' Without it, insufficient.",
+          "Variables in statements: sometimes a statement introduces new variables (e.g., 'y = 2x'). Can you still answer the original question?",
+          "Real GMAT twists: rarely tested in basic form. Expect subtle traps."
+        ],
+        "example": {
+          "label": "Negative Result",
+          "text": "Q: 'Is x an even number?' S1: 'x = 5.' (✓ sufficient: it's odd, not even. Sufficient because the answer is definitively No.)"
+        },
+        "tip": "Yes/No questions are sufficient if you can answer definitively, even if the answer is No.",
+        "warn": "Ranges and inequalities are tricky. 'x > 5' is insufficient for 'what is x?' but sufficient for 'is x > 3?' (yes, always)."
+      },
+      {
+        "emoji": "🎓",
+        "title": "Final Checklist: Data Insights Mastery",
+        "points": [
+          "Data Sufficiency: test S1, test S2, test both. Know the 5 answer choices cold.",
+          "MSR: read sources, answer Qs based ONLY on given data.",
+          "Table Analysis: sort as needed, calculate sums/averages/percentages, verify units.",
+          "Graphics Interpretation: read axes and units, locate data points, avoid eyeballing.",
+          "TPA: solve Part A, use it (if dependent) to constrain Part B. Verify both satisfy context."
+        ],
+        "example": {
+          "label": "Your Score Target",
+          "text": "DI goal: 60–70 (75th+ percentile). Strategy: 75–80% accuracy, strategic bookmarking, fast fundamentals."
+        },
+        "tip": "DI is the lowest-scored section on average. A 60+ is competitive. Aim for 13–15 correct out of 20.",
+        "warn": "Do NOT panic if you don't finish all 20 Qs. Answering 15–17 with high accuracy is better than rushing all 20."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Practice Resources & Next Steps",
+        "points": [
+          "Official GMAC tests (GMATPrep) have authentic DI questions—essential for pacing.",
+          "Syllab's free GMAT mocks include full DI sections and detailed explanations.",
+          "GMAT Club forums have discussed tricky DI questions; search for specific question types.",
+          "Khan Academy covers fundamentals (statistics, algebra, chart reading).",
+          "Take one full 45-min DI section every week to build speed."
+        ],
+        "example": {
+          "label": "Weekly Schedule",
+          "text": "Mon: 5 DS (timed). Tue: 1 MSR set + 2 TA (timed). Wed: 3 GI + 2 TPA (timed). Thu: full-section mock. Review errors daily."
+        },
+        "tip": "DI improves fastest with volume practice. 50+ full-section Qs will reveal patterns and edge cases.",
+        "warn": "Do NOT memorize answers to practice Qs. Each question type has variations; focus on method."
+      },
+      {
+        "emoji": "💡",
+        "title": "Closing: Your Data Insights Win",
+        "points": [
+          "GMAT Focus Data Insights is 20 questions (mix of 5 types), 45 minutes, calculator allowed.",
+          "Success = careful data reading, logical inference, and strategic time management.",
+          "Master each type independently: DS (logic), MSR (inference), TA (calculation), GI (reading), TPA (optimization).",
+          "Accuracy > speed. Aiming for 75–80% accuracy with smart bookmarking is the strategy.",
+          "Practice with realistic mocks and official materials to build intuition and confidence."
+        ],
+        "example": {
+          "label": "Your Target",
+          "text": "DI goal: 60–70 out of 90 scale. Strategy: 75–80% accuracy, strategic skipping, confident fundamentals."
+        },
+        "tip": "DI is learned skill, not inherited talent. Consistent practice over 6–8 weeks builds mastery.",
+        "warn": "No trick questions in DI—only careful reading, clear logic, and arithmetic accuracy. Trust your prep."
+      }
+    ]
+  }
+}

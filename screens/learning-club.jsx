@@ -593,7 +593,7 @@ function DailyChallenge() {
   );
 }
 
-function LearningClub({ onNav, exams }) {
+function LearningClub({ onNav, exams, embedded }) {
   const examIds = ["ielts","toefl","pte","celpip","duolingo","gre","gmat"];
   const [activeExam, setActiveExam] = useStateLC("ielts");
   const [activeTab, setActiveTab] = useStateLC("Writing");
@@ -645,10 +645,8 @@ function LearningClub({ onNav, exams }) {
     return true;
   });
 
-  return (
+  const body = (
     <>
-      <window.LP_TopBar current="learning" onNav={onNav} />
-
       <section className="lc-hero">
         <div className="shell">
           <div className="eyebrow" style={{ marginBottom: 12 }}>Learning Club · Free</div>
@@ -706,10 +704,10 @@ function LearningClub({ onNav, exams }) {
           {activeTab === "Tips & Mistakes" && <TipsMistakes content={content} examId={activeExam} />}
         </div>
       </div>
-
-      <window.LP_Footer />
     </>
   );
+  if (embedded) return body;
+  return (<><window.LP_TopBar current="learning" onNav={onNav} />{body}<window.LP_Footer /></>);
 }
 
 function topicTag(prompt) {

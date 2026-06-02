@@ -1,0 +1,910 @@
+{
+  "ielts-reading": {
+    "id": "ielts-reading",
+    "exam": "ielts",
+    "examName": "IELTS",
+    "section": "Reading",
+    "emoji": "📖",
+    "title": "IELTS Reading — Tips, Tricks & Strategy",
+    "summary": "Master the IELTS Academic Reading section with proven time management, question-type strategies, and high-band techniques.",
+    "slides": [
+      {
+        "emoji": "📖",
+        "title": "Welcome to IELTS Reading",
+        "points": [
+          "IELTS Academic Reading tests comprehension of complex texts",
+          "60 minutes to read 3 long passages and answer 40 questions",
+          "Covers themes: science, history, social policy, business",
+          "Band 9 achievable with systematic approach"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Format & Timing Overview",
+        "points": [
+          "Passage 1: ~600 words, 13 questions (15 min recommended)",
+          "Passage 2: ~700 words, 13 questions (18 min recommended)",
+          "Passage 3: ~900 words, 14 questions (22 min recommended)",
+          "5 min buffer to review answers and check spelling"
+        ],
+        "tip": "Allocate time by passage length and complexity, not equally"
+      },
+      {
+        "emoji": "📊",
+        "title": "Band Scores & Raw Marks",
+        "points": [
+          "Band 9.0: 39-40 correct (100%)",
+          "Band 8.5: 37-38 correct (92-95%)",
+          "Band 8.0: 35-36 correct (87-90%)",
+          "Band 7.0: 30-32 correct (75-80%)",
+          "Band 6.0: 23-25 correct (57-62%)"
+        ],
+        "tip": "Missing even 1-2 questions drops you from Band 9 to 8.5"
+      },
+      {
+        "emoji": "✅",
+        "title": "Multiple Choice (A/B/C/D)",
+        "points": [
+          "Usually 1-2 questions per passage, but growing in frequency",
+          "Test main idea, detail, or inference",
+          "Distractor: plausible but contradicts passage or too specific",
+          "Read ALL four options before choosing"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Q: What does the author imply about renewable energy? A) It's too expensive. B) It's essential for climate stability (CORRECT - supported by passage). C) It's already replaced fossil fuels. D) It requires no innovation."
+        },
+        "warn": "Don't pick the first 'correct-sounding' option — verify it matches the passage exactly"
+      },
+      {
+        "emoji": "📝",
+        "title": "True/False/Not Given (T/F/NG)",
+        "points": [
+          "NOT GIVEN ≠ FALSE: 'not mentioned' is not a contradiction",
+          "True: explicitly stated or directly implied in passage",
+          "False: explicitly contradicted by passage",
+          "Not Given: no info either way in the text"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Passage: 'Modern solar panels are 20% efficient.' Q: 'Solar panels are 25% efficient.' → FALSE (contradicts). Q: 'Solar panels are made from silicon.' → NG (not stated)."
+        },
+        "warn": "Confusing NG with False is the most common mistake; re-read before choosing NG"
+      },
+      {
+        "emoji": "🔤",
+        "title": "Matching Headings",
+        "points": [
+          "Match paragraph to heading — heading summarizes main idea of para",
+          "Headings are often 1-2 sentences; pick the MOST specific",
+          "Main idea ≠ supporting details; ignore examples",
+          "Usually 7-8 headings for 5-6 paragraphs (some headings unused)"
+        ],
+        "tip": "Mark main idea in pencil first, skim all headings, then match"
+      },
+      {
+        "emoji": "🎯",
+        "title": "Matching Headings: Strategy",
+        "points": [
+          "Read each paragraph's first and last sentences first",
+          "Look for topic sentence (usually early in paragraph)",
+          "Eliminate headings unrelated to that topic",
+          "If stuck, re-read para — sometimes you misread the focus"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Para A: 'The Atlantic Ocean covers 20% of Earth. Its currents drive global climate.' Heading options: 'Ocean currents' / 'Why oceans are vast' / 'History of ocean exploration' → Choose 'Ocean currents' (main idea)"
+        },
+        "warn": "Don't choose a heading just because one word matches; ensure it's the main theme"
+      },
+      {
+        "emoji": "🔗",
+        "title": "Matching Information (Para → Info)",
+        "points": [
+          "Which paragraph contains the info? Not about true/false, just location",
+          "One paragraph may match multiple info items",
+          "Skim for keywords from the info statement",
+          "Check context to confirm info is there, not contradicted"
+        ],
+        "tip": "Use Ctrl+F mentally — hunt for key noun/verb from the info statement"
+      },
+      {
+        "emoji": "⬜",
+        "title": "Sentence Completion / Summary Completion",
+        "points": [
+          "Fill in the blank with 1-3 words from the passage",
+          "Word limit is STRICT — exceed it and you lose the mark",
+          "Grammar of sentence tells you what part of speech you need",
+          "Word(s) must appear in passage verbatim (no synonyms)"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Sentence: 'The organization was _______ in 1985.' Passage: 'established in 1985'. Answer: 'established' (not 'founded' even if passage says both)"
+        },
+        "warn": "Paraphrased synonyms don't count — you MUST copy exact words from passage"
+      },
+      {
+        "emoji": "❓",
+        "title": "Short-Answer Questions",
+        "points": [
+          "Answer in 1-3 words (word limit specified; follow strictly)",
+          "Copy words from passage exactly",
+          "Answer must be grammatically correct sentence fragment",
+          "If no direct answer, infer only where clearly implied"
+        ],
+        "tip": "Reread the question for 'who/what/where' to know what to hunt for"
+      },
+      {
+        "emoji": "📍",
+        "title": "Locating Answer: Keyword Hunt",
+        "points": [
+          "Underline 2-3 key nouns/verbs from question",
+          "Skim passage for same words or close synonyms",
+          "When you find the keywords, read that sentence + context carefully",
+          "Mark location to avoid losing your spot"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Q: 'What material was used to build the bridge?' Hunt for 'bridge' + material words like 'steel', 'concrete', 'iron' in passage"
+        }
+      },
+      {
+        "emoji": "🧩",
+        "title": "Question Order Usually Follows Text Order",
+        "points": [
+          "Q1-10 usually follow Passage 1 order (not always exact)",
+          "This helps you navigate: if you're stuck on Q5, skip ahead to Q6 location",
+          "Exception: vocabulary or main-idea Qs may jump around",
+          "Use this to your advantage — don't re-read whole passage for every Q"
+        ],
+        "tip": "If you find answer to Q7 while searching for Q6, mark both"
+      },
+      {
+        "emoji": "🚫",
+        "title": "Common Trap: Plausible But Wrong",
+        "points": [
+          "Answer sounds true but passage says something different",
+          "Passage may mention the topic but not the specific claim",
+          "Your knowledge ≠ what the passage says (ignore real-world knowledge)",
+          "Example: 'Is the Eiffel Tower 300m tall?' Passage doesn't say — answer is NG, not yes"
+        ],
+        "warn": "Just because something is TRUE in real life doesn't mean it's the right answer here"
+      },
+      {
+        "emoji": "🔄",
+        "title": "Handling Unfamiliar Vocabulary",
+        "points": [
+          "Guess from context: read surrounding sentences",
+          "Look for prefix/suffix clues (un-, re-, -tion, -able)",
+          "If word is obscure but not critical to answer, skip and move on",
+          "Mark uncertain vocab words to review after if time permits"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Sentence: 'The mechanism was obsolete by 2000.' Context: 'replaced by newer tech' → Guess 'obsolete' means 'outdated', enough to answer the question"
+        }
+      },
+      {
+        "emoji": "⚡",
+        "title": "Speed Up: Scanning vs. Reading",
+        "points": [
+          "Scan (run eyes fast over text for keywords) for location",
+          "Read carefully (slowly, word-by-word) only the answer zone",
+          "Never read entire passage word-for-word first — question-led approach faster",
+          "Exception: some Qs (main idea, T/F) need para-by-para read"
+        ],
+        "tip": "Passage 1 scan takes 2 min; answer hunt takes 8-10 min"
+      },
+      {
+        "emoji": "📌",
+        "title": "Passage 1: Starter Passage (Easier)",
+        "points": [
+          "Vocabulary: everyday + some academic",
+          "Structure: clear, linear (topic → details → conclusion)",
+          "Qs: often straightforward detail + heading match",
+          "Invest 15 min here to build confidence and score 12-13/13"
+        ],
+        "tip": "Passage 1 is your warm-up; aim for perfection and set tone"
+      },
+      {
+        "emoji": "🔶",
+        "title": "Passage 2: Medium Passage",
+        "points": [
+          "Vocabulary: dense academic, unfamiliar terms common",
+          "Structure: may jump between ideas; requires inference",
+          "Qs: T/F/NG, some inference, maybe one multiple choice",
+          "Allocate 18 min; expect 1-2 difficult Qs"
+        ],
+        "warn": "Passage 2 is where focus matters most — don't rush"
+      },
+      {
+        "emoji": "🔴",
+        "title": "Passage 3: Hardest Passage",
+        "points": [
+          "Vocabulary: technical, low-frequency words",
+          "Structure: abstract, theoretical, non-linear arguments",
+          "Qs: inference-heavy, matching information, vocabulary in context",
+          "Allocate 22 min; expect 3-4 tough Qs"
+        ],
+        "tip": "If Passage 3 seems impossible, skip hard Qs and revisit with 2 min left"
+      },
+      {
+        "emoji": "⏳",
+        "title": "Time Management Plan",
+        "points": [
+          "Min 0-3: Read instructions, mentally note question types",
+          "Min 3-5: Skim all three passages (1 min each) to gauge difficulty",
+          "Min 5-27: Tackle Passages 1-2 (15 + 18 = 33 min total — take 22)",
+          "Min 27-50: Passage 3 (22 min)",
+          "Min 50-60: Review answers, check spelling, transfer to answer sheet"
+        ]
+      },
+      {
+        "emoji": "✍️",
+        "title": "Spelling & Grammar Matter",
+        "points": [
+          "Misspelled words = incorrect, even if answer recognizable",
+          "Copy exactly from passage for fill-in-the-blank Qs",
+          "Capital letters: only if word appears capitalized in passage",
+          "Check for 's' vs 'es' (students vs. student) — match passage exactly"
+        ],
+        "warn": "Even one letter wrong loses the mark — slow down on final transfer"
+      },
+      {
+        "emoji": "🔍",
+        "title": "Reviewing Your Answers (Last 5 Min)",
+        "points": [
+          "Check: Did I answer every question? (40 Qs total)",
+          "Check: Are short answers ≤ word limit? Count words",
+          "Check: Is spelling exact from passage?",
+          "Only change answer if you're confident — first instinct usually right"
+        ],
+        "tip": "Mark any Q where you guessed; review those first in final 5 min"
+      },
+      {
+        "emoji": "🎓",
+        "title": "Band 8+ Strategy: Precision Over Speed",
+        "points": [
+          "Aim for 37-40 correct (missing 0-3 answers only)",
+          "Slow down; re-read any sentence where answer isn't crystal clear",
+          "Mark uncertain Qs; if time allows, revisit with fresh eyes",
+          "Never guess randomly at last second — leaving blank is safer than wrong"
+        ],
+        "tip": "Band 8 is precision, not speed — allocate full 60 min, don't rush"
+      },
+      {
+        "emoji": "📋",
+        "title": "Full Worked Example: Passage Excerpt",
+        "points": [
+          "Passage: 'Deep-sea creatures evolved unique adaptations. Bioluminescence aids hunting. Pressure-resistant bodies allow survival at 5000m depth.'",
+          "Q: Which adaptation helps with hunting? Answer: 'Bioluminescence' (direct quote)",
+          "Q: Are deep-sea creatures found at 10000m? Passage says 5000m max → FALSE",
+          "Q: Do creatures use radar? NOT in passage → NOT GIVEN"
+        ]
+      },
+      {
+        "emoji": "🔧",
+        "title": "Matching Headings: Worked Example",
+        "points": [
+          "Para A: 'Whales migrate annually. Routes span 12000 miles. Scientists use satellite tags to track journeys.'",
+          "Main idea: Whale migration routes / tracking",
+          "Heading A: 'Methods for tracking whale migration' (matches focus)",
+          "Heading B: 'Why whales are endangered' (off-topic)",
+          "Choose A: it's specific to what para discusses"
+        ]
+      },
+      {
+        "emoji": "❌",
+        "title": "Top 5 Mistakes to Avoid",
+        "points": [
+          "1. Confusing NG with False — re-read before deciding NG",
+          "2. Exceeding word limit on completion Qs — count carefully",
+          "3. Using outside knowledge — only trust passage",
+          "4. Misreading question — re-read Q, not just answer options",
+          "5. Poor spelling on fill-in-the-blank — match passage exactly"
+        ]
+      },
+      {
+        "emoji": "💡",
+        "title": "Last-Minute Band 7-8 Tips",
+        "points": [
+          "If you miss 3-5 Qs: Band 7.5. If 6-8 Qs: Band 7. Work backward from target",
+          "Prioritize Passage 1 (easier) and Passage 2 (sweet spot) for accuracy",
+          "On Passage 3 hard Qs, make educated guess rather than leaving blank",
+          "Practice under timed conditions at least 5 times before exam"
+        ]
+      },
+      {
+        "emoji": "🎯",
+        "title": "Next Steps: Practice & Mastery",
+        "points": [
+          "Take 2-3 full timed mock tests (60 min, all sections)",
+          "Review EVERY wrong answer — what did you miss?",
+          "Use our free IELTS Reading mocks to build speed and confidence",
+          "Target: 3+ practice tests before your exam date"
+        ]
+      }
+    ]
+  },
+  "ielts-writing": {
+    "id": "ielts-writing",
+    "exam": "ielts",
+    "examName": "IELTS",
+    "section": "Writing",
+    "emoji": "✍️",
+    "title": "IELTS Writing — Tips, Tricks & Strategy",
+    "summary": "Score Band 7-9 in IELTS Academic Writing with task structure, grammar, vocabulary strategies, and high-band techniques.",
+    "slides": [
+      {
+        "emoji": "✍️",
+        "title": "Welcome to IELTS Writing",
+        "points": [
+          "60 minutes for two tasks: Task 1 (20 min) + Task 2 (40 min)",
+          "Task 1: Describe a chart, graph, process, or map (150+ words)",
+          "Task 2: Argumentative essay (250+ words, 4-5 paragraphs)",
+          "Scored on Task Achievement, Coherence, Lexis, Grammar"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "Scoring: 4 Criteria",
+        "points": [
+          "Task Achievement (25%): Did you address all parts fully? Accuracy of info?",
+          "Coherence & Cohesion (25%): Is it organized? Do paragraphs flow logically?",
+          "Lexical Resource (25%): Vocabulary range, accuracy, appropriate register",
+          "Grammatical Range & Accuracy (25%): Complex sentences, minimal errors"
+        ],
+        "tip": "All four matter equally — don't neglect any one"
+      },
+      {
+        "emoji": "📈",
+        "title": "Band 9.0-8.0 Thresholds",
+        "points": [
+          "Band 9.0: All criteria at 9 level. Sophisticated vocabulary, flawless grammar.",
+          "Band 8.5: Minor errors in rare constructions. Task fully met.",
+          "Band 8.0: Rare errors. Good organization, extended vocabulary.",
+          "Band 7.5: Occasional errors. Clear structure, good word choice.",
+          "Band 7.0: Some errors but basic criteria met. Adequate vocabulary."
+        ]
+      },
+      {
+        "emoji": "📋",
+        "title": "Task 1: What You Might See",
+        "points": [
+          "Bar chart / Line graph / Pie chart (60% of tests)",
+          "Process diagram (how something works, steps 1-2-3)",
+          "Map comparison (2 maps showing changes over time)",
+          "Multiple elements (e.g., bar chart + table together)"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Task 1: Time Allocation (20 min)",
+        "points": [
+          "Min 0-2: Read prompt, identify chart type and key features",
+          "Min 2-4: Plan: what's the overview? What data stands out?",
+          "Min 4-18: Write (3-4 paragraphs, ~150-180 words)",
+          "Min 18-20: Proofread, check spelling, verify numbers"
+        ]
+      },
+      {
+        "emoji": "📐",
+        "title": "Task 1: Paragraph Structure",
+        "points": [
+          "Para 1 (Intro): What is the chart? What does it show? (1-2 sentences, ~20 words)",
+          "Para 2 (Overview): Key trend or most notable feature (1-2 sentences, ~40 words)",
+          "Para 3-4 (Details): Specific data, comparisons, changes over time (~100 words)"
+        ],
+        "tip": "Intro + Overview first — examiners check if you understood the data"
+      },
+      {
+        "emoji": "📊",
+        "title": "Task 1: Key Language for Charts",
+        "points": [
+          "Trends: rose to, reached a peak, declined sharply, fluctuated, remained stable",
+          "Comparisons: exceeded, surpassed, was significantly higher than, in contrast",
+          "Quantities: approximately, roughly, about, upwards of, in the region of",
+          "Timing: From 2010 to 2015, over the period, initially, subsequently"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Instead of: 'The line went up.' Write: 'Sales rose steadily from 2015 to 2018, reaching a peak of 8 million in 2017.'"
+        }
+      },
+      {
+        "emoji": "🔄",
+        "title": "Task 1: Process Diagram Strategy",
+        "points": [
+          "Identify stages/steps (usually 4-8 stages shown)",
+          "Describe in order: 'First... Next... Then... Finally...'",
+          "Use passive voice: 'The ore is extracted...' (natural for processes)",
+          "Include who/what does each step, what the output is"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Process: Coffee production. 'First, coffee berries are picked. They are then dried and ferries. The beans are roasted and ground, then packaged.'"
+        }
+      },
+      {
+        "emoji": "🗺️",
+        "title": "Task 1: Map Comparison (Two Versions)",
+        "points": [
+          "Identify what changed between Map A (before) and Map B (after)",
+          "Use: was replaced by, was converted into, has been extended, remains unchanged",
+          "Spatial language: to the north, along the eastern edge, in the center",
+          "Group similar changes (e.g., all new buildings, all removed features)"
+        ],
+        "tip": "Don't describe the whole map — only what CHANGED"
+      },
+      {
+        "emoji": "📝",
+        "title": "Task 1: Dos and Don'ts",
+        "points": [
+          "DO cite specific numbers from chart, verify them against visual",
+          "DO use comparative language ('more than', 'less than', 'similar to')",
+          "DON'T write too much detail — stay ~150-180 words",
+          "DON'T interpret beyond data (e.g., 'sales fell because the economy crashed' — not stated)"
+        ],
+        "warn": "Numbers must match the chart exactly — misquoting data loses marks"
+      },
+      {
+        "emoji": "📚",
+        "title": "Task 2: The Essay (40 min, 250+ words)",
+        "points": [
+          "Question types: Opinion (agree/disagree), Discussion (both sides), Problem-solution",
+          "Structure: Intro (30-40 words) + Body (3 paragraphs, 60-80 words each) + Conclusion (40-50 words)",
+          "Total: 250-280 words ideal (not 500+; quality over quantity)"
+        ]
+      },
+      {
+        "emoji": "💭",
+        "title": "Task 2: Opinion Essays (Agree/Disagree)",
+        "points": [
+          "Question: 'Do you agree that working from home is better?' → Clear position needed",
+          "Intro: Paraphrase question, state your opinion clearly",
+          "Body: 2 main reasons/examples supporting your view",
+          "Conclusion: Restate opinion, summarize key points"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Question: 'Working from home is more productive. Agree or disagree?' Intro: 'While some argue remote work boosts productivity, I believe office environments are essential for collaboration.'"
+        }
+      },
+      {
+        "emoji": "⚖️",
+        "title": "Task 2: Discussion Essays (Both Sides)",
+        "points": [
+          "Question: 'What are the advantages and disadvantages of online education?'",
+          "Intro: Present the topic neutrally (not your opinion)",
+          "Body: Para 1 (advantages), Para 2 (disadvantages) with examples",
+          "Conclusion: Summarize both sides, optional personal view"
+        ],
+        "tip": "Balance advantages and disadvantages equally — don't favor one side heavily"
+      },
+      {
+        "emoji": "🔧",
+        "title": "Task 2: Problem-Solution Essays",
+        "points": [
+          "Question: 'What problems does plastic pollution cause? What are solutions?'",
+          "Intro: State the problem and its relevance",
+          "Body: Para 1 (problems, with examples), Para 2 (solutions, with feasibility)",
+          "Conclusion: Summarize, emphasize need for action"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Problem: Ocean plastic harms marine life. Solution: Mandatory plastic taxes, reusable bag initiatives in stores."
+        }
+      },
+      {
+        "emoji": "📍",
+        "title": "Task 2: Introduction Writing",
+        "points": [
+          "Hook (optional): Start with relevant background or fact",
+          "Rephrase: Use your own words, not exact question wording",
+          "Thesis: State your position clearly ('I agree...', 'The main problem is...', 'There are both advantages and disadvantages')",
+          "Length: 2-3 sentences, ~30-40 words"
+        ],
+        "warn": "Avoid copying the question — paraphrase intelligently"
+      },
+      {
+        "emoji": "📄",
+        "title": "Task 2: Body Paragraph Structure",
+        "points": [
+          "Topic sentence: Main idea of paragraph (first sentence, no examples yet)",
+          "Explanation: Develop the idea in 1-2 sentences",
+          "Example: Concrete example or evidence supporting the idea",
+          "Link: Relate back to essay question or main thesis"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Topic: 'Remote work reduces office costs.' Explanation: 'Companies save on rent and utilities.' Example: 'Microsoft saved $1 billion annually.' Link: 'This financial advantage supports the shift to flexible work.'"
+        }
+      },
+      {
+        "emoji": "💬",
+        "title": "Task 2: Vocabulary for Band 7-8",
+        "points": [
+          "Use synonyms for common words: make → generate, create, produce",
+          "Transition phrases: Furthermore, In addition, However, On the other hand, Conversely",
+          "Formal phrases: It is widely acknowledged that..., It is undeniable that..., To sum up...",
+          "Avoid: very, really, nice, good (use sophisticated alternatives)"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Weak: 'The internet is very good for communication.' Strong: 'The internet has revolutionized global communication networks.'"
+        }
+      },
+      {
+        "emoji": "🔗",
+        "title": "Task 2: Cohesion (Linking Ideas)",
+        "points": [
+          "Use linkers to connect sentences: Moreover, However, For instance, In contrast",
+          "Pronoun reference: 'This issue', 'Such problems', 'These solutions' (shows you're linking back)",
+          "Repetition of key term: If topic is 'remote work', repeat it or use 'this trend'",
+          "Avoid: Random paragraph breaks; ensure flow from idea to idea"
+        ],
+        "tip": "Band 8+ essays feel connected, not like separate sentences"
+      },
+      {
+        "emoji": "✅",
+        "title": "Task 2: Conclusion Writing",
+        "points": [
+          "Restate thesis without copying: 'In conclusion, I believe that...' or 'In summary...'",
+          "Summarize main points (don't add new ideas)",
+          "Optional: Broader implication or call to action",
+          "Length: 2-3 sentences, ~40-50 words"
+        ],
+        "warn": "Don't introduce new arguments in conclusion — you're out of space to develop them"
+      },
+      {
+        "emoji": "❌",
+        "title": "Grammar: Common Errors (Lose Band Points)",
+        "points": [
+          "Subject-verb disagreement: 'Data are' (not 'data is'), 'The majority are'",
+          "Wrong preposition: 'benefit from' (not 'benefit of'), 'result in' (not 'result to')",
+          "Tense inconsistency: Don't switch from past to present randomly",
+          "Fragment: 'Because the economy declined.' is incomplete — needs main clause"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Wrong: 'The data shows that...' Right: 'The data show that...' (data is plural)"
+        }
+      },
+      {
+        "emoji": "📐",
+        "title": "Sentence Variety: Band 8 Hallmark",
+        "points": [
+          "Mix simple, compound, complex sentences (not all one type)",
+          "Complex: 'Although remote work has benefits, office collaboration remains essential.'",
+          "Subordinate clauses: 'Given that technology advances rapidly, companies must adapt.'",
+          "Variety prevents monotony and shows range"
+        ],
+        "tip": "If all sentences are similar length/structure, add a few longer complex ones"
+      },
+      {
+        "emoji": "🔍",
+        "title": "Proofreading Checklist (Last 3 Min)",
+        "points": [
+          "Check: Did I write 150+ words (Task 1)? 250+ words (Task 2)?",
+          "Check: Are all sentences complete (no fragments)?",
+          "Check: Subject-verb agreement, tense consistency, spelling",
+          "Check: Is punctuation correct (commas, periods, apostrophes)?"
+        ]
+      },
+      {
+        "emoji": "⏰",
+        "title": "Time Management: Full 60 Minutes",
+        "points": [
+          "Task 1 (20 min): 2 min plan + 15 min write + 3 min proofread",
+          "Task 2 (40 min): 5 min brainstorm + 30 min write + 5 min proofread",
+          "Allocate: Most time to Task 2 because it's worth more + harder"
+        ]
+      },
+      {
+        "emoji": "🎯",
+        "title": "Band 8 Strategy: Avoiding Common Pitfalls",
+        "points": [
+          "Avoid generic statements: Replace 'In today's world...' with specific contexts",
+          "Avoid informal language: No contractions (don't, can't), no slang",
+          "Avoid repeating questions verbatim: Paraphrase intelligently in intro",
+          "Avoid overcomplicating: Clear, well-supported points > long rambling"
+        ],
+        "tip": "Clarity and precision beat fancy words that you're unsure about"
+      },
+      {
+        "emoji": "📖",
+        "title": "Next Steps: Practice & Mastery",
+        "points": [
+          "Write 2-3 full essays (1 opinion, 1 discussion, 1 problem-solution) under timed conditions",
+          "Analyze Band 9 sample answers from official IELTS resources",
+          "Get feedback on grammar and vocabulary — identify your patterns of error",
+          "Use our free IELTS Writing mocks for timed practice and feedback"
+        ]
+      }
+    ]
+  },
+  "ielts-speaking": {
+    "id": "ielts-speaking",
+    "exam": "ielts",
+    "examName": "IELTS",
+    "section": "Speaking",
+    "emoji": "🗣️",
+    "title": "IELTS Speaking — Tips, Tricks & Strategy",
+    "summary": "Master the IELTS Speaking test with fluency, lexical range, and confidence strategies for Parts 1, 2, and 3.",
+    "slides": [
+      {
+        "emoji": "🗣️",
+        "title": "Welcome to IELTS Speaking",
+        "points": [
+          "11-14 minutes total: 3 parts with increasing difficulty",
+          "Face-to-face conversation with examiner (or video in some centers)",
+          "Assessed on Fluency, Lexical Range, Grammar, Pronunciation",
+          "Band 9 achievable with preparation and practice"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Format & Timing",
+        "points": [
+          "Part 1 (4-5 min): Introductory questions about yourself, home, work, hobbies",
+          "Part 2 (3-4 min): You speak; examiner listens. 'Describe a [person/place/experience]'",
+          "Part 3 (4-5 min): Discussion of abstract topics related to Part 2 theme",
+          "No notes allowed in Part 1 or 3; you get a card + 1 min to prepare Part 2"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "Scoring Criteria",
+        "points": [
+          "Fluency & Coherence (25%): Do you speak smoothly? Pause too much? Stay on topic?",
+          "Lexical Range (25%): Vocabulary variety, precision, avoid repetition",
+          "Grammatical Range & Accuracy (25%): Complex structures, minimal errors",
+          "Pronunciation (25%): Clarity, intonation, accent doesn't matter if intelligible"
+        ]
+      },
+      {
+        "emoji": "🎯",
+        "title": "Band 9.0-8.0 Benchmarks",
+        "points": [
+          "Band 9: Fluent, no hesitation. Advanced vocabulary, rare errors. Clear pronunciation.",
+          "Band 8.5: Mostly fluent. Good lexical range, occasional errors. Intelligible.",
+          "Band 8.0: Fluent with occasional pauses. Good vocabulary, mostly accurate grammar.",
+          "Band 7.5: Fluent with some hesitation. Adequate vocabulary and grammar.",
+          "Band 7.0: Fluent but some repetition. Basic vocabulary, some grammatical errors."
+        ]
+      },
+      {
+        "emoji": "👋",
+        "title": "Part 1: Introduction Questions (4-5 min)",
+        "points": [
+          "Examiner asks 4-5 questions about your background, hobbies, plans",
+          "Questions are straightforward; no trick questions",
+          "Aim to give extended answers (not yes/no), elaborate with reasons/details",
+          "Pronunciation, grammar, vocabulary all assessed here — speak clearly"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Q: 'What do you like to do in your free time?' Not: 'I play football.' Better: 'I enjoy playing football because it keeps me fit and I can socialize with friends. I play twice a week.'"
+        }
+      },
+      {
+        "emoji": "💬",
+        "title": "Part 1: Extending Your Answers",
+        "points": [
+          "Answer the question fully, then add WHY or HOW or WHEN",
+          "Use: because, so that, in order to (give reasons)",
+          "Avoid one-sentence replies; aim for 3-4 sentences per question",
+          "Show personality and natural speech, not memorized responses"
+        ],
+        "tip": "Examiners can tell rehearsed answers — speak naturally, not like reading"
+      },
+      {
+        "emoji": "🗂️",
+        "title": "Part 1: Common Topics (Prepare These)",
+        "points": [
+          "Work/Study: What do you do? Why did you choose it? What do you like?",
+          "Home: Where do you live? How long? What's it like? Who do you live with?",
+          "Free time: Hobbies, sports, entertainment, favorite things to do",
+          "Travel: Countries visited, would like to visit, why, with whom"
+        ],
+        "tip": "Prepare 2-3 sentences on each topic; you can adapt to various questions"
+      },
+      {
+        "emoji": "📋",
+        "title": "Part 2: Cue Card Monologue (3-4 min)",
+        "points": [
+          "You receive a card with a topic and 3-4 prompts (e.g., 'Describe a place you like')",
+          "You have 1 minute to prepare; you can make notes",
+          "Speak for 2-3 minutes non-stop (examiner won't interrupt)",
+          "If you finish early, examiner asks follow-up questions to fill time"
+        ],
+        "tip": "The 1-min prep is valuable — use it to outline 4-5 main points"
+      },
+      {
+        "emoji": "📝",
+        "title": "Part 2: Cue Card Structure",
+        "points": [
+          "Intro (30 sec): 'I'd like to describe...' or 'The place I'll talk about is...'",
+          "Main content (1.5 min): 3-4 main ideas (what it is, where, when, who, why, feeling)",
+          "Conclusion (30 sec): 'That's why I like it' or 'It was a memorable experience'",
+          "Aim for natural pacing; pause for effect, not to think"
+        ]
+      },
+      {
+        "emoji": "🎭",
+        "title": "Part 2: Common Topics & Approaches",
+        "points": [
+          "Person: Describe a friend/family member. Why do you like them? How often meet?",
+          "Place: Describe a place you've been. Location, what's there, why you like it",
+          "Experience: Describe an experience (trip, achievement, interesting event). When, who, why memorable",
+          "Object: Describe something you own. What is it, when got it, why important"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Cue card: 'Describe a place you'd like to visit.' Answer: 'I'd like to visit New Zealand because of its stunning landscapes. It has mountains, fjords, and forests. I'd like to hike there with friends.'"
+        }
+      },
+      {
+        "emoji": "💪",
+        "title": "Part 2: Building Fluency (No Long Pauses)",
+        "points": [
+          "Practice speaking for 2 minutes on a topic without stopping",
+          "Use fillers sparingly: 'um' and 'uh' are okay, but 'like' in every sentence isn't",
+          "Slow down; clearer speech > fast rambling",
+          "If you forget a word, define it: 'It's a tool for cutting... like scissors but bigger'"
+        ],
+        "warn": "Silence longer than 3-4 seconds is marked down for fluency"
+      },
+      {
+        "emoji": "📚",
+        "title": "Part 3: Abstract Discussion (4-5 min)",
+        "points": [
+          "Examiner asks 4-5 abstract questions related to Part 2 theme",
+          "Questions are more challenging; you're expected to argue, compare, give opinions",
+          "Example Part 2 theme: 'a place.' Part 3: 'Why do people like traveling?' 'How has tourism changed?'",
+          "This part separates Band 7 from Band 8+ speakers"
+        ]
+      },
+      {
+        "emoji": "🧠",
+        "title": "Part 3: Handling Difficult Questions",
+        "points": [
+          "It's okay to take 3-4 seconds to think; say 'Well, that's an interesting question...'",
+          "If you don't understand, ask: 'Do you mean...?' or 'Could you rephrase that?'",
+          "Don't say 'I don't know' — instead say 'I haven't thought much about it, but I suppose...'",
+          "Give balanced views: 'Some people argue... others believe... Personally, I think...'"
+        ],
+        "tip": "Part 3 shows critical thinking — your opinion matters, not right/wrong answers"
+      },
+      {
+        "emoji": "💡",
+        "title": "Part 3: Language for Discussion",
+        "points": [
+          "Compare: Whereas, In contrast, On the other hand, Similarly",
+          "Explain: This is because, The reason is, As a result, Consequently",
+          "Qualify: To some extent, Arguably, In my opinion, I'd say that",
+          "Conclude: Overall, In conclusion, So, To summarize"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Q: 'Do you think travel is important?' A: 'Definitely. To some extent, travel broadens your perspective. You experience different cultures and meet diverse people. However, some people prefer to stay home, which is equally valid.'"
+        }
+      },
+      {
+        "emoji": "🔤",
+        "title": "Vocabulary: Band 8+ Lexical Range",
+        "points": [
+          "Use precise words: 'fascinating' instead of 'nice', 'beneficial' instead of 'good'",
+          "Avoid repetition: Replace repeated words with synonyms or pronouns",
+          "Use collocations: 'play a role', 'have an impact', 'overcome challenges'",
+          "Idioms okay if natural, but risky if wrong — use sparingly"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Avoid: 'It's good. It's a good experience. Good for you.' Better: 'It's beneficial. It's an enriching experience. It has positive effects.'"
+        }
+      },
+      {
+        "emoji": "✏️",
+        "title": "Grammar: Speaking Patterns",
+        "points": [
+          "Use present tense naturally: 'I love...' (not past unless describing experience)",
+          "Complex sentences: 'Although I prefer coffee, many people choose tea.' (shows range)",
+          "Avoid excessive errors: Pronunciation errors okay, but grammar mistakes lose marks",
+          "Contractions are fine in speaking ('I've', 'I'm' = natural and clear)"
+        ],
+        "warn": "Repeated grammar errors (wrong tense, subject-verb agreement) flag lower band"
+      },
+      {
+        "emoji": "🎤",
+        "title": "Pronunciation: Band 8+ Standard",
+        "points": [
+          "You don't need a native accent — clarity and intelligibility matter",
+          "Word stress: emPHAsis, inforMAtion, proNUNCiation (practice stress patterns)",
+          "Intonation: Rise at end of questions, fall at end of statements",
+          "Avoid mumbling; pronounce word endings clearly"
+        ],
+        "example": {
+          "label": "Example",
+          "text": "Word stress patterns: TECHnology (not techNOLogy), conTRIBute (not CONtribute). Practice these until natural."
+        }
+      },
+      {
+        "emoji": "😌",
+        "title": "Handling Nerves & Mistakes",
+        "points": [
+          "It's normal to be nervous — examiners expect it and are sympathetic",
+          "If you make a small error, don't apologize or repeat yourself — move on",
+          "Smile, make eye contact, breathe deeply before speaking",
+          "Self-correction is fine if natural ('I meant... sorry, I should say...')"
+        ],
+        "tip": "Confidence and continuing fluently are better than perfect grammar with pauses"
+      },
+      {
+        "emoji": "🎯",
+        "title": "Full Mock: Part 1 Example",
+        "points": [
+          "Q: 'Tell me about your hometown.' A: 'I come from Delhi, a large city in India. It's quite crowded but vibrant. I lived there until age 18, then moved for studies. I miss the food and the bustling street markets.'",
+          "Length: 3-4 sentences, natural flow, no hesitation"
+        ]
+      },
+      {
+        "emoji": "📖",
+        "title": "Full Mock: Part 2 Example",
+        "points": [
+          "Cue: 'Describe a hobby you enjoy.' Answer: 'I'd like to talk about photography. I started practicing it 3 years ago after getting a camera from my parents. I love capturing landscapes and portraits, especially during golden hour. It's meditative and creative. I often share photos on social media. I'd like to pursue it professionally someday.'",
+          "Length: 2-3 minutes, well-structured, confident pace"
+        ]
+      },
+      {
+        "emoji": "💬",
+        "title": "Full Mock: Part 3 Example",
+        "points": [
+          "Q: 'How has photography changed with smartphones?' A: 'That's a good question. Smartphones have democratized photography — everyone has a camera now, whereas in the past, you needed expensive equipment. This is beneficial because more people can express creativity. However, some argue that quality photography requires technical knowledge and expensive lenses. Both perspectives are valid, but overall, accessibility is positive.'"
+        ]
+      },
+      {
+        "emoji": "❌",
+        "title": "Top 5 Speaking Mistakes",
+        "points": [
+          "1. Memorized responses — examiners detect robotic speech, use natural pauses",
+          "2. Over-explaining simple things — answer the question, don't give 5-minute lectures",
+          "3. Apologizing for errors — move on gracefully without drawing attention",
+          "4. Talking too fast when nervous — slow down, clarity > speed",
+          "5. Not engaging with Part 3 — share opinions, not just facts; show critical thinking"
+        ]
+      },
+      {
+        "emoji": "🎓",
+        "title": "Band 8 Strategy: Lexical Cohesion",
+        "points": [
+          "Don't repeat nouns; use synonyms and pronouns: 'travel → it, that experience, these trips'",
+          "Use reference words: 'This aspect...', 'Such examples...', 'These reasons...'",
+          "Avoid: 'The thing is that the thing...' Instead: 'The issue is that it...'",
+          "Cohesion shows you're tracking the thread of conversation"
+        ],
+        "tip": "Band 9 speakers sound natural AND sophisticated — balance both"
+      },
+      {
+        "emoji": "📽️",
+        "title": "Practice Strategy: Record Yourself",
+        "points": [
+          "Record yourself speaking on cue cards (2-3 min) and listen back",
+          "Identify: long pauses, repeated words, grammar errors, unclear pronunciation",
+          "Practice with a partner or AI voice assistant for real-time feedback",
+          "Do at least 5-10 mock tests before your exam date"
+        ]
+      },
+      {
+        "emoji": "🚀",
+        "title": "Next Steps: From Band 7 to Band 8+",
+        "points": [
+          "Focus on reducing hesitation pauses and increasing vocabulary precision",
+          "Practice Part 3 discussions — this is where Band 8 candidates separate themselves",
+          "Record mocks and review for fluency, grammar, pronunciation gaps",
+          "Use our free IELTS Speaking mock tests (1-on-1 with recorded feedback)"
+        ]
+      }
+    ]
+  }
+}

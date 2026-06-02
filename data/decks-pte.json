@@ -1,0 +1,1222 @@
+{
+  "pte-speaking-writing": {
+    "id": "pte-speaking-writing",
+    "exam": "pte",
+    "examName": "PTE Academic",
+    "section": "Speaking & Writing",
+    "emoji": "🗣️",
+    "title": "PTE Speaking & Writing — Tips, Tricks & Strategy",
+    "summary": "Master all 8 speaking & writing tasks with AI-aware strategies, timing hacks, and high-value scoring tricks.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "What is PTE Academic?",
+        "points": [
+          "Computer-delivered English proficiency exam (Pearson Test of English)",
+          "3 hours total, 4 key sections: Speaking, Writing, Reading, Listening",
+          "No human raters—AI scores all responses instantly",
+          "Accepted by 3000+ universities globally (US, UK, Canada, Australia)",
+          "Scores: 10–90 Global Scale of English (33–50 = B2, 51–75 = C1)"
+        ],
+        "tip": "AI scoring is consistent but strict on pronunciation, grammar, and task completion—no partial credit.",
+        "warn": "Unlike human raters, AI cannot infer intent; you must be explicit and clear."
+      },
+      {
+        "emoji": "📊",
+        "title": "Speaking & Writing Score Drivers",
+        "points": [
+          "Fluency (pausing, fillers like 'um' hurt score)",
+          "Pronunciation (accents OK, clarity mandatory)",
+          "Grammar & syntax (subject-verb agreement, tense consistency)",
+          "Lexical range (diverse vocabulary, not repetitive)",
+          "Task completion (address every part of the prompt)"
+        ],
+        "example": {
+          "label": "Good vs. Bad",
+          "text": "Bad: 'I like... I like... sports.' Good: 'I enjoy diverse sports including tennis and swimming.'"
+        },
+        "tip": "Enabling skills: strong speaking raises Writing score; clear writing boosts confidence in speaking."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Speaking & Writing Timing Strategy",
+        "points": [
+          "Speaking: ~77 min across 8 tasks (Personal Intro 1m, Read Aloud 2.5m, Repeat Sentence 3m, Describe Image 3.5m, Retell Lecture 4m, Answer Short Q 10m, Summarize Written 3m, Write Essay 20m)",
+          "Writing: included above—10 min for Summarize Written Text, 20 min for Essay",
+          "Never skip tasks; partial answers score zero",
+          "Buffer time: leave 30 sec before each task to breathe and reset"
+        ],
+        "tip": "Retell Lecture and Write Essay are your highest-impact tasks (best score multiplier). Spend time on them.",
+        "warn": "Speaking ends automatically when timer expires—no extensions. Finish mid-thought if you must."
+      },
+      {
+        "emoji": "🎤",
+        "title": "Personal Introduction (1 minute)",
+        "points": [
+          "Introduce yourself, background, interests, PTE study goals",
+          "No question asked—you control the narrative",
+          "AI assesses: fluency, pronunciation, coherence",
+          "Warm-up task; set a strong tone"
+        ],
+        "example": {
+          "label": "Strong intro",
+          "text": "'Hi, I'm Arjun, from Bangalore, India. I've completed my engineering degree and I'm preparing for PTE to pursue a Master's in Australia.'"
+        },
+        "tip": "Speak naturally, smile (AI picks up on energy), and pace yourself—no rushing.",
+        "warn": "Don't apologize or say 'um' at the start. AI penalizes hesitation."
+      },
+      {
+        "emoji": "📖",
+        "title": "Read Aloud (40 seconds per passage, 6 passages)",
+        "points": [
+          "Read short passages aloud; AI scores pronunciation, fluency, stress",
+          "Unknown text—no prep; test real-time pronunciation",
+          "Passges 1–3 easier; 4–6 progressively harder",
+          "Crystal-clear articulation matters more than speed"
+        ],
+        "example": {
+          "label": "Tricky words",
+          "text": "'algorithm' (AL-go-rith-um), 'leisure' (LEZH-ur), 'subtle' (SUT-ul)"
+        },
+        "tip": "Pause at punctuation. Read at natural pace—faster speech doesn't score higher if unclear.",
+        "warn": "Mispronouncing one word won't tank the score, but slurred speech (multiple errors) will."
+      },
+      {
+        "emoji": "🔄",
+        "title": "Repeat Sentence (3–9 seconds per sentence, 10 sentences)",
+        "points": [
+          "Listen to a sentence; repeat it exactly from memory",
+          "Tests listening accuracy and reproduction fluency",
+          "Sentences range from simple to complex (subordinate clauses, passive voice)",
+          "AI compares phoneme-by-phoneme; word order matters"
+        ],
+        "example": {
+          "label": "Typical sentence",
+          "text": "'The organization's decision to expand operations into emerging markets reflects confidence in long-term growth.'"
+        },
+        "tip": "Don't try to paraphrase. Repeat verbatim. If you miss a word, skip and continue (don't backtrack).",
+        "warn": "Hesitation (pauses, false starts) reduces fluency score even if words are correct."
+      },
+      {
+        "emoji": "🖼️",
+        "title": "Describe Image (40 seconds per image, 6 images)",
+        "points": [
+          "Analyze a picture and describe it in detail",
+          "AI scores: relevance, detail, fluency, grammar",
+          "Include: main subject, colors, objects, people, action, context",
+          "Images are diverse—charts, photos, diagrams, infographics"
+        ],
+        "example": {
+          "label": "Strong description",
+          "text": "'The image shows a bustling marketplace. In the foreground, vendors display colorful fruits and vegetables. The background features traditional architecture with ornate doors.'"
+        },
+        "tip": "Structure: opening sentence (what is it?), then details. Pause between thoughts—no rushed rambling.",
+        "warn": "Don't guess or make up details. Stick to what's visible."
+      },
+      {
+        "emoji": "🎧",
+        "title": "Retell Lecture (10 minutes: 60–90 sec lecture, 40 sec to speak)",
+        "points": [
+          "Listen to a lecture; retell main points and supporting details",
+          "Highest-scoring task if executed well",
+          "AI prioritizes: accuracy, completeness, fluency",
+          "Lecture topics: history, science, humanities, social sciences"
+        ],
+        "example": {
+          "label": "Retell structure",
+          "text": "'The lecture covered photosynthesis. Key point: plants convert light into chemical energy. Supporting details: chlorophyll absorbs light, water and CO2 produce glucose.'"
+        },
+        "tip": "During listening, jot 3–5 keywords. Retell: open with topic, then main points, then details. Aim for 35–40 seconds.",
+        "warn": "Don't script word-for-word. AI penalizes robotic repetition; use your own words."
+      },
+      {
+        "emoji": "❓",
+        "title": "Answer Short Question (Multiple Qs, 3–5 sec per answer)",
+        "points": [
+          "Listen to a question; respond in 1–3 words or short phrase",
+          "Assesses listening and quick thinking",
+          "Answers must be direct, not full sentences",
+          "~10–15 questions across the section"
+        ],
+        "example": {
+          "label": "Q & A",
+          "text": "'Q: What color is the sky? A: Blue.' (not 'The sky is a beautiful shade of blue.')"
+        },
+        "tip": "Answer immediately; don't overthink. Short and correct beats long and hesitant.",
+        "warn": "Silence = zero points. Even if unsure, guess quickly."
+      },
+      {
+        "emoji": "📝",
+        "title": "Summarize Written Text (3–4 min per passage, 2–3 passages)",
+        "points": [
+          "Read a passage; write a 1-sentence summary (5–75 words)",
+          "Must capture main idea and key supporting point",
+          "Grammar, vocabulary, spelling count heavily",
+          "AI checks: relevance, accuracy, conciseness"
+        ],
+        "example": {
+          "label": "Source vs. summary",
+          "text": "Source: 'Climate change is accelerating, causing polar ice to melt and sea levels to rise.' Summary: 'Climate change accelerates polar ice melt and sea-level rise.'"
+        },
+        "tip": "Use paraphrasing, not copy-paste. Balance conciseness with completeness.",
+        "warn": "Too short (under 5 words) or too long (over 75) auto-fails. Count carefully."
+      },
+      {
+        "emoji": "📄",
+        "title": "Write Essay (20 minutes, 1 essay)",
+        "points": [
+          "Prompt: opinion or discursive essay (200–300 words recommended)",
+          "AI assesses: task completion, coherence, lexical range, grammar, spelling",
+          "Structure: intro with thesis, 2–3 body paragraphs with examples, conclusion",
+          "Topics: education, environment, technology, society"
+        ],
+        "example": {
+          "label": "Thesis statement",
+          "text": "'While remote work offers flexibility, in-office collaboration fosters innovation and team cohesion.'"
+        },
+        "tip": "Plan in 2 min (outline key points). Write in 15 min. Edit in 3 min (grammar, spelling).",
+        "warn": "Rushed essays with typos score poorly. Quality over quantity; 250 well-written words beats 300 sloppy ones."
+      },
+      {
+        "emoji": "🏆",
+        "title": "Enabling Skills: Cross-Module Scoring",
+        "points": [
+          "Strong pronunciation in Speaking (Read Aloud, Repeat Sentence) boosts overall fluency baseline",
+          "Writing clarity and grammar (Summarize Written, Essay) reflects in Speaking confidence",
+          "Listening accuracy (Retell Lecture, Answer Short Q) ensures task-relevant responses",
+          "Coherence in speaking carries over to writing task scoring"
+        ],
+        "tip": "If you excel in Retell Lecture (listening + speaking), that fluency halo improves Writing scores.",
+        "warn": "Weak pronunciation tanks Speaking; weak grammar tanks Writing. Each task is weighted independently."
+      },
+      {
+        "emoji": "⚡",
+        "title": "AI Scoring Quirks & Tricks",
+        "points": [
+          "AI is literal: 'The End.' at the end of a Read Aloud passage will be scored as read text",
+          "Filler words ('um', 'uh', 'like') are penalized; silence is worse",
+          "Accent is OK if pronunciation is clear; mumblers lose points",
+          "Repetition of the same phrase twice lowers fluency",
+          "Correcting yourself mid-sentence (self-repair) is acceptable"
+        ],
+        "tip": "Self-correct naturally (no more than once per 20-sec response). It shows awareness without killing fluency.",
+        "warn": "Don't say 'let me start over.' Backtracking is seen as disfluency."
+      },
+      {
+        "emoji": "🚨",
+        "title": "Top 5 Speaking Mistakes",
+        "points": [
+          "Rushing: too fast, slurred pronunciation, AI can't understand",
+          "Silence: frozen in thought, timer doesn't stop, zero points for gaps over 3 sec",
+          "Memorized responses: robotic tone, AI detects scripts and downscores fluency",
+          "Ignoring the prompt: talking about unrelated topics, automatic task-completion failure",
+          "Poor mic setup: background noise, low volume, AI's audio processing fails"
+        ],
+        "example": {
+          "label": "Mistake fix",
+          "text": "Mistake: 'Um, like, I think that, um, sports are, like, fun.' Fix: 'Sports are enjoyable and develop teamwork.'"
+        },
+        "tip": "Record yourself practicing. Listen back for these patterns and drill corrections."
+      },
+      {
+        "emoji": "🚨",
+        "title": "Top 5 Writing Mistakes",
+        "points": [
+          "Ignoring word limits: <5 or >75 words in Summarize = instant fail",
+          "Grammar errors: subject-verb disagreement, tense shifts, run-on sentences",
+          "Spelling: 'occured' instead of 'occurred', 'recieve' instead of 'receive'",
+          "Vague pronouns: 'it', 'this', 'that' without clear antecedents confuse AI",
+          "Copy-paste from source: plagiarism detected, heavy penalty"
+        ],
+        "tip": "Use a checklist: grammar (verbs agree?), spelling (spellcheck!), word count, clarity (re-read aloud)."
+      },
+      {
+        "emoji": "🎯",
+        "title": "High-Value Task Priority",
+        "points": [
+          "Tier 1 (Max effort): Retell Lecture, Write Essay—biggest score impact",
+          "Tier 2 (Strong effort): Describe Image, Summarize Written Text—medium impact",
+          "Tier 3 (Baseline): Read Aloud, Repeat Sentence, Answer Short Q—foundational",
+          "Sacrifice lower tiers only if running out of time (complete all tasks, even if rushed)"
+        ],
+        "tip": "Spend 5 min on Retell Lecture; perfect your Describe Image with rehearsed structures.",
+        "warn": "Never skip a task to perfect another. Completing all tasks is mandatory."
+      },
+      {
+        "emoji": "🔊",
+        "title": "Pronunciation Pressure Points",
+        "points": [
+          "Vowel shifts: 'live' (present) vs. 'live' (past), 'read' (present) vs. 'read' (past)",
+          "Consonant clusters: 'sixth', 'twelfth', 'asked' (many speakers drop the 'd')",
+          "Weak syllables: 'about' (uh-BOWT), 'final' (FY-nul), 'polite' (puh-LITE)",
+          "Word stress: 'RECord' (noun) vs. 're-CORD' (verb), 'PREsent' vs. 'pre-SENT'"
+        ],
+        "example": {
+          "label": "Stress matters",
+          "text": "'The BANK manager worked at a river BANK.' (Different stress = different meaning.)"
+        },
+        "tip": "Drill weak-syllable words daily. Exaggerate syllable stress when practicing."
+      },
+      {
+        "emoji": "💬",
+        "title": "Fluency Benchmarks",
+        "points": [
+          "Natural pace: 120–150 words per minute (not machine-gun fast)",
+          "Pauses: 1–2 sec between thoughts OK; >3 sec = dead air",
+          "Stress & intonation: vary pitch and pace; monotone scores lower",
+          "Self-repairs: 1 per 20 sec is fine; more is disfluency"
+        ],
+        "tip": "Practice with audiobooks or TED talks. Mirror native speakers' pace and intonation.",
+        "warn": "Rushing to 'sound fluent' backfires. Clear and slow beats fast and garbled."
+      },
+      {
+        "emoji": "📋",
+        "title": "Essay Planning & Structure",
+        "points": [
+          "Introduction: paraphrase prompt + state your position (1–2 sentences)",
+          "Body 1: first reason + 1–2 examples (4–5 sentences)",
+          "Body 2: second reason + 1–2 examples (4–5 sentences)",
+          "Conclusion: restate thesis + future outlook (1–2 sentences)",
+          "Total: ~250 words in 15 min (write; 2 min plan, 3 min edit)"
+        ],
+        "example": {
+          "label": "Opening + thesis",
+          "text": "'Some argue remote work is ideal; however, office environments drive collaboration and innovation.'"
+        },
+        "tip": "Use transition words: 'Furthermore', 'In contrast', 'Therefore'. They signal structure to AI.",
+        "warn": "Disorganized essays (no clear thesis, rambling) score low even if the vocabulary is strong."
+      },
+      {
+        "emoji": "✏️",
+        "title": "Grammar Essentials for AI",
+        "points": [
+          "Subject-verb agreement: 'The team are working' (British) vs. 'The team is working' (American; safer for PTE)",
+          "Tense consistency: Don't shift between past and present without reason",
+          "Articles: 'a', 'an', 'the'—AI heavily penalizes missing/wrong articles",
+          "Prepositions: 'interested in', 'aware of', 'dependent on'—collocation errors hurt",
+          "Word order: English is SVO (Subject-Verb-Object); deviations confuse AI"
+        ],
+        "tip": "Review the top 10 grammar rules you personally struggle with. Drill them before test day.",
+        "warn": "One grammar error = -1 point; accumulate 10+ and you'll drop a band."
+      },
+      {
+        "emoji": "💾",
+        "title": "Vocabulary Range Tips",
+        "points": [
+          "Avoid overusing simple words: 'good', 'bad', 'thing', 'nice'",
+          "Use synonyms: 'beneficial', 'advantageous', 'favorable' instead of 'good'",
+          "Academic vocabulary: 'facilitate', 'enhance', 'mitigate', 'underscore'",
+          "Precision: 'vast array of options' is better than 'many things'",
+          "Avoid slang and colloquialisms: AI prefers formal register"
+        ],
+        "example": {
+          "label": "Weak vs. strong",
+          "text": "Weak: 'Technology is good for education.' Strong: 'Technology facilitates personalized learning and expands educational access.'"
+        },
+        "tip": "Read academic articles weekly. Collect 5 new words/phrases per session and use them."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Practice Strategy: 4-Week Plan",
+        "points": [
+          "Week 1: Learn all task types, watch sample responses, understand scoring criteria",
+          "Week 2: Drill pronunciation, Read Aloud, Repeat Sentence daily (10 min each)",
+          "Week 3: Practice speaking tasks (Describe Image, Retell Lecture) and write timed essays",
+          "Week 4: Full mocks under test conditions (3-hour simulations, 2–3 mocks minimum)"
+        ],
+        "example": {
+          "label": "Daily routine",
+          "text": "'Day: 10 min Read Aloud, 10 min Repeat Sentence, 5 min Describe Image, 20 min Write Essay.'"
+        },
+        "tip": "Record every speaking practice. Review and spot errors (pronunciation, grammar, fluency).",
+        "warn": "One week of prep is insufficient. Start 4–6 weeks before your test date."
+      },
+      {
+        "emoji": "📱",
+        "title": "Recording & Self-Feedback Loop",
+        "points": [
+          "Use your phone or laptop mic to record Read Aloud, Describe Image, Retell Lecture",
+          "Listen back and rate yourself: clarity (0–5)? Fluency (0–5)? Grammar (0–5)?",
+          "Compare with official PTE examples on YouTube or Pearson's website",
+          "Re-record until you match native speaker fluency and clarity",
+          "Aim for 3–5 iterations per task type before test day"
+        ],
+        "tip": "Share recordings with a friend or tutor for honest feedback. External ears catch what you miss.",
+        "warn": "Don't rely on family for feedback—they're biased. Use objective metrics (timing, clarity checks)."
+      },
+      {
+        "emoji": "🔍",
+        "title": "Mock Test Reality Check",
+        "points": [
+          "Take 2–3 full mocks (3 hours each) under exact test conditions (quiet room, real timer, microphone)",
+          "Use official PTE mock software (Pearson's official mocks are best)",
+          "Track your scores across mocks to identify weak areas",
+          "Timing rehearsal is critical—never run out of time in real test",
+          "Adjust strategies if any task consistently underperforms"
+        ],
+        "tip": "If Retell Lecture scores low, prioritize that task in remaining prep. Data-driven improvement.",
+        "warn": "Mock scores are predictor, not guarantee. Stress on test day can drop you 3–5 points."
+      },
+      {
+        "emoji": "🧠",
+        "title": "Test Day Psychology",
+        "points": [
+          "Arrive 30 min early; familiarize yourself with the booth and mic",
+          "Breathe deeply before speaking tasks; calm nerves improve fluency",
+          "Never compare yourself to other test-takers; focus on your own performance",
+          "If you flub a task, move on—dwelling hurts the next task",
+          "Hydrate and stretch during breaks (you get 2–3 short breaks)"
+        ],
+        "example": {
+          "label": "Prep ritual",
+          "text": "'5 min before Speaking: 3 deep breaths, 1 minute of humming (warm up vocal cords).'"
+        },
+        "tip": "Positive self-talk: 'I've prepared thoroughly; I can do this.' Confidence affects AI scoring.",
+        "warn": "Anxiety = rushed speech, grammar mistakes. Practice stress-management techniques now."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Target Band Strategy (80+)",
+        "points": [
+          "Speaking: Nail Read Aloud (clear pronunciation) and Retell Lecture (completeness)",
+          "Writing: Near-perfect grammar and spelling in both tasks",
+          "Timing: Practice full mocks; never feel rushed on any task",
+          "Vocabulary: Use academic register consistently; avoid repetition",
+          "Practice: 6+ weeks, 15+ hours, 3+ mocks"
+        ],
+        "tip": "80+ is achievable if you treat PTE like a structured skill (not luck). Follow the 4-week plan religiously.",
+        "warn": "80+ requires near-native fluency and zero grammar errors. Aim high; settle lower if needed."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Next Steps: Free PTE Mocks & Practice",
+        "points": [
+          "Use Pearson's official PTE mock software (1–2 free mocks, then pay for more)",
+          "Try free platforms: PTE Scholar app, YouTube sample videos, practice PDFs on Pearson's site",
+          "Join Syllab's free PTE practice program—unlimited timed mocks, AI feedback, task-specific drills",
+          "Retake if you don't hit target; score is valid for 2 years",
+          "Next exam date: aim 4–6 weeks away to allow full prep cycle"
+        ],
+        "example": {
+          "label": "Syllab advantage",
+          "text": "'Unlimited free mocks + AI-powered feedback on pronunciation, grammar, fluency. Track progress across 100+ mocks.'"
+        },
+        "tip": "Start your first mock NOW. Baseline your current skills, then target weak areas.",
+        "warn": "Free resources alone may not be enough if English is your second language. Combine free mocks with structured coaching."
+      }
+    ]
+  },
+  "pte-reading": {
+    "id": "pte-reading",
+    "exam": "pte",
+    "examName": "PTE Academic",
+    "section": "Reading",
+    "emoji": "📖",
+    "title": "PTE Reading — Tips, Tricks & Strategy",
+    "summary": "Master all 3 reading tasks with skimming tactics, vocabulary power, and AI-aware comprehension strategies.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "PTE Reading Overview",
+        "points": [
+          "32–40 minutes, 3 task types: Fill in the Blanks, Multiple Choice (MCQ), Re-order Paragraphs",
+          "~15–20 questions total across mixed difficulty (easy to hard)",
+          "AI scores comprehension, vocabulary, and grammar (via blanks)",
+          "All Reading tasks feed into 'Reading' sub-score; some overlap with 'Grammar' (Enabling Skills)"
+        ],
+        "tip": "Reading score is a strong predictor of overall band. Invest time here.",
+        "warn": "Time pressure is real: ~2 min per question. Speed + accuracy required."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Reading Timing Strategy",
+        "points": [
+          "Fill in Blanks (R&W): ~4–6 min for 4–5 blanks (vocabulary, grammar)",
+          "MCQ Single: ~8–10 min for 4–5 questions (detail, inference)",
+          "Re-order Paragraphs: ~8–10 min for 4–5 sets (logical flow, cohesion)",
+          "Buffer: 2 min for review and quick re-reads"
+        ],
+        "example": {
+          "label": "Timing breakdown",
+          "text": "'Allocate 2 min Read Blanks, 3 min Think+Write. Never spend >1 min per blank.'"
+        },
+        "tip": "Skim first, then answer. A quick 30-sec skim prevents misreads.",
+        "warn": "Don't re-read entire passages multiple times. Wasteful. Note key ideas and move on."
+      },
+      {
+        "emoji": "📝",
+        "title": "Fill in the Blanks — Reading (R&W) Version",
+        "points": [
+          "4–5 blanks per passage (~200 words); vocabulary + grammar tested",
+          "Options given (4 choices per blank); one is correct",
+          "Assess context, collocation (word pairs), grammatical fit",
+          "Some blanks require specific words; others are synonyms (both gramatically OK)"
+        ],
+        "example": {
+          "label": "Sample blank",
+          "text": "'The company's ___ to expand rapidly led to financial instability. (A) ambition (B) hesitation (C) delay (D) caution' → Answer: A (fits context + collocation 'ambition to expand')."
+        },
+        "tip": "Skip hard blanks (2+ options seem OK) and return later. Gain quick points first.",
+        "warn": "Collocation errors are common ('interested for' vs. 'interested in'). Study frequent collocations."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Vocabulary Power for Blanks",
+        "points": [
+          "Academic word list: 'adequate', 'coherent', 'meticulous', 'pragmatic', 'tentative'",
+          "Synonyms matter: 'abundant' vs. 'copious' (both 'plenty', but different shades)",
+          "Part-of-speech clues: blank needs verb? noun? adjective? Option must match form",
+          "Negative/positive context: 'skeptical' vs. 'optimistic' based on tone"
+        ],
+        "example": {
+          "label": "Synonym trap",
+          "text": "'The evidence was ___ to the defense's claim. (A) adverse (B) contrary (C) hostile (D) opposing' → B or C; A and D may not fit syntax."
+        },
+        "tip": "Build a personal vocabulary list from mocks. Revisit weak words weekly.",
+        "warn": "Don't guess based on word length or sound. Context is king."
+      },
+      {
+        "emoji": "💬",
+        "title": "Collocation Essentials",
+        "points": [
+          "'make a decision', not 'take a decision' (US English)",
+          "'raise awareness', not 'lift awareness'",
+          "'conduct a study', not 'do a study' (academic register)",
+          "'in the long run', not 'in the long term' (context-dependent)",
+          "'bear in mind', not 'hold in mind'"
+        ],
+        "example": {
+          "label": "Collocation blank",
+          "text": "'They must ___ serious steps to address climate change. (A) take (B) make (C) conduct (D) bear' → A (collocation 'take steps')."
+        },
+        "tip": "Memorize 10 high-frequency collocations per week. Drills are faster than reading lists.",
+        "warn": "Collocations are language-specific; direct translation from your L1 often fails."
+      },
+      {
+        "emoji": "🔍",
+        "title": "Grammar Cues in Blanks",
+        "points": [
+          "Tense: Present simple, past, present perfect, conditional—context clues abound",
+          "Voice: Active vs. passive (agent present? process matters? use passive.)",
+          "Mood: Indicative vs. subjunctive ('If I were... hypothetical')",
+          "Agreement: Subject-verb match (plural verb, singular subject = wrong)",
+          "Determiners: 'a/an/the' vs. zero article (generic vs. specific)"
+        ],
+        "example": {
+          "label": "Tense context",
+          "text": "'By 2030, we ___ carbon emissions by 50%. (A) reduce (B) reduced (C) will reduce (D) had reduced' → C (future prediction by a past year)."
+        },
+        "tip": "Always look at surrounding verbs to infer tense. Consistency is key.",
+        "warn": "Tricky: subjunctive mood ('if I were') is rare in modern English but appears in PTE."
+      },
+      {
+        "emoji": "❓",
+        "title": "Multiple Choice Questions (MCQ) — Single Answer",
+        "points": [
+          "4–5 MCQ per passage; 4 options; pick one best answer",
+          "Question types: detail (find explicit info), inference (read between lines), author's purpose",
+          "Passages: 200–300 words, diverse topics (science, history, business, arts)",
+          "AI checks: did you understand the passage and question intent?"
+        ],
+        "example": {
+          "label": "Sample MCQ",
+          "text": "'Q: Why did the researcher conclude X? A) It matched previous studies. B) It was statistically significant. C) The sample was large. D) It contradicted the hypothesis.'"
+        },
+        "tip": "For detail questions, locate keywords and read the surrounding 1–2 sentences. Don't re-read entire passage.",
+        "warn": "Inference questions trap you if you pick a true statement that doesn't answer the Q."
+      },
+      {
+        "emoji": "🧭",
+        "title": "Inference vs. Detail: Spot the Difference",
+        "points": [
+          "Detail Q: 'According to the passage, what...?' Look for explicit text; cite it.",
+          "Inference Q: 'What can we infer / conclude...?' Read between lines; use logic + passage clues.",
+          "Detail = safe (answer is there); Inference = risky (requires interpretation)",
+          "Wrong answers on Inference: true statements outside passage scope, or literal meanings that miss intent"
+        ],
+        "example": {
+          "label": "Inference trap",
+          "text": "'Passage: \"Tech companies often fail in their first years.\" Q: What does this suggest about startups? (A) They are risky. (B) They lack funding. (C) They innovate slowly.' → A (safe inference). B & C are true elsewhere, not in passage."
+        },
+        "tip": "For inference, stick close to passage evidence. Avoid wild leaps.",
+        "warn": "If two answers look right, pick the one most directly supported by the passage."
+      },
+      {
+        "emoji": "🎨",
+        "title": "Author's Purpose & Tone",
+        "points": [
+          "Author intent: inform, persuade, entertain, warn, criticize",
+          "Tone: neutral (news), sarcastic (critique), passionate (opinion), cautious (uncertainty)",
+          "Clues: adjectives (negative/positive?), exclamations, quotes (who speaks?), overall structure",
+          "Watch for: passive aggressive writing ('Some people might argue... [implied: they're wrong]')"
+        ],
+        "example": {
+          "label": "Tone ID",
+          "text": "'The government's 'bold initiative' failed spectacularly.' Tone: sarcastic (quotes devalue the word 'bold'). Intent: criticize."
+        },
+        "tip": "Read the first and last paragraphs carefully. Author's main purpose is usually there.",
+        "warn": "Don't confuse topic with purpose. A passage about climate is not necessarily 'persuade action' (could be 'inform')."
+      },
+      {
+        "emoji": "🔗",
+        "title": "Re-order Paragraphs (4–5 sets of 4–5 scrambled sentences)",
+        "points": [
+          "4–5 sentences given out of order; rebuild the logical flow (original paragraph structure)",
+          "Tests cohesion, reference (pronouns, 'this'), sequencing (time, cause-effect)",
+          "Longest/general sentence often comes first; specific/detailed sentences follow",
+          "Common sentence connectors: 'However', 'Therefore', 'In addition', 'As a result'"
+        ],
+        "example": {
+          "label": "Scrambled set",
+          "text": "'A) This led to a crisis. B) Companies began cutting costs. C) The market collapsed unexpectedly. D) By 2008, the economy recovered.' → Correct order: C → B → A → D (cause → effect chain)."
+        },
+        "tip": "Start with likely first/last sentences (opening context, closing reflection).",
+        "warn": "Don't rely on guess-and-check alone. Understand the logic (chronological, cause-effect, topic flow)."
+      },
+      {
+        "emoji": "🔤",
+        "title": "Cohesion Clues: Pronouns & References",
+        "points": [
+          "Pronouns ('this', 'that', 'it', 'they') refer backward or forward",
+          "'This phenomenon', 'These results', 'Such methods' point to prior sentence",
+          "'The following', 'Below', 'Next' point forward",
+          "Implicit reference: 'Therefore' signals cause-effect; previous sentence is the cause"
+        ],
+        "example": {
+          "label": "Pronoun chain",
+          "text": "'[A] Solar energy is renewable. [B] This resource requires initial investment. [C] However, it saves money long-term.' → A→B→C (pronouns 'This' and 'it' tie them together)."
+        },
+        "tip": "Highlight pronouns and their referents. Mismatch = wrong order.",
+        "warn": "Ambiguous pronouns are common; re-order based on grammatical agreement."
+      },
+      {
+        "emoji": "🔄",
+        "title": "Sequence & Logical Flow Patterns",
+        "points": [
+          "Chronological: 'First... Then... Finally...' or 'Before... After...'",
+          "Cause-effect: 'Because... As a result...' or 'Led to... Consequently...'",
+          "Problem-solution: 'The issue... Proposed fix... Outcome...'",
+          "General-to-specific: Overview first, then details",
+          "Comparison: 'Unlike... In contrast... Similarly...'"
+        ],
+        "example": {
+          "label": "Cause-effect order",
+          "text": "'[1] Schools lack funding. [2] Students drop out. [3] Graduation rates fall.' → Natural order is 1→2→3 (cause→immediate effect→larger consequence)."
+        },
+        "tip": "Identify the paragraph's main pattern. Re-order based on that logic.",
+        "warn": "Multiple valid orderings can seem plausible. Pick the one with strongest cohesion signals."
+      },
+      {
+        "emoji": "🌉",
+        "title": "Bridging Sentences in Re-order",
+        "points": [
+          "Transition sentences link ideas: 'Building on this idea...'",
+          "Opening of next sentence echoes closing of prior: 'X happened. X led to...'",
+          "Pronouns create chains: 'The city...' → 'It grew...' → 'These changes...'",
+          "Repeated keywords signal flow: 'climate change' repeated across 2–3 sentences shows continuity"
+        ],
+        "example": {
+          "label": "Bridging",
+          "text": "'[A] Climate change accelerates. [B] Ecosystems are disrupted. [C] Animals migrate or perish.' → A→B→C (each sentence echoes prior topic)."
+        },
+        "tip": "Read pairs of sentences aloud. Does one naturally follow the other? Trust your ear.",
+        "warn": "Don't break a cause-effect chain mid-paragraph. Look for complete narrative arcs."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Re-order Strategy: Build Backward",
+        "points": [
+          "First, pick the obvious first sentence (intro context or broad statement, often has 'The', 'This study', 'One key factor')",
+          "Next, find the last sentence (conclusion, future outlook, broad implication—often ties back to intro)",
+          "Finally, order middle sentences by cohesion logic (pronouns, transitions, sequences)",
+          "Test: read entire paragraph aloud. Does it flow naturally?"
+        ],
+        "example": {
+          "label": "Re-order process",
+          "text": "'Given: [A] She felt confident. [B] She studied hard for weeks. [C] The exam went well. [D] She passed with distinction.' → Likely order: B→A→C→D (preparation→confidence→exam→result)."
+        },
+        "tip": "Don't overthink. Most re-orders follow a simple cause-effect or chronological pattern.",
+        "warn": "Anomalies exist (non-linear narratives). If stuck, re-read the entire scrambled set for thematic clues."
+      },
+      {
+        "emoji": "🚨",
+        "title": "Top 5 Reading Mistakes",
+        "points": [
+          "Skipping passages entirely and guessing MCQ: 0% success rate. Read actively.",
+          "Choosing answer that's true but doesn't answer the Q: test detail vs. inference carefully.",
+          "Over-interpreting blanks: 'This word could work...' isn't enough. Collocation + grammar + context required.",
+          "Re-reading entire passages for each Q: time-killer. Use keywords to locate answers.",
+          "Guessing Re-order based on 'feels right': logic first, intuition second."
+        ],
+        "tip": "Actively read: annotate keywords, underline Q-relevant sentences, mark pronoun referents.",
+        "warn": "Passive reading (eyes moving, no comprehension) is the #1 reason for low Reading scores."
+      },
+      {
+        "emoji": "💡",
+        "title": "Active Reading Annotation Tips",
+        "points": [
+          "Mark main idea in paragraph 1 (often thesis or topic sentence)",
+          "Underline keywords (rare words, proper nouns, numbers)",
+          "Circle pronouns and draw arrows to referents",
+          "Box transition words ('However', 'Therefore', 'Furthermore')",
+          "Star anything that answers Q before you read it"
+        ],
+        "example": {
+          "label": "Sample annotation",
+          "text": "'[MAIN] Climate change is accelerating. Studies show [KEY] a 2°C rise by 2050. [TRANS] Furthermore, [PRONOUN] this trend increases [EFFECT] extreme weather.'"
+        },
+        "tip": "Annotation takes 30 sec but saves 2 min on Q-answering. Worth it.",
+        "warn": "Over-annotation (marking everything) is as bad as under-annotating. Mark only essential clues."
+      },
+      {
+        "emoji": "📊",
+        "title": "Difficulty Progression & Strategy",
+        "points": [
+          "Blanks: Usually easier early (vocabulary), harder late (subtle grammar)",
+          "MCQ: Detail questions are easier; inference harder",
+          "Re-order: Easier sets have obvious first/last; harder sets have ambiguous starting points",
+          "Skip hard Qs and return if time allows. Gain easy points first.",
+          "Difficult Re-order? Try skipping; it's only 1–2 questions, usually worth ~5 points each"
+        ],
+        "tip": "Triage: Easy Blanks (2 min) → MCQ Detail (2 min) → Re-order (3 min) → Come back to hard questions.",
+        "warn": "Spending 5 min on one Re-order question while easy MCQs wait is strategy failure."
+      },
+      {
+        "emoji": "🧩",
+        "title": "Passage Complexity Indicators",
+        "points": [
+          "Simple passages: short sentences, common vocabulary, clear topic",
+          "Complex passages: long sentences, rare vocabulary, multiple layers of meaning, abstract concepts",
+          "Scientific passages: technical jargon, causal relationships, data interpretation",
+          "Literary passages: figurative language, tone, implicit meaning, author critique"
+        ],
+        "example": {
+          "label": "Complexity marker",
+          "text": "'Simple: 'Trees help the environment.' Complex: 'Afforestation mitigates climate change via carbon sequestration and albedo modification.'"
+        },
+        "tip": "Expect 1–2 complex passages per test. Budget extra time for them.",
+        "warn": "Don't panic on complex passages. Slow down, read carefully, annotate aggressively."
+      },
+      {
+        "emoji": "🔬",
+        "title": "Scientific & Technical Passages",
+        "points": [
+          "Watch for methodology: 'researchers measured X using method Y' signals a detail-question target",
+          "Findings vs. implications: passage discusses findings; Q asks for implications (inference)",
+          "Causal chains: 'X causes Y, which leads to Z'—understand the chain or you'll get inference wrong",
+          "Data interpretation: 'The study showed a 20% increase'—precise numbers matter"
+        ],
+        "example": {
+          "label": "Scientific detail",
+          "text": "'Method: 500 participants. Finding: 75% improvement. Implication: This therapy is effective.' Q asks 'What does the study suggest?' → inference on the implication."
+        },
+        "tip": "For scientific passages, separate facts (what happened) from conclusions (what it means).",
+        "warn": "AI test-makers love inferencing on scientific passages. Expect 50% inference, 50% detail."
+      },
+      {
+        "emoji": "💭",
+        "title": "Inferencing Rules: What's Safe?",
+        "points": [
+          "Safe: 'Author discusses X positively → author supports X'",
+          "Safe: 'Study found 80% success → therapy likely works'",
+          "Risky: 'X is expensive → people won't use X' (not necessarily true)",
+          "Risky: 'Author criticizes govt policy → author favors socialism' (too broad)",
+          "Rule: Inference must follow logically from passage + general knowledge, not opinion"
+        ],
+        "example": {
+          "label": "Safe vs. risky",
+          "text": "Passage: 'CO2 rises → temperatures rise.' Safe inference: 'Curbing CO2 may reduce warming.' Risky: 'All climate science is wrong.' (doesn't follow)."
+        },
+        "tip": "Ask: 'What would a reasonable person conclude from this passage?' Use that as your guide.",
+        "warn": "Extreme inferences (political, emotional) are almost always wrong in PTE."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Practice Strategy: Build Fluency in 4 Weeks",
+        "points": [
+          "Week 1: Learn task types, understand scoring, do 2–3 sample passages per type",
+          "Week 2: Drill vocabulary (10 new words/collocations daily) + do 5 Blanks passages",
+          "Week 3: Practice MCQ (focus on inference) and Re-order (focus on cohesion) + full mocks",
+          "Week 4: Full Reading mocks (30+ min, no breaks, timed strictly) × 3–4 times"
+        ],
+        "example": {
+          "label": "Weekly vocab drill",
+          "text": "'Day 1–5: Learn 10 words (definition, sentence, collocation). Day 6–7: Mix them into sentences from mocks.'"
+        },
+        "tip": "Do 1 full Reading practice per week starting Week 3. Build stamina and speed.",
+        "warn": "Reading speed: Target 200–250 words per minute (comprehension first, speed second)."
+      },
+      {
+        "emoji": "📱",
+        "title": "Vocabulary Building: Daily Routine",
+        "points": [
+          "Morning (5 min): Review 5 words from yesterday + learn 5 new words (note pronunciation, collocation)",
+          "During practice (mock): Mark unknown words, note them",
+          "Evening (10 min): Create flashcards (word + collocation + sample sentence from test)",
+          "Weekend: Review all week's words; use them in writing/speaking practice"
+        ],
+        "example": {
+          "label": "Vocab card format",
+          "text": "'Word: meticulous. Def: very careful & precise. Collocation: meticulous planning, meticulous attention. Sentence: The meticulous engineer caught a critical flaw.'"
+        },
+        "tip": "Focus on high-frequency PTE words: 'adequate', 'coherent', 'pragmatic', 'tentative', 'viable'.",
+        "warn": "Memorizing random vocabulary lists is inefficient. Learn words in context (from mocks)."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Mock Performance Tracking",
+        "points": [
+          "After each mock, record: Blanks score, MCQ score, Re-order score, total time spent, speed (words/min)",
+          "Identify weak area: Is it vocabulary? Inference? Speed? Re-ordering logic?",
+          "Target weak area for next week's practice",
+          "Track trend: aim to improve 2–3 questions per week"
+        ],
+        "example": {
+          "label": "Tracking template",
+          "text": "'Mock 1: Blanks 3/5, MCQ 3/5, Re-order 2/4, Total 8/14, Speed 180 wpm. Weakness: Inference (MCQ). → Week 3 focus: Inference practice.'"
+        },
+        "tip": "Data-driven improvement beats random practice. Track and adjust weekly.",
+        "warn": "Stagnation (same score for 2 mocks) signals you need a strategy change, not just more practice."
+      },
+      {
+        "emoji": "🔍",
+        "title": "Decoding Hard MCQs: Elimiation Strategy",
+        "points": [
+          "Read Q carefully; underline what it's asking",
+          "Eliminate obviously wrong answers (contradict passage, out of scope)",
+          "Compare remaining 2 answers: which is more directly supported by the passage?",
+          "If still unsure, re-read the relevant passage section (30 sec max)"
+        ],
+        "example": {
+          "label": "Elimination",
+          "text": "'Q: What does author suggest about the future? (A) it will fail (B) improvement is possible (C) decline is inevitable (D) no one knows. Passage is optimistic → eliminate A & C. Choose B.'"
+        },
+        "tip": "Elimination is faster than re-reading entire passage. Use it when 2+ answers seem correct.",
+        "warn": "Don't overthink. If elimination leaves 2 answers, go with your gut (which usually picks the most literal interpretation)."
+      },
+      {
+        "emoji": "⚡",
+        "title": "Speed Hacks: Reading in 32 Minutes",
+        "points": [
+          "Skim first 30 sec (main idea only, don't read every sentence)",
+          "Read Qs before re-reading passage details (Qs tell you what to focus on)",
+          "Use keyword search: read only sentences containing Q's keywords",
+          "For Re-order, only skim each sentence once (don't re-read scrambled set multiple times)"
+        ],
+        "example": {
+          "label": "Keyword search",
+          "text": "'Q: Why did X happen? Skim passage for 'X' and surrounding sentences. Skip unrelated content.'"
+        },
+        "tip": "Skimming + targeted re-reading beats slow, line-by-line reading.",
+        "warn": "Don't skim so fast you miss key details. Balance speed with comprehension."
+      },
+      {
+        "emoji": "🏆",
+        "title": "Band 85+ Strategy: Excellence in Reading",
+        "points": [
+          "Master vocabulary: 100+ academic words + collocations, zero blank mistakes",
+          "Inference mastery: distinguish safe from risky inferences, 80%+ MCQ accuracy",
+          "Speed + accuracy: complete Reading in 32 min with 90%+ accuracy",
+          "Re-order fluency: logical flow second nature, minimal hesitation",
+          "Mocks: 3+ full practices, trending toward 35+/38 questions correct"
+        ],
+        "tip": "85+ is achievable with 6–8 weeks of focused Reading practice (1+ hour daily).",
+        "warn": "Reading scores plateau if you don't actively expand vocabulary. Keep learning new words."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Next Steps: Free Reading Mocks & Practice",
+        "points": [
+          "Pearson's official mocks: 1–2 free, then paid (most realistic simulation)",
+          "PTE Scholar app: free timed readings, instant feedback",
+          "Syllab's free PTE Reading drills: unlimited timed passages, AI-powered vocabulary feedback",
+          "YouTube sample passages: watch expert explanations on MCQ & Re-order",
+          "Start your first mock TODAY to baseline current Reading level"
+        ],
+        "example": {
+          "label": "Syllab benefit",
+          "text": "'Unlimited free Reading mocks + AI vocab feedback. Track progress, identify weak areas, drill specific task types.'"
+        },
+        "tip": "Combine free mocks with structured vocabulary study. Reading scores are learnable.",
+        "warn": "Free resources + consistent practice (1+ hour daily) for 4–6 weeks will raise your Reading band by 5–8 points."
+      }
+    ]
+  },
+  "pte-listening": {
+    "id": "pte-listening",
+    "exam": "pte",
+    "examName": "PTE Academic",
+    "section": "Listening",
+    "emoji": "🎧",
+    "title": "PTE Listening — Tips, Tricks & Strategy",
+    "summary": "Master all 7 listening tasks with active-note strategies, accent-awareness, and AI-proof transcription techniques.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "PTE Listening Overview",
+        "points": [
+          "32–40 minutes, 7 task types: Summarize Spoken Text, MCQ, Fill in Blanks, Highlight Correct Summary, Select Missing Word, Highlight Incorrect Words, Write from Dictation",
+          "~12–18 questions spread across mixed difficulty (easy to hard)",
+          "Audio is heard once; no replay (except for Highlight Incorrect Words)",
+          "AI scores: comprehension, spelling (in writing tasks), grammar (dictation)"
+        ],
+        "tip": "Listening score is hardest to raise (requires consistent exposure). Start early.",
+        "warn": "Nerves + audio anxiety are killers. Normalize listening under pressure via mocks."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Listening Timing Strategy",
+        "points": [
+          "Summarize Spoken Text: ~3 min (1–2 min listen, 1 min write) × 2–3 tasks",
+          "MCQ: ~6 min (1 min listen, 1 min answer) × 4–5 questions",
+          "Fill in Blanks: ~5 min (1 min listen, 30 sec fill) × 4–5 blanks",
+          "Highlight tasks (Correct Summary, Missing Word, Incorrect Words): ~6 min total (combined)",
+          "Write from Dictation: ~4 min (30 sec listen, 1 min write, 30 sec edit) × 3–4 items"
+        ],
+        "example": {
+          "label": "Timing per task",
+          "text": "'Summarize: 90 sec audio + 60 sec write = 2.5 min per task. Budget 10 min for 4 tasks.'"
+        },
+        "tip": "Allocate buffer time for re-reads and review. Listening is cumulative; fatigue sets in around min 20.",
+        "warn": "If you miss part of audio, don't panic. Note what you heard and fill gaps with inference."
+      },
+      {
+        "emoji": "📝",
+        "title": "Summarize Spoken Text (2–3 tasks, 60–90 sec audio each)",
+        "points": [
+          "Listen to a lecture/monologue; write 1 sentence summary (50–70 words ideal)",
+          "Capture main idea + 1–2 key supporting points",
+          "AI scores: accuracy (did you get the key idea?), completeness, grammar, spelling",
+          "Topics: academic (science, history, social sciences, arts)"
+        ],
+        "example": {
+          "label": "Lecture summary",
+          "text": "Lecture: 'Photosynthesis converts light into chemical energy via chlorophyll, enabling plants to produce glucose.' Summary: 'Photosynthesis is the process by which plants convert light energy into chemical energy using chlorophyll to produce glucose.'"
+        },
+        "tip": "During listening, jot 3–5 keywords. Don't try to transcribe; paraphrase in your summary.",
+        "warn": "Direct copy-paste from audio is not paraphrasing. AI detects it and penalizes."
+      },
+      {
+        "emoji": "🎧",
+        "title": "Active Listening Technique: Keyword Jotting",
+        "points": [
+          "Listen for the SUBJECT of the lecture (the main topic)",
+          "Identify 1 ACTION or PROCESS the subject undergoes",
+          "Note 1–2 DETAILS or EXAMPLES supporting the main idea",
+          "Ignore fillers ('um', 'you know', 'basically') and tangents",
+          "Write abbreviated notes (shorthand), not full words"
+        ],
+        "example": {
+          "label": "Shorthand notes",
+          "text": "'Lecture: Climate change driven by CO2. Causes: fossil fuels, deforestation. Effect: temp rise, extreme weather. Notes: CC, CO2, FF+defor → temp↑, weather x.'"
+        },
+        "tip": "Fast note-taking is a skill. Practice the Cornell Method (2-column format: topic + details).",
+        "warn": "Obsessive note-taking (trying to capture everything) distracts you from comprehending. Lean on memory."
+      },
+      {
+        "emoji": "💭",
+        "title": "Memory Trick: The 3-Layer Strategy",
+        "points": [
+          "Layer 1 (Active listening): Hear the main idea and 1–2 key points (mental note only)",
+          "Layer 2 (During audio): Jot 3–5 keywords on paper",
+          "Layer 3 (After audio): Close eyes for 5 sec and mentally recap what you heard before writing"
+        ],
+        "example": {
+          "label": "3-layer for Summarize",
+          "text": "'Hear: 'Plants photosynthesize to make food.' Jot: 'photosyn, plants, food.' Mental recap: 'Plants convert light to food via photosynthesis.' Write summary.'"
+        },
+        "tip": "Layer 3 (mental recap) forces deeper processing and longer retention.",
+        "warn": "Writing your summary immediately after audio (no recap) leads to fragmented, incomplete summaries."
+      },
+      {
+        "emoji": "❓",
+        "title": "Multiple Choice Questions (MCQ) — Single Answer",
+        "points": [
+          "4–5 MCQ per Listening section; 4 options per question",
+          "Question types: detail (what did speaker say?), main idea (what's the gist?), inference (what does it suggest?)",
+          "Audio plays once; read Q options before listening (prep your brain)",
+          "Assess speaker's tone and emphasis to catch nuance"
+        ],
+        "example": {
+          "label": "Sample MCQ",
+          "text": "'Q: What is the main purpose of the lecture? (A) Explain how photosynthesis works. (B) Criticize fossil fuels. (C) Compare two energy sources. (D) Propose a solution.' Audio tone + content → A or B; listen for emphasis."
+        },
+        "tip": "Read options silently BEFORE audio plays. You'll listen with a focused mindset.",
+        "warn": "Without pre-reading, MCQ becomes guesswork. Always read options first."
+      },
+      {
+        "emoji": "🔍",
+        "title": "Pre-Listening Strategy: Read Options",
+        "points": [
+          "Skim all 4 options; highlight keywords and note their differences",
+          "Ask yourself: 'What's the contrast between A and B?' 'Which is broader, which specific?'",
+          "Prepare your ears to listen for those keywords or concepts",
+          "Mark any leading words (dates, names, numbers) to listen for"
+        ],
+        "example": {
+          "label": "Pre-listen analysis",
+          "text": "'Options: (A) solar energy grows (B) fossil fuels decline (C) both grow equally (D) neither is renewable.' Contrast: A vs B (solar up vs fuel down). Listen for growth rates and comparisons.'"
+        },
+        "tip": "30 sec of option analysis saves 2 min on guessing during/after audio.",
+        "warn": "Don't assume an option's correctness before listening. Just note what to listen for."
+      },
+      {
+        "emoji": "📄",
+        "title": "Fill in the Blanks (4–5 blanks per passage, ~30 sec audio each)",
+        "points": [
+          "Listen to short sentences/statements with missing words; type the missing word(s) (1–3 words typical)",
+          "Spelling must be exact (AI is strict: 'ocurred' ≠ 'occurred')",
+          "Word form matters: 'analyze' vs. 'analysis', 'develop' vs. 'development'",
+          "Context + grammar guide the blank (tense, part of speech, collocation)"
+        ],
+        "example": {
+          "label": "Sample blank",
+          "text": "'Audio: \"The company's _____ strategy led to profitability.\" Missing word: 'aggressive' or 'strategic' or 'bold' (semantic options). Spelling exact.'"
+        },
+        "tip": "Listen for the blank's context (words around it). Predict the blank BEFORE audio plays if possible.",
+        "warn": "Homophones (their/there, to/too) are not real traps—spell phonetically if you must guess."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Predict-the-Blank Technique",
+        "points": [
+          "Before audio, read the sentence and GUESS what word might fit (semantic prediction)",
+          "During audio, listen for that word or a synonym",
+          "This preps your brain and speeds comprehension",
+          "Even if you're wrong, the prediction focuses your listening"
+        ],
+        "example": {
+          "label": "Prediction",
+          "text": "'Sentence: 'The _____ approach to education emphasizes student engagement.' Prediction: 'modern', 'innovative', 'progressive'. Audio: 'modern approach...' → You catch it fast.'"
+        },
+        "tip": "Semantic prediction is a confidence booster, even if your guess doesn't match exactly.",
+        "warn": "Don't get stuck on your prediction if audio says something different. Pivot and listen."
+      },
+      {
+        "emoji": "✅",
+        "title": "Highlight Correct Summary (1–2 tasks)",
+        "points": [
+          "Listen to a lecture; pick the best summary from 4 options",
+          "Summary must capture main idea accurately (not partial, not minor detail)",
+          "Trap: 'True but not main' statements that sound right but miss the gist",
+          "Trap: Opposite summaries that contradict the lecture"
+        ],
+        "example": {
+          "label": "Summary trap",
+          "text": "'Lecture about climate solutions (main). Options: (A) Climate change exists (true, but obvious—not main). (B) We must reduce emissions (specific solution—main). Choose B.'"
+        },
+        "tip": "Correct summary = main idea + key supporting points, not minor details.",
+        "warn": "All options might be true statements. Pick the one closest to lecture's PRIMARY PURPOSE."
+      },
+      {
+        "emoji": "🔄",
+        "title": "Select Missing Word (1–2 tasks)",
+        "points": [
+          "Listen to audio with a missing word (blank in the middle)",
+          "4 options given; pick the word that makes sense contextually and phonetically",
+          "Missing word is usually a key word (not filler); it shifts meaning if wrong",
+          "Test both pronunciation AND meaning"
+        ],
+        "example": {
+          "label": "Missing word",
+          "text": "'Audio: \"The project's success depends on _____ resources and proper planning.\" Options: (A) adequate (B) adequate (C) adequate... (Different pronunciations? All same spelling? Pick contextually.)'"
+        },
+        "tip": "Context is king. Even if unsure of pronunciation, the word must fit semantically.",
+        "warn": "Homophones ('to/too') are not tested; phonetically similar words are rare."
+      },
+      {
+        "emoji": "❌",
+        "title": "Highlight Incorrect Words (1–2 tasks, replay allowed!)",
+        "points": [
+          "Read transcript with 4–5 words marked; listen and decide which word(s) are WRONG (speaker says something else)",
+          "Can replay audio for Highlight Incorrect Words (only task with replay)",
+          "Wrong word is often phonetically similar but semantically wrong: 'beach' vs. 'teach', 'accept' vs. 'except'",
+          "Mark incorrect words by clicking them in the interface"
+        ],
+        "example": {
+          "label": "Incorrect word",
+          "text": "'Transcript: \"The team's approach was [inappropriate] and [successful].\" Audio says: \"The team's approach was [appropriate] and [successful].\" → 'inappropriate' is wrong.'"
+        },
+        "tip": "Replay is your friend. Use it if unsure on first listen. Mark conservatively (only confident errors).",
+        "warn": "Accents can muddy phonetics. Replay multiple times if options are similar-sounding."
+      },
+      {
+        "emoji": "✏️",
+        "title": "Write from Dictation (3–4 tasks, 30–50 sec audio each)",
+        "points": [
+          "Hear a full sentence/short passage; transcribe it exactly (spelling, punctuation, grammar)",
+          "AI compares your transcription to the original; errors reduce score",
+          "Mistakes on homophones ('your/you're') or common misspellings ('recieve') are heavily penalized",
+          "Difficult passages test your ability to listen under pressure"
+        ],
+        "example": {
+          "label": "Dictation accuracy",
+          "text": "'Audio: \"The government's initiative to foster sustainable development in emerging economies is critical.\" Transcription must match word-for-word.'"
+        },
+        "tip": "Focus on accuracy, not speed. Type slowly and clearly. Better to miss a word than misspell 5.",
+        "warn": "Autocorrect is disabled (most platforms). Manual spelling is your responsibility."
+      },
+      {
+        "emoji": "⚠️",
+        "title": "Common Transcription Errors in Dictation",
+        "points": [
+          "Homophones: 'there/their/they're', 'to/too/two', 'your/you're', 'know/no'",
+          "Contractions: 'it's' vs. 'its', 'don't' vs. 'do not' (speaker says 'don't', you type 'don't')",
+          "Silent letters: 'psychology', 'receipt', 'subtle'",
+          "Double letters: 'accommodate', 'beginning', 'recommend'",
+          "British vs. American spelling: 'colour/color', 'centre/center' (PTE is British-friendly)"
+        ],
+        "example": {
+          "label": "Tricky words",
+          "text": "'Audio says \"They're going to their house.\" Wrong: \"There going to there house.\" Right: \"They're going to their house.\"'"
+        },
+        "tip": "Drill homophones weekly. Create flashcards; quiz yourself daily.",
+        "warn": "Spelling perfection is mandatory in Dictation. One typo = one error. Multiple errors tank the score."
+      },
+      {
+        "emoji": "🎧",
+        "title": "Accent & Pronunciation Awareness",
+        "points": [
+          "PTE audio features British, American, Australian, and Indian English accents",
+          "Accent differences: 'r' sounds (American rolls; British/Indian soften), vowel shifts ('ah' vs. 'ah-eh'), stress patterns",
+          "Pre-test exposure: Listen to TED talks, podcasts, BBC radio in target accents",
+          "Your accent doesn't matter (Speaking); their accent affects your Listening comprehension"
+        ],
+        "example": {
+          "label": "Accent trap",
+          "text": "'British: \"class\" (kl-ahs). American: \"class\" (klas). Indian: \"class\" (kl-ass). Vowel shift can lead to mishearing if you're not exposed.'"
+        },
+        "tip": "Spend 10 min daily listening to diverse English accents (YouTube, podcasts).",
+        "warn": "Expecting American English only and getting Australian will tank your comprehension. Normalize accent variation."
+      },
+      {
+        "emoji": "📖",
+        "title": "Transcript Reading Strategy (when given)",
+        "points": [
+          "Some tasks (Highlight Incorrect Words) provide transcripts while you listen",
+          "DON'T pre-read the entire transcript; skim keywords only",
+          "Read while listening (dual processing: auditory + visual) to catch discrepancies",
+          "Use transcripts as a safety net, not a crutch"
+        ],
+        "example": {
+          "label": "Skim strategy",
+          "text": "'Transcript given: \"The company [initiative/investiment?] focuses on renewable energy.\" Skim for bracketed words; listen for exact sounds.'"
+        },
+        "tip": "Transcripts help with phonetically similar words. Leverage them.",
+        "warn": "Over-reliance on transcripts weakens your listening skill. Do most tasks without reading support."
+      },
+      {
+        "emoji": "🚨",
+        "title": "Top 5 Listening Mistakes",
+        "points": [
+          "Panicking when you miss a word: leads to mental freeze. Skip and refocus on next section.",
+          "Writing answers during audio (no time). Jot notes; write after audio ends.",
+          "Mishearing due to accent unfamiliarity: exposure + practice fix this.",
+          "Over-thinking inference Qs (MCQ): stick to what you heard, not what you assume.",
+          "Skipping Highlight Incorrect Words (thinking it's easy): trap questions exist. Stay alert."
+        ],
+        "example": {
+          "label": "Mistake cascade",
+          "text": "'Miss 1 word → panic → miss next 5 words → lose context → fail the task. Prevention: expect to miss some words; focus on gist.'"
+        },
+        "tip": "Partial comprehension is OK. Get 70% of the audio and you'll answer 80% of Qs correctly.",
+        "warn": "Perfectionism kills Listening scores. Accept gaps and move on."
+      },
+      {
+        "emoji": "💡",
+        "title": "Note-Taking System: Cornell Method",
+        "points": [
+          "Left column (2 inches): KEY WORDS or QUESTIONS (what you anticipate)",
+          "Right column (5 inches): NOTES (what you hear—abbreviated, no full sentences)",
+          "Bottom (1 inch): SUMMARY (your recap after audio)"
+        ],
+        "example": {
+          "label": "Cornell example",
+          "text": "'Left: Climate? Causes? Effects? | Right: CC, CO2 ↑, FF+defor, temp rise, storms | Bottom: Climate change from CO2; effects = warming, weather x.'"
+        },
+        "tip": "Cornell forces you to listen actively and think critically during/after audio.",
+        "warn": "Practice Cornell in low-stakes listening. It's slower at first but faster once mastered."
+      },
+      {
+        "emoji": "🎬",
+        "title": "Practice Strategy: 6-Week Progression",
+        "points": [
+          "Week 1: Learn task types, watch sample responses, understand scoring",
+          "Week 2: Drill Summarize Spoken Text (5 per day, 15 min). Build jotting skills.",
+          "Week 3: Add MCQ (5 Qs per day) + Fill in Blanks (5 per day). Total 30 min.",
+          "Week 4: Add Highlight tasks (Correct Summary, Missing Word, Incorrect Words). Total 40 min.",
+          "Week 5: Add Dictation (3–4 per day, drill spelling). Total 45 min.",
+          "Week 6: Full mocks (3+ full Listening sections, 32+ min, back-to-back). Stamina test."
+        ],
+        "example": {
+          "label": "Daily routine Week 2",
+          "text": "'Day: 5 Summarize audios (1 min listen + 1 min write each = 10 min). Rest 5 min. Repeat. Total 25 min.'"
+        },
+        "tip": "Gradual progression prevents burnout. Add one task type per week.",
+        "warn": "Skipping weeks 1–4 and jumping to mocks (Week 6) leads to anxiety and low scores."
+      },
+      {
+        "emoji": "🎧",
+        "title": "Exposure: Immersion Listening (Outside Practice)",
+        "points": [
+          "Daily (15–30 min): podcasts, audiobooks, TED talks, BBC/NPR news in English",
+          "Weekly (1 hour): documentary films (English subtitles optional, not required)",
+          "Target accents: British (BBC), American (NPR, TED), Australian (ABC), Indian (NDTV, YouTube channels)",
+          "Diverse topics: science, business, history, social issues (build vocabulary + accent familiarity)"
+        ],
+        "example": {
+          "label": "Weekly listening plan",
+          "text": "'Mon–Fri: 15 min BBC News. Sat: 1 TED talk (20 min). Sun: 30 min audiobook. Total: 2 hours/week.'"
+        },
+        "tip": "Immersion is faster than isolated practice. Combine 'study' Listening + 'pleasure' Listening.",
+        "warn": "Passive listening (background noise) doesn't count. Active listening (focused attention) only."
+      },
+      {
+        "emoji": "📊",
+        "title": "Tracking Progress: Metrics That Matter",
+        "points": [
+          "Per-task accuracy: (Correct answers / Total answers) × 100%",
+          "Comprehension rate: Estimate % of audio you understood (50%? 75%? 90%)",
+          "Spelling accuracy in Dictation: Typos / Words transcribed",
+          "Speed: How fast can you transcribe Dictation? (Aim: 1 sec per word, exact spelling)"
+        ],
+        "example": {
+          "label": "Tracking",
+          "text": "'Mock 1: Summarize 2/3, MCQ 3/4, Fill Blanks 3/4, Highlight 5/6, Dictation 4/4 = 17/21 (81%). Comprehension 70%. Dictation speed 1.2 sec/word. Week focus: Comprehension → Immersion.'"
+        },
+        "tip": "Track comprehension rate + accuracy separately. Comprehension is the foundation.",
+        "warn": "If accuracy is high but comprehension is low, you're guessing, not understanding. Slow down."
+      },
+      {
+        "emoji": "🏆",
+        "title": "Band 85+ Strategy: Listening Excellence",
+        "points": [
+          "Master all 7 task types: 90%+ accuracy on easy/medium, 70%+ on hard",
+          "Dictation perfection: near-zero spelling errors, ~4.5–5/5 tasks correct",
+          "Comprehension: 85%+ of audio understood on first listen",
+          "Accent fluency: no accent stumbles; normalized to British/American/Australian",
+          "Speed: Complete Listening in 32 min with 80%+ score (33–36 / 40+ questions)"
+        ],
+        "tip": "85+ is achievable with 6–8 weeks of daily 45–60 min practice + 1–2 hours immersion.",
+        "warn": "Listening is the slowest skill to improve. Start now; patience required."
+      },
+      {
+        "emoji": "🚀",
+        "title": "Next Steps: Free Listening Mocks & Practice",
+        "points": [
+          "Pearson's official mocks: 1–2 free, then paid (gold standard)",
+          "PTE Scholar app: free timed Listening tasks, instant feedback",
+          "Syllab's free PTE Listening drills: unlimited mocks, accent variety, AI feedback on comprehension",
+          "YouTube: search 'PTE Listening samples' for real audio + expert walkthroughs",
+          "Start your first mock TODAY to baseline comprehension level"
+        ],
+        "example": {
+          "label": "Syllab value",
+          "text": "'Unlimited free mocks with diverse accents. Track comprehension trends. AI identifies which accents/topics trip you up.'"
+        },
+        "tip": "Combine official mocks + free practice + daily immersion. Three-pronged approach wins.",
+        "warn": "Listening improvement is slow (1–2 points per week). Commit to 6+ weeks minimum."
+      }
+    ]
+  }
+}

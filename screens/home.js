@@ -307,10 +307,9 @@ function TopBar({ current = "home", onNav }) {
     ["home", "Home"],
     ["exam-prep", "Exams"],
     ["exams", "Exam Hub"],
-    ["lessons", "Prep Lessons"],
+    ["learn", "Learn"],
     ["colleges", "Study Abroad"],
     ["tools", "Tools"],
-    ["learning", "Learning"],
     ["languages", "Languages"],
     ["blog", "Blog"]
   ];
@@ -318,11 +317,10 @@ function TopBar({ current = "home", onNav }) {
     ["home", "Home"],
     ["exam-prep", "Exams"],
     ["exams", "Exam Guides"],
-    ["lessons", "\u{1F4CA} Prep Lessons"],
+    ["learn", "\u{1F4DA} Learn (Lessons + Club)"],
     ["agents", "AI Speaking & Writing"],
     ["colleges", "Study Abroad"],
     ["tools", "Tools"],
-    ["learning", "Learning Club"],
     ["languages", "Learn German & French"],
     ["blog", "Blog"],
     ["progress", "My Progress"]
