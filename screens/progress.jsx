@@ -498,6 +498,8 @@
             </div>
           </div>
 
+          {window.LP_GamifyCard ? <window.LP_GamifyCard /> : null}
+
           {confirmClear && (
             <div className="confirm-banner">
               <span>This will permanently delete all test history.</span>

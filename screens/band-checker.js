@@ -71,6 +71,10 @@ Return ONLY a JSON object: {"overall": <band 0-9 in 0.5 steps>, "wordCount": <in
         if (!d || d.overall == null) throw new Error("parse");
         setData(d);
         try {
+          window.LP_Gamify && window.LP_Gamify.award(30);
+        } catch (e) {
+        }
+        try {
           const h = JSON.parse(localStorage.getItem("lp_bc_writing") || "[]");
           h.unshift({ t: Date.now(), task, overall: d.overall, words });
           localStorage.setItem("lp_bc_writing", JSON.stringify(h.slice(0, 20)));
@@ -152,6 +156,10 @@ Return ONLY a JSON object: {"overall": <band 0-9 in 0.5 steps>, "criteria": [{"k
         const d = await evaluate(prompt);
         if (!d || d.overall == null) throw new Error("parse");
         setData(d);
+        try {
+          window.LP_Gamify && window.LP_Gamify.award(30);
+        } catch (e) {
+        }
       } catch (e) {
         setErr("Couldn't score that \u2014 please try again.");
       }

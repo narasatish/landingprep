@@ -304,6 +304,15 @@ function Home({ onGuide, onPractice, onNav }) {
         </div>
       </section>
 
+      {/* Gamification: XP / level / streak (retention) */}
+      {window.LP_GamifyCard ? (
+        <section className="section" style={{ paddingTop: 0 }}>
+          <div className="shell" style={{ maxWidth: 760 }}>
+            <window.LP_GamifyCard />
+          </div>
+        </section>
+      ) : null}
+
       {/* Learning Club CTA */}
       <section className="section">
         <div className="shell">
@@ -492,6 +501,8 @@ function TopBar({ current = "home", onNav }) {
     ["exam-prep", "Exams"],
     ["exams", "Exam Guides"],
     ["learn", "📚 Learn (Lessons + Club)"],
+    ["writing-checker", "🎯 AI Band-Score Checker"],
+    ["vocabulary", "📖 Vocabulary"],
     ["agents", "AI Speaking & Writing"],
     ["colleges", "Study Abroad"],
     ["tools", "Tools"],

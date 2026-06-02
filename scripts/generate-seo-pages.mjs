@@ -1134,10 +1134,64 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+function vocabularyPages() {
+  let VOCAB = {};
+  try { VOCAB = JSON.parse(readFileSync(join(ROOT, "data/vocab-topics.json"), "utf8")); } catch (e) { return; }
+  const ids = Object.keys(VOCAB);
+  // Hub page
+  const hubFaqs = [
+    { q: "Is the vocabulary free?", a: "Yes — every topic word list (with definitions, examples, synonyms and audio) is 100% free, no signup." },
+    { q: "How does better vocabulary raise my band?", a: "Lexical Resource is 25% of your IELTS Writing and Speaking marks. Using precise, topic-specific words and higher-band synonyms lifts that score directly." },
+    { q: "Which topics are covered?", a: "Education, technology, environment, health, work & career, crime & law, globalisation, Band 9 linking words, and high-frequency TOEFL academic words." },
+  ];
+  const hubInner = `
+<p class="crumb"><a href="/">Home</a> › IELTS &amp; TOEFL Vocabulary</p>
+<section class="hero">
+  <div class="badges"><span class="badge">100% Free</span><span class="badge">${ids.length} topics</span><span class="badge">With audio</span></div>
+  <h1>Free IELTS &amp; TOEFL Vocabulary by Topic</h1>
+  <p class="lead">Topic word lists that lift your Lexical Resource band — definitions, example sentences, higher-band synonyms and 🔊 audio. Pick a topic and start learning.</p>
+  <a class="cta" href="/#/vocabulary">▶ Open the vocabulary trainer</a>
+</section>
+<div class="card"><h2>Choose a topic</h2><ul>${ids.map((id) => `<li><a href="/ielts-vocabulary/${id}/"><strong>${esc(VOCAB[id].title)}</strong></a> — ${VOCAB[id].words.length} words</li>`).join("")}</ul></div>
+${faqBlock(hubFaqs)}
+${relatedGrid([
+  { label: "Open vocabulary trainer", href: "/#/vocabulary" },
+  { label: "Free IELTS writing checker", href: "/ielts-writing-checker/" },
+  { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
+  { label: "IELTS prep lessons", href: "/prep-lessons/" },
+])}`;
+  emit(`/ielts-vocabulary/`, head({
+    title: `Free IELTS &amp; TOEFL Vocabulary by Topic — Word Lists with Examples | ${BRAND}`,
+    desc: `Free IELTS & TOEFL vocabulary by topic: ${ids.map((i) => VOCAB[i].title).join(", ")}. Definitions, example sentences, Band 9 synonyms and audio. No signup.`,
+    path: `/ielts-vocabulary/`,
+    kw: "ielts vocabulary, ielts vocabulary list, ielts topic vocabulary, toefl vocabulary, toefl words list, ielts band 9 words, academic vocabulary ielts, free ielts vocabulary with meaning, ielts linking words",
+    jsonLdBlocks: [faqJsonLd(hubFaqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Vocabulary", path: `/ielts-vocabulary/` }])],
+  }) + shell(hubInner));
+  // Per-topic pages
+  ids.forEach((id) => {
+    const t = VOCAB[id]; const path = `/ielts-vocabulary/${id}/`;
+    const list = t.words.map((w) => `<div class="vrow"><strong>${esc(w.w)}</strong> <em>${esc(w.pos || "")}</em> — ${esc(w.def)}<br/><span class="vex">“${esc(w.ex)}”</span>${w.syn ? ` <span class="vsyn">↗ ${esc(w.syn)}</span>` : ""}</div>`).join("");
+    const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/ielts-vocabulary/">Vocabulary</a> › ${esc(t.title)}</p>
+<section class="hero"><div class="badges"><span class="badge">${t.words.length} words</span><span class="badge">Free</span></div>
+<h1>${t.emoji || ""} ${esc(t.title)} Vocabulary for IELTS &amp; TOEFL</h1><p class="lead">${esc(t.intro)}</p>
+<a class="cta" href="/#/vocabulary/${id}">▶ Practise with audio</a></section>
+<div class="card"><h2>${esc(t.title)} word list</h2>${list}</div>
+${relatedGrid(ids.filter((x) => x !== id).slice(0, 4).map((x) => ({ label: VOCAB[x].title + " vocabulary", href: `/ielts-vocabulary/${x}/` })))}`;
+    emit(path, head({
+      title: `${t.title} Vocabulary for IELTS &amp; TOEFL — Free Word List with Examples | ${BRAND}`,
+      desc: `Free ${t.title} vocabulary for IELTS & TOEFL: ${t.words.slice(0, 8).map((w) => w.w).join(", ")}… — definitions, example sentences and Band 9 synonyms.`,
+      path, kw: `${t.title.toLowerCase()} vocabulary ielts, ielts ${t.title.toLowerCase()} words, ${t.title.toLowerCase()} vocabulary list, ielts vocabulary ${t.title.toLowerCase()}, toefl ${t.title.toLowerCase()} words`,
+      jsonLdBlocks: [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Vocabulary", path: `/ielts-vocabulary/` }, { name: t.title, path }])],
+    }) + shell(inner));
+  });
+}
+
 Object.keys(LANG_SEO).forEach(languageLandingPage);
 prepLessonsPage();
 bandCheckerPage("writing");
 bandCheckerPage("speaking");
+vocabularyPages();
 
 // Write files
 PAGES.forEach(({ path, html }) => {

@@ -8,6 +8,8 @@ function viewToHash(view, examId) {
       return "#/exam-prep" + (examId ? "/" + examId : "");
     case "guide":
       return "#/exam-hub" + (examId ? "/" + examId : "");
+    case "vocabulary":
+      return "#/vocabulary";
     case "writing-checker":
       return "#/writing-checker";
     case "speaking-checker":
@@ -51,6 +53,7 @@ function hashToView(hash, exams) {
     const ex = find(parts[1]);
     return { view: "guide", examId: ex ? ex.id : exams && exams[0] ? exams[0].id : null };
   }
+  if (head === "vocabulary") return { view: "vocabulary", examId: null, vocabTopic: parts[1] || null };
   if (head === "writing-checker") return { view: "writing-checker", examId: null };
   if (head === "speaking-checker") return { view: "speaking-checker", examId: null };
   if (head === "learn") return { view: "learn", examId: null };
@@ -193,6 +196,10 @@ function App() {
     if (id === "home") {
       setView("home");
       setExam(null);
+      return;
+    }
+    if (id === "vocabulary") {
+      setView("vocabulary");
       return;
     }
     if (id === "writing-checker") {
@@ -348,6 +355,8 @@ function App() {
         onNav
       }
     );
+  } else if (view === "vocabulary") {
+    content = /* @__PURE__ */ React.createElement(window.LP_Vocabulary, { onNav, initialTopic: (window.location.hash || "").split("/")[2] || null });
   } else if (view === "writing-checker") {
     content = /* @__PURE__ */ React.createElement(window.LP_BandChecker, { onNav, initialMode: "writing" });
   } else if (view === "speaking-checker") {

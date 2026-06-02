@@ -101,6 +101,7 @@
         const d = await evaluate(prompt);
         if (!d || d.overall == null) throw new Error("parse");
         setData(d);
+        try { window.LP_Gamify && window.LP_Gamify.award(30); } catch (e) {}
         try { const h = JSON.parse(localStorage.getItem("lp_bc_writing") || "[]"); h.unshift({ t: Date.now(), task, overall: d.overall, words }); localStorage.setItem("lp_bc_writing", JSON.stringify(h.slice(0, 20))); } catch (e) {}
       } catch (e) { setErr("Couldn't score that — please try again (the AI may be warming up)."); }
       setBusy(false);
@@ -158,6 +159,7 @@
         const d = await evaluate(prompt);
         if (!d || d.overall == null) throw new Error("parse");
         setData(d);
+        try { window.LP_Gamify && window.LP_Gamify.award(30); } catch (e) {}
       } catch (e) { setErr("Couldn't score that — please try again."); }
       setBusy(false);
     }
