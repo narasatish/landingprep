@@ -964,6 +964,123 @@ SCHOLARSHIP_DATA.forEach(scholarshipDetailPage);
 BLOG_EXTRA.forEach(blogPage);
 eligibilityHub();
 
+// ── Language Hub SEO pages (German flagship + French) ────────────────────────
+const LANG_SEO = {
+  german: {
+    name: "German", native: "Deutsch", slug: "learn-german", flag: "🇩🇪",
+    countries: "Germany, Austria and Switzerland", tuition: "tuition-free public universities in Germany",
+    exams: "Goethe-Zertifikat (A1–C2), TestDaF, telc and DSH",
+    units: ["Greetings &amp; introductions", "Numbers, days &amp; time", "Articles &amp; gender (der/die/das)", "Present tense &amp; common verbs", "Survival German for uni, shops &amp; café"],
+    kw: "learn german free, free german course online, german a1, learn german for beginners, goethe a1 practice, german for study abroad, free german lessons, german vocabulary with audio, german speaking practice ai, german mock test free, study in germany language requirement, learn german online free for beginners",
+    faqs: [
+      { q: "Is the German course on LandingPrep really free?", a: "Yes — the German A1 course, vocabulary with natural-voice pronunciation, AI speaking practice and mock tests are 100% free with no signup and no payment." },
+      { q: "What level of German do I need to study in Germany?", a: "Most German-taught degrees require B1–B2 (TestDaF or DSH); many English-taught Master's programmes need no German. Start at A1 here and build up." },
+      { q: "Which German exam should I take?", a: "The Goethe-Zertifikat is the most widely recognised worldwide; TestDaF and DSH are used for university admission. Pick the one your university accepts." },
+      { q: "Can I practise speaking German with AI for free?", a: "Yes — our AI speaking partner holds a real two-way German conversation, replies in the natural German voice and gives the English translation, so you can practise anytime." },
+    ],
+  },
+  french: {
+    name: "French", native: "Français", slug: "learn-french", flag: "🇫🇷",
+    countries: "France, Belgium, Switzerland and Québec (Canada)", tuition: "low-tuition public universities in France",
+    exams: "DELF (A1–B2), DALF (C1–C2), TCF and TEF",
+    units: ["Greetings &amp; introductions", "Numbers &amp; everyday words", "Articles &amp; gender (le/la/les)", "Key verbs: être &amp; avoir", "Survival French for daily life"],
+    kw: "learn french free, free french course online, french a1, learn french for beginners, delf a1 practice, french for study abroad, free french lessons, french vocabulary with audio, french speaking practice ai, french mock test free, study in france language, tcf tef practice free",
+    faqs: [
+      { q: "Is the French course free?", a: "Yes — the French A1 course, vocabulary with native-voice pronunciation, AI speaking practice and mock tests are completely free with no signup." },
+      { q: "What French level do I need to study in France?", a: "Most French-taught degrees want B2 (DELF/DALF or TCF). Campus France guides the level; English-taught programmes may need none. Start A1 here." },
+      { q: "Which French exam is best for Canada?", a: "For Canadian immigration, the TEF and TCF are accepted (Express Entry). For study, DELF/DALF and TCF are widely recognised." },
+      { q: "Can I practise speaking French with AI?", a: "Yes — our AI partner chats with you in simple French (with English translations) and speaks in the natural French voice." },
+    ],
+  },
+};
+function languageLandingPage(key) {
+  const L = LANG_SEO[key];
+  const path = `/${L.slug}/`;
+  const title = `Learn ${L.name} Free — Online A1 Course, Vocabulary &amp; Exam Prep 2026 | ${BRAND}`;
+  const desc = `Learn ${L.name} (${L.native}) for free: a structured A1 course, vocabulary with natural-voice pronunciation, an AI speaking partner and ${L.name} mock tests. Built for students heading to ${L.countries}. No signup.`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/languages">Languages</a> › Learn ${L.name}</p>
+<section class="hero">
+  <div class="badges"><span class="badge">100% Free</span><span class="badge">Natural voice</span><span class="badge">AI speaking</span><span class="badge">No signup</span></div>
+  <h1>Learn ${L.name} Free — ${L.flag} Online A1 Course</h1>
+  <p class="lead">Study abroad in ${L.countries}? Learn ${L.name} from scratch with a free A1 course, vocabulary you can <em>hear</em> in a natural voice, a 2-way AI speaking partner and ${L.name} mock tests — all free, for students worldwide.</p>
+  <a class="cta" href="/#/languages">▶ Start the free ${L.name} course</a>
+</section>
+<div class="card">
+  <h2>Why learn ${L.name}?</h2>
+  <ul>
+    <li><strong>Study abroad:</strong> ${L.name} unlocks ${L.tuition} and daily life in ${L.countries}.</li>
+    <li><strong>Better visa &amp; jobs:</strong> language skills improve student-visa approval and part-time work.</li>
+    <li><strong>Settle &amp; work:</strong> speaking ${L.name} makes living, working and getting PR far easier.</li>
+  </ul>
+</div>
+<div class="card">
+  <h2>Free ${L.name} A1 course outline</h2>
+  <ul>${L.units.map((u) => `<li>${u}</li>`).join("")}</ul>
+  <p>Each lesson has grammar notes, example sentences and vocabulary with a 🔊 button so you hear the ${L.name} pronunciation in a natural voice — then a quick placement test to check your level.</p>
+</div>
+<div class="card">
+  <h2>${L.name} exams for study abroad</h2>
+  <p>We guide you through ${L.exams}. Take a free ${L.name} A1 mock test (Reading, Grammar &amp; Vocabulary, and Listening) with instant scoring to track your progress toward the level your university needs.</p>
+</div>
+<div class="card">
+  <h2>Practise speaking ${L.name} with AI</h2>
+  <p>Our free AI speaking partner holds a real two-way ${L.name} conversation: speak (or type), and it replies in simple ${L.name} with the English translation and the natural ${L.name} voice — the fastest way to build confidence.</p>
+</div>
+${faqBlock(L.faqs)}
+${relatedGrid([
+  { label: `Start the free ${L.name} course`, href: "/#/languages" },
+  { label: key === "german" ? "Learn French free" : "Learn German free", href: key === "german" ? "/learn-french/" : "/learn-german/" },
+  { label: "Free exam prep lessons (PPT)", href: "/prep-lessons/" },
+  { label: "Study abroad — universities &amp; scholarships", href: "/#/colleges" },
+])}`;
+  emit(path, head({ title, desc, path, kw: L.kw, jsonLdBlocks: [
+    courseJsonLd(key, `Free ${L.name} A1 Course`, desc),
+    faqJsonLd(L.faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Languages", path: "/#/languages" }, { name: `Learn ${L.name}`, path }]),
+  ] }) + shell(inner));
+}
+function prepLessonsPage() {
+  const path = `/prep-lessons/`;
+  const title = `Free Exam Prep Lessons — IELTS, TOEFL, German &amp; French Tips &amp; Strategy | ${BRAND}`;
+  const desc = `Free slide lessons (PPT-style) for IELTS, TOEFL, PTE, GRE, GMAT, German &amp; French — tips, tricks, traps and section-by-section strategy with examples. Learn first, then practise with free mocks.`;
+  const kw = "ielts listening tips, free exam prep lessons, ielts strategy, ielts listening practice tips, toefl tips, exam preparation slides, ielts question types, learn german tips, study abroad exam strategy, ielts listening band 8 tips";
+  const faqs = [
+    { q: "Are the prep lessons free?", a: "Yes — every slide lesson on LandingPrep is 100% free, with no signup. Learn the strategy, then practise with our free mock tests." },
+    { q: "What do the IELTS Listening tips cover?", a: "Format, all question types, the word-limit rule, distractor traps, synonyms/paraphrasing, and a section-by-section game plan — 30 slides with examples." },
+    { q: "Do you have lessons for German and French?", a: "Yes — German and French foundation decks cover pronunciation, gender (der/die/das, le/la), verbs and a smart learning plan." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › Prep Lessons</p>
+<section class="hero">
+  <div class="badges"><span class="badge">100% Free</span><span class="badge">Tips &amp; traps</span><span class="badge">With examples</span></div>
+  <h1>Free Exam Prep Lessons — Learn the Strategy First</h1>
+  <p class="lead">Quick, visual slide lessons for every exam section — tips, tricks, traps and worked examples. Master the strategy here, then practise with our free mock tests.</p>
+  <a class="cta" href="/#/lessons">▶ Open the free prep lessons</a>
+</section>
+<div class="card">
+  <h2>What's inside</h2>
+  <ul>
+    <li><strong>IELTS Listening</strong> — 30 slides: format, all 8 question types, traps, word-limit rule and section tactics.</li>
+    <li><strong>German &amp; French foundations</strong> — pronunciation, gender, verbs, word order and a learning plan.</li>
+    <li><strong>More coming</strong> — IELTS Reading/Writing/Speaking, TOEFL, PTE, GRE, GMAT, CELPIP &amp; Duolingo.</li>
+  </ul>
+</div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: "Open all prep lessons", href: "/#/lessons" },
+  { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
+  { label: "Learn German free", href: "/learn-german/" },
+  { label: "Learn French free", href: "/learn-french/" },
+])}`;
+  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Prep Lessons", path }]),
+  ] }) + shell(inner));
+}
+Object.keys(LANG_SEO).forEach(languageLandingPage);
+prepLessonsPage();
+
 // Write files
 PAGES.forEach(({ path, html }) => {
   const dir = join(ROOT, path);
