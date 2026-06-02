@@ -154,6 +154,7 @@ function head({ title, desc, path, kw, jsonLdBlocks }) {
 <meta name="keywords" content="${esc(kw)}"/>
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"/>
 <link rel="canonical" href="${url}"/>
+<link rel="alternate" type="application/rss+xml" title="LandingPrep Blog" href="${ORIGIN}/feed.xml"/>
 <link rel="alternate" hreflang="en-IN" href="${url}"/>
 <link rel="alternate" hreflang="en" href="${url}"/>
 <link rel="alternate" hreflang="x-default" href="${url}"/>
@@ -1453,6 +1454,74 @@ ${relatedGrid([
   emit(path, head({ title, desc, path, kw: `ielts score for ${c.name.toLowerCase()}, ielts requirement ${c.name.toLowerCase()}, ${c.name.toLowerCase()} ielts, ielts band for ${c.name.toLowerCase()}, english requirement ${c.name.toLowerCase()}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: c.name, path: `/university/${c.id}/` }, { name: "IELTS score", path }])] }) + shell(inner));
 }
 
+// ── TOEFL / PTE score for [University] (converted from the IELTS requirement) ─
+const IELTS_CONV = { 6: { toefl: "60–78", pte: "50–56" }, 6.5: { toefl: "79–93", pte: "58–64" }, 7: { toefl: "94–101", pte: "65–72" }, 7.5: { toefl: "102–109", pte: "73–78" }, 8: { toefl: "110–114", pte: "79–82" } };
+const ALT_EXAMS = [{ name: "TOEFL", full: "TOEFL iBT", k: "toefl", scale: "0–120" }, { name: "PTE", full: "PTE Academic", k: "pte", scale: "10–90" }];
+function altExamForUniPage(c, ex) {
+  if (!c || !c.id || c.ielts == null) return;
+  const conv = IELTS_CONV[Number(c.ielts)];
+  if (!conv || !conv[ex.k]) return;
+  const score = conv[ex.k];
+  const path = `/${ex.k}-for-${c.id}/`;
+  const title = `${ex.name} Score for ${esc(c.name)} — Requirement (2026) | ${BRAND}`;
+  const desc = `What ${ex.full} score do you need for ${c.name} (${c.country})? Around ${score} (equivalent to IELTS ${c.ielts}). See the target and a free plan to reach it with mock tests.`;
+  const faqs = [
+    { q: `What ${ex.name} score do I need for ${c.name}?`, a: `${c.name} typically needs about ${ex.full} ${score}, which is equivalent to IELTS ${c.ielts}. Confirm the exact figure on the official course page.` },
+    { q: `Does ${c.name} accept ${ex.name}?`, a: `Yes — ${c.name} accepts ${ex.full} alongside IELTS for English proficiency.` },
+    { q: `How do I prepare for free?`, a: `Take free ${ex.full} mock tests, learn the strategy in the PPT lessons, and practise writing/speaking with the free AI band checker.` },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/university/${c.id}/">${esc(c.name)}</a> › ${ex.name} score</p>
+<section class="hero"><div class="badges"><span class="badge">${esc(c.country)}</span><span class="badge">${ex.name} ${score}</span><span class="badge">≈ IELTS ${c.ielts}</span></div>
+<h1>${ex.name} Score for ${esc(c.name)}</h1>
+<p class="lead">To study at <strong>${esc(c.name)}</strong> you typically need about <strong>${ex.full} ${score}</strong> — equivalent to IELTS ${c.ielts}. Here's how to get there, free.</p>
+<a class="cta" href="/mock-test/${ex.k}/">▶ Take a free ${ex.name} mock test</a></section>
+<div class="card"><h2>How to reach ${ex.name} ${score}</h2><ol>
+<li><strong>Diagnose.</strong> Take a free <a href="/mock-test/${ex.k}/">${ex.full} mock</a> to find your weak section.</li>
+<li><strong>Learn the strategy.</strong> Use the free <a href="/prep-lessons/">${ex.name} prep lessons</a>.</li>
+<li><strong>Get feedback.</strong> Check your writing &amp; speaking with the free <a href="/ielts-writing-checker/">AI band checker</a>.</li>
+</ol></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `${esc(c.name)} — full profile`, href: `/university/${c.id}/` },
+  { label: `IELTS score for ${esc(c.name)}`, href: `/ielts-for-${c.id}/` },
+  { label: `Free ${ex.name} mock test`, href: `/mock-test/${ex.k}/` },
+  { label: "Score converter", href: "/tools/english-test-score-converter/" },
+])}`;
+  emit(path, head({ title, desc, path, kw: `${ex.name.toLowerCase()} score for ${c.name.toLowerCase()}, ${ex.name.toLowerCase()} requirement ${c.name.toLowerCase()}, ${c.name.toLowerCase()} ${ex.name.toLowerCase()}, english requirement ${c.name.toLowerCase()}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: c.name, path: `/university/${c.id}/` }, { name: `${ex.name} score`, path }])] }) + shell(inner));
+}
+
+// ── "Scholarships to study in [Country]" pages ──────────────────────────────
+function scholarshipCountryPages() {
+  const byC = {};
+  for (const s of SCHOLARSHIP_DATA) { const c = s.country || "Global"; (byC[c] = byC[c] || []).push(s); }
+  Object.keys(byC).forEach((country) => {
+    const list = byC[country];
+    if (!list.length) return;
+    const slug = country.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    const path = `/scholarships-in-${slug}/`;
+    const faqs = [
+      { q: `Are there scholarships to study in ${country}?`, a: `Yes — there are ${list.length} notable scholarships for international students heading to ${country}, ranging from partial tuition waivers to fully-funded awards.` },
+      { q: `Are these scholarships free to apply for?`, a: `Browsing and our scholarship finder are 100% free. Each scholarship links to its official application — never pay a third party to "apply" for you.` },
+    ];
+    const inner = `
+<p class="crumb"><a href="/">Home</a> › Scholarships in ${esc(country)}</p>
+<section class="hero"><div class="badges"><span class="badge">${list.length} scholarships</span><span class="badge">${esc(country)}</span><span class="badge">2026</span></div>
+<h1>Scholarships to Study in ${esc(country)}</h1>
+<p class="lead">Funding for international students in ${esc(country)} — from partial awards to fully-funded scholarships. Free to browse, with eligibility and deadlines.</p>
+<a class="cta" href="/#/colleges">▶ Open the free scholarship finder</a></section>
+<div class="card"><h2>${list.length} scholarships for ${esc(country)}</h2>${list.map((s) => `<div class="vrow"><strong>${esc(s.name)}</strong> — ${esc(s.level || "")} · ${esc(s.type || "")} · ${esc(s.amount || "")}<br/><span class="vex">${esc(s.who || "")}${s.deadline ? " · Deadline: " + esc(s.deadline) : ""}</span></div>`).join("")}</div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: "Free scholarship finder", href: "/#/colleges" },
+  { label: "College predictor", href: "/#/colleges" },
+  { label: `Student guide to ${country === "USA" ? "New York" : country === "Canada" ? "Toronto" : country === "Australia" ? "Sydney" : country === "UK" ? "London" : country === "Germany" ? "Berlin" : "Dublin"}`, href: "/student-city-guides/" },
+  { label: "Move-abroad checklist", href: "/#/relocate" },
+])}`;
+    emit(path, head({ title: `Scholarships to Study in ${esc(country)} for International Students (2026) | ${BRAND}`, desc: `${list.length} scholarships to study in ${country} for international students — partial and fully-funded awards with eligibility and deadlines. Free scholarship finder.`, path, kw: `scholarships in ${country.toLowerCase()}, study in ${country.toLowerCase()} scholarships, ${country.toLowerCase()} scholarships for international students, fully funded scholarships ${country.toLowerCase()}, ${country.toLowerCase()} student funding`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `Scholarships in ${country}`, path }])] }) + shell(inner));
+  });
+}
+
 Object.keys(LANG_SEO).forEach(languageLandingPage);
 prepLessonsPage();
 bandCheckerPage("writing");
@@ -1464,6 +1533,8 @@ BANDS.filter((b) => SEC_RAW[b.b]).forEach((b) => SECTIONS.forEach((sec) => bandS
 EXAM_COUNTRY.forEach(examForCountryPage);
 EXAM_VS.forEach(examVsExamPage);
 COLLEGES.forEach(examForUniPage);
+COLLEGES.forEach((c) => ALT_EXAMS.forEach((ex) => altExamForUniPage(c, ex)));
+scholarshipCountryPages();
 
 // Write files
 PAGES.forEach(({ path, html }) => {
@@ -1558,5 +1629,52 @@ const llmsFull = `# LandingPrep — full page index (for AI answer engines)\n\n>
   Object.keys(groups).sort().map((k) => `## /${k}/\n` + groups[k].sort().map((u) => `- ${u}`).join("\n")).join("\n\n") + "\n";
 writeFileSync(join(ROOT, "llms-full.txt"), llmsFull);
 
-console.log(`Generated ${PAGES.length} SEO pages + sitemap.xml (${urls.length} urls) + robots.txt + llms.txt + llms-full.txt`);
+// ── humans.txt ──────────────────────────────────────────────────────────────
+writeFileSync(join(ROOT, "humans.txt"), `/* TEAM */
+Site: LandingPrep — free exam prep + study-abroad toolkit
+Contact: support@landingprep.com
+Location: Worldwide
+
+/* SITE */
+Standards: HTML5, CSS3, JavaScript, Schema.org JSON-LD
+Components: React (prerendered static pages for SEO), Express backend, Gemini AI
+Mission: From mock test to campus abroad — 100% free, no signup.
+Last update: ${TODAY}
+`);
+
+// ── security.txt (RFC 9116) ─────────────────────────────────────────────────
+const securityTxt = `Contact: mailto:support@landingprep.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: ${ORIGIN}/.well-known/security.txt
+`;
+mkdirSync(join(ROOT, ".well-known"), { recursive: true });
+writeFileSync(join(ROOT, ".well-known", "security.txt"), securityTxt);
+writeFileSync(join(ROOT, "security.txt"), securityTxt);
+
+// ── RSS feed (blog) — helps crawl + freshness ───────────────────────────────
+const rssItems = BLOG_EXTRA.map((a) => {
+  let pub = TODAY;
+  try { pub = new Date(a.date).toUTCString(); } catch (e) {}
+  const link = `${ORIGIN}/blog/${a.id}/`;
+  return `    <item>
+      <title>${esc(a.title)}</title>
+      <link>${link}</link>
+      <guid>${link}</guid>
+      <pubDate>${pub}</pubDate>
+      <description>${esc(a.excerpt || "")}</description>
+    </item>`;
+}).join("\n");
+writeFileSync(join(ROOT, "feed.xml"), `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>LandingPrep — Study Abroad &amp; Exam Prep Blog</title>
+  <link>${ORIGIN}/#/blog</link>
+  <description>Free IELTS, TOEFL, study-abroad and immigration tips from LandingPrep.</description>
+  <language>en</language>
+  <lastBuildDate>${(() => { try { return new Date().toUTCString(); } catch (e) { return TODAY; } })()}</lastBuildDate>
+${rssItems}
+</channel></rss>
+`);
+
+console.log(`Generated ${PAGES.length} SEO pages + sitemap.xml (${urls.length} urls) + robots.txt + llms.txt + llms-full.txt + humans.txt + security.txt + feed.xml`);
 PAGES.forEach((p) => console.log("  " + p.path));

@@ -524,6 +524,7 @@ function TopBar({ current = "home", onNav }) {
     ["learn", "📚 Learn (Lessons + Club)"],
     ["writing-checker", "🎯 AI Band-Score Checker"],
     ["vocabulary", "📖 Vocabulary"],
+    ["achievements", "🏆 Achievements & XP"],
     ["agents", "AI Speaking & Writing"],
     ["colleges", "Study Abroad"],
     ["relocate", "✈️ Move Abroad (checklist + visa)"],
