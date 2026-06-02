@@ -66,20 +66,45 @@
     ];
     return { xp, level: li + 1, levelTitle: cur.title, levelEmoji: cur.emoji, next, pct, into, span, tests, activeDays, streak, studiedToday, badges };
   }
-  function award(amount) {
+  function toast(html, big) {
     try {
+      let host = document.getElementById("lp-toast-host");
+      if (!host) {
+        host = document.createElement("div");
+        host.id = "lp-toast-host";
+        document.body.appendChild(host);
+      }
+      const el = document.createElement("div");
+      el.className = "lp-toast" + (big ? " big" : "");
+      el.innerHTML = html;
+      host.appendChild(el);
+      requestAnimationFrame(() => el.classList.add("show"));
+      setTimeout(() => {
+        el.classList.remove("show");
+        setTimeout(() => el.remove(), 400);
+      }, big ? 4200 : 2600);
+    } catch (e) {
+    }
+  }
+  function award(amount, reason) {
+    try {
+      const before = stats();
       const cur = Number(localStorage.getItem("lp_xp") || 0) || 0;
       localStorage.setItem("lp_xp", String(cur + (Number(amount) || 0)));
       const a = readJSON("lp_activity", "{}") || {};
       const k = dayKey();
       a[k] = (a[k] || 0) + 1;
       localStorage.setItem("lp_activity", JSON.stringify(a));
+      const after = stats();
+      toast("\u26A1 +" + (Number(amount) || 0) + " XP" + (reason ? " \xB7 " + reason : ""));
+      if (after.level > before.level) toast(after.levelEmoji + " Level up! You're now <b>Level " + after.level + " \xB7 " + after.levelTitle + "</b>", true);
+      after.badges.filter((b) => b.got && !(before.badges.find((x) => x.id === b.id) || {}).got).forEach((b) => toast(b.emoji + " Badge unlocked: <b>" + b.name + "</b>", true));
     } catch (e) {
     }
   }
   function GamifyCard({ compact }) {
     const [s] = useState(stats);
-    return /* @__PURE__ */ React.createElement("div", { className: "gam-card" + (compact ? " gam-compact" : "") }, /* @__PURE__ */ React.createElement("div", { className: "gam-top" }, /* @__PURE__ */ React.createElement("div", { className: "gam-level" }, /* @__PURE__ */ React.createElement("span", { className: "gam-level-emoji" }, s.levelEmoji), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "gam-level-num" }, "Level ", s.level), /* @__PURE__ */ React.createElement("div", { className: "gam-level-title" }, s.levelTitle))), /* @__PURE__ */ React.createElement("div", { className: "gam-streak", title: "Daily streak" }, /* @__PURE__ */ React.createElement("span", { className: "gam-flame" + (s.streak > 0 ? " on" : "") }, "\u{1F525}"), /* @__PURE__ */ React.createElement("span", { className: "gam-streak-num" }, s.streak), /* @__PURE__ */ React.createElement("span", { className: "gam-streak-lbl" }, "day", s.streak === 1 ? "" : "s"))), /* @__PURE__ */ React.createElement("div", { className: "gam-xp-row" }, /* @__PURE__ */ React.createElement("div", { className: "gam-xp-bar" }, /* @__PURE__ */ React.createElement("span", { style: { width: s.pct + "%" } })), /* @__PURE__ */ React.createElement("div", { className: "gam-xp-txt" }, s.xp, " XP", s.next ? " \xB7 " + (s.next.min - s.xp) + " to " + s.next.title : " \xB7 max level")), !compact && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { className: "gam-goal" }, s.studiedToday ? "\u2705 Daily goal done \u2014 see you tomorrow!" : "\u{1F3AF} Daily goal: do one activity today to keep your streak alive."), /* @__PURE__ */ React.createElement("div", { className: "gam-badges" }, s.badges.map((b) => /* @__PURE__ */ React.createElement("div", { key: b.id, className: "gam-badge" + (b.got ? " got" : ""), title: b.name }, /* @__PURE__ */ React.createElement("span", { className: "gam-badge-emoji" }, b.emoji), /* @__PURE__ */ React.createElement("span", { className: "gam-badge-name" }, b.name))))));
+    return /* @__PURE__ */ React.createElement("div", { className: "gam-card" + (compact ? " gam-compact" : "") }, /* @__PURE__ */ React.createElement("div", { className: "gam-top" }, /* @__PURE__ */ React.createElement("div", { className: "gam-level" }, /* @__PURE__ */ React.createElement("span", { className: "gam-level-emoji" }, s.levelEmoji), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "gam-level-num" }, "Level ", s.level), /* @__PURE__ */ React.createElement("div", { className: "gam-level-title" }, s.levelTitle))), /* @__PURE__ */ React.createElement("div", { className: "gam-streak", title: "Daily streak" }, /* @__PURE__ */ React.createElement("span", { className: "gam-flame" + (s.streak > 0 ? " on" : "") }, "\u{1F525}"), /* @__PURE__ */ React.createElement("span", { className: "gam-streak-num" }, s.streak), /* @__PURE__ */ React.createElement("span", { className: "gam-streak-lbl" }, "day", s.streak === 1 ? "" : "s"))), /* @__PURE__ */ React.createElement("div", { className: "gam-xp-row" }, /* @__PURE__ */ React.createElement("div", { className: "gam-xp-bar" }, /* @__PURE__ */ React.createElement("span", { style: { width: s.pct + "%" } })), /* @__PURE__ */ React.createElement("div", { className: "gam-xp-txt" }, s.xp, " XP", s.next ? " \xB7 " + (s.next.min - s.xp) + " to " + s.next.title : " \xB7 max level")), !compact && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { className: "gam-goal" + (s.studiedToday ? " done" : "") }, s.studiedToday ? "\u2705 Daily quest complete \u2014 streak safe! Come back tomorrow." : "\u{1F3AF} Daily quest: complete one activity today (+keeps your \u{1F525} streak alive)."), /* @__PURE__ */ React.createElement("div", { className: "gam-badges" }, s.badges.map((b) => /* @__PURE__ */ React.createElement("div", { key: b.id, className: "gam-badge" + (b.got ? " got" : ""), title: b.name }, /* @__PURE__ */ React.createElement("span", { className: "gam-badge-emoji" }, b.emoji), /* @__PURE__ */ React.createElement("span", { className: "gam-badge-name" }, b.name)))), /* @__PURE__ */ React.createElement("a", { className: "gam-more", href: "#/achievements" }, "View all achievements & how XP works \u2192")));
   }
   window.LP_Gamify = { stats, award };
   window.LP_GamifyCard = GamifyCard;

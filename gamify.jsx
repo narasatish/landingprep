@@ -57,13 +57,30 @@
     return { xp, level: li + 1, levelTitle: cur.title, levelEmoji: cur.emoji, next, pct, into, span, tests, activeDays, streak, studiedToday, badges };
   }
 
-  function award(amount) {
+  // Lightweight DOM toast (works outside the React tree, from anywhere).
+  function toast(html, big) {
     try {
+      let host = document.getElementById("lp-toast-host");
+      if (!host) { host = document.createElement("div"); host.id = "lp-toast-host"; document.body.appendChild(host); }
+      const el = document.createElement("div"); el.className = "lp-toast" + (big ? " big" : ""); el.innerHTML = html;
+      host.appendChild(el);
+      requestAnimationFrame(() => el.classList.add("show"));
+      setTimeout(() => { el.classList.remove("show"); setTimeout(() => el.remove(), 400); }, big ? 4200 : 2600);
+    } catch (e) {}
+  }
+
+  function award(amount, reason) {
+    try {
+      const before = stats();
       const cur = Number(localStorage.getItem("lp_xp") || 0) || 0;
       localStorage.setItem("lp_xp", String(cur + (Number(amount) || 0)));
-      // mark today active so streak/daily goal update
       const a = readJSON("lp_activity", "{}") || {}; const k = dayKey(); a[k] = (a[k] || 0) + 1;
       localStorage.setItem("lp_activity", JSON.stringify(a));
+      const after = stats();
+      toast("⚡ +" + (Number(amount) || 0) + " XP" + (reason ? " · " + reason : ""));
+      if (after.level > before.level) toast(after.levelEmoji + " Level up! You're now <b>Level " + after.level + " · " + after.levelTitle + "</b>", true);
+      after.badges.filter((b) => b.got && !(before.badges.find((x) => x.id === b.id) || {}).got)
+        .forEach((b) => toast(b.emoji + " Badge unlocked: <b>" + b.name + "</b>", true));
     } catch (e) {}
   }
 
@@ -81,7 +98,7 @@
         </div>
         {!compact && (
           <>
-            <div className="gam-goal">{s.studiedToday ? "✅ Daily goal done — see you tomorrow!" : "🎯 Daily goal: do one activity today to keep your streak alive."}</div>
+            <div className={"gam-goal" + (s.studiedToday ? " done" : "")}>{s.studiedToday ? "✅ Daily quest complete — streak safe! Come back tomorrow." : "🎯 Daily quest: complete one activity today (+keeps your 🔥 streak alive)."}</div>
             <div className="gam-badges">
               {s.badges.map((b) => (
                 <div key={b.id} className={"gam-badge" + (b.got ? " got" : "")} title={b.name}>
@@ -90,6 +107,7 @@
                 </div>
               ))}
             </div>
+            <a className="gam-more" href="#/achievements">View all achievements &amp; how XP works →</a>
           </>
         )}
       </div>

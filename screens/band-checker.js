@@ -71,7 +71,7 @@ Return ONLY a JSON object: {"overall": <band 0-9 in 0.5 steps>, "wordCount": <in
         if (!d || d.overall == null) throw new Error("parse");
         setData(d);
         try {
-          window.LP_Gamify && window.LP_Gamify.award(30);
+          window.LP_Gamify && window.LP_Gamify.award(30, "band check");
         } catch (e) {
         }
         try {
@@ -157,7 +157,7 @@ Return ONLY a JSON object: {"overall": <band 0-9 in 0.5 steps>, "criteria": [{"k
         if (!d || d.overall == null) throw new Error("parse");
         setData(d);
         try {
-          window.LP_Gamify && window.LP_Gamify.award(30);
+          window.LP_Gamify && window.LP_Gamify.award(30, "band check");
         } catch (e) {
         }
       } catch (e) {

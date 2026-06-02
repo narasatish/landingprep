@@ -30,6 +30,7 @@ function viewToHash(view, examId) {
       if ((window.location.hash || "").indexOf("#/exam-prep") === 0) return window.location.hash;
       return "#/exam-prep" + (examId ? "/" + examId : "");
     case "guide":     return "#/exam-hub" + (examId ? "/" + examId : "");
+    case "achievements":     return "#/achievements";
     case "vocabulary":       return "#/vocabulary";
     case "writing-checker":  return "#/writing-checker";
     case "speaking-checker": return "#/speaking-checker";
@@ -65,6 +66,7 @@ function hashToView(hash, exams) {
     const ex = find(parts[1]);
     return { view: "guide", examId: ex ? ex.id : (exams && exams[0] ? exams[0].id : null) };
   }
+  if (head === "achievements")  return { view: "achievements", examId: null };
   if (head === "vocabulary")  return { view: "vocabulary", examId: null, vocabTopic: parts[1] || null };
   if (head === "writing-checker")  return { view: "writing-checker",  examId: null };
   if (head === "speaking-checker") return { view: "speaking-checker", examId: null };
@@ -257,6 +259,7 @@ function App() {
   // ── Navigation functions ─────────────────────────────────────────────
   const onNav = (id) => {
     if (id === "home")      { setView("home");     setExam(null); return; }
+    if (id === "achievements")  { setView("achievements");  return; }
     if (id === "vocabulary")  { setView("vocabulary");  return; }
     if (id === "writing-checker")  { setView("writing-checker");  return; }
     if (id === "speaking-checker") { setView("speaking-checker"); return; }
@@ -344,6 +347,8 @@ function App() {
       }}
       onNav={onNav}
     />;
+  } else if (view === "achievements") {
+    content = <window.LP_Achievements onNav={onNav} />;
   } else if (view === "vocabulary") {
     content = <window.LP_Vocabulary onNav={onNav} initialTopic={(window.location.hash || "").split("/")[2] || null} />;
   } else if (view === "writing-checker") {

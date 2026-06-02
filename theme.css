@@ -4597,3 +4597,31 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 .gam-badge-name { font-size: 11px; color: var(--ink-2); font-weight: 600; display: block; margin-top: 3px; }
 .gam-compact .gam-badges, .gam-compact .gam-goal { display: none; }
 .vocab-syn { color: var(--accent); font-style: normal; font-weight: 600; font-size: 12.5px; }
+.gam-goal.done { color: #15803d; }
+.gam-more { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--accent); text-decoration: none; }
+.gam-more:hover { text-decoration: underline; }
+
+/* XP / level-up toasts */
+#lp-toast-host { position: fixed; left: 0; right: 0; bottom: 22px; z-index: 9999; display: flex; flex-direction: column; align-items: center; gap: 8px; pointer-events: none; }
+.lp-toast { background: #111827; color: #fff; padding: 11px 18px; border-radius: 999px; font-size: 14px; font-weight: 600; box-shadow: 0 12px 30px -10px rgba(0,0,0,.5); opacity: 0; transform: translateY(16px) scale(.96); transition: opacity .35s ease, transform .35s ease; max-width: 90vw; }
+.lp-toast.show { opacity: 1; transform: translateY(0) scale(1); }
+.lp-toast.big { background: linear-gradient(135deg, #7c3aed, #06b6d4); font-size: 15px; padding: 14px 22px; }
+.lp-toast b { font-weight: 800; }
+
+/* Achievements page */
+.ach-sources { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+@media (max-width: 600px) { .ach-sources { grid-template-columns: 1fr; } }
+.ach-src { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.ach-src-emoji { font-size: 20px; }
+.ach-src-what { flex: 1; font-size: 13.5px; color: var(--ink-2); }
+.ach-src-xp { font-weight: 800; color: var(--accent); font-size: 14px; }
+.ach-ladder { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.ach-rung { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); opacity: .6; }
+.ach-rung.passed { opacity: 1; }
+.ach-rung.current { opacity: 1; border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--surface)); box-shadow: 0 2px 12px color-mix(in srgb, var(--accent) 16%, transparent); }
+.ach-rung-emoji { font-size: 22px; }
+.ach-rung-title { flex: 1; font-weight: 700; color: var(--ink); font-size: 14px; }
+.ach-rung-xp { font-size: 12.5px; color: var(--ink-3); }
+.ach-badge { display: flex; flex-direction: column; }
+.ach-badge-how { font-size: 10px; color: var(--ink-3); margin-top: 4px; line-height: 1.3; }
+.ach-badge.got .ach-badge-how { color: #15803d; font-weight: 600; }
