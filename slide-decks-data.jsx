@@ -178,7 +178,212 @@
     ],
   };
 
-  window.LP_SLIDE_DECKS = { "ielts-listening": ieltsListening };
+  const germanBasics = {
+    id: "german-basics", exam: "german", examName: "German (Deutsch)", section: "Foundations A1", emoji: "🇩🇪",
+    title: "German Foundations — Learn German the Smart Way",
+    summary: "A fast, visual intro to German for study abroad: pronunciation, der/die/das, cases, verbs, sentence order, and how to reach A1–B1 quickly.",
+    slides: [
+      { emoji: "🇩🇪", title: "Welcome to German!", points: [
+        "German opens tuition-free study in Germany, Austria & Switzerland.",
+        "It looks hard but is very logical — rules, not chaos.",
+        "Goal of this lesson: the foundations + a smart learning plan.",
+        "Learn here, then use our German course, flashcards & AI tutor." ], tip: "Consistency beats intensity — 20 mins daily > 3 hours weekly." },
+      { emoji: "🔤", title: "The alphabet & special letters", points: [
+        "Same 26 letters as English + ä, ö, ü (umlauts) and ß (sharp s).",
+        "ä ≈ 'e' in bed · ö ≈ 'i' in girl · ü = say 'ee' with rounded lips.",
+        "ß sounds like 'ss' (e.g. Straße = 'shtrahsse').",
+        "No umlaut on a keyboard? Write ae, oe, ue, ss." ] },
+      { emoji: "🗣️", title: "Pronunciation rules (it's consistent!)", points: [
+        "German is read as written — once you learn the sounds, you can say any word.",
+        "'w' = English 'v' (Wasser = 'vasser'). 'v' = 'f' (Vater = 'fahter').",
+        "'z' = 'ts' (Zeit = 'tsait'). 'ei' = 'eye', 'ie' = 'ee'.",
+        "'ch' = soft hiss (ich) or throaty (Buch); 'sch' = 'sh'." ],
+        example: { label: "Try it", text: "Eis = 'ice', Bier = 'beer', Schule = 'shoo-le'." } },
+      { emoji: "👋", title: "Survival phrases (say these on day 1)", points: [
+        "Hallo / Guten Tag — Hello.  Tschüss — Bye.",
+        "Danke — Thanks.  Bitte — Please / You're welcome.",
+        "Entschuldigung — Excuse me / Sorry.",
+        "Sprechen Sie Englisch? — Do you speak English?" ] },
+      { emoji: "🚻", title: "der, die, das — noun gender", points: [
+        "Every noun is masculine (der), feminine (die) or neuter (das).",
+        "ALWAYS learn the article with the noun (not 'Tisch' but 'der Tisch').",
+        "Plural article is always 'die'.",
+        "Endings hint at gender: -ung/-heit/-keit → die; -chen → das." ],
+        warn: "Don't guess gender later — memorise it from the start. It affects everything." },
+      { emoji: "🔢", title: "Numbers & the 'reversed' trick", points: [
+        "1–10: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn.",
+        "21 = einundzwanzig = literally 'one-and-twenty'.",
+        "Read tens after units: 47 = siebenundvierzig.",
+        "Hundreds & thousands: hundert, tausend." ] },
+      { emoji: "🧩", title: "The 4 cases (the heart of German)", points: [
+        "Nominative = the subject (who does it).",
+        "Accusative = the direct object (what is affected).",
+        "Dative = the indirect object (to/for whom).",
+        "Genitive = possession (of). Cases change articles: der→den→dem." ],
+        tip: "Don't panic — at A1 you mostly need Nominative & Accusative." },
+      { emoji: "🔁", title: "Verb conjugation (regular)", points: [
+        "Take the stem (spielen → spiel) and add endings.",
+        "ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en.",
+        "ich spiele, du spielst, er spielt, wir spielen.",
+        "Most verbs follow this — learn the pattern once." ] },
+      { emoji: "⭐", title: "The big irregulars: sein & haben", points: [
+        "sein (to be): ich bin, du bist, er ist, wir sind, ihr seid, sie sind.",
+        "haben (to have): ich habe, du hast, er hat, wir haben, sie haben.",
+        "These two appear constantly — memorise them cold.",
+        "'Ich bin Student' = I am a student. 'Ich habe Zeit' = I have time." ] },
+      { emoji: "📐", title: "Word order — the verb is 2nd", points: [
+        "In a normal statement, the conjugated verb is always in position 2.",
+        "'Ich lerne heute Deutsch' OR 'Heute lerne ich Deutsch.'",
+        "Start with time/place? The verb still comes second, subject after.",
+        "Questions: verb first — 'Lernst du Deutsch?'" ],
+        example: { label: "Pattern", text: "[Time] + VERB + [Subject] + [rest]: 'Morgen gehe ich zur Uni.'" } },
+      { emoji: "🅿️", title: "Personal pronouns & 'you'", points: [
+        "ich (I), du (you-informal), er/sie/es (he/she/it).",
+        "wir (we), ihr (you all), sie (they), Sie (you-formal).",
+        "Use 'Sie' with strangers, officials, professors.",
+        "Use 'du' with friends, family, fellow students." ] },
+      { emoji: "🚫", title: "Saying 'no' and 'not'", points: [
+        "'nicht' negates verbs/adjectives: 'Ich verstehe nicht.'",
+        "'kein/keine' negates nouns: 'Ich habe keine Zeit.'",
+        "'nein' = the answer 'no'.",
+        "Position of 'nicht' usually comes late in the sentence." ] },
+      { emoji: "❓", title: "Question words (the W-words)", points: [
+        "wer (who), was (what), wo (where), wann (when).",
+        "wie (how), warum (why), wie viel (how much).",
+        "These start open questions: 'Wo wohnst du?' = Where do you live?",
+        "Yes/no questions just flip the verb to the front." ] },
+      { emoji: "🏠", title: "Everyday vocabulary themes", points: [
+        "Build vocab by theme: family, food, home, university, travel.",
+        "Learn nouns with their article + a sample sentence.",
+        "20 new words/day with spaced repetition = ~600/month.",
+        "Use our German flashcards — they speak each word aloud." ] },
+      { emoji: "🕒", title: "Telling the time", points: [
+        "'Wie spät ist es?' = What time is it?",
+        "Es ist drei Uhr = 3:00. Es ist halb vier = 3:30 (half to four!).",
+        "Viertel nach = quarter past; Viertel vor = quarter to.",
+        "24-hour clock is common: 14:00 = vierzehn Uhr." ],
+        warn: "'halb vier' means 3:30, NOT 4:30 — a classic learner trap." },
+      { emoji: "🧱", title: "Compound words — German superpower", points: [
+        "German builds long words by joining shorter ones.",
+        "Handschuh = Hand + Schuh = 'hand-shoe' = glove. 🧤",
+        "The LAST noun decides the gender & meaning.",
+        "Break long words into parts and they become readable." ],
+        example: { label: "Famous one", text: "Geschwindigkeitsbegrenzung = speed limit (Geschwindigkeit + Begrenzung)." } },
+      { emoji: "🎧", title: "Train your ear early", points: [
+        "Watch German with subtitles (Easy German on YouTube is gold).",
+        "Listen to slow-German podcasts during commutes.",
+        "Repeat sentences aloud (shadowing) to fix pronunciation.",
+        "Use our AI tutor & natural voice to hear real German." ] },
+      { emoji: "🗣️", title: "Speak from day one", points: [
+        "Don't wait until you're 'ready' — speak badly, then improve.",
+        "Talk to yourself in German while doing chores.",
+        "Use our German AI speaking practice for live 2-way conversation.",
+        "Mistakes are data, not failure." ] },
+      { emoji: "🚫", title: "Common beginner mistakes", points: [
+        "Forgetting the noun's article (der/die/das).",
+        "Putting the verb in the wrong position.",
+        "Mixing up 'ein' (a) with 'der/die/das' (the).",
+        "Translating word-for-word from English." ] },
+      { emoji: "🎓", title: "German exams for study abroad", points: [
+        "Goethe-Zertifikat (A1–C2): the global gold standard.",
+        "TestDaF & DSH: university admission (B2–C1).",
+        "telc: jobs, residence, integration.",
+        "Most degrees want B1–B2; some English-taught need none." ] },
+      { emoji: "📅", title: "Your 90-day A1 plan", points: [
+        "Weeks 1–4: alphabet, pronunciation, greetings, der/die/das, present tense.",
+        "Weeks 5–8: cases (Nom/Akk), numbers, time, 300+ words.",
+        "Weeks 9–12: sentences, daily conversations, A1 mock tests.",
+        "Practise speaking + listening every single day." ] },
+      { emoji: "🚀", title: "Los geht's — let's start!", points: [
+        "You now know the foundations: sounds, gender, cases, verbs, word order.",
+        "Next: open the German course (Learn tab) and the flashcards.",
+        "Then take the German placement test and practise speaking.",
+        "Viel Erfolg! You've got this. 🎉" ], tip: "Open Languages → German to start your A1 course now." },
+    ],
+  };
+
+  const frenchBasics = {
+    id: "french-basics", exam: "french", examName: "French (Français)", section: "Foundations A1", emoji: "🇫🇷",
+    title: "French Foundations — Learn French the Smart Way",
+    summary: "A fast, visual intro to French for study abroad: pronunciation, le/la, verbs, accents and how to reach A1 quickly.",
+    slides: [
+      { emoji: "🇫🇷", title: "Welcome to French!", points: [
+        "French opens study in France, Belgium, Switzerland & Québec (Canada).",
+        "DELF/DALF, TCF and TEF are accepted for study & immigration.",
+        "This lesson covers the foundations + a smart learning plan.",
+        "Learn here, then use our French course, flashcards & AI tutor." ], tip: "20 minutes a day, every day — that's the secret." },
+      { emoji: "🔤", title: "Accents & special letters", points: [
+        "é (accent aigu), è/à (grave), ê (circonflexe), ç (cedilla), ë (tréma).",
+        "Accents change sound and meaning: ou (or) vs où (where).",
+        "ç sounds like 's' (français = 'fronsay').",
+        "Accents matter — don't skip them." ] },
+      { emoji: "🗣️", title: "Pronunciation basics", points: [
+        "Final consonants are usually SILENT (Paris = 'paree').",
+        "'r' is throaty; 'u' is rounded (say 'ee' with lips forward).",
+        "Nasal sounds: on, an, in, un (air through the nose).",
+        "'ch' = 'sh' (chat = 'sha'); 'j' = soft 'zh'." ],
+        example: { label: "Try it", text: "Bonjour = 'bon-zhoor', merci = 'mair-see', oui = 'wee'." } },
+      { emoji: "👋", title: "Survival phrases", points: [
+        "Bonjour — Hello.  Au revoir — Goodbye.",
+        "Merci — Thanks.  S'il vous plaît — Please.",
+        "Excusez-moi — Excuse me.  Pardon — Sorry.",
+        "Parlez-vous anglais? — Do you speak English?" ] },
+      { emoji: "🚻", title: "le, la, les — noun gender", points: [
+        "Nouns are masculine (le) or feminine (la); plural = les.",
+        "Before a vowel, le/la become l' (l'ami, l'université).",
+        "Learn the article WITH the noun.",
+        "Endings hint: -tion/-té → feminine; -age/-ment → masculine." ],
+        warn: "Gender affects adjectives and agreement — memorise it early." },
+      { emoji: "🔢", title: "Numbers (watch 70–99!)", points: [
+        "1–10: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix.",
+        "70 = soixante-dix (sixty-ten), 80 = quatre-vingts (four-twenties).",
+        "90 = quatre-vingt-dix (four-twenty-ten). Yes, really. 😅",
+        "Belgium/Switzerland use simpler septante, huitante, nonante." ] },
+      { emoji: "🅿️", title: "Subject pronouns & 'you'", points: [
+        "je (I), tu (you-informal), il/elle (he/she).",
+        "nous (we), vous (you-formal/plural), ils/elles (they).",
+        "Use 'vous' with strangers and in formal settings.",
+        "Use 'tu' with friends, family, classmates." ] },
+      { emoji: "⭐", title: "Key verbs: être & avoir", points: [
+        "être (to be): je suis, tu es, il est, nous sommes, vous êtes, ils sont.",
+        "avoir (to have): j'ai, tu as, il a, nous avons, vous avez, ils ont.",
+        "These two power most sentences — memorise them.",
+        "'Je suis étudiant' = I'm a student. 'J'ai 20 ans' = I'm 20." ],
+        tip: "In French you 'have' your age: 'J'ai vingt ans' = literally 'I have 20 years'." },
+      { emoji: "🔁", title: "Regular -er verbs", points: [
+        "Most verbs end in -er (parler, aimer, habiter).",
+        "Drop -er, add: -e, -es, -e, -ons, -ez, -ent.",
+        "je parle, tu parles, il parle, nous parlons, vous parlez.",
+        "Master -er verbs and you can say a LOT." ] },
+      { emoji: "❓", title: "Asking questions", points: [
+        "Easiest: add 'Est-ce que…' before a statement.",
+        "'Est-ce que tu parles français?' = Do you speak French?",
+        "Or just raise your intonation: 'Tu parles français?'",
+        "Question words: où, quand, comment, pourquoi, combien." ] },
+      { emoji: "🎧", title: "Train your ear", points: [
+        "Watch French shows with subtitles; try 'Easy French' on YouTube.",
+        "Listen to slow-French podcasts daily.",
+        "Shadow sentences aloud to fix the accent.",
+        "Use our AI tutor & natural voice for real French." ] },
+      { emoji: "🚫", title: "Common beginner mistakes", points: [
+        "Pronouncing silent final consonants.",
+        "Forgetting accents (they change meaning).",
+        "Mixing le/la genders.",
+        "Translating English word order directly." ] },
+      { emoji: "🎓", title: "French exams for study abroad", points: [
+        "DELF (A1–B2) & DALF (C1–C2): lifelong diplomas for study.",
+        "TCF: Campus France, Québec immigration, citizenship.",
+        "TEF: Canadian immigration (Express Entry).",
+        "Most French degrees want B2; Campus France guides the level." ] },
+      { emoji: "🚀", title: "On y va — let's go!", points: [
+        "You've got the foundations: accents, gender, key verbs, questions.",
+        "Next: open the French course (Learn tab) and flashcards.",
+        "Take the French placement test and practise speaking.",
+        "Bonne chance! 🎉" ], tip: "Open Languages → French to start your A1 course now." },
+    ],
+  };
+
+  window.LP_SLIDE_DECKS = { "ielts-listening": ieltsListening, "german-basics": germanBasics, "french-basics": frenchBasics };
 
   // Picker grid: shows every exam's sections; ready=true ones are clickable now.
   window.LP_SLIDE_DECK_PLAN = [
@@ -204,5 +409,8 @@
       { section: "Writing", emoji: "✍️", ready: false }, { section: "Speaking", emoji: "🗣️", ready: false } ] },
     { exam: "duolingo", examName: "Duolingo", emoji: "🟢", decks: [
       { section: "Full Test Strategy", emoji: "⚡", ready: false } ] },
+    { exam: "languages", examName: "Languages (German & French)", emoji: "🗣️", decks: [
+      { id: "german-basics", section: "German Foundations", emoji: "🇩🇪", ready: true },
+      { id: "french-basics", section: "French Foundations", emoji: "🇫🇷", ready: true } ] },
   ];
 })();
