@@ -1165,7 +1165,9 @@ ${relatedGrid([
     desc: `Free IELTS & TOEFL vocabulary by topic: ${ids.map((i) => VOCAB[i].title).join(", ")}. Definitions, example sentences, Band 9 synonyms and audio. No signup.`,
     path: `/ielts-vocabulary/`,
     kw: "ielts vocabulary, ielts vocabulary list, ielts topic vocabulary, toefl vocabulary, toefl words list, ielts band 9 words, academic vocabulary ielts, free ielts vocabulary with meaning, ielts linking words",
-    jsonLdBlocks: [faqJsonLd(hubFaqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Vocabulary", path: `/ielts-vocabulary/` }])],
+    jsonLdBlocks: [
+      { "@context": "https://schema.org", "@type": "Dataset", name: "IELTS & TOEFL Topic Vocabulary", description: "Free IELTS and TOEFL vocabulary organised by topic, with definitions, example sentences, higher-band synonyms and audio.", isAccessibleForFree: true, creator: { "@type": "Organization", name: BRAND }, keywords: ids.map((i) => VOCAB[i].title).join(", ") },
+      faqJsonLd(hubFaqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Vocabulary", path: `/ielts-vocabulary/` }])],
   }) + shell(hubInner));
   // Per-topic pages
   ids.forEach((id) => {
@@ -1187,11 +1189,60 @@ ${relatedGrid(ids.filter((x) => x !== id).slice(0, 4).map((x) => ({ label: VOCAB
   });
 }
 
+// ── Per-band "IELTS Band X requirements & how to get it" pages (high-intent) ──
+const BANDS = [
+  { b: "5.5", raw: "19/40", level: "Modest", use: "foundation, diploma and some pathway / pre-sessional programmes" },
+  { b: "6", raw: "23/40", level: "Competent", use: "many undergraduate courses and some skilled-migration visas" },
+  { b: "6.5", raw: "27/40", level: "Competent", use: "the most common requirement — most universities for UG and PG" },
+  { b: "7", raw: "30/40", level: "Good", use: "top universities, many Master's, and professional registration (nursing, engineering)" },
+  { b: "7.5", raw: "32/40", level: "Good", use: "competitive postgraduate programmes and scholarships" },
+  { b: "8", raw: "35/40", level: "Very good", use: "elite programmes and the maximum points for skilled-migration / PR" },
+];
+function bandPage(item) {
+  const path = `/ielts-band-${item.b.replace(".", "-")}/`;
+  const title = `IELTS Band ${item.b} — Requirements &amp; How to Get It (2026) | ${BRAND}`;
+  const desc = `What IELTS Band ${item.b} means, the raw score you need (about ${item.raw} in Listening/Reading), who needs it, and a step-by-step plan to reach Band ${item.b}. Free practice tests, lessons and an AI band checker.`;
+  const kw = `ielts band ${item.b}, ielts band ${item.b} requirements, how to get ielts band ${item.b}, is ielts band ${item.b} good, ielts ${item.b} score, ielts band ${item.b} meaning, raw score for ielts band ${item.b}`;
+  const steps = [
+    { name: "Know your target", text: `Band ${item.b} ≈ about ${item.raw} correct in Listening and Reading. Writing & Speaking are marked on the official band descriptors (Task Response/Fluency, Coherence, Lexical Resource, Grammar).` },
+    { name: "Diagnose with a free mock test", text: `Take a full free IELTS mock test to see your current band in each of the four skills and find your weakest one.` },
+    { name: "Learn the strategy", text: `Study the free PPT lessons for your weak sections — question types, traps and timing for Band ${item.b}.` },
+    { name: "Build vocabulary & grammar", text: `Lexical Resource and Grammar are each 25% of Writing/Speaking. Learn topic vocabulary and Band 9 linking words.` },
+    { name: "Practise Writing & Speaking with feedback", text: `Use the free AI band-score checker to get a TR/CC/LR/GRA breakdown and a Band 9 model, then redo your weak answers.` },
+    { name: "Do timed full tests until consistent", text: `Repeat full mocks under exam timing until you hit Band ${item.b} two or three times in a row.` },
+  ];
+  const faqs = [
+    { q: `What raw score is IELTS Band ${item.b}?`, a: `Roughly ${item.raw} correct out of 40 in Listening and in Reading (the exact boundary shifts slightly per test). Writing and Speaking are scored on the band descriptors, not a raw count.` },
+    { q: `Is Band ${item.b} good?`, a: `Band ${item.b} is "${item.level}" on the IELTS scale and is typically needed for ${item.use}.` },
+    { q: `How long does it take to reach Band ${item.b}?`, a: `It depends on your starting band — most learners move up about 0.5 band with 4–6 weeks of focused, feedback-driven practice. Use the free mock tests and AI checker to track progress.` },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › IELTS Band ${item.b}</p>
+<section class="hero"><div class="badges"><span class="badge">${item.level}</span><span class="badge">Raw ≈ ${item.raw}</span><span class="badge">Free plan</span></div>
+<h1>IELTS Band ${item.b}: Requirements &amp; How to Get It</h1>
+<p class="lead"><strong>Band ${item.b}</strong> is rated "${item.level}" and usually needed for ${item.use}. In Listening and Reading that's about <strong>${item.raw}</strong> correct. Here's exactly how to reach it — free.</p>
+<a class="cta" href="/mock-test/ielts/">▶ Take a free IELTS mock test</a></section>
+<div class="card"><h2>Step-by-step plan to reach Band ${item.b}</h2><ol>${steps.map((s) => `<li><strong>${s.name}.</strong> ${s.text}</li>`).join("")}</ol></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
+  { label: "Free AI writing band checker", href: "/ielts-writing-checker/" },
+  { label: "IELTS prep lessons (PPT)", href: "/prep-lessons/" },
+  { label: "IELTS vocabulary by topic", href: "/ielts-vocabulary/" },
+])}`;
+  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
+    { "@context": "https://schema.org", "@type": "HowTo", name: `How to get IELTS Band ${item.b}`, description: desc, step: steps.map((s) => ({ "@type": "HowToStep", name: s.name, text: s.text })) },
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `IELTS Band ${item.b}`, path }]),
+  ] }) + shell(inner));
+}
+
 Object.keys(LANG_SEO).forEach(languageLandingPage);
 prepLessonsPage();
 bandCheckerPage("writing");
 bandCheckerPage("speaking");
 vocabularyPages();
+BANDS.forEach(bandPage);
 
 // Write files
 PAGES.forEach(({ path, html }) => {
@@ -1251,5 +1302,40 @@ Allow: /
 Sitemap: ${ORIGIN}/sitemap.xml
 `);
 
-console.log(`Generated ${PAGES.length} SEO pages + sitemap.xml (${urls.length} urls) + robots.txt`);
+// ── llms.txt + llms-full.txt (AI / answer-engine discovery — GEO) ────────────
+const llms = `# LandingPrep
+
+> LandingPrep is a 100% free platform for exam preparation, language learning and studying abroad. 1,000+ full-length mock tests for IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo English Test, GRE and GMAT Focus — with real exam timings, instant scoring and free model answers — plus a free AI band-score checker (Writing & Speaking), PPT-style strategy lessons for every section, an AI speaking partner that auto-corrects you, free German & French courses, topic vocabulary, and a complete study-abroad toolkit (college predictor, scholarships, SOP/LOR/CV builders, visa-interview practice and immigration/PR guidance). No signup, no fees. For students worldwide.
+
+## Key facts
+- Cost: 100% free, forever. No signup, no credit card, no paywall.
+- Exams: IELTS (Academic & General), TOEFL iBT, PTE Academic, CELPIP, Duolingo English Test, GRE General, GMAT Focus.
+- Free AI tools: AI Band-Score Checker (paste an essay or record a Part 2 → estimated IELTS band with TR/CC/LR/GRA breakdown, corrections and a Band 9 model), AI Speaking partner (two-way voice, auto-corrects mistakes), AI writing feedback, AI counsellor and visa-interview coach.
+- Lessons: 24 PPT-style strategy decks (600+ slides) covering every section of all 7 exams, plus German & French.
+- Languages: free German & French A1 courses, vocabulary with audio, 30 mock tests each, and an AI conversation partner.
+- Vocabulary: IELTS/TOEFL topic word lists (definitions, examples, Band 9 synonyms, audio).
+- Study abroad: free College Predictor (99 universities across USA, UK, Canada, Australia, Germany, Ireland, New Zealand, Singapore, Netherlands), scholarships, SOP/LOR/CV builders, compare universities & countries, education-loan & cost calculators, visa-interview practice, immigration/PR roadmaps.
+- Tagline: "From mock test to campus abroad."
+
+## Most useful pages
+- Homepage: ${ORIGIN}/
+- Free AI IELTS Writing band checker: ${ORIGIN}/ielts-writing-checker/
+- Free AI IELTS Speaking band checker: ${ORIGIN}/ielts-speaking-checker/
+- Free exam prep lessons (PPT): ${ORIGIN}/prep-lessons/
+- IELTS/TOEFL vocabulary by topic: ${ORIGIN}/ielts-vocabulary/
+- Learn German free: ${ORIGIN}/learn-german/
+- Learn French free: ${ORIGIN}/learn-french/
+- IELTS band requirements (how to get Band 6.5/7/7.5/8): ${ORIGIN}/ielts-band-7/
+- Free mock tests (all exams): ${ORIGIN}/#/exam-prep
+- Study abroad hub: ${ORIGIN}/#/colleges
+`;
+writeFileSync(join(ROOT, "llms.txt"), llms);
+
+const groups = {};
+for (const p of PAGES) { const k = p.path.split("/").filter(Boolean)[0] || "root"; (groups[k] = groups[k] || []).push(ORIGIN + p.path); }
+const llmsFull = `# LandingPrep — full page index (for AI answer engines)\n\n> Complete list of LandingPrep's free, prerendered content pages. All are 100% free, no signup.\n\n- Homepage: ${ORIGIN}/\n\n` +
+  Object.keys(groups).sort().map((k) => `## /${k}/\n` + groups[k].sort().map((u) => `- ${u}`).join("\n")).join("\n\n") + "\n";
+writeFileSync(join(ROOT, "llms-full.txt"), llmsFull);
+
+console.log(`Generated ${PAGES.length} SEO pages + sitemap.xml (${urls.length} urls) + robots.txt + llms.txt + llms-full.txt`);
 PAGES.forEach((p) => console.log("  " + p.path));
