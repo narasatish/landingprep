@@ -325,10 +325,11 @@
       `speaking test. The current topic is "${state.topic}".\n\n` +
       `Conversation so far:\n${history}\n\n` +
       `The candidate just said: "${userText}"\n\n` +
-      `Reply as the examiner in 1–3 short sentences: briefly and warmly acknowledge what they ` +
-      `said, then ask exactly ONE natural follow-up question that keeps them talking and probes ` +
-      `for detail, reasons or examples. Do NOT give scores, corrections or feedback yet. ` +
-      `Stay conversational. Return only your spoken reply, no labels.`;
+      `Reply as the examiner in 1–3 short sentences: if they made a clear grammar or word-choice ` +
+      `mistake, gently note the correction in one brief clause (e.g. "Small tip — we'd say '…' "). ` +
+      `Then warmly acknowledge what they said and ask exactly ONE natural follow-up question that ` +
+      `keeps them talking and probes for detail, reasons or examples. Do NOT give scores yet. ` +
+      `Stay conversational and encouraging. Return only your spoken reply, no labels.`;
     try {
       const out = await ai.generate(prompt);
       if (!out) return null;
@@ -352,14 +353,16 @@
     const recRef = useRef(null);
     const silenceRef = useRef(null);
     const finalRef = useRef("");
+    const interimRef = useRef("");   // trailing words not yet finalised
     const activeRef = useRef(false);
     const speechStartRef = useRef(0); // when the user actually started talking
     const [listening, setListening] = useState(false);
     const [supported] = useState(!!SpeechRecognition);
 
     const submit = useCallback(() => {
-      const text = finalRef.current.trim();
-      finalRef.current = "";
+      // Include the trailing interim so the last word(s) aren't dropped.
+      const text = (finalRef.current + " " + interimRef.current).replace(/\s+/g, " ").trim();
+      finalRef.current = ""; interimRef.current = "";
       clearTimeout(silenceRef.current);
       try { recRef.current && recRef.current.stop(); } catch (_) {}
       // Speaking time ≈ (now − silence window) − first-speech time.
@@ -383,6 +386,7 @@
           else interim += res[0].transcript;
         }
         if (final) finalRef.current += final;
+        interimRef.current = interim;
         if (final || interim.trim()) {
           if (!speechStartRef.current) speechStartRef.current = Date.now(); // first speech
           // restart the silence countdown on every bit of speech
@@ -426,11 +430,22 @@
       window.speechSynthesis.speak(utt);
     }, []);
 
-    // Use the INSTANT browser-native voice (no network round-trip) so the examiner
-    // replies with no lag — a real conversation. The Gemini neural voice added 1–3s
-    // of fetch latency per turn, which broke the back-and-forth flow.
+    // Use the NATURAL Gemini neural voice (the backend proxy holds the key, so it
+    // works without any client setup). Falls back to the browser voice only if the
+    // TTS request fails. Natural voice matters more than shaving 1–2s.
     const speak = useCallback((text, onDone) => {
       if (!text) { onDone && onDone(); return; }
+      const tts = window.LP_TTS;
+      if (tts && tts.speakOne) {
+        try { ttsAbortRef.current?.abort(); } catch (_) {}
+        const ctrl = new AbortController();
+        ttsAbortRef.current = ctrl;
+        setSpeaking(true);
+        tts.speakOne(text.slice(0, 600), "Kore", ctrl.signal)
+          .then(() => { setSpeaking(false); onDone && onDone(); })
+          .catch(() => { setSpeaking(false); speakNative(text, onDone); });
+        return;
+      }
       speakNative(text, onDone);
     }, [speakNative]);
 
@@ -543,6 +558,13 @@
     useEffect(() => {
       chatEndRef.current && chatEndRef.current.scrollIntoView({ behavior: "smooth" });
     }, [turns, agentTyping]);
+
+    // Pre-warm the AI + natural-voice backend so the first examiner reply isn't a cold start.
+    useEffect(() => {
+      const base = window.LP_API_BASE || "";
+      try { fetch(base + "/api/health").catch(() => {}); } catch (e) {}
+      try { window.LP_TTS && window.LP_TTS.prewarm && window.LP_TTS.prewarm("en"); } catch (e) {}
+    }, []);
 
     // When exam changes, reset to setup
     useEffect(() => {

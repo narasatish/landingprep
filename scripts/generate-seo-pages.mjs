@@ -976,7 +976,7 @@ const LANG_SEO = {
       { q: "Is the German course on LandingPrep really free?", a: "Yes — the German A1 course, vocabulary with natural-voice pronunciation, AI speaking practice and mock tests are 100% free with no signup and no payment." },
       { q: "What level of German do I need to study in Germany?", a: "Most German-taught degrees require B1–B2 (TestDaF or DSH); many English-taught Master's programmes need no German. Start at A1 here and build up." },
       { q: "Which German exam should I take?", a: "The Goethe-Zertifikat is the most widely recognised worldwide; TestDaF and DSH are used for university admission. Pick the one your university accepts." },
-      { q: "Can I practise speaking German with AI for free?", a: "Yes — our AI speaking partner holds a real two-way German conversation, replies in the natural German voice and gives the English translation, so you can practise anytime." },
+      { q: "Can I practise speaking German with AI for free?", a: "Yes — our hands-free AI speaking partner holds a real two-way German conversation, gently auto-corrects your mistakes, replies in a natural German voice and shows the English translation. Just press Start and talk." },
     ],
   },
   french: {
@@ -989,7 +989,7 @@ const LANG_SEO = {
       { q: "Is the French course free?", a: "Yes — the French A1 course, vocabulary with native-voice pronunciation, AI speaking practice and mock tests are completely free with no signup." },
       { q: "What French level do I need to study in France?", a: "Most French-taught degrees want B2 (DELF/DALF or TCF). Campus France guides the level; English-taught programmes may need none. Start A1 here." },
       { q: "Which French exam is best for Canada?", a: "For Canadian immigration, the TEF and TCF are accepted (Express Entry). For study, DELF/DALF and TCF are widely recognised." },
-      { q: "Can I practise speaking French with AI?", a: "Yes — our AI partner chats with you in simple French (with English translations) and speaks in the natural French voice." },
+      { q: "Can I practise speaking French with AI?", a: "Yes — our hands-free AI partner chats with you in simple French, gently auto-corrects your mistakes, speaks in a natural French voice and shows English translations. Just press Start and talk." },
     ],
   },
 };
@@ -1042,28 +1042,32 @@ ${relatedGrid([
 }
 function prepLessonsPage() {
   const path = `/prep-lessons/`;
-  const title = `Free Exam Prep Lessons — IELTS, TOEFL, German &amp; French Tips &amp; Strategy | ${BRAND}`;
-  const desc = `Free slide lessons (PPT-style) for IELTS, TOEFL, PTE, GRE, GMAT, German &amp; French — tips, tricks, traps and section-by-section strategy with examples. Learn first, then practise with free mocks.`;
-  const kw = "ielts listening tips, free exam prep lessons, ielts strategy, ielts listening practice tips, toefl tips, exam preparation slides, ielts question types, learn german tips, study abroad exam strategy, ielts listening band 8 tips";
+  const title = `Free Exam Prep Lessons — 600+ Strategy Slides for IELTS, TOEFL, PTE, GRE, GMAT, CELPIP &amp; Duolingo | ${BRAND}`;
+  const desc = `Free PPT-style strategy lessons for every section of all 7 exams (IELTS, TOEFL iBT, PTE, GRE, GMAT Focus, CELPIP, Duolingo) plus German &amp; French — 24 decks, 600+ slides of tips, tricks, traps and worked examples. Learn the strategy, then practise with free mocks. No signup.`;
+  const kw = "free exam prep lessons, ielts listening tips and tricks, ielts reading tips, ielts writing tips, ielts speaking tips, toefl tips and strategy, pte tips, gre verbal quant tips, gmat focus strategy, celpip tips, duolingo english test tips, exam preparation slides, ppt exam lessons free, ielts question types explained, ielts band 8 tips, learn german tips, learn french tips, study abroad exam strategy, exam tips with examples";
   const faqs = [
-    { q: "Are the prep lessons free?", a: "Yes — every slide lesson on LandingPrep is 100% free, with no signup. Learn the strategy, then practise with our free mock tests." },
-    { q: "What do the IELTS Listening tips cover?", a: "Format, all question types, the word-limit rule, distractor traps, synonyms/paraphrasing, and a section-by-section game plan — 30 slides with examples." },
-    { q: "Do you have lessons for German and French?", a: "Yes — German and French foundation decks cover pronunciation, gender (der/die/das, le/la), verbs and a smart learning plan." },
+    { q: "Are the prep lessons free?", a: "Yes — all 24 lesson decks (600+ slides) are 100% free with no signup. Learn the strategy, then practise with our free mock tests." },
+    { q: "Which exams have lessons?", a: "Every section of all 7 exams: IELTS, TOEFL iBT, PTE Academic, GRE, GMAT Focus, CELPIP and the Duolingo English Test — plus German and French foundations. Each deck has 22–32 slides of tips, traps and worked examples." },
+    { q: "What do the IELTS lessons cover?", a: "Separate decks for Listening, Reading, Writing and Speaking — format, every question/task type, scoring bands, distractor traps, time management and band-8 strategy, all with examples." },
+    { q: "Do you have lessons for German and French?", a: "Yes — German and French foundation decks cover pronunciation, gender (der/die/das, le/la), key verbs, word order and a smart learning plan, alongside free A1 courses, vocabulary, mock tests and an AI speaking partner." },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › Prep Lessons</p>
 <section class="hero">
-  <div class="badges"><span class="badge">100% Free</span><span class="badge">Tips &amp; traps</span><span class="badge">With examples</span></div>
+  <div class="badges"><span class="badge">100% Free</span><span class="badge">24 decks · 600+ slides</span><span class="badge">All 7 exams</span><span class="badge">With examples</span></div>
   <h1>Free Exam Prep Lessons — Learn the Strategy First</h1>
-  <p class="lead">Quick, visual slide lessons for every exam section — tips, tricks, traps and worked examples. Master the strategy here, then practise with our free mock tests.</p>
+  <p class="lead">Broad, visual PPT-style lessons for <strong>every section of all 7 exams</strong> — tips, tricks, traps and worked examples. Master the strategy here, then practise with our free mock tests.</p>
   <a class="cta" href="/#/lessons">▶ Open the free prep lessons</a>
 </section>
 <div class="card">
-  <h2>What's inside</h2>
+  <h2>What's inside — 24 decks, 600+ slides</h2>
   <ul>
-    <li><strong>IELTS Listening</strong> — 30 slides: format, all 8 question types, traps, word-limit rule and section tactics.</li>
-    <li><strong>German &amp; French foundations</strong> — pronunciation, gender, verbs, word order and a learning plan.</li>
-    <li><strong>More coming</strong> — IELTS Reading/Writing/Speaking, TOEFL, PTE, GRE, GMAT, CELPIP &amp; Duolingo.</li>
+    <li><strong>IELTS</strong> — Listening, Reading, Writing &amp; Speaking (4 decks): all question types, traps, band-8 strategy.</li>
+    <li><strong>TOEFL iBT</strong> — Reading, Listening, Speaking &amp; Writing (incl. the academic-discussion task).</li>
+    <li><strong>PTE Academic</strong> — Speaking &amp; Writing, Reading, Listening (Read Aloud, WFD and every task).</li>
+    <li><strong>GRE &amp; GMAT Focus</strong> — Verbal, Quant, Analytical Writing / Data Insights with worked problems.</li>
+    <li><strong>CELPIP &amp; Duolingo</strong> — every task type, scoring and proctoring tips for Canada &amp; university admission.</li>
+    <li><strong>German &amp; French</strong> — foundations, pronunciation, grammar and a learning plan.</li>
   </ul>
 </div>
 ${faqBlock(faqs)}

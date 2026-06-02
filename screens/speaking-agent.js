@@ -304,7 +304,7 @@ ${history}
 
 The candidate just said: "${userText}"
 
-Reply as the examiner in 1\u20133 short sentences: briefly and warmly acknowledge what they said, then ask exactly ONE natural follow-up question that keeps them talking and probes for detail, reasons or examples. Do NOT give scores, corrections or feedback yet. Stay conversational. Return only your spoken reply, no labels.`;
+Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar or word-choice mistake, gently note the correction in one brief clause (e.g. "Small tip \u2014 we'd say '\u2026' "). Then warmly acknowledge what they said and ask exactly ONE natural follow-up question that keeps them talking and probes for detail, reasons or examples. Do NOT give scores yet. Stay conversational and encouraging. Return only your spoken reply, no labels.`;
     try {
       const out = await ai.generate(prompt);
       if (!out) return null;
@@ -320,13 +320,15 @@ Reply as the examiner in 1\u20133 short sentences: briefly and warmly acknowledg
     const recRef = useRef(null);
     const silenceRef = useRef(null);
     const finalRef = useRef("");
+    const interimRef = useRef("");
     const activeRef = useRef(false);
     const speechStartRef = useRef(0);
     const [listening, setListening] = useState(false);
     const [supported] = useState(!!SpeechRecognition);
     const submit = useCallback(() => {
-      const text = finalRef.current.trim();
+      const text = (finalRef.current + " " + interimRef.current).replace(/\s+/g, " ").trim();
       finalRef.current = "";
+      interimRef.current = "";
       clearTimeout(silenceRef.current);
       try {
         recRef.current && recRef.current.stop();
@@ -351,6 +353,7 @@ Reply as the examiner in 1\u20133 short sentences: briefly and warmly acknowledg
           else interim += res[0].transcript;
         }
         if (final) finalRef.current += final;
+        interimRef.current = interim;
         if (final || interim.trim()) {
           if (!speechStartRef.current) speechStartRef.current = Date.now();
           clearTimeout(silenceRef.current);
@@ -412,8 +415,27 @@ Reply as the examiner in 1\u20133 short sentences: briefly and warmly acknowledg
       window.speechSynthesis.speak(utt);
     }, []);
     const speak = useCallback((text, onDone) => {
+      var _a;
       if (!text) {
         onDone && onDone();
+        return;
+      }
+      const tts = window.LP_TTS;
+      if (tts && tts.speakOne) {
+        try {
+          (_a = ttsAbortRef.current) == null ? void 0 : _a.abort();
+        } catch (_) {
+        }
+        const ctrl = new AbortController();
+        ttsAbortRef.current = ctrl;
+        setSpeaking(true);
+        tts.speakOne(text.slice(0, 600), "Kore", ctrl.signal).then(() => {
+          setSpeaking(false);
+          onDone && onDone();
+        }).catch(() => {
+          setSpeaking(false);
+          speakNative(text, onDone);
+        });
         return;
       }
       speakNative(text, onDone);
@@ -540,6 +562,18 @@ Reply as the examiner in 1\u20133 short sentences: briefly and warmly acknowledg
     useEffect(() => {
       chatEndRef.current && chatEndRef.current.scrollIntoView({ behavior: "smooth" });
     }, [turns, agentTyping]);
+    useEffect(() => {
+      const base = window.LP_API_BASE || "";
+      try {
+        fetch(base + "/api/health").catch(() => {
+        });
+      } catch (e) {
+      }
+      try {
+        window.LP_TTS && window.LP_TTS.prewarm && window.LP_TTS.prewarm("en");
+      } catch (e) {
+      }
+    }, []);
     useEffect(() => {
       setPhase("setup");
       setTurns([]);

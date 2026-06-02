@@ -293,12 +293,19 @@
     );
   }
 
+  // Warm the TTS backend (and cache a short greeting) so the first spoken reply in a
+  // conversation isn't delayed by a cold start. Fire-and-forget.
+  async function prewarm(lang) {
+    try { await fetchTTSBase64(lang === "de" ? "Hallo!" : lang === "fr" ? "Bonjour !" : "Hello!", "Kore", lang || "en"); } catch (e) {}
+  }
+
   // ── Expose API ────────────────────────────────────────────────────────
   window.LP_TTS = {
     isEnabled,
     getApiKey, setApiKey,
     speakOne,
     playScript,
+    prewarm,
     SettingsModal,
     voices: { female1: "Kore", male1: "Puck", female2: "Sulafat", male2: "Charon", female3: "Aoede", male3: "Fenrir" },
   };
