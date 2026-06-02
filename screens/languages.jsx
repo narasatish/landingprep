@@ -158,12 +158,13 @@
             ))}
           </div>
           <div className="tools-tabs">
-            {[["learn", "📚 Learn"], ["vocab", "🗂 Vocabulary"], ["test", "✅ Placement Test"], ["exams", "🎓 Exams & Why"]].map(([id, label]) => (
+            {[["learn", "📚 Learn"], ["vocab", "🗂 Vocabulary"], ["speak", "🎙️ AI Speaking"], ["test", "✅ Placement Test"], ["exams", "🎓 Exams & Why"]].map(([id, label]) => (
               <button key={id} className={"tools-tab" + (tab === id ? " active" : "")} onClick={() => setTab(id)}>{label}</button>
             ))}
           </div>
           {tab === "learn" && <LearnView lang={lang} />}
           {tab === "vocab" && <VocabView lang={lang} />}
+          {tab === "speak" && (window.LP_LangSpeak ? <window.LP_LangSpeak langId={langId} key={langId} /> : <div className="tool-card"><p className="tool-sub">Loading speaking partner…</p></div>)}
           {tab === "test" && <TestView lang={lang} key={langId} />}
           {tab === "exams" && <ExamsView lang={lang} onNav={onNav} />}
         </main>

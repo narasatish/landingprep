@@ -69,14 +69,15 @@
     } catch (e) {
     }
   }
-  async function fetchTTSBase64(text, voiceName) {
-    const cached = getCached(text, voiceName);
+  async function fetchTTSBase64(text, voiceName, lang) {
+    const ck = voiceName + "|" + (lang || "en");
+    const cached = getCached(text, ck);
     if (cached) return cached;
     const base = window.LP_API_BASE || "";
     const res = await fetch(base + "/api/tts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text, voice: voiceName })
+      body: JSON.stringify({ text, voice: voiceName, lang: lang || "en" })
     });
     if (!res.ok) {
       const err = await res.text();
@@ -85,11 +86,11 @@
     const json = await res.json();
     const b64 = json && json.audio;
     if (!b64) throw new Error("Empty audio from TTS proxy");
-    setCached(text, voiceName, b64);
+    setCached(text, ck, b64);
     return b64;
   }
-  async function speakOne(text, voiceName, signal) {
-    const b64 = await fetchTTSBase64(text, voiceName);
+  async function speakOne(text, voiceName, signal, lang) {
+    const b64 = await fetchTTSBase64(text, voiceName, lang);
     if (signal == null ? void 0 : signal.aborted) return;
     const pcm = base64ToBytes(b64);
     const wavBlob = pcmToWavBlob(pcm, SAMPLE_RATE);

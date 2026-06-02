@@ -75,17 +75,18 @@
   }
 
   // ── API call ──────────────────────────────────────────────────────────
-  async function fetchTTSBase64(text, voiceName) {
-    const cached = getCached(text, voiceName);
+  async function fetchTTSBase64(text, voiceName, lang) {
+    const ck = voiceName + "|" + (lang || "en");
+    const cached = getCached(text, ck);
     if (cached) return cached;
 
     // Call the backend TTS proxy (it holds the Gemini key) — natural neural voice
-    // without exposing any key in the browser.
+    // without exposing any key in the browser. lang ("de"/"fr"/...) = native accent.
     const base = (window.LP_API_BASE || "");
     const res = await fetch(base + "/api/tts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text, voice: voiceName }),
+      body: JSON.stringify({ text, voice: voiceName, lang: lang || "en" }),
     });
     if (!res.ok) {
       const err = await res.text();
@@ -94,14 +95,14 @@
     const json = await res.json();
     const b64 = json && json.audio;
     if (!b64) throw new Error("Empty audio from TTS proxy");
-    setCached(text, voiceName, b64);
+    setCached(text, ck, b64);
     return b64;
   }
 
   // ── Play a single line ────────────────────────────────────────────────
   // Returns a Promise<void> that resolves when audio finishes (or aborts).
-  async function speakOne(text, voiceName, signal) {
-    const b64 = await fetchTTSBase64(text, voiceName);
+  async function speakOne(text, voiceName, signal, lang) {
+    const b64 = await fetchTTSBase64(text, voiceName, lang);
     if (signal?.aborted) return;
     const pcm = base64ToBytes(b64);
     const wavBlob = pcmToWavBlob(pcm, SAMPLE_RATE);

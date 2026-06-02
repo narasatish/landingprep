@@ -4483,3 +4483,21 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 .deck-dots { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; flex: 1; }
 .deck-dot { width: 9px; height: 9px; border-radius: 999px; background: var(--line); cursor: pointer; transition: background .15s, transform .15s; }
 .deck-dot.on { background: var(--accent); transform: scale(1.25); }
+
+/* ── Language AI speaking partner ── */
+.lang-speak { max-width: 680px; margin: 0 auto; }
+.lang-speak-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.lang-speak-avatar { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; font-size: 24px; background: linear-gradient(135deg, var(--accent), #06b6d4); }
+.lang-chat { background: var(--tint); border: 1px solid var(--line); border-radius: 14px; padding: 14px; height: 380px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+.lang-bubble { max-width: 82%; padding: 10px 14px; border-radius: 14px; line-height: 1.45; }
+.lang-bubble.tutor { align-self: flex-start; background: var(--surface); border: 1px solid var(--line); border-bottom-left-radius: 4px; }
+.lang-bubble.you { align-self: flex-end; background: var(--accent); color: #fff; border-bottom-right-radius: 4px; }
+.lb-native { font-size: 15px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.lb-gloss { font-size: 12.5px; opacity: .78; margin-top: 3px; font-style: italic; }
+.lang-bubble.you .lb-gloss { color: #e0e7ff; opacity: .9; }
+.lang-speak-controls { margin-top: 12px; display: flex; flex-direction: column; gap: 10px; }
+.lang-mic { width: 100%; }
+.lang-mic.rec { background: #ef4444 !important; }
+.lang-type { display: flex; gap: 8px; }
+.lang-type .lc-input { flex: 1; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); font-size: 14px; }
+.lang-type .lc-input:focus { outline: none; border-color: var(--accent); }

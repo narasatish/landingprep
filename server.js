@@ -104,14 +104,23 @@ app.post("/api/tts", async (req, res) => {
   if (!GEMINI_API_KEY) return res.status(503).json({ error: "TTS unavailable (no key)" });
   const text = String((req.body && req.body.text) || "").slice(0, 2000);
   const voice = (String((req.body && req.body.voice) || "Kore").replace(/[^A-Za-z]/g, "").slice(0, 24)) || "Kore";
+  const lang = String((req.body && req.body.lang) || "en").toLowerCase().slice(0, 2);
   if (!text.trim()) return res.status(400).json({ error: "text required" });
+  // Language-aware instruction so German/French are pronounced natively (and the
+  // instruction itself is in that language, so the model doesn't read it aloud in English).
+  const INSTR = {
+    de: "Sprich den folgenden deutschen Text klar, langsam und natürlich aus: ",
+    fr: "Lis le texte français suivant clairement, lentement et naturellement : ",
+    es: "Lee el siguiente texto en español de forma clara y natural: ",
+  };
+  const instr = INSTR[lang] || "Say the following clearly and naturally in a warm, friendly voice: ";
   try {
     const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=" + GEMINI_API_KEY;
     const r = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        contents: [{ parts: [{ text: "Say the following clearly and naturally in a warm, friendly voice: " + text }] }],
+        contents: [{ parts: [{ text: instr + text }] }],
         generationConfig: { responseModalities: ["AUDIO"], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: voice } } } },
       }),
     });
