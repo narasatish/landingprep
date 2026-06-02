@@ -1237,12 +1237,71 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// ── Student city-guide SEO pages (high-traffic "student life in <city>") ──────
+function cityGuidePages() {
+  let SA = {};
+  try { SA = JSON.parse(readFileSync(join(ROOT, "data/study-abroad-extra.json"), "utf8")); } catch (e) { return; }
+  const cities = SA.cityGuides || [];
+  if (!cities.length) return;
+  const slug = (c) => c.city.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  // Hub
+  const hubInner = `
+<p class="crumb"><a href="/">Home</a> › Student City Guides</p>
+<section class="hero"><div class="badges"><span class="badge">100% Free</span><span class="badge">${cities.length} cities</span><span class="badge">Costs &amp; tips</span></div>
+<h1>Student City Guides — Cost of Living, Areas &amp; Tips</h1>
+<p class="lead">Heading abroad? Real, practical guides to the best student cities — monthly budget, transport, where students live and insider tips.</p>
+<a class="cta" href="/#/relocate">▶ Open the Move-Abroad toolkit</a></section>
+<div class="card"><h2>Choose a city</h2><ul>${cities.map((c) => `<li><a href="/student-guide/${slug(c)}/"><strong>${esc(c.emoji)} ${esc(c.city)}</strong> (${esc(c.country)})</a> — ${esc(c.cost)}</li>`).join("")}</ul></div>
+${relatedGrid([
+  { label: "Move-abroad checklist &amp; visa timeline", href: "/#/relocate" },
+  { label: "Free college predictor", href: "/#/colleges" },
+  { label: "Scholarships", href: "/#/colleges" },
+  { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
+])}`;
+  emit(`/student-city-guides/`, head({
+    title: `Student City Guides — Cost of Living, Areas &amp; Tips (2026) | ${BRAND}`,
+    desc: `Free student guides to ${cities.map((c) => c.city).join(", ")}: monthly cost of living, transport, where students live and practical tips for international students.`,
+    path: `/student-city-guides/`,
+    kw: `student city guide, cost of living for students, best student cities, ${cities.map((c) => "student life in " + c.city.toLowerCase()).join(", ")}`,
+    jsonLdBlocks: [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Student City Guides", path: `/student-city-guides/` }])],
+  }) + shell(hubInner));
+  // Per-city
+  cities.forEach((c) => {
+    const path = `/student-guide/${slug(c)}/`;
+    const faqs = [
+      { q: `How much does it cost to live in ${c.city} as a student?`, a: `A typical international student in ${c.city} budgets around ${c.cost}, depending on accommodation and lifestyle.` },
+      { q: `Where do students live in ${c.city}?`, a: `Popular student areas include ${(c.studentAreas || []).join(", ")}.` },
+      { q: `How do students get around ${c.city}?`, a: c.transport },
+    ];
+    const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/student-city-guides/">City Guides</a> › ${esc(c.city)}</p>
+<section class="hero"><div class="badges"><span class="badge">${esc(c.country)}</span><span class="badge">${esc(c.cost)}</span><span class="badge">Free guide</span></div>
+<h1>${esc(c.emoji)} Student Guide to ${esc(c.city)}</h1><p class="lead">${esc(c.intro)}</p>
+<a class="cta" href="/#/relocate">▶ Pre-departure checklist &amp; visa timeline</a></section>
+<div class="card"><h2>Cost &amp; getting around</h2><ul><li><strong>Monthly budget:</strong> ${esc(c.cost)}</li><li><strong>Transport:</strong> ${esc(c.transport)}</li><li><strong>Where students live:</strong> ${esc((c.studentAreas || []).join(", "))}</li></ul></div>
+<div class="card"><h2>Tips for students in ${esc(c.city)}</h2><ul>${(c.tips || []).map((t) => `<li>${esc(t)}</li>`).join("")}</ul></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: "Move-abroad checklist &amp; visa timeline", href: "/#/relocate" },
+  { label: "All student city guides", href: "/student-city-guides/" },
+  ...cities.filter((x) => x.city !== c.city).slice(0, 2).map((x) => ({ label: `Student guide to ${x.city}`, href: `/student-guide/${slug(x)}/` })),
+])}`;
+    emit(path, head({
+      title: `Student Guide to ${esc(c.city)} — Cost of Living, Areas &amp; Tips (2026) | ${BRAND}`,
+      desc: `Living in ${c.city} as an international student: monthly cost (${c.cost}), transport, the best student areas and practical tips. Free study-abroad guide.`,
+      path, kw: `student life in ${c.city.toLowerCase()}, cost of living ${c.city.toLowerCase()} students, study in ${c.city.toLowerCase()}, ${c.city.toLowerCase()} student accommodation, international students ${c.city.toLowerCase()}`,
+      jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "City Guides", path: `/student-city-guides/` }, { name: c.city, path }])],
+    }) + shell(inner));
+  });
+}
+
 Object.keys(LANG_SEO).forEach(languageLandingPage);
 prepLessonsPage();
 bandCheckerPage("writing");
 bandCheckerPage("speaking");
 vocabularyPages();
 BANDS.forEach(bandPage);
+cityGuidePages();
 
 // Write files
 PAGES.forEach(({ path, html }) => {
