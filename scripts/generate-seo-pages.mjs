@@ -1576,6 +1576,56 @@ ${relatedGrid([
   emit(path, head({ title, desc, path, kw: `${x.exam.toLowerCase()} for ${x.country.toLowerCase()} pr, ${x.exam.toLowerCase()} score for ${x.country.toLowerCase()} immigration, ${x.country.toLowerCase()} pr english requirement, ${x.exam.toLowerCase()} ${x.country.toLowerCase()} express entry points, ${x.country.toLowerCase()} skilled migration english`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${x.exam} for ${x.country} PR`, path }])] }) + shell(inner));
 }
 
+// ── IELTS for professional registration (nurses / doctors) — high intent ────
+const PRO_REG = [
+  { slug: "ielts-for-nurses-uk", role: "Nurses &amp; Midwives", body: "the UK Nursing and Midwifery Council (NMC)",
+    req: "IELTS Academic 7.0 overall — at least 7.0 in Listening, Reading and Speaking, and 6.5 in Writing.", alt: "The NMC also accepts OET at grade B (with at least C+ in Writing).", who: "internationally-trained nurses and midwives registering to work in the UK" },
+  { slug: "ielts-for-nurses-australia", role: "Nurses", body: "AHPRA / the Nursing and Midwifery Board of Australia",
+    req: "IELTS Academic 7.0 in each of the four skills.", alt: "OET at grade B in each section is also accepted; results can be combined across two sittings under set conditions.", who: "nurses seeking registration to work in Australia" },
+  { slug: "ielts-for-nurses-canada", role: "Nurses", body: "Canadian provincial nursing regulators (via NNAS)",
+    req: "Around IELTS Academic 6.5–7.0 overall with Speaking 7.0 (requirements vary by province).", alt: "Many regulators accept CELBAN (the nursing-specific English test) or OET.", who: "internationally-educated nurses applying to practise in Canada" },
+  { slug: "ielts-for-doctors-uk", role: "Doctors", body: "the General Medical Council (GMC) for UK practice (PLAB route)",
+    req: "IELTS Academic 7.5 overall with at least 7.0 in each skill.", alt: "OET at grade B in each section is also accepted by the GMC.", who: "international medical graduates seeking GMC registration" },
+  { slug: "ielts-for-doctors-australia", role: "Doctors", body: "AHPRA / the Medical Board of Australia",
+    req: "IELTS Academic 7.0 in each of the four skills.", alt: "OET at grade B in each section is accepted.", who: "international medical graduates registering to work in Australia" },
+];
+function examForRolePage(x) {
+  const path = `/${x.slug}/`;
+  const cleanRole = x.role.replace(/&amp;/g, "&");
+  const title = `IELTS for ${cleanRole} — Score Needed for ${x.body.replace(/the |\/ /g, "").slice(0, 40)} (2026) | ${BRAND}`.replace(/\s+\(/, " (");
+  const desc = `What IELTS score do ${cleanRole.toLowerCase()} need? For ${x.body.replace(/&amp;/g, "&")}: ${x.req.replace(/&amp;/g, "&")} ${x.alt.replace(/&amp;/g, "&")} Free IELTS mock tests and an AI band checker to get there.`;
+  const faqs = [
+    { q: `What IELTS score do ${cleanRole.toLowerCase()} need?`, a: `For ${x.body.replace(/&amp;/g, "&")}: ${x.req.replace(/&amp;/g, "&")}` },
+    { q: `Is OET accepted instead of IELTS?`, a: x.alt.replace(/&amp;/g, "&") },
+    { q: `How can I reach this score for free?`, a: `Take free IELTS Academic mock tests, study the prep lessons, and check your Writing & Speaking band with the free AI band checker — Writing is often the hardest 7.0 to hit.` },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › IELTS for ${x.role}</p>
+<section class="hero"><div class="badges"><span class="badge">${x.role}</span><span class="badge">Registration</span><span class="badge">2026</span></div>
+<h1>IELTS Score for ${x.role}</h1>
+<p class="lead">To register with ${x.body}, ${x.who} must prove English. The requirement is: <strong>${x.req}</strong></p>
+<a class="cta" href="/mock-test/ielts/">▶ Take a free IELTS mock test</a></section>
+<div class="card"><h2>The requirement</h2><ul>
+<li><strong>IELTS:</strong> ${x.req}</li>
+<li><strong>Alternative:</strong> ${x.alt}</li>
+<li><strong>Use IELTS Academic</strong> (not General Training) for professional registration.</li>
+</ul><p class="note">Always confirm the current rule on the official regulator's website — requirements change.</p></div>
+<div class="card"><h2>How to hit your target — free</h2><ol>
+<li>Take a free <a href="/mock-test/ielts/">IELTS mock</a> to find your weakest skill.</li>
+<li>Most ${x.role.toLowerCase()} struggle with Writing 7.0 — use the free <a href="/ielts-writing-checker/">AI band checker</a> for criterion feedback.</li>
+<li>Learn the strategy in the free <a href="/prep-lessons/">IELTS prep lessons</a>.</li>
+<li>See exactly what <a href="/ielts-band-7/">Band 7</a> needs in each section.</li>
+</ol></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
+  { label: "Free AI band checker", href: "/ielts-writing-checker/" },
+  { label: "How to get IELTS Band 7 in Writing", href: "/ielts-band-7-writing/" },
+  { label: "IELTS prep lessons", href: "/prep-lessons/" },
+])}`;
+  emit(path, head({ title, desc, path, kw: `ielts for ${cleanRole.toLowerCase()}, ielts score for ${cleanRole.toLowerCase()}, ielts requirement ${cleanRole.toLowerCase()}, ${x.slug.replace(/-/g, " ")}, oet vs ielts ${cleanRole.toLowerCase()}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `IELTS for ${cleanRole}`, path }])] }) + shell(inner));
+}
+
 Object.keys(LANG_SEO).forEach(languageLandingPage);
 prepLessonsPage();
 bandCheckerPage("writing");
@@ -1590,6 +1640,7 @@ COLLEGES.forEach(examForUniPage);
 COLLEGES.forEach((c) => ALT_EXAMS.forEach((ex) => altExamForUniPage(c, ex)));
 scholarshipCountryPages();
 PR_TARGETS.forEach(examForPRPage);
+PRO_REG.forEach(examForRolePage);
 
 // Write files
 PAGES.forEach(({ path, html }) => {
