@@ -345,6 +345,13 @@
   // ── SpeechRecognition setup ───────────────────────────────────────────────
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
 
+  // Pick the best English browser voice — neural/online voices are natural AND instant.
+  let _voices = [];
+  function _refreshVoices() { try { _voices = window.speechSynthesis ? window.speechSynthesis.getVoices() : []; } catch (e) { _voices = []; } }
+  if (window.speechSynthesis) { _refreshVoices(); try { window.speechSynthesis.onvoiceschanged = _refreshVoices; } catch (e) {} }
+  function _voiceScore(v) { const n = (v.name || "").toLowerCase(); let s = 0; if (/natural|neural/.test(n)) s += 100; if (/online/.test(n)) s += 80; if (/google/.test(n)) s += 60; if (v.localService === false) s += 15; if (/desktop|sapi|david|zira|mark|hazel/.test(n)) s -= 60; return s; }
+  function bestEnVoice() { const all = _voices.filter((v) => v.lang && v.lang.toLowerCase().startsWith("en")); if (!all.length) return { voice: null, good: false }; const top = all.slice().sort((a, b) => _voiceScore(b) - _voiceScore(a))[0]; return { voice: top, good: _voiceScore(top) >= 55 }; }
+
   // Hands-free recogniser: continuous listening with silence detection. When the
   // candidate pauses (~1.6s), the accumulated utterance is submitted automatically
   // — no button to hold. The agent re-opens the mic after it finishes speaking, so
@@ -366,7 +373,7 @@
       clearTimeout(silenceRef.current);
       try { recRef.current && recRef.current.stop(); } catch (_) {}
       // Speaking time ≈ (now − silence window) − first-speech time.
-      const dur = speechStartRef.current ? Math.max(0, (Date.now() - 1000) - speechStartRef.current) : 0;
+      const dur = speechStartRef.current ? Math.max(0, (Date.now() - 800) - speechStartRef.current) : 0;
       speechStartRef.current = 0;
       if (text) onResult(text, dur);
     }, [onResult]);
@@ -391,7 +398,7 @@
           if (!speechStartRef.current) speechStartRef.current = Date.now(); // first speech
           // restart the silence countdown on every bit of speech
           clearTimeout(silenceRef.current);
-          silenceRef.current = setTimeout(submit, 1000);
+          silenceRef.current = setTimeout(submit, 800);
         }
       };
       r.onend = () => { setListening(false); activeRef.current = false; };
@@ -421,20 +428,24 @@
       if (!window.speechSynthesis) { onDone && onDone(); return; }
       window.speechSynthesis.cancel();
       const utt = new SpeechSynthesisUtterance(text);
+      const { voice } = bestEnVoice();
+      if (voice) utt.voice = voice;
       utt.lang = "en-US";
-      utt.rate = 0.92;
-      utt.pitch = 1.05;
+      utt.rate = 1.0;
+      utt.pitch = 1.0;
       utt.onstart = () => setSpeaking(true);
       utt.onend = () => { setSpeaking(false); onDone && onDone(); };
       utt.onerror = () => { setSpeaking(false); onDone && onDone(); };
       window.speechSynthesis.speak(utt);
     }, []);
 
-    // Use the NATURAL Gemini neural voice (the backend proxy holds the key, so it
-    // works without any client setup). Falls back to the browser voice only if the
-    // TTS request fails. Natural voice matters more than shaving 1–2s.
+    // Natural AND instant: use a high-quality browser neural voice (zero network delay).
+    // Only if the device has no good native English voice do we fall back to the Gemini
+    // neural voice (natural but ~3s of synthesis latency).
     const speak = useCallback((text, onDone) => {
       if (!text) { onDone && onDone(); return; }
+      const { good } = bestEnVoice();
+      if (good) { speakNative(text, onDone); return; }
       const tts = window.LP_TTS;
       if (tts && tts.speakOne) {
         try { ttsAbortRef.current?.abort(); } catch (_) {}

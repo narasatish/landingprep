@@ -109,11 +109,11 @@ app.post("/api/tts", async (req, res) => {
   // Language-aware instruction so German/French are pronounced natively (and the
   // instruction itself is in that language, so the model doesn't read it aloud in English).
   const INSTR = {
-    de: "Sprich den folgenden deutschen Text klar, langsam und natürlich aus: ",
-    fr: "Lis le texte français suivant clairement, lentement et naturellement : ",
-    es: "Lee el siguiente texto en español de forma clara y natural: ",
+    de: "Sprich den folgenden deutschen Text natürlich und freundlich aus: ",
+    fr: "Lis le texte français suivant de façon naturelle et amicale : ",
+    es: "Lee el siguiente texto en español de forma natural y amable: ",
   };
-  const instr = INSTR[lang] || "Say the following clearly and naturally in a warm, friendly voice: ";
+  const instr = INSTR[lang] || "Say the following naturally in a warm, friendly voice: ";
   try {
     const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=" + GEMINI_API_KEY;
     const r = await fetch(url, {

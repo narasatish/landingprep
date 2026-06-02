@@ -17,6 +17,29 @@
     french: { name: "French", code: "fr-FR", lang: "fr", tutor: "Marie", hi: "Bonjour ! Comment tu t'appelles ?", hiEn: "Hello! What's your name?", retry: "Répète, s'il te plaît.", retryEn: "Say that again, please.", cont: "On continue !", fallback: "Très bien ! Et toi ? (Very good! And you?)" },
   };
 
+  // Pick the BEST available browser voice for a language — neural/online voices are
+  // natural AND instant (no network). We score names so we never pick the old robotic
+  // SAPI voices. Returns { voice, good } where good=true means it's high quality.
+  let VOICES = [];
+  function refreshVoices() { try { VOICES = SS ? SS.getVoices() : []; } catch (e) { VOICES = []; } }
+  if (SS) { refreshVoices(); try { SS.onvoiceschanged = refreshVoices; } catch (e) {} }
+  function voiceScore(v) {
+    const n = (v.name || "").toLowerCase();
+    let s = 0;
+    if (/natural|neural/.test(n)) s += 100;   // Edge/Azure neural — excellent
+    if (/online/.test(n)) s += 80;
+    if (/google/.test(n)) s += 60;            // Chrome Google voices — good
+    if (v.localService === false) s += 15;
+    if (/desktop|sapi|hedda|stefan|david|zira|mark|hazel/.test(n)) s -= 60; // old robotic
+    return s;
+  }
+  function bestVoice(prefix) {
+    const all = VOICES.filter((v) => v.lang && v.lang.toLowerCase().replace("_", "-").startsWith(prefix));
+    if (!all.length) return { voice: null, good: false };
+    const top = all.slice().sort((a, b) => voiceScore(b) - voiceScore(a))[0];
+    return { voice: top, good: voiceScore(top) >= 55 };
+  }
+
   async function aiReply(prompt, signal) {
     const base = window.LP_API_BASE || "";
     const r = await fetch(base + "/api/ai-tutor/generate", {
@@ -65,8 +88,23 @@
     }, []);
     useEffect(() => { if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight; }, [msgs, phase, interim]);
 
-    // NATURAL neural voice (Gemini). Falls back to the browser voice only if TTS is off.
+    // Natural AND instant: a high-quality browser neural voice plays with ZERO network
+    // delay. Only if the device has no good native voice do we fall back to the Gemini
+    // neural voice (natural but ~3s of synthesis latency).
     function speak(text) {
+      const { voice, good } = bestVoice(m.lang);
+      if (SS && good && voice) {
+        return new Promise((resolve) => {
+          try {
+            SS.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = m.code; u.voice = voice; u.rate = 1.0; u.pitch = 1.0;
+            u.onend = resolve; u.onerror = resolve;
+            SS.speak(u);
+            setTimeout(resolve, Math.min(8000, 900 + text.length * 70));
+          } catch (e) { resolve(); }
+        });
+      }
       try {
         if (window.LP_TTS && window.LP_TTS.speakOne) {
           ttsAbort.current = new AbortController();
@@ -95,7 +133,7 @@
           const text = (finalRef.current + " " + interimRef.current).replace(/\s+/g, " ").trim();
           try { rec.stop(); } catch (e) {}
           if (text) handleUser(text);
-        }, 900);
+        }, 650);   // submit quickly after you stop talking
       };
       rec.onresult = (e) => {
         let interimTxt = "";

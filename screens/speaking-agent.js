@@ -316,6 +316,37 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
     }
   }
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+  let _voices = [];
+  function _refreshVoices() {
+    try {
+      _voices = window.speechSynthesis ? window.speechSynthesis.getVoices() : [];
+    } catch (e) {
+      _voices = [];
+    }
+  }
+  if (window.speechSynthesis) {
+    _refreshVoices();
+    try {
+      window.speechSynthesis.onvoiceschanged = _refreshVoices;
+    } catch (e) {
+    }
+  }
+  function _voiceScore(v) {
+    const n = (v.name || "").toLowerCase();
+    let s = 0;
+    if (/natural|neural/.test(n)) s += 100;
+    if (/online/.test(n)) s += 80;
+    if (/google/.test(n)) s += 60;
+    if (v.localService === false) s += 15;
+    if (/desktop|sapi|david|zira|mark|hazel/.test(n)) s -= 60;
+    return s;
+  }
+  function bestEnVoice() {
+    const all = _voices.filter((v) => v.lang && v.lang.toLowerCase().startsWith("en"));
+    if (!all.length) return { voice: null, good: false };
+    const top = all.slice().sort((a, b) => _voiceScore(b) - _voiceScore(a))[0];
+    return { voice: top, good: _voiceScore(top) >= 55 };
+  }
   function useSpeechRecognition(onResult) {
     const recRef = useRef(null);
     const silenceRef = useRef(null);
@@ -334,7 +365,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
         recRef.current && recRef.current.stop();
       } catch (_) {
       }
-      const dur = speechStartRef.current ? Math.max(0, Date.now() - 1e3 - speechStartRef.current) : 0;
+      const dur = speechStartRef.current ? Math.max(0, Date.now() - 800 - speechStartRef.current) : 0;
       speechStartRef.current = 0;
       if (text) onResult(text, dur);
     }, [onResult]);
@@ -357,7 +388,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
         if (final || interim.trim()) {
           if (!speechStartRef.current) speechStartRef.current = Date.now();
           clearTimeout(silenceRef.current);
-          silenceRef.current = setTimeout(submit, 1e3);
+          silenceRef.current = setTimeout(submit, 800);
         }
       };
       r.onend = () => {
@@ -400,9 +431,11 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
       }
       window.speechSynthesis.cancel();
       const utt = new SpeechSynthesisUtterance(text);
+      const { voice } = bestEnVoice();
+      if (voice) utt.voice = voice;
       utt.lang = "en-US";
-      utt.rate = 0.92;
-      utt.pitch = 1.05;
+      utt.rate = 1;
+      utt.pitch = 1;
       utt.onstart = () => setSpeaking(true);
       utt.onend = () => {
         setSpeaking(false);
@@ -418,6 +451,11 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
       var _a;
       if (!text) {
         onDone && onDone();
+        return;
+      }
+      const { good } = bestEnVoice();
+      if (good) {
+        speakNative(text, onDone);
         return;
       }
       const tts = window.LP_TTS;
