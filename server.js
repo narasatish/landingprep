@@ -49,12 +49,36 @@ app.set("trust proxy", 1);
 app.disable("x-powered-by");
 
 // ── Security headers (defence-in-depth on every response) ──────────────────────
+// Content-Security-Policy: locks down the dangerous vectors (plugin/object injection,
+// base-tag hijack, form hijack, clickjacking) while allowing exactly what the app needs
+// — React from unpkg/jsdelivr, GA, Google Fonts, Firebase, and the Gemini API. No
+// 'unsafe-eval' (the app has zero runtime eval/new Function), so eval-based XSS is dead.
+const CSP = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com https://www.gstatic.com https://*.gstatic.com",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' data: https://fonts.gstatic.com",
+  "img-src 'self' data: blob: https:",
+  "media-src 'self' data: blob:",
+  "connect-src 'self' https://*.googleapis.com https://*.onrender.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.firebaseio.com https://*.firebaseapp.com https://*.gstatic.com",
+  "frame-src 'self' https://*.firebaseapp.com",
+  "worker-src 'self' blob:",
+  "manifest-src 'self'",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "frame-ancestors 'self'",
+  "upgrade-insecure-requests",
+].join("; ");
 app.use((req, res, next) => {
   res.setHeader("X-Content-Type-Options", "nosniff");      // block MIME sniffing
-  res.setHeader("X-Frame-Options", "SAMEORIGIN");          // anti-clickjacking
+  res.setHeader("X-Frame-Options", "SAMEORIGIN");          // anti-clickjacking (legacy)
   res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
-  res.setHeader("Permissions-Policy", "geolocation=(), microphone=(self), camera=()");
+  res.setHeader("Permissions-Policy", "geolocation=(), microphone=(self), camera=(), payment=(), usb=()");
   res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+  res.setHeader("Cross-Origin-Resource-Policy", "same-origin");
+  // CSP only on HTML documents — never on JSON/API or static assets (avoids odd edge cases).
+  if (!req.path.startsWith("/api/")) res.setHeader("Content-Security-Policy", CSP);
   if (req.secure || req.headers["x-forwarded-proto"] === "https") {
     res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains"); // force HTTPS
   }
@@ -716,8 +740,36 @@ app.post("/api/leaderboard/submit", (req, res) => {
   res.json({ ok: true });
 });
 
+// ── Resilience: unknown API routes + central error handler ─────────────────────
+// Any /api/* path that no route matched → clean JSON 404 (never an HTML error page).
+app.use("/api", (req, res) => res.status(404).json({ error: "Not found", path: req.path }));
+// Central error handler: a thrown error in ANY route lands here and returns a safe
+// 500 instead of hanging the request or crashing the process. Must have 4 args.
+// eslint-disable-next-line no-unused-vars
+app.use((err, req, res, next) => {
+  console.error("[express error]", err && err.stack ? err.stack : err);
+  if (res.headersSent) return;
+  res.status(500).json({ error: "Something went wrong. Please try again." });
+});
+
+// ── Process-level guards: one bad async error must NEVER take the whole site down ─
+process.on("unhandledRejection", (reason) => {
+  console.error("[unhandledRejection]", reason && reason.stack ? reason.stack : reason);
+});
+let SERVER_READY = false;
+process.on("uncaughtException", (err) => {
+  console.error("[uncaughtException]", err && err.stack ? err.stack : err);
+  // Fatal at startup (e.g. port in use) → exit so the platform can restart cleanly.
+  // After the server is listening, stay alive: one bad request throw must not take the
+  // whole site down for every other user.
+  if (!SERVER_READY || (err && (err.code === "EADDRINUSE" || err.code === "EACCES"))) {
+    process.exit(1);
+  }
+});
+
 // ── Start ─────────────────────────────────────────────────────────────────────
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
+  SERVER_READY = true;
   fsHydrate(); // load durable accounts from Firestore (if configured) on boot
   console.log(`\n🚀  LandingPrep server running at http://localhost:${PORT}`);
   console.log(`   Gemini key: ${GEMINI_API_KEY ? "✅ loaded from .env" : "❌ NOT SET — add to .env"}`);
@@ -728,4 +780,12 @@ app.listen(PORT, () => {
   console.log(`     POST /api/ai-tutor/chat`);
   console.log(`     POST /api/ai-tutor/chat?stream=1  (SSE)`);
   console.log(`     POST /api/ai-tutor/generate\n`);
+});
+// Anti-hang / slow-loris: drop requests that stall. AI streaming can be slow, so the
+// per-request ceiling is generous (120s) but finite — no socket leaks forever.
+server.requestTimeout = 120000;     // 120s hard cap per request
+server.headersTimeout = 65000;      // must exceed keepAliveTimeout
+server.keepAliveTimeout = 61000;    // > typical 60s LB idle to avoid 502s on Render
+server.on("clientError", (err, socket) => {
+  if (socket.writable && !socket.destroyed) socket.end("HTTP/1.1 400 Bad Request\r\n\r\n");
 });

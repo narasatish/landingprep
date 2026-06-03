@@ -399,4 +399,40 @@ function App() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+// ── Error boundary: a render error in any screen shows a friendly recovery card
+// instead of a blank white page, and offers a one-tap way back to a working state.
+class LPErrorBoundary extends React.Component {
+  constructor(props) { super(props); this.state = { err: null }; }
+  static getDerivedStateFromError(err) { return { err: err }; }
+  componentDidCatch(err, info) {
+    try { if (window.gtag) window.gtag("event", "exception", { description: ("render:" + (err && err.message || err)).slice(0, 150), fatal: false }); } catch (e) {}
+    try { console.error("[LandingPrep] render error:", err, info && info.componentStack); } catch (e) {}
+  }
+  render() {
+    if (!this.state.err) return this.props.children;
+    const goHome = () => { try { window.location.hash = "#/"; } catch (e) {} window.location.reload(); };
+    return (
+      <div style={{ maxWidth: 480, margin: "16vh auto", padding: 28, textAlign: "center", fontFamily: "system-ui, Arial, sans-serif" }}>
+        <div style={{ fontSize: 44 }}>🛟</div>
+        <h1 style={{ fontSize: 23, margin: "12px 0 6px", color: "var(--ink, #1f2937)" }}>Something hiccupped</h1>
+        <p style={{ color: "var(--ink-2, #6b7280)", fontSize: 15, lineHeight: 1.6, margin: "0 0 20px" }}>
+          A page didn’t load right — your saved progress is safe. Try reloading or head back to the homepage.
+        </p>
+        <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap" }}>
+          <button onClick={() => window.location.reload()} style={{ background: "var(--accent, #4F46E5)", color: "#fff", border: 0, borderRadius: 10, padding: "12px 22px", fontSize: 15, fontWeight: 700, cursor: "pointer" }}>Reload</button>
+          <button onClick={goHome} style={{ background: "transparent", color: "var(--accent, #4F46E5)", border: "1px solid var(--accent, #4F46E5)", borderRadius: 10, padding: "12px 22px", fontSize: 15, fontWeight: 700, cursor: "pointer" }}>Go to homepage</button>
+        </div>
+      </div>
+    );
+  }
+}
+
+// Mount inside a try/catch so even a catastrophic init failure leaves the static
+// boot-watchdog (in index.html) to show its recovery card rather than a blank page.
+try {
+  ReactDOM.createRoot(document.getElementById("root")).render(
+    <LPErrorBoundary><App /></LPErrorBoundary>
+  );
+} catch (e) {
+  try { console.error("[LandingPrep] fatal mount error:", e); } catch (_) {}
+}

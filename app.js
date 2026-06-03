@@ -415,4 +415,43 @@ function App() {
   }
   return /* @__PURE__ */ React.createElement(React.Fragment, null, content, window.LP_ChatbotWidget && /* @__PURE__ */ React.createElement(window.LP_ChatbotWidget, null));
 }
-ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(App, null));
+class LPErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { err: null };
+  }
+  static getDerivedStateFromError(err) {
+    return { err };
+  }
+  componentDidCatch(err, info) {
+    try {
+      if (window.gtag) window.gtag("event", "exception", { description: ("render:" + (err && err.message || err)).slice(0, 150), fatal: false });
+    } catch (e) {
+    }
+    try {
+      console.error("[LandingPrep] render error:", err, info && info.componentStack);
+    } catch (e) {
+    }
+  }
+  render() {
+    if (!this.state.err) return this.props.children;
+    const goHome = () => {
+      try {
+        window.location.hash = "#/";
+      } catch (e) {
+      }
+      window.location.reload();
+    };
+    return /* @__PURE__ */ React.createElement("div", { style: { maxWidth: 480, margin: "16vh auto", padding: 28, textAlign: "center", fontFamily: "system-ui, Arial, sans-serif" } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 44 } }, "\u{1F6DF}"), /* @__PURE__ */ React.createElement("h1", { style: { fontSize: 23, margin: "12px 0 6px", color: "var(--ink, #1f2937)" } }, "Something hiccupped"), /* @__PURE__ */ React.createElement("p", { style: { color: "var(--ink-2, #6b7280)", fontSize: 15, lineHeight: 1.6, margin: "0 0 20px" } }, "A page didn\u2019t load right \u2014 your saved progress is safe. Try reloading or head back to the homepage."), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("button", { onClick: () => window.location.reload(), style: { background: "var(--accent, #4F46E5)", color: "#fff", border: 0, borderRadius: 10, padding: "12px 22px", fontSize: 15, fontWeight: 700, cursor: "pointer" } }, "Reload"), /* @__PURE__ */ React.createElement("button", { onClick: goHome, style: { background: "transparent", color: "var(--accent, #4F46E5)", border: "1px solid var(--accent, #4F46E5)", borderRadius: 10, padding: "12px 22px", fontSize: 15, fontWeight: 700, cursor: "pointer" } }, "Go to homepage")));
+  }
+}
+try {
+  ReactDOM.createRoot(document.getElementById("root")).render(
+    /* @__PURE__ */ React.createElement(LPErrorBoundary, null, /* @__PURE__ */ React.createElement(App, null))
+  );
+} catch (e) {
+  try {
+    console.error("[LandingPrep] fatal mount error:", e);
+  } catch (_) {
+  }
+}
