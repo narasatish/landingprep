@@ -42,9 +42,22 @@
     {
       "id": "pte-reading-035-fib",
       "questionType": "fill_in_blanks",
-      "passage": "Evidence suggests that Space Exploration Commercialisation has a __1[significant|negligible|unproven|superficial]__ impact on contemporary society. Early research was __2[hampered|accelerated|simplified|ignored]__ by limited data availability. More recent studies have __3[confirmed|denied|complicated|trivialised]__ key hypotheses. Policymakers face increasing __4[pressure|freedom|immunity|incentive]__ to respond effectively.",
-      "explanation": "Select the most contextually appropriate word for each blank.",
-      "prompt": "Read the text about the history of written language development and drag words from the box below into the correct gaps in the passage."
+      "topic": "Renewable energy",
+      "prompt": "Read the text about renewable energy and select the correct word for each blank from the dropdown list.",
+      "passage": "Renewable sources such as wind and solar power are increasingly used to __1[generate|consume|waste]__ electricity. Unlike fossil fuels, they produce very few __2[emissions|profits|machines]__ and will not run out. Their main __3[limitation|advantage|purpose]__ is that output varies with the weather, so engineers are developing better ways to __4[store|burn|sell]__ the energy they produce.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "correctAnswers": [
+        "generate",
+        "emissions",
+        "limitation",
+        "store"
+      ],
+      "explanation": "The blanks are completed, in order, with: generate, emissions, limitation, store. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
       "id": "pte-reading-035-reorder",
@@ -129,7 +142,8 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-035-q06"
+      "id": "pte-reading-035-q06",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "reading_writing_fill_blanks",
@@ -143,7 +157,8 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-035-q07"
+      "id": "pte-reading-035-q07",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "reading_writing_fill_blanks",
@@ -157,7 +172,8 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-035-q08"
+      "id": "pte-reading-035-q08",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "reading_writing_fill_blanks",
@@ -171,52 +187,68 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-035-q09"
+      "id": "pte-reading-035-q09",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
+      "id": "pte-reading-035-q10",
       "questionType": "fill_in_blanks",
-      "correctAnswer": "refer to passage",
-      "difficulty": "medium",
-      "topic": "academic",
-      "prompt": "Read the passage about the role of gut bacteria in mental health and drag the words from the box into the correct gaps in the text.",
-      "wordBank": [
-        "critical",
-        "significant",
-        "established",
-        "demonstrated",
-        "revealed"
+      "topic": "Coral reefs",
+      "prompt": "Read the text about coral reefs and select the correct word for each blank from the dropdown list.",
+      "passage": "Coral reefs are among the most __1[diverse|barren|silent]__ ecosystems on the planet, supporting thousands of species. The corals themselves rely on tiny algae that live in their tissues and __2[provide|steal|block]__ food through photosynthesis. When ocean temperatures rise too high, the corals expel these algae and __3[bleach|grow|migrate]__, a process that can be __4[fatal|helpful|temporary]__ if it lasts too long.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
       ],
-      "id": "pte-reading-035-q10"
+      "correctAnswers": [
+        "diverse",
+        "provide",
+        "bleach",
+        "fatal"
+      ],
+      "explanation": "The blanks are completed, in order, with: diverse, provide, bleach, fatal. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
+      "id": "pte-reading-035-q11",
       "questionType": "fill_in_blanks",
-      "correctAnswer": "refer to passage",
-      "difficulty": "medium",
-      "topic": "academic",
-      "prompt": "Read the passage about the development of international trade law and drag the words from the box into the correct gaps in the text.",
-      "wordBank": [
-        "critical",
-        "significant",
-        "established",
-        "demonstrated",
-        "revealed"
+      "topic": "The printing press",
+      "prompt": "Read the text about the printing press and select the correct word for each blank from the dropdown list.",
+      "passage": "The invention of the printing press in the fifteenth century __1[transformed|delayed|hid]__ the spread of information. Before it, books were copied by hand, making them rare and __2[expensive|colourful|short]__. Printing allowed identical copies to be produced __3[quickly|secretly|poorly]__ and cheaply, which helped ideas spread across Europe and __4[accelerated|prevented|reversed]__ the growth of literacy.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
       ],
-      "id": "pte-reading-035-q11"
+      "correctAnswers": [
+        "transformed",
+        "expensive",
+        "quickly",
+        "accelerated"
+      ],
+      "explanation": "The blanks are completed, in order, with: transformed, expensive, quickly, accelerated. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
+      "id": "pte-reading-035-q12",
       "questionType": "fill_in_blanks",
-      "correctAnswer": "refer to passage",
-      "difficulty": "medium",
-      "topic": "academic",
-      "prompt": "Read the passage about advances in battery technology for electric vehicles and drag the words from the box into the correct gaps in the text.",
-      "wordBank": [
-        "critical",
-        "significant",
-        "established",
-        "demonstrated",
-        "revealed"
+      "topic": "Urban planning",
+      "prompt": "Read the text about urban planning and select the correct word for each blank from the dropdown list.",
+      "passage": "Good urban planning aims to make cities both functional and __1[livable|crowded|distant]__. Planners try to balance housing, transport and green space so that residents can move around __2[easily|rarely|blindly]__. Well-designed public spaces also __3[encourage|prevent|ignore]__ social interaction, while sensible zoning reduces pollution and helps a city grow in a __4[sustainable|sudden|hidden]__ way.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
       ],
-      "id": "pte-reading-035-q12"
+      "correctAnswers": [
+        "livable",
+        "easily",
+        "encourage",
+        "sustainable"
+      ],
+      "explanation": "The blanks are completed, in order, with: livable, easily, encourage, sustainable. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
       "questionType": "reorder_paragraphs",
@@ -230,7 +262,8 @@
         "C. Finally, approved products are distributed to end users.",
         "D. Raw materials are then processed using specialised machinery."
       ],
-      "id": "pte-reading-035-q13"
+      "id": "pte-reading-035-q13",
+      "explanation": "The correct answer is “A, D, B, C” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "multiple_choice_multiple",
@@ -245,7 +278,8 @@
         "D. Improved water quality downstream",
         "E. Soil erosion and land degradation"
       ],
-      "id": "pte-reading-035-q14"
+      "id": "pte-reading-035-q14",
+      "explanation": "The correct answer is “A, E” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "multiple_choice_single",
@@ -259,7 +293,8 @@
         "C. To compare two opposing scientific theories",
         "D. To demonstrate that technological progress is inevitable"
       ],
-      "id": "pte-reading-035-q15"
+      "id": "pte-reading-035-q15",
+      "explanation": "The correct answer is “B” — it is the option directly supported by the passage."
     }
   ]
 }

@@ -42,9 +42,22 @@
     {
       "id": "pte-reading-038-fib",
       "questionType": "fill_in_blanks",
-      "passage": "Evidence suggests that The Neuroscience of Creativity has a __1[significant|negligible|unproven|superficial]__ impact on contemporary society. Early research was __2[hampered|accelerated|simplified|ignored]__ by limited data availability. More recent studies have __3[confirmed|denied|complicated|trivialised]__ key hypotheses. Policymakers face increasing __4[pressure|freedom|immunity|incentive]__ to respond effectively.",
-      "explanation": "Select the most contextually appropriate word for each blank.",
-      "prompt": "Read the text about innovations in medical imaging technology and drag words from the box below into the correct gaps in the passage."
+      "topic": "Antibiotic resistance",
+      "prompt": "Read the text about antibiotic resistance and select the correct word for each blank from the dropdown list.",
+      "passage": "Bacteria can develop resistance when antibiotics are used too __1[frequently|rarely|carefully]__. The few bacteria that survive a treatment pass on their resistant genes, so the population gradually becomes harder to __2[treat|count|observe]__. To slow this trend, doctors are urged to __3[prescribe|abandon|hide]__ antibiotics only when necessary, and patients should always __4[complete|shorten|skip]__ the full course.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "correctAnswers": [
+        "frequently",
+        "treat",
+        "prescribe",
+        "complete"
+      ],
+      "explanation": "The blanks are completed, in order, with: frequently, treat, prescribe, complete. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
       "id": "pte-reading-038-reorder",
@@ -129,7 +142,8 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-038-q06"
+      "id": "pte-reading-038-q06",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "reading_writing_fill_blanks",
@@ -143,7 +157,8 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-038-q07"
+      "id": "pte-reading-038-q07",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "reading_writing_fill_blanks",
@@ -157,7 +172,8 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-038-q08"
+      "id": "pte-reading-038-q08",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "reading_writing_fill_blanks",
@@ -171,52 +187,68 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-038-q09"
+      "id": "pte-reading-038-q09",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
+      "id": "pte-reading-038-q10",
       "questionType": "fill_in_blanks",
-      "correctAnswer": "refer to passage",
-      "difficulty": "medium",
-      "topic": "academic",
-      "prompt": "Read the passage about tectonic plate movement and earthquake prediction and drag the words from the box into the correct gaps in the text.",
-      "wordBank": [
-        "critical",
-        "significant",
-        "established",
-        "demonstrated",
-        "revealed"
+      "topic": "Supply and demand",
+      "prompt": "Read the text about supply and demand and select the correct word for each blank from the dropdown list.",
+      "passage": "In a market economy, prices are largely determined by supply and demand. When a product becomes __1[scarce|common|invisible]__ but many people want it, its price tends to __2[rise|vanish|freeze]__. Conversely, if supply __3[exceeds|equals|ignores]__ demand, sellers often lower prices to attract buyers. This balance helps allocate resources __4[efficiently|randomly|secretly]__ across the economy.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
       ],
-      "id": "pte-reading-038-q10"
+      "correctAnswers": [
+        "scarce",
+        "rise",
+        "exceeds",
+        "efficiently"
+      ],
+      "explanation": "The blanks are completed, in order, with: scarce, rise, exceeds, efficiently. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
+      "id": "pte-reading-038-q11",
       "questionType": "fill_in_blanks",
-      "correctAnswer": "refer to passage",
-      "difficulty": "medium",
-      "topic": "academic",
-      "prompt": "Read the passage about carbon sequestration in tropical rainforests and drag the words from the box into the correct gaps in the text.",
-      "wordBank": [
-        "critical",
-        "significant",
-        "established",
-        "demonstrated",
-        "revealed"
+      "topic": "Memory and recall",
+      "prompt": "Read the text about memory and recall and select the correct word for each blank from the dropdown list.",
+      "passage": "Psychologists distinguish between short-term and long-term memory. Information is first held __1[briefly|forever|silently]__ in short-term memory, where it can be lost within seconds unless it is __2[rehearsed|deleted|ignored]__. Through repetition and meaning, some memories are __3[transferred|returned|hidden]__ to long-term storage. Retrieving them later is easier when they are linked to __4[existing|random|empty]__ knowledge.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
       ],
-      "id": "pte-reading-038-q11"
+      "correctAnswers": [
+        "briefly",
+        "rehearsed",
+        "transferred",
+        "existing"
+      ],
+      "explanation": "The blanks are completed, in order, with: briefly, rehearsed, transferred, existing. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
+      "id": "pte-reading-038-q12",
       "questionType": "fill_in_blanks",
-      "correctAnswer": "refer to passage",
-      "difficulty": "medium",
-      "topic": "academic",
-      "prompt": "Read the passage about the cultural significance of oral storytelling traditions and drag the words from the box into the correct gaps in the text.",
-      "wordBank": [
-        "critical",
-        "significant",
-        "established",
-        "demonstrated",
-        "revealed"
+      "topic": "Renewable energy",
+      "prompt": "Read the text about renewable energy and select the correct word for each blank from the dropdown list.",
+      "passage": "Renewable sources such as wind and solar power are increasingly used to __1[generate|consume|waste]__ electricity. Unlike fossil fuels, they produce very few __2[emissions|profits|machines]__ and will not run out. Their main __3[limitation|advantage|purpose]__ is that output varies with the weather, so engineers are developing better ways to __4[store|burn|sell]__ the energy they produce.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
       ],
-      "id": "pte-reading-038-q12"
+      "correctAnswers": [
+        "generate",
+        "emissions",
+        "limitation",
+        "store"
+      ],
+      "explanation": "The blanks are completed, in order, with: generate, emissions, limitation, store. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
       "questionType": "reorder_paragraphs",
@@ -230,7 +262,8 @@
         "C. Finally, approved products are distributed to end users.",
         "D. Raw materials are then processed using specialised machinery."
       ],
-      "id": "pte-reading-038-q13"
+      "id": "pte-reading-038-q13",
+      "explanation": "The correct answer is “A, D, B, C” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "multiple_choice_multiple",
@@ -245,7 +278,8 @@
         "D. Improved water quality downstream",
         "E. Soil erosion and land degradation"
       ],
-      "id": "pte-reading-038-q14"
+      "id": "pte-reading-038-q14",
+      "explanation": "The correct answer is “A, E” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "multiple_choice_single",
@@ -259,7 +293,8 @@
         "C. To compare two opposing scientific theories",
         "D. To demonstrate that technological progress is inevitable"
       ],
-      "id": "pte-reading-038-q15"
+      "id": "pte-reading-038-q15",
+      "explanation": "The correct answer is “B” — it is the option directly supported by the passage."
     }
   ]
 }

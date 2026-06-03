@@ -42,9 +42,22 @@
     {
       "id": "pte-reading-057-fib",
       "questionType": "fill_in_blanks",
-      "passage": "Evidence suggests that Coral Reef Restoration has a __1[significant|negligible|unproven|superficial]__ impact on contemporary society. Early research was __2[hampered|accelerated|simplified|ignored]__ by limited data availability. More recent studies have __3[confirmed|denied|complicated|trivialised]__ key hypotheses. Policymakers face increasing __4[pressure|freedom|immunity|incentive]__ to respond effectively.",
-      "explanation": "Select the most contextually appropriate word for each blank.",
-      "prompt": "Read the text about the science of materials under extreme conditions and drag words from the box below into the correct gaps in the passage."
+      "topic": "Plate tectonics",
+      "prompt": "Read the text about plate tectonics and select the correct word for each blank from the dropdown list.",
+      "passage": "The Earth's outer shell is divided into rigid plates that move slowly over a __1[plastic|liquid|frozen]__ layer of the mantle. Where two plates __2[collide|vanish|reverse]__, one may slide beneath the other, forming deep trenches. This continuous motion gradually __3[reshapes|destroys|ignores]__ the surface, building mountains and triggering earthquakes over millions of __4[years|seconds|metres]__.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "correctAnswers": [
+        "plastic",
+        "collide",
+        "reshapes",
+        "years"
+      ],
+      "explanation": "The blanks are completed, in order, with: plastic, collide, reshapes, years. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
       "id": "pte-reading-057-reorder",
@@ -129,7 +142,8 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-057-q06"
+      "id": "pte-reading-057-q06",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "reading_writing_fill_blanks",
@@ -143,7 +157,8 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-057-q07"
+      "id": "pte-reading-057-q07",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "reading_writing_fill_blanks",
@@ -157,7 +172,8 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-057-q08"
+      "id": "pte-reading-057-q08",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "reading_writing_fill_blanks",
@@ -171,52 +187,68 @@
         "C. however",
         "D. moreover"
       ],
-      "id": "pte-reading-057-q09"
+      "id": "pte-reading-057-q09",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
+      "id": "pte-reading-057-q10",
       "questionType": "fill_in_blanks",
-      "correctAnswer": "refer to passage",
-      "difficulty": "medium",
-      "topic": "academic",
-      "prompt": "Read the passage about the development of international trade law and drag the words from the box into the correct gaps in the text.",
-      "wordBank": [
-        "critical",
-        "significant",
-        "established",
-        "demonstrated",
-        "revealed"
+      "topic": "Photosynthesis",
+      "prompt": "Read the text about photosynthesis and select the correct word for each blank from the dropdown list.",
+      "passage": "Plants convert sunlight into chemical energy through a process __1[known|hidden|opposed]__ as photosynthesis. Inside the leaves, chlorophyll __2[absorbs|reflects|emits]__ light and uses it to combine carbon dioxide and water. The result is glucose, which stores energy, and oxygen, which is __3[released|consumed|trapped]__ into the air. This reaction is __4[fundamental|harmful|optional]__ to almost all life on Earth.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
       ],
-      "id": "pte-reading-057-q10"
+      "correctAnswers": [
+        "known",
+        "absorbs",
+        "released",
+        "fundamental"
+      ],
+      "explanation": "The blanks are completed, in order, with: known, absorbs, released, fundamental. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
+      "id": "pte-reading-057-q11",
       "questionType": "fill_in_blanks",
-      "correctAnswer": "refer to passage",
-      "difficulty": "medium",
-      "topic": "academic",
-      "prompt": "Read the passage about advances in battery technology for electric vehicles and drag the words from the box into the correct gaps in the text.",
-      "wordBank": [
-        "critical",
-        "significant",
-        "established",
-        "demonstrated",
-        "revealed"
+      "topic": "The water cycle",
+      "prompt": "Read the text about the water cycle and select the correct word for each blank from the dropdown list.",
+      "passage": "Water moves continuously between the oceans, atmosphere and land in a process called the water cycle. Heat from the sun causes surface water to __1[evaporate|freeze|settle]__ and rise as vapour. As it cools, the vapour __2[condenses|expands|burns]__ into clouds, and eventually falls back as __3[precipitation|radiation|sediment]__. Rivers then return this water to the sea, and the cycle __4[repeats|stops|reverses]__.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
       ],
-      "id": "pte-reading-057-q11"
+      "correctAnswers": [
+        "evaporate",
+        "condenses",
+        "precipitation",
+        "repeats"
+      ],
+      "explanation": "The blanks are completed, in order, with: evaporate, condenses, precipitation, repeats. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
+      "id": "pte-reading-057-q12",
       "questionType": "fill_in_blanks",
-      "correctAnswer": "refer to passage",
-      "difficulty": "medium",
-      "topic": "academic",
-      "prompt": "Read the passage about the effects of microplastics on marine ecosystems and drag the words from the box into the correct gaps in the text.",
-      "wordBank": [
-        "critical",
-        "significant",
-        "established",
-        "demonstrated",
-        "revealed"
+      "topic": "Antibiotic resistance",
+      "prompt": "Read the text about antibiotic resistance and select the correct word for each blank from the dropdown list.",
+      "passage": "Bacteria can develop resistance when antibiotics are used too __1[frequently|rarely|carefully]__. The few bacteria that survive a treatment pass on their resistant genes, so the population gradually becomes harder to __2[treat|count|observe]__. To slow this trend, doctors are urged to __3[prescribe|abandon|hide]__ antibiotics only when necessary, and patients should always __4[complete|shorten|skip]__ the full course.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
       ],
-      "id": "pte-reading-057-q12"
+      "correctAnswers": [
+        "frequently",
+        "treat",
+        "prescribe",
+        "complete"
+      ],
+      "explanation": "The blanks are completed, in order, with: frequently, treat, prescribe, complete. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
     },
     {
       "questionType": "reorder_paragraphs",
@@ -230,7 +262,8 @@
         "C. Finally, approved products are distributed to end users.",
         "D. Raw materials are then processed using specialised machinery."
       ],
-      "id": "pte-reading-057-q13"
+      "id": "pte-reading-057-q13",
+      "explanation": "The correct answer is “A, D, B, C” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "multiple_choice_multiple",
@@ -245,7 +278,8 @@
         "D. Improved water quality downstream",
         "E. Soil erosion and land degradation"
       ],
-      "id": "pte-reading-057-q14"
+      "id": "pte-reading-057-q14",
+      "explanation": "The correct answer is “A, E” — it is the option directly supported by the passage/recording; the others are not."
     },
     {
       "questionType": "multiple_choice_single",
@@ -259,7 +293,8 @@
         "C. To compare two opposing scientific theories",
         "D. To demonstrate that technological progress is inevitable"
       ],
-      "id": "pte-reading-057-q15"
+      "id": "pte-reading-057-q15",
+      "explanation": "The correct answer is “B” — it is the option directly supported by the passage."
     }
   ]
 }
