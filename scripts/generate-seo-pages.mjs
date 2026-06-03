@@ -1745,7 +1745,13 @@ function hubPage(path, title, desc, kw, sections) {
 <h1>${esc(title)}</h1><p class="lead">${esc(desc)}</p></section>
 ${sections.filter((s) => s.links.length).map((s) => `<div class="card"><h2>${esc(s.h)}</h2><div class="grid">${s.links.map((l) => `<a class="tile" href="${l.href}">${esc(l.label)}</a>`).join("")}</div></div>`).join("")}
 <div class="card"><h2>More free LandingPrep hubs</h2><div class="grid">${HUB_LINKS.filter((h) => h.href !== path).map((h) => `<a class="tile" href="${h.href}">${esc(h.label)}</a>`).join("")}</div></div>`;
-  emit(path, head({ title: `${title} (2026) | ${BRAND}`, desc, path, kw, jsonLdBlocks: [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: title, path }])] }) + shell(inner));
+  // ItemList structured data → eligible for list/carousel treatment in search results.
+  const allLinks = sections.flatMap((s) => s.links);
+  const itemList = jsonld({
+    "@context": "https://schema.org", "@type": "ItemList", name: title, numberOfItems: allLinks.length,
+    itemListElement: allLinks.slice(0, 100).map((l, i) => ({ "@type": "ListItem", position: i + 1, url: ORIGIN + l.href, name: l.label })),
+  });
+  emit(path, head({ title: `${title} (2026) | ${BRAND}`, desc, path, kw, jsonLdBlocks: [itemList, breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: title, path }])] }) + shell(inner));
   return sections.flatMap((s) => s.links.map((l) => l.href));
 }
 function buildHubs() {
@@ -1778,11 +1784,33 @@ function buildHubs() {
 }
 buildHubs();
 
-// Write files
+// ── Honest <lastmod> ───────────────────────────────────────────────────────────
+// Google ignores (and can distrust) sitemaps that stamp every URL with "today" on
+// every build. So we only advance a page's lastmod when its rendered HTML actually
+// changed: diff the new HTML against the on-disk copy BEFORE overwriting, and reuse
+// the previous lastmod (read back from the existing sitemap) for unchanged pages.
+const BUILD_DATE = (() => { try { return new Date().toISOString().slice(0, 10); } catch (e) { return TODAY; } })();
+const PRIOR_LASTMOD = (() => {
+  const map = new Map();
+  try {
+    const xml = readFileSync(join(ROOT, "sitemap.xml"), "utf8");
+    const re = /<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g;
+    let m; while ((m = re.exec(xml))) map.set(m[1].trim(), m[2].trim());
+  } catch (e) { /* first run — no prior sitemap */ }
+  return map;
+})();
+const lastmodFor = new Map();
+
+// Write files (capturing change status before overwriting)
 PAGES.forEach(({ path, html }) => {
   const dir = join(ROOT, path);
+  const file = join(dir, "index.html");
+  let changed = true;
+  try { changed = readFileSync(file, "utf8") !== html; } catch (e) { changed = true; /* new page */ }
+  const loc = ORIGIN + path;
+  lastmodFor.set(loc, changed ? BUILD_DATE : (PRIOR_LASTMOD.get(loc) || BUILD_DATE));
   mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, "index.html"), html);
+  writeFileSync(file, html);
 });
 
 // Sitemap
@@ -1790,11 +1818,13 @@ const urls = [
   { loc: `${ORIGIN}/`, freq: "daily", pri: "1.0" },
   ...PAGES.map((p) => ({ loc: ORIGIN + p.path, freq: "weekly", pri: "0.8" })),
 ];
+// The SPA homepage ships a fresh build every deploy, so it legitimately changes.
+lastmodFor.set(`${ORIGIN}/`, BUILD_DATE);
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls.map((u) => `  <url>
     <loc>${u.loc}</loc>
-    <lastmod>${TODAY}</lastmod>
+    <lastmod>${lastmodFor.get(u.loc) || BUILD_DATE}</lastmod>
     <changefreq>${u.freq}</changefreq>
     <priority>${u.pri}</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="${u.loc}"/>
