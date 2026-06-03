@@ -1,0 +1,16 @@
+import fs from "fs";
+const b = JSON.parse(fs.readFileSync("content/pte/listening-bank.json", "utf8"));
+const errs = [];
+const chk = (pool, fn) => (b[pool] || []).forEach((it, i) => { const e = fn(it); if (e) errs.push(`${pool}[${i}]: ${e}`); });
+const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+console.log("pool counts:", Object.fromEntries(Object.entries(b).map(([k, v]) => [k, v.length])));
+chk("mcm", (it) => it.correctAnswers.some((a) => !it.options.includes(a)) ? "ans not in options" : (it.options.length !== 5 ? "opts!=5" : null));
+chk("hcs", (it) => !it.options.includes(it.correctAnswer) ? "ans not in options" : (it.options.length !== 3 ? "opts!=3" : null));
+chk("mcs", (it) => !it.options.includes(it.correctAnswer) ? "ans not in options" : (it.options.length !== 4 ? "opts!=4" : null));
+chk("smw", (it) => !it.options.includes(it.correctAnswer) ? "ans not in options" : null);
+chk("fib", (it) => ((it.transcript.match(/__\d+__/g) || []).length !== 3 || it.correctAnswers.length !== 3) ? "blank/ans count != 3" : null);
+chk("hiw", (it) => it.incorrectWords.length !== it.correctWords.length ? "len mismatch" : (it.incorrectWords.some((w) => !new RegExp("\\b" + esc(w) + "\\b").test(it.displayTranscript)) ? "incorrectWord not in displayTranscript" : null));
+chk("wfd", (it) => it.correctAnswer !== it.audioScript ? "wfd answer != audio" : null);
+chk("sst", (it) => (!it.modelAnswer || !it.audioScript) ? "missing fields" : null);
+console.log(errs.length ? "ERRORS:\n" + errs.join("\n") : "OK bank validation passed — all answer/format/length rules hold");
+process.exit(errs.length ? 1 : 0);

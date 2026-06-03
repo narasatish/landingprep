@@ -3,248 +3,288 @@
   "exam": "pte",
   "section": "listening",
   "type": "section",
-  "title": "PTE Academic Listening Practice Test 15",
-  "topic": "Water Security in the 21st Century",
-  "durationSeconds": 2700,
+  "title": "PTE Academic Listening — Practice Test 15",
+  "topic": "Mixed academic topics (one per item, as in the real test)",
+  "durationSeconds": 2400,
   "questionCount": 17,
-  "instructions": "Listen to the audio for each item and respond according to the question type. In the real PTE exam you hear actual audio; here the transcript is shown for study purposes.",
+  "instructions": "Each item has its own recording. Audio plays automatically when you reach an item.",
   "questions": [
     {
-      "id": "pte-listening-015-q001",
+      "id": "pte-listening-015-q1",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 1. You will hear a short lecture about Water Security in the 21st Century. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "topic": "Water Security in the 21st Century",
+      "topic": "Coral Bleaching and Ocean Temperatures",
+      "prompt": "Item 1: Coral Bleaching and Ocean Temperatures",
+      "audioScript": "Coral bleaching occurs when seawater temperatures rise above normal levels, causing corals to expel their symbiotic algae. This symbiosis provides corals with nutrients through photosynthesis. Recent data shows that even a one-degree Celsius increase can trigger bleaching events. The Great Barrier Reef experienced severe bleaching in 2016 and 2020. Scientists attribute this to climate change and rising ocean temperatures. Recovery is possible if temperatures stabilize within weeks.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into Water Security in the 21st Century reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Coral bleaching happens when water temperatures rise, causing corals to lose their symbiotic algae. Even minimal temperature increases trigger bleaching events. The Great Barrier Reef suffered severe bleaching recently due to climate change, though recovery is possible if temperatures stabilize quickly.",
+      "explanation": "",
+      "questionNumber": 1
     },
     {
-      "id": "pte-listening-015-q002",
+      "id": "pte-listening-015-q2",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 2. You will hear a short lecture about Water Security in the 21st Century — Key Dimensions. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "topic": "Water Security in the 21st Century — Key Dimensions",
+      "topic": "Ancient Roman Aqueduct Engineering",
+      "prompt": "Item 2: Ancient Roman Aqueduct Engineering",
+      "audioScript": "Roman aqueducts were masterpieces of civil engineering, carrying water across hundreds of kilometers to supply cities. The longest aqueduct, Aqua Claudia, stretched 68 kilometers, though only 16 were elevated on arches. Romans used gravity to move water downhill, maintaining a slight slope of about 0.3 percent. Lead pipes transported water into homes, a practice later recognized as toxic. These structures demonstrate remarkable architectural knowledge and mathematical precision that lasted for centuries.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into Water Security in the 21st Century — Key Dimensions reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Roman aqueducts transported water across vast distances using gravity and innovative engineering. The Aqua Claudia extended 68 kilometers with arches supporting only the elevated sections. Romans maintained precise slopes and used lead pipes, later found hazardous. These structures showcase exceptional mathematical and architectural skill that persisted for centuries.",
+      "explanation": "",
+      "questionNumber": 2
     },
     {
-      "id": "pte-listening-015-q003",
+      "id": "pte-listening-015-q3",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "Which TWO of the following points does the speaker make about Water Security in the 21st Century?",
+      "topic": "Renaissance Humanism and Cultural Shift",
+      "audioScript": "Renaissance humanism emphasized individual potential and classical learning. Scholars studied ancient Greek and Roman texts to rediscover forgotten knowledge. Humanism valued critical thinking and empirical observation over pure faith. Leonardo da Vinci exemplified Renaissance ideals through art, science, and engineering. The printing press enabled rapid dissemination of humanistic ideas. Patronage by wealthy families supported artists and scholars. This intellectual movement challenged medieval worldviews and laid groundwork for the Scientific Revolution.",
+      "question": "According to the speaker, which TWO aspects of Renaissance humanism are accurate?",
       "options": [
-        "Water Security in the 21st Century involves complex interactions that cannot be explained by single-factor models",
-        "Early research in this field was conducted entirely by natural scientists",
-        "The economic costs of failing to address this topic are estimated to be very high",
-        "International agreements have fully resolved the challenges in this area",
-        "Digital data collection has transformed the research landscape in this field"
+        "It rejected all classical learning",
+        "It valued critical thinking and observation",
+        "It relied exclusively on religious faith",
+        "The printing press spread humanistic ideas",
+        "Medieval traditions remained unchanged"
       ],
       "correctAnswers": [
-        "Water Security in the 21st Century involves complex interactions that cannot be explained by single-factor models",
-        "The economic costs of failing to address this topic are estimated to be very high"
+        "It valued critical thinking and observation",
+        "The printing press spread humanistic ideas"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker states humanism valued critical thinking and empirical observation, and explicitly mentions the printing press's role in disseminating ideas.",
+      "prompt": "Item 3: Renaissance Humanism and Cultural Shift",
+      "questionNumber": 3
     },
     {
-      "id": "pte-listening-015-q004",
+      "id": "pte-listening-015-q4",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "Which TWO statements accurately reflect what the speaker says about responses to Water Security in the 21st Century?",
+      "topic": "Photosynthesis Efficiency and Carbon Fixation",
+      "audioScript": "Photosynthesis converts light energy into chemical energy stored in glucose. The process occurs in two main stages: light-dependent reactions in the thylakoid and light-independent reactions in the stroma. During light reactions, chlorophyll absorbs photons, splitting water and releasing oxygen. Light-independent reactions, or the Calvin cycle, fix carbon dioxide into glucose. Only about 1-2 percent of incident light energy converts to plant biomass. Factors like light intensity, carbon dioxide concentration, and temperature affect photosynthetic rate.",
+      "question": "According to the speaker, which TWO statements accurately describe photosynthesis?",
       "options": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "All international agreements related to this topic have been fully implemented",
-        "Better monitoring technology is increasingly available and affordable",
-        "The research community in this field is competitive and unwelcoming to newcomers",
-        "Real-world stakes in this field are considered minor by most researchers"
+        "Photosynthesis occurs entirely in the stroma",
+        "Chlorophyll absorbs photons during light reactions",
+        "Carbon dioxide is fixed in the Calvin cycle",
+        "Photosynthesis achieves 50 percent energy conversion",
+        "Oxygen is produced from carbon dioxide splitting"
       ],
       "correctAnswers": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "Better monitoring technology is increasingly available and affordable"
+        "Chlorophyll absorbs photons during light reactions",
+        "Carbon dioxide is fixed in the Calvin cycle"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker correctly describes light reactions involving chlorophyll and photons, and mentions the Calvin cycle for carbon fixation.",
+      "prompt": "Item 4: Photosynthesis Efficiency and Carbon Fixation",
+      "questionNumber": 4
     },
     {
-      "id": "pte-listening-015-q005",
+      "id": "pte-listening-015-q5",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Question 5. You will hear a recording about Water Security in the 21st Century. Type the missing word in each numbered blank as you listen.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "The study of Water Security in the 21st Century demonstrates that __1__ interactions between multiple systems drive observed outcomes. Researchers have consistently found that __2__ explanations fail to account for real-world patterns. The international dimension is critical because Water Security in the 21st Century does not respect __3__ borders.",
+      "topic": "Solar Energy and Photovoltaic Technology",
+      "prompt": "Item 5: Solar Energy and Photovoltaic Technology",
+      "audioScript": "Solar photovoltaic cells convert light energy directly into electricity through the photovoltaic effect. Silicon-based cells dominate commercial production due to abundance and established manufacturing processes. An individual cell produces a small voltage, so cells are connected in series to increase output power. Modern solar panels achieve approximately 15-20 percent efficiency in converting incident light to usable electricity, though laboratory prototypes demonstrate higher potential.",
+      "transcript": "Solar photovoltaic cells convert light energy directly into electricity through the __1__ effect. Silicon-based cells dominate commercial production due to abundance and established manufacturing processes. An individual cell produces a small voltage, so cells are connected in __2__ to increase output power. Modern solar panels achieve approximately 15-20 percent efficiency in converting incident light to usable electricity, though laboratory prototypes demonstrate __3__ potential.",
       "correctAnswers": [
-        "complex",
-        "simplistic",
-        "national"
+        "photovoltaic",
+        "series",
+        "higher"
       ],
-      "explanation": "These three words appear verbatim in the audio transcript at the corresponding positions in the transcript shown to the candidate."
+      "explanation": "",
+      "questionNumber": 5
     },
     {
-      "id": "pte-listening-015-q006",
+      "id": "pte-listening-015-q6",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 2). Type the missing word in each blank as you listen to the passage about Water Security in the 21st Century.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "What the evidence consistently shows is that Water Security in the 21st Century involves __1__ interactions between multiple systems. From an economic standpoint, the costs of __2__ in this area are substantial. Looking forward, the trajectory will depend on __3__, political will, and effective communication between scientists and policymakers.",
+      "topic": "Fossils and Paleontological Evidence",
+      "prompt": "Item 6: Fossils and Paleontological Evidence",
+      "audioScript": "Fossils are preserved remains or traces of ancient organisms providing evidence of evolutionary change. Body fossils preserve actual skeletal material, while trace fossils record organism activities like footprints and burrows. Radiometric dating methods measure the decay of radioactive isotopes to determine fossil age. Transitional fossils show intermediate stages between species, such as the famous Archaeopteryx with both reptilian and bird characteristics.",
+      "transcript": "Fossils are preserved remains or traces of ancient organisms providing evidence of __1__ change. Body fossils preserve actual skeletal material, while trace fossils record organism activities like footprints and burrows. Radiometric dating methods measure the decay of radioactive isotopes to determine fossil __2__. Transitional fossils show intermediate stages between species, such as the __3__ Archaeopteryx with both reptilian and bird characteristics.",
       "correctAnswers": [
-        "complex",
-        "inaction",
-        "innovation"
+        "evolutionary",
+        "age",
+        "famous"
       ],
-      "explanation": "These three words appear in the audio at the corresponding blank positions in the transcript."
+      "explanation": "",
+      "questionNumber": 6
     },
     {
-      "id": "pte-listening-015-q007",
+      "id": "pte-listening-015-q7",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 3). Type the missing word in each blank as you listen to the passage about Water Security in the 21st Century.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "The international dimension is also __1__. Water Security in the 21st Century does not respect national borders, which means that coordinated, __2__ responses are necessary. The decisions made in the next ten to fifteen years will determine outcomes for __3__ to come.",
+      "topic": "Enzyme Catalysis and Metabolic Rates",
+      "prompt": "Item 7: Enzyme Catalysis and Metabolic Rates",
+      "audioScript": "Enzymes are biological catalysts accelerating metabolic reactions by lowering activation energy requirements. Each enzyme has an optimal pH and temperature at which maximum activity occurs. Substrate molecules bind to the enzyme's active site, forming a complex that undergoes chemical transformation. Enzyme inhibitors can reduce activity by blocking the active site or interfering with allosteric mechanisms essential for catalysis.",
+      "transcript": "Enzymes are biological catalysts accelerating metabolic reactions by lowering __1__ energy requirements. Each enzyme has an optimal pH and temperature at which maximum activity occurs. Substrate molecules bind to the enzyme's __2__ site, forming a complex that undergoes chemical transformation. Enzyme inhibitors can reduce activity by blocking the active site or interfering with __3__ mechanisms essential for catalysis.",
       "correctAnswers": [
-        "critical",
-        "multilateral",
-        "generations"
+        "activation",
+        "active",
+        "allosteric"
       ],
-      "explanation": "These words are spoken in the audio and correspond to the blanks in the transcript."
+      "explanation": "",
+      "questionNumber": 7
     },
     {
-      "id": "pte-listening-015-q008",
+      "id": "pte-listening-015-q8",
       "questionType": "highlight_correct_summary",
-      "prompt": "Question 8. Listen to the recording about Water Security in the 21st Century, then select the paragraph that best summarises what you heard.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Cardiovascular System Regulation",
+      "prompt": "Item 8: Cardiovascular System Regulation",
+      "audioScript": "The cardiovascular system maintains blood pressure and circulation through regulatory mechanisms. Baroreceptors detect blood pressure changes and signal the brain to adjust heart rate and vessel diameter. The sympathetic nervous system increases heart rate during stress, while the parasympathetic system promotes rest. Hormones like epinephrine regulate cardiovascular responses. These integrated systems maintain homeostasis under varying physiological conditions.",
       "options": [
-        "The lecture/interview discusses Water Security in the 21st Century, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-        "The lecture argues that Water Security in the 21st Century is a minor concern that has been overstated by researchers and that existing policies are already sufficient to address all related challenges.",
-        "The speaker focuses exclusively on the historical background of Water Security in the 21st Century without discussing current evidence, economic dimensions, or policy implications."
+        "The cardiovascular system maintains homeostasis through baroreceptors and nervous system signals that regulate heart rate and vessel diameter.",
+        "Blood pressure regulation occurs automatically without any neural or hormonal input, relying only on mechanical blood flow.",
+        "The sympathetic nervous system exclusively promotes relaxation while parasympathetic activation increases all cardiovascular activity."
       ],
-      "correctAnswer": "The lecture/interview discusses Water Security in the 21st Century, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-      "explanation": "Option A accurately summarises the main themes: complexity, economic stakes, international cooperation, and adaptive management. The other options misrepresent the content."
+      "correctAnswer": "The cardiovascular system maintains homeostasis through baroreceptors and nervous system signals that regulate heart rate and vessel diameter.",
+      "explanation": "The speaker describes baroreceptors detecting pressure changes and nervous system adjustment of heart rate and vessel diameter.",
+      "questionNumber": 8
     },
     {
-      "id": "pte-listening-015-q009",
+      "id": "pte-listening-015-q9",
       "questionType": "highlight_correct_summary",
-      "prompt": "Highlight the correct summary (recording 2). Listen, then select the paragraph that best summarises the talk on Water Security in the 21st Century.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Industrial Biotechnology Applications",
+      "prompt": "Item 9: Industrial Biotechnology Applications",
+      "audioScript": "Biotechnology harnesses microorganisms and enzymes for industrial manufacturing. Fermentation produces ethanol, dairy products, and antibiotics using bacterial or fungal cultures. Enzyme-based processes break down biomass into usable chemicals and fuels. Genetic engineering optimizes organisms for specific production tasks. Bioreactors provide controlled environments maximizing productivity. These processes offer environmentally friendly alternatives to petroleum-based manufacturing.",
       "options": [
-        "The audio emphasises that Water Security in the 21st Century requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-        "The speaker claims that Water Security in the 21st Century is fully understood and that all the major scientific questions in this area have already been resolved by existing research.",
-        "The audio focuses solely on the historical background of Water Security in the 21st Century and does not address any current research findings or policy implications."
+        "Industrial biotechnology uses microorganisms and enzymes in fermentation and genetic engineering to produce chemicals and fuels sustainably.",
+        "Biotechnology relies exclusively on natural microorganisms without modification, making industrial applications impossible to optimize.",
+        "Chemical synthesis from petroleum remains more environmentally friendly than any biotechnological manufacturing process."
       ],
-      "correctAnswer": "The audio emphasises that Water Security in the 21st Century requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-      "explanation": "Option A is the only summary that accurately reflects the audio's discussion of tipping points, the need for adaptive management, and improved monitoring."
+      "correctAnswer": "Industrial biotechnology uses microorganisms and enzymes in fermentation and genetic engineering to produce chemicals and fuels sustainably.",
+      "explanation": "The speaker describes fermentation, enzyme processes, and genetic engineering for sustainable production alternatives.",
+      "questionNumber": 9
     },
     {
-      "id": "pte-listening-015-q010",
+      "id": "pte-listening-015-q10",
       "questionType": "multiple_choice_single",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "According to the audio, what is the key reason why single-factor explanations of Water Security in the 21st Century consistently fail?",
+      "topic": "Photochemical Reactions in Atmosphere",
+      "audioScript": "Photochemical reactions in the stratosphere produce and destroy ozone through light-driven processes. Ultraviolet radiation breaks oxygen molecules into atoms. Two oxygen atoms recombine with an oxygen molecule to form ozone. Ozone absorbs ultraviolet radiation protecting the surface. Chlorofluorocarbons release chlorine atoms when exposed to ultraviolet light. These chlorine atoms catalytically destroy ozone molecules. The ozone hole over Antarctica results from seasonal chlorine release.",
+      "question": "What is the primary mechanism by which chlorofluorocarbons harm the ozone layer?",
       "options": [
-        "Researchers lack sufficient data to test single-factor models",
-        "Water Security in the 21st Century involves complex interactions between multiple interconnected systems",
-        "Single-factor models are too expensive to implement in practice",
-        "Political opposition prevents single-factor explanations from being published"
+        "They directly absorb ultraviolet radiation preventing photochemical reactions",
+        "They release chlorine atoms that catalytically destroy ozone molecules",
+        "They increase the temperature of the stratosphere beyond ozone stability",
+        "They combine with oxygen to form additional ozone, creating excess ultraviolet penetration"
       ],
-      "correctAnswer": "Water Security in the 21st Century involves complex interactions between multiple interconnected systems",
-      "explanation": "The audio explicitly states that simplistic, single-factor explanations fail because the topic involves complex interactions between multiple systems."
+      "correctAnswer": "They release chlorine atoms that catalytically destroy ozone molecules",
+      "explanation": "The speaker explains that chlorine atoms released from CFCs catalytically destroy ozone molecules.",
+      "prompt": "Item 10: Photochemical Reactions in Atmosphere",
+      "questionNumber": 10
     },
     {
-      "id": "pte-listening-015-q011",
+      "id": "pte-listening-015-q11",
       "questionType": "multiple_choice_single",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "According to the audio on Water Security in the 21st Century, what is the key principle for designing effective policies in this field?",
+      "topic": "Ancient Roman Law and Government",
+      "audioScript": "Roman law established principles of justice that influenced Western legal systems. The Twelve Tables, created around 450 BC, codified Roman legal principles. Roman law distinguished between public law governing the state and private law regulating individuals. Legal concepts including contracts, property rights, and due process originated in Rome. The Roman Senate served as the legislative body making laws. Consuls acted as chief executives with military and administrative powers. This system of separated powers influenced modern democratic structures.",
+      "question": "Which aspect of Roman law most directly influenced modern Western legal systems?",
       "options": [
-        "Locking in fixed approaches based on the best current scientific knowledge",
-        "Delegating all policy decisions to international bodies",
-        "Adaptive management — designing policies that can be updated as new evidence emerges",
-        "Prioritising economic growth over scientific caution"
+        "The absence of written legal codes allowing interpretation flexibility",
+        "Principles including contracts, property rights, and due process formalized in codes",
+        "Unlimited executive power without legislative oversight",
+        "Religious courts rather than secular legal institutions"
       ],
-      "correctAnswer": "Adaptive management — designing policies that can be updated as new evidence emerges",
-      "explanation": "The audio explicitly describes adaptive management as the key principle: 'designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches.'"
+      "correctAnswer": "Principles including contracts, property rights, and due process formalized in codes",
+      "explanation": "The speaker describes Roman law's establishment of justice principles like contracts and due process that influenced Western systems.",
+      "prompt": "Item 11: Ancient Roman Law and Government",
+      "questionNumber": 11
     },
     {
-      "id": "pte-listening-015-q012",
+      "id": "pte-listening-015-q12",
       "questionType": "select_missing_word",
-      "prompt": "Question 12. You will hear a recording about Water Security in the 21st Century. At the end, the final words have been replaced by a beep. Select the option that correctly completes the recording.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Climate Change and Rising Sea Levels",
+      "prompt": "Item 12: Climate Change and Rising Sea Levels",
+      "audioScript": "Global temperatures continue rising due to greenhouse gas emissions from human activities. Warming oceans expand thermally, increasing sea level. Melting glaciers and ice sheets contribute additional water to the oceans. Coastal communities face increased flooding threats from rising sea levels. Some island nations risk complete submersion within decades. We must reduce emissions and develop adaptation strategies for inevitable changes.",
       "options": [
-        "come",
-        "start",
-        "forget",
-        "imagine"
+        "adaptation",
+        "mitigation",
+        "prevention",
+        "reversal"
       ],
-      "correctAnswer": "come",
-      "explanation": "The sentence reads '...will determine outcomes for generations to come.' The word 'come' completes the fixed phrase 'for generations to come' which fits the context of the lecture's conclusion."
+      "correctAnswer": "adaptation",
+      "explanation": "The speaker concludes that we need adaptation strategies for inevitable sea level changes.",
+      "questionNumber": 12
     },
     {
-      "id": "pte-listening-015-q013",
+      "id": "pte-listening-015-q13",
       "questionType": "select_missing_word",
-      "prompt": "Select the missing word (recording 2). The final words are replaced by a beep — choose the correct completion for the talk on Water Security in the 21st Century.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Water Security in the 21st Century. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Water Security in the 21st Century involves and why it matters?\n\nExpert: Certainly. Water Security in the 21st Century sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Water Security in the 21st Century changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Personal Learning and Study Strategies",
+      "prompt": "Item 13: Personal Learning and Study Strategies",
+      "audioScript": "Effective learning requires active engagement with material rather than passive reading. Spaced repetition strengthens memory through repeated review across days and weeks. Elaboration connects new information to existing knowledge creating meaningful understanding. Interleaving mixes different topics during study improving discrimination between concepts. Practice problems strengthen skill development. Teaching others forces deep processing of knowledge. The most successful students combine multiple evidence-based study techniques for optimal learning …",
       "options": [
-        "change",
-        "funding",
-        "debate",
-        "history"
+        "outcomes",
+        "achievement",
+        "retention",
+        "understanding"
       ],
-      "correctAnswer": "change",
-      "explanation": "The sentence ends 'too slow relative to the pace of change' — the word 'change' completes the phrase that directly contrasts the pace of policy action with the pace of environmental or systemic change."
+      "correctAnswer": "outcomes",
+      "explanation": "The speaker concludes that combined techniques produce optimal learning outcomes.",
+      "questionNumber": 13
     },
     {
-      "id": "pte-listening-015-q014",
+      "id": "pte-listening-015-q14",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Question 14. Listen to the recording about Water Security in the 21st Century. The transcript below differs from it in several places — click the words that are different from what the speaker says.",
-      "audioScript": "Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Water Security in the 21st Century. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are qualitatively different from anything available before.",
-      "displayTranscript": "Today we are going to examine a topic that has attracted substantial scientific and policy attention in recent years: Water Security in the 21st Century. I want to begin by giving you some scientific context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are fundamentally different from anything available before.",
+      "topic": "Internet and information technology",
+      "prompt": "Item 14: Internet and information technology",
+      "audioScript": "The internet revolutionized communication by connecting computers worldwide into a global network. Packet switching enables data to travel efficiently across multiple routes. Protocols standardize how devices exchange information reliably between distant locations.",
+      "displayTranscript": "The internet revolutionized communication by connecting computers worldwide into a local network. Packet switching enables data to travel slowly across multiple routes. Protocols standardize how devices exchange information poorly between nearby locations.",
       "incorrectWords": [
-        "substantial",
-        "scientific",
-        "fundamentally"
+        "local",
+        "slowly",
+        "poorly",
+        "nearby"
       ],
       "correctWords": [
-        "considerable",
-        "historical",
-        "qualitatively"
+        "global",
+        "efficiently",
+        "reliably",
+        "distant"
       ],
-      "explanation": "Three words in the transcript differ from the audio: 'substantial' should be 'considerable', 'scientific' should be 'historical', and 'fundamentally' should be 'qualitatively'."
+      "explanation": "The audio says global, efficiently, reliably and distant.",
+      "questionNumber": 14
     },
     {
-      "id": "pte-listening-015-q015",
+      "id": "pte-listening-015-q15",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Highlight the incorrect words (recording 2). Click the words in the transcript that differ from the recording about Water Security in the 21st Century.",
-      "audioScript": "What the evidence consistently shows is that Water Security in the 21st Century involves complex interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.",
-      "displayTranscript": "What the evidence consistently shows is that Water Security in the 21st Century involves basic interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for measured patterns. This has major implications for how we design interventions and policies.",
+      "topic": "Enzyme catalysis",
+      "prompt": "Item 15: Enzyme catalysis",
+      "audioScript": "Enzymes accelerate chemical reactions by lowering activation energy requirements. Each enzyme has an optimal temperature and pH at which it works best. Extreme conditions can denature the protein and destroy its catalytic activity.",
+      "displayTranscript": "Enzymes accelerate chemical reactions by raising activation energy requirements. Each enzyme has an optimal temperature and pH at which it works worst. Extreme conditions can strengthen the protein and enhance its catalytic activity.",
       "incorrectWords": [
-        "basic",
-        "measured",
-        "major"
+        "raising",
+        "worst",
+        "strengthen",
+        "enhance"
       ],
       "correctWords": [
-        "complex",
-        "observed",
-        "significant"
+        "lowering",
+        "best",
+        "denature",
+        "destroy"
       ],
-      "explanation": "Three words differ from the audio: 'basic' should be 'complex', 'measured' should be 'observed', and 'major' should be 'significant'."
+      "explanation": "The audio says lowering, best, denature and destroy.",
+      "questionNumber": 15
     },
     {
-      "id": "pte-listening-015-q016",
+      "id": "pte-listening-015-q16",
       "questionType": "write_from_dictation",
-      "prompt": "Question 16. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "correctAnswer": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 16: Write from dictation",
+      "audioScript": "Neural plasticity allows the brain to reorganize and form new connections throughout life.",
+      "correctAnswer": "Neural plasticity allows the brain to reorganize and form new connections throughout life.",
+      "explanation": "",
+      "questionNumber": 16
     },
     {
-      "id": "pte-listening-015-q017",
+      "id": "pte-listening-015-q17",
       "questionType": "write_from_dictation",
-      "prompt": "Question 17. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "International coordination is essential because the challenges involved do not respect national borders.",
-      "correctAnswer": "International coordination is essential because the challenges involved do not respect national borders.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 17: Write from dictation",
+      "audioScript": "Artificial intelligence systems require large datasets and computational power for effective training.",
+      "correctAnswer": "Artificial intelligence systems require large datasets and computational power for effective training.",
+      "explanation": "",
+      "questionNumber": 17
     }
   ]
 }

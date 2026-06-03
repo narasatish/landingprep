@@ -3,248 +3,288 @@
   "exam": "pte",
   "section": "listening",
   "type": "section",
-  "title": "PTE Academic Listening Practice Test 43",
-  "topic": "Glaciology and Sea Level Rise",
-  "durationSeconds": 2700,
+  "title": "PTE Academic Listening — Practice Test 43",
+  "topic": "Mixed academic topics (one per item, as in the real test)",
+  "durationSeconds": 2400,
   "questionCount": 17,
-  "instructions": "Listen to the audio for each item and respond according to the question type. In the real PTE exam you hear actual audio; here the transcript is shown for study purposes.",
+  "instructions": "Each item has its own recording. Audio plays automatically when you reach an item.",
   "questions": [
     {
-      "id": "pte-listening-043-q001",
+      "id": "pte-listening-043-q1",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 1. You will hear a short lecture about Glaciology and Sea Level Rise. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "topic": "Glaciology and Sea Level Rise",
+      "topic": "Coral Bleaching and Ocean Temperatures",
+      "prompt": "Item 1: Coral Bleaching and Ocean Temperatures",
+      "audioScript": "Coral bleaching occurs when seawater temperatures rise above normal levels, causing corals to expel their symbiotic algae. This symbiosis provides corals with nutrients through photosynthesis. Recent data shows that even a one-degree Celsius increase can trigger bleaching events. The Great Barrier Reef experienced severe bleaching in 2016 and 2020. Scientists attribute this to climate change and rising ocean temperatures. Recovery is possible if temperatures stabilize within weeks.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into Glaciology and Sea Level Rise reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Coral bleaching happens when water temperatures rise, causing corals to lose their symbiotic algae. Even minimal temperature increases trigger bleaching events. The Great Barrier Reef suffered severe bleaching recently due to climate change, though recovery is possible if temperatures stabilize quickly.",
+      "explanation": "",
+      "questionNumber": 1
     },
     {
-      "id": "pte-listening-043-q002",
+      "id": "pte-listening-043-q2",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 2. You will hear a short lecture about Glaciology and Sea Level Rise — Key Dimensions. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "topic": "Glaciology and Sea Level Rise — Key Dimensions",
+      "topic": "Ancient Roman Aqueduct Engineering",
+      "prompt": "Item 2: Ancient Roman Aqueduct Engineering",
+      "audioScript": "Roman aqueducts were masterpieces of civil engineering, carrying water across hundreds of kilometers to supply cities. The longest aqueduct, Aqua Claudia, stretched 68 kilometers, though only 16 were elevated on arches. Romans used gravity to move water downhill, maintaining a slight slope of about 0.3 percent. Lead pipes transported water into homes, a practice later recognized as toxic. These structures demonstrate remarkable architectural knowledge and mathematical precision that lasted for centuries.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into Glaciology and Sea Level Rise — Key Dimensions reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Roman aqueducts transported water across vast distances using gravity and innovative engineering. The Aqua Claudia extended 68 kilometers with arches supporting only the elevated sections. Romans maintained precise slopes and used lead pipes, later found hazardous. These structures showcase exceptional mathematical and architectural skill that persisted for centuries.",
+      "explanation": "",
+      "questionNumber": 2
     },
     {
-      "id": "pte-listening-043-q003",
+      "id": "pte-listening-043-q3",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "Which TWO of the following points does the speaker make about Glaciology and Sea Level Rise?",
+      "topic": "Continental Drift and Plate Tectonic Theory",
+      "audioScript": "Alfred Wegener proposed continental drift in 1912, suggesting continents moved across Earth's surface. Evidence includes matching fossil species on separated continents and similar rock formations. Continental coastlines, particularly South America and Africa, fit together like puzzle pieces. Seafloor spreading at mid-ocean ridges drives plate movement. Paleomagnetic records in seafloor rocks document magnetic reversals during formation. Plate tectonics explains earthquake locations, volcano distribution, and mountain formation. This revolutionary theory fundamentally changed Earth sciences.",
+      "question": "According to the speaker, which TWO pieces of evidence support continental drift?",
       "options": [
-        "Glaciology and Sea Level Rise involves complex interactions that cannot be explained by single-factor models",
-        "Early research in this field was conducted entirely by natural scientists",
-        "The economic costs of failing to address this topic are estimated to be very high",
-        "International agreements have fully resolved the challenges in this area",
-        "Digital data collection has transformed the research landscape in this field"
+        "Fossils on separated continents differ completely",
+        "Matching rock formations appear on different continents",
+        "Continental coastlines fit together like puzzle pieces",
+        "Seafloor spreading is a recent discovery",
+        "Plate tectonics explains earthquake distribution"
       ],
       "correctAnswers": [
-        "Glaciology and Sea Level Rise involves complex interactions that cannot be explained by single-factor models",
-        "The economic costs of failing to address this topic are estimated to be very high"
+        "Matching rock formations appear on different continents",
+        "Continental coastlines fit together like puzzle pieces"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker describes both matching rock formations and coastlines that fit together as evidence supporting continental drift theory.",
+      "prompt": "Item 3: Continental Drift and Plate Tectonic Theory",
+      "questionNumber": 3
     },
     {
-      "id": "pte-listening-043-q004",
+      "id": "pte-listening-043-q4",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "Which TWO statements accurately reflect what the speaker says about responses to Glaciology and Sea Level Rise?",
+      "topic": "Immune System Response and Inflammation",
+      "audioScript": "The immune system defends against pathogens through innate and adaptive responses. Innate immunity provides immediate defense through phagocytic cells and chemical barriers. Inflammation results from immune cells releasing chemical signals in response to infection. Symptoms like redness, warmth, swelling, and pain indicate inflammatory response. Adaptive immunity develops specific antibodies against particular pathogens. Vaccination trains the immune system to recognize pathogens without infection. Memory cells persist after infection, providing long-term protection against reinfection.",
+      "question": "According to the speaker, which TWO statements about immune response are correct?",
       "options": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "All international agreements related to this topic have been fully implemented",
-        "Better monitoring technology is increasingly available and affordable",
-        "The research community in this field is competitive and unwelcoming to newcomers",
-        "Real-world stakes in this field are considered minor by most researchers"
+        "Innate immunity develops slowly over years",
+        "Phagocytic cells provide immediate defense",
+        "Inflammation results from chemical signals released by immune cells",
+        "Antibodies develop instantly without vaccination",
+        "Memory cells prevent any possibility of reinfection"
       ],
       "correctAnswers": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "Better monitoring technology is increasingly available and affordable"
+        "Phagocytic cells provide immediate defense",
+        "Inflammation results from chemical signals released by immune cells"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker describes phagocytic cells in innate immunity and explains inflammation from immune cell chemical signals.",
+      "prompt": "Item 4: Immune System Response and Inflammation",
+      "questionNumber": 4
     },
     {
-      "id": "pte-listening-043-q005",
+      "id": "pte-listening-043-q5",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Question 5. You will hear a recording about Glaciology and Sea Level Rise. Type the missing word in each numbered blank as you listen.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "transcript": "The study of Glaciology and Sea Level Rise demonstrates that __1__ interactions between multiple systems drive observed outcomes. Researchers have consistently found that __2__ explanations fail to account for real-world patterns. The international dimension is critical because Glaciology and Sea Level Rise does not respect __3__ borders.",
+      "topic": "Plate Tectonics and Mountain Formation",
+      "prompt": "Item 5: Plate Tectonics and Mountain Formation",
+      "audioScript": "Mountains form through tectonic processes as Earth's crust deforms. Fold mountains form where convergent plate boundaries force crustal material upward, as seen in the Himalayas. Folding and faulting occur as rocks compress under enormous pressure from colliding plates. Volcanic mountains form where ascending magma reaches the surface. Erosion by wind, water, and ice gradually reduces mountain elevation over millions of years.",
+      "transcript": "Mountains form through tectonic processes as Earth's crust deforms. __1__ mountains form where convergent plate boundaries force crustal material upward, as seen in the Himalayas. Folding and faulting occur as rocks compress under enormous pressure from colliding __2__. Volcanic mountains form where ascending magma reaches the surface. Erosion by wind, water, and ice gradually reduces mountain __3__ over millions of years.",
       "correctAnswers": [
-        "complex",
-        "simplistic",
-        "national"
+        "Fold",
+        "plates",
+        "elevation"
       ],
-      "explanation": "These three words appear verbatim in the audio transcript at the corresponding positions in the transcript shown to the candidate."
+      "explanation": "",
+      "questionNumber": 5
     },
     {
-      "id": "pte-listening-043-q006",
+      "id": "pte-listening-043-q6",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 2). Type the missing word in each blank as you listen to the passage about Glaciology and Sea Level Rise.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "transcript": "What the evidence consistently shows is that Glaciology and Sea Level Rise involves __1__ interactions between multiple systems. From an economic standpoint, the costs of __2__ in this area are substantial. Looking forward, the trajectory will depend on __3__, political will, and effective communication between scientists and policymakers.",
+      "topic": "Atmospheric Composition and Weather",
+      "prompt": "Item 6: Atmospheric Composition and Weather",
+      "audioScript": "Earth's atmosphere consists of approximately 78 percent nitrogen and 21 percent oxygen, with remaining trace gases. Ozone in the stratospheric layer protects life from harmful ultraviolet radiation. Water vapor in the troposphere condenses to form clouds, driving precipitation and the hydrologic cycle. Greenhouse gases including carbon dioxide trap heat, causing the greenhouse effect that warms Earth's surface.",
+      "transcript": "Earth's atmosphere consists of approximately 78 percent nitrogen and 21 percent __1__, with remaining trace gases. Ozone in the __2__ layer protects life from harmful ultraviolet radiation. Water vapor in the troposphere condenses to form clouds, driving precipitation and the hydrologic cycle. Greenhouse gases including carbon dioxide trap heat, causing the __3__ effect that warms Earth's surface.",
       "correctAnswers": [
-        "complex",
-        "inaction",
-        "innovation"
+        "oxygen",
+        "stratospheric",
+        "greenhouse"
       ],
-      "explanation": "These three words appear in the audio at the corresponding blank positions in the transcript."
+      "explanation": "",
+      "questionNumber": 6
     },
     {
-      "id": "pte-listening-043-q007",
+      "id": "pte-listening-043-q7",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 3). Type the missing word in each blank as you listen to the passage about Glaciology and Sea Level Rise.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "transcript": "The international dimension is also __1__. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, __2__ responses are necessary. The decisions made in the next ten to fifteen years will determine outcomes for __3__ to come.",
+      "topic": "Greek Mythology and Cultural Influence",
+      "prompt": "Item 7: Greek Mythology and Cultural Influence",
+      "audioScript": "Ancient Greek myths served cultural and educational functions in society. The hero Hercules undertook twelve seemingly impossible labors as punishment for tragic actions, representing perseverance through hardship. Persephone's abduction by Hades created the Pomegranate myth explaining seasonal changes as her mother Demeter mourns. These narratives were performed in theaters and passed through oral storytelling, shaping cultural values and moral lessons.",
+      "transcript": "Ancient Greek myths served cultural and educational functions in society. The hero __1__ undertook twelve seemingly impossible labors as punishment for tragic actions, representing perseverance through hardship. Persephone's abduction by Hades created the __2__ myth explaining seasonal changes as her mother Demeter mourns. These narratives were performed in theaters and passed through __3__ storytelling, shaping cultural values and moral lessons.",
       "correctAnswers": [
-        "critical",
-        "multilateral",
-        "generations"
+        "Hercules",
+        "Pomegranate",
+        "oral"
       ],
-      "explanation": "These words are spoken in the audio and correspond to the blanks in the transcript."
+      "explanation": "",
+      "questionNumber": 7
     },
     {
-      "id": "pte-listening-043-q008",
+      "id": "pte-listening-043-q8",
       "questionType": "highlight_correct_summary",
-      "prompt": "Question 8. Listen to the recording about Glaciology and Sea Level Rise, then select the paragraph that best summarises what you heard.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
+      "topic": "Superconductivity and Zero Resistance",
+      "prompt": "Item 8: Superconductivity and Zero Resistance",
+      "audioScript": "Superconductors are materials exhibiting zero electrical resistance below critical temperatures. Electrons form Cooper pairs through phonon interactions, enabling coherent quantum behavior. Superconductors completely expel magnetic fields through the Meissner effect. Applications include MRI machines, particle accelerators, and experimental power transmission. Current superconductors require cooling to near absolute zero. Room-temperature superconductors remain theoretically predicted but practically elusive.",
       "options": [
-        "The lecture/interview discusses Glaciology and Sea Level Rise, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-        "The lecture argues that Glaciology and Sea Level Rise is a minor concern that has been overstated by researchers and that existing policies are already sufficient to address all related challenges.",
-        "The speaker focuses exclusively on the historical background of Glaciology and Sea Level Rise without discussing current evidence, economic dimensions, or policy implications."
+        "Superconductors exhibit zero resistance below critical temperatures through quantum effects enabling frictionless electron flow.",
+        "Superconductors conduct electricity normally like regular wires but with slightly reduced resistance at low temperatures.",
+        "Magnetic fields penetrate superconductors normally, making them unsuitable for magnetic shielding applications."
       ],
-      "correctAnswer": "The lecture/interview discusses Glaciology and Sea Level Rise, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-      "explanation": "Option A accurately summarises the main themes: complexity, economic stakes, international cooperation, and adaptive management. The other options misrepresent the content."
+      "correctAnswer": "Superconductors exhibit zero resistance below critical temperatures through quantum effects enabling frictionless electron flow.",
+      "explanation": "The speaker describes zero resistance below critical temperatures as superconductivity's defining property.",
+      "questionNumber": 8
     },
     {
-      "id": "pte-listening-043-q009",
+      "id": "pte-listening-043-q9",
       "questionType": "highlight_correct_summary",
-      "prompt": "Highlight the correct summary (recording 2). Listen, then select the paragraph that best summarises the talk on Glaciology and Sea Level Rise.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
+      "topic": "Protein Synthesis and Genetic Code",
+      "prompt": "Item 9: Protein Synthesis and Genetic Code",
+      "audioScript": "Protein synthesis translates genetic information from DNA into functional proteins. Messenger RNA carries genetic instructions from DNA to ribosomes. Transfer RNA molecules position amino acids sequentially according to mRNA codons. Each codon specifies one amino acid, establishing the genetic code's function. Ribosomes catalyze peptide bond formation between adjacent amino acids. Multiple ribosomes simultaneously translate the same mRNA in structures called polysomes.",
       "options": [
-        "The audio emphasises that Glaciology and Sea Level Rise requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-        "The speaker claims that Glaciology and Sea Level Rise is fully understood and that all the major scientific questions in this area have already been resolved by existing research.",
-        "The audio focuses solely on the historical background of Glaciology and Sea Level Rise and does not address any current research findings or policy implications."
+        "Protein synthesis involves mRNA carrying genetic instructions to ribosomes, where tRNA positions amino acids in codon-specified sequences.",
+        "Proteins form directly from DNA without any RNA intermediates or ribosomal involvement.",
+        "The genetic code specifies three different proteins for each codon, providing redundancy for error correction."
       ],
-      "correctAnswer": "The audio emphasises that Glaciology and Sea Level Rise requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-      "explanation": "Option A is the only summary that accurately reflects the audio's discussion of tipping points, the need for adaptive management, and improved monitoring."
+      "correctAnswer": "Protein synthesis involves mRNA carrying genetic instructions to ribosomes, where tRNA positions amino acids in codon-specified sequences.",
+      "explanation": "The speaker describes the role of mRNA, tRNA, and ribosomes in translating codons into amino acid sequences.",
+      "questionNumber": 9
     },
     {
-      "id": "pte-listening-043-q010",
+      "id": "pte-listening-043-q10",
       "questionType": "multiple_choice_single",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "According to the audio, what is the key reason why single-factor explanations of Glaciology and Sea Level Rise consistently fail?",
+      "topic": "Photochemical Reactions in Atmosphere",
+      "audioScript": "Photochemical reactions in the stratosphere produce and destroy ozone through light-driven processes. Ultraviolet radiation breaks oxygen molecules into atoms. Two oxygen atoms recombine with an oxygen molecule to form ozone. Ozone absorbs ultraviolet radiation protecting the surface. Chlorofluorocarbons release chlorine atoms when exposed to ultraviolet light. These chlorine atoms catalytically destroy ozone molecules. The ozone hole over Antarctica results from seasonal chlorine release.",
+      "question": "What is the primary mechanism by which chlorofluorocarbons harm the ozone layer?",
       "options": [
-        "Researchers lack sufficient data to test single-factor models",
-        "Glaciology and Sea Level Rise involves complex interactions between multiple interconnected systems",
-        "Single-factor models are too expensive to implement in practice",
-        "Political opposition prevents single-factor explanations from being published"
+        "They directly absorb ultraviolet radiation preventing photochemical reactions",
+        "They release chlorine atoms that catalytically destroy ozone molecules",
+        "They increase the temperature of the stratosphere beyond ozone stability",
+        "They combine with oxygen to form additional ozone, creating excess ultraviolet penetration"
       ],
-      "correctAnswer": "Glaciology and Sea Level Rise involves complex interactions between multiple interconnected systems",
-      "explanation": "The audio explicitly states that simplistic, single-factor explanations fail because the topic involves complex interactions between multiple systems."
+      "correctAnswer": "They release chlorine atoms that catalytically destroy ozone molecules",
+      "explanation": "The speaker explains that chlorine atoms released from CFCs catalytically destroy ozone molecules.",
+      "prompt": "Item 10: Photochemical Reactions in Atmosphere",
+      "questionNumber": 10
     },
     {
-      "id": "pte-listening-043-q011",
+      "id": "pte-listening-043-q11",
       "questionType": "multiple_choice_single",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "According to the audio on Glaciology and Sea Level Rise, what is the key principle for designing effective policies in this field?",
+      "topic": "Ancient Roman Law and Government",
+      "audioScript": "Roman law established principles of justice that influenced Western legal systems. The Twelve Tables, created around 450 BC, codified Roman legal principles. Roman law distinguished between public law governing the state and private law regulating individuals. Legal concepts including contracts, property rights, and due process originated in Rome. The Roman Senate served as the legislative body making laws. Consuls acted as chief executives with military and administrative powers. This system of separated powers influenced modern democratic structures.",
+      "question": "Which aspect of Roman law most directly influenced modern Western legal systems?",
       "options": [
-        "Locking in fixed approaches based on the best current scientific knowledge",
-        "Delegating all policy decisions to international bodies",
-        "Adaptive management — designing policies that can be updated as new evidence emerges",
-        "Prioritising economic growth over scientific caution"
+        "The absence of written legal codes allowing interpretation flexibility",
+        "Principles including contracts, property rights, and due process formalized in codes",
+        "Unlimited executive power without legislative oversight",
+        "Religious courts rather than secular legal institutions"
       ],
-      "correctAnswer": "Adaptive management — designing policies that can be updated as new evidence emerges",
-      "explanation": "The audio explicitly describes adaptive management as the key principle: 'designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches.'"
+      "correctAnswer": "Principles including contracts, property rights, and due process formalized in codes",
+      "explanation": "The speaker describes Roman law's establishment of justice principles like contracts and due process that influenced Western systems.",
+      "prompt": "Item 11: Ancient Roman Law and Government",
+      "questionNumber": 11
     },
     {
-      "id": "pte-listening-043-q012",
+      "id": "pte-listening-043-q12",
       "questionType": "select_missing_word",
-      "prompt": "Question 12. You will hear a recording about Glaciology and Sea Level Rise. At the end, the final words have been replaced by a beep. Select the option that correctly completes the recording.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to [beep]",
+      "topic": "Climate Change and Rising Sea Levels",
+      "prompt": "Item 12: Climate Change and Rising Sea Levels",
+      "audioScript": "Global temperatures continue rising due to greenhouse gas emissions from human activities. Warming oceans expand thermally, increasing sea level. Melting glaciers and ice sheets contribute additional water to the oceans. Coastal communities face increased flooding threats from rising sea levels. Some island nations risk complete submersion within decades. We must reduce emissions and develop adaptation strategies for inevitable changes.",
       "options": [
-        "come",
-        "start",
-        "forget",
-        "imagine"
+        "adaptation",
+        "mitigation",
+        "prevention",
+        "reversal"
       ],
-      "correctAnswer": "come",
-      "explanation": "The sentence reads '...will determine outcomes for generations to come.' The word 'come' completes the fixed phrase 'for generations to come' which fits the context of the lecture's conclusion."
+      "correctAnswer": "adaptation",
+      "explanation": "The speaker concludes that we need adaptation strategies for inevitable sea level changes.",
+      "questionNumber": 12
     },
     {
-      "id": "pte-listening-043-q013",
+      "id": "pte-listening-043-q13",
       "questionType": "select_missing_word",
-      "prompt": "Select the missing word (recording 2). The final words are replaced by a beep — choose the correct completion for the talk on Glaciology and Sea Level Rise.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, Glaciology and Sea Level Rise is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of Glaciology and Sea Level Rise could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. Glaciology and Sea Level Rise does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of [beep]\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
+      "topic": "Personal Learning and Study Strategies",
+      "prompt": "Item 13: Personal Learning and Study Strategies",
+      "audioScript": "Effective learning requires active engagement with material rather than passive reading. Spaced repetition strengthens memory through repeated review across days and weeks. Elaboration connects new information to existing knowledge creating meaningful understanding. Interleaving mixes different topics during study improving discrimination between concepts. Practice problems strengthen skill development. Teaching others forces deep processing of knowledge. The most successful students combine multiple evidence-based study techniques for optimal learning …",
       "options": [
-        "change",
-        "funding",
-        "debate",
-        "history"
+        "outcomes",
+        "achievement",
+        "retention",
+        "understanding"
       ],
-      "correctAnswer": "change",
-      "explanation": "The sentence ends 'too slow relative to the pace of change' — the word 'change' completes the phrase that directly contrasts the pace of policy action with the pace of environmental or systemic change."
+      "correctAnswer": "outcomes",
+      "explanation": "The speaker concludes that combined techniques produce optimal learning outcomes.",
+      "questionNumber": 13
     },
     {
-      "id": "pte-listening-043-q014",
+      "id": "pte-listening-043-q14",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Question 14. Listen to the recording about Glaciology and Sea Level Rise. The transcript below differs from it in several places — click the words that are different from what the speaker says.",
-      "audioScript": "Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are qualitatively different from anything available before.",
-      "displayTranscript": "Today we are going to examine a topic that has attracted substantial scientific and policy attention in recent years: Glaciology and Sea Level Rise. I want to begin by giving you some scientific context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are fundamentally different from anything available before.",
+      "topic": "Internet and information technology",
+      "prompt": "Item 14: Internet and information technology",
+      "audioScript": "The internet revolutionized communication by connecting computers worldwide into a global network. Packet switching enables data to travel efficiently across multiple routes. Protocols standardize how devices exchange information reliably between distant locations.",
+      "displayTranscript": "The internet revolutionized communication by connecting computers worldwide into a local network. Packet switching enables data to travel slowly across multiple routes. Protocols standardize how devices exchange information poorly between nearby locations.",
       "incorrectWords": [
-        "substantial",
-        "scientific",
-        "fundamentally"
+        "local",
+        "slowly",
+        "poorly",
+        "nearby"
       ],
       "correctWords": [
-        "considerable",
-        "historical",
-        "qualitatively"
+        "global",
+        "efficiently",
+        "reliably",
+        "distant"
       ],
-      "explanation": "Three words in the transcript differ from the audio: 'substantial' should be 'considerable', 'scientific' should be 'historical', and 'fundamentally' should be 'qualitatively'."
+      "explanation": "The audio says global, efficiently, reliably and distant.",
+      "questionNumber": 14
     },
     {
-      "id": "pte-listening-043-q015",
+      "id": "pte-listening-043-q15",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Highlight the incorrect words (recording 2). Click the words in the transcript that differ from the recording about Glaciology and Sea Level Rise.",
-      "audioScript": "What the evidence consistently shows is that Glaciology and Sea Level Rise involves complex interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.",
-      "displayTranscript": "What the evidence consistently shows is that Glaciology and Sea Level Rise involves basic interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for measured patterns. This has major implications for how we design interventions and policies.",
+      "topic": "Enzyme catalysis",
+      "prompt": "Item 15: Enzyme catalysis",
+      "audioScript": "Enzymes accelerate chemical reactions by lowering activation energy requirements. Each enzyme has an optimal temperature and pH at which it works best. Extreme conditions can denature the protein and destroy its catalytic activity.",
+      "displayTranscript": "Enzymes accelerate chemical reactions by raising activation energy requirements. Each enzyme has an optimal temperature and pH at which it works worst. Extreme conditions can strengthen the protein and enhance its catalytic activity.",
       "incorrectWords": [
-        "basic",
-        "measured",
-        "major"
+        "raising",
+        "worst",
+        "strengthen",
+        "enhance"
       ],
       "correctWords": [
-        "complex",
-        "observed",
-        "significant"
+        "lowering",
+        "best",
+        "denature",
+        "destroy"
       ],
-      "explanation": "Three words differ from the audio: 'basic' should be 'complex', 'measured' should be 'observed', and 'major' should be 'significant'."
+      "explanation": "The audio says lowering, best, denature and destroy.",
+      "questionNumber": 15
     },
     {
-      "id": "pte-listening-043-q016",
+      "id": "pte-listening-043-q16",
       "questionType": "write_from_dictation",
-      "prompt": "Question 16. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "correctAnswer": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 16: Write from dictation",
+      "audioScript": "Quantum mechanics describes the behavior of matter at subatomic scales using probabilistic principles.",
+      "correctAnswer": "Quantum mechanics describes the behavior of matter at subatomic scales using probabilistic principles.",
+      "explanation": "",
+      "questionNumber": 16
     },
     {
-      "id": "pte-listening-043-q017",
+      "id": "pte-listening-043-q17",
       "questionType": "write_from_dictation",
-      "prompt": "Question 17. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "International coordination is essential because the challenges involved do not respect national borders.",
-      "correctAnswer": "International coordination is essential because the challenges involved do not respect national borders.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 17: Write from dictation",
+      "audioScript": "Economic inequality reflects differences in access to education and employment opportunities.",
+      "correctAnswer": "Economic inequality reflects differences in access to education and employment opportunities.",
+      "explanation": "",
+      "questionNumber": 17
     }
   ]
 }

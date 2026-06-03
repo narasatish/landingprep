@@ -3,248 +3,296 @@
   "exam": "pte",
   "section": "listening",
   "type": "section",
-  "title": "PTE Academic Listening Practice Test 42",
-  "topic": "Antibiotic Resistance and Global Health",
-  "durationSeconds": 2700,
+  "title": "PTE Academic Listening — Practice Test 42",
+  "topic": "Mixed academic topics (one per item, as in the real test)",
+  "durationSeconds": 2400,
   "questionCount": 17,
-  "instructions": "Listen to the audio for each item and respond according to the question type. In the real PTE exam you hear actual audio; here the transcript is shown for study purposes.",
+  "instructions": "Each item has its own recording. Audio plays automatically when you reach an item.",
   "questions": [
     {
-      "id": "pte-listening-042-q001",
+      "id": "pte-listening-042-q1",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 1. You will hear a short lecture about Antibiotic Resistance and Global Health. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "topic": "Antibiotic Resistance and Global Health",
+      "topic": "Memory Formation and Synaptic Plasticity",
+      "prompt": "Item 1: Memory Formation and Synaptic Plasticity",
+      "audioScript": "Memory formation involves changes in synaptic connections between neurons through a process called synaptic plasticity. When neurons fire together repeatedly, their connections strengthen in a process called long-term potentiation. This mechanism underlies learning and memory consolidation. The hippocampus plays a crucial role in transferring short-term memories to long-term storage. Sleep facilitates memory consolidation, particularly through REM sleep stages. Understanding these neural mechanisms has therapeutic implications for treating memory disorders.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into Antibiotic Resistance and Global Health reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Memory forms through synaptic plasticity, where repeated neural firing strengthens connections via long-term potentiation. The hippocampus transfers short-term memories to long-term storage. Sleep, especially REM sleep, facilitates memory consolidation. Understanding these neural mechanisms has therapeutic applications for treating memory disorders.",
+      "explanation": "",
+      "questionNumber": 1
     },
     {
-      "id": "pte-listening-042-q002",
+      "id": "pte-listening-042-q2",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 2. You will hear a short lecture about Antibiotic Resistance and Global Health — Key Dimensions. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "topic": "Antibiotic Resistance and Global Health — Key Dimensions",
+      "topic": "Volcanic Eruptions and Plate Tectonics",
+      "prompt": "Item 2: Volcanic Eruptions and Plate Tectonics",
+      "audioScript": "Volcanic eruptions occur primarily at plate boundaries where magma rises toward Earth's surface. Divergent boundaries, where plates separate, produce effusive eruptions of low-viscosity lava. Convergent boundaries, where plates collide, generate explosive eruptions of thick magma. The Ring of Fire around the Pacific Ocean contains 75 percent of Earth's active volcanoes. Volcanic ash affects climate and agriculture globally. Volcanic rocks and minerals provide valuable geological records of Earth's history.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into Antibiotic Resistance and Global Health — Key Dimensions reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Volcanic eruptions occur at plate boundaries where magma rises. Divergent boundaries produce effusive low-viscosity eruptions; convergent boundaries cause explosive thick magma eruptions. The Pacific Ring of Fire contains 75 percent of active volcanoes. Volcanic ash affects climate and agriculture globally. Volcanic materials provide geological records.",
+      "explanation": "",
+      "questionNumber": 2
     },
     {
-      "id": "pte-listening-042-q003",
+      "id": "pte-listening-042-q3",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "Which TWO of the following points does the speaker make about Antibiotic Resistance and Global Health?",
+      "topic": "Ancient Egyptian Pyramids and Construction",
+      "audioScript": "The Great Pyramids of Giza remain monumental achievements of ancient engineering. The Great Pyramid of Khufu required approximately 20 years to construct using 2.3 million stone blocks. Workers quarried limestone blocks weighing up to 2.5 tons. Construction methods likely involved ramps, levers, and organized labor systems. Precise geometric alignment demonstrates advanced mathematical knowledge. These structures served as monumental tombs housing pharaohs and treasures. Archaeological evidence suggests tens of thousands of workers participated in construction.",
+      "question": "According to the speaker, which TWO claims about the pyramids are supported?",
       "options": [
-        "Antibiotic Resistance and Global Health involves complex interactions that cannot be explained by single-factor models",
-        "Early research in this field was conducted entirely by natural scientists",
-        "The economic costs of failing to address this topic are estimated to be very high",
-        "International agreements have fully resolved the challenges in this area",
-        "Digital data collection has transformed the research landscape in this field"
+        "Construction used only 100,000 stone blocks",
+        "The Great Pyramid required 20 years to build",
+        "Individual blocks weighed up to 2.5 tons",
+        "Construction methods were entirely mysterious",
+        "Precise alignment shows mathematical knowledge"
       ],
       "correctAnswers": [
-        "Antibiotic Resistance and Global Health involves complex interactions that cannot be explained by single-factor models",
-        "The economic costs of failing to address this topic are estimated to be very high"
+        "The Great Pyramid required 20 years to build",
+        "Precise alignment shows mathematical knowledge"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker explicitly states the 20-year construction period and describes precise geometric alignment demonstrating mathematical knowledge.",
+      "prompt": "Item 3: Ancient Egyptian Pyramids and Construction",
+      "questionNumber": 3
     },
     {
-      "id": "pte-listening-042-q004",
+      "id": "pte-listening-042-q4",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "Which TWO statements accurately reflect what the speaker says about responses to Antibiotic Resistance and Global Health?",
+      "topic": "Antibiotic Resistance and Bacterial Evolution",
+      "audioScript": "Antibiotic resistance develops when bacteria survive antibiotic exposure through genetic mutations or acquired resistance genes. Overuse of antibiotics in medicine and agriculture accelerates resistance development. Some bacteria now resist multiple antibiotics simultaneously, becoming methicillin-resistant Staphylococcus aureus. Resistant bacteria can transfer genes horizontally to other bacterial species. Resistance mechanisms include enzyme inactivation of antibiotics and altered bacterial cell walls. Reducing unnecessary antibiotic use and developing new antibiotics are crucial strategies against resistance.",
+      "question": "According to the speaker, which TWO factors contribute to antibiotic resistance?",
       "options": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "All international agreements related to this topic have been fully implemented",
-        "Better monitoring technology is increasingly available and affordable",
-        "The research community in this field is competitive and unwelcoming to newcomers",
-        "Real-world stakes in this field are considered minor by most researchers"
+        "Antibiotic resistance cannot develop through mutations",
+        "Bacteria acquire resistance genes and mutations",
+        "Overuse of antibiotics accelerates resistance",
+        "Resistance genes transfer only vertically to offspring",
+        "No bacteria can resist multiple antibiotics"
       ],
       "correctAnswers": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "Better monitoring technology is increasingly available and affordable"
+        "Bacteria acquire resistance genes and mutations",
+        "Overuse of antibiotics accelerates resistance"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker describes resistance developing through mutations and acquired genes, and explicitly states overuse accelerates this development.",
+      "prompt": "Item 4: Antibiotic Resistance and Bacterial Evolution",
+      "questionNumber": 4
     },
     {
-      "id": "pte-listening-042-q005",
+      "id": "pte-listening-042-q5",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Question 5. You will hear a recording about Antibiotic Resistance and Global Health. Type the missing word in each numbered blank as you listen.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "The study of Antibiotic Resistance and Global Health demonstrates that __1__ interactions between multiple systems drive observed outcomes. Researchers have consistently found that __2__ explanations fail to account for real-world patterns. The international dimension is critical because Antibiotic Resistance and Global Health does not respect __3__ borders.",
+      "topic": "Particle Physics and Quantum Mechanics",
+      "prompt": "Item 5: Particle Physics and Quantum Mechanics",
+      "audioScript": "Particle physics studies fundamental constituents of matter at the smallest scales. The Standard model describes quarks and leptons as basic building blocks. Subatomic particles are held together by fundamental forces carried by force-carrying particles. The discovery of the Higgs boson in 2012 confirmed theories predicting how particles acquire mass through interaction with an energy field.",
+      "transcript": "Particle physics studies fundamental constituents of matter at the smallest scales. The __1__ model describes quarks and leptons as basic building blocks. Subatomic particles are held together by fundamental forces carried by __2__ particles. The discovery of the Higgs __3__ in 2012 confirmed theories predicting how particles acquire mass through interaction with an energy field.",
       "correctAnswers": [
-        "complex",
-        "simplistic",
-        "national"
+        "Standard",
+        "force-carrying",
+        "boson"
       ],
-      "explanation": "These three words appear verbatim in the audio transcript at the corresponding positions in the transcript shown to the candidate."
+      "explanation": "",
+      "questionNumber": 5
     },
     {
-      "id": "pte-listening-042-q006",
+      "id": "pte-listening-042-q6",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 2). Type the missing word in each blank as you listen to the passage about Antibiotic Resistance and Global Health.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "What the evidence consistently shows is that Antibiotic Resistance and Global Health involves __1__ interactions between multiple systems. From an economic standpoint, the costs of __2__ in this area are substantial. Looking forward, the trajectory will depend on __3__, political will, and effective communication between scientists and policymakers.",
+      "topic": "Tropical Rainforest Biodiversity",
+      "prompt": "Item 6: Tropical Rainforest Biodiversity",
+      "audioScript": "Tropical rainforests contain approximately half of Earth's terrestrial species despite covering only seven percent of land. The dense canopy of plants creates multiple layers where different species have evolved specialized roles. Trees compete for limited light by growing tall, while lianas and epiphytes use other plants for access. The rich soil is paradoxically fragile because nutrients are rapidly absorbed by living plants; decomposed material is recycled quickly by decomposers and fungi.",
+      "transcript": "Tropical rainforests contain approximately half of Earth's terrestrial species despite covering only seven percent of land. The dense __1__ of plants creates multiple layers where different species have evolved specialized roles. Trees compete for limited __2__ by growing tall, while lianas and epiphytes use other plants for access. The rich soil is paradoxically fragile because nutrients are rapidly absorbed by living plants; decomposed material is recycled quickly by __3__ and fungi.",
       "correctAnswers": [
-        "complex",
-        "inaction",
-        "innovation"
+        "canopy",
+        "light",
+        "decomposers"
       ],
-      "explanation": "These three words appear in the audio at the corresponding blank positions in the transcript."
+      "explanation": "",
+      "questionNumber": 6
     },
     {
-      "id": "pte-listening-042-q007",
+      "id": "pte-listening-042-q7",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 3). Type the missing word in each blank as you listen to the passage about Antibiotic Resistance and Global Health.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "The international dimension is also __1__. Antibiotic Resistance and Global Health does not respect national borders, which means that coordinated, __2__ responses are necessary. The decisions made in the next ten to fifteen years will determine outcomes for __3__ to come.",
+      "topic": "Industrial Revolution Manufacturing",
+      "prompt": "Item 7: Industrial Revolution Manufacturing",
+      "audioScript": "The Industrial Revolution transformed production from craft-based to mechanized manufacturing. The steam engine, invented by James Watt, powered machines and transportation, providing mechanical energy previously unavailable on such scales. Textile mills combined multiple production steps in one location, dramatically increasing output per worker. Factory systems relied on division of labor performing repetitive tasks, establishing the modern industrial workforce structure.",
+      "transcript": "The Industrial Revolution transformed production from craft-based to mechanized manufacturing. The steam engine, invented by James Watt, powered machines and transportation, providing __1__ energy previously unavailable on such scales. Textile __2__ combined multiple production steps in one location, dramatically increasing output per worker. Factory systems relied on __3__ labor performing repetitive tasks, establishing the modern industrial workforce structure.",
       "correctAnswers": [
-        "critical",
-        "multilateral",
-        "generations"
+        "mechanical",
+        "mills",
+        "division of"
       ],
-      "explanation": "These words are spoken in the audio and correspond to the blanks in the transcript."
+      "explanation": "",
+      "questionNumber": 7
     },
     {
-      "id": "pte-listening-042-q008",
+      "id": "pte-listening-042-q8",
       "questionType": "highlight_correct_summary",
-      "prompt": "Question 8. Listen to the recording about Antibiotic Resistance and Global Health, then select the paragraph that best summarises what you heard.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Metamorphic Rock Formation",
+      "prompt": "Item 8: Metamorphic Rock Formation",
+      "audioScript": "Metamorphic rocks form when existing rocks undergo chemical and physical changes due to heat, pressure, or chemical alteration deep within Earth's crust. High pressure and temperature cause mineral rearrangement without melting the rock. Parent rocks include sedimentary and igneous types. Examples include marble from limestone and schist from shale. Metamorphic rocks contain distinctive mineral alignments reflecting directional pressure. These rocks mark ancient collision zones and deep crustal processes.",
       "options": [
-        "The lecture/interview discusses Antibiotic Resistance and Global Health, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-        "The lecture argues that Antibiotic Resistance and Global Health is a minor concern that has been overstated by researchers and that existing policies are already sufficient to address all related challenges.",
-        "The speaker focuses exclusively on the historical background of Antibiotic Resistance and Global Health without discussing current evidence, economic dimensions, or policy implications."
+        "Metamorphic rocks form from existing rocks altered by heat and pressure deep in Earth, producing distinctive mineral alignments.",
+        "Metamorphic rocks form when sedimentary rocks melt completely into magma, then recrystallize near the surface.",
+        "All metamorphic rocks contain fossils unchanged from their parent rocks despite extreme geological conditions."
       ],
-      "correctAnswer": "The lecture/interview discusses Antibiotic Resistance and Global Health, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-      "explanation": "Option A accurately summarises the main themes: complexity, economic stakes, international cooperation, and adaptive management. The other options misrepresent the content."
+      "correctAnswer": "Metamorphic rocks form from existing rocks altered by heat and pressure deep in Earth, producing distinctive mineral alignments.",
+      "explanation": "The speaker explains metamorphic rocks result from heat and pressure altering parent rocks without melting, creating distinctive structures.",
+      "questionNumber": 8
     },
     {
-      "id": "pte-listening-042-q009",
+      "id": "pte-listening-042-q9",
       "questionType": "highlight_correct_summary",
-      "prompt": "Highlight the correct summary (recording 2). Listen, then select the paragraph that best summarises the talk on Antibiotic Resistance and Global Health.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Ecosystem Succession and Climax Communities",
+      "prompt": "Item 9: Ecosystem Succession and Climax Communities",
+      "audioScript": "Ecological succession describes predictable changes in community composition over time. Primary succession begins with bare rock where lichens colonize first, weathering rock into soil. Secondary succession follows disturbance in existing ecosystems, with pioneer species reestablishing quickly. As soil develops and shade increases, different species replace pioneers. Eventually, climax communities stabilize with mature species composition. Disturbances restart succession cycles, preventing permanent climax states in many ecosystems.",
       "options": [
-        "The audio emphasises that Antibiotic Resistance and Global Health requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-        "The speaker claims that Antibiotic Resistance and Global Health is fully understood and that all the major scientific questions in this area have already been resolved by existing research.",
-        "The audio focuses solely on the historical background of Antibiotic Resistance and Global Health and does not address any current research findings or policy implications."
+        "Ecological succession involves predictable species replacement from pioneer to climax communities, with early colonizers altering conditions enabling later species.",
+        "Ecological succession never occurs in nature; ecosystems remain unchanged for millions of years once established.",
+        "Climax communities develop rapidly after disturbances through simultaneous arrival of all mature species."
       ],
-      "correctAnswer": "The audio emphasises that Antibiotic Resistance and Global Health requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-      "explanation": "Option A is the only summary that accurately reflects the audio's discussion of tipping points, the need for adaptive management, and improved monitoring."
+      "correctAnswer": "Ecological succession involves predictable species replacement from pioneer to climax communities, with early colonizers altering conditions enabling later species.",
+      "explanation": "The speaker describes succession as predictable community changes with pioneering species preparing conditions for later species.",
+      "questionNumber": 9
     },
     {
-      "id": "pte-listening-042-q010",
+      "id": "pte-listening-042-q10",
       "questionType": "multiple_choice_single",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "According to the audio, what is the key reason why single-factor explanations of Antibiotic Resistance and Global Health consistently fail?",
+      "topic": "Cultural Diffusion and Globalization",
+      "audioScript": "Cultural diffusion spreads ideas, practices, and technologies across populations through contact and communication. Trade routes historically facilitated cultural exchange. Modern technology enables rapid global communication. Languages blend creating creole and pidgin languages. Food traditions cross borders; fusion cuisine combines different culinary traditions. Music genres globally influence each other. Technology and media accelerate cultural mixing. Local traditions adapt to global influences while maintaining distinct identities.",
+      "question": "What role has technology played in cultural diffusion?",
       "options": [
-        "Researchers lack sufficient data to test single-factor models",
-        "Antibiotic Resistance and Global Health involves complex interactions between multiple interconnected systems",
-        "Single-factor models are too expensive to implement in practice",
-        "Political opposition prevents single-factor explanations from being published"
+        "Technology prevents any cultural exchange between populations",
+        "Modern technology enables rapid global communication accelerating cultural diffusion",
+        "Cultural diffusion only occurred historically through trade routes",
+        "Technology has eliminated all distinct local cultural traditions"
       ],
-      "correctAnswer": "Antibiotic Resistance and Global Health involves complex interactions between multiple interconnected systems",
-      "explanation": "The audio explicitly states that simplistic, single-factor explanations fail because the topic involves complex interactions between multiple systems."
+      "correctAnswer": "Modern technology enables rapid global communication accelerating cultural diffusion",
+      "explanation": "The speaker describes technology's role in enabling rapid communication facilitating cultural exchange.",
+      "prompt": "Item 10: Cultural Diffusion and Globalization",
+      "questionNumber": 10
     },
     {
-      "id": "pte-listening-042-q011",
+      "id": "pte-listening-042-q11",
       "questionType": "multiple_choice_single",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "According to the audio on Antibiotic Resistance and Global Health, what is the key principle for designing effective policies in this field?",
+      "topic": "Precision Agriculture and Crop Optimization",
+      "audioScript": "Precision agriculture uses technology to optimize crop production through targeted resource management. GPS guidance directs tractors with centimeter accuracy minimizing overlaps. Soil sensors measure moisture, nutrients, and pH enabling variable-rate fertilizer application. Drones capture multispectral imagery identifying crop stress areas. Yield mapping tracks production variation across fields. Data analysis identifies correlations between environmental factors and yield. Variable-rate irrigation applies water precisely where needed. These practices reduce environmental impact while improving productivity.",
+      "question": "How does precision agriculture reduce both costs and environmental impact?",
       "options": [
-        "Locking in fixed approaches based on the best current scientific knowledge",
-        "Delegating all policy decisions to international bodies",
-        "Adaptive management — designing policies that can be updated as new evidence emerges",
-        "Prioritising economic growth over scientific caution"
+        "Precision agriculture increases pesticide use across entire fields uniformly",
+        "Technology enables targeted application of inputs only where needed, reducing waste",
+        "Precision agriculture requires removing all vegetation to prevent environmental interference",
+        "Data analysis has no connection to agricultural optimization decisions"
       ],
-      "correctAnswer": "Adaptive management — designing policies that can be updated as new evidence emerges",
-      "explanation": "The audio explicitly describes adaptive management as the key principle: 'designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches.'"
+      "correctAnswer": "Technology enables targeted application of inputs only where needed, reducing waste",
+      "explanation": "The speaker describes targeted application of resources as the mechanism reducing waste in precision agriculture.",
+      "prompt": "Item 11: Precision Agriculture and Crop Optimization",
+      "questionNumber": 11
     },
     {
-      "id": "pte-listening-042-q012",
+      "id": "pte-listening-042-q12",
       "questionType": "select_missing_word",
-      "prompt": "Question 12. You will hear a recording about Antibiotic Resistance and Global Health. At the end, the final words have been replaced by a beep. Select the option that correctly completes the recording.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Internet Security and Data Privacy",
+      "prompt": "Item 12: Internet Security and Data Privacy",
+      "audioScript": "Online security protects personal information from theft and misuse. Strong passwords with mixed character types resist brute-force attacks. Two-factor authentication prevents unauthorized access even if passwords are compromised. Software updates patch security vulnerabilities before exploitation. Public Wi-Fi networks lack encryption exposing transmitted data to interception. Privacy-focused services encrypt data preventing even the service provider from accessing it. Vigilance regarding phishing attempts protects against social engineering …",
       "options": [
-        "come",
-        "start",
-        "forget",
-        "imagine"
+        "attacks",
+        "threats",
+        "scams",
+        "schemes"
       ],
-      "correctAnswer": "come",
-      "explanation": "The sentence reads '...will determine outcomes for generations to come.' The word 'come' completes the fixed phrase 'for generations to come' which fits the context of the lecture's conclusion."
+      "correctAnswer": "attacks",
+      "explanation": "The speaker states vigilance protects against social engineering attacks.",
+      "questionNumber": 12
     },
     {
-      "id": "pte-listening-042-q013",
+      "id": "pte-listening-042-q13",
       "questionType": "select_missing_word",
-      "prompt": "Select the missing word (recording 2). The final words are replaced by a beep — choose the correct completion for the talk on Antibiotic Resistance and Global Health.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Antibiotic Resistance and Global Health. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Antibiotic Resistance and Global Health involves and why it matters?\n\nExpert: Certainly. Antibiotic Resistance and Global Health sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Antibiotic Resistance and Global Health changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Critical Thinking and Misinformation",
+      "prompt": "Item 13: Critical Thinking and Misinformation",
+      "audioScript": "Critical thinking skills help identify misinformation in information-saturated environments. Reliable sources demonstrate expertise, provide citations, and acknowledge limitations. Sensational headlines and emotional appeals signal potential misinformation. Fact-checking websites verify claims through primary sources. Understanding cognitive biases explains why false information persists despite correction. Healthy skepticism balanced with openness enables accurate understanding of complex …",
       "options": [
-        "change",
-        "funding",
-        "debate",
-        "history"
+        "issues",
+        "topics",
+        "subjects",
+        "matters"
       ],
-      "correctAnswer": "change",
-      "explanation": "The sentence ends 'too slow relative to the pace of change' — the word 'change' completes the phrase that directly contrasts the pace of policy action with the pace of environmental or systemic change."
+      "correctAnswer": "issues",
+      "explanation": "The speaker concludes that critical thinking enables accurate understanding of complex issues.",
+      "questionNumber": 13
     },
     {
-      "id": "pte-listening-042-q014",
+      "id": "pte-listening-042-q14",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Question 14. Listen to the recording about Antibiotic Resistance and Global Health. The transcript below differs from it in several places — click the words that are different from what the speaker says.",
-      "audioScript": "Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Antibiotic Resistance and Global Health. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are qualitatively different from anything available before.",
-      "displayTranscript": "Today we are going to examine a topic that has attracted substantial scientific and policy attention in recent years: Antibiotic Resistance and Global Health. I want to begin by giving you some scientific context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are fundamentally different from anything available before.",
+      "topic": "Medieval Castle Defense",
+      "prompt": "Item 14: Medieval Castle Defense",
+      "audioScript": "Medieval castles served strategic defensive purposes in warfare. Stone walls could withstand siege weapons far better than wooden palisades. Multiple defensive layers including moats, walls, and towers provided overlapping fields of fire. Narrow windows called arrow slits allowed defenders to shoot while remaining protected. The keep provided a final defensive position if outer walls were breached. High walls prevented direct assault and made scaling extremely difficult. Castles dominated their territories militarily and politically for centuries.",
+      "displayTranscript": "Medieval castles served strategic offensive purposes in warfare. Stone walls could withstand siege weapons far better than wooden palisades. Multiple defensive layers including moats, walls, and towers provided overlapping fields of view. Narrow windows called gun slits allowed defenders to shoot while remaining protected. The dungeon provided a final defensive position if outer walls were breached. Low walls prevented direct assault and made scaling extremely difficult. Castles dominated their territories militarily and politically for centuries.",
       "incorrectWords": [
-        "substantial",
-        "scientific",
-        "fundamentally"
+        "offensive",
+        "view",
+        "gun slits",
+        "dungeon",
+        "Low"
       ],
       "correctWords": [
-        "considerable",
-        "historical",
-        "qualitatively"
+        "defensive",
+        "fire",
+        "arrow slits",
+        "keep",
+        "High"
       ],
-      "explanation": "Three words in the transcript differ from the audio: 'substantial' should be 'considerable', 'scientific' should be 'historical', and 'fundamentally' should be 'qualitatively'."
+      "explanation": "Castles were defensive, used for fire control, had arrow slits and keeps, and had high walls for protection.",
+      "questionNumber": 14
     },
     {
-      "id": "pte-listening-042-q015",
+      "id": "pte-listening-042-q15",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Highlight the incorrect words (recording 2). Click the words in the transcript that differ from the recording about Antibiotic Resistance and Global Health.",
-      "audioScript": "What the evidence consistently shows is that Antibiotic Resistance and Global Health involves complex interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.",
-      "displayTranscript": "What the evidence consistently shows is that Antibiotic Resistance and Global Health involves basic interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for measured patterns. This has major implications for how we design interventions and policies.",
+      "topic": "Evolution and Natural Selection",
+      "prompt": "Item 15: Evolution and Natural Selection",
+      "audioScript": "Evolution occurs through natural selection acting on genetic variation within populations. Organisms producing more offspring than the environment supports must compete for resources. Traits that improve survival and reproduction become more common across generations. Over millions of years, accumulated changes produce new species. Fossil records document transition forms showing evolutionary relationships. Genetic evidence confirms common ancestry across all living organisms. Evolution explains the diversity of life and shapes our understanding of biology.",
+      "displayTranscript": "Evolution occurs through artificial selection acting on genetic variation within populations. Organisms producing fewer offspring than the environment supports must compete for resources. Traits that decrease survival and reproduction become more common across generations. Over thousands of years, accumulated changes produce new species. Fossil records document transition forms showing revolutionary relationships. Chemical evidence confirms common ancestry across all living organisms. Evolution explains the simplicity of life and shapes our understanding of biology.",
       "incorrectWords": [
-        "basic",
-        "measured",
-        "major"
+        "artificial",
+        "fewer",
+        "decrease",
+        "thousands",
+        "revolutionary",
+        "Chemical",
+        "simplicity"
       ],
       "correctWords": [
-        "complex",
-        "observed",
-        "significant"
+        "natural",
+        "more",
+        "improve",
+        "millions",
+        "evolutionary",
+        "Genetic",
+        "diversity"
       ],
-      "explanation": "Three words differ from the audio: 'basic' should be 'complex', 'measured' should be 'observed', and 'major' should be 'significant'."
+      "explanation": "Natural selection increases beneficial traits over millions of years through evolutionary relationships.",
+      "questionNumber": 15
     },
     {
-      "id": "pte-listening-042-q016",
+      "id": "pte-listening-042-q16",
       "questionType": "write_from_dictation",
-      "prompt": "Question 16. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "correctAnswer": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 16: Write from dictation",
+      "audioScript": "The Internet connects billions of computers across the globe into a unified communication network.",
+      "correctAnswer": "The Internet connects billions of computers across the globe into a unified communication network.",
+      "explanation": "",
+      "questionNumber": 16
     },
     {
-      "id": "pte-listening-042-q017",
+      "id": "pte-listening-042-q17",
       "questionType": "write_from_dictation",
-      "prompt": "Question 17. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "International coordination is essential because the challenges involved do not respect national borders.",
-      "correctAnswer": "International coordination is essential because the challenges involved do not respect national borders.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 17: Write from dictation",
+      "audioScript": "Ancient Roman engineering achievements influenced bridge and aqueduct construction for centuries.",
+      "correctAnswer": "Ancient Roman engineering achievements influenced bridge and aqueduct construction for centuries.",
+      "explanation": "",
+      "questionNumber": 17
     }
   ]
 }

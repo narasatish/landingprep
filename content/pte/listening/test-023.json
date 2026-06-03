@@ -3,248 +3,288 @@
   "exam": "pte",
   "section": "listening",
   "type": "section",
-  "title": "PTE Academic Listening Practice Test 23",
-  "topic": "Neural Plasticity and Learning",
-  "durationSeconds": 2700,
+  "title": "PTE Academic Listening — Practice Test 23",
+  "topic": "Mixed academic topics (one per item, as in the real test)",
+  "durationSeconds": 2400,
   "questionCount": 17,
-  "instructions": "Listen to the audio for each item and respond according to the question type. In the real PTE exam you hear actual audio; here the transcript is shown for study purposes.",
+  "instructions": "Each item has its own recording. Audio plays automatically when you reach an item.",
   "questions": [
     {
-      "id": "pte-listening-023-q001",
+      "id": "pte-listening-023-q1",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 1. You will hear a short lecture about Neural Plasticity and Learning. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "topic": "Neural Plasticity and Learning",
+      "topic": "Photosynthesis in Desert Plants",
+      "prompt": "Item 1: Photosynthesis in Desert Plants",
+      "audioScript": "Desert plants have evolved unique photosynthetic pathways to conserve water in arid environments. Most plants use C3 photosynthesis, but succulents employ CAM photosynthesis, opening stomata at night when temperatures are cooler. This minimizes water loss while still capturing carbon dioxide. Some desert plants also reduce their leaf surface area to decrease transpiration. These adaptations allow plants like agave and certain cacti to thrive in extremely dry conditions with minimal water availability.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into Neural Plasticity and Learning reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Desert plants employ specialized photosynthesis methods to conserve water. CAM photosynthesis allows plants like succulents to open stomata at night, reducing water loss while capturing carbon dioxide. Plants also reduce leaf area to minimize transpiration. These adaptations enable survival in arid conditions with scarce water.",
+      "explanation": "",
+      "questionNumber": 1
     },
     {
-      "id": "pte-listening-023-q002",
+      "id": "pte-listening-023-q2",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 2. You will hear a short lecture about Neural Plasticity and Learning — Key Dimensions. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "topic": "Neural Plasticity and Learning — Key Dimensions",
+      "topic": "Medieval Trade Routes and Silk Road Commerce",
+      "prompt": "Item 2: Medieval Trade Routes and Silk Road Commerce",
+      "audioScript": "The Silk Road was not a single road but a network of trade routes connecting East Asia with Europe and the Mediterranean. Traders exchanged silk, spices, ceramics, and metals across these routes. The network flourished between the second century BC and the fifteenth century. Beyond goods, ideas, religions, and technologies traveled along these routes. Buddhism and Islam spread through trade interactions. The routes declined when European maritime exploration offered faster sea routes to Asia.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into Neural Plasticity and Learning — Key Dimensions reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "The Silk Road was a trade network linking East Asia to Europe, operating from the second century BC to the fifteenth century. Merchants exchanged goods including silk, spices, and ceramics. Beyond commerce, religions, ideas, and technologies spread along the routes. Maritime exploration eventually replaced the overland trade network.",
+      "explanation": "",
+      "questionNumber": 2
     },
     {
-      "id": "pte-listening-023-q003",
+      "id": "pte-listening-023-q3",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "Which TWO of the following points does the speaker make about Neural Plasticity and Learning?",
+      "topic": "Antibiotic Resistance and Bacterial Evolution",
+      "audioScript": "Antibiotic resistance develops when bacteria survive antibiotic exposure through genetic mutations or acquired resistance genes. Overuse of antibiotics in medicine and agriculture accelerates resistance development. Some bacteria now resist multiple antibiotics simultaneously, becoming methicillin-resistant Staphylococcus aureus. Resistant bacteria can transfer genes horizontally to other bacterial species. Resistance mechanisms include enzyme inactivation of antibiotics and altered bacterial cell walls. Reducing unnecessary antibiotic use and developing new antibiotics are crucial strategies against resistance.",
+      "question": "According to the speaker, which TWO factors contribute to antibiotic resistance?",
       "options": [
-        "Neural Plasticity and Learning involves complex interactions that cannot be explained by single-factor models",
-        "Early research in this field was conducted entirely by natural scientists",
-        "The economic costs of failing to address this topic are estimated to be very high",
-        "International agreements have fully resolved the challenges in this area",
-        "Digital data collection has transformed the research landscape in this field"
+        "Antibiotic resistance cannot develop through mutations",
+        "Bacteria acquire resistance genes and mutations",
+        "Overuse of antibiotics accelerates resistance",
+        "Resistance genes transfer only vertically to offspring",
+        "No bacteria can resist multiple antibiotics"
       ],
       "correctAnswers": [
-        "Neural Plasticity and Learning involves complex interactions that cannot be explained by single-factor models",
-        "The economic costs of failing to address this topic are estimated to be very high"
+        "Bacteria acquire resistance genes and mutations",
+        "Overuse of antibiotics accelerates resistance"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker describes resistance developing through mutations and acquired genes, and explicitly states overuse accelerates this development.",
+      "prompt": "Item 3: Antibiotic Resistance and Bacterial Evolution",
+      "questionNumber": 3
     },
     {
-      "id": "pte-listening-023-q004",
+      "id": "pte-listening-023-q4",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "Which TWO statements accurately reflect what the speaker says about responses to Neural Plasticity and Learning?",
+      "topic": "Continental Drift and Plate Tectonic Theory",
+      "audioScript": "Alfred Wegener proposed continental drift in 1912, suggesting continents moved across Earth's surface. Evidence includes matching fossil species on separated continents and similar rock formations. Continental coastlines, particularly South America and Africa, fit together like puzzle pieces. Seafloor spreading at mid-ocean ridges drives plate movement. Paleomagnetic records in seafloor rocks document magnetic reversals during formation. Plate tectonics explains earthquake locations, volcano distribution, and mountain formation. This revolutionary theory fundamentally changed Earth sciences.",
+      "question": "According to the speaker, which TWO pieces of evidence support continental drift?",
       "options": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "All international agreements related to this topic have been fully implemented",
-        "Better monitoring technology is increasingly available and affordable",
-        "The research community in this field is competitive and unwelcoming to newcomers",
-        "Real-world stakes in this field are considered minor by most researchers"
+        "Fossils on separated continents differ completely",
+        "Matching rock formations appear on different continents",
+        "Continental coastlines fit together like puzzle pieces",
+        "Seafloor spreading is a recent discovery",
+        "Plate tectonics explains earthquake distribution"
       ],
       "correctAnswers": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "Better monitoring technology is increasingly available and affordable"
+        "Matching rock formations appear on different continents",
+        "Continental coastlines fit together like puzzle pieces"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker describes both matching rock formations and coastlines that fit together as evidence supporting continental drift theory.",
+      "prompt": "Item 4: Continental Drift and Plate Tectonic Theory",
+      "questionNumber": 4
     },
     {
-      "id": "pte-listening-023-q005",
+      "id": "pte-listening-023-q5",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Question 5. You will hear a recording about Neural Plasticity and Learning. Type the missing word in each numbered blank as you listen.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "The study of Neural Plasticity and Learning demonstrates that __1__ interactions between multiple systems drive observed outcomes. Researchers have consistently found that __2__ explanations fail to account for real-world patterns. The international dimension is critical because Neural Plasticity and Learning does not respect __3__ borders.",
+      "topic": "Plate Tectonics and Mountain Formation",
+      "prompt": "Item 5: Plate Tectonics and Mountain Formation",
+      "audioScript": "Mountains form through tectonic processes as Earth's crust deforms. Fold mountains form where convergent plate boundaries force crustal material upward, as seen in the Himalayas. Folding and faulting occur as rocks compress under enormous pressure from colliding plates. Volcanic mountains form where ascending magma reaches the surface. Erosion by wind, water, and ice gradually reduces mountain elevation over millions of years.",
+      "transcript": "Mountains form through tectonic processes as Earth's crust deforms. __1__ mountains form where convergent plate boundaries force crustal material upward, as seen in the Himalayas. Folding and faulting occur as rocks compress under enormous pressure from colliding __2__. Volcanic mountains form where ascending magma reaches the surface. Erosion by wind, water, and ice gradually reduces mountain __3__ over millions of years.",
       "correctAnswers": [
-        "complex",
-        "simplistic",
-        "national"
+        "Fold",
+        "plates",
+        "elevation"
       ],
-      "explanation": "These three words appear verbatim in the audio transcript at the corresponding positions in the transcript shown to the candidate."
+      "explanation": "",
+      "questionNumber": 5
     },
     {
-      "id": "pte-listening-023-q006",
+      "id": "pte-listening-023-q6",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 2). Type the missing word in each blank as you listen to the passage about Neural Plasticity and Learning.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "What the evidence consistently shows is that Neural Plasticity and Learning involves __1__ interactions between multiple systems. From an economic standpoint, the costs of __2__ in this area are substantial. Looking forward, the trajectory will depend on __3__, political will, and effective communication between scientists and policymakers.",
+      "topic": "Atmospheric Composition and Weather",
+      "prompt": "Item 6: Atmospheric Composition and Weather",
+      "audioScript": "Earth's atmosphere consists of approximately 78 percent nitrogen and 21 percent oxygen, with remaining trace gases. Ozone in the stratospheric layer protects life from harmful ultraviolet radiation. Water vapor in the troposphere condenses to form clouds, driving precipitation and the hydrologic cycle. Greenhouse gases including carbon dioxide trap heat, causing the greenhouse effect that warms Earth's surface.",
+      "transcript": "Earth's atmosphere consists of approximately 78 percent nitrogen and 21 percent __1__, with remaining trace gases. Ozone in the __2__ layer protects life from harmful ultraviolet radiation. Water vapor in the troposphere condenses to form clouds, driving precipitation and the hydrologic cycle. Greenhouse gases including carbon dioxide trap heat, causing the __3__ effect that warms Earth's surface.",
       "correctAnswers": [
-        "complex",
-        "inaction",
-        "innovation"
+        "oxygen",
+        "stratospheric",
+        "greenhouse"
       ],
-      "explanation": "These three words appear in the audio at the corresponding blank positions in the transcript."
+      "explanation": "",
+      "questionNumber": 6
     },
     {
-      "id": "pte-listening-023-q007",
+      "id": "pte-listening-023-q7",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 3). Type the missing word in each blank as you listen to the passage about Neural Plasticity and Learning.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "The international dimension is also __1__. Neural Plasticity and Learning does not respect national borders, which means that coordinated, __2__ responses are necessary. The decisions made in the next ten to fifteen years will determine outcomes for __3__ to come.",
+      "topic": "Greek Mythology and Cultural Influence",
+      "prompt": "Item 7: Greek Mythology and Cultural Influence",
+      "audioScript": "Ancient Greek myths served cultural and educational functions in society. The hero Hercules undertook twelve seemingly impossible labors as punishment for tragic actions, representing perseverance through hardship. Persephone's abduction by Hades created the Pomegranate myth explaining seasonal changes as her mother Demeter mourns. These narratives were performed in theaters and passed through oral storytelling, shaping cultural values and moral lessons.",
+      "transcript": "Ancient Greek myths served cultural and educational functions in society. The hero __1__ undertook twelve seemingly impossible labors as punishment for tragic actions, representing perseverance through hardship. Persephone's abduction by Hades created the __2__ myth explaining seasonal changes as her mother Demeter mourns. These narratives were performed in theaters and passed through __3__ storytelling, shaping cultural values and moral lessons.",
       "correctAnswers": [
-        "critical",
-        "multilateral",
-        "generations"
+        "Hercules",
+        "Pomegranate",
+        "oral"
       ],
-      "explanation": "These words are spoken in the audio and correspond to the blanks in the transcript."
+      "explanation": "",
+      "questionNumber": 7
     },
     {
-      "id": "pte-listening-023-q008",
+      "id": "pte-listening-023-q8",
       "questionType": "highlight_correct_summary",
-      "prompt": "Question 8. Listen to the recording about Neural Plasticity and Learning, then select the paragraph that best summarises what you heard.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Ecosystem Succession and Climax Communities",
+      "prompt": "Item 8: Ecosystem Succession and Climax Communities",
+      "audioScript": "Ecological succession describes predictable changes in community composition over time. Primary succession begins with bare rock where lichens colonize first, weathering rock into soil. Secondary succession follows disturbance in existing ecosystems, with pioneer species reestablishing quickly. As soil develops and shade increases, different species replace pioneers. Eventually, climax communities stabilize with mature species composition. Disturbances restart succession cycles, preventing permanent climax states in many ecosystems.",
       "options": [
-        "The lecture/interview discusses Neural Plasticity and Learning, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-        "The lecture argues that Neural Plasticity and Learning is a minor concern that has been overstated by researchers and that existing policies are already sufficient to address all related challenges.",
-        "The speaker focuses exclusively on the historical background of Neural Plasticity and Learning without discussing current evidence, economic dimensions, or policy implications."
+        "Ecological succession involves predictable species replacement from pioneer to climax communities, with early colonizers altering conditions enabling later species.",
+        "Ecological succession never occurs in nature; ecosystems remain unchanged for millions of years once established.",
+        "Climax communities develop rapidly after disturbances through simultaneous arrival of all mature species."
       ],
-      "correctAnswer": "The lecture/interview discusses Neural Plasticity and Learning, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-      "explanation": "Option A accurately summarises the main themes: complexity, economic stakes, international cooperation, and adaptive management. The other options misrepresent the content."
+      "correctAnswer": "Ecological succession involves predictable species replacement from pioneer to climax communities, with early colonizers altering conditions enabling later species.",
+      "explanation": "The speaker describes succession as predictable community changes with pioneering species preparing conditions for later species.",
+      "questionNumber": 8
     },
     {
-      "id": "pte-listening-023-q009",
+      "id": "pte-listening-023-q9",
       "questionType": "highlight_correct_summary",
-      "prompt": "Highlight the correct summary (recording 2). Listen, then select the paragraph that best summarises the talk on Neural Plasticity and Learning.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Superconductivity and Zero Resistance",
+      "prompt": "Item 9: Superconductivity and Zero Resistance",
+      "audioScript": "Superconductors are materials exhibiting zero electrical resistance below critical temperatures. Electrons form Cooper pairs through phonon interactions, enabling coherent quantum behavior. Superconductors completely expel magnetic fields through the Meissner effect. Applications include MRI machines, particle accelerators, and experimental power transmission. Current superconductors require cooling to near absolute zero. Room-temperature superconductors remain theoretically predicted but practically elusive.",
       "options": [
-        "The audio emphasises that Neural Plasticity and Learning requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-        "The speaker claims that Neural Plasticity and Learning is fully understood and that all the major scientific questions in this area have already been resolved by existing research.",
-        "The audio focuses solely on the historical background of Neural Plasticity and Learning and does not address any current research findings or policy implications."
+        "Superconductors exhibit zero resistance below critical temperatures through quantum effects enabling frictionless electron flow.",
+        "Superconductors conduct electricity normally like regular wires but with slightly reduced resistance at low temperatures.",
+        "Magnetic fields penetrate superconductors normally, making them unsuitable for magnetic shielding applications."
       ],
-      "correctAnswer": "The audio emphasises that Neural Plasticity and Learning requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-      "explanation": "Option A is the only summary that accurately reflects the audio's discussion of tipping points, the need for adaptive management, and improved monitoring."
+      "correctAnswer": "Superconductors exhibit zero resistance below critical temperatures through quantum effects enabling frictionless electron flow.",
+      "explanation": "The speaker describes zero resistance below critical temperatures as superconductivity's defining property.",
+      "questionNumber": 9
     },
     {
-      "id": "pte-listening-023-q010",
+      "id": "pte-listening-023-q10",
       "questionType": "multiple_choice_single",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "According to the audio, what is the key reason why single-factor explanations of Neural Plasticity and Learning consistently fail?",
+      "topic": "Exoplanet Detection Methods",
+      "audioScript": "Astronomers detect exoplanets through multiple methods revealing different planetary properties. The transit method detects planets by measuring light dimming as planets pass in front of their stars. Radial velocity methods detect planetary gravity causing slight stellar motion toward and away from Earth. Direct imaging captures light reflected from planets, possible only for massive planets around young stars. Microlensing uses gravitational lensing to detect distant planets. Each method reveals different information about planetary mass, orbit, and composition.",
+      "question": "What is the main advantage of the transit method for exoplanet detection?",
       "options": [
-        "Researchers lack sufficient data to test single-factor models",
-        "Neural Plasticity and Learning involves complex interactions between multiple interconnected systems",
-        "Single-factor models are too expensive to implement in practice",
-        "Political opposition prevents single-factor explanations from being published"
+        "It reveals a planet's chemical composition through spectroscopy",
+        "It detects planets by measuring light dimming as they pass in front of stars",
+        "It works for all planets including those far from their stars",
+        "It eliminates the need for other detection methods"
       ],
-      "correctAnswer": "Neural Plasticity and Learning involves complex interactions between multiple interconnected systems",
-      "explanation": "The audio explicitly states that simplistic, single-factor explanations fail because the topic involves complex interactions between multiple systems."
+      "correctAnswer": "It detects planets by measuring light dimming as they pass in front of stars",
+      "explanation": "The speaker describes the transit method as detecting planets through light dimming during stellar passage.",
+      "prompt": "Item 10: Exoplanet Detection Methods",
+      "questionNumber": 10
     },
     {
-      "id": "pte-listening-023-q011",
+      "id": "pte-listening-023-q11",
       "questionType": "multiple_choice_single",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "According to the audio on Neural Plasticity and Learning, what is the key principle for designing effective policies in this field?",
+      "topic": "Mitochondrial Function and ATP Production",
+      "audioScript": "Mitochondria generate ATP through oxidative phosphorylation, the primary energy source for cellular work. The electron transport chain transfers electrons through protein complexes embedded in the inner mitochondrial membrane. This process pumps protons creating a concentration gradient. ATP synthase harnesses the proton gradient to phosphorylate ADP to ATP. Approximately 30-32 ATP molecules are produced per glucose molecule. Mutations in mitochondrial genes cause genetic diseases affecting high-energy organs like muscle and brain.",
+      "question": "How do mitochondria generate most cellular ATP?",
       "options": [
-        "Locking in fixed approaches based on the best current scientific knowledge",
-        "Delegating all policy decisions to international bodies",
-        "Adaptive management — designing policies that can be updated as new evidence emerges",
-        "Prioritising economic growth over scientific caution"
+        "By directly breaking glucose bonds without using the electron transport chain",
+        "By harnessing a proton gradient created by the electron transport chain to phosphorylate ADP",
+        "By capturing light energy like chloroplasts",
+        "By converting glucose directly to ATP without intermediate steps"
       ],
-      "correctAnswer": "Adaptive management — designing policies that can be updated as new evidence emerges",
-      "explanation": "The audio explicitly describes adaptive management as the key principle: 'designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches.'"
+      "correctAnswer": "By harnessing a proton gradient created by the electron transport chain to phosphorylate ADP",
+      "explanation": "The speaker describes ATP synthase using the electron-transport-generated proton gradient to produce ATP.",
+      "prompt": "Item 11: Mitochondrial Function and ATP Production",
+      "questionNumber": 11
     },
     {
-      "id": "pte-listening-023-q012",
+      "id": "pte-listening-023-q12",
       "questionType": "select_missing_word",
-      "prompt": "Question 12. You will hear a recording about Neural Plasticity and Learning. At the end, the final words have been replaced by a beep. Select the option that correctly completes the recording.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Social Media and Mental Health",
+      "prompt": "Item 12: Social Media and Mental Health",
+      "audioScript": "Social media usage correlates with anxiety and depression, particularly among adolescents. Constant comparison with others' curated images damages self-esteem. Notification systems trigger dopamine release creating addictive patterns. Cyberbullying reaches victims constantly through their phones. Sleep disruption from late-night usage affects mental and physical health. Mindful usage with time limits and notification management can reduce negative effects while preserving beneficial social …",
       "options": [
-        "come",
-        "start",
-        "forget",
-        "imagine"
+        "conversations",
+        "connections",
+        "relationships",
+        "interactions"
       ],
-      "correctAnswer": "come",
-      "explanation": "The sentence reads '...will determine outcomes for generations to come.' The word 'come' completes the fixed phrase 'for generations to come' which fits the context of the lecture's conclusion."
+      "correctAnswer": "connections",
+      "explanation": "The speaker notes social media can preserve beneficial social connections with mindful usage.",
+      "questionNumber": 12
     },
     {
-      "id": "pte-listening-023-q013",
+      "id": "pte-listening-023-q13",
       "questionType": "select_missing_word",
-      "prompt": "Select the missing word (recording 2). The final words are replaced by a beep — choose the correct completion for the talk on Neural Plasticity and Learning.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on Neural Plasticity and Learning. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what Neural Plasticity and Learning involves and why it matters?\n\nExpert: Certainly. Neural Plasticity and Learning sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to Neural Plasticity and Learning changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Sustainable Architecture and Green Buildings",
+      "prompt": "Item 13: Sustainable Architecture and Green Buildings",
+      "audioScript": "Modern architecture increasingly incorporates sustainability through passive design and renewable energy. Buildings positioned to maximize natural light and ventilation reduce energy consumption. Green roofs insulate buildings while managing stormwater. Recycled and locally sourced materials minimize transportation impacts. Solar panels and wind turbines provide clean energy. Water recycling systems reduce consumption. These features create healthier occupant environments while reducing environmental …",
       "options": [
-        "change",
-        "funding",
-        "debate",
-        "history"
+        "footprints",
+        "impacts",
+        "consequences",
+        "effects"
       ],
-      "correctAnswer": "change",
-      "explanation": "The sentence ends 'too slow relative to the pace of change' — the word 'change' completes the phrase that directly contrasts the pace of policy action with the pace of environmental or systemic change."
+      "correctAnswer": "footprints",
+      "explanation": "The speaker specifically states sustainable features reduce environmental footprints.",
+      "questionNumber": 13
     },
     {
-      "id": "pte-listening-023-q014",
+      "id": "pte-listening-023-q14",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Question 14. Listen to the recording about Neural Plasticity and Learning. The transcript below differs from it in several places — click the words that are different from what the speaker says.",
-      "audioScript": "Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: Neural Plasticity and Learning. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are qualitatively different from anything available before.",
-      "displayTranscript": "Today we are going to examine a topic that has attracted substantial scientific and policy attention in recent years: Neural Plasticity and Learning. I want to begin by giving you some scientific context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are fundamentally different from anything available before.",
+      "topic": "Internet and information technology",
+      "prompt": "Item 14: Internet and information technology",
+      "audioScript": "The internet revolutionized communication by connecting computers worldwide into a global network. Packet switching enables data to travel efficiently across multiple routes. Protocols standardize how devices exchange information reliably between distant locations.",
+      "displayTranscript": "The internet revolutionized communication by connecting computers worldwide into a local network. Packet switching enables data to travel slowly across multiple routes. Protocols standardize how devices exchange information poorly between nearby locations.",
       "incorrectWords": [
-        "substantial",
-        "scientific",
-        "fundamentally"
+        "local",
+        "slowly",
+        "poorly",
+        "nearby"
       ],
       "correctWords": [
-        "considerable",
-        "historical",
-        "qualitatively"
+        "global",
+        "efficiently",
+        "reliably",
+        "distant"
       ],
-      "explanation": "Three words in the transcript differ from the audio: 'substantial' should be 'considerable', 'scientific' should be 'historical', and 'fundamentally' should be 'qualitatively'."
+      "explanation": "The audio says global, efficiently, reliably and distant.",
+      "questionNumber": 14
     },
     {
-      "id": "pte-listening-023-q015",
+      "id": "pte-listening-023-q15",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Highlight the incorrect words (recording 2). Click the words in the transcript that differ from the recording about Neural Plasticity and Learning.",
-      "audioScript": "What the evidence consistently shows is that Neural Plasticity and Learning involves complex interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.",
-      "displayTranscript": "What the evidence consistently shows is that Neural Plasticity and Learning involves basic interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for measured patterns. This has major implications for how we design interventions and policies.",
+      "topic": "Enzyme catalysis",
+      "prompt": "Item 15: Enzyme catalysis",
+      "audioScript": "Enzymes accelerate chemical reactions by lowering activation energy requirements. Each enzyme has an optimal temperature and pH at which it works best. Extreme conditions can denature the protein and destroy its catalytic activity.",
+      "displayTranscript": "Enzymes accelerate chemical reactions by raising activation energy requirements. Each enzyme has an optimal temperature and pH at which it works worst. Extreme conditions can strengthen the protein and enhance its catalytic activity.",
       "incorrectWords": [
-        "basic",
-        "measured",
-        "major"
+        "raising",
+        "worst",
+        "strengthen",
+        "enhance"
       ],
       "correctWords": [
-        "complex",
-        "observed",
-        "significant"
+        "lowering",
+        "best",
+        "denature",
+        "destroy"
       ],
-      "explanation": "Three words differ from the audio: 'basic' should be 'complex', 'measured' should be 'observed', and 'major' should be 'significant'."
+      "explanation": "The audio says lowering, best, denature and destroy.",
+      "questionNumber": 15
     },
     {
-      "id": "pte-listening-023-q016",
+      "id": "pte-listening-023-q16",
       "questionType": "write_from_dictation",
-      "prompt": "Question 16. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "correctAnswer": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 16: Write from dictation",
+      "audioScript": "Neural plasticity allows the brain to reorganize and form new connections throughout life.",
+      "correctAnswer": "Neural plasticity allows the brain to reorganize and form new connections throughout life.",
+      "explanation": "",
+      "questionNumber": 16
     },
     {
-      "id": "pte-listening-023-q017",
+      "id": "pte-listening-023-q17",
       "questionType": "write_from_dictation",
-      "prompt": "Question 17. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "International coordination is essential because the challenges involved do not respect national borders.",
-      "correctAnswer": "International coordination is essential because the challenges involved do not respect national borders.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 17: Write from dictation",
+      "audioScript": "Artificial intelligence systems require large datasets and computational power for effective training.",
+      "correctAnswer": "Artificial intelligence systems require large datasets and computational power for effective training.",
+      "explanation": "",
+      "questionNumber": 17
     }
   ]
 }

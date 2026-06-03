@@ -3,248 +3,288 @@
   "exam": "pte",
   "section": "listening",
   "type": "section",
-  "title": "PTE Academic Listening Practice Test 52",
-  "topic": "The Cognitive Science of Reading",
-  "durationSeconds": 2700,
+  "title": "PTE Academic Listening — Practice Test 52",
+  "topic": "Mixed academic topics (one per item, as in the real test)",
+  "durationSeconds": 2400,
   "questionCount": 17,
-  "instructions": "Listen to the audio for each item and respond according to the question type. In the real PTE exam you hear actual audio; here the transcript is shown for study purposes.",
+  "instructions": "Each item has its own recording. Audio plays automatically when you reach an item.",
   "questions": [
     {
-      "id": "pte-listening-052-q001",
+      "id": "pte-listening-052-q1",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 1. You will hear a short lecture about The Cognitive Science of Reading. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "topic": "The Cognitive Science of Reading",
+      "topic": "Earthquake Prediction and Seismic Activity",
+      "prompt": "Item 1: Earthquake Prediction and Seismic Activity",
+      "audioScript": "Scientists have not yet developed reliable methods for predicting specific earthquakes, despite decades of research. Seismologists can identify seismically active regions and estimate the probability of earthquakes within specific timeframes. GPS technology detects ground deformation that accumulates before earthquakes. Foreshock patterns sometimes precede major earthquakes, though they appear inconsistently. Early warning systems can provide seconds to minutes of alert after an earthquake begins. This allows people to take cover before strong shaking arrives.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into The Cognitive Science of Reading reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Scientists cannot reliably predict specific earthquakes but can identify high-risk regions and estimate probabilities. GPS detects ground deformation before quakes. Foreshocks sometimes precede earthquakes unpredictably. Early warning systems provide seconds of alert after earthquakes start, allowing people to protect themselves before strong shaking arrives.",
+      "explanation": "",
+      "questionNumber": 1
     },
     {
-      "id": "pte-listening-052-q002",
+      "id": "pte-listening-052-q2",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 2. You will hear a short lecture about The Cognitive Science of Reading — Key Dimensions. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "topic": "The Cognitive Science of Reading — Key Dimensions",
+      "topic": "Cognitive Development in Infants",
+      "prompt": "Item 2: Cognitive Development in Infants",
+      "audioScript": "Jean Piaget's theory of cognitive development identified four distinct stages from birth to adolescence. During the sensorimotor stage, from birth to two years, infants understand the world through senses and movement. Object permanence, the understanding that objects exist when not visible, develops around eight months. The preoperational stage follows, lasting until age seven, characterized by egocentrism and symbolic thinking. These early stages form the foundation for more complex cognitive abilities.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into The Cognitive Science of Reading — Key Dimensions reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Piaget identified four cognitive development stages beginning in infancy. The sensorimotor stage from birth to two years involves sensory exploration and learning object permanence around eight months. The preoperational stage until age seven features egocentrism and symbolic thinking. These foundational stages enable more complex cognitive abilities.",
+      "explanation": "",
+      "questionNumber": 2
     },
     {
-      "id": "pte-listening-052-q003",
+      "id": "pte-listening-052-q3",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "Which TWO of the following points does the speaker make about The Cognitive Science of Reading?",
+      "topic": "Ocean Currents and Climate Regulation",
+      "audioScript": "Ocean currents transport heat across global regions, profoundly affecting climate. The Gulf Stream carries warm water northward from the tropics, moderating European climate. The Thermohaline circulation, driven by temperature and salinity differences, moves water through ocean basins. These currents distribute nutrients supporting marine ecosystems. El Niño and La Niña oscillations alter normal current patterns with global climate consequences. Understanding ocean circulation is essential for climate prediction and seafood production. Human activities may disrupt these currents with unknown consequences.",
+      "question": "According to the speaker, which TWO functions do ocean currents perform?",
       "options": [
-        "The Cognitive Science of Reading involves complex interactions that cannot be explained by single-factor models",
-        "Early research in this field was conducted entirely by natural scientists",
-        "The economic costs of failing to address this topic are estimated to be very high",
-        "International agreements have fully resolved the challenges in this area",
-        "Digital data collection has transformed the research landscape in this field"
+        "Currents trap atmospheric gases in deep ocean",
+        "The Gulf Stream carries warm water northward",
+        "Thermohaline circulation moves water through basins",
+        "Currents prevent nutrient distribution to organisms",
+        "Ocean currents have no effect on climate"
       ],
       "correctAnswers": [
-        "The Cognitive Science of Reading involves complex interactions that cannot be explained by single-factor models",
-        "The economic costs of failing to address this topic are estimated to be very high"
+        "The Gulf Stream carries warm water northward",
+        "Thermohaline circulation moves water through basins"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker describes the Gulf Stream transporting warm water and the Thermohaline circulation as key current functions.",
+      "prompt": "Item 3: Ocean Currents and Climate Regulation",
+      "questionNumber": 3
     },
     {
-      "id": "pte-listening-052-q004",
+      "id": "pte-listening-052-q4",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "Which TWO statements accurately reflect what the speaker says about responses to The Cognitive Science of Reading?",
+      "topic": "Neurotransmitters and Brain Chemistry",
+      "audioScript": "Neurotransmitters are chemical messengers enabling communication between neurons. Dopamine influences motivation, reward, and movement. Serotonin regulates mood and sleep. Acetylcholine controls muscle contraction and cognition. Glutamate is the primary excitatory neurotransmitter. GABA provides inhibitory effects balancing neural activity. Imbalances in neurotransmitter levels correlate with depression, anxiety, and neurological disorders. Psychotropic medications often target specific neurotransmitter systems. Research continues exploring neurotransmitter dysfunction in mental health conditions.",
+      "question": "According to the speaker, which TWO neurotransmitters regulate distinct neural functions?",
       "options": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "All international agreements related to this topic have been fully implemented",
-        "Better monitoring technology is increasingly available and affordable",
-        "The research community in this field is competitive and unwelcoming to newcomers",
-        "Real-world stakes in this field are considered minor by most researchers"
+        "Dopamine controls muscle contraction only",
+        "Serotonin regulates mood and sleep",
+        "Acetylcholine is purely inhibitory",
+        "Glutamate serves as the primary excitatory neurotransmitter",
+        "GABA increases all neural activity"
       ],
       "correctAnswers": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "Better monitoring technology is increasingly available and affordable"
+        "Serotonin regulates mood and sleep",
+        "Glutamate serves as the primary excitatory neurotransmitter"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker specifically identifies serotonin's mood and sleep functions, and describes glutamate as the primary excitatory neurotransmitter.",
+      "prompt": "Item 4: Neurotransmitters and Brain Chemistry",
+      "questionNumber": 4
     },
     {
-      "id": "pte-listening-052-q005",
+      "id": "pte-listening-052-q5",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Question 5. You will hear a recording about The Cognitive Science of Reading. Type the missing word in each numbered blank as you listen.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "The study of The Cognitive Science of Reading demonstrates that __1__ interactions between multiple systems drive observed outcomes. Researchers have consistently found that __2__ explanations fail to account for real-world patterns. The international dimension is critical because The Cognitive Science of Reading does not respect __3__ borders.",
+      "topic": "Particle Physics and Quantum Mechanics",
+      "prompt": "Item 5: Particle Physics and Quantum Mechanics",
+      "audioScript": "Particle physics studies fundamental constituents of matter at the smallest scales. The Standard model describes quarks and leptons as basic building blocks. Subatomic particles are held together by fundamental forces carried by force-carrying particles. The discovery of the Higgs boson in 2012 confirmed theories predicting how particles acquire mass through interaction with an energy field.",
+      "transcript": "Particle physics studies fundamental constituents of matter at the smallest scales. The __1__ model describes quarks and leptons as basic building blocks. Subatomic particles are held together by fundamental forces carried by __2__ particles. The discovery of the Higgs __3__ in 2012 confirmed theories predicting how particles acquire mass through interaction with an energy field.",
       "correctAnswers": [
-        "complex",
-        "simplistic",
-        "national"
+        "Standard",
+        "force-carrying",
+        "boson"
       ],
-      "explanation": "These three words appear verbatim in the audio transcript at the corresponding positions in the transcript shown to the candidate."
+      "explanation": "",
+      "questionNumber": 5
     },
     {
-      "id": "pte-listening-052-q006",
+      "id": "pte-listening-052-q6",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 2). Type the missing word in each blank as you listen to the passage about The Cognitive Science of Reading.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "What the evidence consistently shows is that The Cognitive Science of Reading involves __1__ interactions between multiple systems. From an economic standpoint, the costs of __2__ in this area are substantial. Looking forward, the trajectory will depend on __3__, political will, and effective communication between scientists and policymakers.",
+      "topic": "Tropical Rainforest Biodiversity",
+      "prompt": "Item 6: Tropical Rainforest Biodiversity",
+      "audioScript": "Tropical rainforests contain approximately half of Earth's terrestrial species despite covering only seven percent of land. The dense canopy of plants creates multiple layers where different species have evolved specialized roles. Trees compete for limited light by growing tall, while lianas and epiphytes use other plants for access. The rich soil is paradoxically fragile because nutrients are rapidly absorbed by living plants; decomposed material is recycled quickly by decomposers and fungi.",
+      "transcript": "Tropical rainforests contain approximately half of Earth's terrestrial species despite covering only seven percent of land. The dense __1__ of plants creates multiple layers where different species have evolved specialized roles. Trees compete for limited __2__ by growing tall, while lianas and epiphytes use other plants for access. The rich soil is paradoxically fragile because nutrients are rapidly absorbed by living plants; decomposed material is recycled quickly by __3__ and fungi.",
       "correctAnswers": [
-        "complex",
-        "inaction",
-        "innovation"
+        "canopy",
+        "light",
+        "decomposers"
       ],
-      "explanation": "These three words appear in the audio at the corresponding blank positions in the transcript."
+      "explanation": "",
+      "questionNumber": 6
     },
     {
-      "id": "pte-listening-052-q007",
+      "id": "pte-listening-052-q7",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 3). Type the missing word in each blank as you listen to the passage about The Cognitive Science of Reading.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "The international dimension is also __1__. The Cognitive Science of Reading does not respect national borders, which means that coordinated, __2__ responses are necessary. The decisions made in the next ten to fifteen years will determine outcomes for __3__ to come.",
+      "topic": "Industrial Revolution Manufacturing",
+      "prompt": "Item 7: Industrial Revolution Manufacturing",
+      "audioScript": "The Industrial Revolution transformed production from craft-based to mechanized manufacturing. The steam engine, invented by James Watt, powered machines and transportation, providing mechanical energy previously unavailable on such scales. Textile mills combined multiple production steps in one location, dramatically increasing output per worker. Factory systems relied on division of labor performing repetitive tasks, establishing the modern industrial workforce structure.",
+      "transcript": "The Industrial Revolution transformed production from craft-based to mechanized manufacturing. The steam engine, invented by James Watt, powered machines and transportation, providing __1__ energy previously unavailable on such scales. Textile __2__ combined multiple production steps in one location, dramatically increasing output per worker. Factory systems relied on __3__ labor performing repetitive tasks, establishing the modern industrial workforce structure.",
       "correctAnswers": [
-        "critical",
-        "multilateral",
-        "generations"
+        "mechanical",
+        "mills",
+        "division of"
       ],
-      "explanation": "These words are spoken in the audio and correspond to the blanks in the transcript."
+      "explanation": "",
+      "questionNumber": 7
     },
     {
-      "id": "pte-listening-052-q008",
+      "id": "pte-listening-052-q8",
       "questionType": "highlight_correct_summary",
-      "prompt": "Question 8. Listen to the recording about The Cognitive Science of Reading, then select the paragraph that best summarises what you heard.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Atmospheric Circulation and Trade Winds",
+      "prompt": "Item 8: Atmospheric Circulation and Trade Winds",
+      "audioScript": "Atmospheric circulation patterns result from differential solar heating and Earth's rotation. Air heated at the equator rises, creating low-pressure zones. Rising air descends at approximately 30 degrees latitude, creating high-pressure zones. Trade winds flow from high-pressure zones toward equatorial low-pressure. The Coriolis effect deflects moving air, creating the characteristic wind patterns. These circulation patterns drive weather systems and influence climate zones globally.",
       "options": [
-        "The lecture/interview discusses The Cognitive Science of Reading, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-        "The lecture argues that The Cognitive Science of Reading is a minor concern that has been overstated by researchers and that existing policies are already sufficient to address all related challenges.",
-        "The speaker focuses exclusively on the historical background of The Cognitive Science of Reading without discussing current evidence, economic dimensions, or policy implications."
+        "Trade winds result from atmospheric pressure differences created by differential solar heating and the Coriolis effect.",
+        "Trade winds blow randomly without connection to solar heating or Earth's rotation patterns.",
+        "Atmospheric circulation moves equally in all directions from the equator toward the poles."
       ],
-      "correctAnswer": "The lecture/interview discusses The Cognitive Science of Reading, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-      "explanation": "Option A accurately summarises the main themes: complexity, economic stakes, international cooperation, and adaptive management. The other options misrepresent the content."
+      "correctAnswer": "Trade winds result from atmospheric pressure differences created by differential solar heating and the Coriolis effect.",
+      "explanation": "The speaker explains trade winds as pressure-driven flows influenced by solar heating and the Coriolis effect.",
+      "questionNumber": 8
     },
     {
-      "id": "pte-listening-052-q009",
+      "id": "pte-listening-052-q9",
       "questionType": "highlight_correct_summary",
-      "prompt": "Highlight the correct summary (recording 2). Listen, then select the paragraph that best summarises the talk on The Cognitive Science of Reading.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Neurodegenerative Diseases and Protein Misfolding",
+      "prompt": "Item 9: Neurodegenerative Diseases and Protein Misfolding",
+      "audioScript": "Neurodegenerative diseases like Parkinson's and Alzheimer's involve protein misfolding and aggregation. Normal proteins misfold, adopting abnormal shapes that propagate through neural tissue. Amyloid-beta plaques accumulate in Alzheimer's disease, disrupting neural communication. Alpha-synuclein aggregates characterize Parkinson's disease. Tau protein tangles occur in both conditions. These pathological proteins accumulate faster than cells can clear them. Research focuses on preventing misfolding or enhancing clearance mechanisms.",
       "options": [
-        "The audio emphasises that The Cognitive Science of Reading requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-        "The speaker claims that The Cognitive Science of Reading is fully understood and that all the major scientific questions in this area have already been resolved by existing research.",
-        "The audio focuses solely on the historical background of The Cognitive Science of Reading and does not address any current research findings or policy implications."
+        "Neurodegenerative diseases involve protein misfolding and aggregation that disrupts neural function and accumulates in brain tissue.",
+        "Neurodegenerative diseases result solely from genetic mutations without any protein-related pathology.",
+        "Protein misfolding has no connection to neuronal death or cognitive decline in aging brains."
       ],
-      "correctAnswer": "The audio emphasises that The Cognitive Science of Reading requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-      "explanation": "Option A is the only summary that accurately reflects the audio's discussion of tipping points, the need for adaptive management, and improved monitoring."
+      "correctAnswer": "Neurodegenerative diseases involve protein misfolding and aggregation that disrupts neural function and accumulates in brain tissue.",
+      "explanation": "The speaker identifies protein misfolding and aggregation as characteristic features of neurodegenerative disease pathology.",
+      "questionNumber": 9
     },
     {
-      "id": "pte-listening-052-q010",
+      "id": "pte-listening-052-q10",
       "questionType": "multiple_choice_single",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "According to the audio, what is the key reason why single-factor explanations of The Cognitive Science of Reading consistently fail?",
+      "topic": "Baroque Music Composition",
+      "audioScript": "Baroque music, flourishing from 1600 to 1750, emphasized contrast, emotion, and complex polyphony. Composers like Bach, Handel, and Vivaldi created intricate instrumental and vocal works. The invention of the fortepiano enabled dynamic variation impossible on the harpsichord. Ground bass provided structural foundation for variations above. Counterpoint created multiple independent melodic lines simultaneously. Opera emerged as a major art form combining music, drama, and spectacle. Baroque style eventually gave way to the Classical period's more formal structures.",
+      "question": "What was a key technological innovation that influenced Baroque music composition?",
       "options": [
-        "Researchers lack sufficient data to test single-factor models",
-        "The Cognitive Science of Reading involves complex interactions between multiple interconnected systems",
-        "Single-factor models are too expensive to implement in practice",
-        "Political opposition prevents single-factor explanations from being published"
+        "The invention of the printing press enabling mass music publication",
+        "The creation of the fortepiano allowing dynamic variation",
+        "The development of electronic amplification for louder performances",
+        "The invention of the microphone improving vocal recording"
       ],
-      "correctAnswer": "The Cognitive Science of Reading involves complex interactions between multiple interconnected systems",
-      "explanation": "The audio explicitly states that simplistic, single-factor explanations fail because the topic involves complex interactions between multiple systems."
+      "correctAnswer": "The creation of the fortepiano allowing dynamic variation",
+      "explanation": "The speaker identifies the fortepiano's dynamic capabilities as enabling new compositional possibilities.",
+      "prompt": "Item 10: Baroque Music Composition",
+      "questionNumber": 10
     },
     {
-      "id": "pte-listening-052-q011",
+      "id": "pte-listening-052-q11",
       "questionType": "multiple_choice_single",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "According to the audio on The Cognitive Science of Reading, what is the key principle for designing effective policies in this field?",
+      "topic": "Soil Formation and Weathering Processes",
+      "audioScript": "Soil forms through weathering of parent material combined with organic matter accumulation. Physical weathering breaks rocks through temperature changes and mechanical stress. Chemical weathering dissolves minerals through water and acidic reactions. Biological weathering occurs as plant roots and organisms break apart rocks. Soil development requires centuries to millennia depending on climate and parent material. Mature soil contains distinct horizons including organic-rich topsoil, mineral subsoil, and parent material layers. Soil degradation through erosion removes topsoil faster than replacement.",
+      "question": "What is the primary concern regarding soil formation rates?",
       "options": [
-        "Locking in fixed approaches based on the best current scientific knowledge",
-        "Delegating all policy decisions to international bodies",
-        "Adaptive management — designing policies that can be updated as new evidence emerges",
-        "Prioritising economic growth over scientific caution"
+        "Soil forms so rapidly that erosion never removes it faster than replacement",
+        "Soil formation takes centuries while erosion removes topsoil faster than replacement",
+        "Soil forms instantaneously from parent material without weathering processes",
+        "Chemical weathering is too slow to contribute meaningfully to soil formation"
       ],
-      "correctAnswer": "Adaptive management — designing policies that can be updated as new evidence emerges",
-      "explanation": "The audio explicitly describes adaptive management as the key principle: 'designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches.'"
+      "correctAnswer": "Soil formation takes centuries while erosion removes topsoil faster than replacement",
+      "explanation": "The speaker contrasts slow soil development with rapid erosion removal, indicating a critical imbalance.",
+      "prompt": "Item 11: Soil Formation and Weathering Processes",
+      "questionNumber": 11
     },
     {
-      "id": "pte-listening-052-q012",
+      "id": "pte-listening-052-q12",
       "questionType": "select_missing_word",
-      "prompt": "Question 12. You will hear a recording about The Cognitive Science of Reading. At the end, the final words have been replaced by a beep. Select the option that correctly completes the recording.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Mathematical Problem Solving",
+      "prompt": "Item 12: Mathematical Problem Solving",
+      "audioScript": "Mathematics requires understanding underlying concepts rather than memorizing procedures. Students who understand why solutions work transfer knowledge to novel problems. Visual representations help abstract thinking by making relationships concrete. Working through mistakes strengthens learning more than avoiding errors. Collaboration with peers provides perspective on solution approaches. Mathematics becomes accessible when taught as sense-making rather than rule application.",
       "options": [
-        "come",
-        "start",
-        "forget",
-        "imagine"
+        "understanding",
+        "comprehension",
+        "knowledge",
+        "learning"
       ],
-      "correctAnswer": "come",
-      "explanation": "The sentence reads '...will determine outcomes for generations to come.' The word 'come' completes the fixed phrase 'for generations to come' which fits the context of the lecture's conclusion."
+      "correctAnswer": "understanding",
+      "explanation": "The speaker states mathematics becomes accessible when taught as understanding rather than rules.",
+      "questionNumber": 12
     },
     {
-      "id": "pte-listening-052-q013",
+      "id": "pte-listening-052-q13",
       "questionType": "select_missing_word",
-      "prompt": "Select the missing word (recording 2). The final words are replaced by a beep — choose the correct completion for the talk on The Cognitive Science of Reading.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Cognitive Science of Reading. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Cognitive Science of Reading involves and why it matters?\n\nExpert: Certainly. The Cognitive Science of Reading sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Cognitive Science of Reading changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Career Development and Professional Growth",
+      "prompt": "Item 13: Career Development and Professional Growth",
+      "audioScript": "Successful careers develop through continuous learning and skill development. Seeking feedback from mentors and colleagues identifies improvement areas. Building professional networks creates opportunities and provides support. Taking calculated risks with challenging projects builds confidence and expertise. Reflecting on successes and failures extracts lessons for future application. Companies valuing employee development create cultures where people thrive and advance.",
       "options": [
-        "change",
-        "funding",
-        "debate",
-        "history"
+        "thrive",
+        "succeed",
+        "progress",
+        "advance"
       ],
-      "correctAnswer": "change",
-      "explanation": "The sentence ends 'too slow relative to the pace of change' — the word 'change' completes the phrase that directly contrasts the pace of policy action with the pace of environmental or systemic change."
+      "correctAnswer": "thrive",
+      "explanation": "The speaker states that development-focused companies create cultures where people thrive.",
+      "questionNumber": 13
     },
     {
-      "id": "pte-listening-052-q014",
+      "id": "pte-listening-052-q14",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Question 14. Listen to the recording about The Cognitive Science of Reading. The transcript below differs from it in several places — click the words that are different from what the speaker says.",
-      "audioScript": "Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The Cognitive Science of Reading. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are qualitatively different from anything available before.",
-      "displayTranscript": "Today we are going to examine a topic that has attracted substantial scientific and policy attention in recent years: The Cognitive Science of Reading. I want to begin by giving you some scientific context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are fundamentally different from anything available before.",
+      "topic": "Plate tectonics",
+      "prompt": "Item 14: Plate tectonics",
+      "audioScript": "Plate tectonics explains earthquakes, volcanoes, and mountain building through crustal dynamics. Earth's lithosphere consists of rigid plates moving over a plastic mantle. Divergent boundaries create new crust as plates separate, while convergent boundaries destroy crust as plates collide.",
+      "displayTranscript": "Plate tectonics explains earthquakes, volcanoes, and mountain erosion through crustal dynamics. Earth's lithosphere consists of rigid plates moving over a solid mantle. Divergent boundaries create new crust as plates merge, while convergent boundaries destroy crust as plates align.",
       "incorrectWords": [
-        "substantial",
-        "scientific",
-        "fundamentally"
+        "erosion",
+        "solid",
+        "merge",
+        "align"
       ],
       "correctWords": [
-        "considerable",
-        "historical",
-        "qualitatively"
+        "building",
+        "plastic",
+        "separate",
+        "collide"
       ],
-      "explanation": "Three words in the transcript differ from the audio: 'substantial' should be 'considerable', 'scientific' should be 'historical', and 'fundamentally' should be 'qualitatively'."
+      "explanation": "The audio says building, plastic, separate and collide.",
+      "questionNumber": 14
     },
     {
-      "id": "pte-listening-052-q015",
+      "id": "pte-listening-052-q15",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Highlight the incorrect words (recording 2). Click the words in the transcript that differ from the recording about The Cognitive Science of Reading.",
-      "audioScript": "What the evidence consistently shows is that The Cognitive Science of Reading involves complex interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.",
-      "displayTranscript": "What the evidence consistently shows is that The Cognitive Science of Reading involves basic interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for measured patterns. This has major implications for how we design interventions and policies.",
+      "topic": "The immune system",
+      "prompt": "Item 15: The immune system",
+      "audioScript": "The immune system defends against pathogens through innate and adaptive responses. Innate immunity provides immediate defense through physical barriers and phagocytic cells. Adaptive immunity develops specific antibodies targeting particular pathogens.",
+      "displayTranscript": "The immune system attacks against pathogens through innate and adaptive responses. Innate immunity provides delayed defense through chemical barriers and phagocytic cells. Adaptive immunity develops random antibodies targeting particular pathogens.",
       "incorrectWords": [
-        "basic",
-        "measured",
-        "major"
+        "attacks",
+        "delayed",
+        "chemical",
+        "random"
       ],
       "correctWords": [
-        "complex",
-        "observed",
-        "significant"
+        "defends",
+        "immediate",
+        "physical",
+        "specific"
       ],
-      "explanation": "Three words differ from the audio: 'basic' should be 'complex', 'measured' should be 'observed', and 'major' should be 'significant'."
+      "explanation": "The audio says defends, immediate, physical and specific.",
+      "questionNumber": 15
     },
     {
-      "id": "pte-listening-052-q016",
+      "id": "pte-listening-052-q16",
       "questionType": "write_from_dictation",
-      "prompt": "Question 16. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "correctAnswer": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 16: Write from dictation",
+      "audioScript": "Genetic engineering enables scientists to modify organism traits through direct DNA manipulation.",
+      "correctAnswer": "Genetic engineering enables scientists to modify organism traits through direct DNA manipulation.",
+      "explanation": "",
+      "questionNumber": 16
     },
     {
-      "id": "pte-listening-052-q017",
+      "id": "pte-listening-052-q17",
       "questionType": "write_from_dictation",
-      "prompt": "Question 17. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "International coordination is essential because the challenges involved do not respect national borders.",
-      "correctAnswer": "International coordination is essential because the challenges involved do not respect national borders.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 17: Write from dictation",
+      "audioScript": "Medieval monasteries preserved classical texts and knowledge during periods of social upheaval.",
+      "correctAnswer": "Medieval monasteries preserved classical texts and knowledge during periods of social upheaval.",
+      "explanation": "",
+      "questionNumber": 17
     }
   ]
 }

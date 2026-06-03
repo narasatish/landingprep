@@ -3,248 +3,288 @@
   "exam": "pte",
   "section": "listening",
   "type": "section",
-  "title": "PTE Academic Listening Practice Test 3",
-  "topic": "The History of Antibiotics",
-  "durationSeconds": 2700,
+  "title": "PTE Academic Listening — Practice Test 3",
+  "topic": "Mixed academic topics (one per item, as in the real test)",
+  "durationSeconds": 2400,
   "questionCount": 17,
-  "instructions": "Listen to the audio for each item and respond according to the question type. In the real PTE exam you hear actual audio; here the transcript is shown for study purposes.",
+  "instructions": "Each item has its own recording. Audio plays automatically when you reach an item.",
   "questions": [
     {
-      "id": "pte-listening-003-q001",
+      "id": "pte-listening-003-q1",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 1. You will hear a short lecture about The History of Antibiotics. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "topic": "The History of Antibiotics",
+      "topic": "Earthquake Prediction and Seismic Activity",
+      "prompt": "Item 1: Earthquake Prediction and Seismic Activity",
+      "audioScript": "Scientists have not yet developed reliable methods for predicting specific earthquakes, despite decades of research. Seismologists can identify seismically active regions and estimate the probability of earthquakes within specific timeframes. GPS technology detects ground deformation that accumulates before earthquakes. Foreshock patterns sometimes precede major earthquakes, though they appear inconsistently. Early warning systems can provide seconds to minutes of alert after an earthquake begins. This allows people to take cover before strong shaking arrives.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into The History of Antibiotics reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Scientists cannot reliably predict specific earthquakes but can identify high-risk regions and estimate probabilities. GPS detects ground deformation before quakes. Foreshocks sometimes precede earthquakes unpredictably. Early warning systems provide seconds of alert after earthquakes start, allowing people to protect themselves before strong shaking arrives.",
+      "explanation": "",
+      "questionNumber": 1
     },
     {
-      "id": "pte-listening-003-q002",
+      "id": "pte-listening-003-q2",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 2. You will hear a short lecture about The History of Antibiotics — Key Dimensions. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "topic": "The History of Antibiotics — Key Dimensions",
+      "topic": "Cognitive Development in Infants",
+      "prompt": "Item 2: Cognitive Development in Infants",
+      "audioScript": "Jean Piaget's theory of cognitive development identified four distinct stages from birth to adolescence. During the sensorimotor stage, from birth to two years, infants understand the world through senses and movement. Object permanence, the understanding that objects exist when not visible, develops around eight months. The preoperational stage follows, lasting until age seven, characterized by egocentrism and symbolic thinking. These early stages form the foundation for more complex cognitive abilities.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into The History of Antibiotics — Key Dimensions reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Piaget identified four cognitive development stages beginning in infancy. The sensorimotor stage from birth to two years involves sensory exploration and learning object permanence around eight months. The preoperational stage until age seven features egocentrism and symbolic thinking. These foundational stages enable more complex cognitive abilities.",
+      "explanation": "",
+      "questionNumber": 2
     },
     {
-      "id": "pte-listening-003-q003",
+      "id": "pte-listening-003-q3",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "Which TWO of the following points does the speaker make about The History of Antibiotics?",
+      "topic": "Ancient Egyptian Pyramids and Construction",
+      "audioScript": "The Great Pyramids of Giza remain monumental achievements of ancient engineering. The Great Pyramid of Khufu required approximately 20 years to construct using 2.3 million stone blocks. Workers quarried limestone blocks weighing up to 2.5 tons. Construction methods likely involved ramps, levers, and organized labor systems. Precise geometric alignment demonstrates advanced mathematical knowledge. These structures served as monumental tombs housing pharaohs and treasures. Archaeological evidence suggests tens of thousands of workers participated in construction.",
+      "question": "According to the speaker, which TWO claims about the pyramids are supported?",
       "options": [
-        "The History of Antibiotics involves complex interactions that cannot be explained by single-factor models",
-        "Early research in this field was conducted entirely by natural scientists",
-        "The economic costs of failing to address this topic are estimated to be very high",
-        "International agreements have fully resolved the challenges in this area",
-        "Digital data collection has transformed the research landscape in this field"
+        "Construction used only 100,000 stone blocks",
+        "The Great Pyramid required 20 years to build",
+        "Individual blocks weighed up to 2.5 tons",
+        "Construction methods were entirely mysterious",
+        "Precise alignment shows mathematical knowledge"
       ],
       "correctAnswers": [
-        "The History of Antibiotics involves complex interactions that cannot be explained by single-factor models",
-        "The economic costs of failing to address this topic are estimated to be very high"
+        "The Great Pyramid required 20 years to build",
+        "Precise alignment shows mathematical knowledge"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker explicitly states the 20-year construction period and describes precise geometric alignment demonstrating mathematical knowledge.",
+      "prompt": "Item 3: Ancient Egyptian Pyramids and Construction",
+      "questionNumber": 3
     },
     {
-      "id": "pte-listening-003-q004",
+      "id": "pte-listening-003-q4",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "Which TWO statements accurately reflect what the speaker says about responses to The History of Antibiotics?",
+      "topic": "Antibiotic Resistance and Bacterial Evolution",
+      "audioScript": "Antibiotic resistance develops when bacteria survive antibiotic exposure through genetic mutations or acquired resistance genes. Overuse of antibiotics in medicine and agriculture accelerates resistance development. Some bacteria now resist multiple antibiotics simultaneously, becoming methicillin-resistant Staphylococcus aureus. Resistant bacteria can transfer genes horizontally to other bacterial species. Resistance mechanisms include enzyme inactivation of antibiotics and altered bacterial cell walls. Reducing unnecessary antibiotic use and developing new antibiotics are crucial strategies against resistance.",
+      "question": "According to the speaker, which TWO factors contribute to antibiotic resistance?",
       "options": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "All international agreements related to this topic have been fully implemented",
-        "Better monitoring technology is increasingly available and affordable",
-        "The research community in this field is competitive and unwelcoming to newcomers",
-        "Real-world stakes in this field are considered minor by most researchers"
+        "Antibiotic resistance cannot develop through mutations",
+        "Bacteria acquire resistance genes and mutations",
+        "Overuse of antibiotics accelerates resistance",
+        "Resistance genes transfer only vertically to offspring",
+        "No bacteria can resist multiple antibiotics"
       ],
       "correctAnswers": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "Better monitoring technology is increasingly available and affordable"
+        "Bacteria acquire resistance genes and mutations",
+        "Overuse of antibiotics accelerates resistance"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker describes resistance developing through mutations and acquired genes, and explicitly states overuse accelerates this development.",
+      "prompt": "Item 4: Antibiotic Resistance and Bacterial Evolution",
+      "questionNumber": 4
     },
     {
-      "id": "pte-listening-003-q005",
+      "id": "pte-listening-003-q5",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Question 5. You will hear a recording about The History of Antibiotics. Type the missing word in each numbered blank as you listen.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "transcript": "The study of The History of Antibiotics demonstrates that __1__ interactions between multiple systems drive observed outcomes. Researchers have consistently found that __2__ explanations fail to account for real-world patterns. The international dimension is critical because The History of Antibiotics does not respect __3__ borders.",
+      "topic": "Plate Tectonics and Mountain Formation",
+      "prompt": "Item 5: Plate Tectonics and Mountain Formation",
+      "audioScript": "Mountains form through tectonic processes as Earth's crust deforms. Fold mountains form where convergent plate boundaries force crustal material upward, as seen in the Himalayas. Folding and faulting occur as rocks compress under enormous pressure from colliding plates. Volcanic mountains form where ascending magma reaches the surface. Erosion by wind, water, and ice gradually reduces mountain elevation over millions of years.",
+      "transcript": "Mountains form through tectonic processes as Earth's crust deforms. __1__ mountains form where convergent plate boundaries force crustal material upward, as seen in the Himalayas. Folding and faulting occur as rocks compress under enormous pressure from colliding __2__. Volcanic mountains form where ascending magma reaches the surface. Erosion by wind, water, and ice gradually reduces mountain __3__ over millions of years.",
       "correctAnswers": [
-        "complex",
-        "simplistic",
-        "national"
+        "Fold",
+        "plates",
+        "elevation"
       ],
-      "explanation": "These three words appear verbatim in the audio transcript at the corresponding positions in the transcript shown to the candidate."
+      "explanation": "",
+      "questionNumber": 5
     },
     {
-      "id": "pte-listening-003-q006",
+      "id": "pte-listening-003-q6",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 2). Type the missing word in each blank as you listen to the passage about The History of Antibiotics.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "transcript": "What the evidence consistently shows is that The History of Antibiotics involves __1__ interactions between multiple systems. From an economic standpoint, the costs of __2__ in this area are substantial. Looking forward, the trajectory will depend on __3__, political will, and effective communication between scientists and policymakers.",
+      "topic": "Atmospheric Composition and Weather",
+      "prompt": "Item 6: Atmospheric Composition and Weather",
+      "audioScript": "Earth's atmosphere consists of approximately 78 percent nitrogen and 21 percent oxygen, with remaining trace gases. Ozone in the stratospheric layer protects life from harmful ultraviolet radiation. Water vapor in the troposphere condenses to form clouds, driving precipitation and the hydrologic cycle. Greenhouse gases including carbon dioxide trap heat, causing the greenhouse effect that warms Earth's surface.",
+      "transcript": "Earth's atmosphere consists of approximately 78 percent nitrogen and 21 percent __1__, with remaining trace gases. Ozone in the __2__ layer protects life from harmful ultraviolet radiation. Water vapor in the troposphere condenses to form clouds, driving precipitation and the hydrologic cycle. Greenhouse gases including carbon dioxide trap heat, causing the __3__ effect that warms Earth's surface.",
       "correctAnswers": [
-        "complex",
-        "inaction",
-        "innovation"
+        "oxygen",
+        "stratospheric",
+        "greenhouse"
       ],
-      "explanation": "These three words appear in the audio at the corresponding blank positions in the transcript."
+      "explanation": "",
+      "questionNumber": 6
     },
     {
-      "id": "pte-listening-003-q007",
+      "id": "pte-listening-003-q7",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 3). Type the missing word in each blank as you listen to the passage about The History of Antibiotics.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "transcript": "The international dimension is also __1__. The History of Antibiotics does not respect national borders, which means that coordinated, __2__ responses are necessary. The decisions made in the next ten to fifteen years will determine outcomes for __3__ to come.",
+      "topic": "Greek Mythology and Cultural Influence",
+      "prompt": "Item 7: Greek Mythology and Cultural Influence",
+      "audioScript": "Ancient Greek myths served cultural and educational functions in society. The hero Hercules undertook twelve seemingly impossible labors as punishment for tragic actions, representing perseverance through hardship. Persephone's abduction by Hades created the Pomegranate myth explaining seasonal changes as her mother Demeter mourns. These narratives were performed in theaters and passed through oral storytelling, shaping cultural values and moral lessons.",
+      "transcript": "Ancient Greek myths served cultural and educational functions in society. The hero __1__ undertook twelve seemingly impossible labors as punishment for tragic actions, representing perseverance through hardship. Persephone's abduction by Hades created the __2__ myth explaining seasonal changes as her mother Demeter mourns. These narratives were performed in theaters and passed through __3__ storytelling, shaping cultural values and moral lessons.",
       "correctAnswers": [
-        "critical",
-        "multilateral",
-        "generations"
+        "Hercules",
+        "Pomegranate",
+        "oral"
       ],
-      "explanation": "These words are spoken in the audio and correspond to the blanks in the transcript."
+      "explanation": "",
+      "questionNumber": 7
     },
     {
-      "id": "pte-listening-003-q008",
+      "id": "pte-listening-003-q8",
       "questionType": "highlight_correct_summary",
-      "prompt": "Question 8. Listen to the recording about The History of Antibiotics, then select the paragraph that best summarises what you heard.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
+      "topic": "Metamorphic Rock Formation",
+      "prompt": "Item 8: Metamorphic Rock Formation",
+      "audioScript": "Metamorphic rocks form when existing rocks undergo chemical and physical changes due to heat, pressure, or chemical alteration deep within Earth's crust. High pressure and temperature cause mineral rearrangement without melting the rock. Parent rocks include sedimentary and igneous types. Examples include marble from limestone and schist from shale. Metamorphic rocks contain distinctive mineral alignments reflecting directional pressure. These rocks mark ancient collision zones and deep crustal processes.",
       "options": [
-        "The lecture/interview discusses The History of Antibiotics, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-        "The lecture argues that The History of Antibiotics is a minor concern that has been overstated by researchers and that existing policies are already sufficient to address all related challenges.",
-        "The speaker focuses exclusively on the historical background of The History of Antibiotics without discussing current evidence, economic dimensions, or policy implications."
+        "Metamorphic rocks form from existing rocks altered by heat and pressure deep in Earth, producing distinctive mineral alignments.",
+        "Metamorphic rocks form when sedimentary rocks melt completely into magma, then recrystallize near the surface.",
+        "All metamorphic rocks contain fossils unchanged from their parent rocks despite extreme geological conditions."
       ],
-      "correctAnswer": "The lecture/interview discusses The History of Antibiotics, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-      "explanation": "Option A accurately summarises the main themes: complexity, economic stakes, international cooperation, and adaptive management. The other options misrepresent the content."
+      "correctAnswer": "Metamorphic rocks form from existing rocks altered by heat and pressure deep in Earth, producing distinctive mineral alignments.",
+      "explanation": "The speaker explains metamorphic rocks result from heat and pressure altering parent rocks without melting, creating distinctive structures.",
+      "questionNumber": 8
     },
     {
-      "id": "pte-listening-003-q009",
+      "id": "pte-listening-003-q9",
       "questionType": "highlight_correct_summary",
-      "prompt": "Highlight the correct summary (recording 2). Listen, then select the paragraph that best summarises the talk on The History of Antibiotics.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
+      "topic": "Ecosystem Succession and Climax Communities",
+      "prompt": "Item 9: Ecosystem Succession and Climax Communities",
+      "audioScript": "Ecological succession describes predictable changes in community composition over time. Primary succession begins with bare rock where lichens colonize first, weathering rock into soil. Secondary succession follows disturbance in existing ecosystems, with pioneer species reestablishing quickly. As soil develops and shade increases, different species replace pioneers. Eventually, climax communities stabilize with mature species composition. Disturbances restart succession cycles, preventing permanent climax states in many ecosystems.",
       "options": [
-        "The audio emphasises that The History of Antibiotics requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-        "The speaker claims that The History of Antibiotics is fully understood and that all the major scientific questions in this area have already been resolved by existing research.",
-        "The audio focuses solely on the historical background of The History of Antibiotics and does not address any current research findings or policy implications."
+        "Ecological succession involves predictable species replacement from pioneer to climax communities, with early colonizers altering conditions enabling later species.",
+        "Ecological succession never occurs in nature; ecosystems remain unchanged for millions of years once established.",
+        "Climax communities develop rapidly after disturbances through simultaneous arrival of all mature species."
       ],
-      "correctAnswer": "The audio emphasises that The History of Antibiotics requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-      "explanation": "Option A is the only summary that accurately reflects the audio's discussion of tipping points, the need for adaptive management, and improved monitoring."
+      "correctAnswer": "Ecological succession involves predictable species replacement from pioneer to climax communities, with early colonizers altering conditions enabling later species.",
+      "explanation": "The speaker describes succession as predictable community changes with pioneering species preparing conditions for later species.",
+      "questionNumber": 9
     },
     {
-      "id": "pte-listening-003-q010",
+      "id": "pte-listening-003-q10",
       "questionType": "multiple_choice_single",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "According to the audio, what is the key reason why single-factor explanations of The History of Antibiotics consistently fail?",
+      "topic": "Baroque Music Composition",
+      "audioScript": "Baroque music, flourishing from 1600 to 1750, emphasized contrast, emotion, and complex polyphony. Composers like Bach, Handel, and Vivaldi created intricate instrumental and vocal works. The invention of the fortepiano enabled dynamic variation impossible on the harpsichord. Ground bass provided structural foundation for variations above. Counterpoint created multiple independent melodic lines simultaneously. Opera emerged as a major art form combining music, drama, and spectacle. Baroque style eventually gave way to the Classical period's more formal structures.",
+      "question": "What was a key technological innovation that influenced Baroque music composition?",
       "options": [
-        "Researchers lack sufficient data to test single-factor models",
-        "The History of Antibiotics involves complex interactions between multiple interconnected systems",
-        "Single-factor models are too expensive to implement in practice",
-        "Political opposition prevents single-factor explanations from being published"
+        "The invention of the printing press enabling mass music publication",
+        "The creation of the fortepiano allowing dynamic variation",
+        "The development of electronic amplification for louder performances",
+        "The invention of the microphone improving vocal recording"
       ],
-      "correctAnswer": "The History of Antibiotics involves complex interactions between multiple interconnected systems",
-      "explanation": "The audio explicitly states that simplistic, single-factor explanations fail because the topic involves complex interactions between multiple systems."
+      "correctAnswer": "The creation of the fortepiano allowing dynamic variation",
+      "explanation": "The speaker identifies the fortepiano's dynamic capabilities as enabling new compositional possibilities.",
+      "prompt": "Item 10: Baroque Music Composition",
+      "questionNumber": 10
     },
     {
-      "id": "pte-listening-003-q011",
+      "id": "pte-listening-003-q11",
       "questionType": "multiple_choice_single",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "According to the audio on The History of Antibiotics, what is the key principle for designing effective policies in this field?",
+      "topic": "Soil Formation and Weathering Processes",
+      "audioScript": "Soil forms through weathering of parent material combined with organic matter accumulation. Physical weathering breaks rocks through temperature changes and mechanical stress. Chemical weathering dissolves minerals through water and acidic reactions. Biological weathering occurs as plant roots and organisms break apart rocks. Soil development requires centuries to millennia depending on climate and parent material. Mature soil contains distinct horizons including organic-rich topsoil, mineral subsoil, and parent material layers. Soil degradation through erosion removes topsoil faster than replacement.",
+      "question": "What is the primary concern regarding soil formation rates?",
       "options": [
-        "Locking in fixed approaches based on the best current scientific knowledge",
-        "Delegating all policy decisions to international bodies",
-        "Adaptive management — designing policies that can be updated as new evidence emerges",
-        "Prioritising economic growth over scientific caution"
+        "Soil forms so rapidly that erosion never removes it faster than replacement",
+        "Soil formation takes centuries while erosion removes topsoil faster than replacement",
+        "Soil forms instantaneously from parent material without weathering processes",
+        "Chemical weathering is too slow to contribute meaningfully to soil formation"
       ],
-      "correctAnswer": "Adaptive management — designing policies that can be updated as new evidence emerges",
-      "explanation": "The audio explicitly describes adaptive management as the key principle: 'designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches.'"
+      "correctAnswer": "Soil formation takes centuries while erosion removes topsoil faster than replacement",
+      "explanation": "The speaker contrasts slow soil development with rapid erosion removal, indicating a critical imbalance.",
+      "prompt": "Item 11: Soil Formation and Weathering Processes",
+      "questionNumber": 11
     },
     {
-      "id": "pte-listening-003-q012",
+      "id": "pte-listening-003-q12",
       "questionType": "select_missing_word",
-      "prompt": "Question 12. You will hear a recording about The History of Antibiotics. At the end, the final words have been replaced by a beep. Select the option that correctly completes the recording.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to [beep]",
+      "topic": "Mathematical Problem Solving",
+      "prompt": "Item 12: Mathematical Problem Solving",
+      "audioScript": "Mathematics requires understanding underlying concepts rather than memorizing procedures. Students who understand why solutions work transfer knowledge to novel problems. Visual representations help abstract thinking by making relationships concrete. Working through mistakes strengthens learning more than avoiding errors. Collaboration with peers provides perspective on solution approaches. Mathematics becomes accessible when taught as sense-making rather than rule application.",
       "options": [
-        "come",
-        "start",
-        "forget",
-        "imagine"
+        "understanding",
+        "comprehension",
+        "knowledge",
+        "learning"
       ],
-      "correctAnswer": "come",
-      "explanation": "The sentence reads '...will determine outcomes for generations to come.' The word 'come' completes the fixed phrase 'for generations to come' which fits the context of the lecture's conclusion."
+      "correctAnswer": "understanding",
+      "explanation": "The speaker states mathematics becomes accessible when taught as understanding rather than rules.",
+      "questionNumber": 12
     },
     {
-      "id": "pte-listening-003-q013",
+      "id": "pte-listening-003-q13",
       "questionType": "select_missing_word",
-      "prompt": "Select the missing word (recording 2). The final words are replaced by a beep — choose the correct completion for the talk on The History of Antibiotics.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Antibiotics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Antibiotics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Antibiotics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of [beep]\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
+      "topic": "Career Development and Professional Growth",
+      "prompt": "Item 13: Career Development and Professional Growth",
+      "audioScript": "Successful careers develop through continuous learning and skill development. Seeking feedback from mentors and colleagues identifies improvement areas. Building professional networks creates opportunities and provides support. Taking calculated risks with challenging projects builds confidence and expertise. Reflecting on successes and failures extracts lessons for future application. Companies valuing employee development create cultures where people thrive and advance.",
       "options": [
-        "change",
-        "funding",
-        "debate",
-        "history"
+        "thrive",
+        "succeed",
+        "progress",
+        "advance"
       ],
-      "correctAnswer": "change",
-      "explanation": "The sentence ends 'too slow relative to the pace of change' — the word 'change' completes the phrase that directly contrasts the pace of policy action with the pace of environmental or systemic change."
+      "correctAnswer": "thrive",
+      "explanation": "The speaker states that development-focused companies create cultures where people thrive.",
+      "questionNumber": 13
     },
     {
-      "id": "pte-listening-003-q014",
+      "id": "pte-listening-003-q14",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Question 14. Listen to the recording about The History of Antibiotics. The transcript below differs from it in several places — click the words that are different from what the speaker says.",
-      "audioScript": "Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are qualitatively different from anything available before.",
-      "displayTranscript": "Today we are going to examine a topic that has attracted substantial scientific and policy attention in recent years: The History of Antibiotics. I want to begin by giving you some scientific context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are fundamentally different from anything available before.",
+      "topic": "Internet and information technology",
+      "prompt": "Item 14: Internet and information technology",
+      "audioScript": "The internet revolutionized communication by connecting computers worldwide into a global network. Packet switching enables data to travel efficiently across multiple routes. Protocols standardize how devices exchange information reliably between distant locations.",
+      "displayTranscript": "The internet revolutionized communication by connecting computers worldwide into a local network. Packet switching enables data to travel slowly across multiple routes. Protocols standardize how devices exchange information poorly between nearby locations.",
       "incorrectWords": [
-        "substantial",
-        "scientific",
-        "fundamentally"
+        "local",
+        "slowly",
+        "poorly",
+        "nearby"
       ],
       "correctWords": [
-        "considerable",
-        "historical",
-        "qualitatively"
+        "global",
+        "efficiently",
+        "reliably",
+        "distant"
       ],
-      "explanation": "Three words in the transcript differ from the audio: 'substantial' should be 'considerable', 'scientific' should be 'historical', and 'fundamentally' should be 'qualitatively'."
+      "explanation": "The audio says global, efficiently, reliably and distant.",
+      "questionNumber": 14
     },
     {
-      "id": "pte-listening-003-q015",
+      "id": "pte-listening-003-q15",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Highlight the incorrect words (recording 2). Click the words in the transcript that differ from the recording about The History of Antibiotics.",
-      "audioScript": "What the evidence consistently shows is that The History of Antibiotics involves complex interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.",
-      "displayTranscript": "What the evidence consistently shows is that The History of Antibiotics involves basic interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for measured patterns. This has major implications for how we design interventions and policies.",
+      "topic": "Enzyme catalysis",
+      "prompt": "Item 15: Enzyme catalysis",
+      "audioScript": "Enzymes accelerate chemical reactions by lowering activation energy requirements. Each enzyme has an optimal temperature and pH at which it works best. Extreme conditions can denature the protein and destroy its catalytic activity.",
+      "displayTranscript": "Enzymes accelerate chemical reactions by raising activation energy requirements. Each enzyme has an optimal temperature and pH at which it works worst. Extreme conditions can strengthen the protein and enhance its catalytic activity.",
       "incorrectWords": [
-        "basic",
-        "measured",
-        "major"
+        "raising",
+        "worst",
+        "strengthen",
+        "enhance"
       ],
       "correctWords": [
-        "complex",
-        "observed",
-        "significant"
+        "lowering",
+        "best",
+        "denature",
+        "destroy"
       ],
-      "explanation": "Three words differ from the audio: 'basic' should be 'complex', 'measured' should be 'observed', and 'major' should be 'significant'."
+      "explanation": "The audio says lowering, best, denature and destroy.",
+      "questionNumber": 15
     },
     {
-      "id": "pte-listening-003-q016",
+      "id": "pte-listening-003-q16",
       "questionType": "write_from_dictation",
-      "prompt": "Question 16. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "correctAnswer": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 16: Write from dictation",
+      "audioScript": "Quantum mechanics describes the behavior of matter at subatomic scales using probabilistic principles.",
+      "correctAnswer": "Quantum mechanics describes the behavior of matter at subatomic scales using probabilistic principles.",
+      "explanation": "",
+      "questionNumber": 16
     },
     {
-      "id": "pte-listening-003-q017",
+      "id": "pte-listening-003-q17",
       "questionType": "write_from_dictation",
-      "prompt": "Question 17. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "International coordination is essential because the challenges involved do not respect national borders.",
-      "correctAnswer": "International coordination is essential because the challenges involved do not respect national borders.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 17: Write from dictation",
+      "audioScript": "Economic inequality reflects differences in access to education and employment opportunities.",
+      "correctAnswer": "Economic inequality reflects differences in access to education and employment opportunities.",
+      "explanation": "",
+      "questionNumber": 17
     }
   ]
 }

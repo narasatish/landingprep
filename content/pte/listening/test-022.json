@@ -3,248 +3,296 @@
   "exam": "pte",
   "section": "listening",
   "type": "section",
-  "title": "PTE Academic Listening Practice Test 22",
-  "topic": "The History of Pandemics",
-  "durationSeconds": 2700,
+  "title": "PTE Academic Listening — Practice Test 22",
+  "topic": "Mixed academic topics (one per item, as in the real test)",
+  "durationSeconds": 2400,
   "questionCount": 17,
-  "instructions": "Listen to the audio for each item and respond according to the question type. In the real PTE exam you hear actual audio; here the transcript is shown for study purposes.",
+  "instructions": "Each item has its own recording. Audio plays automatically when you reach an item.",
   "questions": [
     {
-      "id": "pte-listening-022-q001",
+      "id": "pte-listening-022-q1",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 1. You will hear a short lecture about The History of Pandemics. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "topic": "The History of Pandemics",
+      "topic": "Coral Bleaching and Ocean Temperatures",
+      "prompt": "Item 1: Coral Bleaching and Ocean Temperatures",
+      "audioScript": "Coral bleaching occurs when seawater temperatures rise above normal levels, causing corals to expel their symbiotic algae. This symbiosis provides corals with nutrients through photosynthesis. Recent data shows that even a one-degree Celsius increase can trigger bleaching events. The Great Barrier Reef experienced severe bleaching in 2016 and 2020. Scientists attribute this to climate change and rising ocean temperatures. Recovery is possible if temperatures stabilize within weeks.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into The History of Pandemics reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Coral bleaching happens when water temperatures rise, causing corals to lose their symbiotic algae. Even minimal temperature increases trigger bleaching events. The Great Barrier Reef suffered severe bleaching recently due to climate change, though recovery is possible if temperatures stabilize quickly.",
+      "explanation": "",
+      "questionNumber": 1
     },
     {
-      "id": "pte-listening-022-q002",
+      "id": "pte-listening-022-q2",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 2. You will hear a short lecture about The History of Pandemics — Key Dimensions. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "topic": "The History of Pandemics — Key Dimensions",
+      "topic": "Ancient Roman Aqueduct Engineering",
+      "prompt": "Item 2: Ancient Roman Aqueduct Engineering",
+      "audioScript": "Roman aqueducts were masterpieces of civil engineering, carrying water across hundreds of kilometers to supply cities. The longest aqueduct, Aqua Claudia, stretched 68 kilometers, though only 16 were elevated on arches. Romans used gravity to move water downhill, maintaining a slight slope of about 0.3 percent. Lead pipes transported water into homes, a practice later recognized as toxic. These structures demonstrate remarkable architectural knowledge and mathematical precision that lasted for centuries.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into The History of Pandemics — Key Dimensions reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Roman aqueducts transported water across vast distances using gravity and innovative engineering. The Aqua Claudia extended 68 kilometers with arches supporting only the elevated sections. Romans maintained precise slopes and used lead pipes, later found hazardous. These structures showcase exceptional mathematical and architectural skill that persisted for centuries.",
+      "explanation": "",
+      "questionNumber": 2
     },
     {
-      "id": "pte-listening-022-q003",
+      "id": "pte-listening-022-q3",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "Which TWO of the following points does the speaker make about The History of Pandemics?",
+      "topic": "Photosynthesis Efficiency and Carbon Fixation",
+      "audioScript": "Photosynthesis converts light energy into chemical energy stored in glucose. The process occurs in two main stages: light-dependent reactions in the thylakoid and light-independent reactions in the stroma. During light reactions, chlorophyll absorbs photons, splitting water and releasing oxygen. Light-independent reactions, or the Calvin cycle, fix carbon dioxide into glucose. Only about 1-2 percent of incident light energy converts to plant biomass. Factors like light intensity, carbon dioxide concentration, and temperature affect photosynthetic rate.",
+      "question": "According to the speaker, which TWO statements accurately describe photosynthesis?",
       "options": [
-        "The History of Pandemics involves complex interactions that cannot be explained by single-factor models",
-        "Early research in this field was conducted entirely by natural scientists",
-        "The economic costs of failing to address this topic are estimated to be very high",
-        "International agreements have fully resolved the challenges in this area",
-        "Digital data collection has transformed the research landscape in this field"
+        "Photosynthesis occurs entirely in the stroma",
+        "Chlorophyll absorbs photons during light reactions",
+        "Carbon dioxide is fixed in the Calvin cycle",
+        "Photosynthesis achieves 50 percent energy conversion",
+        "Oxygen is produced from carbon dioxide splitting"
       ],
       "correctAnswers": [
-        "The History of Pandemics involves complex interactions that cannot be explained by single-factor models",
-        "The economic costs of failing to address this topic are estimated to be very high"
+        "Chlorophyll absorbs photons during light reactions",
+        "Carbon dioxide is fixed in the Calvin cycle"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker correctly describes light reactions involving chlorophyll and photons, and mentions the Calvin cycle for carbon fixation.",
+      "prompt": "Item 3: Photosynthesis Efficiency and Carbon Fixation",
+      "questionNumber": 3
     },
     {
-      "id": "pte-listening-022-q004",
+      "id": "pte-listening-022-q4",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "Which TWO statements accurately reflect what the speaker says about responses to The History of Pandemics?",
+      "topic": "Ancient Egyptian Pyramids and Construction",
+      "audioScript": "The Great Pyramids of Giza remain monumental achievements of ancient engineering. The Great Pyramid of Khufu required approximately 20 years to construct using 2.3 million stone blocks. Workers quarried limestone blocks weighing up to 2.5 tons. Construction methods likely involved ramps, levers, and organized labor systems. Precise geometric alignment demonstrates advanced mathematical knowledge. These structures served as monumental tombs housing pharaohs and treasures. Archaeological evidence suggests tens of thousands of workers participated in construction.",
+      "question": "According to the speaker, which TWO claims about the pyramids are supported?",
       "options": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "All international agreements related to this topic have been fully implemented",
-        "Better monitoring technology is increasingly available and affordable",
-        "The research community in this field is competitive and unwelcoming to newcomers",
-        "Real-world stakes in this field are considered minor by most researchers"
+        "Construction used only 100,000 stone blocks",
+        "The Great Pyramid required 20 years to build",
+        "Individual blocks weighed up to 2.5 tons",
+        "Construction methods were entirely mysterious",
+        "Precise alignment shows mathematical knowledge"
       ],
       "correctAnswers": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "Better monitoring technology is increasingly available and affordable"
+        "The Great Pyramid required 20 years to build",
+        "Precise alignment shows mathematical knowledge"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker explicitly states the 20-year construction period and describes precise geometric alignment demonstrating mathematical knowledge.",
+      "prompt": "Item 4: Ancient Egyptian Pyramids and Construction",
+      "questionNumber": 4
     },
     {
-      "id": "pte-listening-022-q005",
+      "id": "pte-listening-022-q5",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Question 5. You will hear a recording about The History of Pandemics. Type the missing word in each numbered blank as you listen.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "transcript": "The study of The History of Pandemics demonstrates that __1__ interactions between multiple systems drive observed outcomes. Researchers have consistently found that __2__ explanations fail to account for real-world patterns. The international dimension is critical because The History of Pandemics does not respect __3__ borders.",
+      "topic": "Particle Physics and Quantum Mechanics",
+      "prompt": "Item 5: Particle Physics and Quantum Mechanics",
+      "audioScript": "Particle physics studies fundamental constituents of matter at the smallest scales. The Standard model describes quarks and leptons as basic building blocks. Subatomic particles are held together by fundamental forces carried by force-carrying particles. The discovery of the Higgs boson in 2012 confirmed theories predicting how particles acquire mass through interaction with an energy field.",
+      "transcript": "Particle physics studies fundamental constituents of matter at the smallest scales. The __1__ model describes quarks and leptons as basic building blocks. Subatomic particles are held together by fundamental forces carried by __2__ particles. The discovery of the Higgs __3__ in 2012 confirmed theories predicting how particles acquire mass through interaction with an energy field.",
       "correctAnswers": [
-        "complex",
-        "simplistic",
-        "national"
+        "Standard",
+        "force-carrying",
+        "boson"
       ],
-      "explanation": "These three words appear verbatim in the audio transcript at the corresponding positions in the transcript shown to the candidate."
+      "explanation": "",
+      "questionNumber": 5
     },
     {
-      "id": "pte-listening-022-q006",
+      "id": "pte-listening-022-q6",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 2). Type the missing word in each blank as you listen to the passage about The History of Pandemics.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "transcript": "What the evidence consistently shows is that The History of Pandemics involves __1__ interactions between multiple systems. From an economic standpoint, the costs of __2__ in this area are substantial. Looking forward, the trajectory will depend on __3__, political will, and effective communication between scientists and policymakers.",
+      "topic": "Tropical Rainforest Biodiversity",
+      "prompt": "Item 6: Tropical Rainforest Biodiversity",
+      "audioScript": "Tropical rainforests contain approximately half of Earth's terrestrial species despite covering only seven percent of land. The dense canopy of plants creates multiple layers where different species have evolved specialized roles. Trees compete for limited light by growing tall, while lianas and epiphytes use other plants for access. The rich soil is paradoxically fragile because nutrients are rapidly absorbed by living plants; decomposed material is recycled quickly by decomposers and fungi.",
+      "transcript": "Tropical rainforests contain approximately half of Earth's terrestrial species despite covering only seven percent of land. The dense __1__ of plants creates multiple layers where different species have evolved specialized roles. Trees compete for limited __2__ by growing tall, while lianas and epiphytes use other plants for access. The rich soil is paradoxically fragile because nutrients are rapidly absorbed by living plants; decomposed material is recycled quickly by __3__ and fungi.",
       "correctAnswers": [
-        "complex",
-        "inaction",
-        "innovation"
+        "canopy",
+        "light",
+        "decomposers"
       ],
-      "explanation": "These three words appear in the audio at the corresponding blank positions in the transcript."
+      "explanation": "",
+      "questionNumber": 6
     },
     {
-      "id": "pte-listening-022-q007",
+      "id": "pte-listening-022-q7",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 3). Type the missing word in each blank as you listen to the passage about The History of Pandemics.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "transcript": "The international dimension is also __1__. The History of Pandemics does not respect national borders, which means that coordinated, __2__ responses are necessary. The decisions made in the next ten to fifteen years will determine outcomes for __3__ to come.",
+      "topic": "Industrial Revolution Manufacturing",
+      "prompt": "Item 7: Industrial Revolution Manufacturing",
+      "audioScript": "The Industrial Revolution transformed production from craft-based to mechanized manufacturing. The steam engine, invented by James Watt, powered machines and transportation, providing mechanical energy previously unavailable on such scales. Textile mills combined multiple production steps in one location, dramatically increasing output per worker. Factory systems relied on division of labor performing repetitive tasks, establishing the modern industrial workforce structure.",
+      "transcript": "The Industrial Revolution transformed production from craft-based to mechanized manufacturing. The steam engine, invented by James Watt, powered machines and transportation, providing __1__ energy previously unavailable on such scales. Textile __2__ combined multiple production steps in one location, dramatically increasing output per worker. Factory systems relied on __3__ labor performing repetitive tasks, establishing the modern industrial workforce structure.",
       "correctAnswers": [
-        "critical",
-        "multilateral",
-        "generations"
+        "mechanical",
+        "mills",
+        "division of"
       ],
-      "explanation": "These words are spoken in the audio and correspond to the blanks in the transcript."
+      "explanation": "",
+      "questionNumber": 7
     },
     {
-      "id": "pte-listening-022-q008",
+      "id": "pte-listening-022-q8",
       "questionType": "highlight_correct_summary",
-      "prompt": "Question 8. Listen to the recording about The History of Pandemics, then select the paragraph that best summarises what you heard.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
+      "topic": "Industrial Biotechnology Applications",
+      "prompt": "Item 8: Industrial Biotechnology Applications",
+      "audioScript": "Biotechnology harnesses microorganisms and enzymes for industrial manufacturing. Fermentation produces ethanol, dairy products, and antibiotics using bacterial or fungal cultures. Enzyme-based processes break down biomass into usable chemicals and fuels. Genetic engineering optimizes organisms for specific production tasks. Bioreactors provide controlled environments maximizing productivity. These processes offer environmentally friendly alternatives to petroleum-based manufacturing.",
       "options": [
-        "The lecture/interview discusses The History of Pandemics, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-        "The lecture argues that The History of Pandemics is a minor concern that has been overstated by researchers and that existing policies are already sufficient to address all related challenges.",
-        "The speaker focuses exclusively on the historical background of The History of Pandemics without discussing current evidence, economic dimensions, or policy implications."
+        "Industrial biotechnology uses microorganisms and enzymes in fermentation and genetic engineering to produce chemicals and fuels sustainably.",
+        "Biotechnology relies exclusively on natural microorganisms without modification, making industrial applications impossible to optimize.",
+        "Chemical synthesis from petroleum remains more environmentally friendly than any biotechnological manufacturing process."
       ],
-      "correctAnswer": "The lecture/interview discusses The History of Pandemics, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-      "explanation": "Option A accurately summarises the main themes: complexity, economic stakes, international cooperation, and adaptive management. The other options misrepresent the content."
+      "correctAnswer": "Industrial biotechnology uses microorganisms and enzymes in fermentation and genetic engineering to produce chemicals and fuels sustainably.",
+      "explanation": "The speaker describes fermentation, enzyme processes, and genetic engineering for sustainable production alternatives.",
+      "questionNumber": 8
     },
     {
-      "id": "pte-listening-022-q009",
+      "id": "pte-listening-022-q9",
       "questionType": "highlight_correct_summary",
-      "prompt": "Highlight the correct summary (recording 2). Listen, then select the paragraph that best summarises the talk on The History of Pandemics.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
+      "topic": "Metamorphic Rock Formation",
+      "prompt": "Item 9: Metamorphic Rock Formation",
+      "audioScript": "Metamorphic rocks form when existing rocks undergo chemical and physical changes due to heat, pressure, or chemical alteration deep within Earth's crust. High pressure and temperature cause mineral rearrangement without melting the rock. Parent rocks include sedimentary and igneous types. Examples include marble from limestone and schist from shale. Metamorphic rocks contain distinctive mineral alignments reflecting directional pressure. These rocks mark ancient collision zones and deep crustal processes.",
       "options": [
-        "The audio emphasises that The History of Pandemics requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-        "The speaker claims that The History of Pandemics is fully understood and that all the major scientific questions in this area have already been resolved by existing research.",
-        "The audio focuses solely on the historical background of The History of Pandemics and does not address any current research findings or policy implications."
+        "Metamorphic rocks form from existing rocks altered by heat and pressure deep in Earth, producing distinctive mineral alignments.",
+        "Metamorphic rocks form when sedimentary rocks melt completely into magma, then recrystallize near the surface.",
+        "All metamorphic rocks contain fossils unchanged from their parent rocks despite extreme geological conditions."
       ],
-      "correctAnswer": "The audio emphasises that The History of Pandemics requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-      "explanation": "Option A is the only summary that accurately reflects the audio's discussion of tipping points, the need for adaptive management, and improved monitoring."
+      "correctAnswer": "Metamorphic rocks form from existing rocks altered by heat and pressure deep in Earth, producing distinctive mineral alignments.",
+      "explanation": "The speaker explains metamorphic rocks result from heat and pressure altering parent rocks without melting, creating distinctive structures.",
+      "questionNumber": 9
     },
     {
-      "id": "pte-listening-022-q010",
+      "id": "pte-listening-022-q10",
       "questionType": "multiple_choice_single",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "According to the audio, what is the key reason why single-factor explanations of The History of Pandemics consistently fail?",
+      "topic": "Photochemical Reactions in Atmosphere",
+      "audioScript": "Photochemical reactions in the stratosphere produce and destroy ozone through light-driven processes. Ultraviolet radiation breaks oxygen molecules into atoms. Two oxygen atoms recombine with an oxygen molecule to form ozone. Ozone absorbs ultraviolet radiation protecting the surface. Chlorofluorocarbons release chlorine atoms when exposed to ultraviolet light. These chlorine atoms catalytically destroy ozone molecules. The ozone hole over Antarctica results from seasonal chlorine release.",
+      "question": "What is the primary mechanism by which chlorofluorocarbons harm the ozone layer?",
       "options": [
-        "Researchers lack sufficient data to test single-factor models",
-        "The History of Pandemics involves complex interactions between multiple interconnected systems",
-        "Single-factor models are too expensive to implement in practice",
-        "Political opposition prevents single-factor explanations from being published"
+        "They directly absorb ultraviolet radiation preventing photochemical reactions",
+        "They release chlorine atoms that catalytically destroy ozone molecules",
+        "They increase the temperature of the stratosphere beyond ozone stability",
+        "They combine with oxygen to form additional ozone, creating excess ultraviolet penetration"
       ],
-      "correctAnswer": "The History of Pandemics involves complex interactions between multiple interconnected systems",
-      "explanation": "The audio explicitly states that simplistic, single-factor explanations fail because the topic involves complex interactions between multiple systems."
+      "correctAnswer": "They release chlorine atoms that catalytically destroy ozone molecules",
+      "explanation": "The speaker explains that chlorine atoms released from CFCs catalytically destroy ozone molecules.",
+      "prompt": "Item 10: Photochemical Reactions in Atmosphere",
+      "questionNumber": 10
     },
     {
-      "id": "pte-listening-022-q011",
+      "id": "pte-listening-022-q11",
       "questionType": "multiple_choice_single",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
-      "question": "According to the audio on The History of Pandemics, what is the key principle for designing effective policies in this field?",
+      "topic": "Ancient Roman Law and Government",
+      "audioScript": "Roman law established principles of justice that influenced Western legal systems. The Twelve Tables, created around 450 BC, codified Roman legal principles. Roman law distinguished between public law governing the state and private law regulating individuals. Legal concepts including contracts, property rights, and due process originated in Rome. The Roman Senate served as the legislative body making laws. Consuls acted as chief executives with military and administrative powers. This system of separated powers influenced modern democratic structures.",
+      "question": "Which aspect of Roman law most directly influenced modern Western legal systems?",
       "options": [
-        "Locking in fixed approaches based on the best current scientific knowledge",
-        "Delegating all policy decisions to international bodies",
-        "Adaptive management — designing policies that can be updated as new evidence emerges",
-        "Prioritising economic growth over scientific caution"
+        "The absence of written legal codes allowing interpretation flexibility",
+        "Principles including contracts, property rights, and due process formalized in codes",
+        "Unlimited executive power without legislative oversight",
+        "Religious courts rather than secular legal institutions"
       ],
-      "correctAnswer": "Adaptive management — designing policies that can be updated as new evidence emerges",
-      "explanation": "The audio explicitly describes adaptive management as the key principle: 'designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches.'"
+      "correctAnswer": "Principles including contracts, property rights, and due process formalized in codes",
+      "explanation": "The speaker describes Roman law's establishment of justice principles like contracts and due process that influenced Western systems.",
+      "prompt": "Item 11: Ancient Roman Law and Government",
+      "questionNumber": 11
     },
     {
-      "id": "pte-listening-022-q012",
+      "id": "pte-listening-022-q12",
       "questionType": "select_missing_word",
-      "prompt": "Question 12. You will hear a recording about The History of Pandemics. At the end, the final words have been replaced by a beep. Select the option that correctly completes the recording.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of change.\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to [beep]",
+      "topic": "Climate Change and Rising Sea Levels",
+      "prompt": "Item 12: Climate Change and Rising Sea Levels",
+      "audioScript": "Global temperatures continue rising due to greenhouse gas emissions from human activities. Warming oceans expand thermally, increasing sea level. Melting glaciers and ice sheets contribute additional water to the oceans. Coastal communities face increased flooding threats from rising sea levels. Some island nations risk complete submersion within decades. We must reduce emissions and develop adaptation strategies for inevitable changes.",
       "options": [
-        "come",
-        "start",
-        "forget",
-        "imagine"
+        "adaptation",
+        "mitigation",
+        "prevention",
+        "reversal"
       ],
-      "correctAnswer": "come",
-      "explanation": "The sentence reads '...will determine outcomes for generations to come.' The word 'come' completes the fixed phrase 'for generations to come' which fits the context of the lecture's conclusion."
+      "correctAnswer": "adaptation",
+      "explanation": "The speaker concludes that we need adaptation strategies for inevitable sea level changes.",
+      "questionNumber": 12
     },
     {
-      "id": "pte-listening-022-q013",
+      "id": "pte-listening-022-q13",
       "questionType": "select_missing_word",
-      "prompt": "Select the missing word (recording 2). The final words are replaced by a beep — choose the correct completion for the talk on The History of Pandemics.",
-      "audioScript": "Lecturer: Good afternoon, everyone. Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges and emerging solutions in this area.\n\nSo, The History of Pandemics is not a new phenomenon. Scholars and practitioners have grappled with aspects of it for well over a century, but the tools and methodologies available to modern researchers are qualitatively different from anything available before. Digital data collection, advanced computational models, and cross-disciplinary collaboration have transformed what we know.\n\nWhat the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems — whether biological, social, or technological. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.\n\nFrom an economic standpoint, the costs of inaction in this area are substantial. Multiple large-scale studies have estimated that failing to address the core challenges of The History of Pandemics could cost societies trillions of dollars over the coming decades. In contrast, well-targeted investments now tend to generate benefits that significantly outweigh their costs.\n\nThe international dimension is also critical. The History of Pandemics does not respect national borders, which means that coordinated, multilateral responses are necessary. We've seen some promising developments in international agreements over the past decade, but the pace of action remains too slow relative to the pace of [beep]\n\nLooking forward, the trajectory will depend on innovation, political will, and effective communication between scientists, policymakers, and the public. The decisions made in the next ten to fifteen years will determine outcomes for generations to come. I would like you to keep these dimensions in mind as we work through the case studies today.",
+      "topic": "Personal Learning and Study Strategies",
+      "prompt": "Item 13: Personal Learning and Study Strategies",
+      "audioScript": "Effective learning requires active engagement with material rather than passive reading. Spaced repetition strengthens memory through repeated review across days and weeks. Elaboration connects new information to existing knowledge creating meaningful understanding. Interleaving mixes different topics during study improving discrimination between concepts. Practice problems strengthen skill development. Teaching others forces deep processing of knowledge. The most successful students combine multiple evidence-based study techniques for optimal learning …",
       "options": [
-        "change",
-        "funding",
-        "debate",
-        "history"
+        "outcomes",
+        "achievement",
+        "retention",
+        "understanding"
       ],
-      "correctAnswer": "change",
-      "explanation": "The sentence ends 'too slow relative to the pace of change' — the word 'change' completes the phrase that directly contrasts the pace of policy action with the pace of environmental or systemic change."
+      "correctAnswer": "outcomes",
+      "explanation": "The speaker concludes that combined techniques produce optimal learning outcomes.",
+      "questionNumber": 13
     },
     {
-      "id": "pte-listening-022-q014",
+      "id": "pte-listening-022-q14",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Question 14. Listen to the recording about The History of Pandemics. The transcript below differs from it in several places — click the words that are different from what the speaker says.",
-      "audioScript": "Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are qualitatively different from anything available before.",
-      "displayTranscript": "Today we are going to examine a topic that has attracted substantial scientific and policy attention in recent years: The History of Pandemics. I want to begin by giving you some scientific context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are fundamentally different from anything available before.",
+      "topic": "Medieval Castle Defense",
+      "prompt": "Item 14: Medieval Castle Defense",
+      "audioScript": "Medieval castles served strategic defensive purposes in warfare. Stone walls could withstand siege weapons far better than wooden palisades. Multiple defensive layers including moats, walls, and towers provided overlapping fields of fire. Narrow windows called arrow slits allowed defenders to shoot while remaining protected. The keep provided a final defensive position if outer walls were breached. High walls prevented direct assault and made scaling extremely difficult. Castles dominated their territories militarily and politically for centuries.",
+      "displayTranscript": "Medieval castles served strategic offensive purposes in warfare. Stone walls could withstand siege weapons far better than wooden palisades. Multiple defensive layers including moats, walls, and towers provided overlapping fields of view. Narrow windows called gun slits allowed defenders to shoot while remaining protected. The dungeon provided a final defensive position if outer walls were breached. Low walls prevented direct assault and made scaling extremely difficult. Castles dominated their territories militarily and politically for centuries.",
       "incorrectWords": [
-        "substantial",
-        "scientific",
-        "fundamentally"
+        "offensive",
+        "view",
+        "gun slits",
+        "dungeon",
+        "Low"
       ],
       "correctWords": [
-        "considerable",
-        "historical",
-        "qualitatively"
+        "defensive",
+        "fire",
+        "arrow slits",
+        "keep",
+        "High"
       ],
-      "explanation": "Three words in the transcript differ from the audio: 'substantial' should be 'considerable', 'scientific' should be 'historical', and 'fundamentally' should be 'qualitatively'."
+      "explanation": "Castles were defensive, used for fire control, had arrow slits and keeps, and had high walls for protection.",
+      "questionNumber": 14
     },
     {
-      "id": "pte-listening-022-q015",
+      "id": "pte-listening-022-q15",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Highlight the incorrect words (recording 2). Click the words in the transcript that differ from the recording about The History of Pandemics.",
-      "audioScript": "What the evidence consistently shows is that The History of Pandemics involves complex interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.",
-      "displayTranscript": "What the evidence consistently shows is that The History of Pandemics involves basic interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for measured patterns. This has major implications for how we design interventions and policies.",
+      "topic": "Evolution and Natural Selection",
+      "prompt": "Item 15: Evolution and Natural Selection",
+      "audioScript": "Evolution occurs through natural selection acting on genetic variation within populations. Organisms producing more offspring than the environment supports must compete for resources. Traits that improve survival and reproduction become more common across generations. Over millions of years, accumulated changes produce new species. Fossil records document transition forms showing evolutionary relationships. Genetic evidence confirms common ancestry across all living organisms. Evolution explains the diversity of life and shapes our understanding of biology.",
+      "displayTranscript": "Evolution occurs through artificial selection acting on genetic variation within populations. Organisms producing fewer offspring than the environment supports must compete for resources. Traits that decrease survival and reproduction become more common across generations. Over thousands of years, accumulated changes produce new species. Fossil records document transition forms showing revolutionary relationships. Chemical evidence confirms common ancestry across all living organisms. Evolution explains the simplicity of life and shapes our understanding of biology.",
       "incorrectWords": [
-        "basic",
-        "measured",
-        "major"
+        "artificial",
+        "fewer",
+        "decrease",
+        "thousands",
+        "revolutionary",
+        "Chemical",
+        "simplicity"
       ],
       "correctWords": [
-        "complex",
-        "observed",
-        "significant"
+        "natural",
+        "more",
+        "improve",
+        "millions",
+        "evolutionary",
+        "Genetic",
+        "diversity"
       ],
-      "explanation": "Three words differ from the audio: 'basic' should be 'complex', 'measured' should be 'observed', and 'major' should be 'significant'."
+      "explanation": "Natural selection increases beneficial traits over millions of years through evolutionary relationships.",
+      "questionNumber": 15
     },
     {
-      "id": "pte-listening-022-q016",
+      "id": "pte-listening-022-q16",
       "questionType": "write_from_dictation",
-      "prompt": "Question 16. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "correctAnswer": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 16: Write from dictation",
+      "audioScript": "Renewable energy sources reduce greenhouse gas emissions compared to fossil fuels.",
+      "correctAnswer": "Renewable energy sources reduce greenhouse gas emissions compared to fossil fuels.",
+      "explanation": "",
+      "questionNumber": 16
     },
     {
-      "id": "pte-listening-022-q017",
+      "id": "pte-listening-022-q17",
       "questionType": "write_from_dictation",
-      "prompt": "Question 17. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "International coordination is essential because the challenges involved do not respect national borders.",
-      "correctAnswer": "International coordination is essential because the challenges involved do not respect national borders.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 17: Write from dictation",
+      "audioScript": "Biodiversity loss reduces ecosystem resilience and threatens global food security.",
+      "correctAnswer": "Biodiversity loss reduces ecosystem resilience and threatens global food security.",
+      "explanation": "",
+      "questionNumber": 17
     }
   ]
 }

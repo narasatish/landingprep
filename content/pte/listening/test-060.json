@@ -3,248 +3,288 @@
   "exam": "pte",
   "section": "listening",
   "type": "section",
-  "title": "PTE Academic Listening Practice Test 60",
-  "topic": "The Future of Sustainable Aviation",
-  "durationSeconds": 2700,
+  "title": "PTE Academic Listening — Practice Test 60",
+  "topic": "Mixed academic topics (one per item, as in the real test)",
+  "durationSeconds": 2400,
   "questionCount": 17,
-  "instructions": "Listen to the audio for each item and respond according to the question type. In the real PTE exam you hear actual audio; here the transcript is shown for study purposes.",
+  "instructions": "Each item has its own recording. Audio plays automatically when you reach an item.",
   "questions": [
     {
-      "id": "pte-listening-060-q001",
+      "id": "pte-listening-060-q1",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 1. You will hear a short lecture about The Future of Sustainable Aviation. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "topic": "The Future of Sustainable Aviation",
+      "topic": "Renewable Energy from Geothermal Sources",
+      "prompt": "Item 1: Renewable Energy from Geothermal Sources",
+      "audioScript": "Geothermal energy harnesses heat from Earth's interior to generate electricity and provide heating. Geothermal power plants are built in tectonically active regions where heat is closer to the surface. Iceland generates nearly 30 percent of its electricity from geothermal sources. Hot springs and geysers indicate accessible geothermal resources. This renewable energy source produces minimal greenhouse gases compared to fossil fuels. However, geothermal development is limited to specific geographic locations with suitable geological conditions.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into The Future of Sustainable Aviation reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Geothermal energy uses Earth's internal heat for electricity and heating in tectonically active regions. Iceland generates nearly 30 percent of its electricity geothermally. Hot springs indicate accessible resources. While geothermal produces minimal greenhouse gases compared to fossil fuels, development is limited to geologically suitable locations.",
+      "explanation": "",
+      "questionNumber": 1
     },
     {
-      "id": "pte-listening-060-q002",
+      "id": "pte-listening-060-q2",
       "questionType": "summarize_spoken_text",
-      "prompt": "Question 2. You will hear a short lecture about The Future of Sustainable Aviation — Key Dimensions. Write a 50–70 word summary of it for a fellow student who was not present.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "topic": "The Future of Sustainable Aviation — Key Dimensions",
+      "topic": "Linguistic Evolution and Language Change",
+      "prompt": "Item 2: Linguistic Evolution and Language Change",
+      "audioScript": "Languages continuously evolve through sound changes, vocabulary borrowing, and grammatical shifts. Old English, spoken in the fifth to eleventh centuries, is nearly incomprehensible to modern English speakers. The Great Vowel Shift, occurring between the fourteenth and eighteenth centuries, dramatically altered English pronunciation. Technology introduces new vocabulary like smartphone and email. Social factors including migration and globalization accelerate language change. Linguists study historical texts to trace how languages diverge and develop over centuries.",
       "wordLimit": {
         "min": 50,
         "max": 70
       },
-      "modelAnswer": "Research into The Future of Sustainable Aviation — Key Dimensions reveals complex interactions between multiple systems, with the pace of change accelerating significantly. The economic costs of inaction are substantial, and international coordination is essential. Effective responses require adaptive management, improved monitoring, and sustained investment in both research and policy implementation.",
-      "explanation": "The summary should cover the main argument (complexity of the topic), key evidence (costs of inaction, tipping points), and the recommended approach (international cooperation, adaptive management)."
+      "modelAnswer": "Languages evolve through sound changes, vocabulary borrowing, and grammar shifts. Old English is nearly unintelligible to modern speakers. The Great Vowel Shift between the 14th and 18th centuries changed English pronunciation dramatically. Technology adds vocabulary. Social factors like migration and globalization accelerate change. Linguists trace language divergence using historical texts.",
+      "explanation": "",
+      "questionNumber": 2
     },
     {
-      "id": "pte-listening-060-q003",
+      "id": "pte-listening-060-q3",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "Which TWO of the following points does the speaker make about The Future of Sustainable Aviation?",
+      "topic": "Climate Zones and Precipitation Patterns",
+      "audioScript": "Earth's climate zones are determined by latitude, altitude, and proximity to water bodies. Tropical regions near the equator receive intense solar radiation year-round. Temperate zones at mid-latitudes experience seasonal variations. Polar regions receive minimal solar radiation and maintain permanently cold temperatures. Precipitation patterns vary with climate zones. Deserts occur where warm air descends, evaporating moisture. Rainforests exist where warm, moist air rises and cools, releasing moisture as rain.",
+      "question": "According to the speaker, which TWO climate characteristics are correctly paired?",
       "options": [
-        "The Future of Sustainable Aviation involves complex interactions that cannot be explained by single-factor models",
-        "Early research in this field was conducted entirely by natural scientists",
-        "The economic costs of failing to address this topic are estimated to be very high",
-        "International agreements have fully resolved the challenges in this area",
-        "Digital data collection has transformed the research landscape in this field"
+        "Tropical regions have minimal solar radiation",
+        "Temperate zones experience seasonal variations",
+        "Deserts form where air descends and evaporates moisture",
+        "Polar regions maintain warm temperatures",
+        "Rainforests occur where descending air creates dry conditions"
       ],
       "correctAnswers": [
-        "The Future of Sustainable Aviation involves complex interactions that cannot be explained by single-factor models",
-        "The economic costs of failing to address this topic are estimated to be very high"
+        "Temperate zones experience seasonal variations",
+        "Deserts form where air descends and evaporates moisture"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker explicitly describes temperate seasonal variations and explains how descending air in deserts causes evaporation.",
+      "prompt": "Item 3: Climate Zones and Precipitation Patterns",
+      "questionNumber": 3
     },
     {
-      "id": "pte-listening-060-q004",
+      "id": "pte-listening-060-q4",
       "questionType": "multiple_choice_multiple",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "Which TWO statements accurately reflect what the speaker says about responses to The Future of Sustainable Aviation?",
+      "topic": "Renaissance Humanism and Cultural Shift",
+      "audioScript": "Renaissance humanism emphasized individual potential and classical learning. Scholars studied ancient Greek and Roman texts to rediscover forgotten knowledge. Humanism valued critical thinking and empirical observation over pure faith. Leonardo da Vinci exemplified Renaissance ideals through art, science, and engineering. The printing press enabled rapid dissemination of humanistic ideas. Patronage by wealthy families supported artists and scholars. This intellectual movement challenged medieval worldviews and laid groundwork for the Scientific Revolution.",
+      "question": "According to the speaker, which TWO aspects of Renaissance humanism are accurate?",
       "options": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "All international agreements related to this topic have been fully implemented",
-        "Better monitoring technology is increasingly available and affordable",
-        "The research community in this field is competitive and unwelcoming to newcomers",
-        "Real-world stakes in this field are considered minor by most researchers"
+        "It rejected all classical learning",
+        "It valued critical thinking and observation",
+        "It relied exclusively on religious faith",
+        "The printing press spread humanistic ideas",
+        "Medieval traditions remained unchanged"
       ],
       "correctAnswers": [
-        "Adaptive management requires policies to be flexible as new evidence emerges",
-        "Better monitoring technology is increasingly available and affordable"
+        "It valued critical thinking and observation",
+        "The printing press spread humanistic ideas"
       ],
       "requiredCount": 2,
-      "explanation": "Points A and C are explicitly stated: single-factor explanations fail, and the costs of inaction are substantial. The other options are either not mentioned or contradict the audio."
+      "explanation": "The speaker states humanism valued critical thinking and empirical observation, and explicitly mentions the printing press's role in disseminating ideas.",
+      "prompt": "Item 4: Renaissance Humanism and Cultural Shift",
+      "questionNumber": 4
     },
     {
-      "id": "pte-listening-060-q005",
+      "id": "pte-listening-060-q5",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Question 5. You will hear a recording about The Future of Sustainable Aviation. Type the missing word in each numbered blank as you listen.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "The study of The Future of Sustainable Aviation demonstrates that __1__ interactions between multiple systems drive observed outcomes. Researchers have consistently found that __2__ explanations fail to account for real-world patterns. The international dimension is critical because The Future of Sustainable Aviation does not respect __3__ borders.",
+      "topic": "Solar Energy and Photovoltaic Technology",
+      "prompt": "Item 5: Solar Energy and Photovoltaic Technology",
+      "audioScript": "Solar photovoltaic cells convert light energy directly into electricity through the photovoltaic effect. Silicon-based cells dominate commercial production due to abundance and established manufacturing processes. An individual cell produces a small voltage, so cells are connected in series to increase output power. Modern solar panels achieve approximately 15-20 percent efficiency in converting incident light to usable electricity, though laboratory prototypes demonstrate higher potential.",
+      "transcript": "Solar photovoltaic cells convert light energy directly into electricity through the __1__ effect. Silicon-based cells dominate commercial production due to abundance and established manufacturing processes. An individual cell produces a small voltage, so cells are connected in __2__ to increase output power. Modern solar panels achieve approximately 15-20 percent efficiency in converting incident light to usable electricity, though laboratory prototypes demonstrate __3__ potential.",
       "correctAnswers": [
-        "complex",
-        "simplistic",
-        "national"
+        "photovoltaic",
+        "series",
+        "higher"
       ],
-      "explanation": "These three words appear verbatim in the audio transcript at the corresponding positions in the transcript shown to the candidate."
+      "explanation": "",
+      "questionNumber": 5
     },
     {
-      "id": "pte-listening-060-q006",
+      "id": "pte-listening-060-q6",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 2). Type the missing word in each blank as you listen to the passage about The Future of Sustainable Aviation.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "What the evidence consistently shows is that The Future of Sustainable Aviation involves __1__ interactions between multiple systems. From an economic standpoint, the costs of __2__ in this area are substantial. Looking forward, the trajectory will depend on __3__, political will, and effective communication between scientists and policymakers.",
+      "topic": "Fossils and Paleontological Evidence",
+      "prompt": "Item 6: Fossils and Paleontological Evidence",
+      "audioScript": "Fossils are preserved remains or traces of ancient organisms providing evidence of evolutionary change. Body fossils preserve actual skeletal material, while trace fossils record organism activities like footprints and burrows. Radiometric dating methods measure the decay of radioactive isotopes to determine fossil age. Transitional fossils show intermediate stages between species, such as the famous Archaeopteryx with both reptilian and bird characteristics.",
+      "transcript": "Fossils are preserved remains or traces of ancient organisms providing evidence of __1__ change. Body fossils preserve actual skeletal material, while trace fossils record organism activities like footprints and burrows. Radiometric dating methods measure the decay of radioactive isotopes to determine fossil __2__. Transitional fossils show intermediate stages between species, such as the __3__ Archaeopteryx with both reptilian and bird characteristics.",
       "correctAnswers": [
-        "complex",
-        "inaction",
-        "innovation"
+        "evolutionary",
+        "age",
+        "famous"
       ],
-      "explanation": "These three words appear in the audio at the corresponding blank positions in the transcript."
+      "explanation": "",
+      "questionNumber": 6
     },
     {
-      "id": "pte-listening-060-q007",
+      "id": "pte-listening-060-q7",
       "questionType": "fill_in_blanks_listening",
-      "prompt": "Fill in the blanks (recording 3). Type the missing word in each blank as you listen to the passage about The Future of Sustainable Aviation.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "transcript": "The international dimension is also __1__. The Future of Sustainable Aviation does not respect national borders, which means that coordinated, __2__ responses are necessary. The decisions made in the next ten to fifteen years will determine outcomes for __3__ to come.",
+      "topic": "Enzyme Catalysis and Metabolic Rates",
+      "prompt": "Item 7: Enzyme Catalysis and Metabolic Rates",
+      "audioScript": "Enzymes are biological catalysts accelerating metabolic reactions by lowering activation energy requirements. Each enzyme has an optimal pH and temperature at which maximum activity occurs. Substrate molecules bind to the enzyme's active site, forming a complex that undergoes chemical transformation. Enzyme inhibitors can reduce activity by blocking the active site or interfering with allosteric mechanisms essential for catalysis.",
+      "transcript": "Enzymes are biological catalysts accelerating metabolic reactions by lowering __1__ energy requirements. Each enzyme has an optimal pH and temperature at which maximum activity occurs. Substrate molecules bind to the enzyme's __2__ site, forming a complex that undergoes chemical transformation. Enzyme inhibitors can reduce activity by blocking the active site or interfering with __3__ mechanisms essential for catalysis.",
       "correctAnswers": [
-        "critical",
-        "multilateral",
-        "generations"
+        "activation",
+        "active",
+        "allosteric"
       ],
-      "explanation": "These words are spoken in the audio and correspond to the blanks in the transcript."
+      "explanation": "",
+      "questionNumber": 7
     },
     {
-      "id": "pte-listening-060-q008",
+      "id": "pte-listening-060-q8",
       "questionType": "highlight_correct_summary",
-      "prompt": "Question 8. Listen to the recording about The Future of Sustainable Aviation, then select the paragraph that best summarises what you heard.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Gravitational Lensing in Astronomy",
+      "prompt": "Item 8: Gravitational Lensing in Astronomy",
+      "audioScript": "Massive celestial objects bend light through spacetime, a phenomenon called gravitational lensing. Light from distant galaxies bends around massive foreground galaxies or clusters. This allows astronomers to observe extremely distant objects otherwise too faint to detect. Gravitational lensing also reveals properties of dark matter since its gravity affects light. Einstein's relativity predicted this effect, later confirmed through astronomical observations.",
       "options": [
-        "The lecture/interview discusses The Future of Sustainable Aviation, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-        "The lecture argues that The Future of Sustainable Aviation is a minor concern that has been overstated by researchers and that existing policies are already sufficient to address all related challenges.",
-        "The speaker focuses exclusively on the historical background of The Future of Sustainable Aviation without discussing current evidence, economic dimensions, or policy implications."
+        "Gravitational lensing occurs when light from distant galaxies bends around massive foreground objects, enabling observation of otherwise undetectable distant sources.",
+        "Gravitational lensing demonstrates that light travels in straight lines unaffected by matter except when it directly strikes objects.",
+        "Dark matter creates its own light by lensing, allowing astronomers to map dark matter distributions directly."
       ],
-      "correctAnswer": "The lecture/interview discusses The Future of Sustainable Aviation, highlighting the complexity of interactions involved, the economic costs of inaction, the need for international coordination, and the importance of adaptive management and monitoring.",
-      "explanation": "Option A accurately summarises the main themes: complexity, economic stakes, international cooperation, and adaptive management. The other options misrepresent the content."
+      "correctAnswer": "Gravitational lensing occurs when light from distant galaxies bends around massive foreground objects, enabling observation of otherwise undetectable distant sources.",
+      "explanation": "The speaker describes light bending around massive objects enabling observation of very distant galaxies.",
+      "questionNumber": 8
     },
     {
-      "id": "pte-listening-060-q009",
+      "id": "pte-listening-060-q9",
       "questionType": "highlight_correct_summary",
-      "prompt": "Highlight the correct summary (recording 2). Listen, then select the paragraph that best summarises the talk on The Future of Sustainable Aviation.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Cardiovascular System Regulation",
+      "prompt": "Item 9: Cardiovascular System Regulation",
+      "audioScript": "The cardiovascular system maintains blood pressure and circulation through regulatory mechanisms. Baroreceptors detect blood pressure changes and signal the brain to adjust heart rate and vessel diameter. The sympathetic nervous system increases heart rate during stress, while the parasympathetic system promotes rest. Hormones like epinephrine regulate cardiovascular responses. These integrated systems maintain homeostasis under varying physiological conditions.",
       "options": [
-        "The audio emphasises that The Future of Sustainable Aviation requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-        "The speaker claims that The Future of Sustainable Aviation is fully understood and that all the major scientific questions in this area have already been resolved by existing research.",
-        "The audio focuses solely on the historical background of The Future of Sustainable Aviation and does not address any current research findings or policy implications."
+        "The cardiovascular system maintains homeostasis through baroreceptors and nervous system signals that regulate heart rate and vessel diameter.",
+        "Blood pressure regulation occurs automatically without any neural or hormonal input, relying only on mechanical blood flow.",
+        "The sympathetic nervous system exclusively promotes relaxation while parasympathetic activation increases all cardiovascular activity."
       ],
-      "correctAnswer": "The audio emphasises that The Future of Sustainable Aviation requires adaptive management and improved monitoring, because the system can undergo abrupt transitions at tipping points, and the pace of change is unprecedented.",
-      "explanation": "Option A is the only summary that accurately reflects the audio's discussion of tipping points, the need for adaptive management, and improved monitoring."
+      "correctAnswer": "The cardiovascular system maintains homeostasis through baroreceptors and nervous system signals that regulate heart rate and vessel diameter.",
+      "explanation": "The speaker describes baroreceptors detecting pressure changes and nervous system adjustment of heart rate and vessel diameter.",
+      "questionNumber": 9
     },
     {
-      "id": "pte-listening-060-q010",
+      "id": "pte-listening-060-q10",
       "questionType": "multiple_choice_single",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "According to the audio, what is the key reason why single-factor explanations of The Future of Sustainable Aviation consistently fail?",
+      "topic": "Semicondutor Technology and Electronics",
+      "audioScript": "Semiconductors enable modern electronics through controlled electrical conductivity. Silicon, the most common semiconductor, conducts electricity in specific directions after doping with impurities. P-type doping with boron creates holes accepting electrons. N-type doping with phosphorus provides excess electrons. Junctions between p-type and n-type materials create diodes and transistors. Transistors amplify or switch electrical signals, forming the basis of all digital electronics. Miniaturization continues enabling billions of transistors on single chips.",
+      "question": "How do semiconductors achieve controlled electrical conductivity?",
       "options": [
-        "Researchers lack sufficient data to test single-factor models",
-        "The Future of Sustainable Aviation involves complex interactions between multiple interconnected systems",
-        "Single-factor models are too expensive to implement in practice",
-        "Political opposition prevents single-factor explanations from being published"
+        "By using pure materials without any impurities",
+        "By doping base materials with impurities creating junctions with specific electrical properties",
+        "By using only metals that conduct electricity universally",
+        "By preventing any electron flow through insulation"
       ],
-      "correctAnswer": "The Future of Sustainable Aviation involves complex interactions between multiple interconnected systems",
-      "explanation": "The audio explicitly states that simplistic, single-factor explanations fail because the topic involves complex interactions between multiple systems."
+      "correctAnswer": "By doping base materials with impurities creating junctions with specific electrical properties",
+      "explanation": "The speaker describes doping as the method enabling controlled conductivity in semiconductors.",
+      "prompt": "Item 10: Semicondutor Technology and Electronics",
+      "questionNumber": 10
     },
     {
-      "id": "pte-listening-060-q011",
+      "id": "pte-listening-060-q11",
       "questionType": "multiple_choice_single",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
-      "question": "According to the audio on The Future of Sustainable Aviation, what is the key principle for designing effective policies in this field?",
+      "topic": "Quantum Entanglement and Information",
+      "audioScript": "Quantum entanglement occurs when particles become correlated such that measurements on one instantaneously affect the other. Einstein famously called this spooky action at a distance. Entanglement enables quantum computing's computational power through superposition. Quantum cryptography uses entanglement to create unhackable communication channels. Bell's theorem proves that no classical theory can reproduce quantum mechanical predictions. Entangled states collapse upon measurement, preventing faster-than-light information transfer.",
+      "question": "What prevents quantum entanglement from enabling faster-than-light communication?",
       "options": [
-        "Locking in fixed approaches based on the best current scientific knowledge",
-        "Delegating all policy decisions to international bodies",
-        "Adaptive management — designing policies that can be updated as new evidence emerges",
-        "Prioritising economic growth over scientific caution"
+        "Entanglement only occurs at very short distances",
+        "Measurement outcomes appear random without correlation; classical information still requires normal transmission",
+        "Entangled particles cannot be separated across distances",
+        "The speed of light is not actually constant"
       ],
-      "correctAnswer": "Adaptive management — designing policies that can be updated as new evidence emerges",
-      "explanation": "The audio explicitly describes adaptive management as the key principle: 'designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches.'"
+      "correctAnswer": "Measurement outcomes appear random without correlation; classical information still requires normal transmission",
+      "explanation": "The speaker explains that while entanglement is real, measurement outcomes appear random preventing information transmission.",
+      "prompt": "Item 11: Quantum Entanglement and Information",
+      "questionNumber": 11
     },
     {
-      "id": "pte-listening-060-q012",
+      "id": "pte-listening-060-q12",
       "questionType": "select_missing_word",
-      "prompt": "Question 12. You will hear a recording about The Future of Sustainable Aviation. At the end, the final words have been replaced by a beep. Select the option that correctly completes the recording.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Renewable Energy Transition",
+      "prompt": "Item 12: Renewable Energy Transition",
+      "audioScript": "Global energy systems must transition from fossil fuels to renewable sources. Wind and solar costs have declined dramatically making renewables economically competitive. Energy storage technologies enable reliable renewable power despite intermittency. Grid modernization distributes renewable energy efficiently. Electric vehicles eliminate transportation emissions. This energy transition requires investment but creates millions of jobs in clean energy industries.",
       "options": [
-        "come",
-        "start",
-        "forget",
-        "imagine"
+        "jobs",
+        "opportunities",
+        "positions",
+        "careers"
       ],
-      "correctAnswer": "come",
-      "explanation": "The sentence reads '...will determine outcomes for generations to come.' The word 'come' completes the fixed phrase 'for generations to come' which fits the context of the lecture's conclusion."
+      "correctAnswer": "jobs",
+      "explanation": "The speaker states that energy transition creates millions of jobs in clean energy.",
+      "questionNumber": 12
     },
     {
-      "id": "pte-listening-060-q013",
+      "id": "pte-listening-060-q13",
       "questionType": "select_missing_word",
-      "prompt": "Select the missing word (recording 2). The final words are replaced by a beep — choose the correct completion for the talk on The Future of Sustainable Aviation.",
-      "audioScript": "Interviewer: Welcome back to the programme. I'm joined today by a leading researcher whose work focuses on The Future of Sustainable Aviation. Thank you for being here.\n\nExpert: Thank you for having me. It's a topic that I'm deeply passionate about.\n\nInterviewer: Let's start with the basics. For our listeners who may not be familiar, can you explain what The Future of Sustainable Aviation involves and why it matters?\n\nExpert: Certainly. The Future of Sustainable Aviation sits at the intersection of several major scientific and societal concerns. At its core, it involves understanding how interconnected systems — whether in nature, in human communities, or in technology — behave and respond to change. What makes it particularly significant today is that the scale and pace of change we're observing are unprecedented in the historical record.\n\nInterviewer: And what would you say are the most surprising findings from recent research in this area?\n\nExpert: The most striking finding, I think, is how rapidly things can shift once certain thresholds are crossed. We used to think that systems related to The Future of Sustainable Aviation changed gradually and predictably. But what the data show is that there can be abrupt transitions — what some researchers call tipping points — where the system moves very quickly from one state to another. That's both scientifically fascinating and deeply concerning from a policy perspective.\n\nInterviewer: How should policymakers respond to that kind of uncertainty?\n\nExpert: The key principle is what we call adaptive management — designing policies that can be updated as new evidence emerges, rather than locking in fixed approaches based on current knowledge. We also need much better monitoring systems so that we can detect early warning signals before a tipping point is reached. The good news is that the technology to do that is increasingly available and affordable.\n\nInterviewer: Before we close, what would you say to young researchers considering a career in this field?\n\nExpert: I'd say it's one of the most important areas of science and scholarship there is right now. The intellectual challenges are immense, the real-world stakes are enormous, and the community of researchers is genuinely collaborative and welcoming. We need more brilliant minds working on these problems.",
+      "topic": "Language Learning and Bilingualism",
+      "prompt": "Item 13: Language Learning and Bilingualism",
+      "audioScript": "Learning additional languages enhances cognitive flexibility and career opportunities. Early bilingual exposure develops distinct neural pathways processing different languages. Adult language learners benefit from consistent practice and immersion. Mistakes during learning accelerate progress by revealing misunderstandings. Motivation from meaningful communication goals sustains learning effort. Bilingual individuals demonstrate advantages in multitasking and executive function.",
       "options": [
-        "change",
-        "funding",
-        "debate",
-        "history"
+        "advantages",
+        "benefits",
+        "strengths",
+        "abilities"
       ],
-      "correctAnswer": "change",
-      "explanation": "The sentence ends 'too slow relative to the pace of change' — the word 'change' completes the phrase that directly contrasts the pace of policy action with the pace of environmental or systemic change."
+      "correctAnswer": "advantages",
+      "explanation": "The speaker states bilingual individuals demonstrate advantages in multitasking.",
+      "questionNumber": 13
     },
     {
-      "id": "pte-listening-060-q014",
+      "id": "pte-listening-060-q14",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Question 14. Listen to the recording about The Future of Sustainable Aviation. The transcript below differs from it in several places — click the words that are different from what the speaker says.",
-      "audioScript": "Today we are going to examine a topic that has attracted considerable scientific and policy attention in recent years: The Future of Sustainable Aviation. I want to begin by giving you some historical context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are qualitatively different from anything available before.",
-      "displayTranscript": "Today we are going to examine a topic that has attracted substantial scientific and policy attention in recent years: The Future of Sustainable Aviation. I want to begin by giving you some scientific context, then move on to current research findings, and finish with a look at some of the most pressing challenges. The tools and methodologies available to modern researchers are fundamentally different from anything available before.",
+      "topic": "Plate tectonics",
+      "prompt": "Item 14: Plate tectonics",
+      "audioScript": "Plate tectonics explains earthquakes, volcanoes, and mountain building through crustal dynamics. Earth's lithosphere consists of rigid plates moving over a plastic mantle. Divergent boundaries create new crust as plates separate, while convergent boundaries destroy crust as plates collide.",
+      "displayTranscript": "Plate tectonics explains earthquakes, volcanoes, and mountain erosion through crustal dynamics. Earth's lithosphere consists of rigid plates moving over a solid mantle. Divergent boundaries create new crust as plates merge, while convergent boundaries destroy crust as plates align.",
       "incorrectWords": [
-        "substantial",
-        "scientific",
-        "fundamentally"
+        "erosion",
+        "solid",
+        "merge",
+        "align"
       ],
       "correctWords": [
-        "considerable",
-        "historical",
-        "qualitatively"
+        "building",
+        "plastic",
+        "separate",
+        "collide"
       ],
-      "explanation": "Three words in the transcript differ from the audio: 'substantial' should be 'considerable', 'scientific' should be 'historical', and 'fundamentally' should be 'qualitatively'."
+      "explanation": "The audio says building, plastic, separate and collide.",
+      "questionNumber": 14
     },
     {
-      "id": "pte-listening-060-q015",
+      "id": "pte-listening-060-q15",
       "questionType": "highlight_incorrect_words",
-      "prompt": "Highlight the incorrect words (recording 2). Click the words in the transcript that differ from the recording about The Future of Sustainable Aviation.",
-      "audioScript": "What the evidence consistently shows is that The Future of Sustainable Aviation involves complex interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for observed patterns. This has significant implications for how we design interventions and policies.",
-      "displayTranscript": "What the evidence consistently shows is that The Future of Sustainable Aviation involves basic interactions between multiple systems. Researchers have found that simplistic, single-factor explanations consistently fail to account for measured patterns. This has major implications for how we design interventions and policies.",
+      "topic": "The immune system",
+      "prompt": "Item 15: The immune system",
+      "audioScript": "The immune system defends against pathogens through innate and adaptive responses. Innate immunity provides immediate defense through physical barriers and phagocytic cells. Adaptive immunity develops specific antibodies targeting particular pathogens.",
+      "displayTranscript": "The immune system attacks against pathogens through innate and adaptive responses. Innate immunity provides delayed defense through chemical barriers and phagocytic cells. Adaptive immunity develops random antibodies targeting particular pathogens.",
       "incorrectWords": [
-        "basic",
-        "measured",
-        "major"
+        "attacks",
+        "delayed",
+        "chemical",
+        "random"
       ],
       "correctWords": [
-        "complex",
-        "observed",
-        "significant"
+        "defends",
+        "immediate",
+        "physical",
+        "specific"
       ],
-      "explanation": "Three words differ from the audio: 'basic' should be 'complex', 'measured' should be 'observed', and 'major' should be 'significant'."
+      "explanation": "The audio says defends, immediate, physical and specific.",
+      "questionNumber": 15
     },
     {
-      "id": "pte-listening-060-q016",
+      "id": "pte-listening-060-q16",
       "questionType": "write_from_dictation",
-      "prompt": "Question 16. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "correctAnswer": "The complexity of the system means that single-factor explanations consistently fail to account for observed patterns.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 16: Write from dictation",
+      "audioScript": "Genetic engineering enables scientists to modify organism traits through direct DNA manipulation.",
+      "correctAnswer": "Genetic engineering enables scientists to modify organism traits through direct DNA manipulation.",
+      "explanation": "",
+      "questionNumber": 16
     },
     {
-      "id": "pte-listening-060-q017",
+      "id": "pte-listening-060-q17",
       "questionType": "write_from_dictation",
-      "prompt": "Question 17. You will hear a sentence. Type it exactly as you hear it.",
-      "audioScript": "International coordination is essential because the challenges involved do not respect national borders.",
-      "correctAnswer": "International coordination is essential because the challenges involved do not respect national borders.",
-      "explanation": "Type the sentence exactly as you hear it, preserving all words, punctuation cues, and word order."
+      "topic": "",
+      "prompt": "Item 17: Write from dictation",
+      "audioScript": "Medieval monasteries preserved classical texts and knowledge during periods of social upheaval.",
+      "correctAnswer": "Medieval monasteries preserved classical texts and knowledge during periods of social upheaval.",
+      "explanation": "",
+      "questionNumber": 17
     }
   ]
 }
