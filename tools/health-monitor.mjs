@@ -12,9 +12,13 @@ const TARGETS = [
   { path: "/which-english-test/", marker: "English Test" },
   { path: "/explore/", marker: "Explore" },
   { path: "/ielts-band-7/", marker: "IELTS" },
+  { path: "/ielts-writing-checker/", marker: "Writing" },
+  { path: "/ielts-speaking-checker/", marker: "Speaking" },
+  { path: "/mock-test/ielts/", marker: "IELTS" },
   { path: "/content/pte/listening/test-001.json", marker: "questionType" },
   { path: "/content/ielts/reading/test-001.json", marker: "passages" },
   { path: "/content/celpip/listening/test-001.json", marker: "Problem Solving" },
+  { path: "/content/gre/quant/test-001.json", marker: "correctAnswer" },
   { path: "/sitemap.xml", marker: "<urlset" },
 ];
 
