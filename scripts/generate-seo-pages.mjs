@@ -19,6 +19,23 @@ const ORIGIN = "https://landingprep.com";
 const BRAND = "LandingPrep";
 const TODAY = "2026-05-30";
 
+// Topic-cluster hubs — every prerendered page is linked from one of these, and these
+// are linked from every page's footer (shell). Kills crawl-orphans + builds topical
+// authority. Built at the end from already-emitted PAGES (see buildHubs).
+const HUB_LINKS = [
+  { label: "IELTS scores for universities", href: "/ielts-scores-for-universities/" },
+  { label: "TOEFL scores for universities", href: "/toefl-scores-for-universities/" },
+  { label: "PTE scores for universities", href: "/pte-scores-for-universities/" },
+  { label: "Compare universities", href: "/compare-universities/" },
+  { label: "Study abroad by course", href: "/study-abroad-courses/" },
+  { label: "Scholarships", href: "/scholarships/" },
+  { label: "IELTS band guides", href: "/ielts-band-guides/" },
+  { label: "English test comparisons", href: "/english-test-comparisons/" },
+  { label: "Test requirements by country", href: "/exam-requirements-by-country/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Explore all pages", href: "/explore/" },
+];
+
 // Load the SAME college dataset the app uses (single source of truth) so a
 // per-university SEO page is generated for every college automatically.
 const _cw = {};
@@ -194,6 +211,7 @@ ul{padding-left:20px}li{margin:6px 0}
 .tile:hover{border-color:var(--brand);text-decoration:none}
 .faq dt{font-weight:700;margin-top:16px}.faq dd{margin:4px 0 0;color:#334155}
 footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:26px 0;color:var(--muted);font-size:14px}
+.hubnav{margin:0 0 14px;line-height:1.9;font-size:13px}.hubnav a{color:var(--brand);font-weight:600}
 .crumb{font-size:13px;color:var(--muted);margin:14px 0}
 .note{font-size:14px;color:var(--muted);font-style:italic}
 .backlink{display:inline-flex;align-items:center;gap:6px;margin:18px 0 0;padding:7px 15px 7px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink);font-weight:600;font-size:14px}
@@ -220,7 +238,9 @@ function shell(inner) {
 <a class="backlink" href="/" data-back><span aria-hidden>←</span> Back</a>
 ${inner}
 </main>
-<footer><div class="wrap">© 2026 ${BRAND} — 100% free IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE &amp; GMAT practice for students worldwide. <a href="/">Home</a> · <a href="/#/exam-prep">All exams</a> · <a href="/#/colleges">Study abroad</a> · <a href="/#/blog">Blog</a> · <a href="/about/">About</a> · <a href="mailto:support@landingprep.com">support@landingprep.com</a></div></footer>
+<footer><div class="wrap">
+<nav class="hubnav">${HUB_LINKS.map((h) => `<a href="${h.href}">${h.label}</a>`).join(" · ")}</nav>
+© 2026 ${BRAND} — 100% free IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE &amp; GMAT practice for students worldwide. <a href="/">Home</a> · <a href="/#/exam-prep">All exams</a> · <a href="/#/colleges">Study abroad</a> · <a href="/about/">About</a> · <a href="mailto:support@landingprep.com">support@landingprep.com</a></div></footer>
 <script>document.addEventListener('click',function(e){var a=e.target.closest('[data-back]');if(!a)return;if(history.length>1){e.preventDefault();history.back();}});</script>
 </body></html>`;
 }
@@ -1707,6 +1727,56 @@ COLLEGES.forEach((c) => ALT_EXAMS.forEach((ex) => altExamForUniPage(c, ex)));
 scholarshipCountryPages();
 PR_TARGETS.forEach(examForPRPage);
 PRO_REG.forEach(examForRolePage);
+
+// ── Hub / topic-cluster pages (run LAST: group already-emitted spokes) ──────────
+function labelOf(html) {
+  let t = (html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [])[1]
+       || (html.match(/<title>([^<]*)<\/title>/) || [])[1] || "";
+  return t.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/\s*\|\s*LandingPrep.*$/i, "")
+          .replace(/\s*\(2026\)\s*/g, " ").replace(/\s+/g, " ").trim().slice(0, 95);
+}
+function hubPage(path, title, desc, kw, sections) {
+  if (PAGES.some((p) => p.path === path)) return [];
+  const total = sections.reduce((n, s) => n + s.links.length, 0);
+  if (!total) return [];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › ${esc(title)}</p>
+<section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">${total} pages</span></div>
+<h1>${esc(title)}</h1><p class="lead">${esc(desc)}</p></section>
+${sections.filter((s) => s.links.length).map((s) => `<div class="card"><h2>${esc(s.h)}</h2><div class="grid">${s.links.map((l) => `<a class="tile" href="${l.href}">${esc(l.label)}</a>`).join("")}</div></div>`).join("")}
+<div class="card"><h2>More free LandingPrep hubs</h2><div class="grid">${HUB_LINKS.filter((h) => h.href !== path).map((h) => `<a class="tile" href="${h.href}">${esc(h.label)}</a>`).join("")}</div></div>`;
+  emit(path, head({ title: `${title} (2026) | ${BRAND}`, desc, path, kw, jsonLdBlocks: [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: title, path }])] }) + shell(inner));
+  return sections.flatMap((s) => s.links.map((l) => l.href));
+}
+function buildHubs() {
+  const UNI = new Set(COLLEGES.map((c) => c.id));
+  const claimed = new Set();
+  const sortL = (arr) => arr.sort((a, b) => a.label.localeCompare(b.label));
+  const grab = (pred) => sortL(PAGES.filter((p) => !claimed.has(p.path) && pred(p.path)).map((p) => ({ href: p.path, label: labelOf(p.html) })));
+  const examUni = (ex) => grab((path) => { const m = path.match(new RegExp(`^/${ex}-for-([a-z0-9]+)/$`)); return !!m && UNI.has(m[1]); });
+  const hubs = [
+    ["/ielts-scores-for-universities/", "IELTS Score Requirements for Top Universities", "The IELTS band each top university expects — with fees, rank and a free plan to hit the score, across the USA, UK, Canada, Australia, Germany, Ireland, NZ, Singapore & the Netherlands.", "ielts score for university, ielts band for admission, ielts requirement university", () => [{ h: "IELTS score by university", links: examUni("ielts") }]],
+    ["/toefl-scores-for-universities/", "TOEFL Score Requirements for Top Universities", "The TOEFL iBT score each top university expects, plus a free plan to reach it with full-length mock tests.", "toefl score for university, toefl requirement university, toefl ibt for admission", () => [{ h: "TOEFL score by university", links: examUni("toefl") }]],
+    ["/pte-scores-for-universities/", "PTE Score Requirements for Top Universities", "The PTE Academic score each top university expects, plus a free plan to reach it.", "pte score for university, pte requirement university, pte academic for admission", () => [{ h: "PTE score by university", links: examUni("pte") }]],
+    ["/compare-universities/", "Compare Top Universities Side by Side", "Side-by-side comparisons of top universities — rank, fees, acceptance rate, English requirement and programmes — to pick the right fit, free.", "compare universities, university comparison, which university is better", () => [{ h: "University comparisons", links: grab((p) => /^\/compare\//.test(p)) }]],
+    ["/study-abroad-courses/", "Study Abroad by Course & Country", "Where to study an MS, MBA or specialised master's by country — costs, top universities, entry requirements and ROI, free.", "ms in usa, mba abroad, ms computer science abroad, study abroad by country", () => [{ h: "Courses by country", links: grab((p) => /^\/study-abroad\//.test(p)) }]],
+    ["/scholarships/", "Scholarships to Study Abroad (Fully & Partially Funded)", "Scholarships for international students — eligibility, award and deadlines — grouped by country and by award. Free scholarship finder.", "scholarships to study abroad, fully funded scholarships, international student scholarships", () => [{ h: "Scholarships", links: grab((p) => /^\/scholarship/.test(p)) }]],
+    ["/ielts-band-guides/", "IELTS Band Score Guides — Band 6 to Band 8", "How to reach each IELTS band overall and by section (Listening, Reading, Writing, Speaking) — free tips, strategy and practice.", "ielts band 7, how to get ielts band 8, ielts band requirements, ielts band by section", () => [{ h: "IELTS band guides", links: grab((p) => /^\/ielts-band-/.test(p)) }]],
+    ["/english-test-comparisons/", "English Test Comparisons — IELTS vs TOEFL vs PTE vs Duolingo", "Honest, free comparisons of the major English tests so you take the right one for your country and goal.", "ielts vs toefl, ielts vs pte, which english test, duolingo vs ielts", () => [{ h: "Comparisons & chooser", links: grab((p) => (/-vs-[a-z]+\/$/.test(p) && !/^\/compare\//.test(p)) || /^\/which-english-test\/$/.test(p)) }]],
+    ["/exam-requirements-by-country/", "English Test Requirements by Country & Profession", "The English test and score you need for study, PR and professional registration in each country — IELTS, PTE, CELPIP and more.", "ielts for canada pr, ielts for nurses uk, english test for immigration, celpip for canada", () => [{ h: "By country, PR & profession", links: grab((p) => /-for-[a-z0-9-]+\/$/.test(p) || /^\/celpip-/.test(p)) }]],
+    ["/blog/", "Study Abroad & Exam-Prep Blog", "Free guides on IELTS/TOEFL/PTE prep, study-abroad visas, scholarships and immigration news for 2026.", "study abroad blog, ielts tips, student visa news, scholarship guides", () => [{ h: "Latest articles", links: grab((p) => /^\/blog\//.test(p)) }]],
+  ];
+  for (const [path, title, desc, kw, mk] of hubs) {
+    hubPage(path, title, desc, kw, mk()).forEach((h) => claimed.add(h));
+  }
+  // Master HTML sitemap — hubs + every page no hub claimed (guarantees zero orphans).
+  const leftovers = sortL(PAGES.filter((p) => !claimed.has(p.path) && !HUB_LINKS.some((h) => h.href === p.path)).map((p) => ({ href: p.path, label: labelOf(p.html) })));
+  hubPage("/explore/", "Explore Every Free LandingPrep Page", "A complete index of LandingPrep — every free mock test, score guide, university, scholarship, comparison and article in one place.", "landingprep sitemap, all free ielts toefl pte resources, study abroad index", [
+    { h: "Main hubs", links: HUB_LINKS.filter((h) => h.href !== "/explore/") },
+    { h: "All other free pages", links: leftovers },
+  ]);
+}
+buildHubs();
 
 // Write files
 PAGES.forEach(({ path, html }) => {
