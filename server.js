@@ -82,6 +82,36 @@ function rateLimiter({ windowMs, max, message }) {
 app.use("/api/", rateLimiter({ windowMs: 60 * 1000, max: 120, message: "Too many requests — please wait a minute." }));
 app.use("/api/auth/", rateLimiter({ windowMs: 15 * 60 * 1000, max: 20, message: "Too many attempts — please try again in 15 minutes." }));
 
+// ── Free-tier guard (account-wide) ─────────────────────────────────────────────
+// Google's Gemini free-tier limits are per-PROJECT (all users combined), not per-IP,
+// so the per-IP limiter above can't keep us inside them. This global cap counts ALL
+// Gemini calls and returns 429 once the free-tier rate/day budget is spent — so the
+// project physically cannot exceed the free tier and can never incur charges.
+// On 429 the frontend degrades gracefully (TTS → native browser voice; tools → cached
+// / heuristic output). Defaults match Gemini free-tier; raise via env if you ever upgrade.
+const TTS_RPM = parseInt(process.env.TTS_RPM || "3", 10);    // gemini-2.5-flash-preview-tts free: ~3 req/min
+const TTS_RPD = parseInt(process.env.TTS_RPD || "15", 10);   // …and ~15 req/day (account-wide)
+const AI_RPM  = parseInt(process.env.AI_RPM  || "10", 10);   // gemini-2.5-flash free: ~10 req/min
+const AI_RPD  = parseInt(process.env.AI_RPD  || "240", 10);  // …and a conservative daily budget
+function globalCap({ perMin, perDay, label }) {
+  let minCount = 0, minReset = Date.now() + 60 * 1000;
+  let dayCount = 0, dayReset = Date.now() + 24 * 60 * 60 * 1000;
+  return (req, res, next) => {
+    const now = Date.now();
+    if (now >= minReset) { minCount = 0; minReset = now + 60 * 1000; }
+    if (now >= dayReset) { dayCount = 0; dayReset = now + 24 * 60 * 60 * 1000; }
+    if (minCount >= perMin || dayCount >= perDay) {
+      const reset = minCount >= perMin ? minReset : dayReset;
+      res.setHeader("Retry-After", Math.ceil((reset - now) / 1000));
+      return res.status(429).json({ error: `${label} is at its free-tier limit right now — please try again shortly.`, freeTier: true });
+    }
+    minCount++; dayCount++;
+    next();
+  };
+}
+app.use("/api/tts", globalCap({ perMin: TTS_RPM, perDay: TTS_RPD, label: "Natural voice" }));
+app.use(["/api/ai-tutor/chat", "/api/ai-tutor/generate"], globalCap({ perMin: AI_RPM, perDay: AI_RPD, label: "AI tutor" }));
+
 app.use(express.json({ limit: "512kb" }));
 
 // Serve static files from the same directory

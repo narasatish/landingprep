@@ -4347,6 +4347,13 @@ h4.md-h { font-size: 14px; letter-spacing: .01em; }
 .hero .shell { position: relative; z-index: 1; }
 
 /* ── Home SEO content block ─────────────────────────────────────────────── */
+.seo-disclosure { max-width: 820px; margin: 0 auto; }
+.seo-disclosure > summary { cursor: pointer; list-style: none; font-weight: 700; font-size: clamp(15px,2vw,17px); color: var(--ink); padding: 10px 0; display: flex; align-items: center; gap: 10px; }
+.seo-disclosure > summary::-webkit-details-marker { display: none; }
+.seo-disclosure > summary::before { content: "+"; font-weight: 700; color: var(--accent); font-size: 20px; line-height: 1; width: 18px; text-align: center; }
+.seo-disclosure[open] > summary::before { content: "\2212"; }
+.seo-disclosure > summary:hover { color: var(--accent); }
+.seo-disclosure[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: 12px; }
 .seo-content-inner { max-width: 820px; margin: 0 auto; }
 .seo-content-inner h2 { font-size: clamp(20px,3vw,26px); margin: 0 0 16px; }
 .seo-content-inner p { color: var(--ink-2); font-size: 15px; line-height: 1.75; margin: 0 0 14px; }

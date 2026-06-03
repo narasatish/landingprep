@@ -445,11 +445,13 @@ function Home({ onGuide, onPractice, onNav }) {
         </div>
       </section>
 
-      {/* SEO content — crawlable, answer-style block for Google + AI search engines */}
-      <section className="section seo-content" style={{ background: "var(--surface-2)", borderTop: "1px solid var(--line)" }}>
+      {/* SEO content — crawlable answer-style block, collapsed into one tab above the
+          footer so it stays in the DOM for Google/AI search but doesn't clutter the page. */}
+      <section className="section seo-content" style={{ background: "var(--surface-2)", borderTop: "1px solid var(--line)", paddingTop: 18, paddingBottom: 18 }}>
         <div className="shell">
-          <div className="seo-content-inner reveal">
-            <h2 className="h2">Free IELTS, TOEFL, PTE, GRE &amp; GMAT mock tests + a complete study-abroad toolkit</h2>
+          <details className="seo-disclosure reveal">
+            <summary>Free IELTS, TOEFL, PTE, GRE &amp; GMAT mock tests + a complete study-abroad toolkit</summary>
+            <div className="seo-content-inner">
             <p>
               <strong>LandingPrep</strong> is a 100% free platform that takes you from your first mock test all the way to your campus abroad. Practise <a href="#/exam-hub/ielts" onClick={(e)=>{e.preventDefault();onGuide(exams[0]);}}>IELTS</a>, TOEFL iBT, PTE Academic, CELPIP, the Duolingo English Test, GRE and GMAT Focus with 1,000+ full-length <a href="#/exam-prep" onClick={(e)=>{e.preventDefault();onNav("exam-prep");}}>mock tests</a> built on real exam timings and section-honest scoring — plus free AI speaking and writing practice with model answers. There is no signup, no credit card and no paywall.
             </p>
@@ -459,7 +461,8 @@ function Home({ onGuide, onPractice, onNav }) {
             <p>
               Whether you are searching for <em>free IELTS practice tests</em>, the <em>best universities for an MS in Computer Science in Canada</em>, the <em>cost of studying in the UK</em>, <em>study-abroad scholarships</em>, or <em>which English test to take</em>, LandingPrep gives clear, free answers and the tools to act on them — for international students in every country. Start free on the <a href="#/" onClick={(e)=>{e.preventDefault();onNav("home");}}>homepage</a>, or read our <a href="#/blog" onClick={(e)=>{e.preventDefault();onNav("blog");}}>study &amp; immigration blog</a>.
             </p>
-          </div>
+            </div>
+          </details>
         </div>
       </section>
 
