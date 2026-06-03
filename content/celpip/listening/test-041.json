@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 41",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 41",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-041-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Winter safety tips",
-      "script": "A community centre instructor runs a winter safety session, covering how to dress in layers, how to treat icy paths at home, safe driving practices in snow, and when to call emergency services.",
+      "title": "Medical Appointment Rescheduling",
+      "text": "Patient: Hello, I need to reschedule my appointment with Dr. Singh. Receptionist: Of course. Can I have your patient ID? Patient: It's P-9847. My appointment is next Tuesday at 2 PM, but I have a conflict. Receptionist: Let me pull that up. Yes, I see the appointment for June 10th at 2 PM. What days and times work better for you? Patient: Ideally, early morning, like 8 or 9 AM. I work afternoons. Receptionist: Let me check the doctor's schedule. Dr. Singh has an opening on Friday, June 13th at 8:30 AM. Would that suit you? Patient: Yes, that works perfectly. Receptionist: Great. I'm canceling the Tuesday 2 PM slot and booking you for Friday, June 13th at 8:30 AM. Your appointment is for a regular checkup, is that correct? Patient: Yes, and also to discuss my recent blood work results. Receptionist: Perfect. I'll add a note that you want to review the blood work. You'll need to arrive ten minutes early to fill out any updated forms. Patient: Will Dr. Singh have my test results by then? Receptionist: Yes, they'll definitely be in her file. The lab sent them in yesterday. Is there anything else? Patient: No, that's everything. Thank you.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-041-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about post-secondary education funding",
-      "script": "This news is about post-secondary education funding. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Coffee Shop Catch-Up",
+      "text": "Sarah: Hey, how are you? It's been ages! Michael: I know, right? Must be like six months since we last hung out. Sarah: At least. How was your trip to Vancouver? Michael: It was amazing! The weather was beautiful, and I got to see the mountains every day. Sarah: That sounds incredible. Did you do any hiking? Michael: Yeah, we went up to Whistler for a weekend. The views were unbelievable. Sarah: I'm so jealous. I've been meaning to get out there. Hey, do you want to go grab dinner next week? Michael: Absolutely, I'd love that. How about Thursday? Sarah: Thursday works for me. There's that new Italian place downtown that opened last month. Michael: Perfect. Should we book a table? Sarah: Yeah, probably a good idea. What time? Michael: How about 7 PM? Sarah: Sounds good. I'll make the reservation.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-041-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about post-secondary education funding",
-      "script": "This discussion is about post-secondary education funding. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "Hospital Visitor Guidelines",
+      "text": "Welcome to City Hospital. We're glad you're visiting someone here. Please review our visitor guidelines for patient safety and comfort. Visiting hours are 10 AM to 8 PM daily. Each patient can have a maximum of two visitors at a time in their room. This ensures proper rest and medical care. Children under twelve must be accompanied by an adult. We restrict visits from children with colds or contagious illnesses. Visitors should wash their hands upon arrival and before leaving. Hand-sanitizer stations are located throughout the facility. Quiet voices are required in patient rooms and hallways. Please avoid using cell phones in patient areas. Photography is not permitted without the patient's written consent. Flowers and plants are welcome, but balloons are not allowed due to interference with medical equipment. Food brought from outside is permitted only if approved by nursing staff. Many patients have dietary restrictions. Visiting a patient receiving isolation care requires special precautions. Nursing staff will provide instructions. Do not disturb patients' medical equipment, monitors, or IV lines. Visitors with concerns should speak to staff at the nursing station. Parking is available in the north lot at five dollars per visit. An elevator is located near the main entrance for easy access.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-041-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about post-secondary education funding",
-      "script": "This announcement is about post-secondary education funding. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "Toronto Transit Strike Reaches Day Five",
+      "text": "Good evening. The Toronto Transit Commission strike has now entered its fifth day, affecting nearly two million commuters across the Greater Toronto Area. The TTC and the union representing over 10,000 workers remain at odds over wages and benefits. Union spokesperson Maria Chen says members are seeking a 4.25 percent pay increase over three years, citing inflation and cost-of-living pressures. The TTC counters that budget constraints limit them to 2.5 percent. Downtown businesses report a 30 percent drop in foot traffic since Monday. City Council has called for emergency mediation sessions to resume tomorrow morning. Meanwhile, the public is turning to carpooling, cycling, and GO Transit as alternatives. Some schools have adjusted schedules to accommodate parents unable to reach their children. Negotiations are expected to intensify as both sides face increasing pressure from the community.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-041-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about post-secondary education funding",
-      "script": "This office is about post-secondary education funding. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Local Food System Development",
+      "text": "Farmer Cooperative Director Maria: We're launching an initiative to build a more resilient local food system for our region. Currently, about 87 percent of our food is imported from outside the province. We want to increase local food production and support our farmers. We're proposing a farmers market expansion and direct-to-consumer delivery programs. The cooperative will help coordinate logistics and marketing.\n\nGrocery Store Manager Paul: I understand the value of local food, Maria, but I'm concerned about pricing and consistency. Local producers can't always compete with the prices we get from large distributors. And seasonality is an issue—in winter, local farmers have limited options. My customers expect year-round availability and competitive pricing.\n\nPublic Health Officer Dr. Sarah: Actually, Paul, local food systems have documented health benefits. Communities with stronger local food networks show 22 percent higher rates of fresh produce consumption. Plus, reducing transportation distance improves food safety and nutrition because products reach consumers fresher. And we should consider the long-term economic impact. Local spending circulates within the community.\n\nSmall Farm Owner James: I'd love to participate in this initiative. Currently, I sell about 40 percent of my production to the farmers market, but I'd like to do more direct sales. The issue is I don't have the infrastructure for packaging and distribution. If the cooperative could help with that, I could increase production by 60 percent.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-041-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about post-secondary education funding",
-      "script": "This lecture is about post-secondary education funding. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Digital Privacy in the Workplace",
+      "text": "I want to talk about something that concerns me deeply—workplace monitoring and digital privacy. Many companies today monitor their employees constantly: they track keystrokes, monitor websites visited, log bathroom breaks through card access, and even use AI to analyze email and chat conversations. The argument is usually that this improves productivity and security, but I think it's gone too far. Yes, employers have legitimate security concerns, but the level of surveillance we're accepting is unprecedented. When employees feel constantly watched, it creates anxiety and erodes trust. Studies show that excessive monitoring actually decreases productivity and morale. Workers spend time trying to appear productive rather than actually being productive. Moreover, there's a moral issue here. As an employee, you're a person, not a machine to be optimized. You deserve privacy and dignity at work. I'm not arguing against all monitoring—reasonable security measures are necessary. But there's a middle ground between trusting employees completely and treating them like suspects. Companies that have implemented less invasive monitoring policies actually report higher employee satisfaction and retention. So my position is this: employers should use targeted monitoring only where necessary for genuine security reasons, not blanket surveillance of everything everyone does. Trust and respect for employee privacy create better workplaces.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-041-q01",
+      "audioScriptId": "celpip-listening-041-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-041-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "What is the patient's ID?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "P-8479",
+        "P-9847",
+        "P-9748",
+        "P-8794"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "winter safety tips"
+      "correctAnswer": "P-9847",
+      "explanation": "Patient provides their ID as 'P-9847.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-041-q02",
+      "audioScriptId": "celpip-listening-041-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-041-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "What was the original appointment date and time?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "Tuesday at 1 PM",
+        "Tuesday at 2 PM",
+        "Wednesday at 2 PM",
+        "Thursday at 2 PM"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "winter safety tips"
+      "correctAnswer": "Tuesday at 2 PM",
+      "explanation": "Patient mentions the appointment is 'next Tuesday at 2 PM' and receptionist confirms 'June 10th at 2 PM.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-041-q03",
+      "audioScriptId": "celpip-listening-041-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-041-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "When does the patient prefer to schedule appointments?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "Late afternoon",
+        "Evening",
+        "Early morning, 8 or 9 AM",
+        "Midday"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "winter safety tips"
+      "correctAnswer": "Early morning, 8 or 9 AM",
+      "explanation": "Patient states 'Ideally, early morning, like 8 or 9 AM. I work afternoons.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-041-q04",
+      "audioScriptId": "celpip-listening-041-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-041-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "What is the new appointment date and time?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "Friday, June 6th at 8:30 AM",
+        "Friday, June 12th at 8:30 AM",
+        "Friday, June 13th at 8:30 AM",
+        "Friday, June 20th at 8:30 AM"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "Friday, June 13th at 8:30 AM",
+      "explanation": "Receptionist books the new appointment for 'Friday, June 13th at 8:30 AM.'",
       "difficulty": "medium",
-      "topic": "winter safety tips"
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-041-q05",
+      "audioScriptId": "celpip-listening-041-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-041-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "What should the patient do to prepare for the appointment?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "Fast for 12 hours",
+        "Bring insurance documents only",
+        "Arrive ten minutes early to fill out updated forms",
+        "Call to confirm the day before"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "Arrive ten minutes early to fill out updated forms",
+      "explanation": "Receptionist states 'You'll need to arrive ten minutes early to fill out any updated forms.'",
       "difficulty": "medium",
-      "topic": "winter safety tips"
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-041-q06",
+      "audioScriptId": "celpip-listening-041-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-041-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "When were the patient's blood work results sent to the clinic?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "This morning",
+        "Yesterday",
+        "Last week",
+        "This afternoon"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "Yesterday",
+      "explanation": "Receptionist confirms 'The lab sent them in yesterday.'",
       "difficulty": "medium",
-      "topic": "winter safety tips"
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-041-q07",
+      "audioScriptId": "celpip-listening-041-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-041-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "What reasons does the patient have for the appointment?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "Blood work results only",
+        "Regular checkup only",
+        "Regular checkup and to discuss recent blood work results",
+        "Prescription refill"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "winter safety tips"
+      "correctAnswer": "Regular checkup and to discuss recent blood work results",
+      "explanation": "Patient states 'also to discuss my recent blood work results' and receptionist confirms it's a regular checkup.",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-041-q08",
+      "audioScriptId": "celpip-listening-041-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-041-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "Who is the patient's doctor?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "Dr. Kumar",
+        "Dr. Singh",
+        "Dr. Patel",
+        "Dr. Sharma"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "winter safety tips"
+      "correctAnswer": "Dr. Singh",
+      "explanation": "Patient mentions wanting to reschedule with 'Dr. Singh' throughout the conversation.",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-041-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-041-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-041-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "How long has it been since Sarah and Michael last saw each other?",
+      "options": [
+        "Two months",
+        "Four months",
+        "Six months",
+        "A year"
+      ],
+      "correctAnswer": "Six months",
+      "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
       "difficulty": "medium",
-      "topic": "winter safety tips"
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-041-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-041-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-041-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "Where did Michael travel?",
+      "options": [
+        "Toronto",
+        "Montreal",
+        "Vancouver",
+        "Calgary"
+      ],
+      "correctAnswer": "Vancouver",
+      "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
       "difficulty": "medium",
-      "topic": "winter safety tips"
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-041-q11",
+      "audioScriptId": "celpip-listening-041-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-041-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "What outdoor activity did Michael do?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "Kayaking",
+        "Skiing",
+        "Hiking",
+        "Swimming"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Hiking",
+      "explanation": "Sarah asks 'Did you do any hiking?' and Michael responds positively about going to Whistler.",
+      "difficulty": "medium",
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-041-q12",
+      "audioScriptId": "celpip-listening-041-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-041-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "Mexican",
+        "Italian",
+        "Japanese",
+        "Indian"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Italian",
+      "explanation": "Sarah mentions 'that new Italian place downtown.'",
+      "difficulty": "medium",
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-041-q13",
+      "audioScriptId": "celpip-listening-041-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-041-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "What day do they plan to meet?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Thursday",
+      "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
+      "difficulty": "medium",
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-041-q14",
+      "audioScriptId": "celpip-listening-041-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-041-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "What are the visiting hours?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "8 AM to 6 PM",
+        "9 AM to 7 PM",
+        "10 AM to 8 PM",
+        "11 AM to 9 PM"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "10 AM to 8 PM",
+      "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-041-q15",
+      "audioScriptId": "celpip-listening-041-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-041-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "How many visitors can be in a patient's room at one time?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "One",
+        "Two",
+        "Three",
+        "Four"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Two",
+      "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-041-q16",
+      "audioScriptId": "celpip-listening-041-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-041-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "What is the minimum age for unaccompanied visits?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "Eight years old",
+        "Ten years old",
+        "Twelve years old",
+        "Fourteen years old"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Twelve years old",
+      "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-041-q17",
+      "audioScriptId": "celpip-listening-041-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-041-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "Are balloons allowed in patient rooms?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "Yes",
+        "Yes, with restrictions",
+        "No",
+        "Only on special occasions"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "No",
+      "explanation": "The guide states 'balloons are not allowed due to interference with medical equipment.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-041-q18",
+      "audioScriptId": "celpip-listening-041-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-041-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "What is the parking fee per visit?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "$2",
+        "$3",
+        "$4",
+        "$5"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "$5",
+      "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-041-q19",
+      "audioScriptId": "celpip-listening-041-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-041-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "The visitor",
+        "The patient",
+        "The nursing staff",
+        "The hospital administrator"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "The nursing staff",
+      "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-041-q20",
+      "audioScriptId": "celpip-listening-041-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-041-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "How many workers does the union represent?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "8,000 workers",
+        "10,000 workers",
+        "12,000 workers",
+        "15,000 workers"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "10,000 workers",
+      "explanation": "The report explicitly states the union represents over 10,000 workers.",
+      "difficulty": "medium",
+      "topic": "Labor dispute"
     },
     {
       "id": "celpip-listening-041-q21",
+      "audioScriptId": "celpip-listening-041-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-041-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "What percentage pay increase is the union requesting?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "2.5 percent",
+        "3.0 percent",
+        "4.25 percent",
+        "5.0 percent"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "4.25 percent",
+      "explanation": "Union spokesperson Maria Chen states members are seeking a 4.25 percent pay increase.",
+      "difficulty": "medium",
+      "topic": "Labor dispute"
     },
     {
       "id": "celpip-listening-041-q22",
+      "audioScriptId": "celpip-listening-041-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-041-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "What is the TTC's wage offer?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "2.5 percent over three years",
+        "3.5 percent over two years",
+        "4.25 percent over four years",
+        "1.5 percent over three years"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "2.5 percent over three years",
+      "explanation": "The report states the TTC counters with 2.5 percent over three years.",
+      "difficulty": "medium",
+      "topic": "Labor dispute"
     },
     {
       "id": "celpip-listening-041-q23",
+      "audioScriptId": "celpip-listening-041-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-041-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "How much has foot traffic in downtown businesses decreased?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "20 percent",
+        "30 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "30 percent",
+      "explanation": "Downtown businesses report a 30 percent drop in foot traffic since Monday.",
+      "difficulty": "medium",
+      "topic": "Labor dispute"
     },
     {
       "id": "celpip-listening-041-q24",
+      "audioScriptId": "celpip-listening-041-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-041-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "When are emergency mediation sessions expected to resume?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "Tonight",
+        "Tomorrow morning",
+        "Next week",
+        "In two days"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Tomorrow morning",
+      "explanation": "City Council has called for emergency mediation sessions to resume tomorrow morning.",
+      "difficulty": "medium",
+      "topic": "Labor dispute"
     },
     {
       "id": "celpip-listening-041-q25",
+      "audioScriptId": "celpip-listening-041-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-041-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "What percentage of food is currently imported from outside the province?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "75 percent",
+        "80 percent",
+        "85 percent",
+        "87 percent"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "87 percent",
+      "explanation": "Maria states about 87 percent of food is imported from outside the province.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-041-q26",
+      "audioScriptId": "celpip-listening-041-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-041-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "Grocery stores and restaurants",
+        "Farmers market and delivery programs",
+        "Government subsidies",
+        "Large distribution centers"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Farmers market and delivery programs",
+      "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-041-q27",
+      "audioScriptId": "celpip-listening-041-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-041-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What is Paul's primary concern about local food?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "Product quality",
+        "Pricing and consistency",
+        "Customer demand",
+        "Storage requirements"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Pricing and consistency",
+      "explanation": "Paul is concerned local producers can't compete on price and have seasonal limitations.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-041-q28",
+      "audioScriptId": "celpip-listening-041-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-041-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "According to Dr. Sarah, what percentage increase in fresh produce consumption is shown?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "15 percent",
+        "20 percent",
+        "22 percent",
+        "25 percent"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "22 percent",
+      "explanation": "Communities with stronger local food networks show 22 percent higher fresh produce consumption.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-041-q29",
+      "audioScriptId": "celpip-listening-041-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-041-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "Lower cost",
+        "Improved freshness and food safety",
+        "More variety",
+        "Better storage"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Improved freshness and food safety",
+      "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-041-q30",
+      "audioScriptId": "celpip-listening-041-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-041-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "25 percent",
+        "35 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "40 percent",
+      "explanation": "James currently sells about 40 percent of production to the farmers market.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-041-q31",
+      "audioScriptId": "celpip-listening-041-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-041-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "Limited land",
+        "Transportation issues",
+        "Packaging and distribution",
+        "Workforce availability"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Packaging and distribution",
+      "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-041-q32",
+      "audioScriptId": "celpip-listening-041-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-041-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "By what percentage could James increase production if he had distribution support?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "40 percent",
+        "50 percent",
+        "60 percent",
+        "70 percent"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "60 percent",
+      "explanation": "James states he could increase production by 60 percent with distribution support.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-041-q33",
+      "audioScriptId": "celpip-listening-041-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-041-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "It's too expensive",
+        "It has gone too far in terms of surveillance",
+        "It doesn't improve security",
+        "It's ineffective"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "It has gone too far in terms of surveillance",
+      "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-041-q34",
+      "audioScriptId": "celpip-listening-041-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-041-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "According to the speaker, what is the claimed reason for workplace monitoring?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "To reduce wages",
+        "To improve productivity and security",
+        "To prevent theft",
+        "To track attendance"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "To improve productivity and security",
+      "explanation": "The speaker mentions that companies argue monitoring improves productivity and security.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-041-q35",
+      "audioScriptId": "celpip-listening-041-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-041-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "They work harder",
+        "It creates anxiety and erodes trust",
+        "They become more efficient",
+        "They communicate better"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "It creates anxiety and erodes trust",
+      "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-041-q36",
+      "audioScriptId": "celpip-listening-041-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-041-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "It increases productivity",
+        "It decreases productivity and morale",
+        "It has no effect",
+        "It improves communication"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "It decreases productivity and morale",
+      "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-041-q37",
+      "audioScriptId": "celpip-listening-041-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-041-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What solution does the speaker propose?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "No monitoring at all",
+        "Complete transparency monitoring",
+        "Targeted monitoring only where necessary",
+        "Random monitoring"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about post-secondary education funding.",
-      "difficulty": "medium"
+      "correctAnswer": "Targeted monitoring only where necessary",
+      "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-041-q38",
+      "audioScriptId": "celpip-listening-041-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-041-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What do companies with less invasive monitoring report?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "Lower profits",
+        "Higher employee satisfaction and retention",
+        "More security issues",
+        "Reduced efficiency"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about post-secondary education funding.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "Higher employee satisfaction and retention",
+      "explanation": "The speaker mentions companies with less invasive monitoring report higher satisfaction and retention.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     }
   ]
 }

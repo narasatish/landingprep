@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 6",
+  "title": "CELPIP General Listening — Practice Test 6",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-006-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Reporting a Water Leak in an Apartment",
-      "text": "Resident: Hello, I need to report a water leak. It started this morning under my kitchen sink. There's water pooling on the floor.\nSuperintendent: I'll send someone right away. Can you confirm your unit number?\nResident: It's unit 4B on the fourth floor.\nSuperintendent: Got it. And is the leak a slow drip or is it flowing steadily?\nResident: It's a steady drip. I've put a bucket under it, but it's filling up about every two hours.\nSuperintendent: That sounds like a loose connection on the supply line. The plumber we use is available this afternoon. Would two o'clock work for you?\nResident: Yes, that's fine. Do I need to be home?\nSuperintendent: Yes, please be there so the plumber can access the cabinet under the sink. Also, to be safe, turn off the shut-off valve under the sink — there's usually a small handle on the left pipe.\nResident: I found it and turned it off. The dripping has stopped for now.\nSuperintendent: Perfect. That confirms the problem is with the supply line, not the drain. The plumber will replace the fitting. It should take under an hour.",
+      "title": "Phone Plan Upgrade",
+      "text": "Customer: Hi, I'm interested in upgrading my phone plan. I currently have the basic plan with 2 GB of data. Support: Great! I can definitely help with that. What's your phone number? Customer: It's 416-555-0234. I'm constantly hitting my data limit, especially with streaming videos. Support: I understand. Let me pull up your account. You're right, your basic plan is 2 GB per month at $35. What data usage would work better for you? Customer: Probably something like 10 GB. How much would that be? Support: We have a 10 GB plan at $65 per month. You'd also get unlimited texting and more calling minutes. Would that interest you? Customer: What's the difference in calling minutes from my current plan? Support: Your current plan has 200 minutes; the 10 GB plan has unlimited calling. Plus, there's no contract change required if you cancel later. Customer: Actually, do you have an 8 GB plan? That might be better value. Support: Good question. We do have an 8 GB plan at $55 per month with the same unlimited calling and texting. Customer: Perfect, I'll take that. When does it take effect? Support: I'm activating it right now. Your bill will reflect the change next billing cycle, which is on July 8th. The monthly cost goes from $35 to $55. Customer: That works for me. Thanks.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-006-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Choosing Between Two Job Offers",
-      "text": "Priya: I'm in a tough spot. I got two job offers this week and I have until Friday to decide.\nKevin: That's a great problem to have! What are the offers?\nPriya: One is a junior marketing role at a tech startup. Good salary, lots of creative freedom, but the company is only two years old and a bit risky. The other is a coordinator position at a non-profit — lower salary, but excellent benefits and a guaranteed pension.\nKevin: What matters more to you right now — financial security or career growth?\nPriya: Honestly, both. I have student loans to pay off, but I also don't want to be stuck in a job that goes nowhere.\nKevin: Could the non-profit lead to advancement?\nPriya: They mentioned there's a senior coordinator role that opens up every couple of years. But at the startup, if it takes off, the growth potential is huge.\nKevin: Have you factored in the commute?\nPriya: Good point — the startup is downtown, forty-five minutes each way on transit. The non-profit is ten minutes from my apartment.\nKevin: That's two hours a day you'd get back with the non-profit. That's not nothing.",
+      "title": "Fitness Class Enrollment",
+      "text": "Trainer: Welcome to the studio. Is this your first class? Maya: Yeah, I'm pretty nervous. Trainer: Don't worry, everyone starts somewhere. What's your experience with yoga? Maya: I've done some stretching at home, but never a full class like this. Trainer: That's great. Let's get you set up. We have mats over there, and grab a water bottle from the cooler. Maya: How long is the class? Trainer: It's 60 minutes total. We start with breathing exercises, warm up, then move through poses, and end with meditation. Maya: That sounds good. What's the hardest part for beginners? Trainer: Usually it's learning to listen to your body. Don't push too hard too fast. If something hurts, modify it or take a break. Maya: Good to know. How many classes should I take per week to see results? Trainer: For best results, aim for three times a week. Even once a week is great though. Maya: I'll start with twice a week and see how it goes. Trainer: Perfect. That's a solid plan. Let's get started.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-006-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "How to Use the Provincial Health Insurance System",
-      "text": "Welcome to this information session on using the provincial health insurance system. If you are a permanent resident or Canadian citizen living in this province, you are entitled to a provincial health card, which covers the cost of most medically necessary services.\n\nTo obtain your health card, visit a ServiceOntario or equivalent provincial office with two pieces of identification — one must be a government-issued photo ID, such as a passport or permanent resident card, and one must show your current address, such as a utility bill or bank statement. New applicants typically wait a three-month period before coverage begins, so it is important to apply as soon as possible after arriving.\n\nYour health card covers visits to a family doctor, specialist consultations when referred by your doctor, emergency room visits, hospital stays, and diagnostic tests including X-rays and blood work. It does not automatically cover prescription drugs, dental care, or vision care, which are typically covered through separate private insurance plans or provincial drug benefit programmes for qualifying residents.\n\nIf you do not have a family doctor, you can register with the Health Care Connect programme, which matches patients to available physicians. In the meantime, walk-in clinics and urgent care centres can treat most non-emergency conditions and are also covered by your health card.\n\nAlways carry your health card when attending medical appointments, and report any change of address to the provincial health authority to ensure your records are current.",
+      "title": "Hospital Visitor Guidelines",
+      "text": "Welcome to City Hospital. We're glad you're visiting someone here. Please review our visitor guidelines for patient safety and comfort. Visiting hours are 10 AM to 8 PM daily. Each patient can have a maximum of two visitors at a time in their room. This ensures proper rest and medical care. Children under twelve must be accompanied by an adult. We restrict visits from children with colds or contagious illnesses. Visitors should wash their hands upon arrival and before leaving. Hand-sanitizer stations are located throughout the facility. Quiet voices are required in patient rooms and hallways. Please avoid using cell phones in patient areas. Photography is not permitted without the patient's written consent. Flowers and plants are welcome, but balloons are not allowed due to interference with medical equipment. Food brought from outside is permitted only if approved by nursing staff. Many patients have dietary restrictions. Visiting a patient receiving isolation care requires special precautions. Nursing staff will provide instructions. Do not disturb patients' medical equipment, monitors, or IV lines. Visitors with concerns should speak to staff at the nursing station. Parking is available in the north lot at five dollars per visit. An elevator is located near the main entrance for easy access.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-006-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: Province Launches New Childcare Subsidy Programme",
-      "text": "The provincial government announced a new childcare subsidy programme this morning, aimed at reducing childcare costs for families earning below ninety thousand dollars per year. Under the new programme, eligible families will pay no more than ten dollars per day for regulated childcare, beginning on the first of next month.\n\nThe Minister of Families said the programme is expected to benefit approximately forty thousand children across the province in its first year. Priority access will be given to families with children under the age of six, as well as families currently on waitlists at participating childcare centres.\n\nTo apply, parents must submit an application through the provincial government's online portal and provide proof of income from the previous tax year. Applications will be processed within fifteen business days, and approved families will be notified by email.\n\nChild-care providers interested in joining the programme must sign a participation agreement and comply with the province's staffing and curriculum standards. The government said that over three hundred licenced providers have already registered ahead of the launch.\n\nOpposition critics raised concerns that the programme does not extend to informal care arrangements, such as home-based care providers who are not licenced. The government indicated it plans to expand eligibility in future years.",
+      "title": "Nova Scotia Healthcare Worker Recruitment",
+      "text": "Nova Scotia is launching an aggressive recruitment campaign to address critical shortages in healthcare professionals. The province has announced a 35 million dollar investment in recruitment and retention initiatives. Currently, there are over 800 unfilled nursing positions across Nova Scotia hospitals and clinics. The campaign targets nurses, physiotherapists, occupational therapists, and laboratory technicians. Starting salaries for nurses are being increased by 12 percent to compete with other provinces. The government is also offering signing bonuses of up to 15,000 dollars for candidates relocating to rural communities. Housing assistance programs will help new recruits find affordable accommodation. International recruitment is underway, with partnerships established with nursing programs in the Philippines and India. Officials estimate it will take approximately 18 months to fill 60 percent of the vacant positions. Patient wait times have increased significantly due to staffing shortages, with some emergency departments reporting delays of four to six hours.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-006-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Is Social Media Good or Bad for Teenagers?",
-      "text": "Host: Today's discussion focuses on social media and its impact on teenagers. With me are two commentators: Diane, a child development researcher, and Tom, who advocates for digital literacy education. Diane, let's start with you — is social media harmful to teenagers?\nDiane: The research is quite clear that heavy social media use is associated with higher rates of anxiety, depression, and sleep disruption in teenagers, particularly for girls. The problem isn't the technology itself — it's the design. Platforms are deliberately built to maximise engagement, which means maximising the time young people spend comparing themselves to others.\nHost: Tom, do you think the solution is restricting access?\nTom: I strongly disagree with blanket restrictions. The answer is education. We need to teach teenagers to be critical consumers of digital content — how algorithms work, how images are edited, what business models drive these platforms. Banning access doesn't develop those skills; it just delays the problem.\nHost: Diane, what do you say to that?\nDiane: I agree that education is necessary, but it is not sufficient on its own. A thirteen-year-old is neurologically not equipped to resist the deliberate manipulation that these platforms apply. We need age-appropriate restrictions alongside digital literacy — not instead of it.\nHost: Tom, any response?\nTom: The issue is that restriction without education creates what I call the forbidden fruit effect — the moment restrictions are lifted, young people binge. I've seen this in schools that blocked social media completely and then found students spending even more time online at weekends to compensate.\nHost: Thank you both. It seems there is agreement on the need for education, but a real divide on the role of restrictions.",
+      "title": "Local Food System Development",
+      "text": "Farmer Cooperative Director Maria: We're launching an initiative to build a more resilient local food system for our region. Currently, about 87 percent of our food is imported from outside the province. We want to increase local food production and support our farmers. We're proposing a farmers market expansion and direct-to-consumer delivery programs. The cooperative will help coordinate logistics and marketing.\n\nGrocery Store Manager Paul: I understand the value of local food, Maria, but I'm concerned about pricing and consistency. Local producers can't always compete with the prices we get from large distributors. And seasonality is an issue—in winter, local farmers have limited options. My customers expect year-round availability and competitive pricing.\n\nPublic Health Officer Dr. Sarah: Actually, Paul, local food systems have documented health benefits. Communities with stronger local food networks show 22 percent higher rates of fresh produce consumption. Plus, reducing transportation distance improves food safety and nutrition because products reach consumers fresher. And we should consider the long-term economic impact. Local spending circulates within the community.\n\nSmall Farm Owner James: I'd love to participate in this initiative. Currently, I sell about 40 percent of my production to the farmers market, but I'd like to do more direct sales. The issue is I don't have the infrastructure for packaging and distribution. If the cooperative could help with that, I could increase production by 60 percent.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-006-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: Why Small Towns Deserve More Investment",
-      "text": "For decades, government investment in infrastructure, healthcare, and education has flowed predominantly toward major cities. This concentration of resources has created a growing divide between the opportunities available to people in urban centres and those living in smaller towns and rural communities. I believe this imbalance is not only unfair but economically short-sighted.\n\nConsider healthcare. In most Canadian cities, residents have access to walk-in clinics, specialist hospitals, and urgent care centres within a reasonable distance. In small towns, the nearest hospital may be an hour's drive away. Rural residents have higher rates of late-stage cancer diagnoses precisely because early detection requires access to diagnostic services that simply are not available locally.\n\nEducation tells a similar story. Urban schools are often better funded, have access to more experienced teachers, and offer a wider range of programmes and extracurricular activities. Rural students frequently travel long distances to school and have fewer post-secondary options nearby. This creates a pattern in which talented young people leave their home communities for cities — and rarely return.\n\nCritics of increased rural investment argue that the cost per person is too high. This logic is flawed. The cost of maintaining a dispersed population is not a reason to abandon it — it is an argument for smarter, targeted investment in sustainable local infrastructure.\n\nIf we are serious about equality of opportunity, the postal code where someone is born should not determine the quality of healthcare, education, or economic opportunity available to them. Small towns and rural communities deserve better — not out of sentiment, but out of a genuine commitment to a more equitable society.",
+      "title": "Digital Privacy in the Workplace",
+      "text": "I want to talk about something that concerns me deeply—workplace monitoring and digital privacy. Many companies today monitor their employees constantly: they track keystrokes, monitor websites visited, log bathroom breaks through card access, and even use AI to analyze email and chat conversations. The argument is usually that this improves productivity and security, but I think it's gone too far. Yes, employers have legitimate security concerns, but the level of surveillance we're accepting is unprecedented. When employees feel constantly watched, it creates anxiety and erodes trust. Studies show that excessive monitoring actually decreases productivity and morale. Workers spend time trying to appear productive rather than actually being productive. Moreover, there's a moral issue here. As an employee, you're a person, not a machine to be optimized. You deserve privacy and dignity at work. I'm not arguing against all monitoring—reasonable security measures are necessary. But there's a middle ground between trusting employees completely and treating them like suspects. Companies that have implemented less invasive monitoring policies actually report higher employee satisfaction and retention. So my position is this: employers should use targeted monitoring only where necessary for genuine security reasons, not blanket surveillance of everything everyone does. Trust and respect for employee privacy create better workplaces.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,143 +119,245 @@
       "audioScriptId": "celpip-listening-006-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What is the problem the resident is reporting?",
+      "prompt": "What is the customer's phone number?",
       "options": [
-        "A broken window",
-        "A water leak under the kitchen sink",
-        "A faulty heating system",
-        "A blocked toilet"
+        "416-555-0243",
+        "416-555-0234",
+        "416-555-0342",
+        "416-555-0423"
       ],
-      "correctAnswer": "A water leak under the kitchen sink",
-      "explanation": "The resident calls to report water pooling under the kitchen sink.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
+      "correctAnswer": "416-555-0234",
+      "explanation": "Customer provides their phone number as '416-555-0234.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-006-q02",
       "audioScriptId": "celpip-listening-006-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How fast is the bucket filling up?",
+      "prompt": "How much data does the customer currently have?",
       "options": [
-        "Every thirty minutes",
-        "Every hour",
-        "Every two hours",
-        "Every day"
+        "1 GB",
+        "2 GB",
+        "5 GB",
+        "8 GB"
       ],
-      "correctAnswer": "Every two hours",
-      "explanation": "The resident says the bucket fills up about every two hours.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
+      "correctAnswer": "2 GB",
+      "explanation": "Customer states they have 'the basic plan with 2 GB of data.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-006-q03",
       "audioScriptId": "celpip-listening-006-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent suspect the problem is?",
+      "prompt": "What is the cost of the current plan?",
       "options": [
-        "A cracked drain pipe",
-        "A loose connection on the supply line",
-        "A broken water heater",
-        "A faulty pressure valve"
+        "$25 per month",
+        "$35 per month",
+        "$45 per month",
+        "$55 per month"
       ],
-      "correctAnswer": "A loose connection on the supply line",
-      "explanation": "The superintendent says it sounds like a loose connection on the supply line.",
+      "correctAnswer": "$35 per month",
+      "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'",
       "difficulty": "medium",
-      "topic": "opening a bank account"
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-006-q04",
       "audioScriptId": "celpip-listening-006-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "When is the plumber available?",
+      "prompt": "How many calling minutes does the customer's current plan have?",
       "options": [
-        "This morning",
-        "Tomorrow morning",
-        "Two o'clock this afternoon",
-        "Next week"
+        "100 minutes",
+        "150 minutes",
+        "200 minutes",
+        "Unlimited"
       ],
-      "correctAnswer": "Two o'clock this afternoon",
-      "explanation": "The superintendent says the plumber is available at two o'clock this afternoon.",
+      "correctAnswer": "200 minutes",
+      "explanation": "Support states 'Your current plan has 200 minutes.'",
       "difficulty": "medium",
-      "topic": "opening a bank account"
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-006-q05",
       "audioScriptId": "celpip-listening-006-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent ask the resident to do immediately?",
+      "prompt": "What data plan does the customer ultimately choose?",
       "options": [
-        "Call a plumber directly",
-        "Leave the apartment",
-        "Turn off the shut-off valve",
-        "Open the windows"
+        "5 GB plan",
+        "8 GB plan",
+        "10 GB plan",
+        "15 GB plan"
       ],
-      "correctAnswer": "Turn off the shut-off valve",
-      "explanation": "The superintendent advises turning off the shut-off valve under the sink.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "8 GB plan",
+      "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-006-q06",
       "audioScriptId": "celpip-listening-006-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the dripping stopping confirm?",
+      "prompt": "What is the cost of the 8 GB plan?",
       "options": [
-        "The drain is blocked",
-        "The pipe is cracked",
-        "The problem is with the supply line, not the drain",
-        "The water pressure is too high"
+        "$45 per month",
+        "$55 per month",
+        "$60 per month",
+        "$65 per month"
       ],
-      "correctAnswer": "The problem is with the supply line, not the drain",
-      "explanation": "The superintendent says this confirms the problem is with the supply line.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "$55 per month",
+      "explanation": "Support states the 8 GB plan is 'at $55 per month.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-006-q07",
       "audioScriptId": "celpip-listening-006-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long is the repair expected to take?",
+      "prompt": "When does the new plan take effect on the bill?",
       "options": [
-        "Less than one hour",
-        "Two to three hours",
-        "All afternoon",
-        "Several days"
+        "June 15th",
+        "June 22nd",
+        "July 1st",
+        "July 8th"
       ],
-      "correctAnswer": "Less than one hour",
-      "explanation": "The superintendent says it should take under an hour.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "July 8th",
+      "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-006-q08",
       "audioScriptId": "celpip-listening-006-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why does the resident need to be home for the repair?",
+      "prompt": "What calling feature is included in the new plan?",
       "options": [
-        "To pay the plumber in cash",
-        "To sign a repair agreement",
-        "To give the plumber access to the cabinet",
-        "To watch the repair procedure"
+        "200 minutes",
+        "300 minutes",
+        "500 minutes",
+        "Unlimited calling"
       ],
-      "correctAnswer": "To give the plumber access to the cabinet",
-      "explanation": "The superintendent says the plumber needs to access the cabinet under the sink.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "Unlimited calling",
+      "explanation": "Support states the 8 GB plan includes 'unlimited calling' along with unlimited texting.",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-006-q09",
       "audioScriptId": "celpip-listening-006-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How many job offers has Priya received?",
+      "prompt": "Is this Maya's first yoga class?",
+      "options": [
+        "Yes",
+        "No, she's taken classes before",
+        "She's never tried yoga",
+        "Not specified"
+      ],
+      "correctAnswer": "Yes",
+      "explanation": "Trainer asks 'Is this your first class?' and Maya confirms 'Yeah.'",
+      "difficulty": "medium",
+      "topic": "gym class"
+    },
+    {
+      "id": "celpip-listening-006-q10",
+      "audioScriptId": "celpip-listening-006-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "How long is the class?",
+      "options": [
+        "30 minutes",
+        "45 minutes",
+        "60 minutes",
+        "90 minutes"
+      ],
+      "correctAnswer": "60 minutes",
+      "explanation": "Trainer states 'It's 60 minutes total.'",
+      "difficulty": "medium",
+      "topic": "gym class"
+    },
+    {
+      "id": "celpip-listening-006-q11",
+      "audioScriptId": "celpip-listening-006-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "What is the structure of the class?",
+      "options": [
+        "Only poses and stretching",
+        "Breathing, warm-up, poses, meditation",
+        "Meditation and cool-down only",
+        "High-intensity cardio"
+      ],
+      "correctAnswer": "Breathing, warm-up, poses, meditation",
+      "explanation": "Trainer describes 'We start with breathing exercises, warm up, then move through poses, and end with meditation.'",
+      "difficulty": "medium",
+      "topic": "gym class"
+    },
+    {
+      "id": "celpip-listening-006-q12",
+      "audioScriptId": "celpip-listening-006-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "What advice does the trainer give about pain?",
+      "options": [
+        "Push through the pain",
+        "Stop immediately",
+        "Modify or take a break if something hurts",
+        "Use ice after class"
+      ],
+      "correctAnswer": "Modify or take a break if something hurts",
+      "explanation": "Trainer advises 'If something hurts, modify it or take a break.'",
+      "difficulty": "medium",
+      "topic": "gym class"
+    },
+    {
+      "id": "celpip-listening-006-q13",
+      "audioScriptId": "celpip-listening-006-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "How many classes per week does Maya plan to attend?",
+      "options": [
+        "Once a week",
+        "Twice a week",
+        "Three times a week",
+        "Daily"
+      ],
+      "correctAnswer": "Twice a week",
+      "explanation": "Maya states 'I'll start with twice a week and see how it goes.'",
+      "difficulty": "medium",
+      "topic": "gym class"
+    },
+    {
+      "id": "celpip-listening-006-q14",
+      "audioScriptId": "celpip-listening-006-s3",
+      "questionType": "multiple_choice_single",
+      "part": 3,
+      "prompt": "What are the visiting hours?",
+      "options": [
+        "8 AM to 6 PM",
+        "9 AM to 7 PM",
+        "10 AM to 8 PM",
+        "11 AM to 9 PM"
+      ],
+      "correctAnswer": "10 AM to 8 PM",
+      "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
+    },
+    {
+      "id": "celpip-listening-006-q15",
+      "audioScriptId": "celpip-listening-006-s3",
+      "questionType": "multiple_choice_single",
+      "part": 3,
+      "prompt": "How many visitors can be in a patient's room at one time?",
       "options": [
         "One",
         "Two",
@@ -263,502 +365,400 @@
         "Four"
       ],
       "correctAnswer": "Two",
-      "explanation": "Priya says she received two job offers this week.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
-    },
-    {
-      "id": "celpip-listening-006-q10",
-      "audioScriptId": "celpip-listening-006-s2",
-      "questionType": "multiple_choice_single",
-      "part": 2,
-      "prompt": "What concern does Priya have about the startup?",
-      "options": [
-        "The salary is too low",
-        "It is located too far away",
-        "It is only two years old and a bit risky",
-        "The role lacks creative freedom"
-      ],
-      "correctAnswer": "It is only two years old and a bit risky",
-      "explanation": "Priya says the startup is only two years old and a bit risky.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
-    },
-    {
-      "id": "celpip-listening-006-q11",
-      "audioScriptId": "celpip-listening-006-s2",
-      "questionType": "multiple_choice_single",
-      "part": 2,
-      "prompt": "What advantage does the non-profit offer over the startup?",
-      "options": [
-        "Higher salary",
-        "More creative freedom",
-        "Better benefits and a pension",
-        "Faster career advancement"
-      ],
-      "correctAnswer": "Better benefits and a pension",
-      "explanation": "Priya says the non-profit has excellent benefits and a guaranteed pension.",
+      "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'",
       "difficulty": "medium",
-      "topic": "opening a bank account"
-    },
-    {
-      "id": "celpip-listening-006-q12",
-      "audioScriptId": "celpip-listening-006-s2",
-      "questionType": "multiple_choice_single",
-      "part": 2,
-      "prompt": "How long is the commute to the startup?",
-      "options": [
-        "Ten minutes",
-        "Twenty minutes",
-        "Forty-five minutes each way",
-        "Over an hour each way"
-      ],
-      "correctAnswer": "Forty-five minutes each way",
-      "explanation": "Priya says the startup is forty-five minutes each way on transit.",
-      "difficulty": "medium",
-      "topic": "opening a bank account"
-    },
-    {
-      "id": "celpip-listening-006-q13",
-      "audioScriptId": "celpip-listening-006-s2",
-      "questionType": "multiple_choice_single",
-      "part": 2,
-      "prompt": "What does Kevin point out about commuting time?",
-      "options": [
-        "It adds to fitness levels",
-        "It is a chance to read",
-        "The non-profit saves her two hours a day",
-        "Transit fares are expensive"
-      ],
-      "correctAnswer": "The non-profit saves her two hours a day",
-      "explanation": "Kevin says Priya would get back two hours a day by working closer to home.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
-    },
-    {
-      "id": "celpip-listening-006-q14",
-      "audioScriptId": "celpip-listening-006-s3",
-      "questionType": "multiple_choice_single",
-      "part": 3,
-      "prompt": "Who is entitled to a provincial health card?",
-      "options": [
-        "Only Canadian citizens",
-        "Permanent residents and Canadian citizens",
-        "International students only",
-        "Anyone living in Canada"
-      ],
-      "correctAnswer": "Permanent residents and Canadian citizens",
-      "explanation": "The speaker says permanent residents or Canadian citizens are entitled to a health card.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
-    },
-    {
-      "id": "celpip-listening-006-q15",
-      "audioScriptId": "celpip-listening-006-s3",
-      "questionType": "multiple_choice_single",
-      "part": 3,
-      "prompt": "What is one document required to apply for a health card?",
-      "options": [
-        "A letter from an employer",
-        "A government-issued photo ID",
-        "A birth certificate",
-        "A utility bill from a previous province"
-      ],
-      "correctAnswer": "A government-issued photo ID",
-      "explanation": "The speaker says one of the two IDs must be a government-issued photo ID.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-006-q16",
       "audioScriptId": "celpip-listening-006-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long must new applicants typically wait before coverage begins?",
+      "prompt": "What is the minimum age for unaccompanied visits?",
       "options": [
-        "One week",
-        "One month",
-        "Three months",
-        "Six months"
+        "Eight years old",
+        "Ten years old",
+        "Twelve years old",
+        "Fourteen years old"
       ],
-      "correctAnswer": "Three months",
-      "explanation": "The speaker says there is typically a three-month waiting period.",
+      "correctAnswer": "Twelve years old",
+      "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'",
       "difficulty": "medium",
-      "topic": "opening a bank account"
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-006-q17",
       "audioScriptId": "celpip-listening-006-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT covered by the provincial health card?",
+      "prompt": "Are balloons allowed in patient rooms?",
       "options": [
-        "Emergency room visits",
-        "Family doctor visits",
-        "Dental care",
-        "Blood work"
+        "Yes",
+        "Yes, with restrictions",
+        "No",
+        "Only on special occasions"
       ],
-      "correctAnswer": "Dental care",
-      "explanation": "The speaker says dental care is not automatically covered by the health card.",
+      "correctAnswer": "No",
+      "explanation": "The guide states 'balloons are not allowed due to interference with medical equipment.'",
       "difficulty": "medium",
-      "topic": "opening a bank account"
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-006-q18",
       "audioScriptId": "celpip-listening-006-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is the Health Care Connect programme?",
+      "prompt": "What is the parking fee per visit?",
       "options": [
-        "A private insurance plan",
-        "A walk-in clinic network",
-        "A programme that matches patients to available physicians",
-        "An online pharmacy"
+        "$2",
+        "$3",
+        "$4",
+        "$5"
       ],
-      "correctAnswer": "A programme that matches patients to available physicians",
-      "explanation": "The speaker describes Health Care Connect as matching patients to available physicians.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "$5",
+      "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-006-q19",
       "audioScriptId": "celpip-listening-006-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What should residents do if their address changes?",
+      "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "Apply for a new health card",
-        "Report the change to the provincial health authority",
-        "Contact their family doctor only",
-        "Wait until renewal time"
+        "The visitor",
+        "The patient",
+        "The nursing staff",
+        "The hospital administrator"
       ],
-      "correctAnswer": "Report the change to the provincial health authority",
-      "explanation": "The speaker says to report any change of address to keep records current.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "The nursing staff",
+      "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-006-q20",
       "audioScriptId": "celpip-listening-006-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Who is eligible for the new childcare subsidy?",
+      "prompt": "How much is being invested in recruitment and retention?",
       "options": [
-        "All families with children under twelve",
-        "Families earning below ninety thousand dollars per year",
-        "Only single-parent households",
-        "Families on social assistance only"
+        "25 million dollars",
+        "30 million dollars",
+        "35 million dollars",
+        "40 million dollars"
       ],
-      "correctAnswer": "Families earning below ninety thousand dollars per year",
-      "explanation": "The report says eligible families earn below ninety thousand dollars per year.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
+      "correctAnswer": "35 million dollars",
+      "explanation": "The province has announced a 35 million dollar investment.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-006-q21",
       "audioScriptId": "celpip-listening-006-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What is the maximum daily childcare cost under the new programme?",
+      "prompt": "How many nursing positions are currently unfilled?",
       "options": [
-        "Five dollars",
-        "Ten dollars",
-        "Twenty dollars",
-        "Fifty dollars"
+        "600 positions",
+        "700 positions",
+        "800 positions",
+        "900 positions"
       ],
-      "correctAnswer": "Ten dollars",
-      "explanation": "The report states families will pay no more than ten dollars per day.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
+      "correctAnswer": "800 positions",
+      "explanation": "There are over 800 unfilled nursing positions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-006-q22",
       "audioScriptId": "celpip-listening-006-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Which children will receive priority access?",
+      "prompt": "By what percentage are starting salaries for nurses increasing?",
       "options": [
-        "School-age children",
-        "Children under six and those already on waitlists",
-        "Children of essential workers",
-        "All children equally"
+        "8 percent",
+        "10 percent",
+        "12 percent",
+        "15 percent"
       ],
-      "correctAnswer": "Children under six and those already on waitlists",
-      "explanation": "The minister says priority goes to children under six and families on existing waitlists.",
+      "correctAnswer": "12 percent",
+      "explanation": "Starting salaries for nurses are being increased by 12 percent.",
       "difficulty": "medium",
-      "topic": "opening a bank account"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-006-q23",
       "audioScriptId": "celpip-listening-006-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will approved families be notified?",
+      "prompt": "What is the maximum signing bonus for rural relocations?",
       "options": [
-        "By post",
-        "By telephone",
-        "By email",
-        "Through their childcare provider"
+        "10,000 dollars",
+        "12,000 dollars",
+        "15,000 dollars",
+        "20,000 dollars"
       ],
-      "correctAnswer": "By email",
-      "explanation": "The report says approved families will be notified by email.",
+      "correctAnswer": "15,000 dollars",
+      "explanation": "Signing bonuses of up to 15,000 dollars are offered for rural relocations.",
       "difficulty": "medium",
-      "topic": "opening a bank account"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-006-q24",
       "audioScriptId": "celpip-listening-006-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What concern did opposition critics raise?",
+      "prompt": "What percentage of vacant positions are expected to be filled in 18 months?",
       "options": [
-        "The daily fee is too high",
-        "The programme excludes informal unlicenced home-based care",
-        "Too many providers have already registered",
-        "The programme starts too late in the year"
+        "40 percent",
+        "50 percent",
+        "60 percent",
+        "75 percent"
       ],
-      "correctAnswer": "The programme excludes informal unlicenced home-based care",
-      "explanation": "Critics say the programme does not extend to informal home-based care arrangements.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "60 percent",
+      "explanation": "Officials estimate it will take approximately 18 months to fill 60 percent of positions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-006-q25",
       "audioScriptId": "celpip-listening-006-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say is the main problem with social media platforms?",
+      "prompt": "What percentage of food is currently imported from outside the province?",
       "options": [
-        "They are too expensive",
-        "They are designed to maximise engagement through comparison",
-        "They do not have enough educational content",
-        "They spread false news to teenagers"
+        "75 percent",
+        "80 percent",
+        "85 percent",
+        "87 percent"
       ],
-      "correctAnswer": "They are designed to maximise engagement through comparison",
-      "explanation": "Diane says platforms are deliberately built to maximise engagement, which means maximising comparison.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
+      "correctAnswer": "87 percent",
+      "explanation": "Maria states about 87 percent of food is imported from outside the province.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-006-q26",
       "audioScriptId": "celpip-listening-006-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom advocate for?",
+      "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Banning social media entirely",
-        "Age-based restrictions on all platforms",
-        "Digital literacy education for teenagers",
-        "Parental monitoring software"
+        "Grocery stores and restaurants",
+        "Farmers market and delivery programs",
+        "Government subsidies",
+        "Large distribution centers"
       ],
-      "correctAnswer": "Digital literacy education for teenagers",
-      "explanation": "Tom says the answer is teaching teenagers to be critical consumers of digital content.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
+      "correctAnswer": "Farmers market and delivery programs",
+      "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-006-q27",
       "audioScriptId": "celpip-listening-006-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "On what point do Diane and Tom agree?",
+      "prompt": "What is Paul's primary concern about local food?",
       "options": [
-        "Restrictions are necessary",
-        "Education about social media is necessary",
-        "Teenagers should avoid all social media",
-        "Parents should manage all screen time"
+        "Product quality",
+        "Pricing and consistency",
+        "Customer demand",
+        "Storage requirements"
       ],
-      "correctAnswer": "Education about social media is necessary",
-      "explanation": "The host notes both agree on the need for education.",
+      "correctAnswer": "Pricing and consistency",
+      "explanation": "Paul is concerned local producers can't compete on price and have seasonal limitations.",
       "difficulty": "medium",
-      "topic": "opening a bank account"
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-006-q28",
       "audioScriptId": "celpip-listening-006-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say a thirteen-year-old is not equipped to do?",
+      "prompt": "According to Dr. Sarah, what percentage increase in fresh produce consumption is shown?",
       "options": [
-        "Understand complex text",
-        "Resist deliberate platform manipulation",
-        "Manage their own time",
-        "Communicate online safely"
+        "15 percent",
+        "20 percent",
+        "22 percent",
+        "25 percent"
       ],
-      "correctAnswer": "Resist deliberate platform manipulation",
-      "explanation": "Diane says a thirteen-year-old is neurologically not equipped to resist deliberate platform manipulation.",
+      "correctAnswer": "22 percent",
+      "explanation": "Communities with stronger local food networks show 22 percent higher fresh produce consumption.",
       "difficulty": "medium",
-      "topic": "opening a bank account"
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-006-q29",
       "audioScriptId": "celpip-listening-006-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom call the effect of banning social media without education?",
+      "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
-        "The rebound effect",
-        "The forbidden fruit effect",
-        "The digital divide",
-        "The screen overload effect"
+        "Lower cost",
+        "Improved freshness and food safety",
+        "More variety",
+        "Better storage"
       ],
-      "correctAnswer": "The forbidden fruit effect",
-      "explanation": "Tom calls the over-compensating behaviour after restrictions the forbidden fruit effect.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "Improved freshness and food safety",
+      "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-006-q30",
       "audioScriptId": "celpip-listening-006-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What evidence does Tom give for the forbidden fruit effect?",
+      "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
-        "A government study on screen time",
-        "Personal experience with teenagers at home",
-        "Schools that blocked social media found students spent more time online on weekends",
-        "Research from Diane's own institution"
+        "25 percent",
+        "35 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "Schools that blocked social media found students spent more time online on weekends",
-      "explanation": "Tom says schools that blocked social media found students spent even more time online on weekends.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "40 percent",
+      "explanation": "James currently sells about 40 percent of production to the farmers market.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-006-q31",
       "audioScriptId": "celpip-listening-006-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What specific group does Diane say is most affected by heavy social media use?",
+      "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Boys aged ten to twelve",
-        "All teenagers equally",
-        "Girls in particular",
-        "Teenagers in rural areas"
+        "Limited land",
+        "Transportation issues",
+        "Packaging and distribution",
+        "Workforce availability"
       ],
-      "correctAnswer": "Girls in particular",
-      "explanation": "Diane says anxiety and depression are particularly high for girls.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "Packaging and distribution",
+      "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-006-q32",
       "audioScriptId": "celpip-listening-006-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's summary at the end?",
+      "prompt": "By what percentage could James increase production if he had distribution support?",
       "options": [
-        "Both guests fully agree",
-        "The debate is too political to resolve",
-        "There is agreement on education but a divide on restrictions",
-        "Tom has made the stronger argument"
+        "40 percent",
+        "50 percent",
+        "60 percent",
+        "70 percent"
       ],
-      "correctAnswer": "There is agreement on education but a divide on restrictions",
-      "explanation": "The host summarises that there is agreement on education but a real divide on restrictions.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "60 percent",
+      "explanation": "James states he could increase production by 60 percent with distribution support.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-006-q33",
       "audioScriptId": "celpip-listening-006-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker argue is wrong with current government investment patterns?",
+      "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "Too much money is spent on small towns",
-        "Investment flows mainly to cities, creating inequality",
-        "Rural communities refuse investment",
-        "Cities need more hospitals"
+        "It's too expensive",
+        "It has gone too far in terms of surveillance",
+        "It doesn't improve security",
+        "It's ineffective"
       ],
-      "correctAnswer": "Investment flows mainly to cities, creating inequality",
-      "explanation": "The speaker says investment has predominantly flowed toward major cities, creating a divide.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
+      "correctAnswer": "It has gone too far in terms of surveillance",
+      "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-006-q34",
       "audioScriptId": "celpip-listening-006-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health problem does the speaker connect to rural under-investment?",
+      "prompt": "According to the speaker, what is the claimed reason for workplace monitoring?",
       "options": [
-        "Higher rates of heart disease",
-        "More road accidents",
-        "Higher rates of late-stage cancer diagnoses",
-        "Fewer vaccinations"
+        "To reduce wages",
+        "To improve productivity and security",
+        "To prevent theft",
+        "To track attendance"
       ],
-      "correctAnswer": "Higher rates of late-stage cancer diagnoses",
-      "explanation": "The speaker says rural residents have higher rates of late-stage cancer because early detection services are not available locally.",
-      "difficulty": "easy",
-      "topic": "opening a bank account"
+      "correctAnswer": "To improve productivity and security",
+      "explanation": "The speaker mentions that companies argue monitoring improves productivity and security.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-006-q35",
       "audioScriptId": "celpip-listening-006-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What pattern in education does the speaker describe?",
+      "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
-        "Rural schools are better funded than urban ones",
-        "Talented young people leave small towns and rarely return",
-        "Rural students prefer online learning",
-        "Urban students move to rural areas for university"
+        "They work harder",
+        "It creates anxiety and erodes trust",
+        "They become more efficient",
+        "They communicate better"
       ],
-      "correctAnswer": "Talented young people leave small towns and rarely return",
-      "explanation": "The speaker says talented young people leave for cities and rarely return.",
+      "correctAnswer": "It creates anxiety and erodes trust",
+      "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
       "difficulty": "medium",
-      "topic": "opening a bank account"
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-006-q36",
       "audioScriptId": "celpip-listening-006-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How does the speaker respond to critics who say rural investment costs too much per person?",
+      "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "By agreeing and suggesting cuts",
-        "By calling it a reason for smarter targeted investment",
-        "By dismissing the economic argument entirely",
-        "By citing statistics on rural GDP"
+        "It increases productivity",
+        "It decreases productivity and morale",
+        "It has no effect",
+        "It improves communication"
       ],
-      "correctAnswer": "By calling it a reason for smarter targeted investment",
-      "explanation": "The speaker says the cost argument is flawed and is actually an argument for smarter, targeted investment.",
+      "correctAnswer": "It decreases productivity and morale",
+      "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
       "difficulty": "medium",
-      "topic": "opening a bank account"
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-006-q37",
       "audioScriptId": "celpip-listening-006-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker say should not determine the quality of opportunity a person has?",
+      "prompt": "What solution does the speaker propose?",
       "options": [
-        "Their family income",
-        "Their level of education",
-        "The postal code where they were born",
-        "Their language ability"
+        "No monitoring at all",
+        "Complete transparency monitoring",
+        "Targeted monitoring only where necessary",
+        "Random monitoring"
       ],
-      "correctAnswer": "The postal code where they were born",
-      "explanation": "The speaker says the postal code where someone is born should not determine their opportunities.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "Targeted monitoring only where necessary",
+      "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-006-q38",
       "audioScriptId": "celpip-listening-006-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall tone?",
+      "prompt": "What do companies with less invasive monitoring report?",
       "options": [
-        "Nostalgic and sentimental",
-        "Objective and neutral",
-        "Persuasive and advocacy-driven",
-        "Pessimistic and resigned"
+        "Lower profits",
+        "Higher employee satisfaction and retention",
+        "More security issues",
+        "Reduced efficiency"
       ],
-      "correctAnswer": "Persuasive and advocacy-driven",
-      "explanation": "The speaker argues a clear position and calls for change based on principles of equity.",
-      "difficulty": "hard",
-      "topic": "opening a bank account"
+      "correctAnswer": "Higher employee satisfaction and retention",
+      "explanation": "The speaker mentions companies with less invasive monitoring report higher satisfaction and retention.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     }
   ]
 }

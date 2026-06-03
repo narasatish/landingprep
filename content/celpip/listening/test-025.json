@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 25",
+  "title": "CELPIP General Listening — Practice Test 25",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-025-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Calling About a Noisy Neighbour",
-      "text": "Tenant: Hi, I'm calling about a problem with my upstairs neighbour. There's loud music almost every night after eleven, and I can't sleep.\nProperty Manager: I'm sorry to hear that. Have you spoken to the neighbour directly yet?\nTenant: I knocked on the door twice last week, but nobody answered.\nProperty Manager: In that case, I can send them an official written notice reminding them of the quiet hours policy. That usually works.\nTenant: Would there be any consequences if it continues after the notice?\nProperty Manager: Yes. If the behaviour continues after two written notices, we can begin the formal dispute process, which could affect their tenancy.\nTenant: That's a relief. How long does it take to send the first notice?\nProperty Manager: Usually within two business days. I'll log your complaint right now and you should receive a copy of the notice by email once it goes out.\nTenant: Perfect. And what should I do in the meantime if it happens tonight?\nProperty Manager: You can call our after-hours line and log a noise complaint. Those records will also be used if this goes further.",
+      "title": "Restaurant Reservation Issue",
+      "text": "Diner: Hi, I made a reservation for tonight at 7 PM under the name Anderson, and I just realized the name is spelled wrong in your system. Manager: Oh no, I'm sorry about that. Let me look that up. How is it spelled? Diner: A-N-D-E-R-S-O-N. I don't know how it got misspelled. Manager: I see it here as A-N-D-E-R-S-E-N. That's an easy mix-up. When you arrive, just let the host know and we'll get you seated right away. Diner: Actually, I'm calling because I need to change the time. Can I do 7:30 instead? Manager: Absolutely. Let me adjust that for you. How many people? Diner: Six of us. Manager: Perfect. I've moved you from 7 PM to 7:30 PM for six people, and I've corrected the name spelling. Is there anything else? Diner: Yes, one more thing. Can you make sure we have a quiet table? There are some business matters we want to discuss. Manager: I'll add a note to your reservation requesting a quieter area away from the bar. We have some nice tables by the window. Diner: That sounds great. What's your cancellation policy? Manager: We require 24 hours notice for cancellations. If you need to cancel, just call us before 7:30 PM tomorrow. Diner: Got it. Thank you.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-025-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Planning a Weekend Camping Trip",
-      "text": "Maya: Are you still planning to go camping this weekend? I heard there's a campsite near the lake that has good reviews.\nDaniel: Yes, I booked two spots at Birchwood Provincial Park. It's about ninety minutes from downtown.\nMaya: Do you think the weather will hold up? The forecast showed some rain on Saturday.\nDaniel: I checked again this morning. It looks like just a light shower in the early afternoon. We should be fine if we set up the tent before noon.\nMaya: Makes sense. Should I bring my camp stove, or does the park have fire pits?\nDaniel: The park has fire pits, but there are restrictions on fire use right now because of dry conditions. Bring your stove — it's probably safer.\nMaya: Good thinking. What about food? Should we plan to cook each night or pack some ready-made meals?\nDaniel: Let's do a mix. Cook a proper dinner on Friday, and keep Saturday simple with sandwiches and wraps — less cleanup if the rain comes.",
+      "title": "Coffee Shop Catch-Up",
+      "text": "Sarah: Hey, how are you? It's been ages! Michael: I know, right? Must be like six months since we last hung out. Sarah: At least. How was your trip to Vancouver? Michael: It was amazing! The weather was beautiful, and I got to see the mountains every day. Sarah: That sounds incredible. Did you do any hiking? Michael: Yeah, we went up to Whistler for a weekend. The views were unbelievable. Sarah: I'm so jealous. I've been meaning to get out there. Hey, do you want to go grab dinner next week? Michael: Absolutely, I'd love that. How about Thursday? Sarah: Thursday works for me. There's that new Italian place downtown that opened last month. Michael: Perfect. Should we book a table? Sarah: Yeah, probably a good idea. What time? Michael: How about 7 PM? Sarah: Sounds good. I'll make the reservation.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-025-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "Information About Renewing a Canadian Driver's Licence",
-      "text": "Good afternoon. This information session will walk you through the process of renewing your Canadian driver's licence. Whether your licence has recently expired or is about to expire, it is important to act early to avoid fines or restrictions on your driving privileges.\n\nIn most provinces, you will receive a renewal notice by mail several weeks before your expiry date. However, it is your responsibility to renew even if you do not receive this notice. Renewal can be completed in three ways: in person at a government services office, online through the provincial licensing portal, or by mail using the renewal form included with your notice.\n\nIf you are renewing in person, you will need to bring your current licence, proof of address such as a recent utility bill or bank statement, and the renewal fee. Fees vary by province but are generally between twenty-five and sixty-five dollars. If your vision has changed since your last renewal, you may also be required to complete a vision test at the counter.\n\nOnline renewal is available to drivers who have no changes to their personal information and whose previous renewal was also completed online. You will need your driver's licence number and the last four digits of your health card to verify your identity. Processing takes up to five business days and the new licence will be mailed to your home.\n\nRemember: driving with an expired licence is a ticketable offence in every province. Renew early to avoid unnecessary penalties.",
+      "title": "Travel Insurance Information Session",
+      "text": "Welcome to our travel insurance information session. Today, I'll explain the coverage options available through our travel agency. We offer three plans: Basic, Standard, and Premium. The Basic plan covers medical emergencies, emergency dental, and evacuation. Cost is seventy-five dollars for two weeks. The Standard plan includes everything in Basic plus trip cancellation coverage, lost luggage reimbursement up to one thousand dollars, and travel delays over twelve hours. Cost is one hundred twenty dollars for two weeks. The Premium plan is our comprehensive option. It adds accidental death coverage, zero deductible for medical claims, and upgrade to two thousand five hundred dollars for lost luggage. Premium costs two hundred twenty dollars for two weeks. All plans exclude claims related to alcohol impairment or pre-existing medical conditions not disclosed. Coverage begins on your departure date and ends upon return. Claims must be filed within ninety days of the incident. You'll receive a confirmation email with your policy documents. For claims, call our toll-free number at 1-800-555-0147. Representatives are available 24/7. Questions about coverage should be directed to our customer service team. Purchase your policy at least seven days before travel.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-025-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: City Expands Free Transit for Seniors",
-      "text": "The city announced today that it will expand its free public transit programme for seniors beginning next month. Under the new policy, all residents aged sixty-five and older will be able to ride buses and light rail lines at no cost, seven days a week. Previously, the programme only applied on weekdays between nine in the morning and three in the afternoon.\n\nThe city's transportation director said the expansion was driven by data showing that many seniors were unable to attend evening medical appointments or weekend community activities due to transit costs. Council members voted fourteen to three in favour of the expansion at last night's meeting.\n\nThe programme will be funded through a small increase in the transit levy paid by commercial property owners. A city spokesperson confirmed that no changes to residential property taxes are planned as a result of this programme.\n\nAdvocacy groups welcomed the announcement but called for further steps, including improved accessibility features at bus stops and more frequent service on routes serving seniors' residences. The city said those improvements are already under review as part of the five-year transit plan.",
+      "title": "Manitoba Agricultural Export Deal",
+      "text": "Manitoba has secured a significant agricultural export agreement with Japan. The deal, valued at approximately 340 million dollars annually, includes canola, pulse crops, and livestock products. Japanese importers have committed to increasing their purchases from Manitoba producers by 25 percent over the next five years. The agreement was finalized following trade negotiations led by the Canadian Agricultural Minister and her Japanese counterpart. Manitoba produces approximately 8 million tonnes of canola annually, making it Canada's leading canola province. Pulse crops, including peas and lentils, account for another 2.8 million tonnes of production. The Premier described the agreement as transformative for rural communities. Japanese markets have consistently valued Canadian agricultural products for their quality and safety standards. The deal is expected to create 400 additional jobs in the agriculture and food processing sectors. Provincial officials plan to strengthen cold-chain logistics to ensure product freshness during international transport.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-025-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Should Companies Require Employees to Return to the Office?",
-      "text": "Host: Good morning. Today we're discussing whether companies should require employees to return to the office full time. I'm joined by two guests with very different views. Sophie, you support a return-to-office policy. Tell us why.\nSophie: Thank you. I believe in-person work is essential for collaboration and company culture. When people are in the same room, ideas flow more naturally. Spontaneous conversations at the coffee machine lead to innovations you simply cannot replicate on a video call. Junior employees especially benefit from being close to experienced colleagues.\nHost: And Marcus, you argue against mandatory returns. What's your position?\nMarcus: My position is that forcing people back to the office ignores what the pandemic proved: that most knowledge work can be done just as effectively from home, often more so. People save hours on commuting, they have fewer interruptions, and studies consistently show higher job satisfaction when employees have flexibility.\nHost: Sophie, how do you respond to the productivity argument?\nSophie: Productivity metrics can be misleading. You might complete more tasks per hour at home, but you miss out on the kind of deep organisational knowledge that comes from casual interactions. Also, not everyone has a good home environment — some employees live in small apartments or have young children, and forcing them to work from home is actually more stressful.\nHost: Marcus, a final word?\nMarcus: Companies that respect autonomy attract and retain better talent. If a business genuinely believes in-person work is better, they should make it so compelling that people want to come in voluntarily — not mandate it and risk losing good people to competitors who offer flexibility.\nHost: Thank you both. It's clear this debate is far from settled.",
+      "title": "Community Center Renovation Project",
+      "text": "Recreation Director Karen: We're finally moving forward with the community center renovation that was approved last year. The project is budgeted at 6.8 million dollars and should take about 18 months to complete. We plan to add a new fitness center, upgrade the swimming pool, and create additional youth programming spaces. This will significantly improve our facilities.\n\nCommunity Member Robert: I'm glad to see this moving forward, Karen, but I'm concerned about one thing. During the construction, the center will be partially closed. My kids attend after-school programs here, and I'm worried about where they'll go during the renovation period. Many families in our community rely on these programs for childcare.\n\nOperations Manager Susan: That's a valid concern, Robert. We've actually planned for this. We'll maintain the community room and outdoor spaces throughout the project. We can relocate the after-school programs there during construction, though it will be more crowded. We're also negotiating with the school district to potentially use school facilities as a backup location for some activities.\n\nYouth Program Coordinator Jason: I'm excited about the upgrades, especially the new youth spaces. But Susan, we need to be realistic about the outdoor space. We currently use it for sports and recreation. If we're moving programs there, we'll have limited room for physical activities. Could we consider using a local park for some outdoor programming during construction?",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-025-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: The Value of Learning a Second Language as an Adult",
-      "text": "There is a widespread belief that adults cannot learn a new language as effectively as children. This idea has discouraged many adults from even attempting to study a second language, which I believe is deeply unfortunate — and largely incorrect.\n\nResearch on brain plasticity has shown that while young children do acquire language with remarkable ease and near-perfect accents, adults have significant advantages that are rarely acknowledged. Adults come to language learning with an established grammar system in their native language, a large vocabulary that can be mapped onto new words, and — critically — the ability to study deliberately and strategically. A child acquires language through years of immersion; an adult with good study habits can reach conversational fluency in twelve to eighteen months.\n\nThe benefits of second language learning extend far beyond communication. Numerous studies have found that bilingual adults show delayed onset of dementia by an average of four to five years compared to monolinguals. The effort of managing two language systems exercises the brain in ways that improve attention, task-switching, and even creativity.\n\nFrom a social perspective, learning the dominant language of your community opens doors in ways that are hard to overstate. It changes how service providers speak to you, how colleagues perceive you, and how confident you feel navigating institutions — from hospitals to government offices.\n\nMy view is straightforward: language learning is one of the most valuable investments an adult can make in themselves, and the belief that it is too late should be replaced with a recognition that it is simply different — and in some respects, better.",
+      "title": "Mental Health Parity in Insurance Coverage",
+      "text": "Mental health needs to be treated with the same importance as physical health in our insurance system. We talk about mental health awareness, but when it comes to actual coverage, it's dramatically underfunded. Most insurance plans cover mental health at lower rates than physical health. If you have a broken arm, insurance covers months of physical therapy. If you have depression or anxiety, you get maybe 10 sessions of therapy a year, and psychologist visits might only be 50 percent covered. This creates barriers. Many people avoid treatment because they can't afford it, and their conditions worsen. The economic impact is massive. Mental health issues cost the economy 51 billion dollars annually in Canada through lost productivity, emergency services, and hospitalizations. Yet we invest a fraction of that in prevention and treatment. Here's what frustrates me most: we have effective treatments. Therapy works. Medication helps. But access is limited by insurance coverage. A person struggling with bipolar disorder shouldn't have to choose between therapy and rent. Insurance companies argue coverage limits are necessary for cost control, but that's shortsighted. When people get mental health treatment early, they use fewer emergency services, work more, and contribute to society. The ROI on mental health coverage is actually positive. I'm advocating for mandatory parity—insurance companies should cover mental health at the same level as physical health. This means removing visit limits, lowering copayments, and covering evidence-based treatments. It's not just compassionate; it's economically smart.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-025-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why is the tenant calling the property manager?",
+      "prompt": "What is the customer's correct last name spelling?",
       "options": [
-        "To report a leaking pipe",
-        "To complain about a noisy neighbour",
-        "To request a rent reduction",
-        "To ask about parking rules"
+        "A-N-D-E-R-S-E-N",
+        "A-N-D-E-R-S-O-N",
+        "A-N-D-R-E-S-O-N",
+        "A-N-D-E-R-T-O-N"
       ],
-      "correctAnswer": "To complain about a noisy neighbour",
-      "explanation": "The tenant explicitly says there is loud music keeping them awake.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "A-N-D-E-R-S-O-N",
+      "explanation": "Diner specifies the correct spelling as 'A-N-D-E-R-S-O-N.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-025-q02",
       "audioScriptId": "celpip-listening-025-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What has the tenant already tried?",
+      "prompt": "What was the original reservation time?",
       "options": [
-        "Called the police",
-        "Knocked on the neighbour's door",
-        "Sent an email to management",
-        "Left a note under the door"
+        "6:30 PM",
+        "7:00 PM",
+        "7:15 PM",
+        "8:00 PM"
       ],
-      "correctAnswer": "Knocked on the neighbour's door",
-      "explanation": "The tenant says they knocked twice last week.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "7:00 PM",
+      "explanation": "Diner states 'I made a reservation for tonight at 7 PM.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-025-q03",
       "audioScriptId": "celpip-listening-025-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What will the property manager do first?",
+      "prompt": "What is the new reservation time?",
       "options": [
-        "Contact the police",
-        "Begin a formal dispute process",
-        "Send an official written notice",
-        "Visit the neighbour's apartment"
+        "7:00 PM",
+        "7:15 PM",
+        "7:30 PM",
+        "8:00 PM"
       ],
-      "correctAnswer": "Send an official written notice",
-      "explanation": "The manager says they will send a written notice as the first step.",
+      "correctAnswer": "7:30 PM",
+      "explanation": "Diner requests and manager confirms changing to '7:30 PM.'",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-025-q04",
       "audioScriptId": "celpip-listening-025-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What happens if the behaviour continues after two notices?",
+      "prompt": "How many people are in the party?",
       "options": [
-        "The tenant gets a discount",
-        "The neighbour's tenancy could be affected",
-        "Management will call the police",
-        "The tenant must move out"
+        "Four",
+        "Five",
+        "Six",
+        "Seven"
       ],
-      "correctAnswer": "The neighbour's tenancy could be affected",
-      "explanation": "The manager says the formal dispute process could affect tenancy.",
+      "correctAnswer": "Six",
+      "explanation": "Diner states 'Six of us' in response to the manager's question about party size.",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-025-q05",
       "audioScriptId": "celpip-listening-025-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long will it take to send the first notice?",
+      "prompt": "How was the customer's name misspelled in the system?",
       "options": [
-        "Same day",
-        "One week",
-        "Two business days",
-        "One month"
+        "A-N-D-E-R-S-E-N",
+        "A-N-D-E-R-S-A-N",
+        "A-N-D-E-R-T-O-N",
+        "A-N-D-R-E-S-O-N"
       ],
-      "correctAnswer": "Two business days",
-      "explanation": "The manager says usually within two business days.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "A-N-D-E-R-S-E-N",
+      "explanation": "Manager states the name appeared as 'A-N-D-E-R-S-E-N' in the system.",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-025-q06",
       "audioScriptId": "celpip-listening-025-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the tenant receive once the notice is sent?",
+      "prompt": "What special seating request did the customer make?",
       "options": [
-        "A phone call from the manager",
-        "A copy by email",
-        "A signed letter by post",
-        "Nothing — it is confidential"
+        "Near the kitchen",
+        "By the bar",
+        "A quiet area away from the bar",
+        "Close to the entrance"
       ],
-      "correctAnswer": "A copy by email",
-      "explanation": "The manager says the tenant will receive a copy by email.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "A quiet area away from the bar",
+      "explanation": "Diner requests 'a quiet table' and manager notes 'a quieter area away from the bar.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-025-q07",
       "audioScriptId": "celpip-listening-025-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What should the tenant do if the noise happens tonight?",
+      "prompt": "Where will the quiet table be located?",
       "options": [
-        "Knock on the door again",
-        "Call emergency services",
-        "Call the after-hours line",
-        "Wait until morning"
+        "Near the kitchen",
+        "By the bar",
+        "By the window",
+        "At the entrance"
       ],
-      "correctAnswer": "Call the after-hours line",
-      "explanation": "The manager advises calling the after-hours line to log a noise complaint.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "By the window",
+      "explanation": "Manager states 'We have some nice tables by the window.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-025-q08",
       "audioScriptId": "celpip-listening-025-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What will the after-hours complaint records be used for?",
+      "prompt": "What is the restaurant's cancellation policy?",
       "options": [
-        "For media reports",
-        "For evidence if the dispute goes further",
-        "To update the lease agreement",
-        "To arrange a refund"
+        "6 hours notice required",
+        "12 hours notice required",
+        "24 hours notice required",
+        "48 hours notice required"
       ],
-      "correctAnswer": "For evidence if the dispute goes further",
-      "explanation": "The manager says those records will be used if the matter escalates.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "24 hours notice required",
+      "explanation": "Manager states 'We require 24 hours notice for cancellations.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-025-q09",
       "audioScriptId": "celpip-listening-025-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "Where are they planning to camp?",
+      "prompt": "How long has it been since Sarah and Michael last saw each other?",
       "options": [
-        "Lakeshore National Park",
-        "Maplewood Campsite",
-        "Birchwood Provincial Park",
-        "Ridgeline Reserve"
+        "Two months",
+        "Four months",
+        "Six months",
+        "A year"
       ],
-      "correctAnswer": "Birchwood Provincial Park",
-      "explanation": "Daniel says he booked spots at Birchwood Provincial Park.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "Six months",
+      "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
+      "difficulty": "medium",
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-025-q10",
       "audioScriptId": "celpip-listening-025-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How far is the campsite from downtown?",
+      "prompt": "Where did Michael travel?",
       "options": [
-        "Thirty minutes",
-        "One hour",
-        "Ninety minutes",
-        "Three hours"
+        "Toronto",
+        "Montreal",
+        "Vancouver",
+        "Calgary"
       ],
-      "correctAnswer": "Ninety minutes",
-      "explanation": "Daniel says it is about ninety minutes from downtown.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "Vancouver",
+      "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
+      "difficulty": "medium",
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-025-q11",
       "audioScriptId": "celpip-listening-025-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does the Saturday forecast show?",
+      "prompt": "What outdoor activity did Michael do?",
       "options": [
-        "Heavy thunderstorms",
-        "A light shower in the afternoon",
-        "Clear skies all day",
-        "Strong winds at night"
+        "Kayaking",
+        "Skiing",
+        "Hiking",
+        "Swimming"
       ],
-      "correctAnswer": "A light shower in the afternoon",
-      "explanation": "Daniel checked and says it looks like just a light shower in the early afternoon.",
+      "correctAnswer": "Hiking",
+      "explanation": "Sarah asks 'Did you do any hiking?' and Michael responds positively about going to Whistler.",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-025-q12",
       "audioScriptId": "celpip-listening-025-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "Why does Daniel recommend bringing a camp stove?",
+      "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "The park has no fire pits",
-        "Fire use is currently restricted",
-        "A stove cooks food faster",
-        "It is cheaper than buying firewood"
+        "Mexican",
+        "Italian",
+        "Japanese",
+        "Indian"
       ],
-      "correctAnswer": "Fire use is currently restricted",
-      "explanation": "Daniel says there are fire restrictions due to dry conditions.",
+      "correctAnswer": "Italian",
+      "explanation": "Sarah mentions 'that new Italian place downtown.'",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-025-q13",
       "audioScriptId": "celpip-listening-025-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Daniel suggest for Saturday's meals?",
+      "prompt": "What day do they plan to meet?",
       "options": [
-        "A barbecue dinner",
-        "Eating at a restaurant",
-        "Sandwiches and wraps",
-        "Instant noodles only"
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
       ],
-      "correctAnswer": "Sandwiches and wraps",
-      "explanation": "Daniel suggests keeping Saturday simple with sandwiches and wraps.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "Thursday",
+      "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
+      "difficulty": "medium",
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-025-q14",
       "audioScriptId": "celpip-listening-025-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is responsible for renewing a driver's licence?",
+      "prompt": "How many travel insurance plans are offered?",
       "options": [
-        "The government automatically renews it",
-        "The driver, even without a notice",
-        "The driver only if they receive a notice",
-        "The driver's insurance company"
+        "Two",
+        "Three",
+        "Four",
+        "Five"
       ],
-      "correctAnswer": "The driver, even without a notice",
-      "explanation": "The speaker says it is the driver's responsibility even without receiving a notice.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "Three",
+      "explanation": "The guide states 'We offer three plans: Basic, Standard, and Premium.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-025-q15",
       "audioScriptId": "celpip-listening-025-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT mentioned as a renewal method?",
+      "prompt": "What is the cost of the Basic plan for two weeks?",
       "options": [
-        "In person",
-        "Online",
-        "By telephone",
-        "By mail"
+        "$50",
+        "$60",
+        "$75",
+        "$85"
       ],
-      "correctAnswer": "By telephone",
-      "explanation": "The speaker lists in person, online, and by mail — telephone is not mentioned.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "$75",
+      "explanation": "The guide specifies 'Cost is seventy-five dollars for two weeks' for the Basic plan.",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-025-q16",
       "audioScriptId": "celpip-listening-025-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What document can be used as proof of address?",
+      "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
-        "A passport",
-        "A recent utility bill",
-        "A birth certificate",
-        "A tax return"
+        "$500",
+        "$1,000",
+        "$1,500",
+        "$2,500"
       ],
-      "correctAnswer": "A recent utility bill",
-      "explanation": "The speaker says a recent utility bill or bank statement can serve as proof of address.",
+      "correctAnswer": "$1,000",
+      "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-025-q17",
       "audioScriptId": "celpip-listening-025-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "When might a vision test be required during an in-person renewal?",
+      "prompt": "What is the Premium plan's lost luggage coverage limit?",
       "options": [
-        "For every renewal",
-        "Only for seniors",
-        "If the driver's vision has changed",
-        "If the licence is expired by more than one year"
+        "$1,000",
+        "$1,500",
+        "$2,000",
+        "$2,500"
       ],
-      "correctAnswer": "If the driver's vision has changed",
-      "explanation": "The speaker says a vision test may be required if vision has changed.",
+      "correctAnswer": "$2,500",
+      "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-025-q18",
       "audioScriptId": "celpip-listening-025-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is needed to verify identity for online renewal?",
+      "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "A passport and utility bill",
-        "A driver's licence number and last four digits of a health card",
-        "A photo and signature",
-        "An email address and phone number"
+        "30 days",
+        "60 days",
+        "90 days",
+        "120 days"
       ],
-      "correctAnswer": "A driver's licence number and last four digits of a health card",
-      "explanation": "The speaker specifies the driver's licence number and last four digits of the health card.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "90 days",
+      "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-025-q19",
       "audioScriptId": "celpip-listening-025-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long does online renewal processing take?",
+      "prompt": "What is the toll-free claims phone number?",
       "options": [
-        "Same day",
-        "One business day",
-        "Up to five business days",
-        "Two weeks"
+        "1-800-555-0140",
+        "1-800-555-0147",
+        "1-800-555-0174",
+        "1-800-555-0417"
       ],
-      "correctAnswer": "Up to five business days",
-      "explanation": "The speaker says processing takes up to five business days.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "1-800-555-0147",
+      "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-025-q20",
       "audioScriptId": "celpip-listening-025-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What change is being announced?",
+      "prompt": "What is the annual value of the agricultural export agreement?",
       "options": [
-        "A new bus route for schools",
-        "Free transit for seniors expanded to all days and hours",
-        "A reduction in transit fares for students",
-        "New light rail construction beginning next month"
+        "250 million dollars",
+        "290 million dollars",
+        "340 million dollars",
+        "380 million dollars"
       ],
-      "correctAnswer": "Free transit for seniors expanded to all days and hours",
-      "explanation": "The report says the free transit programme for seniors will expand to seven days a week.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "340 million dollars",
+      "explanation": "The deal is valued at approximately 340 million dollars annually.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-025-q21",
       "audioScriptId": "celpip-listening-025-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Under the old policy, when was free transit available to seniors?",
+      "prompt": "By what percentage will Japanese importers increase their purchases?",
       "options": [
-        "Weekends only",
-        "Every day from 6 am to 10 pm",
-        "Weekdays between 9 am and 3 pm",
-        "Only on statutory holidays"
+        "15 percent",
+        "20 percent",
+        "25 percent",
+        "30 percent"
       ],
-      "correctAnswer": "Weekdays between 9 am and 3 pm",
-      "explanation": "The report states the previous programme applied weekdays between 9 am and 3 pm.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "25 percent",
+      "explanation": "Importers have committed to increasing purchases by 25 percent over the next five years.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-025-q22",
       "audioScriptId": "celpip-listening-025-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What reason did the transportation director give for the expansion?",
+      "prompt": "How much canola does Manitoba produce annually?",
       "options": [
-        "To reduce road congestion",
-        "To increase city revenue",
-        "Many seniors could not attend evening appointments or weekend activities",
-        "The transit fleet had excess capacity"
+        "5 million tonnes",
+        "7 million tonnes",
+        "8 million tonnes",
+        "10 million tonnes"
       ],
-      "correctAnswer": "Many seniors could not attend evening appointments or weekend activities",
-      "explanation": "The director cited data showing seniors missed appointments due to transit costs.",
+      "correctAnswer": "8 million tonnes",
+      "explanation": "Manitoba produces approximately 8 million tonnes of canola annually.",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-025-q23",
       "audioScriptId": "celpip-listening-025-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will the expanded programme be funded?",
+      "prompt": "How many tonnes of pulse crops are produced?",
       "options": [
-        "Through residential property taxes",
-        "Through a small increase in the commercial property transit levy",
-        "Through federal grants",
-        "Through a fare increase for non-seniors"
+        "2.0 million tonnes",
+        "2.4 million tonnes",
+        "2.8 million tonnes",
+        "3.2 million tonnes"
       ],
-      "correctAnswer": "Through a small increase in the commercial property transit levy",
-      "explanation": "The spokesperson says a small increase in the levy on commercial property owners will fund it.",
+      "correctAnswer": "2.8 million tonnes",
+      "explanation": "Pulse crops account for 2.8 million tonnes of production.",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-025-q24",
       "audioScriptId": "celpip-listening-025-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What did advocacy groups call for in addition to free fares?",
+      "prompt": "How many jobs are expected to be created?",
       "options": [
-        "Newer buses",
-        "Better accessibility at stops and more frequent service",
-        "Lower fares for everyone",
-        "A free monthly transit pass"
+        "200 jobs",
+        "300 jobs",
+        "400 jobs",
+        "500 jobs"
       ],
-      "correctAnswer": "Better accessibility at stops and more frequent service",
-      "explanation": "Advocacy groups called for improved accessibility and more frequent service.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "400 jobs",
+      "explanation": "The deal is expected to create 400 additional jobs in agriculture and food processing.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-025-q25",
       "audioScriptId": "celpip-listening-025-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the main topic of the discussion?",
+      "prompt": "What is the total budget for the renovation?",
       "options": [
-        "Whether to build new office buildings",
-        "Whether companies should require a full return to in-person work",
-        "How to improve video conferencing technology",
-        "Whether remote work causes productivity loss"
+        "5.2 million dollars",
+        "6.0 million dollars",
+        "6.8 million dollars",
+        "7.5 million dollars"
       ],
-      "correctAnswer": "Whether companies should require a full return to in-person work",
-      "explanation": "The host introduces the topic as whether companies should require employees to return to the office.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "6.8 million dollars",
+      "explanation": "The renovation project is budgeted at 6.8 million dollars.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-025-q26",
       "audioScriptId": "celpip-listening-025-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Sophie say about spontaneous conversations?",
+      "prompt": "How long is the renovation expected to take?",
       "options": [
-        "They are inefficient",
-        "They lead to innovations that cannot be replicated on video calls",
-        "They are better online",
-        "They only benefit senior employees"
+        "12 months",
+        "15 months",
+        "18 months",
+        "24 months"
       ],
-      "correctAnswer": "They lead to innovations that cannot be replicated on video calls",
-      "explanation": "Sophie says spontaneous conversations lead to innovations you cannot replicate on a video call.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "18 months",
+      "explanation": "The project should take about 18 months to complete.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-025-q27",
       "audioScriptId": "celpip-listening-025-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "According to Marcus, what do studies consistently show?",
+      "prompt": "What are the three main components of the renovation?",
       "options": [
-        "Remote workers are less creative",
-        "In-office workers earn more",
-        "Employees show higher job satisfaction with flexibility",
-        "Remote work increases absenteeism"
+        "Pool, gym, parking lot",
+        "Fitness center, pool upgrade, youth spaces",
+        "Gym, parking, offices",
+        "Cafe, library, fitness center"
       ],
-      "correctAnswer": "Employees show higher job satisfaction with flexibility",
-      "explanation": "Marcus says studies consistently show higher job satisfaction when employees have flexibility.",
+      "correctAnswer": "Fitness center, pool upgrade, youth spaces",
+      "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces.",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-025-q28",
       "audioScriptId": "celpip-listening-025-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What concern does Sophie raise about forcing people to work from home?",
+      "prompt": "What is Robert's main concern?",
       "options": [
-        "It increases energy costs",
-        "Some employees lack a good home environment",
-        "It reduces internet bandwidth",
-        "It leads to longer working hours"
+        "Noise during construction",
+        "Cost of the project",
+        "Where his kids' programs will go",
+        "Parking during renovation"
       ],
-      "correctAnswer": "Some employees lack a good home environment",
-      "explanation": "Sophie says some employees live in small apartments or have young children, making home work more stressful.",
+      "correctAnswer": "Where his kids' programs will go",
+      "explanation": "Robert worries about where after-school programs will be located during construction.",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-025-q29",
       "audioScriptId": "celpip-listening-025-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Marcus suggest companies that prefer in-person work should do?",
+      "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "Reduce salaries for remote workers",
-        "Make the office experience compelling enough that people want to come voluntarily",
-        "Publish productivity data publicly",
-        "Hire only employees who live nearby"
+        "A temporary building",
+        "The community room and outdoor spaces",
+        "A school gym",
+        "A local fitness facility"
       ],
-      "correctAnswer": "Make the office experience compelling enough that people want to come voluntarily",
-      "explanation": "Marcus says companies should make in-person work compelling, not mandatory.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "The community room and outdoor spaces",
+      "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-025-q30",
       "audioScriptId": "celpip-listening-025-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "Which of the following best describes Sophie's view on productivity metrics?",
+      "prompt": "What additional facility is Susan negotiating with?",
       "options": [
-        "They perfectly capture real performance",
-        "They are the only reliable measure of output",
-        "They can be misleading and miss informal knowledge transfer",
-        "They support the case for remote work"
+        "A private gym",
+        "The school district",
+        "A local park",
+        "A nearby library"
       ],
-      "correctAnswer": "They can be misleading and miss informal knowledge transfer",
-      "explanation": "Sophie says productivity metrics can be misleading and you miss deep organisational knowledge from casual interactions.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "The school district",
+      "explanation": "Susan mentions negotiating with the school district for backup facility use.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-025-q31",
       "audioScriptId": "celpip-listening-025-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Marcus say companies risk if they mandate a return to office?",
+      "prompt": "What concern does Jason raise about using outdoor space?",
       "options": [
-        "Losing clients",
-        "Being fined by government",
-        "Losing good employees to more flexible competitors",
-        "Reducing profits"
+        "Weather damage",
+        "Limited room for physical activities",
+        "Theft concerns",
+        "Noise complaints"
       ],
-      "correctAnswer": "Losing good employees to more flexible competitors",
-      "explanation": "Marcus says companies risk losing good people to competitors who offer flexibility.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "Limited room for physical activities",
+      "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-025-q32",
       "audioScriptId": "celpip-listening-025-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's conclusion at the end?",
+      "prompt": "What suggestion does Jason make for outdoor activities?",
       "options": [
-        "Sophie has the better argument",
-        "Marcus has made the strongest case",
-        "The debate is far from settled",
-        "Both sides agree on the main point"
+        "Build a temporary gym",
+        "Close programs temporarily",
+        "Use a local park",
+        "Move all programs indoors"
       ],
-      "correctAnswer": "The debate is far from settled",
-      "explanation": "The host says it is clear the debate is far from settled.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "Use a local park",
+      "explanation": "Jason suggests using a local park for outdoor programming during construction.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-025-q33",
       "audioScriptId": "celpip-listening-025-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What common belief does the speaker challenge?",
+      "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "That children are better at maths than adults",
-        "That adults cannot learn a new language as effectively as children",
-        "That language learning requires travel abroad",
-        "That bilingualism causes confusion"
+        "Mental health is covered more than physical",
+        "Physical health is covered more than mental health",
+        "They're equally covered",
+        "Neither is adequately covered"
       ],
-      "correctAnswer": "That adults cannot learn a new language as effectively as children",
-      "explanation": "The speaker says this widespread belief is largely incorrect.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "Physical health is covered more than mental health",
+      "explanation": "The speaker states mental health is covered at lower rates than physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-025-q34",
       "audioScriptId": "celpip-listening-025-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What advantage do adults have over children in language learning, according to the speaker?",
+      "prompt": "What example does the speaker use to illustrate the disparity?",
       "options": [
-        "Adults have more free time",
-        "Adults can study deliberately and strategically",
-        "Adults have better pronunciation",
-        "Adults learn grammar faster"
+        "Cancer treatment vs. therapy",
+        "Broken arm coverage vs. limited mental health sessions",
+        "Hospital stays vs. doctor visits",
+        "Prescription drugs vs. counseling"
       ],
-      "correctAnswer": "Adults can study deliberately and strategically",
-      "explanation": "The speaker lists this as a critical advantage of adult learners.",
-      "difficulty": "easy",
-      "topic": "cultural adjustment"
+      "correctAnswer": "Broken arm coverage vs. limited mental health sessions",
+      "explanation": "The speaker uses physical therapy for broken arms compared to limited therapy sessions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-025-q35",
       "audioScriptId": "celpip-listening-025-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How long can a motivated adult reach conversational fluency, according to the passage?",
+      "prompt": "What is the annual economic cost of mental health issues in Canada?",
       "options": [
-        "Three to five years",
-        "Six to eight months",
-        "Twelve to eighteen months",
-        "Two to three years"
+        "25 billion dollars",
+        "38 billion dollars",
+        "51 billion dollars",
+        "67 billion dollars"
       ],
-      "correctAnswer": "Twelve to eighteen months",
-      "explanation": "The speaker says adults with good study habits can reach conversational fluency in twelve to eighteen months.",
+      "correctAnswer": "51 billion dollars",
+      "explanation": "Mental health issues cost 51 billion dollars annually in Canada.",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-025-q36",
       "audioScriptId": "celpip-listening-025-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health benefit is associated with bilingualism?",
+      "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Lower blood pressure",
-        "Reduced risk of heart disease",
-        "Delayed onset of dementia by four to five years",
-        "Improved physical coordination"
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations",
+        "Medication costs",
+        "Administrative expenses"
       ],
-      "correctAnswer": "Delayed onset of dementia by four to five years",
-      "explanation": "The speaker cites studies showing bilingual adults show delayed onset of dementia by four to five years on average.",
+      "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
+      "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
       "difficulty": "medium",
-      "topic": "cultural adjustment"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-025-q37",
       "audioScriptId": "celpip-listening-025-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What cognitive skills does managing two languages improve?",
+      "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "Long-term memory and spatial reasoning",
-        "Attention, task-switching, and creativity",
-        "Mathematical problem-solving",
-        "Reading speed and recall"
+        "It's cheaper than physical health",
+        "Early treatment has positive ROI",
+        "It reduces insurance profits",
+        "It's cost-neutral"
       ],
-      "correctAnswer": "Attention, task-switching, and creativity",
-      "explanation": "The speaker says managing two language systems improves attention, task-switching, and creativity.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "Early treatment has positive ROI",
+      "explanation": "The speaker argues mental health coverage has a positive return on investment.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-025-q38",
       "audioScriptId": "celpip-listening-025-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall conclusion?",
+      "prompt": "What does the speaker advocate companies implement?",
       "options": [
-        "Adults should not bother learning new languages",
-        "Language learning is too difficult for most adults",
-        "Language learning is one of the most valuable investments an adult can make",
-        "Children should be taught two languages from birth"
+        "Lower coverage for mental health",
+        "Mandatory parity in coverage",
+        "Removal of all limits",
+        "Voluntary coverage only"
       ],
-      "correctAnswer": "Language learning is one of the most valuable investments an adult can make",
-      "explanation": "The speaker states directly that language learning is one of the most valuable adult investments.",
-      "difficulty": "hard",
-      "topic": "cultural adjustment"
+      "correctAnswer": "Mandatory parity in coverage",
+      "explanation": "The speaker advocates for mandatory parity—equal coverage for mental and physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     }
   ]
 }

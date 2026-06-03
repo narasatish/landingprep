@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 30",
+  "title": "CELPIP General Listening — Practice Test 30",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-030-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Reporting a Water Leak in an Apartment",
-      "text": "Resident: Hello, I need to report a water leak. It started this morning under my kitchen sink. There's water pooling on the floor.\nSuperintendent: I'll send someone right away. Can you confirm your unit number?\nResident: It's unit 4B on the fourth floor.\nSuperintendent: Got it. And is the leak a slow drip or is it flowing steadily?\nResident: It's a steady drip. I've put a bucket under it, but it's filling up about every two hours.\nSuperintendent: That sounds like a loose connection on the supply line. The plumber we use is available this afternoon. Would two o'clock work for you?\nResident: Yes, that's fine. Do I need to be home?\nSuperintendent: Yes, please be there so the plumber can access the cabinet under the sink. Also, to be safe, turn off the shut-off valve under the sink — there's usually a small handle on the left pipe.\nResident: I found it and turned it off. The dripping has stopped for now.\nSuperintendent: Perfect. That confirms the problem is with the supply line, not the drain. The plumber will replace the fitting. It should take under an hour.",
+      "title": "Airline Baggage Delay",
+      "text": "Passenger: Excuse me, my baggage didn't arrive on my flight from Vancouver. Airline Agent: I'm very sorry to hear that. Let me help you file a report. What is your confirmation number? Passenger: It's VH-4829. I arrived about an hour ago on flight AC-127. Agent: Got it. Did you check your bag through to your final destination or pick it up here in Calgary? Passenger: I checked it all the way to Calgary. I have the baggage claim ticket right here. Agent: Perfect. Can I see that? The tag number is LM-58493. Your bag is a black Samsonite roller, correct? Passenger: Yes, that's right. It has a red ribbon on the handle. Agent: Great. I've found it in the system. It actually came off the plane but was misrouted to Edmonton by mistake. It's on the next flight back to Calgary, which arrives at 6:15 PM tonight. Passenger: So I'll have it this evening? Agent: Yes, we'll have it delivered to your hotel by 8 PM. Where are you staying? Passenger: The Fairmont Palliser downtown. What compensation will I get? Agent: Because the delay is less than 24 hours and the bag will be delivered today, we'll provide a $50 travel voucher for your next flight with us.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-030-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Choosing Between Two Job Offers",
-      "text": "Priya: I'm in a tough spot. I got two job offers this week and I have until Friday to decide.\nKevin: That's a great problem to have! What are the offers?\nPriya: One is a junior marketing role at a tech startup. Good salary, lots of creative freedom, but the company is only two years old and a bit risky. The other is a coordinator position at a non-profit — lower salary, but excellent benefits and a guaranteed pension.\nKevin: What matters more to you right now — financial security or career growth?\nPriya: Honestly, both. I have student loans to pay off, but I also don't want to be stuck in a job that goes nowhere.\nKevin: Could the non-profit lead to advancement?\nPriya: They mentioned there's a senior coordinator role that opens up every couple of years. But at the startup, if it takes off, the growth potential is huge.\nKevin: Have you factored in the commute?\nPriya: Good point — the startup is downtown, forty-five minutes each way on transit. The non-profit is ten minutes from my apartment.\nKevin: That's two hours a day you'd get back with the non-profit. That's not nothing.",
+      "title": "Fitness Class Enrollment",
+      "text": "Trainer: Welcome to the studio. Is this your first class? Maya: Yeah, I'm pretty nervous. Trainer: Don't worry, everyone starts somewhere. What's your experience with yoga? Maya: I've done some stretching at home, but never a full class like this. Trainer: That's great. Let's get you set up. We have mats over there, and grab a water bottle from the cooler. Maya: How long is the class? Trainer: It's 60 minutes total. We start with breathing exercises, warm up, then move through poses, and end with meditation. Maya: That sounds good. What's the hardest part for beginners? Trainer: Usually it's learning to listen to your body. Don't push too hard too fast. If something hurts, modify it or take a break. Maya: Good to know. How many classes should I take per week to see results? Trainer: For best results, aim for three times a week. Even once a week is great though. Maya: I'll start with twice a week and see how it goes. Trainer: Perfect. That's a solid plan. Let's get started.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-030-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "How to Use the Provincial Health Insurance System",
-      "text": "Welcome to this information session on using the provincial health insurance system. If you are a permanent resident or Canadian citizen living in this province, you are entitled to a provincial health card, which covers the cost of most medically necessary services.\n\nTo obtain your health card, visit a ServiceOntario or equivalent provincial office with two pieces of identification — one must be a government-issued photo ID, such as a passport or permanent resident card, and one must show your current address, such as a utility bill or bank statement. New applicants typically wait a three-month period before coverage begins, so it is important to apply as soon as possible after arriving.\n\nYour health card covers visits to a family doctor, specialist consultations when referred by your doctor, emergency room visits, hospital stays, and diagnostic tests including X-rays and blood work. It does not automatically cover prescription drugs, dental care, or vision care, which are typically covered through separate private insurance plans or provincial drug benefit programmes for qualifying residents.\n\nIf you do not have a family doctor, you can register with the Health Care Connect programme, which matches patients to available physicians. In the meantime, walk-in clinics and urgent care centres can treat most non-emergency conditions and are also covered by your health card.\n\nAlways carry your health card when attending medical appointments, and report any change of address to the provincial health authority to ensure your records are current.",
+      "title": "University Orientation: First Week Checklist",
+      "text": "Hello, welcome to orientation week. I'm here to walk you through essential tasks for your first week. First, attend your faculty's orientation meeting on Monday at ten AM in the Student Centre. Bring your student ID. Second, register for your courses online by Wednesday, August 28th. Early registration means better class times. Third, purchase your textbooks from the university bookstore before classes start. Fourth, get your student photo ID taken at the Services Office between 9 and 4 on any day this week. The photo ID is required for library access and residence entry. Fifth, activate your email account at the IT support desk. Your email is your primary communication channel for all university announcements. Sixth, find your classes on a campus map. Most buildings are located around the central quad. Seventh, attend the Welcome Social on Friday evening in the gymnasium. It's a great way to meet other students and faculty. Eighth, complete your health and immunization form at Student Health Services. This is mandatory before attending classes. Finally, budget about three hundred dollars for books and materials. Questions? Visit the information desk in the main foyer.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-030-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: Province Launches New Childcare Subsidy Programme",
-      "text": "The provincial government announced a new childcare subsidy programme this morning, aimed at reducing childcare costs for families earning below ninety thousand dollars per year. Under the new programme, eligible families will pay no more than ten dollars per day for regulated childcare, beginning on the first of next month.\n\nThe Minister of Families said the programme is expected to benefit approximately forty thousand children across the province in its first year. Priority access will be given to families with children under the age of six, as well as families currently on waitlists at participating childcare centres.\n\nTo apply, parents must submit an application through the provincial government's online portal and provide proof of income from the previous tax year. Applications will be processed within fifteen business days, and approved families will be notified by email.\n\nChild-care providers interested in joining the programme must sign a participation agreement and comply with the province's staffing and curriculum standards. The government said that over three hundred licenced providers have already registered ahead of the launch.\n\nOpposition critics raised concerns that the programme does not extend to informal care arrangements, such as home-based care providers who are not licenced. The government indicated it plans to expand eligibility in future years.",
+      "title": "New Brunswick Fisheries Management Plan",
+      "text": "New Brunswick has introduced a comprehensive fisheries management plan aimed at rebuilding declining fish stocks and supporting the province's fishing communities. The plan allocates 67 million dollars over five years to research, enforcement, and sustainable fishing initiatives. Atlantic salmon populations have declined by 48 percent over the past two decades, prompting urgent action. The plan imposes stricter catch limits on cod and halibut in designated zones. Fishing vessel owners participating in conservation programs receive subsidies up to 200,000 dollars for upgrading to eco-friendly equipment. The program mandates trap modifications to reduce unintended marine mammal bycatch by 35 percent. Over 3,200 fishermen and their families depend on this industry in New Brunswick. The province is establishing a new fisheries research center employing 120 marine scientists. Marine Protected Areas will expand to cover an additional 8 percent of provincial waters. The plan aims to achieve sustainable fish stock levels by 2032.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-030-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Is Social Media Good or Bad for Teenagers?",
-      "text": "Host: Today's discussion focuses on social media and its impact on teenagers. With me are two commentators: Diane, a child development researcher, and Tom, who advocates for digital literacy education. Diane, let's start with you — is social media harmful to teenagers?\nDiane: The research is quite clear that heavy social media use is associated with higher rates of anxiety, depression, and sleep disruption in teenagers, particularly for girls. The problem isn't the technology itself — it's the design. Platforms are deliberately built to maximise engagement, which means maximising the time young people spend comparing themselves to others.\nHost: Tom, do you think the solution is restricting access?\nTom: I strongly disagree with blanket restrictions. The answer is education. We need to teach teenagers to be critical consumers of digital content — how algorithms work, how images are edited, what business models drive these platforms. Banning access doesn't develop those skills; it just delays the problem.\nHost: Diane, what do you say to that?\nDiane: I agree that education is necessary, but it is not sufficient on its own. A thirteen-year-old is neurologically not equipped to resist the deliberate manipulation that these platforms apply. We need age-appropriate restrictions alongside digital literacy — not instead of it.\nHost: Tom, any response?\nTom: The issue is that restriction without education creates what I call the forbidden fruit effect — the moment restrictions are lifted, young people binge. I've seen this in schools that blocked social media completely and then found students spending even more time online at weekends to compensate.\nHost: Thank you both. It seems there is agreement on the need for education, but a real divide on the role of restrictions.",
+      "title": "University Program Expansion Planning",
+      "text": "Dean Robert: We've been asked to consider expanding our engineering program, particularly in renewable energy studies. The faculty has requested three additional full-time instructors and funding for new laboratory equipment. The cost would be approximately 2.4 million dollars over two years. Given our current budget constraints, I'm hesitant to commit to this expansion.\n\nProfessor Elena: I understand the budget concerns, Dean, but we're actually losing enrollment to competing universities who offer these programs. Last year, we lost 150 potential engineering students to schools with stronger renewable energy options. If we don't expand now, we'll fall behind. Plus, there's significant industry demand for graduates with renewable energy expertise. Companies are specifically recruiting from universities with these specialized programs.\n\nStudent Representative Malik: From a student perspective, I absolutely support this expansion. Many of my classmates are interested in sustainability and green technology, but we don't have the courses or facilities to support that focus. I think this investment would make our university much more attractive to prospective students, which would actually increase our overall enrollment and revenue.\n\nBudget Committee Member Diana: Malik makes a good point about revenue. If this program attracts even 200 additional students, the tuition revenue would exceed the expansion costs within three years. And we could explore partnerships with industry for funding. I've been in conversations with several renewable energy companies that might contribute equipment or funding in exchange for access to our graduates for recruitment.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-030-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: Why Small Towns Deserve More Investment",
-      "text": "For decades, government investment in infrastructure, healthcare, and education has flowed predominantly toward major cities. This concentration of resources has created a growing divide between the opportunities available to people in urban centres and those living in smaller towns and rural communities. I believe this imbalance is not only unfair but economically short-sighted.\n\nConsider healthcare. In most Canadian cities, residents have access to walk-in clinics, specialist hospitals, and urgent care centres within a reasonable distance. In small towns, the nearest hospital may be an hour's drive away. Rural residents have higher rates of late-stage cancer diagnoses precisely because early detection requires access to diagnostic services that simply are not available locally.\n\nEducation tells a similar story. Urban schools are often better funded, have access to more experienced teachers, and offer a wider range of programmes and extracurricular activities. Rural students frequently travel long distances to school and have fewer post-secondary options nearby. This creates a pattern in which talented young people leave their home communities for cities — and rarely return.\n\nCritics of increased rural investment argue that the cost per person is too high. This logic is flawed. The cost of maintaining a dispersed population is not a reason to abandon it — it is an argument for smarter, targeted investment in sustainable local infrastructure.\n\nIf we are serious about equality of opportunity, the postal code where someone is born should not determine the quality of healthcare, education, or economic opportunity available to them. Small towns and rural communities deserve better — not out of sentiment, but out of a genuine commitment to a more equitable society.",
+      "title": "Mental Health Parity in Insurance Coverage",
+      "text": "Mental health needs to be treated with the same importance as physical health in our insurance system. We talk about mental health awareness, but when it comes to actual coverage, it's dramatically underfunded. Most insurance plans cover mental health at lower rates than physical health. If you have a broken arm, insurance covers months of physical therapy. If you have depression or anxiety, you get maybe 10 sessions of therapy a year, and psychologist visits might only be 50 percent covered. This creates barriers. Many people avoid treatment because they can't afford it, and their conditions worsen. The economic impact is massive. Mental health issues cost the economy 51 billion dollars annually in Canada through lost productivity, emergency services, and hospitalizations. Yet we invest a fraction of that in prevention and treatment. Here's what frustrates me most: we have effective treatments. Therapy works. Medication helps. But access is limited by insurance coverage. A person struggling with bipolar disorder shouldn't have to choose between therapy and rent. Insurance companies argue coverage limits are necessary for cost control, but that's shortsighted. When people get mental health treatment early, they use fewer emergency services, work more, and contribute to society. The ROI on mental health coverage is actually positive. I'm advocating for mandatory parity—insurance companies should cover mental health at the same level as physical health. This means removing visit limits, lowering copayments, and covering evidence-based treatments. It's not just compassionate; it's economically smart.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-030-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What is the problem the resident is reporting?",
+      "prompt": "From which city did the passenger fly?",
       "options": [
-        "A broken window",
-        "A water leak under the kitchen sink",
-        "A faulty heating system",
-        "A blocked toilet"
+        "Calgary",
+        "Vancouver",
+        "Edmonton",
+        "Toronto"
       ],
-      "correctAnswer": "A water leak under the kitchen sink",
-      "explanation": "The resident calls to report water pooling under the kitchen sink.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Vancouver",
+      "explanation": "Passenger states 'my baggage didn't arrive on my flight from Vancouver.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-030-q02",
       "audioScriptId": "celpip-listening-030-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How fast is the bucket filling up?",
+      "prompt": "What is the baggage claim tag number?",
       "options": [
-        "Every thirty minutes",
-        "Every hour",
-        "Every two hours",
-        "Every day"
+        "LM-48593",
+        "LM-58493",
+        "LM-58394",
+        "LM-48539"
       ],
-      "correctAnswer": "Every two hours",
-      "explanation": "The resident says the bucket fills up about every two hours.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "LM-58493",
+      "explanation": "Agent reads the tag number as 'LM-58493' from the claim ticket.",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-030-q03",
       "audioScriptId": "celpip-listening-030-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent suspect the problem is?",
+      "prompt": "What color is the passenger's luggage?",
       "options": [
-        "A cracked drain pipe",
-        "A loose connection on the supply line",
-        "A broken water heater",
-        "A faulty pressure valve"
+        "Blue Samsonite roller",
+        "Black Samsonite roller",
+        "Black leather bag",
+        "Red Samsonite roller"
       ],
-      "correctAnswer": "A loose connection on the supply line",
-      "explanation": "The superintendent says it sounds like a loose connection on the supply line.",
+      "correctAnswer": "Black Samsonite roller",
+      "explanation": "Agent confirms 'Your bag is a black Samsonite roller, correct?' and passenger agrees.",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-030-q04",
       "audioScriptId": "celpip-listening-030-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "When is the plumber available?",
+      "prompt": "Where was the bag mistakenly sent?",
       "options": [
-        "This morning",
-        "Tomorrow morning",
-        "Two o'clock this afternoon",
-        "Next week"
+        "Vancouver",
+        "Toronto",
+        "Edmonton",
+        "Montreal"
       ],
-      "correctAnswer": "Two o'clock this afternoon",
-      "explanation": "The superintendent says the plumber is available at two o'clock this afternoon.",
+      "correctAnswer": "Edmonton",
+      "explanation": "Agent explains the bag 'was misrouted to Edmonton by mistake.'",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-030-q05",
       "audioScriptId": "celpip-listening-030-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent ask the resident to do immediately?",
+      "prompt": "When does the return flight arrive in Calgary?",
       "options": [
-        "Call a plumber directly",
-        "Leave the apartment",
-        "Turn off the shut-off valve",
-        "Open the windows"
+        "4:15 PM",
+        "5:15 PM",
+        "6:15 PM",
+        "7:15 PM"
       ],
-      "correctAnswer": "Turn off the shut-off valve",
-      "explanation": "The superintendent advises turning off the shut-off valve under the sink.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "6:15 PM",
+      "explanation": "Agent states 'It's on the next flight back to Calgary, which arrives at 6:15 PM tonight.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-030-q06",
       "audioScriptId": "celpip-listening-030-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the dripping stopping confirm?",
+      "prompt": "By what time will the bag be delivered to the hotel?",
       "options": [
-        "The drain is blocked",
-        "The pipe is cracked",
-        "The problem is with the supply line, not the drain",
-        "The water pressure is too high"
+        "6:00 PM",
+        "7:00 PM",
+        "8:00 PM",
+        "9:00 PM"
       ],
-      "correctAnswer": "The problem is with the supply line, not the drain",
-      "explanation": "The superintendent says this confirms the problem is with the supply line.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "8:00 PM",
+      "explanation": "Agent promises 'we'll have it delivered to your hotel by 8 PM.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-030-q07",
       "audioScriptId": "celpip-listening-030-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long is the repair expected to take?",
+      "prompt": "Which hotel is the passenger staying at?",
       "options": [
-        "Less than one hour",
-        "Two to three hours",
-        "All afternoon",
-        "Several days"
+        "The Sandman Calgary",
+        "The Fairmont Palliser",
+        "The Bow Tower",
+        "The Shangri-La"
       ],
-      "correctAnswer": "Less than one hour",
-      "explanation": "The superintendent says it should take under an hour.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "The Fairmont Palliser",
+      "explanation": "Passenger states they're staying at 'The Fairmont Palliser downtown.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-030-q08",
       "audioScriptId": "celpip-listening-030-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why does the resident need to be home for the repair?",
+      "prompt": "What compensation is offered for the baggage delay?",
       "options": [
-        "To pay the plumber in cash",
-        "To sign a repair agreement",
-        "To give the plumber access to the cabinet",
-        "To watch the repair procedure"
+        "$25 travel voucher",
+        "$35 travel voucher",
+        "$50 travel voucher",
+        "$75 travel voucher"
       ],
-      "correctAnswer": "To give the plumber access to the cabinet",
-      "explanation": "The superintendent says the plumber needs to access the cabinet under the sink.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "$50 travel voucher",
+      "explanation": "Agent offers 'a $50 travel voucher for your next flight with us.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-030-q09",
       "audioScriptId": "celpip-listening-030-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How many job offers has Priya received?",
+      "prompt": "Is this Maya's first yoga class?",
       "options": [
-        "One",
-        "Two",
-        "Three",
-        "Four"
+        "Yes",
+        "No, she's taken classes before",
+        "She's never tried yoga",
+        "Not specified"
       ],
-      "correctAnswer": "Two",
-      "explanation": "Priya says she received two job offers this week.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Yes",
+      "explanation": "Trainer asks 'Is this your first class?' and Maya confirms 'Yeah.'",
+      "difficulty": "medium",
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-030-q10",
       "audioScriptId": "celpip-listening-030-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What concern does Priya have about the startup?",
+      "prompt": "How long is the class?",
       "options": [
-        "The salary is too low",
-        "It is located too far away",
-        "It is only two years old and a bit risky",
-        "The role lacks creative freedom"
+        "30 minutes",
+        "45 minutes",
+        "60 minutes",
+        "90 minutes"
       ],
-      "correctAnswer": "It is only two years old and a bit risky",
-      "explanation": "Priya says the startup is only two years old and a bit risky.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "60 minutes",
+      "explanation": "Trainer states 'It's 60 minutes total.'",
+      "difficulty": "medium",
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-030-q11",
       "audioScriptId": "celpip-listening-030-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What advantage does the non-profit offer over the startup?",
+      "prompt": "What is the structure of the class?",
       "options": [
-        "Higher salary",
-        "More creative freedom",
-        "Better benefits and a pension",
-        "Faster career advancement"
+        "Only poses and stretching",
+        "Breathing, warm-up, poses, meditation",
+        "Meditation and cool-down only",
+        "High-intensity cardio"
       ],
-      "correctAnswer": "Better benefits and a pension",
-      "explanation": "Priya says the non-profit has excellent benefits and a guaranteed pension.",
+      "correctAnswer": "Breathing, warm-up, poses, meditation",
+      "explanation": "Trainer describes 'We start with breathing exercises, warm up, then move through poses, and end with meditation.'",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-030-q12",
       "audioScriptId": "celpip-listening-030-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How long is the commute to the startup?",
+      "prompt": "What advice does the trainer give about pain?",
       "options": [
-        "Ten minutes",
-        "Twenty minutes",
-        "Forty-five minutes each way",
-        "Over an hour each way"
+        "Push through the pain",
+        "Stop immediately",
+        "Modify or take a break if something hurts",
+        "Use ice after class"
       ],
-      "correctAnswer": "Forty-five minutes each way",
-      "explanation": "Priya says the startup is forty-five minutes each way on transit.",
+      "correctAnswer": "Modify or take a break if something hurts",
+      "explanation": "Trainer advises 'If something hurts, modify it or take a break.'",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-030-q13",
       "audioScriptId": "celpip-listening-030-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Kevin point out about commuting time?",
+      "prompt": "How many classes per week does Maya plan to attend?",
       "options": [
-        "It adds to fitness levels",
-        "It is a chance to read",
-        "The non-profit saves her two hours a day",
-        "Transit fares are expensive"
+        "Once a week",
+        "Twice a week",
+        "Three times a week",
+        "Daily"
       ],
-      "correctAnswer": "The non-profit saves her two hours a day",
-      "explanation": "Kevin says Priya would get back two hours a day by working closer to home.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Twice a week",
+      "explanation": "Maya states 'I'll start with twice a week and see how it goes.'",
+      "difficulty": "medium",
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-030-q14",
       "audioScriptId": "celpip-listening-030-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is entitled to a provincial health card?",
+      "prompt": "When is the faculty orientation meeting?",
       "options": [
-        "Only Canadian citizens",
-        "Permanent residents and Canadian citizens",
-        "International students only",
-        "Anyone living in Canada"
+        "Monday at 8 AM",
+        "Monday at 10 AM",
+        "Tuesday at 10 AM",
+        "Wednesday at 10 AM"
       ],
-      "correctAnswer": "Permanent residents and Canadian citizens",
-      "explanation": "The speaker says permanent residents or Canadian citizens are entitled to a health card.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Monday at 10 AM",
+      "explanation": "The guide states 'attend your faculty's orientation meeting on Monday at ten AM.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-030-q15",
       "audioScriptId": "celpip-listening-030-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is one document required to apply for a health card?",
+      "prompt": "What is the deadline for course registration?",
       "options": [
-        "A letter from an employer",
-        "A government-issued photo ID",
-        "A birth certificate",
-        "A utility bill from a previous province"
+        "Tuesday",
+        "Wednesday, August 27th",
+        "Wednesday, August 28th",
+        "Friday"
       ],
-      "correctAnswer": "A government-issued photo ID",
-      "explanation": "The speaker says one of the two IDs must be a government-issued photo ID.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Wednesday, August 28th",
+      "explanation": "The guide specifies 'register for your courses online by Wednesday, August 28th.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-030-q16",
       "audioScriptId": "celpip-listening-030-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long must new applicants typically wait before coverage begins?",
+      "prompt": "Where should you get your student photo ID?",
       "options": [
-        "One week",
-        "One month",
-        "Three months",
-        "Six months"
+        "The Student Centre",
+        "The Services Office",
+        "The IT support desk",
+        "Student Health Services"
       ],
-      "correctAnswer": "Three months",
-      "explanation": "The speaker says there is typically a three-month waiting period.",
+      "correctAnswer": "The Services Office",
+      "explanation": "The guide states 'get your student photo ID taken at the Services Office.'",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-030-q17",
       "audioScriptId": "celpip-listening-030-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT covered by the provincial health card?",
+      "prompt": "What are the hours for photo ID service?",
       "options": [
-        "Emergency room visits",
-        "Family doctor visits",
-        "Dental care",
-        "Blood work"
+        "8 AM to 5 PM",
+        "9 AM to 4 PM",
+        "10 AM to 3 PM",
+        "8 AM to 6 PM"
       ],
-      "correctAnswer": "Dental care",
-      "explanation": "The speaker says dental care is not automatically covered by the health card.",
+      "correctAnswer": "9 AM to 4 PM",
+      "explanation": "The guide mentions 'between 9 and 4 on any day this week.'",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-030-q18",
       "audioScriptId": "celpip-listening-030-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is the Health Care Connect programme?",
+      "prompt": "What is the estimated budget for books and materials?",
       "options": [
-        "A private insurance plan",
-        "A walk-in clinic network",
-        "A programme that matches patients to available physicians",
-        "An online pharmacy"
+        "One hundred dollars",
+        "Two hundred dollars",
+        "Three hundred dollars",
+        "Four hundred dollars"
       ],
-      "correctAnswer": "A programme that matches patients to available physicians",
-      "explanation": "The speaker describes Health Care Connect as matching patients to available physicians.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Three hundred dollars",
+      "explanation": "The guide states 'budget about three hundred dollars for books and materials.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-030-q19",
       "audioScriptId": "celpip-listening-030-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What should residents do if their address changes?",
+      "prompt": "When is the Welcome Social?",
       "options": [
-        "Apply for a new health card",
-        "Report the change to the provincial health authority",
-        "Contact their family doctor only",
-        "Wait until renewal time"
+        "Thursday evening",
+        "Friday evening",
+        "Saturday afternoon",
+        "Sunday afternoon"
       ],
-      "correctAnswer": "Report the change to the provincial health authority",
-      "explanation": "The speaker says to report any change of address to keep records current.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Friday evening",
+      "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-030-q20",
       "audioScriptId": "celpip-listening-030-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Who is eligible for the new childcare subsidy?",
+      "prompt": "How much is allocated for the fisheries management plan?",
       "options": [
-        "All families with children under twelve",
-        "Families earning below ninety thousand dollars per year",
-        "Only single-parent households",
-        "Families on social assistance only"
+        "50 million dollars",
+        "58 million dollars",
+        "67 million dollars",
+        "75 million dollars"
       ],
-      "correctAnswer": "Families earning below ninety thousand dollars per year",
-      "explanation": "The report says eligible families earn below ninety thousand dollars per year.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "67 million dollars",
+      "explanation": "The plan allocates 67 million dollars over five years.",
+      "difficulty": "medium",
+      "topic": "Fisheries"
     },
     {
       "id": "celpip-listening-030-q21",
       "audioScriptId": "celpip-listening-030-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What is the maximum daily childcare cost under the new programme?",
+      "prompt": "By what percentage have Atlantic salmon populations declined?",
       "options": [
-        "Five dollars",
-        "Ten dollars",
-        "Twenty dollars",
-        "Fifty dollars"
+        "35 percent",
+        "42 percent",
+        "48 percent",
+        "55 percent"
       ],
-      "correctAnswer": "Ten dollars",
-      "explanation": "The report states families will pay no more than ten dollars per day.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "48 percent",
+      "explanation": "Atlantic salmon populations have declined by 48 percent over the past two decades.",
+      "difficulty": "medium",
+      "topic": "Fisheries"
     },
     {
       "id": "celpip-listening-030-q22",
       "audioScriptId": "celpip-listening-030-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Which children will receive priority access?",
+      "prompt": "What is the maximum subsidy for vessel upgrades?",
       "options": [
-        "School-age children",
-        "Children under six and those already on waitlists",
-        "Children of essential workers",
-        "All children equally"
+        "150,000 dollars",
+        "175,000 dollars",
+        "200,000 dollars",
+        "250,000 dollars"
       ],
-      "correctAnswer": "Children under six and those already on waitlists",
-      "explanation": "The minister says priority goes to children under six and families on existing waitlists.",
+      "correctAnswer": "200,000 dollars",
+      "explanation": "Subsidies reach up to 200,000 dollars for eco-friendly equipment upgrades.",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "Fisheries"
     },
     {
       "id": "celpip-listening-030-q23",
       "audioScriptId": "celpip-listening-030-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will approved families be notified?",
+      "prompt": "By what percentage should bycatch be reduced?",
       "options": [
-        "By post",
-        "By telephone",
-        "By email",
-        "Through their childcare provider"
+        "25 percent",
+        "30 percent",
+        "35 percent",
+        "40 percent"
       ],
-      "correctAnswer": "By email",
-      "explanation": "The report says approved families will be notified by email.",
+      "correctAnswer": "35 percent",
+      "explanation": "Trap modifications target a 35 percent reduction in marine mammal bycatch.",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "Fisheries"
     },
     {
       "id": "celpip-listening-030-q24",
       "audioScriptId": "celpip-listening-030-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What concern did opposition critics raise?",
+      "prompt": "How many marine scientists will the research center employ?",
       "options": [
-        "The daily fee is too high",
-        "The programme excludes informal unlicenced home-based care",
-        "Too many providers have already registered",
-        "The programme starts too late in the year"
+        "80 scientists",
+        "100 scientists",
+        "120 scientists",
+        "150 scientists"
       ],
-      "correctAnswer": "The programme excludes informal unlicenced home-based care",
-      "explanation": "Critics say the programme does not extend to informal home-based care arrangements.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "120 scientists",
+      "explanation": "The research center will employ 120 marine scientists.",
+      "difficulty": "medium",
+      "topic": "Fisheries"
     },
     {
       "id": "celpip-listening-030-q25",
       "audioScriptId": "celpip-listening-030-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say is the main problem with social media platforms?",
+      "prompt": "What is the cost of the engineering program expansion?",
       "options": [
-        "They are too expensive",
-        "They are designed to maximise engagement through comparison",
-        "They do not have enough educational content",
-        "They spread false news to teenagers"
+        "1.8 million dollars",
+        "2.0 million dollars",
+        "2.4 million dollars",
+        "2.8 million dollars"
       ],
-      "correctAnswer": "They are designed to maximise engagement through comparison",
-      "explanation": "Diane says platforms are deliberately built to maximise engagement, which means maximising comparison.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "2.4 million dollars",
+      "explanation": "The cost would be approximately 2.4 million dollars over two years.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-030-q26",
       "audioScriptId": "celpip-listening-030-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom advocate for?",
+      "prompt": "How many potential students did the university lose last year?",
       "options": [
-        "Banning social media entirely",
-        "Age-based restrictions on all platforms",
-        "Digital literacy education for teenagers",
-        "Parental monitoring software"
+        "100 students",
+        "125 students",
+        "150 students",
+        "175 students"
       ],
-      "correctAnswer": "Digital literacy education for teenagers",
-      "explanation": "Tom says the answer is teaching teenagers to be critical consumers of digital content.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "150 students",
+      "explanation": "Professor Elena mentions they lost 150 potential engineering students.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-030-q27",
       "audioScriptId": "celpip-listening-030-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "On what point do Diane and Tom agree?",
+      "prompt": "Why are some students not enrolling at this university?",
       "options": [
-        "Restrictions are necessary",
-        "Education about social media is necessary",
-        "Teenagers should avoid all social media",
-        "Parents should manage all screen time"
+        "Poor faculty",
+        "Weak renewable energy program options",
+        "High tuition fees",
+        "Bad location"
       ],
-      "correctAnswer": "Education about social media is necessary",
-      "explanation": "The host notes both agree on the need for education.",
+      "correctAnswer": "Weak renewable energy program options",
+      "explanation": "They're losing students to competing universities with stronger renewable energy options.",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-030-q28",
       "audioScriptId": "celpip-listening-030-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say a thirteen-year-old is not equipped to do?",
+      "prompt": "What does Diana believe about tuition revenue from additional students?",
       "options": [
-        "Understand complex text",
-        "Resist deliberate platform manipulation",
-        "Manage their own time",
-        "Communicate online safely"
+        "It will decrease overall costs",
+        "It would exceed expansion costs within three years",
+        "It wouldn't help the budget",
+        "It takes longer than expected"
       ],
-      "correctAnswer": "Resist deliberate platform manipulation",
-      "explanation": "Diane says a thirteen-year-old is neurologically not equipped to resist deliberate platform manipulation.",
+      "correctAnswer": "It would exceed expansion costs within three years",
+      "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years.",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-030-q29",
       "audioScriptId": "celpip-listening-030-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom call the effect of banning social media without education?",
+      "prompt": "What type of partnership does Diana mention exploring?",
       "options": [
-        "The rebound effect",
-        "The forbidden fruit effect",
-        "The digital divide",
-        "The screen overload effect"
+        "International universities",
+        "Government agencies",
+        "Renewable energy companies",
+        "Tech startups"
       ],
-      "correctAnswer": "The forbidden fruit effect",
-      "explanation": "Tom calls the over-compensating behaviour after restrictions the forbidden fruit effect.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Renewable energy companies",
+      "explanation": "Diana mentions conversations with renewable energy companies about funding contributions.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-030-q30",
       "audioScriptId": "celpip-listening-030-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What evidence does Tom give for the forbidden fruit effect?",
+      "prompt": "What would companies receive in exchange for supporting the program?",
       "options": [
-        "A government study on screen time",
-        "Personal experience with teenagers at home",
-        "Schools that blocked social media found students spent more time online on weekends",
-        "Research from Diane's own institution"
+        "University branding",
+        "Free equipment",
+        "Access to graduates for recruitment",
+        "Research funding"
       ],
-      "correctAnswer": "Schools that blocked social media found students spent more time online on weekends",
-      "explanation": "Tom says schools that blocked social media found students spent even more time online on weekends.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Access to graduates for recruitment",
+      "explanation": "Companies want access to graduates for recruitment in exchange for contributions.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-030-q31",
       "audioScriptId": "celpip-listening-030-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What specific group does Diane say is most affected by heavy social media use?",
+      "prompt": "Why is Malik interested in supporting the program expansion?",
       "options": [
-        "Boys aged ten to twelve",
-        "All teenagers equally",
-        "Girls in particular",
-        "Teenagers in rural areas"
+        "To get easier courses",
+        "To increase tuition fees",
+        "To support classmates interested in sustainability",
+        "To improve campus facilities"
       ],
-      "correctAnswer": "Girls in particular",
-      "explanation": "Diane says anxiety and depression are particularly high for girls.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "To support classmates interested in sustainability",
+      "explanation": "Many classmates are interested in sustainability and green technology, which the program would support.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-030-q32",
       "audioScriptId": "celpip-listening-030-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's summary at the end?",
+      "prompt": "What specific position does Professor Elena hold on the expansion?",
       "options": [
-        "Both guests fully agree",
-        "The debate is too political to resolve",
-        "There is agreement on education but a divide on restrictions",
-        "Tom has made the stronger argument"
+        "She opposes it",
+        "She strongly supports it",
+        "She wants to wait",
+        "She's uncertain"
       ],
-      "correctAnswer": "There is agreement on education but a divide on restrictions",
-      "explanation": "The host summarises that there is agreement on education but a real divide on restrictions.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "She strongly supports it",
+      "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-030-q33",
       "audioScriptId": "celpip-listening-030-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker argue is wrong with current government investment patterns?",
+      "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "Too much money is spent on small towns",
-        "Investment flows mainly to cities, creating inequality",
-        "Rural communities refuse investment",
-        "Cities need more hospitals"
+        "Mental health is covered more than physical",
+        "Physical health is covered more than mental health",
+        "They're equally covered",
+        "Neither is adequately covered"
       ],
-      "correctAnswer": "Investment flows mainly to cities, creating inequality",
-      "explanation": "The speaker says investment has predominantly flowed toward major cities, creating a divide.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Physical health is covered more than mental health",
+      "explanation": "The speaker states mental health is covered at lower rates than physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-030-q34",
       "audioScriptId": "celpip-listening-030-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health problem does the speaker connect to rural under-investment?",
+      "prompt": "What example does the speaker use to illustrate the disparity?",
       "options": [
-        "Higher rates of heart disease",
-        "More road accidents",
-        "Higher rates of late-stage cancer diagnoses",
-        "Fewer vaccinations"
+        "Cancer treatment vs. therapy",
+        "Broken arm coverage vs. limited mental health sessions",
+        "Hospital stays vs. doctor visits",
+        "Prescription drugs vs. counseling"
       ],
-      "correctAnswer": "Higher rates of late-stage cancer diagnoses",
-      "explanation": "The speaker says rural residents have higher rates of late-stage cancer because early detection services are not available locally.",
-      "difficulty": "easy",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Broken arm coverage vs. limited mental health sessions",
+      "explanation": "The speaker uses physical therapy for broken arms compared to limited therapy sessions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-030-q35",
       "audioScriptId": "celpip-listening-030-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What pattern in education does the speaker describe?",
+      "prompt": "What is the annual economic cost of mental health issues in Canada?",
       "options": [
-        "Rural schools are better funded than urban ones",
-        "Talented young people leave small towns and rarely return",
-        "Rural students prefer online learning",
-        "Urban students move to rural areas for university"
+        "25 billion dollars",
+        "38 billion dollars",
+        "51 billion dollars",
+        "67 billion dollars"
       ],
-      "correctAnswer": "Talented young people leave small towns and rarely return",
-      "explanation": "The speaker says talented young people leave for cities and rarely return.",
+      "correctAnswer": "51 billion dollars",
+      "explanation": "Mental health issues cost 51 billion dollars annually in Canada.",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-030-q36",
       "audioScriptId": "celpip-listening-030-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How does the speaker respond to critics who say rural investment costs too much per person?",
+      "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "By agreeing and suggesting cuts",
-        "By calling it a reason for smarter targeted investment",
-        "By dismissing the economic argument entirely",
-        "By citing statistics on rural GDP"
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations",
+        "Medication costs",
+        "Administrative expenses"
       ],
-      "correctAnswer": "By calling it a reason for smarter targeted investment",
-      "explanation": "The speaker says the cost argument is flawed and is actually an argument for smarter, targeted investment.",
+      "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
+      "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
       "difficulty": "medium",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-030-q37",
       "audioScriptId": "celpip-listening-030-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker say should not determine the quality of opportunity a person has?",
+      "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "Their family income",
-        "Their level of education",
-        "The postal code where they were born",
-        "Their language ability"
+        "It's cheaper than physical health",
+        "Early treatment has positive ROI",
+        "It reduces insurance profits",
+        "It's cost-neutral"
       ],
-      "correctAnswer": "The postal code where they were born",
-      "explanation": "The speaker says the postal code where someone is born should not determine their opportunities.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Early treatment has positive ROI",
+      "explanation": "The speaker argues mental health coverage has a positive return on investment.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-030-q38",
       "audioScriptId": "celpip-listening-030-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall tone?",
+      "prompt": "What does the speaker advocate companies implement?",
       "options": [
-        "Nostalgic and sentimental",
-        "Objective and neutral",
-        "Persuasive and advocacy-driven",
-        "Pessimistic and resigned"
+        "Lower coverage for mental health",
+        "Mandatory parity in coverage",
+        "Removal of all limits",
+        "Voluntary coverage only"
       ],
-      "correctAnswer": "Persuasive and advocacy-driven",
-      "explanation": "The speaker argues a clear position and calls for change based on principles of equity.",
-      "difficulty": "hard",
-      "topic": "seasonal changes and adapting to Canadian climate"
+      "correctAnswer": "Mandatory parity in coverage",
+      "explanation": "The speaker advocates for mandatory parity—equal coverage for mental and physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     }
   ]
 }

@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 34",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 34",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-034-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Using public libraries",
-      "script": "A librarian explains the services available at the public library to a new library card holder. Services include e-book lending, computer access, English conversation circles, and a job search assistance programme.",
+      "title": "Restaurant Reservation Issue",
+      "text": "Diner: Hi, I made a reservation for tonight at 7 PM under the name Anderson, and I just realized the name is spelled wrong in your system. Manager: Oh no, I'm sorry about that. Let me look that up. How is it spelled? Diner: A-N-D-E-R-S-O-N. I don't know how it got misspelled. Manager: I see it here as A-N-D-E-R-S-E-N. That's an easy mix-up. When you arrive, just let the host know and we'll get you seated right away. Diner: Actually, I'm calling because I need to change the time. Can I do 7:30 instead? Manager: Absolutely. Let me adjust that for you. How many people? Diner: Six of us. Manager: Perfect. I've moved you from 7 PM to 7:30 PM for six people, and I've corrected the name spelling. Is there anything else? Diner: Yes, one more thing. Can you make sure we have a quiet table? There are some business matters we want to discuss. Manager: I'll add a note to your reservation requesting a quieter area away from the bar. We have some nice tables by the window. Diner: That sounds great. What's your cancellation policy? Manager: We require 24 hours notice for cancellations. If you need to cancel, just call us before 7:30 PM tomorrow. Diner: Got it. Thank you.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-034-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about climate adaptation measures in coastal cities",
-      "script": "This news is about climate adaptation measures in coastal cities. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Roommate Household Discussion",
+      "text": "Alex: Hey, we need to talk about the dishes piling up in the sink. Jamie: Yeah, I know. I've been really busy with work this week. Alex: I get that, but it's been sitting there for three days. Jamie: I'm sorry, I'll do them tonight. Alex: Thanks. Also, we need to talk about the grocery situation. Jamie: What do you mean? Alex: I've been buying most of the groceries, and we're not splitting the cost fairly. Jamie: You're right. How do you want to handle it? Alex: We could split everything equally, or we could each buy our own stuff separately. Jamie: I think splitting equally makes more sense. We can keep a shared list. Alex: Great. One more thing—the internet bill is due next week. It's $75 this month. Jamie: That's higher than last month. Alex: Yeah, they increased the plan by five dollars. Jamie: Okay, so $37.50 each? Alex: Exactly. I'll send you a reminder.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-034-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about climate adaptation measures in coastal cities",
-      "script": "This discussion is about climate adaptation measures in coastal cities. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "Hospital Visitor Guidelines",
+      "text": "Welcome to City Hospital. We're glad you're visiting someone here. Please review our visitor guidelines for patient safety and comfort. Visiting hours are 10 AM to 8 PM daily. Each patient can have a maximum of two visitors at a time in their room. This ensures proper rest and medical care. Children under twelve must be accompanied by an adult. We restrict visits from children with colds or contagious illnesses. Visitors should wash their hands upon arrival and before leaving. Hand-sanitizer stations are located throughout the facility. Quiet voices are required in patient rooms and hallways. Please avoid using cell phones in patient areas. Photography is not permitted without the patient's written consent. Flowers and plants are welcome, but balloons are not allowed due to interference with medical equipment. Food brought from outside is permitted only if approved by nursing staff. Many patients have dietary restrictions. Visiting a patient receiving isolation care requires special precautions. Nursing staff will provide instructions. Do not disturb patients' medical equipment, monitors, or IV lines. Visitors with concerns should speak to staff at the nursing station. Parking is available in the north lot at five dollars per visit. An elevator is located near the main entrance for easy access.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-034-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about climate adaptation measures in coastal cities",
-      "script": "This announcement is about climate adaptation measures in coastal cities. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "Quebec Education Reform Approved",
+      "text": "The Quebec National Assembly has approved a major education reform bill with broad cross-party support. The legislation, Bill 247, focuses on modernizing curriculum standards and addressing teacher shortages. Under the new framework, high schools will introduce mandatory digital literacy courses starting next September. The reform also increases teacher salaries by 8 percent over four years to attract and retain educators. Currently, Quebec faces a shortage of approximately 3,500 teachers, particularly in mathematics, sciences, and French language instruction. The bill allocates 2.1 billion dollars for infrastructure improvements to school facilities. Education Minister Jean-François Roberge noted that 87 percent of school boards support the reforms. Parents will have increased choice in selecting specialized program options for their children. Pilot projects will begin in 15 schools across the province to test innovative teaching methods before full implementation in 2027.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-034-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about climate adaptation measures in coastal cities",
-      "script": "This office is about climate adaptation measures in coastal cities. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Local Food System Development",
+      "text": "Farmer Cooperative Director Maria: We're launching an initiative to build a more resilient local food system for our region. Currently, about 87 percent of our food is imported from outside the province. We want to increase local food production and support our farmers. We're proposing a farmers market expansion and direct-to-consumer delivery programs. The cooperative will help coordinate logistics and marketing.\n\nGrocery Store Manager Paul: I understand the value of local food, Maria, but I'm concerned about pricing and consistency. Local producers can't always compete with the prices we get from large distributors. And seasonality is an issue—in winter, local farmers have limited options. My customers expect year-round availability and competitive pricing.\n\nPublic Health Officer Dr. Sarah: Actually, Paul, local food systems have documented health benefits. Communities with stronger local food networks show 22 percent higher rates of fresh produce consumption. Plus, reducing transportation distance improves food safety and nutrition because products reach consumers fresher. And we should consider the long-term economic impact. Local spending circulates within the community.\n\nSmall Farm Owner James: I'd love to participate in this initiative. Currently, I sell about 40 percent of my production to the farmers market, but I'd like to do more direct sales. The issue is I don't have the infrastructure for packaging and distribution. If the cooperative could help with that, I could increase production by 60 percent.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-034-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about climate adaptation measures in coastal cities",
-      "script": "This lecture is about climate adaptation measures in coastal cities. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Algorithmic Bias in Hiring Systems",
+      "text": "Algorithmic bias in hiring is a serious problem that companies are using as a shortcut without taking responsibility for the consequences. Many organizations now use AI systems to screen resumes, assess candidate fit, and predict job performance. These systems seem objective—they're just mathematics, right? Wrong. These algorithms are trained on historical data, which includes decades of human bias. If women were historically excluded from leadership positions, the algorithm learns that pattern and replicates it. If certain demographics were underrepresented in technical roles, the algorithm reinforces that exclusion. Studies have documented this repeatedly. Amazon famously scrapped their hiring algorithm when they discovered it was discriminating against women. Google's recruiting algorithm showed bias against applicants from historically black colleges. These weren't intentional—that's precisely the problem. The systems' creators didn't set out to discriminate; they just trusted that math was unbiased, when in reality, data is never neutral. My argument is this: companies should not deploy algorithmic hiring systems without rigorous bias testing and external auditing. If you use an algorithm to screen candidates, you're making a business decision, and you're responsible for its outcomes. You can't hide behind the algorithm or claim you didn't know it was biased. Moreover, algorithms eliminate human judgment, nuance, and chance. They can't capture potential, resilience, or growth. Some of the most successful employees wouldn't have passed an algorithm. We need a return to more human-centered hiring while using algorithms cautiously and with oversight.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-034-q01",
+      "audioScriptId": "celpip-listening-034-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-034-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "What is the customer's correct last name spelling?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "A-N-D-E-R-S-E-N",
+        "A-N-D-E-R-S-O-N",
+        "A-N-D-R-E-S-O-N",
+        "A-N-D-E-R-T-O-N"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "using public libraries"
+      "correctAnswer": "A-N-D-E-R-S-O-N",
+      "explanation": "Diner specifies the correct spelling as 'A-N-D-E-R-S-O-N.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-034-q02",
+      "audioScriptId": "celpip-listening-034-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-034-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "What was the original reservation time?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "6:30 PM",
+        "7:00 PM",
+        "7:15 PM",
+        "8:00 PM"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "using public libraries"
+      "correctAnswer": "7:00 PM",
+      "explanation": "Diner states 'I made a reservation for tonight at 7 PM.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-034-q03",
+      "audioScriptId": "celpip-listening-034-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-034-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "What is the new reservation time?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "7:00 PM",
+        "7:15 PM",
+        "7:30 PM",
+        "8:00 PM"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "using public libraries"
+      "correctAnswer": "7:30 PM",
+      "explanation": "Diner requests and manager confirms changing to '7:30 PM.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-034-q04",
+      "audioScriptId": "celpip-listening-034-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-034-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "How many people are in the party?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "Four",
+        "Five",
+        "Six",
+        "Seven"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "Six",
+      "explanation": "Diner states 'Six of us' in response to the manager's question about party size.",
       "difficulty": "medium",
-      "topic": "using public libraries"
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-034-q05",
+      "audioScriptId": "celpip-listening-034-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-034-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "How was the customer's name misspelled in the system?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "A-N-D-E-R-S-E-N",
+        "A-N-D-E-R-S-A-N",
+        "A-N-D-E-R-T-O-N",
+        "A-N-D-R-E-S-O-N"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "A-N-D-E-R-S-E-N",
+      "explanation": "Manager states the name appeared as 'A-N-D-E-R-S-E-N' in the system.",
       "difficulty": "medium",
-      "topic": "using public libraries"
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-034-q06",
+      "audioScriptId": "celpip-listening-034-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-034-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "What special seating request did the customer make?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "Near the kitchen",
+        "By the bar",
+        "A quiet area away from the bar",
+        "Close to the entrance"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "A quiet area away from the bar",
+      "explanation": "Diner requests 'a quiet table' and manager notes 'a quieter area away from the bar.'",
       "difficulty": "medium",
-      "topic": "using public libraries"
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-034-q07",
+      "audioScriptId": "celpip-listening-034-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-034-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "Where will the quiet table be located?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "Near the kitchen",
+        "By the bar",
+        "By the window",
+        "At the entrance"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "using public libraries"
+      "correctAnswer": "By the window",
+      "explanation": "Manager states 'We have some nice tables by the window.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-034-q08",
+      "audioScriptId": "celpip-listening-034-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-034-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "What is the restaurant's cancellation policy?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "6 hours notice required",
+        "12 hours notice required",
+        "24 hours notice required",
+        "48 hours notice required"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "using public libraries"
+      "correctAnswer": "24 hours notice required",
+      "explanation": "Manager states 'We require 24 hours notice for cancellations.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-034-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-034-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-034-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "How long have the dishes been in the sink?",
+      "options": [
+        "One day",
+        "Two days",
+        "Three days",
+        "Four days"
+      ],
+      "correctAnswer": "Three days",
+      "explanation": "Alex states 'it's been sitting there for three days.'",
       "difficulty": "medium",
-      "topic": "using public libraries"
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-034-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-034-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-034-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "Why has Jamie been unable to do the dishes?",
+      "options": [
+        "They've been out of town",
+        "They've been really busy with work",
+        "They haven't been feeling well",
+        "They forgot"
+      ],
+      "correctAnswer": "They've been really busy with work",
+      "explanation": "Jamie says 'I've been really busy with work this week.'",
       "difficulty": "medium",
-      "topic": "using public libraries"
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-034-q11",
+      "audioScriptId": "celpip-listening-034-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-034-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "What grocery solution do they agree on?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "Alex will buy all groceries",
+        "Jamie will buy all groceries",
+        "They'll split everything equally",
+        "They'll alternate who buys"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "They'll split everything equally",
+      "explanation": "Jamie agrees that splitting equally makes more sense for groceries.",
+      "difficulty": "medium",
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-034-q12",
+      "audioScriptId": "celpip-listening-034-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-034-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "How much is the internet bill this month?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "$65",
+        "$70",
+        "$75",
+        "$80"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "$75",
+      "explanation": "Alex states 'the internet bill is due next week. It's $75 this month.'",
+      "difficulty": "medium",
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-034-q13",
+      "audioScriptId": "celpip-listening-034-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-034-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "By how much did the internet bill increase?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "$3",
+        "$5",
+        "$10",
+        "$15"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "$5",
+      "explanation": "Alex explains 'they increased the plan by five dollars.'",
+      "difficulty": "medium",
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-034-q14",
+      "audioScriptId": "celpip-listening-034-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-034-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "What are the visiting hours?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "8 AM to 6 PM",
+        "9 AM to 7 PM",
+        "10 AM to 8 PM",
+        "11 AM to 9 PM"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "10 AM to 8 PM",
+      "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-034-q15",
+      "audioScriptId": "celpip-listening-034-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-034-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "How many visitors can be in a patient's room at one time?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "One",
+        "Two",
+        "Three",
+        "Four"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "Two",
+      "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-034-q16",
+      "audioScriptId": "celpip-listening-034-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-034-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "What is the minimum age for unaccompanied visits?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "Eight years old",
+        "Ten years old",
+        "Twelve years old",
+        "Fourteen years old"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "Twelve years old",
+      "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-034-q17",
+      "audioScriptId": "celpip-listening-034-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-034-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "Are balloons allowed in patient rooms?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "Yes",
+        "Yes, with restrictions",
+        "No",
+        "Only on special occasions"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "No",
+      "explanation": "The guide states 'balloons are not allowed due to interference with medical equipment.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-034-q18",
+      "audioScriptId": "celpip-listening-034-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-034-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "What is the parking fee per visit?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "$2",
+        "$3",
+        "$4",
+        "$5"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "$5",
+      "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-034-q19",
+      "audioScriptId": "celpip-listening-034-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-034-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "The visitor",
+        "The patient",
+        "The nursing staff",
+        "The hospital administrator"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "The nursing staff",
+      "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-034-q20",
+      "audioScriptId": "celpip-listening-034-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-034-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "What is the bill number for the education reform?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "Bill 235",
+        "Bill 247",
+        "Bill 250",
+        "Bill 260"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "Bill 247",
+      "explanation": "The legislation is identified as Bill 247.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-034-q21",
+      "audioScriptId": "celpip-listening-034-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-034-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "When will mandatory digital literacy courses begin?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "This year",
+        "Next September",
+        "January 2027",
+        "September 2027"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "Next September",
+      "explanation": "High schools will introduce mandatory digital literacy courses starting next September.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-034-q22",
+      "audioScriptId": "celpip-listening-034-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-034-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "By what percentage are teacher salaries being increased?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "5 percent",
+        "6 percent",
+        "8 percent",
+        "10 percent"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "8 percent",
+      "explanation": "Teacher salaries will be increased by 8 percent over four years.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-034-q23",
+      "audioScriptId": "celpip-listening-034-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-034-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "Approximately how many teachers does Quebec currently lack?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "2,500 teachers",
+        "3,000 teachers",
+        "3,500 teachers",
+        "4,000 teachers"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "3,500 teachers",
+      "explanation": "Quebec currently faces a shortage of approximately 3,500 teachers.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-034-q24",
+      "audioScriptId": "celpip-listening-034-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-034-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "How much money is allocated for infrastructure improvements?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "1.5 billion dollars",
+        "1.8 billion dollars",
+        "2.1 billion dollars",
+        "2.5 billion dollars"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "2.1 billion dollars",
+      "explanation": "The bill allocates 2.1 billion dollars for infrastructure improvements.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-034-q25",
+      "audioScriptId": "celpip-listening-034-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-034-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "What percentage of food is currently imported from outside the province?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "75 percent",
+        "80 percent",
+        "85 percent",
+        "87 percent"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "87 percent",
+      "explanation": "Maria states about 87 percent of food is imported from outside the province.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-034-q26",
+      "audioScriptId": "celpip-listening-034-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-034-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "Grocery stores and restaurants",
+        "Farmers market and delivery programs",
+        "Government subsidies",
+        "Large distribution centers"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "Farmers market and delivery programs",
+      "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-034-q27",
+      "audioScriptId": "celpip-listening-034-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-034-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What is Paul's primary concern about local food?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "Product quality",
+        "Pricing and consistency",
+        "Customer demand",
+        "Storage requirements"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "Pricing and consistency",
+      "explanation": "Paul is concerned local producers can't compete on price and have seasonal limitations.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-034-q28",
+      "audioScriptId": "celpip-listening-034-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-034-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "According to Dr. Sarah, what percentage increase in fresh produce consumption is shown?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "15 percent",
+        "20 percent",
+        "22 percent",
+        "25 percent"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "22 percent",
+      "explanation": "Communities with stronger local food networks show 22 percent higher fresh produce consumption.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-034-q29",
+      "audioScriptId": "celpip-listening-034-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-034-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "Lower cost",
+        "Improved freshness and food safety",
+        "More variety",
+        "Better storage"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "Improved freshness and food safety",
+      "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-034-q30",
+      "audioScriptId": "celpip-listening-034-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-034-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "25 percent",
+        "35 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "40 percent",
+      "explanation": "James currently sells about 40 percent of production to the farmers market.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-034-q31",
+      "audioScriptId": "celpip-listening-034-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-034-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "Limited land",
+        "Transportation issues",
+        "Packaging and distribution",
+        "Workforce availability"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "Packaging and distribution",
+      "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-034-q32",
+      "audioScriptId": "celpip-listening-034-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-034-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "By what percentage could James increase production if he had distribution support?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "40 percent",
+        "50 percent",
+        "60 percent",
+        "70 percent"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "60 percent",
+      "explanation": "James states he could increase production by 60 percent with distribution support.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-034-q33",
+      "audioScriptId": "celpip-listening-034-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-034-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "They're not programmed correctly",
+        "They're trained on historical data that includes human bias",
+        "They lack computing power",
+        "They're intentionally designed to discriminate"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "They're trained on historical data that includes human bias",
+      "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-034-q34",
+      "audioScriptId": "celpip-listening-034-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-034-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "What did Amazon discover about their hiring algorithm?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "It was too slow",
+        "It was discriminating against women",
+        "It was too expensive",
+        "It wasn't identifying qualified candidates"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "It was discriminating against women",
+      "explanation": "Amazon discovered their algorithm was discriminating against women and scrapped it.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-034-q35",
+      "audioScriptId": "celpip-listening-034-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-034-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "It was too strict",
+        "It showed bias against applicants from historically black colleges",
+        "It wasn't identifying talent",
+        "It was too expensive"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "It showed bias against applicants from historically black colleges",
+      "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-034-q36",
+      "audioScriptId": "celpip-listening-034-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-034-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "Data is always objective",
+        "Data is never neutral and includes bias",
+        "Data should never be used in hiring",
+        "Data is a recent invention"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "Data is never neutral and includes bias",
+      "explanation": "The speaker argues data is never neutral and carries historical bias.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-034-q37",
+      "audioScriptId": "celpip-listening-034-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-034-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "Use them immediately",
+        "Train employees on algorithms",
+        "Conduct rigorous bias testing and external auditing",
+        "Ignore algorithm concerns"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
+      "correctAnswer": "Conduct rigorous bias testing and external auditing",
+      "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-034-q38",
+      "audioScriptId": "celpip-listening-034-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-034-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What human qualities does the speaker claim algorithms can't capture?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "Education level",
+        "Potential, resilience, and growth",
+        "Work experience",
+        "Technical skills"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about climate adaptation measures in coastal cities.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "Potential, resilience, and growth",
+      "explanation": "Algorithms can't capture potential, resilience, or the capacity for growth.",
+      "difficulty": "medium",
+      "topic": "Technology"
     }
   ]
 }

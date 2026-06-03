@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 18",
+  "title": "CELPIP General Listening — Practice Test 18",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-018-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Reporting a Water Leak in an Apartment",
-      "text": "Resident: Hello, I need to report a water leak. It started this morning under my kitchen sink. There's water pooling on the floor.\nSuperintendent: I'll send someone right away. Can you confirm your unit number?\nResident: It's unit 4B on the fourth floor.\nSuperintendent: Got it. And is the leak a slow drip or is it flowing steadily?\nResident: It's a steady drip. I've put a bucket under it, but it's filling up about every two hours.\nSuperintendent: That sounds like a loose connection on the supply line. The plumber we use is available this afternoon. Would two o'clock work for you?\nResident: Yes, that's fine. Do I need to be home?\nSuperintendent: Yes, please be there so the plumber can access the cabinet under the sink. Also, to be safe, turn off the shut-off valve under the sink — there's usually a small handle on the left pipe.\nResident: I found it and turned it off. The dripping has stopped for now.\nSuperintendent: Perfect. That confirms the problem is with the supply line, not the drain. The plumber will replace the fitting. It should take under an hour.",
+      "title": "Bank Account Fraud Alert",
+      "text": "Customer: Hi, I'm calling about suspicious transactions on my account. Bank Officer: I'm sorry to hear that. I'm here to help. Can I have your account number? Customer: It's 5834-291-7465. Over the last three days, I've noticed four withdrawals totaling $1,800 that I didn't make. Officer: Let me pull that up. What are the dates of these transactions? Customer: June 1st, 2nd, 3rd, and today, June 4th. Each one is $450. Officer: I see them all here. These are ATM withdrawals, all from a machine on Bloor Street in Toronto. Are you in Toronto? Customer: No, I'm in Montreal. I haven't been to Toronto in months. Officer: That's definitely suspicious. I'm going to freeze your account immediately to prevent further unauthorized transactions. Customer: What about the money that's already been withdrawn? Officer: We'll file a fraud claim. You're not responsible for unauthorized transactions under the bank's protection policy. You should see a credit back within 5 to 7 business days. Customer: Good. What should I do next? Officer: We'll mail you a new debit card as a precaution, but don't worry about the PIN. I'm also recommending you change your online banking password right away. We'll monitor your account closely. Customer: Should I change my passwords for other accounts too? Officer: That's a wise precaution. Since someone had your card number, they might try other services. Better safe than sorry.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-018-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Choosing Between Two Job Offers",
-      "text": "Priya: I'm in a tough spot. I got two job offers this week and I have until Friday to decide.\nKevin: That's a great problem to have! What are the offers?\nPriya: One is a junior marketing role at a tech startup. Good salary, lots of creative freedom, but the company is only two years old and a bit risky. The other is a coordinator position at a non-profit — lower salary, but excellent benefits and a guaranteed pension.\nKevin: What matters more to you right now — financial security or career growth?\nPriya: Honestly, both. I have student loans to pay off, but I also don't want to be stuck in a job that goes nowhere.\nKevin: Could the non-profit lead to advancement?\nPriya: They mentioned there's a senior coordinator role that opens up every couple of years. But at the startup, if it takes off, the growth potential is huge.\nKevin: Have you factored in the commute?\nPriya: Good point — the startup is downtown, forty-five minutes each way on transit. The non-profit is ten minutes from my apartment.\nKevin: That's two hours a day you'd get back with the non-profit. That's not nothing.",
+      "title": "Roommate Household Discussion",
+      "text": "Alex: Hey, we need to talk about the dishes piling up in the sink. Jamie: Yeah, I know. I've been really busy with work this week. Alex: I get that, but it's been sitting there for three days. Jamie: I'm sorry, I'll do them tonight. Alex: Thanks. Also, we need to talk about the grocery situation. Jamie: What do you mean? Alex: I've been buying most of the groceries, and we're not splitting the cost fairly. Jamie: You're right. How do you want to handle it? Alex: We could split everything equally, or we could each buy our own stuff separately. Jamie: I think splitting equally makes more sense. We can keep a shared list. Alex: Great. One more thing—the internet bill is due next week. It's $75 this month. Jamie: That's higher than last month. Alex: Yeah, they increased the plan by five dollars. Jamie: Okay, so $37.50 each? Alex: Exactly. I'll send you a reminder.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-018-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "How to Use the Provincial Health Insurance System",
-      "text": "Welcome to this information session on using the provincial health insurance system. If you are a permanent resident or Canadian citizen living in this province, you are entitled to a provincial health card, which covers the cost of most medically necessary services.\n\nTo obtain your health card, visit a ServiceOntario or equivalent provincial office with two pieces of identification — one must be a government-issued photo ID, such as a passport or permanent resident card, and one must show your current address, such as a utility bill or bank statement. New applicants typically wait a three-month period before coverage begins, so it is important to apply as soon as possible after arriving.\n\nYour health card covers visits to a family doctor, specialist consultations when referred by your doctor, emergency room visits, hospital stays, and diagnostic tests including X-rays and blood work. It does not automatically cover prescription drugs, dental care, or vision care, which are typically covered through separate private insurance plans or provincial drug benefit programmes for qualifying residents.\n\nIf you do not have a family doctor, you can register with the Health Care Connect programme, which matches patients to available physicians. In the meantime, walk-in clinics and urgent care centres can treat most non-emergency conditions and are also covered by your health card.\n\nAlways carry your health card when attending medical appointments, and report any change of address to the provincial health authority to ensure your records are current.",
+      "title": "Travel Insurance Information Session",
+      "text": "Welcome to our travel insurance information session. Today, I'll explain the coverage options available through our travel agency. We offer three plans: Basic, Standard, and Premium. The Basic plan covers medical emergencies, emergency dental, and evacuation. Cost is seventy-five dollars for two weeks. The Standard plan includes everything in Basic plus trip cancellation coverage, lost luggage reimbursement up to one thousand dollars, and travel delays over twelve hours. Cost is one hundred twenty dollars for two weeks. The Premium plan is our comprehensive option. It adds accidental death coverage, zero deductible for medical claims, and upgrade to two thousand five hundred dollars for lost luggage. Premium costs two hundred twenty dollars for two weeks. All plans exclude claims related to alcohol impairment or pre-existing medical conditions not disclosed. Coverage begins on your departure date and ends upon return. Claims must be filed within ninety days of the incident. You'll receive a confirmation email with your policy documents. For claims, call our toll-free number at 1-800-555-0147. Representatives are available 24/7. Questions about coverage should be directed to our customer service team. Purchase your policy at least seven days before travel.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-018-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: Province Launches New Childcare Subsidy Programme",
-      "text": "The provincial government announced a new childcare subsidy programme this morning, aimed at reducing childcare costs for families earning below ninety thousand dollars per year. Under the new programme, eligible families will pay no more than ten dollars per day for regulated childcare, beginning on the first of next month.\n\nThe Minister of Families said the programme is expected to benefit approximately forty thousand children across the province in its first year. Priority access will be given to families with children under the age of six, as well as families currently on waitlists at participating childcare centres.\n\nTo apply, parents must submit an application through the provincial government's online portal and provide proof of income from the previous tax year. Applications will be processed within fifteen business days, and approved families will be notified by email.\n\nChild-care providers interested in joining the programme must sign a participation agreement and comply with the province's staffing and curriculum standards. The government said that over three hundred licenced providers have already registered ahead of the launch.\n\nOpposition critics raised concerns that the programme does not extend to informal care arrangements, such as home-based care providers who are not licenced. The government indicated it plans to expand eligibility in future years.",
+      "title": "Alberta Heritage Museum Expansion",
+      "text": "The Alberta Heritage Museum is embarking on a 95 million dollar expansion project that will double its exhibition space. The project, spanning five years, will create new galleries dedicated to Indigenous history, early settlement, and contemporary Alberta culture. Museum Director Patricia Wong announced that the expansion will feature interactive exhibits and state-of-the-art multimedia installations. The project will generate approximately 600 construction jobs over the expansion period. Funding comes from government grants, private donations, and corporate sponsorships. The museum currently attracts 480,000 visitors annually, and officials project this will increase by 45 percent following the expansion. A new 2,000-square-meter research and conservation facility will support artifact preservation. Four new galleries will be built, including a dedicated space for rotating temporary exhibitions. Community consultation has identified strong public support, with 78 percent of surveyed Albertans favoring the project. The expansion is scheduled to be completed by 2031.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-018-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Is Social Media Good or Bad for Teenagers?",
-      "text": "Host: Today's discussion focuses on social media and its impact on teenagers. With me are two commentators: Diane, a child development researcher, and Tom, who advocates for digital literacy education. Diane, let's start with you — is social media harmful to teenagers?\nDiane: The research is quite clear that heavy social media use is associated with higher rates of anxiety, depression, and sleep disruption in teenagers, particularly for girls. The problem isn't the technology itself — it's the design. Platforms are deliberately built to maximise engagement, which means maximising the time young people spend comparing themselves to others.\nHost: Tom, do you think the solution is restricting access?\nTom: I strongly disagree with blanket restrictions. The answer is education. We need to teach teenagers to be critical consumers of digital content — how algorithms work, how images are edited, what business models drive these platforms. Banning access doesn't develop those skills; it just delays the problem.\nHost: Diane, what do you say to that?\nDiane: I agree that education is necessary, but it is not sufficient on its own. A thirteen-year-old is neurologically not equipped to resist the deliberate manipulation that these platforms apply. We need age-appropriate restrictions alongside digital literacy — not instead of it.\nHost: Tom, any response?\nTom: The issue is that restriction without education creates what I call the forbidden fruit effect — the moment restrictions are lifted, young people binge. I've seen this in schools that blocked social media completely and then found students spending even more time online at weekends to compensate.\nHost: Thank you both. It seems there is agreement on the need for education, but a real divide on the role of restrictions.",
+      "title": "Community Center Renovation Project",
+      "text": "Recreation Director Karen: We're finally moving forward with the community center renovation that was approved last year. The project is budgeted at 6.8 million dollars and should take about 18 months to complete. We plan to add a new fitness center, upgrade the swimming pool, and create additional youth programming spaces. This will significantly improve our facilities.\n\nCommunity Member Robert: I'm glad to see this moving forward, Karen, but I'm concerned about one thing. During the construction, the center will be partially closed. My kids attend after-school programs here, and I'm worried about where they'll go during the renovation period. Many families in our community rely on these programs for childcare.\n\nOperations Manager Susan: That's a valid concern, Robert. We've actually planned for this. We'll maintain the community room and outdoor spaces throughout the project. We can relocate the after-school programs there during construction, though it will be more crowded. We're also negotiating with the school district to potentially use school facilities as a backup location for some activities.\n\nYouth Program Coordinator Jason: I'm excited about the upgrades, especially the new youth spaces. But Susan, we need to be realistic about the outdoor space. We currently use it for sports and recreation. If we're moving programs there, we'll have limited room for physical activities. Could we consider using a local park for some outdoor programming during construction?",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-018-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: Why Small Towns Deserve More Investment",
-      "text": "For decades, government investment in infrastructure, healthcare, and education has flowed predominantly toward major cities. This concentration of resources has created a growing divide between the opportunities available to people in urban centres and those living in smaller towns and rural communities. I believe this imbalance is not only unfair but economically short-sighted.\n\nConsider healthcare. In most Canadian cities, residents have access to walk-in clinics, specialist hospitals, and urgent care centres within a reasonable distance. In small towns, the nearest hospital may be an hour's drive away. Rural residents have higher rates of late-stage cancer diagnoses precisely because early detection requires access to diagnostic services that simply are not available locally.\n\nEducation tells a similar story. Urban schools are often better funded, have access to more experienced teachers, and offer a wider range of programmes and extracurricular activities. Rural students frequently travel long distances to school and have fewer post-secondary options nearby. This creates a pattern in which talented young people leave their home communities for cities — and rarely return.\n\nCritics of increased rural investment argue that the cost per person is too high. This logic is flawed. The cost of maintaining a dispersed population is not a reason to abandon it — it is an argument for smarter, targeted investment in sustainable local infrastructure.\n\nIf we are serious about equality of opportunity, the postal code where someone is born should not determine the quality of healthcare, education, or economic opportunity available to them. Small towns and rural communities deserve better — not out of sentiment, but out of a genuine commitment to a more equitable society.",
+      "title": "Climate Migration and Urban Planning",
+      "text": "Climate change is already forcing large-scale human migration, and we need to prepare for it now. Rising sea levels, extreme weather, and changing precipitation patterns are making entire regions uninhabitable. We're not just talking about future problems—this is happening today. Small island nations are literally disappearing. Coastal cities are experiencing increased flooding. Agricultural regions are becoming deserts. Where will these people go? History shows us that unplanned migration creates chaos: overcrowded cities, slums, resource conflicts, and instability. I believe cities and countries need to proactively plan for climate migration. This means developing infrastructure and housing in climate-resilient areas, creating economic opportunities for migrants, and managing population flows thoughtfully. Canada and the northern regions of other countries will likely become more desirable as climate conditions shift. Rather than letting this happen chaotically, we should be designing inclusive urban expansion, building climate-resilient communities, and preparing labor markets for population shifts. Some people see climate migration as a negative, but it's inevitable. The real question is whether we manage it responsibly or let it cause humanitarian crises. I'm advocating for proactive planning now. We should be expanding housing, infrastructure, and economic capacity in climate-safe regions. We should also help other countries adapt in place where possible. But denying this reality and refusing to plan is irresponsible.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-018-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What is the problem the resident is reporting?",
+      "prompt": "What is the customer's account number?",
       "options": [
-        "A broken window",
-        "A water leak under the kitchen sink",
-        "A faulty heating system",
-        "A blocked toilet"
+        "5834-291-7456",
+        "5834-291-7465",
+        "5834-192-7465",
+        "5843-291-7465"
       ],
-      "correctAnswer": "A water leak under the kitchen sink",
-      "explanation": "The resident calls to report water pooling under the kitchen sink.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "5834-291-7465",
+      "explanation": "Customer provides their account number as '5834-291-7465.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-018-q02",
       "audioScriptId": "celpip-listening-018-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How fast is the bucket filling up?",
+      "prompt": "How much money was withdrawn in total?",
       "options": [
-        "Every thirty minutes",
-        "Every hour",
-        "Every two hours",
-        "Every day"
+        "$900",
+        "$1,200",
+        "$1,500",
+        "$1,800"
       ],
-      "correctAnswer": "Every two hours",
-      "explanation": "The resident says the bucket fills up about every two hours.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "$1,800",
+      "explanation": "Customer states there are 'four withdrawals totaling $1,800.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-018-q03",
       "audioScriptId": "celpip-listening-018-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent suspect the problem is?",
+      "prompt": "How much was each withdrawal?",
       "options": [
-        "A cracked drain pipe",
-        "A loose connection on the supply line",
-        "A broken water heater",
-        "A faulty pressure valve"
+        "$300",
+        "$400",
+        "$450",
+        "$500"
       ],
-      "correctAnswer": "A loose connection on the supply line",
-      "explanation": "The superintendent says it sounds like a loose connection on the supply line.",
+      "correctAnswer": "$450",
+      "explanation": "Customer states 'Each one is $450' for the four withdrawals.",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-018-q04",
       "audioScriptId": "celpip-listening-018-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "When is the plumber available?",
+      "prompt": "Where were the ATM withdrawals made?",
       "options": [
-        "This morning",
-        "Tomorrow morning",
-        "Two o'clock this afternoon",
-        "Next week"
+        "Montreal",
+        "Bloor Street in Toronto",
+        "Downtown Toronto",
+        "The airport"
       ],
-      "correctAnswer": "Two o'clock this afternoon",
-      "explanation": "The superintendent says the plumber is available at two o'clock this afternoon.",
+      "correctAnswer": "Bloor Street in Toronto",
+      "explanation": "Officer states 'These are ATM withdrawals, all from a machine on Bloor Street in Toronto.'",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-018-q05",
       "audioScriptId": "celpip-listening-018-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent ask the resident to do immediately?",
+      "prompt": "Where is the customer actually located?",
       "options": [
-        "Call a plumber directly",
-        "Leave the apartment",
-        "Turn off the shut-off valve",
-        "Open the windows"
+        "Toronto",
+        "Montreal",
+        "Ottawa",
+        "Vancouver"
       ],
-      "correctAnswer": "Turn off the shut-off valve",
-      "explanation": "The superintendent advises turning off the shut-off valve under the sink.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "Montreal",
+      "explanation": "Customer confirms 'No, I'm in Montreal. I haven't been to Toronto in months.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-018-q06",
       "audioScriptId": "celpip-listening-018-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the dripping stopping confirm?",
+      "prompt": "How long will it take to see the credit for the unauthorized transactions?",
       "options": [
-        "The drain is blocked",
-        "The pipe is cracked",
-        "The problem is with the supply line, not the drain",
-        "The water pressure is too high"
+        "1 to 2 business days",
+        "3 to 5 business days",
+        "5 to 7 business days",
+        "10 to 14 business days"
       ],
-      "correctAnswer": "The problem is with the supply line, not the drain",
-      "explanation": "The superintendent says this confirms the problem is with the supply line.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "5 to 7 business days",
+      "explanation": "Officer states 'You should see a credit back within 5 to 7 business days.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-018-q07",
       "audioScriptId": "celpip-listening-018-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long is the repair expected to take?",
+      "prompt": "What is being mailed to the customer?",
       "options": [
-        "Less than one hour",
-        "Two to three hours",
-        "All afternoon",
-        "Several days"
+        "A new PIN",
+        "A new debit card",
+        "Account statements",
+        "A fraud report"
       ],
-      "correctAnswer": "Less than one hour",
-      "explanation": "The superintendent says it should take under an hour.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "A new debit card",
+      "explanation": "Officer states 'We'll mail you a new debit card as a precaution.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-018-q08",
       "audioScriptId": "celpip-listening-018-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why does the resident need to be home for the repair?",
+      "prompt": "What immediate action is recommended for online banking?",
       "options": [
-        "To pay the plumber in cash",
-        "To sign a repair agreement",
-        "To give the plumber access to the cabinet",
-        "To watch the repair procedure"
+        "Contact the bank branch",
+        "Close the account",
+        "Change your online banking password right away",
+        "Disable online banking"
       ],
-      "correctAnswer": "To give the plumber access to the cabinet",
-      "explanation": "The superintendent says the plumber needs to access the cabinet under the sink.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "Change your online banking password right away",
+      "explanation": "Officer states 'I'm also recommending you change your online banking password right away.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-018-q09",
       "audioScriptId": "celpip-listening-018-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How many job offers has Priya received?",
+      "prompt": "How long have the dishes been in the sink?",
       "options": [
-        "One",
-        "Two",
-        "Three",
-        "Four"
+        "One day",
+        "Two days",
+        "Three days",
+        "Four days"
       ],
-      "correctAnswer": "Two",
-      "explanation": "Priya says she received two job offers this week.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "Three days",
+      "explanation": "Alex states 'it's been sitting there for three days.'",
+      "difficulty": "medium",
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-018-q10",
       "audioScriptId": "celpip-listening-018-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What concern does Priya have about the startup?",
+      "prompt": "Why has Jamie been unable to do the dishes?",
       "options": [
-        "The salary is too low",
-        "It is located too far away",
-        "It is only two years old and a bit risky",
-        "The role lacks creative freedom"
+        "They've been out of town",
+        "They've been really busy with work",
+        "They haven't been feeling well",
+        "They forgot"
       ],
-      "correctAnswer": "It is only two years old and a bit risky",
-      "explanation": "Priya says the startup is only two years old and a bit risky.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "They've been really busy with work",
+      "explanation": "Jamie says 'I've been really busy with work this week.'",
+      "difficulty": "medium",
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-018-q11",
       "audioScriptId": "celpip-listening-018-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What advantage does the non-profit offer over the startup?",
+      "prompt": "What grocery solution do they agree on?",
       "options": [
-        "Higher salary",
-        "More creative freedom",
-        "Better benefits and a pension",
-        "Faster career advancement"
+        "Alex will buy all groceries",
+        "Jamie will buy all groceries",
+        "They'll split everything equally",
+        "They'll alternate who buys"
       ],
-      "correctAnswer": "Better benefits and a pension",
-      "explanation": "Priya says the non-profit has excellent benefits and a guaranteed pension.",
+      "correctAnswer": "They'll split everything equally",
+      "explanation": "Jamie agrees that splitting equally makes more sense for groceries.",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-018-q12",
       "audioScriptId": "celpip-listening-018-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How long is the commute to the startup?",
+      "prompt": "How much is the internet bill this month?",
       "options": [
-        "Ten minutes",
-        "Twenty minutes",
-        "Forty-five minutes each way",
-        "Over an hour each way"
+        "$65",
+        "$70",
+        "$75",
+        "$80"
       ],
-      "correctAnswer": "Forty-five minutes each way",
-      "explanation": "Priya says the startup is forty-five minutes each way on transit.",
+      "correctAnswer": "$75",
+      "explanation": "Alex states 'the internet bill is due next week. It's $75 this month.'",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-018-q13",
       "audioScriptId": "celpip-listening-018-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Kevin point out about commuting time?",
+      "prompt": "By how much did the internet bill increase?",
       "options": [
-        "It adds to fitness levels",
-        "It is a chance to read",
-        "The non-profit saves her two hours a day",
-        "Transit fares are expensive"
+        "$3",
+        "$5",
+        "$10",
+        "$15"
       ],
-      "correctAnswer": "The non-profit saves her two hours a day",
-      "explanation": "Kevin says Priya would get back two hours a day by working closer to home.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "$5",
+      "explanation": "Alex explains 'they increased the plan by five dollars.'",
+      "difficulty": "medium",
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-018-q14",
       "audioScriptId": "celpip-listening-018-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is entitled to a provincial health card?",
+      "prompt": "How many travel insurance plans are offered?",
       "options": [
-        "Only Canadian citizens",
-        "Permanent residents and Canadian citizens",
-        "International students only",
-        "Anyone living in Canada"
+        "Two",
+        "Three",
+        "Four",
+        "Five"
       ],
-      "correctAnswer": "Permanent residents and Canadian citizens",
-      "explanation": "The speaker says permanent residents or Canadian citizens are entitled to a health card.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "Three",
+      "explanation": "The guide states 'We offer three plans: Basic, Standard, and Premium.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-018-q15",
       "audioScriptId": "celpip-listening-018-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is one document required to apply for a health card?",
+      "prompt": "What is the cost of the Basic plan for two weeks?",
       "options": [
-        "A letter from an employer",
-        "A government-issued photo ID",
-        "A birth certificate",
-        "A utility bill from a previous province"
+        "$50",
+        "$60",
+        "$75",
+        "$85"
       ],
-      "correctAnswer": "A government-issued photo ID",
-      "explanation": "The speaker says one of the two IDs must be a government-issued photo ID.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "$75",
+      "explanation": "The guide specifies 'Cost is seventy-five dollars for two weeks' for the Basic plan.",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-018-q16",
       "audioScriptId": "celpip-listening-018-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long must new applicants typically wait before coverage begins?",
+      "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
-        "One week",
-        "One month",
-        "Three months",
-        "Six months"
+        "$500",
+        "$1,000",
+        "$1,500",
+        "$2,500"
       ],
-      "correctAnswer": "Three months",
-      "explanation": "The speaker says there is typically a three-month waiting period.",
+      "correctAnswer": "$1,000",
+      "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-018-q17",
       "audioScriptId": "celpip-listening-018-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT covered by the provincial health card?",
+      "prompt": "What is the Premium plan's lost luggage coverage limit?",
       "options": [
-        "Emergency room visits",
-        "Family doctor visits",
-        "Dental care",
-        "Blood work"
+        "$1,000",
+        "$1,500",
+        "$2,000",
+        "$2,500"
       ],
-      "correctAnswer": "Dental care",
-      "explanation": "The speaker says dental care is not automatically covered by the health card.",
+      "correctAnswer": "$2,500",
+      "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-018-q18",
       "audioScriptId": "celpip-listening-018-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is the Health Care Connect programme?",
+      "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "A private insurance plan",
-        "A walk-in clinic network",
-        "A programme that matches patients to available physicians",
-        "An online pharmacy"
+        "30 days",
+        "60 days",
+        "90 days",
+        "120 days"
       ],
-      "correctAnswer": "A programme that matches patients to available physicians",
-      "explanation": "The speaker describes Health Care Connect as matching patients to available physicians.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "90 days",
+      "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-018-q19",
       "audioScriptId": "celpip-listening-018-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What should residents do if their address changes?",
+      "prompt": "What is the toll-free claims phone number?",
       "options": [
-        "Apply for a new health card",
-        "Report the change to the provincial health authority",
-        "Contact their family doctor only",
-        "Wait until renewal time"
+        "1-800-555-0140",
+        "1-800-555-0147",
+        "1-800-555-0174",
+        "1-800-555-0417"
       ],
-      "correctAnswer": "Report the change to the provincial health authority",
-      "explanation": "The speaker says to report any change of address to keep records current.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "1-800-555-0147",
+      "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-018-q20",
       "audioScriptId": "celpip-listening-018-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Who is eligible for the new childcare subsidy?",
+      "prompt": "What is the cost of the expansion project?",
       "options": [
-        "All families with children under twelve",
-        "Families earning below ninety thousand dollars per year",
-        "Only single-parent households",
-        "Families on social assistance only"
+        "75 million dollars",
+        "85 million dollars",
+        "95 million dollars",
+        "105 million dollars"
       ],
-      "correctAnswer": "Families earning below ninety thousand dollars per year",
-      "explanation": "The report says eligible families earn below ninety thousand dollars per year.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "95 million dollars",
+      "explanation": "The museum is embarking on a 95 million dollar expansion.",
+      "difficulty": "medium",
+      "topic": "Heritage"
     },
     {
       "id": "celpip-listening-018-q21",
       "audioScriptId": "celpip-listening-018-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What is the maximum daily childcare cost under the new programme?",
+      "prompt": "How long is the expansion project expected to take?",
       "options": [
-        "Five dollars",
-        "Ten dollars",
-        "Twenty dollars",
-        "Fifty dollars"
+        "Three years",
+        "Four years",
+        "Five years",
+        "Six years"
       ],
-      "correctAnswer": "Ten dollars",
-      "explanation": "The report states families will pay no more than ten dollars per day.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "Five years",
+      "explanation": "The project is spanning five years.",
+      "difficulty": "medium",
+      "topic": "Heritage"
     },
     {
       "id": "celpip-listening-018-q22",
       "audioScriptId": "celpip-listening-018-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Which children will receive priority access?",
+      "prompt": "How many construction jobs will be generated?",
       "options": [
-        "School-age children",
-        "Children under six and those already on waitlists",
-        "Children of essential workers",
-        "All children equally"
+        "400 jobs",
+        "500 jobs",
+        "600 jobs",
+        "700 jobs"
       ],
-      "correctAnswer": "Children under six and those already on waitlists",
-      "explanation": "The minister says priority goes to children under six and families on existing waitlists.",
+      "correctAnswer": "600 jobs",
+      "explanation": "The expansion will generate approximately 600 construction jobs.",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "Heritage"
     },
     {
       "id": "celpip-listening-018-q23",
       "audioScriptId": "celpip-listening-018-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will approved families be notified?",
+      "prompt": "How many visitors does the museum currently attract annually?",
       "options": [
-        "By post",
-        "By telephone",
-        "By email",
-        "Through their childcare provider"
+        "350,000 visitors",
+        "420,000 visitors",
+        "480,000 visitors",
+        "520,000 visitors"
       ],
-      "correctAnswer": "By email",
-      "explanation": "The report says approved families will be notified by email.",
+      "correctAnswer": "480,000 visitors",
+      "explanation": "The museum currently attracts 480,000 visitors annually.",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "Heritage"
     },
     {
       "id": "celpip-listening-018-q24",
       "audioScriptId": "celpip-listening-018-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What concern did opposition critics raise?",
+      "prompt": "What percentage of Albertans surveyed support the project?",
       "options": [
-        "The daily fee is too high",
-        "The programme excludes informal unlicenced home-based care",
-        "Too many providers have already registered",
-        "The programme starts too late in the year"
+        "65 percent",
+        "72 percent",
+        "78 percent",
+        "85 percent"
       ],
-      "correctAnswer": "The programme excludes informal unlicenced home-based care",
-      "explanation": "Critics say the programme does not extend to informal home-based care arrangements.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "78 percent",
+      "explanation": "78 percent of surveyed Albertans favor the project.",
+      "difficulty": "medium",
+      "topic": "Heritage"
     },
     {
       "id": "celpip-listening-018-q25",
       "audioScriptId": "celpip-listening-018-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say is the main problem with social media platforms?",
+      "prompt": "What is the total budget for the renovation?",
       "options": [
-        "They are too expensive",
-        "They are designed to maximise engagement through comparison",
-        "They do not have enough educational content",
-        "They spread false news to teenagers"
+        "5.2 million dollars",
+        "6.0 million dollars",
+        "6.8 million dollars",
+        "7.5 million dollars"
       ],
-      "correctAnswer": "They are designed to maximise engagement through comparison",
-      "explanation": "Diane says platforms are deliberately built to maximise engagement, which means maximising comparison.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "6.8 million dollars",
+      "explanation": "The renovation project is budgeted at 6.8 million dollars.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-018-q26",
       "audioScriptId": "celpip-listening-018-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom advocate for?",
+      "prompt": "How long is the renovation expected to take?",
       "options": [
-        "Banning social media entirely",
-        "Age-based restrictions on all platforms",
-        "Digital literacy education for teenagers",
-        "Parental monitoring software"
+        "12 months",
+        "15 months",
+        "18 months",
+        "24 months"
       ],
-      "correctAnswer": "Digital literacy education for teenagers",
-      "explanation": "Tom says the answer is teaching teenagers to be critical consumers of digital content.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "18 months",
+      "explanation": "The project should take about 18 months to complete.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-018-q27",
       "audioScriptId": "celpip-listening-018-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "On what point do Diane and Tom agree?",
+      "prompt": "What are the three main components of the renovation?",
       "options": [
-        "Restrictions are necessary",
-        "Education about social media is necessary",
-        "Teenagers should avoid all social media",
-        "Parents should manage all screen time"
+        "Pool, gym, parking lot",
+        "Fitness center, pool upgrade, youth spaces",
+        "Gym, parking, offices",
+        "Cafe, library, fitness center"
       ],
-      "correctAnswer": "Education about social media is necessary",
-      "explanation": "The host notes both agree on the need for education.",
+      "correctAnswer": "Fitness center, pool upgrade, youth spaces",
+      "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces.",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-018-q28",
       "audioScriptId": "celpip-listening-018-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say a thirteen-year-old is not equipped to do?",
+      "prompt": "What is Robert's main concern?",
       "options": [
-        "Understand complex text",
-        "Resist deliberate platform manipulation",
-        "Manage their own time",
-        "Communicate online safely"
+        "Noise during construction",
+        "Cost of the project",
+        "Where his kids' programs will go",
+        "Parking during renovation"
       ],
-      "correctAnswer": "Resist deliberate platform manipulation",
-      "explanation": "Diane says a thirteen-year-old is neurologically not equipped to resist deliberate platform manipulation.",
+      "correctAnswer": "Where his kids' programs will go",
+      "explanation": "Robert worries about where after-school programs will be located during construction.",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-018-q29",
       "audioScriptId": "celpip-listening-018-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom call the effect of banning social media without education?",
+      "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "The rebound effect",
-        "The forbidden fruit effect",
-        "The digital divide",
-        "The screen overload effect"
+        "A temporary building",
+        "The community room and outdoor spaces",
+        "A school gym",
+        "A local fitness facility"
       ],
-      "correctAnswer": "The forbidden fruit effect",
-      "explanation": "Tom calls the over-compensating behaviour after restrictions the forbidden fruit effect.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "The community room and outdoor spaces",
+      "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-018-q30",
       "audioScriptId": "celpip-listening-018-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What evidence does Tom give for the forbidden fruit effect?",
+      "prompt": "What additional facility is Susan negotiating with?",
       "options": [
-        "A government study on screen time",
-        "Personal experience with teenagers at home",
-        "Schools that blocked social media found students spent more time online on weekends",
-        "Research from Diane's own institution"
+        "A private gym",
+        "The school district",
+        "A local park",
+        "A nearby library"
       ],
-      "correctAnswer": "Schools that blocked social media found students spent more time online on weekends",
-      "explanation": "Tom says schools that blocked social media found students spent even more time online on weekends.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "The school district",
+      "explanation": "Susan mentions negotiating with the school district for backup facility use.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-018-q31",
       "audioScriptId": "celpip-listening-018-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What specific group does Diane say is most affected by heavy social media use?",
+      "prompt": "What concern does Jason raise about using outdoor space?",
       "options": [
-        "Boys aged ten to twelve",
-        "All teenagers equally",
-        "Girls in particular",
-        "Teenagers in rural areas"
+        "Weather damage",
+        "Limited room for physical activities",
+        "Theft concerns",
+        "Noise complaints"
       ],
-      "correctAnswer": "Girls in particular",
-      "explanation": "Diane says anxiety and depression are particularly high for girls.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "Limited room for physical activities",
+      "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-018-q32",
       "audioScriptId": "celpip-listening-018-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's summary at the end?",
+      "prompt": "What suggestion does Jason make for outdoor activities?",
       "options": [
-        "Both guests fully agree",
-        "The debate is too political to resolve",
-        "There is agreement on education but a divide on restrictions",
-        "Tom has made the stronger argument"
+        "Build a temporary gym",
+        "Close programs temporarily",
+        "Use a local park",
+        "Move all programs indoors"
       ],
-      "correctAnswer": "There is agreement on education but a divide on restrictions",
-      "explanation": "The host summarises that there is agreement on education but a real divide on restrictions.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "Use a local park",
+      "explanation": "Jason suggests using a local park for outdoor programming during construction.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-018-q33",
       "audioScriptId": "celpip-listening-018-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker argue is wrong with current government investment patterns?",
+      "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "Too much money is spent on small towns",
-        "Investment flows mainly to cities, creating inequality",
-        "Rural communities refuse investment",
-        "Cities need more hospitals"
+        "Economic opportunity",
+        "Rising sea levels, extreme weather, and changing precipitation",
+        "Political conflicts",
+        "Educational opportunities"
       ],
-      "correctAnswer": "Investment flows mainly to cities, creating inequality",
-      "explanation": "The speaker says investment has predominantly flowed toward major cities, creating a divide.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
+      "explanation": "The speaker identifies these climate factors as forcing migration.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-018-q34",
       "audioScriptId": "celpip-listening-018-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health problem does the speaker connect to rural under-investment?",
+      "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Higher rates of heart disease",
-        "More road accidents",
-        "Higher rates of late-stage cancer diagnoses",
-        "Fewer vaccinations"
+        "Agricultural improvements",
+        "Reduced urbanization",
+        "Small island nations disappearing and coastal flooding",
+        "Increased employment"
       ],
-      "correctAnswer": "Higher rates of late-stage cancer diagnoses",
-      "explanation": "The speaker says rural residents have higher rates of late-stage cancer because early detection services are not available locally.",
-      "difficulty": "easy",
-      "topic": "civic participation"
+      "correctAnswer": "Small island nations disappearing and coastal flooding",
+      "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-018-q35",
       "audioScriptId": "celpip-listening-018-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What pattern in education does the speaker describe?",
+      "prompt": "What consequences does the speaker warn about with unplanned migration?",
       "options": [
-        "Rural schools are better funded than urban ones",
-        "Talented young people leave small towns and rarely return",
-        "Rural students prefer online learning",
-        "Urban students move to rural areas for university"
+        "Economic growth",
+        "Overcrowded cities, slums, and resource conflicts",
+        "Improved infrastructure",
+        "Better job opportunities"
       ],
-      "correctAnswer": "Talented young people leave small towns and rarely return",
-      "explanation": "The speaker says talented young people leave for cities and rarely return.",
+      "correctAnswer": "Overcrowded cities, slums, and resource conflicts",
+      "explanation": "The speaker warns that unplanned migration creates overcrowding, slums, and conflicts.",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-018-q36",
       "audioScriptId": "celpip-listening-018-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How does the speaker respond to critics who say rural investment costs too much per person?",
+      "prompt": "Which regions does the speaker believe will become more desirable?",
       "options": [
-        "By agreeing and suggesting cuts",
-        "By calling it a reason for smarter targeted investment",
-        "By dismissing the economic argument entirely",
-        "By citing statistics on rural GDP"
+        "Equatorial regions",
+        "Small island nations",
+        "Canada and northern regions",
+        "Coastal areas"
       ],
-      "correctAnswer": "By calling it a reason for smarter targeted investment",
-      "explanation": "The speaker says the cost argument is flawed and is actually an argument for smarter, targeted investment.",
+      "correctAnswer": "Canada and northern regions",
+      "explanation": "The speaker states Canada and northern regions will likely become more desirable.",
       "difficulty": "medium",
-      "topic": "civic participation"
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-018-q37",
       "audioScriptId": "celpip-listening-018-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker say should not determine the quality of opportunity a person has?",
+      "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Their family income",
-        "Their level of education",
-        "The postal code where they were born",
-        "Their language ability"
+        "Restricting population growth",
+        "Expanding housing, infrastructure, and economic capacity",
+        "Limiting migration",
+        "Maintaining current conditions"
       ],
-      "correctAnswer": "The postal code where they were born",
-      "explanation": "The speaker says the postal code where someone is born should not determine their opportunities.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
+      "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-018-q38",
       "audioScriptId": "celpip-listening-018-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall tone?",
+      "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "Nostalgic and sentimental",
-        "Objective and neutral",
-        "Persuasive and advocacy-driven",
-        "Pessimistic and resigned"
+        "It won't happen",
+        "It should be stopped",
+        "It's inevitable and should be managed responsibly",
+        "It's not a real problem"
       ],
-      "correctAnswer": "Persuasive and advocacy-driven",
-      "explanation": "The speaker argues a clear position and calls for change based on principles of equity.",
-      "difficulty": "hard",
-      "topic": "civic participation"
+      "correctAnswer": "It's inevitable and should be managed responsibly",
+      "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",
+      "difficulty": "medium",
+      "topic": "Environment"
     }
   ]
 }

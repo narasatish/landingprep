@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 55",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 55",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-055-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Outdoor recreation in Canada",
-      "script": "A parks and recreation officer explains the outdoor programmes available in local parks, including hiking groups, outdoor fitness classes, sports leagues, and winter skating programmes.",
+      "title": "Defective Appliance Return",
+      "text": "Customer: Hi, I'd like to return a refrigerator I purchased last week. It's still under warranty. Agent: I'd be happy to help with that. Can you tell me what's wrong with it? Customer: Well, the ice maker isn't working, and there's this strange noise coming from the compressor. I've had three fridges before and this one definitely isn't normal. Agent: I understand your concern. How long have you had it? Customer: Six days. I bought it on Tuesday morning from your downtown store. Agent: Okay, and you still have your receipt? Customer: Yes, I have it here. Purchase price was $1,299. Agent: Perfect. Since it's within the seven-day return window, we can definitely process a full refund or exchange for a different model. Do you prefer cash back or would you like to choose another refrigerator? Customer: I'd rather have a refund. Can you process it today? Agent: Absolutely. We'll need to arrange pickup within 48 hours, and the refund will appear in your account within five to seven business days. Would tomorrow morning work for a pickup between 10 and 2 PM?",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-055-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about new municipal recycling guidelines",
-      "script": "This news is about new municipal recycling guidelines. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Apartment Viewing Discussion",
+      "text": "Renter: I'm interested in this one-bedroom apartment. What are the lease terms? Landlord: It's a one-year lease. The rent is $1,200 per month, due on the first of each month. Renter: That seems reasonable. What utilities are included? Landlord: Water and heating are included, but you pay for electricity and internet. Renter: I see. What about parking? Landlord: There's one dedicated parking spot in the lot. It's included in the rent. Renter: Perfect. When would I be able to move in? Landlord: If we sign the lease today, you can move in on July 1st. Renter: Is that two weeks from now? Landlord: Yes, exactly two weeks. Do you have any pets? Renter: I have a cat. Is that okay? Landlord: Yes, cats are allowed. There's a one-time pet deposit of $150. Renter: Alright. Can I get a few days to think about it? Landlord: Sure, take until the end of the week. After that, I have other interested renters.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-055-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about new municipal recycling guidelines",
-      "script": "This discussion is about new municipal recycling guidelines. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "Hospital Visitor Guidelines",
+      "text": "Welcome to City Hospital. We're glad you're visiting someone here. Please review our visitor guidelines for patient safety and comfort. Visiting hours are 10 AM to 8 PM daily. Each patient can have a maximum of two visitors at a time in their room. This ensures proper rest and medical care. Children under twelve must be accompanied by an adult. We restrict visits from children with colds or contagious illnesses. Visitors should wash their hands upon arrival and before leaving. Hand-sanitizer stations are located throughout the facility. Quiet voices are required in patient rooms and hallways. Please avoid using cell phones in patient areas. Photography is not permitted without the patient's written consent. Flowers and plants are welcome, but balloons are not allowed due to interference with medical equipment. Food brought from outside is permitted only if approved by nursing staff. Many patients have dietary restrictions. Visiting a patient receiving isolation care requires special precautions. Nursing staff will provide instructions. Do not disturb patients' medical equipment, monitors, or IV lines. Visitors with concerns should speak to staff at the nursing station. Parking is available in the north lot at five dollars per visit. An elevator is located near the main entrance for easy access.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-055-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about new municipal recycling guidelines",
-      "script": "This announcement is about new municipal recycling guidelines. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "Manitoba Agricultural Export Deal",
+      "text": "Manitoba has secured a significant agricultural export agreement with Japan. The deal, valued at approximately 340 million dollars annually, includes canola, pulse crops, and livestock products. Japanese importers have committed to increasing their purchases from Manitoba producers by 25 percent over the next five years. The agreement was finalized following trade negotiations led by the Canadian Agricultural Minister and her Japanese counterpart. Manitoba produces approximately 8 million tonnes of canola annually, making it Canada's leading canola province. Pulse crops, including peas and lentils, account for another 2.8 million tonnes of production. The Premier described the agreement as transformative for rural communities. Japanese markets have consistently valued Canadian agricultural products for their quality and safety standards. The deal is expected to create 400 additional jobs in the agriculture and food processing sectors. Provincial officials plan to strengthen cold-chain logistics to ensure product freshness during international transport.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-055-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about new municipal recycling guidelines",
-      "script": "This office is about new municipal recycling guidelines. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Local Food System Development",
+      "text": "Farmer Cooperative Director Maria: We're launching an initiative to build a more resilient local food system for our region. Currently, about 87 percent of our food is imported from outside the province. We want to increase local food production and support our farmers. We're proposing a farmers market expansion and direct-to-consumer delivery programs. The cooperative will help coordinate logistics and marketing.\n\nGrocery Store Manager Paul: I understand the value of local food, Maria, but I'm concerned about pricing and consistency. Local producers can't always compete with the prices we get from large distributors. And seasonality is an issue—in winter, local farmers have limited options. My customers expect year-round availability and competitive pricing.\n\nPublic Health Officer Dr. Sarah: Actually, Paul, local food systems have documented health benefits. Communities with stronger local food networks show 22 percent higher rates of fresh produce consumption. Plus, reducing transportation distance improves food safety and nutrition because products reach consumers fresher. And we should consider the long-term economic impact. Local spending circulates within the community.\n\nSmall Farm Owner James: I'd love to participate in this initiative. Currently, I sell about 40 percent of my production to the farmers market, but I'd like to do more direct sales. The issue is I don't have the infrastructure for packaging and distribution. If the cooperative could help with that, I could increase production by 60 percent.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-055-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about new municipal recycling guidelines",
-      "script": "This lecture is about new municipal recycling guidelines. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Mental Health Parity in Insurance Coverage",
+      "text": "Mental health needs to be treated with the same importance as physical health in our insurance system. We talk about mental health awareness, but when it comes to actual coverage, it's dramatically underfunded. Most insurance plans cover mental health at lower rates than physical health. If you have a broken arm, insurance covers months of physical therapy. If you have depression or anxiety, you get maybe 10 sessions of therapy a year, and psychologist visits might only be 50 percent covered. This creates barriers. Many people avoid treatment because they can't afford it, and their conditions worsen. The economic impact is massive. Mental health issues cost the economy 51 billion dollars annually in Canada through lost productivity, emergency services, and hospitalizations. Yet we invest a fraction of that in prevention and treatment. Here's what frustrates me most: we have effective treatments. Therapy works. Medication helps. But access is limited by insurance coverage. A person struggling with bipolar disorder shouldn't have to choose between therapy and rent. Insurance companies argue coverage limits are necessary for cost control, but that's shortsighted. When people get mental health treatment early, they use fewer emergency services, work more, and contribute to society. The ROI on mental health coverage is actually positive. I'm advocating for mandatory parity—insurance companies should cover mental health at the same level as physical health. This means removing visit limits, lowering copayments, and covering evidence-based treatments. It's not just compassionate; it's economically smart.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-055-q01",
+      "audioScriptId": "celpip-listening-055-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-055-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "What is the main problem with the refrigerator?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "The compressor is broken completely",
+        "The ice maker isn't working and there's a strange noise from the compressor",
+        "The door seal is damaged",
+        "The temperature control panel is faulty"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "outdoor recreation in Canada"
+      "correctAnswer": "The ice maker isn't working and there's a strange noise from the compressor",
+      "explanation": "The customer explicitly states both issues in their opening complaint.",
+      "difficulty": "medium",
+      "topic": "product returns"
     },
     {
       "id": "celpip-listening-055-q02",
+      "audioScriptId": "celpip-listening-055-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-055-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "How long has the customer owned the refrigerator?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "Three days",
+        "One week",
+        "Six days",
+        "Two weeks"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "outdoor recreation in Canada"
+      "correctAnswer": "Six days",
+      "explanation": "Customer states 'I've had it six days' and bought it Tuesday morning.",
+      "difficulty": "medium",
+      "topic": "product returns"
     },
     {
       "id": "celpip-listening-055-q03",
+      "audioScriptId": "celpip-listening-055-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-055-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "What was the purchase price?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "$999",
+        "$1,099",
+        "$1,199",
+        "$1,299"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "outdoor recreation in Canada"
+      "correctAnswer": "$1,299",
+      "explanation": "Customer clearly states the purchase price was $1,299.",
+      "difficulty": "medium",
+      "topic": "product returns"
     },
     {
       "id": "celpip-listening-055-q04",
+      "audioScriptId": "celpip-listening-055-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-055-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "What is the return window policy mentioned?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "Three days",
+        "Five days",
+        "Seven days",
+        "Ten days"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "Seven days",
+      "explanation": "Agent mentions 'within the seven-day return window.'",
       "difficulty": "medium",
-      "topic": "outdoor recreation in Canada"
+      "topic": "product returns"
     },
     {
       "id": "celpip-listening-055-q05",
+      "audioScriptId": "celpip-listening-055-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-055-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "Where was the refrigerator purchased?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "The mall location",
+        "The downtown store",
+        "Online",
+        "A second-hand seller"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "The downtown store",
+      "explanation": "Customer says they bought it from 'your downtown store.'",
       "difficulty": "medium",
-      "topic": "outdoor recreation in Canada"
+      "topic": "product returns"
     },
     {
       "id": "celpip-listening-055-q06",
+      "audioScriptId": "celpip-listening-055-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-055-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "What refund method does the customer prefer?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "Store credit",
+        "Exchange for another model",
+        "Cash back",
+        "Check by mail"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "Cash back",
+      "explanation": "Customer explicitly states 'I'd rather have a refund.'",
       "difficulty": "medium",
-      "topic": "outdoor recreation in Canada"
+      "topic": "product returns"
     },
     {
       "id": "celpip-listening-055-q07",
+      "audioScriptId": "celpip-listening-055-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-055-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "When will the refund appear in the customer's account?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "Within 2 business days",
+        "Within 5 to 7 business days",
+        "Within 10 business days",
+        "Within 2 weeks"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "outdoor recreation in Canada"
+      "correctAnswer": "Within 5 to 7 business days",
+      "explanation": "Agent states 'the refund will appear in your account within five to seven business days.'",
+      "difficulty": "medium",
+      "topic": "product returns"
     },
     {
       "id": "celpip-listening-055-q08",
+      "audioScriptId": "celpip-listening-055-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-055-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "What time window is available for pickup?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "8 AM to 12 PM",
+        "10 AM to 2 PM",
+        "12 PM to 4 PM",
+        "2 PM to 6 PM"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "outdoor recreation in Canada"
+      "correctAnswer": "10 AM to 2 PM",
+      "explanation": "Agent offers pickup 'between 10 and 2 PM' tomorrow morning.",
+      "difficulty": "medium",
+      "topic": "product returns"
     },
     {
       "id": "celpip-listening-055-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-055-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-055-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "What is the monthly rent?",
+      "options": [
+        "$1,000",
+        "$1,100",
+        "$1,200",
+        "$1,300"
+      ],
+      "correctAnswer": "$1,200",
+      "explanation": "Landlord states 'The rent is $1,200 per month.'",
       "difficulty": "medium",
-      "topic": "outdoor recreation in Canada"
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-055-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-055-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-055-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "What utilities are included?",
+      "options": [
+        "All utilities",
+        "Water and heating",
+        "Electricity only",
+        "Internet only"
+      ],
+      "correctAnswer": "Water and heating",
+      "explanation": "Landlord explains 'Water and heating are included.'",
       "difficulty": "medium",
-      "topic": "outdoor recreation in Canada"
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-055-q11",
+      "audioScriptId": "celpip-listening-055-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-055-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "Is parking included in the rent?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "No, extra cost",
+        "Yes, one spot",
+        "Two spots",
+        "Not available"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Yes, one spot",
+      "explanation": "Landlord confirms 'one dedicated parking spot' is 'included in the rent.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-055-q12",
+      "audioScriptId": "celpip-listening-055-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-055-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "When can the renter move in?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "June 15",
+        "June 24",
+        "July 1",
+        "July 8"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "July 1",
+      "explanation": "Landlord states 'you can move in on July 1st.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-055-q13",
+      "audioScriptId": "celpip-listening-055-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-055-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "What is the pet deposit for the cat?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "$100",
+        "$125",
+        "$150",
+        "$200"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "$150",
+      "explanation": "Landlord specifies 'a one-time pet deposit of $150.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-055-q14",
+      "audioScriptId": "celpip-listening-055-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-055-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "What are the visiting hours?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "8 AM to 6 PM",
+        "9 AM to 7 PM",
+        "10 AM to 8 PM",
+        "11 AM to 9 PM"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "10 AM to 8 PM",
+      "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-055-q15",
+      "audioScriptId": "celpip-listening-055-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-055-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "How many visitors can be in a patient's room at one time?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "One",
+        "Two",
+        "Three",
+        "Four"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Two",
+      "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-055-q16",
+      "audioScriptId": "celpip-listening-055-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-055-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "What is the minimum age for unaccompanied visits?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "Eight years old",
+        "Ten years old",
+        "Twelve years old",
+        "Fourteen years old"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Twelve years old",
+      "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-055-q17",
+      "audioScriptId": "celpip-listening-055-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-055-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "Are balloons allowed in patient rooms?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "Yes",
+        "Yes, with restrictions",
+        "No",
+        "Only on special occasions"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "No",
+      "explanation": "The guide states 'balloons are not allowed due to interference with medical equipment.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-055-q18",
+      "audioScriptId": "celpip-listening-055-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-055-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "What is the parking fee per visit?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "$2",
+        "$3",
+        "$4",
+        "$5"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "$5",
+      "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-055-q19",
+      "audioScriptId": "celpip-listening-055-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-055-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "The visitor",
+        "The patient",
+        "The nursing staff",
+        "The hospital administrator"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "The nursing staff",
+      "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
+      "difficulty": "medium",
+      "topic": "facility rules"
     },
     {
       "id": "celpip-listening-055-q20",
+      "audioScriptId": "celpip-listening-055-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-055-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "What is the annual value of the agricultural export agreement?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "250 million dollars",
+        "290 million dollars",
+        "340 million dollars",
+        "380 million dollars"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "340 million dollars",
+      "explanation": "The deal is valued at approximately 340 million dollars annually.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q21",
+      "audioScriptId": "celpip-listening-055-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-055-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "By what percentage will Japanese importers increase their purchases?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "15 percent",
+        "20 percent",
+        "25 percent",
+        "30 percent"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "25 percent",
+      "explanation": "Importers have committed to increasing purchases by 25 percent over the next five years.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q22",
+      "audioScriptId": "celpip-listening-055-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-055-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "How much canola does Manitoba produce annually?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "5 million tonnes",
+        "7 million tonnes",
+        "8 million tonnes",
+        "10 million tonnes"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "8 million tonnes",
+      "explanation": "Manitoba produces approximately 8 million tonnes of canola annually.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q23",
+      "audioScriptId": "celpip-listening-055-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-055-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "How many tonnes of pulse crops are produced?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "2.0 million tonnes",
+        "2.4 million tonnes",
+        "2.8 million tonnes",
+        "3.2 million tonnes"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "2.8 million tonnes",
+      "explanation": "Pulse crops account for 2.8 million tonnes of production.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q24",
+      "audioScriptId": "celpip-listening-055-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-055-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "How many jobs are expected to be created?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "200 jobs",
+        "300 jobs",
+        "400 jobs",
+        "500 jobs"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "400 jobs",
+      "explanation": "The deal is expected to create 400 additional jobs in agriculture and food processing.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q25",
+      "audioScriptId": "celpip-listening-055-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-055-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "What percentage of food is currently imported from outside the province?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "75 percent",
+        "80 percent",
+        "85 percent",
+        "87 percent"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "87 percent",
+      "explanation": "Maria states about 87 percent of food is imported from outside the province.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q26",
+      "audioScriptId": "celpip-listening-055-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-055-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "Grocery stores and restaurants",
+        "Farmers market and delivery programs",
+        "Government subsidies",
+        "Large distribution centers"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Farmers market and delivery programs",
+      "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q27",
+      "audioScriptId": "celpip-listening-055-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-055-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What is Paul's primary concern about local food?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "Product quality",
+        "Pricing and consistency",
+        "Customer demand",
+        "Storage requirements"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Pricing and consistency",
+      "explanation": "Paul is concerned local producers can't compete on price and have seasonal limitations.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q28",
+      "audioScriptId": "celpip-listening-055-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-055-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "According to Dr. Sarah, what percentage increase in fresh produce consumption is shown?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "15 percent",
+        "20 percent",
+        "22 percent",
+        "25 percent"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "22 percent",
+      "explanation": "Communities with stronger local food networks show 22 percent higher fresh produce consumption.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q29",
+      "audioScriptId": "celpip-listening-055-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-055-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "Lower cost",
+        "Improved freshness and food safety",
+        "More variety",
+        "Better storage"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Improved freshness and food safety",
+      "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q30",
+      "audioScriptId": "celpip-listening-055-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-055-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "25 percent",
+        "35 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "40 percent",
+      "explanation": "James currently sells about 40 percent of production to the farmers market.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q31",
+      "audioScriptId": "celpip-listening-055-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-055-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "Limited land",
+        "Transportation issues",
+        "Packaging and distribution",
+        "Workforce availability"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Packaging and distribution",
+      "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q32",
+      "audioScriptId": "celpip-listening-055-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-055-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "By what percentage could James increase production if he had distribution support?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "40 percent",
+        "50 percent",
+        "60 percent",
+        "70 percent"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "60 percent",
+      "explanation": "James states he could increase production by 60 percent with distribution support.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-055-q33",
+      "audioScriptId": "celpip-listening-055-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-055-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "Mental health is covered more than physical",
+        "Physical health is covered more than mental health",
+        "They're equally covered",
+        "Neither is adequately covered"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Physical health is covered more than mental health",
+      "explanation": "The speaker states mental health is covered at lower rates than physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-055-q34",
+      "audioScriptId": "celpip-listening-055-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-055-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "What example does the speaker use to illustrate the disparity?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "Cancer treatment vs. therapy",
+        "Broken arm coverage vs. limited mental health sessions",
+        "Hospital stays vs. doctor visits",
+        "Prescription drugs vs. counseling"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Broken arm coverage vs. limited mental health sessions",
+      "explanation": "The speaker uses physical therapy for broken arms compared to limited therapy sessions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-055-q35",
+      "audioScriptId": "celpip-listening-055-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-055-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What is the annual economic cost of mental health issues in Canada?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "25 billion dollars",
+        "38 billion dollars",
+        "51 billion dollars",
+        "67 billion dollars"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "51 billion dollars",
+      "explanation": "Mental health issues cost 51 billion dollars annually in Canada.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-055-q36",
+      "audioScriptId": "celpip-listening-055-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-055-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations",
+        "Medication costs",
+        "Administrative expenses"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
+      "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-055-q37",
+      "audioScriptId": "celpip-listening-055-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-055-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "It's cheaper than physical health",
+        "Early treatment has positive ROI",
+        "It reduces insurance profits",
+        "It's cost-neutral"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about new municipal recycling guidelines.",
-      "difficulty": "medium"
+      "correctAnswer": "Early treatment has positive ROI",
+      "explanation": "The speaker argues mental health coverage has a positive return on investment.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-055-q38",
+      "audioScriptId": "celpip-listening-055-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-055-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What does the speaker advocate companies implement?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "Lower coverage for mental health",
+        "Mandatory parity in coverage",
+        "Removal of all limits",
+        "Voluntary coverage only"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about new municipal recycling guidelines.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "Mandatory parity in coverage",
+      "explanation": "The speaker advocates for mandatory parity—equal coverage for mental and physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     }
   ]
 }

@@ -1,0 +1,978 @@
+{
+  "news": [
+    {
+      "title": "Toronto Transit Strike Reaches Day Five",
+      "topic": "Labor dispute",
+      "script": "Good evening. The Toronto Transit Commission strike has now entered its fifth day, affecting nearly two million commuters across the Greater Toronto Area. The TTC and the union representing over 10,000 workers remain at odds over wages and benefits. Union spokesperson Maria Chen says members are seeking a 4.25 percent pay increase over three years, citing inflation and cost-of-living pressures. The TTC counters that budget constraints limit them to 2.5 percent. Downtown businesses report a 30 percent drop in foot traffic since Monday. City Council has called for emergency mediation sessions to resume tomorrow morning. Meanwhile, the public is turning to carpooling, cycling, and GO Transit as alternatives. Some schools have adjusted schedules to accommodate parents unable to reach their children. Negotiations are expected to intensify as both sides face increasing pressure from the community.",
+      "questions": [
+        {
+          "prompt": "How many workers does the union represent?",
+          "options": ["8,000 workers", "10,000 workers", "12,000 workers", "15,000 workers"],
+          "correctAnswer": "10,000 workers",
+          "explanation": "The report explicitly states the union represents over 10,000 workers."
+        },
+        {
+          "prompt": "What percentage pay increase is the union requesting?",
+          "options": ["2.5 percent", "3.0 percent", "4.25 percent", "5.0 percent"],
+          "correctAnswer": "4.25 percent",
+          "explanation": "Union spokesperson Maria Chen states members are seeking a 4.25 percent pay increase."
+        },
+        {
+          "prompt": "What is the TTC's wage offer?",
+          "options": ["2.5 percent over three years", "3.5 percent over two years", "4.25 percent over four years", "1.5 percent over three years"],
+          "correctAnswer": "2.5 percent over three years",
+          "explanation": "The report states the TTC counters with 2.5 percent over three years."
+        },
+        {
+          "prompt": "How much has foot traffic in downtown businesses decreased?",
+          "options": ["20 percent", "30 percent", "40 percent", "50 percent"],
+          "correctAnswer": "30 percent",
+          "explanation": "Downtown businesses report a 30 percent drop in foot traffic since Monday."
+        },
+        {
+          "prompt": "When are emergency mediation sessions expected to resume?",
+          "options": ["Tonight", "Tomorrow morning", "Next week", "In two days"],
+          "correctAnswer": "Tomorrow morning",
+          "explanation": "City Council has called for emergency mediation sessions to resume tomorrow morning."
+        }
+      ]
+    },
+    {
+      "title": "New Tech Campus Opens in Calgary",
+      "topic": "Technology",
+      "script": "A major technology development is happening in Calgary today. TechHub Prairie, a 50,000-square-meter innovation center, officially opened its doors this morning in the downtown core. The facility cost 85 million dollars to construct and is expected to create 1,200 new jobs over the next two years. The campus features office space, research laboratories, and startup incubator units. Over 40 companies have already committed to moving in, including software firms, AI research groups, and digital marketing agencies. Mayor Jyoti Gondek attended the ribbon-cutting ceremony and called it a game-changer for Alberta's economy. The provincial government provided 15 million dollars in funding to support the project. TechHub Prairie will also host weekly networking events and offer mentorship programs for emerging entrepreneurs. Officials believe this development positions Calgary as a serious competitor in Canada's tech industry.",
+      "questions": [
+        {
+          "prompt": "What is the size of TechHub Prairie?",
+          "options": ["30,000 square meters", "40,000 square meters", "50,000 square meters", "60,000 square meters"],
+          "correctAnswer": "50,000 square meters",
+          "explanation": "The report states TechHub Prairie is a 50,000-square-meter innovation center."
+        },
+        {
+          "prompt": "How much did the facility cost to construct?",
+          "options": ["75 million dollars", "80 million dollars", "85 million dollars", "90 million dollars"],
+          "correctAnswer": "85 million dollars",
+          "explanation": "The facility cost 85 million dollars to construct."
+        },
+        {
+          "prompt": "How many new jobs are expected to be created?",
+          "options": ["800 jobs", "1,000 jobs", "1,200 jobs", "1,500 jobs"],
+          "correctAnswer": "1,200 jobs",
+          "explanation": "It is expected to create 1,200 new jobs over the next two years."
+        },
+        {
+          "prompt": "How much provincial funding was provided?",
+          "options": ["10 million dollars", "12 million dollars", "15 million dollars", "20 million dollars"],
+          "correctAnswer": "15 million dollars",
+          "explanation": "The provincial government provided 15 million dollars in funding."
+        },
+        {
+          "prompt": "Which of the following is NOT mentioned as available at the campus?",
+          "options": ["Office space", "Research laboratories", "Residential apartments", "Startup incubator units"],
+          "correctAnswer": "Residential apartments",
+          "explanation": "The report mentions office space, laboratories, and incubators, but not apartments."
+        }
+      ]
+    },
+    {
+      "title": "BC Wildfire Season Begins Early",
+      "topic": "Environment",
+      "script": "British Columbia's wildfire season is beginning earlier than usual this year, prompting concerns among forest officials. As of June first, crews have already responded to 127 active fires across the province. The unusually warm and dry spring is blamed for the early start. The Ministry of Forests reports that conditions are expected to worsen through July and August. Last summer, the province experienced the worst fire season on record, with over 2.4 million hectares burned. This year's budget for firefighting has been increased to 560 million dollars, a 40 percent increase from the previous year. Communities at risk are being advised to prepare evacuation plans. The government is also deploying additional aerial firefighting resources, including five new helicopters equipped with water-dropping technology. Residents are reminded to clear dry vegetation from their properties and avoid open fires during high-risk periods.",
+      "questions": [
+        {
+          "prompt": "How many active fires are currently being responded to?",
+          "options": ["100 fires", "115 fires", "127 fires", "140 fires"],
+          "correctAnswer": "127 fires",
+          "explanation": "Crews have already responded to 127 active fires across the province."
+        },
+        {
+          "prompt": "Why is the fire season starting early this year?",
+          "options": ["Increased lightning activity", "Unusually warm and dry spring", "Poor fire prevention policies", "Higher temperatures in August"],
+          "correctAnswer": "Unusually warm and dry spring",
+          "explanation": "The unusually warm and dry spring is blamed for the early start."
+        },
+        {
+          "prompt": "How many hectares were burned during last summer's fire season?",
+          "options": ["1.8 million hectares", "2.0 million hectares", "2.4 million hectares", "2.8 million hectares"],
+          "correctAnswer": "2.4 million hectares",
+          "explanation": "Over 2.4 million hectares were burned during last summer's worst fire season on record."
+        },
+        {
+          "prompt": "What is the firefighting budget for this year?",
+          "options": ["400 million dollars", "480 million dollars", "560 million dollars", "600 million dollars"],
+          "correctAnswer": "560 million dollars",
+          "explanation": "This year's budget for firefighting has been increased to 560 million dollars."
+        },
+        {
+          "prompt": "How many new helicopters are being deployed?",
+          "options": ["Three helicopters", "Four helicopters", "Five helicopters", "Seven helicopters"],
+          "correctAnswer": "Five helicopters",
+          "explanation": "Five new helicopters equipped with water-dropping technology are being deployed."
+        }
+      ]
+    },
+    {
+      "title": "Quebec Education Reform Approved",
+      "topic": "Education",
+      "script": "The Quebec National Assembly has approved a major education reform bill with broad cross-party support. The legislation, Bill 247, focuses on modernizing curriculum standards and addressing teacher shortages. Under the new framework, high schools will introduce mandatory digital literacy courses starting next September. The reform also increases teacher salaries by 8 percent over four years to attract and retain educators. Currently, Quebec faces a shortage of approximately 3,500 teachers, particularly in mathematics, sciences, and French language instruction. The bill allocates 2.1 billion dollars for infrastructure improvements to school facilities. Education Minister Jean-François Roberge noted that 87 percent of school boards support the reforms. Parents will have increased choice in selecting specialized program options for their children. Pilot projects will begin in 15 schools across the province to test innovative teaching methods before full implementation in 2027.",
+      "questions": [
+        {
+          "prompt": "What is the bill number for the education reform?",
+          "options": ["Bill 235", "Bill 247", "Bill 250", "Bill 260"],
+          "correctAnswer": "Bill 247",
+          "explanation": "The legislation is identified as Bill 247."
+        },
+        {
+          "prompt": "When will mandatory digital literacy courses begin?",
+          "options": ["This year", "Next September", "January 2027", "September 2027"],
+          "correctAnswer": "Next September",
+          "explanation": "High schools will introduce mandatory digital literacy courses starting next September."
+        },
+        {
+          "prompt": "By what percentage are teacher salaries being increased?",
+          "options": ["5 percent", "6 percent", "8 percent", "10 percent"],
+          "correctAnswer": "8 percent",
+          "explanation": "Teacher salaries will be increased by 8 percent over four years."
+        },
+        {
+          "prompt": "Approximately how many teachers does Quebec currently lack?",
+          "options": ["2,500 teachers", "3,000 teachers", "3,500 teachers", "4,000 teachers"],
+          "correctAnswer": "3,500 teachers",
+          "explanation": "Quebec currently faces a shortage of approximately 3,500 teachers."
+        },
+        {
+          "prompt": "How much money is allocated for infrastructure improvements?",
+          "options": ["1.5 billion dollars", "1.8 billion dollars", "2.1 billion dollars", "2.5 billion dollars"],
+          "correctAnswer": "2.1 billion dollars",
+          "explanation": "The bill allocates 2.1 billion dollars for infrastructure improvements."
+        }
+      ]
+    },
+    {
+      "title": "Manitoba Agricultural Export Deal",
+      "topic": "Agriculture",
+      "script": "Manitoba has secured a significant agricultural export agreement with Japan. The deal, valued at approximately 340 million dollars annually, includes canola, pulse crops, and livestock products. Japanese importers have committed to increasing their purchases from Manitoba producers by 25 percent over the next five years. The agreement was finalized following trade negotiations led by the Canadian Agricultural Minister and her Japanese counterpart. Manitoba produces approximately 8 million tonnes of canola annually, making it Canada's leading canola province. Pulse crops, including peas and lentils, account for another 2.8 million tonnes of production. The Premier described the agreement as transformative for rural communities. Japanese markets have consistently valued Canadian agricultural products for their quality and safety standards. The deal is expected to create 400 additional jobs in the agriculture and food processing sectors. Provincial officials plan to strengthen cold-chain logistics to ensure product freshness during international transport.",
+      "questions": [
+        {
+          "prompt": "What is the annual value of the agricultural export agreement?",
+          "options": ["250 million dollars", "290 million dollars", "340 million dollars", "380 million dollars"],
+          "correctAnswer": "340 million dollars",
+          "explanation": "The deal is valued at approximately 340 million dollars annually."
+        },
+        {
+          "prompt": "By what percentage will Japanese importers increase their purchases?",
+          "options": ["15 percent", "20 percent", "25 percent", "30 percent"],
+          "correctAnswer": "25 percent",
+          "explanation": "Importers have committed to increasing purchases by 25 percent over the next five years."
+        },
+        {
+          "prompt": "How much canola does Manitoba produce annually?",
+          "options": ["5 million tonnes", "7 million tonnes", "8 million tonnes", "10 million tonnes"],
+          "correctAnswer": "8 million tonnes",
+          "explanation": "Manitoba produces approximately 8 million tonnes of canola annually."
+        },
+        {
+          "prompt": "How many tonnes of pulse crops are produced?",
+          "options": ["2.0 million tonnes", "2.4 million tonnes", "2.8 million tonnes", "3.2 million tonnes"],
+          "correctAnswer": "2.8 million tonnes",
+          "explanation": "Pulse crops account for 2.8 million tonnes of production."
+        },
+        {
+          "prompt": "How many jobs are expected to be created?",
+          "options": ["200 jobs", "300 jobs", "400 jobs", "500 jobs"],
+          "correctAnswer": "400 jobs",
+          "explanation": "The deal is expected to create 400 additional jobs in agriculture and food processing."
+        }
+      ]
+    },
+    {
+      "title": "Nova Scotia Healthcare Worker Recruitment",
+      "topic": "Healthcare",
+      "script": "Nova Scotia is launching an aggressive recruitment campaign to address critical shortages in healthcare professionals. The province has announced a 35 million dollar investment in recruitment and retention initiatives. Currently, there are over 800 unfilled nursing positions across Nova Scotia hospitals and clinics. The campaign targets nurses, physiotherapists, occupational therapists, and laboratory technicians. Starting salaries for nurses are being increased by 12 percent to compete with other provinces. The government is also offering signing bonuses of up to 15,000 dollars for candidates relocating to rural communities. Housing assistance programs will help new recruits find affordable accommodation. International recruitment is underway, with partnerships established with nursing programs in the Philippines and India. Officials estimate it will take approximately 18 months to fill 60 percent of the vacant positions. Patient wait times have increased significantly due to staffing shortages, with some emergency departments reporting delays of four to six hours.",
+      "questions": [
+        {
+          "prompt": "How much is being invested in recruitment and retention?",
+          "options": ["25 million dollars", "30 million dollars", "35 million dollars", "40 million dollars"],
+          "correctAnswer": "35 million dollars",
+          "explanation": "The province has announced a 35 million dollar investment."
+        },
+        {
+          "prompt": "How many nursing positions are currently unfilled?",
+          "options": ["600 positions", "700 positions", "800 positions", "900 positions"],
+          "correctAnswer": "800 positions",
+          "explanation": "There are over 800 unfilled nursing positions."
+        },
+        {
+          "prompt": "By what percentage are starting salaries for nurses increasing?",
+          "options": ["8 percent", "10 percent", "12 percent", "15 percent"],
+          "correctAnswer": "12 percent",
+          "explanation": "Starting salaries for nurses are being increased by 12 percent."
+        },
+        {
+          "prompt": "What is the maximum signing bonus for rural relocations?",
+          "options": ["10,000 dollars", "12,000 dollars", "15,000 dollars", "20,000 dollars"],
+          "correctAnswer": "15,000 dollars",
+          "explanation": "Signing bonuses of up to 15,000 dollars are offered for rural relocations."
+        },
+        {
+          "prompt": "What percentage of vacant positions are expected to be filled in 18 months?",
+          "options": ["40 percent", "50 percent", "60 percent", "75 percent"],
+          "correctAnswer": "60 percent",
+          "explanation": "Officials estimate it will take approximately 18 months to fill 60 percent of positions."
+        }
+      ]
+    },
+    {
+      "title": "Ontario Solar Energy Initiative",
+      "topic": "Renewable energy",
+      "script": "Ontario has launched an ambitious solar energy initiative targeting rooftop installations across residential and commercial properties. The program, called SolarON, aims to install solar panels on 50,000 homes and businesses over three years. The government is providing subsidies covering up to 40 percent of installation costs for eligible homeowners. Solar power currently accounts for only 1.2 percent of Ontario's electricity generation, but officials project this could increase to 8 percent by 2030. The initiative includes training programs to develop 2,500 new solar installation technicians. A rebate program offers homeowners up to 8,000 dollars toward equipment and installation expenses. Companies installing solar systems have reported a 150 percent increase in inquiries since the program's announcement. Environmental advocates praise the initiative for reducing carbon emissions and creating green jobs. The average residential system costs approximately 22,000 dollars before subsidies and rebates. Participants are also eligible for net metering, allowing them to sell excess power back to the grid.",
+      "questions": [
+        {
+          "prompt": "How many homes and businesses are targeted for solar installation?",
+          "options": ["30,000", "40,000", "50,000", "60,000"],
+          "correctAnswer": "50,000",
+          "explanation": "The SolarON program aims to install solar panels on 50,000 homes and businesses."
+        },
+        {
+          "prompt": "What percentage of installation costs do subsidies cover?",
+          "options": ["25 percent", "30 percent", "40 percent", "50 percent"],
+          "correctAnswer": "40 percent",
+          "explanation": "The government provides subsidies covering up to 40 percent of installation costs."
+        },
+        {
+          "prompt": "What is the current percentage of Ontario's electricity from solar power?",
+          "options": ["0.8 percent", "1.2 percent", "2.0 percent", "2.5 percent"],
+          "correctAnswer": "1.2 percent",
+          "explanation": "Solar power currently accounts for only 1.2 percent of Ontario's electricity generation."
+        },
+        {
+          "prompt": "How many new installation technicians will be trained?",
+          "options": ["1,500 technicians", "2,000 technicians", "2,500 technicians", "3,000 technicians"],
+          "correctAnswer": "2,500 technicians",
+          "explanation": "Training programs aim to develop 2,500 new solar installation technicians."
+        },
+        {
+          "prompt": "What is the maximum homeowner rebate?",
+          "options": ["5,000 dollars", "6,000 dollars", "8,000 dollars", "10,000 dollars"],
+          "correctAnswer": "8,000 dollars",
+          "explanation": "A rebate program offers homeowners up to 8,000 dollars."
+        }
+      ]
+    },
+    {
+      "title": "Alberta Heritage Museum Expansion",
+      "topic": "Heritage",
+      "script": "The Alberta Heritage Museum is embarking on a 95 million dollar expansion project that will double its exhibition space. The project, spanning five years, will create new galleries dedicated to Indigenous history, early settlement, and contemporary Alberta culture. Museum Director Patricia Wong announced that the expansion will feature interactive exhibits and state-of-the-art multimedia installations. The project will generate approximately 600 construction jobs over the expansion period. Funding comes from government grants, private donations, and corporate sponsorships. The museum currently attracts 480,000 visitors annually, and officials project this will increase by 45 percent following the expansion. A new 2,000-square-meter research and conservation facility will support artifact preservation. Four new galleries will be built, including a dedicated space for rotating temporary exhibitions. Community consultation has identified strong public support, with 78 percent of surveyed Albertans favoring the project. The expansion is scheduled to be completed by 2031.",
+      "questions": [
+        {
+          "prompt": "What is the cost of the expansion project?",
+          "options": ["75 million dollars", "85 million dollars", "95 million dollars", "105 million dollars"],
+          "correctAnswer": "95 million dollars",
+          "explanation": "The museum is embarking on a 95 million dollar expansion."
+        },
+        {
+          "prompt": "How long is the expansion project expected to take?",
+          "options": ["Three years", "Four years", "Five years", "Six years"],
+          "correctAnswer": "Five years",
+          "explanation": "The project is spanning five years."
+        },
+        {
+          "prompt": "How many construction jobs will be generated?",
+          "options": ["400 jobs", "500 jobs", "600 jobs", "700 jobs"],
+          "correctAnswer": "600 jobs",
+          "explanation": "The expansion will generate approximately 600 construction jobs."
+        },
+        {
+          "prompt": "How many visitors does the museum currently attract annually?",
+          "options": ["350,000 visitors", "420,000 visitors", "480,000 visitors", "520,000 visitors"],
+          "correctAnswer": "480,000 visitors",
+          "explanation": "The museum currently attracts 480,000 visitors annually."
+        },
+        {
+          "prompt": "What percentage of Albertans surveyed support the project?",
+          "options": ["65 percent", "72 percent", "78 percent", "85 percent"],
+          "correctAnswer": "78 percent",
+          "explanation": "78 percent of surveyed Albertans favor the project."
+        }
+      ]
+    },
+    {
+      "title": "Winnipeg Public Transit Modernization",
+      "topic": "Transportation",
+      "script": "Winnipeg is modernizing its public transit system with a 450 million dollar investment over the next decade. The city has approved plans to purchase 300 new electric buses to replace aging diesel vehicles. The transition will eliminate approximately 8,500 tonnes of annual carbon emissions from the transportation sector. Current ridership stands at 89 million trips annually, and the city expects this to grow by 20 percent once new services launch. Construction of a new rapid transit corridor connecting downtown to the airport is set to begin next year. This corridor will reduce travel time from downtown to the airport from 45 minutes to just 22 minutes. The project includes the construction of 12 new transit stations along the corridor. Free transit passes will be offered to seniors and students to encourage ridership. Overall, the modernization is expected to create 1,100 permanent jobs in operations and maintenance. Winnipeg Transit has committed to achieving net-zero emissions by 2040.",
+      "questions": [
+        {
+          "prompt": "What is the total investment in transit modernization?",
+          "options": ["350 million dollars", "400 million dollars", "450 million dollars", "500 million dollars"],
+          "correctAnswer": "450 million dollars",
+          "explanation": "The city has approved a 450 million dollar investment."
+        },
+        {
+          "prompt": "How many new electric buses will be purchased?",
+          "options": ["200 buses", "250 buses", "300 buses", "350 buses"],
+          "correctAnswer": "300 buses",
+          "explanation": "The city plans to purchase 300 new electric buses."
+        },
+        {
+          "prompt": "How many tonnes of carbon emissions will be eliminated annually?",
+          "options": ["6,500 tonnes", "7,500 tonnes", "8,500 tonnes", "9,500 tonnes"],
+          "correctAnswer": "8,500 tonnes",
+          "explanation": "The transition will eliminate approximately 8,500 tonnes of annual carbon emissions."
+        },
+        {
+          "prompt": "What will the new travel time be to the airport?",
+          "options": ["15 minutes", "18 minutes", "22 minutes", "28 minutes"],
+          "correctAnswer": "22 minutes",
+          "explanation": "Travel time will be reduced to just 22 minutes."
+        },
+        {
+          "prompt": "How many new transit stations will be built?",
+          "options": ["8 stations", "10 stations", "12 stations", "15 stations"],
+          "correctAnswer": "12 stations",
+          "explanation": "The project includes construction of 12 new transit stations."
+        }
+      ]
+    },
+    {
+      "title": "New Brunswick Fisheries Management Plan",
+      "topic": "Fisheries",
+      "script": "New Brunswick has introduced a comprehensive fisheries management plan aimed at rebuilding declining fish stocks and supporting the province's fishing communities. The plan allocates 67 million dollars over five years to research, enforcement, and sustainable fishing initiatives. Atlantic salmon populations have declined by 48 percent over the past two decades, prompting urgent action. The plan imposes stricter catch limits on cod and halibut in designated zones. Fishing vessel owners participating in conservation programs receive subsidies up to 200,000 dollars for upgrading to eco-friendly equipment. The program mandates trap modifications to reduce unintended marine mammal bycatch by 35 percent. Over 3,200 fishermen and their families depend on this industry in New Brunswick. The province is establishing a new fisheries research center employing 120 marine scientists. Marine Protected Areas will expand to cover an additional 8 percent of provincial waters. The plan aims to achieve sustainable fish stock levels by 2032.",
+      "questions": [
+        {
+          "prompt": "How much is allocated for the fisheries management plan?",
+          "options": ["50 million dollars", "58 million dollars", "67 million dollars", "75 million dollars"],
+          "correctAnswer": "67 million dollars",
+          "explanation": "The plan allocates 67 million dollars over five years."
+        },
+        {
+          "prompt": "By what percentage have Atlantic salmon populations declined?",
+          "options": ["35 percent", "42 percent", "48 percent", "55 percent"],
+          "correctAnswer": "48 percent",
+          "explanation": "Atlantic salmon populations have declined by 48 percent over the past two decades."
+        },
+        {
+          "prompt": "What is the maximum subsidy for vessel upgrades?",
+          "options": ["150,000 dollars", "175,000 dollars", "200,000 dollars", "250,000 dollars"],
+          "correctAnswer": "200,000 dollars",
+          "explanation": "Subsidies reach up to 200,000 dollars for eco-friendly equipment upgrades."
+        },
+        {
+          "prompt": "By what percentage should bycatch be reduced?",
+          "options": ["25 percent", "30 percent", "35 percent", "40 percent"],
+          "correctAnswer": "35 percent",
+          "explanation": "Trap modifications target a 35 percent reduction in marine mammal bycatch."
+        },
+        {
+          "prompt": "How many marine scientists will the research center employ?",
+          "options": ["80 scientists", "100 scientists", "120 scientists", "150 scientists"],
+          "correctAnswer": "120 scientists",
+          "explanation": "The research center will employ 120 marine scientists."
+        }
+      ]
+    }
+  ],
+  "discussion": [
+    {
+      "title": "Remote Work Policy Debate",
+      "topic": "Workplace",
+      "script": "Manager Sarah: I've been thinking about our remote work policy, and honestly, I think we need to bring people back to the office at least three days a week. When I worked from home during the pandemic, I felt disconnected from my team, and I worry about newer staff missing out on mentorship opportunities. Plus, collaboration seems to happen more naturally when people are in the same space.\n\nEmployee James: I completely understand your point, Sarah, but I've actually found the opposite to be true. Since working remotely, my productivity has increased by about 40 percent because I have fewer interruptions. I can focus better on complex projects. And I'm still collaborating regularly with my colleagues through video calls and shared documents. Honestly, three days in the office feels like a step backward for many of us who have adapted well to remote work.\n\nHR Director Tom: Both of you raise valid concerns. The data we've collected shows mixed results. Some teams are more productive working remotely, while others struggle with communication and onboarding new hires. I think the solution isn't one-size-fits-all. Different departments might need different policies. Customer service teams probably need more in-person interaction, while our software developers seem to work just fine remotely. We should consider a hybrid approach that gives managers flexibility based on their specific team's needs.",
+      "questions": [
+        {
+          "prompt": "What does Sarah believe about mentorship in remote work settings?",
+          "options": ["Mentorship works better online", "Newer staff miss out on mentorship opportunities", "Mentorship is not important", "Remote mentorship is equally effective"],
+          "correctAnswer": "Newer staff miss out on mentorship opportunities",
+          "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities."
+        },
+        {
+          "prompt": "By what percentage has James's productivity increased working remotely?",
+          "options": ["25 percent", "35 percent", "40 percent", "50 percent"],
+          "correctAnswer": "40 percent",
+          "explanation": "James states his productivity has increased by about 40 percent since working remotely."
+        },
+        {
+          "prompt": "What reason does James give for his increased productivity?",
+          "options": ["Better equipment at home", "Fewer interruptions", "Shorter work hours", "More flexible schedule"],
+          "correctAnswer": "Fewer interruptions",
+          "explanation": "James mentions fewer interruptions allow him to focus better on complex projects."
+        },
+        {
+          "prompt": "What does Tom identify as the main finding in the HR data?",
+          "options": ["Remote work is always better", "Mixed results depending on the team", "Office work is most productive", "Remote work decreases productivity"],
+          "correctAnswer": "Mixed results depending on the team",
+          "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle."
+        },
+        {
+          "prompt": "What type of team does Tom suggest might work better in person?",
+          "options": ["Software developers", "Marketing teams", "Customer service teams", "Finance teams"],
+          "correctAnswer": "Customer service teams",
+          "explanation": "Tom suggests customer service teams probably need more in-person interaction."
+        },
+        {
+          "prompt": "What solution does Tom propose?",
+          "options": ["All employees back in office", "Completely remote for all", "Hybrid approach with flexibility", "No change to current policy"],
+          "correctAnswer": "Hybrid approach with flexibility",
+          "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs."
+        },
+        {
+          "prompt": "According to Sarah, what does collaboration depend on?",
+          "options": ["Video call quality", "People being in the same space", "Written communication", "Email efficiency"],
+          "correctAnswer": "People being in the same space",
+          "explanation": "Sarah believes collaboration happens more naturally when people are in the same space."
+        },
+        {
+          "prompt": "How does James stay connected with colleagues remotely?",
+          "options": ["Phone calls only", "Email messages only", "Video calls and shared documents", "Monthly meetings only"],
+          "correctAnswer": "Video calls and shared documents",
+          "explanation": "James mentions collaborating through video calls and shared documents."
+        }
+      ]
+    },
+    {
+      "title": "University Program Expansion Planning",
+      "topic": "Education",
+      "script": "Dean Robert: We've been asked to consider expanding our engineering program, particularly in renewable energy studies. The faculty has requested three additional full-time instructors and funding for new laboratory equipment. The cost would be approximately 2.4 million dollars over two years. Given our current budget constraints, I'm hesitant to commit to this expansion.\n\nProfessor Elena: I understand the budget concerns, Dean, but we're actually losing enrollment to competing universities who offer these programs. Last year, we lost 150 potential engineering students to schools with stronger renewable energy options. If we don't expand now, we'll fall behind. Plus, there's significant industry demand for graduates with renewable energy expertise. Companies are specifically recruiting from universities with these specialized programs.\n\nStudent Representative Malik: From a student perspective, I absolutely support this expansion. Many of my classmates are interested in sustainability and green technology, but we don't have the courses or facilities to support that focus. I think this investment would make our university much more attractive to prospective students, which would actually increase our overall enrollment and revenue.\n\nBudget Committee Member Diana: Malik makes a good point about revenue. If this program attracts even 200 additional students, the tuition revenue would exceed the expansion costs within three years. And we could explore partnerships with industry for funding. I've been in conversations with several renewable energy companies that might contribute equipment or funding in exchange for access to our graduates for recruitment.",
+      "questions": [
+        {
+          "prompt": "What is the cost of the engineering program expansion?",
+          "options": ["1.8 million dollars", "2.0 million dollars", "2.4 million dollars", "2.8 million dollars"],
+          "correctAnswer": "2.4 million dollars",
+          "explanation": "The cost would be approximately 2.4 million dollars over two years."
+        },
+        {
+          "prompt": "How many potential students did the university lose last year?",
+          "options": ["100 students", "125 students", "150 students", "175 students"],
+          "correctAnswer": "150 students",
+          "explanation": "Professor Elena mentions they lost 150 potential engineering students."
+        },
+        {
+          "prompt": "Why are some students not enrolling at this university?",
+          "options": ["Poor faculty", "Weak renewable energy program options", "High tuition fees", "Bad location"],
+          "correctAnswer": "Weak renewable energy program options",
+          "explanation": "They're losing students to competing universities with stronger renewable energy options."
+        },
+        {
+          "prompt": "What does Diana believe about tuition revenue from additional students?",
+          "options": ["It will decrease overall costs", "It would exceed expansion costs within three years", "It wouldn't help the budget", "It takes longer than expected"],
+          "correctAnswer": "It would exceed expansion costs within three years",
+          "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years."
+        },
+        {
+          "prompt": "What type of partnership does Diana mention exploring?",
+          "options": ["International universities", "Government agencies", "Renewable energy companies", "Tech startups"],
+          "correctAnswer": "Renewable energy companies",
+          "explanation": "Diana mentions conversations with renewable energy companies about funding contributions."
+        },
+        {
+          "prompt": "What would companies receive in exchange for supporting the program?",
+          "options": ["University branding", "Free equipment", "Access to graduates for recruitment", "Research funding"],
+          "correctAnswer": "Access to graduates for recruitment",
+          "explanation": "Companies want access to graduates for recruitment in exchange for contributions."
+        },
+        {
+          "prompt": "Why is Malik interested in supporting the program expansion?",
+          "options": ["To get easier courses", "To increase tuition fees", "To support classmates interested in sustainability", "To improve campus facilities"],
+          "correctAnswer": "To support classmates interested in sustainability",
+          "explanation": "Many classmates are interested in sustainability and green technology, which the program would support."
+        },
+        {
+          "prompt": "What specific position does Professor Elena hold on the expansion?",
+          "options": ["She opposes it", "She strongly supports it", "She wants to wait", "She's uncertain"],
+          "correctAnswer": "She strongly supports it",
+          "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now."
+        }
+      ]
+    },
+    {
+      "title": "Small Business Loan Program Discussion",
+      "topic": "Business",
+      "script": "Bank Manager Chris: Our small business loan program has been quite successful this year. We've approved 285 loans totaling 42 million dollars to local entrepreneurs. However, we've noticed our default rate is slightly higher than industry average at about 4.2 percent. We're considering tightening our lending criteria to reduce risk.\n\nEconomic Development Officer Lisa: I would caution against tightening the criteria too much, Chris. These small loans are crucial for community development and job creation. Yes, a few borrowers struggle, but 95 percent of our loans are performing well. If we make the qualification requirements too strict, we'll only serve well-established businesses with existing collateral. That defeats the purpose of supporting new entrepreneurs who are taking real risks.\n\nBusiness Owner Marcus: I completely agree with Lisa. When I started my restaurant five years ago, traditional banks wouldn't touch me because I didn't have significant assets or a ten-year track record. Your bank took a chance on me, and now my business employs 12 people. If your criteria were stricter, I wouldn't be here. I think what you should focus on is better support systems after lending, like mentorship programs and financial coaching.\n\nBank Manager Chris: Marcus, your success story is exactly what we want to see. But we do have a fiduciary responsibility to our depositors. Maybe Marcus is right—perhaps the answer isn't stricter lending, but better support after approval. We could partner with business development organizations to provide mentoring and financial management training.",
+      "questions": [
+        {
+          "prompt": "How many small business loans has the bank approved this year?",
+          "options": ["250 loans", "270 loans", "285 loans", "300 loans"],
+          "correctAnswer": "285 loans",
+          "explanation": "The bank has approved 285 loans this year."
+        },
+        {
+          "prompt": "What is the total amount of loans approved?",
+          "options": ["35 million dollars", "39 million dollars", "42 million dollars", "48 million dollars"],
+          "correctAnswer": "42 million dollars",
+          "explanation": "The loans approved total 42 million dollars."
+        },
+        {
+          "prompt": "What is the bank's current loan default rate?",
+          "options": ["2.5 percent", "3.2 percent", "4.2 percent", "5.5 percent"],
+          "correctAnswer": "4.2 percent",
+          "explanation": "The default rate is approximately 4.2 percent."
+        },
+        {
+          "prompt": "Why does Lisa oppose tightening lending criteria?",
+          "options": ["It's too expensive", "It would exclude new entrepreneurs", "It would reduce profitability", "It would increase default rates"],
+          "correctAnswer": "It would exclude new entrepreneurs",
+          "explanation": "Lisa warns that stricter criteria would only serve well-established businesses, defeating the purpose."
+        },
+        {
+          "prompt": "What challenge did Marcus face when starting his business?",
+          "options": ["Lack of experience", "No customers", "Banks wouldn't lend to him", "High interest rates"],
+          "correctAnswer": "Banks wouldn't lend to him",
+          "explanation": "Marcus says traditional banks wouldn't lend because he lacked assets and track record."
+        },
+        {
+          "prompt": "How many people does Marcus's restaurant currently employ?",
+          "options": ["8 people", "10 people", "12 people", "15 people"],
+          "correctAnswer": "12 people",
+          "explanation": "Marcus's restaurant now employs 12 people."
+        },
+        {
+          "prompt": "What alternative solution does Marcus propose?",
+          "options": ["Lower interest rates", "Mentorship and financial coaching programs", "Shorter loan terms", "No collateral requirements"],
+          "correctAnswer": "Mentorship and financial coaching programs",
+          "explanation": "Marcus suggests focus on better support systems like mentorship and financial coaching after lending."
+        },
+        {
+          "prompt": "Who does Chris propose to partner with for business support?",
+          "options": ["Universities", "Government agencies", "Business development organizations", "Large corporations"],
+          "correctAnswer": "Business development organizations",
+          "explanation": "Chris proposes partnering with business development organizations for mentoring and training."
+        }
+      ]
+    },
+    {
+      "title": "Community Center Renovation Project",
+      "topic": "Community",
+      "script": "Recreation Director Karen: We're finally moving forward with the community center renovation that was approved last year. The project is budgeted at 6.8 million dollars and should take about 18 months to complete. We plan to add a new fitness center, upgrade the swimming pool, and create additional youth programming spaces. This will significantly improve our facilities.\n\nCommunity Member Robert: I'm glad to see this moving forward, Karen, but I'm concerned about one thing. During the construction, the center will be partially closed. My kids attend after-school programs here, and I'm worried about where they'll go during the renovation period. Many families in our community rely on these programs for childcare.\n\nOperations Manager Susan: That's a valid concern, Robert. We've actually planned for this. We'll maintain the community room and outdoor spaces throughout the project. We can relocate the after-school programs there during construction, though it will be more crowded. We're also negotiating with the school district to potentially use school facilities as a backup location for some activities.\n\nYouth Program Coordinator Jason: I'm excited about the upgrades, especially the new youth spaces. But Susan, we need to be realistic about the outdoor space. We currently use it for sports and recreation. If we're moving programs there, we'll have limited room for physical activities. Could we consider using a local park for some outdoor programming during construction?",
+      "questions": [
+        {
+          "prompt": "What is the total budget for the renovation?",
+          "options": ["5.2 million dollars", "6.0 million dollars", "6.8 million dollars", "7.5 million dollars"],
+          "correctAnswer": "6.8 million dollars",
+          "explanation": "The renovation project is budgeted at 6.8 million dollars."
+        },
+        {
+          "prompt": "How long is the renovation expected to take?",
+          "options": ["12 months", "15 months", "18 months", "24 months"],
+          "correctAnswer": "18 months",
+          "explanation": "The project should take about 18 months to complete."
+        },
+        {
+          "prompt": "What are the three main components of the renovation?",
+          "options": ["Pool, gym, parking lot", "Fitness center, pool upgrade, youth spaces", "Gym, parking, offices", "Cafe, library, fitness center"],
+          "correctAnswer": "Fitness center, pool upgrade, youth spaces",
+          "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces."
+        },
+        {
+          "prompt": "What is Robert's main concern?",
+          "options": ["Noise during construction", "Cost of the project", "Where his kids' programs will go", "Parking during renovation"],
+          "correctAnswer": "Where his kids' programs will go",
+          "explanation": "Robert worries about where after-school programs will be located during construction."
+        },
+        {
+          "prompt": "Where does Susan plan to relocate programs during construction?",
+          "options": ["A temporary building", "The community room and outdoor spaces", "A school gym", "A local fitness facility"],
+          "correctAnswer": "The community room and outdoor spaces",
+          "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs."
+        },
+        {
+          "prompt": "What additional facility is Susan negotiating with?",
+          "options": ["A private gym", "The school district", "A local park", "A nearby library"],
+          "correctAnswer": "The school district",
+          "explanation": "Susan mentions negotiating with the school district for backup facility use."
+        },
+        {
+          "prompt": "What concern does Jason raise about using outdoor space?",
+          "options": ["Weather damage", "Limited room for physical activities", "Theft concerns", "Noise complaints"],
+          "correctAnswer": "Limited room for physical activities",
+          "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation."
+        },
+        {
+          "prompt": "What suggestion does Jason make for outdoor activities?",
+          "options": ["Build a temporary gym", "Close programs temporarily", "Use a local park", "Move all programs indoors"],
+          "correctAnswer": "Use a local park",
+          "explanation": "Jason suggests using a local park for outdoor programming during construction."
+        }
+      ]
+    },
+    {
+      "title": "Workplace Safety Initiative",
+      "topic": "Safety",
+      "script": "Safety Officer Tom: I've been analyzing our workplace incident reports from the past two years, and I'm concerned about our trend. We've had 34 reported injuries this year, which is up 15 percent from last year. Most incidents are slips, trips, and falls in warehouse areas. I'm proposing we implement mandatory safety training for all warehouse staff every six months, not annually as we currently do.\n\nWarehouse Manager David: Tom, I appreciate your concern, but I'm worried about requiring training every six months. That's a lot of time away from work. My team's productivity is already under pressure with current targets. If we pull people off the floor for training frequently, we'll fall further behind on our goals. Can't we just focus on better signage and equipment?\n\nWorker Representative Angela: I actually support Tom's proposal. I work in the warehouse, and I've seen some close calls that could have been serious. The issue isn't signage—we know the hazards. The problem is we get complacent. Regular training keeps safety top of mind. Plus, Tom, I think twice-yearly training would actually improve morale because workers feel the company cares about their wellbeing.\n\nSafety Officer Tom: Thank you, Angela. David, I understand your concern about productivity, but consider the cost of injuries. Each workplace injury costs us about $12,000 in direct and indirect costs. If we can prevent even three injuries per year, the training pays for itself. And research shows regular safety training actually reduces injuries, which ultimately improves productivity.",
+      "questions": [
+        {
+          "prompt": "How many workplace injuries were reported this year?",
+          "options": ["25 injuries", "29 injuries", "34 injuries", "39 injuries"],
+          "correctAnswer": "34 injuries",
+          "explanation": "Tom reports 34 workplace injuries this year."
+        },
+        {
+          "prompt": "What is the percentage increase in injuries from last year?",
+          "options": ["10 percent", "12 percent", "15 percent", "18 percent"],
+          "correctAnswer": "15 percent",
+          "explanation": "The number of injuries is up 15 percent from last year."
+        },
+        {
+          "prompt": "What type of incident accounts for most injuries?",
+          "options": ["Equipment failures", "Slips, trips, and falls", "Chemical exposure", "Back injuries from lifting"],
+          "correctAnswer": "Slips, trips, and falls",
+          "explanation": "Most incidents are slips, trips, and falls in warehouse areas."
+        },
+        {
+          "prompt": "What is Tom's proposed safety training frequency?",
+          "options": ["Quarterly", "Twice yearly", "Annually", "Every two years"],
+          "correctAnswer": "Twice yearly",
+          "explanation": "Tom proposes mandatory training every six months, not annually."
+        },
+        {
+          "prompt": "What is David's main concern about the training proposal?",
+          "options": ["Training effectiveness", "Cost of training", "Time away from work affecting productivity", "Staff availability"],
+          "correctAnswer": "Time away from work affecting productivity",
+          "explanation": "David worries that frequent training time away will affect productivity."
+        },
+        {
+          "prompt": "What alternative does David suggest?",
+          "options": ["Online training only", "Better signage and equipment", "Reduced warehouse hours", "Equipment replacement"],
+          "correctAnswer": "Better signage and equipment",
+          "explanation": "David suggests focusing on better signage and equipment instead."
+        },
+        {
+          "prompt": "What cost estimate does Tom provide for each workplace injury?",
+          "options": ["$8,000", "$10,000", "$12,000", "$15,000"],
+          "correctAnswer": "$12,000",
+          "explanation": "Tom states each workplace injury costs about $12,000 in direct and indirect costs."
+        },
+        {
+          "prompt": "What additional benefit does Angela mention about training?",
+          "options": ["Increased wages", "Improved morale", "Reduced hours", "Better equipment"],
+          "correctAnswer": "Improved morale",
+          "explanation": "Angela believes regular training improves morale because workers feel the company cares."
+        }
+      ]
+    },
+    {
+      "title": "Local Food System Development",
+      "topic": "Agriculture",
+      "script": "Farmer Cooperative Director Maria: We're launching an initiative to build a more resilient local food system for our region. Currently, about 87 percent of our food is imported from outside the province. We want to increase local food production and support our farmers. We're proposing a farmers market expansion and direct-to-consumer delivery programs. The cooperative will help coordinate logistics and marketing.\n\nGrocery Store Manager Paul: I understand the value of local food, Maria, but I'm concerned about pricing and consistency. Local producers can't always compete with the prices we get from large distributors. And seasonality is an issue—in winter, local farmers have limited options. My customers expect year-round availability and competitive pricing.\n\nPublic Health Officer Dr. Sarah: Actually, Paul, local food systems have documented health benefits. Communities with stronger local food networks show 22 percent higher rates of fresh produce consumption. Plus, reducing transportation distance improves food safety and nutrition because products reach consumers fresher. And we should consider the long-term economic impact. Local spending circulates within the community.\n\nSmall Farm Owner James: I'd love to participate in this initiative. Currently, I sell about 40 percent of my production to the farmers market, but I'd like to do more direct sales. The issue is I don't have the infrastructure for packaging and distribution. If the cooperative could help with that, I could increase production by 60 percent.",
+      "questions": [
+        {
+          "prompt": "What percentage of food is currently imported from outside the province?",
+          "options": ["75 percent", "80 percent", "85 percent", "87 percent"],
+          "correctAnswer": "87 percent",
+          "explanation": "Maria states about 87 percent of food is imported from outside the province."
+        },
+        {
+          "prompt": "What components are included in the local food initiative?",
+          "options": ["Grocery stores and restaurants", "Farmers market and delivery programs", "Government subsidies", "Large distribution centers"],
+          "correctAnswer": "Farmers market and delivery programs",
+          "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs."
+        },
+        {
+          "prompt": "What is Paul's primary concern about local food?",
+          "options": ["Product quality", "Pricing and consistency", "Customer demand", "Storage requirements"],
+          "correctAnswer": "Pricing and consistency",
+          "explanation": "Paul is concerned local producers can't compete on price and have seasonal limitations."
+        },
+        {
+          "prompt": "According to Dr. Sarah, what percentage increase in fresh produce consumption is shown?",
+          "options": ["15 percent", "20 percent", "22 percent", "25 percent"],
+          "correctAnswer": "22 percent",
+          "explanation": "Communities with stronger local food networks show 22 percent higher fresh produce consumption."
+        },
+        {
+          "prompt": "What advantage of local food does Dr. Sarah emphasize?",
+          "options": ["Lower cost", "Improved freshness and food safety", "More variety", "Better storage"],
+          "correctAnswer": "Improved freshness and food safety",
+          "explanation": "Reducing transportation improves food safety and nutrition through fresher products."
+        },
+        {
+          "prompt": "How much of his production does James currently sell to farmers market?",
+          "options": ["25 percent", "35 percent", "40 percent", "50 percent"],
+          "correctAnswer": "40 percent",
+          "explanation": "James currently sells about 40 percent of production to the farmers market."
+        },
+        {
+          "prompt": "What infrastructure limitation does James identify?",
+          "options": ["Limited land", "Transportation issues", "Packaging and distribution", "Workforce availability"],
+          "correctAnswer": "Packaging and distribution",
+          "explanation": "James lacks infrastructure for packaging and distribution to expand sales."
+        },
+        {
+          "prompt": "By what percentage could James increase production if he had distribution support?",
+          "options": ["40 percent", "50 percent", "60 percent", "70 percent"],
+          "correctAnswer": "60 percent",
+          "explanation": "James states he could increase production by 60 percent with distribution support."
+        }
+      ]
+    },
+    {
+      "title": "Corporate Training Program Redesign",
+      "topic": "Professional development",
+      "script": "Human Resources Director Michelle: We're considering a complete redesign of our corporate training program. Our current approach is one-size-fits-all classroom training, and it's not effective. We want to move toward personalized learning paths and micro-credentials. The investment would be about 3.5 million dollars over three years, but studies show this approach increases employee retention by up to 35 percent.\n\nDepartment Manager Kevin: I'm supportive of better training, but I'm skeptical about the cost and timeline. We're already stretched thin with current projects. Three years seems like a long time to see results. How quickly can we expect to see improvements in employee performance and retention?\n\nEmployee Development Specialist Nina: Kevin, the timeline actually makes sense. Year one is for system setup and rolling out the first pilot programs. By year two, we'll have meaningful data. We've seen in comparable companies that employee engagement scores improve within six months of launching personalized learning. Retention improvements typically follow within 12 to 18 months as employees feel more invested in their development.\n\nCEO David: This aligns with our strategic goals. We're losing skilled employees to competitors, and part of the issue is they don't see clear development paths. If this program helps us retain talent and develop leadership from within, the 3.5 million investment is justified. But we need to ensure accountability. Nina, can you outline measurable metrics we'll track?",
+      "questions": [
+        {
+          "prompt": "What is the proposed investment for the training program redesign?",
+          "options": ["2.5 million dollars", "3.0 million dollars", "3.5 million dollars", "4.0 million dollars"],
+          "correctAnswer": "3.5 million dollars",
+          "explanation": "The investment would be about 3.5 million dollars over three years."
+        },
+        {
+          "prompt": "By what percentage can personalized learning increase retention?",
+          "options": ["20 percent", "25 percent", "30 percent", "35 percent"],
+          "correctAnswer": "35 percent",
+          "explanation": "Studies show this approach increases employee retention by up to 35 percent."
+        },
+        {
+          "prompt": "What is the current training approach at the company?",
+          "options": ["Online learning modules", "One-size-fits-all classroom training", "Mentorship programs", "Self-paced learning"],
+          "correctAnswer": "One-size-fits-all classroom training",
+          "explanation": "The current approach is one-size-fits-all classroom training."
+        },
+        {
+          "prompt": "When do employee engagement scores typically improve?",
+          "options": ["Immediately", "Within three months", "Within six months", "Within one year"],
+          "correctAnswer": "Within six months",
+          "explanation": "Nina mentions engagement scores improve within six months of launching personalized learning."
+        },
+        {
+          "prompt": "When do retention improvements typically occur?",
+          "options": ["6-9 months", "12-18 months", "18-24 months", "2-3 years"],
+          "correctAnswer": "12-18 months",
+          "explanation": "Retention improvements typically follow within 12 to 18 months."
+        },
+        {
+          "prompt": "What concern does Kevin express?",
+          "options": ["Program quality", "Cost and timeline for results", "Employee participation", "Technology requirements"],
+          "correctAnswer": "Cost and timeline for results",
+          "explanation": "Kevin is skeptical about the cost and how quickly results will be seen."
+        },
+        {
+          "prompt": "What development approach will replace classroom training?",
+          "options": ["Online courses only", "Personalized learning paths and micro-credentials", "Conference attendance", "Self-study materials"],
+          "correctAnswer": "Personalized learning paths and micro-credentials",
+          "explanation": "The program will move toward personalized learning paths and micro-credentials."
+        },
+        {
+          "prompt": "What is David's main concern about the program?",
+          "options": ["Too expensive", "Takes too long", "Measurable metrics and accountability", "Lack of support"],
+          "correctAnswer": "Measurable metrics and accountability",
+          "explanation": "David wants to ensure accountability and asks Nina to outline measurable metrics."
+        }
+      ]
+    }
+  ],
+  "viewpoints": [
+    {
+      "title": "Digital Privacy in the Workplace",
+      "topic": "Privacy",
+      "script": "I want to talk about something that concerns me deeply—workplace monitoring and digital privacy. Many companies today monitor their employees constantly: they track keystrokes, monitor websites visited, log bathroom breaks through card access, and even use AI to analyze email and chat conversations. The argument is usually that this improves productivity and security, but I think it's gone too far. Yes, employers have legitimate security concerns, but the level of surveillance we're accepting is unprecedented. When employees feel constantly watched, it creates anxiety and erodes trust. Studies show that excessive monitoring actually decreases productivity and morale. Workers spend time trying to appear productive rather than actually being productive. Moreover, there's a moral issue here. As an employee, you're a person, not a machine to be optimized. You deserve privacy and dignity at work. I'm not arguing against all monitoring—reasonable security measures are necessary. But there's a middle ground between trusting employees completely and treating them like suspects. Companies that have implemented less invasive monitoring policies actually report higher employee satisfaction and retention. So my position is this: employers should use targeted monitoring only where necessary for genuine security reasons, not blanket surveillance of everything everyone does. Trust and respect for employee privacy create better workplaces.",
+      "questions": [
+        {
+          "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
+          "options": ["It's too expensive", "It has gone too far in terms of surveillance", "It doesn't improve security", "It's ineffective"],
+          "correctAnswer": "It has gone too far in terms of surveillance",
+          "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far."
+        },
+        {
+          "prompt": "According to the speaker, what is the claimed reason for workplace monitoring?",
+          "options": ["To reduce wages", "To improve productivity and security", "To prevent theft", "To track attendance"],
+          "correctAnswer": "To improve productivity and security",
+          "explanation": "The speaker mentions that companies argue monitoring improves productivity and security."
+        },
+        {
+          "prompt": "What does the speaker claim happens when employees feel constantly watched?",
+          "options": ["They work harder", "It creates anxiety and erodes trust", "They become more efficient", "They communicate better"],
+          "correctAnswer": "It creates anxiety and erodes trust",
+          "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust."
+        },
+        {
+          "prompt": "What does research show about excessive monitoring and productivity?",
+          "options": ["It increases productivity", "It decreases productivity and morale", "It has no effect", "It improves communication"],
+          "correctAnswer": "It decreases productivity and morale",
+          "explanation": "Studies show that excessive monitoring actually decreases productivity and morale."
+        },
+        {
+          "prompt": "What solution does the speaker propose?",
+          "options": ["No monitoring at all", "Complete transparency monitoring", "Targeted monitoring only where necessary", "Random monitoring"],
+          "correctAnswer": "Targeted monitoring only where necessary",
+          "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security."
+        },
+        {
+          "prompt": "What do companies with less invasive monitoring report?",
+          "options": ["Lower profits", "Higher employee satisfaction and retention", "More security issues", "Reduced efficiency"],
+          "correctAnswer": "Higher employee satisfaction and retention",
+          "explanation": "The speaker mentions companies with less invasive monitoring report higher satisfaction and retention."
+        }
+      ]
+    },
+    {
+      "title": "Universal Basic Income Feasibility",
+      "topic": "Economics",
+      "script": "I want to discuss Universal Basic Income, or UBI, and why I believe it could work in Canada. The concept is straightforward: every citizen receives a regular, unconditional cash payment from the government. Now, I know people immediately worry about the cost, but let me address that. First, UBI could replace many existing welfare programs that are expensive to administer. The bureaucracy involved in means-testing and eligibility verification costs billions. UBI would be simpler and less wasteful. Second, the economic stimulus of putting money in people's hands is significant. When people have financial security, they spend more, which supports businesses and creates jobs. Third, UBI addresses real problems: poverty, economic instability, and lack of opportunity. We've seen pilot projects in Kenya, Finland, and Canada that show positive outcomes. In Kenya, UBI increased business formation by 32 percent. In Finland, participants reported better mental health and less anxiety. Some worry it will make people lazy, but that's not supported by evidence. People want purpose and contribution, not just money. What UBI does is give them the freedom to pursue education, care for family, or start businesses without desperation. The real question isn't whether we can afford UBI—it's whether we can afford not to implement it. Rising inequality and automation are creating unprecedented challenges.",
+      "questions": [
+        {
+          "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
+          "options": ["Temporary welfare assistance", "Government loans with repayment", "Regular unconditional cash payment to all citizens", "Employer-provided income supplements"],
+          "correctAnswer": "Regular unconditional cash payment to all citizens",
+          "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment."
+        },
+        {
+          "prompt": "How could UBI reduce government costs according to the speaker?",
+          "options": ["By reducing salaries", "By replacing expensive welfare programs", "By cutting military spending", "By reducing taxes"],
+          "correctAnswer": "By replacing expensive welfare programs",
+          "explanation": "The speaker argues UBI could replace many existing welfare programs and reduce administrative costs."
+        },
+        {
+          "prompt": "What economic effect does the speaker claim UBI would have?",
+          "options": ["It would decrease spending", "Providing financial security would stimulate spending and job creation", "It would reduce business activity", "It would increase unemployment"],
+          "correctAnswer": "Providing financial security would stimulate spending and job creation",
+          "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs."
+        },
+        {
+          "prompt": "By what percentage did business formation increase in the Kenya pilot?",
+          "options": ["22 percent", "27 percent", "32 percent", "38 percent"],
+          "correctAnswer": "32 percent",
+          "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent."
+        },
+        {
+          "prompt": "What health benefit did participants report in the Finland pilot?",
+          "options": ["Increased energy", "Better mental health and less anxiety", "Improved sleep", "Reduced medication needs"],
+          "correctAnswer": "Better mental health and less anxiety",
+          "explanation": "In Finland, participants reported better mental health and less anxiety."
+        },
+        {
+          "prompt": "What concern does the speaker directly address about UBI?",
+          "options": ["It would increase inflation", "It would make people lazy", "It would reduce work motivation", "Both B and C"],
+          "correctAnswer": "It would make people lazy",
+          "explanation": "The speaker specifically addresses the concern that UBI would make people lazy and disputes this."
+        }
+      ]
+    },
+    {
+      "title": "Climate Migration and Urban Planning",
+      "topic": "Environment",
+      "script": "Climate change is already forcing large-scale human migration, and we need to prepare for it now. Rising sea levels, extreme weather, and changing precipitation patterns are making entire regions uninhabitable. We're not just talking about future problems—this is happening today. Small island nations are literally disappearing. Coastal cities are experiencing increased flooding. Agricultural regions are becoming deserts. Where will these people go? History shows us that unplanned migration creates chaos: overcrowded cities, slums, resource conflicts, and instability. I believe cities and countries need to proactively plan for climate migration. This means developing infrastructure and housing in climate-resilient areas, creating economic opportunities for migrants, and managing population flows thoughtfully. Canada and the northern regions of other countries will likely become more desirable as climate conditions shift. Rather than letting this happen chaotically, we should be designing inclusive urban expansion, building climate-resilient communities, and preparing labor markets for population shifts. Some people see climate migration as a negative, but it's inevitable. The real question is whether we manage it responsibly or let it cause humanitarian crises. I'm advocating for proactive planning now. We should be expanding housing, infrastructure, and economic capacity in climate-safe regions. We should also help other countries adapt in place where possible. But denying this reality and refusing to plan is irresponsible.",
+      "questions": [
+        {
+          "prompt": "What causes is the speaker attributing to forced migration?",
+          "options": ["Economic opportunity", "Rising sea levels, extreme weather, and changing precipitation", "Political conflicts", "Educational opportunities"],
+          "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
+          "explanation": "The speaker identifies these climate factors as forcing migration."
+        },
+        {
+          "prompt": "What examples does the speaker provide of current migration impacts?",
+          "options": ["Agricultural improvements", "Reduced urbanization", "Small island nations disappearing and coastal flooding", "Increased employment"],
+          "correctAnswer": "Small island nations disappearing and coastal flooding",
+          "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts."
+        },
+        {
+          "prompt": "What consequences does the speaker warn about with unplanned migration?",
+          "options": ["Economic growth", "Overcrowded cities, slums, and resource conflicts", "Improved infrastructure", "Better job opportunities"],
+          "correctAnswer": "Overcrowded cities, slums, and resource conflicts",
+          "explanation": "The speaker warns that unplanned migration creates overcrowding, slums, and conflicts."
+        },
+        {
+          "prompt": "Which regions does the speaker believe will become more desirable?",
+          "options": ["Equatorial regions", "Small island nations", "Canada and northern regions", "Coastal areas"],
+          "correctAnswer": "Canada and northern regions",
+          "explanation": "The speaker states Canada and northern regions will likely become more desirable."
+        },
+        {
+          "prompt": "What does the speaker advocate for regarding climate-safe regions?",
+          "options": ["Restricting population growth", "Expanding housing, infrastructure, and economic capacity", "Limiting migration", "Maintaining current conditions"],
+          "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
+          "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity."
+        },
+        {
+          "prompt": "What is the speaker's main position on climate migration?",
+          "options": ["It won't happen", "It should be stopped", "It's inevitable and should be managed responsibly", "It's not a real problem"],
+          "correctAnswer": "It's inevitable and should be managed responsibly",
+          "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning."
+        }
+      ]
+    },
+    {
+      "title": "Algorithmic Bias in Hiring Systems",
+      "topic": "Technology",
+      "script": "Algorithmic bias in hiring is a serious problem that companies are using as a shortcut without taking responsibility for the consequences. Many organizations now use AI systems to screen resumes, assess candidate fit, and predict job performance. These systems seem objective—they're just mathematics, right? Wrong. These algorithms are trained on historical data, which includes decades of human bias. If women were historically excluded from leadership positions, the algorithm learns that pattern and replicates it. If certain demographics were underrepresented in technical roles, the algorithm reinforces that exclusion. Studies have documented this repeatedly. Amazon famously scrapped their hiring algorithm when they discovered it was discriminating against women. Google's recruiting algorithm showed bias against applicants from historically black colleges. These weren't intentional—that's precisely the problem. The systems' creators didn't set out to discriminate; they just trusted that math was unbiased, when in reality, data is never neutral. My argument is this: companies should not deploy algorithmic hiring systems without rigorous bias testing and external auditing. If you use an algorithm to screen candidates, you're making a business decision, and you're responsible for its outcomes. You can't hide behind the algorithm or claim you didn't know it was biased. Moreover, algorithms eliminate human judgment, nuance, and chance. They can't capture potential, resilience, or growth. Some of the most successful employees wouldn't have passed an algorithm. We need a return to more human-centered hiring while using algorithms cautiously and with oversight.",
+      "questions": [
+        {
+          "prompt": "Why does the speaker claim algorithms can be biased?",
+          "options": ["They're not programmed correctly", "They're trained on historical data that includes human bias", "They lack computing power", "They're intentionally designed to discriminate"],
+          "correctAnswer": "They're trained on historical data that includes human bias",
+          "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns."
+        },
+        {
+          "prompt": "What did Amazon discover about their hiring algorithm?",
+          "options": ["It was too slow", "It was discriminating against women", "It was too expensive", "It wasn't identifying qualified candidates"],
+          "correctAnswer": "It was discriminating against women",
+          "explanation": "Amazon discovered their algorithm was discriminating against women and scrapped it."
+        },
+        {
+          "prompt": "What was the issue with Google's recruiting algorithm?",
+          "options": ["It was too strict", "It showed bias against applicants from historically black colleges", "It wasn't identifying talent", "It was too expensive"],
+          "correctAnswer": "It showed bias against applicants from historically black colleges",
+          "explanation": "Google's algorithm showed bias against applicants from historically black colleges."
+        },
+        {
+          "prompt": "What key point does the speaker make about data?",
+          "options": ["Data is always objective", "Data is never neutral and includes bias", "Data should never be used in hiring", "Data is a recent invention"],
+          "correctAnswer": "Data is never neutral and includes bias",
+          "explanation": "The speaker argues data is never neutral and carries historical bias."
+        },
+        {
+          "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
+          "options": ["Use them immediately", "Train employees on algorithms", "Conduct rigorous bias testing and external auditing", "Ignore algorithm concerns"],
+          "correctAnswer": "Conduct rigorous bias testing and external auditing",
+          "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment."
+        },
+        {
+          "prompt": "What human qualities does the speaker claim algorithms can't capture?",
+          "options": ["Education level", "Potential, resilience, and growth", "Work experience", "Technical skills"],
+          "correctAnswer": "Potential, resilience, and growth",
+          "explanation": "Algorithms can't capture potential, resilience, or the capacity for growth."
+        }
+      ]
+    },
+    {
+      "title": "Mental Health Parity in Insurance Coverage",
+      "topic": "Healthcare",
+      "script": "Mental health needs to be treated with the same importance as physical health in our insurance system. We talk about mental health awareness, but when it comes to actual coverage, it's dramatically underfunded. Most insurance plans cover mental health at lower rates than physical health. If you have a broken arm, insurance covers months of physical therapy. If you have depression or anxiety, you get maybe 10 sessions of therapy a year, and psychologist visits might only be 50 percent covered. This creates barriers. Many people avoid treatment because they can't afford it, and their conditions worsen. The economic impact is massive. Mental health issues cost the economy 51 billion dollars annually in Canada through lost productivity, emergency services, and hospitalizations. Yet we invest a fraction of that in prevention and treatment. Here's what frustrates me most: we have effective treatments. Therapy works. Medication helps. But access is limited by insurance coverage. A person struggling with bipolar disorder shouldn't have to choose between therapy and rent. Insurance companies argue coverage limits are necessary for cost control, but that's shortsighted. When people get mental health treatment early, they use fewer emergency services, work more, and contribute to society. The ROI on mental health coverage is actually positive. I'm advocating for mandatory parity—insurance companies should cover mental health at the same level as physical health. This means removing visit limits, lowering copayments, and covering evidence-based treatments. It's not just compassionate; it's economically smart.",
+      "questions": [
+        {
+          "prompt": "What disparity does the speaker identify in insurance coverage?",
+          "options": ["Mental health is covered more than physical", "Physical health is covered more than mental health", "They're equally covered", "Neither is adequately covered"],
+          "correctAnswer": "Physical health is covered more than mental health",
+          "explanation": "The speaker states mental health is covered at lower rates than physical health."
+        },
+        {
+          "prompt": "What example does the speaker use to illustrate the disparity?",
+          "options": ["Cancer treatment vs. therapy", "Broken arm coverage vs. limited mental health sessions", "Hospital stays vs. doctor visits", "Prescription drugs vs. counseling"],
+          "correctAnswer": "Broken arm coverage vs. limited mental health sessions",
+          "explanation": "The speaker uses physical therapy for broken arms compared to limited therapy sessions."
+        },
+        {
+          "prompt": "What is the annual economic cost of mental health issues in Canada?",
+          "options": ["25 billion dollars", "38 billion dollars", "51 billion dollars", "67 billion dollars"],
+          "correctAnswer": "51 billion dollars",
+          "explanation": "Mental health issues cost 51 billion dollars annually in Canada."
+        },
+        {
+          "prompt": "What is the source of these costs according to the speaker?",
+          "options": ["Insurance premiums only", "Lost productivity, emergency services, and hospitalizations", "Medication costs", "Administrative expenses"],
+          "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
+          "explanation": "Costs come from lost productivity, emergency services, and hospitalizations."
+        },
+        {
+          "prompt": "What economic argument does the speaker make for mental health coverage?",
+          "options": ["It's cheaper than physical health", "Early treatment has positive ROI", "It reduces insurance profits", "It's cost-neutral"],
+          "correctAnswer": "Early treatment has positive ROI",
+          "explanation": "The speaker argues mental health coverage has a positive return on investment."
+        },
+        {
+          "prompt": "What does the speaker advocate companies implement?",
+          "options": ["Lower coverage for mental health", "Mandatory parity in coverage", "Removal of all limits", "Voluntary coverage only"],
+          "correctAnswer": "Mandatory parity in coverage",
+          "explanation": "The speaker advocates for mandatory parity—equal coverage for mental and physical health."
+        }
+      ]
+    }
+  ]
+}

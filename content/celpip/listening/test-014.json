@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 14",
+  "title": "CELPIP General Listening — Practice Test 14",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-014-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Reporting a Water Leak in an Apartment",
-      "text": "Resident: Hello, I need to report a water leak. It started this morning under my kitchen sink. There's water pooling on the floor.\nSuperintendent: I'll send someone right away. Can you confirm your unit number?\nResident: It's unit 4B on the fourth floor.\nSuperintendent: Got it. And is the leak a slow drip or is it flowing steadily?\nResident: It's a steady drip. I've put a bucket under it, but it's filling up about every two hours.\nSuperintendent: That sounds like a loose connection on the supply line. The plumber we use is available this afternoon. Would two o'clock work for you?\nResident: Yes, that's fine. Do I need to be home?\nSuperintendent: Yes, please be there so the plumber can access the cabinet under the sink. Also, to be safe, turn off the shut-off valve under the sink — there's usually a small handle on the left pipe.\nResident: I found it and turned it off. The dripping has stopped for now.\nSuperintendent: Perfect. That confirms the problem is with the supply line, not the drain. The plumber will replace the fitting. It should take under an hour.",
+      "title": "Medical Appointment Rescheduling",
+      "text": "Patient: Hello, I need to reschedule my appointment with Dr. Singh. Receptionist: Of course. Can I have your patient ID? Patient: It's P-9847. My appointment is next Tuesday at 2 PM, but I have a conflict. Receptionist: Let me pull that up. Yes, I see the appointment for June 10th at 2 PM. What days and times work better for you? Patient: Ideally, early morning, like 8 or 9 AM. I work afternoons. Receptionist: Let me check the doctor's schedule. Dr. Singh has an opening on Friday, June 13th at 8:30 AM. Would that suit you? Patient: Yes, that works perfectly. Receptionist: Great. I'm canceling the Tuesday 2 PM slot and booking you for Friday, June 13th at 8:30 AM. Your appointment is for a regular checkup, is that correct? Patient: Yes, and also to discuss my recent blood work results. Receptionist: Perfect. I'll add a note that you want to review the blood work. You'll need to arrive ten minutes early to fill out any updated forms. Patient: Will Dr. Singh have my test results by then? Receptionist: Yes, they'll definitely be in her file. The lab sent them in yesterday. Is there anything else? Patient: No, that's everything. Thank you.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-014-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Choosing Between Two Job Offers",
-      "text": "Priya: I'm in a tough spot. I got two job offers this week and I have until Friday to decide.\nKevin: That's a great problem to have! What are the offers?\nPriya: One is a junior marketing role at a tech startup. Good salary, lots of creative freedom, but the company is only two years old and a bit risky. The other is a coordinator position at a non-profit — lower salary, but excellent benefits and a guaranteed pension.\nKevin: What matters more to you right now — financial security or career growth?\nPriya: Honestly, both. I have student loans to pay off, but I also don't want to be stuck in a job that goes nowhere.\nKevin: Could the non-profit lead to advancement?\nPriya: They mentioned there's a senior coordinator role that opens up every couple of years. But at the startup, if it takes off, the growth potential is huge.\nKevin: Have you factored in the commute?\nPriya: Good point — the startup is downtown, forty-five minutes each way on transit. The non-profit is ten minutes from my apartment.\nKevin: That's two hours a day you'd get back with the non-profit. That's not nothing.",
+      "title": "Fitness Class Enrollment",
+      "text": "Trainer: Welcome to the studio. Is this your first class? Maya: Yeah, I'm pretty nervous. Trainer: Don't worry, everyone starts somewhere. What's your experience with yoga? Maya: I've done some stretching at home, but never a full class like this. Trainer: That's great. Let's get you set up. We have mats over there, and grab a water bottle from the cooler. Maya: How long is the class? Trainer: It's 60 minutes total. We start with breathing exercises, warm up, then move through poses, and end with meditation. Maya: That sounds good. What's the hardest part for beginners? Trainer: Usually it's learning to listen to your body. Don't push too hard too fast. If something hurts, modify it or take a break. Maya: Good to know. How many classes should I take per week to see results? Trainer: For best results, aim for three times a week. Even once a week is great though. Maya: I'll start with twice a week and see how it goes. Trainer: Perfect. That's a solid plan. Let's get started.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-014-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "How to Use the Provincial Health Insurance System",
-      "text": "Welcome to this information session on using the provincial health insurance system. If you are a permanent resident or Canadian citizen living in this province, you are entitled to a provincial health card, which covers the cost of most medically necessary services.\n\nTo obtain your health card, visit a ServiceOntario or equivalent provincial office with two pieces of identification — one must be a government-issued photo ID, such as a passport or permanent resident card, and one must show your current address, such as a utility bill or bank statement. New applicants typically wait a three-month period before coverage begins, so it is important to apply as soon as possible after arriving.\n\nYour health card covers visits to a family doctor, specialist consultations when referred by your doctor, emergency room visits, hospital stays, and diagnostic tests including X-rays and blood work. It does not automatically cover prescription drugs, dental care, or vision care, which are typically covered through separate private insurance plans or provincial drug benefit programmes for qualifying residents.\n\nIf you do not have a family doctor, you can register with the Health Care Connect programme, which matches patients to available physicians. In the meantime, walk-in clinics and urgent care centres can treat most non-emergency conditions and are also covered by your health card.\n\nAlways carry your health card when attending medical appointments, and report any change of address to the provincial health authority to ensure your records are current.",
+      "title": "City Library Card Registration",
+      "text": "Hello, and welcome to the City Library system. I'm here to explain our library card registration process. A library card gives you access to millions of digital and physical resources. Registration is free and open to all residents with proof of address. Bring a government-issued ID and a recent utility bill or lease agreement. Visit any of our twelve branch locations during regular hours, Monday through Saturday, 9 AM to 6 PM, and Sunday 1 to 5 PM. Our main branch is downtown on Oak Street. Registration takes about ten minutes. Once registered, you can immediately borrow books, DVDs, and audiobooks. You're allowed up to twenty items at a time. Loan periods are three weeks for books, one week for DVDs, and four weeks for audiobooks. Late fees are twenty-five cents per day for books. Digital resources such as e-books and e-magazines are also available. Access them through our website anytime. Many online databases offer academic journals and local news archives. Children under eighteen need parental consent on their registration form. We also offer free Wi-Fi and computer access at all branches. Printing is available at ten cents per page. For questions, visit the information desk or call our hotline at 416-555-0198.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-014-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: Province Launches New Childcare Subsidy Programme",
-      "text": "The provincial government announced a new childcare subsidy programme this morning, aimed at reducing childcare costs for families earning below ninety thousand dollars per year. Under the new programme, eligible families will pay no more than ten dollars per day for regulated childcare, beginning on the first of next month.\n\nThe Minister of Families said the programme is expected to benefit approximately forty thousand children across the province in its first year. Priority access will be given to families with children under the age of six, as well as families currently on waitlists at participating childcare centres.\n\nTo apply, parents must submit an application through the provincial government's online portal and provide proof of income from the previous tax year. Applications will be processed within fifteen business days, and approved families will be notified by email.\n\nChild-care providers interested in joining the programme must sign a participation agreement and comply with the province's staffing and curriculum standards. The government said that over three hundred licenced providers have already registered ahead of the launch.\n\nOpposition critics raised concerns that the programme does not extend to informal care arrangements, such as home-based care providers who are not licenced. The government indicated it plans to expand eligibility in future years.",
+      "title": "Quebec Education Reform Approved",
+      "text": "The Quebec National Assembly has approved a major education reform bill with broad cross-party support. The legislation, Bill 247, focuses on modernizing curriculum standards and addressing teacher shortages. Under the new framework, high schools will introduce mandatory digital literacy courses starting next September. The reform also increases teacher salaries by 8 percent over four years to attract and retain educators. Currently, Quebec faces a shortage of approximately 3,500 teachers, particularly in mathematics, sciences, and French language instruction. The bill allocates 2.1 billion dollars for infrastructure improvements to school facilities. Education Minister Jean-François Roberge noted that 87 percent of school boards support the reforms. Parents will have increased choice in selecting specialized program options for their children. Pilot projects will begin in 15 schools across the province to test innovative teaching methods before full implementation in 2027.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-014-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Is Social Media Good or Bad for Teenagers?",
-      "text": "Host: Today's discussion focuses on social media and its impact on teenagers. With me are two commentators: Diane, a child development researcher, and Tom, who advocates for digital literacy education. Diane, let's start with you — is social media harmful to teenagers?\nDiane: The research is quite clear that heavy social media use is associated with higher rates of anxiety, depression, and sleep disruption in teenagers, particularly for girls. The problem isn't the technology itself — it's the design. Platforms are deliberately built to maximise engagement, which means maximising the time young people spend comparing themselves to others.\nHost: Tom, do you think the solution is restricting access?\nTom: I strongly disagree with blanket restrictions. The answer is education. We need to teach teenagers to be critical consumers of digital content — how algorithms work, how images are edited, what business models drive these platforms. Banning access doesn't develop those skills; it just delays the problem.\nHost: Diane, what do you say to that?\nDiane: I agree that education is necessary, but it is not sufficient on its own. A thirteen-year-old is neurologically not equipped to resist the deliberate manipulation that these platforms apply. We need age-appropriate restrictions alongside digital literacy — not instead of it.\nHost: Tom, any response?\nTom: The issue is that restriction without education creates what I call the forbidden fruit effect — the moment restrictions are lifted, young people binge. I've seen this in schools that blocked social media completely and then found students spending even more time online at weekends to compensate.\nHost: Thank you both. It seems there is agreement on the need for education, but a real divide on the role of restrictions.",
+      "title": "Corporate Training Program Redesign",
+      "text": "Human Resources Director Michelle: We're considering a complete redesign of our corporate training program. Our current approach is one-size-fits-all classroom training, and it's not effective. We want to move toward personalized learning paths and micro-credentials. The investment would be about 3.5 million dollars over three years, but studies show this approach increases employee retention by up to 35 percent.\n\nDepartment Manager Kevin: I'm supportive of better training, but I'm skeptical about the cost and timeline. We're already stretched thin with current projects. Three years seems like a long time to see results. How quickly can we expect to see improvements in employee performance and retention?\n\nEmployee Development Specialist Nina: Kevin, the timeline actually makes sense. Year one is for system setup and rolling out the first pilot programs. By year two, we'll have meaningful data. We've seen in comparable companies that employee engagement scores improve within six months of launching personalized learning. Retention improvements typically follow within 12 to 18 months as employees feel more invested in their development.\n\nCEO David: This aligns with our strategic goals. We're losing skilled employees to competitors, and part of the issue is they don't see clear development paths. If this program helps us retain talent and develop leadership from within, the 3.5 million investment is justified. But we need to ensure accountability. Nina, can you outline measurable metrics we'll track?",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-014-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: Why Small Towns Deserve More Investment",
-      "text": "For decades, government investment in infrastructure, healthcare, and education has flowed predominantly toward major cities. This concentration of resources has created a growing divide between the opportunities available to people in urban centres and those living in smaller towns and rural communities. I believe this imbalance is not only unfair but economically short-sighted.\n\nConsider healthcare. In most Canadian cities, residents have access to walk-in clinics, specialist hospitals, and urgent care centres within a reasonable distance. In small towns, the nearest hospital may be an hour's drive away. Rural residents have higher rates of late-stage cancer diagnoses precisely because early detection requires access to diagnostic services that simply are not available locally.\n\nEducation tells a similar story. Urban schools are often better funded, have access to more experienced teachers, and offer a wider range of programmes and extracurricular activities. Rural students frequently travel long distances to school and have fewer post-secondary options nearby. This creates a pattern in which talented young people leave their home communities for cities — and rarely return.\n\nCritics of increased rural investment argue that the cost per person is too high. This logic is flawed. The cost of maintaining a dispersed population is not a reason to abandon it — it is an argument for smarter, targeted investment in sustainable local infrastructure.\n\nIf we are serious about equality of opportunity, the postal code where someone is born should not determine the quality of healthcare, education, or economic opportunity available to them. Small towns and rural communities deserve better — not out of sentiment, but out of a genuine commitment to a more equitable society.",
+      "title": "Algorithmic Bias in Hiring Systems",
+      "text": "Algorithmic bias in hiring is a serious problem that companies are using as a shortcut without taking responsibility for the consequences. Many organizations now use AI systems to screen resumes, assess candidate fit, and predict job performance. These systems seem objective—they're just mathematics, right? Wrong. These algorithms are trained on historical data, which includes decades of human bias. If women were historically excluded from leadership positions, the algorithm learns that pattern and replicates it. If certain demographics were underrepresented in technical roles, the algorithm reinforces that exclusion. Studies have documented this repeatedly. Amazon famously scrapped their hiring algorithm when they discovered it was discriminating against women. Google's recruiting algorithm showed bias against applicants from historically black colleges. These weren't intentional—that's precisely the problem. The systems' creators didn't set out to discriminate; they just trusted that math was unbiased, when in reality, data is never neutral. My argument is this: companies should not deploy algorithmic hiring systems without rigorous bias testing and external auditing. If you use an algorithm to screen candidates, you're making a business decision, and you're responsible for its outcomes. You can't hide behind the algorithm or claim you didn't know it was biased. Moreover, algorithms eliminate human judgment, nuance, and chance. They can't capture potential, resilience, or growth. Some of the most successful employees wouldn't have passed an algorithm. We need a return to more human-centered hiring while using algorithms cautiously and with oversight.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-014-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What is the problem the resident is reporting?",
+      "prompt": "What is the patient's ID?",
       "options": [
-        "A broken window",
-        "A water leak under the kitchen sink",
-        "A faulty heating system",
-        "A blocked toilet"
+        "P-8479",
+        "P-9847",
+        "P-9748",
+        "P-8794"
       ],
-      "correctAnswer": "A water leak under the kitchen sink",
-      "explanation": "The resident calls to report water pooling under the kitchen sink.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "P-9847",
+      "explanation": "Patient provides their ID as 'P-9847.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-014-q02",
       "audioScriptId": "celpip-listening-014-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How fast is the bucket filling up?",
+      "prompt": "What was the original appointment date and time?",
       "options": [
-        "Every thirty minutes",
-        "Every hour",
-        "Every two hours",
-        "Every day"
+        "Tuesday at 1 PM",
+        "Tuesday at 2 PM",
+        "Wednesday at 2 PM",
+        "Thursday at 2 PM"
       ],
-      "correctAnswer": "Every two hours",
-      "explanation": "The resident says the bucket fills up about every two hours.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Tuesday at 2 PM",
+      "explanation": "Patient mentions the appointment is 'next Tuesday at 2 PM' and receptionist confirms 'June 10th at 2 PM.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-014-q03",
       "audioScriptId": "celpip-listening-014-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent suspect the problem is?",
+      "prompt": "When does the patient prefer to schedule appointments?",
       "options": [
-        "A cracked drain pipe",
-        "A loose connection on the supply line",
-        "A broken water heater",
-        "A faulty pressure valve"
+        "Late afternoon",
+        "Evening",
+        "Early morning, 8 or 9 AM",
+        "Midday"
       ],
-      "correctAnswer": "A loose connection on the supply line",
-      "explanation": "The superintendent says it sounds like a loose connection on the supply line.",
+      "correctAnswer": "Early morning, 8 or 9 AM",
+      "explanation": "Patient states 'Ideally, early morning, like 8 or 9 AM. I work afternoons.'",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-014-q04",
       "audioScriptId": "celpip-listening-014-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "When is the plumber available?",
+      "prompt": "What is the new appointment date and time?",
       "options": [
-        "This morning",
-        "Tomorrow morning",
-        "Two o'clock this afternoon",
-        "Next week"
+        "Friday, June 6th at 8:30 AM",
+        "Friday, June 12th at 8:30 AM",
+        "Friday, June 13th at 8:30 AM",
+        "Friday, June 20th at 8:30 AM"
       ],
-      "correctAnswer": "Two o'clock this afternoon",
-      "explanation": "The superintendent says the plumber is available at two o'clock this afternoon.",
+      "correctAnswer": "Friday, June 13th at 8:30 AM",
+      "explanation": "Receptionist books the new appointment for 'Friday, June 13th at 8:30 AM.'",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-014-q05",
       "audioScriptId": "celpip-listening-014-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent ask the resident to do immediately?",
+      "prompt": "What should the patient do to prepare for the appointment?",
       "options": [
-        "Call a plumber directly",
-        "Leave the apartment",
-        "Turn off the shut-off valve",
-        "Open the windows"
+        "Fast for 12 hours",
+        "Bring insurance documents only",
+        "Arrive ten minutes early to fill out updated forms",
+        "Call to confirm the day before"
       ],
-      "correctAnswer": "Turn off the shut-off valve",
-      "explanation": "The superintendent advises turning off the shut-off valve under the sink.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Arrive ten minutes early to fill out updated forms",
+      "explanation": "Receptionist states 'You'll need to arrive ten minutes early to fill out any updated forms.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-014-q06",
       "audioScriptId": "celpip-listening-014-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the dripping stopping confirm?",
+      "prompt": "When were the patient's blood work results sent to the clinic?",
       "options": [
-        "The drain is blocked",
-        "The pipe is cracked",
-        "The problem is with the supply line, not the drain",
-        "The water pressure is too high"
+        "This morning",
+        "Yesterday",
+        "Last week",
+        "This afternoon"
       ],
-      "correctAnswer": "The problem is with the supply line, not the drain",
-      "explanation": "The superintendent says this confirms the problem is with the supply line.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Yesterday",
+      "explanation": "Receptionist confirms 'The lab sent them in yesterday.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-014-q07",
       "audioScriptId": "celpip-listening-014-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long is the repair expected to take?",
+      "prompt": "What reasons does the patient have for the appointment?",
       "options": [
-        "Less than one hour",
-        "Two to three hours",
-        "All afternoon",
-        "Several days"
+        "Blood work results only",
+        "Regular checkup only",
+        "Regular checkup and to discuss recent blood work results",
+        "Prescription refill"
       ],
-      "correctAnswer": "Less than one hour",
-      "explanation": "The superintendent says it should take under an hour.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Regular checkup and to discuss recent blood work results",
+      "explanation": "Patient states 'also to discuss my recent blood work results' and receptionist confirms it's a regular checkup.",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-014-q08",
       "audioScriptId": "celpip-listening-014-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why does the resident need to be home for the repair?",
+      "prompt": "Who is the patient's doctor?",
       "options": [
-        "To pay the plumber in cash",
-        "To sign a repair agreement",
-        "To give the plumber access to the cabinet",
-        "To watch the repair procedure"
+        "Dr. Kumar",
+        "Dr. Singh",
+        "Dr. Patel",
+        "Dr. Sharma"
       ],
-      "correctAnswer": "To give the plumber access to the cabinet",
-      "explanation": "The superintendent says the plumber needs to access the cabinet under the sink.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Dr. Singh",
+      "explanation": "Patient mentions wanting to reschedule with 'Dr. Singh' throughout the conversation.",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-014-q09",
       "audioScriptId": "celpip-listening-014-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How many job offers has Priya received?",
+      "prompt": "Is this Maya's first yoga class?",
       "options": [
-        "One",
-        "Two",
-        "Three",
-        "Four"
+        "Yes",
+        "No, she's taken classes before",
+        "She's never tried yoga",
+        "Not specified"
       ],
-      "correctAnswer": "Two",
-      "explanation": "Priya says she received two job offers this week.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Yes",
+      "explanation": "Trainer asks 'Is this your first class?' and Maya confirms 'Yeah.'",
+      "difficulty": "medium",
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-014-q10",
       "audioScriptId": "celpip-listening-014-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What concern does Priya have about the startup?",
+      "prompt": "How long is the class?",
       "options": [
-        "The salary is too low",
-        "It is located too far away",
-        "It is only two years old and a bit risky",
-        "The role lacks creative freedom"
+        "30 minutes",
+        "45 minutes",
+        "60 minutes",
+        "90 minutes"
       ],
-      "correctAnswer": "It is only two years old and a bit risky",
-      "explanation": "Priya says the startup is only two years old and a bit risky.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "60 minutes",
+      "explanation": "Trainer states 'It's 60 minutes total.'",
+      "difficulty": "medium",
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-014-q11",
       "audioScriptId": "celpip-listening-014-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What advantage does the non-profit offer over the startup?",
+      "prompt": "What is the structure of the class?",
       "options": [
-        "Higher salary",
-        "More creative freedom",
-        "Better benefits and a pension",
-        "Faster career advancement"
+        "Only poses and stretching",
+        "Breathing, warm-up, poses, meditation",
+        "Meditation and cool-down only",
+        "High-intensity cardio"
       ],
-      "correctAnswer": "Better benefits and a pension",
-      "explanation": "Priya says the non-profit has excellent benefits and a guaranteed pension.",
+      "correctAnswer": "Breathing, warm-up, poses, meditation",
+      "explanation": "Trainer describes 'We start with breathing exercises, warm up, then move through poses, and end with meditation.'",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-014-q12",
       "audioScriptId": "celpip-listening-014-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How long is the commute to the startup?",
+      "prompt": "What advice does the trainer give about pain?",
       "options": [
-        "Ten minutes",
-        "Twenty minutes",
-        "Forty-five minutes each way",
-        "Over an hour each way"
+        "Push through the pain",
+        "Stop immediately",
+        "Modify or take a break if something hurts",
+        "Use ice after class"
       ],
-      "correctAnswer": "Forty-five minutes each way",
-      "explanation": "Priya says the startup is forty-five minutes each way on transit.",
+      "correctAnswer": "Modify or take a break if something hurts",
+      "explanation": "Trainer advises 'If something hurts, modify it or take a break.'",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-014-q13",
       "audioScriptId": "celpip-listening-014-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Kevin point out about commuting time?",
+      "prompt": "How many classes per week does Maya plan to attend?",
       "options": [
-        "It adds to fitness levels",
-        "It is a chance to read",
-        "The non-profit saves her two hours a day",
-        "Transit fares are expensive"
+        "Once a week",
+        "Twice a week",
+        "Three times a week",
+        "Daily"
       ],
-      "correctAnswer": "The non-profit saves her two hours a day",
-      "explanation": "Kevin says Priya would get back two hours a day by working closer to home.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Twice a week",
+      "explanation": "Maya states 'I'll start with twice a week and see how it goes.'",
+      "difficulty": "medium",
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-014-q14",
       "audioScriptId": "celpip-listening-014-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is entitled to a provincial health card?",
+      "prompt": "Is there a cost for a library card?",
       "options": [
-        "Only Canadian citizens",
-        "Permanent residents and Canadian citizens",
-        "International students only",
-        "Anyone living in Canada"
+        "Yes, $10",
+        "Yes, $20",
+        "No, it's free",
+        "Yes, $5"
       ],
-      "correctAnswer": "Permanent residents and Canadian citizens",
-      "explanation": "The speaker says permanent residents or Canadian citizens are entitled to a health card.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "No, it's free",
+      "explanation": "The guide states 'Registration is free and open to all residents.'",
+      "difficulty": "medium",
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-014-q15",
       "audioScriptId": "celpip-listening-014-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is one document required to apply for a health card?",
+      "prompt": "How many branch locations does the library system have?",
       "options": [
-        "A letter from an employer",
-        "A government-issued photo ID",
-        "A birth certificate",
-        "A utility bill from a previous province"
+        "Eight",
+        "Ten",
+        "Twelve",
+        "Fifteen"
       ],
-      "correctAnswer": "A government-issued photo ID",
-      "explanation": "The speaker says one of the two IDs must be a government-issued photo ID.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Twelve",
+      "explanation": "The guide mentions 'Visit any of our twelve branch locations.'",
+      "difficulty": "medium",
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-014-q16",
       "audioScriptId": "celpip-listening-014-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long must new applicants typically wait before coverage begins?",
+      "prompt": "What is the Sunday operating hour?",
       "options": [
-        "One week",
-        "One month",
-        "Three months",
-        "Six months"
+        "10 AM to 6 PM",
+        "1 PM to 5 PM",
+        "12 PM to 4 PM",
+        "2 PM to 6 PM"
       ],
-      "correctAnswer": "Three months",
-      "explanation": "The speaker says there is typically a three-month waiting period.",
+      "correctAnswer": "1 PM to 5 PM",
+      "explanation": "The guide specifies 'Sunday 1 to 5 PM.'",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-014-q17",
       "audioScriptId": "celpip-listening-014-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT covered by the provincial health card?",
+      "prompt": "What is the maximum number of items you can borrow?",
       "options": [
-        "Emergency room visits",
-        "Family doctor visits",
-        "Dental care",
-        "Blood work"
+        "Ten",
+        "Fifteen",
+        "Twenty",
+        "Twenty-five"
       ],
-      "correctAnswer": "Dental care",
-      "explanation": "The speaker says dental care is not automatically covered by the health card.",
+      "correctAnswer": "Twenty",
+      "explanation": "The guide states 'You're allowed up to twenty items at a time.'",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-014-q18",
       "audioScriptId": "celpip-listening-014-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is the Health Care Connect programme?",
+      "prompt": "What is the loan period for books?",
       "options": [
-        "A private insurance plan",
-        "A walk-in clinic network",
-        "A programme that matches patients to available physicians",
-        "An online pharmacy"
+        "Two weeks",
+        "Three weeks",
+        "Four weeks",
+        "Five weeks"
       ],
-      "correctAnswer": "A programme that matches patients to available physicians",
-      "explanation": "The speaker describes Health Care Connect as matching patients to available physicians.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Three weeks",
+      "explanation": "The guide specifies 'Loan periods are three weeks for books.'",
+      "difficulty": "medium",
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-014-q19",
       "audioScriptId": "celpip-listening-014-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What should residents do if their address changes?",
+      "prompt": "What is the late fee per day for books?",
       "options": [
-        "Apply for a new health card",
-        "Report the change to the provincial health authority",
-        "Contact their family doctor only",
-        "Wait until renewal time"
+        "10 cents",
+        "15 cents",
+        "20 cents",
+        "25 cents"
       ],
-      "correctAnswer": "Report the change to the provincial health authority",
-      "explanation": "The speaker says to report any change of address to keep records current.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "25 cents",
+      "explanation": "The guide states 'Late fees are twenty-five cents per day for books.'",
+      "difficulty": "medium",
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-014-q20",
       "audioScriptId": "celpip-listening-014-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Who is eligible for the new childcare subsidy?",
+      "prompt": "What is the bill number for the education reform?",
       "options": [
-        "All families with children under twelve",
-        "Families earning below ninety thousand dollars per year",
-        "Only single-parent households",
-        "Families on social assistance only"
+        "Bill 235",
+        "Bill 247",
+        "Bill 250",
+        "Bill 260"
       ],
-      "correctAnswer": "Families earning below ninety thousand dollars per year",
-      "explanation": "The report says eligible families earn below ninety thousand dollars per year.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Bill 247",
+      "explanation": "The legislation is identified as Bill 247.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-014-q21",
       "audioScriptId": "celpip-listening-014-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What is the maximum daily childcare cost under the new programme?",
+      "prompt": "When will mandatory digital literacy courses begin?",
       "options": [
-        "Five dollars",
-        "Ten dollars",
-        "Twenty dollars",
-        "Fifty dollars"
+        "This year",
+        "Next September",
+        "January 2027",
+        "September 2027"
       ],
-      "correctAnswer": "Ten dollars",
-      "explanation": "The report states families will pay no more than ten dollars per day.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Next September",
+      "explanation": "High schools will introduce mandatory digital literacy courses starting next September.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-014-q22",
       "audioScriptId": "celpip-listening-014-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Which children will receive priority access?",
+      "prompt": "By what percentage are teacher salaries being increased?",
       "options": [
-        "School-age children",
-        "Children under six and those already on waitlists",
-        "Children of essential workers",
-        "All children equally"
+        "5 percent",
+        "6 percent",
+        "8 percent",
+        "10 percent"
       ],
-      "correctAnswer": "Children under six and those already on waitlists",
-      "explanation": "The minister says priority goes to children under six and families on existing waitlists.",
+      "correctAnswer": "8 percent",
+      "explanation": "Teacher salaries will be increased by 8 percent over four years.",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-014-q23",
       "audioScriptId": "celpip-listening-014-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will approved families be notified?",
+      "prompt": "Approximately how many teachers does Quebec currently lack?",
       "options": [
-        "By post",
-        "By telephone",
-        "By email",
-        "Through their childcare provider"
+        "2,500 teachers",
+        "3,000 teachers",
+        "3,500 teachers",
+        "4,000 teachers"
       ],
-      "correctAnswer": "By email",
-      "explanation": "The report says approved families will be notified by email.",
+      "correctAnswer": "3,500 teachers",
+      "explanation": "Quebec currently faces a shortage of approximately 3,500 teachers.",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-014-q24",
       "audioScriptId": "celpip-listening-014-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What concern did opposition critics raise?",
+      "prompt": "How much money is allocated for infrastructure improvements?",
       "options": [
-        "The daily fee is too high",
-        "The programme excludes informal unlicenced home-based care",
-        "Too many providers have already registered",
-        "The programme starts too late in the year"
+        "1.5 billion dollars",
+        "1.8 billion dollars",
+        "2.1 billion dollars",
+        "2.5 billion dollars"
       ],
-      "correctAnswer": "The programme excludes informal unlicenced home-based care",
-      "explanation": "Critics say the programme does not extend to informal home-based care arrangements.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "2.1 billion dollars",
+      "explanation": "The bill allocates 2.1 billion dollars for infrastructure improvements.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-014-q25",
       "audioScriptId": "celpip-listening-014-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say is the main problem with social media platforms?",
+      "prompt": "What is the proposed investment for the training program redesign?",
       "options": [
-        "They are too expensive",
-        "They are designed to maximise engagement through comparison",
-        "They do not have enough educational content",
-        "They spread false news to teenagers"
+        "2.5 million dollars",
+        "3.0 million dollars",
+        "3.5 million dollars",
+        "4.0 million dollars"
       ],
-      "correctAnswer": "They are designed to maximise engagement through comparison",
-      "explanation": "Diane says platforms are deliberately built to maximise engagement, which means maximising comparison.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "3.5 million dollars",
+      "explanation": "The investment would be about 3.5 million dollars over three years.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-014-q26",
       "audioScriptId": "celpip-listening-014-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom advocate for?",
+      "prompt": "By what percentage can personalized learning increase retention?",
       "options": [
-        "Banning social media entirely",
-        "Age-based restrictions on all platforms",
-        "Digital literacy education for teenagers",
-        "Parental monitoring software"
+        "20 percent",
+        "25 percent",
+        "30 percent",
+        "35 percent"
       ],
-      "correctAnswer": "Digital literacy education for teenagers",
-      "explanation": "Tom says the answer is teaching teenagers to be critical consumers of digital content.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "35 percent",
+      "explanation": "Studies show this approach increases employee retention by up to 35 percent.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-014-q27",
       "audioScriptId": "celpip-listening-014-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "On what point do Diane and Tom agree?",
+      "prompt": "What is the current training approach at the company?",
       "options": [
-        "Restrictions are necessary",
-        "Education about social media is necessary",
-        "Teenagers should avoid all social media",
-        "Parents should manage all screen time"
+        "Online learning modules",
+        "One-size-fits-all classroom training",
+        "Mentorship programs",
+        "Self-paced learning"
       ],
-      "correctAnswer": "Education about social media is necessary",
-      "explanation": "The host notes both agree on the need for education.",
+      "correctAnswer": "One-size-fits-all classroom training",
+      "explanation": "The current approach is one-size-fits-all classroom training.",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-014-q28",
       "audioScriptId": "celpip-listening-014-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say a thirteen-year-old is not equipped to do?",
+      "prompt": "When do employee engagement scores typically improve?",
       "options": [
-        "Understand complex text",
-        "Resist deliberate platform manipulation",
-        "Manage their own time",
-        "Communicate online safely"
+        "Immediately",
+        "Within three months",
+        "Within six months",
+        "Within one year"
       ],
-      "correctAnswer": "Resist deliberate platform manipulation",
-      "explanation": "Diane says a thirteen-year-old is neurologically not equipped to resist deliberate platform manipulation.",
+      "correctAnswer": "Within six months",
+      "explanation": "Nina mentions engagement scores improve within six months of launching personalized learning.",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-014-q29",
       "audioScriptId": "celpip-listening-014-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom call the effect of banning social media without education?",
+      "prompt": "When do retention improvements typically occur?",
       "options": [
-        "The rebound effect",
-        "The forbidden fruit effect",
-        "The digital divide",
-        "The screen overload effect"
+        "6-9 months",
+        "12-18 months",
+        "18-24 months",
+        "2-3 years"
       ],
-      "correctAnswer": "The forbidden fruit effect",
-      "explanation": "Tom calls the over-compensating behaviour after restrictions the forbidden fruit effect.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "12-18 months",
+      "explanation": "Retention improvements typically follow within 12 to 18 months.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-014-q30",
       "audioScriptId": "celpip-listening-014-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What evidence does Tom give for the forbidden fruit effect?",
+      "prompt": "What concern does Kevin express?",
       "options": [
-        "A government study on screen time",
-        "Personal experience with teenagers at home",
-        "Schools that blocked social media found students spent more time online on weekends",
-        "Research from Diane's own institution"
+        "Program quality",
+        "Cost and timeline for results",
+        "Employee participation",
+        "Technology requirements"
       ],
-      "correctAnswer": "Schools that blocked social media found students spent more time online on weekends",
-      "explanation": "Tom says schools that blocked social media found students spent even more time online on weekends.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Cost and timeline for results",
+      "explanation": "Kevin is skeptical about the cost and how quickly results will be seen.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-014-q31",
       "audioScriptId": "celpip-listening-014-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What specific group does Diane say is most affected by heavy social media use?",
+      "prompt": "What development approach will replace classroom training?",
       "options": [
-        "Boys aged ten to twelve",
-        "All teenagers equally",
-        "Girls in particular",
-        "Teenagers in rural areas"
+        "Online courses only",
+        "Personalized learning paths and micro-credentials",
+        "Conference attendance",
+        "Self-study materials"
       ],
-      "correctAnswer": "Girls in particular",
-      "explanation": "Diane says anxiety and depression are particularly high for girls.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Personalized learning paths and micro-credentials",
+      "explanation": "The program will move toward personalized learning paths and micro-credentials.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-014-q32",
       "audioScriptId": "celpip-listening-014-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's summary at the end?",
+      "prompt": "What is David's main concern about the program?",
       "options": [
-        "Both guests fully agree",
-        "The debate is too political to resolve",
-        "There is agreement on education but a divide on restrictions",
-        "Tom has made the stronger argument"
+        "Too expensive",
+        "Takes too long",
+        "Measurable metrics and accountability",
+        "Lack of support"
       ],
-      "correctAnswer": "There is agreement on education but a divide on restrictions",
-      "explanation": "The host summarises that there is agreement on education but a real divide on restrictions.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Measurable metrics and accountability",
+      "explanation": "David wants to ensure accountability and asks Nina to outline measurable metrics.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-014-q33",
       "audioScriptId": "celpip-listening-014-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker argue is wrong with current government investment patterns?",
+      "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "Too much money is spent on small towns",
-        "Investment flows mainly to cities, creating inequality",
-        "Rural communities refuse investment",
-        "Cities need more hospitals"
+        "They're not programmed correctly",
+        "They're trained on historical data that includes human bias",
+        "They lack computing power",
+        "They're intentionally designed to discriminate"
       ],
-      "correctAnswer": "Investment flows mainly to cities, creating inequality",
-      "explanation": "The speaker says investment has predominantly flowed toward major cities, creating a divide.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "They're trained on historical data that includes human bias",
+      "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-014-q34",
       "audioScriptId": "celpip-listening-014-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health problem does the speaker connect to rural under-investment?",
+      "prompt": "What did Amazon discover about their hiring algorithm?",
       "options": [
-        "Higher rates of heart disease",
-        "More road accidents",
-        "Higher rates of late-stage cancer diagnoses",
-        "Fewer vaccinations"
+        "It was too slow",
+        "It was discriminating against women",
+        "It was too expensive",
+        "It wasn't identifying qualified candidates"
       ],
-      "correctAnswer": "Higher rates of late-stage cancer diagnoses",
-      "explanation": "The speaker says rural residents have higher rates of late-stage cancer because early detection services are not available locally.",
-      "difficulty": "easy",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "It was discriminating against women",
+      "explanation": "Amazon discovered their algorithm was discriminating against women and scrapped it.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-014-q35",
       "audioScriptId": "celpip-listening-014-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What pattern in education does the speaker describe?",
+      "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
-        "Rural schools are better funded than urban ones",
-        "Talented young people leave small towns and rarely return",
-        "Rural students prefer online learning",
-        "Urban students move to rural areas for university"
+        "It was too strict",
+        "It showed bias against applicants from historically black colleges",
+        "It wasn't identifying talent",
+        "It was too expensive"
       ],
-      "correctAnswer": "Talented young people leave small towns and rarely return",
-      "explanation": "The speaker says talented young people leave for cities and rarely return.",
+      "correctAnswer": "It showed bias against applicants from historically black colleges",
+      "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-014-q36",
       "audioScriptId": "celpip-listening-014-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How does the speaker respond to critics who say rural investment costs too much per person?",
+      "prompt": "What key point does the speaker make about data?",
       "options": [
-        "By agreeing and suggesting cuts",
-        "By calling it a reason for smarter targeted investment",
-        "By dismissing the economic argument entirely",
-        "By citing statistics on rural GDP"
+        "Data is always objective",
+        "Data is never neutral and includes bias",
+        "Data should never be used in hiring",
+        "Data is a recent invention"
       ],
-      "correctAnswer": "By calling it a reason for smarter targeted investment",
-      "explanation": "The speaker says the cost argument is flawed and is actually an argument for smarter, targeted investment.",
+      "correctAnswer": "Data is never neutral and includes bias",
+      "explanation": "The speaker argues data is never neutral and carries historical bias.",
       "difficulty": "medium",
-      "topic": "getting a driver's licence"
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-014-q37",
       "audioScriptId": "celpip-listening-014-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker say should not determine the quality of opportunity a person has?",
+      "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Their family income",
-        "Their level of education",
-        "The postal code where they were born",
-        "Their language ability"
+        "Use them immediately",
+        "Train employees on algorithms",
+        "Conduct rigorous bias testing and external auditing",
+        "Ignore algorithm concerns"
       ],
-      "correctAnswer": "The postal code where they were born",
-      "explanation": "The speaker says the postal code where someone is born should not determine their opportunities.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Conduct rigorous bias testing and external auditing",
+      "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-014-q38",
       "audioScriptId": "celpip-listening-014-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall tone?",
+      "prompt": "What human qualities does the speaker claim algorithms can't capture?",
       "options": [
-        "Nostalgic and sentimental",
-        "Objective and neutral",
-        "Persuasive and advocacy-driven",
-        "Pessimistic and resigned"
+        "Education level",
+        "Potential, resilience, and growth",
+        "Work experience",
+        "Technical skills"
       ],
-      "correctAnswer": "Persuasive and advocacy-driven",
-      "explanation": "The speaker argues a clear position and calls for change based on principles of equity.",
-      "difficulty": "hard",
-      "topic": "getting a driver's licence"
+      "correctAnswer": "Potential, resilience, and growth",
+      "explanation": "Algorithms can't capture potential, resilience, or the capacity for growth.",
+      "difficulty": "medium",
+      "topic": "Technology"
     }
   ]
 }

@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 45",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 45",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-045-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Workplace communication",
-      "script": "A manager leads a short training session on professional communication in the workplace, including how to address colleagues and supervisors, how to write a professional email, and how to give and receive feedback.",
+      "title": "Bank Account Fraud Alert",
+      "text": "Customer: Hi, I'm calling about suspicious transactions on my account. Bank Officer: I'm sorry to hear that. I'm here to help. Can I have your account number? Customer: It's 5834-291-7465. Over the last three days, I've noticed four withdrawals totaling $1,800 that I didn't make. Officer: Let me pull that up. What are the dates of these transactions? Customer: June 1st, 2nd, 3rd, and today, June 4th. Each one is $450. Officer: I see them all here. These are ATM withdrawals, all from a machine on Bloor Street in Toronto. Are you in Toronto? Customer: No, I'm in Montreal. I haven't been to Toronto in months. Officer: That's definitely suspicious. I'm going to freeze your account immediately to prevent further unauthorized transactions. Customer: What about the money that's already been withdrawn? Officer: We'll file a fraud claim. You're not responsible for unauthorized transactions under the bank's protection policy. You should see a credit back within 5 to 7 business days. Customer: Good. What should I do next? Officer: We'll mail you a new debit card as a precaution, but don't worry about the PIN. I'm also recommending you change your online banking password right away. We'll monitor your account closely. Customer: Should I change my passwords for other accounts too? Officer: That's a wise precaution. Since someone had your card number, they might try other services. Better safe than sorry.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-045-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about digital government service platforms",
-      "script": "This news is about digital government service platforms. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Workplace Lunch Break",
+      "text": "Marcus: Hey, want to grab lunch together? Jessica: Sure, where are you thinking? Marcus: There's that new sushi place across the street. I've heard good things about it. Jessica: I'm not really in the mood for sushi. How about the Thai place on the corner? Marcus: That works too. I haven't tried that one yet. Jessica: They have great pad thai. We should go soon though, it gets busy after noon. Marcus: Good point. How about right now? Jessica: Perfect. I'll grab my wallet. Marcus: Do you think they have vegetarian options? Jessica: Definitely. They have a whole vegetarian section on the menu. Marcus: Great. Shall we? Jessica: Let's go. See you in five minutes downstairs.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-045-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about digital government service platforms",
-      "script": "This discussion is about digital government service platforms. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "Workplace Safety Training: Fire Procedures",
+      "text": "Good morning. This is your mandatory workplace fire safety training. Please listen carefully. In case of fire alarm, first, stay calm. Second, evacuate using the nearest exit. Do not use elevators under any circumstances. Stairs are located at both ends of each hallway. Third, move to the designated assembly point in the parking lot north of the building. Check in with your team leader. Fourth, do not re-enter the building until an authorized person announces it's safe. Fire drills occur quarterly on the first Friday of March, June, September, and December at 2 PM. During drills, the process is identical to a real emergency. Everyone must participate. If you cannot evacuate due to disability, proceed to a designated refuge area and use the emergency call button. These refuge areas are marked on building maps. Fire extinguishers are located every twenty-five meters along hallways and near kitchen areas. Only trained staff should operate extinguishers. If you're not trained, alert a supervisor. Report any fire hazards such as blocked exits or damaged equipment to maintenance immediately. Violations of fire safety procedures may result in disciplinary action. Contact Safety Services with any questions.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-045-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about digital government service platforms",
-      "script": "This announcement is about digital government service platforms. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "Manitoba Agricultural Export Deal",
+      "text": "Manitoba has secured a significant agricultural export agreement with Japan. The deal, valued at approximately 340 million dollars annually, includes canola, pulse crops, and livestock products. Japanese importers have committed to increasing their purchases from Manitoba producers by 25 percent over the next five years. The agreement was finalized following trade negotiations led by the Canadian Agricultural Minister and her Japanese counterpart. Manitoba produces approximately 8 million tonnes of canola annually, making it Canada's leading canola province. Pulse crops, including peas and lentils, account for another 2.8 million tonnes of production. The Premier described the agreement as transformative for rural communities. Japanese markets have consistently valued Canadian agricultural products for their quality and safety standards. The deal is expected to create 400 additional jobs in the agriculture and food processing sectors. Provincial officials plan to strengthen cold-chain logistics to ensure product freshness during international transport.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-045-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about digital government service platforms",
-      "script": "This office is about digital government service platforms. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Small Business Loan Program Discussion",
+      "text": "Bank Manager Chris: Our small business loan program has been quite successful this year. We've approved 285 loans totaling 42 million dollars to local entrepreneurs. However, we've noticed our default rate is slightly higher than industry average at about 4.2 percent. We're considering tightening our lending criteria to reduce risk.\n\nEconomic Development Officer Lisa: I would caution against tightening the criteria too much, Chris. These small loans are crucial for community development and job creation. Yes, a few borrowers struggle, but 95 percent of our loans are performing well. If we make the qualification requirements too strict, we'll only serve well-established businesses with existing collateral. That defeats the purpose of supporting new entrepreneurs who are taking real risks.\n\nBusiness Owner Marcus: I completely agree with Lisa. When I started my restaurant five years ago, traditional banks wouldn't touch me because I didn't have significant assets or a ten-year track record. Your bank took a chance on me, and now my business employs 12 people. If your criteria were stricter, I wouldn't be here. I think what you should focus on is better support systems after lending, like mentorship programs and financial coaching.\n\nBank Manager Chris: Marcus, your success story is exactly what we want to see. But we do have a fiduciary responsibility to our depositors. Maybe Marcus is right—perhaps the answer isn't stricter lending, but better support after approval. We could partner with business development organizations to provide mentoring and financial management training.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-045-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about digital government service platforms",
-      "script": "This lecture is about digital government service platforms. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Mental Health Parity in Insurance Coverage",
+      "text": "Mental health needs to be treated with the same importance as physical health in our insurance system. We talk about mental health awareness, but when it comes to actual coverage, it's dramatically underfunded. Most insurance plans cover mental health at lower rates than physical health. If you have a broken arm, insurance covers months of physical therapy. If you have depression or anxiety, you get maybe 10 sessions of therapy a year, and psychologist visits might only be 50 percent covered. This creates barriers. Many people avoid treatment because they can't afford it, and their conditions worsen. The economic impact is massive. Mental health issues cost the economy 51 billion dollars annually in Canada through lost productivity, emergency services, and hospitalizations. Yet we invest a fraction of that in prevention and treatment. Here's what frustrates me most: we have effective treatments. Therapy works. Medication helps. But access is limited by insurance coverage. A person struggling with bipolar disorder shouldn't have to choose between therapy and rent. Insurance companies argue coverage limits are necessary for cost control, but that's shortsighted. When people get mental health treatment early, they use fewer emergency services, work more, and contribute to society. The ROI on mental health coverage is actually positive. I'm advocating for mandatory parity—insurance companies should cover mental health at the same level as physical health. This means removing visit limits, lowering copayments, and covering evidence-based treatments. It's not just compassionate; it's economically smart.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-045-q01",
+      "audioScriptId": "celpip-listening-045-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-045-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "What is the customer's account number?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "5834-291-7456",
+        "5834-291-7465",
+        "5834-192-7465",
+        "5843-291-7465"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "workplace communication"
+      "correctAnswer": "5834-291-7465",
+      "explanation": "Customer provides their account number as '5834-291-7465.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-045-q02",
+      "audioScriptId": "celpip-listening-045-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-045-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "How much money was withdrawn in total?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "$900",
+        "$1,200",
+        "$1,500",
+        "$1,800"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "workplace communication"
+      "correctAnswer": "$1,800",
+      "explanation": "Customer states there are 'four withdrawals totaling $1,800.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-045-q03",
+      "audioScriptId": "celpip-listening-045-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-045-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "How much was each withdrawal?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "$300",
+        "$400",
+        "$450",
+        "$500"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "workplace communication"
+      "correctAnswer": "$450",
+      "explanation": "Customer states 'Each one is $450' for the four withdrawals.",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-045-q04",
+      "audioScriptId": "celpip-listening-045-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-045-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "Where were the ATM withdrawals made?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "Montreal",
+        "Bloor Street in Toronto",
+        "Downtown Toronto",
+        "The airport"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "Bloor Street in Toronto",
+      "explanation": "Officer states 'These are ATM withdrawals, all from a machine on Bloor Street in Toronto.'",
       "difficulty": "medium",
-      "topic": "workplace communication"
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-045-q05",
+      "audioScriptId": "celpip-listening-045-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-045-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "Where is the customer actually located?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "Toronto",
+        "Montreal",
+        "Ottawa",
+        "Vancouver"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "Montreal",
+      "explanation": "Customer confirms 'No, I'm in Montreal. I haven't been to Toronto in months.'",
       "difficulty": "medium",
-      "topic": "workplace communication"
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-045-q06",
+      "audioScriptId": "celpip-listening-045-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-045-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "How long will it take to see the credit for the unauthorized transactions?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "1 to 2 business days",
+        "3 to 5 business days",
+        "5 to 7 business days",
+        "10 to 14 business days"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "5 to 7 business days",
+      "explanation": "Officer states 'You should see a credit back within 5 to 7 business days.'",
       "difficulty": "medium",
-      "topic": "workplace communication"
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-045-q07",
+      "audioScriptId": "celpip-listening-045-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-045-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "What is being mailed to the customer?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "A new PIN",
+        "A new debit card",
+        "Account statements",
+        "A fraud report"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "workplace communication"
+      "correctAnswer": "A new debit card",
+      "explanation": "Officer states 'We'll mail you a new debit card as a precaution.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-045-q08",
+      "audioScriptId": "celpip-listening-045-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-045-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "What immediate action is recommended for online banking?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "Contact the bank branch",
+        "Close the account",
+        "Change your online banking password right away",
+        "Disable online banking"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "workplace communication"
+      "correctAnswer": "Change your online banking password right away",
+      "explanation": "Officer states 'I'm also recommending you change your online banking password right away.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-045-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-045-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-045-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "What is the first restaurant Marcus suggests?",
+      "options": [
+        "Thai food",
+        "Italian food",
+        "Sushi",
+        "Indian food"
+      ],
+      "correctAnswer": "Sushi",
+      "explanation": "Marcus suggests 'that new sushi place across the street.'",
       "difficulty": "medium",
-      "topic": "workplace communication"
+      "topic": "coworker chat"
     },
     {
       "id": "celpip-listening-045-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-045-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-045-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "What restaurant does Jessica prefer?",
+      "options": [
+        "The sushi place",
+        "The Thai place",
+        "A Mexican place",
+        "A burger place"
+      ],
+      "correctAnswer": "The Thai place",
+      "explanation": "Jessica proposes 'the Thai place on the corner' as an alternative.",
       "difficulty": "medium",
-      "topic": "workplace communication"
+      "topic": "coworker chat"
     },
     {
       "id": "celpip-listening-045-q11",
+      "audioScriptId": "celpip-listening-045-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-045-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "When does the Thai restaurant get busy?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "11 AM",
+        "Noon",
+        "1 PM",
+        "2 PM"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Noon",
+      "explanation": "Jessica warns 'it gets busy after noon.'",
+      "difficulty": "medium",
+      "topic": "coworker chat"
     },
     {
       "id": "celpip-listening-045-q12",
+      "audioScriptId": "celpip-listening-045-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-045-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "What dish does Jessica mention?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "Tom yum soup",
+        "Pad thai",
+        "Spring rolls",
+        "Green curry"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Pad thai",
+      "explanation": "Jessica states 'They have great pad thai.'",
+      "difficulty": "medium",
+      "topic": "coworker chat"
     },
     {
       "id": "celpip-listening-045-q13",
+      "audioScriptId": "celpip-listening-045-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-045-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "How soon do they plan to meet?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "Immediately",
+        "In five minutes downstairs",
+        "In ten minutes",
+        "In fifteen minutes"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "In five minutes downstairs",
+      "explanation": "Jessica says 'See you in five minutes downstairs.'",
+      "difficulty": "medium",
+      "topic": "coworker chat"
     },
     {
       "id": "celpip-listening-045-q14",
+      "audioScriptId": "celpip-listening-045-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-045-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "What should NOT be used during evacuation?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "Stairs",
+        "Emergency exits",
+        "Elevators",
+        "Hallways"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Elevators",
+      "explanation": "The training explicitly states 'Do not use elevators under any circumstances.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-045-q15",
+      "audioScriptId": "celpip-listening-045-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-045-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "Where is the designated assembly point?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "The main lobby",
+        "The parking lot north of the building",
+        "The south entrance",
+        "The rooftop"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "The parking lot north of the building",
+      "explanation": "The guide specifies 'the designated assembly point in the parking lot north of the building.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-045-q16",
+      "audioScriptId": "celpip-listening-045-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-045-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "How often are fire drills conducted?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "Monthly",
+        "Bi-monthly",
+        "Quarterly",
+        "Annually"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Quarterly",
+      "explanation": "The training states 'Fire drills occur quarterly on the first Friday of March, June, September, and December.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-045-q17",
+      "audioScriptId": "celpip-listening-045-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-045-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "At what time are fire drills held?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "10 AM",
+        "1 PM",
+        "2 PM",
+        "3 PM"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "2 PM",
+      "explanation": "The guide specifies drills are 'at 2 PM.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-045-q18",
+      "audioScriptId": "celpip-listening-045-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-045-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "How frequently are fire extinguishers located along hallways?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "Every 10 meters",
+        "Every 15 meters",
+        "Every 25 meters",
+        "Every 50 meters"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Every 25 meters",
+      "explanation": "The training states 'Fire extinguishers are located every twenty-five meters along hallways.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-045-q19",
+      "audioScriptId": "celpip-listening-045-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-045-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "What should employees do if they find a blocked exit?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "Move it themselves",
+        "Ignore it",
+        "Report it to maintenance immediately",
+        "Wait for management"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Report it to maintenance immediately",
+      "explanation": "The guide instructs to 'Report any fire hazards such as blocked exits or damaged equipment to maintenance immediately.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-045-q20",
+      "audioScriptId": "celpip-listening-045-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-045-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "What is the annual value of the agricultural export agreement?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "250 million dollars",
+        "290 million dollars",
+        "340 million dollars",
+        "380 million dollars"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "340 million dollars",
+      "explanation": "The deal is valued at approximately 340 million dollars annually.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-045-q21",
+      "audioScriptId": "celpip-listening-045-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-045-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "By what percentage will Japanese importers increase their purchases?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "15 percent",
+        "20 percent",
+        "25 percent",
+        "30 percent"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "25 percent",
+      "explanation": "Importers have committed to increasing purchases by 25 percent over the next five years.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-045-q22",
+      "audioScriptId": "celpip-listening-045-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-045-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "How much canola does Manitoba produce annually?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "5 million tonnes",
+        "7 million tonnes",
+        "8 million tonnes",
+        "10 million tonnes"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "8 million tonnes",
+      "explanation": "Manitoba produces approximately 8 million tonnes of canola annually.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-045-q23",
+      "audioScriptId": "celpip-listening-045-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-045-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "How many tonnes of pulse crops are produced?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "2.0 million tonnes",
+        "2.4 million tonnes",
+        "2.8 million tonnes",
+        "3.2 million tonnes"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "2.8 million tonnes",
+      "explanation": "Pulse crops account for 2.8 million tonnes of production.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-045-q24",
+      "audioScriptId": "celpip-listening-045-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-045-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "How many jobs are expected to be created?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "200 jobs",
+        "300 jobs",
+        "400 jobs",
+        "500 jobs"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "400 jobs",
+      "explanation": "The deal is expected to create 400 additional jobs in agriculture and food processing.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-045-q25",
+      "audioScriptId": "celpip-listening-045-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-045-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "How many small business loans has the bank approved this year?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "250 loans",
+        "270 loans",
+        "285 loans",
+        "300 loans"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "285 loans",
+      "explanation": "The bank has approved 285 loans this year.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-045-q26",
+      "audioScriptId": "celpip-listening-045-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-045-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "What is the total amount of loans approved?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "35 million dollars",
+        "39 million dollars",
+        "42 million dollars",
+        "48 million dollars"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "42 million dollars",
+      "explanation": "The loans approved total 42 million dollars.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-045-q27",
+      "audioScriptId": "celpip-listening-045-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-045-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What is the bank's current loan default rate?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "2.5 percent",
+        "3.2 percent",
+        "4.2 percent",
+        "5.5 percent"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "4.2 percent",
+      "explanation": "The default rate is approximately 4.2 percent.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-045-q28",
+      "audioScriptId": "celpip-listening-045-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-045-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "Why does Lisa oppose tightening lending criteria?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "It's too expensive",
+        "It would exclude new entrepreneurs",
+        "It would reduce profitability",
+        "It would increase default rates"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "It would exclude new entrepreneurs",
+      "explanation": "Lisa warns that stricter criteria would only serve well-established businesses, defeating the purpose.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-045-q29",
+      "audioScriptId": "celpip-listening-045-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-045-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "What challenge did Marcus face when starting his business?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "Lack of experience",
+        "No customers",
+        "Banks wouldn't lend to him",
+        "High interest rates"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Banks wouldn't lend to him",
+      "explanation": "Marcus says traditional banks wouldn't lend because he lacked assets and track record.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-045-q30",
+      "audioScriptId": "celpip-listening-045-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-045-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "How many people does Marcus's restaurant currently employ?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "8 people",
+        "10 people",
+        "12 people",
+        "15 people"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "12 people",
+      "explanation": "Marcus's restaurant now employs 12 people.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-045-q31",
+      "audioScriptId": "celpip-listening-045-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-045-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "What alternative solution does Marcus propose?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "Lower interest rates",
+        "Mentorship and financial coaching programs",
+        "Shorter loan terms",
+        "No collateral requirements"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Mentorship and financial coaching programs",
+      "explanation": "Marcus suggests focus on better support systems like mentorship and financial coaching after lending.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-045-q32",
+      "audioScriptId": "celpip-listening-045-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-045-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "Who does Chris propose to partner with for business support?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "Universities",
+        "Government agencies",
+        "Business development organizations",
+        "Large corporations"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Business development organizations",
+      "explanation": "Chris proposes partnering with business development organizations for mentoring and training.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-045-q33",
+      "audioScriptId": "celpip-listening-045-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-045-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "Mental health is covered more than physical",
+        "Physical health is covered more than mental health",
+        "They're equally covered",
+        "Neither is adequately covered"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Physical health is covered more than mental health",
+      "explanation": "The speaker states mental health is covered at lower rates than physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-045-q34",
+      "audioScriptId": "celpip-listening-045-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-045-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "What example does the speaker use to illustrate the disparity?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "Cancer treatment vs. therapy",
+        "Broken arm coverage vs. limited mental health sessions",
+        "Hospital stays vs. doctor visits",
+        "Prescription drugs vs. counseling"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Broken arm coverage vs. limited mental health sessions",
+      "explanation": "The speaker uses physical therapy for broken arms compared to limited therapy sessions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-045-q35",
+      "audioScriptId": "celpip-listening-045-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-045-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What is the annual economic cost of mental health issues in Canada?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "25 billion dollars",
+        "38 billion dollars",
+        "51 billion dollars",
+        "67 billion dollars"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "51 billion dollars",
+      "explanation": "Mental health issues cost 51 billion dollars annually in Canada.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-045-q36",
+      "audioScriptId": "celpip-listening-045-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-045-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations",
+        "Medication costs",
+        "Administrative expenses"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
+      "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-045-q37",
+      "audioScriptId": "celpip-listening-045-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-045-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "It's cheaper than physical health",
+        "Early treatment has positive ROI",
+        "It reduces insurance profits",
+        "It's cost-neutral"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about digital government service platforms.",
-      "difficulty": "medium"
+      "correctAnswer": "Early treatment has positive ROI",
+      "explanation": "The speaker argues mental health coverage has a positive return on investment.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-045-q38",
+      "audioScriptId": "celpip-listening-045-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-045-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What does the speaker advocate companies implement?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "Lower coverage for mental health",
+        "Mandatory parity in coverage",
+        "Removal of all limits",
+        "Voluntary coverage only"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about digital government service platforms.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "Mandatory parity in coverage",
+      "explanation": "The speaker advocates for mandatory parity—equal coverage for mental and physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     }
   ]
 }

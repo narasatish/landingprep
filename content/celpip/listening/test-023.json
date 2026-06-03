@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 23",
+  "title": "CELPIP General Listening — Practice Test 23",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-023-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Calling About a Noisy Neighbour",
-      "text": "Tenant: Hi, I'm calling about a problem with my upstairs neighbour. There's loud music almost every night after eleven, and I can't sleep.\nProperty Manager: I'm sorry to hear that. Have you spoken to the neighbour directly yet?\nTenant: I knocked on the door twice last week, but nobody answered.\nProperty Manager: In that case, I can send them an official written notice reminding them of the quiet hours policy. That usually works.\nTenant: Would there be any consequences if it continues after the notice?\nProperty Manager: Yes. If the behaviour continues after two written notices, we can begin the formal dispute process, which could affect their tenancy.\nTenant: That's a relief. How long does it take to send the first notice?\nProperty Manager: Usually within two business days. I'll log your complaint right now and you should receive a copy of the notice by email once it goes out.\nTenant: Perfect. And what should I do in the meantime if it happens tonight?\nProperty Manager: You can call our after-hours line and log a noise complaint. Those records will also be used if this goes further.",
+      "title": "Medical Appointment Rescheduling",
+      "text": "Patient: Hello, I need to reschedule my appointment with Dr. Singh. Receptionist: Of course. Can I have your patient ID? Patient: It's P-9847. My appointment is next Tuesday at 2 PM, but I have a conflict. Receptionist: Let me pull that up. Yes, I see the appointment for June 10th at 2 PM. What days and times work better for you? Patient: Ideally, early morning, like 8 or 9 AM. I work afternoons. Receptionist: Let me check the doctor's schedule. Dr. Singh has an opening on Friday, June 13th at 8:30 AM. Would that suit you? Patient: Yes, that works perfectly. Receptionist: Great. I'm canceling the Tuesday 2 PM slot and booking you for Friday, June 13th at 8:30 AM. Your appointment is for a regular checkup, is that correct? Patient: Yes, and also to discuss my recent blood work results. Receptionist: Perfect. I'll add a note that you want to review the blood work. You'll need to arrive ten minutes early to fill out any updated forms. Patient: Will Dr. Singh have my test results by then? Receptionist: Yes, they'll definitely be in her file. The lab sent them in yesterday. Is there anything else? Patient: No, that's everything. Thank you.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-023-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Planning a Weekend Camping Trip",
-      "text": "Maya: Are you still planning to go camping this weekend? I heard there's a campsite near the lake that has good reviews.\nDaniel: Yes, I booked two spots at Birchwood Provincial Park. It's about ninety minutes from downtown.\nMaya: Do you think the weather will hold up? The forecast showed some rain on Saturday.\nDaniel: I checked again this morning. It looks like just a light shower in the early afternoon. We should be fine if we set up the tent before noon.\nMaya: Makes sense. Should I bring my camp stove, or does the park have fire pits?\nDaniel: The park has fire pits, but there are restrictions on fire use right now because of dry conditions. Bring your stove — it's probably safer.\nMaya: Good thinking. What about food? Should we plan to cook each night or pack some ready-made meals?\nDaniel: Let's do a mix. Cook a proper dinner on Friday, and keep Saturday simple with sandwiches and wraps — less cleanup if the rain comes.",
+      "title": "Apartment Viewing Discussion",
+      "text": "Renter: I'm interested in this one-bedroom apartment. What are the lease terms? Landlord: It's a one-year lease. The rent is $1,200 per month, due on the first of each month. Renter: That seems reasonable. What utilities are included? Landlord: Water and heating are included, but you pay for electricity and internet. Renter: I see. What about parking? Landlord: There's one dedicated parking spot in the lot. It's included in the rent. Renter: Perfect. When would I be able to move in? Landlord: If we sign the lease today, you can move in on July 1st. Renter: Is that two weeks from now? Landlord: Yes, exactly two weeks. Do you have any pets? Renter: I have a cat. Is that okay? Landlord: Yes, cats are allowed. There's a one-time pet deposit of $150. Renter: Alright. Can I get a few days to think about it? Landlord: Sure, take until the end of the week. After that, I have other interested renters.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-023-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "Information About Renewing a Canadian Driver's Licence",
-      "text": "Good afternoon. This information session will walk you through the process of renewing your Canadian driver's licence. Whether your licence has recently expired or is about to expire, it is important to act early to avoid fines or restrictions on your driving privileges.\n\nIn most provinces, you will receive a renewal notice by mail several weeks before your expiry date. However, it is your responsibility to renew even if you do not receive this notice. Renewal can be completed in three ways: in person at a government services office, online through the provincial licensing portal, or by mail using the renewal form included with your notice.\n\nIf you are renewing in person, you will need to bring your current licence, proof of address such as a recent utility bill or bank statement, and the renewal fee. Fees vary by province but are generally between twenty-five and sixty-five dollars. If your vision has changed since your last renewal, you may also be required to complete a vision test at the counter.\n\nOnline renewal is available to drivers who have no changes to their personal information and whose previous renewal was also completed online. You will need your driver's licence number and the last four digits of your health card to verify your identity. Processing takes up to five business days and the new licence will be mailed to your home.\n\nRemember: driving with an expired licence is a ticketable offence in every province. Renew early to avoid unnecessary penalties.",
+      "title": "University Orientation: First Week Checklist",
+      "text": "Hello, welcome to orientation week. I'm here to walk you through essential tasks for your first week. First, attend your faculty's orientation meeting on Monday at ten AM in the Student Centre. Bring your student ID. Second, register for your courses online by Wednesday, August 28th. Early registration means better class times. Third, purchase your textbooks from the university bookstore before classes start. Fourth, get your student photo ID taken at the Services Office between 9 and 4 on any day this week. The photo ID is required for library access and residence entry. Fifth, activate your email account at the IT support desk. Your email is your primary communication channel for all university announcements. Sixth, find your classes on a campus map. Most buildings are located around the central quad. Seventh, attend the Welcome Social on Friday evening in the gymnasium. It's a great way to meet other students and faculty. Eighth, complete your health and immunization form at Student Health Services. This is mandatory before attending classes. Finally, budget about three hundred dollars for books and materials. Questions? Visit the information desk in the main foyer.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-023-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: City Expands Free Transit for Seniors",
-      "text": "The city announced today that it will expand its free public transit programme for seniors beginning next month. Under the new policy, all residents aged sixty-five and older will be able to ride buses and light rail lines at no cost, seven days a week. Previously, the programme only applied on weekdays between nine in the morning and three in the afternoon.\n\nThe city's transportation director said the expansion was driven by data showing that many seniors were unable to attend evening medical appointments or weekend community activities due to transit costs. Council members voted fourteen to three in favour of the expansion at last night's meeting.\n\nThe programme will be funded through a small increase in the transit levy paid by commercial property owners. A city spokesperson confirmed that no changes to residential property taxes are planned as a result of this programme.\n\nAdvocacy groups welcomed the announcement but called for further steps, including improved accessibility features at bus stops and more frequent service on routes serving seniors' residences. The city said those improvements are already under review as part of the five-year transit plan.",
+      "title": "BC Wildfire Season Begins Early",
+      "text": "British Columbia's wildfire season is beginning earlier than usual this year, prompting concerns among forest officials. As of June first, crews have already responded to 127 active fires across the province. The unusually warm and dry spring is blamed for the early start. The Ministry of Forests reports that conditions are expected to worsen through July and August. Last summer, the province experienced the worst fire season on record, with over 2.4 million hectares burned. This year's budget for firefighting has been increased to 560 million dollars, a 40 percent increase from the previous year. Communities at risk are being advised to prepare evacuation plans. The government is also deploying additional aerial firefighting resources, including five new helicopters equipped with water-dropping technology. Residents are reminded to clear dry vegetation from their properties and avoid open fires during high-risk periods.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-023-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Should Companies Require Employees to Return to the Office?",
-      "text": "Host: Good morning. Today we're discussing whether companies should require employees to return to the office full time. I'm joined by two guests with very different views. Sophie, you support a return-to-office policy. Tell us why.\nSophie: Thank you. I believe in-person work is essential for collaboration and company culture. When people are in the same room, ideas flow more naturally. Spontaneous conversations at the coffee machine lead to innovations you simply cannot replicate on a video call. Junior employees especially benefit from being close to experienced colleagues.\nHost: And Marcus, you argue against mandatory returns. What's your position?\nMarcus: My position is that forcing people back to the office ignores what the pandemic proved: that most knowledge work can be done just as effectively from home, often more so. People save hours on commuting, they have fewer interruptions, and studies consistently show higher job satisfaction when employees have flexibility.\nHost: Sophie, how do you respond to the productivity argument?\nSophie: Productivity metrics can be misleading. You might complete more tasks per hour at home, but you miss out on the kind of deep organisational knowledge that comes from casual interactions. Also, not everyone has a good home environment — some employees live in small apartments or have young children, and forcing them to work from home is actually more stressful.\nHost: Marcus, a final word?\nMarcus: Companies that respect autonomy attract and retain better talent. If a business genuinely believes in-person work is better, they should make it so compelling that people want to come in voluntarily — not mandate it and risk losing good people to competitors who offer flexibility.\nHost: Thank you both. It's clear this debate is far from settled.",
+      "title": "University Program Expansion Planning",
+      "text": "Dean Robert: We've been asked to consider expanding our engineering program, particularly in renewable energy studies. The faculty has requested three additional full-time instructors and funding for new laboratory equipment. The cost would be approximately 2.4 million dollars over two years. Given our current budget constraints, I'm hesitant to commit to this expansion.\n\nProfessor Elena: I understand the budget concerns, Dean, but we're actually losing enrollment to competing universities who offer these programs. Last year, we lost 150 potential engineering students to schools with stronger renewable energy options. If we don't expand now, we'll fall behind. Plus, there's significant industry demand for graduates with renewable energy expertise. Companies are specifically recruiting from universities with these specialized programs.\n\nStudent Representative Malik: From a student perspective, I absolutely support this expansion. Many of my classmates are interested in sustainability and green technology, but we don't have the courses or facilities to support that focus. I think this investment would make our university much more attractive to prospective students, which would actually increase our overall enrollment and revenue.\n\nBudget Committee Member Diana: Malik makes a good point about revenue. If this program attracts even 200 additional students, the tuition revenue would exceed the expansion costs within three years. And we could explore partnerships with industry for funding. I've been in conversations with several renewable energy companies that might contribute equipment or funding in exchange for access to our graduates for recruitment.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-023-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: The Value of Learning a Second Language as an Adult",
-      "text": "There is a widespread belief that adults cannot learn a new language as effectively as children. This idea has discouraged many adults from even attempting to study a second language, which I believe is deeply unfortunate — and largely incorrect.\n\nResearch on brain plasticity has shown that while young children do acquire language with remarkable ease and near-perfect accents, adults have significant advantages that are rarely acknowledged. Adults come to language learning with an established grammar system in their native language, a large vocabulary that can be mapped onto new words, and — critically — the ability to study deliberately and strategically. A child acquires language through years of immersion; an adult with good study habits can reach conversational fluency in twelve to eighteen months.\n\nThe benefits of second language learning extend far beyond communication. Numerous studies have found that bilingual adults show delayed onset of dementia by an average of four to five years compared to monolinguals. The effort of managing two language systems exercises the brain in ways that improve attention, task-switching, and even creativity.\n\nFrom a social perspective, learning the dominant language of your community opens doors in ways that are hard to overstate. It changes how service providers speak to you, how colleagues perceive you, and how confident you feel navigating institutions — from hospitals to government offices.\n\nMy view is straightforward: language learning is one of the most valuable investments an adult can make in themselves, and the belief that it is too late should be replaced with a recognition that it is simply different — and in some respects, better.",
+      "title": "Climate Migration and Urban Planning",
+      "text": "Climate change is already forcing large-scale human migration, and we need to prepare for it now. Rising sea levels, extreme weather, and changing precipitation patterns are making entire regions uninhabitable. We're not just talking about future problems—this is happening today. Small island nations are literally disappearing. Coastal cities are experiencing increased flooding. Agricultural regions are becoming deserts. Where will these people go? History shows us that unplanned migration creates chaos: overcrowded cities, slums, resource conflicts, and instability. I believe cities and countries need to proactively plan for climate migration. This means developing infrastructure and housing in climate-resilient areas, creating economic opportunities for migrants, and managing population flows thoughtfully. Canada and the northern regions of other countries will likely become more desirable as climate conditions shift. Rather than letting this happen chaotically, we should be designing inclusive urban expansion, building climate-resilient communities, and preparing labor markets for population shifts. Some people see climate migration as a negative, but it's inevitable. The real question is whether we manage it responsibly or let it cause humanitarian crises. I'm advocating for proactive planning now. We should be expanding housing, infrastructure, and economic capacity in climate-safe regions. We should also help other countries adapt in place where possible. But denying this reality and refusing to plan is irresponsible.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-023-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why is the tenant calling the property manager?",
+      "prompt": "What is the patient's ID?",
       "options": [
-        "To report a leaking pipe",
-        "To complain about a noisy neighbour",
-        "To request a rent reduction",
-        "To ask about parking rules"
+        "P-8479",
+        "P-9847",
+        "P-9748",
+        "P-8794"
       ],
-      "correctAnswer": "To complain about a noisy neighbour",
-      "explanation": "The tenant explicitly says there is loud music keeping them awake.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "P-9847",
+      "explanation": "Patient provides their ID as 'P-9847.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-023-q02",
       "audioScriptId": "celpip-listening-023-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What has the tenant already tried?",
+      "prompt": "What was the original appointment date and time?",
       "options": [
-        "Called the police",
-        "Knocked on the neighbour's door",
-        "Sent an email to management",
-        "Left a note under the door"
+        "Tuesday at 1 PM",
+        "Tuesday at 2 PM",
+        "Wednesday at 2 PM",
+        "Thursday at 2 PM"
       ],
-      "correctAnswer": "Knocked on the neighbour's door",
-      "explanation": "The tenant says they knocked twice last week.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Tuesday at 2 PM",
+      "explanation": "Patient mentions the appointment is 'next Tuesday at 2 PM' and receptionist confirms 'June 10th at 2 PM.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-023-q03",
       "audioScriptId": "celpip-listening-023-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What will the property manager do first?",
+      "prompt": "When does the patient prefer to schedule appointments?",
       "options": [
-        "Contact the police",
-        "Begin a formal dispute process",
-        "Send an official written notice",
-        "Visit the neighbour's apartment"
+        "Late afternoon",
+        "Evening",
+        "Early morning, 8 or 9 AM",
+        "Midday"
       ],
-      "correctAnswer": "Send an official written notice",
-      "explanation": "The manager says they will send a written notice as the first step.",
+      "correctAnswer": "Early morning, 8 or 9 AM",
+      "explanation": "Patient states 'Ideally, early morning, like 8 or 9 AM. I work afternoons.'",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-023-q04",
       "audioScriptId": "celpip-listening-023-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What happens if the behaviour continues after two notices?",
+      "prompt": "What is the new appointment date and time?",
       "options": [
-        "The tenant gets a discount",
-        "The neighbour's tenancy could be affected",
-        "Management will call the police",
-        "The tenant must move out"
+        "Friday, June 6th at 8:30 AM",
+        "Friday, June 12th at 8:30 AM",
+        "Friday, June 13th at 8:30 AM",
+        "Friday, June 20th at 8:30 AM"
       ],
-      "correctAnswer": "The neighbour's tenancy could be affected",
-      "explanation": "The manager says the formal dispute process could affect tenancy.",
+      "correctAnswer": "Friday, June 13th at 8:30 AM",
+      "explanation": "Receptionist books the new appointment for 'Friday, June 13th at 8:30 AM.'",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-023-q05",
       "audioScriptId": "celpip-listening-023-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long will it take to send the first notice?",
+      "prompt": "What should the patient do to prepare for the appointment?",
       "options": [
-        "Same day",
-        "One week",
-        "Two business days",
-        "One month"
+        "Fast for 12 hours",
+        "Bring insurance documents only",
+        "Arrive ten minutes early to fill out updated forms",
+        "Call to confirm the day before"
       ],
-      "correctAnswer": "Two business days",
-      "explanation": "The manager says usually within two business days.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Arrive ten minutes early to fill out updated forms",
+      "explanation": "Receptionist states 'You'll need to arrive ten minutes early to fill out any updated forms.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-023-q06",
       "audioScriptId": "celpip-listening-023-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the tenant receive once the notice is sent?",
+      "prompt": "When were the patient's blood work results sent to the clinic?",
       "options": [
-        "A phone call from the manager",
-        "A copy by email",
-        "A signed letter by post",
-        "Nothing — it is confidential"
+        "This morning",
+        "Yesterday",
+        "Last week",
+        "This afternoon"
       ],
-      "correctAnswer": "A copy by email",
-      "explanation": "The manager says the tenant will receive a copy by email.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Yesterday",
+      "explanation": "Receptionist confirms 'The lab sent them in yesterday.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-023-q07",
       "audioScriptId": "celpip-listening-023-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What should the tenant do if the noise happens tonight?",
+      "prompt": "What reasons does the patient have for the appointment?",
       "options": [
-        "Knock on the door again",
-        "Call emergency services",
-        "Call the after-hours line",
-        "Wait until morning"
+        "Blood work results only",
+        "Regular checkup only",
+        "Regular checkup and to discuss recent blood work results",
+        "Prescription refill"
       ],
-      "correctAnswer": "Call the after-hours line",
-      "explanation": "The manager advises calling the after-hours line to log a noise complaint.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Regular checkup and to discuss recent blood work results",
+      "explanation": "Patient states 'also to discuss my recent blood work results' and receptionist confirms it's a regular checkup.",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-023-q08",
       "audioScriptId": "celpip-listening-023-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What will the after-hours complaint records be used for?",
+      "prompt": "Who is the patient's doctor?",
       "options": [
-        "For media reports",
-        "For evidence if the dispute goes further",
-        "To update the lease agreement",
-        "To arrange a refund"
+        "Dr. Kumar",
+        "Dr. Singh",
+        "Dr. Patel",
+        "Dr. Sharma"
       ],
-      "correctAnswer": "For evidence if the dispute goes further",
-      "explanation": "The manager says those records will be used if the matter escalates.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Dr. Singh",
+      "explanation": "Patient mentions wanting to reschedule with 'Dr. Singh' throughout the conversation.",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-023-q09",
       "audioScriptId": "celpip-listening-023-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "Where are they planning to camp?",
+      "prompt": "What is the monthly rent?",
       "options": [
-        "Lakeshore National Park",
-        "Maplewood Campsite",
-        "Birchwood Provincial Park",
-        "Ridgeline Reserve"
+        "$1,000",
+        "$1,100",
+        "$1,200",
+        "$1,300"
       ],
-      "correctAnswer": "Birchwood Provincial Park",
-      "explanation": "Daniel says he booked spots at Birchwood Provincial Park.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "$1,200",
+      "explanation": "Landlord states 'The rent is $1,200 per month.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-023-q10",
       "audioScriptId": "celpip-listening-023-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How far is the campsite from downtown?",
+      "prompt": "What utilities are included?",
       "options": [
-        "Thirty minutes",
-        "One hour",
-        "Ninety minutes",
-        "Three hours"
+        "All utilities",
+        "Water and heating",
+        "Electricity only",
+        "Internet only"
       ],
-      "correctAnswer": "Ninety minutes",
-      "explanation": "Daniel says it is about ninety minutes from downtown.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Water and heating",
+      "explanation": "Landlord explains 'Water and heating are included.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-023-q11",
       "audioScriptId": "celpip-listening-023-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does the Saturday forecast show?",
+      "prompt": "Is parking included in the rent?",
       "options": [
-        "Heavy thunderstorms",
-        "A light shower in the afternoon",
-        "Clear skies all day",
-        "Strong winds at night"
+        "No, extra cost",
+        "Yes, one spot",
+        "Two spots",
+        "Not available"
       ],
-      "correctAnswer": "A light shower in the afternoon",
-      "explanation": "Daniel checked and says it looks like just a light shower in the early afternoon.",
+      "correctAnswer": "Yes, one spot",
+      "explanation": "Landlord confirms 'one dedicated parking spot' is 'included in the rent.'",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-023-q12",
       "audioScriptId": "celpip-listening-023-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "Why does Daniel recommend bringing a camp stove?",
+      "prompt": "When can the renter move in?",
       "options": [
-        "The park has no fire pits",
-        "Fire use is currently restricted",
-        "A stove cooks food faster",
-        "It is cheaper than buying firewood"
+        "June 15",
+        "June 24",
+        "July 1",
+        "July 8"
       ],
-      "correctAnswer": "Fire use is currently restricted",
-      "explanation": "Daniel says there are fire restrictions due to dry conditions.",
+      "correctAnswer": "July 1",
+      "explanation": "Landlord states 'you can move in on July 1st.'",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-023-q13",
       "audioScriptId": "celpip-listening-023-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Daniel suggest for Saturday's meals?",
+      "prompt": "What is the pet deposit for the cat?",
       "options": [
-        "A barbecue dinner",
-        "Eating at a restaurant",
-        "Sandwiches and wraps",
-        "Instant noodles only"
+        "$100",
+        "$125",
+        "$150",
+        "$200"
       ],
-      "correctAnswer": "Sandwiches and wraps",
-      "explanation": "Daniel suggests keeping Saturday simple with sandwiches and wraps.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "$150",
+      "explanation": "Landlord specifies 'a one-time pet deposit of $150.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-023-q14",
       "audioScriptId": "celpip-listening-023-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is responsible for renewing a driver's licence?",
+      "prompt": "When is the faculty orientation meeting?",
       "options": [
-        "The government automatically renews it",
-        "The driver, even without a notice",
-        "The driver only if they receive a notice",
-        "The driver's insurance company"
+        "Monday at 8 AM",
+        "Monday at 10 AM",
+        "Tuesday at 10 AM",
+        "Wednesday at 10 AM"
       ],
-      "correctAnswer": "The driver, even without a notice",
-      "explanation": "The speaker says it is the driver's responsibility even without receiving a notice.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Monday at 10 AM",
+      "explanation": "The guide states 'attend your faculty's orientation meeting on Monday at ten AM.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-023-q15",
       "audioScriptId": "celpip-listening-023-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT mentioned as a renewal method?",
+      "prompt": "What is the deadline for course registration?",
       "options": [
-        "In person",
-        "Online",
-        "By telephone",
-        "By mail"
+        "Tuesday",
+        "Wednesday, August 27th",
+        "Wednesday, August 28th",
+        "Friday"
       ],
-      "correctAnswer": "By telephone",
-      "explanation": "The speaker lists in person, online, and by mail — telephone is not mentioned.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Wednesday, August 28th",
+      "explanation": "The guide specifies 'register for your courses online by Wednesday, August 28th.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-023-q16",
       "audioScriptId": "celpip-listening-023-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What document can be used as proof of address?",
+      "prompt": "Where should you get your student photo ID?",
       "options": [
-        "A passport",
-        "A recent utility bill",
-        "A birth certificate",
-        "A tax return"
+        "The Student Centre",
+        "The Services Office",
+        "The IT support desk",
+        "Student Health Services"
       ],
-      "correctAnswer": "A recent utility bill",
-      "explanation": "The speaker says a recent utility bill or bank statement can serve as proof of address.",
+      "correctAnswer": "The Services Office",
+      "explanation": "The guide states 'get your student photo ID taken at the Services Office.'",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-023-q17",
       "audioScriptId": "celpip-listening-023-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "When might a vision test be required during an in-person renewal?",
+      "prompt": "What are the hours for photo ID service?",
       "options": [
-        "For every renewal",
-        "Only for seniors",
-        "If the driver's vision has changed",
-        "If the licence is expired by more than one year"
+        "8 AM to 5 PM",
+        "9 AM to 4 PM",
+        "10 AM to 3 PM",
+        "8 AM to 6 PM"
       ],
-      "correctAnswer": "If the driver's vision has changed",
-      "explanation": "The speaker says a vision test may be required if vision has changed.",
+      "correctAnswer": "9 AM to 4 PM",
+      "explanation": "The guide mentions 'between 9 and 4 on any day this week.'",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-023-q18",
       "audioScriptId": "celpip-listening-023-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is needed to verify identity for online renewal?",
+      "prompt": "What is the estimated budget for books and materials?",
       "options": [
-        "A passport and utility bill",
-        "A driver's licence number and last four digits of a health card",
-        "A photo and signature",
-        "An email address and phone number"
+        "One hundred dollars",
+        "Two hundred dollars",
+        "Three hundred dollars",
+        "Four hundred dollars"
       ],
-      "correctAnswer": "A driver's licence number and last four digits of a health card",
-      "explanation": "The speaker specifies the driver's licence number and last four digits of the health card.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Three hundred dollars",
+      "explanation": "The guide states 'budget about three hundred dollars for books and materials.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-023-q19",
       "audioScriptId": "celpip-listening-023-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long does online renewal processing take?",
+      "prompt": "When is the Welcome Social?",
       "options": [
-        "Same day",
-        "One business day",
-        "Up to five business days",
-        "Two weeks"
+        "Thursday evening",
+        "Friday evening",
+        "Saturday afternoon",
+        "Sunday afternoon"
       ],
-      "correctAnswer": "Up to five business days",
-      "explanation": "The speaker says processing takes up to five business days.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Friday evening",
+      "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-023-q20",
       "audioScriptId": "celpip-listening-023-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What change is being announced?",
+      "prompt": "How many active fires are currently being responded to?",
       "options": [
-        "A new bus route for schools",
-        "Free transit for seniors expanded to all days and hours",
-        "A reduction in transit fares for students",
-        "New light rail construction beginning next month"
+        "100 fires",
+        "115 fires",
+        "127 fires",
+        "140 fires"
       ],
-      "correctAnswer": "Free transit for seniors expanded to all days and hours",
-      "explanation": "The report says the free transit programme for seniors will expand to seven days a week.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "127 fires",
+      "explanation": "Crews have already responded to 127 active fires across the province.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-023-q21",
       "audioScriptId": "celpip-listening-023-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Under the old policy, when was free transit available to seniors?",
+      "prompt": "Why is the fire season starting early this year?",
       "options": [
-        "Weekends only",
-        "Every day from 6 am to 10 pm",
-        "Weekdays between 9 am and 3 pm",
-        "Only on statutory holidays"
+        "Increased lightning activity",
+        "Unusually warm and dry spring",
+        "Poor fire prevention policies",
+        "Higher temperatures in August"
       ],
-      "correctAnswer": "Weekdays between 9 am and 3 pm",
-      "explanation": "The report states the previous programme applied weekdays between 9 am and 3 pm.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Unusually warm and dry spring",
+      "explanation": "The unusually warm and dry spring is blamed for the early start.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-023-q22",
       "audioScriptId": "celpip-listening-023-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What reason did the transportation director give for the expansion?",
+      "prompt": "How many hectares were burned during last summer's fire season?",
       "options": [
-        "To reduce road congestion",
-        "To increase city revenue",
-        "Many seniors could not attend evening appointments or weekend activities",
-        "The transit fleet had excess capacity"
+        "1.8 million hectares",
+        "2.0 million hectares",
+        "2.4 million hectares",
+        "2.8 million hectares"
       ],
-      "correctAnswer": "Many seniors could not attend evening appointments or weekend activities",
-      "explanation": "The director cited data showing seniors missed appointments due to transit costs.",
+      "correctAnswer": "2.4 million hectares",
+      "explanation": "Over 2.4 million hectares were burned during last summer's worst fire season on record.",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-023-q23",
       "audioScriptId": "celpip-listening-023-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will the expanded programme be funded?",
+      "prompt": "What is the firefighting budget for this year?",
       "options": [
-        "Through residential property taxes",
-        "Through a small increase in the commercial property transit levy",
-        "Through federal grants",
-        "Through a fare increase for non-seniors"
+        "400 million dollars",
+        "480 million dollars",
+        "560 million dollars",
+        "600 million dollars"
       ],
-      "correctAnswer": "Through a small increase in the commercial property transit levy",
-      "explanation": "The spokesperson says a small increase in the levy on commercial property owners will fund it.",
+      "correctAnswer": "560 million dollars",
+      "explanation": "This year's budget for firefighting has been increased to 560 million dollars.",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-023-q24",
       "audioScriptId": "celpip-listening-023-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What did advocacy groups call for in addition to free fares?",
+      "prompt": "How many new helicopters are being deployed?",
       "options": [
-        "Newer buses",
-        "Better accessibility at stops and more frequent service",
-        "Lower fares for everyone",
-        "A free monthly transit pass"
+        "Three helicopters",
+        "Four helicopters",
+        "Five helicopters",
+        "Seven helicopters"
       ],
-      "correctAnswer": "Better accessibility at stops and more frequent service",
-      "explanation": "Advocacy groups called for improved accessibility and more frequent service.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Five helicopters",
+      "explanation": "Five new helicopters equipped with water-dropping technology are being deployed.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-023-q25",
       "audioScriptId": "celpip-listening-023-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the main topic of the discussion?",
+      "prompt": "What is the cost of the engineering program expansion?",
       "options": [
-        "Whether to build new office buildings",
-        "Whether companies should require a full return to in-person work",
-        "How to improve video conferencing technology",
-        "Whether remote work causes productivity loss"
+        "1.8 million dollars",
+        "2.0 million dollars",
+        "2.4 million dollars",
+        "2.8 million dollars"
       ],
-      "correctAnswer": "Whether companies should require a full return to in-person work",
-      "explanation": "The host introduces the topic as whether companies should require employees to return to the office.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "2.4 million dollars",
+      "explanation": "The cost would be approximately 2.4 million dollars over two years.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-023-q26",
       "audioScriptId": "celpip-listening-023-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Sophie say about spontaneous conversations?",
+      "prompt": "How many potential students did the university lose last year?",
       "options": [
-        "They are inefficient",
-        "They lead to innovations that cannot be replicated on video calls",
-        "They are better online",
-        "They only benefit senior employees"
+        "100 students",
+        "125 students",
+        "150 students",
+        "175 students"
       ],
-      "correctAnswer": "They lead to innovations that cannot be replicated on video calls",
-      "explanation": "Sophie says spontaneous conversations lead to innovations you cannot replicate on a video call.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "150 students",
+      "explanation": "Professor Elena mentions they lost 150 potential engineering students.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-023-q27",
       "audioScriptId": "celpip-listening-023-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "According to Marcus, what do studies consistently show?",
+      "prompt": "Why are some students not enrolling at this university?",
       "options": [
-        "Remote workers are less creative",
-        "In-office workers earn more",
-        "Employees show higher job satisfaction with flexibility",
-        "Remote work increases absenteeism"
+        "Poor faculty",
+        "Weak renewable energy program options",
+        "High tuition fees",
+        "Bad location"
       ],
-      "correctAnswer": "Employees show higher job satisfaction with flexibility",
-      "explanation": "Marcus says studies consistently show higher job satisfaction when employees have flexibility.",
+      "correctAnswer": "Weak renewable energy program options",
+      "explanation": "They're losing students to competing universities with stronger renewable energy options.",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-023-q28",
       "audioScriptId": "celpip-listening-023-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What concern does Sophie raise about forcing people to work from home?",
+      "prompt": "What does Diana believe about tuition revenue from additional students?",
       "options": [
-        "It increases energy costs",
-        "Some employees lack a good home environment",
-        "It reduces internet bandwidth",
-        "It leads to longer working hours"
+        "It will decrease overall costs",
+        "It would exceed expansion costs within three years",
+        "It wouldn't help the budget",
+        "It takes longer than expected"
       ],
-      "correctAnswer": "Some employees lack a good home environment",
-      "explanation": "Sophie says some employees live in small apartments or have young children, making home work more stressful.",
+      "correctAnswer": "It would exceed expansion costs within three years",
+      "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years.",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-023-q29",
       "audioScriptId": "celpip-listening-023-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Marcus suggest companies that prefer in-person work should do?",
+      "prompt": "What type of partnership does Diana mention exploring?",
       "options": [
-        "Reduce salaries for remote workers",
-        "Make the office experience compelling enough that people want to come voluntarily",
-        "Publish productivity data publicly",
-        "Hire only employees who live nearby"
+        "International universities",
+        "Government agencies",
+        "Renewable energy companies",
+        "Tech startups"
       ],
-      "correctAnswer": "Make the office experience compelling enough that people want to come voluntarily",
-      "explanation": "Marcus says companies should make in-person work compelling, not mandatory.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Renewable energy companies",
+      "explanation": "Diana mentions conversations with renewable energy companies about funding contributions.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-023-q30",
       "audioScriptId": "celpip-listening-023-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "Which of the following best describes Sophie's view on productivity metrics?",
+      "prompt": "What would companies receive in exchange for supporting the program?",
       "options": [
-        "They perfectly capture real performance",
-        "They are the only reliable measure of output",
-        "They can be misleading and miss informal knowledge transfer",
-        "They support the case for remote work"
+        "University branding",
+        "Free equipment",
+        "Access to graduates for recruitment",
+        "Research funding"
       ],
-      "correctAnswer": "They can be misleading and miss informal knowledge transfer",
-      "explanation": "Sophie says productivity metrics can be misleading and you miss deep organisational knowledge from casual interactions.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Access to graduates for recruitment",
+      "explanation": "Companies want access to graduates for recruitment in exchange for contributions.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-023-q31",
       "audioScriptId": "celpip-listening-023-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Marcus say companies risk if they mandate a return to office?",
+      "prompt": "Why is Malik interested in supporting the program expansion?",
       "options": [
-        "Losing clients",
-        "Being fined by government",
-        "Losing good employees to more flexible competitors",
-        "Reducing profits"
+        "To get easier courses",
+        "To increase tuition fees",
+        "To support classmates interested in sustainability",
+        "To improve campus facilities"
       ],
-      "correctAnswer": "Losing good employees to more flexible competitors",
-      "explanation": "Marcus says companies risk losing good people to competitors who offer flexibility.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "To support classmates interested in sustainability",
+      "explanation": "Many classmates are interested in sustainability and green technology, which the program would support.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-023-q32",
       "audioScriptId": "celpip-listening-023-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's conclusion at the end?",
+      "prompt": "What specific position does Professor Elena hold on the expansion?",
       "options": [
-        "Sophie has the better argument",
-        "Marcus has made the strongest case",
-        "The debate is far from settled",
-        "Both sides agree on the main point"
+        "She opposes it",
+        "She strongly supports it",
+        "She wants to wait",
+        "She's uncertain"
       ],
-      "correctAnswer": "The debate is far from settled",
-      "explanation": "The host says it is clear the debate is far from settled.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "She strongly supports it",
+      "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-023-q33",
       "audioScriptId": "celpip-listening-023-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What common belief does the speaker challenge?",
+      "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "That children are better at maths than adults",
-        "That adults cannot learn a new language as effectively as children",
-        "That language learning requires travel abroad",
-        "That bilingualism causes confusion"
+        "Economic opportunity",
+        "Rising sea levels, extreme weather, and changing precipitation",
+        "Political conflicts",
+        "Educational opportunities"
       ],
-      "correctAnswer": "That adults cannot learn a new language as effectively as children",
-      "explanation": "The speaker says this widespread belief is largely incorrect.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
+      "explanation": "The speaker identifies these climate factors as forcing migration.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-023-q34",
       "audioScriptId": "celpip-listening-023-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What advantage do adults have over children in language learning, according to the speaker?",
+      "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Adults have more free time",
-        "Adults can study deliberately and strategically",
-        "Adults have better pronunciation",
-        "Adults learn grammar faster"
+        "Agricultural improvements",
+        "Reduced urbanization",
+        "Small island nations disappearing and coastal flooding",
+        "Increased employment"
       ],
-      "correctAnswer": "Adults can study deliberately and strategically",
-      "explanation": "The speaker lists this as a critical advantage of adult learners.",
-      "difficulty": "easy",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Small island nations disappearing and coastal flooding",
+      "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-023-q35",
       "audioScriptId": "celpip-listening-023-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How long can a motivated adult reach conversational fluency, according to the passage?",
+      "prompt": "What consequences does the speaker warn about with unplanned migration?",
       "options": [
-        "Three to five years",
-        "Six to eight months",
-        "Twelve to eighteen months",
-        "Two to three years"
+        "Economic growth",
+        "Overcrowded cities, slums, and resource conflicts",
+        "Improved infrastructure",
+        "Better job opportunities"
       ],
-      "correctAnswer": "Twelve to eighteen months",
-      "explanation": "The speaker says adults with good study habits can reach conversational fluency in twelve to eighteen months.",
+      "correctAnswer": "Overcrowded cities, slums, and resource conflicts",
+      "explanation": "The speaker warns that unplanned migration creates overcrowding, slums, and conflicts.",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-023-q36",
       "audioScriptId": "celpip-listening-023-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health benefit is associated with bilingualism?",
+      "prompt": "Which regions does the speaker believe will become more desirable?",
       "options": [
-        "Lower blood pressure",
-        "Reduced risk of heart disease",
-        "Delayed onset of dementia by four to five years",
-        "Improved physical coordination"
+        "Equatorial regions",
+        "Small island nations",
+        "Canada and northern regions",
+        "Coastal areas"
       ],
-      "correctAnswer": "Delayed onset of dementia by four to five years",
-      "explanation": "The speaker cites studies showing bilingual adults show delayed onset of dementia by four to five years on average.",
+      "correctAnswer": "Canada and northern regions",
+      "explanation": "The speaker states Canada and northern regions will likely become more desirable.",
       "difficulty": "medium",
-      "topic": "dealing with workplace conflict"
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-023-q37",
       "audioScriptId": "celpip-listening-023-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What cognitive skills does managing two languages improve?",
+      "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Long-term memory and spatial reasoning",
-        "Attention, task-switching, and creativity",
-        "Mathematical problem-solving",
-        "Reading speed and recall"
+        "Restricting population growth",
+        "Expanding housing, infrastructure, and economic capacity",
+        "Limiting migration",
+        "Maintaining current conditions"
       ],
-      "correctAnswer": "Attention, task-switching, and creativity",
-      "explanation": "The speaker says managing two language systems improves attention, task-switching, and creativity.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
+      "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-023-q38",
       "audioScriptId": "celpip-listening-023-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall conclusion?",
+      "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "Adults should not bother learning new languages",
-        "Language learning is too difficult for most adults",
-        "Language learning is one of the most valuable investments an adult can make",
-        "Children should be taught two languages from birth"
+        "It won't happen",
+        "It should be stopped",
+        "It's inevitable and should be managed responsibly",
+        "It's not a real problem"
       ],
-      "correctAnswer": "Language learning is one of the most valuable investments an adult can make",
-      "explanation": "The speaker states directly that language learning is one of the most valuable adult investments.",
-      "difficulty": "hard",
-      "topic": "dealing with workplace conflict"
+      "correctAnswer": "It's inevitable and should be managed responsibly",
+      "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",
+      "difficulty": "medium",
+      "topic": "Environment"
     }
   ]
 }

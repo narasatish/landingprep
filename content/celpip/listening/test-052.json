@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 52",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 52",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-052-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Neighbourhood community events",
-      "script": "Two neighbours discuss an upcoming street festival organised by their community association. They explain how to register a stall, what permits are needed, and how volunteers can help on the day.",
+      "title": "Restaurant Reservation Issue",
+      "text": "Diner: Hi, I made a reservation for tonight at 7 PM under the name Anderson, and I just realized the name is spelled wrong in your system. Manager: Oh no, I'm sorry about that. Let me look that up. How is it spelled? Diner: A-N-D-E-R-S-O-N. I don't know how it got misspelled. Manager: I see it here as A-N-D-E-R-S-E-N. That's an easy mix-up. When you arrive, just let the host know and we'll get you seated right away. Diner: Actually, I'm calling because I need to change the time. Can I do 7:30 instead? Manager: Absolutely. Let me adjust that for you. How many people? Diner: Six of us. Manager: Perfect. I've moved you from 7 PM to 7:30 PM for six people, and I've corrected the name spelling. Is there anything else? Diner: Yes, one more thing. Can you make sure we have a quiet table? There are some business matters we want to discuss. Manager: I'll add a note to your reservation requesting a quieter area away from the bar. We have some nice tables by the window. Diner: That sounds great. What's your cancellation policy? Manager: We require 24 hours notice for cancellations. If you need to cancel, just call us before 7:30 PM tomorrow. Diner: Got it. Thank you.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-052-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about neighbourhood safety initiatives",
-      "script": "This news is about neighbourhood safety initiatives. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Neighbourhood Park Chat",
+      "text": "David: Hey, nice day, isn't it? Rebecca: Beautiful. Perfect weather for being outside. David: Have you lived in this neighbourhood long? Rebecca: About five years now. And you? David: Just moved here last month. Rebecca: Oh nice. You picked a good time to arrive. The summer's the best season here. David: So I'm hearing. Any recommendations for places to go? Rebecca: There's a great farmer's market on Saturday mornings at the corner of Main and Oak. The coffee shop near there is amazing too. David: Sounds good. I'll have to check it out. Rebecca: You definitely should. They have the best pastries. Oh, and the park just got new playground equipment if you have kids. David: No kids yet, but that's nice to know. Do many families live here? Rebecca: Lots of young families. It's a very friendly community. David: That's what I was hoping for. I'm looking forward to exploring more.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-052-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about neighbourhood safety initiatives",
-      "script": "This discussion is about neighbourhood safety initiatives. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "Workplace Safety Training: Fire Procedures",
+      "text": "Good morning. This is your mandatory workplace fire safety training. Please listen carefully. In case of fire alarm, first, stay calm. Second, evacuate using the nearest exit. Do not use elevators under any circumstances. Stairs are located at both ends of each hallway. Third, move to the designated assembly point in the parking lot north of the building. Check in with your team leader. Fourth, do not re-enter the building until an authorized person announces it's safe. Fire drills occur quarterly on the first Friday of March, June, September, and December at 2 PM. During drills, the process is identical to a real emergency. Everyone must participate. If you cannot evacuate due to disability, proceed to a designated refuge area and use the emergency call button. These refuge areas are marked on building maps. Fire extinguishers are located every twenty-five meters along hallways and near kitchen areas. Only trained staff should operate extinguishers. If you're not trained, alert a supervisor. Report any fire hazards such as blocked exits or damaged equipment to maintenance immediately. Violations of fire safety procedures may result in disciplinary action. Contact Safety Services with any questions.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-052-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about neighbourhood safety initiatives",
-      "script": "This announcement is about neighbourhood safety initiatives. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "New Tech Campus Opens in Calgary",
+      "text": "A major technology development is happening in Calgary today. TechHub Prairie, a 50,000-square-meter innovation center, officially opened its doors this morning in the downtown core. The facility cost 85 million dollars to construct and is expected to create 1,200 new jobs over the next two years. The campus features office space, research laboratories, and startup incubator units. Over 40 companies have already committed to moving in, including software firms, AI research groups, and digital marketing agencies. Mayor Jyoti Gondek attended the ribbon-cutting ceremony and called it a game-changer for Alberta's economy. The provincial government provided 15 million dollars in funding to support the project. TechHub Prairie will also host weekly networking events and offer mentorship programs for emerging entrepreneurs. Officials believe this development positions Calgary as a serious competitor in Canada's tech industry.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-052-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about neighbourhood safety initiatives",
-      "script": "This office is about neighbourhood safety initiatives. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Small Business Loan Program Discussion",
+      "text": "Bank Manager Chris: Our small business loan program has been quite successful this year. We've approved 285 loans totaling 42 million dollars to local entrepreneurs. However, we've noticed our default rate is slightly higher than industry average at about 4.2 percent. We're considering tightening our lending criteria to reduce risk.\n\nEconomic Development Officer Lisa: I would caution against tightening the criteria too much, Chris. These small loans are crucial for community development and job creation. Yes, a few borrowers struggle, but 95 percent of our loans are performing well. If we make the qualification requirements too strict, we'll only serve well-established businesses with existing collateral. That defeats the purpose of supporting new entrepreneurs who are taking real risks.\n\nBusiness Owner Marcus: I completely agree with Lisa. When I started my restaurant five years ago, traditional banks wouldn't touch me because I didn't have significant assets or a ten-year track record. Your bank took a chance on me, and now my business employs 12 people. If your criteria were stricter, I wouldn't be here. I think what you should focus on is better support systems after lending, like mentorship programs and financial coaching.\n\nBank Manager Chris: Marcus, your success story is exactly what we want to see. But we do have a fiduciary responsibility to our depositors. Maybe Marcus is right—perhaps the answer isn't stricter lending, but better support after approval. We could partner with business development organizations to provide mentoring and financial management training.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-052-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about neighbourhood safety initiatives",
-      "script": "This lecture is about neighbourhood safety initiatives. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Universal Basic Income Feasibility",
+      "text": "I want to discuss Universal Basic Income, or UBI, and why I believe it could work in Canada. The concept is straightforward: every citizen receives a regular, unconditional cash payment from the government. Now, I know people immediately worry about the cost, but let me address that. First, UBI could replace many existing welfare programs that are expensive to administer. The bureaucracy involved in means-testing and eligibility verification costs billions. UBI would be simpler and less wasteful. Second, the economic stimulus of putting money in people's hands is significant. When people have financial security, they spend more, which supports businesses and creates jobs. Third, UBI addresses real problems: poverty, economic instability, and lack of opportunity. We've seen pilot projects in Kenya, Finland, and Canada that show positive outcomes. In Kenya, UBI increased business formation by 32 percent. In Finland, participants reported better mental health and less anxiety. Some worry it will make people lazy, but that's not supported by evidence. People want purpose and contribution, not just money. What UBI does is give them the freedom to pursue education, care for family, or start businesses without desperation. The real question isn't whether we can afford UBI—it's whether we can afford not to implement it. Rising inequality and automation are creating unprecedented challenges.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-052-q01",
+      "audioScriptId": "celpip-listening-052-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-052-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "What is the customer's correct last name spelling?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "A-N-D-E-R-S-E-N",
+        "A-N-D-E-R-S-O-N",
+        "A-N-D-R-E-S-O-N",
+        "A-N-D-E-R-T-O-N"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "neighbourhood community events"
+      "correctAnswer": "A-N-D-E-R-S-O-N",
+      "explanation": "Diner specifies the correct spelling as 'A-N-D-E-R-S-O-N.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-052-q02",
+      "audioScriptId": "celpip-listening-052-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-052-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "What was the original reservation time?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "6:30 PM",
+        "7:00 PM",
+        "7:15 PM",
+        "8:00 PM"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "neighbourhood community events"
+      "correctAnswer": "7:00 PM",
+      "explanation": "Diner states 'I made a reservation for tonight at 7 PM.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-052-q03",
+      "audioScriptId": "celpip-listening-052-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-052-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "What is the new reservation time?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "7:00 PM",
+        "7:15 PM",
+        "7:30 PM",
+        "8:00 PM"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "neighbourhood community events"
+      "correctAnswer": "7:30 PM",
+      "explanation": "Diner requests and manager confirms changing to '7:30 PM.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-052-q04",
+      "audioScriptId": "celpip-listening-052-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-052-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "How many people are in the party?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "Four",
+        "Five",
+        "Six",
+        "Seven"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "Six",
+      "explanation": "Diner states 'Six of us' in response to the manager's question about party size.",
       "difficulty": "medium",
-      "topic": "neighbourhood community events"
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-052-q05",
+      "audioScriptId": "celpip-listening-052-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-052-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "How was the customer's name misspelled in the system?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "A-N-D-E-R-S-E-N",
+        "A-N-D-E-R-S-A-N",
+        "A-N-D-E-R-T-O-N",
+        "A-N-D-R-E-S-O-N"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "A-N-D-E-R-S-E-N",
+      "explanation": "Manager states the name appeared as 'A-N-D-E-R-S-E-N' in the system.",
       "difficulty": "medium",
-      "topic": "neighbourhood community events"
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-052-q06",
+      "audioScriptId": "celpip-listening-052-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-052-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "What special seating request did the customer make?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "Near the kitchen",
+        "By the bar",
+        "A quiet area away from the bar",
+        "Close to the entrance"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "A quiet area away from the bar",
+      "explanation": "Diner requests 'a quiet table' and manager notes 'a quieter area away from the bar.'",
       "difficulty": "medium",
-      "topic": "neighbourhood community events"
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-052-q07",
+      "audioScriptId": "celpip-listening-052-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-052-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "Where will the quiet table be located?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "Near the kitchen",
+        "By the bar",
+        "By the window",
+        "At the entrance"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "neighbourhood community events"
+      "correctAnswer": "By the window",
+      "explanation": "Manager states 'We have some nice tables by the window.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-052-q08",
+      "audioScriptId": "celpip-listening-052-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-052-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "What is the restaurant's cancellation policy?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "6 hours notice required",
+        "12 hours notice required",
+        "24 hours notice required",
+        "48 hours notice required"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "neighbourhood community events"
+      "correctAnswer": "24 hours notice required",
+      "explanation": "Manager states 'We require 24 hours notice for cancellations.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-052-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-052-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-052-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "How long has Rebecca lived in the neighbourhood?",
+      "options": [
+        "Two years",
+        "Three years",
+        "Four years",
+        "Five years"
+      ],
+      "correctAnswer": "Five years",
+      "explanation": "Rebecca states 'About five years now.'",
       "difficulty": "medium",
-      "topic": "neighbourhood community events"
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-052-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-052-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-052-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "When did David move to the neighbourhood?",
+      "options": [
+        "One week ago",
+        "Two weeks ago",
+        "Last month",
+        "Two months ago"
+      ],
+      "correctAnswer": "Last month",
+      "explanation": "David says 'Just moved here last month.'",
       "difficulty": "medium",
-      "topic": "neighbourhood community events"
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-052-q11",
+      "audioScriptId": "celpip-listening-052-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-052-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "What is the best season in this neighbourhood?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "Spring",
+        "Summer",
+        "Fall",
+        "Winter"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Summer",
+      "explanation": "Rebecca states 'The summer's the best season here.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-052-q12",
+      "audioScriptId": "celpip-listening-052-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-052-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "Where is the farmer's market held?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "Main and Queen",
+        "Main and King",
+        "Main and Oak",
+        "Oak and Queen"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Main and Oak",
+      "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-052-q13",
+      "audioScriptId": "celpip-listening-052-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-052-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "Business-focused",
+        "Very friendly",
+        "Quiet and isolated",
+        "Fast-paced"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Very friendly",
+      "explanation": "Rebecca says 'It's a very friendly community.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-052-q14",
+      "audioScriptId": "celpip-listening-052-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-052-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "What should NOT be used during evacuation?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "Stairs",
+        "Emergency exits",
+        "Elevators",
+        "Hallways"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Elevators",
+      "explanation": "The training explicitly states 'Do not use elevators under any circumstances.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-052-q15",
+      "audioScriptId": "celpip-listening-052-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-052-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "Where is the designated assembly point?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "The main lobby",
+        "The parking lot north of the building",
+        "The south entrance",
+        "The rooftop"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "The parking lot north of the building",
+      "explanation": "The guide specifies 'the designated assembly point in the parking lot north of the building.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-052-q16",
+      "audioScriptId": "celpip-listening-052-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-052-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "How often are fire drills conducted?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "Monthly",
+        "Bi-monthly",
+        "Quarterly",
+        "Annually"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Quarterly",
+      "explanation": "The training states 'Fire drills occur quarterly on the first Friday of March, June, September, and December.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-052-q17",
+      "audioScriptId": "celpip-listening-052-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-052-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "At what time are fire drills held?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "10 AM",
+        "1 PM",
+        "2 PM",
+        "3 PM"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "2 PM",
+      "explanation": "The guide specifies drills are 'at 2 PM.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-052-q18",
+      "audioScriptId": "celpip-listening-052-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-052-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "How frequently are fire extinguishers located along hallways?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "Every 10 meters",
+        "Every 15 meters",
+        "Every 25 meters",
+        "Every 50 meters"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Every 25 meters",
+      "explanation": "The training states 'Fire extinguishers are located every twenty-five meters along hallways.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-052-q19",
+      "audioScriptId": "celpip-listening-052-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-052-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "What should employees do if they find a blocked exit?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "Move it themselves",
+        "Ignore it",
+        "Report it to maintenance immediately",
+        "Wait for management"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Report it to maintenance immediately",
+      "explanation": "The guide instructs to 'Report any fire hazards such as blocked exits or damaged equipment to maintenance immediately.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-052-q20",
+      "audioScriptId": "celpip-listening-052-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-052-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "What is the size of TechHub Prairie?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "30,000 square meters",
+        "40,000 square meters",
+        "50,000 square meters",
+        "60,000 square meters"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "50,000 square meters",
+      "explanation": "The report states TechHub Prairie is a 50,000-square-meter innovation center.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-052-q21",
+      "audioScriptId": "celpip-listening-052-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-052-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "How much did the facility cost to construct?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "75 million dollars",
+        "80 million dollars",
+        "85 million dollars",
+        "90 million dollars"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "85 million dollars",
+      "explanation": "The facility cost 85 million dollars to construct.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-052-q22",
+      "audioScriptId": "celpip-listening-052-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-052-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "How many new jobs are expected to be created?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "800 jobs",
+        "1,000 jobs",
+        "1,200 jobs",
+        "1,500 jobs"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "1,200 jobs",
+      "explanation": "It is expected to create 1,200 new jobs over the next two years.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-052-q23",
+      "audioScriptId": "celpip-listening-052-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-052-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "How much provincial funding was provided?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "10 million dollars",
+        "12 million dollars",
+        "15 million dollars",
+        "20 million dollars"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "15 million dollars",
+      "explanation": "The provincial government provided 15 million dollars in funding.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-052-q24",
+      "audioScriptId": "celpip-listening-052-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-052-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "Which of the following is NOT mentioned as available at the campus?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "Office space",
+        "Research laboratories",
+        "Residential apartments",
+        "Startup incubator units"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Residential apartments",
+      "explanation": "The report mentions office space, laboratories, and incubators, but not apartments.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-052-q25",
+      "audioScriptId": "celpip-listening-052-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-052-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "How many small business loans has the bank approved this year?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "250 loans",
+        "270 loans",
+        "285 loans",
+        "300 loans"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "285 loans",
+      "explanation": "The bank has approved 285 loans this year.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-052-q26",
+      "audioScriptId": "celpip-listening-052-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-052-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "What is the total amount of loans approved?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "35 million dollars",
+        "39 million dollars",
+        "42 million dollars",
+        "48 million dollars"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "42 million dollars",
+      "explanation": "The loans approved total 42 million dollars.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-052-q27",
+      "audioScriptId": "celpip-listening-052-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-052-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What is the bank's current loan default rate?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "2.5 percent",
+        "3.2 percent",
+        "4.2 percent",
+        "5.5 percent"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "4.2 percent",
+      "explanation": "The default rate is approximately 4.2 percent.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-052-q28",
+      "audioScriptId": "celpip-listening-052-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-052-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "Why does Lisa oppose tightening lending criteria?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "It's too expensive",
+        "It would exclude new entrepreneurs",
+        "It would reduce profitability",
+        "It would increase default rates"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "It would exclude new entrepreneurs",
+      "explanation": "Lisa warns that stricter criteria would only serve well-established businesses, defeating the purpose.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-052-q29",
+      "audioScriptId": "celpip-listening-052-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-052-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "What challenge did Marcus face when starting his business?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "Lack of experience",
+        "No customers",
+        "Banks wouldn't lend to him",
+        "High interest rates"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Banks wouldn't lend to him",
+      "explanation": "Marcus says traditional banks wouldn't lend because he lacked assets and track record.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-052-q30",
+      "audioScriptId": "celpip-listening-052-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-052-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "How many people does Marcus's restaurant currently employ?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "8 people",
+        "10 people",
+        "12 people",
+        "15 people"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "12 people",
+      "explanation": "Marcus's restaurant now employs 12 people.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-052-q31",
+      "audioScriptId": "celpip-listening-052-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-052-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "What alternative solution does Marcus propose?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "Lower interest rates",
+        "Mentorship and financial coaching programs",
+        "Shorter loan terms",
+        "No collateral requirements"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Mentorship and financial coaching programs",
+      "explanation": "Marcus suggests focus on better support systems like mentorship and financial coaching after lending.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-052-q32",
+      "audioScriptId": "celpip-listening-052-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-052-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "Who does Chris propose to partner with for business support?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "Universities",
+        "Government agencies",
+        "Business development organizations",
+        "Large corporations"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Business development organizations",
+      "explanation": "Chris proposes partnering with business development organizations for mentoring and training.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-052-q33",
+      "audioScriptId": "celpip-listening-052-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-052-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "Temporary welfare assistance",
+        "Government loans with repayment",
+        "Regular unconditional cash payment to all citizens",
+        "Employer-provided income supplements"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Regular unconditional cash payment to all citizens",
+      "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-052-q34",
+      "audioScriptId": "celpip-listening-052-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-052-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "How could UBI reduce government costs according to the speaker?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "By reducing salaries",
+        "By replacing expensive welfare programs",
+        "By cutting military spending",
+        "By reducing taxes"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "By replacing expensive welfare programs",
+      "explanation": "The speaker argues UBI could replace many existing welfare programs and reduce administrative costs.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-052-q35",
+      "audioScriptId": "celpip-listening-052-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-052-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "It would decrease spending",
+        "Providing financial security would stimulate spending and job creation",
+        "It would reduce business activity",
+        "It would increase unemployment"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Providing financial security would stimulate spending and job creation",
+      "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-052-q36",
+      "audioScriptId": "celpip-listening-052-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-052-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "22 percent",
+        "27 percent",
+        "32 percent",
+        "38 percent"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "32 percent",
+      "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-052-q37",
+      "audioScriptId": "celpip-listening-052-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-052-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "Increased energy",
+        "Better mental health and less anxiety",
+        "Improved sleep",
+        "Reduced medication needs"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about neighbourhood safety initiatives.",
-      "difficulty": "medium"
+      "correctAnswer": "Better mental health and less anxiety",
+      "explanation": "In Finland, participants reported better mental health and less anxiety.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-052-q38",
+      "audioScriptId": "celpip-listening-052-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-052-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What concern does the speaker directly address about UBI?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "It would increase inflation",
+        "It would make people lazy",
+        "It would reduce work motivation",
+        "Both B and C"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about neighbourhood safety initiatives.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "It would make people lazy",
+      "explanation": "The speaker specifically addresses the concern that UBI would make people lazy and disputes this.",
+      "difficulty": "medium",
+      "topic": "Economics"
     }
   ]
 }

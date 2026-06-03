@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 11",
+  "title": "CELPIP General Listening — Practice Test 11",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-011-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Calling About a Noisy Neighbour",
-      "text": "Tenant: Hi, I'm calling about a problem with my upstairs neighbour. There's loud music almost every night after eleven, and I can't sleep.\nProperty Manager: I'm sorry to hear that. Have you spoken to the neighbour directly yet?\nTenant: I knocked on the door twice last week, but nobody answered.\nProperty Manager: In that case, I can send them an official written notice reminding them of the quiet hours policy. That usually works.\nTenant: Would there be any consequences if it continues after the notice?\nProperty Manager: Yes. If the behaviour continues after two written notices, we can begin the formal dispute process, which could affect their tenancy.\nTenant: That's a relief. How long does it take to send the first notice?\nProperty Manager: Usually within two business days. I'll log your complaint right now and you should receive a copy of the notice by email once it goes out.\nTenant: Perfect. And what should I do in the meantime if it happens tonight?\nProperty Manager: You can call our after-hours line and log a noise complaint. Those records will also be used if this goes further.",
+      "title": "Internet Service Outage",
+      "text": "Customer: Hi, my internet's been down for three hours now and I need it for work. Support Agent: I'm sorry to hear that. Let me pull up your account. Can I have your account number? Customer: It's 4472-89156. I'm working from home and have a client call in twenty minutes. Agent: Got it. I see you're in the downtown Toronto area. We have a known outage affecting that postal code from a fiber cut about two hours ago. Our repair team is already on site. Customer: When will it be fixed? Agent: Based on the damage, they estimate two to three more hours. So around 4:30 PM at the latest. Customer: That's too late for my meeting. Can you give me a credit or something? Agent: Absolutely. Since this outage is on our end, I'll apply a $25 credit to your next bill automatically. That'll go through within 24 hours. Customer: What about my current bill? Do I get anything for today's service loss? Agent: Yes, we credit one day of service charges, which is about $3.50 for today. Combined with the $25 credit, that's $28.50 total compensation. Is there anything else I can help with? Customer: No, that's fair. Thank you.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-011-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Planning a Weekend Camping Trip",
-      "text": "Maya: Are you still planning to go camping this weekend? I heard there's a campsite near the lake that has good reviews.\nDaniel: Yes, I booked two spots at Birchwood Provincial Park. It's about ninety minutes from downtown.\nMaya: Do you think the weather will hold up? The forecast showed some rain on Saturday.\nDaniel: I checked again this morning. It looks like just a light shower in the early afternoon. We should be fine if we set up the tent before noon.\nMaya: Makes sense. Should I bring my camp stove, or does the park have fire pits?\nDaniel: The park has fire pits, but there are restrictions on fire use right now because of dry conditions. Bring your stove — it's probably safer.\nMaya: Good thinking. What about food? Should we plan to cook each night or pack some ready-made meals?\nDaniel: Let's do a mix. Cook a proper dinner on Friday, and keep Saturday simple with sandwiches and wraps — less cleanup if the rain comes.",
+      "title": "Library Book Recommendation",
+      "text": "Emma: Have you read that mystery novel everyone's been talking about? Liam: Which one? There are so many right now. Emma: The one about the detective in Montreal. It won the Governor General's Award last year. Liam: Oh, you mean 'The Silent Case'? I haven't read it yet, but I've heard great reviews. Emma: You have to read it. I just finished it yesterday, and I couldn't put it down. Liam: Is it that good? Emma: Honestly, it's one of the best books I've read in years. The plot twists were crazy. Liam: Where did you get it? Emma: The library. I put a hold on it three months ago because everyone wanted to read it. Liam: Three months? That's a long wait. Emma: It was worth it though. If you want, I can put in a request for you. Liam: Really? That would be great. Emma: Sure. You should get it in maybe four to six weeks. Liam: Thanks. I'll add it to my reading list.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-011-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "Information About Renewing a Canadian Driver's Licence",
-      "text": "Good afternoon. This information session will walk you through the process of renewing your Canadian driver's licence. Whether your licence has recently expired or is about to expire, it is important to act early to avoid fines or restrictions on your driving privileges.\n\nIn most provinces, you will receive a renewal notice by mail several weeks before your expiry date. However, it is your responsibility to renew even if you do not receive this notice. Renewal can be completed in three ways: in person at a government services office, online through the provincial licensing portal, or by mail using the renewal form included with your notice.\n\nIf you are renewing in person, you will need to bring your current licence, proof of address such as a recent utility bill or bank statement, and the renewal fee. Fees vary by province but are generally between twenty-five and sixty-five dollars. If your vision has changed since your last renewal, you may also be required to complete a vision test at the counter.\n\nOnline renewal is available to drivers who have no changes to their personal information and whose previous renewal was also completed online. You will need your driver's licence number and the last four digits of your health card to verify your identity. Processing takes up to five business days and the new licence will be mailed to your home.\n\nRemember: driving with an expired licence is a ticketable offence in every province. Renew early to avoid unnecessary penalties.",
+      "title": "Travel Insurance Information Session",
+      "text": "Welcome to our travel insurance information session. Today, I'll explain the coverage options available through our travel agency. We offer three plans: Basic, Standard, and Premium. The Basic plan covers medical emergencies, emergency dental, and evacuation. Cost is seventy-five dollars for two weeks. The Standard plan includes everything in Basic plus trip cancellation coverage, lost luggage reimbursement up to one thousand dollars, and travel delays over twelve hours. Cost is one hundred twenty dollars for two weeks. The Premium plan is our comprehensive option. It adds accidental death coverage, zero deductible for medical claims, and upgrade to two thousand five hundred dollars for lost luggage. Premium costs two hundred twenty dollars for two weeks. All plans exclude claims related to alcohol impairment or pre-existing medical conditions not disclosed. Coverage begins on your departure date and ends upon return. Claims must be filed within ninety days of the incident. You'll receive a confirmation email with your policy documents. For claims, call our toll-free number at 1-800-555-0147. Representatives are available 24/7. Questions about coverage should be directed to our customer service team. Purchase your policy at least seven days before travel.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-011-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: City Expands Free Transit for Seniors",
-      "text": "The city announced today that it will expand its free public transit programme for seniors beginning next month. Under the new policy, all residents aged sixty-five and older will be able to ride buses and light rail lines at no cost, seven days a week. Previously, the programme only applied on weekdays between nine in the morning and three in the afternoon.\n\nThe city's transportation director said the expansion was driven by data showing that many seniors were unable to attend evening medical appointments or weekend community activities due to transit costs. Council members voted fourteen to three in favour of the expansion at last night's meeting.\n\nThe programme will be funded through a small increase in the transit levy paid by commercial property owners. A city spokesperson confirmed that no changes to residential property taxes are planned as a result of this programme.\n\nAdvocacy groups welcomed the announcement but called for further steps, including improved accessibility features at bus stops and more frequent service on routes serving seniors' residences. The city said those improvements are already under review as part of the five-year transit plan.",
+      "title": "Toronto Transit Strike Reaches Day Five",
+      "text": "Good evening. The Toronto Transit Commission strike has now entered its fifth day, affecting nearly two million commuters across the Greater Toronto Area. The TTC and the union representing over 10,000 workers remain at odds over wages and benefits. Union spokesperson Maria Chen says members are seeking a 4.25 percent pay increase over three years, citing inflation and cost-of-living pressures. The TTC counters that budget constraints limit them to 2.5 percent. Downtown businesses report a 30 percent drop in foot traffic since Monday. City Council has called for emergency mediation sessions to resume tomorrow morning. Meanwhile, the public is turning to carpooling, cycling, and GO Transit as alternatives. Some schools have adjusted schedules to accommodate parents unable to reach their children. Negotiations are expected to intensify as both sides face increasing pressure from the community.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-011-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Should Companies Require Employees to Return to the Office?",
-      "text": "Host: Good morning. Today we're discussing whether companies should require employees to return to the office full time. I'm joined by two guests with very different views. Sophie, you support a return-to-office policy. Tell us why.\nSophie: Thank you. I believe in-person work is essential for collaboration and company culture. When people are in the same room, ideas flow more naturally. Spontaneous conversations at the coffee machine lead to innovations you simply cannot replicate on a video call. Junior employees especially benefit from being close to experienced colleagues.\nHost: And Marcus, you argue against mandatory returns. What's your position?\nMarcus: My position is that forcing people back to the office ignores what the pandemic proved: that most knowledge work can be done just as effectively from home, often more so. People save hours on commuting, they have fewer interruptions, and studies consistently show higher job satisfaction when employees have flexibility.\nHost: Sophie, how do you respond to the productivity argument?\nSophie: Productivity metrics can be misleading. You might complete more tasks per hour at home, but you miss out on the kind of deep organisational knowledge that comes from casual interactions. Also, not everyone has a good home environment — some employees live in small apartments or have young children, and forcing them to work from home is actually more stressful.\nHost: Marcus, a final word?\nMarcus: Companies that respect autonomy attract and retain better talent. If a business genuinely believes in-person work is better, they should make it so compelling that people want to come in voluntarily — not mandate it and risk losing good people to competitors who offer flexibility.\nHost: Thank you both. It's clear this debate is far from settled.",
+      "title": "Community Center Renovation Project",
+      "text": "Recreation Director Karen: We're finally moving forward with the community center renovation that was approved last year. The project is budgeted at 6.8 million dollars and should take about 18 months to complete. We plan to add a new fitness center, upgrade the swimming pool, and create additional youth programming spaces. This will significantly improve our facilities.\n\nCommunity Member Robert: I'm glad to see this moving forward, Karen, but I'm concerned about one thing. During the construction, the center will be partially closed. My kids attend after-school programs here, and I'm worried about where they'll go during the renovation period. Many families in our community rely on these programs for childcare.\n\nOperations Manager Susan: That's a valid concern, Robert. We've actually planned for this. We'll maintain the community room and outdoor spaces throughout the project. We can relocate the after-school programs there during construction, though it will be more crowded. We're also negotiating with the school district to potentially use school facilities as a backup location for some activities.\n\nYouth Program Coordinator Jason: I'm excited about the upgrades, especially the new youth spaces. But Susan, we need to be realistic about the outdoor space. We currently use it for sports and recreation. If we're moving programs there, we'll have limited room for physical activities. Could we consider using a local park for some outdoor programming during construction?",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-011-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: The Value of Learning a Second Language as an Adult",
-      "text": "There is a widespread belief that adults cannot learn a new language as effectively as children. This idea has discouraged many adults from even attempting to study a second language, which I believe is deeply unfortunate — and largely incorrect.\n\nResearch on brain plasticity has shown that while young children do acquire language with remarkable ease and near-perfect accents, adults have significant advantages that are rarely acknowledged. Adults come to language learning with an established grammar system in their native language, a large vocabulary that can be mapped onto new words, and — critically — the ability to study deliberately and strategically. A child acquires language through years of immersion; an adult with good study habits can reach conversational fluency in twelve to eighteen months.\n\nThe benefits of second language learning extend far beyond communication. Numerous studies have found that bilingual adults show delayed onset of dementia by an average of four to five years compared to monolinguals. The effort of managing two language systems exercises the brain in ways that improve attention, task-switching, and even creativity.\n\nFrom a social perspective, learning the dominant language of your community opens doors in ways that are hard to overstate. It changes how service providers speak to you, how colleagues perceive you, and how confident you feel navigating institutions — from hospitals to government offices.\n\nMy view is straightforward: language learning is one of the most valuable investments an adult can make in themselves, and the belief that it is too late should be replaced with a recognition that it is simply different — and in some respects, better.",
+      "title": "Digital Privacy in the Workplace",
+      "text": "I want to talk about something that concerns me deeply—workplace monitoring and digital privacy. Many companies today monitor their employees constantly: they track keystrokes, monitor websites visited, log bathroom breaks through card access, and even use AI to analyze email and chat conversations. The argument is usually that this improves productivity and security, but I think it's gone too far. Yes, employers have legitimate security concerns, but the level of surveillance we're accepting is unprecedented. When employees feel constantly watched, it creates anxiety and erodes trust. Studies show that excessive monitoring actually decreases productivity and morale. Workers spend time trying to appear productive rather than actually being productive. Moreover, there's a moral issue here. As an employee, you're a person, not a machine to be optimized. You deserve privacy and dignity at work. I'm not arguing against all monitoring—reasonable security measures are necessary. But there's a middle ground between trusting employees completely and treating them like suspects. Companies that have implemented less invasive monitoring policies actually report higher employee satisfaction and retention. So my position is this: employers should use targeted monitoring only where necessary for genuine security reasons, not blanket surveillance of everything everyone does. Trust and respect for employee privacy create better workplaces.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-011-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why is the tenant calling the property manager?",
+      "prompt": "How long has the customer's internet been down?",
       "options": [
-        "To report a leaking pipe",
-        "To complain about a noisy neighbour",
-        "To request a rent reduction",
-        "To ask about parking rules"
+        "One hour",
+        "Two hours",
+        "Three hours",
+        "Four hours"
       ],
-      "correctAnswer": "To complain about a noisy neighbour",
-      "explanation": "The tenant explicitly says there is loud music keeping them awake.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "Three hours",
+      "explanation": "Customer states 'my internet's been down for three hours now.'",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-011-q02",
       "audioScriptId": "celpip-listening-011-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What has the tenant already tried?",
+      "prompt": "What is the customer's account number?",
       "options": [
-        "Called the police",
-        "Knocked on the neighbour's door",
-        "Sent an email to management",
-        "Left a note under the door"
+        "4472-89156",
+        "4427-89165",
+        "4472-98156",
+        "4427-98165"
       ],
-      "correctAnswer": "Knocked on the neighbour's door",
-      "explanation": "The tenant says they knocked twice last week.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "4472-89156",
+      "explanation": "Customer provides the account number as '4472-89156.'",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-011-q03",
       "audioScriptId": "celpip-listening-011-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What will the property manager do first?",
+      "prompt": "What caused the outage?",
       "options": [
-        "Contact the police",
-        "Begin a formal dispute process",
-        "Send an official written notice",
-        "Visit the neighbour's apartment"
+        "A router malfunction",
+        "A fiber cut",
+        "A power surge",
+        "A software update"
       ],
-      "correctAnswer": "Send an official written notice",
-      "explanation": "The manager says they will send a written notice as the first step.",
+      "correctAnswer": "A fiber cut",
+      "explanation": "Agent explains there's 'a known outage' due to 'a fiber cut about two hours ago.'",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-011-q04",
       "audioScriptId": "celpip-listening-011-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What happens if the behaviour continues after two notices?",
+      "prompt": "When is the outage estimated to be fixed?",
       "options": [
-        "The tenant gets a discount",
-        "The neighbour's tenancy could be affected",
-        "Management will call the police",
-        "The tenant must move out"
+        "2:00 PM",
+        "3:00 PM",
+        "4:30 PM",
+        "5:00 PM"
       ],
-      "correctAnswer": "The neighbour's tenancy could be affected",
-      "explanation": "The manager says the formal dispute process could affect tenancy.",
+      "correctAnswer": "4:30 PM",
+      "explanation": "Agent estimates the repair will be complete 'around 4:30 PM at the latest.'",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-011-q05",
       "audioScriptId": "celpip-listening-011-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long will it take to send the first notice?",
+      "prompt": "What is the automatic credit amount for the outage?",
       "options": [
-        "Same day",
-        "One week",
-        "Two business days",
-        "One month"
+        "$15",
+        "$20",
+        "$25",
+        "$30"
       ],
-      "correctAnswer": "Two business days",
-      "explanation": "The manager says usually within two business days.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "$25",
+      "explanation": "Agent states 'I'll apply a $25 credit to your next bill automatically.'",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-011-q06",
       "audioScriptId": "celpip-listening-011-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the tenant receive once the notice is sent?",
+      "prompt": "What is the daily service charge credit?",
       "options": [
-        "A phone call from the manager",
-        "A copy by email",
-        "A signed letter by post",
-        "Nothing — it is confidential"
+        "$2.50",
+        "$3.50",
+        "$4.50",
+        "$5.50"
       ],
-      "correctAnswer": "A copy by email",
-      "explanation": "The manager says the tenant will receive a copy by email.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "$3.50",
+      "explanation": "Agent mentions 'one day of service charges, which is about $3.50 for today.'",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-011-q07",
       "audioScriptId": "celpip-listening-011-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What should the tenant do if the noise happens tonight?",
+      "prompt": "What is the total compensation being offered?",
       "options": [
-        "Knock on the door again",
-        "Call emergency services",
-        "Call the after-hours line",
-        "Wait until morning"
+        "$25",
+        "$28.50",
+        "$32",
+        "$35"
       ],
-      "correctAnswer": "Call the after-hours line",
-      "explanation": "The manager advises calling the after-hours line to log a noise complaint.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "$28.50",
+      "explanation": "Agent calculates 'Combined with the $25 credit, that's $28.50 total compensation.'",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-011-q08",
       "audioScriptId": "celpip-listening-011-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What will the after-hours complaint records be used for?",
+      "prompt": "In how many hours should the repair be complete?",
       "options": [
-        "For media reports",
-        "For evidence if the dispute goes further",
-        "To update the lease agreement",
-        "To arrange a refund"
+        "1 to 2 hours",
+        "2 to 3 hours",
+        "3 to 4 hours",
+        "4 to 5 hours"
       ],
-      "correctAnswer": "For evidence if the dispute goes further",
-      "explanation": "The manager says those records will be used if the matter escalates.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "2 to 3 hours",
+      "explanation": "Agent estimates 'two to three more hours' of repair work remaining.",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-011-q09",
       "audioScriptId": "celpip-listening-011-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "Where are they planning to camp?",
+      "prompt": "What is the title of the book being discussed?",
       "options": [
-        "Lakeshore National Park",
-        "Maplewood Campsite",
-        "Birchwood Provincial Park",
-        "Ridgeline Reserve"
+        "The Hidden Case",
+        "The Silent Detective",
+        "The Silent Case",
+        "The Missing Detective"
       ],
-      "correctAnswer": "Birchwood Provincial Park",
-      "explanation": "Daniel says he booked spots at Birchwood Provincial Park.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "The Silent Case",
+      "explanation": "Liam identifies the book as 'The Silent Case.'",
+      "difficulty": "medium",
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-011-q10",
       "audioScriptId": "celpip-listening-011-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How far is the campsite from downtown?",
+      "prompt": "Where is the detective in the novel?",
       "options": [
-        "Thirty minutes",
-        "One hour",
-        "Ninety minutes",
-        "Three hours"
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Calgary"
       ],
-      "correctAnswer": "Ninety minutes",
-      "explanation": "Daniel says it is about ninety minutes from downtown.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "Montreal",
+      "explanation": "Emma describes it as 'the mystery novel' about 'the detective in Montreal.'",
+      "difficulty": "medium",
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-011-q11",
       "audioScriptId": "celpip-listening-011-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does the Saturday forecast show?",
+      "prompt": "What award did the book win?",
       "options": [
-        "Heavy thunderstorms",
-        "A light shower in the afternoon",
-        "Clear skies all day",
-        "Strong winds at night"
+        "The Giller Prize",
+        "The Governor General's Award",
+        "The Scotiabank Prize",
+        "The Atwood Prize"
       ],
-      "correctAnswer": "A light shower in the afternoon",
-      "explanation": "Daniel checked and says it looks like just a light shower in the early afternoon.",
+      "correctAnswer": "The Governor General's Award",
+      "explanation": "Emma states it 'won the Governor General's Award last year.'",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-011-q12",
       "audioScriptId": "celpip-listening-011-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "Why does Daniel recommend bringing a camp stove?",
+      "prompt": "How long did Emma wait for the book from the library?",
       "options": [
-        "The park has no fire pits",
-        "Fire use is currently restricted",
-        "A stove cooks food faster",
-        "It is cheaper than buying firewood"
+        "One month",
+        "Two months",
+        "Three months",
+        "Six months"
       ],
-      "correctAnswer": "Fire use is currently restricted",
-      "explanation": "Daniel says there are fire restrictions due to dry conditions.",
+      "correctAnswer": "Three months",
+      "explanation": "Emma states 'I put a hold on it three months ago.'",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-011-q13",
       "audioScriptId": "celpip-listening-011-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Daniel suggest for Saturday's meals?",
+      "prompt": "How long will Liam have to wait for the book?",
       "options": [
-        "A barbecue dinner",
-        "Eating at a restaurant",
-        "Sandwiches and wraps",
-        "Instant noodles only"
+        "Two to three weeks",
+        "Three to four weeks",
+        "Four to six weeks",
+        "Eight to ten weeks"
       ],
-      "correctAnswer": "Sandwiches and wraps",
-      "explanation": "Daniel suggests keeping Saturday simple with sandwiches and wraps.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "Four to six weeks",
+      "explanation": "Emma estimates 'You should get it in maybe four to six weeks.'",
+      "difficulty": "medium",
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-011-q14",
       "audioScriptId": "celpip-listening-011-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is responsible for renewing a driver's licence?",
+      "prompt": "How many travel insurance plans are offered?",
       "options": [
-        "The government automatically renews it",
-        "The driver, even without a notice",
-        "The driver only if they receive a notice",
-        "The driver's insurance company"
+        "Two",
+        "Three",
+        "Four",
+        "Five"
       ],
-      "correctAnswer": "The driver, even without a notice",
-      "explanation": "The speaker says it is the driver's responsibility even without receiving a notice.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "Three",
+      "explanation": "The guide states 'We offer three plans: Basic, Standard, and Premium.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-011-q15",
       "audioScriptId": "celpip-listening-011-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT mentioned as a renewal method?",
+      "prompt": "What is the cost of the Basic plan for two weeks?",
       "options": [
-        "In person",
-        "Online",
-        "By telephone",
-        "By mail"
+        "$50",
+        "$60",
+        "$75",
+        "$85"
       ],
-      "correctAnswer": "By telephone",
-      "explanation": "The speaker lists in person, online, and by mail — telephone is not mentioned.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "$75",
+      "explanation": "The guide specifies 'Cost is seventy-five dollars for two weeks' for the Basic plan.",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-011-q16",
       "audioScriptId": "celpip-listening-011-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What document can be used as proof of address?",
+      "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
-        "A passport",
-        "A recent utility bill",
-        "A birth certificate",
-        "A tax return"
+        "$500",
+        "$1,000",
+        "$1,500",
+        "$2,500"
       ],
-      "correctAnswer": "A recent utility bill",
-      "explanation": "The speaker says a recent utility bill or bank statement can serve as proof of address.",
+      "correctAnswer": "$1,000",
+      "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-011-q17",
       "audioScriptId": "celpip-listening-011-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "When might a vision test be required during an in-person renewal?",
+      "prompt": "What is the Premium plan's lost luggage coverage limit?",
       "options": [
-        "For every renewal",
-        "Only for seniors",
-        "If the driver's vision has changed",
-        "If the licence is expired by more than one year"
+        "$1,000",
+        "$1,500",
+        "$2,000",
+        "$2,500"
       ],
-      "correctAnswer": "If the driver's vision has changed",
-      "explanation": "The speaker says a vision test may be required if vision has changed.",
+      "correctAnswer": "$2,500",
+      "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-011-q18",
       "audioScriptId": "celpip-listening-011-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is needed to verify identity for online renewal?",
+      "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "A passport and utility bill",
-        "A driver's licence number and last four digits of a health card",
-        "A photo and signature",
-        "An email address and phone number"
+        "30 days",
+        "60 days",
+        "90 days",
+        "120 days"
       ],
-      "correctAnswer": "A driver's licence number and last four digits of a health card",
-      "explanation": "The speaker specifies the driver's licence number and last four digits of the health card.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "90 days",
+      "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-011-q19",
       "audioScriptId": "celpip-listening-011-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long does online renewal processing take?",
+      "prompt": "What is the toll-free claims phone number?",
       "options": [
-        "Same day",
-        "One business day",
-        "Up to five business days",
-        "Two weeks"
+        "1-800-555-0140",
+        "1-800-555-0147",
+        "1-800-555-0174",
+        "1-800-555-0417"
       ],
-      "correctAnswer": "Up to five business days",
-      "explanation": "The speaker says processing takes up to five business days.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "1-800-555-0147",
+      "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-011-q20",
       "audioScriptId": "celpip-listening-011-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What change is being announced?",
+      "prompt": "How many workers does the union represent?",
       "options": [
-        "A new bus route for schools",
-        "Free transit for seniors expanded to all days and hours",
-        "A reduction in transit fares for students",
-        "New light rail construction beginning next month"
+        "8,000 workers",
+        "10,000 workers",
+        "12,000 workers",
+        "15,000 workers"
       ],
-      "correctAnswer": "Free transit for seniors expanded to all days and hours",
-      "explanation": "The report says the free transit programme for seniors will expand to seven days a week.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "10,000 workers",
+      "explanation": "The report explicitly states the union represents over 10,000 workers.",
+      "difficulty": "medium",
+      "topic": "Labor dispute"
     },
     {
       "id": "celpip-listening-011-q21",
       "audioScriptId": "celpip-listening-011-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Under the old policy, when was free transit available to seniors?",
+      "prompt": "What percentage pay increase is the union requesting?",
       "options": [
-        "Weekends only",
-        "Every day from 6 am to 10 pm",
-        "Weekdays between 9 am and 3 pm",
-        "Only on statutory holidays"
+        "2.5 percent",
+        "3.0 percent",
+        "4.25 percent",
+        "5.0 percent"
       ],
-      "correctAnswer": "Weekdays between 9 am and 3 pm",
-      "explanation": "The report states the previous programme applied weekdays between 9 am and 3 pm.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "4.25 percent",
+      "explanation": "Union spokesperson Maria Chen states members are seeking a 4.25 percent pay increase.",
+      "difficulty": "medium",
+      "topic": "Labor dispute"
     },
     {
       "id": "celpip-listening-011-q22",
       "audioScriptId": "celpip-listening-011-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What reason did the transportation director give for the expansion?",
+      "prompt": "What is the TTC's wage offer?",
       "options": [
-        "To reduce road congestion",
-        "To increase city revenue",
-        "Many seniors could not attend evening appointments or weekend activities",
-        "The transit fleet had excess capacity"
+        "2.5 percent over three years",
+        "3.5 percent over two years",
+        "4.25 percent over four years",
+        "1.5 percent over three years"
       ],
-      "correctAnswer": "Many seniors could not attend evening appointments or weekend activities",
-      "explanation": "The director cited data showing seniors missed appointments due to transit costs.",
+      "correctAnswer": "2.5 percent over three years",
+      "explanation": "The report states the TTC counters with 2.5 percent over three years.",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "Labor dispute"
     },
     {
       "id": "celpip-listening-011-q23",
       "audioScriptId": "celpip-listening-011-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will the expanded programme be funded?",
+      "prompt": "How much has foot traffic in downtown businesses decreased?",
       "options": [
-        "Through residential property taxes",
-        "Through a small increase in the commercial property transit levy",
-        "Through federal grants",
-        "Through a fare increase for non-seniors"
+        "20 percent",
+        "30 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "Through a small increase in the commercial property transit levy",
-      "explanation": "The spokesperson says a small increase in the levy on commercial property owners will fund it.",
+      "correctAnswer": "30 percent",
+      "explanation": "Downtown businesses report a 30 percent drop in foot traffic since Monday.",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "Labor dispute"
     },
     {
       "id": "celpip-listening-011-q24",
       "audioScriptId": "celpip-listening-011-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What did advocacy groups call for in addition to free fares?",
+      "prompt": "When are emergency mediation sessions expected to resume?",
       "options": [
-        "Newer buses",
-        "Better accessibility at stops and more frequent service",
-        "Lower fares for everyone",
-        "A free monthly transit pass"
+        "Tonight",
+        "Tomorrow morning",
+        "Next week",
+        "In two days"
       ],
-      "correctAnswer": "Better accessibility at stops and more frequent service",
-      "explanation": "Advocacy groups called for improved accessibility and more frequent service.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "Tomorrow morning",
+      "explanation": "City Council has called for emergency mediation sessions to resume tomorrow morning.",
+      "difficulty": "medium",
+      "topic": "Labor dispute"
     },
     {
       "id": "celpip-listening-011-q25",
       "audioScriptId": "celpip-listening-011-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the main topic of the discussion?",
+      "prompt": "What is the total budget for the renovation?",
       "options": [
-        "Whether to build new office buildings",
-        "Whether companies should require a full return to in-person work",
-        "How to improve video conferencing technology",
-        "Whether remote work causes productivity loss"
+        "5.2 million dollars",
+        "6.0 million dollars",
+        "6.8 million dollars",
+        "7.5 million dollars"
       ],
-      "correctAnswer": "Whether companies should require a full return to in-person work",
-      "explanation": "The host introduces the topic as whether companies should require employees to return to the office.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "6.8 million dollars",
+      "explanation": "The renovation project is budgeted at 6.8 million dollars.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-011-q26",
       "audioScriptId": "celpip-listening-011-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Sophie say about spontaneous conversations?",
+      "prompt": "How long is the renovation expected to take?",
       "options": [
-        "They are inefficient",
-        "They lead to innovations that cannot be replicated on video calls",
-        "They are better online",
-        "They only benefit senior employees"
+        "12 months",
+        "15 months",
+        "18 months",
+        "24 months"
       ],
-      "correctAnswer": "They lead to innovations that cannot be replicated on video calls",
-      "explanation": "Sophie says spontaneous conversations lead to innovations you cannot replicate on a video call.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "18 months",
+      "explanation": "The project should take about 18 months to complete.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-011-q27",
       "audioScriptId": "celpip-listening-011-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "According to Marcus, what do studies consistently show?",
+      "prompt": "What are the three main components of the renovation?",
       "options": [
-        "Remote workers are less creative",
-        "In-office workers earn more",
-        "Employees show higher job satisfaction with flexibility",
-        "Remote work increases absenteeism"
+        "Pool, gym, parking lot",
+        "Fitness center, pool upgrade, youth spaces",
+        "Gym, parking, offices",
+        "Cafe, library, fitness center"
       ],
-      "correctAnswer": "Employees show higher job satisfaction with flexibility",
-      "explanation": "Marcus says studies consistently show higher job satisfaction when employees have flexibility.",
+      "correctAnswer": "Fitness center, pool upgrade, youth spaces",
+      "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces.",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-011-q28",
       "audioScriptId": "celpip-listening-011-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What concern does Sophie raise about forcing people to work from home?",
+      "prompt": "What is Robert's main concern?",
       "options": [
-        "It increases energy costs",
-        "Some employees lack a good home environment",
-        "It reduces internet bandwidth",
-        "It leads to longer working hours"
+        "Noise during construction",
+        "Cost of the project",
+        "Where his kids' programs will go",
+        "Parking during renovation"
       ],
-      "correctAnswer": "Some employees lack a good home environment",
-      "explanation": "Sophie says some employees live in small apartments or have young children, making home work more stressful.",
+      "correctAnswer": "Where his kids' programs will go",
+      "explanation": "Robert worries about where after-school programs will be located during construction.",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-011-q29",
       "audioScriptId": "celpip-listening-011-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Marcus suggest companies that prefer in-person work should do?",
+      "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "Reduce salaries for remote workers",
-        "Make the office experience compelling enough that people want to come voluntarily",
-        "Publish productivity data publicly",
-        "Hire only employees who live nearby"
+        "A temporary building",
+        "The community room and outdoor spaces",
+        "A school gym",
+        "A local fitness facility"
       ],
-      "correctAnswer": "Make the office experience compelling enough that people want to come voluntarily",
-      "explanation": "Marcus says companies should make in-person work compelling, not mandatory.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "The community room and outdoor spaces",
+      "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-011-q30",
       "audioScriptId": "celpip-listening-011-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "Which of the following best describes Sophie's view on productivity metrics?",
+      "prompt": "What additional facility is Susan negotiating with?",
       "options": [
-        "They perfectly capture real performance",
-        "They are the only reliable measure of output",
-        "They can be misleading and miss informal knowledge transfer",
-        "They support the case for remote work"
+        "A private gym",
+        "The school district",
+        "A local park",
+        "A nearby library"
       ],
-      "correctAnswer": "They can be misleading and miss informal knowledge transfer",
-      "explanation": "Sophie says productivity metrics can be misleading and you miss deep organisational knowledge from casual interactions.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "The school district",
+      "explanation": "Susan mentions negotiating with the school district for backup facility use.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-011-q31",
       "audioScriptId": "celpip-listening-011-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Marcus say companies risk if they mandate a return to office?",
+      "prompt": "What concern does Jason raise about using outdoor space?",
       "options": [
-        "Losing clients",
-        "Being fined by government",
-        "Losing good employees to more flexible competitors",
-        "Reducing profits"
+        "Weather damage",
+        "Limited room for physical activities",
+        "Theft concerns",
+        "Noise complaints"
       ],
-      "correctAnswer": "Losing good employees to more flexible competitors",
-      "explanation": "Marcus says companies risk losing good people to competitors who offer flexibility.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "Limited room for physical activities",
+      "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-011-q32",
       "audioScriptId": "celpip-listening-011-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's conclusion at the end?",
+      "prompt": "What suggestion does Jason make for outdoor activities?",
       "options": [
-        "Sophie has the better argument",
-        "Marcus has made the strongest case",
-        "The debate is far from settled",
-        "Both sides agree on the main point"
+        "Build a temporary gym",
+        "Close programs temporarily",
+        "Use a local park",
+        "Move all programs indoors"
       ],
-      "correctAnswer": "The debate is far from settled",
-      "explanation": "The host says it is clear the debate is far from settled.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "Use a local park",
+      "explanation": "Jason suggests using a local park for outdoor programming during construction.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-011-q33",
       "audioScriptId": "celpip-listening-011-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What common belief does the speaker challenge?",
+      "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "That children are better at maths than adults",
-        "That adults cannot learn a new language as effectively as children",
-        "That language learning requires travel abroad",
-        "That bilingualism causes confusion"
+        "It's too expensive",
+        "It has gone too far in terms of surveillance",
+        "It doesn't improve security",
+        "It's ineffective"
       ],
-      "correctAnswer": "That adults cannot learn a new language as effectively as children",
-      "explanation": "The speaker says this widespread belief is largely incorrect.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "It has gone too far in terms of surveillance",
+      "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-011-q34",
       "audioScriptId": "celpip-listening-011-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What advantage do adults have over children in language learning, according to the speaker?",
+      "prompt": "According to the speaker, what is the claimed reason for workplace monitoring?",
       "options": [
-        "Adults have more free time",
-        "Adults can study deliberately and strategically",
-        "Adults have better pronunciation",
-        "Adults learn grammar faster"
+        "To reduce wages",
+        "To improve productivity and security",
+        "To prevent theft",
+        "To track attendance"
       ],
-      "correctAnswer": "Adults can study deliberately and strategically",
-      "explanation": "The speaker lists this as a critical advantage of adult learners.",
-      "difficulty": "easy",
-      "topic": "managing a household budget"
+      "correctAnswer": "To improve productivity and security",
+      "explanation": "The speaker mentions that companies argue monitoring improves productivity and security.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-011-q35",
       "audioScriptId": "celpip-listening-011-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How long can a motivated adult reach conversational fluency, according to the passage?",
+      "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
-        "Three to five years",
-        "Six to eight months",
-        "Twelve to eighteen months",
-        "Two to three years"
+        "They work harder",
+        "It creates anxiety and erodes trust",
+        "They become more efficient",
+        "They communicate better"
       ],
-      "correctAnswer": "Twelve to eighteen months",
-      "explanation": "The speaker says adults with good study habits can reach conversational fluency in twelve to eighteen months.",
+      "correctAnswer": "It creates anxiety and erodes trust",
+      "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-011-q36",
       "audioScriptId": "celpip-listening-011-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health benefit is associated with bilingualism?",
+      "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "Lower blood pressure",
-        "Reduced risk of heart disease",
-        "Delayed onset of dementia by four to five years",
-        "Improved physical coordination"
+        "It increases productivity",
+        "It decreases productivity and morale",
+        "It has no effect",
+        "It improves communication"
       ],
-      "correctAnswer": "Delayed onset of dementia by four to five years",
-      "explanation": "The speaker cites studies showing bilingual adults show delayed onset of dementia by four to five years on average.",
+      "correctAnswer": "It decreases productivity and morale",
+      "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
       "difficulty": "medium",
-      "topic": "managing a household budget"
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-011-q37",
       "audioScriptId": "celpip-listening-011-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What cognitive skills does managing two languages improve?",
+      "prompt": "What solution does the speaker propose?",
       "options": [
-        "Long-term memory and spatial reasoning",
-        "Attention, task-switching, and creativity",
-        "Mathematical problem-solving",
-        "Reading speed and recall"
+        "No monitoring at all",
+        "Complete transparency monitoring",
+        "Targeted monitoring only where necessary",
+        "Random monitoring"
       ],
-      "correctAnswer": "Attention, task-switching, and creativity",
-      "explanation": "The speaker says managing two language systems improves attention, task-switching, and creativity.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "Targeted monitoring only where necessary",
+      "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-011-q38",
       "audioScriptId": "celpip-listening-011-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall conclusion?",
+      "prompt": "What do companies with less invasive monitoring report?",
       "options": [
-        "Adults should not bother learning new languages",
-        "Language learning is too difficult for most adults",
-        "Language learning is one of the most valuable investments an adult can make",
-        "Children should be taught two languages from birth"
+        "Lower profits",
+        "Higher employee satisfaction and retention",
+        "More security issues",
+        "Reduced efficiency"
       ],
-      "correctAnswer": "Language learning is one of the most valuable investments an adult can make",
-      "explanation": "The speaker states directly that language learning is one of the most valuable adult investments.",
-      "difficulty": "hard",
-      "topic": "managing a household budget"
+      "correctAnswer": "Higher employee satisfaction and retention",
+      "explanation": "The speaker mentions companies with less invasive monitoring report higher satisfaction and retention.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     }
   ]
 }

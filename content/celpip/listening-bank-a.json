@@ -1,0 +1,1870 @@
+{
+  "problemSolving": [
+    {
+      "title": "Defective Appliance Return",
+      "topic": "product returns",
+      "script": "Customer: Hi, I'd like to return a refrigerator I purchased last week. It's still under warranty. Agent: I'd be happy to help with that. Can you tell me what's wrong with it? Customer: Well, the ice maker isn't working, and there's this strange noise coming from the compressor. I've had three fridges before and this one definitely isn't normal. Agent: I understand your concern. How long have you had it? Customer: Six days. I bought it on Tuesday morning from your downtown store. Agent: Okay, and you still have your receipt? Customer: Yes, I have it here. Purchase price was $1,299. Agent: Perfect. Since it's within the seven-day return window, we can definitely process a full refund or exchange for a different model. Do you prefer cash back or would you like to choose another refrigerator? Customer: I'd rather have a refund. Can you process it today? Agent: Absolutely. We'll need to arrange pickup within 48 hours, and the refund will appear in your account within five to seven business days. Would tomorrow morning work for a pickup between 10 and 2 PM?",
+      "questions": [
+        {
+          "prompt": "What is the main problem with the refrigerator?",
+          "options": [
+            "The compressor is broken completely",
+            "The ice maker isn't working and there's a strange noise from the compressor",
+            "The door seal is damaged",
+            "The temperature control panel is faulty"
+          ],
+          "correctAnswer": "The ice maker isn't working and there's a strange noise from the compressor",
+          "explanation": "The customer explicitly states both issues in their opening complaint."
+        },
+        {
+          "prompt": "How long has the customer owned the refrigerator?",
+          "options": [
+            "Three days",
+            "One week",
+            "Six days",
+            "Two weeks"
+          ],
+          "correctAnswer": "Six days",
+          "explanation": "Customer states 'I've had it six days' and bought it Tuesday morning."
+        },
+        {
+          "prompt": "What was the purchase price?",
+          "options": [
+            "$999",
+            "$1,099",
+            "$1,199",
+            "$1,299"
+          ],
+          "correctAnswer": "$1,299",
+          "explanation": "Customer clearly states the purchase price was $1,299."
+        },
+        {
+          "prompt": "What is the return window policy mentioned?",
+          "options": [
+            "Three days",
+            "Five days",
+            "Seven days",
+            "Ten days"
+          ],
+          "correctAnswer": "Seven days",
+          "explanation": "Agent mentions 'within the seven-day return window.'"
+        },
+        {
+          "prompt": "Where was the refrigerator purchased?",
+          "options": [
+            "The mall location",
+            "The downtown store",
+            "Online",
+            "A second-hand seller"
+          ],
+          "correctAnswer": "The downtown store",
+          "explanation": "Customer says they bought it from 'your downtown store.'"
+        },
+        {
+          "prompt": "What refund method does the customer prefer?",
+          "options": [
+            "Store credit",
+            "Exchange for another model",
+            "Cash back",
+            "Check by mail"
+          ],
+          "correctAnswer": "Cash back",
+          "explanation": "Customer explicitly states 'I'd rather have a refund.'"
+        },
+        {
+          "prompt": "When will the refund appear in the customer's account?",
+          "options": [
+            "Within 2 business days",
+            "Within 5 to 7 business days",
+            "Within 10 business days",
+            "Within 2 weeks"
+          ],
+          "correctAnswer": "Within 5 to 7 business days",
+          "explanation": "Agent states 'the refund will appear in your account within five to seven business days.'"
+        },
+        {
+          "prompt": "What time window is available for pickup?",
+          "options": [
+            "8 AM to 12 PM",
+            "10 AM to 2 PM",
+            "12 PM to 4 PM",
+            "2 PM to 6 PM"
+          ],
+          "correctAnswer": "10 AM to 2 PM",
+          "explanation": "Agent offers pickup 'between 10 and 2 PM' tomorrow morning."
+        }
+      ]
+    },
+    {
+      "title": "Internet Service Outage",
+      "topic": "service complaint",
+      "script": "Customer: Hi, my internet's been down for three hours now and I need it for work. Support Agent: I'm sorry to hear that. Let me pull up your account. Can I have your account number? Customer: It's 4472-89156. I'm working from home and have a client call in twenty minutes. Agent: Got it. I see you're in the downtown Toronto area. We have a known outage affecting that postal code from a fiber cut about two hours ago. Our repair team is already on site. Customer: When will it be fixed? Agent: Based on the damage, they estimate two to three more hours. So around 4:30 PM at the latest. Customer: That's too late for my meeting. Can you give me a credit or something? Agent: Absolutely. Since this outage is on our end, I'll apply a $25 credit to your next bill automatically. That'll go through within 24 hours. Customer: What about my current bill? Do I get anything for today's service loss? Agent: Yes, we credit one day of service charges, which is about $3.50 for today. Combined with the $25 credit, that's $28.50 total compensation. Is there anything else I can help with? Customer: No, that's fair. Thank you.",
+      "questions": [
+        {
+          "prompt": "How long has the customer's internet been down?",
+          "options": [
+            "One hour",
+            "Two hours",
+            "Three hours",
+            "Four hours"
+          ],
+          "correctAnswer": "Three hours",
+          "explanation": "Customer states 'my internet's been down for three hours now.'"
+        },
+        {
+          "prompt": "What is the customer's account number?",
+          "options": [
+            "4472-89156",
+            "4427-89165",
+            "4472-98156",
+            "4427-98165"
+          ],
+          "correctAnswer": "4472-89156",
+          "explanation": "Customer provides the account number as '4472-89156.'"
+        },
+        {
+          "prompt": "What caused the outage?",
+          "options": [
+            "A router malfunction",
+            "A fiber cut",
+            "A power surge",
+            "A software update"
+          ],
+          "correctAnswer": "A fiber cut",
+          "explanation": "Agent explains there's 'a known outage' due to 'a fiber cut about two hours ago.'"
+        },
+        {
+          "prompt": "When is the outage estimated to be fixed?",
+          "options": [
+            "2:00 PM",
+            "3:00 PM",
+            "4:30 PM",
+            "5:00 PM"
+          ],
+          "correctAnswer": "4:30 PM",
+          "explanation": "Agent estimates the repair will be complete 'around 4:30 PM at the latest.'"
+        },
+        {
+          "prompt": "What is the automatic credit amount for the outage?",
+          "options": [
+            "$15",
+            "$20",
+            "$25",
+            "$30"
+          ],
+          "correctAnswer": "$25",
+          "explanation": "Agent states 'I'll apply a $25 credit to your next bill automatically.'"
+        },
+        {
+          "prompt": "What is the daily service charge credit?",
+          "options": [
+            "$2.50",
+            "$3.50",
+            "$4.50",
+            "$5.50"
+          ],
+          "correctAnswer": "$3.50",
+          "explanation": "Agent mentions 'one day of service charges, which is about $3.50 for today.'"
+        },
+        {
+          "prompt": "What is the total compensation being offered?",
+          "options": [
+            "$25",
+            "$28.50",
+            "$32",
+            "$35"
+          ],
+          "correctAnswer": "$28.50",
+          "explanation": "Agent calculates 'Combined with the $25 credit, that's $28.50 total compensation.'"
+        },
+        {
+          "prompt": "In how many hours should the repair be complete?",
+          "options": [
+            "1 to 2 hours",
+            "2 to 3 hours",
+            "3 to 4 hours",
+            "4 to 5 hours"
+          ],
+          "correctAnswer": "2 to 3 hours",
+          "explanation": "Agent estimates 'two to three more hours' of repair work remaining."
+        }
+      ]
+    },
+    {
+      "title": "Airline Baggage Delay",
+      "topic": "luggage issue",
+      "script": "Passenger: Excuse me, my baggage didn't arrive on my flight from Vancouver. Airline Agent: I'm very sorry to hear that. Let me help you file a report. What is your confirmation number? Passenger: It's VH-4829. I arrived about an hour ago on flight AC-127. Agent: Got it. Did you check your bag through to your final destination or pick it up here in Calgary? Passenger: I checked it all the way to Calgary. I have the baggage claim ticket right here. Agent: Perfect. Can I see that? The tag number is LM-58493. Your bag is a black Samsonite roller, correct? Passenger: Yes, that's right. It has a red ribbon on the handle. Agent: Great. I've found it in the system. It actually came off the plane but was misrouted to Edmonton by mistake. It's on the next flight back to Calgary, which arrives at 6:15 PM tonight. Passenger: So I'll have it this evening? Agent: Yes, we'll have it delivered to your hotel by 8 PM. Where are you staying? Passenger: The Fairmont Palliser downtown. What compensation will I get? Agent: Because the delay is less than 24 hours and the bag will be delivered today, we'll provide a $50 travel voucher for your next flight with us.",
+      "questions": [
+        {
+          "prompt": "From which city did the passenger fly?",
+          "options": [
+            "Calgary",
+            "Vancouver",
+            "Edmonton",
+            "Toronto"
+          ],
+          "correctAnswer": "Vancouver",
+          "explanation": "Passenger states 'my baggage didn't arrive on my flight from Vancouver.'"
+        },
+        {
+          "prompt": "What is the baggage claim tag number?",
+          "options": [
+            "LM-48593",
+            "LM-58493",
+            "LM-58394",
+            "LM-48539"
+          ],
+          "correctAnswer": "LM-58493",
+          "explanation": "Agent reads the tag number as 'LM-58493' from the claim ticket."
+        },
+        {
+          "prompt": "What color is the passenger's luggage?",
+          "options": [
+            "Blue Samsonite roller",
+            "Black Samsonite roller",
+            "Black leather bag",
+            "Red Samsonite roller"
+          ],
+          "correctAnswer": "Black Samsonite roller",
+          "explanation": "Agent confirms 'Your bag is a black Samsonite roller, correct?' and passenger agrees."
+        },
+        {
+          "prompt": "Where was the bag mistakenly sent?",
+          "options": [
+            "Vancouver",
+            "Toronto",
+            "Edmonton",
+            "Montreal"
+          ],
+          "correctAnswer": "Edmonton",
+          "explanation": "Agent explains the bag 'was misrouted to Edmonton by mistake.'"
+        },
+        {
+          "prompt": "When does the return flight arrive in Calgary?",
+          "options": [
+            "4:15 PM",
+            "5:15 PM",
+            "6:15 PM",
+            "7:15 PM"
+          ],
+          "correctAnswer": "6:15 PM",
+          "explanation": "Agent states 'It's on the next flight back to Calgary, which arrives at 6:15 PM tonight.'"
+        },
+        {
+          "prompt": "By what time will the bag be delivered to the hotel?",
+          "options": [
+            "6:00 PM",
+            "7:00 PM",
+            "8:00 PM",
+            "9:00 PM"
+          ],
+          "correctAnswer": "8:00 PM",
+          "explanation": "Agent promises 'we'll have it delivered to your hotel by 8 PM.'"
+        },
+        {
+          "prompt": "Which hotel is the passenger staying at?",
+          "options": [
+            "The Sandman Calgary",
+            "The Fairmont Palliser",
+            "The Bow Tower",
+            "The Shangri-La"
+          ],
+          "correctAnswer": "The Fairmont Palliser",
+          "explanation": "Passenger states they're staying at 'The Fairmont Palliser downtown.'"
+        },
+        {
+          "prompt": "What compensation is offered for the baggage delay?",
+          "options": [
+            "$25 travel voucher",
+            "$35 travel voucher",
+            "$50 travel voucher",
+            "$75 travel voucher"
+          ],
+          "correctAnswer": "$50 travel voucher",
+          "explanation": "Agent offers 'a $50 travel voucher for your next flight with us.'"
+        }
+      ]
+    },
+    {
+      "title": "Gym Membership Cancellation",
+      "topic": "contract dispute",
+      "script": "Member: Hi, I'd like to cancel my gym membership. Customer Service Rep: I'd be happy to help. Can I ask why you're looking to cancel? Member: I'm relocating to British Columbia for work and won't be using the facility anymore. Rep: I understand. Let me pull up your account. What's your membership number? Member: It's GYM-47823. I've been a member for eighteen months. Rep: Great. I see you're on our premium monthly plan at $89 per month. When are you planning to move? Member: Three weeks from now. Rep: Okay. I can process the cancellation effective immediately, or we can set it to end on your move date. Which works better? Member: I prefer the move date, so three weeks from today. Rep: Perfect. That would be June 24th. I'll note that in your file. You won't be charged for July. However, I do need to let you know that you're in the middle of a two-year contract. There is a $150 early termination fee. Member: That's not fair. I wasn't told about that when I signed up. Rep: I apologize for that. Let me see what I can do. Since you've been loyal for eighteen months, I can reduce that fee to $75. That's the best I can offer. Member: Okay, I'll accept that.",
+      "questions": [
+        {
+          "prompt": "Why does the member want to cancel?",
+          "options": [
+            "The facility is too crowded",
+            "They're relocating to British Columbia for work",
+            "They want to join a different gym",
+            "They're not satisfied with the equipment"
+          ],
+          "correctAnswer": "They're relocating to British Columbia for work",
+          "explanation": "Member states 'I'm relocating to British Columbia for work.'"
+        },
+        {
+          "prompt": "What is the membership number?",
+          "options": [
+            "GYM-47283",
+            "GYM-47823",
+            "GYM-47832",
+            "GYM-74823"
+          ],
+          "correctAnswer": "GYM-47823",
+          "explanation": "Member provides the membership number as 'GYM-47823.'"
+        },
+        {
+          "prompt": "How long has the member been with the gym?",
+          "options": [
+            "Twelve months",
+            "Fifteen months",
+            "Eighteen months",
+            "Twenty months"
+          ],
+          "correctAnswer": "Eighteen months",
+          "explanation": "Member states 'I've been a member for eighteen months.'"
+        },
+        {
+          "prompt": "What is the monthly membership fee?",
+          "options": [
+            "$69",
+            "$79",
+            "$89",
+            "$99"
+          ],
+          "correctAnswer": "$89",
+          "explanation": "Rep states 'you're on our premium monthly plan at $89 per month.'"
+        },
+        {
+          "prompt": "When will the membership end?",
+          "options": [
+            "June 17th",
+            "June 24th",
+            "July 1st",
+            "July 3rd"
+          ],
+          "correctAnswer": "June 24th",
+          "explanation": "Rep confirms 'That would be June 24th' for three weeks from the conversation date."
+        },
+        {
+          "prompt": "What is the original early termination fee?",
+          "options": [
+            "$100",
+            "$125",
+            "$150",
+            "$200"
+          ],
+          "correctAnswer": "$150",
+          "explanation": "Rep states 'There is a $150 early termination fee.'"
+        },
+        {
+          "prompt": "What type of contract is the member in?",
+          "options": [
+            "One-year contract",
+            "Eighteen-month contract",
+            "Two-year contract",
+            "Month-to-month contract"
+          ],
+          "correctAnswer": "Two-year contract",
+          "explanation": "Rep mentions 'you're in the middle of a two-year contract.'"
+        },
+        {
+          "prompt": "What is the reduced early termination fee offered?",
+          "options": [
+            "$50",
+            "$75",
+            "$100",
+            "$125"
+          ],
+          "correctAnswer": "$75",
+          "explanation": "Rep offers to reduce the fee 'to $75' as a gesture of loyalty."
+        }
+      ]
+    },
+    {
+      "title": "Medical Appointment Rescheduling",
+      "topic": "doctor booking",
+      "script": "Patient: Hello, I need to reschedule my appointment with Dr. Singh. Receptionist: Of course. Can I have your patient ID? Patient: It's P-9847. My appointment is next Tuesday at 2 PM, but I have a conflict. Receptionist: Let me pull that up. Yes, I see the appointment for June 10th at 2 PM. What days and times work better for you? Patient: Ideally, early morning, like 8 or 9 AM. I work afternoons. Receptionist: Let me check the doctor's schedule. Dr. Singh has an opening on Friday, June 13th at 8:30 AM. Would that suit you? Patient: Yes, that works perfectly. Receptionist: Great. I'm canceling the Tuesday 2 PM slot and booking you for Friday, June 13th at 8:30 AM. Your appointment is for a regular checkup, is that correct? Patient: Yes, and also to discuss my recent blood work results. Receptionist: Perfect. I'll add a note that you want to review the blood work. You'll need to arrive ten minutes early to fill out any updated forms. Patient: Will Dr. Singh have my test results by then? Receptionist: Yes, they'll definitely be in her file. The lab sent them in yesterday. Is there anything else? Patient: No, that's everything. Thank you.",
+      "questions": [
+        {
+          "prompt": "What is the patient's ID?",
+          "options": [
+            "P-8479",
+            "P-9847",
+            "P-9748",
+            "P-8794"
+          ],
+          "correctAnswer": "P-9847",
+          "explanation": "Patient provides their ID as 'P-9847.'"
+        },
+        {
+          "prompt": "What was the original appointment date and time?",
+          "options": [
+            "Tuesday at 1 PM",
+            "Tuesday at 2 PM",
+            "Wednesday at 2 PM",
+            "Thursday at 2 PM"
+          ],
+          "correctAnswer": "Tuesday at 2 PM",
+          "explanation": "Patient mentions the appointment is 'next Tuesday at 2 PM' and receptionist confirms 'June 10th at 2 PM.'"
+        },
+        {
+          "prompt": "When does the patient prefer to schedule appointments?",
+          "options": [
+            "Late afternoon",
+            "Evening",
+            "Early morning, 8 or 9 AM",
+            "Midday"
+          ],
+          "correctAnswer": "Early morning, 8 or 9 AM",
+          "explanation": "Patient states 'Ideally, early morning, like 8 or 9 AM. I work afternoons.'"
+        },
+        {
+          "prompt": "What is the new appointment date and time?",
+          "options": [
+            "Friday, June 6th at 8:30 AM",
+            "Friday, June 12th at 8:30 AM",
+            "Friday, June 13th at 8:30 AM",
+            "Friday, June 20th at 8:30 AM"
+          ],
+          "correctAnswer": "Friday, June 13th at 8:30 AM",
+          "explanation": "Receptionist books the new appointment for 'Friday, June 13th at 8:30 AM.'"
+        },
+        {
+          "prompt": "What should the patient do to prepare for the appointment?",
+          "options": [
+            "Fast for 12 hours",
+            "Bring insurance documents only",
+            "Arrive ten minutes early to fill out updated forms",
+            "Call to confirm the day before"
+          ],
+          "correctAnswer": "Arrive ten minutes early to fill out updated forms",
+          "explanation": "Receptionist states 'You'll need to arrive ten minutes early to fill out any updated forms.'"
+        },
+        {
+          "prompt": "When were the patient's blood work results sent to the clinic?",
+          "options": [
+            "This morning",
+            "Yesterday",
+            "Last week",
+            "This afternoon"
+          ],
+          "correctAnswer": "Yesterday",
+          "explanation": "Receptionist confirms 'The lab sent them in yesterday.'"
+        },
+        {
+          "prompt": "What reasons does the patient have for the appointment?",
+          "options": [
+            "Blood work results only",
+            "Regular checkup only",
+            "Regular checkup and to discuss recent blood work results",
+            "Prescription refill"
+          ],
+          "correctAnswer": "Regular checkup and to discuss recent blood work results",
+          "explanation": "Patient states 'also to discuss my recent blood work results' and receptionist confirms it's a regular checkup."
+        },
+        {
+          "prompt": "Who is the patient's doctor?",
+          "options": [
+            "Dr. Kumar",
+            "Dr. Singh",
+            "Dr. Patel",
+            "Dr. Sharma"
+          ],
+          "correctAnswer": "Dr. Singh",
+          "explanation": "Patient mentions wanting to reschedule with 'Dr. Singh' throughout the conversation."
+        }
+      ]
+    },
+    {
+      "title": "Phone Plan Upgrade",
+      "topic": "telecom service",
+      "script": "Customer: Hi, I'm interested in upgrading my phone plan. I currently have the basic plan with 2 GB of data. Support: Great! I can definitely help with that. What's your phone number? Customer: It's 416-555-0234. I'm constantly hitting my data limit, especially with streaming videos. Support: I understand. Let me pull up your account. You're right, your basic plan is 2 GB per month at $35. What data usage would work better for you? Customer: Probably something like 10 GB. How much would that be? Support: We have a 10 GB plan at $65 per month. You'd also get unlimited texting and more calling minutes. Would that interest you? Customer: What's the difference in calling minutes from my current plan? Support: Your current plan has 200 minutes; the 10 GB plan has unlimited calling. Plus, there's no contract change required if you cancel later. Customer: Actually, do you have an 8 GB plan? That might be better value. Support: Good question. We do have an 8 GB plan at $55 per month with the same unlimited calling and texting. Customer: Perfect, I'll take that. When does it take effect? Support: I'm activating it right now. Your bill will reflect the change next billing cycle, which is on July 8th. The monthly cost goes from $35 to $55. Customer: That works for me. Thanks.",
+      "questions": [
+        {
+          "prompt": "What is the customer's phone number?",
+          "options": [
+            "416-555-0243",
+            "416-555-0234",
+            "416-555-0342",
+            "416-555-0423"
+          ],
+          "correctAnswer": "416-555-0234",
+          "explanation": "Customer provides their phone number as '416-555-0234.'"
+        },
+        {
+          "prompt": "How much data does the customer currently have?",
+          "options": [
+            "1 GB",
+            "2 GB",
+            "5 GB",
+            "8 GB"
+          ],
+          "correctAnswer": "2 GB",
+          "explanation": "Customer states they have 'the basic plan with 2 GB of data.'"
+        },
+        {
+          "prompt": "What is the cost of the current plan?",
+          "options": [
+            "$25 per month",
+            "$35 per month",
+            "$45 per month",
+            "$55 per month"
+          ],
+          "correctAnswer": "$35 per month",
+          "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'"
+        },
+        {
+          "prompt": "How many calling minutes does the customer's current plan have?",
+          "options": [
+            "100 minutes",
+            "150 minutes",
+            "200 minutes",
+            "Unlimited"
+          ],
+          "correctAnswer": "200 minutes",
+          "explanation": "Support states 'Your current plan has 200 minutes.'"
+        },
+        {
+          "prompt": "What data plan does the customer ultimately choose?",
+          "options": [
+            "5 GB plan",
+            "8 GB plan",
+            "10 GB plan",
+            "15 GB plan"
+          ],
+          "correctAnswer": "8 GB plan",
+          "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'"
+        },
+        {
+          "prompt": "What is the cost of the 8 GB plan?",
+          "options": [
+            "$45 per month",
+            "$55 per month",
+            "$60 per month",
+            "$65 per month"
+          ],
+          "correctAnswer": "$55 per month",
+          "explanation": "Support states the 8 GB plan is 'at $55 per month.'"
+        },
+        {
+          "prompt": "When does the new plan take effect on the bill?",
+          "options": [
+            "June 15th",
+            "June 22nd",
+            "July 1st",
+            "July 8th"
+          ],
+          "correctAnswer": "July 8th",
+          "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'"
+        },
+        {
+          "prompt": "What calling feature is included in the new plan?",
+          "options": [
+            "200 minutes",
+            "300 minutes",
+            "500 minutes",
+            "Unlimited calling"
+          ],
+          "correctAnswer": "Unlimited calling",
+          "explanation": "Support states the 8 GB plan includes 'unlimited calling' along with unlimited texting."
+        }
+      ]
+    },
+    {
+      "title": "Restaurant Reservation Issue",
+      "topic": "booking complaint",
+      "script": "Diner: Hi, I made a reservation for tonight at 7 PM under the name Anderson, and I just realized the name is spelled wrong in your system. Manager: Oh no, I'm sorry about that. Let me look that up. How is it spelled? Diner: A-N-D-E-R-S-O-N. I don't know how it got misspelled. Manager: I see it here as A-N-D-E-R-S-E-N. That's an easy mix-up. When you arrive, just let the host know and we'll get you seated right away. Diner: Actually, I'm calling because I need to change the time. Can I do 7:30 instead? Manager: Absolutely. Let me adjust that for you. How many people? Diner: Six of us. Manager: Perfect. I've moved you from 7 PM to 7:30 PM for six people, and I've corrected the name spelling. Is there anything else? Diner: Yes, one more thing. Can you make sure we have a quiet table? There are some business matters we want to discuss. Manager: I'll add a note to your reservation requesting a quieter area away from the bar. We have some nice tables by the window. Diner: That sounds great. What's your cancellation policy? Manager: We require 24 hours notice for cancellations. If you need to cancel, just call us before 7:30 PM tomorrow. Diner: Got it. Thank you.",
+      "questions": [
+        {
+          "prompt": "What is the customer's correct last name spelling?",
+          "options": [
+            "A-N-D-E-R-S-E-N",
+            "A-N-D-E-R-S-O-N",
+            "A-N-D-R-E-S-O-N",
+            "A-N-D-E-R-T-O-N"
+          ],
+          "correctAnswer": "A-N-D-E-R-S-O-N",
+          "explanation": "Diner specifies the correct spelling as 'A-N-D-E-R-S-O-N.'"
+        },
+        {
+          "prompt": "What was the original reservation time?",
+          "options": [
+            "6:30 PM",
+            "7:00 PM",
+            "7:15 PM",
+            "8:00 PM"
+          ],
+          "correctAnswer": "7:00 PM",
+          "explanation": "Diner states 'I made a reservation for tonight at 7 PM.'"
+        },
+        {
+          "prompt": "What is the new reservation time?",
+          "options": [
+            "7:00 PM",
+            "7:15 PM",
+            "7:30 PM",
+            "8:00 PM"
+          ],
+          "correctAnswer": "7:30 PM",
+          "explanation": "Diner requests and manager confirms changing to '7:30 PM.'"
+        },
+        {
+          "prompt": "How many people are in the party?",
+          "options": [
+            "Four",
+            "Five",
+            "Six",
+            "Seven"
+          ],
+          "correctAnswer": "Six",
+          "explanation": "Diner states 'Six of us' in response to the manager's question about party size."
+        },
+        {
+          "prompt": "How was the customer's name misspelled in the system?",
+          "options": [
+            "A-N-D-E-R-S-E-N",
+            "A-N-D-E-R-S-A-N",
+            "A-N-D-E-R-T-O-N",
+            "A-N-D-R-E-S-O-N"
+          ],
+          "correctAnswer": "A-N-D-E-R-S-E-N",
+          "explanation": "Manager states the name appeared as 'A-N-D-E-R-S-E-N' in the system."
+        },
+        {
+          "prompt": "What special seating request did the customer make?",
+          "options": [
+            "Near the kitchen",
+            "By the bar",
+            "A quiet area away from the bar",
+            "Close to the entrance"
+          ],
+          "correctAnswer": "A quiet area away from the bar",
+          "explanation": "Diner requests 'a quiet table' and manager notes 'a quieter area away from the bar.'"
+        },
+        {
+          "prompt": "Where will the quiet table be located?",
+          "options": [
+            "Near the kitchen",
+            "By the bar",
+            "By the window",
+            "At the entrance"
+          ],
+          "correctAnswer": "By the window",
+          "explanation": "Manager states 'We have some nice tables by the window.'"
+        },
+        {
+          "prompt": "What is the restaurant's cancellation policy?",
+          "options": [
+            "6 hours notice required",
+            "12 hours notice required",
+            "24 hours notice required",
+            "48 hours notice required"
+          ],
+          "correctAnswer": "24 hours notice required",
+          "explanation": "Manager states 'We require 24 hours notice for cancellations.'"
+        }
+      ]
+    },
+    {
+      "title": "Car Rental Damage Dispute",
+      "topic": "rental agreement",
+      "script": "Customer: I'm returning my rental car, and I want to dispute a damage claim you're making. Rental Agent: Okay, let me look into that. What's your rental agreement number? Customer: It's CR-892447. I rented the blue Hyundai Elantra, and there was already a dent on the back bumper when I picked it up. Agent: Let me check the pickup photos. What time did you pick up the vehicle? Customer: 10 AM on Tuesday, June 3rd. Agent: I found those photos. You're right, there is a dent visible in the corner of the back bumper. The damage report lists a scratch on the driver's door, which I don't see in our pickup images. Can you tell me what happened? Customer: I definitely didn't cause that scratch. I was careful the whole time I had it. Agent: When did you return the vehicle? Customer: Just now, at 4 PM today. Agent: And you purchased the damage waiver insurance at rental? Customer: Yes, I paid the extra $18 per day for that. Agent: Great. Since you purchased the damage waiver, any damage during your rental period, except for gross negligence, is covered. This scratch appears to be new damage, but with your waiver, you're not responsible. Customer: So I don't have to pay anything? Agent: Correct. Your coverage applies. The previous dent was there before you rented it, and this new scratch is covered under your damage waiver. You're all set.",
+      "questions": [
+        {
+          "prompt": "What is the rental agreement number?",
+          "options": [
+            "CR-824447",
+            "CR-892447",
+            "CR-894247",
+            "CR-824294"
+          ],
+          "correctAnswer": "CR-892447",
+          "explanation": "Customer provides the rental agreement number as 'CR-892447.'"
+        },
+        {
+          "prompt": "What vehicle was rented?",
+          "options": [
+            "Blue Honda Civic",
+            "Blue Hyundai Elantra",
+            "Silver Toyota Corolla",
+            "Black Hyundai Elantra"
+          ],
+          "correctAnswer": "Blue Hyundai Elantra",
+          "explanation": "Customer mentions 'I rented the blue Hyundai Elantra.'"
+        },
+        {
+          "prompt": "What was the pickup time?",
+          "options": [
+            "8 AM",
+            "9 AM",
+            "10 AM",
+            "11 AM"
+          ],
+          "correctAnswer": "10 AM",
+          "explanation": "Customer states they picked up the vehicle 'at 10 AM on Tuesday, June 3rd.'"
+        },
+        {
+          "prompt": "What damage was visible in the pickup photos?",
+          "options": [
+            "A scratch on the driver's door",
+            "A dent on the back bumper",
+            "A broken side mirror",
+            "No damage"
+          ],
+          "correctAnswer": "A dent on the back bumper",
+          "explanation": "Agent confirms 'there is a dent visible in the corner of the back bumper' in the pickup photos."
+        },
+        {
+          "prompt": "When was the vehicle returned?",
+          "options": [
+            "1 PM today",
+            "2 PM today",
+            "3 PM today",
+            "4 PM today"
+          ],
+          "correctAnswer": "4 PM today",
+          "explanation": "Customer states 'I returned the vehicle just now, at 4 PM today.'"
+        },
+        {
+          "prompt": "What was the daily cost of the damage waiver insurance?",
+          "options": [
+            "$12 per day",
+            "$15 per day",
+            "$18 per day",
+            "$20 per day"
+          ],
+          "correctAnswer": "$18 per day",
+          "explanation": "Customer mentions purchasing damage waiver for 'the extra $18 per day.'"
+        },
+        {
+          "prompt": "What new damage was found on the vehicle?",
+          "options": [
+            "A dent on the front bumper",
+            "A scratch on the driver's door",
+            "A broken window",
+            "A damaged side mirror"
+          ],
+          "correctAnswer": "A scratch on the driver's door",
+          "explanation": "Agent mentions 'The damage report lists a scratch on the driver's door.'"
+        },
+        {
+          "prompt": "Is the customer responsible for paying for the new damage?",
+          "options": [
+            "Yes, full amount",
+            "Yes, 50% of the cost",
+            "No, it's covered by the damage waiver",
+            "Not clear from the conversation"
+          ],
+          "correctAnswer": "No, it's covered by the damage waiver",
+          "explanation": "Agent confirms the damage waiver covers the new scratch and customer is not responsible."
+        }
+      ]
+    },
+    {
+      "title": "Bank Account Fraud Alert",
+      "topic": "fraud investigation",
+      "script": "Customer: Hi, I'm calling about suspicious transactions on my account. Bank Officer: I'm sorry to hear that. I'm here to help. Can I have your account number? Customer: It's 5834-291-7465. Over the last three days, I've noticed four withdrawals totaling $1,800 that I didn't make. Officer: Let me pull that up. What are the dates of these transactions? Customer: June 1st, 2nd, 3rd, and today, June 4th. Each one is $450. Officer: I see them all here. These are ATM withdrawals, all from a machine on Bloor Street in Toronto. Are you in Toronto? Customer: No, I'm in Montreal. I haven't been to Toronto in months. Officer: That's definitely suspicious. I'm going to freeze your account immediately to prevent further unauthorized transactions. Customer: What about the money that's already been withdrawn? Officer: We'll file a fraud claim. You're not responsible for unauthorized transactions under the bank's protection policy. You should see a credit back within 5 to 7 business days. Customer: Good. What should I do next? Officer: We'll mail you a new debit card as a precaution, but don't worry about the PIN. I'm also recommending you change your online banking password right away. We'll monitor your account closely. Customer: Should I change my passwords for other accounts too? Officer: That's a wise precaution. Since someone had your card number, they might try other services. Better safe than sorry.",
+      "questions": [
+        {
+          "prompt": "What is the customer's account number?",
+          "options": [
+            "5834-291-7456",
+            "5834-291-7465",
+            "5834-192-7465",
+            "5843-291-7465"
+          ],
+          "correctAnswer": "5834-291-7465",
+          "explanation": "Customer provides their account number as '5834-291-7465.'"
+        },
+        {
+          "prompt": "How much money was withdrawn in total?",
+          "options": [
+            "$900",
+            "$1,200",
+            "$1,500",
+            "$1,800"
+          ],
+          "correctAnswer": "$1,800",
+          "explanation": "Customer states there are 'four withdrawals totaling $1,800.'"
+        },
+        {
+          "prompt": "How much was each withdrawal?",
+          "options": [
+            "$300",
+            "$400",
+            "$450",
+            "$500"
+          ],
+          "correctAnswer": "$450",
+          "explanation": "Customer states 'Each one is $450' for the four withdrawals."
+        },
+        {
+          "prompt": "Where were the ATM withdrawals made?",
+          "options": [
+            "Montreal",
+            "Bloor Street in Toronto",
+            "Downtown Toronto",
+            "The airport"
+          ],
+          "correctAnswer": "Bloor Street in Toronto",
+          "explanation": "Officer states 'These are ATM withdrawals, all from a machine on Bloor Street in Toronto.'"
+        },
+        {
+          "prompt": "Where is the customer actually located?",
+          "options": [
+            "Toronto",
+            "Montreal",
+            "Ottawa",
+            "Vancouver"
+          ],
+          "correctAnswer": "Montreal",
+          "explanation": "Customer confirms 'No, I'm in Montreal. I haven't been to Toronto in months.'"
+        },
+        {
+          "prompt": "How long will it take to see the credit for the unauthorized transactions?",
+          "options": [
+            "1 to 2 business days",
+            "3 to 5 business days",
+            "5 to 7 business days",
+            "10 to 14 business days"
+          ],
+          "correctAnswer": "5 to 7 business days",
+          "explanation": "Officer states 'You should see a credit back within 5 to 7 business days.'"
+        },
+        {
+          "prompt": "What is being mailed to the customer?",
+          "options": [
+            "A new PIN",
+            "A new debit card",
+            "Account statements",
+            "A fraud report"
+          ],
+          "correctAnswer": "A new debit card",
+          "explanation": "Officer states 'We'll mail you a new debit card as a precaution.'"
+        },
+        {
+          "prompt": "What immediate action is recommended for online banking?",
+          "options": [
+            "Contact the bank branch",
+            "Close the account",
+            "Change your online banking password right away",
+            "Disable online banking"
+          ],
+          "correctAnswer": "Change your online banking password right away",
+          "explanation": "Officer states 'I'm also recommending you change your online banking password right away.'"
+        }
+      ]
+    }
+  ],
+  "dailyLife": [
+    {
+      "title": "Coffee Shop Catch-Up",
+      "topic": "meeting friend",
+      "script": "Sarah: Hey, how are you? It's been ages! Michael: I know, right? Must be like six months since we last hung out. Sarah: At least. How was your trip to Vancouver? Michael: It was amazing! The weather was beautiful, and I got to see the mountains every day. Sarah: That sounds incredible. Did you do any hiking? Michael: Yeah, we went up to Whistler for a weekend. The views were unbelievable. Sarah: I'm so jealous. I've been meaning to get out there. Hey, do you want to go grab dinner next week? Michael: Absolutely, I'd love that. How about Thursday? Sarah: Thursday works for me. There's that new Italian place downtown that opened last month. Michael: Perfect. Should we book a table? Sarah: Yeah, probably a good idea. What time? Michael: How about 7 PM? Sarah: Sounds good. I'll make the reservation.",
+      "questions": [
+        {
+          "prompt": "How long has it been since Sarah and Michael last saw each other?",
+          "options": [
+            "Two months",
+            "Four months",
+            "Six months",
+            "A year"
+          ],
+          "correctAnswer": "Six months",
+          "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees."
+        },
+        {
+          "prompt": "Where did Michael travel?",
+          "options": [
+            "Toronto",
+            "Montreal",
+            "Vancouver",
+            "Calgary"
+          ],
+          "correctAnswer": "Vancouver",
+          "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination."
+        },
+        {
+          "prompt": "What outdoor activity did Michael do?",
+          "options": [
+            "Kayaking",
+            "Skiing",
+            "Hiking",
+            "Swimming"
+          ],
+          "correctAnswer": "Hiking",
+          "explanation": "Sarah asks 'Did you do any hiking?' and Michael responds positively about going to Whistler."
+        },
+        {
+          "prompt": "What type of restaurant does Sarah suggest?",
+          "options": [
+            "Mexican",
+            "Italian",
+            "Japanese",
+            "Indian"
+          ],
+          "correctAnswer": "Italian",
+          "explanation": "Sarah mentions 'that new Italian place downtown.'"
+        },
+        {
+          "prompt": "What day do they plan to meet?",
+          "options": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "correctAnswer": "Thursday",
+          "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'"
+        }
+      ]
+    },
+    {
+      "title": "Roommate Household Discussion",
+      "topic": "apartment living",
+      "script": "Alex: Hey, we need to talk about the dishes piling up in the sink. Jamie: Yeah, I know. I've been really busy with work this week. Alex: I get that, but it's been sitting there for three days. Jamie: I'm sorry, I'll do them tonight. Alex: Thanks. Also, we need to talk about the grocery situation. Jamie: What do you mean? Alex: I've been buying most of the groceries, and we're not splitting the cost fairly. Jamie: You're right. How do you want to handle it? Alex: We could split everything equally, or we could each buy our own stuff separately. Jamie: I think splitting equally makes more sense. We can keep a shared list. Alex: Great. One more thing—the internet bill is due next week. It's $75 this month. Jamie: That's higher than last month. Alex: Yeah, they increased the plan by five dollars. Jamie: Okay, so $37.50 each? Alex: Exactly. I'll send you a reminder.",
+      "questions": [
+        {
+          "prompt": "How long have the dishes been in the sink?",
+          "options": [
+            "One day",
+            "Two days",
+            "Three days",
+            "Four days"
+          ],
+          "correctAnswer": "Three days",
+          "explanation": "Alex states 'it's been sitting there for three days.'"
+        },
+        {
+          "prompt": "Why has Jamie been unable to do the dishes?",
+          "options": [
+            "They've been out of town",
+            "They've been really busy with work",
+            "They haven't been feeling well",
+            "They forgot"
+          ],
+          "correctAnswer": "They've been really busy with work",
+          "explanation": "Jamie says 'I've been really busy with work this week.'"
+        },
+        {
+          "prompt": "What grocery solution do they agree on?",
+          "options": [
+            "Alex will buy all groceries",
+            "Jamie will buy all groceries",
+            "They'll split everything equally",
+            "They'll alternate who buys"
+          ],
+          "correctAnswer": "They'll split everything equally",
+          "explanation": "Jamie agrees that splitting equally makes more sense for groceries."
+        },
+        {
+          "prompt": "How much is the internet bill this month?",
+          "options": [
+            "$65",
+            "$70",
+            "$75",
+            "$80"
+          ],
+          "correctAnswer": "$75",
+          "explanation": "Alex states 'the internet bill is due next week. It's $75 this month.'"
+        },
+        {
+          "prompt": "By how much did the internet bill increase?",
+          "options": [
+            "$3",
+            "$5",
+            "$10",
+            "$15"
+          ],
+          "correctAnswer": "$5",
+          "explanation": "Alex explains 'they increased the plan by five dollars.'"
+        }
+      ]
+    },
+    {
+      "title": "Library Book Recommendation",
+      "topic": "book discussion",
+      "script": "Emma: Have you read that mystery novel everyone's been talking about? Liam: Which one? There are so many right now. Emma: The one about the detective in Montreal. It won the Governor General's Award last year. Liam: Oh, you mean 'The Silent Case'? I haven't read it yet, but I've heard great reviews. Emma: You have to read it. I just finished it yesterday, and I couldn't put it down. Liam: Is it that good? Emma: Honestly, it's one of the best books I've read in years. The plot twists were crazy. Liam: Where did you get it? Emma: The library. I put a hold on it three months ago because everyone wanted to read it. Liam: Three months? That's a long wait. Emma: It was worth it though. If you want, I can put in a request for you. Liam: Really? That would be great. Emma: Sure. You should get it in maybe four to six weeks. Liam: Thanks. I'll add it to my reading list.",
+      "questions": [
+        {
+          "prompt": "What is the title of the book being discussed?",
+          "options": [
+            "The Hidden Case",
+            "The Silent Detective",
+            "The Silent Case",
+            "The Missing Detective"
+          ],
+          "correctAnswer": "The Silent Case",
+          "explanation": "Liam identifies the book as 'The Silent Case.'"
+        },
+        {
+          "prompt": "Where is the detective in the novel?",
+          "options": [
+            "Toronto",
+            "Vancouver",
+            "Montreal",
+            "Calgary"
+          ],
+          "correctAnswer": "Montreal",
+          "explanation": "Emma describes it as 'the mystery novel' about 'the detective in Montreal.'"
+        },
+        {
+          "prompt": "What award did the book win?",
+          "options": [
+            "The Giller Prize",
+            "The Governor General's Award",
+            "The Scotiabank Prize",
+            "The Atwood Prize"
+          ],
+          "correctAnswer": "The Governor General's Award",
+          "explanation": "Emma states it 'won the Governor General's Award last year.'"
+        },
+        {
+          "prompt": "How long did Emma wait for the book from the library?",
+          "options": [
+            "One month",
+            "Two months",
+            "Three months",
+            "Six months"
+          ],
+          "correctAnswer": "Three months",
+          "explanation": "Emma states 'I put a hold on it three months ago.'"
+        },
+        {
+          "prompt": "How long will Liam have to wait for the book?",
+          "options": [
+            "Two to three weeks",
+            "Three to four weeks",
+            "Four to six weeks",
+            "Eight to ten weeks"
+          ],
+          "correctAnswer": "Four to six weeks",
+          "explanation": "Emma estimates 'You should get it in maybe four to six weeks.'"
+        }
+      ]
+    },
+    {
+      "title": "Neighbourhood Park Chat",
+      "topic": "casual conversation",
+      "script": "David: Hey, nice day, isn't it? Rebecca: Beautiful. Perfect weather for being outside. David: Have you lived in this neighbourhood long? Rebecca: About five years now. And you? David: Just moved here last month. Rebecca: Oh nice. You picked a good time to arrive. The summer's the best season here. David: So I'm hearing. Any recommendations for places to go? Rebecca: There's a great farmer's market on Saturday mornings at the corner of Main and Oak. The coffee shop near there is amazing too. David: Sounds good. I'll have to check it out. Rebecca: You definitely should. They have the best pastries. Oh, and the park just got new playground equipment if you have kids. David: No kids yet, but that's nice to know. Do many families live here? Rebecca: Lots of young families. It's a very friendly community. David: That's what I was hoping for. I'm looking forward to exploring more.",
+      "questions": [
+        {
+          "prompt": "How long has Rebecca lived in the neighbourhood?",
+          "options": [
+            "Two years",
+            "Three years",
+            "Four years",
+            "Five years"
+          ],
+          "correctAnswer": "Five years",
+          "explanation": "Rebecca states 'About five years now.'"
+        },
+        {
+          "prompt": "When did David move to the neighbourhood?",
+          "options": [
+            "One week ago",
+            "Two weeks ago",
+            "Last month",
+            "Two months ago"
+          ],
+          "correctAnswer": "Last month",
+          "explanation": "David says 'Just moved here last month.'"
+        },
+        {
+          "prompt": "What is the best season in this neighbourhood?",
+          "options": [
+            "Spring",
+            "Summer",
+            "Fall",
+            "Winter"
+          ],
+          "correctAnswer": "Summer",
+          "explanation": "Rebecca states 'The summer's the best season here.'"
+        },
+        {
+          "prompt": "Where is the farmer's market held?",
+          "options": [
+            "Main and Queen",
+            "Main and King",
+            "Main and Oak",
+            "Oak and Queen"
+          ],
+          "correctAnswer": "Main and Oak",
+          "explanation": "Rebecca mentions 'at the corner of Main and Oak.'"
+        },
+        {
+          "prompt": "What type of community does Rebecca describe?",
+          "options": [
+            "Business-focused",
+            "Very friendly",
+            "Quiet and isolated",
+            "Fast-paced"
+          ],
+          "correctAnswer": "Very friendly",
+          "explanation": "Rebecca says 'It's a very friendly community.'"
+        }
+      ]
+    },
+    {
+      "title": "Workplace Lunch Break",
+      "topic": "coworker chat",
+      "script": "Marcus: Hey, want to grab lunch together? Jessica: Sure, where are you thinking? Marcus: There's that new sushi place across the street. I've heard good things about it. Jessica: I'm not really in the mood for sushi. How about the Thai place on the corner? Marcus: That works too. I haven't tried that one yet. Jessica: They have great pad thai. We should go soon though, it gets busy after noon. Marcus: Good point. How about right now? Jessica: Perfect. I'll grab my wallet. Marcus: Do you think they have vegetarian options? Jessica: Definitely. They have a whole vegetarian section on the menu. Marcus: Great. Shall we? Jessica: Let's go. See you in five minutes downstairs.",
+      "questions": [
+        {
+          "prompt": "What is the first restaurant Marcus suggests?",
+          "options": [
+            "Thai food",
+            "Italian food",
+            "Sushi",
+            "Indian food"
+          ],
+          "correctAnswer": "Sushi",
+          "explanation": "Marcus suggests 'that new sushi place across the street.'"
+        },
+        {
+          "prompt": "What restaurant does Jessica prefer?",
+          "options": [
+            "The sushi place",
+            "The Thai place",
+            "A Mexican place",
+            "A burger place"
+          ],
+          "correctAnswer": "The Thai place",
+          "explanation": "Jessica proposes 'the Thai place on the corner' as an alternative."
+        },
+        {
+          "prompt": "When does the Thai restaurant get busy?",
+          "options": [
+            "11 AM",
+            "Noon",
+            "1 PM",
+            "2 PM"
+          ],
+          "correctAnswer": "Noon",
+          "explanation": "Jessica warns 'it gets busy after noon.'"
+        },
+        {
+          "prompt": "What dish does Jessica mention?",
+          "options": [
+            "Tom yum soup",
+            "Pad thai",
+            "Spring rolls",
+            "Green curry"
+          ],
+          "correctAnswer": "Pad thai",
+          "explanation": "Jessica states 'They have great pad thai.'"
+        },
+        {
+          "prompt": "How soon do they plan to meet?",
+          "options": [
+            "Immediately",
+            "In five minutes downstairs",
+            "In ten minutes",
+            "In fifteen minutes"
+          ],
+          "correctAnswer": "In five minutes downstairs",
+          "explanation": "Jessica says 'See you in five minutes downstairs.'"
+        }
+      ]
+    },
+    {
+      "title": "Fitness Class Enrollment",
+      "topic": "gym class",
+      "script": "Trainer: Welcome to the studio. Is this your first class? Maya: Yeah, I'm pretty nervous. Trainer: Don't worry, everyone starts somewhere. What's your experience with yoga? Maya: I've done some stretching at home, but never a full class like this. Trainer: That's great. Let's get you set up. We have mats over there, and grab a water bottle from the cooler. Maya: How long is the class? Trainer: It's 60 minutes total. We start with breathing exercises, warm up, then move through poses, and end with meditation. Maya: That sounds good. What's the hardest part for beginners? Trainer: Usually it's learning to listen to your body. Don't push too hard too fast. If something hurts, modify it or take a break. Maya: Good to know. How many classes should I take per week to see results? Trainer: For best results, aim for three times a week. Even once a week is great though. Maya: I'll start with twice a week and see how it goes. Trainer: Perfect. That's a solid plan. Let's get started.",
+      "questions": [
+        {
+          "prompt": "Is this Maya's first yoga class?",
+          "options": [
+            "Yes",
+            "No, she's taken classes before",
+            "She's never tried yoga",
+            "Not specified"
+          ],
+          "correctAnswer": "Yes",
+          "explanation": "Trainer asks 'Is this your first class?' and Maya confirms 'Yeah.'"
+        },
+        {
+          "prompt": "How long is the class?",
+          "options": [
+            "30 minutes",
+            "45 minutes",
+            "60 minutes",
+            "90 minutes"
+          ],
+          "correctAnswer": "60 minutes",
+          "explanation": "Trainer states 'It's 60 minutes total.'"
+        },
+        {
+          "prompt": "What is the structure of the class?",
+          "options": [
+            "Only poses and stretching",
+            "Breathing, warm-up, poses, meditation",
+            "Meditation and cool-down only",
+            "High-intensity cardio"
+          ],
+          "correctAnswer": "Breathing, warm-up, poses, meditation",
+          "explanation": "Trainer describes 'We start with breathing exercises, warm up, then move through poses, and end with meditation.'"
+        },
+        {
+          "prompt": "What advice does the trainer give about pain?",
+          "options": [
+            "Push through the pain",
+            "Stop immediately",
+            "Modify or take a break if something hurts",
+            "Use ice after class"
+          ],
+          "correctAnswer": "Modify or take a break if something hurts",
+          "explanation": "Trainer advises 'If something hurts, modify it or take a break.'"
+        },
+        {
+          "prompt": "How many classes per week does Maya plan to attend?",
+          "options": [
+            "Once a week",
+            "Twice a week",
+            "Three times a week",
+            "Daily"
+          ],
+          "correctAnswer": "Twice a week",
+          "explanation": "Maya states 'I'll start with twice a week and see how it goes.'"
+        }
+      ]
+    },
+    {
+      "title": "Apartment Viewing Discussion",
+      "topic": "housing search",
+      "script": "Renter: I'm interested in this one-bedroom apartment. What are the lease terms? Landlord: It's a one-year lease. The rent is $1,200 per month, due on the first of each month. Renter: That seems reasonable. What utilities are included? Landlord: Water and heating are included, but you pay for electricity and internet. Renter: I see. What about parking? Landlord: There's one dedicated parking spot in the lot. It's included in the rent. Renter: Perfect. When would I be able to move in? Landlord: If we sign the lease today, you can move in on July 1st. Renter: Is that two weeks from now? Landlord: Yes, exactly two weeks. Do you have any pets? Renter: I have a cat. Is that okay? Landlord: Yes, cats are allowed. There's a one-time pet deposit of $150. Renter: Alright. Can I get a few days to think about it? Landlord: Sure, take until the end of the week. After that, I have other interested renters.",
+      "questions": [
+        {
+          "prompt": "What is the monthly rent?",
+          "options": [
+            "$1,000",
+            "$1,100",
+            "$1,200",
+            "$1,300"
+          ],
+          "correctAnswer": "$1,200",
+          "explanation": "Landlord states 'The rent is $1,200 per month.'"
+        },
+        {
+          "prompt": "What utilities are included?",
+          "options": [
+            "All utilities",
+            "Water and heating",
+            "Electricity only",
+            "Internet only"
+          ],
+          "correctAnswer": "Water and heating",
+          "explanation": "Landlord explains 'Water and heating are included.'"
+        },
+        {
+          "prompt": "Is parking included in the rent?",
+          "options": [
+            "No, extra cost",
+            "Yes, one spot",
+            "Two spots",
+            "Not available"
+          ],
+          "correctAnswer": "Yes, one spot",
+          "explanation": "Landlord confirms 'one dedicated parking spot' is 'included in the rent.'"
+        },
+        {
+          "prompt": "When can the renter move in?",
+          "options": [
+            "June 15",
+            "June 24",
+            "July 1",
+            "July 8"
+          ],
+          "correctAnswer": "July 1",
+          "explanation": "Landlord states 'you can move in on July 1st.'"
+        },
+        {
+          "prompt": "What is the pet deposit for the cat?",
+          "options": [
+            "$100",
+            "$125",
+            "$150",
+            "$200"
+          ],
+          "correctAnswer": "$150",
+          "explanation": "Landlord specifies 'a one-time pet deposit of $150.'"
+        }
+      ]
+    },
+    {
+      "title": "Music Concert Plans",
+      "topic": "event planning",
+      "script": "Alex: Are you going to the concert next Saturday? Casey: Which one? There are a few shows next weekend. Alex: The indie rock festival at the waterfront. Casey: Oh yeah, I've been thinking about it. How much are tickets? Alex: They're forty dollars each. Casey: That's not too bad. Who's performing? Alex: Five bands. The headliner is The Northern Stars. Casey: Oh, I love them. What time does it start? Alex: Six PM. It should wrap up around eleven. Casey: That's pretty late. Is there parking nearby? Alex: Yeah, there's a parking lot right by the venue. It's five dollars for the whole night. Casey: That's reasonable. Should we get food there or bring our own? Alex: They have food vendors there, but it's probably expensive. Casey: Let's grab something before we go then. Alex: Good idea. Want me to buy your ticket? Casey: Yeah, that would be great. Just send me the bill.",
+      "questions": [
+        {
+          "prompt": "What type of concert is it?",
+          "options": [
+            "Classical music",
+            "Hip-hop festival",
+            "Indie rock festival",
+            "Country music show"
+          ],
+          "correctAnswer": "Indie rock festival",
+          "explanation": "Alex mentions 'The indie rock festival at the waterfront.'"
+        },
+        {
+          "prompt": "How much is each ticket?",
+          "options": [
+            "$25",
+            "$35",
+            "$40",
+            "$50"
+          ],
+          "correctAnswer": "$40",
+          "explanation": "Alex states 'They're forty dollars each.'"
+        },
+        {
+          "prompt": "How many bands are performing?",
+          "options": [
+            "Three",
+            "Four",
+            "Five",
+            "Six"
+          ],
+          "correctAnswer": "Five",
+          "explanation": "Alex says 'Five bands' are performing at the festival."
+        },
+        {
+          "prompt": "Who is the headliner?",
+          "options": [
+            "The Eastern Stars",
+            "The Northern Stars",
+            "The Southern Lights",
+            "The Western Dream"
+          ],
+          "correctAnswer": "The Northern Stars",
+          "explanation": "Alex identifies 'The headliner is The Northern Stars.'"
+        },
+        {
+          "prompt": "What time does the concert end?",
+          "options": [
+            "9 PM",
+            "10 PM",
+            "11 PM",
+            "Midnight"
+          ],
+          "correctAnswer": "11 PM",
+          "explanation": "Alex estimates 'It should wrap up around eleven.'"
+        }
+      ]
+    }
+  ],
+  "information": [
+    {
+      "title": "Museum Audio Guide: Canadian Art",
+      "topic": "museum tour",
+      "script": "Welcome to the Canadian Art gallery. I'm your audio guide for this exhibition. Today, we're exploring paintings and sculptures created by Canadian artists from the 1920s to 1960s. We'll start with the Group of Seven landscape paintings in Room 102. These artists revolutionized how Canadians saw their own wilderness, particularly the forests and lakes of Ontario. The paintings you see here depict rugged landscapes using bold colors and dynamic brushstrokes. In Room 104, we have Emily Carr's totem pole paintings from British Columbia. Carr spent much of her career documenting Indigenous art and the Pacific Northwest landscape. Her work emphasizes the spiritual connection between people and nature. Moving to Room 106, you'll find abstract works by Borduas and Riopelle from the 1950s. These Montreal-based artists were part of the Automatiste movement, which rejected traditional artistic rules. Finally, in Room 108, we showcase sculpture by Henry Moore and Barbara Hepworth, who visited Canada in the 1950s. Their organic forms were inspired by Canadian landscapes. This exhibition runs through September 30th. Thank you for visiting.",
+      "questions": [
+        {
+          "prompt": "What is the time period of the art featured in this exhibition?",
+          "options": [
+            "1900-1920",
+            "1920-1960",
+            "1960-1980",
+            "1980-2000"
+          ],
+          "correctAnswer": "1920-1960",
+          "explanation": "The guide states we're exploring 'paintings and sculptures created by Canadian artists from the 1920s to 1960s.'"
+        },
+        {
+          "prompt": "In which room are Group of Seven paintings displayed?",
+          "options": [
+            "Room 101",
+            "Room 102",
+            "Room 104",
+            "Room 106"
+          ],
+          "correctAnswer": "Room 102",
+          "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'"
+        },
+        {
+          "prompt": "What region did Emily Carr primarily focus on?",
+          "options": [
+            "Ontario",
+            "Quebec",
+            "British Columbia",
+            "Prairie provinces"
+          ],
+          "correctAnswer": "British Columbia",
+          "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'"
+        },
+        {
+          "prompt": "What artistic movement were Borduas and Riopelle part of?",
+          "options": [
+            "Cubism",
+            "Automatiste",
+            "Impressionism",
+            "Surrealism"
+          ],
+          "correctAnswer": "Automatiste",
+          "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'"
+        },
+        {
+          "prompt": "Which city were Borduas and Riopelle based in?",
+          "options": [
+            "Toronto",
+            "Vancouver",
+            "Montreal",
+            "Ottawa"
+          ],
+          "correctAnswer": "Montreal",
+          "explanation": "The guide identifies them as 'Montreal-based artists.'"
+        },
+        {
+          "prompt": "Until what date does this exhibition run?",
+          "options": [
+            "August 31st",
+            "September 15th",
+            "September 30th",
+            "October 15th"
+          ],
+          "correctAnswer": "September 30th",
+          "explanation": "The guide states 'This exhibition runs through September 30th.'"
+        }
+      ]
+    },
+    {
+      "title": "University Orientation: First Week Checklist",
+      "topic": "student orientation",
+      "script": "Hello, welcome to orientation week. I'm here to walk you through essential tasks for your first week. First, attend your faculty's orientation meeting on Monday at ten AM in the Student Centre. Bring your student ID. Second, register for your courses online by Wednesday, August 28th. Early registration means better class times. Third, purchase your textbooks from the university bookstore before classes start. Fourth, get your student photo ID taken at the Services Office between 9 and 4 on any day this week. The photo ID is required for library access and residence entry. Fifth, activate your email account at the IT support desk. Your email is your primary communication channel for all university announcements. Sixth, find your classes on a campus map. Most buildings are located around the central quad. Seventh, attend the Welcome Social on Friday evening in the gymnasium. It's a great way to meet other students and faculty. Eighth, complete your health and immunization form at Student Health Services. This is mandatory before attending classes. Finally, budget about three hundred dollars for books and materials. Questions? Visit the information desk in the main foyer.",
+      "questions": [
+        {
+          "prompt": "When is the faculty orientation meeting?",
+          "options": [
+            "Monday at 8 AM",
+            "Monday at 10 AM",
+            "Tuesday at 10 AM",
+            "Wednesday at 10 AM"
+          ],
+          "correctAnswer": "Monday at 10 AM",
+          "explanation": "The guide states 'attend your faculty's orientation meeting on Monday at ten AM.'"
+        },
+        {
+          "prompt": "What is the deadline for course registration?",
+          "options": [
+            "Tuesday",
+            "Wednesday, August 27th",
+            "Wednesday, August 28th",
+            "Friday"
+          ],
+          "correctAnswer": "Wednesday, August 28th",
+          "explanation": "The guide specifies 'register for your courses online by Wednesday, August 28th.'"
+        },
+        {
+          "prompt": "Where should you get your student photo ID?",
+          "options": [
+            "The Student Centre",
+            "The Services Office",
+            "The IT support desk",
+            "Student Health Services"
+          ],
+          "correctAnswer": "The Services Office",
+          "explanation": "The guide states 'get your student photo ID taken at the Services Office.'"
+        },
+        {
+          "prompt": "What are the hours for photo ID service?",
+          "options": [
+            "8 AM to 5 PM",
+            "9 AM to 4 PM",
+            "10 AM to 3 PM",
+            "8 AM to 6 PM"
+          ],
+          "correctAnswer": "9 AM to 4 PM",
+          "explanation": "The guide mentions 'between 9 and 4 on any day this week.'"
+        },
+        {
+          "prompt": "What is the estimated budget for books and materials?",
+          "options": [
+            "One hundred dollars",
+            "Two hundred dollars",
+            "Three hundred dollars",
+            "Four hundred dollars"
+          ],
+          "correctAnswer": "Three hundred dollars",
+          "explanation": "The guide states 'budget about three hundred dollars for books and materials.'"
+        },
+        {
+          "prompt": "When is the Welcome Social?",
+          "options": [
+            "Thursday evening",
+            "Friday evening",
+            "Saturday afternoon",
+            "Sunday afternoon"
+          ],
+          "correctAnswer": "Friday evening",
+          "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'"
+        }
+      ]
+    },
+    {
+      "title": "Workplace Safety Training: Fire Procedures",
+      "topic": "safety briefing",
+      "script": "Good morning. This is your mandatory workplace fire safety training. Please listen carefully. In case of fire alarm, first, stay calm. Second, evacuate using the nearest exit. Do not use elevators under any circumstances. Stairs are located at both ends of each hallway. Third, move to the designated assembly point in the parking lot north of the building. Check in with your team leader. Fourth, do not re-enter the building until an authorized person announces it's safe. Fire drills occur quarterly on the first Friday of March, June, September, and December at 2 PM. During drills, the process is identical to a real emergency. Everyone must participate. If you cannot evacuate due to disability, proceed to a designated refuge area and use the emergency call button. These refuge areas are marked on building maps. Fire extinguishers are located every twenty-five meters along hallways and near kitchen areas. Only trained staff should operate extinguishers. If you're not trained, alert a supervisor. Report any fire hazards such as blocked exits or damaged equipment to maintenance immediately. Violations of fire safety procedures may result in disciplinary action. Contact Safety Services with any questions.",
+      "questions": [
+        {
+          "prompt": "What should NOT be used during evacuation?",
+          "options": [
+            "Stairs",
+            "Emergency exits",
+            "Elevators",
+            "Hallways"
+          ],
+          "correctAnswer": "Elevators",
+          "explanation": "The training explicitly states 'Do not use elevators under any circumstances.'"
+        },
+        {
+          "prompt": "Where is the designated assembly point?",
+          "options": [
+            "The main lobby",
+            "The parking lot north of the building",
+            "The south entrance",
+            "The rooftop"
+          ],
+          "correctAnswer": "The parking lot north of the building",
+          "explanation": "The guide specifies 'the designated assembly point in the parking lot north of the building.'"
+        },
+        {
+          "prompt": "How often are fire drills conducted?",
+          "options": [
+            "Monthly",
+            "Bi-monthly",
+            "Quarterly",
+            "Annually"
+          ],
+          "correctAnswer": "Quarterly",
+          "explanation": "The training states 'Fire drills occur quarterly on the first Friday of March, June, September, and December.'"
+        },
+        {
+          "prompt": "At what time are fire drills held?",
+          "options": [
+            "10 AM",
+            "1 PM",
+            "2 PM",
+            "3 PM"
+          ],
+          "correctAnswer": "2 PM",
+          "explanation": "The guide specifies drills are 'at 2 PM.'"
+        },
+        {
+          "prompt": "How frequently are fire extinguishers located along hallways?",
+          "options": [
+            "Every 10 meters",
+            "Every 15 meters",
+            "Every 25 meters",
+            "Every 50 meters"
+          ],
+          "correctAnswer": "Every 25 meters",
+          "explanation": "The training states 'Fire extinguishers are located every twenty-five meters along hallways.'"
+        },
+        {
+          "prompt": "What should employees do if they find a blocked exit?",
+          "options": [
+            "Move it themselves",
+            "Ignore it",
+            "Report it to maintenance immediately",
+            "Wait for management"
+          ],
+          "correctAnswer": "Report it to maintenance immediately",
+          "explanation": "The guide instructs to 'Report any fire hazards such as blocked exits or damaged equipment to maintenance immediately.'"
+        }
+      ]
+    },
+    {
+      "title": "Travel Insurance Information Session",
+      "topic": "insurance briefing",
+      "script": "Welcome to our travel insurance information session. Today, I'll explain the coverage options available through our travel agency. We offer three plans: Basic, Standard, and Premium. The Basic plan covers medical emergencies, emergency dental, and evacuation. Cost is seventy-five dollars for two weeks. The Standard plan includes everything in Basic plus trip cancellation coverage, lost luggage reimbursement up to one thousand dollars, and travel delays over twelve hours. Cost is one hundred twenty dollars for two weeks. The Premium plan is our comprehensive option. It adds accidental death coverage, zero deductible for medical claims, and upgrade to two thousand five hundred dollars for lost luggage. Premium costs two hundred twenty dollars for two weeks. All plans exclude claims related to alcohol impairment or pre-existing medical conditions not disclosed. Coverage begins on your departure date and ends upon return. Claims must be filed within ninety days of the incident. You'll receive a confirmation email with your policy documents. For claims, call our toll-free number at 1-800-555-0147. Representatives are available 24/7. Questions about coverage should be directed to our customer service team. Purchase your policy at least seven days before travel.",
+      "questions": [
+        {
+          "prompt": "How many travel insurance plans are offered?",
+          "options": [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+          ],
+          "correctAnswer": "Three",
+          "explanation": "The guide states 'We offer three plans: Basic, Standard, and Premium.'"
+        },
+        {
+          "prompt": "What is the cost of the Basic plan for two weeks?",
+          "options": [
+            "$50",
+            "$60",
+            "$75",
+            "$85"
+          ],
+          "correctAnswer": "$75",
+          "explanation": "The guide specifies 'Cost is seventy-five dollars for two weeks' for the Basic plan."
+        },
+        {
+          "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
+          "options": [
+            "$500",
+            "$1,000",
+            "$1,500",
+            "$2,500"
+          ],
+          "correctAnswer": "$1,000",
+          "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan."
+        },
+        {
+          "prompt": "What is the Premium plan's lost luggage coverage limit?",
+          "options": [
+            "$1,000",
+            "$1,500",
+            "$2,000",
+            "$2,500"
+          ],
+          "correctAnswer": "$2,500",
+          "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'"
+        },
+        {
+          "prompt": "How long do you have to file a claim after an incident?",
+          "options": [
+            "30 days",
+            "60 days",
+            "90 days",
+            "120 days"
+          ],
+          "correctAnswer": "90 days",
+          "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'"
+        },
+        {
+          "prompt": "What is the toll-free claims phone number?",
+          "options": [
+            "1-800-555-0140",
+            "1-800-555-0147",
+            "1-800-555-0174",
+            "1-800-555-0417"
+          ],
+          "correctAnswer": "1-800-555-0147",
+          "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'"
+        }
+      ]
+    },
+    {
+      "title": "Public Transit New Route Announcement",
+      "topic": "transit information",
+      "script": "Good afternoon. Transit Authority is pleased to announce a new rapid bus route effective September 1st. The new Route 95 Express connects downtown to the northern suburbs, with stops at Central Station, City Hall, the Hospital, University Campus, and North Terminal. Service runs Monday through Friday from 6 AM to 10 PM, with departures every fifteen minutes during peak hours, 7 to 9 AM and 4 to 7 PM. Off-peak service is every thirty minutes. Weekend service begins December, with departures every twenty minutes from 9 AM to 8 PM. The Route 95 uses the new dedicated bus lane on Main Street, reducing travel time from downtown to North Terminal from forty-five minutes to approximately twenty-two minutes. Fares are the same as existing routes: single trip is three dollars fifty cents, and a monthly pass is ninety dollars. Seniors and students receive a twenty percent discount. The new buses feature USB charging ports, free Wi-Fi, and comfortable seating. Detailed schedules are available on our website and at all transit stations. Real-time tracking is available through our mobile app.",
+      "questions": [
+        {
+          "prompt": "When does Route 95 begin service?",
+          "options": [
+            "August 1st",
+            "August 15th",
+            "September 1st",
+            "September 15th"
+          ],
+          "correctAnswer": "September 1st",
+          "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'"
+        },
+        {
+          "prompt": "What is the frequency of peak hour service?",
+          "options": [
+            "Every 10 minutes",
+            "Every 15 minutes",
+            "Every 20 minutes",
+            "Every 30 minutes"
+          ],
+          "correctAnswer": "Every 15 minutes",
+          "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'"
+        },
+        {
+          "prompt": "How much travel time is saved with Route 95?",
+          "options": [
+            "15 minutes",
+            "20 minutes",
+            "23 minutes",
+            "30 minutes"
+          ],
+          "correctAnswer": "23 minutes",
+          "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved."
+        },
+        {
+          "prompt": "What is the cost of a single trip?",
+          "options": [
+            "$2.50",
+            "$3.00",
+            "$3.50",
+            "$4.00"
+          ],
+          "correctAnswer": "$3.50",
+          "explanation": "The guide states 'single trip is three dollars fifty cents.'"
+        },
+        {
+          "prompt": "What is the monthly pass cost?",
+          "options": [
+            "$75",
+            "$80",
+            "$90",
+            "$100"
+          ],
+          "correctAnswer": "$90",
+          "explanation": "The guide specifies 'a monthly pass is ninety dollars.'"
+        },
+        {
+          "prompt": "What features are available on the new buses?",
+          "options": [
+            "USB charging only",
+            "Free Wi-Fi only",
+            "USB charging, free Wi-Fi, and comfortable seating",
+            "Air conditioning only"
+          ],
+          "correctAnswer": "USB charging, free Wi-Fi, and comfortable seating",
+          "explanation": "The guide mentions 'The new buses feature USB charging ports, free Wi-Fi, and comfortable seating.'"
+        }
+      ]
+    },
+    {
+      "title": "Hospital Visitor Guidelines",
+      "topic": "facility rules",
+      "script": "Welcome to City Hospital. We're glad you're visiting someone here. Please review our visitor guidelines for patient safety and comfort. Visiting hours are 10 AM to 8 PM daily. Each patient can have a maximum of two visitors at a time in their room. This ensures proper rest and medical care. Children under twelve must be accompanied by an adult. We restrict visits from children with colds or contagious illnesses. Visitors should wash their hands upon arrival and before leaving. Hand-sanitizer stations are located throughout the facility. Quiet voices are required in patient rooms and hallways. Please avoid using cell phones in patient areas. Photography is not permitted without the patient's written consent. Flowers and plants are welcome, but balloons are not allowed due to interference with medical equipment. Food brought from outside is permitted only if approved by nursing staff. Many patients have dietary restrictions. Visiting a patient receiving isolation care requires special precautions. Nursing staff will provide instructions. Do not disturb patients' medical equipment, monitors, or IV lines. Visitors with concerns should speak to staff at the nursing station. Parking is available in the north lot at five dollars per visit. An elevator is located near the main entrance for easy access.",
+      "questions": [
+        {
+          "prompt": "What are the visiting hours?",
+          "options": [
+            "8 AM to 6 PM",
+            "9 AM to 7 PM",
+            "10 AM to 8 PM",
+            "11 AM to 9 PM"
+          ],
+          "correctAnswer": "10 AM to 8 PM",
+          "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'"
+        },
+        {
+          "prompt": "How many visitors can be in a patient's room at one time?",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "correctAnswer": "Two",
+          "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'"
+        },
+        {
+          "prompt": "What is the minimum age for unaccompanied visits?",
+          "options": [
+            "Eight years old",
+            "Ten years old",
+            "Twelve years old",
+            "Fourteen years old"
+          ],
+          "correctAnswer": "Twelve years old",
+          "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'"
+        },
+        {
+          "prompt": "Are balloons allowed in patient rooms?",
+          "options": [
+            "Yes",
+            "Yes, with restrictions",
+            "No",
+            "Only on special occasions"
+          ],
+          "correctAnswer": "No",
+          "explanation": "The guide states 'balloons are not allowed due to interference with medical equipment.'"
+        },
+        {
+          "prompt": "What is the parking fee per visit?",
+          "options": [
+            "$2",
+            "$3",
+            "$4",
+            "$5"
+          ],
+          "correctAnswer": "$5",
+          "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'"
+        },
+        {
+          "prompt": "Who must approve outside food before it's given to a patient?",
+          "options": [
+            "The visitor",
+            "The patient",
+            "The nursing staff",
+            "The hospital administrator"
+          ],
+          "correctAnswer": "The nursing staff",
+          "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'"
+        }
+      ]
+    },
+    {
+      "title": "City Library Card Registration",
+      "topic": "library services",
+      "script": "Hello, and welcome to the City Library system. I'm here to explain our library card registration process. A library card gives you access to millions of digital and physical resources. Registration is free and open to all residents with proof of address. Bring a government-issued ID and a recent utility bill or lease agreement. Visit any of our twelve branch locations during regular hours, Monday through Saturday, 9 AM to 6 PM, and Sunday 1 to 5 PM. Our main branch is downtown on Oak Street. Registration takes about ten minutes. Once registered, you can immediately borrow books, DVDs, and audiobooks. You're allowed up to twenty items at a time. Loan periods are three weeks for books, one week for DVDs, and four weeks for audiobooks. Late fees are twenty-five cents per day for books. Digital resources such as e-books and e-magazines are also available. Access them through our website anytime. Many online databases offer academic journals and local news archives. Children under eighteen need parental consent on their registration form. We also offer free Wi-Fi and computer access at all branches. Printing is available at ten cents per page. For questions, visit the information desk or call our hotline at 416-555-0198.",
+      "questions": [
+        {
+          "prompt": "Is there a cost for a library card?",
+          "options": [
+            "Yes, $10",
+            "Yes, $20",
+            "No, it's free",
+            "Yes, $5"
+          ],
+          "correctAnswer": "No, it's free",
+          "explanation": "The guide states 'Registration is free and open to all residents.'"
+        },
+        {
+          "prompt": "How many branch locations does the library system have?",
+          "options": [
+            "Eight",
+            "Ten",
+            "Twelve",
+            "Fifteen"
+          ],
+          "correctAnswer": "Twelve",
+          "explanation": "The guide mentions 'Visit any of our twelve branch locations.'"
+        },
+        {
+          "prompt": "What is the Sunday operating hour?",
+          "options": [
+            "10 AM to 6 PM",
+            "1 PM to 5 PM",
+            "12 PM to 4 PM",
+            "2 PM to 6 PM"
+          ],
+          "correctAnswer": "1 PM to 5 PM",
+          "explanation": "The guide specifies 'Sunday 1 to 5 PM.'"
+        },
+        {
+          "prompt": "What is the maximum number of items you can borrow?",
+          "options": [
+            "Ten",
+            "Fifteen",
+            "Twenty",
+            "Twenty-five"
+          ],
+          "correctAnswer": "Twenty",
+          "explanation": "The guide states 'You're allowed up to twenty items at a time.'"
+        },
+        {
+          "prompt": "What is the loan period for books?",
+          "options": [
+            "Two weeks",
+            "Three weeks",
+            "Four weeks",
+            "Five weeks"
+          ],
+          "correctAnswer": "Three weeks",
+          "explanation": "The guide specifies 'Loan periods are three weeks for books.'"
+        },
+        {
+          "prompt": "What is the late fee per day for books?",
+          "options": [
+            "10 cents",
+            "15 cents",
+            "20 cents",
+            "25 cents"
+          ],
+          "correctAnswer": "25 cents",
+          "explanation": "The guide states 'Late fees are twenty-five cents per day for books.'"
+        }
+      ]
+    }
+  ]
+}

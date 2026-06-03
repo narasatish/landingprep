@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 15",
+  "title": "CELPIP General Listening — Practice Test 15",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-015-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Calling About a Noisy Neighbour",
-      "text": "Tenant: Hi, I'm calling about a problem with my upstairs neighbour. There's loud music almost every night after eleven, and I can't sleep.\nProperty Manager: I'm sorry to hear that. Have you spoken to the neighbour directly yet?\nTenant: I knocked on the door twice last week, but nobody answered.\nProperty Manager: In that case, I can send them an official written notice reminding them of the quiet hours policy. That usually works.\nTenant: Would there be any consequences if it continues after the notice?\nProperty Manager: Yes. If the behaviour continues after two written notices, we can begin the formal dispute process, which could affect their tenancy.\nTenant: That's a relief. How long does it take to send the first notice?\nProperty Manager: Usually within two business days. I'll log your complaint right now and you should receive a copy of the notice by email once it goes out.\nTenant: Perfect. And what should I do in the meantime if it happens tonight?\nProperty Manager: You can call our after-hours line and log a noise complaint. Those records will also be used if this goes further.",
+      "title": "Phone Plan Upgrade",
+      "text": "Customer: Hi, I'm interested in upgrading my phone plan. I currently have the basic plan with 2 GB of data. Support: Great! I can definitely help with that. What's your phone number? Customer: It's 416-555-0234. I'm constantly hitting my data limit, especially with streaming videos. Support: I understand. Let me pull up your account. You're right, your basic plan is 2 GB per month at $35. What data usage would work better for you? Customer: Probably something like 10 GB. How much would that be? Support: We have a 10 GB plan at $65 per month. You'd also get unlimited texting and more calling minutes. Would that interest you? Customer: What's the difference in calling minutes from my current plan? Support: Your current plan has 200 minutes; the 10 GB plan has unlimited calling. Plus, there's no contract change required if you cancel later. Customer: Actually, do you have an 8 GB plan? That might be better value. Support: Good question. We do have an 8 GB plan at $55 per month with the same unlimited calling and texting. Customer: Perfect, I'll take that. When does it take effect? Support: I'm activating it right now. Your bill will reflect the change next billing cycle, which is on July 8th. The monthly cost goes from $35 to $55. Customer: That works for me. Thanks.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-015-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Planning a Weekend Camping Trip",
-      "text": "Maya: Are you still planning to go camping this weekend? I heard there's a campsite near the lake that has good reviews.\nDaniel: Yes, I booked two spots at Birchwood Provincial Park. It's about ninety minutes from downtown.\nMaya: Do you think the weather will hold up? The forecast showed some rain on Saturday.\nDaniel: I checked again this morning. It looks like just a light shower in the early afternoon. We should be fine if we set up the tent before noon.\nMaya: Makes sense. Should I bring my camp stove, or does the park have fire pits?\nDaniel: The park has fire pits, but there are restrictions on fire use right now because of dry conditions. Bring your stove — it's probably safer.\nMaya: Good thinking. What about food? Should we plan to cook each night or pack some ready-made meals?\nDaniel: Let's do a mix. Cook a proper dinner on Friday, and keep Saturday simple with sandwiches and wraps — less cleanup if the rain comes.",
+      "title": "Apartment Viewing Discussion",
+      "text": "Renter: I'm interested in this one-bedroom apartment. What are the lease terms? Landlord: It's a one-year lease. The rent is $1,200 per month, due on the first of each month. Renter: That seems reasonable. What utilities are included? Landlord: Water and heating are included, but you pay for electricity and internet. Renter: I see. What about parking? Landlord: There's one dedicated parking spot in the lot. It's included in the rent. Renter: Perfect. When would I be able to move in? Landlord: If we sign the lease today, you can move in on July 1st. Renter: Is that two weeks from now? Landlord: Yes, exactly two weeks. Do you have any pets? Renter: I have a cat. Is that okay? Landlord: Yes, cats are allowed. There's a one-time pet deposit of $150. Renter: Alright. Can I get a few days to think about it? Landlord: Sure, take until the end of the week. After that, I have other interested renters.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-015-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "Information About Renewing a Canadian Driver's Licence",
-      "text": "Good afternoon. This information session will walk you through the process of renewing your Canadian driver's licence. Whether your licence has recently expired or is about to expire, it is important to act early to avoid fines or restrictions on your driving privileges.\n\nIn most provinces, you will receive a renewal notice by mail several weeks before your expiry date. However, it is your responsibility to renew even if you do not receive this notice. Renewal can be completed in three ways: in person at a government services office, online through the provincial licensing portal, or by mail using the renewal form included with your notice.\n\nIf you are renewing in person, you will need to bring your current licence, proof of address such as a recent utility bill or bank statement, and the renewal fee. Fees vary by province but are generally between twenty-five and sixty-five dollars. If your vision has changed since your last renewal, you may also be required to complete a vision test at the counter.\n\nOnline renewal is available to drivers who have no changes to their personal information and whose previous renewal was also completed online. You will need your driver's licence number and the last four digits of your health card to verify your identity. Processing takes up to five business days and the new licence will be mailed to your home.\n\nRemember: driving with an expired licence is a ticketable offence in every province. Renew early to avoid unnecessary penalties.",
+      "title": "Museum Audio Guide: Canadian Art",
+      "text": "Welcome to the Canadian Art gallery. I'm your audio guide for this exhibition. Today, we're exploring paintings and sculptures created by Canadian artists from the 1920s to 1960s. We'll start with the Group of Seven landscape paintings in Room 102. These artists revolutionized how Canadians saw their own wilderness, particularly the forests and lakes of Ontario. The paintings you see here depict rugged landscapes using bold colors and dynamic brushstrokes. In Room 104, we have Emily Carr's totem pole paintings from British Columbia. Carr spent much of her career documenting Indigenous art and the Pacific Northwest landscape. Her work emphasizes the spiritual connection between people and nature. Moving to Room 106, you'll find abstract works by Borduas and Riopelle from the 1950s. These Montreal-based artists were part of the Automatiste movement, which rejected traditional artistic rules. Finally, in Room 108, we showcase sculpture by Henry Moore and Barbara Hepworth, who visited Canada in the 1950s. Their organic forms were inspired by Canadian landscapes. This exhibition runs through September 30th. Thank you for visiting.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-015-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: City Expands Free Transit for Seniors",
-      "text": "The city announced today that it will expand its free public transit programme for seniors beginning next month. Under the new policy, all residents aged sixty-five and older will be able to ride buses and light rail lines at no cost, seven days a week. Previously, the programme only applied on weekdays between nine in the morning and three in the afternoon.\n\nThe city's transportation director said the expansion was driven by data showing that many seniors were unable to attend evening medical appointments or weekend community activities due to transit costs. Council members voted fourteen to three in favour of the expansion at last night's meeting.\n\nThe programme will be funded through a small increase in the transit levy paid by commercial property owners. A city spokesperson confirmed that no changes to residential property taxes are planned as a result of this programme.\n\nAdvocacy groups welcomed the announcement but called for further steps, including improved accessibility features at bus stops and more frequent service on routes serving seniors' residences. The city said those improvements are already under review as part of the five-year transit plan.",
+      "title": "Manitoba Agricultural Export Deal",
+      "text": "Manitoba has secured a significant agricultural export agreement with Japan. The deal, valued at approximately 340 million dollars annually, includes canola, pulse crops, and livestock products. Japanese importers have committed to increasing their purchases from Manitoba producers by 25 percent over the next five years. The agreement was finalized following trade negotiations led by the Canadian Agricultural Minister and her Japanese counterpart. Manitoba produces approximately 8 million tonnes of canola annually, making it Canada's leading canola province. Pulse crops, including peas and lentils, account for another 2.8 million tonnes of production. The Premier described the agreement as transformative for rural communities. Japanese markets have consistently valued Canadian agricultural products for their quality and safety standards. The deal is expected to create 400 additional jobs in the agriculture and food processing sectors. Provincial officials plan to strengthen cold-chain logistics to ensure product freshness during international transport.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-015-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Should Companies Require Employees to Return to the Office?",
-      "text": "Host: Good morning. Today we're discussing whether companies should require employees to return to the office full time. I'm joined by two guests with very different views. Sophie, you support a return-to-office policy. Tell us why.\nSophie: Thank you. I believe in-person work is essential for collaboration and company culture. When people are in the same room, ideas flow more naturally. Spontaneous conversations at the coffee machine lead to innovations you simply cannot replicate on a video call. Junior employees especially benefit from being close to experienced colleagues.\nHost: And Marcus, you argue against mandatory returns. What's your position?\nMarcus: My position is that forcing people back to the office ignores what the pandemic proved: that most knowledge work can be done just as effectively from home, often more so. People save hours on commuting, they have fewer interruptions, and studies consistently show higher job satisfaction when employees have flexibility.\nHost: Sophie, how do you respond to the productivity argument?\nSophie: Productivity metrics can be misleading. You might complete more tasks per hour at home, but you miss out on the kind of deep organisational knowledge that comes from casual interactions. Also, not everyone has a good home environment — some employees live in small apartments or have young children, and forcing them to work from home is actually more stressful.\nHost: Marcus, a final word?\nMarcus: Companies that respect autonomy attract and retain better talent. If a business genuinely believes in-person work is better, they should make it so compelling that people want to come in voluntarily — not mandate it and risk losing good people to competitors who offer flexibility.\nHost: Thank you both. It's clear this debate is far from settled.",
+      "title": "Remote Work Policy Debate",
+      "text": "Manager Sarah: I've been thinking about our remote work policy, and honestly, I think we need to bring people back to the office at least three days a week. When I worked from home during the pandemic, I felt disconnected from my team, and I worry about newer staff missing out on mentorship opportunities. Plus, collaboration seems to happen more naturally when people are in the same space.\n\nEmployee James: I completely understand your point, Sarah, but I've actually found the opposite to be true. Since working remotely, my productivity has increased by about 40 percent because I have fewer interruptions. I can focus better on complex projects. And I'm still collaborating regularly with my colleagues through video calls and shared documents. Honestly, three days in the office feels like a step backward for many of us who have adapted well to remote work.\n\nHR Director Tom: Both of you raise valid concerns. The data we've collected shows mixed results. Some teams are more productive working remotely, while others struggle with communication and onboarding new hires. I think the solution isn't one-size-fits-all. Different departments might need different policies. Customer service teams probably need more in-person interaction, while our software developers seem to work just fine remotely. We should consider a hybrid approach that gives managers flexibility based on their specific team's needs.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-015-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: The Value of Learning a Second Language as an Adult",
-      "text": "There is a widespread belief that adults cannot learn a new language as effectively as children. This idea has discouraged many adults from even attempting to study a second language, which I believe is deeply unfortunate — and largely incorrect.\n\nResearch on brain plasticity has shown that while young children do acquire language with remarkable ease and near-perfect accents, adults have significant advantages that are rarely acknowledged. Adults come to language learning with an established grammar system in their native language, a large vocabulary that can be mapped onto new words, and — critically — the ability to study deliberately and strategically. A child acquires language through years of immersion; an adult with good study habits can reach conversational fluency in twelve to eighteen months.\n\nThe benefits of second language learning extend far beyond communication. Numerous studies have found that bilingual adults show delayed onset of dementia by an average of four to five years compared to monolinguals. The effort of managing two language systems exercises the brain in ways that improve attention, task-switching, and even creativity.\n\nFrom a social perspective, learning the dominant language of your community opens doors in ways that are hard to overstate. It changes how service providers speak to you, how colleagues perceive you, and how confident you feel navigating institutions — from hospitals to government offices.\n\nMy view is straightforward: language learning is one of the most valuable investments an adult can make in themselves, and the belief that it is too late should be replaced with a recognition that it is simply different — and in some respects, better.",
+      "title": "Mental Health Parity in Insurance Coverage",
+      "text": "Mental health needs to be treated with the same importance as physical health in our insurance system. We talk about mental health awareness, but when it comes to actual coverage, it's dramatically underfunded. Most insurance plans cover mental health at lower rates than physical health. If you have a broken arm, insurance covers months of physical therapy. If you have depression or anxiety, you get maybe 10 sessions of therapy a year, and psychologist visits might only be 50 percent covered. This creates barriers. Many people avoid treatment because they can't afford it, and their conditions worsen. The economic impact is massive. Mental health issues cost the economy 51 billion dollars annually in Canada through lost productivity, emergency services, and hospitalizations. Yet we invest a fraction of that in prevention and treatment. Here's what frustrates me most: we have effective treatments. Therapy works. Medication helps. But access is limited by insurance coverage. A person struggling with bipolar disorder shouldn't have to choose between therapy and rent. Insurance companies argue coverage limits are necessary for cost control, but that's shortsighted. When people get mental health treatment early, they use fewer emergency services, work more, and contribute to society. The ROI on mental health coverage is actually positive. I'm advocating for mandatory parity—insurance companies should cover mental health at the same level as physical health. This means removing visit limits, lowering copayments, and covering evidence-based treatments. It's not just compassionate; it's economically smart.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-015-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why is the tenant calling the property manager?",
+      "prompt": "What is the customer's phone number?",
       "options": [
-        "To report a leaking pipe",
-        "To complain about a noisy neighbour",
-        "To request a rent reduction",
-        "To ask about parking rules"
+        "416-555-0243",
+        "416-555-0234",
+        "416-555-0342",
+        "416-555-0423"
       ],
-      "correctAnswer": "To complain about a noisy neighbour",
-      "explanation": "The tenant explicitly says there is loud music keeping them awake.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "416-555-0234",
+      "explanation": "Customer provides their phone number as '416-555-0234.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-015-q02",
       "audioScriptId": "celpip-listening-015-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What has the tenant already tried?",
+      "prompt": "How much data does the customer currently have?",
       "options": [
-        "Called the police",
-        "Knocked on the neighbour's door",
-        "Sent an email to management",
-        "Left a note under the door"
+        "1 GB",
+        "2 GB",
+        "5 GB",
+        "8 GB"
       ],
-      "correctAnswer": "Knocked on the neighbour's door",
-      "explanation": "The tenant says they knocked twice last week.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "2 GB",
+      "explanation": "Customer states they have 'the basic plan with 2 GB of data.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-015-q03",
       "audioScriptId": "celpip-listening-015-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What will the property manager do first?",
+      "prompt": "What is the cost of the current plan?",
       "options": [
-        "Contact the police",
-        "Begin a formal dispute process",
-        "Send an official written notice",
-        "Visit the neighbour's apartment"
+        "$25 per month",
+        "$35 per month",
+        "$45 per month",
+        "$55 per month"
       ],
-      "correctAnswer": "Send an official written notice",
-      "explanation": "The manager says they will send a written notice as the first step.",
+      "correctAnswer": "$35 per month",
+      "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-015-q04",
       "audioScriptId": "celpip-listening-015-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What happens if the behaviour continues after two notices?",
+      "prompt": "How many calling minutes does the customer's current plan have?",
       "options": [
-        "The tenant gets a discount",
-        "The neighbour's tenancy could be affected",
-        "Management will call the police",
-        "The tenant must move out"
+        "100 minutes",
+        "150 minutes",
+        "200 minutes",
+        "Unlimited"
       ],
-      "correctAnswer": "The neighbour's tenancy could be affected",
-      "explanation": "The manager says the formal dispute process could affect tenancy.",
+      "correctAnswer": "200 minutes",
+      "explanation": "Support states 'Your current plan has 200 minutes.'",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-015-q05",
       "audioScriptId": "celpip-listening-015-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long will it take to send the first notice?",
+      "prompt": "What data plan does the customer ultimately choose?",
       "options": [
-        "Same day",
-        "One week",
-        "Two business days",
-        "One month"
+        "5 GB plan",
+        "8 GB plan",
+        "10 GB plan",
+        "15 GB plan"
       ],
-      "correctAnswer": "Two business days",
-      "explanation": "The manager says usually within two business days.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "8 GB plan",
+      "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-015-q06",
       "audioScriptId": "celpip-listening-015-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the tenant receive once the notice is sent?",
+      "prompt": "What is the cost of the 8 GB plan?",
       "options": [
-        "A phone call from the manager",
-        "A copy by email",
-        "A signed letter by post",
-        "Nothing — it is confidential"
+        "$45 per month",
+        "$55 per month",
+        "$60 per month",
+        "$65 per month"
       ],
-      "correctAnswer": "A copy by email",
-      "explanation": "The manager says the tenant will receive a copy by email.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "$55 per month",
+      "explanation": "Support states the 8 GB plan is 'at $55 per month.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-015-q07",
       "audioScriptId": "celpip-listening-015-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What should the tenant do if the noise happens tonight?",
+      "prompt": "When does the new plan take effect on the bill?",
       "options": [
-        "Knock on the door again",
-        "Call emergency services",
-        "Call the after-hours line",
-        "Wait until morning"
+        "June 15th",
+        "June 22nd",
+        "July 1st",
+        "July 8th"
       ],
-      "correctAnswer": "Call the after-hours line",
-      "explanation": "The manager advises calling the after-hours line to log a noise complaint.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "July 8th",
+      "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-015-q08",
       "audioScriptId": "celpip-listening-015-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What will the after-hours complaint records be used for?",
+      "prompt": "What calling feature is included in the new plan?",
       "options": [
-        "For media reports",
-        "For evidence if the dispute goes further",
-        "To update the lease agreement",
-        "To arrange a refund"
+        "200 minutes",
+        "300 minutes",
+        "500 minutes",
+        "Unlimited calling"
       ],
-      "correctAnswer": "For evidence if the dispute goes further",
-      "explanation": "The manager says those records will be used if the matter escalates.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Unlimited calling",
+      "explanation": "Support states the 8 GB plan includes 'unlimited calling' along with unlimited texting.",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-015-q09",
       "audioScriptId": "celpip-listening-015-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "Where are they planning to camp?",
+      "prompt": "What is the monthly rent?",
       "options": [
-        "Lakeshore National Park",
-        "Maplewood Campsite",
-        "Birchwood Provincial Park",
-        "Ridgeline Reserve"
+        "$1,000",
+        "$1,100",
+        "$1,200",
+        "$1,300"
       ],
-      "correctAnswer": "Birchwood Provincial Park",
-      "explanation": "Daniel says he booked spots at Birchwood Provincial Park.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "$1,200",
+      "explanation": "Landlord states 'The rent is $1,200 per month.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-015-q10",
       "audioScriptId": "celpip-listening-015-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How far is the campsite from downtown?",
+      "prompt": "What utilities are included?",
       "options": [
-        "Thirty minutes",
-        "One hour",
-        "Ninety minutes",
-        "Three hours"
+        "All utilities",
+        "Water and heating",
+        "Electricity only",
+        "Internet only"
       ],
-      "correctAnswer": "Ninety minutes",
-      "explanation": "Daniel says it is about ninety minutes from downtown.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Water and heating",
+      "explanation": "Landlord explains 'Water and heating are included.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-015-q11",
       "audioScriptId": "celpip-listening-015-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does the Saturday forecast show?",
+      "prompt": "Is parking included in the rent?",
       "options": [
-        "Heavy thunderstorms",
-        "A light shower in the afternoon",
-        "Clear skies all day",
-        "Strong winds at night"
+        "No, extra cost",
+        "Yes, one spot",
+        "Two spots",
+        "Not available"
       ],
-      "correctAnswer": "A light shower in the afternoon",
-      "explanation": "Daniel checked and says it looks like just a light shower in the early afternoon.",
+      "correctAnswer": "Yes, one spot",
+      "explanation": "Landlord confirms 'one dedicated parking spot' is 'included in the rent.'",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-015-q12",
       "audioScriptId": "celpip-listening-015-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "Why does Daniel recommend bringing a camp stove?",
+      "prompt": "When can the renter move in?",
       "options": [
-        "The park has no fire pits",
-        "Fire use is currently restricted",
-        "A stove cooks food faster",
-        "It is cheaper than buying firewood"
+        "June 15",
+        "June 24",
+        "July 1",
+        "July 8"
       ],
-      "correctAnswer": "Fire use is currently restricted",
-      "explanation": "Daniel says there are fire restrictions due to dry conditions.",
+      "correctAnswer": "July 1",
+      "explanation": "Landlord states 'you can move in on July 1st.'",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-015-q13",
       "audioScriptId": "celpip-listening-015-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Daniel suggest for Saturday's meals?",
+      "prompt": "What is the pet deposit for the cat?",
       "options": [
-        "A barbecue dinner",
-        "Eating at a restaurant",
-        "Sandwiches and wraps",
-        "Instant noodles only"
+        "$100",
+        "$125",
+        "$150",
+        "$200"
       ],
-      "correctAnswer": "Sandwiches and wraps",
-      "explanation": "Daniel suggests keeping Saturday simple with sandwiches and wraps.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "$150",
+      "explanation": "Landlord specifies 'a one-time pet deposit of $150.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-015-q14",
       "audioScriptId": "celpip-listening-015-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is responsible for renewing a driver's licence?",
+      "prompt": "What is the time period of the art featured in this exhibition?",
       "options": [
-        "The government automatically renews it",
-        "The driver, even without a notice",
-        "The driver only if they receive a notice",
-        "The driver's insurance company"
+        "1900-1920",
+        "1920-1960",
+        "1960-1980",
+        "1980-2000"
       ],
-      "correctAnswer": "The driver, even without a notice",
-      "explanation": "The speaker says it is the driver's responsibility even without receiving a notice.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "1920-1960",
+      "explanation": "The guide states we're exploring 'paintings and sculptures created by Canadian artists from the 1920s to 1960s.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-015-q15",
       "audioScriptId": "celpip-listening-015-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT mentioned as a renewal method?",
+      "prompt": "In which room are Group of Seven paintings displayed?",
       "options": [
-        "In person",
-        "Online",
-        "By telephone",
-        "By mail"
+        "Room 101",
+        "Room 102",
+        "Room 104",
+        "Room 106"
       ],
-      "correctAnswer": "By telephone",
-      "explanation": "The speaker lists in person, online, and by mail — telephone is not mentioned.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Room 102",
+      "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-015-q16",
       "audioScriptId": "celpip-listening-015-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What document can be used as proof of address?",
+      "prompt": "What region did Emily Carr primarily focus on?",
       "options": [
-        "A passport",
-        "A recent utility bill",
-        "A birth certificate",
-        "A tax return"
+        "Ontario",
+        "Quebec",
+        "British Columbia",
+        "Prairie provinces"
       ],
-      "correctAnswer": "A recent utility bill",
-      "explanation": "The speaker says a recent utility bill or bank statement can serve as proof of address.",
+      "correctAnswer": "British Columbia",
+      "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-015-q17",
       "audioScriptId": "celpip-listening-015-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "When might a vision test be required during an in-person renewal?",
+      "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "For every renewal",
-        "Only for seniors",
-        "If the driver's vision has changed",
-        "If the licence is expired by more than one year"
+        "Cubism",
+        "Automatiste",
+        "Impressionism",
+        "Surrealism"
       ],
-      "correctAnswer": "If the driver's vision has changed",
-      "explanation": "The speaker says a vision test may be required if vision has changed.",
+      "correctAnswer": "Automatiste",
+      "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-015-q18",
       "audioScriptId": "celpip-listening-015-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is needed to verify identity for online renewal?",
+      "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "A passport and utility bill",
-        "A driver's licence number and last four digits of a health card",
-        "A photo and signature",
-        "An email address and phone number"
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Ottawa"
       ],
-      "correctAnswer": "A driver's licence number and last four digits of a health card",
-      "explanation": "The speaker specifies the driver's licence number and last four digits of the health card.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Montreal",
+      "explanation": "The guide identifies them as 'Montreal-based artists.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-015-q19",
       "audioScriptId": "celpip-listening-015-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long does online renewal processing take?",
+      "prompt": "Until what date does this exhibition run?",
       "options": [
-        "Same day",
-        "One business day",
-        "Up to five business days",
-        "Two weeks"
+        "August 31st",
+        "September 15th",
+        "September 30th",
+        "October 15th"
       ],
-      "correctAnswer": "Up to five business days",
-      "explanation": "The speaker says processing takes up to five business days.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "September 30th",
+      "explanation": "The guide states 'This exhibition runs through September 30th.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-015-q20",
       "audioScriptId": "celpip-listening-015-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What change is being announced?",
+      "prompt": "What is the annual value of the agricultural export agreement?",
       "options": [
-        "A new bus route for schools",
-        "Free transit for seniors expanded to all days and hours",
-        "A reduction in transit fares for students",
-        "New light rail construction beginning next month"
+        "250 million dollars",
+        "290 million dollars",
+        "340 million dollars",
+        "380 million dollars"
       ],
-      "correctAnswer": "Free transit for seniors expanded to all days and hours",
-      "explanation": "The report says the free transit programme for seniors will expand to seven days a week.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "340 million dollars",
+      "explanation": "The deal is valued at approximately 340 million dollars annually.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-015-q21",
       "audioScriptId": "celpip-listening-015-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Under the old policy, when was free transit available to seniors?",
+      "prompt": "By what percentage will Japanese importers increase their purchases?",
       "options": [
-        "Weekends only",
-        "Every day from 6 am to 10 pm",
-        "Weekdays between 9 am and 3 pm",
-        "Only on statutory holidays"
+        "15 percent",
+        "20 percent",
+        "25 percent",
+        "30 percent"
       ],
-      "correctAnswer": "Weekdays between 9 am and 3 pm",
-      "explanation": "The report states the previous programme applied weekdays between 9 am and 3 pm.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "25 percent",
+      "explanation": "Importers have committed to increasing purchases by 25 percent over the next five years.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-015-q22",
       "audioScriptId": "celpip-listening-015-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What reason did the transportation director give for the expansion?",
+      "prompt": "How much canola does Manitoba produce annually?",
       "options": [
-        "To reduce road congestion",
-        "To increase city revenue",
-        "Many seniors could not attend evening appointments or weekend activities",
-        "The transit fleet had excess capacity"
+        "5 million tonnes",
+        "7 million tonnes",
+        "8 million tonnes",
+        "10 million tonnes"
       ],
-      "correctAnswer": "Many seniors could not attend evening appointments or weekend activities",
-      "explanation": "The director cited data showing seniors missed appointments due to transit costs.",
+      "correctAnswer": "8 million tonnes",
+      "explanation": "Manitoba produces approximately 8 million tonnes of canola annually.",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-015-q23",
       "audioScriptId": "celpip-listening-015-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will the expanded programme be funded?",
+      "prompt": "How many tonnes of pulse crops are produced?",
       "options": [
-        "Through residential property taxes",
-        "Through a small increase in the commercial property transit levy",
-        "Through federal grants",
-        "Through a fare increase for non-seniors"
+        "2.0 million tonnes",
+        "2.4 million tonnes",
+        "2.8 million tonnes",
+        "3.2 million tonnes"
       ],
-      "correctAnswer": "Through a small increase in the commercial property transit levy",
-      "explanation": "The spokesperson says a small increase in the levy on commercial property owners will fund it.",
+      "correctAnswer": "2.8 million tonnes",
+      "explanation": "Pulse crops account for 2.8 million tonnes of production.",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-015-q24",
       "audioScriptId": "celpip-listening-015-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What did advocacy groups call for in addition to free fares?",
+      "prompt": "How many jobs are expected to be created?",
       "options": [
-        "Newer buses",
-        "Better accessibility at stops and more frequent service",
-        "Lower fares for everyone",
-        "A free monthly transit pass"
+        "200 jobs",
+        "300 jobs",
+        "400 jobs",
+        "500 jobs"
       ],
-      "correctAnswer": "Better accessibility at stops and more frequent service",
-      "explanation": "Advocacy groups called for improved accessibility and more frequent service.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "400 jobs",
+      "explanation": "The deal is expected to create 400 additional jobs in agriculture and food processing.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-015-q25",
       "audioScriptId": "celpip-listening-015-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the main topic of the discussion?",
+      "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "Whether to build new office buildings",
-        "Whether companies should require a full return to in-person work",
-        "How to improve video conferencing technology",
-        "Whether remote work causes productivity loss"
+        "Mentorship works better online",
+        "Newer staff miss out on mentorship opportunities",
+        "Mentorship is not important",
+        "Remote mentorship is equally effective"
       ],
-      "correctAnswer": "Whether companies should require a full return to in-person work",
-      "explanation": "The host introduces the topic as whether companies should require employees to return to the office.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Newer staff miss out on mentorship opportunities",
+      "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-015-q26",
       "audioScriptId": "celpip-listening-015-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Sophie say about spontaneous conversations?",
+      "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "They are inefficient",
-        "They lead to innovations that cannot be replicated on video calls",
-        "They are better online",
-        "They only benefit senior employees"
+        "25 percent",
+        "35 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "They lead to innovations that cannot be replicated on video calls",
-      "explanation": "Sophie says spontaneous conversations lead to innovations you cannot replicate on a video call.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "40 percent",
+      "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-015-q27",
       "audioScriptId": "celpip-listening-015-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "According to Marcus, what do studies consistently show?",
+      "prompt": "What reason does James give for his increased productivity?",
       "options": [
-        "Remote workers are less creative",
-        "In-office workers earn more",
-        "Employees show higher job satisfaction with flexibility",
-        "Remote work increases absenteeism"
+        "Better equipment at home",
+        "Fewer interruptions",
+        "Shorter work hours",
+        "More flexible schedule"
       ],
-      "correctAnswer": "Employees show higher job satisfaction with flexibility",
-      "explanation": "Marcus says studies consistently show higher job satisfaction when employees have flexibility.",
+      "correctAnswer": "Fewer interruptions",
+      "explanation": "James mentions fewer interruptions allow him to focus better on complex projects.",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-015-q28",
       "audioScriptId": "celpip-listening-015-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What concern does Sophie raise about forcing people to work from home?",
+      "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
-        "It increases energy costs",
-        "Some employees lack a good home environment",
-        "It reduces internet bandwidth",
-        "It leads to longer working hours"
+        "Remote work is always better",
+        "Mixed results depending on the team",
+        "Office work is most productive",
+        "Remote work decreases productivity"
       ],
-      "correctAnswer": "Some employees lack a good home environment",
-      "explanation": "Sophie says some employees live in small apartments or have young children, making home work more stressful.",
+      "correctAnswer": "Mixed results depending on the team",
+      "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-015-q29",
       "audioScriptId": "celpip-listening-015-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Marcus suggest companies that prefer in-person work should do?",
+      "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
-        "Reduce salaries for remote workers",
-        "Make the office experience compelling enough that people want to come voluntarily",
-        "Publish productivity data publicly",
-        "Hire only employees who live nearby"
+        "Software developers",
+        "Marketing teams",
+        "Customer service teams",
+        "Finance teams"
       ],
-      "correctAnswer": "Make the office experience compelling enough that people want to come voluntarily",
-      "explanation": "Marcus says companies should make in-person work compelling, not mandatory.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Customer service teams",
+      "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-015-q30",
       "audioScriptId": "celpip-listening-015-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "Which of the following best describes Sophie's view on productivity metrics?",
+      "prompt": "What solution does Tom propose?",
       "options": [
-        "They perfectly capture real performance",
-        "They are the only reliable measure of output",
-        "They can be misleading and miss informal knowledge transfer",
-        "They support the case for remote work"
+        "All employees back in office",
+        "Completely remote for all",
+        "Hybrid approach with flexibility",
+        "No change to current policy"
       ],
-      "correctAnswer": "They can be misleading and miss informal knowledge transfer",
-      "explanation": "Sophie says productivity metrics can be misleading and you miss deep organisational knowledge from casual interactions.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Hybrid approach with flexibility",
+      "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-015-q31",
       "audioScriptId": "celpip-listening-015-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Marcus say companies risk if they mandate a return to office?",
+      "prompt": "According to Sarah, what does collaboration depend on?",
       "options": [
-        "Losing clients",
-        "Being fined by government",
-        "Losing good employees to more flexible competitors",
-        "Reducing profits"
+        "Video call quality",
+        "People being in the same space",
+        "Written communication",
+        "Email efficiency"
       ],
-      "correctAnswer": "Losing good employees to more flexible competitors",
-      "explanation": "Marcus says companies risk losing good people to competitors who offer flexibility.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "People being in the same space",
+      "explanation": "Sarah believes collaboration happens more naturally when people are in the same space.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-015-q32",
       "audioScriptId": "celpip-listening-015-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's conclusion at the end?",
+      "prompt": "How does James stay connected with colleagues remotely?",
       "options": [
-        "Sophie has the better argument",
-        "Marcus has made the strongest case",
-        "The debate is far from settled",
-        "Both sides agree on the main point"
+        "Phone calls only",
+        "Email messages only",
+        "Video calls and shared documents",
+        "Monthly meetings only"
       ],
-      "correctAnswer": "The debate is far from settled",
-      "explanation": "The host says it is clear the debate is far from settled.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Video calls and shared documents",
+      "explanation": "James mentions collaborating through video calls and shared documents.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-015-q33",
       "audioScriptId": "celpip-listening-015-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What common belief does the speaker challenge?",
+      "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "That children are better at maths than adults",
-        "That adults cannot learn a new language as effectively as children",
-        "That language learning requires travel abroad",
-        "That bilingualism causes confusion"
+        "Mental health is covered more than physical",
+        "Physical health is covered more than mental health",
+        "They're equally covered",
+        "Neither is adequately covered"
       ],
-      "correctAnswer": "That adults cannot learn a new language as effectively as children",
-      "explanation": "The speaker says this widespread belief is largely incorrect.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Physical health is covered more than mental health",
+      "explanation": "The speaker states mental health is covered at lower rates than physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-015-q34",
       "audioScriptId": "celpip-listening-015-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What advantage do adults have over children in language learning, according to the speaker?",
+      "prompt": "What example does the speaker use to illustrate the disparity?",
       "options": [
-        "Adults have more free time",
-        "Adults can study deliberately and strategically",
-        "Adults have better pronunciation",
-        "Adults learn grammar faster"
+        "Cancer treatment vs. therapy",
+        "Broken arm coverage vs. limited mental health sessions",
+        "Hospital stays vs. doctor visits",
+        "Prescription drugs vs. counseling"
       ],
-      "correctAnswer": "Adults can study deliberately and strategically",
-      "explanation": "The speaker lists this as a critical advantage of adult learners.",
-      "difficulty": "easy",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Broken arm coverage vs. limited mental health sessions",
+      "explanation": "The speaker uses physical therapy for broken arms compared to limited therapy sessions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-015-q35",
       "audioScriptId": "celpip-listening-015-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How long can a motivated adult reach conversational fluency, according to the passage?",
+      "prompt": "What is the annual economic cost of mental health issues in Canada?",
       "options": [
-        "Three to five years",
-        "Six to eight months",
-        "Twelve to eighteen months",
-        "Two to three years"
+        "25 billion dollars",
+        "38 billion dollars",
+        "51 billion dollars",
+        "67 billion dollars"
       ],
-      "correctAnswer": "Twelve to eighteen months",
-      "explanation": "The speaker says adults with good study habits can reach conversational fluency in twelve to eighteen months.",
+      "correctAnswer": "51 billion dollars",
+      "explanation": "Mental health issues cost 51 billion dollars annually in Canada.",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-015-q36",
       "audioScriptId": "celpip-listening-015-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health benefit is associated with bilingualism?",
+      "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Lower blood pressure",
-        "Reduced risk of heart disease",
-        "Delayed onset of dementia by four to five years",
-        "Improved physical coordination"
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations",
+        "Medication costs",
+        "Administrative expenses"
       ],
-      "correctAnswer": "Delayed onset of dementia by four to five years",
-      "explanation": "The speaker cites studies showing bilingual adults show delayed onset of dementia by four to five years on average.",
+      "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
+      "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
       "difficulty": "medium",
-      "topic": "applying for government benefits"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-015-q37",
       "audioScriptId": "celpip-listening-015-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What cognitive skills does managing two languages improve?",
+      "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "Long-term memory and spatial reasoning",
-        "Attention, task-switching, and creativity",
-        "Mathematical problem-solving",
-        "Reading speed and recall"
+        "It's cheaper than physical health",
+        "Early treatment has positive ROI",
+        "It reduces insurance profits",
+        "It's cost-neutral"
       ],
-      "correctAnswer": "Attention, task-switching, and creativity",
-      "explanation": "The speaker says managing two language systems improves attention, task-switching, and creativity.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Early treatment has positive ROI",
+      "explanation": "The speaker argues mental health coverage has a positive return on investment.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-015-q38",
       "audioScriptId": "celpip-listening-015-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall conclusion?",
+      "prompt": "What does the speaker advocate companies implement?",
       "options": [
-        "Adults should not bother learning new languages",
-        "Language learning is too difficult for most adults",
-        "Language learning is one of the most valuable investments an adult can make",
-        "Children should be taught two languages from birth"
+        "Lower coverage for mental health",
+        "Mandatory parity in coverage",
+        "Removal of all limits",
+        "Voluntary coverage only"
       ],
-      "correctAnswer": "Language learning is one of the most valuable investments an adult can make",
-      "explanation": "The speaker states directly that language learning is one of the most valuable adult investments.",
-      "difficulty": "hard",
-      "topic": "applying for government benefits"
+      "correctAnswer": "Mandatory parity in coverage",
+      "explanation": "The speaker advocates for mandatory parity—equal coverage for mental and physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     }
   ]
 }

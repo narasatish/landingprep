@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 59",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 59",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-059-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Road safety for new Canadians",
-      "script": "A driver training instructor explains road safety rules specific to new Canadian drivers, including winter driving techniques, the rules for interacting with cyclists and pedestrians, and how to handle black ice.",
+      "title": "Medical Appointment Rescheduling",
+      "text": "Patient: Hello, I need to reschedule my appointment with Dr. Singh. Receptionist: Of course. Can I have your patient ID? Patient: It's P-9847. My appointment is next Tuesday at 2 PM, but I have a conflict. Receptionist: Let me pull that up. Yes, I see the appointment for June 10th at 2 PM. What days and times work better for you? Patient: Ideally, early morning, like 8 or 9 AM. I work afternoons. Receptionist: Let me check the doctor's schedule. Dr. Singh has an opening on Friday, June 13th at 8:30 AM. Would that suit you? Patient: Yes, that works perfectly. Receptionist: Great. I'm canceling the Tuesday 2 PM slot and booking you for Friday, June 13th at 8:30 AM. Your appointment is for a regular checkup, is that correct? Patient: Yes, and also to discuss my recent blood work results. Receptionist: Perfect. I'll add a note that you want to review the blood work. You'll need to arrive ten minutes early to fill out any updated forms. Patient: Will Dr. Singh have my test results by then? Receptionist: Yes, they'll definitely be in her file. The lab sent them in yesterday. Is there anything else? Patient: No, that's everything. Thank you.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-059-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about sports facility booking procedures",
-      "script": "This news is about sports facility booking procedures. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Library Book Recommendation",
+      "text": "Emma: Have you read that mystery novel everyone's been talking about? Liam: Which one? There are so many right now. Emma: The one about the detective in Montreal. It won the Governor General's Award last year. Liam: Oh, you mean 'The Silent Case'? I haven't read it yet, but I've heard great reviews. Emma: You have to read it. I just finished it yesterday, and I couldn't put it down. Liam: Is it that good? Emma: Honestly, it's one of the best books I've read in years. The plot twists were crazy. Liam: Where did you get it? Emma: The library. I put a hold on it three months ago because everyone wanted to read it. Liam: Three months? That's a long wait. Emma: It was worth it though. If you want, I can put in a request for you. Liam: Really? That would be great. Emma: Sure. You should get it in maybe four to six weeks. Liam: Thanks. I'll add it to my reading list.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-059-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about sports facility booking procedures",
-      "script": "This discussion is about sports facility booking procedures. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "Workplace Safety Training: Fire Procedures",
+      "text": "Good morning. This is your mandatory workplace fire safety training. Please listen carefully. In case of fire alarm, first, stay calm. Second, evacuate using the nearest exit. Do not use elevators under any circumstances. Stairs are located at both ends of each hallway. Third, move to the designated assembly point in the parking lot north of the building. Check in with your team leader. Fourth, do not re-enter the building until an authorized person announces it's safe. Fire drills occur quarterly on the first Friday of March, June, September, and December at 2 PM. During drills, the process is identical to a real emergency. Everyone must participate. If you cannot evacuate due to disability, proceed to a designated refuge area and use the emergency call button. These refuge areas are marked on building maps. Fire extinguishers are located every twenty-five meters along hallways and near kitchen areas. Only trained staff should operate extinguishers. If you're not trained, alert a supervisor. Report any fire hazards such as blocked exits or damaged equipment to maintenance immediately. Violations of fire safety procedures may result in disciplinary action. Contact Safety Services with any questions.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-059-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about sports facility booking procedures",
-      "script": "This announcement is about sports facility booking procedures. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "Winnipeg Public Transit Modernization",
+      "text": "Winnipeg is modernizing its public transit system with a 450 million dollar investment over the next decade. The city has approved plans to purchase 300 new electric buses to replace aging diesel vehicles. The transition will eliminate approximately 8,500 tonnes of annual carbon emissions from the transportation sector. Current ridership stands at 89 million trips annually, and the city expects this to grow by 20 percent once new services launch. Construction of a new rapid transit corridor connecting downtown to the airport is set to begin next year. This corridor will reduce travel time from downtown to the airport from 45 minutes to just 22 minutes. The project includes the construction of 12 new transit stations along the corridor. Free transit passes will be offered to seniors and students to encourage ridership. Overall, the modernization is expected to create 1,100 permanent jobs in operations and maintenance. Winnipeg Transit has committed to achieving net-zero emissions by 2040.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-059-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about sports facility booking procedures",
-      "script": "This office is about sports facility booking procedures. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Small Business Loan Program Discussion",
+      "text": "Bank Manager Chris: Our small business loan program has been quite successful this year. We've approved 285 loans totaling 42 million dollars to local entrepreneurs. However, we've noticed our default rate is slightly higher than industry average at about 4.2 percent. We're considering tightening our lending criteria to reduce risk.\n\nEconomic Development Officer Lisa: I would caution against tightening the criteria too much, Chris. These small loans are crucial for community development and job creation. Yes, a few borrowers struggle, but 95 percent of our loans are performing well. If we make the qualification requirements too strict, we'll only serve well-established businesses with existing collateral. That defeats the purpose of supporting new entrepreneurs who are taking real risks.\n\nBusiness Owner Marcus: I completely agree with Lisa. When I started my restaurant five years ago, traditional banks wouldn't touch me because I didn't have significant assets or a ten-year track record. Your bank took a chance on me, and now my business employs 12 people. If your criteria were stricter, I wouldn't be here. I think what you should focus on is better support systems after lending, like mentorship programs and financial coaching.\n\nBank Manager Chris: Marcus, your success story is exactly what we want to see. But we do have a fiduciary responsibility to our depositors. Maybe Marcus is right—perhaps the answer isn't stricter lending, but better support after approval. We could partner with business development organizations to provide mentoring and financial management training.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-059-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about sports facility booking procedures",
-      "script": "This lecture is about sports facility booking procedures. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Algorithmic Bias in Hiring Systems",
+      "text": "Algorithmic bias in hiring is a serious problem that companies are using as a shortcut without taking responsibility for the consequences. Many organizations now use AI systems to screen resumes, assess candidate fit, and predict job performance. These systems seem objective—they're just mathematics, right? Wrong. These algorithms are trained on historical data, which includes decades of human bias. If women were historically excluded from leadership positions, the algorithm learns that pattern and replicates it. If certain demographics were underrepresented in technical roles, the algorithm reinforces that exclusion. Studies have documented this repeatedly. Amazon famously scrapped their hiring algorithm when they discovered it was discriminating against women. Google's recruiting algorithm showed bias against applicants from historically black colleges. These weren't intentional—that's precisely the problem. The systems' creators didn't set out to discriminate; they just trusted that math was unbiased, when in reality, data is never neutral. My argument is this: companies should not deploy algorithmic hiring systems without rigorous bias testing and external auditing. If you use an algorithm to screen candidates, you're making a business decision, and you're responsible for its outcomes. You can't hide behind the algorithm or claim you didn't know it was biased. Moreover, algorithms eliminate human judgment, nuance, and chance. They can't capture potential, resilience, or growth. Some of the most successful employees wouldn't have passed an algorithm. We need a return to more human-centered hiring while using algorithms cautiously and with oversight.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-059-q01",
+      "audioScriptId": "celpip-listening-059-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-059-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "What is the patient's ID?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "P-8479",
+        "P-9847",
+        "P-9748",
+        "P-8794"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "road safety for new Canadians"
+      "correctAnswer": "P-9847",
+      "explanation": "Patient provides their ID as 'P-9847.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-059-q02",
+      "audioScriptId": "celpip-listening-059-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-059-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "What was the original appointment date and time?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "Tuesday at 1 PM",
+        "Tuesday at 2 PM",
+        "Wednesday at 2 PM",
+        "Thursday at 2 PM"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "road safety for new Canadians"
+      "correctAnswer": "Tuesday at 2 PM",
+      "explanation": "Patient mentions the appointment is 'next Tuesday at 2 PM' and receptionist confirms 'June 10th at 2 PM.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-059-q03",
+      "audioScriptId": "celpip-listening-059-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-059-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "When does the patient prefer to schedule appointments?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "Late afternoon",
+        "Evening",
+        "Early morning, 8 or 9 AM",
+        "Midday"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "road safety for new Canadians"
+      "correctAnswer": "Early morning, 8 or 9 AM",
+      "explanation": "Patient states 'Ideally, early morning, like 8 or 9 AM. I work afternoons.'",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-059-q04",
+      "audioScriptId": "celpip-listening-059-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-059-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "What is the new appointment date and time?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "Friday, June 6th at 8:30 AM",
+        "Friday, June 12th at 8:30 AM",
+        "Friday, June 13th at 8:30 AM",
+        "Friday, June 20th at 8:30 AM"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "Friday, June 13th at 8:30 AM",
+      "explanation": "Receptionist books the new appointment for 'Friday, June 13th at 8:30 AM.'",
       "difficulty": "medium",
-      "topic": "road safety for new Canadians"
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-059-q05",
+      "audioScriptId": "celpip-listening-059-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-059-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "What should the patient do to prepare for the appointment?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "Fast for 12 hours",
+        "Bring insurance documents only",
+        "Arrive ten minutes early to fill out updated forms",
+        "Call to confirm the day before"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "Arrive ten minutes early to fill out updated forms",
+      "explanation": "Receptionist states 'You'll need to arrive ten minutes early to fill out any updated forms.'",
       "difficulty": "medium",
-      "topic": "road safety for new Canadians"
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-059-q06",
+      "audioScriptId": "celpip-listening-059-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-059-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "When were the patient's blood work results sent to the clinic?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "This morning",
+        "Yesterday",
+        "Last week",
+        "This afternoon"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "Yesterday",
+      "explanation": "Receptionist confirms 'The lab sent them in yesterday.'",
       "difficulty": "medium",
-      "topic": "road safety for new Canadians"
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-059-q07",
+      "audioScriptId": "celpip-listening-059-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-059-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "What reasons does the patient have for the appointment?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "Blood work results only",
+        "Regular checkup only",
+        "Regular checkup and to discuss recent blood work results",
+        "Prescription refill"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "road safety for new Canadians"
+      "correctAnswer": "Regular checkup and to discuss recent blood work results",
+      "explanation": "Patient states 'also to discuss my recent blood work results' and receptionist confirms it's a regular checkup.",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-059-q08",
+      "audioScriptId": "celpip-listening-059-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-059-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "Who is the patient's doctor?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "Dr. Kumar",
+        "Dr. Singh",
+        "Dr. Patel",
+        "Dr. Sharma"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "road safety for new Canadians"
+      "correctAnswer": "Dr. Singh",
+      "explanation": "Patient mentions wanting to reschedule with 'Dr. Singh' throughout the conversation.",
+      "difficulty": "medium",
+      "topic": "doctor booking"
     },
     {
       "id": "celpip-listening-059-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-059-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-059-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "What is the title of the book being discussed?",
+      "options": [
+        "The Hidden Case",
+        "The Silent Detective",
+        "The Silent Case",
+        "The Missing Detective"
+      ],
+      "correctAnswer": "The Silent Case",
+      "explanation": "Liam identifies the book as 'The Silent Case.'",
       "difficulty": "medium",
-      "topic": "road safety for new Canadians"
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-059-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-059-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-059-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "Where is the detective in the novel?",
+      "options": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Calgary"
+      ],
+      "correctAnswer": "Montreal",
+      "explanation": "Emma describes it as 'the mystery novel' about 'the detective in Montreal.'",
       "difficulty": "medium",
-      "topic": "road safety for new Canadians"
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-059-q11",
+      "audioScriptId": "celpip-listening-059-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-059-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "What award did the book win?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "The Giller Prize",
+        "The Governor General's Award",
+        "The Scotiabank Prize",
+        "The Atwood Prize"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "The Governor General's Award",
+      "explanation": "Emma states it 'won the Governor General's Award last year.'",
+      "difficulty": "medium",
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-059-q12",
+      "audioScriptId": "celpip-listening-059-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-059-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "How long did Emma wait for the book from the library?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "One month",
+        "Two months",
+        "Three months",
+        "Six months"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Three months",
+      "explanation": "Emma states 'I put a hold on it three months ago.'",
+      "difficulty": "medium",
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-059-q13",
+      "audioScriptId": "celpip-listening-059-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-059-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "How long will Liam have to wait for the book?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "Two to three weeks",
+        "Three to four weeks",
+        "Four to six weeks",
+        "Eight to ten weeks"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Four to six weeks",
+      "explanation": "Emma estimates 'You should get it in maybe four to six weeks.'",
+      "difficulty": "medium",
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-059-q14",
+      "audioScriptId": "celpip-listening-059-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-059-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "What should NOT be used during evacuation?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "Stairs",
+        "Emergency exits",
+        "Elevators",
+        "Hallways"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Elevators",
+      "explanation": "The training explicitly states 'Do not use elevators under any circumstances.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-059-q15",
+      "audioScriptId": "celpip-listening-059-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-059-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "Where is the designated assembly point?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "The main lobby",
+        "The parking lot north of the building",
+        "The south entrance",
+        "The rooftop"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "The parking lot north of the building",
+      "explanation": "The guide specifies 'the designated assembly point in the parking lot north of the building.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-059-q16",
+      "audioScriptId": "celpip-listening-059-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-059-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "How often are fire drills conducted?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "Monthly",
+        "Bi-monthly",
+        "Quarterly",
+        "Annually"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Quarterly",
+      "explanation": "The training states 'Fire drills occur quarterly on the first Friday of March, June, September, and December.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-059-q17",
+      "audioScriptId": "celpip-listening-059-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-059-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "At what time are fire drills held?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "10 AM",
+        "1 PM",
+        "2 PM",
+        "3 PM"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "2 PM",
+      "explanation": "The guide specifies drills are 'at 2 PM.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-059-q18",
+      "audioScriptId": "celpip-listening-059-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-059-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "How frequently are fire extinguishers located along hallways?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "Every 10 meters",
+        "Every 15 meters",
+        "Every 25 meters",
+        "Every 50 meters"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Every 25 meters",
+      "explanation": "The training states 'Fire extinguishers are located every twenty-five meters along hallways.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-059-q19",
+      "audioScriptId": "celpip-listening-059-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-059-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "What should employees do if they find a blocked exit?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "Move it themselves",
+        "Ignore it",
+        "Report it to maintenance immediately",
+        "Wait for management"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Report it to maintenance immediately",
+      "explanation": "The guide instructs to 'Report any fire hazards such as blocked exits or damaged equipment to maintenance immediately.'",
+      "difficulty": "medium",
+      "topic": "safety briefing"
     },
     {
       "id": "celpip-listening-059-q20",
+      "audioScriptId": "celpip-listening-059-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-059-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "What is the total investment in transit modernization?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "350 million dollars",
+        "400 million dollars",
+        "450 million dollars",
+        "500 million dollars"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "450 million dollars",
+      "explanation": "The city has approved a 450 million dollar investment.",
+      "difficulty": "medium",
+      "topic": "Transportation"
     },
     {
       "id": "celpip-listening-059-q21",
+      "audioScriptId": "celpip-listening-059-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-059-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "How many new electric buses will be purchased?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "200 buses",
+        "250 buses",
+        "300 buses",
+        "350 buses"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "300 buses",
+      "explanation": "The city plans to purchase 300 new electric buses.",
+      "difficulty": "medium",
+      "topic": "Transportation"
     },
     {
       "id": "celpip-listening-059-q22",
+      "audioScriptId": "celpip-listening-059-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-059-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "How many tonnes of carbon emissions will be eliminated annually?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "6,500 tonnes",
+        "7,500 tonnes",
+        "8,500 tonnes",
+        "9,500 tonnes"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "8,500 tonnes",
+      "explanation": "The transition will eliminate approximately 8,500 tonnes of annual carbon emissions.",
+      "difficulty": "medium",
+      "topic": "Transportation"
     },
     {
       "id": "celpip-listening-059-q23",
+      "audioScriptId": "celpip-listening-059-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-059-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "What will the new travel time be to the airport?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "15 minutes",
+        "18 minutes",
+        "22 minutes",
+        "28 minutes"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "22 minutes",
+      "explanation": "Travel time will be reduced to just 22 minutes.",
+      "difficulty": "medium",
+      "topic": "Transportation"
     },
     {
       "id": "celpip-listening-059-q24",
+      "audioScriptId": "celpip-listening-059-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-059-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "How many new transit stations will be built?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "8 stations",
+        "10 stations",
+        "12 stations",
+        "15 stations"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "12 stations",
+      "explanation": "The project includes construction of 12 new transit stations.",
+      "difficulty": "medium",
+      "topic": "Transportation"
     },
     {
       "id": "celpip-listening-059-q25",
+      "audioScriptId": "celpip-listening-059-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-059-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "How many small business loans has the bank approved this year?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "250 loans",
+        "270 loans",
+        "285 loans",
+        "300 loans"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "285 loans",
+      "explanation": "The bank has approved 285 loans this year.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-059-q26",
+      "audioScriptId": "celpip-listening-059-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-059-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "What is the total amount of loans approved?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "35 million dollars",
+        "39 million dollars",
+        "42 million dollars",
+        "48 million dollars"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "42 million dollars",
+      "explanation": "The loans approved total 42 million dollars.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-059-q27",
+      "audioScriptId": "celpip-listening-059-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-059-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What is the bank's current loan default rate?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "2.5 percent",
+        "3.2 percent",
+        "4.2 percent",
+        "5.5 percent"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "4.2 percent",
+      "explanation": "The default rate is approximately 4.2 percent.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-059-q28",
+      "audioScriptId": "celpip-listening-059-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-059-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "Why does Lisa oppose tightening lending criteria?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "It's too expensive",
+        "It would exclude new entrepreneurs",
+        "It would reduce profitability",
+        "It would increase default rates"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "It would exclude new entrepreneurs",
+      "explanation": "Lisa warns that stricter criteria would only serve well-established businesses, defeating the purpose.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-059-q29",
+      "audioScriptId": "celpip-listening-059-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-059-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "What challenge did Marcus face when starting his business?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "Lack of experience",
+        "No customers",
+        "Banks wouldn't lend to him",
+        "High interest rates"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Banks wouldn't lend to him",
+      "explanation": "Marcus says traditional banks wouldn't lend because he lacked assets and track record.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-059-q30",
+      "audioScriptId": "celpip-listening-059-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-059-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "How many people does Marcus's restaurant currently employ?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "8 people",
+        "10 people",
+        "12 people",
+        "15 people"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "12 people",
+      "explanation": "Marcus's restaurant now employs 12 people.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-059-q31",
+      "audioScriptId": "celpip-listening-059-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-059-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "What alternative solution does Marcus propose?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "Lower interest rates",
+        "Mentorship and financial coaching programs",
+        "Shorter loan terms",
+        "No collateral requirements"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Mentorship and financial coaching programs",
+      "explanation": "Marcus suggests focus on better support systems like mentorship and financial coaching after lending.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-059-q32",
+      "audioScriptId": "celpip-listening-059-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-059-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "Who does Chris propose to partner with for business support?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "Universities",
+        "Government agencies",
+        "Business development organizations",
+        "Large corporations"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Business development organizations",
+      "explanation": "Chris proposes partnering with business development organizations for mentoring and training.",
+      "difficulty": "medium",
+      "topic": "Business"
     },
     {
       "id": "celpip-listening-059-q33",
+      "audioScriptId": "celpip-listening-059-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-059-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "They're not programmed correctly",
+        "They're trained on historical data that includes human bias",
+        "They lack computing power",
+        "They're intentionally designed to discriminate"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "They're trained on historical data that includes human bias",
+      "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-059-q34",
+      "audioScriptId": "celpip-listening-059-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-059-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "What did Amazon discover about their hiring algorithm?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "It was too slow",
+        "It was discriminating against women",
+        "It was too expensive",
+        "It wasn't identifying qualified candidates"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "It was discriminating against women",
+      "explanation": "Amazon discovered their algorithm was discriminating against women and scrapped it.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-059-q35",
+      "audioScriptId": "celpip-listening-059-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-059-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "It was too strict",
+        "It showed bias against applicants from historically black colleges",
+        "It wasn't identifying talent",
+        "It was too expensive"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "It showed bias against applicants from historically black colleges",
+      "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-059-q36",
+      "audioScriptId": "celpip-listening-059-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-059-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "Data is always objective",
+        "Data is never neutral and includes bias",
+        "Data should never be used in hiring",
+        "Data is a recent invention"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Data is never neutral and includes bias",
+      "explanation": "The speaker argues data is never neutral and carries historical bias.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-059-q37",
+      "audioScriptId": "celpip-listening-059-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-059-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "Use them immediately",
+        "Train employees on algorithms",
+        "Conduct rigorous bias testing and external auditing",
+        "Ignore algorithm concerns"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about sports facility booking procedures.",
-      "difficulty": "medium"
+      "correctAnswer": "Conduct rigorous bias testing and external auditing",
+      "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-059-q38",
+      "audioScriptId": "celpip-listening-059-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-059-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What human qualities does the speaker claim algorithms can't capture?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "Education level",
+        "Potential, resilience, and growth",
+        "Work experience",
+        "Technical skills"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about sports facility booking procedures.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "Potential, resilience, and growth",
+      "explanation": "Algorithms can't capture potential, resilience, or the capacity for growth.",
+      "difficulty": "medium",
+      "topic": "Technology"
     }
   ]
 }

@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 44",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 44",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-044-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Finding employment services",
-      "script": "An employment services counsellor explains the services available at the employment centre, including resume help, interview preparation, job search workshops, and connections to employers.",
+      "title": "Car Rental Damage Dispute",
+      "text": "Customer: I'm returning my rental car, and I want to dispute a damage claim you're making. Rental Agent: Okay, let me look into that. What's your rental agreement number? Customer: It's CR-892447. I rented the blue Hyundai Elantra, and there was already a dent on the back bumper when I picked it up. Agent: Let me check the pickup photos. What time did you pick up the vehicle? Customer: 10 AM on Tuesday, June 3rd. Agent: I found those photos. You're right, there is a dent visible in the corner of the back bumper. The damage report lists a scratch on the driver's door, which I don't see in our pickup images. Can you tell me what happened? Customer: I definitely didn't cause that scratch. I was careful the whole time I had it. Agent: When did you return the vehicle? Customer: Just now, at 4 PM today. Agent: And you purchased the damage waiver insurance at rental? Customer: Yes, I paid the extra $18 per day for that. Agent: Great. Since you purchased the damage waiver, any damage during your rental period, except for gross negligence, is covered. This scratch appears to be new damage, but with your waiver, you're not responsible. Customer: So I don't have to pay anything? Agent: Correct. Your coverage applies. The previous dent was there before you rented it, and this new scratch is covered under your damage waiver. You're all set.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-044-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about language learning support services",
-      "script": "This news is about language learning support services. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Neighbourhood Park Chat",
+      "text": "David: Hey, nice day, isn't it? Rebecca: Beautiful. Perfect weather for being outside. David: Have you lived in this neighbourhood long? Rebecca: About five years now. And you? David: Just moved here last month. Rebecca: Oh nice. You picked a good time to arrive. The summer's the best season here. David: So I'm hearing. Any recommendations for places to go? Rebecca: There's a great farmer's market on Saturday mornings at the corner of Main and Oak. The coffee shop near there is amazing too. David: Sounds good. I'll have to check it out. Rebecca: You definitely should. They have the best pastries. Oh, and the park just got new playground equipment if you have kids. David: No kids yet, but that's nice to know. Do many families live here? Rebecca: Lots of young families. It's a very friendly community. David: That's what I was hoping for. I'm looking forward to exploring more.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-044-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about language learning support services",
-      "script": "This discussion is about language learning support services. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "University Orientation: First Week Checklist",
+      "text": "Hello, welcome to orientation week. I'm here to walk you through essential tasks for your first week. First, attend your faculty's orientation meeting on Monday at ten AM in the Student Centre. Bring your student ID. Second, register for your courses online by Wednesday, August 28th. Early registration means better class times. Third, purchase your textbooks from the university bookstore before classes start. Fourth, get your student photo ID taken at the Services Office between 9 and 4 on any day this week. The photo ID is required for library access and residence entry. Fifth, activate your email account at the IT support desk. Your email is your primary communication channel for all university announcements. Sixth, find your classes on a campus map. Most buildings are located around the central quad. Seventh, attend the Welcome Social on Friday evening in the gymnasium. It's a great way to meet other students and faculty. Eighth, complete your health and immunization form at Student Health Services. This is mandatory before attending classes. Finally, budget about three hundred dollars for books and materials. Questions? Visit the information desk in the main foyer.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-044-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about language learning support services",
-      "script": "This announcement is about language learning support services. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "Quebec Education Reform Approved",
+      "text": "The Quebec National Assembly has approved a major education reform bill with broad cross-party support. The legislation, Bill 247, focuses on modernizing curriculum standards and addressing teacher shortages. Under the new framework, high schools will introduce mandatory digital literacy courses starting next September. The reform also increases teacher salaries by 8 percent over four years to attract and retain educators. Currently, Quebec faces a shortage of approximately 3,500 teachers, particularly in mathematics, sciences, and French language instruction. The bill allocates 2.1 billion dollars for infrastructure improvements to school facilities. Education Minister Jean-François Roberge noted that 87 percent of school boards support the reforms. Parents will have increased choice in selecting specialized program options for their children. Pilot projects will begin in 15 schools across the province to test innovative teaching methods before full implementation in 2027.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-044-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about language learning support services",
-      "script": "This office is about language learning support services. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "University Program Expansion Planning",
+      "text": "Dean Robert: We've been asked to consider expanding our engineering program, particularly in renewable energy studies. The faculty has requested three additional full-time instructors and funding for new laboratory equipment. The cost would be approximately 2.4 million dollars over two years. Given our current budget constraints, I'm hesitant to commit to this expansion.\n\nProfessor Elena: I understand the budget concerns, Dean, but we're actually losing enrollment to competing universities who offer these programs. Last year, we lost 150 potential engineering students to schools with stronger renewable energy options. If we don't expand now, we'll fall behind. Plus, there's significant industry demand for graduates with renewable energy expertise. Companies are specifically recruiting from universities with these specialized programs.\n\nStudent Representative Malik: From a student perspective, I absolutely support this expansion. Many of my classmates are interested in sustainability and green technology, but we don't have the courses or facilities to support that focus. I think this investment would make our university much more attractive to prospective students, which would actually increase our overall enrollment and revenue.\n\nBudget Committee Member Diana: Malik makes a good point about revenue. If this program attracts even 200 additional students, the tuition revenue would exceed the expansion costs within three years. And we could explore partnerships with industry for funding. I've been in conversations with several renewable energy companies that might contribute equipment or funding in exchange for access to our graduates for recruitment.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-044-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about language learning support services",
-      "script": "This lecture is about language learning support services. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Algorithmic Bias in Hiring Systems",
+      "text": "Algorithmic bias in hiring is a serious problem that companies are using as a shortcut without taking responsibility for the consequences. Many organizations now use AI systems to screen resumes, assess candidate fit, and predict job performance. These systems seem objective—they're just mathematics, right? Wrong. These algorithms are trained on historical data, which includes decades of human bias. If women were historically excluded from leadership positions, the algorithm learns that pattern and replicates it. If certain demographics were underrepresented in technical roles, the algorithm reinforces that exclusion. Studies have documented this repeatedly. Amazon famously scrapped their hiring algorithm when they discovered it was discriminating against women. Google's recruiting algorithm showed bias against applicants from historically black colleges. These weren't intentional—that's precisely the problem. The systems' creators didn't set out to discriminate; they just trusted that math was unbiased, when in reality, data is never neutral. My argument is this: companies should not deploy algorithmic hiring systems without rigorous bias testing and external auditing. If you use an algorithm to screen candidates, you're making a business decision, and you're responsible for its outcomes. You can't hide behind the algorithm or claim you didn't know it was biased. Moreover, algorithms eliminate human judgment, nuance, and chance. They can't capture potential, resilience, or growth. Some of the most successful employees wouldn't have passed an algorithm. We need a return to more human-centered hiring while using algorithms cautiously and with oversight.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-044-q01",
+      "audioScriptId": "celpip-listening-044-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-044-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "What is the rental agreement number?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "CR-824447",
+        "CR-892447",
+        "CR-894247",
+        "CR-824294"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "finding employment services"
+      "correctAnswer": "CR-892447",
+      "explanation": "Customer provides the rental agreement number as 'CR-892447.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-044-q02",
+      "audioScriptId": "celpip-listening-044-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-044-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "What vehicle was rented?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "Blue Honda Civic",
+        "Blue Hyundai Elantra",
+        "Silver Toyota Corolla",
+        "Black Hyundai Elantra"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "finding employment services"
+      "correctAnswer": "Blue Hyundai Elantra",
+      "explanation": "Customer mentions 'I rented the blue Hyundai Elantra.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-044-q03",
+      "audioScriptId": "celpip-listening-044-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-044-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "What was the pickup time?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "8 AM",
+        "9 AM",
+        "10 AM",
+        "11 AM"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "finding employment services"
+      "correctAnswer": "10 AM",
+      "explanation": "Customer states they picked up the vehicle 'at 10 AM on Tuesday, June 3rd.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-044-q04",
+      "audioScriptId": "celpip-listening-044-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-044-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "What damage was visible in the pickup photos?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "A scratch on the driver's door",
+        "A dent on the back bumper",
+        "A broken side mirror",
+        "No damage"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "A dent on the back bumper",
+      "explanation": "Agent confirms 'there is a dent visible in the corner of the back bumper' in the pickup photos.",
       "difficulty": "medium",
-      "topic": "finding employment services"
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-044-q05",
+      "audioScriptId": "celpip-listening-044-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-044-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "When was the vehicle returned?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "1 PM today",
+        "2 PM today",
+        "3 PM today",
+        "4 PM today"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "4 PM today",
+      "explanation": "Customer states 'I returned the vehicle just now, at 4 PM today.'",
       "difficulty": "medium",
-      "topic": "finding employment services"
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-044-q06",
+      "audioScriptId": "celpip-listening-044-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-044-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "What was the daily cost of the damage waiver insurance?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "$12 per day",
+        "$15 per day",
+        "$18 per day",
+        "$20 per day"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "$18 per day",
+      "explanation": "Customer mentions purchasing damage waiver for 'the extra $18 per day.'",
       "difficulty": "medium",
-      "topic": "finding employment services"
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-044-q07",
+      "audioScriptId": "celpip-listening-044-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-044-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "What new damage was found on the vehicle?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "A dent on the front bumper",
+        "A scratch on the driver's door",
+        "A broken window",
+        "A damaged side mirror"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "finding employment services"
+      "correctAnswer": "A scratch on the driver's door",
+      "explanation": "Agent mentions 'The damage report lists a scratch on the driver's door.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-044-q08",
+      "audioScriptId": "celpip-listening-044-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-044-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "Is the customer responsible for paying for the new damage?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "Yes, full amount",
+        "Yes, 50% of the cost",
+        "No, it's covered by the damage waiver",
+        "Not clear from the conversation"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "finding employment services"
+      "correctAnswer": "No, it's covered by the damage waiver",
+      "explanation": "Agent confirms the damage waiver covers the new scratch and customer is not responsible.",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-044-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-044-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-044-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "How long has Rebecca lived in the neighbourhood?",
+      "options": [
+        "Two years",
+        "Three years",
+        "Four years",
+        "Five years"
+      ],
+      "correctAnswer": "Five years",
+      "explanation": "Rebecca states 'About five years now.'",
       "difficulty": "medium",
-      "topic": "finding employment services"
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-044-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-044-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-044-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "When did David move to the neighbourhood?",
+      "options": [
+        "One week ago",
+        "Two weeks ago",
+        "Last month",
+        "Two months ago"
+      ],
+      "correctAnswer": "Last month",
+      "explanation": "David says 'Just moved here last month.'",
       "difficulty": "medium",
-      "topic": "finding employment services"
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-044-q11",
+      "audioScriptId": "celpip-listening-044-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-044-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "What is the best season in this neighbourhood?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "Spring",
+        "Summer",
+        "Fall",
+        "Winter"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Summer",
+      "explanation": "Rebecca states 'The summer's the best season here.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-044-q12",
+      "audioScriptId": "celpip-listening-044-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-044-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "Where is the farmer's market held?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "Main and Queen",
+        "Main and King",
+        "Main and Oak",
+        "Oak and Queen"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Main and Oak",
+      "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-044-q13",
+      "audioScriptId": "celpip-listening-044-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-044-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "Business-focused",
+        "Very friendly",
+        "Quiet and isolated",
+        "Fast-paced"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Very friendly",
+      "explanation": "Rebecca says 'It's a very friendly community.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-044-q14",
+      "audioScriptId": "celpip-listening-044-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-044-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "When is the faculty orientation meeting?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "Monday at 8 AM",
+        "Monday at 10 AM",
+        "Tuesday at 10 AM",
+        "Wednesday at 10 AM"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Monday at 10 AM",
+      "explanation": "The guide states 'attend your faculty's orientation meeting on Monday at ten AM.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-044-q15",
+      "audioScriptId": "celpip-listening-044-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-044-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "What is the deadline for course registration?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "Tuesday",
+        "Wednesday, August 27th",
+        "Wednesday, August 28th",
+        "Friday"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Wednesday, August 28th",
+      "explanation": "The guide specifies 'register for your courses online by Wednesday, August 28th.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-044-q16",
+      "audioScriptId": "celpip-listening-044-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-044-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "Where should you get your student photo ID?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "The Student Centre",
+        "The Services Office",
+        "The IT support desk",
+        "Student Health Services"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "The Services Office",
+      "explanation": "The guide states 'get your student photo ID taken at the Services Office.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-044-q17",
+      "audioScriptId": "celpip-listening-044-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-044-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "What are the hours for photo ID service?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "8 AM to 5 PM",
+        "9 AM to 4 PM",
+        "10 AM to 3 PM",
+        "8 AM to 6 PM"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "9 AM to 4 PM",
+      "explanation": "The guide mentions 'between 9 and 4 on any day this week.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-044-q18",
+      "audioScriptId": "celpip-listening-044-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-044-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "What is the estimated budget for books and materials?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "One hundred dollars",
+        "Two hundred dollars",
+        "Three hundred dollars",
+        "Four hundred dollars"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Three hundred dollars",
+      "explanation": "The guide states 'budget about three hundred dollars for books and materials.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-044-q19",
+      "audioScriptId": "celpip-listening-044-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-044-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "When is the Welcome Social?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "Thursday evening",
+        "Friday evening",
+        "Saturday afternoon",
+        "Sunday afternoon"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Friday evening",
+      "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-044-q20",
+      "audioScriptId": "celpip-listening-044-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-044-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "What is the bill number for the education reform?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "Bill 235",
+        "Bill 247",
+        "Bill 250",
+        "Bill 260"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Bill 247",
+      "explanation": "The legislation is identified as Bill 247.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q21",
+      "audioScriptId": "celpip-listening-044-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-044-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "When will mandatory digital literacy courses begin?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "This year",
+        "Next September",
+        "January 2027",
+        "September 2027"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Next September",
+      "explanation": "High schools will introduce mandatory digital literacy courses starting next September.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q22",
+      "audioScriptId": "celpip-listening-044-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-044-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "By what percentage are teacher salaries being increased?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "5 percent",
+        "6 percent",
+        "8 percent",
+        "10 percent"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "8 percent",
+      "explanation": "Teacher salaries will be increased by 8 percent over four years.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q23",
+      "audioScriptId": "celpip-listening-044-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-044-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "Approximately how many teachers does Quebec currently lack?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "2,500 teachers",
+        "3,000 teachers",
+        "3,500 teachers",
+        "4,000 teachers"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "3,500 teachers",
+      "explanation": "Quebec currently faces a shortage of approximately 3,500 teachers.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q24",
+      "audioScriptId": "celpip-listening-044-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-044-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "How much money is allocated for infrastructure improvements?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "1.5 billion dollars",
+        "1.8 billion dollars",
+        "2.1 billion dollars",
+        "2.5 billion dollars"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "2.1 billion dollars",
+      "explanation": "The bill allocates 2.1 billion dollars for infrastructure improvements.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q25",
+      "audioScriptId": "celpip-listening-044-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-044-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "What is the cost of the engineering program expansion?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "1.8 million dollars",
+        "2.0 million dollars",
+        "2.4 million dollars",
+        "2.8 million dollars"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "2.4 million dollars",
+      "explanation": "The cost would be approximately 2.4 million dollars over two years.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q26",
+      "audioScriptId": "celpip-listening-044-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-044-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "How many potential students did the university lose last year?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "100 students",
+        "125 students",
+        "150 students",
+        "175 students"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "150 students",
+      "explanation": "Professor Elena mentions they lost 150 potential engineering students.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q27",
+      "audioScriptId": "celpip-listening-044-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-044-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "Why are some students not enrolling at this university?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "Poor faculty",
+        "Weak renewable energy program options",
+        "High tuition fees",
+        "Bad location"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Weak renewable energy program options",
+      "explanation": "They're losing students to competing universities with stronger renewable energy options.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q28",
+      "audioScriptId": "celpip-listening-044-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-044-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "What does Diana believe about tuition revenue from additional students?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "It will decrease overall costs",
+        "It would exceed expansion costs within three years",
+        "It wouldn't help the budget",
+        "It takes longer than expected"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "It would exceed expansion costs within three years",
+      "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q29",
+      "audioScriptId": "celpip-listening-044-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-044-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "What type of partnership does Diana mention exploring?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "International universities",
+        "Government agencies",
+        "Renewable energy companies",
+        "Tech startups"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Renewable energy companies",
+      "explanation": "Diana mentions conversations with renewable energy companies about funding contributions.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q30",
+      "audioScriptId": "celpip-listening-044-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-044-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "What would companies receive in exchange for supporting the program?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "University branding",
+        "Free equipment",
+        "Access to graduates for recruitment",
+        "Research funding"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Access to graduates for recruitment",
+      "explanation": "Companies want access to graduates for recruitment in exchange for contributions.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q31",
+      "audioScriptId": "celpip-listening-044-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-044-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "Why is Malik interested in supporting the program expansion?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "To get easier courses",
+        "To increase tuition fees",
+        "To support classmates interested in sustainability",
+        "To improve campus facilities"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "To support classmates interested in sustainability",
+      "explanation": "Many classmates are interested in sustainability and green technology, which the program would support.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q32",
+      "audioScriptId": "celpip-listening-044-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-044-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "What specific position does Professor Elena hold on the expansion?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "She opposes it",
+        "She strongly supports it",
+        "She wants to wait",
+        "She's uncertain"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "She strongly supports it",
+      "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-044-q33",
+      "audioScriptId": "celpip-listening-044-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-044-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "They're not programmed correctly",
+        "They're trained on historical data that includes human bias",
+        "They lack computing power",
+        "They're intentionally designed to discriminate"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "They're trained on historical data that includes human bias",
+      "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-044-q34",
+      "audioScriptId": "celpip-listening-044-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-044-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "What did Amazon discover about their hiring algorithm?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "It was too slow",
+        "It was discriminating against women",
+        "It was too expensive",
+        "It wasn't identifying qualified candidates"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "It was discriminating against women",
+      "explanation": "Amazon discovered their algorithm was discriminating against women and scrapped it.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-044-q35",
+      "audioScriptId": "celpip-listening-044-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-044-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "It was too strict",
+        "It showed bias against applicants from historically black colleges",
+        "It wasn't identifying talent",
+        "It was too expensive"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "It showed bias against applicants from historically black colleges",
+      "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-044-q36",
+      "audioScriptId": "celpip-listening-044-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-044-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "Data is always objective",
+        "Data is never neutral and includes bias",
+        "Data should never be used in hiring",
+        "Data is a recent invention"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Data is never neutral and includes bias",
+      "explanation": "The speaker argues data is never neutral and carries historical bias.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-044-q37",
+      "audioScriptId": "celpip-listening-044-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-044-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "Use them immediately",
+        "Train employees on algorithms",
+        "Conduct rigorous bias testing and external auditing",
+        "Ignore algorithm concerns"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about language learning support services.",
-      "difficulty": "medium"
+      "correctAnswer": "Conduct rigorous bias testing and external auditing",
+      "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-044-q38",
+      "audioScriptId": "celpip-listening-044-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-044-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What human qualities does the speaker claim algorithms can't capture?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "Education level",
+        "Potential, resilience, and growth",
+        "Work experience",
+        "Technical skills"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about language learning support services.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "Potential, resilience, and growth",
+      "explanation": "Algorithms can't capture potential, resilience, or the capacity for growth.",
+      "difficulty": "medium",
+      "topic": "Technology"
     }
   ]
 }

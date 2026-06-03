@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 57",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 57",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-057-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Local farmer's markets",
-      "script": "A market manager explains how the local farmer's market operates, including when it runs, where vendors can apply for a stall, and how to find out what will be available each week.",
+      "title": "Airline Baggage Delay",
+      "text": "Passenger: Excuse me, my baggage didn't arrive on my flight from Vancouver. Airline Agent: I'm very sorry to hear that. Let me help you file a report. What is your confirmation number? Passenger: It's VH-4829. I arrived about an hour ago on flight AC-127. Agent: Got it. Did you check your bag through to your final destination or pick it up here in Calgary? Passenger: I checked it all the way to Calgary. I have the baggage claim ticket right here. Agent: Perfect. Can I see that? The tag number is LM-58493. Your bag is a black Samsonite roller, correct? Passenger: Yes, that's right. It has a red ribbon on the handle. Agent: Great. I've found it in the system. It actually came off the plane but was misrouted to Edmonton by mistake. It's on the next flight back to Calgary, which arrives at 6:15 PM tonight. Passenger: So I'll have it this evening? Agent: Yes, we'll have it delivered to your hotel by 8 PM. Where are you staying? Passenger: The Fairmont Palliser downtown. What compensation will I get? Agent: Because the delay is less than 24 hours and the bag will be delivered today, we'll provide a $50 travel voucher for your next flight with us.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-057-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about emergency preparedness training",
-      "script": "This news is about emergency preparedness training. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Coffee Shop Catch-Up",
+      "text": "Sarah: Hey, how are you? It's been ages! Michael: I know, right? Must be like six months since we last hung out. Sarah: At least. How was your trip to Vancouver? Michael: It was amazing! The weather was beautiful, and I got to see the mountains every day. Sarah: That sounds incredible. Did you do any hiking? Michael: Yeah, we went up to Whistler for a weekend. The views were unbelievable. Sarah: I'm so jealous. I've been meaning to get out there. Hey, do you want to go grab dinner next week? Michael: Absolutely, I'd love that. How about Thursday? Sarah: Thursday works for me. There's that new Italian place downtown that opened last month. Michael: Perfect. Should we book a table? Sarah: Yeah, probably a good idea. What time? Michael: How about 7 PM? Sarah: Sounds good. I'll make the reservation.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-057-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about emergency preparedness training",
-      "script": "This discussion is about emergency preparedness training. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "Museum Audio Guide: Canadian Art",
+      "text": "Welcome to the Canadian Art gallery. I'm your audio guide for this exhibition. Today, we're exploring paintings and sculptures created by Canadian artists from the 1920s to 1960s. We'll start with the Group of Seven landscape paintings in Room 102. These artists revolutionized how Canadians saw their own wilderness, particularly the forests and lakes of Ontario. The paintings you see here depict rugged landscapes using bold colors and dynamic brushstrokes. In Room 104, we have Emily Carr's totem pole paintings from British Columbia. Carr spent much of her career documenting Indigenous art and the Pacific Northwest landscape. Her work emphasizes the spiritual connection between people and nature. Moving to Room 106, you'll find abstract works by Borduas and Riopelle from the 1950s. These Montreal-based artists were part of the Automatiste movement, which rejected traditional artistic rules. Finally, in Room 108, we showcase sculpture by Henry Moore and Barbara Hepworth, who visited Canada in the 1950s. Their organic forms were inspired by Canadian landscapes. This exhibition runs through September 30th. Thank you for visiting.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-057-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about emergency preparedness training",
-      "script": "This announcement is about emergency preparedness training. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "Ontario Solar Energy Initiative",
+      "text": "Ontario has launched an ambitious solar energy initiative targeting rooftop installations across residential and commercial properties. The program, called SolarON, aims to install solar panels on 50,000 homes and businesses over three years. The government is providing subsidies covering up to 40 percent of installation costs for eligible homeowners. Solar power currently accounts for only 1.2 percent of Ontario's electricity generation, but officials project this could increase to 8 percent by 2030. The initiative includes training programs to develop 2,500 new solar installation technicians. A rebate program offers homeowners up to 8,000 dollars toward equipment and installation expenses. Companies installing solar systems have reported a 150 percent increase in inquiries since the program's announcement. Environmental advocates praise the initiative for reducing carbon emissions and creating green jobs. The average residential system costs approximately 22,000 dollars before subsidies and rebates. Participants are also eligible for net metering, allowing them to sell excess power back to the grid.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-057-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about emergency preparedness training",
-      "script": "This office is about emergency preparedness training. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Remote Work Policy Debate",
+      "text": "Manager Sarah: I've been thinking about our remote work policy, and honestly, I think we need to bring people back to the office at least three days a week. When I worked from home during the pandemic, I felt disconnected from my team, and I worry about newer staff missing out on mentorship opportunities. Plus, collaboration seems to happen more naturally when people are in the same space.\n\nEmployee James: I completely understand your point, Sarah, but I've actually found the opposite to be true. Since working remotely, my productivity has increased by about 40 percent because I have fewer interruptions. I can focus better on complex projects. And I'm still collaborating regularly with my colleagues through video calls and shared documents. Honestly, three days in the office feels like a step backward for many of us who have adapted well to remote work.\n\nHR Director Tom: Both of you raise valid concerns. The data we've collected shows mixed results. Some teams are more productive working remotely, while others struggle with communication and onboarding new hires. I think the solution isn't one-size-fits-all. Different departments might need different policies. Customer service teams probably need more in-person interaction, while our software developers seem to work just fine remotely. We should consider a hybrid approach that gives managers flexibility based on their specific team's needs.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-057-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about emergency preparedness training",
-      "script": "This lecture is about emergency preparedness training. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Universal Basic Income Feasibility",
+      "text": "I want to discuss Universal Basic Income, or UBI, and why I believe it could work in Canada. The concept is straightforward: every citizen receives a regular, unconditional cash payment from the government. Now, I know people immediately worry about the cost, but let me address that. First, UBI could replace many existing welfare programs that are expensive to administer. The bureaucracy involved in means-testing and eligibility verification costs billions. UBI would be simpler and less wasteful. Second, the economic stimulus of putting money in people's hands is significant. When people have financial security, they spend more, which supports businesses and creates jobs. Third, UBI addresses real problems: poverty, economic instability, and lack of opportunity. We've seen pilot projects in Kenya, Finland, and Canada that show positive outcomes. In Kenya, UBI increased business formation by 32 percent. In Finland, participants reported better mental health and less anxiety. Some worry it will make people lazy, but that's not supported by evidence. People want purpose and contribution, not just money. What UBI does is give them the freedom to pursue education, care for family, or start businesses without desperation. The real question isn't whether we can afford UBI—it's whether we can afford not to implement it. Rising inequality and automation are creating unprecedented challenges.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-057-q01",
+      "audioScriptId": "celpip-listening-057-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-057-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "From which city did the passenger fly?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "Calgary",
+        "Vancouver",
+        "Edmonton",
+        "Toronto"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "local farmer's markets"
+      "correctAnswer": "Vancouver",
+      "explanation": "Passenger states 'my baggage didn't arrive on my flight from Vancouver.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-057-q02",
+      "audioScriptId": "celpip-listening-057-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-057-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "What is the baggage claim tag number?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "LM-48593",
+        "LM-58493",
+        "LM-58394",
+        "LM-48539"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "local farmer's markets"
+      "correctAnswer": "LM-58493",
+      "explanation": "Agent reads the tag number as 'LM-58493' from the claim ticket.",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-057-q03",
+      "audioScriptId": "celpip-listening-057-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-057-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "What color is the passenger's luggage?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "Blue Samsonite roller",
+        "Black Samsonite roller",
+        "Black leather bag",
+        "Red Samsonite roller"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "local farmer's markets"
+      "correctAnswer": "Black Samsonite roller",
+      "explanation": "Agent confirms 'Your bag is a black Samsonite roller, correct?' and passenger agrees.",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-057-q04",
+      "audioScriptId": "celpip-listening-057-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-057-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "Where was the bag mistakenly sent?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "Vancouver",
+        "Toronto",
+        "Edmonton",
+        "Montreal"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "Edmonton",
+      "explanation": "Agent explains the bag 'was misrouted to Edmonton by mistake.'",
       "difficulty": "medium",
-      "topic": "local farmer's markets"
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-057-q05",
+      "audioScriptId": "celpip-listening-057-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-057-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "When does the return flight arrive in Calgary?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "4:15 PM",
+        "5:15 PM",
+        "6:15 PM",
+        "7:15 PM"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "6:15 PM",
+      "explanation": "Agent states 'It's on the next flight back to Calgary, which arrives at 6:15 PM tonight.'",
       "difficulty": "medium",
-      "topic": "local farmer's markets"
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-057-q06",
+      "audioScriptId": "celpip-listening-057-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-057-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "By what time will the bag be delivered to the hotel?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "6:00 PM",
+        "7:00 PM",
+        "8:00 PM",
+        "9:00 PM"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "8:00 PM",
+      "explanation": "Agent promises 'we'll have it delivered to your hotel by 8 PM.'",
       "difficulty": "medium",
-      "topic": "local farmer's markets"
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-057-q07",
+      "audioScriptId": "celpip-listening-057-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-057-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "Which hotel is the passenger staying at?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "The Sandman Calgary",
+        "The Fairmont Palliser",
+        "The Bow Tower",
+        "The Shangri-La"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "local farmer's markets"
+      "correctAnswer": "The Fairmont Palliser",
+      "explanation": "Passenger states they're staying at 'The Fairmont Palliser downtown.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-057-q08",
+      "audioScriptId": "celpip-listening-057-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-057-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "What compensation is offered for the baggage delay?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "$25 travel voucher",
+        "$35 travel voucher",
+        "$50 travel voucher",
+        "$75 travel voucher"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "local farmer's markets"
+      "correctAnswer": "$50 travel voucher",
+      "explanation": "Agent offers 'a $50 travel voucher for your next flight with us.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-057-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-057-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-057-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "How long has it been since Sarah and Michael last saw each other?",
+      "options": [
+        "Two months",
+        "Four months",
+        "Six months",
+        "A year"
+      ],
+      "correctAnswer": "Six months",
+      "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
       "difficulty": "medium",
-      "topic": "local farmer's markets"
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-057-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-057-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-057-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "Where did Michael travel?",
+      "options": [
+        "Toronto",
+        "Montreal",
+        "Vancouver",
+        "Calgary"
+      ],
+      "correctAnswer": "Vancouver",
+      "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
       "difficulty": "medium",
-      "topic": "local farmer's markets"
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-057-q11",
+      "audioScriptId": "celpip-listening-057-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-057-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "What outdoor activity did Michael do?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "Kayaking",
+        "Skiing",
+        "Hiking",
+        "Swimming"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Hiking",
+      "explanation": "Sarah asks 'Did you do any hiking?' and Michael responds positively about going to Whistler.",
+      "difficulty": "medium",
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-057-q12",
+      "audioScriptId": "celpip-listening-057-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-057-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "Mexican",
+        "Italian",
+        "Japanese",
+        "Indian"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Italian",
+      "explanation": "Sarah mentions 'that new Italian place downtown.'",
+      "difficulty": "medium",
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-057-q13",
+      "audioScriptId": "celpip-listening-057-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-057-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "What day do they plan to meet?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Thursday",
+      "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
+      "difficulty": "medium",
+      "topic": "meeting friend"
     },
     {
       "id": "celpip-listening-057-q14",
+      "audioScriptId": "celpip-listening-057-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-057-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "What is the time period of the art featured in this exhibition?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "1900-1920",
+        "1920-1960",
+        "1960-1980",
+        "1980-2000"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "1920-1960",
+      "explanation": "The guide states we're exploring 'paintings and sculptures created by Canadian artists from the 1920s to 1960s.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-057-q15",
+      "audioScriptId": "celpip-listening-057-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-057-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "In which room are Group of Seven paintings displayed?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "Room 101",
+        "Room 102",
+        "Room 104",
+        "Room 106"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Room 102",
+      "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-057-q16",
+      "audioScriptId": "celpip-listening-057-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-057-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "What region did Emily Carr primarily focus on?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "Ontario",
+        "Quebec",
+        "British Columbia",
+        "Prairie provinces"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "British Columbia",
+      "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-057-q17",
+      "audioScriptId": "celpip-listening-057-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-057-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "Cubism",
+        "Automatiste",
+        "Impressionism",
+        "Surrealism"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Automatiste",
+      "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-057-q18",
+      "audioScriptId": "celpip-listening-057-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-057-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Ottawa"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Montreal",
+      "explanation": "The guide identifies them as 'Montreal-based artists.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-057-q19",
+      "audioScriptId": "celpip-listening-057-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-057-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "Until what date does this exhibition run?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "August 31st",
+        "September 15th",
+        "September 30th",
+        "October 15th"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "September 30th",
+      "explanation": "The guide states 'This exhibition runs through September 30th.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-057-q20",
+      "audioScriptId": "celpip-listening-057-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-057-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "How many homes and businesses are targeted for solar installation?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "30,000",
+        "40,000",
+        "50,000",
+        "60,000"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "50,000",
+      "explanation": "The SolarON program aims to install solar panels on 50,000 homes and businesses.",
+      "difficulty": "medium",
+      "topic": "Renewable energy"
     },
     {
       "id": "celpip-listening-057-q21",
+      "audioScriptId": "celpip-listening-057-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-057-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "What percentage of installation costs do subsidies cover?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "25 percent",
+        "30 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "40 percent",
+      "explanation": "The government provides subsidies covering up to 40 percent of installation costs.",
+      "difficulty": "medium",
+      "topic": "Renewable energy"
     },
     {
       "id": "celpip-listening-057-q22",
+      "audioScriptId": "celpip-listening-057-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-057-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "What is the current percentage of Ontario's electricity from solar power?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "0.8 percent",
+        "1.2 percent",
+        "2.0 percent",
+        "2.5 percent"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "1.2 percent",
+      "explanation": "Solar power currently accounts for only 1.2 percent of Ontario's electricity generation.",
+      "difficulty": "medium",
+      "topic": "Renewable energy"
     },
     {
       "id": "celpip-listening-057-q23",
+      "audioScriptId": "celpip-listening-057-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-057-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "How many new installation technicians will be trained?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "1,500 technicians",
+        "2,000 technicians",
+        "2,500 technicians",
+        "3,000 technicians"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "2,500 technicians",
+      "explanation": "Training programs aim to develop 2,500 new solar installation technicians.",
+      "difficulty": "medium",
+      "topic": "Renewable energy"
     },
     {
       "id": "celpip-listening-057-q24",
+      "audioScriptId": "celpip-listening-057-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-057-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "What is the maximum homeowner rebate?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "5,000 dollars",
+        "6,000 dollars",
+        "8,000 dollars",
+        "10,000 dollars"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "8,000 dollars",
+      "explanation": "A rebate program offers homeowners up to 8,000 dollars.",
+      "difficulty": "medium",
+      "topic": "Renewable energy"
     },
     {
       "id": "celpip-listening-057-q25",
+      "audioScriptId": "celpip-listening-057-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-057-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "Mentorship works better online",
+        "Newer staff miss out on mentorship opportunities",
+        "Mentorship is not important",
+        "Remote mentorship is equally effective"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Newer staff miss out on mentorship opportunities",
+      "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-057-q26",
+      "audioScriptId": "celpip-listening-057-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-057-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "25 percent",
+        "35 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "40 percent",
+      "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-057-q27",
+      "audioScriptId": "celpip-listening-057-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-057-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What reason does James give for his increased productivity?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "Better equipment at home",
+        "Fewer interruptions",
+        "Shorter work hours",
+        "More flexible schedule"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Fewer interruptions",
+      "explanation": "James mentions fewer interruptions allow him to focus better on complex projects.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-057-q28",
+      "audioScriptId": "celpip-listening-057-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-057-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "Remote work is always better",
+        "Mixed results depending on the team",
+        "Office work is most productive",
+        "Remote work decreases productivity"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Mixed results depending on the team",
+      "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-057-q29",
+      "audioScriptId": "celpip-listening-057-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-057-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "Software developers",
+        "Marketing teams",
+        "Customer service teams",
+        "Finance teams"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Customer service teams",
+      "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-057-q30",
+      "audioScriptId": "celpip-listening-057-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-057-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "What solution does Tom propose?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "All employees back in office",
+        "Completely remote for all",
+        "Hybrid approach with flexibility",
+        "No change to current policy"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Hybrid approach with flexibility",
+      "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-057-q31",
+      "audioScriptId": "celpip-listening-057-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-057-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "According to Sarah, what does collaboration depend on?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "Video call quality",
+        "People being in the same space",
+        "Written communication",
+        "Email efficiency"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "People being in the same space",
+      "explanation": "Sarah believes collaboration happens more naturally when people are in the same space.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-057-q32",
+      "audioScriptId": "celpip-listening-057-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-057-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "How does James stay connected with colleagues remotely?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "Phone calls only",
+        "Email messages only",
+        "Video calls and shared documents",
+        "Monthly meetings only"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Video calls and shared documents",
+      "explanation": "James mentions collaborating through video calls and shared documents.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-057-q33",
+      "audioScriptId": "celpip-listening-057-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-057-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "Temporary welfare assistance",
+        "Government loans with repayment",
+        "Regular unconditional cash payment to all citizens",
+        "Employer-provided income supplements"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Regular unconditional cash payment to all citizens",
+      "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-057-q34",
+      "audioScriptId": "celpip-listening-057-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-057-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "How could UBI reduce government costs according to the speaker?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "By reducing salaries",
+        "By replacing expensive welfare programs",
+        "By cutting military spending",
+        "By reducing taxes"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "By replacing expensive welfare programs",
+      "explanation": "The speaker argues UBI could replace many existing welfare programs and reduce administrative costs.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-057-q35",
+      "audioScriptId": "celpip-listening-057-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-057-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "It would decrease spending",
+        "Providing financial security would stimulate spending and job creation",
+        "It would reduce business activity",
+        "It would increase unemployment"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Providing financial security would stimulate spending and job creation",
+      "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-057-q36",
+      "audioScriptId": "celpip-listening-057-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-057-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "22 percent",
+        "27 percent",
+        "32 percent",
+        "38 percent"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "32 percent",
+      "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-057-q37",
+      "audioScriptId": "celpip-listening-057-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-057-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "Increased energy",
+        "Better mental health and less anxiety",
+        "Improved sleep",
+        "Reduced medication needs"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about emergency preparedness training.",
-      "difficulty": "medium"
+      "correctAnswer": "Better mental health and less anxiety",
+      "explanation": "In Finland, participants reported better mental health and less anxiety.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-057-q38",
+      "audioScriptId": "celpip-listening-057-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-057-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What concern does the speaker directly address about UBI?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "It would increase inflation",
+        "It would make people lazy",
+        "It would reduce work motivation",
+        "Both B and C"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about emergency preparedness training.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "It would make people lazy",
+      "explanation": "The speaker specifically addresses the concern that UBI would make people lazy and disputes this.",
+      "difficulty": "medium",
+      "topic": "Economics"
     }
   ]
 }

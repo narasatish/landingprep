@@ -450,14 +450,14 @@
           "durationMinutes": 47,
           "parts": 6,
           "partDescriptions": [
-            "Part 1: Listening to Problem Solving — phone conversation",
-            "Part 2: Listening to a Daily Life Situation — instruction/advice",
-            "Part 3: Listening for Information — news item, advertisement, or announcement",
-            "Part 4: Listening to a Discussion — workplace or social group",
-            "Part 5: Listening to a News Item",
-            "Part 6: Listening to Viewpoints — opinion piece or lecture excerpt"
+            "Part 1: Listening to Problem Solving — a conversation where one person seeks help",
+            "Part 2: Listening to a Daily Life Conversation",
+            "Part 3: Listening for Information — an informational talk",
+            "Part 4: Listening to a News Item",
+            "Part 5: Listening to a Discussion — people with differing viewpoints",
+            "Part 6: Listening to Viewpoints — a longer opinion talk"
           ],
-          "questionsPerPart": [6, 5, 5, 5, 5, 5],
+          "questionsPerPart": [8, 5, 6, 5, 8, 6],
           "questionCount": 38,
           "itemTypes": ["multiple_choice_single"],
           "reviewRequirements": ["answer_key", "audio_script"]

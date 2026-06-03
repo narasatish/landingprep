@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 60",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 60",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-060-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Home maintenance basics",
-      "script": "A property maintenance company representative advises a new homeowner on seasonal home maintenance tasks, including gutter cleaning, furnace filter replacement, and checking smoke detector batteries.",
+      "title": "Phone Plan Upgrade",
+      "text": "Customer: Hi, I'm interested in upgrading my phone plan. I currently have the basic plan with 2 GB of data. Support: Great! I can definitely help with that. What's your phone number? Customer: It's 416-555-0234. I'm constantly hitting my data limit, especially with streaming videos. Support: I understand. Let me pull up your account. You're right, your basic plan is 2 GB per month at $35. What data usage would work better for you? Customer: Probably something like 10 GB. How much would that be? Support: We have a 10 GB plan at $65 per month. You'd also get unlimited texting and more calling minutes. Would that interest you? Customer: What's the difference in calling minutes from my current plan? Support: Your current plan has 200 minutes; the 10 GB plan has unlimited calling. Plus, there's no contract change required if you cancel later. Customer: Actually, do you have an 8 GB plan? That might be better value. Support: Good question. We do have an 8 GB plan at $55 per month with the same unlimited calling and texting. Customer: Perfect, I'll take that. When does it take effect? Support: I'm activating it right now. Your bill will reflect the change next billing cycle, which is on July 8th. The monthly cost goes from $35 to $55. Customer: That works for me. Thanks.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-060-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about annual community survey feedback",
-      "script": "This news is about annual community survey feedback. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Neighbourhood Park Chat",
+      "text": "David: Hey, nice day, isn't it? Rebecca: Beautiful. Perfect weather for being outside. David: Have you lived in this neighbourhood long? Rebecca: About five years now. And you? David: Just moved here last month. Rebecca: Oh nice. You picked a good time to arrive. The summer's the best season here. David: So I'm hearing. Any recommendations for places to go? Rebecca: There's a great farmer's market on Saturday mornings at the corner of Main and Oak. The coffee shop near there is amazing too. David: Sounds good. I'll have to check it out. Rebecca: You definitely should. They have the best pastries. Oh, and the park just got new playground equipment if you have kids. David: No kids yet, but that's nice to know. Do many families live here? Rebecca: Lots of young families. It's a very friendly community. David: That's what I was hoping for. I'm looking forward to exploring more.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-060-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about annual community survey feedback",
-      "script": "This discussion is about annual community survey feedback. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "Travel Insurance Information Session",
+      "text": "Welcome to our travel insurance information session. Today, I'll explain the coverage options available through our travel agency. We offer three plans: Basic, Standard, and Premium. The Basic plan covers medical emergencies, emergency dental, and evacuation. Cost is seventy-five dollars for two weeks. The Standard plan includes everything in Basic plus trip cancellation coverage, lost luggage reimbursement up to one thousand dollars, and travel delays over twelve hours. Cost is one hundred twenty dollars for two weeks. The Premium plan is our comprehensive option. It adds accidental death coverage, zero deductible for medical claims, and upgrade to two thousand five hundred dollars for lost luggage. Premium costs two hundred twenty dollars for two weeks. All plans exclude claims related to alcohol impairment or pre-existing medical conditions not disclosed. Coverage begins on your departure date and ends upon return. Claims must be filed within ninety days of the incident. You'll receive a confirmation email with your policy documents. For claims, call our toll-free number at 1-800-555-0147. Representatives are available 24/7. Questions about coverage should be directed to our customer service team. Purchase your policy at least seven days before travel.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-060-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about annual community survey feedback",
-      "script": "This announcement is about annual community survey feedback. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "New Brunswick Fisheries Management Plan",
+      "text": "New Brunswick has introduced a comprehensive fisheries management plan aimed at rebuilding declining fish stocks and supporting the province's fishing communities. The plan allocates 67 million dollars over five years to research, enforcement, and sustainable fishing initiatives. Atlantic salmon populations have declined by 48 percent over the past two decades, prompting urgent action. The plan imposes stricter catch limits on cod and halibut in designated zones. Fishing vessel owners participating in conservation programs receive subsidies up to 200,000 dollars for upgrading to eco-friendly equipment. The program mandates trap modifications to reduce unintended marine mammal bycatch by 35 percent. Over 3,200 fishermen and their families depend on this industry in New Brunswick. The province is establishing a new fisheries research center employing 120 marine scientists. Marine Protected Areas will expand to cover an additional 8 percent of provincial waters. The plan aims to achieve sustainable fish stock levels by 2032.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-060-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about annual community survey feedback",
-      "script": "This office is about annual community survey feedback. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Community Center Renovation Project",
+      "text": "Recreation Director Karen: We're finally moving forward with the community center renovation that was approved last year. The project is budgeted at 6.8 million dollars and should take about 18 months to complete. We plan to add a new fitness center, upgrade the swimming pool, and create additional youth programming spaces. This will significantly improve our facilities.\n\nCommunity Member Robert: I'm glad to see this moving forward, Karen, but I'm concerned about one thing. During the construction, the center will be partially closed. My kids attend after-school programs here, and I'm worried about where they'll go during the renovation period. Many families in our community rely on these programs for childcare.\n\nOperations Manager Susan: That's a valid concern, Robert. We've actually planned for this. We'll maintain the community room and outdoor spaces throughout the project. We can relocate the after-school programs there during construction, though it will be more crowded. We're also negotiating with the school district to potentially use school facilities as a backup location for some activities.\n\nYouth Program Coordinator Jason: I'm excited about the upgrades, especially the new youth spaces. But Susan, we need to be realistic about the outdoor space. We currently use it for sports and recreation. If we're moving programs there, we'll have limited room for physical activities. Could we consider using a local park for some outdoor programming during construction?",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-060-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about annual community survey feedback",
-      "script": "This lecture is about annual community survey feedback. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Mental Health Parity in Insurance Coverage",
+      "text": "Mental health needs to be treated with the same importance as physical health in our insurance system. We talk about mental health awareness, but when it comes to actual coverage, it's dramatically underfunded. Most insurance plans cover mental health at lower rates than physical health. If you have a broken arm, insurance covers months of physical therapy. If you have depression or anxiety, you get maybe 10 sessions of therapy a year, and psychologist visits might only be 50 percent covered. This creates barriers. Many people avoid treatment because they can't afford it, and their conditions worsen. The economic impact is massive. Mental health issues cost the economy 51 billion dollars annually in Canada through lost productivity, emergency services, and hospitalizations. Yet we invest a fraction of that in prevention and treatment. Here's what frustrates me most: we have effective treatments. Therapy works. Medication helps. But access is limited by insurance coverage. A person struggling with bipolar disorder shouldn't have to choose between therapy and rent. Insurance companies argue coverage limits are necessary for cost control, but that's shortsighted. When people get mental health treatment early, they use fewer emergency services, work more, and contribute to society. The ROI on mental health coverage is actually positive. I'm advocating for mandatory parity—insurance companies should cover mental health at the same level as physical health. This means removing visit limits, lowering copayments, and covering evidence-based treatments. It's not just compassionate; it's economically smart.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-060-q01",
+      "audioScriptId": "celpip-listening-060-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-060-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "What is the customer's phone number?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "416-555-0243",
+        "416-555-0234",
+        "416-555-0342",
+        "416-555-0423"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "home maintenance basics"
+      "correctAnswer": "416-555-0234",
+      "explanation": "Customer provides their phone number as '416-555-0234.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-060-q02",
+      "audioScriptId": "celpip-listening-060-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-060-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "How much data does the customer currently have?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "1 GB",
+        "2 GB",
+        "5 GB",
+        "8 GB"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "home maintenance basics"
+      "correctAnswer": "2 GB",
+      "explanation": "Customer states they have 'the basic plan with 2 GB of data.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-060-q03",
+      "audioScriptId": "celpip-listening-060-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-060-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "What is the cost of the current plan?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "$25 per month",
+        "$35 per month",
+        "$45 per month",
+        "$55 per month"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "home maintenance basics"
+      "correctAnswer": "$35 per month",
+      "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-060-q04",
+      "audioScriptId": "celpip-listening-060-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-060-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "How many calling minutes does the customer's current plan have?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "100 minutes",
+        "150 minutes",
+        "200 minutes",
+        "Unlimited"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "200 minutes",
+      "explanation": "Support states 'Your current plan has 200 minutes.'",
       "difficulty": "medium",
-      "topic": "home maintenance basics"
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-060-q05",
+      "audioScriptId": "celpip-listening-060-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-060-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "What data plan does the customer ultimately choose?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "5 GB plan",
+        "8 GB plan",
+        "10 GB plan",
+        "15 GB plan"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "8 GB plan",
+      "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'",
       "difficulty": "medium",
-      "topic": "home maintenance basics"
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-060-q06",
+      "audioScriptId": "celpip-listening-060-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-060-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "What is the cost of the 8 GB plan?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "$45 per month",
+        "$55 per month",
+        "$60 per month",
+        "$65 per month"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "$55 per month",
+      "explanation": "Support states the 8 GB plan is 'at $55 per month.'",
       "difficulty": "medium",
-      "topic": "home maintenance basics"
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-060-q07",
+      "audioScriptId": "celpip-listening-060-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-060-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "When does the new plan take effect on the bill?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "June 15th",
+        "June 22nd",
+        "July 1st",
+        "July 8th"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "home maintenance basics"
+      "correctAnswer": "July 8th",
+      "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-060-q08",
+      "audioScriptId": "celpip-listening-060-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-060-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "What calling feature is included in the new plan?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "200 minutes",
+        "300 minutes",
+        "500 minutes",
+        "Unlimited calling"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "home maintenance basics"
+      "correctAnswer": "Unlimited calling",
+      "explanation": "Support states the 8 GB plan includes 'unlimited calling' along with unlimited texting.",
+      "difficulty": "medium",
+      "topic": "telecom service"
     },
     {
       "id": "celpip-listening-060-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-060-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-060-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "How long has Rebecca lived in the neighbourhood?",
+      "options": [
+        "Two years",
+        "Three years",
+        "Four years",
+        "Five years"
+      ],
+      "correctAnswer": "Five years",
+      "explanation": "Rebecca states 'About five years now.'",
       "difficulty": "medium",
-      "topic": "home maintenance basics"
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-060-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-060-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-060-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "When did David move to the neighbourhood?",
+      "options": [
+        "One week ago",
+        "Two weeks ago",
+        "Last month",
+        "Two months ago"
+      ],
+      "correctAnswer": "Last month",
+      "explanation": "David says 'Just moved here last month.'",
       "difficulty": "medium",
-      "topic": "home maintenance basics"
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-060-q11",
+      "audioScriptId": "celpip-listening-060-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-060-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "What is the best season in this neighbourhood?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "Spring",
+        "Summer",
+        "Fall",
+        "Winter"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Summer",
+      "explanation": "Rebecca states 'The summer's the best season here.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-060-q12",
+      "audioScriptId": "celpip-listening-060-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-060-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "Where is the farmer's market held?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "Main and Queen",
+        "Main and King",
+        "Main and Oak",
+        "Oak and Queen"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Main and Oak",
+      "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-060-q13",
+      "audioScriptId": "celpip-listening-060-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-060-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "Business-focused",
+        "Very friendly",
+        "Quiet and isolated",
+        "Fast-paced"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Very friendly",
+      "explanation": "Rebecca says 'It's a very friendly community.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-060-q14",
+      "audioScriptId": "celpip-listening-060-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-060-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "How many travel insurance plans are offered?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "Two",
+        "Three",
+        "Four",
+        "Five"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Three",
+      "explanation": "The guide states 'We offer three plans: Basic, Standard, and Premium.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-060-q15",
+      "audioScriptId": "celpip-listening-060-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-060-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "What is the cost of the Basic plan for two weeks?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "$50",
+        "$60",
+        "$75",
+        "$85"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "$75",
+      "explanation": "The guide specifies 'Cost is seventy-five dollars for two weeks' for the Basic plan.",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-060-q16",
+      "audioScriptId": "celpip-listening-060-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-060-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "$500",
+        "$1,000",
+        "$1,500",
+        "$2,500"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "$1,000",
+      "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-060-q17",
+      "audioScriptId": "celpip-listening-060-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-060-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "What is the Premium plan's lost luggage coverage limit?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "$1,000",
+        "$1,500",
+        "$2,000",
+        "$2,500"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "$2,500",
+      "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-060-q18",
+      "audioScriptId": "celpip-listening-060-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-060-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "30 days",
+        "60 days",
+        "90 days",
+        "120 days"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "90 days",
+      "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-060-q19",
+      "audioScriptId": "celpip-listening-060-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-060-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "What is the toll-free claims phone number?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "1-800-555-0140",
+        "1-800-555-0147",
+        "1-800-555-0174",
+        "1-800-555-0417"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "1-800-555-0147",
+      "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'",
+      "difficulty": "medium",
+      "topic": "insurance briefing"
     },
     {
       "id": "celpip-listening-060-q20",
+      "audioScriptId": "celpip-listening-060-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-060-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "How much is allocated for the fisheries management plan?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "50 million dollars",
+        "58 million dollars",
+        "67 million dollars",
+        "75 million dollars"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "67 million dollars",
+      "explanation": "The plan allocates 67 million dollars over five years.",
+      "difficulty": "medium",
+      "topic": "Fisheries"
     },
     {
       "id": "celpip-listening-060-q21",
+      "audioScriptId": "celpip-listening-060-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-060-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "By what percentage have Atlantic salmon populations declined?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "35 percent",
+        "42 percent",
+        "48 percent",
+        "55 percent"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "48 percent",
+      "explanation": "Atlantic salmon populations have declined by 48 percent over the past two decades.",
+      "difficulty": "medium",
+      "topic": "Fisheries"
     },
     {
       "id": "celpip-listening-060-q22",
+      "audioScriptId": "celpip-listening-060-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-060-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "What is the maximum subsidy for vessel upgrades?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "150,000 dollars",
+        "175,000 dollars",
+        "200,000 dollars",
+        "250,000 dollars"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "200,000 dollars",
+      "explanation": "Subsidies reach up to 200,000 dollars for eco-friendly equipment upgrades.",
+      "difficulty": "medium",
+      "topic": "Fisheries"
     },
     {
       "id": "celpip-listening-060-q23",
+      "audioScriptId": "celpip-listening-060-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-060-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "By what percentage should bycatch be reduced?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "25 percent",
+        "30 percent",
+        "35 percent",
+        "40 percent"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "35 percent",
+      "explanation": "Trap modifications target a 35 percent reduction in marine mammal bycatch.",
+      "difficulty": "medium",
+      "topic": "Fisheries"
     },
     {
       "id": "celpip-listening-060-q24",
+      "audioScriptId": "celpip-listening-060-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-060-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "How many marine scientists will the research center employ?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "80 scientists",
+        "100 scientists",
+        "120 scientists",
+        "150 scientists"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "120 scientists",
+      "explanation": "The research center will employ 120 marine scientists.",
+      "difficulty": "medium",
+      "topic": "Fisheries"
     },
     {
       "id": "celpip-listening-060-q25",
+      "audioScriptId": "celpip-listening-060-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-060-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "What is the total budget for the renovation?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "5.2 million dollars",
+        "6.0 million dollars",
+        "6.8 million dollars",
+        "7.5 million dollars"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "6.8 million dollars",
+      "explanation": "The renovation project is budgeted at 6.8 million dollars.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-060-q26",
+      "audioScriptId": "celpip-listening-060-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-060-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "How long is the renovation expected to take?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "12 months",
+        "15 months",
+        "18 months",
+        "24 months"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "18 months",
+      "explanation": "The project should take about 18 months to complete.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-060-q27",
+      "audioScriptId": "celpip-listening-060-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-060-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What are the three main components of the renovation?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "Pool, gym, parking lot",
+        "Fitness center, pool upgrade, youth spaces",
+        "Gym, parking, offices",
+        "Cafe, library, fitness center"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Fitness center, pool upgrade, youth spaces",
+      "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-060-q28",
+      "audioScriptId": "celpip-listening-060-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-060-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "What is Robert's main concern?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "Noise during construction",
+        "Cost of the project",
+        "Where his kids' programs will go",
+        "Parking during renovation"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Where his kids' programs will go",
+      "explanation": "Robert worries about where after-school programs will be located during construction.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-060-q29",
+      "audioScriptId": "celpip-listening-060-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-060-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "A temporary building",
+        "The community room and outdoor spaces",
+        "A school gym",
+        "A local fitness facility"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "The community room and outdoor spaces",
+      "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-060-q30",
+      "audioScriptId": "celpip-listening-060-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-060-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "What additional facility is Susan negotiating with?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "A private gym",
+        "The school district",
+        "A local park",
+        "A nearby library"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "The school district",
+      "explanation": "Susan mentions negotiating with the school district for backup facility use.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-060-q31",
+      "audioScriptId": "celpip-listening-060-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-060-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "What concern does Jason raise about using outdoor space?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "Weather damage",
+        "Limited room for physical activities",
+        "Theft concerns",
+        "Noise complaints"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Limited room for physical activities",
+      "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-060-q32",
+      "audioScriptId": "celpip-listening-060-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-060-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "What suggestion does Jason make for outdoor activities?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "Build a temporary gym",
+        "Close programs temporarily",
+        "Use a local park",
+        "Move all programs indoors"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Use a local park",
+      "explanation": "Jason suggests using a local park for outdoor programming during construction.",
+      "difficulty": "medium",
+      "topic": "Community"
     },
     {
       "id": "celpip-listening-060-q33",
+      "audioScriptId": "celpip-listening-060-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-060-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "Mental health is covered more than physical",
+        "Physical health is covered more than mental health",
+        "They're equally covered",
+        "Neither is adequately covered"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Physical health is covered more than mental health",
+      "explanation": "The speaker states mental health is covered at lower rates than physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-060-q34",
+      "audioScriptId": "celpip-listening-060-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-060-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "What example does the speaker use to illustrate the disparity?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "Cancer treatment vs. therapy",
+        "Broken arm coverage vs. limited mental health sessions",
+        "Hospital stays vs. doctor visits",
+        "Prescription drugs vs. counseling"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Broken arm coverage vs. limited mental health sessions",
+      "explanation": "The speaker uses physical therapy for broken arms compared to limited therapy sessions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-060-q35",
+      "audioScriptId": "celpip-listening-060-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-060-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What is the annual economic cost of mental health issues in Canada?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "25 billion dollars",
+        "38 billion dollars",
+        "51 billion dollars",
+        "67 billion dollars"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "51 billion dollars",
+      "explanation": "Mental health issues cost 51 billion dollars annually in Canada.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-060-q36",
+      "audioScriptId": "celpip-listening-060-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-060-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations",
+        "Medication costs",
+        "Administrative expenses"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
+      "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-060-q37",
+      "audioScriptId": "celpip-listening-060-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-060-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "It's cheaper than physical health",
+        "Early treatment has positive ROI",
+        "It reduces insurance profits",
+        "It's cost-neutral"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about annual community survey feedback.",
-      "difficulty": "medium"
+      "correctAnswer": "Early treatment has positive ROI",
+      "explanation": "The speaker argues mental health coverage has a positive return on investment.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-060-q38",
+      "audioScriptId": "celpip-listening-060-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-060-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What does the speaker advocate companies implement?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "Lower coverage for mental health",
+        "Mandatory parity in coverage",
+        "Removal of all limits",
+        "Voluntary coverage only"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about annual community survey feedback.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "Mandatory parity in coverage",
+      "explanation": "The speaker advocates for mandatory parity—equal coverage for mental and physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     }
   ]
 }

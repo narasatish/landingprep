@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 26",
+  "title": "CELPIP General Listening — Practice Test 26",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-026-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Reporting a Water Leak in an Apartment",
-      "text": "Resident: Hello, I need to report a water leak. It started this morning under my kitchen sink. There's water pooling on the floor.\nSuperintendent: I'll send someone right away. Can you confirm your unit number?\nResident: It's unit 4B on the fourth floor.\nSuperintendent: Got it. And is the leak a slow drip or is it flowing steadily?\nResident: It's a steady drip. I've put a bucket under it, but it's filling up about every two hours.\nSuperintendent: That sounds like a loose connection on the supply line. The plumber we use is available this afternoon. Would two o'clock work for you?\nResident: Yes, that's fine. Do I need to be home?\nSuperintendent: Yes, please be there so the plumber can access the cabinet under the sink. Also, to be safe, turn off the shut-off valve under the sink — there's usually a small handle on the left pipe.\nResident: I found it and turned it off. The dripping has stopped for now.\nSuperintendent: Perfect. That confirms the problem is with the supply line, not the drain. The plumber will replace the fitting. It should take under an hour.",
+      "title": "Car Rental Damage Dispute",
+      "text": "Customer: I'm returning my rental car, and I want to dispute a damage claim you're making. Rental Agent: Okay, let me look into that. What's your rental agreement number? Customer: It's CR-892447. I rented the blue Hyundai Elantra, and there was already a dent on the back bumper when I picked it up. Agent: Let me check the pickup photos. What time did you pick up the vehicle? Customer: 10 AM on Tuesday, June 3rd. Agent: I found those photos. You're right, there is a dent visible in the corner of the back bumper. The damage report lists a scratch on the driver's door, which I don't see in our pickup images. Can you tell me what happened? Customer: I definitely didn't cause that scratch. I was careful the whole time I had it. Agent: When did you return the vehicle? Customer: Just now, at 4 PM today. Agent: And you purchased the damage waiver insurance at rental? Customer: Yes, I paid the extra $18 per day for that. Agent: Great. Since you purchased the damage waiver, any damage during your rental period, except for gross negligence, is covered. This scratch appears to be new damage, but with your waiver, you're not responsible. Customer: So I don't have to pay anything? Agent: Correct. Your coverage applies. The previous dent was there before you rented it, and this new scratch is covered under your damage waiver. You're all set.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-026-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Choosing Between Two Job Offers",
-      "text": "Priya: I'm in a tough spot. I got two job offers this week and I have until Friday to decide.\nKevin: That's a great problem to have! What are the offers?\nPriya: One is a junior marketing role at a tech startup. Good salary, lots of creative freedom, but the company is only two years old and a bit risky. The other is a coordinator position at a non-profit — lower salary, but excellent benefits and a guaranteed pension.\nKevin: What matters more to you right now — financial security or career growth?\nPriya: Honestly, both. I have student loans to pay off, but I also don't want to be stuck in a job that goes nowhere.\nKevin: Could the non-profit lead to advancement?\nPriya: They mentioned there's a senior coordinator role that opens up every couple of years. But at the startup, if it takes off, the growth potential is huge.\nKevin: Have you factored in the commute?\nPriya: Good point — the startup is downtown, forty-five minutes each way on transit. The non-profit is ten minutes from my apartment.\nKevin: That's two hours a day you'd get back with the non-profit. That's not nothing.",
+      "title": "Roommate Household Discussion",
+      "text": "Alex: Hey, we need to talk about the dishes piling up in the sink. Jamie: Yeah, I know. I've been really busy with work this week. Alex: I get that, but it's been sitting there for three days. Jamie: I'm sorry, I'll do them tonight. Alex: Thanks. Also, we need to talk about the grocery situation. Jamie: What do you mean? Alex: I've been buying most of the groceries, and we're not splitting the cost fairly. Jamie: You're right. How do you want to handle it? Alex: We could split everything equally, or we could each buy our own stuff separately. Jamie: I think splitting equally makes more sense. We can keep a shared list. Alex: Great. One more thing—the internet bill is due next week. It's $75 this month. Jamie: That's higher than last month. Alex: Yeah, they increased the plan by five dollars. Jamie: Okay, so $37.50 each? Alex: Exactly. I'll send you a reminder.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-026-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "How to Use the Provincial Health Insurance System",
-      "text": "Welcome to this information session on using the provincial health insurance system. If you are a permanent resident or Canadian citizen living in this province, you are entitled to a provincial health card, which covers the cost of most medically necessary services.\n\nTo obtain your health card, visit a ServiceOntario or equivalent provincial office with two pieces of identification — one must be a government-issued photo ID, such as a passport or permanent resident card, and one must show your current address, such as a utility bill or bank statement. New applicants typically wait a three-month period before coverage begins, so it is important to apply as soon as possible after arriving.\n\nYour health card covers visits to a family doctor, specialist consultations when referred by your doctor, emergency room visits, hospital stays, and diagnostic tests including X-rays and blood work. It does not automatically cover prescription drugs, dental care, or vision care, which are typically covered through separate private insurance plans or provincial drug benefit programmes for qualifying residents.\n\nIf you do not have a family doctor, you can register with the Health Care Connect programme, which matches patients to available physicians. In the meantime, walk-in clinics and urgent care centres can treat most non-emergency conditions and are also covered by your health card.\n\nAlways carry your health card when attending medical appointments, and report any change of address to the provincial health authority to ensure your records are current.",
+      "title": "Public Transit New Route Announcement",
+      "text": "Good afternoon. Transit Authority is pleased to announce a new rapid bus route effective September 1st. The new Route 95 Express connects downtown to the northern suburbs, with stops at Central Station, City Hall, the Hospital, University Campus, and North Terminal. Service runs Monday through Friday from 6 AM to 10 PM, with departures every fifteen minutes during peak hours, 7 to 9 AM and 4 to 7 PM. Off-peak service is every thirty minutes. Weekend service begins December, with departures every twenty minutes from 9 AM to 8 PM. The Route 95 uses the new dedicated bus lane on Main Street, reducing travel time from downtown to North Terminal from forty-five minutes to approximately twenty-two minutes. Fares are the same as existing routes: single trip is three dollars fifty cents, and a monthly pass is ninety dollars. Seniors and students receive a twenty percent discount. The new buses feature USB charging ports, free Wi-Fi, and comfortable seating. Detailed schedules are available on our website and at all transit stations. Real-time tracking is available through our mobile app.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-026-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: Province Launches New Childcare Subsidy Programme",
-      "text": "The provincial government announced a new childcare subsidy programme this morning, aimed at reducing childcare costs for families earning below ninety thousand dollars per year. Under the new programme, eligible families will pay no more than ten dollars per day for regulated childcare, beginning on the first of next month.\n\nThe Minister of Families said the programme is expected to benefit approximately forty thousand children across the province in its first year. Priority access will be given to families with children under the age of six, as well as families currently on waitlists at participating childcare centres.\n\nTo apply, parents must submit an application through the provincial government's online portal and provide proof of income from the previous tax year. Applications will be processed within fifteen business days, and approved families will be notified by email.\n\nChild-care providers interested in joining the programme must sign a participation agreement and comply with the province's staffing and curriculum standards. The government said that over three hundred licenced providers have already registered ahead of the launch.\n\nOpposition critics raised concerns that the programme does not extend to informal care arrangements, such as home-based care providers who are not licenced. The government indicated it plans to expand eligibility in future years.",
+      "title": "Nova Scotia Healthcare Worker Recruitment",
+      "text": "Nova Scotia is launching an aggressive recruitment campaign to address critical shortages in healthcare professionals. The province has announced a 35 million dollar investment in recruitment and retention initiatives. Currently, there are over 800 unfilled nursing positions across Nova Scotia hospitals and clinics. The campaign targets nurses, physiotherapists, occupational therapists, and laboratory technicians. Starting salaries for nurses are being increased by 12 percent to compete with other provinces. The government is also offering signing bonuses of up to 15,000 dollars for candidates relocating to rural communities. Housing assistance programs will help new recruits find affordable accommodation. International recruitment is underway, with partnerships established with nursing programs in the Philippines and India. Officials estimate it will take approximately 18 months to fill 60 percent of the vacant positions. Patient wait times have increased significantly due to staffing shortages, with some emergency departments reporting delays of four to six hours.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-026-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Is Social Media Good or Bad for Teenagers?",
-      "text": "Host: Today's discussion focuses on social media and its impact on teenagers. With me are two commentators: Diane, a child development researcher, and Tom, who advocates for digital literacy education. Diane, let's start with you — is social media harmful to teenagers?\nDiane: The research is quite clear that heavy social media use is associated with higher rates of anxiety, depression, and sleep disruption in teenagers, particularly for girls. The problem isn't the technology itself — it's the design. Platforms are deliberately built to maximise engagement, which means maximising the time young people spend comparing themselves to others.\nHost: Tom, do you think the solution is restricting access?\nTom: I strongly disagree with blanket restrictions. The answer is education. We need to teach teenagers to be critical consumers of digital content — how algorithms work, how images are edited, what business models drive these platforms. Banning access doesn't develop those skills; it just delays the problem.\nHost: Diane, what do you say to that?\nDiane: I agree that education is necessary, but it is not sufficient on its own. A thirteen-year-old is neurologically not equipped to resist the deliberate manipulation that these platforms apply. We need age-appropriate restrictions alongside digital literacy — not instead of it.\nHost: Tom, any response?\nTom: The issue is that restriction without education creates what I call the forbidden fruit effect — the moment restrictions are lifted, young people binge. I've seen this in schools that blocked social media completely and then found students spending even more time online at weekends to compensate.\nHost: Thank you both. It seems there is agreement on the need for education, but a real divide on the role of restrictions.",
+      "title": "Workplace Safety Initiative",
+      "text": "Safety Officer Tom: I've been analyzing our workplace incident reports from the past two years, and I'm concerned about our trend. We've had 34 reported injuries this year, which is up 15 percent from last year. Most incidents are slips, trips, and falls in warehouse areas. I'm proposing we implement mandatory safety training for all warehouse staff every six months, not annually as we currently do.\n\nWarehouse Manager David: Tom, I appreciate your concern, but I'm worried about requiring training every six months. That's a lot of time away from work. My team's productivity is already under pressure with current targets. If we pull people off the floor for training frequently, we'll fall further behind on our goals. Can't we just focus on better signage and equipment?\n\nWorker Representative Angela: I actually support Tom's proposal. I work in the warehouse, and I've seen some close calls that could have been serious. The issue isn't signage—we know the hazards. The problem is we get complacent. Regular training keeps safety top of mind. Plus, Tom, I think twice-yearly training would actually improve morale because workers feel the company cares about their wellbeing.\n\nSafety Officer Tom: Thank you, Angela. David, I understand your concern about productivity, but consider the cost of injuries. Each workplace injury costs us about $12,000 in direct and indirect costs. If we can prevent even three injuries per year, the training pays for itself. And research shows regular safety training actually reduces injuries, which ultimately improves productivity.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-026-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: Why Small Towns Deserve More Investment",
-      "text": "For decades, government investment in infrastructure, healthcare, and education has flowed predominantly toward major cities. This concentration of resources has created a growing divide between the opportunities available to people in urban centres and those living in smaller towns and rural communities. I believe this imbalance is not only unfair but economically short-sighted.\n\nConsider healthcare. In most Canadian cities, residents have access to walk-in clinics, specialist hospitals, and urgent care centres within a reasonable distance. In small towns, the nearest hospital may be an hour's drive away. Rural residents have higher rates of late-stage cancer diagnoses precisely because early detection requires access to diagnostic services that simply are not available locally.\n\nEducation tells a similar story. Urban schools are often better funded, have access to more experienced teachers, and offer a wider range of programmes and extracurricular activities. Rural students frequently travel long distances to school and have fewer post-secondary options nearby. This creates a pattern in which talented young people leave their home communities for cities — and rarely return.\n\nCritics of increased rural investment argue that the cost per person is too high. This logic is flawed. The cost of maintaining a dispersed population is not a reason to abandon it — it is an argument for smarter, targeted investment in sustainable local infrastructure.\n\nIf we are serious about equality of opportunity, the postal code where someone is born should not determine the quality of healthcare, education, or economic opportunity available to them. Small towns and rural communities deserve better — not out of sentiment, but out of a genuine commitment to a more equitable society.",
+      "title": "Digital Privacy in the Workplace",
+      "text": "I want to talk about something that concerns me deeply—workplace monitoring and digital privacy. Many companies today monitor their employees constantly: they track keystrokes, monitor websites visited, log bathroom breaks through card access, and even use AI to analyze email and chat conversations. The argument is usually that this improves productivity and security, but I think it's gone too far. Yes, employers have legitimate security concerns, but the level of surveillance we're accepting is unprecedented. When employees feel constantly watched, it creates anxiety and erodes trust. Studies show that excessive monitoring actually decreases productivity and morale. Workers spend time trying to appear productive rather than actually being productive. Moreover, there's a moral issue here. As an employee, you're a person, not a machine to be optimized. You deserve privacy and dignity at work. I'm not arguing against all monitoring—reasonable security measures are necessary. But there's a middle ground between trusting employees completely and treating them like suspects. Companies that have implemented less invasive monitoring policies actually report higher employee satisfaction and retention. So my position is this: employers should use targeted monitoring only where necessary for genuine security reasons, not blanket surveillance of everything everyone does. Trust and respect for employee privacy create better workplaces.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-026-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What is the problem the resident is reporting?",
+      "prompt": "What is the rental agreement number?",
       "options": [
-        "A broken window",
-        "A water leak under the kitchen sink",
-        "A faulty heating system",
-        "A blocked toilet"
+        "CR-824447",
+        "CR-892447",
+        "CR-894247",
+        "CR-824294"
       ],
-      "correctAnswer": "A water leak under the kitchen sink",
-      "explanation": "The resident calls to report water pooling under the kitchen sink.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "CR-892447",
+      "explanation": "Customer provides the rental agreement number as 'CR-892447.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-026-q02",
       "audioScriptId": "celpip-listening-026-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How fast is the bucket filling up?",
+      "prompt": "What vehicle was rented?",
       "options": [
-        "Every thirty minutes",
-        "Every hour",
-        "Every two hours",
-        "Every day"
+        "Blue Honda Civic",
+        "Blue Hyundai Elantra",
+        "Silver Toyota Corolla",
+        "Black Hyundai Elantra"
       ],
-      "correctAnswer": "Every two hours",
-      "explanation": "The resident says the bucket fills up about every two hours.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "Blue Hyundai Elantra",
+      "explanation": "Customer mentions 'I rented the blue Hyundai Elantra.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-026-q03",
       "audioScriptId": "celpip-listening-026-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent suspect the problem is?",
+      "prompt": "What was the pickup time?",
       "options": [
-        "A cracked drain pipe",
-        "A loose connection on the supply line",
-        "A broken water heater",
-        "A faulty pressure valve"
+        "8 AM",
+        "9 AM",
+        "10 AM",
+        "11 AM"
       ],
-      "correctAnswer": "A loose connection on the supply line",
-      "explanation": "The superintendent says it sounds like a loose connection on the supply line.",
+      "correctAnswer": "10 AM",
+      "explanation": "Customer states they picked up the vehicle 'at 10 AM on Tuesday, June 3rd.'",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-026-q04",
       "audioScriptId": "celpip-listening-026-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "When is the plumber available?",
+      "prompt": "What damage was visible in the pickup photos?",
       "options": [
-        "This morning",
-        "Tomorrow morning",
-        "Two o'clock this afternoon",
-        "Next week"
+        "A scratch on the driver's door",
+        "A dent on the back bumper",
+        "A broken side mirror",
+        "No damage"
       ],
-      "correctAnswer": "Two o'clock this afternoon",
-      "explanation": "The superintendent says the plumber is available at two o'clock this afternoon.",
+      "correctAnswer": "A dent on the back bumper",
+      "explanation": "Agent confirms 'there is a dent visible in the corner of the back bumper' in the pickup photos.",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-026-q05",
       "audioScriptId": "celpip-listening-026-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent ask the resident to do immediately?",
+      "prompt": "When was the vehicle returned?",
       "options": [
-        "Call a plumber directly",
-        "Leave the apartment",
-        "Turn off the shut-off valve",
-        "Open the windows"
+        "1 PM today",
+        "2 PM today",
+        "3 PM today",
+        "4 PM today"
       ],
-      "correctAnswer": "Turn off the shut-off valve",
-      "explanation": "The superintendent advises turning off the shut-off valve under the sink.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "4 PM today",
+      "explanation": "Customer states 'I returned the vehicle just now, at 4 PM today.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-026-q06",
       "audioScriptId": "celpip-listening-026-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the dripping stopping confirm?",
+      "prompt": "What was the daily cost of the damage waiver insurance?",
       "options": [
-        "The drain is blocked",
-        "The pipe is cracked",
-        "The problem is with the supply line, not the drain",
-        "The water pressure is too high"
+        "$12 per day",
+        "$15 per day",
+        "$18 per day",
+        "$20 per day"
       ],
-      "correctAnswer": "The problem is with the supply line, not the drain",
-      "explanation": "The superintendent says this confirms the problem is with the supply line.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "$18 per day",
+      "explanation": "Customer mentions purchasing damage waiver for 'the extra $18 per day.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-026-q07",
       "audioScriptId": "celpip-listening-026-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long is the repair expected to take?",
+      "prompt": "What new damage was found on the vehicle?",
       "options": [
-        "Less than one hour",
-        "Two to three hours",
-        "All afternoon",
-        "Several days"
+        "A dent on the front bumper",
+        "A scratch on the driver's door",
+        "A broken window",
+        "A damaged side mirror"
       ],
-      "correctAnswer": "Less than one hour",
-      "explanation": "The superintendent says it should take under an hour.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "A scratch on the driver's door",
+      "explanation": "Agent mentions 'The damage report lists a scratch on the driver's door.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-026-q08",
       "audioScriptId": "celpip-listening-026-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why does the resident need to be home for the repair?",
+      "prompt": "Is the customer responsible for paying for the new damage?",
       "options": [
-        "To pay the plumber in cash",
-        "To sign a repair agreement",
-        "To give the plumber access to the cabinet",
-        "To watch the repair procedure"
+        "Yes, full amount",
+        "Yes, 50% of the cost",
+        "No, it's covered by the damage waiver",
+        "Not clear from the conversation"
       ],
-      "correctAnswer": "To give the plumber access to the cabinet",
-      "explanation": "The superintendent says the plumber needs to access the cabinet under the sink.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "No, it's covered by the damage waiver",
+      "explanation": "Agent confirms the damage waiver covers the new scratch and customer is not responsible.",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-026-q09",
       "audioScriptId": "celpip-listening-026-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How many job offers has Priya received?",
+      "prompt": "How long have the dishes been in the sink?",
       "options": [
-        "One",
-        "Two",
-        "Three",
-        "Four"
+        "One day",
+        "Two days",
+        "Three days",
+        "Four days"
       ],
-      "correctAnswer": "Two",
-      "explanation": "Priya says she received two job offers this week.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "Three days",
+      "explanation": "Alex states 'it's been sitting there for three days.'",
+      "difficulty": "medium",
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-026-q10",
       "audioScriptId": "celpip-listening-026-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What concern does Priya have about the startup?",
+      "prompt": "Why has Jamie been unable to do the dishes?",
       "options": [
-        "The salary is too low",
-        "It is located too far away",
-        "It is only two years old and a bit risky",
-        "The role lacks creative freedom"
+        "They've been out of town",
+        "They've been really busy with work",
+        "They haven't been feeling well",
+        "They forgot"
       ],
-      "correctAnswer": "It is only two years old and a bit risky",
-      "explanation": "Priya says the startup is only two years old and a bit risky.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "They've been really busy with work",
+      "explanation": "Jamie says 'I've been really busy with work this week.'",
+      "difficulty": "medium",
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-026-q11",
       "audioScriptId": "celpip-listening-026-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What advantage does the non-profit offer over the startup?",
+      "prompt": "What grocery solution do they agree on?",
       "options": [
-        "Higher salary",
-        "More creative freedom",
-        "Better benefits and a pension",
-        "Faster career advancement"
+        "Alex will buy all groceries",
+        "Jamie will buy all groceries",
+        "They'll split everything equally",
+        "They'll alternate who buys"
       ],
-      "correctAnswer": "Better benefits and a pension",
-      "explanation": "Priya says the non-profit has excellent benefits and a guaranteed pension.",
+      "correctAnswer": "They'll split everything equally",
+      "explanation": "Jamie agrees that splitting equally makes more sense for groceries.",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-026-q12",
       "audioScriptId": "celpip-listening-026-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How long is the commute to the startup?",
+      "prompt": "How much is the internet bill this month?",
       "options": [
-        "Ten minutes",
-        "Twenty minutes",
-        "Forty-five minutes each way",
-        "Over an hour each way"
+        "$65",
+        "$70",
+        "$75",
+        "$80"
       ],
-      "correctAnswer": "Forty-five minutes each way",
-      "explanation": "Priya says the startup is forty-five minutes each way on transit.",
+      "correctAnswer": "$75",
+      "explanation": "Alex states 'the internet bill is due next week. It's $75 this month.'",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-026-q13",
       "audioScriptId": "celpip-listening-026-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Kevin point out about commuting time?",
+      "prompt": "By how much did the internet bill increase?",
       "options": [
-        "It adds to fitness levels",
-        "It is a chance to read",
-        "The non-profit saves her two hours a day",
-        "Transit fares are expensive"
+        "$3",
+        "$5",
+        "$10",
+        "$15"
       ],
-      "correctAnswer": "The non-profit saves her two hours a day",
-      "explanation": "Kevin says Priya would get back two hours a day by working closer to home.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "$5",
+      "explanation": "Alex explains 'they increased the plan by five dollars.'",
+      "difficulty": "medium",
+      "topic": "apartment living"
     },
     {
       "id": "celpip-listening-026-q14",
       "audioScriptId": "celpip-listening-026-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is entitled to a provincial health card?",
+      "prompt": "When does Route 95 begin service?",
       "options": [
-        "Only Canadian citizens",
-        "Permanent residents and Canadian citizens",
-        "International students only",
-        "Anyone living in Canada"
+        "August 1st",
+        "August 15th",
+        "September 1st",
+        "September 15th"
       ],
-      "correctAnswer": "Permanent residents and Canadian citizens",
-      "explanation": "The speaker says permanent residents or Canadian citizens are entitled to a health card.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "September 1st",
+      "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-026-q15",
       "audioScriptId": "celpip-listening-026-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is one document required to apply for a health card?",
+      "prompt": "What is the frequency of peak hour service?",
       "options": [
-        "A letter from an employer",
-        "A government-issued photo ID",
-        "A birth certificate",
-        "A utility bill from a previous province"
+        "Every 10 minutes",
+        "Every 15 minutes",
+        "Every 20 minutes",
+        "Every 30 minutes"
       ],
-      "correctAnswer": "A government-issued photo ID",
-      "explanation": "The speaker says one of the two IDs must be a government-issued photo ID.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "Every 15 minutes",
+      "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-026-q16",
       "audioScriptId": "celpip-listening-026-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long must new applicants typically wait before coverage begins?",
+      "prompt": "How much travel time is saved with Route 95?",
       "options": [
-        "One week",
-        "One month",
-        "Three months",
-        "Six months"
+        "15 minutes",
+        "20 minutes",
+        "23 minutes",
+        "30 minutes"
       ],
-      "correctAnswer": "Three months",
-      "explanation": "The speaker says there is typically a three-month waiting period.",
+      "correctAnswer": "23 minutes",
+      "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved.",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-026-q17",
       "audioScriptId": "celpip-listening-026-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT covered by the provincial health card?",
+      "prompt": "What is the cost of a single trip?",
       "options": [
-        "Emergency room visits",
-        "Family doctor visits",
-        "Dental care",
-        "Blood work"
+        "$2.50",
+        "$3.00",
+        "$3.50",
+        "$4.00"
       ],
-      "correctAnswer": "Dental care",
-      "explanation": "The speaker says dental care is not automatically covered by the health card.",
+      "correctAnswer": "$3.50",
+      "explanation": "The guide states 'single trip is three dollars fifty cents.'",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-026-q18",
       "audioScriptId": "celpip-listening-026-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is the Health Care Connect programme?",
+      "prompt": "What is the monthly pass cost?",
       "options": [
-        "A private insurance plan",
-        "A walk-in clinic network",
-        "A programme that matches patients to available physicians",
-        "An online pharmacy"
+        "$75",
+        "$80",
+        "$90",
+        "$100"
       ],
-      "correctAnswer": "A programme that matches patients to available physicians",
-      "explanation": "The speaker describes Health Care Connect as matching patients to available physicians.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "$90",
+      "explanation": "The guide specifies 'a monthly pass is ninety dollars.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-026-q19",
       "audioScriptId": "celpip-listening-026-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What should residents do if their address changes?",
+      "prompt": "What features are available on the new buses?",
       "options": [
-        "Apply for a new health card",
-        "Report the change to the provincial health authority",
-        "Contact their family doctor only",
-        "Wait until renewal time"
+        "USB charging only",
+        "Free Wi-Fi only",
+        "USB charging, free Wi-Fi, and comfortable seating",
+        "Air conditioning only"
       ],
-      "correctAnswer": "Report the change to the provincial health authority",
-      "explanation": "The speaker says to report any change of address to keep records current.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "USB charging, free Wi-Fi, and comfortable seating",
+      "explanation": "The guide mentions 'The new buses feature USB charging ports, free Wi-Fi, and comfortable seating.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-026-q20",
       "audioScriptId": "celpip-listening-026-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Who is eligible for the new childcare subsidy?",
+      "prompt": "How much is being invested in recruitment and retention?",
       "options": [
-        "All families with children under twelve",
-        "Families earning below ninety thousand dollars per year",
-        "Only single-parent households",
-        "Families on social assistance only"
+        "25 million dollars",
+        "30 million dollars",
+        "35 million dollars",
+        "40 million dollars"
       ],
-      "correctAnswer": "Families earning below ninety thousand dollars per year",
-      "explanation": "The report says eligible families earn below ninety thousand dollars per year.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "35 million dollars",
+      "explanation": "The province has announced a 35 million dollar investment.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-026-q21",
       "audioScriptId": "celpip-listening-026-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What is the maximum daily childcare cost under the new programme?",
+      "prompt": "How many nursing positions are currently unfilled?",
       "options": [
-        "Five dollars",
-        "Ten dollars",
-        "Twenty dollars",
-        "Fifty dollars"
+        "600 positions",
+        "700 positions",
+        "800 positions",
+        "900 positions"
       ],
-      "correctAnswer": "Ten dollars",
-      "explanation": "The report states families will pay no more than ten dollars per day.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "800 positions",
+      "explanation": "There are over 800 unfilled nursing positions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-026-q22",
       "audioScriptId": "celpip-listening-026-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Which children will receive priority access?",
+      "prompt": "By what percentage are starting salaries for nurses increasing?",
       "options": [
-        "School-age children",
-        "Children under six and those already on waitlists",
-        "Children of essential workers",
-        "All children equally"
+        "8 percent",
+        "10 percent",
+        "12 percent",
+        "15 percent"
       ],
-      "correctAnswer": "Children under six and those already on waitlists",
-      "explanation": "The minister says priority goes to children under six and families on existing waitlists.",
+      "correctAnswer": "12 percent",
+      "explanation": "Starting salaries for nurses are being increased by 12 percent.",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-026-q23",
       "audioScriptId": "celpip-listening-026-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will approved families be notified?",
+      "prompt": "What is the maximum signing bonus for rural relocations?",
       "options": [
-        "By post",
-        "By telephone",
-        "By email",
-        "Through their childcare provider"
+        "10,000 dollars",
+        "12,000 dollars",
+        "15,000 dollars",
+        "20,000 dollars"
       ],
-      "correctAnswer": "By email",
-      "explanation": "The report says approved families will be notified by email.",
+      "correctAnswer": "15,000 dollars",
+      "explanation": "Signing bonuses of up to 15,000 dollars are offered for rural relocations.",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-026-q24",
       "audioScriptId": "celpip-listening-026-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What concern did opposition critics raise?",
+      "prompt": "What percentage of vacant positions are expected to be filled in 18 months?",
       "options": [
-        "The daily fee is too high",
-        "The programme excludes informal unlicenced home-based care",
-        "Too many providers have already registered",
-        "The programme starts too late in the year"
+        "40 percent",
+        "50 percent",
+        "60 percent",
+        "75 percent"
       ],
-      "correctAnswer": "The programme excludes informal unlicenced home-based care",
-      "explanation": "Critics say the programme does not extend to informal home-based care arrangements.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "60 percent",
+      "explanation": "Officials estimate it will take approximately 18 months to fill 60 percent of positions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-026-q25",
       "audioScriptId": "celpip-listening-026-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say is the main problem with social media platforms?",
+      "prompt": "How many workplace injuries were reported this year?",
       "options": [
-        "They are too expensive",
-        "They are designed to maximise engagement through comparison",
-        "They do not have enough educational content",
-        "They spread false news to teenagers"
+        "25 injuries",
+        "29 injuries",
+        "34 injuries",
+        "39 injuries"
       ],
-      "correctAnswer": "They are designed to maximise engagement through comparison",
-      "explanation": "Diane says platforms are deliberately built to maximise engagement, which means maximising comparison.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "34 injuries",
+      "explanation": "Tom reports 34 workplace injuries this year.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-026-q26",
       "audioScriptId": "celpip-listening-026-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom advocate for?",
+      "prompt": "What is the percentage increase in injuries from last year?",
       "options": [
-        "Banning social media entirely",
-        "Age-based restrictions on all platforms",
-        "Digital literacy education for teenagers",
-        "Parental monitoring software"
+        "10 percent",
+        "12 percent",
+        "15 percent",
+        "18 percent"
       ],
-      "correctAnswer": "Digital literacy education for teenagers",
-      "explanation": "Tom says the answer is teaching teenagers to be critical consumers of digital content.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "15 percent",
+      "explanation": "The number of injuries is up 15 percent from last year.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-026-q27",
       "audioScriptId": "celpip-listening-026-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "On what point do Diane and Tom agree?",
+      "prompt": "What type of incident accounts for most injuries?",
       "options": [
-        "Restrictions are necessary",
-        "Education about social media is necessary",
-        "Teenagers should avoid all social media",
-        "Parents should manage all screen time"
+        "Equipment failures",
+        "Slips, trips, and falls",
+        "Chemical exposure",
+        "Back injuries from lifting"
       ],
-      "correctAnswer": "Education about social media is necessary",
-      "explanation": "The host notes both agree on the need for education.",
+      "correctAnswer": "Slips, trips, and falls",
+      "explanation": "Most incidents are slips, trips, and falls in warehouse areas.",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-026-q28",
       "audioScriptId": "celpip-listening-026-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say a thirteen-year-old is not equipped to do?",
+      "prompt": "What is Tom's proposed safety training frequency?",
       "options": [
-        "Understand complex text",
-        "Resist deliberate platform manipulation",
-        "Manage their own time",
-        "Communicate online safely"
+        "Quarterly",
+        "Twice yearly",
+        "Annually",
+        "Every two years"
       ],
-      "correctAnswer": "Resist deliberate platform manipulation",
-      "explanation": "Diane says a thirteen-year-old is neurologically not equipped to resist deliberate platform manipulation.",
+      "correctAnswer": "Twice yearly",
+      "explanation": "Tom proposes mandatory training every six months, not annually.",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-026-q29",
       "audioScriptId": "celpip-listening-026-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom call the effect of banning social media without education?",
+      "prompt": "What is David's main concern about the training proposal?",
       "options": [
-        "The rebound effect",
-        "The forbidden fruit effect",
-        "The digital divide",
-        "The screen overload effect"
+        "Training effectiveness",
+        "Cost of training",
+        "Time away from work affecting productivity",
+        "Staff availability"
       ],
-      "correctAnswer": "The forbidden fruit effect",
-      "explanation": "Tom calls the over-compensating behaviour after restrictions the forbidden fruit effect.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "Time away from work affecting productivity",
+      "explanation": "David worries that frequent training time away will affect productivity.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-026-q30",
       "audioScriptId": "celpip-listening-026-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What evidence does Tom give for the forbidden fruit effect?",
+      "prompt": "What alternative does David suggest?",
       "options": [
-        "A government study on screen time",
-        "Personal experience with teenagers at home",
-        "Schools that blocked social media found students spent more time online on weekends",
-        "Research from Diane's own institution"
+        "Online training only",
+        "Better signage and equipment",
+        "Reduced warehouse hours",
+        "Equipment replacement"
       ],
-      "correctAnswer": "Schools that blocked social media found students spent more time online on weekends",
-      "explanation": "Tom says schools that blocked social media found students spent even more time online on weekends.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "Better signage and equipment",
+      "explanation": "David suggests focusing on better signage and equipment instead.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-026-q31",
       "audioScriptId": "celpip-listening-026-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What specific group does Diane say is most affected by heavy social media use?",
+      "prompt": "What cost estimate does Tom provide for each workplace injury?",
       "options": [
-        "Boys aged ten to twelve",
-        "All teenagers equally",
-        "Girls in particular",
-        "Teenagers in rural areas"
+        "$8,000",
+        "$10,000",
+        "$12,000",
+        "$15,000"
       ],
-      "correctAnswer": "Girls in particular",
-      "explanation": "Diane says anxiety and depression are particularly high for girls.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "$12,000",
+      "explanation": "Tom states each workplace injury costs about $12,000 in direct and indirect costs.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-026-q32",
       "audioScriptId": "celpip-listening-026-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's summary at the end?",
+      "prompt": "What additional benefit does Angela mention about training?",
       "options": [
-        "Both guests fully agree",
-        "The debate is too political to resolve",
-        "There is agreement on education but a divide on restrictions",
-        "Tom has made the stronger argument"
+        "Increased wages",
+        "Improved morale",
+        "Reduced hours",
+        "Better equipment"
       ],
-      "correctAnswer": "There is agreement on education but a divide on restrictions",
-      "explanation": "The host summarises that there is agreement on education but a real divide on restrictions.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "Improved morale",
+      "explanation": "Angela believes regular training improves morale because workers feel the company cares.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-026-q33",
       "audioScriptId": "celpip-listening-026-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker argue is wrong with current government investment patterns?",
+      "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "Too much money is spent on small towns",
-        "Investment flows mainly to cities, creating inequality",
-        "Rural communities refuse investment",
-        "Cities need more hospitals"
+        "It's too expensive",
+        "It has gone too far in terms of surveillance",
+        "It doesn't improve security",
+        "It's ineffective"
       ],
-      "correctAnswer": "Investment flows mainly to cities, creating inequality",
-      "explanation": "The speaker says investment has predominantly flowed toward major cities, creating a divide.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "It has gone too far in terms of surveillance",
+      "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-026-q34",
       "audioScriptId": "celpip-listening-026-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health problem does the speaker connect to rural under-investment?",
+      "prompt": "According to the speaker, what is the claimed reason for workplace monitoring?",
       "options": [
-        "Higher rates of heart disease",
-        "More road accidents",
-        "Higher rates of late-stage cancer diagnoses",
-        "Fewer vaccinations"
+        "To reduce wages",
+        "To improve productivity and security",
+        "To prevent theft",
+        "To track attendance"
       ],
-      "correctAnswer": "Higher rates of late-stage cancer diagnoses",
-      "explanation": "The speaker says rural residents have higher rates of late-stage cancer because early detection services are not available locally.",
-      "difficulty": "easy",
-      "topic": "using digital government services"
+      "correctAnswer": "To improve productivity and security",
+      "explanation": "The speaker mentions that companies argue monitoring improves productivity and security.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-026-q35",
       "audioScriptId": "celpip-listening-026-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What pattern in education does the speaker describe?",
+      "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
-        "Rural schools are better funded than urban ones",
-        "Talented young people leave small towns and rarely return",
-        "Rural students prefer online learning",
-        "Urban students move to rural areas for university"
+        "They work harder",
+        "It creates anxiety and erodes trust",
+        "They become more efficient",
+        "They communicate better"
       ],
-      "correctAnswer": "Talented young people leave small towns and rarely return",
-      "explanation": "The speaker says talented young people leave for cities and rarely return.",
+      "correctAnswer": "It creates anxiety and erodes trust",
+      "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-026-q36",
       "audioScriptId": "celpip-listening-026-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How does the speaker respond to critics who say rural investment costs too much per person?",
+      "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "By agreeing and suggesting cuts",
-        "By calling it a reason for smarter targeted investment",
-        "By dismissing the economic argument entirely",
-        "By citing statistics on rural GDP"
+        "It increases productivity",
+        "It decreases productivity and morale",
+        "It has no effect",
+        "It improves communication"
       ],
-      "correctAnswer": "By calling it a reason for smarter targeted investment",
-      "explanation": "The speaker says the cost argument is flawed and is actually an argument for smarter, targeted investment.",
+      "correctAnswer": "It decreases productivity and morale",
+      "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
       "difficulty": "medium",
-      "topic": "using digital government services"
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-026-q37",
       "audioScriptId": "celpip-listening-026-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker say should not determine the quality of opportunity a person has?",
+      "prompt": "What solution does the speaker propose?",
       "options": [
-        "Their family income",
-        "Their level of education",
-        "The postal code where they were born",
-        "Their language ability"
+        "No monitoring at all",
+        "Complete transparency monitoring",
+        "Targeted monitoring only where necessary",
+        "Random monitoring"
       ],
-      "correctAnswer": "The postal code where they were born",
-      "explanation": "The speaker says the postal code where someone is born should not determine their opportunities.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "Targeted monitoring only where necessary",
+      "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-026-q38",
       "audioScriptId": "celpip-listening-026-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall tone?",
+      "prompt": "What do companies with less invasive monitoring report?",
       "options": [
-        "Nostalgic and sentimental",
-        "Objective and neutral",
-        "Persuasive and advocacy-driven",
-        "Pessimistic and resigned"
+        "Lower profits",
+        "Higher employee satisfaction and retention",
+        "More security issues",
+        "Reduced efficiency"
       ],
-      "correctAnswer": "Persuasive and advocacy-driven",
-      "explanation": "The speaker argues a clear position and calls for change based on principles of equity.",
-      "difficulty": "hard",
-      "topic": "using digital government services"
+      "correctAnswer": "Higher employee satisfaction and retention",
+      "explanation": "The speaker mentions companies with less invasive monitoring report higher satisfaction and retention.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     }
   ]
 }

@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 16",
+  "title": "CELPIP General Listening — Practice Test 16",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-016-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Reporting a Water Leak in an Apartment",
-      "text": "Resident: Hello, I need to report a water leak. It started this morning under my kitchen sink. There's water pooling on the floor.\nSuperintendent: I'll send someone right away. Can you confirm your unit number?\nResident: It's unit 4B on the fourth floor.\nSuperintendent: Got it. And is the leak a slow drip or is it flowing steadily?\nResident: It's a steady drip. I've put a bucket under it, but it's filling up about every two hours.\nSuperintendent: That sounds like a loose connection on the supply line. The plumber we use is available this afternoon. Would two o'clock work for you?\nResident: Yes, that's fine. Do I need to be home?\nSuperintendent: Yes, please be there so the plumber can access the cabinet under the sink. Also, to be safe, turn off the shut-off valve under the sink — there's usually a small handle on the left pipe.\nResident: I found it and turned it off. The dripping has stopped for now.\nSuperintendent: Perfect. That confirms the problem is with the supply line, not the drain. The plumber will replace the fitting. It should take under an hour.",
+      "title": "Restaurant Reservation Issue",
+      "text": "Diner: Hi, I made a reservation for tonight at 7 PM under the name Anderson, and I just realized the name is spelled wrong in your system. Manager: Oh no, I'm sorry about that. Let me look that up. How is it spelled? Diner: A-N-D-E-R-S-O-N. I don't know how it got misspelled. Manager: I see it here as A-N-D-E-R-S-E-N. That's an easy mix-up. When you arrive, just let the host know and we'll get you seated right away. Diner: Actually, I'm calling because I need to change the time. Can I do 7:30 instead? Manager: Absolutely. Let me adjust that for you. How many people? Diner: Six of us. Manager: Perfect. I've moved you from 7 PM to 7:30 PM for six people, and I've corrected the name spelling. Is there anything else? Diner: Yes, one more thing. Can you make sure we have a quiet table? There are some business matters we want to discuss. Manager: I'll add a note to your reservation requesting a quieter area away from the bar. We have some nice tables by the window. Diner: That sounds great. What's your cancellation policy? Manager: We require 24 hours notice for cancellations. If you need to cancel, just call us before 7:30 PM tomorrow. Diner: Got it. Thank you.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-016-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Choosing Between Two Job Offers",
-      "text": "Priya: I'm in a tough spot. I got two job offers this week and I have until Friday to decide.\nKevin: That's a great problem to have! What are the offers?\nPriya: One is a junior marketing role at a tech startup. Good salary, lots of creative freedom, but the company is only two years old and a bit risky. The other is a coordinator position at a non-profit — lower salary, but excellent benefits and a guaranteed pension.\nKevin: What matters more to you right now — financial security or career growth?\nPriya: Honestly, both. I have student loans to pay off, but I also don't want to be stuck in a job that goes nowhere.\nKevin: Could the non-profit lead to advancement?\nPriya: They mentioned there's a senior coordinator role that opens up every couple of years. But at the startup, if it takes off, the growth potential is huge.\nKevin: Have you factored in the commute?\nPriya: Good point — the startup is downtown, forty-five minutes each way on transit. The non-profit is ten minutes from my apartment.\nKevin: That's two hours a day you'd get back with the non-profit. That's not nothing.",
+      "title": "Music Concert Plans",
+      "text": "Alex: Are you going to the concert next Saturday? Casey: Which one? There are a few shows next weekend. Alex: The indie rock festival at the waterfront. Casey: Oh yeah, I've been thinking about it. How much are tickets? Alex: They're forty dollars each. Casey: That's not too bad. Who's performing? Alex: Five bands. The headliner is The Northern Stars. Casey: Oh, I love them. What time does it start? Alex: Six PM. It should wrap up around eleven. Casey: That's pretty late. Is there parking nearby? Alex: Yeah, there's a parking lot right by the venue. It's five dollars for the whole night. Casey: That's reasonable. Should we get food there or bring our own? Alex: They have food vendors there, but it's probably expensive. Casey: Let's grab something before we go then. Alex: Good idea. Want me to buy your ticket? Casey: Yeah, that would be great. Just send me the bill.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-016-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "How to Use the Provincial Health Insurance System",
-      "text": "Welcome to this information session on using the provincial health insurance system. If you are a permanent resident or Canadian citizen living in this province, you are entitled to a provincial health card, which covers the cost of most medically necessary services.\n\nTo obtain your health card, visit a ServiceOntario or equivalent provincial office with two pieces of identification — one must be a government-issued photo ID, such as a passport or permanent resident card, and one must show your current address, such as a utility bill or bank statement. New applicants typically wait a three-month period before coverage begins, so it is important to apply as soon as possible after arriving.\n\nYour health card covers visits to a family doctor, specialist consultations when referred by your doctor, emergency room visits, hospital stays, and diagnostic tests including X-rays and blood work. It does not automatically cover prescription drugs, dental care, or vision care, which are typically covered through separate private insurance plans or provincial drug benefit programmes for qualifying residents.\n\nIf you do not have a family doctor, you can register with the Health Care Connect programme, which matches patients to available physicians. In the meantime, walk-in clinics and urgent care centres can treat most non-emergency conditions and are also covered by your health card.\n\nAlways carry your health card when attending medical appointments, and report any change of address to the provincial health authority to ensure your records are current.",
+      "title": "University Orientation: First Week Checklist",
+      "text": "Hello, welcome to orientation week. I'm here to walk you through essential tasks for your first week. First, attend your faculty's orientation meeting on Monday at ten AM in the Student Centre. Bring your student ID. Second, register for your courses online by Wednesday, August 28th. Early registration means better class times. Third, purchase your textbooks from the university bookstore before classes start. Fourth, get your student photo ID taken at the Services Office between 9 and 4 on any day this week. The photo ID is required for library access and residence entry. Fifth, activate your email account at the IT support desk. Your email is your primary communication channel for all university announcements. Sixth, find your classes on a campus map. Most buildings are located around the central quad. Seventh, attend the Welcome Social on Friday evening in the gymnasium. It's a great way to meet other students and faculty. Eighth, complete your health and immunization form at Student Health Services. This is mandatory before attending classes. Finally, budget about three hundred dollars for books and materials. Questions? Visit the information desk in the main foyer.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-016-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: Province Launches New Childcare Subsidy Programme",
-      "text": "The provincial government announced a new childcare subsidy programme this morning, aimed at reducing childcare costs for families earning below ninety thousand dollars per year. Under the new programme, eligible families will pay no more than ten dollars per day for regulated childcare, beginning on the first of next month.\n\nThe Minister of Families said the programme is expected to benefit approximately forty thousand children across the province in its first year. Priority access will be given to families with children under the age of six, as well as families currently on waitlists at participating childcare centres.\n\nTo apply, parents must submit an application through the provincial government's online portal and provide proof of income from the previous tax year. Applications will be processed within fifteen business days, and approved families will be notified by email.\n\nChild-care providers interested in joining the programme must sign a participation agreement and comply with the province's staffing and curriculum standards. The government said that over three hundred licenced providers have already registered ahead of the launch.\n\nOpposition critics raised concerns that the programme does not extend to informal care arrangements, such as home-based care providers who are not licenced. The government indicated it plans to expand eligibility in future years.",
+      "title": "Nova Scotia Healthcare Worker Recruitment",
+      "text": "Nova Scotia is launching an aggressive recruitment campaign to address critical shortages in healthcare professionals. The province has announced a 35 million dollar investment in recruitment and retention initiatives. Currently, there are over 800 unfilled nursing positions across Nova Scotia hospitals and clinics. The campaign targets nurses, physiotherapists, occupational therapists, and laboratory technicians. Starting salaries for nurses are being increased by 12 percent to compete with other provinces. The government is also offering signing bonuses of up to 15,000 dollars for candidates relocating to rural communities. Housing assistance programs will help new recruits find affordable accommodation. International recruitment is underway, with partnerships established with nursing programs in the Philippines and India. Officials estimate it will take approximately 18 months to fill 60 percent of the vacant positions. Patient wait times have increased significantly due to staffing shortages, with some emergency departments reporting delays of four to six hours.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-016-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Is Social Media Good or Bad for Teenagers?",
-      "text": "Host: Today's discussion focuses on social media and its impact on teenagers. With me are two commentators: Diane, a child development researcher, and Tom, who advocates for digital literacy education. Diane, let's start with you — is social media harmful to teenagers?\nDiane: The research is quite clear that heavy social media use is associated with higher rates of anxiety, depression, and sleep disruption in teenagers, particularly for girls. The problem isn't the technology itself — it's the design. Platforms are deliberately built to maximise engagement, which means maximising the time young people spend comparing themselves to others.\nHost: Tom, do you think the solution is restricting access?\nTom: I strongly disagree with blanket restrictions. The answer is education. We need to teach teenagers to be critical consumers of digital content — how algorithms work, how images are edited, what business models drive these platforms. Banning access doesn't develop those skills; it just delays the problem.\nHost: Diane, what do you say to that?\nDiane: I agree that education is necessary, but it is not sufficient on its own. A thirteen-year-old is neurologically not equipped to resist the deliberate manipulation that these platforms apply. We need age-appropriate restrictions alongside digital literacy — not instead of it.\nHost: Tom, any response?\nTom: The issue is that restriction without education creates what I call the forbidden fruit effect — the moment restrictions are lifted, young people binge. I've seen this in schools that blocked social media completely and then found students spending even more time online at weekends to compensate.\nHost: Thank you both. It seems there is agreement on the need for education, but a real divide on the role of restrictions.",
+      "title": "University Program Expansion Planning",
+      "text": "Dean Robert: We've been asked to consider expanding our engineering program, particularly in renewable energy studies. The faculty has requested three additional full-time instructors and funding for new laboratory equipment. The cost would be approximately 2.4 million dollars over two years. Given our current budget constraints, I'm hesitant to commit to this expansion.\n\nProfessor Elena: I understand the budget concerns, Dean, but we're actually losing enrollment to competing universities who offer these programs. Last year, we lost 150 potential engineering students to schools with stronger renewable energy options. If we don't expand now, we'll fall behind. Plus, there's significant industry demand for graduates with renewable energy expertise. Companies are specifically recruiting from universities with these specialized programs.\n\nStudent Representative Malik: From a student perspective, I absolutely support this expansion. Many of my classmates are interested in sustainability and green technology, but we don't have the courses or facilities to support that focus. I think this investment would make our university much more attractive to prospective students, which would actually increase our overall enrollment and revenue.\n\nBudget Committee Member Diana: Malik makes a good point about revenue. If this program attracts even 200 additional students, the tuition revenue would exceed the expansion costs within three years. And we could explore partnerships with industry for funding. I've been in conversations with several renewable energy companies that might contribute equipment or funding in exchange for access to our graduates for recruitment.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-016-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: Why Small Towns Deserve More Investment",
-      "text": "For decades, government investment in infrastructure, healthcare, and education has flowed predominantly toward major cities. This concentration of resources has created a growing divide between the opportunities available to people in urban centres and those living in smaller towns and rural communities. I believe this imbalance is not only unfair but economically short-sighted.\n\nConsider healthcare. In most Canadian cities, residents have access to walk-in clinics, specialist hospitals, and urgent care centres within a reasonable distance. In small towns, the nearest hospital may be an hour's drive away. Rural residents have higher rates of late-stage cancer diagnoses precisely because early detection requires access to diagnostic services that simply are not available locally.\n\nEducation tells a similar story. Urban schools are often better funded, have access to more experienced teachers, and offer a wider range of programmes and extracurricular activities. Rural students frequently travel long distances to school and have fewer post-secondary options nearby. This creates a pattern in which talented young people leave their home communities for cities — and rarely return.\n\nCritics of increased rural investment argue that the cost per person is too high. This logic is flawed. The cost of maintaining a dispersed population is not a reason to abandon it — it is an argument for smarter, targeted investment in sustainable local infrastructure.\n\nIf we are serious about equality of opportunity, the postal code where someone is born should not determine the quality of healthcare, education, or economic opportunity available to them. Small towns and rural communities deserve better — not out of sentiment, but out of a genuine commitment to a more equitable society.",
+      "title": "Digital Privacy in the Workplace",
+      "text": "I want to talk about something that concerns me deeply—workplace monitoring and digital privacy. Many companies today monitor their employees constantly: they track keystrokes, monitor websites visited, log bathroom breaks through card access, and even use AI to analyze email and chat conversations. The argument is usually that this improves productivity and security, but I think it's gone too far. Yes, employers have legitimate security concerns, but the level of surveillance we're accepting is unprecedented. When employees feel constantly watched, it creates anxiety and erodes trust. Studies show that excessive monitoring actually decreases productivity and morale. Workers spend time trying to appear productive rather than actually being productive. Moreover, there's a moral issue here. As an employee, you're a person, not a machine to be optimized. You deserve privacy and dignity at work. I'm not arguing against all monitoring—reasonable security measures are necessary. But there's a middle ground between trusting employees completely and treating them like suspects. Companies that have implemented less invasive monitoring policies actually report higher employee satisfaction and retention. So my position is this: employers should use targeted monitoring only where necessary for genuine security reasons, not blanket surveillance of everything everyone does. Trust and respect for employee privacy create better workplaces.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-016-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What is the problem the resident is reporting?",
+      "prompt": "What is the customer's correct last name spelling?",
       "options": [
-        "A broken window",
-        "A water leak under the kitchen sink",
-        "A faulty heating system",
-        "A blocked toilet"
+        "A-N-D-E-R-S-E-N",
+        "A-N-D-E-R-S-O-N",
+        "A-N-D-R-E-S-O-N",
+        "A-N-D-E-R-T-O-N"
       ],
-      "correctAnswer": "A water leak under the kitchen sink",
-      "explanation": "The resident calls to report water pooling under the kitchen sink.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "A-N-D-E-R-S-O-N",
+      "explanation": "Diner specifies the correct spelling as 'A-N-D-E-R-S-O-N.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-016-q02",
       "audioScriptId": "celpip-listening-016-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How fast is the bucket filling up?",
+      "prompt": "What was the original reservation time?",
       "options": [
-        "Every thirty minutes",
-        "Every hour",
-        "Every two hours",
-        "Every day"
+        "6:30 PM",
+        "7:00 PM",
+        "7:15 PM",
+        "8:00 PM"
       ],
-      "correctAnswer": "Every two hours",
-      "explanation": "The resident says the bucket fills up about every two hours.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "7:00 PM",
+      "explanation": "Diner states 'I made a reservation for tonight at 7 PM.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-016-q03",
       "audioScriptId": "celpip-listening-016-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent suspect the problem is?",
+      "prompt": "What is the new reservation time?",
       "options": [
-        "A cracked drain pipe",
-        "A loose connection on the supply line",
-        "A broken water heater",
-        "A faulty pressure valve"
+        "7:00 PM",
+        "7:15 PM",
+        "7:30 PM",
+        "8:00 PM"
       ],
-      "correctAnswer": "A loose connection on the supply line",
-      "explanation": "The superintendent says it sounds like a loose connection on the supply line.",
+      "correctAnswer": "7:30 PM",
+      "explanation": "Diner requests and manager confirms changing to '7:30 PM.'",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-016-q04",
       "audioScriptId": "celpip-listening-016-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "When is the plumber available?",
+      "prompt": "How many people are in the party?",
       "options": [
-        "This morning",
-        "Tomorrow morning",
-        "Two o'clock this afternoon",
-        "Next week"
+        "Four",
+        "Five",
+        "Six",
+        "Seven"
       ],
-      "correctAnswer": "Two o'clock this afternoon",
-      "explanation": "The superintendent says the plumber is available at two o'clock this afternoon.",
+      "correctAnswer": "Six",
+      "explanation": "Diner states 'Six of us' in response to the manager's question about party size.",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-016-q05",
       "audioScriptId": "celpip-listening-016-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent ask the resident to do immediately?",
+      "prompt": "How was the customer's name misspelled in the system?",
       "options": [
-        "Call a plumber directly",
-        "Leave the apartment",
-        "Turn off the shut-off valve",
-        "Open the windows"
+        "A-N-D-E-R-S-E-N",
+        "A-N-D-E-R-S-A-N",
+        "A-N-D-E-R-T-O-N",
+        "A-N-D-R-E-S-O-N"
       ],
-      "correctAnswer": "Turn off the shut-off valve",
-      "explanation": "The superintendent advises turning off the shut-off valve under the sink.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "A-N-D-E-R-S-E-N",
+      "explanation": "Manager states the name appeared as 'A-N-D-E-R-S-E-N' in the system.",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-016-q06",
       "audioScriptId": "celpip-listening-016-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the dripping stopping confirm?",
+      "prompt": "What special seating request did the customer make?",
       "options": [
-        "The drain is blocked",
-        "The pipe is cracked",
-        "The problem is with the supply line, not the drain",
-        "The water pressure is too high"
+        "Near the kitchen",
+        "By the bar",
+        "A quiet area away from the bar",
+        "Close to the entrance"
       ],
-      "correctAnswer": "The problem is with the supply line, not the drain",
-      "explanation": "The superintendent says this confirms the problem is with the supply line.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "A quiet area away from the bar",
+      "explanation": "Diner requests 'a quiet table' and manager notes 'a quieter area away from the bar.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-016-q07",
       "audioScriptId": "celpip-listening-016-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long is the repair expected to take?",
+      "prompt": "Where will the quiet table be located?",
       "options": [
-        "Less than one hour",
-        "Two to three hours",
-        "All afternoon",
-        "Several days"
+        "Near the kitchen",
+        "By the bar",
+        "By the window",
+        "At the entrance"
       ],
-      "correctAnswer": "Less than one hour",
-      "explanation": "The superintendent says it should take under an hour.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "By the window",
+      "explanation": "Manager states 'We have some nice tables by the window.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-016-q08",
       "audioScriptId": "celpip-listening-016-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why does the resident need to be home for the repair?",
+      "prompt": "What is the restaurant's cancellation policy?",
       "options": [
-        "To pay the plumber in cash",
-        "To sign a repair agreement",
-        "To give the plumber access to the cabinet",
-        "To watch the repair procedure"
+        "6 hours notice required",
+        "12 hours notice required",
+        "24 hours notice required",
+        "48 hours notice required"
       ],
-      "correctAnswer": "To give the plumber access to the cabinet",
-      "explanation": "The superintendent says the plumber needs to access the cabinet under the sink.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "24 hours notice required",
+      "explanation": "Manager states 'We require 24 hours notice for cancellations.'",
+      "difficulty": "medium",
+      "topic": "booking complaint"
     },
     {
       "id": "celpip-listening-016-q09",
       "audioScriptId": "celpip-listening-016-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How many job offers has Priya received?",
+      "prompt": "What type of concert is it?",
       "options": [
-        "One",
-        "Two",
-        "Three",
-        "Four"
+        "Classical music",
+        "Hip-hop festival",
+        "Indie rock festival",
+        "Country music show"
       ],
-      "correctAnswer": "Two",
-      "explanation": "Priya says she received two job offers this week.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "Indie rock festival",
+      "explanation": "Alex mentions 'The indie rock festival at the waterfront.'",
+      "difficulty": "medium",
+      "topic": "event planning"
     },
     {
       "id": "celpip-listening-016-q10",
       "audioScriptId": "celpip-listening-016-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What concern does Priya have about the startup?",
+      "prompt": "How much is each ticket?",
       "options": [
-        "The salary is too low",
-        "It is located too far away",
-        "It is only two years old and a bit risky",
-        "The role lacks creative freedom"
+        "$25",
+        "$35",
+        "$40",
+        "$50"
       ],
-      "correctAnswer": "It is only two years old and a bit risky",
-      "explanation": "Priya says the startup is only two years old and a bit risky.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "$40",
+      "explanation": "Alex states 'They're forty dollars each.'",
+      "difficulty": "medium",
+      "topic": "event planning"
     },
     {
       "id": "celpip-listening-016-q11",
       "audioScriptId": "celpip-listening-016-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What advantage does the non-profit offer over the startup?",
+      "prompt": "How many bands are performing?",
       "options": [
-        "Higher salary",
-        "More creative freedom",
-        "Better benefits and a pension",
-        "Faster career advancement"
+        "Three",
+        "Four",
+        "Five",
+        "Six"
       ],
-      "correctAnswer": "Better benefits and a pension",
-      "explanation": "Priya says the non-profit has excellent benefits and a guaranteed pension.",
+      "correctAnswer": "Five",
+      "explanation": "Alex says 'Five bands' are performing at the festival.",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "event planning"
     },
     {
       "id": "celpip-listening-016-q12",
       "audioScriptId": "celpip-listening-016-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How long is the commute to the startup?",
+      "prompt": "Who is the headliner?",
       "options": [
-        "Ten minutes",
-        "Twenty minutes",
-        "Forty-five minutes each way",
-        "Over an hour each way"
+        "The Eastern Stars",
+        "The Northern Stars",
+        "The Southern Lights",
+        "The Western Dream"
       ],
-      "correctAnswer": "Forty-five minutes each way",
-      "explanation": "Priya says the startup is forty-five minutes each way on transit.",
+      "correctAnswer": "The Northern Stars",
+      "explanation": "Alex identifies 'The headliner is The Northern Stars.'",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "event planning"
     },
     {
       "id": "celpip-listening-016-q13",
       "audioScriptId": "celpip-listening-016-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Kevin point out about commuting time?",
+      "prompt": "What time does the concert end?",
       "options": [
-        "It adds to fitness levels",
-        "It is a chance to read",
-        "The non-profit saves her two hours a day",
-        "Transit fares are expensive"
+        "9 PM",
+        "10 PM",
+        "11 PM",
+        "Midnight"
       ],
-      "correctAnswer": "The non-profit saves her two hours a day",
-      "explanation": "Kevin says Priya would get back two hours a day by working closer to home.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "11 PM",
+      "explanation": "Alex estimates 'It should wrap up around eleven.'",
+      "difficulty": "medium",
+      "topic": "event planning"
     },
     {
       "id": "celpip-listening-016-q14",
       "audioScriptId": "celpip-listening-016-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is entitled to a provincial health card?",
+      "prompt": "When is the faculty orientation meeting?",
       "options": [
-        "Only Canadian citizens",
-        "Permanent residents and Canadian citizens",
-        "International students only",
-        "Anyone living in Canada"
+        "Monday at 8 AM",
+        "Monday at 10 AM",
+        "Tuesday at 10 AM",
+        "Wednesday at 10 AM"
       ],
-      "correctAnswer": "Permanent residents and Canadian citizens",
-      "explanation": "The speaker says permanent residents or Canadian citizens are entitled to a health card.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "Monday at 10 AM",
+      "explanation": "The guide states 'attend your faculty's orientation meeting on Monday at ten AM.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-016-q15",
       "audioScriptId": "celpip-listening-016-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is one document required to apply for a health card?",
+      "prompt": "What is the deadline for course registration?",
       "options": [
-        "A letter from an employer",
-        "A government-issued photo ID",
-        "A birth certificate",
-        "A utility bill from a previous province"
+        "Tuesday",
+        "Wednesday, August 27th",
+        "Wednesday, August 28th",
+        "Friday"
       ],
-      "correctAnswer": "A government-issued photo ID",
-      "explanation": "The speaker says one of the two IDs must be a government-issued photo ID.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "Wednesday, August 28th",
+      "explanation": "The guide specifies 'register for your courses online by Wednesday, August 28th.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-016-q16",
       "audioScriptId": "celpip-listening-016-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long must new applicants typically wait before coverage begins?",
+      "prompt": "Where should you get your student photo ID?",
       "options": [
-        "One week",
-        "One month",
-        "Three months",
-        "Six months"
+        "The Student Centre",
+        "The Services Office",
+        "The IT support desk",
+        "Student Health Services"
       ],
-      "correctAnswer": "Three months",
-      "explanation": "The speaker says there is typically a three-month waiting period.",
+      "correctAnswer": "The Services Office",
+      "explanation": "The guide states 'get your student photo ID taken at the Services Office.'",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-016-q17",
       "audioScriptId": "celpip-listening-016-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT covered by the provincial health card?",
+      "prompt": "What are the hours for photo ID service?",
       "options": [
-        "Emergency room visits",
-        "Family doctor visits",
-        "Dental care",
-        "Blood work"
+        "8 AM to 5 PM",
+        "9 AM to 4 PM",
+        "10 AM to 3 PM",
+        "8 AM to 6 PM"
       ],
-      "correctAnswer": "Dental care",
-      "explanation": "The speaker says dental care is not automatically covered by the health card.",
+      "correctAnswer": "9 AM to 4 PM",
+      "explanation": "The guide mentions 'between 9 and 4 on any day this week.'",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-016-q18",
       "audioScriptId": "celpip-listening-016-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is the Health Care Connect programme?",
+      "prompt": "What is the estimated budget for books and materials?",
       "options": [
-        "A private insurance plan",
-        "A walk-in clinic network",
-        "A programme that matches patients to available physicians",
-        "An online pharmacy"
+        "One hundred dollars",
+        "Two hundred dollars",
+        "Three hundred dollars",
+        "Four hundred dollars"
       ],
-      "correctAnswer": "A programme that matches patients to available physicians",
-      "explanation": "The speaker describes Health Care Connect as matching patients to available physicians.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "Three hundred dollars",
+      "explanation": "The guide states 'budget about three hundred dollars for books and materials.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-016-q19",
       "audioScriptId": "celpip-listening-016-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What should residents do if their address changes?",
+      "prompt": "When is the Welcome Social?",
       "options": [
-        "Apply for a new health card",
-        "Report the change to the provincial health authority",
-        "Contact their family doctor only",
-        "Wait until renewal time"
+        "Thursday evening",
+        "Friday evening",
+        "Saturday afternoon",
+        "Sunday afternoon"
       ],
-      "correctAnswer": "Report the change to the provincial health authority",
-      "explanation": "The speaker says to report any change of address to keep records current.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "Friday evening",
+      "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'",
+      "difficulty": "medium",
+      "topic": "student orientation"
     },
     {
       "id": "celpip-listening-016-q20",
       "audioScriptId": "celpip-listening-016-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Who is eligible for the new childcare subsidy?",
+      "prompt": "How much is being invested in recruitment and retention?",
       "options": [
-        "All families with children under twelve",
-        "Families earning below ninety thousand dollars per year",
-        "Only single-parent households",
-        "Families on social assistance only"
+        "25 million dollars",
+        "30 million dollars",
+        "35 million dollars",
+        "40 million dollars"
       ],
-      "correctAnswer": "Families earning below ninety thousand dollars per year",
-      "explanation": "The report says eligible families earn below ninety thousand dollars per year.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "35 million dollars",
+      "explanation": "The province has announced a 35 million dollar investment.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-016-q21",
       "audioScriptId": "celpip-listening-016-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What is the maximum daily childcare cost under the new programme?",
+      "prompt": "How many nursing positions are currently unfilled?",
       "options": [
-        "Five dollars",
-        "Ten dollars",
-        "Twenty dollars",
-        "Fifty dollars"
+        "600 positions",
+        "700 positions",
+        "800 positions",
+        "900 positions"
       ],
-      "correctAnswer": "Ten dollars",
-      "explanation": "The report states families will pay no more than ten dollars per day.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "800 positions",
+      "explanation": "There are over 800 unfilled nursing positions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-016-q22",
       "audioScriptId": "celpip-listening-016-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Which children will receive priority access?",
+      "prompt": "By what percentage are starting salaries for nurses increasing?",
       "options": [
-        "School-age children",
-        "Children under six and those already on waitlists",
-        "Children of essential workers",
-        "All children equally"
+        "8 percent",
+        "10 percent",
+        "12 percent",
+        "15 percent"
       ],
-      "correctAnswer": "Children under six and those already on waitlists",
-      "explanation": "The minister says priority goes to children under six and families on existing waitlists.",
+      "correctAnswer": "12 percent",
+      "explanation": "Starting salaries for nurses are being increased by 12 percent.",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-016-q23",
       "audioScriptId": "celpip-listening-016-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will approved families be notified?",
+      "prompt": "What is the maximum signing bonus for rural relocations?",
       "options": [
-        "By post",
-        "By telephone",
-        "By email",
-        "Through their childcare provider"
+        "10,000 dollars",
+        "12,000 dollars",
+        "15,000 dollars",
+        "20,000 dollars"
       ],
-      "correctAnswer": "By email",
-      "explanation": "The report says approved families will be notified by email.",
+      "correctAnswer": "15,000 dollars",
+      "explanation": "Signing bonuses of up to 15,000 dollars are offered for rural relocations.",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-016-q24",
       "audioScriptId": "celpip-listening-016-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What concern did opposition critics raise?",
+      "prompt": "What percentage of vacant positions are expected to be filled in 18 months?",
       "options": [
-        "The daily fee is too high",
-        "The programme excludes informal unlicenced home-based care",
-        "Too many providers have already registered",
-        "The programme starts too late in the year"
+        "40 percent",
+        "50 percent",
+        "60 percent",
+        "75 percent"
       ],
-      "correctAnswer": "The programme excludes informal unlicenced home-based care",
-      "explanation": "Critics say the programme does not extend to informal home-based care arrangements.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "60 percent",
+      "explanation": "Officials estimate it will take approximately 18 months to fill 60 percent of positions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-016-q25",
       "audioScriptId": "celpip-listening-016-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say is the main problem with social media platforms?",
+      "prompt": "What is the cost of the engineering program expansion?",
       "options": [
-        "They are too expensive",
-        "They are designed to maximise engagement through comparison",
-        "They do not have enough educational content",
-        "They spread false news to teenagers"
+        "1.8 million dollars",
+        "2.0 million dollars",
+        "2.4 million dollars",
+        "2.8 million dollars"
       ],
-      "correctAnswer": "They are designed to maximise engagement through comparison",
-      "explanation": "Diane says platforms are deliberately built to maximise engagement, which means maximising comparison.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "2.4 million dollars",
+      "explanation": "The cost would be approximately 2.4 million dollars over two years.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-016-q26",
       "audioScriptId": "celpip-listening-016-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom advocate for?",
+      "prompt": "How many potential students did the university lose last year?",
       "options": [
-        "Banning social media entirely",
-        "Age-based restrictions on all platforms",
-        "Digital literacy education for teenagers",
-        "Parental monitoring software"
+        "100 students",
+        "125 students",
+        "150 students",
+        "175 students"
       ],
-      "correctAnswer": "Digital literacy education for teenagers",
-      "explanation": "Tom says the answer is teaching teenagers to be critical consumers of digital content.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "150 students",
+      "explanation": "Professor Elena mentions they lost 150 potential engineering students.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-016-q27",
       "audioScriptId": "celpip-listening-016-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "On what point do Diane and Tom agree?",
+      "prompt": "Why are some students not enrolling at this university?",
       "options": [
-        "Restrictions are necessary",
-        "Education about social media is necessary",
-        "Teenagers should avoid all social media",
-        "Parents should manage all screen time"
+        "Poor faculty",
+        "Weak renewable energy program options",
+        "High tuition fees",
+        "Bad location"
       ],
-      "correctAnswer": "Education about social media is necessary",
-      "explanation": "The host notes both agree on the need for education.",
+      "correctAnswer": "Weak renewable energy program options",
+      "explanation": "They're losing students to competing universities with stronger renewable energy options.",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-016-q28",
       "audioScriptId": "celpip-listening-016-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say a thirteen-year-old is not equipped to do?",
+      "prompt": "What does Diana believe about tuition revenue from additional students?",
       "options": [
-        "Understand complex text",
-        "Resist deliberate platform manipulation",
-        "Manage their own time",
-        "Communicate online safely"
+        "It will decrease overall costs",
+        "It would exceed expansion costs within three years",
+        "It wouldn't help the budget",
+        "It takes longer than expected"
       ],
-      "correctAnswer": "Resist deliberate platform manipulation",
-      "explanation": "Diane says a thirteen-year-old is neurologically not equipped to resist deliberate platform manipulation.",
+      "correctAnswer": "It would exceed expansion costs within three years",
+      "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years.",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-016-q29",
       "audioScriptId": "celpip-listening-016-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom call the effect of banning social media without education?",
+      "prompt": "What type of partnership does Diana mention exploring?",
       "options": [
-        "The rebound effect",
-        "The forbidden fruit effect",
-        "The digital divide",
-        "The screen overload effect"
+        "International universities",
+        "Government agencies",
+        "Renewable energy companies",
+        "Tech startups"
       ],
-      "correctAnswer": "The forbidden fruit effect",
-      "explanation": "Tom calls the over-compensating behaviour after restrictions the forbidden fruit effect.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "Renewable energy companies",
+      "explanation": "Diana mentions conversations with renewable energy companies about funding contributions.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-016-q30",
       "audioScriptId": "celpip-listening-016-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What evidence does Tom give for the forbidden fruit effect?",
+      "prompt": "What would companies receive in exchange for supporting the program?",
       "options": [
-        "A government study on screen time",
-        "Personal experience with teenagers at home",
-        "Schools that blocked social media found students spent more time online on weekends",
-        "Research from Diane's own institution"
+        "University branding",
+        "Free equipment",
+        "Access to graduates for recruitment",
+        "Research funding"
       ],
-      "correctAnswer": "Schools that blocked social media found students spent more time online on weekends",
-      "explanation": "Tom says schools that blocked social media found students spent even more time online on weekends.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "Access to graduates for recruitment",
+      "explanation": "Companies want access to graduates for recruitment in exchange for contributions.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-016-q31",
       "audioScriptId": "celpip-listening-016-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What specific group does Diane say is most affected by heavy social media use?",
+      "prompt": "Why is Malik interested in supporting the program expansion?",
       "options": [
-        "Boys aged ten to twelve",
-        "All teenagers equally",
-        "Girls in particular",
-        "Teenagers in rural areas"
+        "To get easier courses",
+        "To increase tuition fees",
+        "To support classmates interested in sustainability",
+        "To improve campus facilities"
       ],
-      "correctAnswer": "Girls in particular",
-      "explanation": "Diane says anxiety and depression are particularly high for girls.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "To support classmates interested in sustainability",
+      "explanation": "Many classmates are interested in sustainability and green technology, which the program would support.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-016-q32",
       "audioScriptId": "celpip-listening-016-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's summary at the end?",
+      "prompt": "What specific position does Professor Elena hold on the expansion?",
       "options": [
-        "Both guests fully agree",
-        "The debate is too political to resolve",
-        "There is agreement on education but a divide on restrictions",
-        "Tom has made the stronger argument"
+        "She opposes it",
+        "She strongly supports it",
+        "She wants to wait",
+        "She's uncertain"
       ],
-      "correctAnswer": "There is agreement on education but a divide on restrictions",
-      "explanation": "The host summarises that there is agreement on education but a real divide on restrictions.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "She strongly supports it",
+      "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-016-q33",
       "audioScriptId": "celpip-listening-016-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker argue is wrong with current government investment patterns?",
+      "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "Too much money is spent on small towns",
-        "Investment flows mainly to cities, creating inequality",
-        "Rural communities refuse investment",
-        "Cities need more hospitals"
+        "It's too expensive",
+        "It has gone too far in terms of surveillance",
+        "It doesn't improve security",
+        "It's ineffective"
       ],
-      "correctAnswer": "Investment flows mainly to cities, creating inequality",
-      "explanation": "The speaker says investment has predominantly flowed toward major cities, creating a divide.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "It has gone too far in terms of surveillance",
+      "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-016-q34",
       "audioScriptId": "celpip-listening-016-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health problem does the speaker connect to rural under-investment?",
+      "prompt": "According to the speaker, what is the claimed reason for workplace monitoring?",
       "options": [
-        "Higher rates of heart disease",
-        "More road accidents",
-        "Higher rates of late-stage cancer diagnoses",
-        "Fewer vaccinations"
+        "To reduce wages",
+        "To improve productivity and security",
+        "To prevent theft",
+        "To track attendance"
       ],
-      "correctAnswer": "Higher rates of late-stage cancer diagnoses",
-      "explanation": "The speaker says rural residents have higher rates of late-stage cancer because early detection services are not available locally.",
-      "difficulty": "easy",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "To improve productivity and security",
+      "explanation": "The speaker mentions that companies argue monitoring improves productivity and security.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-016-q35",
       "audioScriptId": "celpip-listening-016-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What pattern in education does the speaker describe?",
+      "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
-        "Rural schools are better funded than urban ones",
-        "Talented young people leave small towns and rarely return",
-        "Rural students prefer online learning",
-        "Urban students move to rural areas for university"
+        "They work harder",
+        "It creates anxiety and erodes trust",
+        "They become more efficient",
+        "They communicate better"
       ],
-      "correctAnswer": "Talented young people leave small towns and rarely return",
-      "explanation": "The speaker says talented young people leave for cities and rarely return.",
+      "correctAnswer": "It creates anxiety and erodes trust",
+      "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-016-q36",
       "audioScriptId": "celpip-listening-016-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How does the speaker respond to critics who say rural investment costs too much per person?",
+      "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "By agreeing and suggesting cuts",
-        "By calling it a reason for smarter targeted investment",
-        "By dismissing the economic argument entirely",
-        "By citing statistics on rural GDP"
+        "It increases productivity",
+        "It decreases productivity and morale",
+        "It has no effect",
+        "It improves communication"
       ],
-      "correctAnswer": "By calling it a reason for smarter targeted investment",
-      "explanation": "The speaker says the cost argument is flawed and is actually an argument for smarter, targeted investment.",
+      "correctAnswer": "It decreases productivity and morale",
+      "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
       "difficulty": "medium",
-      "topic": "cooking and nutrition"
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-016-q37",
       "audioScriptId": "celpip-listening-016-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker say should not determine the quality of opportunity a person has?",
+      "prompt": "What solution does the speaker propose?",
       "options": [
-        "Their family income",
-        "Their level of education",
-        "The postal code where they were born",
-        "Their language ability"
+        "No monitoring at all",
+        "Complete transparency monitoring",
+        "Targeted monitoring only where necessary",
+        "Random monitoring"
       ],
-      "correctAnswer": "The postal code where they were born",
-      "explanation": "The speaker says the postal code where someone is born should not determine their opportunities.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "Targeted monitoring only where necessary",
+      "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     },
     {
       "id": "celpip-listening-016-q38",
       "audioScriptId": "celpip-listening-016-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall tone?",
+      "prompt": "What do companies with less invasive monitoring report?",
       "options": [
-        "Nostalgic and sentimental",
-        "Objective and neutral",
-        "Persuasive and advocacy-driven",
-        "Pessimistic and resigned"
+        "Lower profits",
+        "Higher employee satisfaction and retention",
+        "More security issues",
+        "Reduced efficiency"
       ],
-      "correctAnswer": "Persuasive and advocacy-driven",
-      "explanation": "The speaker argues a clear position and calls for change based on principles of equity.",
-      "difficulty": "hard",
-      "topic": "cooking and nutrition"
+      "correctAnswer": "Higher employee satisfaction and retention",
+      "explanation": "The speaker mentions companies with less invasive monitoring report higher satisfaction and retention.",
+      "difficulty": "medium",
+      "topic": "Privacy"
     }
   ]
 }

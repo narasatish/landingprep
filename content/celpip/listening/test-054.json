@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 54",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 54",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-054-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Connecting with neighbours",
-      "script": "A community connector from a local organisation explains to a newcomer how to meet neighbours, get involved in street associations, and find cultural and social groups in the community.",
+      "title": "Bank Account Fraud Alert",
+      "text": "Customer: Hi, I'm calling about suspicious transactions on my account. Bank Officer: I'm sorry to hear that. I'm here to help. Can I have your account number? Customer: It's 5834-291-7465. Over the last three days, I've noticed four withdrawals totaling $1,800 that I didn't make. Officer: Let me pull that up. What are the dates of these transactions? Customer: June 1st, 2nd, 3rd, and today, June 4th. Each one is $450. Officer: I see them all here. These are ATM withdrawals, all from a machine on Bloor Street in Toronto. Are you in Toronto? Customer: No, I'm in Montreal. I haven't been to Toronto in months. Officer: That's definitely suspicious. I'm going to freeze your account immediately to prevent further unauthorized transactions. Customer: What about the money that's already been withdrawn? Officer: We'll file a fraud claim. You're not responsible for unauthorized transactions under the bank's protection policy. You should see a credit back within 5 to 7 business days. Customer: Good. What should I do next? Officer: We'll mail you a new debit card as a precaution, but don't worry about the PIN. I'm also recommending you change your online banking password right away. We'll monitor your account closely. Customer: Should I change my passwords for other accounts too? Officer: That's a wise precaution. Since someone had your card number, they might try other services. Better safe than sorry.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-054-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about senior care and community services",
-      "script": "This news is about senior care and community services. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Fitness Class Enrollment",
+      "text": "Trainer: Welcome to the studio. Is this your first class? Maya: Yeah, I'm pretty nervous. Trainer: Don't worry, everyone starts somewhere. What's your experience with yoga? Maya: I've done some stretching at home, but never a full class like this. Trainer: That's great. Let's get you set up. We have mats over there, and grab a water bottle from the cooler. Maya: How long is the class? Trainer: It's 60 minutes total. We start with breathing exercises, warm up, then move through poses, and end with meditation. Maya: That sounds good. What's the hardest part for beginners? Trainer: Usually it's learning to listen to your body. Don't push too hard too fast. If something hurts, modify it or take a break. Maya: Good to know. How many classes should I take per week to see results? Trainer: For best results, aim for three times a week. Even once a week is great though. Maya: I'll start with twice a week and see how it goes. Trainer: Perfect. That's a solid plan. Let's get started.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-054-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about senior care and community services",
-      "script": "This discussion is about senior care and community services. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "Public Transit New Route Announcement",
+      "text": "Good afternoon. Transit Authority is pleased to announce a new rapid bus route effective September 1st. The new Route 95 Express connects downtown to the northern suburbs, with stops at Central Station, City Hall, the Hospital, University Campus, and North Terminal. Service runs Monday through Friday from 6 AM to 10 PM, with departures every fifteen minutes during peak hours, 7 to 9 AM and 4 to 7 PM. Off-peak service is every thirty minutes. Weekend service begins December, with departures every twenty minutes from 9 AM to 8 PM. The Route 95 uses the new dedicated bus lane on Main Street, reducing travel time from downtown to North Terminal from forty-five minutes to approximately twenty-two minutes. Fares are the same as existing routes: single trip is three dollars fifty cents, and a monthly pass is ninety dollars. Seniors and students receive a twenty percent discount. The new buses feature USB charging ports, free Wi-Fi, and comfortable seating. Detailed schedules are available on our website and at all transit stations. Real-time tracking is available through our mobile app.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-054-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about senior care and community services",
-      "script": "This announcement is about senior care and community services. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "Quebec Education Reform Approved",
+      "text": "The Quebec National Assembly has approved a major education reform bill with broad cross-party support. The legislation, Bill 247, focuses on modernizing curriculum standards and addressing teacher shortages. Under the new framework, high schools will introduce mandatory digital literacy courses starting next September. The reform also increases teacher salaries by 8 percent over four years to attract and retain educators. Currently, Quebec faces a shortage of approximately 3,500 teachers, particularly in mathematics, sciences, and French language instruction. The bill allocates 2.1 billion dollars for infrastructure improvements to school facilities. Education Minister Jean-François Roberge noted that 87 percent of school boards support the reforms. Parents will have increased choice in selecting specialized program options for their children. Pilot projects will begin in 15 schools across the province to test innovative teaching methods before full implementation in 2027.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-054-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about senior care and community services",
-      "script": "This office is about senior care and community services. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Workplace Safety Initiative",
+      "text": "Safety Officer Tom: I've been analyzing our workplace incident reports from the past two years, and I'm concerned about our trend. We've had 34 reported injuries this year, which is up 15 percent from last year. Most incidents are slips, trips, and falls in warehouse areas. I'm proposing we implement mandatory safety training for all warehouse staff every six months, not annually as we currently do.\n\nWarehouse Manager David: Tom, I appreciate your concern, but I'm worried about requiring training every six months. That's a lot of time away from work. My team's productivity is already under pressure with current targets. If we pull people off the floor for training frequently, we'll fall further behind on our goals. Can't we just focus on better signage and equipment?\n\nWorker Representative Angela: I actually support Tom's proposal. I work in the warehouse, and I've seen some close calls that could have been serious. The issue isn't signage—we know the hazards. The problem is we get complacent. Regular training keeps safety top of mind. Plus, Tom, I think twice-yearly training would actually improve morale because workers feel the company cares about their wellbeing.\n\nSafety Officer Tom: Thank you, Angela. David, I understand your concern about productivity, but consider the cost of injuries. Each workplace injury costs us about $12,000 in direct and indirect costs. If we can prevent even three injuries per year, the training pays for itself. And research shows regular safety training actually reduces injuries, which ultimately improves productivity.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-054-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about senior care and community services",
-      "script": "This lecture is about senior care and community services. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Algorithmic Bias in Hiring Systems",
+      "text": "Algorithmic bias in hiring is a serious problem that companies are using as a shortcut without taking responsibility for the consequences. Many organizations now use AI systems to screen resumes, assess candidate fit, and predict job performance. These systems seem objective—they're just mathematics, right? Wrong. These algorithms are trained on historical data, which includes decades of human bias. If women were historically excluded from leadership positions, the algorithm learns that pattern and replicates it. If certain demographics were underrepresented in technical roles, the algorithm reinforces that exclusion. Studies have documented this repeatedly. Amazon famously scrapped their hiring algorithm when they discovered it was discriminating against women. Google's recruiting algorithm showed bias against applicants from historically black colleges. These weren't intentional—that's precisely the problem. The systems' creators didn't set out to discriminate; they just trusted that math was unbiased, when in reality, data is never neutral. My argument is this: companies should not deploy algorithmic hiring systems without rigorous bias testing and external auditing. If you use an algorithm to screen candidates, you're making a business decision, and you're responsible for its outcomes. You can't hide behind the algorithm or claim you didn't know it was biased. Moreover, algorithms eliminate human judgment, nuance, and chance. They can't capture potential, resilience, or growth. Some of the most successful employees wouldn't have passed an algorithm. We need a return to more human-centered hiring while using algorithms cautiously and with oversight.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-054-q01",
+      "audioScriptId": "celpip-listening-054-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-054-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "What is the customer's account number?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "5834-291-7456",
+        "5834-291-7465",
+        "5834-192-7465",
+        "5843-291-7465"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "connecting with neighbours"
+      "correctAnswer": "5834-291-7465",
+      "explanation": "Customer provides their account number as '5834-291-7465.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-054-q02",
+      "audioScriptId": "celpip-listening-054-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-054-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "How much money was withdrawn in total?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "$900",
+        "$1,200",
+        "$1,500",
+        "$1,800"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "connecting with neighbours"
+      "correctAnswer": "$1,800",
+      "explanation": "Customer states there are 'four withdrawals totaling $1,800.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-054-q03",
+      "audioScriptId": "celpip-listening-054-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-054-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "How much was each withdrawal?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "$300",
+        "$400",
+        "$450",
+        "$500"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "connecting with neighbours"
+      "correctAnswer": "$450",
+      "explanation": "Customer states 'Each one is $450' for the four withdrawals.",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-054-q04",
+      "audioScriptId": "celpip-listening-054-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-054-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "Where were the ATM withdrawals made?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "Montreal",
+        "Bloor Street in Toronto",
+        "Downtown Toronto",
+        "The airport"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "Bloor Street in Toronto",
+      "explanation": "Officer states 'These are ATM withdrawals, all from a machine on Bloor Street in Toronto.'",
       "difficulty": "medium",
-      "topic": "connecting with neighbours"
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-054-q05",
+      "audioScriptId": "celpip-listening-054-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-054-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "Where is the customer actually located?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "Toronto",
+        "Montreal",
+        "Ottawa",
+        "Vancouver"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "Montreal",
+      "explanation": "Customer confirms 'No, I'm in Montreal. I haven't been to Toronto in months.'",
       "difficulty": "medium",
-      "topic": "connecting with neighbours"
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-054-q06",
+      "audioScriptId": "celpip-listening-054-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-054-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "How long will it take to see the credit for the unauthorized transactions?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "1 to 2 business days",
+        "3 to 5 business days",
+        "5 to 7 business days",
+        "10 to 14 business days"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "5 to 7 business days",
+      "explanation": "Officer states 'You should see a credit back within 5 to 7 business days.'",
       "difficulty": "medium",
-      "topic": "connecting with neighbours"
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-054-q07",
+      "audioScriptId": "celpip-listening-054-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-054-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "What is being mailed to the customer?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "A new PIN",
+        "A new debit card",
+        "Account statements",
+        "A fraud report"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "connecting with neighbours"
+      "correctAnswer": "A new debit card",
+      "explanation": "Officer states 'We'll mail you a new debit card as a precaution.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-054-q08",
+      "audioScriptId": "celpip-listening-054-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-054-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "What immediate action is recommended for online banking?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "Contact the bank branch",
+        "Close the account",
+        "Change your online banking password right away",
+        "Disable online banking"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "connecting with neighbours"
+      "correctAnswer": "Change your online banking password right away",
+      "explanation": "Officer states 'I'm also recommending you change your online banking password right away.'",
+      "difficulty": "medium",
+      "topic": "fraud investigation"
     },
     {
       "id": "celpip-listening-054-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-054-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-054-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "Is this Maya's first yoga class?",
+      "options": [
+        "Yes",
+        "No, she's taken classes before",
+        "She's never tried yoga",
+        "Not specified"
+      ],
+      "correctAnswer": "Yes",
+      "explanation": "Trainer asks 'Is this your first class?' and Maya confirms 'Yeah.'",
       "difficulty": "medium",
-      "topic": "connecting with neighbours"
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-054-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-054-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-054-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "How long is the class?",
+      "options": [
+        "30 minutes",
+        "45 minutes",
+        "60 minutes",
+        "90 minutes"
+      ],
+      "correctAnswer": "60 minutes",
+      "explanation": "Trainer states 'It's 60 minutes total.'",
       "difficulty": "medium",
-      "topic": "connecting with neighbours"
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-054-q11",
+      "audioScriptId": "celpip-listening-054-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-054-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "What is the structure of the class?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "Only poses and stretching",
+        "Breathing, warm-up, poses, meditation",
+        "Meditation and cool-down only",
+        "High-intensity cardio"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Breathing, warm-up, poses, meditation",
+      "explanation": "Trainer describes 'We start with breathing exercises, warm up, then move through poses, and end with meditation.'",
+      "difficulty": "medium",
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-054-q12",
+      "audioScriptId": "celpip-listening-054-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-054-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "What advice does the trainer give about pain?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "Push through the pain",
+        "Stop immediately",
+        "Modify or take a break if something hurts",
+        "Use ice after class"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Modify or take a break if something hurts",
+      "explanation": "Trainer advises 'If something hurts, modify it or take a break.'",
+      "difficulty": "medium",
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-054-q13",
+      "audioScriptId": "celpip-listening-054-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-054-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "How many classes per week does Maya plan to attend?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "Once a week",
+        "Twice a week",
+        "Three times a week",
+        "Daily"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Twice a week",
+      "explanation": "Maya states 'I'll start with twice a week and see how it goes.'",
+      "difficulty": "medium",
+      "topic": "gym class"
     },
     {
       "id": "celpip-listening-054-q14",
+      "audioScriptId": "celpip-listening-054-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-054-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "When does Route 95 begin service?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "August 1st",
+        "August 15th",
+        "September 1st",
+        "September 15th"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "September 1st",
+      "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-054-q15",
+      "audioScriptId": "celpip-listening-054-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-054-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "What is the frequency of peak hour service?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "Every 10 minutes",
+        "Every 15 minutes",
+        "Every 20 minutes",
+        "Every 30 minutes"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Every 15 minutes",
+      "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-054-q16",
+      "audioScriptId": "celpip-listening-054-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-054-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "How much travel time is saved with Route 95?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "15 minutes",
+        "20 minutes",
+        "23 minutes",
+        "30 minutes"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "23 minutes",
+      "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved.",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-054-q17",
+      "audioScriptId": "celpip-listening-054-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-054-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "What is the cost of a single trip?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "$2.50",
+        "$3.00",
+        "$3.50",
+        "$4.00"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "$3.50",
+      "explanation": "The guide states 'single trip is three dollars fifty cents.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-054-q18",
+      "audioScriptId": "celpip-listening-054-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-054-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "What is the monthly pass cost?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "$75",
+        "$80",
+        "$90",
+        "$100"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "$90",
+      "explanation": "The guide specifies 'a monthly pass is ninety dollars.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-054-q19",
+      "audioScriptId": "celpip-listening-054-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-054-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "What features are available on the new buses?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "USB charging only",
+        "Free Wi-Fi only",
+        "USB charging, free Wi-Fi, and comfortable seating",
+        "Air conditioning only"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "USB charging, free Wi-Fi, and comfortable seating",
+      "explanation": "The guide mentions 'The new buses feature USB charging ports, free Wi-Fi, and comfortable seating.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-054-q20",
+      "audioScriptId": "celpip-listening-054-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-054-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "What is the bill number for the education reform?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "Bill 235",
+        "Bill 247",
+        "Bill 250",
+        "Bill 260"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Bill 247",
+      "explanation": "The legislation is identified as Bill 247.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-054-q21",
+      "audioScriptId": "celpip-listening-054-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-054-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "When will mandatory digital literacy courses begin?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "This year",
+        "Next September",
+        "January 2027",
+        "September 2027"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Next September",
+      "explanation": "High schools will introduce mandatory digital literacy courses starting next September.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-054-q22",
+      "audioScriptId": "celpip-listening-054-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-054-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "By what percentage are teacher salaries being increased?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "5 percent",
+        "6 percent",
+        "8 percent",
+        "10 percent"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "8 percent",
+      "explanation": "Teacher salaries will be increased by 8 percent over four years.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-054-q23",
+      "audioScriptId": "celpip-listening-054-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-054-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "Approximately how many teachers does Quebec currently lack?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "2,500 teachers",
+        "3,000 teachers",
+        "3,500 teachers",
+        "4,000 teachers"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "3,500 teachers",
+      "explanation": "Quebec currently faces a shortage of approximately 3,500 teachers.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-054-q24",
+      "audioScriptId": "celpip-listening-054-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-054-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "How much money is allocated for infrastructure improvements?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "1.5 billion dollars",
+        "1.8 billion dollars",
+        "2.1 billion dollars",
+        "2.5 billion dollars"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "2.1 billion dollars",
+      "explanation": "The bill allocates 2.1 billion dollars for infrastructure improvements.",
+      "difficulty": "medium",
+      "topic": "Education"
     },
     {
       "id": "celpip-listening-054-q25",
+      "audioScriptId": "celpip-listening-054-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-054-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "How many workplace injuries were reported this year?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "25 injuries",
+        "29 injuries",
+        "34 injuries",
+        "39 injuries"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "34 injuries",
+      "explanation": "Tom reports 34 workplace injuries this year.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-054-q26",
+      "audioScriptId": "celpip-listening-054-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-054-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "What is the percentage increase in injuries from last year?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "10 percent",
+        "12 percent",
+        "15 percent",
+        "18 percent"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "15 percent",
+      "explanation": "The number of injuries is up 15 percent from last year.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-054-q27",
+      "audioScriptId": "celpip-listening-054-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-054-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What type of incident accounts for most injuries?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "Equipment failures",
+        "Slips, trips, and falls",
+        "Chemical exposure",
+        "Back injuries from lifting"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Slips, trips, and falls",
+      "explanation": "Most incidents are slips, trips, and falls in warehouse areas.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-054-q28",
+      "audioScriptId": "celpip-listening-054-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-054-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "What is Tom's proposed safety training frequency?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "Quarterly",
+        "Twice yearly",
+        "Annually",
+        "Every two years"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Twice yearly",
+      "explanation": "Tom proposes mandatory training every six months, not annually.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-054-q29",
+      "audioScriptId": "celpip-listening-054-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-054-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "What is David's main concern about the training proposal?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "Training effectiveness",
+        "Cost of training",
+        "Time away from work affecting productivity",
+        "Staff availability"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Time away from work affecting productivity",
+      "explanation": "David worries that frequent training time away will affect productivity.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-054-q30",
+      "audioScriptId": "celpip-listening-054-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-054-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "What alternative does David suggest?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "Online training only",
+        "Better signage and equipment",
+        "Reduced warehouse hours",
+        "Equipment replacement"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Better signage and equipment",
+      "explanation": "David suggests focusing on better signage and equipment instead.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-054-q31",
+      "audioScriptId": "celpip-listening-054-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-054-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "What cost estimate does Tom provide for each workplace injury?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "$8,000",
+        "$10,000",
+        "$12,000",
+        "$15,000"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "$12,000",
+      "explanation": "Tom states each workplace injury costs about $12,000 in direct and indirect costs.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-054-q32",
+      "audioScriptId": "celpip-listening-054-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-054-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "What additional benefit does Angela mention about training?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "Increased wages",
+        "Improved morale",
+        "Reduced hours",
+        "Better equipment"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Improved morale",
+      "explanation": "Angela believes regular training improves morale because workers feel the company cares.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-054-q33",
+      "audioScriptId": "celpip-listening-054-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-054-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "They're not programmed correctly",
+        "They're trained on historical data that includes human bias",
+        "They lack computing power",
+        "They're intentionally designed to discriminate"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "They're trained on historical data that includes human bias",
+      "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-054-q34",
+      "audioScriptId": "celpip-listening-054-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-054-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "What did Amazon discover about their hiring algorithm?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "It was too slow",
+        "It was discriminating against women",
+        "It was too expensive",
+        "It wasn't identifying qualified candidates"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "It was discriminating against women",
+      "explanation": "Amazon discovered their algorithm was discriminating against women and scrapped it.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-054-q35",
+      "audioScriptId": "celpip-listening-054-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-054-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "It was too strict",
+        "It showed bias against applicants from historically black colleges",
+        "It wasn't identifying talent",
+        "It was too expensive"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "It showed bias against applicants from historically black colleges",
+      "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-054-q36",
+      "audioScriptId": "celpip-listening-054-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-054-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "Data is always objective",
+        "Data is never neutral and includes bias",
+        "Data should never be used in hiring",
+        "Data is a recent invention"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Data is never neutral and includes bias",
+      "explanation": "The speaker argues data is never neutral and carries historical bias.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-054-q37",
+      "audioScriptId": "celpip-listening-054-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-054-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "Use them immediately",
+        "Train employees on algorithms",
+        "Conduct rigorous bias testing and external auditing",
+        "Ignore algorithm concerns"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about senior care and community services.",
-      "difficulty": "medium"
+      "correctAnswer": "Conduct rigorous bias testing and external auditing",
+      "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-054-q38",
+      "audioScriptId": "celpip-listening-054-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-054-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What human qualities does the speaker claim algorithms can't capture?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "Education level",
+        "Potential, resilience, and growth",
+        "Work experience",
+        "Technical skills"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about senior care and community services.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "Potential, resilience, and growth",
+      "explanation": "Algorithms can't capture potential, resilience, or the capacity for growth.",
+      "difficulty": "medium",
+      "topic": "Technology"
     }
   ]
 }

@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 12",
+  "title": "CELPIP General Listening — Practice Test 12",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-012-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Reporting a Water Leak in an Apartment",
-      "text": "Resident: Hello, I need to report a water leak. It started this morning under my kitchen sink. There's water pooling on the floor.\nSuperintendent: I'll send someone right away. Can you confirm your unit number?\nResident: It's unit 4B on the fourth floor.\nSuperintendent: Got it. And is the leak a slow drip or is it flowing steadily?\nResident: It's a steady drip. I've put a bucket under it, but it's filling up about every two hours.\nSuperintendent: That sounds like a loose connection on the supply line. The plumber we use is available this afternoon. Would two o'clock work for you?\nResident: Yes, that's fine. Do I need to be home?\nSuperintendent: Yes, please be there so the plumber can access the cabinet under the sink. Also, to be safe, turn off the shut-off valve under the sink — there's usually a small handle on the left pipe.\nResident: I found it and turned it off. The dripping has stopped for now.\nSuperintendent: Perfect. That confirms the problem is with the supply line, not the drain. The plumber will replace the fitting. It should take under an hour.",
+      "title": "Airline Baggage Delay",
+      "text": "Passenger: Excuse me, my baggage didn't arrive on my flight from Vancouver. Airline Agent: I'm very sorry to hear that. Let me help you file a report. What is your confirmation number? Passenger: It's VH-4829. I arrived about an hour ago on flight AC-127. Agent: Got it. Did you check your bag through to your final destination or pick it up here in Calgary? Passenger: I checked it all the way to Calgary. I have the baggage claim ticket right here. Agent: Perfect. Can I see that? The tag number is LM-58493. Your bag is a black Samsonite roller, correct? Passenger: Yes, that's right. It has a red ribbon on the handle. Agent: Great. I've found it in the system. It actually came off the plane but was misrouted to Edmonton by mistake. It's on the next flight back to Calgary, which arrives at 6:15 PM tonight. Passenger: So I'll have it this evening? Agent: Yes, we'll have it delivered to your hotel by 8 PM. Where are you staying? Passenger: The Fairmont Palliser downtown. What compensation will I get? Agent: Because the delay is less than 24 hours and the bag will be delivered today, we'll provide a $50 travel voucher for your next flight with us.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-012-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Choosing Between Two Job Offers",
-      "text": "Priya: I'm in a tough spot. I got two job offers this week and I have until Friday to decide.\nKevin: That's a great problem to have! What are the offers?\nPriya: One is a junior marketing role at a tech startup. Good salary, lots of creative freedom, but the company is only two years old and a bit risky. The other is a coordinator position at a non-profit — lower salary, but excellent benefits and a guaranteed pension.\nKevin: What matters more to you right now — financial security or career growth?\nPriya: Honestly, both. I have student loans to pay off, but I also don't want to be stuck in a job that goes nowhere.\nKevin: Could the non-profit lead to advancement?\nPriya: They mentioned there's a senior coordinator role that opens up every couple of years. But at the startup, if it takes off, the growth potential is huge.\nKevin: Have you factored in the commute?\nPriya: Good point — the startup is downtown, forty-five minutes each way on transit. The non-profit is ten minutes from my apartment.\nKevin: That's two hours a day you'd get back with the non-profit. That's not nothing.",
+      "title": "Neighbourhood Park Chat",
+      "text": "David: Hey, nice day, isn't it? Rebecca: Beautiful. Perfect weather for being outside. David: Have you lived in this neighbourhood long? Rebecca: About five years now. And you? David: Just moved here last month. Rebecca: Oh nice. You picked a good time to arrive. The summer's the best season here. David: So I'm hearing. Any recommendations for places to go? Rebecca: There's a great farmer's market on Saturday mornings at the corner of Main and Oak. The coffee shop near there is amazing too. David: Sounds good. I'll have to check it out. Rebecca: You definitely should. They have the best pastries. Oh, and the park just got new playground equipment if you have kids. David: No kids yet, but that's nice to know. Do many families live here? Rebecca: Lots of young families. It's a very friendly community. David: That's what I was hoping for. I'm looking forward to exploring more.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-012-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "How to Use the Provincial Health Insurance System",
-      "text": "Welcome to this information session on using the provincial health insurance system. If you are a permanent resident or Canadian citizen living in this province, you are entitled to a provincial health card, which covers the cost of most medically necessary services.\n\nTo obtain your health card, visit a ServiceOntario or equivalent provincial office with two pieces of identification — one must be a government-issued photo ID, such as a passport or permanent resident card, and one must show your current address, such as a utility bill or bank statement. New applicants typically wait a three-month period before coverage begins, so it is important to apply as soon as possible after arriving.\n\nYour health card covers visits to a family doctor, specialist consultations when referred by your doctor, emergency room visits, hospital stays, and diagnostic tests including X-rays and blood work. It does not automatically cover prescription drugs, dental care, or vision care, which are typically covered through separate private insurance plans or provincial drug benefit programmes for qualifying residents.\n\nIf you do not have a family doctor, you can register with the Health Care Connect programme, which matches patients to available physicians. In the meantime, walk-in clinics and urgent care centres can treat most non-emergency conditions and are also covered by your health card.\n\nAlways carry your health card when attending medical appointments, and report any change of address to the provincial health authority to ensure your records are current.",
+      "title": "Public Transit New Route Announcement",
+      "text": "Good afternoon. Transit Authority is pleased to announce a new rapid bus route effective September 1st. The new Route 95 Express connects downtown to the northern suburbs, with stops at Central Station, City Hall, the Hospital, University Campus, and North Terminal. Service runs Monday through Friday from 6 AM to 10 PM, with departures every fifteen minutes during peak hours, 7 to 9 AM and 4 to 7 PM. Off-peak service is every thirty minutes. Weekend service begins December, with departures every twenty minutes from 9 AM to 8 PM. The Route 95 uses the new dedicated bus lane on Main Street, reducing travel time from downtown to North Terminal from forty-five minutes to approximately twenty-two minutes. Fares are the same as existing routes: single trip is three dollars fifty cents, and a monthly pass is ninety dollars. Seniors and students receive a twenty percent discount. The new buses feature USB charging ports, free Wi-Fi, and comfortable seating. Detailed schedules are available on our website and at all transit stations. Real-time tracking is available through our mobile app.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-012-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: Province Launches New Childcare Subsidy Programme",
-      "text": "The provincial government announced a new childcare subsidy programme this morning, aimed at reducing childcare costs for families earning below ninety thousand dollars per year. Under the new programme, eligible families will pay no more than ten dollars per day for regulated childcare, beginning on the first of next month.\n\nThe Minister of Families said the programme is expected to benefit approximately forty thousand children across the province in its first year. Priority access will be given to families with children under the age of six, as well as families currently on waitlists at participating childcare centres.\n\nTo apply, parents must submit an application through the provincial government's online portal and provide proof of income from the previous tax year. Applications will be processed within fifteen business days, and approved families will be notified by email.\n\nChild-care providers interested in joining the programme must sign a participation agreement and comply with the province's staffing and curriculum standards. The government said that over three hundred licenced providers have already registered ahead of the launch.\n\nOpposition critics raised concerns that the programme does not extend to informal care arrangements, such as home-based care providers who are not licenced. The government indicated it plans to expand eligibility in future years.",
+      "title": "New Tech Campus Opens in Calgary",
+      "text": "A major technology development is happening in Calgary today. TechHub Prairie, a 50,000-square-meter innovation center, officially opened its doors this morning in the downtown core. The facility cost 85 million dollars to construct and is expected to create 1,200 new jobs over the next two years. The campus features office space, research laboratories, and startup incubator units. Over 40 companies have already committed to moving in, including software firms, AI research groups, and digital marketing agencies. Mayor Jyoti Gondek attended the ribbon-cutting ceremony and called it a game-changer for Alberta's economy. The provincial government provided 15 million dollars in funding to support the project. TechHub Prairie will also host weekly networking events and offer mentorship programs for emerging entrepreneurs. Officials believe this development positions Calgary as a serious competitor in Canada's tech industry.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-012-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Is Social Media Good or Bad for Teenagers?",
-      "text": "Host: Today's discussion focuses on social media and its impact on teenagers. With me are two commentators: Diane, a child development researcher, and Tom, who advocates for digital literacy education. Diane, let's start with you — is social media harmful to teenagers?\nDiane: The research is quite clear that heavy social media use is associated with higher rates of anxiety, depression, and sleep disruption in teenagers, particularly for girls. The problem isn't the technology itself — it's the design. Platforms are deliberately built to maximise engagement, which means maximising the time young people spend comparing themselves to others.\nHost: Tom, do you think the solution is restricting access?\nTom: I strongly disagree with blanket restrictions. The answer is education. We need to teach teenagers to be critical consumers of digital content — how algorithms work, how images are edited, what business models drive these platforms. Banning access doesn't develop those skills; it just delays the problem.\nHost: Diane, what do you say to that?\nDiane: I agree that education is necessary, but it is not sufficient on its own. A thirteen-year-old is neurologically not equipped to resist the deliberate manipulation that these platforms apply. We need age-appropriate restrictions alongside digital literacy — not instead of it.\nHost: Tom, any response?\nTom: The issue is that restriction without education creates what I call the forbidden fruit effect — the moment restrictions are lifted, young people binge. I've seen this in schools that blocked social media completely and then found students spending even more time online at weekends to compensate.\nHost: Thank you both. It seems there is agreement on the need for education, but a real divide on the role of restrictions.",
+      "title": "Workplace Safety Initiative",
+      "text": "Safety Officer Tom: I've been analyzing our workplace incident reports from the past two years, and I'm concerned about our trend. We've had 34 reported injuries this year, which is up 15 percent from last year. Most incidents are slips, trips, and falls in warehouse areas. I'm proposing we implement mandatory safety training for all warehouse staff every six months, not annually as we currently do.\n\nWarehouse Manager David: Tom, I appreciate your concern, but I'm worried about requiring training every six months. That's a lot of time away from work. My team's productivity is already under pressure with current targets. If we pull people off the floor for training frequently, we'll fall further behind on our goals. Can't we just focus on better signage and equipment?\n\nWorker Representative Angela: I actually support Tom's proposal. I work in the warehouse, and I've seen some close calls that could have been serious. The issue isn't signage—we know the hazards. The problem is we get complacent. Regular training keeps safety top of mind. Plus, Tom, I think twice-yearly training would actually improve morale because workers feel the company cares about their wellbeing.\n\nSafety Officer Tom: Thank you, Angela. David, I understand your concern about productivity, but consider the cost of injuries. Each workplace injury costs us about $12,000 in direct and indirect costs. If we can prevent even three injuries per year, the training pays for itself. And research shows regular safety training actually reduces injuries, which ultimately improves productivity.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-012-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: Why Small Towns Deserve More Investment",
-      "text": "For decades, government investment in infrastructure, healthcare, and education has flowed predominantly toward major cities. This concentration of resources has created a growing divide between the opportunities available to people in urban centres and those living in smaller towns and rural communities. I believe this imbalance is not only unfair but economically short-sighted.\n\nConsider healthcare. In most Canadian cities, residents have access to walk-in clinics, specialist hospitals, and urgent care centres within a reasonable distance. In small towns, the nearest hospital may be an hour's drive away. Rural residents have higher rates of late-stage cancer diagnoses precisely because early detection requires access to diagnostic services that simply are not available locally.\n\nEducation tells a similar story. Urban schools are often better funded, have access to more experienced teachers, and offer a wider range of programmes and extracurricular activities. Rural students frequently travel long distances to school and have fewer post-secondary options nearby. This creates a pattern in which talented young people leave their home communities for cities — and rarely return.\n\nCritics of increased rural investment argue that the cost per person is too high. This logic is flawed. The cost of maintaining a dispersed population is not a reason to abandon it — it is an argument for smarter, targeted investment in sustainable local infrastructure.\n\nIf we are serious about equality of opportunity, the postal code where someone is born should not determine the quality of healthcare, education, or economic opportunity available to them. Small towns and rural communities deserve better — not out of sentiment, but out of a genuine commitment to a more equitable society.",
+      "title": "Universal Basic Income Feasibility",
+      "text": "I want to discuss Universal Basic Income, or UBI, and why I believe it could work in Canada. The concept is straightforward: every citizen receives a regular, unconditional cash payment from the government. Now, I know people immediately worry about the cost, but let me address that. First, UBI could replace many existing welfare programs that are expensive to administer. The bureaucracy involved in means-testing and eligibility verification costs billions. UBI would be simpler and less wasteful. Second, the economic stimulus of putting money in people's hands is significant. When people have financial security, they spend more, which supports businesses and creates jobs. Third, UBI addresses real problems: poverty, economic instability, and lack of opportunity. We've seen pilot projects in Kenya, Finland, and Canada that show positive outcomes. In Kenya, UBI increased business formation by 32 percent. In Finland, participants reported better mental health and less anxiety. Some worry it will make people lazy, but that's not supported by evidence. People want purpose and contribution, not just money. What UBI does is give them the freedom to pursue education, care for family, or start businesses without desperation. The real question isn't whether we can afford UBI—it's whether we can afford not to implement it. Rising inequality and automation are creating unprecedented challenges.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-012-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What is the problem the resident is reporting?",
+      "prompt": "From which city did the passenger fly?",
       "options": [
-        "A broken window",
-        "A water leak under the kitchen sink",
-        "A faulty heating system",
-        "A blocked toilet"
+        "Calgary",
+        "Vancouver",
+        "Edmonton",
+        "Toronto"
       ],
-      "correctAnswer": "A water leak under the kitchen sink",
-      "explanation": "The resident calls to report water pooling under the kitchen sink.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "Vancouver",
+      "explanation": "Passenger states 'my baggage didn't arrive on my flight from Vancouver.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-012-q02",
       "audioScriptId": "celpip-listening-012-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How fast is the bucket filling up?",
+      "prompt": "What is the baggage claim tag number?",
       "options": [
-        "Every thirty minutes",
-        "Every hour",
-        "Every two hours",
-        "Every day"
+        "LM-48593",
+        "LM-58493",
+        "LM-58394",
+        "LM-48539"
       ],
-      "correctAnswer": "Every two hours",
-      "explanation": "The resident says the bucket fills up about every two hours.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "LM-58493",
+      "explanation": "Agent reads the tag number as 'LM-58493' from the claim ticket.",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-012-q03",
       "audioScriptId": "celpip-listening-012-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent suspect the problem is?",
+      "prompt": "What color is the passenger's luggage?",
       "options": [
-        "A cracked drain pipe",
-        "A loose connection on the supply line",
-        "A broken water heater",
-        "A faulty pressure valve"
+        "Blue Samsonite roller",
+        "Black Samsonite roller",
+        "Black leather bag",
+        "Red Samsonite roller"
       ],
-      "correctAnswer": "A loose connection on the supply line",
-      "explanation": "The superintendent says it sounds like a loose connection on the supply line.",
+      "correctAnswer": "Black Samsonite roller",
+      "explanation": "Agent confirms 'Your bag is a black Samsonite roller, correct?' and passenger agrees.",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-012-q04",
       "audioScriptId": "celpip-listening-012-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "When is the plumber available?",
+      "prompt": "Where was the bag mistakenly sent?",
       "options": [
-        "This morning",
-        "Tomorrow morning",
-        "Two o'clock this afternoon",
-        "Next week"
+        "Vancouver",
+        "Toronto",
+        "Edmonton",
+        "Montreal"
       ],
-      "correctAnswer": "Two o'clock this afternoon",
-      "explanation": "The superintendent says the plumber is available at two o'clock this afternoon.",
+      "correctAnswer": "Edmonton",
+      "explanation": "Agent explains the bag 'was misrouted to Edmonton by mistake.'",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-012-q05",
       "audioScriptId": "celpip-listening-012-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent ask the resident to do immediately?",
+      "prompt": "When does the return flight arrive in Calgary?",
       "options": [
-        "Call a plumber directly",
-        "Leave the apartment",
-        "Turn off the shut-off valve",
-        "Open the windows"
+        "4:15 PM",
+        "5:15 PM",
+        "6:15 PM",
+        "7:15 PM"
       ],
-      "correctAnswer": "Turn off the shut-off valve",
-      "explanation": "The superintendent advises turning off the shut-off valve under the sink.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "6:15 PM",
+      "explanation": "Agent states 'It's on the next flight back to Calgary, which arrives at 6:15 PM tonight.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-012-q06",
       "audioScriptId": "celpip-listening-012-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the dripping stopping confirm?",
+      "prompt": "By what time will the bag be delivered to the hotel?",
       "options": [
-        "The drain is blocked",
-        "The pipe is cracked",
-        "The problem is with the supply line, not the drain",
-        "The water pressure is too high"
+        "6:00 PM",
+        "7:00 PM",
+        "8:00 PM",
+        "9:00 PM"
       ],
-      "correctAnswer": "The problem is with the supply line, not the drain",
-      "explanation": "The superintendent says this confirms the problem is with the supply line.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "8:00 PM",
+      "explanation": "Agent promises 'we'll have it delivered to your hotel by 8 PM.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-012-q07",
       "audioScriptId": "celpip-listening-012-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long is the repair expected to take?",
+      "prompt": "Which hotel is the passenger staying at?",
       "options": [
-        "Less than one hour",
-        "Two to three hours",
-        "All afternoon",
-        "Several days"
+        "The Sandman Calgary",
+        "The Fairmont Palliser",
+        "The Bow Tower",
+        "The Shangri-La"
       ],
-      "correctAnswer": "Less than one hour",
-      "explanation": "The superintendent says it should take under an hour.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "The Fairmont Palliser",
+      "explanation": "Passenger states they're staying at 'The Fairmont Palliser downtown.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-012-q08",
       "audioScriptId": "celpip-listening-012-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why does the resident need to be home for the repair?",
+      "prompt": "What compensation is offered for the baggage delay?",
       "options": [
-        "To pay the plumber in cash",
-        "To sign a repair agreement",
-        "To give the plumber access to the cabinet",
-        "To watch the repair procedure"
+        "$25 travel voucher",
+        "$35 travel voucher",
+        "$50 travel voucher",
+        "$75 travel voucher"
       ],
-      "correctAnswer": "To give the plumber access to the cabinet",
-      "explanation": "The superintendent says the plumber needs to access the cabinet under the sink.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "$50 travel voucher",
+      "explanation": "Agent offers 'a $50 travel voucher for your next flight with us.'",
+      "difficulty": "medium",
+      "topic": "luggage issue"
     },
     {
       "id": "celpip-listening-012-q09",
       "audioScriptId": "celpip-listening-012-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How many job offers has Priya received?",
+      "prompt": "How long has Rebecca lived in the neighbourhood?",
       "options": [
-        "One",
-        "Two",
-        "Three",
-        "Four"
+        "Two years",
+        "Three years",
+        "Four years",
+        "Five years"
       ],
-      "correctAnswer": "Two",
-      "explanation": "Priya says she received two job offers this week.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "Five years",
+      "explanation": "Rebecca states 'About five years now.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-012-q10",
       "audioScriptId": "celpip-listening-012-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What concern does Priya have about the startup?",
+      "prompt": "When did David move to the neighbourhood?",
       "options": [
-        "The salary is too low",
-        "It is located too far away",
-        "It is only two years old and a bit risky",
-        "The role lacks creative freedom"
+        "One week ago",
+        "Two weeks ago",
+        "Last month",
+        "Two months ago"
       ],
-      "correctAnswer": "It is only two years old and a bit risky",
-      "explanation": "Priya says the startup is only two years old and a bit risky.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "Last month",
+      "explanation": "David says 'Just moved here last month.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-012-q11",
       "audioScriptId": "celpip-listening-012-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What advantage does the non-profit offer over the startup?",
+      "prompt": "What is the best season in this neighbourhood?",
       "options": [
-        "Higher salary",
-        "More creative freedom",
-        "Better benefits and a pension",
-        "Faster career advancement"
+        "Spring",
+        "Summer",
+        "Fall",
+        "Winter"
       ],
-      "correctAnswer": "Better benefits and a pension",
-      "explanation": "Priya says the non-profit has excellent benefits and a guaranteed pension.",
+      "correctAnswer": "Summer",
+      "explanation": "Rebecca states 'The summer's the best season here.'",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-012-q12",
       "audioScriptId": "celpip-listening-012-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How long is the commute to the startup?",
+      "prompt": "Where is the farmer's market held?",
       "options": [
-        "Ten minutes",
-        "Twenty minutes",
-        "Forty-five minutes each way",
-        "Over an hour each way"
+        "Main and Queen",
+        "Main and King",
+        "Main and Oak",
+        "Oak and Queen"
       ],
-      "correctAnswer": "Forty-five minutes each way",
-      "explanation": "Priya says the startup is forty-five minutes each way on transit.",
+      "correctAnswer": "Main and Oak",
+      "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-012-q13",
       "audioScriptId": "celpip-listening-012-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Kevin point out about commuting time?",
+      "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "It adds to fitness levels",
-        "It is a chance to read",
-        "The non-profit saves her two hours a day",
-        "Transit fares are expensive"
+        "Business-focused",
+        "Very friendly",
+        "Quiet and isolated",
+        "Fast-paced"
       ],
-      "correctAnswer": "The non-profit saves her two hours a day",
-      "explanation": "Kevin says Priya would get back two hours a day by working closer to home.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "Very friendly",
+      "explanation": "Rebecca says 'It's a very friendly community.'",
+      "difficulty": "medium",
+      "topic": "casual conversation"
     },
     {
       "id": "celpip-listening-012-q14",
       "audioScriptId": "celpip-listening-012-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is entitled to a provincial health card?",
+      "prompt": "When does Route 95 begin service?",
       "options": [
-        "Only Canadian citizens",
-        "Permanent residents and Canadian citizens",
-        "International students only",
-        "Anyone living in Canada"
+        "August 1st",
+        "August 15th",
+        "September 1st",
+        "September 15th"
       ],
-      "correctAnswer": "Permanent residents and Canadian citizens",
-      "explanation": "The speaker says permanent residents or Canadian citizens are entitled to a health card.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "September 1st",
+      "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-012-q15",
       "audioScriptId": "celpip-listening-012-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is one document required to apply for a health card?",
+      "prompt": "What is the frequency of peak hour service?",
       "options": [
-        "A letter from an employer",
-        "A government-issued photo ID",
-        "A birth certificate",
-        "A utility bill from a previous province"
+        "Every 10 minutes",
+        "Every 15 minutes",
+        "Every 20 minutes",
+        "Every 30 minutes"
       ],
-      "correctAnswer": "A government-issued photo ID",
-      "explanation": "The speaker says one of the two IDs must be a government-issued photo ID.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "Every 15 minutes",
+      "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-012-q16",
       "audioScriptId": "celpip-listening-012-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long must new applicants typically wait before coverage begins?",
+      "prompt": "How much travel time is saved with Route 95?",
       "options": [
-        "One week",
-        "One month",
-        "Three months",
-        "Six months"
+        "15 minutes",
+        "20 minutes",
+        "23 minutes",
+        "30 minutes"
       ],
-      "correctAnswer": "Three months",
-      "explanation": "The speaker says there is typically a three-month waiting period.",
+      "correctAnswer": "23 minutes",
+      "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved.",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-012-q17",
       "audioScriptId": "celpip-listening-012-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT covered by the provincial health card?",
+      "prompt": "What is the cost of a single trip?",
       "options": [
-        "Emergency room visits",
-        "Family doctor visits",
-        "Dental care",
-        "Blood work"
+        "$2.50",
+        "$3.00",
+        "$3.50",
+        "$4.00"
       ],
-      "correctAnswer": "Dental care",
-      "explanation": "The speaker says dental care is not automatically covered by the health card.",
+      "correctAnswer": "$3.50",
+      "explanation": "The guide states 'single trip is three dollars fifty cents.'",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-012-q18",
       "audioScriptId": "celpip-listening-012-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is the Health Care Connect programme?",
+      "prompt": "What is the monthly pass cost?",
       "options": [
-        "A private insurance plan",
-        "A walk-in clinic network",
-        "A programme that matches patients to available physicians",
-        "An online pharmacy"
+        "$75",
+        "$80",
+        "$90",
+        "$100"
       ],
-      "correctAnswer": "A programme that matches patients to available physicians",
-      "explanation": "The speaker describes Health Care Connect as matching patients to available physicians.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "$90",
+      "explanation": "The guide specifies 'a monthly pass is ninety dollars.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-012-q19",
       "audioScriptId": "celpip-listening-012-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What should residents do if their address changes?",
+      "prompt": "What features are available on the new buses?",
       "options": [
-        "Apply for a new health card",
-        "Report the change to the provincial health authority",
-        "Contact their family doctor only",
-        "Wait until renewal time"
+        "USB charging only",
+        "Free Wi-Fi only",
+        "USB charging, free Wi-Fi, and comfortable seating",
+        "Air conditioning only"
       ],
-      "correctAnswer": "Report the change to the provincial health authority",
-      "explanation": "The speaker says to report any change of address to keep records current.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "USB charging, free Wi-Fi, and comfortable seating",
+      "explanation": "The guide mentions 'The new buses feature USB charging ports, free Wi-Fi, and comfortable seating.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-012-q20",
       "audioScriptId": "celpip-listening-012-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Who is eligible for the new childcare subsidy?",
+      "prompt": "What is the size of TechHub Prairie?",
       "options": [
-        "All families with children under twelve",
-        "Families earning below ninety thousand dollars per year",
-        "Only single-parent households",
-        "Families on social assistance only"
+        "30,000 square meters",
+        "40,000 square meters",
+        "50,000 square meters",
+        "60,000 square meters"
       ],
-      "correctAnswer": "Families earning below ninety thousand dollars per year",
-      "explanation": "The report says eligible families earn below ninety thousand dollars per year.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "50,000 square meters",
+      "explanation": "The report states TechHub Prairie is a 50,000-square-meter innovation center.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-012-q21",
       "audioScriptId": "celpip-listening-012-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What is the maximum daily childcare cost under the new programme?",
+      "prompt": "How much did the facility cost to construct?",
       "options": [
-        "Five dollars",
-        "Ten dollars",
-        "Twenty dollars",
-        "Fifty dollars"
+        "75 million dollars",
+        "80 million dollars",
+        "85 million dollars",
+        "90 million dollars"
       ],
-      "correctAnswer": "Ten dollars",
-      "explanation": "The report states families will pay no more than ten dollars per day.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "85 million dollars",
+      "explanation": "The facility cost 85 million dollars to construct.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-012-q22",
       "audioScriptId": "celpip-listening-012-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Which children will receive priority access?",
+      "prompt": "How many new jobs are expected to be created?",
       "options": [
-        "School-age children",
-        "Children under six and those already on waitlists",
-        "Children of essential workers",
-        "All children equally"
+        "800 jobs",
+        "1,000 jobs",
+        "1,200 jobs",
+        "1,500 jobs"
       ],
-      "correctAnswer": "Children under six and those already on waitlists",
-      "explanation": "The minister says priority goes to children under six and families on existing waitlists.",
+      "correctAnswer": "1,200 jobs",
+      "explanation": "It is expected to create 1,200 new jobs over the next two years.",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-012-q23",
       "audioScriptId": "celpip-listening-012-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will approved families be notified?",
+      "prompt": "How much provincial funding was provided?",
       "options": [
-        "By post",
-        "By telephone",
-        "By email",
-        "Through their childcare provider"
+        "10 million dollars",
+        "12 million dollars",
+        "15 million dollars",
+        "20 million dollars"
       ],
-      "correctAnswer": "By email",
-      "explanation": "The report says approved families will be notified by email.",
+      "correctAnswer": "15 million dollars",
+      "explanation": "The provincial government provided 15 million dollars in funding.",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-012-q24",
       "audioScriptId": "celpip-listening-012-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What concern did opposition critics raise?",
+      "prompt": "Which of the following is NOT mentioned as available at the campus?",
       "options": [
-        "The daily fee is too high",
-        "The programme excludes informal unlicenced home-based care",
-        "Too many providers have already registered",
-        "The programme starts too late in the year"
+        "Office space",
+        "Research laboratories",
+        "Residential apartments",
+        "Startup incubator units"
       ],
-      "correctAnswer": "The programme excludes informal unlicenced home-based care",
-      "explanation": "Critics say the programme does not extend to informal home-based care arrangements.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "Residential apartments",
+      "explanation": "The report mentions office space, laboratories, and incubators, but not apartments.",
+      "difficulty": "medium",
+      "topic": "Technology"
     },
     {
       "id": "celpip-listening-012-q25",
       "audioScriptId": "celpip-listening-012-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say is the main problem with social media platforms?",
+      "prompt": "How many workplace injuries were reported this year?",
       "options": [
-        "They are too expensive",
-        "They are designed to maximise engagement through comparison",
-        "They do not have enough educational content",
-        "They spread false news to teenagers"
+        "25 injuries",
+        "29 injuries",
+        "34 injuries",
+        "39 injuries"
       ],
-      "correctAnswer": "They are designed to maximise engagement through comparison",
-      "explanation": "Diane says platforms are deliberately built to maximise engagement, which means maximising comparison.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "34 injuries",
+      "explanation": "Tom reports 34 workplace injuries this year.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-012-q26",
       "audioScriptId": "celpip-listening-012-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom advocate for?",
+      "prompt": "What is the percentage increase in injuries from last year?",
       "options": [
-        "Banning social media entirely",
-        "Age-based restrictions on all platforms",
-        "Digital literacy education for teenagers",
-        "Parental monitoring software"
+        "10 percent",
+        "12 percent",
+        "15 percent",
+        "18 percent"
       ],
-      "correctAnswer": "Digital literacy education for teenagers",
-      "explanation": "Tom says the answer is teaching teenagers to be critical consumers of digital content.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "15 percent",
+      "explanation": "The number of injuries is up 15 percent from last year.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-012-q27",
       "audioScriptId": "celpip-listening-012-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "On what point do Diane and Tom agree?",
+      "prompt": "What type of incident accounts for most injuries?",
       "options": [
-        "Restrictions are necessary",
-        "Education about social media is necessary",
-        "Teenagers should avoid all social media",
-        "Parents should manage all screen time"
+        "Equipment failures",
+        "Slips, trips, and falls",
+        "Chemical exposure",
+        "Back injuries from lifting"
       ],
-      "correctAnswer": "Education about social media is necessary",
-      "explanation": "The host notes both agree on the need for education.",
+      "correctAnswer": "Slips, trips, and falls",
+      "explanation": "Most incidents are slips, trips, and falls in warehouse areas.",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-012-q28",
       "audioScriptId": "celpip-listening-012-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say a thirteen-year-old is not equipped to do?",
+      "prompt": "What is Tom's proposed safety training frequency?",
       "options": [
-        "Understand complex text",
-        "Resist deliberate platform manipulation",
-        "Manage their own time",
-        "Communicate online safely"
+        "Quarterly",
+        "Twice yearly",
+        "Annually",
+        "Every two years"
       ],
-      "correctAnswer": "Resist deliberate platform manipulation",
-      "explanation": "Diane says a thirteen-year-old is neurologically not equipped to resist deliberate platform manipulation.",
+      "correctAnswer": "Twice yearly",
+      "explanation": "Tom proposes mandatory training every six months, not annually.",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-012-q29",
       "audioScriptId": "celpip-listening-012-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom call the effect of banning social media without education?",
+      "prompt": "What is David's main concern about the training proposal?",
       "options": [
-        "The rebound effect",
-        "The forbidden fruit effect",
-        "The digital divide",
-        "The screen overload effect"
+        "Training effectiveness",
+        "Cost of training",
+        "Time away from work affecting productivity",
+        "Staff availability"
       ],
-      "correctAnswer": "The forbidden fruit effect",
-      "explanation": "Tom calls the over-compensating behaviour after restrictions the forbidden fruit effect.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "Time away from work affecting productivity",
+      "explanation": "David worries that frequent training time away will affect productivity.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-012-q30",
       "audioScriptId": "celpip-listening-012-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What evidence does Tom give for the forbidden fruit effect?",
+      "prompt": "What alternative does David suggest?",
       "options": [
-        "A government study on screen time",
-        "Personal experience with teenagers at home",
-        "Schools that blocked social media found students spent more time online on weekends",
-        "Research from Diane's own institution"
+        "Online training only",
+        "Better signage and equipment",
+        "Reduced warehouse hours",
+        "Equipment replacement"
       ],
-      "correctAnswer": "Schools that blocked social media found students spent more time online on weekends",
-      "explanation": "Tom says schools that blocked social media found students spent even more time online on weekends.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "Better signage and equipment",
+      "explanation": "David suggests focusing on better signage and equipment instead.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-012-q31",
       "audioScriptId": "celpip-listening-012-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What specific group does Diane say is most affected by heavy social media use?",
+      "prompt": "What cost estimate does Tom provide for each workplace injury?",
       "options": [
-        "Boys aged ten to twelve",
-        "All teenagers equally",
-        "Girls in particular",
-        "Teenagers in rural areas"
+        "$8,000",
+        "$10,000",
+        "$12,000",
+        "$15,000"
       ],
-      "correctAnswer": "Girls in particular",
-      "explanation": "Diane says anxiety and depression are particularly high for girls.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "$12,000",
+      "explanation": "Tom states each workplace injury costs about $12,000 in direct and indirect costs.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-012-q32",
       "audioScriptId": "celpip-listening-012-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's summary at the end?",
+      "prompt": "What additional benefit does Angela mention about training?",
       "options": [
-        "Both guests fully agree",
-        "The debate is too political to resolve",
-        "There is agreement on education but a divide on restrictions",
-        "Tom has made the stronger argument"
+        "Increased wages",
+        "Improved morale",
+        "Reduced hours",
+        "Better equipment"
       ],
-      "correctAnswer": "There is agreement on education but a divide on restrictions",
-      "explanation": "The host summarises that there is agreement on education but a real divide on restrictions.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "Improved morale",
+      "explanation": "Angela believes regular training improves morale because workers feel the company cares.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-012-q33",
       "audioScriptId": "celpip-listening-012-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker argue is wrong with current government investment patterns?",
+      "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "Too much money is spent on small towns",
-        "Investment flows mainly to cities, creating inequality",
-        "Rural communities refuse investment",
-        "Cities need more hospitals"
+        "Temporary welfare assistance",
+        "Government loans with repayment",
+        "Regular unconditional cash payment to all citizens",
+        "Employer-provided income supplements"
       ],
-      "correctAnswer": "Investment flows mainly to cities, creating inequality",
-      "explanation": "The speaker says investment has predominantly flowed toward major cities, creating a divide.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "Regular unconditional cash payment to all citizens",
+      "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-012-q34",
       "audioScriptId": "celpip-listening-012-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health problem does the speaker connect to rural under-investment?",
+      "prompt": "How could UBI reduce government costs according to the speaker?",
       "options": [
-        "Higher rates of heart disease",
-        "More road accidents",
-        "Higher rates of late-stage cancer diagnoses",
-        "Fewer vaccinations"
+        "By reducing salaries",
+        "By replacing expensive welfare programs",
+        "By cutting military spending",
+        "By reducing taxes"
       ],
-      "correctAnswer": "Higher rates of late-stage cancer diagnoses",
-      "explanation": "The speaker says rural residents have higher rates of late-stage cancer because early detection services are not available locally.",
-      "difficulty": "easy",
-      "topic": "Canadian education system"
+      "correctAnswer": "By replacing expensive welfare programs",
+      "explanation": "The speaker argues UBI could replace many existing welfare programs and reduce administrative costs.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-012-q35",
       "audioScriptId": "celpip-listening-012-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What pattern in education does the speaker describe?",
+      "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
-        "Rural schools are better funded than urban ones",
-        "Talented young people leave small towns and rarely return",
-        "Rural students prefer online learning",
-        "Urban students move to rural areas for university"
+        "It would decrease spending",
+        "Providing financial security would stimulate spending and job creation",
+        "It would reduce business activity",
+        "It would increase unemployment"
       ],
-      "correctAnswer": "Talented young people leave small towns and rarely return",
-      "explanation": "The speaker says talented young people leave for cities and rarely return.",
+      "correctAnswer": "Providing financial security would stimulate spending and job creation",
+      "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-012-q36",
       "audioScriptId": "celpip-listening-012-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How does the speaker respond to critics who say rural investment costs too much per person?",
+      "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
-        "By agreeing and suggesting cuts",
-        "By calling it a reason for smarter targeted investment",
-        "By dismissing the economic argument entirely",
-        "By citing statistics on rural GDP"
+        "22 percent",
+        "27 percent",
+        "32 percent",
+        "38 percent"
       ],
-      "correctAnswer": "By calling it a reason for smarter targeted investment",
-      "explanation": "The speaker says the cost argument is flawed and is actually an argument for smarter, targeted investment.",
+      "correctAnswer": "32 percent",
+      "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
       "difficulty": "medium",
-      "topic": "Canadian education system"
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-012-q37",
       "audioScriptId": "celpip-listening-012-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker say should not determine the quality of opportunity a person has?",
+      "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Their family income",
-        "Their level of education",
-        "The postal code where they were born",
-        "Their language ability"
+        "Increased energy",
+        "Better mental health and less anxiety",
+        "Improved sleep",
+        "Reduced medication needs"
       ],
-      "correctAnswer": "The postal code where they were born",
-      "explanation": "The speaker says the postal code where someone is born should not determine their opportunities.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "Better mental health and less anxiety",
+      "explanation": "In Finland, participants reported better mental health and less anxiety.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-012-q38",
       "audioScriptId": "celpip-listening-012-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall tone?",
+      "prompt": "What concern does the speaker directly address about UBI?",
       "options": [
-        "Nostalgic and sentimental",
-        "Objective and neutral",
-        "Persuasive and advocacy-driven",
-        "Pessimistic and resigned"
+        "It would increase inflation",
+        "It would make people lazy",
+        "It would reduce work motivation",
+        "Both B and C"
       ],
-      "correctAnswer": "Persuasive and advocacy-driven",
-      "explanation": "The speaker argues a clear position and calls for change based on principles of equity.",
-      "difficulty": "hard",
-      "topic": "Canadian education system"
+      "correctAnswer": "It would make people lazy",
+      "explanation": "The speaker specifically addresses the concern that UBI would make people lazy and disputes this.",
+      "difficulty": "medium",
+      "topic": "Economics"
     }
   ]
 }

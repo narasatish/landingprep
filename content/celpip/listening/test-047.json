@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 47",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 47",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-047-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Healthcare system navigation",
-      "script": "A health information line advisor explains how the provincial health insurance system works, including what is covered, what requires a referral, how to access specialist care, and how to appeal a coverage decision.",
+      "title": "Internet Service Outage",
+      "text": "Customer: Hi, my internet's been down for three hours now and I need it for work. Support Agent: I'm sorry to hear that. Let me pull up your account. Can I have your account number? Customer: It's 4472-89156. I'm working from home and have a client call in twenty minutes. Agent: Got it. I see you're in the downtown Toronto area. We have a known outage affecting that postal code from a fiber cut about two hours ago. Our repair team is already on site. Customer: When will it be fixed? Agent: Based on the damage, they estimate two to three more hours. So around 4:30 PM at the latest. Customer: That's too late for my meeting. Can you give me a credit or something? Agent: Absolutely. Since this outage is on our end, I'll apply a $25 credit to your next bill automatically. That'll go through within 24 hours. Customer: What about my current bill? Do I get anything for today's service loss? Agent: Yes, we credit one day of service charges, which is about $3.50 for today. Combined with the $25 credit, that's $28.50 total compensation. Is there anything else I can help with? Customer: No, that's fair. Thank you.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-047-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about community volunteer programmes",
-      "script": "This news is about community volunteer programmes. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Apartment Viewing Discussion",
+      "text": "Renter: I'm interested in this one-bedroom apartment. What are the lease terms? Landlord: It's a one-year lease. The rent is $1,200 per month, due on the first of each month. Renter: That seems reasonable. What utilities are included? Landlord: Water and heating are included, but you pay for electricity and internet. Renter: I see. What about parking? Landlord: There's one dedicated parking spot in the lot. It's included in the rent. Renter: Perfect. When would I be able to move in? Landlord: If we sign the lease today, you can move in on July 1st. Renter: Is that two weeks from now? Landlord: Yes, exactly two weeks. Do you have any pets? Renter: I have a cat. Is that okay? Landlord: Yes, cats are allowed. There's a one-time pet deposit of $150. Renter: Alright. Can I get a few days to think about it? Landlord: Sure, take until the end of the week. After that, I have other interested renters.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-047-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about community volunteer programmes",
-      "script": "This discussion is about community volunteer programmes. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "Public Transit New Route Announcement",
+      "text": "Good afternoon. Transit Authority is pleased to announce a new rapid bus route effective September 1st. The new Route 95 Express connects downtown to the northern suburbs, with stops at Central Station, City Hall, the Hospital, University Campus, and North Terminal. Service runs Monday through Friday from 6 AM to 10 PM, with departures every fifteen minutes during peak hours, 7 to 9 AM and 4 to 7 PM. Off-peak service is every thirty minutes. Weekend service begins December, with departures every twenty minutes from 9 AM to 8 PM. The Route 95 uses the new dedicated bus lane on Main Street, reducing travel time from downtown to North Terminal from forty-five minutes to approximately twenty-two minutes. Fares are the same as existing routes: single trip is three dollars fifty cents, and a monthly pass is ninety dollars. Seniors and students receive a twenty percent discount. The new buses feature USB charging ports, free Wi-Fi, and comfortable seating. Detailed schedules are available on our website and at all transit stations. Real-time tracking is available through our mobile app.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-047-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about community volunteer programmes",
-      "script": "This announcement is about community volunteer programmes. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "Ontario Solar Energy Initiative",
+      "text": "Ontario has launched an ambitious solar energy initiative targeting rooftop installations across residential and commercial properties. The program, called SolarON, aims to install solar panels on 50,000 homes and businesses over three years. The government is providing subsidies covering up to 40 percent of installation costs for eligible homeowners. Solar power currently accounts for only 1.2 percent of Ontario's electricity generation, but officials project this could increase to 8 percent by 2030. The initiative includes training programs to develop 2,500 new solar installation technicians. A rebate program offers homeowners up to 8,000 dollars toward equipment and installation expenses. Companies installing solar systems have reported a 150 percent increase in inquiries since the program's announcement. Environmental advocates praise the initiative for reducing carbon emissions and creating green jobs. The average residential system costs approximately 22,000 dollars before subsidies and rebates. Participants are also eligible for net metering, allowing them to sell excess power back to the grid.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-047-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about community volunteer programmes",
-      "script": "This office is about community volunteer programmes. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Workplace Safety Initiative",
+      "text": "Safety Officer Tom: I've been analyzing our workplace incident reports from the past two years, and I'm concerned about our trend. We've had 34 reported injuries this year, which is up 15 percent from last year. Most incidents are slips, trips, and falls in warehouse areas. I'm proposing we implement mandatory safety training for all warehouse staff every six months, not annually as we currently do.\n\nWarehouse Manager David: Tom, I appreciate your concern, but I'm worried about requiring training every six months. That's a lot of time away from work. My team's productivity is already under pressure with current targets. If we pull people off the floor for training frequently, we'll fall further behind on our goals. Can't we just focus on better signage and equipment?\n\nWorker Representative Angela: I actually support Tom's proposal. I work in the warehouse, and I've seen some close calls that could have been serious. The issue isn't signage—we know the hazards. The problem is we get complacent. Regular training keeps safety top of mind. Plus, Tom, I think twice-yearly training would actually improve morale because workers feel the company cares about their wellbeing.\n\nSafety Officer Tom: Thank you, Angela. David, I understand your concern about productivity, but consider the cost of injuries. Each workplace injury costs us about $12,000 in direct and indirect costs. If we can prevent even three injuries per year, the training pays for itself. And research shows regular safety training actually reduces injuries, which ultimately improves productivity.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-047-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about community volunteer programmes",
-      "script": "This lecture is about community volunteer programmes. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Universal Basic Income Feasibility",
+      "text": "I want to discuss Universal Basic Income, or UBI, and why I believe it could work in Canada. The concept is straightforward: every citizen receives a regular, unconditional cash payment from the government. Now, I know people immediately worry about the cost, but let me address that. First, UBI could replace many existing welfare programs that are expensive to administer. The bureaucracy involved in means-testing and eligibility verification costs billions. UBI would be simpler and less wasteful. Second, the economic stimulus of putting money in people's hands is significant. When people have financial security, they spend more, which supports businesses and creates jobs. Third, UBI addresses real problems: poverty, economic instability, and lack of opportunity. We've seen pilot projects in Kenya, Finland, and Canada that show positive outcomes. In Kenya, UBI increased business formation by 32 percent. In Finland, participants reported better mental health and less anxiety. Some worry it will make people lazy, but that's not supported by evidence. People want purpose and contribution, not just money. What UBI does is give them the freedom to pursue education, care for family, or start businesses without desperation. The real question isn't whether we can afford UBI—it's whether we can afford not to implement it. Rising inequality and automation are creating unprecedented challenges.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-047-q01",
+      "audioScriptId": "celpip-listening-047-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-047-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "How long has the customer's internet been down?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "One hour",
+        "Two hours",
+        "Three hours",
+        "Four hours"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "healthcare system navigation"
+      "correctAnswer": "Three hours",
+      "explanation": "Customer states 'my internet's been down for three hours now.'",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-047-q02",
+      "audioScriptId": "celpip-listening-047-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-047-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "What is the customer's account number?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "4472-89156",
+        "4427-89165",
+        "4472-98156",
+        "4427-98165"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "healthcare system navigation"
+      "correctAnswer": "4472-89156",
+      "explanation": "Customer provides the account number as '4472-89156.'",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-047-q03",
+      "audioScriptId": "celpip-listening-047-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-047-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "What caused the outage?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "A router malfunction",
+        "A fiber cut",
+        "A power surge",
+        "A software update"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "healthcare system navigation"
+      "correctAnswer": "A fiber cut",
+      "explanation": "Agent explains there's 'a known outage' due to 'a fiber cut about two hours ago.'",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-047-q04",
+      "audioScriptId": "celpip-listening-047-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-047-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "When is the outage estimated to be fixed?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "2:00 PM",
+        "3:00 PM",
+        "4:30 PM",
+        "5:00 PM"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "4:30 PM",
+      "explanation": "Agent estimates the repair will be complete 'around 4:30 PM at the latest.'",
       "difficulty": "medium",
-      "topic": "healthcare system navigation"
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-047-q05",
+      "audioScriptId": "celpip-listening-047-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-047-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "What is the automatic credit amount for the outage?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "$15",
+        "$20",
+        "$25",
+        "$30"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "$25",
+      "explanation": "Agent states 'I'll apply a $25 credit to your next bill automatically.'",
       "difficulty": "medium",
-      "topic": "healthcare system navigation"
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-047-q06",
+      "audioScriptId": "celpip-listening-047-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-047-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "What is the daily service charge credit?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "$2.50",
+        "$3.50",
+        "$4.50",
+        "$5.50"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "$3.50",
+      "explanation": "Agent mentions 'one day of service charges, which is about $3.50 for today.'",
       "difficulty": "medium",
-      "topic": "healthcare system navigation"
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-047-q07",
+      "audioScriptId": "celpip-listening-047-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-047-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "What is the total compensation being offered?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "$25",
+        "$28.50",
+        "$32",
+        "$35"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "healthcare system navigation"
+      "correctAnswer": "$28.50",
+      "explanation": "Agent calculates 'Combined with the $25 credit, that's $28.50 total compensation.'",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-047-q08",
+      "audioScriptId": "celpip-listening-047-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-047-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "In how many hours should the repair be complete?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "1 to 2 hours",
+        "2 to 3 hours",
+        "3 to 4 hours",
+        "4 to 5 hours"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "healthcare system navigation"
+      "correctAnswer": "2 to 3 hours",
+      "explanation": "Agent estimates 'two to three more hours' of repair work remaining.",
+      "difficulty": "medium",
+      "topic": "service complaint"
     },
     {
       "id": "celpip-listening-047-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-047-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-047-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "What is the monthly rent?",
+      "options": [
+        "$1,000",
+        "$1,100",
+        "$1,200",
+        "$1,300"
+      ],
+      "correctAnswer": "$1,200",
+      "explanation": "Landlord states 'The rent is $1,200 per month.'",
       "difficulty": "medium",
-      "topic": "healthcare system navigation"
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-047-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-047-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-047-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "What utilities are included?",
+      "options": [
+        "All utilities",
+        "Water and heating",
+        "Electricity only",
+        "Internet only"
+      ],
+      "correctAnswer": "Water and heating",
+      "explanation": "Landlord explains 'Water and heating are included.'",
       "difficulty": "medium",
-      "topic": "healthcare system navigation"
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-047-q11",
+      "audioScriptId": "celpip-listening-047-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-047-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "Is parking included in the rent?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "No, extra cost",
+        "Yes, one spot",
+        "Two spots",
+        "Not available"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "Yes, one spot",
+      "explanation": "Landlord confirms 'one dedicated parking spot' is 'included in the rent.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-047-q12",
+      "audioScriptId": "celpip-listening-047-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-047-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "When can the renter move in?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "June 15",
+        "June 24",
+        "July 1",
+        "July 8"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "July 1",
+      "explanation": "Landlord states 'you can move in on July 1st.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-047-q13",
+      "audioScriptId": "celpip-listening-047-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-047-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "What is the pet deposit for the cat?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "$100",
+        "$125",
+        "$150",
+        "$200"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "$150",
+      "explanation": "Landlord specifies 'a one-time pet deposit of $150.'",
+      "difficulty": "medium",
+      "topic": "housing search"
     },
     {
       "id": "celpip-listening-047-q14",
+      "audioScriptId": "celpip-listening-047-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-047-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "When does Route 95 begin service?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "August 1st",
+        "August 15th",
+        "September 1st",
+        "September 15th"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "September 1st",
+      "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-047-q15",
+      "audioScriptId": "celpip-listening-047-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-047-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "What is the frequency of peak hour service?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "Every 10 minutes",
+        "Every 15 minutes",
+        "Every 20 minutes",
+        "Every 30 minutes"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "Every 15 minutes",
+      "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-047-q16",
+      "audioScriptId": "celpip-listening-047-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-047-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "How much travel time is saved with Route 95?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "15 minutes",
+        "20 minutes",
+        "23 minutes",
+        "30 minutes"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "23 minutes",
+      "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved.",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-047-q17",
+      "audioScriptId": "celpip-listening-047-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-047-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "What is the cost of a single trip?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "$2.50",
+        "$3.00",
+        "$3.50",
+        "$4.00"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "$3.50",
+      "explanation": "The guide states 'single trip is three dollars fifty cents.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-047-q18",
+      "audioScriptId": "celpip-listening-047-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-047-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "What is the monthly pass cost?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "$75",
+        "$80",
+        "$90",
+        "$100"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "$90",
+      "explanation": "The guide specifies 'a monthly pass is ninety dollars.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-047-q19",
+      "audioScriptId": "celpip-listening-047-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-047-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "What features are available on the new buses?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "USB charging only",
+        "Free Wi-Fi only",
+        "USB charging, free Wi-Fi, and comfortable seating",
+        "Air conditioning only"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "USB charging, free Wi-Fi, and comfortable seating",
+      "explanation": "The guide mentions 'The new buses feature USB charging ports, free Wi-Fi, and comfortable seating.'",
+      "difficulty": "medium",
+      "topic": "transit information"
     },
     {
       "id": "celpip-listening-047-q20",
+      "audioScriptId": "celpip-listening-047-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-047-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "How many homes and businesses are targeted for solar installation?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "30,000",
+        "40,000",
+        "50,000",
+        "60,000"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "50,000",
+      "explanation": "The SolarON program aims to install solar panels on 50,000 homes and businesses.",
+      "difficulty": "medium",
+      "topic": "Renewable energy"
     },
     {
       "id": "celpip-listening-047-q21",
+      "audioScriptId": "celpip-listening-047-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-047-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "What percentage of installation costs do subsidies cover?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "25 percent",
+        "30 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "40 percent",
+      "explanation": "The government provides subsidies covering up to 40 percent of installation costs.",
+      "difficulty": "medium",
+      "topic": "Renewable energy"
     },
     {
       "id": "celpip-listening-047-q22",
+      "audioScriptId": "celpip-listening-047-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-047-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "What is the current percentage of Ontario's electricity from solar power?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "0.8 percent",
+        "1.2 percent",
+        "2.0 percent",
+        "2.5 percent"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "1.2 percent",
+      "explanation": "Solar power currently accounts for only 1.2 percent of Ontario's electricity generation.",
+      "difficulty": "medium",
+      "topic": "Renewable energy"
     },
     {
       "id": "celpip-listening-047-q23",
+      "audioScriptId": "celpip-listening-047-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-047-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "How many new installation technicians will be trained?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "1,500 technicians",
+        "2,000 technicians",
+        "2,500 technicians",
+        "3,000 technicians"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "2,500 technicians",
+      "explanation": "Training programs aim to develop 2,500 new solar installation technicians.",
+      "difficulty": "medium",
+      "topic": "Renewable energy"
     },
     {
       "id": "celpip-listening-047-q24",
+      "audioScriptId": "celpip-listening-047-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-047-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "What is the maximum homeowner rebate?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "5,000 dollars",
+        "6,000 dollars",
+        "8,000 dollars",
+        "10,000 dollars"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "8,000 dollars",
+      "explanation": "A rebate program offers homeowners up to 8,000 dollars.",
+      "difficulty": "medium",
+      "topic": "Renewable energy"
     },
     {
       "id": "celpip-listening-047-q25",
+      "audioScriptId": "celpip-listening-047-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-047-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "How many workplace injuries were reported this year?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "25 injuries",
+        "29 injuries",
+        "34 injuries",
+        "39 injuries"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "34 injuries",
+      "explanation": "Tom reports 34 workplace injuries this year.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-047-q26",
+      "audioScriptId": "celpip-listening-047-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-047-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "What is the percentage increase in injuries from last year?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "10 percent",
+        "12 percent",
+        "15 percent",
+        "18 percent"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "15 percent",
+      "explanation": "The number of injuries is up 15 percent from last year.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-047-q27",
+      "audioScriptId": "celpip-listening-047-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-047-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What type of incident accounts for most injuries?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "Equipment failures",
+        "Slips, trips, and falls",
+        "Chemical exposure",
+        "Back injuries from lifting"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "Slips, trips, and falls",
+      "explanation": "Most incidents are slips, trips, and falls in warehouse areas.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-047-q28",
+      "audioScriptId": "celpip-listening-047-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-047-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "What is Tom's proposed safety training frequency?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "Quarterly",
+        "Twice yearly",
+        "Annually",
+        "Every two years"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "Twice yearly",
+      "explanation": "Tom proposes mandatory training every six months, not annually.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-047-q29",
+      "audioScriptId": "celpip-listening-047-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-047-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "What is David's main concern about the training proposal?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "Training effectiveness",
+        "Cost of training",
+        "Time away from work affecting productivity",
+        "Staff availability"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "Time away from work affecting productivity",
+      "explanation": "David worries that frequent training time away will affect productivity.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-047-q30",
+      "audioScriptId": "celpip-listening-047-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-047-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "What alternative does David suggest?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "Online training only",
+        "Better signage and equipment",
+        "Reduced warehouse hours",
+        "Equipment replacement"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "Better signage and equipment",
+      "explanation": "David suggests focusing on better signage and equipment instead.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-047-q31",
+      "audioScriptId": "celpip-listening-047-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-047-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "What cost estimate does Tom provide for each workplace injury?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "$8,000",
+        "$10,000",
+        "$12,000",
+        "$15,000"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "$12,000",
+      "explanation": "Tom states each workplace injury costs about $12,000 in direct and indirect costs.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-047-q32",
+      "audioScriptId": "celpip-listening-047-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-047-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "What additional benefit does Angela mention about training?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "Increased wages",
+        "Improved morale",
+        "Reduced hours",
+        "Better equipment"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "Improved morale",
+      "explanation": "Angela believes regular training improves morale because workers feel the company cares.",
+      "difficulty": "medium",
+      "topic": "Safety"
     },
     {
       "id": "celpip-listening-047-q33",
+      "audioScriptId": "celpip-listening-047-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-047-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "Temporary welfare assistance",
+        "Government loans with repayment",
+        "Regular unconditional cash payment to all citizens",
+        "Employer-provided income supplements"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "Regular unconditional cash payment to all citizens",
+      "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-047-q34",
+      "audioScriptId": "celpip-listening-047-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-047-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "How could UBI reduce government costs according to the speaker?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "By reducing salaries",
+        "By replacing expensive welfare programs",
+        "By cutting military spending",
+        "By reducing taxes"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "By replacing expensive welfare programs",
+      "explanation": "The speaker argues UBI could replace many existing welfare programs and reduce administrative costs.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-047-q35",
+      "audioScriptId": "celpip-listening-047-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-047-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "It would decrease spending",
+        "Providing financial security would stimulate spending and job creation",
+        "It would reduce business activity",
+        "It would increase unemployment"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "Providing financial security would stimulate spending and job creation",
+      "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-047-q36",
+      "audioScriptId": "celpip-listening-047-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-047-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "22 percent",
+        "27 percent",
+        "32 percent",
+        "38 percent"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "32 percent",
+      "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-047-q37",
+      "audioScriptId": "celpip-listening-047-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-047-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "Increased energy",
+        "Better mental health and less anxiety",
+        "Improved sleep",
+        "Reduced medication needs"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about community volunteer programmes.",
-      "difficulty": "medium"
+      "correctAnswer": "Better mental health and less anxiety",
+      "explanation": "In Finland, participants reported better mental health and less anxiety.",
+      "difficulty": "medium",
+      "topic": "Economics"
     },
     {
       "id": "celpip-listening-047-q38",
+      "audioScriptId": "celpip-listening-047-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-047-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What concern does the speaker directly address about UBI?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "It would increase inflation",
+        "It would make people lazy",
+        "It would reduce work motivation",
+        "Both B and C"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about community volunteer programmes.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "It would make people lazy",
+      "explanation": "The speaker specifically addresses the concern that UBI would make people lazy and disputes this.",
+      "difficulty": "medium",
+      "topic": "Economics"
     }
   ]
 }

@@ -3,17 +3,55 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP General LS Listening Practice Test 35",
-  "variant": "general_ls",
+  "title": "CELPIP General Listening — Practice Test 35",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to conversations and answer the questions.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Problem Solving",
+      "questionRange": "1–8",
+      "description": "A conversation in which one person has a problem and seeks help from another."
+    },
+    {
+      "part": 2,
+      "title": "Daily Life Conversation",
+      "questionRange": "9–13",
+      "description": "An everyday conversation between two people."
+    },
+    {
+      "part": 3,
+      "title": "Listening for Information",
+      "questionRange": "14–19",
+      "description": "An informational talk; listen for specific details."
+    },
+    {
+      "part": 4,
+      "title": "News Item",
+      "questionRange": "20–24",
+      "description": "A short news report."
+    },
+    {
+      "part": 5,
+      "title": "Discussion",
+      "questionRange": "25–32",
+      "description": "A discussion among people with different viewpoints."
+    },
+    {
+      "part": 6,
+      "title": "Viewpoints",
+      "questionRange": "33–38",
+      "description": "A longer talk presenting one speaker's opinion and reasons."
+    }
+  ],
   "listeningScripts": [
     {
       "id": "celpip-listening-035-s1",
+      "part": 1,
       "sectionPart": 1,
-      "title": "Conversation: Public transit in Canada",
-      "script": "Two colleagues on a bus discuss how to navigate the city's transit system. They explain how to use the transit app, load money onto a transit card, and plan a multi-leg journey across different transit zones.",
+      "title": "Car Rental Damage Dispute",
+      "text": "Customer: I'm returning my rental car, and I want to dispute a damage claim you're making. Rental Agent: Okay, let me look into that. What's your rental agreement number? Customer: It's CR-892447. I rented the blue Hyundai Elantra, and there was already a dent on the back bumper when I picked it up. Agent: Let me check the pickup photos. What time did you pick up the vehicle? Customer: 10 AM on Tuesday, June 3rd. Agent: I found those photos. You're right, there is a dent visible in the corner of the back bumper. The damage report lists a scratch on the driver's door, which I don't see in our pickup images. Can you tell me what happened? Customer: I definitely didn't cause that scratch. I was careful the whole time I had it. Agent: When did you return the vehicle? Customer: Just now, at 4 PM today. Agent: And you purchased the damage waiver insurance at rental? Customer: Yes, I paid the extra $18 per day for that. Agent: Great. Since you purchased the damage waiver, any damage during your rental period, except for gross negligence, is covered. This scratch appears to be new damage, but with your waiver, you're not responsible. Customer: So I don't have to pay anything? Agent: Correct. Your coverage applies. The previous dent was there before you rented it, and this new scratch is covered under your damage waiver. You're all set.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -22,732 +60,705 @@
     {
       "id": "celpip-listening-035-s2",
       "part": 2,
-      "type": "news",
-      "title": "News Report: Renewable Energy Initiative — about technology skills training for adults",
-      "script": "This news is about technology skills training for adults. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 2,
+      "title": "Library Book Recommendation",
+      "text": "Emma: Have you read that mystery novel everyone's been talking about? Liam: Which one? There are so many right now. Emma: The one about the detective in Montreal. It won the Governor General's Award last year. Liam: Oh, you mean 'The Silent Case'? I haven't read it yet, but I've heard great reviews. Emma: You have to read it. I just finished it yesterday, and I couldn't put it down. Liam: Is it that good? Emma: Honestly, it's one of the best books I've read in years. The plot twists were crazy. Liam: Where did you get it? Emma: The library. I put a hold on it three months ago because everyone wanted to read it. Liam: Three months? That's a long wait. Emma: It was worth it though. If you want, I can put in a request for you. Liam: Really? That would be great. Emma: Sure. You should get it in maybe four to six weeks. Liam: Thanks. I'll add it to my reading list.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-035-s3",
       "part": 3,
-      "type": "discussion",
-      "title": "Discussion: Remote Work Policies — about technology skills training for adults",
-      "script": "This discussion is about technology skills training for adults. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 3,
+      "title": "City Library Card Registration",
+      "text": "Hello, and welcome to the City Library system. I'm here to explain our library card registration process. A library card gives you access to millions of digital and physical resources. Registration is free and open to all residents with proof of address. Bring a government-issued ID and a recent utility bill or lease agreement. Visit any of our twelve branch locations during regular hours, Monday through Saturday, 9 AM to 6 PM, and Sunday 1 to 5 PM. Our main branch is downtown on Oak Street. Registration takes about ten minutes. Once registered, you can immediately borrow books, DVDs, and audiobooks. You're allowed up to twenty items at a time. Loan periods are three weeks for books, one week for DVDs, and four weeks for audiobooks. Late fees are twenty-five cents per day for books. Digital resources such as e-books and e-magazines are also available. Access them through our website anytime. Many online databases offer academic journals and local news archives. Children under eighteen need parental consent on their registration form. We also offer free Wi-Fi and computer access at all branches. Printing is available at ten cents per page. For questions, visit the information desk or call our hotline at 416-555-0198.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-035-s4",
       "part": 4,
-      "type": "announcement",
-      "title": "Announcement: Community Centre Changes — about technology skills training for adults",
-      "script": "This announcement is about technology skills training for adults. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 4,
+      "title": "Manitoba Agricultural Export Deal",
+      "text": "Manitoba has secured a significant agricultural export agreement with Japan. The deal, valued at approximately 340 million dollars annually, includes canola, pulse crops, and livestock products. Japanese importers have committed to increasing their purchases from Manitoba producers by 25 percent over the next five years. The agreement was finalized following trade negotiations led by the Canadian Agricultural Minister and her Japanese counterpart. Manitoba produces approximately 8 million tonnes of canola annually, making it Canada's leading canola province. Pulse crops, including peas and lentils, account for another 2.8 million tonnes of production. The Premier described the agreement as transformative for rural communities. Japanese markets have consistently valued Canadian agricultural products for their quality and safety standards. The deal is expected to create 400 additional jobs in the agriculture and food processing sectors. Provincial officials plan to strengthen cold-chain logistics to ensure product freshness during international transport.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-035-s5",
       "part": 5,
-      "type": "office",
-      "title": "Office Conversation: Project Deadline — about technology skills training for adults",
-      "script": "This office is about technology skills training for adults. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 5,
+      "title": "Corporate Training Program Redesign",
+      "text": "Human Resources Director Michelle: We're considering a complete redesign of our corporate training program. Our current approach is one-size-fits-all classroom training, and it's not effective. We want to move toward personalized learning paths and micro-credentials. The investment would be about 3.5 million dollars over three years, but studies show this approach increases employee retention by up to 35 percent.\n\nDepartment Manager Kevin: I'm supportive of better training, but I'm skeptical about the cost and timeline. We're already stretched thin with current projects. Three years seems like a long time to see results. How quickly can we expect to see improvements in employee performance and retention?\n\nEmployee Development Specialist Nina: Kevin, the timeline actually makes sense. Year one is for system setup and rolling out the first pilot programs. By year two, we'll have meaningful data. We've seen in comparable companies that employee engagement scores improve within six months of launching personalized learning. Retention improvements typically follow within 12 to 18 months as employees feel more invested in their development.\n\nCEO David: This aligns with our strategic goals. We're losing skilled employees to competitors, and part of the issue is they don't see clear development paths. If this program helps us retain talent and develop leadership from within, the 3.5 million investment is justified. But we need to ensure accountability. Nina, can you outline measurable metrics we'll track?",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     },
     {
       "id": "celpip-listening-035-s6",
       "part": 6,
-      "type": "lecture",
-      "title": "Academic Lecture: Urban Planning — about technology skills training for adults",
-      "script": "This lecture is about technology skills training for adults. The speaker discusses key issues, provides examples, and addresses the main question of the segment. Listeners should pay attention to specific details, the speaker's opinion, and any recommendations made.",
-      "audioUrl": ""
+      "sectionPart": 6,
+      "title": "Mental Health Parity in Insurance Coverage",
+      "text": "Mental health needs to be treated with the same importance as physical health in our insurance system. We talk about mental health awareness, but when it comes to actual coverage, it's dramatically underfunded. Most insurance plans cover mental health at lower rates than physical health. If you have a broken arm, insurance covers months of physical therapy. If you have depression or anxiety, you get maybe 10 sessions of therapy a year, and psychologist visits might only be 50 percent covered. This creates barriers. Many people avoid treatment because they can't afford it, and their conditions worsen. The economic impact is massive. Mental health issues cost the economy 51 billion dollars annually in Canada through lost productivity, emergency services, and hospitalizations. Yet we invest a fraction of that in prevention and treatment. Here's what frustrates me most: we have effective treatments. Therapy works. Medication helps. But access is limited by insurance coverage. A person struggling with bipolar disorder shouldn't have to choose between therapy and rent. Insurance companies argue coverage limits are necessary for cost control, but that's shortsighted. When people get mental health treatment early, they use fewer emergency services, work more, and contribute to society. The ROI on mental health coverage is actually positive. I'm advocating for mandatory parity—insurance companies should cover mental health at the same level as physical health. This means removing visit limits, lowering copayments, and covering evidence-based treatments. It's not just compassionate; it's economically smart.",
+      "audioUrl": "",
+      "internalVoiceConfig": {
+        "hidden": true
+      }
     }
   ],
   "questions": [
     {
       "id": "celpip-listening-035-q01",
+      "audioScriptId": "celpip-listening-035-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-035-s1",
-      "prompt": "What is the main purpose of this conversation?",
+      "prompt": "What is the rental agreement number?",
       "options": [
-        "To explain a complaint procedure",
-        "To describe available community resources",
-        "To advertise a paid service",
-        "To explain a government policy"
+        "CR-824447",
+        "CR-892447",
+        "CR-894247",
+        "CR-824294"
       ],
-      "correctAnswer": "To describe available community resources",
-      "explanation": "The conversation introduces resources for the community.",
-      "difficulty": "easy",
-      "topic": "public transit in Canada"
+      "correctAnswer": "CR-892447",
+      "explanation": "Customer provides the rental agreement number as 'CR-892447.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-035-q02",
+      "audioScriptId": "celpip-listening-035-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-035-s1",
-      "prompt": "What does the speaker recommend doing first?",
+      "prompt": "What vehicle was rented?",
       "options": [
-        "Visiting the office in person",
-        "Calling the helpline",
-        "Completing an online application",
-        "Asking a neighbour for advice"
+        "Blue Honda Civic",
+        "Blue Hyundai Elantra",
+        "Silver Toyota Corolla",
+        "Black Hyundai Elantra"
       ],
-      "correctAnswer": "Calling the helpline",
-      "explanation": "The speaker advises calling first to get information.",
-      "difficulty": "easy",
-      "topic": "public transit in Canada"
+      "correctAnswer": "Blue Hyundai Elantra",
+      "explanation": "Customer mentions 'I rented the blue Hyundai Elantra.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-035-q03",
+      "audioScriptId": "celpip-listening-035-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-035-s1",
-      "prompt": "What document does the speaker say is required?",
+      "prompt": "What was the pickup time?",
       "options": [
-        "A passport",
-        "Proof of address",
-        "A reference letter",
-        "A medical certificate"
+        "8 AM",
+        "9 AM",
+        "10 AM",
+        "11 AM"
       ],
-      "correctAnswer": "Proof of address",
-      "explanation": "The speaker specifies proof of address as the required document.",
-      "difficulty": "easy",
-      "topic": "public transit in Canada"
+      "correctAnswer": "10 AM",
+      "explanation": "Customer states they picked up the vehicle 'at 10 AM on Tuesday, June 3rd.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-035-q04",
+      "audioScriptId": "celpip-listening-035-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-035-s1",
-      "prompt": "What is the speaker's main recommendation?",
+      "prompt": "What damage was visible in the pickup photos?",
       "options": [
-        "Use public transport",
-        "Compare options before deciding",
-        "Ask a professional for advice",
-        "Register as soon as possible"
+        "A scratch on the driver's door",
+        "A dent on the back bumper",
+        "A broken side mirror",
+        "No damage"
       ],
-      "correctAnswer": "Compare options before deciding",
-      "explanation": "The speaker emphasises comparing before making a choice.",
+      "correctAnswer": "A dent on the back bumper",
+      "explanation": "Agent confirms 'there is a dent visible in the corner of the back bumper' in the pickup photos.",
       "difficulty": "medium",
-      "topic": "public transit in Canada"
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-035-q05",
+      "audioScriptId": "celpip-listening-035-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-035-s1",
-      "prompt": "What problem does the speaker identify?",
+      "prompt": "When was the vehicle returned?",
       "options": [
-        "High costs",
-        "Long waiting times",
-        "Lack of information",
-        "Inconvenient location"
+        "1 PM today",
+        "2 PM today",
+        "3 PM today",
+        "4 PM today"
       ],
-      "correctAnswer": "Long waiting times",
-      "explanation": "The speaker notes that waiting times are a challenge.",
+      "correctAnswer": "4 PM today",
+      "explanation": "Customer states 'I returned the vehicle just now, at 4 PM today.'",
       "difficulty": "medium",
-      "topic": "public transit in Canada"
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-035-q06",
+      "audioScriptId": "celpip-listening-035-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-035-s1",
-      "prompt": "What will happen after the listener completes the first step?",
+      "prompt": "What was the daily cost of the damage waiver insurance?",
       "options": [
-        "They will receive a confirmation by email",
-        "They will be called for an interview",
-        "A staff member will visit their home",
-        "They will need to attend a workshop"
+        "$12 per day",
+        "$15 per day",
+        "$18 per day",
+        "$20 per day"
       ],
-      "correctAnswer": "They will receive a confirmation by email",
-      "explanation": "The speaker says email confirmation follows the first step.",
+      "correctAnswer": "$18 per day",
+      "explanation": "Customer mentions purchasing damage waiver for 'the extra $18 per day.'",
       "difficulty": "medium",
-      "topic": "public transit in Canada"
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-035-q07",
+      "audioScriptId": "celpip-listening-035-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-035-s1",
-      "prompt": "What does the speaker say about the cost?",
+      "prompt": "What new damage was found on the vehicle?",
       "options": [
-        "It is free",
-        "There is a one-time fee",
-        "It depends on income",
-        "It requires insurance"
+        "A dent on the front bumper",
+        "A scratch on the driver's door",
+        "A broken window",
+        "A damaged side mirror"
       ],
-      "correctAnswer": "It is free",
-      "explanation": "The speaker explicitly states the service is free of charge.",
-      "difficulty": "hard",
-      "topic": "public transit in Canada"
+      "correctAnswer": "A scratch on the driver's door",
+      "explanation": "Agent mentions 'The damage report lists a scratch on the driver's door.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-035-q08",
+      "audioScriptId": "celpip-listening-035-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "audioScriptId": "celpip-listening-035-s1",
-      "prompt": "Which of the following is NOT mentioned as a benefit of the programme?",
+      "prompt": "Is the customer responsible for paying for the new damage?",
       "options": [
-        "Improving language skills",
-        "Building community connections",
-        "Receiving financial assistance",
-        "Finding employment"
+        "Yes, full amount",
+        "Yes, 50% of the cost",
+        "No, it's covered by the damage waiver",
+        "Not clear from the conversation"
       ],
-      "correctAnswer": "Receiving financial assistance",
-      "explanation": "Financial assistance is not mentioned as a programme benefit.",
-      "difficulty": "hard",
-      "topic": "public transit in Canada"
+      "correctAnswer": "No, it's covered by the damage waiver",
+      "explanation": "Agent confirms the damage waiver covers the new scratch and customer is not responsible.",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-035-q09",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-035-s1",
-      "prompt": "Complete the sentence: \"you should always ___ first before making a major decision.\"",
-      "correctAnswer": "research",
+      "audioScriptId": "celpip-listening-035-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "What is the title of the book being discussed?",
+      "options": [
+        "The Hidden Case",
+        "The Silent Detective",
+        "The Silent Case",
+        "The Missing Detective"
+      ],
+      "correctAnswer": "The Silent Case",
+      "explanation": "Liam identifies the book as 'The Silent Case.'",
       "difficulty": "medium",
-      "topic": "public transit in Canada"
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-035-q10",
-      "questionType": "fill_in_the_blank",
-      "part": 1,
-      "audioScriptId": "celpip-listening-035-s1",
-      "prompt": "Complete the sentence: \"community resources are often ___ or low-cost for eligible residents.\"",
-      "correctAnswer": "free",
+      "audioScriptId": "celpip-listening-035-s2",
+      "questionType": "multiple_choice_single",
+      "part": 2,
+      "prompt": "Where is the detective in the novel?",
+      "options": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Calgary"
+      ],
+      "correctAnswer": "Montreal",
+      "explanation": "Emma describes it as 'the mystery novel' about 'the detective in Montreal.'",
       "difficulty": "medium",
-      "topic": "public transit in Canada"
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-035-q11",
+      "audioScriptId": "celpip-listening-035-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-035-s2",
-      "num": 11,
-      "prompt": "What is the main focus of this news report?",
+      "prompt": "What award did the book win?",
       "options": [
-        "To promote solar panels",
-        "To discuss a government renewable energy programme",
-        "To criticise fossil fuels",
-        "To interview scientists"
+        "The Giller Prize",
+        "The Governor General's Award",
+        "The Scotiabank Prize",
+        "The Atwood Prize"
       ],
-      "correctAnswer": "To discuss a government renewable energy programme",
-      "explanation": "This answer is supported by the news about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "The Governor General's Award",
+      "explanation": "Emma states it 'won the Governor General's Award last year.'",
+      "difficulty": "medium",
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-035-q12",
+      "audioScriptId": "celpip-listening-035-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-035-s2",
-      "num": 12,
-      "prompt": "According to the report, what has increased in recent years?",
+      "prompt": "How long did Emma wait for the book from the library?",
       "options": [
-        "Energy costs",
-        "Renewable energy capacity",
-        "Oil imports",
-        "Population"
+        "One month",
+        "Two months",
+        "Three months",
+        "Six months"
       ],
-      "correctAnswer": "Renewable energy capacity",
-      "explanation": "This answer is supported by the news about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Three months",
+      "explanation": "Emma states 'I put a hold on it three months ago.'",
+      "difficulty": "medium",
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-035-q13",
+      "audioScriptId": "celpip-listening-035-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "audioScriptId": "celpip-listening-035-s2",
-      "num": 13,
-      "prompt": "What challenge does the reporter mention?",
+      "prompt": "How long will Liam have to wait for the book?",
       "options": [
-        "Public opposition",
-        "High installation costs",
-        "Lack of sunlight",
-        "Government opposition"
+        "Two to three weeks",
+        "Three to four weeks",
+        "Four to six weeks",
+        "Eight to ten weeks"
       ],
-      "correctAnswer": "High installation costs",
-      "explanation": "This answer is supported by the news about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Four to six weeks",
+      "explanation": "Emma estimates 'You should get it in maybe four to six weeks.'",
+      "difficulty": "medium",
+      "topic": "book discussion"
     },
     {
       "id": "celpip-listening-035-q14",
+      "audioScriptId": "celpip-listening-035-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-035-s2",
-      "num": 14,
-      "prompt": "What does the spokesperson recommend?",
+      "part": 3,
+      "prompt": "Is there a cost for a library card?",
       "options": [
-        "Investing in research",
-        "Increasing subsidies",
-        "Reducing regulations",
-        "Raising taxes"
+        "Yes, $10",
+        "Yes, $20",
+        "No, it's free",
+        "Yes, $5"
       ],
-      "correctAnswer": "Increasing subsidies",
-      "explanation": "This answer is supported by the news about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "No, it's free",
+      "explanation": "The guide states 'Registration is free and open to all residents.'",
+      "difficulty": "medium",
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-035-q15",
+      "audioScriptId": "celpip-listening-035-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-035-s2",
-      "num": 15,
-      "prompt": "What statistic is given in the report?",
+      "part": 3,
+      "prompt": "How many branch locations does the library system have?",
       "options": [
-        "10% increase",
-        "25% reduction",
-        "40% increase in capacity",
-        "Doubling of costs"
+        "Eight",
+        "Ten",
+        "Twelve",
+        "Fifteen"
       ],
-      "correctAnswer": "40% increase in capacity",
-      "explanation": "This answer is supported by the news about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Twelve",
+      "explanation": "The guide mentions 'Visit any of our twelve branch locations.'",
+      "difficulty": "medium",
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-035-q16",
+      "audioScriptId": "celpip-listening-035-s3",
       "questionType": "multiple_choice_single",
-      "part": 2,
-      "audioScriptId": "celpip-listening-035-s2",
-      "num": 16,
-      "prompt": "What will happen next according to the report?",
+      "part": 3,
+      "prompt": "What is the Sunday operating hour?",
       "options": [
-        "More studies will be done",
-        "A new policy will be announced",
-        "Prices will increase",
-        "Protests will occur"
+        "10 AM to 6 PM",
+        "1 PM to 5 PM",
+        "12 PM to 4 PM",
+        "2 PM to 6 PM"
       ],
-      "correctAnswer": "A new policy will be announced",
-      "explanation": "This answer is supported by the news about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "1 PM to 5 PM",
+      "explanation": "The guide specifies 'Sunday 1 to 5 PM.'",
+      "difficulty": "medium",
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-035-q17",
+      "audioScriptId": "celpip-listening-035-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-035-s3",
-      "num": 17,
-      "prompt": "What are the two speakers mainly discussing?",
+      "prompt": "What is the maximum number of items you can borrow?",
       "options": [
-        "Office redesign",
-        "Remote work company policy",
-        "Vacation scheduling",
-        "Hiring new staff"
+        "Ten",
+        "Fifteen",
+        "Twenty",
+        "Twenty-five"
       ],
-      "correctAnswer": "Remote work company policy",
-      "explanation": "This answer is supported by the discussion about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Twenty",
+      "explanation": "The guide states 'You're allowed up to twenty items at a time.'",
+      "difficulty": "medium",
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-035-q18",
+      "audioScriptId": "celpip-listening-035-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-035-s3",
-      "num": 18,
-      "prompt": "What advantage of remote work does the woman mention?",
+      "prompt": "What is the loan period for books?",
       "options": [
-        "Reduced commute time",
-        "Higher salaries",
-        "Better office equipment",
-        "More vacation days"
+        "Two weeks",
+        "Three weeks",
+        "Four weeks",
+        "Five weeks"
       ],
-      "correctAnswer": "Reduced commute time",
-      "explanation": "This answer is supported by the discussion about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Three weeks",
+      "explanation": "The guide specifies 'Loan periods are three weeks for books.'",
+      "difficulty": "medium",
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-035-q19",
+      "audioScriptId": "celpip-listening-035-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "audioScriptId": "celpip-listening-035-s3",
-      "num": 19,
-      "prompt": "What concern does the man raise?",
+      "prompt": "What is the late fee per day for books?",
       "options": [
-        "Difficulty collaborating",
-        "Lower salaries",
-        "Smaller offices",
-        "Longer hours"
+        "10 cents",
+        "15 cents",
+        "20 cents",
+        "25 cents"
       ],
-      "correctAnswer": "Difficulty collaborating",
-      "explanation": "This answer is supported by the discussion about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "25 cents",
+      "explanation": "The guide states 'Late fees are twenty-five cents per day for books.'",
+      "difficulty": "medium",
+      "topic": "library services"
     },
     {
       "id": "celpip-listening-035-q20",
+      "audioScriptId": "celpip-listening-035-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-035-s3",
-      "num": 20,
-      "prompt": "What solution do the speakers agree on?",
+      "part": 4,
+      "prompt": "What is the annual value of the agricultural export agreement?",
       "options": [
-        "A hybrid schedule",
-        "Full remote work",
-        "Full office return",
-        "Flexible hours only"
+        "250 million dollars",
+        "290 million dollars",
+        "340 million dollars",
+        "380 million dollars"
       ],
-      "correctAnswer": "A hybrid schedule",
-      "explanation": "This answer is supported by the discussion about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "340 million dollars",
+      "explanation": "The deal is valued at approximately 340 million dollars annually.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-035-q21",
+      "audioScriptId": "celpip-listening-035-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-035-s3",
-      "num": 21,
-      "prompt": "What does the woman say about productivity?",
+      "part": 4,
+      "prompt": "By what percentage will Japanese importers increase their purchases?",
       "options": [
-        "It has decreased",
-        "It has stayed the same",
-        "It has improved for most employees",
-        "It is impossible to measure"
+        "15 percent",
+        "20 percent",
+        "25 percent",
+        "30 percent"
       ],
-      "correctAnswer": "It has improved for most employees",
-      "explanation": "This answer is supported by the discussion about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "25 percent",
+      "explanation": "Importers have committed to increasing purchases by 25 percent over the next five years.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-035-q22",
+      "audioScriptId": "celpip-listening-035-s4",
       "questionType": "multiple_choice_single",
-      "part": 3,
-      "audioScriptId": "celpip-listening-035-s3",
-      "num": 22,
-      "prompt": "What will the company do next month?",
+      "part": 4,
+      "prompt": "How much canola does Manitoba produce annually?",
       "options": [
-        "Survey employees",
-        "Announce a new policy",
-        "Hire a consultant",
-        "Redesign the office"
+        "5 million tonnes",
+        "7 million tonnes",
+        "8 million tonnes",
+        "10 million tonnes"
       ],
-      "correctAnswer": "Announce a new policy",
-      "explanation": "This answer is supported by the discussion about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "8 million tonnes",
+      "explanation": "Manitoba produces approximately 8 million tonnes of canola annually.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-035-q23",
+      "audioScriptId": "celpip-listening-035-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-035-s4",
-      "num": 23,
-      "prompt": "What is the main purpose of this announcement?",
+      "prompt": "How many tonnes of pulse crops are produced?",
       "options": [
-        "To introduce a new staff member",
-        "To announce changes to the community centre",
-        "To advertise a new gym",
-        "To cancel a programme"
+        "2.0 million tonnes",
+        "2.4 million tonnes",
+        "2.8 million tonnes",
+        "3.2 million tonnes"
       ],
-      "correctAnswer": "To announce changes to the community centre",
-      "explanation": "This answer is supported by the announcement about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "2.8 million tonnes",
+      "explanation": "Pulse crops account for 2.8 million tonnes of production.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-035-q24",
+      "audioScriptId": "celpip-listening-035-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "audioScriptId": "celpip-listening-035-s4",
-      "num": 24,
-      "prompt": "What change is being made to the facility?",
+      "prompt": "How many jobs are expected to be created?",
       "options": [
-        "The swimming pool hours",
-        "The gym equipment",
-        "The parking facilities",
-        "The library section"
+        "200 jobs",
+        "300 jobs",
+        "400 jobs",
+        "500 jobs"
       ],
-      "correctAnswer": "The swimming pool hours",
-      "explanation": "This answer is supported by the announcement about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "400 jobs",
+      "explanation": "The deal is expected to create 400 additional jobs in agriculture and food processing.",
+      "difficulty": "medium",
+      "topic": "Agriculture"
     },
     {
       "id": "celpip-listening-035-q25",
+      "audioScriptId": "celpip-listening-035-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-035-s4",
-      "num": 25,
-      "prompt": "When will the change take effect?",
+      "part": 5,
+      "prompt": "What is the proposed investment for the training program redesign?",
       "options": [
-        "Immediately",
-        "Next week",
-        "Next month",
-        "Next year"
+        "2.5 million dollars",
+        "3.0 million dollars",
+        "3.5 million dollars",
+        "4.0 million dollars"
       ],
-      "correctAnswer": "Next month",
-      "explanation": "This answer is supported by the announcement about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "3.5 million dollars",
+      "explanation": "The investment would be about 3.5 million dollars over three years.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-035-q26",
+      "audioScriptId": "celpip-listening-035-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-035-s4",
-      "num": 26,
-      "prompt": "Who is most directly affected by this change?",
+      "part": 5,
+      "prompt": "By what percentage can personalized learning increase retention?",
       "options": [
-        "Staff members",
-        "Children's programme participants",
-        "Regular gym users",
-        "Senior visitors"
+        "20 percent",
+        "25 percent",
+        "30 percent",
+        "35 percent"
       ],
-      "correctAnswer": "Regular gym users",
-      "explanation": "This answer is supported by the announcement about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "35 percent",
+      "explanation": "Studies show this approach increases employee retention by up to 35 percent.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-035-q27",
+      "audioScriptId": "celpip-listening-035-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-035-s4",
-      "num": 27,
-      "prompt": "What alternative is offered to members?",
+      "part": 5,
+      "prompt": "What is the current training approach at the company?",
       "options": [
-        "A discount membership",
-        "Use of a nearby facility",
-        "Free classes",
-        "Extended hours on weekends"
+        "Online learning modules",
+        "One-size-fits-all classroom training",
+        "Mentorship programs",
+        "Self-paced learning"
       ],
-      "correctAnswer": "Use of a nearby facility",
-      "explanation": "This answer is supported by the announcement about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "One-size-fits-all classroom training",
+      "explanation": "The current approach is one-size-fits-all classroom training.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-035-q28",
+      "audioScriptId": "celpip-listening-035-s5",
       "questionType": "multiple_choice_single",
-      "part": 4,
-      "audioScriptId": "celpip-listening-035-s4",
-      "num": 28,
-      "prompt": "What should members do if they have questions?",
+      "part": 5,
+      "prompt": "When do employee engagement scores typically improve?",
       "options": [
-        "Call the main number",
-        "Visit in person",
-        "Send an email",
-        "Check the website"
+        "Immediately",
+        "Within three months",
+        "Within six months",
+        "Within one year"
       ],
-      "correctAnswer": "Check the website",
-      "explanation": "This answer is supported by the announcement about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Within six months",
+      "explanation": "Nina mentions engagement scores improve within six months of launching personalized learning.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-035-q29",
+      "audioScriptId": "celpip-listening-035-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-035-s5",
-      "num": 29,
-      "prompt": "What problem are the speakers discussing?",
+      "prompt": "When do retention improvements typically occur?",
       "options": [
-        "A missing report",
-        "A delayed project deadline",
-        "A budget shortfall",
-        "A staffing dispute"
+        "6-9 months",
+        "12-18 months",
+        "18-24 months",
+        "2-3 years"
       ],
-      "correctAnswer": "A delayed project deadline",
-      "explanation": "This answer is supported by the office about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "12-18 months",
+      "explanation": "Retention improvements typically follow within 12 to 18 months.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-035-q30",
+      "audioScriptId": "celpip-listening-035-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-035-s5",
-      "num": 30,
-      "prompt": "What does the supervisor suggest?",
+      "prompt": "What concern does Kevin express?",
       "options": [
-        "Work overtime",
-        "Hire a contractor",
-        "Cancel the project",
-        "Request an extension"
+        "Program quality",
+        "Cost and timeline for results",
+        "Employee participation",
+        "Technology requirements"
       ],
-      "correctAnswer": "Hire a contractor",
-      "explanation": "This answer is supported by the office about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Cost and timeline for results",
+      "explanation": "Kevin is skeptical about the cost and how quickly results will be seen.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-035-q31",
+      "audioScriptId": "celpip-listening-035-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-035-s5",
-      "num": 31,
-      "prompt": "What has caused the delay according to the employee?",
+      "prompt": "What development approach will replace classroom training?",
       "options": [
-        "Software problems",
-        "Staff illness",
-        "Supplier delays",
-        "Budget cuts"
+        "Online courses only",
+        "Personalized learning paths and micro-credentials",
+        "Conference attendance",
+        "Self-study materials"
       ],
-      "correctAnswer": "Supplier delays",
-      "explanation": "This answer is supported by the office about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Personalized learning paths and micro-credentials",
+      "explanation": "The program will move toward personalized learning paths and micro-credentials.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-035-q32",
+      "audioScriptId": "celpip-listening-035-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "audioScriptId": "celpip-listening-035-s5",
-      "num": 32,
-      "prompt": "What additional resource does the supervisor offer?",
+      "prompt": "What is David's main concern about the program?",
       "options": [
-        "Extra funding",
-        "A team member",
-        "New equipment",
-        "Training sessions"
+        "Too expensive",
+        "Takes too long",
+        "Measurable metrics and accountability",
+        "Lack of support"
       ],
-      "correctAnswer": "A team member",
-      "explanation": "This answer is supported by the office about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Measurable metrics and accountability",
+      "explanation": "David wants to ensure accountability and asks Nina to outline measurable metrics.",
+      "difficulty": "medium",
+      "topic": "Professional development"
     },
     {
       "id": "celpip-listening-035-q33",
+      "audioScriptId": "celpip-listening-035-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-035-s5",
-      "num": 33,
-      "prompt": "What is the new deadline mentioned?",
+      "part": 6,
+      "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "End of this week",
-        "Two weeks from now",
-        "Next quarter",
-        "End of the month"
+        "Mental health is covered more than physical",
+        "Physical health is covered more than mental health",
+        "They're equally covered",
+        "Neither is adequately covered"
       ],
-      "correctAnswer": "Two weeks from now",
-      "explanation": "This answer is supported by the office about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Physical health is covered more than mental health",
+      "explanation": "The speaker states mental health is covered at lower rates than physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-035-q34",
+      "audioScriptId": "celpip-listening-035-s6",
       "questionType": "multiple_choice_single",
-      "part": 5,
-      "audioScriptId": "celpip-listening-035-s5",
-      "num": 34,
-      "prompt": "What will the employee do next?",
+      "part": 6,
+      "prompt": "What example does the speaker use to illustrate the disparity?",
       "options": [
-        "Update the schedule",
-        "Contact the supplier",
-        "Write a report",
-        "Brief the team"
+        "Cancer treatment vs. therapy",
+        "Broken arm coverage vs. limited mental health sessions",
+        "Hospital stays vs. doctor visits",
+        "Prescription drugs vs. counseling"
       ],
-      "correctAnswer": "Contact the supplier",
-      "explanation": "This answer is supported by the office about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Broken arm coverage vs. limited mental health sessions",
+      "explanation": "The speaker uses physical therapy for broken arms compared to limited therapy sessions.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-035-q35",
+      "audioScriptId": "celpip-listening-035-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-035-s6",
-      "num": 35,
-      "prompt": "What is the main topic of this lecture?",
+      "prompt": "What is the annual economic cost of mental health issues in Canada?",
       "options": [
-        "Historical city design",
-        "Modern urban planning challenges",
-        "The future of architecture",
-        "Building construction methods"
+        "25 billion dollars",
+        "38 billion dollars",
+        "51 billion dollars",
+        "67 billion dollars"
       ],
-      "correctAnswer": "Modern urban planning challenges",
-      "explanation": "This answer is supported by the lecture about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "51 billion dollars",
+      "explanation": "Mental health issues cost 51 billion dollars annually in Canada.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-035-q36",
+      "audioScriptId": "celpip-listening-035-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-035-s6",
-      "num": 36,
-      "prompt": "What historical problem does the professor describe?",
+      "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Poor sanitation",
-        "Traffic congestion",
-        "Lack of parks",
-        "Housing shortages"
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations",
+        "Medication costs",
+        "Administrative expenses"
       ],
-      "correctAnswer": "Traffic congestion",
-      "explanation": "This answer is supported by the lecture about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
+      "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-035-q37",
+      "audioScriptId": "celpip-listening-035-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-035-s6",
-      "num": 37,
-      "prompt": "What solution does the professor mention?",
+      "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "Mixed-use zoning",
-        "More highways",
-        "Taller buildings",
-        "Suburban expansion"
+        "It's cheaper than physical health",
+        "Early treatment has positive ROI",
+        "It reduces insurance profits",
+        "It's cost-neutral"
       ],
-      "correctAnswer": "Mixed-use zoning",
-      "explanation": "This answer is supported by the lecture about technology skills training for adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Early treatment has positive ROI",
+      "explanation": "The speaker argues mental health coverage has a positive return on investment.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     },
     {
       "id": "celpip-listening-035-q38",
+      "audioScriptId": "celpip-listening-035-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "audioScriptId": "celpip-listening-035-s6",
-      "num": 38,
-      "prompt": "According to the professor, what are two key benefits?",
+      "prompt": "What does the speaker advocate companies implement?",
       "options": [
-        "Lower costs and faster commutes",
-        "Reduced pollution and more green space",
-        "Bigger buildings and more parking",
-        "Lower taxes and fewer regulations"
+        "Lower coverage for mental health",
+        "Mandatory parity in coverage",
+        "Removal of all limits",
+        "Voluntary coverage only"
       ],
-      "correctAnswer": "Reduced pollution and more green space",
-      "explanation": "This answer is supported by the lecture about technology skills training for adults.",
-      "difficulty": "medium"
-    }
-  ],
-  "parts": [
-    {
-      "partNumber": 1,
-      "title": "Daily Conversations",
-      "questionRange": [
-        1,
-        7
-      ],
-      "audioDescription": "Part 1: Daily Conversations"
-    },
-    {
-      "partNumber": 2,
-      "title": "Workplace Discussions",
-      "questionRange": [
-        7,
-        13
-      ],
-      "audioDescription": "Part 2: Workplace Discussions"
-    },
-    {
-      "partNumber": 3,
-      "title": "Community Announcements",
-      "questionRange": [
-        13,
-        19
-      ],
-      "audioDescription": "Part 3: Community Announcements"
-    },
-    {
-      "partNumber": 4,
-      "title": "News Broadcasts",
-      "questionRange": [
-        19,
-        25
-      ],
-      "audioDescription": "Part 4: News Broadcasts"
-    },
-    {
-      "partNumber": 5,
-      "title": "Academic Interviews",
-      "questionRange": [
-        25,
-        31
-      ],
-      "audioDescription": "Part 5: Academic Interviews"
-    },
-    {
-      "partNumber": 6,
-      "title": "Extended Monologues",
-      "questionRange": [
-        31,
-        37
-      ],
-      "audioDescription": "Part 6: Extended Monologues"
+      "correctAnswer": "Mandatory parity in coverage",
+      "explanation": "The speaker advocates for mandatory parity—equal coverage for mental and physical health.",
+      "difficulty": "medium",
+      "topic": "Healthcare"
     }
   ]
 }

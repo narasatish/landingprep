@@ -3,10 +3,10 @@
   "exam": "celpip",
   "section": "listening",
   "type": "section",
-  "title": "CELPIP Listening Practice Test 8",
+  "title": "CELPIP General Listening — Practice Test 8",
   "durationSeconds": 3060,
   "questionCount": 38,
-  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once only.",
+  "instructions": "Listen to the audio for each part and answer the questions. Each audio plays once.",
   "parts": [
     {
       "part": 1,
@@ -18,31 +18,31 @@
       "part": 2,
       "title": "Daily Life Conversation",
       "questionRange": "9–13",
-      "description": "A casual conversation between two people about an everyday situation."
+      "description": "An everyday conversation between two people."
     },
     {
       "part": 3,
       "title": "Listening for Information",
       "questionRange": "14–19",
-      "description": "A monologue providing information about a service, process, or topic."
+      "description": "An informational talk; listen for specific details."
     },
     {
       "part": 4,
       "title": "News Item",
       "questionRange": "20–24",
-      "description": "A short radio or TV news report about a current event or announcement."
+      "description": "A short news report."
     },
     {
       "part": 5,
       "title": "Discussion",
       "questionRange": "25–32",
-      "description": "A discussion between two or three speakers presenting different viewpoints on a topic."
+      "description": "A discussion among people with different viewpoints."
     },
     {
       "part": 6,
       "title": "Viewpoints",
       "questionRange": "33–38",
-      "description": "A monologue in which one speaker expresses and defends a personal opinion."
+      "description": "A longer talk presenting one speaker's opinion and reasons."
     }
   ],
   "listeningScripts": [
@@ -50,8 +50,8 @@
       "id": "celpip-listening-008-s1",
       "part": 1,
       "sectionPart": 1,
-      "title": "Reporting a Water Leak in an Apartment",
-      "text": "Resident: Hello, I need to report a water leak. It started this morning under my kitchen sink. There's water pooling on the floor.\nSuperintendent: I'll send someone right away. Can you confirm your unit number?\nResident: It's unit 4B on the fourth floor.\nSuperintendent: Got it. And is the leak a slow drip or is it flowing steadily?\nResident: It's a steady drip. I've put a bucket under it, but it's filling up about every two hours.\nSuperintendent: That sounds like a loose connection on the supply line. The plumber we use is available this afternoon. Would two o'clock work for you?\nResident: Yes, that's fine. Do I need to be home?\nSuperintendent: Yes, please be there so the plumber can access the cabinet under the sink. Also, to be safe, turn off the shut-off valve under the sink — there's usually a small handle on the left pipe.\nResident: I found it and turned it off. The dripping has stopped for now.\nSuperintendent: Perfect. That confirms the problem is with the supply line, not the drain. The plumber will replace the fitting. It should take under an hour.",
+      "title": "Car Rental Damage Dispute",
+      "text": "Customer: I'm returning my rental car, and I want to dispute a damage claim you're making. Rental Agent: Okay, let me look into that. What's your rental agreement number? Customer: It's CR-892447. I rented the blue Hyundai Elantra, and there was already a dent on the back bumper when I picked it up. Agent: Let me check the pickup photos. What time did you pick up the vehicle? Customer: 10 AM on Tuesday, June 3rd. Agent: I found those photos. You're right, there is a dent visible in the corner of the back bumper. The damage report lists a scratch on the driver's door, which I don't see in our pickup images. Can you tell me what happened? Customer: I definitely didn't cause that scratch. I was careful the whole time I had it. Agent: When did you return the vehicle? Customer: Just now, at 4 PM today. Agent: And you purchased the damage waiver insurance at rental? Customer: Yes, I paid the extra $18 per day for that. Agent: Great. Since you purchased the damage waiver, any damage during your rental period, except for gross negligence, is covered. This scratch appears to be new damage, but with your waiver, you're not responsible. Customer: So I don't have to pay anything? Agent: Correct. Your coverage applies. The previous dent was there before you rented it, and this new scratch is covered under your damage waiver. You're all set.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -61,8 +61,8 @@
       "id": "celpip-listening-008-s2",
       "part": 2,
       "sectionPart": 2,
-      "title": "Choosing Between Two Job Offers",
-      "text": "Priya: I'm in a tough spot. I got two job offers this week and I have until Friday to decide.\nKevin: That's a great problem to have! What are the offers?\nPriya: One is a junior marketing role at a tech startup. Good salary, lots of creative freedom, but the company is only two years old and a bit risky. The other is a coordinator position at a non-profit — lower salary, but excellent benefits and a guaranteed pension.\nKevin: What matters more to you right now — financial security or career growth?\nPriya: Honestly, both. I have student loans to pay off, but I also don't want to be stuck in a job that goes nowhere.\nKevin: Could the non-profit lead to advancement?\nPriya: They mentioned there's a senior coordinator role that opens up every couple of years. But at the startup, if it takes off, the growth potential is huge.\nKevin: Have you factored in the commute?\nPriya: Good point — the startup is downtown, forty-five minutes each way on transit. The non-profit is ten minutes from my apartment.\nKevin: That's two hours a day you'd get back with the non-profit. That's not nothing.",
+      "title": "Music Concert Plans",
+      "text": "Alex: Are you going to the concert next Saturday? Casey: Which one? There are a few shows next weekend. Alex: The indie rock festival at the waterfront. Casey: Oh yeah, I've been thinking about it. How much are tickets? Alex: They're forty dollars each. Casey: That's not too bad. Who's performing? Alex: Five bands. The headliner is The Northern Stars. Casey: Oh, I love them. What time does it start? Alex: Six PM. It should wrap up around eleven. Casey: That's pretty late. Is there parking nearby? Alex: Yeah, there's a parking lot right by the venue. It's five dollars for the whole night. Casey: That's reasonable. Should we get food there or bring our own? Alex: They have food vendors there, but it's probably expensive. Casey: Let's grab something before we go then. Alex: Good idea. Want me to buy your ticket? Casey: Yeah, that would be great. Just send me the bill.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -72,8 +72,8 @@
       "id": "celpip-listening-008-s3",
       "part": 3,
       "sectionPart": 3,
-      "title": "How to Use the Provincial Health Insurance System",
-      "text": "Welcome to this information session on using the provincial health insurance system. If you are a permanent resident or Canadian citizen living in this province, you are entitled to a provincial health card, which covers the cost of most medically necessary services.\n\nTo obtain your health card, visit a ServiceOntario or equivalent provincial office with two pieces of identification — one must be a government-issued photo ID, such as a passport or permanent resident card, and one must show your current address, such as a utility bill or bank statement. New applicants typically wait a three-month period before coverage begins, so it is important to apply as soon as possible after arriving.\n\nYour health card covers visits to a family doctor, specialist consultations when referred by your doctor, emergency room visits, hospital stays, and diagnostic tests including X-rays and blood work. It does not automatically cover prescription drugs, dental care, or vision care, which are typically covered through separate private insurance plans or provincial drug benefit programmes for qualifying residents.\n\nIf you do not have a family doctor, you can register with the Health Care Connect programme, which matches patients to available physicians. In the meantime, walk-in clinics and urgent care centres can treat most non-emergency conditions and are also covered by your health card.\n\nAlways carry your health card when attending medical appointments, and report any change of address to the provincial health authority to ensure your records are current.",
+      "title": "Museum Audio Guide: Canadian Art",
+      "text": "Welcome to the Canadian Art gallery. I'm your audio guide for this exhibition. Today, we're exploring paintings and sculptures created by Canadian artists from the 1920s to 1960s. We'll start with the Group of Seven landscape paintings in Room 102. These artists revolutionized how Canadians saw their own wilderness, particularly the forests and lakes of Ontario. The paintings you see here depict rugged landscapes using bold colors and dynamic brushstrokes. In Room 104, we have Emily Carr's totem pole paintings from British Columbia. Carr spent much of her career documenting Indigenous art and the Pacific Northwest landscape. Her work emphasizes the spiritual connection between people and nature. Moving to Room 106, you'll find abstract works by Borduas and Riopelle from the 1950s. These Montreal-based artists were part of the Automatiste movement, which rejected traditional artistic rules. Finally, in Room 108, we showcase sculpture by Henry Moore and Barbara Hepworth, who visited Canada in the 1950s. Their organic forms were inspired by Canadian landscapes. This exhibition runs through September 30th. Thank you for visiting.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -83,8 +83,8 @@
       "id": "celpip-listening-008-s4",
       "part": 4,
       "sectionPart": 4,
-      "title": "News Report: Province Launches New Childcare Subsidy Programme",
-      "text": "The provincial government announced a new childcare subsidy programme this morning, aimed at reducing childcare costs for families earning below ninety thousand dollars per year. Under the new programme, eligible families will pay no more than ten dollars per day for regulated childcare, beginning on the first of next month.\n\nThe Minister of Families said the programme is expected to benefit approximately forty thousand children across the province in its first year. Priority access will be given to families with children under the age of six, as well as families currently on waitlists at participating childcare centres.\n\nTo apply, parents must submit an application through the provincial government's online portal and provide proof of income from the previous tax year. Applications will be processed within fifteen business days, and approved families will be notified by email.\n\nChild-care providers interested in joining the programme must sign a participation agreement and comply with the province's staffing and curriculum standards. The government said that over three hundred licenced providers have already registered ahead of the launch.\n\nOpposition critics raised concerns that the programme does not extend to informal care arrangements, such as home-based care providers who are not licenced. The government indicated it plans to expand eligibility in future years.",
+      "title": "Alberta Heritage Museum Expansion",
+      "text": "The Alberta Heritage Museum is embarking on a 95 million dollar expansion project that will double its exhibition space. The project, spanning five years, will create new galleries dedicated to Indigenous history, early settlement, and contemporary Alberta culture. Museum Director Patricia Wong announced that the expansion will feature interactive exhibits and state-of-the-art multimedia installations. The project will generate approximately 600 construction jobs over the expansion period. Funding comes from government grants, private donations, and corporate sponsorships. The museum currently attracts 480,000 visitors annually, and officials project this will increase by 45 percent following the expansion. A new 2,000-square-meter research and conservation facility will support artifact preservation. Four new galleries will be built, including a dedicated space for rotating temporary exhibitions. Community consultation has identified strong public support, with 78 percent of surveyed Albertans favoring the project. The expansion is scheduled to be completed by 2031.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -94,8 +94,8 @@
       "id": "celpip-listening-008-s5",
       "part": 5,
       "sectionPart": 5,
-      "title": "Discussion: Is Social Media Good or Bad for Teenagers?",
-      "text": "Host: Today's discussion focuses on social media and its impact on teenagers. With me are two commentators: Diane, a child development researcher, and Tom, who advocates for digital literacy education. Diane, let's start with you — is social media harmful to teenagers?\nDiane: The research is quite clear that heavy social media use is associated with higher rates of anxiety, depression, and sleep disruption in teenagers, particularly for girls. The problem isn't the technology itself — it's the design. Platforms are deliberately built to maximise engagement, which means maximising the time young people spend comparing themselves to others.\nHost: Tom, do you think the solution is restricting access?\nTom: I strongly disagree with blanket restrictions. The answer is education. We need to teach teenagers to be critical consumers of digital content — how algorithms work, how images are edited, what business models drive these platforms. Banning access doesn't develop those skills; it just delays the problem.\nHost: Diane, what do you say to that?\nDiane: I agree that education is necessary, but it is not sufficient on its own. A thirteen-year-old is neurologically not equipped to resist the deliberate manipulation that these platforms apply. We need age-appropriate restrictions alongside digital literacy — not instead of it.\nHost: Tom, any response?\nTom: The issue is that restriction without education creates what I call the forbidden fruit effect — the moment restrictions are lifted, young people binge. I've seen this in schools that blocked social media completely and then found students spending even more time online at weekends to compensate.\nHost: Thank you both. It seems there is agreement on the need for education, but a real divide on the role of restrictions.",
+      "title": "Remote Work Policy Debate",
+      "text": "Manager Sarah: I've been thinking about our remote work policy, and honestly, I think we need to bring people back to the office at least three days a week. When I worked from home during the pandemic, I felt disconnected from my team, and I worry about newer staff missing out on mentorship opportunities. Plus, collaboration seems to happen more naturally when people are in the same space.\n\nEmployee James: I completely understand your point, Sarah, but I've actually found the opposite to be true. Since working remotely, my productivity has increased by about 40 percent because I have fewer interruptions. I can focus better on complex projects. And I'm still collaborating regularly with my colleagues through video calls and shared documents. Honestly, three days in the office feels like a step backward for many of us who have adapted well to remote work.\n\nHR Director Tom: Both of you raise valid concerns. The data we've collected shows mixed results. Some teams are more productive working remotely, while others struggle with communication and onboarding new hires. I think the solution isn't one-size-fits-all. Different departments might need different policies. Customer service teams probably need more in-person interaction, while our software developers seem to work just fine remotely. We should consider a hybrid approach that gives managers flexibility based on their specific team's needs.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -105,8 +105,8 @@
       "id": "celpip-listening-008-s6",
       "part": 6,
       "sectionPart": 6,
-      "title": "Viewpoints: Why Small Towns Deserve More Investment",
-      "text": "For decades, government investment in infrastructure, healthcare, and education has flowed predominantly toward major cities. This concentration of resources has created a growing divide between the opportunities available to people in urban centres and those living in smaller towns and rural communities. I believe this imbalance is not only unfair but economically short-sighted.\n\nConsider healthcare. In most Canadian cities, residents have access to walk-in clinics, specialist hospitals, and urgent care centres within a reasonable distance. In small towns, the nearest hospital may be an hour's drive away. Rural residents have higher rates of late-stage cancer diagnoses precisely because early detection requires access to diagnostic services that simply are not available locally.\n\nEducation tells a similar story. Urban schools are often better funded, have access to more experienced teachers, and offer a wider range of programmes and extracurricular activities. Rural students frequently travel long distances to school and have fewer post-secondary options nearby. This creates a pattern in which talented young people leave their home communities for cities — and rarely return.\n\nCritics of increased rural investment argue that the cost per person is too high. This logic is flawed. The cost of maintaining a dispersed population is not a reason to abandon it — it is an argument for smarter, targeted investment in sustainable local infrastructure.\n\nIf we are serious about equality of opportunity, the postal code where someone is born should not determine the quality of healthcare, education, or economic opportunity available to them. Small towns and rural communities deserve better — not out of sentiment, but out of a genuine commitment to a more equitable society.",
+      "title": "Climate Migration and Urban Planning",
+      "text": "Climate change is already forcing large-scale human migration, and we need to prepare for it now. Rising sea levels, extreme weather, and changing precipitation patterns are making entire regions uninhabitable. We're not just talking about future problems—this is happening today. Small island nations are literally disappearing. Coastal cities are experiencing increased flooding. Agricultural regions are becoming deserts. Where will these people go? History shows us that unplanned migration creates chaos: overcrowded cities, slums, resource conflicts, and instability. I believe cities and countries need to proactively plan for climate migration. This means developing infrastructure and housing in climate-resilient areas, creating economic opportunities for migrants, and managing population flows thoughtfully. Canada and the northern regions of other countries will likely become more desirable as climate conditions shift. Rather than letting this happen chaotically, we should be designing inclusive urban expansion, building climate-resilient communities, and preparing labor markets for population shifts. Some people see climate migration as a negative, but it's inevitable. The real question is whether we manage it responsibly or let it cause humanitarian crises. I'm advocating for proactive planning now. We should be expanding housing, infrastructure, and economic capacity in climate-safe regions. We should also help other countries adapt in place where possible. But denying this reality and refusing to plan is irresponsible.",
       "audioUrl": "",
       "internalVoiceConfig": {
         "hidden": true
@@ -119,646 +119,646 @@
       "audioScriptId": "celpip-listening-008-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What is the problem the resident is reporting?",
+      "prompt": "What is the rental agreement number?",
       "options": [
-        "A broken window",
-        "A water leak under the kitchen sink",
-        "A faulty heating system",
-        "A blocked toilet"
+        "CR-824447",
+        "CR-892447",
+        "CR-894247",
+        "CR-824294"
       ],
-      "correctAnswer": "A water leak under the kitchen sink",
-      "explanation": "The resident calls to report water pooling under the kitchen sink.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "CR-892447",
+      "explanation": "Customer provides the rental agreement number as 'CR-892447.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-008-q02",
       "audioScriptId": "celpip-listening-008-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How fast is the bucket filling up?",
+      "prompt": "What vehicle was rented?",
       "options": [
-        "Every thirty minutes",
-        "Every hour",
-        "Every two hours",
-        "Every day"
+        "Blue Honda Civic",
+        "Blue Hyundai Elantra",
+        "Silver Toyota Corolla",
+        "Black Hyundai Elantra"
       ],
-      "correctAnswer": "Every two hours",
-      "explanation": "The resident says the bucket fills up about every two hours.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "Blue Hyundai Elantra",
+      "explanation": "Customer mentions 'I rented the blue Hyundai Elantra.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-008-q03",
       "audioScriptId": "celpip-listening-008-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent suspect the problem is?",
+      "prompt": "What was the pickup time?",
       "options": [
-        "A cracked drain pipe",
-        "A loose connection on the supply line",
-        "A broken water heater",
-        "A faulty pressure valve"
+        "8 AM",
+        "9 AM",
+        "10 AM",
+        "11 AM"
       ],
-      "correctAnswer": "A loose connection on the supply line",
-      "explanation": "The superintendent says it sounds like a loose connection on the supply line.",
+      "correctAnswer": "10 AM",
+      "explanation": "Customer states they picked up the vehicle 'at 10 AM on Tuesday, June 3rd.'",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-008-q04",
       "audioScriptId": "celpip-listening-008-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "When is the plumber available?",
+      "prompt": "What damage was visible in the pickup photos?",
       "options": [
-        "This morning",
-        "Tomorrow morning",
-        "Two o'clock this afternoon",
-        "Next week"
+        "A scratch on the driver's door",
+        "A dent on the back bumper",
+        "A broken side mirror",
+        "No damage"
       ],
-      "correctAnswer": "Two o'clock this afternoon",
-      "explanation": "The superintendent says the plumber is available at two o'clock this afternoon.",
+      "correctAnswer": "A dent on the back bumper",
+      "explanation": "Agent confirms 'there is a dent visible in the corner of the back bumper' in the pickup photos.",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-008-q05",
       "audioScriptId": "celpip-listening-008-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the superintendent ask the resident to do immediately?",
+      "prompt": "When was the vehicle returned?",
       "options": [
-        "Call a plumber directly",
-        "Leave the apartment",
-        "Turn off the shut-off valve",
-        "Open the windows"
+        "1 PM today",
+        "2 PM today",
+        "3 PM today",
+        "4 PM today"
       ],
-      "correctAnswer": "Turn off the shut-off valve",
-      "explanation": "The superintendent advises turning off the shut-off valve under the sink.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "4 PM today",
+      "explanation": "Customer states 'I returned the vehicle just now, at 4 PM today.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-008-q06",
       "audioScriptId": "celpip-listening-008-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "What does the dripping stopping confirm?",
+      "prompt": "What was the daily cost of the damage waiver insurance?",
       "options": [
-        "The drain is blocked",
-        "The pipe is cracked",
-        "The problem is with the supply line, not the drain",
-        "The water pressure is too high"
+        "$12 per day",
+        "$15 per day",
+        "$18 per day",
+        "$20 per day"
       ],
-      "correctAnswer": "The problem is with the supply line, not the drain",
-      "explanation": "The superintendent says this confirms the problem is with the supply line.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "$18 per day",
+      "explanation": "Customer mentions purchasing damage waiver for 'the extra $18 per day.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-008-q07",
       "audioScriptId": "celpip-listening-008-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "How long is the repair expected to take?",
+      "prompt": "What new damage was found on the vehicle?",
       "options": [
-        "Less than one hour",
-        "Two to three hours",
-        "All afternoon",
-        "Several days"
+        "A dent on the front bumper",
+        "A scratch on the driver's door",
+        "A broken window",
+        "A damaged side mirror"
       ],
-      "correctAnswer": "Less than one hour",
-      "explanation": "The superintendent says it should take under an hour.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "A scratch on the driver's door",
+      "explanation": "Agent mentions 'The damage report lists a scratch on the driver's door.'",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-008-q08",
       "audioScriptId": "celpip-listening-008-s1",
       "questionType": "multiple_choice_single",
       "part": 1,
-      "prompt": "Why does the resident need to be home for the repair?",
+      "prompt": "Is the customer responsible for paying for the new damage?",
       "options": [
-        "To pay the plumber in cash",
-        "To sign a repair agreement",
-        "To give the plumber access to the cabinet",
-        "To watch the repair procedure"
+        "Yes, full amount",
+        "Yes, 50% of the cost",
+        "No, it's covered by the damage waiver",
+        "Not clear from the conversation"
       ],
-      "correctAnswer": "To give the plumber access to the cabinet",
-      "explanation": "The superintendent says the plumber needs to access the cabinet under the sink.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "No, it's covered by the damage waiver",
+      "explanation": "Agent confirms the damage waiver covers the new scratch and customer is not responsible.",
+      "difficulty": "medium",
+      "topic": "rental agreement"
     },
     {
       "id": "celpip-listening-008-q09",
       "audioScriptId": "celpip-listening-008-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How many job offers has Priya received?",
+      "prompt": "What type of concert is it?",
       "options": [
-        "One",
-        "Two",
-        "Three",
-        "Four"
+        "Classical music",
+        "Hip-hop festival",
+        "Indie rock festival",
+        "Country music show"
       ],
-      "correctAnswer": "Two",
-      "explanation": "Priya says she received two job offers this week.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "Indie rock festival",
+      "explanation": "Alex mentions 'The indie rock festival at the waterfront.'",
+      "difficulty": "medium",
+      "topic": "event planning"
     },
     {
       "id": "celpip-listening-008-q10",
       "audioScriptId": "celpip-listening-008-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What concern does Priya have about the startup?",
+      "prompt": "How much is each ticket?",
       "options": [
-        "The salary is too low",
-        "It is located too far away",
-        "It is only two years old and a bit risky",
-        "The role lacks creative freedom"
+        "$25",
+        "$35",
+        "$40",
+        "$50"
       ],
-      "correctAnswer": "It is only two years old and a bit risky",
-      "explanation": "Priya says the startup is only two years old and a bit risky.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "$40",
+      "explanation": "Alex states 'They're forty dollars each.'",
+      "difficulty": "medium",
+      "topic": "event planning"
     },
     {
       "id": "celpip-listening-008-q11",
       "audioScriptId": "celpip-listening-008-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What advantage does the non-profit offer over the startup?",
+      "prompt": "How many bands are performing?",
       "options": [
-        "Higher salary",
-        "More creative freedom",
-        "Better benefits and a pension",
-        "Faster career advancement"
+        "Three",
+        "Four",
+        "Five",
+        "Six"
       ],
-      "correctAnswer": "Better benefits and a pension",
-      "explanation": "Priya says the non-profit has excellent benefits and a guaranteed pension.",
+      "correctAnswer": "Five",
+      "explanation": "Alex says 'Five bands' are performing at the festival.",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "event planning"
     },
     {
       "id": "celpip-listening-008-q12",
       "audioScriptId": "celpip-listening-008-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "How long is the commute to the startup?",
+      "prompt": "Who is the headliner?",
       "options": [
-        "Ten minutes",
-        "Twenty minutes",
-        "Forty-five minutes each way",
-        "Over an hour each way"
+        "The Eastern Stars",
+        "The Northern Stars",
+        "The Southern Lights",
+        "The Western Dream"
       ],
-      "correctAnswer": "Forty-five minutes each way",
-      "explanation": "Priya says the startup is forty-five minutes each way on transit.",
+      "correctAnswer": "The Northern Stars",
+      "explanation": "Alex identifies 'The headliner is The Northern Stars.'",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "event planning"
     },
     {
       "id": "celpip-listening-008-q13",
       "audioScriptId": "celpip-listening-008-s2",
       "questionType": "multiple_choice_single",
       "part": 2,
-      "prompt": "What does Kevin point out about commuting time?",
+      "prompt": "What time does the concert end?",
       "options": [
-        "It adds to fitness levels",
-        "It is a chance to read",
-        "The non-profit saves her two hours a day",
-        "Transit fares are expensive"
+        "9 PM",
+        "10 PM",
+        "11 PM",
+        "Midnight"
       ],
-      "correctAnswer": "The non-profit saves her two hours a day",
-      "explanation": "Kevin says Priya would get back two hours a day by working closer to home.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "11 PM",
+      "explanation": "Alex estimates 'It should wrap up around eleven.'",
+      "difficulty": "medium",
+      "topic": "event planning"
     },
     {
       "id": "celpip-listening-008-q14",
       "audioScriptId": "celpip-listening-008-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Who is entitled to a provincial health card?",
+      "prompt": "What is the time period of the art featured in this exhibition?",
       "options": [
-        "Only Canadian citizens",
-        "Permanent residents and Canadian citizens",
-        "International students only",
-        "Anyone living in Canada"
+        "1900-1920",
+        "1920-1960",
+        "1960-1980",
+        "1980-2000"
       ],
-      "correctAnswer": "Permanent residents and Canadian citizens",
-      "explanation": "The speaker says permanent residents or Canadian citizens are entitled to a health card.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "1920-1960",
+      "explanation": "The guide states we're exploring 'paintings and sculptures created by Canadian artists from the 1920s to 1960s.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-008-q15",
       "audioScriptId": "celpip-listening-008-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is one document required to apply for a health card?",
+      "prompt": "In which room are Group of Seven paintings displayed?",
       "options": [
-        "A letter from an employer",
-        "A government-issued photo ID",
-        "A birth certificate",
-        "A utility bill from a previous province"
+        "Room 101",
+        "Room 102",
+        "Room 104",
+        "Room 106"
       ],
-      "correctAnswer": "A government-issued photo ID",
-      "explanation": "The speaker says one of the two IDs must be a government-issued photo ID.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "Room 102",
+      "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-008-q16",
       "audioScriptId": "celpip-listening-008-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "How long must new applicants typically wait before coverage begins?",
+      "prompt": "What region did Emily Carr primarily focus on?",
       "options": [
-        "One week",
-        "One month",
-        "Three months",
-        "Six months"
+        "Ontario",
+        "Quebec",
+        "British Columbia",
+        "Prairie provinces"
       ],
-      "correctAnswer": "Three months",
-      "explanation": "The speaker says there is typically a three-month waiting period.",
+      "correctAnswer": "British Columbia",
+      "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-008-q17",
       "audioScriptId": "celpip-listening-008-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "Which of the following is NOT covered by the provincial health card?",
+      "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "Emergency room visits",
-        "Family doctor visits",
-        "Dental care",
-        "Blood work"
+        "Cubism",
+        "Automatiste",
+        "Impressionism",
+        "Surrealism"
       ],
-      "correctAnswer": "Dental care",
-      "explanation": "The speaker says dental care is not automatically covered by the health card.",
+      "correctAnswer": "Automatiste",
+      "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-008-q18",
       "audioScriptId": "celpip-listening-008-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What is the Health Care Connect programme?",
+      "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "A private insurance plan",
-        "A walk-in clinic network",
-        "A programme that matches patients to available physicians",
-        "An online pharmacy"
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Ottawa"
       ],
-      "correctAnswer": "A programme that matches patients to available physicians",
-      "explanation": "The speaker describes Health Care Connect as matching patients to available physicians.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "Montreal",
+      "explanation": "The guide identifies them as 'Montreal-based artists.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-008-q19",
       "audioScriptId": "celpip-listening-008-s3",
       "questionType": "multiple_choice_single",
       "part": 3,
-      "prompt": "What should residents do if their address changes?",
+      "prompt": "Until what date does this exhibition run?",
       "options": [
-        "Apply for a new health card",
-        "Report the change to the provincial health authority",
-        "Contact their family doctor only",
-        "Wait until renewal time"
+        "August 31st",
+        "September 15th",
+        "September 30th",
+        "October 15th"
       ],
-      "correctAnswer": "Report the change to the provincial health authority",
-      "explanation": "The speaker says to report any change of address to keep records current.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "September 30th",
+      "explanation": "The guide states 'This exhibition runs through September 30th.'",
+      "difficulty": "medium",
+      "topic": "museum tour"
     },
     {
       "id": "celpip-listening-008-q20",
       "audioScriptId": "celpip-listening-008-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Who is eligible for the new childcare subsidy?",
+      "prompt": "What is the cost of the expansion project?",
       "options": [
-        "All families with children under twelve",
-        "Families earning below ninety thousand dollars per year",
-        "Only single-parent households",
-        "Families on social assistance only"
+        "75 million dollars",
+        "85 million dollars",
+        "95 million dollars",
+        "105 million dollars"
       ],
-      "correctAnswer": "Families earning below ninety thousand dollars per year",
-      "explanation": "The report says eligible families earn below ninety thousand dollars per year.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "95 million dollars",
+      "explanation": "The museum is embarking on a 95 million dollar expansion.",
+      "difficulty": "medium",
+      "topic": "Heritage"
     },
     {
       "id": "celpip-listening-008-q21",
       "audioScriptId": "celpip-listening-008-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What is the maximum daily childcare cost under the new programme?",
+      "prompt": "How long is the expansion project expected to take?",
       "options": [
-        "Five dollars",
-        "Ten dollars",
-        "Twenty dollars",
-        "Fifty dollars"
+        "Three years",
+        "Four years",
+        "Five years",
+        "Six years"
       ],
-      "correctAnswer": "Ten dollars",
-      "explanation": "The report states families will pay no more than ten dollars per day.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "Five years",
+      "explanation": "The project is spanning five years.",
+      "difficulty": "medium",
+      "topic": "Heritage"
     },
     {
       "id": "celpip-listening-008-q22",
       "audioScriptId": "celpip-listening-008-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "Which children will receive priority access?",
+      "prompt": "How many construction jobs will be generated?",
       "options": [
-        "School-age children",
-        "Children under six and those already on waitlists",
-        "Children of essential workers",
-        "All children equally"
+        "400 jobs",
+        "500 jobs",
+        "600 jobs",
+        "700 jobs"
       ],
-      "correctAnswer": "Children under six and those already on waitlists",
-      "explanation": "The minister says priority goes to children under six and families on existing waitlists.",
+      "correctAnswer": "600 jobs",
+      "explanation": "The expansion will generate approximately 600 construction jobs.",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "Heritage"
     },
     {
       "id": "celpip-listening-008-q23",
       "audioScriptId": "celpip-listening-008-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "How will approved families be notified?",
+      "prompt": "How many visitors does the museum currently attract annually?",
       "options": [
-        "By post",
-        "By telephone",
-        "By email",
-        "Through their childcare provider"
+        "350,000 visitors",
+        "420,000 visitors",
+        "480,000 visitors",
+        "520,000 visitors"
       ],
-      "correctAnswer": "By email",
-      "explanation": "The report says approved families will be notified by email.",
+      "correctAnswer": "480,000 visitors",
+      "explanation": "The museum currently attracts 480,000 visitors annually.",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "Heritage"
     },
     {
       "id": "celpip-listening-008-q24",
       "audioScriptId": "celpip-listening-008-s4",
       "questionType": "multiple_choice_single",
       "part": 4,
-      "prompt": "What concern did opposition critics raise?",
+      "prompt": "What percentage of Albertans surveyed support the project?",
       "options": [
-        "The daily fee is too high",
-        "The programme excludes informal unlicenced home-based care",
-        "Too many providers have already registered",
-        "The programme starts too late in the year"
+        "65 percent",
+        "72 percent",
+        "78 percent",
+        "85 percent"
       ],
-      "correctAnswer": "The programme excludes informal unlicenced home-based care",
-      "explanation": "Critics say the programme does not extend to informal home-based care arrangements.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "78 percent",
+      "explanation": "78 percent of surveyed Albertans favor the project.",
+      "difficulty": "medium",
+      "topic": "Heritage"
     },
     {
       "id": "celpip-listening-008-q25",
       "audioScriptId": "celpip-listening-008-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say is the main problem with social media platforms?",
+      "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "They are too expensive",
-        "They are designed to maximise engagement through comparison",
-        "They do not have enough educational content",
-        "They spread false news to teenagers"
+        "Mentorship works better online",
+        "Newer staff miss out on mentorship opportunities",
+        "Mentorship is not important",
+        "Remote mentorship is equally effective"
       ],
-      "correctAnswer": "They are designed to maximise engagement through comparison",
-      "explanation": "Diane says platforms are deliberately built to maximise engagement, which means maximising comparison.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "Newer staff miss out on mentorship opportunities",
+      "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-008-q26",
       "audioScriptId": "celpip-listening-008-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom advocate for?",
+      "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "Banning social media entirely",
-        "Age-based restrictions on all platforms",
-        "Digital literacy education for teenagers",
-        "Parental monitoring software"
+        "25 percent",
+        "35 percent",
+        "40 percent",
+        "50 percent"
       ],
-      "correctAnswer": "Digital literacy education for teenagers",
-      "explanation": "Tom says the answer is teaching teenagers to be critical consumers of digital content.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "40 percent",
+      "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-008-q27",
       "audioScriptId": "celpip-listening-008-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "On what point do Diane and Tom agree?",
+      "prompt": "What reason does James give for his increased productivity?",
       "options": [
-        "Restrictions are necessary",
-        "Education about social media is necessary",
-        "Teenagers should avoid all social media",
-        "Parents should manage all screen time"
+        "Better equipment at home",
+        "Fewer interruptions",
+        "Shorter work hours",
+        "More flexible schedule"
       ],
-      "correctAnswer": "Education about social media is necessary",
-      "explanation": "The host notes both agree on the need for education.",
+      "correctAnswer": "Fewer interruptions",
+      "explanation": "James mentions fewer interruptions allow him to focus better on complex projects.",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-008-q28",
       "audioScriptId": "celpip-listening-008-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Diane say a thirteen-year-old is not equipped to do?",
+      "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
-        "Understand complex text",
-        "Resist deliberate platform manipulation",
-        "Manage their own time",
-        "Communicate online safely"
+        "Remote work is always better",
+        "Mixed results depending on the team",
+        "Office work is most productive",
+        "Remote work decreases productivity"
       ],
-      "correctAnswer": "Resist deliberate platform manipulation",
-      "explanation": "Diane says a thirteen-year-old is neurologically not equipped to resist deliberate platform manipulation.",
+      "correctAnswer": "Mixed results depending on the team",
+      "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-008-q29",
       "audioScriptId": "celpip-listening-008-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What does Tom call the effect of banning social media without education?",
+      "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
-        "The rebound effect",
-        "The forbidden fruit effect",
-        "The digital divide",
-        "The screen overload effect"
+        "Software developers",
+        "Marketing teams",
+        "Customer service teams",
+        "Finance teams"
       ],
-      "correctAnswer": "The forbidden fruit effect",
-      "explanation": "Tom calls the over-compensating behaviour after restrictions the forbidden fruit effect.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "Customer service teams",
+      "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-008-q30",
       "audioScriptId": "celpip-listening-008-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What evidence does Tom give for the forbidden fruit effect?",
+      "prompt": "What solution does Tom propose?",
       "options": [
-        "A government study on screen time",
-        "Personal experience with teenagers at home",
-        "Schools that blocked social media found students spent more time online on weekends",
-        "Research from Diane's own institution"
+        "All employees back in office",
+        "Completely remote for all",
+        "Hybrid approach with flexibility",
+        "No change to current policy"
       ],
-      "correctAnswer": "Schools that blocked social media found students spent more time online on weekends",
-      "explanation": "Tom says schools that blocked social media found students spent even more time online on weekends.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "Hybrid approach with flexibility",
+      "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-008-q31",
       "audioScriptId": "celpip-listening-008-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What specific group does Diane say is most affected by heavy social media use?",
+      "prompt": "According to Sarah, what does collaboration depend on?",
       "options": [
-        "Boys aged ten to twelve",
-        "All teenagers equally",
-        "Girls in particular",
-        "Teenagers in rural areas"
+        "Video call quality",
+        "People being in the same space",
+        "Written communication",
+        "Email efficiency"
       ],
-      "correctAnswer": "Girls in particular",
-      "explanation": "Diane says anxiety and depression are particularly high for girls.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "People being in the same space",
+      "explanation": "Sarah believes collaboration happens more naturally when people are in the same space.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-008-q32",
       "audioScriptId": "celpip-listening-008-s5",
       "questionType": "multiple_choice_single",
       "part": 5,
-      "prompt": "What is the host's summary at the end?",
+      "prompt": "How does James stay connected with colleagues remotely?",
       "options": [
-        "Both guests fully agree",
-        "The debate is too political to resolve",
-        "There is agreement on education but a divide on restrictions",
-        "Tom has made the stronger argument"
+        "Phone calls only",
+        "Email messages only",
+        "Video calls and shared documents",
+        "Monthly meetings only"
       ],
-      "correctAnswer": "There is agreement on education but a divide on restrictions",
-      "explanation": "The host summarises that there is agreement on education but a real divide on restrictions.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "Video calls and shared documents",
+      "explanation": "James mentions collaborating through video calls and shared documents.",
+      "difficulty": "medium",
+      "topic": "Workplace"
     },
     {
       "id": "celpip-listening-008-q33",
       "audioScriptId": "celpip-listening-008-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker argue is wrong with current government investment patterns?",
+      "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "Too much money is spent on small towns",
-        "Investment flows mainly to cities, creating inequality",
-        "Rural communities refuse investment",
-        "Cities need more hospitals"
+        "Economic opportunity",
+        "Rising sea levels, extreme weather, and changing precipitation",
+        "Political conflicts",
+        "Educational opportunities"
       ],
-      "correctAnswer": "Investment flows mainly to cities, creating inequality",
-      "explanation": "The speaker says investment has predominantly flowed toward major cities, creating a divide.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
+      "explanation": "The speaker identifies these climate factors as forcing migration.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-008-q34",
       "audioScriptId": "celpip-listening-008-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What health problem does the speaker connect to rural under-investment?",
+      "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Higher rates of heart disease",
-        "More road accidents",
-        "Higher rates of late-stage cancer diagnoses",
-        "Fewer vaccinations"
+        "Agricultural improvements",
+        "Reduced urbanization",
+        "Small island nations disappearing and coastal flooding",
+        "Increased employment"
       ],
-      "correctAnswer": "Higher rates of late-stage cancer diagnoses",
-      "explanation": "The speaker says rural residents have higher rates of late-stage cancer because early detection services are not available locally.",
-      "difficulty": "easy",
-      "topic": "community volunteering"
+      "correctAnswer": "Small island nations disappearing and coastal flooding",
+      "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-008-q35",
       "audioScriptId": "celpip-listening-008-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What pattern in education does the speaker describe?",
+      "prompt": "What consequences does the speaker warn about with unplanned migration?",
       "options": [
-        "Rural schools are better funded than urban ones",
-        "Talented young people leave small towns and rarely return",
-        "Rural students prefer online learning",
-        "Urban students move to rural areas for university"
+        "Economic growth",
+        "Overcrowded cities, slums, and resource conflicts",
+        "Improved infrastructure",
+        "Better job opportunities"
       ],
-      "correctAnswer": "Talented young people leave small towns and rarely return",
-      "explanation": "The speaker says talented young people leave for cities and rarely return.",
+      "correctAnswer": "Overcrowded cities, slums, and resource conflicts",
+      "explanation": "The speaker warns that unplanned migration creates overcrowding, slums, and conflicts.",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-008-q36",
       "audioScriptId": "celpip-listening-008-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "How does the speaker respond to critics who say rural investment costs too much per person?",
+      "prompt": "Which regions does the speaker believe will become more desirable?",
       "options": [
-        "By agreeing and suggesting cuts",
-        "By calling it a reason for smarter targeted investment",
-        "By dismissing the economic argument entirely",
-        "By citing statistics on rural GDP"
+        "Equatorial regions",
+        "Small island nations",
+        "Canada and northern regions",
+        "Coastal areas"
       ],
-      "correctAnswer": "By calling it a reason for smarter targeted investment",
-      "explanation": "The speaker says the cost argument is flawed and is actually an argument for smarter, targeted investment.",
+      "correctAnswer": "Canada and northern regions",
+      "explanation": "The speaker states Canada and northern regions will likely become more desirable.",
       "difficulty": "medium",
-      "topic": "community volunteering"
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-008-q37",
       "audioScriptId": "celpip-listening-008-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What does the speaker say should not determine the quality of opportunity a person has?",
+      "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Their family income",
-        "Their level of education",
-        "The postal code where they were born",
-        "Their language ability"
+        "Restricting population growth",
+        "Expanding housing, infrastructure, and economic capacity",
+        "Limiting migration",
+        "Maintaining current conditions"
       ],
-      "correctAnswer": "The postal code where they were born",
-      "explanation": "The speaker says the postal code where someone is born should not determine their opportunities.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
+      "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
+      "difficulty": "medium",
+      "topic": "Environment"
     },
     {
       "id": "celpip-listening-008-q38",
       "audioScriptId": "celpip-listening-008-s6",
       "questionType": "multiple_choice_single",
       "part": 6,
-      "prompt": "What is the speaker's overall tone?",
+      "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "Nostalgic and sentimental",
-        "Objective and neutral",
-        "Persuasive and advocacy-driven",
-        "Pessimistic and resigned"
+        "It won't happen",
+        "It should be stopped",
+        "It's inevitable and should be managed responsibly",
+        "It's not a real problem"
       ],
-      "correctAnswer": "Persuasive and advocacy-driven",
-      "explanation": "The speaker argues a clear position and calls for change based on principles of equity.",
-      "difficulty": "hard",
-      "topic": "community volunteering"
+      "correctAnswer": "It's inevitable and should be managed responsibly",
+      "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",
+      "difficulty": "medium",
+      "topic": "Environment"
     }
   ]
 }
