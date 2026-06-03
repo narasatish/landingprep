@@ -789,3 +789,25 @@ server.keepAliveTimeout = 61000;    // > typical 60s LB idle to avoid 502s on Re
 server.on("clientError", (err, socket) => {
   if (socket.writable && !socket.destroyed) socket.end("HTTP/1.1 400 Bad Request\r\n\r\n");
 });
+
+// ── Keep-warm self-ping ────────────────────────────────────────────────────────
+// Render's free tier sleeps the dyno after ~15 min idle (then a 30–45s cold start
+// that can look like a failure to the first visitor). Pinging our own public
+// /api/health every ~13 min keeps the dyno awake so real users never hit a cold
+// start. Only runs when a public URL is known (RENDER_EXTERNAL_URL is auto-set on
+// Render) — it's a no-op locally. Fully guarded: a failed ping never crashes anything.
+const SELF_PING_URL = (process.env.RENDER_EXTERNAL_URL || process.env.SELF_PING_URL || "").replace(/\/$/, "");
+if (SELF_PING_URL && typeof fetch === "function") {
+  const warm = () => {
+    try {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => { try { ctrl.abort(); } catch (e) {} }, 20000);
+      fetch(SELF_PING_URL + "/api/health", { signal: ctrl.signal, headers: { "x-keep-warm": "1" } })
+        .catch(() => {})
+        .finally(() => clearTimeout(timer));
+    } catch (e) { /* never throw from keep-warm */ }
+  };
+  setTimeout(warm, 30 * 1000).unref();          // first ping shortly after boot
+  setInterval(warm, 13 * 60 * 1000).unref();    // then every 13 min (< Render's 15 min idle)
+  console.log(`   Keep-warm: pinging ${SELF_PING_URL}/api/health every 13 min`);
+}
