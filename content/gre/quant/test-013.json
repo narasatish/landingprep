@@ -427,50 +427,175 @@
       "section": "quant"
     },
     {
-      "questionType": "problem_solving",
-      "prompt": "If f(x) = x² − 4x + 4, for what value of k does the equation f(x) = k have exactly one solution?",
-      "options": [
-        "k = −4",
-        "k = 0",
-        "k = 2",
-        "k = 4",
-        "k = 8"
-      ],
-      "correctAnswer": "B",
-      "explanation": "f(x) = (x−2)². This equals k with exactly one solution when k=0 (i.e., x=2 is the only root).",
+      "id": "gre-quant-013-di1",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "What is the total revenue for the East region across all four quarters?",
       "difficulty": "medium",
-      "id": "gre-quant-013-q025",
-      "questionNumber": 25,
-      "section": "quant"
+      "options": [
+        "270 million",
+        "280 million",
+        "290 million",
+        "300 million",
+        "310 million"
+      ],
+      "correctAnswer": "280 million",
+      "explanation": "East revenue: 62 + 68 + 72 + 78 = 280 million",
+      "dataTable": {
+        "caption": "Quarterly Revenue by Region — Revenue (in millions) for Company ABC across four regions over Q1-Q4 2025",
+        "headers": [
+          "Region",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "rows": [
+          [
+            "North",
+            "45",
+            "52",
+            "58",
+            "65"
+          ],
+          [
+            "South",
+            "38",
+            "40",
+            "42",
+            "44"
+          ],
+          [
+            "East",
+            "62",
+            "68",
+            "72",
+            "78"
+          ],
+          [
+            "West",
+            "55",
+            "61",
+            "66",
+            "73"
+          ]
+        ]
+      },
+      "questionNumber": 25
     },
     {
-      "questionType": "numeric_entry",
-      "prompt": "If a rectangular pool is 25 m long and 12 m wide, and a path of width 1.5 m surrounds it on all sides, what is the area of the path in square metres?",
-      "answer": "126",
-      "explanation": "Outer dimensions: (25+3)×(12+3) = 28×15 = 420. Inner area = 25×12 = 300. Path area = 420−300 = 120. Wait: 28×15=420, 300, path=120. Hmm let me recheck: outer = (25+2×1.5)×(12+2×1.5)=28×15=420. Path=420-300=120.",
-      "correctAnswer": "120",
+      "id": "gre-quant-013-di2",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "By how much did the North region's revenue increase from Q1 to Q4?",
       "difficulty": "medium",
-      "id": "gre-quant-013-q026",
-      "questionNumber": 26,
-      "section": "quant"
+      "options": [
+        "15 million",
+        "18 million",
+        "20 million",
+        "22 million",
+        "25 million"
+      ],
+      "correctAnswer": "20 million",
+      "explanation": "North Q4 (65) - North Q1 (45) = 20 million",
+      "dataTable": {
+        "caption": "Quarterly Revenue by Region — Revenue (in millions) for Company ABC across four regions over Q1-Q4 2025",
+        "headers": [
+          "Region",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "rows": [
+          [
+            "North",
+            "45",
+            "52",
+            "58",
+            "65"
+          ],
+          [
+            "South",
+            "38",
+            "40",
+            "42",
+            "44"
+          ],
+          [
+            "East",
+            "62",
+            "68",
+            "72",
+            "78"
+          ],
+          [
+            "West",
+            "55",
+            "61",
+            "66",
+            "73"
+          ]
+        ]
+      },
+      "questionNumber": 26
     },
     {
-      "questionType": "quantitative_comparison",
-      "prompt": "x > 1.",
-      "quantityA": "log₂(x²)",
-      "quantityB": "2·log₄(x²)",
+      "id": "gre-quant-013-di3",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "Which region had the highest total revenue across all quarters?",
+      "difficulty": "medium",
       "options": [
-        "Quantity A is greater.",
-        "Quantity B is greater.",
-        "The two quantities are equal.",
-        "The relationship cannot be determined."
+        "North",
+        "South",
+        "East",
+        "West",
+        "North and West tied"
       ],
-      "correctAnswer": "C",
-      "explanation": "log₂(x²) = 2log₂x. log₄(x²) = 2log₄x = 2·(log₂x/log₂4) = 2·(log₂x/2) = log₂x. So 2·log₄(x²) = 2log₂x. Equal.",
-      "difficulty": "hard",
-      "id": "gre-quant-013-q027",
-      "questionNumber": 27,
-      "section": "quant"
+      "correctAnswer": "East",
+      "explanation": "East: 280 million; North: 220 million; South: 164 million; West: 255 million",
+      "dataTable": {
+        "caption": "Quarterly Revenue by Region — Revenue (in millions) for Company ABC across four regions over Q1-Q4 2025",
+        "headers": [
+          "Region",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "rows": [
+          [
+            "North",
+            "45",
+            "52",
+            "58",
+            "65"
+          ],
+          [
+            "South",
+            "38",
+            "40",
+            "42",
+            "44"
+          ],
+          [
+            "East",
+            "62",
+            "68",
+            "72",
+            "78"
+          ],
+          [
+            "West",
+            "55",
+            "61",
+            "66",
+            "73"
+          ]
+        ]
+      },
+      "questionNumber": 27
     }
   ],
   "sections": [

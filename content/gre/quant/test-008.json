@@ -427,50 +427,160 @@
       "section": "quant"
     },
     {
-      "questionType": "problem_solving",
-      "prompt": "If f(x) = x² − 4x + 4, for what value of k does the equation f(x) = k have exactly one solution?",
-      "options": [
-        "k = −4",
-        "k = 0",
-        "k = 2",
-        "k = 4",
-        "k = 8"
-      ],
-      "correctAnswer": "B",
-      "explanation": "f(x) = (x−2)². This equals k with exactly one solution when k=0 (i.e., x=2 is the only root).",
+      "id": "gre-quant-008-di1",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "What is the total revenue across all channels for Week 3?",
       "difficulty": "medium",
-      "id": "gre-quant-008-q025",
-      "questionNumber": 25,
-      "section": "quant"
+      "options": [
+        "300 thousand",
+        "320 thousand",
+        "350 thousand",
+        "380 thousand",
+        "420 thousand"
+      ],
+      "correctAnswer": "350 thousand",
+      "explanation": "Week 3 total: 170 + 110 + 70 = 350 thousand dollars",
+      "dataTable": {
+        "caption": "Retail Store Sales by Channel — Weekly sales (in $1000s) for a retail chain across three sales channels",
+        "headers": [
+          "Week",
+          "In-Store",
+          "Online",
+          "Mobile App"
+        ],
+        "rows": [
+          [
+            "Week 1",
+            "150",
+            "80",
+            "40"
+          ],
+          [
+            "Week 2",
+            "160",
+            "95",
+            "55"
+          ],
+          [
+            "Week 3",
+            "170",
+            "110",
+            "70"
+          ],
+          [
+            "Week 4",
+            "180",
+            "130",
+            "90"
+          ]
+        ]
+      },
+      "questionNumber": 25
     },
     {
-      "questionType": "numeric_entry",
-      "prompt": "If a rectangular pool is 25 m long and 12 m wide, and a path of width 1.5 m surrounds it on all sides, what is the area of the path in square metres?",
-      "answer": "126",
-      "explanation": "Outer dimensions: (25+3)×(12+3) = 28×15 = 420. Inner area = 25×12 = 300. Path area = 420−300 = 120. Wait: 28×15=420, 300, path=120. Hmm let me recheck: outer = (25+2×1.5)×(12+2×1.5)=28×15=420. Path=420-300=120.",
-      "correctAnswer": "120",
+      "id": "gre-quant-008-di2",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "Mobile App sales grew by what percentage from Week 1 to Week 4?",
       "difficulty": "medium",
-      "id": "gre-quant-008-q026",
-      "questionNumber": 26,
-      "section": "quant"
+      "options": [
+        "100%",
+        "110%",
+        "120%",
+        "125%",
+        "150%"
+      ],
+      "correctAnswer": "125%",
+      "explanation": "(90-40)/40 = 50/40 = 1.25 = 125%",
+      "dataTable": {
+        "caption": "Retail Store Sales by Channel — Weekly sales (in $1000s) for a retail chain across three sales channels",
+        "headers": [
+          "Week",
+          "In-Store",
+          "Online",
+          "Mobile App"
+        ],
+        "rows": [
+          [
+            "Week 1",
+            "150",
+            "80",
+            "40"
+          ],
+          [
+            "Week 2",
+            "160",
+            "95",
+            "55"
+          ],
+          [
+            "Week 3",
+            "170",
+            "110",
+            "70"
+          ],
+          [
+            "Week 4",
+            "180",
+            "130",
+            "90"
+          ]
+        ]
+      },
+      "questionNumber": 26
     },
     {
-      "questionType": "quantitative_comparison",
-      "prompt": "x > 1.",
-      "quantityA": "log₂(x²)",
-      "quantityB": "2·log₄(x²)",
+      "id": "gre-quant-008-di3",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "In Week 4, Online sales represented what percent of total Week 4 sales?",
+      "difficulty": "medium",
       "options": [
-        "Quantity A is greater.",
-        "Quantity B is greater.",
-        "The two quantities are equal.",
-        "The relationship cannot be determined."
+        "28%",
+        "32%",
+        "36%",
+        "40%",
+        "44%"
       ],
-      "correctAnswer": "C",
-      "explanation": "log₂(x²) = 2log₂x. log₄(x²) = 2log₄x = 2·(log₂x/log₂4) = 2·(log₂x/2) = log₂x. So 2·log₄(x²) = 2log₂x. Equal.",
-      "difficulty": "hard",
-      "id": "gre-quant-008-q027",
-      "questionNumber": 27,
-      "section": "quant"
+      "correctAnswer": "32%",
+      "explanation": "Week 4 total: 180+130+90=400. Online: 130/400 = 0.325 = 32.5% (closest to 32%)",
+      "dataTable": {
+        "caption": "Retail Store Sales by Channel — Weekly sales (in $1000s) for a retail chain across three sales channels",
+        "headers": [
+          "Week",
+          "In-Store",
+          "Online",
+          "Mobile App"
+        ],
+        "rows": [
+          [
+            "Week 1",
+            "150",
+            "80",
+            "40"
+          ],
+          [
+            "Week 2",
+            "160",
+            "95",
+            "55"
+          ],
+          [
+            "Week 3",
+            "170",
+            "110",
+            "70"
+          ],
+          [
+            "Week 4",
+            "180",
+            "130",
+            "90"
+          ]
+        ]
+      },
+      "questionNumber": 27
     }
   ],
   "sections": [

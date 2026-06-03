@@ -119,7 +119,9 @@
       text: q.prompt || q.text || "",
       explanation: q.explanation || "",
       topic: q.topic || "",
-      difficulty: q.difficulty || "medium"
+      difficulty: q.difficulty || "medium",
+      dataTable: q.dataTable || void 0
+      // GRE Data Interpretation table (rendered above the options)
     };
     if (t === "mcq" || t === "match_heading") {
       base.options = options;

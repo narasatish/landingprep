@@ -426,50 +426,160 @@
       "section": "quant"
     },
     {
-      "questionType": "problem_solving",
-      "prompt": "If f(x) = x² − 4x + 4, for what value of k does the equation f(x) = k have exactly one solution?",
-      "options": [
-        "k = −4",
-        "k = 0",
-        "k = 2",
-        "k = 4",
-        "k = 8"
-      ],
-      "correctAnswer": "B",
-      "explanation": "f(x) = (x−2)². This equals k with exactly one solution when k=0 (i.e., x=2 is the only root).",
+      "id": "gre-quant-002-di1",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "What is the percentage increase in graduate enrollment from 2021 to 2024?",
       "difficulty": "medium",
-      "id": "gre-quant-002-q025",
-      "questionNumber": 25,
-      "section": "quant"
+      "options": [
+        "25%",
+        "35%",
+        "40%",
+        "45%",
+        "50%"
+      ],
+      "correctAnswer": "50%",
+      "explanation": "(1200 - 800) / 800 = 400 / 800 = 0.5 = 50%",
+      "dataTable": {
+        "caption": "Student Enrollment by Program — Number of students enrolled in undergraduate and graduate programs by year",
+        "headers": [
+          "Year",
+          "Undergraduate",
+          "Graduate",
+          "Total"
+        ],
+        "rows": [
+          [
+            "2021",
+            "3200",
+            "800",
+            "4000"
+          ],
+          [
+            "2022",
+            "3400",
+            "950",
+            "4350"
+          ],
+          [
+            "2023",
+            "3600",
+            "1100",
+            "4700"
+          ],
+          [
+            "2024",
+            "3800",
+            "1200",
+            "5000"
+          ]
+        ]
+      },
+      "questionNumber": 25
     },
     {
-      "questionType": "numeric_entry",
-      "prompt": "If a rectangular pool is 25 m long and 12 m wide, and a path of width 1.5 m surrounds it on all sides, what is the area of the path in square metres?",
-      "answer": "126",
-      "explanation": "Outer dimensions: (25+3)×(12+3) = 28×15 = 420. Inner area = 25×12 = 300. Path area = 420−300 = 120. Wait: 28×15=420, 300, path=120. Hmm let me recheck: outer = (25+2×1.5)×(12+2×1.5)=28×15=420. Path=420-300=120.",
-      "correctAnswer": "120",
+      "id": "gre-quant-002-di2",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "In which year was the ratio of undergraduate to graduate students closest to 4:1?",
       "difficulty": "medium",
-      "id": "gre-quant-002-q026",
-      "questionNumber": 26,
-      "section": "quant"
+      "options": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "Cannot determine"
+      ],
+      "correctAnswer": "2021",
+      "explanation": "2021: 3200/800 = 4/1; 2022: 3400/950 ≈ 3.58/1; 2023: 3600/1100 ≈ 3.27/1; 2024: 3800/1200 ≈ 3.17/1",
+      "dataTable": {
+        "caption": "Student Enrollment by Program — Number of students enrolled in undergraduate and graduate programs by year",
+        "headers": [
+          "Year",
+          "Undergraduate",
+          "Graduate",
+          "Total"
+        ],
+        "rows": [
+          [
+            "2021",
+            "3200",
+            "800",
+            "4000"
+          ],
+          [
+            "2022",
+            "3400",
+            "950",
+            "4350"
+          ],
+          [
+            "2023",
+            "3600",
+            "1100",
+            "4700"
+          ],
+          [
+            "2024",
+            "3800",
+            "1200",
+            "5000"
+          ]
+        ]
+      },
+      "questionNumber": 26
     },
     {
-      "questionType": "quantitative_comparison",
-      "prompt": "x > 1.",
-      "quantityA": "log₂(x²)",
-      "quantityB": "2·log₄(x²)",
+      "id": "gre-quant-002-di3",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "By how many students did total enrollment grow from 2022 to 2023?",
+      "difficulty": "medium",
       "options": [
-        "Quantity A is greater.",
-        "Quantity B is greater.",
-        "The two quantities are equal.",
-        "The relationship cannot be determined."
+        "250",
+        "300",
+        "350",
+        "400",
+        "450"
       ],
-      "correctAnswer": "C",
-      "explanation": "log₂(x²) = 2log₂x. log₄(x²) = 2log₄x = 2·(log₂x/log₂4) = 2·(log₂x/2) = log₂x. So 2·log₄(x²) = 2log₂x. Equal.",
-      "difficulty": "hard",
-      "id": "gre-quant-002-q027",
-      "questionNumber": 27,
-      "section": "quant"
+      "correctAnswer": "350",
+      "explanation": "2023 total (4700) - 2022 total (4350) = 350 students",
+      "dataTable": {
+        "caption": "Student Enrollment by Program — Number of students enrolled in undergraduate and graduate programs by year",
+        "headers": [
+          "Year",
+          "Undergraduate",
+          "Graduate",
+          "Total"
+        ],
+        "rows": [
+          [
+            "2021",
+            "3200",
+            "800",
+            "4000"
+          ],
+          [
+            "2022",
+            "3400",
+            "950",
+            "4350"
+          ],
+          [
+            "2023",
+            "3600",
+            "1100",
+            "4700"
+          ],
+          [
+            "2024",
+            "3800",
+            "1200",
+            "5000"
+          ]
+        ]
+      },
+      "questionNumber": 27
     }
   ],
   "sections": [

@@ -4346,6 +4346,15 @@ h4.md-h { font-size: 14px; letter-spacing: .01em; }
     radial-gradient(40% 40% at 12% 20%, color-mix(in srgb, #0ea5e9 10%, transparent), transparent 70%); }
 .hero .shell { position: relative; z-index: 1; }
 
+/* ── GRE Data Interpretation table ──────────────────────────────────────── */
+.di-table-wrap { overflow-x: auto; margin: 12px 0 16px; }
+.di-table-caption { font-weight: 700; font-size: 14px; margin-bottom: 8px; color: var(--ink); }
+.di-table { border-collapse: collapse; width: 100%; font-size: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.di-table th, .di-table td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; }
+.di-table thead th { background: color-mix(in srgb, var(--accent) 10%, var(--surface)); font-weight: 700; }
+.di-table tbody th[scope="row"] { background: color-mix(in srgb, var(--ink) 4%, var(--surface)); font-weight: 600; }
+.di-table tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--ink) 2%, transparent); }
+
 /* ── Home SEO content block ─────────────────────────────────────────────── */
 .seo-disclosure { max-width: 820px; margin: 0 auto; }
 .seo-disclosure > summary { cursor: pointer; list-style: none; font-weight: 700; font-size: clamp(15px,2vw,17px); color: var(--ink); padding: 10px 0; display: flex; align-items: center; gap: 10px; }

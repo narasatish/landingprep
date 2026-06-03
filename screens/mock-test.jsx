@@ -2170,6 +2170,17 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
       <div className="q-card">
         <div className="q-num">Question {q.num || qi + 1}</div>
         <div className="q-text">{q.text}</div>
+        {q.dataTable && (
+          <div className="di-table-wrap">
+            {q.dataTable.caption && <div className="di-table-caption">{q.dataTable.caption}</div>}
+            <table className="di-table">
+              <thead><tr>{(q.dataTable.headers || []).map((h, i) => <th key={i}>{h}</th>)}</tr></thead>
+              <tbody>{(q.dataTable.rows || []).map((row, ri) => (
+                <tr key={ri}>{(row || []).map((cell, ci) => ci === 0 ? <th key={ci} scope="row">{cell}</th> : <td key={ci}>{cell}</td>)}</tr>
+              ))}</tbody>
+            </table>
+          </div>
+        )}
         {q.visual && window.LP_VisualRenderer && <window.LP_VisualRenderer task={{ visual: q.visual, prompt: q.text }} />}
         {q.passage && <div className="passage-block" style={{ maxHeight: 200, marginBottom: 12 }}><p style={{ margin: 0 }}>{q.passage}</p></div>}
         <div className="q-options">

@@ -419,50 +419,175 @@
       "section": "quant"
     },
     {
-      "questionType": "problem_solving",
-      "prompt": "If f(x) = x² − 4x + 4, for what value of k does the equation f(x) = k have exactly one solution?",
-      "options": [
-        "k = −4",
-        "k = 0",
-        "k = 2",
-        "k = 4",
-        "k = 8"
-      ],
-      "correctAnswer": "B",
-      "explanation": "f(x) = (x−2)². This equals k with exactly one solution when k=0 (i.e., x=2 is the only root).",
+      "id": "gre-quant-027-di1",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "What was the total page views for Opinion category across all four months?",
       "difficulty": "medium",
-      "id": "gre-quant-027-q025",
-      "questionNumber": 25,
-      "section": "quant"
+      "options": [
+        "550 thousand",
+        "570 thousand",
+        "590 thousand",
+        "610 thousand",
+        "630 thousand"
+      ],
+      "correctAnswer": "570 thousand",
+      "explanation": "Opinion: 120 + 140 + 150 + 160 = 570 thousand",
+      "dataTable": {
+        "caption": "Monthly Website Traffic — Page views (in thousands) for a news website by month and content category",
+        "headers": [
+          "Month",
+          "News",
+          "Sports",
+          "Opinion",
+          "Lifestyle"
+        ],
+        "rows": [
+          [
+            "January",
+            "240",
+            "180",
+            "120",
+            "160"
+          ],
+          [
+            "February",
+            "260",
+            "175",
+            "140",
+            "170"
+          ],
+          [
+            "March",
+            "280",
+            "200",
+            "150",
+            "180"
+          ],
+          [
+            "April",
+            "300",
+            "220",
+            "160",
+            "200"
+          ]
+        ]
+      },
+      "questionNumber": 25
     },
     {
-      "questionType": "numeric_entry",
-      "prompt": "If a rectangular pool is 25 m long and 12 m wide, and a path of width 1.5 m surrounds it on all sides, what is the area of the path in square metres?",
-      "answer": "126",
-      "explanation": "Outer dimensions: (25+3)×(12+3) = 28×15 = 420. Inner area = 25×12 = 300. Path area = 420−300 = 120. Wait: 28×15=420, 300, path=120. Hmm let me recheck: outer = (25+2×1.5)×(12+2×1.5)=28×15=420. Path=420-300=120.",
-      "correctAnswer": "120",
+      "id": "gre-quant-027-di2",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "In April, Sports pages represented approximately what percent of total April traffic?",
       "difficulty": "medium",
-      "id": "gre-quant-027-q026",
-      "questionNumber": 26,
-      "section": "quant"
+      "options": [
+        "18%",
+        "21%",
+        "25%",
+        "27%",
+        "30%"
+      ],
+      "correctAnswer": "25%",
+      "explanation": "April total: 300+220+160+200=880. Sports 220/880 = 0.25 = 25%",
+      "dataTable": {
+        "caption": "Monthly Website Traffic — Page views (in thousands) for a news website by month and content category",
+        "headers": [
+          "Month",
+          "News",
+          "Sports",
+          "Opinion",
+          "Lifestyle"
+        ],
+        "rows": [
+          [
+            "January",
+            "240",
+            "180",
+            "120",
+            "160"
+          ],
+          [
+            "February",
+            "260",
+            "175",
+            "140",
+            "170"
+          ],
+          [
+            "March",
+            "280",
+            "200",
+            "150",
+            "180"
+          ],
+          [
+            "April",
+            "300",
+            "220",
+            "160",
+            "200"
+          ]
+        ]
+      },
+      "questionNumber": 26
     },
     {
-      "questionType": "quantitative_comparison",
-      "prompt": "x > 1.",
-      "quantityA": "log₂(x²)",
-      "quantityB": "2·log₄(x²)",
+      "id": "gre-quant-027-di3",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "Which category showed the largest absolute growth from January to April?",
+      "difficulty": "medium",
       "options": [
-        "Quantity A is greater.",
-        "Quantity B is greater.",
-        "The two quantities are equal.",
-        "The relationship cannot be determined."
+        "News",
+        "Sports",
+        "Opinion",
+        "Lifestyle",
+        "News and Opinion tied"
       ],
-      "correctAnswer": "C",
-      "explanation": "log₂(x²) = 2log₂x. log₄(x²) = 2log₄x = 2·(log₂x/log₂4) = 2·(log₂x/2) = log₂x. So 2·log₄(x²) = 2log₂x. Equal.",
-      "difficulty": "hard",
-      "id": "gre-quant-027-q027",
-      "questionNumber": 27,
-      "section": "quant"
+      "correctAnswer": "News",
+      "explanation": "News: 300-240=60; Sports: 220-180=40; Opinion: 160-120=40; Lifestyle: 200-160=40",
+      "dataTable": {
+        "caption": "Monthly Website Traffic — Page views (in thousands) for a news website by month and content category",
+        "headers": [
+          "Month",
+          "News",
+          "Sports",
+          "Opinion",
+          "Lifestyle"
+        ],
+        "rows": [
+          [
+            "January",
+            "240",
+            "180",
+            "120",
+            "160"
+          ],
+          [
+            "February",
+            "260",
+            "175",
+            "140",
+            "170"
+          ],
+          [
+            "March",
+            "280",
+            "200",
+            "150",
+            "180"
+          ],
+          [
+            "April",
+            "300",
+            "220",
+            "160",
+            "200"
+          ]
+        ]
+      },
+      "questionNumber": 27
     }
   ],
   "sections": [

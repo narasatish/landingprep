@@ -418,50 +418,175 @@
       "section": "quant"
     },
     {
-      "questionType": "problem_solving",
-      "prompt": "If f(x) = x² − 4x + 4, for what value of k does the equation f(x) = k have exactly one solution?",
-      "options": [
-        "k = −4",
-        "k = 0",
-        "k = 2",
-        "k = 4",
-        "k = 8"
-      ],
-      "correctAnswer": "B",
-      "explanation": "f(x) = (x−2)². This equals k with exactly one solution when k=0 (i.e., x=2 is the only root).",
+      "id": "gre-quant-009-di1",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "Which discipline had the highest completion rate in 2024?",
       "difficulty": "medium",
-      "id": "gre-quant-009-q025",
-      "questionNumber": 25,
-      "section": "quant"
+      "options": [
+        "Engineering",
+        "Business",
+        "Liberal Arts",
+        "Computer Science",
+        "Engineering and Business tied"
+      ],
+      "correctAnswer": "Business",
+      "explanation": "2024 rates: Engineering 88%, Business 91%, Liberal Arts 88%, Computer Science 86%",
+      "dataTable": {
+        "caption": "University Degree Completion Rates — Percentage of students completing degrees within expected timeframe by discipline",
+        "headers": [
+          "Discipline",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Engineering",
+            "82",
+            "84",
+            "86",
+            "88"
+          ],
+          [
+            "Business",
+            "88",
+            "89",
+            "90",
+            "91"
+          ],
+          [
+            "Liberal Arts",
+            "85",
+            "86",
+            "87",
+            "88"
+          ],
+          [
+            "Computer Science",
+            "80",
+            "82",
+            "84",
+            "86"
+          ]
+        ]
+      },
+      "questionNumber": 25
     },
     {
-      "questionType": "numeric_entry",
-      "prompt": "If a rectangular pool is 25 m long and 12 m wide, and a path of width 1.5 m surrounds it on all sides, what is the area of the path in square metres?",
-      "answer": "126",
-      "explanation": "Outer dimensions: (25+3)×(12+3) = 28×15 = 420. Inner area = 25×12 = 300. Path area = 420−300 = 120. Wait: 28×15=420, 300, path=120. Hmm let me recheck: outer = (25+2×1.5)×(12+2×1.5)=28×15=420. Path=420-300=120.",
-      "correctAnswer": "120",
+      "id": "gre-quant-009-di2",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "What is the average completion rate for Computer Science across all four years?",
       "difficulty": "medium",
-      "id": "gre-quant-009-q026",
-      "questionNumber": 26,
-      "section": "quant"
+      "options": [
+        "82%",
+        "83%",
+        "83.5%",
+        "84%",
+        "84.5%"
+      ],
+      "correctAnswer": "83%",
+      "explanation": "(80+82+84+86)/4 = 332/4 = 83%",
+      "dataTable": {
+        "caption": "University Degree Completion Rates — Percentage of students completing degrees within expected timeframe by discipline",
+        "headers": [
+          "Discipline",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Engineering",
+            "82",
+            "84",
+            "86",
+            "88"
+          ],
+          [
+            "Business",
+            "88",
+            "89",
+            "90",
+            "91"
+          ],
+          [
+            "Liberal Arts",
+            "85",
+            "86",
+            "87",
+            "88"
+          ],
+          [
+            "Computer Science",
+            "80",
+            "82",
+            "84",
+            "86"
+          ]
+        ]
+      },
+      "questionNumber": 26
     },
     {
-      "questionType": "quantitative_comparison",
-      "prompt": "x > 1.",
-      "quantityA": "log₂(x²)",
-      "quantityB": "2·log₄(x²)",
+      "id": "gre-quant-009-di3",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "From 2021 to 2024, Liberal Arts completion rate increased by how many percentage points?",
+      "difficulty": "medium",
       "options": [
-        "Quantity A is greater.",
-        "Quantity B is greater.",
-        "The two quantities are equal.",
-        "The relationship cannot be determined."
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
       ],
-      "correctAnswer": "C",
-      "explanation": "log₂(x²) = 2log₂x. log₄(x²) = 2log₄x = 2·(log₂x/log₂4) = 2·(log₂x/2) = log₂x. So 2·log₄(x²) = 2log₂x. Equal.",
-      "difficulty": "hard",
-      "id": "gre-quant-009-q027",
-      "questionNumber": 27,
-      "section": "quant"
+      "correctAnswer": "3",
+      "explanation": "2024 rate (88%) - 2021 rate (85%) = 3 percentage points",
+      "dataTable": {
+        "caption": "University Degree Completion Rates — Percentage of students completing degrees within expected timeframe by discipline",
+        "headers": [
+          "Discipline",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Engineering",
+            "82",
+            "84",
+            "86",
+            "88"
+          ],
+          [
+            "Business",
+            "88",
+            "89",
+            "90",
+            "91"
+          ],
+          [
+            "Liberal Arts",
+            "85",
+            "86",
+            "87",
+            "88"
+          ],
+          [
+            "Computer Science",
+            "80",
+            "82",
+            "84",
+            "86"
+          ]
+        ]
+      },
+      "questionNumber": 27
     }
   ],
   "sections": [

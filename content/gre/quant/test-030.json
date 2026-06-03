@@ -411,50 +411,196 @@
       "section": "quant"
     },
     {
-      "questionType": "problem_solving",
-      "prompt": "If f(x) = x² − 4x + 4, for what value of k does the equation f(x) = k have exactly one solution?",
-      "options": [
-        "k = −4",
-        "k = 0",
-        "k = 2",
-        "k = 4",
-        "k = 8"
-      ],
-      "correctAnswer": "B",
-      "explanation": "f(x) = (x−2)². This equals k with exactly one solution when k=0 (i.e., x=2 is the only root).",
+      "id": "gre-quant-030-di1",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "What is the total number of downloads across both platforms over the six months?",
       "difficulty": "medium",
-      "id": "gre-quant-030-q025",
-      "questionNumber": 25,
-      "section": "quant"
+      "options": [
+        "680 thousand",
+        "699 thousand",
+        "719 thousand",
+        "739 thousand",
+        "759 thousand"
+      ],
+      "correctAnswer": "719 thousand",
+      "explanation": "Sum of all months: 80+95+113+128+143+160 = 719 thousand",
+      "dataTable": {
+        "caption": "Mobile App Downloads by Platform — App downloads (in thousands) by operating system for a fitness app over six months",
+        "headers": [
+          "Month",
+          "iOS",
+          "Android",
+          "Total"
+        ],
+        "rows": [
+          [
+            "January",
+            "45",
+            "35",
+            "80"
+          ],
+          [
+            "February",
+            "52",
+            "43",
+            "95"
+          ],
+          [
+            "March",
+            "61",
+            "52",
+            "113"
+          ],
+          [
+            "April",
+            "68",
+            "60",
+            "128"
+          ],
+          [
+            "May",
+            "75",
+            "68",
+            "143"
+          ],
+          [
+            "June",
+            "82",
+            "78",
+            "160"
+          ]
+        ]
+      },
+      "questionNumber": 25
     },
     {
-      "questionType": "numeric_entry",
-      "prompt": "If a rectangular pool is 25 m long and 12 m wide, and a path of width 1.5 m surrounds it on all sides, what is the area of the path in square metres?",
-      "answer": "126",
-      "explanation": "Outer dimensions: (25+3)×(12+3) = 28×15 = 420. Inner area = 25×12 = 300. Path area = 420−300 = 120. Wait: 28×15=420, 300, path=120. Hmm let me recheck: outer = (25+2×1.5)×(12+2×1.5)=28×15=420. Path=420-300=120.",
-      "correctAnswer": "120",
+      "id": "gre-quant-030-di2",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "By approximately what percentage did total downloads increase from January to June?",
       "difficulty": "medium",
-      "id": "gre-quant-030-q026",
-      "questionNumber": 26,
-      "section": "quant"
+      "options": [
+        "80%",
+        "90%",
+        "100%",
+        "110%",
+        "120%"
+      ],
+      "correctAnswer": "100%",
+      "explanation": "(160-80)/80 = 80/80 = 1.0 = 100%",
+      "dataTable": {
+        "caption": "Mobile App Downloads by Platform — App downloads (in thousands) by operating system for a fitness app over six months",
+        "headers": [
+          "Month",
+          "iOS",
+          "Android",
+          "Total"
+        ],
+        "rows": [
+          [
+            "January",
+            "45",
+            "35",
+            "80"
+          ],
+          [
+            "February",
+            "52",
+            "43",
+            "95"
+          ],
+          [
+            "March",
+            "61",
+            "52",
+            "113"
+          ],
+          [
+            "April",
+            "68",
+            "60",
+            "128"
+          ],
+          [
+            "May",
+            "75",
+            "68",
+            "143"
+          ],
+          [
+            "June",
+            "82",
+            "78",
+            "160"
+          ]
+        ]
+      },
+      "questionNumber": 26
     },
     {
-      "questionType": "quantitative_comparison",
-      "prompt": "x > 1.",
-      "quantityA": "log₂(x²)",
-      "quantityB": "2·log₄(x²)",
+      "id": "gre-quant-030-di3",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "In which month did iOS downloads first exceed 70 thousand?",
+      "difficulty": "medium",
       "options": [
-        "Quantity A is greater.",
-        "Quantity B is greater.",
-        "The two quantities are equal.",
-        "The relationship cannot be determined."
+        "March",
+        "April",
+        "May",
+        "June",
+        "February"
       ],
-      "correctAnswer": "C",
-      "explanation": "log₂(x²) = 2log₂x. log₄(x²) = 2log₄x = 2·(log₂x/log₂4) = 2·(log₂x/2) = log₂x. So 2·log₄(x²) = 2log₂x. Equal.",
-      "difficulty": "hard",
-      "id": "gre-quant-030-q027",
-      "questionNumber": 27,
-      "section": "quant"
+      "correctAnswer": "May",
+      "explanation": "iOS: January 45, February 52, March 61, April 68, May 75 (first time >70)",
+      "dataTable": {
+        "caption": "Mobile App Downloads by Platform — App downloads (in thousands) by operating system for a fitness app over six months",
+        "headers": [
+          "Month",
+          "iOS",
+          "Android",
+          "Total"
+        ],
+        "rows": [
+          [
+            "January",
+            "45",
+            "35",
+            "80"
+          ],
+          [
+            "February",
+            "52",
+            "43",
+            "95"
+          ],
+          [
+            "March",
+            "61",
+            "52",
+            "113"
+          ],
+          [
+            "April",
+            "68",
+            "60",
+            "128"
+          ],
+          [
+            "May",
+            "75",
+            "68",
+            "143"
+          ],
+          [
+            "June",
+            "82",
+            "78",
+            "160"
+          ]
+        ]
+      },
+      "questionNumber": 27
     }
   ],
   "sections": [

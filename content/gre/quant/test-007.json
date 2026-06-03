@@ -426,50 +426,196 @@
       "section": "quant"
     },
     {
-      "questionType": "problem_solving",
-      "prompt": "If f(x) = x² − 4x + 4, for what value of k does the equation f(x) = k have exactly one solution?",
-      "options": [
-        "k = −4",
-        "k = 0",
-        "k = 2",
-        "k = 4",
-        "k = 8"
-      ],
-      "correctAnswer": "B",
-      "explanation": "f(x) = (x−2)². This equals k with exactly one solution when k=0 (i.e., x=2 is the only root).",
+      "id": "gre-quant-007-di1",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "What is the total patient census for all wards in Q3?",
       "difficulty": "medium",
-      "id": "gre-quant-007-q025",
-      "questionNumber": 25,
-      "section": "quant"
+      "options": [
+        "320",
+        "340",
+        "350",
+        "360",
+        "380"
+      ],
+      "correctAnswer": "350",
+      "explanation": "Q3 total: 32+145+90+45+38 = 350 patients",
+      "dataTable": {
+        "caption": "Hospital Patient Census — Number of admitted patients by ward type on the first day of each quarter",
+        "headers": [
+          "Ward",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "rows": [
+          [
+            "ICU",
+            "24",
+            "28",
+            "32",
+            "36"
+          ],
+          [
+            "General Medicine",
+            "120",
+            "135",
+            "145",
+            "160"
+          ],
+          [
+            "Surgery",
+            "80",
+            "85",
+            "90",
+            "100"
+          ],
+          [
+            "Pediatrics",
+            "40",
+            "42",
+            "45",
+            "50"
+          ],
+          [
+            "Maternity",
+            "30",
+            "35",
+            "38",
+            "42"
+          ]
+        ]
+      },
+      "questionNumber": 25
     },
     {
-      "questionType": "numeric_entry",
-      "prompt": "If a rectangular pool is 25 m long and 12 m wide, and a path of width 1.5 m surrounds it on all sides, what is the area of the path in square metres?",
-      "answer": "126",
-      "explanation": "Outer dimensions: (25+3)×(12+3) = 28×15 = 420. Inner area = 25×12 = 300. Path area = 420−300 = 120. Wait: 28×15=420, 300, path=120. Hmm let me recheck: outer = (25+2×1.5)×(12+2×1.5)=28×15=420. Path=420-300=120.",
-      "correctAnswer": "120",
+      "id": "gre-quant-007-di2",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "From Q1 to Q4, the ICU bed count increased by what percentage?",
       "difficulty": "medium",
-      "id": "gre-quant-007-q026",
-      "questionNumber": 26,
-      "section": "quant"
+      "options": [
+        "40%",
+        "50%",
+        "60%",
+        "70%",
+        "80%"
+      ],
+      "correctAnswer": "50%",
+      "explanation": "(36-24)/24 = 12/24 = 0.5 = 50%",
+      "dataTable": {
+        "caption": "Hospital Patient Census — Number of admitted patients by ward type on the first day of each quarter",
+        "headers": [
+          "Ward",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "rows": [
+          [
+            "ICU",
+            "24",
+            "28",
+            "32",
+            "36"
+          ],
+          [
+            "General Medicine",
+            "120",
+            "135",
+            "145",
+            "160"
+          ],
+          [
+            "Surgery",
+            "80",
+            "85",
+            "90",
+            "100"
+          ],
+          [
+            "Pediatrics",
+            "40",
+            "42",
+            "45",
+            "50"
+          ],
+          [
+            "Maternity",
+            "30",
+            "35",
+            "38",
+            "42"
+          ]
+        ]
+      },
+      "questionNumber": 26
     },
     {
-      "questionType": "quantitative_comparison",
-      "prompt": "x > 1.",
-      "quantityA": "log₂(x²)",
-      "quantityB": "2·log₄(x²)",
+      "id": "gre-quant-007-di3",
+      "questionType": "data_interpretation",
+      "topic": "Data Interpretation",
+      "prompt": "In Q2, General Medicine and Surgery combined represent what fraction of total Q2 census?",
+      "difficulty": "medium",
       "options": [
-        "Quantity A is greater.",
-        "Quantity B is greater.",
-        "The two quantities are equal.",
-        "The relationship cannot be determined."
+        "25/70",
+        "220/325",
+        "280/360",
+        "240/325",
+        "220/360"
       ],
-      "correctAnswer": "C",
-      "explanation": "log₂(x²) = 2log₂x. log₄(x²) = 2log₄x = 2·(log₂x/log₂4) = 2·(log₂x/2) = log₂x. So 2·log₄(x²) = 2log₂x. Equal.",
-      "difficulty": "hard",
-      "id": "gre-quant-007-q027",
-      "questionNumber": 27,
-      "section": "quant"
+      "correctAnswer": "220/325",
+      "explanation": "Q2 total: 28+135+85+42+35=325. Gen Med + Surgery: 135+85=220. Fraction: 220/325",
+      "dataTable": {
+        "caption": "Hospital Patient Census — Number of admitted patients by ward type on the first day of each quarter",
+        "headers": [
+          "Ward",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "rows": [
+          [
+            "ICU",
+            "24",
+            "28",
+            "32",
+            "36"
+          ],
+          [
+            "General Medicine",
+            "120",
+            "135",
+            "145",
+            "160"
+          ],
+          [
+            "Surgery",
+            "80",
+            "85",
+            "90",
+            "100"
+          ],
+          [
+            "Pediatrics",
+            "40",
+            "42",
+            "45",
+            "50"
+          ],
+          [
+            "Maternity",
+            "30",
+            "35",
+            "38",
+            "42"
+          ]
+        ]
+      },
+      "questionNumber": 27
     }
   ],
   "sections": [
