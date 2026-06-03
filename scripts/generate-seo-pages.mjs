@@ -1356,6 +1356,7 @@ const EXAM_COUNTRY = [
   { exam: "PTE", slug: "pte", c: "Australia", study: "50–65 on the PTE Academic Global Scale", extra: "PTE Academic is fully accepted for Australian student visas and skilled migration (50 = competent, 65 = proficient, 79 = superior)." },
   { exam: "PTE", slug: "pte", c: "Canada", study: "60+ on PTE Academic for most universities", extra: "PTE Academic is now accepted for Canadian study permits and (PTE Core) for Express Entry." },
   { exam: "Duolingo", slug: "duolingo", c: "USA", study: "105–120 on the Duolingo English Test", extra: "Accepted by thousands of US universities; cheaper and faster than IELTS/TOEFL, with results in about two days." },
+  { exam: "CELPIP", slug: "celpip", c: "Canada", study: "CELPIP-General is built mainly for Canadian immigration; for study most universities prefer IELTS or TOEFL, though some accept CELPIP", extra: "CELPIP-General is the go-to English test for Canadian PR and citizenship — fully computer-delivered and Canada-specific." },
 ];
 function examForCountryPage(x) {
   const path = `/${x.slug}-for-${x.c.toLowerCase().replace(/\s+/g, "-")}/`;
@@ -1389,6 +1390,7 @@ const EXAM_VS = [
   { a: "TOEFL", b: "PTE", rows: [["Scoring", "0–120", "10–90"], ["Marking", "AI + human", "Fully AI"], ["Results", "4–8 days", "~48 hours"], ["Strength", "Strong US recognition", "Fast, growing acceptance"], ["Best for", "USA universities", "Australia, fast results"]], verdict: "Both are computer-based; TOEFL is the safer choice for the USA, PTE for the fastest results and Australian migration." },
   { a: "IELTS", b: "Duolingo", rows: [["Scoring", "Band 0–9", "10–160"], ["Cost", "Higher (~US$200+)", "Much cheaper (~US$65)"], ["Length", "~2h 45m, at a centre", "~1 hour, at home"], ["Results", "3–13 days", "~2 days"], ["Acceptance", "Universal", "Thousands of universities, growing"]], verdict: "Duolingo is far cheaper, shorter and taken at home — great if your university accepts it. IELTS has the widest acceptance including visas/PR." },
   { a: "GRE", b: "GMAT", rows: [["Used for", "Most Master's & PhD programmes", "MBA & business Master's"], ["Score", "260–340 (+ AWA 0–6)", "205–805 (Focus Edition)"], ["Maths", "Calculator allowed", "No calculator (Quant)"], ["Length", "~1h 58m", "~2h 15m"], ["Best for", "Broad grad-school options", "Top business schools"]], verdict: "Take the GRE for the widest range of graduate programmes; take the GMAT Focus if you're targeting competitive MBA programmes that prefer it." },
+  { a: "CELPIP", b: "IELTS", rows: [["Scoring", "CLB level 1–12", "Band 0–9"], ["Delivery", "Fully computer (incl. speaking)", "Paper/computer; speaking with a real examiner"], ["Accent", "North American English", "British/International English"], ["Results", "Usually 4–5 days", "3–13 days"], ["Best for", "Canadian PR, citizenship & some study", "Universal — study, work & migration worldwide"]], verdict: "For Canadian immigration both are accepted by IRCC — pick CELPIP if you prefer North American English and an all-computer test, or IELTS General for the widest global recognition." },
 ];
 function examVsExamPage(v) {
   const path = `/${v.a.toLowerCase()}-vs-${v.b.toLowerCase()}/`;
@@ -1548,6 +1550,10 @@ const PR_TARGETS = [
     levels: [["Principal applicant", "IELTS General or Academic 6.5 overall (or equivalent)", "Standard English requirement for the resident visa."], ["Other evidence", "Recognised qualification or work in English", "May satisfy the requirement instead of a test."]],
     tests: "IELTS, PTE Academic, TOEFL iBT and other approved tests are accepted by Immigration New Zealand.",
     note: "Requirements change — always confirm on the Immigration New Zealand website before booking." },
+  { exam: "CELPIP", k: "celpip", country: "Canada", scheme: "Express Entry (CELPIP-General)", slug: "celpip-for-canada-pr",
+    levels: [["Minimum — CLB 7", "CELPIP-General 7 in each skill (Listening, Reading, Writing, Speaking)", "Eligibility for the Express Entry pool (Federal Skilled Worker)."], ["Strong — CLB 9", "CELPIP-General 9 in each skill", "Earns the maximum language points in the CRS."]],
+    tests: "CELPIP-General is purpose-built for Canadian immigration and is accepted by IRCC alongside IELTS General and PTE Core.",
+    note: "Use CELPIP-General (which tests all four skills) for Express Entry — not the LS version. Note: TOEFL is NOT accepted by IRCC for Express Entry." },
 ];
 function examForPRPage(x) {
   const path = `/${x.slug}/`;
