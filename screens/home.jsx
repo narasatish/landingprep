@@ -658,7 +658,7 @@ function Footer() {
           <div>
             <h4>Resources</h4>
             <ul>
-              <li><a href="/ielts-band-7/">IELTS band requirements</a></li><li><a href="#/relocate">Move Abroad checklist</a></li><li><a href="/student-city-guides/">Student city guides</a></li><li><a href="/learn-german/">Learn German &amp; French</a></li><li><a href="#/blog">Study tips & strategy</a></li><li><a href="#/progress">My Progress</a></li>
+              <li><a href="/ielts-band-7/">IELTS band requirements</a></li><li><a href="/which-english-test/">Which English test? (quiz)</a></li><li><a href="#/relocate">Move Abroad checklist</a></li><li><a href="/student-city-guides/">Student city guides</a></li><li><a href="/learn-german/">Learn German &amp; French</a></li><li><a href="#/blog">Study tips & strategy</a></li><li><a href="#/progress">My Progress</a></li>
             </ul>
           </div>
         </div>

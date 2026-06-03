@@ -1421,6 +1421,27 @@ ${relatedGrid([
 }
 
 // ── "IELTS score for [University]" pages (long-tail, high-intent) ────────────
+// Rich, unique per-university facts so the exam-for-uni pages aren't thin content.
+function uniFacts(c) {
+  const rows = [];
+  if (c.rank) rows.push(["World rank (QS)", "#" + c.rank]);
+  if (c.city) rows.push(["Location", esc(c.city) + ", " + esc(c.country)]);
+  if (c.type) rows.push(["Type", esc(c.type)]);
+  if (c.founded) rows.push(["Founded", String(c.founded)]);
+  if (c.acceptance) rows.push(["Acceptance rate", c.acceptance + "%"]);
+  if (c.intlPct) rows.push(["International students", c.intlPct + "%"]);
+  if (c.feeNote) rows.push(["Tuition", esc(c.feeNote)]);
+  if (c.appFee) rows.push(["Application fee", esc(c.appFee)]);
+  if (c.deadline) rows.push(["Application deadline", esc(c.deadline)]);
+  if (c.intakes && c.intakes.length) rows.push(["Intakes", esc(c.intakes.join(", "))]);
+  let out = rows.length ? `<div class="card"><h2>${esc(c.name)} — key facts</h2><table class="cmp-table"><tbody>${rows.map((r) => `<tr><td><strong>${r[0]}</strong></td><td>${r[1]}</td></tr>`).join("")}</tbody></table></div>` : "";
+  if (c.programs && c.programs.length) out += `<div class="card"><h2>Popular programmes at ${esc(c.name)}</h2><ul>${c.programs.map((p) => `<li>${esc(p)}</li>`).join("")}</ul></div>`;
+  const strengths = Array.isArray(c.strengths) ? c.strengths.join(", ") : (c.strengths || "");
+  if (strengths) out += `<div class="card"><h2>What ${esc(c.name)} is known for</h2><p>${esc(strengths)}</p></div>`;
+  if (c.scholarship) out += `<div class="card"><h2>Scholarships &amp; funding</h2><p>${esc(c.scholarship)}</p></div>`;
+  return out;
+}
+
 function examForUniPage(c) {
   if (!c || !c.id || c.ielts == null) return;
   const band = c.ielts;
@@ -1428,18 +1449,19 @@ function examForUniPage(c) {
   const bandStr = String(band);
   const bandLink = ["6", "6.5", "7", "7.5", "8"].includes(bandStr) ? `/ielts-band-${bandStr.replace(".", "-")}/` : "/ielts-band-7/";
   const title = `IELTS Score for ${esc(c.name)} — Requirement &amp; How to Get It (2026) | ${BRAND}`;
-  const desc = `What IELTS score do you need for ${c.name} (${c.country})? The typical requirement is around Band ${band} overall. See the exact target and a free plan to reach it with mock tests and an AI band checker.`;
+  const desc = `What IELTS score do you need for ${c.name} (${c.country})? Around Band ${band} overall${c.toefl ? " (≈ TOEFL " + c.toefl + ", PTE " + c.pte + ")" : ""}. Plus ${c.name}'s rank, fees, deadlines, programmes and a free plan to reach your target.`;
   const faqs = [
-    { q: `What IELTS score do I need for ${c.name}?`, a: `${c.name} typically requires around IELTS Band ${band} overall. Undergraduate courses are often 0.5 lower and some postgraduate or professional programmes higher — always confirm on the official admissions page for your course.` },
-    { q: `Does ${c.name} accept IELTS?`, a: `Yes — ${c.name} accepts IELTS Academic for admission. Many programmes also accept TOEFL iBT or PTE Academic.` },
-    { q: `How can I reach Band ${band} for free?`, a: `Take free IELTS mock tests to find your weak section, learn the strategy in the PPT lessons, and check your Writing/Speaking band with the free AI band checker.` },
+    { q: `What IELTS score do I need for ${c.name}?`, a: `${c.name} typically requires around IELTS Band ${band} overall${c.toefl ? " (equivalent to TOEFL iBT ~" + c.toefl + " or PTE ~" + c.pte + ")" : ""}. Undergraduate courses are often 0.5 lower; some postgraduate programmes ask higher — confirm on your course page.` },
+    { q: `Does ${c.name} accept TOEFL or PTE too?`, a: `Yes — ${c.name} also accepts ${c.toefl ? "TOEFL iBT (~" + c.toefl + ") and PTE Academic (~" + c.pte + ")" : "TOEFL iBT and PTE Academic"} alongside IELTS.` },
+    { q: `How can I reach Band ${band} for free?`, a: `Take free IELTS mocks to find your weak section, learn the strategy in the PPT lessons, and check your Writing/Speaking band with the free AI band checker.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/university/${c.id}/">${esc(c.name)}</a> › IELTS score</p>
-<section class="hero"><div class="badges"><span class="badge">${esc(c.country)}</span><span class="badge">Band ${band}</span><span class="badge">2026</span></div>
+<section class="hero"><div class="badges"><span class="badge">${esc(c.country)}</span>${c.rank ? `<span class="badge">QS #${c.rank}</span>` : ""}<span class="badge">IELTS ${band}</span><span class="badge">2026</span></div>
 <h1>IELTS Score for ${esc(c.name)}</h1>
-<p class="lead">To study at <strong>${esc(c.name)}</strong>${c.city ? " in " + esc(c.city) : ""}, you typically need around <strong>IELTS Band ${band}</strong> overall. Undergraduate courses may accept a little lower; competitive postgraduate programmes can ask for more.</p>
+<p class="lead">To study at <strong>${esc(c.name)}</strong>${c.city ? " in " + esc(c.city) : ""}, you typically need around <strong>IELTS Band ${band}</strong> overall${c.toefl ? ` — about <strong>TOEFL ${c.toefl}</strong> or <strong>PTE ${c.pte}</strong>` : ""}. Undergraduate courses may accept a little lower; competitive postgraduate programmes can ask for more.</p>
 <a class="cta" href="/mock-test/ielts/">▶ Take a free IELTS mock test</a></section>
+${uniFacts(c)}
 <div class="card"><h2>How to reach Band ${band}</h2><ol>
 <li><strong>Diagnose.</strong> Take a free IELTS mock to see your band in each skill.</li>
 <li><strong>Target the gap.</strong> See exactly what <a href="${bandLink}">Band ${band}</a> needs in each section.</li>
@@ -1449,35 +1471,33 @@ function examForUniPage(c) {
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `${esc(c.name)} — full profile`, href: `/university/${c.id}/` },
+  { label: `TOEFL score for ${esc(c.name)}`, href: `/toefl-for-${c.id}/` },
   { label: `How to get IELTS Band ${band}`, href: bandLink },
-  { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
   { label: "Free AI band checker", href: "/ielts-writing-checker/" },
 ])}`;
-  emit(path, head({ title, desc, path, kw: `ielts score for ${c.name.toLowerCase()}, ielts requirement ${c.name.toLowerCase()}, ${c.name.toLowerCase()} ielts, ielts band for ${c.name.toLowerCase()}, english requirement ${c.name.toLowerCase()}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: c.name, path: `/university/${c.id}/` }, { name: "IELTS score", path }])] }) + shell(inner));
+  emit(path, head({ title, desc, path, kw: `ielts score for ${c.name.toLowerCase()}, ielts requirement ${c.name.toLowerCase()}, ${c.name.toLowerCase()} ielts, ielts band for ${c.name.toLowerCase()}, english requirement ${c.name.toLowerCase()}, ${c.name.toLowerCase()} admission requirements`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: c.name, path: `/university/${c.id}/` }, { name: "IELTS score", path }])] }) + shell(inner));
 }
 
-// ── TOEFL / PTE score for [University] (converted from the IELTS requirement) ─
-const IELTS_CONV = { 6: { toefl: "60–78", pte: "50–56" }, 6.5: { toefl: "79–93", pte: "58–64" }, 7: { toefl: "94–101", pte: "65–72" }, 7.5: { toefl: "102–109", pte: "73–78" }, 8: { toefl: "110–114", pte: "79–82" } };
-const ALT_EXAMS = [{ name: "TOEFL", full: "TOEFL iBT", k: "toefl", scale: "0–120" }, { name: "PTE", full: "PTE Academic", k: "pte", scale: "10–90" }];
+// ── TOEFL / PTE score for [University] — uses the university's REAL requirement ─
+const ALT_EXAMS = [{ name: "TOEFL", full: "TOEFL iBT", k: "toefl" }, { name: "PTE", full: "PTE Academic", k: "pte" }];
 function altExamForUniPage(c, ex) {
-  if (!c || !c.id || c.ielts == null) return;
-  const conv = IELTS_CONV[Number(c.ielts)];
-  if (!conv || !conv[ex.k]) return;
-  const score = conv[ex.k];
+  if (!c || !c.id || c[ex.k] == null) return;
+  const score = c[ex.k];
   const path = `/${ex.k}-for-${c.id}/`;
   const title = `${ex.name} Score for ${esc(c.name)} — Requirement (2026) | ${BRAND}`;
-  const desc = `What ${ex.full} score do you need for ${c.name} (${c.country})? Around ${score} (equivalent to IELTS ${c.ielts}). See the target and a free plan to reach it with mock tests.`;
+  const desc = `What ${ex.full} score do you need for ${c.name} (${c.country})? Around ${ex.name} ${score}${c.ielts ? " (≈ IELTS " + c.ielts + ")" : ""}. Plus ${c.name}'s rank, fees, deadlines, programmes and a free plan to reach it.`;
   const faqs = [
-    { q: `What ${ex.name} score do I need for ${c.name}?`, a: `${c.name} typically needs about ${ex.full} ${score}, which is equivalent to IELTS ${c.ielts}. Confirm the exact figure on the official course page.` },
+    { q: `What ${ex.name} score do I need for ${c.name}?`, a: `${c.name} typically needs about ${ex.full} ${score}${c.ielts ? ", equivalent to IELTS " + c.ielts : ""}. Confirm the exact figure on the official course page.` },
     { q: `Does ${c.name} accept ${ex.name}?`, a: `Yes — ${c.name} accepts ${ex.full} alongside IELTS for English proficiency.` },
-    { q: `How do I prepare for free?`, a: `Take free ${ex.full} mock tests, learn the strategy in the PPT lessons, and practise writing/speaking with the free AI band checker.` },
+    { q: `How do I prepare for free?`, a: `Take free ${ex.full} mock tests, learn the strategy in the prep lessons, and practise writing/speaking with the free AI band checker.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/university/${c.id}/">${esc(c.name)}</a> › ${ex.name} score</p>
-<section class="hero"><div class="badges"><span class="badge">${esc(c.country)}</span><span class="badge">${ex.name} ${score}</span><span class="badge">≈ IELTS ${c.ielts}</span></div>
+<section class="hero"><div class="badges"><span class="badge">${esc(c.country)}</span>${c.rank ? `<span class="badge">QS #${c.rank}</span>` : ""}<span class="badge">${ex.name} ${score}</span>${c.ielts ? `<span class="badge">≈ IELTS ${c.ielts}</span>` : ""}</div>
 <h1>${ex.name} Score for ${esc(c.name)}</h1>
-<p class="lead">To study at <strong>${esc(c.name)}</strong> you typically need about <strong>${ex.full} ${score}</strong> — equivalent to IELTS ${c.ielts}. Here's how to get there, free.</p>
+<p class="lead">To study at <strong>${esc(c.name)}</strong>${c.city ? " in " + esc(c.city) : ""} you typically need about <strong>${ex.full} ${score}</strong>${c.ielts ? ` (equivalent to IELTS ${c.ielts})` : ""}. Here's how to get there, free.</p>
 <a class="cta" href="/mock-test/${ex.k}/">▶ Take a free ${ex.name} mock test</a></section>
+${uniFacts(c)}
 <div class="card"><h2>How to reach ${ex.name} ${score}</h2><ol>
 <li><strong>Diagnose.</strong> Take a free <a href="/mock-test/${ex.k}/">${ex.full} mock</a> to find your weak section.</li>
 <li><strong>Learn the strategy.</strong> Use the free <a href="/prep-lessons/">${ex.name} prep lessons</a>.</li>
@@ -1632,10 +1652,50 @@ ${relatedGrid([
   emit(path, head({ title, desc, path, kw: `ielts for ${cleanRole.toLowerCase()}, ielts score for ${cleanRole.toLowerCase()}, ielts requirement ${cleanRole.toLowerCase()}, ${x.slug.replace(/-/g, " ")}, oet vs ielts ${cleanRole.toLowerCase()}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `IELTS for ${cleanRole}`, path }])] }) + shell(inner));
 }
 
+function testFinderPage() {
+  const path = `/which-english-test/`;
+  const faqs = [
+    { q: "Which English test is the easiest?", a: "It depends on your strengths and destination. PTE and Duolingo are fully computer-scored and fast; IELTS has a real-person speaking test; TOEFL is the US favourite. Our free quiz recommends one based on your answers." },
+    { q: "IELTS or TOEFL — which should I take?", a: "Choose TOEFL for the USA or if you prefer an all-computer test; choose IELTS for the UK, Australia, Canada, Ireland and the widest global acceptance." },
+    { q: "Is the Duolingo English Test accepted?", a: "Yes — thousands of universities accept the Duolingo English Test. It's the cheapest and fastest option, but always confirm your specific university accepts it." },
+    { q: "Which test is best for Canada PR?", a: "For Canadian Express Entry, IRCC accepts IELTS General, CELPIP-General and PTE Core (not TOEFL). CELPIP is purpose-built for Canada." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › Which English Test?</p>
+<section class="hero"><div class="badges"><span class="badge">Free quiz</span><span class="badge">4 questions</span><span class="badge">Instant result</span></div>
+<h1>Which English Test Should I Take? IELTS vs TOEFL vs PTE vs Duolingo</h1>
+<p class="lead">Not sure whether to take IELTS, TOEFL, PTE, Duolingo or CELPIP? Answer 4 quick questions about your destination, goal and preferences and get a personalised recommendation — with the reasons why. 100% free.</p>
+<a class="cta" href="/#/which-english-test">▶ Take the free quiz</a></section>
+<div class="card"><h2>A quick comparison</h2><table class="cmp-table"><thead><tr><th>Test</th><th>Best for</th><th>Speaking</th><th>Results</th></tr></thead><tbody>
+<tr><td><strong>IELTS</strong></td><td>UK, Australia, Canada, worldwide</td><td>Real examiner</td><td>3–13 days</td></tr>
+<tr><td><strong>TOEFL iBT</strong></td><td>USA</td><td>Computer (AI+human)</td><td>4–8 days</td></tr>
+<tr><td><strong>PTE Academic</strong></td><td>Australia, fast results</td><td>Computer (AI)</td><td>~48 hours</td></tr>
+<tr><td><strong>Duolingo</strong></td><td>Cheap & fast, many universities</td><td>Computer (AI)</td><td>~2 days</td></tr>
+<tr><td><strong>CELPIP</strong></td><td>Canadian PR &amp; citizenship</td><td>Computer</td><td>4–5 days</td></tr>
+</tbody></table></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: "Take the quiz", href: "/#/which-english-test" },
+  { label: "IELTS vs TOEFL", href: "/ielts-vs-toefl/" },
+  { label: "IELTS vs PTE", href: "/ielts-vs-pte/" },
+  { label: "Free mock tests", href: "/#/exam-prep" },
+])}`;
+  emit(path, head({
+    title: `Which English Test Should I Take? IELTS vs TOEFL vs PTE vs Duolingo — Free Quiz | ${BRAND}`,
+    desc: `Free quiz: answer 4 questions and get a personalised recommendation — IELTS, TOEFL, PTE, Duolingo or CELPIP — for your country, study/PR goal and preferences.`,
+    path, kw: "which english test should i take, ielts or toefl, ielts vs toefl vs pte, which english test is easiest, best english test for study abroad, which english test for canada pr, english test recommender",
+    jsonLdBlocks: [
+      { "@context": "https://schema.org", "@type": "WebApplication", name: "Which English Test Should I Take?", applicationCategory: "EducationalApplication", operatingSystem: "Web", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },
+      faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Which English Test?", path }]),
+    ],
+  }) + shell(inner));
+}
+
 Object.keys(LANG_SEO).forEach(languageLandingPage);
 prepLessonsPage();
 bandCheckerPage("writing");
 bandCheckerPage("speaking");
+testFinderPage();
 vocabularyPages();
 BANDS.forEach(bandPage);
 cityGuidePages();
