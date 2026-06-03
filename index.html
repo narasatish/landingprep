@@ -10,14 +10,28 @@
     // Capture global errors so a single uncaught error can't silently white-screen the app.
     window.__lpErrors = [];
     function note(m) { try { window.__lpErrors.push(String(m).slice(0, 300)); if (window.gtag) window.gtag('event', 'exception', { description: String(m).slice(0, 150), fatal: false }); } catch (e) {} }
-    window.addEventListener('error', function (e) { note((e && e.message) || 'error'); }, true);
-    window.addEventListener('unhandledrejection', function (e) { note((e && e.reason && (e.reason.message || e.reason)) || 'rejection'); });
+    // Report real errors to the backend so the team/agent is alerted the instant a page or
+    // tool breaks for a visitor. Throttled (<=8/session) + deduped so it never floods.
+    var _seen = {}, _sent = 0;
+    function report(message, stack, kind) {
+      try {
+        if (_sent >= 8) return; var k = String(message || '').slice(0, 80); if (!k || _seen[k]) return; _seen[k] = 1; _sent++;
+        var base = (window.LP_API_BASE || '');
+        var body = JSON.stringify({ message: String(message || '').slice(0, 500), stack: String(stack || '').slice(0, 1500), url: location.href, kind: kind || 'error' });
+        if (navigator.sendBeacon) navigator.sendBeacon(base + '/api/clienterror', new Blob([body], { type: 'application/json' }));
+        else fetch(base + '/api/clienterror', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body, keepalive: true }).catch(function () {});
+      } catch (e) {}
+    }
+    window.__lpReport = report; // the React error boundary calls this too
+    window.addEventListener('error', function (e) { var m = (e && e.message) || 'error'; note(m); report(m, e && e.error && e.error.stack, 'window.error'); }, true);
+    window.addEventListener('unhandledrejection', function (e) { var r = e && e.reason; var m = (r && (r.message || r)) || 'rejection'; note(m); report(m, r && r.stack, 'unhandledrejection'); });
     // Boot watchdog: if React hasn't mounted anything into #root within 12s (CDN down,
     // parse error, etc.), replace the blank screen with a friendly recovery card.
     window.addEventListener('load', function () {
       setTimeout(function () {
         var root = document.getElementById('root');
         if (!root || root.childNodes.length > 0) return; // app mounted — all good
+        report('App failed to mount within 12s (blank screen shown)', (window.__lpErrors || []).join(' | '), 'boot-timeout');
         root.innerHTML = '<div style="max-width:460px;margin:18vh auto;padding:28px;text-align:center;font-family:system-ui,Arial,sans-serif;color:#1f2937">'
           + '<div style="font-size:42px">📶</div>'
           + '<h1 style="font-size:22px;margin:12px 0 6px">Having trouble loading</h1>'
@@ -260,7 +274,7 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=151" />
+  <link rel="stylesheet" href="theme.css?v=152" />
 </head>
 <body>
   <div id="root"></div>
@@ -279,81 +293,81 @@
   </script>
 
   <!-- Data layer -->
-  <script src="data.js?v=151"></script>
-  <script src="data-questions.js?v=151"></script>
-  <script src="gemini-tts.js?v=151"></script>
-  <script src="seo.js?v=151"></script>
-  <script src="test-catalog.js?v=151"></script>
-  <script src="normalize-test.js?v=151"></script>
-  <script src="learning-hub-catalog.js?v=151"></script>
-  <script src="visual-renderer.js?v=151"></script>
+  <script src="data.js?v=152"></script>
+  <script src="data-questions.js?v=152"></script>
+  <script src="gemini-tts.js?v=152"></script>
+  <script src="seo.js?v=152"></script>
+  <script src="test-catalog.js?v=152"></script>
+  <script src="normalize-test.js?v=152"></script>
+  <script src="learning-hub-catalog.js?v=152"></script>
+  <script src="visual-renderer.js?v=152"></script>
 
   <!-- Auth + AI Tutor + Chatbot (must load before screens) -->
-  <script src="auth.js?v=151"></script>
-  <script src="reminders.js?v=151"></script>
-  <script src="md.js?v=151"></script>
-  <script src="ai-tutor.js?v=151"></script>
-  <script src="chatbot-widget.js?v=151"></script>
+  <script src="auth.js?v=152"></script>
+  <script src="reminders.js?v=152"></script>
+  <script src="md.js?v=152"></script>
+  <script src="ai-tutor.js?v=152"></script>
+  <script src="chatbot-widget.js?v=152"></script>
 
   <!-- Screens -->
-  <script src="screens/pte-renderer.js?v=151"></script>
-  <script src="screens/pte-listening-renderer.js?v=151"></script>
-  <script src="screens/pte-sw-renderer.js?v=151"></script>
-  <script src="screens/celpip-renderer.js?v=151"></script>
-  <script src="screens/home.js?v=151"></script>
-  <script src="screens/guide.js?v=151"></script>
-  <script src="screens/mock-test.js?v=151"></script>
-  <script src="screens/learning-club.js?v=151"></script>
-  <script src="screens/speaking-agent.js?v=151"></script>
-  <script src="screens/writing-agent.js?v=151"></script>
-  <script src="screens/error-log.js?v=151"></script>
-  <script src="screens/progress.js?v=151"></script>
-  <script src="screens/exam-prep.js?v=151"></script>
-  <script src="college-data.js?v=151"></script>
-  <script src="screens/college-tools.js?v=151"></script>
-  <script src="screens/sop-tool.js?v=151"></script>
-  <script src="screens/calculators.js?v=151"></script>
-  <script src="scholarship-data.js?v=151"></script>
-  <script src="screens/scholarship-tool.js?v=151"></script>
-  <script src="country-data.js?v=151"></script>
-  <script src="live-data.js?v=151"></script>
-  <script src="firebase-config.js?v=151"></script>
-  <script src="country-landmarks.js?v=151"></script>
-  <script src="screens/destinations.js?v=151"></script>
-  <script src="screens/counsellor.js?v=151"></script>
-  <script src="screens/profile-eval.js?v=151"></script>
-  <script src="screens/compare.js?v=151"></script>
-  <script src="screens/apply-partners.js?v=151"></script>
-  <script src="screens/visa-interview.js?v=151"></script>
-  <script src="screens/onboarding.js?v=151"></script>
-  <script src="screens/community.js?v=151"></script>
-  <script src="screens/leaderboard.js?v=151"></script>
-  <script src="screens/tools.js?v=151"></script>
-  <script src="screens/colleges.js?v=151"></script>
-  <script src="screens/study-planner.js?v=151"></script>
-  <script src="blog-data.js?v=151"></script>
-  <script src="seo-pages.js?v=151"></script>
+  <script src="screens/pte-renderer.js?v=152"></script>
+  <script src="screens/pte-listening-renderer.js?v=152"></script>
+  <script src="screens/pte-sw-renderer.js?v=152"></script>
+  <script src="screens/celpip-renderer.js?v=152"></script>
+  <script src="screens/home.js?v=152"></script>
+  <script src="screens/guide.js?v=152"></script>
+  <script src="screens/mock-test.js?v=152"></script>
+  <script src="screens/learning-club.js?v=152"></script>
+  <script src="screens/speaking-agent.js?v=152"></script>
+  <script src="screens/writing-agent.js?v=152"></script>
+  <script src="screens/error-log.js?v=152"></script>
+  <script src="screens/progress.js?v=152"></script>
+  <script src="screens/exam-prep.js?v=152"></script>
+  <script src="college-data.js?v=152"></script>
+  <script src="screens/college-tools.js?v=152"></script>
+  <script src="screens/sop-tool.js?v=152"></script>
+  <script src="screens/calculators.js?v=152"></script>
+  <script src="scholarship-data.js?v=152"></script>
+  <script src="screens/scholarship-tool.js?v=152"></script>
+  <script src="country-data.js?v=152"></script>
+  <script src="live-data.js?v=152"></script>
+  <script src="firebase-config.js?v=152"></script>
+  <script src="country-landmarks.js?v=152"></script>
+  <script src="screens/destinations.js?v=152"></script>
+  <script src="screens/counsellor.js?v=152"></script>
+  <script src="screens/profile-eval.js?v=152"></script>
+  <script src="screens/compare.js?v=152"></script>
+  <script src="screens/apply-partners.js?v=152"></script>
+  <script src="screens/visa-interview.js?v=152"></script>
+  <script src="screens/onboarding.js?v=152"></script>
+  <script src="screens/community.js?v=152"></script>
+  <script src="screens/leaderboard.js?v=152"></script>
+  <script src="screens/tools.js?v=152"></script>
+  <script src="screens/colleges.js?v=152"></script>
+  <script src="screens/study-planner.js?v=152"></script>
+  <script src="blog-data.js?v=152"></script>
+  <script src="seo-pages.js?v=152"></script>
 
   <!-- App router (must be last) -->
-  <script src="language-data.js?v=151"></script>
-  <script src="screens/languages.js?v=151"></script>
-  <script src="screens/lang-speaking.js?v=151"></script>
-  <script src="lang-mock-data.js?v=151"></script>
-  <script src="screens/lang-mock.js?v=151"></script>
-  <script src="slide-decks-data.js?v=151"></script>
-  <script src="screens/slide-deck.js?v=151"></script>
-  <script src="screens/learn-hub.js?v=151"></script>
-  <script src="gamify.js?v=151"></script>
-  <script src="share-card.js?v=151"></script>
-  <script src="vocab-data.js?v=151"></script>
-  <script src="lang-stories-data.js?v=151"></script>
-  <script src="sa-extra-data.js?v=151"></script>
-  <script src="screens/vocabulary.js?v=151"></script>
-  <script src="screens/relocate.js?v=151"></script>
-  <script src="screens/test-finder.js?v=151"></script>
-  <script src="screens/achievements.js?v=151"></script>
-  <script src="screens/band-checker.js?v=151"></script>
-  <script src="app.js?v=151"></script>
+  <script src="language-data.js?v=152"></script>
+  <script src="screens/languages.js?v=152"></script>
+  <script src="screens/lang-speaking.js?v=152"></script>
+  <script src="lang-mock-data.js?v=152"></script>
+  <script src="screens/lang-mock.js?v=152"></script>
+  <script src="slide-decks-data.js?v=152"></script>
+  <script src="screens/slide-deck.js?v=152"></script>
+  <script src="screens/learn-hub.js?v=152"></script>
+  <script src="gamify.js?v=152"></script>
+  <script src="share-card.js?v=152"></script>
+  <script src="vocab-data.js?v=152"></script>
+  <script src="lang-stories-data.js?v=152"></script>
+  <script src="sa-extra-data.js?v=152"></script>
+  <script src="screens/vocabulary.js?v=152"></script>
+  <script src="screens/relocate.js?v=152"></script>
+  <script src="screens/test-finder.js?v=152"></script>
+  <script src="screens/achievements.js?v=152"></script>
+  <script src="screens/band-checker.js?v=152"></script>
+  <script src="app.js?v=152"></script>
 </body>
 </html>
 

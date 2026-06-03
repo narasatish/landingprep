@@ -1,0 +1,23 @@
+name: Production health check
+
+# External uptime + content check of the LIVE site every 15 minutes. If anything is
+# down, returns a 500, or a key page/tool/content stops serving, this job fails and
+# GitHub emails the repo owner. Complements the in-app monitor (which also emails you).
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 minutes (UTC)
+  workflow_dispatch: {}       # allow manual run from the Actions tab
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Synthetic health check
+        run: node tools/health-monitor.mjs
+        env:
+          BASE: ${{ vars.HEALTH_BASE_URL || 'https://landingprep.com' }}

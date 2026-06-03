@@ -740,6 +740,94 @@ app.post("/api/leaderboard/submit", (req, res) => {
   res.json({ ok: true });
 });
 
+// ── Production health monitoring + alerting ────────────────────────────────────
+// Captures real client-side errors AND runs synthetic checks of key pages/APIs, then
+// alerts you (email + optional webhook) — throttled so one issue can't spam you. Gives
+// the "we know instantly when any page or tool breaks" guarantee.
+const ALERT_TO = process.env.ALERT_EMAIL || SMTP.user;
+const ALERT_WEBHOOK = process.env.ALERT_WEBHOOK_URL || ""; // Slack/Discord/Teams incoming webhook
+const _escH = (s) => String(s == null ? "" : s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+const MONITOR = { clientErrors: [], lastRun: null, alertedAt: new Map() };
+async function sendAlert(key, subject, body) {
+  const now = Date.now();
+  if (now - (MONITOR.alertedAt.get(key) || 0) < 30 * 60 * 1000) return; // dedupe same issue for 30 min
+  MONITOR.alertedAt.set(key, now);
+  console.error("[ALERT] " + subject + " — " + String(body).slice(0, 300));
+  if (ALERT_WEBHOOK && typeof fetch === "function") {
+    try { fetch(ALERT_WEBHOOK, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text: `🚨 LandingPrep — ${subject}\n${String(body).slice(0, 1500)}` }) }).catch(() => {}); } catch (e) {}
+  }
+  try {
+    await sendMail(ALERT_TO, "🚨 LandingPrep alert: " + subject,
+      `<h2 style="font-family:system-ui">🚨 ${_escH(subject)}</h2>` +
+      `<pre style="font-family:monospace;font-size:13px;white-space:pre-wrap;background:#f8fafc;padding:14px;border-radius:8px">${_escH(body)}</pre>` +
+      `<p style="font-family:system-ui;color:#64748b;font-size:13px">Sent automatically by the LandingPrep health monitor. Reply to this email if you need to investigate.</p>`);
+  } catch (e) {}
+}
+
+// Real-user error capture: the frontend POSTs here whenever a JS / React render error
+// fires, so we hear about breakage the moment a visitor hits it.
+app.post("/api/clienterror", (req, res) => {
+  const b = req.body || {};
+  const ev = {
+    message: String(b.message || "").slice(0, 500), url: String(b.url || "").slice(0, 300),
+    stack: String(b.stack || "").slice(0, 1500), kind: String(b.kind || "error").slice(0, 30),
+    ua: String(req.headers["user-agent"] || "").slice(0, 200), ts: new Date().toISOString(),
+  };
+  if (!ev.message) return res.json({ ok: true });
+  MONITOR.clientErrors.push(ev);
+  if (MONITOR.clientErrors.length > 300) MONITOR.clientErrors.shift();
+  sendAlert("client:" + ev.message.slice(0, 80), "Client error — " + ev.message.slice(0, 120),
+    `Page: ${ev.url}\nType: ${ev.kind}\nUA: ${ev.ua}\n\n${ev.stack}`);
+  res.json({ ok: true });
+});
+
+// Synthetic monitor: fetch key public pages / APIs / exam content and check HTTP status
+// + a content marker + latency. Runs on a timer (the keep-warm ping keeps the dyno awake
+// so this runs continuously in production). Catches outages, 500s, blank pages, slow loads.
+const MON_TARGETS = [
+  { path: "/", marker: "LandingPrep" },
+  { path: "/api/health", marker: '"status":"ok"' },
+  { path: "/which-english-test/", marker: "English Test" },
+  { path: "/explore/", marker: "Explore" },
+  { path: "/ielts-band-7/", marker: "IELTS" },
+  { path: "/content/pte/listening/test-001.json", marker: "questionType" },
+  { path: "/content/ielts/reading/test-001.json", marker: "passages" },
+  { path: "/content/celpip/listening/test-001.json", marker: "Problem Solving" },
+  { path: "/sitemap.xml", marker: "<urlset" },
+];
+async function runMonitor() {
+  const base = (process.env.MONITOR_BASE || process.env.RENDER_EXTERNAL_URL || process.env.SELF_PING_URL || ("http://localhost:" + PORT)).replace(/\/$/, "");
+  const results = [];
+  for (const tgt of MON_TARGETS) {
+    const t0 = Date.now();
+    try {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => { try { ctrl.abort(); } catch (e) {} }, 20000);
+      const r = await fetch(base + tgt.path, { headers: { "x-monitor": "1" }, signal: ctrl.signal });
+      const text = await r.text().catch(() => "");
+      clearTimeout(timer);
+      const ms = Date.now() - t0;
+      const ok = r.ok && (!tgt.marker || text.includes(tgt.marker));
+      results.push({ path: tgt.path, status: r.status, ms, ok });
+      if (!ok) sendAlert("monitor:" + tgt.path, "Health check FAILED: " + tgt.path, `HTTP ${r.status}, ${ms}ms, marker ${tgt.marker ? (text.includes(tgt.marker) ? "present" : "MISSING") : "n/a"} @ ${base}`);
+      else if (ms > 9000) sendAlert("slow:" + tgt.path, "Slow page: " + tgt.path, `${ms}ms (HTTP ${r.status})`);
+    } catch (e) {
+      results.push({ path: tgt.path, ok: false, error: e.message });
+      sendAlert("monitor:" + tgt.path, "Page UNREACHABLE: " + tgt.path, String(e.message) + " @ " + base);
+    }
+  }
+  MONITOR.lastRun = { ts: new Date().toISOString(), base, allOk: results.every((r) => r.ok), results };
+  return MONITOR.lastRun;
+}
+setTimeout(() => { runMonitor().catch(() => {}); }, 90 * 1000).unref();      // first run ~90s after boot
+setInterval(() => { runMonitor().catch(() => {}); }, 10 * 60 * 1000).unref(); // then every 10 minutes
+
+// Status feed for a dashboard / the AI fix-agent. GET /api/health/report?key=ADMIN_SECRET
+app.get("/api/health/report", (req, res) => {
+  if (ADMIN_SECRET && req.query.key !== ADMIN_SECRET && req.headers["x-admin-key"] !== ADMIN_SECRET) return res.status(403).json({ error: "Forbidden — pass ?key=ADMIN_SECRET" });
+  res.json({ lastRun: MONITOR.lastRun, clientErrorCount: MONITOR.clientErrors.length, recentClientErrors: MONITOR.clientErrors.slice(-50) });
+});
+
 // ── Resilience: unknown API routes + central error handler ─────────────────────
 // Any /api/* path that no route matched → clean JSON 404 (never an HTML error page).
 app.use("/api", (req, res) => res.status(404).json({ error: "Not found", path: req.path }));

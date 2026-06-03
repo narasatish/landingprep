@@ -407,6 +407,8 @@ class LPErrorBoundary extends React.Component {
   componentDidCatch(err, info) {
     try { if (window.gtag) window.gtag("event", "exception", { description: ("render:" + (err && err.message || err)).slice(0, 150), fatal: false }); } catch (e) {}
     try { console.error("[LandingPrep] render error:", err, info && info.componentStack); } catch (e) {}
+    // Alert the backend monitor so a broken screen/tool reaches the team/agent immediately.
+    try { if (window.__lpReport) window.__lpReport("render: " + (err && err.message || err), (err && err.stack) || (info && info.componentStack), "react-render"); } catch (e) {}
   }
   render() {
     if (!this.state.err) return this.props.children;

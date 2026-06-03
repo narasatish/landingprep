@@ -432,6 +432,10 @@ class LPErrorBoundary extends React.Component {
       console.error("[LandingPrep] render error:", err, info && info.componentStack);
     } catch (e) {
     }
+    try {
+      if (window.__lpReport) window.__lpReport("render: " + (err && err.message || err), err && err.stack || info && info.componentStack, "react-render");
+    } catch (e) {
+    }
   }
   render() {
     if (!this.state.err) return this.props.children;
