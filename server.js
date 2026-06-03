@@ -117,6 +117,12 @@ const TTS_RPM = parseInt(process.env.TTS_RPM || "3", 10);    // gemini-2.5-flash
 const TTS_RPD = parseInt(process.env.TTS_RPD || "15", 10);   // …and ~15 req/day (account-wide)
 const AI_RPM  = parseInt(process.env.AI_RPM  || "10", 10);   // gemini-2.5-flash free: ~10 req/min
 const AI_RPD  = parseInt(process.env.AI_RPD  || "240", 10);  // …and a conservative daily budget
+
+// ── Defense-in-depth: community data size caps ──────────────────────────────────
+// Prevent unbounded growth and resource exhaustion in the file-backed store.
+const MAX_COMMUNITY_QUESTIONS = parseInt(process.env.MAX_COMMUNITY_QUESTIONS || "500", 10);  // cap on total questions
+const MAX_ANSWERS_PER_Q = parseInt(process.env.MAX_ANSWERS_PER_Q || "50", 10);               // cap answers per question
+const MAX_COMMUNITY_LEADERBOARD = parseInt(process.env.MAX_COMMUNITY_LEADERBOARD || "2000", 10); // cap leaderboard entries
 function globalCap({ perMin, perDay, label }) {
   let minCount = 0, minReset = Date.now() + 60 * 1000;
   let dayCount = 0, dayReset = Date.now() + 24 * 60 * 60 * 1000;
@@ -674,7 +680,16 @@ let commTimer = null;
 function persistComm() {
   clearTimeout(commTimer);
   commTimer = setTimeout(() => {
-    try { fs.mkdirSync(path.dirname(COMM_PATH), { recursive: true }); fs.writeFileSync(COMM_PATH, JSON.stringify(COMM)); }
+    try {
+      // Ensure data/ directory exists
+      const dataDir = path.dirname(COMM_PATH);
+      fs.mkdirSync(dataDir, { recursive: true });
+      // Atomic write: write to temp file, then rename. Prevents partial-write corruption on crash.
+      const tempPath = COMM_PATH + ".tmp";
+      const json = JSON.stringify(COMM);
+      fs.writeFileSync(tempPath, json, "utf8");
+      fs.renameSync(tempPath, COMM_PATH);
+    }
     catch (e) { console.warn("[community] persist failed:", e.message); }
   }, 200);
 }
@@ -688,30 +703,87 @@ app.get("/api/community", (_req, res) => {
   res.json({ ok: true, questions: list });
 });
 app.post("/api/community/question", (req, res) => {
+  // Check if we've reached max questions
+  if ((COMM.questions && COMM.questions.length) >= MAX_COMMUNITY_QUESTIONS) {
+    return res.status(429).json({ error: `Community has reached maximum ${MAX_COMMUNITY_QUESTIONS} questions. Please try again later.` });
+  }
+
   const title = clean(req.body && req.body.title, 140);
   const body = clean(req.body && req.body.body, 2000);
   if (title.length < 8) return res.status(400).json({ error: "Please write a clearer question title (8+ chars)." });
-  const q = { id: newId(), title, body, country: clean(req.body && req.body.country, 40) || "Multiple", tag: clean(req.body && req.body.tag, 30) || "General", author: clean(req.body && req.body.author, 40) || "Anonymous", ts: Date.now(), votes: 0, answers: [] };
+
+  const author = clean(req.body && req.body.author, 40) || "Anonymous";
+  if (author.length > 40) {
+    return res.status(400).json({ error: "Author name is too long (maximum 40 characters)." });
+  }
+
+  const q = {
+    id: newId(),
+    title,
+    body,
+    country: clean(req.body && req.body.country, 40) || "Multiple",
+    tag: clean(req.body && req.body.tag, 30) || "General",
+    author,
+    ts: Date.now(),
+    votes: 0,
+    answers: []
+  };
   COMM.questions.unshift(q);
-  COMM.questions = COMM.questions.slice(0, 500);
+  COMM.questions = COMM.questions.slice(0, MAX_COMMUNITY_QUESTIONS);
   persistComm();
   res.json({ ok: true, question: q });
 });
 app.post("/api/community/answer", (req, res) => {
-  const q = COMM.questions.find((x) => x.id === (req.body && req.body.questionId));
+  // Validate questionId exists and is a non-empty string
+  const questionId = req.body && req.body.questionId;
+  if (!questionId || typeof questionId !== "string" || questionId.trim().length === 0) {
+    return res.status(400).json({ error: "Invalid question ID." });
+  }
+  const q = COMM.questions.find((x) => x.id === questionId);
   if (!q) return res.status(404).json({ error: "Question not found." });
-  const body = clean(req.body && req.body.body, 2000);
-  if (body.length < 4) return res.status(400).json({ error: "Answer is too short." });
-  const a = { id: newId(), body, author: clean(req.body && req.body.author, 40) || "Anonymous", ts: Date.now(), votes: 0 };
+
+  // Check if question already has max answers
+  const answerCount = (q.answers && q.answers.length) || 0;
+  if (answerCount >= MAX_ANSWERS_PER_Q) {
+    return res.status(429).json({ error: `This question already has ${MAX_ANSWERS_PER_Q} answers. No more can be added.` });
+  }
+
+  // Validate and sanitize answer body
+  const body = clean(req.body && req.body.body, 4000);
+  if (body.length < 4) return res.status(400).json({ error: "Answer is too short (minimum 4 characters)." });
+
+  // Validate and sanitize author name
+  const author = clean(req.body && req.body.author, 40) || "Anonymous";
+  if (author.length > 40) {
+    return res.status(400).json({ error: "Author name is too long (maximum 40 characters)." });
+  }
+
+  const a = { id: newId(), body, author, ts: Date.now(), votes: 0 };
   q.answers = q.answers || []; q.answers.push(a);
   persistComm();
   res.json({ ok: true, answer: a });
 });
 app.post("/api/community/vote", (req, res) => {
-  const q = COMM.questions.find((x) => x.id === (req.body && req.body.questionId));
+  // Validate questionId
+  const questionId = req.body && req.body.questionId;
+  if (!questionId || typeof questionId !== "string" || questionId.trim().length === 0) {
+    return res.status(400).json({ error: "Invalid question ID." });
+  }
+  const q = COMM.questions.find((x) => x.id === questionId);
   if (!q) return res.status(404).json({ error: "Question not found." });
-  if (req.body.answerId) { const a = (q.answers || []).find((x) => x.id === req.body.answerId); if (a) a.votes = (a.votes || 0) + 1; }
-  else q.votes = (q.votes || 0) + 1;
+
+  // Vote on question or answer (if answerId is provided and valid)
+  if (req.body.answerId) {
+    const answerId = req.body.answerId;
+    if (typeof answerId !== "string" || answerId.trim().length === 0) {
+      return res.status(400).json({ error: "Invalid answer ID." });
+    }
+    const a = (q.answers || []).find((x) => x.id === answerId);
+    if (!a) return res.status(404).json({ error: "Answer not found." });
+    a.votes = (a.votes || 0) + 1;
+  } else {
+    q.votes = (q.votes || 0) + 1;
+  }
   persistComm();
   res.json({ ok: true });
 });
@@ -735,7 +807,7 @@ app.post("/api/leaderboard/submit", (req, res) => {
   const existing = COMM.leaderboard.find((e) => (e.name + "|" + e.exam).toLowerCase() === key);
   if (existing) { if (pct > (existing.pct || 0)) { existing.pct = pct; existing.scoreLabel = scoreLabel; existing.ts = Date.now(); } }
   else COMM.leaderboard.push({ id: newId(), name, exam, pct, scoreLabel, ts: Date.now() });
-  COMM.leaderboard = COMM.leaderboard.slice(0, 2000);
+  COMM.leaderboard = COMM.leaderboard.slice(0, MAX_COMMUNITY_LEADERBOARD);
   persistComm();
   res.json({ ok: true });
 });
@@ -781,18 +853,50 @@ app.post("/api/clienterror", (req, res) => {
   res.json({ ok: true });
 });
 
+// ── Defense-in-depth: monitor base URL allowlist ──────────────────────────────
+// Prevent monitoring from being hijacked to scan internal/paid endpoints by validating
+// the resolved base URL against an allowlist. Falls back to localhost if validation fails.
+const MONITOR_HOST_ALLOWLIST = ["landingprep.com", "www.landingprep.com", "localhost", "127.0.0.1"];
+function validateMonitorBase(base) {
+  if (!base) return "http://localhost:" + PORT;
+  try {
+    const parsed = new url.URL(base);
+    // Must be http or https
+    if (!["http:", "https:"].includes(parsed.protocol)) {
+      console.warn("[monitor] rejecting non-http(s) base:", base);
+      return "http://localhost:" + PORT;
+    }
+    // Check if hostname matches allowlist (exact match or *.onrender.com)
+    const host = parsed.hostname || "";
+    const isAllowed = MONITOR_HOST_ALLOWLIST.includes(host) ||
+                      /^[\w-]+\.onrender\.com$/.test(host) ||
+                      host === "localhost" ||
+                      host === "127.0.0.1";
+    if (!isAllowed) {
+      console.warn("[monitor] rejecting unexpected host:", host, "— allowed:", MONITOR_HOST_ALLOWLIST.join(", "), "+ *.onrender.com");
+      return "http://localhost:" + PORT;
+    }
+    return base;
+  } catch (e) {
+    console.warn("[monitor] invalid URL:", base, "—", e.message);
+    return "http://localhost:" + PORT;
+  }
+}
+
 // Synthetic monitor: fetch key public pages / APIs / exam content and check HTTP status
 // + a content marker + latency. Runs on a timer (the keep-warm ping keeps the dyno awake
 // so this runs continuously in production). Catches outages, 500s, blank pages, slow loads.
+// IMPORTANT: All paths are static/content/health — NEVER /api/ai-tutor, /api/tts, or any endpoint
+// that burns Gemini free-tier quota.
 const MON_TARGETS = [
   { path: "/", marker: "LandingPrep" },
   { path: "/api/health", marker: '"status":"ok"' },
   { path: "/which-english-test/", marker: "English Test" },
   { path: "/explore/", marker: "Explore" },
   { path: "/ielts-band-7/", marker: "IELTS" },
-  { path: "/ielts-writing-checker/", marker: "Writing" },   // marquee AI tool
-  { path: "/ielts-speaking-checker/", marker: "Speaking" }, // marquee AI tool
-  { path: "/mock-test/ielts/", marker: "IELTS" },           // exam runner entry
+  { path: "/ielts-writing-checker/", marker: "Writing" },   // static page (AI tool frontend, not backend call)
+  { path: "/ielts-speaking-checker/", marker: "Speaking" }, // static page (AI tool frontend, not backend call)
+  { path: "/mock-test/ielts/", marker: "IELTS" },           // exam runner entry (static)
   { path: "/content/pte/listening/test-001.json", marker: "questionType" },
   { path: "/content/ielts/reading/test-001.json", marker: "passages" },
   { path: "/content/celpip/listening/test-001.json", marker: "Problem Solving" },
@@ -800,7 +904,9 @@ const MON_TARGETS = [
   { path: "/sitemap.xml", marker: "<urlset" },
 ];
 async function runMonitor() {
-  const base = (process.env.MONITOR_BASE || process.env.RENDER_EXTERNAL_URL || process.env.SELF_PING_URL || ("http://localhost:" + PORT)).replace(/\/$/, "");
+  // Resolve and validate monitor base URL against allowlist
+  const raw = process.env.MONITOR_BASE || process.env.RENDER_EXTERNAL_URL || process.env.SELF_PING_URL || ("http://localhost:" + PORT);
+  const base = validateMonitorBase(raw).replace(/\/$/, "");
   const results = [];
   for (const tgt of MON_TARGETS) {
     const t0 = Date.now();

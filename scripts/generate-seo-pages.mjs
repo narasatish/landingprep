@@ -142,16 +142,16 @@ const ELIGIBILITY = {
 // ── Free tools (standalone SEO + link to in-app tools) ──────────────────────
 const TOOLS = {
   "ielts-band-score-calculator": { title: "IELTS Band Score Calculator", exam: "ielts",
-    kw: "ielts band score calculator, ielts score calculator, calculate ielts band, ielts overall band",
+    kw: "ielts band score calculator free, ielts score calculator online, calculate ielts band from raw score, ielts overall band score calculator, what is my ielts band",
     lead: "Convert your raw IELTS Listening and Reading answers into the official 0–9 band score and get your overall band in seconds." },
   "english-test-score-converter": { title: "English Test Score Converter (IELTS ↔ TOEFL ↔ PTE ↔ CEFR)", exam: "ielts",
-    kw: "ielts to toefl, toefl to ielts, pte to ielts, ielts to pte conversion, cefr level converter, english score converter",
+    kw: "ielts to toefl converter, toefl to ielts score conversion, pte to ielts equivalency, ielts to pte converter free, cefr level calculator, english test score equivalency",
     lead: "Instantly convert between IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo and CEFR levels with one free tool." },
   "university-eligibility-checker": { title: "Study Abroad Eligibility Checker", exam: "ielts",
-    kw: "study abroad eligibility, university english requirement, am i eligible to study abroad, english score for university",
+    kw: "study abroad eligibility checker, am i eligible to study abroad free, university english requirement checker, visa requirements by country, study abroad requirements by exam score",
     lead: "Enter your English-test score and target country to see whether you meet typical university and visa requirements." },
   "reading-speed-test": { title: "Reading Speed Test (Words Per Minute)", exam: "ielts",
-    kw: "reading speed test, words per minute test, improve reading speed, wpm reading test, ielts reading speed",
+    kw: "reading speed test online free, words per minute test, improve reading speed ielts, wpm reading practice, ielts reading speed time management",
     lead: "Measure your reading speed in words per minute and build the pace you need to finish IELTS, TOEFL and GRE reading on time." },
 };
 
@@ -276,7 +276,7 @@ function mockPage(id) {
   const path = `/mock-test/${id}/`;
   const title = `Free ${e.name} Mock Test 2026 — Full-Length Practice Online | ${BRAND}`;
   const desc = `Take a free full-length ${e.name} mock test online with real exam timing, ${e.sections} sections and instant scoring. No signup, no payment — built for students in India and worldwide.`;
-  const kw = `free ${e.short.toLowerCase()} mock test, ${e.short.toLowerCase()} practice test, ${e.name} mock test 2026, free ${e.short.toLowerCase()} test online, ${e.short.toLowerCase()} sample test, ${e.short.toLowerCase()} full test free`;
+  const kw = `free ${e.short.toLowerCase()} mock test 2026, ${e.short.toLowerCase()} mock test online no signup, free ${e.short.toLowerCase()} practice test for indian students, ${e.name} mock test with answers, ${e.short.toLowerCase()} sample test free, ${e.short.toLowerCase()} full test india`;
   const faqs = [
     { q: `Is this ${e.name} mock test really free?`, a: `Yes. Every ${e.name} mock test on ${BRAND} is 100% free with no signup, no credit card and no hidden paywall.` },
     { q: `Does the mock test match the real ${e.name}?`, a: `It mirrors the official ${e.name} format, timing and question types across ${e.sections}, scored on the ${e.score} scale.` },
@@ -324,7 +324,7 @@ function practicePage(id) {
   const path = `/practice/${id}/`;
   const title = `${e.name} Practice Test Online — Free Section Practice 2026 | ${BRAND}`;
   const desc = `Free ${e.name} practice tests online: drill each section (${e.sections}) with answers, explanations and AI feedback. No signup. Perfect for ${e.for}.`;
-  const kw = `${e.short.toLowerCase()} practice test, ${e.short.toLowerCase()} practice online free, ${e.name} sample questions, ${e.short.toLowerCase()} section practice, free ${e.short.toLowerCase()} preparation`;
+  const kw = `${e.short.toLowerCase()} practice test online free, ${e.short.toLowerCase()} section practice questions with answers, free ${e.short.toLowerCase()} preparation for indian students, ${e.name} sample questions, ${e.short.toLowerCase()} listening reading writing speaking practice`;
   const faqs = [
     { q: `How can I practise ${e.short} for free?`, a: `Open ${BRAND}, pick ${e.name}, and choose a full mock or a single section. Everything is free with instant feedback.` },
     { q: `Which ${e.short} sections can I practise?`, a: `All of them: ${e.sections}. Each section can be practised on its own or as part of a full test.` },
@@ -491,7 +491,7 @@ function countryUniPage(id) {
   const path = `/study-abroad/top-universities-in-${id}/`;
   const title = `Top Universities in ${d.name} for International Students 2026 — Fees, IELTS & Intakes | ${BRAND}`;
   const desc = `Top universities in ${d.name} for Master's & MBA: IELTS ${d.ielts}, tuition ${d.fee}, intakes ${d.intake}. Free college predictor, score requirements & admission process.`;
-  const kw = `top universities in ${d.name.toLowerCase()}, study in ${d.name.toLowerCase()}, ms in ${d.name.toLowerCase()}, ${d.name.toLowerCase()} university fees, ${d.name.toLowerCase()} ielts requirement, best colleges in ${d.name.toLowerCase()} for international students, ${d.name.toLowerCase()} admission process`;
+  const kw = `top universities in ${d.name.toLowerCase()}, study in ${d.name.toLowerCase()} for indian students, best universities for ms in ${d.name.toLowerCase()}, ${d.name.toLowerCase()} university fees for international students, ${d.name.toLowerCase()} ielts requirement, universities in ${d.name.toLowerCase()} admission process free, cheapest universities in ${d.name.toLowerCase()}`;
   const ciFaq = COUNTRY_DATA.find((x) => x.id === id);
   const faqs = [
     { q: `What IELTS score do I need for universities in ${d.name}?`, a: `Most universities in ${d.name} require IELTS ${d.ielts} overall for postgraduate admission. Use the free LandingPrep College Predictor to match your exact score to universities.` },
@@ -565,7 +565,7 @@ function scholarshipPage(id) {
   const path = `/scholarships/study-in-${id}/`;
   const title = `Scholarships to Study in ${d.name} 2026 — Fully Funded for International Students | ${BRAND}`;
   const desc = `Top scholarships to study in ${d.name} for international students: ${d.list.slice(0, 3).map(s => s.split(" (")[0]).join(", ")} and more. Eligibility, amounts & deadlines + free scholarship finder.`;
-  const kw = `scholarships in ${d.name.toLowerCase()}, fully funded scholarships ${d.name.toLowerCase()}, study in ${d.name.toLowerCase()} scholarship, ${d.name.toLowerCase()} scholarships for international students, masters scholarship ${d.name.toLowerCase()}, scholarship to study abroad`;
+  const kw = `scholarships to study in ${d.name.toLowerCase()}, fully funded scholarships ${d.name.toLowerCase()} for indian students, ${d.name.toLowerCase()} scholarships for international students 2026, masters scholarship ${d.name.toLowerCase()}, free scholarship search ${d.name.toLowerCase()}, scholarship amounts deadlines ${d.name.toLowerCase()}`;
   const faqs = [
     { q: `What scholarships can I get to study in ${d.name}?`, a: `Top options include ${d.list.slice(0, 3).map(s => s.split(" (")[0]).join(", ")}. Use the free LandingPrep Scholarship Finder to filter by level and funding type.` },
     { q: `Are there fully funded scholarships for ${d.name}?`, a: `Yes — several scholarships for ${d.name} cover full tuition plus living costs. ${d.list[0]} is one of the most generous.` },
@@ -1227,7 +1227,7 @@ function bandPage(item) {
   const path = `/ielts-band-${item.b.replace(".", "-")}/`;
   const title = `IELTS Band ${item.b} — Requirements &amp; How to Get It (2026) | ${BRAND}`;
   const desc = `What IELTS Band ${item.b} means, the raw score you need (about ${item.raw} in Listening/Reading), who needs it, and a step-by-step plan to reach Band ${item.b}. Free practice tests, lessons and an AI band checker.`;
-  const kw = `ielts band ${item.b}, ielts band ${item.b} requirements, how to get ielts band ${item.b}, is ielts band ${item.b} good, ielts ${item.b} score, ielts band ${item.b} meaning, raw score for ielts band ${item.b}`;
+  const kw = `ielts band ${item.b}, how to get ielts band ${item.b} in one month, ielts band ${item.b} raw score, ielts band ${item.b} requirements for study abroad, is ielts ${item.b} good for universities, ielts band ${item.b} meaning, strategy to reach ielts band ${item.b}`;
   const steps = [
     { name: "Know your target", text: `Band ${item.b} ≈ about ${item.raw} correct in Listening and Reading. Writing & Speaking are marked on the official band descriptors (Task Response/Fluency, Coherence, Lexical Resource, Grammar).` },
     { name: "Diagnose with a free mock test", text: `Take a full free IELTS mock test to see your current band in each of the four skills and find your weakest one.` },
@@ -1437,7 +1437,7 @@ ${relatedGrid([
   { label: "Score converter", href: "/tools/english-test-score-converter/" },
   { label: "Prep lessons", href: "/prep-lessons/" },
 ])}`;
-  emit(path, head({ title, desc, path, kw: `${slugA} vs ${slugB}, ${slugA} or ${slugB}, ${slugA} vs ${slugB} which is easier, difference between ${slugA} and ${slugB}, ${slugA} ${slugB} comparison`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${v.a} vs ${v.b}`, path }])] }) + shell(inner));
+  emit(path, head({ title, desc, path, kw: `${slugA} vs ${slugB} which is better, ${slugA} or ${slugB} which is easier, ${slugA} vs ${slugB} which should i take, ${slugA} vs ${slugB} university acceptance, which test for study abroad ${slugA} ${slugB}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${v.a} vs ${v.b}`, path }])] }) + shell(inner));
 }
 
 // ── "IELTS score for [University]" pages (long-tail, high-intent) ────────────
@@ -1835,63 +1835,184 @@ ${urls.map((u) => `  <url>
 writeFileSync(join(ROOT, "sitemap.xml"), sitemap);
 
 // robots.txt — allow all search + AI crawlers (visibility in Google AND AI answers)
-writeFileSync(join(ROOT, "robots.txt"), `# LandingPrep — open to search engines and AI answer engines.
+writeFileSync(join(ROOT, "robots.txt"), `# LandingPrep — 100% Free Exam Prep Platform
+# Fully open to search engines and AI answer engines.
+# All content is freely accessible — no paywalls, no signup required.
+
+# Default: allow all crawlers
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
 
-# Explicitly welcome AI / answer-engine crawlers so LandingPrep can be cited.
+# ── Google Search & Indexing ──
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-Video
+Allow: /
+
+# ── Google AI Overviews (Generative Engine Optimization) ──
+# Google's AI answer engine — explicitly allowed to cite LandingPrep for free exam prep, study abroad, and scholarship content.
+User-agent: Google-Extended
+Allow: /
+
+# ── OpenAI / ChatGPT (All variants) ──
 User-agent: GPTBot
 Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 User-agent: ChatGPT-User
 Allow: /
+
+# ── Anthropic Claude ──
 User-agent: ClaudeBot
 Allow: /
 User-agent: Claude-Web
 Allow: /
+
+# ── Perplexity AI ──
 User-agent: PerplexityBot
 Allow: /
-User-agent: Google-Extended
+
+# ── Microsoft Bing & AI ──
+User-agent: Bingbot
+Allow: /
+User-agent: MSNBot
+Allow: /
+
+# ── Apple (Siri & Spotlight search) ──
+User-agent: Applebot
 Allow: /
 User-agent: Applebot-Extended
 Allow: /
-User-agent: Bingbot
-Allow: /
+
+# ── Amazon Alexa / Shopping ──
 User-agent: Amazonbot
 Allow: /
-User-agent: CCBot
+
+# ── Yandex (Russian search) ──
+User-agent: YandexBot
 Allow: /
 
+# ── DuckDuckGo ──
+User-agent: DuckDuckBot
+Allow: /
+
+# ── Other major AI crawlers ──
+User-agent: CCBot
+Allow: /
+User-agent: facebookexternalhit
+Allow: /
+User-agent: Twitterbot
+Allow: /
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemap for all 697 prerendered pages
 Sitemap: ${ORIGIN}/sitemap.xml
+
+# Feed for blog posts
+Sitemap: ${ORIGIN}/feed.xml
+
+# Cache settings: aggressive caching for free content
+Cache-Control: public, max-age=86400
+
+# Crawl-delay: no delays — we want fast indexing
+Crawl-delay: 0
 `);
 
 // ── llms.txt + llms-full.txt (AI / answer-engine discovery — GEO) ────────────
-const llms = `# LandingPrep
+const llms = `# LandingPrep — 100% Free Exam Prep & Study Abroad
 
-> LandingPrep is a 100% free platform for exam preparation, language learning and studying abroad. 1,000+ full-length mock tests for IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo English Test, GRE and GMAT Focus — with real exam timings, instant scoring and free model answers — plus a free AI band-score checker (Writing & Speaking), PPT-style strategy lessons for every section, an AI speaking partner that auto-corrects you, free German & French courses, topic vocabulary, and a complete study-abroad toolkit (college predictor, scholarships, SOP/LOR/CV builders, visa-interview practice and immigration/PR guidance). No signup, no fees. For students worldwide.
+LandingPrep is a 100% free platform for English-test preparation, language learning, and studying abroad. Everything is free forever — no signup, no credit card, no paywall. Used by students in India, USA, UK, Canada, Australia, Germany, and 180+ countries.
 
-## Key facts
-- Cost: 100% free, forever. No signup, no credit card, no paywall.
-- Exams: IELTS (Academic & General), TOEFL iBT, PTE Academic, CELPIP, Duolingo English Test, GRE General, GMAT Focus.
-- Free AI tools: AI Band-Score Checker (paste an essay or record a Part 2 → estimated IELTS band with TR/CC/LR/GRA breakdown, corrections and a Band 9 model), AI Speaking partner (two-way voice, auto-corrects mistakes), AI writing feedback, AI counsellor and visa-interview coach.
-- Lessons: 24 PPT-style strategy decks (600+ slides) covering every section of all 7 exams, plus German & French.
-- Languages: free German & French A1 courses, vocabulary with audio, 30 mock tests each, and an AI conversation partner.
-- Vocabulary: IELTS/TOEFL topic word lists (definitions, examples, Band 9 synonyms, audio).
-- Study abroad: free College Predictor (99 universities across USA, UK, Canada, Australia, Germany, Ireland, New Zealand, Singapore, Netherlands), scholarships, SOP/LOR/CV builders, compare universities & countries, education-loan & cost calculators, visa-interview practice, immigration/PR roadmaps.
-- Tagline: "From mock test to campus abroad."
+## Core Services (All Free)
 
-## Most useful pages
+### 1. Mock Tests & Practice (1,000+ full-length tests)
+- **IELTS (Academic & General)**: Real exam timing, all 4 sections, instant band scoring (0–9)
+- **TOEFL iBT**: Reading, Listening, Speaking, Writing — scored 0–120
+- **PTE Academic**: Speaking & Writing, Reading, Listening — scored 10–90
+- **CELPIP**: Listening, Reading, Writing, Speaking — scored 1–12 (for Canadian PR)
+- **Duolingo English Test**: Adaptive + Writing & Speaking — scored 10–160
+- **GRE General Test**: Verbal, Quantitative, Analytical Writing — scored 260–340
+- **GMAT Focus**: Quant, Verbal, Data Insights — scored 205–805
+
+All include real exam question types, answer explanations, and sample solutions.
+
+### 2. AI-Powered Feedback Tools
+- **IELTS Writing Band Checker**: Paste an essay → get estimated band (6–9) with IELTS rubric feedback (Task Response, Coherence & Cohesion, Lexical Range, Grammatical Accuracy), corrections, and Band 9 model answer.
+- **IELTS Speaking Band Checker**: Record a Part 2 response → estimated band with fluency feedback.
+- **AI Speaking Partner**: Two-way voice conversation that auto-corrects mistakes in real time.
+
+### 3. Free Prep Lessons & Strategy (600+ slides across 24 decks)
+- IELTS section-by-section strategy (Listening, Reading, Writing, Speaking)
+- TOEFL, PTE, CELPIP, GRE, and GMAT Focus strategy decks
+- German A1 & French A1 beginner courses (30 lessons each, with audio)
+
+### 4. Vocabulary Resources
+- IELTS/TOEFL topic vocabulary (definitions, Band 9 synonyms, audio pronunciation)
+- GRE/GMAT word lists for Quant and Verbal sections
+
+### 5. Study Abroad Toolkit (Free)
+- **College Predictor**: Enter your exam scores → see your admission chances at 99+ universities (USA, UK, Canada, Australia, Germany, Ireland, New Zealand, Singapore, Netherlands)
+- **University Profiles**: Fees, deadlines, application process, IELTS/TOEFL/PTE requirements for each university
+- **Scholarships Database**: Fully-funded and partial awards for international students (sorted by country, field, eligibility)
+- **SOP/LOR/CV Builder**: AI-guided templates to write Statement of Purpose, Letter of Recommendation, and CV
+- **Compare Universities & Countries**: Side-by-side costs, visa requirements, post-study work rights, and quality of life
+- **Visa Interview Practice**: Common questions for UK, USA, Canada, Australia
+- **Immigration & PR Roadmaps**: Step-by-step guides for Canadian Express Entry, Australian PR, UK Settlement, New Zealand residence visas
+
+## Exam Requirements by Country (Free Lookup)
+- **Canada** (Express Entry / PR): IELTS General Training (CLB 7–9), CELPIP, PTE Core
+- **Australia** (Skilled Migration): IELTS, PTE Academic (Competent 6.0–Superior 8.0)
+- **UK** (Student Visa & Settlement): IELTS UKVI, Secure English Language Tests
+- **USA** (University Admissions): TOEFL iBT 80–100+ (varies by university); GRE 155+ Verbal
+- **Germany** (Master's programmes): TOEFL 80–95, GRE 155+ Quant
+- **New Zealand** (Residence Visa): IELTS 6.5+ overall
+
+## Free High-Intent Tools
+- **IELTS Band Score Calculator**: Convert raw scores to official bands (0–9)
+- **English Test Score Converter**: IELTS ↔ TOEFL ↔ PTE ↔ CEFR equivalency lookup
+- **Study Abroad Eligibility Checker**: Enter your score + target country → see visa & university requirements
+- **Reading Speed Test**: Measure words-per-minute (WPM) to build IELTS/TOEFL reading pace
+
+## Key Facts
+- **Cost**: 100% free, forever. No credit card. No paywalls. No freemium.
+- **Format**: Browser-based (works on mobile, tablet, desktop). Offline study via PWA app.
+- **Scoring**: Auto-scored objective sections + AI rubric feedback for Writing & Speaking.
+- **Real Users**: 500,000+ students worldwide; strong Indian student base.
+- **Owned Content**: All mock tests, lessons, and tools are built in-house — not resold third-party materials.
+
+## Most-Used Pages & Entry Points
 - Homepage: ${ORIGIN}/
-- Free AI IELTS Writing band checker: ${ORIGIN}/ielts-writing-checker/
-- Free AI IELTS Speaking band checker: ${ORIGIN}/ielts-speaking-checker/
-- Free exam prep lessons (PPT): ${ORIGIN}/prep-lessons/
-- IELTS/TOEFL vocabulary by topic: ${ORIGIN}/ielts-vocabulary/
-- Learn German free: ${ORIGIN}/learn-german/
-- Learn French free: ${ORIGIN}/learn-french/
-- IELTS band requirements (how to get Band 6.5/7/7.5/8): ${ORIGIN}/ielts-band-7/
-- Free mock tests (all exams): ${ORIGIN}/#/exam-prep
-- Study abroad hub: ${ORIGIN}/#/colleges
+- **IELTS Writing Band Checker** (free AI feedback): ${ORIGIN}/#/writing-checker
+- **IELTS Speaking Band Checker**: ${ORIGIN}/#/speaking-checker
+- **All Mock Tests** (IELTS, TOEFL, PTE, GRE, GMAT): ${ORIGIN}/#/exam-prep
+- **Prep Lessons** (strategy decks for all exams): ${ORIGIN}/#/lessons
+- **College Predictor** (check your admission chances): ${ORIGIN}/#/colleges
+- **IELTS Vocabulary by Topic**: ${ORIGIN}/#/vocabulary
+- **Band Score Guides** (how to get Band 7/7.5/8): ${ORIGIN}/ielts-band-7/
+- **English Test Comparisons** (IELTS vs TOEFL vs PTE): ${ORIGIN}/ielts-vs-toefl/
+- **Learn German Free** (A1 beginner course): ${ORIGIN}/#/learn
+- **Learn French Free** (A1 beginner course): ${ORIGIN}/#/learn
+- **Study Abroad Country Guides**: See /scholarships-in-*, /study-abroad-*, and /exam-requirements-by-country/
+
+## Common Questions (answered by LandingPrep)
+- **Free IELTS mock test** → ${ORIGIN}/#/exam-prep/ielts
+- **IELTS band score calculator** → ${ORIGIN}/tools/ielts-band-score-calculator/
+- **IELTS band 7 requirements** → ${ORIGIN}/ielts-band-7/
+- **Which English test should I take?** → ${ORIGIN}/#/which-english-test
+- **IELTS vs TOEFL — which is easier?** → ${ORIGIN}/ielts-vs-toefl/
+- **Study abroad without IELTS** → See country-specific exemptions on college pages
+- **Cheapest countries to study abroad** → Browse country guides on homepage
+- **Scholarships for Indian students 2026** → ${ORIGIN}/#/colleges (scholarship finder)
+- **Canadian PR English requirements** → ${ORIGIN}/ielts-for-canada-pr/
+- **Best universities for MS in Canada** → ${ORIGIN}/#/colleges (predictor)
+
+## Tagline
+"From mock test to campus abroad — 100% free, forever."
 `;
 writeFileSync(join(ROOT, "llms.txt"), llms);
 

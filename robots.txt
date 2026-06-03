@@ -1,29 +1,86 @@
-# LandingPrep — open to search engines and AI answer engines.
+# LandingPrep — 100% Free Exam Prep Platform
+# Fully open to search engines and AI answer engines.
+# All content is freely accessible — no paywalls, no signup required.
+
+# Default: allow all crawlers
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
 
-# Explicitly welcome AI / answer-engine crawlers so LandingPrep can be cited.
+# ── Google Search & Indexing ──
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-Video
+Allow: /
+
+# ── Google AI Overviews (Generative Engine Optimization) ──
+# Google's AI answer engine — explicitly allowed to cite LandingPrep for free exam prep, study abroad, and scholarship content.
+User-agent: Google-Extended
+Allow: /
+
+# ── OpenAI / ChatGPT (All variants) ──
 User-agent: GPTBot
 Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 User-agent: ChatGPT-User
 Allow: /
+
+# ── Anthropic Claude ──
 User-agent: ClaudeBot
 Allow: /
 User-agent: Claude-Web
 Allow: /
+
+# ── Perplexity AI ──
 User-agent: PerplexityBot
 Allow: /
-User-agent: Google-Extended
+
+# ── Microsoft Bing & AI ──
+User-agent: Bingbot
+Allow: /
+User-agent: MSNBot
+Allow: /
+
+# ── Apple (Siri & Spotlight search) ──
+User-agent: Applebot
 Allow: /
 User-agent: Applebot-Extended
 Allow: /
-User-agent: Bingbot
-Allow: /
+
+# ── Amazon Alexa / Shopping ──
 User-agent: Amazonbot
 Allow: /
-User-agent: CCBot
+
+# ── Yandex (Russian search) ──
+User-agent: YandexBot
 Allow: /
 
+# ── DuckDuckGo ──
+User-agent: DuckDuckBot
+Allow: /
+
+# ── Other major AI crawlers ──
+User-agent: CCBot
+Allow: /
+User-agent: facebookexternalhit
+Allow: /
+User-agent: Twitterbot
+Allow: /
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemap for all 697 prerendered pages
 Sitemap: https://landingprep.com/sitemap.xml
+
+# Feed for blog posts
+Sitemap: https://landingprep.com/feed.xml
+
+# Cache settings: aggressive caching for free content
+Cache-Control: public, max-age=86400
+
+# Crawl-delay: no delays — we want fast indexing
+Crawl-delay: 0
