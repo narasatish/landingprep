@@ -6,7 +6,7 @@
   "title": "TOEFL iBT Reading Practice Test 27",
   "variant": "ibt",
   "durationSeconds": 1350,
-  "questionCount": 20,
+  "questionCount": 22,
   "instructions": "Read each passage carefully and answer all questions. You have 35 minutes. Questions test factual understanding, vocabulary, inference, and the ability to identify main ideas.",
   "passages": [
     {
@@ -344,6 +344,38 @@
         "E. Policymakers have no interest in applying research findings.",
         "F. Translating research into practical action remains a key challenge."
       ]
+    },
+    {
+      "id": "toefl-reading-027-ins1",
+      "passageId": "toefl-reading-027-p1",
+      "passageIndex": 0,
+      "questionType": "multiple_choice",
+      "num": 21,
+      "prompt": "Insert the sentence — \"This mineral-laden water quickly cools as it mixes with the surrounding cold ocean water, precipitating metals that create distinctive chimney-like structures.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nHydrothermal vents are underwater hot springs that support unique ecosystems independent of sunlight energy.\n\n[1] These geothermal features occur where tectonic plates meet and geothermally heated water is expelled from Earth's crust. [2] The superheated water, which can reach temperatures above 400 degrees Celsius, is rich in dissolved minerals and chemicals. [3] Unlike other ocean ecosystems that depend on photosynthetic energy from sunlight, vent ecosystems are powered by chemosynthetic bacteria. [4] These bacteria oxidize hydrogen sulfide and other chemicals to obtain energy, forming the base of a unique food web.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "This sentence describes what happens to the mineral-rich water introduced at position 2. The phrase 'this mineral-laden water' directly refers to the water composition just mentioned, making this the natural continuation of that description."
+    },
+    {
+      "id": "toefl-reading-027-ins2",
+      "passageId": "toefl-reading-027-p2",
+      "passageIndex": 1,
+      "questionType": "multiple_choice",
+      "num": 22,
+      "prompt": "Insert the sentence — \"These two brain regions communicate extensively during sleep, with the hippocampus sending signals to the neocortex that trigger the consolidation process.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nSleep plays a critical role in converting temporary memories into long-term storage through biological processes.\n\n[1] During sleep, the brain replays the experiences and information acquired during waking hours. [2] This replay process involves the hippocampus, a brain region essential for memory formation, and the neocortex, where permanent memories are stored. [3] The repeated activation of neural circuits during sleep strengthens synaptic connections through long-term potentiation. [4] This is why sleep deprivation significantly impairs learning and memory retention.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "This sentence elaborates on the interaction between the two brain regions introduced at position 2. The phrase 'These two brain regions' directly refers to the hippocampus and neocortex just mentioned, making this the logical position for explaining their communication."
     }
   ]
 }

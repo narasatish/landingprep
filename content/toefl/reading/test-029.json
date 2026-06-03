@@ -6,7 +6,7 @@
   "title": "TOEFL iBT Reading Practice Test 29",
   "variant": "ibt",
   "durationSeconds": 1350,
-  "questionCount": 20,
+  "questionCount": 22,
   "instructions": "Read each passage carefully and answer all questions. You have 35 minutes. Questions test factual understanding, vocabulary, inference, and the ability to identify main ideas.",
   "passages": [
     {
@@ -344,6 +344,38 @@
         "E. Policymakers have no interest in applying research findings.",
         "F. Translating research into practical action remains a key challenge."
       ]
+    },
+    {
+      "id": "toefl-reading-029-ins1",
+      "passageId": "toefl-reading-029-p1",
+      "passageIndex": 0,
+      "questionType": "multiple_choice",
+      "num": 21,
+      "prompt": "Insert the sentence — \"The electrons removed from organic substrates must be transferred to these alternative acceptors to regenerate NAD+ and allow glycolysis to continue.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nMany organisms can generate ATP through anaerobic pathways when oxygen is unavailable, though less efficiently than aerobic respiration.\n\n[1] Anaerobic respiration allows bacteria and archaea to extract energy from organic molecules without requiring molecular oxygen. [2] These microorganisms use alternative electron acceptors such as nitrate, sulfate, or carbon dioxide instead of oxygen. [3] The amount of ATP generated per glucose molecule is significantly lower than in aerobic respiration because these electron acceptors have lower oxidation potentials than oxygen. [4] Despite their lower efficiency, anaerobic pathways are crucial for biogeochemical cycling and occur in oxygen-depleted environments such as lake sediments and soil.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "This sentence explains why alternative electron acceptors are necessary (position 2). The phrase 'alternative acceptors' directly refers to those mentioned, and it explains their functional role in the anaerobic pathway, making this the logical placement for this mechanistic explanation."
+    },
+    {
+      "id": "toefl-reading-029-ins2",
+      "passageId": "toefl-reading-029-p2",
+      "passageIndex": 1,
+      "questionType": "multiple_choice",
+      "num": 22,
+      "prompt": "Insert the sentence — \"The reaction consumes ATP and releases energy in the form of photons, making it thermodynamically expensive but valuable in the dark ocean.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nMany deep sea creatures produce light through biochemical reactions, a phenomenon that plays multiple ecological roles.\n\n[1] Bioluminescence in the deep ocean is primarily produced by bacteria and chemical reactions within specialized light-producing cells called photophores. [2] Unlike photosynthesis, which requires light energy from the sun, bioluminescence generates light through an enzymatic reaction between luciferin and luciferase. [3] This light serves multiple functions including predation, mate attraction, and counterillumination to avoid detection by larger predators. [4] The wavelength of bioluminescence is typically in the blue range because this color penetrates water more effectively than other wavelengths.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "This sentence explains the biochemical mechanism of the luciferin-luciferase reaction introduced at position 2. It elaborates on the chemical process and its energetic cost, making it the logical continuation of the enzymatic explanation."
     }
   ]
 }

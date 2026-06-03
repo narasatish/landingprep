@@ -6,7 +6,7 @@
   "title": "TOEFL iBT Reading Practice Test 24",
   "variant": "ibt",
   "durationSeconds": 1350,
-  "questionCount": 20,
+  "questionCount": 22,
   "instructions": "Read each passage carefully and answer all questions. You have 35 minutes. Questions test factual understanding, vocabulary, inference, and the ability to identify main ideas.",
   "passages": [
     {
@@ -344,6 +344,38 @@
         "E. Policymakers have no interest in applying research findings.",
         "F. Translating research into practical action remains a key challenge."
       ]
+    },
+    {
+      "id": "toefl-reading-024-ins1",
+      "passageId": "toefl-reading-024-p1",
+      "passageIndex": 0,
+      "questionType": "multiple_choice",
+      "num": 21,
+      "prompt": "Insert the sentence — \"Continuous harvesting of the same crop species also increases vulnerability to pest and disease outbreaks because soil populations of crop-specific pathogens accumulate.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nSoil erosion and degradation are critical environmental challenges affecting global food security.\n\n[1] Intensive agricultural practices deplete soil nutrients and reduce organic matter content, decreasing soil fertility over time. [2] Monoculture cropping removes specific nutrients from soil faster than they can be naturally replenished. [3] Without crop rotation or nutrient replacement through fertilizers, soil eventually becomes unsuitable for agriculture. [4] This degradation process affects billions of people worldwide who depend on agriculture for food and income.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "This sentence extends the problem of monoculture mentioned at position 2. The phrase 'same crop species' directly references monoculture, and the ecological consequence logically follows the introduction of this agricultural problem."
+    },
+    {
+      "id": "toefl-reading-024-ins2",
+      "passageId": "toefl-reading-024-p2",
+      "passageIndex": 1,
+      "questionType": "multiple_choice",
+      "num": 22,
+      "prompt": "Insert the sentence — \"This carbon remains sequestered in woody biomass as long as trees remain standing and are not disturbed.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nForests play a crucial role in regulating atmospheric carbon dioxide levels through photosynthesis and biomass accumulation.\n\n[1] As trees grow, they remove carbon dioxide from the atmosphere and store carbon in their wood, leaves, and roots. [2] Old-growth forests contain vast reserves of carbon accumulated over centuries, making them particularly valuable for climate regulation. [3] When trees are harvested or forests are cleared, this stored carbon is released back into the atmosphere through decomposition or combustion. [4] Therefore, protecting existing forests and restoring degraded forests are essential strategies for mitigating climate change.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "This sentence explains what happens to the carbon stored in trees (position 1-2 discussion). The word 'This carbon' refers to the carbon stored in wood mentioned previously, and the explanation logically precedes the consequence of forest clearance at position 3."
     }
   ]
 }

@@ -6,7 +6,7 @@
   "title": "TOEFL iBT Reading Practice Test 8",
   "variant": "ibt",
   "durationSeconds": 1350,
-  "questionCount": 20,
+  "questionCount": 22,
   "instructions": "Read each passage carefully and answer all questions. You have 35 minutes. Questions test factual understanding, vocabulary, inference, and the ability to identify main ideas.",
   "passages": [
     {
@@ -344,6 +344,38 @@
         "E. Policymakers have no interest in applying research findings.",
         "F. Translating research into practical action remains a key challenge."
       ]
+    },
+    {
+      "id": "toefl-reading-008-ins1",
+      "passageId": "toefl-reading-008-p1",
+      "passageIndex": 0,
+      "questionType": "multiple_choice",
+      "num": 21,
+      "prompt": "Insert the sentence — \"Geographical isolation prevents gene flow between separated populations, allowing each isolated group to evolve independently and develop distinct characteristics.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nCertain regions of Earth contain disproportionately high concentrations of endemic species found nowhere else.\n\n[1] Biodiversity hotspots are defined as regions with exceptionally high numbers of endemic species and significant habitat loss. [2] These areas, which comprise only about 2% of Earth's land surface, contain more than half of all terrestrial plant and animal species. [3] The hotspots often coincide with tropical regions, mountainous areas, and islands that have experienced geographical isolation. [4] This isolation has allowed species to evolve unique characteristics and adapt to highly specialized ecological niches.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [3]",
+      "explanation": "This sentence explains the mechanism of how isolation causes endemism. The word 'isolation' directly refers to the geographical isolation mentioned at position 3, and it provides the evolutionary explanation for the endemic species and unique characteristics described."
+    },
+    {
+      "id": "toefl-reading-008-ins2",
+      "passageId": "toefl-reading-008-p2",
+      "passageIndex": 1,
+      "questionType": "multiple_choice",
+      "num": 22,
+      "prompt": "Insert the sentence — \"Rather than subducting below one another, the relatively buoyant continental crust on both sides of the collision resists sinking and continues to thicken.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nThe movement of Earth's lithospheric plates is responsible for creating major geographical features including mountain ranges.\n\n[1] When two continental plates collide, the immense compressional forces cause rock layers to buckle and fold upward. [2] This process, called orogenesis, can create mountain ranges that are thousands of kilometers long and reach heights of several kilometers. [3] The Himalayas, which are still rising today, represent an ongoing collision between the Indian and Eurasian plates. [4] The rocks in these mountains contain fossils of marine organisms, evidence that these regions were once beneath the sea.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [1]",
+      "explanation": "This sentence explains why continental collisions cause upward buckling (position 1). The word 'continental crust' and the explanation of non-subduction directly relate to the compressional forces and upward deformation mentioned, making this the optimal position for this mechanistic detail."
     }
   ]
 }

@@ -6,7 +6,7 @@
   "title": "TOEFL iBT Reading Practice Test 22",
   "variant": "ibt",
   "durationSeconds": 1350,
-  "questionCount": 20,
+  "questionCount": 22,
   "instructions": "Read each passage carefully and answer all questions. You have 35 minutes. Questions test factual understanding, vocabulary, inference, and the ability to identify main ideas.",
   "passages": [
     {
@@ -344,6 +344,38 @@
         "E. Policymakers have no interest in applying research findings.",
         "F. Translating research into practical action remains a key challenge."
       ]
+    },
+    {
+      "id": "toefl-reading-022-ins1",
+      "passageId": "toefl-reading-022-p1",
+      "passageIndex": 0,
+      "questionType": "multiple_choice",
+      "num": 21,
+      "prompt": "Insert the sentence — \"Juvenile hormone and ecdysone are the two primary hormones that control the timing and progression of metamorphic stages.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nInsects undergo remarkable transformations during their life cycles, with some species exhibiting complete morphological change.\n\n[1] The transformation from larva to adult, known as metamorphosis, occurs through tightly regulated hormonal mechanisms. [2] In insects with complete metamorphosis, larvae enter a pupal stage where dramatic reorganization of body structures takes place. [3] During this dormant period, most larval tissues dissolve and are reconstructed into adult tissues through the action of imaginal discs. [4] This complex process enables insects to exploit different food sources and ecological niches at different life stages.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [1]",
+      "explanation": "This sentence explains the 'hormonal mechanisms' mentioned at position 1. It provides necessary detail about the specific hormones before the description of metamorphic stages begins, making it the logical introduction to the process."
+    },
+    {
+      "id": "toefl-reading-022-ins2",
+      "passageId": "toefl-reading-022-p2",
+      "passageIndex": 1,
+      "questionType": "multiple_choice",
+      "num": 22,
+      "prompt": "Insert the sentence — \"Denser water naturally sinks beneath less dense water, creating the pressure gradients that maintain continuous ocean circulation.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nOcean currents are major drivers of global climate patterns and are increasingly affected by climate change.\n\n[1] The thermohaline circulation, also called the global conveyor belt, transports heat and nutrients across all oceans. [2] This circulation is driven by differences in water temperature and salinity, which affect water density. [3] Cold, dense water sinks in polar regions and flows toward the equator, while warmer water returns toward the poles at the surface. [4] Climate change threatens to disrupt this circulation by reducing salinity in the North Atlantic through freshwater input from melting ice sheets.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "This sentence explains the mechanism of how 'differences in temperature and salinity affect water density' (position 2). The word 'Denser water' directly refers to the consequence of the density differences mentioned, so it logically follows the introduction of density as a driver."
     }
   ]
 }

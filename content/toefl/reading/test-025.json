@@ -6,7 +6,7 @@
   "title": "TOEFL iBT Reading Practice Test 25",
   "variant": "ibt",
   "durationSeconds": 1350,
-  "questionCount": 20,
+  "questionCount": 22,
   "instructions": "Read each passage carefully and answer all questions. You have 35 minutes. Questions test factual understanding, vocabulary, inference, and the ability to identify main ideas.",
   "passages": [
     {
@@ -344,6 +344,38 @@
         "E. Policymakers have no interest in applying research findings.",
         "F. Translating research into practical action remains a key challenge."
       ]
+    },
+    {
+      "id": "toefl-reading-025-ins1",
+      "passageId": "toefl-reading-025-p1",
+      "passageIndex": 0,
+      "questionType": "multiple_choice",
+      "num": 21,
+      "prompt": "Insert the sentence — \"The random nature of genetic drift means that beneficial alleles might be lost by chance, while harmful alleles might become fixed purely due to random events.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nGenetic drift is a mechanism of evolution in which allele frequencies change randomly in populations, particularly in small groups.\n\n[1] Unlike natural selection, which is a directional force, genetic drift occurs randomly and can increase or decrease allele frequencies regardless of their effect on fitness. [2] In small populations, genetic drift has a proportionally larger effect because fewer individuals carry the alleles. [3] This random sampling of alleles from one generation to the next can eventually lead to the fixation or loss of alleles. [4] Genetic drift is particularly important in conservation biology because small endangered populations are especially vulnerable to allele loss.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [1]",
+      "explanation": "This sentence elaborates on the random, non-directional nature of genetic drift introduced at position 1. The examples of beneficial and harmful alleles directly illustrate the concept mentioned at position 1, making this the optimal position for this clarifying statement."
+    },
+    {
+      "id": "toefl-reading-025-ins2",
+      "passageId": "toefl-reading-025-p2",
+      "passageIndex": 1,
+      "questionType": "multiple_choice",
+      "num": 22,
+      "prompt": "Insert the sentence — \"The temperature and pressure conditions in the upper atmosphere provide the cooling necessary for this condensation process to occur.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nWater continuously cycles through Earth's atmosphere, oceans, and land in a process driven by solar energy.\n\n[1] Evaporation from oceans, lakes, and rivers converts liquid water into water vapor, which rises into the atmosphere. [2] As water vapor rises, it cools and eventually reaches its dew point, the temperature at which it becomes saturated. [3] This phase transition causes the water vapor to condense into liquid water droplets, forming clouds. [4] When cloud droplets combine and become heavy enough, they fall as precipitation, returning water to Earth's surface.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "This sentence explains the mechanism of cooling mentioned at position 2 ('as water vapor rises, it cools'). It provides the physical explanation for why cooling occurs, making it the logical continuation of the description of the evaporation-condensation cycle."
     }
   ]
 }

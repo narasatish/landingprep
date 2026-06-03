@@ -6,7 +6,7 @@
   "title": "TOEFL iBT Reading Practice Test 23",
   "variant": "ibt",
   "durationSeconds": 1350,
-  "questionCount": 20,
+  "questionCount": 22,
   "instructions": "Read each passage carefully and answer all questions. You have 35 minutes. Questions test factual understanding, vocabulary, inference, and the ability to identify main ideas.",
   "passages": [
     {
@@ -344,6 +344,38 @@
         "E. Policymakers have no interest in applying research findings.",
         "F. Translating research into practical action remains a key challenge."
       ]
+    },
+    {
+      "id": "toefl-reading-023-ins1",
+      "passageId": "toefl-reading-023-p1",
+      "passageIndex": 0,
+      "questionType": "multiple_choice",
+      "num": 21,
+      "prompt": "Insert the sentence — \"The repeated activation of neural pathways during learning or practice triggers the release of neurotransmitters that reinforce synaptic connections.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nThe human brain maintains the ability to reorganize itself throughout life, a property fundamental to learning and recovery.\n\n[1] Neuroplasticity describes the brain's capacity to form new neural connections in response to experience and learning. [2] When neurons are repeatedly activated together, synaptic connections between them strengthen through a process called long-term potentiation. [3] This mechanism allows the brain to encode memories and develop new skills by physically altering its structure. [4] Without this remarkable property, individuals would be unable to recover cognitive function following brain injury.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "This sentence explains the consequence of 'neurons repeatedly activated together' (position 2). The phrase 'repeated activation' directly references the condition mentioned, making this the optimal position for this mechanistic detail."
+    },
+    {
+      "id": "toefl-reading-023-ins2",
+      "passageId": "toefl-reading-023-p2",
+      "passageIndex": 1,
+      "questionType": "multiple_choice",
+      "num": 22,
+      "prompt": "Insert the sentence — \"The specificity of enzyme-substrate binding depends on complementary shapes and chemical properties, a relationship described by the lock-and-key model.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nEnzymes are biological catalysts that accelerate chemical reactions essential for life processes.\n\n[1] Enzymes function by lowering the activation energy required for chemical reactions, allowing them to proceed millions of times faster than uncatalyzed reactions. [2] The enzyme-substrate complex forms when a substrate molecule enters the enzyme's active site, which is shaped specifically to accommodate that substrate. [3] This interaction positions the substrate in a way that destabilizes its chemical bonds and promotes rapid conversion to product. [4] After the product is released, the enzyme remains unchanged and can bind another substrate molecule.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "This sentence explains the 'specific shaping' of the active site mentioned in position 2. The phrase 'enzyme-substrate binding' directly follows the introduction of the enzyme-substrate complex, making this the logical position for elaboration on molecular recognition."
     }
   ]
 }

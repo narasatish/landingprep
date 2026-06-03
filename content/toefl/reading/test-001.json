@@ -6,7 +6,7 @@
   "title": "TOEFL iBT Reading Practice Test 1",
   "variant": "ibt",
   "durationSeconds": 1350,
-  "questionCount": 20,
+  "questionCount": 22,
   "instructions": "Read each passage carefully and answer all questions. You have 35 minutes. Questions test factual understanding, vocabulary, inference, and the ability to identify main ideas.",
   "passages": [
     {
@@ -344,6 +344,38 @@
         "E. Roman hydraulic engineering was confined to the city of Rome.",
         "F. Modern technology has helped archaeologists map the full extent of Roman water infrastructure."
       ]
+    },
+    {
+      "id": "toefl-reading-001-ins1",
+      "passageId": "toefl-reading-001-p1",
+      "passageIndex": 0,
+      "questionType": "multiple_choice",
+      "num": 21,
+      "prompt": "Insert the sentence — \"The light reactions occur in the thylakoid membranes and generate the energy carriers needed for subsequent carbon fixation.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nPlants convert sunlight into chemical energy through a complex process involving light and dark reactions.\n\n[1] During photosynthesis, chlorophyll molecules in plant leaves absorb light energy and transfer it to electrons. [2] These energized electrons move through the thylakoid membrane, creating an electrochemical gradient that drives ATP synthesis. [3] The Calvin cycle then uses this ATP and NADPH to reduce carbon dioxide into glucose. [4] This process is responsible for the vast majority of organic matter production on Earth and serves as the foundation for nearly all food webs.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [2]",
+      "explanation": "The sentence must follow the introduction of light energy transfer (at position 2) and logically precedes the Calvin cycle explanation. It bridges the light reactions and dark reactions with the connector 'generate' that refers to energy carrier production needed later."
+    },
+    {
+      "id": "toefl-reading-001-ins2",
+      "passageId": "toefl-reading-001-p2",
+      "passageIndex": 1,
+      "questionType": "multiple_choice",
+      "num": 22,
+      "prompt": "Insert the sentence — \"The symbiotic relationship between corals and zooxanthellae—algae living within coral cells—enables them to thrive in nutrient-poor tropical waters.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nCoral reefs are among the most productive ecosystems on Earth, supporting extraordinary biological diversity.\n\n[1] Although coral reefs cover less than 1% of the ocean floor, they harbor approximately 25% of all known marine fish species. [2] These underwater structures are built by coral polyps, which create calcium carbonate skeletons that accumulate into massive reef formations. [3] The reef environment provides shelter, food sources, and breeding grounds for thousands of species including fish, crustaceans, mollusks, and echinoderms. [4] Regrettably, rising ocean temperatures and acidification pose severe threats to reef health and survival.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [3]",
+      "explanation": "This sentence explains how corals create the reef environment mentioned in position 2. The word 'them' refers to corals, and the ecological mechanism logically precedes the discussion of benefits that reefs provide in position 3."
     }
   ]
 }

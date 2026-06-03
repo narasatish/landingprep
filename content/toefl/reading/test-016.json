@@ -6,7 +6,7 @@
   "title": "TOEFL iBT Reading Practice Test 16",
   "variant": "ibt",
   "durationSeconds": 1350,
-  "questionCount": 20,
+  "questionCount": 22,
   "instructions": "Read each passage carefully and answer all questions. You have 35 minutes. Questions test factual understanding, vocabulary, inference, and the ability to identify main ideas.",
   "passages": [
     {
@@ -344,6 +344,38 @@
         "E. Policymakers have no interest in applying research findings.",
         "F. Translating research into practical action remains a key challenge."
       ]
+    },
+    {
+      "id": "toefl-reading-016-ins1",
+      "passageId": "toefl-reading-016-p1",
+      "passageIndex": 0,
+      "questionType": "multiple_choice",
+      "num": 21,
+      "prompt": "Insert the sentence — \"Over evolutionary time, this balance creates coevolutionary pressures that continuously select for improved parasite transmission and enhanced host immune responses.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nParasitism is an ecological relationship in which one organism benefits at the expense of another, shaping population dynamics and evolution.\n\n[1] Parasites are typically smaller than their hosts and depend on the host's resources for survival and reproduction. [2] However, successful parasites do not usually kill their hosts because doing so would eliminate their resource supply. [3] Instead, parasites evolve to exploit host resources with minimal damage, a relationship that can persist for thousands of years. [4] These dynamics drive an evolutionary arms race in which hosts evolve defenses while parasites evolve counter-adaptations.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [3]",
+      "explanation": "This sentence describes the evolutionary consequences of the sustained parasite-host relationship mentioned at position 3. The phrase 'this balance' refers to the long-term coexistence pattern described, and it logically leads to the evolutionary arms race mentioned at position 4."
+    },
+    {
+      "id": "toefl-reading-016-ins2",
+      "passageId": "toefl-reading-016-p2",
+      "passageIndex": 1,
+      "questionType": "multiple_choice",
+      "num": 22,
+      "prompt": "Insert the sentence — \"The proper folding is critical because even a single amino acid substitution can disrupt the structure and abolish protein function.\" — into the paragraph. The four squares [1] [2] [3] [4] show where it could be added; choose the best position.\n\nProteins are complex molecules whose three-dimensional structure determines their biological function.\n\n[1] A protein's structure is determined by its amino acid sequence, which is encoded in DNA. [2] As the protein is synthesized, the amino acid chain folds into a precise three-dimensional shape guided by chemical interactions between amino acids. [3] This folding process is facilitated by specialized proteins called chaperones, which prevent incorrect folding. [4] Misfolded proteins can aggregate and cause cellular dysfunction or disease.",
+      "options": [
+        "Square [1]",
+        "Square [2]",
+        "Square [3]",
+        "Square [4]"
+      ],
+      "correctAnswer": "Square [3]",
+      "explanation": "This sentence emphasizes the importance of correct folding mentioned at positions 2-3. The phrase 'proper folding' directly refers to the precise folding discussed previously, and it provides justification for why chaperones (position 3) are necessary before discussing the consequences of misfolding."
     }
   ]
 }
