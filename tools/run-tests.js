@@ -116,6 +116,7 @@ check("blog has >= 5 articles", articleIds.length >= 5, articleIds.length + " ar
 // renderer wiring: every window.LP_* referenced in app.jsx is defined somewhere
 const appRefs = [...read("app.jsx").matchAll(/window\.LP_([A-Za-z_]+)/g)].map(m => m[1]);
 const allSrc = [
+  "index.html", // index.html defines app-level globals too (e.g. window.LP_loadScript, window.LP_API_BASE)
   ...fs.readdirSync(ROOT).filter(f => f.endsWith(".jsx")),
   ...fs.readdirSync(path.join(ROOT, "screens")).filter(f => f.endsWith(".jsx")).map(f => "screens/" + f),
 ].map(read).join("\n");

@@ -148,6 +148,38 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
     "\u270D\uFE0F AI Writing Agent"
   )), tab === "speaking" && support.speaking ? /* @__PURE__ */ React.createElement(window.LP_SpeakingAgent, { exam }) : /* @__PURE__ */ React.createElement(window.LP_WritingAgent, { exam }))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
 }
+function MockTestGate(props) {
+  const present = () => !!window.LP_MockTest && typeof window.LP_QUESTIONS !== "undefined";
+  const [ready, setReady] = useStateApp(present());
+  const [failed, setFailed] = useStateApp(false);
+  useEffectApp(() => {
+    if (present()) {
+      setReady(true);
+      return;
+    }
+    let live = true;
+    const fail = () => {
+      if (live) setFailed(true);
+    };
+    if (!window.LP_loadScript) {
+      fail();
+      return;
+    }
+    (typeof window.LP_QUESTIONS !== "undefined" ? Promise.resolve() : window.LP_loadScript("data-questions.js")).then(() => window.LP_MockTest ? null : window.LP_loadScript("screens/mock-test.js")).then(() => {
+      if (!live) return;
+      present() ? setReady(true) : fail();
+    }).catch(fail);
+    return () => {
+      live = false;
+    };
+  }, []);
+  if (ready && window.LP_MockTest) return React.createElement(window.LP_MockTest, props);
+  const wrap = { textAlign: "center", padding: "14vh 20px", maxWidth: 460, margin: "0 auto" };
+  if (failed) {
+    return /* @__PURE__ */ React.createElement("main", { className: "tools-shell", style: wrap }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 42 } }, "\u{1F4F6}"), /* @__PURE__ */ React.createElement("h2", { style: { margin: "10px 0 6px" } }, "Couldn\u2019t load the test"), /* @__PURE__ */ React.createElement("p", { style: { color: "var(--ink-3)", marginBottom: 18 } }, "Usually a slow or dropped connection \u2014 your saved progress is safe."), /* @__PURE__ */ React.createElement("button", { className: "btn", style: { background: "#4F46E5", color: "#fff" }, onClick: () => location.reload() }, "Reload"));
+  }
+  return /* @__PURE__ */ React.createElement("main", { className: "tools-shell", style: wrap }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 40 } }, "\u23F3"), /* @__PURE__ */ React.createElement("h2", { style: { margin: "10px 0 6px" } }, "Loading your test\u2026"), /* @__PURE__ */ React.createElement("p", { style: { color: "var(--ink-3)" } }, "Preparing the questions and test engine."));
+}
 function App() {
   const exams = window.LP_DATA.EXAMS;
   const initial = hashToView(window.location.hash, exams);
@@ -362,7 +394,7 @@ function App() {
     );
   } else if (view === "mock") {
     content = /* @__PURE__ */ React.createElement(
-      window.LP_MockTest,
+      MockTestGate,
       {
         exam: activeExam,
         testCfg,

@@ -191,6 +191,46 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
   );
 }
 
+// Lazily load the ~300 KB test runner (screens/mock-test.js) + question bank
+// (data-questions.js) only when the user actually starts a test — keeps them off the
+// initial app load. data-questions loads first (the runner reads LP_QUESTIONS when it
+// builds a test), then the runner. A failed load shows a recovery card (never a blank).
+function MockTestGate(props) {
+  const present = () => !!window.LP_MockTest && typeof window.LP_QUESTIONS !== "undefined";
+  const [ready, setReady] = useStateApp(present());
+  const [failed, setFailed] = useStateApp(false);
+  useEffectApp(() => {
+    if (present()) { setReady(true); return; }
+    let live = true;
+    const fail = () => { if (live) setFailed(true); };
+    if (!window.LP_loadScript) { fail(); return; }
+    (typeof window.LP_QUESTIONS !== "undefined" ? Promise.resolve() : window.LP_loadScript("data-questions.js"))
+      .then(() => (window.LP_MockTest ? null : window.LP_loadScript("screens/mock-test.js")))
+      .then(() => { if (!live) return; present() ? setReady(true) : fail(); })
+      .catch(fail);
+    return () => { live = false; };
+  }, []);
+  if (ready && window.LP_MockTest) return React.createElement(window.LP_MockTest, props);
+  const wrap = { textAlign: "center", padding: "14vh 20px", maxWidth: 460, margin: "0 auto" };
+  if (failed) {
+    return (
+      <main className="tools-shell" style={wrap}>
+        <div style={{ fontSize: 42 }}>📶</div>
+        <h2 style={{ margin: "10px 0 6px" }}>Couldn’t load the test</h2>
+        <p style={{ color: "var(--ink-3)", marginBottom: 18 }}>Usually a slow or dropped connection — your saved progress is safe.</p>
+        <button className="btn" style={{ background: "#4F46E5", color: "#fff" }} onClick={() => location.reload()}>Reload</button>
+      </main>
+    );
+  }
+  return (
+    <main className="tools-shell" style={wrap}>
+      <div style={{ fontSize: 40 }}>⏳</div>
+      <h2 style={{ margin: "10px 0 6px" }}>Loading your test…</h2>
+      <p style={{ color: "var(--ink-3)" }}>Preparing the questions and test engine.</p>
+    </main>
+  );
+}
+
 function App() {
   const exams = window.LP_DATA.EXAMS;
 
@@ -341,7 +381,7 @@ function App() {
       onSelectExam={(e) => setExam(e)}
     />;
   } else if (view === "mock") {
-    content = <window.LP_MockTest
+    content = <MockTestGate
       exam={activeExam}
       testCfg={testCfg}
       onBack={() => {
