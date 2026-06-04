@@ -3731,8 +3731,12 @@ html[data-theme="dark"] {
 @keyframes focusPulse { 0%,100% { box-shadow: 0 10px 28px -6px rgba(239,68,68,.5); } 50% { box-shadow: 0 10px 34px -2px rgba(239,68,68,.75); } }
 
 .focus-panel { position: fixed; left: 20px; bottom: 92px; z-index: 49; width: min(330px, calc(100vw - 40px));
-  max-height: min(74vh, 640px); overflow-y: auto; background: var(--surface); border: 1px solid var(--line);
-  border-radius: 18px; box-shadow: 0 24px 60px -16px rgba(0,0,0,.35); animation: toolPanelIn .25s ease; }
+  max-height: min(80vh, 680px); overflow-y: auto; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 18px; box-shadow: 0 24px 60px -16px rgba(0,0,0,.35);
+  transition: transform .22s ease, opacity .22s ease; transform-origin: bottom left; }
+.focus-panel.open { transform: none; opacity: 1; }
+.focus-panel.closed { transform: translateX(-130%) scale(.96); opacity: 0; pointer-events: none; }
+.focus-yt { display: block; width: 100%; height: 158px; border: 0; border-radius: 12px; margin-bottom: 10px; background: #000; }
 .focus-panel-head { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px 10px; position: sticky; top: 0; background: var(--surface); border-bottom: 1px solid var(--line); }
 .focus-panel-head strong { font-size: 15px; color: var(--ink); }
 .focus-x { background: none; border: none; font-size: 16px; cursor: pointer; color: var(--ink-3); line-height: 1; padding: 2px 6px; }
@@ -3757,8 +3761,6 @@ html[data-theme="dark"] {
 .fs-vol { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
 .fs-vol input[type=range] { flex: 1; accent-color: var(--accent); }
 .fs-note { font-size: 11px; color: var(--ink-4, var(--ink-3)); margin: 8px 0 0; text-align: center; }
-/* Off-screen YouTube music player — keeps audio alive without showing video. */
-.focus-music-frame { position: fixed; left: -9999px; bottom: 0; width: 320px; height: 180px; border: 0; opacity: 0; pointer-events: none; }
 .fs-custom { display: flex; gap: 6px; margin-top: 10px; }
 .fs-custom input { flex: 1; min-width: 0; padding: 8px 10px; border-radius: 10px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); font-size: 12.5px; }
 .fs-custom .tool-btn { padding: 8px 12px; }

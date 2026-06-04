@@ -597,7 +597,7 @@ function TopBar({ current = "home", onNav }) {
             ))}
             <button className="btn" style={{ marginTop: 16 }} onClick={toggleDark}>{dark ? "☀️ Light mode" : "🌙 Night study mode"}</button>
             {!user && <button className="btn btn-primary" style={{ marginTop: 10 }} onClick={() => { setOpen(false); onNav("login"); }}>Log in / Sign up</button>}
-            {user && <button className="btn" style={{ marginTop: 10 }} onClick={() => { window.LP_AUTH.signOut(); setOpen(false); }}>Sign out</button>}
+            {user && <button className="btn" style={{ marginTop: 10 }} onClick={() => { if (window.LP_AUTH) window.LP_AUTH.signOut(); setOpen(false); }}>Sign out</button>}
           </aside>
         </div>
       )}

@@ -160,8 +160,29 @@ const TOOLS = {
 const esc = (s) => String(s).replace(/&(?!amp;|lt;|gt;|quot;|#)/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const jsonld = (obj) => `<script type="application/ld+json">${JSON.stringify(obj)}</script>`;
 
+// SEO hygiene: keep <title> ≤ ~60 chars (preserving the "| Brand" suffix) and the meta
+// description ≤ ~158 chars, trimmed on a word boundary so Google doesn't cut them mid-word.
+function trimTitle(t) {
+  if (!t || t.length <= 60) return t;
+  const i = t.lastIndexOf(" | ");
+  if (i > 12) {
+    const brand = t.slice(i);
+    let base = t.slice(0, i).replace(/\s*\(2026\)\s*$/, "");
+    const room = 60 - brand.length;
+    if (base.length > room) { const cut = base.slice(0, room); const sp = cut.lastIndexOf(" "); base = (sp > 20 ? cut.slice(0, sp) : cut).replace(/[\s,–-]+$/, ""); }
+    return base + brand;
+  }
+  const cut = t.slice(0, 60); const sp = cut.lastIndexOf(" "); return (sp > 20 ? cut.slice(0, sp) : cut).replace(/[\s,–-]+$/, "");
+}
+function trimDesc(d) {
+  if (!d || d.length <= 160) return d;
+  const cut = d.slice(0, 157); const sp = cut.lastIndexOf(" ");
+  return (sp > 120 ? cut.slice(0, sp) : cut).replace(/[\s,;:–-]+$/, "") + "…";
+}
 function head({ title, desc, path, kw, jsonLdBlocks }) {
   const url = ORIGIN + path;
+  title = trimTitle(title);
+  desc = trimDesc(desc);
   return `<!doctype html>
 <html lang="en">
 <head>

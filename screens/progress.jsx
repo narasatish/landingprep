@@ -494,7 +494,7 @@
               {history.length > 0 && (
                 <button className="btn btn-sm" style={{ color: "var(--error)" }} onClick={() => setConfirmClear(true)}>Clear history</button>
               )}
-              <button className="btn btn-sm" onClick={() => window.LP_AUTH.signOut()}>Sign out</button>
+              <button className="btn btn-sm" onClick={() => window.LP_AUTH && window.LP_AUTH.signOut()}>Sign out</button>
             </div>
           </div>
 

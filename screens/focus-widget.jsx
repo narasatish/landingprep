@@ -4,8 +4,9 @@
 // LandingPrep — floating Focus Timer + Study Music widget. Mounted once at the app
 // root so it's on every page and keeps running as the user navigates. The timer is a
 // thin view over window.LP_FOCUS; the music streams from YouTube (curated, verified
-// embeddable channels) via a small persistent off-screen iframe, plus a "paste any
-// link" field so the user can play their own track (e.g. flute, meditation).
+// embeddable channels) in a small VISIBLE player, plus a "paste any link" field so the
+// user can play their own track (e.g. flute). The panel is always mounted (toggled on/
+// off-screen with CSS) so the music keeps playing when it's closed and across pages.
 (function () {
   const { useState, useEffect } = React;
   const PF = [15, 25, 50], PB = [5, 10];
@@ -46,6 +47,7 @@
     const mm = String(Math.floor(s.secs / 60)).padStart(2, "0");
     const ss = String(s.secs % 60).padStart(2, "0");
     const label = s.mode === "focus" ? "Focus" : s.mode === "long" ? "Long break" : "Break";
+    const nowName = (TRACKS.find((t) => t.yt === track) || {}).name;
 
     const playCustom = () => { const id = ytId(customUrl); if (id) { setTrack(id); setCustomUrl(""); } };
 
@@ -55,61 +57,57 @@
           {running ? <span className="focus-fab-time">{mm}<small>:{ss}</small></span> : <span className="focus-fab-icon">🍅</span>}
         </button>
 
-        {/* Persistent off-screen player: keeps the music going when the panel is closed and across navigation. */}
-        {track && (
-          <iframe className="focus-music-frame" title="Study music"
-            src={"https://www.youtube-nocookie.com/embed/" + track + "?autoplay=1&playsinline=1"}
-            allow="autoplay; encrypted-media" />
-        )}
-
-        {open && (
-          <div className="focus-panel" role="dialog" aria-label="Focus timer and study music">
-            <div className="focus-panel-head">
-              <strong>🍅 Focus &amp; Music</strong>
-              <button className="focus-x" onClick={() => setOpen(false)} aria-label="Close">✕</button>
-            </div>
-
-            <div className="focus-mini">
-              <div className={"pomo-ring small " + (s.mode === "focus" ? "focus" : "rest")} style={{ "--pct": pct + "%" }}>
-                <div className="pomo-inner">
-                  <div className="pomo-time">{mm}:{ss}</div>
-                  <div className="pomo-mode">{label}</div>
-                </div>
-              </div>
-              <div className="pomo-dots">{Array.from({ length: F.LONG_AFTER }).map((_, i) => <span key={i} className={"pomo-dot" + (i < s.cycle ? " on" : "")} />)}</div>
-              <div className="tool-row btns pomo-btns">
-                <button className="tool-btn" onClick={F.startStop}>{running ? "⏸ Pause" : "▶ Start"}</button>
-                <button className="tool-btn ghost" onClick={F.skip}>⏭</button>
-                <button className="tool-btn ghost" onClick={F.reset}>↺</button>
-              </div>
-              <div className="pomo-settings small">
-                <div className="pomo-set-group"><span>Focus</span>{PF.map((m) => <button key={m} className={"pomo-chip" + (s.focusMin === m ? " on" : "")} onClick={() => F.setFocus(m)}>{m}</button>)}</div>
-                <div className="pomo-set-group"><span>Break</span>{PB.map((m) => <button key={m} className={"pomo-chip" + (s.breakMin === m ? " on" : "")} onClick={() => F.setBreak(m)}>{m}</button>)}</div>
-              </div>
-              <div className="pomo-stats small"><strong>{s.sessions}</strong> today · <strong>{s.minutes}</strong> min</div>
-            </div>
-
-            <div className="focus-sounds">
-              <div className="fs-title">🎧 Study music</div>
-              <div className="fs-options">
-                {TRACKS.map((t) => (
-                  <button key={t.name} className={"fs-opt" + (track === t.yt ? " on" : "")} onClick={() => setTrack(t.yt)} title={t.name}>
-                    <span className="fs-ic">{t.ic}</span><span className="fs-lbl">{t.name}</span>
-                  </button>
-                ))}
-              </div>
-              <div className="fs-custom">
-                <input type="text" placeholder="Paste a YouTube link (flute, etc.)" value={customUrl}
-                  onChange={(e) => setCustomUrl(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") playCustom(); }} />
-                <button className="tool-btn" onClick={playCustom}>▶</button>
-              </div>
-              {track && <div className="fs-now">🔊 Playing — keeps going when you close this or change pages.</div>}
-              <p className="fs-note">Music streams from YouTube. Tap a tile to play, Off to stop.</p>
-            </div>
-
-            <button className="focus-hide-link" onClick={() => F.setHidden(true)}>Hide this button — bring it back from Tools → Focus Timer</button>
+        {/* Always mounted; toggled on/off-screen via CSS so the music iframe keeps playing when closed + across navigation. */}
+        <div className={"focus-panel " + (open ? "open" : "closed")} role="dialog" aria-label="Focus timer and study music" aria-hidden={!open}>
+          <div className="focus-panel-head">
+            <strong>🍅 Focus &amp; Music</strong>
+            <button className="focus-x" onClick={() => setOpen(false)} aria-label="Close" tabIndex={open ? 0 : -1}>✕</button>
           </div>
-        )}
+
+          <div className="focus-mini">
+            <div className={"pomo-ring small " + (s.mode === "focus" ? "focus" : "rest")} style={{ "--pct": pct + "%" }}>
+              <div className="pomo-inner">
+                <div className="pomo-time">{mm}:{ss}</div>
+                <div className="pomo-mode">{label}</div>
+              </div>
+            </div>
+            <div className="pomo-dots">{Array.from({ length: F.LONG_AFTER }).map((_, i) => <span key={i} className={"pomo-dot" + (i < s.cycle ? " on" : "")} />)}</div>
+            <div className="tool-row btns pomo-btns">
+              <button className="tool-btn" onClick={F.startStop} tabIndex={open ? 0 : -1}>{running ? "⏸ Pause" : "▶ Start"}</button>
+              <button className="tool-btn ghost" onClick={F.skip} tabIndex={open ? 0 : -1}>⏭</button>
+              <button className="tool-btn ghost" onClick={F.reset} tabIndex={open ? 0 : -1}>↺</button>
+            </div>
+            <div className="pomo-settings small">
+              <div className="pomo-set-group"><span>Focus</span>{PF.map((m) => <button key={m} className={"pomo-chip" + (s.focusMin === m ? " on" : "")} onClick={() => F.setFocus(m)} tabIndex={open ? 0 : -1}>{m}</button>)}</div>
+              <div className="pomo-set-group"><span>Break</span>{PB.map((m) => <button key={m} className={"pomo-chip" + (s.breakMin === m ? " on" : "")} onClick={() => F.setBreak(m)} tabIndex={open ? 0 : -1}>{m}</button>)}</div>
+            </div>
+            <div className="pomo-stats small"><strong>{s.sessions}</strong> today · <strong>{s.minutes}</strong> min</div>
+          </div>
+
+          <div className="focus-sounds">
+            <div className="fs-title">🎧 Study music{nowName ? " — " + nowName : ""}</div>
+            {track && (
+              <iframe className="focus-yt" title="Study music"
+                src={"https://www.youtube-nocookie.com/embed/" + track + "?autoplay=1&playsinline=1"}
+                allow="autoplay; encrypted-media" />
+            )}
+            <div className="fs-options">
+              {TRACKS.map((t) => (
+                <button key={t.name} className={"fs-opt" + (track === t.yt ? " on" : "")} onClick={() => setTrack(t.yt)} title={t.name} tabIndex={open ? 0 : -1}>
+                  <span className="fs-ic">{t.ic}</span><span className="fs-lbl">{t.name}</span>
+                </button>
+              ))}
+            </div>
+            <div className="fs-custom">
+              <input type="text" placeholder="Paste a YouTube link (flute, etc.)" value={customUrl} tabIndex={open ? 0 : -1}
+                onChange={(e) => setCustomUrl(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") playCustom(); }} />
+              <button className="tool-btn" onClick={playCustom} tabIndex={open ? 0 : -1}>▶</button>
+            </div>
+            <p className="fs-note">Music streams from YouTube — tap once to start it. Tap Off to stop.</p>
+          </div>
+
+          <button className="focus-hide-link" onClick={() => F.setHidden(true)} tabIndex={open ? 0 : -1}>Hide this button — bring it back from Tools → Focus Timer</button>
+        </div>
       </>
     );
   }

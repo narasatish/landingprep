@@ -349,7 +349,7 @@ function TopBar({ current = "home", onNav }) {
     setOpen(false);
     onNav("login");
   } }, "Log in / Sign up"), user && /* @__PURE__ */ React.createElement("button", { className: "btn", style: { marginTop: 10 }, onClick: () => {
-    window.LP_AUTH.signOut();
+    if (window.LP_AUTH) window.LP_AUTH.signOut();
     setOpen(false);
   } }, "Sign out"))));
 }
