@@ -371,50 +371,7 @@
     );
   }
 
-  // ── 8. Focus timer (Pomodoro) ────────────────────────────────────────────
-  function Pomodoro() {
-    const FOCUS = 25 * 60, BREAK = 5 * 60;
-    const [secs, setSecs] = useState(FOCUS);
-    const [running, setRunning] = useState(false);
-    const [mode, setMode] = useState("focus");
-    const [done, setDone] = useState(0);
-    useEffect(() => {
-      if (!running) return;
-      const t = setInterval(() => {
-        setSecs((s) => {
-          if (s > 1) return s - 1;
-          // reached zero → switch mode
-          if (mode === "focus") { setDone((d) => d + 1); setMode("break"); return BREAK; }
-          setMode("focus"); return FOCUS;
-        });
-      }, 1000);
-      return () => clearInterval(t);
-    }, [running, mode]);
-    const total = mode === "focus" ? FOCUS : BREAK;
-    const pct = Math.round(((total - secs) / total) * 100);
-    const mm = String(Math.floor(secs / 60)).padStart(2, "0");
-    const ss = String(secs % 60).padStart(2, "0");
-    const reset = () => { setRunning(false); setMode("focus"); setSecs(FOCUS); };
-    return (
-      <div className="tool-card">
-        <h2>🍅 Focus Timer</h2>
-        <p className="tool-sub">The Pomodoro technique: 25 minutes of focused study, then a 5-minute break. Repeat to beat procrastination and study longer without burning out.</p>
-        <div className="pomo-wrap">
-          <div className={"pomo-ring " + mode} style={{ "--pct": pct + "%" }}>
-            <div className="pomo-inner">
-              <div className="pomo-time">{mm}:{ss}</div>
-              <div className="pomo-mode">{mode === "focus" ? "Focus" : "Break"}</div>
-            </div>
-          </div>
-          <div className="tool-row btns">
-            <button className="tool-btn" onClick={() => setRunning((r) => !r)}>{running ? "⏸ Pause" : "▶ Start"}</button>
-            <button className="tool-btn ghost" onClick={reset}>↺ Reset</button>
-          </div>
-          <div className="pomo-count">✅ {done} focus session{done === 1 ? "" : "s"} completed</div>
-        </div>
-      </div>
-    );
-  }
+  // ── Focus Timer lives in its own module (screens/focus-timer.jsx → LP_FocusTimer). ──
 
   // Tool launcher metadata (icon + name + one-liner). Order = display order.
   const TOOLS_META = [
@@ -481,7 +438,9 @@
             {tab === "reading" && <ReadingSpeed />}
             {tab === "shadow" && <Shadow />}
             {tab === "countdown" && <Countdown />}
-            {tab === "timer" && <Pomodoro />}
+            {tab === "timer" && (window.LP_FocusTimer
+              ? <window.LP_FocusTimer />
+              : <div className="tool-card"><p className="tool-sub">Focus timer is loading…</p></div>)}
           </div>
           <div className="tools-foot">
             <a className="tool-btn ghost" onClick={() => onNav && onNav("colleges")}>🏛️ College predictor &amp; study-abroad tools →</a>

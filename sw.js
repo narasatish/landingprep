@@ -1,6 +1,6 @@
 // LandingPrep service worker — offline support.
 // Bump CACHE_VERSION on every deploy so clients pick up new assets.
-const CACHE_VERSION = "lp-v165";
+const CACHE_VERSION = "lp-v166";
 const CORE = [
   "./",
   "./index.html",

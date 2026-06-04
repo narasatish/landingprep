@@ -224,39 +224,6 @@
     const pace = days != null && days > 0 ? days >= 56 ? "Plenty of time \u2014 a steady 1\u20132 hours a day will do it." : days >= 21 ? "Good runway \u2014 aim for 2 hours a day and a full mock each week." : days >= 7 ? "Crunch time \u2014 2\u20133 focused hours a day and daily section drills." : "Final stretch \u2014 light revision, a mock yesterday, and rest before test day." : null;
     return /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h2", null, "\u23F3 Exam Countdown"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Pick your test date to see how long you have \u2014 and the study pace that fits."), /* @__PURE__ */ React.createElement("div", { className: "tool-row" }, /* @__PURE__ */ React.createElement("label", null, "My test date", /* @__PURE__ */ React.createElement("input", { type: "date", value: date, onChange: (e) => setDate(e.target.value) }))), days != null && (days > 0 ? /* @__PURE__ */ React.createElement("div", { className: "countdown-out good" }, /* @__PURE__ */ React.createElement("div", { className: "countdown-big" }, days, /* @__PURE__ */ React.createElement("span", null, " day", days === 1 ? "" : "s")), /* @__PURE__ */ React.createElement("div", { className: "countdown-sub" }, "\u2248 ", weeks, " week", weeks === 1 ? "" : "s", " away"), /* @__PURE__ */ React.createElement("div", { className: "countdown-pace" }, pace)) : days === 0 ? /* @__PURE__ */ React.createElement("div", { className: "countdown-out warn" }, /* @__PURE__ */ React.createElement("div", { className: "countdown-big" }, "Today \u{1F3AF}"), /* @__PURE__ */ React.createElement("div", { className: "countdown-pace" }, "It's test day \u2014 stay calm, you've got this. Arrive early and breathe.")) : /* @__PURE__ */ React.createElement("div", { className: "countdown-out idle" }, /* @__PURE__ */ React.createElement("div", { className: "countdown-sub" }, "That date has passed. Pick an upcoming date, or book your next attempt and aim higher."))));
   }
-  function Pomodoro() {
-    const FOCUS = 25 * 60, BREAK = 5 * 60;
-    const [secs, setSecs] = useState(FOCUS);
-    const [running, setRunning] = useState(false);
-    const [mode, setMode] = useState("focus");
-    const [done, setDone] = useState(0);
-    useEffect(() => {
-      if (!running) return;
-      const t = setInterval(() => {
-        setSecs((s) => {
-          if (s > 1) return s - 1;
-          if (mode === "focus") {
-            setDone((d) => d + 1);
-            setMode("break");
-            return BREAK;
-          }
-          setMode("focus");
-          return FOCUS;
-        });
-      }, 1e3);
-      return () => clearInterval(t);
-    }, [running, mode]);
-    const total = mode === "focus" ? FOCUS : BREAK;
-    const pct = Math.round((total - secs) / total * 100);
-    const mm = String(Math.floor(secs / 60)).padStart(2, "0");
-    const ss = String(secs % 60).padStart(2, "0");
-    const reset = () => {
-      setRunning(false);
-      setMode("focus");
-      setSecs(FOCUS);
-    };
-    return /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h2", null, "\u{1F345} Focus Timer"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "The Pomodoro technique: 25 minutes of focused study, then a 5-minute break. Repeat to beat procrastination and study longer without burning out."), /* @__PURE__ */ React.createElement("div", { className: "pomo-wrap" }, /* @__PURE__ */ React.createElement("div", { className: "pomo-ring " + mode, style: { "--pct": pct + "%" } }, /* @__PURE__ */ React.createElement("div", { className: "pomo-inner" }, /* @__PURE__ */ React.createElement("div", { className: "pomo-time" }, mm, ":", ss), /* @__PURE__ */ React.createElement("div", { className: "pomo-mode" }, mode === "focus" ? "Focus" : "Break"))), /* @__PURE__ */ React.createElement("div", { className: "tool-row btns" }, /* @__PURE__ */ React.createElement("button", { className: "tool-btn", onClick: () => setRunning((r) => !r) }, running ? "\u23F8 Pause" : "\u25B6 Start"), /* @__PURE__ */ React.createElement("button", { className: "tool-btn ghost", onClick: reset }, "\u21BA Reset")), /* @__PURE__ */ React.createElement("div", { className: "pomo-count" }, "\u2705 ", done, " focus session", done === 1 ? "" : "s", " completed")));
-  }
   const TOOLS_META = [
     { id: "planner", icon: "\u{1F4C5}", name: "AI Study Plan", desc: "Personalised plan to your test date" },
     { id: "convert", icon: "\u{1F501}", name: "Score Converter", desc: "IELTS \xB7 TOEFL \xB7 PTE \xB7 CELPIP \xB7 DET" },
@@ -302,7 +269,7 @@
       /* @__PURE__ */ React.createElement("span", { className: "tlc-icon" }, t.icon),
       /* @__PURE__ */ React.createElement("span", { className: "tlc-name" }, t.name),
       /* @__PURE__ */ React.createElement("span", { className: "tlc-desc" }, t.desc)
-    ))), /* @__PURE__ */ React.createElement("div", { className: "tool-panel", key: tab }, tab === "planner" && (window.LP_StudyPlannerPanel ? /* @__PURE__ */ React.createElement(window.LP_StudyPlannerPanel, { onNav }) : /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Study planner is loading\u2026"))), tab === "convert" && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Converter, null), /* @__PURE__ */ React.createElement(Eligibility, null)), tab === "clb" && /* @__PURE__ */ React.createElement(CLBConverter, null), tab === "writing" && /* @__PURE__ */ React.createElement(WordCheck, null), tab === "reading" && /* @__PURE__ */ React.createElement(ReadingSpeed, null), tab === "shadow" && /* @__PURE__ */ React.createElement(Shadow, null), tab === "countdown" && /* @__PURE__ */ React.createElement(Countdown, null), tab === "timer" && /* @__PURE__ */ React.createElement(Pomodoro, null)), /* @__PURE__ */ React.createElement("div", { className: "tools-foot" }, /* @__PURE__ */ React.createElement("a", { className: "tool-btn ghost", onClick: () => onNav && onNav("colleges") }, "\u{1F3DB}\uFE0F College predictor & study-abroad tools \u2192"))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
+    ))), /* @__PURE__ */ React.createElement("div", { className: "tool-panel", key: tab }, tab === "planner" && (window.LP_StudyPlannerPanel ? /* @__PURE__ */ React.createElement(window.LP_StudyPlannerPanel, { onNav }) : /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Study planner is loading\u2026"))), tab === "convert" && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Converter, null), /* @__PURE__ */ React.createElement(Eligibility, null)), tab === "clb" && /* @__PURE__ */ React.createElement(CLBConverter, null), tab === "writing" && /* @__PURE__ */ React.createElement(WordCheck, null), tab === "reading" && /* @__PURE__ */ React.createElement(ReadingSpeed, null), tab === "shadow" && /* @__PURE__ */ React.createElement(Shadow, null), tab === "countdown" && /* @__PURE__ */ React.createElement(Countdown, null), tab === "timer" && (window.LP_FocusTimer ? /* @__PURE__ */ React.createElement(window.LP_FocusTimer, null) : /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Focus timer is loading\u2026")))), /* @__PURE__ */ React.createElement("div", { className: "tools-foot" }, /* @__PURE__ */ React.createElement("a", { className: "tool-btn ghost", onClick: () => onNav && onNav("colleges") }, "\u{1F3DB}\uFE0F College predictor & study-abroad tools \u2192"))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
   }
   window.LP_Tools = Tools;
 })();
