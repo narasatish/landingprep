@@ -141,11 +141,17 @@ for (const v of ["exam-prep", "exams", "learning", "agents", "colleges", "tools"
   check(`route "${v}" wired in app.jsx`, new RegExp('=== "' + v + '"|head === "' + v + '"|id === "' + v + '"').test(appSrc));
 check("colleges view renders LP_Colleges", /view === "colleges"/.test(appSrc) && /window\.LP_Colleges/.test(appSrc));
 check("planner deep-link folds into tools", /head === "planner"/.test(appSrc) && /id === "planner"/.test(appSrc));
-check("every screen jsx is included in index.html", (() => {
+check("every screen jsx is wired (eager tag or lazy-loaded)", (() => {
   const screens = fs.readdirSync(path.join(ROOT, "screens")).filter(f => f.endsWith(".jsx"));
-  const miss = screens.filter(f => !html.includes("screens/" + f) && !html.includes("screens/" + f.replace(/\.jsx$/, ".js")));
+  // A screen counts as wired if it has an eager <script> in index.html OR is lazy-loaded on
+  // demand — referenced via LP_loadScript / LazyScreen scripts=[...] anywhere in the source
+  // (allSrc = index.html + all jsx). This lets us defer heavy screens off the initial load.
+  const miss = screens.filter(f => {
+    const js = "screens/" + f.replace(/\.jsx$/, ".js");
+    return !html.includes("screens/" + f) && !html.includes(js) && !allSrc.includes(js);
+  });
   return miss.length === 0 || miss.join(",");
-})() === true, "some screens not in index.html");
+})() === true, "some screens neither in index.html nor lazy-loaded");
 
 // ── 7. Colleges & Tools panels ───────────────────────────────────────────────
 group("Colleges & Tools panels");

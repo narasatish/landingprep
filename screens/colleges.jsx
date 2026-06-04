@@ -56,6 +56,13 @@
     const [country, setCountry] = useState(validCountry ? initialCountry : "USA");
     const [findMode, setFindMode] = useState("predict"); // predict | program
     const [uniMode, setUniMode] = useState("rankings");   // rankings | compare
+    const [, setLazyTick] = useState(0); // re-render when an on-demand panel bundle finishes loading
+    useEffect(() => {
+      // Lazy-load panel bundles kept off the initial app load (currently the SOP tool, ~47 KB).
+      if (tab === "sop" && window.LP_loadScript && !window.LP_SOPPanel) {
+        window.LP_loadScript("screens/sop-tool.js").then(() => setLazyTick((t) => t + 1)).catch(() => {});
+      }
+    }, [tab]);
     useEffect(() => {
       if (!window.LP_SEO) return;
       const n = (window.LP_COLLEGES || []).length || 99;

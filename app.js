@@ -146,8 +146,47 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
       onClick: () => setTab("writing")
     },
     "\u270D\uFE0F AI Writing Agent"
-  )), tab === "speaking" && support.speaking ? /* @__PURE__ */ React.createElement(window.LP_SpeakingAgent, { exam }) : /* @__PURE__ */ React.createElement(window.LP_WritingAgent, { exam }))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
+  )), tab === "speaking" && support.speaking ? /* @__PURE__ */ React.createElement(LazyScreen, { key: "agent-speaking", scripts: ["screens/speaking-agent.js"], isReady: () => !!window.LP_SpeakingAgent, label: "the speaking agent" }, () => /* @__PURE__ */ React.createElement(window.LP_SpeakingAgent, { exam })) : /* @__PURE__ */ React.createElement(LazyScreen, { key: "agent-writing", scripts: ["screens/writing-agent.js"], isReady: () => !!window.LP_WritingAgent, label: "the writing agent" }, () => /* @__PURE__ */ React.createElement(window.LP_WritingAgent, { exam })))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
 }
+function LazyScreen({ scripts, isReady, label, children }) {
+  const ready0 = () => {
+    try {
+      return !!isReady();
+    } catch (e) {
+      return false;
+    }
+  };
+  const [ok, setOk] = useStateApp(ready0());
+  const [failed, setFailed] = useStateApp(false);
+  useEffectApp(() => {
+    if (ready0()) {
+      setOk(true);
+      return;
+    }
+    let live = true;
+    const fail = () => {
+      if (live) setFailed(true);
+    };
+    if (!window.LP_loadScript) {
+      fail();
+      return;
+    }
+    (scripts || []).reduce((p, s) => p.then(() => ready0() ? null : window.LP_loadScript(s)), Promise.resolve()).then(() => {
+      if (!live) return;
+      ready0() ? setOk(true) : fail();
+    }).catch(fail);
+    return () => {
+      live = false;
+    };
+  }, []);
+  const wrap = { textAlign: "center", padding: "12vh 20px", maxWidth: 460, margin: "0 auto" };
+  if (ok && ready0()) return children();
+  if (failed) {
+    return /* @__PURE__ */ React.createElement("main", { className: "tools-shell", style: wrap }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 42 } }, "\u{1F4F6}"), /* @__PURE__ */ React.createElement("h2", { style: { margin: "10px 0 6px" } }, "Couldn\u2019t load ", label || "this section"), /* @__PURE__ */ React.createElement("p", { style: { color: "var(--ink-3)", marginBottom: 18 } }, "Usually a slow or dropped connection \u2014 your saved progress is safe."), /* @__PURE__ */ React.createElement("button", { className: "btn", style: { background: "#4F46E5", color: "#fff" }, onClick: () => location.reload() }, "Reload"));
+  }
+  return /* @__PURE__ */ React.createElement("main", { className: "tools-shell", style: wrap }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 40 } }, "\u23F3"), /* @__PURE__ */ React.createElement("h2", { style: { margin: "10px 0 6px" } }, "Loading ", label || "\u2026", "\u2026"));
+}
+window.LP_LazyScreen = LazyScreen;
 function MockTestGate(props) {
   const present = () => !!window.LP_MockTest && typeof window.LP_QUESTIONS !== "undefined";
   const [ready, setReady] = useStateApp(present());
@@ -201,6 +240,15 @@ function App() {
     }
     window.scrollTo({ top: 0, behavior: "instant" });
   }, [view, exam]);
+  useEffectApp(() => {
+    const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1800));
+    idle(() => {
+      if (window.LP_loadScript && typeof window.LP_COLLEGES === "undefined") {
+        window.LP_loadScript("college-data.js").catch(() => {
+        });
+      }
+    });
+  }, []);
   useEffectApp(() => {
     const apply = () => {
       const parsed = hashToView(window.location.hash, exams);
@@ -433,7 +481,7 @@ function App() {
   } else if (view === "tools") {
     content = /* @__PURE__ */ React.createElement(window.LP_Tools, { onNav, initialTab: (window.location.hash || "").indexOf("planner") >= 0 ? "planner" : void 0 });
   } else if (view === "colleges") {
-    content = /* @__PURE__ */ React.createElement(window.LP_Colleges, { onNav, initialTab: collegesTab, initialCountry: collegesCountry });
+    content = /* @__PURE__ */ React.createElement(LazyScreen, { scripts: ["college-data.js"], isReady: () => typeof window.LP_COLLEGES !== "undefined", label: "study-abroad data" }, () => /* @__PURE__ */ React.createElement(window.LP_Colleges, { onNav, initialTab: collegesTab, initialCountry: collegesCountry }));
   } else if (view === "blog") {
     content = /* @__PURE__ */ React.createElement(window.LP_Blog, { onNav });
   } else if (view === "languages") {

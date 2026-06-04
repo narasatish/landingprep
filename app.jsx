@@ -181,8 +181,8 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
             </div>
 
             {tab === "speaking" && support.speaking
-              ? <window.LP_SpeakingAgent exam={exam} />
-              : <window.LP_WritingAgent exam={exam} />}
+              ? <LazyScreen key="agent-speaking" scripts={["screens/speaking-agent.js"]} isReady={() => !!window.LP_SpeakingAgent} label="the speaking agent">{() => <window.LP_SpeakingAgent exam={exam} />}</LazyScreen>
+              : <LazyScreen key="agent-writing" scripts={["screens/writing-agent.js"]} isReady={() => !!window.LP_WritingAgent} label="the writing agent">{() => <window.LP_WritingAgent exam={exam} />}</LazyScreen>}
           </>
         )}
       </div>
@@ -190,6 +190,44 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
     </>
   );
 }
+
+// Generic lazy-screen gate: loads `scripts` (in order) on mount only if `isReady()` is
+// false, then renders children(). Shows a loading card while loading and a recovery card
+// on failure (never a blank). Reusable for any deferred screen/data bundle.
+function LazyScreen({ scripts, isReady, label, children }) {
+  const ready0 = () => { try { return !!isReady(); } catch (e) { return false; } };
+  const [ok, setOk] = useStateApp(ready0());
+  const [failed, setFailed] = useStateApp(false);
+  useEffectApp(() => {
+    if (ready0()) { setOk(true); return; }
+    let live = true;
+    const fail = () => { if (live) setFailed(true); };
+    if (!window.LP_loadScript) { fail(); return; }
+    (scripts || []).reduce((p, s) => p.then(() => (ready0() ? null : window.LP_loadScript(s))), Promise.resolve())
+      .then(() => { if (!live) return; ready0() ? setOk(true) : fail(); })
+      .catch(fail);
+    return () => { live = false; };
+  }, []);
+  const wrap = { textAlign: "center", padding: "12vh 20px", maxWidth: 460, margin: "0 auto" };
+  if (ok && ready0()) return children();
+  if (failed) {
+    return (
+      <main className="tools-shell" style={wrap}>
+        <div style={{ fontSize: 42 }}>📶</div>
+        <h2 style={{ margin: "10px 0 6px" }}>Couldn’t load {label || "this section"}</h2>
+        <p style={{ color: "var(--ink-3)", marginBottom: 18 }}>Usually a slow or dropped connection — your saved progress is safe.</p>
+        <button className="btn" style={{ background: "#4F46E5", color: "#fff" }} onClick={() => location.reload()}>Reload</button>
+      </main>
+    );
+  }
+  return (
+    <main className="tools-shell" style={wrap}>
+      <div style={{ fontSize: 40 }}>⏳</div>
+      <h2 style={{ margin: "10px 0 6px" }}>Loading {label || "…"}…</h2>
+    </main>
+  );
+}
+window.LP_LazyScreen = LazyScreen;
 
 // Lazily load the ~300 KB test runner (screens/mock-test.js) + question bank
 // (data-questions.js) only when the user actually starts a test — keeps them off the
@@ -259,6 +297,17 @@ function App() {
     }
     window.scrollTo({ top: 0, behavior: "instant" });
   }, [view, exam]);
+
+  // Idle-preload the study-abroad data bundle (~79 KB) shortly after boot so it is ready by
+  // the time the user opens any college/study-abroad screen — without blocking initial load.
+  useEffectApp(() => {
+    const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1800));
+    idle(() => {
+      if (window.LP_loadScript && typeof window.LP_COLLEGES === "undefined") {
+        window.LP_loadScript("college-data.js").catch(() => {});
+      }
+    });
+  }, []);
 
   // ── Listen for back/forward (popstate) and direct hash edits (hashchange) ──
   useEffectApp(() => {
@@ -418,7 +467,7 @@ function App() {
   } else if (view === "tools") {
     content = <window.LP_Tools onNav={onNav} initialTab={(window.location.hash || "").indexOf("planner") >= 0 ? "planner" : undefined} />;
   } else if (view === "colleges") {
-    content = <window.LP_Colleges onNav={onNav} initialTab={collegesTab} initialCountry={collegesCountry} />;
+    content = <LazyScreen scripts={["college-data.js"]} isReady={() => typeof window.LP_COLLEGES !== "undefined"} label="study-abroad data">{() => <window.LP_Colleges onNav={onNav} initialTab={collegesTab} initialCountry={collegesCountry} />}</LazyScreen>;
   } else if (view === "blog") {
     content = <window.LP_Blog onNav={onNav} />;
   } else if (view === "languages") {

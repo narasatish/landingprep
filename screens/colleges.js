@@ -46,6 +46,13 @@
     const [country, setCountry] = useState(validCountry ? initialCountry : "USA");
     const [findMode, setFindMode] = useState("predict");
     const [uniMode, setUniMode] = useState("rankings");
+    const [, setLazyTick] = useState(0);
+    useEffect(() => {
+      if (tab === "sop" && window.LP_loadScript && !window.LP_SOPPanel) {
+        window.LP_loadScript("screens/sop-tool.js").then(() => setLazyTick((t) => t + 1)).catch(() => {
+        });
+      }
+    }, [tab]);
     useEffect(() => {
       if (!window.LP_SEO) return;
       const n = (window.LP_COLLEGES || []).length || 99;

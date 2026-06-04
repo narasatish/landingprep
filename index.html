@@ -302,7 +302,7 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=160" />
+  <link rel="stylesheet" href="theme.css?v=161" />
 </head>
 <body>
   <div id="root"></div>
@@ -322,81 +322,79 @@
   </script>
 
   <!-- Data layer -->
-  <script src="data.js?v=160"></script>
+  <script src="data.js?v=161"></script>
   <!-- data-questions.js (~142 KB) is lazy-loaded with the test runner via MockTestGate when a mock starts -->
-  <script src="gemini-tts.js?v=160"></script>
-  <script src="seo.js?v=160"></script>
-  <script src="test-catalog.js?v=160"></script>
-  <script src="normalize-test.js?v=160"></script>
-  <script src="learning-hub-catalog.js?v=160"></script>
-  <script src="visual-renderer.js?v=160"></script>
+  <script src="gemini-tts.js?v=161"></script>
+  <script src="seo.js?v=161"></script>
+  <script src="test-catalog.js?v=161"></script>
+  <script src="normalize-test.js?v=161"></script>
+  <script src="learning-hub-catalog.js?v=161"></script>
+  <script src="visual-renderer.js?v=161"></script>
 
   <!-- Auth + AI Tutor + Chatbot (must load before screens) -->
-  <script src="auth.js?v=160"></script>
-  <script src="reminders.js?v=160"></script>
-  <script src="md.js?v=160"></script>
-  <script src="ai-tutor.js?v=160"></script>
-  <script src="chatbot-widget.js?v=160"></script>
+  <script src="auth.js?v=161"></script>
+  <script src="reminders.js?v=161"></script>
+  <script src="md.js?v=161"></script>
+  <script src="ai-tutor.js?v=161"></script>
+  <script src="chatbot-widget.js?v=161"></script>
 
   <!-- Screens -->
-  <script src="screens/pte-renderer.js?v=160"></script>
-  <script src="screens/pte-listening-renderer.js?v=160"></script>
-  <script src="screens/pte-sw-renderer.js?v=160"></script>
-  <script src="screens/celpip-renderer.js?v=160"></script>
-  <script src="screens/home.js?v=160"></script>
-  <script src="screens/guide.js?v=160"></script>
+  <script src="screens/pte-renderer.js?v=161"></script>
+  <script src="screens/pte-listening-renderer.js?v=161"></script>
+  <script src="screens/pte-sw-renderer.js?v=161"></script>
+  <script src="screens/celpip-renderer.js?v=161"></script>
+  <script src="screens/home.js?v=161"></script>
+  <script src="screens/guide.js?v=161"></script>
   <!-- screens/mock-test.js (~160 KB) is lazy-loaded on demand by MockTestGate when a mock starts -->
-  <script src="screens/learning-club.js?v=160"></script>
-  <script src="screens/speaking-agent.js?v=160"></script>
-  <script src="screens/writing-agent.js?v=160"></script>
-  <script src="screens/error-log.js?v=160"></script>
-  <script src="screens/progress.js?v=160"></script>
-  <script src="screens/exam-prep.js?v=160"></script>
-  <script src="college-data.js?v=160"></script>
-  <script src="screens/college-tools.js?v=160"></script>
-  <script src="screens/sop-tool.js?v=160"></script>
-  <script src="screens/calculators.js?v=160"></script>
-  <script src="scholarship-data.js?v=160"></script>
-  <script src="screens/scholarship-tool.js?v=160"></script>
-  <script src="country-data.js?v=160"></script>
-  <script src="live-data.js?v=160"></script>
-  <script src="firebase-config.js?v=160"></script>
-  <script src="country-landmarks.js?v=160"></script>
-  <script src="screens/destinations.js?v=160"></script>
-  <script src="screens/counsellor.js?v=160"></script>
-  <script src="screens/profile-eval.js?v=160"></script>
-  <script src="screens/compare.js?v=160"></script>
-  <script src="screens/apply-partners.js?v=160"></script>
-  <script src="screens/visa-interview.js?v=160"></script>
-  <script src="screens/onboarding.js?v=160"></script>
-  <script src="screens/community.js?v=160"></script>
-  <script src="screens/leaderboard.js?v=160"></script>
-  <script src="screens/tools.js?v=160"></script>
-  <script src="screens/colleges.js?v=160"></script>
-  <script src="screens/study-planner.js?v=160"></script>
-  <script src="blog-data.js?v=160"></script>
-  <script src="seo-pages.js?v=160"></script>
+  <script src="screens/learning-club.js?v=161"></script>
+  <!-- speaking-agent.js (~37 KB) + writing-agent.js (~81 KB) are lazy-loaded by LazyScreen when the AI agent tab opens -->
+  <script src="screens/error-log.js?v=161"></script>
+  <script src="screens/progress.js?v=161"></script>
+  <script src="screens/exam-prep.js?v=161"></script>
+  <!-- college-data.js (~79 KB) is lazy-loaded by the Colleges hub gate (+ idle-preload); sop-tool.js (~47 KB) loads when the SOP tab opens -->
+  <script src="screens/college-tools.js?v=161"></script>
+  <script src="screens/calculators.js?v=161"></script>
+  <script src="scholarship-data.js?v=161"></script>
+  <script src="screens/scholarship-tool.js?v=161"></script>
+  <script src="country-data.js?v=161"></script>
+  <script src="live-data.js?v=161"></script>
+  <script src="firebase-config.js?v=161"></script>
+  <script src="country-landmarks.js?v=161"></script>
+  <script src="screens/destinations.js?v=161"></script>
+  <script src="screens/counsellor.js?v=161"></script>
+  <script src="screens/profile-eval.js?v=161"></script>
+  <script src="screens/compare.js?v=161"></script>
+  <script src="screens/apply-partners.js?v=161"></script>
+  <script src="screens/visa-interview.js?v=161"></script>
+  <script src="screens/onboarding.js?v=161"></script>
+  <script src="screens/community.js?v=161"></script>
+  <script src="screens/leaderboard.js?v=161"></script>
+  <script src="screens/tools.js?v=161"></script>
+  <script src="screens/colleges.js?v=161"></script>
+  <script src="screens/study-planner.js?v=161"></script>
+  <script src="blog-data.js?v=161"></script>
+  <script src="seo-pages.js?v=161"></script>
 
   <!-- App router (must be last) -->
-  <script src="language-data.js?v=160"></script>
-  <script src="screens/languages.js?v=160"></script>
-  <script src="screens/lang-speaking.js?v=160"></script>
-  <script src="lang-mock-data.js?v=160"></script>
-  <script src="screens/lang-mock.js?v=160"></script>
+  <script src="language-data.js?v=161"></script>
+  <script src="screens/languages.js?v=161"></script>
+  <script src="screens/lang-speaking.js?v=161"></script>
+  <script src="lang-mock-data.js?v=161"></script>
+  <script src="screens/lang-mock.js?v=161"></script>
   <!-- slide-decks-data.js (~384 KB) is lazy-loaded on demand by the Lessons screen via window.LP_loadScript -->
-  <script src="screens/slide-deck.js?v=160"></script>
-  <script src="screens/learn-hub.js?v=160"></script>
-  <script src="gamify.js?v=160"></script>
-  <script src="share-card.js?v=160"></script>
-  <script src="vocab-data.js?v=160"></script>
-  <script src="lang-stories-data.js?v=160"></script>
-  <script src="sa-extra-data.js?v=160"></script>
-  <script src="screens/vocabulary.js?v=160"></script>
-  <script src="screens/relocate.js?v=160"></script>
-  <script src="screens/test-finder.js?v=160"></script>
-  <script src="screens/achievements.js?v=160"></script>
-  <script src="screens/band-checker.js?v=160"></script>
-  <script src="app.js?v=160"></script>
+  <script src="screens/slide-deck.js?v=161"></script>
+  <script src="screens/learn-hub.js?v=161"></script>
+  <script src="gamify.js?v=161"></script>
+  <script src="share-card.js?v=161"></script>
+  <script src="vocab-data.js?v=161"></script>
+  <script src="lang-stories-data.js?v=161"></script>
+  <script src="sa-extra-data.js?v=161"></script>
+  <script src="screens/vocabulary.js?v=161"></script>
+  <script src="screens/relocate.js?v=161"></script>
+  <script src="screens/test-finder.js?v=161"></script>
+  <script src="screens/achievements.js?v=161"></script>
+  <script src="screens/band-checker.js?v=161"></script>
+  <script src="app.js?v=161"></script>
 </body>
 </html>
 
