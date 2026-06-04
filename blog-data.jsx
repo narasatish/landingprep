@@ -357,6 +357,393 @@
         { h: "Improve every lever", body: "You cannot change your past grades, but you can strengthen your essays, recommendations and test scores now. A higher IELTS/PTE/GRE score directly improves both admission and scholarship chances." },
         { h: "Find scholarships free", body: "Use LandingPrep's free scholarship finder and country scholarship pages to discover funding you qualify for, and the free SOP builder to write standout essays." }
       ]
+    },
+    {
+      id: "toefl-writing-tips-template", tag: "TOEFL", date: "2026",
+      title: "TOEFL Writing Tips & Essay Template: Integrated & Independent Essays",
+      excerpt: "Master TOEFL writing with a proven structure for both Integrated and Independent essays, plus templates, common mistakes and scoring rubrics.",
+      kw: "toefl writing tips, toefl essay template, toefl integrated writing, toefl independent writing, how to score 25+ toefl writing",
+      sections: [
+        { h: "What TOEFL writing tests", body: "The TOEFL writing section has two tasks: Integrated Writing (20 minutes — read + listen + write a summary) and Independent Writing (30 minutes — an opinion essay). Combined, they make up about one-quarter of your TOEFL score. Structure and clarity matter more than fancy vocabulary." },
+        { h: "Integrated Writing strategy", body: "Listen actively and note the speaker's main idea and key points. Your task is to report what you heard, not agree or disagree. Use phrases like 'The speaker argues that…', 'The reading states…', and 'However, the speaker counters this by…' to signal relationships. Aim for 150–225 words." },
+        { h: "Independent essay structure", body: "Introduction: paraphrase the prompt and state your position clearly. Body 1: your first reason with an example or explanation. Body 2: a second reason with detail. Conclusion: restate your position. Use clear topic sentences and link your paragraphs with transitions." },
+        { h: "Avoid these writing traps", body: "Introducing ideas you don't develop, writing too long (500+ words), ignoring the prompt's exact question, and submitting an essay with uncorrected spelling or grammar errors. Proofreading takes three minutes — never skip it." },
+        { h: "Practice under timing", body: "TOEFL writing is timed and you cannot edit after submission. Write practice essays with a timer and resist the urge to rewrite endlessly — aim for a solid first draft." },
+        { h: "Boost your score free", body: "Practise integrated and independent essays on LandingPrep with rubric-based feedback and sample high-scoring answers to compare." }
+      ]
+    },
+    {
+      id: "toefl-speaking-26-tips", tag: "TOEFL", date: "2026",
+      title: "TOEFL Speaking: How to Score 26+ on Speaking Tasks (All 4 Parts)",
+      excerpt: "Scoring 26+ on TOEFL Speaking means clear pronunciation, flowing speech and developing ideas. Learn how, with strategies for all four speaking tasks.",
+      kw: "toefl speaking tips, toefl speaking 26, how to score high on toefl speaking, toefl speaking tasks, toefl speaking practice, toefl pronunciation",
+      sections: [
+        { h: "TOEFL speaking structure", body: "The speaking section has four tasks: two independent (speak to a prompt) and two integrated (read/listen + speak). You have 15–20 seconds to prepare and 45–60 seconds to answer. Speed of thought and comfort with preparing under pressure are the real skills." },
+        { h: "Task 1 & 2: independent speaking", body: "You get a prompt (e.g. 'Describe a place you like') and a few seconds to plan. Give a direct answer, develop it with a reason or example, and keep talking fluently for the full time. Practicing with a timer and recording yourself is essential." },
+        { h: "Task 3 & 4: integrated speaking", body: "For these, you read a passage and/or listen to a lecture, then speak about what you heard. Jot notes while reading/listening, then use phrases like 'The passage explains…' and 'The professor adds that…' to reference your source." },
+        { h: "Pronunciation and fluency wins", body: "You don't need a 'perfect' accent, but clarity is vital — word stress and sentence rhythm matter far more. Practise common contractions and linking sounds, and slow down slightly for clarity. Avoid long pauses; if you lose your thought, pause briefly then recover." },
+        { h: "Develop your ideas", body: "Band 7 or 26+ on TOEFL comes when you give reasons and examples, not one-word answers. 'I prefer cities because they have more jobs and culture, like in Mumbai where I saw…' beats 'I like cities.'." },
+        { h: "Record and review", body: "Use the free AI speaking partner on LandingPrep to simulate all four tasks with real question types, get instant fluency and pronunciation feedback, and refine your approach." }
+      ]
+    },
+    {
+      id: "toefl-100-plus-score", tag: "TOEFL", date: "2026",
+      title: "How to Score 100+ on TOEFL iBT: Complete Study Strategy & Timelines",
+      excerpt: "A realistic roadmap to TOEFL 100+ — target scores per section, study weeks, and the highest-impact daily habits to close the gap fast.",
+      kw: "toefl 100 score, how to score 100 on toefl, toefl 100 study plan, toefl 100+ score, toefl high score strategy, toefl 120 tips",
+      sections: [
+        { h: "What 100+ actually requires", body: "TOEFL is out of 120 total (30 each skill). A 100+ usually means roughly 25+ in each section — very high. It's achievable if you're already at 85–95, or if you invest 8–12 weeks starting from 70. The jump from 95 to 110 is harder than 70 to 95 because the remaining gaps are narrow." },
+        { h: "The winning timeline", body: "Weeks 1–2: baseline full mock and diagnostic. Weeks 3–6: intensive drills on your weakest skill (usually Speaking or Writing). Weeks 7–10: full mocks under timed conditions every 3–4 days. Weeks 11–12: light review and pacing practice. Total: 3–4 hours daily of focused work." },
+        { h: "Reading & Listening to 27+", body: "Reading and Listening reach 27+ through accuracy more than speed. Drill the hardest question types, then do untimed comprehension to build understanding first, then time yourself. Aim for 36–38 out of 40 questions correct." },
+        { h: "Writing: structure + grammar to 27+", body: "Integrated Writing needs clear summaries with minimal errors. Independent Writing needs well-developed ideas, varied sentence structure and strong vocabulary. Write under timed conditions and score yourself against the rubric daily." },
+        { h: "Speaking: fluency and response development", body: "This is the hardest to improve quickly. Speak every day, record yourself, and focus on extending your answers. The difference between 24 and 27 is developing ideas during the speaking slot, not pausing to think." },
+        { h: "Practise with real questions free", body: "Use LandingPrep's free TOEFL mocks with integrated speaking, writing and reading to drill all sections and track your path to 100+." }
+      ]
+    },
+    {
+      id: "toefl-vs-ielts-usa-universities", tag: "Comparison", date: "2026",
+      title: "TOEFL vs IELTS for USA Universities: Which Test Should You Take?",
+      excerpt: "Most US universities accept both TOEFL and IELTS, but one usually suits your strengths better. Here's how to choose and which scores each test needs.",
+      kw: "toefl vs ielts for usa, which test for usa universities, toefl vs ielts scores, toefl vs ielts which is easier, best english test for usa",
+      sections: [
+        { h: "Both are accepted widely", body: "All top US universities (Ivy League, Stanford, MIT, etc.) now accept TOEFL and IELTS equally. But some schools set slightly different score requirements — always check the programme-specific page before deciding which test to take." },
+        { h: "TOEFL advantages for USA", body: "TOEFL is the traditional US test, so universities have decades of score data. It tests American English and academic lecture-taking skills directly, which match US master's culture. If you're comfortable with computers and AI-scored speaking, TOEFL is low-risk." },
+        { h: "IELTS advantages", body: "IELTS is slightly more about real-world communication (face-to-face speaking, everyday vocabulary) and less heavily weighted toward academic lectures. If you freeze on computer-based tests or prefer human-evaluated speaking, IELTS may feel more natural." },
+        { h: "Score conversion", body: "Roughly: IELTS 6.5 ≈ TOEFL 79, IELTS 7.0 ≈ TOEFL 94, IELTS 7.5 ≈ TOEFL 110. Most US master's programmes want IELTS 7.0 or TOEFL 100 minimum; competitive ones want 7.5 or 110. Confirm the exact requirement." },
+        { h: "Visa is rarely a factor now", body: "Both tests are widely accepted for F-1 visas. The university's admission requirement is the binding one — once you've met that, the visa almost always accepts the same score." },
+        { h: "Test both free", body: "Take a free practice test of each on LandingPrep (TOEFL-style and IELTS-style questions) and see which scoring style and format feel more natural — then commit to that test." }
+      ]
+    },
+    {
+      id: "ielts-listening-tips-strategies", tag: "IELTS", date: "2026",
+      title: "IELTS Listening Tips & Strategies: Section-by-Section Guide + Free Practice",
+      excerpt: "Score 7+ on IELTS Listening with proven note-taking, prediction and spelling techniques. Strategies for each section and common question types.",
+      kw: "ielts listening tips, ielts listening strategies, ielts listening section 4, how to improve ielts listening, ielts listening practice free",
+      sections: [
+        { h: "What IELTS Listening tests", body: "Four recordings (a conversation, a monologue, an academic discussion, a lecture), 40 questions, 30 minutes (plus time to transfer answers). You hear each recording only once. The skill being tested is the ability to catch specific information while listening, not intelligence — practise the right technique and scores rise quickly." },
+        { h: "Pre-listening prediction", body: "You get time to read the questions before each section. Underline keywords, predict what information you'll hear, and anticipate the kind of answers (a number, a person's name, a date). This focus helps your ears catch the right words." },
+        { h: "Note-taking during listening", body: "Write abbreviated keywords and key numbers/names as you listen. You don't need full sentences. After the recording ends you have time to review your notes and fill in the gaps — use that time to clean up spelling and add any answers you remember but didn't have time to write." },
+        { h: "Section-specific strategy", body: "Sections 1–2 are easier (casual conversations, single speakers). Sections 3–4 are harder (rapid academic dialogues, complex lectures). Practice harder sections more. Section 4 especially requires mental stamina — listen to full lectures daily to build it." },
+        { h: "Spelling and word forms matter", body: "Listening answers must be spelled correctly — 'accommodation' and 'accomodation' score differently. Always check spellings of place names and proper nouns. Also note that the word form may change — if the answer is 'develop', the question might say 'development'." },
+        { h: "Practise with real recordings free", body: "Use LandingPrep's free IELTS Listening mocks (all four sections) with instant answer keys and spelling guides. Replay tough sections and build familiarity with accent variation." }
+      ]
+    },
+    {
+      id: "ielts-reading-techniques-tfng", tag: "IELTS", date: "2026",
+      title: "IELTS Reading: Skimming, Scanning & True/False/Not Given Mastery",
+      excerpt: "Master IELTS Reading's hardest question types — True/False/Not Given, matching headings, and scanning techniques. With worked examples.",
+      kw: "ielts reading tips, true false not given ielts, ielts matching headings, ielts reading strategies, ielts reading practice, ielts scanning skimming",
+      sections: [
+        { h: "The Reading section structure", body: "Three long passages, 40 questions, 60 minutes. Question types include multiple choice, True/False/Not Given, matching headings, gap-fill and short-answer. Each passage is 650–850 words covering academic topics. You must manage time — aim to spend no more than 20 minutes per passage." },
+        { h: "Skimming and scanning basics", body: "Skimming = read the first sentence of each paragraph for the gist. Scanning = search the text for a keyword to find the relevant sentence. Do NOT read every word. For a True/False/Not Given question, scan for the keyword and read around it carefully." },
+        { h: "True/False/Not Given — the biggest trap", body: "'Not Given' means the answer is not mentioned in the text (not that it's false). Most people choose False when they should choose Not Given. Read the question, scan for the relevant sentence, then decide: does the text affirm it (True), deny it (False), or say nothing about it (Not Given)." },
+        { h: "Matching headings strategy", body: "Skim each paragraph for its main idea, then match to a heading. Common traps: headings that sound related but don't match the paragraph's focus. Read the paragraph fully first, summarise it in your head, then pick the closest heading." },
+        { h: "Build speed + accuracy", body: "Time yourself doing passages. If you finish in 15 minutes but get 6 questions wrong, you're reading too fast. If you finish in 25 minutes with only 1 wrong, you're close to the target pace." },
+        { h: "Drill the hardest types free", body: "LandingPrep has free IELTS Reading passages with True/False/Not Given and matching headings questions, with detailed answer explanations to clarify the difference between False and Not Given." }
+      ]
+    },
+    {
+      id: "ielts-academic-vs-general-training", tag: "IELTS", date: "2026",
+      title: "IELTS Academic vs General Training: Which Version Should You Take?",
+      excerpt: "Are you taking the right IELTS version? A clear comparison of Academic vs General Training — content, difficulty, recognition and which to choose.",
+      kw: "ielts academic vs general training, difference between ielts academic and general, which ielts version to take, ielts general training, ielts for university",
+      sections: [
+        { h: "Quick answer", body: "Take IELTS Academic if you're applying to universities for a degree programme. Take IELTS General Training if you're applying for migration (Canada, Australia, UK) or skilled worker visas, or if your university specifically asks for it (rare). Both are scored on the same 0–9 band scale, but the content differs." },
+        { h: "Academic Reading & Writing", body: "Academic Reading has three long, dense passages on academic topics. Writing Task 1 asks you to describe a chart/diagram (not a letter). Writing Task 2 is an essay. Both require formal, academic register." },
+        { h: "General Training Reading & Writing", body: "General Training has shorter, practical texts (job ads, schedules, emails). Writing Task 1 is a letter (complaint, request, thanks). Task 2 is still an essay. Language is slightly more informal and practical." },
+        { h: "Listening and Speaking are identical", body: "Both versions use the same Listening recordings and Speaking interview format. The only difference is the Reading and Writing sections." },
+        { h: "Acceptance depends on your goal", body: "Universities require IELTS Academic. Migration and work-visa programmes (Canada Express Entry, Australian skilled migration, UK points-based system) require IELTS Academic too — General Training is not accepted for visas in most countries. Confirm with the visa authority and university before booking." },
+        { h: "Choose wisely", body: "If you're unsure, choose Academic — it's accepted everywhere and is the default. Once you book a version, you get that version on test day — you cannot switch between them. Check the official IELTS website for your institution's exact requirement." }
+      ]
+    },
+    {
+      id: "ielts-speaking-part-2-cue-cards", tag: "IELTS", date: "2026",
+      title: "IELTS Speaking Part 2: Common Cue Cards & How to Answer Them (with Examples)",
+      excerpt: "Master IELTS Speaking Part 2 with strategies for common cue card topics — how to plan, extend your answer and score Band 7+.",
+      kw: "ielts speaking part 2, ielts cue cards, ielts speaking topics, how to answer ielts part 2, ielts speaking part 2 examples, ielts part 2 topics",
+      sections: [
+        { h: "Understanding Part 2", body: "You're given a cue card with a topic and 5 bullet points, and one minute to prepare notes. Then you speak for two minutes without interruption. The examiners score your fluency, vocabulary, grammar and pronunciation. Filling the two minutes without major pauses is critical — stopping at 90 seconds costs you marks." },
+        { h: "How to use the one-minute prep time", body: "Don't write full sentences. Jot one or two keywords per bullet point — these are memory prompts, not a script. If you write too much, you'll try to read from your notes, which sounds unnatural. A quick outline is enough." },
+        { h: "Common cue card topics", body: "Favourite person, a place you visited, a possession you value, a skill you learned, a book or film, a success you've had, a problem you solved. Each has predictable bullet points (why, how, when, feelings). Prepare three answers per topic type so you're ready for any card." },
+        { h: "The two-minute structure", body: "First 10–15 seconds: direct answer to the question. Next 90 seconds: develop your answer with examples and reasons from the bullet points. Final 30 seconds: a brief conclusion or what you learned. Never stay on one bullet point for more than 30 seconds." },
+        { h: "Extend without memorisation", body: "Practise speaking around the topic naturally, adding details and following your thought rather than a pre-written script. Band 7 sounds like a genuine conversation, not a rehearsed monologue." },
+        { h: "Drill common cards free", body: "LandingPrep has free cue card practice for 50+ common Part 2 topics. Record your one-minute prep and two-minute answer, compare to sample answers, and get feedback on timing and fluency." }
+      ]
+    },
+    {
+      id: "ielts-band-8-guide", tag: "IELTS", date: "2026",
+      title: "How to Get IELTS Band 8: Advanced Vocabulary, Grammar & Fluency",
+      excerpt: "Band 8 is rare but achievable. Here's exactly what examiners reward — range of vocabulary, error-free grammar, and fluent speech patterns.",
+      kw: "ielts band 8, how to get ielts band 8, ielts band 8 tips, ielts writing band 8, ielts speaking band 8, ielts 8 score",
+      sections: [
+        { h: "What separates Band 8 from Band 7", body: "Band 8 means you rarely make errors, use a wide variety of vocabulary and grammar naturally, and develop complex ideas effortlessly. It's not about fancy words — it's about precision, complexity and consistency across all sections." },
+        { h: "Listening & Reading to 8", body: "You need 36–37 out of 40 correct (90%+). This is possible by drilling your weakest question types and reading faster while staying accurate. Missing 3–4 questions is acceptable if they're randomly scattered, not a pattern in one type." },
+        { h: "Writing Band 8: structure + lexical range", body: "Your Task 2 essay must have a clear structure, well-developed ideas, sophisticated transitions and a wide range of vocabulary used precisely (not just 'big' words used wrongly). Grammatical errors are rare. Aim for 280–320 words." },
+        { h: "Speaking Band 8: fluency without hesitation", body: "You speak at length with only minor, natural pauses. You use complex sentence structures, a variety of vocabulary and sophisticated expressions ('It's worth noting that…', 'This brings me to the point that…'). You speak like an educated native — not perfectly, but fluently." },
+        { h: "The Band 8 daily habit", body: "Read dense academic texts daily to absorb advanced vocabulary in context. Speak daily on complex topics (philosophy, environmental issues, technology trends). Write Task 2 essays and compare to Band 9 samples. Perfection is not required — consistency is." },
+        { h: "Get there with free practice", body: "Use LandingPrep's Band 8 sample essays and speaking answers to study the patterns, then practise with real questions under timed conditions. Track your error patterns carefully — fixing one systemic error can jump your band." }
+      ]
+    },
+    {
+      id: "celpip-vs-ielts-canada-pr", tag: "CELPIP", date: "2026",
+      title: "CELPIP vs IELTS for Canada PR: Which Test Is Easier & What You Need",
+      excerpt: "Both CELPIP and IELTS are accepted for Canada Express Entry — but one suits your strengths better. Here's how to choose based on format and scoring.",
+      kw: "celpip vs ielts canada, celpip for canada pr, which test for canada immigration, ielts vs celpip easier, celpip for express entry",
+      sections: [
+        { h: "Both work for Express Entry", body: "Canada's Express Entry system (and most provincial programmes) accepts both IELTS and CELPIP equally. Your score converts to the same CLB (Canadian Language Benchmark) level for CRS points, so there's no advantage to one test over the other on paper. The choice is which test suits you." },
+        { h: "CELPIP is fully computer-based", body: "CELPIP Speaking is recorded and scored by humans (not AI), so it feels more like a conversation you prepare on a computer screen. All four skills are done on a single test day via computer. Results come faster (usually within 10 days), and you can book a test almost any day." },
+        { h: "IELTS has face-to-face speaking", body: "IELTS Speaking is a live interview with a human examiner — some people prefer this human interaction, while others find it nerve-wracking. Test dates are fixed, and you cannot book as flexibly. Results take 1–2 weeks." },
+        { h: "Difficulty: no clear winner", body: "CELPIP rewards clear pronunciation and fast thinking — you have limited prep time in conversation mode. IELTS rewards range of vocabulary and grammatical accuracy. Neither is objectively easier; it depends on your strengths." },
+        { h: "Score conversion", body: "CELPIP 9 ≈ IELTS 8 / CLB 9. CELPIP 8 ≈ IELTS 7 / CLB 8. CELPIP 7 ≈ IELTS 6 / CLB 7. Most Express Entry applicants need CLB 7 (CELPIP 7, IELTS 6.0) as the baseline. Confirm your target programme's exact requirement." },
+        { h: "Book the test that fits you", body: "Take a free practice test of both CELPIP and IELTS on LandingPrep, see which format feels natural, and commit to that test. Both lead equally to Canada PR." }
+      ]
+    },
+    {
+      id: "celpip-clb-9-tips", tag: "CELPIP", date: "2026",
+      title: "CELPIP Tips to Score CLB 9+ (CELPIP 9): Speaking Fluency & Conversation",
+      excerpt: "CELPIP's conversation-based format rewards fluency and fast thinking. Score CLB 9+ with these strategies and daily practice techniques.",
+      kw: "celpip 9 tips, how to score celpip 9, celpip clb 9, celpip speaking tips, celpip canada, celpip practice test free",
+      sections: [
+        { h: "What CLB 9 means on CELPIP", body: "CELPIP 9 (CLB 9 equivalent) means you speak with ease and accuracy, understand complex texts quickly, and write clearly on any topic. You rarely hesitate and use a variety of vocabulary naturally. It's rare but achievable in 6–8 weeks of consistent practice." },
+        { h: "Speaking in conversation mode", body: "CELPIP's Speaking section uses a simulated conversation format — a computer asks you questions and you respond to 45–60 seconds of prompts. The key is not overthinking; respond naturally and keep talking even if you make small errors." },
+        { h: "Listening for complex contexts", body: "Listening tasks include lectures, conversations and monologues on specialized topics. Build your vocabulary in specific fields (medicine, law, business) and listen to podcasts and lectures daily — this passive exposure lifts your score faster than drills." },
+        { h: "Reading speed and accuracy", body: "Read news articles and academic texts daily to build speed without sacrificing comprehension. Skim for main ideas first, then scan for details. CELPIP's Reading section has longer, denser passages than IELTS." },
+        { h: "Writing on any topic", body: "CELPIP Writing tasks ask you to email or write a letter solving a real problem. Be clear, concise and on-topic. Avoid rambling. Use simple, correct sentences rather than complex, error-filled ones." },
+        { h: "Practise with free mocks", body: "Use LandingPrep's free CELPIP practice tests with all four skills and instant feedback. Record your Speaking responses and compare to sample answers for pronunciation and fluency patterns." }
+      ]
+    },
+    {
+      id: "ms-usa-requirements-costs", tag: "Study Abroad", date: "2026",
+      title: "MS in USA: Requirements, Costs & Top Universities 2026 (Complete Guide)",
+      excerpt: "Everything a Master's applicant to the USA needs to know — admission requirements (GRE, IELTS, GPA), tuition costs, assistantships and the top universities to target.",
+      kw: "masters degree usa requirements, ms in usa cost, ms usa universities, requirements for masters in usa, gre for ms, how much does ms cost usa",
+      sections: [
+        { h: "Typical MS admission requirements", body: "Most USA master's programmes want: a bachelor's degree, a GPA of 3.0+ (though competitive programmes ask for 3.3+), GRE scores (many now optional), IELTS 6.5–7.0 or TOEFL 90–100, and strong letters of recommendation. Some programmes also require the GMAT or subject-specific tests — check the exact programme requirements." },
+        { h: "GRE and test trends", body: "The GRE (or GMAT for business) was long mandatory but many schools (Stanford, MIT, CMU) made it optional during the pandemic and have kept it optional. Still, a strong GRE (320+) significantly improves your competitiveness and scholarship chances. Submit scores if they're above the programme median." },
+        { h: "Tuition and total cost", body: "Tuition ranges from $20,000 to $60,000+ per year depending on the university and field. Add living costs ($15,000–25,000/year in most cities). Total cost is often $60,000–100,000+ for two years. This is highest among major destinations but offset by strong scholarship, assistantship and work opportunities." },
+        { h: "Funding your MS", body: "Graduate Assistantships (Teaching or Research) typically cover tuition and offer a stipend ($15,000–25,000/year). Merit scholarships are common and reduce tuition fully or partially. Use the free LandingPrep Scholarship Finder to discover fellowship opportunities by field. OPT and part-time work also offset costs." },
+        { h: "Top universities by field", body: "Engineering and CS: Carnegie Mellon, MIT, Stanford, UC Berkeley, Georgia Tech. Data Science: MIT, Carnegie Mellon, UC Berkeley. Business (MS Finance, MBA): Cornell, MIT, Carnegie Mellon. Full list with average GRE/TOEFL scores and tuition on the LandingPrep College Predictor." },
+        { h: "Apply strategically", body: "Target 3–4 'reach' schools (above your current profile), 3–4 'fit' schools (strong fit), and 2–3 'safety' schools where you're likely admitted. Submit 8–10 applications total. Apply early (September–December) for best funding." }
+      ]
+    },
+    {
+      id: "study-uk-after-12th-undergraduate", tag: "Study Abroad", date: "2026",
+      title: "Study in UK After 12th: Undergraduate Courses, Costs & Entry Requirements",
+      excerpt: "Going to the UK for your bachelor's degree? Entry requirements, the visa process, typical costs, and the best universities for undergraduates.",
+      kw: "study in uk after 12th, undergraduate in uk requirements, how to study in uk from india, uk bachelors degree, ielts for uk undergraduate, cost of bachelors in uk",
+      sections: [
+        { h: "Entry requirements for UK undergraduates", body: "Most UK universities want a strong high school (Class 12) result or equivalent qualification (A-levels, International Baccalaureate, or a Foundation Year). For Indian students, your Class 12 marks matter — most target 85%+ in core subjects. IELTS 6.0–7.0 or TOEFL 80–100 is typical; some universities accept Duolingo English Test." },
+        { h: "Foundation Year option", body: "If your Class 12 marks or English score is slightly below the direct entry threshold, many UK universities offer a one-year Foundation Year to bring you up to speed. This adds a year to your degree but makes admission certain and smooths your transition." },
+        { h: "UK bachelor's duration and cost", body: "UK bachelor's degrees are three years (four in Scotland). Tuition for international students is roughly £15,000–35,000 per year depending on the university and subject. Living costs run £12,000–20,000/year. Total cost: £80,000–160,000 ($100k–200k USD) for three years — less than typical US costs." },
+        { h: "UK Student visa", body: "Once you get an offer and a Confirmation of Acceptance for Studies (CAS) from the university, apply for a UK Student visa online. You'll need proof of funds (usually the tuition + living costs), your academic documents and IELTS/TOEFL results. Processing typically takes around 3 weeks for applications from outside the UK." },
+        { h: "Post-study work — Graduate Route", body: "After graduating, you can stay in the UK for up to two years on the Graduate Route, working any job. This gives you time to find a graduate job, do internships, or explore options before returning home or sponsoring a Skilled Worker visa." },
+        { h: "Top universities for undergraduates", body: "Russell Group (Oxford, Cambridge, LSE, UCL, Imperial, Warwick, Durham) are the most prestigious and selective. Strong alternatives include King's College London, Queen Mary, Bristol. Use the free College Predictor to see where your profile fits and explore options." }
+      ]
+    },
+    {
+      id: "study-germany-english-free-universities", tag: "Study Abroad", date: "2026",
+      title: "Study in Germany in English: Free/Low-Tuition Public Universities & Visa Guide",
+      excerpt: "Germany's tuition-free public universities are opening in English-taught programmes for international students. Here's how to apply, visa requirements and top programmes.",
+      kw: "study in germany english, germany free tuition, germany english taught programmes, ms in germany english, germany student visa, ielts gre requirements germany",
+      sections: [
+        { h: "German public universities are free or near-free", body: "Most German public universities charge only small semester fees (€150–350/semester) regardless of citizenship. Even for new English-taught master's programmes, tuition is minimal or zero. Private universities do charge tuition, so focus on public options." },
+        { h: "English-taught master's programmes", body: "Hundreds of master's programmes are now taught entirely in English, especially in engineering, data science, business and environmental science. TU Munich, TU Berlin, KIT, University of Bonn and many others offer strong English-taught MS programmes. Check DAAD's database for a full list filtered by field." },
+        { h: "Language and test requirements", body: "Most programmes want IELTS 6.5 or TOEFL 100 for English-taught degrees. You don't need German for English-taught programmes, though learning basics (A1 level) makes daily life easier. Some programmes request the GRE or GMAT for competitive fields like Data Science." },
+        { h: "Blocked account (GIC equivalent)", body: "Germany's financial requirement is a Blocked Account (Sperrkonto) with about €11,904/year for living costs. You deposit this in a designated German bank account and can withdraw monthly — no need to show savings in your home account." },
+        { h: "Student visa and work rights", body: "Apply for a German Student Residence Permit (D-Visa) with an offer letter, proof of funds and health insurance. You can work up to 120 days/year while studying. After graduating, you get an 18-month job-seeker visa to find work related to your field." },
+        { h: "PR pathway via Blue Card", body: "Land a qualifying job and you become eligible for the EU Blue Card with a faster PR timeline (21 months with B1 German, 33 months otherwise). Germany's public-university + low-cost + PR pathway combination is why it's booming for Indian students. Practise IELTS free on LandingPrep." }
+      ]
+    },
+    {
+      id: "study-ireland-international-students", tag: "Study Abroad", date: "2026",
+      title: "Study in Ireland for International Students: Costs, Visa & Work Rights",
+      excerpt: "Ireland combines English-speaking education, affordable living, and a fast post-study work visa. Here's what you need to know about visas, costs and stay-back.",
+      kw: "study in ireland cost, ireland student visa, study in ireland from india, ireland masters, post study work visa ireland, ireland 24 month visa",
+      sections: [
+        { h: "Why Ireland attracts international students", body: "Ireland offers a 24-month Stamp 1G post-study visa (work any job after graduation), strong tech and finance industries, and EU-position with English as the first language. It's less famous than the UK/USA, so competition is lower for admission." },
+        { h: "Typical tuition and living costs", body: "Tuition for master's programmes is €10,000–20,000/year. Living costs in Dublin run €12,000–18,000/year; outside Dublin, €10,000–14,000. Total for a two-year master's: €50,000–80,000 ($60k–100k USD). This is significantly less than USA/UK and comparable to Canada." },
+        { h: "Irish student visa (Visa 2)", body: "Apply with an offer letter from a HETAC-registered institution, proof of funds (tuition + living costs) and IELTS 6.5+ or equivalent. Processing takes 2–4 weeks. Once approved, you can work up to 20 hours/week during studies and full-time during official breaks." },
+        { h: "Post-study stay-back (Stamp 1G)", body: "After graduation, you get automatic permission to stay and work for 24 months — the longest post-study visa in the developed world after the UAE. Use it to gain work experience, transition to a sponsorship visa (Stamp 1), or plan your next move." },
+        { h: "Work while studying", body: "Up to 20 hours/week during the academic term, full-time during official breaks (summer, winter). Part-time minimum wage is roughly €12/hour, helping offset living costs." },
+        { h: "Top universities", body: "University College Dublin, Trinity College Dublin, National University of Ireland, University of Limerick, Dublin City University. Strong sectors: IT, finance, engineering, business. Use the College Predictor to find the right fit for your profile." }
+      ]
+    },
+    {
+      id: "canada-student-visa-sds-requirements", tag: "Immigration", date: "2026",
+      title: "Canada Student Visa After SDS Ended: GIC, Proof of Funds & Process (2026)",
+      excerpt: "Canada closed the Student Direct Stream (SDS) on 8 November 2024 — everyone now applies through the regular study permit. Here's the current process, proof of funds and GIC.",
+      kw: "canada sds ended, canada student direct stream closed, canada study permit requirements 2026, canada gic proof of funds, canada student visa process, study permit canada",
+      sections: [
+        { h: "Important: SDS has ended", body: "On 8 November 2024, IRCC permanently closed the Student Direct Stream (SDS) and the Nigeria Student Express programs. The old fast-track no longer exists — every international student, including applicants from India, now applies through the regular study permit stream. If you read older guides promising '2–4 week SDS processing', they are out of date." },
+        { h: "Proof of funds (and the GIC)", body: "You still must show enough money to cover living costs for your first year on top of tuition. IRCC raised the cost-of-living requirement to roughly CAD 20,635 for a single applicant (it is updated periodically, so confirm the current figure on the IRCC site). A Guaranteed Investment Certificate (GIC) from a Canadian bank is still one of the cleanest ways to show these funds, even though it is no longer tied to a special SDS stream." },
+        { h: "Documents you need now", body: "A letter of acceptance from a Designated Learning Institution (DLI), a valid passport, proof of funds (GIC and/or bank statements, sponsor income and tax documents), a Provincial Attestation Letter (PAL) where required, and usually an English test (IELTS, PTE, TOEFL or CELPIP) at the score your program asks for. Some applicants also complete a medical exam and biometrics." },
+        { h: "Processing times today", body: "Without SDS, processing follows the regular study permit stream, which generally takes longer and varies by country and time of year — so apply as early as you can after you accept your offer. Check IRCC's official processing-time tool for the current estimate rather than relying on the old SDS speed." },
+        { h: "Post-study work permit (PGWP)", body: "After graduating from an eligible program you may qualify for a Post-Graduation Work Permit (PGWP) of up to 3 years. Note that PGWP rules tightened in 2024 — eligibility is now more closely tied to fields linked to labour needs, and language-test requirements were added — so confirm your specific program's PGWP eligibility before you enrol. PGWP is still the main bridge to Express Entry PR." },
+        { h: "How to apply", body: "Accept your DLI offer, obtain a PAL if your province/level requires one, arrange proof of funds (GIC and supporting documents), then file the regular study permit application online. Use the free LandingPrep Canada Immigration Checklist to track every document — a missing item is the most common cause of delay or refusal." }
+      ]
+    },
+    {
+      id: "us-f1-visa-interview-questions", tag: "Visa", date: "2026",
+      title: "US F-1 Visa Interview Questions & Answers: How to Pass Your Interview",
+      excerpt: "Common F-1 visa interview questions and how to answer them honestly and confidently — including the toughest ones about intent and finances.",
+      kw: "f1 visa interview questions, f1 visa interview tips, us visa interview questions, how to answer f1 visa interview, f1 visa interview answers",
+      sections: [
+        { h: "What the F-1 visa officer is really checking", body: "The officer wants to confirm three things: (1) you're a genuine student, not someone planning to overstay, (2) you can afford your education, and (3) you have ties to your home country and plan to return. Answer honestly — consulates check documents carefully, and dishonesty is an automatic denial." },
+        { h: "Why do you want to study in the USA?", body: "Give a specific reason: 'I want to study Data Science at Carnegie Mellon because their ML specialisation aligns with my goal to work in AI research.' Not: 'The USA is the best.' Connect your programme choice to your specific goals." },
+        { h: "Why this university and programme?", body: "Show you've researched: name specific faculty, courses or facilities. 'Professor X's work on neural networks matches my interests, and the program has a strong internship network in tech hubs.' Generic answers raise flags." },
+        { h: "What are your plans after graduation?", body: "Articulate a clear short-term and long-term goal. 'After my MS I'll work in the USA on OPT for 3 years, gain experience, then return to India to start my own AI consulting firm.' Vague answers suggest immigrant intent, which increases scrutiny." },
+        { h: "How are you funding your education?", body: "Clearly explain the funding source (parent sponsor, scholarship, loan, part-time work) and produce the documents (bank statements, sponsor affidavit, scholarship letter, etc.). Officers verify this." },
+        { h: "Do you have ties to your home country?", body: "Mention family, property, a job you'll return to, business etc. This shows intent to return. If you're vague, the officer assumes you plan to stay in the USA indefinitely." },
+        { h: "Prepare specific answers", body: "Practise answering these questions out loud in English — hesitation and vague language hurt you. Use the free AI speaking partner on LandingPrep to simulate the interview and get feedback." }
+      ]
+    },
+    {
+      id: "uk-student-visa-pre-cas-requirements", tag: "Visa", date: "2026",
+      title: "UK Student Visa & CAS: Requirements, Funds, Fees & Timeline (2026)",
+      excerpt: "The UK Student visa process from offer letter to CAS to approval — the documents, proof of funds, fees and realistic timeline. Figures change yearly, so confirm on GOV.UK.",
+      kw: "uk student visa requirements, student visa uk cost, uk student visa timeline, uk visa application process, uk cas confirmation, how to get uk student visa",
+      sections: [
+        { h: "Student visa & CAS basics", body: "After you accept an offer from a licensed UK university, it issues a Confirmation of Acceptance for Studies (CAS) — a reference confirming you are a genuine student. You then apply for the UK Student visa (the route formerly called Tier 4) online. Decisions on applications made from outside the UK typically arrive within about 3 weeks." },
+        { h: "Proof of funds requirement", body: "You must show you can pay your course fees plus living costs. From January 2025 UKVI set living-cost funds at £1,483/month in London and £1,136/month outside London, for up to 9 months. The funds must usually sit in your (or your parent-sponsor's) account for at least 28 consecutive days. Always confirm the current figures on GOV.UK, as they are updated." },
+        { h: "Financial documents to prepare", body: "Bank statements covering the 28-day period, a sponsor letter and proof of relationship if a parent is funding you, and any official scholarship or loan letters. The 28-day closing balance must not drop below the required amount on any day in that window." },
+        { h: "Visa fees and health surcharge", body: "The Student visa application fee is in the region of £490–525 (it has risen in recent years, so check the current amount on GOV.UK). On top of that you pay the Immigration Health Surcharge, which is £1,035 per year of your stay and gives you access to the NHS. Faster 'priority' processing is available for an extra fee." },
+        { h: "Health cover via the NHS", body: "Because you pay the Immigration Health Surcharge upfront, you are covered by the NHS for the duration of your visa, so a separate private health-insurance policy is generally not required for UK study." },
+        { h: "Genuine application matters", body: "Most complete, genuine applications are approved; refusals usually come from missing or insufficient proof of funds, the 28-day rule being broken, or document concerns. Prepare your finances carefully and double-check every figure against the CAS." },
+        { h: "Apply strategically", body: "Apply for your visa soon after receiving your CAS — the earlier you submit, the more likely you'll arrive in time for your intake. Use the free UK Visa Checklist on LandingPrep to make sure no document is missing." }
+      ]
+    },
+    {
+      id: "canada-pr-express-entry-basics", tag: "Immigration", date: "2026",
+      title: "How to Get PR in Canada After Study: Express Entry Basics & Points System",
+      excerpt: "The most common route to Canada PR for international students — Express Entry, the Comprehensive Ranking System (CRS) and how to accumulate points.",
+      kw: "canada express entry, how to get pr in canada, express entry points, crs score canada, canadian permanent residence, study to pr canada",
+      sections: [
+        { h: "Express Entry is the main path", body: "Most international students in Canada apply for PR through Express Entry, which manages applications for three federal economic-immigration programmes: Federal Skilled Worker (FSW), Federal Skilled Trades (FST), and Canadian Experience Class (CEC). As a recent graduate, CEC is usually your fastest route." },
+        { h: "CRS points explained", body: "Your eligibility is ranked by Comprehensive Ranking System (CRS) points (0–1,200 total). Points come from age, education, English/French ability, work experience, and having a provincial job offer. A recent Indian student graduate with a Canadian postgraduation work permit (PGWP), a local job offer, and IELTS 7.0+ typically scores 400–450 CRS points." },
+        { h: "The language score lever", body: "A high IELTS or CELPIP score is the single fastest way to improve your CRS. Each test-band increment adds 25–50 points. IELTS 8.0 (vs 7.0) adds significant points. Practising English for CRS is worth it." },
+        { h: "Provincial Nominee Programme (PNP)", body: "Many provinces (Ontario, BC, Alberta) have their own PNP streams for recent graduates. These often have lower CRS cutoffs and faster processing. If your province of study has a PNP, check if you're eligible — it can be faster than federal Express Entry." },
+        { h: "How much work experience you need", body: "The Canadian Experience Class requires 1 year of skilled work experience (full-time) in the past 3 years. Your PGWP allows you to work, so after one year on your PGWP, you become eligible to apply for PR. This is why the PGWP length matters." },
+        { h: "Timeline to PR", body: "Overall timeline: 2 years study + 1 year PGWP work + 3–6 months Express Entry processing = roughly 3–4 years from start of study to approved PR." },
+        { h: "Calculate your score free", body: "Use LandingPrep's free Express Entry CRS Calculator to estimate your points and see how far you are from the current cutoff. Boost your IELTS score on the way — it's the highest ROI improvement." }
+      ]
+    },
+    {
+      id: "australia-pr-international-students-points", tag: "Immigration", date: "2026",
+      title: "Australia PR for International Students: Points System & Pathways (2026)",
+      excerpt: "Australian PR for graduates — how the skilled-migration points system works, which occupations get invited, and realistic timelines for Indian students.",
+      kw: "australia pr for international students, australia skilled migration, australia points test, australia graduate visa 485, australian permanent residence, australia skilled occupation list",
+      sections: [
+        { h: "The Australian points system", body: "Australia runs a points-tested skilled-migration system (189 Independent, 190 State-Nominated, 491 Regional). Your points come from age, education, English proficiency, work experience, and state sponsorship. You need roughly 65–70 points to be invited — this is achievable for recent graduates." },
+        { h: "English as a key points lever", body: "A high IELTS/PTE score is one of the easiest ways to gain points. IELTS 8.0 (or PTE 79) gives maximum points; IELTS 7.0 (PTE 65–72) gives fewer. International students often have strong English scores already — max this out before applying for PR." },
+        { h: "Temporary Graduate visa (Subclass 485)", body: "After completing your study, you're eligible for a Temporary Graduate visa (485) lasting 2–4 years depending on your degree location (regional vs. major city) and field. This visa allows you to work and is the bridge to PR." },
+        { h: "Skilled Occupation List (SOL)", body: "Only occupations on Australia's Skilled Occupation List (SOL) are eligible for PR. Many fields (engineering, IT, nursing, accounting) are in-demand; others are not. Check if your degree aligns before enrolling. The SOL changes — always verify with the latest official list." },
+        { h: "State sponsorship pathway", body: "State-sponsored visas (190) are often faster than federal (189) because states have separate quotas and lower point thresholds. Some states (Tasmania, South Australia) are very welcoming to international graduates." },
+        { h: "Timeline for Australian PR", body: "Typical timeline: 2 years study + 2–4 years on 485 graduate visa + 6–12 months PR processing = roughly 5–7 years. This is longer than Canada, but Australian PR offers high quality of life and a strong job market." },
+        { h: "Calculate your points free", body: "Use LandingPrep's Australian points calculator to estimate your pathway and identify which occupations match your degree. Boost your IELTS/PTE score to maximize points." }
+      ]
+    },
+    {
+      id: "education-loan-without-collateral", tag: "Funding", date: "2026",
+      title: "Education Loan Without Collateral for Studying Abroad: Options & Eligibility",
+      excerpt: "Collateral-free education loans for abroad study — which banks and NBFCs offer them, eligibility requirements and how to compare unsecured options.",
+      kw: "education loan without collateral, collateral free education loan abroad, unsecured education loan, education loan for study abroad, hdfc credila avanse auxilo",
+      sections: [
+        { h: "Two types of education loans", body: "Secured loans use property or Fixed Deposits as collateral and offer lower interest rates. Unsecured loans need no collateral but charge higher rates. For studying abroad, unsecured loans are faster and simpler if you don't own property." },
+        { h: "Indian NBFC options (unsecured)", body: "HDFC Credila, Avanse, Auxilo and similar NBFCs offer collateral-free education loans for abroad study. Interest rates range from 9% to 13% depending on your credit score and the university you're attending. Loan limits are typically up to ₹50 lakh. Application is fully online — fast and convenient." },
+        { h: "Eligibility basics", body: "Most NBFC lenders want: age 18–35, admission to a recognized international university, proof of entry (offer letter), your strong academic record, and a co-applicant (usually a parent). Your credit score and co-applicant's income matter — higher income makes approval easier." },
+        { h: "International lenders (no collateral, no co-signer)", body: "Prodigy Finance and MPOWER offer loans to students at top global universities without requiring a co-signer or collateral. Rates are higher (10%–14%) but you're not putting family property at risk. Limit: usually $100k–150k USD." },
+        { h: "What to compare", body: "Interest rate (fixed vs floating), processing fee, moratorium (no payment while studying + grace period after), total repayment tenure, prepayment penalties, and margin money (your own contribution). A lower rate with long moratorium often beats a slightly cheaper option without one." },
+        { h: "Compare options free", body: "Use LandingPrep's free Loans & Costs comparison tool to see side-by-side costs of 10+ lenders, estimate your EMI, and find the best option for your university and course." }
+      ]
+    },
+    {
+      id: "international-student-part-time-jobs", tag: "Funding", date: "2026",
+      title: "Part-Time Jobs for International Students: Rules by Country & How Much You Can Earn",
+      excerpt: "How many hours can international students work while studying — rules for USA, UK, Canada, Australia and Germany — and realistic earnings.",
+      kw: "part time jobs international students, student work permit, how many hours can international students work, student visa work rights, part time work abroad studying",
+      sections: [
+        { h: "Work rights vary significantly by country", body: "USA, UK, Canada, Australia and Germany all allow international students to work — but the rules differ. Some allow 20 hours/week during studies, others are more restrictive. Check the exact country's rules before committing to your study destination." },
+        { h: "USA (F-1 visa)", body: "Up to 20 hours/week during the academic term on-campus (work-study jobs, teaching assistant positions). Off-campus work requires specific authorisation and is generally not available first year. After graduation, OPT allows full-time work — the longest runway globally." },
+        { h: "UK (Student visa)", body: "International students can usually work up to 20 hours/week during term time and full-time during official breaks (summer, winter, holidays). Popular jobs: university library, retail, hospitality. The UK national minimum/living wage is around £12 an hour (it rises each April, so check the current rate) — typical student earnings: £250–400/month." },
+        { h: "Canada (Study permit)", body: "As of November 2024, eligible students can work up to 24 hours/week off-campus during studies (up from the old 20-hour cap), and full-time during scheduled breaks. After graduation, a PGWP allows full-time work. Minimum wage is around CAD 15–17/hour depending on province — confirm the current off-campus limit on the IRCC site before you rely on it." },
+        { h: "Australia (Student visa)", body: "Students can work up to 48 hours per fortnight (about 24 hours/week on average) while their course is in session, and unlimited hours during official course breaks. The national minimum wage is around AUD 24/hour — part-time earnings are typically AUD 300–500/month." },
+        { h: "Germany (Student visa)", body: "Under the 2024 rules, students can generally work about 140 full days or 280 half-days per year. Work earnings average €450–600/month. Jobs are plentiful in major cities, though German language ability helps for many roles. Confirm the current day limit, as the rules were recently updated." },
+        { h: "Realistic earnings impact", body: "Part-time earnings offset 20–30% of annual living costs in developed countries. Work reduces study time but improves language/cultural integration. Factor work into your cost model to be realistic about self-funding." }
+      ]
+    },
+    {
+      id: "is-studying-abroad-worth-it-roi", tag: "Study Abroad", date: "2026",
+      title: "Is Studying Abroad Worth It? ROI Analysis & Long-Term Payback (2026)",
+      excerpt: "A practical cost-benefit analysis of studying abroad — tuition ROI, career earnings uplift, visa-to-PR conversion, and when it's worth it financially.",
+      kw: "is studying abroad worth it, study abroad roi, cost benefit study abroad, payback period abroad degree, study abroad financial return, is masters abroad worth",
+      sections: [
+        { h: "The question framed honestly", body: "Studying abroad has two returns: (1) career earnings uplift (do graduates earn more in their home country after studying abroad?), and (2) long-term settlement (can you stay and work in the destination country?). Both matter. A study that costs $100k but leads to PR and a $80k salary (vs $40k at home) pays back in 5–7 years and nets you high lifetime earnings." },
+        { h: "Earnings uplift varies wildly by field", body: "Tech and engineering degrees from top US/UK universities pay off fastest (20–30% salary uplift returning to India). Business degrees have mixed returns (MBA from top schools pays; generic master's may not). Liberal arts degrees rarely justify the cost." },
+        { h: "Cost recovery timeline", body: "Typically, a $100k investment is recovered in 4–8 years of working in the destination country (if salary is $50k+) or 8–15 years if returning to your home country at a modest uplift. Plan accordingly." },
+        { h: "The settlement angle", body: "If your goal is to stay in the destination country (Canada, UK, Australia, Germany), the degree is often the fastest and safest path to PR or residency. This has enormous long-term financial and lifestyle benefit that pure salary comparison misses." },
+        { h: "When it's clearly worth it", body: "STEM degree from a top-50 global university + stay-back for work + PR path = worth it. Expensive degree with weak job market + forced return to low salaries = likely not worth it." },
+        { h: "Model your own ROI", body: "Use LandingPrep's free Cost & ROI Calculator — input degree cost, expected salary in destination + home country, and PR odds — to see your personal payback timeline and compare destinations." }
+      ]
+    },
+    {
+      id: "fall-vs-spring-intake-which-better", tag: "Applications", date: "2026",
+      title: "Fall vs Spring Intake: Which Should You Apply For? (Pros & Cons)",
+      excerpt: "Should you apply for Fall or Spring intake? Compare application competitiveness, funding availability, visa processing and job market timing.",
+      kw: "fall intake vs spring intake, fall or spring admission, when to apply university, fall intake which month, spring intake start date, fall vs spring intake pros cons",
+      sections: [
+        { h: "Quick answer", body: "Apply for Fall intake if possible — it's the primary intake with more courses, more students, easier cohort integration, and more funding. Spring intake is smaller, less competitive to get into, but fewer scholarships and smaller cohorts. Choose Fall unless you have a strong reason." },
+        { h: "Fall intake (August–September in Northern Hemisphere)", body: "Fall is the standard, primary intake for most universities worldwide. Most courses are available. Funding (assistantships, scholarships) is highest. Larger cohorts mean more clubs, events and networking. Visa processing is congested (August–September peak), so apply early. Job recruiting for spring internships starts in Fall." },
+        { h: "Spring intake (January–February)", body: "Smaller intake with fewer programme options. Less competitive for admission — easier to get in. But fewer scholarships, fewer courses available, and smaller student cohorts (can feel isolated). Job market recruiting is slower. Good option if you're just above the admission threshold and want a higher safety margin." },
+        { h: "Visa processing timeline", body: "Fall visa processing can take 6–10 weeks during peak season (bottleneck Aug–Sep). Spring processing is faster (4–6 weeks) because fewer applications. If you're on a tight deadline, Spring can be faster end-to-end." },
+        { h: "Job market timing", body: "Fall start = summer internships at the end of Year 1, aligning with most job recruiting cycles. Spring start = internships in winter, which is off-season in many industries — fewer internship placements." },
+        { h: "Scholarship implications", body: "Most scholarship deadlines are in the Fall application window (November–January). Spring scholarships exist but are fewer. If funding is critical, prioritise Fall intake." },
+        { h: "Choose strategically", body: "Fall is default. Spring only if Fall deadlines are too tight or you're below the typical admission threshold and want better odds. Use LandingPrep's intake calendar to track deadlines for your target universities." }
+      ]
+    },
+    {
+      id: "student-visa-documents-checklist", tag: "Applications", date: "2026",
+      title: "Student Visa Documents Checklist: What You Need for Any Country (Complete List)",
+      excerpt: "A universal checklist of documents needed for student visas — admission letter, proof of funds, passport, transcripts, test scores and more.",
+      kw: "student visa documents checklist, documents required student visa, student visa requirements, visa application documents, what documents for student visa",
+      sections: [
+        { h: "Universal documents (all countries want these)", body: "Valid passport (6+ months validity), offer letter / admission letter, proof of funds (bank statements, sponsor affidavit, loan approval), academic transcripts and degree certificates, IELTS/TOEFL/PTE score report, and a completed visa application form." },
+        { h: "Medical and background", body: "Medical report / health examination (to a specific standard set by the immigration authority — varies by country), police clearance / character certificate, and proof of vaccination (varies by country; COVID requirements have eased)." },
+        { h: "Sponsor documents", body: "If a parent or guardian is sponsoring you: their identity proof (passport, PAN), their income proof (tax returns from last 2 years, salary slips, business registration), and their bank statements (3–6 months) showing the funds available." },
+        { h: "Country-specific extras", body: "USA (F-1): I-20 form from the university. UK: CAS from the university. Canada: proof of funds (GIC certificate or bank statements) and Provincial Attestation Letter where required (SDS was closed in November 2024). Australia: financial documents showing AUD 29,710+ in living funds. Germany: blocked account documentation. Check your country's specific requirements." },
+        { h: "Document preparation tips", body: "Get originals notarised or certified by a gazetted officer. Photocopy everything. Have English translations of documents not in English (get them certified). Keep both soft and hard copies. Organize by category in a folder." },
+        { h: "Common mistakes that delay visas", body: "Missing a transcript or test score, incomplete sponsor financial documents, name mismatches between documents (ensure consistency: use the same name spelling on all documents), and submitting unverified translations." },
+        { h: "Use a checklist free", body: "Download country-specific visa checklists from LandingPrep (US, UK, Canada, Australia, Germany included) and check off each document as you gather it — this prevents delays." }
+      ]
+    },
+    {
+      id: "how-to-write-strong-lor", tag: "Applications", date: "2026",
+      title: "How to Write a Strong Letter of Recommendation (LOR): What Works & Common Mistakes",
+      excerpt: "Guide your recommenders to write impactful LORs — what to emphasise, common pitfalls and how to choose the right people to ask.",
+      kw: "letter of recommendation lor how to write, lor for masters, strong lor examples, lor mistakes, lor writing tips, academic recommendation letter",
+      sections: [
+        { h: "What makes a strong LOR", body: "A strong letter is specific, not generic. It gives concrete examples of your work and impact, uses strong language without overblown praise, and explains why you're a fit for the specific programme. A vague, boilerplate letter from a famous name is weaker than a detailed, honest letter from someone who knows you well." },
+        { h: "Who to ask", body: "Choose people who know you well enough to write specific examples: professors you've worked with, research advisors, project supervisors, or professional managers. Avoid family friends or famous people who barely know you. Two academic LORs are standard for master's; one professional LOR is often acceptable." },
+        { h: "How to help your recommender", body: "Give them: (1) your CV, (2) a one-page list of specific projects/work you did together, (3) your SOP so they understand your goals, (4) the application deadline (remind them 2–3 weeks before), and (5) the programme name and why it fits you. This context makes their letter much stronger." },
+        { h: "What to ask them to emphasise", body: "Technical skills relevant to your field, work ethic and reliability, leadership or teamwork examples, and how you handled challenges. Ask them to explain a specific project you led or a result you achieved." },
+        { h: "Common pitfalls to avoid", body: "Generic praise ('hardworking, intelligent, well-mannered') without examples. Vague comparisons ('top 10% of students I've taught'). Negative or lukewarm statements. Letters submitted late. Long, unfocused letters that bury the key points." },
+        { h: "Waive your right to see it (mostly)", body: "Programmes often ask if you've waived your right to see the letter. Waiving it (saying 'no, I haven't') signals the letter is candid and unfiltered — and slightly increases weight. But some recommenders feel more comfortable if they know you'll see it. Discuss with them." },
+        { h: "Timeline", body: "Ask recommenders 3–4 weeks before deadlines. Follow up gently 1 week before. Most recommenders submit online via the university's portal — make sure they receive the link." }
+      ]
+    },
+    {
+      id: "gre-vs-gmat-which-test", tag: "Comparison", date: "2026",
+      title: "GRE vs GMAT: Which Test Should You Take for Your Master's Program?",
+      excerpt: "GRE vs GMAT — format, scoring, difficulty, and which test suits which programmes and students. Data to help you choose.",
+      kw: "gre vs gmat, which test to take gre or gmat, gre vs gmat for mba, gre vs gmat difficulty, gre or gmat for masters",
+      sections: [
+        { h: "Quick answer", body: "GRE is increasingly the default for most master's programmes (MS, MA, etc.). GMAT is still preferred for MBA and business master's. Both are now almost equally accepted at top schools — choose the test that plays to your strengths, not tradition. Both tests are valid." },
+        { h: "GRE basics", body: "GRE tests Verbal Reasoning, Quantitative Reasoning and Analytical Writing. Scoring is 130–170 per skill section (260–340 total). About 2 hours with breaks. The format is somewhat mathematical and logic-heavy in Quant." },
+        { h: "GMAT basics", body: "GMAT Focus Edition (latest) has Quantitative, Verbal and a new Data Insights section, scored 205–805. About 2.5 hours. Data Insights (new in Focus) blends data literacy and reasoning — a differentiator." },
+        { h: "GRE suits", body: "STEM students (engineering, data science, computer science) find GRE Quant familiar. Verbal rewards broad, contextual vocabulary knowledge (reading comprehension and sentence meaning). Good for students strong in maths and reading." },
+        { h: "GMAT suits", body: "Business and finance master's programmes prefer GMAT, especially MBA. Quant tests practical business math and logic. Critical Reasoning asks you to evaluate arguments (very business-relevant). Data Insights is a new edge — shows modern data literacy." },
+        { h: "Acceptance reality", body: "Stanford, MIT, Wharton accept both. NYU, Carnegie Mellon largely prefer GRE for non-MBA. Check your target programme's website — most list 'GRE or GMAT accepted' now, but a few still show a slight preference." },
+        { h: "Test prep and difficulty", body: "GRE prep is often cheaper (more free resources). GMAT prep is more expensive (proprietary). Neither is objectively 'harder' — it depends on your strengths. Take a free practice section of each on LandingPrep and see which scoring style fits you." }
+      ]
     }
   ];
 
