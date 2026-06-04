@@ -3658,9 +3658,9 @@ html[data-theme="dark"] {
 .dc-back { color: var(--ink-4); }
 
 /* ── Free Tools hub ─────────────────────────────────────────────────────── */
-.tools-shell { max-width: 860px; margin: 0 auto; padding: 28px 20px 60px; }
-.tools-shell-wide { max-width: 1080px; }
-.tools-shell-deck { max-width: 1240px; }
+.tools-shell { max-width: 1120px; margin: 0 auto; padding: 28px 24px 60px; }
+.tools-shell-wide { max-width: 1320px; }
+.tools-shell-deck { max-width: 1320px; }
 .tools-hero { text-align: center; margin: 10px 0 22px; }
 .tools-hero h1 { font-size: clamp(28px, 4vw, 40px); margin: 0 0 8px; color: var(--ink); }
 .tools-hero p { color: var(--ink-3); font-size: 17px; margin: 0 auto; max-width: 620px; }

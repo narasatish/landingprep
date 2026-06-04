@@ -78,7 +78,7 @@
     return (
       <>
         <window.LP_TopBar current="colleges" onNav={onNav} />
-        <main className="tools-shell">
+        <main className="tools-shell tools-shell-wide">
           <header className="tools-hero">
             <h1>Study Abroad — by Country</h1>
             <p>Pick your destination, then explore its top universities, admission, scholarships, costs, visa &amp; immigration — all free.</p>
