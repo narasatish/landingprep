@@ -32,6 +32,7 @@ const HUB_LINKS = [
   { label: "IELTS band guides", href: "/ielts-band-guides/" },
   { label: "English test comparisons", href: "/english-test-comparisons/" },
   { label: "Test requirements by country", href: "/exam-requirements-by-country/" },
+  { label: "How LandingPrep works", href: "/how-it-works/" },
   { label: "Blog", href: "/blog/" },
   { label: "Explore all pages", href: "/explore/" },
 ];
@@ -1972,6 +1973,32 @@ const CONTENT_HUBS = [
       { href: "/study-abroad-without-ielts/", label: "Study Abroad Without IELTS" },
       { href: "/mock-test/ielts/", label: "Free IELTS Mock Test" },
       { href: "/blog/", label: "Exam-Prep Blog" },
+    ] },
+  { path: "/how-it-works/", title: "How LandingPrep Works — Our Method, Scoring & Why It's Free",
+    desc: "How LandingPrep builds free mock tests that mirror the real IELTS, TOEFL, PTE, GRE & GMAT, how the AI scoring and feedback work, how we keep content current for 2026, and why it's 100% free — with honest limitations.",
+    kw: "how landingprep works, are landingprep mock tests accurate, how is ielts mock test scored, ai ielts band score accuracy, who is behind landingprep, free ielts practice methodology",
+    lead: "Trust matters when you are preparing for a high-stakes exam. Here is exactly how LandingPrep builds its practice, how the scoring and AI feedback work, how we keep everything current — and the honest limits of any practice tool.",
+    sections: [
+      { h: "Built to mirror the real exams", body: "Every mock test is modelled on the official test specification for that exam — the same section order, time limits, question types and answer formats as the real IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo English Test, GRE and GMAT Focus. The goal is that test day feels familiar: the timing pressure, the instructions and the question styles match what you will actually see." },
+      { h: "How scoring works", body: "Objective sections (listening, reading, multiple-choice, quant) are auto-scored instantly against a verified answer key, with a point-to-point explanation for every question. Writing and speaking are assessed by an AI examiner against the official rubric for that exam and mapped onto its real scale — the IELTS band, the TOEFL 0–120, the PTE 10–90, and so on — so you get a realistic estimate to guide your practice." },
+      { h: "How the AI feedback is built", body: "The AI Writing and Speaking agents are prompted with the official assessment criteria — for IELTS that means Task Achievement, Coherence & Cohesion, Lexical Resource and Grammatical Range & Accuracy; other exams use their own rubrics. You get structured, criterion-by-criterion feedback plus a Band 7+/CEFR C1 model answer to compare against, not just a number." },
+      { h: "Kept current for 2026", body: "Exam formats, fees and visa rules change. We review and update content for the current year, cross-checking official test-maker and immigration sources, and date our study-abroad guides so you can see how fresh they are. The GMAT Focus edition, the latest Duolingo format and 2025–26 visa changes are already reflected." },
+      { h: "Why it's 100% free", body: "Good exam prep and honest study-abroad guidance are usually locked behind a paywall, which shuts out the students who need them most. LandingPrep's mission is to remove that barrier — every mock test, AI tool, lesson and study-abroad resource is free, with no signup, no credit card and no trial that expires." },
+      { h: "Honest limitations", body: "No practice tool — ours or anyone's — can issue an official score, and an AI estimate is an estimate. Use your LandingPrep results to track progress and find weak areas, but always confirm the exact score and the precise requirement with your chosen university and visa authority before you rely on it. We would rather be upfront about this than over-promise." },
+    ],
+    faqs: [
+      { q: "How accurate is the AI band/score estimate?", a: "It is a realistic guide, not an official result. Objective sections are scored exactly against an answer key; writing and speaking are rated against the official rubric and mapped to the real scale. Treat it as a progress indicator and verify your target with the official test." },
+      { q: "Do the mock tests really match the real exam?", a: "Yes — each mock mirrors the official format, section order, timing and question types for that exam, so test day feels familiar. We update them as exam formats change." },
+      { q: "Who is behind LandingPrep?", a: "LandingPrep is built by an education-technology team focused on making exam prep and study-abroad guidance free and accessible. Content is modelled on official test specifications and reviewed for accuracy; we do not claim affiliation with any official test maker." },
+      { q: "Is it really free, forever?", a: "Yes. Every mock test, AI tool, lesson and study-abroad resource is 100% free with no signup or payment. An optional free account only adds progress tracking across devices." },
+      { q: "How often is content updated?", a: "We review content for the current year and reflect changes to exam formats, fees and visa rules as they happen, cross-checking official sources. Study-abroad guides are dated so you can see how current they are." },
+    ],
+    related: [
+      { href: "/mock-test/ielts/", label: "Free IELTS Mock Test" },
+      { href: "/which-english-test/", label: "Which English Test Should I Take?" },
+      { href: "/about/", label: "About LandingPrep" },
+      { href: "/blog/", label: "Exam-Prep & Study-Abroad Blog" },
+      { href: "/explore/", label: "Explore All Free Pages" },
     ] },
 ];
 CONTENT_HUBS.forEach(contentHub);
