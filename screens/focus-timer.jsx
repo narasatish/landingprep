@@ -61,7 +61,9 @@
             <div><strong>{s.minutes}</strong> focus min today</div>
           </div>
         </div>
-        <p className="tool-note">Your daily count is saved on this device only. Tip: open the 🍅 button (bottom-left) to keep the timer and study sounds with you on every page.</p>
+        {s.hidden
+          ? <button className="tool-btn" style={{ marginTop: 12 }} onClick={() => F.setHidden(false)}>📌 Show the floating 🍅 timer button on every page</button>
+          : <p className="tool-note">Your daily count is saved on this device only. Tip: the 🍅 button (bottom-left) gives you the timer and study music on every page.</p>}
       </div>
     );
   }

@@ -138,18 +138,29 @@
     const [phase, setPhase] = useState("ready"); // ready | reading | done
     const startRef = useRef(0);
     const [wpm, setWpm] = useState(0);
-    const start = () => { startRef.current = Date.now(); setPhase("reading"); };
+    const [tooFast, setTooFast] = useState(false);
+    const [elapsed, setElapsed] = useState(0);
+    useEffect(() => {
+      if (phase !== "reading") return;
+      const t = setInterval(() => setElapsed(Math.max(0, Math.round((Date.now() - startRef.current) / 1000))), 250);
+      return () => clearInterval(t);
+    }, [phase]);
+    const start = () => { startRef.current = Date.now(); setElapsed(0); setTooFast(false); setPhase("reading"); };
     const finish = () => {
-      const mins = (Date.now() - startRef.current) / 60000;
-      setWpm(mins > 0 ? Math.round(p.words / mins) : 0);
-      setPhase("done");
+      const secs = (Date.now() - startRef.current) / 1000;
+      const w = secs > 0 ? Math.round(p.words / (secs / 60)) : 0;
+      // A genuine read of a ~250-word passage takes well over ~15s; anything faster (or > ~700 wpm)
+      // means the passage wasn't actually read, so we don't report a nonsense number.
+      if (secs < 15 || w > 700) { setTooFast(true); setPhase("done"); return; }
+      setWpm(w); setTooFast(false); setPhase("done");
     };
     const verdict = (w) => w >= 250 ? ["Excellent", "good"] : w >= 180 ? ["Solid — exam-ready pace", "good"] : w >= 120 ? ["Average — push for 200+ wpm", "warn"] : ["Slow — practise daily reading", "warn"];
     const v = verdict(wpm);
+    const fmtT = (sec) => Math.floor(sec / 60) + ":" + String(sec % 60).padStart(2, "0");
     return (
       <div className="tool-card">
         <h2>Reading Speed Test</h2>
-        <p className="tool-sub">Read the passage naturally, then stop the timer. IELTS, TOEFL and GRE reading reward 200+ words per minute with comprehension.</p>
+        <p className="tool-sub">No microphone needed — this simply <strong>times how fast you read</strong>. Tap start, read the passage at your normal pace, then tap stop. IELTS, TOEFL and GRE reward 200+ words per minute with good comprehension.</p>
         {phase === "ready" && (
           <div className="reading-cta">
             <p><strong>{p.title}</strong> · {p.words} words</p>
@@ -158,17 +169,24 @@
         )}
         {phase === "reading" && (
           <div>
+            <div className="reading-timerbar">⏱ {fmtT(elapsed)} — read at your normal pace, then tap stop</div>
             <p className="reading-text">{p.text}</p>
             <button className="tool-btn" onClick={finish}>⏹ I've finished — show my speed</button>
           </div>
         )}
-        {phase === "done" && (
+        {phase === "done" && (tooFast ? (
+          <div className="reading-result warn">
+            <div style={{ fontSize: 34 }}>🤔</div>
+            <div>That was too quick to be a real read — tap start and read the whole passage at your normal pace.</div>
+            <button className="tool-btn ghost" onClick={() => setPhase("ready")}>Try again</button>
+          </div>
+        ) : (
           <div className={"reading-result " + v[1]}>
             <div className="big-wpm">{wpm}<span> wpm</span></div>
             <div>{v[0]}</div>
             <button className="tool-btn ghost" onClick={() => setPhase("ready")}>Try again</button>
           </div>
-        )}
+        ))}
       </div>
     );
   }
@@ -259,7 +277,8 @@
         <div className="tool-card">
           <h3>📊 Word count &amp; readability</h3>
           <p className="tool-sub">Paste your essay or speaking script. Check word count against IELTS/TOEFL targets, reading/speaking time and readability — all in your browser, nothing stored.</p>
-          <textarea className="bc-textarea" rows={10} placeholder="Paste your text here…" value={text} onChange={(e) => setText(e.target.value)} />
+          <textarea className="bc-textarea" rows={10} placeholder="Paste or type your text here — counts update live…" value={text} onChange={(e) => setText(e.target.value)} />
+          <div className="wc-live">{wc} word{wc === 1 ? "" : "s"}{wc > 0 ? " · scroll down for full breakdown" : " · start typing to see live stats"}</div>
         </div>
         {wc > 0 && (
           <>

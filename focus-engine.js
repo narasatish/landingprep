@@ -28,7 +28,8 @@
   function notify(msg) { try { if ("Notification" in window && Notification.permission === "granted") new Notification("LandingPrep Focus Timer", { body: msg, silent: true }); } catch (e) {} }
 
   const init = loadStats();
-  const s = { running: false, mode: "focus", secs: 25 * 60, focusMin: 25, breakMin: 5, cycle: 0, task: "", sessions: init.sessions, minutes: init.minutes };
+  let hidden0 = false; try { hidden0 = localStorage.getItem("lp_focus_hidden") === "1"; } catch (e) {}
+  const s = { running: false, mode: "focus", secs: 25 * 60, focusMin: 25, breakMin: 5, cycle: 0, task: "", sessions: init.sessions, minutes: init.minutes, hidden: hidden0 };
   const subs = new Set();
   let timer = null;
   const emit = () => subs.forEach((fn) => { try { fn(s); } catch (e) {} });
@@ -63,11 +64,12 @@
   function setFocus(m) { s.focusMin = m; if (!s.running && s.mode === "focus") s.secs = m * 60; emit(); }
   function setBreak(m) { s.breakMin = m; if (!s.running && s.mode === "break") s.secs = m * 60; emit(); }
   function setTask(t) { s.task = (t || "").slice(0, 80); emit(); }
+  function setHidden(b) { s.hidden = !!b; try { localStorage.setItem("lp_focus_hidden", b ? "1" : "0"); } catch (e) {} emit(); }
 
   window.LP_FOCUS = {
     LONG_AFTER, LONG_MIN,
     get: () => s,
     subscribe(fn) { subs.add(fn); return () => subs.delete(fn); },
-    startStop, reset, skip, setFocus, setBreak, setTask,
+    startStop, reset, skip, setFocus, setBreak, setTask, setHidden,
   };
 })();

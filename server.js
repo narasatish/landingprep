@@ -61,7 +61,7 @@ const CSP = [
   "img-src 'self' data: blob: https:",
   "media-src 'self' data: blob:",
   "connect-src 'self' https://*.googleapis.com https://*.onrender.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.firebaseio.com https://*.firebaseapp.com https://*.gstatic.com",
-  "frame-src 'self' https://*.firebaseapp.com",
+  "frame-src 'self' https://*.firebaseapp.com https://www.youtube.com https://www.youtube-nocookie.com",
   "worker-src 'self' blob:",
   "manifest-src 'self'",
   "object-src 'none'",
