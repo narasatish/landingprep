@@ -486,6 +486,7 @@ function App() {
     <>
       {content}
       {window.LP_ChatbotWidget && <window.LP_ChatbotWidget />}
+      {window.LP_FocusWidget && <window.LP_FocusWidget />}
     </>
   );
 }

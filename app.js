@@ -493,7 +493,7 @@ function App() {
   } else {
     content = /* @__PURE__ */ React.createElement(window.LP_Home, { onGuide, onPractice, onNav });
   }
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, content, window.LP_ChatbotWidget && /* @__PURE__ */ React.createElement(window.LP_ChatbotWidget, null));
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, content, window.LP_ChatbotWidget && /* @__PURE__ */ React.createElement(window.LP_ChatbotWidget, null), window.LP_FocusWidget && /* @__PURE__ */ React.createElement(window.LP_FocusWidget, null));
 }
 class LPErrorBoundary extends React.Component {
   constructor(props) {
