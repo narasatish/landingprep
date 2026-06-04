@@ -273,6 +273,134 @@
         { h: "Which to pick", body: "Take a free practice section of each on LandingPrep and see which scoring style fits you. Strong pronunciation + comfort with computers \u2192 PTE. Prefer human interaction + abundant prep resources \u2192 IELTS. There's no universally 'easier' test \u2014 only the one that fits you." },
         { h: "Practise both free", body: "LandingPrep has free IELTS and PTE mock tests with instant scoring and an AI speaking partner \u2014 try both before you pay the booking fee." }
       ]
+    },
+    {
+      id: "how-to-get-ielts-band-7",
+      tag: "IELTS",
+      date: "2026",
+      title: "How to Get IELTS Band 7 in One Month: A Free Section-by-Section Plan",
+      excerpt: "Band 7 needs ~75% accuracy in Listening and Reading plus controlled Writing and Speaking. Here's a realistic 4-week plan to reach it, free.",
+      kw: "how to get ielts band 7, ielts band 7 in one month, ielts band 7 study plan, ielts 7 preparation, free ielts band 7 tips",
+      sections: [
+        { h: "What Band 7 actually requires", body: "Band 7 roughly means about 30/40 in Listening and Reading, a Writing response that develops ideas with few errors, and Speaking that is fluent with flexible vocabulary. You do not need perfection \u2014 you need consistency and no weak section dragging your overall down." },
+        { h: "Weeks 1\u20132: build accuracy", body: "Do one full Listening and one full Reading section every day and review every mistake \u2014 not just the score. For Reading, master skimming for gist then scanning for keywords; most lost marks come from True/False/Not Given and matching headings. Practise these free on LandingPrep with answer explanations." },
+        { h: "Writing: structure beats vocabulary", body: "For Task 2, use a clear four-paragraph structure: introduction (paraphrase + position), two body paragraphs (one idea each, explained and exemplified), and a conclusion. Examiners reward a clear position held throughout and linked, error-light sentences far more than rare 'big' words used wrongly." },
+        { h: "Speaking: fluency and extension", body: "Band 7 speakers answer the question then add a reason or example without long pauses. Record yourself answering Part 2 cue cards for two minutes; aim to keep talking. Use the free AI speaking partner to rehearse two-way questions and get instant fluency feedback." },
+        { h: "Week 4: full mocks under timing", body: "Sit two or three complete, timed mock tests in the final week to build stamina and pacing. Treat them like the real exam \u2014 no pausing. Identify your weakest section and give it the most attention in the last few days." },
+        { h: "Avoid the common Band 6.5 trap", body: "Most people stall at 6.5 because one section (usually Writing) lags. Diagnose your weakest skill early and over-invest there \u2014 lifting a 6 to a 7 in one section is what moves your overall. Practise free on LandingPrep." }
+      ]
+    },
+    {
+      id: "ielts-writing-task-2-structure",
+      tag: "IELTS",
+      date: "2026",
+      title: "IELTS Writing Task 2: Band 7+ Structure, Templates & Common Mistakes",
+      excerpt: "A clear, repeatable Task 2 structure with linking, paragraphing and the mistakes that cap people at Band 6. Free templates and examples.",
+      kw: "ielts writing task 2, ielts task 2 structure, ielts essay band 7, ielts writing tips, ielts task 2 template free",
+      sections: [
+        { h: "Understand the question type", body: "Task 2 prompts are usually opinion (agree/disagree), discussion (discuss both views), problem/solution, or two-part questions. Mis-reading the type is the single biggest cause of low Task Response scores. Underline the keywords and decide your position before you write." },
+        { h: "The four-paragraph blueprint", body: "Introduction: paraphrase the prompt and state your position. Body 1: your first main idea, explained, with an example. Body 2: your second idea, explained, with an example. Conclusion: restate your position and summarise. This works for almost every prompt type." },
+        { h: "Coherence and linking", body: "Use linking words naturally \u2014 Firstly, Moreover, However, As a result, In conclusion \u2014 but do not overuse them. Each paragraph should have one clear central idea (a topic sentence) that the rest of the paragraph supports. Coherence and cohesion is 25% of your Writing score." },
+        { h: "Vocabulary and grammar range", body: "Aim for accurate topic vocabulary and a mix of simple and complex sentences. A few well-used complex sentences (relative clauses, conditionals) lift Grammatical Range. Accuracy matters more than ambition \u2014 frequent errors cap you at Band 6 even with advanced words." },
+        { h: "Mistakes that cap you at Band 6", body: "Memorised templates that don't fit the question, no clear position, under-length essays (write 260\u2013290 words), and listing ideas without developing any of them. Develop two ideas fully rather than mentioning five." },
+        { h: "Practise with model answers", body: "Read band-9 model answers for the prompt types you find hardest, then write your own under 40 minutes. Use the free AI Writing Agent on LandingPrep for instant feedback on structure and grammar." }
+      ]
+    },
+    {
+      id: "ielts-speaking-tips-band-7",
+      tag: "IELTS",
+      date: "2026",
+      title: "IELTS Speaking Tips: How to Reach Band 7 (Fluency, Vocabulary, Grammar)",
+      excerpt: "What examiners reward in Speaking, how to extend answers, and how to practise the three parts. Free AI speaking practice included.",
+      kw: "ielts speaking tips, ielts speaking band 7, how to improve ielts speaking, ielts speaking practice free, ielts speaking part 2",
+      sections: [
+        { h: "How Speaking is scored", body: "Four equal criteria: Fluency & Coherence, Lexical Resource, Grammatical Range & Accuracy, and Pronunciation. Band 7 means you speak at length without much effort, use some less common vocabulary, and produce error-free sentences frequently \u2014 small errors are fine." },
+        { h: "Part 1: answer and extend", body: "For familiar topics (home, work, hobbies), give a direct answer then add a reason, example or contrast. One-word answers and over-rehearsed speeches both hurt you. Sound natural and conversational." },
+        { h: "Part 2: the long turn", body: "You get one minute to prepare a two-minute talk. Use the prep time to jot keywords for each bullet, then speak continuously. If you run out, add a personal example or how you felt. Keeping going fluently for the full two minutes is what scores." },
+        { h: "Part 3: develop and justify", body: "These abstract questions test your ability to discuss, speculate and justify opinions. Use phrases like 'It depends on\u2026', 'One reason might be\u2026', 'On the other hand\u2026'. Give balanced, developed answers rather than short ones." },
+        { h: "Vocabulary and pronunciation", body: "Build topic vocabulary (education, technology, environment) and use it naturally. For pronunciation, focus on clear word stress and sentence rhythm \u2014 you do not need a particular accent, just intelligibility." },
+        { h: "Rehearse out loud, free", body: "Speaking improves only by speaking. Use the free AI speaking partner on LandingPrep to simulate all three parts, get two-way questions, and receive instant fluency feedback." }
+      ]
+    },
+    {
+      id: "pte-79-tips",
+      tag: "PTE",
+      date: "2026",
+      title: "How to Score PTE 79+ : High-Leverage Tasks, Templates & Free Practice",
+      excerpt: "PTE's AI scoring rewards technique. Learn the highest-leverage tasks (Read Aloud, Repeat Sentence) and how to maximise each skill, free.",
+      kw: "pte 79 tips, how to score pte 79, pte academic tips, pte 90 strategy, pte practice test free, pte repeat sentence read aloud",
+      sections: [
+        { h: "Why PTE is a technique test", body: "PTE is scored by AI and uses integrated tasks that contribute to multiple skills at once. That means a handful of high-leverage tasks lift your whole score. Master those and you can reach 79+ (equivalent to roughly IELTS 7) efficiently." },
+        { h: "Speaking: Read Aloud & Repeat Sentence", body: "Read Aloud and Repeat Sentence feed Speaking, Reading and Listening scores. Speak with steady pace, clear word stress and no long pauses \u2014 fluency and pronunciation are scored mechanically. For Repeat Sentence, focus on chunks of meaning, not individual words." },
+        { h: "Writing: Summarize & Essay", body: "Summarize Written Text must be ONE grammatically correct sentence (5\u201375 words) capturing the main point \u2014 practise condensing paragraphs. For the essay, use a clean 200\u2013300 word structure; the AI rewards clear organisation, on-topic content and correct grammar." },
+        { h: "Reading: fill in the blanks", body: "Reading & Writing Fill in the Blanks and Reading Fill in the Blanks carry heavy weight. Build collocation and vocabulary knowledge so the right word 'sounds' correct. Manage time \u2014 do not over-invest in single-mark multiple-choice items." },
+        { h: "Listening: highlight & write from dictation", body: "Write From Dictation is pure points \u2014 every correct word scores Listening and Writing. Practise typing short sentences you hear exactly. Highlight Correct Summary and Highlight Incorrect Words also reward focused listening." },
+        { h: "Practise the high-value tasks free", body: "Drill Read Aloud, Repeat Sentence and Write From Dictation until they are automatic. LandingPrep has free PTE practice with instant scoring \u2014 focus your time where the points are." }
+      ]
+    },
+    {
+      id: "gre-320-study-plan",
+      tag: "GRE",
+      date: "2026",
+      title: "GRE 320+ Study Plan: How to Score High on Quant & Verbal (Free)",
+      excerpt: "A structured plan to reach GRE 320+ \u2014 Quant fundamentals, Verbal vocabulary and reading, and timed practice. Free GRE mock tests included.",
+      kw: "gre 320 study plan, how to score 320 gre, gre quant tips, gre verbal preparation, gre 160 quant, free gre practice test",
+      sections: [
+        { h: "What 320+ takes", body: "A 320 usually means around 160 Quant and 160 Verbal. Quant is very learnable for most test-takers because the maths is high-school level \u2014 the challenge is speed, traps and careful reading. Verbal rewards vocabulary and reading stamina." },
+        { h: "Quant: master fundamentals + traps", body: "Revise arithmetic, algebra, ratios, percentages, exponents, geometry and basic statistics. Then drill the question types \u2014 Quantitative Comparison, multiple-answer and numeric entry. Most lost points come from misreading the question or falling for tempting wrong options, not hard maths." },
+        { h: "Verbal: vocabulary + reading", body: "Learn high-frequency GRE vocabulary in context (not flashcards alone) for Text Completion and Sentence Equivalence. For Reading Comprehension, practise identifying the main idea, author's tone and logical structure. Read dense non-fiction to build stamina." },
+        { h: "Analytical Writing", body: "The Issue essay asks for a reasoned argument on a claim. Focus on a clear position, well-developed reasons and specific examples. A clear structure scores well; you do not need elaborate prose." },
+        { h: "Timed practice is non-negotiable", body: "The GRE is adaptive by section and time-pressured. Sit full, timed mock tests to build pacing and learn when to guess and move on. Review every error to find patterns." },
+        { h: "Practise free on LandingPrep", body: "Use free GRE Quant and Verbal practice with worked solutions to drill question types and track your weak areas on the way to 320+." }
+      ]
+    },
+    {
+      id: "gmat-focus-645-study-plan",
+      tag: "GMAT",
+      date: "2026",
+      title: "GMAT Focus 645+ Study Plan: Quant, Verbal & Data Insights (Free Guide)",
+      excerpt: "An 8\u201310 week plan for the GMAT Focus Edition \u2014 Quant, Verbal and the new Data Insights section \u2014 with timed practice and review strategy.",
+      kw: "gmat focus 645 study plan, gmat focus edition, gmat data insights, gmat 700 equivalent, how to study for gmat, free gmat practice",
+      sections: [
+        { h: "Understand the Focus Edition", body: "The GMAT Focus Edition has three equally weighted sections \u2014 Quantitative, Verbal, and Data Insights \u2014 and a 205\u2013805 score scale. A 645 is a strong, competitive score for many programmes. Data Insights is the new differentiator." },
+        { h: "Quant: problem solving + logic", body: "GMAT Quant is about reasoning, not advanced maths. Master number properties, algebra, ratios, percentages and word problems, and learn to spot efficient solution paths. Accuracy under time pressure is the skill being tested." },
+        { h: "Verbal: critical reasoning + RC", body: "Focus on Critical Reasoning (assumptions, strengthen/weaken, inference) and Reading Comprehension. CR is highly learnable with pattern practice \u2014 learn to pre-think the answer before reading options." },
+        { h: "Data Insights: the new edge", body: "Data Insights blends data sufficiency, table analysis, graphics interpretation, multi-source reasoning and two-part analysis. Practise reading tables and charts quickly and reasoning about what data is sufficient. This section often separates strong scorers." },
+        { h: "Build pacing with full mocks", body: "Each section is time-pressured and you can review and edit a limited number of questions. Sit full-length, timed mocks to build endurance and a per-question pace, and review every miss for the underlying reason." },
+        { h: "Drill free on LandingPrep", body: "Use free GMAT Focus practice \u2014 including Data Insights \u2014 with worked solutions to target your weakest area on the way to 645+." }
+      ]
+    },
+    {
+      id: "sop-format-for-masters",
+      tag: "Study Abroad",
+      date: "2026",
+      title: "SOP Format for Masters: Structure, Sample Outline & Mistakes to Avoid",
+      excerpt: "A clear Statement of Purpose structure for master's applications \u2014 what each paragraph should cover, with a free outline and common pitfalls.",
+      kw: "sop format for masters, statement of purpose structure, how to write sop, sop sample for ms, sop mistakes, free sop builder",
+      sections: [
+        { h: "What an SOP is for", body: "Your Statement of Purpose answers three questions: why this field, why this university and programme, and why you. Admissions committees use it to judge fit, motivation and communication \u2014 it can outweigh a slightly weaker GPA." },
+        { h: "A proven structure", body: "Paragraph 1: a specific hook and your academic or professional motivation. Paragraphs 2\u20133: relevant experience, projects and skills with evidence. Paragraph 4: why this exact programme (named courses, professors, labs). Paragraph 5: your goals and how the degree connects to them. Keep it around 800\u20131,000 words." },
+        { h: "Be specific, not generic", body: "Replace vague claims ('I am passionate about technology') with concrete evidence ('I built X, which taught me Y'). Name specific courses, faculty and research groups at the university \u2014 this proves genuine interest and research." },
+        { h: "Tailor each one", body: "Never send the same SOP to every university. Swap in programme-specific details for each application. Reusing a generic essay is the most common reason strong applicants get rejected." },
+        { h: "Mistakes to avoid", body: "Clich\xE9d openings, listing your CV in prose, exceeding the word limit, weak proofreading, and failing to connect past experience to future goals. Have someone else read it for clarity and tone." },
+        { h: "Draft and refine free", body: "Use LandingPrep's free SOP builder and sample library to draft, structure and polish your statement, then tailor it per university." }
+      ]
+    },
+    {
+      id: "scholarships-for-indian-students-2026",
+      tag: "Scholarships",
+      date: "2026",
+      title: "Scholarships for Indian Students 2026: How to Find & Win Funding",
+      excerpt: "Where to find scholarships, the main types (fully funded, merit, need-based), and how to build a winning application. Free scholarship finder.",
+      kw: "scholarships for indian students 2026, fully funded scholarships, study abroad scholarships india, how to get scholarship to study abroad, merit scholarships",
+      sections: [
+        { h: "Types of scholarships", body: "Funding falls into a few buckets: fully funded (tuition + living + travel, e.g. Chevening, Fulbright, DAAD, Australia Awards), merit-based university scholarships, need-based aid, and country or government schemes. Apply to several types to maximise your odds." },
+        { h: "Where to search", body: "Start with the university's own financial-aid pages (often the biggest source), then government schemes (Chevening for the UK, Fulbright for the USA, DAAD for Germany), and reputable scholarship databases. Avoid any 'scholarship' that asks for a fee." },
+        { h: "What wins funding", body: "A clear academic record, a compelling SOP and essays, strong recommendation letters, relevant experience or leadership, and a good test score. Many scholarships weight the essays heavily \u2014 invest time there." },
+        { h: "Deadlines matter", body: "Major scholarships open months before the intake and have hard deadlines, often before university decisions. Build a calendar of deadlines and apply early \u2014 late applications are simply not considered." },
+        { h: "Improve every lever", body: "You cannot change your past grades, but you can strengthen your essays, recommendations and test scores now. A higher IELTS/PTE/GRE score directly improves both admission and scholarship chances." },
+        { h: "Find scholarships free", body: "Use LandingPrep's free scholarship finder and country scholarship pages to discover funding you qualify for, and the free SOP builder to write standout essays." }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;

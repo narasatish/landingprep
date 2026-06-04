@@ -3060,6 +3060,56 @@ function ScoreCardButton({ exam, report }) {
   return <button className="btn" onClick={share} disabled={busy} title="Download or share a score card image">{busy ? "Preparing…" : "📤 Share score card"}</button>;
 }
 
+/* ── Share-your-score viral loop: prominent referral share under the hero score.
+   Privacy-safe (no PII), drives free referral traffic with a UTM-tagged URL.
+   Complements ScoreCardButton (which shares an image); this shares text + link. ── */
+function ShareScoreCard({ exam, report }) {
+  const [copied, setCopied] = useStateT(false);
+  if (report == null || report.overall == null) return null;
+  const examId = (exam && exam.id) || "exam";
+  const examName = (exam && exam.name) || "English";
+  const scoreTxt = String(report.overall) + (report.overallLabel ? " (" + report.overallLabel + ")" : "");
+  const url = "https://landingprep.com/?utm_source=share&utm_medium=score&utm_campaign=" + encodeURIComponent(examId);
+  const msg = "I scored " + scoreTxt + " on a free " + examName + " mock test on LandingPrep 🎯 Practise free for IELTS, TOEFL, PTE, GRE & GMAT 👉 " + url;
+  const ga = (method) => { try { if (typeof window.gtag === "function") window.gtag("event", "share", { method: method, content_type: "score", item_id: examId }); } catch (e) {} };
+  const copyMsg = async () => {
+    ga("copy");
+    try { await navigator.clipboard.writeText(msg); setCopied(true); setTimeout(() => setCopied(false), 2200); }
+    catch (e) { try { window.prompt("Copy your score message:", msg); } catch (e2) {} }
+  };
+  const nativeShare = async () => {
+    ga("native");
+    try { if (navigator.share) { await navigator.share({ title: "My " + examName + " score", text: msg, url: url }); return; } }
+    catch (e) { return; /* user cancelled — do nothing */ }
+    copyMsg();
+  };
+  const enc = encodeURIComponent(msg);
+  const encUrl = encodeURIComponent(url);
+  const targets = [
+    { label: "WhatsApp", emoji: "🟢", href: "https://wa.me/?text=" + enc, k: "whatsapp" },
+    { label: "X", emoji: "✖️", href: "https://twitter.com/intent/tweet?text=" + enc, k: "twitter" },
+    { label: "Facebook", emoji: "📘", href: "https://www.facebook.com/sharer/sharer.php?u=" + encUrl + "&quote=" + enc, k: "facebook" },
+    { label: "LinkedIn", emoji: "💼", href: "https://www.linkedin.com/sharing/share-offsite/?url=" + encUrl, k: "linkedin" },
+    { label: "Telegram", emoji: "✈️", href: "https://t.me/share/url?url=" + encUrl + "&text=" + enc, k: "telegram" },
+  ];
+  const canNative = typeof navigator !== "undefined" && !!navigator.share;
+  return (
+    <div className="share-score-card">
+      <div className="ssc-head">📣 Share your score &amp; challenge a friend</div>
+      <div className="ssc-sub">Tell friends you practised free — they can too. No signup, 100% free forever.</div>
+      <div className="ssc-actions">
+        {canNative && <button className="btn btn-primary ssc-native" onClick={nativeShare}>📲 Share</button>}
+        <button className="btn ssc-copy" onClick={copyMsg}>{copied ? "Copied! ✅" : "🔗 Copy link"}</button>
+        {targets.map((t) => (
+          <a key={t.k} className={"ssc-net ssc-" + t.k} href={t.href} target="_blank" rel="noopener noreferrer" onClick={() => ga(t.k)}>
+            <span aria-hidden="true">{t.emoji}</span> {t.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function TestReport({ exam, config, answers, onBack, onNav, onRetake }) {
   const report = scoreTest(config, answers);
   const isEmpty = Object.values(answers).every(a => !a || a.trim?.() === "");
@@ -3080,6 +3130,8 @@ function TestReport({ exam, config, answers, onBack, onNav, onRetake }) {
           </div>
           <div className="rh-label">{report.overallLabel || "Score"} · {exam.name}</div>
         </div>
+
+        <ShareScoreCard exam={exam} report={report} />
 
         <div className="score-grid">
           {Object.entries(report.sections).map(([id, data]) => (

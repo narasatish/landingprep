@@ -2328,13 +2328,64 @@ function ScoreCardButton({ exam, report }) {
   };
   return /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: share, disabled: busy, title: "Download or share a score card image" }, busy ? "Preparing\u2026" : "\u{1F4E4} Share score card");
 }
+function ShareScoreCard({ exam, report }) {
+  const [copied, setCopied] = useStateT(false);
+  if (report == null || report.overall == null) return null;
+  const examId = exam && exam.id || "exam";
+  const examName = exam && exam.name || "English";
+  const scoreTxt = String(report.overall) + (report.overallLabel ? " (" + report.overallLabel + ")" : "");
+  const url = "https://landingprep.com/?utm_source=share&utm_medium=score&utm_campaign=" + encodeURIComponent(examId);
+  const msg = "I scored " + scoreTxt + " on a free " + examName + " mock test on LandingPrep \u{1F3AF} Practise free for IELTS, TOEFL, PTE, GRE & GMAT \u{1F449} " + url;
+  const ga = (method) => {
+    try {
+      if (typeof window.gtag === "function") window.gtag("event", "share", { method, content_type: "score", item_id: examId });
+    } catch (e) {
+    }
+  };
+  const copyMsg = async () => {
+    ga("copy");
+    try {
+      await navigator.clipboard.writeText(msg);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2200);
+    } catch (e) {
+      try {
+        window.prompt("Copy your score message:", msg);
+      } catch (e2) {
+      }
+    }
+  };
+  const nativeShare = async () => {
+    ga("native");
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: "My " + examName + " score", text: msg, url });
+        return;
+      }
+    } catch (e) {
+      return;
+    }
+    copyMsg();
+  };
+  const enc = encodeURIComponent(msg);
+  const encUrl = encodeURIComponent(url);
+  const targets = [
+    { label: "WhatsApp", emoji: "\u{1F7E2}", href: "https://wa.me/?text=" + enc, k: "whatsapp" },
+    { label: "X", emoji: "\u2716\uFE0F", href: "https://twitter.com/intent/tweet?text=" + enc, k: "twitter" },
+    { label: "Facebook", emoji: "\u{1F4D8}", href: "https://www.facebook.com/sharer/sharer.php?u=" + encUrl + "&quote=" + enc, k: "facebook" },
+    { label: "LinkedIn", emoji: "\u{1F4BC}", href: "https://www.linkedin.com/sharing/share-offsite/?url=" + encUrl, k: "linkedin" },
+    { label: "Telegram", emoji: "\u2708\uFE0F", href: "https://t.me/share/url?url=" + encUrl + "&text=" + enc, k: "telegram" }
+  ];
+  const canNative = typeof navigator !== "undefined" && !!navigator.share;
+  return /* @__PURE__ */ React.createElement("div", { className: "share-score-card" }, /* @__PURE__ */ React.createElement("div", { className: "ssc-head" }, "\u{1F4E3} Share your score & challenge a friend"), /* @__PURE__ */ React.createElement("div", { className: "ssc-sub" }, "Tell friends you practised free \u2014 they can too. No signup, 100% free forever."), /* @__PURE__ */ React.createElement("div", { className: "ssc-actions" }, canNative && /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary ssc-native", onClick: nativeShare }, "\u{1F4F2} Share"), /* @__PURE__ */ React.createElement("button", { className: "btn ssc-copy", onClick: copyMsg }, copied ? "Copied! \u2705" : "\u{1F517} Copy link"), targets.map((t) => /* @__PURE__ */ React.createElement("a", { key: t.k, className: "ssc-net ssc-" + t.k, href: t.href, target: "_blank", rel: "noopener noreferrer", onClick: () => ga(t.k) }, /* @__PURE__ */ React.createElement("span", { "aria-hidden": "true" }, t.emoji), " ", t.label))));
+}
 function TestReport({ exam, config, answers, onBack, onNav, onRetake }) {
   const report = scoreTest(config, answers);
   const isEmpty = Object.values(answers).every((a) => {
     var _a;
     return !a || ((_a = a.trim) == null ? void 0 : _a.call(a)) === "";
   });
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "exams", onNav }), /* @__PURE__ */ React.createElement("div", { className: "report-shell" }, isEmpty && /* @__PURE__ */ React.createElement("div", { className: "note", style: { marginBottom: 24 } }, "\u26A0 No answers were submitted. Complete the test before reviewing your score. Scores shown below reflect zero correct answers."), /* @__PURE__ */ React.createElement("div", { className: "report-hero" }, /* @__PURE__ */ React.createElement("div", { className: "rh-score" }, report.overall !== null ? report.overall : "\u2014"), /* @__PURE__ */ React.createElement("div", { className: "rh-label" }, report.overallLabel || "Score", " \xB7 ", exam.name)), /* @__PURE__ */ React.createElement("div", { className: "score-grid" }, Object.entries(report.sections).map(([id, data]) => {
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "exams", onNav }), /* @__PURE__ */ React.createElement("div", { className: "report-shell" }, isEmpty && /* @__PURE__ */ React.createElement("div", { className: "note", style: { marginBottom: 24 } }, "\u26A0 No answers were submitted. Complete the test before reviewing your score. Scores shown below reflect zero correct answers."), /* @__PURE__ */ React.createElement("div", { className: "report-hero" }, /* @__PURE__ */ React.createElement("div", { className: "rh-score" }, report.overall !== null ? report.overall : "\u2014"), /* @__PURE__ */ React.createElement("div", { className: "rh-label" }, report.overallLabel || "Score", " \xB7 ", exam.name)), /* @__PURE__ */ React.createElement(ShareScoreCard, { exam, report }), /* @__PURE__ */ React.createElement("div", { className: "score-grid" }, Object.entries(report.sections).map(([id, data]) => {
     var _a;
     return /* @__PURE__ */ React.createElement("div", { key: id, className: "score-cell" }, /* @__PURE__ */ React.createElement("div", { className: "sc-band" }, (_a = data.band) != null ? _a : "\u2014"), /* @__PURE__ */ React.createElement("div", { className: "sc-skill" }, data.label || id), data.total && /* @__PURE__ */ React.createElement("div", { className: "fine", style: { marginTop: 4 } }, data.correct, "/", data.total, " correct"));
   })), Object.entries(report.sections).map(([id, data]) => {

@@ -1754,6 +1754,228 @@ ${sections.filter((s) => s.links.length).map((s) => `<div class="card"><h2>${esc
   emit(path, head({ title: `${title} (2026) | ${BRAND}`, desc, path, kw, jsonLdBlocks: [itemList, breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: title, path }])] }) + shell(inner));
   return sections.flatMap((s) => s.links.map((l) => l.href));
 }
+// ── Pillar / hub content pages (prose + FAQ schema + internal links) ──────────
+// Emitted BEFORE buildHubs() so /explore/ picks them up (zero orphans). Each links
+// only to verified-existing pages so the link audit stays green.
+function contentHub({ path, title, desc, kw, lead, sections, faqs, related }) {
+  const secHtml = sections.map((s) => `<div class="card"><h2>${esc(s.h)}</h2><p>${esc(s.body)}</p></div>`).join("");
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › ${esc(title)}</p>
+<section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">No signup</span></div>
+<h1>${esc(title)}</h1><p class="lead">${esc(lead || desc)}</p></section>
+${secHtml}
+${faqs && faqs.length ? faqBlock(faqs) : ""}
+<div class="card">${relatedGrid(related)}</div>`;
+  const blocks = [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: title, path }])];
+  if (faqs && faqs.length) blocks.unshift(faqJsonLd(faqs));
+  emit(path, head({ title: `${title} (2026) | ${BRAND}`, desc, path, kw, jsonLdBlocks: blocks }) + shell(inner));
+}
+const CONTENT_HUBS = [
+  { path: "/study-abroad-without-ielts/", title: "Study Abroad Without IELTS — Country & University Guide",
+    desc: "How to study abroad without IELTS in 2026 — MOI letters, English-medium study and accepted alternatives like Duolingo, PTE and TOEFL, by country. 100% free.",
+    kw: "study abroad without ielts, universities without ielts, study in canada without ielts, study in usa without ielts, moi letter, duolingo instead of ielts",
+    lead: "You don't always need IELTS to study abroad. Here are the legitimate routes — MOI letters, prior English-medium study and accepted alternative tests — and how to use them safely.",
+    sections: [
+      { h: "When IELTS can be waived", body: "Many universities accept a Medium of Instruction (MOI) letter, completion of English-medium study, or an alternative test in place of IELTS. Crucially, a university waiver is not always a visa waiver — some countries' student-visa rules still require a recognised English test, so confirm both the university and the immigration requirement for your destination." },
+      { h: "Accepted alternatives to IELTS", body: "The Duolingo English Test, PTE Academic and TOEFL iBT are widely accepted and may suit you better than IELTS. Duolingo is cheaper and taken at home; PTE is computer-scored and fast. Choose the test that fits your strengths and is accepted by both your university and visa authority." },
+      { h: "Which countries are flexible", body: "Germany (especially German-taught or MOI programmes), several universities in Canada and Australia, and parts of Europe offer pathways without IELTS — sometimes via a conditional offer or a short pre-sessional English course. Always verify the rule with the specific programme before you rely on it." },
+    ],
+    faqs: [
+      { q: "Can I study in Canada without IELTS?", a: "Some Canadian universities accept an MOI letter, prior English-medium study, or alternative tests (Duolingo, PTE, TOEFL). However, study-permit rules may still expect a recognised test, so confirm both the university and IRCC requirements." },
+      { q: "Which test is easiest to take instead of IELTS?", a: "The Duolingo English Test is the most convenient — online, at home and lower cost — and is accepted by thousands of universities. PTE Academic and TOEFL iBT are also widely accepted." },
+      { q: "Is a university IELTS waiver the same as a visa waiver?", a: "No. A university may waive IELTS while the country's student-visa rules still require a recognised English test. Always check both before assuming you can skip the test." },
+    ],
+    related: [
+      { href: "/mock-test/duolingo/", label: "Free Duolingo English Test Practice" },
+      { href: "/which-english-test/", label: "Which English Test Should I Take?" },
+      { href: "/study-abroad/top-universities-in-canada/", label: "Top Universities in Canada" },
+      { href: "/practice/ielts/", label: "Free IELTS Practice" },
+      { href: "/blog/", label: "Study Abroad Blog" },
+    ] },
+  { path: "/scholarships-for-indian-students/", title: "Scholarships for Indian Students — Find & Win Funding",
+    desc: "Free hub of scholarships for Indian students 2026 — fully funded, merit and country schemes, plus how to apply and win. Links to every LandingPrep scholarship guide.",
+    kw: "scholarships for indian students, fully funded scholarships, study abroad scholarships india, merit scholarships, how to get scholarship to study abroad",
+    lead: "A complete, free hub of scholarships for Indian students — the main types, where to search, what wins funding, and links to detailed country guides.",
+    sections: [
+      { h: "Types of scholarship", body: "Funding falls into a few buckets: fully funded (tuition plus living and travel, like Chevening, Fulbright, DAAD and Australia Awards), merit-based university scholarships, need-based aid, and government schemes. Apply to several types to maximise your odds." },
+      { h: "Where to search", body: "Start with each university's own financial-aid pages — often the biggest source — then government schemes and reputable databases. Never pay a fee to 'apply' for a scholarship; legitimate scholarships do not charge application fees." },
+      { h: "What wins funding", body: "A clear academic record, a compelling SOP and essays, strong recommendation letters, relevant experience, and a good English-test score. Many scholarships weight the essays heavily, so invest your time there and apply well before the deadline." },
+    ],
+    faqs: [
+      { q: "Which scholarships are fully funded for Indian students?", a: "Chevening (UK), Fulbright (USA), DAAD (Germany) and Australia Awards are well-known fully funded options covering tuition and living costs. Many universities also offer their own full or partial scholarships." },
+      { q: "Do I need IELTS for a scholarship?", a: "Most scholarships and the universities behind them require a recognised English test such as IELTS, PTE or TOEFL. A higher score improves both your admission and scholarship chances." },
+      { q: "When should I apply for scholarships?", a: "Major scholarships open months before the intake and have hard deadlines, often before university decisions. Build a deadline calendar and apply early." },
+    ],
+    related: [
+      { href: "/scholarships/study-in-canada/", label: "Scholarships to Study in Canada" },
+      { href: "/scholarships/study-in-uk/", label: "Scholarships to Study in the UK" },
+      { href: "/scholarships/study-in-usa/", label: "Scholarships to Study in the USA" },
+      { href: "/scholarships/study-in-germany/", label: "Scholarships to Study in Germany" },
+      { href: "/scholarships/study-in-australia/", label: "Scholarships to Study in Australia" },
+    ] },
+  { path: "/cheapest-study-abroad-countries/", title: "Cheapest Countries to Study Abroad (Tuition + Living)",
+    desc: "The cheapest countries to study abroad in 2026 ranked by tuition and living cost — tuition-free Germany, affordable Europe and Asia. Free study-abroad guide.",
+    kw: "cheapest countries to study abroad, study abroad on a budget, cheapest country for masters, study in germany free, affordable study abroad",
+    lead: "Where to get a quality international degree on a budget — ranked by total cost of tuition plus living, with the trade-offs to weigh.",
+    sections: [
+      { h: "Germany — best overall value", body: "Public universities in Germany charge only small semester fees (often €150–350), even for international students, including many English-taught master's programmes. You mainly budget for living costs via a blocked account (around €11,900/year). It is the standout value among top destinations." },
+      { h: "Affordable Europe", body: "Several Central and Eastern European countries — Poland, Czechia and others — offer English-taught degrees at modest tuition (often €2,000–5,000/year) with lower living costs than Western Europe. Good value for engineering, IT and medicine." },
+      { h: "Budget realistically", body: "Compare total cost — tuition plus living, visa, insurance and travel — not tuition alone. A 'cheap' country with high living costs can cost more overall than a moderate-tuition country with low living costs. Scholarships can make even pricier destinations affordable." },
+    ],
+    faqs: [
+      { q: "Is studying in Germany really free?", a: "Most public universities in Germany charge little or no tuition even for international students; you mainly pay small semester fees and budget for living costs. Some private universities and a few states differ, so confirm per programme." },
+      { q: "What is the cheapest country for a master's degree?", a: "Germany is the best value among top destinations thanks to low or no tuition. Parts of Central and Eastern Europe and some Asian hubs are also affordable when you include living costs." },
+    ],
+    related: [
+      { href: "/study-abroad/top-universities-in-germany/", label: "Top Universities in Germany" },
+      { href: "/study-abroad/top-universities-in-canada/", label: "Top Universities in Canada" },
+      { href: "/scholarships/study-in-germany/", label: "Scholarships to Study in Germany" },
+      { href: "/which-english-test/", label: "Which English Test Should I Take?" },
+      { href: "/blog/", label: "Study Abroad Blog" },
+    ] },
+  { path: "/ms-in-canada/", title: "MS in Canada — Programs, Fees, Cutoffs & PR Pathway",
+    desc: "A free guide to an MS in Canada for 2026 — programmes, fees, IELTS/GPA cutoffs, PGWP work permit and the route to PR. Practise IELTS/CELPIP free.",
+    kw: "ms in canada, masters in canada, ms in canada for indian students, ielts for canada, pgwp, canada pr after study",
+    lead: "Everything for an MS in Canada in one place — typical fees, English and GPA cutoffs, the post-study work permit, and the student-to-PR pathway.",
+    sections: [
+      { h: "Fees and entry requirements", body: "Master's tuition for international students typically runs higher than domestic, varying widely by university and programme. Most universities want IELTS around 6.5 (no band below 6.0) or equivalent PTE/TOEFL, plus a strong GPA and, for some programmes, GRE. Confirm exact cutoffs per programme." },
+      { h: "Post-Graduation Work Permit (PGWP)", body: "A PGWP gives up to three years of open work rights after graduating from an eligible programme at a designated learning institution. Recent rules tie PGWP more closely to fields with labour shortages and added language-test requirements, so check your specific programme's eligibility before enrolling." },
+      { h: "The route to PR", body: "Canada offers one of the clearest student-to-PR pathways via Express Entry, where a high IELTS or CELPIP score adds valuable CRS points. Target a PGWP-eligible programme, keep your English score high, and plan your Express Entry profile early." },
+    ],
+    faqs: [
+      { q: "What IELTS score do I need for an MS in Canada?", a: "Most universities want around IELTS 6.5 overall with no band below 6.0, though competitive programmes may ask for 7.0. Confirm the exact requirement for your programme." },
+      { q: "Can I get PR after an MS in Canada?", a: "Yes — many graduates use the Post-Graduation Work Permit to gain work experience, then apply for permanent residence through Express Entry, where a high English score boosts your CRS points." },
+    ],
+    related: [
+      { href: "/study-abroad/top-universities-in-canada/", label: "Top Universities in Canada" },
+      { href: "/ielts-for-canada-pr/", label: "IELTS for Canada PR" },
+      { href: "/scholarships/study-in-canada/", label: "Scholarships to Study in Canada" },
+      { href: "/mock-test/ielts/", label: "Free IELTS Mock Test" },
+      { href: "/mock-test/duolingo/", label: "Free Duolingo Practice" },
+    ] },
+  { path: "/fully-funded-scholarships/", title: "Fully Funded Scholarships to Study Abroad",
+    desc: "Free guide to fully funded scholarships for 2026 — what 'fully funded' covers, the major schemes (Chevening, Fulbright, DAAD), and how to win one.",
+    kw: "fully funded scholarships, fully funded scholarships 2026, chevening fulbright daad, study abroad fully funded, scholarship with stipend",
+    lead: "Fully funded scholarships cover tuition and living costs — sometimes travel too. Here's what they include, the biggest schemes, and how to build a winning application.",
+    sections: [
+      { h: "What 'fully funded' means", body: "A fully funded scholarship typically covers tuition plus a living stipend, and often travel and insurance. Some are government-funded (Chevening, Fulbright, DAAD, Australia Awards); others are university or foundation scholarships. Read the fine print on what each one actually pays." },
+      { h: "How to win one", body: "Strong essays and a clear story of impact matter most. Show academic ability, leadership or relevant experience, a concrete plan, and how you will contribute. A good English-test score is usually required and strengthens your case." },
+      { h: "Apply early and widely", body: "Fully funded schemes are competitive with hard, early deadlines. Apply to several, tailor each application, and secure strong recommendation letters well in advance." },
+    ],
+    faqs: [
+      { q: "What does a fully funded scholarship cover?", a: "Usually tuition plus a living stipend, and often travel and health insurance. Exact coverage varies, so check each scholarship's terms." },
+      { q: "Are fully funded scholarships hard to get?", a: "They are competitive, but a strong academic record, compelling essays, good recommendations and a solid test score make you a serious candidate. Applying early and to several schemes improves your odds." },
+    ],
+    related: [
+      { href: "/scholarships-for-indian-students/", label: "Scholarships for Indian Students" },
+      { href: "/scholarships/study-in-uk/", label: "Scholarships to Study in the UK" },
+      { href: "/scholarships/study-in-usa/", label: "Scholarships to Study in the USA" },
+      { href: "/scholarships/study-in-germany/", label: "Scholarships to Study in Germany" },
+      { href: "/blog/", label: "Study Abroad Blog" },
+    ] },
+  { path: "/gre-quant-160/", title: "GRE Quant 160+: Strategy, Traps & Free Practice",
+    desc: "How to score 160+ on GRE Quant in 2026 — the fundamentals to master, the question types and traps, and timed practice. Free GRE Quant practice with solutions.",
+    kw: "gre quant 160, how to score 160 gre quant, gre quant tips, gre quantitative practice, gre quant 170 strategy, free gre quant practice",
+    lead: "GRE Quant is very learnable — the maths is high-school level, so the challenge is speed, careful reading and avoiding traps. Here's how to reach 160+.",
+    sections: [
+      { h: "Master the fundamentals", body: "Revise arithmetic, algebra, ratios, percentages, exponents, geometry and basic statistics until they are automatic. Most lost points on GRE Quant come from misreading the question or arithmetic slips under time pressure — not from genuinely hard maths." },
+      { h: "Know the question types and traps", body: "Drill Quantitative Comparison, multiple-answer and numeric-entry questions. Quantitative Comparison rewards reasoning over calculation; watch for cases where the answer depends on unstated values (the 'cannot be determined' trap). Always check whether negatives, zero or fractions change the result." },
+      { h: "Build speed with timed practice", body: "The section is time-pressured and adaptive, so pacing matters. Practise full, timed sets, learn when to mark and move on, and review every miss to find recurring patterns. Use free GRE Quant practice with worked solutions to target your weak spots." },
+    ],
+    faqs: [
+      { q: "Is 160 a good GRE Quant score?", a: "A 160 in Quant is a strong, competitive score for many programmes; technical and quantitative programmes may expect higher. Combined with a balanced Verbal score it puts you in good standing." },
+      { q: "How long does it take to reach GRE Quant 160?", a: "With consistent daily practice, many test-takers reach 160+ in 4–8 weeks because the content is high-school maths — the gains come from speed, accuracy and avoiding traps." },
+    ],
+    related: [
+      { href: "/mock-test/gre/", label: "Free GRE Mock Test" },
+      { href: "/practice/gre/", label: "Free GRE Section Practice" },
+      { href: "/mock-test/gmat/", label: "Free GMAT Mock Test" },
+      { href: "/blog/", label: "Exam-Prep Blog" },
+      { href: "/explore/", label: "All Free LandingPrep Resources" },
+    ] },
+  { path: "/gmat-data-insights/", title: "GMAT Data Insights: Question Types & Free Practice",
+    desc: "Master the GMAT Focus Data Insights section in 2026 — data sufficiency, table analysis, graphics, multi-source and two-part reasoning. Free GMAT practice with solutions.",
+    kw: "gmat data insights, gmat focus data insights, data sufficiency gmat, gmat di practice, gmat focus edition, free gmat practice",
+    lead: "Data Insights is the GMAT Focus Edition's newest, most decisive section. Here's what it tests and how to practise each question type effectively.",
+    sections: [
+      { h: "What Data Insights tests", body: "Data Insights is one of three equally weighted GMAT Focus sections. It blends data sufficiency, table analysis, graphics interpretation, multi-source reasoning and two-part analysis — testing how well you read data and reason about what is sufficient to answer a question." },
+      { h: "How to approach the question types", body: "For data sufficiency, decide whether each statement alone (or together) is enough — without fully solving. For table and graphics questions, read the axes, units and totals carefully before answering. Multi-source reasoning rewards quickly locating the relevant tab of information." },
+      { h: "Practise reading data fast", body: "Strong scorers read tables and charts quickly and accurately. Drill timed Data Insights sets, review every miss for the underlying reasoning error, and build the habit of checking units and what the question actually asks. Use free GMAT Focus practice with worked solutions." },
+    ],
+    faqs: [
+      { q: "How important is Data Insights on the GMAT Focus?", a: "Very — it is one of three equally weighted sections and often separates strong scorers, because it is newer and many candidates under-prepare for it." },
+      { q: "What question types are in Data Insights?", a: "Data sufficiency, table analysis, graphics interpretation, multi-source reasoning and two-part analysis. Each rewards careful, fast reading of data and clear reasoning." },
+    ],
+    related: [
+      { href: "/mock-test/gmat/", label: "Free GMAT Mock Test" },
+      { href: "/practice/gmat/", label: "Free GMAT Section Practice" },
+      { href: "/mock-test/gre/", label: "Free GRE Mock Test" },
+      { href: "/blog/", label: "Exam-Prep Blog" },
+      { href: "/explore/", label: "All Free LandingPrep Resources" },
+    ] },
+  { path: "/how-to-get-ielts-band-8/", title: "How to Get IELTS Band 8: Section-by-Section Plan",
+    desc: "How to reach IELTS Band 8 in 2026 — what Band 8 requires in each section and a focused plan to get there. Free IELTS mocks, writing and speaking checkers.",
+    kw: "how to get ielts band 8, ielts band 8 preparation, ielts band 8 requirements, ielts 8 study plan, ielts band 8 writing speaking",
+    lead: "Band 8 is a very high score — near-native control with only occasional slips. Here's what it demands in each section and how to train for it.",
+    sections: [
+      { h: "What Band 8 requires", body: "Band 8 means roughly 35/40 in Listening and Reading, Writing that fully develops ideas with rare errors, and Speaking that is fluent and precise with wide vocabulary. You can make occasional, non-systematic mistakes, but accuracy must be high and consistent." },
+      { h: "Listening and Reading to 8", body: "At this level, almost every question must be correct, so eliminate careless errors: read instructions and word limits exactly, watch spelling, and master the trickiest types (Not Given, matching, multiple-select). Practise full timed sections and review every single miss." },
+      { h: "Writing and Speaking to 8", body: "Writing Band 8 needs a clear, fully extended response with precise vocabulary and varied, accurate grammar — over-complex sentences with errors hurt you. Speaking Band 8 needs effortless fluency, idiomatic but natural vocabulary and clear pronunciation. Use the free AI Writing and Speaking tools to refine both." },
+    ],
+    faqs: [
+      { q: "Is IELTS Band 8 hard to get?", a: "Yes — Band 8 is a very high score requiring near-native accuracy and fluency. It is achievable with strong English and disciplined, error-focused practice, especially in Writing and Speaking." },
+      { q: "What is the hardest section for Band 8?", a: "For most candidates, Writing is the hardest to push to Band 8 because it demands fully developed ideas with precise vocabulary and very few errors. Targeted feedback helps most here." },
+    ],
+    related: [
+      { href: "/ielts-band-8/", label: "IELTS Band 8 Guide" },
+      { href: "/ielts-band-7/", label: "IELTS Band 7 Guide" },
+      { href: "/mock-test/ielts/", label: "Free IELTS Mock Test" },
+      { href: "/ielts-writing-checker/", label: "Free IELTS Writing Checker" },
+      { href: "/ielts-speaking-checker/", label: "Free IELTS Speaking Checker" },
+    ] },
+  { path: "/best-countries-to-study-abroad/", title: "Best Countries to Study Abroad — Compare & Decide",
+    desc: "The best countries to study abroad in 2026 compared by cost, work rights, PR pathway and career value — USA, UK, Canada, Australia, Germany & more. Free guide.",
+    kw: "best countries to study abroad, best country to study abroad for indian students, study abroad destinations, where to study abroad, study abroad comparison",
+    lead: "There is no single 'best' destination — only the best fit for your budget, career and PR goals. Here's how the top countries compare on what matters.",
+    sections: [
+      { h: "Compare on what matters", body: "Weigh four things: total cost (tuition plus living), post-study work rights, the pathway to permanent residence, and career value in your field. A country that is cheaper but offers no work visa may cost you more in opportunity than a pricier one with a strong stay-back route." },
+      { h: "How the top destinations differ", body: "The USA offers top research and salaries but higher costs; the UK has one-year master's plus a Graduate Route; Canada is strong on the student-to-PR pathway; Australia offers good post-study work; Germany is the best value with low or no tuition. Match these to your priorities." },
+      { h: "Make your shortlist", body: "Pick your top priority — lowest cost, fastest PR, or highest earning potential — then shortlist two or three countries that fit, and compare specific universities and programmes. Use LandingPrep's free study-abroad tools and country pages to compare side by side." },
+    ],
+    faqs: [
+      { q: "Which is the best country to study abroad for Indian students?", a: "It depends on your goal: Canada for a clear PR pathway, the UK for a fast one-year master's, Germany for low cost, the USA for top research and salaries, and Australia for post-study work. Compare on cost, work rights and PR." },
+      { q: "Which country is cheapest to study in?", a: "Germany is the best value among top destinations because public universities charge little or no tuition; you mainly budget for living costs." },
+    ],
+    related: [
+      { href: "/study-abroad/top-universities-in-usa/", label: "Top Universities in the USA" },
+      { href: "/study-abroad/top-universities-in-uk/", label: "Top Universities in the UK" },
+      { href: "/study-abroad/top-universities-in-canada/", label: "Top Universities in Canada" },
+      { href: "/study-abroad/top-universities-in-australia/", label: "Top Universities in Australia" },
+      { href: "/cheapest-study-abroad-countries/", label: "Cheapest Countries to Study Abroad" },
+    ] },
+  { path: "/duolingo-accepted-universities/", title: "Duolingo English Test: Accepted Universities & How to Score 120+",
+    desc: "Which universities accept the Duolingo English Test in 2026, what score you need, and how to reach 120+. Free Duolingo practice with instant scoring.",
+    kw: "duolingo accepted universities, duolingo english test universities, duolingo score for university, how to score 120 duolingo, det practice free",
+    lead: "The Duolingo English Test is cheaper and taken at home, and is now accepted by thousands of universities. Here's who accepts it, the scores they want, and how to hit them.",
+    sections: [
+      { h: "Who accepts the Duolingo English Test", body: "Thousands of universities across the USA, UK, Canada, Australia and Europe accept the Duolingo English Test (DET), and the list keeps growing. Always confirm acceptance and the minimum score on your specific programme's admissions page, and check whether your student visa also accepts it." },
+      { h: "What score you need", body: "DET is scored 10–160. Many universities ask for roughly 105–120, and competitive programmes may want 120–130 or more. As a rough guide, 120 is broadly comparable to IELTS 7.0 — but always use the university's own stated requirement." },
+      { h: "How to reach 120+", body: "DET is adaptive and integrates reading, writing, speaking and listening into quick tasks. Practise the recurring task types, type and speak clearly and quickly, and build vocabulary. Free DET practice with instant scoring helps you learn the format and pace before test day." },
+    ],
+    faqs: [
+      { q: "Is the Duolingo English Test accepted for universities?", a: "Yes — thousands of universities worldwide accept it, and the number is growing. Always confirm acceptance and the minimum score on your specific programme, and check your visa requirement separately." },
+      { q: "What Duolingo score equals IELTS 7?", a: "As a rough guide, a Duolingo score of about 120 is broadly comparable to IELTS 7.0, but each university sets its own requirement, so use their stated score." },
+    ],
+    related: [
+      { href: "/mock-test/duolingo/", label: "Free Duolingo English Test Practice" },
+      { href: "/which-english-test/", label: "Which English Test Should I Take?" },
+      { href: "/study-abroad-without-ielts/", label: "Study Abroad Without IELTS" },
+      { href: "/mock-test/ielts/", label: "Free IELTS Mock Test" },
+      { href: "/blog/", label: "Exam-Prep Blog" },
+    ] },
+];
+CONTENT_HUBS.forEach(contentHub);
+
 function buildHubs() {
   const UNI = new Set(COLLEGES.map((c) => c.id));
   const claimed = new Set();
