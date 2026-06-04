@@ -53,17 +53,6 @@
     "The proposal was rejected because it lacked sufficient supporting evidence.",
   ];
 
-  function Tabs({ tab, setTab }) {
-    const t = [["planner", "📅 Study Plan"], ["convert", "🔁 Score & Eligibility"], ["writing", "📊 Word & Readability"], ["reading", "⚡ Reading Speed"], ["shadow", "🎤 Listen & Repeat"]];
-    return (
-      <div className="tools-tabs">
-        {t.map(([id, label]) => (
-          <button key={id} className={"tools-tab" + (tab === id ? " active" : "")} onClick={() => setTab(id)}>{label}</button>
-        ))}
-      </div>
-    );
-  }
-
   // ── 1. Score Converter ───────────────────────────────────────────────────
   function Converter() {
     const [exam, setExam] = useState("ielts");
@@ -300,10 +289,149 @@
     );
   }
 
+  // ── 6. IELTS → CLB converter (Canada Express Entry / PR) ─────────────────
+  // Official IRCC IELTS General Training ↔ CLB equivalency (per skill).
+  const CLB_IELTS = [
+    { clb: 10, L: 8.5, R: 8.0, W: 7.5, S: 7.5 },
+    { clb: 9,  L: 8.0, R: 7.0, W: 7.0, S: 7.0 },
+    { clb: 8,  L: 7.5, R: 6.5, W: 6.5, S: 6.5 },
+    { clb: 7,  L: 6.0, R: 6.0, W: 6.0, S: 6.0 },
+    { clb: 6,  L: 5.5, R: 5.0, W: 5.5, S: 5.5 },
+    { clb: 5,  L: 5.0, R: 4.0, W: 5.0, S: 5.0 },
+    { clb: 4,  L: 4.5, R: 3.5, W: 4.0, S: 4.0 },
+  ];
+  function ieltsToCLB(skill, score) {
+    if (isNaN(score)) return null;
+    for (const row of CLB_IELTS) if (score >= row[skill]) return row.clb;
+    return 0; // below CLB 4
+  }
+  function CLBConverter() {
+    const SK = [["L", "Listening"], ["R", "Reading"], ["W", "Writing"], ["S", "Speaking"]];
+    const [v, setV] = useState({ L: "", R: "", W: "", S: "" });
+    const clbs = SK.map(([k]) => v[k] === "" ? null : ieltsToCLB(k, parseFloat(v[k])));
+    const filled = clbs.every((c) => c != null);
+    const overall = filled ? Math.min(...clbs) : null;
+    return (
+      <div className="tool-card">
+        <h2>🍁 IELTS → CLB Calculator (Canada PR)</h2>
+        <p className="tool-sub">Convert your IELTS General Training scores to Canadian Language Benchmarks (CLB) for Express Entry. Your CRS language points are driven by your <strong>lowest</strong> skill, so every band counts.</p>
+        <div className="clb-inputs">
+          {SK.map(([k, label]) => (
+            <label key={k}>{label}
+              <input type="number" min="0" max="9" step="0.5" placeholder="0–9" value={v[k]}
+                onChange={(e) => setV({ ...v, [k]: e.target.value })} />
+              <span className="clb-skill-out">{v[k] === "" ? "—" : (ieltsToCLB(k, parseFloat(v[k])) ? "CLB " + ieltsToCLB(k, parseFloat(v[k])) : "< CLB 4")}</span>
+            </label>
+          ))}
+        </div>
+        {filled && (
+          <div className={"clb-result " + (overall >= 9 ? "good" : overall >= 7 ? "warn" : "idle")}>
+            <div className="clb-big">CLB {overall}</div>
+            <div>{overall >= 9 ? "Strong — CLB 9+ unlocks the most CRS language points." : overall >= 7 ? "Eligible — CLB 7 is the usual Express Entry minimum; push your weakest skill higher for more points." : "Below CLB 7 — most Express Entry programs need CLB 7+. Focus on your lowest skill."}</div>
+          </div>
+        )}
+        <p className="tool-note">Based on IRCC's IELTS General Training ↔ CLB equivalency. Always confirm current rules on the official IRCC site.</p>
+      </div>
+    );
+  }
+
+  // ── 7. Exam countdown ────────────────────────────────────────────────────
+  function Countdown() {
+    const [date, setDate] = useState("");
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const target = date ? new Date(date + "T00:00:00") : null;
+    const days = target && !isNaN(target) ? Math.round((target - today) / 86400000) : null;
+    const weeks = days != null ? Math.floor(days / 7) : null;
+    const pace = days != null && days > 0
+      ? (days >= 56 ? "Plenty of time — a steady 1–2 hours a day will do it." : days >= 21 ? "Good runway — aim for 2 hours a day and a full mock each week." : days >= 7 ? "Crunch time — 2–3 focused hours a day and daily section drills." : "Final stretch — light revision, a mock yesterday, and rest before test day.")
+      : null;
+    return (
+      <div className="tool-card">
+        <h2>⏳ Exam Countdown</h2>
+        <p className="tool-sub">Pick your test date to see how long you have — and the study pace that fits.</p>
+        <div className="tool-row">
+          <label>My test date
+            <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
+          </label>
+        </div>
+        {days != null && (
+          days > 0 ? (
+            <div className="countdown-out good">
+              <div className="countdown-big">{days}<span> day{days === 1 ? "" : "s"}</span></div>
+              <div className="countdown-sub">≈ {weeks} week{weeks === 1 ? "" : "s"} away</div>
+              <div className="countdown-pace">{pace}</div>
+            </div>
+          ) : days === 0 ? (
+            <div className="countdown-out warn"><div className="countdown-big">Today 🎯</div><div className="countdown-pace">It's test day — stay calm, you've got this. Arrive early and breathe.</div></div>
+          ) : (
+            <div className="countdown-out idle"><div className="countdown-sub">That date has passed. Pick an upcoming date, or book your next attempt and aim higher.</div></div>
+          )
+        )}
+      </div>
+    );
+  }
+
+  // ── 8. Focus timer (Pomodoro) ────────────────────────────────────────────
+  function Pomodoro() {
+    const FOCUS = 25 * 60, BREAK = 5 * 60;
+    const [secs, setSecs] = useState(FOCUS);
+    const [running, setRunning] = useState(false);
+    const [mode, setMode] = useState("focus");
+    const [done, setDone] = useState(0);
+    useEffect(() => {
+      if (!running) return;
+      const t = setInterval(() => {
+        setSecs((s) => {
+          if (s > 1) return s - 1;
+          // reached zero → switch mode
+          if (mode === "focus") { setDone((d) => d + 1); setMode("break"); return BREAK; }
+          setMode("focus"); return FOCUS;
+        });
+      }, 1000);
+      return () => clearInterval(t);
+    }, [running, mode]);
+    const total = mode === "focus" ? FOCUS : BREAK;
+    const pct = Math.round(((total - secs) / total) * 100);
+    const mm = String(Math.floor(secs / 60)).padStart(2, "0");
+    const ss = String(secs % 60).padStart(2, "0");
+    const reset = () => { setRunning(false); setMode("focus"); setSecs(FOCUS); };
+    return (
+      <div className="tool-card">
+        <h2>🍅 Focus Timer</h2>
+        <p className="tool-sub">The Pomodoro technique: 25 minutes of focused study, then a 5-minute break. Repeat to beat procrastination and study longer without burning out.</p>
+        <div className="pomo-wrap">
+          <div className={"pomo-ring " + mode} style={{ "--pct": pct + "%" }}>
+            <div className="pomo-inner">
+              <div className="pomo-time">{mm}:{ss}</div>
+              <div className="pomo-mode">{mode === "focus" ? "Focus" : "Break"}</div>
+            </div>
+          </div>
+          <div className="tool-row btns">
+            <button className="tool-btn" onClick={() => setRunning((r) => !r)}>{running ? "⏸ Pause" : "▶ Start"}</button>
+            <button className="tool-btn ghost" onClick={reset}>↺ Reset</button>
+          </div>
+          <div className="pomo-count">✅ {done} focus session{done === 1 ? "" : "s"} completed</div>
+        </div>
+      </div>
+    );
+  }
+
+  // Tool launcher metadata (icon + name + one-liner). Order = display order.
+  const TOOLS_META = [
+    { id: "planner",   icon: "📅", name: "AI Study Plan",     desc: "Personalised plan to your test date" },
+    { id: "convert",   icon: "🔁", name: "Score Converter",   desc: "IELTS · TOEFL · PTE · CELPIP · DET" },
+    { id: "clb",       icon: "🍁", name: "IELTS → CLB",        desc: "Canada PR / Express Entry levels" },
+    { id: "writing",   icon: "📊", name: "Word & Readability", desc: "Count, timing & readability" },
+    { id: "reading",   icon: "⚡", name: "Reading Speed",      desc: "Words-per-minute test" },
+    { id: "shadow",    icon: "🎤", name: "Listen & Repeat",    desc: "Pronunciation shadowing" },
+    { id: "countdown", icon: "⏳", name: "Exam Countdown",     desc: "Days left + study pace" },
+    { id: "timer",     icon: "🍅", name: "Focus Timer",        desc: "Pomodoro study sessions" },
+  ];
+
   function Tools({ onNav, initialTab }) {
     // Exam-prep tools. College selection lives on its own #/colleges page.
     // Default to the Study Plan tab (also the #/planner back-compat target).
-    const validTabs = ["planner", "convert", "writing", "reading", "shadow"];
+    const validTabs = ["planner", "convert", "clb", "writing", "reading", "shadow", "countdown", "timer"];
     // Back-compat: the old "eligibility" tab is now merged into "convert".
     const startTab = initialTab === "eligibility" ? "convert" : initialTab;
     const [tab, setTab] = useState(validTabs.includes(startTab) ? startTab : "planner");
@@ -331,14 +459,30 @@
               </div>
             </div>
           </header>
-          <Tabs tab={tab} setTab={setTab} />
-          {tab === "planner" && (window.LP_StudyPlannerPanel
-            ? <window.LP_StudyPlannerPanel onNav={onNav} />
-            : <div className="tool-card"><p className="tool-sub">Study planner is loading…</p></div>)}
-          {tab === "convert" && <><Converter /><Eligibility /></>}
-          {tab === "writing" && <WordCheck />}
-          {tab === "reading" && <ReadingSpeed />}
-          {tab === "shadow" && <Shadow />}
+          <div className="tool-launcher">
+            {TOOLS_META.map((t, i) => (
+              <button key={t.id} type="button"
+                className={"tool-launch-card" + (tab === t.id ? " active" : "")}
+                style={{ animationDelay: (i * 45) + "ms" }}
+                onClick={() => setTab(t.id)}>
+                <span className="tlc-icon">{t.icon}</span>
+                <span className="tlc-name">{t.name}</span>
+                <span className="tlc-desc">{t.desc}</span>
+              </button>
+            ))}
+          </div>
+          <div className="tool-panel" key={tab}>
+            {tab === "planner" && (window.LP_StudyPlannerPanel
+              ? <window.LP_StudyPlannerPanel onNav={onNav} />
+              : <div className="tool-card"><p className="tool-sub">Study planner is loading…</p></div>)}
+            {tab === "convert" && <><Converter /><Eligibility /></>}
+            {tab === "clb" && <CLBConverter />}
+            {tab === "writing" && <WordCheck />}
+            {tab === "reading" && <ReadingSpeed />}
+            {tab === "shadow" && <Shadow />}
+            {tab === "countdown" && <Countdown />}
+            {tab === "timer" && <Pomodoro />}
+          </div>
           <div className="tools-foot">
             <a className="tool-btn ghost" onClick={() => onNav && onNav("colleges")}>🏛️ College predictor &amp; study-abroad tools →</a>
           </div>

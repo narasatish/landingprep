@@ -40,10 +40,6 @@
     "Understanding cultural differences is essential for effective communication.",
     "The proposal was rejected because it lacked sufficient supporting evidence."
   ];
-  function Tabs({ tab, setTab }) {
-    const t = [["planner", "\u{1F4C5} Study Plan"], ["convert", "\u{1F501} Score & Eligibility"], ["writing", "\u{1F4CA} Word & Readability"], ["reading", "\u26A1 Reading Speed"], ["shadow", "\u{1F3A4} Listen & Repeat"]];
-    return /* @__PURE__ */ React.createElement("div", { className: "tools-tabs" }, t.map(([id, label]) => /* @__PURE__ */ React.createElement("button", { key: id, className: "tools-tab" + (tab === id ? " active" : ""), onClick: () => setTab(id) }, label)));
-  }
   function Converter() {
     const [exam, setExam] = useState("ielts");
     const cfg = CONVERT_EXAMS.find((x) => x.id === exam);
@@ -185,8 +181,94 @@
     const ease = flesch >= 60 ? "easy to read" : flesch >= 40 ? "fairly hard (academic)" : "very hard / dense";
     return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h3", null, "\u{1F4CA} Word count & readability"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Paste your essay or speaking script. Check word count against IELTS/TOEFL targets, reading/speaking time and readability \u2014 all in your browser, nothing stored."), /* @__PURE__ */ React.createElement("textarea", { className: "bc-textarea", rows: 10, placeholder: "Paste your text here\u2026", value: text, onChange: (e) => setText(e.target.value) })), wc > 0 && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { className: "wc-grid" }, /* @__PURE__ */ React.createElement("div", { className: "wc-stat" }, /* @__PURE__ */ React.createElement("div", { className: "wc-num" }, wc), /* @__PURE__ */ React.createElement("div", { className: "wc-lbl" }, "words")), /* @__PURE__ */ React.createElement("div", { className: "wc-stat" }, /* @__PURE__ */ React.createElement("div", { className: "wc-num" }, sentences), /* @__PURE__ */ React.createElement("div", { className: "wc-lbl" }, "sentences")), /* @__PURE__ */ React.createElement("div", { className: "wc-stat" }, /* @__PURE__ */ React.createElement("div", { className: "wc-num" }, paras), /* @__PURE__ */ React.createElement("div", { className: "wc-lbl" }, "paragraphs")), /* @__PURE__ */ React.createElement("div", { className: "wc-stat" }, /* @__PURE__ */ React.createElement("div", { className: "wc-num" }, chars), /* @__PURE__ */ React.createElement("div", { className: "wc-lbl" }, "characters")), /* @__PURE__ */ React.createElement("div", { className: "wc-stat" }, /* @__PURE__ */ React.createElement("div", { className: "wc-num" }, Math.round(avgSentLen)), /* @__PURE__ */ React.createElement("div", { className: "wc-lbl" }, "avg words/sentence")), /* @__PURE__ */ React.createElement("div", { className: "wc-stat" }, /* @__PURE__ */ React.createElement("div", { className: "wc-num" }, fmt(speakMin)), /* @__PURE__ */ React.createElement("div", { className: "wc-lbl" }, "speaking time"))), /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h4", null, "Readability"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub", style: { marginTop: 4 } }, "Flesch reading ease ", /* @__PURE__ */ React.createElement("strong", null, flesch, "/100"), " (", ease, ") \xB7 approx. grade level ", /* @__PURE__ */ React.createElement("strong", null, grade), " \xB7 reading time ", fmt(readMin), "."), /* @__PURE__ */ React.createElement("div", { className: "wc-targets" }, /* @__PURE__ */ React.createElement("span", { className: "wc-pill " + (wc >= 250 ? "ok" : "") }, "IELTS Task 2: 250+ ", wc >= 250 ? "\u2713" : "(" + (250 - wc) + " more)"), /* @__PURE__ */ React.createElement("span", { className: "wc-pill " + (wc >= 150 ? "ok" : "") }, "IELTS Task 1: 150+ ", wc >= 150 ? "\u2713" : "(" + (150 - wc) + " more)"), /* @__PURE__ */ React.createElement("span", { className: "wc-pill" }, "TOEFL essay: 300+")), longSent.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "wc-warn" }, /* @__PURE__ */ React.createElement("strong", null, "\u26A0\uFE0F Long sentences (", longSent.length, "):"), " over 30 words can hurt clarity. Consider splitting:", /* @__PURE__ */ React.createElement("ul", null, longSent.map((x, i) => /* @__PURE__ */ React.createElement("li", { key: i }, x.n, " words \u2014 \u201C", x.s.slice(0, 80), "\u2026\u201D")))))));
   }
+  const CLB_IELTS = [
+    { clb: 10, L: 8.5, R: 8, W: 7.5, S: 7.5 },
+    { clb: 9, L: 8, R: 7, W: 7, S: 7 },
+    { clb: 8, L: 7.5, R: 6.5, W: 6.5, S: 6.5 },
+    { clb: 7, L: 6, R: 6, W: 6, S: 6 },
+    { clb: 6, L: 5.5, R: 5, W: 5.5, S: 5.5 },
+    { clb: 5, L: 5, R: 4, W: 5, S: 5 },
+    { clb: 4, L: 4.5, R: 3.5, W: 4, S: 4 }
+  ];
+  function ieltsToCLB(skill, score) {
+    if (isNaN(score)) return null;
+    for (const row of CLB_IELTS) if (score >= row[skill]) return row.clb;
+    return 0;
+  }
+  function CLBConverter() {
+    const SK = [["L", "Listening"], ["R", "Reading"], ["W", "Writing"], ["S", "Speaking"]];
+    const [v, setV] = useState({ L: "", R: "", W: "", S: "" });
+    const clbs = SK.map(([k]) => v[k] === "" ? null : ieltsToCLB(k, parseFloat(v[k])));
+    const filled = clbs.every((c) => c != null);
+    const overall = filled ? Math.min(...clbs) : null;
+    return /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h2", null, "\u{1F341} IELTS \u2192 CLB Calculator (Canada PR)"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Convert your IELTS General Training scores to Canadian Language Benchmarks (CLB) for Express Entry. Your CRS language points are driven by your ", /* @__PURE__ */ React.createElement("strong", null, "lowest"), " skill, so every band counts."), /* @__PURE__ */ React.createElement("div", { className: "clb-inputs" }, SK.map(([k, label]) => /* @__PURE__ */ React.createElement("label", { key: k }, label, /* @__PURE__ */ React.createElement(
+      "input",
+      {
+        type: "number",
+        min: "0",
+        max: "9",
+        step: "0.5",
+        placeholder: "0\u20139",
+        value: v[k],
+        onChange: (e) => setV({ ...v, [k]: e.target.value })
+      }
+    ), /* @__PURE__ */ React.createElement("span", { className: "clb-skill-out" }, v[k] === "" ? "\u2014" : ieltsToCLB(k, parseFloat(v[k])) ? "CLB " + ieltsToCLB(k, parseFloat(v[k])) : "< CLB 4")))), filled && /* @__PURE__ */ React.createElement("div", { className: "clb-result " + (overall >= 9 ? "good" : overall >= 7 ? "warn" : "idle") }, /* @__PURE__ */ React.createElement("div", { className: "clb-big" }, "CLB ", overall), /* @__PURE__ */ React.createElement("div", null, overall >= 9 ? "Strong \u2014 CLB 9+ unlocks the most CRS language points." : overall >= 7 ? "Eligible \u2014 CLB 7 is the usual Express Entry minimum; push your weakest skill higher for more points." : "Below CLB 7 \u2014 most Express Entry programs need CLB 7+. Focus on your lowest skill.")), /* @__PURE__ */ React.createElement("p", { className: "tool-note" }, "Based on IRCC's IELTS General Training \u2194 CLB equivalency. Always confirm current rules on the official IRCC site."));
+  }
+  function Countdown() {
+    const [date, setDate] = useState("");
+    const today = /* @__PURE__ */ new Date();
+    today.setHours(0, 0, 0, 0);
+    const target = date ? /* @__PURE__ */ new Date(date + "T00:00:00") : null;
+    const days = target && !isNaN(target) ? Math.round((target - today) / 864e5) : null;
+    const weeks = days != null ? Math.floor(days / 7) : null;
+    const pace = days != null && days > 0 ? days >= 56 ? "Plenty of time \u2014 a steady 1\u20132 hours a day will do it." : days >= 21 ? "Good runway \u2014 aim for 2 hours a day and a full mock each week." : days >= 7 ? "Crunch time \u2014 2\u20133 focused hours a day and daily section drills." : "Final stretch \u2014 light revision, a mock yesterday, and rest before test day." : null;
+    return /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h2", null, "\u23F3 Exam Countdown"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Pick your test date to see how long you have \u2014 and the study pace that fits."), /* @__PURE__ */ React.createElement("div", { className: "tool-row" }, /* @__PURE__ */ React.createElement("label", null, "My test date", /* @__PURE__ */ React.createElement("input", { type: "date", value: date, onChange: (e) => setDate(e.target.value) }))), days != null && (days > 0 ? /* @__PURE__ */ React.createElement("div", { className: "countdown-out good" }, /* @__PURE__ */ React.createElement("div", { className: "countdown-big" }, days, /* @__PURE__ */ React.createElement("span", null, " day", days === 1 ? "" : "s")), /* @__PURE__ */ React.createElement("div", { className: "countdown-sub" }, "\u2248 ", weeks, " week", weeks === 1 ? "" : "s", " away"), /* @__PURE__ */ React.createElement("div", { className: "countdown-pace" }, pace)) : days === 0 ? /* @__PURE__ */ React.createElement("div", { className: "countdown-out warn" }, /* @__PURE__ */ React.createElement("div", { className: "countdown-big" }, "Today \u{1F3AF}"), /* @__PURE__ */ React.createElement("div", { className: "countdown-pace" }, "It's test day \u2014 stay calm, you've got this. Arrive early and breathe.")) : /* @__PURE__ */ React.createElement("div", { className: "countdown-out idle" }, /* @__PURE__ */ React.createElement("div", { className: "countdown-sub" }, "That date has passed. Pick an upcoming date, or book your next attempt and aim higher."))));
+  }
+  function Pomodoro() {
+    const FOCUS = 25 * 60, BREAK = 5 * 60;
+    const [secs, setSecs] = useState(FOCUS);
+    const [running, setRunning] = useState(false);
+    const [mode, setMode] = useState("focus");
+    const [done, setDone] = useState(0);
+    useEffect(() => {
+      if (!running) return;
+      const t = setInterval(() => {
+        setSecs((s) => {
+          if (s > 1) return s - 1;
+          if (mode === "focus") {
+            setDone((d) => d + 1);
+            setMode("break");
+            return BREAK;
+          }
+          setMode("focus");
+          return FOCUS;
+        });
+      }, 1e3);
+      return () => clearInterval(t);
+    }, [running, mode]);
+    const total = mode === "focus" ? FOCUS : BREAK;
+    const pct = Math.round((total - secs) / total * 100);
+    const mm = String(Math.floor(secs / 60)).padStart(2, "0");
+    const ss = String(secs % 60).padStart(2, "0");
+    const reset = () => {
+      setRunning(false);
+      setMode("focus");
+      setSecs(FOCUS);
+    };
+    return /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h2", null, "\u{1F345} Focus Timer"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "The Pomodoro technique: 25 minutes of focused study, then a 5-minute break. Repeat to beat procrastination and study longer without burning out."), /* @__PURE__ */ React.createElement("div", { className: "pomo-wrap" }, /* @__PURE__ */ React.createElement("div", { className: "pomo-ring " + mode, style: { "--pct": pct + "%" } }, /* @__PURE__ */ React.createElement("div", { className: "pomo-inner" }, /* @__PURE__ */ React.createElement("div", { className: "pomo-time" }, mm, ":", ss), /* @__PURE__ */ React.createElement("div", { className: "pomo-mode" }, mode === "focus" ? "Focus" : "Break"))), /* @__PURE__ */ React.createElement("div", { className: "tool-row btns" }, /* @__PURE__ */ React.createElement("button", { className: "tool-btn", onClick: () => setRunning((r) => !r) }, running ? "\u23F8 Pause" : "\u25B6 Start"), /* @__PURE__ */ React.createElement("button", { className: "tool-btn ghost", onClick: reset }, "\u21BA Reset")), /* @__PURE__ */ React.createElement("div", { className: "pomo-count" }, "\u2705 ", done, " focus session", done === 1 ? "" : "s", " completed")));
+  }
+  const TOOLS_META = [
+    { id: "planner", icon: "\u{1F4C5}", name: "AI Study Plan", desc: "Personalised plan to your test date" },
+    { id: "convert", icon: "\u{1F501}", name: "Score Converter", desc: "IELTS \xB7 TOEFL \xB7 PTE \xB7 CELPIP \xB7 DET" },
+    { id: "clb", icon: "\u{1F341}", name: "IELTS \u2192 CLB", desc: "Canada PR / Express Entry levels" },
+    { id: "writing", icon: "\u{1F4CA}", name: "Word & Readability", desc: "Count, timing & readability" },
+    { id: "reading", icon: "\u26A1", name: "Reading Speed", desc: "Words-per-minute test" },
+    { id: "shadow", icon: "\u{1F3A4}", name: "Listen & Repeat", desc: "Pronunciation shadowing" },
+    { id: "countdown", icon: "\u23F3", name: "Exam Countdown", desc: "Days left + study pace" },
+    { id: "timer", icon: "\u{1F345}", name: "Focus Timer", desc: "Pomodoro study sessions" }
+  ];
   function Tools({ onNav, initialTab }) {
-    const validTabs = ["planner", "convert", "writing", "reading", "shadow"];
+    const validTabs = ["planner", "convert", "clb", "writing", "reading", "shadow", "countdown", "timer"];
     const startTab = initialTab === "eligibility" ? "convert" : initialTab;
     const [tab, setTab] = useState(validTabs.includes(startTab) ? startTab : "planner");
     useEffect(() => {
@@ -208,7 +290,19 @@
           if (p) p.classList.add("no-photo");
         }
       }
-    ), /* @__PURE__ */ React.createElement("div", { className: "hhp-overlay" }), /* @__PURE__ */ React.createElement("div", { className: "ep-hero-cap" }, /* @__PURE__ */ React.createElement("h1", null, "Free Exam Tools"), /* @__PURE__ */ React.createElement("p", null, "Plan your prep, convert scores, check eligibility, time your reading and sharpen pronunciation \u2014 all free, in your browser.")))), /* @__PURE__ */ React.createElement(Tabs, { tab, setTab }), tab === "planner" && (window.LP_StudyPlannerPanel ? /* @__PURE__ */ React.createElement(window.LP_StudyPlannerPanel, { onNav }) : /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Study planner is loading\u2026"))), tab === "convert" && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Converter, null), /* @__PURE__ */ React.createElement(Eligibility, null)), tab === "writing" && /* @__PURE__ */ React.createElement(WordCheck, null), tab === "reading" && /* @__PURE__ */ React.createElement(ReadingSpeed, null), tab === "shadow" && /* @__PURE__ */ React.createElement(Shadow, null), /* @__PURE__ */ React.createElement("div", { className: "tools-foot" }, /* @__PURE__ */ React.createElement("a", { className: "tool-btn ghost", onClick: () => onNav && onNav("colleges") }, "\u{1F3DB}\uFE0F College predictor & study-abroad tools \u2192"))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
+    ), /* @__PURE__ */ React.createElement("div", { className: "hhp-overlay" }), /* @__PURE__ */ React.createElement("div", { className: "ep-hero-cap" }, /* @__PURE__ */ React.createElement("h1", null, "Free Exam Tools"), /* @__PURE__ */ React.createElement("p", null, "Plan your prep, convert scores, check eligibility, time your reading and sharpen pronunciation \u2014 all free, in your browser.")))), /* @__PURE__ */ React.createElement("div", { className: "tool-launcher" }, TOOLS_META.map((t, i) => /* @__PURE__ */ React.createElement(
+      "button",
+      {
+        key: t.id,
+        type: "button",
+        className: "tool-launch-card" + (tab === t.id ? " active" : ""),
+        style: { animationDelay: i * 45 + "ms" },
+        onClick: () => setTab(t.id)
+      },
+      /* @__PURE__ */ React.createElement("span", { className: "tlc-icon" }, t.icon),
+      /* @__PURE__ */ React.createElement("span", { className: "tlc-name" }, t.name),
+      /* @__PURE__ */ React.createElement("span", { className: "tlc-desc" }, t.desc)
+    ))), /* @__PURE__ */ React.createElement("div", { className: "tool-panel", key: tab }, tab === "planner" && (window.LP_StudyPlannerPanel ? /* @__PURE__ */ React.createElement(window.LP_StudyPlannerPanel, { onNav }) : /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Study planner is loading\u2026"))), tab === "convert" && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Converter, null), /* @__PURE__ */ React.createElement(Eligibility, null)), tab === "clb" && /* @__PURE__ */ React.createElement(CLBConverter, null), tab === "writing" && /* @__PURE__ */ React.createElement(WordCheck, null), tab === "reading" && /* @__PURE__ */ React.createElement(ReadingSpeed, null), tab === "shadow" && /* @__PURE__ */ React.createElement(Shadow, null), tab === "countdown" && /* @__PURE__ */ React.createElement(Countdown, null), tab === "timer" && /* @__PURE__ */ React.createElement(Pomodoro, null)), /* @__PURE__ */ React.createElement("div", { className: "tools-foot" }, /* @__PURE__ */ React.createElement("a", { className: "tool-btn ghost", onClick: () => onNav && onNav("colleges") }, "\u{1F3DB}\uFE0F College predictor & study-abroad tools \u2192"))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
   }
   window.LP_Tools = Tools;
 })();

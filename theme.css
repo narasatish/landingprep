@@ -3662,6 +3662,59 @@ html[data-theme="dark"] {
 .tools-shell-wide { max-width: 1320px; }
 .tools-shell-deck { max-width: 1320px; }
 .tools-hero { text-align: center; margin: 10px 0 22px; }
+
+/* ── Tools launcher grid + entrance/hover animations ─────────────────────── */
+.tool-launcher { display: grid; grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); gap: 14px; margin: 4px 0 26px; }
+.tool-launch-card { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 5px;
+  text-align: left; padding: 16px 16px 14px; border-radius: 16px; background: var(--surface);
+  border: 1.5px solid var(--line); cursor: pointer; opacity: 0; animation: toolCardIn .45s ease forwards;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease; }
+.tool-launch-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(79,70,229,.16); border-color: var(--accent); }
+.tool-launch-card.active { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--surface)); box-shadow: 0 8px 22px rgba(79,70,229,.18); }
+.tlc-icon { font-size: 26px; line-height: 1; }
+.tlc-name { font-weight: 800; font-size: 15px; color: var(--ink); }
+.tlc-desc { font-size: 12.5px; color: var(--ink-3); line-height: 1.35; }
+.tool-panel { animation: toolPanelIn .35s ease; }
+@keyframes toolCardIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes toolPanelIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* IELTS → CLB */
+.clb-inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin: 14px 0; }
+.clb-inputs label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 13px; color: var(--ink); }
+.clb-inputs input { padding: 10px; border-radius: 10px; border: 1.5px solid var(--line); font-size: 15px; background: var(--surface); color: var(--ink); }
+.clb-skill-out { font-size: 12px; font-weight: 800; color: var(--accent); }
+.clb-result { margin-top: 12px; padding: 16px; border-radius: 14px; text-align: center; background: var(--surface); border: 1.5px solid var(--line); }
+.clb-result.good { border-color: #16a34a; background: rgba(22,163,74,.08); }
+.clb-result.warn { border-color: #f59e0b; background: rgba(245,158,11,.08); }
+.clb-big { font-size: 34px; font-weight: 900; color: var(--ink); }
+
+/* Exam countdown */
+.countdown-out { margin-top: 14px; padding: 22px; border-radius: 16px; text-align: center; background: var(--surface); border: 1.5px solid var(--line); }
+.countdown-out.good { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
+.countdown-big { font-size: 46px; font-weight: 900; color: var(--ink); line-height: 1.05; }
+.countdown-big span { font-size: 20px; font-weight: 700; color: var(--ink-3); }
+.countdown-sub { color: var(--ink-3); font-size: 14px; margin-top: 4px; }
+.countdown-pace { margin-top: 10px; font-size: 14px; color: var(--ink); }
+
+/* Focus timer (Pomodoro) */
+.pomo-wrap { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 12px 0; }
+.pomo-ring { width: 200px; height: 200px; border-radius: 50%; display: grid; place-items: center;
+  background: conic-gradient(var(--accent) var(--pct,0%), var(--line) 0); transition: background .9s linear; }
+.pomo-ring.break { background: conic-gradient(#16a34a var(--pct,0%), var(--line) 0); }
+.pomo-inner { width: 168px; height: 168px; border-radius: 50%; background: var(--surface); display: grid; place-items: center; }
+.pomo-time { font-size: 42px; font-weight: 900; color: var(--ink); font-variant-numeric: tabular-nums; }
+.pomo-mode { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); }
+.pomo-count { font-size: 14px; color: var(--ink-3); }
+
+@media (prefers-reduced-motion: reduce) {
+  .tool-launch-card, .tool-panel { animation: none !important; opacity: 1 !important; }
+  .tool-launch-card:hover { transform: none; }
+  .pomo-ring { transition: none; }
+}
+@media (max-width: 560px) {
+  .tool-launcher { grid-template-columns: repeat(2, 1fr); }
+  .pomo-ring { width: 168px; height: 168px; } .pomo-inner { width: 140px; height: 140px; } .pomo-time { font-size: 36px; }
+}
 .tools-hero h1 { font-size: clamp(28px, 4vw, 40px); margin: 0 0 8px; color: var(--ink); }
 .tools-hero p { color: var(--ink-3); font-size: 17px; margin: 0 auto; max-width: 620px; }
 /* Sub-tabs render as a contained "segmented control" so they read clearly as a
