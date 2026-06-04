@@ -70,9 +70,21 @@
   }
 
   function Lessons({ onNav, embedded }) {
-    const plan = window.LP_SLIDE_DECK_PLAN || [];
-    const decks = window.LP_SLIDE_DECKS || {};
+    // Lazy-load the ~384 KB slide-deck data only when this screen opens — keeps it off
+    // the initial app load. Reads the globals at render with safe fallbacks, so a
+    // not-yet-loaded state simply renders the loading card (never throws).
+    const [ready, setReady] = useState(typeof window.LP_SLIDE_DECKS !== "undefined");
     const [openId, setOpenId] = useState(null);
+    useEffect(() => {
+      if (typeof window.LP_SLIDE_DECKS !== "undefined") { setReady(true); return; }
+      let live = true;
+      const done = () => { if (live) setReady(true); };
+      if (window.LP_loadScript) window.LP_loadScript("slide-decks-data.js").then(done).catch(done);
+      else done();
+      return () => { live = false; };
+    }, []);
+    const plan = ready ? (window.LP_SLIDE_DECK_PLAN || []) : [];
+    const decks = ready ? (window.LP_SLIDE_DECKS || {}) : {};
     useEffect(() => {
       if (embedded) return;
       try {
@@ -92,6 +104,7 @@
               <p>Quick, visual slide lessons — tips, tricks and traps for each section. Learn the strategy here, then practise with our free mocks.</p>
             </header>
           )}
+          {!ready && <div className="tool-card lesson-group"><p style={{ color: "var(--ink-3)", margin: 0 }}>⏳ Loading lessons…</p></div>}
           {plan.map((ex) => (
             <div className="tool-card lesson-group" key={ex.exam}>
               <h3>{ex.emoji} {ex.examName}</h3>
