@@ -469,7 +469,9 @@ function App() {
   } else if (view === "colleges") {
     content = <LazyScreen scripts={["college-data.js"]} isReady={() => typeof window.LP_COLLEGES !== "undefined"} label="study-abroad data">{() => <window.LP_Colleges onNav={onNav} initialTab={collegesTab} initialCountry={collegesCountry} />}</LazyScreen>;
   } else if (view === "blog") {
-    content = <window.LP_Blog onNav={onNav} />;
+    // blog-data.js (~122 KB) + seo-pages.js load on demand here (in order: data first, so
+    // seo-pages.js sees window.LP_BLOG_EXTRA at eval) — keeps them off the initial load.
+    content = <LazyScreen scripts={["blog-data.js", "seo-pages.js"]} isReady={() => !!window.LP_Blog} label="the blog">{() => <window.LP_Blog onNav={onNav} />}</LazyScreen>;
   } else if (view === "languages") {
     content = <window.LP_Languages onNav={onNav} />;
   } else if (view === "lessons") {

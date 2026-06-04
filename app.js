@@ -483,7 +483,7 @@ function App() {
   } else if (view === "colleges") {
     content = /* @__PURE__ */ React.createElement(LazyScreen, { scripts: ["college-data.js"], isReady: () => typeof window.LP_COLLEGES !== "undefined", label: "study-abroad data" }, () => /* @__PURE__ */ React.createElement(window.LP_Colleges, { onNav, initialTab: collegesTab, initialCountry: collegesCountry }));
   } else if (view === "blog") {
-    content = /* @__PURE__ */ React.createElement(window.LP_Blog, { onNav });
+    content = /* @__PURE__ */ React.createElement(LazyScreen, { scripts: ["blog-data.js", "seo-pages.js"], isReady: () => !!window.LP_Blog, label: "the blog" }, () => /* @__PURE__ */ React.createElement(window.LP_Blog, { onNav }));
   } else if (view === "languages") {
     content = /* @__PURE__ */ React.createElement(window.LP_Languages, { onNav });
   } else if (view === "lessons") {
