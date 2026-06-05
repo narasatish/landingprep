@@ -1,0 +1,34 @@
+name: Auto Content & Indexing
+
+# Marketing automation: keeps search engines fresh on our content.
+#  - Pings IndexNow (Bing / Yandex / Naver / Seznam) so new & updated pages get
+#    crawled within minutes instead of days. Google reads the same pages via
+#    sitemap.xml in Search Console.
+#  - Runs weekly, and on demand from the Actions tab, and automatically whenever
+#    blog content or the sitemap changes on main.
+#
+# No secrets required — IndexNow ownership is proven by the public key file
+# committed at the repo root (237c16b197efafd6888221c446b5f68e.txt), which is
+# served live at https://landingprep.com/<key>.txt after deploy.
+
+on:
+  schedule:
+    - cron: "30 6 * * 1" # every Monday 06:30 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "blog-data.jsx"
+      - "sitemap.xml"
+      - "seo-pages.js"
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Submit URLs to IndexNow
+        run: node scripts/indexnow-submit.mjs

@@ -6,7 +6,7 @@
 //
 // Run:  node scripts/precompile-jsx.mjs   (also part of `npm run build`)
 import { transformSync } from "esbuild";
-import { readFileSync, writeFileSync, existsSync } from "fs";
+import { readFileSync, writeFileSync, existsSync, readdirSync } from "fs";
 import path from "path";
 
 const root = process.cwd();
@@ -21,6 +21,22 @@ let m;
 while ((m = re.exec(html))) {
   const jsx = m[1] + ".jsx";
   if (existsSync(path.join(root, jsx))) files.add(jsx);
+}
+
+// Also transpile LAZY-loaded modules (e.g. blog-data.jsx) that aren't <script src>
+// in index.html but are loaded on demand via window.LP_loadScript(). Rule: any
+// X.jsx that already has a compiled X.js sibling is a tracked output → keep it in
+// sync. This makes content automation (auto-appending blog posts) self-healing.
+for (const dir of ["", "screens"]) {
+  const abs = path.join(root, dir);
+  let entries = [];
+  try { entries = readdirSync(abs); } catch { continue; }
+  for (const f of entries) {
+    if (!f.endsWith(".jsx")) continue;
+    const rel = dir ? `${dir}/${f}` : f;
+    const jsSibling = path.join(root, rel.replace(/\.jsx$/, ".js"));
+    if (existsSync(jsSibling)) files.add(rel);
+  }
 }
 
 let ok = 0;

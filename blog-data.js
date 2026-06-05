@@ -842,6 +842,102 @@
         { h: "Acceptance reality", body: "Stanford, MIT, Wharton accept both. NYU, Carnegie Mellon largely prefer GRE for non-MBA. Check your target programme's website \u2014 most list 'GRE or GMAT accepted' now, but a few still show a slight preference." },
         { h: "Test prep and difficulty", body: "GRE prep is often cheaper (more free resources). GMAT prep is more expensive (proprietary). Neither is objectively 'harder' \u2014 it depends on your strengths. Take a free practice section of each on LandingPrep and see which scoring style fits you." }
       ]
+    },
+    {
+      id: "free-ielts-mock-test-online-2026",
+      tag: "IELTS",
+      date: "2026",
+      title: "Free IELTS Mock Test Online 2026: Full Practice Test with Instant Band Score",
+      excerpt: "Take a full-length IELTS mock test free online \u2014 Listening, Reading, Writing and Speaking \u2014 with real exam timings and an instant band-score estimate. Here is exactly how to use mock tests to raise your band.",
+      kw: "free ielts mock test, ielts practice test online free, ielts mock test with band score, free ielts test 2026, ielts sample test online, ielts academic practice test",
+      sections: [
+        { h: "Why a timed mock test beats endless practice", body: "The single biggest cause of a low IELTS band is not weak English \u2014 it is running out of time and mismanaging the exam. A full-length, timed mock test rebuilds your stamina (the real test is about 2 hours 45 minutes back to back) and exposes your weak section before test day, when you can still fix it. Aim for at least 3 full mocks before your real date." },
+        { h: "What a full IELTS mock covers", body: "Listening: 4 sections, 40 questions, 30 minutes plus transfer time. Reading: 3 passages, 40 questions, 60 minutes (Academic or General Training). Writing: Task 1 (150 words) and Task 2 (250-word essay) in 60 minutes. Speaking: a 11\u201314 minute face-to-face or AI interview in 3 parts. A good mock scores all four and converts raw marks to the 0\u20139 band scale." },
+        { h: "How to read your band score", body: "Listening and Reading are scored out of 40 and mapped to a band (e.g. 30/40 Reading is roughly band 7). Writing and Speaking are graded on four criteria each \u2014 Task Achievement, Coherence, Lexical Resource and Grammar. Your overall band is the average of the four, rounded to the nearest half band. Most universities want 6.5 overall with no band under 6.0." },
+        { h: "Turn every mock into a study plan", body: "After each mock, log every wrong answer by type \u2014 map labelling, True/False/Not Given, matching headings. Patterns reveal your real weakness. Re-do only that question type for a week, then take another full mock. This targeted loop moves bands far faster than random practice." },
+        { h: "Common mock-test mistakes", body: "Pausing the timer (defeats the purpose), skipping the Speaking section because there is no examiner, and not transferring Listening answers under time pressure. Treat the mock like the real exam: one sitting, no breaks beyond the allowed ones, phone away." },
+        { h: "Take a free IELTS mock now", body: "LandingPrep gives you unlimited full-length IELTS mock tests free \u2014 real timings, instant band estimates for all four sections, and an AI speaking partner that talks back and scores your fluency. No signup, no fees. Start your first free mock and see your band today." }
+      ]
+    },
+    {
+      id: "cost-of-studying-in-canada-for-indians-2026",
+      tag: "Study Abroad",
+      date: "2026",
+      title: "Cost of Studying in Canada for Indian Students 2026: Tuition, Living & Total Budget",
+      excerpt: "A realistic, all-in budget for studying in Canada in 2026 \u2014 tuition by program, living costs by city, proof-of-funds, and the total first-year amount Indian students should plan for.",
+      kw: "cost of studying in canada for indian students, study in canada budget 2026, canada tuition fees for indians, canada living cost for students, proof of funds canada",
+      sections: [
+        { h: "Tuition fees by program", body: "International tuition in Canada typically runs CAD 15,000\u201330,000 per year for undergraduate and diploma programs, and CAD 17,000\u201335,000+ for master's, with business and STEM at the higher end. Public colleges (diplomas, PG certificates) are cheaper than universities and remain popular for the work-pathway. Always check the specific institution \u2014 fees vary widely." },
+        { h: "Living costs by city", body: "Budget roughly CAD 1,200\u20132,000 per month depending on the city. Toronto and Vancouver are the most expensive (rent alone can be CAD 900\u20131,500 for a shared place); Calgary, Winnipeg, Halifax and smaller towns are far cheaper. IRCC's living-cost benchmark for proof of funds is CAD 20,635 per year (outside Quebec) on top of tuition." },
+        { h: "Proof of funds and the GIC", body: "For a study permit you must show first-year tuition plus CAD 20,635 in living funds. The cleanest way to evidence living funds is a Guaranteed Investment Certificate (GIC) from a Canadian bank. Note: the SDS fast-track stream was discontinued in late 2024, so all students now apply through the regular stream \u2014 but a GIC still makes your funds easy to prove." },
+        { h: "One-time and hidden costs", body: "Plan for the study-permit fee (CAD 150), biometrics (CAD 85), flight (\u20B960,000\u20131,10,000), health insurance, and a laptop and winter clothing on arrival. Keep a buffer of CAD 2,000\u20133,000 for the first month before any part-time income starts." },
+        { h: "Total first-year budget", body: "All-in, most Indian students should plan for CAD 35,000\u201355,000 (roughly \u20B922\u201334 lakh) for the first year, tuition plus living plus one-time costs. Part-time work (now up to 24 hours/week during sessions) and post-study work permits help recover this over time." },
+        { h: "Cut the cost where it counts", body: "A strong IELTS or PTE score widens scholarship eligibility and avoids retake fees, and a clean SOP improves your odds at funded programs. Practise free on LandingPrep and use the free college predictor and scholarship finder to target affordable, high-ROI Canadian institutions." }
+      ]
+    },
+    {
+      id: "gic-account-canada-2026-guide",
+      tag: "Visa",
+      date: "2026",
+      title: "GIC for Canada 2026: What It Is, How to Open One & How Much You Need",
+      excerpt: "A simple guide to the Guaranteed Investment Certificate (GIC) for Canadian study-permit applicants \u2014 the amount, which banks to use, the step-by-step process, and how you get the money back.",
+      kw: "gic canada 2026, guaranteed investment certificate canada, how to open gic account, gic amount for canada student visa, gic banks canada for indians",
+      sections: [
+        { h: "What a GIC actually is", body: "A Guaranteed Investment Certificate is a Canadian savings instrument where you deposit a fixed amount before you travel, and the bank releases it back to you in instalments after you arrive. It is the standard way international students prove they can cover their first-year living costs for a study permit." },
+        { h: "How much you need in 2026", body: "The GIC amount matches IRCC's living-cost benchmark \u2014 currently CAD 20,635 (outside Quebec). You transfer this plus the bank's small processing fee. This is separate from your tuition, which you usually pay directly to the institution." },
+        { h: "Which banks to use", body: "The common GIC providers for Indian students are Scotiabank, ICICI Bank Canada, CIBC and Simplii Financial. ICICI is popular because Indian students can open it from India. Compare processing fees, how fast they issue the Investment Directions/GIC certificate, and the disbursement schedule before choosing." },
+        { h: "Step-by-step process", body: "1) Choose a bank and open the GIC/student account online. 2) Transfer the CAD 20,635 from your Indian bank (you will need a Form A2 / LRS remittance). 3) Receive the Investment Confirmation letter. 4) Attach it to your study-permit application as proof of funds. Start early \u2014 the transfer and paperwork can take 1\u20132 weeks." },
+        { h: "How you get the money back", body: "After you land and activate your Canadian account, you typically receive an initial lump sum (around CAD 2,000\u20132,600) and then the balance in monthly instalments over 10\u201312 months. This gives you a steady living stipend through your first year." },
+        { h: "Plan the rest of your application", body: "A GIC covers living funds, but a clean study-permit file also needs a strong SOP and a solid English score. Practise IELTS/PTE free on LandingPrep and use the free SOP builder to make your application airtight. Always confirm the latest GIC amount on the official IRCC site before you remit." }
+      ]
+    },
+    {
+      id: "germany-blocked-account-2026-guide",
+      tag: "Study Abroad",
+      date: "2026",
+      title: "Germany Blocked Account 2026: Amount, How to Open & Best Providers",
+      excerpt: "Everything Indian students need to know about the German blocked account (Sperrkonto) for a student visa in 2026 \u2014 the required amount, top providers, and the step-by-step opening process.",
+      kw: "germany blocked account 2026, sperrkonto for indian students, germany student visa blocked account amount, fintiba expatrio, study in germany blocked account",
+      sections: [
+        { h: "What a blocked account is", body: "A blocked account (Sperrkonto) is a special German bank account where you deposit your living funds before applying for a student visa. The money is locked, and you can withdraw only a fixed amount each month after you arrive \u2014 proving to the embassy that you can support yourself without working illegally." },
+        { h: "How much you need in 2026", body: "The required amount is around EUR 11,904 for one year (about EUR 992 per month). This figure is revised periodically by the German government, so confirm the current amount on the official Ausw\xE4rtiges Amt (Federal Foreign Office) site before you deposit." },
+        { h: "Best providers for Indians", body: "Fintiba and Expatrio are the most popular digital providers because the whole process is online and fast, and both bundle the mandatory health insurance. Coracle and Deutsche Bank are alternatives. Compare the one-time setup fee, monthly service fee, and how quickly they issue the blocking confirmation." },
+        { h: "Step-by-step process", body: "1) Pick a provider and complete the online KYC (passport, admission/visa-appointment details). 2) Receive the account details and blocking confirmation. 3) Transfer EUR 11,904 plus fees from India via LRS. 4) Get the final blocking confirmation to attach to your visa file. Budget 1\u20132 weeks end to end." },
+        { h: "After you arrive", body: "Once in Germany, you verify your local address and the account unblocks to a normal current account, releasing roughly EUR 992 per month. You can top it up later if needed. Keep the health-insurance component active \u2014 universities require proof of insurance at enrolment." },
+        { h: "Study in Germany on a budget", body: "Public German universities charge little or no tuition, so the blocked account is your main upfront cost. Many programs accept English-taught master's with IELTS 6.5; practise free on LandingPrep, and use the free destinations guide to shortlist tuition-free German universities." }
+      ]
+    },
+    {
+      id: "sop-for-uk-student-visa-sample",
+      tag: "Applications",
+      date: "2026",
+      title: "SOP for UK Student Visa 2026: Format, Sample Structure & Mistakes to Avoid",
+      excerpt: "How to write a Statement of Purpose / personal statement for a UK master's and what the Student visa actually requires \u2014 structure, a paragraph-by-paragraph sample outline, and common rejection triggers.",
+      kw: "sop for uk student visa, uk personal statement sample, statement of purpose for masters uk, uk student visa requirements 2026, how to write sop for uk university",
+      sections: [
+        { h: "SOP vs the visa \u2014 clear the confusion", body: "UK universities ask for a personal statement / SOP as part of admission. The UK Student visa itself does not require an SOP \u2014 it needs a CAS from your university, financial proof, and sometimes a short credibility interview. So your SOP wins the offer; the CAS and funds win the visa. Both must tell a consistent story." },
+        { h: "The structure that works", body: "Use 5\u20136 tight paragraphs: 1) a specific hook and your goal, 2) academic background and key projects, 3) relevant work or research experience, 4) why this exact program and university (name modules and professors), 5) career plan after the degree, 6) why the UK specifically. Keep it to about 800\u20131,000 words unless told otherwise." },
+        { h: "Paragraph-by-paragraph sample outline", body: "Intro: state the field and a concrete ambition (not 'I have always loved...'). Body 1\u20132: evidence \u2014 grades, a capstone project, an internship outcome with numbers. Body 3: map 2\u20133 named modules to your goal. Body 4: a realistic, India-relevant career plan that shows you will return or progress legitimately. Close: a confident one-line summary." },
+        { h: "What gets SOPs (and visas) rejected", body: "Generic copy-paste statements, no link between the course and your career, exaggerated or unverifiable claims, and weak finances that contradict your story. For the credibility interview, be ready to explain your course choice, costs, and post-study plans in your own words." },
+        { h: "Money and English proof", body: "For the visa you must show tuition plus living funds (about \xA31,023/month for up to 9 months outside London, \xA31,334 in London) held for 28 consecutive days. Most UK master's want IELTS UKVI 6.5 with no band below 6.0 \u2014 check your program." },
+        { h: "Write a stronger SOP free", body: "Use LandingPrep's free SOP builder and sample library to draft and refine your UK statement, and take a free IELTS UKVI-style mock to confirm your band before you pay any application fees." }
+      ]
+    },
+    {
+      id: "pte-academic-vs-ielts-australia-pr-2026",
+      tag: "Comparison",
+      date: "2026",
+      title: "PTE vs IELTS for Australia PR 2026: Which Gives More Points?",
+      excerpt: "For Australia PR and student visas, both PTE Academic and IELTS are accepted \u2014 here is how each maps to migration points, which is easier to score, and how to choose.",
+      kw: "pte vs ielts for australia pr, pte academic australia pr points, ielts vs pte australia immigration, superior english points australia, best english test for australia pr",
+      sections: [
+        { h: "Both are accepted \u2014 points are what matter", body: "Australia's Department of Home Affairs accepts both PTE Academic and IELTS for student visas and skilled-migration points. The decision is purely about which test lets you hit Proficient or Superior English fastest, because those tiers add 10 or 20 points to your skilled-visa score." },
+        { h: "How scores map to PR points", body: "Superior English (20 points) needs PTE 79+ in each of the four skills, or IELTS 8.0 in each. Proficient English (10 points) needs PTE 65+ each, or IELTS 7.0 each. Competent English (0 points but visa-eligible) is PTE 50+ / IELTS 6.0 each. Those 20 points often decide whether you get an invitation." },
+        { h: "Which is easier to score", body: "PTE is fully computer-based and AI-scored, which many find faster and more consistent \u2014 Speaking is to a microphone, not a person, and results arrive in days. IELTS offers paper or computer-delivered with a human Speaking examiner. If you fear a live speaking interview or want quick results, PTE often suits Australia applicants; if you prefer a human examiner, IELTS works." },
+        { h: "Section-by-section differences", body: "PTE integrates skills (a speaking task can also score reading), so weak pronunciation can quietly cost you reading points. IELTS keeps sections separate. PTE rewards clear, steady pronunciation and fluency; IELTS Writing rewards structured Task 2 essays. Pick the test that matches your strengths." },
+        { h: "Cost, availability and retakes", body: "Both are widely available across Indian cities with frequent dates. Fees are similar (around \u20B916,000\u201317,000). PTE's faster results help if you are close to an Express of Interest deadline. Many applicants take one full mock of each before committing." },
+        { h: "Decide with a free mock", body: "Take a free PTE-style and IELTS-style mock on LandingPrep, compare which scoring style gets you to 79+/8.0 faster, and then commit to one test. Always confirm the current points table on the official Home Affairs site, as thresholds can change." }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;
