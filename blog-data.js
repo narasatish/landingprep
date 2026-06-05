@@ -1002,6 +1002,134 @@
         { h: "Which is easier", body: "Neither is objectively easier \u2014 DET rewards quick, adaptive thinking across mixed tasks and clear speaking to a webcam; TOEFL rewards stamina and academic reading/listening. If you want low cost and speed, try DET; if you want the most widely accepted score, take TOEFL." },
         { h: "Decide with a free mock", body: "Take a free TOEFL-style and Duolingo-style practice test on LandingPrep, compare which format suits you, and confirm your target universities accept it before booking." }
       ]
+    },
+    {
+      id: "how-to-email-professor-for-ms-admission",
+      tag: "Applications",
+      date: "2026",
+      title: "How to Email a Professor for MS Admission 2026: Template & Mistakes to Avoid",
+      excerpt: "A concise, copy-ready guide to writing a cold email to a professor that actually gets a reply \u2014 what to say, what to avoid, when to send, and a working template.",
+      kw: "how to email professor for ms admission, cold email professor phd, email to professor for research, how to contact professor usa, email professor sample",
+      sections: [
+        { h: "Why it matters", body: "A positive reply from a professor who wants you in their lab or seminar can strengthen your application, sometimes trigger internal funding, and shows you have researched the programme. However, most professors ignore generic emails \u2014 the difference is specificity and brevity." },
+        { h: "When to send", body: "For US universities: September\u2013October for a January application, or November\u2013December for a fall intake. Email one professor at a time per school. Avoid holiday windows (late November, December 24\u2013January 1)." },
+        { h: "The structure that works (4 paragraphs max)", body: "1) Who you are + one specific paper of theirs you read and why it connects to your work. 2) Your background \u2014 degree, GPA, one concrete research contribution (paper, project, dataset). 3) What you hope to do in their group \u2014 one specific research question. 4) A clear, easy ask: 'I would be grateful to hear whether you are taking students for Fall 2027, and if a brief call to discuss would suit you.' Attach CV, not your full SOP." },
+        { h: "Subject line", body: "Prospective MS/PhD student \u2014 [your area] / [your degree + institution]. E.g.: 'Prospective MS student \u2014 NLP for low-resource languages / IIT Bombay'. Specific, scannable, not salesy." },
+        { h: "What tanks a reply", body: "Generic openers ('I am very interested in your work'), attaching a full SOP, emailing a professor who publishes in a completely different field, asking about funding in the first email, and spelling the professor's name wrong. All are immediately deletable." },
+        { h: "After you send", body: "One follow-up after 2 weeks is fine; more is not. If there is no reply after two contacts, move on. A non-reply is not a rejection of your application \u2014 many professors simply do not manage prospective-student email. Take a free GRE mock on LandingPrep to make sure your test score backs up the application you are pitching." }
+      ]
+    },
+    {
+      id: "new-zealand-student-visa-2026-guide",
+      tag: "Immigration",
+      date: "2026",
+      title: "New Zealand Student Visa 2026: Requirements, Funds & Post-Study Work Rights",
+      excerpt: "Everything Indian students need to know about the New Zealand Fee Payer student visa \u2014 funds required, English scores, the 3-year post-study open work visa, and pathway to PR.",
+      kw: "new zealand student visa 2026, study in new zealand indian students, nz student visa requirements, new zealand post study work visa, study nz cost",
+      sections: [
+        { h: "Why New Zealand", body: "New Zealand offers a globally respected degree (Auckland, Waikato, Canterbury, Victoria Wellington), an easy post-study work pathway, and a relatively fast-track PR route via the Skilled Migrant Category. Tuition and living costs sit between Australia and the UK." },
+        { h: "Student visa \u2014 key requirements", body: "You need an offer letter from a New Zealand Qualifications Authority (NZQA)-approved provider, proof of funds covering tuition plus NZD 15,000\u201320,000 per year for living, health insurance, and a return ticket or evidence of funds for one. English proof: IELTS 6.0\u20136.5 or equivalent depending on the programme." },
+        { h: "Funds and cost", body: "Tuition: NZD 22,000\u201335,000 per year for most postgraduate courses. Auckland is the most expensive city; Christchurch and Dunedin are significantly cheaper. All up, budget NZD 35,000\u201355,000 (roughly \u20B917\u201327 lakh) per year before any part-time income." },
+        { h: "Post-study work visa (PSWV)", body: "Graduates of a New Zealand qualification can get a 3-year open work visa (Post Study Work Visa) if the programme was at least 30 weeks at NZQF Level 7+. This is one of the most generous post-study windows globally, and you can work for any employer, in any role, anywhere in New Zealand." },
+        { h: "Pathway to PR", body: "After working in New Zealand for 12\u201324 months post-study, many graduates qualify for the Skilled Migrant Category points-based residency visa. A high English score (IELTS 6.5+) adds points to your selection profile." },
+        { h: "English prep", body: "Most NZ universities want IELTS Academic 6.0\u20136.5 overall. Practise free on LandingPrep's IELTS mock tests to lock in your target band before registration." }
+      ]
+    },
+    {
+      id: "mba-vs-ms-which-is-better-2026",
+      tag: "Study Abroad",
+      date: "2026",
+      title: "MBA vs MS 2026: Which Is Better for Indian Students?",
+      excerpt: "MBA or MS? A clear comparison of cost, salary jump, work-experience requirements, GMAT vs GRE, and the ROI for Indian students targeting the USA, UK or Canada.",
+      kw: "mba vs ms for indian students, mba vs ms usa, should i do mba or ms, gmat vs gre for ms, mba vs ms salary difference",
+      sections: [
+        { h: "The core difference", body: "An MS is a specialist technical degree (1\u20132 years, typically research or coursework) targeting depth in one field \u2014 CS, data science, finance, engineering. An MBA is a general management degree (1.5\u20132 years) targeting leadership and cross-functional roles. The right choice turns on where you are in your career and what you want to do next." },
+        { h: "Work experience", body: "Most top MBA programmes require 3\u20135+ years of post-undergrad work experience (average at Wharton/Booth is ~5 years). MS programmes typically accept fresh graduates or those with 0\u20133 years. If you are right out of college, MS almost always makes more sense." },
+        { h: "Cost and ROI", body: "MBA: USD 100,000\u2013220,000 total (US top-10); salary jump to USD 120,000\u2013180,000+ in year 1 post-MBA, so break-even in 2\u20133 years for top schools. MS: USD 40,000\u2013100,000 total; tech MS (CS, DS, AI) grads earn USD 100,000\u2013140,000 starting. Lower cost, faster break-even, but narrower career pivot ability." },
+        { h: "Test: GMAT vs GRE", body: "MBA programmes historically prefer GMAT Focus but accept GRE. Most MS programmes prefer GRE (GMAT accepted at many, but less common). If your target is purely MS in STEM, focus on GRE. If you are keeping MBA options open, GMAT Focus may serve you better." },
+        { h: "For Indian students specifically", body: "Tech MS (CS, ECE, data science) from a strong US/UK school gives an excellent STEM OPT pathway (3 years in the US), easier admission, and a lower loan burden. MBA from a top school is a career transformer but requires strong GMAT, essays, and strong professional experience. Many Indian students do MS first, work 3\u20135 years, then return for an MBA." },
+        { h: "Prepare free", body: "Take a free GRE or GMAT Focus mock test on LandingPrep and use the free college predictor to compare MS and MBA programmes at the same institution \u2014 shortlist by your profile before you decide." }
+      ]
+    },
+    {
+      id: "study-in-ireland-cost-2026",
+      tag: "Study Abroad",
+      date: "2026",
+      title: "Cost of Studying in Ireland for Indian Students 2026: Fees, Living & Scholarships",
+      excerpt: "A realistic full budget for studying in Ireland in 2026 \u2014 university fees, Dublin vs other cities, the \u20AC10k living cost threshold, and the 2-year stay-back visa.",
+      kw: "cost of studying in ireland for indian students, ireland student visa 2026, study ireland fees, ireland living cost students, ireland stay back visa",
+      sections: [
+        { h: "Why Ireland for Indian students", body: "Ireland offers English-taught degrees from well-ranked universities (TCD, UCD, UCC, DCU, Maynooth), EU-aligned research networks, and critically \u2014 a 2-year post-study 'Third Level Graduate Scheme' stay-back visa that lets you work for any employer in Ireland after graduation. It is also an English-speaking EU country, giving access to the wider European job market." },
+        { h: "Tuition fees 2026", body: "International postgraduate tuition runs roughly \u20AC11,000\u201325,000 per year for most courses; STEM and business at the higher end. Undergraduate is \u20AC12,000\u201325,000+. TCD and UCD are the most expensive; regional universities (UCC, Maynooth, Galway) cost less for comparable degrees." },
+        { h: "Living costs by city", body: "Dublin is expensive \u2014 rent alone is \u20AC700\u20131,100/month for a shared room. Budget \u20AC12,000\u201316,000/year for living in Dublin; \u20AC9,000\u201312,000 in Cork, Galway or Limerick. The student visa requires you to show \u20AC10,000 in savings for the first year, on top of tuition." },
+        { h: "Visa funds requirement", body: "For an Irish student visa, you need your first-year tuition paid (or a receipt) plus \u20AC10,000 in a bank account for living costs. Private health insurance is also required. Keep funds clear and in your own or parent's name for at least 3\u20136 months." },
+        { h: "2-year post-study visa", body: "After graduating in Ireland you can apply for the Third Level Graduate Scheme \u2014 24 months of open work authorisation for degree-level graduates, 12 months for Higher Diploma. You need your award letter and to apply within 6 months of graduation." },
+        { h: "Scholarships and free prep", body: "Government of Ireland International Education Scholarships offer \u20AC10,000 per year to a small cohort; most universities also give merit partial-waivers at application time. A strong IELTS score (6.5 overall minimum for most courses) improves both admission and scholarship odds. Practise free on LandingPrep." }
+      ]
+    },
+    {
+      id: "usa-opt-stem-extension-2026-guide",
+      tag: "Immigration",
+      date: "2026",
+      title: "USA OPT & STEM Extension 2026: How F-1 Students Work After Graduation",
+      excerpt: "The complete guide to Optional Practical Training (OPT) and the 24-month STEM OPT extension for F-1 visa students \u2014 eligibility, timing, how to apply, and what happens if H-1B doesn't come through.",
+      kw: "usa opt 2026, stem opt extension, f1 student work after graduation, opt application process, stem opt eligible majors",
+      sections: [
+        { h: "What OPT is", body: "Optional Practical Training (OPT) is a 12-month work authorisation for F-1 students that lets you work in a job related to your field of study in the US after graduation. You apply to USCIS through your Designated School Official (DSO), not directly to an employer. OPT is separate from H-1B." },
+        { h: "STEM OPT extension", body: "If your degree is in a STEM field (classified as STEM by the Department of Homeland Security CIP-code list) and your employer enrolls in E-Verify, you can extend OPT by an additional 24 months \u2014 giving you 3 years total of US work authorisation. This span covers multiple H-1B lottery cycles." },
+        { h: "Key timing rules", body: "You can apply for OPT up to 90 days before graduation but no later than 60 days after. The EAD (Employment Authorization Document) processing takes 3\u20135 months, so apply early. Start date on the EAD is what matters \u2014 you cannot work before the printed start date." },
+        { h: "STEM extension timing", body: "Apply for the STEM extension no later than 90 days before your initial OPT expires. Your employer's E-Verify enrollment must be confirmed, and you file Form I-983 (Training Plan). Missing the 90-day window means a gap in authorisation." },
+        { h: "What if H-1B does not come through", body: "H-1B is a lottery (roughly 1-in-4 odds for a normal cap-subject petition). If you are not selected, STEM OPT gives you 2 more lottery chances. Options after that include O-1 (extraordinary ability), L-1 (if you join a company with a US office from abroad), EB-1, or transferring to a different status. Many Indian students return to India, gain more experience, and re-apply." },
+        { h: "Strong English = better US opportunities", body: "TOEFL 100+ and GRE 320+ are the scores that open the STEM MS programmes leading to STEM OPT. Practise both free on LandingPrep to build the profile before you apply." }
+      ]
+    },
+    {
+      id: "ielts-writing-task-1-academic-guide",
+      tag: "IELTS",
+      date: "2026",
+      title: "IELTS Writing Task 1 Academic 2026: How to Describe a Graph, Chart or Map",
+      excerpt: "A step-by-step guide to IELTS Academic Writing Task 1 \u2014 how to structure your response, what to compare, the language to use for trends, and how Band 7+ responses differ from Band 5.",
+      kw: "ielts writing task 1 academic, ielts task 1 graph description, ielts writing task 1 tips, ielts task 1 band 7, how to write ielts task 1",
+      sections: [
+        { h: "What Task 1 actually tests", body: "Task 1 (20 minutes, 150 words minimum) asks you to summarise visual data \u2014 a line graph, bar chart, pie chart, table, map or process diagram. You are NOT giving your opinion. You are selecting, organising, and describing the key features and trends, using accurate language and appropriate academic vocabulary." },
+        { h: "The 4-paragraph structure", body: "Para 1: Paraphrase the question (what the graph shows, time period). Para 2: The main/overall trend in 1\u20132 sentences \u2014 the single most important pattern across ALL the data. Para 3\u20134: Specific details with data points to support the overview. Do NOT describe every single number." },
+        { h: "The 'overview' is your highest-value sentence", body: "Band 7+ answers always include a clear overview sentence that captures the key trend without specific figures. Example: 'Overall, oil remained the dominant energy source throughout the period, while renewable energy grew the most proportionally.' Missing this is the single biggest reason for Band 5\u20136 scores." },
+        { h: "Language for trends", body: "Rise: increased, grew, rose, climbed sharply/steadily/gradually. Fall: decreased, fell, dropped, declined. Stable: remained constant, levelled off, plateaued. Describing a peak: reached a peak/high of X in [year]. Describing a low: fell to a low of X. Add adverbs (sharply, gradually, slightly, significantly) to show the degree of change." },
+        { h: "Common Band 5\u20136 mistakes", body: "Including personal opinion ('I think this is because...'), spending all 150 words on one data series and ignoring others, copy-pasting the task question word-for-word, using only 'increase' and 'decrease' with no variety, and forgetting to include actual figures from the chart." },
+        { h: "Practise with a timed mock", body: "Task 1 is worth one-third of your Writing band. Practise under timed conditions (20 minutes exactly) so you stop running out of time on Task 2. Take a free IELTS Writing mock on LandingPrep and compare your response to the model answer to see exactly where your band sits." }
+      ]
+    },
+    {
+      id: "pte-vs-toefl-which-easier-2026",
+      tag: "Comparison",
+      date: "2026",
+      title: "PTE vs TOEFL 2026: Which Is Easier and Which Is Better for Your University?",
+      excerpt: "A direct PTE Academic vs TOEFL iBT comparison on format, scoring, difficulty, acceptance, cost and speed \u2014 to help you pick the right test for your target universities.",
+      kw: "pte vs toefl, pte academic vs toefl ibt, which is easier pte or toefl, pte vs toefl for uk universities, pte vs toefl scoring",
+      sections: [
+        { h: "Format and length", body: "PTE Academic is about 2 hours, fully computer-based, AI-scored, with integrated tasks (one response can score multiple skills simultaneously). TOEFL iBT is about 2 hours, computer-based, with a human or AI scorer for Speaking and a human scorer for Writing. Both test Listening, Reading, Speaking and Writing." },
+        { h: "Scoring", body: "PTE is scored 10\u201390 per skill (most universities want 58\u201365+). TOEFL iBT is 0\u201330 per section (0\u2013120 total; most universities want 79\u2013100+). Concordance: PTE 65 \u2248 TOEFL 90. Both publish official score comparison charts." },
+        { h: "Which is easier \u2014 the honest answer", body: "PTE favours candidates with clear, consistent pronunciation (the AI scores on fluency and clarity, not accent). TOEFL favours candidates who read and listen well under timed pressure. If you type fast and have consistent spoken English, PTE is usually faster to score high. If you have strong academic vocabulary from Indian schooling, TOEFL Reading/Listening often feels familiar." },
+        { h: "Acceptance", body: "TOEFL is accepted nearly universally (USA, UK, Canada, Australia, Germany, everywhere). PTE is accepted at most major universities but a handful of US and Canadian institutions still list TOEFL/IELTS only \u2014 always check your specific programme. UK and Australia institutions generally accept both with no preference." },
+        { h: "Cost and speed", body: "PTE: ~\u20B917,000, results in 48 hours. TOEFL: ~\u20B917,000\u201319,000 depending on date/location, results in 4\u20138 days. For tight application deadlines, PTE's 2-day turnaround is a meaningful advantage. Both allow retakes with no minimum gap." },
+        { h: "Take a free mock of each", body: "Do one free PTE-style and one TOEFL-style full practice test on LandingPrep, compare which format gives you a higher practice score, and then invest in the one where you are already closer to your target." }
+      ]
+    },
+    {
+      id: "how-to-build-profile-for-ms-admission",
+      tag: "Applications",
+      date: "2026",
+      title: "How to Build a Strong MS Profile for Admission 2026: GPA, GRE, Projects & LOR",
+      excerpt: "A complete profile-building roadmap for Indian students targeting MS in the USA, UK, Canada or Germany \u2014 what admission committees actually look at, how to fix a low GPA, and what matters most.",
+      kw: "ms admission profile 2026, how to strengthen ms application, ms admission gpa gre, how to get ms in usa profile, strong profile for ms abroad",
+      sections: [
+        { h: "What admission committees actually weigh", body: "US MS admissions (the most competitive) look at: GRE/GMAT score, undergraduate GPA/percentage, research experience and publications, work experience, SOP strength, quality of LORs, and the fit between your background and the programme. Not all carry equal weight \u2014 SOP + LORs carry far more than most applicants expect." },
+        { h: "GPA \u2014 the floor that matters", body: "Top-50 US CS/ECE programmes typically want a GPA equivalent to ~8.0+/10 or 75%+ overall. Below that, a strong GRE, a publication, or a compelling SOP can compensate. If your GPA is lower, target programmes where GRE is heavily weighted and where you can evidence practical skills." },
+        { h: "GRE \u2014 what score opens which doors", body: "Quant 165+ and Verbal 155+ opens most top-50 US STEM programmes. 160 Quant is the floor for competitive programmes. A 325+ total combined with a strong profile gets you shortlisted everywhere. Take free GRE mocks on LandingPrep to benchmark where you stand now." },
+        { h: "Research, projects and internships", body: "A paper (even a workshop paper or preprint), an industry internship with a named output, or a strong capstone project with measurable results are the differentiators that separate shortlisted from waitlisted. Start building at least 12 months before your application deadline." },
+        { h: "Letters of recommendation", body: "Three LORs from people who can speak to your research ability or professional impact \u2014 not just 'he is a good student.' A faculty member who supervised your thesis, a manager who can describe a specific project outcome, and a second faculty member is the ideal combination. Generic praise letters are filtered out." },
+        { h: "The SOP \u2014 your controllable variable", body: "Every other signal (GPA, GRE) is now fixed. The SOP is the one component you can still substantially improve. Be specific: name the professors you want to work with, cite their papers, explain the exact research question you want to pursue. Use LandingPrep's free SOP builder and sample library to draft and improve yours." }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;

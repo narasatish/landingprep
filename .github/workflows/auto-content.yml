@@ -32,3 +32,21 @@ jobs:
           node-version: "20"
       - name: Submit URLs to IndexNow
         run: node scripts/indexnow-submit.mjs
+
+      # Google does not support IndexNow, but re-fetching the sitemap via the
+      # Search Console API is the equivalent nudge. Requires GSC_API_KEY secret
+      # (any Google API key with Search Console API scope, set in repo Settings →
+      # Secrets). If the secret is absent the step is silently skipped — no failure.
+      - name: Ping Google Search Console sitemap
+        env:
+          GSC_API_KEY: ${{ secrets.GSC_API_KEY }}
+        run: |
+          if [ -z "$GSC_API_KEY" ]; then
+            echo "GSC_API_KEY not set — skipping Google sitemap ping."
+            exit 0
+          fi
+          curl -fsS -X POST \
+            "https://www.googleapis.com/webmasters/v3/sites/https%3A%2F%2Flandingprep.com%2F/sitemaps/https%3A%2F%2Flandingprep.com%2Fsitemap.xml?key=${GSC_API_KEY}" \
+            -H "Content-Length: 0" \
+            && echo "Google sitemap ping sent." \
+            || echo "Google sitemap ping failed (non-fatal)."
