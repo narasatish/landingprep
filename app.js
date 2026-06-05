@@ -241,6 +241,12 @@ function App() {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, [view, exam]);
   useEffectApp(() => {
+    try {
+      window.LP_REFERRAL && window.LP_REFERRAL.capture();
+    } catch (e) {
+    }
+  }, []);
+  useEffectApp(() => {
     const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1800));
     idle(() => {
       if (window.LP_loadScript && typeof window.LP_COLLEGES === "undefined") {

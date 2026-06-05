@@ -187,6 +187,7 @@ function Home({ onGuide, onPractice, onNav }) {
             <div className="hero-cta">
               <button className="btn btn-primary btn-lg" onClick={() => onNav("exam-prep")}>Browse all mock tests →</button>
               <button className="btn btn-lg" onClick={() => { window.location.hash = "#/colleges/onboard"; onNav("colleges"); }}>🚀 Build my study-abroad plan</button>
+              <button className="btn btn-lg" onClick={() => window.LP_REFERRAL && window.LP_REFERRAL.invite()} title="Share free prep with a friend">📲 Invite a friend</button>
             </div>
             <div className="hero-fine">
               <span><span className="dot" /> No registration to start</span>

@@ -840,6 +840,70 @@
         { h: "Cost, availability and retakes", body: "Both are widely available across Indian cities with frequent dates. Fees are similar (around ₹16,000–17,000). PTE's faster results help if you are close to an Express of Interest deadline. Many applicants take one full mock of each before committing." },
         { h: "Decide with a free mock", body: "Take a free PTE-style and IELTS-style mock on LandingPrep, compare which scoring style gets you to 79+/8.0 faster, and then commit to one test. Always confirm the current points table on the official Home Affairs site, as thresholds can change." }
       ]
+    },
+    {
+      id: "cost-of-studying-in-usa-for-indian-students-2026",
+      tag: "Study Abroad",
+      date: "2026",
+      title: "Cost of Studying in USA for Indian Students 2026: Tuition, Living & Total Budget",
+      excerpt: "A realistic all-in budget for an MS or undergrad in the USA in 2026 — tuition by university type, living costs by city tier, F-1 visa funds, and how to cut the bill with assistantships.",
+      kw: "cost of studying in usa for indian students, ms in usa cost 2026, study in usa budget, us university tuition for indians, f1 visa financial requirement",
+      sections: [
+        { h: "Tuition by university type", body: "Public/state universities charge roughly USD 20,000–35,000 per year for international students; private universities USD 35,000–60,000+. An MS is usually 1.5–2 years; undergrad is 4 years. STEM programs cost more but open a 3-year OPT (STEM extension) work window." },
+        { h: "Living costs by city tier", body: "Budget USD 10,000–18,000 per year for living. High-cost metros (New York, Bay Area, Boston) run higher; the Midwest and South are far cheaper. On-campus housing and sharing apartments cut costs significantly." },
+        { h: "F-1 visa financial proof", body: "For the I-20 and F-1 visa you must show funds covering the first year of tuition plus living (often USD 35,000–70,000 depending on the school). Sources can be savings, an education loan sanction letter, or a sponsor affidavit with bank statements. Keep a clean money trail." },
+        { h: "One-time costs", body: "SEVIS fee (USD 350), DS-160 visa fee (USD 185), flights (₹70,000–1,30,000), and initial setup. Add GRE/TOEFL/IELTS test fees during the application phase." },
+        { h: "Cut the cost", body: "Assistantships (TA/RA) and graduate fellowships can waive tuition and pay a stipend — apply early and email professors. Scholarships, in-state tuition after a year (some states), and on-campus jobs (up to 20 hrs/week) all help. A strong GRE/TOEFL score boosts funding odds." },
+        { h: "Total budget", body: "All-in, most Indian MS students plan for USD 50,000–90,000 (roughly ₹42–75 lakh) across the degree before any assistantship offset. Use LandingPrep's free GRE/TOEFL mocks and the free college predictor and education-loan comparison to target high-ROI, funding-friendly universities." }
+      ]
+    },
+    {
+      id: "ielts-one-skill-retake-osr-2026",
+      tag: "IELTS",
+      date: "2026",
+      title: "IELTS One Skill Retake (OSR) 2026: Retake Just One Section — How It Works",
+      excerpt: "IELTS One Skill Retake lets you re-sit a single section instead of the whole test. Here is who can use it, how to book, cost, and whether universities and visas accept the new Test Report Form.",
+      kw: "ielts one skill retake, ielts osr 2026, retake one section ielts, ielts single section retake, ielts one skill retake universities accept",
+      sections: [
+        { h: "What One Skill Retake is", body: "One Skill Retake (OSR) lets you re-sit just one of the four IELTS skills — Listening, Reading, Writing or Speaking — instead of taking the entire test again. You then receive an updated Test Report Form combining your best results." },
+        { h: "Who can use it", body: "OSR is available for computer-delivered IELTS taken at participating test centres. You must book the retake within 60 days of your original test. It is offered for both Academic and General Training in a growing list of countries, including India — confirm availability at your centre." },
+        { h: "How to book", body: "After your original computer-delivered test, log in to your test-taker account and select One Skill Retake for the section you want to improve. Pick a date within the 60-day window, pay the fee, and sit only that section." },
+        { h: "Cost and results", body: "OSR usually costs less than a full test (varies by country/centre). You receive a new TRF showing the retaken score alongside your other three section scores. Results arrive in the standard 1–5 days for computer-delivered tests." },
+        { h: "Do universities and visas accept it", body: "Many universities accept the OSR Test Report Form, but acceptance is not universal — UK Visas and Immigration (UKVI) and some institutions may still want a single full-test TRF. Always confirm with your specific university and visa route before relying on OSR." },
+        { h: "Improve the one section fast", body: "Because OSR targets a single skill, focused practice pays off. Use LandingPrep's free section-specific IELTS mocks (Listening, Reading, Writing, Speaking) to lift just the band you need before your retake." }
+      ]
+    },
+    {
+      id: "scholarships-to-study-in-uk-for-indian-students-2026",
+      tag: "Scholarships",
+      date: "2026",
+      title: "Scholarships to Study in the UK for Indian Students 2026: Chevening, Commonwealth & More",
+      excerpt: "The top UK scholarships Indian students can actually win in 2026 — Chevening, Commonwealth, GREAT, and university-specific awards — with eligibility, what they cover, and how to apply.",
+      kw: "uk scholarships for indian students, chevening scholarship 2026, commonwealth scholarship, great scholarships uk, fully funded uk scholarships india",
+      sections: [
+        { h: "Chevening Scholarship", body: "The UK government's flagship fully-funded award covers tuition, living, flights and visa for a one-year master's. You need a bachelor's, about 2 years (2,800 hours) of work experience, and an offer from an eligible UK course. Selection rewards leadership and a clear post-study plan back in India." },
+        { h: "Commonwealth Scholarships", body: "Funded by the UK for students from Commonwealth countries including India, mainly for master's and PhD. Fully funded (tuition, stipend, travel). Many are aimed at development-related fields and candidates who could not otherwise afford UK study." },
+        { h: "GREAT Scholarships", body: "Jointly funded by the British Council and UK universities, GREAT Scholarships offer at least GBP 10,000 towards tuition for a one-year postgraduate course, with several reserved specifically for Indian students. Apply directly to the participating university." },
+        { h: "University-specific awards", body: "Most UK universities offer their own international/merit scholarships (e.g. partial tuition waivers worth GBP 5,000–15,000). These are often automatic on admission or via a short separate form — check each university's scholarships page and deadlines." },
+        { h: "How to win one", body: "Apply early, tailor every essay to the funder's mission, get strong references, and show measurable impact and a concrete return-to-India plan. A high IELTS band strengthens both admission and scholarship applications." },
+        { h: "Find more, free", body: "Use LandingPrep's free scholarship finder and SOP builder to shortlist UK awards you qualify for and draft winning essays — and take a free IELTS mock to hit the band your target course needs." }
+      ]
+    },
+    {
+      id: "toefl-vs-duolingo-english-test-which-to-take-2026",
+      tag: "Comparison",
+      date: "2026",
+      title: "TOEFL vs Duolingo English Test 2026: Which Should You Take?",
+      excerpt: "TOEFL iBT or the Duolingo English Test? Compare cost, format, time, score acceptance and difficulty so you pick the right English test for your university applications.",
+      kw: "toefl vs duolingo, duolingo english test vs toefl, det vs toefl 2026, cheaper english test for universities, which english test for usa",
+      sections: [
+        { h: "Cost and convenience", body: "The Duolingo English Test (DET) costs around USD 65 and is taken at home on your laptop, any time, with results in about 2 days. TOEFL iBT costs roughly USD 200+ and is taken at a test centre or at home (TOEFL iBT Home Edition), with results in about 4–8 days. DET is the budget, fast option." },
+        { h: "Format and length", body: "DET is about 1 hour, adaptive, and blends reading, writing, speaking and listening into integrated tasks plus a video interview and writing sample. TOEFL iBT is about 2 hours with four clearly separate sections. TOEFL feels more like a traditional academic test." },
+        { h: "Scoring", body: "DET is scored 10–160. TOEFL iBT is scored 0–120 (0–30 per section). Universities publish minimums for each — for example many want TOEFL 90–100 or DET 115–125 for master's. Always check your specific programme's required score." },
+        { h: "Acceptance", body: "TOEFL is accepted almost universally worldwide. DET acceptance has grown massively and now covers thousands of universities including many top US, UK, Canada and Australia institutions — but a few programmes and visa routes still prefer TOEFL or IELTS. Confirm before you book." },
+        { h: "Which is easier", body: "Neither is objectively easier — DET rewards quick, adaptive thinking across mixed tasks and clear speaking to a webcam; TOEFL rewards stamina and academic reading/listening. If you want low cost and speed, try DET; if you want the most widely accepted score, take TOEFL." },
+        { h: "Decide with a free mock", body: "Take a free TOEFL-style and Duolingo-style practice test on LandingPrep, compare which format suits you, and confirm your target universities accept it before booking." }
+      ]
     }
   ];
 

@@ -298,6 +298,11 @@ function App() {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, [view, exam]);
 
+  // Viral loop: capture first-touch ?ref= referral on boot (fires GA referral_landing).
+  useEffectApp(() => {
+    try { window.LP_REFERRAL && window.LP_REFERRAL.capture(); } catch (e) {}
+  }, []);
+
   // Idle-preload the study-abroad data bundle (~79 KB) shortly after boot so it is ready by
   // the time the user opens any college/study-abroad screen — without blocking initial load.
   useEffectApp(() => {
