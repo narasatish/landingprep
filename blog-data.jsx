@@ -1128,6 +1128,86 @@
         { h: "If you are 0.5 bands short", body: "Options: (a) Retake — IELTS one-skill retake (OSR) lets you redo just one section. (b) Conditional offer — many universities issue a conditional offer on 6.0, requiring you to complete a pre-sessional English course on arrival to meet 6.5. (c) IELTS indicator — some universities accept lower scores for initial admissions. Always ask the admissions office — they often have flexibility not listed on the website." },
         { h: "Practise to your target band, free", body: "LandingPrep's free IELTS mock tests give you a band estimate for each of the 4 sections so you know exactly which skill to drill. Check your target university's exact requirement, calculate the gap, and use targeted section practice on LandingPrep to close it efficiently." }
       ]
+    },
+    {
+      id: "study-in-singapore-indian-students-2026",
+      tag: "Study Abroad",
+      date: "2026",
+      title: "Study in Singapore for Indian Students 2026: NUS, NTU, Fees & Student Pass",
+      excerpt: "Everything Indian students need to know about studying in Singapore — NUS and NTU rankings, tuition fees, the Student's Pass, living costs, and work-after-graduation rights.",
+      kw: "study in singapore for indian students, singapore student visa, nus ntu fees for indians, singapore student pass 2026, cost of studying in singapore",
+      sections: [
+        { h: "Why Singapore", body: "Singapore hosts two consistently top-20 global universities: NUS (National University of Singapore) and NTU (Nanyang Technological University). English is the medium of instruction, there is no language barrier, the city is extremely safe, and its location makes it a hub for internships and careers across Southeast Asia. The government-funded scholarship system is generous for top students." },
+        { h: "Tuition fees 2026", body: "International tuition: NUS and NTU charge roughly SGD 17,000–35,000 per year depending on the programme. Engineering, Computing and Business are at the higher end; Arts and Social Sciences lower. The Singapore government offers a tuition grant scheme that lowers fees significantly in exchange for a 3-year work commitment in Singapore post-graduation — many Indian students take this." },
+        { h: "Living costs", body: "Budget SGD 1,200–1,800/month for living. On-campus housing is significantly cheaper (SGD 350–700/month). Singapore is expensive but transport is world-class and affordable. All in: SGD 25,000–45,000 per year (roughly ₹16–28 lakh)." },
+        { h: "Student's Pass (visa)", body: "You apply for a Student's Pass through ICA (Immigration and Checkpoints Authority) after receiving an offer. Processing takes 4–8 weeks. You need proof of enrolment, financial ability, and a medical examination. The pass is tied to your programme duration." },
+        { h: "Work rights and PR pathway", body: "Full-time work during the semester is not permitted for most international students. Part-time work (up to 16 hours/week during term) is allowed. After graduation, the Employment Pass or Tech.Pass lets high-skilled graduates work in Singapore. PR is possible after 2–3 years of employment, though the path is competitive." },
+        { h: "English score requirements", body: "NUS and NTU accept IELTS (typically 6.0–6.5) or TOEFL (85–90). Many Indian students with CBSE/ICSE schooling get waived. Practise free on LandingPrep and use the free college predictor to shortlist Singapore programmes matching your profile." }
+      ]
+    },
+    {
+      id: "canada-pgwp-2026-guide",
+      tag: "Immigration",
+      date: "2026",
+      title: "Canada PGWP 2026: Post-Graduation Work Permit Rules, Eligibility & Duration",
+      excerpt: "The complete updated guide to Canada's Post-Graduation Work Permit in 2026 — who qualifies, how long you get, new field-of-study restrictions, and the path from PGWP to PR.",
+      kw: "canada pgwp 2026, post graduation work permit canada, pgwp eligibility 2026, pgwp duration canada, canada pgwp to pr",
+      sections: [
+        { h: "What PGWP is", body: "The Post-Graduation Work Permit (PGWP) lets international students who graduate from a Designated Learning Institution (DLI) in Canada work for any employer, in any job, anywhere in Canada — for up to 3 years. It is one of the primary reasons Indian students choose Canada over other study destinations." },
+        { h: "2026 eligibility changes", body: "Key changes in effect for 2026: (1) New language requirement — you must meet English/French CLB 7 (IELTS 6.0 each band or CELPIP equivalent) to get a PGWP. (2) Field-of-study restriction — some college curriculum-licensing programmes (delivered in partnership with offshore institutions) no longer qualify. University degrees and most on-campus college programmes still qualify. Always check your specific DLI and programme on the IRCC list before enrolling." },
+        { h: "PGWP duration rules", body: "Programme 8 months to less than 2 years → PGWP up to the length of the programme. Programme 2 years or more → PGWP up to 3 years. Combined programmes (e.g. 1-year diploma + 1-year PG certificate) may qualify for a longer PGWP if conditions are met. Always confirm your combined-programme eligibility with your DLI before starting." },
+        { h: "PGWP and Express Entry", body: "The PGWP gives you Canadian work experience which is a major Express Entry points booster. After 1 year of skilled work in Canada, you can apply for Canadian Experience Class (CEC). A high IELTS/CELPIP score adds Comprehensive Ranking System (CRS) points on top of the work experience points — many PGWP holders clear 470+ CRS and receive an invitation to apply for PR." },
+        { h: "Common PGWP mistakes", body: "Applying more than 180 days after graduation (you lose eligibility). Maintaining continuous full-time enrolment — any gap or part-time switch can affect eligibility. Not meeting the new language threshold. Enrolling in a non-PGWP-eligible programme thinking it qualifies. Always verify at IRCC.gc.ca before and after enrolment." },
+        { h: "Prep your English score", body: "The PGWP now requires CLB 7 = IELTS 6.0 in each band, or CELPIP 7 in each skill. Practise both free on LandingPrep — IELTS mocks and CELPIP-style practice — so your score is ready before you graduate." }
+      ]
+    },
+    {
+      id: "us-f1-visa-interview-tips-2026",
+      tag: "Visa",
+      date: "2026",
+      title: "US F-1 Visa Interview Tips 2026: Questions, Documents & How to Avoid Rejection",
+      excerpt: "The F-1 visa interview is 5 minutes that can make or break your US study plan. Here are the actual questions asked, the documents to carry, and the answers that satisfy consular officers.",
+      kw: "us f1 visa interview tips 2026, f1 visa interview questions, f1 visa rejection reasons, us student visa interview india, f1 visa documents checklist",
+      sections: [
+        { h: "What the officer is actually checking", body: "The F-1 consular officer is deciding: (1) Is this person a genuine student? (2) Do they have real financial backing? (3) Will they return to India after study? The entire interview is about satisfying these three tests — not your grades or your field of study. Most rejections are 214(b) refusals — 'immigrant intent not overcome' — meaning the officer wasn't convinced you plan to return." },
+        { h: "Documents to carry (physical copies)", body: "I-20 from the university (original). DS-160 confirmation. SEVIS fee receipt (I-901). Visa appointment confirmation. Passport (current + any old ones). University offer letter. Financial evidence: bank statements (6 months), loan sanction letter, affidavit of support, ITR/Form 16 of sponsor. Academic documents: 10th, 12th, degree certificates, transcripts. GRE/TOEFL score reports." },
+        { h: "Questions most asked and how to answer them", body: "'Why this university?' → Name a specific professor, programme feature, or ranking reason. 'Who is funding your studies?' → Clear answer: loan + parents, or scholarship, with the exact amount. 'What will you do after graduation?' → Name a specific career plan in India or your home country. 'Why did you choose the US over India?' → Research opportunities, specific lab, global exposure — keep it academic. 'Do you have relatives in the US?' → Be honest; having relatives is not a problem if you clearly state intent to return." },
+        { h: "What causes 214(b) rejections", body: "Vague answers ('good university', 'better opportunities'), inability to explain the programme or why that specific school, weak financial evidence (unclear who is paying and how), no ties to India (no job offer, no family business, no property), and contradictions between your DS-160 and your answers. Prepare for each question until the answer comes out naturally and briefly." },
+        { h: "At the interview window", body: "Arrive 15 minutes early. Answer in 2–3 sentences maximum — the officer has 5 minutes total. Do not volunteer information not asked. Speak confidently in English (no Hindi unless the officer switches). Carry documents in a clear folder in the order they are likely to be asked for, but let the officer ask before handing anything over." },
+        { h: "Prepare your English + your score", body: "A strong TOEFL or GRE score on your transcript reassures the officer that you are academically genuine. Take a free TOEFL or GRE mock on LandingPrep before your interview date so you can speak confidently about your scores." }
+      ]
+    },
+    {
+      id: "ielts-to-toefl-score-conversion-2026",
+      tag: "Comparison",
+      date: "2026",
+      title: "IELTS to TOEFL Score Conversion 2026: Official Comparison Chart",
+      excerpt: "The official IELTS to TOEFL iBT score equivalence table — convert your band to a TOEFL score, understand which test is accepted where, and decide which to take.",
+      kw: "ielts to toefl score conversion, ielts toefl equivalence, convert ielts to toefl, ielts 6.5 toefl equivalent, ielts band to toefl score chart",
+      sections: [
+        { h: "Official conversion chart", body: "ETS and British Council publish approximate equivalences. Key conversions (overall/total): IELTS 9.0 ≈ TOEFL 120. IELTS 8.5 ≈ TOEFL 115–119. IELTS 8.0 ≈ TOEFL 110–114. IELTS 7.5 ≈ TOEFL 102–109. IELTS 7.0 ≈ TOEFL 94–101. IELTS 6.5 ≈ TOEFL 79–93. IELTS 6.0 ≈ TOEFL 60–78. IELTS 5.5 ≈ TOEFL 46–59. These are approximations — neither ETS nor British Council endorses using one score to substitute for the other at universities that specify only one test." },
+        { h: "Why exact conversion is impossible", body: "IELTS (0–9 band) and TOEFL (0–120) measure slightly different things with different task types. A band 7.0 IELTS candidate may score 90 or 105 on TOEFL depending on reading/listening speed, integrated writing ability, and microphone comfort. The ranges above reflect where the populations overlap — not a fixed formula." },
+        { h: "When conversion is useful", body: "You already have one score and want to know if you meet another test's threshold at a university. You are deciding which test to take and want to understand the comparative difficulty of a target score. You are applying to a university that specifies TOEFL but you have IELTS (check if they accept both — most do)." },
+        { h: "Accepting both: the trend", body: "Almost all US, UK, Canadian and Australian universities now accept both IELTS Academic and TOEFL iBT. A handful of UK universities specify IELTS UKVI for visa purposes. Most US programmes are agnostic — check your programme page. If you have a good IELTS score and your target school lists TOEFL, email the admissions office — they nearly always accept IELTS equivalents." },
+        { h: "PTE and Duolingo equivalences", body: "PTE 58 ≈ IELTS 6.5 ≈ TOEFL 79. PTE 65 ≈ IELTS 7.0 ≈ TOEFL 94. PTE 79 ≈ IELTS 8.0 ≈ TOEFL 110. Duolingo 105 ≈ IELTS 6.5 (approx). Duolingo 120 ≈ IELTS 7.0 (approx). These are guidance ranges used in admissions; always verify the specific programme requirement." },
+        { h: "Practise both free and decide", body: "Take a free full-length IELTS mock and a TOEFL mock on LandingPrep — compare which practice score is closer to your target threshold, and then invest your study time in that test only." }
+      ]
+    },
+    {
+      id: "toefl-writing-integrated-task-template",
+      tag: "TOEFL",
+      date: "2026",
+      title: "TOEFL Writing Integrated Task 2026: Template, Structure & Band 24+ Tips",
+      excerpt: "A copy-ready TOEFL Integrated Writing template that works for any passage-lecture pair — plus the exact structure, key phrases, and the most common mistakes that drop your score below 20.",
+      kw: "toefl writing integrated task, toefl integrated writing template, toefl integrated task tips, toefl writing task 1 structure, toefl integrated writing score 24",
+      sections: [
+        { h: "What the Integrated Task tests", body: "You read a passage (3 minutes, stays visible), then listen to a lecture that challenges or qualifies the passage's claims. You write a 150–225 word response summarising how the lecture relates to the reading. You are NOT being asked your opinion — only to accurately describe the lecture's points and how they respond to the reading. Scored 0–5 (reported as 0–30 scale). You have 20 minutes." },
+        { h: "The template that works", body: "Para 1 (Introduction, 2 sentences): 'The reading argues that [main claim of passage]. However, the lecturer challenges/qualifies/casts doubt on this by arguing that [overall lecture position].' Para 2 (Point 1, 3–4 sentences): 'First, the reading claims [point 1]. The lecturer counters this by stating [lecture response 1], explaining that [specific detail from lecture].' Para 3 (Point 2): Same structure. Para 4 (Point 3): Same structure. No conclusion paragraph needed — the task does not require one." },
+        { h: "Key phrases for linking", body: "Reading → lecture contrast: 'While the passage contends...the professor argues...', 'The lecturer challenges the reading's claim that...', 'In contrast to the reading, the professor states...'. Adding lecture detail: 'Specifically, the lecturer points out that...', 'According to the professor,...', 'The lecture illustrates this by noting that...'. Never say 'In my opinion' or 'I believe' — this is not a discursive essay." },
+        { h: "What kills your score below 20", body: "Copying sentences from the reading verbatim (paraphrase all reading content). Summarising the reading instead of showing how the lecture responds to it. Missing one of the three lecture points entirely. Writing fewer than 150 words. Mixing up which side said what (keep reading vs lecture clearly separated)." },
+        { h: "Note-taking strategy during the lecture", body: "The lecture audio plays once — you cannot replay it. Take linear notes organised by lecture point number (1, 2, 3). Write the key noun/verb of each claim, not complete sentences. The reading remains on screen so you do not need to note it — focus 100% of your note energy on the lecture." },
+        { h: "Practise the full task free", body: "The integrated task is the most teachable part of TOEFL Writing — with the right template, most candidates add 4–6 score points in 2 weeks of targeted practice. Take free TOEFL Writing mocks on LandingPrep, use this template, and compare your response to the model answer after each attempt." }
+      ]
     }
   ];
 
