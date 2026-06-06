@@ -33,6 +33,7 @@ const HUB_LINKS = [
   { label: "English test comparisons", href: "/english-test-comparisons/" },
   { label: "Test requirements by country", href: "/exam-requirements-by-country/" },
   { label: "How LandingPrep works", href: "/how-it-works/" },
+  { label: "Free alternatives", href: "/free-alternatives/" },
   { label: "Blog", href: "/blog/" },
   { label: "Explore all pages", href: "/explore/" },
 ];
@@ -1826,6 +1827,122 @@ cityGuidePages();
 BANDS.filter((b) => SEC_RAW[b.b]).forEach((b) => SECTIONS.forEach((sec) => bandSectionPage(b, sec)));
 EXAM_COUNTRY.forEach(examForCountryPage);
 EXAM_VS.forEach(examVsExamPage);
+
+// ── "Free alternative to [competitor]" comparison pages ──────────────────────
+// Honest, fair comparisons targeting high-intent "[brand] alternative" / "free
+// [brand]" searches. Competitor facts are kept neutral and accurate (no false
+// claims); our only angle is that LandingPrep is 100% free. These are standalone
+// prerendered SEO pages — they never touch the React app UI, so the product
+// stays clean. All are linked from the footer hub (no crawl-orphans).
+const LP_CMP = {
+  price: "100% free, forever — no paywall, no card",
+  mocks: "Unlimited free full-length mock tests",
+  ai: "Free AI speaking partner + essay feedback",
+  signup: "None — start instantly",
+  predictor: "Free — 99 universities, by your profile",
+  sop: "Free SOP builder + sample library",
+};
+const lpPitch = (kind) => kind === "exam"
+  ? `${BRAND} gives you unlimited full-length mock tests with real exam timing, instant scoring and an AI speaking partner that talks back — across IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT. There is no paywall and no signup, so you can start practising in seconds.`
+  : `${BRAND} gives you a free college predictor across 99 universities, an SOP builder with samples, a scholarship finder and free exam mock tests — everything to go from shortlisting to admission without paying for counselling, and with no signup.`;
+const COMPETITORS = [
+  { slug: "magoosh", name: "Magoosh", what: "GRE, GMAT, IELTS & TOEFL prep", kind: "exam", exams: ["gre", "gmat", "ielts", "toefl"], coverShort: "GRE, GMAT, IELTS, TOEFL",
+    their: { price: "Paid subscription (time-limited plans)", mocks: "Included in paid plan", ai: "Practice + scores; no live speaking partner", signup: "Account + payment", coverage: "GRE, GMAT, IELTS, TOEFL, SAT/ACT" },
+    intro: "Magoosh is a well-known online test-prep company offering video lessons, practice questions and mock tests for the GRE, GMAT, IELTS and TOEFL, sold as time-limited paid subscriptions.",
+    freeAnswer: "Magoosh offers a few free sample lessons and questions, but full access (lessons, practice sets and mock tests) requires a paid subscription.", paidPerk: "structured video courses and score guarantees" },
+  { slug: "e2-test-prep", name: "E2 Test Prep", what: "IELTS, PTE & TOEFL prep", kind: "exam", exams: ["ielts", "pte", "toefl"], coverShort: "IELTS, PTE, TOEFL",
+    their: { price: "Freemium (free videos + paid plans/classes)", mocks: "Some free; full mocks paid", ai: "Yes, in paid tiers", signup: "Account required", coverage: "IELTS, PTE, TOEFL, OET" },
+    intro: "E2 (E2 Test Prep / E2 Language) offers YouTube lessons, live classes and practice for IELTS, PTE, TOEFL and OET, with free content plus paid subscriptions and live tutoring.",
+    freeAnswer: "E2 has plenty of free YouTube lessons, but full mock tests, scored practice and live classes are part of its paid plans.", paidPerk: "live classes with teachers" },
+  { slug: "apeuni", name: "APEUni", what: "PTE practice", kind: "exam", exams: ["pte"], coverShort: "PTE",
+    their: { price: "Freemium (free practice + paid VIP)", mocks: "Practice free; scored mocks paid (VIP)", ai: "AI scoring in VIP", signup: "Account required", coverage: "PTE (some IELTS)" },
+    intro: "APEUni is a widely-used PTE practice app with a large free question bank and a paid VIP tier for AI scoring and full mock tests.",
+    freeAnswer: "APEUni's question bank is free to practise, but AI scoring and full scored mock tests require its paid VIP plan.", paidPerk: "detailed AI scoring on every task" },
+  { slug: "kaplan", name: "Kaplan", what: "GRE, GMAT & TOEFL courses", kind: "exam", exams: ["gre", "gmat", "toefl"], coverShort: "GRE, GMAT, TOEFL",
+    their: { price: "Paid courses (self-paced & live)", mocks: "Included in paid course", ai: "Limited", signup: "Account + payment", coverage: "GRE, GMAT, GMAT Focus, TOEFL, SAT/ACT/MCAT +" },
+    intro: "Kaplan is a long-established test-prep company offering self-paced and live online courses, books and practice tests for the GRE, GMAT, TOEFL and many other exams, sold as paid packages.",
+    freeAnswer: "Kaplan runs free practice events and sample tests occasionally, but its courses and full question banks are paid.", paidPerk: "live online classes and prep books" },
+  { slug: "prepscholar", name: "PrepScholar", what: "GRE online prep", kind: "exam", exams: ["gre"], coverShort: "GRE",
+    their: { price: "Paid subscription", mocks: "Included in paid plan", ai: "Adaptive lessons (paid)", signup: "Account + payment", coverage: "GRE, SAT, ACT" },
+    intro: "PrepScholar offers an adaptive online GRE program with lessons and practice, sold as a paid subscription.",
+    freeAnswer: "PrepScholar has free blog guides, but its adaptive GRE program and practice sets are paid.", paidPerk: "adaptive lesson sequencing" },
+  { slug: "jamboree", name: "Jamboree Education", what: "GRE, GMAT & IELTS coaching", kind: "exam", exams: ["gre", "gmat", "ielts"], coverShort: "GRE, GMAT, IELTS",
+    their: { price: "Paid classroom & online coaching", mocks: "Included with coaching", ai: "No", signup: "Enrolment / payment", coverage: "GRE, GMAT, IELTS, TOEFL, SAT + counselling" },
+    intro: "Jamboree is a well-known Indian coaching institute offering classroom and online courses for the GRE, GMAT, IELTS, TOEFL and SAT, plus admissions counselling, as paid programs.",
+    freeAnswer: "Jamboree offers free sample tests and webinars, but its coaching courses are paid.", paidPerk: "classroom coaching and admissions counselling" },
+  { slug: "greedge", name: "GREedge", what: "personalised GRE prep", kind: "exam", exams: ["gre"], coverShort: "GRE",
+    their: { price: "Paid personalised plans", mocks: "Included", ai: "Mentor-led", signup: "Enrolment / payment", coverage: "GRE + admissions support" },
+    intro: "GREedge offers personalised, mentor-led online GRE preparation for Indian students as paid plans.",
+    freeAnswer: "GREedge provides free diagnostic sessions, but its personalised GRE program is paid.", paidPerk: "a dedicated mentor and study plan" },
+  { slug: "ielts-liz", name: "IELTS Liz", what: "free IELTS tips & lessons", kind: "exam", exams: ["ielts"], coverShort: "IELTS",
+    their: { price: "Free tips/blog + some paid lessons", mocks: "No full timed mock platform", ai: "No", signup: "No (free content)", coverage: "IELTS only" },
+    intro: "IELTS Liz is a popular free website with excellent IELTS tips, model answers and lessons from an experienced teacher (plus some paid advanced lessons). It is a learning resource rather than a full timed mock-test platform.",
+    freeAnswer: "Yes — IELTS Liz's tips and lessons are largely free; a few advanced lessons are paid. It is great for learning, but it is not a timed mock-test platform.", paidPerk: "in-depth model-answer lessons" },
+  { slug: "yocket", name: "Yocket", what: "study-abroad community & counselling", kind: "abroad",
+    their: { price: "Free community + paid premium services", predictor: "Shortlisting (free) + paid counselling", sop: "Paid / counsellor-led", mocks: "Not a test-prep tool", signup: "Account required" },
+    intro: "Yocket is a popular Indian study-abroad platform with a student community, university shortlisting, admits data and paid premium counselling and services.",
+    freeAnswer: "Yocket's community and basic shortlisting are free, but premium counselling, applications and add-on services are paid.", paidPerk: "1-on-1 counselling and admits data" },
+  { slug: "leverage-edu", name: "Leverage Edu", what: "study-abroad consultancy", kind: "abroad",
+    their: { price: "Free content + paid counselling packages", predictor: "Counsellor-led (paid)", sop: "Paid / counsellor-led", mocks: "Paid test prep", signup: "Account required" },
+    intro: "Leverage Edu is an Indian study-abroad consultancy offering university selection, application support, loans and test prep through free content and paid counselling packages.",
+    freeAnswer: "Leverage Edu publishes lots of free content, but its core application support and counselling are paid packages.", paidPerk: "end-to-end counselling and application handling" },
+  { slug: "collegedunia", name: "Collegedunia", what: "college & exam info portal", kind: "abroad",
+    their: { price: "Free (ad / lead-supported)", predictor: "College finder (lead forms)", sop: "Not offered", mocks: "Not offered", signup: "Optional" },
+    intro: "Collegedunia is a large Indian education portal with college listings, reviews, fees and exam information, supported by advertising and lead generation.",
+    freeAnswer: "Collegedunia is free to browse; it makes money from ads and by passing your details to colleges and consultants as leads.", paidPerk: "a huge directory of college listings and reviews" },
+  { slug: "shiksha-study-abroad", name: "Shiksha Study Abroad", what: "study-abroad info portal", kind: "abroad",
+    their: { price: "Free (lead generation)", predictor: "Listings + counselling leads", sop: "Not offered", mocks: "Not offered", signup: "Optional" },
+    intro: "Shiksha Study Abroad is an Indian portal with university and course information, rankings and counselling, monetised through lead generation.",
+    freeAnswer: "Shiksha is free to use; like most portals it monetises by sharing your enquiry with universities and counsellors.", paidPerk: "broad university and course information" },
+  { slug: "admitkard", name: "AdmitKard", what: "study-abroad guidance", kind: "abroad",
+    their: { price: "Free content + paid services", predictor: "Shortlisting + counsellor (paid)", sop: "Paid / counsellor-led", mocks: "Paid test prep", signup: "Account required" },
+    intro: "AdmitKard is an Indian study-abroad platform offering university shortlisting, application help, loans and counselling through free tools and paid services.",
+    freeAnswer: "AdmitKard has free tools and content, but mentor guidance, applications and add-on services are paid.", paidPerk: "mentor matching and application support" },
+];
+function alternativePage(c) {
+  const path = `/${c.slug}-alternative/`;
+  const name = c.name;
+  const title = `Free ${name} Alternative (2026) — ${c.what} | ${BRAND}`;
+  const desc = `Looking for a free ${name} alternative? ${BRAND} is 100% free — ${c.kind === "exam" ? "unlimited mock tests, instant scoring and AI feedback" : "a free college predictor, SOP builder and scholarship finder"}, no signup. See the side-by-side comparison.`;
+  const rows = c.kind === "exam"
+    ? [["Price", LP_CMP.price, c.their.price], ["Full-length mock tests", LP_CMP.mocks, c.their.mocks], ["AI feedback", LP_CMP.ai, c.their.ai], ["Sign-up needed", LP_CMP.signup, c.their.signup], ["Covers", c.coverShort + " + more", c.their.coverage]]
+    : [["Price", LP_CMP.price, c.their.price], ["Free college predictor", LP_CMP.predictor, c.their.predictor], ["Free SOP builder", LP_CMP.sop, c.their.sop], ["Free exam mock tests", LP_CMP.mocks, c.their.mocks], ["Sign-up needed", LP_CMP.signup, c.their.signup]];
+  const table = `<div class="card"><h2>${esc(name)} vs ${BRAND} at a glance</h2><table class="cmp-table"><thead><tr><th></th><th>${BRAND}</th><th>${esc(name)}</th></tr></thead><tbody>${rows.map((r) => `<tr><td><strong>${esc(r[0])}</strong></td><td>${esc(r[1])}</td><td>${esc(r[2])}</td></tr>`).join("")}</tbody></table></div>`;
+  const faqs = [
+    { q: `Is there a free alternative to ${name}?`, a: `Yes — ${BRAND} (landingprep.com) is 100% free. ${c.kind === "exam" ? `You get unlimited full-length mock tests, instant scoring and an AI speaking partner for ${c.coverShort}, with no signup.` : `You get a free college predictor, SOP builder, scholarship finder and exam mock tests, with no signup.`}` },
+    { q: `Is ${name} free?`, a: c.freeAnswer },
+    { q: `Why choose ${BRAND} over ${name}?`, a: `If cost is your priority, ${BRAND} gives you ${c.kind === "exam" ? "the core practice you need — real-timing mock tests and AI feedback" : "the core tools you need — a predictor, SOP builder and scholarships"} entirely free. ${name} is a strong option too; the right pick depends on whether you want paid extras like ${c.paidPerk}.` },
+  ];
+  const related = c.kind === "exam"
+    ? [...(c.exams || []).slice(0, 2).map((e) => ({ label: `Free ${e.toUpperCase()} mock test`, href: `/mock-test/${e}/` })), { label: "Score converter", href: "/tools/english-test-score-converter/" }, { label: "Study & exam blog", href: "/blog/" }]
+    : [{ label: "Free college predictor", href: "/#/colleges" }, { label: "Free scholarship finder", href: "/#/colleges" }, { label: "Free IELTS mock test", href: "/mock-test/ielts/" }, { label: "Study-abroad blog", href: "/blog/" }];
+  const ctaHref = c.kind === "exam" ? `/mock-test/${(c.exams && c.exams[0]) || "ielts"}/` : "/#/colleges";
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/free-alternatives/">Free alternatives</a> › ${esc(name)}</p>
+<section class="hero"><div class="badges"><span class="badge">Free alternative</span><span class="badge">${esc(name)}</span><span class="badge">2026</span></div>
+<h1>Free ${esc(name)} Alternative: ${BRAND}</h1>
+<p class="lead">${esc(c.intro)} If you want a 100% free option, here is how ${BRAND} compares.</p>
+<a class="cta" href="${ctaHref}">▶ ${c.kind === "exam" ? "Try a free mock test" : "Open the free college predictor"}</a></section>
+${table}
+<div class="card"><h2>What you get free on ${BRAND}</h2><p>${esc(lpPitch(c.kind))}</p></div>
+${faqBlock(faqs)}
+${relatedGrid(related)}`;
+  const lc = name.toLowerCase();
+  const kw = `${c.slug} alternative, free ${c.slug} alternative, ${lc} alternative, ${lc} free alternative, is ${lc} free, ${lc} vs landingprep, free alternative to ${lc}`;
+  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Free alternatives", path: "/free-alternatives/" }, { name: name, path }])] }) + shell(inner));
+}
+function altIndexPage() {
+  const tiles = COMPETITORS.map((c) => `<a class="tile" href="/${c.slug}-alternative/">Free ${esc(c.name)} alternative</a>`).join("");
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › Free alternatives</p>
+<section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">No signup</span></div>
+<h1>Free Alternatives to Popular Exam-Prep &amp; Study-Abroad Tools</h1>
+<p class="lead">${BRAND} is a 100% free alternative to paid test-prep and study-abroad platforms — unlimited mock tests, AI feedback, a college predictor, SOP builder and scholarship finder, all with no signup. Compare us with the tools you already know.</p></section>
+<div class="card"><h2>Compare ${BRAND} with…</h2><div class="grid">${tiles}</div></div>`;
+  emit("/free-alternatives/", head({ title: `Free Alternatives to Magoosh, Yocket, Leverage Edu &amp; More (2026) | ${BRAND}`, desc: `${BRAND} is a free alternative to paid exam-prep and study-abroad platforms — free mock tests, AI feedback, college predictor and SOP tools, no signup.`, path: "/free-alternatives/", kw: "free exam prep alternative, free study abroad tool, magoosh alternative free, yocket alternative, leverage edu alternative, free ielts practice alternative", jsonLdBlocks: [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Free alternatives", path: "/free-alternatives/" }])] }) + shell(inner));
+}
+COMPETITORS.forEach(alternativePage);
+altIndexPage();
 COLLEGES.forEach(examForUniPage);
 COLLEGES.forEach((c) => ALT_EXAMS.forEach((ex) => altExamForUniPage(c, ex)));
 scholarshipCountryPages();
