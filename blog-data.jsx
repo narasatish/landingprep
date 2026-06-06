@@ -1032,6 +1032,102 @@
         { h: "Letters of recommendation", body: "Three LORs from people who can speak to your research ability or professional impact — not just 'he is a good student.' A faculty member who supervised your thesis, a manager who can describe a specific project outcome, and a second faculty member is the ideal combination. Generic praise letters are filtered out." },
         { h: "The SOP — your controllable variable", body: "Every other signal (GPA, GRE) is now fixed. The SOP is the one component you can still substantially improve. Be specific: name the professors you want to work with, cite their papers, explain the exact research question you want to pursue. Use LandingPrep's free SOP builder and sample library to draft and improve yours." }
       ]
+    },
+    {
+      id: "pte-academic-practice-test-free-2026",
+      tag: "PTE",
+      date: "2026",
+      title: "Free PTE Academic Practice Test 2026: Full Mock with Real Exam Pattern",
+      excerpt: "Take a full-length free PTE Academic practice test online — all 4 skills (Speaking, Writing, Reading, Listening) with real exam timing and an instant score estimate.",
+      kw: "pte academic practice test free, free pte mock test 2026, pte academic test online free, pte practice test with score, pearson pte practice test",
+      sections: [
+        { h: "What a full PTE Academic mock covers", body: "PTE Academic is about 2 hours with 3 main parts. Part 1 — Speaking & Writing (77–93 min): Read Aloud, Repeat Sentence, Describe Image, Re-tell Lecture, Answer Short Question, Summarise Written Text, Write Essay. Part 2 — Reading (32–41 min): Fill in the Blanks, MCQ, Re-order Paragraphs, Reading & Writing Fill in the Blanks. Part 3 — Listening (45–57 min): Summarise Spoken Text, MCQ, Fill in the Blanks, Highlight Correct Summary, Select Missing Word, Highlight Incorrect Words, Write from Dictation. Timing is variable per section — the clock counts down per task." },
+        { h: "How PTE is scored", body: "PTE uses AI scoring. Each response earns points for enabling skills (Fluency, Pronunciation, Grammar, Vocabulary, Oral Fluency, Written Discourse, Spelling) that feed into 4 communicative skill scores: Speaking, Writing, Reading, Listening — each on a 10–90 scale. The Overall score is the average. Most universities want 58–65+; Australia PR needs 65+ each." },
+        { h: "The most important tasks to practise first", body: "Read Aloud: affects both Speaking and Reading scores simultaneously — worth the most marks. Write from Dictation: affects both Listening and Writing — second highest impact. Describe Image: hardest for most candidates but high weight. Master these 3 first before spending time on lower-weight tasks." },
+        { h: "AI scoring — what it actually checks", body: "PTE AI does not care about your accent — it checks consistency, clarity, and completeness. Pronunciation is scored on whether each phoneme is recognisable, not whether it sounds British or American. Fluency is penalised by hesitation sounds ('um', 'ah') and unnatural pauses mid-sentence. A steady, slightly slow clear delivery often outscores a fast but choppy native-sounding one." },
+        { h: "How to use a practice test effectively", body: "Do the full mock in one sitting under exam conditions — no pause, phone away. Immediately after, review every wrong answer by task type. Spend your next 3 study days drilling only the 2 task types where you lost the most marks. Then take another full mock. The gap between mock scores narrows fastest with this targeted loop rather than random daily practice." },
+        { h: "Take a free PTE mock now", body: "LandingPrep gives you unlimited free PTE Academic practice tests — all 20 task types, real timing, and an instant score estimate. No signup, no fees. Start your first free PTE mock and see where you stand today." }
+      ]
+    },
+    {
+      id: "gmat-focus-edition-mock-test-free-2026",
+      tag: "GMAT",
+      date: "2026",
+      title: "Free GMAT Focus Edition Mock Test 2026: Full Practice with Instant Score",
+      excerpt: "Take a full-length free GMAT Focus Edition practice test — Quantitative, Verbal and Data Insights — with real timing and an instant score estimate on the 205–805 scale.",
+      kw: "gmat focus edition mock test, free gmat focus practice test 2026, gmat focus edition practice, gmat focus score, gmat focus edition test format",
+      sections: [
+        { h: "GMAT Focus Edition — what changed from the old GMAT", body: "The GMAT Focus Edition (launched late 2023, the only version now available) is significantly shorter and different from the old GMAT. It has 3 sections: Quantitative Reasoning (21 questions, 45 min), Verbal Reasoning (23 questions, 45 min), Data Insights (20 questions, 45 min). Total time: 2 hours 15 minutes plus breaks. The old GMAT Integrated Reasoning and Analytical Writing Assessment sections are gone. Sentence Correction questions are gone from Verbal." },
+        { h: "The new Data Insights section", body: "Data Insights is unique to GMAT Focus and replaces Integrated Reasoning. It tests multi-source reasoning, table analysis, graphics interpretation, two-part analysis, and data sufficiency — all in one section. It rewards data literacy and the ability to synthesise information from multiple sources, which is exactly what business school (and consulting/finance careers) demand. Many candidates find this section the most differentiating." },
+        { h: "Scoring on the 205–805 scale", body: "Each of the 3 sections is scored 60–90. The total score (205–805) is a composite of all 3 in roughly equal weight. There is no separate sub-score for wrong answers — each section score is based on difficulty-adjusted correct answers. A score of 645+ is roughly the 80th percentile; 705+ is around the 90th. Top MBA programmes (Wharton, Booth, Kellogg) have median scores around 730–740." },
+        { h: "Section-by-section tips", body: "Quant: Focus on Problem Solving only (no Data Sufficiency in Quant now — it moved to Data Insights). Brush up arithmetic, algebra, and word problems. Verbal: Critical Reasoning and Reading Comprehension only — no Sentence Correction. Data Insights: Practise reading complex tables and graphs quickly; time management is critical here. You can bookmark and review within a section, unlike the old GMAT." },
+        { h: "How to prepare in 8 weeks", body: "Week 1–2: Full diagnostic mock + identify weak sections. Week 3–5: Drill weak section question types daily. Week 6–7: Timed section practice, then full mocks every 3 days. Week 8: Review only, 1 final mock 3 days before the exam. Never cram the day before." },
+        { h: "Take a free GMAT Focus mock now", body: "LandingPrep gives you a full free GMAT Focus Edition practice test — all 3 sections with official-style questions, real timing, and an instant composite score estimate. No signup. Start your free GMAT Focus mock today." }
+      ]
+    },
+    {
+      id: "gre-format-2026-complete-guide",
+      tag: "GRE",
+      date: "2026",
+      title: "GRE Format 2026: Sections, Timing, Score Scale & What's New",
+      excerpt: "The complete, updated GRE format guide for 2026 — section order, number of questions, timing, score scale, what the Shorter GRE looks like, and exactly what each section tests.",
+      kw: "gre format 2026, gre test format, gre sections timing, gre shorter format, gre general test format, how many questions in gre",
+      sections: [
+        { h: "GRE General Test 2026 — the current format", body: "ETS introduced the Shorter GRE in September 2023. The current GRE has: Analytical Writing (1 task, 30 min) → Verbal Reasoning (2 sections × 12 questions, 18 min each) → Quantitative Reasoning (2 sections × 15 questions, 21 min each). Total: about 1 hour 58 minutes. There is no longer an unscored research section or a third Verbal/Quant section. The test is computer-adaptive at the section level (not question level for most test-takers)." },
+        { h: "Analytical Writing", body: "One task: Analyze an Argument (30 minutes). You critique the logical flaws in a given argument — you are not sharing your opinion. Scored 0–6 in 0.5 increments by human raters and e-rater software. This section appears first. Most STEM programmes care less about AW (a 3.5–4.0 is fine); humanities/social science PhDs want 4.5+." },
+        { h: "Verbal Reasoning", body: "2 sections of 12 questions each, 18 minutes per section. Question types: Text Completion (fill in 1–3 blanks), Sentence Equivalence (find 2 words that complete a sentence equivalently), Reading Comprehension (passages + questions). Scored 130–170 in 1-point increments. Tests sophisticated vocabulary in context and complex reading." },
+        { h: "Quantitative Reasoning", body: "2 sections of 15 questions each, 21 minutes per section. Question types: Quantitative Comparison, Problem Solving, Data Interpretation. Tests arithmetic, algebra, geometry, and data analysis up to secondary school level — not calculus or higher. Scored 130–170 in 1-point increments. The maths is not advanced but the time pressure and problem-solving clarity required is high." },
+        { h: "Total score and percentiles", body: "Scores: Verbal 130–170, Quant 130–170, AW 0–6. Most universities look at a combined V+Q total (260–340). GRE 320+ (V155+Q165 roughly) opens most top-50 US STEM programmes. 325+ is competitive for top-10. Percentile tables change yearly — always check the official ETS percentile rankings before applying." },
+        { h: "Practise free with real timing", body: "The biggest GRE mistake is running out of time — the Shorter GRE is faster-paced than it looks. Take a free full-length GRE mock on LandingPrep with real section timing to benchmark your V and Q scores and find your weak question types before test day." }
+      ]
+    },
+    {
+      id: "pte-read-aloud-tips-band-79-2026",
+      tag: "PTE",
+      date: "2026",
+      title: "PTE Read Aloud Tips 2026: How to Score 79+ on the Highest-Weight Task",
+      excerpt: "Read Aloud is the single most valuable task in PTE — it scores both Speaking and Reading. Here are the exact techniques for fluency, pronunciation and pacing that push scores to 79+.",
+      kw: "pte read aloud tips, pte read aloud score, how to do read aloud in pte, pte speaking read aloud strategy, pte read aloud pronunciation tips",
+      sections: [
+        { h: "Why Read Aloud is the most important PTE task", body: "Read Aloud (RA) contributes to both your Speaking score and your Reading score — the only task that double-dips across two communicative skills. You get 30–40 seconds to read a passage of 60–75 words aloud. Because of the dual-skill contribution, improving your RA score is the fastest way to lift your Overall PTE score." },
+        { h: "The 35-second preparation rule", body: "You have 30–35 seconds to read the text silently before recording starts. Use every second: scan for unusual words or names, mark natural stress points, note where to pause at commas and full stops. The recording timer starts automatically — there is no manual start. If you are not ready when it begins, you lose marks immediately." },
+        { h: "Fluency: what the AI checks", body: "The AI checks speech rate consistency, absence of hesitation sounds ('um', 'uh', 'er'), and whether your reading sounds natural rather than word-by-word. Do NOT read word by word — group words into natural phrases. A steady 120–140 words per minute (slightly slower than natural speech) is ideal. Stopping to correct yourself mid-sentence costs fluency marks; just continue." },
+        { h: "Pronunciation: phoneme recognition, not accent", body: "The PTE AI is trained on multiple English accents. It does not penalise an Indian, Australian, or British accent. It checks whether each word's phoneme sequence is close enough to the dictionary pronunciation to be recognised. Common problem words for Indian candidates: 'specific', 'particularly', 'development', 'government', 'regularly'. Practise these out loud before your test." },
+        { h: "Pacing and pausing", body: "Pause at every comma, pause longer at every full stop. Do not rush through a sentence just to finish. The AI rewards natural breath groups — 3–5 words at a consistent pace, a micro-pause, then the next group. If a word is genuinely unfamiliar, pronounce it phonetically and keep moving rather than stopping." },
+        { h: "Daily RA routine that works", body: "Read 5 news paragraphs aloud every morning, recording yourself on your phone. Listen back and count hesitation sounds. Aim for zero 'um/uh' in 2 weeks. Then practise specifically with the LandingPrep free PTE mock — timed RA tasks with the same word lengths as the real test, so you are drilling the exact format you will face." }
+      ]
+    },
+    {
+      id: "duolingo-english-test-accepted-universities-2026",
+      tag: "Duolingo",
+      date: "2026",
+      title: "Duolingo English Test Accepted Universities 2026: USA, UK, Canada & Australia",
+      excerpt: "Which universities accept the Duolingo English Test in 2026? A country-by-country breakdown including top US, UK, Canadian and Australian universities plus the minimum scores required.",
+      kw: "duolingo english test accepted universities, universities that accept duolingo 2026, det accepted universities usa uk canada, duolingo test score requirements, is duolingo accepted for masters",
+      sections: [
+        { h: "How many universities accept DET", body: "As of 2026, over 5,000 universities and programmes worldwide accept the Duolingo English Test (DET). Acceptance has grown sharply since 2020 when the pandemic forced test centres to close. Most major US, UK, Canadian and Australian universities now list DET alongside IELTS and TOEFL — but acceptance is institution-specific, not guaranteed for every programme within a university." },
+        { h: "Top US universities that accept DET", body: "Among the universities that accept DET for graduate admissions: MIT, Stanford (many departments), Carnegie Mellon, NYU, Boston University, Northeastern, University of Illinois, Purdue, University of Michigan, Penn State, and many others. Scores typically required: 115–125 for competitive master's programmes. Always confirm at the specific programme level — some departments within a university may still require TOEFL or IELTS." },
+        { h: "UK universities that accept DET", body: "Many UK universities including UCL, University of Edinburgh, King's College London, University of Manchester, and Sheffield accept DET for postgraduate programmes. UK minimum: typically 120–125. Note: UK Student Visa (UKVI) requires a Secure English Language Test (SELT) — IELTS UKVI or Trinity — DET does not satisfy UK visa requirements. DET can satisfy the university offer, but you may still need IELTS for the visa itself." },
+        { h: "Canadian universities that accept DET", body: "University of Toronto, UBC, McGill, University of Waterloo, University of Alberta, and many others accept DET. Canadian minimum scores: 115–125. Same caveat as UK: Canadian study-permit applications to Immigration IRCC accept IELTS, TOEFL, CELPIP — DET is not currently on the IRCC approved list for the visa itself." },
+        { h: "Australian universities that accept DET", body: "Several Australian universities including Monash, Deakin, La Trobe, and RMIT accept DET. However, the Australian Student Visa (Subclass 500) requires IELTS, TOEFL, PTE or CAMBRIDGE — DET is not accepted by the Department of Home Affairs for the visa. You may use DET for the university offer but will need a different test for the visa." },
+        { h: "Practise DET free + verify before booking", body: "Always verify at the specific programme URL — acceptance can change term-by-term. Take a free Duolingo-style practice test on LandingPrep to benchmark your score, then check whether your target programmes accept DET before you book and pay." }
+      ]
+    },
+    {
+      id: "ielts-band-score-chart-universities-2026",
+      tag: "IELTS",
+      date: "2026",
+      title: "IELTS Band Score Requirements for Universities 2026: USA, UK, Canada, Australia",
+      excerpt: "The actual IELTS scores top universities require in 2026 — by country and programme type — plus what to do if you are 0.5 bands short and whether conditional offers are possible.",
+      kw: "ielts band score requirements universities, ielts score for uk universities, ielts score for canada universities, ielts score for usa, ielts requirement for masters",
+      sections: [
+        { h: "UK universities", body: "Most UK universities require IELTS Academic 6.5 overall with no band below 6.0 for undergraduate, and 6.5–7.0 overall with no band below 6.0–6.5 for master's. Competitive programmes (Law at Oxbridge, Business at LBS) want 7.0–7.5. English and Journalism programmes typically want 7.0+ in Writing and overall." },
+        { h: "US universities", body: "US universities are highly variable. Many PhD and master's programmes accept 6.5–7.0 overall; top STEM schools (MIT, Stanford, CMU) often require 7.0+ or TOEFL equivalent. English departments and humanities at top schools want 7.0–8.0. US undergraduate admission: 6.5–7.0 at most universities. Note: TOEFL is more commonly required in the US — always confirm IELTS is accepted." },
+        { h: "Canada", body: "Canadian universities typically require 6.5 overall with no band below 6.0 for undergraduate and 7.0 overall with no band below 6.5 for master's. University of Toronto, UBC and McGill use these thresholds for most programmes. Some nursing, education and social work programmes require 7.0 in each band." },
+        { h: "Australia", body: "For the student visa: IELTS 5.5 overall (lower for ELICOS, higher for some direct admission). For the university: typically 6.0–7.0 overall depending on the programme. Engineering and STEM: 6.5 overall; Medical, nursing, law and teaching: 7.0 overall with no band below 7.0 in some cases." },
+        { h: "If you are 0.5 bands short", body: "Options: (a) Retake — IELTS one-skill retake (OSR) lets you redo just one section. (b) Conditional offer — many universities issue a conditional offer on 6.0, requiring you to complete a pre-sessional English course on arrival to meet 6.5. (c) IELTS indicator — some universities accept lower scores for initial admissions. Always ask the admissions office — they often have flexibility not listed on the website." },
+        { h: "Practise to your target band, free", body: "LandingPrep's free IELTS mock tests give you a band estimate for each of the 4 sections so you know exactly which skill to drill. Check your target university's exact requirement, calculate the gap, and use targeted section practice on LandingPrep to close it efficiently." }
+      ]
     }
   ];
 
