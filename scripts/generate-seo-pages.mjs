@@ -231,6 +231,10 @@ ul{padding-left:20px}li{margin:6px 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:14px 0}
 .tile{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:600}
 .tile:hover{border-color:var(--brand);text-decoration:none}
+.related-articles{margin:28px 0 8px}.related-articles h2{font-size:20px;margin:0 0 12px}
+.rel-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:8px}
+.rel-list li{margin:0}.rel-list li a{display:block;padding:11px 15px;background:#fff;border:1px solid var(--line);border-radius:10px;font-size:14px;font-weight:600;color:var(--brand);line-height:1.4}
+.rel-list li a:hover{border-color:var(--brand);text-decoration:none}
 .faq dt{font-weight:700;margin-top:16px}.faq dd{margin:4px 0 0;color:#334155}
 footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:26px 0;color:var(--muted);font-size:14px}
 .hubnav{margin:0 0 14px;line-height:1.9;font-size:13px}.hubnav a{color:var(--brand);font-weight:600}
@@ -287,6 +291,50 @@ function faqBlock(faqs) {
 }
 function relatedGrid(links) {
   return `<h2>Keep going — free practice</h2><div class="grid">${links.map((l) => `<a class="tile" href="${l.href}">${esc(l.label)}</a>`).join("")}</div>`;
+}
+
+// Topic-cluster internal linking: the 6 most topically-related OTHER blog posts,
+// scored by shared tag + keyword + title-word overlap. Builds real topic clusters
+// (distributes link equity, deepens crawl) while staying visually clean.
+const EXAM_MOCK = { IELTS: "ielts", TOEFL: "toefl", PTE: "pte", GRE: "gre", GMAT: "gmat", CELPIP: "celpip", Duolingo: "duolingo" };
+function relatedArticles(a) {
+  const aKw = new Set(String(a.kw || "").toLowerCase().split(/,\s*/).filter(Boolean));
+  const aTitleWords = new Set(a.title.toLowerCase().split(/\W+/).filter((w) => w.length > 4));
+  const score = (p) => {
+    let s = p.tag === a.tag ? 10 : 0;
+    for (const k of String(p.kw || "").toLowerCase().split(/,\s*/)) if (k && aKw.has(k)) s += 3;
+    for (const w of p.title.toLowerCase().split(/\W+/)) if (w.length > 4 && aTitleWords.has(w)) s += 1;
+    return s;
+  };
+  const ranked = BLOG_EXTRA.filter((p) => p.id !== a.id)
+    .map((p) => ({ p, s: score(p) }))
+    .sort((x, y) => y.s - x.s)
+    .slice(0, 6)
+    .map((x) => x.p);
+  if (!ranked.length) return "";
+  return `<section class="related-articles"><h2>Related articles</h2><ul class="rel-list">${
+    ranked.map((p) => `<li><a href="/blog/${p.id}/">${esc(p.title)}</a></li>`).join("")
+  }</ul></section>`;
+}
+
+// Tag-aware "Keep going" tiles — link an exam post to THAT exam's free mock + practice
+// (was hardcoded to IELTS on every post); study-abroad posts link to the right tools.
+function blogTiles(a) {
+  const exam = EXAM_MOCK[a.tag];
+  if (exam) {
+    return [
+      { label: `Free ${a.tag} mock test`, href: `/mock-test/${exam}/` },
+      { label: `${a.tag} practice questions`, href: `/practice/${exam}/` },
+      { label: `🎓 Free college predictor`, href: `/#/colleges` },
+      { label: `All blog articles`, href: `/#/blog` },
+    ];
+  }
+  return [
+    { label: `🌍 Study-abroad destinations`, href: `/#/colleges` },
+    { label: `💸 Scholarships (free finder)`, href: `/#/colleges` },
+    { label: `Free IELTS mock test`, href: `/mock-test/ielts/` },
+    { label: `All blog articles`, href: `/#/blog` },
+  ];
 }
 
 const PAGES = []; // { path, html }
@@ -634,12 +682,8 @@ function blogPage(a) {
   <a class="cta" href="/#/colleges">▶ Free College Predictor &amp; study-abroad tools</a>
 </section>
 ${a.sections.map(s => `<div class="card"><h2>${esc(s.h)}</h2><p>${esc(s.body)}</p></div>`).join("\n")}
-${relatedGrid([
-  { label: `🌍 Study-abroad destinations`, href: `/#/colleges` },
-  { label: `💸 Scholarships`, href: `/#/colleges` },
-  { label: `Free IELTS mock test`, href: `/mock-test/ielts/` },
-  { label: `All blog articles`, href: `/#/blog` },
-])}`;
+${relatedArticles(a)}
+${relatedGrid(blogTiles(a))}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.excerpt,
       author: { "@type": "Organization", name: BRAND }, publisher: { "@type": "Organization", name: BRAND }, datePublished: "2026-01-01", inLanguage: "en" }),
