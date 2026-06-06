@@ -668,11 +668,48 @@ ${relatedGrid([
 }
 
 // ── Blog article pages (country admission/immigration changes) ─────────────
+// Contextual in-body links: link the FIRST occurrence of a few high-value anchor
+// phrases per article (max 4, never self-link). Operates on already-escaped text
+// (no HTML tags inside), so insertion is safe. Deep contextual internal links are
+// the strongest internal-link signal Google reads.
+const BODY_ANCHORS = [
+  [/\bExpress Entry\b/i, "/blog/canada-pr-express-entry-basics/"],
+  [/\bPGWP\b/, "/blog/canada-pgwp-2026-guide/"],
+  [/\bGIC\b/, "/blog/gic-account-canada-2026-guide/"],
+  [/\bblocked account\b/i, "/blog/germany-blocked-account-2026-guide/"],
+  [/\bSTEM OPT\b/i, "/blog/usa-opt-stem-extension-2026-guide/"],
+  [/\bGenuine Student\b/i, "/blog/australia-genuine-student-2026/"],
+  [/\bGraduate Route\b/i, "/blog/uk-graduate-route-visa-2026/"],
+  [/\bOne Skill Retake\b/i, "/blog/ielts-one-skill-retake-osr-2026/"],
+  [/\bData Insights\b/i, "/blog/gmat-focus-edition-mock-test-free-2026/"],
+];
+function linkifyBody(text, lk) {
+  for (const [re, href] of BODY_ANCHORS) {
+    if (lk.count >= lk.max || href === lk.cur || lk.used.has(href)) continue;
+    let done = false;
+    text = text.replace(re, (m) => {
+      if (done) return m;
+      done = true; lk.used.add(href); lk.count++;
+      return `<a href="${href}">${m}</a>`;
+    });
+  }
+  return text;
+}
+
+// HowTo structured data for step-by-step posts → eligible for HowTo rich results.
+function howToJsonLd(a) {
+  return jsonld({ "@context": "https://schema.org", "@type": "HowTo", name: a.title, description: a.excerpt,
+    step: a.sections.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.h, text: s.body })) });
+}
+
 function blogPage(a) {
   const path = `/blog/${a.id}/`;
   const title = `${a.title} | ${BRAND}`;
   const desc = a.excerpt.slice(0, 230);
   const kw = a.kw || (a.tag + ", study abroad, " + a.title.toLowerCase());
+  const isHowTo = /^how-to-/.test(a.id) || /^how to /i.test(a.title);
+  const lk = { used: new Set(), count: 0, max: 4, cur: path };
+  const sectionsHtml = a.sections.map((s) => `<div class="card"><h2>${esc(s.h)}</h2><p>${linkifyBody(esc(s.body), lk)}</p></div>`).join("\n");
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/#/blog">Blog</a> › ${esc(a.tag)}</p>
 <section class="hero">
@@ -681,13 +718,14 @@ function blogPage(a) {
   <p class="lead">${esc(a.excerpt)}</p>
   <a class="cta" href="/#/colleges">▶ Free College Predictor &amp; study-abroad tools</a>
 </section>
-${a.sections.map(s => `<div class="card"><h2>${esc(s.h)}</h2><p>${esc(s.body)}</p></div>`).join("\n")}
+${sectionsHtml}
 ${relatedArticles(a)}
 ${relatedGrid(blogTiles(a))}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.excerpt,
       author: { "@type": "Organization", name: BRAND }, publisher: { "@type": "Organization", name: BRAND }, datePublished: "2026-01-01", inLanguage: "en" }),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Blog", path: "/#/blog" }, { name: a.title, path }]),
+    ...(isHowTo ? [howToJsonLd(a)] : []),
   ] }) + shell(inner));
 }
 
@@ -1823,6 +1861,22 @@ ${sections.filter((s) => s.links.length).map((s) => `<div class="card"><h2>${esc
 // ── Pillar / hub content pages (prose + FAQ schema + internal links) ──────────
 // Emitted BEFORE buildHubs() so /explore/ picks them up (zero orphans). Each links
 // only to verified-existing pages so the link audit stays green.
+// Hub → blog internal linking: surface the 6 blog posts most relevant to a hub's
+// keywords, so authority flows down from pillar hubs into the article cluster.
+const HUB_STOP = new Set(["study","abroad","free","best","guide","university","universities","without","your","with","exam","test","2026","india","indian","students","student","online","find","should","take","which","what","cost","tips","top"]);
+function hubRelated(kw, title) {
+  const words = new Set((String(kw || "") + " " + String(title || "")).toLowerCase().split(/[^a-z]+/).filter((w) => w.length > 3 && !HUB_STOP.has(w)));
+  const score = (p) => {
+    const hay = (p.title + " " + (p.kw || "")).toLowerCase();
+    let s = 0;
+    for (const w of words) if (hay.includes(w)) s++;
+    return s;
+  };
+  const ranked = BLOG_EXTRA.map((p) => ({ p, s: score(p) })).filter((x) => x.s >= 2).sort((a, b) => b.s - a.s).slice(0, 6).map((x) => x.p);
+  if (!ranked.length) return "";
+  return `<section class="related-articles"><h2>Related articles</h2><ul class="rel-list">${ranked.map((p) => `<li><a href="/blog/${p.id}/">${esc(p.title)}</a></li>`).join("")}</ul></section>`;
+}
+
 function contentHub({ path, title, desc, kw, lead, sections, faqs, related }) {
   const secHtml = sections.map((s) => `<div class="card"><h2>${esc(s.h)}</h2><p>${esc(s.body)}</p></div>`).join("");
   const inner = `
@@ -1831,6 +1885,7 @@ function contentHub({ path, title, desc, kw, lead, sections, faqs, related }) {
 <h1>${esc(title)}</h1><p class="lead">${esc(lead || desc)}</p></section>
 ${secHtml}
 ${faqs && faqs.length ? faqBlock(faqs) : ""}
+${hubRelated(kw, title)}
 <div class="card">${relatedGrid(related)}</div>`;
   const blocks = [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: title, path }])];
   if (faqs && faqs.length) blocks.unshift(faqJsonLd(faqs));
