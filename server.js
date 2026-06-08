@@ -167,6 +167,17 @@ const REDIRECTS = {
 };
 app.get(Object.keys(REDIRECTS), (req, res) => res.redirect(301, REDIRECTS[req.path] || "/"));
 
+// ── SECURITY: never serve backend source, configs, dependencies, dotfiles, or the
+// data dir (user accounts + content pools). The frontend needs NONE of these; the
+// backend/build read them from disk directly. Registered BEFORE express.static so
+// it wins. (.well-known/ is allowed for security.txt etc.)
+app.use((req, res, next) => {
+  if (/^\/(data|scripts|tools|node_modules)(\/|$)|^\/(server\.js|ai-tutor\.js|package\.json|package-lock\.json)$|^\/\.(?!well-known)/i.test(req.path)) {
+    return res.status(404).end();
+  }
+  next();
+});
+
 // Serve static files from the same directory
 app.use(express.static(__dirname));
 
