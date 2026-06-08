@@ -1,0 +1,38 @@
+name: Auto-Draft Blog Content
+
+# Closes the content loop so the blog NEVER runs dry: when the queue is low, this
+# finds real Google-Autocomplete search gaps, drafts snippet-friendly posts for them
+# with Gemini, validates each, and tops up blog-queue.json. The daily auto-blog then
+# publishes them one per day. Needs a GEMINI_API_KEY repo secret (no key → no-op).
+
+on:
+  schedule:
+    - cron: "0 5 * * 3"     # every Wednesday 05:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Auto-draft posts for content gaps (only if queue is low)
+        run: node scripts/auto-draft-posts.mjs 5
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Commit queue if it grew
+        run: |
+          if git diff --quiet -- blog-queue.json; then
+            echo "No new drafts (queue healthy, no gaps, or no GEMINI_API_KEY secret)."
+            exit 0
+          fi
+          git config user.name "landingprep-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add blog-queue.json
+          git commit -m "Auto-draft: top up blog queue with gap-targeting posts [skip ci]"
+          git push
