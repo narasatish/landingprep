@@ -57,20 +57,79 @@ const STUDY_FAQS = [
     a: "Yes in most top destinations: the USA offers OPT (12–36 months), the UK a 2-year Graduate Route, Canada a PGWP of up to 3 years, and Australia a 485 visa for 2–4 years. Each Country Guide shows the full step-by-step path from study to work to permanent residence." },
 ];
 
-const TESTIMONIALS = [
-  { name: "Priya S.", exam: "IELTS Academic", place: "Bengaluru, India", stars: 5,
-    text: "Got Band 7.5 on my first attempt. The free mock tests felt exactly like the real exam and the model answers showed me precisely how to structure Task 2." },
-  { name: "Daniel O.", exam: "PTE Academic", place: "Lagos → Sydney", stars: 5,
-    text: "The AI speaking practice and Describe Image charts were a game-changer. I jumped from 65 to 82 and saved hundreds on coaching." },
-  { name: "Mei L.", exam: "TOEFL iBT", place: "Shanghai", stars: 5,
-    text: "Real timings, instant scoring, and the writing model answers are genuinely C1 level. I hit 105 and got into my dream grad program." },
-  { name: "Ahmed R.", exam: "CELPIP", place: "Toronto", stars: 5,
-    text: "Practised the email and survey tasks daily here for free. Scored CLB 9 across the board for my PR — couldn't recommend it more." },
-  { name: "Sofia G.", exam: "GMAT Focus", place: "São Paulo", stars: 5,
-    text: "The Data Insights drills with real charts were exactly what I needed. Clean interface, honest scoring, completely free." },
-  { name: "Rahul M.", exam: "GRE", place: "Hyderabad", stars: 5,
-    text: "The 30-day plan plus the issue-essay model answers took me from a 305 diagnostic to a 322. Best free GRE resource I found." },
-];
+// Real reviews — fetched from the backend and submitted by actual users. No
+// fabricated testimonials: the section shows genuine reviews as they come in.
+function Reviews() {
+  const [reviews, setReviews] = React.useState([]);
+  const [open, setOpen] = React.useState(false);
+  const [form, setForm] = React.useState({ stars: 5, exam: "", name: "", place: "", text: "" });
+  const [status, setStatus] = React.useState("");
+  React.useEffect(() => {
+    const base = window.LP_API_BASE || "";
+    fetch(base + "/api/reviews").then((r) => r.json()).then((d) => setReviews(d.reviews || [])).catch(() => {});
+  }, []);
+  const submit = async (e) => {
+    e.preventDefault();
+    if (String(form.text).trim().length < 10) { setStatus("err"); return; }
+    setStatus("sending");
+    try {
+      const base = window.LP_API_BASE || "";
+      const r = await fetch(base + "/api/reviews", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
+      const d = await r.json();
+      if (r.ok && d.review) {
+        setReviews([d.review, ...reviews]); setStatus("ok"); setOpen(false);
+        setForm({ stars: 5, exam: "", name: "", place: "", text: "" });
+        try { if (window.gtag) window.gtag("event", "review_submitted"); } catch (e2) {}
+      } else { setStatus("err"); }
+    } catch (e2) { setStatus("err"); }
+  };
+  const inputStyle = { padding: "10px 12px", borderRadius: 8, border: "1px solid var(--line)", fontSize: 14, background: "var(--surface)", color: "var(--ink)", width: "100%" };
+  return (
+    <div>
+      <div className="testimonial-grid reveal">
+        {reviews.length === 0 ? (
+          <figure className="testimonial-card"><blockquote>Be the first to share how LandingPrep helped you — your honest story helps other students decide. Click “Share your experience” below.</blockquote></figure>
+        ) : reviews.map((t, i) => (
+          <figure className="testimonial-card" key={i}>
+            <div className="t-stars" aria-label={t.stars + " stars"}>{"★★★★★".slice(0, t.stars)}</div>
+            <blockquote>{t.text}</blockquote>
+            <figcaption>
+              <span className="t-avatar" aria-hidden>{(t.name || "?")[0]}</span>
+              <span>
+                <span className="t-name">{t.name}</span>
+                <span className="t-meta">{[t.exam, t.place].filter(Boolean).join(" · ")}</span>
+              </span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+      <div style={{ textAlign: "center", marginTop: 18 }}>
+        {!open && <button className="btn btn-primary" onClick={() => setOpen(true)}>✍️ Share your experience</button>}
+        {status === "ok" && <p style={{ color: "var(--leaf)", marginTop: 10, fontWeight: 600 }}>Thank you — your review is live! 🎉</p>}
+      </div>
+      {open && (
+        <form onSubmit={submit} style={{ maxWidth: 560, margin: "16px auto 0", display: "grid", gap: 10, textAlign: "left" }}>
+          <label style={{ fontSize: 13, fontWeight: 600 }}>Your rating
+            <select value={form.stars} onChange={(e) => setForm({ ...form, stars: parseInt(e.target.value, 10) })} style={{ ...inputStyle, marginTop: 4 }}>
+              {[5, 4, 3, 2, 1].map((s) => <option key={s} value={s}>{"★".repeat(s)} ({s})</option>)}
+            </select>
+          </label>
+          <textarea placeholder="How did LandingPrep help you? (at least 10 characters)" value={form.text} onChange={(e) => setForm({ ...form, text: e.target.value })} rows={3} required style={inputStyle} />
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+            <input placeholder="Exam (e.g. IELTS)" value={form.exam} onChange={(e) => setForm({ ...form, exam: e.target.value })} style={{ ...inputStyle, flex: "1 1 120px" }} />
+            <input placeholder="Name (optional)" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={{ ...inputStyle, flex: "1 1 120px" }} />
+            <input placeholder="Place (optional)" value={form.place} onChange={(e) => setForm({ ...form, place: e.target.value })} style={{ ...inputStyle, flex: "1 1 120px" }} />
+          </div>
+          <div style={{ display: "flex", gap: 8 }}>
+            <button type="submit" className="btn btn-primary">{status === "sending" ? "Posting…" : "Post review"}</button>
+            <button type="button" className="btn" onClick={() => setOpen(false)}>Cancel</button>
+          </div>
+          {status === "err" && <span style={{ color: "#dc2626", fontSize: 13 }}>Please pick a rating and write at least 10 characters.</span>}
+        </form>
+      )}
+    </div>
+  );
+}
 
 // ── Band predictor + university/visa eligibility tool ────────────────────────
 const CEFR_TABLE = {
@@ -383,21 +442,7 @@ function Home({ onGuide, onPractice, onNav }) {
               </p>
             </div>
           </div>
-          <div className="testimonial-grid reveal">
-            {TESTIMONIALS.map((t, i) => (
-              <figure className="testimonial-card" key={i}>
-                <div className="t-stars" aria-label={t.stars + " stars"}>{"★★★★★".slice(0, t.stars)}</div>
-                <blockquote>{t.text}</blockquote>
-                <figcaption>
-                  <span className="t-avatar" aria-hidden>{t.name[0]}</span>
-                  <span>
-                    <span className="t-name">{t.name}</span>
-                    <span className="t-meta">{t.exam} · {t.place}</span>
-                  </span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
+          <Reviews />
         </div>
       </section>
 

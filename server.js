@@ -448,6 +448,7 @@ let STORE = { users: {}, history: {}, subscribers: {} };
   try { STORE = JSON.parse(fs.readFileSync(STORE_PATH, "utf8")); }
   catch (_) { STORE = { users: {}, history: {}, subscribers: {} }; }
   if (!STORE.subscribers) STORE.subscribers = {}; // newsletter sign-ups without an account
+  if (!STORE.reviews) STORE.reviews = []; // real user reviews (never fabricated)
 })();
 let saveTimer = null;
 function persist() {
@@ -593,6 +594,29 @@ app.post("/api/newsletter/subscribe", (req, res) => {
     try { sendMail(email, "Welcome to LandingPrep 🎓", emailTemplate("welcome", { NAME: "there" })); } catch (e) {}
   }
   res.json({ ok: true });
+});
+
+// Real user reviews (replaced fabricated testimonials). Public submit + read.
+app.post("/api/reviews", (req, res) => {
+  const b = req.body || {};
+  const stars = parseInt(b.stars, 10);
+  const text = String(b.text || "").trim();
+  if (!(stars >= 1 && stars <= 5)) return res.status(400).json({ error: "Please pick 1–5 stars." });
+  if (text.length < 10 || text.length > 600) return res.status(400).json({ error: "Your review should be 10–600 characters." });
+  const review = {
+    stars, text: text.slice(0, 600),
+    name: (String(b.name || "").trim().slice(0, 40)) || "A LandingPrep user",
+    exam: String(b.exam || "").trim().slice(0, 30),
+    place: String(b.place || "").trim().slice(0, 40),
+    ts: Date.now(),
+  };
+  STORE.reviews.unshift(review);
+  if (STORE.reviews.length > 500) STORE.reviews.length = 500;
+  persist();
+  res.json({ ok: true, review });
+});
+app.get("/api/reviews", (_req, res) => {
+  res.json({ reviews: (STORE.reviews || []).slice(0, 12), count: (STORE.reviews || []).length });
 });
 
 // Admin-only: send the weekly newsletter to all opted-in users.
