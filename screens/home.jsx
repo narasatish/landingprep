@@ -650,19 +650,19 @@ function Footer() {
             </p>
           </div>
           <div>
-            <h4>Exam Hub</h4>
+            <h3>Exam Guides</h3>
             <ul>
               <li><a href="#/exam-hub/ielts">IELTS</a></li><li><a href="#/exam-hub/toefl">TOEFL iBT</a></li><li><a href="#/exam-hub/pte">PTE Academic</a></li><li><a href="#/exam-hub/celpip">CELPIP</a></li><li><a href="#/exam-hub/duolingo">Duolingo</a></li><li><a href="#/exam-hub/gre">GRE</a></li><li><a href="#/exam-hub/gmat">GMAT Focus</a></li>
             </ul>
           </div>
           <div>
-            <h4>Practice</h4>
+            <h3>Practice</h3>
             <ul>
               <li><a href="#/exam-prep">Mock tests</a></li><li><a href="/ielts-writing-checker/">AI Band Checker</a></li><li><a href="/ielts-vocabulary/">Vocabulary</a></li><li><a href="/prep-lessons/">Prep Lessons</a></li><li><a href="#/learning">Learning Club</a></li><li><a href="#/agents">AI Speaking &amp; Writing</a></li>
             </ul>
           </div>
           <div>
-            <h4>Resources</h4>
+            <h3>Resources</h3>
             <ul>
               <li><a href="/ielts-band-7/">IELTS band requirements</a></li><li><a href="/which-english-test/">Which English test? (quiz)</a></li><li><a href="#/relocate">Move Abroad checklist</a></li><li><a href="/student-city-guides/">Student city guides</a></li><li><a href="/learn-german/">Learn German &amp; French</a></li><li><a href="#/blog">Study tips & strategy</a></li><li><a href="/explore/">Explore all free pages</a></li><li><a href="#/progress">My Progress</a></li>
             </ul>
