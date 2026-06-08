@@ -1,0 +1,22 @@
+name: Daily Practice Reminder (Push)
+
+# Sends a daily web-push "time to practise" reminder to everyone who opted in.
+# No-ops safely until you set the ADMIN_SECRET repo secret + VAPID_PRIVATE in Render.
+
+on:
+  schedule:
+    - cron: "30 12 * * *"     # 12:30 UTC (~6pm IST) daily
+  workflow_dispatch: {}
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fire daily push reminder
+        run: |
+          curl -fsS -X POST "https://landingprep.com/api/admin/send-push" \
+            -H "X-Admin-Key: ${{ secrets.ADMIN_SECRET }}" \
+            -H "Content-Type: application/json" \
+            -d '{"title":"LandingPrep","body":"Time for today’s free practice — keep your streak going! 🔥","url":"/#/exam-prep"}' \
+            && echo "reminder sent" \
+            || echo "skipped (ADMIN_SECRET/VAPID not configured, or no subscribers yet) — non-fatal"

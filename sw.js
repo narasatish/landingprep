@@ -1,6 +1,6 @@
 // LandingPrep service worker — offline support.
 // Bump CACHE_VERSION on every deploy so clients pick up new assets.
-const CACHE_VERSION = "lp-v192";
+const CACHE_VERSION = "lp-v193";
 const CORE = [
   "./",
   "./index.html",
@@ -83,6 +83,30 @@ self.addEventListener("fetch", (e) => {
         return res;
       }).catch(() => cached);
       return cached || fetchPromise;
+    })
+  );
+});
+
+// ── Web Push: show daily-reminder notifications + handle clicks ──────────────
+self.addEventListener("push", (event) => {
+  let data = {};
+  try { data = event.data ? event.data.json() : {}; } catch (e) {}
+  const options = {
+    body: data.body || "Time for today's free practice!",
+    icon: "/icon.svg",
+    badge: "/icon.svg",
+    tag: "lp-reminder",
+    data: { url: data.url || "/" },
+  };
+  event.waitUntil(self.registration.showNotification(data.title || "LandingPrep", options));
+});
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const target = (event.notification.data && event.notification.data.url) || "/";
+  event.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((list) => {
+      for (const c of list) { if (c.url.indexOf(self.location.origin) === 0 && "focus" in c) { try { c.navigate(target); } catch (e) {} return c.focus(); } }
+      if (self.clients.openWindow) return self.clients.openWindow(target);
     })
   );
 });

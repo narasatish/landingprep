@@ -689,6 +689,23 @@ function Footer() {
       else setNlStatus("err");
     } catch (e2) { setNlStatus("err"); }
   };
+  const [pushStatus, setPushStatus] = React.useState("");
+  const enablePush = async () => {
+    try {
+      if (!("serviceWorker" in navigator) || !("PushManager" in window) || !window.LP_VAPID_PUBLIC) { setPushStatus("unsupported"); return; }
+      const perm = await Notification.requestPermission();
+      if (perm !== "granted") { setPushStatus("denied"); return; }
+      const reg = await navigator.serviceWorker.ready;
+      const b64 = window.LP_VAPID_PUBLIC, pad = "=".repeat((4 - (b64.length % 4)) % 4);
+      const raw = atob((b64 + pad).replace(/-/g, "+").replace(/_/g, "/"));
+      const key = new Uint8Array(raw.length); for (let i = 0; i < raw.length; i++) key[i] = raw.charCodeAt(i);
+      const sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: key });
+      const base = window.LP_API_BASE || "";
+      await fetch(base + "/api/push/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ subscription: sub }) });
+      setPushStatus("ok");
+      try { if (window.gtag) window.gtag("event", "push_enabled"); } catch (e2) {}
+    } catch (e2) { setPushStatus("err"); }
+  };
   return (
     <footer className="footer">
       <div className="shell">
@@ -713,6 +730,11 @@ function Footer() {
               {nlStatus === "ok" && <span style={{ fontSize: 13, color: "var(--leaf)", width: "100%" }}>✅ Subscribed — check your inbox!</span>}
               {nlStatus === "err" && <span style={{ fontSize: 13, color: "#dc2626", width: "100%" }}>Please enter a valid email.</span>}
             </form>
+            {pushStatus === "ok"
+              ? <p style={{ fontSize: 13, color: "var(--leaf)", marginTop: 10 }}>🔔 Reminders on — see you tomorrow!</p>
+              : <button onClick={enablePush} className="btn" style={{ marginTop: 10, padding: "9px 14px", fontSize: 13 }}>🔔 Daily practice reminder</button>}
+            {pushStatus === "denied" && <p className="muted" style={{ fontSize: 12, marginTop: 6 }}>Enable notifications in your browser settings to get reminders.</p>}
+            {pushStatus === "unsupported" && <p className="muted" style={{ fontSize: 12, marginTop: 6 }}>Reminders aren't supported on this browser/device.</p>}
           </div>
           <div>
             <h3>Exam Guides</h3>

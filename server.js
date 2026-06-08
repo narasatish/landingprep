@@ -466,6 +466,7 @@ let STORE = { users: {}, history: {}, subscribers: {} };
   catch (_) { STORE = { users: {}, history: {}, subscribers: {} }; }
   if (!STORE.subscribers) STORE.subscribers = {}; // newsletter sign-ups without an account
   if (!STORE.reviews) STORE.reviews = []; // real user reviews (never fabricated)
+  if (!STORE.pushSubs) STORE.pushSubs = {}; // web-push subscriptions (endpoint -> sub)
 })();
 let saveTimer = null;
 function persist() {
@@ -634,6 +635,53 @@ app.post("/api/reviews", (req, res) => {
 });
 app.get("/api/reviews", (_req, res) => {
   res.json({ reviews: (STORE.reviews || []).slice(0, 12), count: (STORE.reviews || []).length });
+});
+
+// ── Web Push (PWA daily-practice reminders) ──────────────────────────────────
+// Public VAPID key is committed (public by design); the private key comes from the
+// Render env var VAPID_PRIVATE. Without it, subscriptions are still stored but
+// sending gracefully no-ops — so this never crashes the server.
+const VAPID_PUBLIC = "BKc84WZ_bAokzXt0rj94PGCdtzDOvcZAzb_ZJ6TmPWTGskrsXh1MMrpcZDTkN6Mo0AZ0yQwURhYBVulHOWzfQaQ";
+let webpush = null;
+try {
+  if (process.env.VAPID_PRIVATE) {
+    webpush = require("web-push");
+    webpush.setVapidDetails("mailto:support@landingprep.com", VAPID_PUBLIC, process.env.VAPID_PRIVATE);
+    console.log("[push] web-push configured.");
+  } else {
+    console.log("[push] VAPID_PRIVATE not set — push send disabled (subscriptions still stored).");
+  }
+} catch (e) { console.warn("[push] web-push unavailable:", e.message); webpush = null; }
+
+app.get("/api/push/key", (_req, res) => res.json({ key: VAPID_PUBLIC }));
+app.post("/api/push/subscribe", (req, res) => {
+  const sub = req.body && req.body.subscription;
+  if (!sub || !sub.endpoint) return res.status(400).json({ error: "subscription required" });
+  STORE.pushSubs[sub.endpoint] = { sub, ts: Date.now() };
+  if (Object.keys(STORE.pushSubs).length > 50000) { const k = Object.keys(STORE.pushSubs)[0]; delete STORE.pushSubs[k]; }
+  persist();
+  res.json({ ok: true });
+});
+app.post("/api/push/unsubscribe", (req, res) => {
+  const ep = req.body && req.body.endpoint;
+  if (ep && STORE.pushSubs[ep]) { delete STORE.pushSubs[ep]; persist(); }
+  res.json({ ok: true });
+});
+// Admin: fan out a push to all subscribers (use for the daily reminder).
+//   POST /api/admin/send-push   header X-Admin-Key: <ADMIN_SECRET>   body { title, body, url }
+app.post("/api/admin/send-push", async (req, res) => {
+  if (!ADMIN_SECRET || req.headers["x-admin-key"] !== ADMIN_SECRET) return res.status(403).json({ error: "Forbidden" });
+  if (!webpush) return res.status(503).json({ error: "Push not configured — set VAPID_PRIVATE in Render env." });
+  const { title, body, url } = req.body || {};
+  const payload = JSON.stringify({ title: title || "LandingPrep", body: body || "Time for today's free practice — keep your streak going! 🔥", url: url || "/" });
+  let sent = 0, removed = 0;
+  for (const [ep, rec] of Object.entries(STORE.pushSubs || {})) {
+    try { await webpush.sendNotification(rec.sub, payload); sent++; }
+    catch (e) { if (e && (e.statusCode === 404 || e.statusCode === 410)) { delete STORE.pushSubs[ep]; removed++; } }
+    await new Promise((r) => setTimeout(r, 20));
+  }
+  if (removed) persist();
+  res.json({ ok: true, subscribers: Object.keys(STORE.pushSubs).length, sent, removed });
 });
 
 // Admin-only: send the weekly newsletter to all opted-in users.
