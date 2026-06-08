@@ -24,6 +24,7 @@
     return (
       <>
         <window.LP_TopBar current="learn" onNav={onNav} />
+        <main id="main-content">
         <div className="learnhub-bar">
           <div className="learnhub-tabs">
             <button className={"learnhub-tab" + (tab === "lessons" ? " active" : "")} onClick={() => setTab("lessons")}>
@@ -39,6 +40,7 @@
         {tab === "lessons"
           ? (window.LP_Lessons ? <window.LP_Lessons onNav={onNav} embedded /> : null)
           : (window.LP_LearningClub ? <window.LP_LearningClub onNav={onNav} exams={exams} embedded /> : null)}
+        </main>
         <window.LP_Footer />
       </>
     );

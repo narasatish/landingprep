@@ -447,6 +447,7 @@
       return (
         <>
           <window.LP_TopBar current="progress" onNav={onNav} />
+          <main id="main-content">
           <div className="login-shell">
             <div className="login-card" style={{ textAlign: "center" }}>
               <div style={{ fontSize: 48, marginBottom: 8 }}>📊</div>
@@ -458,6 +459,7 @@
               </div>
             </div>
           </div>
+          </main>
           <window.LP_Footer />
         </>
       );
@@ -479,6 +481,7 @@
     return (
       <>
         <window.LP_TopBar current="progress" onNav={onNav} />
+        <main id="main-content">
         <div className="progress-shell">
           <div className="progress-header">
             <div>
@@ -591,6 +594,7 @@
             </>
           )}
         </div>
+        </main>
         <window.LP_Footer />
       </>
     );

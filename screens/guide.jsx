@@ -15,6 +15,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
   return (
     <>
       <window.LP_TopBar current="exams" onNav={onNav} />
+      <main id="main-content">
 
       {/* Exam switcher */}
       <div style={{ background: "var(--tint)", borderBottom: "1px solid var(--line)" }}>
@@ -145,6 +146,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
         </div>
       </div>
 
+      </main>
       <window.LP_Footer />
     </>
   );

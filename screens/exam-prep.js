@@ -272,7 +272,7 @@
         });
       }
     };
-    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "exam-prep", onNav }), testLoadError && /* @__PURE__ */ React.createElement("div", { className: "test-error-overlay", onClick: () => setTestLoadError(null) }, /* @__PURE__ */ React.createElement("div", { className: "test-error-card", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement("div", { className: "test-error-icon" }, "\u26A0\uFE0F"), /* @__PURE__ */ React.createElement("h3", { className: "test-error-title" }, testLoadError.title), /* @__PURE__ */ React.createElement("p", { className: "test-error-detail" }, testLoadError.detail), testLoadError.entry && /* @__PURE__ */ React.createElement("p", { className: "test-error-meta" }, testLoadError.entry.title || testLoadError.entry.id), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => setTestLoadError(null) }, "Back to Tests"))), /* @__PURE__ */ React.createElement("div", { className: "shell", style: { paddingTop: 32, paddingBottom: 56 } }, view === "index" && /* @__PURE__ */ React.createElement(ExamIndex, { counts, onChooseExam: openExam }), view === "detail" && examId && !examMeta && /* @__PURE__ */ React.createElement("div", { className: "ep-loading" }, "Loading exam info\u2026"), view === "detail" && examId && examMeta && /* @__PURE__ */ React.createElement(
+    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "exam-prep", onNav }), /* @__PURE__ */ React.createElement("main", { id: "main-content" }, testLoadError && /* @__PURE__ */ React.createElement("div", { className: "test-error-overlay", onClick: () => setTestLoadError(null) }, /* @__PURE__ */ React.createElement("div", { className: "test-error-card", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement("div", { className: "test-error-icon" }, "\u26A0\uFE0F"), /* @__PURE__ */ React.createElement("h3", { className: "test-error-title" }, testLoadError.title), /* @__PURE__ */ React.createElement("p", { className: "test-error-detail" }, testLoadError.detail), testLoadError.entry && /* @__PURE__ */ React.createElement("p", { className: "test-error-meta" }, testLoadError.entry.title || testLoadError.entry.id), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => setTestLoadError(null) }, "Back to Tests"))), /* @__PURE__ */ React.createElement("div", { className: "shell", style: { paddingTop: 32, paddingBottom: 56 } }, view === "index" && /* @__PURE__ */ React.createElement(ExamIndex, { counts, onChooseExam: openExam }), view === "detail" && examId && !examMeta && /* @__PURE__ */ React.createElement("div", { className: "ep-loading" }, "Loading exam info\u2026"), view === "detail" && examId && examMeta && /* @__PURE__ */ React.createElement(
       ExamDetail,
       {
         examId,
@@ -292,7 +292,7 @@
         onBack: backToDetail,
         onOpenTest: openTest
       }
-    )), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
+    ))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
   }
   window.LP_ExamPrep = ExamPrep;
 })();

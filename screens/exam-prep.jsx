@@ -360,6 +360,7 @@
     return (
       <>
         <window.LP_TopBar current="exam-prep" onNav={onNav} />
+        <main id="main-content">
 
         {/* ── Clean test-load error modal (replaces browser alert) ─────── */}
         {testLoadError && (
@@ -403,6 +404,7 @@
             />
           )}
         </div>
+        </main>
         <window.LP_Footer />
       </>
     );
