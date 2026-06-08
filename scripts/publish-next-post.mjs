@@ -15,7 +15,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const QUEUE_PATH = join(ROOT, "blog-queue.json");
 const BLOG_PATH = join(ROOT, "blog-data.jsx");
-const ANCHOR = "\n  ];\n\n  window.LP_BLOG_EXTRA = EXTRA;";
+// The insertion anchor is computed at runtime (below) to tolerate LF or CRLF
+// line endings — git checks out CRLF on Windows, LF in Linux CI.
 
 if (!existsSync(QUEUE_PATH)) {
   console.log("No blog-queue.json — nothing to publish.");
@@ -49,13 +50,15 @@ if (blog.includes(`id: "${post.id}"`) || blog.includes(`"id": "${post.id}"`)) {
   process.exit(0);
 }
 
+const nl = blog.includes("\r\n") ? "\r\n" : "\n";
+const ANCHOR = `${nl}  ];${nl}${nl}  window.LP_BLOG_EXTRA = EXTRA;`;
 if (!blog.includes(ANCHOR)) {
   console.error("Could not find the insertion anchor in blog-data.jsx — aborting.");
   process.exit(1);
 }
 
-const serialized = JSON.stringify(post, null, 2).split("\n").map((l) => "    " + l).join("\n");
-const next = blog.replace(ANCHOR, `,\n${serialized}\n  ];\n\n  window.LP_BLOG_EXTRA = EXTRA;`);
+const serialized = JSON.stringify(post, null, 2).split("\n").map((l) => "    " + l).join(nl);
+const next = blog.replace(ANCHOR, `,${nl}${serialized}${nl}  ];${nl}${nl}  window.LP_BLOG_EXTRA = EXTRA;`);
 
 // Safety: confirm the modified file still executes and produces a valid array
 // BEFORE writing anything. A bad queue entry must never corrupt the live blog.

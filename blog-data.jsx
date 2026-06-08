@@ -1353,7 +1353,41 @@
     { h: "Get Help Strengthening Your Application Package", body: "Use LandingPrep's free SOP builder and application checklist to align your personal statement with your LOR themes. Your SOP should echo the qualities your LOR highlights (e.g., if your LOR praises research skills, your SOP should detail your research projects). Free templates and application guides on LandingPrep help you prepare strong request emails and track LOR submissions so no letter is forgotten." }
   ]
 },
-
+,
+    {
+      "id": "how-is-ielts-scored-band-calculation",
+      "tag": "IELTS",
+      "date": "2026",
+      "title": "How Is IELTS Scored? Band Calculation Explained 2026",
+      "excerpt": "Understand how IELTS band scores are calculated from raw marks. Learn about half-band scoring, section weights, and how your final score is rounded.",
+      "kw": "IELTS scoring, band calculation, IELTS bands, raw marks to band, half bands",
+      "sections": [
+        {
+          "h": "IELTS Scoring Overview",
+          "body": "IELTS uses a 9-band scale from 1 (non-user) to 9 (expert). Each section—Reading, Writing, Listening, Speaking—is scored separately on the 1–9 scale. Your Overall Band is the average of these four scores, rounded to the nearest half or whole band. There is no single passing score; universities and visa authorities set their own requirements."
+        },
+        {
+          "h": "Raw Marks to Band Conversion",
+          "body": "Listening and Reading are scored out of 40 (each correct answer = 1 point). Writing and Speaking are assessed by examiners using descriptors, not point totals. Listening and Reading raw scores are converted to bands via an equating table that adjusts for test difficulty. For example, 30/40 in Listening might equal Band 7.5 on one test, Band 8 on another, depending on the overall candidate performance that session."
+        },
+        {
+          "h": "How Half-Bands Work",
+          "body": "IELTS allows half-band scores (6.5, 7.5, 8.5). If your four section scores are 6.5, 7, 7, 6.5, your overall is 6.75, which rounds to 7. If they are 6.5, 7.5, 7, 7, your overall is 7.25, which rounds to 7. Standard rounding applies: .5 and above rounds up. This half-band system lets universities accept candidates with specific scores, e.g., Band 6.5 or 7."
+        },
+        {
+          "h": "Section Weighting and Rounding",
+          "body": "All four sections are weighted equally in the overall average. There is no weighted section. After calculating the raw average, examiners round to the nearest half-band. If your average is exactly 6.75, it becomes 7. If it is 6.74, it stays 6.5. Confirm current rounding rules with the official IELTS handbook as standards may shift."
+        },
+        {
+          "h": "Academic vs General Training Scores",
+          "body": "IELTS Academic and IELTS General Training use the same 9-band scale and identical scoring rules. The difference is test content, not scoring. Academic Reading is more technical; General Training Reading includes workplace texts. Speaking and Listening are slightly different in difficulty but use the same band descriptors and conversion tables."
+        },
+        {
+          "h": "Practice and Score Improvement",
+          "body": "Your band score reflects real proficiency, not test tricks. Improving from Band 6 to Band 7 requires genuine progress in grammar, vocabulary, fluency, and accent clarity. Take full mock tests under timed conditions, review all mistakes, and practice weak areas repeatedly. Practise free on LandingPrep to track your progress across all four skills."
+        }
+      ]
+    }
   ];
 
   window.LP_BLOG_EXTRA = EXTRA;
