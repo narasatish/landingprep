@@ -712,6 +712,11 @@ function blogPage(a) {
   const isHowTo = /^how-to-/.test(a.id) || /^how to /i.test(a.title);
   const lk = { used: new Set(), count: 0, max: 4, cur: path };
   const sectionsHtml = a.sections.map((s) => `<div class="card"><h2>${esc(s.h)}</h2><p>${linkifyBody(esc(s.body), lk)}</p></div>`).join("\n");
+  // AEO: a "Quick answer" box that LLMs + featured snippets lift verbatim (the first
+  // ~2 sentences that directly answer the title). Auto-derived from section 1.
+  const qaSrc = ((a.sections[0] && a.sections[0].body) || a.excerpt || "").replace(/\s+/g, " ").trim();
+  let qa = ""; for (const s of qaSrc.split(/(?<=[.!?])\s+/)) { if (qa && (qa + " " + s).length > 340) break; qa += (qa ? " " : "") + s; }
+  const qaBlock = qa ? `<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 6px"><strong style="color:#4338ca">⚡ Quick answer:</strong> ${esc(qa)}</div>` : "";
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/#/blog">Blog</a> › ${esc(a.tag)}</p>
 <section class="hero">
@@ -720,6 +725,7 @@ function blogPage(a) {
   <p class="lead">${esc(a.excerpt)}</p>
   <a class="cta" href="/#/colleges">▶ Free College Predictor &amp; study-abroad tools</a>
 </section>
+${qaBlock}
 ${sectionsHtml}
 ${relatedArticles(a)}
 ${relatedGrid(blogTiles(a))}`;
@@ -727,6 +733,7 @@ ${relatedGrid(blogTiles(a))}`;
     jsonld({ "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.excerpt,
       author: { "@type": "Organization", name: BRAND }, publisher: { "@type": "Organization", name: BRAND }, datePublished: "2026-01-01", inLanguage: "en" }),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Blog", path: "/#/blog" }, { name: a.title, path }]),
+    jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
     ...(isHowTo ? [howToJsonLd(a)] : []),
   ] }) + shell(inner));
 }
