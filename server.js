@@ -105,6 +105,17 @@ function rateLimiter({ windowMs, max, message }) {
 // 120 API calls/min/IP overall; 20 auth attempts/15min/IP (stops password brute-force).
 app.use("/api/", rateLimiter({ windowMs: 60 * 1000, max: 120, message: "Too many requests — please wait a minute." }));
 app.use("/api/auth/", rateLimiter({ windowMs: 15 * 60 * 1000, max: 20, message: "Too many attempts — please try again in 15 minutes." }));
+// Stricter cap on abuse-prone PUBLIC writes (reviews/community/newsletter/push/clienterror)
+// — 20 POSTs/min/IP on top of the global 120/min, so a bot can't flood the homepage.
+const _writeCap = rateLimiter({ windowMs: 60 * 1000, max: 20, message: "You're doing that too quickly — please wait a minute." });
+app.use(["/api/reviews", "/api/community", "/api/newsletter", "/api/push/subscribe", "/api/clienterror"],
+  (req, res, next) => (req.method === "POST" ? _writeCap(req, res, next) : next()));
+// Constant-time admin-key check (no timing oracle; denies when ADMIN_SECRET unset).
+function adminOK(req) {
+  const provided = Buffer.from(String(req.headers["x-admin-key"] || (req.query && req.query.key) || ""));
+  const expected = Buffer.from(String(ADMIN_SECRET || ""));
+  return !!ADMIN_SECRET && provided.length === expected.length && crypto.timingSafeEqual(provided, expected);
+}
 
 // ── Free-tier guard (account-wide) ─────────────────────────────────────────────
 // Google's Gemini free-tier limits are per-PROJECT (all users combined), not per-IP,
@@ -681,7 +692,7 @@ app.post("/api/push/unsubscribe", (req, res) => {
 // Admin: fan out a push to all subscribers (use for the daily reminder).
 //   POST /api/admin/send-push   header X-Admin-Key: <ADMIN_SECRET>   body { title, body, url }
 app.post("/api/admin/send-push", async (req, res) => {
-  if (!ADMIN_SECRET || req.headers["x-admin-key"] !== ADMIN_SECRET) return res.status(403).json({ error: "Forbidden" });
+  if (!adminOK(req)) return res.status(403).json({ error: "Forbidden" });
   if (!webpush) return res.status(503).json({ error: "Push not configured — set VAPID_PRIVATE in Render env." });
   const { title, body, url } = req.body || {};
   const payload = JSON.stringify({ title: title || "LandingPrep", body: body || "Time for today's free practice — keep your streak going! 🔥", url: url || "/" });
@@ -699,7 +710,7 @@ app.post("/api/admin/send-push", async (req, res) => {
 //   POST /api/admin/send-newsletter   header: X-Admin-Key: <ADMIN_SECRET>
 //   body: { subject, headline, body }   (body may contain simple HTML)
 app.post("/api/admin/send-newsletter", async (req, res) => {
-  if (!ADMIN_SECRET || req.headers["x-admin-key"] !== ADMIN_SECRET) return res.status(403).json({ error: "Forbidden" });
+  if (!adminOK(req)) return res.status(403).json({ error: "Forbidden" });
   if (!mailer()) return res.status(503).json({ error: "SMTP not configured — set SMTP_PASS." });
   const { subject, headline, body } = req.body || {};
   if (!subject || !body) return res.status(400).json({ error: "subject and body are required." });
@@ -891,6 +902,7 @@ app.post("/api/community/answer", (req, res) => {
   persistComm();
   res.json({ ok: true, answer: a });
 });
+const VOTE_LOG = new Map(); // ip -> Set(voteKey) — one vote per item per IP (anti-manipulation)
 app.post("/api/community/vote", (req, res) => {
   // Validate questionId
   const questionId = req.body && req.body.questionId;
@@ -899,6 +911,13 @@ app.post("/api/community/vote", (req, res) => {
   }
   const q = COMM.questions.find((x) => x.id === questionId);
   if (!q) return res.status(404).json({ error: "Question not found." });
+  // One vote per (IP, item): block repeat/inflated voting.
+  const _ip = String(req.headers["x-forwarded-for"] || (req.socket && req.socket.remoteAddress) || "").split(",")[0].trim();
+  const _vk = questionId + "|" + (req.body.answerId || "");
+  if (VOTE_LOG.size > 20000) VOTE_LOG.clear();
+  let _voted = VOTE_LOG.get(_ip); if (!_voted) { _voted = new Set(); VOTE_LOG.set(_ip, _voted); }
+  if (_voted.has(_vk)) return res.status(429).json({ error: "You've already voted on this." });
+  _voted.add(_vk);
 
   // Vote on question or answer (if answerId is provided and valid)
   if (req.body.answerId) {
@@ -1071,7 +1090,7 @@ setInterval(() => { runMonitor().catch(() => {}); }, 10 * 60 * 1000).unref(); //
 
 // Status feed for a dashboard / the AI fix-agent. GET /api/health/report?key=ADMIN_SECRET
 app.get("/api/health/report", (req, res) => {
-  if (ADMIN_SECRET && req.query.key !== ADMIN_SECRET && req.headers["x-admin-key"] !== ADMIN_SECRET) return res.status(403).json({ error: "Forbidden — pass ?key=ADMIN_SECRET" });
+  if (!adminOK(req)) return res.status(403).json({ error: "Forbidden — pass ?key=ADMIN_SECRET" });
   res.json({ lastRun: MONITOR.lastRun, clientErrorCount: MONITOR.clientErrors.length, recentClientErrors: MONITOR.clientErrors.slice(-50) });
 });
 
