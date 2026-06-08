@@ -631,6 +631,19 @@ function Marquee() {
 }
 
 function Footer() {
+  const [nlEmail, setNlEmail] = React.useState("");
+  const [nlStatus, setNlStatus] = React.useState(""); // "" | sending | ok | err
+  const subscribe = async (e) => {
+    e.preventDefault();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(nlEmail)) { setNlStatus("err"); return; }
+    setNlStatus("sending");
+    try {
+      const base = window.LP_API_BASE || "";
+      const r = await fetch(base + "/api/newsletter/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: nlEmail, source: "footer" }) });
+      if (r.ok) { setNlStatus("ok"); setNlEmail(""); try { if (window.gtag) window.gtag("event", "newsletter_signup", { source: "footer" }); } catch (e2) {} }
+      else setNlStatus("err");
+    } catch (e2) { setNlStatus("err"); }
+  };
   return (
     <footer className="footer">
       <div className="shell">
@@ -648,6 +661,13 @@ function Footer() {
               📧 <a href="mailto:support@landingprep.com" style={{ color: "var(--accent)", fontWeight: 600 }}>support@landingprep.com</a>
               {"  ·  "}<a href="/about/" style={{ color: "var(--accent)", fontWeight: 600 }}>About</a>
             </p>
+            <form onSubmit={subscribe} aria-label="Newsletter signup" style={{ marginTop: 14, display: "flex", gap: 8, flexWrap: "wrap", maxWidth: 380 }}>
+              <input type="email" value={nlEmail} onChange={(e) => setNlEmail(e.target.value)} placeholder="Email for free weekly study tips" aria-label="Email address"
+                style={{ flex: "1 1 170px", padding: "10px 12px", borderRadius: 8, border: "1px solid var(--line)", fontSize: 14, background: "var(--surface)", color: "var(--ink)" }} />
+              <button type="submit" className="btn btn-primary" style={{ padding: "10px 16px" }}>{nlStatus === "sending" ? "…" : "Get tips"}</button>
+              {nlStatus === "ok" && <span style={{ fontSize: 13, color: "var(--leaf)", width: "100%" }}>✅ Subscribed — check your inbox!</span>}
+              {nlStatus === "err" && <span style={{ fontSize: 13, color: "#dc2626", width: "100%" }}>Please enter a valid email.</span>}
+            </form>
           </div>
           <div>
             <h3>Exam Guides</h3>

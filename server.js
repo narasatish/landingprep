@@ -443,10 +443,11 @@ app.post("/api/ai-tutor/generate", async (req, res) => {
 // otherwise, so the site works either way.
 const AUTH_SECRET = process.env.AUTH_SECRET || crypto.createHash("sha256").update(GEMINI_API_KEY + "|landingprep-auth").digest("hex");
 const STORE_PATH = path.join(__dirname, "data", "auth-store.json");
-let STORE = { users: {}, history: {} };
+let STORE = { users: {}, history: {}, subscribers: {} };
 (function loadStore() {
   try { STORE = JSON.parse(fs.readFileSync(STORE_PATH, "utf8")); }
-  catch (_) { STORE = { users: {}, history: {} }; }
+  catch (_) { STORE = { users: {}, history: {}, subscribers: {} }; }
+  if (!STORE.subscribers) STORE.subscribers = {}; // newsletter sign-ups without an account
 })();
 let saveTimer = null;
 function persist() {
@@ -573,10 +574,25 @@ app.get("/api/newsletter/unsubscribe", (req, res) => {
   const token = String(req.query.token || "");
   if (!validEmail(email) || token !== unsubToken(email)) return res.status(400).send("Invalid or expired unsubscribe link.");
   if (STORE.users[email]) { STORE.users[email].noNewsletter = true; persistUser(email); }
+  if (STORE.subscribers && STORE.subscribers[email]) { delete STORE.subscribers[email]; persist(); }
   res.set("Content-Type", "text/html").send(
     "<div style='font-family:system-ui;max-width:540px;margin:60px auto;text-align:center'>" +
     "<h2>You're unsubscribed ✅</h2><p style='color:#475569'>You won't receive LandingPrep newsletters anymore. " +
     "You can re-enable them anytime from your account. <a href='https://landingprep.com/'>Back to LandingPrep</a></p></div>");
+});
+
+// Public newsletter sign-up (no account needed) — grows the owned email list.
+app.post("/api/newsletter/subscribe", (req, res) => {
+  const email = String((req.body && req.body.email) || "").trim().toLowerCase();
+  const source = String((req.body && req.body.source) || "site").slice(0, 40);
+  if (!validEmail(email)) return res.status(400).json({ error: "Enter a valid email address." });
+  if (!STORE.subscribers[email] && !STORE.users[email]) {
+    STORE.subscribers[email] = { email, source, ts: Date.now() };
+    persist();
+    // fire-and-forget welcome (only actually sends if SMTP is configured)
+    try { sendMail(email, "Welcome to LandingPrep 🎓", emailTemplate("welcome", { NAME: "there" })); } catch (e) {}
+  }
+  res.json({ ok: true });
 });
 
 // Admin-only: send the weekly newsletter to all opted-in users.
@@ -587,7 +603,11 @@ app.post("/api/admin/send-newsletter", async (req, res) => {
   if (!mailer()) return res.status(503).json({ error: "SMTP not configured — set SMTP_PASS." });
   const { subject, headline, body } = req.body || {};
   if (!subject || !body) return res.status(400).json({ error: "subject and body are required." });
-  const recipients = Object.values(STORE.users).filter((u) => u && validEmail(u.email) && !u.noNewsletter);
+  // Recipients = opted-in account holders + standalone newsletter subscribers (deduped by email).
+  const byEmail = {};
+  for (const u of Object.values(STORE.users)) if (u && validEmail(u.email) && !u.noNewsletter) byEmail[u.email.toLowerCase()] = { name: u.name, email: u.email };
+  for (const s of Object.values(STORE.subscribers || {})) if (s && validEmail(s.email)) byEmail[s.email.toLowerCase()] = byEmail[s.email.toLowerCase()] || { name: "", email: s.email };
+  const recipients = Object.values(byEmail);
   let sent = 0, failed = 0;
   for (const u of recipients) {
     const html = emailTemplate("newsletter", {
