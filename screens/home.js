@@ -310,7 +310,7 @@ function TopBar({ current = "home", onNav }) {
   };
   const items = [
     ["home", "Home"],
-    ["exam-prep", "Exams"],
+    ["exam-prep", "Mock Tests"],
     ["exams", "Exam Guides"],
     ["learn", "Learn"],
     ["colleges", "Study Abroad"],
@@ -320,7 +320,7 @@ function TopBar({ current = "home", onNav }) {
   ];
   const drawerItems = [
     ["home", "Home"],
-    ["exam-prep", "Exams"],
+    ["exam-prep", "Mock Tests"],
     ["exams", "Exam Guides"],
     ["learn", "\u{1F4DA} Learn (Lessons + Club)"],
     ["writing-checker", "\u{1F3AF} AI Band-Score Checker"],

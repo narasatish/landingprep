@@ -514,7 +514,7 @@ function TopBar({ current = "home", onNav }) {
   // Progress live in the profile menu + mobile drawer.
   const items = [
     ["home", "Home"],
-    ["exam-prep", "Exams"],
+    ["exam-prep", "Mock Tests"],
     ["exams", "Exam Guides"],
     ["learn", "Learn"],
     ["colleges", "Study Abroad"],
@@ -525,7 +525,7 @@ function TopBar({ current = "home", onNav }) {
   // The slide-out drawer (mobile) offers the full set for discoverability.
   const drawerItems = [
     ["home", "Home"],
-    ["exam-prep", "Exams"],
+    ["exam-prep", "Mock Tests"],
     ["exams", "Exam Guides"],
     ["learn", "📚 Learn (Lessons + Club)"],
     ["writing-checker", "🎯 AI Band-Score Checker"],

@@ -355,7 +355,7 @@ function mockPage(id) {
     { q: `Can I practise ${e.short} on mobile?`, a: `Yes — ${BRAND} works in any browser on phone, tablet or laptop and even installs as an app for offline study.` },
   ];
   const inner = `
-<p class="crumb"><a href="/">Home</a> › <a href="/#/exam-prep">Exams</a> › ${e.name} mock test</p>
+<p class="crumb"><a href="/">Home</a> › <a href="/#/exam-prep">Mock Tests</a> › ${e.name} mock test</p>
 <section class="hero">
   <div class="badges"><span class="badge">100% Free</span><span class="badge">Real exam timing</span><span class="badge">Instant scoring</span><span class="badge">No signup</span></div>
   <h1>Free ${e.name} Mock Test 2026</h1>
@@ -386,7 +386,7 @@ ${relatedGrid([
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     courseJsonLd(id, `${e.name} Mock Test`, desc),
     faqJsonLd(faqs),
-    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Exams", path: "/#/exam-prep" }, { name: `${e.name} Mock Test`, path }]),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Mock Tests", path: "/#/exam-prep" }, { name: `${e.name} Mock Test`, path }]),
   ] }) + shell(inner));
 }
 
@@ -402,7 +402,7 @@ function practicePage(id) {
     { q: `Do I get answer explanations?`, a: `Yes — every objective question shows the correct answer, and you can ask the AI tutor to explain the reasoning.` },
   ];
   const inner = `
-<p class="crumb"><a href="/">Home</a> › <a href="/#/exam-prep">Exams</a> › ${e.name} practice</p>
+<p class="crumb"><a href="/">Home</a> › <a href="/#/exam-prep">Mock Tests</a> › ${e.name} practice</p>
 <section class="hero">
   <div class="badges"><span class="badge">Free forever</span><span class="badge">Section drills</span><span class="badge">Answer explanations</span></div>
   <h1>${e.name} Practice Test (Online &amp; Free)</h1>
@@ -429,7 +429,7 @@ ${relatedGrid([
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     courseJsonLd(id, `${e.name} Practice Test`, desc),
     faqJsonLd(faqs),
-    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Exams", path: "/#/exam-prep" }, { name: `${e.name} Practice`, path }]),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Mock Tests", path: "/#/exam-prep" }, { name: `${e.name} Practice`, path }]),
   ] }) + shell(inner));
 }
 
@@ -446,7 +446,7 @@ function eligibilityPage(slug) {
     { q: `How do I reach the ${e.short} score for ${d.country}?`, a: `Practise free on ${BRAND} with full ${e.name} mocks, section drills and AI feedback until you consistently hit your target.` },
   ];
   const inner = `
-<p class="crumb"><a href="/">Home</a> › <a href="/#/exam-prep">Exams</a> › ${e.short} for ${d.country}</p>
+<p class="crumb"><a href="/">Home</a> › <a href="/#/exam-prep">Mock Tests</a> › ${e.short} for ${d.country}</p>
 <section class="hero">
   <div class="badges"><span class="badge">${d.flag} ${d.country}</span><span class="badge">Updated 2026</span><span class="badge">Free practice</span></div>
   <h1>${e.name} Score for ${d.country} ${d.flag}</h1>
@@ -476,7 +476,7 @@ ${relatedGrid([
 ])}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     faqJsonLd(faqs),
-    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Exams", path: "/#/exam-prep" }, { name: `${e.short} for ${d.country}`, path }]),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Mock Tests", path: "/#/exam-prep" }, { name: `${e.short} for ${d.country}`, path }]),
   ] }) + shell(inner));
 }
 
