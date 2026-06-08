@@ -305,6 +305,16 @@ img { max-width: 100%; display: block; }
 }
 @media (min-width: 1100px) { .menu-btn { display: none; } }
 
+/* Mobile header fit: on narrow phones the brand wordmark + icons + auth button +
+   menu overflow the viewport (horizontal scroll, auth button cut off). Hide the
+   wordmark (the logo mark stays) so everything fits cleanly. overflow-x:clip is a
+   belt-and-suspenders guard that never breaks the sticky header. */
+@media (max-width: 480px) {
+  body { overflow-x: clip; }
+  .topbar-inner { gap: 10px; }
+  .brand-name { display: none; }
+}
+
 /* ───────── Marquee row ───────── */
 
 .marquee {
