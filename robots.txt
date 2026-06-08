@@ -78,9 +78,3 @@ Sitemap: https://landingprep.com/sitemap.xml
 
 # Feed for blog posts
 Sitemap: https://landingprep.com/feed.xml
-
-# Cache settings: aggressive caching for free content
-Cache-Control: public, max-age=86400
-
-# Crawl-delay: no delays — we want fast indexing
-Crawl-delay: 0

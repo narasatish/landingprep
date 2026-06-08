@@ -168,6 +168,7 @@ function Home({ onGuide, onPractice, onNav }) {
       <window.LP_TopBar current="home" onNav={onNav} />
       <window.LP_Marquee />
 
+      <main id="main-content">
       {/* Hero */}
       <section className="hero">
         <div className="shell">
@@ -467,6 +468,7 @@ function Home({ onGuide, onPractice, onNav }) {
         </div>
       </section>
 
+      </main>
       <window.LP_Footer />
     </>
   );

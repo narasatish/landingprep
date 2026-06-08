@@ -2725,12 +2725,6 @@ Sitemap: ${ORIGIN}/sitemap.xml
 
 # Feed for blog posts
 Sitemap: ${ORIGIN}/feed.xml
-
-# Cache settings: aggressive caching for free content
-Cache-Control: public, max-age=86400
-
-# Crawl-delay: no delays — we want fast indexing
-Crawl-delay: 0
 `);
 
 // ── llms.txt + llms-full.txt (AI / answer-engine discovery — GEO) ────────────
