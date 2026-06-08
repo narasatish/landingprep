@@ -311,7 +311,7 @@ function TopBar({ current = "home", onNav }) {
   const items = [
     ["home", "Home"],
     ["exam-prep", "Exams"],
-    ["exams", "Exam Hub"],
+    ["exams", "Exam Guides"],
     ["learn", "Learn"],
     ["colleges", "Study Abroad"],
     ["tools", "Tools"],
