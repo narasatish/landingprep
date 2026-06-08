@@ -34,6 +34,7 @@ const HUB_LINKS = [
   { label: "Test requirements by country", href: "/exam-requirements-by-country/" },
   { label: "How LandingPrep works", href: "/how-it-works/" },
   { label: "Free alternatives", href: "/free-alternatives/" },
+  { label: "Embed widget", href: "/embed/" },
   { label: "Blog", href: "/blog/" },
   { label: "Explore all pages", href: "/explore/" },
 ];
@@ -1173,10 +1174,55 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+function embedPage() {
+  const path = `/embed/`;
+  const title = `Free Score Converter Widget — Embed IELTS↔TOEFL↔PTE`;
+  const desc = `Embed LandingPrep's free IELTS to TOEFL, PTE, CEFR & Duolingo score converter on your website or blog with one line of HTML. Free forever, no signup, mobile-friendly.`;
+  const kw = `embed score converter, ielts toefl converter widget, free study abroad widget, ielts conversion tool embed, free education widget`;
+  const snippet = `<iframe src="https://landingprep.com/embed/score-converter/" width="100%" height="440" style="border:1px solid #eef0f3;border-radius:14px;max-width:480px" title="IELTS to TOEFL and PTE score converter" loading="lazy"></iframe>
+<p style="font:14px system-ui">Free <a href="https://landingprep.com/">IELTS to TOEFL &amp; PTE score converter</a> by LandingPrep</p>`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › Embeddable widgets</p>
+<section class="hero">
+  <div class="badges"><span class="badge">Free to embed</span><span class="badge">No signup</span><span class="badge">One line of HTML</span></div>
+  <h1>Free Score Converter Widget</h1>
+  <p class="lead">Add a free IELTS ↔ TOEFL ↔ PTE ↔ CEFR ↔ Duolingo score converter to your website, blog or student portal — genuinely useful for your readers, and free forever.</p>
+</section>
+<div class="card">
+  <h2>Live preview</h2>
+  <iframe src="/embed/score-converter/" width="100%" height="450" style="border:1px solid #e5e7eb;border-radius:14px;max-width:480px" title="Score converter preview" loading="lazy"></iframe>
+  <p style="font-size:13px;margin-top:10px"><a href="/embed/score-converter/">Open the score converter in its own page →</a></p>
+</div>
+<div class="card">
+  <h2>Copy this snippet to embed it</h2>
+  <p>Paste this anywhere in your site's HTML — that is all it takes. Keeping the credit link is appreciated and helps us keep the tool free.</p>
+  <pre style="white-space:pre-wrap;word-break:break-word;background:#f1f5f9;color:#0f172a;padding:14px;border-radius:10px;font-size:13px;overflow:auto">${esc(snippet)}</pre>
+</div>
+<div class="card">
+  <h2>Why embed it?</h2>
+  <ul>
+    <li>Instantly useful for IELTS, TOEFL and PTE candidates browsing your site.</li>
+    <li>Mobile-friendly and fast; adapts to light or dark mode automatically.</li>
+    <li>100% free — no API key, no signup, and it never tracks your visitors.</li>
+  </ul>
+</div>
+${relatedGrid([
+  { label: `🎯 Free mock tests`, href: `/#/exam-prep` },
+  { label: `🔁 Full score &amp; eligibility tools`, href: `/#/tools` },
+  { label: `🏛️ Free college predictor`, href: `/#/colleges` },
+])}`;
+  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "LandingPrep Score Converter", url: ORIGIN + path,
+      applicationCategory: "EducationApplication", operatingSystem: "Any (web)", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Embeddable widgets", path }]),
+  ] }) + shell(inner));
+}
+
 // ── Generate everything ─────────────────────────────────────────────────────
 aboutPage();
 privacyPage();
 termsPage();
+embedPage();
 Object.keys(EXAMS).forEach((id) => { mockPage(id); practicePage(id); });
 COUNTRY_DATA.forEach((co) => { costPage(co); SEO_FIELDS.forEach((f) => studyFieldPage(f, co)); });
 COLLEGES.forEach(universityPage);
@@ -2731,6 +2777,8 @@ PAGES.forEach(({ path, html }) => {
 const urls = [
   { loc: `${ORIGIN}/`, freq: "daily", pri: "1.0" },
   ...PAGES.map((p) => ({ loc: ORIGIN + p.path, freq: "weekly", pri: "0.8" })),
+  // Standalone embeddable widget (hand-authored static file, not emitted via the generator).
+  { loc: `${ORIGIN}/embed/score-converter/`, freq: "monthly", pri: "0.6" },
 ];
 // The SPA homepage ships a fresh build every deploy, so it legitimately changes.
 lastmodFor.set(`${ORIGIN}/`, BUILD_DATE);
