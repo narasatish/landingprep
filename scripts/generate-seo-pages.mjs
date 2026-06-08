@@ -1218,11 +1218,108 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// ── PR / immigration exam pages — high-intent, real CLB/points data ───────────
+const PR_COMBOS = [
+  { exam: "IELTS", co: "Canada", flag: "🇨🇦", slug: "ielts-for-canada-pr",
+    sys: "Canada's Express Entry ranks candidates using the Canadian Language Benchmarks (CLB). For permanent residence you take IELTS General Training (not Academic).",
+    min: "CLB 7 — about IELTS 6.0 in each of Listening, Reading, Writing and Speaking — is the usual minimum for Express Entry programs such as the Federal Skilled Worker stream.",
+    top: "CLB 9 — roughly Listening 8.0, Reading 7.0, Writing 7.0, Speaking 7.0 — earns the maximum Comprehensive Ranking System (CRS) language points plus valuable skill-transferability and spouse points.",
+    why: "Language is one of the biggest CRS levers: moving from CLB 7 to CLB 9 can add 50–100+ points, often the difference between getting an Invitation to Apply or not.",
+    tip: "Use IELTS General Training, scores are valid 2 years, and Canada also accepts CELPIP and (since 2024) PTE Core for economic PR. Always confirm current CLB rules with IRCC.",
+    faqs: [{ q: "What IELTS score do I need for Canada PR?", a: "CLB 7 (about IELTS 6.0 in each band) is the common minimum, but CLB 9 (roughly L8.0/R7.0/W7.0/S7.0) maximizes your CRS points. Confirm your program's requirement with IRCC." },
+      { q: "IELTS Academic or General Training for Canada PR?", a: "General Training. Academic is for university admission; Express Entry requires IELTS General Training." }] },
+  { exam: "CELPIP", co: "Canada", flag: "🇨🇦", slug: "celpip-for-canada-pr",
+    sys: "CELPIP-General is a fully computer-based English test designed for Canadian immigration, scored directly on the Canadian Language Benchmarks (CLB) scale.",
+    min: "CLB 7 (CELPIP level 7 in each skill) is the usual Express Entry minimum; many Provincial Nominee streams also accept CLB 5–7.",
+    top: "CLB 9 (CELPIP level 9 in each of Listening, Reading, Writing and Speaking) earns the maximum CRS language points — the same target as IELTS CLB 9.",
+    why: "Because CELPIP levels map one-to-one to CLB, scoring is easy to interpret, and results arrive in about 3 days — useful when an Express Entry draw is close.",
+    tip: "CELPIP is taken inside Canada and at select centres abroad; scores are valid 2 years. Confirm the current CLB requirement with IRCC.",
+    faqs: [{ q: "Is CELPIP easier than IELTS for Canada PR?", a: "Many candidates find CELPIP more relatable because it uses Canadian English and a computer-based speaking test, but neither is objectively easier — pick the format you are most comfortable with." },
+      { q: "How fast are CELPIP results?", a: "Typically about 3 calendar days, faster than IELTS, which helps when an Express Entry round is imminent." }] },
+  { exam: "PTE", co: "Canada", flag: "🇨🇦", slug: "pte-for-canada-pr",
+    sys: "Since January 2024, IRCC accepts PTE Core for economic permanent-residence programs. PTE Core scores map to the Canadian Language Benchmarks (CLB).",
+    min: "Aim for the PTE Core scores that correspond to CLB 7 in each skill — the common Express Entry minimum. Use the official PTE Core to CLB table for the exact numbers.",
+    top: "PTE Core scores corresponding to CLB 9 in every skill earn the maximum CRS language points, the same target as IELTS or CELPIP CLB 9.",
+    why: "PTE Core is computer-marked with fast results, so it is a strong option for raising your CLB and therefore your CRS score quickly.",
+    tip: "Use PTE Core (not PTE Academic) for Canadian economic immigration. Confirm the current PTE Core to CLB mapping and acceptance with IRCC.",
+    faqs: [{ q: "Does Canada accept PTE for PR?", a: "Yes — IRCC accepts PTE Core (not PTE Academic) for economic PR programs as of 2024. Scores map to CLB; confirm the current table with IRCC." },
+      { q: "PTE Core or PTE Academic for Canada PR?", a: "PTE Core for immigration; PTE Academic is for university study." }] },
+  { exam: "IELTS", co: "Australia", flag: "🇦🇺", slug: "ielts-for-australia-pr",
+    sys: "Australia's skilled visas (subclass 189/190/491) use a points test. Your English level adds points based on IELTS scores across all four skills.",
+    min: "Competent English — IELTS 6.0 in each of the four skills — is the usual minimum to be eligible, but it adds 0 points.",
+    top: "Proficient English (IELTS 7.0 in each) adds 10 points; Superior English (IELTS 8.0 in each) adds 20 points — a major boost to your SkillSelect ranking.",
+    why: "Those 10–20 English points often decide whether you reach the points cut-off for an invitation, so pushing each band from 7 to 8 is high-value.",
+    tip: "All four skills must hit the band for the points tier — one 7.5 among 8.0s drops you to the lower tier. Scores are valid 3 years for migration. Confirm current rules with the Department of Home Affairs.",
+    faqs: [{ q: "What IELTS score gives 20 points for Australia PR?", a: "Superior English — IELTS 8.0 in each of Listening, Reading, Writing and Speaking — adds 20 points. IELTS 7.0 in each adds 10 points." },
+      { q: "Is IELTS Academic or General for Australia PR?", a: "Either is accepted for the points test; check your specific visa and assessing authority, and confirm with the Department of Home Affairs." }] },
+  { exam: "PTE", co: "Australia", flag: "🇦🇺", slug: "pte-for-australia-pr",
+    sys: "PTE Academic is widely used for Australian skilled migration. The Department of Home Affairs converts PTE scores to the same English point tiers as IELTS.",
+    min: "Competent English — PTE 50 in each skill (≈ IELTS 6.0) — is the usual minimum and adds 0 points.",
+    top: "Proficient — PTE 65 in each (≈ IELTS 7.0) — adds 10 points; Superior — PTE 79 in each (≈ IELTS 8.0) — adds 20 points.",
+    why: "PTE's computer scoring and fast (≈5 day) results make it a popular way to chase the 20-point Superior tier that lifts your SkillSelect rank.",
+    tip: "All four communicative skills must reach the threshold for the tier. PTE scores are valid 3 years for migration. Confirm current points rules with the Department of Home Affairs.",
+    faqs: [{ q: "What PTE score is 20 points for Australia PR?", a: "PTE 79 in each of the four skills (Superior English, ≈ IELTS 8.0) adds 20 points; PTE 65 in each adds 10 points." },
+      { q: "Is PTE easier than IELTS for Australia PR?", a: "Many find PTE's computer-marked speaking less stressful and results faster, but difficulty is personal — both map to the same points tiers." }] },
+  { exam: "IELTS", co: "the UK", flag: "🇬🇧", slug: "ielts-for-uk-visa",
+    sys: "UK work and settlement routes require proof of English at a set CEFR level, taken as an approved Secure English Language Test (IELTS for UKVI).",
+    min: "The Skilled Worker visa requires CEFR B1 — about IELTS 4.0 in each skill — while some routes and settlement (ILR) require B2.",
+    top: "CEFR B2 — about IELTS 5.5–6.0 in each skill — covers most higher requirements, including many study and settlement routes.",
+    why: "Using the correct UKVI-approved test the first time avoids a rejected application; the wrong IELTS version is a common, costly mistake.",
+    tip: "You must book IELTS for UKVI (not the standard IELTS) at an approved centre for visa purposes. Confirm the exact CEFR level for your route on GOV.UK.",
+    faqs: [{ q: "What IELTS do I need for a UK work visa?", a: "The Skilled Worker visa needs CEFR B1 (about IELTS 4.0 each); always book IELTS for UKVI and confirm your route's level on GOV.UK." },
+      { q: "Is IELTS for UKVI different from normal IELTS?", a: "Same test content, but UKVI versions are taken at approved centres and are the ones accepted for UK visas. Book the UKVI version for immigration." }] },
+  { exam: "PTE", co: "the UK", flag: "🇬🇧", slug: "pte-for-uk-visa",
+    sys: "PTE offers UKVI-approved tests (PTE Academic UKVI and PTE Home) accepted as Secure English Language Tests for UK visa and settlement routes.",
+    min: "PTE Home A1/A2/B1 covers family and some settlement routes; the Skilled Worker visa needs CEFR B1, met by the relevant PTE level.",
+    top: "PTE Academic UKVI at CEFR B2 covers study and higher visa requirements; check the exact level your route needs.",
+    why: "Choosing the right PTE UKVI/Home version for your specific route prevents a refusal and the cost of re-testing.",
+    tip: "Book PTE Academic UKVI or PTE Home (as required) at an approved centre. Confirm the CEFR level for your route on GOV.UK.",
+    faqs: [{ q: "Does the UK accept PTE for visas?", a: "Yes — PTE Academic UKVI and PTE Home are approved Secure English Language Tests for UK visa routes. Book the version your route requires." },
+      { q: "PTE Home or PTE Academic UKVI?", a: "PTE Home is for family/settlement routes (A1–B1); PTE Academic UKVI is for study and higher-level requirements. Check GOV.UK for your route." }] },
+  { exam: "IELTS", co: "New Zealand", flag: "🇳🇿", slug: "ielts-for-new-zealand-pr",
+    sys: "New Zealand's Skilled Migrant Category and many work-to-residence pathways require evidence of English, commonly via IELTS.",
+    min: "The Skilled Migrant Category typically requires IELTS 6.5 overall (or an accepted equivalent such as PTE or TOEFL).",
+    top: "A stronger overall band (7.0+) helps with competitive points and some occupational registration bodies that set higher thresholds.",
+    why: "Meeting the English requirement is mandatory for residence, and a higher score smooths professional registration in fields like nursing and teaching.",
+    tip: "IELTS scores are valid 2 years; New Zealand also accepts PTE Academic, TOEFL iBT and others. Confirm the current requirement with Immigration New Zealand.",
+    faqs: [{ q: "What IELTS score for New Zealand residence?", a: "The Skilled Migrant Category usually requires IELTS 6.5 overall or an accepted equivalent. Confirm the current rule with Immigration New Zealand." },
+      { q: "Does New Zealand accept PTE instead of IELTS?", a: "Yes — PTE Academic, TOEFL iBT and other approved tests are accepted at equivalent levels. Check Immigration New Zealand for the current list." }] },
+];
+function prExamPage(c) {
+  const path = `/${c.slug}/`;
+  const title = `${c.exam} Score for ${c.co} PR 2026 — Requirements & Points`;
+  const desc = `${c.exam} requirements for ${c.co} PR / immigration in 2026: the minimum and competitive scores, how they convert to points, and tips. Free ${c.exam} practice on LandingPrep.`;
+  const kw = `${c.exam.toLowerCase()} for ${c.co.toLowerCase()} pr, ${c.exam.toLowerCase()} score ${c.co.toLowerCase()} immigration, ${c.exam.toLowerCase()} ${c.co.toLowerCase()} pr requirement 2026, ${c.co.toLowerCase()} pr english test, ${c.exam.toLowerCase()} ${c.co.toLowerCase()} visa score`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/relocate">Immigration</a> › ${c.exam} for ${c.co} PR</p>
+<section class="hero">
+  <div class="badges"><span class="badge">${c.flag} ${c.co} PR</span><span class="badge">${c.exam}</span><span class="badge">Free practice</span></div>
+  <h1>${c.exam} Score for ${c.co} PR — Requirements &amp; Points</h1>
+  <p class="lead">${c.sys}</p>
+</section>
+<div class="card"><h2>The minimum you need</h2><p>${c.min}</p></div>
+<div class="card"><h2>The competitive (high-points) target</h2><p>${c.top}</p></div>
+<div class="card"><h2>Why your score matters</h2><p>${c.why}</p></div>
+<div class="card"><h2>Key tips</h2><p>${c.tip}</p></div>
+<div class="card"><h2>Practice free for your ${c.exam}</h2><p>Take full-length, real-timing ${c.exam} mock tests free on LandingPrep — with instant scoring and AI feedback so you hit your ${c.co} PR target faster. <a href="/#/exam-prep">Start a free ${c.exam} mock test →</a></p></div>
+${faqBlock(c.faqs)}
+${relatedGrid([
+  { label: `🎯 Free ${c.exam} mock tests`, href: `/#/exam-prep` },
+  { label: `✈️ Move abroad checklist`, href: `/#/relocate` },
+  { label: `🔁 Score converter`, href: `/embed/` },
+])}`;
+  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
+    faqJsonLd(c.faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Immigration", path: "/#/relocate" }, { name: `${c.exam} for ${c.co} PR`, path }]),
+  ] }) + shell(inner));
+}
+
 // ── Generate everything ─────────────────────────────────────────────────────
 aboutPage();
 privacyPage();
 termsPage();
 embedPage();
+PR_COMBOS.forEach(prExamPage);
 Object.keys(EXAMS).forEach((id) => { mockPage(id); practicePage(id); });
 COUNTRY_DATA.forEach((co) => { costPage(co); SEO_FIELDS.forEach((f) => studyFieldPage(f, co)); });
 COLLEGES.forEach(universityPage);
