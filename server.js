@@ -144,6 +144,14 @@ app.use(["/api/ai-tutor/chat", "/api/ai-tutor/generate"], globalCap({ perMin: AI
 
 app.use(express.json({ limit: "512kb" }));
 
+// 301 redirects for merged/renamed pages (keep old inbound links + SEO equity alive).
+// Registered BEFORE express.static so the redirect wins over any stale file.
+const REDIRECTS = {
+  "/blog/ielts-band-7-in-30-days": "/blog/how-to-get-ielts-band-7/",
+  "/blog/ielts-band-7-in-30-days/": "/blog/how-to-get-ielts-band-7/",
+};
+app.get(Object.keys(REDIRECTS), (req, res) => res.redirect(301, REDIRECTS[req.path] || "/"));
+
 // Serve static files from the same directory
 app.use(express.static(__dirname));
 

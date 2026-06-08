@@ -82,22 +82,6 @@
       ]
     },
     {
-      id: "ielts-band-7-in-30-days",
-      tag: "IELTS",
-      date: "2026",
-      title: "How to Get IELTS Band 7 in 30 Days: A Free Day-by-Day Study Plan",
-      excerpt: "A realistic 30-day plan to reach IELTS Band 7, with daily tasks for Listening, Reading, Writing and Speaking \u2014 using only free resources.",
-      kw: "ielts band 7 in 30 days, ielts study plan, how to get band 7 in ielts, ielts preparation 1 month, free ielts study plan",
-      sections: [
-        { h: "Can you really hit Band 7 in 30 days?", body: "Yes, if you already sit around Band 6\u20136.5 and study 2\u20133 focused hours daily. Band 7 means no band below 6.5 for most universities \u2014 so the fastest gains come from fixing your two weakest skills, not polishing your strongest. Start with a free full mock to find them." },
-        { h: "Week 1 \u2014 Diagnose & fundamentals", body: "Take a baseline mock, learn the exact format and timing of each section, and drill the basics: skimming and scanning for Reading, note-taking for Listening, and a clear 4-paragraph Task 2 structure. Build a daily 20-word academic vocabulary habit." },
-        { h: "Week 2 \u2014 Writing & Speaking (the score-killers)", body: "Most students lose Band 7 in Writing and Speaking. Write one Task 2 essay daily, score it with the rubric, and use the free AI Writing Agent for feedback on Task Response, Coherence, Lexical Resource and Grammar. Record three Speaking answers a day and review fluency and pronunciation." },
-        { h: "Week 3 \u2014 Reading & Listening accuracy", body: "Drill True/False/Not-Given and matching-headings (the biggest Reading traps), and gap-fill Listening for spelling, numbers and plurals. Always review every wrong answer and justify the correct one with the exact line." },
-        { h: "Week 4 \u2014 Full mocks under exam conditions", body: "Sit a timed full mock every two to three days, review thoroughly, and re-drill weak question types. Final two days: light review, sleep well, and prepare your ID and test-day logistics." },
-        { h: "Start free", body: "Build this exact plan automatically with the free LandingPrep Study Planner, then practise with 60 free IELTS mock tests and instant scoring." }
-      ]
-    },
-    {
       id: "ielts-vs-toefl-vs-pte",
       tag: "Comparison",
       date: "2026",
@@ -278,9 +262,9 @@
       id: "how-to-get-ielts-band-7",
       tag: "IELTS",
       date: "2026",
-      title: "How to Get IELTS Band 7 in One Month: A Free Section-by-Section Plan",
+      title: "How to Get IELTS Band 7 in 30 Days (1 Month): Free Study Plan",
       excerpt: "Band 7 needs ~75% accuracy in Listening and Reading plus controlled Writing and Speaking. Here's a realistic 4-week plan to reach it, free.",
-      kw: "how to get ielts band 7, ielts band 7 in one month, ielts band 7 study plan, ielts 7 preparation, free ielts band 7 tips",
+      kw: "how to get ielts band 7, ielts band 7 in 30 days, ielts band 7 in one month, ielts band 7 study plan, ielts band 7 in 1 month, free ielts study plan",
       sections: [
         { h: "What Band 7 actually requires", body: "Band 7 roughly means about 30/40 in Listening and Reading, a Writing response that develops ideas with few errors, and Speaking that is fluent with flexible vocabulary. You do not need perfection \u2014 you need consistency and no weak section dragging your overall down." },
         { h: "Weeks 1\u20132: build accuracy", body: "Do one full Listening and one full Reading section every day and review every mistake \u2014 not just the score. For Reading, master skimming for gist then scanning for keywords; most lost marks come from True/False/Not Given and matching headings. Practise these free on LandingPrep with answer explanations." },
