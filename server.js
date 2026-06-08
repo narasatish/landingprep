@@ -903,27 +903,36 @@ const MON_TARGETS = [
   { path: "/content/gre/quant/test-001.json", marker: "correctAnswer" },
   { path: "/sitemap.xml", marker: "<urlset" },
 ];
+async function monHit(base, tgt) {
+  const t0 = Date.now();
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => { try { ctrl.abort(); } catch (e) {} }, 30000);
+    const r = await fetch(base + tgt.path, { headers: { "x-monitor": "1" }, signal: ctrl.signal });
+    const text = await r.text().catch(() => "");
+    clearTimeout(timer);
+    const markerOk = !tgt.marker || text.includes(tgt.marker);
+    return { ok: r.ok && markerOk, status: r.status, ms: Date.now() - t0, markerOk };
+  } catch (e) {
+    return { ok: false, status: 0, ms: Date.now() - t0, markerOk: true, err: e.message };
+  }
+}
 async function runMonitor() {
   // Resolve and validate monitor base URL against allowlist
   const raw = process.env.MONITOR_BASE || process.env.RENDER_EXTERNAL_URL || process.env.SELF_PING_URL || ("http://localhost:" + PORT);
   const base = validateMonitorBase(raw).replace(/\/$/, "");
   const results = [];
   for (const tgt of MON_TARGETS) {
-    const t0 = Date.now();
-    try {
-      const ctrl = new AbortController();
-      const timer = setTimeout(() => { try { ctrl.abort(); } catch (e) {} }, 20000);
-      const r = await fetch(base + tgt.path, { headers: { "x-monitor": "1" }, signal: ctrl.signal });
-      const text = await r.text().catch(() => "");
-      clearTimeout(timer);
-      const ms = Date.now() - t0;
-      const ok = r.ok && (!tgt.marker || text.includes(tgt.marker));
-      results.push({ path: tgt.path, status: r.status, ms, ok });
-      if (!ok) sendAlert("monitor:" + tgt.path, "Health check FAILED: " + tgt.path, `HTTP ${r.status}, ${ms}ms, marker ${tgt.marker ? (text.includes(tgt.marker) ? "present" : "MISSING") : "n/a"} @ ${base}`);
-      else if (ms > 9000) sendAlert("slow:" + tgt.path, "Slow page: " + tgt.path, `${ms}ms (HTTP ${r.status})`);
-    } catch (e) {
-      results.push({ path: tgt.path, ok: false, error: e.message });
-      sendAlert("monitor:" + tgt.path, "Page UNREACHABLE: " + tgt.path, String(e.message) + " @ " + base);
+    // Cold-start / transient tolerant: a single blip must NOT email you. Only alert
+    // if the check fails TWICE (retry once after 3s), with a 30s timeout (> cold start).
+    let res = await monHit(base, tgt);
+    if (!res.ok) { await new Promise((r) => setTimeout(r, 3000)); res = await monHit(base, tgt); }
+    results.push({ path: tgt.path, status: res.status, ms: res.ms, ok: res.ok });
+    if (!res.ok) {
+      sendAlert("monitor:" + tgt.path, "Health check FAILED: " + tgt.path,
+        `HTTP ${res.status}, ${res.ms}ms, marker ${tgt.marker ? (res.markerOk ? "present" : "MISSING") : "n/a"}${res.err ? ", " + res.err : ""} @ ${base} (confirmed after retry)`);
+    } else if (res.ms > 9000) {
+      sendAlert("slow:" + tgt.path, "Slow page: " + tgt.path, `${res.ms}ms (HTTP ${res.status})`);
     }
   }
   MONITOR.lastRun = { ts: new Date().toISOString(), base, allOk: results.every((r) => r.ok), results };
