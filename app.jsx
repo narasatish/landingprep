@@ -303,6 +303,19 @@ function App() {
     try { window.LP_REFERRAL && window.LP_REFERRAL.capture(); } catch (e) {}
   }, []);
 
+  // Analytics: GA4 only auto-tracks the FIRST page load, not client-side route
+  // changes — so without this you can't see which tools/screens users actually use.
+  // Fire a page_view + a tool_open (with the screen name) on every in-app navigation.
+  useEffectApp(() => {
+    try {
+      if (window.gtag) {
+        const path = window.location.hash || "#/";
+        window.gtag("event", "page_view", { page_path: path, page_title: String(view) });
+        window.gtag("event", "tool_open", { tool: String(view) });
+      }
+    } catch (e) {}
+  }, [view]);
+
   // Idle-preload the study-abroad data bundle (~79 KB) shortly after boot so it is ready by
   // the time the user opens any college/study-abroad screen — without blocking initial load.
   useEffectApp(() => {

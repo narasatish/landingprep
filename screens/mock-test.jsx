@@ -460,6 +460,7 @@ function MockTest({ exam, testCfg, onBack, onNav }) {
   }, [phase, timeLeft]);
 
   function startTest(type) {
+    try { if (window.gtag) window.gtag("event", "mock_test_started", { exam: exam && exam.id, test_type: type }); } catch (e) {}
     const cfg = buildTest(exam.id, type);
     setConfig(cfg);
     setAnswers({});

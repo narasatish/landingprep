@@ -86,6 +86,7 @@
           setSession(data.user, data.token);
           notify(data.user);
           pushHistory(); // upload any locally-stored history to the new account
+          try { if (window.gtag) window.gtag("event", "sign_up", { method: "email" }); if (window.LP_REFERRAL) window.LP_REFERRAL.trackSignup(); } catch (e) {}
           return { ok: true, user: data.user };
         }
         if (status === 409) return { ok: false, error: data.error || "An account with this email already exists. Try signing in." };

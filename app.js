@@ -247,6 +247,16 @@ function App() {
     }
   }, []);
   useEffectApp(() => {
+    try {
+      if (window.gtag) {
+        const path = window.location.hash || "#/";
+        window.gtag("event", "page_view", { page_path: path, page_title: String(view) });
+        window.gtag("event", "tool_open", { tool: String(view) });
+      }
+    } catch (e) {
+    }
+  }, [view]);
+  useEffectApp(() => {
     const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1800));
     idle(() => {
       if (window.LP_loadScript && typeof window.LP_COLLEGES === "undefined") {

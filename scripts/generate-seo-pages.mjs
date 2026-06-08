@@ -2730,7 +2730,16 @@ Sitemap: ${ORIGIN}/feed.xml
 // ── llms.txt + llms-full.txt (AI / answer-engine discovery — GEO) ────────────
 const llms = `# LandingPrep — 100% Free Exam Prep & Study Abroad
 
-LandingPrep is a 100% free platform for English-test preparation, language learning, and studying abroad. Everything is free forever — no signup, no credit card, no paywall. Used by students in India, USA, UK, Canada, Australia, Germany, and 180+ countries.
+> LandingPrep is a 100% free platform for English-test preparation, language learning, and studying abroad. Everything is free forever — no signup, no credit card, no paywall. Used by students in India, USA, UK, Canada, Australia, Germany, and 180+ countries.
+
+## Key pages
+- [Free IELTS mock tests](${ORIGIN}/mock-test/ielts/): full Academic & General mocks with instant band scoring (also TOEFL, PTE, CELPIP, Duolingo, GRE, GMAT)
+- [Which English test should I take?](${ORIGIN}/which-english-test/): compare IELTS, TOEFL, PTE, CELPIP & Duolingo
+- [Explore all free tools & practice](${ORIGIN}/explore/): the full LandingPrep hub
+- [College predictor & study abroad](${ORIGIN}/#/colleges): admission chances across 99+ universities
+- [Scholarships for international students](${ORIGIN}/scholarships/): fully-funded & partial awards
+- [Free alternatives to paid prep](${ORIGIN}/free-alternatives/): a genuinely free option vs. paid coaching
+- [Blog & study-abroad guides](${ORIGIN}/blog/): exam strategy, visa and scholarship guides
 
 ## Core Services (All Free)
 
