@@ -347,7 +347,7 @@ function mockPage(id) {
   const e = EXAMS[id];
   const path = `/mock-test/${id}/`;
   const title = `Free ${e.name} Mock Test 2026 — Full-Length Practice Online | ${BRAND}`;
-  const desc = `Take a free full-length ${e.name} mock test online with real exam timing, ${e.sections} sections and instant scoring. No signup, no payment — built for students in India and worldwide.`;
+  const desc = `Take a free full-length ${e.name} mock test online with real exam timing, ${e.sections} sections and instant scoring. No signup, no payment — built for students worldwide.`;
   const kw = `free ${e.short.toLowerCase()} mock test 2026, ${e.short.toLowerCase()} mock test online no signup, free ${e.short.toLowerCase()} practice test for indian students, ${e.name} mock test with answers, ${e.short.toLowerCase()} sample test free, ${e.short.toLowerCase()} full test india`;
   const faqs = [
     { q: `Is this ${e.name} mock test really free?`, a: `Yes. Every ${e.name} mock test on ${BRAND} is 100% free with no signup, no credit card and no hidden paywall.` },

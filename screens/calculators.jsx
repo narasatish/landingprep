@@ -67,7 +67,7 @@
     const [amount, setAmount] = useState("");
     const [rate, setRate] = useState("11");
     const [years, setYears] = useState("8");
-    const [cur, setCur] = useState("₹");
+    const [cur, setCur] = useState("$");
     const P = parseFloat(amount), R = parseFloat(rate), Y = parseFloat(years);
     let emi = null, total = null, interest = null;
     if (P > 0 && R >= 0 && Y > 0) {
@@ -75,7 +75,7 @@
       emi = r === 0 ? P / n : P * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
       total = emi * n; interest = total - P;
     }
-    const fmt = (x) => cur + " " + Math.round(x).toLocaleString("en-IN");
+    const fmt = (x) => cur + " " + Math.round(x).toLocaleString(cur === "₹" ? "en-IN" : "en-US");
     return (
       <div className="tool-card">
         <h2>💰 Education Loan EMI Calculator</h2>
@@ -83,7 +83,7 @@
         <div className="tool-row">
           <label>Currency
             <select value={cur} onChange={e => setCur(e.target.value)}>
-              <option value="₹">₹ INR</option><option value="$">$ USD</option><option value="£">£ GBP</option><option value="€">€ EUR</option>
+              <option value="$">$ USD</option><option value="€">€ EUR</option><option value="£">£ GBP</option><option value="₹">₹ INR</option>
             </select>
           </label>
           <label>Loan amount

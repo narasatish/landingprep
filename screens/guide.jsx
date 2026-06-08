@@ -243,7 +243,6 @@ function RegistrationTab({ exam }) {
 function FeesTab({ exam }) {
   if (window.LP_LIVE && window.LP_LIVE.useLive) window.LP_LIVE.useLive();
   const live = window.LP_LIVE ? window.LP_LIVE.examFee(exam.id) : null;
-  const inr = (live && live.inr) || exam.fees.inr;
   const usd = (live && live.usd) || exam.fees.usd;
   const stamp = (live && live.updated) || (window.LP_LIVE && window.LP_LIVE.updatedAt());
   return (
@@ -252,8 +251,7 @@ function FeesTab({ exam }) {
       <p>Fees vary by country, delivery format (centre vs. home), and applicable taxes. The figures below are typical at time of writing — always confirm the current amount on the official site before checkout.</p>
       {stamp && <div className="live-note">💰 Fees shown are current as of <strong>{stamp}</strong> and update automatically when our team refreshes them.</div>}
       <dl style={{ margin: "20px 0 0", padding: 0 }}>
-        <div className="row"><dt>India (INR)</dt><dd>{inr}</dd></div>
-        <div className="row"><dt>International (USD)</dt><dd>{usd}</dd></div>
+        <div className="row"><dt>Test fee (USD)</dt><dd>{usd}</dd></div>
         <div className="row"><dt>Rescheduling fee</dt><dd>Varies — typically 25–30% of the full test fee if rescheduled within 14 days. Free cancellations vary by provider and timing.</dd></div>
         <div className="row"><dt>Score reporting</dt><dd>Some providers include free score reports; additional reports typically cost $20–30 each.</dd></div>
         <div className="row"><dt>Payment methods</dt><dd>Credit/debit card (Visa, Mastercard). Some providers accept net banking. Always pay through the official site only.</dd></div>
