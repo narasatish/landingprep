@@ -139,6 +139,21 @@ function globalCap({ perMin, perDay, label }) {
     next();
   };
 }
+// ── TTS cache: identical (text, voice, lang) → identical audio. We serve cached
+// audio BEFORE the rate limiter, so fixed listening content (the same audio for
+// every student) bypasses the 3/min free-tier cap and loads instantly. This is
+// the single biggest reliability win for the listening feature at scale.
+const TTS_CACHE = new Map(); // key -> { audio, ts }  (in-memory, bounded)
+const _ttsKey = (b) => require("crypto").createHash("sha1")
+  .update(JSON.stringify([String((b && b.text) || "").slice(0, 2000), (b && b.voice) || "Kore", (b && b.lang) || "en"]))
+  .digest("hex");
+app.use("/api/tts", express.json({ limit: "512kb" }), (req, res, next) => {
+  try {
+    const hit = TTS_CACHE.get(_ttsKey(req.body || {}));
+    if (hit) { res.set("Cache-Control", "public, max-age=86400"); return res.json({ audio: hit.audio, cached: true }); }
+  } catch (e) {}
+  next();
+});
 app.use("/api/tts", globalCap({ perMin: TTS_RPM, perDay: TTS_RPD, label: "Natural voice" }));
 app.use(["/api/ai-tutor/chat", "/api/ai-tutor/generate"], globalCap({ perMin: AI_RPM, perDay: AI_RPD, label: "AI tutor" }));
 
@@ -196,6 +211,8 @@ app.post("/api/tts", async (req, res) => {
     const j = await r.json();
     const b64 = j && j.candidates && j.candidates[0] && j.candidates[0].content && j.candidates[0].content.parts && j.candidates[0].content.parts[0] && j.candidates[0].content.parts[0].inlineData && j.candidates[0].content.parts[0].inlineData.data;
     if (!b64) return res.status(502).json({ error: "empty audio" });
+    // Cache so the next request for the same audio is instant + free (bounded LRU).
+    try { TTS_CACHE.set(_ttsKey(req.body || {}), { audio: b64, ts: Date.now() }); if (TTS_CACHE.size > 400) TTS_CACHE.delete(TTS_CACHE.keys().next().value); } catch (e) {}
     res.set("Cache-Control", "public, max-age=86400");
     res.json({ audio: b64 });
   } catch (e) { res.status(500).json({ error: "tts failed", detail: e.message }); }
