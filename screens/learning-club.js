@@ -615,7 +615,7 @@ function LearningClub({ onNav, exams, embedded }) {
     );
   })))), /* @__PURE__ */ React.createElement("div", { className: "lc-tabs-outer" }, /* @__PURE__ */ React.createElement("div", { className: "shell", style: { display: "flex" } }, tabs.map((t) => /* @__PURE__ */ React.createElement("button", { key: t, className: "lc-tab" + (t === activeTab ? " active" : ""), onClick: () => setActiveTab(t) }, t)))), /* @__PURE__ */ React.createElement("div", { className: "lc-body" }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, activeTab === "Writing" && /* @__PURE__ */ React.createElement(WritingTopics, { content, examId: activeExam }), activeTab === "Speaking" && /* @__PURE__ */ React.createElement(SpeakingTopics, { content, examId: activeExam }), activeTab === "Vocabulary" && /* @__PURE__ */ React.createElement(VocabularySection, { content }), activeTab === "Math/Verbal" && /* @__PURE__ */ React.createElement(MathSection, { content }), activeTab === "Tips & Mistakes" && /* @__PURE__ */ React.createElement(TipsMistakes, { content, examId: activeExam }))));
   if (embedded) return body;
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "learning", onNav }), /* @__PURE__ */ React.createElement("main", { id: "main-content" }, body), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "learning", onNav }), body, /* @__PURE__ */ React.createElement(window.LP_Footer, null));
 }
 function topicTag(prompt) {
   const p = (prompt || "").toLowerCase();

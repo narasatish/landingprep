@@ -707,7 +707,7 @@ function LearningClub({ onNav, exams, embedded }) {
     </>
   );
   if (embedded) return body;
-  return (<><window.LP_TopBar current="learning" onNav={onNav} /><main id="main-content">{body}</main><window.LP_Footer /></>);
+  return (<><window.LP_TopBar current="learning" onNav={onNav} />{body}<window.LP_Footer /></>);
 }
 
 function topicTag(prompt) {
