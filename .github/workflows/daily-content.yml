@@ -1,0 +1,43 @@
+name: Daily Auto-Blog
+
+# Publishes ONE pre-vetted post from blog-queue.json every day, fully automatically:
+# publish-next-post.mjs moves a post into blog-data.jsx → npm run build prerenders
+# its /blog page + sitemap + RSS → commit & push (Render auto-deploys) → IndexNow
+# pings search engines. Refill blog-queue.json whenever it runs low to keep the
+# stream going. No live AI in CI — every post is human-reviewed before queueing.
+
+on:
+  schedule:
+    - cron: "30 4 * * *"   # daily 04:30 UTC (~10:00 IST)
+  workflow_dispatch: {}     # publish one on demand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install deps
+        run: npm ci || npm install
+      - name: Publish next queued post
+        run: node scripts/publish-next-post.mjs
+      - name: Build (regenerate pages, sitemap, RSS, compiled blog bundle)
+        run: npm run build
+      - name: Commit & push if a post was published
+        run: |
+          if git diff --quiet -- blog-data.jsx; then
+            echo "Queue empty or no change — nothing to deploy today."
+            exit 0
+          fi
+          git config user.name "landingprep-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          git commit -m "Auto-blog: publish next queued post [skip ci]"
+          git push
+      - name: Ping IndexNow for the new URLs
+        run: node scripts/indexnow-submit.mjs || echo "IndexNow ping skipped (non-fatal)"
