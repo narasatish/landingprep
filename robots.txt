@@ -63,8 +63,28 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# ── Other major AI crawlers ──
+# ── Other major AI / answer-engine crawlers (explicitly welcomed) ──
 User-agent: CCBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: Meta-ExternalFetcher
+Allow: /
+User-agent: YouBot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: Timpibot
+Allow: /
+User-agent: Webzio-Extended
 Allow: /
 User-agent: facebookexternalhit
 Allow: /
