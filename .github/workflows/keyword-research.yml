@@ -1,0 +1,24 @@
+name: Trending Keyword Research
+
+# Every week, pull the REAL long-tail queries people type into Google (via the
+# keyless Autocomplete endpoint) for our seed topics, and flag the high-intent
+# ones we DON'T have content for yet. Read the results in the run's Summary tab —
+# each "content gap" is a ready-made topic to add to blog-queue.json.
+#
+# No API key or OAuth needed. Read-only (nothing is committed or deployed).
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"     # every Monday 06:00 UTC
+  workflow_dispatch: {}       # run on demand from the Actions tab
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Pull trending queries + flag content gaps
+        run: node scripts/keyword-suggest.mjs
