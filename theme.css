@@ -4858,3 +4858,14 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 .share-score-card .ssc-linkedin:hover { border-color: #0A66C2; }
 .share-score-card .ssc-telegram:hover { border-color: #229ED9; }
 @media (max-width: 480px) { .share-score-card .ssc-net { flex: 1 1 calc(50% - 8px); justify-content: center; } }
+
+/* ─── Touch tap targets (WCAG 2.5.5): ≥44px comfortable hit areas on touch
+   devices. Appended at end of file so it reliably overrides the base sizes. ─── */
+@media (pointer: coarse) {
+  .topbar-icon-btn { width: 44px; height: 44px; }
+  .menu-btn { width: 44px; height: 44px; }
+  .drawer-close { width: 44px; height: 44px; font-size: 24px; }
+  .footer a { display: inline-block; padding: 6px 0; }
+  .footer ul { gap: 4px; }
+  .crumb a { display: inline-block; padding: 5px 2px; }
+}
