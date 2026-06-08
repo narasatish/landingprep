@@ -267,7 +267,7 @@ ${inner}
 </main>
 <footer><div class="wrap">
 <nav class="hubnav">${HUB_LINKS.map((h) => `<a href="${h.href}">${h.label}</a>`).join(" · ")}</nav>
-© 2026 ${BRAND} — 100% free IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE &amp; GMAT practice for students worldwide. <a href="/">Home</a> · <a href="/#/exam-prep">All exams</a> · <a href="/#/colleges">Study abroad</a> · <a href="/about/">About</a> · <a href="mailto:support@landingprep.com">support@landingprep.com</a></div></footer>
+© 2026 ${BRAND} — 100% free IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE &amp; GMAT practice for students worldwide. <a href="/">Home</a> · <a href="/#/exam-prep">All exams</a> · <a href="/#/colleges">Study abroad</a> · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:support@landingprep.com">support@landingprep.com</a></div></footer>
 <script>document.addEventListener('click',function(e){var a=e.target.closest('[data-back]');if(!a)return;if(history.length>1){e.preventDefault();history.back();}});</script>
 </body></html>`;
 }
@@ -1071,8 +1071,112 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+function privacyPage() {
+  const path = `/privacy/`;
+  const title = `Privacy Policy — LandingPrep`;
+  const desc = `How LandingPrep handles your data: we are local-first, collect the minimum, never sell your data, and you can use everything without an account. Read our full privacy policy.`;
+  const kw = `landingprep privacy policy, data protection, cookie policy, student data privacy`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › Privacy Policy</p>
+<section class="hero">
+  <div class="badges"><span class="badge">Local-first</span><span class="badge">No data selling</span><span class="badge">Use without an account</span></div>
+  <h1>Privacy Policy</h1>
+  <p class="lead">LandingPrep is built privacy-first. You can take mock tests and use every tool without signing up, and we collect the minimum data needed to run the service. <em>Last updated: 2026.</em></p>
+</section>
+<div class="card">
+  <h2>The short version</h2>
+  <ul>
+    <li>You can use LandingPrep <strong>without an account</strong>. Your progress is stored <strong>locally in your browser</strong> by default.</li>
+    <li>We <strong>never sell</strong> your personal data, and we don't run intrusive ad networks.</li>
+    <li>An optional free account only adds cross-device progress sync.</li>
+    <li>You can request deletion of your data any time at <a href="mailto:support@landingprep.com">support@landingprep.com</a>.</li>
+  </ul>
+</div>
+<div class="card">
+  <h2>What we collect</h2>
+  <ul>
+    <li><strong>Progress & preferences</strong> — your test history, streaks and settings are saved in your browser's local storage. They never leave your device unless you create an account.</li>
+    <li><strong>Optional account data</strong> — if you sign up, we store your name and email and a securely hashed password to sync progress across devices.</li>
+    <li><strong>Analytics</strong> — we use Google Analytics 4 to understand which pages and tools are used (aggregate, not used to identify you personally).</li>
+    <li><strong>Error reports</strong> — if a page breaks, a short technical error message is sent to us so we can fix it. It contains no personal data.</li>
+    <li><strong>Newsletter</strong> — only if you choose to subscribe, we store your email to send study tips. One-click unsubscribe is in every email.</li>
+  </ul>
+</div>
+<div class="card">
+  <h2>AI features</h2>
+  <p>When you use an AI tool (the band checker, AI speaking/writing partner or AI tutor), the text or transcript you submit is sent to Google's Gemini API to generate feedback. We do not use your submissions to train models, and we don't store them beyond what's needed to show your result. Do not paste sensitive personal information into AI tools.</p>
+</div>
+<div class="card">
+  <h2>Cookies & third parties</h2>
+  <p>We use a small number of essential and analytics cookies (mainly Google Analytics). Optional accounts and sync are powered by Google Firebase. Our AI features use the Google Gemini API. These providers process data under their own privacy policies. We do not use third-party advertising trackers.</p>
+</div>
+<div class="card">
+  <h2>Your rights & contact</h2>
+  <p>You can access, correct or delete your data, or opt out of analytics, at any time. Email <a href="mailto:support@landingprep.com">support@landingprep.com</a> and we'll action your request. LandingPrep is not directed at children under 13; if you believe a child has provided data, contact us and we'll remove it.</p>
+</div>
+${relatedGrid([
+  { label: `📄 Terms of Service`, href: `/terms/` },
+  { label: `ℹ️ About LandingPrep`, href: `/about/` },
+  { label: `🎯 Free mock tests`, href: `/#/exam-prep` },
+])}`;
+  emit(path, head({ title, desc, path, kw, robots: "index, follow", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebPage", name: title, url: ORIGIN + path, description: desc, publisher: { "@type": "Organization", name: BRAND, url: ORIGIN } }),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Privacy Policy", path }]),
+  ] }) + shell(inner));
+}
+
+function termsPage() {
+  const path = `/terms/`;
+  const title = `Terms of Service — LandingPrep`;
+  const desc = `The terms for using LandingPrep's free exam prep and study-abroad tools. AI scores are estimates, not official results, and we are not affiliated with any test provider.`;
+  const kw = `landingprep terms of service, terms and conditions, free exam prep terms`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › Terms of Service</p>
+<section class="hero">
+  <div class="badges"><span class="badge">100% free</span><span class="badge">No affiliation with test providers</span></div>
+  <h1>Terms of Service</h1>
+  <p class="lead">Plain-English terms for using LandingPrep. By using the site you agree to these terms. <em>Last updated: 2026.</em></p>
+</section>
+<div class="card">
+  <h2>The service</h2>
+  <p>LandingPrep provides free practice tests, AI feedback tools and study-abroad resources for international students. The service is provided free of charge, "as is", and we may add, change or remove features at any time.</p>
+</div>
+<div class="card">
+  <h2>Scores and information are estimates</h2>
+  <p>AI band scores, predicted university chances, cost calculators and exam information are <strong>estimates and guidance only</strong> — they are not official scores or guarantees. Always confirm fees, score requirements, deadlines and visa rules with the official test provider, university or government source before making decisions.</p>
+</div>
+<div class="card">
+  <h2>No affiliation</h2>
+  <p>LandingPrep is an independent education platform. We are <strong>not affiliated with, endorsed by, or connected to</strong> IELTS, ETS (TOEFL/GRE), Pearson (PTE), CELPIP, Duolingo, GMAC (GMAT), any university, or any government. All trademarks belong to their respective owners and are used for identification only.</p>
+</div>
+<div class="card">
+  <h2>Acceptable use</h2>
+  <ul>
+    <li>Use LandingPrep for your own personal exam preparation and study-abroad planning.</li>
+    <li>Don't abuse, overload, scrape at scale, or attempt to disrupt the service or its AI features.</li>
+    <li>Don't submit unlawful content or other people's personal data into the tools.</li>
+  </ul>
+</div>
+<div class="card">
+  <h2>Liability</h2>
+  <p>To the maximum extent permitted by law, LandingPrep is not liable for any decisions made based on the estimates, content or tools provided, or for any loss arising from use of the free service. Your use is at your own discretion.</p>
+  <p class="note">Questions about these terms? Email <a href="mailto:support@landingprep.com">support@landingprep.com</a>.</p>
+</div>
+${relatedGrid([
+  { label: `🔒 Privacy Policy`, href: `/privacy/` },
+  { label: `ℹ️ About LandingPrep`, href: `/about/` },
+  { label: `🏛️ Study-abroad toolkit`, href: `/#/colleges` },
+])}`;
+  emit(path, head({ title, desc, path, kw, robots: "index, follow", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebPage", name: title, url: ORIGIN + path, description: desc, publisher: { "@type": "Organization", name: BRAND, url: ORIGIN } }),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Terms of Service", path }]),
+  ] }) + shell(inner));
+}
+
 // ── Generate everything ─────────────────────────────────────────────────────
 aboutPage();
+privacyPage();
+termsPage();
 Object.keys(EXAMS).forEach((id) => { mockPage(id); practicePage(id); });
 COUNTRY_DATA.forEach((co) => { costPage(co); SEO_FIELDS.forEach((f) => studyFieldPage(f, co)); });
 COLLEGES.forEach(universityPage);

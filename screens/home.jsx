@@ -670,7 +670,7 @@ function Footer() {
         </div>
         <div className="colophon">
           <span>© 2026 LandingPrep. Independent prep platform — not affiliated with any test provider.</span>
-          <span>1,000+ free mock tests across 7 exams</span>
+          <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/about/">About</a></span>
         </div>
       </div>
     </footer>
