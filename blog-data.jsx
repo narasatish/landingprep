@@ -1373,6 +1373,40 @@
           "body": "Your band score reflects real proficiency, not test tricks. Improving from Band 6 to Band 7 requires genuine progress in grammar, vocabulary, fluency, and accent clarity. Take full mock tests under timed conditions, review all mistakes, and practice weak areas repeatedly. Practise free on LandingPrep to track your progress across all four skills."
         }
       ]
+    },
+    {
+      "id": "study-abroad-from-nigeria-2026",
+      "tag": "Study Abroad",
+      "date": "2026",
+      "title": "Study Abroad from Nigeria 2026: Destinations, Visas & Scholarships",
+      "excerpt": "Top countries for Nigerian students, visa requirements, funding options, and English proficiency tests needed. Practical guide to studying abroad from Nigeria.",
+      "kw": "study abroad Nigeria, Nigerian students scholarships, study in UK from Nigeria, Canada visa Nigeria",
+      "sections": [
+        {
+          "h": "Top Destinations for Nigerian Students",
+          "body": "The UK, Canada, USA, and Australia are the most popular destinations. The UK attracts strong applicants for research and professional programs; Canada offers clear post-study pathways; the USA has diverse institutions and scholarships; Australia offers affordable tuition and work rights. Ireland, the Netherlands, and Germany are rising choices due to lower fees and English-taught programs. Confirm visa policies and tuition with official government sources, as they change annually."
+        },
+        {
+          "h": "English Language Test Requirements",
+          "body": "Most universities require IELTS (band 6.5–7.5 typical), TOEFL iBT (90–100 typical), PTE Academic (58–75), or Duolingo English Test (110–130). Nigerian students often choose IELTS or TOEFL due to wide international recognition. Some UK universities accept the IELTS Home Edition, which may be more accessible. Check your target university's approved tests and minimum scores."
+        },
+        {
+          "h": "Visa and Financial Planning",
+          "body": "UK student visas (Student route) require proof of funds covering tuition and living costs; Canada requires similar evidence; the USA uses the I-20 form. Most countries require a bank statement showing savings for the full program duration. Budget for tuition (USD 10,000–50,000+ per year depending on country/program), accommodation, health insurance, and travel. Start saving 12–18 months in advance."
+        },
+        {
+          "h": "Scholarships and Grants for Nigerians",
+          "body": "Commonwealth scholarships, British Council scholarships, and university-specific awards are available. Canadian government and universities offer admission scholarships. The USA has Fulbright and university merit scholarships. Australia offers Australia Awards. Research funding through TWAS (The World Academy of Sciences) and African Union programs. Application deadlines are typically 6–12 months before program start."
+        },
+        {
+          "h": "Application Timeline and Documents",
+          "body": "Begin applications 12–18 months before your intended start date. Prepare transcripts, references, statement of purpose, and CV. Take your English test 8–10 months ahead to allow retakes if needed. Submit applications 6–9 months before program start, as soon as universities open them (typically September–January for September entry). Confirm current processing times with your target institutions."
+        },
+        {
+          "h": "Staying Connected and Next Steps",
+          "body": "Join Nigerian student communities in your target country online for peer advice and mentorship. Connect with alumni from your university. Once admitted, begin visa applications immediately. Practise your English test skills free on LandingPrep to ensure you meet all institution requirements and test deadlines."
+        }
+      ]
     }
   ];
 
