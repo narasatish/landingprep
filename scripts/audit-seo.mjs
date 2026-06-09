@@ -37,7 +37,7 @@ for (const u of sitemapRoutes) {
   const norm = u.endsWith("/") || u === "/" ? u : u + "/";
   if (!diskRoutes.has(norm) && !diskRoutes.has(u)) errors.push(`SITEMAP→404: ${u} is in sitemap but has no prerendered page on disk`);
 }
-const ORPHAN_OK = new Set(["/"]); // root served by index.html at app root
+const ORPHAN_OK = new Set(["/", "/admin/"]); // root + private owner dashboard (noindex, not in sitemap)
 for (const [r] of diskRoutes) {
   if (r === "/") continue;
   const variants = [r, r.replace(/\/$/, ""), BASE + r, BASE + r.replace(/\/$/, "")];

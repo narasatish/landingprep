@@ -134,6 +134,7 @@ const AI_RPD  = parseInt(process.env.AI_RPD  || "240", 10);  // …and a conserv
 const MAX_COMMUNITY_QUESTIONS = parseInt(process.env.MAX_COMMUNITY_QUESTIONS || "500", 10);  // cap on total questions
 const MAX_ANSWERS_PER_Q = parseInt(process.env.MAX_ANSWERS_PER_Q || "50", 10);               // cap answers per question
 const MAX_COMMUNITY_LEADERBOARD = parseInt(process.env.MAX_COMMUNITY_LEADERBOARD || "2000", 10); // cap leaderboard entries
+const CAP_USAGE = {}; // label -> {day, perDay, min, perMin} — exposed to the owner dashboard
 function globalCap({ perMin, perDay, label }) {
   let minCount = 0, minReset = Date.now() + 60 * 1000;
   let dayCount = 0, dayReset = Date.now() + 24 * 60 * 60 * 1000;
@@ -144,9 +145,11 @@ function globalCap({ perMin, perDay, label }) {
     if (minCount >= perMin || dayCount >= perDay) {
       const reset = minCount >= perMin ? minReset : dayReset;
       res.setHeader("Retry-After", Math.ceil((reset - now) / 1000));
+      CAP_USAGE[label] = { day: dayCount, perDay, min: minCount, perMin };
       return res.status(429).json({ error: `${label} is at its free-tier limit right now — please try again shortly.`, freeTier: true });
     }
     minCount++; dayCount++;
+    CAP_USAGE[label] = { day: dayCount, perDay, min: minCount, perMin };
     next();
   };
 }
@@ -704,6 +707,25 @@ app.post("/api/admin/send-push", async (req, res) => {
   }
   if (removed) persist();
   res.json({ ok: true, subscribers: Object.keys(STORE.pushSubs).length, sent, removed });
+});
+
+// Owner dashboard data (behind the admin key). Powers /admin/.
+app.get("/api/admin/stats", (req, res) => {
+  if (!adminOK(req)) return res.status(403).json({ error: "Forbidden — pass ?key=ADMIN_SECRET" });
+  const reviews = STORE.reviews || [];
+  res.json({
+    users: Object.keys(STORE.users || {}).length,
+    subscribers: Object.keys(STORE.subscribers || {}).length,
+    reviews: reviews.length,
+    avgRating: reviews.length ? +(reviews.reduce((s, r) => s + (r.stars || 0), 0) / reviews.length).toFixed(2) : null,
+    recentReviews: reviews.slice(0, 6).map((r) => ({ stars: r.stars, text: String(r.text || "").slice(0, 90), name: r.name, exam: r.exam })),
+    pushSubs: Object.keys(STORE.pushSubs || {}).length,
+    aiUsage: CAP_USAGE,
+    clientErrors: MONITOR.clientErrors.length,
+    recentErrors: MONITOR.clientErrors.slice(-6).map((e) => ({ m: String((e && (e.message || e.m)) || e || "").slice(0, 100), url: String((e && e.url) || "").slice(0, 80) })),
+    uptimeHrs: +(process.uptime() / 3600).toFixed(1),
+    ts: new Date().toISOString(),
+  });
 });
 
 // Admin-only: send the weekly newsletter to all opted-in users.

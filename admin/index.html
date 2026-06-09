@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>LandingPrep — Owner Dashboard</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: #0f172a; color: #e2e8f0; padding: 20px; }
+  .wrap { max-width: 920px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 2px; }
+  .sub { color: #94a3b8; font-size: 13px; margin: 0 0 18px; }
+  .keybar { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+  .keybar input { flex: 1 1 240px; padding: 10px 12px; border-radius: 9px; border: 1px solid #334155; background: #1e293b; color: #e2e8f0; font-size: 14px; }
+  .btn { padding: 10px 16px; border-radius: 9px; border: 0; background: #4f46e5; color: #fff; font-weight: 700; cursor: pointer; font-size: 14px; }
+  .btn.ghost { background: #1e293b; border: 1px solid #334155; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 20px; }
+  .card { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 16px; }
+  .card .k { font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: .04em; }
+  .card .v { font-size: 28px; font-weight: 800; margin-top: 4px; color: #fff; }
+  .card .s { font-size: 12px; color: #64748b; margin-top: 2px; }
+  .bar { height: 6px; background: #334155; border-radius: 99px; margin-top: 8px; overflow: hidden; }
+  .bar > i { display: block; height: 100%; background: #22c55e; }
+  .bar.warn > i { background: #f59e0b; } .bar.hot > i { background: #ef4444; }
+  h2 { font-size: 15px; margin: 22px 0 8px; color: #cbd5e1; }
+  .row { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 10px 12px; margin-bottom: 6px; font-size: 13px; }
+  .row .meta { color: #64748b; font-size: 12px; }
+  .err { color: #fca5a5; }
+  .muted { color: #64748b; font-size: 13px; }
+  .stars { color: #fbbf24; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎛️ LandingPrep — Owner Dashboard</h1>
+  <p class="sub">Private. Enter your ADMIN_SECRET (stored only in this browser).</p>
+  <div class="keybar">
+    <input id="key" type="password" placeholder="ADMIN_SECRET" />
+    <button class="btn" onclick="save()">Load</button>
+    <button class="btn ghost" onclick="load()">↻ Refresh</button>
+  </div>
+  <div id="out"><p class="muted">Enter your key and press Load.</p></div>
+</div>
+<script>
+  var KEY_LS = "lp_admin_key";
+  document.getElementById("key").value = localStorage.getItem(KEY_LS) || "";
+  function save() { localStorage.setItem(KEY_LS, document.getElementById("key").value.trim()); load(); }
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]; }); }
+  function pct(n, d) { return d > 0 ? Math.min(100, Math.round((n / d) * 100)) : 0; }
+  function statCard(k, v, s) { return '<div class="card"><div class="k">' + k + '</div><div class="v">' + v + '</div>' + (s ? '<div class="s">' + s + '</div>' : '') + '</div>'; }
+  function usageCard(label, u) {
+    if (!u) return statCard(label + " today", "0", "no calls yet");
+    var p = pct(u.day, u.perDay), cls = p > 90 ? "hot" : p > 70 ? "warn" : "";
+    return '<div class="card"><div class="k">' + label + ' today</div><div class="v">' + u.day + '<span style="font-size:14px;color:#64748b"> / ' + u.perDay + '</span></div><div class="bar ' + cls + '"><i style="width:' + p + '%"></i></div></div>';
+  }
+  async function load() {
+    var key = (localStorage.getItem(KEY_LS) || "").trim();
+    var out = document.getElementById("out");
+    if (!key) { out.innerHTML = '<p class="muted">Enter your key first.</p>'; return; }
+    out.innerHTML = '<p class="muted">Loading…</p>';
+    try {
+      var r = await fetch((window.LP_API_BASE || "") + "/api/admin/stats", { headers: { "X-Admin-Key": key } });
+      if (r.status === 403) { out.innerHTML = '<p class="err">Wrong key (403). Check ADMIN_SECRET in Render.</p>'; return; }
+      if (!r.ok) { out.innerHTML = '<p class="err">Error ' + r.status + '. Is the backend awake?</p>'; return; }
+      var d = await r.json();
+      var html = '<div class="grid">';
+      html += statCard("👤 Accounts", d.users);
+      html += statCard("📧 Subscribers", d.subscribers);
+      html += statCard("⭐ Reviews", d.reviews, d.avgRating ? d.avgRating + " avg" : "none yet");
+      html += statCard("🔔 Push subs", d.pushSubs);
+      html += usageCard("🤖 AI tutor", d.aiUsage && d.aiUsage["AI tutor"]);
+      html += usageCard("🔊 Voice (TTS)", d.aiUsage && d.aiUsage["Natural voice"]);
+      html += statCard("⚠️ Client errors", d.clientErrors);
+      html += statCard("⏱️ Uptime", d.uptimeHrs + "h");
+      html += '</div>';
+      if (d.recentReviews && d.recentReviews.length) {
+        html += '<h2>Recent reviews</h2>';
+        d.recentReviews.forEach(function (rv) {
+          html += '<div class="row"><span class="stars">' + "★".repeat(rv.stars || 0) + '</span> ' + esc(rv.text) + '<div class="meta">' + esc(rv.name) + (rv.exam ? " · " + esc(rv.exam) : "") + '</div></div>';
+        });
+      }
+      if (d.recentErrors && d.recentErrors.length) {
+        html += '<h2>Recent client errors</h2>';
+        d.recentErrors.forEach(function (e) {
+          html += '<div class="row err">' + esc(e.m) + '<div class="meta">' + esc(e.url) + '</div></div>';
+        });
+      }
+      html += '<p class="muted" style="margin-top:18px">Updated ' + esc(d.ts) + ' · AI counters reset daily.</p>';
+      out.innerHTML = html;
+    } catch (e) { out.innerHTML = '<p class="err">Network error — backend may be cold-starting, try Refresh in ~30s.</p>'; }
+  }
+  if (localStorage.getItem(KEY_LS)) load();
+</script>
+</body>
+</html>
