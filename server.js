@@ -203,6 +203,8 @@ app.get("/api/health", (_req, res) => {
   res.json({
     status: "ok",
     hasKey: !!GEMINI_API_KEY,
+    firestore: FS_DB ? "connected" : "local-file-ephemeral",
+    accounts: Object.keys(STORE.users || {}).length,
     ts: new Date().toISOString(),
   });
 });
@@ -521,7 +523,12 @@ let FS_DB = null;
     const cred = JSON.parse(raw);
     admin.initializeApp({ credential: admin.credential.cert(cred), projectId: cred.project_id });
     FS_DB = admin.firestore();
-    console.log("[firestore] connected — user accounts are now durable.");
+    // If you created a NAMED Firestore database (anything other than "(default)"),
+    // set FIRESTORE_DATABASE_ID in Render — otherwise every call fails with 5 NOT_FOUND.
+    // The "(default)" database needs nothing here.
+    const dbId = (process.env.FIRESTORE_DATABASE_ID || "").trim();
+    if (dbId && dbId !== "(default)") FS_DB.settings({ databaseId: dbId });
+    console.log("[firestore] connected" + (dbId ? " (db: " + dbId + ")" : " (default db)") + " — user accounts are now durable.");
   } catch (e) { console.warn("[firestore] init failed; using local file store:", e.message); }
 })();
 
