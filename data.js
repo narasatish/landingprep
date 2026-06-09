@@ -276,10 +276,10 @@ window.LP_DATA = {
       fees: { inr: "\u20B918,000\u201320,000", usd: "$215\u2013240" },
       colour: "#C8501F",
       pattern: [
-        ["Listening", "6 parts (news broadcast, conversation, discussion, news item, interview, opinion) \xB7 47\u201355 min"],
-        ["Reading", "4 parts (correspondence, diagram/chart, information, viewpoints) \xB7 55\u201364 min"],
+        ["Listening", "6 parts (problem solving, daily-life conversation, information, news item, discussion, viewpoints) \xB7 38 questions \xB7 47\u201355 min"],
+        ["Reading", "4 parts (correspondence, diagram/chart, information, viewpoints) \xB7 38 questions \xB7 55\u201364 min"],
         ["Writing", "Task 1: Email (150\u2013200 words, 27 min) + Task 2: Survey response (150\u2013200 words, 26 min) \xB7 53 min total"],
-        ["Speaking", "8 tasks (giving advice, talking to neighbour, situation description, etc.) \xB7 ~15\u201320 min total"]
+        ["Speaking", "8 tasks (giving advice, personal experience, describing a scene, predictions, comparing & persuading, difficult situation, opinions, unusual situation) \xB7 ~15\u201320 min"]
       ],
       sections_detail: [
         {
@@ -287,7 +287,7 @@ window.LP_DATA = {
           icon: "\u{1F3A7}",
           time: 50,
           questions: 38,
-          types: ["Part 1: News broadcast", "Part 2: Conversation between two friends", "Part 3: News item with detailed information", "Part 4: Discussion between two people", "Part 5: Interview between two people", "Part 6: Opinion about a topic"],
+          types: ["Part 1: Listening to Problem Solving", "Part 2: Listening to a Daily Life Conversation", "Part 3: Listening for Information", "Part 4: Listening to a News Item", "Part 5: Listening to a Discussion", "Part 6: Listening to Viewpoints"],
           tips: "All audio features Canadian accents and Canadian cultural references. Familiarise yourself with Canadian English pronunciation and vocabulary."
         },
         {
@@ -311,7 +311,7 @@ window.LP_DATA = {
           icon: "\u{1F3A4}",
           time: 18,
           questions: 8,
-          types: ["Task 1: Giving advice (30 sec prep, 90 sec response)", "Task 2: Talking to a neighbour", "Task 3: Discussing options from a chart", "Task 4: Making predictions", "Task 5: Comparing visuals", "Task 6: Dealing with a difficult situation", "Task 7: Expressing opinions", "Task 8: Describing an unusual situation"],
+          types: ["Task 1: Giving Advice (30s prep, 90s response)", "Task 2: Talking about a Personal Experience (30s/60s)", "Task 3: Describing a Scene (30s/60s)", "Task 4: Making Predictions (30s/60s)", "Task 5: Comparing and Persuading (60s/60s)", "Task 6: Dealing with a Difficult Situation (60s/60s)", "Task 7: Expressing Opinions (30s/90s)", "Task 8: Describing an Unusual Situation (30s/60s)"],
           tips: "All speaking responses are recorded and scored by raters. Organise your response with a clear opening, 2\u20133 supporting points, and a conclusion."
         }
       ],

@@ -404,25 +404,33 @@ function buildTest(examId, testType) {
     }
   } else if (examId === "celpip") {
     if (testType === "full" || testType === "section_listening") {
-      const ieltsParts = get("ielts.listening.parts", []);
-      const parts = [];
-      for (let i = 0; i < 6; i++) {
-        const base = ieltsParts[i % Math.max(1, ieltsParts.length)] || { audioScript: "Listen carefully.", context: "CELPIP listening" };
-        const target = i < 5 ? 6 : 8;
-        const cycledQ = cycle(base.questions || [{ id: "cel_q", type: "mcq", text: "Sample question", options: ["A", "B", "C", "D"], answer: "A" }], target, `cel_l${i + 1}q`);
-        parts.push({ id: `cel_l${i + 1}`, partNum: i + 1, context: base.context || "CELPIP Listening Part " + (i + 1), audioScript: base.audioScript || "Listen carefully.", questions: cycledQ });
-      }
-      sections.push({ id: "listening", name: "Listening", icon: "\u{1F3A7}", timeSecs: 47 * 60, parts, type: "listening" });
+      const cl = get("celpip.listening", []);
+      const parts = (cl || []).map((p, i) => ({
+        id: `cel_l${p.part || i + 1}`,
+        partNum: p.part || i + 1,
+        name: `Part ${p.part || i + 1}: ${p.name}`,
+        context: p.scenario || p.name,
+        audioScript: p.audioScript || "Listen carefully.",
+        questions: (p.questions || []).map((q) => ({ id: q.id, type: q.type || "mcq", text: q.text || q.prompt, options: q.options, answer: q.answer }))
+      }));
+      if (parts.length) sections.push({ id: "listening", name: "Listening", icon: "\u{1F3A7}", timeSecs: 47 * 60, parts, type: "listening" });
     }
     if (testType === "full" || testType === "section_reading") {
-      const ieltsPassages = get("ielts.reading.passages", []);
-      const passages = [];
-      for (let i = 0; i < 4; i++) {
-        const base = ieltsPassages[i % Math.max(1, ieltsPassages.length)] || { title: "CELPIP Reading", text: "Sample passage", questions: [] };
-        const cycledQ = cycle(base.questions || [], 9, `cel_r${i + 1}q`);
-        passages.push({ id: `cel_r${i + 1}`, title: `Part ${i + 1}: ${base.title || "Reading Passage"}`, text: base.text, questions: cycledQ });
-      }
-      sections.push({ id: "reading", name: "Reading", icon: "\u{1F4D6}", timeSecs: 55 * 60, passages, type: "reading" });
+      const cr = get("celpip.reading", []);
+      const passages = (cr || []).map((p, i) => ({
+        id: `cel_r${p.part || i + 1}`,
+        part: p.part || i + 1,
+        type: p.type,
+        title: p.title || p.name,
+        partTitle: `Part ${p.part || i + 1}: ${p.name}`,
+        intro: p.intro,
+        emails: p.emails,
+        schedule: p.schedule,
+        viewpoints: p.viewpoints,
+        text: p.text,
+        questions: (p.questions || []).map((q) => ({ id: q.id, type: q.type, prompt: q.prompt || q.text, options: q.options, answer: q.answer, correctAnswer: q.answer, explanation: q.explanation }))
+      }));
+      if (passages.length) sections.push({ id: "reading", name: "Reading", icon: "\u{1F4D6}", timeSecs: 55 * 60, passages, type: "reading", isCelpip: true });
     }
     if (testType === "full" || testType === "section_writing") {
       const tasks = get("celpip.writing", []);
