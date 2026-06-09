@@ -71,7 +71,8 @@ const normRoute = (href) => {
 for (const [route, file] of diskRoutes) {
   const html = fs.readFileSync(file, "utf8");
   pagesChecked++;
-  const isStatic = route !== "/"; // root is the SPA shell; sub-routes are prerendered SEO pages
+  const isPrivate = /name=["']robots["'][^>]*noindex/i.test(html); // private pages (e.g. /admin/) aren't SEO-audited
+  const isStatic = route !== "/" && !isPrivate; // root is the SPA shell; sub-routes are prerendered SEO pages
   if (isStatic) {
     if (!/<link[^>]+rel=["']canonical["']/.test(html)) errors.push(`NO-CANONICAL: ${route}`);
     if (!/<title>[^<]{5,}<\/title>/.test(html)) errors.push(`NO-TITLE: ${route}`);
@@ -107,7 +108,7 @@ for (const [route, file] of diskRoutes) {
 // ── 5. Crawl-graph: pages with no inbound internal links (hard to discover/rank) ─
 const crawlOrphans = [];
 for (const [route, srcs] of inbound) {
-  if (route === "/") continue;
+  if (route === "/" || ORPHAN_OK.has(route)) continue; // skip root + intentionally-private pages
   if (srcs.size === 0) crawlOrphans.push(route);
 }
 for (const r of crawlOrphans) warnings.push(`CRAWL-ORPHAN: ${r} — no other prerendered page links to it (only reachable via sitemap)`);

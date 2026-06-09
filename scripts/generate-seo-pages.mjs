@@ -1183,34 +1183,38 @@ ${relatedGrid([
 
 function embedPage() {
   const path = `/embed/`;
-  const title = `Free Score Converter Widget — Embed IELTS↔TOEFL↔PTE`;
-  const desc = `Embed LandingPrep's free IELTS to TOEFL, PTE, CEFR & Duolingo score converter on your website or blog with one line of HTML. Free forever, no signup, mobile-friendly.`;
-  const kw = `embed score converter, ielts toefl converter widget, free study abroad widget, ielts conversion tool embed, free education widget`;
-  const snippet = `<iframe src="https://landingprep.com/embed/score-converter/" width="100%" height="440" style="border:1px solid #eef0f3;border-radius:14px;max-width:480px" title="IELTS to TOEFL and PTE score converter" loading="lazy"></iframe>
-<p style="font:14px system-ui">Free <a href="https://landingprep.com/">IELTS to TOEFL &amp; PTE score converter</a> by LandingPrep</p>`;
+  const title = `Free Embeddable Study-Abroad Widgets — Score, GPA & Loan Tools`;
+  const desc = `Embed LandingPrep's free widgets on your site with one line of HTML: an IELTS↔TOEFL↔PTE score converter, a GPA (%↔CGPA↔4.0) converter, and an education-loan EMI calculator. Free forever, no signup.`;
+  const kw = `embed score converter, ielts toefl converter widget, gpa converter widget, education loan emi calculator widget, free study abroad widget, free education widget`;
+  const WIDGETS = [
+    { slug: "score-converter", h: 360, title: "IELTS ↔ TOEFL ↔ PTE Score Converter" },
+    { slug: "gpa-converter", h: 470, title: "GPA Converter — % ↔ CGPA ↔ US 4.0" },
+    { slug: "loan-emi", h: 560, title: "Education Loan EMI Calculator" },
+  ];
+  const widgetCards = WIDGETS.map((w) => {
+    const snip = `<iframe src="https://landingprep.com/embed/${w.slug}/" width="100%" height="${w.h}" style="border:1px solid #eef0f3;border-radius:14px;max-width:480px" title="${esc(w.title)}" loading="lazy"></iframe>\n<p style="font:14px system-ui">Free <a href="https://landingprep.com/">${esc(w.title)}</a> by LandingPrep</p>`;
+    return `<div class="card">
+  <h2>${esc(w.title)}</h2>
+  <iframe src="/embed/${w.slug}/" width="100%" height="${w.h}" style="border:1px solid #e5e7eb;border-radius:14px;max-width:480px" title="${esc(w.title)} preview" loading="lazy"></iframe>
+  <p style="font-size:13px;margin-top:10px"><a href="/embed/${w.slug}/">Open ${esc(w.title)} in its own page →</a></p>
+  <p style="margin-top:10px;font-weight:600">Copy this snippet to embed it:</p>
+  <pre style="white-space:pre-wrap;word-break:break-word;background:#f1f5f9;color:#0f172a;padding:14px;border-radius:10px;font-size:13px;overflow:auto">${esc(snip)}</pre>
+</div>`;
+  }).join("\n");
   const inner = `
 <p class="crumb"><a href="/">Home</a> › Embeddable widgets</p>
 <section class="hero">
   <div class="badges"><span class="badge">Free to embed</span><span class="badge">No signup</span><span class="badge">One line of HTML</span></div>
-  <h1>Free Score Converter Widget</h1>
-  <p class="lead">Add a free IELTS ↔ TOEFL ↔ PTE ↔ CEFR ↔ Duolingo score converter to your website, blog or student portal — genuinely useful for your readers, and free forever.</p>
+  <h1>Free Embeddable Widgets for Your Site</h1>
+  <p class="lead">Add free, genuinely-useful study-abroad tools to your website, blog or student portal — a score converter, a GPA converter, and an education-loan EMI calculator. One line of HTML each, free forever, mobile-friendly.</p>
 </section>
+${widgetCards}
 <div class="card">
-  <h2>Live preview</h2>
-  <iframe src="/embed/score-converter/" width="100%" height="450" style="border:1px solid #e5e7eb;border-radius:14px;max-width:480px" title="Score converter preview" loading="lazy"></iframe>
-  <p style="font-size:13px;margin-top:10px"><a href="/embed/score-converter/">Open the score converter in its own page →</a></p>
-</div>
-<div class="card">
-  <h2>Copy this snippet to embed it</h2>
-  <p>Paste this anywhere in your site's HTML — that is all it takes. Keeping the credit link is appreciated and helps us keep the tool free.</p>
-  <pre style="white-space:pre-wrap;word-break:break-word;background:#f1f5f9;color:#0f172a;padding:14px;border-radius:10px;font-size:13px;overflow:auto">${esc(snippet)}</pre>
-</div>
-<div class="card">
-  <h2>Why embed it?</h2>
+  <h2>Why embed these?</h2>
   <ul>
-    <li>Instantly useful for IELTS, TOEFL and PTE candidates browsing your site.</li>
-    <li>Mobile-friendly and fast; adapts to light or dark mode automatically.</li>
-    <li>100% free — no API key, no signup, and it never tracks your visitors.</li>
+    <li>Instantly useful for IELTS/TOEFL/PTE candidates and study-abroad students.</li>
+    <li>Mobile-friendly and fast; adapt to light or dark mode automatically.</li>
+    <li>100% free — no API key, no signup, and they never track your visitors.</li>
   </ul>
 </div>
 ${relatedGrid([
@@ -2883,6 +2887,8 @@ const urls = [
   ...PAGES.map((p) => ({ loc: ORIGIN + p.path, freq: "weekly", pri: "0.8" })),
   // Standalone embeddable widget (hand-authored static file, not emitted via the generator).
   { loc: `${ORIGIN}/embed/score-converter/`, freq: "monthly", pri: "0.6" },
+  { loc: `${ORIGIN}/embed/gpa-converter/`, freq: "monthly", pri: "0.6" },
+  { loc: `${ORIGIN}/embed/loan-emi/`, freq: "monthly", pri: "0.6" },
 ];
 // The SPA homepage ships a fresh build every deploy, so it legitimately changes.
 lastmodFor.set(`${ORIGIN}/`, BUILD_DATE);
