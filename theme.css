@@ -4869,3 +4869,12 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
   .footer ul { gap: 4px; }
   .crumb a { display: inline-block; padding: 5px 2px; }
 }
+
+/* Returning-user bar — streak + resume (#6/#7), shown only to users with activity */
+.returning-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin: 14px 0 0; padding: 11px 16px;
+  background: linear-gradient(135deg, rgba(79,70,229,.09), rgba(124,58,237,.07)); border: 1px solid var(--line); border-radius: 14px; font-size: 14px; }
+.returning-bar .rb-item { color: var(--ink); }
+.returning-bar .rb-quest { color: var(--ink-2); }
+.returning-bar .rb-cta { margin-left: auto; background: var(--accent); color: #fff; border: 0; border-radius: 999px; padding: 9px 17px; font-weight: 700; font-size: 13px; cursor: pointer; min-height: 40px; }
+.returning-bar .rb-cta:hover { filter: brightness(1.05); }
+@media (max-width: 560px) { .returning-bar { gap: 6px 14px; } .returning-bar .rb-cta { margin-left: 0; width: 100%; } }

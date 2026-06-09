@@ -211,6 +211,27 @@ function BandPredictor() {
   );
 }
 
+// Returning-user bar — surfaces streak (#6) + a one-tap resume (#7). Shows ONLY to
+// users with prior activity, so first-time visitors get the clean hero unchanged.
+function ReturningBar({ onNav }) {
+  const [s, setS] = React.useState(null);
+  React.useEffect(() => {
+    try {
+      const g = window.LP_Gamify && window.LP_Gamify.stats ? window.LP_Gamify.stats() : null;
+      if (g && (g.tests > 0 || g.activeDays > 0)) setS(g);
+    } catch (e) {}
+  }, []);
+  if (!s) return null;
+  return (
+    <div className="returning-bar reveal" role="region" aria-label="Your progress">
+      <span className="rb-item"><span style={{ fontSize: 18 }}>{s.streak > 0 ? "🔥" : "✨"}</span> <b>{s.streak}-day</b> streak</span>
+      <span className="rb-item">{s.levelEmoji} Lvl {s.level} · {s.xp} XP</span>
+      <span className="rb-item rb-quest">{s.studiedToday ? "✅ Today's goal done — streak safe" : "🎯 Practise once today to keep your streak"}</span>
+      <button className="rb-cta" onClick={() => onNav("exam-prep")}>Continue practising →</button>
+    </div>
+  );
+}
+
 function Home({ onGuide, onPractice, onNav }) {
   const exams = window.LP_DATA.EXAMS;
   const [faqTab, setFaqTab] = useStateH("exams");
@@ -228,6 +249,7 @@ function Home({ onGuide, onPractice, onNav }) {
       <window.LP_Marquee />
 
       <main id="main-content">
+      <div className="shell"><ReturningBar onNav={onNav} /></div>
       {/* Hero */}
       <section className="hero">
         <div className="shell">
