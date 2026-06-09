@@ -124,10 +124,13 @@ function adminOK(req) {
 // project physically cannot exceed the free tier and can never incur charges.
 // On 429 the frontend degrades gracefully (TTS → native browser voice; tools → cached
 // / heuristic output). Defaults match Gemini free-tier; raise via env if you ever upgrade.
-const TTS_RPM = parseInt(process.env.TTS_RPM || "3", 10);    // gemini-2.5-flash-preview-tts free: ~3 req/min
-const TTS_RPD = parseInt(process.env.TTS_RPD || "15", 10);   // …and ~15 req/day (account-wide)
-const AI_RPM  = parseInt(process.env.AI_RPM  || "10", 10);   // gemini-2.5-flash free: ~10 req/min
-const AI_RPD  = parseInt(process.env.AI_RPD  || "240", 10);  // …and a conservative daily budget
+// Budget-capped defaults (owner wants ≈₹200 total). TTS cached so repeats are free.
+// These are account-wide daily ceilings — the true hard cap is a Google Cloud billing
+// budget (see /admin or the budget note). Override via Render env if traffic grows.
+const TTS_RPM = parseInt(process.env.TTS_RPM || "2", 10);    // ~2 voice calls/min
+const TTS_RPD = parseInt(process.env.TTS_RPD || "8", 10);    // …and 8/day (cached repeats don't count)
+const AI_RPM  = parseInt(process.env.AI_RPM  || "6", 10);    // ~6 AI calls/min
+const AI_RPD  = parseInt(process.env.AI_RPD  || "80", 10);   // …and 80/day — keeps spend to a few ₹/day
 
 // ── Defense-in-depth: community data size caps ──────────────────────────────────
 // Prevent unbounded growth and resource exhaustion in the file-backed store.
