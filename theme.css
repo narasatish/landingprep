@@ -4904,3 +4904,13 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 .scene-illus { height: 200px; display: flex; align-items: center; justify-content: center; }
 .scene-emoji { font-size: 92px; line-height: 1; filter: drop-shadow(0 4px 10px rgba(0,0,0,.12)); }
 .scene-cap { text-align: center; font-size: 13px; color: var(--ink-2); margin-top: 8px; font-weight: 600; }
+
+/* CELPIP listening two-phase flow (listen → then answer) */
+.celpip-listen-gate { text-align: center; padding: 30px 20px; margin-top: 12px; background: var(--surface-2, #f8fafc); border: 1px dashed var(--line, #e5e7eb); border-radius: 14px; }
+.celpip-listen-gate .clg-icon { font-size: 42px; line-height: 1; }
+.celpip-listen-gate .clg-note { color: var(--ink-2, #475569); font-size: 14px; max-width: 460px; margin: 10px auto 18px; line-height: 1.6; }
+.celpip-listen-gate .clg-btn { font-size: 15px; padding: 12px 26px; }
+.celpip-answer-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 12px 16px; margin-top: 8px; background: var(--surface-2, #f8fafc); border-radius: 10px; font-size: 14px; color: var(--ink-2, #475569); }
+.celpip-answer-head strong { color: var(--ink, #0f172a); }
+.celpip-answer-head .clg-replay { margin-left: auto; background: none; border: 1px solid var(--line, #e5e7eb); border-radius: 8px; padding: 6px 12px; font-size: 13px; cursor: pointer; color: var(--ink-2, #475569); }
+.celpip-answer-head .clg-replay:hover { background: #fff; }

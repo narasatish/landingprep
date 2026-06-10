@@ -941,6 +941,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
   const [playing, setPlaying] = useStateT(false);
   const [played, setPlayed] = useStateT({});
   const [progress, setProgress] = useStateT(null);
+  const [revealed, setRevealed] = useStateT({}); // CELPIP: which parts have moved to the answer phase
   const abortRef = useRefT(null);
   const parts = sec.parts || [];
   const current = parts[partIdx];
@@ -1003,6 +1004,11 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
 
   if (!current) return <div className="empty-state">No listening parts available.</div>;
 
+  // CELPIP is two-phase: listen to the WHOLE recording first, then the questions appear
+  // (unlike IELTS where you answer while listening). Questions show once the audio has
+  // finished (played) or the user taps "Show questions". Non-CELPIP shows them inline.
+  const showQ = !sec.isCelpip || !!revealed[current.id];
+
   const handlePlay = async () => {
     // Manual play/stop toggle — auto-play handles it, this is just a stop/restart button
     if (playing) {
@@ -1062,33 +1068,58 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
         })}
       </div>
 
-      {current.scene && <SceneImage scene={current.scene} />}
-      <div className="audio-panel">
-        <div className="ap-context">
-          <div style={{ fontWeight: 600, marginBottom: 4, color: "#fff" }}>
-            {current.scriptType
-              ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}`
-              : `Part ${current.partNum || partIdx + 1}`}
-          </div>
-          <div style={{ fontSize: 13, color: "rgba(255,255,255,0.85)" }}>{current.context}</div>
-          {playing && (
-            <div style={{ marginTop: 10, display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,0.7)" }}>
-              <span className="audio-wave-dot" /> <span className="audio-wave-dot" /> <span className="audio-wave-dot" /> Audio in progress — do not refresh
+      {/* CELPIP listen phase (or any non-CELPIP listening): scenario image + audio player */}
+      {(!sec.isCelpip || !showQ) && (
+        <>
+          {current.scene && <SceneImage scene={current.scene} />}
+          <div className="audio-panel">
+            <div className="ap-context">
+              <div style={{ fontWeight: 600, marginBottom: 4, color: "#fff" }}>
+                {current.scriptType
+                  ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}`
+                  : `Part ${current.partNum || partIdx + 1}`}
+              </div>
+              <div style={{ fontSize: 13, color: "rgba(255,255,255,0.85)" }}>{current.context}</div>
+              {playing && (
+                <div style={{ marginTop: 10, display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,0.7)" }}>
+                  <span className="audio-wave-dot" /> <span className="audio-wave-dot" /> <span className="audio-wave-dot" /> Audio in progress — do not refresh
+                </div>
+              )}
             </div>
-          )}
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "center" }}>
-          <button
-            className="audio-btn"
-            disabled={played[current.id] && !playing}
-            onClick={handlePlay}
-          >
-            {playing ? "⏹ Stop" : played[current.id] ? "✓ Played" : "▶ Play " + (current.scriptType ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}` : "Part " + (current.partNum || partIdx + 1))}
+            <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "center" }}>
+              <button
+                className="audio-btn"
+                disabled={played[current.id] && !playing}
+                onClick={handlePlay}
+              >
+                {playing ? "⏹ Stop" : played[current.id] ? "✓ Played" : "▶ Play " + (current.scriptType ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}` : "Part " + (current.partNum || partIdx + 1))}
+              </button>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* CELPIP: a gate so questions stay hidden until the recording is heard (real exam flow) */}
+      {sec.isCelpip && !showQ && (
+        <div className="celpip-listen-gate">
+          <div className="clg-icon">🎧</div>
+          <p className="clg-note">Listen to the whole recording. In CELPIP the questions appear <strong>after</strong> the audio — you won't see them while listening.</p>
+          <button className="btn btn-primary clg-btn" onClick={() => setRevealed(prev => ({ ...prev, [current.id]: true }))}>
+            {playing ? "Skip to questions →" : "Show the questions →"}
           </button>
         </div>
-      </div>
+      )}
 
-      <ListeningQuestions
+      {/* CELPIP answer phase: compact reminder of which recording these questions are about */}
+      {sec.isCelpip && showQ && (
+        <div className="celpip-answer-head">
+          <strong>Part {current.partNum || partIdx + 1} — {current.context}</strong>
+          <span> · Answer the questions about what you just heard.</span>
+          <button className="clg-replay" onClick={() => { setRevealed(prev => { const n = { ...prev }; delete n[current.id]; return n; }); setPlayed(prev => { const n = { ...prev }; delete n[current.id]; return n; }); }}>↻ Listen again</button>
+        </div>
+      )}
+
+      {showQ && <ListeningQuestions
         questions={current.questions || []}
         answers={answers}
         setAnswer={setAnswer}
@@ -1099,7 +1130,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
         isCelpip={sec.isCelpip}
         onPrevPart={() => goToPart(Math.max(0, partIdx - 1))}
         onNextPart={() => goToPart(Math.min(parts.length - 1, partIdx + 1))}
-      />
+      />}
     </div>
   );
 }

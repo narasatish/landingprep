@@ -313,15 +313,22 @@
     // letter" framing) and show a scenario photo before each part.
     const isCel = test.exam === "celpip";
     if (isCel) {
-      const CEL_SCENES = [
-        { emoji: "🗣️", bg: "linear-gradient(135deg,#dbeafe,#ede9fe)", image: "/img/scenes/conversation.jpg" },
-        { emoji: "☕", bg: "linear-gradient(135deg,#fef3c7,#fde68a)", image: "/img/scenes/cafe.jpg" },
-        { emoji: "🏛️", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", image: "/img/scenes/fitness.jpg" },
-        { emoji: "📰", bg: "linear-gradient(135deg,#e0e7ff,#c7d2fe)", image: "/img/scenes/city.jpg" },
-        { emoji: "👥", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)", image: "/img/scenes/meeting.jpg" },
-        { emoji: "🎙️", bg: "linear-gradient(135deg,#cffafe,#a5f3fc)", image: "/img/scenes/interview.jpg" },
-      ];
-      parts = parts.map((p, i) => ({ ...p, scene: { emoji: (CEL_SCENES[i] || {}).emoji || "🎧", bg: (CEL_SCENES[i] || {}).bg, image: (CEL_SCENES[i] || {}).image || "", label: p.context } }));
+      // Pick a scenario photo that matches the part's topic (keyword-based, not position).
+      const celScene = (ctx) => {
+        const c = String(ctx || "").toLowerCase();
+        const P = (image, emoji, bg) => ({ image: "/img/scenes/" + image, emoji, bg, label: ctx });
+        if (/coffee|cafe|café|restaurant|diner|menu|barista|bakery|meal/.test(c)) return P("cafe.jpg", "☕", "linear-gradient(135deg,#fef3c7,#fde68a)");
+        if (/museum|gallery|\bart\b|history|exhibit|heritage|tour|landmark|monument/.test(c)) return P("landmark.jpg", "🏛️", "linear-gradient(135deg,#e0e7ff,#c7d2fe)");
+        if (/transit|bus|subway|train|traffic|strike|commute|street|downtown|transport|\bcity\b/.test(c)) return P("city.jpg", "📰", "linear-gradient(135deg,#e0e7ff,#c7d2fe)");
+        if (/gym|fitness|exercise|sport|workout|recreation|swimming|athletic/.test(c)) return P("fitness.jpg", "🏋️", "linear-gradient(135deg,#dcfce7,#bbf7d0)");
+        if (/interview|radio|podcast|privacy|journalist|broadcast|expert|\bhost\b/.test(c)) return P("interview.jpg", "🎙️", "linear-gradient(135deg,#cffafe,#a5f3fc)");
+        if (/appliance|store|shop|return|refrigerator|kitchen|cook|repair|warranty|fridge|product/.test(c)) return P("kitchen.jpg", "🍽️", "linear-gradient(135deg,#fef9c3,#fde68a)");
+        if (/apartment|rent|home|house|living|neighbou?r|lease|moving/.test(c)) return P("apartment.jpg", "🏠", "linear-gradient(135deg,#dbeafe,#bfdbfe)");
+        if (/party|event|gather|festival|celebration|volunteer|community/.test(c)) return P("street_scene.jpg", "🎉", "linear-gradient(135deg,#fce7f3,#fbcfe8)");
+        if (/meeting|policy|debate|work|office|colleague|team|business|manager|project|company|remote/.test(c)) return P("meeting.jpg", "👥", "linear-gradient(135deg,#fce7f3,#fbcfe8)");
+        return P("conversation.jpg", "🗣️", "linear-gradient(135deg,#dbeafe,#ede9fe)");
+      };
+      parts = parts.map((p) => ({ ...p, scene: celScene(p.context) }));
     }
 
     return { id: "listening", name: "Listening", icon: "🎧",

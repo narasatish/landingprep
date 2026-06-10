@@ -264,15 +264,21 @@
     }
     const isCel = test.exam === "celpip";
     if (isCel) {
-      const CEL_SCENES = [
-        { emoji: "\u{1F5E3}\uFE0F", bg: "linear-gradient(135deg,#dbeafe,#ede9fe)", image: "/img/scenes/conversation.jpg" },
-        { emoji: "\u2615", bg: "linear-gradient(135deg,#fef3c7,#fde68a)", image: "/img/scenes/cafe.jpg" },
-        { emoji: "\u{1F3DB}\uFE0F", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", image: "/img/scenes/fitness.jpg" },
-        { emoji: "\u{1F4F0}", bg: "linear-gradient(135deg,#e0e7ff,#c7d2fe)", image: "/img/scenes/city.jpg" },
-        { emoji: "\u{1F465}", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)", image: "/img/scenes/meeting.jpg" },
-        { emoji: "\u{1F399}\uFE0F", bg: "linear-gradient(135deg,#cffafe,#a5f3fc)", image: "/img/scenes/interview.jpg" }
-      ];
-      parts = parts.map((p, i) => ({ ...p, scene: { emoji: (CEL_SCENES[i] || {}).emoji || "\u{1F3A7}", bg: (CEL_SCENES[i] || {}).bg, image: (CEL_SCENES[i] || {}).image || "", label: p.context } }));
+      const celScene = (ctx) => {
+        const c = String(ctx || "").toLowerCase();
+        const P = (image, emoji, bg) => ({ image: "/img/scenes/" + image, emoji, bg, label: ctx });
+        if (/coffee|cafe|café|restaurant|diner|menu|barista|bakery|meal/.test(c)) return P("cafe.jpg", "\u2615", "linear-gradient(135deg,#fef3c7,#fde68a)");
+        if (/museum|gallery|\bart\b|history|exhibit|heritage|tour|landmark|monument/.test(c)) return P("landmark.jpg", "\u{1F3DB}\uFE0F", "linear-gradient(135deg,#e0e7ff,#c7d2fe)");
+        if (/transit|bus|subway|train|traffic|strike|commute|street|downtown|transport|\bcity\b/.test(c)) return P("city.jpg", "\u{1F4F0}", "linear-gradient(135deg,#e0e7ff,#c7d2fe)");
+        if (/gym|fitness|exercise|sport|workout|recreation|swimming|athletic/.test(c)) return P("fitness.jpg", "\u{1F3CB}\uFE0F", "linear-gradient(135deg,#dcfce7,#bbf7d0)");
+        if (/interview|radio|podcast|privacy|journalist|broadcast|expert|\bhost\b/.test(c)) return P("interview.jpg", "\u{1F399}\uFE0F", "linear-gradient(135deg,#cffafe,#a5f3fc)");
+        if (/appliance|store|shop|return|refrigerator|kitchen|cook|repair|warranty|fridge|product/.test(c)) return P("kitchen.jpg", "\u{1F37D}\uFE0F", "linear-gradient(135deg,#fef9c3,#fde68a)");
+        if (/apartment|rent|home|house|living|neighbou?r|lease|moving/.test(c)) return P("apartment.jpg", "\u{1F3E0}", "linear-gradient(135deg,#dbeafe,#bfdbfe)");
+        if (/party|event|gather|festival|celebration|volunteer|community/.test(c)) return P("street_scene.jpg", "\u{1F389}", "linear-gradient(135deg,#fce7f3,#fbcfe8)");
+        if (/meeting|policy|debate|work|office|colleague|team|business|manager|project|company|remote/.test(c)) return P("meeting.jpg", "\u{1F465}", "linear-gradient(135deg,#fce7f3,#fbcfe8)");
+        return P("conversation.jpg", "\u{1F5E3}\uFE0F", "linear-gradient(135deg,#dbeafe,#ede9fe)");
+      };
+      parts = parts.map((p) => ({ ...p, scene: celScene(p.context) }));
     }
     return {
       id: "listening",

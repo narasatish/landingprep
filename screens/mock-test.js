@@ -842,6 +842,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
   const [playing, setPlaying] = useStateT(false);
   const [played, setPlayed] = useStateT({});
   const [progress, setProgress] = useStateT(null);
+  const [revealed, setRevealed] = useStateT({});
   const abortRef = useRefT(null);
   const parts = sec.parts || [];
   const current = parts[partIdx];
@@ -907,6 +908,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
     };
   }, [partIdx]);
   if (!current) return /* @__PURE__ */ React.createElement("div", { className: "empty-state" }, "No listening parts available.");
+  const showQ = !sec.isCelpip || !!revealed[current.id];
   const handlePlay = async () => {
     var _a, _b;
     if (playing) {
@@ -968,7 +970,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
       /* @__PURE__ */ React.createElement("span", { className: "pp-label" }, pillLabel),
       /* @__PURE__ */ React.createElement("span", { className: "pp-meta" }, ans, "/", (p.questions || []).length)
     );
-  })), current.scene && /* @__PURE__ */ React.createElement(SceneImage, { scene: current.scene }), /* @__PURE__ */ React.createElement("div", { className: "audio-panel" }, /* @__PURE__ */ React.createElement("div", { className: "ap-context" }, /* @__PURE__ */ React.createElement("div", { style: { fontWeight: 600, marginBottom: 4, color: "#fff" } }, current.scriptType ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}` : `Part ${current.partNum || partIdx + 1}`), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 13, color: "rgba(255,255,255,0.85)" } }, current.context), playing && /* @__PURE__ */ React.createElement("div", { style: { marginTop: 10, display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,0.7)" } }, /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " Audio in progress \u2014 do not refresh")), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 8, alignItems: "center" } }, /* @__PURE__ */ React.createElement(
+  })), (!sec.isCelpip || !showQ) && /* @__PURE__ */ React.createElement(React.Fragment, null, current.scene && /* @__PURE__ */ React.createElement(SceneImage, { scene: current.scene }), /* @__PURE__ */ React.createElement("div", { className: "audio-panel" }, /* @__PURE__ */ React.createElement("div", { className: "ap-context" }, /* @__PURE__ */ React.createElement("div", { style: { fontWeight: 600, marginBottom: 4, color: "#fff" } }, current.scriptType ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}` : `Part ${current.partNum || partIdx + 1}`), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 13, color: "rgba(255,255,255,0.85)" } }, current.context), playing && /* @__PURE__ */ React.createElement("div", { style: { marginTop: 10, display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,0.7)" } }, /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " Audio in progress \u2014 do not refresh")), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 8, alignItems: "center" } }, /* @__PURE__ */ React.createElement(
     "button",
     {
       className: "audio-btn",
@@ -976,7 +978,18 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
       onClick: handlePlay
     },
     playing ? "\u23F9 Stop" : played[current.id] ? "\u2713 Played" : "\u25B6 Play " + (current.scriptType ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}` : "Part " + (current.partNum || partIdx + 1))
-  ))), /* @__PURE__ */ React.createElement(
+  )))), sec.isCelpip && !showQ && /* @__PURE__ */ React.createElement("div", { className: "celpip-listen-gate" }, /* @__PURE__ */ React.createElement("div", { className: "clg-icon" }, "\u{1F3A7}"), /* @__PURE__ */ React.createElement("p", { className: "clg-note" }, "Listen to the whole recording. In CELPIP the questions appear ", /* @__PURE__ */ React.createElement("strong", null, "after"), " the audio \u2014 you won't see them while listening."), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary clg-btn", onClick: () => setRevealed((prev) => ({ ...prev, [current.id]: true })) }, playing ? "Skip to questions \u2192" : "Show the questions \u2192")), sec.isCelpip && showQ && /* @__PURE__ */ React.createElement("div", { className: "celpip-answer-head" }, /* @__PURE__ */ React.createElement("strong", null, "Part ", current.partNum || partIdx + 1, " \u2014 ", current.context), /* @__PURE__ */ React.createElement("span", null, " \xB7 Answer the questions about what you just heard."), /* @__PURE__ */ React.createElement("button", { className: "clg-replay", onClick: () => {
+    setRevealed((prev) => {
+      const n = { ...prev };
+      delete n[current.id];
+      return n;
+    });
+    setPlayed((prev) => {
+      const n = { ...prev };
+      delete n[current.id];
+      return n;
+    });
+  } }, "\u21BB Listen again")), showQ && /* @__PURE__ */ React.createElement(
     ListeningQuestions,
     {
       questions: current.questions || [],
