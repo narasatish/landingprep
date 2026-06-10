@@ -309,8 +309,23 @@
       });
     }
 
+    // CELPIP listening: render in real CELPIP style (no IELTS "Choose the correct
+    // letter" framing) and show a scenario photo before each part.
+    const isCel = test.exam === "celpip";
+    if (isCel) {
+      const CEL_SCENES = [
+        { emoji: "🗣️", bg: "linear-gradient(135deg,#dbeafe,#ede9fe)", image: "/img/scenes/conversation.jpg" },
+        { emoji: "☕", bg: "linear-gradient(135deg,#fef3c7,#fde68a)", image: "/img/scenes/cafe.jpg" },
+        { emoji: "🏛️", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", image: "/img/scenes/fitness.jpg" },
+        { emoji: "📰", bg: "linear-gradient(135deg,#e0e7ff,#c7d2fe)", image: "/img/scenes/city.jpg" },
+        { emoji: "👥", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)", image: "/img/scenes/meeting.jpg" },
+        { emoji: "🎙️", bg: "linear-gradient(135deg,#cffafe,#a5f3fc)", image: "/img/scenes/interview.jpg" },
+      ];
+      parts = parts.map((p, i) => ({ ...p, scene: { emoji: (CEL_SCENES[i] || {}).emoji || "🎧", bg: (CEL_SCENES[i] || {}).bg, image: (CEL_SCENES[i] || {}).image || "", label: p.context } }));
+    }
+
     return { id: "listening", name: "Listening", icon: "🎧",
-             timeSecs: test.durationSeconds || 1800, type: "listening", parts };
+             timeSecs: test.durationSeconds || 1800, type: "listening", parts, isCelpip: isCel };
   }
 
   function normaliseReading(test) {

@@ -262,13 +262,26 @@
         };
       });
     }
+    const isCel = test.exam === "celpip";
+    if (isCel) {
+      const CEL_SCENES = [
+        { emoji: "\u{1F5E3}\uFE0F", bg: "linear-gradient(135deg,#dbeafe,#ede9fe)", image: "/img/scenes/conversation.jpg" },
+        { emoji: "\u2615", bg: "linear-gradient(135deg,#fef3c7,#fde68a)", image: "/img/scenes/cafe.jpg" },
+        { emoji: "\u{1F3DB}\uFE0F", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", image: "/img/scenes/fitness.jpg" },
+        { emoji: "\u{1F4F0}", bg: "linear-gradient(135deg,#e0e7ff,#c7d2fe)", image: "/img/scenes/city.jpg" },
+        { emoji: "\u{1F465}", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)", image: "/img/scenes/meeting.jpg" },
+        { emoji: "\u{1F399}\uFE0F", bg: "linear-gradient(135deg,#cffafe,#a5f3fc)", image: "/img/scenes/interview.jpg" }
+      ];
+      parts = parts.map((p, i) => ({ ...p, scene: { emoji: (CEL_SCENES[i] || {}).emoji || "\u{1F3A7}", bg: (CEL_SCENES[i] || {}).bg, image: (CEL_SCENES[i] || {}).image || "", label: p.context } }));
+    }
     return {
       id: "listening",
       name: "Listening",
       icon: "\u{1F3A7}",
       timeSecs: test.durationSeconds || 1800,
       type: "listening",
-      parts
+      parts,
+      isCelpip: isCel
     };
   }
   function normaliseReading(test) {
