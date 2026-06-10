@@ -4914,3 +4914,14 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 .celpip-answer-head strong { color: var(--ink, #0f172a); }
 .celpip-answer-head .clg-replay { margin-left: auto; background: none; border: 1px solid var(--line, #e5e7eb); border-radius: 8px; padding: 6px 12px; font-size: 13px; cursor: pointer; color: var(--ink-2, #475569); }
 .celpip-answer-head .clg-replay:hover { background: #fff; }
+
+/* CELPIP listening — one question per page (real exam) */
+.celpip-q-progress { font-size: 13px; font-weight: 600; color: var(--ink-2, #475569); margin-bottom: 10px; }
+.celpip-q-nav { display: flex; align-items: center; gap: 12px; margin-top: 18px; }
+.celpip-q-nav .btn { padding: 10px 18px; font-size: 14px; }
+.celpip-q-nav .btn:disabled { opacity: .4; cursor: default; }
+.cqn-dots { display: flex; gap: 6px; flex: 1; justify-content: center; flex-wrap: wrap; }
+.cqn-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--line, #e5e7eb); cursor: pointer; transition: transform .1s; }
+.cqn-dot:hover { transform: scale(1.2); }
+.cqn-dot.done { background: var(--leaf, #16a34a); }
+.cqn-dot.active { background: var(--accent, #4F46E5); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent, #4F46E5) 25%, transparent); }

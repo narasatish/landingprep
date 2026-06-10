@@ -992,6 +992,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
   } }, "\u21BB Listen again")), showQ && /* @__PURE__ */ React.createElement(
     ListeningQuestions,
     {
+      key: "lq-" + current.id,
       questions: current.questions || [],
       answers,
       setAnswer,
@@ -1325,22 +1326,28 @@ function groupQuestions(questions) {
   return groups;
 }
 function ListeningQuestions({ questions, answers, setAnswer, sectionId, partIdx, totalParts, formLayout, onPrevPart, onNextPart, isCelpip }) {
+  const [qIdx, setQIdx] = useStateT(0);
   if (!questions.length) return /* @__PURE__ */ React.createElement("div", { style: { padding: 20, color: "var(--ink-3)" } }, "No questions in this part.");
   const total = questions.length;
   const answeredCount = questions.filter((qq) => answers[sectionId + "_" + qq.id] != null && answers[sectionId + "_" + qq.id] !== "").length;
+  if (isCelpip) {
+    const idx = Math.min(qIdx, total - 1);
+    const q = questions[idx];
+    return /* @__PURE__ */ React.createElement("div", { style: { marginTop: 18 } }, /* @__PURE__ */ React.createElement("div", { className: "celpip-q-progress" }, "Question ", idx + 1, " of ", total), /* @__PURE__ */ React.createElement(
+      QuestionCard,
+      {
+        key: q.id,
+        q,
+        qi: idx,
+        sectionId,
+        answer: answers[sectionId + "_" + q.id],
+        onAnswer: (val) => setAnswer(sectionId + "_" + q.id, val),
+        hideInstruction: true
+      }
+    ), /* @__PURE__ */ React.createElement("div", { className: "celpip-q-nav" }, /* @__PURE__ */ React.createElement("button", { className: "btn", disabled: idx === 0, onClick: () => setQIdx((i) => Math.max(0, i - 1)) }, "\u2190 Previous"), /* @__PURE__ */ React.createElement("span", { className: "cqn-dots" }, questions.map((qq, i) => /* @__PURE__ */ React.createElement("span", { key: i, className: "cqn-dot" + (i === idx ? " active" : "") + (answers[sectionId + "_" + qq.id] != null && answers[sectionId + "_" + qq.id] !== "" ? " done" : ""), onClick: () => setQIdx(i) }))), idx < total - 1 ? /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => setQIdx((i) => Math.min(total - 1, i + 1)) }, "Next question \u2192") : /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNextPart && onNextPart() }, "Next part \u2192")));
+  }
   const groups = groupQuestions(questions);
-  return /* @__PURE__ */ React.createElement("div", { style: { marginTop: 18 } }, /* @__PURE__ */ React.createElement("div", { style: { marginBottom: 18, padding: "10px 14px", background: "var(--tint)", borderRadius: 10, fontSize: 13, color: "var(--ink-3)" } }, "Part ", partIdx + 1, " of ", totalParts, " \xB7 ", answeredCount, " of ", total, " questions answered"), isCelpip ? /* @__PURE__ */ React.createElement("div", { className: "q-group" }, /* @__PURE__ */ React.createElement("div", { className: "q-section-header" }, /* @__PURE__ */ React.createElement("div", { className: "qsh-instruction" }, "Listen to the audio above, then choose the best answer for each question.")), questions.map((q, qi) => /* @__PURE__ */ React.createElement(
-    QuestionCard,
-    {
-      key: q.id,
-      q,
-      qi,
-      sectionId,
-      answer: answers[sectionId + "_" + q.id],
-      onAnswer: (val) => setAnswer(sectionId + "_" + q.id, val),
-      hideInstruction: true
-    }
-  ))) : formLayout ? /* @__PURE__ */ React.createElement("div", { className: "q-group" }, /* @__PURE__ */ React.createElement("div", { className: "q-section-header" }, /* @__PURE__ */ React.createElement("div", { className: "qsh-range" }, "Questions 1\u201310"), /* @__PURE__ */ React.createElement("div", { className: "qsh-instruction" }, "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.")), /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ React.createElement("div", { style: { marginTop: 18 } }, /* @__PURE__ */ React.createElement("div", { style: { marginBottom: 18, padding: "10px 14px", background: "var(--tint)", borderRadius: 10, fontSize: 13, color: "var(--ink-3)" } }, "Part ", partIdx + 1, " of ", totalParts, " \xB7 ", answeredCount, " of ", total, " questions answered"), formLayout ? /* @__PURE__ */ React.createElement("div", { className: "q-group" }, /* @__PURE__ */ React.createElement("div", { className: "q-section-header" }, /* @__PURE__ */ React.createElement("div", { className: "qsh-range" }, "Questions 1\u201310"), /* @__PURE__ */ React.createElement("div", { className: "qsh-instruction" }, "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.")), /* @__PURE__ */ React.createElement(
     FormTable,
     {
       formLayout,

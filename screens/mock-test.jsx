@@ -1120,6 +1120,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
       )}
 
       {showQ && <ListeningQuestions
+        key={"lq-" + current.id}
         questions={current.questions || []}
         answers={answers}
         setAnswer={setAnswer}
@@ -1557,9 +1558,37 @@ function groupQuestions(questions) {
 
 /* Per-part question viewer — IELTS pattern with grouped section headers */
 function ListeningQuestions({ questions, answers, setAnswer, sectionId, partIdx, totalParts, formLayout, onPrevPart, onNextPart, isCelpip }) {
+  const [qIdx, setQIdx] = useStateT(0);
   if (!questions.length) return <div style={{ padding: 20, color: "var(--ink-3)" }}>No questions in this part.</div>;
   const total = questions.length;
   const answeredCount = questions.filter(qq => answers[sectionId + "_" + qq.id] != null && answers[sectionId + "_" + qq.id] !== "").length;
+
+  // CELPIP answer phase: ONE question per page, with Next/Previous — as in the real exam.
+  if (isCelpip) {
+    const idx = Math.min(qIdx, total - 1);
+    const q = questions[idx];
+    return (
+      <div style={{ marginTop: 18 }}>
+        <div className="celpip-q-progress">Question {idx + 1} of {total}</div>
+        <QuestionCard
+          key={q.id} q={q} qi={idx} sectionId={sectionId}
+          answer={answers[sectionId + "_" + q.id]}
+          onAnswer={(val) => setAnswer(sectionId + "_" + q.id, val)}
+          hideInstruction={true}
+        />
+        <div className="celpip-q-nav">
+          <button className="btn" disabled={idx === 0} onClick={() => setQIdx(i => Math.max(0, i - 1))}>← Previous</button>
+          <span className="cqn-dots">{questions.map((qq, i) => (
+            <span key={i} className={"cqn-dot" + (i === idx ? " active" : "") + ((answers[sectionId + "_" + qq.id] != null && answers[sectionId + "_" + qq.id] !== "") ? " done" : "")} onClick={() => setQIdx(i)} />
+          ))}</span>
+          {idx < total - 1
+            ? <button className="btn btn-primary" onClick={() => setQIdx(i => Math.min(total - 1, i + 1))}>Next question →</button>
+            : <button className="btn btn-primary" onClick={() => onNextPart && onNextPart()}>Next part →</button>}
+        </div>
+      </div>
+    );
+  }
+
   const groups = groupQuestions(questions);
 
   return (
@@ -1568,23 +1597,7 @@ function ListeningQuestions({ questions, answers, setAnswer, sectionId, partIdx,
         Part {partIdx + 1} of {totalParts} · {answeredCount} of {total} questions answered
       </div>
 
-      {/* CELPIP: no IELTS "Questions X–Y / Choose the correct letter" framing — one instruction,
-          then each question with its options, as in the real CELPIP listening test. */}
-      {isCelpip ? (
-        <div className="q-group">
-          <div className="q-section-header">
-            <div className="qsh-instruction">Listen to the audio above, then choose the best answer for each question.</div>
-          </div>
-          {questions.map((q, qi) => (
-            <QuestionCard
-              key={q.id} q={q} qi={qi} sectionId={sectionId}
-              answer={answers[sectionId + "_" + q.id]}
-              onAnswer={(val) => setAnswer(sectionId + "_" + q.id, val)}
-              hideInstruction={true}
-            />
-          ))}
-        </div>
-      ) : formLayout ? (
+      {formLayout ? (
         <div className="q-group">
           <div className="q-section-header">
             <div className="qsh-range">Questions 1–10</div>
