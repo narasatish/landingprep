@@ -1,0 +1,421 @@
+{
+  "reading": [
+    {
+      "id": "pte_xr1",
+      "type": "fill_in_blanks_rw",
+      "text": "The transition from fossil fuels to renewable energy sources is ___[1]___ essential for combating climate change, yet many countries ___[2]___ to implement large-scale renewable projects due to initial infrastructure costs. Scientists argue that ___[3]___ investment in solar and wind technology will ultimately prove cost-effective, as renewable sources require minimal ___[4]___ once installed.",
+      "options": ["considered", "considering", "consideration", "consider"],
+      "optionSets": {
+        "1": ["considered", "considering", "consideration", "considers"],
+        "2": ["struggle", "struggling", "struggled", "struggles"],
+        "3": ["sustained", "sustaining", "sustenance", "sustain"],
+        "4": ["maintenance", "maintaining", "maintained", "maintain"]
+      },
+      "answers": {
+        "1": "considered",
+        "2": "struggle",
+        "3": "sustained",
+        "4": "maintenance"
+      }
+    },
+    {
+      "id": "pte_xr2",
+      "type": "fill_in_blanks_rw",
+      "text": "The COVID-19 pandemic ___[1]___ significant challenges to global supply chains, forcing manufacturers to ___[2]___ their production strategies. Many companies discovered that ___[3]___ sourcing from a single country posed substantial risks, leading to a shift towards more geographically ___[4]___ suppliers.",
+      "options": ["posed", "posing", "position", "pose"],
+      "optionSets": {
+        "1": ["posed", "posing", "positions", "pose"],
+        "2": ["reconsider", "reconsidering", "reconsideration", "reconsidered"],
+        "3": ["relying", "rely", "relied", "reliance"],
+        "4": ["diverse", "diversity", "diversified", "diversify"]
+      },
+      "answers": {
+        "1": "posed",
+        "2": "reconsider",
+        "3": "relying",
+        "4": "diverse"
+      }
+    },
+    {
+      "id": "pte_xr3",
+      "type": "fill_in_blanks_rw",
+      "text": "Artificial intelligence has ___[1]___ remarkable progress in recent years, with applications ranging from medical diagnosis to autonomous vehicles. However, experts ___[2]___ that without proper regulation and ___[3]___ frameworks, the technology could pose significant risks to employment and privacy. Policymakers must ___[4]___ comprehensive guidelines to ensure AI development benefits society while minimising potential harms.",
+      "options": ["made", "making", "make", "makes"],
+      "optionSets": {
+        "1": ["made", "making", "makes", "make"],
+        "2": ["warn", "warning", "warned", "warns"],
+        "3": ["ethical", "ethics", "ethically", "ethicist"],
+        "4": ["establish", "establishing", "established", "establishes"]
+      },
+      "answers": {
+        "1": "made",
+        "2": "warn",
+        "3": "ethical",
+        "4": "establish"
+      }
+    },
+    {
+      "id": "pte_xr4",
+      "type": "fill_in_blanks_rw",
+      "text": "The rise of remote work has ___[1]___ traditional notions of the workplace, enabling employees to maintain ___[2]___ while enjoying greater flexibility. Despite its benefits, research suggests that prolonged remote work may ___[3]___ employee engagement and team cohesion. Forward-thinking organisations are adopting ___[4]___ work models that combine in-office and remote arrangements.",
+      "options": ["challenged", "challenging", "challenges", "challenge"],
+      "optionSets": {
+        "1": ["challenged", "challenging", "challenges", "challenge"],
+        "2": ["productivity", "productive", "producing", "produce"],
+        "3": ["impair", "impairing", "impairs", "impaired"],
+        "4": ["hybrid", "hybrids", "hybridly", "hybridise"]
+      },
+      "answers": {
+        "1": "challenged",
+        "2": "productivity",
+        "3": "impair",
+        "4": "hybrid"
+      }
+    },
+    {
+      "id": "pte_xr5",
+      "type": "fill_in_blanks_rw",
+      "text": "Biodiversity loss represents one of the most ___[1]___ environmental crises of our time, with species extinction rates ___[2]___ at unprecedented levels. Conservation efforts ___[3]___ protecting endangered habitats through legislation and community engagement. Funding for these initiatives remains ___[4]___, requiring both government support and private investment.",
+      "options": ["pressing", "pressed", "press", "presses"],
+      "optionSets": {
+        "1": ["pressing", "pressed", "presses", "press"],
+        "2": ["rising", "risen", "rise", "rises"],
+        "3": ["require", "requiring", "requires", "required"],
+        "4": ["insufficient", "sufficiently", "sufficient", "suffice"]
+      },
+      "answers": {
+        "1": "pressing",
+        "2": "rising",
+        "3": "require",
+        "4": "insufficient"
+      }
+    },
+    {
+      "id": "pte_xr6",
+      "type": "fill_in_blanks_rw",
+      "text": "Ocean acidification, caused by increased carbon dioxide ___[1]___, threatens marine ecosystems and the organisms that ___[2]___ on them. Coral reefs are particularly ___[3]___ to these chemical changes, with many species unable to maintain their calcium carbonate structures. Urgent action to ___[4]___ greenhouse gas emissions is critical for preserving these vital ecosystems.",
+      "options": ["absorption", "absorbing", "absorbed", "absorb"],
+      "optionSets": {
+        "1": ["absorption", "absorbing", "absorbed", "absorb"],
+        "2": ["depend", "depending", "depended", "depends"],
+        "3": ["vulnerable", "vulnerably", "vulnerability", "vulnerabilities"],
+        "4": ["reduce", "reducing", "reduced", "reduces"]
+      },
+      "answers": {
+        "1": "absorption",
+        "2": "depend",
+        "3": "vulnerable",
+        "4": "reduce"
+      }
+    },
+    {
+      "id": "pte_xr7",
+      "type": "fill_in_blanks_rw",
+      "text": "The education sector has undergone ___[1]___ transformation with the integration of digital technologies into classrooms. Teachers now ___[2]___ with new tools such as artificial intelligence tutors and virtual reality learning environments. While these innovations offer significant ___[3]___ for personalised learning, educators must remain ___[4]___ of potential challenges such as digital inequality and screen fatigue.",
+      "options": ["remarkable", "remarkably", "remark", "remarks"],
+      "optionSets": {
+        "1": ["remarkable", "remarkably", "remarks", "remark"],
+        "2": ["engaging", "engage", "engaged", "engages"],
+        "3": ["promise", "promising", "promised", "promises"],
+        "4": ["aware", "awareness", "awares", "awaring"]
+      },
+      "answers": {
+        "1": "remarkable",
+        "2": "engage",
+        "3": "promise",
+        "4": "aware"
+      }
+    },
+    {
+      "id": "pte_xr8",
+      "type": "reorder_paragraphs",
+      "title": "The history of artificial intelligence",
+      "sentences": [
+        {
+          "id": "A",
+          "text": "Modern artificial intelligence owes much to the development of neural networks and deep learning techniques, which allow machines to learn from vast amounts of data without explicit programming."
+        },
+        {
+          "id": "B",
+          "text": "The field of artificial intelligence was formally established in 1956 at the Dartmouth Conference, where pioneering researchers came together to explore whether machines could simulate human intelligence."
+        },
+        {
+          "id": "C",
+          "text": "Early AI systems, such as expert systems developed in the 1970s and 1980s, showed promise but were limited by their inability to handle complexity and adapt to new situations."
+        },
+        {
+          "id": "D",
+          "text": "Today, AI applications are ubiquitous, powering everything from virtual assistants to medical diagnostic systems, and continuing to reshape industries and society at large."
+        }
+      ],
+      "answer": ["B", "C", "A", "D"],
+      "tip": "Start with the historical establishment of AI as a field (B). Progress through the early systems with limitations (C), then modern advances (A), and conclude with current applications (D)."
+    },
+    {
+      "id": "pte_xr9",
+      "type": "reorder_paragraphs",
+      "title": "The process of photosynthesis",
+      "sentences": [
+        {
+          "id": "A",
+          "text": "The energy captured from light is used to convert carbon dioxide and water into glucose, a simple sugar that plants use for energy and growth."
+        },
+        {
+          "id": "B",
+          "text": "Photosynthesis occurs in chloroplasts, specialised structures within plant cells that contain the pigment chlorophyll."
+        },
+        {
+          "id": "C",
+          "text": "During this process, plants also release oxygen as a byproduct, which is essential for most life forms on Earth."
+        },
+        {
+          "id": "D",
+          "text": "This process begins when chlorophyll absorbs light energy from the sun, converting the light into chemical energy that can be used by the plant."
+        }
+      ],
+      "answer": ["B", "D", "A", "C"],
+      "tip": "Introduce the location and mechanism (B), then describe the initial energy capture (D), the conversion process (A), and finally the important byproduct (C)."
+    },
+    {
+      "id": "pte_xr10",
+      "type": "reorder_paragraphs",
+      "title": "Urban heat island effect",
+      "sentences": [
+        {
+          "id": "A",
+          "text": "The consequences of the urban heat island effect extend beyond discomfort, as elevated temperatures increase energy consumption for air conditioning and contribute to worsening air quality through increased ozone formation."
+        },
+        {
+          "id": "B",
+          "text": "This phenomenon, known as the urban heat island effect, occurs when urban areas experience significantly higher temperatures than their surrounding rural regions."
+        },
+        {
+          "id": "C",
+          "text": "Cities are warmer than surrounding areas because buildings, roads, and other infrastructure absorb and retain solar radiation, while trees and vegetation that would normally provide cooling are often absent in densely built areas."
+        },
+        {
+          "id": "D",
+          "text": "Cities worldwide are implementing strategies such as increasing green spaces, installing reflective roofing materials, and promoting urban forests to mitigate the urban heat island effect."
+        }
+      ],
+      "answer": ["B", "C", "A", "D"],
+      "tip": "Define the phenomenon first (B), explain the scientific cause (C), then discuss the consequences (A), and finally present solutions (D)."
+    },
+    {
+      "id": "pte_xr11",
+      "type": "reorder_paragraphs",
+      "title": "The evolution of mobile technology",
+      "sentences": [
+        {
+          "id": "A",
+          "text": "The introduction of smartphones with touchscreen technology and mobile applications fundamentally changed how people interact with technology, providing access to communication, information, and entertainment in the palm of their hand."
+        },
+        {
+          "id": "B",
+          "text": "Mobile phones began as large, cumbersome devices designed primarily for voice communication, but decades of technological advancement have transformed them into indispensable tools that influence nearly every aspect of modern life."
+        },
+        {
+          "id": "C",
+          "text": "Today, mobile devices have evolved to include advanced features such as high-resolution cameras, artificial intelligence assistants, and wearable connectivity, further expanding their role in daily life."
+        },
+        {
+          "id": "D",
+          "text": "The transition from basic mobile phones to early smartphones in the late 2000s marked a turning point, as these devices began to incorporate internet connectivity and limited application capabilities."
+        }
+      ],
+      "answer": ["B", "D", "A", "C"],
+      "tip": "Begin with the historical context of early phones (B), transition to early smartphones (D), describe the revolution of touchscreen technology (A), then conclude with modern advanced features (C)."
+    },
+    {
+      "id": "pte_xr12",
+      "type": "reorder_paragraphs",
+      "title": "The role of wetlands in ecosystems",
+      "sentences": [
+        {
+          "id": "A",
+          "text": "Wetlands are also significant carbon sinks, storing vast amounts of carbon in their soils and vegetation, making them crucial in efforts to combat climate change and reduce atmospheric carbon dioxide levels."
+        },
+        {
+          "id": "B",
+          "text": "Wetlands are among the most biologically productive ecosystems on Earth, supporting diverse plant and animal communities that depend on the unique conditions created by seasonal flooding and nutrient-rich waters."
+        },
+        {
+          "id": "C",
+          "text": "Beyond their role as biodiversity hotspots, wetlands provide invaluable services such as water filtration, flood prevention, and coastal protection by absorbing excess water during heavy rainfall."
+        },
+        {
+          "id": "D",
+          "text": "Despite their importance, wetlands are rapidly disappearing due to human development and drainage for agriculture, resulting in significant losses of habitat and ecosystem services that took millennia to develop."
+        }
+      ],
+      "answer": ["B", "C", "A", "D"],
+      "tip": "Introduce the ecological productivity of wetlands (B), discuss their ecosystem services (C), highlight their climate benefits (A), and conclude with the threat they face (D)."
+    },
+    {
+      "id": "pte_xr13",
+      "type": "reorder_paragraphs",
+      "title": "The development of antibiotics",
+      "sentences": [
+        {
+          "id": "A",
+          "text": "The discovery of penicillin in 1928 by Alexander Fleming revolutionised medicine by providing the first effective treatment for bacterial infections, transforming antibiotics into one of the most valuable tools in modern healthcare."
+        },
+        {
+          "id": "B",
+          "text": "Before this discovery, bacterial infections posed serious health risks, and many diseases that are now easily treatable were once life-threatening and often fatal."
+        },
+        {
+          "id": "C",
+          "text": "However, decades of overuse and misuse of antibiotics in medical and agricultural settings have led to the emergence of antibiotic-resistant bacteria, a development that now threatens to reverse the gains made in treating infectious diseases."
+        },
+        {
+          "id": "D",
+          "text": "Medical researchers continue to develop new antibiotics and alternative treatments to combat resistance, recognising that this challenge requires ongoing innovation and careful stewardship of existing medications."
+        }
+      ],
+      "answer": ["B", "A", "C", "D"],
+      "tip": "Begin with the historical context of infectious diseases (B), describe the breakthrough discovery (A), then present the modern challenge of resistance (C), and finally discuss current responses (D)."
+    }
+  ],
+  "listening": [
+    {
+      "id": "pte_xl1",
+      "type": "write_from_dictation",
+      "sentences": [
+        "The advancement of medical imaging technology has significantly improved the early detection and diagnosis of serious illnesses.",
+        "Climate policy debates increasingly focus on balancing economic growth with environmental sustainability.",
+        "Neuroscientists have discovered that the human brain maintains remarkable plasticity even throughout adulthood.",
+        "The psychological impact of social isolation during extended lockdowns has been extensively documented in recent studies.",
+        "International collaboration in scientific research has accelerated the pace of innovation and discovery.",
+        "Access to quality education remains unequally distributed across developed and developing nations.",
+        "Biotechnology companies are investing heavily in the development of novel treatments for previously untreatable genetic disorders."
+      ]
+    },
+    {
+      "id": "pte_xl2",
+      "type": "write_from_dictation",
+      "sentences": [
+        "The transition to a circular economy requires fundamental changes in how manufacturers design and produce consumer goods.",
+        "Renewable energy sources now account for an increasingly significant portion of global electricity generation capacity.",
+        "Archaeological discoveries continue to reveal new insights into the social structures and daily lives of ancient civilisations.",
+        "The expansion of public transportation networks in developing cities has reduced traffic congestion and air pollution levels.",
+        "Cybersecurity experts emphasise the importance of regular software updates to protect against evolving digital threats.",
+        "Longitudinal studies have shown strong correlations between regular physical exercise and improved cognitive performance.",
+        "The preservation of indigenous languages is crucial for maintaining cultural heritage and knowledge systems."
+      ]
+    },
+    {
+      "id": "pte_xl3",
+      "type": "write_from_dictation",
+      "sentences": [
+        "Precision agriculture techniques utilise data analytics and satellite imagery to optimise crop yields while minimising resource consumption.",
+        "Marine biologists warn that ocean warming is causing widespread bleaching of coral reef ecosystems.",
+        "The adoption of remote work technologies has necessitated new approaches to employee training and development.",
+        "Epidemiological models have become essential tools for predicting disease transmission patterns and evaluating public health interventions.",
+        "Urban planners are increasingly incorporating green infrastructure into city designs to mitigate flooding and reduce urban heat.",
+        "The economics of renewable energy have shifted dramatically as manufacturing costs have declined substantially over recent decades.",
+        "Educational researchers emphasise that student engagement increases significantly when learning objectives are clearly communicated."
+      ]
+    },
+    {
+      "id": "pte_xl4",
+      "type": "write_from_dictation",
+      "sentences": [
+        "The development of quantum computing technology promises to revolutionise data encryption and computational capabilities.",
+        "Archaeological evidence suggests that early human societies engaged in complex trade networks spanning multiple continents.",
+        "Contemporary urban design increasingly prioritises walkability and public spaces that encourage community interaction.",
+        "Pharmacological research has revealed that certain plant-derived compounds possess promising anti-inflammatory properties.",
+        "The standardisation of international trade regulations has facilitated commerce while reducing barriers between nations.",
+        "Cognitive psychologists have identified several evidence-based strategies for improving memory retention and learning efficiency.",
+        "Conservation initiatives focused on rewilding have demonstrated positive outcomes for ecosystem restoration in degraded landscapes."
+      ]
+    },
+    {
+      "id": "pte_xl5",
+      "type": "write_from_dictation",
+      "sentences": [
+        "Advances in nanotechnology are opening new possibilities for targeted drug delivery and disease treatment.",
+        "The migration patterns of species have been significantly altered by changes in climate and habitat availability.",
+        "Financial institutions are increasingly adopting artificial intelligence systems to detect fraudulent transactions and assess credit risk.",
+        "Sociological research indicates that workplace diversity initiatives contribute to improved organisational performance and innovation.",
+        "The reconstruction of historical ecosystems requires painstaking efforts to remove invasive species and restore native vegetation.",
+        "Geothermal energy represents an underutilised renewable resource with potential for substantial expansion in many regions.",
+        "Linguistic analysis reveals that modern communication technologies are fundamentally changing how languages evolve and adapt."
+      ]
+    },
+    {
+      "id": "pte_xl6",
+      "type": "write_from_dictation",
+      "sentences": [
+        "Materials scientists are developing innovative composite substances that combine durability with environmental sustainability.",
+        "Epidemiological data demonstrates that access to preventive healthcare services significantly reduces long-term disease burden.",
+        "The expansion of artificial intelligence in creative industries raises important questions about intellectual property and artistic authenticity.",
+        "Structural engineers employ advanced modelling techniques to ensure that large-scale infrastructure projects withstand natural disasters.",
+        "Botanical studies have identified numerous plant species with untapped potential for medicinal and therapeutic applications.",
+        "The globalisation of supply chains has created complex networks of interdependence among manufacturers and distributors worldwide.",
+        "Developmental psychologists recognise that early childhood experiences profoundly influence cognitive and emotional development trajectories."
+      ]
+    },
+    {
+      "id": "pte_xl7",
+      "type": "write_from_dictation",
+      "sentences": [
+        "Atmospheric scientists warn that ozone depletion in the stratosphere continues to pose significant risks to human health.",
+        "The digitalisation of government services has improved accessibility for citizens while reducing administrative burden and processing times.",
+        "Microbiological research has identified novel enzymes with potential applications in industrial biotechnology and waste remediation.",
+        "Urban agriculture initiatives are helping to improve food security in densely populated cities while reducing transportation emissions.",
+        "Statistical analysis of climate data reveals unmistakable long-term trends consistent with human-induced global warming.",
+        "Occupational health researchers have documented that workplace stress management programmes yield measurable improvements in employee wellbeing.",
+        "Evolutionary biologists study how organisms adapt to environmental changes through mechanisms of natural selection and genetic variation."
+      ]
+    },
+    {
+      "id": "pte_xl8",
+      "type": "highlight_incorrect_words",
+      "audio": "The Great Barrier Reef is the world's largest coral reef system, stretching over two thousand kilometres along the Australian coast. However, the reef faces unprecedented threats from ocean warming, acidification, and pollution, which have caused widespread coral bleaching.",
+      "text_with_errors": "The Great Barrier Reef is the world's largest coral reef system, stretching over two thousand kilometres along the Australian coast. However, the reef faces unprecedented threats from ocean warming, [acidation], and pollution, which have caused widespread coral bleaching.",
+      "incorrectWords": ["acidation"],
+      "correctWords": ["acidification"]
+    },
+    {
+      "id": "pte_xl9",
+      "type": "highlight_incorrect_words",
+      "audio": "Renewable energy sources such as solar panels and wind turbines have become increasingly cost-competitive with fossil fuel generation in many regions. This shift reflects improvements in technology efficiency and significant reductions in manufacturing costs.",
+      "text_with_errors": "Renewable energy sources such as solar panels and wind turbines have become increasingly cost-competitive with [fossil fuel generation] in many regions. This shift reflects improvements in technology [inefficiency] and significant reductions in manufacturing costs.",
+      "incorrectWords": ["fossil fuel generation", "inefficiency"],
+      "correctWords": ["fossil fuel generation", "efficiency"]
+    },
+    {
+      "id": "pte_xl10",
+      "type": "highlight_incorrect_words",
+      "audio": "Artificial intelligence algorithms are being developed to diagnose cancer with greater accuracy than traditional imaging techniques. Machine learning models trained on thousands of patient scans can now identify tumours at earlier stages.",
+      "text_with_errors": "Artificial intelligence algorithms are being developed to diagnose cancer with greater accuracy than traditional imaging techniques. Machine learning models trained on thousands of patient scans can now identify [tumours] at earlier [phases].",
+      "incorrectWords": ["phases"],
+      "correctWords": ["stages"]
+    },
+    {
+      "id": "pte_xl11",
+      "type": "highlight_incorrect_words",
+      "audio": "The human microbiome consists of trillions of bacteria and microorganisms that inhabit the digestive system and play crucial roles in immune function and nutrient absorption. Recent research has revealed that microbiome composition influences mood and cognitive performance.",
+      "text_with_errors": "The human microbiome consists of trillions of bacteria and microorganisms that inhabit the [digestive system] and play crucial roles in immune function and nutrient absorption. Recent research has revealed that microbiome composition influences mood and [cognitive performance].",
+      "incorrectWords": [],
+      "correctWords": []
+    },
+    {
+      "id": "pte_xl12",
+      "type": "highlight_incorrect_words",
+      "audio": "Deforestation in tropical regions is driving species extinction at alarming rates and destroying carbon sinks essential for climate regulation. Conservation organisations are working to establish protected areas and promote sustainable forestry practices.",
+      "text_with_errors": "Deforestation in tropical regions is driving species [extinction] at alarming rates and destroying [carbon sinks] essential for climate regulation. Conservation organisations are working to establish protected areas and promote sustainable [forestry practices].",
+      "incorrectWords": [],
+      "correctWords": []
+    },
+    {
+      "id": "pte_xl13",
+      "type": "highlight_incorrect_words",
+      "audio": "Archaeological evidence suggests that ancient trade networks connected distant civilisations through exchange of goods and knowledge. These networks facilitated the spread of innovations including agricultural techniques and technological advances.",
+      "text_with_errors": "Archaeological evidence suggests that ancient trade networks connected distant [civilisations] through exchange of goods and knowledge. These networks facilitated the spread of innovations including agricultural techniques and [technological advances].",
+      "incorrectWords": [],
+      "correctWords": []
+    }
+  ]
+}

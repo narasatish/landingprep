@@ -243,6 +243,7 @@ function MockTestGate(props) {
     const fail = () => { if (live) setFailed(true); };
     if (!window.LP_loadScript) { fail(); return; }
     (typeof window.LP_QUESTIONS !== "undefined" ? Promise.resolve() : window.LP_loadScript("data-questions.js"))
+      .then(() => (window.LP_QUESTIONS && !window.LP_QUESTIONS.__extra ? window.LP_loadScript("exam-extra.js").catch(() => {}) : null))
       .then(() => (window.LP_MockTest ? null : window.LP_loadScript("screens/mock-test.js")))
       .then(() => { if (!live) return; present() ? setReady(true) : fail(); })
       .catch(fail);
