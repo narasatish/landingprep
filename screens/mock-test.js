@@ -405,19 +405,19 @@ function buildTest(examId, testType) {
     if (testType === "full" || testType === "section_listening") {
       const cl = get("celpip.listening", []);
       const CEL_SCENES = [
-        { emoji: "\u{1F5E3}\uFE0F", bg: "linear-gradient(135deg,#dbeafe,#ede9fe)" },
-        { emoji: "\u2615", bg: "linear-gradient(135deg,#fef3c7,#fde68a)" },
-        { emoji: "\u{1F3DB}\uFE0F", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)" },
-        { emoji: "\u{1F4F0}", bg: "linear-gradient(135deg,#e0e7ff,#c7d2fe)" },
-        { emoji: "\u{1F465}", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)" },
-        { emoji: "\u{1F399}\uFE0F", bg: "linear-gradient(135deg,#cffafe,#a5f3fc)" }
+        { emoji: "\u{1F5E3}\uFE0F", bg: "linear-gradient(135deg,#dbeafe,#ede9fe)", image: "/img/scenes/conversation.jpg" },
+        { emoji: "\u2615", bg: "linear-gradient(135deg,#fef3c7,#fde68a)", image: "/img/scenes/cafe.jpg" },
+        { emoji: "\u{1F3DB}\uFE0F", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", image: "/img/scenes/fitness.jpg" },
+        { emoji: "\u{1F4F0}", bg: "linear-gradient(135deg,#e0e7ff,#c7d2fe)", image: "/img/scenes/city.jpg" },
+        { emoji: "\u{1F465}", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)", image: "/img/scenes/meeting.jpg" },
+        { emoji: "\u{1F399}\uFE0F", bg: "linear-gradient(135deg,#cffafe,#a5f3fc)", image: "/img/scenes/interview.jpg" }
       ];
       const parts = (cl || []).map((p, i) => ({
         id: `cel_l${p.part || i + 1}`,
         partNum: p.part || i + 1,
         name: `Part ${p.part || i + 1}: ${p.name}`,
         context: p.scenario || p.name,
-        scene: { emoji: (CEL_SCENES[i] || {}).emoji || "\u{1F3A7}", bg: (CEL_SCENES[i] || {}).bg, label: p.name, image: p.image || "" },
+        scene: { emoji: (CEL_SCENES[i] || {}).emoji || "\u{1F3A7}", bg: (CEL_SCENES[i] || {}).bg, label: p.name, image: p.image || (CEL_SCENES[i] || {}).image || "" },
         audioScript: p.audioScript || "Listen carefully.",
         questions: (p.questions || []).map((q) => ({ id: q.id, type: q.type || "mcq", text: q.text || q.prompt, options: q.options, answer: q.answer }))
       }));
@@ -479,9 +479,9 @@ Write at least 150 words.`, wordTarget: t.wordTarget || 150, sampleAnswer: t.sam
         { name: "Unusual Situation", situation: "You see something strange happening: a person is putting a large package into your neighbour's mailbox at midnight. You don't know your neighbour well. Describe what you would do and why.", prep: 30, response: 60 }
       ];
       const SPK_SCENES = {
-        "Describing a Scene": { emoji: "\u{1F3DE}\uFE0F", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", label: "Look at the picture \u2014 describe what you see" },
-        "Making Predictions": { emoji: "\u{1F52E}", bg: "linear-gradient(135deg,#ede9fe,#ddd6fe)", label: "Look at the picture \u2014 predict what happens next" },
-        "Comparing Options": { emoji: "\u2696\uFE0F", bg: "linear-gradient(135deg,#dbeafe,#bfdbfe)", label: "Compare the two options shown" }
+        "Describing a Scene": { emoji: "\u{1F3DE}\uFE0F", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", image: "/img/scenes/landmark.jpg", label: "Look at the picture \u2014 describe what you see" },
+        "Making Predictions": { emoji: "\u{1F52E}", bg: "linear-gradient(135deg,#ede9fe,#ddd6fe)", image: "/img/scenes/street_scene.jpg", label: "Look at the picture \u2014 predict what happens next" },
+        "Comparing Options": { emoji: "\u2696\uFE0F", bg: "linear-gradient(135deg,#dbeafe,#bfdbfe)", image: "/img/scenes/apartment.jpg", label: "Compare the two options shown" }
       };
       const cards = realPrompts.map((p, i) => ({
         id: `cel_s${i + 1}`,
@@ -520,8 +520,11 @@ Write at least 150 words.`, wordTarget: t.wordTarget || 150, sampleAnswer: t.sam
         id: "writing",
         name: "Writing Sample",
         icon: "\u270D\uFE0F",
-        timeSecs: 5 * 60,
-        tasks: [{ id: "duo_w", prompt: "Write a short response about a topic that interests you (50-100 words).", wordTarget: 75 }],
+        timeSecs: 8 * 60,
+        tasks: [
+          { id: "duo_wp", prompt: "Write about the photo. Describe the image in one or more sentences (at least 1 minute).", wordTarget: 40, scene: { emoji: "\u{1F34B}", bg: "linear-gradient(135deg,#fef9c3,#fde68a)", image: "/img/scenes/kitchen.jpg", label: "Write at least one sentence about this image" } },
+          { id: "duo_w", prompt: "Write a short response about a topic that interests you (50-100 words).", wordTarget: 75 }
+        ],
         type: "writing"
       });
     }
@@ -532,6 +535,7 @@ Write at least 150 words.`, wordTarget: t.wordTarget || 150, sampleAnswer: t.sam
         icon: "\u{1F3A4}",
         timeSecs: 20 * 60,
         cards: [
+          { id: "duo_sp", topic: "Speak about the photo. Describe what you see in as much detail as you can.", points: ["The setting", "The people and what they are doing", "The mood or atmosphere"], scene: { emoji: "\u{1F389}", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)", image: "/img/scenes/street_scene.jpg", label: "Speak about this image for up to 90 seconds" }, prepSeconds: 20, responseSeconds: 90 },
           { id: "duo_s1", topic: "Describe a recent experience that taught you something new.", points: ["What happened", "What you learned", "Why it mattered to you"], prepSeconds: 20, responseSeconds: 60 },
           { id: "duo_s2", topic: "Talk about a place you would like to visit.", points: ["Where", "Why", "What you would do there"], prepSeconds: 20, responseSeconds: 60 }
         ],
@@ -1499,7 +1503,7 @@ function WritingSection({ sec, answers, setAnswer, sectionId }) {
       /* @__PURE__ */ React.createElement("span", { className: "pp-label" }, "Task ", i + 1),
       /* @__PURE__ */ React.createElement("span", { className: "pp-meta", style: { color: written >= tMin ? "var(--success)" : written > 0 ? "#f59e0b" : void 0 } }, written, "/", tMin, "w")
     );
-  })), /* @__PURE__ */ React.createElement("div", { className: "q-card" }, /* @__PURE__ */ React.createElement("div", { className: "q-num" }, writingTaskLabel(task, tIdx)), window.LP_VisualRenderer && /* @__PURE__ */ React.createElement(window.LP_VisualRenderer, { task }), task.situation && /* @__PURE__ */ React.createElement("div", { style: { background: "var(--tint-indigo)", border: "2px solid var(--primary)", borderRadius: "var(--r-md)", padding: "16px 18px", marginBottom: 12 } }, /* @__PURE__ */ React.createElement("strong", { style: { display: "block", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8, color: "var(--primary)" } }, task.taskType === "argument" ? "Argument to Analyse" : "Issue Statement"), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 15, lineHeight: 1.7, margin: 0, fontStyle: "italic" } }, '"', task.situation, '"')), task.readingTitle && /* @__PURE__ */ React.createElement("div", { style: { fontWeight: 700, fontSize: 14, marginBottom: 4 } }, task.readingTitle), task.readingPassage && /* @__PURE__ */ React.createElement("div", { style: { background: "var(--tint)", border: "1px solid var(--line)", borderRadius: "var(--r-md)", padding: "14px 16px", margin: "0 0 12px 0", fontSize: 14, lineHeight: 1.65, color: "var(--ink-2)" } }, /* @__PURE__ */ React.createElement("strong", { style: { display: "block", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 } }, "Reading Passage"), task.readingPassage), task.professorPrompt && /* @__PURE__ */ React.createElement("div", { style: { background: "var(--tint-orange)", border: "1px solid #ffd0a0", borderRadius: "var(--r-md)", padding: "14px 16px", margin: "0 0 12px 0", fontSize: 14, lineHeight: 1.65 } }, /* @__PURE__ */ React.createElement("strong", { style: { display: "block", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8, color: "#b85c00" } }, "Lecture Notes"), task.professorPrompt), task.taskType === "academic_discussion" && task.professorPost && /* @__PURE__ */ React.createElement("div", { style: { marginBottom: 12 } }, /* @__PURE__ */ React.createElement("div", { style: { background: "var(--tint-blue)", border: "1px solid #c7d2fe", borderRadius: "var(--r-md)", padding: "12px 14px", marginBottom: 8 } }, /* @__PURE__ */ React.createElement("strong", { style: { fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", color: "#4338ca", display: "block", marginBottom: 6 } }, task.professorName ? `Professor ${task.professorName}` : "Professor's Question"), /* @__PURE__ */ React.createElement("p", { style: { margin: 0, fontSize: 14, lineHeight: 1.65 } }, task.professorPost)), (task.studentPosts || []).map((s, si) => /* @__PURE__ */ React.createElement("div", { key: si, style: { background: "var(--tint-gray)", border: "1px solid #e5e7eb", borderRadius: "var(--r-md)", padding: "12px 14px", marginBottom: 6 } }, /* @__PURE__ */ React.createElement("strong", { style: { fontSize: 12, color: "#374151", display: "block", marginBottom: 4 } }, s.name || `Student ${si + 1}`), /* @__PURE__ */ React.createElement("p", { style: { margin: 0, fontSize: 14, lineHeight: 1.6, color: "#4b5563" } }, s.response)))), /* @__PURE__ */ React.createElement("div", { className: "writing-prompt" }, /* @__PURE__ */ React.createElement("strong", null, "Task"), task.prompt), /* @__PURE__ */ React.createElement(
+  })), /* @__PURE__ */ React.createElement("div", { className: "q-card" }, /* @__PURE__ */ React.createElement("div", { className: "q-num" }, writingTaskLabel(task, tIdx)), window.LP_VisualRenderer && /* @__PURE__ */ React.createElement(window.LP_VisualRenderer, { task }), task.situation && /* @__PURE__ */ React.createElement("div", { style: { background: "var(--tint-indigo)", border: "2px solid var(--primary)", borderRadius: "var(--r-md)", padding: "16px 18px", marginBottom: 12 } }, /* @__PURE__ */ React.createElement("strong", { style: { display: "block", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8, color: "var(--primary)" } }, task.taskType === "argument" ? "Argument to Analyse" : "Issue Statement"), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 15, lineHeight: 1.7, margin: 0, fontStyle: "italic" } }, '"', task.situation, '"')), task.readingTitle && /* @__PURE__ */ React.createElement("div", { style: { fontWeight: 700, fontSize: 14, marginBottom: 4 } }, task.readingTitle), task.readingPassage && /* @__PURE__ */ React.createElement("div", { style: { background: "var(--tint)", border: "1px solid var(--line)", borderRadius: "var(--r-md)", padding: "14px 16px", margin: "0 0 12px 0", fontSize: 14, lineHeight: 1.65, color: "var(--ink-2)" } }, /* @__PURE__ */ React.createElement("strong", { style: { display: "block", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 } }, "Reading Passage"), task.readingPassage), task.professorPrompt && /* @__PURE__ */ React.createElement("div", { style: { background: "var(--tint-orange)", border: "1px solid #ffd0a0", borderRadius: "var(--r-md)", padding: "14px 16px", margin: "0 0 12px 0", fontSize: 14, lineHeight: 1.65 } }, /* @__PURE__ */ React.createElement("strong", { style: { display: "block", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8, color: "#b85c00" } }, "Lecture Notes"), task.professorPrompt), task.taskType === "academic_discussion" && task.professorPost && /* @__PURE__ */ React.createElement("div", { style: { marginBottom: 12 } }, /* @__PURE__ */ React.createElement("div", { style: { background: "var(--tint-blue)", border: "1px solid #c7d2fe", borderRadius: "var(--r-md)", padding: "12px 14px", marginBottom: 8 } }, /* @__PURE__ */ React.createElement("strong", { style: { fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", color: "#4338ca", display: "block", marginBottom: 6 } }, task.professorName ? `Professor ${task.professorName}` : "Professor's Question"), /* @__PURE__ */ React.createElement("p", { style: { margin: 0, fontSize: 14, lineHeight: 1.65 } }, task.professorPost)), (task.studentPosts || []).map((s, si) => /* @__PURE__ */ React.createElement("div", { key: si, style: { background: "var(--tint-gray)", border: "1px solid #e5e7eb", borderRadius: "var(--r-md)", padding: "12px 14px", marginBottom: 6 } }, /* @__PURE__ */ React.createElement("strong", { style: { fontSize: 12, color: "#374151", display: "block", marginBottom: 4 } }, s.name || `Student ${si + 1}`), /* @__PURE__ */ React.createElement("p", { style: { margin: 0, fontSize: 14, lineHeight: 1.6, color: "#4b5563" } }, s.response)))), task.scene && /* @__PURE__ */ React.createElement(SceneImage, { scene: task.scene }), /* @__PURE__ */ React.createElement("div", { className: "writing-prompt" }, /* @__PURE__ */ React.createElement("strong", null, "Task"), task.prompt), /* @__PURE__ */ React.createElement(
     "textarea",
     {
       className: "writing-area",
@@ -1523,7 +1527,7 @@ function WritingSection({ sec, answers, setAnswer, sectionId }) {
   )));
 }
 function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
-  var _a, _b;
+  var _a, _b, _c, _d, _e, _f;
   const [examinerVoice, setExaminerVoice] = useStateT(null);
   const [phase, setPhase] = useStateT("ready");
   const [currentQ, setCurrentQ] = useStateT(0);
@@ -1533,7 +1537,7 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
   const recogRef = useRefT(null);
   const abortRef = useRefT(null);
   useEffectT(() => {
-    var _a2, _b2, _c, _d, _e, _f, _g, _h, _i, _j;
+    var _a2, _b2, _c2, _d2, _e2, _f2, _g, _h, _i, _j;
     const items = [];
     if (sec.type === "speaking" || sec.type === "speaking_ielts") {
       items.push({ kind: "greeting", id: "greet", text: "Hello, my name is your AI examiner today. I'll be conducting your speaking test. Let's begin." });
@@ -1556,7 +1560,7 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
       } else {
         const Q = (_b2 = (_a2 = window.LP_QUESTIONS) == null ? void 0 : _a2.ielts) == null ? void 0 : _b2.speaking;
         const part1 = Array.isArray(Q) ? Q.find((p) => p.part === 1) : null;
-        if ((_e = (_d = (_c = part1 == null ? void 0 : part1.topics) == null ? void 0 : _c[0]) == null ? void 0 : _d.questions) == null ? void 0 : _e.length) {
+        if ((_e2 = (_d2 = (_c2 = part1 == null ? void 0 : part1.topics) == null ? void 0 : _c2[0]) == null ? void 0 : _d2.questions) == null ? void 0 : _e2.length) {
           part1.topics[0].questions.slice(0, 4).forEach((q, i) => {
             items.push({ kind: "part1_q", id: "p1_q" + i, text: q, expectSec: 25 });
           });
@@ -1605,7 +1609,7 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
           });
         });
       } else {
-        const Q = (_g = (_f = window.LP_QUESTIONS) == null ? void 0 : _f.ielts) == null ? void 0 : _g.speaking;
+        const Q = (_g = (_f2 = window.LP_QUESTIONS) == null ? void 0 : _f2.ielts) == null ? void 0 : _g.speaking;
         const part3 = Array.isArray(Q) ? Q.find((p) => p.part === 3) : null;
         if ((_j = (_i = (_h = part3 == null ? void 0 : part3.discussions) == null ? void 0 : _h[0]) == null ? void 0 : _i.questions) == null ? void 0 : _j.length) {
           part3.discussions[0].questions.slice(0, 3).forEach((q, i) => {
@@ -1728,7 +1732,7 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
   const partLabel = item ? item.kind.startsWith("part1") ? "Part 1 \xB7 Introduction" : item.kind.startsWith("part2") ? "Part 2 \xB7 Cue Card" : item.kind.startsWith("part3") ? "Part 3 \xB7 Discussion" : item.kind === "greeting" ? "Greeting" : item.kind === "closing" ? "Closing" : "Speaking Task" : "";
   const currentKey = item ? sectionId + "_" + item.id : null;
   const liveTranscript = currentKey ? transcripts[currentKey] || "" : "";
-  return /* @__PURE__ */ React.createElement("div", { className: "speaking-examiner" }, /* @__PURE__ */ React.createElement("div", { className: "exam-stage" }, /* @__PURE__ */ React.createElement("div", { className: "exam-avatar" }, /* @__PURE__ */ React.createElement("div", { className: "avatar-ring", "data-state": phase }, /* @__PURE__ */ React.createElement("div", { className: "avatar-face" }, "\u{1F393}")), /* @__PURE__ */ React.createElement("div", { className: "avatar-label" }, "AI Examiner"), /* @__PURE__ */ React.createElement("div", { className: "avatar-status" }, phase === "speaking_question" && /* @__PURE__ */ React.createElement("span", { className: "status-speaking" }, "\u{1F50A} Speaking\u2026"), phase === "listening" && /* @__PURE__ */ React.createElement("span", { className: "status-listening" }, "\u{1F399} Listening for your response\u2026"), phase === "ready" && /* @__PURE__ */ React.createElement("span", null, "Ready"), phase === "done" && /* @__PURE__ */ React.createElement("span", { style: { color: "var(--success)" } }, "\u2713 Test complete"))), /* @__PURE__ */ React.createElement("div", { className: "exam-conv" }, /* @__PURE__ */ React.createElement("div", { className: "part-label" }, partLabel), examinerSaying && /* @__PURE__ */ React.createElement("div", { className: "examiner-bubble" }, /* @__PURE__ */ React.createElement("div", { className: "eb-label" }, "Examiner"), /* @__PURE__ */ React.createElement("div", { className: "eb-text" }, examinerSaying)), (item == null ? void 0 : item.card) && /* @__PURE__ */ React.createElement("div", { className: "cue-card" }, /* @__PURE__ */ React.createElement("div", { className: "cc-label" }, "Cue Card"), /* @__PURE__ */ React.createElement("div", { className: "cc-topic" }, item.card.topic || item.card.prompt), item.card.points && /* @__PURE__ */ React.createElement("ul", null, item.card.points.map((pt, i) => /* @__PURE__ */ React.createElement("li", { key: i }, pt)))), ((_a = item == null ? void 0 : item.task) == null ? void 0 : _a.visual) && window.LP_VisualRenderer && /* @__PURE__ */ React.createElement("div", { className: "describe-visual", style: { margin: "10px 0" } }, /* @__PURE__ */ React.createElement(window.LP_VisualRenderer, { task: { visual: item.task.visual, prompt: item.task.prompt } })), ((_b = item == null ? void 0 : item.task) == null ? void 0 : _b.photoUrl) && /* @__PURE__ */ React.createElement("div", { className: "describe-photo", style: { margin: "10px 0" } }, /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ React.createElement("div", { className: "speaking-examiner" }, /* @__PURE__ */ React.createElement("div", { className: "exam-stage" }, /* @__PURE__ */ React.createElement("div", { className: "exam-avatar" }, /* @__PURE__ */ React.createElement("div", { className: "avatar-ring", "data-state": phase }, /* @__PURE__ */ React.createElement("div", { className: "avatar-face" }, "\u{1F393}")), /* @__PURE__ */ React.createElement("div", { className: "avatar-label" }, "AI Examiner"), /* @__PURE__ */ React.createElement("div", { className: "avatar-status" }, phase === "speaking_question" && /* @__PURE__ */ React.createElement("span", { className: "status-speaking" }, "\u{1F50A} Speaking\u2026"), phase === "listening" && /* @__PURE__ */ React.createElement("span", { className: "status-listening" }, "\u{1F399} Listening for your response\u2026"), phase === "ready" && /* @__PURE__ */ React.createElement("span", null, "Ready"), phase === "done" && /* @__PURE__ */ React.createElement("span", { style: { color: "var(--success)" } }, "\u2713 Test complete"))), /* @__PURE__ */ React.createElement("div", { className: "exam-conv" }, /* @__PURE__ */ React.createElement("div", { className: "part-label" }, partLabel), examinerSaying && /* @__PURE__ */ React.createElement("div", { className: "examiner-bubble" }, /* @__PURE__ */ React.createElement("div", { className: "eb-label" }, "Examiner"), /* @__PURE__ */ React.createElement("div", { className: "eb-text" }, examinerSaying)), (((_a = item == null ? void 0 : item.card) == null ? void 0 : _a.scene) || ((_b = item == null ? void 0 : item.task) == null ? void 0 : _b.scene)) && /* @__PURE__ */ React.createElement(SceneImage, { scene: ((_c = item.card) == null ? void 0 : _c.scene) || ((_d = item.task) == null ? void 0 : _d.scene) }), (item == null ? void 0 : item.card) && /* @__PURE__ */ React.createElement("div", { className: "cue-card" }, /* @__PURE__ */ React.createElement("div", { className: "cc-label" }, "Cue Card"), /* @__PURE__ */ React.createElement("div", { className: "cc-topic" }, item.card.topic || item.card.prompt), item.card.points && /* @__PURE__ */ React.createElement("ul", null, item.card.points.map((pt, i) => /* @__PURE__ */ React.createElement("li", { key: i }, pt)))), ((_e = item == null ? void 0 : item.task) == null ? void 0 : _e.visual) && window.LP_VisualRenderer && /* @__PURE__ */ React.createElement("div", { className: "describe-visual", style: { margin: "10px 0" } }, /* @__PURE__ */ React.createElement(window.LP_VisualRenderer, { task: { visual: item.task.visual, prompt: item.task.prompt } })), ((_f = item == null ? void 0 : item.task) == null ? void 0 : _f.photoUrl) && /* @__PURE__ */ React.createElement("div", { className: "describe-photo", style: { margin: "10px 0" } }, /* @__PURE__ */ React.createElement(
     "img",
     {
       src: item.task.photoUrl,

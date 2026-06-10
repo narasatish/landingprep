@@ -355,19 +355,19 @@ function buildTest(examId, testType) {
       // Scenario panels — the real CELPIP shows a context image before each listening part.
       // Renders p.image (a real photo URL) if present, else a clean illustrated scene card.
       const CEL_SCENES = [
-        { emoji: "🗣️", bg: "linear-gradient(135deg,#dbeafe,#ede9fe)" },
-        { emoji: "☕", bg: "linear-gradient(135deg,#fef3c7,#fde68a)" },
-        { emoji: "🏛️", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)" },
-        { emoji: "📰", bg: "linear-gradient(135deg,#e0e7ff,#c7d2fe)" },
-        { emoji: "👥", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)" },
-        { emoji: "🎙️", bg: "linear-gradient(135deg,#cffafe,#a5f3fc)" },
+        { emoji: "🗣️", bg: "linear-gradient(135deg,#dbeafe,#ede9fe)", image: "/img/scenes/conversation.jpg" },
+        { emoji: "☕", bg: "linear-gradient(135deg,#fef3c7,#fde68a)", image: "/img/scenes/cafe.jpg" },
+        { emoji: "🏛️", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", image: "/img/scenes/fitness.jpg" },
+        { emoji: "📰", bg: "linear-gradient(135deg,#e0e7ff,#c7d2fe)", image: "/img/scenes/city.jpg" },
+        { emoji: "👥", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)", image: "/img/scenes/meeting.jpg" },
+        { emoji: "🎙️", bg: "linear-gradient(135deg,#cffafe,#a5f3fc)", image: "/img/scenes/interview.jpg" },
       ];
       const parts = (cl || []).map((p, i) => ({
         id: `cel_l${p.part || i + 1}`,
         partNum: p.part || i + 1,
         name: `Part ${p.part || i + 1}: ${p.name}`,
         context: p.scenario || p.name,
-        scene: { emoji: (CEL_SCENES[i] || {}).emoji || "🎧", bg: (CEL_SCENES[i] || {}).bg, label: p.name, image: p.image || "" },
+        scene: { emoji: (CEL_SCENES[i] || {}).emoji || "🎧", bg: (CEL_SCENES[i] || {}).bg, label: p.name, image: p.image || (CEL_SCENES[i] || {}).image || "" },
         audioScript: p.audioScript || "Listen carefully.",
         questions: (p.questions || []).map((q) => ({ id: q.id, type: q.type || "mcq", text: q.text || q.prompt, options: q.options, answer: q.answer })),
       }));
@@ -421,9 +421,9 @@ function buildTest(examId, testType) {
         { name:"Unusual Situation", situation:"You see something strange happening: a person is putting a large package into your neighbour's mailbox at midnight. You don't know your neighbour well. Describe what you would do and why.", prep:30, response:60 }
       ];
       const SPK_SCENES = {
-        "Describing a Scene": { emoji: "🏞️", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", label: "Look at the picture — describe what you see" },
-        "Making Predictions": { emoji: "🔮", bg: "linear-gradient(135deg,#ede9fe,#ddd6fe)", label: "Look at the picture — predict what happens next" },
-        "Comparing Options": { emoji: "⚖️", bg: "linear-gradient(135deg,#dbeafe,#bfdbfe)", label: "Compare the two options shown" },
+        "Describing a Scene": { emoji: "🏞️", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", image: "/img/scenes/landmark.jpg", label: "Look at the picture — describe what you see" },
+        "Making Predictions": { emoji: "🔮", bg: "linear-gradient(135deg,#ede9fe,#ddd6fe)", image: "/img/scenes/street_scene.jpg", label: "Look at the picture — predict what happens next" },
+        "Comparing Options": { emoji: "⚖️", bg: "linear-gradient(135deg,#dbeafe,#bfdbfe)", image: "/img/scenes/apartment.jpg", label: "Compare the two options shown" },
       };
       const cards = realPrompts.map((p, i) => ({
         id: `cel_s${i+1}`,
@@ -453,12 +453,16 @@ function buildTest(examId, testType) {
       if (lparts.length) sections.push({ id: "listening", name: "Listening — Listen & Type", icon: "🎧", timeSecs: 12 * 60, parts: lparts, type: "listening" });
     }
     if (testType === "full" || testType === "section_writing") {
-      sections.push({ id: "writing", name: "Writing Sample", icon: "✍️", timeSecs: 5 * 60,
-        tasks: [{ id: "duo_w", prompt: "Write a short response about a topic that interests you (50-100 words).", wordTarget: 75 }], type: "writing" });
+      sections.push({ id: "writing", name: "Writing Sample", icon: "✍️", timeSecs: 8 * 60,
+        tasks: [
+          { id: "duo_wp", prompt: "Write about the photo. Describe the image in one or more sentences (at least 1 minute).", wordTarget: 40, scene: { emoji: "🍋", bg: "linear-gradient(135deg,#fef9c3,#fde68a)", image: "/img/scenes/kitchen.jpg", label: "Write at least one sentence about this image" } },
+          { id: "duo_w", prompt: "Write a short response about a topic that interests you (50-100 words).", wordTarget: 75 }
+        ], type: "writing" });
     }
     if (testType === "full" || testType === "section_speaking") {
       sections.push({ id: "speaking", name: "Speaking Sample", icon: "🎤", timeSecs: 20 * 60,
         cards: [
+          { id: "duo_sp", topic: "Speak about the photo. Describe what you see in as much detail as you can.", points: ["The setting", "The people and what they are doing", "The mood or atmosphere"], scene: { emoji: "🎉", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)", image: "/img/scenes/street_scene.jpg", label: "Speak about this image for up to 90 seconds" }, prepSeconds: 20, responseSeconds: 90 },
           { id: "duo_s1", topic: "Describe a recent experience that taught you something new.", points: ["What happened", "What you learned", "Why it mattered to you"], prepSeconds: 20, responseSeconds: 60 },
           { id: "duo_s2", topic: "Talk about a place you would like to visit.", points: ["Where", "Why", "What you would do there"], prepSeconds: 20, responseSeconds: 60 }
         ], type: "speaking" });
@@ -1879,6 +1883,7 @@ function WritingSection({ sec, answers, setAnswer, sectionId }) {
           </div>
         )}
 
+        {task.scene && <SceneImage scene={task.scene} />}
         <div className="writing-prompt">
           <strong>Task</strong>
           {task.prompt}
@@ -2150,6 +2155,7 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
               <div className="eb-text">{examinerSaying}</div>
             </div>
           )}
+          {(item?.card?.scene || item?.task?.scene) && <SceneImage scene={item.card?.scene || item.task?.scene} />}
           {item?.card && (
             <div className="cue-card">
               <div className="cc-label">Cue Card</div>
