@@ -340,7 +340,19 @@ function blogTiles(a) {
 }
 
 const PAGES = []; // { path, html }
-function emit(path, html) { PAGES.push({ path, html }); }
+const THIN_PATHS = new Set(); // thin pages → noindex,follow + excluded from sitemap (concentrates crawl budget on substantive pages)
+const THIN_MIN_CHARS = 1500; // below this much unique <main> text = thin/templated
+function uniqueContentLen(html) {
+  const main = (html.match(/<main[\s\S]*?<\/main>/i) || [html])[0];
+  return main.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<style[\s\S]*?<\/style>/gi, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().length;
+}
+function emit(path, html) {
+  if (uniqueContentLen(html) < THIN_MIN_CHARS) {
+    html = html.replace(/<meta name="robots" content="index,follow[^"]*"\/>/i, '<meta name="robots" content="noindex,follow"/>');
+    THIN_PATHS.add(path);
+  }
+  PAGES.push({ path, html });
+}
 
 // ── Page builders ───────────────────────────────────────────────────────────
 function mockPage(id) {
@@ -2884,7 +2896,7 @@ PAGES.forEach(({ path, html }) => {
 // Sitemap
 const urls = [
   { loc: `${ORIGIN}/`, freq: "daily", pri: "1.0" },
-  ...PAGES.map((p) => ({ loc: ORIGIN + p.path, freq: "weekly", pri: "0.8" })),
+  ...PAGES.filter((p) => !THIN_PATHS.has(p.path)).map((p) => ({ loc: ORIGIN + p.path, freq: "weekly", pri: "0.8" })),
   // Standalone embeddable widget (hand-authored static file, not emitted via the generator).
   { loc: `${ORIGIN}/embed/score-converter/`, freq: "monthly", pri: "0.6" },
   { loc: `${ORIGIN}/embed/gpa-converter/`, freq: "monthly", pri: "0.6" },
