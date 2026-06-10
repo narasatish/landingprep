@@ -371,7 +371,7 @@ function buildTest(examId, testType) {
         audioScript: p.audioScript || "Listen carefully.",
         questions: (p.questions || []).map((q) => ({ id: q.id, type: q.type || "mcq", text: q.text || q.prompt, options: q.options, answer: q.answer })),
       }));
-      if (parts.length) sections.push({ id: "listening", name: "Listening", icon: "🎧", timeSecs: 47 * 60, parts, type: "listening" });
+      if (parts.length) sections.push({ id: "listening", name: "Listening", icon: "🎧", timeSecs: 47 * 60, parts, type: "listening", isCelpip: true });
     }
     if (testType === "full" || testType === "section_reading") {
       // CELPIP Reading — REAL 4-part structure (Correspondence, Apply a Diagram, Information,
@@ -1096,6 +1096,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
         partIdx={partIdx}
         totalParts={parts.length}
         formLayout={current.formLayout || null}
+        isCelpip={sec.isCelpip}
         onPrevPart={() => goToPart(Math.max(0, partIdx - 1))}
         onNextPart={() => goToPart(Math.min(parts.length - 1, partIdx + 1))}
       />
@@ -1524,7 +1525,7 @@ function groupQuestions(questions) {
 }
 
 /* Per-part question viewer — IELTS pattern with grouped section headers */
-function ListeningQuestions({ questions, answers, setAnswer, sectionId, partIdx, totalParts, formLayout, onPrevPart, onNextPart }) {
+function ListeningQuestions({ questions, answers, setAnswer, sectionId, partIdx, totalParts, formLayout, onPrevPart, onNextPart, isCelpip }) {
   if (!questions.length) return <div style={{ padding: 20, color: "var(--ink-3)" }}>No questions in this part.</div>;
   const total = questions.length;
   const answeredCount = questions.filter(qq => answers[sectionId + "_" + qq.id] != null && answers[sectionId + "_" + qq.id] !== "").length;
@@ -1536,8 +1537,23 @@ function ListeningQuestions({ questions, answers, setAnswer, sectionId, partIdx,
         Part {partIdx + 1} of {totalParts} · {answeredCount} of {total} questions answered
       </div>
 
-      {/* Part 1: render as a full form table when formLayout is provided */}
-      {formLayout ? (
+      {/* CELPIP: no IELTS "Questions X–Y / Choose the correct letter" framing — one instruction,
+          then each question with its options, as in the real CELPIP listening test. */}
+      {isCelpip ? (
+        <div className="q-group">
+          <div className="q-section-header">
+            <div className="qsh-instruction">Listen to the audio above, then choose the best answer for each question.</div>
+          </div>
+          {questions.map((q, qi) => (
+            <QuestionCard
+              key={q.id} q={q} qi={qi} sectionId={sectionId}
+              answer={answers[sectionId + "_" + q.id]}
+              onAnswer={(val) => setAnswer(sectionId + "_" + q.id, val)}
+              hideInstruction={true}
+            />
+          ))}
+        </div>
+      ) : formLayout ? (
         <div className="q-group">
           <div className="q-section-header">
             <div className="qsh-range">Questions 1–10</div>
