@@ -260,7 +260,7 @@ function buildTest(examId, testType) {
       for (let i = 0; i < 4; i++) {
         const base = excerpts[i % excerpts.length];
         if (!base) break;
-        const cycledQ = cycle(base.questions || [], 7, `toefl_l${i + 1}q`);
+        const cycledQ = cycle(base.questions || [], (base.questions || []).length || 1, `toefl_l${i + 1}q`);
         parts.push({ ...base, id: `toefl_l${i + 1}`, partNum: i + 1, audioScript: base.script || base.audioScript, context: base.topic || "Academic listening", questions: cycledQ });
       }
       sections.push({ id: "listening", name: "Listening", icon: "\u{1F3A7}", timeSecs: 36 * 60, parts, type: "listening" });
@@ -300,30 +300,33 @@ function buildTest(examId, testType) {
       });
     }
     if (testType === "full" || testType === "section_reading") {
-      const rTasks = get("pte.reading", []);
-      const allQs = rTasks.flatMap((r) => r.questions || [r]);
-      const cycled = cycle(allQs, 15, "pte_r");
-      sections.push({
-        id: "reading",
-        name: "Reading",
-        icon: "\u{1F4D6}",
-        timeSecs: 30 * 60,
-        passages: [{ id: "pte_r", title: "Reading Tasks", text: "", questions: cycled }],
-        type: "reading_pte"
+      const toL = "ABCDEFG";
+      const qs = [];
+      get("pte.reading", []).forEach((r) => {
+        if (r.type === "fill_in_blanks_rw" && r.answers) {
+          const passage = String(r.text || "").replace(/_+\[(\d+)\]_+/g, "\uFF3B $1 \uFF3D");
+          Object.keys(r.answers).forEach((n) => {
+            const opts = r.optionSets && r.optionSets[n] || r.options || [];
+            const li = opts.indexOf(r.answers[n]);
+            if (opts.length && li >= 0) qs.push({ id: r.id + "_b" + n, type: "mcq", text: "Select the best word for gap \uFF3B" + n + "\uFF3D in the passage.", passage, options: opts.map((o, k) => toL[k] + ". " + o), answer: toL[li] });
+          });
+        }
       });
+      if (qs.length) {
+        const cycled = cycle(qs, Math.min(15, qs.length), "pte_r");
+        sections.push({ id: "reading", name: "Reading \u2014 Fill in the Blanks", icon: "\u{1F4D6}", timeSecs: 30 * 60, passages: [{ id: "pte_r", title: "Reading", text: "", questions: cycled }], type: "reading" });
+      }
     }
     if (testType === "full" || testType === "section_listening") {
-      const lTasks = get("pte.listening", []);
-      const allQs = lTasks.flatMap((r) => r.questions || [r]);
-      const cycled = cycle(allQs, 15, "pte_l");
-      sections.push({
-        id: "listening",
-        name: "Listening",
-        icon: "\u{1F3A7}",
-        timeSecs: 35 * 60,
-        parts: [{ id: "pte_l", partNum: 1, context: "PTE Academic listening tasks", audioScript: "This is the PTE Academic listening practice section. Listen carefully to each item.", questions: cycled }],
-        type: "listening"
+      const parts = [];
+      get("pte.listening", []).forEach((t) => {
+        if (t.type === "write_from_dictation" && Array.isArray(t.sentences)) {
+          t.sentences.forEach((s, si) => parts.push({ id: t.id + "_s" + si, partNum: parts.length + 1, context: "Write from Dictation \u2014 type the sentence you hear", audioScript: s, questions: [{ id: t.id + "_s" + si + "_q", type: "fill", text: "Type the sentence you heard, exactly.", answer: s }] }));
+        }
       });
+      if (parts.length) {
+        sections.push({ id: "listening", name: "Listening \u2014 Write from Dictation", icon: "\u{1F3A7}", timeSecs: 30 * 60, parts: parts.slice(0, 15), type: "listening" });
+      }
     }
   } else if (examId === "gre") {
     if (testType === "full" || testType === "section_writing") {
@@ -338,9 +341,7 @@ function buildTest(examId, testType) {
       });
     }
     if (testType === "full" || testType === "section_reading") {
-      const vPool = get("gre.verbal", []).filter((q) => !q.questions).concat(
-        get("gre.verbal", []).flatMap((v) => v.questions ? v.questions : [])
-      );
+      const vPool = get("gre.verbal", []).flatMap((v) => v.questions ? v.questions.map((q) => ({ ...q, type: q.type || "mcq", passage: q.passage || v.passage || v.text })) : [v]);
       const cycled = cycle(vPool, 27, "gre_v");
       sections.push({
         id: "verbal",
@@ -377,9 +378,7 @@ function buildTest(examId, testType) {
       });
     }
     if (testType === "full" || testType === "section_writing") {
-      const vPool = get("gmat.verbal", []).filter((q) => !q.questions).concat(
-        get("gmat.verbal", []).flatMap((v) => v.questions ? v.questions : [])
-      );
+      const vPool = get("gmat.verbal", []).flatMap((v) => v.questions ? v.questions.map((q) => ({ ...q, type: q.type || "mcq", passage: q.passage || v.passage || v.text })) : [v]);
       const cycled = cycle(vPool, 23, "gmat_v");
       sections.push({
         id: "verbal",
@@ -2438,3 +2437,4 @@ function TestReport({ exam, config, answers, onBack, onNav, onRetake }) {
   }), config.sections.map((sec) => /* @__PURE__ */ React.createElement(SectionReview, { key: sec.id, sec, sectionId: sec.id, answers, examName: exam && exam.name })), /* @__PURE__ */ React.createElement("div", { className: "report-section" }, /* @__PURE__ */ React.createElement("h3", null, "What to do next"), /* @__PURE__ */ React.createElement("div", { className: "feedback-row" }, /* @__PURE__ */ React.createElement("span", { className: "fr-icon" }, "\u{1F4DA}"), /* @__PURE__ */ React.createElement("span", null, "Visit the ", /* @__PURE__ */ React.createElement("strong", null, "Learning Club"), " for model answers, vocabulary, and topic practice.")), /* @__PURE__ */ React.createElement("div", { className: "feedback-row" }, /* @__PURE__ */ React.createElement("span", { className: "fr-icon" }, "\u270D\uFE0F"), /* @__PURE__ */ React.createElement("span", null, "Use the ", /* @__PURE__ */ React.createElement("strong", null, "Writing Agent"), " to get detailed feedback on your writing tasks.")), /* @__PURE__ */ React.createElement("div", { className: "feedback-row" }, /* @__PURE__ */ React.createElement("span", { className: "fr-icon" }, "\u{1F3A4}"), /* @__PURE__ */ React.createElement("span", null, "Use the ", /* @__PURE__ */ React.createElement("strong", null, "Speaking Agent"), " to practice two-way voice conversation.")), /* @__PURE__ */ React.createElement("div", { className: "feedback-row" }, /* @__PURE__ */ React.createElement("span", { className: "fr-icon" }, "\u{1F4CA}"), /* @__PURE__ */ React.createElement("span", null, "Track your progress over time in ", /* @__PURE__ */ React.createElement("strong", null, "My Progress"), "."))), /* @__PURE__ */ React.createElement("div", { className: "note" }, "Scores are indicative only. IELTS Listening and Reading use the official band conversion table. Writing and Speaking use a heuristic based on word count, task completion, and structure signals \u2014 not a live AI or human rater."), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12 report-actions", style: { marginTop: 28 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: onRetake }, "Take another test \u2192"), /* @__PURE__ */ React.createElement(ScoreCardButton, { exam, report }), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => window.print(), title: "Print or save your score report as PDF" }, "\u{1F5A8}\uFE0F Print / Save as PDF"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("learning") }, "Go to Learning Club"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: onBack }, "Back"))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
 }
 window.LP_MockTest = MockTest;
+window.LP_buildTest = buildTest;
