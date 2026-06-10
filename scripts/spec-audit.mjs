@@ -13,7 +13,7 @@ function listFiles(exam, section) {
   return fs.readdirSync(dir).filter(f => f.endsWith(".json")).map(f => path.join(dir, f));
 }
 function read(f) { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return null; } }
-const hasAns = q => q && (q.answer !== undefined || q.correctAnswer !== undefined || Array.isArray(q.answers) || Array.isArray(q.sentences) || Array.isArray(q.incorrectWords) || q.modelAnswer !== undefined || q.sampleResponse !== undefined || Array.isArray(q.order));
+const hasAns = q => q && (q.answer !== undefined || q.correctAnswer !== undefined || Array.isArray(q.answers) || Array.isArray(q.correctAnswers) || Array.isArray(q.sentences) || Array.isArray(q.incorrectWords) || q.modelAnswer !== undefined || q.sampleResponse !== undefined || Array.isArray(q.order) || Array.isArray(q.correctOrder) || q.correctWord !== undefined);
 
 let totalFiles = 0, totalDev = 0;
 const summary = [];
