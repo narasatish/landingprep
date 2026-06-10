@@ -387,8 +387,8 @@ function Home({ onGuide, onPractice, onNav }) {
         </div>
       </section>
 
-      {/* Gamification: XP / level / streak (retention) */}
-      {window.LP_GamifyCard ? (
+      {/* Gamification: XP / level / streak (retention) — signed-in users only */}
+      {window.LP_GamifyCard && window.LP_AUTH && window.LP_AUTH.getUser() ? (
         <section className="section" style={{ paddingTop: 0 }}>
           <div className="shell" style={{ maxWidth: 760 }}>
             <window.LP_GamifyCard />

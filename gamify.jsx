@@ -5,7 +5,11 @@
 // immediately: lp_history (mock tests) + lp_activity (active-day map). Optional
 // LP_Gamify.award(xp) bumps a bonus store. Renders window.LP_GamifyCard.
 (function () {
-  const { useState } = React;
+  const { useState, useEffect } = React;
+
+  // Current logged-in user (or null). XP/progress is per-user and only shown when signed in.
+  function curUser() { try { return (window.LP_AUTH && window.LP_AUTH.getUser && window.LP_AUTH.getUser()) || null; } catch (e) { return null; } }
+  function uns(key) { const u = curUser(); return (u && u.email) ? key + "::" + u.email : key; }
 
   const LEVELS = [
     { min: 0, title: "Rookie", emoji: "🌱" },
@@ -31,9 +35,9 @@
   }
 
   function stats() {
-    const history = readJSON("lp_history", "[]") || [];
-    const activity = readJSON("lp_activity", "{}") || {};
-    const bonus = Number(localStorage.getItem("lp_xp") || 0) || 0;
+    const history = readJSON("lp_history", "[]") || []; // auth-synced per user on sign-in
+    const activity = readJSON(uns("lp_activity"), "{}") || {};
+    const bonus = Number(localStorage.getItem(uns("lp_xp")) || 0) || 0;
     const tests = history.length;
     const activeDays = Object.keys(activity).length;
     const sessions = Object.values(activity).reduce((a, b) => a + (Number(b) || 0), 0);
@@ -71,11 +75,12 @@
 
   function award(amount, reason) {
     try {
+      if (!curUser()) return; // only track XP for signed-in users
       const before = stats();
-      const cur = Number(localStorage.getItem("lp_xp") || 0) || 0;
-      localStorage.setItem("lp_xp", String(cur + (Number(amount) || 0)));
-      const a = readJSON("lp_activity", "{}") || {}; const k = dayKey(); a[k] = (a[k] || 0) + 1;
-      localStorage.setItem("lp_activity", JSON.stringify(a));
+      const cur = Number(localStorage.getItem(uns("lp_xp")) || 0) || 0;
+      localStorage.setItem(uns("lp_xp"), String(cur + (Number(amount) || 0)));
+      const a = readJSON(uns("lp_activity"), "{}") || {}; const k = dayKey(); a[k] = (a[k] || 0) + 1;
+      localStorage.setItem(uns("lp_activity"), JSON.stringify(a));
       const after = stats();
       toast("⚡ +" + (Number(amount) || 0) + " XP" + (reason ? " · " + reason : ""));
       if (after.level > before.level) toast(after.levelEmoji + " Level up! You're now <b>Level " + after.level + " · " + after.levelTitle + "</b>", true);
@@ -85,7 +90,17 @@
   }
 
   function GamifyCard({ compact }) {
-    const [s] = useState(stats);
+    const [user, setUser] = useState(curUser);
+    const [s, setS] = useState(stats);
+    useEffect(() => {
+      const refresh = () => { setUser(curUser()); setS(stats()); };
+      refresh();
+      let unsub;
+      try { if (window.LP_AUTH && window.LP_AUTH.subscribe) unsub = window.LP_AUTH.subscribe(refresh); } catch (e) {}
+      window.addEventListener("focus", refresh);
+      return () => { window.removeEventListener("focus", refresh); if (typeof unsub === "function") unsub(); };
+    }, []);
+    if (!user) return null; // signed-out users see no XP/progress card
     return (
       <div className={"gam-card" + (compact ? " gam-compact" : "")}>
         <div className="gam-top">
