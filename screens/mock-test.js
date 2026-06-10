@@ -404,11 +404,20 @@ function buildTest(examId, testType) {
   } else if (examId === "celpip") {
     if (testType === "full" || testType === "section_listening") {
       const cl = get("celpip.listening", []);
+      const CEL_SCENES = [
+        { emoji: "\u{1F5E3}\uFE0F", bg: "linear-gradient(135deg,#dbeafe,#ede9fe)" },
+        { emoji: "\u2615", bg: "linear-gradient(135deg,#fef3c7,#fde68a)" },
+        { emoji: "\u{1F3DB}\uFE0F", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)" },
+        { emoji: "\u{1F4F0}", bg: "linear-gradient(135deg,#e0e7ff,#c7d2fe)" },
+        { emoji: "\u{1F465}", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)" },
+        { emoji: "\u{1F399}\uFE0F", bg: "linear-gradient(135deg,#cffafe,#a5f3fc)" }
+      ];
       const parts = (cl || []).map((p, i) => ({
         id: `cel_l${p.part || i + 1}`,
         partNum: p.part || i + 1,
         name: `Part ${p.part || i + 1}: ${p.name}`,
         context: p.scenario || p.name,
+        scene: { emoji: (CEL_SCENES[i] || {}).emoji || "\u{1F3A7}", bg: (CEL_SCENES[i] || {}).bg, label: p.name, image: p.image || "" },
         audioScript: p.audioScript || "Listen carefully.",
         questions: (p.questions || []).map((q) => ({ id: q.id, type: q.type || "mcq", text: q.text || q.prompt, options: q.options, answer: q.answer }))
       }));
@@ -469,11 +478,17 @@ Write at least 150 words.`, wordTarget: t.wordTarget || 150, sampleAnswer: t.sam
         { name: "Expressing Opinions", situation: "Many people now work from home. Do you think this is a positive or negative change for society? Give specific reasons for your opinion.", prep: 30, response: 90 },
         { name: "Unusual Situation", situation: "You see something strange happening: a person is putting a large package into your neighbour's mailbox at midnight. You don't know your neighbour well. Describe what you would do and why.", prep: 30, response: 60 }
       ];
+      const SPK_SCENES = {
+        "Describing a Scene": { emoji: "\u{1F3DE}\uFE0F", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", label: "Look at the picture \u2014 describe what you see" },
+        "Making Predictions": { emoji: "\u{1F52E}", bg: "linear-gradient(135deg,#ede9fe,#ddd6fe)", label: "Look at the picture \u2014 predict what happens next" },
+        "Comparing Options": { emoji: "\u2696\uFE0F", bg: "linear-gradient(135deg,#dbeafe,#bfdbfe)", label: "Compare the two options shown" }
+      };
       const cards = realPrompts.map((p, i) => ({
         id: `cel_s${i + 1}`,
         topic: `Task ${i + 1}: ${p.name}`,
         prompt: p.situation,
         points: [],
+        scene: SPK_SCENES[p.name] || null,
         prepSeconds: p.prep,
         responseSeconds: p.response
       }));
@@ -812,6 +827,12 @@ function SectionIntro({ sec, sectionNum, total, onBegin, onHome }) {
     "\u{1F3E0} Exit to Home"
   )), /* @__PURE__ */ React.createElement("div", { style: { flex: 1, display: "flex", alignItems: "center", justifyContent: "center" } }, /* @__PURE__ */ React.createElement("div", { className: "section-intro-card", style: { width: "100%", maxWidth: 560 } }, /* @__PURE__ */ React.createElement("div", { className: "sic-head" }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 32 } }, sec.icon), /* @__PURE__ */ React.createElement("h2", null, "Section ", sectionNum, " of ", total), /* @__PURE__ */ React.createElement("div", { style: { color: "rgba(255,255,255,0.7)", fontSize: 14, marginTop: 4 } }, sec.name)), /* @__PURE__ */ React.createElement("div", { className: "sic-body" }, /* @__PURE__ */ React.createElement("div", { className: "sic-meta" }, /* @__PURE__ */ React.createElement("div", { className: "sic-stat" }, /* @__PURE__ */ React.createElement("div", { className: "k" }, Math.round(sec.timeSecs / 60), " min"), /* @__PURE__ */ React.createElement("div", { className: "v" }, "Time allowed")), /* @__PURE__ */ React.createElement("div", { className: "sic-stat" }, /* @__PURE__ */ React.createElement("div", { className: "k" }, getAllQuestions(sec).length || (sec.tasks ? sec.tasks.length : (sec.items || []).length) || "\u2013"), /* @__PURE__ */ React.createElement("div", { className: "v" }, sec.type.includes("writing") || sec.type.includes("speaking") || sec.type === "pte_sw" ? "Tasks" : "Questions"))), sec.type === "listening" && /* @__PURE__ */ React.createElement("p", { style: { fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 } }, "You will hear audio for each part. Click the play button before answering questions. In the real exam, audio plays once only."), (sec.type === "reading" || sec.type === "pte_reading") && /* @__PURE__ */ React.createElement("p", { style: { fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 } }, "Read each passage carefully and answer all questions. Manage your time across all items."), sec.type.includes("writing") && /* @__PURE__ */ React.createElement("p", { style: { fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 } }, "Write your response in the text area provided. Word count is shown live. Check the minimum word requirement for each task."), sec.type === "pte_sw" && /* @__PURE__ */ React.createElement("p", { style: { fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 } }, "This section mixes speaking and writing tasks. For speaking items, use the prep and record timers (enable the AI voice in AI Agents settings to hear audio). For Summarize Written Text and Write Essay, type your response \u2014 a model answer is provided for each."), sec.type.includes("speaking") && /* @__PURE__ */ React.createElement("p", { style: { fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 } }, "Click the microphone button to record your response. You may also type your response if preferred."), sec.type === "pte_listening" && /* @__PURE__ */ React.createElement("p", { style: { fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 } }, "Click \u25B6 Play Audio for each item. The audio transcript will appear for practice. In the real exam, you hear actual audio once only."), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 12, marginTop: 20, flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: onBegin }, "Start section \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: onHome }, "\u{1F3E0} Exit to Home"))))));
 }
+function SceneImage({ scene }) {
+  const [failed, setFailed] = useState(false);
+  if (!scene) return null;
+  const showImg = scene.image && !failed;
+  return /* @__PURE__ */ React.createElement("div", { className: "scene-panel" }, /* @__PURE__ */ React.createElement("div", { className: "scene-frame" }, showImg ? /* @__PURE__ */ React.createElement("img", { src: scene.image, alt: scene.label || "Scenario", className: "scene-img", loading: "lazy", onError: () => setFailed(true) }) : /* @__PURE__ */ React.createElement("div", { className: "scene-illus", style: { background: scene.bg || "linear-gradient(135deg,#e0f2fe,#ede9fe)" } }, /* @__PURE__ */ React.createElement("span", { className: "scene-emoji", "aria-hidden": true }, scene.emoji || "\u{1F3A7}"))), scene.label && /* @__PURE__ */ React.createElement("div", { className: "scene-cap" }, scene.label));
+}
 function ListeningSection({ sec, answers, setAnswer, sectionId }) {
   const [partIdx, setPartIdx] = useStateT(0);
   const [playing, setPlaying] = useStateT(false);
@@ -943,7 +964,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
       /* @__PURE__ */ React.createElement("span", { className: "pp-label" }, pillLabel),
       /* @__PURE__ */ React.createElement("span", { className: "pp-meta" }, ans, "/", (p.questions || []).length)
     );
-  })), /* @__PURE__ */ React.createElement("div", { className: "audio-panel" }, /* @__PURE__ */ React.createElement("div", { className: "ap-context" }, /* @__PURE__ */ React.createElement("div", { style: { fontWeight: 600, marginBottom: 4, color: "#fff" } }, current.scriptType ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}` : `Part ${current.partNum || partIdx + 1}`), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 13, color: "rgba(255,255,255,0.85)" } }, current.context), playing && /* @__PURE__ */ React.createElement("div", { style: { marginTop: 10, display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,0.7)" } }, /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " Audio in progress \u2014 do not refresh")), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 8, alignItems: "center" } }, /* @__PURE__ */ React.createElement(
+  })), current.scene && /* @__PURE__ */ React.createElement(SceneImage, { scene: current.scene }), /* @__PURE__ */ React.createElement("div", { className: "audio-panel" }, /* @__PURE__ */ React.createElement("div", { className: "ap-context" }, /* @__PURE__ */ React.createElement("div", { style: { fontWeight: 600, marginBottom: 4, color: "#fff" } }, current.scriptType ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}` : `Part ${current.partNum || partIdx + 1}`), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 13, color: "rgba(255,255,255,0.85)" } }, current.context), playing && /* @__PURE__ */ React.createElement("div", { style: { marginTop: 10, display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,0.7)" } }, /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " Audio in progress \u2014 do not refresh")), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 8, alignItems: "center" } }, /* @__PURE__ */ React.createElement(
     "button",
     {
       className: "audio-btn",
@@ -2438,3 +2459,4 @@ function TestReport({ exam, config, answers, onBack, onNav, onRetake }) {
 }
 window.LP_MockTest = MockTest;
 window.LP_buildTest = buildTest;
+window.LP_SceneImage = SceneImage;

@@ -499,6 +499,7 @@
               </div>
             </div>
           )}
+          {task.scene && window.LP_SceneImage && <window.LP_SceneImage scene={task.scene} />}
           <div className="celpip-sp-prompt">
             <strong>Prompt:</strong> {task.prompt}
           </div>

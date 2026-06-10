@@ -4896,3 +4896,11 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 .di-twopart .tp-rowhead, .di-twopart .tp-rowlabel { text-align: left; }
 .di-twopart .tp-radio { width: 80px; }
 .di-twopart .tp-radio input { width: 18px; height: 18px; }
+
+/* Scenario image panel (CELPIP listening/speaking "look at the picture") */
+.scene-panel { margin: 0 auto 14px; max-width: 520px; }
+.scene-frame { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--surface-2); }
+.scene-img { display: block; width: 100%; height: auto; max-height: 320px; object-fit: cover; }
+.scene-illus { height: 200px; display: flex; align-items: center; justify-content: center; }
+.scene-emoji { font-size: 92px; line-height: 1; filter: drop-shadow(0 4px 10px rgba(0,0,0,.12)); }
+.scene-cap { text-align: center; font-size: 13px; color: var(--ink-2); margin-top: 8px; font-weight: 600; }

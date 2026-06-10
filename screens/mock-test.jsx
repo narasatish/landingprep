@@ -352,11 +352,22 @@ function buildTest(examId, testType) {
       // CELPIP Listening — REAL 6-part structure (Problem Solving, Daily Life Conversation,
       // Information, News Item, Discussion, Viewpoints) = 38 questions. From celpip.listening.
       const cl = get("celpip.listening", []);
+      // Scenario panels — the real CELPIP shows a context image before each listening part.
+      // Renders p.image (a real photo URL) if present, else a clean illustrated scene card.
+      const CEL_SCENES = [
+        { emoji: "🗣️", bg: "linear-gradient(135deg,#dbeafe,#ede9fe)" },
+        { emoji: "☕", bg: "linear-gradient(135deg,#fef3c7,#fde68a)" },
+        { emoji: "🏛️", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)" },
+        { emoji: "📰", bg: "linear-gradient(135deg,#e0e7ff,#c7d2fe)" },
+        { emoji: "👥", bg: "linear-gradient(135deg,#fce7f3,#fbcfe8)" },
+        { emoji: "🎙️", bg: "linear-gradient(135deg,#cffafe,#a5f3fc)" },
+      ];
       const parts = (cl || []).map((p, i) => ({
         id: `cel_l${p.part || i + 1}`,
         partNum: p.part || i + 1,
         name: `Part ${p.part || i + 1}: ${p.name}`,
         context: p.scenario || p.name,
+        scene: { emoji: (CEL_SCENES[i] || {}).emoji || "🎧", bg: (CEL_SCENES[i] || {}).bg, label: p.name, image: p.image || "" },
         audioScript: p.audioScript || "Listen carefully.",
         questions: (p.questions || []).map((q) => ({ id: q.id, type: q.type || "mcq", text: q.text || q.prompt, options: q.options, answer: q.answer })),
       }));
@@ -409,11 +420,17 @@ function buildTest(examId, testType) {
         { name:"Expressing Opinions", situation:"Many people now work from home. Do you think this is a positive or negative change for society? Give specific reasons for your opinion.", prep:30, response:90 },
         { name:"Unusual Situation", situation:"You see something strange happening: a person is putting a large package into your neighbour's mailbox at midnight. You don't know your neighbour well. Describe what you would do and why.", prep:30, response:60 }
       ];
+      const SPK_SCENES = {
+        "Describing a Scene": { emoji: "🏞️", bg: "linear-gradient(135deg,#dcfce7,#bbf7d0)", label: "Look at the picture — describe what you see" },
+        "Making Predictions": { emoji: "🔮", bg: "linear-gradient(135deg,#ede9fe,#ddd6fe)", label: "Look at the picture — predict what happens next" },
+        "Comparing Options": { emoji: "⚖️", bg: "linear-gradient(135deg,#dbeafe,#bfdbfe)", label: "Compare the two options shown" },
+      };
       const cards = realPrompts.map((p, i) => ({
         id: `cel_s${i+1}`,
         topic: `Task ${i+1}: ${p.name}`,
         prompt: p.situation,
         points: [],
+        scene: SPK_SCENES[p.name] || null,
         prepSeconds: p.prep,
         responseSeconds: p.response
       }));
@@ -897,6 +914,24 @@ function SectionIntro({ sec, sectionNum, total, onBegin, onHome }) {
 }
 
 /* ── Listening section — paginated, one Part per page, natural multi-voice ── */
+// Scenario image panel (CELPIP listening, etc.). Shows a real photo if scene.image
+// is a URL; otherwise a clean illustrated scene card. Never breaks (onError fallback).
+function SceneImage({ scene }) {
+  const [failed, setFailed] = useState(false);
+  if (!scene) return null;
+  const showImg = scene.image && !failed;
+  return (
+    <div className="scene-panel">
+      <div className="scene-frame">
+        {showImg
+          ? <img src={scene.image} alt={scene.label || "Scenario"} className="scene-img" loading="lazy" onError={() => setFailed(true)} />
+          : <div className="scene-illus" style={{ background: scene.bg || "linear-gradient(135deg,#e0f2fe,#ede9fe)" }}><span className="scene-emoji" aria-hidden>{scene.emoji || "🎧"}</span></div>}
+      </div>
+      {scene.label && <div className="scene-cap">{scene.label}</div>}
+    </div>
+  );
+}
+
 function ListeningSection({ sec, answers, setAnswer, sectionId }) {
   const [partIdx, setPartIdx] = useStateT(0);
   const [playing, setPlaying] = useStateT(false);
@@ -1023,6 +1058,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
         })}
       </div>
 
+      {current.scene && <SceneImage scene={current.scene} />}
       <div className="audio-panel">
         <div className="ap-context">
           <div style={{ fontWeight: 600, marginBottom: 4, color: "#fff" }}>
@@ -3271,4 +3307,5 @@ function TestReport({ exam, config, answers, onBack, onNav, onRetake }) {
 }
 
 window.LP_MockTest = MockTest;
-window.LP_buildTest = buildTest; // test hook: build a full test config for any exam (no UI)
+window.LP_buildTest = buildTest;
+window.LP_SceneImage = SceneImage; // test hook: build a full test config for any exam (no UI)
