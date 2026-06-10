@@ -404,23 +404,31 @@ function buildTest(examId, testType) {
       sections.push({ id:"speaking", name:"Speaking", icon:"🎤", timeSecs: 20*60, cards, type:"speaking" });
     }
   } else if (examId === "duolingo") {
-    // Duolingo English Test: ~60 min adaptive — mix of tasks
-    if (testType === "full" || testType === "section_listening" || testType === "section_reading" || testType === "section_speaking" || testType === "section_writing") {
-      const ieltsPassages = get("ielts.reading.passages", []);
-      const passages = [];
-      const base = ieltsPassages[0] || { title:"Adaptive reading", text:"Adaptive passage.", questions:[] };
-      const cycledQ = cycle(base.questions || [], 12, "duo_r");
-      passages.push({ id:"duo_r", title:"Adaptive reading & comprehension", text: base.text, questions: cycledQ });
-      sections.push({ id:"reading", name:"Adaptive Reading & Listening", icon:"🎧📖", timeSecs: 35*60, passages, type:"reading" });
-
-      sections.push({ id:"writing", name:"Writing Sample", icon:"✍️", timeSecs: 5*60,
-        tasks: [{ id:"duo_w", prompt:"Write a short response about a topic that interests you (50-100 words).", wordTarget:75 }], type:"writing" });
-
-      sections.push({ id:"speaking", name:"Speaking Sample", icon:"🎤", timeSecs: 20*60,
+    // Duolingo English Test — real DET micro-tasks (Read & Select, Fill, Listen & Type) + samples.
+    const toL = "ABCDEFG";
+    const wordsToLetters = (words, options) => (words || []).map((w) => { const i = (options || []).indexOf(w); return i >= 0 ? toL[i] : null; }).filter(Boolean);
+    const wordToLetter = (word, options) => { const i = (options || []).indexOf(word); return i >= 0 ? toL[i] : word; };
+    const dTasks = get("duolingo.tasks", []);
+    if (testType === "full" || testType === "section_reading") {
+      const readQs = [];
+      dTasks.filter((t) => t.type === "read_select").forEach((t) => readQs.push({ id: t.id, type: "mcq_multi", text: t.prompt || "Select all the REAL English words.", options: t.options, answer: wordsToLetters(t.answer, t.options), selectCount: (t.answer || []).length }));
+      dTasks.filter((t) => t.type === "fill_blank").forEach((t) => readQs.push({ id: t.id, type: "mcq", text: t.sentence || t.prompt, options: t.options, answer: wordToLetter(t.answer, t.options) }));
+      if (readQs.length) sections.push({ id: "reading", name: "Reading — Read & Select, Complete", icon: "📖", timeSecs: 18 * 60, passages: [{ id: "duo_read", title: "Reading tasks", text: "", questions: readQs }], type: "reading" });
+    }
+    if (testType === "full" || testType === "section_listening") {
+      const lparts = dTasks.filter((t) => t.type === "listen_type").map((t, i) => ({ id: t.id, partNum: i + 1, context: "Listen and type the sentence you hear", audioScript: t.audioScript, questions: [{ id: t.id + "_q", type: "fill", text: "Type the sentence you heard.", answer: t.answer }] }));
+      if (lparts.length) sections.push({ id: "listening", name: "Listening — Listen & Type", icon: "🎧", timeSecs: 12 * 60, parts: lparts, type: "listening" });
+    }
+    if (testType === "full" || testType === "section_writing") {
+      sections.push({ id: "writing", name: "Writing Sample", icon: "✍️", timeSecs: 5 * 60,
+        tasks: [{ id: "duo_w", prompt: "Write a short response about a topic that interests you (50-100 words).", wordTarget: 75 }], type: "writing" });
+    }
+    if (testType === "full" || testType === "section_speaking") {
+      sections.push({ id: "speaking", name: "Speaking Sample", icon: "🎤", timeSecs: 20 * 60,
         cards: [
-          { id:"duo_s1", topic:"Describe a recent experience that taught you something new.", points:["What happened","What you learned","Why it mattered to you"], prepSeconds: 20, responseSeconds: 60 },
-          { id:"duo_s2", topic:"Talk about a place you would like to visit.", points:["Where","Why","What you would do there"], prepSeconds: 20, responseSeconds: 60 }
-        ], type:"speaking" });
+          { id: "duo_s1", topic: "Describe a recent experience that taught you something new.", points: ["What happened", "What you learned", "Why it mattered to you"], prepSeconds: 20, responseSeconds: 60 },
+          { id: "duo_s2", topic: "Talk about a place you would like to visit.", points: ["Where", "Why", "What you would do there"], prepSeconds: 20, responseSeconds: 60 }
+        ], type: "speaking" });
     }
   }
 
@@ -2172,10 +2180,32 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
 
 /* ── Question card ── */
 function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
-  if (q.type === "mcq") {
+  if (q.type === "mcq" || q.type === "table_analysis" || q.type === "multi_source_reasoning" || q.type === "graphics_interpretation") {
     return (
       <div className="q-card">
         <div className="q-num">Question {q.num || qi + 1}</div>
+        {Array.isArray(q.sources) && (
+          <div className="di-sources">{q.sources.map((s, i) => (
+            <div key={i} className="di-source"><div className="di-source-label">{s.label}</div><pre className="di-source-text">{s.text}</pre></div>
+          ))}</div>
+        )}
+        {Array.isArray(q.table) && q.table.length > 0 && typeof q.table[0] === "object" && (
+          <div className="di-table-wrap"><table className="di-table">
+            <thead><tr>{Object.keys(q.table[0]).map((h) => <th key={h}>{h}</th>)}</tr></thead>
+            <tbody>{q.table.map((row, ri) => (
+              <tr key={ri}>{Object.keys(q.table[0]).map((k, ci) => ci === 0 ? <th key={k} scope="row">{row[k]}</th> : <td key={k}>{row[k]}</td>)}</tr>
+            ))}</tbody>
+          </table></div>
+        )}
+        {q.chart && Array.isArray(q.chart.values) && Array.isArray(q.chart.labels) && (
+          <div className="di-chart">
+            {q.chart.caption && <div className="di-chart-caption">{q.chart.caption}</div>}
+            <div className="di-chart-bars">{q.chart.labels.map((lab, i) => {
+              const max = Math.max.apply(null, q.chart.values) || 1;
+              return (<div key={i} className="di-bar-col"><div className="di-bar-val">{q.chart.values[i]}</div><div className="di-bar" style={{ height: (Math.round((q.chart.values[i] / max) * 90) + 6) + "px" }} /><div className="di-bar-label">{lab}</div></div>);
+            })}</div>
+          </div>
+        )}
         <div className="q-text">{q.text}</div>
         {q.dataTable && (
           <div className="di-table-wrap">
@@ -2206,6 +2236,27 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
             );
           })}
         </div>
+      </div>
+    );
+  }
+
+  if (q.type === "two_part_analysis") {
+    const sel = answer ? String(answer).split(",") : ["", ""];
+    const pick = (col, ri) => { const next = [sel[0] || "", sel[1] || ""]; next[col] = String(ri); onAnswer(next.join(",")); };
+    return (
+      <div className="q-card">
+        <div className="q-num">Question {q.num || qi + 1}</div>
+        <div className="q-text">{q.text || q.prompt}</div>
+        <table className="di-twopart">
+          <thead><tr><th>{(q.columns || [])[0]}</th><th>{(q.columns || [])[1]}</th><th className="tp-rowhead">Option</th></tr></thead>
+          <tbody>{(q.rows || []).map((row, ri) => (
+            <tr key={ri}>
+              <td className="tp-radio"><input type="radio" name={q.id + "_c0"} checked={sel[0] === String(ri)} onChange={() => pick(0, ri)} aria-label={(q.columns || [])[0] + ": " + row} /></td>
+              <td className="tp-radio"><input type="radio" name={q.id + "_c1"} checked={sel[1] === String(ri)} onChange={() => pick(1, ri)} aria-label={(q.columns || [])[1] + ": " + row} /></td>
+              <td className="tp-rowlabel">{row}</td>
+            </tr>
+          ))}</tbody>
+        </table>
       </div>
     );
   }
@@ -2555,7 +2606,7 @@ function scoreTest(config, answers) {
           if (g === a || alts.includes(g)) correct++;
         } else if (q.type === "map_label" || q.type === "match_cat") {
           if (String(given||"").toUpperCase().trim() === String(q.answer||"").toUpperCase().trim()) correct++;
-        } else if (q.type === "mcq" || q.type === "tfng" || q.type === "yng" || q.type === "match_heading" || q.type === "inference" || q.type === "vocab") {
+        } else if (q.type === "mcq" || q.type === "tfng" || q.type === "yng" || q.type === "match_heading" || q.type === "inference" || q.type === "vocab" || q.type === "table_analysis" || q.type === "multi_source_reasoning" || q.type === "graphics_interpretation" || q.type === "two_part_analysis") {
           if (given === q.answer) correct++;
         } else if (q.type === "mcq_multi") {
           const expected = Array.isArray(q.answer) ? [...q.answer].sort().join(",") : String(q.answer || "").split(",").sort().join(",");

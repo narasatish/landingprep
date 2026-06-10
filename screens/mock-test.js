@@ -481,13 +481,27 @@ Write at least 150 words.`, wordTarget: t.wordTarget || 150, sampleAnswer: t.sam
       sections.push({ id: "speaking", name: "Speaking", icon: "\u{1F3A4}", timeSecs: 20 * 60, cards, type: "speaking" });
     }
   } else if (examId === "duolingo") {
-    if (testType === "full" || testType === "section_listening" || testType === "section_reading" || testType === "section_speaking" || testType === "section_writing") {
-      const ieltsPassages = get("ielts.reading.passages", []);
-      const passages = [];
-      const base = ieltsPassages[0] || { title: "Adaptive reading", text: "Adaptive passage.", questions: [] };
-      const cycledQ = cycle(base.questions || [], 12, "duo_r");
-      passages.push({ id: "duo_r", title: "Adaptive reading & comprehension", text: base.text, questions: cycledQ });
-      sections.push({ id: "reading", name: "Adaptive Reading & Listening", icon: "\u{1F3A7}\u{1F4D6}", timeSecs: 35 * 60, passages, type: "reading" });
+    const toL = "ABCDEFG";
+    const wordsToLetters = (words, options) => (words || []).map((w) => {
+      const i = (options || []).indexOf(w);
+      return i >= 0 ? toL[i] : null;
+    }).filter(Boolean);
+    const wordToLetter = (word, options) => {
+      const i = (options || []).indexOf(word);
+      return i >= 0 ? toL[i] : word;
+    };
+    const dTasks = get("duolingo.tasks", []);
+    if (testType === "full" || testType === "section_reading") {
+      const readQs = [];
+      dTasks.filter((t) => t.type === "read_select").forEach((t) => readQs.push({ id: t.id, type: "mcq_multi", text: t.prompt || "Select all the REAL English words.", options: t.options, answer: wordsToLetters(t.answer, t.options), selectCount: (t.answer || []).length }));
+      dTasks.filter((t) => t.type === "fill_blank").forEach((t) => readQs.push({ id: t.id, type: "mcq", text: t.sentence || t.prompt, options: t.options, answer: wordToLetter(t.answer, t.options) }));
+      if (readQs.length) sections.push({ id: "reading", name: "Reading \u2014 Read & Select, Complete", icon: "\u{1F4D6}", timeSecs: 18 * 60, passages: [{ id: "duo_read", title: "Reading tasks", text: "", questions: readQs }], type: "reading" });
+    }
+    if (testType === "full" || testType === "section_listening") {
+      const lparts = dTasks.filter((t) => t.type === "listen_type").map((t, i) => ({ id: t.id, partNum: i + 1, context: "Listen and type the sentence you hear", audioScript: t.audioScript, questions: [{ id: t.id + "_q", type: "fill", text: "Type the sentence you heard.", answer: t.answer }] }));
+      if (lparts.length) sections.push({ id: "listening", name: "Listening \u2014 Listen & Type", icon: "\u{1F3A7}", timeSecs: 12 * 60, parts: lparts, type: "listening" });
+    }
+    if (testType === "full" || testType === "section_writing") {
       sections.push({
         id: "writing",
         name: "Writing Sample",
@@ -496,6 +510,8 @@ Write at least 150 words.`, wordTarget: t.wordTarget || 150, sampleAnswer: t.sam
         tasks: [{ id: "duo_w", prompt: "Write a short response about a topic that interests you (50-100 words).", wordTarget: 75 }],
         type: "writing"
       });
+    }
+    if (testType === "full" || testType === "section_speaking") {
       sections.push({
         id: "speaking",
         name: "Speaking Sample",
@@ -1720,8 +1736,11 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
   )))));
 }
 function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
-  if (q.type === "mcq") {
-    return /* @__PURE__ */ React.createElement("div", { className: "q-card" }, /* @__PURE__ */ React.createElement("div", { className: "q-num" }, "Question ", q.num || qi + 1), /* @__PURE__ */ React.createElement("div", { className: "q-text" }, q.text), q.dataTable && /* @__PURE__ */ React.createElement("div", { className: "di-table-wrap" }, q.dataTable.caption && /* @__PURE__ */ React.createElement("div", { className: "di-table-caption" }, q.dataTable.caption), /* @__PURE__ */ React.createElement("table", { className: "di-table" }, /* @__PURE__ */ React.createElement("thead", null, /* @__PURE__ */ React.createElement("tr", null, (q.dataTable.headers || []).map((h, i) => /* @__PURE__ */ React.createElement("th", { key: i }, h)))), /* @__PURE__ */ React.createElement("tbody", null, (q.dataTable.rows || []).map((row, ri) => /* @__PURE__ */ React.createElement("tr", { key: ri }, (row || []).map((cell, ci) => ci === 0 ? /* @__PURE__ */ React.createElement("th", { key: ci, scope: "row" }, cell) : /* @__PURE__ */ React.createElement("td", { key: ci }, cell))))))), q.visual && window.LP_VisualRenderer && /* @__PURE__ */ React.createElement(window.LP_VisualRenderer, { task: { visual: q.visual, prompt: q.text } }), q.passage && /* @__PURE__ */ React.createElement("div", { className: "passage-block", style: { maxHeight: 200, marginBottom: 12 } }, /* @__PURE__ */ React.createElement("p", { style: { margin: 0 } }, q.passage)), /* @__PURE__ */ React.createElement("div", { className: "q-options" }, (q.options || []).map((opt, oi) => {
+  if (q.type === "mcq" || q.type === "table_analysis" || q.type === "multi_source_reasoning" || q.type === "graphics_interpretation") {
+    return /* @__PURE__ */ React.createElement("div", { className: "q-card" }, /* @__PURE__ */ React.createElement("div", { className: "q-num" }, "Question ", q.num || qi + 1), Array.isArray(q.sources) && /* @__PURE__ */ React.createElement("div", { className: "di-sources" }, q.sources.map((s, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "di-source" }, /* @__PURE__ */ React.createElement("div", { className: "di-source-label" }, s.label), /* @__PURE__ */ React.createElement("pre", { className: "di-source-text" }, s.text)))), Array.isArray(q.table) && q.table.length > 0 && typeof q.table[0] === "object" && /* @__PURE__ */ React.createElement("div", { className: "di-table-wrap" }, /* @__PURE__ */ React.createElement("table", { className: "di-table" }, /* @__PURE__ */ React.createElement("thead", null, /* @__PURE__ */ React.createElement("tr", null, Object.keys(q.table[0]).map((h) => /* @__PURE__ */ React.createElement("th", { key: h }, h)))), /* @__PURE__ */ React.createElement("tbody", null, q.table.map((row, ri) => /* @__PURE__ */ React.createElement("tr", { key: ri }, Object.keys(q.table[0]).map((k, ci) => ci === 0 ? /* @__PURE__ */ React.createElement("th", { key: k, scope: "row" }, row[k]) : /* @__PURE__ */ React.createElement("td", { key: k }, row[k]))))))), q.chart && Array.isArray(q.chart.values) && Array.isArray(q.chart.labels) && /* @__PURE__ */ React.createElement("div", { className: "di-chart" }, q.chart.caption && /* @__PURE__ */ React.createElement("div", { className: "di-chart-caption" }, q.chart.caption), /* @__PURE__ */ React.createElement("div", { className: "di-chart-bars" }, q.chart.labels.map((lab, i) => {
+      const max = Math.max.apply(null, q.chart.values) || 1;
+      return /* @__PURE__ */ React.createElement("div", { key: i, className: "di-bar-col" }, /* @__PURE__ */ React.createElement("div", { className: "di-bar-val" }, q.chart.values[i]), /* @__PURE__ */ React.createElement("div", { className: "di-bar", style: { height: Math.round(q.chart.values[i] / max * 90) + 6 + "px" } }), /* @__PURE__ */ React.createElement("div", { className: "di-bar-label" }, lab));
+    }))), /* @__PURE__ */ React.createElement("div", { className: "q-text" }, q.text), q.dataTable && /* @__PURE__ */ React.createElement("div", { className: "di-table-wrap" }, q.dataTable.caption && /* @__PURE__ */ React.createElement("div", { className: "di-table-caption" }, q.dataTable.caption), /* @__PURE__ */ React.createElement("table", { className: "di-table" }, /* @__PURE__ */ React.createElement("thead", null, /* @__PURE__ */ React.createElement("tr", null, (q.dataTable.headers || []).map((h, i) => /* @__PURE__ */ React.createElement("th", { key: i }, h)))), /* @__PURE__ */ React.createElement("tbody", null, (q.dataTable.rows || []).map((row, ri) => /* @__PURE__ */ React.createElement("tr", { key: ri }, (row || []).map((cell, ci) => ci === 0 ? /* @__PURE__ */ React.createElement("th", { key: ci, scope: "row" }, cell) : /* @__PURE__ */ React.createElement("td", { key: ci }, cell))))))), q.visual && window.LP_VisualRenderer && /* @__PURE__ */ React.createElement(window.LP_VisualRenderer, { task: { visual: q.visual, prompt: q.text } }), q.passage && /* @__PURE__ */ React.createElement("div", { className: "passage-block", style: { maxHeight: 200, marginBottom: 12 } }, /* @__PURE__ */ React.createElement("p", { style: { margin: 0 } }, q.passage)), /* @__PURE__ */ React.createElement("div", { className: "q-options" }, (q.options || []).map((opt, oi) => {
       const letter = ["A", "B", "C", "D", "E"][oi];
       const isSelected = answer === letter;
       return /* @__PURE__ */ React.createElement(
@@ -1735,6 +1754,15 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
         /* @__PURE__ */ React.createElement("span", null, opt.replace(/^[A-E]\.\s*/, ""))
       );
     })));
+  }
+  if (q.type === "two_part_analysis") {
+    const sel = answer ? String(answer).split(",") : ["", ""];
+    const pick = (col, ri) => {
+      const next = [sel[0] || "", sel[1] || ""];
+      next[col] = String(ri);
+      onAnswer(next.join(","));
+    };
+    return /* @__PURE__ */ React.createElement("div", { className: "q-card" }, /* @__PURE__ */ React.createElement("div", { className: "q-num" }, "Question ", q.num || qi + 1), /* @__PURE__ */ React.createElement("div", { className: "q-text" }, q.text || q.prompt), /* @__PURE__ */ React.createElement("table", { className: "di-twopart" }, /* @__PURE__ */ React.createElement("thead", null, /* @__PURE__ */ React.createElement("tr", null, /* @__PURE__ */ React.createElement("th", null, (q.columns || [])[0]), /* @__PURE__ */ React.createElement("th", null, (q.columns || [])[1]), /* @__PURE__ */ React.createElement("th", { className: "tp-rowhead" }, "Option"))), /* @__PURE__ */ React.createElement("tbody", null, (q.rows || []).map((row, ri) => /* @__PURE__ */ React.createElement("tr", { key: ri }, /* @__PURE__ */ React.createElement("td", { className: "tp-radio" }, /* @__PURE__ */ React.createElement("input", { type: "radio", name: q.id + "_c0", checked: sel[0] === String(ri), onChange: () => pick(0, ri), "aria-label": (q.columns || [])[0] + ": " + row })), /* @__PURE__ */ React.createElement("td", { className: "tp-radio" }, /* @__PURE__ */ React.createElement("input", { type: "radio", name: q.id + "_c1", checked: sel[1] === String(ri), onChange: () => pick(1, ri), "aria-label": (q.columns || [])[1] + ": " + row })), /* @__PURE__ */ React.createElement("td", { className: "tp-rowlabel" }, row))))));
   }
   if (q.type === "tfng" || q.type === "yng") {
     const opts = q.type === "tfng" ? [["TRUE", "T"], ["FALSE", "F"], ["NOT GIVEN", "NG"]] : [["YES", "Y"], ["NO", "N"], ["NOT GIVEN", "NG"]];
@@ -1974,7 +2002,7 @@ function scoreTest(config, answers) {
           if (g === a || alts.includes(g)) correct++;
         } else if (q.type === "map_label" || q.type === "match_cat") {
           if (String(given || "").toUpperCase().trim() === String(q.answer || "").toUpperCase().trim()) correct++;
-        } else if (q.type === "mcq" || q.type === "tfng" || q.type === "yng" || q.type === "match_heading" || q.type === "inference" || q.type === "vocab") {
+        } else if (q.type === "mcq" || q.type === "tfng" || q.type === "yng" || q.type === "match_heading" || q.type === "inference" || q.type === "vocab" || q.type === "table_analysis" || q.type === "multi_source_reasoning" || q.type === "graphics_interpretation" || q.type === "two_part_analysis") {
           if (given === q.answer) correct++;
         } else if (q.type === "mcq_multi") {
           const expected = Array.isArray(q.answer) ? [...q.answer].sort().join(",") : String(q.answer || "").split(",").sort().join(",");

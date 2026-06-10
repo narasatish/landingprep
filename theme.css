@@ -4878,3 +4878,21 @@ html[data-theme="dark"] .seo-grid .seo-card .tag { background: color-mix(in srgb
 .returning-bar .rb-cta { margin-left: auto; background: var(--accent); color: #fff; border: 0; border-radius: 999px; padding: 9px 17px; font-weight: 700; font-size: 13px; cursor: pointer; min-height: 40px; }
 .returning-bar .rb-cta:hover { filter: brightness(1.05); }
 @media (max-width: 560px) { .returning-bar { gap: 6px 14px; } .returning-bar .rb-cta { margin-left: 0; width: 100%; } }
+
+/* GMAT Data Insights — multi-source, chart, two-part renderers */
+.di-sources { display: grid; gap: 10px; margin: 0 0 12px; }
+.di-source { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.di-source-label { background: var(--surface-2); padding: 6px 12px; font-weight: 700; font-size: 13px; border-bottom: 1px solid var(--line); }
+.di-source-text { margin: 0; padding: 10px 12px; white-space: pre-wrap; font: 13px/1.5 system-ui; }
+.di-chart { margin: 4px 0 14px; }
+.di-chart-caption { font-size: 13px; font-weight: 600; color: var(--ink-2); margin-bottom: 8px; }
+.di-chart-bars { display: flex; align-items: flex-end; gap: 10px; height: 130px; padding: 6px 4px; border-bottom: 2px solid var(--line); }
+.di-bar-col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; flex: 1; height: 100%; }
+.di-bar { width: 70%; max-width: 46px; background: linear-gradient(180deg, var(--accent), #7c3aed); border-radius: 6px 6px 0 0; }
+.di-bar-val { font-size: 12px; font-weight: 700; margin-bottom: 3px; }
+.di-bar-label { font-size: 12px; color: var(--ink-2); margin-top: 5px; text-align: center; }
+.di-twopart { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.di-twopart th, .di-twopart td { border: 1px solid var(--line); padding: 8px 10px; text-align: center; }
+.di-twopart .tp-rowhead, .di-twopart .tp-rowlabel { text-align: left; }
+.di-twopart .tp-radio { width: 80px; }
+.di-twopart .tp-radio input { width: 18px; height: 18px; }
