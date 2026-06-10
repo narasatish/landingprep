@@ -189,7 +189,7 @@ app.get(Object.keys(REDIRECTS), (req, res) => res.redirect(301, REDIRECTS[req.pa
 // backend/build read them from disk directly. Registered BEFORE express.static so
 // it wins. (.well-known/ is allowed for security.txt etc.)
 app.use((req, res, next) => {
-  if (/^\/(data|scripts|tools|node_modules)(\/|$)|^\/(server\.js|ai-tutor\.js|package\.json|package-lock\.json)$|^\/\.(?!well-known)/i.test(req.path)) {
+  if (/^\/(data|scripts|tools|node_modules)(\/|$)|^\/(server\.js|package\.json|package-lock\.json)$|^\/\.(?!well-known)/i.test(req.path)) {
     return res.status(404).end();
   }
   next();

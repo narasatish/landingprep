@@ -921,7 +921,7 @@ function SectionIntro({ sec, sectionNum, total, onBegin, onHome }) {
 // Scenario image panel (CELPIP listening, etc.). Shows a real photo if scene.image
 // is a URL; otherwise a clean illustrated scene card. Never breaks (onError fallback).
 function SceneImage({ scene }) {
-  const [failed, setFailed] = useState(false);
+  const [failed, setFailed] = useStateT(false);
   if (!scene) return null;
   const showImg = scene.image && !failed;
   return (
