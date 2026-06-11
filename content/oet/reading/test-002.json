@@ -1,0 +1,577 @@
+{
+  "id": "oet-reading-002",
+  "exam": "oet",
+  "section": "reading",
+  "type": "section",
+  "title": "OET Reading Practice Test 2",
+  "durationSeconds": 3600,
+  "questionCount": 30,
+  "instructions": "OET Reading has three parts. Part A: rapid reading across short healthcare texts. Part B: short workplace texts. Part C: two longer healthcare texts. Choose the best answer for each question.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Part A — Expeditious Reading",
+      "questions": 7,
+      "time": "15 min",
+      "description": "Four short texts on a single healthcare topic; locate specific information quickly."
+    },
+    {
+      "part": 2,
+      "title": "Part B — Workplace Texts",
+      "questions": 7,
+      "time": "20 min",
+      "description": "Short workplace documents (policies, manuals, guidelines, emails); identify the main point or purpose."
+    },
+    {
+      "part": 3,
+      "title": "Part C — Presentation Texts",
+      "questions": 16,
+      "time": "25 min",
+      "description": "Two longer texts; detailed comprehension of opinion, attitude and meaning."
+    }
+  ],
+  "passages": [
+    {
+      "id": "oet-reading-002-p1",
+      "part": 1,
+      "title": "Paediatric Asthma Management",
+      "text": "Asthma in children requires early recognition and prompt management to prevent serious complications. Common symptoms include recurrent coughing, especially at night or during play, wheezing, and breathlessness. Parents should keep an asthma action plan with their child's school and healthcare provider. Inhalers are the primary treatment, with blue (reliever) inhalers used for acute symptoms and brown or orange (preventer) inhalers used daily for maintenance. Spacers with face masks are essential for young children to ensure proper medication delivery. Triggers such as allergens, viral infections, and exercise should be identified and minimised. Regular review of symptom control every three months helps optimise therapy. Emergency signs requiring immediate hospital visit include severe wheeze, inability to speak in sentences, and persistent high oxygen requirements."
+    },
+    {
+      "id": "oet-reading-002-p2a",
+      "part": 2,
+      "title": "Mental Health Assessment Protocol",
+      "text": "All patients presenting to the emergency department with behavioural changes must receive a brief mental health screening within one hour of arrival. Assessment should include current mood, suicidal or homicidal ideation, substance use, and recent stressors. Patients expressing suicidal intent must be placed under continuous observation on a one-to-one basis. A psychiatry liaison team should be consulted within two hours for high-risk cases. All assessments must be documented thoroughly with patient quotes where possible. Discharge planning for psychiatric patients must include community support arrangements and follow-up appointments before leaving the hospital."
+    },
+    {
+      "id": "oet-reading-002-p2b",
+      "part": 2,
+      "title": "Blood Transfusion Safety Checklist",
+      "text": "Before administering blood products, ensure patient identity is verified using two identifiers. Check that the blood unit label matches the patient's blood type and antibody screen results. Inspect the blood bag for discolouration, gas bubbles, or any signs of contamination; if found, return to the blood bank immediately. Baseline vital signs must be recorded before transfusion starts. During transfusion, observe for adverse reactions including fever, chills, rash, or shortness of breath. Vital signs should be checked at 15 minutes and 1 hour; if any reaction occurs, stop transfusion immediately and inform the physician."
+    },
+    {
+      "id": "oet-reading-002-p3a",
+      "part": 3,
+      "title": "Pressure Injury Prevention and Management",
+      "text": "Pressure injuries, formerly known as pressure ulcers or bedsores, are localised injuries to the skin and underlying tissue resulting from sustained pressure. These injuries are largely preventable through systematic assessment and intervention. Risk factors include immobility, poor nutrition, incontinence, and advanced age. The Braden Scale is the most widely used risk assessment tool, scoring factors such as sensory perception, moisture, activity, mobility, nutrition, and friction. Patients scoring moderate to high risk require intensive prevention strategies including regular repositioning every two hours, use of pressure-relieving mattresses and cushions, meticulous skin care, adequate nutrition, and management of incontinence. Early recognition is crucial: Stage 1 involves non-blanching redness over a bony prominence; Stage 2 includes partial-thickness skin loss with a pink wound bed; Stage 3 represents full-thickness skin loss; Stage 4 involves tissue necrosis. Reverse staging is not recommended as it does not reflect healing. Treatment depends on wound characteristics and may include topical agents, dressings, debridement, and occasionally surgery. Prevention is always superior to treatment, and systems audits of facility-acquired injuries guide quality improvement initiatives."
+    },
+    {
+      "id": "oet-reading-002-p3b",
+      "part": 3,
+      "title": "Diabetes Self-Management Education",
+      "text": "Effective diabetes management requires patients to understand their condition and take active responsibility for daily care. Structured education programmes have been shown to reduce HbA1c levels by up to 1.5% and decrease complications. Key educational topics include recognising hypoglycaemic symptoms such as tremor, sweating, and confusion, and carrying fast-acting carbohydrates at all times. Patients on insulin must learn proper injection technique and rotate injection sites to prevent lipodystrophy. Blood glucose monitoring frequency depends on medication type: insulin users should test four times daily, whilst those on oral agents may test less frequently if glucose targets are met. Dietary advice should focus on carbohydrate awareness, portion control, and regular meal timing rather than restrictive dieting. Physical activity of at least 150 minutes per week at moderate intensity is recommended. Emotional well-being is critical as depression and anxiety increase diabetes complications; psychological support should be offered routinely. Patients should learn foot care including daily inspection, appropriate footwear, and prompt reporting of any sores. Annual complications screening includes eye assessment for retinopathy, urine albumin testing for nephropathy, and monofilament testing for neuropathy. Empowering patients through education reduces hospitalisations and improves quality of life."
+    }
+  ],
+  "questions": [
+    {
+      "id": "oet-reading-002-q01",
+      "passageId": "oet-reading-002-p1",
+      "part": 1,
+      "topic": "Paediatric Asthma Symptoms",
+      "questionType": "multiple_choice_single",
+      "prompt": "What are common symptoms of asthma in children according to the passage?",
+      "options": [
+        "Recurrent coughing, wheezing, and breathlessness",
+        "Only high fever and vomiting",
+        "Persistent headaches and weakness",
+        "Primarily diarrhoea and abdominal pain"
+      ],
+      "correctAnswer": "Recurrent coughing, wheezing, and breathlessness",
+      "explanation": "The passage explicitly lists these three as common asthma symptoms in children.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q02",
+      "passageId": "oet-reading-002-p1",
+      "part": 1,
+      "topic": "Asthma Inhalers",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the difference between blue and brown/orange inhalers?",
+      "options": [
+        "Blue is stronger than brown/orange",
+        "Brown/orange is for emergency use",
+        "Blue is for acute symptoms; brown/orange is for daily maintenance",
+        "There is no difference in function"
+      ],
+      "correctAnswer": "Blue is for acute symptoms; brown/orange is for daily maintenance",
+      "explanation": "The passage clearly distinguishes reliever (blue) for acute use and preventer (brown/orange) for daily maintenance.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q03",
+      "passageId": "oet-reading-002-p1",
+      "part": 1,
+      "topic": "Asthma Spacers",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why are spacers with face masks essential for young children?",
+      "options": [
+        "To ensure proper medication delivery",
+        "To reduce side effects of medication",
+        "To protect other children from infection",
+        "To make treatment less frightening"
+      ],
+      "correctAnswer": "To ensure proper medication delivery",
+      "explanation": "The passage states spacers are essential to ensure proper medication delivery in young children.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q04",
+      "passageId": "oet-reading-002-p1",
+      "part": 1,
+      "topic": "Asthma Triggers",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which of these is NOT mentioned as an asthma trigger?",
+      "options": [
+        "Allergens",
+        "Viral infections",
+        "Cold water exposure",
+        "Exercise"
+      ],
+      "correctAnswer": "Cold water exposure",
+      "explanation": "The passage mentions allergens, viral infections, and exercise but not cold water exposure.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-002-q05",
+      "passageId": "oet-reading-002-p1",
+      "part": 1,
+      "topic": "Asthma Monitoring",
+      "questionType": "multiple_choice_single",
+      "prompt": "How frequently should asthma symptom control be reviewed?",
+      "options": [
+        "Every three months",
+        "Every month",
+        "Every six months",
+        "Annually"
+      ],
+      "correctAnswer": "Every three months",
+      "explanation": "The passage states that regular review of symptom control every three months helps optimise therapy.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q06",
+      "passageId": "oet-reading-002-p2a",
+      "part": 2,
+      "topic": "Mental Health Screening",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the protocol, within what timeframe should mental health screening be completed in the ED?",
+      "options": [
+        "Within 30 minutes",
+        "Within two hours",
+        "Within one hour",
+        "Within four hours"
+      ],
+      "correctAnswer": "Within one hour",
+      "explanation": "The protocol explicitly states screening must occur within one hour of arrival.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q07",
+      "passageId": "oet-reading-002-p2a",
+      "part": 2,
+      "topic": "Suicidal Patient Care",
+      "questionType": "multiple_choice_single",
+      "prompt": "What observation protocol is required for patients expressing suicidal intent?",
+      "options": [
+        "Continuous one-to-one observation",
+        "General ward observation",
+        "Hourly checks",
+        "Standard nursing observations"
+      ],
+      "correctAnswer": "Continuous one-to-one observation",
+      "explanation": "The protocol states patients expressing suicidal intent must be placed under continuous one-to-one observation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q08",
+      "passageId": "oet-reading-002-p2a",
+      "part": 2,
+      "topic": "Psychiatry Consultation",
+      "questionType": "multiple_choice_single",
+      "prompt": "Within what timeframe should psychiatry liaison be consulted for high-risk cases?",
+      "options": [
+        "Immediately",
+        "Within 30 minutes",
+        "Within two hours",
+        "Within four hours"
+      ],
+      "correctAnswer": "Within two hours",
+      "explanation": "The protocol specifies that psychiatry should be consulted within two hours for high-risk cases.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q09",
+      "passageId": "oet-reading-002-p2b",
+      "part": 2,
+      "topic": "Blood Transfusion Safety",
+      "questionType": "multiple_choice_single",
+      "prompt": "How many identifiers must be used to verify patient identity before transfusion?",
+      "options": [
+        "Two identifiers",
+        "One identifier",
+        "Three identifiers",
+        "Four identifiers"
+      ],
+      "correctAnswer": "Two identifiers",
+      "explanation": "The checklist explicitly requires patient identity to be verified using two identifiers.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q10",
+      "passageId": "oet-reading-002-p2b",
+      "part": 2,
+      "topic": "Transfusion Reactions",
+      "questionType": "multiple_choice_single",
+      "prompt": "What should be done if an adverse reaction occurs during transfusion?",
+      "options": [
+        "Continue transfusion and monitor closely",
+        "Stop transfusion immediately and inform the physician",
+        "Slow the infusion rate",
+        "Administer antihistamines"
+      ],
+      "correctAnswer": "Stop transfusion immediately and inform the physician",
+      "explanation": "The checklist states to stop transfusion immediately and inform the physician if reaction occurs.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q11",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Pressure Injury Risk Factors",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, which are recognised risk factors for pressure injuries?",
+      "options": [
+        "Only advanced age",
+        "Primarily young age and high mobility",
+        "Immobility, poor nutrition, incontinence, and advanced age",
+        "Only poor nutrition"
+      ],
+      "correctAnswer": "Immobility, poor nutrition, incontinence, and advanced age",
+      "explanation": "The passage explicitly lists these four risk factors.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q12",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Braden Scale",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does the Braden Scale assess?",
+      "options": [
+        "Patient age and weight",
+        "Only skin colour",
+        "Sensory perception, moisture, activity, mobility, nutrition, and friction",
+        "Infection risk only"
+      ],
+      "correctAnswer": "Sensory perception, moisture, activity, mobility, nutrition, and friction",
+      "explanation": "The passage lists these six factors assessed by the Braden Scale.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-002-q13",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Pressure Injury Stages",
+      "questionType": "multiple_choice_single",
+      "prompt": "What characterises a Stage 2 pressure injury?",
+      "options": [
+        "Non-blanching redness only",
+        "Full-thickness skin loss",
+        "Partial-thickness skin loss with a pink wound bed",
+        "Tissue necrosis"
+      ],
+      "correctAnswer": "Partial-thickness skin loss with a pink wound bed",
+      "explanation": "The passage describes Stage 2 as partial-thickness skin loss with a pink wound bed.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-002-q14",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Repositioning Frequency",
+      "questionType": "multiple_choice_single",
+      "prompt": "How often should high-risk patients be repositioned?",
+      "options": [
+        "Every 4 hours",
+        "Every 3 hours",
+        "Every 2 hours",
+        "Every 6 hours"
+      ],
+      "correctAnswer": "Every 2 hours",
+      "explanation": "The passage states regular repositioning should occur every two hours for high-risk patients.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q15",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Diabetes Education Impact",
+      "questionType": "multiple_choice_single",
+      "prompt": "By how much can structured diabetes education reduce HbA1c levels?",
+      "options": [
+        "Up to 0.5%",
+        "Up to 1%",
+        "Up to 1.5%",
+        "Up to 2%"
+      ],
+      "correctAnswer": "Up to 1.5%",
+      "explanation": "The passage states that education programmes can reduce HbA1c by up to 1.5%.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q16",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Hypoglycaemia Symptoms",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which are recognised symptoms of hypoglycaemia mentioned in the passage?",
+      "options": [
+        "Only slow heartbeat",
+        "Only excessive thirst",
+        "Tremor, sweating, and confusion",
+        "Primarily numbness in extremities"
+      ],
+      "correctAnswer": "Tremor, sweating, and confusion",
+      "explanation": "The passage lists tremor, sweating, and confusion as hypoglycaemic symptoms.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q17",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Blood Glucose Monitoring",
+      "questionType": "multiple_choice_single",
+      "prompt": "How frequently should insulin users test their blood glucose?",
+      "options": [
+        "Twice daily",
+        "Three times daily",
+        "Four times daily",
+        "Once daily"
+      ],
+      "correctAnswer": "Four times daily",
+      "explanation": "The passage states that insulin users should test four times daily.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q18",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Insulin Injection Technique",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why is it important to rotate insulin injection sites?",
+      "options": [
+        "To reduce pain",
+        "To improve absorption",
+        "To prevent lipodystrophy",
+        "To reduce bruising"
+      ],
+      "correctAnswer": "To prevent lipodystrophy",
+      "explanation": "The passage states that rotation of injection sites prevents lipodystrophy.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-002-q19",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Physical Activity Recommendations",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the recommended frequency and intensity of physical activity for diabetic patients?",
+      "options": [
+        "100 minutes per week at vigorous intensity",
+        "75 minutes per week at moderate intensity",
+        "150 minutes per week at moderate intensity",
+        "200 minutes per week at any intensity"
+      ],
+      "correctAnswer": "150 minutes per week at moderate intensity",
+      "explanation": "The passage recommends at least 150 minutes per week at moderate intensity.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q20",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Diabetes Complications Screening",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which is NOT mentioned as part of annual complications screening?",
+      "options": [
+        "Eye assessment for retinopathy",
+        "Liver function testing",
+        "Monofilament testing for neuropathy",
+        "Urine albumin testing"
+      ],
+      "correctAnswer": "Liver function testing",
+      "explanation": "The passage mentions retinopathy, nephropathy, and neuropathy screening, but not liver testing.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-002-q21",
+      "passageId": "oet-reading-002-p1",
+      "part": 1,
+      "topic": "Asthma Action Plan",
+      "questionType": "multiple_choice_single",
+      "prompt": "Where should an asthma action plan be kept?",
+      "options": [
+        "With school and healthcare provider",
+        "At home only",
+        "In a hospital file",
+        "Only with the GP"
+      ],
+      "correctAnswer": "With school and healthcare provider",
+      "explanation": "The passage states parents should keep an action plan with their child's school and healthcare provider.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q22",
+      "passageId": "oet-reading-002-p1",
+      "part": 1,
+      "topic": "Spacer Importance",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why is a face mask important with an inhaler spacer?",
+      "options": [
+        "To ensure proper medication delivery in young children",
+        "To prevent contamination",
+        "To reduce side effects",
+        "To improve drug taste"
+      ],
+      "correctAnswer": "To ensure proper medication delivery in young children",
+      "explanation": "The passage emphasizes that spacers with face masks are essential to ensure proper medication delivery.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q23",
+      "passageId": "oet-reading-002-p2a",
+      "part": 2,
+      "topic": "Mental Health Documentation",
+      "questionType": "multiple_choice_single",
+      "prompt": "What should be included in mental health assessments?",
+      "options": [
+        "Patient quotes where possible for documentation",
+        "Only mood ratings",
+        "Only vital signs",
+        "Medical history only"
+      ],
+      "correctAnswer": "Patient quotes where possible for documentation",
+      "explanation": "The protocol requires thorough documentation with patient quotes where possible.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q24",
+      "passageId": "oet-reading-002-p2b",
+      "part": 2,
+      "topic": "Blood Unit Inspection",
+      "questionType": "multiple_choice_single",
+      "prompt": "What should be done if gas bubbles are found in a blood bag?",
+      "options": [
+        "Return to blood bank immediately",
+        "Remove bubbles and continue",
+        "Proceed with transfusion carefully",
+        "Warm the bag first"
+      ],
+      "correctAnswer": "Return to blood bank immediately",
+      "explanation": "The checklist states to return any contaminated blood to the blood bank immediately.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q25",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Pressure Injury Treatment",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, what is the key principle for pressure injury management?",
+      "options": [
+        "Prevention is always superior to treatment",
+        "Treatment is always superior to prevention",
+        "Reverse staging is the best approach",
+        "All injuries should require surgery"
+      ],
+      "correctAnswer": "Prevention is always superior to treatment",
+      "explanation": "The passage states that prevention is always superior to treatment.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q26",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Stage 1 Pressure Injury",
+      "questionType": "multiple_choice_single",
+      "prompt": "What characterises a Stage 1 pressure injury?",
+      "options": [
+        "Non-blanching redness over a bony prominence",
+        "Partial-thickness skin loss",
+        "Full-thickness skin loss",
+        "Visible muscle involvement"
+      ],
+      "correctAnswer": "Non-blanching redness over a bony prominence",
+      "explanation": "The passage describes Stage 1 as non-blanching redness over a bony prominence.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q27",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Stage 4 Pressure Injury",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is involved in a Stage 4 pressure injury?",
+      "options": [
+        "Tissue necrosis",
+        "Partial skin loss",
+        "Redness only",
+        "Superficial blistering"
+      ],
+      "correctAnswer": "Tissue necrosis",
+      "explanation": "The passage states Stage 4 involves tissue necrosis.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q28",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Diabetes Education Elements",
+      "questionType": "multiple_choice_single",
+      "prompt": "What type of dietary advice is recommended in diabetes education?",
+      "options": [
+        "Carbohydrate awareness, portion control, and regular meal timing",
+        "Restrictive dieting only",
+        "No dietary intervention needed",
+        "Only sugar elimination"
+      ],
+      "correctAnswer": "Carbohydrate awareness, portion control, and regular meal timing",
+      "explanation": "The passage recommends focus on carbohydrate awareness, portion control, and regular timing.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q29",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Foot Care Importance",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does proper foot care include in diabetes management?",
+      "options": [
+        "Daily inspection, appropriate footwear, and prompt reporting of sores",
+        "Only wearing special shoes",
+        "Avoiding all physical activity",
+        "Weekly medical checks only"
+      ],
+      "correctAnswer": "Daily inspection, appropriate footwear, and prompt reporting of sores",
+      "explanation": "The passage includes these elements as essential foot care components.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-002-q30",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Reverse Staging Recommendation",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does the passage say about reverse staging of pressure injuries?",
+      "options": [
+        "It is the best healing indicator",
+        "It is not recommended as it does not reflect healing",
+        "It should be used routinely",
+        "It shows improvement clearly"
+      ],
+      "correctAnswer": "It is not recommended as it does not reflect healing",
+      "explanation": "The passage explicitly states reverse staging is not recommended as it does not reflect healing.",
+      "difficulty": "medium"
+    }
+  ]
+}

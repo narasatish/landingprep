@@ -1,0 +1,565 @@
+{
+  "id": "oet-listening-001",
+  "exam": "oet",
+  "section": "listening",
+  "type": "section",
+  "title": "OET Listening Practice Test 1",
+  "durationSeconds": 2700,
+  "questionCount": 30,
+  "instructions": "OET Listening has three parts. Part A: Consultation Extracts (note-taking style). Part B: Short Workplace Extracts (main point identification). Part C: Presentation Extracts (detailed comprehension). Listen carefully and choose the best answer.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Part A — Consultation Extracts",
+      "questions": 18,
+      "time": "12 min",
+      "description": "Doctor-patient consultations. Listen and take notes to answer questions about specific information."
+    },
+    {
+      "part": 2,
+      "title": "Part B — Short Workplace Extracts",
+      "questions": 8,
+      "time": "8 min",
+      "description": "Workplace briefings, handovers, phone calls. Identify the main point or purpose."
+    },
+    {
+      "part": 3,
+      "title": "Part C — Presentation Extracts",
+      "questions": 4,
+      "time": "10 min",
+      "description": "Healthcare presentations or talks. Comprehend main ideas and supporting details."
+    }
+  ],
+  "questions": [
+    {
+      "id": "oet-listening-001-q01",
+      "passageId": "oet-listening-001-p1a",
+      "part": 1,
+      "topic": "GP Consultation - BP Reading",
+      "questionType": "multiple_choice_single",
+      "prompt": "What was Mrs Chen's blood pressure reading during the consultation?",
+      "options": [
+        "158 over 98",
+        "148 over 88",
+        "168 over 100",
+        "138 over 78"
+      ],
+      "correctAnswer": "158 over 98",
+      "explanation": "The doctor states the reading is 158 over 98 during the examination.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q02",
+      "passageId": "oet-listening-001-p1a",
+      "part": 1,
+      "topic": "Hypertension Causes",
+      "questionType": "multiple_choice_single",
+      "prompt": "What stressors has Mrs Chen experienced recently?",
+      "options": [
+        "Only work stress",
+        "Health issues of family members",
+        "Her daughter's wedding and kitchen renovation",
+        "Financial difficulties alone"
+      ],
+      "correctAnswer": "Her daughter's wedding and kitchen renovation",
+      "explanation": "Mrs Chen mentions her daughter's wedding in three weeks and kitchen renovation as stressors.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q03",
+      "passageId": "oet-listening-001-p1a",
+      "part": 1,
+      "topic": "Exercise Recommendation",
+      "questionType": "multiple_choice_single",
+      "prompt": "How much daily exercise did the doctor recommend?",
+      "options": [
+        "At least 30 minutes",
+        "At least 20 minutes",
+        "At least 45 minutes",
+        "At least 60 minutes"
+      ],
+      "correctAnswer": "At least 30 minutes",
+      "explanation": "The doctor states the patient should exercise regularly—at least 30 minutes daily.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q04",
+      "passageId": "oet-listening-001-p1a",
+      "part": 1,
+      "topic": "Follow-up Timing",
+      "questionType": "multiple_choice_single",
+      "prompt": "When should Mrs Chen return for blood pressure recheck?",
+      "options": [
+        "In one week",
+        "In one month",
+        "In two weeks",
+        "In six weeks"
+      ],
+      "correctAnswer": "In two weeks",
+      "explanation": "The doctor says 'Come back in two weeks so we can recheck.'",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q05",
+      "passageId": "oet-listening-001-p1b",
+      "part": 1,
+      "topic": "Otitis Media Diagnosis",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is Tommy's diagnosis?",
+      "options": [
+        "Acute otitis media",
+        "Chronic ear infection",
+        "Eustachian tube dysfunction",
+        "Conductive hearing loss"
+      ],
+      "correctAnswer": "Acute otitis media",
+      "explanation": "The doctor explicitly states 'He has acute otitis media.'",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q06",
+      "passageId": "oet-listening-001-p1b",
+      "part": 1,
+      "topic": "Antibiotic Course Duration",
+      "questionType": "multiple_choice_single",
+      "prompt": "For how long should Tommy take the amoxicillin?",
+      "options": [
+        "Three days",
+        "Five days",
+        "Seven days",
+        "Ten days"
+      ],
+      "correctAnswer": "Seven days",
+      "explanation": "The doctor prescribes amoxicillin for seven days.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q07",
+      "passageId": "oet-listening-001-p1b",
+      "part": 1,
+      "topic": "Antibiotic Dosage",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the prescribed dosage of amoxicillin for Tommy?",
+      "options": [
+        "Two tablets three times daily",
+        "Two tablets twice daily",
+        "One tablet three times daily",
+        "Three tablets once daily"
+      ],
+      "correctAnswer": "Two tablets three times daily",
+      "explanation": "The doctor states 'Two tablets three times daily.'",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q08",
+      "passageId": "oet-listening-001-p1c",
+      "part": 1,
+      "topic": "Medication Timing",
+      "questionType": "multiple_choice_single",
+      "prompt": "When should Mr Patel take his simvastatin?",
+      "options": [
+        "In the morning with breakfast",
+        "At midday with lunch",
+        "In the evening with food",
+        "At bedtime without food"
+      ],
+      "correctAnswer": "In the evening with food",
+      "explanation": "The pharmacist states simvastatin should be taken in the evening with food.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q09",
+      "passageId": "oet-listening-001-p1c",
+      "part": 1,
+      "topic": "Metformin Issue",
+      "questionType": "multiple_choice_single",
+      "prompt": "What side effect has Mr Patel experienced with metformin?",
+      "options": [
+        "Stomach discomfort",
+        "Dizziness",
+        "Headaches",
+        "Muscle pain"
+      ],
+      "correctAnswer": "Stomach discomfort",
+      "explanation": "Mr Patel says he has been getting stomach discomfort.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q10",
+      "passageId": "oet-listening-001-p1c",
+      "part": 1,
+      "topic": "Supplementation",
+      "questionType": "multiple_choice_single",
+      "prompt": "What supplement is Mr Patel taking?",
+      "options": [
+        "Calcium",
+        "Vitamin D",
+        "Vitamin B12",
+        "Iron"
+      ],
+      "correctAnswer": "Vitamin D",
+      "explanation": "Mr Patel states he is taking vitamin D.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q11",
+      "passageId": "oet-listening-001-p1c",
+      "part": 1,
+      "topic": "Follow-up Appointment",
+      "questionType": "multiple_choice_single",
+      "prompt": "When should Mr Patel return for medication review?",
+      "options": [
+        "In two weeks",
+        "In three weeks",
+        "In four weeks",
+        "In six weeks"
+      ],
+      "correctAnswer": "In four weeks",
+      "explanation": "The pharmacist says 'Come back in four weeks so we can check how you're getting on.'",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q12",
+      "passageId": "oet-listening-001-p1c",
+      "part": 1,
+      "topic": "Lisinopril Dose",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is Mr Patel's lisinopril dose?",
+      "options": [
+        "5 milligrams daily",
+        "20 milligrams daily",
+        "10 milligrams daily",
+        "40 milligrams daily"
+      ],
+      "correctAnswer": "10 milligrams daily",
+      "explanation": "The pharmacist confirms lisinopril 10 milligrams daily.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q13",
+      "passageId": "oet-listening-001-p2a",
+      "part": 2,
+      "topic": "Ward Round - Post-op Day",
+      "questionType": "multiple_choice_single",
+      "prompt": "How many days post-op is Mrs Williams?",
+      "options": [
+        "Day 1",
+        "Day 3",
+        "Day 2",
+        "Day 5"
+      ],
+      "correctAnswer": "Day 2",
+      "explanation": "The charge nurse states Mrs Williams is post-op day two after hip replacement.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q14",
+      "passageId": "oet-listening-001-p2a",
+      "part": 2,
+      "topic": "Oxygen Therapy Change",
+      "questionType": "multiple_choice_single",
+      "prompt": "What oxygen delivery has Mr Kumar improved to overnight?",
+      "options": [
+        "1 litre via nasal cannula",
+        "2 litres via nasal cannula",
+        "3 litres via nasal cannula",
+        "5 litres via nasal cannula"
+      ],
+      "correctAnswer": "3 litres via nasal cannula",
+      "explanation": "The charge nurse states he's on 3 litres instead of 5.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q15",
+      "passageId": "oet-listening-001-p2a",
+      "part": 2,
+      "topic": "Migraine Management",
+      "questionType": "multiple_choice_single",
+      "prompt": "What environmental condition is recommended for Miss Anderson?",
+      "options": [
+        "Bright lighting to aid monitoring",
+        "Normal ward activity",
+        "A quiet environment with low lighting and reduced noise",
+        "Close observation by nursing staff at all times"
+      ],
+      "correctAnswer": "A quiet environment with low lighting and reduced noise",
+      "explanation": "The charge nurse specifies she needs a quiet environment with low lighting and reduced noise.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-001-q16",
+      "passageId": "oet-listening-001-p2b",
+      "part": 2,
+      "topic": "Suspension Storage",
+      "questionType": "multiple_choice_single",
+      "prompt": "How should cephalexin suspension be stored?",
+      "options": [
+        "In the refrigerator",
+        "In the freezer",
+        "At room temperature",
+        "In a dark cupboard"
+      ],
+      "correctAnswer": "At room temperature",
+      "explanation": "The pharmacist states cephalexin suspension should be stored at room temperature, not refrigerated.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q17",
+      "passageId": "oet-listening-001-p2b",
+      "part": 2,
+      "topic": "Suspension Shelf Life",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the shelf life of cephalexin suspension after dispensing?",
+      "options": [
+        "7 days",
+        "10 days",
+        "14 days",
+        "30 days"
+      ],
+      "correctAnswer": "14 days",
+      "explanation": "The pharmacist states it's only good for 14 days after dispensing.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q18",
+      "passageId": "oet-listening-001-p3a",
+      "part": 3,
+      "topic": "Compliance Rates",
+      "questionType": "multiple_choice_single",
+      "prompt": "What are typical hand hygiene compliance rates in healthcare settings?",
+      "options": [
+        "Between 20 and 40 percent",
+        "Between 60 and 80 percent",
+        "Between 40 and 60 percent",
+        "Between 80 and 100 percent"
+      ],
+      "correctAnswer": "Between 40 and 60 percent",
+      "explanation": "The speaker states compliance rates remain between 40 and 60 percent.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-001-q19",
+      "passageId": "oet-listening-001-p3a",
+      "part": 3,
+      "topic": "Successful Interventions",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which of the following is NOT mentioned as part of effective hand hygiene programmes?",
+      "options": [
+        "Accessible alcohol-based sanitizers",
+        "Mandatory training",
+        "Punishment of non-compliant staff",
+        "Visual reminders and posters"
+      ],
+      "correctAnswer": "Punishment of non-compliant staff",
+      "explanation": "The speaker mentions sanitizers, training, visual reminders, and feedback, but not punishment.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-001-q20",
+      "passageId": "oet-listening-001-p3a",
+      "part": 3,
+      "topic": "Compliance Improvement",
+      "questionType": "multiple_choice_single",
+      "prompt": "To what level did successful programmes increase compliance?",
+      "options": [
+        "Over 70 percent",
+        "Over 85 percent",
+        "Over 75 percent",
+        "Over 95 percent"
+      ],
+      "correctAnswer": "Over 85 percent",
+      "explanation": "The speaker states compliance increased from 50 percent to over 85 percent within one year.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q21",
+      "passageId": "oet-listening-001-p1a",
+      "part": 1,
+      "topic": "Dietary Recommendations",
+      "questionType": "multiple_choice_single",
+      "prompt": "What dietary advice did the doctor give Mrs Chen?",
+      "options": [
+        "Reduce salt and eat fresh produce",
+        "Increase salt intake",
+        "Eat more processed foods",
+        "No dietary changes needed"
+      ],
+      "correctAnswer": "Reduce salt and eat fresh produce",
+      "explanation": "The doctor recommends reducing salt and eating plenty of fresh produce.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q22",
+      "passageId": "oet-listening-001-p1a",
+      "part": 1,
+      "topic": "Stress Factors",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is causing Mrs Chen's sleep problems?",
+      "options": [
+        "Stress from wedding and kitchen renovation",
+        "Her work schedule",
+        "Only medication side effects",
+        "Medical condition only"
+      ],
+      "correctAnswer": "Stress from wedding and kitchen renovation",
+      "explanation": "Mrs Chen attributes her sleep problems to stress from these two events.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q23",
+      "passageId": "oet-listening-001-p1b",
+      "part": 1,
+      "topic": "Otitis Media Cause",
+      "questionType": "multiple_choice_single",
+      "prompt": "What causes acute otitis media according to the doctor?",
+      "options": [
+        "Viral infections leading to fluid accumulation and bacterial infection",
+        "Trauma to the ear",
+        "Allergy to food",
+        "Exposure to loud noise"
+      ],
+      "correctAnswer": "Viral infections leading to fluid accumulation and bacterial infection",
+      "explanation": "The doctor explains viral infections lead to fluid accumulation, which bacteria then infect.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-001-q24",
+      "passageId": "oet-listening-001-p1b",
+      "part": 1,
+      "topic": "Symptom Improvement Timeline",
+      "questionType": "multiple_choice_single",
+      "prompt": "When should Tommy's pain improve?",
+      "options": [
+        "Within 24 to 48 hours",
+        "Immediately",
+        "After 1 week",
+        "After 2 weeks"
+      ],
+      "correctAnswer": "Within 24 to 48 hours",
+      "explanation": "The doctor states pain should improve within 24 to 48 hours.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q25",
+      "passageId": "oet-listening-001-p1c",
+      "part": 1,
+      "topic": "Blood Pressure Medication",
+      "questionType": "multiple_choice_single",
+      "prompt": "For what condition is lisinopril prescribed to Mr Patel?",
+      "options": [
+        "High blood pressure",
+        "High cholesterol",
+        "Diabetes",
+        "Heart arrhythmia"
+      ],
+      "correctAnswer": "High blood pressure",
+      "explanation": "The pharmacist states lisinopril is for blood pressure control.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q26",
+      "passageId": "oet-listening-001-p1c",
+      "part": 1,
+      "topic": "Metformin Extended Release",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why might switching to extended-release metformin help Mr Patel?",
+      "options": [
+        "To reduce stomach upset",
+        "To reduce dose frequency",
+        "To improve diabetes control",
+        "To reduce drug cost"
+      ],
+      "correctAnswer": "To reduce stomach upset",
+      "explanation": "The pharmacist offers this option because Mr Patel is experiencing stomach discomfort.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q27",
+      "passageId": "oet-listening-001-p2a",
+      "part": 2,
+      "topic": "Post-op Drainage",
+      "questionType": "multiple_choice_single",
+      "prompt": "What positive sign was noted about Mrs Williams' surgical drain?",
+      "options": [
+        "It was producing less fluid",
+        "It was removed",
+        "It became infected",
+        "It blocked completely"
+      ],
+      "correctAnswer": "It was producing less fluid",
+      "explanation": "The charge nurse notes the drain is producing less fluid, which is a good sign.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q28",
+      "passageId": "oet-listening-001-p2a",
+      "part": 2,
+      "topic": "Pneumonia Improvement",
+      "questionType": "multiple_choice_single",
+      "prompt": "How do we know Mr Kumar's pneumonia is improving?",
+      "options": [
+        "His oxygen saturation improved and antibiotics are working well",
+        "He is eating well",
+        "He no longer needs monitoring",
+        "He requested discharge"
+      ],
+      "correctAnswer": "His oxygen saturation improved and antibiotics are working well",
+      "explanation": "The charge nurse reports improved saturation and effective antibiotics as signs of improvement.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q29",
+      "passageId": "oet-listening-001-p2b",
+      "part": 2,
+      "topic": "Medication Shake Instructions",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why is it important to shake the cephalexin suspension?",
+      "options": [
+        "To ensure proper mixing before each dose",
+        "To warm it",
+        "To improve taste",
+        "To check for contamination"
+      ],
+      "correctAnswer": "To ensure proper mixing before each dose",
+      "explanation": "The pharmacist states the suspension should be shaken well before each dose for proper mixing.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-001-q30",
+      "passageId": "oet-listening-001-p3a",
+      "part": 3,
+      "topic": "Antibiotic Resistance Connection",
+      "questionType": "multiple_choice_single",
+      "prompt": "How is antibiotic resistance related to hand hygiene?",
+      "options": [
+        "Not related at all",
+        "Linked through reduced infection incidence with better hygiene",
+        "Hand hygiene causes resistance",
+        "Resistance only occurs with clean hands"
+      ],
+      "correctAnswer": "Linked through reduced infection incidence with better hygiene",
+      "explanation": "The speaker notes the programme addresses both hand hygiene and antibiotic resistance together.",
+      "difficulty": "medium"
+    }
+  ],
+  "listeningScripts": [
+    {
+      "id": "oet-listening-001-part1",
+      "part": 1,
+      "title": "GP Consultation - Hypertension",
+      "text": "Doctor: Good morning, Mrs Chen. I see from your notes that your last blood pressure reading was quite elevated. How have you been feeling? Patient: Well, I've noticed some headaches in the mornings, and I feel quite tired most of the time. My husband says I've been irritable too. Doctor: I see. Have you been stressed recently? Patient: Yes, my daughter's wedding is coming up in three weeks, and we're in the middle of renovating the kitchen. I'm sleeping badly. Doctor: Right. Let's check your blood pressure now. I'll also want to do some blood tests to rule out any other causes. The reading today is 158 over 98, which is higher than last time. I'm recommending we start a low-dose antihypertensive medication. I'd also like you to reduce salt in your diet, exercise regularly—at least 30 minutes daily—and try stress management techniques. Come back in two weeks so we can recheck. Patient: What about side effects? Doctor: Most people tolerate these well, but some report fatigue or dizziness initially. If you experience these, call us straightaway. Also, continue monitoring at home if you have a device. Patient: OK, I'll do that. Doctor: Before you leave, the nurse will give you information on blood pressure management. We'll also arrange those blood tests.\n\nDoctor: Hello Tommy, let me have a look at your ears. Can you sit still for me? I'm going to use this little torch. Patient's mother: He's been pulling at his ears constantly, and he's had a fever for two days. The fever came down a bit with paracetamol. Doctor: I can see there's redness in the left ear canal. Tommy, does it hurt when I press here? Patient: Yes, it hurts. Doctor: He has acute otitis media. The eardrum looks inflamed. Has he had ear infections before? Mother: No, never. This is the first time. Doctor: OK. I'll prescribe amoxicillin for seven days. Two tablets three times daily, taken with or without food. Watch for any rash—if he develops one, stop immediately and contact us. The pain should improve within 24 to 48 hours. Use paracetamol for pain relief if needed. Avoid water in the ear while bathing. Bring him back if symptoms worsen or don't improve after five days. Any questions? Mother: How do these ear infections happen? Doctor: Usually viral infections lead to fluid accumulation behind the eardrum. In Tommy's case, bacteria have infected the fluid. It's common in young children.\n\nPharmacist: Good afternoon, Mr Patel. I've reviewed your medications with your GP. You're on quite a few tablets. Let me run through them. You're taking lisinopril 10 milligrams daily for blood pressure, correct? Patient: Yes, that's right. Pharmacist: And aspirin 75 milligrams daily for heart protection. Simvastatin 20 milligrams at night for cholesterol. And metformin 500 milligrams twice daily for your diabetes. Patient: That sounds right. Is that too many? Pharmacist: No, this is a reasonable combination for someone with your conditions. However, I want to check: are you taking them at the same time? Patient: Yes, all in the morning with breakfast. Pharmacist: Actually, it's better to take the simvastatin in the evening with food. And the metformin—if you're having any stomach upset, we could try the extended-release version. Patient: I have been getting a bit of stomach discomfort. Pharmacist: Let me speak with your GP about switching to extended-release metformin. In the meantime, make sure you take simvastatin at night. Also, I need to ask: are you taking any other supplements or over-the-counter medicines? Patient: Just some vitamin D. Pharmacist: That's fine with these medications. Come back in four weeks so we can check how you're getting on."
+    },
+    {
+      "id": "oet-listening-001-part2",
+      "part": 2,
+      "title": "Handover - Ward Round Briefing",
+      "text": "Charge Nurse: Right team, let's do the morning handover. Starting with Bay 3—that's Mrs Williams, 76, post-op day two after hip replacement. Vitals are stable, pain controlled on current analgesia. The physio will see her this afternoon for mobilisation. Drain is producing less fluid, which is good. We need to monitor the surgical wound for any signs of infection. Next is Bay 5, Mr Kumar, 82, admitted with pneumonia. His oxygen saturation improved overnight; he's now on 3 litres via nasal cannula instead of 5. Antibiotics are working well. We're planning to review his respiratory status this afternoon and might reduce oxygen further if he remains stable. Bay 7 is new—admitted last night, Miss Anderson, 34, with severe migraine and photophobia. She's on strong analgesia and antiemetic. She needs a quiet environment. Keep lighting low and reduce noise. If headache persists beyond today, neurology will assess tomorrow. Any questions before we start the round?\n\nNurse: Hi, this is Sarah from the community nursing team. I'm calling about a patient, Mr Roberts, who was just discharged from hospital yesterday. He has a prescription for cephalexin 500 milligrams four times daily for a leg wound infection. He asked me if he should refrigerate the suspension, and I wasn't certain. Can you advise? Pharmacist: Hi Sarah. Which suspension? Is it the oral liquid? Nurse: Yes, that's the one. Pharmacist: OK, cephalexin suspension should be stored at room temperature, not refrigerated. But it's important that after dispensing, it's only good for 14 days. The patient should shake it well before each dose. They're on it for two weeks? Nurse: That's correct—two weeks. So room temperature, shake before use, and 14-day limit. Pharmacist: Exactly. Also, if he experiences diarrhoea or any allergic reaction, he should contact his GP immediately. And remind him to complete the full course even if the wound looks better after a few days. Nurse: Will do. Thanks for confirming. Pharmacist: No problem, Sarah. Anything else? Nurse: No, that's all I needed. Cheers. Pharmacist: Bye."
+    },
+    {
+      "id": "oet-listening-001-part3",
+      "part": 3,
+      "title": "Presentation - Hand Hygiene in Healthcare",
+      "text": "Speaker: Today we're discussing hand hygiene, which is the single most important practice to prevent healthcare-associated infections. Despite decades of research and campaigns, compliance rates remain disappointingly low—often between 40 and 60 percent—especially among physicians. Why is this? First, healthcare environments are busy and chaotic. Secondly, many staff perceive hand hygiene protocols as bureaucratic and time-consuming. Thirdly, there's a lack of awareness about the serious consequences of lapses. The World Health Organization estimates that healthcare-associated infections affect hundreds of millions of people globally each year. In high-income countries alone, they account for substantial morbidity and mortality. So what works? Evidence shows that multifaceted programmes are most effective. These include: provision of accessible alcohol-based hand sanitizers at each patient's bed; mandatory training for all staff; visual reminders such as posters; feedback on compliance rates to departments; and leadership engagement. Institutions that implemented these strategies saw compliance increase from 50 percent to over 85 percent within one year. The most successful programmes also involved reducing unnecessary antibiotic use, as antibiotic resistance is closely linked to infection control. In conclusion, hand hygiene is not just an individual responsibility—it's a system-wide commitment that requires everyone, from nurses to administrators, to prioritise patient safety."
+    }
+  ]
+}

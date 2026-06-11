@@ -1,6 +1,6 @@
 (function() {
   const { useState, useEffect } = React;
-  const EXAM_ORDER = ["ielts", "toefl", "pte", "celpip", "duolingo", "gre", "gmat"];
+  const EXAM_ORDER = ["ielts", "toefl", "pte", "celpip", "duolingo", "gre", "gmat", "oet"];
   const EXAM_BRAND = {
     ielts: { color: "#dc2626", tagline: "Study, work & migration in English-speaking countries", icon: "\u{1F1EC}\u{1F1E7}" },
     toefl: { color: "#2563eb", tagline: "Academic English for U.S. universities", icon: "\u{1F393}" },
@@ -8,7 +8,8 @@
     celpip: { color: "#0891b2", tagline: "Canadian English for PR & citizenship", icon: "\u{1F341}" },
     duolingo: { color: "#16a34a", tagline: "Adaptive online English test", icon: "\u{1F989}" },
     gre: { color: "#b45309", tagline: "Graduate school admissions worldwide", icon: "\u{1F4DA}" },
-    gmat: { color: "#c2410c", tagline: "MBA & business school admissions", icon: "\u{1F4CA}" }
+    gmat: { color: "#c2410c", tagline: "MBA & business school admissions", icon: "\u{1F4CA}" },
+    oet: { color: "#00A86B", tagline: "English for healthcare professionals", icon: "\u{1FA7A}" }
   };
   const SECTION_PRESENTATION = {
     listening: { name: "Listening", icon: "\u{1F3A7}" },

@@ -1,0 +1,577 @@
+{
+  "id": "oet-reading-001",
+  "exam": "oet",
+  "section": "reading",
+  "type": "section",
+  "title": "OET Reading Practice Test 1",
+  "durationSeconds": 3600,
+  "questionCount": 30,
+  "instructions": "OET Reading has three parts. Part A: rapid reading across short healthcare texts. Part B: short workplace texts. Part C: two longer healthcare texts. Choose the best answer for each question.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Part A — Expeditious Reading",
+      "questions": 6,
+      "time": "15 min",
+      "description": "Four short texts on a single healthcare topic; locate specific information quickly."
+    },
+    {
+      "part": 2,
+      "title": "Part B — Workplace Texts",
+      "questions": 8,
+      "time": "20 min",
+      "description": "Short workplace documents (policies, manuals, guidelines, emails); identify the main point or purpose."
+    },
+    {
+      "part": 3,
+      "title": "Part C — Presentation Texts",
+      "questions": 16,
+      "time": "25 min",
+      "description": "Two longer texts; detailed comprehension of opinion, attitude and meaning."
+    }
+  ],
+  "passages": [
+    {
+      "id": "oet-reading-001-p1",
+      "part": 1,
+      "title": "Wound Care Management",
+      "text": "Proper wound assessment is essential for all healthcare professionals working in acute and community settings. A basic assessment should include wound size, depth, colour, odour, exudate type and drainage. Clean wounds with normal saline and apply appropriate dressings based on wound type. Infected wounds require increased dressing frequency and possible antibiotic therapy. Healthcare workers must report signs of infection such as increased pain, redness, or purulent discharge to the supervising physician immediately. Sterile technique should always be maintained during dressing changes to prevent secondary infection. Documentation of wound progress should occur at every dressing change."
+    },
+    {
+      "id": "oet-reading-001-p2a",
+      "part": 2,
+      "title": "Hospital Infection Control Policy",
+      "text": "Standard Precautions must be applied to all patient care. Hand hygiene is the most effective measure to prevent cross-infection. Healthcare staff must wash hands with soap and water or use alcohol-based hand sanitiser before and after patient contact, and after touching bodily fluids. Personal protective equipment (PPE) including gloves, masks, and gowns should be worn when exposure to blood or bodily fluids is anticipated. Sharps must be disposed of in designated sharps containers immediately after use. All staff must complete annual infection control training and competency checks."
+    },
+    {
+      "id": "oet-reading-001-p2b",
+      "part": 2,
+      "title": "Medication Administration Guidelines",
+      "text": "The five rights of medication administration must be followed: right patient, right drug, right dose, right route, and right time. Always verify patient identity using two forms of identification. Check medication labels three times: when removing from storage, before preparation, and at the bedside. If a dose is missed, do not double the next dose. Document all medications given with patient name, drug name, dose, route, time, and signature. Report any adverse reactions to the prescribing physician within two hours of administration."
+    },
+    {
+      "id": "oet-reading-001-p3a",
+      "part": 3,
+      "title": "Falls Prevention in Elderly Patients",
+      "text": "Falls are a leading cause of hospitalisation in older adults, with serious consequences including hip fractures, head injuries, and loss of independence. Healthcare facilities must implement comprehensive falls prevention programmes. Risk assessment should be performed at admission and regularly thereafter, identifying patients at high risk such as those on sedating medications, with history of falls, or with cognitive impairment. Environmental modifications are crucial: remove trip hazards, ensure adequate lighting, install grab bars in bathrooms, and maintain clear pathways. Staff should encourage use of mobility aids and provide supervision during transfers. Educating patients and families about fall risks and prevention strategies improves outcomes. Research shows that multifactorial interventions—combining assessment, exercise, medication review, and environmental changes—reduce falls by up to 30%. Prompt reporting of falls incidents helps identify system weaknesses and implement targeted improvements."
+    },
+    {
+      "id": "oet-reading-001-p3b",
+      "part": 3,
+      "title": "Chronic Obstructive Pulmonary Disease Management",
+      "text": "COPD is a progressive disease characterised by persistent airflow limitation. Symptoms include chronic cough, dyspnoea, and reduced exercise tolerance. Early diagnosis is vital as smoking cessation can slow disease progression significantly. Spirometry is the gold standard diagnostic test, measuring forced expiratory volume in one second (FEV1). Treatment is based on disease severity and symptom burden. Inhaled bronchodilators are first-line therapy, with options including short-acting beta-2 agonists for acute relief and long-acting agents for maintenance. Inhaled corticosteroids are added for moderate to severe disease with frequent exacerbations. Pulmonary rehabilitation programmes combining exercise, education, and psychosocial support improve quality of life and reduce hospital admissions. Patients should receive annual influenza vaccination and pneumococcal vaccination to prevent respiratory infections. Exacerbations, often triggered by infections or air pollution, require intensified treatment and may necessitate hospitalisation. Regular monitoring of lung function and symptom control guides therapy adjustments."
+    }
+  ],
+  "questions": [
+    {
+      "id": "oet-reading-001-q01",
+      "passageId": "oet-reading-001-p1",
+      "part": 1,
+      "topic": "Wound Assessment",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, what should be included in a basic wound assessment?",
+      "options": [
+        "Only wound size and depth measurement",
+        "Wound size, depth, colour, odour, exudate type and drainage",
+        "Patient's pain level and antibiotic history",
+        "Dressing type and frequency of changes"
+      ],
+      "correctAnswer": "Wound size, depth, colour, odour, exudate type and drainage",
+      "explanation": "The passage explicitly states these six elements are essential in a basic assessment.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q02",
+      "passageId": "oet-reading-001-p1",
+      "part": 1,
+      "topic": "Wound Care",
+      "questionType": "multiple_choice_single",
+      "prompt": "What should healthcare workers do if they notice signs of infection in a wound?",
+      "options": [
+        "Increase dressing frequency and monitor for improvement",
+        "Change the dressing type without consulting the physician",
+        "Apply antibiotic cream and document findings",
+        "Report signs such as increased pain, redness, or purulent discharge to the supervising physician immediately"
+      ],
+      "correctAnswer": "Report signs such as increased pain, redness, or purulent discharge to the supervising physician immediately",
+      "explanation": "The passage states that these signs must be reported immediately to the supervising physician.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q03",
+      "passageId": "oet-reading-001-p1",
+      "part": 1,
+      "topic": "Wound Documentation",
+      "questionType": "multiple_choice_single",
+      "prompt": "When should wound progress be documented?",
+      "options": [
+        "Once per week",
+        "At every dressing change",
+        "Only when infection is suspected",
+        "At the end of each shift"
+      ],
+      "correctAnswer": "At every dressing change",
+      "explanation": "The passage explicitly states documentation should occur at every dressing change.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q04",
+      "passageId": "oet-reading-001-p1",
+      "part": 1,
+      "topic": "Sterile Technique",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why is sterile technique important during wound dressing changes?",
+      "options": [
+        "To reduce pain for the patient",
+        "To make the procedure faster",
+        "To reduce the cost of supplies",
+        "To prevent secondary infection"
+      ],
+      "correctAnswer": "To prevent secondary infection",
+      "explanation": "The passage states that sterile technique must be maintained to prevent secondary infection.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q05",
+      "passageId": "oet-reading-001-p1",
+      "part": 1,
+      "topic": "Wound Cleaning",
+      "questionType": "multiple_choice_single",
+      "prompt": "What solution is recommended for cleaning wounds?",
+      "options": [
+        "Hydrogen peroxide",
+        "Normal saline",
+        "Povidone-iodine",
+        "Sterile water"
+      ],
+      "correctAnswer": "Normal saline",
+      "explanation": "The passage specifies that wounds should be cleaned with normal saline.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q06",
+      "passageId": "oet-reading-001-p2a",
+      "part": 2,
+      "topic": "Hand Hygiene",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the Infection Control Policy, when should hand hygiene be performed?",
+      "options": [
+        "Only before patient contact",
+        "Only when visibly soiled",
+        "At the beginning and end of each shift",
+        "Before and after patient contact, and after touching bodily fluids"
+      ],
+      "correctAnswer": "Before and after patient contact, and after touching bodily fluids",
+      "explanation": "The policy explicitly requires hand hygiene at these three critical times.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q07",
+      "passageId": "oet-reading-001-p2a",
+      "part": 2,
+      "topic": "Standard Precautions",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the most effective measure to prevent cross-infection according to the policy?",
+      "options": [
+        "Using PPE at all times",
+        "Hand hygiene",
+        "Proper sharps disposal",
+        "Regular training"
+      ],
+      "correctAnswer": "Hand hygiene",
+      "explanation": "The policy states that hand hygiene is the most effective measure to prevent cross-infection.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q08",
+      "passageId": "oet-reading-001-p2a",
+      "part": 2,
+      "topic": "Sharps Safety",
+      "questionType": "multiple_choice_single",
+      "prompt": "How should sharps be disposed of?",
+      "options": [
+        "In regular waste bins",
+        "In separate plastic bags",
+        "In bleach solution overnight",
+        "In designated sharps containers immediately after use"
+      ],
+      "correctAnswer": "In designated sharps containers immediately after use",
+      "explanation": "The policy explicitly requires sharps to be disposed of in designated containers immediately.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q09",
+      "passageId": "oet-reading-001-p2b",
+      "part": 2,
+      "topic": "Five Rights of Medication",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is NOT one of the five rights of medication administration?",
+      "options": [
+        "Right dose",
+        "Right price",
+        "Right patient",
+        "Right route"
+      ],
+      "correctAnswer": "Right price",
+      "explanation": "The five rights are: patient, drug, dose, route, and time. Price is not one of them.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q10",
+      "passageId": "oet-reading-001-p2b",
+      "part": 2,
+      "topic": "Missed Medications",
+      "questionType": "multiple_choice_single",
+      "prompt": "What should be done if a medication dose is missed?",
+      "options": [
+        "Do not double the next dose",
+        "Give it at the next scheduled time",
+        "Double the next dose to compensate",
+        "Skip the dose entirely"
+      ],
+      "correctAnswer": "Do not double the next dose",
+      "explanation": "The guidelines explicitly state not to double the next dose if one is missed.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q11",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Falls Risk",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, which groups of patients are identified as high-risk for falls?",
+      "options": [
+        "Only patients over 75 years old",
+        "Patients on sedating medications, with history of falls, or with cognitive impairment",
+        "All hospitalised patients without exception",
+        "Only patients with hip fractures"
+      ],
+      "correctAnswer": "Patients on sedating medications, with history of falls, or with cognitive impairment",
+      "explanation": "The passage explicitly lists these three categories as high-risk patients.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q12",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Environmental Modifications",
+      "questionType": "multiple_choice_single",
+      "prompt": "What environmental modifications are recommended to prevent falls?",
+      "options": [
+        "Restricting patient movement",
+        "Removing trip hazards, ensuring adequate lighting, installing grab bars, and maintaining clear pathways",
+        "Keeping patients in bed",
+        "Removing all mobility aids"
+      ],
+      "correctAnswer": "Removing trip hazards, ensuring adequate lighting, installing grab bars, and maintaining clear pathways",
+      "explanation": "The passage lists these specific environmental modifications as crucial for falls prevention.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q13",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Falls Interventions",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, by how much can multifactorial interventions reduce falls?",
+      "options": [
+        "Up to 10%",
+        "Up to 30%",
+        "Up to 20%",
+        "Up to 50%"
+      ],
+      "correctAnswer": "Up to 30%",
+      "explanation": "The passage states that multifactorial interventions reduce falls by up to 30%.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q14",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Falls Consequences",
+      "questionType": "multiple_choice_single",
+      "prompt": "What are the serious consequences of falls in older adults mentioned in the passage?",
+      "options": [
+        "Only temporary bruising",
+        "Hip fractures, head injuries, and loss of independence",
+        "Primarily psychological distress",
+        "Only prolonged hospital stays"
+      ],
+      "correctAnswer": "Hip fractures, head injuries, and loss of independence",
+      "explanation": "The passage explicitly lists these three serious consequences of falls.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q15",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Diagnosis",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the gold standard diagnostic test for COPD?",
+      "options": [
+        "Chest X-ray",
+        "Spirometry",
+        "CT scan",
+        "Pulse oximetry"
+      ],
+      "correctAnswer": "Spirometry",
+      "explanation": "The passage states that spirometry is the gold standard diagnostic test for COPD.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q16",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD First-Line Treatment",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the first-line therapy for COPD according to the passage?",
+      "options": [
+        "Oral steroids",
+        "Inhaled bronchodilators",
+        "Inhaled corticosteroids",
+        "Oxygen therapy"
+      ],
+      "correctAnswer": "Inhaled bronchodilators",
+      "explanation": "The passage explicitly states that inhaled bronchodilators are first-line therapy.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q17",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Symptoms",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which of the following is NOT mentioned as a symptom of COPD?",
+      "options": [
+        "Chronic cough",
+        "High fever",
+        "Reduced exercise tolerance",
+        "Dyspnoea"
+      ],
+      "correctAnswer": "High fever",
+      "explanation": "The passage lists chronic cough, dyspnoea, and reduced exercise tolerance, but not high fever.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q18",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Prevention",
+      "questionType": "multiple_choice_single",
+      "prompt": "What can significantly slow COPD progression?",
+      "options": [
+        "Regular exercise alone",
+        "Smoking cessation",
+        "Dietary changes",
+        "Stress management"
+      ],
+      "correctAnswer": "Smoking cessation",
+      "explanation": "The passage explicitly states that smoking cessation can slow disease progression significantly.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q19",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Rehabilitation",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does pulmonary rehabilitation combine according to the passage?",
+      "options": [
+        "Medication and oxygen therapy only",
+        "Exercise, education, and psychosocial support",
+        "Surgery and medication",
+        "Rest and dietary supplements"
+      ],
+      "correctAnswer": "Exercise, education, and psychosocial support",
+      "explanation": "The passage explicitly lists these three components of pulmonary rehabilitation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q20",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Exacerbations",
+      "questionType": "multiple_choice_single",
+      "prompt": "What are common triggers for COPD exacerbations mentioned in the passage?",
+      "options": [
+        "Only exercise",
+        "Only weather changes",
+        "Infections and air pollution",
+        "Primarily dietary factors"
+      ],
+      "correctAnswer": "Infections and air pollution",
+      "explanation": "The passage states that exacerbations are often triggered by infections or air pollution.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q21",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Multifactorial Interventions Components",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which of the following is NOT mentioned as part of multifactorial falls interventions?",
+      "options": [
+        "Assessment and exercise",
+        "Medication review",
+        "Environmental changes",
+        "Strict bed rest"
+      ],
+      "correctAnswer": "Strict bed rest",
+      "explanation": "The passage lists assessment, exercise, medication review, and environmental changes but not bed rest as an intervention.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q22",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Mobility Aids Role",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does the passage suggest about mobility aids in falls prevention?",
+      "options": [
+        "They should be avoided to encourage independence",
+        "They are only for long-term patients",
+        "They are ineffective for elderly patients",
+        "Staff should encourage their use"
+      ],
+      "correctAnswer": "Staff should encourage their use",
+      "explanation": "The passage states staff should encourage use of mobility aids as part of prevention strategy.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q23",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Medication Escalation",
+      "questionType": "multiple_choice_single",
+      "prompt": "When are inhaled corticosteroids added to COPD therapy?",
+      "options": [
+        "For all patients from diagnosis",
+        "For mild disease only",
+        "Only as a last resort before oxygen therapy",
+        "For moderate to severe disease with frequent exacerbations"
+      ],
+      "correctAnswer": "For moderate to severe disease with frequent exacerbations",
+      "explanation": "The passage states corticosteroids are added for moderate to severe disease with frequent exacerbations.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q24",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "FEV1 Measurement",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does spirometry measure in COPD diagnosis?",
+      "options": [
+        "Only oxygen saturation",
+        "Patient symptoms only",
+        "Only exercise tolerance",
+        "Forced expiratory volume in one second (FEV1)"
+      ],
+      "correctAnswer": "Forced expiratory volume in one second (FEV1)",
+      "explanation": "The passage states spirometry measures FEV1 as the gold standard test.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-001-q25",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "Pulmonary Rehabilitation Benefits",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, what are the benefits of pulmonary rehabilitation?",
+      "options": [
+        "Only exercise improvement",
+        "Temporary symptom relief only",
+        "Only pain management",
+        "Improved quality of life and reduced hospital admissions"
+      ],
+      "correctAnswer": "Improved quality of life and reduced hospital admissions",
+      "explanation": "The passage states rehabilitation improves quality of life and reduces hospital admissions.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q26",
+      "passageId": "oet-reading-001-p1",
+      "part": 1,
+      "topic": "Infection Signs Reporting",
+      "questionType": "multiple_choice_single",
+      "prompt": "Who should signs of wound infection be reported to?",
+      "options": [
+        "The nurse manager",
+        "The pharmacist",
+        "The patient's family",
+        "The supervising physician"
+      ],
+      "correctAnswer": "The supervising physician",
+      "explanation": "The passage explicitly states signs must be reported to the supervising physician immediately.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q27",
+      "passageId": "oet-reading-001-p2a",
+      "part": 2,
+      "topic": "PPE Circumstances",
+      "questionType": "multiple_choice_single",
+      "prompt": "When should PPE be worn according to the Infection Control Policy?",
+      "options": [
+        "Always, with every patient",
+        "Only in isolation rooms",
+        "During shift handover only",
+        "When exposure to blood or bodily fluids is anticipated"
+      ],
+      "correctAnswer": "When exposure to blood or bodily fluids is anticipated",
+      "explanation": "The policy states PPE should be worn when exposure is anticipated.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q28",
+      "passageId": "oet-reading-001-p2b",
+      "part": 2,
+      "topic": "Medication Documentation",
+      "questionType": "multiple_choice_single",
+      "prompt": "What information must be documented when medications are given?",
+      "options": [
+        "Only patient name and time",
+        "Time and patient's condition",
+        "Only the drug name and dose",
+        "Patient name, drug name, dose, route, time, and signature"
+      ],
+      "correctAnswer": "Patient name, drug name, dose, route, time, and signature",
+      "explanation": "The passage lists all these elements as required documentation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q29",
+      "passageId": "oet-reading-001-p2b",
+      "part": 2,
+      "topic": "Adverse Reaction Reporting",
+      "questionType": "multiple_choice_single",
+      "prompt": "Within what timeframe should adverse reactions be reported?",
+      "options": [
+        "Within 24 hours",
+        "Within 6 hours",
+        "At the end of shift",
+        "Within two hours"
+      ],
+      "correctAnswer": "Within two hours",
+      "explanation": "The guidelines state adverse reactions must be reported within two hours.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-001-q30",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Falls Risk Assessment Timing",
+      "questionType": "multiple_choice_single",
+      "prompt": "When should falls risk assessment occur according to the passage?",
+      "options": [
+        "Only at admission",
+        "Weekly only",
+        "At admission and regularly thereafter",
+        "Only for symptomatic patients"
+      ],
+      "correctAnswer": "At admission and regularly thereafter",
+      "explanation": "The passage states risk assessment should be performed at admission and regularly thereafter.",
+      "difficulty": "easy"
+    }
+  ]
+}

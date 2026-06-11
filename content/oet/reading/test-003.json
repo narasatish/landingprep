@@ -1,0 +1,577 @@
+{
+  "id": "oet-reading-003",
+  "exam": "oet",
+  "section": "reading",
+  "type": "section",
+  "title": "OET Reading Practice Test 3",
+  "durationSeconds": 3600,
+  "questionCount": 30,
+  "instructions": "OET Reading has three parts. Part A: rapid reading across short healthcare texts. Part B: short workplace texts. Part C: two longer healthcare texts. Choose the best answer for each question.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Part A — Expeditious Reading",
+      "questions": 7,
+      "time": "15 min",
+      "description": "Four short texts on a single healthcare topic; locate specific information quickly."
+    },
+    {
+      "part": 2,
+      "title": "Part B — Workplace Texts",
+      "questions": 9,
+      "time": "20 min",
+      "description": "Short workplace documents (policies, manuals, guidelines, emails); identify the main point or purpose."
+    },
+    {
+      "part": 3,
+      "title": "Part C — Presentation Texts",
+      "questions": 14,
+      "time": "25 min",
+      "description": "Two longer texts; detailed comprehension of opinion, attitude and meaning."
+    }
+  ],
+  "passages": [
+    {
+      "id": "oet-reading-003-p1",
+      "part": 1,
+      "title": "Dehydration in Elderly Patients",
+      "text": "Dehydration is a common but often overlooked condition in older adults, contributing to confusion, falls, and hospital admissions. Elderly patients have reduced thirst sensation and may forget to drink, making them vulnerable to fluid loss. Common causes include diuretic medications, diarrhoea, vomiting, and reduced intake during acute illness. Signs of dehydration include dry mucous membranes, poor skin turgor, decreased urine output, and elevated serum sodium levels. Confusion and delirium may be the only presenting symptom in frail elderly patients. Prevention through regular fluid intake, monitoring urine colour, and reducing diuretic use where possible is essential. Caregivers should offer fluids regularly with meals and snacks. Mild dehydration often responds to oral rehydration solutions, whilst moderate to severe cases require intravenous fluids and hospital monitoring."
+    },
+    {
+      "id": "oet-reading-003-p2a",
+      "part": 2,
+      "title": "Infection Prevention in Aged Care Facilities",
+      "text": "Aged care facilities must implement strict infection control measures to protect vulnerable residents. All staff, residents, and visitors presenting with symptoms of infection should be screened and isolated if necessary. Outbreak protocols must be activated immediately if three or more residents develop symptoms within 72 hours. Cleaning staff must use appropriate disinfectants on all high-touch surfaces such as doorknobs, handrails, and bed rails daily. Residents should have access to hand sanitiser and be encouraged to perform hand hygiene. Annual influenza vaccinations are mandatory for all staff and recommended for all residents. Suspected outbreaks must be reported to the local health authority within 24 hours."
+    },
+    {
+      "id": "oet-reading-003-p2b",
+      "part": 2,
+      "title": "Catheterisation Protocol",
+      "text": "Urinary catheterisation should only be performed when absolutely necessary due to risk of infection. Indications include acute urinary retention, monitoring of urine output in critically ill patients, and perioperative care. Before catheterisation, confirm there are no contraindications and obtain patient consent. Use aseptic technique throughout the procedure. The smallest appropriate catheter size should be selected, typically 12-14 French gauge for most adults. Document catheter size, type, insertion time, and urine characteristics. Catheters should be removed as soon as clinically appropriate, preferably within 48 hours. Daily catheter care includes perineal cleansing and inspection for signs of infection such as fever, dysuria, or turbid urine."
+    },
+    {
+      "id": "oet-reading-003-p3a",
+      "part": 3,
+      "title": "Medication Adherence in Chronic Disease",
+      "text": "Poor medication adherence is a major contributor to treatment failure, hospital readmissions, and increased healthcare costs. Studies indicate that only 50% of patients take their medications as prescribed. Reasons for non-adherence are multifactorial and include side effects, cost, complexity of regimens, forgetfulness, and lack of understanding about the disease. Healthcare professionals must explore barriers during consultations rather than assuming non-compliance is deliberate. Simplifying regimens through combination therapies or once-daily formulations improves adherence. Providing written information, using pill organisers, and setting medication reminders through mobile phone applications have shown effectiveness. Regular follow-up appointments to monitor therapeutic response and adjust medications maintain engagement. Shared decision-making, where patients participate in treatment choices, significantly improves adherence rates. Healthcare systems that address cost barriers, such as subsidising essential medications, show better outcomes. The most effective approach combines patient education, simplified regimens, reminder systems, and ongoing support."
+    },
+    {
+      "id": "oet-reading-003-p3b",
+      "part": 3,
+      "title": "Respiratory Hygiene and Cough Etiquette",
+      "text": "Respiratory infections spread primarily through droplets expelled when infected individuals cough or sneeze. Appropriate respiratory hygiene practices significantly reduce transmission of contagious diseases. Cough etiquette involves covering the mouth and nose with a tissue when coughing or sneezing, followed by immediate hand hygiene. If tissues are unavailable, coughing into the elbow is preferable to bare hands. Individuals with respiratory symptoms should maintain distance from others, ideally at least one metre. Healthcare workers and public health officials have a responsibility to model good hygiene practices and educate the community. Surgical masks reduce transmission when worn correctly by symptomatic individuals, blocking large respiratory droplets. N95 respirators provide better protection when worn by healthcare workers in close contact with confirmed or suspected cases. Masks are most effective as part of a comprehensive approach including isolation, ventilation improvements, and rapid diagnosis. During epidemic periods, mask use in public settings reduces disease transmission by up to 50%. Public health messaging should emphasise that respiratory hygiene protects vulnerable populations including infants, elderly, and immunocompromised individuals."
+    }
+  ],
+  "questions": [
+    {
+      "id": "oet-reading-003-q01",
+      "passageId": "oet-reading-003-p1",
+      "part": 1,
+      "topic": "Dehydration Definition",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, why are elderly patients vulnerable to dehydration?",
+      "options": [
+        "They exercise too much",
+        "They take too many supplements",
+        "They live in hot climates",
+        "They have reduced thirst sensation and may forget to drink"
+      ],
+      "correctAnswer": "They have reduced thirst sensation and may forget to drink",
+      "explanation": "The passage states that elderly have reduced thirst sensation and may forget to drink, making them vulnerable.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q02",
+      "passageId": "oet-reading-003-p1",
+      "part": 1,
+      "topic": "Dehydration Causes",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which is NOT listed as a common cause of dehydration in elderly patients?",
+      "options": [
+        "Diuretic medications",
+        "Excessive fluid intake",
+        "Diarrhoea",
+        "Vomiting"
+      ],
+      "correctAnswer": "Excessive fluid intake",
+      "explanation": "The passage lists diuretics, diarrhoea, and vomiting as causes, but not excessive fluid intake.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-003-q03",
+      "passageId": "oet-reading-003-p1",
+      "part": 1,
+      "topic": "Dehydration Signs",
+      "questionType": "multiple_choice_single",
+      "prompt": "What are physical signs of dehydration mentioned in the passage?",
+      "options": [
+        "Low blood pressure only",
+        "Bright pink skin",
+        "Excessive sweating",
+        "Dry mucous membranes, poor skin turgor, decreased urine output"
+      ],
+      "correctAnswer": "Dry mucous membranes, poor skin turgor, decreased urine output",
+      "explanation": "The passage lists these three physical signs as indicators of dehydration.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q04",
+      "passageId": "oet-reading-003-p1",
+      "part": 1,
+      "topic": "Dehydration in Frail Elderly",
+      "questionType": "multiple_choice_single",
+      "prompt": "What may be the only presenting symptom of dehydration in frail elderly patients?",
+      "options": [
+        "Fever",
+        "Confusion and delirium",
+        "Thirst",
+        "Abdominal pain"
+      ],
+      "correctAnswer": "Confusion and delirium",
+      "explanation": "The passage states that confusion and delirium may be the only symptom in frail elderly.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-003-q05",
+      "passageId": "oet-reading-003-p1",
+      "part": 1,
+      "topic": "Dehydration Treatment",
+      "questionType": "multiple_choice_single",
+      "prompt": "How should mild dehydration typically be treated?",
+      "options": [
+        "With intravenous fluids only",
+        "With medication only",
+        "With hospitalization",
+        "With oral rehydration solutions"
+      ],
+      "correctAnswer": "With oral rehydration solutions",
+      "explanation": "The passage states mild dehydration often responds to oral rehydration solutions.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q06",
+      "passageId": "oet-reading-003-p2a",
+      "part": 2,
+      "topic": "Outbreak Definition",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the protocol, when should an outbreak protocol be activated?",
+      "options": [
+        "When one resident shows symptoms",
+        "When three or more residents develop symptoms within 72 hours",
+        "When two residents show symptoms",
+        "When all residents show symptoms"
+      ],
+      "correctAnswer": "When three or more residents develop symptoms within 72 hours",
+      "explanation": "The facility protocol specifies activation with three or more residents symptomatic within 72 hours.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q07",
+      "passageId": "oet-reading-003-p2a",
+      "part": 2,
+      "topic": "Influenza Vaccination",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is required regarding annual influenza vaccination?",
+      "options": [
+        "Optional for all staff",
+        "Mandatory for staff and optional for residents",
+        "Not required in aged care",
+        "Mandatory for all staff and recommended for all residents"
+      ],
+      "correctAnswer": "Mandatory for all staff and recommended for all residents",
+      "explanation": "The protocol states vaccination is mandatory for staff and recommended for residents.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q08",
+      "passageId": "oet-reading-003-p2a",
+      "part": 2,
+      "topic": "Outbreak Reporting",
+      "questionType": "multiple_choice_single",
+      "prompt": "Within what timeframe must suspected outbreaks be reported to health authorities?",
+      "options": [
+        "Immediately",
+        "Within 24 hours",
+        "Within 12 hours",
+        "Within 48 hours"
+      ],
+      "correctAnswer": "Within 24 hours",
+      "explanation": "The protocol requires reporting to local health authority within 24 hours.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q09",
+      "passageId": "oet-reading-003-p2b",
+      "part": 2,
+      "topic": "Catheterisation Indications",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which is a valid indication for urinary catheterisation?",
+      "options": [
+        "Patient convenience",
+        "Routine screening",
+        "Cosmetic reasons",
+        "Acute urinary retention"
+      ],
+      "correctAnswer": "Acute urinary retention",
+      "explanation": "The protocol lists acute urinary retention as a valid indication for catheterisation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q10",
+      "passageId": "oet-reading-003-p2b",
+      "part": 2,
+      "topic": "Catheter Removal Timing",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the recommended timeframe for catheter removal?",
+      "options": [
+        "After 1 week",
+        "After 2 weeks",
+        "As soon as clinically appropriate, preferably within 48 hours",
+        "Catheters should remain indefinitely"
+      ],
+      "correctAnswer": "As soon as clinically appropriate, preferably within 48 hours",
+      "explanation": "The protocol states catheters should be removed as soon as possible, preferably within 48 hours.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q11",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Medication Adherence Rates",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, what percentage of patients take medications as prescribed?",
+      "options": [
+        "25%",
+        "90%",
+        "75%",
+        "50%"
+      ],
+      "correctAnswer": "50%",
+      "explanation": "The passage states that only 50% of patients take their medications as prescribed.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q12",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Barriers to Adherence",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which are reasons for medication non-adherence mentioned in the passage?",
+      "options": [
+        "Only forgetfulness",
+        "Only financial barriers",
+        "Primarily lack of trust",
+        "Side effects, cost, complexity, forgetfulness, and lack of understanding"
+      ],
+      "correctAnswer": "Side effects, cost, complexity, forgetfulness, and lack of understanding",
+      "explanation": "The passage lists these five multifactorial reasons for non-adherence.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-003-q13",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Adherence Strategies",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which strategy for improving adherence is mentioned in the passage?",
+      "options": [
+        "Forcing patients to take medication",
+        "Restricting patient information",
+        "Increasing medication doses",
+        "Using pill organisers, reminder systems, and mobile applications"
+      ],
+      "correctAnswer": "Using pill organisers, reminder systems, and mobile applications",
+      "explanation": "The passage specifically mentions these tools as effective strategies to improve adherence.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q14",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Shared Decision-Making",
+      "questionType": "multiple_choice_single",
+      "prompt": "What impact does shared decision-making have on medication adherence?",
+      "options": [
+        "No significant impact",
+        "Slightly improves adherence",
+        "Decreases adherence",
+        "Significantly improves adherence rates"
+      ],
+      "correctAnswer": "Significantly improves adherence rates",
+      "explanation": "The passage states that shared decision-making significantly improves adherence rates.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-003-q15",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "Respiratory Transmission",
+      "questionType": "multiple_choice_single",
+      "prompt": "How do respiratory infections primarily spread according to the passage?",
+      "options": [
+        "Through blood contact",
+        "Through contaminated food",
+        "Through skin contact",
+        "Through droplets from coughing or sneezing"
+      ],
+      "correctAnswer": "Through droplets from coughing or sneezing",
+      "explanation": "The passage states respiratory infections spread primarily through droplets from coughs and sneezes.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q16",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "Cough Etiquette",
+      "questionType": "multiple_choice_single",
+      "prompt": "What should be done if tissues are unavailable when coughing?",
+      "options": [
+        "Cough into bare hands",
+        "Do not cover at all",
+        "Cough into the air",
+        "Cough into the elbow"
+      ],
+      "correctAnswer": "Cough into the elbow",
+      "explanation": "The passage states that coughing into the elbow is preferable to bare hands when tissues are unavailable.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q17",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "Physical Distancing",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the recommended distance for individuals with respiratory symptoms?",
+      "options": [
+        "No distance required",
+        "Five metres minimum",
+        "At least two metres",
+        "At least one metre from others"
+      ],
+      "correctAnswer": "At least one metre from others",
+      "explanation": "The passage recommends maintaining at least one metre distance when symptomatic.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q18",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "Surgical Masks Effectiveness",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the primary function of surgical masks according to the passage?",
+      "options": [
+        "Complete protection of the wearer",
+        "Improving breathing capacity",
+        "Preventing all infections",
+        "Blocking large respiratory droplets from symptomatic individuals"
+      ],
+      "correctAnswer": "Blocking large respiratory droplets from symptomatic individuals",
+      "explanation": "The passage states surgical masks block large respiratory droplets when worn by symptomatic people.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-003-q19",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "N95 Respirators",
+      "questionType": "multiple_choice_single",
+      "prompt": "When should N95 respirators be used?",
+      "options": [
+        "For all public interactions",
+        "Never necessary",
+        "For cosmetic purposes only",
+        "By healthcare workers in close contact with confirmed or suspected cases"
+      ],
+      "correctAnswer": "By healthcare workers in close contact with confirmed or suspected cases",
+      "explanation": "The passage specifies N95 use by healthcare workers in close contact with confirmed/suspected cases.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-003-q20",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "Mask Effectiveness During Epidemics",
+      "questionType": "multiple_choice_single",
+      "prompt": "By how much can mask use in public settings reduce disease transmission during epidemics?",
+      "options": [
+        "Up to 50%",
+        "Up to 25%",
+        "Up to 10%",
+        "Up to 75%"
+      ],
+      "correctAnswer": "Up to 50%",
+      "explanation": "The passage states that mask use in public settings reduces transmission by up to 50% during epidemics.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-003-q21",
+      "passageId": "oet-reading-003-p1",
+      "part": 1,
+      "topic": "Dehydration Prevention",
+      "questionType": "multiple_choice_single",
+      "prompt": "How can caregivers help prevent dehydration in elderly patients?",
+      "options": [
+        "By restricting fluid intake",
+        "By offering fluids regularly with meals and snacks",
+        "By using IV fluids only",
+        "By monitoring electrolytes constantly"
+      ],
+      "correctAnswer": "By offering fluids regularly with meals and snacks",
+      "explanation": "The passage states caregivers should offer fluids regularly with meals and snacks.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q22",
+      "passageId": "oet-reading-003-p1",
+      "part": 1,
+      "topic": "Intravenous Hydration",
+      "questionType": "multiple_choice_single",
+      "prompt": "When is intravenous hydration required?",
+      "options": [
+        "For all dehydrated patients",
+        "For moderate to severe cases requiring hospital monitoring",
+        "For mild dehydration only",
+        "Never recommended"
+      ],
+      "correctAnswer": "For moderate to severe cases requiring hospital monitoring",
+      "explanation": "The passage states IV fluids are needed for moderate to severe cases with hospital monitoring.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q23",
+      "passageId": "oet-reading-003-p2a",
+      "part": 2,
+      "topic": "High-Touch Surfaces Cleaning",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which surfaces are specifically mentioned as requiring daily disinfection?",
+      "options": [
+        "Only floors and walls",
+        "Doorknobs, handrails, and bed rails",
+        "Only patient beds",
+        "Windows and doors"
+      ],
+      "correctAnswer": "Doorknobs, handrails, and bed rails",
+      "explanation": "The policy specifies these high-touch surfaces require daily disinfection.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q24",
+      "passageId": "oet-reading-003-p2a",
+      "part": 2,
+      "topic": "Visitor Screening",
+      "questionType": "multiple_choice_single",
+      "prompt": "How should visitors be managed according to the facility policy?",
+      "options": [
+        "No restrictions allowed",
+        "Screening for symptoms and masking if visiting",
+        "No screening needed",
+        "Visitors banned entirely"
+      ],
+      "correctAnswer": "Screening for symptoms and masking if visiting",
+      "explanation": "The policy states visitors should be screened and wear masks if they visit.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q25",
+      "passageId": "oet-reading-003-p2b",
+      "part": 2,
+      "topic": "Catheter Gauge Selection",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the typical catheter size used in most adults?",
+      "options": [
+        "8-10 French",
+        "12-14 French gauge",
+        "16-18 French",
+        "20 French or larger"
+      ],
+      "correctAnswer": "12-14 French gauge",
+      "explanation": "The protocol states the smallest appropriate size for most adults is 12-14 French.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q26",
+      "passageId": "oet-reading-003-p2b",
+      "part": 2,
+      "topic": "Catheter Care Components",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does daily catheter care include?",
+      "options": [
+        "Only checking urine colour",
+        "Perineal cleansing and inspection for infection signs",
+        "Flushing with solution only",
+        "No daily care needed"
+      ],
+      "correctAnswer": "Perineal cleansing and inspection for infection signs",
+      "explanation": "The protocol specifies daily care includes perineal cleansing and inspection.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q27",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Non-Compliance Exploration",
+      "questionType": "multiple_choice_single",
+      "prompt": "How should healthcare professionals approach medication non-adherence?",
+      "options": [
+        "Assume patients are deliberately non-compliant",
+        "Explore barriers rather than assuming deliberate non-compliance",
+        "Ignore the problem",
+        "Only prescribe simple regimens"
+      ],
+      "correctAnswer": "Explore barriers rather than assuming deliberate non-compliance",
+      "explanation": "The passage states professionals should explore barriers instead of assuming non-compliance is deliberate.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-reading-003-q28",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Regimen Simplification",
+      "questionType": "multiple_choice_single",
+      "prompt": "How does simplifying medication regimens improve adherence?",
+      "options": [
+        "By requiring more frequent monitoring",
+        "Through combination therapies or once-daily formulations",
+        "By using complex dosing schedules",
+        "Simplification does not help adherence"
+      ],
+      "correctAnswer": "Through combination therapies or once-daily formulations",
+      "explanation": "The passage states simplification through combination or once-daily drugs improves adherence.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q29",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Technology and Adherence",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which technology-based strategy is mentioned for improving medication adherence?",
+      "options": [
+        "Video monitoring only",
+        "Medication reminders through mobile phone applications",
+        "Automated doctor visits",
+        "No technology helps adherence"
+      ],
+      "correctAnswer": "Medication reminders through mobile phone applications",
+      "explanation": "The passage mentions mobile phone reminder applications as an effective strategy.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-reading-003-q30",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Comprehensive Adherence Approach",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, what is the most effective approach to medication adherence?",
+      "options": [
+        "Combination of education, simplified regimens, reminders, and ongoing support",
+        "Medication changes only",
+        "Education alone",
+        "Punishment for non-compliance"
+      ],
+      "correctAnswer": "Combination of education, simplified regimens, reminders, and ongoing support",
+      "explanation": "The passage states the most effective approach combines all these elements.",
+      "difficulty": "medium"
+    }
+  ]
+}

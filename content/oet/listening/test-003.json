@@ -1,0 +1,565 @@
+{
+  "id": "oet-listening-003",
+  "exam": "oet",
+  "section": "listening",
+  "type": "section",
+  "title": "OET Listening Practice Test 3",
+  "durationSeconds": 2700,
+  "questionCount": 30,
+  "instructions": "OET Listening has three parts. Part A: Consultation Extracts (note-taking style). Part B: Short Workplace Extracts (main point identification). Part C: Presentation Extracts (detailed comprehension). Listen carefully and choose the best answer.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Part A — Consultation Extracts",
+      "questions": 18,
+      "time": "12 min",
+      "description": "Doctor-patient consultations. Listen and take notes to answer questions about specific information."
+    },
+    {
+      "part": 2,
+      "title": "Part B — Short Workplace Extracts",
+      "questions": 6,
+      "time": "8 min",
+      "description": "Workplace briefings, handovers, phone calls. Identify the main point or purpose."
+    },
+    {
+      "part": 3,
+      "title": "Part C — Presentation Extracts",
+      "questions": 6,
+      "time": "10 min",
+      "description": "Healthcare presentations or talks. Comprehend main ideas and supporting details."
+    }
+  ],
+  "questions": [
+    {
+      "id": "oet-listening-003-q01",
+      "passageId": "oet-listening-003-p1a",
+      "part": 1,
+      "topic": "Gestational Age",
+      "questionType": "multiple_choice_single",
+      "prompt": "At how many weeks is the patient?",
+      "options": [
+        "20 weeks",
+        "24 weeks",
+        "28 weeks",
+        "32 weeks"
+      ],
+      "correctAnswer": "28 weeks",
+      "explanation": "The midwife confirms the patient is at 28 weeks.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q02",
+      "passageId": "oet-listening-003-p1a",
+      "part": 1,
+      "topic": "Screening Test",
+      "questionType": "multiple_choice_single",
+      "prompt": "What screening test does the midwife want to perform?",
+      "options": [
+        "Glucose tolerance test for gestational diabetes",
+        "HIV screening",
+        "Ultrasound scan",
+        "Amniocentesis"
+      ],
+      "correctAnswer": "Glucose tolerance test for gestational diabetes",
+      "explanation": "The midwife mentions the glucose tolerance test to screen for gestational diabetes.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q03",
+      "passageId": "oet-listening-003-p1a",
+      "part": 1,
+      "topic": "Blood Pressure",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the patient's blood pressure reading?",
+      "options": [
+        "120 over 75",
+        "130 over 80",
+        "135 over 85",
+        "140 over 90"
+      ],
+      "correctAnswer": "135 over 85",
+      "explanation": "The midwife states the blood pressure is 135 over 85, which is slightly elevated.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q04",
+      "passageId": "oet-listening-003-p1a",
+      "part": 1,
+      "topic": "Supplements",
+      "questionType": "multiple_choice_single",
+      "prompt": "What prenatal vitamins is the patient taking?",
+      "options": [
+        "Folic acid and iron supplements",
+        "Only iron supplements",
+        "Only folic acid",
+        "Calcium and vitamin D"
+      ],
+      "correctAnswer": "Folic acid and iron supplements",
+      "explanation": "The patient states she's taking folic acid and iron supplements as prescribed.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q05",
+      "passageId": "oet-listening-003-p1a",
+      "part": 1,
+      "topic": "Ankle Swelling",
+      "questionType": "multiple_choice_single",
+      "prompt": "When is the ankle swelling most noticeable?",
+      "options": [
+        "In the morning",
+        "Mid-afternoon",
+        "By evening",
+        "Throughout the day equally"
+      ],
+      "correctAnswer": "By evening",
+      "explanation": "The patient mentions ankles are puffy especially by evening.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q06",
+      "passageId": "oet-listening-003-p1b",
+      "part": 1,
+      "topic": "Cancer Stage",
+      "questionType": "multiple_choice_single",
+      "prompt": "What stage is Mr Williams' lung cancer?",
+      "options": [
+        "Stage 3",
+        "Stage 2",
+        "Stage 1",
+        "Stage 4"
+      ],
+      "correctAnswer": "Stage 3",
+      "explanation": "The oncologist confirms non-small cell lung cancer, stage three.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q07",
+      "passageId": "oet-listening-003-p1b",
+      "part": 1,
+      "topic": "Treatment Duration",
+      "questionType": "multiple_choice_single",
+      "prompt": "How long is the total treatment duration?",
+      "options": [
+        "3 months",
+        "12 months",
+        "6 months",
+        "18 months"
+      ],
+      "correctAnswer": "6 months",
+      "explanation": "The oncologist states the treatment is six months total.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q08",
+      "passageId": "oet-listening-003-p1b",
+      "part": 1,
+      "topic": "Prognosis",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the five-year survival rate with treatment?",
+      "options": [
+        "35 percent",
+        "25 percent",
+        "15 percent",
+        "50 percent"
+      ],
+      "correctAnswer": "35 percent",
+      "explanation": "The oncologist states five-year survival for stage three is about 35 percent with treatment.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q09",
+      "passageId": "oet-listening-003-p1c",
+      "part": 1,
+      "topic": "RA Diagnosis Markers",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which blood tests confirm rheumatoid arthritis?",
+      "options": [
+        "Only rheumatoid factor",
+        "Only anti-CCP antibodies",
+        "Rheumatoid factor and anti-CCP antibodies",
+        "Only ESR and CRP"
+      ],
+      "correctAnswer": "Rheumatoid factor and anti-CCP antibodies",
+      "explanation": "The rheumatologist states both rheumatoid factor and anti-CCP antibodies are positive.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-003-q10",
+      "passageId": "oet-listening-003-p1c",
+      "part": 1,
+      "topic": "Morning Stiffness",
+      "questionType": "multiple_choice_single",
+      "prompt": "How long does the patient's morning stiffness last?",
+      "options": [
+        "About 30 minutes",
+        "About 1 hour",
+        "About 3 hours",
+        "About 2 hours"
+      ],
+      "correctAnswer": "About 2 hours",
+      "explanation": "The patient states stiffness lasts for about two hours after waking.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q11",
+      "passageId": "oet-listening-003-p1c",
+      "part": 1,
+      "topic": "First-Line Drug",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the first DMARD prescribed?",
+      "options": [
+        "Methotrexate",
+        "Sulfasalazine",
+        "Biologic agent",
+        "Prednisolone"
+      ],
+      "correctAnswer": "Methotrexate",
+      "explanation": "The rheumatologist prescribes methotrexate as the first DMARD.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q12",
+      "passageId": "oet-listening-003-p1c",
+      "part": 1,
+      "topic": "Follow-up Timing",
+      "questionType": "multiple_choice_single",
+      "prompt": "When should the patient return for review?",
+      "options": [
+        "In two months",
+        "In one month",
+        "In three months",
+        "In six months"
+      ],
+      "correctAnswer": "In two months",
+      "explanation": "The rheumatologist says 'Come back in two months for review.'",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q13",
+      "passageId": "oet-listening-003-p2a",
+      "part": 2,
+      "topic": "Cardiac Test Result",
+      "questionType": "multiple_choice_single",
+      "prompt": "What was Mr Brown's troponin result?",
+      "options": [
+        "Normal",
+        "Borderline",
+        "Elevated",
+        "Critically high"
+      ],
+      "correctAnswer": "Normal",
+      "explanation": "The nurse states troponin levels came back normal, so no myocardial infarction.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q14",
+      "passageId": "oet-listening-003-p2a",
+      "part": 2,
+      "topic": "Sepsis Patient Status",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is Mrs Johnson's FiO2 level on mechanical ventilation?",
+      "options": [
+        "60 percent",
+        "50 percent",
+        "40 percent",
+        "80 percent"
+      ],
+      "correctAnswer": "60 percent",
+      "explanation": "The nurse states her FiO2 is at 60 percent.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q15",
+      "passageId": "oet-listening-003-p2a",
+      "part": 2,
+      "topic": "Repositioning Frequency",
+      "questionType": "multiple_choice_single",
+      "prompt": "How frequently should Mrs Johnson be repositioned?",
+      "options": [
+        "Every 2 hours",
+        "Every hour",
+        "Every 4 hours",
+        "Every 6 hours"
+      ],
+      "correctAnswer": "Every 2 hours",
+      "explanation": "The nurse recommends repositioning frequency be increased to every two hours.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q16",
+      "passageId": "oet-listening-003-p2b",
+      "part": 2,
+      "topic": "Absence Duration",
+      "questionType": "multiple_choice_single",
+      "prompt": "How long has Sarah been off work?",
+      "options": [
+        "Two weeks",
+        "One week",
+        "Three weeks",
+        "One month"
+      ],
+      "correctAnswer": "Two weeks",
+      "explanation": "The manager mentions Sarah has been off sick for two weeks.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q17",
+      "passageId": "oet-listening-003-p3a",
+      "part": 3,
+      "topic": "Resistance Impact",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is a consequence of antimicrobial resistance?",
+      "options": [
+        "Limited treatment options and higher mortality",
+        "Lower costs of healthcare",
+        "Faster recovery times",
+        "Reduced need for healthcare"
+      ],
+      "correctAnswer": "Limited treatment options and higher mortality",
+      "explanation": "The speaker states resistant organisms cause severe infections with limited treatment options and higher mortality.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-003-q18",
+      "passageId": "oet-listening-003-p3a",
+      "part": 3,
+      "topic": "Stewardship Pillars",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which is NOT mentioned as a pillar of stewardship?",
+      "options": [
+        "Medication pricing control",
+        "Infection prevention",
+        "Optimising prescribing decisions",
+        "Surveillance of resistance patterns"
+      ],
+      "correctAnswer": "Medication pricing control",
+      "explanation": "The three pillars are optimising prescribing, infection prevention, and surveillance; pricing is not mentioned.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-003-q19",
+      "passageId": "oet-listening-003-p3a",
+      "part": 3,
+      "topic": "Inappropriate Prescribing Reduction",
+      "questionType": "multiple_choice_single",
+      "prompt": "By how much did inappropriate prescribing decrease in the hospital programme?",
+      "options": [
+        "40 percent",
+        "30 percent",
+        "20 percent",
+        "50 percent"
+      ],
+      "correctAnswer": "40 percent",
+      "explanation": "The speaker states inappropriate prescribing decreased by 40 percent over two years.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q20",
+      "passageId": "oet-listening-003-p3a",
+      "part": 3,
+      "topic": "Resistant Organisms Reduction",
+      "questionType": "multiple_choice_single",
+      "prompt": "By how much did resistant organism infections decrease?",
+      "options": [
+        "15 percent",
+        "20 percent",
+        "30 percent",
+        "25 percent"
+      ],
+      "correctAnswer": "25 percent",
+      "explanation": "The speaker states resistant organism infections decreased by 25 percent.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q21",
+      "passageId": "oet-listening-003-p1a",
+      "part": 1,
+      "topic": "Glucose Tolerance Test Urgency",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why does the midwife want to do the glucose tolerance test immediately?",
+      "options": [
+        "Standard protocol for all pregnancies",
+        "Insurance requirement",
+        "Patient's increased thirst suggests need for immediate testing",
+        "Routine scheduling"
+      ],
+      "correctAnswer": "Patient's increased thirst suggests need for immediate testing",
+      "explanation": "The midwife wants to test immediately because of the patient's reported symptoms of increased thirst.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-003-q22",
+      "passageId": "oet-listening-003-p1a",
+      "part": 1,
+      "topic": "Pre-eclampsia Screening",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why does the midwife check for pre-eclampsia?",
+      "options": [
+        "Routine screening only",
+        "Required by law",
+        "Because of elevated blood pressure and ankle swelling",
+        "Patient requested it"
+      ],
+      "correctAnswer": "Because of elevated blood pressure and ankle swelling",
+      "explanation": "These symptoms can indicate pre-eclampsia, which must be ruled out.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-003-q23",
+      "passageId": "oet-listening-003-p1b",
+      "part": 1,
+      "topic": "Cancer Spread Extent",
+      "questionType": "multiple_choice_single",
+      "prompt": "To what extent has the cancer spread?",
+      "options": [
+        "Only in the primary location",
+        "To multiple organs",
+        "To lymph nodes but not distant organs",
+        "Everywhere in the body"
+      ],
+      "correctAnswer": "To lymph nodes but not distant organs",
+      "explanation": "Stage 3 means spread to lymph nodes but no distant metastases.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q24",
+      "passageId": "oet-listening-003-p1b",
+      "part": 1,
+      "topic": "Combined Therapy Approach",
+      "questionType": "multiple_choice_single",
+      "prompt": "What combination therapy is recommended?",
+      "options": [
+        "Surgery alone",
+        "Chemotherapy alone",
+        "Chemotherapy and radiation therapy concurrently",
+        "Palliative care only"
+      ],
+      "correctAnswer": "Chemotherapy and radiation therapy concurrently",
+      "explanation": "The oncologist recommends six cycles of chemo with concurrent radiation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q25",
+      "passageId": "oet-listening-003-p1b",
+      "part": 1,
+      "topic": "Median Survival Without Treatment",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the median survival without treatment?",
+      "options": [
+        "3 months",
+        "6 months",
+        "10 months",
+        "18 months"
+      ],
+      "correctAnswer": "10 months",
+      "explanation": "The oncologist states median survival without treatment is about 10 months.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q26",
+      "passageId": "oet-listening-003-p1c",
+      "part": 1,
+      "topic": "Morning Stiffness Duration Significance",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why is the two-hour morning stiffness duration significant?",
+      "options": [
+        "It indicates mild arthritis only",
+        "It requires hospitalization",
+        "Morning stiffness more than 30 minutes is a key feature of RA",
+        "It means the diagnosis is uncertain"
+      ],
+      "correctAnswer": "Morning stiffness more than 30 minutes is a key feature of RA",
+      "explanation": "The rheumatologist explains this prolonged stiffness is typical of RA diagnosis.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-003-q27",
+      "passageId": "oet-listening-003-p2a",
+      "part": 2,
+      "topic": "Organ Necrosis Assessment",
+      "questionType": "multiple_choice_single",
+      "prompt": "What indicates poor prognosis for Mrs Johnson in the ICU?",
+      "options": [
+        "Good blood pressure",
+        "Normal lactate levels",
+        "Elevated lactate suggesting ongoing tissue hypoxia",
+        "Successful extubation"
+      ],
+      "correctAnswer": "Elevated lactate suggesting ongoing tissue hypoxia",
+      "explanation": "The nurse notes elevated lactate indicates tissue hypoxia, a sign of severity.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-003-q28",
+      "passageId": "oet-listening-003-p2b",
+      "part": 2,
+      "topic": "Return-to-Work Strategy",
+      "questionType": "multiple_choice_single",
+      "prompt": "What return-to-work approach is suggested for Sarah?",
+      "options": [
+        "Full shifts immediately",
+        "Permanent leave recommended",
+        "Phased return with reduced hours and flexible shifts initially",
+        "No accommodation possible"
+      ],
+      "correctAnswer": "Phased return with reduced hours and flexible shifts initially",
+      "explanation": "The manager proposes a phased approach starting with three days a week.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oet-listening-003-q29",
+      "passageId": "oet-listening-003-p3a",
+      "part": 3,
+      "topic": "Inappropriate Prescribing Examples",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is an example of inappropriate prescribing mentioned?",
+      "options": [
+        "Using antibiotics for bacterial infections",
+        "Using culture-guided therapy",
+        "Prescribing antibiotics for viral infections",
+        "De-escalating to narrower-spectrum drugs"
+      ],
+      "correctAnswer": "Prescribing antibiotics for viral infections",
+      "explanation": "The speaker cites prescribing for viral infections as a major example of inappropriate use.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oet-listening-003-q30",
+      "passageId": "oet-listening-003-p3a",
+      "part": 3,
+      "topic": "Primary Care Strategy",
+      "questionType": "multiple_choice_single",
+      "prompt": "What tools help primary care providers improve stewardship?",
+      "options": [
+        "Restrictions on prescribing",
+        "No improvements possible",
+        "Reduced patient access",
+        "Education and point-of-care diagnostic tests"
+      ],
+      "correctAnswer": "Education and point-of-care diagnostic tests",
+      "explanation": "The speaker states education and rapid diagnostics help community prescribers improve practice.",
+      "difficulty": "easy"
+    }
+  ],
+  "listeningScripts": [
+    {
+      "id": "oet-listening-003-part1",
+      "part": 1,
+      "title": "Midwifery Consultation - Antenatal Care",
+      "text": "Midwife: Hello, congratulations on your pregnancy. You're at 28 weeks now, is that right? Patient: Yes, that's correct. This is my first baby. Midwife: Excellent. So at this stage, we do a glucose tolerance test to screen for gestational diabetes. Have you noticed any unusual thirst or increased urination? Patient: Yes, actually, I have been quite thirsty. And I do seem to be going to the toilet more often. Midwife: OK, that can be normal in pregnancy, but given your thirst, I want to do the test straight away. We'll also check your urine today. Are you experiencing any swelling in your legs or ankles? Patient: My ankles are a bit puffy, especially by evening. Midwife: That's quite common. I'll measure your blood pressure—we need to rule out pre-eclampsia. Your blood pressure is 135 over 85, which is slightly elevated. Let's do a urine test and the glucose tolerance test. Have you been taking prenatal vitamins? Patient: Yes, folic acid and iron supplements as prescribed. Midwife: Good. Make sure you're eating a balanced diet with plenty of fresh produce. Avoid processed foods and limit salt intake. Come back next week for the test results. If they show gestational diabetes, we'll refer you to a dietitian and possibly an endocrinologist. Any questions?\n\nOncologist: Mr Williams, we have the results from your biopsy. I'm sorry to tell you that it's confirmed as non-small cell lung cancer, stage three. Patient: Oh God. How bad is that? Oncologist: Stage three means the cancer has spread to lymph nodes but hasn't spread to distant organs. It's advanced, but there are treatment options. I'm recommending a combination of chemotherapy and radiation therapy. You'll have six cycles of chemotherapy, given intravenously every three weeks, with radiation therapy running concurrently. Patient: How long is the treatment? Oncologist: Six months total. It's intensive, and you'll experience side effects—hair loss is likely, nausea, fatigue. You'll need supportive medications to manage these. Some patients need anti-nausea drugs and blood transfusions. Patient: What about my prognosis? Oncologist: Five-year survival for stage three non-small cell lung cancer is about 35 percent with this combination treatment. Without treatment, median survival is about 10 months. Patient: That's not very good odds. Oncologist: It's serious, but people do survive. You're in good health otherwise, which is in your favour. I'd like you to meet with our support services team, including a counsellor and dietitian. We also have patient support groups. Would you like to start treatment next week?\n\nRheumatologist: Mrs Okafor, your blood tests confirm rheumatoid arthritis. The rheumatoid factor and anti-CCP antibodies are both positive. Have you been experiencing joint pain and stiffness? Patient: Yes, especially in my hands and wrists. It's worse in the morning. The stiffness lasts for about two hours after I wake up. Rheumatologist: That's typical. Morning stiffness lasting more than 30 minutes is a key feature of rheumatoid arthritis. I'm starting you on disease-modifying antirheumatic drugs, or DMARDs. I'll prescribe methotrexate, starting at a low dose and increasing gradually. This will slow disease progression. Patient: What are the side effects? Rheumatologist: Methotrexate can cause nausea and hair thinning. You'll need regular blood tests monthly initially to monitor liver and kidney function. We'll also add folic acid supplementation to reduce side effects. Patient: How long will I be on this? Rheumatologist: DMARDs are long-term, potentially lifelong. But if we start early, we can prevent joint damage and maintain function. I also recommend physical therapy and occupational therapy. Patient: Will I be able to work? Rheumatologist: Most people continue working with appropriate support. Some days may be more difficult than others. We can refer you to occupational health for workplace adjustments if needed. Come back in two months for review."
+    },
+    {
+      "id": "oet-listening-003-part2",
+      "part": 2,
+      "title": "Clinical Handover - Intensive Care Unit",
+      "text": "Night Nurse: Right, we're handing over to day shift. Bed 1 is Mr Brown, 68, post-cardiac catheterisation. He's stable on continuous cardiac monitoring. His troponin levels came back normal, so no myocardial infarction. Chest pain has resolved. Plan is to do a stress test this afternoon and discharge tomorrow if negative. Bed 2, Mrs Johnson, 54, admitted with severe sepsis from pneumonia. She's on broad-spectrum antibiotics and vasopressors to maintain blood pressure. Her lactate is still elevated, suggesting ongoing tissue hypoxia. We've sent sputum cultures. She's on mechanical ventilation with FiO2 at 60 percent. Pressure sores are developing on her sacrum despite repositioning—apply barrier cream and increase frequency to every two hours. Bed 3, young lad, Sean, 16, road traffic accident with multiple injuries. Fractured pelvis and left femur, intra-abdominal bleeding—he's booked for surgery this morning. IV fluids running, blood available. He's conscious and anxious. Keep him informed. Day team will take over immediately post-op. Any questions before we hand over?\n\nManager: Hi, this is the occupational health team calling about Sarah Morrison from ward B. She's been off sick for two weeks with a diagnosed stress-related illness. We need to discuss return-to-work planning. Is she still absent? HR: Yes, she's still off. Her GP letter says she's not fit to return to ward work at present due to exhaustion. Manager: Right. Given the current staffing situation on ward B, she'll struggle initially. Has she had issues before? HR: Not formally recorded, but colleagues have mentioned she's seemed stretched. The recent reshuffle of shifts has been hard for everyone. Manager: We should offer her a phased return—perhaps starting with three days a week, then building up. Maybe different shift patterns initially. Can we arrange a meeting with her when she's ready? HR: Yes, that's sensible. I'll contact her this week to discuss. We'll also refer her to occupational health for assessment. Our duty is to ensure she has adequate support to return sustainably. Manager: Absolutely. Last thing we need is her going off again in two weeks. Let's make this proper support, not just getting her back on the wards."
+    },
+    {
+      "id": "oet-listening-003-part3",
+      "part": 3,
+      "title": "Presentation - Antimicrobial Stewardship",
+      "text": "Speaker: Antimicrobial stewardship is our collective responsibility to combat antibiotic resistance. Every year, antibiotic-resistant infections cause millions of deaths globally, and this number is rising. Overuse and misuse of antibiotics accelerates resistance development. In healthcare, we see unnecessary prescribing for viral infections where antibiotics are ineffective, prescriptions without culture confirmation, and failure to de-escalate when narrower-spectrum drugs would suffice. The consequences are profound: resistant organisms like methicillin-resistant Staphylococcus aureus and carbapenem-resistant Enterobacteriaceae cause severe infections that limit treatment options. Patients face prolonged hospitalisation, increased costs, and higher mortality. Our stewardship programme has three pillars. First, optimising prescribing decisions through antimicrobial stewardship teams that review inappropriate prescriptions. Second, infection prevention to reduce infection incidence—hand hygiene, isolation protocols, device care. Third, surveillance to track resistance patterns and educate clinicians. In our hospital, we've seen promising results. Inappropriate prescribing decreased by 40 percent over two years. Resistant organism infections decreased by 25 percent. Staff education was crucial—clinicians need to understand that not every fever requires antibiotics, that cultures must guide therapy, and that rapid diagnostic tests help make quicker, more accurate decisions. We're extending this programme to primary care, where most antibiotics are prescribed. Community prescribers often lack culture results and real-time resistance data, but education and point-of-care diagnostics are improving practice. The message is simple: antibiotics are precious resources. Use them wisely, use them appropriately, and reserve them for true bacterial infections."
+    }
+  ]
+}

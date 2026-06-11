@@ -2,33 +2,38 @@
   "_comment": "LandingPrep exam-patterns.json — single source of truth for all exam structures.",
   "_version": 1,
   "_updated": "2026-05-18",
-
   "exams": {
-
     "ielts": {
       "examId": "ielts",
       "examName": "IELTS",
       "fullName": "International English Language Testing System",
       "scale": "Band 1–9 (overall and per section)",
       "website": "https://www.ielts.org",
-
       "variants": [
         {
           "id": "academic",
           "label": "IELTS Academic",
           "description": "For undergraduate/postgraduate study and professional registration",
-          "sections": ["listening", "reading", "writing", "speaking"]
+          "sections": [
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ]
         },
         {
           "id": "general_training",
           "label": "IELTS General Training",
           "description": "For secondary education, work experience and immigration to English-speaking countries",
-          "sections": ["listening", "reading", "writing", "speaking"]
+          "sections": [
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ]
         }
       ],
-
       "sections": {
-
         "listening": {
           "id": "listening",
           "label": "Listening",
@@ -59,10 +64,16 @@
             "map_labelling",
             "sentence_completion"
           ],
-          "scriptWordsPerPart": { "min": 400, "max": 650 },
-          "reviewRequirements": ["answer_key", "explanation", "transcript_after_submit"]
+          "scriptWordsPerPart": {
+            "min": 400,
+            "max": 650
+          },
+          "reviewRequirements": [
+            "answer_key",
+            "explanation",
+            "transcript_after_submit"
+          ]
         },
-
         "reading": {
           "id": "reading",
           "label": "Reading",
@@ -75,16 +86,28 @@
             "academic": {
               "structure": "3 long academic passages (each 900–1200 words), 40 questions total",
               "passageCount": 3,
-              "passageWordRange": [900, 1200],
+              "passageWordRange": [
+                900,
+                1200
+              ],
               "topics": "Academic, scientific, historical — adapted from books, journals, newspapers",
               "paragraphLabels": true
             },
             "general_training": {
               "structure": "3 sections of shorter texts (Section 1: notices/ads, Section 2: workplace, Section 3: general interest)",
               "passageCount": 3,
-              "section1WordRange": [300, 450],
-              "section2WordRange": [450, 600],
-              "section3WordRange": [700, 900],
+              "section1WordRange": [
+                300,
+                450
+              ],
+              "section2WordRange": [
+                450,
+                600
+              ],
+              "section3WordRange": [
+                700,
+                900
+              ],
               "topics": "Everyday notices, workplace documents, general-interest articles"
             }
           },
@@ -103,9 +126,12 @@
             "short_answer"
           ],
           "uiLayout": "split-screen — passage sticky left, questions scroll right",
-          "reviewRequirements": ["answer_key", "explanation", "passage_text"]
+          "reviewRequirements": [
+            "answer_key",
+            "explanation",
+            "passage_text"
+          ]
         },
-
         "writing": {
           "id": "writing",
           "label": "Writing",
@@ -122,7 +148,14 @@
                 "wordTarget": 150,
                 "modelAnswerMinWords": 160,
                 "requiresVisual": true,
-                "visualTypes": ["line", "bar", "pie", "table", "process", "map"]
+                "visualTypes": [
+                  "line",
+                  "bar",
+                  "pie",
+                  "table",
+                  "process",
+                  "map"
+                ]
               },
               "task2": {
                 "label": "Task 2 — Essay",
@@ -138,7 +171,11 @@
                 "wordTarget": 150,
                 "modelAnswerMinWords": 160,
                 "requiresVisual": false,
-                "letterStyles": ["formal", "semi-formal", "informal"]
+                "letterStyles": [
+                  "formal",
+                  "semi-formal",
+                  "informal"
+                ]
               },
               "task2": {
                 "label": "Task 2 — Essay",
@@ -148,9 +185,12 @@
               }
             }
           },
-          "reviewRequirements": ["model_answer", "rubric_breakdown", "word_count"]
+          "reviewRequirements": [
+            "model_answer",
+            "rubric_breakdown",
+            "word_count"
+          ]
         },
-
         "speaking": {
           "id": "speaking",
           "label": "Speaking",
@@ -167,36 +207,47 @@
             ]
           },
           "questionCount": 9,
-          "itemTypes": ["speaking_task"],
-          "reviewRequirements": ["model_answer_per_question", "rubric", "feedback"]
+          "itemTypes": [
+            "speaking_task"
+          ],
+          "reviewRequirements": [
+            "model_answer_per_question",
+            "rubric",
+            "feedback"
+          ]
         }
       },
-
       "fullMockStructure": {
-        "sections": ["listening", "reading", "writing", "speaking"],
+        "sections": [
+          "listening",
+          "reading",
+          "writing",
+          "speaking"
+        ],
         "totalDurationMinutes": 165,
         "notes": "Listening 30 min, Reading 60 min, Writing 60 min, Speaking 11–14 min (separate appointment in real exam)"
       }
     },
-
     "toefl": {
       "examId": "toefl",
       "examName": "TOEFL iBT",
       "fullName": "Test of English as a Foreign Language Internet-Based Test",
       "scale": "0–120 total (Reading 0–30, Listening 0–30, Speaking 0–30, Writing 0–30)",
       "website": "https://www.ets.org/toefl",
-
       "variants": [
         {
           "id": "ibt",
           "label": "TOEFL iBT",
           "description": "Standard internet-based TOEFL",
-          "sections": ["reading", "listening", "speaking", "writing"]
+          "sections": [
+            "reading",
+            "listening",
+            "speaking",
+            "writing"
+          ]
         }
       ],
-
       "sections": {
-
         "reading": {
           "id": "reading",
           "label": "Reading",
@@ -206,7 +257,10 @@
           "passageCount": 2,
           "questionsPerPassage": 10,
           "questionCount": 20,
-          "passageWordRange": [650, 750],
+          "passageWordRange": [
+            650,
+            750
+          ],
           "itemTypes": [
             "factual_information",
             "negative_factual",
@@ -219,9 +273,12 @@
             "fill_in_table"
           ],
           "uiLayout": "passage with highlighted sentence insertion, prose-summary drag-drop at end",
-          "reviewRequirements": ["answer_key", "explanation", "passage_context"]
+          "reviewRequirements": [
+            "answer_key",
+            "explanation",
+            "passage_context"
+          ]
         },
-
         "listening": {
           "id": "listening",
           "label": "Listening",
@@ -230,7 +287,13 @@
           "durationMinutes": 36,
           "audioCount": 5,
           "structure": "2 conversations (2 min each) + 3 lectures (4–6 min each)",
-          "questionsPerAudio": [5, 5, 6, 6, 6],
+          "questionsPerAudio": [
+            5,
+            5,
+            6,
+            6,
+            6
+          ],
           "questionCount": 28,
           "itemTypes": [
             "gist_content",
@@ -242,9 +305,12 @@
             "connecting_content",
             "inference"
           ],
-          "reviewRequirements": ["answer_key", "explanation", "audio_script_after_submit"]
+          "reviewRequirements": [
+            "answer_key",
+            "explanation",
+            "audio_script_after_submit"
+          ]
         },
-
         "speaking": {
           "id": "speaking",
           "label": "Speaking",
@@ -258,10 +324,17 @@
             "task3": "Integrated Reading+Listening: Academic course topic (30 sec prep, 60 sec response)",
             "task4": "Integrated Listening only: Academic lecture (20 sec prep, 60 sec response)"
           },
-          "itemTypes": ["independent_speaking", "integrated_speaking"],
-          "reviewRequirements": ["model_answer", "rubric", "reading_passage_if_applicable", "audio_script"]
+          "itemTypes": [
+            "independent_speaking",
+            "integrated_speaking"
+          ],
+          "reviewRequirements": [
+            "model_answer",
+            "rubric",
+            "reading_passage_if_applicable",
+            "audio_script"
+          ]
         },
-
         "writing": {
           "id": "writing",
           "label": "Writing",
@@ -273,41 +346,56 @@
             "task1": "Integrated: Read passage (3 min) + Listen to lecture, then write 150–225 words (20 min)",
             "task2": "Academic Discussion: Respond to professor and two students' posts (150+ words, 10 min)"
           },
-          "itemTypes": ["integrated_writing", "academic_discussion"],
-          "reviewRequirements": ["model_answer", "source_passage", "audio_script"]
+          "itemTypes": [
+            "integrated_writing",
+            "academic_discussion"
+          ],
+          "reviewRequirements": [
+            "model_answer",
+            "source_passage",
+            "audio_script"
+          ]
         }
       },
-
       "fullMockStructure": {
-        "sections": ["reading", "listening", "speaking", "writing"],
+        "sections": [
+          "reading",
+          "listening",
+          "speaking",
+          "writing"
+        ],
         "totalDurationMinutes": 116
       }
     },
-
     "pte": {
       "examId": "pte",
       "examName": "PTE Academic",
       "fullName": "Pearson Test of English Academic",
       "scale": "10–90 (Global score + 4 skill scores)",
       "website": "https://pearsonpte.com",
-
       "variants": [
         {
           "id": "academic",
           "label": "PTE Academic",
           "description": "Computer-scored test for higher education and professional immigration",
-          "sections": ["speaking-writing", "reading", "listening"]
+          "sections": [
+            "speaking-writing",
+            "reading",
+            "listening"
+          ]
         },
         {
           "id": "core",
           "label": "PTE Core",
           "description": "For Canadian immigration (IRCC), practical everyday English focus",
-          "sections": ["speaking-writing", "reading", "listening"]
+          "sections": [
+            "speaking-writing",
+            "reading",
+            "listening"
+          ]
         }
       ],
-
       "sections": {
-
         "speaking-writing": {
           "id": "speaking-writing",
           "label": "Speaking & Writing",
@@ -319,25 +407,105 @@
           "variants": {
             "academic": {
               "itemSequence": [
-                { "type": "personal_introduction", "count": 1, "label": "Personal Introduction", "durationSec": 25 },
-                { "type": "read_aloud", "count": 6, "label": "Read Aloud", "prepSec": 35, "responseSec": 40 },
-                { "type": "repeat_sentence", "count": 10, "label": "Repeat Sentence", "responseSec": 15 },
-                { "type": "describe_image", "count": 3, "label": "Describe Image", "prepSec": 25, "responseSec": 40 },
-                { "type": "retell_lecture", "count": 1, "label": "Re-tell Lecture", "prepSec": 10, "responseSec": 40 },
-                { "type": "answer_short_question", "count": 5, "label": "Answer Short Question", "responseSec": 10 },
-                { "type": "summarize_written_text", "count": 1, "label": "Summarize Written Text", "durationMin": 10 },
-                { "type": "write_essay", "count": 1, "label": "Write Essay", "durationMin": 20 }
+                {
+                  "type": "personal_introduction",
+                  "count": 1,
+                  "label": "Personal Introduction",
+                  "durationSec": 25
+                },
+                {
+                  "type": "read_aloud",
+                  "count": 6,
+                  "label": "Read Aloud",
+                  "prepSec": 35,
+                  "responseSec": 40
+                },
+                {
+                  "type": "repeat_sentence",
+                  "count": 10,
+                  "label": "Repeat Sentence",
+                  "responseSec": 15
+                },
+                {
+                  "type": "describe_image",
+                  "count": 3,
+                  "label": "Describe Image",
+                  "prepSec": 25,
+                  "responseSec": 40
+                },
+                {
+                  "type": "retell_lecture",
+                  "count": 1,
+                  "label": "Re-tell Lecture",
+                  "prepSec": 10,
+                  "responseSec": 40
+                },
+                {
+                  "type": "answer_short_question",
+                  "count": 5,
+                  "label": "Answer Short Question",
+                  "responseSec": 10
+                },
+                {
+                  "type": "summarize_written_text",
+                  "count": 1,
+                  "label": "Summarize Written Text",
+                  "durationMin": 10
+                },
+                {
+                  "type": "write_essay",
+                  "count": 1,
+                  "label": "Write Essay",
+                  "durationMin": 20
+                }
               ]
             },
             "core": {
               "itemSequence": [
-                { "type": "personal_introduction", "count": 1, "label": "Personal Introduction", "durationSec": 25 },
-                { "type": "read_aloud", "count": 5, "label": "Read Aloud", "prepSec": 30, "responseSec": 35 },
-                { "type": "repeat_sentence", "count": 8, "label": "Repeat Sentence", "responseSec": 15 },
-                { "type": "describe_image", "count": 2, "label": "Describe Image", "prepSec": 25, "responseSec": 30 },
-                { "type": "answer_short_question", "count": 5, "label": "Answer Short Question", "responseSec": 10 },
-                { "type": "summarize_written_text", "count": 1, "label": "Summarize Written Text", "durationMin": 10 },
-                { "type": "write_essay", "count": 1, "label": "Write Essay", "durationMin": 20 }
+                {
+                  "type": "personal_introduction",
+                  "count": 1,
+                  "label": "Personal Introduction",
+                  "durationSec": 25
+                },
+                {
+                  "type": "read_aloud",
+                  "count": 5,
+                  "label": "Read Aloud",
+                  "prepSec": 30,
+                  "responseSec": 35
+                },
+                {
+                  "type": "repeat_sentence",
+                  "count": 8,
+                  "label": "Repeat Sentence",
+                  "responseSec": 15
+                },
+                {
+                  "type": "describe_image",
+                  "count": 2,
+                  "label": "Describe Image",
+                  "prepSec": 25,
+                  "responseSec": 30
+                },
+                {
+                  "type": "answer_short_question",
+                  "count": 5,
+                  "label": "Answer Short Question",
+                  "responseSec": 10
+                },
+                {
+                  "type": "summarize_written_text",
+                  "count": 1,
+                  "label": "Summarize Written Text",
+                  "durationMin": 10
+                },
+                {
+                  "type": "write_essay",
+                  "count": 1,
+                  "label": "Write Essay",
+                  "durationMin": 20
+                }
               ]
             }
           },
@@ -352,7 +520,6 @@
             "write_essay"
           ]
         },
-
         "reading": {
           "id": "reading",
           "label": "Reading",
@@ -375,9 +542,12 @@
             "multiple_choice_single": 2
           },
           "totalItems": 15,
-          "reviewRequirements": ["answer_key", "explanation", "word_options_for_fill"]
+          "reviewRequirements": [
+            "answer_key",
+            "explanation",
+            "word_options_for_fill"
+          ]
         },
-
         "listening": {
           "id": "listening",
           "label": "Listening",
@@ -406,42 +576,55 @@
             "write_from_dictation": 3
           },
           "totalItems": 20,
-          "reviewRequirements": ["answer_key", "audio_script"]
+          "reviewRequirements": [
+            "answer_key",
+            "audio_script"
+          ]
         }
       },
-
       "fullMockStructure": {
-        "sections": ["speaking-writing", "reading", "listening"],
+        "sections": [
+          "speaking-writing",
+          "reading",
+          "listening"
+        ],
         "totalDurationMinutes": 136,
         "notes": "Computer-scored; AI rates speaking and writing"
       }
     },
-
     "celpip": {
       "examId": "celpip",
       "examName": "CELPIP",
       "fullName": "Canadian English Language Proficiency Index Program",
       "scale": "CLB 1–12 per component",
       "website": "https://www.celpip.ca",
-
       "variants": [
         {
           "id": "general",
           "label": "CELPIP General",
           "description": "For Canadian immigration and professional certification",
-          "sections": ["listening", "reading", "writing", "speaking"]
+          "sections": [
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ]
         },
         {
           "id": "general_ls",
           "label": "CELPIP General LS",
           "description": "Listening and Speaking only — for citizenship and some immigration streams",
-          "sections": ["listening", "speaking"],
-          "hiddenSections": ["reading", "writing"]
+          "sections": [
+            "listening",
+            "speaking"
+          ],
+          "hiddenSections": [
+            "reading",
+            "writing"
+          ]
         }
       ],
-
       "sections": {
-
         "listening": {
           "id": "listening",
           "label": "Listening",
@@ -457,12 +640,23 @@
             "Part 5: Listening to a Discussion — people with differing viewpoints",
             "Part 6: Listening to Viewpoints — a longer opinion talk"
           ],
-          "questionsPerPart": [8, 5, 6, 5, 8, 6],
+          "questionsPerPart": [
+            8,
+            5,
+            6,
+            5,
+            8,
+            6
+          ],
           "questionCount": 38,
-          "itemTypes": ["multiple_choice_single"],
-          "reviewRequirements": ["answer_key", "audio_script"]
+          "itemTypes": [
+            "multiple_choice_single"
+          ],
+          "reviewRequirements": [
+            "answer_key",
+            "audio_script"
+          ]
         },
-
         "reading": {
           "id": "reading",
           "label": "Reading",
@@ -476,12 +670,21 @@
             "Part 3: Reading for Information — informational text",
             "Part 4: Reading for Viewpoints — opinion or argument text"
           ],
-          "questionsPerPart": [11, 8, 9, 10],
+          "questionsPerPart": [
+            11,
+            8,
+            9,
+            10
+          ],
           "questionCount": 38,
-          "itemTypes": ["multiple_choice_single"],
-          "reviewRequirements": ["answer_key", "explanation"]
+          "itemTypes": [
+            "multiple_choice_single"
+          ],
+          "reviewRequirements": [
+            "answer_key",
+            "explanation"
+          ]
         },
-
         "writing": {
           "id": "writing",
           "label": "Writing",
@@ -493,10 +696,15 @@
             "Task 1: Writing an Email — respond to a real-life situation (150–200 words, 27 min)",
             "Task 2: Responding to Survey Questions — two opinion questions (150–200 words, 26 min)"
           ],
-          "itemTypes": ["email_writing", "survey_response"],
-          "reviewRequirements": ["model_answer", "rubric"]
+          "itemTypes": [
+            "email_writing",
+            "survey_response"
+          ],
+          "reviewRequirements": [
+            "model_answer",
+            "rubric"
+          ]
         },
-
         "speaking": {
           "id": "speaking",
           "label": "Speaking",
@@ -514,36 +722,54 @@
             "Task 7: Expressing Opinions",
             "Task 8: Describing an Unusual Situation"
           ],
-          "itemTypes": ["speaking_task"],
-          "reviewRequirements": ["model_answer", "rubric"]
+          "itemTypes": [
+            "speaking_task"
+          ],
+          "reviewRequirements": [
+            "model_answer",
+            "rubric"
+          ]
         }
       },
-
       "fullMockStructure": {
         "sections": {
-          "general": ["listening", "reading", "writing", "speaking"],
-          "general_ls": ["listening", "speaking"]
+          "general": [
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "general_ls": [
+            "listening",
+            "speaking"
+          ]
         },
-        "totalDurationMinutes": { "general": 175, "general_ls": 67 }
+        "totalDurationMinutes": {
+          "general": 175,
+          "general_ls": 67
+        }
       }
     },
-
     "duolingo": {
       "examId": "duolingo",
       "examName": "Duolingo English Test",
       "fullName": "Duolingo English Test",
       "scale": "10–160",
       "website": "https://englishtest.duolingo.com",
-
       "variants": [
         {
           "id": "standard",
           "label": "Duolingo English Test",
           "description": "Adaptive computer-delivered test",
-          "sections": ["adaptive", "literacy", "comprehension", "conversation", "production"]
+          "sections": [
+            "adaptive",
+            "literacy",
+            "comprehension",
+            "conversation",
+            "production"
+          ]
         }
       ],
-
       "sections": {
         "adaptive": {
           "id": "adaptive",
@@ -565,31 +791,51 @@
             "highlight_the_answer"
           ]
         },
-        "literacy": { "id": "literacy", "label": "Literacy", "icon": "📝", "rendererType": "duolingo-adaptive" },
-        "comprehension": { "id": "comprehension", "label": "Comprehension", "icon": "👂", "rendererType": "duolingo-adaptive" },
-        "conversation": { "id": "conversation", "label": "Conversation", "icon": "💬", "rendererType": "duolingo-adaptive" },
-        "production": { "id": "production", "label": "Production", "icon": "🗣️", "rendererType": "duolingo-adaptive" }
+        "literacy": {
+          "id": "literacy",
+          "label": "Literacy",
+          "icon": "📝",
+          "rendererType": "duolingo-adaptive"
+        },
+        "comprehension": {
+          "id": "comprehension",
+          "label": "Comprehension",
+          "icon": "👂",
+          "rendererType": "duolingo-adaptive"
+        },
+        "conversation": {
+          "id": "conversation",
+          "label": "Conversation",
+          "icon": "💬",
+          "rendererType": "duolingo-adaptive"
+        },
+        "production": {
+          "id": "production",
+          "label": "Production",
+          "icon": "🗣️",
+          "rendererType": "duolingo-adaptive"
+        }
       }
     },
-
     "gre": {
       "examId": "gre",
       "examName": "GRE General Test",
       "fullName": "Graduate Record Examinations General Test",
       "scale": "Verbal 130–170, Quant 130–170, Analytical Writing 0–6",
       "website": "https://www.ets.org/gre",
-
       "variants": [
         {
           "id": "general",
           "label": "GRE General",
           "description": "Standardised test for graduate school admissions",
-          "sections": ["verbal", "quant", "writing"]
+          "sections": [
+            "verbal",
+            "quant",
+            "writing"
+          ]
         }
       ],
-
       "sections": {
-
         "verbal": {
           "id": "verbal",
           "label": "Verbal Reasoning",
@@ -607,9 +853,12 @@
             "reading_comprehension_multiple",
             "reading_comprehension_select_sentence"
           ],
-          "reviewRequirements": ["correct_answer", "explanation", "why_wrong_options_wrong"]
+          "reviewRequirements": [
+            "correct_answer",
+            "explanation",
+            "why_wrong_options_wrong"
+          ]
         },
-
         "quant": {
           "id": "quant",
           "label": "Quantitative Reasoning",
@@ -626,9 +875,13 @@
             "data_interpretation_multiple",
             "numeric_entry"
           ],
-          "reviewRequirements": ["correct_answer", "step_by_step_solution", "formula_used", "why_wrong_options_wrong"]
+          "reviewRequirements": [
+            "correct_answer",
+            "step_by_step_solution",
+            "formula_used",
+            "why_wrong_options_wrong"
+          ]
         },
-
         "writing": {
           "id": "writing",
           "label": "Analytical Writing",
@@ -637,35 +890,46 @@
           "durationMinutes": 30,
           "questionCount": 1,
           "structure": "One 'Analyze an Issue' task (30 min, 500+ words recommended)",
-          "itemTypes": ["analyze_issue"],
-          "reviewRequirements": ["model_essay", "scoring_criteria", "score_explanation"]
+          "itemTypes": [
+            "analyze_issue"
+          ],
+          "reviewRequirements": [
+            "model_essay",
+            "scoring_criteria",
+            "score_explanation"
+          ]
         }
       },
-
       "fullMockStructure": {
-        "sections": ["writing", "verbal", "verbal", "quant", "quant"],
+        "sections": [
+          "writing",
+          "verbal",
+          "verbal",
+          "quant",
+          "quant"
+        ],
         "notes": "Real GRE has 2 Verbal + 2 Quant sections; one may be unscored (research). Writing first."
       }
     },
-
     "gmat": {
       "examId": "gmat",
       "examName": "GMAT Focus Edition",
       "fullName": "Graduate Management Admission Test Focus Edition",
       "scale": "205–805 total (3 sections × 60–90 each)",
       "website": "https://www.mba.com/exams/gmat-focus-edition",
-
       "variants": [
         {
           "id": "focus",
           "label": "GMAT Focus Edition",
           "description": "Current GMAT format (since 2023) — Quant, Verbal, Data Insights",
-          "sections": ["quant", "verbal", "data-insights"]
+          "sections": [
+            "quant",
+            "verbal",
+            "data-insights"
+          ]
         }
       ],
-
       "sections": {
-
         "quant": {
           "id": "quant",
           "label": "Quantitative Reasoning",
@@ -674,11 +938,16 @@
           "durationMinutes": 45,
           "questionCount": 21,
           "uiLayout": "one-question-at-a-time, on-screen calculator",
-          "itemTypes": ["problem_solving"],
+          "itemTypes": [
+            "problem_solving"
+          ],
           "notes": "Focus Edition: problem solving only (no Data Sufficiency in this section)",
-          "reviewRequirements": ["correct_answer", "step_by_step_solution", "formula_used"]
+          "reviewRequirements": [
+            "correct_answer",
+            "step_by_step_solution",
+            "formula_used"
+          ]
         },
-
         "verbal": {
           "id": "verbal",
           "label": "Verbal Reasoning",
@@ -691,9 +960,12 @@
             "reading_comprehension",
             "critical_reasoning"
           ],
-          "reviewRequirements": ["correct_answer", "explanation", "why_wrong_options_wrong"]
+          "reviewRequirements": [
+            "correct_answer",
+            "explanation",
+            "why_wrong_options_wrong"
+          ]
         },
-
         "data-insights": {
           "id": "data-insights",
           "label": "Data Insights",
@@ -709,14 +981,134 @@
             "graphics_interpretation",
             "two_part_analysis"
           ],
-          "reviewRequirements": ["correct_answer", "step_by_step_solution", "data_source_explanation"]
+          "reviewRequirements": [
+            "correct_answer",
+            "step_by_step_solution",
+            "data_source_explanation"
+          ]
         }
       },
-
       "fullMockStructure": {
-        "sections": ["quant", "verbal", "data-insights"],
+        "sections": [
+          "quant",
+          "verbal",
+          "data-insights"
+        ],
         "totalDurationMinutes": 135,
         "notes": "Test taker selects section order. Includes two optional 10-minute breaks."
+      }
+    },
+    "oet": {
+      "examId": "oet",
+      "examName": "OET",
+      "fullName": "Occupational English Test",
+      "scale": "Grade A–E per sub-test",
+      "website": "https://www.oet.com",
+      "variants": [
+        {
+          "id": "healthcare",
+          "label": "OET (Healthcare)",
+          "description": "Profession-specific English for nurses, doctors, pharmacists and 9 other healthcare professions",
+          "sections": [
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ]
+        }
+      ],
+      "sections": {
+        "listening": {
+          "id": "listening",
+          "label": "Listening",
+          "icon": "🎧",
+          "rendererType": "oet-listening",
+          "durationMinutes": 45,
+          "parts": 3,
+          "partDescriptions": [
+            "Part A: Consultation extracts — health professional and patient",
+            "Part B: Short workplace extracts — briefings, handovers",
+            "Part C: Presentation extracts — longer healthcare talks"
+          ],
+          "questionCount": 30,
+          "itemTypes": [
+            "multiple_choice_single"
+          ],
+          "reviewRequirements": [
+            "answer_key",
+            "audio_script"
+          ]
+        },
+        "reading": {
+          "id": "reading",
+          "label": "Reading",
+          "icon": "📖",
+          "rendererType": "oet-reading",
+          "durationMinutes": 60,
+          "parts": 3,
+          "partDescriptions": [
+            "Part A: Expeditious reading across four short healthcare texts",
+            "Part B: Short workplace documents — policies, manuals, guidelines",
+            "Part C: Two longer healthcare texts — detailed comprehension"
+          ],
+          "questionCount": 30,
+          "itemTypes": [
+            "multiple_choice_single"
+          ],
+          "reviewRequirements": [
+            "answer_key",
+            "explanation"
+          ]
+        },
+        "writing": {
+          "id": "writing",
+          "label": "Writing",
+          "icon": "✍️",
+          "rendererType": "oet-writing",
+          "durationMinutes": 45,
+          "tasks": 1,
+          "taskDescriptions": [
+            "Write a referral, discharge or transfer letter from case notes (180–200 words)"
+          ],
+          "itemTypes": [
+            "letter_writing"
+          ],
+          "reviewRequirements": [
+            "model_answer",
+            "rubric"
+          ]
+        },
+        "speaking": {
+          "id": "speaking",
+          "label": "Speaking",
+          "icon": "🎤",
+          "rendererType": "oet-speaking",
+          "durationMinutes": 20,
+          "tasks": 2,
+          "taskDescriptions": [
+            "Two profession-specific role-plays with an interlocutor (patient/carer scenarios)"
+          ],
+          "itemTypes": [
+            "speaking_task"
+          ],
+          "reviewRequirements": [
+            "model_answer",
+            "rubric"
+          ]
+        }
+      },
+      "fullMockStructure": {
+        "sections": {
+          "healthcare": [
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ]
+        },
+        "totalDurationMinutes": {
+          "healthcare": 170
+        }
       }
     }
   }
