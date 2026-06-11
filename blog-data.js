@@ -1537,6 +1537,40 @@
           "body": "Begin planning 18\u201324 months before your intended start. Research universities by rankings, program fit, and location. Take your English test 10\u201312 months ahead to allow retakes. Prepare strong SOPs and secure references early. Submit applications 6\u20139 months before program start. Track deadlines carefully; some scholarships close earlier than university deadlines. Practise free English test questions on LandingPrep to build confidence and finish your test on time."
         }
       ]
+    },
+    {
+      "id": "duolingo-english-test-sample-questions",
+      "tag": "Duolingo",
+      "date": "2026",
+      "title": "Duolingo English Test Sample Questions & Question Types Explained",
+      "excerpt": "Learn the main Duolingo English Test question types with real examples \u2014 Read Aloud, Write About the Photo, Listen and Type, interactive, and speaking/writing tasks.",
+      "kw": "Duolingo English Test, DET sample questions, Duolingo test format, DET question types",
+      "sections": [
+        {
+          "h": "Read Aloud Task Overview",
+          "body": "You read a sentence aloud into your microphone. The test evaluates pronunciation, intonation, and fluency. Sentences are 10\u201315 words, drawn from news, academic, and everyday contexts. Example: 'The research team discovered a new species of butterfly in the rainforest.' Speak naturally and clearly. Rushing, mumbling, or heavy hesitation reduces your score. Practice with a timer to match a natural speaking pace."
+        },
+        {
+          "h": "Write About the Photo Task",
+          "body": "You see a photo and write a short description in about a minute. Scoring considers vocabulary, grammar, and relevance. Example: 'A busy market street with colourful stalls selling fruit and vegetables. People browse the goods while the morning sun casts long shadows. The scene is vibrant and energetic.' Use complete sentences, vary vocabulary, avoid repetition, and describe what you genuinely see."
+        },
+        {
+          "h": "Listen and Type Task",
+          "body": "You hear a sentence and type it exactly. Sentences contain 15\u201320 words at natural speed. Example heard: 'International students often face cultural adjustment during their first semester.' Accuracy is critical; spelling, punctuation, and word count all matter. Replay it the allowed number of times, and focus on high-frequency words and common phrases."
+        },
+        {
+          "h": "Interactive Reading and Listening",
+          "body": "You read a short passage or hear a conversation, then answer comprehension questions. They test understanding, inference, and vocabulary. Example (listening): 'Two colleagues discuss a project delay \u2014 why is the deadline at risk?' Answer based only on the passage or audio, not prior knowledge. Predicting the topic before you read or listen helps you focus."
+        },
+        {
+          "h": "Speaking and Writing Responses",
+          "body": "You hear or read a prompt and record a 30\u201390 second spoken response, or write an extended answer. Example: 'Describe a time you overcame a challenge.' Scoring evaluates grammar, vocabulary, fluency, and coherence \u2014 not perfection. Structure your response: a brief introduction, reasons or examples, and a short conclusion."
+        },
+        {
+          "h": "Tips to Maximize Your DET Score",
+          "body": "Practice all task types equally. For Read Aloud, slow down and enunciate. For Write About the Photo, draft quickly without overthinking. For Listen and Type, use headphones to catch details. For interactive tasks, skim to anticipate vocabulary. For speaking and writing, rehearse common prompts aloud to build fluency. Take full timed practice tests. Practise free Duolingo-style preparation on LandingPrep to refine your skills."
+        }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;
