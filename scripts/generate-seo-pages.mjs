@@ -51,7 +51,7 @@ const COUNTRY_DATA = _cw.LP_COUNTRY_DATA || [];
 try { new Function("window", readFileSync(join(ROOT, "scholarship-data.jsx"), "utf8"))(_cw); } catch (e) { console.warn("scholarship-data load failed:", e.message); }
 const SCHOLARSHIP_DATA = _cw.LP_SCHOLARSHIPS || [];
 try { new Function("window", readFileSync(join(ROOT, "blog-data.jsx"), "utf8"))(_cw); } catch (e) { console.warn("blog-data load failed:", e.message); }
-const BLOG_EXTRA = _cw.LP_BLOG_EXTRA || [];
+const BLOG_EXTRA = (_cw.LP_BLOG_EXTRA || []).filter((p) => p && p.id);
 
 // ── Exam data (mirrors data.jsx; kept inline so the generator has no deps) ──
 const EXAMS = {
