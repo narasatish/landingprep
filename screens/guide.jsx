@@ -10,6 +10,26 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
   const [tab, setTab] = useStateG("Overview");
   if (!exam) return null;
 
+  // Bulletproofing: every field a tab maps/joins over MUST be an array. Coerce any
+  // string/missing value to a sensible array so no data-shape mismatch can ever crash a tab.
+  const toArr = (v) => Array.isArray(v) ? v
+    : (v == null || v === "") ? []
+    : (typeof v === "string" ? v.split(/\s*;\s*|\.\s+(?=[A-Z])/).map(s => s.trim().replace(/\.$/, "")).filter(Boolean) : [v]);
+  exam = {
+    ...exam,
+    streams: toArr(exam.streams).length ? toArr(exam.streams) : [exam.name],
+    registration: toArr(exam.registration),
+    pattern: Array.isArray(exam.pattern) ? exam.pattern : [],
+    sections_detail: Array.isArray(exam.sections_detail) ? exam.sections_detail : [],
+    scoreGuide: Array.isArray(exam.scoreGuide) ? exam.scoreGuide : [],
+    commonMistakes: toArr(exam.commonMistakes),
+    faqs: Array.isArray(exam.faqs) ? exam.faqs : [],
+  };
+
+  // mockAlias lets a guide-only exam reuse another exam's mock engine (e.g. PTE Core → PTE Academic).
+  const mockId = exam.mockAlias || (exam.guideOnly ? null : exam.id);
+  const aliasName = exam.mockAlias ? (((exams || []).find((e) => e.id === exam.mockAlias)) || {}).name : null;
+
   const accentStyle = { "--exam-colour": exam.colour };
 
   return (
@@ -54,9 +74,9 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
             <p className="body-lg muted" style={{ maxWidth: 700, marginTop: 18 }}>{exam.blurb}</p>
 
             <div className="row-gap-12" style={{ marginTop: 26 }}>
-              {exam.guideOnly
-                ? <a className="btn btn-primary" href="#guide-format">Read the full guide ↓</a>
-                : <button className="btn btn-primary" onClick={() => { window.location.hash = '#/exam-prep/' + exam.id; }}>Start mock test →</button>}
+              {mockId
+                ? <button className="btn btn-primary" onClick={() => { window.location.hash = '#/exam-prep/' + mockId; }}>{aliasName ? `Practise with ${aliasName} mocks →` : "Start mock test →"}</button>
+                : <a className="btn btn-primary" href="#guide-format">Read the full guide ↓</a>}
               <a className="btn" href={exam.official} target="_blank" rel="noopener noreferrer">Official site ↗</a>
               <a className="btn" href={exam.booking} target="_blank" rel="noopener noreferrer">Book your slot ↗</a>
             </div>
@@ -67,7 +87,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
               [exam.duration, "Duration"],
               [exam.score, "Score scale"],
               [exam.sections, "Sections"],
-              [exam.guideOnly ? "Free guide" : exam.mocks + " free", exam.guideOnly ? "Format & tips" : "Mock tests"],
+              [mockId ? (aliasName ? "Shared mocks" : exam.mocks + " free") : "Free guide", mockId ? "Mock tests" : "Format & tips"],
             ].map(([k, v]) => (
               <div className="guide-stat" key={v}>
                 <div className="k">{k}</div>
@@ -103,7 +123,19 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
           {/* Sidebar */}
           <aside>
             <div className="aside-card">
-              {exam.guideOnly ? (
+              {exam.mockAlias ? (
+                <>
+                  <h3 className="h2" style={{ color: "white" }}>Same format as {aliasName}</h3>
+                  <p>{exam.name} shares its test structure with {aliasName} — practise on our free {aliasName} mocks with real timings and you're preparing for {exam.name} too.</p>
+                  <button
+                    className="btn"
+                    style={{ background: "white", color: "var(--ink)", borderColor: "white", marginTop: 16 }}
+                    onClick={() => { window.location.hash = '#/exam-prep/' + exam.mockAlias; }}
+                  >
+                    Practise {aliasName} mocks →
+                  </button>
+                </>
+              ) : exam.guideOnly ? (
                 <>
                   <h3 className="h2" style={{ color: "white" }}>Full {exam.name} guide</h3>
                   <p>This is your complete {exam.name} format, scoring and prep guide. Full practice mocks are on the way — meanwhile, explore our free mock tests for IELTS, TOEFL, PTE, CELPIP and more.</p>
