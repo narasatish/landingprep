@@ -15,6 +15,7 @@
   const META = {
     german: { name: "German", code: "de-DE", lang: "de", tutor: "Anna", hi: "Hallo! Wie heißt du?", hiEn: "Hello! What's your name?", retry: "Sag das noch einmal, bitte.", retryEn: "Say that again, please.", cont: "Weiter geht's!", fallback: "Sehr gut! Und du? (Very good! And you?)" },
     french: { name: "French", code: "fr-FR", lang: "fr", tutor: "Marie", hi: "Bonjour ! Comment tu t'appelles ?", hiEn: "Hello! What's your name?", retry: "Répète, s'il te plaît.", retryEn: "Say that again, please.", cont: "On continue !", fallback: "Très bien ! Et toi ? (Very good! And you?)" },
+    spanish: { name: "Spanish", code: "es-ES", lang: "es", tutor: "Lucía", hi: "¡Hola! ¿Cómo te llamas?", hiEn: "Hello! What's your name?", retry: "Repite, por favor.", retryEn: "Say that again, please.", cont: "¡Seguimos!", fallback: "¡Muy bien! ¿Y tú? (Very good! And you?)" },
   };
 
   // Pick the BEST available browser voice for a language — neural/online voices are

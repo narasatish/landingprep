@@ -4,13 +4,13 @@
 // Grammar & Vocabulary, and Listening (spoken via the live native voice). Scored.
 (function () {
   const { useState } = React;
-  const TTS = { german: "de", french: "fr" };
+  const TTS = { german: "de", french: "fr", spanish: "es" };
   function speak(text, code) { try { if (window.LP_TTS && window.LP_TTS.speakOne) window.LP_TTS.speakOne(text, "Kore", null, code); } catch (e) {} }
 
   function LangMock({ langId }) {
     const mocks = (window.LP_LANG_MOCKS && window.LP_LANG_MOCKS[langId]) || [];
     const code = TTS[langId] || "de";
-    const name = langId === "french" ? "French" : "German";
+    const name = ((window.LP_LANGUAGES && window.LP_LANGUAGES[langId]) || {}).name || "German";
     const [active, setActive] = useState(null);
     const [ans, setAns] = useState({});
     const [done, setDone] = useState(false);

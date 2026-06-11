@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const de = JSON.parse(fs.readFileSync(path.join(ROOT, "data/de-pool.json"), "utf8"));
 const fr = JSON.parse(fs.readFileSync(path.join(ROOT, "data/fr-pool.json"), "utf8"));
+const es = JSON.parse(fs.readFileSync(path.join(ROOT, "data/es-pool.json"), "utf8"));
 
 // Strict validation — fail loudly rather than ship bad answers.
 function validate(pool, name) {
@@ -22,12 +23,15 @@ function validate(pool, name) {
 }
 validate(de, "german");
 validate(fr, "french");
+validate(es, "spanish");
 
 const CFG = {
   de: { name: "German", style: "Goethe-style",
     readingTitle: "Lesen · Reading", grammarTitle: "Grammatik & Wortschatz · Grammar & Vocabulary", listeningTitle: "Hören · Listening" },
   fr: { name: "French", style: "DELF-style",
     readingTitle: "Compréhension écrite · Reading", grammarTitle: "Grammaire & Vocabulaire · Grammar & Vocabulary", listeningTitle: "Compréhension orale · Listening" },
+  es: { name: "Spanish", style: "DELE-style",
+    readingTitle: "Comprensión de lectura · Reading", grammarTitle: "Gramática y Vocabulario · Grammar & Vocabulary", listeningTitle: "Comprensión auditiva · Listening" },
 };
 
 const file = `/* global window */
@@ -42,6 +46,7 @@ const file = `/* global window */
 (function () {
   var DE_POOL = ${JSON.stringify(de)};
   var FR_POOL = ${JSON.stringify(fr)};
+  var ES_POOL = ${JSON.stringify(es)};
   var CFG = ${JSON.stringify(CFG)};
   var COUNT = 30;
 
@@ -68,7 +73,7 @@ const file = `/* global window */
     return mocks;
   }
 
-  window.LP_LANG_MOCKS = { german: buildMocks(DE_POOL, "de"), french: buildMocks(FR_POOL, "fr") };
+  window.LP_LANG_MOCKS = { german: buildMocks(DE_POOL, "de"), french: buildMocks(FR_POOL, "fr"), spanish: buildMocks(ES_POOL, "es") };
 })();
 `;
 

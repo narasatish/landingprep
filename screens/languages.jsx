@@ -130,7 +130,8 @@
 
   function StoriesView({ langId }) {
     const stories = (window.LP_LANG_STORIES && window.LP_LANG_STORIES[langId]) || [];
-    const code = langId === "french" ? "fr" : "de";
+    const lang = (window.LP_LANGUAGES && window.LP_LANGUAGES[langId]) || {};
+    const code = lang.code || "de";
     const [active, setActive] = useState(null);
     const [playing, setPlaying] = useState(false);
     const stopRef = useRef(false);
@@ -145,7 +146,7 @@
       return (
         <div className="tool-card">
           <h3>📖 Graded reading stories</h3>
-          <p className="tool-sub">Short stories &amp; dialogues with audio and a glossary — the natural way to absorb {langId === "french" ? "French" : "German"}.</p>
+          <p className="tool-sub">Short stories &amp; dialogues with audio and a glossary — the natural way to absorb {lang.name || "German"}.</p>
           <div className="deck-grid">
             {stories.map((s) => (
               <button key={s.id} className="deck-card" onClick={() => setActive(s)}>

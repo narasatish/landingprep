@@ -1401,6 +1401,19 @@ const LANG_SEO = {
       { q: "Can I practise speaking French with AI?", a: "Yes — our hands-free AI partner chats with you in simple French, gently auto-corrects your mistakes, speaks in a natural French voice and shows English translations. Just press Start and talk." },
     ],
   },
+  spanish: {
+    name: "Spanish", native: "Español", slug: "learn-spanish", flag: "🇪🇸",
+    countries: "Spain, Mexico and across Latin America", tuition: "low-tuition public universities in Spain and Latin America",
+    exams: "DELE (A1–C2), SIELE and CCSE",
+    units: ["Greetings &amp; introductions", "Numbers, days &amp; time", "Articles &amp; gender (el/la/los/las)", "Ser vs estar &amp; key verbs", "Survival Spanish for uni, shops &amp; café"],
+    kw: "learn spanish free, free spanish course online, spanish a1, learn spanish for beginners, dele a1 practice, siele practice free, spanish for study abroad, free spanish lessons, spanish vocabulary with audio, spanish speaking practice ai, spanish mock test free, study in spain language requirement, learn spanish online free for beginners",
+    faqs: [
+      { q: "Is the Spanish course on LandingPrep really free?", a: "Yes — the Spanish A1 course, vocabulary with natural-voice pronunciation, AI speaking practice and DELE-style mock tests are 100% free with no signup and no payment." },
+      { q: "What level of Spanish do I need to study in Spain?", a: "Most Spanish-taught degrees require B1–B2 (DELE or SIELE); many English-taught programmes need no Spanish. Start at A1 here and build up." },
+      { q: "Which Spanish exam should I take?", a: "The DELE (issued by Instituto Cervantes) is the most recognised worldwide and is lifelong; SIELE is faster and fully digital. The CCSE is needed for Spanish nationality. Pick the one your university or pathway accepts." },
+      { q: "Can I practise speaking Spanish with AI for free?", a: "Yes — our hands-free AI speaking partner holds a real two-way Spanish conversation, gently auto-corrects your mistakes, replies in a natural Spanish voice and shows the English translation. Just press Start and talk." },
+    ],
+  },
 };
 function languageLandingPage(key) {
   const L = LANG_SEO[key];
@@ -1439,7 +1452,7 @@ function languageLandingPage(key) {
 ${faqBlock(L.faqs)}
 ${relatedGrid([
   { label: `Start the free ${L.name} course`, href: "/#/languages" },
-  { label: key === "german" ? "Learn French free" : "Learn German free", href: key === "german" ? "/learn-french/" : "/learn-german/" },
+  ...Object.keys(LANG_SEO).filter((k) => k !== key).map((k) => ({ label: `Learn ${LANG_SEO[k].name} free`, href: `/${LANG_SEO[k].slug}/` })),
   { label: "Free exam prep lessons (PPT)", href: "/prep-lessons/" },
   { label: "Study abroad — universities &amp; scholarships", href: "/#/colleges" },
 ])}`;

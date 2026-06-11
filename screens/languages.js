@@ -48,7 +48,8 @@
   }
   function StoriesView({ langId }) {
     const stories = window.LP_LANG_STORIES && window.LP_LANG_STORIES[langId] || [];
-    const code = langId === "french" ? "fr" : "de";
+    const lang = window.LP_LANGUAGES && window.LP_LANGUAGES[langId] || {};
+    const code = lang.code || "de";
     const [active, setActive] = useState(null);
     const [playing, setPlaying] = useState(false);
     const stopRef = useRef(false);
@@ -70,7 +71,7 @@
     }
     if (!stories.length) return /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Stories are loading\u2026"));
     if (!active) {
-      return /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h3", null, "\u{1F4D6} Graded reading stories"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Short stories & dialogues with audio and a glossary \u2014 the natural way to absorb ", langId === "french" ? "French" : "German", "."), /* @__PURE__ */ React.createElement("div", { className: "deck-grid" }, stories.map((s) => /* @__PURE__ */ React.createElement("button", { key: s.id, className: "deck-card", onClick: () => setActive(s) }, /* @__PURE__ */ React.createElement("span", { className: "deck-card-emoji" }, s.emoji || "\u{1F4D6}"), /* @__PURE__ */ React.createElement("span", { className: "deck-card-name" }, s.title), /* @__PURE__ */ React.createElement("span", { className: "deck-card-meta" }, s.level, " \xB7 ", s.lines.length, " lines \u2192")))));
+      return /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h3", null, "\u{1F4D6} Graded reading stories"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Short stories & dialogues with audio and a glossary \u2014 the natural way to absorb ", lang.name || "German", "."), /* @__PURE__ */ React.createElement("div", { className: "deck-grid" }, stories.map((s) => /* @__PURE__ */ React.createElement("button", { key: s.id, className: "deck-card", onClick: () => setActive(s) }, /* @__PURE__ */ React.createElement("span", { className: "deck-card-emoji" }, s.emoji || "\u{1F4D6}"), /* @__PURE__ */ React.createElement("span", { className: "deck-card-name" }, s.title), /* @__PURE__ */ React.createElement("span", { className: "deck-card-meta" }, s.level, " \xB7 ", s.lines.length, " lines \u2192")))));
     }
     return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "lang-mock-bar" }, /* @__PURE__ */ React.createElement("a", { className: "deck-back", onClick: () => {
       stopRef.current = true;

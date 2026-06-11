@@ -5,7 +5,8 @@
   const SS = window.speechSynthesis || null;
   const META = {
     german: { name: "German", code: "de-DE", lang: "de", tutor: "Anna", hi: "Hallo! Wie hei\xDFt du?", hiEn: "Hello! What's your name?", retry: "Sag das noch einmal, bitte.", retryEn: "Say that again, please.", cont: "Weiter geht's!", fallback: "Sehr gut! Und du? (Very good! And you?)" },
-    french: { name: "French", code: "fr-FR", lang: "fr", tutor: "Marie", hi: "Bonjour ! Comment tu t'appelles ?", hiEn: "Hello! What's your name?", retry: "R\xE9p\xE8te, s'il te pla\xEEt.", retryEn: "Say that again, please.", cont: "On continue !", fallback: "Tr\xE8s bien ! Et toi ? (Very good! And you?)" }
+    french: { name: "French", code: "fr-FR", lang: "fr", tutor: "Marie", hi: "Bonjour ! Comment tu t'appelles ?", hiEn: "Hello! What's your name?", retry: "R\xE9p\xE8te, s'il te pla\xEEt.", retryEn: "Say that again, please.", cont: "On continue !", fallback: "Tr\xE8s bien ! Et toi ? (Very good! And you?)" },
+    spanish: { name: "Spanish", code: "es-ES", lang: "es", tutor: "Luc\xEDa", hi: "\xA1Hola! \xBFC\xF3mo te llamas?", hiEn: "Hello! What's your name?", retry: "Repite, por favor.", retryEn: "Say that again, please.", cont: "\xA1Seguimos!", fallback: "\xA1Muy bien! \xBFY t\xFA? (Very good! And you?)" }
   };
   let VOICES = [];
   function refreshVoices() {

@@ -1,0 +1,1107 @@
+{
+  "reading": [
+    {
+      "topic": "introducing-a-student",
+      "passage": "Hola, me llamo María y soy estudiante de ingeniería en la Universidad de Madrid. Tengo dieciocho años y soy de Barcelona. Mis padres son médicos y tengo un hermano menor que se llama Carlos. Me encanta estudiar idiomas y jugar al fútbol en mi tiempo libre.",
+      "questions": [
+        {
+          "q": "¿Cuál es la carrera de María? (What is María's major?)",
+          "options": [
+            "Medicina",
+            "Educación",
+            "Derecho",
+            "Ingeniería"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "¿De dónde es María? (Where is María from?)",
+          "options": [
+            "Madrid",
+            "Valencia",
+            "Barcelona",
+            "Sevilla"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Cuántos años tiene María? (How old is María?)",
+          "options": [
+            "Dieciocho",
+            "Diecisiete",
+            "Diecinueve",
+            "Veinte"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué le encanta hacer en su tiempo libre? (What does she love to do in her free time?)",
+          "options": [
+            "Jugar al fútbol",
+            "Estudiar medicina",
+            "Ver películas",
+            "Trabajar"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "topic": "daily-routine",
+      "passage": "Mi día comienza a las siete de la mañana. Primero, me ducho y desayuno. Luego, voy a la universidad para mis clases. Estudio matemáticas, inglés y historia. A mediodía, como con mis amigos en la cafetería. Por la tarde, voy a la biblioteca y hago mis tareas. Por la noche, ceno con mi familia y veo la televisión antes de dormir.",
+      "questions": [
+        {
+          "q": "¿A qué hora comienza el día? (What time does the day begin?)",
+          "options": [
+            "A las seis",
+            "A las siete",
+            "A las ocho",
+            "A las nueve"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Dónde come a mediodía? (Where does he/she eat at midday?)",
+          "options": [
+            "En casa",
+            "En la biblioteca",
+            "En un restaurante",
+            "En la cafetería"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "¿Cuántas materias estudia? (How many subjects does he/she study?)",
+          "options": [
+            "Tres",
+            "Dos",
+            "Cuatro",
+            "Cinco"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué hace por la noche antes de dormir? (What does he/she do at night before sleeping?)",
+          "options": [
+            "Lee un libro",
+            "Juega a videojuegos",
+            "Ve la televisión",
+            "Usa el teléfono"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "topic": "at-the-cafe",
+      "passage": "Es un sábado por la mañana. Sofia y su amiga Laura están en una cafetería pequeña en el centro de la ciudad. Sofia pide un café con leche y un croissant. Laura quiere un té y una tarta de chocolate. El camarero es muy amable y trae los pedidos rápidamente. Las dos amigas hablan sobre sus planes para el fin de semana mientras disfrutan de sus bebidas.",
+      "questions": [
+        {
+          "q": "¿Qué pide Sofia? (What does Sofia order?)",
+          "options": [
+            "Té y tarta",
+            "Jugo y pastel",
+            "Café y chocolate",
+            "Café con leche y croissant"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "¿Dónde está la cafetería? (Where is the café located?)",
+          "options": [
+            "En las afueras",
+            "En el centro de la ciudad",
+            "En el parque",
+            "En la playa"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Cómo es el camarero? (What is the waiter like?)",
+          "options": [
+            "Indiferente",
+            "Rápido",
+            "Amable",
+            "Lento"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Qué trae el camarero rápidamente? (What does the waiter bring quickly?)",
+          "options": [
+            "La cuenta",
+            "El menú",
+            "Los pedidos",
+            "Las propinas"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "topic": "family",
+      "passage": "Mi familia es muy grande. Vivo con mis padres, mis dos hermanos y mi abuela. Mi padre es profesor de historia y mi madre trabaja en un banco. Mi hermano mayor, Diego, es abogado y mi hermana pequeña, Ana, todavía estudia secundaria. Mi abuela es jubilada y pasa mucho tiempo con nosotros contando historias. Los domingos, toda la familia se reúne para comer juntos.",
+      "questions": [
+        {
+          "q": "¿Cuántos hermanos tiene? (How many siblings does he/she have?)",
+          "options": [
+            "Uno",
+            "Tres",
+            "Dos",
+            "Cuatro"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Cuál es la profesión del padre? (What is the father's profession?)",
+          "options": [
+            "Profesor de historia",
+            "Abogado",
+            "Banquero",
+            "Ingeniero"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Dónde trabaja la madre? (Where does the mother work?)",
+          "options": [
+            "En un hospital",
+            "En una escuela",
+            "En un banco",
+            "En un restaurante"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Qué hace la familia los domingos? (What does the family do on Sundays?)",
+          "options": [
+            "Come junta",
+            "Visita el museo",
+            "Va al cine",
+            "Pasea por la ciudad"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "topic": "shopping",
+      "passage": "Hoy necesito hacer compras para mi casa. Voy al mercado por la mañana. Compro frutas frescas: manzanas, plátanos y naranjas. También compro verduras como tomates, lechuga y cebolla. En la panadería, compro pan de trigo. Por último, voy a la tienda de ropa para buscar un jersey nuevo. Gasto treinta euros en total. Llego a casa cansado pero contento con mis compras.",
+      "questions": [
+        {
+          "q": "¿Cuáles son las frutas que compra? (What fruits does he/she buy?)",
+          "options": [
+            "Manzanas, plátanos y naranjas",
+            "Uvas y fresas",
+            "Piñas y limones",
+            "Cerezas y duraznos"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Dónde compra el pan? (Where does he/she buy bread?)",
+          "options": [
+            "En la panadería",
+            "En el supermercado",
+            "En el mercado",
+            "En la tienda"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuánto gasta en total? (How much does he/she spend in total?)",
+          "options": [
+            "Veinte euros",
+            "Treinta euros",
+            "Cuarenta euros",
+            "Cincuenta euros"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Cómo se siente al llegar a casa? (How does he/she feel when arriving home?)",
+          "options": [
+            "Enojado",
+            "Cansado pero contento",
+            "Triste",
+            "Aburrido"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "topic": "directions",
+      "passage": "Un turista está perdido en la ciudad. Pregunta a un señor: «¿Dónde está la estación de tren?» El señor responde: «No está lejos. Camine recto por esta calle, luego gire a la izquierda en la plaza. Después, verá la estación enfrente de un parque verde.» El turista da las gracias y continúa su camino. A los diez minutos, llega a la estación.",
+      "questions": [
+        {
+          "q": "¿Qué pregunta el turista? (What does the tourist ask?)",
+          "options": [
+            "¿Dónde está el banco?",
+            "¿Dónde está el hospital?",
+            "¿Dónde está la iglesia?",
+            "¿Dónde está la estación de tren?"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "¿Está lejos la estación? (Is the station far?)",
+          "options": [
+            "Sí, está muy lejos",
+            "Está a una hora",
+            "No, no está lejos",
+            "Está en otro pueblo"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Hacia dónde debe girar en la plaza? (Which direction should he turn at the square?)",
+          "options": [
+            "A la derecha",
+            "Recto",
+            "Hacia atrás",
+            "A la izquierda"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "¿Cuánto tiempo tarda en llegar? (How long does it take to arrive?)",
+          "options": [
+            "Cinco minutos",
+            "Veinte minutos",
+            "Diez minutos",
+            "Media hora"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "topic": "weekend-plans",
+      "passage": "El viernes por la noche, mis amigos y yo planificamos nuestro fin de semana. El sábado por la mañana, vamos a jugar al baloncesto en el gimnasio. Por la tarde, vamos a ver una película en el cine. El domingo, hacemos una excursión a las montañas cercanas. Nos llevaremos mochilas con agua y comida. Esperamos pasar un fin de semana divertido y memorable con gente que nos importa.",
+      "questions": [
+        {
+          "q": "¿Cuándo planifican el fin de semana? (When do they plan the weekend?)",
+          "options": [
+            "El jueves",
+            "El sábado por la mañana",
+            "El viernes por la noche",
+            "El domingo"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Qué hacen el sábado por la mañana? (What do they do Saturday morning?)",
+          "options": [
+            "Ven una película",
+            "Duermen",
+            "Van a las montañas",
+            "Juegan al baloncesto"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "¿Dónde van el domingo? (Where do they go on Sunday?)",
+          "options": [
+            "Al cine",
+            "Al gimnasio",
+            "Al parque",
+            "A las montañas cercanas"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "¿Qué llevan en sus mochilas? (What do they bring in their backpacks?)",
+          "options": [
+            "Agua y comida",
+            "Libros y cuadernos",
+            "Ropa y zapatos",
+            "Dinero y documentos"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "topic": "doctor-appointment",
+      "passage": "Tengo una cita con el médico el lunes a las tres de la tarde. Llego al consultorio cinco minutos antes de la hora. La recepcionista me pide el documento de identidad y me pregunta si es la primera vez que vengo. El médico me examina y me dice que tengo una pequeña infección en la garganta. Me receta antibióticos y me recomienza descansar y beber mucho té caliente. Me siento mejor después de recibir el tratamiento.",
+      "questions": [
+        {
+          "q": "¿Cuándo es la cita con el médico? (When is the doctor's appointment?)",
+          "options": [
+            "Lunes por la mañana",
+            "Miércoles",
+            "Martes por la tarde",
+            "Lunes a las tres de la tarde"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "¿Qué problema tiene el paciente? (What problem does the patient have?)",
+          "options": [
+            "Una infección en el oído",
+            "Una infección en la cabeza",
+            "Una infección en el estómago",
+            "Una infección en la garganta"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "¿Qué receta el médico? (What does the doctor prescribe?)",
+          "options": [
+            "Jarabe para la tos",
+            "Analgésicos",
+            "Vitaminas",
+            "Antibióticos"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "¿Qué le recomienda beber? (What does he recommend drinking?)",
+          "options": [
+            "Té caliente",
+            "Jugos de fruta",
+            "Agua fría",
+            "Café"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "q": "¿Cuál es el verbo ser en primera persona presente? (What is 'to be' in the first person present?)",
+      "options": [
+        "Estoy",
+        "Eres",
+        "Somos",
+        "Soy"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Cuál es el artículo definido singular masculino? (What is the definite article for singular masculine?)",
+      "options": [
+        "La",
+        "Las",
+        "El",
+        "Los"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Cuál es el artículo definido plural femenino? (What is the definite article for plural feminine?)",
+      "options": [
+        "El",
+        "La",
+        "Los",
+        "Las"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Completa: 'Yo ___ un estudiante.' (Complete: 'I am a student.')",
+      "options": [
+        "estoy",
+        "voy",
+        "tengo",
+        "soy"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Cómo se escribe el número 15 en español? (How do you write the number 15 in Spanish?)",
+      "options": [
+        "Diez y cinco",
+        "Quincena",
+        "Diecicinco",
+        "Quince"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Cuál es el possesivo para 'my'? (What is the possessive for 'my'?)",
+      "options": [
+        "Mi",
+        "Su",
+        "Tu",
+        "Nuestro"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Completa: '___ libro es azul.' (Complete: '___ book is blue.')",
+      "options": [
+        "El",
+        "La",
+        "Los",
+        "Las"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cuál es el verbo 'to have' en primera persona presente? (What is 'to have' in the first person present?)",
+      "options": [
+        "Tienes",
+        "Tiene",
+        "Tengo",
+        "Tenemos"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Cuál es el verbo 'to go' en la forma infinitivo? (What is 'to go' in the infinitive form?)",
+      "options": [
+        "Voy",
+        "Ir",
+        "Vamos",
+        "Iba"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Completa: 'Ella ___ al cine.' (Complete: 'She goes to the cinema.')",
+      "options": [
+        "vamos",
+        "voy",
+        "va",
+        "van"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Cuál es la pregunta 'where' en español? (What is the question word for 'where' in Spanish?)",
+      "options": [
+        "Qué",
+        "Cuándo",
+        "Dónde",
+        "Cómo"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Completa: '¿___ años tienes?' (Complete: 'How old are you?')",
+      "options": [
+        "Qué",
+        "Dónde",
+        "Cuándo",
+        "Cuántos"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Cuál es el verbo 'to do/make' en presente? (What is 'to do/make' in the present?)",
+      "options": [
+        "Hacen",
+        "Hacemos",
+        "Hace",
+        "Hago"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Completa: 'Nosotros ___ estudiantes.' (Complete: 'We are students.')",
+      "options": [
+        "tenemos",
+        "estamos",
+        "somos",
+        "vamos"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Cuál es el verbo 'to want' en tercera persona? (What is 'to want' in the third person?)",
+      "options": [
+        "Quiere",
+        "Quiero",
+        "Queremos",
+        "Quieren"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo se dice 'the girls' en español? (How do you say 'the girls' in Spanish?)",
+      "options": [
+        "El niñas",
+        "Las niñas",
+        "La niñas",
+        "Los niñas"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Completa: 'La casa es ___.' (Complete: 'The house is ___.' — which color word fits?)",
+      "options": [
+        "rojas",
+        "rojos",
+        "rojo",
+        "roja"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Cuál es la preposición para 'in'? (What is the preposition for 'in'?)",
+      "options": [
+        "A",
+        "De",
+        "Para",
+        "En"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Cuál es la preposición para 'from'? (What is the preposition for 'from'?)",
+      "options": [
+        "De",
+        "A",
+        "En",
+        "Con"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Completa: 'Voy ___ la escuela.' (Complete: 'I go to school.')",
+      "options": [
+        "de",
+        "a",
+        "en",
+        "con"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Cómo se dice '¿Cómo estás?' formalmente? (How do you say 'How are you?' formally?)",
+      "options": [
+        "¿Cómo estoy?",
+        "¿Cómo estamos?",
+        "¿Cómo está?",
+        "¿Cómo están?"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Completa: '¿___ te llamas?' (Complete: '__ do you call yourself?' — What is your name?)",
+      "options": [
+        "Cuál",
+        "Dónde",
+        "Qué",
+        "Cómo"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Cuál es el verbo estar en tercera persona singular? (What is 'estar' in third person singular?)",
+      "options": [
+        "Está",
+        "Estás",
+        "Estoy",
+        "Están"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Completa: 'Ellos ___ en la biblioteca.' (Complete: 'They are in the library.')",
+      "options": [
+        "somos",
+        "estamos",
+        "sois",
+        "están"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Cómo se dice 'your' (tú) en español? (How do you say 'your' (informal) in Spanish?)",
+      "options": [
+        "Mi",
+        "Nuestro",
+        "Su",
+        "Tu"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Completa: '___ hermano es ingeniero.' (Complete: 'My brother is an engineer.')",
+      "options": [
+        "Tu",
+        "Su",
+        "Nuestro",
+        "Mi"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Cuál es el número 21 en español? (What is the number 21 in Spanish?)",
+      "options": [
+        "Veinte y uno",
+        "Veinte uno",
+        "Veintiuno",
+        "Dieciocho"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Cómo se pregunta por la hora? (How do you ask for the time?)",
+      "options": [
+        "¿Cuánto es la hora?",
+        "¿Dónde está la hora?",
+        "¿Cuándo es la hora?",
+        "¿Qué hora es?"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Cuál es el verbo 'venir' en primera persona? (What is 'to come' in the first person?)",
+      "options": [
+        "Vienen",
+        "Vienes",
+        "Viene",
+        "Vengo"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Completa: 'Mi abuela ___ en Madrid.' (Complete: 'My grandmother lives in Madrid.')",
+      "options": [
+        "va",
+        "vive",
+        "tiene",
+        "viene"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Cuál es el artículo indefinido singular masculino? (What is the indefinite article for singular masculine?)",
+      "options": [
+        "Un",
+        "Unas",
+        "Una",
+        "Unos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Completa: 'Él quiere ___ café.' (Complete: 'He wants a coffee.')",
+      "options": [
+        "un",
+        "una",
+        "unos",
+        "unas"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cuál es la respuesta a '¿Cómo te llamas?' (What is a typical answer to 'What is your name?')",
+      "options": [
+        "Me llamo Pablo",
+        "Estoy bien",
+        "Soy estudiante",
+        "Tengo dieciocho años"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo se dice 'I like'? (How do you say 'I like'?)",
+      "options": [
+        "Me gustan",
+        "Yo gusto",
+        "Me gusta",
+        "Yo amo"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Completa: '___ gusta el chocolate.' (Complete: 'He/she likes chocolate.')",
+      "options": [
+        "Le",
+        "Te",
+        "Me",
+        "Nos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cuál es el verbo 'poder' en primera persona? (What is 'to be able to' in the first person?)",
+      "options": [
+        "Pueden",
+        "Puedes",
+        "Puede",
+        "Puedo"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Completa: 'Yo no ___ hablar francés.' (Complete: 'I cannot speak French.')",
+      "options": [
+        "puedo",
+        "quiero",
+        "tengo",
+        "soy"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cuál es la forma negativa con 'not'? (What is the negative form with 'no'?)",
+      "options": [
+        "No soy estudiante",
+        "Soy no estudiante",
+        "Soy no un estudiante",
+        "No es soy estudiante"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo se dice 'I am cold'? (How do you say 'I am cold'?)",
+      "options": [
+        "Soy frío",
+        "Tengo frío",
+        "Estoy frío",
+        "Me hace frío"
+      ],
+      "answer": 1
+    }
+  ],
+  "listening": [
+    {
+      "audio": "Me llamo Carlos y tengo veintitrés años.",
+      "q": "¿Cuántos años tiene Carlos? (How old is Carlos?)",
+      "options": [
+        "Veinte años",
+        "Veinticinco años",
+        "Veintitrés años",
+        "Treinta años"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Mi hermana es doctora en el hospital.",
+      "q": "¿Cuál es la profesión de la hermana? (What is the sister's profession?)",
+      "options": [
+        "Abogada",
+        "Ingeniera",
+        "Doctora",
+        "Profesora"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Todos los días voy a la escuela a las ocho de la mañana.",
+      "q": "¿A qué hora va a la escuela? (What time does he/she go to school?)",
+      "options": [
+        "A las siete",
+        "A las nueve",
+        "A las ocho",
+        "A las diez"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "El café con leche cuesta tres euros.",
+      "q": "¿Cuánto cuesta el café con leche? (How much does the coffee with milk cost?)",
+      "options": [
+        "Dos euros",
+        "Tres euros",
+        "Cuatro euros",
+        "Cinco euros"
+      ],
+      "answer": 1
+    },
+    {
+      "audio": "Me encanta leer libros en mi tiempo libre.",
+      "q": "¿Qué le encanta hacer? (What does he/she love to do?)",
+      "options": [
+        "Jugar al fútbol",
+        "Leer libros",
+        "Ver películas",
+        "Escuchar música"
+      ],
+      "answer": 1
+    },
+    {
+      "audio": "Vivo en un apartamento pequeño en el centro de la ciudad.",
+      "q": "¿Dónde vive? (Where does he/she live?)",
+      "options": [
+        "En una casa grande",
+        "En un apartamento pequeño",
+        "En el campo",
+        "En la playa"
+      ],
+      "answer": 1
+    },
+    {
+      "audio": "Mi color favorito es el azul.",
+      "q": "¿Cuál es su color favorito? (What is his/her favorite color?)",
+      "options": [
+        "Azul",
+        "Verde",
+        "Rojo",
+        "Amarillo"
+      ],
+      "answer": 0
+    },
+    {
+      "audio": "Tengo dos hermanos: uno mayor y uno menor.",
+      "q": "¿Cuántos hermanos tiene? (How many siblings does he/she have?)",
+      "options": [
+        "Dos",
+        "Uno",
+        "Tres",
+        "Cuatro"
+      ],
+      "answer": 0
+    },
+    {
+      "audio": "Desayuno a las siete y media de la mañana.",
+      "q": "¿A qué hora desayuna? (What time does he/she have breakfast?)",
+      "options": [
+        "A las seis",
+        "A las seis y media",
+        "A las ocho",
+        "A las siete y media"
+      ],
+      "answer": 3
+    },
+    {
+      "audio": "Me gusta jugar al tenis los sábados.",
+      "q": "¿Cuándo juega al tenis? (When does he/she play tennis?)",
+      "options": [
+        "Los sábados",
+        "Los viernes",
+        "Los domingos",
+        "Los martes"
+      ],
+      "answer": 0
+    },
+    {
+      "audio": "Mi padre trabaja en un banco muy grande.",
+      "q": "¿Dónde trabaja el padre? (Where does the father work?)",
+      "options": [
+        "En una tienda",
+        "En un hospital",
+        "En un banco",
+        "En una escuela"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Necesito comprar leche, pan y huevos en el supermercado.",
+      "q": "¿Qué necesita comprar? (What does he/she need to buy?)",
+      "options": [
+        "Frutas y verduras",
+        "Libros y cuadernos",
+        "Ropa y zapatos",
+        "Leche, pan y huevos"
+      ],
+      "answer": 3
+    },
+    {
+      "audio": "La clase de matemáticas comienza a las nueve.",
+      "q": "¿A qué hora comienza la clase? (What time does the class begin?)",
+      "options": [
+        "A las ocho",
+        "A las diez",
+        "A las nueve",
+        "A las once"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Hoy hace buen tiempo y está soleado.",
+      "q": "¿Cómo está el tiempo? (How is the weather?)",
+      "options": [
+        "Lluvia",
+        "Nublado",
+        "Soleado",
+        "Ventoso"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Mi mejor amiga se llama Isabel y es muy inteligente.",
+      "q": "¿Cómo es Isabel? (What is Isabel like?)",
+      "options": [
+        "Tímida",
+        "Perezosa",
+        "Inteligente",
+        "Desordenada"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Prefiero el té al café porque es más saludable.",
+      "q": "¿Qué prefiere? (What does he/she prefer?)",
+      "options": [
+        "Café",
+        "Té",
+        "Agua",
+        "Jugo"
+      ],
+      "answer": 1
+    },
+    {
+      "audio": "Vamos al cine el próximo viernes a las ocho de la noche.",
+      "q": "¿Cuándo van al cine? (When do they go to the cinema?)",
+      "options": [
+        "El jueves",
+        "El viernes",
+        "El sábado",
+        "El domingo"
+      ],
+      "answer": 1
+    },
+    {
+      "audio": "Mi habitación tiene una cama, un escritorio y una lámpara.",
+      "q": "¿Qué hay en la habitación? (What is in the room?)",
+      "options": [
+        "Una puerta y una ventana",
+        "Un sofá y un televisor",
+        "Una mesa y sillas",
+        "Una cama, un escritorio y una lámpara"
+      ],
+      "answer": 3
+    },
+    {
+      "audio": "Ella come una manzana verde para el almuerzo.",
+      "q": "¿Qué come para el almuerzo? (What does she eat for lunch?)",
+      "options": [
+        "Un sándwich",
+        "Una manzana",
+        "Una ensalada",
+        "Una sopa"
+      ],
+      "answer": 1
+    },
+    {
+      "audio": "El hospital está a dos kilómetros de mi casa.",
+      "q": "¿A qué distancia está el hospital? (How far is the hospital?)",
+      "options": [
+        "A dos kilómetros",
+        "A un kilómetro",
+        "A tres kilómetros",
+        "A cinco kilómetros"
+      ],
+      "answer": 0
+    },
+    {
+      "audio": "Estudio inglés, español y matemáticas en la escuela.",
+      "q": "¿Qué materias estudia? (What subjects does he/she study?)",
+      "options": [
+        "Inglés y francés",
+        "Historia y geografía",
+        "Inglés, español y matemáticas",
+        "Arte y música"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Me gusta viajar a países nuevos durante las vacaciones.",
+      "q": "¿Qué le gusta hacer en vacaciones? (What does he/she like to do on vacation?)",
+      "options": [
+        "Descansar en casa",
+        "Trabajar extra",
+        "Viajar a países nuevos",
+        "Estudiar más"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Mi teléfono es nuevo y es de color negro.",
+      "q": "¿De qué color es el teléfono? (What color is the phone?)",
+      "options": [
+        "Blanco",
+        "Plateado",
+        "Negro",
+        "Dorado"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Ella vuelve a casa a las seis de la tarde.",
+      "q": "¿A qué hora vuelve a casa? (What time does she return home?)",
+      "options": [
+        "A las seis",
+        "A las cinco",
+        "A las siete",
+        "A las ocho"
+      ],
+      "answer": 0
+    },
+    {
+      "audio": "Yo soy de Argentina pero ahora vivo en España.",
+      "q": "¿De dónde es? (Where is he/she from?)",
+      "options": [
+        "De España",
+        "De Argentina",
+        "De Chile",
+        "De México"
+      ],
+      "answer": 1
+    },
+    {
+      "audio": "El fin de semana vamos a hacer una excursión a la montaña.",
+      "q": "¿Adónde van el fin de semana? (Where do they go on the weekend?)",
+      "options": [
+        "A la montaña",
+        "A la playa",
+        "Al parque",
+        "A la ciudad"
+      ],
+      "answer": 0
+    },
+    {
+      "audio": "Mi gato es gris y tiene los ojos verdes.",
+      "q": "¿De qué color tiene los ojos el gato? (What color are the cat's eyes?)",
+      "options": [
+        "Verdes",
+        "Marrones",
+        "Azules",
+        "Negros"
+      ],
+      "answer": 0
+    },
+    {
+      "audio": "Para el desayuno, como cereal con leche y fruta.",
+      "q": "¿Qué come para el desayuno? (What does he/she eat for breakfast?)",
+      "options": [
+        "Pan y jamón",
+        "Huevos y tocino",
+        "Cereal con leche y fruta",
+        "Yogur y granola"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Mis padres me compraron un regalo por mi cumpleaños.",
+      "q": "¿Quién le compró un regalo? (Who bought him/her a gift?)",
+      "options": [
+        "Sus padres",
+        "Sus amigos",
+        "Su hermano",
+        "Su tía"
+      ],
+      "answer": 0
+    },
+    {
+      "audio": "En invierno, uso abrigo, bufanda y guantes.",
+      "q": "¿Qué ropa usa en invierno? (What clothes does he/she wear in winter?)",
+      "options": [
+        "Shorts y camiseta",
+        "Sandalias y gafas",
+        "Abrigo, bufanda y guantes",
+        "Pantalones cortos"
+      ],
+      "answer": 2
+    },
+    {
+      "audio": "Ella estudia idiomas en la universidad porque quiere ser traductora.",
+      "q": "¿Por qué estudia idiomas? (Why does she study languages?)",
+      "options": [
+        "Porque quiere ser ingeniera",
+        "Porque quiere ser traductora",
+        "Porque quiere ser doctora",
+        "Porque quiere ser abogada"
+      ],
+      "answer": 1
+    }
+  ]
+}

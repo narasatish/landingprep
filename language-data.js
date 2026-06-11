@@ -5,6 +5,7 @@
     name: "German",
     native: "Deutsch",
     flag: "\u{1F1E9}\u{1F1EA}",
+    code: "de",
     blurb: "Study tuition-free in Germany, Austria & Switzerland. German is the #1 language for affordable, high-quality study abroad.",
     why: [
       "Germany has world-class universities with little or no tuition \u2014 but most programmes and daily life need German.",
@@ -243,6 +244,7 @@
     name: "French",
     native: "Fran\xE7ais",
     flag: "\u{1F1EB}\u{1F1F7}",
+    code: "fr",
     blurb: "Study in France, Belgium, parts of Canada (Qu\xE9bec) and Switzerland. French opens affordable EU study and a huge job market.",
     why: [
       "France has low-tuition public universities and the Campus France pathway \u2014 French helps admission and daily life.",
@@ -424,6 +426,240 @@
       { q: "'Quelle heure est-il ?' asks about \u2026", options: ["the price", "the time", "the name", "the place"], answer: 1 }
     ]
   };
-  window.LP_LANGUAGES = { german: GERMAN, french: FRENCH };
-  window.LP_LANGUAGE_ORDER = ["german", "french"];
+  const SPANISH = {
+    id: "spanish",
+    name: "Spanish",
+    native: "Espa\xF1ol",
+    flag: "\u{1F1EA}\u{1F1F8}",
+    code: "es",
+    blurb: "Study in Spain and across Latin America. Spanish is the world's 2nd most-spoken native language \u2014 affordable EU study, huge job market and easy travel.",
+    why: [
+      "Spain has low-tuition public universities and a relaxed student-visa route \u2014 A2\u2013B1 Spanish makes admission and daily life far easier.",
+      "Latin America (Mexico, Argentina, Chile) offers low-cost, high-quality degrees taught in Spanish.",
+      "DELE and SIELE are accepted for study, work and Spanish/EU residency and citizenship.",
+      "Spanish is spoken by 500M+ people across 20+ countries \u2014 one language, a whole hemisphere of opportunity."
+    ],
+    exams: [
+      { name: "DELE (A1\u2013C2)", desc: "Diploma de Espa\xF1ol como Lengua Extranjera \u2014 the official Instituto Cervantes diploma, lifelong and recognised worldwide for study, work and citizenship." },
+      { name: "SIELE", desc: "Servicio Internacional de Evaluaci\xF3n \u2014 fast, fully digital Spanish test accepted across Spain and Latin America." },
+      { name: "CCSE", desc: "Constitutional & sociocultural knowledge test required for Spanish nationality (taken with DELE A2)." }
+    ],
+    levels: ["A1", "A2", "B1", "B2", "C1", "C2"],
+    course: [
+      {
+        id: "es-a1-u1",
+        level: "A1",
+        title: "Greetings & Introductions",
+        grammar: "Spanish has formal (usted) and informal (t\xFA) 'you'. Use usted with strangers and elders, t\xFA with friends. 'Me llamo \u2026' = my name is \u2026",
+        vocab: [
+          { w: "Hola", en: "Hello", ex: "\xA1Hola! \xBFC\xF3mo est\xE1s?" },
+          { w: "Buenos d\xEDas", en: "Good morning", ex: "Buenos d\xEDas, se\xF1ora Garc\xEDa." },
+          { w: "Buenas tardes", en: "Good afternoon", ex: "Buenas tardes a todos." },
+          { w: "Buenas noches", en: "Good evening / night", ex: "Buenas noches, hasta ma\xF1ana." },
+          { w: "Adi\xF3s", en: "Goodbye", ex: "Adi\xF3s, \xA1nos vemos!" },
+          { w: "Hasta luego", en: "See you later", ex: "Hasta luego, Marta." },
+          { w: "Me llamo \u2026", en: "My name is \u2026", ex: "Me llamo Sof\xEDa." },
+          { w: "\xBFC\xF3mo te llamas?", en: "What's your name? (informal)", ex: "Hola, \xBFc\xF3mo te llamas?" },
+          { w: "\xBFC\xF3mo est\xE1s?", en: "How are you?", ex: "\xBFC\xF3mo est\xE1s hoy?" },
+          { w: "Estoy bien", en: "I'm fine", ex: "Estoy bien, gracias." },
+          { w: "Mucho gusto", en: "Nice to meet you", ex: "Mucho gusto, soy Ana." },
+          { w: "Gracias", en: "Thank you", ex: "\xA1Muchas gracias!" },
+          { w: "Por favor", en: "Please", ex: "Un caf\xE9, por favor." },
+          { w: "S\xED / No", en: "Yes / No", ex: "S\xED, gracias. No, gracias." }
+        ]
+      },
+      {
+        id: "es-a1-u2",
+        level: "A1",
+        title: "Numbers, Days & Time",
+        grammar: "Use 'son las \u2026' for the time (son las tres = it's 3 o'clock), but 'es la una' for 1 o'clock. 'y media' = half past, 'y cuarto' = quarter past.",
+        vocab: [
+          { w: "uno, dos, tres", en: "one, two, three", ex: "Tengo tres libros." },
+          { w: "cuatro, cinco, seis", en: "four, five, six", ex: "Son las seis." },
+          { w: "siete, ocho, nueve, diez", en: "seven \u2026 ten", ex: "Diez euros, por favor." },
+          { w: "veinte", en: "twenty", ex: "Tengo veinte a\xF1os." },
+          { w: "cien", en: "hundred", ex: "Cuesta cien euros." },
+          { w: "lunes, martes", en: "Monday, Tuesday", ex: "El lunes tengo clase." },
+          { w: "s\xE1bado, domingo", en: "Saturday, Sunday", ex: "El domingo descanso." },
+          { w: "el fin de semana", en: "the weekend", ex: "\xA1Buen fin de semana!" },
+          { w: "hoy / ma\xF1ana / ayer", en: "today / tomorrow / yesterday", ex: "Hoy es martes." },
+          { w: "\xBFQu\xE9 hora es?", en: "What time is it?", ex: "Perd\xF3n, \xBFqu\xE9 hora es?" },
+          { w: "Son las dos y media", en: "It's half past two", ex: "Son las dos y media." },
+          { w: "y cuarto / menos cuarto", en: "quarter past / to", ex: "Son las ocho y cuarto." }
+        ]
+      },
+      {
+        id: "es-a1-u3",
+        level: "A1",
+        title: "Articles & Gender (el/la)",
+        grammar: "Every Spanish noun is masculine (el) or feminine (la). Words ending in -o are usually masculine, -a feminine. Plural: los / las. Learn the article WITH the noun.",
+        vocab: [
+          { w: "el hombre", en: "the man", ex: "El hombre es simp\xE1tico." },
+          { w: "la mujer", en: "the woman", ex: "La mujer se llama Mar\xEDa." },
+          { w: "el ni\xF1o / la ni\xF1a", en: "the boy / girl", ex: "La ni\xF1a juega." },
+          { w: "la mesa", en: "the table", ex: "La mesa es grande." },
+          { w: "el libro", en: "the book", ex: "El libro es interesante." },
+          { w: "la silla", en: "the chair", ex: "La silla es c\xF3moda." },
+          { w: "la puerta", en: "the door", ex: "La puerta est\xE1 abierta." },
+          { w: "la ventana", en: "the window", ex: "La ventana es grande." },
+          { w: "un / una", en: "a / an (m / f)", ex: "Tengo una pregunta." },
+          { w: "los / las", en: "the (plural m / f)", ex: "Los libros son caros." },
+          { w: "ning\xFAn / ninguna", en: "no / not any", ex: "No tengo ning\xFAn problema." },
+          { w: "los libros", en: "the books (plural)", ex: "Los libros est\xE1n aqu\xED." }
+        ]
+      },
+      {
+        id: "es-a1-u4",
+        level: "A1",
+        title: "Present Tense & Common Verbs",
+        grammar: "Regular -ar verbs: hablo, hablas, habla, hablamos, habl\xE1is, hablan. 'ser' (to be, permanent): soy, eres, es. 'estar' (to be, states/location): estoy, est\xE1s, est\xE1.",
+        vocab: [
+          { w: "ser (yo soy)", en: "to be / permanent (I am)", ex: "Soy estudiante." },
+          { w: "estar (yo estoy)", en: "to be / state (I am)", ex: "Estoy en Madrid." },
+          { w: "tener (yo tengo)", en: "to have (I have)", ex: "Tengo tiempo." },
+          { w: "hablar", en: "to speak", ex: "Hablo espa\xF1ol." },
+          { w: "vivir", en: "to live", ex: "Vivo en Barcelona." },
+          { w: "venir", en: "to come", ex: "Vengo de la India." },
+          { w: "aprender", en: "to learn", ex: "Aprendo espa\xF1ol." },
+          { w: "trabajar", en: "to work", ex: "Trabajo en Sevilla." },
+          { w: "entender", en: "to understand", ex: "No entiendo esto." },
+          { w: "ir", en: "to go", ex: "Voy a la universidad." },
+          { w: "hacer", en: "to do / make", ex: "\xBFQu\xE9 haces?" },
+          { w: "comer / beber", en: "to eat / drink", ex: "Como una manzana." }
+        ]
+      },
+      {
+        id: "es-a1-u5",
+        level: "A1",
+        title: "Family & People",
+        grammar: "Possessives: mi (my), tu (your), su (his/her). They become mis/tus/sus before plural nouns: mi madre, mis padres.",
+        vocab: [
+          { w: "la familia", en: "the family", ex: "Mi familia es grande." },
+          { w: "la madre", en: "the mother", ex: "Mi madre se llama Petra." },
+          { w: "el padre", en: "the father", ex: "Mi padre trabaja mucho." },
+          { w: "los padres", en: "the parents", ex: "Mis padres viven en la India." },
+          { w: "el hermano", en: "the brother", ex: "Mi hermano tiene 18 a\xF1os." },
+          { w: "la hermana", en: "the sister", ex: "Mi hermana estudia." },
+          { w: "el amigo / la amiga", en: "friend (m / f)", ex: "Mi amigo se llama Tom." },
+          { w: "el esposo / la esposa", en: "husband / wife", ex: "Esta es mi esposa." },
+          { w: "el hijo / la hija", en: "son / daughter", ex: "Tienen dos hijos." },
+          { w: "joven / mayor", en: "young / old", ex: "Mi hermano es joven." },
+          { w: "casado / soltero", en: "married / single", ex: "Estoy soltero." }
+        ]
+      },
+      {
+        id: "es-a1-u6",
+        level: "A1",
+        title: "Food, Drink & the Caf\xE9",
+        grammar: "Order politely with 'Quiero \u2026' or 'Me gustar\xEDa \u2026' (I would like \u2026). 'un' (m) / 'una' (f). To pay, ask 'La cuenta, por favor.'",
+        vocab: [
+          { w: "el agua", en: "water", ex: "Un agua, por favor." },
+          { w: "el caf\xE9", en: "coffee", ex: "Quiero un caf\xE9." },
+          { w: "el t\xE9", en: "tea", ex: "Me gusta el t\xE9." },
+          { w: "el pan", en: "bread", ex: "El pan est\xE1 fresco." },
+          { w: "la manzana", en: "apple", ex: "Como una manzana." },
+          { w: "el queso", en: "cheese", ex: "El queso est\xE1 rico." },
+          { w: "la leche", en: "milk", ex: "Con leche, por favor." },
+          { w: "el vino / la cerveza", en: "wine / beer", ex: "Una cerveza, por favor." },
+          { w: "Quiero \u2026", en: "I want / I'd like \u2026", ex: "Quiero un bocadillo." },
+          { w: "La cuenta, por favor", en: "The bill, please", ex: "\xA1La cuenta, por favor!" },
+          { w: "rico / delicioso", en: "tasty / delicious", ex: "\xA1Est\xE1 delicioso!" }
+        ]
+      },
+      {
+        id: "es-a1-u7",
+        level: "A1",
+        title: "Shopping & Prices",
+        grammar: "Ask prices with '\xBFCu\xE1nto cuesta?' (singular) / '\xBFCu\xE1nto cuestan?' (plural). Euro amounts: 'tres euros con cincuenta' = \u20AC3.50.",
+        vocab: [
+          { w: "\xBFCu\xE1nto cuesta?", en: "How much is it?", ex: "\xBFCu\xE1nto cuesta el billete?" },
+          { w: "el euro / el c\xE9ntimo", en: "euro / cent", ex: "Cuesta cinco euros." },
+          { w: "barato / caro", en: "cheap / expensive", ex: "Es demasiado caro." },
+          { w: "el dinero", en: "money", ex: "No tengo dinero." },
+          { w: "el supermercado", en: "supermarket", ex: "Voy al supermercado." },
+          { w: "la caja", en: "the checkout", ex: "La caja est\xE1 all\xED." },
+          { w: "en efectivo / con tarjeta", en: "cash / by card", ex: "Con tarjeta, por favor." },
+          { w: "la bolsa", en: "the bag", ex: "Una bolsa, por favor." },
+          { w: "comprar", en: "to buy", ex: "Compro pan y leche." },
+          { w: "la talla", en: "the size (clothes)", ex: "\xBFQu\xE9 talla tiene?" },
+          { w: "la tienda", en: "the shop", ex: "La tienda est\xE1 cerrada." }
+        ]
+      },
+      {
+        id: "es-a1-u8",
+        level: "A1",
+        title: "Daily Routine & Hobbies",
+        grammar: "Say what you like with 'Me gusta \u2026' + verb (Me gusta leer). Frequency: a menudo (often), a veces (sometimes), nunca (never).",
+        vocab: [
+          { w: "levantarse", en: "to get up", ex: "Me levanto a las siete." },
+          { w: "desayunar", en: "to have breakfast", ex: "Desayuno a las ocho." },
+          { w: "dormir", en: "to sleep", ex: "Duermo ocho horas." },
+          { w: "jugar", en: "to play", ex: "Juego al f\xFAtbol." },
+          { w: "leer", en: "to read", ex: "Me gusta leer por la noche." },
+          { w: "escuchar", en: "to listen", ex: "Escucho m\xFAsica." },
+          { w: "ver", en: "to watch / see", ex: "Veo una pel\xEDcula." },
+          { w: "el deporte / el f\xFAtbol", en: "sport / football", ex: "El f\xFAtbol es mi hobby." },
+          { w: "a menudo / a veces / nunca", en: "often / sometimes / never", ex: "A veces cocino." },
+          { w: "Me gusta \u2026", en: "I like \u2026", ex: "Me gusta nadar." },
+          { w: "el tiempo libre", en: "free time", ex: "\xBFQu\xE9 haces en tu tiempo libre?" }
+        ]
+      },
+      {
+        id: "es-a1-u9",
+        level: "A1",
+        title: "City, Directions & Transport",
+        grammar: "Ask the way with '\xBFD\xF3nde est\xE1 \u2026?' (Where is \u2026?). Directions: a la izquierda (left), a la derecha (right), todo recto (straight ahead).",
+        vocab: [
+          { w: "\xBFD\xF3nde est\xE1 \u2026?", en: "Where is \u2026?", ex: "\xBFD\xF3nde est\xE1 la estaci\xF3n?" },
+          { w: "la estaci\xF3n", en: "the (train) station", ex: "La estaci\xF3n est\xE1 all\xED." },
+          { w: "la parada", en: "the (bus) stop", ex: "La parada est\xE1 aqu\xED." },
+          { w: "el autob\xFAs / el metro", en: "bus / underground", ex: "Voy en metro." },
+          { w: "el tren", en: "the train", ex: "El tren llega a las nueve." },
+          { w: "a la izquierda / derecha", en: "to the left / right", ex: "Gire a la izquierda." },
+          { w: "todo recto", en: "straight ahead", ex: "Siga todo recto." },
+          { w: "la calle", en: "the street", ex: "La calle es larga." },
+          { w: "la farmacia", en: "the pharmacy", ex: "\xBFD\xF3nde est\xE1 la farmacia?" },
+          { w: "el hospital", en: "the hospital", ex: "El hospital es grande." },
+          { w: "el billete / el mapa", en: "ticket / map", ex: "Un billete, por favor." }
+        ]
+      },
+      {
+        id: "es-a1-u10",
+        level: "A1",
+        title: "Survival Spanish (uni, bank, doctor)",
+        grammar: "Polite requests: '\xBFPodr\xEDa \u2026?' (Could you \u2026?) and 'Necesito \u2026' (I need \u2026). Say you don't understand: 'No entiendo. M\xE1s despacio, por favor.'",
+        vocab: [
+          { w: "Perd\xF3n / Disculpe", en: "Excuse me / Sorry", ex: "Disculpe, \xBFd\xF3nde est\xE1 la universidad?" },
+          { w: "No entiendo", en: "I don't understand", ex: "M\xE1s despacio, por favor. No entiendo." },
+          { w: "\xBFHabla ingl\xE9s?", en: "Do you speak English?", ex: "\xBFHabla ingl\xE9s?" },
+          { w: "\xBFPuede repetir?", en: "Can you repeat?", ex: "\xBFPuede repetir, por favor?" },
+          { w: "la universidad", en: "the university", ex: "La universidad es grande." },
+          { w: "el piso / el apartamento", en: "the flat / apartment", ex: "Busco un piso." },
+          { w: "la cuenta bancaria", en: "the bank account", ex: "Necesito una cuenta bancaria." },
+          { w: "la cita", en: "the appointment", ex: "Tengo una cita." },
+          { w: "el m\xE9dico / la m\xE9dica", en: "doctor (m / f)", ex: "Voy al m\xE9dico." },
+          { w: "el pasaporte / el carn\xE9", en: "passport / ID card", ex: "Aqu\xED est\xE1 mi pasaporte." },
+          { w: "\xA1Ayuda!", en: "Help!", ex: "\xBFPuede ayudarme?" }
+        ]
+      }
+    ],
+    quiz: [
+      { q: "How do you say 'Good morning' in Spanish?", options: ["Buenas noches", "Buenos d\xEDas", "Buenas tardes", "Adi\xF3s"], answer: 1 },
+      { q: "'Me llamo Ana' means \u2026", options: ["I live in Ana", "I like Ana", "My name is Ana", "I am from Ana"], answer: 2 },
+      { q: "Which is the correct article for 'mujer' (woman)?", options: ["el", "la", "los", "un"], answer: 1 },
+      { q: "'Gracias' means \u2026", options: ["Please", "Sorry", "Thank you", "Hello"], answer: 2 },
+      { q: "How do you ask 'What's your name?' (informal)?", options: ["\xBFC\xF3mo est\xE1s?", "\xBFC\xF3mo te llamas?", "\xBFQui\xE9n eres?", "\xBFD\xF3nde vives?"], answer: 1 },
+      { q: "The number 'veinte' is \u2026", options: ["12", "20", "2", "200"], answer: 1 },
+      { q: "'Vengo de la India' means \u2026", options: ["I live in India", "I come from India", "I go to India", "I like India"], answer: 1 },
+      { q: "Formal 'you' in Spanish is \u2026", options: ["t\xFA", "\xE9l", "usted", "vos"], answer: 2 },
+      { q: "'\xBFCu\xE1nto cuesta?' means \u2026", options: ["What is it?", "Where is it?", "How much is it?", "Who is it?"], answer: 2 },
+      { q: "The verb 'aprender' means \u2026", options: ["to live", "to learn", "to work", "to come"], answer: 1 },
+      { q: "'Mi madre' means \u2026", options: ["my father", "my sister", "my mother", "my friend"], answer: 2 },
+      { q: "Which means 'turn left'?", options: ["a la derecha", "todo recto", "a la izquierda", "atr\xE1s"], answer: 2 },
+      { q: "'Quiero un caf\xE9' means \u2026", options: ["I have a coffee", "I want a coffee", "I make a coffee", "I see a coffee"], answer: 1 },
+      { q: "Which official Spanish diploma is issued by Instituto Cervantes?", options: ["DELF", "DELE", "Goethe", "TestDaF"], answer: 1 }
+    ]
+  };
+  window.LP_LANGUAGES = { german: GERMAN, french: FRENCH, spanish: SPANISH };
+  window.LP_LANGUAGE_ORDER = ["german", "french", "spanish"];
 })();
