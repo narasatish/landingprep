@@ -1926,6 +1926,10 @@ button.send:hover:not(:disabled) { transform: scale(1.08); }
 .seo-hero { padding: 32px 0 24px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
 .seo-grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
 @media (min-width: 720px) { .seo-grid { grid-template-columns: repeat(2, 1fr); } }
+/* Blog LIST page: wider container + 3–4 cards per row (article page stays narrow) */
+.blg-index { max-width: 1280px; }
+.blg-index .seo-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.blg-index .seo-card h3 { font-size: 19px; }
 .seo-card {
   background: var(--surface); border: 1px solid var(--line);
   border-radius: 14px; padding: 22px;

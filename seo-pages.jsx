@@ -159,12 +159,12 @@
     return (
       <>
         <window.LP_TopBar current="blog" onNav={onNav} />
-        <div className="seo-shell">
+        <div className="seo-shell blg-index">
           <div className="seo-hero">
             <div className="eyebrow">Study Tips · Strategy · Comparisons</div>
-            <h1 className="h1" style={{ marginTop: 8, fontSize: "clamp(32px,5vw,48px)" }}>Free guides for serious test-takers</h1>
+            <h1 className="h1" style={{ marginTop: 8, fontSize: "clamp(32px,5vw,48px)" }}>Free study-abroad & exam guides</h1>
             <p className="body-lg muted" style={{ maxWidth: 720, marginTop: 12 }}>
-              Evidence-based strategies, score targets by country, exam comparisons, and study plans — written for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE, and GMAT Focus.
+              Step-by-step guides on visas, costs, funding and PR for the USA, Canada, UK, Europe &amp; Australia — plus score targets and study plans for IELTS, TOEFL, PTE, GRE and GMAT.
             </p>
           </div>
 
