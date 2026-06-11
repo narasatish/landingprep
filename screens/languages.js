@@ -81,7 +81,15 @@
   function Languages({ onNav }) {
     const langs = window.LP_LANGUAGES || {};
     const order = window.LP_LANGUAGE_ORDER || Object.keys(langs);
-    const [langId, setLangId] = useState(order[0] || "german");
+    const initialLang = (() => {
+      try {
+        const m = (window.location.hash || "").match(/[?&]lang=([a-z]+)/i);
+        if (m && order.includes(m[1].toLowerCase())) return m[1].toLowerCase();
+      } catch (e) {
+      }
+      return order[0] || "german";
+    })();
+    const [langId, setLangId] = useState(initialLang);
     const [tab, setTab] = useState("learn");
     const lang = langs[langId];
     useEffect(() => {

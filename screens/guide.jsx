@@ -26,8 +26,11 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
     faqs: Array.isArray(exam.faqs) ? exam.faqs : [],
   };
 
-  // mockAlias lets a guide-only exam reuse another exam's mock engine (e.g. PTE Core → PTE Academic).
-  const mockId = exam.mockAlias || (exam.guideOnly ? null : exam.id);
+  // mockAlias lets a guide-only exam reuse another exam's mock engine (e.g. PTE Core → PTE Academic,
+  // CAEL → TOEFL, Cambridge → IELTS). langAlias points a language exam (TEF/TCF) at the language hub.
+  const langTarget = exam.langAlias || null;
+  const langName = langTarget ? langTarget.charAt(0).toUpperCase() + langTarget.slice(1) : null;
+  const mockId = langTarget ? null : (exam.mockAlias || (exam.guideOnly ? null : exam.id));
   const aliasName = exam.mockAlias ? (((exams || []).find((e) => e.id === exam.mockAlias)) || {}).name : null;
 
   const accentStyle = { "--exam-colour": exam.colour };
@@ -74,7 +77,9 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
             <p className="body-lg muted" style={{ maxWidth: 700, marginTop: 18 }}>{exam.blurb}</p>
 
             <div className="row-gap-12" style={{ marginTop: 26 }}>
-              {mockId
+              {langTarget
+                ? <button className="btn btn-primary" onClick={() => { window.location.hash = '#/languages?lang=' + langTarget; }}>Practise {langName} free →</button>
+                : mockId
                 ? <button className="btn btn-primary" onClick={() => { window.location.hash = '#/exam-prep/' + mockId; }}>{aliasName ? `Practise with ${aliasName} mocks →` : "Start mock test →"}</button>
                 : <a className="btn btn-primary" href="#guide-format">Read the full guide ↓</a>}
               <a className="btn" href={exam.official} target="_blank" rel="noopener noreferrer">Official site ↗</a>
@@ -87,7 +92,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
               [exam.duration, "Duration"],
               [exam.score, "Score scale"],
               [exam.sections, "Sections"],
-              [mockId ? (aliasName ? "Shared mocks" : exam.mocks + " free") : "Free guide", mockId ? "Mock tests" : "Format & tips"],
+              [langTarget ? "Free " + langName : mockId ? (aliasName ? "Shared mocks" : exam.mocks + " free") : "Free guide", langTarget ? "Course + mocks" : mockId ? "Mock tests" : "Format & tips"],
             ].map(([k, v]) => (
               <div className="guide-stat" key={v}>
                 <div className="k">{k}</div>
@@ -123,10 +128,22 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
           {/* Sidebar */}
           <aside>
             <div className="aside-card">
-              {exam.mockAlias ? (
+              {langTarget ? (
                 <>
-                  <h3 className="h2" style={{ color: "white" }}>Same format as {aliasName}</h3>
-                  <p>{exam.name} shares its test structure with {aliasName} — practise on our free {aliasName} mocks with real timings and you're preparing for {exam.name} too.</p>
+                  <h3 className="h2" style={{ color: "white" }}>Build your {langName} now</h3>
+                  <p>{exam.name} tests your {langName}. Practise free with our {langName} A1 course, mock tests and a 2-way AI speaking partner — the fastest way to start building the skills {exam.name} measures.</p>
+                  <button
+                    className="btn"
+                    style={{ background: "white", color: "var(--ink)", borderColor: "white", marginTop: 16 }}
+                    onClick={() => { window.location.hash = '#/languages?lang=' + langTarget; }}
+                  >
+                    Practise {langName} free →
+                  </button>
+                </>
+              ) : exam.mockAlias ? (
+                <>
+                  <h3 className="h2" style={{ color: "white" }}>Practise the same skills as {aliasName}</h3>
+                  <p>{exam.name} and {aliasName} test the same core English skills at a similar level. Practise free on our {aliasName} mocks with real timings while you prepare for {exam.name}.</p>
                   <button
                     className="btn"
                     style={{ background: "white", color: "var(--ink)", borderColor: "white", marginTop: 16 }}

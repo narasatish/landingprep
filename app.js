@@ -52,7 +52,7 @@ function hashToView(hash, exams) {
   const path = (hash || "").replace(/^#\/?/, "");
   if (!path) return { view: "home", examId: null };
   const parts = path.split("/").filter(Boolean);
-  const head = parts[0];
+  const head = (parts[0] || "").split("?")[0];
   const find = (id) => (exams || []).find((e) => e.id === id) || null;
   if (head === "exam-prep") return { view: "exam-prep", examId: parts[1] || null };
   if (head === "exam-hub" || head === "exams") {
