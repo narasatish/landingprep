@@ -14714,6 +14714,164 @@
         ]
       },
       "fullMocks": []
+    },
+    "act": {
+      "label": "ACT",
+      "sections": {
+        "english": [
+          {
+            "id": "act-english-001",
+            "title": "ACT English Practice Test 1",
+            "exam": "act",
+            "section": "english",
+            "type": "section",
+            "durationSeconds": 2700,
+            "questionCount": 75,
+            "file": "act/english/test-001.json",
+            "version": 3,
+            "variant": "standard"
+          },
+          {
+            "id": "act-english-002",
+            "title": "ACT English Practice Test 2",
+            "exam": "act",
+            "section": "english",
+            "type": "section",
+            "durationSeconds": 2700,
+            "questionCount": 75,
+            "file": "act/english/test-002.json",
+            "version": 3,
+            "variant": "standard"
+          },
+          {
+            "id": "act-english-003",
+            "title": "ACT English Practice Test 3",
+            "exam": "act",
+            "section": "english",
+            "type": "section",
+            "durationSeconds": 2700,
+            "questionCount": 75,
+            "file": "act/english/test-003.json",
+            "version": 3,
+            "variant": "standard"
+          }
+        ],
+        "math": [
+          {
+            "id": "act-math-001",
+            "title": "ACT Math Practice Test 1",
+            "exam": "act",
+            "section": "math",
+            "type": "section",
+            "durationSeconds": 3600,
+            "questionCount": 60,
+            "file": "act/math/test-001.json",
+            "version": 3,
+            "variant": "standard"
+          },
+          {
+            "id": "act-math-002",
+            "title": "ACT Math Practice Test 2",
+            "exam": "act",
+            "section": "math",
+            "type": "section",
+            "durationSeconds": 3600,
+            "questionCount": 60,
+            "file": "act/math/test-002.json",
+            "version": 3,
+            "variant": "standard"
+          },
+          {
+            "id": "act-math-003",
+            "title": "ACT Math Practice Test 3",
+            "exam": "act",
+            "section": "math",
+            "type": "section",
+            "durationSeconds": 3600,
+            "questionCount": 60,
+            "file": "act/math/test-003.json",
+            "version": 3,
+            "variant": "standard"
+          }
+        ],
+        "reading": [
+          {
+            "id": "act-reading-001",
+            "title": "ACT Reading Practice Test 1",
+            "exam": "act",
+            "section": "reading",
+            "type": "section",
+            "durationSeconds": 2100,
+            "questionCount": 40,
+            "file": "act/reading/test-001.json",
+            "version": 3,
+            "variant": "standard"
+          },
+          {
+            "id": "act-reading-002",
+            "title": "ACT Reading Practice Test 2",
+            "exam": "act",
+            "section": "reading",
+            "type": "section",
+            "durationSeconds": 2100,
+            "questionCount": 40,
+            "file": "act/reading/test-002.json",
+            "version": 3,
+            "variant": "standard"
+          },
+          {
+            "id": "act-reading-003",
+            "title": "ACT Reading Practice Test 3",
+            "exam": "act",
+            "section": "reading",
+            "type": "section",
+            "durationSeconds": 2100,
+            "questionCount": 40,
+            "file": "act/reading/test-003.json",
+            "version": 3,
+            "variant": "standard"
+          }
+        ],
+        "science": [
+          {
+            "id": "act-science-001",
+            "title": "ACT Science Practice Test 1",
+            "exam": "act",
+            "section": "science",
+            "type": "section",
+            "durationSeconds": 2100,
+            "questionCount": 40,
+            "file": "act/science/test-001.json",
+            "version": 3,
+            "variant": "standard"
+          },
+          {
+            "id": "act-science-002",
+            "title": "ACT Science Practice Test 2",
+            "exam": "act",
+            "section": "science",
+            "type": "section",
+            "durationSeconds": 2100,
+            "questionCount": 40,
+            "file": "act/science/test-002.json",
+            "version": 3,
+            "variant": "standard"
+          },
+          {
+            "id": "act-science-003",
+            "title": "ACT Science Practice Test 3",
+            "exam": "act",
+            "section": "science",
+            "type": "section",
+            "durationSeconds": 2100,
+            "questionCount": 40,
+            "file": "act/science/test-003.json",
+            "version": 3,
+            "variant": "standard"
+          }
+        ]
+      },
+      "fullMocks": []
     }
   }
 }

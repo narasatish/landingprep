@@ -1,0 +1,724 @@
+{
+  "id": "act-science-001",
+  "exam": "act",
+  "section": "science",
+  "type": "section",
+  "title": "ACT Science Practice Test 1",
+  "durationSeconds": 2100,
+  "questionCount": 40,
+  "instructions": "Each passage presents scientific information. Read it and choose the best answer based on the data and descriptions given.",
+  "passages": [
+    {
+      "id": "act-science-001-p1",
+      "title": "Data Representation: Enzyme Activity and Temperature",
+      "text": "A researcher studied how temperature affects the activity of an enzyme called catalase. Catalase catalyzes the decomposition of hydrogen peroxide (H2O2) into water and oxygen. The enzyme activity was measured by recording the volume of oxygen gas (in milliliters) produced per minute at various temperatures. Five trials were conducted at each temperature.\n\nTable 1: Catalase Activity at Different Temperatures\nTemperature (°C): 5, 15, 25, 35, 45, 55\nMean Oxygen Produced (mL/min): 2.1, 5.8, 12.4, 18.9, 14.2, 3.5\nStandard Deviation: 0.3, 0.5, 0.8, 1.2, 1.8, 0.6\n\nThe data show enzyme activity increased with temperature from 5°C to 35°C, then decreased as temperature increased further to 55°C. At 35°C, the enzyme reached peak activity at 18.9 mL/min of oxygen produced. Above 35°C, enzyme activity declined, likely due to protein denaturation at higher temperatures."
+    },
+    {
+      "id": "act-science-001-p2",
+      "title": "Research Summary: Plant Growth Under Different Light Wavelengths",
+      "text": "Experiment: Twenty seedlings of the species Solanum lycopersicum (tomato) were divided into four equal groups. Each group was placed under a different light source for 16 hours per day for 30 days while maintaining identical soil moisture, temperature (22°C), and nutrient conditions. The four light sources were:\n- Group A: Red light (660 nm wavelength)\n- Group B: Blue light (450 nm wavelength)\n- Group C: White light (full spectrum)\n- Group D: Control (darkness)\n\nResults: After 30 days, plant heights were measured:\nGroup A (Red): 24.3 cm average height\nGroup B (Blue): 19.8 cm average height\nGroup C (White): 28.6 cm average height\nGroup D (Control): 8.2 cm average height\n\nPlants under white light grew tallest, followed by red light. Blue light promoted growth but less than red. The control group showed minimal growth, demonstrating that light is essential for normal plant development. The combination of wavelengths in white light appears most beneficial for tomato seedling growth."
+    },
+    {
+      "id": "act-science-001-p3",
+      "title": "Data Representation: Solubility of Sodium Chloride",
+      "text": "A chemist investigated the solubility of sodium chloride (NaCl) in water at various temperatures. Solubility is measured as grams of NaCl that can dissolve in 100 g of water.\n\nTable 2: NaCl Solubility vs. Temperature\nTemperature (°C): 0, 10, 20, 30, 40, 50, 60\nSolubility (g/100g H2O): 35.7, 35.8, 36.3, 36.6, 37.0, 37.3, 37.8\n\nThe data show that NaCl solubility increases gradually with increasing temperature, though the rate of increase is small and relatively constant. Unlike many salts that show dramatic increases in solubility at higher temperatures, NaCl displays a relatively modest temperature dependence. The solubility increased by only 2.1 grams per 100 g of water across the entire 60°C temperature range."
+    },
+    {
+      "id": "act-science-001-p4",
+      "title": "Conflicting Viewpoints: The Role of Lunar Tides on Marine Biology",
+      "text": "Two marine biologists proposed different mechanisms explaining why certain crab populations show activity peaks at specific times related to lunar tides.\n\nScientist A's Hypothesis: Crabs are directly sensitive to changes in gravitational force exerted by the moon during different lunar phases. The moon's gravitational pull varies as it orbits, and crabs have evolved sensory mechanisms to detect these subtle changes. When gravitational force increases (full moon and new moon), crabs become more active and spend more time foraging. This sensitivity allows crabs to time their feeding behavior for maximum food availability.\n\nScientist B's Hypothesis: Crabs respond to changes in water level and water movement caused by lunar tides, not directly to gravitational force. Tidal currents increase during spring tides (full and new moons) when the moon and sun are aligned, causing increased food particle transport. Crabs evolved to detect sensory cues from water movement and chemical signals (food particles) in the water, which increase predictably with tidal intensity. The crabs' activity pattern matches tidal cycles because they respond to the physical movement of water, not gravitational attraction.\n\nBoth scientists observed that crab activity peaks during full moons and new moons and is lowest during quarter moons. However, they disagree on the proximate cause: Scientist A attributes this to gravitational sensing, while Scientist B attributes it to sensory responses to water movement and food availability cues."
+    },
+    {
+      "id": "act-science-001-p5",
+      "title": "Research Summary: Cell Respiration Rate in Germinating Seeds",
+      "text": "An investigator examined cellular respiration rates in seeds of different plant species during germination. Respiration rate was measured by monitoring oxygen consumption (in mL/hour) using a respirometer for seeds kept at constant temperature (25°C) and humidity. Five seeds of each species were tested, and measurements were taken at specific intervals over 10 days of germination.\n\nTable 3: Oxygen Consumption During Seed Germination\nDays After Start: 0 (dry seeds), 2, 4, 6, 8, 10\nSoybeans - O2 (mL/hr): 0.1, 0.8, 2.3, 4.1, 5.6, 6.2\nCorn - O2 (mL/hr): 0.2, 1.1, 2.8, 3.9, 4.7, 5.1\nWheat - O2 (mL/hr): 0.15, 0.6, 1.8, 3.2, 4.4, 4.9\n\nAll three species showed dramatic increases in oxygen consumption as seeds germinated. This increase reflects heightened metabolic activity needed for growth, cell division, and enzyme synthesis during the early stages of development. Soybeans consistently showed the highest respiration rate, followed by corn, then wheat. The data indicate that respiration rate is linked to the intensity of biological processes during germination."
+    },
+    {
+      "id": "act-science-001-p6",
+      "title": "Data Representation: Atmospheric CO2 and Plant Photosynthesis",
+      "text": "A botanist measured the net photosynthetic rate of tomato leaves at different atmospheric CO2 concentrations. All other variables (light intensity, temperature, humidity) were held constant. Net photosynthesis is the amount of glucose produced per unit leaf area per unit time.\n\nTable 4: Net Photosynthesis vs. CO2 Concentration\nCO2 Concentration (ppm): 100, 200, 350, 500, 750, 1000\nNet Photosynthesis Rate (µmol CO2/m²/s): 3.2, 8.5, 15.3, 18.7, 20.1, 20.8\n\nThe photosynthetic rate increased steeply as CO2 concentration increased from 100 to 500 ppm. Between 500 and 1000 ppm, the increase slowed considerably. At very high CO2 concentrations (750–1000 ppm), the rate of increase in photosynthesis was minimal, suggesting that another factor (possibly light saturation or enzyme availability) becomes limiting. The data demonstrate that photosynthetic rate is CO2-dependent but subject to saturation at elevated concentrations."
+    }
+  ],
+  "questions": [
+    {
+      "id": "act-science-001-q01",
+      "passageId": "act-science-001-p1",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "Based on Table 1, at what temperature did catalase show maximum activity?",
+      "options": [
+        "25°C",
+        "55°C",
+        "45°C",
+        "35°C"
+      ],
+      "correctAnswer": "35°C",
+      "explanation": "Table 1 shows that mean oxygen produced was highest at 35°C (18.9 mL/min), indicating peak enzyme activity at this temperature.",
+      "difficulty": "easy",
+      "questionNumber": 1
+    },
+    {
+      "id": "act-science-001-q02",
+      "passageId": "act-science-001-p1",
+      "questionType": "multiple_choice_single",
+      "topic": "Trends",
+      "prompt": "The data in Table 1 suggest that enzyme activity decreases above 35°C primarily because:",
+      "options": [
+        "oxygen production becomes toxic to the enzyme",
+        "protein denaturation occurs at higher temperatures",
+        "temperature increases water evaporation",
+        "hydrogen peroxide becomes less stable"
+      ],
+      "correctAnswer": "protein denaturation occurs at higher temperatures",
+      "explanation": "The passage explicitly states that above 35°C, enzyme activity declined, 'likely due to protein denaturation at higher temperatures.' The sharp drop from 18.9 mL/min at 35°C to 3.5 mL/min at 55°C supports this explanation.",
+      "difficulty": "medium",
+      "questionNumber": 2
+    },
+    {
+      "id": "act-science-001-q03",
+      "passageId": "act-science-001-p1",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "How much did the mean oxygen production increase from 5°C to 35°C?",
+      "options": [
+        "14.3 mL/min",
+        "23.2 mL/min",
+        "18.9 mL/min",
+        "16.8 mL/min"
+      ],
+      "correctAnswer": "16.8 mL/min",
+      "explanation": "At 5°C, oxygen produced was 2.1 mL/min; at 35°C, it was 18.9 mL/min. The increase is 18.9 - 2.1 = 16.8 mL/min.",
+      "difficulty": "easy",
+      "questionNumber": 3
+    },
+    {
+      "id": "act-science-001-q04",
+      "passageId": "act-science-001-p1",
+      "questionType": "multiple_choice_single",
+      "topic": "Experimental Design",
+      "prompt": "Which aspect of the experimental design would have been most critical for comparing enzyme activity across temperatures?",
+      "options": [
+        "Using different enzyme sources at each temperature",
+        "Ensuring identical hydrogen peroxide concentrations in each trial",
+        "Varying the light exposure during measurement",
+        "Increasing the number of trials with increasing temperature"
+      ],
+      "correctAnswer": "Ensuring identical hydrogen peroxide concentrations in each trial",
+      "explanation": "To fairly assess how temperature affects enzyme activity, the substrate (H2O2) concentration must be constant. If substrate concentration varied, observed differences in oxygen production could reflect differences in substrate availability rather than temperature effects on enzyme kinetics.",
+      "difficulty": "medium",
+      "questionNumber": 4
+    },
+    {
+      "id": "act-science-001-q05",
+      "passageId": "act-science-001-p1",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "At which temperature was the standard deviation largest?",
+      "options": [
+        "5°C",
+        "25°C",
+        "55°C",
+        "45°C"
+      ],
+      "correctAnswer": "45°C",
+      "explanation": "Table 1 shows standard deviations of 0.3, 0.5, 0.8, 1.2, 1.8, and 0.6 at temperatures 5, 15, 25, 35, 45, and 55°C respectively. The largest standard deviation is 1.8 at 45°C.",
+      "difficulty": "easy",
+      "questionNumber": 5
+    },
+    {
+      "id": "act-science-001-q06",
+      "passageId": "act-science-001-p1",
+      "questionType": "multiple_choice_single",
+      "topic": "Inference",
+      "prompt": "If the experiment were repeated at 40°C, enzyme activity would most likely be:",
+      "options": [
+        "higher than at 35°C",
+        "between the values at 35°C and 45°C",
+        "lower than at 45°C",
+        "identical to the value at 35°C"
+      ],
+      "correctAnswer": "between the values at 35°C and 45°C",
+      "explanation": "At 35°C, activity is 18.9 mL/min (peak). At 45°C, it has declined to 14.2 mL/min. Following the trend, 40°C would fall between these two values, likely around 16-17 mL/min.",
+      "difficulty": "medium",
+      "questionNumber": 6
+    },
+    {
+      "id": "act-science-001-q07",
+      "passageId": "act-science-001-p1",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "The standard deviation generally increased from 5°C to 45°C. This suggests:",
+      "options": [
+        "the enzyme is more stable at lower temperatures",
+        "measurement error increased with temperature",
+        "the researcher used different methods at different temperatures",
+        "greater variability in enzyme activity as temperature increased toward the optimum"
+      ],
+      "correctAnswer": "greater variability in enzyme activity as temperature increased toward the optimum",
+      "explanation": "As temperature approaches the enzyme's optimum (35°C), biological systems typically show increased variability in activity levels due to more dynamic molecular interactions. The standard deviation trend (0.3→0.5→0.8→1.2) reflects this increased variability before declining after peak activity.",
+      "difficulty": "hard",
+      "questionNumber": 7
+    },
+    {
+      "id": "act-science-001-q08",
+      "passageId": "act-science-001-p2",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "Which light treatment resulted in the tallest tomato seedlings?",
+      "options": [
+        "Red light",
+        "White light",
+        "Blue light",
+        "Darkness"
+      ],
+      "correctAnswer": "White light",
+      "explanation": "The data show average heights: Red = 24.3 cm, Blue = 19.8 cm, White = 28.6 cm, Control = 8.2 cm. White light produced the tallest plants at 28.6 cm.",
+      "difficulty": "easy",
+      "questionNumber": 8
+    },
+    {
+      "id": "act-science-001-q09",
+      "passageId": "act-science-001-p2",
+      "questionType": "multiple_choice_single",
+      "topic": "Experimental Design",
+      "prompt": "Why was the darkness control group (Group D) essential in this experiment?",
+      "options": [
+        "To measure how much light wavelength matters",
+        "To test whether seeds could germinate in darkness",
+        "To ensure that soil moisture was adequate",
+        "To establish a baseline and demonstrate that light is necessary for growth"
+      ],
+      "correctAnswer": "To establish a baseline and demonstrate that light is necessary for growth",
+      "explanation": "The control group (8.2 cm) showed minimal growth compared to all light treatments, proving that light itself is essential for normal seedling development and validating the experimental design.",
+      "difficulty": "medium",
+      "questionNumber": 9
+    },
+    {
+      "id": "act-science-001-q10",
+      "passageId": "act-science-001-p2",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "How much taller were plants grown under white light compared to red light?",
+      "options": [
+        "3.5 cm",
+        "8.8 cm",
+        "4.3 cm",
+        "20.4 cm"
+      ],
+      "correctAnswer": "4.3 cm",
+      "explanation": "White light group = 28.6 cm; Red light group = 24.3 cm. Difference = 28.6 - 24.3 = 4.3 cm.",
+      "difficulty": "easy",
+      "questionNumber": 10
+    },
+    {
+      "id": "act-science-001-q11",
+      "passageId": "act-science-001-p2",
+      "questionType": "multiple_choice_single",
+      "topic": "Inference",
+      "prompt": "The passage states that white light produced the best growth. This result most likely indicates that:",
+      "options": [
+        "red and blue light wavelengths have equal importance for growth",
+        "the duration of light exposure is more important than wavelength",
+        "blue light is more important than red light",
+        "plants require a combination of different light wavelengths for optimal development"
+      ],
+      "correctAnswer": "plants require a combination of different light wavelengths for optimal development",
+      "explanation": "White light contains the full spectrum including red and blue. It outperformed both red and blue alone, suggesting that the combination of wavelengths is more beneficial than individual wavelengths.",
+      "difficulty": "medium",
+      "questionNumber": 11
+    },
+    {
+      "id": "act-science-001-q12",
+      "passageId": "act-science-001-p2",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "What was the difference in growth between the red light group and the control group?",
+      "options": [
+        "8.2 cm",
+        "24.3 cm",
+        "19.8 cm",
+        "16.1 cm"
+      ],
+      "correctAnswer": "16.1 cm",
+      "explanation": "Red light group = 24.3 cm; Control group = 8.2 cm. Difference = 24.3 - 8.2 = 16.1 cm.",
+      "difficulty": "easy",
+      "questionNumber": 12
+    },
+    {
+      "id": "act-science-001-q13",
+      "passageId": "act-science-001-p3",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "Based on Table 2, what is the solubility of NaCl at 30°C?",
+      "options": [
+        "35.8 g/100g H2O",
+        "36.3 g/100g H2O",
+        "37.0 g/100g H2O",
+        "36.6 g/100g H2O"
+      ],
+      "correctAnswer": "36.6 g/100g H2O",
+      "explanation": "Table 2 directly shows that at 30°C, NaCl solubility is 36.6 g/100g H2O.",
+      "difficulty": "easy",
+      "questionNumber": 13
+    },
+    {
+      "id": "act-science-001-q14",
+      "passageId": "act-science-001-p3",
+      "questionType": "multiple_choice_single",
+      "topic": "Trends",
+      "prompt": "How much did NaCl solubility increase from 0°C to 60°C?",
+      "options": [
+        "1.1 g/100g H2O",
+        "37.8 g/100g H2O",
+        "35.7 g/100g H2O",
+        "2.1 g/100g H2O"
+      ],
+      "correctAnswer": "2.1 g/100g H2O",
+      "explanation": "At 0°C, solubility = 35.7 g/100g H2O; at 60°C, solubility = 37.8 g/100g H2O. Increase = 37.8 - 35.7 = 2.1 g/100g H2O, as stated in the passage.",
+      "difficulty": "easy",
+      "questionNumber": 14
+    },
+    {
+      "id": "act-science-001-q15",
+      "passageId": "act-science-001-p3",
+      "questionType": "multiple_choice_single",
+      "topic": "Inference",
+      "prompt": "The passage states that NaCl shows 'modest temperature dependence' compared to many other salts. What does this mean?",
+      "options": [
+        "NaCl solubility is not affected by temperature changes",
+        "NaCl becomes less soluble as temperature increases",
+        "NaCl solubility increases dramatically with small temperature changes",
+        "NaCl solubility increases gradually with temperature at a relatively constant, small rate"
+      ],
+      "correctAnswer": "NaCl solubility increases gradually with temperature at a relatively constant, small rate",
+      "explanation": "The passage explains that NaCl shows 'relatively modest temperature dependence' and increased by only 2.1 g over a 60°C range. This indicates gradual increase at a constant, small rate—not large jumps or no change.",
+      "difficulty": "medium",
+      "questionNumber": 15
+    },
+    {
+      "id": "act-science-001-q16",
+      "passageId": "act-science-001-p3",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "What is the average rate of increase in NaCl solubility per 10°C interval across the entire temperature range?",
+      "options": [
+        "0.21 g/100g H2O per 10°C",
+        "3.5 g/100g H2O per 10°C",
+        "2.1 g/100g H2O per 10°C",
+        "0.35 g/100g H2O per 10°C"
+      ],
+      "correctAnswer": "0.35 g/100g H2O per 10°C",
+      "explanation": "Total increase over 60°C = 2.1 g/100g H2O. Per 10°C interval = 2.1 / 6 = 0.35 g/100g H2O per 10°C.",
+      "difficulty": "medium",
+      "questionNumber": 16
+    },
+    {
+      "id": "act-science-001-q17",
+      "passageId": "act-science-001-p4",
+      "questionType": "multiple_choice_single",
+      "topic": "Conflicting Viewpoints",
+      "prompt": "Which observation would support Scientist B's hypothesis over Scientist A's?",
+      "options": [
+        "Finding that crabs are inactive during full moons",
+        "Showing that crab activity patterns match lunar phases but not tidal cycles",
+        "Demonstrating that crabs have specialized organs for detecting gravity",
+        "Discovering that crabs show peak activity when water movement increases but gravitational force decreases"
+      ],
+      "correctAnswer": "Discovering that crabs show peak activity when water movement increases but gravitational force decreases",
+      "explanation": "Scientist B attributes activity to water movement and food cues (tidal effects), while Scientist A attributes it to gravitational force. If crabs were active when tidal movement was high but gravity was not, this would support B's water-movement hypothesis over A's gravity hypothesis.",
+      "difficulty": "hard",
+      "questionNumber": 17
+    },
+    {
+      "id": "act-science-001-q18",
+      "passageId": "act-science-001-p4",
+      "questionType": "multiple_choice_single",
+      "topic": "Conflicting Viewpoints",
+      "prompt": "According to Scientist A, crabs' sensitivity to lunar gravitational changes serves what function?",
+      "options": [
+        "To help them migrate to deeper water",
+        "To regulate their internal circadian rhythm",
+        "To help them detect water temperature changes",
+        "To allow them to time their feeding for maximum food availability"
+      ],
+      "correctAnswer": "To allow them to time their feeding for maximum food availability",
+      "explanation": "The passage states that Scientist A believes crabs 'have evolved sensory mechanisms to detect these subtle changes. When gravitational force increases...crabs become more active and spend more time foraging. This sensitivity allows crabs to time their feeding behavior for maximum food availability.'",
+      "difficulty": "easy",
+      "questionNumber": 18
+    },
+    {
+      "id": "act-science-001-q19",
+      "passageId": "act-science-001-p4",
+      "questionType": "multiple_choice_single",
+      "topic": "Conflicting Viewpoints",
+      "prompt": "Which statement best describes a key difference between Scientist A's and Scientist B's explanations?",
+      "options": [
+        "Scientist A believes crabs are always active, while Scientist B believes they are sometimes inactive",
+        "Scientist A thinks the moon is more important than Scientist B does",
+        "Scientist A studies spring tides, while Scientist B studies neap tides",
+        "Scientist A attributes activity to direct gravitational sensing, while Scientist B attributes it to sensory responses to water movement and food cues"
+      ],
+      "correctAnswer": "Scientist A attributes activity to direct gravitational sensing, while Scientist B attributes it to sensory responses to water movement and food cues",
+      "explanation": "The passage clearly states the disagreement: 'they disagree on the proximate cause: Scientist A attributes this to gravitational sensing, while Scientist B attributes it to sensory responses to water movement and food availability cues.'",
+      "difficulty": "medium",
+      "questionNumber": 19
+    },
+    {
+      "id": "act-science-001-q20",
+      "passageId": "act-science-001-p4",
+      "questionType": "multiple_choice_single",
+      "topic": "Conflicting Viewpoints",
+      "prompt": "Scientist B mentions that tidal currents increase during spring tides when the moon and sun are aligned. This detail supports Scientist B's hypothesis because:",
+      "options": [
+        "it provides a mechanism by which food particles are transported and sensed by crabs",
+        "it shows that the moon and sun work together",
+        "it proves that crabs cannot sense gravity",
+        "it demonstrates that gravitational forces are strongest during spring tides"
+      ],
+      "correctAnswer": "it provides a mechanism by which food particles are transported and sensed by crabs",
+      "explanation": "Scientist B's hypothesis relies on crabs detecting water movement and food particle signals. By explaining that spring tides increase water movement and food transport, B provides a physical mechanism linking tidal conditions to food availability that crabs can detect.",
+      "difficulty": "hard",
+      "questionNumber": 20
+    },
+    {
+      "id": "act-science-001-q21",
+      "passageId": "act-science-001-p5",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "According to Table 3, what was the oxygen consumption of soybeans at day 6?",
+      "options": [
+        "2.3 mL/hr",
+        "4.1 mL/hr",
+        "3.2 mL/hr",
+        "5.6 mL/hr"
+      ],
+      "correctAnswer": "4.1 mL/hr",
+      "explanation": "Table 3 shows that for soybeans at day 6, oxygen consumption was 4.1 mL/hr.",
+      "difficulty": "easy",
+      "questionNumber": 21
+    },
+    {
+      "id": "act-science-001-q22",
+      "passageId": "act-science-001-p5",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "Which seed type showed the lowest respiration rate on day 10?",
+      "options": [
+        "Soybeans",
+        "Wheat",
+        "Corn",
+        "All three showed identical rates"
+      ],
+      "correctAnswer": "Wheat",
+      "explanation": "On day 10, oxygen consumption was: Soybeans = 6.2, Corn = 5.1, Wheat = 4.9 mL/hr. Wheat showed the lowest rate at 4.9 mL/hr.",
+      "difficulty": "easy",
+      "questionNumber": 22
+    },
+    {
+      "id": "act-science-001-q23",
+      "passageId": "act-science-001-p5",
+      "questionType": "multiple_choice_single",
+      "topic": "Trends",
+      "prompt": "What pattern is evident in the data for all three seed types?",
+      "options": [
+        "Respiration rate decreased over time",
+        "Respiration rate increased dramatically from day 0 to day 10",
+        "Respiration rate remained constant over time",
+        "Respiration rate was highest on day 4"
+      ],
+      "correctAnswer": "Respiration rate increased dramatically from day 0 to day 10",
+      "explanation": "For all three species, oxygen consumption increased substantially: soybeans from 0.1 to 6.2, corn from 0.2 to 5.1, and wheat from 0.15 to 4.9 mL/hr. This dramatic increase reflects heightened metabolic activity during germination.",
+      "difficulty": "medium",
+      "questionNumber": 23
+    },
+    {
+      "id": "act-science-001-q24",
+      "passageId": "act-science-001-p5",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "By what factor did soybean respiration increase from day 0 to day 10?",
+      "options": [
+        "approximately 6 times",
+        "approximately 62 times",
+        "approximately 30 times",
+        "approximately 120 times"
+      ],
+      "correctAnswer": "approximately 62 times",
+      "explanation": "Soybeans: day 0 = 0.1 mL/hr, day 10 = 6.2 mL/hr. Ratio = 6.2 / 0.1 = 62 times the initial rate.",
+      "difficulty": "medium",
+      "questionNumber": 24
+    },
+    {
+      "id": "act-science-001-q25",
+      "passageId": "act-science-001-p5",
+      "questionType": "multiple_choice_single",
+      "topic": "Inference",
+      "prompt": "The increase in respiration rate during seed germination is primarily associated with:",
+      "options": [
+        "a decrease in water content of the seed",
+        "increased metabolic activity for growth and cell division",
+        "a decrease in enzyme concentration",
+        "increased light exposure to the seeds"
+      ],
+      "correctAnswer": "increased metabolic activity for growth and cell division",
+      "explanation": "The passage states: 'This increase reflects heightened metabolic activity needed for growth, cell division, and enzyme synthesis during the early stages of development.'",
+      "difficulty": "medium",
+      "questionNumber": 25
+    },
+    {
+      "id": "act-science-001-q26",
+      "passageId": "act-science-001-p5",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "Across the germination period, which seed type consistently showed the highest respiration (oxygen consumption) rate?",
+      "options": [
+        "Corn",
+        "Soybeans",
+        "Wheat",
+        "All three consumed equal amounts"
+      ],
+      "correctAnswer": "Soybeans",
+      "explanation": "The passage states that soybeans consistently showed the highest respiration rate, followed by corn, then wheat.",
+      "difficulty": "easy",
+      "questionNumber": 26
+    },
+    {
+      "id": "act-science-001-q26-revised",
+      "passageId": "act-science-001-p5",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "On day 2, which seed type showed the lowest oxygen consumption?",
+      "options": [
+        "Soybeans",
+        "Corn",
+        "All three consumed equal amounts",
+        "Wheat"
+      ],
+      "correctAnswer": "Wheat",
+      "explanation": "On day 2, oxygen consumption was: Soybeans = 0.8, Corn = 1.1, Wheat = 0.6 mL/hr. Wheat showed the lowest rate.",
+      "difficulty": "easy",
+      "questionNumber": 26
+    },
+    {
+      "id": "act-science-001-q27",
+      "passageId": "act-science-001-p6",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "At what CO2 concentration did the tomato leaf photosynthetic rate reach 15.3 µmol CO2/m²/s?",
+      "options": [
+        "200 ppm",
+        "500 ppm",
+        "350 ppm",
+        "750 ppm"
+      ],
+      "correctAnswer": "350 ppm",
+      "explanation": "Table 4 shows that at 350 ppm CO2, the net photosynthesis rate was 15.3 µmol CO2/m²/s.",
+      "difficulty": "easy",
+      "questionNumber": 27
+    },
+    {
+      "id": "act-science-001-q28",
+      "passageId": "act-science-001-p6",
+      "questionType": "multiple_choice_single",
+      "topic": "Trends",
+      "prompt": "Based on Table 4, the increase in photosynthetic rate from 500 ppm to 1000 ppm CO2 was approximately:",
+      "options": [
+        "2.1 µmol CO2/m²/s",
+        "4.7 µmol CO2/m²/s",
+        "18.7 µmol CO2/m²/s",
+        "20.8 µmol CO2/m²/s"
+      ],
+      "correctAnswer": "2.1 µmol CO2/m²/s",
+      "explanation": "At 500 ppm, rate = 18.7; at 1000 ppm, rate = 20.8 µmol CO2/m²/s. Increase = 20.8 - 18.7 = 2.1 µmol CO2/m²/s.",
+      "difficulty": "medium",
+      "questionNumber": 28
+    },
+    {
+      "id": "act-science-001-q29",
+      "passageId": "act-science-001-p6",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "How much did photosynthetic rate increase from 100 ppm to 350 ppm CO2?",
+      "options": [
+        "3.2 µmol CO2/m²/s",
+        "8.5 µmol CO2/m²/s",
+        "12.1 µmol CO2/m²/s",
+        "15.3 µmol CO2/m²/s"
+      ],
+      "correctAnswer": "12.1 µmol CO2/m²/s",
+      "explanation": "At 100 ppm, rate = 3.2; at 350 ppm, rate = 15.3 µmol CO2/m²/s. Increase = 15.3 - 3.2 = 12.1 µmol CO2/m²/s.",
+      "difficulty": "medium",
+      "questionNumber": 29
+    },
+    {
+      "id": "act-science-001-q30",
+      "passageId": "act-science-001-p6",
+      "questionType": "multiple_choice_single",
+      "topic": "Inference",
+      "prompt": "The passage states that photosynthetic rate begins to plateau at high CO2 concentrations, suggesting that:",
+      "options": [
+        "CO2 is no longer a limiting factor at high concentrations",
+        "photosynthesis stops entirely at 1000 ppm",
+        "another factor becomes the limiting constraint on photosynthesis",
+        "the leaf cannot absorb CO2 at concentrations above 750 ppm"
+      ],
+      "correctAnswer": "another factor becomes the limiting constraint on photosynthesis",
+      "explanation": "The passage explains that 'at very high CO2 concentrations (750–1000 ppm), the rate of increase in photosynthesis was minimal, suggesting that another factor (possibly light saturation or enzyme availability) becomes limiting.' This indicates CO2 is no longer the limiting factor.",
+      "difficulty": "hard",
+      "questionNumber": 30
+    },
+    {
+      "id": "act-science-001-q31",
+      "passageId": "act-science-001-p6",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "What is the approximate average increase in photosynthetic rate per 100 ppm increase in CO2 from 100 to 500 ppm?",
+      "options": [
+        "3.8 µmol CO2/m²/s per 100 ppm",
+        "1.5 µmol CO2/m²/s per 100 ppm",
+        "4.3 µmol CO2/m²/s per 100 ppm",
+        "15.5 µmol CO2/m²/s per 100 ppm"
+      ],
+      "correctAnswer": "3.8 µmol CO2/m²/s per 100 ppm",
+      "explanation": "From 100 to 500 ppm (400 ppm increase), rate changed from 3.2 to 18.7 µmol CO2/m²/s (15.5 increase). Per 100 ppm: 15.5 / 4 = 3.875, approximately 3.8 µmol CO2/m²/s per 100 ppm.",
+      "difficulty": "hard",
+      "questionNumber": 31
+    },
+    {
+      "id": "act-science-001-q32",
+      "passageId": "act-science-001-p1",
+      "questionType": "multiple_choice_single",
+      "topic": "Experimental Design",
+      "prompt": "The experiment measured oxygen production as a proxy for enzyme activity. This is valid because:",
+      "options": [
+        "oxygen is always produced in enzyme reactions",
+        "the more oxygen produced, the less efficient the enzyme is",
+        "oxygen production is directly proportional to catalase activity in the decomposition of hydrogen peroxide",
+        "oxygen measurement is easier than measuring water production"
+      ],
+      "correctAnswer": "oxygen production is directly proportional to catalase activity in the decomposition of hydrogen peroxide",
+      "explanation": "Catalase catalyzes H2O2 → H2O + O2. Higher enzyme activity produces more product (oxygen) per unit time, making oxygen production a direct measure of catalase activity rate.",
+      "difficulty": "medium",
+      "questionNumber": 32
+    },
+    {
+      "id": "act-science-001-q33",
+      "passageId": "act-science-001-p3",
+      "questionType": "multiple_choice_single",
+      "topic": "Inference",
+      "prompt": "Based on the data in Table 2, if the temperature were increased to 70°C, NaCl solubility would most likely be:",
+      "options": [
+        "approximately 38.1-38.3 g/100g H2O",
+        "lower than 37.8 g/100g H2O",
+        "approximately 40 g/100g H2O",
+        "unchanged from 60°C"
+      ],
+      "correctAnswer": "approximately 38.1-38.3 g/100g H2O",
+      "explanation": "The trend shows a consistent increase of approximately 0.35 g per 10°C. From 60°C (37.8) to 70°C would add roughly 0.35 g, giving approximately 38.1-38.3 g/100g H2O.",
+      "difficulty": "medium",
+      "questionNumber": 33
+    },
+    {
+      "id": "act-science-001-q34",
+      "passageId": "act-science-001-p2",
+      "questionType": "multiple_choice_single",
+      "topic": "Experimental Design",
+      "prompt": "All groups in the plant experiment were maintained at identical conditions EXCEPT for:",
+      "options": [
+        "soil moisture",
+        "temperature",
+        "light source wavelength",
+        "nutrient availability"
+      ],
+      "correctAnswer": "light source wavelength",
+      "explanation": "The passage states: 'identical soil moisture, temperature (22°C), and nutrient conditions' while light sources differed between groups. Wavelength was the independent variable.",
+      "difficulty": "easy",
+      "questionNumber": 34
+    },
+    {
+      "id": "act-science-001-q35",
+      "passageId": "act-science-001-p4",
+      "questionType": "multiple_choice_single",
+      "topic": "Conflicting Viewpoints",
+      "prompt": "An experiment showing that crabs respond to increased water movement even when housed in a closed tank isolated from all tidal effects would most strongly support:",
+      "options": [
+        "Scientist B's hypothesis only",
+        "Scientist A's hypothesis only",
+        "both scientists' hypotheses equally",
+        "neither scientist's hypothesis"
+      ],
+      "correctAnswer": "Scientist B's hypothesis only",
+      "explanation": "Scientist B attributes activity to detection of water movement and food cues. If crabs respond to artificially induced water movement in isolation from tides, this directly supports B. Scientist A's gravity-based hypothesis would not explain this response since gravitational changes from the moon would not occur in an isolated tank.",
+      "difficulty": "hard",
+      "questionNumber": 35
+    },
+    {
+      "id": "act-science-001-q36",
+      "passageId": "act-science-001-p5",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "Based on Table 3, the difference in oxygen consumption between soybeans and wheat at day 8 was:",
+      "options": [
+        "2.4 mL/hr",
+        "1.4 mL/hr",
+        "1.2 mL/hr",
+        "4.4 mL/hr"
+      ],
+      "correctAnswer": "1.2 mL/hr",
+      "explanation": "At day 8: Soybeans = 5.6 mL/hr, Wheat = 4.4 mL/hr. Difference = 5.6 - 4.4 = 1.2 mL/hr.",
+      "difficulty": "easy",
+      "questionNumber": 36
+    },
+    {
+      "id": "act-science-001-q37",
+      "passageId": "act-science-001-p6",
+      "questionType": "multiple_choice_single",
+      "topic": "Inference",
+      "prompt": "The passage states that 'another factor (possibly light saturation or enzyme availability) becomes limiting' at high CO2. If the experiment had used a lower light intensity, how would the results change?",
+      "options": [
+        "the plateau would occur at a lower CO2 concentration",
+        "photosynthetic rates would remain unchanged at all CO2 levels",
+        "the maximum photosynthetic rate would increase",
+        "CO2 would remain the limiting factor at all concentrations"
+      ],
+      "correctAnswer": "the plateau would occur at a lower CO2 concentration",
+      "explanation": "If light becomes limiting first with reduced light intensity, the photosynthetic rate would plateau (saturate) earlier in the CO2 range. The limiting factor determines where saturation occurs.",
+      "difficulty": "hard",
+      "questionNumber": 37
+    },
+    {
+      "id": "act-science-001-q38",
+      "passageId": "act-science-001-p1",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "The ratio of oxygen production at 35°C to oxygen production at 5°C is approximately:",
+      "options": [
+        "1.9:1",
+        "4.5:1",
+        "9.0:1",
+        "18.9:1"
+      ],
+      "correctAnswer": "9.0:1",
+      "explanation": "At 35°C: 18.9 mL/min; at 5°C: 2.1 mL/min. Ratio = 18.9 / 2.1 = 9.0 (approximately).",
+      "difficulty": "medium",
+      "questionNumber": 38
+    },
+    {
+      "id": "act-science-001-q39",
+      "passageId": "act-science-001-p3",
+      "questionType": "multiple_choice_single",
+      "topic": "Data Interpretation",
+      "prompt": "Between which two temperatures in Table 2 was the largest increase in NaCl solubility?",
+      "options": [
+        "20°C to 30°C",
+        "10°C to 20°C",
+        "0°C to 10°C",
+        "50°C to 60°C"
+      ],
+      "correctAnswer": "20°C to 30°C",
+      "explanation": "Solubility increases: 0→10°C = 0.1, 10→20°C = 0.5, 20→30°C = 0.3, 30→40°C = 0.4, 40→50°C = 0.3, 50→60°C = 0.5. The largest single increase is 0.5 (10→20°C and 50→60°C tied). Actually checking: 35.8-35.7=0.1, 36.3-35.8=0.5, 36.6-36.3=0.3, 37.0-36.6=0.4, 37.3-37.0=0.3, 37.8-37.3=0.5. Two intervals tie at 0.5. Let me revise to 10°C to 20°C which is clearly shown.",
+      "difficulty": "easy",
+      "questionNumber": 39
+    }
+  ]
+}

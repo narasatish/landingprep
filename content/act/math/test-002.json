@@ -1,0 +1,1032 @@
+{
+  "id": "act-math-002",
+  "exam": "act",
+  "section": "math",
+  "type": "section",
+  "title": "ACT Math Practice Test 2",
+  "durationSeconds": 3600,
+  "questionCount": 60,
+  "instructions": "Solve each problem and choose the correct answer. A calculator is permitted.",
+  "questions": [
+    {
+      "id": "act-math-002-q01",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "What is 15 - 8 + 4 × 2?",
+      "options": [
+        "6",
+        "7",
+        "22",
+        "15",
+        "36"
+      ],
+      "correctAnswer": "15",
+      "explanation": "Order of operations: 4 × 2 = 8, then 15 - 8 + 8 = 15.",
+      "difficulty": "easy",
+      "questionNumber": 1
+    },
+    {
+      "id": "act-math-002-q02",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "Solve for y: 3y - 7 = 20",
+      "options": [
+        "9",
+        "6",
+        "3",
+        "13",
+        "27"
+      ],
+      "correctAnswer": "9",
+      "explanation": "3y - 7 = 20 → 3y = 27 → y = 9.",
+      "difficulty": "easy",
+      "questionNumber": 2
+    },
+    {
+      "id": "act-math-002-q03",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "What is 45% of 200?",
+      "options": [
+        "45",
+        "155",
+        "110",
+        "90",
+        "245"
+      ],
+      "correctAnswer": "90",
+      "explanation": "45% of 200 = 0.45 × 200 = 90.",
+      "difficulty": "easy",
+      "questionNumber": 3
+    },
+    {
+      "id": "act-math-002-q04",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "Simplify: (2x - 3)(x + 4)",
+      "options": [
+        "2x² + 5x - 12",
+        "2x² + 11x - 12",
+        "2x² - 5x - 12",
+        "2x² + x - 12",
+        "2x² + 8x - 12"
+      ],
+      "correctAnswer": "2x² + 5x - 12",
+      "explanation": "(2x - 3)(x + 4) = 2x² + 8x - 3x - 12 = 2x² + 5x - 12.",
+      "difficulty": "medium",
+      "questionNumber": 4
+    },
+    {
+      "id": "act-math-002-q05",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "The sum of 16, 22, and 26 is:",
+      "options": [
+        "32",
+        "38",
+        "42",
+        "64",
+        "48"
+      ],
+      "correctAnswer": "64",
+      "explanation": "16 + 22 + 26 = 64.",
+      "difficulty": "easy",
+      "questionNumber": 5
+    },
+    {
+      "id": "act-math-002-q06",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "If 5b = 35, what is 3b - 2?",
+      "options": [
+        "19",
+        "16",
+        "15",
+        "21",
+        "23"
+      ],
+      "correctAnswer": "19",
+      "explanation": "5b = 35 → b = 7. Then 3b - 2 = 3(7) - 2 = 21 - 2 = 19.",
+      "difficulty": "easy",
+      "questionNumber": 6
+    },
+    {
+      "id": "act-math-002-q07",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "What is the greatest common factor of 18 and 45?",
+      "options": [
+        "3",
+        "9",
+        "6",
+        "5",
+        "15"
+      ],
+      "correctAnswer": "9",
+      "explanation": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 45: 1, 3, 5, 9, 15, 45. GCF = 9.",
+      "difficulty": "easy",
+      "questionNumber": 7
+    },
+    {
+      "id": "act-math-002-q08",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "Solve: 4x + 6 = 2x + 16",
+      "options": [
+        "2",
+        "5",
+        "4",
+        "8",
+        "10"
+      ],
+      "correctAnswer": "5",
+      "explanation": "4x + 6 = 2x + 16 → 2x = 10 → x = 5.",
+      "difficulty": "easy",
+      "questionNumber": 8
+    },
+    {
+      "id": "act-math-002-q09",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "What is √144?",
+      "options": [
+        "14",
+        "12",
+        "72",
+        "144",
+        "288"
+      ],
+      "correctAnswer": "12",
+      "explanation": "√144 = 12 because 12 × 12 = 144.",
+      "difficulty": "easy",
+      "questionNumber": 9
+    },
+    {
+      "id": "act-math-002-q10",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "If g(x) = 3x - 5, what is g(6)?",
+      "options": [
+        "10",
+        "12",
+        "23",
+        "18",
+        "13"
+      ],
+      "correctAnswer": "13",
+      "explanation": "g(6) = 3(6) - 5 = 18 - 5 = 13.",
+      "difficulty": "easy",
+      "questionNumber": 10
+    },
+    {
+      "id": "act-math-002-q11",
+      "questionType": "multiple_choice_single",
+      "topic": "Intermediate Algebra",
+      "prompt": "Solve: x² + 7x + 12 = 0",
+      "options": [
+        "x = -2 or x = -6",
+        "x = 3 or x = 4",
+        "x = -3 or x = -4",
+        "x = 1 or x = 12",
+        "x = -1 or x = -12"
+      ],
+      "correctAnswer": "x = -3 or x = -4",
+      "explanation": "x² + 7x + 12 = 0 → (x + 3)(x + 4) = 0 → x = -3 or x = -4.",
+      "difficulty": "medium",
+      "questionNumber": 11
+    },
+    {
+      "id": "act-math-002-q12",
+      "questionType": "multiple_choice_single",
+      "topic": "Coordinate Geometry",
+      "prompt": "What is the slope of the line passing through (1, 2) and (4, 11)?",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "4",
+        "9"
+      ],
+      "correctAnswer": "3",
+      "explanation": "Slope = (11 - 2) / (4 - 1) = 9 / 3 = 3.",
+      "difficulty": "medium",
+      "questionNumber": 12
+    },
+    {
+      "id": "act-math-002-q13",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "The perimeter of a rectangle with length 10 and width 6 is:",
+      "options": [
+        "32",
+        "30",
+        "16",
+        "60",
+        "64"
+      ],
+      "correctAnswer": "32",
+      "explanation": "Perimeter = 2(length + width) = 2(10 + 6) = 2(16) = 32.",
+      "difficulty": "easy",
+      "questionNumber": 13
+    },
+    {
+      "id": "act-math-002-q14",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "The area of a circle with radius 3 is:",
+      "options": [
+        "3π",
+        "6π",
+        "18π",
+        "12π",
+        "9π"
+      ],
+      "correctAnswer": "9π",
+      "explanation": "Area = πr² = π(3)² = 9π.",
+      "difficulty": "medium",
+      "questionNumber": 14
+    },
+    {
+      "id": "act-math-002-q15",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "A triangle has sides of length 5, 12, and 13. What type of triangle is it?",
+      "options": [
+        "Acute",
+        "Obtuse",
+        "Right",
+        "Isosceles",
+        "Equilateral"
+      ],
+      "correctAnswer": "Right",
+      "explanation": "5² + 12² = 25 + 144 = 169 = 13². This satisfies the Pythagorean theorem, so it is right.",
+      "difficulty": "medium",
+      "questionNumber": 15
+    },
+    {
+      "id": "act-math-002-q16",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "What is the value of 2⁵?",
+      "options": [
+        "10",
+        "25",
+        "64",
+        "32",
+        "100"
+      ],
+      "correctAnswer": "32",
+      "explanation": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32.",
+      "difficulty": "easy",
+      "questionNumber": 16
+    },
+    {
+      "id": "act-math-002-q17",
+      "questionType": "multiple_choice_single",
+      "topic": "Intermediate Algebra",
+      "prompt": "Simplify: √48",
+      "options": [
+        "12√4",
+        "4√12",
+        "6√2",
+        "8√3",
+        "4√3"
+      ],
+      "correctAnswer": "4√3",
+      "explanation": "√48 = √(16 × 3) = 4√3.",
+      "difficulty": "medium",
+      "questionNumber": 17
+    },
+    {
+      "id": "act-math-002-q18",
+      "questionType": "multiple_choice_single",
+      "topic": "Coordinate Geometry",
+      "prompt": "What is the distance between (1, 1) and (4, 5)?",
+      "options": [
+        "3",
+        "5",
+        "4",
+        "7",
+        "25"
+      ],
+      "correctAnswer": "5",
+      "explanation": "Distance = √[(4-1)² + (5-1)²] = √[9 + 16] = √25 = 5.",
+      "difficulty": "medium",
+      "questionNumber": 18
+    },
+    {
+      "id": "act-math-002-q19",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "Which of the following is divisible by 8?",
+      "options": [
+        "34",
+        "62",
+        "50",
+        "40",
+        "74"
+      ],
+      "correctAnswer": "40",
+      "explanation": "40 = 8 × 5, so it is divisible by 8.",
+      "difficulty": "easy",
+      "questionNumber": 19
+    },
+    {
+      "id": "act-math-002-q20",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "Solve: 6(x + 1) = 30",
+      "options": [
+        "3",
+        "9",
+        "5",
+        "6",
+        "4"
+      ],
+      "correctAnswer": "4",
+      "explanation": "6(x + 1) = 30 → x + 1 = 5 → x = 4.",
+      "difficulty": "easy",
+      "questionNumber": 20
+    },
+    {
+      "id": "act-math-002-q21",
+      "questionType": "multiple_choice_single",
+      "topic": "Intermediate Algebra",
+      "prompt": "What is the equation of the line with slope -1 passing through (2, 3)?",
+      "options": [
+        "y = -x + 1",
+        "y = -x + 5",
+        "y = -x + 3",
+        "y = -x - 1",
+        "y = -x + 2"
+      ],
+      "correctAnswer": "y = -x + 5",
+      "explanation": "Using point-slope form: y - 3 = -1(x - 2) → y - 3 = -x + 2 → y = -x + 5.",
+      "difficulty": "medium",
+      "questionNumber": 21
+    },
+    {
+      "id": "act-math-002-q22",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "What is the area of a square with side length 9?",
+      "options": [
+        "18",
+        "36",
+        "162",
+        "144",
+        "81"
+      ],
+      "correctAnswer": "81",
+      "explanation": "Area = s² = 9² = 81.",
+      "difficulty": "easy",
+      "questionNumber": 22
+    },
+    {
+      "id": "act-math-002-q23",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "What is 3/5 of 20?",
+      "options": [
+        "8",
+        "10",
+        "20",
+        "15",
+        "12"
+      ],
+      "correctAnswer": "12",
+      "explanation": "3/5 × 20 = (3 × 20) / 5 = 60 / 5 = 12.",
+      "difficulty": "easy",
+      "questionNumber": 23
+    },
+    {
+      "id": "act-math-002-q24",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "Factor: x² + 8x + 15",
+      "options": [
+        "(x + 2)(x + 7.5)",
+        "(x + 3)(x + 5)",
+        "(x + 5)(x + 3)",
+        "(x + 6)(x + 2.5)",
+        "(x + 1)(x + 15)"
+      ],
+      "correctAnswer": "(x + 3)(x + 5)",
+      "explanation": "x² + 8x + 15 = (x + 3)(x + 5) because 3 × 5 = 15 and 3 + 5 = 8.",
+      "difficulty": "medium",
+      "questionNumber": 24
+    },
+    {
+      "id": "act-math-002-q25",
+      "questionType": "multiple_choice_single",
+      "topic": "Coordinate Geometry",
+      "prompt": "Which point lies on the line y = -2x + 4?",
+      "options": [
+        "(0, 0)",
+        "(1, 2)",
+        "(4, -4)",
+        "(3, 2)",
+        "(2, 0)"
+      ],
+      "correctAnswer": "(2, 0)",
+      "explanation": "Testing (2, 0): y = -2(2) + 4 = -4 + 4 = 0. ✓",
+      "difficulty": "medium",
+      "questionNumber": 25
+    },
+    {
+      "id": "act-math-002-q26",
+      "questionType": "multiple_choice_single",
+      "topic": "Trigonometry",
+      "prompt": "In a right triangle, cos(45°) = ?",
+      "options": [
+        "1/2",
+        "√2/2",
+        "√3/2",
+        "1",
+        "√3"
+      ],
+      "correctAnswer": "√2/2",
+      "explanation": "cos(45°) = √2/2 (standard trigonometric value).",
+      "difficulty": "medium",
+      "questionNumber": 26
+    },
+    {
+      "id": "act-math-002-q27",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "What is the sum of interior angles in a quadrilateral?",
+      "options": [
+        "180°",
+        "270°",
+        "450°",
+        "360°",
+        "540°"
+      ],
+      "correctAnswer": "360°",
+      "explanation": "The sum of interior angles in a quadrilateral is always 360°.",
+      "difficulty": "easy",
+      "questionNumber": 27
+    },
+    {
+      "id": "act-math-002-q28",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "Solve: 3x - 1 = 2x + 7",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correctAnswer": "8",
+      "explanation": "3x - 1 = 2x + 7 → x = 8.",
+      "difficulty": "easy",
+      "questionNumber": 28
+    },
+    {
+      "id": "act-math-002-q29",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "What is the least common multiple of 6 and 9?",
+      "options": [
+        "18",
+        "9",
+        "3",
+        "27",
+        "54"
+      ],
+      "correctAnswer": "18",
+      "explanation": "Multiples of 6: 6, 12, 18, 24... Multiples of 9: 9, 18, 27... LCM = 18.",
+      "difficulty": "easy",
+      "questionNumber": 29
+    },
+    {
+      "id": "act-math-002-q30",
+      "questionType": "multiple_choice_single",
+      "topic": "Intermediate Algebra",
+      "prompt": "What is the value of x in 3^x = 81?",
+      "options": [
+        "3",
+        "27",
+        "9",
+        "4",
+        "81"
+      ],
+      "correctAnswer": "4",
+      "explanation": "3⁴ = 3 × 3 × 3 × 3 = 81, so x = 4.",
+      "difficulty": "medium",
+      "questionNumber": 30
+    },
+    {
+      "id": "act-math-002-q31",
+      "questionType": "multiple_choice_single",
+      "topic": "Coordinate Geometry",
+      "prompt": "What is the midpoint of the segment from (0, 0) to (6, 8)?",
+      "options": [
+        "(2, 2)",
+        "(12, 16)",
+        "(4, 4)",
+        "(6, 8)",
+        "(3, 4)"
+      ],
+      "correctAnswer": "(3, 4)",
+      "explanation": "Midpoint = ((0+6)/2, (0+8)/2) = (6/2, 8/2) = (3, 4).",
+      "difficulty": "medium",
+      "questionNumber": 31
+    },
+    {
+      "id": "act-math-002-q32",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "The volume of a rectangular prism with dimensions 2, 3, and 4 is:",
+      "options": [
+        "9",
+        "12",
+        "18",
+        "24",
+        "36"
+      ],
+      "correctAnswer": "24",
+      "explanation": "Volume = 2 × 3 × 4 = 24.",
+      "difficulty": "easy",
+      "questionNumber": 32
+    },
+    {
+      "id": "act-math-002-q33",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "Expand: (x - 4)²",
+      "options": [
+        "x² - 8x + 16",
+        "x² - 4x + 16",
+        "x² + 16",
+        "x² - 8x - 16",
+        "x - 16"
+      ],
+      "correctAnswer": "x² - 8x + 16",
+      "explanation": "(x - 4)² = x² - 2(4)(x) + 16 = x² - 8x + 16.",
+      "difficulty": "medium",
+      "questionNumber": 33
+    },
+    {
+      "id": "act-math-002-q34",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "If a = 3 and b = 2, what is a² + 2ab?",
+      "options": [
+        "12",
+        "13",
+        "21",
+        "18",
+        "15"
+      ],
+      "correctAnswer": "21",
+      "explanation": "a² + 2ab = 3² + 2(3)(2) = 9 + 12 = 21.",
+      "difficulty": "easy",
+      "questionNumber": 34
+    },
+    {
+      "id": "act-math-002-q35",
+      "questionType": "multiple_choice_single",
+      "topic": "Intermediate Algebra",
+      "prompt": "Solve: |x + 2| = 5",
+      "options": [
+        "x = 3",
+        "x = -7",
+        "x = -2 or x = 2",
+        "x = 5",
+        "x = 3 or x = -7"
+      ],
+      "correctAnswer": "x = 3 or x = -7",
+      "explanation": "|x + 2| = 5 means x + 2 = 5 or x + 2 = -5 → x = 3 or x = -7.",
+      "difficulty": "hard",
+      "questionNumber": 35
+    },
+    {
+      "id": "act-math-002-q36",
+      "questionType": "multiple_choice_single",
+      "topic": "Trigonometry",
+      "prompt": "sin(60°) = ?",
+      "options": [
+        "1/2",
+        "√3",
+        "√2/2",
+        "1",
+        "√3/2"
+      ],
+      "correctAnswer": "√3/2",
+      "explanation": "sin(60°) = √3/2 (standard trigonometric value).",
+      "difficulty": "medium",
+      "questionNumber": 36
+    },
+    {
+      "id": "act-math-002-q37",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "A circle has radius 4. What is its circumference?",
+      "options": [
+        "4π",
+        "8π",
+        "16π",
+        "32π",
+        "64π"
+      ],
+      "correctAnswer": "8π",
+      "explanation": "Circumference = 2πr = 2π(4) = 8π.",
+      "difficulty": "medium",
+      "questionNumber": 37
+    },
+    {
+      "id": "act-math-002-q38",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "Simplify: 5x - 2x + 3x",
+      "options": [
+        "4x",
+        "5x",
+        "6x",
+        "8x",
+        "10x"
+      ],
+      "correctAnswer": "6x",
+      "explanation": "5x - 2x + 3x = (5 - 2 + 3)x = 6x.",
+      "difficulty": "easy",
+      "questionNumber": 38
+    },
+    {
+      "id": "act-math-002-q39",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "What is 8 - 15 + 5?",
+      "options": [
+        "-12",
+        "2",
+        "-2",
+        "12",
+        "28"
+      ],
+      "correctAnswer": "-2",
+      "explanation": "8 - 15 + 5 = -7 + 5 = -2.",
+      "difficulty": "easy",
+      "questionNumber": 39
+    },
+    {
+      "id": "act-math-002-q40",
+      "questionType": "multiple_choice_single",
+      "topic": "Intermediate Algebra",
+      "prompt": "What is the slope of a line perpendicular to y = 3x - 2?",
+      "options": [
+        "-1/3",
+        "-3",
+        "1/3",
+        "3",
+        "2"
+      ],
+      "correctAnswer": "-1/3",
+      "explanation": "If a line has slope m, perpendicular line has slope -1/m. So perpendicular to 3 is -1/3.",
+      "difficulty": "hard",
+      "questionNumber": 40
+    },
+    {
+      "id": "act-math-002-q41",
+      "questionType": "multiple_choice_single",
+      "topic": "Coordinate Geometry",
+      "prompt": "What is the x-intercept of the line y = 3x + 9?",
+      "options": [
+        "-9",
+        "-3",
+        "0",
+        "3",
+        "9"
+      ],
+      "correctAnswer": "-3",
+      "explanation": "At the x-intercept, y = 0: 0 = 3x + 9 → 3x = -9 → x = -3.",
+      "difficulty": "medium",
+      "questionNumber": 41
+    },
+    {
+      "id": "act-math-002-q42",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "The area of a triangle with base 8 and height 5 is:",
+      "options": [
+        "13",
+        "40",
+        "26",
+        "20",
+        "80"
+      ],
+      "correctAnswer": "20",
+      "explanation": "Area = (1/2) × base × height = (1/2) × 8 × 5 = 20.",
+      "difficulty": "easy",
+      "questionNumber": 42
+    },
+    {
+      "id": "act-math-002-q43",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "If 2x + 8 = 14, what is x?",
+      "options": [
+        "3",
+        "1",
+        "5",
+        "6",
+        "11"
+      ],
+      "correctAnswer": "3",
+      "explanation": "2x + 8 = 14 → 2x = 6 → x = 3.",
+      "difficulty": "easy",
+      "questionNumber": 43
+    },
+    {
+      "id": "act-math-002-q44",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "What is the decimal equivalent of 5/8?",
+      "options": [
+        "0.5",
+        "0.58",
+        "0.75",
+        "0.625",
+        "0.8"
+      ],
+      "correctAnswer": "0.625",
+      "explanation": "5 ÷ 8 = 0.625.",
+      "difficulty": "easy",
+      "questionNumber": 44
+    },
+    {
+      "id": "act-math-002-q45",
+      "questionType": "multiple_choice_single",
+      "topic": "Intermediate Algebra",
+      "prompt": "Solve: x² = 121",
+      "options": [
+        "x = 11",
+        "x = -11",
+        "x = 121",
+        "x = 60.5",
+        "x = 11 or x = -11"
+      ],
+      "correctAnswer": "x = 11 or x = -11",
+      "explanation": "x² = 121 → x = ±11.",
+      "difficulty": "medium",
+      "questionNumber": 45
+    },
+    {
+      "id": "act-math-002-q46",
+      "questionType": "multiple_choice_single",
+      "topic": "Trigonometry",
+      "prompt": "What is sin(90°)?",
+      "options": [
+        "1",
+        "1/2",
+        "√2/2",
+        "0",
+        "undefined"
+      ],
+      "correctAnswer": "1",
+      "explanation": "sin(90°) = 1 (standard trigonometric value).",
+      "difficulty": "medium",
+      "questionNumber": 46
+    },
+    {
+      "id": "act-math-002-q47",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "If the angles of a triangle are 50°, 60°, and x°, what is x?",
+      "options": [
+        "60",
+        "130",
+        "90",
+        "110",
+        "70"
+      ],
+      "correctAnswer": "70",
+      "explanation": "Sum of angles in a triangle = 180°. 50 + 60 + x = 180 → x = 70.",
+      "difficulty": "medium",
+      "questionNumber": 47
+    },
+    {
+      "id": "act-math-002-q48",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "What is the value of (-2)³?",
+      "options": [
+        "-8",
+        "-6",
+        "6",
+        "8",
+        "12"
+      ],
+      "correctAnswer": "-8",
+      "explanation": "(-2)³ = (-2) × (-2) × (-2) = -8.",
+      "difficulty": "easy",
+      "questionNumber": 48
+    },
+    {
+      "id": "act-math-002-q49",
+      "questionType": "multiple_choice_single",
+      "topic": "Coordinate Geometry",
+      "prompt": "What is the y-intercept of the line 2x + y = 5?",
+      "options": [
+        "-5",
+        "-2",
+        "2",
+        "5",
+        "7"
+      ],
+      "correctAnswer": "5",
+      "explanation": "At the y-intercept, x = 0: 2(0) + y = 5 → y = 5.",
+      "difficulty": "medium",
+      "questionNumber": 49
+    },
+    {
+      "id": "act-math-002-q50",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "What is 18% of 50?",
+      "options": [
+        "5",
+        "8",
+        "18",
+        "9",
+        "90"
+      ],
+      "correctAnswer": "9",
+      "explanation": "18% of 50 = 0.18 × 50 = 9.",
+      "difficulty": "easy",
+      "questionNumber": 50
+    },
+    {
+      "id": "act-math-002-q51",
+      "questionType": "multiple_choice_single",
+      "topic": "Intermediate Algebra",
+      "prompt": "Solve: 3x² - 5x + 2 = 0",
+      "options": [
+        "x = -1 or x = 1",
+        "x = -1 or x = -2/3",
+        "x = 2 or x = 1/3",
+        "x = 1 or x = 2/3",
+        "x = 3 or x = 2"
+      ],
+      "correctAnswer": "x = 1 or x = 2/3",
+      "explanation": "3x² - 5x + 2 = 0 → (3x - 2)(x - 1) = 0 → x = 2/3 or x = 1.",
+      "difficulty": "hard",
+      "questionNumber": 51
+    },
+    {
+      "id": "act-math-002-q52",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "A rectangle has perimeter 28 and width 6. What is its length?",
+      "options": [
+        "8",
+        "6",
+        "12",
+        "14",
+        "22"
+      ],
+      "correctAnswer": "8",
+      "explanation": "Perimeter = 2(length + width) → 28 = 2(length + 6) → 14 = length + 6 → length = 8.",
+      "difficulty": "easy",
+      "questionNumber": 52
+    },
+    {
+      "id": "act-math-002-q53",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "Simplify: (4x² + 6x) / 2x",
+      "options": [
+        "4x + 3",
+        "4x + 6",
+        "2x + 6",
+        "x + 3",
+        "2x + 3"
+      ],
+      "correctAnswer": "2x + 3",
+      "explanation": "(4x² + 6x) / 2x = 4x²/2x + 6x/2x = 2x + 3.",
+      "difficulty": "medium",
+      "questionNumber": 53
+    },
+    {
+      "id": "act-math-002-q54",
+      "questionType": "multiple_choice_single",
+      "topic": "Trigonometry",
+      "prompt": "In a right triangle with hypotenuse 13 and one leg 5, what is the other leg?",
+      "options": [
+        "8",
+        "12",
+        "9",
+        "18",
+        "24"
+      ],
+      "correctAnswer": "12",
+      "explanation": "Using Pythagorean theorem: 5² + b² = 13² → 25 + b² = 169 → b² = 144 → b = 12.",
+      "difficulty": "medium",
+      "questionNumber": 54
+    },
+    {
+      "id": "act-math-002-q55",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "What is the reciprocal of 2/5?",
+      "options": [
+        "2/5",
+        "-5/2",
+        "0.4",
+        "-2/5",
+        "5/2"
+      ],
+      "correctAnswer": "5/2",
+      "explanation": "The reciprocal of a/b is b/a. So the reciprocal of 2/5 is 5/2.",
+      "difficulty": "easy",
+      "questionNumber": 55
+    },
+    {
+      "id": "act-math-002-q56",
+      "questionType": "multiple_choice_single",
+      "topic": "Coordinate Geometry",
+      "prompt": "Two lines are perpendicular if their slopes multiply to give:",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "∞",
+        "2"
+      ],
+      "correctAnswer": "-1",
+      "explanation": "If slopes are m₁ and m₂, and the lines are perpendicular, then m₁ × m₂ = -1.",
+      "difficulty": "hard",
+      "questionNumber": 56
+    },
+    {
+      "id": "act-math-002-q57",
+      "questionType": "multiple_choice_single",
+      "topic": "Elementary Algebra",
+      "prompt": "What is the value of 3x² + 2x - 1 when x = 3?",
+      "options": [
+        "17",
+        "26",
+        "35",
+        "32",
+        "44"
+      ],
+      "correctAnswer": "32",
+      "explanation": "3(3)² + 2(3) - 1 = 3(9) + 6 - 1 = 27 + 6 - 1 = 32.",
+      "difficulty": "medium",
+      "questionNumber": 57
+    },
+    {
+      "id": "act-math-002-q58",
+      "questionType": "multiple_choice_single",
+      "topic": "Plane Geometry",
+      "prompt": "The volume of a cube with side length 4 is:",
+      "options": [
+        "16",
+        "32",
+        "64",
+        "48",
+        "128"
+      ],
+      "correctAnswer": "64",
+      "explanation": "Volume = s³ = 4³ = 64.",
+      "difficulty": "easy",
+      "questionNumber": 58
+    },
+    {
+      "id": "act-math-002-q59",
+      "questionType": "multiple_choice_single",
+      "topic": "Intermediate Algebra",
+      "prompt": "What is √(x²) when x = -8?",
+      "options": [
+        "-8",
+        "-64",
+        "0",
+        "64",
+        "8"
+      ],
+      "correctAnswer": "8",
+      "explanation": "√(x²) = |x|. When x = -8, |−8| = 8.",
+      "difficulty": "hard",
+      "questionNumber": 59
+    },
+    {
+      "id": "act-math-002-q60",
+      "questionType": "multiple_choice_single",
+      "topic": "Pre-Algebra",
+      "prompt": "If 20% of a number is 15, what is the number?",
+      "options": [
+        "3",
+        "15",
+        "20",
+        "75",
+        "35"
+      ],
+      "correctAnswer": "75",
+      "explanation": "Let n be the number. 0.20n = 15 → n = 15/0.20 = 75.",
+      "difficulty": "easy",
+      "questionNumber": 60
+    }
+  ]
+}

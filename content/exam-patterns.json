@@ -1171,6 +1171,101 @@
           "digital": 134
         }
       }
+    },
+    "act": {
+      "examId": "act",
+      "examName": "ACT",
+      "fullName": "American College Testing",
+      "scale": "1–36 composite",
+      "website": "https://www.act.org",
+      "variants": [
+        {
+          "id": "standard",
+          "label": "ACT",
+          "description": "US university admissions",
+          "sections": [
+            "english",
+            "math",
+            "reading",
+            "science"
+          ]
+        }
+      ],
+      "sections": {
+        "english": {
+          "id": "english",
+          "label": "English",
+          "icon": "✏️",
+          "rendererType": "act-english",
+          "durationMinutes": 45,
+          "questionCount": 75,
+          "itemTypes": [
+            "multiple_choice_single"
+          ],
+          "reviewRequirements": [
+            "answer_key",
+            "explanation"
+          ]
+        },
+        "math": {
+          "id": "math",
+          "label": "Math",
+          "icon": "🔢",
+          "rendererType": "act-math",
+          "durationMinutes": 60,
+          "questionCount": 60,
+          "itemTypes": [
+            "multiple_choice_single"
+          ],
+          "reviewRequirements": [
+            "answer_key",
+            "explanation"
+          ]
+        },
+        "reading": {
+          "id": "reading",
+          "label": "Reading",
+          "icon": "📖",
+          "rendererType": "act-reading",
+          "durationMinutes": 35,
+          "questionCount": 40,
+          "itemTypes": [
+            "multiple_choice_single"
+          ],
+          "reviewRequirements": [
+            "answer_key",
+            "explanation"
+          ]
+        },
+        "science": {
+          "id": "science",
+          "label": "Science",
+          "icon": "🔬",
+          "rendererType": "act-science",
+          "durationMinutes": 35,
+          "questionCount": 40,
+          "itemTypes": [
+            "multiple_choice_single"
+          ],
+          "reviewRequirements": [
+            "answer_key",
+            "explanation"
+          ]
+        }
+      },
+      "fullMockStructure": {
+        "sections": {
+          "standard": [
+            "english",
+            "math",
+            "reading",
+            "science"
+          ]
+        },
+        "totalDurationMinutes": {
+          "standard": 175
+        }
+      }
     }
   }
 }
