@@ -365,7 +365,7 @@ function Home({ onGuide, onPractice, onNav }) {
           <div className="section-header reveal">
             <div>
               <div className="eyebrow">Choose your exam</div>
-              <h2 className="h1">Seven exams. One unified prep platform.</h2>
+              <h2 className="h1">Every major exam. One free platform.</h2>
               <p className="muted" style={{ maxWidth: 640, marginTop: 10 }}>
                 Click any exam to open its complete prep hub — pattern, registration, fees, score guide, mock tests, tips, and FAQs.
               </p>

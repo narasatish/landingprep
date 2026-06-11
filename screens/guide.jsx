@@ -54,7 +54,9 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
             <p className="body-lg muted" style={{ maxWidth: 700, marginTop: 18 }}>{exam.blurb}</p>
 
             <div className="row-gap-12" style={{ marginTop: 26 }}>
-              <button className="btn btn-primary" onClick={() => { window.location.hash = '#/exam-prep/' + exam.id; }}>Start mock test →</button>
+              {exam.guideOnly
+                ? <a className="btn btn-primary" href="#guide-format">Read the full guide ↓</a>
+                : <button className="btn btn-primary" onClick={() => { window.location.hash = '#/exam-prep/' + exam.id; }}>Start mock test →</button>}
               <a className="btn" href={exam.official} target="_blank" rel="noopener noreferrer">Official site ↗</a>
               <a className="btn" href={exam.booking} target="_blank" rel="noopener noreferrer">Book your slot ↗</a>
             </div>
@@ -65,7 +67,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
               [exam.duration, "Duration"],
               [exam.score, "Score scale"],
               [exam.sections, "Sections"],
-              [exam.mocks + " free", "Mock tests"],
+              [exam.guideOnly ? "Free guide" : exam.mocks + " free", exam.guideOnly ? "Format & tips" : "Mock tests"],
             ].map(([k, v]) => (
               <div className="guide-stat" key={v}>
                 <div className="k">{k}</div>
@@ -77,7 +79,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
       </section>
 
       {/* Tab nav */}
-      <div className="shell">
+      <div className="shell" id="guide-format">
         <div className="guide-tabs" style={{ marginTop: 0 }}>
           {TABS.map((t) => (
             <button key={t} className={tab === t ? "is-on" : ""} onClick={() => setTab(t)}>{t}</button>
@@ -101,15 +103,31 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
           {/* Sidebar */}
           <aside>
             <div className="aside-card">
-              <h3 className="h2" style={{ color: "white" }}>Start practising free</h3>
-              <p>Take a free {exam.name} mock test with real timings. Get a section-by-section score and model answers for writing and speaking.</p>
-              <button
-                className="btn"
-                style={{ background: "white", color: "var(--ink)", borderColor: "white", marginTop: 16 }}
-                onClick={() => { window.location.hash = '#/exam-prep/' + exam.id; }}
-              >
-                Start free mock →
-              </button>
+              {exam.guideOnly ? (
+                <>
+                  <h3 className="h2" style={{ color: "white" }}>Full {exam.name} guide</h3>
+                  <p>This is your complete {exam.name} format, scoring and prep guide. Full practice mocks are on the way — meanwhile, explore our free mock tests for IELTS, TOEFL, PTE, CELPIP and more.</p>
+                  <button
+                    className="btn"
+                    style={{ background: "white", color: "var(--ink)", borderColor: "white", marginTop: 16 }}
+                    onClick={() => { window.location.hash = '#/exam-prep'; }}
+                  >
+                    Browse free mock tests →
+                  </button>
+                </>
+              ) : (
+                <>
+                  <h3 className="h2" style={{ color: "white" }}>Start practising free</h3>
+                  <p>Take a free {exam.name} mock test with real timings. Get a section-by-section score and model answers for writing and speaking.</p>
+                  <button
+                    className="btn"
+                    style={{ background: "white", color: "var(--ink)", borderColor: "white", marginTop: 16 }}
+                    onClick={() => { window.location.hash = '#/exam-prep/' + exam.id; }}
+                  >
+                    Start free mock →
+                  </button>
+                </>
+              )}
             </div>
 
             <div className="card" style={{ padding: 22, marginTop: 16 }}>
