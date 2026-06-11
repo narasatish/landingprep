@@ -7,10 +7,21 @@
 (function () {
   const { useState, useEffect } = React;
 
-  const COUNTRIES = [
+  // Country selector — derived from LP_COUNTRY_DATA (all 18 destinations) so newly
+  // added countries appear automatically. Ordered by popularity for Indian students.
+  const COUNTRY_PRIORITY = ["USA", "UK", "Canada", "Australia", "Germany", "Ireland", "New Zealand", "Netherlands", "France", "Italy", "Spain", "Sweden", "Finland", "Denmark", "Poland", "Czech Republic", "United Arab Emirates", "Singapore"];
+  const COUNTRY_FALLBACK = [
     ["USA", "🇺🇸"], ["UK", "🇬🇧"], ["Canada", "🇨🇦"], ["Australia", "🇦🇺"], ["Germany", "🇩🇪"],
     ["Ireland", "🇮🇪"], ["New Zealand", "🇳🇿"], ["Singapore", "🇸🇬"], ["Netherlands", "🇳🇱"],
   ];
+  function getCountries() {
+    const data = (window.LP_COUNTRY_DATA || []);
+    if (!data.length) return COUNTRY_FALLBACK;
+    const byName = {}; data.forEach((c) => { byName[c.name] = c; });
+    const out = COUNTRY_PRIORITY.filter((n) => byName[n]).map((n) => [n, byName[n].flag]);
+    data.forEach((c) => { if (!COUNTRY_PRIORITY.includes(c.name)) out.push([c.name, c.flag]); });
+    return out;
+  }
   // Consolidated tabs (merged duplicates: Profile Eval → Build My Plan/Find
   // Colleges; Course Finder → Find Colleges; Compare → Top Universities;
   // Calculators → Loans & Costs). Combined tabs use an in-tab mode toggle.
@@ -51,7 +62,7 @@
 
   function Colleges({ onNav, initialTab, initialCountry }) {
     const valid = TABS.map((t) => t[0]);
-    const validCountry = COUNTRIES.some(([c]) => c === initialCountry);
+    const validCountry = getCountries().some(([c]) => c === initialCountry);
     const [tab, setTab] = useState(valid.includes(initialTab) ? initialTab : "destinations");
     const [country, setCountry] = useState(validCountry ? initialCountry : "USA");
     const [findMode, setFindMode] = useState("predict"); // predict | program
@@ -88,7 +99,7 @@
             <div className="country-select">
               <div className="country-select-label">🌍 Choose your destination</div>
               <div className="country-select-grid">
-                {COUNTRIES.map(([c, f]) => (
+                {getCountries().map(([c, f]) => (
                   <button key={c} className={"country-pick" + (country === c ? " active" : "")} onClick={() => setCountry(c)}>
                     <span className="country-pick-flag">{f}</span><span>{c}</span>
                   </button>

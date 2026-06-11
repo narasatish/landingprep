@@ -70,6 +70,19 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 .cmp-table th,.cmp-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 .cmp-table thead th{background:#eef2ff;color:var(--brand);font-weight:700}
 .cmp-table td:first-child{background:#f8fafc;width:120px}
+.bsteps{list-style:none;counter-reset:bs;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:10px}
+.bsteps li{counter-increment:bs;position:relative;padding:12px 16px 12px 50px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.bsteps li::before{content:counter(bs);position:absolute;left:12px;top:11px;width:26px;height:26px;border-radius:999px;background:var(--brand);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.bcheck{list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:7px}
+.bcheck li{position:relative;padding-left:26px}
+.bcheck li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.callout{display:flex;gap:10px;align-items:flex-start;padding:13px 16px;border-radius:11px;margin:12px 0;border:1px solid var(--line)}
+.callout .ic{font-size:17px;flex-shrink:0}
+.callout.info{border-left:4px solid #4f46e5;background:#eef2ff}
+.callout.tip{border-left:4px solid #16a34a;background:#ecfdf5}
+.callout.money{border-left:4px solid #d97706;background:#fffbeb}
+.callout.warn{border-left:4px solid #dc2626;background:#fef2f2}
+.callout.key{border-left:4px solid #7c3aed;background:#f5f3ff}
 </style>
 </head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="/">▲ LandingPrep</a><a class="cta" href="/#/exam-prep">Start free practice →</a></div></header>
@@ -90,6 +103,7 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 <div class="card"><h2>Visa funds requirement</h2><p>For an Irish student visa, you need your first-year tuition paid (or a receipt) plus €10,000 in a bank account for living costs. Private health insurance is also required. Keep funds clear and in your own or parent's name for at least 3–6 months.</p></div>
 <div class="card"><h2>2-year post-study visa</h2><p>After graduating in Ireland you can apply for the Third Level Graduate Scheme — 24 months of open work authorisation for degree-level graduates, 12 months for Higher Diploma. You need your award letter and to apply within 6 months of graduation.</p></div>
 <div class="card"><h2>Scholarships and free prep</h2><p>Government of Ireland International Education Scholarships offer €10,000 per year to a small cohort; most universities also give merit partial-waivers at application time. A strong IELTS score (6.5 overall minimum for most courses) improves both admission and scholarship odds. Practise free on LandingPrep.</p></div>
+
 <section class="related-articles"><h2>Related articles</h2><ul class="rel-list"><li><a href="/blog/cost-of-studying-in-canada-for-indians-2026/">Cost of Studying in Canada for Indian Students 2026: Tuition, Living &amp; Total Budget</a></li><li><a href="/blog/cost-of-studying-in-usa-for-indian-students-2026/">Cost of Studying in USA for Indian Students 2026: Tuition, Living &amp; Total Budget</a></li><li><a href="/blog/study-ireland-international-students/">Study in Ireland for International Students: Costs, Visa &amp; Work Rights</a></li><li><a href="/blog/mba-vs-ms-which-is-better-2026/">MBA vs MS 2026: Which Is Better for Indian Students?</a></li><li><a href="/blog/study-in-singapore-indian-students-2026/">Study in Singapore for Indian Students 2026: NUS, NTU, Fees &amp; Student Pass</a></li><li><a href="/blog/cheapest-countries-to-study-abroad/">Cheapest Countries to Study Abroad in 2026 (Tuition + Living Costs)</a></li></ul></section>
 <h2>Keep going — free practice</h2><div class="grid"><a class="tile" href="/#/colleges">🌍 Study-abroad destinations</a><a class="tile" href="/#/colleges">💸 Scholarships (free finder)</a><a class="tile" href="/mock-test/ielts/">Free IELTS mock test</a><a class="tile" href="/#/blog">All blog articles</a></div>
 </main>

@@ -255,6 +255,19 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 .cmp-table th,.cmp-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 .cmp-table thead th{background:#eef2ff;color:var(--brand);font-weight:700}
 .cmp-table td:first-child{background:#f8fafc;width:120px}
+.bsteps{list-style:none;counter-reset:bs;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:10px}
+.bsteps li{counter-increment:bs;position:relative;padding:12px 16px 12px 50px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.bsteps li::before{content:counter(bs);position:absolute;left:12px;top:11px;width:26px;height:26px;border-radius:999px;background:var(--brand);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.bcheck{list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:7px}
+.bcheck li{position:relative;padding-left:26px}
+.bcheck li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.callout{display:flex;gap:10px;align-items:flex-start;padding:13px 16px;border-radius:11px;margin:12px 0;border:1px solid var(--line)}
+.callout .ic{font-size:17px;flex-shrink:0}
+.callout.info{border-left:4px solid #4f46e5;background:#eef2ff}
+.callout.tip{border-left:4px solid #16a34a;background:#ecfdf5}
+.callout.money{border-left:4px solid #d97706;background:#fffbeb}
+.callout.warn{border-left:4px solid #dc2626;background:#fef2f2}
+.callout.key{border-left:4px solid #7c3aed;background:#f5f3ff}
 </style>
 </head>`;
 }
@@ -725,14 +738,32 @@ function howToJsonLd(a) {
     step: a.sections.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.h, text: s.body })) });
 }
 
+// Inline markdown for static HTML: **bold** and [text](url).
+function mdInline(s) {
+  return s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, t, u) => `<a href="${u}"${/^https?:/.test(u) ? ' target="_blank" rel="noopener"' : ''}>${t}</a>`);
+}
+// Rich section → HTML (paragraphs, callouts, steps, checklists, tables).
+function renderBlogSection(s, lk) {
+  let h = `<div class="card">`;
+  if (s.h) h += `<h2>${esc(s.h)}</h2>`;
+  if (s.body) h += esc(s.body).split(/\n{2,}/).map((p) => p.trim()).filter(Boolean).map((p) => `<p>${mdInline(linkifyBody(p, lk))}</p>`).join("");
+  if (s.callout) { const t = s.callout.type || "info"; const ic = { info: "ℹ️", tip: "💡", money: "💰", warn: "⚠️", key: "🔑" }[t] || "ℹ️"; h += `<div class="callout ${t}"><span class="ic">${ic}</span><div>${mdInline(linkifyBody(esc(s.callout.text), lk))}</div></div>`; }
+  if (Array.isArray(s.steps) && s.steps.length) h += `<ol class="bsteps">${s.steps.map((x) => `<li>${mdInline(linkifyBody(esc(x), lk))}</li>`).join("")}</ol>`;
+  if (Array.isArray(s.bullets) && s.bullets.length) h += `<ul class="bcheck">${s.bullets.map((x) => `<li>${mdInline(linkifyBody(esc(x), lk))}</li>`).join("")}</ul>`;
+  if (s.table && Array.isArray(s.table.rows)) h += `<table class="cmp-table">${Array.isArray(s.table.headers) ? `<thead><tr>${s.table.headers.map((x) => `<th>${esc(x)}</th>`).join("")}</tr></thead>` : ""}<tbody>${s.table.rows.map((r) => `<tr>${r.map((c) => `<td>${mdInline(linkifyBody(esc(String(c)), lk))}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  h += `</div>`;
+  return h;
+}
 function blogPage(a) {
   const path = `/blog/${a.id}/`;
   const title = `${a.title} | ${BRAND}`;
   const desc = a.excerpt.slice(0, 230);
   const kw = a.kw || (a.tag + ", study abroad, " + a.title.toLowerCase());
   const isHowTo = /^how-to-/.test(a.id) || /^how to /i.test(a.title);
-  const lk = { used: new Set(), count: 0, max: 4, cur: path };
-  const sectionsHtml = a.sections.map((s) => `<div class="card"><h2>${esc(s.h)}</h2><p>${linkifyBody(esc(s.body), lk)}</p></div>`).join("\n");
+  const lk = { used: new Set(), count: 0, max: 6, cur: path };
+  const sectionsHtml = a.sections.map((s) => renderBlogSection(s, lk)).join("\n");
+  const faqs = Array.isArray(a.faqs) ? a.faqs.map((f) => Array.isArray(f) ? { q: f[0], a: f[1] } : f).filter((f) => f && f.q && f.a) : [];
   // AEO: a "Quick answer" box that LLMs + featured snippets lift verbatim (the first
   // ~2 sentences that directly answer the title). Auto-derived from section 1.
   const qaSrc = ((a.sections[0] && a.sections[0].body) || a.excerpt || "").replace(/\s+/g, " ").trim();
@@ -748,6 +779,7 @@ function blogPage(a) {
 </section>
 ${qaBlock}
 ${sectionsHtml}
+${faqs.length ? faqBlock(faqs) : ""}
 ${relatedArticles(a)}
 ${relatedGrid(blogTiles(a))}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
@@ -756,6 +788,7 @@ ${relatedGrid(blogTiles(a))}`;
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Blog", path: "/#/blog" }, { name: a.title, path }]),
     jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
     ...(isHowTo ? [howToJsonLd(a)] : []),
+    ...(faqs.length ? [faqJsonLd(faqs)] : []),
   ] }) + shell(inner));
 }
 

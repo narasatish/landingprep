@@ -70,6 +70,19 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 .cmp-table th,.cmp-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 .cmp-table thead th{background:#eef2ff;color:var(--brand);font-weight:700}
 .cmp-table td:first-child{background:#f8fafc;width:120px}
+.bsteps{list-style:none;counter-reset:bs;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:10px}
+.bsteps li{counter-increment:bs;position:relative;padding:12px 16px 12px 50px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.bsteps li::before{content:counter(bs);position:absolute;left:12px;top:11px;width:26px;height:26px;border-radius:999px;background:var(--brand);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.bcheck{list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:7px}
+.bcheck li{position:relative;padding-left:26px}
+.bcheck li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.callout{display:flex;gap:10px;align-items:flex-start;padding:13px 16px;border-radius:11px;margin:12px 0;border:1px solid var(--line)}
+.callout .ic{font-size:17px;flex-shrink:0}
+.callout.info{border-left:4px solid #4f46e5;background:#eef2ff}
+.callout.tip{border-left:4px solid #16a34a;background:#ecfdf5}
+.callout.money{border-left:4px solid #d97706;background:#fffbeb}
+.callout.warn{border-left:4px solid #dc2626;background:#fef2f2}
+.callout.key{border-left:4px solid #7c3aed;background:#f5f3ff}
 </style>
 </head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="/">▲ LandingPrep</a><a class="cta" href="/#/exam-prep">Start free practice →</a></div></header>
@@ -90,6 +103,7 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 <div class="card"><h2>AI scoring — what it actually checks</h2><p>PTE AI does not care about your accent — it checks consistency, clarity, and completeness. Pronunciation is scored on whether each phoneme is recognisable, not whether it sounds British or American. Fluency is penalised by hesitation sounds ('um', 'ah') and unnatural pauses mid-sentence. A steady, slightly slow clear delivery often outscores a fast but choppy native-sounding one.</p></div>
 <div class="card"><h2>How to use a practice test effectively</h2><p>Do the full mock in one sitting under exam conditions — no pause, phone away. Immediately after, review every wrong answer by task type. Spend your next 3 study days drilling only the 2 task types where you lost the most marks. Then take another full mock. The gap between mock scores narrows fastest with this targeted loop rather than random daily practice.</p></div>
 <div class="card"><h2>Take a free PTE mock now</h2><p>LandingPrep gives you unlimited free PTE Academic practice tests — all 20 task types, real timing, and an instant score estimate. No signup, no fees. Start your first free PTE mock and see where you stand today.</p></div>
+
 <section class="related-articles"><h2>Related articles</h2><ul class="rel-list"><li><a href="/blog/pte-79-tips/">How to Score PTE 79+ : High-Leverage Tasks, Templates &amp; Free Practice</a></li><li><a href="/blog/pte-describe-image-template-tips/">PTE Describe Image Task: Template, Tips &amp; Practice (2026)</a></li><li><a href="/blog/pte-read-aloud-tips-band-79-2026/">PTE Read Aloud Tips 2026: How to Score 79+ on the Highest-Weight Task</a></li><li><a href="/blog/ielts-listening-tips-strategies/">IELTS Listening Tips &amp; Strategies: Section-by-Section Guide + Free Practice</a></li><li><a href="/blog/ielts-academic-vs-general-training/">IELTS Academic vs General Training: Which Version Should You Take?</a></li><li><a href="/blog/free-ielts-mock-test-online-2026/">Free IELTS Mock Test Online 2026: Full Practice Test with Instant Band Score</a></li></ul></section>
 <h2>Keep going — free practice</h2><div class="grid"><a class="tile" href="/mock-test/pte/">Free PTE mock test</a><a class="tile" href="/practice/pte/">PTE practice questions</a><a class="tile" href="/#/colleges">🎓 Free college predictor</a><a class="tile" href="/#/blog">All blog articles</a></div>
 </main>

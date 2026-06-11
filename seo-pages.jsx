@@ -192,36 +192,129 @@
     );
   }
 
-  function BlogArticle({ article, onNav, onBackToIndex }) {
+  // ── Rich content helpers ─────────────────────────────────────────────
+  function slugify(s) { return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, ""); }
+  function calloutIcon(t) { return t === "warn" ? "⚠️" : t === "tip" ? "💡" : t === "money" ? "💰" : t === "key" ? "🔑" : "ℹ️"; }
+  // Inline formatter: **bold**, [text](url)
+  function fmt(text) {
+    if (text == null) return null;
+    const s = String(text); const out = []; let last = 0, m, k = 0;
+    const re = /\*\*([^*]+)\*\*|\[([^\]]+)\]\(([^)]+)\)/g;
+    while ((m = re.exec(s))) {
+      if (m.index > last) out.push(s.slice(last, m.index));
+      if (m[1]) out.push(<strong key={k++}>{m[1]}</strong>);
+      else { const ext = /^https?:/.test(m[3]); out.push(<a key={k++} href={m[3]} target={ext ? "_blank" : undefined} rel={ext ? "noopener noreferrer" : undefined}>{m[2]}</a>); }
+      last = m.index + m[0].length;
+    }
+    if (last < s.length) out.push(s.slice(last));
+    return out;
+  }
+  function Paragraphs({ text }) {
+    return String(text || "").split(/\n{2,}/).map((p) => p.trim()).filter(Boolean).map((p, i) => <p key={i}>{fmt(p)}</p>);
+  }
+  function Section({ s }) {
+    return (
+      <section className="blg-section">
+        {s.h && <h2 id={slugify(s.h)}>{s.h}</h2>}
+        {s.body && <Paragraphs text={s.body} />}
+        {s.callout && (
+          <div className={"blg-callout " + (s.callout.type || "info")}>
+            <span className="blg-callout-ic">{calloutIcon(s.callout.type)}</span>
+            <div>{fmt(s.callout.text)}</div>
+          </div>
+        )}
+        {Array.isArray(s.steps) && s.steps.length > 0 && (
+          <ol className="blg-steps">{s.steps.map((st, i) => <li key={i}>{fmt(st)}</li>)}</ol>
+        )}
+        {Array.isArray(s.bullets) && s.bullets.length > 0 && (
+          <ul className="blg-bullets">{s.bullets.map((b, i) => <li key={i}>{fmt(b)}</li>)}</ul>
+        )}
+        {s.table && Array.isArray(s.table.rows) && (
+          <div className="blg-tablewrap">
+            <table className="blg-table">
+              {Array.isArray(s.table.headers) && <thead><tr>{s.table.headers.map((h, i) => <th key={i}>{h}</th>)}</tr></thead>}
+              <tbody>{s.table.rows.map((r, i) => <tr key={i}>{r.map((c, j) => <td key={j}>{fmt(c)}</td>)}</tr>)}</tbody>
+            </table>
+          </div>
+        )}
+      </section>
+    );
+  }
+  function Faq({ faqs }) {
+    const [open, setOpen] = useState(0);
+    return (
+      <div className="blg-faq">
+        <h2>Frequently asked questions</h2>
+        {faqs.map((f, i) => {
+          const q = Array.isArray(f) ? f[0] : f.q; const a = Array.isArray(f) ? f[1] : f.a;
+          return (
+            <div key={i} className={"blg-faq-item" + (open === i ? " open" : "")}>
+              <button className="blg-faq-q" onClick={() => setOpen(open === i ? -1 : i)} aria-expanded={open === i}>
+                <span>{q}</span><span className="blg-faq-ic">{open === i ? "−" : "+"}</span>
+              </button>
+              {open === i && <div className="blg-faq-a">{fmt(a)}</div>}
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
+  function BlogArticle({ article, onNav, onBackToIndex, onOpen }) {
     if (!article) return null;
+    const words = (article.sections || []).reduce((n, s) =>
+      n + ((s.body || "") + " " + (s.steps || []).join(" ") + " " + (s.bullets || []).join(" ")).split(/\s+/).length, 0);
+    const mins = Math.max(3, Math.round(words / 200));
+    const toc = (article.sections || []).filter((s) => s.h);
+    let related = ARTICLES.filter((a) => a.id !== article.id && a.tag === article.tag).slice(0, 3);
+    if (related.length < 3) related = related.concat(ARTICLES.filter((a) => a.id !== article.id && !related.includes(a)).slice(0, 3 - related.length));
     return (
       <>
         <window.LP_TopBar current="blog" onNav={onNav} />
-        <div className="seo-shell">
-          <div style={{ marginBottom: 20 }}>
-            <a onClick={onBackToIndex} style={{ color: "var(--accent)", cursor: "pointer", fontSize: 14, fontWeight: 600 }}>← Back to all guides</a>
+        <div className="seo-shell blg-shell">
+          <div style={{ marginBottom: 18 }}>
+            <a onClick={onBackToIndex} style={{ color: "var(--accent)", cursor: "pointer", fontSize: 14, fontWeight: 600 }}>← All guides</a>
           </div>
-          <div className="seo-hero" style={{ borderBottom: "none", paddingBottom: 0 }}>
-            <div className="eyebrow" style={{ color: "var(--accent)" }}>{article.tag}</div>
-            <h1 className="h1" style={{ marginTop: 8, fontSize: "clamp(28px,4.5vw,42px)" }}>{article.title}</h1>
-            <p className="body-lg muted" style={{ marginTop: 12 }}>{article.excerpt}</p>
+          <div className="blg-head">
+            <span className="blg-tag">{article.tag}</span>
+            <h1>{article.title}</h1>
+            <p className="blg-excerpt">{article.excerpt}</p>
+            <div className="blg-meta">{article.date ? <span>{article.date}</span> : null}{article.date ? <span className="dot">·</span> : null}<span>{mins} min read</span><span className="dot">·</span><span>LandingPrep</span></div>
           </div>
-          <div className="seo-article-body">
-            {article.sections.map((s, i) => (
-              <div key={i}>
-                <h2>{s.h}</h2>
-                <p>{s.body}</p>
-              </div>
-            ))}
+          {toc.length >= 4 && (
+            <nav className="blg-toc">
+              <div className="blg-toc-t">📑 On this page</div>
+              <ol>{toc.map((s, i) => <li key={i}><a href={"#" + slugify(s.h)}>{s.h}</a></li>)}</ol>
+            </nav>
+          )}
+          <div className="seo-article-body blg-body">
+            {(article.sections || []).map((s, i) => <Section key={i} s={s} />)}
           </div>
-          <div style={{ marginTop: 40, padding: 24, background: "var(--surface-2)", borderRadius: 16, border: "1px solid var(--line)" }}>
-            <h3 style={{ margin: 0, fontSize: 18, fontFamily: "var(--serif)" }}>Ready to put this into practice?</h3>
-            <p style={{ margin: "8px 0 14px", color: "var(--ink-3)" }}>Take a free mock test or open the Learning Club for full model answers.</p>
+          {Array.isArray(article.faqs) && article.faqs.length > 0 && <Faq faqs={article.faqs} />}
+          <div className="blg-cta">
+            <h3>Ready to put this into practice?</h3>
+            <p>Take a free mock test, check your eligibility with the College Predictor, or open the Learning Club for model answers — all 100% free.</p>
             <div className="row-gap-12">
-              <button className="btn btn-primary" onClick={() => onNav("exams")}>Browse Exam Hub</button>
-              <button className="btn" onClick={() => onNav("learning")}>Open Learning Club</button>
+              <button className="btn btn-primary" onClick={() => onNav("exams")}>Free mock tests →</button>
+              <button className="btn" onClick={() => onNav("colleges")}>Study-abroad tools →</button>
             </div>
           </div>
+          {related.length > 0 && (
+            <div className="blg-related">
+              <h2>Keep reading</h2>
+              <div className="seo-grid">
+                {related.map((a) => (
+                  <div key={a.id} className="seo-card" onClick={() => onOpen(a.id)} role="button" tabIndex={0}
+                       onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && onOpen(a.id)}>
+                    <div className="seo-card-top"><span className="tag">{a.tag}</span></div>
+                    <h3>{a.title}</h3>
+                    <p>{a.excerpt}</p>
+                    <span className="seo-card-cta">Read guide →</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
         <window.LP_Footer />
       </>
@@ -230,9 +323,10 @@
 
   function BlogRouter({ onNav }) {
     const [openId, setOpenId] = useState(null);
+    React.useEffect(() => { try { window.scrollTo(0, 0); } catch (e) {} }, [openId]);
     if (openId) {
       const article = ARTICLES.find(a => a.id === openId);
-      return <BlogArticle article={article} onNav={onNav} onBackToIndex={() => setOpenId(null)} />;
+      return <BlogArticle article={article} onNav={onNav} onBackToIndex={() => setOpenId(null)} onOpen={setOpenId} />;
     }
     return <BlogIndex onNav={onNav} onOpen={setOpenId} />;
   }

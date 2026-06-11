@@ -70,6 +70,19 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 .cmp-table th,.cmp-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 .cmp-table thead th{background:#eef2ff;color:var(--brand);font-weight:700}
 .cmp-table td:first-child{background:#f8fafc;width:120px}
+.bsteps{list-style:none;counter-reset:bs;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:10px}
+.bsteps li{counter-increment:bs;position:relative;padding:12px 16px 12px 50px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.bsteps li::before{content:counter(bs);position:absolute;left:12px;top:11px;width:26px;height:26px;border-radius:999px;background:var(--brand);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.bcheck{list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:7px}
+.bcheck li{position:relative;padding-left:26px}
+.bcheck li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.callout{display:flex;gap:10px;align-items:flex-start;padding:13px 16px;border-radius:11px;margin:12px 0;border:1px solid var(--line)}
+.callout .ic{font-size:17px;flex-shrink:0}
+.callout.info{border-left:4px solid #4f46e5;background:#eef2ff}
+.callout.tip{border-left:4px solid #16a34a;background:#ecfdf5}
+.callout.money{border-left:4px solid #d97706;background:#fffbeb}
+.callout.warn{border-left:4px solid #dc2626;background:#fef2f2}
+.callout.key{border-left:4px solid #7c3aed;background:#f5f3ff}
 </style>
 </head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="/">▲ LandingPrep</a><a class="cta" href="/#/exam-prep">Start free practice →</a></div></header>
@@ -90,6 +103,7 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 <div class="card"><h2>Pronunciation and fluency wins</h2><p>You don't need a 'perfect' accent, but clarity is vital — word stress and sentence rhythm matter far more. Practise common contractions and linking sounds, and slow down slightly for clarity. Avoid long pauses; if you lose your thought, pause briefly then recover.</p></div>
 <div class="card"><h2>Develop your ideas</h2><p>Band 7 or 26+ on TOEFL comes when you give reasons and examples, not one-word answers. 'I prefer cities because they have more jobs and culture, like in Mumbai where I saw…' beats 'I like cities.'.</p></div>
 <div class="card"><h2>Record and review</h2><p>Use the free AI speaking partner on LandingPrep to simulate all four tasks with real question types, get instant fluency and pronunciation feedback, and refine your approach.</p></div>
+
 <section class="related-articles"><h2>Related articles</h2><ul class="rel-list"><li><a href="/blog/toefl-speaking-templates-2026/">TOEFL Speaking Templates: Independent &amp; Integrated Tasks (2026)</a></li><li><a href="/blog/toefl-100-plus-score/">How to Score 100+ on TOEFL iBT: Complete Study Strategy &amp; Timelines</a></li><li><a href="/blog/toefl-writing-tips-template/">TOEFL Writing Tips &amp; Essay Template: Integrated &amp; Independent Essays</a></li><li><a href="/blog/toefl-writing-integrated-task-template/">TOEFL Writing Integrated Task 2026: Template, Structure &amp; Band 24+ Tips</a></li><li><a href="/blog/pte-79-tips/">How to Score PTE 79+ : High-Leverage Tasks, Templates &amp; Free Practice</a></li><li><a href="/blog/celpip-clb-9-tips/">CELPIP Tips to Score CLB 9+ (CELPIP 9): Speaking Fluency &amp; Conversation</a></li></ul></section>
 <h2>Keep going — free practice</h2><div class="grid"><a class="tile" href="/mock-test/toefl/">Free TOEFL mock test</a><a class="tile" href="/practice/toefl/">TOEFL practice questions</a><a class="tile" href="/#/colleges">🎓 Free college predictor</a><a class="tile" href="/#/blog">All blog articles</a></div>
 </main>

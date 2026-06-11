@@ -70,6 +70,19 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 .cmp-table th,.cmp-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 .cmp-table thead th{background:#eef2ff;color:var(--brand);font-weight:700}
 .cmp-table td:first-child{background:#f8fafc;width:120px}
+.bsteps{list-style:none;counter-reset:bs;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:10px}
+.bsteps li{counter-increment:bs;position:relative;padding:12px 16px 12px 50px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.bsteps li::before{content:counter(bs);position:absolute;left:12px;top:11px;width:26px;height:26px;border-radius:999px;background:var(--brand);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.bcheck{list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:7px}
+.bcheck li{position:relative;padding-left:26px}
+.bcheck li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.callout{display:flex;gap:10px;align-items:flex-start;padding:13px 16px;border-radius:11px;margin:12px 0;border:1px solid var(--line)}
+.callout .ic{font-size:17px;flex-shrink:0}
+.callout.info{border-left:4px solid #4f46e5;background:#eef2ff}
+.callout.tip{border-left:4px solid #16a34a;background:#ecfdf5}
+.callout.money{border-left:4px solid #d97706;background:#fffbeb}
+.callout.warn{border-left:4px solid #dc2626;background:#fef2f2}
+.callout.key{border-left:4px solid #7c3aed;background:#f5f3ff}
 </style>
 </head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="/">▲ LandingPrep</a><a class="cta" href="/#/exam-prep">Start free practice →</a></div></header>
@@ -90,6 +103,7 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 <div class="card"><h2>Language for trends</h2><p>Rise: increased, grew, rose, climbed sharply/steadily/gradually. Fall: decreased, fell, dropped, declined. Stable: remained constant, levelled off, plateaued. Describing a peak: reached a peak/high of X in [year]. Describing a low: fell to a low of X. Add adverbs (sharply, gradually, slightly, significantly) to show the degree of change.</p></div>
 <div class="card"><h2>Common Band 5–6 mistakes</h2><p>Including personal opinion ('I think this is because...'), spending all 150 words on one data series and ignoring others, copy-pasting the task question word-for-word, using only 'increase' and 'decrease' with no variety, and forgetting to include actual figures from the chart.</p></div>
 <div class="card"><h2>Practise with a timed mock</h2><p>Task 1 is worth one-third of your Writing band. Practise under timed conditions (20 minutes exactly) so you stop running out of time on Task 2. Take a free IELTS Writing mock on LandingPrep and compare your response to the model answer to see exactly where your band sits.</p></div>
+
 <section class="related-articles"><h2>Related articles</h2><ul class="rel-list"><li><a href="/blog/ielts-writing-task-2-structure/">IELTS Writing Task 2: Band 7+ Structure, Templates &amp; Common Mistakes</a></li><li><a href="/blog/ielts-academic-vs-general-training/">IELTS Academic vs General Training: Which Version Should You Take?</a></li><li><a href="/blog/ielts-vs-pte-which-easier-2026/">IELTS vs PTE in 2026: Which Is Easier and Which Should You Take?</a></li><li><a href="/blog/how-to-get-ielts-band-7/">How to Get IELTS Band 7 in 30 Days (1 Month): Free Study Plan</a></li><li><a href="/blog/ielts-speaking-tips-band-7/">IELTS Speaking Tips: How to Reach Band 7 (Fluency, Vocabulary, Grammar)</a></li><li><a href="/blog/ielts-listening-tips-strategies/">IELTS Listening Tips &amp; Strategies: Section-by-Section Guide + Free Practice</a></li></ul></section>
 <h2>Keep going — free practice</h2><div class="grid"><a class="tile" href="/mock-test/ielts/">Free IELTS mock test</a><a class="tile" href="/practice/ielts/">IELTS practice questions</a><a class="tile" href="/#/colleges">🎓 Free college predictor</a><a class="tile" href="/#/blog">All blog articles</a></div>
 </main>

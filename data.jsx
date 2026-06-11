@@ -1,55 +1,131 @@
 // LandingPrep — exam catalog v2 (rich, scraped from official sources for factual data)
 window.LP_DATA = {
   EXAMS: [
-    {"id":"pte-core","name":"PTE Core","short":"PTE Core","full":"Pearson Test of English Core","body":"Pearson","tagline":"Canada work & PR pathways","blurb":"PTE Core is a secure, computer-delivered English proficiency test developed by Pearson specifically for Immigration, Refugees and Citizenship Canada (IRCC). It assesses your ability to speak, read, and write English at real-world proficiency levels for Canadian immigration and work visa applications. Recognized for quick results and fair evaluation, it serves candidates aiming for permanent residence or skilled work programs.","duration":"2h","score":"10–90","sections":3,"mocks":0,"guideOnly":true,"mockAlias":"pte","streams":["Immigration","Work Visa"],"official":"https://www.ptecore.com","booking":"https://www.ptecore.com/book","fees":{"inr":"₹12,000–₹15,000","usd":"$50–$200"},"colour":"#0066CC","pattern":[["Speaking & Writing","Personal intro · read aloud · short answer · repeat sentence · describe image · tell story · write email — 30–35 mins"],["Reading","Multiple choice · reorder paragraphs · fill blanks · match headings — 29–30 mins"],["Listening","Summarize spoken text · multiple choice · highlight correct summary · select missing word · write from dictation — 30–40 mins"]],"sections_detail":[{"name":"Speaking & Writing","icon":"🎤","time":33,"questions":12,"types":["Personal introduction","Read aloud","Short answer","Repeat sentence","Describe image","Tell a story","Write an email"],"tips":"Speak clearly at natural pace; for writing, structure your email with greeting, body, and closing. Stay concise and avoid awkward pauses."},{"name":"Reading","icon":"📖","time":30,"questions":15,"types":["Multiple choice","Reorder paragraphs","Fill in the blanks","Match headings to paragraphs"],"tips":"Skim first to grasp main ideas; use context clues for vocabulary. Reorder paragraphs by identifying logical flow and transition markers."},{"name":"Listening","icon":"🎧","time":35,"questions":16,"types":["Summarize spoken text","Multiple choice","Highlight correct summary","Select missing word","Write from dictation"],"tips":"Listen for key phrases and main points; don't get stuck on unknown words. For dictation, spell carefully and listen for punctuation cues."}],"scoreGuide":[["10–23","Below CLB 4.5; limited communication ability. Suitable for low-skilled immigration streams or bridging programs."],["24–42","CLB 5.0–6.5; functional everyday communication. Meets requirements for most work-permit and Express Entry applications."],["43–60","CLB 7.0–8.0; clear, confident communication with minor errors. Strong for skilled professional and skilled trades streams."],["61–75","CLB 8.5–9.0; near-native fluency with minimal errors. Exceeds most Canadian immigration and employer requirements."],["76–90","CLB 9.5–10.0; exceptional English mastery. Opens doors to premier institutions and top-tier professional roles."]],"registration":["Register online at ptecore.com","select your test date, location (test centre or online), and pay the fee via credit card or local payment methods"],"centres":"PTE Core is offered at authorized test centres across major Indian cities (Delhi, Mumbai, Bangalore, Hyderabad, Pune) and online from home with ID verification and proctoring.","commonMistakes":["Speaking too fast or too quietly; examiners need clear articulation to assess accent and grammar fairly.","Overthinking grammatical perfection; natural fluency with minor errors scores higher than hesitant, correction-heavy speech.","Ignoring the image description task; candidates often run out of ideas and repeat simple observations instead of inferring details.","Not managing time in Reading; skipping easier questions to chase complex ones costs points when time runs out.","Dictation errors from careless listening; slow down your note-taking and verify spelling of proper nouns."],"faqs":[["How is PTE Core different from CELPIP?","Both are IRCC-approved for Canadian immigration and report CLB levels. PTE Core is computer-adaptive and Pearson-run; CELPIP is a fixed-format test by Paragon. PTE Core results arrive in 5 days vs CELPIP's 10–12 days, and PTE offers more test dates per month. Both are equally recognized by IRCC."],["What score do I need for Express Entry?","It depends on the stream. Federal Skilled Worker Program typically requires CLB 7.0 (PTE Core 43–60) for primary occupation. Check your specific National Occupational Classification (NOC) code and the current Express Entry cutoff via the IRCC portal."],["Can I retake PTE Core if I don't pass?","Yes, there is no official pass/fail; you receive a score 10–90. If you're unsatisfied, you can retake after 7 days. Most candidates do not retake as scores are valid for 3 years for IRCC purposes."],["Is PTE Core accepted by universities in Canada?","PTE Core is designed for immigration, not academic English. For university admission, use PTE Academic instead. However, some colleges may accept PTE Core; check with your institution's admissions office."],["How long are PTE Core scores valid?","Scores are valid for 3 years from the test date for IRCC applications. Keep your official score report safe; IRCC retrieves directly from Pearson's records."]]},
-    {"id":"oet","name":"OET","short":"OET","full":"Occupational English Test","body":"Cambridge","tagline":"Healthcare professionals' English","blurb":"The Occupational English Test (OET) is a profession-specific English language proficiency assessment designed exclusively for healthcare workers seeking registration or employment in English-speaking countries. Developed by Cambridge, OET evaluates your ability to communicate in real clinical and occupational scenarios. It is the preferred test for nurses, doctors, dentists, pharmacists, physiotherapists, and allied health professionals applying to the UK, Australia, Ireland, New Zealand, and Singapore.","duration":"3h","score":"A–E grades","sections":4,"mocks":6,"streams":["Healthcare Registration"],"official":"https://www.oet.com","booking":"https://www.oet.com/booking","fees":{"inr":"₹15,000–₹18,000","usd":"$200–$250"},"colour":"#00A86B","pattern":[["Listening","Three Part A conversations (doctor–patient, healthcare worker interaction) · Part B note-taking from recorded consultation · 45 mins"],["Reading","Part A case notes analysis · Part B medical journals and reports · Part C authentic healthcare texts — 60 mins"],["Writing","Referral letters, discharge summaries, or case notes based on scenario · professional, formal tone — 45 mins"],["Speaking","One-on-one interaction with role-playing examiner (patient/colleague scenario) · 20 mins"]],"sections_detail":[{"name":"Listening","icon":"🎧","time":45,"questions":42,"types":["Part A: Healthcare conversations (multiple choice)","Part B: Note-taking from consultation","Part C: Summary from recorded text"],"tips":"Note-taking is critical; jot down key points (diagnoses, medications, dates) during the audio. Listen for medical abbreviations and clarifications healthcare workers use in real settings."},{"name":"Reading","icon":"📖","time":60,"questions":42,"types":["Part A: Identify errors in case notes","Part B: Multiple choice on journal articles","Part C: Matching tasks on health information"],"tips":"Part A demands careful proofreading (look for medical inaccuracies, not spelling). Skim journals first before diving into detail questions; use headings and abstracts to understand context."},{"name":"Writing","icon":"✍️","time":45,"questions":1,"types":["Referral letter","Discharge summary","Case notes"],"tips":"Follow professional healthcare writing conventions: concise, objective tone; use bullet points where appropriate. Include all key clinical details; examiners grade on accuracy and clarity, not length."},{"name":"Speaking","icon":"🎤","time":20,"questions":1,"types":["Role-play scenario with examiner","Patient interaction or colleague consultation"],"tips":"Stay in role; listen carefully to the examiner's responses and adapt. Use clinical terminology naturally; clarity and accuracy matter more than speed."}],"scoreGuide":[["Grade A","Expert user; minimal errors, clear communication. Meets all regulatory body requirements (GMC, NMC, AHPRA). Highly competitive for premium positions."],["Grade B","Strong user; occasional errors, effective communication. Accepted by most UK, Australian, and Irish healthcare regulators; meets standard registration thresholds."],["Grade C","Competent user; some errors, functional communication in familiar contexts. Meets entry requirements for many positions; may need support in complex scenarios."],["Grade D","Limited user; frequent errors, communication sometimes unclear. Below most regulatory registration standards; additional training often required."],["Grade E","Minimal user; significant difficulties. Does not meet professional registration requirements in any English-speaking country."]],"registration":["Register via oet.com","select your test language (English, Spanish, French), profession (nursing, medicine, etc.), and preferred date/location","Test centres are in India and available online"],"centres":"OET is available at authorized centres in Delhi, Mumbai, Bangalore, Hyderabad, Chennai, and other major cities, plus online options with proctoring and ID verification.","commonMistakes":["Missing clinical details in writing tasks; examiners expect accurate medical terminology and complete patient information, not vague summaries.","Speaking too quickly or using non-standard pronunciation of medical terms; clarity trumps speed; practise drug names and anatomical terms aloud.","Ignoring the scenario context in role-play; the examiner gives cues; listen and adapt rather than sticking to a memorized speech.","Confusing similar medical terms (e.g., 'hypertension' vs 'hypotension'); accuracy is non-negotiable in healthcare; practise disambiguation in context.","Not managing reading time; there are 42 questions in 60 minutes; skim Part A case notes first, then tackle other sections systematically."],"faqs":[["Which healthcare professions can take OET?","OET is available for nurses, doctors, dentists, pharmacists, physiotherapists, veterinarians, and allied health professionals. Select your profession during registration to receive scenario-specific tasks."],["Is OET accepted by AHPRA (Australia)?","Yes, OET is one of the approved English tests for nursing registration with AHPRA. A Grade B or higher generally meets requirements; check the latest AHPRA guidelines for your profession."],["How long are OET scores valid?","OET scores are valid for 3 years from the test date for professional registration purposes. Most regulatory bodies honour the full 3-year window."],["What is the difference between OET and IELTS for healthcare professionals?","OET is profession-specific with clinical scenarios; IELTS is general. OET is preferred by healthcare regulators (NMC, GMC, AHPRA) because it tests real-world medical communication. IELTS may be accepted as a fallback, but OET is the standard."],["How is OET scored differently across professions?","All professions are graded A–E on the same scale, but the content of listening, reading, and writing tasks reflects your profession (e.g., a nurse's scenarios differ from a doctor's). Speaking is one-on-one with an examiner and graded on clinical communication, not profession-specific variation."]]},
-    {"id":"sat","name":"SAT","short":"SAT","full":"Scholastic Assessment Test (Digital)","body":"College Board","tagline":"US university admissions gateway","blurb":"The SAT is a standardized test used for admissions to most four-year colleges and universities in the United States. The digital SAT, introduced in 2024, is computer-adaptive, shorter, and faster than its paper predecessor. It assesses reading comprehension, writing, and mathematical reasoning—skills core to college success. For international students, the SAT is often required or recommended alongside academic transcripts and essays.","duration":"2h 14m","score":"400–1600","sections":2,"mocks":6,"streams":["University Admissions"],"official":"https://www.collegeboard.org/sat","booking":"https://www.collegeboard.org/register","fees":{"inr":"₹10,000–₹14,000","usd":"$60"},"colour":"#2E5090","pattern":[["Reading & Writing","Grammar and comprehension passages · 52 questions across two modules · ~65 mins"],["Math","Algebra, advanced math, geometry, trigonometry · 44 questions across two modules · ~70 mins"]],"sections_detail":[{"name":"Reading & Writing","icon":"📖","time":65,"questions":52,"types":["Multiple choice reading passages","Grammar and syntax questions","Vocabulary in context","Inference and comprehension"],"tips":"Read passages once for main idea, then return for detail questions. Grammar questions often test subtle distinctions; eliminate obviously wrong answers first. Manage time: spend 1 min per question on average."},{"name":"Math","icon":"🔢","time":70,"questions":44,"types":["Algebra and linear equations","Advanced functions and polynomials","Geometry and trigonometry","Data analysis and statistics"],"tips":"Calculator allowed for all sections on digital SAT. Show your work even on computer tests to catch errors. Prioritize easy questions first; return to harder ones. Units and variables must match in final answers."}],"scoreGuide":[["400–600","Below average; limited college readiness. Many open-admission or community colleges may accept; limited scholarship opportunities at selective universities."],["600–800","Average to slightly above; competitive for regional universities and state schools. Some scholarships available at less selective institutions."],["800–1000","Above average; acceptable for many public and private universities. Competitive for merit aid at mid-tier institutions."],["1000–1200","Strong score; competitive for selective universities (top 100 US colleges). Good scholarship and financial-aid prospects."],["1200–1400","Excellent; meets or exceeds expectations at highly selective institutions (Ivy League, Stanford, MIT, etc.). Outstanding scholarship and admission odds."],["1400–1600","Superior; places you in the top percentile. Competitive for top universities and full-ride scholarships."]],"registration":["Register at collegeboard.org","create an account, select test date and location (usually in India via international test centres), and pay the fee","Registration opens 8–9 months before test date"],"centres":"The digital SAT is offered at authorized test centres in major Indian cities (Delhi, Mumbai, Bangalore, Hyderabad, Pune, Chennai) multiple times per year; online proctoring is not available.","commonMistakes":["Spending too long on hard math questions; the adaptive algorithm adjusts difficulty; skip and return rather than getting stuck.","Not reading passages actively; underline main ideas and claim-supporting evidence; passive reading leads to careless errors.","Calculator errors on SAT Math; always double-check key strokes and intermediate steps, especially on multi-step problems.","Grammar parallelism oversights; consistency in verb tense, structure, and list format is tested repeatedly; drill parallel-structure drills.","Rushing through reading; many students misread nuance in tone and perspective questions; slow down and re-read once before answering."],"faqs":[["Is the digital SAT harder than the paper version?","The digital SAT is not inherently harder—it is adaptive. Your second module's difficulty depends on your first-module performance. Scores are equated, so a digital 1200 is comparable to a paper 1200 from previous years."],["How many times can I take the SAT?","You can take it as many times as you wish. Most selective US universities consider your highest score or superscore (best reading and best math across all attempts)."],["Is SAT or ACT better for college admissions?","Both are equally accepted by US colleges. SAT focuses on reading, writing, and math reasoning; ACT includes an English section plus Science. Choose based on your strengths. Many students take both and submit the higher score."],["What is a good SAT score for Ivy League universities?","Top universities (Harvard, Yale, Princeton) typically admit students with SAT scores 1470–1570+. A 1500+ significantly boosts admission odds; below 1400 is a disadvantage even with stellar essays."],["How is SAT Math different from high-school math?","SAT Math tests application and reasoning, not advanced calculus. Algebra, geometry, and statistics dominate. Focus on word problems, multi-step reasoning, and interpreting data—not memorization."]]},
-    {"id":"act","name":"ACT","short":"ACT","full":"American College Test","body":"ACT Inc.","tagline":"US college admissions alternative","blurb":"The ACT is a standardized assessment widely accepted for admission to US colleges and universities, particularly strong in the Midwest and South. Unlike the SAT, the ACT includes an English section (grammar and rhetoric), Mathematics, Reading, Science, and an optional Writing component. The test measures college readiness across a broad curriculum and is known for its Science section, which evaluates reasoning with scientific data rather than background knowledge.","duration":"2h 55m (without Writing); 3h 35m (with Writing)","score":"1–36 (composite); 1–36 per section","sections":4,"mocks":12,"streams":["University Admissions"],"official":"https://www.act.org","booking":"https://www.act.org/register","fees":{"inr":"₹12,000–₹16,000","usd":"$70–$85"},"colour":"#D21F3D","pattern":[["English","Grammar, punctuation, rhetoric, and style · 75 questions · 45 mins"],["Mathematics","Pre-algebra, algebra, geometry, trigonometry · 60 questions · 60 mins"],["Reading","Four passages (narrative, social science, humanities, natural science) · 40 questions · 35 mins"],["Science","Data interpretation, research summaries, conflicting viewpoints · 40 questions · 35 mins"]],"sections_detail":[{"name":"English","icon":"✍️","time":45,"questions":75,"types":["Grammar and punctuation","Sentence structure","Rhetoric and style","Word choice"],"tips":"ACT English tests convention more than nuance. Eliminate obviously wrong answers; look for conciseness and clarity. Punctuation questions favour minimal punctuation unless adding clarity."},{"name":"Mathematics","icon":"🔢","time":60,"questions":60,"types":["Pre-algebra and elementary algebra","Intermediate algebra and coordinate geometry","Plane geometry and trigonometry"],"tips":"ACT Math requires speed; calculators are allowed. Skip hard questions early and return later. Word problems dominate; translate carefully into equations before solving."},{"name":"Reading","icon":"📖","time":35,"questions":40,"types":["Main idea and inference","Detail and supporting evidence","Character motive and tone","Vocabulary in context"],"tips":"Read passages actively once, then answer questions. ACT reading tests literal comprehension more than deep inference. Manage time: 8–9 minutes per passage."},{"name":"Science","icon":"🔬","time":35,"questions":40,"types":["Data representation (graphs, tables)","Research summaries (experiment descriptions)","Conflicting viewpoints (competing theories)"],"tips":"Science does not require subject knowledge; tables and graphs tell the story. Read axes carefully, compare trends, and understand what each experiment tests. Conflicting viewpoints: identify the key disagreement, not every detail."}],"scoreGuide":[["1–12","Below average; far below college readiness. Limited college options; consider additional prep or community college pathway."],["13–20","Below to average; below college readiness for selective schools. Acceptable at regional and open-admission colleges."],["21–27","Average to above; meets college readiness benchmarks. Competitive for public universities and many private institutions."],["28–32","Strong; meets all college readiness benchmarks. Competitive for selective universities (top 100); scholarship opportunities."],["33–36","Excellent; top percentile. Highly competitive for elite universities (Ivy League, Stanford, MIT); full-ride scholarship prospects."]],"registration":["Register at act.org","create an account, select test date, location (authorized international test centres in India), and pay","Test dates are offered multiple times yearly (usually February, April, June, July, September, October, December)"],"centres":"ACT is offered at international test centres in major Indian cities (Delhi, Mumbai, Bangalore, Hyderabad, Pune, Chennai); online proctoring is not available. Test dates vary; plan 2–3 months ahead.","commonMistakes":["Neglecting the Science section; students underprepare because they assume science background is required—graphs and reasoning are what matter, not vocabulary.","Mismanaging English time; 75 questions in 45 minutes is tight; mark ambiguous answers and return quickly rather than overthinking.","Reading too passively in the Reading section; ACT tests literal comprehension; jot notes on passage margins; refer back to text for detail.","Skipping ACT Writing practice; the Writing section (optional but recommended for selective colleges) requires an essay in 40 minutes; plan, draft, review.","Not checking unit consistency in Math; 'feet to inches' or 'miles to kilometres' errors are common; always verify your final answer's units."],"faqs":[["Should I take the ACT with or without Writing?","Most selective universities no longer require Writing. If you are applying to colleges that recommend it, take it. Otherwise, skip Writing to save time. Check your target college's admissions website."],["How is ACT Science different from SAT science reasoning?","ACT Science includes a full section (40 questions, 35 mins) testing data interpretation, experiments, and competing theories. SAT has no dedicated Science section; science reasoning is embedded in Math and Reading."],["Can I mix-and-match ACT and SAT scores?","Most colleges accept one or the other, not both. Superscore policies (best section scores across dates) apply per test—you cannot combine an SAT Reading score with an ACT Math score."],["What is a competitive ACT score for Ivy League?","Top universities typically admit students with ACT 33–36. A 34+ is competitive; below 32 is a disadvantage at highly selective schools, though not disqualifying with strong essays and GPA."],["Is ACT easier than SAT?","This varies by student. ACT emphasizes speed and breadth; SAT emphasizes depth and reasoning. Those comfortable with quick recall often prefer ACT; those who like to think deeply may prefer SAT. Try practice tests of both to decide."]]},
-    {"id":"tef-canada","name":"TEF Canada","short":"TEF Canada","full":"Test d'Évaluation du Français pour le Canada","body":"France Education International","tagline":"French for Canada Express Entry","blurb":"TEF Canada is an official French-language proficiency test recognized by Immigration, Refugees and Citizenship Canada (IRCC) for Express Entry and skilled immigration programs. Developed by France Education International (FEI), it assesses your ability to read, write, listen, and speak French in professional and everyday contexts. TEF Canada is essential for Francophone and bilingual immigration pathways to Canada and is scored on the NCLC (National Competency Level Classification) scale used by IRCC.","duration":"3h (core sections)","score":"NCLC 1–7 (CLB equivalents 0–10)","sections":4,"mocks":0,"guideOnly":true,"langAlias":"french","streams":["Express Entry","Quebec Immigration"],"official":"https://www.tefcanada.ca","booking":"https://www.tefcanada.ca/book","fees":{"inr":"₹13,000–₹16,000","usd":"$80–$250"},"colour":"#003366","pattern":[["Listening Comprehension","Conversations, announcements, narratives · 35 questions · 40 mins"],["Reading Comprehension","Passages, forms, emails, articles · 50 questions · 60 mins"],["Writing Expression","Email writing, short essays, response to prompt · 2 tasks · 60 mins"],["Speaking Expression","Interview with examiner, role-play, presentation · ~15 mins"]],"sections_detail":[{"name":"Listening","icon":"🎧","time":40,"questions":35,"types":["Multiple choice conversations","Short announcements","Detailed narratives","Comprehension of tone and intent"],"tips":"Listen for main points and speaker intent. Multiple-choice options are plausible; eliminate obviously incorrect ones. Professional and conversational French differ; both are tested."},{"name":"Reading","icon":"📖","time":60,"questions":50,"types":["Multiple choice passages","Matching headings to texts","Fill-in blanks (vocabulary/grammar)","Comprehension of administrative documents"],"tips":"Skim for overall meaning before detail. Canadian French includes Québécois vocabulary; familiarize yourself with regional terms. Manage time: allocate 1–1.5 mins per question on average."},{"name":"Writing","icon":"✍️","time":60,"questions":2,"types":["Email writing (professional or personal)","Short essay or narrative"],"tips":"Structure emails clearly: greeting, purpose, details, closing. Essays should have introduction, body, conclusion. Accuracy and coherence matter; length is less critical than quality."},{"name":"Speaking","icon":"🎤","time":15,"questions":1,"types":["Interview with examiner","Role-play scenario","Structured presentation on a topic"],"tips":"Speak naturally; don't over-rehearse. Listen to the examiner's prompts and adapt. Professional tone is expected; clarity trumps speed."}],"scoreGuide":[["NCLC 1","Below NCLC 4 (CLB 0–3.5); minimal functional French. Insufficient for most Express Entry streams and skilled trades."],["NCLC 2–3","CLB 4.0–5.5; basic communication; limited for professional contexts. Meets only low-skill immigration streams; not competitive for Express Entry."],["NCLC 4","CLB 6.0–6.5; functional everyday and workplace communication. Meets Express Entry thresholds for some programs; acceptable for Quebec immigration."],["NCLC 5–6","CLB 7.0–8.5; strong communication, minor errors acceptable. Meets most Express Entry and Quebec skilled professional requirements; good for job competitiveness."],["NCLC 7","CLB 9.0–10.0; near-native fluency, excellent accuracy. Exceeds all immigration requirements; competitive for premium roles."]],"registration":["Register at tefcanada.ca","select test date, location (test centres in major Canadian cities, plus Indian locations), complete online payment","Results are sent to IRCC directly (with candidate consent)"],"centres":"TEF Canada is offered at authorized test centres in Canada (most cities) and internationally including India. Online testing with proctoring is available in some regions; check the website for current availability.","commonMistakes":["Not familiarizing with Québécois French; TEF Canada includes Quebec-specific vocabulary (e.g., 'depanneur' for corner store); study regional variants.","Overloading writing with complex sentences; clarity and correctness matter more than complexity; short, accurate sentences score higher than lengthy, error-prone ones.","Speaking too formally or informally; professional context requires balanced tone; avoid slang in formal role-plays, but don't sound robotic in casual scenarios.","Mismanaging reading time; 50 questions in 60 minutes; skim first, answer easy questions, return to complex passages.","Ignoring listening comprehension of numbers, dates, and specific details; these are tested repeatedly; practise saying/understanding French numbers and dates aloud."],"faqs":[["What is the difference between TEF Canada and TCF Canada?","Both are IRCC-approved French tests. TEF Canada is newer (launched 2014) and computer-based; TCF Canada is paper-based. TEF Canada is generally faster for results; TCF is cheaper. Both report NCLC/CLB scores equivalently."],["Which NCLC level is required for Express Entry?","The threshold depends on your National Occupational Classification (NOC) code and program. Most skilled worker programs require NCLC 4 (CLB 6.0) or higher for primary official language. Check your specific pathway via the IRCC portal."],["Are TEF Canada and TEF international the same test?","No. TEF Canada is specific to Canadian immigration and reports NCLC/CLB levels. TEF International (for France/Europe) uses a different scale. Ensure you register for TEF Canada."],["Can I study Quebec French to prepare for TEF Canada?","Yes, absolutely. TEF Canada includes Quebec French vocabulary and contexts. If aiming for Quebec immigration, Quebec French is essential. For federal Express Entry, Canadian standard French (with regional awareness) is sufficient."],["How long are TEF Canada scores valid for IRCC?","Scores are valid for 2 years from the test date for IRCC applications. After 2 years, you must retake if applying to immigration programs."]]},
-    {"id":"tcf-canada","name":"TCF Canada","short":"TCF Canada","full":"Test de Connaissance du Français pour le Canada","body":"France Education International","tagline":"French test for Canada immigration","blurb":"TCF Canada is an official French-language test recognized by Immigration, Refugees and Citizenship Canada (IRCC) for Express Entry and Quebec skilled immigration applications. Developed by France Education International (FEI) and administered in partnership with authorized testing centres, TCF Canada assesses reading, listening, writing, and speaking in real-world professional and personal scenarios. It reports scores on the NCLC (National Competency Level Classification) scale aligned with Canadian Language Benchmark standards.","duration":"3h (core sections)","score":"NCLC 1–7 (CLB equivalents 0–10)","sections":4,"mocks":0,"guideOnly":true,"langAlias":"french","streams":["Express Entry","Quebec Immigration"],"official":"https://www.tcfcanada.ca","booking":"https://www.tcfcanada.ca/booking","fees":{"inr":"₹10,000–₹13,000","usd":"$50–$220"},"colour":"#CC0000","pattern":[["Listening Comprehension","Dialogues, monologues, narratives · 30 questions · 35 mins"],["Reading Comprehension","Short texts, articles, emails, forms · 30 questions · 45 mins"],["Writing Expression","Email or letter writing · 1 task · 45 mins"],["Speaking Expression","Interview with examiner, role-play · ~12 mins"]],"sections_detail":[{"name":"Listening","icon":"🎧","time":35,"questions":30,"types":["Multiple choice dialogues","Monologue comprehension","Infer speaker intent and tone"],"tips":"Concentrate on first listening; only one playback. Take brief notes on key words. Intonation and context convey meaning—don't get stuck on unfamiliar vocabulary."},{"name":"Reading","icon":"📖","time":45,"questions":30,"types":["Multiple choice passages","Vocabulary and grammar in context","Comprehension of practical documents (schedules, invoices)"],"tips":"Canadian French vocabulary is essential; practise with Quebec news sources. Skim before diving into questions. Manage time: 1.5 mins per question average."},{"name":"Writing","icon":"✍️","time":45,"questions":1,"types":["Email, letter, or message writing"],"tips":"Follow proper format (greeting, body, closing). Be concise; clarity over length. Watch grammar and spelling; this is a formal writing assessment."},{"name":"Speaking","icon":"🎤","time":12,"questions":1,"types":["Structured interview with examiner","Role-play or scenario discussion"],"tips":"Speak at natural pace. Engage with examiner's questions; don't recite memorized responses. Accuracy and fluency are both graded."}],"scoreGuide":[["NCLC 1","Below NCLC 4 (CLB 0–3.5); minimal French. Does not meet Express Entry or skilled immigration thresholds."],["NCLC 2–3","CLB 4.0–5.5; basic communication; limited professional use. Falls short for most immigration streams."],["NCLC 4","CLB 6.0–6.5; functional French in everyday and workplace settings. Meets baseline Express Entry and Quebec program thresholds."],["NCLC 5–6","CLB 7.0–8.5; strong communication with minor errors. Meets most federal and provincial skilled worker requirements; competitive for jobs."],["NCLC 7","CLB 9.0–10.0; excellent near-native fluency. Exceeds all Canadian immigration and professional requirements."]],"registration":["Register at tcfcanada.ca or via authorized test centres","select test date, location, and pay the fee","Registration typically opens 6–8 weeks before test date","results are usually available within 2–3 weeks"],"centres":"TCF Canada is offered at authorized centres across Canada (major cities) and internationally in India (Delhi, Mumbai, Bangalore, Hyderabad). Paper-based testing; online options limited.","commonMistakes":["Confusing TCF Canada with TCF International; they are different tests with different scales—ensure you book the Canada-specific version.","Neglecting writing task formatting; examiners grade on coherence and accuracy, not just grammar—proper letter/email structure scores higher.","Speaking with over-rehearsed phrases; examiners hear the difference between natural speech and memorized responses; practise spontaneous conversation.","Not preparing for Quebec French vocabulary; names of places, services, and everyday items differ from metropolitan French; study regional variants.","Rushing listening and reading; one-shot listening means no replay; focus intensely; reading is timed, so practice speed-reading French texts beforehand."],"faqs":[["What is the main difference between TCF Canada and TEF Canada?","Both are IRCC-approved and report NCLC scores. TCF Canada is paper-based and typically less expensive; TEF Canada is computer-based and faster for results. Difficulty and acceptance are equivalent; choose based on availability and preference."],["Is TCF Canada accepted by Quebec's immigration system?","Yes, TCF Canada is one of the approved tests for Quebec skilled worker immigration (Quebec selection certificate). However, Quebec also has its own French test (TEF/TELF/TCF with specific Quebec modules); check Quebec's Ministry of Immigration website for the latest approved tests."],["How is TCF Canada different from the general TCF test?","TCF International is used for France/Europe and uses a different scoring scale (0–699). TCF Canada is specific to Canadian immigration and reports NCLC 1–7 aligned with CLB. Register for TCF Canada only."],["What NCLC level do I need for federal Express Entry?","Typically NCLC 4 (CLB 6.0) or higher for skilled worker programs, depending on your NOC code. Check your specific Express Entry stream via IRCC.ca to confirm the requirement."],["How long are TCF Canada scores valid?","Scores are valid for 2 years from the test date for IRCC and Quebec immigration applications. Beyond 2 years, retaking is necessary for new applications."]]},
-    {"id":"cael","name":"CAEL","short":"CAEL","full":"Canadian Academic English Language Assessment","body":"Paragon Testing Enterprises","tagline":"Academic English for Canadian universities","blurb":"CAEL (Canadian Academic English Language Assessment) is a computer-delivered English proficiency test designed to assess the language skills international students need for success in Canadian colleges and universities. Developed by Paragon Testing Enterprises, CAEL evaluates reading, writing, listening, and speaking in authentic academic contexts, from research paper analysis to class discussions. It is recognized by most Canadian universities and is an alternative to IELTS or TOEFL for admission.","duration":"2h 45m","score":"10–90 (or CLB 0–10 equivalents)","sections":4,"mocks":0,"guideOnly":true,"mockAlias":"toefl","streams":["University Admission"],"official":"https://www.cael.ca","booking":"https://www.cael.ca/register","fees":{"inr":"₹12,000–₹15,000","usd":"$75–$250"},"colour":"#009E3E","pattern":[["Reading","Academic passages, journal excerpts, case studies · multiple choice and short-answer · 30 mins"],["Writing","Response to academic prompt, essay based on source material · 40 mins"],["Listening","Lectures, seminars, academic discussions · multiple choice and note-taking · 30 mins"],["Speaking","One-on-one with examiner; discuss academic topics, summarize information · ~15 mins"]],"sections_detail":[{"name":"Reading","icon":"📖","time":30,"questions":20,"types":["Multiple choice comprehension","Short-answer detail questions","Academic vocabulary in context","Inference from research texts"],"tips":"CAEL reading is authentically academic; expect complex sentences. Skim headings and abstracts first. Mark key evidence in the passage; refer back for detail questions."},{"name":"Writing","icon":"✍️","time":40,"questions":1,"types":["Response to an academic prompt","Synthesis of source material"],"tips":"Plan before writing; structure: thesis, supporting paragraphs, conclusion. Paraphrase and cite sources properly. Academic tone is mandatory; clarity and organization matter more than length."},{"name":"Listening","icon":"🎧","time":30,"questions":18,"types":["Lecture comprehension (multiple choice)","Note-taking from seminar discussion","Understanding academic vocabulary and tone"],"tips":"Academic lectures are fast and dense; note-taking is critical. Focus on main ideas and supporting examples. Abbreviate aggressively; full sentences in notes wastes time."},{"name":"Speaking","icon":"🎤","time":15,"questions":1,"types":["Academic conversation with examiner","Summarize lecture content","Discuss research or concepts"],"tips":"Speak clearly with academic vocabulary. The examiner may ask follow-up questions; listen carefully and elaborate. Hesitation is normal; avoid unnecessary filler words ('um', 'like')."}],"scoreGuide":[["10–30 (CLB 0–4)","Below academic readiness; significant support needed in university coursework. Likely conditional admission with English language pathway."],["31–50 (CLB 5–6)","Basic academic English; some difficulty with complex courses. May be admitted with ESL support or conditional upon score improvement."],["51–70 (CLB 7–8)","Proficient academic English; meets most Canadian university admission standards. No ESL support typically required; can handle mainstream coursework."],["71–90 (CLB 9–10)","Advanced academic English; exceeds admission standards. Eligible for competitive scholarships and honors programs."]],"registration":["Register at cael.ca","create an account, select test date (offered monthly), location (test centres in Canada and internationally), and pay","International test centres in India are available in major cities"],"centres":"CAEL is offered at authorized test centres across Canada (major universities and private testing centres) and internationally including India (Delhi, Mumbai, Bangalore, Hyderabad, Pune). Online proctoring is available in select regions.","commonMistakes":["Underestimating the writing task; 40 minutes for an academic essay is tight; plan for 5 mins planning, 30 mins writing, 5 mins review.","Taking sloppy notes in Listening; abbreviations are fine, but illegible notes waste time when answering. Use a consistent shorthand system.","Speaking too fast or unclearly; academic English requires precise articulation; examiners expect clarity even at faster pace than everyday conversation.","Confusing CAEL with IELTS or TOEFL; CAEL is specifically Canadian and academic; content, timing, and section order differ significantly.","Not citing sources in the writing task; academic integrity is tested; proper paraphrasing and citation (APA or Chicago style) are expected."],"faqs":[["Is CAEL accepted by all Canadian universities?","Most Canadian universities accept CAEL. However, some specifically require IELTS or TOEFL; check your target university's admissions website. CAEL is particularly strong in Canadian institutions; international universities may be less familiar."],["What CAEL score is needed for university admission?","Most universities require CAEL 50 (CLB 5–6) or higher for conditional/regular admission. Competitive scholarships often require 70+. Check individual institutions for specific thresholds."],["How is CAEL different from IELTS for academic purposes?","CAEL is designed specifically for Canadian academic contexts; IELTS Academic is international. CAEL focuses on authentic Canadian university experiences; IELTS is broader. Both are valid, but CAEL aligns better with Canadian curriculum expectations."],["Can I use CAEL to apply to US universities?","Most US universities do not recognize CAEL; they require TOEFL, IELTS, or Duolingo English Test. Some US universities with Canadian partnerships may accept CAEL; check case-by-case."],["How long are CAEL scores valid?","CAEL scores are valid for 3 years from the test date for university admission. Most universities accept scores within 2 years; confirm with your institution."]]},
-    {"id":"cambridge","name":"Cambridge English","short":"Cambridge","full":"Cambridge English Qualifications (B2 First & C1 Advanced)","body":"Cambridge Assessment English","tagline":"Global English proficiency qualifications","blurb":"Cambridge English Qualifications are globally recognized credentials that assess English proficiency at multiple levels. B2 First and C1 Advanced are the most popular for university admission, professional purposes, and immigration. Administered by Cambridge Assessment English, these exams evaluate reading, writing, listening, and speaking in realistic contexts. Cambridge certificates are valid for life and accepted by thousands of universities, employers, and government agencies worldwide, including for skilled immigration to UK and other English-speaking countries.","duration":"3h–3h 40m (varies by exam)","score":"Cambridge Scale 140–230 (A1–C2); B2 First 140–190, C1 Advanced 180–230","sections":4,"mocks":0,"guideOnly":true,"mockAlias":"ielts","streams":["University Admission","Professional","Immigration"],"official":"https://www.cambridgeenglish.org","booking":"https://www.cambridgeenglish.org/find-a-test/","fees":{"inr":"₹10,000–₹14,000","usd":"$40–$90"},"colour":"#1A5490","pattern":[["Reading & Use of English (B2 First) / Reading (C1 Advanced)","Multiple choice, cloze, word formation, matching · 60–75 mins"],["Writing (B2 First) / Writing (C1 Advanced)","Email/letter and essay/review · 80 mins"],["Listening","Conversations, monologues, interviews · multiple choice · 40 mins"],["Speaking","Interview, topic discussion, pair conversation · ~10–15 mins"]],"sections_detail":[{"name":"Reading & Use of English (B2) / Reading (C1)","icon":"📖","time":75,"questions":52,"types":["Multiple choice (text comprehension)","Cloze (fill grammar/vocabulary)","Word formation (morphology)","Open cloze","Matching headings to paragraphs"],"tips":"B2 emphasizes functional language and everyday scenarios. C1 tests sophisticated vocabulary and complex structures. Skim first, then return for details. Manage time: allocate time proportionally per task type."},{"name":"Writing","icon":"✍️","time":80,"questions":2,"types":["Formal email/letter + essay (B2 First)","Formal/informal essay + review/article (C1 Advanced)"],"tips":"B2: clear structure, appropriate register (formal vs. informal). C1: sophisticated argument, nuanced tone. Both: plan 5 mins, draft 30 mins, review 5 mins per task. Handwriting must be legible (computer tests now available)."},{"name":"Listening","icon":"🎧","time":40,"questions":30,"types":["Multiple choice (short extracts)","Multiple choice (longer conversations/monologues)","Matching speakers to statements","Note-taking/short-answer"],"tips":"Listen once (no replay on some sections). Take notes on key points. Both B2 and C1 use authentic English; accents, speed, and background noise vary. Practice with diverse audio sources."},{"name":"Speaking","icon":"🎤","time":12,"questions":4,"types":["Interview with examiner (personal questions)","Individual topic discussion (2–3 mins)","Pair conversation (cooperative task, B2) or Discussion (C1)"],"tips":"B2: speak clearly on familiar topics; correct minor errors naturally. C1: demonstrate range, nuance, spontaneity. Both: engage with the examiner; it's a conversation, not a monologue."}],"scoreGuide":[["140–159 (Cambridge Scale, B2 First)","Pass or below threshold; limited universities/employers accept. May not meet visa/immigration requirements."],["160–179 (B2 First)","Strong Pass; meets most university and employer requirements for B2 level. Acceptable for many skilled immigration programs."],["180–190 (B2 First)","Excellent; exceeds B2 standard. Competitive for scholarships and premium institutions. Meets higher-level professional demands."],["180–199 (C1 Advanced)","Pass or lower C1; rare; indicates mastery at upper-intermediate level. Suitable for many professional contexts."],["200–230 (C1 Advanced)","Excellent C1; demonstrates near-native proficiency. Meets all advanced professional and academic requirements; competitive for top universities and leadership roles."]],"registration":["Register via cambridgeenglish.org","locate your local approved test centre, select exam (B2 First or C1 Advanced), test date, and format (paper or computer)","Payment via credit card or local methods"],"centres":"Cambridge English exams are offered at thousands of authorized centres worldwide. In India, major cities (Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Pune) have multiple test centres. Paper and computer-delivered options are available.","commonMistakes":["Confusing B2 First and C1 Advanced difficulty; C1 uses more sophisticated vocabulary and complex grammatical structures; choose the right level for your goals.","Overlooking the Use of English section (B2); word formation and cloze tasks test grammar/vocabulary thoroughly; drill these specific task types.","Writing without planning; examiners grade on organization and development, not just grammar; spend 5 minutes outlining before drafting.","Speaking too slowly or over-enunciating; examiners expect natural, conversational pace; over-correction of minor errors interrupts fluency.","Ignoring Cambridge-style formatting in writing (formal letters, email conventions); structure and register are graded; follow the Cambridge format guide."],"faqs":[["What is the difference between B2 First and C1 Advanced?","B2 First (also called FCE — First Certificate in English) tests upper-intermediate English; C1 Advanced tests advanced proficiency. B2 is suitable for most university admissions and professional roles; C1 is for demanding academic/professional environments and leadership."],["How long are Cambridge English certificates valid?","Cambridge English certificates are valid for life; they do not expire. However, some employers or immigration authorities may request recent scores (within 2 years); check your specific requirement."],["Is Cambridge English accepted by IELTS universities?","Cambridge English and IELTS are both from Cambridge Assessment English, but they are separate exams. Universities typically specify which test(s) they accept; confirm with your target institution."],["Can I use Cambridge English for Canadian immigration?","Cambridge English (B2 First or C1 Advanced) is not on IRCC's approved list. For Canadian immigration, use IELTS, TOEFL, CELPIP, or PTE Core. Cambridge is accepted in the UK and other countries."],["Is the paper exam easier than the computer exam?","Difficulty is equivalent between paper and computer formats. Computer exams are taken individually on a screen (faster feedback); paper is traditional group testing. Choose based on preference and availability."]]},
     {
-      id: "ielts", name: "IELTS", short: "IELTS",
-      full: "International English Language Testing System",
-      body: "British Council · IDP · Cambridge Assessment English",
-      tagline: "Study, work, migration",
-      blurb: "The world's most accepted English proficiency test — taken by 3.5 million people each year. Choose Academic for university admission and professional registration, or General Training for migration, work, and secondary school.",
-      duration: "2h 45m", score: "Band 0–9", sections: 4, mocks: 60,
-      streams: ["Academic", "General Training"],
-      official: "https://ielts.org/take-a-test",
-      booking: "https://ielts.org/take-a-test/booking-your-test",
-      fees: { inr: "₹17,000–19,000", usd: "$215–230" },
-      colour: "#B83A2E",
-      pattern: [
-        ["Listening", "4 parts · 40 questions · 30 min listening + 10 min answer transfer"],
-        ["Reading", "3 passages · 40 questions · 60 min (Academic: academic texts; General: notices, ads, articles)"],
-        ["Writing", "Task 1 (≥150 words, 20 min) + Task 2 (≥250 words, 40 min) · 60 min total"],
-        ["Speaking", "Part 1: Introduction (4–5 min) · Part 2: Cue card (3–4 min) · Part 3: Discussion (4–5 min) · 11–14 min face-to-face"]
+      "id": "ielts",
+      "name": "IELTS",
+      "short": "IELTS",
+      "full": "International English Language Testing System",
+      "body": "British Council · IDP · Cambridge Assessment English",
+      "tagline": "Study, work, migration",
+      "blurb": "The world's most accepted English proficiency test — taken by 3.5 million people each year. Choose Academic for university admission and professional registration, or General Training for migration, work, and secondary school.",
+      "duration": "2h 45m",
+      "score": "Band 0–9",
+      "sections": 4,
+      "mocks": 60,
+      "streams": [
+        "Academic",
+        "General Training"
       ],
-      sections_detail: [
-        { name: "Listening", icon: "🎧", time: 40, questions: 40,
-          types: ["Form completion", "Note completion", "Matching", "MCQ", "Map/diagram labelling", "Short answer"],
-          tips: "You hear the recording once only. Answers follow the order of the questions in Parts 1–3." },
-        { name: "Reading", icon: "📖", time: 60, questions: 40,
-          types: ["True/False/Not Given", "Yes/No/Not Given", "Matching headings", "Matching information", "MCQ", "Sentence completion", "Summary completion"],
-          tips: "Manage time: aim for 20 min per passage. Skim the questions before reading the passage." },
-        { name: "Writing", icon: "✍️", time: 60, questions: 2,
-          types: ["Task 1 Academic: describe graph/chart/diagram/map/process", "Task 1 General: write a letter", "Task 2: argumentative/discussion essay"],
-          tips: "Plan Task 2 for 5 min. Task 2 carries double the marks of Task 1 — do not spend 40 min on Task 1." },
-        { name: "Speaking", icon: "🎤", time: 14, questions: 3,
-          types: ["Part 1: Everyday questions on familiar topics", "Part 2: Speak for 1–2 min from a cue card", "Part 3: Abstract discussion linked to Part 2 topic"],
-          tips: "Extend answers naturally. Examiners look for fluency, lexical resource, grammar range and accuracy, and pronunciation." }
+      "official": "https://ielts.org/take-a-test",
+      "booking": "https://ielts.org/take-a-test/booking-your-test",
+      "fees": {
+        "inr": "₹17,000–19,000",
+        "usd": "$215–230"
+      },
+      "colour": "#B83A2E",
+      "pattern": [
+        [
+          "Listening",
+          "4 parts · 40 questions · 30 min listening + 10 min answer transfer"
+        ],
+        [
+          "Reading",
+          "3 passages · 40 questions · 60 min (Academic: academic texts; General: notices, ads, articles)"
+        ],
+        [
+          "Writing",
+          "Task 1 (≥150 words, 20 min) + Task 2 (≥250 words, 40 min) · 60 min total"
+        ],
+        [
+          "Speaking",
+          "Part 1: Introduction (4–5 min) · Part 2: Cue card (3–4 min) · Part 3: Discussion (4–5 min) · 11–14 min face-to-face"
+        ]
       ],
-      scoreGuide: [
-        ["Band 9", "Expert user — full operational command of English"],
-        ["Band 8", "Very good user — occasional unsystematic inaccuracies"],
-        ["Band 7", "Good user — occasional errors in complex situations"],
-        ["Band 6.5", "Minimum for many UK/AUS university programmes"],
-        ["Band 6", "Competent user — noticeable but manageable errors"],
-        ["Band 5.5", "Minimum for some programmes; Immigration threshold in some countries"]
+      "sections_detail": [
+        {
+          "name": "Listening",
+          "icon": "🎧",
+          "time": 40,
+          "questions": 40,
+          "types": [
+            "Form completion",
+            "Note completion",
+            "Matching",
+            "MCQ",
+            "Map/diagram labelling",
+            "Short answer"
+          ],
+          "tips": "You hear the recording once only. Answers follow the order of the questions in Parts 1–3."
+        },
+        {
+          "name": "Reading",
+          "icon": "📖",
+          "time": 60,
+          "questions": 40,
+          "types": [
+            "True/False/Not Given",
+            "Yes/No/Not Given",
+            "Matching headings",
+            "Matching information",
+            "MCQ",
+            "Sentence completion",
+            "Summary completion"
+          ],
+          "tips": "Manage time: aim for 20 min per passage. Skim the questions before reading the passage."
+        },
+        {
+          "name": "Writing",
+          "icon": "✍️",
+          "time": 60,
+          "questions": 2,
+          "types": [
+            "Task 1 Academic: describe graph/chart/diagram/map/process",
+            "Task 1 General: write a letter",
+            "Task 2: argumentative/discussion essay"
+          ],
+          "tips": "Plan Task 2 for 5 min. Task 2 carries double the marks of Task 1 — do not spend 40 min on Task 1."
+        },
+        {
+          "name": "Speaking",
+          "icon": "🎤",
+          "time": 14,
+          "questions": 3,
+          "types": [
+            "Part 1: Everyday questions on familiar topics",
+            "Part 2: Speak for 1–2 min from a cue card",
+            "Part 3: Abstract discussion linked to Part 2 topic"
+          ],
+          "tips": "Extend answers naturally. Examiners look for fluency, lexical resource, grammar range and accuracy, and pronunciation."
+        }
       ],
-      registration: [
+      "scoreGuide": [
+        [
+          "Band 9",
+          "Expert user — full operational command of English"
+        ],
+        [
+          "Band 8",
+          "Very good user — occasional unsystematic inaccuracies"
+        ],
+        [
+          "Band 7",
+          "Good user — occasional errors in complex situations"
+        ],
+        [
+          "Band 6.5",
+          "Minimum for many UK/AUS university programmes"
+        ],
+        [
+          "Band 6",
+          "Competent user — noticeable but manageable errors"
+        ],
+        [
+          "Band 5.5",
+          "Minimum for some programmes; Immigration threshold in some countries"
+        ]
+      ],
+      "registration": [
         "Create an account on ielts.org (British Council) or IDP India (ieltsidpindia.com).",
         "Select your test type: Academic or General Training.",
         "Choose your test format: Paper-based or Computer-delivered (CD-IELTS recommended for faster results and more slots).",
@@ -58,8 +134,8 @@ window.LP_DATA = {
         "Pay the fee online. Keep your booking confirmation email.",
         "Results: Paper-based — 13 days. Computer-delivered — 1–5 days."
       ],
-      centres: "Available in 140+ countries at 1,600+ test centres. In India: Delhi, Mumbai, Chennai, Bangalore, Hyderabad, Kolkata, Pune, Ahmedabad, and 50+ other cities.",
-      commonMistakes: [
+      "centres": "Available in 140+ countries at 1,600+ test centres. In India: Delhi, Mumbai, Chennai, Bangalore, Hyderabad, Kolkata, Pune, Ahmedabad, and 50+ other cities.",
+      "commonMistakes": [
         "Spending too long on Listening Part 1 and running out of time in Part 4.",
         "Writing fewer than 150 words for Task 1 — automatic score cap.",
         "Repeating the question words in Task 2 introduction — called 'lifting', penalised.",
@@ -67,55 +143,155 @@ window.LP_DATA = {
         "In Reading, choosing NOT GIVEN when the answer is actually FALSE — read the passage, not your own knowledge.",
         "Speaking too fast in Part 2 to fill 2 minutes — slow down and develop each point."
       ],
-      faqs: [
-        ["Which stream should I choose?", "Academic for universities, postgraduate courses and professional body registration (e.g. nursing councils). General Training for skilled migration (Australia, Canada, UK visa), work experience, and secondary education. Always confirm with the receiving institution before booking."],
-        ["CD-IELTS vs paper-based?", "CD-IELTS (computer-delivered) gives results in 1–5 days instead of 13, offers many more test dates, and allows you to type Writing tasks. The content is identical. Most candidates now choose CD-IELTS."],
-        ["How many times can I retake?", "Unlimited — there is no restriction on the number of attempts. Most centres allow you to book again immediately after sitting."],
-        ["Is the 9-band scale pass/fail?", "No. You receive a band score for each of the four skills and an Overall Band Score (average, rounded to nearest 0.5). Institutions set their own minimum — commonly 6.0, 6.5 or 7.0 overall."],
-        ["How long is the score valid?", "IELTS scores are valid for two years from the test date."]
+      "faqs": [
+        [
+          "Which stream should I choose?",
+          "Academic for universities, postgraduate courses and professional body registration (e.g. nursing councils). General Training for skilled migration (Australia, Canada, UK visa), work experience, and secondary education. Always confirm with the receiving institution before booking."
+        ],
+        [
+          "CD-IELTS vs paper-based?",
+          "CD-IELTS (computer-delivered) gives results in 1–5 days instead of 13, offers many more test dates, and allows you to type Writing tasks. The content is identical. Most candidates now choose CD-IELTS."
+        ],
+        [
+          "How many times can I retake?",
+          "Unlimited — there is no restriction on the number of attempts. Most centres allow you to book again immediately after sitting."
+        ],
+        [
+          "Is the 9-band scale pass/fail?",
+          "No. You receive a band score for each of the four skills and an Overall Band Score (average, rounded to nearest 0.5). Institutions set their own minimum — commonly 6.0, 6.5 or 7.0 overall."
+        ],
+        [
+          "How long is the score valid?",
+          "IELTS scores are valid for two years from the test date."
+        ]
       ]
     },
     {
-      id: "toefl", name: "TOEFL iBT", short: "TOEFL",
-      full: "Test of English as a Foreign Language — Internet-Based Test",
-      body: "Educational Testing Service (ETS)",
-      tagline: "University admissions worldwide",
-      blurb: "Accepted by 12,000+ universities in 160+ countries including all Ivy League institutions. Computer-delivered at an authorised centre or via the TOEFL iBT Home Edition where available.",
-      duration: "~2h", score: "0–120", sections: 4, mocks: 60,
-      streams: ["iBT", "Essentials"],
-      official: "https://www.ets.org/toefl",
-      booking: "https://www.ets.org/toefl/test-takers/ibt/register.html",
-      fees: { inr: "₹15,254", usd: "$183 (centre) / $195 (Home Edition)" },
-      colour: "#1F4F8B",
-      pattern: [
-        ["Reading", "2 passages · 10 questions each · ~35 min"],
-        ["Listening", "2 lectures + 1 conversation · ~36 min (approx. 28 questions)"],
-        ["Speaking", "4 tasks (1 independent + 3 integrated) · ~16 min"],
-        ["Writing", "Integrated task (read-listen-write) + Academic Discussion task · ~29 min"]
+      "id": "toefl",
+      "name": "TOEFL iBT",
+      "short": "TOEFL",
+      "full": "Test of English as a Foreign Language — Internet-Based Test",
+      "body": "Educational Testing Service (ETS)",
+      "tagline": "University admissions worldwide",
+      "blurb": "Accepted by 12,000+ universities in 160+ countries including all Ivy League institutions. Computer-delivered at an authorised centre or via the TOEFL iBT Home Edition where available.",
+      "duration": "~2h",
+      "score": "0–120",
+      "sections": 4,
+      "mocks": 60,
+      "streams": [
+        "iBT",
+        "Essentials"
       ],
-      sections_detail: [
-        { name: "Reading", icon: "📖", time: 35, questions: 20,
-          types: ["Factual information", "Negative factual information", "Inference", "Rhetorical purpose", "Vocabulary in context", "Reference", "Sentence simplification", "Insert text", "Prose summary"],
-          tips: "Read actively — mark supporting details. The 'summary' question at the end is worth 2 points; check all 6 options carefully." },
-        { name: "Listening", icon: "🎧", time: 36, questions: 28,
-          types: ["Main idea/gist", "Detail", "Function and attitude", "Organization", "Connecting information"],
-          tips: "Take notes on the Cornell method (main idea left, detail right, summary below). Lectures can cover biology, history, art, economics — anything." },
-        { name: "Speaking", icon: "🎤", time: 16, questions: 4,
-          types: ["Task 1: Independent — your opinion on a topic (45 sec prep, 60 sec response)", "Task 2: Campus situation (read + listen + speak)", "Task 3: Academic topic (read + listen + speak)", "Task 4: Academic lecture (listen + speak)"],
-          tips: "Use 3 seconds of the prep time to breathe and state your point clearly. Integrated tasks reward accuracy over fluency." },
-        { name: "Writing", icon: "✍️", time: 29, questions: 2,
-          types: ["Integrated: summarise lecture points vs reading passage (150–225 words, 20 min)", "Academic Discussion: contribute a response to a professor's discussion post (≥100 words, 10 min)"],
-          tips: "Integrated Writing: the lecture will contradict, support or qualify the reading. Academic Discussion: take a clear position and support it with a specific reason." }
+      "official": "https://www.ets.org/toefl",
+      "booking": "https://www.ets.org/toefl/test-takers/ibt/register.html",
+      "fees": {
+        "inr": "₹15,254",
+        "usd": "$183 (centre) / $195 (Home Edition)"
+      },
+      "colour": "#1F4F8B",
+      "pattern": [
+        [
+          "Reading",
+          "2 passages · 10 questions each · ~35 min"
+        ],
+        [
+          "Listening",
+          "2 lectures + 1 conversation · ~36 min (approx. 28 questions)"
+        ],
+        [
+          "Speaking",
+          "4 tasks (1 independent + 3 integrated) · ~16 min"
+        ],
+        [
+          "Writing",
+          "Integrated task (read-listen-write) + Academic Discussion task · ~29 min"
+        ]
       ],
-      scoreGuide: [
-        ["118–120", "Top 1% — exceptional user"],
-        ["110–117", "Competitive for top US/UK universities"],
-        ["100–109", "Target for most research universities"],
-        ["90–99", "Accepted by many mid-tier and state universities"],
-        ["80–89", "Minimum for many programmes; ESL support may be required"],
-        ["79 or below", "Below common university thresholds"]
+      "sections_detail": [
+        {
+          "name": "Reading",
+          "icon": "📖",
+          "time": 35,
+          "questions": 20,
+          "types": [
+            "Factual information",
+            "Negative factual information",
+            "Inference",
+            "Rhetorical purpose",
+            "Vocabulary in context",
+            "Reference",
+            "Sentence simplification",
+            "Insert text",
+            "Prose summary"
+          ],
+          "tips": "Read actively — mark supporting details. The 'summary' question at the end is worth 2 points; check all 6 options carefully."
+        },
+        {
+          "name": "Listening",
+          "icon": "🎧",
+          "time": 36,
+          "questions": 28,
+          "types": [
+            "Main idea/gist",
+            "Detail",
+            "Function and attitude",
+            "Organization",
+            "Connecting information"
+          ],
+          "tips": "Take notes on the Cornell method (main idea left, detail right, summary below). Lectures can cover biology, history, art, economics — anything."
+        },
+        {
+          "name": "Speaking",
+          "icon": "🎤",
+          "time": 16,
+          "questions": 4,
+          "types": [
+            "Task 1: Independent — your opinion on a topic (45 sec prep, 60 sec response)",
+            "Task 2: Campus situation (read + listen + speak)",
+            "Task 3: Academic topic (read + listen + speak)",
+            "Task 4: Academic lecture (listen + speak)"
+          ],
+          "tips": "Use 3 seconds of the prep time to breathe and state your point clearly. Integrated tasks reward accuracy over fluency."
+        },
+        {
+          "name": "Writing",
+          "icon": "✍️",
+          "time": 29,
+          "questions": 2,
+          "types": [
+            "Integrated: summarise lecture points vs reading passage (150–225 words, 20 min)",
+            "Academic Discussion: contribute a response to a professor's discussion post (≥100 words, 10 min)"
+          ],
+          "tips": "Integrated Writing: the lecture will contradict, support or qualify the reading. Academic Discussion: take a clear position and support it with a specific reason."
+        }
       ],
-      registration: [
+      "scoreGuide": [
+        [
+          "118–120",
+          "Top 1% — exceptional user"
+        ],
+        [
+          "110–117",
+          "Competitive for top US/UK universities"
+        ],
+        [
+          "100–109",
+          "Target for most research universities"
+        ],
+        [
+          "90–99",
+          "Accepted by many mid-tier and state universities"
+        ],
+        [
+          "80–89",
+          "Minimum for many programmes; ESL support may be required"
+        ],
+        [
+          "79 or below",
+          "Below common university thresholds"
+        ]
+      ],
+      "registration": [
         "Create an ETS account at ets.org/toefl.",
         "Choose 'Register for the TOEFL iBT' and select Centre or Home Edition.",
         "Select country, city and a test centre or home test option.",
@@ -123,58 +299,146 @@ window.LP_DATA = {
         "Upload passport details — name must match exactly.",
         "Pay by credit/debit card. Scores released in 4–8 days online."
       ],
-      centres: "Global network with 4,500+ centres in 165 countries. Home Edition available in most countries including India.",
-      commonMistakes: [
+      "centres": "Global network with 4,500+ centres in 165 countries. Home Edition available in most countries including India.",
+      "commonMistakes": [
         "Using informal vocabulary — TOEFL rewards academic register throughout.",
         "In Integrated Writing, summarising only the reading and ignoring the lecture.",
         "Speaking too quietly or rushing — enunciate, the scoring is AI-assisted.",
         "Missing the 2-point prose summary question in Reading — it changes your section score significantly.",
         "Taking notes too sparingly in Listening — you cannot replay audio."
       ],
-      faqs: [
-        ["TOEFL or IELTS?", "For US universities, TOEFL iBT is often preferred. IELTS is preferred by UK and Australian institutions. Both are accepted worldwide — check your specific programme's requirement."],
-        ["What is the Home Edition?", "The TOEFL iBT Home Edition is the same test delivered at home via a secure browser with live remote proctoring. It requires a quiet room, working webcam and microphone, and a stable internet connection."],
-        ["Can I section-skip?", "No. You must complete Reading, Listening, Speaking and Writing in that fixed order on test day."],
-        ["How is Speaking scored?", "Speaking responses are scored by certified TOEFL raters on a 0–4 scale then converted to 0–30. AI-assisted tools assist the rating process."],
-        ["When are scores available?", "Most candidates receive online scores within 4–8 days. Scores are valid for 2 years."]
+      "faqs": [
+        [
+          "TOEFL or IELTS?",
+          "For US universities, TOEFL iBT is often preferred. IELTS is preferred by UK and Australian institutions. Both are accepted worldwide — check your specific programme's requirement."
+        ],
+        [
+          "What is the Home Edition?",
+          "The TOEFL iBT Home Edition is the same test delivered at home via a secure browser with live remote proctoring. It requires a quiet room, working webcam and microphone, and a stable internet connection."
+        ],
+        [
+          "Can I section-skip?",
+          "No. You must complete Reading, Listening, Speaking and Writing in that fixed order on test day."
+        ],
+        [
+          "How is Speaking scored?",
+          "Speaking responses are scored by certified TOEFL raters on a 0–4 scale then converted to 0–30. AI-assisted tools assist the rating process."
+        ],
+        [
+          "When are scores available?",
+          "Most candidates receive online scores within 4–8 days. Scores are valid for 2 years."
+        ]
       ]
     },
     {
-      id: "pte", name: "PTE Academic", short: "PTE",
-      full: "Pearson Test of English Academic",
-      body: "Pearson VUE",
-      tagline: "AI-scored · results in 48 hours",
-      blurb: "Fully computer-based and AI-scored. Results in as little as 48 hours. Widely accepted for Australian, UK and Canadian visas and by 3,000+ universities globally.",
-      duration: "2h", score: "10–90", sections: 3, mocks: 60,
-      streams: ["Academic", "Core"],
-      official: "https://www.pearsonpte.com/pte-academic",
-      booking: "https://www.pearsonpte.com/book",
-      fees: { inr: "₹16,900–18,900", usd: "$204–226" },
-      colour: "#2F6F4E",
-      pattern: [
-        ["Speaking & Writing", "Read Aloud · Repeat Sentence · Describe Image · Re-tell Lecture · Answer Short Question · Summarize Written Text · Write Essay · 77–93 min"],
-        ["Reading", "Reading & Writing Fill in the Blanks · MCQ Multiple · Re-order Paragraphs · Fill in the Blanks · MCQ Single · 32–41 min"],
-        ["Listening", "Summarize Spoken Text · MCQ Multiple · Fill in the Blanks · Highlight Correct Summary · MCQ Single · Select Missing Word · Highlight Incorrect Words · Write From Dictation · 45–57 min"]
+      "id": "pte",
+      "name": "PTE Academic",
+      "short": "PTE",
+      "full": "Pearson Test of English Academic",
+      "body": "Pearson VUE",
+      "tagline": "AI-scored · results in 48 hours",
+      "blurb": "Fully computer-based and AI-scored. Results in as little as 48 hours. Widely accepted for Australian, UK and Canadian visas and by 3,000+ universities globally.",
+      "duration": "2h",
+      "score": "10–90",
+      "sections": 3,
+      "mocks": 60,
+      "streams": [
+        "Academic",
+        "Core"
       ],
-      sections_detail: [
-        { name: "Speaking & Writing", icon: "🎤✍️", time: 85, questions: 0,
-          types: ["Read Aloud (6–7): read text aloud clearly", "Repeat Sentence (10–12): repeat exactly", "Describe Image (6–7): describe chart/graph/photo", "Re-tell Lecture (3–4): summarise spoken lecture", "Answer Short Question (5–6): one-word/phrase answers", "Summarize Written Text (1–2): one-sentence summary", "Write Essay (1–2): 200–300 word argumentative essay"],
-          tips: "Read Aloud and Repeat Sentence heavily impact Listening scores too. Speak continuously — pausing too long triggers recording to stop." },
-        { name: "Reading", icon: "📖", time: 37, questions: 0,
-          types: ["Reading & Writing Fill in Blanks (5–6): drag words into gaps", "MCQ Multiple (1–2): select all correct answers (penalty for wrong)", "Re-order Paragraphs (2–3): arrange jumbled sentences", "Fill in Blanks (4–5): select from dropdown", "MCQ Single (1–2): one correct answer"],
-          tips: "Re-order Paragraphs: find the topic sentence (usually no pronoun or reference at start). MCQ Multiple: wrong answers deduct marks — be selective." },
-        { name: "Listening", icon: "🎧", time: 50, questions: 0,
-          types: ["Summarize Spoken Text (2–3): 50–70 word summary", "MCQ Multiple (2–3): select all correct answers", "Fill in Blanks (2–3): type missing words", "Highlight Correct Summary (2–3): pick best summary", "MCQ Single (2–3): one correct answer", "Select Missing Word (2–3): choose end of audio", "Highlight Incorrect Words (2–3): identify words that differ from transcript", "Write From Dictation (3–4): type what you hear exactly"],
-          tips: "Write From Dictation is the highest-weight Listening task. Listen for each word precisely — score is partial (per correct word)." }
+      "official": "https://www.pearsonpte.com/pte-academic",
+      "booking": "https://www.pearsonpte.com/book",
+      "fees": {
+        "inr": "₹16,900–18,900",
+        "usd": "$204–226"
+      },
+      "colour": "#2F6F4E",
+      "pattern": [
+        [
+          "Speaking & Writing",
+          "Read Aloud · Repeat Sentence · Describe Image · Re-tell Lecture · Answer Short Question · Summarize Written Text · Write Essay · 77–93 min"
+        ],
+        [
+          "Reading",
+          "Reading & Writing Fill in the Blanks · MCQ Multiple · Re-order Paragraphs · Fill in the Blanks · MCQ Single · 32–41 min"
+        ],
+        [
+          "Listening",
+          "Summarize Spoken Text · MCQ Multiple · Fill in the Blanks · Highlight Correct Summary · MCQ Single · Select Missing Word · Highlight Incorrect Words · Write From Dictation · 45–57 min"
+        ]
       ],
-      scoreGuide: [
-        ["85–90", "Expert communicator — rare; Australian PR/student visa: well above minimum"],
-        ["79–84", "Very high — exceeds most immigration thresholds"],
-        ["65–78", "Target for Australian skilled visa (typically 65+), UK student visa (58+)"],
-        ["50–64", "Accepted by many universities; below some immigration thresholds"],
-        ["42–49", "Limited proficiency — below most university and visa requirements"]
+      "sections_detail": [
+        {
+          "name": "Speaking & Writing",
+          "icon": "🎤✍️",
+          "time": 85,
+          "questions": 0,
+          "types": [
+            "Read Aloud (6–7): read text aloud clearly",
+            "Repeat Sentence (10–12): repeat exactly",
+            "Describe Image (6–7): describe chart/graph/photo",
+            "Re-tell Lecture (3–4): summarise spoken lecture",
+            "Answer Short Question (5–6): one-word/phrase answers",
+            "Summarize Written Text (1–2): one-sentence summary",
+            "Write Essay (1–2): 200–300 word argumentative essay"
+          ],
+          "tips": "Read Aloud and Repeat Sentence heavily impact Listening scores too. Speak continuously — pausing too long triggers recording to stop."
+        },
+        {
+          "name": "Reading",
+          "icon": "📖",
+          "time": 37,
+          "questions": 0,
+          "types": [
+            "Reading & Writing Fill in Blanks (5–6): drag words into gaps",
+            "MCQ Multiple (1–2): select all correct answers (penalty for wrong)",
+            "Re-order Paragraphs (2–3): arrange jumbled sentences",
+            "Fill in Blanks (4–5): select from dropdown",
+            "MCQ Single (1–2): one correct answer"
+          ],
+          "tips": "Re-order Paragraphs: find the topic sentence (usually no pronoun or reference at start). MCQ Multiple: wrong answers deduct marks — be selective."
+        },
+        {
+          "name": "Listening",
+          "icon": "🎧",
+          "time": 50,
+          "questions": 0,
+          "types": [
+            "Summarize Spoken Text (2–3): 50–70 word summary",
+            "MCQ Multiple (2–3): select all correct answers",
+            "Fill in Blanks (2–3): type missing words",
+            "Highlight Correct Summary (2–3): pick best summary",
+            "MCQ Single (2–3): one correct answer",
+            "Select Missing Word (2–3): choose end of audio",
+            "Highlight Incorrect Words (2–3): identify words that differ from transcript",
+            "Write From Dictation (3–4): type what you hear exactly"
+          ],
+          "tips": "Write From Dictation is the highest-weight Listening task. Listen for each word precisely — score is partial (per correct word)."
+        }
       ],
-      registration: [
+      "scoreGuide": [
+        [
+          "85–90",
+          "Expert communicator — rare; Australian PR/student visa: well above minimum"
+        ],
+        [
+          "79–84",
+          "Very high — exceeds most immigration thresholds"
+        ],
+        [
+          "65–78",
+          "Target for Australian skilled visa (typically 65+), UK student visa (58+)"
+        ],
+        [
+          "50–64",
+          "Accepted by many universities; below some immigration thresholds"
+        ],
+        [
+          "42–49",
+          "Limited proficiency — below most university and visa requirements"
+        ]
+      ],
+      "registration": [
         "Create a Pearson account at pearsonpte.com.",
         "Select PTE Academic or PTE Core (for Canadian PR/citizenship).",
         "Find a test centre and available date/time.",
@@ -182,174 +446,269 @@ window.LP_DATA = {
         "Pay and receive booking confirmation.",
         "Results delivered to your myPTE account in 48 hours."
       ],
-      centres: "4,000+ test centres in 100+ countries. In India: 40+ cities including Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Pune, Kolkata.",
-      commonMistakes: [
+      "centres": "4,000+ test centres in 100+ countries. In India: 40+ cities including Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Pune, Kolkata.",
+      "commonMistakes": [
         "Pausing too long in Read Aloud — the microphone cuts off after 3 seconds of silence.",
         "Speaking with a regional accent too heavy for the AI — train for clear, measured pronunciation.",
         "Ignoring Repeat Sentence — it affects both Speaking AND Listening scores simultaneously.",
         "Not finishing Write From Dictation — partial scoring means every word counts.",
         "Over-time on Write Essay — 300 words is enough; above 400 rarely improves scores."
       ],
-      faqs: [
-        ["Why choose PTE over IELTS?", "Faster results (48 hrs), no human examiner bias, more test centre slots, and AI consistency. PTE is also fully computer-based, which many candidates find less stressful than a face-to-face speaking interview."],
-        ["Is PTE accepted for UK visas?", "Yes — PTE Academic is on the UK Home Office SELT list. Required score varies by visa type. Always confirm with UKVI."],
-        ["What is PTE Core?", "PTE Core is designed specifically for Canadian immigration (IRCC Express Entry and Provincial Nominee Programs). It differs from PTE Academic in content and score benchmarks."],
-        ["How often can I retake PTE?", "Unlimited attempts. Results are valid for 2 years from the test date."]
+      "faqs": [
+        [
+          "Why choose PTE over IELTS?",
+          "Faster results (48 hrs), no human examiner bias, more test centre slots, and AI consistency. PTE is also fully computer-based, which many candidates find less stressful than a face-to-face speaking interview."
+        ],
+        [
+          "Is PTE accepted for UK visas?",
+          "Yes — PTE Academic is on the UK Home Office SELT list. Required score varies by visa type. Always confirm with UKVI."
+        ],
+        [
+          "What is PTE Core?",
+          "PTE Core is designed specifically for Canadian immigration (IRCC Express Entry and Provincial Nominee Programs). It differs from PTE Academic in content and score benchmarks."
+        ],
+        [
+          "How often can I retake PTE?",
+          "Unlimited attempts. Results are valid for 2 years from the test date."
+        ]
       ]
     },
     {
-      id: "celpip", name: "CELPIP", short: "CELPIP",
-      full: "Canadian English Language Proficiency Index Programme",
-      body: "Paragon Testing Enterprises (UBC)",
-      tagline: "Canada PR &amp; citizenship",
-      blurb: "Designated by Immigration, Refugees and Citizenship Canada (IRCC) for permanent residence and citizenship applications. All sections are computer-delivered using Canadian English contexts and accents.",
-      duration: "3h", score: "1–12", sections: 4, mocks: 60,
-      streams: ["General", "General LS"],
-      official: "https://www.celpip.ca/",
-      booking: "https://www.celpip.ca/register/",
-      fees: { inr: "₹18,000–20,000", usd: "$215–240" },
-      colour: "#C8501F",
-      pattern: [
-        ["Listening", "6 parts (problem solving, daily-life conversation, information, news item, discussion, viewpoints) · 38 questions · 47–55 min"],
-        ["Reading", "4 parts (correspondence, diagram/chart, information, viewpoints) · 38 questions · 55–64 min"],
-        ["Writing", "Task 1: Email (150–200 words, 27 min) + Task 2: Survey response (150–200 words, 26 min) · 53 min total"],
-        ["Speaking", "8 tasks (giving advice, personal experience, describing a scene, predictions, comparing & persuading, difficult situation, opinions, unusual situation) · ~15–20 min"]
+      "id": "pte-core",
+      "name": "PTE Core",
+      "short": "PTE Core",
+      "full": "Pearson Test of English Core",
+      "body": "Pearson",
+      "tagline": "Canada work & PR pathways",
+      "blurb": "PTE Core is a secure, computer-delivered English proficiency test developed by Pearson specifically for Immigration, Refugees and Citizenship Canada (IRCC). It assesses your ability to speak, read, and write English at real-world proficiency levels for Canadian immigration and work visa applications. Recognized for quick results and fair evaluation, it serves candidates aiming for permanent residence or skilled work programs.",
+      "duration": "2h",
+      "score": "10–90",
+      "sections": 3,
+      "mocks": 0,
+      "guideOnly": true,
+      "mockAlias": "pte",
+      "streams": [
+        "Immigration",
+        "Work Visa"
       ],
-      sections_detail: [
-        { name: "Listening", icon: "🎧", time: 50, questions: 38,
-          types: ["Part 1: Listening to Problem Solving", "Part 2: Listening to a Daily Life Conversation", "Part 3: Listening for Information", "Part 4: Listening to a News Item", "Part 5: Listening to a Discussion", "Part 6: Listening to Viewpoints"],
-          tips: "All audio features Canadian accents and Canadian cultural references. Familiarise yourself with Canadian English pronunciation and vocabulary." },
-        { name: "Reading", icon: "📖", time: 55, questions: 38,
-          types: ["Part 1: Reading correspondence (email/letter)", "Part 2: Reading to apply information from a diagram", "Part 3: Reading for information from articles", "Part 4: Reading for viewpoints and opinions"],
-          tips: "Part 4 is the most time-pressured. Practice reading opinion pieces quickly and identifying the writer's position." },
-        { name: "Writing", icon: "✍️", time: 53, questions: 2,
-          types: ["Task 1: Email — write an email in response to a given situation (150–200 words)", "Task 2: Survey response — respond to two open-ended questions (150–200 words total)"],
-          tips: "Use the CELPIP writing scoring rubric: Task Fulfilment, Vocabulary, Readability, and Conventions. Write in a friendly, Canadian-casual register for emails." },
-        { name: "Speaking", icon: "🎤", time: 18, questions: 8,
-          types: ["Task 1: Giving Advice (30s prep, 90s response)", "Task 2: Talking about a Personal Experience (30s/60s)", "Task 3: Describing a Scene (30s/60s)", "Task 4: Making Predictions (30s/60s)", "Task 5: Comparing and Persuading (60s/60s)", "Task 6: Dealing with a Difficult Situation (60s/60s)", "Task 7: Expressing Opinions (30s/90s)", "Task 8: Describing an Unusual Situation (30s/60s)"],
-          tips: "All speaking responses are recorded and scored by raters. Organise your response with a clear opening, 2–3 supporting points, and a conclusion." }
+      "official": "https://www.ptecore.com",
+      "booking": "https://www.ptecore.com/book",
+      "fees": {
+        "inr": "₹12,000–₹15,000",
+        "usd": "$50–$200"
+      },
+      "colour": "#0066CC",
+      "pattern": [
+        [
+          "Speaking & Writing",
+          "Personal intro · read aloud · short answer · repeat sentence · describe image · tell story · write email — 30–35 mins"
+        ],
+        [
+          "Reading",
+          "Multiple choice · reorder paragraphs · fill blanks · match headings — 29–30 mins"
+        ],
+        [
+          "Listening",
+          "Summarize spoken text · multiple choice · highlight correct summary · select missing word · write from dictation — 30–40 mins"
+        ]
       ],
-      scoreGuide: [
-        ["10–12", "Advanced proficiency — exceeds most immigration requirements"],
-        ["9", "Meets Express Entry CLB 9 requirement for high CRS points"],
-        ["7–8", "Meets minimum for most PR pathways (CLB 7–8)"],
-        ["5–6", "Below common immigration thresholds; suitable for some work permits"],
-        ["1–4", "Limited proficiency"]
+      "sections_detail": [
+        {
+          "name": "Speaking & Writing",
+          "icon": "🎤",
+          "time": 33,
+          "questions": 12,
+          "types": [
+            "Personal introduction",
+            "Read aloud",
+            "Short answer",
+            "Repeat sentence",
+            "Describe image",
+            "Tell a story",
+            "Write an email"
+          ],
+          "tips": "Speak clearly at natural pace; for writing, structure your email with greeting, body, and closing. Stay concise and avoid awkward pauses."
+        },
+        {
+          "name": "Reading",
+          "icon": "📖",
+          "time": 30,
+          "questions": 15,
+          "types": [
+            "Multiple choice",
+            "Reorder paragraphs",
+            "Fill in the blanks",
+            "Match headings to paragraphs"
+          ],
+          "tips": "Skim first to grasp main ideas; use context clues for vocabulary. Reorder paragraphs by identifying logical flow and transition markers."
+        },
+        {
+          "name": "Listening",
+          "icon": "🎧",
+          "time": 35,
+          "questions": 16,
+          "types": [
+            "Summarize spoken text",
+            "Multiple choice",
+            "Highlight correct summary",
+            "Select missing word",
+            "Write from dictation"
+          ],
+          "tips": "Listen for key phrases and main points; don't get stuck on unknown words. For dictation, spell carefully and listen for punctuation cues."
+        }
       ],
-      registration: [
-        "Register at celpip.ca — create an account.",
-        "Select CELPIP-General (PR) or CELPIP-General LS (citizenship).",
-        "Choose a test centre (Canada or select international cities).",
-        "Upload valid government photo ID.",
-        "Pay the registration fee. Results typically within 4–5 business days."
+      "scoreGuide": [
+        [
+          "10–23",
+          "Below CLB 4.5; limited communication ability. Suitable for low-skilled immigration streams or bridging programs."
+        ],
+        [
+          "24–42",
+          "CLB 5.0–6.5; functional everyday communication. Meets requirements for most work-permit and Express Entry applications."
+        ],
+        [
+          "43–60",
+          "CLB 7.0–8.0; clear, confident communication with minor errors. Strong for skilled professional and skilled trades streams."
+        ],
+        [
+          "61–75",
+          "CLB 8.5–9.0; near-native fluency with minimal errors. Exceeds most Canadian immigration and employer requirements."
+        ],
+        [
+          "76–90",
+          "CLB 9.5–10.0; exceptional English mastery. Opens doors to premier institutions and top-tier professional roles."
+        ]
       ],
-      centres: "Primarily in Canada. Limited centres internationally — check celpip.ca for current locations. No Home Edition available.",
-      commonMistakes: [
-        "Not targeting the word count — Writing below 150 words is heavily penalised.",
-        "Using British English spellings — CELPIP uses Canadian English (colour, honour — same as British; program — same as American). Do not mix.",
-        "Forgetting to address all three bullet points in the email task.",
-        "Speaking too formally — CELPIP tests practical, everyday Canadian English, not academic English.",
-        "Confusing CELPIP-General with CELPIP-General LS — wrong test means invalid score for your application."
+      "registration": [
+        "Register online at ptecore.com",
+        "select your test date, location (test centre or online), and pay the fee via credit card or local payment methods"
       ],
-      faqs: [
-        ["CELPIP vs IELTS for Canada PR?", "Both are accepted by IRCC. CELPIP uses Canadian contexts and accents, making it more relevant for Canada. It is also fully computer-based. The choice often comes down to familiarity with the format."],
-        ["What CLB level do I need?", "Federal Skilled Worker: CLB 7 (score of 7 in all bands). CEC: CLB 7 (speaking/listening), CLB 5 (reading/writing) for NOC 0/A; CLB 5 all bands for NOC B. Always verify with the IRCC website."],
-        ["Is CELPIP accepted for citizenship?", "CELPIP-General (not General LS) or CELPIP-General LS — confirm which version your citizenship application requires with IRCC before booking."],
-        ["Scores valid for how long?", "2 years from test date for immigration purposes."]
+      "centres": "PTE Core is offered at authorized test centres across major Indian cities (Delhi, Mumbai, Bangalore, Hyderabad, Pune) and online from home with ID verification and proctoring.",
+      "commonMistakes": [
+        "Speaking too fast or too quietly; examiners need clear articulation to assess accent and grammar fairly.",
+        "Overthinking grammatical perfection; natural fluency with minor errors scores higher than hesitant, correction-heavy speech.",
+        "Ignoring the image description task; candidates often run out of ideas and repeat simple observations instead of inferring details.",
+        "Not managing time in Reading; skipping easier questions to chase complex ones costs points when time runs out.",
+        "Dictation errors from careless listening; slow down your note-taking and verify spelling of proper nouns."
+      ],
+      "faqs": [
+        [
+          "How is PTE Core different from CELPIP?",
+          "Both are IRCC-approved for Canadian immigration and report CLB levels. PTE Core is computer-adaptive and Pearson-run; CELPIP is a fixed-format test by Paragon. PTE Core results arrive in 5 days vs CELPIP's 10–12 days, and PTE offers more test dates per month. Both are equally recognized by IRCC."
+        ],
+        [
+          "What score do I need for Express Entry?",
+          "It depends on the stream. Federal Skilled Worker Program typically requires CLB 7.0 (PTE Core 43–60) for primary occupation. Check your specific National Occupational Classification (NOC) code and the current Express Entry cutoff via the IRCC portal."
+        ],
+        [
+          "Can I retake PTE Core if I don't pass?",
+          "Yes, there is no official pass/fail; you receive a score 10–90. If you're unsatisfied, you can retake after 7 days. Most candidates do not retake as scores are valid for 3 years for IRCC purposes."
+        ],
+        [
+          "Is PTE Core accepted by universities in Canada?",
+          "PTE Core is designed for immigration, not academic English. For university admission, use PTE Academic instead. However, some colleges may accept PTE Core; check with your institution's admissions office."
+        ],
+        [
+          "How long are PTE Core scores valid?",
+          "Scores are valid for 3 years from the test date for IRCC applications. Keep your official score report safe; IRCC retrieves directly from Pearson's records."
+        ]
       ]
     },
     {
-      id: "duolingo", name: "Duolingo English Test", short: "DET",
-      full: "Duolingo English Test",
-      body: "Duolingo Inc.",
-      tagline: "From home · 60 minutes · $65",
-      blurb: "Adaptive online English proficiency test taken at home in under an hour. Accepted by 5,500+ universities including Yale, Columbia, NYU, MIT, and the University of Toronto.",
-      duration: "1h", score: "10–160", sections: 2, mocks: 60,
-      streams: ["Standard"],
-      official: "https://englishtest.duolingo.com/",
-      booking: "https://englishtest.duolingo.com/applicants",
-      fees: { inr: "₹5,000–5,400", usd: "$65" },
-      colour: "#4F8B2F",
-      pattern: [
-        ["Adaptive Test", "Mixed reading, listening, speaking, writing tasks · 45 min (adaptive difficulty)"],
-        ["Video Interview + Writing Sample", "Open-ended unscored video + writing responses · 10 min"],
-        ["Results", "Certified scores in ≤48 hours · Overall score + subscores for literacy, comprehension, conversation, production"]
+      "id": "gre",
+      "name": "GRE General Test",
+      "short": "GRE",
+      "full": "Graduate Record Examinations — General Test",
+      "body": "Educational Testing Service (ETS)",
+      "tagline": "Graduate school admissions",
+      "blurb": "The standard graduate admissions test for master's and PhD programmes globally. Section-adaptive: your performance in the first scored section of each measure determines the difficulty of the second section.",
+      "duration": "1h 58m",
+      "score": "Verbal 130–170 · Quant 130–170 · AW 0–6",
+      "sections": 3,
+      "mocks": 60,
+      "streams": [
+        "General Test"
       ],
-      sections_detail: [
-        { name: "Adaptive Test", icon: "🤖", time: 45, questions: 0,
-          types: ["Read and Complete: fill missing letters in a word", "Read Aloud: read a sentence aloud", "Listen and Type: transcribe spoken audio", "Read and Select: select real English words from a list", "Write About the Photo: describe an image in 1 sentence", "Speak About the Photo: describe an image aloud (30 sec)", "Listen and Respond: respond to a question about an audio clip", "Read Aloud (long): read a paragraph aloud", "Writing Sample: write on a prompted topic (≥50 words)", "Speaking Sample: speak on a prompted topic (≥30 sec)"],
-          tips: "The test adapts — harder questions mean higher potential scores. Do not rush; accuracy matters more than speed on word-level tasks." },
-        { name: "Video Interview", icon: "🎥", time: 10, questions: 2,
-          types: ["Unscored open-ended video question (sent to institutions as supplemental information)", "Unscored writing sample"],
-          tips: "Although unscored, institutions do view the video interview. Speak clearly, confidently, and on-topic." }
+      "official": "https://www.ets.org/gre",
+      "booking": "https://www.ets.org/gre/test-takers/general-test/register.html",
+      "fees": {
+        "inr": "₹22,550",
+        "usd": "$220 (most locations) / $213 (India)"
+      },
+      "colour": "#5B3A8B",
+      "pattern": [
+        [
+          "Analytical Writing",
+          "1 task: Analyse an Issue · 30 min"
+        ],
+        [
+          "Verbal Reasoning",
+          "2 sections · 27 questions total · 41 min (section-adaptive)"
+        ],
+        [
+          "Quantitative Reasoning",
+          "2 sections · 27 questions total · 47 min (section-adaptive)"
+        ]
       ],
-      scoreGuide: [
-        ["140–160", "Proficiency equivalent to IELTS 8–9, TOEFL 110+"],
-        ["120–135", "Equivalent to IELTS 7–7.5, TOEFL 94–109"],
-        ["100–115", "Equivalent to IELTS 6.5–7, TOEFL 80–93"],
-        ["80–95", "Equivalent to IELTS 6–6.5, TOEFL 65–79"],
-        ["60–75", "Below most university thresholds"]
+      "sections_detail": [
+        {
+          "name": "Analytical Writing",
+          "icon": "✍️",
+          "time": 30,
+          "questions": 1,
+          "types": [
+            "Analyse an Issue: write a well-reasoned essay taking a position on a complex topic"
+          ],
+          "tips": "AW is scored holistically 0–6 by trained raters and e-rater. A 4.0+ satisfies most programmes. Structure: intro with clear position, 2–3 developed body paragraphs, concise conclusion."
+        },
+        {
+          "name": "Verbal Reasoning",
+          "icon": "📖",
+          "time": 41,
+          "questions": 27,
+          "types": [
+            "Text Completion (1–3 blanks): fill blanks with vocabulary that fits context",
+            "Sentence Equivalence (2 blanks): both answers must produce equivalent meaning",
+            "Reading Comprehension: short and long passage MCQ, select-in-passage"
+          ],
+          "tips": "Vocabulary is tested in context — focus on high-frequency GRE words. RC: always read the question before the passage to focus your reading."
+        },
+        {
+          "name": "Quantitative Reasoning",
+          "icon": "🔢",
+          "time": 47,
+          "questions": 27,
+          "types": [
+            "Quantitative Comparison (QC): compare two quantities",
+            "Problem Solving MCQ: choose one or multiple answers",
+            "Numeric Entry: type the exact answer"
+          ],
+          "tips": "QC questions reward estimation, not full calculation — check whether the relationship is always/sometimes/never true. Calculator is provided on-screen but avoid over-relying on it."
+        }
       ],
-      registration: [
-        "Create a Duolingo account at englishtest.duolingo.com.",
-        "Verify your identity with a government ID.",
-        "Download the secure browser or use the web app.",
-        "Schedule a session — tests can be started within minutes of registration.",
-        "Pay $65 by credit/debit card.",
-        "Sit the test in a quiet room with a working webcam, microphone and stable internet.",
-        "Send certified results to institutions for free from your dashboard."
+      "scoreGuide": [
+        [
+          "Verbal 165–170 / Quant 165–170",
+          "Top 10% — competitive for top PhD programmes"
+        ],
+        [
+          "Verbal 160+ / Quant 160+",
+          "Strong — 75th+ percentile in respective measures"
+        ],
+        [
+          "Verbal 155 / Quant 155",
+          "Solid — 69th percentile verbal, 66th percentile quant"
+        ],
+        [
+          "320+ total (V+Q)",
+          "Competitive for most master's programmes"
+        ],
+        [
+          "AW 4.0",
+          "Meets most programme requirements; 5.0+ is strong"
+        ]
       ],
-      centres: "No test centre needed — taken entirely from home. Requires a supported laptop or desktop with webcam and microphone.",
-      commonMistakes: [
-        "Not practising Read Aloud sufficiently — pronunciation clarity matters significantly.",
-        "Submitting very short responses to Writing Sample and Speaking Sample — both need substantive content.",
-        "Having background noise during the test — this can trigger a flag and invalidate results.",
-        "Leaving during the adaptive section — any disruption is flagged.",
-        "Not using all available time on Speaking prompts — 30 seconds minimum is expected."
-      ],
-      faqs: [
-        ["Is DET accepted by top universities?", "Yes — MIT, Yale, Columbia, NYU, Carnegie Mellon and thousands more. However, some programmes still require IELTS or TOEFL. Always verify with your specific programme."],
-        ["How adaptive is the test?", "The adaptive engine adjusts difficulty based on each answer. Answering harder questions correctly leads to a higher final score. You will likely see items across a wide range of difficulty."],
-        ["What equipment is needed?", "A quiet room with no other people, a laptop or desktop with a working front-facing camera and microphone, and a reliable internet connection. Tablets and phones are not supported."],
-        ["Can I retake if I fail?", "You can take the test up to twice per 30-day period."]
-      ]
-    },
-    {
-      id: "gre", name: "GRE General Test", short: "GRE",
-      full: "Graduate Record Examinations — General Test",
-      body: "Educational Testing Service (ETS)",
-      tagline: "Graduate school admissions",
-      blurb: "The standard graduate admissions test for master's and PhD programmes globally. Section-adaptive: your performance in the first scored section of each measure determines the difficulty of the second section.",
-      duration: "1h 58m", score: "Verbal 130–170 · Quant 130–170 · AW 0–6", sections: 3, mocks: 60,
-      streams: ["General Test"],
-      official: "https://www.ets.org/gre",
-      booking: "https://www.ets.org/gre/test-takers/general-test/register.html",
-      fees: { inr: "₹22,550", usd: "$220 (most locations) / $213 (India)" },
-      colour: "#5B3A8B",
-      pattern: [
-        ["Analytical Writing", "1 task: Analyse an Issue · 30 min"],
-        ["Verbal Reasoning", "2 sections · 27 questions total · 41 min (section-adaptive)"],
-        ["Quantitative Reasoning", "2 sections · 27 questions total · 47 min (section-adaptive)"]
-      ],
-      sections_detail: [
-        { name: "Analytical Writing", icon: "✍️", time: 30, questions: 1,
-          types: ["Analyse an Issue: write a well-reasoned essay taking a position on a complex topic"],
-          tips: "AW is scored holistically 0–6 by trained raters and e-rater. A 4.0+ satisfies most programmes. Structure: intro with clear position, 2–3 developed body paragraphs, concise conclusion." },
-        { name: "Verbal Reasoning", icon: "📖", time: 41, questions: 27,
-          types: ["Text Completion (1–3 blanks): fill blanks with vocabulary that fits context", "Sentence Equivalence (2 blanks): both answers must produce equivalent meaning", "Reading Comprehension: short and long passage MCQ, select-in-passage"],
-          tips: "Vocabulary is tested in context — focus on high-frequency GRE words. RC: always read the question before the passage to focus your reading." },
-        { name: "Quantitative Reasoning", icon: "🔢", time: 47, questions: 27,
-          types: ["Quantitative Comparison (QC): compare two quantities", "Problem Solving MCQ: choose one or multiple answers", "Numeric Entry: type the exact answer"],
-          tips: "QC questions reward estimation, not full calculation — check whether the relationship is always/sometimes/never true. Calculator is provided on-screen but avoid over-relying on it." }
-      ],
-      scoreGuide: [
-        ["Verbal 165–170 / Quant 165–170", "Top 10% — competitive for top PhD programmes"],
-        ["Verbal 160+ / Quant 160+", "Strong — 75th+ percentile in respective measures"],
-        ["Verbal 155 / Quant 155", "Solid — 69th percentile verbal, 66th percentile quant"],
-        ["320+ total (V+Q)", "Competitive for most master's programmes"],
-        ["AW 4.0", "Meets most programme requirements; 5.0+ is strong"]
-      ],
-      registration: [
+      "registration": [
         "Create an ETS account at ets.org.",
         "Select 'Register for the GRE General Test'.",
         "Choose test at a centre or GRE General Test at Home.",
@@ -358,8 +717,8 @@ window.LP_DATA = {
         "Pay the registration fee. Score reporting is included for up to 4 programmes.",
         "Scores available 8–10 days after the test. Valid for 5 years."
       ],
-      centres: "Prometric test centres worldwide. GRE at Home available in most countries. In India: Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Kolkata, Pune.",
-      commonMistakes: [
+      "centres": "Prometric test centres worldwide. GRE at Home available in most countries. In India: Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Kolkata, Pune.",
+      "commonMistakes": [
         "Spending too long on hard Verbal questions — skip and return at the end of the section.",
         "Ignoring AW because it is a separate score — many funded PhD programmes require AW 4.5+.",
         "Choosing 'C — the two quantities are equal' in QC by default — test with numbers first.",
@@ -367,50 +726,125 @@ window.LP_DATA = {
         "Not practising Numeric Entry — calculators can't save you from setting up the problem wrong.",
         "Leaving words in Sentence Equivalence that are not synonymous — both blanks must produce complete and equivalent sentences."
       ],
-      faqs: [
-        ["How is the section-adaptive feature different from item-adaptive?", "GRE adapts at the section level — your score on section 1 determines whether section 2 is 'easy', 'medium' or 'hard'. This means even if you answer one question wrong, you are not immediately penalised the way you would be in a fully adaptive test."],
-        ["Can I retake GRE?", "Yes — once every 21 days and up to 5 times in a 12-month period. Only scores from tests taken in the past 5 years are reportable."],
-        ["What is the ScoreSelect option?", "You choose which test scores to send to programmes — you can send your best single day's scores or all scores. Check whether the programme wants to see all scores."],
-        ["GRE or GMAT for business school?", "Most top MBA programmes accept both equally. GRE tends to be preferred for joint degree programmes and by candidates applying to multiple disciplines."],
-        ["How long are GRE scores valid?", "5 years from the test date."]
+      "faqs": [
+        [
+          "How is the section-adaptive feature different from item-adaptive?",
+          "GRE adapts at the section level — your score on section 1 determines whether section 2 is 'easy', 'medium' or 'hard'. This means even if you answer one question wrong, you are not immediately penalised the way you would be in a fully adaptive test."
+        ],
+        [
+          "Can I retake GRE?",
+          "Yes — once every 21 days and up to 5 times in a 12-month period. Only scores from tests taken in the past 5 years are reportable."
+        ],
+        [
+          "What is the ScoreSelect option?",
+          "You choose which test scores to send to programmes — you can send your best single day's scores or all scores. Check whether the programme wants to see all scores."
+        ],
+        [
+          "GRE or GMAT for business school?",
+          "Most top MBA programmes accept both equally. GRE tends to be preferred for joint degree programmes and by candidates applying to multiple disciplines."
+        ],
+        [
+          "How long are GRE scores valid?",
+          "5 years from the test date."
+        ]
       ]
     },
     {
-      id: "gmat", name: "GMAT Focus", short: "GMAT",
-      full: "Graduate Management Admission Test — Focus Edition",
-      body: "Graduate Management Admission Council (GMAC)",
-      tagline: "MBA &amp; business school",
-      blurb: "The GMAT Focus Edition (the only version now offered) is shorter, sharper, and more relevant to business school skills. No sentence correction. A new 205–805 scale. Only your Total Score is sent — no trial sections, no cancelled scores.",
-      duration: "2h 15m", score: "205–805", sections: 3, mocks: 60,
-      streams: ["Focus Edition"],
-      official: "https://www.mba.com/exams/gmat-focus-edition",
-      booking: "https://www.mba.com/exams/gmat-focus-edition/register",
-      fees: { inr: "₹24,830", usd: "$300" },
-      colour: "#B5852C",
-      pattern: [
-        ["Quantitative Reasoning", "21 questions · Problem Solving only (no Data Sufficiency) · 45 min"],
-        ["Verbal Reasoning", "23 questions · Critical Reasoning + Reading Comprehension (no Sentence Correction) · 45 min"],
-        ["Data Insights", "20 questions · Data Sufficiency · Multi-Source Reasoning · Table Analysis · Graphics Interpretation · Two-Part Analysis · 45 min"]
+      "id": "gmat",
+      "name": "GMAT Focus",
+      "short": "GMAT",
+      "full": "Graduate Management Admission Test — Focus Edition",
+      "body": "Graduate Management Admission Council (GMAC)",
+      "tagline": "MBA &amp; business school",
+      "blurb": "The GMAT Focus Edition (the only version now offered) is shorter, sharper, and more relevant to business school skills. No sentence correction. A new 205–805 scale. Only your Total Score is sent — no trial sections, no cancelled scores.",
+      "duration": "2h 15m",
+      "score": "205–805",
+      "sections": 3,
+      "mocks": 60,
+      "streams": [
+        "Focus Edition"
       ],
-      sections_detail: [
-        { name: "Quantitative Reasoning", icon: "🔢", time: 45, questions: 21,
-          types: ["Problem Solving: arithmetic, algebra, geometry, word problems — choose one of 5 options"],
-          tips: "Focuses on higher-order reasoning over computation. You may use the on-screen calculator (a change from the old GMAT). Still practice mental math — calculator dependency wastes time." },
-        { name: "Verbal Reasoning", icon: "📖", time: 45, questions: 23,
-          types: ["Critical Reasoning: strengthen, weaken, assumption, flaw, inference, boldface — choose one of 5 options", "Reading Comprehension: main idea, detail, inference, application — choose one of 5 options"],
-          tips: "Sentence Correction is gone. The Focus Edition tests logical and analytical reading exclusively. Pre-thinking the answer before reading options is highly effective in CR." },
-        { name: "Data Insights", icon: "📊", time: 45, questions: 20,
-          types: ["Data Sufficiency: 'Is the data sufficient to answer the question?' — choose one of 5 standard options", "Multi-Source Reasoning: draw inferences from multiple tabs of data", "Table Analysis: sort and interpret data tables", "Graphics Interpretation: read scatter plots, bar charts, pie charts", "Two-Part Analysis: solve two related parts simultaneously"],
-          tips: "Data Sufficiency: memorise the 5 answer options (A–E). Never solve — only assess sufficiency. Multi-Source Reasoning rewards careful tab-switching and cross-referencing." }
+      "official": "https://www.mba.com/exams/gmat-focus-edition",
+      "booking": "https://www.mba.com/exams/gmat-focus-edition/register",
+      "fees": {
+        "inr": "₹24,830",
+        "usd": "$300"
+      },
+      "colour": "#B5852C",
+      "pattern": [
+        [
+          "Quantitative Reasoning",
+          "21 questions · Problem Solving only (no Data Sufficiency) · 45 min"
+        ],
+        [
+          "Verbal Reasoning",
+          "23 questions · Critical Reasoning + Reading Comprehension (no Sentence Correction) · 45 min"
+        ],
+        [
+          "Data Insights",
+          "20 questions · Data Sufficiency · Multi-Source Reasoning · Table Analysis · Graphics Interpretation · Two-Part Analysis · 45 min"
+        ]
       ],
-      scoreGuide: [
-        ["755–805", "99th percentile — exceptional; M7 median ~730"],
-        ["705–745", "Competitive for M7 and most top 15 MBA programmes"],
-        ["655–695", "Strong for top 25–50 programmes; may need strong application otherwise"],
-        ["605–645", "Below median for top programmes; many mid-tier MBAs accept this range"],
-        ["Below 600", "Below median for most ranked business schools"]
+      "sections_detail": [
+        {
+          "name": "Quantitative Reasoning",
+          "icon": "🔢",
+          "time": 45,
+          "questions": 21,
+          "types": [
+            "Problem Solving: arithmetic, algebra, geometry, word problems — choose one of 5 options"
+          ],
+          "tips": "Focuses on higher-order reasoning over computation. You may use the on-screen calculator (a change from the old GMAT). Still practice mental math — calculator dependency wastes time."
+        },
+        {
+          "name": "Verbal Reasoning",
+          "icon": "📖",
+          "time": 45,
+          "questions": 23,
+          "types": [
+            "Critical Reasoning: strengthen, weaken, assumption, flaw, inference, boldface — choose one of 5 options",
+            "Reading Comprehension: main idea, detail, inference, application — choose one of 5 options"
+          ],
+          "tips": "Sentence Correction is gone. The Focus Edition tests logical and analytical reading exclusively. Pre-thinking the answer before reading options is highly effective in CR."
+        },
+        {
+          "name": "Data Insights",
+          "icon": "📊",
+          "time": 45,
+          "questions": 20,
+          "types": [
+            "Data Sufficiency: 'Is the data sufficient to answer the question?' — choose one of 5 standard options",
+            "Multi-Source Reasoning: draw inferences from multiple tabs of data",
+            "Table Analysis: sort and interpret data tables",
+            "Graphics Interpretation: read scatter plots, bar charts, pie charts",
+            "Two-Part Analysis: solve two related parts simultaneously"
+          ],
+          "tips": "Data Sufficiency: memorise the 5 answer options (A–E). Never solve — only assess sufficiency. Multi-Source Reasoning rewards careful tab-switching and cross-referencing."
+        }
       ],
-      registration: [
+      "scoreGuide": [
+        [
+          "755–805",
+          "99th percentile — exceptional; M7 median ~730"
+        ],
+        [
+          "705–745",
+          "Competitive for M7 and most top 15 MBA programmes"
+        ],
+        [
+          "655–695",
+          "Strong for top 25–50 programmes; may need strong application otherwise"
+        ],
+        [
+          "605–645",
+          "Below median for top programmes; many mid-tier MBAs accept this range"
+        ],
+        [
+          "Below 600",
+          "Below median for most ranked business schools"
+        ]
+      ],
+      "registration": [
         "Create a mba.com account and complete your candidate profile.",
         "Select 'Register for the GMAT Focus Edition'.",
         "Choose Online (from home) or Test Centre delivery.",
@@ -418,8 +852,8 @@ window.LP_DATA = {
         "Pay $300. Rescheduling is free if done >60 days before the test.",
         "Scores available immediately upon completion (preview your score); official scores in 7 days."
       ],
-      centres: "Available at 700+ Pearson VUE test centres worldwide and as an Online proctored exam. In India: Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Kolkata, Pune, Ahmedabad.",
-      commonMistakes: [
+      "centres": "Available at 700+ Pearson VUE test centres worldwide and as an Online proctored exam. In India: Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Kolkata, Pune, Ahmedabad.",
+      "commonMistakes": [
         "Using the calculator for Data Sufficiency — DS is not about computing, it is about sufficiency. Calculator use on DS is a red flag for conceptual misunderstanding.",
         "Forgetting the 5 DS answer options — not knowing them cold wastes critical seconds.",
         "Confusing Inference with Must be True in CR — GMAT inferences must follow necessarily, not merely probably.",
@@ -427,12 +861,1328 @@ window.LP_DATA = {
         "Applying Sentence Correction instincts to Verbal — this section has none. Every Verbal question is CR or RC.",
         "Not reviewing the Score Preview — you can cancel your score before it is reported (costs nothing)."
       ],
-      faqs: [
-        ["What happened to GMAT Classic?", "GMAC retired the GMAT (Classic) in February 2024. The GMAT Focus Edition is now the only version. It does not include Sentence Correction or an Analytical Writing section."],
-        ["GMAT Focus or GRE for MBA?", "Most top MBA programmes accept both. GMAT Focus is specifically designed for management education and its Data Insights section is unique. GRE is preferred by candidates applying to joint degree or non-business programmes simultaneously."],
-        ["Can I choose section order?", "Yes — on test day you can choose the order of the three sections. This is a key strategy decision; most coaches recommend starting with your strongest section."],
-        ["How many attempts are allowed?", "5 attempts per 12 months, 8 lifetime maximum. After a failed attempt you must wait 16 days before retaking."],
-        ["What is the Score Preview?", "After finishing, you see your unofficial score. You choose to Accept (score is reported) or Cancel (score is not sent anywhere). This choice is free and must be made immediately after the test."]
+      "faqs": [
+        [
+          "What happened to GMAT Classic?",
+          "GMAC retired the GMAT (Classic) in February 2024. The GMAT Focus Edition is now the only version. It does not include Sentence Correction or an Analytical Writing section."
+        ],
+        [
+          "GMAT Focus or GRE for MBA?",
+          "Most top MBA programmes accept both. GMAT Focus is specifically designed for management education and its Data Insights section is unique. GRE is preferred by candidates applying to joint degree or non-business programmes simultaneously."
+        ],
+        [
+          "Can I choose section order?",
+          "Yes — on test day you can choose the order of the three sections. This is a key strategy decision; most coaches recommend starting with your strongest section."
+        ],
+        [
+          "How many attempts are allowed?",
+          "5 attempts per 12 months, 8 lifetime maximum. After a failed attempt you must wait 16 days before retaking."
+        ],
+        [
+          "What is the Score Preview?",
+          "After finishing, you see your unofficial score. You choose to Accept (score is reported) or Cancel (score is not sent anywhere). This choice is free and must be made immediately after the test."
+        ]
+      ]
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo English Test",
+      "short": "DET",
+      "full": "Duolingo English Test",
+      "body": "Duolingo Inc.",
+      "tagline": "From home · 60 minutes · $65",
+      "blurb": "Adaptive online English proficiency test taken at home in under an hour. Accepted by 5,500+ universities including Yale, Columbia, NYU, MIT, and the University of Toronto.",
+      "duration": "1h",
+      "score": "10–160",
+      "sections": 2,
+      "mocks": 60,
+      "streams": [
+        "Standard"
+      ],
+      "official": "https://englishtest.duolingo.com/",
+      "booking": "https://englishtest.duolingo.com/applicants",
+      "fees": {
+        "inr": "₹5,000–5,400",
+        "usd": "$65"
+      },
+      "colour": "#4F8B2F",
+      "pattern": [
+        [
+          "Adaptive Test",
+          "Mixed reading, listening, speaking, writing tasks · 45 min (adaptive difficulty)"
+        ],
+        [
+          "Video Interview + Writing Sample",
+          "Open-ended unscored video + writing responses · 10 min"
+        ],
+        [
+          "Results",
+          "Certified scores in ≤48 hours · Overall score + subscores for literacy, comprehension, conversation, production"
+        ]
+      ],
+      "sections_detail": [
+        {
+          "name": "Adaptive Test",
+          "icon": "🤖",
+          "time": 45,
+          "questions": 0,
+          "types": [
+            "Read and Complete: fill missing letters in a word",
+            "Read Aloud: read a sentence aloud",
+            "Listen and Type: transcribe spoken audio",
+            "Read and Select: select real English words from a list",
+            "Write About the Photo: describe an image in 1 sentence",
+            "Speak About the Photo: describe an image aloud (30 sec)",
+            "Listen and Respond: respond to a question about an audio clip",
+            "Read Aloud (long): read a paragraph aloud",
+            "Writing Sample: write on a prompted topic (≥50 words)",
+            "Speaking Sample: speak on a prompted topic (≥30 sec)"
+          ],
+          "tips": "The test adapts — harder questions mean higher potential scores. Do not rush; accuracy matters more than speed on word-level tasks."
+        },
+        {
+          "name": "Video Interview",
+          "icon": "🎥",
+          "time": 10,
+          "questions": 2,
+          "types": [
+            "Unscored open-ended video question (sent to institutions as supplemental information)",
+            "Unscored writing sample"
+          ],
+          "tips": "Although unscored, institutions do view the video interview. Speak clearly, confidently, and on-topic."
+        }
+      ],
+      "scoreGuide": [
+        [
+          "140–160",
+          "Proficiency equivalent to IELTS 8–9, TOEFL 110+"
+        ],
+        [
+          "120–135",
+          "Equivalent to IELTS 7–7.5, TOEFL 94–109"
+        ],
+        [
+          "100–115",
+          "Equivalent to IELTS 6.5–7, TOEFL 80–93"
+        ],
+        [
+          "80–95",
+          "Equivalent to IELTS 6–6.5, TOEFL 65–79"
+        ],
+        [
+          "60–75",
+          "Below most university thresholds"
+        ]
+      ],
+      "registration": [
+        "Create a Duolingo account at englishtest.duolingo.com.",
+        "Verify your identity with a government ID.",
+        "Download the secure browser or use the web app.",
+        "Schedule a session — tests can be started within minutes of registration.",
+        "Pay $65 by credit/debit card.",
+        "Sit the test in a quiet room with a working webcam, microphone and stable internet.",
+        "Send certified results to institutions for free from your dashboard."
+      ],
+      "centres": "No test centre needed — taken entirely from home. Requires a supported laptop or desktop with webcam and microphone.",
+      "commonMistakes": [
+        "Not practising Read Aloud sufficiently — pronunciation clarity matters significantly.",
+        "Submitting very short responses to Writing Sample and Speaking Sample — both need substantive content.",
+        "Having background noise during the test — this can trigger a flag and invalidate results.",
+        "Leaving during the adaptive section — any disruption is flagged.",
+        "Not using all available time on Speaking prompts — 30 seconds minimum is expected."
+      ],
+      "faqs": [
+        [
+          "Is DET accepted by top universities?",
+          "Yes — MIT, Yale, Columbia, NYU, Carnegie Mellon and thousands more. However, some programmes still require IELTS or TOEFL. Always verify with your specific programme."
+        ],
+        [
+          "How adaptive is the test?",
+          "The adaptive engine adjusts difficulty based on each answer. Answering harder questions correctly leads to a higher final score. You will likely see items across a wide range of difficulty."
+        ],
+        [
+          "What equipment is needed?",
+          "A quiet room with no other people, a laptop or desktop with a working front-facing camera and microphone, and a reliable internet connection. Tablets and phones are not supported."
+        ],
+        [
+          "Can I retake if I fail?",
+          "You can take the test up to twice per 30-day period."
+        ]
+      ]
+    },
+    {
+      "id": "celpip",
+      "name": "CELPIP",
+      "short": "CELPIP",
+      "full": "Canadian English Language Proficiency Index Programme",
+      "body": "Paragon Testing Enterprises (UBC)",
+      "tagline": "Canada PR &amp; citizenship",
+      "blurb": "Designated by Immigration, Refugees and Citizenship Canada (IRCC) for permanent residence and citizenship applications. All sections are computer-delivered using Canadian English contexts and accents.",
+      "duration": "3h",
+      "score": "1–12",
+      "sections": 4,
+      "mocks": 60,
+      "streams": [
+        "General",
+        "General LS"
+      ],
+      "official": "https://www.celpip.ca/",
+      "booking": "https://www.celpip.ca/register/",
+      "fees": {
+        "inr": "₹18,000–20,000",
+        "usd": "$215–240"
+      },
+      "colour": "#C8501F",
+      "pattern": [
+        [
+          "Listening",
+          "6 parts (problem solving, daily-life conversation, information, news item, discussion, viewpoints) · 38 questions · 47–55 min"
+        ],
+        [
+          "Reading",
+          "4 parts (correspondence, diagram/chart, information, viewpoints) · 38 questions · 55–64 min"
+        ],
+        [
+          "Writing",
+          "Task 1: Email (150–200 words, 27 min) + Task 2: Survey response (150–200 words, 26 min) · 53 min total"
+        ],
+        [
+          "Speaking",
+          "8 tasks (giving advice, personal experience, describing a scene, predictions, comparing & persuading, difficult situation, opinions, unusual situation) · ~15–20 min"
+        ]
+      ],
+      "sections_detail": [
+        {
+          "name": "Listening",
+          "icon": "🎧",
+          "time": 50,
+          "questions": 38,
+          "types": [
+            "Part 1: Listening to Problem Solving",
+            "Part 2: Listening to a Daily Life Conversation",
+            "Part 3: Listening for Information",
+            "Part 4: Listening to a News Item",
+            "Part 5: Listening to a Discussion",
+            "Part 6: Listening to Viewpoints"
+          ],
+          "tips": "All audio features Canadian accents and Canadian cultural references. Familiarise yourself with Canadian English pronunciation and vocabulary."
+        },
+        {
+          "name": "Reading",
+          "icon": "📖",
+          "time": 55,
+          "questions": 38,
+          "types": [
+            "Part 1: Reading correspondence (email/letter)",
+            "Part 2: Reading to apply information from a diagram",
+            "Part 3: Reading for information from articles",
+            "Part 4: Reading for viewpoints and opinions"
+          ],
+          "tips": "Part 4 is the most time-pressured. Practice reading opinion pieces quickly and identifying the writer's position."
+        },
+        {
+          "name": "Writing",
+          "icon": "✍️",
+          "time": 53,
+          "questions": 2,
+          "types": [
+            "Task 1: Email — write an email in response to a given situation (150–200 words)",
+            "Task 2: Survey response — respond to two open-ended questions (150–200 words total)"
+          ],
+          "tips": "Use the CELPIP writing scoring rubric: Task Fulfilment, Vocabulary, Readability, and Conventions. Write in a friendly, Canadian-casual register for emails."
+        },
+        {
+          "name": "Speaking",
+          "icon": "🎤",
+          "time": 18,
+          "questions": 8,
+          "types": [
+            "Task 1: Giving Advice (30s prep, 90s response)",
+            "Task 2: Talking about a Personal Experience (30s/60s)",
+            "Task 3: Describing a Scene (30s/60s)",
+            "Task 4: Making Predictions (30s/60s)",
+            "Task 5: Comparing and Persuading (60s/60s)",
+            "Task 6: Dealing with a Difficult Situation (60s/60s)",
+            "Task 7: Expressing Opinions (30s/90s)",
+            "Task 8: Describing an Unusual Situation (30s/60s)"
+          ],
+          "tips": "All speaking responses are recorded and scored by raters. Organise your response with a clear opening, 2–3 supporting points, and a conclusion."
+        }
+      ],
+      "scoreGuide": [
+        [
+          "10–12",
+          "Advanced proficiency — exceeds most immigration requirements"
+        ],
+        [
+          "9",
+          "Meets Express Entry CLB 9 requirement for high CRS points"
+        ],
+        [
+          "7–8",
+          "Meets minimum for most PR pathways (CLB 7–8)"
+        ],
+        [
+          "5–6",
+          "Below common immigration thresholds; suitable for some work permits"
+        ],
+        [
+          "1–4",
+          "Limited proficiency"
+        ]
+      ],
+      "registration": [
+        "Register at celpip.ca — create an account.",
+        "Select CELPIP-General (PR) or CELPIP-General LS (citizenship).",
+        "Choose a test centre (Canada or select international cities).",
+        "Upload valid government photo ID.",
+        "Pay the registration fee. Results typically within 4–5 business days."
+      ],
+      "centres": "Primarily in Canada. Limited centres internationally — check celpip.ca for current locations. No Home Edition available.",
+      "commonMistakes": [
+        "Not targeting the word count — Writing below 150 words is heavily penalised.",
+        "Using British English spellings — CELPIP uses Canadian English (colour, honour — same as British; program — same as American). Do not mix.",
+        "Forgetting to address all three bullet points in the email task.",
+        "Speaking too formally — CELPIP tests practical, everyday Canadian English, not academic English.",
+        "Confusing CELPIP-General with CELPIP-General LS — wrong test means invalid score for your application."
+      ],
+      "faqs": [
+        [
+          "CELPIP vs IELTS for Canada PR?",
+          "Both are accepted by IRCC. CELPIP uses Canadian contexts and accents, making it more relevant for Canada. It is also fully computer-based. The choice often comes down to familiarity with the format."
+        ],
+        [
+          "What CLB level do I need?",
+          "Federal Skilled Worker: CLB 7 (score of 7 in all bands). CEC: CLB 7 (speaking/listening), CLB 5 (reading/writing) for NOC 0/A; CLB 5 all bands for NOC B. Always verify with the IRCC website."
+        ],
+        [
+          "Is CELPIP accepted for citizenship?",
+          "CELPIP-General (not General LS) or CELPIP-General LS — confirm which version your citizenship application requires with IRCC before booking."
+        ],
+        [
+          "Scores valid for how long?",
+          "2 years from test date for immigration purposes."
+        ]
+      ]
+    },
+    {
+      "id": "sat",
+      "name": "SAT",
+      "short": "SAT",
+      "full": "Scholastic Assessment Test (Digital)",
+      "body": "College Board",
+      "tagline": "US university admissions gateway",
+      "blurb": "The SAT is a standardized test used for admissions to most four-year colleges and universities in the United States. The digital SAT, introduced in 2024, is computer-adaptive, shorter, and faster than its paper predecessor. It assesses reading comprehension, writing, and mathematical reasoning—skills core to college success. For international students, the SAT is often required or recommended alongside academic transcripts and essays.",
+      "duration": "2h 14m",
+      "score": "400–1600",
+      "sections": 2,
+      "mocks": 6,
+      "streams": [
+        "University Admissions"
+      ],
+      "official": "https://www.collegeboard.org/sat",
+      "booking": "https://www.collegeboard.org/register",
+      "fees": {
+        "inr": "₹10,000–₹14,000",
+        "usd": "$60"
+      },
+      "colour": "#2E5090",
+      "pattern": [
+        [
+          "Reading & Writing",
+          "Grammar and comprehension passages · 52 questions across two modules · ~65 mins"
+        ],
+        [
+          "Math",
+          "Algebra, advanced math, geometry, trigonometry · 44 questions across two modules · ~70 mins"
+        ]
+      ],
+      "sections_detail": [
+        {
+          "name": "Reading & Writing",
+          "icon": "📖",
+          "time": 65,
+          "questions": 52,
+          "types": [
+            "Multiple choice reading passages",
+            "Grammar and syntax questions",
+            "Vocabulary in context",
+            "Inference and comprehension"
+          ],
+          "tips": "Read passages once for main idea, then return for detail questions. Grammar questions often test subtle distinctions; eliminate obviously wrong answers first. Manage time: spend 1 min per question on average."
+        },
+        {
+          "name": "Math",
+          "icon": "🔢",
+          "time": 70,
+          "questions": 44,
+          "types": [
+            "Algebra and linear equations",
+            "Advanced functions and polynomials",
+            "Geometry and trigonometry",
+            "Data analysis and statistics"
+          ],
+          "tips": "Calculator allowed for all sections on digital SAT. Show your work even on computer tests to catch errors. Prioritize easy questions first; return to harder ones. Units and variables must match in final answers."
+        }
+      ],
+      "scoreGuide": [
+        [
+          "400–600",
+          "Below average; limited college readiness. Many open-admission or community colleges may accept; limited scholarship opportunities at selective universities."
+        ],
+        [
+          "600–800",
+          "Average to slightly above; competitive for regional universities and state schools. Some scholarships available at less selective institutions."
+        ],
+        [
+          "800–1000",
+          "Above average; acceptable for many public and private universities. Competitive for merit aid at mid-tier institutions."
+        ],
+        [
+          "1000–1200",
+          "Strong score; competitive for selective universities (top 100 US colleges). Good scholarship and financial-aid prospects."
+        ],
+        [
+          "1200–1400",
+          "Excellent; meets or exceeds expectations at highly selective institutions (Ivy League, Stanford, MIT, etc.). Outstanding scholarship and admission odds."
+        ],
+        [
+          "1400–1600",
+          "Superior; places you in the top percentile. Competitive for top universities and full-ride scholarships."
+        ]
+      ],
+      "registration": [
+        "Register at collegeboard.org",
+        "create an account, select test date and location (usually in India via international test centres), and pay the fee",
+        "Registration opens 8–9 months before test date"
+      ],
+      "centres": "The digital SAT is offered at authorized test centres in major Indian cities (Delhi, Mumbai, Bangalore, Hyderabad, Pune, Chennai) multiple times per year; online proctoring is not available.",
+      "commonMistakes": [
+        "Spending too long on hard math questions; the adaptive algorithm adjusts difficulty; skip and return rather than getting stuck.",
+        "Not reading passages actively; underline main ideas and claim-supporting evidence; passive reading leads to careless errors.",
+        "Calculator errors on SAT Math; always double-check key strokes and intermediate steps, especially on multi-step problems.",
+        "Grammar parallelism oversights; consistency in verb tense, structure, and list format is tested repeatedly; drill parallel-structure drills.",
+        "Rushing through reading; many students misread nuance in tone and perspective questions; slow down and re-read once before answering."
+      ],
+      "faqs": [
+        [
+          "Is the digital SAT harder than the paper version?",
+          "The digital SAT is not inherently harder—it is adaptive. Your second module's difficulty depends on your first-module performance. Scores are equated, so a digital 1200 is comparable to a paper 1200 from previous years."
+        ],
+        [
+          "How many times can I take the SAT?",
+          "You can take it as many times as you wish. Most selective US universities consider your highest score or superscore (best reading and best math across all attempts)."
+        ],
+        [
+          "Is SAT or ACT better for college admissions?",
+          "Both are equally accepted by US colleges. SAT focuses on reading, writing, and math reasoning; ACT includes an English section plus Science. Choose based on your strengths. Many students take both and submit the higher score."
+        ],
+        [
+          "What is a good SAT score for Ivy League universities?",
+          "Top universities (Harvard, Yale, Princeton) typically admit students with SAT scores 1470–1570+. A 1500+ significantly boosts admission odds; below 1400 is a disadvantage even with stellar essays."
+        ],
+        [
+          "How is SAT Math different from high-school math?",
+          "SAT Math tests application and reasoning, not advanced calculus. Algebra, geometry, and statistics dominate. Focus on word problems, multi-step reasoning, and interpreting data—not memorization."
+        ]
+      ]
+    },
+    {
+      "id": "act",
+      "name": "ACT",
+      "short": "ACT",
+      "full": "American College Test",
+      "body": "ACT Inc.",
+      "tagline": "US college admissions alternative",
+      "blurb": "The ACT is a standardized assessment widely accepted for admission to US colleges and universities, particularly strong in the Midwest and South. Unlike the SAT, the ACT includes an English section (grammar and rhetoric), Mathematics, Reading, Science, and an optional Writing component. The test measures college readiness across a broad curriculum and is known for its Science section, which evaluates reasoning with scientific data rather than background knowledge.",
+      "duration": "2h 55m (without Writing); 3h 35m (with Writing)",
+      "score": "1–36 (composite); 1–36 per section",
+      "sections": 4,
+      "mocks": 12,
+      "streams": [
+        "University Admissions"
+      ],
+      "official": "https://www.act.org",
+      "booking": "https://www.act.org/register",
+      "fees": {
+        "inr": "₹12,000–₹16,000",
+        "usd": "$70–$85"
+      },
+      "colour": "#D21F3D",
+      "pattern": [
+        [
+          "English",
+          "Grammar, punctuation, rhetoric, and style · 75 questions · 45 mins"
+        ],
+        [
+          "Mathematics",
+          "Pre-algebra, algebra, geometry, trigonometry · 60 questions · 60 mins"
+        ],
+        [
+          "Reading",
+          "Four passages (narrative, social science, humanities, natural science) · 40 questions · 35 mins"
+        ],
+        [
+          "Science",
+          "Data interpretation, research summaries, conflicting viewpoints · 40 questions · 35 mins"
+        ]
+      ],
+      "sections_detail": [
+        {
+          "name": "English",
+          "icon": "✍️",
+          "time": 45,
+          "questions": 75,
+          "types": [
+            "Grammar and punctuation",
+            "Sentence structure",
+            "Rhetoric and style",
+            "Word choice"
+          ],
+          "tips": "ACT English tests convention more than nuance. Eliminate obviously wrong answers; look for conciseness and clarity. Punctuation questions favour minimal punctuation unless adding clarity."
+        },
+        {
+          "name": "Mathematics",
+          "icon": "🔢",
+          "time": 60,
+          "questions": 60,
+          "types": [
+            "Pre-algebra and elementary algebra",
+            "Intermediate algebra and coordinate geometry",
+            "Plane geometry and trigonometry"
+          ],
+          "tips": "ACT Math requires speed; calculators are allowed. Skip hard questions early and return later. Word problems dominate; translate carefully into equations before solving."
+        },
+        {
+          "name": "Reading",
+          "icon": "📖",
+          "time": 35,
+          "questions": 40,
+          "types": [
+            "Main idea and inference",
+            "Detail and supporting evidence",
+            "Character motive and tone",
+            "Vocabulary in context"
+          ],
+          "tips": "Read passages actively once, then answer questions. ACT reading tests literal comprehension more than deep inference. Manage time: 8–9 minutes per passage."
+        },
+        {
+          "name": "Science",
+          "icon": "🔬",
+          "time": 35,
+          "questions": 40,
+          "types": [
+            "Data representation (graphs, tables)",
+            "Research summaries (experiment descriptions)",
+            "Conflicting viewpoints (competing theories)"
+          ],
+          "tips": "Science does not require subject knowledge; tables and graphs tell the story. Read axes carefully, compare trends, and understand what each experiment tests. Conflicting viewpoints: identify the key disagreement, not every detail."
+        }
+      ],
+      "scoreGuide": [
+        [
+          "1–12",
+          "Below average; far below college readiness. Limited college options; consider additional prep or community college pathway."
+        ],
+        [
+          "13–20",
+          "Below to average; below college readiness for selective schools. Acceptable at regional and open-admission colleges."
+        ],
+        [
+          "21–27",
+          "Average to above; meets college readiness benchmarks. Competitive for public universities and many private institutions."
+        ],
+        [
+          "28–32",
+          "Strong; meets all college readiness benchmarks. Competitive for selective universities (top 100); scholarship opportunities."
+        ],
+        [
+          "33–36",
+          "Excellent; top percentile. Highly competitive for elite universities (Ivy League, Stanford, MIT); full-ride scholarship prospects."
+        ]
+      ],
+      "registration": [
+        "Register at act.org",
+        "create an account, select test date, location (authorized international test centres in India), and pay",
+        "Test dates are offered multiple times yearly (usually February, April, June, July, September, October, December)"
+      ],
+      "centres": "ACT is offered at international test centres in major Indian cities (Delhi, Mumbai, Bangalore, Hyderabad, Pune, Chennai); online proctoring is not available. Test dates vary; plan 2–3 months ahead.",
+      "commonMistakes": [
+        "Neglecting the Science section; students underprepare because they assume science background is required—graphs and reasoning are what matter, not vocabulary.",
+        "Mismanaging English time; 75 questions in 45 minutes is tight; mark ambiguous answers and return quickly rather than overthinking.",
+        "Reading too passively in the Reading section; ACT tests literal comprehension; jot notes on passage margins; refer back to text for detail.",
+        "Skipping ACT Writing practice; the Writing section (optional but recommended for selective colleges) requires an essay in 40 minutes; plan, draft, review.",
+        "Not checking unit consistency in Math; 'feet to inches' or 'miles to kilometres' errors are common; always verify your final answer's units."
+      ],
+      "faqs": [
+        [
+          "Should I take the ACT with or without Writing?",
+          "Most selective universities no longer require Writing. If you are applying to colleges that recommend it, take it. Otherwise, skip Writing to save time. Check your target college's admissions website."
+        ],
+        [
+          "How is ACT Science different from SAT science reasoning?",
+          "ACT Science includes a full section (40 questions, 35 mins) testing data interpretation, experiments, and competing theories. SAT has no dedicated Science section; science reasoning is embedded in Math and Reading."
+        ],
+        [
+          "Can I mix-and-match ACT and SAT scores?",
+          "Most colleges accept one or the other, not both. Superscore policies (best section scores across dates) apply per test—you cannot combine an SAT Reading score with an ACT Math score."
+        ],
+        [
+          "What is a competitive ACT score for Ivy League?",
+          "Top universities typically admit students with ACT 33–36. A 34+ is competitive; below 32 is a disadvantage at highly selective schools, though not disqualifying with strong essays and GPA."
+        ],
+        [
+          "Is ACT easier than SAT?",
+          "This varies by student. ACT emphasizes speed and breadth; SAT emphasizes depth and reasoning. Those comfortable with quick recall often prefer ACT; those who like to think deeply may prefer SAT. Try practice tests of both to decide."
+        ]
+      ]
+    },
+    {
+      "id": "oet",
+      "name": "OET",
+      "short": "OET",
+      "full": "Occupational English Test",
+      "body": "Cambridge",
+      "tagline": "Healthcare professionals' English",
+      "blurb": "The Occupational English Test (OET) is a profession-specific English language proficiency assessment designed exclusively for healthcare workers seeking registration or employment in English-speaking countries. Developed by Cambridge, OET evaluates your ability to communicate in real clinical and occupational scenarios. It is the preferred test for nurses, doctors, dentists, pharmacists, physiotherapists, and allied health professionals applying to the UK, Australia, Ireland, New Zealand, and Singapore.",
+      "duration": "3h",
+      "score": "A–E grades",
+      "sections": 4,
+      "mocks": 6,
+      "streams": [
+        "Healthcare Registration"
+      ],
+      "official": "https://www.oet.com",
+      "booking": "https://www.oet.com/booking",
+      "fees": {
+        "inr": "₹15,000–₹18,000",
+        "usd": "$200–$250"
+      },
+      "colour": "#00A86B",
+      "pattern": [
+        [
+          "Listening",
+          "Three Part A conversations (doctor–patient, healthcare worker interaction) · Part B note-taking from recorded consultation · 45 mins"
+        ],
+        [
+          "Reading",
+          "Part A case notes analysis · Part B medical journals and reports · Part C authentic healthcare texts — 60 mins"
+        ],
+        [
+          "Writing",
+          "Referral letters, discharge summaries, or case notes based on scenario · professional, formal tone — 45 mins"
+        ],
+        [
+          "Speaking",
+          "One-on-one interaction with role-playing examiner (patient/colleague scenario) · 20 mins"
+        ]
+      ],
+      "sections_detail": [
+        {
+          "name": "Listening",
+          "icon": "🎧",
+          "time": 45,
+          "questions": 42,
+          "types": [
+            "Part A: Healthcare conversations (multiple choice)",
+            "Part B: Note-taking from consultation",
+            "Part C: Summary from recorded text"
+          ],
+          "tips": "Note-taking is critical; jot down key points (diagnoses, medications, dates) during the audio. Listen for medical abbreviations and clarifications healthcare workers use in real settings."
+        },
+        {
+          "name": "Reading",
+          "icon": "📖",
+          "time": 60,
+          "questions": 42,
+          "types": [
+            "Part A: Identify errors in case notes",
+            "Part B: Multiple choice on journal articles",
+            "Part C: Matching tasks on health information"
+          ],
+          "tips": "Part A demands careful proofreading (look for medical inaccuracies, not spelling). Skim journals first before diving into detail questions; use headings and abstracts to understand context."
+        },
+        {
+          "name": "Writing",
+          "icon": "✍️",
+          "time": 45,
+          "questions": 1,
+          "types": [
+            "Referral letter",
+            "Discharge summary",
+            "Case notes"
+          ],
+          "tips": "Follow professional healthcare writing conventions: concise, objective tone; use bullet points where appropriate. Include all key clinical details; examiners grade on accuracy and clarity, not length."
+        },
+        {
+          "name": "Speaking",
+          "icon": "🎤",
+          "time": 20,
+          "questions": 1,
+          "types": [
+            "Role-play scenario with examiner",
+            "Patient interaction or colleague consultation"
+          ],
+          "tips": "Stay in role; listen carefully to the examiner's responses and adapt. Use clinical terminology naturally; clarity and accuracy matter more than speed."
+        }
+      ],
+      "scoreGuide": [
+        [
+          "Grade A",
+          "Expert user; minimal errors, clear communication. Meets all regulatory body requirements (GMC, NMC, AHPRA). Highly competitive for premium positions."
+        ],
+        [
+          "Grade B",
+          "Strong user; occasional errors, effective communication. Accepted by most UK, Australian, and Irish healthcare regulators; meets standard registration thresholds."
+        ],
+        [
+          "Grade C",
+          "Competent user; some errors, functional communication in familiar contexts. Meets entry requirements for many positions; may need support in complex scenarios."
+        ],
+        [
+          "Grade D",
+          "Limited user; frequent errors, communication sometimes unclear. Below most regulatory registration standards; additional training often required."
+        ],
+        [
+          "Grade E",
+          "Minimal user; significant difficulties. Does not meet professional registration requirements in any English-speaking country."
+        ]
+      ],
+      "registration": [
+        "Register via oet.com",
+        "select your test language (English, Spanish, French), profession (nursing, medicine, etc.), and preferred date/location",
+        "Test centres are in India and available online"
+      ],
+      "centres": "OET is available at authorized centres in Delhi, Mumbai, Bangalore, Hyderabad, Chennai, and other major cities, plus online options with proctoring and ID verification.",
+      "commonMistakes": [
+        "Missing clinical details in writing tasks; examiners expect accurate medical terminology and complete patient information, not vague summaries.",
+        "Speaking too quickly or using non-standard pronunciation of medical terms; clarity trumps speed; practise drug names and anatomical terms aloud.",
+        "Ignoring the scenario context in role-play; the examiner gives cues; listen and adapt rather than sticking to a memorized speech.",
+        "Confusing similar medical terms (e.g., 'hypertension' vs 'hypotension'); accuracy is non-negotiable in healthcare; practise disambiguation in context.",
+        "Not managing reading time; there are 42 questions in 60 minutes; skim Part A case notes first, then tackle other sections systematically."
+      ],
+      "faqs": [
+        [
+          "Which healthcare professions can take OET?",
+          "OET is available for nurses, doctors, dentists, pharmacists, physiotherapists, veterinarians, and allied health professionals. Select your profession during registration to receive scenario-specific tasks."
+        ],
+        [
+          "Is OET accepted by AHPRA (Australia)?",
+          "Yes, OET is one of the approved English tests for nursing registration with AHPRA. A Grade B or higher generally meets requirements; check the latest AHPRA guidelines for your profession."
+        ],
+        [
+          "How long are OET scores valid?",
+          "OET scores are valid for 3 years from the test date for professional registration purposes. Most regulatory bodies honour the full 3-year window."
+        ],
+        [
+          "What is the difference between OET and IELTS for healthcare professionals?",
+          "OET is profession-specific with clinical scenarios; IELTS is general. OET is preferred by healthcare regulators (NMC, GMC, AHPRA) because it tests real-world medical communication. IELTS may be accepted as a fallback, but OET is the standard."
+        ],
+        [
+          "How is OET scored differently across professions?",
+          "All professions are graded A–E on the same scale, but the content of listening, reading, and writing tasks reflects your profession (e.g., a nurse's scenarios differ from a doctor's). Speaking is one-on-one with an examiner and graded on clinical communication, not profession-specific variation."
+        ]
+      ]
+    },
+    {
+      "id": "cambridge",
+      "name": "Cambridge English",
+      "short": "Cambridge",
+      "full": "Cambridge English Qualifications (B2 First & C1 Advanced)",
+      "body": "Cambridge Assessment English",
+      "tagline": "Global English proficiency qualifications",
+      "blurb": "Cambridge English Qualifications are globally recognized credentials that assess English proficiency at multiple levels. B2 First and C1 Advanced are the most popular for university admission, professional purposes, and immigration. Administered by Cambridge Assessment English, these exams evaluate reading, writing, listening, and speaking in realistic contexts. Cambridge certificates are valid for life and accepted by thousands of universities, employers, and government agencies worldwide, including for skilled immigration to UK and other English-speaking countries.",
+      "duration": "3h–3h 40m (varies by exam)",
+      "score": "Cambridge Scale 140–230 (A1–C2); B2 First 140–190, C1 Advanced 180–230",
+      "sections": 4,
+      "mocks": 0,
+      "guideOnly": true,
+      "mockAlias": "ielts",
+      "streams": [
+        "University Admission",
+        "Professional",
+        "Immigration"
+      ],
+      "official": "https://www.cambridgeenglish.org",
+      "booking": "https://www.cambridgeenglish.org/find-a-test/",
+      "fees": {
+        "inr": "₹10,000–₹14,000",
+        "usd": "$40–$90"
+      },
+      "colour": "#1A5490",
+      "pattern": [
+        [
+          "Reading & Use of English (B2 First) / Reading (C1 Advanced)",
+          "Multiple choice, cloze, word formation, matching · 60–75 mins"
+        ],
+        [
+          "Writing (B2 First) / Writing (C1 Advanced)",
+          "Email/letter and essay/review · 80 mins"
+        ],
+        [
+          "Listening",
+          "Conversations, monologues, interviews · multiple choice · 40 mins"
+        ],
+        [
+          "Speaking",
+          "Interview, topic discussion, pair conversation · ~10–15 mins"
+        ]
+      ],
+      "sections_detail": [
+        {
+          "name": "Reading & Use of English (B2) / Reading (C1)",
+          "icon": "📖",
+          "time": 75,
+          "questions": 52,
+          "types": [
+            "Multiple choice (text comprehension)",
+            "Cloze (fill grammar/vocabulary)",
+            "Word formation (morphology)",
+            "Open cloze",
+            "Matching headings to paragraphs"
+          ],
+          "tips": "B2 emphasizes functional language and everyday scenarios. C1 tests sophisticated vocabulary and complex structures. Skim first, then return for details. Manage time: allocate time proportionally per task type."
+        },
+        {
+          "name": "Writing",
+          "icon": "✍️",
+          "time": 80,
+          "questions": 2,
+          "types": [
+            "Formal email/letter + essay (B2 First)",
+            "Formal/informal essay + review/article (C1 Advanced)"
+          ],
+          "tips": "B2: clear structure, appropriate register (formal vs. informal). C1: sophisticated argument, nuanced tone. Both: plan 5 mins, draft 30 mins, review 5 mins per task. Handwriting must be legible (computer tests now available)."
+        },
+        {
+          "name": "Listening",
+          "icon": "🎧",
+          "time": 40,
+          "questions": 30,
+          "types": [
+            "Multiple choice (short extracts)",
+            "Multiple choice (longer conversations/monologues)",
+            "Matching speakers to statements",
+            "Note-taking/short-answer"
+          ],
+          "tips": "Listen once (no replay on some sections). Take notes on key points. Both B2 and C1 use authentic English; accents, speed, and background noise vary. Practice with diverse audio sources."
+        },
+        {
+          "name": "Speaking",
+          "icon": "🎤",
+          "time": 12,
+          "questions": 4,
+          "types": [
+            "Interview with examiner (personal questions)",
+            "Individual topic discussion (2–3 mins)",
+            "Pair conversation (cooperative task, B2) or Discussion (C1)"
+          ],
+          "tips": "B2: speak clearly on familiar topics; correct minor errors naturally. C1: demonstrate range, nuance, spontaneity. Both: engage with the examiner; it's a conversation, not a monologue."
+        }
+      ],
+      "scoreGuide": [
+        [
+          "140–159 (Cambridge Scale, B2 First)",
+          "Pass or below threshold; limited universities/employers accept. May not meet visa/immigration requirements."
+        ],
+        [
+          "160–179 (B2 First)",
+          "Strong Pass; meets most university and employer requirements for B2 level. Acceptable for many skilled immigration programs."
+        ],
+        [
+          "180–190 (B2 First)",
+          "Excellent; exceeds B2 standard. Competitive for scholarships and premium institutions. Meets higher-level professional demands."
+        ],
+        [
+          "180–199 (C1 Advanced)",
+          "Pass or lower C1; rare; indicates mastery at upper-intermediate level. Suitable for many professional contexts."
+        ],
+        [
+          "200–230 (C1 Advanced)",
+          "Excellent C1; demonstrates near-native proficiency. Meets all advanced professional and academic requirements; competitive for top universities and leadership roles."
+        ]
+      ],
+      "registration": [
+        "Register via cambridgeenglish.org",
+        "locate your local approved test centre, select exam (B2 First or C1 Advanced), test date, and format (paper or computer)",
+        "Payment via credit card or local methods"
+      ],
+      "centres": "Cambridge English exams are offered at thousands of authorized centres worldwide. In India, major cities (Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Pune) have multiple test centres. Paper and computer-delivered options are available.",
+      "commonMistakes": [
+        "Confusing B2 First and C1 Advanced difficulty; C1 uses more sophisticated vocabulary and complex grammatical structures; choose the right level for your goals.",
+        "Overlooking the Use of English section (B2); word formation and cloze tasks test grammar/vocabulary thoroughly; drill these specific task types.",
+        "Writing without planning; examiners grade on organization and development, not just grammar; spend 5 minutes outlining before drafting.",
+        "Speaking too slowly or over-enunciating; examiners expect natural, conversational pace; over-correction of minor errors interrupts fluency.",
+        "Ignoring Cambridge-style formatting in writing (formal letters, email conventions); structure and register are graded; follow the Cambridge format guide."
+      ],
+      "faqs": [
+        [
+          "What is the difference between B2 First and C1 Advanced?",
+          "B2 First (also called FCE — First Certificate in English) tests upper-intermediate English; C1 Advanced tests advanced proficiency. B2 is suitable for most university admissions and professional roles; C1 is for demanding academic/professional environments and leadership."
+        ],
+        [
+          "How long are Cambridge English certificates valid?",
+          "Cambridge English certificates are valid for life; they do not expire. However, some employers or immigration authorities may request recent scores (within 2 years); check your specific requirement."
+        ],
+        [
+          "Is Cambridge English accepted by IELTS universities?",
+          "Cambridge English and IELTS are both from Cambridge Assessment English, but they are separate exams. Universities typically specify which test(s) they accept; confirm with your target institution."
+        ],
+        [
+          "Can I use Cambridge English for Canadian immigration?",
+          "Cambridge English (B2 First or C1 Advanced) is not on IRCC's approved list. For Canadian immigration, use IELTS, TOEFL, CELPIP, or PTE Core. Cambridge is accepted in the UK and other countries."
+        ],
+        [
+          "Is the paper exam easier than the computer exam?",
+          "Difficulty is equivalent between paper and computer formats. Computer exams are taken individually on a screen (faster feedback); paper is traditional group testing. Choose based on preference and availability."
+        ]
+      ]
+    },
+    {
+      "id": "cael",
+      "name": "CAEL",
+      "short": "CAEL",
+      "full": "Canadian Academic English Language Assessment",
+      "body": "Paragon Testing Enterprises",
+      "tagline": "Academic English for Canadian universities",
+      "blurb": "CAEL (Canadian Academic English Language Assessment) is a computer-delivered English proficiency test designed to assess the language skills international students need for success in Canadian colleges and universities. Developed by Paragon Testing Enterprises, CAEL evaluates reading, writing, listening, and speaking in authentic academic contexts, from research paper analysis to class discussions. It is recognized by most Canadian universities and is an alternative to IELTS or TOEFL for admission.",
+      "duration": "2h 45m",
+      "score": "10–90 (or CLB 0–10 equivalents)",
+      "sections": 4,
+      "mocks": 0,
+      "guideOnly": true,
+      "mockAlias": "toefl",
+      "streams": [
+        "University Admission"
+      ],
+      "official": "https://www.cael.ca",
+      "booking": "https://www.cael.ca/register",
+      "fees": {
+        "inr": "₹12,000–₹15,000",
+        "usd": "$75–$250"
+      },
+      "colour": "#009E3E",
+      "pattern": [
+        [
+          "Reading",
+          "Academic passages, journal excerpts, case studies · multiple choice and short-answer · 30 mins"
+        ],
+        [
+          "Writing",
+          "Response to academic prompt, essay based on source material · 40 mins"
+        ],
+        [
+          "Listening",
+          "Lectures, seminars, academic discussions · multiple choice and note-taking · 30 mins"
+        ],
+        [
+          "Speaking",
+          "One-on-one with examiner; discuss academic topics, summarize information · ~15 mins"
+        ]
+      ],
+      "sections_detail": [
+        {
+          "name": "Reading",
+          "icon": "📖",
+          "time": 30,
+          "questions": 20,
+          "types": [
+            "Multiple choice comprehension",
+            "Short-answer detail questions",
+            "Academic vocabulary in context",
+            "Inference from research texts"
+          ],
+          "tips": "CAEL reading is authentically academic; expect complex sentences. Skim headings and abstracts first. Mark key evidence in the passage; refer back for detail questions."
+        },
+        {
+          "name": "Writing",
+          "icon": "✍️",
+          "time": 40,
+          "questions": 1,
+          "types": [
+            "Response to an academic prompt",
+            "Synthesis of source material"
+          ],
+          "tips": "Plan before writing; structure: thesis, supporting paragraphs, conclusion. Paraphrase and cite sources properly. Academic tone is mandatory; clarity and organization matter more than length."
+        },
+        {
+          "name": "Listening",
+          "icon": "🎧",
+          "time": 30,
+          "questions": 18,
+          "types": [
+            "Lecture comprehension (multiple choice)",
+            "Note-taking from seminar discussion",
+            "Understanding academic vocabulary and tone"
+          ],
+          "tips": "Academic lectures are fast and dense; note-taking is critical. Focus on main ideas and supporting examples. Abbreviate aggressively; full sentences in notes wastes time."
+        },
+        {
+          "name": "Speaking",
+          "icon": "🎤",
+          "time": 15,
+          "questions": 1,
+          "types": [
+            "Academic conversation with examiner",
+            "Summarize lecture content",
+            "Discuss research or concepts"
+          ],
+          "tips": "Speak clearly with academic vocabulary. The examiner may ask follow-up questions; listen carefully and elaborate. Hesitation is normal; avoid unnecessary filler words ('um', 'like')."
+        }
+      ],
+      "scoreGuide": [
+        [
+          "10–30 (CLB 0–4)",
+          "Below academic readiness; significant support needed in university coursework. Likely conditional admission with English language pathway."
+        ],
+        [
+          "31–50 (CLB 5–6)",
+          "Basic academic English; some difficulty with complex courses. May be admitted with ESL support or conditional upon score improvement."
+        ],
+        [
+          "51–70 (CLB 7–8)",
+          "Proficient academic English; meets most Canadian university admission standards. No ESL support typically required; can handle mainstream coursework."
+        ],
+        [
+          "71–90 (CLB 9–10)",
+          "Advanced academic English; exceeds admission standards. Eligible for competitive scholarships and honors programs."
+        ]
+      ],
+      "registration": [
+        "Register at cael.ca",
+        "create an account, select test date (offered monthly), location (test centres in Canada and internationally), and pay",
+        "International test centres in India are available in major cities"
+      ],
+      "centres": "CAEL is offered at authorized test centres across Canada (major universities and private testing centres) and internationally including India (Delhi, Mumbai, Bangalore, Hyderabad, Pune). Online proctoring is available in select regions.",
+      "commonMistakes": [
+        "Underestimating the writing task; 40 minutes for an academic essay is tight; plan for 5 mins planning, 30 mins writing, 5 mins review.",
+        "Taking sloppy notes in Listening; abbreviations are fine, but illegible notes waste time when answering. Use a consistent shorthand system.",
+        "Speaking too fast or unclearly; academic English requires precise articulation; examiners expect clarity even at faster pace than everyday conversation.",
+        "Confusing CAEL with IELTS or TOEFL; CAEL is specifically Canadian and academic; content, timing, and section order differ significantly.",
+        "Not citing sources in the writing task; academic integrity is tested; proper paraphrasing and citation (APA or Chicago style) are expected."
+      ],
+      "faqs": [
+        [
+          "Is CAEL accepted by all Canadian universities?",
+          "Most Canadian universities accept CAEL. However, some specifically require IELTS or TOEFL; check your target university's admissions website. CAEL is particularly strong in Canadian institutions; international universities may be less familiar."
+        ],
+        [
+          "What CAEL score is needed for university admission?",
+          "Most universities require CAEL 50 (CLB 5–6) or higher for conditional/regular admission. Competitive scholarships often require 70+. Check individual institutions for specific thresholds."
+        ],
+        [
+          "How is CAEL different from IELTS for academic purposes?",
+          "CAEL is designed specifically for Canadian academic contexts; IELTS Academic is international. CAEL focuses on authentic Canadian university experiences; IELTS is broader. Both are valid, but CAEL aligns better with Canadian curriculum expectations."
+        ],
+        [
+          "Can I use CAEL to apply to US universities?",
+          "Most US universities do not recognize CAEL; they require TOEFL, IELTS, or Duolingo English Test. Some US universities with Canadian partnerships may accept CAEL; check case-by-case."
+        ],
+        [
+          "How long are CAEL scores valid?",
+          "CAEL scores are valid for 3 years from the test date for university admission. Most universities accept scores within 2 years; confirm with your institution."
+        ]
+      ]
+    },
+    {
+      "id": "tef-canada",
+      "name": "TEF Canada",
+      "short": "TEF Canada",
+      "full": "Test d'Évaluation du Français pour le Canada",
+      "body": "France Education International",
+      "tagline": "French for Canada Express Entry",
+      "blurb": "TEF Canada is an official French-language proficiency test recognized by Immigration, Refugees and Citizenship Canada (IRCC) for Express Entry and skilled immigration programs. Developed by France Education International (FEI), it assesses your ability to read, write, listen, and speak French in professional and everyday contexts. TEF Canada is essential for Francophone and bilingual immigration pathways to Canada and is scored on the NCLC (National Competency Level Classification) scale used by IRCC.",
+      "duration": "3h (core sections)",
+      "score": "NCLC 1–7 (CLB equivalents 0–10)",
+      "sections": 4,
+      "mocks": 0,
+      "guideOnly": true,
+      "langAlias": "french",
+      "streams": [
+        "Express Entry",
+        "Quebec Immigration"
+      ],
+      "official": "https://www.tefcanada.ca",
+      "booking": "https://www.tefcanada.ca/book",
+      "fees": {
+        "inr": "₹13,000–₹16,000",
+        "usd": "$80–$250"
+      },
+      "colour": "#003366",
+      "pattern": [
+        [
+          "Listening Comprehension",
+          "Conversations, announcements, narratives · 35 questions · 40 mins"
+        ],
+        [
+          "Reading Comprehension",
+          "Passages, forms, emails, articles · 50 questions · 60 mins"
+        ],
+        [
+          "Writing Expression",
+          "Email writing, short essays, response to prompt · 2 tasks · 60 mins"
+        ],
+        [
+          "Speaking Expression",
+          "Interview with examiner, role-play, presentation · ~15 mins"
+        ]
+      ],
+      "sections_detail": [
+        {
+          "name": "Listening",
+          "icon": "🎧",
+          "time": 40,
+          "questions": 35,
+          "types": [
+            "Multiple choice conversations",
+            "Short announcements",
+            "Detailed narratives",
+            "Comprehension of tone and intent"
+          ],
+          "tips": "Listen for main points and speaker intent. Multiple-choice options are plausible; eliminate obviously incorrect ones. Professional and conversational French differ; both are tested."
+        },
+        {
+          "name": "Reading",
+          "icon": "📖",
+          "time": 60,
+          "questions": 50,
+          "types": [
+            "Multiple choice passages",
+            "Matching headings to texts",
+            "Fill-in blanks (vocabulary/grammar)",
+            "Comprehension of administrative documents"
+          ],
+          "tips": "Skim for overall meaning before detail. Canadian French includes Québécois vocabulary; familiarize yourself with regional terms. Manage time: allocate 1–1.5 mins per question on average."
+        },
+        {
+          "name": "Writing",
+          "icon": "✍️",
+          "time": 60,
+          "questions": 2,
+          "types": [
+            "Email writing (professional or personal)",
+            "Short essay or narrative"
+          ],
+          "tips": "Structure emails clearly: greeting, purpose, details, closing. Essays should have introduction, body, conclusion. Accuracy and coherence matter; length is less critical than quality."
+        },
+        {
+          "name": "Speaking",
+          "icon": "🎤",
+          "time": 15,
+          "questions": 1,
+          "types": [
+            "Interview with examiner",
+            "Role-play scenario",
+            "Structured presentation on a topic"
+          ],
+          "tips": "Speak naturally; don't over-rehearse. Listen to the examiner's prompts and adapt. Professional tone is expected; clarity trumps speed."
+        }
+      ],
+      "scoreGuide": [
+        [
+          "NCLC 1",
+          "Below NCLC 4 (CLB 0–3.5); minimal functional French. Insufficient for most Express Entry streams and skilled trades."
+        ],
+        [
+          "NCLC 2–3",
+          "CLB 4.0–5.5; basic communication; limited for professional contexts. Meets only low-skill immigration streams; not competitive for Express Entry."
+        ],
+        [
+          "NCLC 4",
+          "CLB 6.0–6.5; functional everyday and workplace communication. Meets Express Entry thresholds for some programs; acceptable for Quebec immigration."
+        ],
+        [
+          "NCLC 5–6",
+          "CLB 7.0–8.5; strong communication, minor errors acceptable. Meets most Express Entry and Quebec skilled professional requirements; good for job competitiveness."
+        ],
+        [
+          "NCLC 7",
+          "CLB 9.0–10.0; near-native fluency, excellent accuracy. Exceeds all immigration requirements; competitive for premium roles."
+        ]
+      ],
+      "registration": [
+        "Register at tefcanada.ca",
+        "select test date, location (test centres in major Canadian cities, plus Indian locations), complete online payment",
+        "Results are sent to IRCC directly (with candidate consent)"
+      ],
+      "centres": "TEF Canada is offered at authorized test centres in Canada (most cities) and internationally including India. Online testing with proctoring is available in some regions; check the website for current availability.",
+      "commonMistakes": [
+        "Not familiarizing with Québécois French; TEF Canada includes Quebec-specific vocabulary (e.g., 'depanneur' for corner store); study regional variants.",
+        "Overloading writing with complex sentences; clarity and correctness matter more than complexity; short, accurate sentences score higher than lengthy, error-prone ones.",
+        "Speaking too formally or informally; professional context requires balanced tone; avoid slang in formal role-plays, but don't sound robotic in casual scenarios.",
+        "Mismanaging reading time; 50 questions in 60 minutes; skim first, answer easy questions, return to complex passages.",
+        "Ignoring listening comprehension of numbers, dates, and specific details; these are tested repeatedly; practise saying/understanding French numbers and dates aloud."
+      ],
+      "faqs": [
+        [
+          "What is the difference between TEF Canada and TCF Canada?",
+          "Both are IRCC-approved French tests. TEF Canada is newer (launched 2014) and computer-based; TCF Canada is paper-based. TEF Canada is generally faster for results; TCF is cheaper. Both report NCLC/CLB scores equivalently."
+        ],
+        [
+          "Which NCLC level is required for Express Entry?",
+          "The threshold depends on your National Occupational Classification (NOC) code and program. Most skilled worker programs require NCLC 4 (CLB 6.0) or higher for primary official language. Check your specific pathway via the IRCC portal."
+        ],
+        [
+          "Are TEF Canada and TEF international the same test?",
+          "No. TEF Canada is specific to Canadian immigration and reports NCLC/CLB levels. TEF International (for France/Europe) uses a different scale. Ensure you register for TEF Canada."
+        ],
+        [
+          "Can I study Quebec French to prepare for TEF Canada?",
+          "Yes, absolutely. TEF Canada includes Quebec French vocabulary and contexts. If aiming for Quebec immigration, Quebec French is essential. For federal Express Entry, Canadian standard French (with regional awareness) is sufficient."
+        ],
+        [
+          "How long are TEF Canada scores valid for IRCC?",
+          "Scores are valid for 2 years from the test date for IRCC applications. After 2 years, you must retake if applying to immigration programs."
+        ]
+      ]
+    },
+    {
+      "id": "tcf-canada",
+      "name": "TCF Canada",
+      "short": "TCF Canada",
+      "full": "Test de Connaissance du Français pour le Canada",
+      "body": "France Education International",
+      "tagline": "French test for Canada immigration",
+      "blurb": "TCF Canada is an official French-language test recognized by Immigration, Refugees and Citizenship Canada (IRCC) for Express Entry and Quebec skilled immigration applications. Developed by France Education International (FEI) and administered in partnership with authorized testing centres, TCF Canada assesses reading, listening, writing, and speaking in real-world professional and personal scenarios. It reports scores on the NCLC (National Competency Level Classification) scale aligned with Canadian Language Benchmark standards.",
+      "duration": "3h (core sections)",
+      "score": "NCLC 1–7 (CLB equivalents 0–10)",
+      "sections": 4,
+      "mocks": 0,
+      "guideOnly": true,
+      "langAlias": "french",
+      "streams": [
+        "Express Entry",
+        "Quebec Immigration"
+      ],
+      "official": "https://www.tcfcanada.ca",
+      "booking": "https://www.tcfcanada.ca/booking",
+      "fees": {
+        "inr": "₹10,000–₹13,000",
+        "usd": "$50–$220"
+      },
+      "colour": "#CC0000",
+      "pattern": [
+        [
+          "Listening Comprehension",
+          "Dialogues, monologues, narratives · 30 questions · 35 mins"
+        ],
+        [
+          "Reading Comprehension",
+          "Short texts, articles, emails, forms · 30 questions · 45 mins"
+        ],
+        [
+          "Writing Expression",
+          "Email or letter writing · 1 task · 45 mins"
+        ],
+        [
+          "Speaking Expression",
+          "Interview with examiner, role-play · ~12 mins"
+        ]
+      ],
+      "sections_detail": [
+        {
+          "name": "Listening",
+          "icon": "🎧",
+          "time": 35,
+          "questions": 30,
+          "types": [
+            "Multiple choice dialogues",
+            "Monologue comprehension",
+            "Infer speaker intent and tone"
+          ],
+          "tips": "Concentrate on first listening; only one playback. Take brief notes on key words. Intonation and context convey meaning—don't get stuck on unfamiliar vocabulary."
+        },
+        {
+          "name": "Reading",
+          "icon": "📖",
+          "time": 45,
+          "questions": 30,
+          "types": [
+            "Multiple choice passages",
+            "Vocabulary and grammar in context",
+            "Comprehension of practical documents (schedules, invoices)"
+          ],
+          "tips": "Canadian French vocabulary is essential; practise with Quebec news sources. Skim before diving into questions. Manage time: 1.5 mins per question average."
+        },
+        {
+          "name": "Writing",
+          "icon": "✍️",
+          "time": 45,
+          "questions": 1,
+          "types": [
+            "Email, letter, or message writing"
+          ],
+          "tips": "Follow proper format (greeting, body, closing). Be concise; clarity over length. Watch grammar and spelling; this is a formal writing assessment."
+        },
+        {
+          "name": "Speaking",
+          "icon": "🎤",
+          "time": 12,
+          "questions": 1,
+          "types": [
+            "Structured interview with examiner",
+            "Role-play or scenario discussion"
+          ],
+          "tips": "Speak at natural pace. Engage with examiner's questions; don't recite memorized responses. Accuracy and fluency are both graded."
+        }
+      ],
+      "scoreGuide": [
+        [
+          "NCLC 1",
+          "Below NCLC 4 (CLB 0–3.5); minimal French. Does not meet Express Entry or skilled immigration thresholds."
+        ],
+        [
+          "NCLC 2–3",
+          "CLB 4.0–5.5; basic communication; limited professional use. Falls short for most immigration streams."
+        ],
+        [
+          "NCLC 4",
+          "CLB 6.0–6.5; functional French in everyday and workplace settings. Meets baseline Express Entry and Quebec program thresholds."
+        ],
+        [
+          "NCLC 5–6",
+          "CLB 7.0–8.5; strong communication with minor errors. Meets most federal and provincial skilled worker requirements; competitive for jobs."
+        ],
+        [
+          "NCLC 7",
+          "CLB 9.0–10.0; excellent near-native fluency. Exceeds all Canadian immigration and professional requirements."
+        ]
+      ],
+      "registration": [
+        "Register at tcfcanada.ca or via authorized test centres",
+        "select test date, location, and pay the fee",
+        "Registration typically opens 6–8 weeks before test date",
+        "results are usually available within 2–3 weeks"
+      ],
+      "centres": "TCF Canada is offered at authorized centres across Canada (major cities) and internationally in India (Delhi, Mumbai, Bangalore, Hyderabad). Paper-based testing; online options limited.",
+      "commonMistakes": [
+        "Confusing TCF Canada with TCF International; they are different tests with different scales—ensure you book the Canada-specific version.",
+        "Neglecting writing task formatting; examiners grade on coherence and accuracy, not just grammar—proper letter/email structure scores higher.",
+        "Speaking with over-rehearsed phrases; examiners hear the difference between natural speech and memorized responses; practise spontaneous conversation.",
+        "Not preparing for Quebec French vocabulary; names of places, services, and everyday items differ from metropolitan French; study regional variants.",
+        "Rushing listening and reading; one-shot listening means no replay; focus intensely; reading is timed, so practice speed-reading French texts beforehand."
+      ],
+      "faqs": [
+        [
+          "What is the main difference between TCF Canada and TEF Canada?",
+          "Both are IRCC-approved and report NCLC scores. TCF Canada is paper-based and typically less expensive; TEF Canada is computer-based and faster for results. Difficulty and acceptance are equivalent; choose based on availability and preference."
+        ],
+        [
+          "Is TCF Canada accepted by Quebec's immigration system?",
+          "Yes, TCF Canada is one of the approved tests for Quebec skilled worker immigration (Quebec selection certificate). However, Quebec also has its own French test (TEF/TELF/TCF with specific Quebec modules); check Quebec's Ministry of Immigration website for the latest approved tests."
+        ],
+        [
+          "How is TCF Canada different from the general TCF test?",
+          "TCF International is used for France/Europe and uses a different scoring scale (0–699). TCF Canada is specific to Canadian immigration and reports NCLC 1–7 aligned with CLB. Register for TCF Canada only."
+        ],
+        [
+          "What NCLC level do I need for federal Express Entry?",
+          "Typically NCLC 4 (CLB 6.0) or higher for skilled worker programs, depending on your NOC code. Check your specific Express Entry stream via IRCC.ca to confirm the requirement."
+        ],
+        [
+          "How long are TCF Canada scores valid?",
+          "Scores are valid for 2 years from the test date for IRCC and Quebec immigration applications. Beyond 2 years, retaking is necessary for new applications."
+        ]
       ]
     }
   ]

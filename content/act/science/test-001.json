@@ -483,7 +483,7 @@
       "questionNumber": 26
     },
     {
-      "id": "act-science-001-q26-revised",
+      "id": "act-science-001-q40",
       "passageId": "act-science-001-p5",
       "questionType": "multiple_choice_single",
       "topic": "Data Interpretation",
@@ -713,10 +713,10 @@
         "20°C to 30°C",
         "10°C to 20°C",
         "0°C to 10°C",
-        "50°C to 60°C"
+        "30°C to 40°C"
       ],
-      "correctAnswer": "20°C to 30°C",
-      "explanation": "Solubility increases: 0→10°C = 0.1, 10→20°C = 0.5, 20→30°C = 0.3, 30→40°C = 0.4, 40→50°C = 0.3, 50→60°C = 0.5. The largest single increase is 0.5 (10→20°C and 50→60°C tied). Actually checking: 35.8-35.7=0.1, 36.3-35.8=0.5, 36.6-36.3=0.3, 37.0-36.6=0.4, 37.3-37.0=0.3, 37.8-37.3=0.5. Two intervals tie at 0.5. Let me revise to 10°C to 20°C which is clearly shown.",
+      "correctAnswer": "10°C to 20°C",
+      "explanation": "From Table 2: 0→10°C = +0.1, 10→20°C = +0.5, 20→30°C = +0.3, 30→40°C = +0.4, 40→50°C = +0.3. Among the options, 10°C to 20°C shows the largest single increase (0.5 g/100g).",
       "difficulty": "easy",
       "questionNumber": 39
     }

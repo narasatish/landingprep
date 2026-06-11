@@ -70,6 +70,19 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 .cmp-table th,.cmp-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 .cmp-table thead th{background:#eef2ff;color:var(--brand);font-weight:700}
 .cmp-table td:first-child{background:#f8fafc;width:120px}
+.bsteps{list-style:none;counter-reset:bs;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:10px}
+.bsteps li{counter-increment:bs;position:relative;padding:12px 16px 12px 50px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.bsteps li::before{content:counter(bs);position:absolute;left:12px;top:11px;width:26px;height:26px;border-radius:999px;background:var(--brand);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.bcheck{list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:7px}
+.bcheck li{position:relative;padding-left:26px}
+.bcheck li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.callout{display:flex;gap:10px;align-items:flex-start;padding:13px 16px;border-radius:11px;margin:12px 0;border:1px solid var(--line)}
+.callout .ic{font-size:17px;flex-shrink:0}
+.callout.info{border-left:4px solid #4f46e5;background:#eef2ff}
+.callout.tip{border-left:4px solid #16a34a;background:#ecfdf5}
+.callout.money{border-left:4px solid #d97706;background:#fffbeb}
+.callout.warn{border-left:4px solid #dc2626;background:#fef2f2}
+.callout.key{border-left:4px solid #7c3aed;background:#f5f3ff}
 </style>
 </head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="/">▲ LandingPrep</a><a class="cta" href="/#/exam-prep">Start free practice →</a></div></header>
@@ -90,6 +103,7 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 <div class="card"><h2>Part 3: develop and justify</h2><p>These abstract questions test your ability to discuss, speculate and justify opinions. Use phrases like 'It depends on…', 'One reason might be…', 'On the other hand…'. Give balanced, developed answers rather than short ones.</p></div>
 <div class="card"><h2>Vocabulary and pronunciation</h2><p>Build topic vocabulary (education, technology, environment) and use it naturally. For pronunciation, focus on clear word stress and sentence rhythm — you do not need a particular accent, just intelligibility.</p></div>
 <div class="card"><h2>Rehearse out loud, free</h2><p>Speaking improves only by speaking. Use the free AI speaking partner on LandingPrep to simulate all three parts, get two-way questions, and receive instant fluency feedback.</p></div>
+
 <section class="related-articles"><h2>Related articles</h2><ul class="rel-list"><li><a href="/blog/ielts-speaking-part-2-cue-cards/">IELTS Speaking Part 2: Common Cue Cards &amp; How to Answer Them (with Examples)</a></li><li><a href="/blog/ielts-band-8-guide/">How to Get IELTS Band 8: Advanced Vocabulary, Grammar &amp; Fluency</a></li><li><a href="/blog/ielts-speaking-part-1-questions-and-answers/">IELTS Speaking Part 1: 40+ Questions &amp; Band 7+ Answers</a></li><li><a href="/blog/ielts-vs-pte-which-easier-2026/">IELTS vs PTE in 2026: Which Is Easier and Which Should You Take?</a></li><li><a href="/blog/how-to-get-ielts-band-7/">How to Get IELTS Band 7 in 30 Days (1 Month): Free Study Plan</a></li><li><a href="/blog/ielts-writing-task-2-structure/">IELTS Writing Task 2: Band 7+ Structure, Templates &amp; Common Mistakes</a></li></ul></section>
 <h2>Keep going — free practice</h2><div class="grid"><a class="tile" href="/mock-test/ielts/">Free IELTS mock test</a><a class="tile" href="/practice/ielts/">IELTS practice questions</a><a class="tile" href="/#/colleges">🎓 Free college predictor</a><a class="tile" href="/#/blog">All blog articles</a></div>
 </main>

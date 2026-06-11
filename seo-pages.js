@@ -171,15 +171,78 @@
       );
     }))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
   }
-  function BlogArticle({ article, onNav, onBackToIndex }) {
+  function slugify(s) {
+    return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  }
+  function calloutIcon(t) {
+    return t === "warn" ? "\u26A0\uFE0F" : t === "tip" ? "\u{1F4A1}" : t === "money" ? "\u{1F4B0}" : t === "key" ? "\u{1F511}" : "\u2139\uFE0F";
+  }
+  function fmt(text) {
+    if (text == null) return null;
+    const s = String(text);
+    const out = [];
+    let last = 0, m, k = 0;
+    const re = /\*\*([^*]+)\*\*|\[([^\]]+)\]\(([^)]+)\)/g;
+    while (m = re.exec(s)) {
+      if (m.index > last) out.push(s.slice(last, m.index));
+      if (m[1]) out.push(/* @__PURE__ */ React.createElement("strong", { key: k++ }, m[1]));
+      else {
+        const ext = /^https?:/.test(m[3]);
+        out.push(/* @__PURE__ */ React.createElement("a", { key: k++, href: m[3], target: ext ? "_blank" : void 0, rel: ext ? "noopener noreferrer" : void 0 }, m[2]));
+      }
+      last = m.index + m[0].length;
+    }
+    if (last < s.length) out.push(s.slice(last));
+    return out;
+  }
+  function Paragraphs({ text }) {
+    return String(text || "").split(/\n{2,}/).map((p) => p.trim()).filter(Boolean).map((p, i) => /* @__PURE__ */ React.createElement("p", { key: i }, fmt(p)));
+  }
+  function Section({ s }) {
+    return /* @__PURE__ */ React.createElement("section", { className: "blg-section" }, s.h && /* @__PURE__ */ React.createElement("h2", { id: slugify(s.h) }, s.h), s.body && /* @__PURE__ */ React.createElement(Paragraphs, { text: s.body }), s.callout && /* @__PURE__ */ React.createElement("div", { className: "blg-callout " + (s.callout.type || "info") }, /* @__PURE__ */ React.createElement("span", { className: "blg-callout-ic" }, calloutIcon(s.callout.type)), /* @__PURE__ */ React.createElement("div", null, fmt(s.callout.text))), Array.isArray(s.steps) && s.steps.length > 0 && /* @__PURE__ */ React.createElement("ol", { className: "blg-steps" }, s.steps.map((st, i) => /* @__PURE__ */ React.createElement("li", { key: i }, fmt(st)))), Array.isArray(s.bullets) && s.bullets.length > 0 && /* @__PURE__ */ React.createElement("ul", { className: "blg-bullets" }, s.bullets.map((b, i) => /* @__PURE__ */ React.createElement("li", { key: i }, fmt(b)))), s.table && Array.isArray(s.table.rows) && /* @__PURE__ */ React.createElement("div", { className: "blg-tablewrap" }, /* @__PURE__ */ React.createElement("table", { className: "blg-table" }, Array.isArray(s.table.headers) && /* @__PURE__ */ React.createElement("thead", null, /* @__PURE__ */ React.createElement("tr", null, s.table.headers.map((h, i) => /* @__PURE__ */ React.createElement("th", { key: i }, h)))), /* @__PURE__ */ React.createElement("tbody", null, s.table.rows.map((r, i) => /* @__PURE__ */ React.createElement("tr", { key: i }, r.map((c, j) => /* @__PURE__ */ React.createElement("td", { key: j }, fmt(c)))))))));
+  }
+  function Faq({ faqs }) {
+    const [open, setOpen] = useState(0);
+    return /* @__PURE__ */ React.createElement("div", { className: "blg-faq" }, /* @__PURE__ */ React.createElement("h2", null, "Frequently asked questions"), faqs.map((f, i) => {
+      const q = Array.isArray(f) ? f[0] : f.q;
+      const a = Array.isArray(f) ? f[1] : f.a;
+      return /* @__PURE__ */ React.createElement("div", { key: i, className: "blg-faq-item" + (open === i ? " open" : "") }, /* @__PURE__ */ React.createElement("button", { className: "blg-faq-q", onClick: () => setOpen(open === i ? -1 : i), "aria-expanded": open === i }, /* @__PURE__ */ React.createElement("span", null, q), /* @__PURE__ */ React.createElement("span", { className: "blg-faq-ic" }, open === i ? "\u2212" : "+")), open === i && /* @__PURE__ */ React.createElement("div", { className: "blg-faq-a" }, fmt(a)));
+    }));
+  }
+  function BlogArticle({ article, onNav, onBackToIndex, onOpen }) {
     if (!article) return null;
-    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "blog", onNav }), /* @__PURE__ */ React.createElement("div", { className: "seo-shell" }, /* @__PURE__ */ React.createElement("div", { style: { marginBottom: 20 } }, /* @__PURE__ */ React.createElement("a", { onClick: onBackToIndex, style: { color: "var(--accent)", cursor: "pointer", fontSize: 14, fontWeight: 600 } }, "\u2190 Back to all guides")), /* @__PURE__ */ React.createElement("div", { className: "seo-hero", style: { borderBottom: "none", paddingBottom: 0 } }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow", style: { color: "var(--accent)" } }, article.tag), /* @__PURE__ */ React.createElement("h1", { className: "h1", style: { marginTop: 8, fontSize: "clamp(28px,4.5vw,42px)" } }, article.title), /* @__PURE__ */ React.createElement("p", { className: "body-lg muted", style: { marginTop: 12 } }, article.excerpt)), /* @__PURE__ */ React.createElement("div", { className: "seo-article-body" }, article.sections.map((s, i) => /* @__PURE__ */ React.createElement("div", { key: i }, /* @__PURE__ */ React.createElement("h2", null, s.h), /* @__PURE__ */ React.createElement("p", null, s.body)))), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 40, padding: 24, background: "var(--surface-2)", borderRadius: 16, border: "1px solid var(--line)" } }, /* @__PURE__ */ React.createElement("h3", { style: { margin: 0, fontSize: 18, fontFamily: "var(--serif)" } }, "Ready to put this into practice?"), /* @__PURE__ */ React.createElement("p", { style: { margin: "8px 0 14px", color: "var(--ink-3)" } }, "Take a free mock test or open the Learning Club for full model answers."), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12" }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNav("exams") }, "Browse Exam Hub"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("learning") }, "Open Learning Club")))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
+    const words = (article.sections || []).reduce((n, s) => n + ((s.body || "") + " " + (s.steps || []).join(" ") + " " + (s.bullets || []).join(" ")).split(/\s+/).length, 0);
+    const mins = Math.max(3, Math.round(words / 200));
+    const toc = (article.sections || []).filter((s) => s.h);
+    let related = ARTICLES.filter((a) => a.id !== article.id && a.tag === article.tag).slice(0, 3);
+    if (related.length < 3) related = related.concat(ARTICLES.filter((a) => a.id !== article.id && !related.includes(a)).slice(0, 3 - related.length));
+    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "blog", onNav }), /* @__PURE__ */ React.createElement("div", { className: "seo-shell blg-shell" }, /* @__PURE__ */ React.createElement("div", { style: { marginBottom: 18 } }, /* @__PURE__ */ React.createElement("a", { onClick: onBackToIndex, style: { color: "var(--accent)", cursor: "pointer", fontSize: 14, fontWeight: 600 } }, "\u2190 All guides")), /* @__PURE__ */ React.createElement("div", { className: "blg-head" }, /* @__PURE__ */ React.createElement("span", { className: "blg-tag" }, article.tag), /* @__PURE__ */ React.createElement("h1", null, article.title), /* @__PURE__ */ React.createElement("p", { className: "blg-excerpt" }, article.excerpt), /* @__PURE__ */ React.createElement("div", { className: "blg-meta" }, article.date ? /* @__PURE__ */ React.createElement("span", null, article.date) : null, article.date ? /* @__PURE__ */ React.createElement("span", { className: "dot" }, "\xB7") : null, /* @__PURE__ */ React.createElement("span", null, mins, " min read"), /* @__PURE__ */ React.createElement("span", { className: "dot" }, "\xB7"), /* @__PURE__ */ React.createElement("span", null, "LandingPrep"))), toc.length >= 4 && /* @__PURE__ */ React.createElement("nav", { className: "blg-toc" }, /* @__PURE__ */ React.createElement("div", { className: "blg-toc-t" }, "\u{1F4D1} On this page"), /* @__PURE__ */ React.createElement("ol", null, toc.map((s, i) => /* @__PURE__ */ React.createElement("li", { key: i }, /* @__PURE__ */ React.createElement("a", { href: "#" + slugify(s.h) }, s.h))))), /* @__PURE__ */ React.createElement("div", { className: "seo-article-body blg-body" }, (article.sections || []).map((s, i) => /* @__PURE__ */ React.createElement(Section, { key: i, s }))), Array.isArray(article.faqs) && article.faqs.length > 0 && /* @__PURE__ */ React.createElement(Faq, { faqs: article.faqs }), /* @__PURE__ */ React.createElement("div", { className: "blg-cta" }, /* @__PURE__ */ React.createElement("h3", null, "Ready to put this into practice?"), /* @__PURE__ */ React.createElement("p", null, "Take a free mock test, check your eligibility with the College Predictor, or open the Learning Club for model answers \u2014 all 100% free."), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12" }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNav("exams") }, "Free mock tests \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("colleges") }, "Study-abroad tools \u2192"))), related.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "blg-related" }, /* @__PURE__ */ React.createElement("h2", null, "Keep reading"), /* @__PURE__ */ React.createElement("div", { className: "seo-grid" }, related.map((a) => /* @__PURE__ */ React.createElement(
+      "div",
+      {
+        key: a.id,
+        className: "seo-card",
+        onClick: () => onOpen(a.id),
+        role: "button",
+        tabIndex: 0,
+        onKeyDown: (e) => (e.key === "Enter" || e.key === " ") && onOpen(a.id)
+      },
+      /* @__PURE__ */ React.createElement("div", { className: "seo-card-top" }, /* @__PURE__ */ React.createElement("span", { className: "tag" }, a.tag)),
+      /* @__PURE__ */ React.createElement("h3", null, a.title),
+      /* @__PURE__ */ React.createElement("p", null, a.excerpt),
+      /* @__PURE__ */ React.createElement("span", { className: "seo-card-cta" }, "Read guide \u2192")
+    ))))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
   }
   function BlogRouter({ onNav }) {
     const [openId, setOpenId] = useState(null);
+    React.useEffect(() => {
+      try {
+        window.scrollTo(0, 0);
+      } catch (e) {
+      }
+    }, [openId]);
     if (openId) {
       const article = ARTICLES.find((a) => a.id === openId);
-      return /* @__PURE__ */ React.createElement(BlogArticle, { article, onNav, onBackToIndex: () => setOpenId(null) });
+      return /* @__PURE__ */ React.createElement(BlogArticle, { article, onNav, onBackToIndex: () => setOpenId(null), onOpen: setOpenId });
     }
     return /* @__PURE__ */ React.createElement(BlogIndex, { onNav, onOpen: setOpenId });
   }

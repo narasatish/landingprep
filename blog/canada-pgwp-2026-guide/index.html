@@ -70,6 +70,19 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 .cmp-table th,.cmp-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 .cmp-table thead th{background:#eef2ff;color:var(--brand);font-weight:700}
 .cmp-table td:first-child{background:#f8fafc;width:120px}
+.bsteps{list-style:none;counter-reset:bs;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:10px}
+.bsteps li{counter-increment:bs;position:relative;padding:12px 16px 12px 50px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.bsteps li::before{content:counter(bs);position:absolute;left:12px;top:11px;width:26px;height:26px;border-radius:999px;background:var(--brand);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.bcheck{list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:7px}
+.bcheck li{position:relative;padding-left:26px}
+.bcheck li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.callout{display:flex;gap:10px;align-items:flex-start;padding:13px 16px;border-radius:11px;margin:12px 0;border:1px solid var(--line)}
+.callout .ic{font-size:17px;flex-shrink:0}
+.callout.info{border-left:4px solid #4f46e5;background:#eef2ff}
+.callout.tip{border-left:4px solid #16a34a;background:#ecfdf5}
+.callout.money{border-left:4px solid #d97706;background:#fffbeb}
+.callout.warn{border-left:4px solid #dc2626;background:#fef2f2}
+.callout.key{border-left:4px solid #7c3aed;background:#f5f3ff}
 </style>
 </head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="/">▲ LandingPrep</a><a class="cta" href="/#/exam-prep">Start free practice →</a></div></header>
@@ -90,6 +103,7 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 <div class="card"><h2>PGWP and Express Entry</h2><p>The PGWP gives you Canadian work experience which is a major <a href="/blog/canada-pr-express-entry-basics/">Express Entry</a> points booster. After 1 year of skilled work in Canada, you can apply for Canadian Experience Class (CEC). A high IELTS/CELPIP score adds Comprehensive Ranking System (CRS) points on top of the work experience points — many PGWP holders clear 470+ CRS and receive an invitation to apply for PR.</p></div>
 <div class="card"><h2>Common PGWP mistakes</h2><p>Applying more than 180 days after graduation (you lose eligibility). Maintaining continuous full-time enrolment — any gap or part-time switch can affect eligibility. Not meeting the new language threshold. Enrolling in a non-PGWP-eligible programme thinking it qualifies. Always verify at IRCC.gc.ca before and after enrolment.</p></div>
 <div class="card"><h2>Prep your English score</h2><p>The PGWP now requires CLB 7 = IELTS 6.0 in each band, or CELPIP 7 in each skill. Practise both free on LandingPrep — IELTS mocks and CELPIP-style practice — so your score is ready before you graduate.</p></div>
+
 <section class="related-articles"><h2>Related articles</h2><ul class="rel-list"><li><a href="/blog/canada-study-permit-changes-2026/">Canada Study Permit Changes 2025–26: Caps, PAL, GIC &amp; PGWP Explained</a></li><li><a href="/blog/canada-student-visa-sds-requirements/">Canada Student Visa After SDS Ended: GIC, Proof of Funds &amp; Process (2026)</a></li><li><a href="/blog/canada-pr-express-entry-basics/">How to Get PR in Canada After Study: Express Entry Basics &amp; Points System</a></li><li><a href="/blog/usa-opt-stem-extension-2026-guide/">USA OPT &amp; STEM Extension 2026: How F-1 Students Work After Graduation</a></li><li><a href="/blog/uk-graduate-route-visa-2026/">UK Student &amp; Graduate Route Visa in 2026: Dependants, Salary &amp; Stay-Back</a></li><li><a href="/blog/australia-genuine-student-2026/">Australia Student Visa 2026: Genuine Student Test, Savings &amp; 485 Work Visa</a></li></ul></section>
 <h2>Keep going — free practice</h2><div class="grid"><a class="tile" href="/#/colleges">🌍 Study-abroad destinations</a><a class="tile" href="/#/colleges">💸 Scholarships (free finder)</a><a class="tile" href="/mock-test/ielts/">Free IELTS mock test</a><a class="tile" href="/#/blog">All blog articles</a></div>
 </main>
