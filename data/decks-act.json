@@ -1,0 +1,1032 @@
+{
+  "act-english": {
+    "id": "act-english",
+    "exam": "act",
+    "examName": "ACT",
+    "section": "English",
+    "emoji": "✏️",
+    "title": "ACT English — Tips, Tricks & Strategy",
+    "summary": "Master grammar, punctuation, and rhetoric to ace 75 questions in 45 minutes across 5 passages.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "What is ACT English?",
+        "points": [
+          "75 questions, 45 minutes across 5 passages (~15 min/passage)",
+          "Tests grammar, punctuation, sentence structure, and writing strategy",
+          "Passages: essays ranging 500–600 words; 15 questions per passage",
+          "Score range: 1–36 (converted to composite with other sections)"
+        ],
+        "tip": "ACT English is the fastest section — time pressure is real. Build speed through practice."
+      },
+      {
+        "emoji": "🔘",
+        "title": "English Section Timing & Pacing",
+        "points": [
+          "~36 seconds per question average; aim to complete each passage in 10–12 minutes",
+          "Read the full sentence/paragraph before answering; context determines correctness",
+          "Don't slow down on hard questions — skip and return if time allows",
+          "Last 1–2 questions are often the hardest; allocate time accordingly"
+        ],
+        "tip": "If you're running behind, guess quickly on rhetorical questions and move on."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Grammar & Mechanics Mastery (Part 1)",
+        "points": [
+          "Subject-verb agreement: Verb must match subject in number (singular/plural)",
+          "Pronoun agreement: Pronouns must match their antecedent (he/she/it vs. they)",
+          "Verb tense consistency: Don't switch tenses mid-narrative without reason",
+          "Common trap: Prepositional phrases hide the true subject; ignore them"
+        ],
+        "example": {
+          "label": "Subject-Verb Example",
+          "text": "WRONG: 'The list of mistakes were found.' RIGHT: 'The list of mistakes was found.' (list = singular)"
+        },
+        "tip": "Cross out prepositional phrases (of..., with..., in...) to find subject-verb pairs."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Grammar & Mechanics Mastery (Part 2)",
+        "points": [
+          "Comma rules: Use commas for introductory clauses, items in a series, and appositive phrases",
+          "Semicolons: Join independent clauses only; NOT before fragments or lists",
+          "Colons: Introduce explanations, lists, or independent clauses; use sparingly",
+          "Apostrophes: Possessives (john's, cat's) and contractions (it's, they're); NOT 'it' or 'who's'"
+        ],
+        "example": {
+          "label": "Semicolon Trap",
+          "text": "WRONG: 'I love ice cream; especially chocolate.' RIGHT: 'I love ice cream, especially chocolate.' (fragment after colon)"
+        },
+        "tip": "Semicolons and colons are rare in ACT — most ACT punctuation is commas."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Sentence Structure & Fragments",
+        "points": [
+          "Fragments: Missing subject, verb, or both — must be joined or completed",
+          "Run-ons: Two independent clauses without punctuation/conjunction — fix with comma+and, semicolon, or period",
+          "Comma splices: Two independent clauses joined by comma alone — same fixes as run-ons",
+          "Parallelism: Series items must match grammatical form (verb parallels verb, noun parallels noun)"
+        ],
+        "example": {
+          "label": "Parallelism Example",
+          "text": "WRONG: 'She likes to run, swim, and playing tennis.' RIGHT: 'She likes to run, swim, and play tennis.' (all gerunds OR all infinitives)"
+        },
+        "tip": "When you see a series, check that all items have the same structure."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Modifiers & Misplacement",
+        "points": [
+          "Dangling modifiers: Opening phrase doesn't clearly modify the subject — rewrite or move subject",
+          "Misplaced modifiers: Modifier is too far from the word it describes — move it next to the target",
+          "Watch for: -ing phrases, 'which' clauses, and introductory prepositional phrases",
+          "The subject right after the comma usually gets modified by an introductory phrase"
+        ],
+        "example": {
+          "label": "Dangling Modifier Example",
+          "text": "WRONG: 'Running down the street, the car nearly hit me.' (Who is running? Unclear.) RIGHT: 'As I ran down the street, the car nearly hit me.'"
+        },
+        "tip": "If an introductory phrase doesn't logically modify the subject, it's dangling — fix it."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Rhetorical Skills: Strategy & Style (Part 1)",
+        "points": [
+          "~30% of questions test writing strategy, NOT grammar — no single 'correct' answer, but best fit",
+          "Ask: Does the phrase match the tone and purpose of the passage?",
+          "Consider: Conciseness, clarity, relevance, and consistency with surrounding sentences",
+          "Options often include 'NO CHANGE' — if existing text is clear and appropriate, pick it"
+        ],
+        "tip": "Rhetorical questions reward reading the full passage; context is everything."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Conciseness & Word Choice",
+        "points": [
+          "Eliminate redundancy: 'very unique' (unique means one-of-a-kind), 'future plans' (plans are future)",
+          "Avoid wordiness: 'In the event that' -> 'if'; 'due to the fact that' -> 'because'",
+          "Shorter is better: If two choices mean the same thing, pick the shorter one",
+          "Watch for: Repetition of ideas, unnecessary adjectives, and awkward phrasing"
+        ],
+        "example": {
+          "label": "Conciseness Example",
+          "text": "WORDY: 'She was afraid and frightened by the dog.' CONCISE: 'She was afraid of the dog.' (afraid = frightened)"
+        },
+        "tip": "On rhetorical questions, eliminate choices that repeat or add nothing new."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Tone & Style Consistency",
+        "points": [
+          "Match the passage's register: Formal vs. informal tone must remain consistent",
+          "Avoid: Casual slang in academic passages, pretentious language in simple essays",
+          "Watch author's voice: Is the passage personal (first person), objective (third person), or mixed?",
+          "Check: Verb voice (active vs. passive) — switch only if the passage does"
+        ],
+        "example": {
+          "label": "Tone Mismatch Example",
+          "text": "In a formal essay: WRONG: 'The scientist totally figured out the answer.' RIGHT: 'The scientist determined the answer.'"
+        },
+        "tip": "Read the first 1–2 sentences of each passage to catch its tone — then check new sentences against it."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Transitions & Organization",
+        "points": [
+          "Transitions signal relationships: 'However' (contrast), 'Furthermore' (addition), 'Thus' (conclusion)",
+          "Wrong transitions confuse readers: Using 'Although' when 'Because' is needed changes meaning",
+          "Placement: Transition usually starts the new sentence to connect it to the prior idea",
+          "Common trap: Multiple transitions in one passage — only ONE fits logically"
+        ],
+        "example": {
+          "label": "Transition Example",
+          "text": "Previous sentence: 'Many love the new law.' Next: '[TRANS] some disagree.' RIGHT: However/Nevertheless. WRONG: Additionally (implies agreement)"
+        },
+        "tip": "Before picking a transition, reread the sentences around it to see the logical connection."
+      },
+      {
+        "emoji": "🔘",
+        "title": "'NO CHANGE' Strategy",
+        "points": [
+          "If the original text is grammatically correct AND clear, 'NO CHANGE' may be right",
+          "Don't fall for 'improve for the sake of improving' — clarity and correctness matter, not perfection",
+          "When all options seem similar, go with 'NO CHANGE' unless there's a clear error or better choice",
+          "Track 'NO CHANGE' answers across the section — if too many cluster, recheck"
+        ],
+        "tip": "Many test-takers overlook 'NO CHANGE' — always consider it seriously."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Common Grammar Traps & Mistakes",
+        "points": [
+          "Its vs. It's: 'its' = possessive (Its color), 'it's' = contraction for 'it is'",
+          "Who vs. Whom: 'who' = subject, 'whom' = object (Whom did you see? = You saw whom?)",
+          "Affect vs. Effect: 'affect' = verb (to influence), 'effect' = noun (result)",
+          "Their vs. There vs. They're: Possessive, location, and contraction for 'they are'"
+        ],
+        "tip": "These four pairs appear frequently — master them and you'll catch easy points."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Rhetorical Questions: Relevance & Support",
+        "points": [
+          "Relevance: Does the sentence support the main point? If not, delete it",
+          "Example insertion: 'Which choice best illustrates the author's claim?' — find the most specific example",
+          "Supporting details: Does the new sentence strengthen or weaken the paragraph's purpose?",
+          "Logical flow: Does it follow naturally from the prior sentence, or does it derail the argument?"
+        ],
+        "example": {
+          "label": "Relevance Example",
+          "text": "Paragraph about wildlife conservation: Option says 'Blue jays are common.' -> REMOVE (off-topic). Better: 'Some endangered species have doubled in population.'"
+        },
+        "tip": "Ask 'Does this sentence help prove the author's point?' If no, it doesn't belong."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Adding & Revising Sentences",
+        "points": [
+          "Adding a sentence: Check if it's relevant, doesn't repeat other sentences, and flows from the prior sentence",
+          "Revising a sentence: Compare the new version to the original — ask if it's clearer, shorter, or more appropriate",
+          "Delete option: Sometimes 'DELETE' is correct if the sentence is redundant, off-topic, or weakens the paragraph",
+          "Placement: A sentence might be correct but in the wrong spot — watch for that"
+        ],
+        "tip": "Read the full paragraph before answering 'add/revise/delete' questions — context determines fit."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Passage Structure & Purpose",
+        "points": [
+          "Main idea: What is the author trying to prove or convey in the entire passage?",
+          "Paragraph purpose: Does each paragraph support, explain, or counter the main idea?",
+          "Concluding questions: Often ask about overall structure or the author's intent",
+          "Opening & closing: The first and last sentences hint at the passage's purpose"
+        ],
+        "tip": "Skim each passage in 30 seconds to identify its main point before answering rhetorical questions."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Style & Audience Awareness",
+        "points": [
+          "Target audience shapes word choice: Scientific -> formal, memoir -> personal, blog -> casual",
+          "Author's purpose: Inform, persuade, entertain, explain — check word choice and tone for clues",
+          "Level of detail: Is the passage using technical jargon, simple language, or a mix?",
+          "Register shift: Switching from formal to casual (or vice versa) signals a problem"
+        ],
+        "tip": "Before each passage, ask: 'Who is this written for and why?' Then match answers to that context."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Scoring & Your English Score",
+        "points": [
+          "English score (1–36) is independent; impacts your composite score equally with Math, Reading, Science",
+          "Each question worth ~0.48 points (75 questions = 36 points total)",
+          "Wrong answer = 0 points; skipped questions = 0 points (no penalty for guessing)",
+          "Aim: 70+ correct answers = 34+; 65+ = 32+; 60+ = 29+"
+        ],
+        "tip": "Guess on every question you don't get to; wrong guesses don't lower your score."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Test Day Mindset & Strategy",
+        "points": [
+          "Anxiety management: Take deep breaths between passages; don't overthink any single question",
+          "Pacing check: At 22.5 min (halfway), you should be finishing passage 2.5",
+          "Guessing policy: Never leave a question blank — a guess has 20% chance vs. 0%",
+          "Mental stamina: English is first section; stay sharp and focused through all 5 passages"
+        ],
+        "tip": "The first 10 minutes set your rhythm — nail those early passages to build confidence."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Diagnostic: Find Your Weak Areas",
+        "points": [
+          "Grammar errors: Count how many you miss per test — target these if >10 per test",
+          "Rhetorical skills: Do you lose more points on strategy or punctuation questions?",
+          "Passage type: Which passage style trips you up (narrative, formal essay, technical)?",
+          "Time management: Are you running out of time, or making careless mistakes in your rush?"
+        ],
+        "tip": "Track misses by category (comma splices, modifiers, tone) to focus your review efficiently."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Practice & Review Protocol",
+        "points": [
+          "Timed practice: Always do full passages under time pressure — untimed practice doesn't build pacing",
+          "Review strategy: For each wrong answer, write down WHY it's wrong in one sentence",
+          "Error tracking: Keep a 'grammar errors' list — if you miss the same rule twice, drill it",
+          "Retake passages: Re-do hard passages 1 week later to check if you learned the pattern"
+        ],
+        "tip": "Quality review > quantity of practice. One thoroughly reviewed test beats three skimmed tests."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Next Steps & Free ACT Mock Test",
+        "points": [
+          "Practice full passages under timed conditions (15 min/5 questions per passage)",
+          "Review every mistake — grammar or rhetorical? Make a list of recurring patterns",
+          "Take a free ACT mock test to track your progress and identify weak areas",
+          "Re-take weak sections after 1 week of targeted practice"
+        ],
+        "cta": "Free ACT English Mock Test Available",
+        "tip": "Consistent practice beats cramming. Aim for 15 min/day, 5 days/week."
+      }
+    ]
+  },
+  "act-math": {
+    "id": "act-math",
+    "exam": "act",
+    "examName": "ACT",
+    "section": "Math",
+    "emoji": "🔢",
+    "title": "ACT Math — Tips, Tricks & Strategy",
+    "summary": "Tackle 60 questions in 60 minutes using backsolving, plugging in, and strategic guessing.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "What is ACT Math?",
+        "points": [
+          "60 questions, 60 minutes (1 min/question average); calculator ALLOWED on all questions",
+          "Content: Pre-algebra, Elementary algebra, Intermediate algebra, Coordinate geometry, Plane geometry, Trigonometry",
+          "5 answer choices (A–E); questions ordered easy to hard (roughly)",
+          "Score range: 1–36 (equal weight on composite with English, Reading, Science)"
+        ],
+        "tip": "The calculator is a tool, not a crutch — use it wisely, not for every arithmetic step."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Time Management & Pacing",
+        "points": [
+          "Questions 1–30: Easier; aim 20 seconds each (10 min total for 30 questions)",
+          "Questions 31–50: Medium; aim 1 min each (20 min total)",
+          "Questions 51–60: Hard; aim 1.5–2 min each or strategic guess (15 min left to attempt 10)",
+          "If stuck for 30 seconds, skip and return; don't waste time on one hard problem"
+        ],
+        "tip": "Front-load the easier questions to build confidence and points. Rush through hard ones and come back if time."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Backsolving (Testing Answers)",
+        "points": [
+          "When unsure how to solve, plug each answer back into the problem — one will work",
+          "Start with (C) (middle choice) or (D) — eliminates half the range with one test",
+          "Saves time vs. solving algebraically if the algebra is messy",
+          "Works best for: Equations, word problems, and geometry where you can verify the answer"
+        ],
+        "example": {
+          "label": "Backsolving Example",
+          "text": "Find x: 2x + 5 = 17. Try (C) x=6: 2(6)+5=17? Yes! Answer: C."
+        },
+        "tip": "Backsolving is fastest for late-section hard problems; less useful for early easy ones."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Plugging In Numbers (Substitution)",
+        "points": [
+          "If the problem has variables but answer choices are numbers, PLUG IN your own numbers for the variables",
+          "Pick simple, easy-to-work-with numbers: 2, 5, 10, or 100",
+          "Plug your numbers into each answer choice and see which matches your calculated result",
+          "Helpful for: Algebra, percentages, and word problems with unknown quantities"
+        ],
+        "example": {
+          "label": "Plugging In Example",
+          "text": "If x+y = 10 and x=2, which expresses y in terms of x? Try x=2: y=8. Test answers with x=2, see which gives y=8. Answer works!"
+        },
+        "tip": "Plugging in is faster and clearer than solving algebraically when dealing with complex expressions."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Pre-Algebra & Number Properties",
+        "points": [
+          "Factors, multiples, primes, integers, ratios, proportions, percentage",
+          "Order of operations (PEMDAS): Parentheses, Exponents, Multiply/Divide, Add/Subtract",
+          "Negative numbers: Negative × Negative = Positive; Negative + Positive = depends on magnitude",
+          "Decimals & fractions: Convert between them; be careful with place value"
+        ],
+        "example": {
+          "label": "Percentage Example",
+          "text": "What is 20% of 50? 20/100 × 50 = 10. Common mistake: Confusing percent increase vs. decrease."
+        },
+        "tip": "If you're unsure, use your calculator — but make sure you set it up correctly."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Elementary & Intermediate Algebra",
+        "points": [
+          "Solving linear equations: Isolate the variable using inverse operations (add/subtract, multiply/divide)",
+          "Systems of equations: Solve for two unknowns using substitution or elimination",
+          "Quadratic equations: Factor or use the quadratic formula; know that x = (-b ± √(b²-4ac)) / 2a",
+          "Exponents & radicals: x^a × x^b = x^(a+b); √x × √y = √(xy); negative exponents = reciprocals"
+        ],
+        "example": {
+          "label": "Quadratic Example",
+          "text": "Solve: x² + 5x + 6 = 0. Factor: (x+2)(x+3)=0. Solutions: x = -2 or x = -3."
+        },
+        "tip": "Factoring is faster than the quadratic formula on most ACT problems — practice it."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Coordinate Geometry & Graphing",
+        "points": [
+          "Slope: m = (y₂ - y₁) / (x₂ - x₁); positive = up-right, negative = down-right, zero = horizontal, undefined = vertical",
+          "Lines: y = mx + b (slope-intercept form); m = slope, b = y-intercept",
+          "Distance formula: d = √[(x₂-x₁)² + (y₂-y₁)²]",
+          "Midpoint formula: Midpoint = [(x₁+x₂)/2, (y₁+y₂)/2]"
+        ],
+        "example": {
+          "label": "Slope Example",
+          "text": "Line through (2,3) and (4,7): slope = (7-3)/(4-2) = 4/2 = 2. Equation: y = 2x + b; plug in (2,3): 3 = 2(2) + b, so b = -1. Line: y = 2x - 1."
+        },
+        "tip": "Coordinate geometry questions often have diagrams — sketch the points on a graph if unsure."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Plane Geometry: Angles & Triangles",
+        "points": [
+          "Angles: Sum of angles in a triangle = 180°; sum in a quadrilateral = 360°",
+          "Parallel lines cut by a transversal: Corresponding angles are equal; alternate interior angles are equal",
+          "Triangle types: Right (90° angle), Isosceles (2 equal sides/angles), Equilateral (3 equal sides/angles, all 60°)",
+          "Pythagorean theorem: a² + b² = c² (right triangles only)"
+        ],
+        "example": {
+          "label": "Triangle Angles Example",
+          "text": "Triangle has angles 60° and 70°. Third angle = 180 - 60 - 70 = 50°."
+        },
+        "tip": "Pythagorean theorem is heavily tested — know common triples (3-4-5, 5-12-13, 8-15-17)."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Plane Geometry: Circles & Area",
+        "points": [
+          "Circle: Radius (r), diameter (d = 2r), circumference (C = 2πr), area (A = πr²)",
+          "Area formulas: Triangle (½bh), Rectangle (l × w), Parallelogram (bh), Trapezoid (½(b₁+b₂)h), Circle (πr²)",
+          "Volume formulas: Cube (s³), Rectangular solid (l × w × h), Cylinder (πr²h), Sphere (⁴⁄₃πr³)",
+          "Surface area: Sum of all faces; cylinder = 2πr² + 2πrh"
+        ],
+        "example": {
+          "label": "Area Example",
+          "text": "Circle with radius 3: A = π(3)² = 9π ≈ 28.27 sq units. Circumference = 2π(3) = 6π."
+        },
+        "tip": "Know the formulas; the test doesn't give them. Write them down at the start if you tend to forget."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Trigonometry Basics",
+        "points": [
+          "SOH-CAH-TOA: sin = opposite/hypotenuse, cos = adjacent/hypotenuse, tan = opposite/adjacent",
+          "Special angles: 30-60-90 and 45-45-90 triangles have known ratios (memorize!)",
+          "Inverse trig: sin⁻¹, cos⁻¹, tan⁻¹ to find angles when you know the ratio",
+          "Trig identities: sin² + cos² = 1; tan = sin/cos"
+        ],
+        "example": {
+          "label": "Trig Example",
+          "text": "Right triangle: opposite = 3, hypotenuse = 5. sin(θ) = 3/5. Find θ: θ = sin⁻¹(0.6) ≈ 37°."
+        },
+        "tip": "Trig appears in ~5–10 questions. If it's not your strength, focus on easier algebra/geometry first."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Word Problems: Setup & Strategy",
+        "points": [
+          "Read twice: Once for overall meaning, once for specific numbers and what you're solving for",
+          "Translate words to math: 'is' = =, 'of' = ×, 'per' = ÷, 'more than' = +, 'less than' = -",
+          "Define variables clearly: Let x = the unknown quantity",
+          "Set up the equation, solve, and check: Plug your answer back into the problem"
+        ],
+        "example": {
+          "label": "Word Problem Example",
+          "text": "'A store sells shirts for $15 each. If you buy 4 shirts, how much do you spend?' Setup: Cost = 15 × 4 = $60."
+        },
+        "tip": "Word problems are just algebra in disguise. Break them into small pieces and translate each piece."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Common Math Traps & Mistakes",
+        "points": [
+          "Sign errors: Forgetting to distribute a negative or flip the inequality when multiplying by -1",
+          "Order of operations: Forgetting to do exponents before multiplication (2 + 3² = 11, not 25)",
+          "Misreading the question: The question asks for x, but you found 2x — double-check what's being asked",
+          "Approximation errors: Rounding mid-calculation and getting a slightly wrong answer"
+        ],
+        "tip": "Before submitting an answer, ask: 'Does this make sense in context?' and 'Did I answer the right question?'"
+      },
+      {
+        "emoji": "🔘",
+        "title": "Estimation & Eliminating Wrong Answers",
+        "points": [
+          "Rough estimate: If the answer should be around 50 and the choices are 10, 50, 200, 500, 5000, eliminate extremes",
+          "Units: Watch for unit conversion (inches to feet, minutes to hours) — a common trap",
+          "Reasonableness: A negative answer to a 'how many items' problem is wrong; a probability > 1 is wrong",
+          "Eliminate first: Cross out clearly wrong answers before calculating exactly"
+        ],
+        "tip": "Elimination narrows your guessing odds; even a smart guess beats a random one."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Sequence & Series (Bonus Topic)",
+        "points": [
+          "Arithmetic sequence: Same difference between terms (a, a+d, a+2d, ...); sum = n/2 × (first + last)",
+          "Geometric sequence: Same ratio between terms (a, ar, ar², ...); sum = a × (1 - rⁿ) / (1 - r)",
+          "Factorials: n! = n × (n-1) × ... × 1; 5! = 120",
+          "Permutations & combinations: nPr (order matters) vs. nCr (order doesn't)"
+        ],
+        "tip": "Sequences appear in ~1–3 questions; other topics are more heavily tested."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Probability & Counting (Bonus Topic)",
+        "points": [
+          "Probability: # favorable outcomes / # total outcomes; always between 0 and 1",
+          "Independent events: P(A and B) = P(A) × P(B); 'and' means multiply",
+          "Dependent events: Order matters; adjust the denominator after each selection",
+          "Counting principle: If you have choices for A (n ways) and B (m ways), total = n × m"
+        ],
+        "tip": "Probability is low-density on ACT Math (~1–2 questions); focus on algebra and geometry."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Scoring & Your Math Score",
+        "points": [
+          "Math score (1–36) is independent; equal weight in composite calculation",
+          "Each question worth ~0.6 points (60 questions = 36 points total)",
+          "No penalty for guessing; wrong answers = 0 points",
+          "Aim: 55+ correct = 32+; 50+ correct = 29+; 45+ correct = 26+"
+        ],
+        "tip": "Skipping hard questions to save time is smart — guessing on late questions is better than leaving blanks."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Test-Day Math Strategy",
+        "points": [
+          "Read the question TWICE: Once to understand, once to identify what you're solving for",
+          "Calculator use: Use it for arithmetic, but NOT for setting up the problem — sketches and equations first",
+          "Check your setup: Before calculating, verify your equation/formula matches the question context",
+          "Pacing rule: If a question takes >2 min, skip it and come back; don't let one hard problem cost time"
+        ],
+        "tip": "Accuracy on easy questions is more important than solving hard ones. Get the first 40 right before chasing the last 20."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Common Careless Mistakes to Avoid",
+        "points": [
+          "Misreading: The question asks for the area, but you calculated circumference — reread the final question",
+          "Sign errors: Negative signs in front of parentheses flip all signs inside (-(x+2) = -x-2)",
+          "Calculator errors: Forgetting parentheses: 5+3*2 = 11, not 16 (order of operations!)",
+          "Unit conversion: Answer is in dollars but question asks for cents — multiply by 100"
+        ],
+        "tip": "Before finalizing an answer, scan the problem once more: Does my answer match what's being asked?"
+      },
+      {
+        "emoji": "🔘",
+        "title": "Next Steps & Free ACT Mock Test",
+        "points": [
+          "Practice timed sections: 15 min for ~15 questions (match the pacing of the real test)",
+          "Review every wrong answer: Algebra error, careless mistake, or concept gap?",
+          "Take a free full-length ACT mock test to diagnose weak content areas",
+          "Focus practice on your weaker topics: Trig, coordinate geometry, or quadratics?"
+        ],
+        "cta": "Free ACT Math Mock Test Available",
+        "tip": "Consistent daily practice (30 min/day) beats cramming. Build speed and accuracy together."
+      }
+    ]
+  },
+  "act-reading": {
+    "id": "act-reading",
+    "exam": "act",
+    "examName": "ACT",
+    "section": "Reading",
+    "emoji": "📖",
+    "title": "ACT Reading — Tips, Tricks & Strategy",
+    "summary": "Master 40 questions across 4 passages in 35 minutes using strategic skimming and line-reference skills.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "What is ACT Reading?",
+        "points": [
+          "40 questions, 35 minutes across 4 passages (~8.5 min per passage)",
+          "Passage types: Prose Fiction, Social Science, Humanities, Natural Science",
+          "Question types: Main idea, detail, inference, vocabulary-in-context, author's purpose/tone",
+          "Score range: 1–36 (equal weight in composite; reading fatigue can hurt performance)"
+        ],
+        "tip": "Reading is endurance; pace yourself on the first two passages to save energy for passage 4."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Time Management & Passage Strategy",
+        "points": [
+          "Budget: ~2 min to skim passage, ~6 min to answer 10 questions = 8 min per passage",
+          "Skim strategy: Read intro, first paragraph, topic sentences, and last paragraph — skip dense middle sections",
+          "Question-first tactic: Read questions before passage? NO — you'll waste time hunting; skim first, then answer",
+          "Mark up: Underline main claim, circle key names/dates, bracket confusing passages for reference"
+        ],
+        "tip": "If you're behind on pacing, move to the next passage. Guessing on 2 at the end beats slow accuracy on all."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Reading Comprehension: Main Idea & Structure",
+        "points": [
+          "Main idea: Why did the author write this? What's the central argument or theme?",
+          "Structure: Intro (thesis) -> Supporting evidence/examples -> Counter-argument or nuance -> Conclusion",
+          "Passage tone: Is the author argumentative, analytical, narrative, or humorous?",
+          "Purpose: Explain, persuade, inform, entertain, or critique?"
+        ],
+        "example": {
+          "label": "Passage Structure Example",
+          "text": "Fiction: Intro (setting, character) -> Conflict -> Rising action -> Climax -> Resolution. Nonfiction: Thesis -> Evidence -> Analysis -> Conclusion."
+        },
+        "tip": "The first sentence of each paragraph often tells you its purpose; read those closely."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Detail Questions & Line References",
+        "points": [
+          "Detail questions: 'According to the passage, what did X do?' — answer is DIRECTLY in the passage",
+          "Line references: The question points to a specific line or paragraph — go there first and reread the context",
+          "Read around the reference: The answer is often 1–2 sentences before or after the cited line",
+          "Don't infer: On detail questions, match the passage exactly — eliminate answers that are close but wrong"
+        ],
+        "example": {
+          "label": "Detail Question Example",
+          "text": "Q: 'In line 15, what did the scientist discover?' A: Reread lines 10–20 and find the discovery mentioned. Pick the match."
+        },
+        "tip": "Detail questions are the easiest — use them to build confidence and points. Use passage numbers as a GPS."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Inference & Author's Intent Questions",
+        "points": [
+          "Inference: What can be reasonably concluded from the passage? Go beyond what's stated but stay close",
+          "Support requirement: Every inference must have evidence in the passage; no outside knowledge",
+          "Author's purpose: Why did the author mention this detail? What does it support?",
+          "Tone: Is the author approving, critical, neutral, sarcastic? Word choice reveals intent"
+        ],
+        "example": {
+          "label": "Inference Example",
+          "text": "Passage: 'The key hung on the wall untouched for years.' Inference: The key wasn't used often (reasonable) vs. The key opens a locked room (no evidence). First is better."
+        },
+        "tip": "On inference questions, pick the answer that's most directly supported by the passage, not the most clever one."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Vocabulary-in-Context Questions",
+        "points": [
+          "Word definition: Test your understanding of the word AS USED IN THE PASSAGE, not the dictionary definition",
+          "Context clue: Look at surrounding sentences — they hint at meaning (cause/effect, contrast, restatement)",
+          "Multiple meanings: Many words have 2+ meanings (e.g., 'bank' = financial institution or river edge) — pick the contextual one",
+          "Eliminate: Denotation (literal meaning) is sometimes right, but connotation (feeling/implication) often matters"
+        ],
+        "example": {
+          "label": "Vocab-in-Context Example",
+          "text": "Sentence: 'The project ran into resistance from the committee.' Does 'resistance' mean (A) opposition (B) force opposing motion (C) electrical property? Answer: (A) opposition (fits the human context)."
+        },
+        "tip": "Always reread the sentence with each answer choice plugged in; hear how it sounds."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Contrast & Comparison in Passage Analysis",
+        "points": [
+          "Contrasts: 'However,' 'yet,' 'but,' 'although' signal a shift — note what's being opposed",
+          "Comparisons: 'Similarly,' 'like,' 'both' signal parallel ideas — identify the shared quality",
+          "Author's bias: Does the author favor one side or show both perspectives? This hints at purpose",
+          "Nuance: Sometimes the author agrees with a criticism but then clarifies — catch the 'but' that shifts meaning"
+        ],
+        "example": {
+          "label": "Contrast Example",
+          "text": "Passage: 'Early critics dismissed the theory. However, recent evidence supports it.' Author's intent: Early dismissal was wrong; now vindicated. This nuance matters on questions."
+        },
+        "tip": "When you see a contrast word, pause and reread carefully — the author is telling you something important."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Prose Fiction Strategy (Narrative)",
+        "points": [
+          "Character motive: Why does the character act? Look for clues in dialogue and internal thought",
+          "Conflict: External (character vs. other/environment) vs. internal (character vs. self/emotions)",
+          "Setting & mood: Time, place, and atmosphere shape the story's meaning",
+          "Point of view: First person (I/we), third person (he/she) — affects what the reader knows"
+        ],
+        "example": {
+          "label": "Fiction Example",
+          "text": "Character avoids eye contact and mumbles answers. Why? Inference: shy, anxious, or hiding something. Reread dialogue for clues."
+        },
+        "tip": "Fiction passages test inference and tone heavily. Focus on what the character does and says, not just events."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Social Science Strategy (History, Psychology, Sociology)",
+        "points": [
+          "Thesis-first: The author makes a claim and supports it with evidence and examples",
+          "Evidence types: Historical facts, statistics, expert quotes, research findings, case studies",
+          "Argument structure: Does the author use cause-effect, comparison, or problem-solution?",
+          "Time: Pay attention to dates and historical context — things change over time"
+        ],
+        "example": {
+          "label": "Social Science Example",
+          "text": "Passage argues that immigration drives economic growth. Evidence: historical data, economist quotes, statistics. Questions test whether you traced the argument."
+        },
+        "tip": "Social science passages are dense — underline the thesis and 2–3 main supporting points. That's all you need."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Humanities Strategy (Literature, Art, Philosophy)",
+        "points": [
+          "Author's interpretation: What does the author argue about the book, art, or philosophy?",
+          "Evidence: Quotations, themes, symbolism, and historical context support the interpretation",
+          "Judgment: Does the author admire, critique, or analytically examine the work?",
+          "Nuance: Humanities passages often have 'on the other hand' — the author acknowledges complexity"
+        ],
+        "example": {
+          "label": "Humanities Example",
+          "text": "Passage analyzes a poem's use of color. Author argues color = emotional turmoil. Questions ask what color represents and why the author interprets it that way."
+        },
+        "tip": "Humanities passages are interpretive. The 'right' answer is the one the author defends, not your opinion."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Natural Science Strategy (Biology, Chemistry, Physics, Earth Science)",
+        "points": [
+          "Process or mechanism: How does something work? Identify steps and relationships",
+          "Definition clarity: Scientific terms are precise — distinguish subtle differences (heat vs. temperature)",
+          "Evidence: Data, experiments, observations support the theory",
+          "Scope: Does the principle apply everywhere or under specific conditions?"
+        ],
+        "example": {
+          "label": "Natural Science Example",
+          "text": "Passage explains photosynthesis: Light -> energy -> glucose. Questions test understanding of the process, not memorized facts."
+        },
+        "tip": "Natural science passages are logical. If you trace the cause-effect flow, you'll answer most questions without rereading."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Eliminating Wrong Answers on Reading Questions",
+        "points": [
+          "Out of scope: Answer mentions something not in the passage — eliminate",
+          "Opposite: Answer contradicts what the passage says — eliminate",
+          "Too extreme: 'Always,' 'never,' 'all,' 'none' are risky; look for qualified language",
+          "Right idea, wrong reason: The answer is true but the justification is wrong — eliminate"
+        ],
+        "example": {
+          "label": "Wrong Answer Example",
+          "text": "Passage: 'The study suggests that exercise may improve mood.' Wrong: 'The study proves exercise always improves mood.' (Too extreme; 'may' != 'always')"
+        },
+        "tip": "If you're stuck, eliminate the obviously wrong answers first; your odds of guessing right improve."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Pacing Trouble & Recovery",
+        "points": [
+          "If you're behind: Skip the hardest questions (often inference/tone) and do detail questions first",
+          "Last passage panic: If you have <2 min left, skim the questions, make strategic guesses, and move on",
+          "Build speed: Practice passages under timed conditions; aim to finish in 7–8 min, not 10–12",
+          "Flag hard questions: Mark them as you go so you can return after finishing all passages"
+        ],
+        "tip": "Speed comes from familiarity, not rushing. Do practice passages 3–4 times per week to train your brain."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Scoring & Your Reading Score",
+        "points": [
+          "Reading score (1–36) is independent; equal weight in composite with English, Math, Science",
+          "Each question worth ~0.9 points (40 questions = 36 points total)",
+          "No penalty for guessing; wrong answers = 0 points",
+          "Aim: 36+ correct = 34+; 32+ correct = 31+; 28+ correct = 27+"
+        ],
+        "tip": "Reading is hardest to improve quickly; consistent practice over weeks builds comprehension speed."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Passage Type Quick Reference",
+        "points": [
+          "Prose Fiction: Focus on character motivation, conflict, tone changes — less detail, more inference",
+          "Social Science: Main argument + evidence structure — identify thesis and supporting examples",
+          "Humanities: Author's interpretation + evaluation — understand critical viewpoint, not just facts",
+          "Natural Science: Process/mechanism + data support — causation, not just information"
+        ],
+        "tip": "Knowing what each passage type emphasizes helps you skip irrelevant details and zoom in on key ideas."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Building Reading Stamina",
+        "points": [
+          "Read actively: Underline, annotate, restate ideas in your head — passive reading causes mind-drift",
+          "First passage setup: Don't rush passage 1 to 'bank' time — set a steady pace and stick to it",
+          "Mental fatigue: By passage 4, your brain is tired — expect inference questions to feel harder",
+          "Recovery technique: If you zone out mid-passage, take 10 seconds to refocus before continuing"
+        ],
+        "tip": "Reading stamina improves with practice. The more passages you do under timed conditions, the stronger you get."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Diagnostic: Your Reading Weak Spot",
+        "points": [
+          "Detail vs. Inference: Do you miss easy line-reference questions or harder inference questions?",
+          "Passage type: Do you struggle with fiction (emotion/motivation) or technical prose (dense info)?",
+          "Time management: Running out of time on passage 4, or rushing and making careless mistakes?",
+          "Vocabulary: Stuck on vocab-in-context? Review word meanings and context clue types"
+        ],
+        "tip": "Track which question types you miss most — focus your practice on that category, not all passages equally."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Next Steps & Free ACT Mock Test",
+        "points": [
+          "Practice one passage at a time: Skim, answer questions, review misses, then move to next",
+          "Time yourself: Aim for 8–9 min per passage; track which passage type (fiction vs. science) is slowest",
+          "Identify patterns: Do you struggle with inference, vocab, or detail? Focus practice accordingly",
+          "Take a free full-length ACT mock test to simulate real test conditions and pacing"
+        ],
+        "cta": "Free ACT Reading Mock Test Available",
+        "tip": "Reading improves with habit. Read 20–30 min daily (articles, books, essays) to build speed and stamina."
+      }
+    ]
+  },
+  "act-science": {
+    "id": "act-science",
+    "exam": "act",
+    "examName": "ACT",
+    "section": "Science",
+    "emoji": "🔬",
+    "title": "ACT Science — Tips, Tricks & Strategy",
+    "summary": "Conquer 40 questions in 35 minutes by reading data first, finding trends, and comparing experimental designs.",
+    "slides": [
+      {
+        "emoji": "🔘",
+        "title": "What is ACT Science?",
+        "points": [
+          "40 questions, 35 minutes across 6–7 passages (~5 min per passage); NO outside science knowledge needed",
+          "Passage types: Data Representation (graphs/tables), Research Summaries (experiments), Conflicting Viewpoints (competing theories)",
+          "Test reasoning from data, NOT memorized facts — interpret tables, graphs, and experimental results",
+          "Score range: 1–36 (equal weight in composite; poorest predictor of college science performance)"
+        ],
+        "tip": "ACT Science is a reading & reasoning test, not a science test. You don't need chemistry or biology knowledge."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Time Management & Passage Strategy",
+        "points": [
+          "Budget: ~5 min per passage (1 min to read, 4 min to answer ~5–6 questions)",
+          "Read the DATA FIRST, then the passage: Graphs and tables are the question source, not prose",
+          "Skim passage prose: It provides context and explains the experiment; don't memorize details",
+          "Mark key features: Axis labels, units, legends, and data patterns; these answer most questions"
+        ],
+        "tip": "Science test-takers often waste time reading prose. Skip directly to the graphs and tables; they tell the story."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Data Representation Passages: Reading Graphs & Tables",
+        "points": [
+          "Axes: X-axis (independent variable, what changes) vs. Y-axis (dependent variable, what's measured)",
+          "Units & scale: Voltage, temperature, moles, seconds — units matter for comparisons",
+          "Trends: Is the line rising, falling, flat, or curved? When does it change direction?",
+          "Multiple lines/variables: Compare trends across conditions; note where lines intersect or diverge"
+        ],
+        "example": {
+          "label": "Graph Reading Example",
+          "text": "Graph: X = Temperature (°C), Y = Enzyme activity (%). Trend: Activity rises 20–40°C, peaks at 40°C, drops 40–80°C. Q: 'At what temp is activity highest?' Answer: 40°C (read peak on Y-axis)."
+        },
+        "tip": "Tables are just data in rows/columns — same reading skill as graphs. Find the row/column intersection."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Data Representation: Interpolation & Extrapolation",
+        "points": [
+          "Interpolation: Estimating a value BETWEEN two data points (the graph line between two plotted points)",
+          "Extrapolation: Predicting a value BEYOND the shown data (extending the trend off the graph)",
+          "Caution: Extrapolation assumes the trend continues; real data often changes outside the measured range",
+          "Straight line vs. curve: Assume trends continue as shown; don't invent bends or breaks"
+        ],
+        "example": {
+          "label": "Interpolation Example",
+          "text": "Graph shows points at X=10, Y=20 and X=20, Y=40. Q: 'Estimate Y when X=15.' Answer: Midpoint = Y=30 (linear interpolation)."
+        },
+        "tip": "If a graph shows a clear trend, extend it mentally to answer prediction questions."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Research Summary Passages: Experimental Design",
+        "points": [
+          "Research question: What is the experiment testing? (Usually stated at the start)",
+          "Variables: Independent (what the experimenter changes), dependent (what's measured), control (unchanged baseline)",
+          "Setup: How many trials? What conditions? What's held constant?",
+          "Results: Did the hypothesis hold? What do the data show?"
+        ],
+        "example": {
+          "label": "Experiment Example",
+          "text": "Study: Does pH affect enzyme activity? Change pH (independent) -> measure enzyme activity (dependent) -> control is neutral pH. Results show peak activity at pH 7. Q: 'What is the control?' Answer: Neutral pH condition."
+        },
+        "tip": "Identify the independent variable FIRST — it's usually the answer to 'what did they change?'"
+      },
+      {
+        "emoji": "🔘",
+        "title": "Research Summaries: Comparing Experiments",
+        "points": [
+          "Multiple experiments: Different setups testing the same question; compare what changed between them",
+          "Experiment differences: A changed condition (heat, pH, concentration); B added a new variable; C expanded the range",
+          "Consistency: Do multiple experiments reach the same conclusion? Strengthens the claim",
+          "Limitations: Did one experiment fail to test something? Questions often ask this"
+        ],
+        "example": {
+          "label": "Comparing Experiments Example",
+          "text": "Exp 1: pH 5–9. Exp 2: pH 5–12. Q: 'How does Exp 2 improve on Exp 1?' Answer: Exp 2 tests a wider pH range (extends knowledge)."
+        },
+        "tip": "When comparing experiments, ask: 'What did Exp 2 do differently/better?' That's often the answer."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Conflicting Viewpoints: Comparing Theories",
+        "points": [
+          "Two or three competing explanations for the same phenomenon — one may be correct, both partially right, or context-dependent",
+          "Viewpoint summaries: Read each theory's key claims and supporting reasoning",
+          "Points of agreement: Both theories might agree on some facts but disagree on interpretation",
+          "Points of disagreement: Identify WHERE and WHY the theories diverge",
+          "Evidence: Which theory's claims are supported by the data presented?"
+        ],
+        "example": {
+          "label": "Viewpoint Example",
+          "text": "Theory A: Dinosaurs went extinct due to meteor impact. Theory B: Volcanic eruptions caused extinction. Both agree extinction occurred; differ on cause. Q: 'Which theory is best supported by fossil evidence?' Answer: Look at the provided evidence; determine which it favors."
+        },
+        "tip": "Conflicting Viewpoints passages test your ability to evaluate competing claims — stay neutral and let the data decide."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Conflicting Viewpoints: Finding Support & Weaknesses",
+        "points": [
+          "Supporting evidence: Which facts or observations back each theory? (Data may favor one over the other)",
+          "Weaknesses: What assumption does each theory make? What evidence could refute it?",
+          "Plausibility: Is each theory consistent with known science? (Don't use outside knowledge; evaluate based on passage info)",
+          "New data: If new information is presented, which theory does it support or contradict?"
+        ],
+        "example": {
+          "label": "Support Example",
+          "text": "New evidence: High iridium levels in rocks (meteorite marker). Q: 'Which theory is now more likely?' Answer: Theory A (meteor impact) — iridium supports it."
+        },
+        "tip": "On 'new data' questions, reread the theory statements and ask: 'Would this evidence support or contradict it?'"
+      },
+      {
+        "emoji": "🔘",
+        "title": "Data & Variables: Identifying Relationships",
+        "points": [
+          "Positive correlation: As one variable increases, the other increases (upward trend)",
+          "Negative correlation: As one increases, the other decreases (downward trend)",
+          "No correlation: No relationship; data scattered randomly",
+          "Causal vs. correlational: Correlation != causation (both might depend on a third factor)"
+        ],
+        "example": {
+          "label": "Correlation Example",
+          "text": "Graph: Temperature (X) vs. Ice cream sales (Y). Positive correlation: hotter days lead to more sales. But causation? Heat causes sales, not vice versa."
+        },
+        "tip": "ACT doesn't ask about causation explicitly, but correlation questions assume: correlation direction = variable relationship."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Common ACT Science Question Types",
+        "points": [
+          "Reading graphs: 'According to the graph, as X increases, Y...' — trace the line/trend",
+          "Interpolation/extrapolation: 'Estimate Y when X = ...' — find or predict the value",
+          "Hypothesis & data fit: 'Which result best supports the hypothesis?' — match data to prediction",
+          "Experiment design: 'What is the control/variable/limitation?' — identify experimental structure",
+          "Comparing viewpoints: 'Which theory explains the data best?' — evaluate support for each"
+        ],
+        "tip": "Most questions ask: 'What does the data show?' Focus on the numbers, not your science knowledge."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Avoiding Traps & Misreadings",
+        "points": [
+          "Axis confusion: Did you read X vs. Y correctly? Swapping axes reverses your answer",
+          "Unit mismatch: Is the answer in °C or K? cm or m? Always check units in the graph/question",
+          "Scale misreading: Linear vs. logarithmic scale changes how you interpret data (log scale compresses large ranges)",
+          "Outside knowledge: Don't inject what you 'know' from chemistry class — answer ONLY from the passage"
+        ],
+        "example": {
+          "label": "Trap Example",
+          "text": "Q: 'When temperature = 50, what is pH?' You skim and see pH=7. But the axis label says 'Temperature (°C) vs. Pressure (atm).' You read the WRONG axis!"
+        },
+        "tip": "Before answering, say aloud: 'X-axis = ?, Y-axis = ?' This catches axis swaps."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Pacing & Guessing Strategy",
+        "points": [
+          "If behind: Skip Conflicting Viewpoints (hardest, ~6 questions) and focus on Data Rep (easiest, ~15 questions)",
+          "Time left <1 min: Make educated guesses on remaining questions based on trends you see in data",
+          "Easy questions first: Answer fact-based 'read the graph' questions before inference-heavy ones",
+          "Flag and return: Mark ambiguous questions and revisit after completing all other passages"
+        ],
+        "tip": "Science passages are more forgiving for time — you don't need to fully 'understand' experiments, just read data."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Scoring & Your Science Score",
+        "points": [
+          "Science score (1–36) is independent; equal weight in composite with English, Math, Reading",
+          "Each question worth ~0.9 points (40 questions = 36 points total)",
+          "No penalty for guessing; wrong answers = 0 points",
+          "Aim: 36+ correct = 34+; 32+ correct = 31+; 28+ correct = 27+"
+        ],
+        "tip": "Science is learnable quickly — focus on graph-reading and experimental design, not memorizing science."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Data Pitfalls: False Patterns & Trends",
+        "points": [
+          "Assume continuity: Just because data shows one trend doesn't mean it continues forever — be cautious on extrapolation",
+          "Curve vs. line: Is the trend truly linear, or is it curved? Misreading the curve shape leads to wrong extrapolations",
+          "Sample bias: Limited data (e.g., only 2 data points) might not represent the full pattern — watch the sample size",
+          "Noise: Small fluctuations don't mean the trend changed; look for large, consistent changes"
+        ],
+        "tip": "When a question asks 'predict when X=100,' check: Is the trend linear? Does it extend that far in the shown data?"
+      },
+      {
+        "emoji": "🔘",
+        "title": "Experimental Design Red Flags",
+        "points": [
+          "Confounding variables: If the experiment doesn't control for an alternative cause, the result is ambiguous",
+          "Sample size: A study with only 5 subjects is weaker than one with 500 — sample size affects confidence",
+          "Replication: Can other labs repeat the experiment? ACT sometimes asks if results are reproducible",
+          "Bias: Are the experimenters favoring one result over another? Blind studies avoid this"
+        ],
+        "example": {
+          "label": "Confounding Example",
+          "text": "Study: Does coffee improve mood? But subjects also exercised (which improves mood). Confounding variable: exercise. Can't isolate coffee's effect."
+        },
+        "tip": "On 'experimental design' questions, ask: 'What variable might they have missed that could explain the result?'"
+      },
+      {
+        "emoji": "🔘",
+        "title": "Interpreting Conflicting Viewpoints Carefully",
+        "points": [
+          "Don't pick your favorite: Choose the theory BEST SUPPORTED BY THE DATA, not the one you like",
+          "Partial truth: Both theories might be partly correct — look for which is MORE supported by evidence",
+          "Scope matters: Theory A might be correct at low temperatures, Theory B at high temperatures — context is key",
+          "Missing evidence: A theory isn't wrong just because it's not tested — look for direct contradiction, not absence of proof"
+        ],
+        "tip": "If two theories both seem plausible, re-examine the passage data — it will favor one over the other."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Diagnostic: Your Science Weak Spot",
+        "points": [
+          "Data reading: Struggle with graphs? Tables? Practice axis labels, scales, and trend identification",
+          "Experimental design: Confused by control groups, variables, or confounds? Drill these concepts",
+          "Conflicting Viewpoints: Hard to pick between theories? Review how evidence supports/contradicts each",
+          "Time pressure: Can't finish in 5 min per passage? Practice skimming prose and jumping straight to graphs"
+        ],
+        "tip": "Science is the fastest to improve — focus on your weakest passage type (Data Rep, Research, or Viewpoints)."
+      },
+      {
+        "emoji": "🔘",
+        "title": "Next Steps & Free ACT Mock Test",
+        "points": [
+          "Practice one passage at a time: Read data first, answer questions, review misses for data-reading errors",
+          "Identify weak spots: Do graphs confuse you? Experimental design? Conflicting Viewpoints? Practice those",
+          "Take a free full-length ACT mock test under timed conditions to simulate real test pacing",
+          "Build speed: Aim for 5 min per passage; the faster you read data, the more time for hard questions"
+        ],
+        "cta": "Free ACT Science Mock Test Available",
+        "tip": "ACT Science rewards careful data reading, not science knowledge. Master graph interpretation and you'll score high."
+      }
+    ]
+  }
+}

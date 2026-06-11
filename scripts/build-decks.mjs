@@ -45,6 +45,37 @@ const plan = basePlan.map((group) => ({
   }),
 }));
 
+// 3b) Auto-add plan groups for NEW exams (e.g. SAT/ACT/OET) whose decks exist but aren't
+// in the hand-authored base plan — so newly added exam decks appear in Prep Lessons automatically.
+const planExams = new Set(plan.map((g) => g.exam));
+const referencedIds = new Set();
+plan.forEach((g) => g.decks.forEach((d) => { if (d.id) referencedIds.add(d.id); }));
+const NEW_EXAM_EMOJI = { sat: "🎓", act: "📝", oet: "🩺", spanish: "🇪🇸", cambridge: "🎓", cael: "🍁", "pte-core": "💻" };
+const newByExam = {};
+for (const d of Object.values(merged)) {
+  if (d.exam && !planExams.has(d.exam) && !referencedIds.has(d.id)) (newByExam[d.exam] = newByExam[d.exam] || []).push(d);
+}
+for (const [exam, decks] of Object.entries(newByExam)) {
+  plan.push({
+    exam, examName: decks[0].examName || exam.toUpperCase(),
+    emoji: NEW_EXAM_EMOJI[exam] || "📚",
+    decks: decks.map((d) => ({ id: d.id, section: d.section, emoji: d.emoji, ready: true })),
+  });
+  readyCount += decks.length;
+}
+
+// 3c) Final dedup: drop any plan group whose decks already appear in an earlier group
+// (repairs an earlier double-listing of german/french that were also under "languages").
+const seenDeckIds = new Set();
+const dedupedPlan = [];
+for (const g of plan) {
+  const keep = g.decks.filter((d) => !d.id || !seenDeckIds.has(d.id));
+  if (keep.length === 0) continue;
+  keep.forEach((d) => d.id && seenDeckIds.add(d.id));
+  dedupedPlan.push({ ...g, decks: keep });
+}
+const finalPlan = dedupedPlan;
+
 // 4) Emit the generated file (compact data + tiny wiring).
 const out = `/* global window */
 "use strict";
@@ -55,7 +86,7 @@ const out = `/* global window */
 //   slides:[{ emoji, title, points:[...], example?:{label,text}, tip?, warn? }] }
 (function () {
   window.LP_SLIDE_DECKS = ${JSON.stringify(merged)};
-  window.LP_SLIDE_DECK_PLAN = ${JSON.stringify(plan)};
+  window.LP_SLIDE_DECK_PLAN = ${JSON.stringify(finalPlan)};
 })();
 `;
 fs.writeFileSync(SRC, out);

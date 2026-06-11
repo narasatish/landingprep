@@ -1,0 +1,853 @@
+{
+  "sat-reading-writing": {
+    "id": "sat-reading-writing",
+    "exam": "sat",
+    "examName": "SAT",
+    "section": "Reading & Writing",
+    "emoji": "📖",
+    "title": "Digital SAT Reading & Writing — Tips, Tricks & Strategy",
+    "summary": "Master the Digital SAT Reading & Writing section: 54 questions across 4 domains (Craft & Structure, Information & Ideas, Standard English Conventions, Expression of Ideas) in 64 minutes with adaptive modules.",
+    "slides": [
+      {
+        "emoji": "📖",
+        "title": "What is SAT Reading & Writing?",
+        "points": [
+          "One of two main sections on the Digital SAT (Math is the other)",
+          "Tests comprehension, grammar, vocabulary, and critical reading across two adaptive modules",
+          "54 questions total: 27 per module, with difficulty adjusting based on your performance",
+          "Score: 200–800 points (combined with Math for total 400–1600)"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Section Format & Timing",
+        "points": [
+          "Total time: 64 minutes (32 minutes per adaptive module)",
+          "27 questions per module, mix of passage-based and stand-alone grammar questions",
+          "Passages range 25–150 words; most are 75–100 words",
+          "Multiple-choice only: 4 options per question, one best answer"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "The Four Domains Explained",
+        "points": [
+          "Craft & Structure: words in context, text structure & rhetorical devices (15 questions)",
+          "Information & Ideas: central idea, supporting details, inference (15 questions)",
+          "Standard English Conventions: grammar, punctuation, sentence structure (14 questions)",
+          "Expression of Ideas: transitions, word choice for clarity, logical flow (10 questions)"
+        ]
+      },
+      {
+        "emoji": "📌",
+        "title": "Craft & Structure: Words in Context",
+        "points": [
+          "Choose the word or phrase that best completes the sentence based on meaning",
+          "Consider tone, formality, and context clues around the blank",
+          "Test each option by reading the sentence aloud—the best answer 'sounds right'",
+          "Common traps: similar-sounding words, words that fit but change the meaning"
+        ]
+      },
+      {
+        "emoji": "📌",
+        "title": "Craft & Structure: Text Structure & Rhetorical Devices",
+        "points": [
+          "Identify how ideas are organized (chronological, comparison, cause-effect, problem-solution)",
+          "Recognize rhetorical devices: analogy, metaphor, rhetorical question, irony, parallel structure",
+          "Understand the author's purpose: inform, persuade, entertain, or explain",
+          "Look for signal words (however, therefore, for example, in contrast) to track relationships"
+        ]
+      },
+      {
+        "emoji": "🎯",
+        "title": "Information & Ideas: Central Idea & Summary",
+        "points": [
+          "Identify the main point or thesis the author supports throughout the passage",
+          "Distinguish main idea from supporting details or examples",
+          "Look at the opening sentences and concluding sentences for clues",
+          "A strong main idea statement is broad enough to cover the passage but specific enough to be meaningful"
+        ]
+      },
+      {
+        "emoji": "🎯",
+        "title": "Information & Ideas: Supporting Evidence & Details",
+        "points": [
+          "Locate facts, examples, statistics, or quotes that directly support the main claim",
+          "Match the specific evidence to the claim it supports—avoid mismatches",
+          "Paraphrase-based questions: the answer restates the passage in different words",
+          "Be precise: '70% of students' is different from 'most students'"
+        ]
+      },
+      {
+        "emoji": "🎯",
+        "title": "Information & Ideas: Inference & Implication",
+        "points": [
+          "Infer what the author suggests or implies without directly stating",
+          "Base inferences only on evidence in the passage, not outside knowledge",
+          "Common inference phrasing: 'The passage suggests that...', 'It can be inferred...', 'The author implies...'",
+          "Avoid extreme conclusions; choose the most reasonable inference from the text"
+        ]
+      },
+      {
+        "emoji": "✏️",
+        "title": "Standard English Conventions: Grammar & Syntax",
+        "points": [
+          "Subject-verb agreement: ensure verbs match their subjects in number and person",
+          "Pronoun clarity: check that pronouns have clear, single antecedents",
+          "Verb tense consistency: keep tenses consistent unless time shifts logically",
+          "Sentence fragments and run-ons: ensure each sentence has a complete independent clause"
+        ]
+      },
+      {
+        "emoji": "✏️",
+        "title": "Standard English Conventions: Punctuation & Mechanics",
+        "points": [
+          "Comma rules: separate independent clauses with coordinating conjunctions, set off introductory phrases",
+          "Semicolons: connect related independent clauses or separate items in a complex list",
+          "Apostrophes: show possession (cat's toy) or contractions (it's = it is); NO apostrophe for plurals",
+          "Dashes and colons: use dashes for emphasis or interruption; colons introduce lists or explanations"
+        ]
+      },
+      {
+        "emoji": "✏️",
+        "title": "Standard English Conventions: Modifiers & Parallel Structure",
+        "points": [
+          "Dangling modifiers: ensure the modifier refers clearly to the word it modifies (usually the subject)",
+          "Parallel structure: when listing, use the same grammatical form (noun/noun/noun, verb/verb/verb)",
+          "Misplaced modifiers: place descriptive phrases close to what they describe to avoid ambiguity",
+          "Example: 'Running late, the keys were left on the table' should be 'Running late, she left the keys...'"
+        ]
+      },
+      {
+        "emoji": "🔗",
+        "title": "Expression of Ideas: Transitions & Logical Flow",
+        "points": [
+          "Transitions signal relationships: addition (also, furthermore), contrast (however, yet), cause-effect (therefore, because)",
+          "Choose transitions that match the logical relationship between sentences and paragraphs",
+          "Sentence combining: merge choppy sentences while maintaining clarity and flow",
+          "Consistency: use the same voice (active/passive) and subject perspective throughout"
+        ]
+      },
+      {
+        "emoji": "🔗",
+        "title": "Expression of Ideas: Word Choice & Concision",
+        "points": [
+          "Eliminate wordiness: replace 'due to the fact that' with 'because'",
+          "Avoid redundancy: don't say the same thing twice in different words",
+          "Choose words that fit the tone and formality level of the passage",
+          "Precision matters: 'walked quickly' is better than 'walked fast' in formal writing"
+        ]
+      },
+      {
+        "emoji": "🔗",
+        "title": "Expression of Ideas: Rhetorical Synthesis",
+        "points": [
+          "Select words, phrases, or sentences that strengthen the author's argument or tone",
+          "Consider how a word choice affects reader interpretation",
+          "Match the register (formal/informal) to the audience and purpose",
+          "Example: 'The proposal is flawed' (neutral) vs. 'The proposal is deeply flawed' (emphatic)"
+        ]
+      },
+      {
+        "emoji": "⚡",
+        "title": "Common Traps & Mistakes",
+        "points": [
+          "Choosing words that are 'close' but don't match the precise meaning required",
+          "Missing the main idea by focusing only on one detail or example",
+          "Applying grammar rules rigidly without considering style and flow",
+          "Confusing inference with outside knowledge; only use what the passage states",
+          "Picking the longest or most complex answer thinking it sounds 'better'"
+        ]
+      },
+      {
+        "emoji": "⏳",
+        "title": "Time Management Strategy",
+        "points": [
+          "Budget ~45 seconds per question (27 questions × 32 min = 71 sec/question with buffer)",
+          "Quick scan strategy: read the question first, then read the passage for that question only",
+          "Flag and return: don't spend 2+ minutes on one question; mark it and come back",
+          "Passage context: some grammar/vocabulary questions need passage context; others are stand-alone",
+          "Adaptive advantage: correct answers on Module 1 lead to harder (and more rewarding) Module 2"
+        ]
+      },
+      {
+        "emoji": "📈",
+        "title": "Scoring & What You Need",
+        "points": [
+          "Each correct answer = 1 point; no penalty for wrong answers or blanks",
+          "Module 2 difficulty determines scoring: correct answers on harder questions = more points",
+          "Target: 90% accuracy (49/54) for a competitive score; 80% (43/54) is solid",
+          "Reading-specific weakness? Prioritize vocabulary and main idea. Grammar weak? Focus on SEC rules."
+        ]
+      },
+      {
+        "emoji": "🎓",
+        "title": "Domain Focus: Where to Concentrate",
+        "points": [
+          "If Time-Strapped: prioritize Information & Ideas (35% of section) and SEC (26%)",
+          "If Low Accuracy: drill Craft & Structure (words in context) and Inference separately",
+          "If Grammar-Weak: spend 2 weeks drilling SEC rules (subject-verb, comma, parallel structure)",
+          "If Vocabulary-Weak: use context-clue strategy and the official SAT vocabulary list"
+        ]
+      },
+      {
+        "emoji": "🚀",
+        "title": "Before Test Day",
+        "points": [
+          "Take full-length Digital SAT practice tests under timed conditions (both modules back-to-back)",
+          "Review errors: were they careless, conceptual, or time-pressure mistakes?",
+          "Practice on the Bluebook app (the official digital testing platform) to get used to the interface",
+          "Memorize the punctuation rules, comma rules, and transition words—no reference sheet on test day"
+        ]
+      },
+      {
+        "emoji": "✅",
+        "title": "Your Next Steps",
+        "points": [
+          "Take a free Digital SAT Reading & Writing practice test on Khan Academy or Official SAT Practice",
+          "Review your answers using the detailed answer explanations to identify patterns",
+          "Focus on the domain(s) where you scored lowest; drill 10–15 questions daily for 2 weeks",
+          "Use this prep guide as a reference while practicing—repetition builds confidence"
+        ]
+      }
+    ]
+  },
+  "sat-math": {
+    "id": "sat-math",
+    "exam": "sat",
+    "examName": "SAT",
+    "section": "Math",
+    "emoji": "🔢",
+    "title": "Digital SAT Math — Tips, Tricks & Strategy",
+    "summary": "Master the Digital SAT Math section: 44 questions across Algebra, Advanced Math, Problem-Solving & Data Analysis, and Geometry & Trigonometry in 70 minutes with adaptive modules and a calculator.",
+    "slides": [
+      {
+        "emoji": "🔢",
+        "title": "What is SAT Math?",
+        "points": [
+          "One of two main sections on the Digital SAT (Reading & Writing is the other)",
+          "Tests algebra, functions, geometry, trigonometry, statistics, and data interpretation",
+          "Two adaptive modules: difficulty adjusts based on your performance on Module 1",
+          "Calculator permitted (except for 5-question calculator-free stretch in Module 1)"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Section Format & Timing",
+        "points": [
+          "Total time: 70 minutes (35 minutes per adaptive module)",
+          "44 questions total: 22 per module",
+          "Multiple-choice (4 options) and student-produced response (grid-in, no multiple choice)",
+          "~ 27 multiple-choice, ~ 17 grid-in questions across both modules"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "The Four Content Domains",
+        "points": [
+          "Algebra: linear equations, systems of equations, polynomials, inequalities (13 questions)",
+          "Advanced Math: quadratics, exponentials, functions, rational expressions (13 questions)",
+          "Problem-Solving & Data Analysis: ratios, percentages, probability, statistics, data interpretation (11 questions)",
+          "Geometry & Trigonometry: angle relationships, triangles, circles, right triangles, trig ratios (7 questions)"
+        ]
+      },
+      {
+        "emoji": "📐",
+        "title": "Algebra: Linear Equations & Systems",
+        "points": [
+          "Solve for a variable: isolate the variable by performing the same operation on both sides",
+          "Systems of two equations: use substitution (solve one, plug into the other) or elimination (add/subtract to cancel a variable)",
+          "Word problems: define variables, translate English to math, then solve",
+          "Trap: forgetting to distribute negatives or performing operations on only one side of the equation"
+        ]
+      },
+      {
+        "emoji": "📐",
+        "title": "Algebra: Inequalities & Absolute Value",
+        "points": [
+          "When multiplying or dividing by a negative number, flip the inequality sign",
+          "Compound inequalities: 'and' means the overlap; 'or' means the union of solutions",
+          "Absolute value: |x| = a means x = a or x = -a (two solutions, not one)",
+          "Graph on a number line: open circle for < or >, closed circle for ≤ or ≥"
+        ]
+      },
+      {
+        "emoji": "📉",
+        "title": "Advanced Math: Quadratic Functions",
+        "points": [
+          "Standard form: y = ax² + bx + c; vertex form: y = a(x - h)² + k",
+          "Vertex is the minimum (a > 0) or maximum (a < 0) point",
+          "Find roots: factor, use the quadratic formula, or complete the square",
+          "Discriminant (b² - 4ac): positive = 2 roots, zero = 1 root, negative = no real roots"
+        ]
+      },
+      {
+        "emoji": "📉",
+        "title": "Advanced Math: Exponential & Logarithmic Functions",
+        "points": [
+          "Exponential growth: y = a(b)^x where b > 1; decay: 0 < b < 1",
+          "Growth rate: if b = 1.05, that's 5% growth; if b = 0.8, that's 20% decay per period",
+          "Logarithm: log_b(x) = y means b^y = x (inverse of exponential)",
+          "Common logs (base 10) and natural logs (base e); calculators have both buttons"
+        ]
+      },
+      {
+        "emoji": "📉",
+        "title": "Advanced Math: Functions & Transformations",
+        "points": [
+          "Domain: all valid input x-values; range: all output y-values",
+          "Vertical shift: y = f(x) + k shifts up k units; y = f(x) - k shifts down",
+          "Horizontal shift: y = f(x - h) shifts right h units; y = f(x + h) shifts left",
+          "Reflections: y = -f(x) reflects over x-axis; y = f(-x) reflects over y-axis"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "Problem-Solving: Ratios, Rates & Proportions",
+        "points": [
+          "Ratio a:b means for every a of one thing, there are b of another",
+          "Rate: distance/time, cost/item, etc.—always specify the units",
+          "Proportion: if a/b = c/d, then cross-multiply: ad = bc",
+          "Percent: 25% of 80 = 0.25 × 80 = 20; percent increase = (new - old) / old × 100"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "Problem-Solving: Statistics & Probability",
+        "points": [
+          "Mean: sum of all values ÷ count; median: middle value when sorted; mode: most frequent",
+          "Standard deviation: measures spread; larger SD = more variation",
+          "Probability: # favorable outcomes / # total outcomes; always between 0 and 1",
+          "Independent events: P(A and B) = P(A) × P(B); dependent: adjust second probability based on first"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "Problem-Solving: Data Interpretation & Graphs",
+        "points": [
+          "Read charts carefully: axis labels, units, scale, legend; avoid misreading values",
+          "Bar charts: compare discrete categories; line graphs: show trends over time",
+          "Scatter plots: identify correlation (positive, negative, none) and outliers",
+          "Common trap: assuming correlation = causation; also check if data supports the conclusion claimed"
+        ]
+      },
+      {
+        "emoji": "📐",
+        "title": "Geometry: Angles & Parallel Lines",
+        "points": [
+          "Vertical angles are equal; adjacent angles on a straight line sum to 180°",
+          "If two parallel lines are cut by a transversal: alternate interior angles are equal, corresponding angles are equal",
+          "Sum of angles in a triangle = 180°; exterior angle = sum of the two non-adjacent interior angles",
+          "Isosceles triangle: two equal sides ⟹ two equal opposite angles"
+        ]
+      },
+      {
+        "emoji": "📐",
+        "title": "Geometry: Triangles & Area",
+        "points": [
+          "Area = ½ × base × height; for right triangles, the two legs are base and height",
+          "Pythagorean theorem: a² + b² = c² (only for right triangles)",
+          "Special right triangles: 45-45-90 (sides 1:1:√2) and 30-60-90 (sides 1:√3:2)",
+          "Congruent triangles: SSS, SAS, ASA, AAS; similar triangles: same angles, proportional sides"
+        ]
+      },
+      {
+        "emoji": "📐",
+        "title": "Geometry: Circles & Volume",
+        "points": [
+          "Circumference = 2πr; area = πr²; arc length = (θ/360°) × 2πr (θ in degrees)",
+          "Inscribed angle = ½ central angle (both subtend the same arc)",
+          "Volume of cylinder = πr²h; cone = ⅓πr²h; sphere = ⅘πr³",
+          "Surface area = sum of all faces; for sphere = 4πr²"
+        ]
+      },
+      {
+        "emoji": "📐",
+        "title": "Trigonometry: Ratios & Right Triangles",
+        "points": [
+          "SOH-CAH-TOA: sin = opposite/hypotenuse, cos = adjacent/hypotenuse, tan = opposite/adjacent",
+          "Special angles: sin(30°) = 0.5, sin(45°) = √2/2, sin(60°) = √3/2 (and similarly for cos)",
+          "Inverse trig: if sin(θ) = 0.5, then θ = arcsin(0.5) = 30° (calculator in degree mode!)",
+          "Trap: forgetting to switch calculator from radian mode to degree mode"
+        ]
+      },
+      {
+        "emoji": "⚡",
+        "title": "Common Traps & Mistakes",
+        "points": [
+          "Misreading what the question asks (e.g., asking for area but solving for perimeter)",
+          "Forgetting units or reporting the answer in the wrong unit",
+          "Making arithmetic errors on the calculator: double-check by recalculating",
+          "Rushing through word problems and misinterpreting the setup",
+          "Grid-in errors: not properly filling the grid, writing decimals without a leading zero"
+        ]
+      },
+      {
+        "emoji": "⏳",
+        "title": "Time Management & Question Strategy",
+        "points": [
+          "Budget ~95 seconds per question (44 questions × 70 min = 95 sec/question with buffer)",
+          "Scan all 22 questions in a module: do easy ones first, then return to harder ones",
+          "If stuck for 1+ minute, guess and move on—you can return after finishing the module",
+          "Module 2 is harder if you did well on Module 1: that's good! Harder questions = more points"
+        ]
+      },
+      {
+        "emoji": "✏️",
+        "title": "Grid-In Strategy (Student-Produced Response)",
+        "points": [
+          "No multiple choice: you bubble in your answer in the grid boxes",
+          "Fractions or decimals accepted; 1/2 and 0.5 both grid correctly",
+          "Always simplify fractions (3/6 grids as invalid; must be 1/2)",
+          "Leading zero on decimals: grid 0.5, not .5; leading zeros don't count in numerator",
+          "Maximum 4 characters (including decimal or fraction bar): example: 12.5, 1/3, -99"
+        ]
+      },
+      {
+        "emoji": "📈",
+        "title": "Scoring & What You Need",
+        "points": [
+          "Each correct answer = 1 point; no penalty for wrong answers or blanks",
+          "Module 2 difficulty determines score: correct answers on harder problems = more points",
+          "Target: 90% (40/44) for a competitive score; 80% (35/44) is solid",
+          "Math weakness areas: identify if it's Algebra, Advanced Math, Problem-Solving, or Geometry"
+        ]
+      },
+      {
+        "emoji": "🎓",
+        "title": "Domain Focus: Where to Concentrate",
+        "points": [
+          "Advanced Math is 30% of the section: if weak here, drill quadratics and functions first",
+          "Algebra is 30%: linear equations and systems appear frequently, prioritize mastery",
+          "Problem-Solving is 25%: data interpretation and statistics are growing areas; practice chart reading",
+          "Geometry is 15%: solid but smaller; focus on circles, triangles, and angle relationships"
+        ]
+      },
+      {
+        "emoji": "🚀",
+        "title": "Before Test Day",
+        "points": [
+          "Take full-length Digital SAT Math practice tests on Bluebook (the official app)",
+          "Practice with a calculator; use the same model if possible so you know the buttons",
+          "For grid-in questions, practice bubbling your answer correctly (common source of careless errors)",
+          "Review every mistake: was it careless, a concept gap, or a time-pressure error?"
+        ]
+      },
+      {
+        "emoji": "✅",
+        "title": "Your Next Steps",
+        "points": [
+          "Take a free Digital SAT Math practice test on Khan Academy or Official SAT Practice",
+          "Identify your weakest domain (Algebra, Advanced Math, Problem-Solving, Geometry)",
+          "Drill 15–20 questions daily in that domain for 2–3 weeks until you hit 90%+ accuracy",
+          "Use this guide as your reference while solving problems—build muscle memory"
+        ]
+      }
+    ]
+  },
+  "oet-reading": {
+    "id": "oet-reading",
+    "exam": "oet",
+    "examName": "OET",
+    "section": "Reading",
+    "emoji": "📖",
+    "title": "OET Reading for Healthcare Professionals — Tips, Tricks & Strategy",
+    "summary": "Master the OET Reading section: three parts (expeditious reading, workplace text, long form) across 60 minutes with healthcare-specific content and fast, accurate comprehension.",
+    "slides": [
+      {
+        "emoji": "📖",
+        "title": "What is OET Reading?",
+        "points": [
+          "OET (Occupational English Test) Reading tests comprehension of healthcare-related texts",
+          "Designed for healthcare professionals (nurses, doctors, pharmacists, dentists, etc.) seeking to work in English-speaking countries",
+          "Three distinct parts with different reading strategies and text types",
+          "Graded A–E: A = top score; E = below required standard; C = passing for most professions"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Reading Section Format & Timing",
+        "points": [
+          "Total time: 60 minutes for all three parts (non-transferable: you cannot use leftover time from Part A in Part B)",
+          "Part A (expeditious): 15 minutes; ~700 words across 3–4 short texts; 20 questions",
+          "Part B (workplace texts): ~20–25 minutes; varied formats (memos, emails, notices); 20 questions",
+          "Part C (long form): ~20–25 minutes; one long healthcare article (800–900 words); 20 questions"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "Question Types & Formats",
+        "points": [
+          "Multiple-choice (4 options): traditional 'one best answer' format",
+          "Multiple-selection (tick all that apply): identify all correct statements; partial credit not given",
+          "Gap-filling (matching): find the correct words/phrases to complete sentences",
+          "Matching statements to texts: link statements to the correct source text"
+        ]
+      },
+      {
+        "emoji": "⚡",
+        "title": "Part A: Expeditious Reading Strategy",
+        "points": [
+          "Expeditious = fast scanning for specific information, not detailed comprehension",
+          "3–4 short texts (notices, memos, brief articles) on different healthcare topics",
+          "Skim for keywords, headings, and bold text to locate relevant information quickly",
+          "Time-saver: read the question FIRST, then scan the text for that specific answer",
+          "Each question usually requires 30–45 seconds; fast pace is expected here"
+        ]
+      },
+      {
+        "emoji": "⚡",
+        "title": "Part A: Common Question Patterns",
+        "points": [
+          "'According to the text...' = find explicit information; answer is directly stated",
+          "'Which text mentions...?' = identify which of the 3–4 texts contains this information",
+          "Purpose questions: 'Why was this memo sent?' = infer the reason from context (stated or implied)",
+          "Detail questions: specific facts, dates, procedures, or recommendations mentioned in the text"
+        ]
+      },
+      {
+        "emoji": "💼",
+        "title": "Part B: Workplace Texts Strategy",
+        "points": [
+          "Texts include emails, memos, staff notices, patient information sheets, incident reports, protocols",
+          "Format is varied: some texts are short (100–200 words), others medium (300–400 words)",
+          "Read the entire text first (unlike Part A, you need context here), then answer questions",
+          "Common question types: identifying purpose, finding specific procedures, understanding instructions, inferring tone"
+        ]
+      },
+      {
+        "emoji": "💼",
+        "title": "Part B: Common Text Patterns",
+        "points": [
+          "Emails & memos: usually have a clear purpose (inform, request action, announce change); read subject + opening carefully",
+          "Protocols & procedures: step-by-step instructions; questions test your ability to follow sequence or identify steps",
+          "Notices & announcements: highlight key information (what, when, where, who, why); details matter",
+          "Incident reports: cause-and-effect narrative; questions often ask 'what happened and why?'"
+        ]
+      },
+      {
+        "emoji": "💼",
+        "title": "Part B: Multi-selection & Matching Tips",
+        "points": [
+          "Multi-selection (tick all correct): re-read each option against the text; partial credit = zero credit (must select all correct, no more, no fewer)",
+          "Matching statements: link each statement to the correct text by finding keywords and paraphrased information",
+          "Trap: choosing an option that sounds right but isn't explicitly supported by the text",
+          "Strategy: for multi-select, cross off clearly wrong options first, then carefully verify each remaining option"
+        ]
+      },
+      {
+        "emoji": "📚",
+        "title": "Part C: Long-Form Article Strategy",
+        "points": [
+          "One long healthcare article (800–900 words): clinical information, research findings, case studies, or policy discussion",
+          "You must understand the main idea AND locate specific supporting details",
+          "Skim the article first: read introduction, conclusion, and subheadings to grasp structure",
+          "Then read each question and locate the relevant paragraph by scanning for keywords"
+        ]
+      },
+      {
+        "emoji": "📚",
+        "title": "Part C: Question Types",
+        "points": [
+          "Main idea questions: 'The article is mainly about...'; look at intro and conclusion",
+          "Supporting detail: 'According to the article, why did...?'; find the specific paragraph mentioning this",
+          "Inference & implication: 'The article suggests that...'; use evidence from the text, not outside knowledge",
+          "Vocabulary in context: rare in OET Reading, but 'the word [X] means...'; use surrounding sentences as clues"
+        ]
+      },
+      {
+        "emoji": "🏥",
+        "title": "Healthcare Vocabulary Essentials",
+        "points": [
+          "Clinical terms: diagnosis, prognosis, symptoms, etiology, pathophysiology, contraindication, adverse effect",
+          "Procedures: admission, discharge, assessment, intervention, treatment, management, monitoring",
+          "Patient-related: informed consent, compliance, adverse events, comorbidity, risk factors, outcomes",
+          "Pre-read OET sample texts to build a healthcare vocabulary base; flashcards help"
+        ]
+      },
+      {
+        "emoji": "⚡",
+        "title": "Common Traps & Mistakes",
+        "points": [
+          "Choosing an answer that sounds right but is not explicitly in the text (inference trap)",
+          "Misreading Part A times: running out of time in Part A and rushing Part B/C",
+          "Missing nuance: 'may cause' is different from 'causes'; 'some patients' is different from 'all patients'",
+          "In multi-select questions, choosing 3 of 4 correct answers: remember it's all-or-nothing",
+          "Skipping Part C intro: the introduction often directly answers main idea questions"
+        ]
+      },
+      {
+        "emoji": "⏳",
+        "title": "Time Management Across All Parts",
+        "points": [
+          "Part A (15 min): pace yourself ~45 sec/question; if stuck, mark and return at the end",
+          "Part B (20–25 min): read the entire text first (takes 5–7 min), then answer questions (3–5 min each)",
+          "Part C (20–25 min): skim article structure (3 min), then read and answer questions (1–2 min each)",
+          "Allocate 2–3 min at the end to review any marked questions; don't run into time pressure"
+        ]
+      },
+      {
+        "emoji": "📈",
+        "title": "Scoring & Benchmark Levels",
+        "points": [
+          "Graded A (highest), B, C (pass for most professions), D, or E (not suitable)",
+          "Typically, C requires ~60–65% correct (36–40/60 questions across all parts)",
+          "B requires ~75% (45/60); A requires ~85%+ (51/60)",
+          "Each part is weighted equally; weakness in one part (e.g., Part C) cannot be fully offset by strength in another"
+        ]
+      },
+      {
+        "emoji": "🎯",
+        "title": "Strengths vs. Weaknesses: Diagnostic",
+        "points": [
+          "Struggling with Part A? Practice fast scanning; use Part A sample tests (8–10 mock papers)",
+          "Weak at Part B? Your issue is likely understanding workplace context and procedures; re-read memos carefully",
+          "Low Part C scores? You're probably reading too slowly or missing inference questions; practice skimming + detailed reading",
+          "Vocabulary gaps? Build a healthcare glossary; OET repeats certain terms across exam administrations"
+        ]
+      },
+      {
+        "emoji": "🚀",
+        "title": "Before Test Day",
+        "points": [
+          "Do at least 5–8 full-length OET Reading mock papers under strict 60-minute timing",
+          "Review every mistake: was it a comprehension gap, vocabulary, or careless reading?",
+          "Practice with official OET Reading sample papers (available on the OET website)",
+          "Get comfortable with the digital interface on exam day: practice on the official platform if possible"
+        ]
+      },
+      {
+        "emoji": "🎓",
+        "title": "Focus Areas for Different Healthcare Roles",
+        "points": [
+          "Nurses: expect clinical communication, patient safety, and procedural compliance questions",
+          "Doctors: expect diagnostic reasoning, clinical decision-making, and medical literature comprehension",
+          "Pharmacists: expect medication information, dosage instructions, and contraindication questions",
+          "All: healthcare workplace communication, professional tone, and ethical considerations"
+        ]
+      },
+      {
+        "emoji": "📚",
+        "title": "Building Your Healthcare Reading Base",
+        "points": [
+          "Read medical journals, health websites (Medline, NHS), and professional guidelines in English regularly",
+          "OET uses authentic workplace materials: emails, memos, policies from real healthcare settings",
+          "Exposure to varied accents and sentence structures in reading prepares you for the listening section too",
+          "Keep a vocabulary journal of unfamiliar healthcare terms; review weekly"
+        ]
+      },
+      {
+        "emoji": "✅",
+        "title": "Your Next Steps",
+        "points": [
+          "Download OET Reading sample papers from the official OET website (free practice sets available)",
+          "Complete a full mock test under 60-minute timing; review every question you missed",
+          "Focus on your weakest part (A, B, or C) with targeted practice for 1–2 weeks",
+          "Use this guide while practicing—return to specific strategies (Part A expeditious, Part C skimming) as needed"
+        ]
+      }
+    ]
+  },
+  "oet-listening": {
+    "id": "oet-listening",
+    "exam": "oet",
+    "examName": "OET",
+    "section": "Listening",
+    "emoji": "🎧",
+    "title": "OET Listening for Healthcare Professionals — Tips, Tricks & Strategy",
+    "summary": "Master the OET Listening section: three parts (consultation notes, workplace extracts, presentations) across 45 minutes with authentic healthcare dialogue and fast, accurate comprehension.",
+    "slides": [
+      {
+        "emoji": "🎧",
+        "title": "What is OET Listening?",
+        "points": [
+          "OET Listening tests comprehension of authentic healthcare conversations and presentations in English",
+          "Real-world scenarios: doctor-patient consultations, team meetings, professional presentations",
+          "Three distinct parts with different audio lengths, accents, and completion tasks",
+          "Graded A–E: same scale as Reading and Speaking; C = pass for most healthcare professions"
+        ]
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Listening Section Format & Timing",
+        "points": [
+          "Total time: ~45 minutes including instructions and 10-minute break between Part B and C",
+          "Part A (consultation notes): ~10 min; 3 short conversations (3–4 min each); gap-fill format (24 questions)",
+          "Part B (workplace extracts): ~8 min; 2 medium conversations (3–4 min each); multiple-choice (20 questions)",
+          "Part C (presentations): ~8 min; 1–2 longer presentations (5–6 min); multiple-choice & gap-fill (20 questions)"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "title": "Question Types & Formats",
+        "points": [
+          "Gap-filling (sentence completion): listen for specific words or phrases to complete a sentence",
+          "Multiple-choice (4 options): 'What did the speaker say about...?'",
+          "Note-taking format: you see a partial note and must fill in missing information from the audio",
+          "No second listen: each part is played once; you must note key information as you listen"
+        ]
+      },
+      {
+        "emoji": "👂",
+        "title": "Part A: Consultation Note-Taking",
+        "points": [
+          "Three short doctor-patient or healthcare professional-patient consultations (3–4 minutes each)",
+          "You have a partially-completed note with blanks; fill in missing clinical information, patient details, or instructions",
+          "Typical information: patient complaint, symptoms, history, diagnosis, treatment plan, follow-up",
+          "Format: gaps are straightforward—listen for the exact word or short phrase that fits"
+        ]
+      },
+      {
+        "emoji": "👂",
+        "title": "Part A: Note-Taking Strategy",
+        "points": [
+          "Preview the note template before the audio plays: identify which gaps need clinical data vs. patient names/numbers",
+          "Use abbreviations while listening: write quickly to catch the next piece of information",
+          "Common gap types: patient symptom (e.g., 'severe headache'), medication name (e.g., 'ibuprofen'), instruction (e.g., 'take twice daily')",
+          "Don't try to write word-for-word; capture key information in shorthand, then refine during review time"
+        ]
+      },
+      {
+        "emoji": "👂",
+        "title": "Part A: Common Content Areas",
+        "points": [
+          "Patient presentation: chief complaint, symptom onset, severity, associated symptoms",
+          "Medical history: previous diagnoses, surgeries, medications, allergies",
+          "Clinical findings: vital signs, test results, physical exam observations",
+          "Management plan: diagnosis, medications prescribed, dosage, frequency, follow-up appointment"
+        ]
+      },
+      {
+        "emoji": "💼",
+        "title": "Part B: Workplace Conversations",
+        "points": [
+          "Two moderate-length workplace conversations (3–4 minutes each): team meetings, shift handovers, staff discussions",
+          "Topics: patient management, workflow issues, policy changes, training updates, interdepartmental communication",
+          "Multiple-choice questions test understanding of: the main point, specific decisions, reasons for actions, speaker opinion",
+          "Accents and speaking pace vary; may include non-native English speakers (realistic workplace scenario)"
+        ]
+      },
+      {
+        "emoji": "💼",
+        "title": "Part B: Listening & Question Types",
+        "points": [
+          "'The main purpose of the conversation is to...' = identify the overall goal or topic",
+          "'What did [person] say about [topic]?' = find a specific detail or opinion they expressed",
+          "'Why did [person] decide to...?' = infer the reason from what they said",
+          "'Which statement is true?' = identify facts that were confirmed in the conversation"
+        ]
+      },
+      {
+        "emoji": "💼",
+        "title": "Part B: Active Listening Tips",
+        "points": [
+          "Take rough notes during the audio: speaker names, main topics, key decisions, any numbers or dates",
+          "Pay attention to tone and emphasis: speakers often emphasize important information (speak louder or slower)",
+          "Catch transitions: 'However...', 'Because of this...', 'In summary...' signal important shifts in conversation",
+          "If you miss a detail, move on; don't get stuck trying to remember one piece and miss the next three"
+        ]
+      },
+      {
+        "emoji": "🎤",
+        "title": "Part C: Presentations & Lectures",
+        "points": [
+          "One longer healthcare presentation (5–6 minutes): clinical update, research findings, professional training, policy briefing",
+          "Mix of multiple-choice and gap-fill questions (total ~20)",
+          "Content is more formal and structured than Part B; speaker is usually native or proficient English speaker",
+          "Questions test main ideas, supporting details, and inferences from the presentation"
+        ]
+      },
+      {
+        "emoji": "🎤",
+        "title": "Part C: Presentation Structure & Strategy",
+        "points": [
+          "Presentations usually follow: introduction (topic & overview), 2–3 main points with supporting details, conclusion (summary & next steps)",
+          "Preview the questions before listening: this tells you what information to focus on",
+          "During listening: note the main ideas and key supporting points; skip minor details",
+          "Presentations often include repetition: important points are stated multiple times (in intro, again in detail, again in conclusion)"
+        ]
+      },
+      {
+        "emoji": "🏥",
+        "title": "Healthcare Listening Vocabulary",
+        "points": [
+          "Pharmacology: medication names, dosages ('50 milligrams', 'twice daily'), routes ('intravenous', 'oral'), side effects",
+          "Clinical: vital signs ('blood pressure 120 over 80'), symptoms, diagnoses, test results",
+          "Procedures: 'admitted', 'discharged', 'referred', 'prescribed', 'reviewed', 'monitored'",
+          "Soft skills: 'discussed with the patient', 'followed up', 'consulted with', 'arranged' (common in healthcare communication)"
+        ]
+      },
+      {
+        "emoji": "⚡",
+        "title": "Common Traps & Mistakes",
+        "points": [
+          "Mishearing numbers: 'fifteen' vs. 'fifty', '30 mg' vs. '3 mg'—critical in healthcare; listen carefully",
+          "Word confusion: 'tablet' vs. 'capsule', 'admission' vs. 'readmission', 'allergy' vs. 'intolerance'",
+          "Missing the negative: 'no symptoms' vs. 'symptoms'; speakers don't always emphasize negatives",
+          "Confusing speakers: when two people talk in Part B, track who said what—questions ask about specific speakers",
+          "Gap-fill spelling: even if you hear it correctly, spelling errors in your written answer = no credit"
+        ]
+      },
+      {
+        "emoji": "⏳",
+        "title": "Time Management During the Exam",
+        "points": [
+          "Part A: listen to 3 consultations, fill in gaps; use preview time (usually 2–3 min) to scan the notes",
+          "Part B: preview questions (2–3 min), listen to 2 extracts, answer multiple-choice (2 min to review)",
+          "Break (10 minutes): take this seriously; hydrate, rest your ears and brain",
+          "Part C: preview questions (2 min), listen to presentation, answer questions (2–3 min)"
+        ]
+      },
+      {
+        "emoji": "📈",
+        "title": "Scoring & Benchmark Levels",
+        "points": [
+          "Graded A–E (same scale as Reading): A = highest, C = pass, E = below standard",
+          "Part A note-taking: each correctly filled gap = 1–2 points (depending on complexity)",
+          "Parts B & C multiple-choice: 1 point per correct answer; no partial credit",
+          "Total Listening: typically 60–65 questions across all parts; C grade ≈ 60–65% correct (36–40/64)"
+        ]
+      },
+      {
+        "emoji": "🎯",
+        "title": "Diagnostic: Where Are You Weakest?",
+        "points": [
+          "Part A struggles? Your issue is likely note-taking speed or missing specific clinical terms; practice dictation exercises",
+          "Part B low scores? You may be missing nuance in conversations or confusing speakers; practice with YouTube healthcare talks",
+          "Part C weak? Presentations often have a clear structure—preview questions and follow the outline of the talk",
+          "Overall low? Listen to medical podcasts or TED talks on healthcare in English; build listening stamina (5–10 min daily)"
+        ]
+      },
+      {
+        "emoji": "🚀",
+        "title": "Before Test Day",
+        "points": [
+          "Complete 5–8 full OET Listening mock tests under exam conditions (45 min, one listen only)",
+          "Review every mistake: was it a vocabulary gap, fast speech, accent, or misunderstanding the question?",
+          "Practice note-taking while listening to real healthcare content (medical podcasts, TED talks, YouTube medical education)",
+          "Simulate exam conditions: use headphones, take notes by hand (just like the real test), no pausing or replaying"
+        ]
+      },
+      {
+        "emoji": "🎓",
+        "title": "Building Your Listening Skills",
+        "points": [
+          "Watch medical documentaries or healthcare TV shows (Grey's Anatomy, The Resident) for exposure to clinical conversation",
+          "Listen to medical podcasts: KevinMD, Medscape, or profession-specific podcasts (nursing, pharmacy, dentistry)",
+          "Practice with OET sample videos (official OET website has free sample audio)",
+          "Speak English regularly with colleagues or language exchange partners; hearing others speak builds your listening muscle"
+        ]
+      },
+      {
+        "emoji": "✅",
+        "title": "Your Next Steps",
+        "points": [
+          "Download OET Listening sample tests from the official website; do one full mock under timed conditions",
+          "Identify your weakest part (A, B, or C) and focus targeted practice there for 1–2 weeks",
+          "Practice note-taking: listen to a 3–5 minute healthcare talk and write down key information",
+          "Use this guide while taking mocks—refer to specific strategies (Part A note-taking, Part C structure) as you practice"
+        ]
+      }
+    ]
+  }
+}

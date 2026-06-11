@@ -170,7 +170,7 @@
 
           <div className="seo-grid">
             {ARTICLES.map((a) => {
-              const words = (a.sections || []).reduce((n, s) => n + (s.body || "").split(/\s+/).length, 0);
+              const words = (a.sections || []).reduce((n, s) => n + ((s.body || "") + " " + (s.steps || []).join(" ") + " " + (s.bullets || []).join(" ")).split(/\s+/).length, 0);
               const mins = Math.max(2, Math.round(words / 200));
               return (
                 <div key={a.id} className="seo-card reveal" onClick={() => onOpen(a.id)} role="button" tabIndex={0}
