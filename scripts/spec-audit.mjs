@@ -30,7 +30,7 @@ for (const exam of Object.keys(SPEC)) {
       const t = read(f); const name = path.basename(f);
       if (!t) { devs.push(`${name}: unparseable`); totalDev++; continue; }
       const issues = [];
-      const isQ = ["listening", "reading", "quant", "verbal"].includes(secId);
+      const isQ = ["listening", "reading", "quant", "verbal", "reading-writing", "math", "english", "science"].includes(secId);
       if (isQ) {
         const qs = t.questions || [];
         // total question count

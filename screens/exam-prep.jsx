@@ -11,7 +11,7 @@
 (function () {
   const { useState, useEffect } = React;
 
-  const EXAM_ORDER = ["ielts","toefl","pte","celpip","duolingo","gre","gmat","oet"];
+  const EXAM_ORDER = ["ielts","toefl","pte","celpip","duolingo","gre","gmat","oet","sat"];
 
   const EXAM_BRAND = {
     ielts:    { color: "#dc2626", tagline: "Study, work & migration in English-speaking countries", icon: "🇬🇧" },
@@ -22,11 +22,16 @@
     gre:      { color: "#b45309", tagline: "Graduate school admissions worldwide",                    icon: "📚" },
     gmat:     { color: "#c2410c", tagline: "MBA & business school admissions",                        icon: "📊" },
     oet:      { color: "#00A86B", tagline: "English for healthcare professionals",                    icon: "🩺" },
+    sat:      { color: "#2E5090", tagline: "US university admissions (Reading, Writing & Math)",       icon: "🎓" },
   };
 
   const SECTION_PRESENTATION = {
     listening: { name: "Listening", icon: "🎧" },
     reading:   { name: "Reading",   icon: "📖" },
+    "reading-writing": { name: "Reading & Writing", icon: "📖" },
+    math:      { name: "Math",      icon: "🔢" },
+    english:   { name: "English",   icon: "✏️" },
+    science:   { name: "Science",   icon: "🔬" },
     writing:   { name: "Writing",   icon: "✍️" },
     speaking:  { name: "Speaking",  icon: "🎤" },
     verbal:    { name: "Verbal",    icon: "📖" },

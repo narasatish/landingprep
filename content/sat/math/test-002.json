@@ -1,0 +1,716 @@
+{
+  "id": "sat-math-002",
+  "exam": "sat",
+  "section": "math",
+  "type": "section",
+  "title": "SAT Math Practice Test 2",
+  "durationSeconds": 4200,
+  "questionCount": 44,
+  "instructions": "Solve each problem and choose the best answer. A calculator is allowed on all questions.",
+  "questions": [
+    {
+      "id": "sat-math-002-q01",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "Solve for x: 4x - 9 = 15",
+      "options": [
+        "4",
+        "8",
+        "6",
+        "12"
+      ],
+      "correctAnswer": "6",
+      "explanation": "Add 9 to both sides: 4x = 24. Divide by 4: x = 6.",
+      "difficulty": "easy",
+      "questionNumber": 1
+    },
+    {
+      "id": "sat-math-002-q02",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "Which inequality is equivalent to -2x + 5 > 13?",
+      "options": [
+        "x < -4",
+        "x > -4",
+        "x < 4",
+        "x > 4"
+      ],
+      "correctAnswer": "x < -4",
+      "explanation": "Subtract 5: -2x > 8. Divide by -2 (reverse inequality): x < -4.",
+      "difficulty": "easy",
+      "questionNumber": 2
+    },
+    {
+      "id": "sat-math-002-q03",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "A line passes through (1, 3) and (3, 7). What is the slope?",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "correctAnswer": "2",
+      "explanation": "Slope = (7 - 3)/(3 - 1) = 4/2 = 2.",
+      "difficulty": "easy",
+      "questionNumber": 3
+    },
+    {
+      "id": "sat-math-002-q04",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "What is the x-intercept of y = 2x - 8?",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "-8"
+      ],
+      "correctAnswer": "4",
+      "explanation": "Set y = 0: 0 = 2x - 8 → 2x = 8 → x = 4.",
+      "difficulty": "easy",
+      "questionNumber": 4
+    },
+    {
+      "id": "sat-math-002-q05",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "Solve: 3(x + 2) = 21",
+      "options": [
+        "9",
+        "7",
+        "5",
+        "11"
+      ],
+      "correctAnswer": "5",
+      "explanation": "Divide by 3: x + 2 = 7. Subtract 2: x = 5.",
+      "difficulty": "easy",
+      "questionNumber": 5
+    },
+    {
+      "id": "sat-math-002-q06",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "Solve the system: 2x + y = 8 and x - y = 1",
+      "options": [
+        "x = 3, y = 2",
+        "x = 2, y = 4",
+        "x = 4, y = 0",
+        "x = 1, y = 6"
+      ],
+      "correctAnswer": "x = 3, y = 2",
+      "explanation": "Add the equations: (2x + y) + (x - y) = 8 + 1 → 3x = 9 → x = 3. Then y = x - 1 = 2. Check: 2·3 + 2 = 8 ✓ and 3 - 2 = 1 ✓.",
+      "difficulty": "medium",
+      "questionNumber": 6
+    },
+    {
+      "id": "sat-math-002-q07",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "A store sells notebooks for $2 each and pens for $1 each. If 30 items were sold for $50, how many notebooks were sold?",
+      "options": [
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
+      "correctAnswer": "20",
+      "explanation": "Let n = notebooks, p = pens. Then n + p = 30 and 2n + p = 50. Subtract first from second: n = 20.",
+      "difficulty": "medium",
+      "questionNumber": 7
+    },
+    {
+      "id": "sat-math-002-q08",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "If 2(3x - 1) = 4x + 6, what is x?",
+      "options": [
+        "4",
+        "2",
+        "6",
+        "8"
+      ],
+      "correctAnswer": "4",
+      "explanation": "Expand: 6x - 2 = 4x + 6. Subtract 4x: 2x - 2 = 6. Add 2: 2x = 8. Divide by 2: x = 4.",
+      "difficulty": "medium",
+      "questionNumber": 8
+    },
+    {
+      "id": "sat-math-002-q09",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "If 2x = 32, what is x?",
+      "options": [
+        "4",
+        "6",
+        "5",
+        "8"
+      ],
+      "correctAnswer": "5",
+      "explanation": "2x = 32 means x = log₂(32). Since 2⁵ = 32, x = 5.",
+      "difficulty": "easy",
+      "questionNumber": 9
+    },
+    {
+      "id": "sat-math-002-q10",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "Simplify: (√25)(√4)",
+      "options": [
+        "200",
+        "20",
+        "100",
+        "10"
+      ],
+      "correctAnswer": "10",
+      "explanation": "(√25)(√4) = 5 × 2 = 10.",
+      "difficulty": "easy",
+      "questionNumber": 10
+    },
+    {
+      "id": "sat-math-002-q11",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the value of 3⁻²?",
+      "options": [
+        "1/9",
+        "1/6",
+        "6",
+        "9"
+      ],
+      "correctAnswer": "1/9",
+      "explanation": "3⁻² = 1/(3²) = 1/9.",
+      "difficulty": "easy",
+      "questionNumber": 11
+    },
+    {
+      "id": "sat-math-002-q12",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the product of the roots of x² + 4x + 3 = 0?",
+      "options": [
+        "3",
+        "-3",
+        "-4",
+        "4"
+      ],
+      "correctAnswer": "3",
+      "explanation": "Using Vieta's formulas, product of roots = c/a = 3/1 = 3.",
+      "difficulty": "medium",
+      "questionNumber": 12
+    },
+    {
+      "id": "sat-math-002-q13",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "If g(x) = x² + 3x - 2, what is g(1)?",
+      "options": [
+        "2",
+        "0",
+        "1",
+        "-2"
+      ],
+      "correctAnswer": "2",
+      "explanation": "g(1) = (1)² + 3(1) - 2 = 1 + 3 - 2 = 2.",
+      "difficulty": "easy",
+      "questionNumber": 13
+    },
+    {
+      "id": "sat-math-002-q14",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "Factor: x² - 9",
+      "options": [
+        "(x - 3)(x + 3)",
+        "(x - 3)²",
+        "(x + 3)²",
+        "(x - 9)(x + 1)"
+      ],
+      "correctAnswer": "(x - 3)(x + 3)",
+      "explanation": "x² - 9 is a difference of squares: x² - 3² = (x - 3)(x + 3).",
+      "difficulty": "easy",
+      "questionNumber": 14
+    },
+    {
+      "id": "sat-math-002-q15",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "Solve: x² + 6x + 8 = 0",
+      "options": [
+        "x = -2 or x = -4",
+        "x = 2 or x = 4",
+        "x = -2 or x = 4",
+        "x = 2 or x = -4"
+      ],
+      "correctAnswer": "x = -2 or x = -4",
+      "explanation": "Factor: (x + 2)(x + 4) = 0 → x = -2 or x = -4.",
+      "difficulty": "medium",
+      "questionNumber": 15
+    },
+    {
+      "id": "sat-math-002-q16",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the value of √64?",
+      "options": [
+        "8",
+        "6",
+        "4",
+        "16"
+      ],
+      "correctAnswer": "8",
+      "explanation": "√64 = 8 because 8² = 64.",
+      "difficulty": "easy",
+      "questionNumber": 16
+    },
+    {
+      "id": "sat-math-002-q17",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A shirt originally costs $60 and is on sale for 15% off. What is the sale price?",
+      "options": [
+        "$51",
+        "$49",
+        "$45",
+        "$54"
+      ],
+      "correctAnswer": "$51",
+      "explanation": "Discount = 15% of $60 = 0.15 × $60 = $9. Sale price = $60 - $9 = $51.",
+      "difficulty": "easy",
+      "questionNumber": 17
+    },
+    {
+      "id": "sat-math-002-q18",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A cyclist travels 120 km in 3 hours. What is the average speed in km/h?",
+      "options": [
+        "40",
+        "30",
+        "50",
+        "60"
+      ],
+      "correctAnswer": "40",
+      "explanation": "Average speed = distance / time = 120 km / 3 hours = 40 km/h.",
+      "difficulty": "easy",
+      "questionNumber": 18
+    },
+    {
+      "id": "sat-math-002-q19",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "The ratio of dogs to cats in a shelter is 2:7. If there are 16 dogs, how many cats are there?",
+      "options": [
+        "56",
+        "36",
+        "48",
+        "28"
+      ],
+      "correctAnswer": "56",
+      "explanation": "If dogs:cats = 2:7 and dogs = 16, then 16/cats = 2/7 → cats = 16 × 7/2 = 56.",
+      "difficulty": "easy",
+      "questionNumber": 19
+    },
+    {
+      "id": "sat-math-002-q20",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A deck has 52 cards. If you draw one card, what is the probability it is a heart?",
+      "options": [
+        "13/52",
+        "1/13",
+        "4/13",
+        "1/4"
+      ],
+      "correctAnswer": "1/4",
+      "explanation": "There are 13 hearts in a 52-card deck. Probability = 13/52 = 1/4.",
+      "difficulty": "easy",
+      "questionNumber": 20
+    },
+    {
+      "id": "sat-math-002-q21",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "The ages of five people are 22, 25, 28, 30, and x. If the mean age is 27, what is x?",
+      "options": [
+        "25",
+        "27",
+        "30",
+        "32"
+      ],
+      "correctAnswer": "30",
+      "explanation": "Mean = (22 + 25 + 28 + 30 + x) / 5 = 27 → 105 + x = 135 → x = 30.",
+      "difficulty": "medium",
+      "questionNumber": 21
+    },
+    {
+      "id": "sat-math-002-q22",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A recipe uses flour and sugar in a 4:3 ratio. If you use 12 cups of flour, how much sugar do you need?",
+      "options": [
+        "8",
+        "12",
+        "9",
+        "16"
+      ],
+      "correctAnswer": "9",
+      "explanation": "If flour:sugar = 4:3 and flour = 12, then 12/sugar = 4/3 → sugar = 12 × 3/4 = 9.",
+      "difficulty": "easy",
+      "questionNumber": 22
+    },
+    {
+      "id": "sat-math-002-q23",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "The price of a stock decreases from $120 to $90. What is the percent decrease?",
+      "options": [
+        "20%",
+        "30%",
+        "25%",
+        "35%"
+      ],
+      "correctAnswer": "25%",
+      "explanation": "Percent decrease = (original - new) / original × 100% = (120 - 90) / 120 × 100% = 30/120 × 100% = 25%.",
+      "difficulty": "medium",
+      "questionNumber": 23
+    },
+    {
+      "id": "sat-math-002-q24",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A data set contains 10, 15, 20, 25, and 30. What is the median?",
+      "options": [
+        "17.5",
+        "22.5",
+        "20",
+        "25"
+      ],
+      "correctAnswer": "20",
+      "explanation": "The median is the middle value when the data is ordered. With 5 values, the median is the 3rd value: 20.",
+      "difficulty": "easy",
+      "questionNumber": 24
+    },
+    {
+      "id": "sat-math-002-q25",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "What is the area of a square with side length 12?",
+      "options": [
+        "24",
+        "48",
+        "144",
+        "288"
+      ],
+      "correctAnswer": "144",
+      "explanation": "Area = side² = 12² = 144.",
+      "difficulty": "easy",
+      "questionNumber": 25
+    },
+    {
+      "id": "sat-math-002-q26",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "A triangle has sides of length 5, 12, and 13. Is it a right triangle?",
+      "options": [
+        "Yes, 5 + 12 = 17",
+        "No, the sides are not equal",
+        "Yes, 5² + 12² = 13²",
+        "No, we need more information"
+      ],
+      "correctAnswer": "Yes, 5² + 12² = 13²",
+      "explanation": "Check Pythagorean theorem: 5² + 12² = 25 + 144 = 169 = 13². So yes, it is a right triangle.",
+      "difficulty": "easy",
+      "questionNumber": 26
+    },
+    {
+      "id": "sat-math-002-q27",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "What is the perimeter of a circle with radius 3? (Use π ≈ 3.14 or leave answer in terms of π)",
+      "options": [
+        "3π",
+        "9π",
+        "6π",
+        "12π"
+      ],
+      "correctAnswer": "6π",
+      "explanation": "Circumference = 2πr = 2π(3) = 6π.",
+      "difficulty": "easy",
+      "questionNumber": 27
+    },
+    {
+      "id": "sat-math-002-q28",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "A circle has area 36π. What is its radius?",
+      "options": [
+        "3",
+        "9",
+        "6",
+        "12"
+      ],
+      "correctAnswer": "6",
+      "explanation": "Area = πr² = 36π → r² = 36 → r = 6.",
+      "difficulty": "easy",
+      "questionNumber": 28
+    },
+    {
+      "id": "sat-math-002-q29",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "In a right triangle, one leg is 6 and the other leg is 8. What is the hypotenuse?",
+      "options": [
+        "14",
+        "12",
+        "10",
+        "16"
+      ],
+      "correctAnswer": "10",
+      "explanation": "Using Pythagorean theorem: c² = 6² + 8² = 36 + 64 = 100 → c = 10.",
+      "difficulty": "easy",
+      "questionNumber": 29
+    },
+    {
+      "id": "sat-math-002-q30",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "The sum of two angles in a triangle is 120°. What is the third angle?",
+      "options": [
+        "30°",
+        "40°",
+        "120°",
+        "60°"
+      ],
+      "correctAnswer": "60°",
+      "explanation": "The sum of all angles in a triangle is 180°. Third angle = 180° - 120° = 60°.",
+      "difficulty": "easy",
+      "questionNumber": 30
+    },
+    {
+      "id": "sat-math-002-q31",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "In a 45-45-90 triangle, if each leg has length 5, what is the hypotenuse?",
+      "options": [
+        "5√2",
+        "5",
+        "10",
+        "10√2"
+      ],
+      "correctAnswer": "5√2",
+      "explanation": "In a 45-45-90 triangle, the sides are in ratio 1:1:√2. If each leg is 5, the hypotenuse is 5√2.",
+      "difficulty": "medium",
+      "questionNumber": 31
+    },
+    {
+      "id": "sat-math-002-q32",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "Solve: |2x - 3| = 7",
+      "options": [
+        "x = -2 or x = 5",
+        "x = 2 or x = 5",
+        "x = 2 or x = -2",
+        "x = 5 or x = -5"
+      ],
+      "correctAnswer": "x = -2 or x = 5",
+      "explanation": "|2x - 3| = 7 means 2x - 3 = 7 or 2x - 3 = -7. From first: 2x = 10 → x = 5. From second: 2x = -4 → x = -2.",
+      "difficulty": "medium",
+      "questionNumber": 32
+    },
+    {
+      "id": "sat-math-002-q33",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the range of f(x) = (x - 3)² + 2?",
+      "options": [
+        "[2, ∞)",
+        "[3, ∞)",
+        "[-2, ∞)",
+        "(-∞, 2]"
+      ],
+      "correctAnswer": "[2, ∞)",
+      "explanation": "The function is a parabola with vertex at (3, 2) opening upward. The minimum value is 2, so the range is [2, ∞).",
+      "difficulty": "medium",
+      "questionNumber": 33
+    },
+    {
+      "id": "sat-math-002-q34",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "If 45% of a number is 90, what is the number?",
+      "options": [
+        "200",
+        "135",
+        "40.5",
+        "405"
+      ],
+      "correctAnswer": "200",
+      "explanation": "Let the number be x. Then 0.45x = 90 → x = 90 / 0.45 = 200.",
+      "difficulty": "easy",
+      "questionNumber": 34
+    },
+    {
+      "id": "sat-math-002-q35",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "A rectangular prism has length 6, width 4, and height 3. What is its volume?",
+      "options": [
+        "72",
+        "26",
+        "52",
+        "13"
+      ],
+      "correctAnswer": "72",
+      "explanation": "Volume = length × width × height = 6 × 4 × 3 = 72.",
+      "difficulty": "easy",
+      "questionNumber": 35
+    },
+    {
+      "id": "sat-math-002-q36",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "If h(x) = -3x + 4 and h(x) = 10, what is x?",
+      "options": [
+        "-2",
+        "-1",
+        "2",
+        "4"
+      ],
+      "correctAnswer": "-2",
+      "explanation": "-3x + 4 = 10 → -3x = 6 → x = -2.",
+      "difficulty": "easy",
+      "questionNumber": 36
+    },
+    {
+      "id": "sat-math-002-q37",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the sum of the roots of 2x² - 8x + 6 = 0?",
+      "options": [
+        "4",
+        "-2",
+        "2",
+        "-4"
+      ],
+      "correctAnswer": "4",
+      "explanation": "Using Vieta's formulas, sum of roots = -b/a = -(-8)/2 = 8/2 = 4.",
+      "difficulty": "medium",
+      "questionNumber": 37
+    },
+    {
+      "id": "sat-math-002-q38",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "If 8 workers can complete a job in 5 days, how many days will it take 10 workers?",
+      "options": [
+        "4",
+        "4.5",
+        "6.25",
+        "8"
+      ],
+      "correctAnswer": "4",
+      "explanation": "Total work = 8 workers × 5 days = 40 worker-days. Time for 10 workers = 40 / 10 = 4 days.",
+      "difficulty": "medium",
+      "questionNumber": 38
+    },
+    {
+      "id": "sat-math-002-q39",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "Two congruent triangles have corresponding sides in the ratio 1:1. If the first triangle has a side of 8, what is the corresponding side in the second triangle?",
+      "options": [
+        "8",
+        "6",
+        "4",
+        "16"
+      ],
+      "correctAnswer": "8",
+      "explanation": "Since the ratio is 1:1 (congruent), the corresponding sides are equal. If one side is 8, the other is also 8.",
+      "difficulty": "easy",
+      "questionNumber": 39
+    },
+    {
+      "id": "sat-math-002-q40",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "Simplify: (a² × a⁵) / a³",
+      "options": [
+        "a²",
+        "a¹⁰",
+        "a⁷",
+        "a⁴"
+      ],
+      "correctAnswer": "a⁴",
+      "explanation": "(a² × a⁵) / a³ = a⁷ / a³ = a⁴.",
+      "difficulty": "medium",
+      "questionNumber": 40
+    },
+    {
+      "id": "sat-math-002-q41",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "If 5(x - 2) = 2x + 11, what is x?",
+      "options": [
+        "1",
+        "3",
+        "7",
+        "5"
+      ],
+      "correctAnswer": "7",
+      "explanation": "Expand: 5x - 10 = 2x + 11. Subtract 2x: 3x - 10 = 11. Add 10: 3x = 21. Divide by 3: x = 7.",
+      "difficulty": "medium",
+      "questionNumber": 41
+    },
+    {
+      "id": "sat-math-002-q42",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A student's test scores are 88, 92, and 85. What is the average score?",
+      "options": [
+        "85",
+        "88",
+        "88.3",
+        "92"
+      ],
+      "correctAnswer": "88.3",
+      "explanation": "Average = (88 + 92 + 85) / 3 = 265 / 3 ≈ 88.3.",
+      "difficulty": "easy",
+      "questionNumber": 42
+    },
+    {
+      "id": "sat-math-002-q43",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "A circle has a circumference of 20π. What is its diameter?",
+      "options": [
+        "10",
+        "40",
+        "20",
+        "100"
+      ],
+      "correctAnswer": "20",
+      "explanation": "Circumference = πd = 20π → d = 20.",
+      "difficulty": "easy",
+      "questionNumber": 43
+    },
+    {
+      "id": "sat-math-002-q44",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the value of log₃(27)?",
+      "options": [
+        "2",
+        "9",
+        "3",
+        "81"
+      ],
+      "correctAnswer": "3",
+      "explanation": "log₃(27) asks: 3 to what power equals 27? Since 3³ = 27, the answer is 3.",
+      "difficulty": "medium",
+      "questionNumber": 44
+    }
+  ]
+}

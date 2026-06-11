@@ -1110,6 +1110,67 @@
           "healthcare": 170
         }
       }
+    },
+    "sat": {
+      "examId": "sat",
+      "examName": "SAT",
+      "fullName": "Scholastic Assessment Test (Digital)",
+      "scale": "400–1600",
+      "website": "https://satsuite.collegeboard.org",
+      "variants": [
+        {
+          "id": "digital",
+          "label": "Digital SAT",
+          "description": "Adaptive, computer-based; for US university admissions",
+          "sections": [
+            "reading-writing",
+            "math"
+          ]
+        }
+      ],
+      "sections": {
+        "reading-writing": {
+          "id": "reading-writing",
+          "label": "Reading & Writing",
+          "icon": "📖",
+          "rendererType": "sat-rw",
+          "durationMinutes": 64,
+          "questionCount": 54,
+          "itemTypes": [
+            "multiple_choice_single"
+          ],
+          "reviewRequirements": [
+            "answer_key",
+            "explanation"
+          ]
+        },
+        "math": {
+          "id": "math",
+          "label": "Math",
+          "icon": "🔢",
+          "rendererType": "sat-math",
+          "durationMinutes": 70,
+          "questionCount": 44,
+          "itemTypes": [
+            "multiple_choice_single"
+          ],
+          "reviewRequirements": [
+            "answer_key",
+            "explanation"
+          ]
+        }
+      },
+      "fullMockStructure": {
+        "sections": {
+          "digital": [
+            "reading-writing",
+            "math"
+          ]
+        },
+        "totalDurationMinutes": {
+          "digital": 134
+        }
+      }
     }
   }
 }

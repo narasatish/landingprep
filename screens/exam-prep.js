@@ -1,6 +1,6 @@
 (function() {
   const { useState, useEffect } = React;
-  const EXAM_ORDER = ["ielts", "toefl", "pte", "celpip", "duolingo", "gre", "gmat", "oet"];
+  const EXAM_ORDER = ["ielts", "toefl", "pte", "celpip", "duolingo", "gre", "gmat", "oet", "sat"];
   const EXAM_BRAND = {
     ielts: { color: "#dc2626", tagline: "Study, work & migration in English-speaking countries", icon: "\u{1F1EC}\u{1F1E7}" },
     toefl: { color: "#2563eb", tagline: "Academic English for U.S. universities", icon: "\u{1F393}" },
@@ -9,11 +9,16 @@
     duolingo: { color: "#16a34a", tagline: "Adaptive online English test", icon: "\u{1F989}" },
     gre: { color: "#b45309", tagline: "Graduate school admissions worldwide", icon: "\u{1F4DA}" },
     gmat: { color: "#c2410c", tagline: "MBA & business school admissions", icon: "\u{1F4CA}" },
-    oet: { color: "#00A86B", tagline: "English for healthcare professionals", icon: "\u{1FA7A}" }
+    oet: { color: "#00A86B", tagline: "English for healthcare professionals", icon: "\u{1FA7A}" },
+    sat: { color: "#2E5090", tagline: "US university admissions (Reading, Writing & Math)", icon: "\u{1F393}" }
   };
   const SECTION_PRESENTATION = {
     listening: { name: "Listening", icon: "\u{1F3A7}" },
     reading: { name: "Reading", icon: "\u{1F4D6}" },
+    "reading-writing": { name: "Reading & Writing", icon: "\u{1F4D6}" },
+    math: { name: "Math", icon: "\u{1F522}" },
+    english: { name: "English", icon: "\u270F\uFE0F" },
+    science: { name: "Science", icon: "\u{1F52C}" },
     writing: { name: "Writing", icon: "\u270D\uFE0F" },
     speaking: { name: "Speaking", icon: "\u{1F3A4}" },
     verbal: { name: "Verbal", icon: "\u{1F4D6}" },

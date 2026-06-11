@@ -1,0 +1,716 @@
+{
+  "id": "sat-math-003",
+  "exam": "sat",
+  "section": "math",
+  "type": "section",
+  "title": "SAT Math Practice Test 3",
+  "durationSeconds": 4200,
+  "questionCount": 44,
+  "instructions": "Solve each problem and choose the best answer. A calculator is allowed on all questions.",
+  "questions": [
+    {
+      "id": "sat-math-003-q01",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "Solve: 5x + 3 = 28",
+      "options": [
+        "3",
+        "5",
+        "4",
+        "6"
+      ],
+      "correctAnswer": "5",
+      "explanation": "Subtract 3: 5x = 25. Divide by 5: x = 5.",
+      "difficulty": "easy",
+      "questionNumber": 1
+    },
+    {
+      "id": "sat-math-003-q02",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "Which inequality describes the solution to -3x + 2 ≤ 11?",
+      "options": [
+        "x ≤ -3",
+        "x ≥ 3",
+        "x ≤ 3",
+        "x ≥ -3"
+      ],
+      "correctAnswer": "x ≥ -3",
+      "explanation": "Subtract 2: -3x ≤ 9. Divide by -3 (reverse inequality): x ≥ -3.",
+      "difficulty": "easy",
+      "questionNumber": 2
+    },
+    {
+      "id": "sat-math-003-q03",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "A line passes through (0, 2) and (4, 6). What is the slope?",
+      "options": [
+        "0.5",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctAnswer": "1",
+      "explanation": "Slope = (6 - 2) / (4 - 0) = 4 / 4 = 1.",
+      "difficulty": "easy",
+      "questionNumber": 3
+    },
+    {
+      "id": "sat-math-003-q04",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "What is the y-intercept of y = -2x + 5?",
+      "options": [
+        "-5",
+        "-2",
+        "2",
+        "5"
+      ],
+      "correctAnswer": "5",
+      "explanation": "The line is in form y = mx + b where b is the y-intercept. Here b = 5.",
+      "difficulty": "easy",
+      "questionNumber": 4
+    },
+    {
+      "id": "sat-math-003-q05",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "Solve: x/6 - 2 = 4",
+      "options": [
+        "12",
+        "36",
+        "24",
+        "48"
+      ],
+      "correctAnswer": "36",
+      "explanation": "Add 2: x/6 = 6. Multiply by 6: x = 36.",
+      "difficulty": "easy",
+      "questionNumber": 5
+    },
+    {
+      "id": "sat-math-003-q06",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "Solve the system: x + 3y = 11 and 2x - y = 1",
+      "options": [
+        "x = 5, y = 2",
+        "x = 1, y = 3.33",
+        "x = 3, y = 2.67",
+        "x = 2, y = 3"
+      ],
+      "correctAnswer": "x = 2, y = 3",
+      "explanation": "From the second equation, y = 2x - 1. Substitute: x + 3(2x - 1) = 11 → 7x - 3 = 11 → 7x = 14 → x = 2, so y = 3. Check: 2 + 9 = 11 ✓ and 4 - 3 = 1 ✓.",
+      "difficulty": "medium",
+      "questionNumber": 6
+    },
+    {
+      "id": "sat-math-003-q07",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "A bakery sells cupcakes for $3 each and brownies for $2 each. If 50 items were sold for $130, how many cupcakes were sold?",
+      "options": [
+        "20",
+        "30",
+        "25",
+        "40"
+      ],
+      "correctAnswer": "30",
+      "explanation": "Let c = cupcakes, b = brownies. Then c + b = 50 and 3c + 2b = 130. From first: b = 50 - c. Substitute: 3c + 2(50 - c) = 130 → 3c + 100 - 2c = 130 → c = 30.",
+      "difficulty": "medium",
+      "questionNumber": 7
+    },
+    {
+      "id": "sat-math-003-q08",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "If 3(2x + 1) = 5x + 9, what is x?",
+      "options": [
+        "2",
+        "4",
+        "8",
+        "6"
+      ],
+      "correctAnswer": "6",
+      "explanation": "Expand: 6x + 3 = 5x + 9. Subtract 5x: x + 3 = 9. Subtract 3: x = 6.",
+      "difficulty": "medium",
+      "questionNumber": 8
+    },
+    {
+      "id": "sat-math-003-q09",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "If 5x = 125, what is x?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctAnswer": "3",
+      "explanation": "5x = 125 means x = log₅(125). Since 5³ = 125, x = 3.",
+      "difficulty": "easy",
+      "questionNumber": 9
+    },
+    {
+      "id": "sat-math-003-q10",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "Simplify: √(49 × 4)",
+      "options": [
+        "14",
+        "28",
+        "53",
+        "196"
+      ],
+      "correctAnswer": "14",
+      "explanation": "√(49 × 4) = √49 × √4 = 7 × 2 = 14.",
+      "difficulty": "easy",
+      "questionNumber": 10
+    },
+    {
+      "id": "sat-math-003-q11",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the value of 2⁻³?",
+      "options": [
+        "1/6",
+        "1/8",
+        "6",
+        "8"
+      ],
+      "correctAnswer": "1/8",
+      "explanation": "2⁻³ = 1/(2³) = 1/8.",
+      "difficulty": "easy",
+      "questionNumber": 11
+    },
+    {
+      "id": "sat-math-003-q12",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the sum of the roots of x² - 8x + 12 = 0?",
+      "options": [
+        "-12",
+        "8",
+        "-8",
+        "12"
+      ],
+      "correctAnswer": "8",
+      "explanation": "Using Vieta's formulas, sum of roots = -b/a = -(-8)/1 = 8.",
+      "difficulty": "medium",
+      "questionNumber": 12
+    },
+    {
+      "id": "sat-math-003-q13",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "If p(x) = 3x - 5, what is p(4)?",
+      "options": [
+        "12",
+        "7",
+        "17",
+        "19"
+      ],
+      "correctAnswer": "7",
+      "explanation": "p(4) = 3(4) - 5 = 12 - 5 = 7.",
+      "difficulty": "easy",
+      "questionNumber": 13
+    },
+    {
+      "id": "sat-math-003-q14",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "Expand: (x + 4)²",
+      "options": [
+        "x² + 4",
+        "x² + 8x + 16",
+        "x² + 4x + 16",
+        "x² + 16"
+      ],
+      "correctAnswer": "x² + 8x + 16",
+      "explanation": "Using (a + b)² = a² + 2ab + b²: (x + 4)² = x² + 2(x)(4) + 16 = x² + 8x + 16.",
+      "difficulty": "medium",
+      "questionNumber": 14
+    },
+    {
+      "id": "sat-math-003-q15",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "Solve: x² - 3x - 18 = 0",
+      "options": [
+        "x = 3 or x = -6",
+        "x = 6 or x = -3",
+        "x = 2 or x = -9",
+        "x = 9 or x = -2"
+      ],
+      "correctAnswer": "x = 6 or x = -3",
+      "explanation": "Factor: (x - 6)(x + 3) = 0 → x = 6 or x = -3.",
+      "difficulty": "medium",
+      "questionNumber": 15
+    },
+    {
+      "id": "sat-math-003-q16",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the value of √121?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "correctAnswer": "11",
+      "explanation": "√121 = 11 because 11² = 121.",
+      "difficulty": "easy",
+      "questionNumber": 16
+    },
+    {
+      "id": "sat-math-003-q17",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A jacket costs $80 and is discounted by 30%. What is the sale price?",
+      "options": [
+        "$50",
+        "$56",
+        "$64",
+        "$74"
+      ],
+      "correctAnswer": "$56",
+      "explanation": "Discount = 30% of $80 = 0.30 × $80 = $24. Sale price = $80 - $24 = $56.",
+      "difficulty": "easy",
+      "questionNumber": 17
+    },
+    {
+      "id": "sat-math-003-q18",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A train travels 450 km in 6 hours. What is its average speed in km/h?",
+      "options": [
+        "60",
+        "75",
+        "70",
+        "90"
+      ],
+      "correctAnswer": "75",
+      "explanation": "Average speed = distance / time = 450 km / 6 hours = 75 km/h.",
+      "difficulty": "easy",
+      "questionNumber": 18
+    },
+    {
+      "id": "sat-math-003-q19",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "The ratio of apples to oranges is 4:5. If there are 32 apples, how many oranges are there?",
+      "options": [
+        "25",
+        "40",
+        "35",
+        "30"
+      ],
+      "correctAnswer": "40",
+      "explanation": "If apples:oranges = 4:5 and apples = 32, then 32/oranges = 4/5 → oranges = 32 × 5/4 = 40.",
+      "difficulty": "easy",
+      "questionNumber": 19
+    },
+    {
+      "id": "sat-math-003-q20",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A jar contains 2 red marbles, 3 blue marbles, and 5 green marbles. What is the probability of drawing a blue marble?",
+      "options": [
+        "1/4",
+        "1/3",
+        "3/10",
+        "1/2"
+      ],
+      "correctAnswer": "3/10",
+      "explanation": "Total marbles = 2 + 3 + 5 = 10. Probability of blue = 3/10.",
+      "difficulty": "easy",
+      "questionNumber": 20
+    },
+    {
+      "id": "sat-math-003-q21",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "The average of 6 numbers is 12. What is their sum?",
+      "options": [
+        "6",
+        "18",
+        "84",
+        "72"
+      ],
+      "correctAnswer": "72",
+      "explanation": "Sum = average × count = 12 × 6 = 72.",
+      "difficulty": "easy",
+      "questionNumber": 21
+    },
+    {
+      "id": "sat-math-003-q22",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A paint mixture uses red and blue in a 3:2 ratio. If you use 9 units of red, how much blue do you need?",
+      "options": [
+        "4",
+        "5",
+        "7",
+        "6"
+      ],
+      "correctAnswer": "6",
+      "explanation": "If red:blue = 3:2 and red = 9, then 9/blue = 3/2 → blue = 9 × 2/3 = 6.",
+      "difficulty": "easy",
+      "questionNumber": 22
+    },
+    {
+      "id": "sat-math-003-q23",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A population increases from 1,000 to 1,250. What is the percent increase?",
+      "options": [
+        "20%",
+        "35%",
+        "30%",
+        "25%"
+      ],
+      "correctAnswer": "25%",
+      "explanation": "Percent increase = (1,250 - 1,000) / 1,000 × 100% = 250 / 1,000 × 100% = 25%.",
+      "difficulty": "medium",
+      "questionNumber": 23
+    },
+    {
+      "id": "sat-math-003-q24",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A data set is 5, 10, 15, 20, 25. What is the mean?",
+      "options": [
+        "22.5",
+        "17.5",
+        "20",
+        "15"
+      ],
+      "correctAnswer": "15",
+      "explanation": "Mean = (5 + 10 + 15 + 20 + 25) / 5 = 75 / 5 = 15.",
+      "difficulty": "easy",
+      "questionNumber": 24
+    },
+    {
+      "id": "sat-math-003-q25",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "What is the area of a triangle with base 14 and height 8?",
+      "options": [
+        "22",
+        "44",
+        "112",
+        "56"
+      ],
+      "correctAnswer": "56",
+      "explanation": "Area = (1/2) × base × height = (1/2) × 14 × 8 = 56.",
+      "difficulty": "easy",
+      "questionNumber": 25
+    },
+    {
+      "id": "sat-math-003-q26",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "A circle has radius 10. What is its circumference in terms of π?",
+      "options": [
+        "10π",
+        "100π",
+        "50π",
+        "20π"
+      ],
+      "correctAnswer": "20π",
+      "explanation": "Circumference = 2πr = 2π(10) = 20π.",
+      "difficulty": "easy",
+      "questionNumber": 26
+    },
+    {
+      "id": "sat-math-003-q27",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "A circle has area 64π. What is its radius?",
+      "options": [
+        "4",
+        "32",
+        "16",
+        "8"
+      ],
+      "correctAnswer": "8",
+      "explanation": "Area = πr² = 64π → r² = 64 → r = 8.",
+      "difficulty": "easy",
+      "questionNumber": 27
+    },
+    {
+      "id": "sat-math-003-q28",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "In a right triangle, the legs are 5 and 12. What is the hypotenuse?",
+      "options": [
+        "25",
+        "17",
+        "19",
+        "13"
+      ],
+      "correctAnswer": "13",
+      "explanation": "Using Pythagorean theorem: c² = 5² + 12² = 25 + 144 = 169 → c = 13.",
+      "difficulty": "easy",
+      "questionNumber": 28
+    },
+    {
+      "id": "sat-math-003-q29",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "The angles in a quadrilateral are 80°, 100°, and 110°. What is the fourth angle?",
+      "options": [
+        "110°",
+        "80°",
+        "90°",
+        "70°"
+      ],
+      "correctAnswer": "70°",
+      "explanation": "The sum of angles in a quadrilateral is 360°. Fourth angle = 360° - 80° - 100° - 110° = 70°.",
+      "difficulty": "easy",
+      "questionNumber": 29
+    },
+    {
+      "id": "sat-math-003-q30",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "In a right triangle, one leg is 7 and the hypotenuse is 25. What is the other leg?",
+      "options": [
+        "18",
+        "20",
+        "24",
+        "32"
+      ],
+      "correctAnswer": "24",
+      "explanation": "Using Pythagorean theorem: 7² + b² = 25² → 49 + b² = 625 → b² = 576 → b = 24.",
+      "difficulty": "medium",
+      "questionNumber": 30
+    },
+    {
+      "id": "sat-math-003-q31",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "In a 30-60-90 triangle, the side opposite the 60° angle is 8√3. What is the hypotenuse?",
+      "options": [
+        "8",
+        "16",
+        "16√3",
+        "24"
+      ],
+      "correctAnswer": "16",
+      "explanation": "In a 30-60-90 triangle, sides are in ratio 1:√3:2. If side opposite 60° is 8√3, then hypotenuse = 2 × 8 = 16.",
+      "difficulty": "medium",
+      "questionNumber": 31
+    },
+    {
+      "id": "sat-math-003-q32",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "Solve: |3x + 2| = 11",
+      "options": [
+        "x = 3 or x = -3",
+        "x = 3 or x = -13/3",
+        "x = 2 or x = -4",
+        "x = 1 or x = -1"
+      ],
+      "correctAnswer": "x = 3 or x = -13/3",
+      "explanation": "|3x + 2| = 11 means 3x + 2 = 11 or 3x + 2 = -11. From first: 3x = 9 → x = 3. From second: 3x = -13 → x = -13/3.",
+      "difficulty": "medium",
+      "questionNumber": 32
+    },
+    {
+      "id": "sat-math-003-q33",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the vertex of f(x) = 2(x - 1)² - 3?",
+      "options": [
+        "(-1, -3)",
+        "(1, -3)",
+        "(1, 3)",
+        "(-1, 3)"
+      ],
+      "correctAnswer": "(1, -3)",
+      "explanation": "The vertex form is f(x) = a(x - h)² + k where vertex is (h, k). Here h = 1 and k = -3, so vertex is (1, -3).",
+      "difficulty": "medium",
+      "questionNumber": 33
+    },
+    {
+      "id": "sat-math-003-q34",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "If 80% of a number is 160, what is the number?",
+      "options": [
+        "128",
+        "200",
+        "160",
+        "240"
+      ],
+      "correctAnswer": "200",
+      "explanation": "Let the number be x. Then 0.80x = 160 → x = 160 / 0.80 = 200.",
+      "difficulty": "easy",
+      "questionNumber": 34
+    },
+    {
+      "id": "sat-math-003-q35",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "A rectangular prism has volume 180. If length = 9 and width = 5, what is the height?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "8"
+      ],
+      "correctAnswer": "4",
+      "explanation": "Volume = length × width × height → 180 = 9 × 5 × h → 180 = 45h → h = 4.",
+      "difficulty": "easy",
+      "questionNumber": 35
+    },
+    {
+      "id": "sat-math-003-q36",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "If f(x) = 4x - 7 and f(x) = 5, what is x?",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "correctAnswer": "3",
+      "explanation": "4x - 7 = 5 → 4x = 12 → x = 3.",
+      "difficulty": "easy",
+      "questionNumber": 36
+    },
+    {
+      "id": "sat-math-003-q37",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the product of the roots of 3x² - 9x + 6 = 0?",
+      "options": [
+        "-6",
+        "2",
+        "-3",
+        "6"
+      ],
+      "correctAnswer": "2",
+      "explanation": "Using Vieta's formulas, product of roots = c/a = 6/3 = 2.",
+      "difficulty": "medium",
+      "questionNumber": 37
+    },
+    {
+      "id": "sat-math-003-q38",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "If 5 books cost $40, what is the cost of 8 books?",
+      "options": [
+        "$56",
+        "$64",
+        "$72",
+        "$80"
+      ],
+      "correctAnswer": "$64",
+      "explanation": "Cost per book = $40 / 5 = $8. Cost of 8 books = 8 × $8 = $64.",
+      "difficulty": "easy",
+      "questionNumber": 38
+    },
+    {
+      "id": "sat-math-003-q39",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "Triangle A has a side of 6 and Triangle B (similar to A) has a corresponding side of 9. What is the ratio of similarity?",
+      "options": [
+        "1:1.5",
+        "2:3",
+        "1:3",
+        "3:2"
+      ],
+      "correctAnswer": "2:3",
+      "explanation": "The ratio of corresponding sides is 6:9 = 2:3.",
+      "difficulty": "easy",
+      "questionNumber": 39
+    },
+    {
+      "id": "sat-math-003-q40",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "Simplify: (b⁴ × b²) / b⁵",
+      "options": [
+        "b³",
+        "b²",
+        "b",
+        "b⁶"
+      ],
+      "correctAnswer": "b",
+      "explanation": "(b⁴ × b²) / b⁵ = b⁶ / b⁵ = b.",
+      "difficulty": "medium",
+      "questionNumber": 40
+    },
+    {
+      "id": "sat-math-003-q41",
+      "questionType": "multiple_choice_single",
+      "topic": "Algebra",
+      "prompt": "If 4(x + 5) = 3x + 35, what is x?",
+      "options": [
+        "5",
+        "10",
+        "20",
+        "15"
+      ],
+      "correctAnswer": "15",
+      "explanation": "Expand: 4x + 20 = 3x + 35. Subtract 3x: x + 20 = 35. Subtract 20: x = 15.",
+      "difficulty": "medium",
+      "questionNumber": 41
+    },
+    {
+      "id": "sat-math-003-q42",
+      "questionType": "multiple_choice_single",
+      "topic": "Problem-Solving & Data Analysis",
+      "prompt": "A student's grades are 92, 88, 95, and 85. What is the average?",
+      "options": [
+        "87.5",
+        "92.5",
+        "91",
+        "90"
+      ],
+      "correctAnswer": "90",
+      "explanation": "Average = (92 + 88 + 95 + 85) / 4 = 360 / 4 = 90.",
+      "difficulty": "easy",
+      "questionNumber": 42
+    },
+    {
+      "id": "sat-math-003-q43",
+      "questionType": "multiple_choice_single",
+      "topic": "Geometry & Trigonometry",
+      "prompt": "A circle has a circumference of 18π. What is its radius?",
+      "options": [
+        "6",
+        "18",
+        "12",
+        "9"
+      ],
+      "correctAnswer": "9",
+      "explanation": "Circumference = 2πr = 18π → r = 9.",
+      "difficulty": "easy",
+      "questionNumber": 43
+    },
+    {
+      "id": "sat-math-003-q44",
+      "questionType": "multiple_choice_single",
+      "topic": "Advanced Math",
+      "prompt": "What is the value of log₄(64)?",
+      "options": [
+        "2",
+        "2.5",
+        "4",
+        "3"
+      ],
+      "correctAnswer": "3",
+      "explanation": "log₄(64) asks: 4 to what power equals 64? Since 4³ = 64, the answer is 3.",
+      "difficulty": "medium",
+      "questionNumber": 44
+    }
+  ]
+}

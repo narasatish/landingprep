@@ -14632,6 +14632,88 @@
         ]
       },
       "fullMocks": []
+    },
+    "sat": {
+      "label": "SAT",
+      "sections": {
+        "reading-writing": [
+          {
+            "id": "sat-reading-writing-001",
+            "title": "SAT Reading & Writing Practice Test 1",
+            "exam": "sat",
+            "section": "reading-writing",
+            "type": "section",
+            "durationSeconds": 3840,
+            "questionCount": 54,
+            "file": "sat/reading-writing/test-001.json",
+            "version": 3,
+            "variant": "digital"
+          },
+          {
+            "id": "sat-reading-writing-002",
+            "title": "SAT Reading & Writing Practice Test 2",
+            "exam": "sat",
+            "section": "reading-writing",
+            "type": "section",
+            "durationSeconds": 3840,
+            "questionCount": 54,
+            "file": "sat/reading-writing/test-002.json",
+            "version": 3,
+            "variant": "digital"
+          },
+          {
+            "id": "sat-reading-writing-003",
+            "title": "SAT Reading & Writing Practice Test 3",
+            "exam": "sat",
+            "section": "reading-writing",
+            "type": "section",
+            "durationSeconds": 3840,
+            "questionCount": 54,
+            "file": "sat/reading-writing/test-003.json",
+            "version": 3,
+            "variant": "digital"
+          }
+        ],
+        "math": [
+          {
+            "id": "sat-math-001",
+            "title": "SAT Math Practice Test 1",
+            "exam": "sat",
+            "section": "math",
+            "type": "section",
+            "durationSeconds": 4200,
+            "questionCount": 44,
+            "file": "sat/math/test-001.json",
+            "version": 3,
+            "variant": "digital"
+          },
+          {
+            "id": "sat-math-002",
+            "title": "SAT Math Practice Test 2",
+            "exam": "sat",
+            "section": "math",
+            "type": "section",
+            "durationSeconds": 4200,
+            "questionCount": 44,
+            "file": "sat/math/test-002.json",
+            "version": 3,
+            "variant": "digital"
+          },
+          {
+            "id": "sat-math-003",
+            "title": "SAT Math Practice Test 3",
+            "exam": "sat",
+            "section": "math",
+            "type": "section",
+            "durationSeconds": 4200,
+            "questionCount": 44,
+            "file": "sat/math/test-003.json",
+            "version": 3,
+            "variant": "digital"
+          }
+        ]
+      },
+      "fullMocks": []
     }
   }
 }
