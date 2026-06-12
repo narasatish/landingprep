@@ -29199,6 +29199,402 @@ Why it's fast: Germany has no quota system. If you meet the criteria (2 years em
           "body": "Practice full TOEFL iBT tests at home under identical conditions \u2014 same room, noise level, and time of day. Ensure your equipment works reliably and review the official registration bulletin. Manage your time across all four sections. Take practice tests on LandingPrep free to build familiarity with question types before test day."
         }
       ]
+    },
+    {
+      "id": "gmat-math-formulas-cheat-sheet-2026",
+      "tag": "GMAT",
+      "date": "2026",
+      "title": "GMAT Focus Math Formulas Cheat Sheet 2026: Every Quant Formula You Need",
+      "excerpt": "Every GMAT Focus Quant formula in one place \u2014 arithmetic, percentages, number properties, algebra, word problems, statistics, counting and probability \u2014 with worked examples and the traps that catch test-takers. Geometry appendix included.",
+      "kw": "gmat formulas, gmat math formulas, gmat focus quant formulas, gmat quant cheat sheet, gmat focus practice test, gmat algebra formulas, gmat number properties, gmat probability formulas, gmat india, gmat math cheat sheet 2026",
+      "metaDesc": "Free GMAT Focus formulas cheat sheet: every Quant formula \u2014 percentages, algebra, number properties, stats & probability \u2014 with examples and key traps.",
+      "sections": [
+        {
+          "h": "What GMAT Focus Quant actually tests in 2026",
+          "body": "The **GMAT Focus Edition** Quantitative Reasoning section is **21 questions in 45 minutes**, and it is **Problem Solving only** \u2014 Data Sufficiency moved to the new **Data Insights** section. Importantly, **geometry was removed** from the Focus Quant section, so your formula memorisation should be weighted toward arithmetic, number properties, algebra and word problems. We still include a geometry appendix at the end because the concepts can appear inside Data Insights problems and on older test formats.",
+          "callout": {
+            "type": "key",
+            "text": "There is **no formula sheet** in the exam. You must have every formula below memorised and automatic \u2014 the GMAT rewards speed, not look-up."
+          }
+        },
+        {
+          "h": "Arithmetic, fractions and percentages",
+          "body": "Percentages are the single most tested arithmetic topic on the GMAT. Master percent change and successive percentages first.",
+          "table": {
+            "headers": [
+              "Concept",
+              "Formula"
+            ],
+            "rows": [
+              [
+                "x percent of y",
+                "(x / 100) \xD7 y"
+              ],
+              [
+                "What percent a is of b",
+                "(a / b) \xD7 100"
+              ],
+              [
+                "Percent change",
+                "(New \u2212 Old) / Old \xD7 100"
+              ],
+              [
+                "Successive % change (p then q)",
+                "Net = (1 + p/100)(1 + q/100) \u2212 1"
+              ],
+              [
+                "Increase then decrease by same x%",
+                "Net change = \u2212x\xB2 / 100  (always a net loss)"
+              ],
+              [
+                "Fraction to percent",
+                "Multiply the fraction by 100"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Ratios, proportions and averages",
+          "body": "A ratio a : b splits a total into parts of size a/(a+b) and b/(a+b). Averages are just sum \xF7 count \u2014 the trick is knowing when to use a weighted average.",
+          "table": {
+            "headers": [
+              "Concept",
+              "Formula"
+            ],
+            "rows": [
+              [
+                "Average (arithmetic mean)",
+                "Sum \xF7 Count"
+              ],
+              [
+                "Sum from average",
+                "Average \xD7 Count"
+              ],
+              [
+                "Weighted average",
+                "\u03A3(weight \xD7 value) \xF7 \u03A3(weights)"
+              ],
+              [
+                "Part of a total from a ratio a : b",
+                "Part = Total \xD7 a / (a + b)"
+              ],
+              [
+                "Proportion (cross-multiply)",
+                "a/b = c/d  \u27F6  a\xB7d = b\xB7c"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Number properties (a GMAT favourite)",
+          "body": "GMAT Focus leans heavily on number properties: even/odd, factors, divisibility and remainders. These rules save you from slow calculation.",
+          "bullets": [
+            "**Even \xB1 Even = Even**, **Odd \xB1 Odd = Even**, **Even \xB1 Odd = Odd**",
+            "**Even \xD7 anything = Even**; **Odd \xD7 Odd = Odd**",
+            "Number of factors of N = p^a \xB7 q^b \xB7 r^c is **(a+1)(b+1)(c+1)**",
+            "The product of any **n consecutive integers is divisible by n!**",
+            "For two numbers: **LCM \xD7 HCF = product of the two numbers**",
+            "Divisibility: **by 3 or 9** if the digit sum is; **by 4** if last two digits are; **by 8** if last three are; **by 6** if divisible by 2 and 3; **by 11** if the alternating digit sum is divisible by 11"
+          ]
+        },
+        {
+          "h": "Algebra: identities, quadratics and exponents",
+          "body": "Recognising algebraic identities instantly is how strong scorers avoid heavy expansion.",
+          "table": {
+            "headers": [
+              "Identity / rule",
+              "Formula"
+            ],
+            "rows": [
+              [
+                "Square of a sum",
+                "(a + b)\xB2 = a\xB2 + 2ab + b\xB2"
+              ],
+              [
+                "Square of a difference",
+                "(a \u2212 b)\xB2 = a\xB2 \u2212 2ab + b\xB2"
+              ],
+              [
+                "Difference of squares",
+                "a\xB2 \u2212 b\xB2 = (a + b)(a \u2212 b)"
+              ],
+              [
+                "Sum / difference of cubes",
+                "a\xB3 \xB1 b\xB3 = (a \xB1 b)(a\xB2 \u2213 ab + b\xB2)"
+              ],
+              [
+                "Quadratic roots",
+                "x = [ \u2212b \xB1 \u221A(b\xB2 \u2212 4ac) ] / (2a)"
+              ],
+              [
+                "Sum & product of roots",
+                "Sum = \u2212b/a , Product = c/a"
+              ],
+              [
+                "Discriminant b\xB2 \u2212 4ac",
+                "> 0: two real roots; = 0: one; < 0: none"
+              ],
+              [
+                "Exponent rules",
+                "a\u1D50\xB7a\u207F = a\u1D50\u207A\u207F ; a\u1D50/a\u207F = a\u1D50\u207B\u207F ; (a\u1D50)\u207F = a\u1D50\u207F ; a\u2070 = 1 ; a\u207B\u207F = 1/a\u207F"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Word problems: speed, work, interest and mixtures",
+          "body": "Most GMAT word problems reduce to one of these five engines. The two biggest traps are averaging speeds and confusing simple vs compound interest.",
+          "table": {
+            "headers": [
+              "Type",
+              "Formula"
+            ],
+            "rows": [
+              [
+                "Distance",
+                "Distance = Speed \xD7 Time"
+              ],
+              [
+                "Average speed",
+                "Total distance \xF7 Total time (NOT the average of the speeds)"
+              ],
+              [
+                "Equal distance at speeds x, y",
+                "Average speed = 2xy / (x + y)"
+              ],
+              [
+                "Combined work rate",
+                "Time together = ab / (a + b)  (when each alone takes a and b)"
+              ],
+              [
+                "Simple interest",
+                "SI = P \xB7 R \xB7 T / 100"
+              ],
+              [
+                "Compound interest (amount)",
+                "A = P (1 + R/100)\u1D40 ; CI = A \u2212 P"
+              ],
+              [
+                "Profit / loss percent",
+                "(SP \u2212 CP) / CP \xD7 100"
+              ],
+              [
+                "Mixtures (alligation)",
+                "Cheaper qty : Dearer qty = (Dearer \u2212 Mean) : (Mean \u2212 Cheaper)"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Statistics",
+          "body": "The GMAT tests the meaning of these measures more than heavy computation \u2014 especially how mean, median and standard deviation shift when a set changes.",
+          "table": {
+            "headers": [
+              "Measure",
+              "Formula / rule"
+            ],
+            "rows": [
+              [
+                "Mean",
+                "Sum of values \xF7 Number of values"
+              ],
+              [
+                "Median",
+                "Middle value (mean of the two middles if the count is even)"
+              ],
+              [
+                "Mode",
+                "The most frequently occurring value"
+              ],
+              [
+                "Range",
+                "Maximum \u2212 Minimum"
+              ],
+              [
+                "Evenly spaced set",
+                "Mean = Median = (First + Last) / 2"
+              ],
+              [
+                "Standard deviation",
+                "Measures spread; SD = 0 only when every value is identical"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Counting and probability",
+          "body": "Decide first whether order matters: order matters \u2192 permutations (P), order doesn't \u2192 combinations (C).",
+          "table": {
+            "headers": [
+              "Concept",
+              "Formula"
+            ],
+            "rows": [
+              [
+                "Permutations (order matters)",
+                "nPr = n! / (n \u2212 r)!"
+              ],
+              [
+                "Combinations (order doesn't)",
+                "nCr = n! / [ r! (n \u2212 r)! ] , and nCr = nC(n\u2212r)"
+              ],
+              [
+                "Arrangements of n distinct items",
+                "n!"
+              ],
+              [
+                "Arrangements with repeats",
+                "n! / (p! q! \u2026) for repeated items"
+              ],
+              [
+                "Circular arrangements of n",
+                "(n \u2212 1)!"
+              ],
+              [
+                "Probability of an event",
+                "Favourable outcomes \xF7 Total outcomes"
+              ],
+              [
+                "P(A or B)",
+                "P(A) + P(B) \u2212 P(A and B)"
+              ],
+              [
+                "P(not A)",
+                "1 \u2212 P(A)"
+              ],
+              [
+                "Independent events",
+                "P(A and B) = P(A) \xD7 P(B)"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Sequences and series",
+          "body": "Arithmetic (constant difference) and geometric (constant ratio) progressions, plus three sum shortcuts worth memorising.",
+          "table": {
+            "headers": [
+              "Concept",
+              "Formula"
+            ],
+            "rows": [
+              [
+                "Arithmetic progression \u2014 nth term",
+                "a\u2099 = a + (n \u2212 1)d"
+              ],
+              [
+                "Arithmetic progression \u2014 sum",
+                "S\u2099 = n/2 \xB7 (First + Last) = n/2 \xB7 [2a + (n\u22121)d]"
+              ],
+              [
+                "Geometric progression \u2014 nth term",
+                "a\u2099 = a \xB7 r^(n\u22121)"
+              ],
+              [
+                "Geometric progression \u2014 sum",
+                "S\u2099 = a (r\u207F \u2212 1) / (r \u2212 1) , r \u2260 1"
+              ],
+              [
+                "Sum of first n integers",
+                "n(n + 1) / 2"
+              ],
+              [
+                "Sum of first n squares",
+                "n(n + 1)(2n + 1) / 6"
+              ],
+              [
+                "Sum of first n odd numbers",
+                "n\xB2"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Geometry appendix (light on GMAT Focus, useful for Data Insights)",
+          "body": "Geometry was removed from the standalone Focus Quant section, but these still help on Data Insights graphics and on older formats, so keep them on hand.",
+          "table": {
+            "headers": [
+              "Shape",
+              "Formula"
+            ],
+            "rows": [
+              [
+                "Triangle area",
+                "\xBD \xD7 base \xD7 height ; Heron's = \u221A[s(s\u2212a)(s\u2212b)(s\u2212c)], s = (a+b+c)/2"
+              ],
+              [
+                "Pythagoras",
+                "a\xB2 + b\xB2 = c\xB2"
+              ],
+              [
+                "Special right triangles",
+                "45-45-90 sides 1 : 1 : \u221A2 ; 30-60-90 sides 1 : \u221A3 : 2"
+              ],
+              [
+                "Circle",
+                "Area = \u03C0 r\xB2 ; Circumference = 2\u03C0 r ; Sector area = (\u03B8/360) \u03C0 r\xB2"
+              ],
+              [
+                "Rectangle",
+                "Area = l \xD7 w ; Perimeter = 2(l + w)"
+              ],
+              [
+                "Square",
+                "Area = s\xB2 ; Perimeter = 4s"
+              ],
+              [
+                "Cylinder / sphere volume",
+                "Cylinder = \u03C0 r\xB2 h ; Sphere = (4/3) \u03C0 r\xB3"
+              ],
+              [
+                "Interior angles of an n-gon",
+                "(n \u2212 2) \xD7 180\xB0"
+              ],
+              [
+                "Coordinate geometry",
+                "Distance = \u221A[(x\u2082\u2212x\u2081)\xB2 + (y\u2082\u2212y\u2081)\xB2] ; Slope = (y\u2082\u2212y\u2081)/(x\u2082\u2212x\u2081) ; Line: y = mx + b"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "The five formula traps that cost the most points",
+          "body": "Knowing the formula isn't enough \u2014 these are the misapplications GMAT question-writers deliberately bait.",
+          "bullets": [
+            "**Averaging speeds.** Average speed is total distance \xF7 total time, never (x + y)/2 unless the times are equal.",
+            "**Successive percentages.** A 20% rise then a 20% fall is a net **4% loss**, not break-even.",
+            "**Simple vs compound interest.** Read carefully \u2014 compound grows on the new balance each period.",
+            "**Permutation vs combination.** 'How many ways to arrange' = permutation; 'how many ways to choose' = combination.",
+            "**Counting the endpoints.** The number of integers from a to b inclusive is **b \u2212 a + 1**, not b \u2212 a."
+          ]
+        },
+        {
+          "h": "How to lock these in \u2014 free GMAT practice",
+          "body": "Formulas only stick when you apply them under timing. Take a free, full-length GMAT Focus mock test on LandingPrep \u2014 real 45-minute Quant timing and instant scoring \u2014 then come back to this sheet for anything you missed. No signup, no payment. Start your free [GMAT mock test](/#/exam-prep) or open the free [GMAT prep lessons](/#/lessons)."
+        }
+      ],
+      "faqs": [
+        [
+          "Does GMAT Focus test geometry?",
+          "Geometry was removed from the standalone Quantitative Reasoning section of the GMAT Focus Edition. The Quant section is Problem Solving only and emphasises arithmetic, number properties, algebra and word problems. Geometry concepts can still appear inside Data Insights questions, which is why we include a short geometry appendix."
+        ],
+        [
+          "Is there a formula sheet provided during the GMAT?",
+          "No. The GMAT does not provide a formula sheet or a physical calculator on the Quant section, so every formula on this cheat sheet must be memorised and automatic. An on-screen calculator is available only on the Data Insights section."
+        ],
+        [
+          "How many formulas do I really need for the GMAT?",
+          "Fewer than most students fear. Master percentages, number properties, the core algebra identities, the speed/work/interest engines, and the counting and probability rules on this page, and you cover the large majority of GMAT Focus Quant questions."
+        ],
+        [
+          "What is the most important Quant area on GMAT Focus?",
+          "Arithmetic and number properties \u2014 especially percentages, divisibility, factors and remainders \u2014 appear most often, followed by algebra and word problems. Weight your revision accordingly."
+        ],
+        [
+          "How is GMAT Focus Quant scored?",
+          "The Quantitative Reasoning section is scored from 60 to 90, and the three sections (Quant, Verbal, Data Insights) combine into a total score from 205 to 805. Strong Quant accuracy and pacing on the 21 questions in 45 minutes is the fastest route to a higher total."
+        ]
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;
