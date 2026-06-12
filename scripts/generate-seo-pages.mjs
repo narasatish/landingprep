@@ -760,7 +760,9 @@ function renderBlogSection(s, lk) {
 function blogPage(a) {
   const path = `/blog/${a.id}/`;
   const title = `${a.title} | ${BRAND}`;
-  const desc = a.excerpt.slice(0, 230);
+  // Prefer a hand-tuned, CTR-optimized meta description (complete ≤155-char sentence)
+  // over the raw excerpt, which is longer and gets truncated mid-thought in SERPs.
+  const desc = a.metaDesc || a.excerpt.slice(0, 230);
   const kw = a.kw || (a.tag + ", study abroad, " + a.title.toLowerCase());
   const isHowTo = /^how-to-/.test(a.id) || /^how to /i.test(a.title);
   const lk = { used: new Set(), count: 0, max: 6, cur: path };
