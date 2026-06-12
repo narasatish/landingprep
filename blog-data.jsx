@@ -3263,68 +3263,778 @@
       "id": "gre-320-study-plan",
       "tag": "GRE",
       "date": "2026",
-      "title": "GRE 320+ Study Plan: How to Score High on Quant & Verbal (Free)",
-      "excerpt": "A structured plan to reach GRE 320+ — Quant fundamentals, Verbal vocabulary and reading, and timed practice. Free GRE mock tests included.",
-      "kw": "gre 320 study plan, how to score 320 gre, gre quant tips, gre verbal preparation, gre 160 quant, free gre practice test",
+      "title": "How to Score GRE 320+: 12-Week Study Plan with Weekly Breakdown",
+      "excerpt": "A GRE 320+ (160 Verbal + 160 Quant) puts you in the 90th percentile. Here's a realistic, week-by-week plan to get there, with vocab drills, error logs, and mock strategies.",
+      "kw": "GRE 320 score, how to get GRE 320, GRE 160 Verbal 160 Quant, GRE study plan 12 weeks, GRE prep schedule, GRE vocabulary building, GRE mock test strategy",
       "sections": [
         {
-          "h": "What 320+ takes",
-          "body": "A 320 usually means around 160 Quant and 160 Verbal. Quant is very learnable for most test-takers because the maths is high-school level — the challenge is speed, traps and careful reading. Verbal rewards vocabulary and reading stamina."
+          "h": "Is GRE 320+ Worth It? Competitiveness & Expectations",
+          "body": "A **GRE 320 (160V + 160Q)** places you in the **90th percentile**—a strong, competitive score for most graduate programs. Here's what it opens:\n\n**Master's Programs**: Top-tier schools (MIT, Stanford, Carnegie Mellon, UT Austin) typically accept students with 155+; a 320 is well above their average and strengthens your profile significantly.\n\n**PhD Programs**: Competitive PhD admits (especially in STEM) often have 160+ averages. A 320 is competitive but not a guarantee—research fit, publications, and recommendations matter more.\n\n**Industry Jobs**: Tech companies (Google, Microsoft, Amazon) sometimes ask for GRE scores as a tie-breaker. A 320 signals strong analytical ability.\n\n**Reality check**: A 320 is excellent, but it's achievable with disciplined study. Most students who aim for 320 and miss get 310–318, still a strong score. The gap between 320 and 330 is harder (requires near-perfection)."
         },
         {
-          "h": "Quant: master fundamentals + traps",
-          "body": "Revise arithmetic, algebra, ratios, percentages, exponents, geometry and basic statistics. Then drill the question types — Quantitative Comparison, multiple-answer and numeric entry. Most lost points come from misreading the question or falling for tempting wrong options, not hard maths."
+          "h": "Baseline Assessment: Know Where You Stand (Week 0)",
+          "body": "Before diving into 12 weeks of prep, take a **full diagnostic test** to identify your starting point and weak areas.",
+          "steps": [
+            "Download ETS's free **PowerPrep Online Practice Test 1**. This is the most accurate diagnostic because it uses real GRE questions.",
+            "Take it under timed conditions: AWA (30 min), Verbal 1 (18 min), Verbal 2 (18 min), Quant 1 (21 min), Quant 2 (21 min), with official breaks.",
+            "Score yourself. Note your Verbal, Quant, and AWA scores.",
+            "Review EVERY wrong answer—not just the ones you got wrong, but also ones you guessed on. Why did you miss it?",
+            "Create a spreadsheet or notebook: Date, Section, Score, Weak Topics (e.g., 'Reading Comp inference,' 'Coordinate Geometry,' 'Sentence Equivalence'). Update this weekly."
+          ],
+          "callout": {
+            "type": "key",
+            "text": "Your baseline tells you where to focus. If Verbal is 145 and Quant is 155, your 320 target is harder on the Verbal side—allocate 60% of your study time there."
+          }
         },
         {
-          "h": "Verbal: vocabulary + reading",
-          "body": "Learn high-frequency GRE vocabulary in context (not flashcards alone) for Text Completion and Sentence Equivalence. For Reading Comprehension, practise identifying the main idea, author's tone and logical structure. Read dense non-fiction to build stamina."
+          "h": "The 320 Study Plan: Weeks 1–12 Breakdown",
+          "body": "This plan assumes 60–90 min/day study time. If you can do more, compress the timeline; if less, extend to 16 weeks.",
+          "table": {
+            "headers": [
+              "Week",
+              "Focus",
+              "Daily Time",
+              "Key Activities",
+              "Milestone"
+            ],
+            "rows": [
+              [
+                "1–2",
+                "Diagnostic + Skill Gaps",
+                "60 min",
+                "Complete diagnostic. List weak topics in spreadsheet. Start Khan Academy Quant fundamentals.",
+                "Know your baseline. Identify 3–4 weakest topics."
+              ],
+              [
+                "3–4",
+                "Quant Fundamentals",
+                "75 min",
+                "Drill Algebra, Arithmetic, basic Geometry. Do 20 Quant questions daily. Watch Manhattan Prep Quant videos.",
+                "Solve 80%+ of basic Quant correctly."
+              ],
+              [
+                "5–6",
+                "Verbal Vocabulary + RC Intro",
+                "75 min",
+                "Learn 50–75 new vocab words (Anki + GRE flashcard decks). Read 1–2 academic articles. Do 10 RC questions daily.",
+                "Memorize 150+ GRE words. Finish 1 full reading passage per day."
+              ],
+              [
+                "7–8",
+                "Quant Advanced Topics",
+                "90 min",
+                "Tackle weak Quant areas (Data Interpretation, Word Problems, Geometry). Do 30 Quant questions daily with error log.",
+                "Score 75%+ on medium-difficulty Quant drills."
+              ],
+              [
+                "9",
+                "Verbal Consolidation + First Mock",
+                "90 min",
+                "Complete Vocab review (200+ words). Do 20 Verbal questions daily. **Take PowerPrep Mock 2 mid-week.** Review all wrong answers.",
+                "Score ≥150 on first mock. Refine error patterns."
+              ],
+              [
+                "10",
+                "Error Review + Strategy Shifts",
+                "75 min",
+                "Focus on wrong-answer patterns. If timing is an issue, drill speed. If conceptual, deep-dive weak topics. Do 15–20 Qs daily.",
+                "Identify whether errors are timing, careless, or conceptual."
+              ],
+              [
+                "11",
+                "Full-Length Mocks + Timing",
+                "90 min",
+                "Take **PowerPrep Mock 3**. Time each section precisely. Review thoroughly. 1 more diagnostic drill on weak Qs type.",
+                "Aim for 315+. Adjust pacing if needed."
+              ],
+              [
+                "12",
+                "Final Polish + Test Readiness",
+                "60 min",
+                "Light review only. Take **PowerPrep Mock 4** at the SAME TIME as your real test. Rest heavily. Do NOT cram.",
+                "Verify you're hitting 320+ consistently. Sleep well."
+              ]
+            ]
+          }
         },
         {
-          "h": "Analytical Writing",
-          "body": "The Issue essay asks for a reasoned argument on a claim. Focus on a clear position, well-developed reasons and specific examples. A clear structure scores well; you do not need elaborate prose."
+          "h": "Verbal: From 155 to 160+ Strategy",
+          "body": "Verbal is hard to improve fast because it requires vocabulary + reading comprehension practice. But it's very doable with focus.",
+          "bullets": [
+            "**Vocabulary is 40% of Verbal**: If you don't know a word, you can't get the question right. Learn 75 new words every 2 weeks using Anki. Set daily reviews to 20 minutes. Target 250–300 words total by week 6.",
+            "**Reading Comp is 35% of Verbal**: Most students struggle with inference questions ('The author implies...'). Solution: Mark the passage as you read (underline key claims, number arguments, circle transitions). Practice 5–7 passages over 2 weeks. Speed comes last; accuracy comes first.",
+            "**Text Completion + Sentence Equivalence are 25% of Verbal**: These reward vocabulary + logical structure. Do 20 TC/SE questions per week, reviewing every word you don't know. They're easier to improve quickly.",
+            "**Common Verbal mistakes**:\n  - Rushing through passages (re-read the question; verify your answer in the text)\n  - Overthinking ('The author's tone is...?' → Reread the section; does it sound confident, skeptical, neutral?)\n  - Ignoring context clues (If a sentence says 'despite her intelligence,' a blank before 'success' likely needs a negative word).",
+            "**Strategy for 160+ Verbal**: Get 5–7 questions wrong in Verbal 1 out of 20. This puts you at 155–158 V1. If V2 is harder and you get 8–10 wrong, you still land at 160–162 V because of the harder section weighting."
+          ]
         },
         {
-          "h": "Timed practice is non-negotiable",
-          "body": "The GRE is adaptive by section and time-pressured. Sit full, timed mock tests to build pacing and learn when to guess and move on. Review every error to find patterns."
+          "h": "Quantitative: From 155 to 160+ Strategy",
+          "body": "Quant is more predictable than Verbal. Master the 10–15 most-tested Quant topics and you'll get 160+ consistently.",
+          "bullets": [
+            "**Must-Know Quant Topics for 160+**:\n  - Algebra: Linear equations, inequalities, exponents, quadratics. ~20 questions total across both sections.\n  - Geometry: Lines & angles, triangles, circles, coordinate geometry, 3D shapes. ~15 questions.\n  - Data Analysis: Tables, charts, probability, combinations, permutations, mean/median/mode. ~15 questions.\n  - Word Problems: Rates, mixtures, overlapping sets. ~8–10 questions.",
+            "**The 80/20 rule**: 20% of topics (Algebra basics, Geometry circles, DS strategy) appear in 80% of tests. Master these cold.",
+            "**Data Sufficiency (DS) vs. Problem Solving (PS)**:\n  - PS: You solve and pick the best answer (usually multiple choice or numeric entry).\n  - DS: Two statements are given. Pick A (only statement 1 is sufficient), B (only statement 2 is sufficient), C (both needed), D (each alone is sufficient), E (neither is sufficient). DS requires logic, not always calculation.",
+            "**Common Quant mistakes**:\n  - Arithmetic errors (use calculator for big multiplications)\n  - Misreading graphs (\"% of total\" vs. 'actual count')\n  - Forgetting constraints (e.g., 'x is an integer' or 'x > 0')\n  - Overthinking (simpler solution often is correct).",
+            "**Speed vs. Accuracy for 160+ Quant**: You need 18–19/20 correct (90%+). This means sacrificing speed for accuracy. Spend 2–2.5 min per question if needed. Leave time to double-check 2–3 answers you're unsure about."
+          ]
         },
         {
-          "h": "Practise free on LandingPrep",
-          "body": "Use free GRE Quant and Verbal practice with worked solutions to drill question types and track your weak areas on the way to 320+."
+          "h": "Vocabulary: The Fast-Track to 160 Verbal",
+          "body": "Here's the brutal truth: vocabulary is the easiest and fastest way to boost your Verbal score. A 160V student knows ~250 high-frequency GRE words cold.",
+          "steps": [
+            "Download a GRE vocabulary deck (Anki has free 'GRE 1000 words' or '500 most common GRE words' decks, or use Quizlet).",
+            "Start with the top 200 most-common words (obfuscate, ephemeral, sagacious, laconic, candid, perspicacious, bombastic, erudite, etc.).",
+            "Study 20–30 new words weekly. Set Anki to show 20 new cards/day + 10 min reviews.",
+            "Use each word in a sentence. Passive flashcard learning is slow; active use is fast.",
+            "After 6 weeks, you've learned ~150 words. Take a practice test—your Verbal likely jumped 5–10 points.",
+            "Weeks 7–10: Learn 50 more advanced words (pragmatic, parsimonious, perfunctory, inane, propitious, etc.).",
+            "Test every Friday: Take 10 random vocab questions to verify retention."
+          ],
+          "table": {
+            "headers": [
+              "Week",
+              "New Words",
+              "Review Time/Day",
+              "Total Words Learned"
+            ],
+            "rows": [
+              [
+                "1–2",
+                "50",
+                "10 min",
+                "50"
+              ],
+              [
+                "3–4",
+                "50",
+                "15 min",
+                "100"
+              ],
+              [
+                "5–6",
+                "50",
+                "20 min",
+                "150"
+              ],
+              [
+                "7–8",
+                "50",
+                "20 min",
+                "200"
+              ],
+              [
+                "9–10",
+                "50",
+                "20 min",
+                "250"
+              ],
+              [
+                "11–12",
+                "Review only",
+                "20 min",
+                "~250–300 total"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "tip",
+            "text": "Don't memorize word lists passively. Write example sentences, create mnemonics, use the words in conversations. Vocabulary that you *use* sticks forever."
+          }
+        },
+        {
+          "h": "Error Log: Why You Missed Questions (The Secret Weapon)",
+          "body": "Every student takes practice tests. Only top scorers **review their wrong answers thoroughly**. This is the difference between 300 and 320.",
+          "steps": [
+            "After every 20–30 practice questions, create an error log with these columns:\n    - Date\n    - Question Type (e.g., 'Reading Comp Inference,' 'Coordinate Geometry,' 'Text Completion')\n    - Difficulty (easy/medium/hard)\n    - Your Answer vs. Correct Answer\n    - Error Category (Careless? Timing? Conceptual? Misread?)\n    - Lesson Learned (e.g., 'Need to re-read Coordinate Geometry circle formulas')",
+            "Review your error log every Friday. Look for patterns:\n    - Do you always mess up inference questions? Spend more time on RC this week.\n    - Do you run out of time on Quant? Drill speed drills this week.\n    - Are 50% of errors careless (e.g., misread '≠' as '=')? Slow down and double-check.",
+            "Weeks 5–10: Update your error log after every 30 practice questions. This takes 5 min per 20 Qs. It's worth it.",
+            "By week 10, you'll notice your errors are rarer and more sophisticated (e.g., misinterpreting a subtle passage nuance). That's progress—you've eliminated careless errors."
+          ],
+          "callout": {
+            "type": "key",
+            "text": "The error log isn't about documenting failure—it's about identifying patterns so you can eliminate them. A 320 scorer misses 4–6 questions out of 80 Verbal+Quant combined. Know why you miss those 6."
+          }
+        },
+        {
+          "h": "Mock Test Strategy: Using Practice Tests Wisely",
+          "body": "Taking mocks is essential, but doing it wrong wastes time. Here's the 320-scorer approach:",
+          "steps": [
+            "**Take 4 Full Mocks Total** (Weeks 1, 9, 11, 12). Spacing them out prevents burnout and lets you measure growth.",
+            "**Mock 1 (Week 1)**: Diagnostic. Don't worry about the score—focus on understanding the format and your weak areas.",
+            "**Mock 2 (Week 9)**: Mid-training check. Aim for 310+. This tells you if your prep is working.",
+            "**Mock 3 (Week 11)**: Final dress rehearsal. Aim for 315+. Time it the same time of day as your real test.",
+            "**Mock 4 (Week 12)**: Light mock, just to verify you're ready. You should be hitting 320+ consistently.",
+            "**After Each Mock**: Don't just look at your score. Spend 60–90 min reviewing every wrong answer. Update your error log. Identify the top 3 weak areas to drill this week."
+          ],
+          "bullets": [
+            "**Use official ETS mocks (PowerPrep) for 70% of your practice.** They're the most accurate and worth the time investment.",
+            "**Use third-party mocks (Manhattan Prep, Magoosh) for supplemental drills.** They're useful for drilling weak topics, but slightly different in difficulty.",
+            "**Never take a mock if you're burned out.** A low mock taken when exhausted is demoralizing and unhelpful. Take it fresh.",
+            "**Timing matters.** Take your mocks at the same time of day as your real test. If your test is at 9 AM, do mocks at 9 AM too.",
+            "**Analyze your pacing.** Did you run out of time? Which section? Drill speed drills on that section specifically.",
+            "**Don't retake the same mock.** ETS offers 4 free official mocks—use each once, in order."
+          ]
+        },
+        {
+          "h": "Verbal Drills: Reading Comprehension, Text Completion & Sentence Equivalence",
+          "body": "Here's a 12-week breakdown of Verbal drills:",
+          "bullets": [
+            "**Reading Comprehension Drills**:\n  - Week 1–3: Read 1 passage/day from official materials. Just read and answer questions—don't time yourself.\n  - Week 4–6: Read 2 passages/day. Time yourself: 8 min per passage max.\n  - Week 7–12: Read 1–2 passages/day + review. Mark up as you read (underline key points, number arguments).\n  - Common RC mistakes: Overthinking inference questions. Solution: Mark the exact sentence that supports your answer. If you can't find it, you're wrong.",
+            "**Text Completion Drills**:\n  - Week 1–4: Do 20 TC questions/week. Review every word. If you don't know a word, add it to your Anki deck.\n  - Week 5–12: Do 10 TC questions/week. Focus on harder (3-blank) questions.\n  - Strategy: Read the full sentence first, identify the logical structure (contrast, consequence, elaboration), then choose.",
+            "**Sentence Equivalence Drills**:\n  - Week 1–4: Do 20 SE questions/week. This is newer/harder for many students—practice early.\n  - Week 5–12: Do 10 SE questions/week + use them as vocabulary builders.\n  - Strategy: Both answers must mean the same AND complete the sentence logically. Eliminate answers that are synonyms but don't fit the sentence."
+          ]
+        },
+        {
+          "h": "Quant Drills: Topic-by-Topic Mastery",
+          "body": "Here's a 12-week Quant drill schedule:",
+          "table": {
+            "headers": [
+              "Week",
+              "Focus Topic",
+              "Questions/Day",
+              "Questions/Week",
+              "Difficulty"
+            ],
+            "rows": [
+              [
+                "1–2",
+                "Arithmetic + Exponents",
+                "20",
+                "100",
+                "Easy-Medium"
+              ],
+              [
+                "3–4",
+                "Linear Equations & Inequalities",
+                "20",
+                "100",
+                "Medium"
+              ],
+              [
+                "5–6",
+                "Geometry (Triangles, Circles, Coordinate)",
+                "25",
+                "125",
+                "Medium-Hard"
+              ],
+              [
+                "7",
+                "Data Interpretation (Charts, Tables)",
+                "25",
+                "125",
+                "Medium-Hard"
+              ],
+              [
+                "8",
+                "Probability & Combinations",
+                "20",
+                "100",
+                "Hard"
+              ],
+              [
+                "9–10",
+                "Mixed Drill (All Topics)",
+                "30",
+                "150",
+                "Medium-Hard"
+              ],
+              [
+                "11–12",
+                "Weak Topics Only (Based on Error Log)",
+                "25",
+                "125",
+                "Variable"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "Quantity alone doesn't equal mastery. Review every wrong answer. Do you understand *why* the correct answer is right, not just that you got it wrong?"
+          }
+        },
+        {
+          "h": "Week-by-Week Checklist for 320+",
+          "body": "Print this and track your progress:",
+          "bullets": [
+            "**Week 1**: Take diagnostic mock. Set up error log spreadsheet. Start Anki vocab.",
+            "**Week 2**: Finish Quant fundamentals review. Complete 100 Quant questions.",
+            "**Week 3**: Learn 50 vocab words. Complete 50 RC questions.",
+            "**Week 4**: Complete Quant fundamentals. Learn 50 more vocab words.",
+            "**Week 5**: Start advanced Quant. Review 100 total vocab words. Complete 1 full RC drill.",
+            "**Week 6**: Continue advanced Quant. Complete 100 TC/SE questions.",
+            "**Week 7**: Review error log. Identify patterns. Drill weak topics.",
+            "**Week 8**: Complete 200 Quant questions (mixed difficulty). Update error log.",
+            "**Week 9**: **TAKE MOCK 2**. Review all wrong answers. Aim for 310+.",
+            "**Week 10**: Focus on error patterns. Drill 1–2 weak topic areas heavily.",
+            "**Week 11**: **TAKE MOCK 3**. Time it same as real test. Review thoroughly. Aim for 315+.",
+            "**Week 12**: Light drills only. **TAKE MOCK 4** early in the week. Rest and prepare mentally for test day."
+          ]
+        },
+        {
+          "h": "What If You Miss 320? Retake Strategy",
+          "body": "It happens—you studied hard, took the test, and scored 315. Here's how to handle it:",
+          "steps": [
+            "Don't panic. A 315 is still excellent. Many programs are happy with 315+.",
+            "Request your official score report and detailed analysis (ETS provides this). Review which sections underperformed.",
+            "Wait 2–3 days before deciding to retake. Fatigue clouds judgment.",
+            "If you're planning to retake: Identify the 1–2 sections that hurt you most. Did Verbal drop? Did Quant have timing issues?",
+            "Focused retake prep (4–6 weeks): Drill only your weak area. You don't need full 12-week prep again.",
+            "Retake within 21 days while material is fresh, OR take 2–3 months if you need a major topic overhaul.",
+            "Remember: Schools see all scores. A 315 today + 320 in 6 weeks looks better than 310 today + 318 in a month (shows improvement)."
+          ]
         }
+      ],
+      "faqs": [
+        [
+          "Is GRE 320 hard to achieve?",
+          "It's challenging but very doable. 320 puts you in the 90th percentile. With 12 weeks of focused study (60–90 min/day), most students can reach 315–325. It requires discipline, not genius."
+        ],
+        [
+          "What's the difference between 310 and 320 in terms of competitiveness?",
+          "Both are strong. 310 is 85th percentile (good for most Master's). 320 is 90th percentile (very good for top schools). For PhD, difference is marginal. For a tech job or top Master's, 320 looks better on paper."
+        ],
+        [
+          "Should I focus on Verbal or Quant to reach 320?",
+          "Depends on your baseline. If you're 145V/150Q, Verbal is the bottleneck—allocate 60% of prep time there. If 150V/145Q, do Quant. Most students find Verbal harder to improve fast."
+        ],
+        [
+          "How many practice tests should I take?",
+          "Minimum 3 full mocks (diagnostic, mid-training, final). Ideal is 4 official ETS mocks. More than 4 has diminishing returns. Quality review matters more than quantity."
+        ],
+        [
+          "What's the best way to study Quant if I hate math?",
+          "Start with Khan Academy (free, visual, step-by-step). Focus on the 10 most-tested topics first (algebra, geometry basics, data interpretation). You don't need to *love* math—just understand the patterns GRE tests."
+        ],
+        [
+          "Can I reach 320 in 8 weeks instead of 12?",
+          "Possible if your baseline is 300+. If you're starting below 280, you need the full 12 weeks. Compression works if you can study 2+ hours daily."
+        ],
+        [
+          "Should I use a tutor or study alone?",
+          "Study alone first (weeks 1–8). A tutor is helpful for weeks 9–12 if you're stuck at 310. A good GRE tutor (in-person or online) costs $50–150/hour and can jump you 5–15 points in 4 sessions."
+        ],
+        [
+          "What's the biggest mistake students make on the path to 320?",
+          "Not reviewing wrong answers. They take 50 practice tests and move on without understanding why they failed. A 320 scorer reviews *every* wrong answer and learns from it."
+        ]
       ]
     },
     {
       "id": "gmat-focus-645-study-plan",
       "tag": "GMAT",
       "date": "2026",
-      "title": "GMAT Focus 645+ Study Plan: Quant, Verbal & Data Insights (Free Guide)",
-      "excerpt": "An 8–10 week plan for the GMAT Focus Edition — Quant, Verbal and the new Data Insights section — with timed practice and review strategy.",
-      "kw": "gmat focus 645 study plan, gmat focus edition, gmat data insights, gmat 700 equivalent, how to study for gmat, free gmat practice",
+      "title": "GMAT Focus 645+ Study Plan: 10-Week Intensive with Score Breakdown & Weekly Schedule",
+      "excerpt": "GMAT Focus has 3 sections (Quant, Verbal, Data Insights) scored 205–805. Reach 645+ (75th percentile) with this targeted 10-week plan, error log strategy, and mock tests.",
+      "kw": "GMAT Focus 645 score, GMAT Focus study plan, GMAT Quant Verbal Data Insights, GMAT 10 week prep, GMAT test structure 2026, GMAT percentile 645, GMAT mock strategy",
       "sections": [
         {
-          "h": "Understand the Focus Edition",
-          "body": "The GMAT Focus Edition has three equally weighted sections — Quantitative, Verbal, and Data Insights — and a 205–805 score scale. A 645 is a strong, competitive score for many programmes. Data Insights is the new differentiator."
+          "h": "GMAT Focus 2024–2026: What Changed & What 645 Means",
+          "body": "In late 2023, GMAC replaced the classic GMAT (Quant, Verbal, AWA, IR) with **GMAT Focus**, a leaner, more business-focused test. Here's what you need to know:\n\n**Old GMAT**: 3h 30m, 4 sections, scored 200–800, heavily verbal-dependent.\n\n**GMAT Focus (2024–2026)**: 2h 15m, 3 sections (Quantitative, Verbal Reasoning, Data Insights), scored 205–805, balanced, no essay (AWA), more data-driven.\n\n**A 645 score** on GMAT Focus puts you in the **75th percentile**—competitive for most MBA programs (INSEAD, ISB India, top 50 US MBA schools). Top programs (HBS, Stanford GSB, McKinsey) want 680+; but 645 is solid and often sufficient for scholarships."
         },
         {
-          "h": "Quant: problem solving + logic",
-          "body": "GMAT Quant is about reasoning, not advanced maths. Master number properties, algebra, ratios, percentages and word problems, and learn to spot efficient solution paths. Accuracy under time pressure is the skill being tested."
+          "h": "GMAT Focus Structure: 3 Sections, 2h 15m Total",
+          "body": "The new GMAT Focus is faster and more focused on business acumen:",
+          "table": {
+            "headers": [
+              "Section",
+              "Question Types",
+              "# Questions",
+              "Time",
+              "Scoring",
+              "Key Focus"
+            ],
+            "rows": [
+              [
+                "Quantitative Reasoning",
+                "Problem Solving (PS) + Data Sufficiency (DS)",
+                "21 questions",
+                "45 min",
+                "205–805 (scaled)",
+                "Math fundamentals, word problems, logic"
+              ],
+              [
+                "Verbal Reasoning",
+                "Reading Comp + Critical Reasoning",
+                "23 questions",
+                "45 min",
+                "205–805 (scaled)",
+                "Business writing, inference, argument analysis"
+              ],
+              [
+                "Data Insights (NEW)",
+                "Multi-Source Reasoning, Table Analysis, Graphics Interpretation, Two-Part Analysis",
+                "20 questions",
+                "45 min",
+                "205–805 (scaled)",
+                "Real-world data interpretation, business analytics"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "No Analytical Writing (AWA) in GMAT Focus—a major time saver. Your total score (205–805) is a weighted average of the 3 sections. Data Insights is new and less familiar to test-takers—it's a huge opportunity to differentiate."
+          }
         },
         {
-          "h": "Verbal: critical reasoning + RC",
-          "body": "Focus on Critical Reasoning (assumptions, strengthen/weaken, inference) and Reading Comprehension. CR is highly learnable with pattern practice — learn to pre-think the answer before reading options."
+          "h": "Baseline Assessment: Diagnostic Test (Week 0)",
+          "body": "Before starting your 10-week sprint, take a full diagnostic GMAT Focus mock to understand your starting point.",
+          "steps": [
+            "GMAC offers 2 free official GMAT Focus practice tests. Download them from mba.com.",
+            "Take **Practice Test 1** under timed conditions (same environment as test day: quiet room, no distractions).",
+            "Note your scores for each section (Quant, Verbal, Data Insights) and overall composite (205–805).",
+            "Review every wrong answer. Why did you miss it? (Careless? Conceptual? Timing?) Create a simple error log.",
+            "Based on your baseline, identify weak areas:\n    - If Quant < 35 percentile: algebra & data sufficiency need work.\n    - If Verbal < 35 percentile: reading comp or critical reasoning is weak.\n    - If Data Insights < 40 percentile: data interpretation + table analysis are weak.",
+            "Aim for a diagnostic score of 550–600. If below 550, extend to 12 weeks. If 600+, you're in good shape for a 10-week push to 645+."
+          ]
         },
         {
-          "h": "Data Insights: the new edge",
-          "body": "Data Insights blends data sufficiency, table analysis, graphics interpretation, multi-source reasoning and two-part analysis. Practise reading tables and charts quickly and reasoning about what data is sufficient. This section often separates strong scorers."
+          "h": "Understanding GMAT Focus Scoring: Percentiles & Section Weighting",
+          "body": "The GMAT Focus score (205–805) can be confusing. Here's the breakdown:",
+          "table": {
+            "headers": [
+              "Score Range",
+              "Percentile",
+              "Competitiveness",
+              "Programs"
+            ],
+            "rows": [
+              [
+                "670–705",
+                "90th–95th",
+                "Excellent",
+                "Top 20 MBA (HBS, Stanford, Wharton, IIM-A, ISB)"
+              ],
+              [
+                "645–669",
+                "75th–89th",
+                "Very Good",
+                "Top 50 MBA (Columbia, Duke, Michigan, INSEAD, ISB, IIMA)"
+              ],
+              [
+                "620–644",
+                "60th–74th",
+                "Good",
+                "Top 100 MBA (UT Austin, Stern, Kelley)"
+              ],
+              [
+                "600–619",
+                "45th–59th",
+                "Acceptable",
+                "State schools + regional MBA programs"
+              ],
+              [
+                "550–599",
+                "25th–44th",
+                "Below Average",
+                "Lower-tier MBA; may need work experience to offset"
+              ]
+            ]
+          },
+          "bullets": [
+            "**Section Weighting**: Quant + Verbal + Data Insights are equally weighted (each ~33%). Unlike the old GMAT, you can't hide a weak Quant score behind stellar Verbal.",
+            "**645 exactly means**: You're stronger than 75% of test-takers. Most MBA programs are happy. Scholarships are often available.",
+            "**Percentile inflation**: GMAC regularly updates percentiles. A 645 today might be 72nd percentile in 2027 if more students take it. Always check current percentiles on mba.com.",
+            "**Section scores matter too**: Some programs publish their average section scores (e.g., 'Average Quant 48, Verbal 47'). A 645 composite with unbalanced sections (e.g., Q45/V50/DI47) might be weaker than Q48/V48/DI47—even though the composite is the same."
+          ]
         },
         {
-          "h": "Build pacing with full mocks",
-          "body": "Each section is time-pressured and you can review and edit a limited number of questions. Sit full-length, timed mocks to build endurance and a per-question pace, and review every miss for the underlying reason."
+          "h": "The 10-Week Study Plan: Week-by-Week Breakdown",
+          "body": "This assumes 75–90 min/day of focused study. Here's your roadmap:",
+          "table": {
+            "headers": [
+              "Week",
+              "Focus",
+              "Daily Time",
+              "Main Activities",
+              "Milestone"
+            ],
+            "rows": [
+              [
+                "1",
+                "Diagnostic + Skill Gap Analysis",
+                "75 min",
+                "Complete diagnostic test. Analyze weak areas. Set up error log.",
+                "Know baseline. Identify top 2–3 weak topics."
+              ],
+              [
+                "2–3",
+                "Quant Fundamentals",
+                "90 min",
+                "Review algebra, arithmetic, geometry basics. Do 40 Quant questions. Learn Data Sufficiency strategy.",
+                "Score 65%+ on basic Quant drill."
+              ],
+              [
+                "4",
+                "Data Insights Intro",
+                "90 min",
+                "Learn table analysis, graphics interpretation, two-part analysis. Do 20 DI questions. This section is new—start early.",
+                "Understand DI format. Score 50%+ on drill."
+              ],
+              [
+                "5–6",
+                "Verbal + Data Insights Balance",
+                "90 min",
+                "Do 20 Verbal questions + 15 DI questions daily. Refine reading comp strategy. Practice critical reasoning.",
+                "Improve Verbal score 2–3 points. DI score 55%+."
+              ],
+              [
+                "7",
+                "Quant Advanced + Error Review",
+                "90 min",
+                "Tackle word problems, advanced geometry. Review error log. Retake weak Quant drills.",
+                "Score 70%+ on Quant overall."
+              ],
+              [
+                "8",
+                "Take Practice Test 2",
+                "90 min",
+                "Take official GMAT Focus Practice Test 2. Review all wrong answers. Update error log.",
+                "Target 600+. Identify remaining weak spots."
+              ],
+              [
+                "9",
+                "Focused Drills + Pacing",
+                "75 min",
+                "Drill weak sections only (maybe Quant algebra + DI table analysis). Focus on timing, not just accuracy.",
+                "Achieve 650+ on targeted drills."
+              ],
+              [
+                "10",
+                "Final Mock + Light Review",
+                "60 min",
+                "Take a third-party mock (GMAC has only 2 free; use Kaplan or Manhattan Prep for #3 if desired). Rest and prepare mentally.",
+                "Score 640+ consistently. Build confidence for test day."
+              ]
+            ]
+          }
         },
         {
-          "h": "Drill free on LandingPrep",
-          "body": "Use free GMAT Focus practice — including Data Insights — with worked solutions to target your weakest area on the way to 645+."
+          "h": "Quantitative Reasoning: Mastering PS & Data Sufficiency",
+          "body": "GMAT Quant is shorter (~21 questions in 45 min) than GRE Quant but more focused on problem-solving and critical thinking.\n\n**Problem Solving (PS)**: ~12 questions. Pick the best answer from 5 choices. Cover algebra, geometry, number properties, word problems.",
+          "bullets": [
+            "**Topics for 645+**:\n  - Algebra: Equations, inequalities, exponents, polynomial roots\n  - Arithmetic: Percent, ratio, rate, averages\n  - Geometry: Triangles, circles, coordinate geometry, solids\n  - Word Problems: Distance = rate × time, work-rate, mixture\n  - Number Properties: Divisibility, prime numbers, GCD/LCM",
+            "**Data Sufficiency (DS)**: ~9 questions. You're given a question + two statements. Pick:\n  - (A) Statement 1 alone is sufficient\n  - (B) Statement 2 alone is sufficient\n  - (C) Both statements together are sufficient\n  - (D) Each statement alone is sufficient\n  - (E) Neither statement is sufficient\n  DS requires logic, not always math. You often don't need to calculate—just verify whether you *could* calculate.",
+            "**Strategy for 645+ Quant**: Aim for 18–19/21 correct (85–90%). Spend 2–2.5 min on each question. If you're stuck after 90 seconds on a DS, pick an answer and move on. Guess penalty is minimal.",
+            "**Common Quant mistakes**:\n  - Misreading 'could be' vs. 'must be' in DS\n  - Overthinking word problems (simpler interpretation is usually right)\n  - Arithmetic errors (use calculator, but verify by hand-checking easy problems)",
+            "**Drill order**: Week 2–3, do 60 Quant questions. Week 4–7, do 80 Quant questions. Week 8–10, drill weak topics only."
+          ]
+        },
+        {
+          "h": "Verbal Reasoning: Reading Comp & Critical Reasoning",
+          "body": "GMAT Verbal is ~23 questions in 45 min, covering reading comprehension and critical reasoning (the new name for 'argument analysis').\n\n**Reading Comprehension**: ~10–12 questions. Passages are 200–400 words, business-focused (strategy, finance, operations). You'll get main idea, inference, detail, and tone questions. Passages are harder than GRE (more abstract business content).",
+          "bullets": [
+            "**Reading Comp Strategy**:\n  - Read actively: Underline key claims, number main ideas, circle transitions.\n  - Skim the passage first (1.5 min), then read questions (2 min), then locate answers (1 min).\n  - Inference is key: The correct answer is always supported by the passage—find the exact sentence.\n  - Tone matters: Does the author sound skeptical, confident, neutral, critical?",
+            "**Critical Reasoning**: ~11–13 questions. You're given an argument (2–3 sentences) and asked to:\n  - Identify an assumption\n  - Weaken or strengthen the argument\n  - Find a logical flaw\n  - Draw an inference\n  - Complete an argument\n  CR tests your ability to analyze business reasoning—very relevant to MBA work.",
+            "**Strategy for 645+ Verbal**: Aim for 19–21/23 correct (82–91%). Spend 2–2.5 min on each question. RC is more time-intensive; CR is faster.",
+            "**Common Verbal mistakes**:\n  - Overthinking inference questions (re-read; does the passage support your answer?)\n  - Confusing 'weaken' and 'strengthen' (read the task carefully)\n  - Picking answers that sound smart but aren't supported by the passage",
+            "**Drill order**: Week 2–3, do 40 Verbal questions. Week 4–7, do 60 Verbal questions. Week 8–10, focus on weak question types (maybe CR assume or RC inference)."
+          ]
+        },
+        {
+          "h": "Data Insights: The New & Underexplored Section",
+          "body": "**Data Insights (DI)** is brand-new to most test-takers and a major opportunity to score well. It combines data interpretation with business logic.\n\n**Question Types** (~20 questions, 45 min):\n\n1. **Table Analysis**: You're given a spreadsheet-like table and statements like 'True / False / Cannot Determine.' You click cells to sort/filter. Tests data manipulation and analysis.",
+          "bullets": [
+            "**Two-Part Analysis**: Two related questions (e.g., 'What's the revenue?' and 'What's the cost?'). You pick answers from columns that logically complement each other. Tests reasoning and math.",
+            "**Graphics Interpretation**: Charts (bar, pie, line) with fill-in-the-blank questions ('The percentage of X is ___'). Tests reading data from visual formats.",
+            "**Multi-Source Reasoning**: Multiple documents (charts, tables, passages) + 3 questions. You synthesize data from multiple sources. Simulates real-world analysis.",
+            "**Strategy for 645+ Data Insights**: Aim for 16–17/20 correct (80–85%). DI is less familiar, so a strong score here differentiates you.\n  - Spend 2–2.5 min per question-set.\n  - Table Analysis is easiest to improve fast—drill it weekly.\n  - Graphics Interpretation is time-efficient—practice speed here.\n  - Multi-Source Reasoning takes longest—allocate time wisely.",
+            "**Common DI mistakes**:\n  - Misreading axis labels on charts (is this 'profit' or 'revenue'?)\n  - Forgetting to filter/sort in table analysis (click the column header to reorder)\n  - Over-calculating (estimates are often sufficient)",
+            "**Drill order**: Week 2–4, do 40 DI questions to learn all formats. Week 5–7, do 50 DI questions, focusing on weak types. Week 8–10, maintain DI strength while drilling other weak sections."
+          ]
+        },
+        {
+          "h": "Error Log Strategy: From 600 to 645+",
+          "body": "The difference between a 600 score and 645+ is not more studying—it's smarter studying. An error log is how you do that.",
+          "steps": [
+            "After every 20 practice questions or 1 full test, create/update an error log:\n    - Date\n    - Section (Quant / Verbal / DI)\n    - Question Type (e.g., 'Reading Comp Inference,' 'Data Sufficiency,' 'Table Analysis')\n    - Your Answer → Correct Answer\n    - Error Type: Careless, Conceptual, or Timing?\n    - Root Cause (e.g., 'Misread the prompt,' 'Didn't know the formula,' 'Ran out of time')",
+            "**Analyze Weekly**: Every Friday, review your error log.\n    - Are 50% of errors in one question type? Drill that type heavily this week.\n    - Are errors mostly careless? Slow down, double-check, read prompts twice.\n    - Are errors conceptual? Review the topic (watch Khan Academy or take a lesson).",
+            "**Pattern Recognition**: By week 6, errors should be rarer and more sophisticated. Early errors are often 'silly mistakes' (misread '>' as '<'). Later errors are 'tough reasoning' (subtle inference issue).",
+            "**The 645+ Benchmark**: A 645 scorer makes ~4–5 mistakes per section across 80 Quant+Verbal+DI questions. Know your top 3 recurring mistakes and eliminate them."
+          ],
+          "callout": {
+            "type": "tip",
+            "text": "Don't just log wrong answers—log the right answers you guessed on, too. These reveal knowledge gaps before they become test-day surprises."
+          }
+        },
+        {
+          "h": "Mock Test Strategy & Scoring Benchmark",
+          "body": "GMAT Focus officially provides 2 free practice tests. Here's how to use them:",
+          "steps": [
+            "**Week 1: Diagnostic (Practice Test 1)**\n    - Timed, same conditions as real test\n    - Review all wrong answers thoroughly\n    - Set your baseline and weak areas",
+            "**Week 8: Mid-Training (Practice Test 2)**\n    - Aim for 600+ (realistic for week 8)\n    - If below 600, focus weeks 9–10 on weak sections\n    - If above 620, you're on track for 645+",
+            "**Weeks 9–10: Third-Party Mock (Kaplan, Manhattan Prep, etc.)**\n    - GMAC has only 2 official mocks; use third-party for final practice\n    - Aim for 635–650+\n    - Check your timing and pacing",
+            "**Test-Day Mock**: Take your final third-party mock 3–4 days before the real test at the same time of day. This is your confidence check."
+          ],
+          "bullets": [
+            "**Scoring Benchmarks**:\n  - Week 1 (Diagnostic): 550–600 is typical\n  - Week 4 (Mid-training): 590–620\n  - Week 8 (Official Practice 2): 600–640\n  - Week 10 (Final): 635–655+",
+            "**If You're Below Benchmark**: Don't panic. Adjust your strategy. Drill weak sections for 30–40 min/day. Take another mock in 3–4 days.",
+            "**If You're Above Benchmark**: Amazing! Maintain your prep routine. Don't over-practice or you'll burn out. Focus on maintaining strength in weak areas.",
+            "**Mock Pacing Strategy**: Each mock, track your time per section. Are you rushing? Running out of time? Adjust your strategy accordingly."
+          ]
+        },
+        {
+          "h": "Weekly Drill Schedule: 10-Week Breakdown",
+          "body": "Here's a detailed weekly drill plan to reach 645+:",
+          "table": {
+            "headers": [
+              "Week",
+              "Quant (min/day)",
+              "Verbal (min/day)",
+              "DI (min/day)",
+              "Total Daily",
+              "Activity"
+            ],
+            "rows": [
+              [
+                "1",
+                "30",
+                "20",
+                "0",
+                "75",
+                "Diagnostic test + skill gap analysis"
+              ],
+              [
+                "2",
+                "30",
+                "20",
+                "20",
+                "90",
+                "Fundamentals drills (PS, RC, basic DI)"
+              ],
+              [
+                "3",
+                "30",
+                "20",
+                "20",
+                "90",
+                "DS strategy + Verbal practice"
+              ],
+              [
+                "4",
+                "20",
+                "25",
+                "30",
+                "90",
+                "DI deep-dive (table analysis, graphics)"
+              ],
+              [
+                "5",
+                "25",
+                "25",
+                "25",
+                "90",
+                "Balanced drills across all sections"
+              ],
+              [
+                "6",
+                "25",
+                "25",
+                "25",
+                "90",
+                "Advanced topics (word problems, CR)"
+              ],
+              [
+                "7",
+                "30",
+                "25",
+                "20",
+                "90",
+                "Error log review + weak area drill"
+              ],
+              [
+                "8",
+                "0",
+                "0",
+                "0",
+                "120",
+                "Practice Test 2 (full mock, 2h 15m + review)"
+              ],
+              [
+                "9",
+                "25",
+                "25",
+                "25",
+                "90",
+                "Focused drills on remaining weak spots"
+              ],
+              [
+                "10",
+                "15",
+                "15",
+                "15",
+                "60",
+                "Light review + final mock + rest"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "Total weekly time: 600–650 min (~10–11 hours). Spread across 6–7 days to avoid burnout. Rest at least 1 day per week."
+          }
+        },
+        {
+          "h": "Registration, Test Day & Score Reporting",
+          "body": "Once you're confident in your prep, register and schedule your test.",
+          "steps": [
+            "**Create an MBA.com account** at www.mba.com. Use your real name (must match passport for test center ID).",
+            "**Register for GMAT Focus**: Click 'Schedule Your Exam.' Choose date, location, and test format (test center or at-home).",
+            "**Test Formats**:\n    - **Test Center**: Official GMAC center, proctor-supervised. Most common. ~$275 USD (₹22,000–23,000 INR).\n    - **At Home**: Supervised via webcam, your own desk. ~$275 USD. Requires stable internet and quiet room.",
+            "**Schedule strategically**: If applying for Fall 2027 MBA (deadline ~November 2026), take GMAT by August–September 2026 latest.",
+            "**Payment**: Credit card, debit card, or PayPal. ETS accepts most payment methods.",
+            "**Before Test Day**:\n    - Visit the test center a day or two early to know the route and check-in process.\n    - For at-home: Test your internet, camera, and microphone the day before.\n    - Get 8+ hours of sleep the night before.\n    - Eat a light breakfast, avoid caffeine jitters.",
+            "**Score Release**: Scores post 7 days after your test. Initial score is unofficial (you see it on-screen); official score arrives via email in 7 days.",
+            "**Score Reporting**: GMAC includes 5 free score reports to schools. Additional reports cost $35 each. Send strategically—to schools with admission deadlines."
+          ]
+        },
+        {
+          "h": "What If You Miss 645? Retake & Alternative Paths",
+          "body": "It happens. You score 630 and wanted 645+. Here's your roadmap:",
+          "steps": [
+            "**Analyze Your Score**: Request your detailed score report (GMAC provides this). Which section dragged you down?",
+            "**Wait 1–2 weeks before deciding**. Initial disappointment clouds judgment.",
+            "**If You're Retaking**:\n    - Focus only on the weak section (maybe Data Insights). Don't redo full prep.\n    - Allocate 4 weeks for retake prep. Drill weak section 60 min/day.\n    - Retake within 21 days while material is fresh (higher confidence) OR wait 6–8 weeks if you need major topic overhaul.",
+            "**If You're Not Retaking**:\n    - A 630 is still solid (75th+ percentile; schools will consider it).\n    - Offset with strong essays, recommendations, work experience, or undergrad GPA.\n    - Some schools have GMAT-optional admissions—if your score is weak but your profile is strong, apply without scores."
+          ]
         }
+      ],
+      "faqs": [
+        [
+          "What's the difference between old GMAT and GMAT Focus?",
+          "Old GMAT: 3h 30m, 4 sections (Quant, Verbal, IR, AWA), 200–800 score. GMAT Focus: 2h 15m, 3 sections (Quant, Verbal, Data Insights), 205–805 score, no essay. Focus is shorter, faster, and data-focused—better for MBA applicants."
+        ],
+        [
+          "Is GMAT Focus harder than old GMAT?",
+          "Different, not harder. Questions are similar difficulty, but the focus has shifted toward data interpretation (Data Insights is new). If you're strong with data, Focus is easier. If you were good at essays (AWA), Focus removes that advantage."
+        ],
+        [
+          "What's a good GMAT Focus score for an MBA?",
+          "Top 20: 680+. Top 50: 650+. Top 100: 600+. A 645 is very competitive for most MBA programs and often qualifies for scholarships."
+        ],
+        [
+          "Can I retake GMAT Focus?",
+          "Yes. You can retake it once every 16 days, up to 5 times in a rolling 12-month period. Each attempt costs $275. Most students retake once or twice if below target."
+        ],
+        [
+          "Is Data Insights harder than Integrated Reasoning (old test)?",
+          "Data Insights is more straightforward than IR was. If you practiced old GMAT IR, DI will feel easier. If you're new to GMAT, DI is learnable in 4–6 weeks."
+        ],
+        [
+          "How much does GMAT Focus cost?",
+          "Test fee: $275 USD (~₹22,000 INR). Additional score reports: $35 each. Total prep (books + courses): $0–$500 depending on resources."
+        ],
+        [
+          "Can I take GMAT Focus at home?",
+          "Yes. Supervised via webcam, same fee ($275). You need a quiet room, desktop/laptop, and stable internet. Check your internet speed and webcam a day before."
+        ],
+        [
+          "What's the best study material for GMAT Focus 2026?",
+          "**Official**: GMAC's practice tests (2 free) + official guide. **Prep Companies**: Manhattan Prep, Kaplan, The Economist, Magoosh. Focus is new, so third-party materials are catching up. Prioritize official GMAC materials for accuracy."
+        ],
+        [
+          "How long should I study for a 645+ score?",
+          "10 weeks with 75–90 min/day is realistic. If baseline is below 550, extend to 12 weeks. If baseline is 600+, 8 weeks is sufficient. Quality prep matters more than duration."
+        ]
       ]
     },
     {
@@ -4080,34 +4790,298 @@
       "id": "toefl-vs-ielts-usa-universities",
       "tag": "Comparison",
       "date": "2026",
-      "title": "TOEFL vs IELTS for USA Universities: Which Test Should You Take?",
-      "excerpt": "Most US universities accept both TOEFL and IELTS, but one usually suits your strengths better. Here's how to choose and which scores each test needs.",
-      "kw": "toefl vs ielts for usa, which test for usa universities, toefl vs ielts scores, toefl vs ielts which is easier, best english test for usa",
+      "title": "TOEFL vs IELTS for US Universities: Acceptance, Format, Scoring, Difficulty & Which to Choose",
+      "excerpt": "Comparing TOEFL and IELTS for US university admission: which schools prefer which test, format differences, score requirements, costs, and strategic choice factors.",
+      "kw": "TOEFL vs IELTS USA universities, TOEFL score requirements US colleges, IELTS accepted US universities, which exam American universities prefer, TOEFL format, IELTS vs TOEFL difficulty",
       "sections": [
         {
-          "h": "Both are accepted widely",
-          "body": "All top US universities (Ivy League, Stanford, MIT, etc.) now accept TOEFL and IELTS equally. But some schools set slightly different score requirements — always check the programme-specific page before deciding which test to take."
+          "h": "TOEFL vs IELTS: Do US Universities Really Care Which Test You Take?",
+          "body": "The short answer: **Most US universities accept both TOEFL and IELTS equally.** There's no inherent preference for one over the other at the admissions level.\n\nHowever, **TOEFL has a historical advantage:** it was created by the Educational Testing Service (ETS) and is the default test for US university admissions. Over 70% of US universities officially list TOEFL on their website. IELTS, created by British Council and IDP, is increasingly accepted (now ~80% of US universities welcome it), but it's sometimes seen as 'the alternative.'\n\nFor **graduate (Master's / PhD) applications**, TOEFL is even more dominant. Many top-tier research universities list TOEFL as the preferred test, and some prestigious programs (e.g., certain Stanford PhD tracks) may have historically prioritized TOEFL (though nearly all now accept both).\n\n**Bottom line:** Choose the test you score higher on. If both are equally accessible and you score CLB 7 (IELTS 6.0) on one and IELTS 6.5 on the other, take the one where you achieve the higher score. Admissions offices score-normalize; a 100 on TOEFL (iBT) and an 7.0 on IELTS are roughly equivalent in US admissions evaluation.",
+          "callout": {
+            "type": "tip",
+            "text": "**Pro tip:** Check your target university's website. Search 'English language requirements' or 'language test requirements.' Most universities publish a table showing accepted tests and minimum scores. That's your benchmark. Don't assume or guess."
+          }
         },
         {
-          "h": "TOEFL advantages for USA",
-          "body": "TOEFL is the traditional US test, so universities have decades of score data. It tests American English and academic lecture-taking skills directly, which match US master's culture. If you're comfortable with computers and AI-scored speaking, TOEFL is low-risk."
+          "h": "TOEFL iBT Format & Scoring",
+          "body": "**TOEFL iBT** (Internet-Based Test) is the current standard. ETS retired the paper version in 2021, so if you're taking TOEFL in 2026, you're taking iBT.\n\n**Test structure (2 hours 40 minutes total):**\n\n**Reading** (45 minutes, 3 passages, ~39 questions): You read academic passages (similar to college textbook content) on history, science, social sciences, and humanities. Questions test main idea, detail comprehension, vocabulary in context, and synthesis. Passages are longer and more complex than IELTS.\n\n**Listening** (48 minutes, ~34 questions): You listen to academic lectures (15–20 minutes of audio total) and conversations. No accents other than North American English. Questions test main idea, details, speaker intent, and attitude. You take notes on provided paper.\n\n**Speaking** (16 minutes, 4 tasks): Task 1 is a personal opinion (20 sec prep, 45 sec speak); Task 2 is reading + listening + speaking (integration task); Tasks 3–4 are lecture-response tasks. You speak into a microphone; your response is recorded and scored by humans later.\n\n**Writing** (50 minutes, 2 tasks): Task 1 is reading + listening + writing (integration); Task 2 is independent essay (~30 minutes). Both are typed.",
+          "bullets": [
+            "Scoring range: 0–120 (broken into 0–30 per skill).",
+            "Results released within **3–5 business days** (faster than IELTS's 10–13 days).",
+            "Score validity: **2 years** (same as IELTS).",
+            "Frequency: iBT offered multiple times per week, with 48+ test dates/year in major US cities and India.",
+            "Cost: ~USD 210 (roughly the same as IELTS)."
+          ]
         },
         {
-          "h": "IELTS advantages",
-          "body": "IELTS is slightly more about real-world communication (face-to-face speaking, everyday vocabulary) and less heavily weighted toward academic lectures. If you freeze on computer-based tests or prefer human-evaluated speaking, IELTS may feel more natural."
+          "h": "IELTS Format & Scoring (for US Context)",
+          "body": "**IELTS (International English Language Testing System)** comes in Academic (for universities) and General Training (for work/migration). For US university applications, you need **IELTS Academic**.\n\n**Test structure (2 hours 45 minutes total):**\n\n**Reading** (60 minutes, 3 passages, 40 questions): Similar to TOEFL in difficulty and length (~250–350 words per passage), but IELTS Reading includes global English accents (passages sometimes reference British, Australian, or other contexts). Question types are multiple-choice, short-answer, matching, and table completion.\n\n**Listening** (30 minutes, 40 questions): Four recorded sections (monologue, dialogue, lecture, monologue). Features multiple English accents (British, American, Australian, New Zealand). You write answers directly on the test paper during listening.\n\n**Writing** (60 minutes, 2 tasks): Task 1 is a letter or diagram description (~150 words); Task 2 is an opinion/persuasive essay (~250+ words). Both are handwritten or typed (varies by test center).\n\n**Speaking** (11–14 minutes, 3 parts): One-on-one conversation with a trained examiner. Part 1 is a chat; Part 2 is a 2-minute solo speech; Part 3 is a discussion. Your speech is recorded.",
+          "bullets": [
+            "Scoring range: 1–9 (decimal: 4.0, 4.5, 5.0, 5.5, etc.).",
+            "Results released within **10–13 calendar days** (slower than TOEFL).",
+            "Score validity: **2 years** (same as TOEFL).",
+            "Frequency: 48+ test dates/year; widely available in India and US cities.",
+            "Cost: ~USD 235–300 depending on location (slightly more than TOEFL)."
+          ]
         },
         {
-          "h": "Score conversion",
-          "body": "Roughly: IELTS 6.5 ≈ TOEFL 79, IELTS 7.0 ≈ TOEFL 94, IELTS 7.5 ≈ TOEFL 110. Most US master's programmes want IELTS 7.0 or TOEFL 100 minimum; competitive ones want 7.5 or 110. Confirm the exact requirement."
+          "h": "Score Equivalency: TOEFL vs IELTS for US Universities",
+          "body": "US universities don't score-convert TOEFL and IELTS on a single scale (unlike Canada's CLB system). However, ETS and the British Council have published official equivalency tables. Here's how they map:\n\n**Rough Conversions (US University Context):**",
+          "table": {
+            "headers": [
+              "TOEFL iBT Score",
+              "IELTS Band (Academic)",
+              "Proficiency Level",
+              "US University Tier"
+            ],
+            "rows": [
+              [
+                "0–60",
+                "1.0–4.0",
+                "Below intermediate",
+                "Not eligible (well below admission)"
+              ],
+              [
+                "61–75",
+                "4.5–5.5",
+                "Intermediate",
+                "Some 2nd-tier universities, with conditional admission"
+              ],
+              [
+                "76–90",
+                "5.5–6.5",
+                "Upper-intermediate",
+                "Most state universities, many private universities"
+              ],
+              [
+                "91–100",
+                "6.5–7.5",
+                "Advanced",
+                "Selective universities (top 100–200)"
+              ],
+              [
+                "101–110",
+                "7.5–8.0",
+                "Very advanced",
+                "Highly selective universities (top 50)"
+              ],
+              [
+                "111–120",
+                "8.5–9.0",
+                "Near-native",
+                "Elite universities (Ivy League / top 20)"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "Most **US state universities require 75–90 on TOEFL (6.0–6.5 on IELTS)**. Selective universities (e.g., Cornell, Yale, Stanford) typically want 100–110 on TOEFL (7.0–7.5 on IELTS). Always check your specific university's requirement—don't assume."
+          }
         },
         {
-          "h": "Visa is rarely a factor now",
-          "body": "Both tests are widely accepted for F-1 visas. The university's admission requirement is the binding one — once you've met that, the visa almost always accepts the same score."
+          "h": "Difficulty Comparison: TOEFL vs IELTS for US Students & Internationals",
+          "body": "This is subjective, but here's what educators and test-takers report:\n\n**TOEFL is perceived as harder because:**\n- **Listening** features only North American English accents; some find clarity easier, but the pace is faster, and lectures are longer (18–20 minutes of content).\n- **Reading** passages are denser and more academic; vocabulary is more specialized (science, history, social theory).\n- **Speaking** is delivered to a microphone with no human interaction; many find this isolating and perform worse than with a human interviewer.\n- **Writing** integration tasks require synthesizing information from reading + listening + writing. This is cognitively demanding.\n- **Time pressure** is tighter; you have less time per question in Reading and Speaking.\n\n**IELTS is perceived as easier because:**\n- **Listening** includes multiple accents, which reflects real-world English; some see this as more authentic, but accent switches can be disorienting.\n- **Reading** passages are slightly less academic; there's more variety (from lifestyle articles to travel narratives, not just hard science).\n- **Speaking** to a human feels natural; conversational flow can mask proficiency gaps that a microphone-based system would expose.\n- **Writing** Task 1 is a letter (more formulaic); Task 2 is an essay (but the structure is more scaffolded).\n- **Time management** is more flexible; you can allocate time as you like (Listening is fixed, but Reading and Writing are more self-paced).\n\n**Verdict:** TOEFL is harder overall due to integration tasks, pace, and less contextual variety. IELTS is often seen as more accessible for non-native speakers, but the gap narrows for strong English speakers. If you're aiming for a selective US university (top 50–100), difficulty is similar; the deciding factor is which test plays to your strengths.",
+          "callout": {
+            "type": "info",
+            "text": "**Real-world reality:** Test-takers often score 5–10 points higher on the test that suits them better. If you score 90 on TOEFL (lower-selective range), you might score 6.5–7.0 on IELTS (which would push you into selective university range). Take practice tests of both and see."
+          }
         },
         {
-          "h": "Test both free",
-          "body": "Take a free practice test of each on LandingPrep (TOEFL-style and IELTS-style questions) and see which scoring style and format feel more natural — then commit to that test."
+          "h": "Which US Universities Prefer Which Test?",
+          "body": "Most universities accept both equally. However, some patterns emerge:\n\n**TOEFL-friendly universities** (list TOEFL first or emphasize it):\n- Stanford, MIT, Harvard, Yale, Princeton, University of Pennsylvania (Ivies often have historical TOEFL preference, though all now accept IELTS).\n- Large state universities (UC Berkeley, University of Michigan, University of Texas at Austin) often list TOEFL first.\n- Most engineering and PhD programs (due to historical precedent).\n\n**IELTS-friendly universities** (actively promote IELTS):\n- University of California schools (increasingly IELTS-accepting).\n- Australian and UK-affiliated programs.\n- Universities in Canada that also recruit US students.\n\n**Equal acceptance** (most universities):\n- ~80% of US universities now have equal acceptance policies. They'll accept either test with no preference stated.\n\n**How to check your target university:**\n1. Go to the university's admissions website.\n2. Search for 'English language requirements' or 'international student language requirements.'\n3. Look for a table with accepted tests and minimum scores.\n4. If both are listed with the same score requirement, they're equally accepted.\n5. If one is listed first or emphasized, there may be a mild preference (but it rarely affects admissions).",
+          "bullets": [
+            "Selective universities (top 50) typically require TOEFL 100–110 or IELTS 7.0–7.5+.",
+            "State universities typically require TOEFL 75–90 or IELTS 6.0–6.5.",
+            "Master's programs often require TOEFL 90+ or IELTS 6.5+.",
+            "PhD programs require TOEFL 100+ or IELTS 7.0+ (and strong GPA/research background).",
+            "Conditional admission (English language bridge programs) is offered for scores below the minimum. See [CELPIP vs IELTS for Canada PR](/blog/celpip-vs-ielts-canada-pr/) if you're also applying to Canada."
+          ]
+        },
+        {
+          "h": "TOEFL vs IELTS: Practical Factors (Cost, Timeline, Availability)",
+          "body": "Both are widely available, but practical factors can tip the scale:",
+          "table": {
+            "headers": [
+              "Factor",
+              "TOEFL iBT",
+              "IELTS Academic"
+            ],
+            "rows": [
+              [
+                "Test Fee (USD/INR)",
+                "~$210 (~₹17,500)",
+                "~$235–300 (~₹19,500–25,000)"
+              ],
+              [
+                "Frequency (test dates/year)",
+                "48+ in India; weekly+ in USA",
+                "48+ in India; multiple times/week in USA"
+              ],
+              [
+                "Results Timeline",
+                "3–5 business days",
+                "10–13 calendar days"
+              ],
+              [
+                "Test Duration",
+                "2 hr 40 min",
+                "2 hr 45 min"
+              ],
+              [
+                "Retake Window",
+                "Can retake in as little as 3 days",
+                "Can retake in 6 weeks"
+              ],
+              [
+                "Registration Deadline",
+                "Few days before test (flexible)",
+                "13 days before test"
+              ],
+              [
+                "Accepted by Most US Unis",
+                "Yes (70%+)",
+                "Yes (80%+)"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "tip",
+            "text": "If you need results fast (for an early admission deadline or rolling admissions), **TOEFL is 5–10 days faster.** If you need more test attempts or have scheduling flexibility, **IELTS has more dates and allows quicker retakes.**"
+          }
+        },
+        {
+          "h": "How to Choose: TOEFL vs IELTS Decision Matrix",
+          "body": "Use this framework to make your choice:",
+          "steps": [
+            "Check your target university's website for language test requirements. If they list one test first or with a higher minimum, ask admissions why (sometimes it's just legacy; sometimes there's a programmatic preference).",
+            "Take practice tests of both (or at least full Reading/Listening sections). Compare your scores.",
+            "Score 5+ points higher on one test? Take that one. Most test-takers have a clear advantage on one.",
+            "Prefer speaking to a human (vs. microphone)? IELTS has an interviewer; TOEFL is microphone-only.",
+            "Need results urgently (within 1 week)? TOEFL is faster (3–5 days vs. 10–13).",
+            "In India and want maximum test dates? Both have 48+ dates/year; IELTS edges TOEFL slightly in frequency.",
+            "Studying for Canada PR too? IELTS is accepted by Canada's IRCC for PR; TOEFL is also accepted but less common for PR (CELPIP and IELTS dominate). See [CELPIP vs IELTS](/blog/celpip-vs-ielts-canada-pr/) for details.",
+            "Preparing for professional exams later (e.g., medical licensure)? Some US licensing boards prefer TOEFL or IELTS; check your specific field."
+          ]
+        },
+        {
+          "h": "Minimum Scores for Top US Universities (2026)",
+          "body": "Here's a snapshot of language requirements from a few representative universities. Scores change annually; always verify on the official website.",
+          "table": {
+            "headers": [
+              "University Type",
+              "Typical TOEFL iBT Minimum",
+              "Typical IELTS Minimum",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "State Universities (Tier 1, e.g., UC Berkeley, Michigan)",
+                "90–100",
+                "7.0–7.5",
+                "Some waive test for high SAT/ACT"
+              ],
+              [
+                "Selective Private (e.g., Cornell, Duke, Northwestern)",
+                "100–110",
+                "7.0–7.5",
+                "High GRE/GMAT + language score needed for grad"
+              ],
+              [
+                "Elite (e.g., Harvard, Stanford, Yale)",
+                "105–110",
+                "7.5–8.0",
+                "Context matters; strong academics + language"
+              ],
+              [
+                "Master's Programs (Engineering)",
+                "90–100",
+                "6.5–7.0",
+                "CS programs often more strict"
+              ],
+              [
+                "PhD Programs",
+                "100+",
+                "7.0–7.5",
+                "Varies by department; research fit crucial"
+              ],
+              [
+                "Community Colleges",
+                "70–80",
+                "5.5–6.0",
+                "Transfer pathway to 4-year universities"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "warn",
+            "text": "**Below the minimum ≠ automatic reject.** Many universities offer conditional admission (English bridge program) for scores 5–10 points below minimum. But this delays your start date by 1 semester and may incur extra fees. Always aim for the published minimum to avoid delays."
+          }
+        },
+        {
+          "h": "TOEFL & IELTS Test-Day Tips & Common Mistakes",
+          "body": "Maximize your score with these practical insights:\n\n**TOEFL-specific tips:**\n- **Arrive 15 min early.** Your photo will be taken; check-in is strict.\n- **Use the notepad wisely.** In Reading and Listening, jot keywords only. In Speaking/Writing, practice responding to prompts on the notepad first.\n- **For Speaking tasks,** be prepared to pause. The 20-second prep time feels short; use it to brainstorm (not write a full script).\n- **Integration tasks** (reading + listening + writing/speaking) are the toughest. Practice these heavily; they're not on IELTS.\n- **Save time in Reading** (aim for 12–14 min per passage to have 6–8 min buffer). If you're slow, you'll lose points on the last passage.\n\n**IELTS-specific tips:**\n- **Bring an ID.** IELTS is strict about identification; passport is usually required.\n- **Writing by hand** (at some centers) requires neat handwriting. Practice writing clearly under time pressure.\n- **Speaking with an examiner** can feel conversational, but don't get too casual. Keep professional tone, speak clearly, make eye contact.\n- **Listening is once-only.** No replay. Train your ear by listening to diverse accents before the test.\n- **Task 1 (letter)** is scaffolded but rigid. Follow the format (opening, body, closing) and you'll get baseline marks.\n\n**Common mistakes on both:**\n- Not reading the question carefully (especially in Reading; IELTS loves trick answers).\n- Running out of time on Writing (Task 2 is worth more; prioritize it).\n- Overthinking Speaking (speak naturally; examiners aren't grading perfection, fluency).\n- Not checking for spelling/grammar errors (especially in Writing tasks).",
+          "bullets": [
+            "Practice under timed conditions (full-length tests, not isolated sections).",
+            "Review every wrong answer, not just to learn content but to identify your error pattern (rushing, misreading, knowledge gap?).",
+            "Weak on Listening accents (IELTS)? Listen to BBC, ABC, NZ news daily for 2 weeks before exam.",
+            "Weak on integration (TOEFL)? Practice TOEFL's reading + listening + writing tasks 10+ times.",
+            "On exam day, bring water and a light snack (to eat before, not during). Dehydration and hunger hurt performance."
+          ]
+        },
+        {
+          "h": "What If You Don't Meet the Minimum Score?",
+          "body": "Falling short of the language minimum doesn't mean rejection. Universities offer alternatives:\n\n**1. Conditional Admission**\nMany universities accept students below the language minimum into an English bridge program (8–12 weeks). You take intensive English courses alongside regular classes. After passing the bridge program, you're officially admitted. Trade-off: You start one semester late and pay extra tuition for the bridge.\n\n**2. English Language Waiver**\nSome universities waive the language test if:\n- You completed your previous degree (high school, bachelor's) in English (e.g., in India, Philippines, Malaysia, etc.). You'll need an official school statement.\n- You have a high SAT/ACT score (universities correlate high SAT with English proficiency).\n- You completed pre-university study in an English-speaking country (e.g., A-Levels in the UK, HSC in Australia).\n\n**3. Retake & Reapply**\nIf you score 10–15 points below the minimum, retake the test. Most students improve 10–20 points on their second attempt with focused prep. Then reapply (rolling admissions means later applications have lower odds, so retake quickly).\n\n**4. Proxy Programs**\nSome universities partner with third-party organizations that pre-screen students and provide English + academics (Pathway programs). These are common for universities in the US Midwest and South. You enroll in the pathway first; after 1 semester, you transition to the main degree program (not a separate degree; it's a bridge).",
+          "callout": {
+            "type": "info",
+            "text": "**If you're below minimum:** Contact admissions and ask, 'What options do I have? Conditional admission? Pathway programs? Waiver eligibility?' Most universities have flexible pathways; the published minimum is NOT a hard cap."
+          }
+        },
+        {
+          "h": "Which Test to Take: Final Recommendation",
+          "body": "Here's a straightforward decision tree:\n\n**Take TOEFL if:**\n- You're applying to top-tier US universities (Ivies, Stanford, MIT).\n- You score 5+ points higher on TOEFL practice tests.\n- You need results quickly (3–5 days).\n- You're comfortable speaking into a microphone without human feedback.\n- You want to maximize your US university acceptance chances (TOEFL is still the default).\n\n**Take IELTS if:**\n- You're applying to multiple countries (US + UK/Australia/Canada). IELTS is globally recognized.\n- You score 0.5+ bands higher on IELTS practice tests.\n- You're in India and want maximum test date flexibility.\n- You prefer speaking to a human interviewer (less intimidating).\n- You're also considering Canada PR; IELTS is more common for IRCC applications (see [CELPIP vs IELTS](/blog/celpip-vs-ielts-canada-pr/)).\n\n**Take either:** Most US universities (80%+) accept both equally. Your effort and score quality matter far more than which test you pick. Choose the one that suits your strengths and timeline, then prepare thoroughly.",
+          "callout": {
+            "type": "key",
+            "text": "**Real talk:** Admissions officers care about your overall profile (GPA, SAT/ACT, essays, extracurriculars, research). A language score of 95 on TOEFL or 6.8 on IELTS puts you above the minimum for most universities; after that, other factors dominate. Don't obsess over scoring 105 on TOEFL vs 7.5 on IELTS. Hit the minimum, then focus on your essays and GPA."
+          }
         }
+      ],
+      "faqs": [
+        [
+          "Do US universities prefer TOEFL or IELTS?",
+          "Most US universities accept both equally. Historically, TOEFL was the default (70%+ list it), but IELTS acceptance is rising (now 80%+). For top-tier universities (Ivies, Stanford), TOEFL still has a slight historical edge, but both are equally valid. Check your specific university's requirements on their admissions website."
+        ],
+        [
+          "What's the minimum TOEFL/IELTS score for US university admission?",
+          "State universities typically require TOEFL 75–90 or IELTS 6.0–6.5. Selective universities (top 100) require TOEFL 100–110 or IELTS 7.0–7.5. Elite universities (Ivies) may expect TOEFL 105+ or IELTS 7.5–8.0. Always check your target university's website for exact requirements."
+        ],
+        [
+          "Is TOEFL or IELTS harder for Indian students?",
+          "Subjectively, IELTS is often easier because it's more accessible in India (100+ test centers), features conversational Speaking with a human, and has less academic Reading complexity. TOEFL is considered harder due to integration tasks and microphone-based Speaking. However, the test that suits YOU best depends on your strengths. Take practice tests to compare."
+        ],
+        [
+          "How long does it take to get TOEFL/IELTS results?",
+          "TOEFL results are released in **3–5 business days**; IELTS results in **10–13 calendar days**. If you have an early application deadline, TOEFL is faster. Both scores are valid for 2 years."
+        ],
+        [
+          "Can I use TOEFL/IELTS for both US universities AND Canada PR?",
+          "Yes, both tests are accepted for US universities. However, for **Canada PR** (Express Entry), CELPIP and IELTS are more common; TOEFL is also accepted but less frequently used. See [CELPIP vs IELTS for Canada PR](/blog/celpip-vs-ielts-canada-pr/) for Canada-specific guidance."
+        ],
+        [
+          "Which test is faster to prepare for if I'm starting from scratch?",
+          "IELTS is often 2–4 weeks faster to prepare for because it has less integration tasks and simpler Reading/Writing structures. TOEFL integration tasks require more complex skill-blending. However, if you're naturally strong at academic writing and fast thinking, TOEFL may be faster for you. Take practice tests to gauge."
+        ],
+        [
+          "Do US universities waive the language test for some applicants?",
+          "Yes. Many universities waive TOEFL/IELTS if: (a) you completed your previous degree in English (need official proof from your school), (b) you have a high SAT/ACT score, (c) you're from an English-speaking country. Contact admissions to ask about waiver eligibility."
+        ],
+        [
+          "What if I score below the minimum language requirement?",
+          "Many universities offer conditional admission (English bridge program, 8–12 weeks). You take intensive English + start your degree late (next semester). After passing, you're admitted to the main program. It's not a rejection; it's a pathway. Ask your university about bridge options."
+        ],
+        [
+          "Can I take both TOEFL and IELTS and submit whichever is higher?",
+          "Yes, you can take both (and some students do). However, it costs time and money (~$400–500 for both tests). It's usually smarter to take practice tests of both, pick the one where you score higher, and focus your prep effort there. Most students improve more by deeper preparation in one test than by spreading effort across both."
+        ]
       ]
     },
     {
@@ -4689,70 +5663,444 @@
     },
     {
       "id": "celpip-vs-ielts-canada-pr",
-      "tag": "CELPIP",
+      "tag": "Comparison",
       "date": "2026",
-      "title": "CELPIP vs IELTS for Canada PR: Which Test Is Easier & What You Need",
-      "excerpt": "Both CELPIP and IELTS are accepted for Canada Express Entry — but one suits your strengths better. Here's how to choose based on format and scoring.",
-      "kw": "celpip vs ielts canada, celpip for canada pr, which test for canada immigration, ielts vs celpip easier, celpip for express entry",
+      "title": "CELPIP vs IELTS for Canada PR: CLB Mapping, IRCC Acceptance & Which to Choose",
+      "excerpt": "Comparing CELPIP and IELTS for Canadian immigration: format, CLB levels, IRCC equivalency, difficulty, cost, and which exam fits your timeline and background.",
+      "kw": "CELPIP vs IELTS Canada PR, CLB CELPIP IELTS mapping, IRCC approved exams, CELPIP test format, IELTS band CLB conversion, which exam Canada immigration, CELPIP cost vs IELTS",
       "sections": [
         {
-          "h": "Both work for Express Entry",
-          "body": "Canada's Express Entry system (and most provincial programmes) accepts both IELTS and CELPIP equally. Your score converts to the same CLB (Canadian Language Benchmark) level for CRS points, so there's no advantage to one test over the other on paper. The choice is which test suits you."
+          "h": "CELPIP vs IELTS: Quick Comparison for Canada PR",
+          "body": "Both CELPIP and IELTS are approved by **Immigration, Refugees and Citizenship Canada (IRCC)** for expressing language proficiency in permanent residence (PR) applications. However, they differ significantly in format, scoring, acceptance timelines, and cost.\n\n**CELPIP** is Canada's official domestic test, delivered entirely on computer. **IELTS** is the world's most widely recognized exam, offered in paper or computer (IELTS Academic / General Training). For Canadian PR, you'll typically choose based on your comfort with testing format, availability in your region, and timeline."
         },
         {
-          "h": "CELPIP is fully computer-based",
-          "body": "CELPIP Speaking is recorded and scored by humans (not AI), so it feels more like a conversation you prepare on a computer screen. All four skills are done on a single test day via computer. Results come faster (usually within 10 days), and you can book a test almost any day."
+          "h": "CELPIP Test Format & Scoring",
+          "body": "CELPIP (Canadian English Language Proficiency Index Program) is a 3-hour computer-delivered exam split into four skills:\n\n**Listening** (30 minutes, ~35 questions): You hear dialogues, instructions, and monologues, then answer multiple-choice or short-answer questions on screen. No paper.\n\n**Reading** (60 minutes, ~42 questions): Multiple-choice passages about Canadian workplace, civic, and social scenarios. Questions test comprehension, inference, and vocabulary.\n\n**Writing** (53 minutes, 2 tasks): Task 1 is an email (~150 words); Task 2 is a longer composition like a letter or opinion essay (~200–250 words). Both are typed on screen.\n\n**Speaking** (15 minutes, 8 tasks): You speak directly into a microphone (no human interviewer). Tasks include describing photos, role-plays, and delivering monologues. Audio is recorded and scored by examiners later.",
+          "callout": {
+            "type": "key",
+            "text": "**All CELPIP sections are delivered on a single computer in one sitting.** No breaks between sections. You type, click, and speak into the same workstation."
+          },
+          "bullets": [
+            "Scoring range: 4–12 for each skill (not 1–9 like IELTS).",
+            "Overall band: average of four skills, reported as whole numbers (e.g. 8, 9, 10).",
+            "Results released within **24 hours** of test completion.",
+            "Score validity: **2 years** (same as IELTS)."
+          ]
         },
         {
-          "h": "IELTS has face-to-face speaking",
-          "body": "IELTS Speaking is a live interview with a human examiner — some people prefer this human interaction, while others find it nerve-wracking. Test dates are fixed, and you cannot book as flexibly. Results take 1–2 weeks."
+          "h": "IELTS Test Format & Scoring",
+          "body": "IELTS (International English Language Testing System) comes in two versions. For Canada PR, both are equally accepted by IRCC:\n\n**IELTS Academic** is designed for university entry and professional registration.\n**IELTS General Training** is aimed at work, migration, and secondary education.\n\nFor Canadian PR applications, either version is acceptable—there's no 'better' choice. Pick General Training if you're applying through Express Entry without a job offer; pick Academic if applying through a provincial nominee program (PNP) that asks for it (rare).\n\n**Test structure** (2 hours 45 minutes):\n\n**Listening** (30 minutes, 40 questions): Four recorded dialogues and monologues in British, American, Australian, and New Zealand English. Questions are multiple-choice, matching, short-answer, or table completion.\n\n**Reading** (60 minutes, 40 questions): Three long passages (academic or general); questions test skimming, detail comprehension, and inference.\n\n**Writing** (60 minutes, 2 tasks): Task 1 is a letter (~150 words); Task 2 is a formal essay (~250 words).\n\n**Speaking** (11–14 minutes, 3 parts): One-on-one conversation with a trained examiner. Part 1 is a chat; Part 2 is a 2-minute solo speech; Part 3 is a deeper discussion.",
+          "bullets": [
+            "Scoring range: 1–9 (decimal: 4.5, 5.5, 6.0, 6.5, etc.).",
+            "Results released within **10–13 calendar days** (slower than CELPIP).",
+            "Score validity: **2 years** (same as CELPIP).",
+            "Offered on fixed dates (e.g. 12+ times/year in Canada; 48+ times/year in India)."
+          ]
         },
         {
-          "h": "Difficulty: no clear winner",
-          "body": "CELPIP rewards clear pronunciation and fast thinking — you have limited prep time in conversation mode. IELTS rewards range of vocabulary and grammatical accuracy. Neither is objectively easier; it depends on your strengths."
+          "h": "CLB to CELPIP & IELTS Equivalency Mapping",
+          "body": "Canada's **CLB (Canadian Language Benchmark)** is the official standard used in PR applications. IRCC publishes exact equivalency tables for CELPIP and IELTS band scores to CLB levels.\n\nFor Express Entry, **CLB 7 is the minimum** for most work-class programs (Federal Skilled Worker, Canadian Experience Class). Federal Skilled Trades, healthcare, and other streams may require CLB 8 or higher.\n\nUse the table below to see where your score lands:",
+          "table": {
+            "headers": [
+              "CLB Level",
+              "CELPIP Score",
+              "IELTS Band (Academic/General)",
+              "IRCC Profile"
+            ],
+            "rows": [
+              [
+                "CLB 4",
+                "4",
+                "3.5",
+                "Basic proficiency; very limited PR access"
+              ],
+              [
+                "CLB 5",
+                "5",
+                "4.0–4.5",
+                "Limited proficiency; some niche PR pathways"
+              ],
+              [
+                "CLB 6",
+                "6",
+                "5.0–5.5",
+                "Moderate proficiency; narrow PR options"
+              ],
+              [
+                "CLB 7",
+                "7",
+                "6.0–6.5",
+                "MINIMUM for Express Entry Federal Skilled Worker"
+              ],
+              [
+                "CLB 8",
+                "8",
+                "6.5–7.0",
+                "Competitive; faster processing; more job pathways"
+              ],
+              [
+                "CLB 9",
+                "9",
+                "7.0–7.5",
+                "Strong; significant CRS boost in Express Entry"
+              ],
+              [
+                "CLB 10",
+                "10",
+                "8.0–8.5",
+                "Very strong; maximum CRS language bonus"
+              ],
+              [
+                "CLB 11",
+                "11",
+                "8.5–9.0",
+                "Excellent; rarely needed for PR approval"
+              ],
+              [
+                "CLB 12",
+                "12",
+                "9.0",
+                "Native-like proficiency; highest tier (rare)"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "tip",
+            "text": "**CLB 7 (CELPIP 7 / IELTS 6.0–6.5) is the hard minimum.** Below CLB 7, your Express Entry application is ineligible, even if your education and work experience are strong. CLB 7 itself doesn't guarantee approval—it's just the gate to the pool."
+          }
         },
         {
-          "h": "Score conversion",
-          "body": "CELPIP 9 ≈ IELTS 8 / CLB 9. CELPIP 8 ≈ IELTS 7 / CLB 8. CELPIP 7 ≈ IELTS 6 / CLB 7. Most Express Entry applicants need CLB 7 (CELPIP 7, IELTS 6.0) as the baseline. Confirm your target programme's exact requirement."
+          "h": "IRCC Acceptance & Exam Approvals",
+          "body": "IRCC recognizes **four approved English language tests**:\n\n1. **CELPIP**—Canadian test, computer-only, quick results.\n2. **IELTS** (Academic or General Training)—Most recognized globally.\n3. **TOEFL iBT**—American test, accepted if taken in the last 2 years.\n4. **CELPIP LS** (CELPIP Listening & Speaking only)—Fast-track for those with strong academic English.\n\nAll four tests must meet the **CLB 7 minimum** for Express Entry eligibility. IRCC treats CELPIP 7 and IELTS 6.0 as equivalent, even though the scales differ (4–12 vs. 1–9).\n\nFor **spousal sponsorship, provincial nominee programs (PNPs), and other non-Express-Entry pathways**, language requirements may be lower (CLB 4–6). Confirm with your province's specific rules.",
+          "bullets": [
+            "Both CELPIP and IELTS results are uploaded directly to your Express Entry profile within 24–48 hours of release.",
+            "IRCC automatically pulls language scores; no need to manually enter them.",
+            "Scores are locked into your profile for 12 months; after that, you must retest if you reactivate your application.",
+            "Test-takers who score below CLB 7 will NOT be invited to apply, no matter how strong their profile is."
+          ]
         },
         {
-          "h": "Book the test that fits you",
-          "body": "Take a free practice test of both CELPIP and IELTS on LandingPrep, see which format feels natural, and commit to that test. Both lead equally to Canada PR."
+          "h": "Difficulty: CELPIP vs IELTS (Honest Breakdown)",
+          "body": "This is subjective, but here's what test-takers and educators report:\n\n**CELPIP difficulty factors:**\n- **Listening** is slower-paced and more forgiving than IELTS; speakers are usually North American and clear.\n- **Reading** focuses on practical Canadian scenarios (workplace, civic, social)—less academic jargon than IELTS.\n- **Writing** requires only 2 tasks instead of formal essay structure; email writing is more conversational.\n- **Speaking** to a microphone (no human interviewer) can feel less intimidating, but the lack of human feedback means no clarification if you misunderstand.\n\n**IELTS difficulty factors:**\n- **Listening** includes four regional English accents (British, American, Australian, New Zealand); faster pace; some background noise.\n- **Reading** has denser passages and more inference questions; vocabulary is more advanced.\n- **Writing** requires two formal pieces (formal letter + essay); more academic tone expected.\n- **Speaking** with a human examiner allows clarification but adds psychological pressure.\n\n**Verdict:** CELPIP is often perceived as slightly easier for non-native speakers due to its Canadian context and lower reading complexity. IELTS is more universally rigorous and recognized globally (if you later move to the UK, Australia, or elsewhere).",
+          "callout": {
+            "type": "info",
+            "text": "**Easiness ≠ Success.** Even if CELPIP feels easier, scoring CLB 7+ (CELPIP 7+) requires solid preparation on both tests. Don't assume CELPIP is a shortcut to CLB 7."
+          }
+        },
+        {
+          "h": "Cost & Availability Comparison",
+          "body": "Both tests are offered frequently in Canada, India, and other countries. Here's the cost and frequency breakdown for 2026:",
+          "table": {
+            "headers": [
+              "Factor",
+              "CELPIP",
+              "IELTS (Academic/General)"
+            ],
+            "rows": [
+              [
+                "Test Fee (CAD/USD/INR)",
+                "CAD 300 (~₹18,000)",
+                "CAD 330–380 (~₹20,000–23,000); varies by country"
+              ],
+              [
+                "Frequency",
+                "Multiple dates weekly in major Canadian cities; 2–4 times/month in India",
+                "Fixed dates 48+ times/year in India; weekly+ in Canada"
+              ],
+              [
+                "Registration Deadline",
+                "1–2 weeks before test",
+                "13 days before test date"
+              ],
+              [
+                "Results Timeline",
+                "24 hours",
+                "10–13 calendar days"
+              ],
+              [
+                "Retake (if needed)",
+                "Can retake within weeks",
+                "Can retake within 6 weeks"
+              ],
+              [
+                "Test Center Availability",
+                "Fewer centers (Canada-focused)",
+                "Widespread (100+ centers in India alone)"
+              ]
+            ]
+          },
+          "bullets": [
+            "CELPIP is **cheaper than IELTS in Canada** but may have limited test center availability outside major cities.",
+            "IELTS is **more expensive but more widely available** in India (IELTS has 100+ centers vs. CELPIP's ~20).",
+            "If you're in India and need a quick test, IELTS offers more frequent dates.",
+            "If you're in Canada and want 24-hour results, CELPIP is faster."
+          ]
+        },
+        {
+          "h": "Which Exam Should You Choose? Decision Matrix",
+          "body": "Both are equally accepted by IRCC. Choose based on your context:",
+          "bullets": [
+            "**Choose CELPIP if:** You're already in Canada or have easy access to a test center; you prefer computer-delivered (less anxiety); you want 24-hour results; you work in Canadian contexts (job-specific vocabulary helps).",
+            "**Choose IELTS if:** You're in India with limited CELPIP access; you want more test dates to choose from; you might move to UK/Australia/other countries (IELTS is globally more recognized); you're comfortable with human interaction (speaking exam); you've already studied British/Australian English."
+          ],
+          "callout": {
+            "type": "tip",
+            "text": "**Pro tip:** If you're indecisive, take a **free practice test** for both CELPIP and IELTS online. Many official providers (Pearson, British Council) offer free sample tests. See which one you score higher on—that's often your best choice."
+          }
+        },
+        {
+          "h": "Timeline & Processing: CELPIP vs IELTS for PR",
+          "body": "Your test results flow into your Express Entry profile. Here's the timeline:\n\n**CELPIP pathway:**\n1. Test date: Register 1–2 weeks in advance.\n2. Take exam (3 hours).\n3. Results: Released within 24 hours to your email.\n4. Upload to Express Entry: 1–2 hours (usually automatic).\n5. Your profile becomes searchable: Immediately after scores are linked.\n\n**IELTS pathway:**\n1. Test date: Register 13+ days in advance (fixed dates only).\n2. Take exam (2 hours 45 minutes).\n3. Results: Released within 10–13 days.\n4. TRN (Test Report Number) added: You manually link it to Express Entry using TRN.\n5. Your profile becomes searchable: After scores are verified (1–2 days).\n\n**Total elapsed time:** CELPIP = 2–3 days (fastest); IELTS = 15–20 days (slower but still acceptable).",
+          "steps": [
+            "Decide CELPIP or IELTS based on availability and preference.",
+            "Check official website (CELPIP.ca or IELTS.org) for test dates.",
+            "Register for your preferred date (leave 1–2 months for preparation).",
+            "Prepare for 6–12 weeks using official practice materials.",
+            "Take the test; confirm you have a calm testing environment.",
+            "Receive results; immediately link to Express Entry profile.",
+            "Wait for IRCC draws (typically held bi-weekly) that invite candidates above your CRS score."
+          ]
+        },
+        {
+          "h": "Common Myths & FAQs",
+          "body": "**Myth 1: IELTS is harder globally, so CELPIP must be easier for PR.**\n\nFalse. IRCC calibrates the exams to be equivalent at each CLB level. A CELPIP 7 is not easier to achieve than IELTS 6.0—they're designed to represent the same proficiency.\n\n**Myth 2: Speaking into a microphone (CELPIP) is always less intimidating.**\n\nNot always. Some test-takers find the lack of human feedback unsettling; they can't ask for clarification. With IELTS, you can ask an examiner to repeat a question.\n\n**Myth 3: IELTS paper is easier than computer.**\n\nFalse. IRCC accepts both, and the difficulty is equivalent. Paper vs. computer is a preference, not a difficulty differential.\n\n**Myth 4: You can get CLB 7 with a 5.5 band on IELTS.**\n\nFalse. IRCC's minimum for CLB 7 is IELTS 6.0 (or CELPIP 7). A 5.5 will NOT meet CLB 7, even if you're 0.5 away."
+        },
+        {
+          "h": "Final Recommendation: Choosing Your Path",
+          "body": "Here's a quick summary to help you decide:\n\n**Take CELPIP if:**\n- You're in Canada (easier access, lower cost).\n- You want results in 24 hours (useful if you have a tight timeline).\n- You're comfortable typing on a computer (some people type faster than they handwrite).\n- You prefer not to take a speaking exam with a human evaluator (less pressure).\n\n**Take IELTS if:**\n- You're in India or outside Canada (more test centers, more dates).\n- You want flexibility in test dates (more frequent offerings).\n- You're already familiar with IELTS (from school, previous study abroad prep).\n- You might migrate to UK, Australia, or other IELTS-preferred countries in future.\n- You're confident in speaking to a human (some people thrive in human interaction).\n\n**Either way:** Focus on achieving **CLB 7+ (CELPIP 7+ or IELTS 6.0–6.5 or higher)**. This is the real goal for Express Entry. The exam choice is secondary to consistent, targeted preparation.",
+          "callout": {
+            "type": "key",
+            "text": "**Timeline check:** If your Express Entry profile is ready (education, work experience, etc.) and you're shooting for the next draw, take whichever exam has the earliest available test date. Don't overthink—both are equally valid for IRCC."
+          }
         }
+      ],
+      "faqs": [
+        [
+          "Is CELPIP or IELTS better for Canada PR?",
+          "Both are equally accepted by IRCC. CELPIP is faster (24-hour results, Canada-focused content) and often cheaper; IELTS is more widely available (especially in India) and globally recognized. Choose based on your location and test date availability. See the [CELPIP CLB 9 strategy guide](/blog/celpip-clb-9-tips/) for deeper prep."
+        ],
+        [
+          "What's the minimum English score for Express Entry?",
+          "**CLB 7** is the minimum. In CELPIP terms, that's a score of **7**. In IELTS terms, that's a band of **6.0–6.5**. Anything below CLB 7 makes you ineligible, no matter how strong your education or work experience. Review [CELPIP vs TOEFL](/blog/toefl-vs-ielts-usa-universities/) if you're considering other exams."
+        ],
+        [
+          "Can I use IELTS General Training for Canada PR?",
+          "Yes. Both IELTS Academic and General Training are accepted equally by IRCC for PR applications. General Training is often easier and faster to prepare for, so most PR applicants choose it."
+        ],
+        [
+          "How long are CELPIP and IELTS results valid for PR?",
+          "Both are valid for **2 years** from the test date. If your Express Entry profile is inactive for 12+ months, you'll need to retake the test to reactivate."
+        ],
+        [
+          "Can I retake the exam if I don't get CLB 7?",
+          "Yes. CELPIP allows retakes within weeks; IELTS within 6 weeks. Many test-takers improve 1–2 CLB levels on their second attempt with focused preparation. See targeted tips in our [CELPIP guide](/blog/celpip-clb-9-tips/)."
+        ],
+        [
+          "Do I need CLB 8 or CLB 9 to get invited in Express Entry?",
+          "Not necessarily. CLB 7 is the minimum threshold; whether you get invited depends on your **CRS (Comprehensive Ranking Score)**, which includes education, work experience, age, and language proficiency. Higher CLB (8–9) boosts your CRS, making you more competitive. In recent draws, the invitation score hovers around 500 CRS, and language proficiency is a major factor."
+        ],
+        [
+          "Is CELPIP easier than IELTS?",
+          "Perception varies by individual, but CELPIP is often considered slightly easier due to simpler reading passages and more practical Canadian content. However, both are calibrated to the same CLB standard, so don't assume CELPIP guarantees a higher score. Prepare seriously for both."
+        ],
+        [
+          "How much does CELPIP cost vs IELTS?",
+          "CELPIP costs CAD 300 (~₹18,000); IELTS costs CAD 330–380 (~₹20,000–23,000), varying by country. CELPIP is slightly cheaper and offers faster results, while IELTS has more test centers and dates in India."
+        ],
+        [
+          "Can I use my TOEFL score for Canada PR instead?",
+          "Yes. IRCC accepts TOEFL iBT (taken within the last 2 years) in addition to CELPIP and IELTS. However, TOEFL is less common for PR applicants in India. Most candidates stick with CELPIP or IELTS due to better local availability and clearer CLB mapping. See our [TOEFL vs IELTS guide](/blog/toefl-vs-ielts-usa-universities/) for a full comparison."
+        ]
       ]
     },
     {
       "id": "celpip-clb-9-tips",
       "tag": "CELPIP",
       "date": "2026",
-      "title": "CELPIP Tips to Score CLB 9+ (CELPIP 9): Speaking Fluency & Conversation",
-      "excerpt": "CELPIP's conversation-based format rewards fluency and fast thinking. Score CLB 9+ with these strategies and daily practice techniques.",
-      "kw": "celpip 9 tips, how to score celpip 9, celpip clb 9, celpip speaking tips, celpip canada, celpip practice test free",
+      "title": "CELPIP CLB 9 Strategy: Per-Skill Tips, Common Mistakes & Test Day Hacks",
+      "excerpt": "Master CELPIP CLB 9 with targeted strategies for Listening, Reading, Writing, and Speaking. Avoid common errors, ace the computer interface, and score at the top tier.",
+      "kw": "CELPIP CLB 9 score, CELPIP 9 tips strategies, CELPIP Listening Reading Writing Speaking CLB 9, how to score 9 CELPIP, CELPIP computer test tips, CELPIP common mistakes",
       "sections": [
         {
-          "h": "What CLB 9 means on CELPIP",
-          "body": "CELPIP 9 (CLB 9 equivalent) means you speak with ease and accuracy, understand complex texts quickly, and write clearly on any topic. You rarely hesitate and use a variety of vocabulary naturally. It's rare but achievable in 6–8 weeks of consistent practice."
+          "h": "What Is CLB 9 & Why Aim for It?",
+          "body": "**CLB 9** on CELPIP (a score of 9 out of 12) is the upper-intermediate to advanced tier. On the IELTS scale, it's equivalent to a band of 7.0–7.5.\n\nCLB 9 signals strong proficiency: you can handle complex workplace tasks, understand nuanced conversations, write organized documents with minimal errors, and speak fluently on unfamiliar topics. For Canadian PR (Express Entry), CLB 9 significantly boosts your CRS score—you're no longer at the minimum (CLB 7); you're in the competitive range.\n\n**Why CLB 9 instead of CLB 8?**\n- Each CLB level adds **50 CRS points** in Express Entry. CLB 9 = 50 more points than CLB 8.\n- In tight CRS competition (draws often hover around 500+), those 50 points can mean the difference between an invite and missing the cutoff.\n- CLB 9 is achievable with 6–10 weeks of focused preparation if you start from CLB 6–7.",
+          "callout": {
+            "type": "key",
+            "text": "CLB 9 isn't about perfection—it's about **consistent accuracy across all four skills.** You don't need a 10 or 11; a solid 9 across Listening, Reading, Writing, and Speaking is enough."
+          }
         },
         {
-          "h": "Speaking in conversation mode",
-          "body": "CELPIP's Speaking section uses a simulated conversation format — a computer asks you questions and you respond to 45–60 seconds of prompts. The key is not overthinking; respond naturally and keep talking even if you make small errors."
+          "h": "CELPIP Listening: CLB 9 Strategies",
+          "body": "**CELPIP Listening (30 minutes, ~35 questions)** tests your ability to understand Canadian English in workplace, civic, and social contexts. CLB 9 requires you to catch details, infer tone, and distinguish main ideas from supporting information.\n\n**Key characteristics of CLB 9 Listening:**\n- Questions focus on understanding speaker intent, not just surface-level facts.\n- Speakers use colloquial phrases, idioms, and conversational pace.\n- Some background noise (office ambiance, phone line quality) adds realism.\n- You'll hear a mix of native-speaker accents (Canadian, American, sometimes others).",
+          "bullets": [
+            "**Pre-listen actively.** Before each recording plays, read the question and prediction. Ask yourself: 'What information am I listening for?' This narrows your focus and reduces cognitive load.",
+            "**Catch the topic in the first 5 seconds.** CELPIP recordings open with context cues ('Hi, this is HR calling about your benefits...').  Identify the topic immediately so you know what to expect.",
+            "**Don't pause for spelling.** Some questions ask you to type words (e.g., a name or date). If you miss it, move on. One missed spelling doesn't tank CLB 9; losing focus for the next 10 questions does.",
+            "**Listen for stress and tone.** In CLB 9 questions, tone matters. A speaker might say 'Yeah, sure, I'd love to help' sarcastically. Catch the tone to infer the speaker's true opinion.",
+            "**Review CELPIP-specific vocabulary.** Focus on workplace jargon (staff meeting, PTO, onboarding), civic topics (property tax, voter registration), and social scenarios (restaurant reservations, scheduling appointments). This isn't IELTS; they don't test obscure academic words."
+          ],
+          "steps": [
+            "Take official CELPIP practice tests (at least 5 full-length Listening sections).",
+            "After each section, listen to the recordings again WITHOUT looking at questions. Aim to understand 90%+ naturally.",
+            "Identify 5–10 words/phrases you missed; add them to a vocabulary list.",
+            "On your second review, pause after each speaker sentence and try to predict the answer before reading the question.",
+            "Track your error patterns (e.g., 'I miss dates,' 'I don't catch main idea vs. detail'). Target these weaknesses in the next practice."
+          ]
         },
         {
-          "h": "Listening for complex contexts",
-          "body": "Listening tasks include lectures, conversations and monologues on specialized topics. Build your vocabulary in specific fields (medicine, law, business) and listen to podcasts and lectures daily — this passive exposure lifts your score faster than drills."
+          "h": "CELPIP Reading: CLB 9 Strategies",
+          "body": "**CELPIP Reading (60 minutes, ~42 questions)** is organized around three passages of increasing complexity. CLB 9 requires you to skim quickly, locate details, and infer meaning from context.",
+          "bullets": [
+            "**Passage 1** (easiest): A workplace email, memo, or notice. ~200 words; 12–14 questions. You should aim for 12/12 or 13/14 correct here—this is your warm-up.",
+            "**Passage 2** (moderate): A longer workplace document or informational text (~400 words). 12–14 questions. A CLB 9 scorer gets 11–13 correct.",
+            "**Passage 3** (hardest): A narrative, advice column, or persuasive piece (~600 words). 12–14 questions. CLB 9 means getting 10–12 correct (one mistake is acceptable).",
+            "**Skim for structure.** Before reading in depth, skim headings, bold text, and opening sentences. CELPIP passages are well-organized; headings telegraph the content.",
+            "**Find the main idea first, then details.** Ask: 'What's this passage about?' (main idea), then 'Where does it discuss X?' (details). This two-step process is faster and more accurate than reading line-by-line.",
+            "**Use context for unknown words.** CLB 9 will throw unfamiliar words at you. Don't panic; use surrounding words and grammatical context to infer meaning. A word-for-word translation is unnecessary.",
+            "**Watch for inference traps.** CELPIP loves 'implied meaning' questions. Don't just pick the answer that appears in the text; pick the one that's logically implied by the text. Example: If a memo says 'The deadline has been moved to Friday,' and the question asks 'Why did the deadline move?', the answer isn't stated directly—you infer from context (maybe extra work came in, or a mistake was discovered)."
+          ],
+          "steps": [
+            "Complete 5 full-length CELPIP Reading sections under time pressure (60 minutes).",
+            "After each attempt, review ONLY the questions you got wrong. Don't re-read correct answers.",
+            "For each wrong answer, ask: 'Did I misread the text, miss the detail, or misunderstand the question?' Log the error type.",
+            "If inference questions trip you up, go back to the passage and write a one-sentence explanation for your chosen answer. Compare it to the correct answer's explanation.",
+            "Track your time: Passage 1 should take ~10–12 min, Passage 2 ~18–22 min, Passage 3 ~25–30 min. If you're taking longer, you're over-reading or second-guessing."
+          ]
         },
         {
-          "h": "Reading speed and accuracy",
-          "body": "Read news articles and academic texts daily to build speed without sacrificing comprehension. Skim for main ideas first, then scan for details. CELPIP's Reading section has longer, denser passages than IELTS."
+          "h": "CELPIP Writing: CLB 9 Strategies",
+          "body": "**CELPIP Writing (53 minutes, 2 tasks)** splits between Task 1 (email, ~150 words) and Task 2 (longer composition, ~200–250 words). CLB 9 requires clear organization, accurate grammar, and appropriate tone for each task.\n\n**Task 1 (Email) - 15 minutes:**\nYou're given a scenario (e.g., 'You missed a meeting; write an apology email to your manager'). Your email must:\n- Open with a clear purpose (e.g., 'I'm writing to apologize for missing...').\n- Address 2–3 key points from the prompt (in the example: reason for absence, impact, how you'll prevent it).\n- Close professionally ('I appreciate your understanding' or 'Thank you for your flexibility').\n- Stay within ~150 words (a bit over is fine; way over wastes time).\n- Use **Task 1-level vocabulary** (clear, simple, professional).\n\n**Task 2 (Composition) - 23 minutes:**\nYou're given a prompt (e.g., 'Some people say remote work improves productivity. Do you agree? Write an opinion piece.').\n\nStructure:\n1. **Intro** (2–3 sentences): State your position clearly. 'I agree that remote work can boost productivity, but only under certain conditions.'\n2. **Body 1** (4–5 sentences): First reason or example. Use specific details.\n3. **Body 2** (4–5 sentences): Second reason or counterpoint. Acknowledge opposing views.\n4. **Conclusion** (2–3 sentences): Restate your position and summarize key reasons.\n\nTotal: ~250 words, organized and flowing.",
+          "bullets": [
+            "**For both tasks: No grammar errors at CLB 9.** Proofread for subject-verb agreement, verb tenses (don't mix past and present), and word order. If you're unsure about a structure, rewrite it simply.",
+            "**Vary sentence structure.** Don't write five sentences of identical length. Mix simple, compound, and complex sentences for flow. Example: 'I missed the meeting. It was unplanned. My car broke down on the way.' becomes 'My car broke down unexpectedly, causing me to miss the meeting.'",
+            "**Use linking words.** Connect ideas with 'Moreover,' 'However,' 'In addition,' 'For instance,' 'As a result.' These show coherence and maturity.",
+            "**Task 1 tone:** Professional, concise, direct. No casual slang; no overly formal vocabulary either.",
+            "**Task 2 tone:** Balanced, reasoned, supportive. Explain your views with evidence (hypothetical or real examples), not just opinion.",
+            "**Spell correctly.** Use Canadian or American spelling consistently (e.g., 'colour' vs. 'color'). CELPIP isn't harsh on this, but consistency matters.",
+            "**Don't overthink Task 1.** It's worth ~30% of your Writing score; Task 2 is worth ~70%. Spend 15 minutes on Task 1, even if it feels rushed, to leave 23 minutes for Task 2."
+          ],
+          "steps": [
+            "Practice 5 full-length Writing sections (both tasks) under timer pressure.",
+            "After each attempt, reread Task 1 and Task 2 aloud. Listen for awkward phrasing or unclear ideas.",
+            "Ask a friend or teacher to review 2–3 of your Task 2 compositions for clarity and organization (not just grammar).",
+            "Build a template for Task 2: intro → point 1 → point 2 → conclusion. Practice filling it in under 23 minutes.",
+            "For common grammar mistakes (e.g., 'there is vs. there are'), make a personal cheat sheet. Review it before your exam."
+          ]
         },
         {
-          "h": "Writing on any topic",
-          "body": "CELPIP Writing tasks ask you to email or write a letter solving a real problem. Be clear, concise and on-topic. Avoid rambling. Use simple, correct sentences rather than complex, error-filled ones."
+          "h": "CELPIP Speaking: CLB 9 Strategies",
+          "body": "**CELPIP Speaking (15 minutes, 8 tasks)** is delivered entirely via microphone. Unlike IELTS, you don't speak to a human—you hear instructions, see prompts on screen, and record your voice. CLB 9 requires fluent, coherent speech with minimal hesitation.\n\n**Task Breakdown:**\n- Tasks 1–3: **Describe photos** (25–30 seconds each). You see a photo and describe it in detail.\n- Tasks 4–6: **Role-plays** (45 seconds each). You're given a scenario ('You're a tenant, call your landlord to report a leak'). You play your role in a simulated conversation.\n- Tasks 7–8: **Extended monologues** (45–60 seconds each). 'Tell me about a time you worked as part of a team.' You speak freely for ~1 minute.",
+          "bullets": [
+            "**No hesitation at CLB 9.** If you pause longer than 2–3 seconds to think, that's a mistake. Prepare phrases and practice so speaking feels natural.",
+            "**Volume and clarity.** Speak clearly and at normal volume (not shouting, not whispering). The microphone is sensitive; test it during the practice section at the start of the exam.",
+            "**For photo descriptions (Tasks 1–3):** Start with the obvious ('This is a photo of a kitchen'). Then add details ('There are wooden cabinets, a stainless steel fridge, and a breakfast counter'). Then add inference ('It looks like a modern home with plenty of storage'). Total: 25–30 seconds.",
+            "**For role-plays (Tasks 4–6):** Listen carefully to your 'partner's' first statement (the prompt). Respond naturally. If the prompt is 'Your internet is down; call tech support,' don't start with 'Hello, tech support.' Start with 'Hi, I'm calling because my internet has been down for two hours.'",
+            "**For monologues (Tasks 7–8):** Tell a story, not just a list. 'I worked on a team that designed a website. My role was to handle user research. I interviewed 20 people, found three key pain points, and presented them to the designer. The designer made changes based on our findings, and the site got 40% more sign-ups.' This flows much better than 'I worked on a team. I did user research. We did interviews. The site improved.'",
+            "**Avoid memorized scripts.** Examiners can spot canned answers. If your speech sounds too polished or identical to a practice sample, it raises red flags. Aim for natural, spontaneous fluency."
+          ],
+          "steps": [
+            "Record yourself doing all 8 tasks (use your phone's voice recorder). Listen back; note any pauses, filler words ('um,' 'uh,' 'like'), or unclear pronunciation.",
+            "Practice photo descriptions: Find 10 random photos online. Describe each in 30 seconds. Record and review.",
+            "Practice role-plays: Write 5 scenarios; read the prompt aloud, then respond as if on a phone call. Record the response.",
+            "Practice monologues: Write 5 prompts ('Describe your best friend,' 'Talk about a book you liked'). Record 60-second responses for each.",
+            "Before the real exam, do a full 8-task mock (all tasks back-to-back, 15 minutes). Time yourself and record."
+          ]
         },
         {
-          "h": "Practise with free mocks",
-          "body": "Use LandingPrep's free CELPIP practice tests with all four skills and instant feedback. Record your Speaking responses and compare to sample answers for pronunciation and fluency patterns."
+          "h": "CELPIP Computer Interface Tips",
+          "body": "CELPIP is delivered on a computer, and unfamiliarity with the interface can cost you time and composure. Here's how to ace the tech side:",
+          "bullets": [
+            "**Know the layout before exam day.** CELPIP's official website has a free practice interface. Use it at least twice to get familiar with where buttons are, how to click 'next,' and how to manage your time (the timer is in the top-right corner).",
+            "**Typing speed matters in Writing.** You have 53 minutes for two writing tasks. If you type slowly (< 40 WPM), practice typing drills before the exam. Most CELPIP Writing test-takers type at 50–70 WPM; at 40 WPM, you'll be rushed.",
+            "**Listening: Take notes, but don't over-note.** You can jot down key points on the practice pad provided (physical paper + pen, or digital notepad depending on the test center). Write keywords only ('HR, benefits, Friday deadline') rather than full sentences. This keeps you focused on listening, not writing.",
+            "**Reading: Use the highlighter tool.** CELPIP's interface lets you highlight text. Highlight the question first, then highlight the relevant sentence in the passage. This forces you to engage with the text and doesn't slow you down.",
+            "**Speaking: Test the microphone BEFORE you start.** There's a practice section at the beginning where you describe a photo to test your audio. Speak clearly and naturally. If you hear yourself echoing or breaking up, notify the test administrator—they can adjust microphone settings.",
+            "**Avoid clicking 'clear' by accident.** In the Writing section, if you click 'clear,' your entire response for that task deletes. Triple-check before clicking. The 'back' button is different from 'clear'—use 'back' if you need to revise."
+          ]
+        },
+        {
+          "h": "Common CELPIP CLB 9 Mistakes & How to Avoid Them",
+          "body": "Test-takers aiming for CLB 9 often stumble on predictable errors. Here's what NOT to do:",
+          "bullets": [
+            "**Mistake 1: Over-preparing for obscure vocabulary.** CELPIP tests practical English (meeting agendas, workplace emails, civic forms), not advanced academic words. Don't waste time learning words for TOEFL or IELTS; focus on real-world Canadian English. Example: Know 'onboarding,' 'PTO,' 'invoice,' 'shift,' not 'ephemeral' or 'obfuscate.'",
+            "**Mistake 2: Running out of time in Writing or Reading.** Many test-takers agonize over Task 1 (the email) and run out of time for Task 2 (the longer composition). Task 2 is worth more; allocate time accordingly. Spend 15 min on Task 1, 23 min on Task 2, and 5 min proofreading.",
+            "**Mistake 3: Misunderstanding the Listening format.** You can't replay audio in CELPIP (you can in some IELTS versions). You listen once; if you miss it, you miss it. Build a listening habit by listening to podcasts, YouTube videos, and CELPIP practice materials daily. Train your brain to catch details on first listen.",
+            "**Mistake 4: Sounding robotic in Speaking.** If you memorize long, perfectly-formed sentences for Speaking, it sounds unnatural and scores lower. Practice spontaneous, natural speech. Aim for conversational fluency, not grammatical perfection.",
+            "**Mistake 5: Ignoring the 'why' in Reading inference.** CELPIP loves questions like 'Why did the speaker say X?' or 'What does 'X' imply?' If you just copy a sentence from the passage, you'll miss the inference. Reread the context and infer the deeper meaning.",
+            "**Mistake 6: Not using Canadian spelling.** CELPIP is Canadian, so use Canadian spelling ('colour,' 'honour,' 'centre,' 'theatre'). Consistency matters; don't mix Canadian and American spelling in the same response.",
+            "**Mistake 7: Speaking too fast in the Speaking section.** Some test-takers rush through their responses to 'show fluency.' Fluency ≠ speed. Speak at a natural pace with clear pronunciation. Pausing to think for 2–3 seconds is fine; longer pauses hurt your score."
+          ]
+        },
+        {
+          "h": "Study Schedule: 8-Week Path to CLB 9",
+          "body": "If you're starting from CLB 7–8, this schedule gets you to CLB 9:\n\n**Weeks 1–2: Diagnostic & Weak Areas**\n- Take one full-length CELPIP practice test. Score yourself.\n- Identify your weakest skill (e.g., Listening > Writing > Reading > Speaking).\n- Spend 70% of study time on your weakest skill; 30% on maintenance of others.\n\n**Weeks 3–4: Skill-by-Skill Drills**\n- Do 10–15 minutes daily of targeted Listening (podcasts, YouTube, CELPIP samples).\n- Do 20 minutes daily of Reading (news, workplace materials).\n- Do 15 minutes daily of Writing (email drafts, opinion paragraphs).\n- Do 10 minutes daily of Speaking (record yourself describing photos, role-playing scenarios).\n\n**Weeks 5–6: Full Practice Tests**\n- Take 1–2 full-length CELPIP practice tests per week (under exam conditions).\n- Review every wrong answer and every near-miss.\n- If you're scoring consistently CLB 8, focus on the skills where you're getting 7–8 (not yet 9).\n\n**Weeks 7–8: Final Push & Confidence**\n- Take 2–3 more full-length tests.\n- Memorize common mistakes (yours, not generic ones).\n- Review vocabulary and tricky grammar items 1–2 times daily.\n- Reduce new material; focus on accuracy and confidence.",
+          "steps": [
+            "Week 1: Take a diagnostic test; identify weakest skill.",
+            "Weeks 2–4: Spend 60–90 min daily on targeted skill drills.",
+            "Weeks 5–6: Spend 2+ hours daily on full-length practice tests and review.",
+            "Weeks 7–8: Spend 1 hour daily on review and light practice; rest 2–3 days before exam."
+          ]
+        },
+        {
+          "h": "Final Tips for Test Day",
+          "body": "You've prepared; now execute flawlessly.",
+          "bullets": [
+            "Arrive 15–20 minutes early. This gives you time to check in, use the restroom, and calm your nerves.",
+            "Silence your phone and remove it from the desk. Don't even glance at it.",
+            "Use the practice section (photo description) to test your microphone and get comfortable with the interface.",
+            "During Listening and Reading, stay focused. Don't look around or think about other tasks.",
+            "During Writing, proofread for grammar and spelling, but don't obsess. Move forward.",
+            "During Speaking, speak naturally. Don't rush or over-think. You've done this 100 times in practice.",
+            "After the exam, don't agonize over answers. Results come in 24 hours; you'll find out then.",
+            "If you don't hit CLB 9 on the first try, retake it. Most CLB 8 scorers hit CLB 9 on their second attempt with one more month of focused prep."
+          ],
+          "callout": {
+            "type": "tip",
+            "text": "**Mindset matters.** CLB 9 is achievable, not exceptional. Thousands of non-native speakers hit it every year. You can too."
+          }
+        },
+        {
+          "h": "Resources for CELPIP CLB 9 Prep",
+          "body": "Official resources are always best. Avoid unverified \"shortcuts.\"\n\n**Official CELPIP Resources:**\n- **CELPIP Practice Tests** (Full-length, official scored): $29–50 per test. Take at least 5–7 before exam day.\n- **CELPIP Guide & FAQs** (Free): Available at celpip.ca. Read the test format overview.\n- **Practice Interface** (Free): Try the digital test environment before booking your exam.\n\n**Supplementary Resources:**\n- For Listening: TED Talks, Canadian news podcasts (CBC, CTV), YouTube educational channels.\n- For Reading: Canadian news websites (CBC, Globe and Mail), workplace writing samples, advice columns.\n- For Writing: Online writing courses (Grammarly, Khan Academy, local ESL centers), or hire a tutor to review 2–3 essays.\n- For Speaking: Practice with a language partner on Tandem, HelloTalk, or italki. Or record yourself and review daily.\n\nAvoid courses promising 'instant CLB 9' or 'guaranteed scores.' Only official practice tests and consistent prep lead to reliable results. See also [CELPIP vs IELTS for Canada PR](/blog/celpip-vs-ielts-canada-pr/) for context on exam choice."
         }
+      ],
+      "faqs": [
+        [
+          "What score on CELPIP equals CLB 9?",
+          "A CELPIP score of **9 out of 12** is equivalent to CLB 9. This is different from IELTS, where CLB 9 is a band of 7.0–7.5. See the full [CELPIP vs IELTS mapping](/blog/celpip-vs-ielts-canada-pr/)."
+        ],
+        [
+          "How much harder is CELPIP 9 than CELPIP 8?",
+          "Moderately harder. CLB 8 allows for minor errors (a few missed Listening details, one or two Reading mistakes, a grammar slip in Writing). CLB 9 expects near-flawless accuracy: 90%+ correct across all sections, no hesitation in Speaking. Expect 4–8 weeks of focused prep to jump from CLB 8 to 9."
+        ],
+        [
+          "Can I get CLB 9 without memorizing vocabulary?",
+          "Yes, mostly. CELPIP doesn't test obscure words; it tests practical Canadian English. Focus on workplace and civic vocabulary (onboarding, invoice, tenant, bylaw), not dictionary rarities. Understand context and infer meanings rather than memorizing lists."
+        ],
+        [
+          "How do I improve CELPIP Listening to CLB 9 if I'm currently CLB 7?",
+          "Listen to Canadian English daily (podcasts, YouTube, news) for 30–45 minutes. Then practice official CELPIP Listening samples 3–4 times per week. After each section, listen again WITHOUT questions to train your ear. Most CLB 7 Listening scorers hit CLB 8–9 within 6 weeks of daily exposure."
+        ],
+        [
+          "What's the difference between CELPIP Writing Task 1 and Task 2 scoring?",
+          "Task 1 (email) is worth ~30% of your Writing score; Task 2 (composition) is ~70%. Both must be accurate, but Task 2 has more weight. An excellent Task 2 can partially offset a weaker Task 1. Don't agonize over Task 1; prioritize Task 2."
+        ],
+        [
+          "How do I avoid sounding robotic in CELPIP Speaking?",
+          "Don't memorize scripts. Practice spontaneous speaking where you respond to prompts on the fly, naturally. Record yourself speaking for 30–60 seconds on random topics (not just CELPIP scenarios). Listen back and train yourself to sound conversational, not recited."
+        ],
+        [
+          "Is CELPIP or IELTS Speaking harder?",
+          "CELPIP Speaking (microphone, no human) feels less stressful to many; IELTS Speaking (face-to-face interview) feels more natural to others. The difficulty is similar. If you're comfortable with technology and prefer not to face an interviewer, CELPIP may feel easier. See the [CELPIP vs IELTS guide](/blog/celpip-vs-ielts-canada-pr/) for context."
+        ],
+        [
+          "How many times can I retake CELPIP if I don't hit CLB 9?",
+          "Unlimited. You can retake CELPIP within weeks of your first attempt. Most test-takers improve 1–2 CLB levels on their second try with focused prep. Set a retake date while momentum is high."
+        ],
+        [
+          "What if I hit CLB 9 in some skills but not others?",
+          "Your overall CELPIP score is the average of all four skills. If you score Listening 9, Reading 9, Writing 8, Speaking 8, your overall is 8.5, rounded to 8 or 9 depending on IRCC's rounding rules. For CLB 9 overall, aim for at least 9, 9, 8, 8 or all 9s."
+        ]
       ]
     },
     {
@@ -5202,34 +6550,572 @@
       "id": "study-germany-english-free-universities",
       "tag": "Study Abroad",
       "date": "2026",
-      "title": "Study in Germany in English: Free/Low-Tuition Public Universities & Visa Guide",
-      "excerpt": "Germany's tuition-free public universities are opening in English-taught programmes for international students. Here's how to apply, visa requirements and top programmes.",
-      "kw": "study in germany english, germany free tuition, germany english taught programmes, ms in germany english, germany student visa, ielts gre requirements germany",
+      "title": "Study in Germany: Free/Low-Cost English-Taught Universities, Blocked Account & APS Guide 2026",
+      "excerpt": "Germany offers tuition-free public universities for international students, minimal living costs compared to Western Europe, and clear pathways to residence permits. Learn how the system works, APS requirements for Indians, and best universities.",
+      "kw": "study in Germany free, Germany tuition-free universities, Germany English-taught Master's, Germany blocked account, APS for Indians, Germany living expenses, Germany residence permit, German universities cost, DAAD scholarships",
       "sections": [
         {
-          "h": "German public universities are free or near-free",
-          "body": "Most German public universities charge only small semester fees (€150–350/semester) regardless of citizenship. Even for new English-taught master's programmes, tuition is minimal or zero. Private universities do charge tuition, so focus on public options."
+          "h": "Why Germany: Free Education + Work Visas",
+          "body": "Germany stands out as the only major Western European country offering tuition-free public university education to international students, including Indians. The government subsidizes higher education as a public service—citizens and international students pay only semester fees (€250-400 per semester).\n\nCombined with relatively low living costs (€800-1,200/month outside Berlin/Munich), strong employer sponsorship for skilled workers, and a clear pathway to permanent residence, Germany has become increasingly popular with Indian students seeking value, quality, and long-term settlement options."
         },
         {
-          "h": "English-taught master's programmes",
-          "body": "Hundreds of master's programmes are now taught entirely in English, especially in engineering, data science, business and environmental science. TU Munich, TU Berlin, KIT, University of Bonn and many others offer strong English-taught MS programmes. Check DAAD's database for a full list filtered by field."
+          "h": "How German Free Universities Work: The System",
+          "body": "German public universities are funded by the federal government, so there's no tuition. However, all students (German and international) pay a mandatory semester fee covering administration, student services, and public transport.\n\n**What You Pay (per semester):**\n- Semester fee: €250-400 (varies by university and state)\n- Health insurance: €110-130/month (mandatory)\n- Student housing deposit: €0-100 (refundable)\n- Books/materials: €50-100/semester\n\n**What You DON'T Pay:**\n- Tuition (€0 for degree programs, including Master's)\n- Application fees\n- Lab fees\n- Library fees\n\nThis makes a 2-year Master's cost only €2,000-4,000 in semester fees total—the lowest of any Western university system.",
+          "callout": {
+            "type": "money",
+            "text": "German free universities = €0 tuition, only €250-400/semester fees. Compare: UK (€15,000-25,000/year), USA (€20,000-40,000/year), Ireland (€12,000-22,000/year)."
+          }
         },
         {
-          "h": "Language and test requirements",
-          "body": "Most programmes want IELTS 6.5 or TOEFL 100 for English-taught degrees. You don't need German for English-taught programmes, though learning basics (A1 level) makes daily life easier. Some programmes request the GRE or GMAT for competitive fields like Data Science."
+          "h": "Living Costs in German Cities: Complete Breakdown",
+          "body": "The biggest cost driver is accommodation. Cities vary dramatically—Munich is expensive, while Leipzig and Kiel are very affordable.",
+          "table": {
+            "headers": [
+              "City",
+              "Rent (Studio/1BHK EUR)",
+              "Food & Groceries",
+              "Transport",
+              "Total/Month (EUR)",
+              "Total/Month (INR)"
+            ],
+            "rows": [
+              [
+                "Berlin",
+                "€400-650",
+                "€150-200",
+                "€30 (monthly pass)",
+                "€580-880",
+                "₹54,080-₹81,840"
+              ],
+              [
+                "Munich",
+                "€600-900",
+                "€150-200",
+                "€55",
+                "€805-1,155",
+                "₹74,865-₹107,415"
+              ],
+              [
+                "Frankfurt",
+                "€500-750",
+                "€150-200",
+                "€50",
+                "€700-1,000",
+                "₹65,100-₹93,000"
+              ],
+              [
+                "Cologne",
+                "€400-600",
+                "€120-180",
+                "€30",
+                "€550-810",
+                "₹51,150-₹75,330"
+              ],
+              [
+                "Hamburg",
+                "€450-700",
+                "€140-190",
+                "€35",
+                "€625-925",
+                "₹58,125-₹86,025"
+              ],
+              [
+                "Leipzig/Dresden",
+                "€280-450",
+                "€100-150",
+                "€25",
+                "€405-625",
+                "₹37,665-₹58,125"
+              ],
+              [
+                "Kiel/Rostock",
+                "€250-400",
+                "€90-140",
+                "€20",
+                "€360-560",
+                "₹33,480-₹52,080"
+              ]
+            ]
+          }
         },
         {
-          "h": "Blocked account (GIC equivalent)",
-          "body": "Germany's financial requirement is a Blocked Account (Sperrkonto) with about €11,904/year for living costs. You deposit this in a designated German bank account and can withdraw monthly — no need to show savings in your home account."
+          "h": "Total Master's Cost: 2 Years in Germany (All-In Estimate)",
+          "body": "Here's the complete cost picture for a 2-year Master's in Germany, including tuition, living, visa, and essentials.",
+          "table": {
+            "headers": [
+              "Expense Category",
+              "EUR (2 Years)",
+              "INR (2 Years)",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "Semester Fees (4 semesters)",
+                "€1,000-1,600",
+                "₹93,000-₹1,49,000",
+                "€250-400/semester"
+              ],
+              [
+                "Accommodation (avg 2 yrs)",
+                "€9,600-14,400",
+                "₹8,93,000-₹13,40,000",
+                "€400-600/month avg"
+              ],
+              [
+                "Food & Groceries",
+                "€3,600-4,800",
+                "₹3,35,000-₹4,47,000",
+                "€150-200/month"
+              ],
+              [
+                "Transport (Local + Germany)",
+                "€600-1,200",
+                "₹55,800-₹1,11,600",
+                "€25-50/month + occasional flights"
+              ],
+              [
+                "Health Insurance",
+                "€2,640-3,120",
+                "₹2,45,000-₹2,90,000",
+                "€110-130/month (mandatory)"
+              ],
+              [
+                "Visa & Registration Fees",
+                "€200-300",
+                "₹18,600-₹27,900",
+                "One-time: Student Visa €75, APS ₹15,000"
+              ],
+              [
+                "APS / Visa Processing (India)",
+                "₹15,000-25,000",
+                "₹15,000-₹25,000",
+                "Varies by city, non-refundable"
+              ],
+              [
+                "Books & Materials",
+                "€200-400",
+                "₹18,600-₹37,200",
+                "German universities are mostly digital"
+              ],
+              [
+                "TOTAL (Budget Option)",
+                "€18,340-26,820",
+                "₹17,04,000-₹24,97,000",
+                "Leipzig/Kiel, shared housing"
+              ],
+              [
+                "TOTAL (Standard Option)",
+                "€21,000-28,000",
+                "₹19,55,000-₹26,04,000",
+                "Mid-tier city, decent housing"
+              ],
+              [
+                "TOTAL (Premium Option)",
+                "€25,000-32,000",
+                "₹23,25,000-₹29,76,000",
+                "Munich/Berlin, good accommodation"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "2-year Master's in Germany: ₹17-30 lakhs total. Compare: UK (₹45-75 lakhs), USA (₹70-110 lakhs), Australia (₹45-70 lakhs). Germany is the cheapest Western destination."
+          }
         },
         {
-          "h": "Student visa and work rights",
-          "body": "Apply for a German Student Residence Permit (D-Visa) with an offer letter, proof of funds and health insurance. You can work up to 120 days/year while studying. After graduating, you get an 18-month job-seeker visa to find work related to your field."
+          "h": "APS Certification for Indian Students: Complete Guide",
+          "body": "The Anabin Preliminary Student (APS) certificate is mandatory for Indian students applying to German universities. The German government requires it as proof that your educational qualifications are equivalent to German standards and that your documents are genuine.\n\n**What is APS?**\nAPS is a verification process conducted by the German diplomatic mission (embassy/consulate) in India. It confirms that your bachelor's degree is genuine and equivalent to German educational standards. Without APS clearance, your German university visa will be rejected.",
+          "steps": [
+            "Check Anabin database (anabin.kmk.org) to verify your degree is recognized—most Indian bachelor's (BA, BSc, BCA, BTech, etc.) are listed",
+            "Contact the German embassy APS office in your nearest city (Delhi, Mumbai, Bangalore, Chennai, Kolkata, Hyderabad)",
+            "Prepare documents: bachelor's degree certificate, transcripts, passport, admission letter from German uni (optional)",
+            "Submit application to APS office online or in-person with all documents",
+            "APS assessment: Office may request additional documents or conduct a written test (rare for Master's, common for Bachelor's)",
+            "APS approval: Typically takes 2-4 weeks; you receive an APS certificate valid for 3 years",
+            "Apply for German student visa with APS certificate—visa is routine after APS clearance"
+          ],
+          "table": {
+            "headers": [
+              "Step",
+              "Timeline",
+              "Cost",
+              "What You Submit"
+            ],
+            "rows": [
+              [
+                "Anabin Check",
+                "5 min (online)",
+                "€0",
+                "Your bachelor's degree name + year"
+              ],
+              [
+                "APS Application",
+                "5-10 min",
+                "€0 (apply online)",
+                "Degree cert, transcripts, passport scan"
+              ],
+              [
+                "APS Assessment",
+                "2-4 weeks",
+                "₹15,000-25,000 processing fee",
+                "Additional docs if requested"
+              ],
+              [
+                "APS Certificate Issued",
+                "1 week",
+                "€0",
+                "You get the certificate PDF"
+              ],
+              [
+                "Student Visa Application",
+                "4-6 weeks",
+                "€75",
+                "APS cert + visa form + admission letter"
+              ],
+              [
+                "Visa Approval & Residence Permit",
+                "Final",
+                "€0 (visa stamped in passport)",
+                "You can now travel to Germany"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "warn",
+            "text": "Common mistake: Applying for German visa without APS clearance. Consulate will reject it. Always get APS first, then apply for visa."
+          }
         },
         {
-          "h": "PR pathway via Blue Card",
-          "body": "Land a qualifying job and you become eligible for the EU Blue Card with a faster PR timeline (21 months with B1 German, 33 months otherwise). Germany's public-university + low-cost + PR pathway combination is why it's booming for Indian students. Practise IELTS free on LandingPrep."
+          "h": "Blocked Account (Sperrkonten): Required for Student Visa",
+          "body": "To get a German student visa, you must deposit €11,208 (or equivalent) in a German blocked account (Sperrkonto). This is NOT a deposit you lose—it's money released to you monthly (€934/month) for living expenses. It's a legal requirement to prove financial stability.",
+          "steps": [
+            "Open a blocked account with a German bank (most offer free accounts for students)",
+            "Wire €11,208 from India to the blocked account in Germany",
+            "Bank freezes the amount and releases €934/month automatically to your regular account",
+            "After 12 months (1 year of study), the blocked account is closed and any remaining balance is yours",
+            "For second year, some students maintain the balance or open a new blocked account (optional if employed)"
+          ],
+          "table": {
+            "headers": [
+              "Aspect",
+              "Details"
+            ],
+            "rows": [
+              [
+                "Amount Required",
+                "€11,208 (updated annually by German govt)"
+              ],
+              [
+                "Bank Options",
+                "Deutsche Bank, Commerzbank, Sparkasse, Fidor Bank"
+              ],
+              [
+                "Opening from India",
+                "Online possible with video ID, takes 3-5 business days"
+              ],
+              [
+                "Fee",
+                "€0-30 one-time (most banks free for students)"
+              ],
+              [
+                "Release Mechanism",
+                "Automatic: €934/month to regular checking account"
+              ],
+              [
+                "Timing",
+                "Must be open BEFORE visa interview"
+              ],
+              [
+                "After 1st Year",
+                "Balance remains yours; you can withdraw or reinvest"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "tip",
+            "text": "Blocked account misconception: You don't 'spend' this money—it's released to you monthly. After 12 months, unused balance is yours to keep."
+          }
+        },
+        {
+          "h": "Top German Universities with English-Taught Master's",
+          "body": "Not all German universities offer English-taught programs—here are the best and most accessible for Indian students.",
+          "table": {
+            "headers": [
+              "University",
+              "City",
+              "Global Rank",
+              "Best English Master's Programs",
+              "Semester Fee (EUR)"
+            ],
+            "rows": [
+              [
+                "Technical University Munich (TUM)",
+                "Munich",
+                "#50 global",
+                "AI, Data Science, Engineering, Computer Science",
+                "€336"
+              ],
+              [
+                "Heidelberg University",
+                "Heidelberg",
+                "#50 global",
+                "Physics, Chemistry, Life Sciences, Medicine",
+                "€350"
+              ],
+              [
+                "University of Bonn",
+                "Bonn",
+                "#80 global",
+                "STEM, Mathematics, Economics, Physics",
+                "€350"
+              ],
+              [
+                "Technische Universität Berlin (TU Berlin)",
+                "Berlin",
+                "#150 global",
+                "Engineering, Computer Science, Technology",
+                "€300"
+              ],
+              [
+                "University of Frankfurt (Goethe)",
+                "Frankfurt",
+                "#150 global",
+                "Business, Finance, Economics, Law",
+                "€350"
+              ],
+              [
+                "University of Cologne",
+                "Cologne",
+                "#200 global",
+                "Engineering, Business, Social Sciences",
+                "€300"
+              ],
+              [
+                "RWTH Aachen University",
+                "Aachen",
+                "#100 global",
+                "Engineering, Computer Science, Architecture",
+                "€350"
+              ],
+              [
+                "University of Hamburg",
+                "Hamburg",
+                "#150 global",
+                "Engineering, Marine Science, Physics",
+                "€325"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Master's Program Admission Requirements",
+          "body": "German universities have transparent admissions criteria for Indian students. Most programs follow similar patterns.",
+          "bullets": [
+            "**Bachelor's Degree**: 3-4 year degree from recognized Indian university (Delhi, IIT, BITS, etc.). Minimum 60% aggregate (some STEM programs want 70%+)",
+            "**English Proficiency**: IELTS 6.5 or TOEFL 90+ required by most (some waive if you studied in English medium in India)",
+            "**GMAT/GRE**: NOT required for most Master's programs, unlike UK/USA. Optional for competitive business programs",
+            "**Relevant Bachelor's Major**: Most programs require related undergraduate field (e.g., CS Master's needs CS/IT/Engineering bachelor's)",
+            "**Application Timeline**: Most universities accept applications Jan-June for Sept intake (rolling admissions—apply early for better chances)",
+            "**Admission Speed**: Fast—many offers within 2-4 weeks (vs 8-12 weeks in UK/US)",
+            "**Cost**: €0-50 application fee (most German universities are free)"
+          ]
+        },
+        {
+          "h": "Student Visa Process for Indians: Step-by-Step",
+          "body": "German student visa process is straightforward once you have APS clearance. Here's the exact flow.",
+          "steps": [
+            "Get APS certificate from German embassy in your city (2-4 weeks)",
+            "Receive admission letter from German university (happens after you apply and are accepted)",
+            "Open blocked account in Germany and deposit €11,208",
+            "Gather documents: passport, bachelor's degree, transcripts, APS cert, admission letter, blocked account proof, health insurance",
+            "Apply for German student visa at German consulate (visa fee €75)",
+            "Visa interview: Usually brief, 15-20 min—they confirm your study plans and financial situation",
+            "Visa approval: Takes 4-6 weeks; visa stamped in your passport",
+            "Travel to Germany within 3 months of visa issuance and register at university (Immatrikulation)",
+            "Register with local authorities (Anmeldung) and get residence permit"
+          ]
+        },
+        {
+          "h": "Scholarships & Funding for Indian Students",
+          "body": "While German tuition is free, scholarships exist for living expenses. Competition is moderate to high.",
+          "bullets": [
+            "**DAAD Scholarships**: Most prestigious, €934/month for living + semester fees. Highly competitive, application deadline Jan-Feb",
+            "**DAAD Master's Scholarships (Masterstipendien)**: Direct from DAAD, monthly living stipend for selected programs",
+            "**ERASMUS+ Scholarships**: Partial funding (€400-800/month) for EU/EEA students (Indians ineligible, but check partner universities)",
+            "**University Scholarships**: TUM Scholarship, Heidelberg Excellence Initiative (5-15% coverage, merit-based)",
+            "**India-Germany Bilateral Scholarships**: Limited, contact Indian embassy in Germany or respective states",
+            "**Work as Student Assistant (HiWi job)**: €450-550/month for 10-12 hours/week, nearly covers living costs and counts towards German work experience",
+            "**Part-Time Work**: Allowed 120 full days/240 half days per year. Minimum wage €12.41/hour"
+          ]
+        },
+        {
+          "h": "Working in Germany: Student Rights & Post-Study Options",
+          "body": "Germany is increasingly friendly to international student workers. During studies and after graduation, there are clear work pathways.",
+          "table": {
+            "headers": [
+              "When",
+              "Work Allowed",
+              "Max Hours",
+              "Minimum Wage",
+              "Typical Jobs"
+            ],
+            "rows": [
+              [
+                "During Master's (term-time)",
+                "Yes, part-time",
+                "20 hours/week OR 120 full days/year",
+                "€12.41/hour",
+                "Campus job, tutor, startup intern, HiWi"
+              ],
+              [
+                "During Master's (semester breaks)",
+                "Yes, full-time",
+                "Unlimited during official breaks",
+                "€12.41/hour",
+                "Internship, temp work, project-based"
+              ],
+              [
+                "After Master's (Job Seeker Visa)",
+                "Limited (job search)",
+                "Part-time only during search",
+                "€12.41/hour",
+                "Freelance, contract work, side income"
+              ],
+              [
+                "After Master's (Work Visa / Blue Card)",
+                "Yes, full-time",
+                "Full-time employment",
+                "€45,000-60,000/year typical",
+                "Tech, engineering, science jobs"
+              ],
+              [
+                "Long-term (Permanent Residence)",
+                "Unrestricted",
+                "Full-time, own business",
+                "No limit",
+                "Any job, self-employment"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "HiWi jobs (student assistant roles at university): €450-550/month for 10-12 hours/week. Nearly covers living costs and shows German work experience for visa renewal."
+          }
+        },
+        {
+          "h": "Residence Permit & Long-Term Settlement in Germany",
+          "body": "After completing your Master's, you can stay in Germany and work. The pathway to permanent residence is clear and achievable.\n\n**Post-Study Residence:**\n- **Job Seeker Visa**: 6 months after graduation to find work (part-time work allowed)\n- **Work Visa (Fachkräfte-Visum)**: For skilled jobs (€45,000+ salary for engineers/CS roles; €40,000+ for other fields). Valid 1-4 years, renewable\n- **Permanent Residence (Daueraufenthalt-EU)**: After 5 years continuous residence with work visa\n- **Citizenship**: After 8-12 years residence (reduced to 6 years if passing German language/civics test)\n\n**Why many Indians stay:**\n- High salaries (€4,500-6,500/month starting for STEM graduates)\n- Strong job security and worker protections\n- Universal healthcare (paid by employer)\n- Family reunion visas (spouse/children can follow after 1-2 years)\n- No racial discrimination in hiring (unlike some countries)\n- Access to EU travel/work if desired"
+        },
+        {
+          "h": "Cost Comparison: Germany vs UK vs Ireland vs Netherlands",
+          "body": "How does the German free education model compare to other European destinations?",
+          "table": {
+            "headers": [
+              "Country",
+              "Tuition (2 yrs Master's)",
+              "Living (2 yrs)",
+              "Total (INR)",
+              "Work After Degree",
+              "Settlement Pathway"
+            ],
+            "rows": [
+              [
+                "Germany",
+                "€2,000 fees only",
+                "€18,000-30,000",
+                "₹17-30 lakhs",
+                "6-month job seeker + work visa",
+                "PR/Citizenship possible"
+              ],
+              [
+                "Netherlands",
+                "€15,000-25,000/yr",
+                "€18,000-30,000",
+                "₹35-60 lakhs",
+                "1 year OWP",
+                "Difficult PR"
+              ],
+              [
+                "Ireland",
+                "€24,000-44,000",
+                "€24,000-38,000",
+                "₹45-60 lakhs",
+                "2 years TLG visa",
+                "Easy PR (5 yrs work)"
+              ],
+              [
+                "UK",
+                "€30,000-50,000",
+                "€24,000-40,000",
+                "₹50-75 lakhs",
+                "2 years PSW",
+                "Difficult PR"
+              ],
+              [
+                "USA",
+                "€40,000-80,000",
+                "€30,000-50,000",
+                "₹70-110 lakhs",
+                "3 yrs OPT (conditional)",
+                "H1-B lottery"
+              ],
+              [
+                "Spain/Portugal",
+                "€0-5,000 fees",
+                "€12,000-24,000",
+                "₹15-30 lakhs",
+                "Limited work rights",
+                "PR possible 5 yrs"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "money",
+            "text": "Germany's total cost (₹17-30 lakhs) is 40-60% cheaper than Ireland/UK and 50-70% cheaper than USA—the lowest among Western destinations."
+          }
+        },
+        {
+          "h": "Language: Do You Need German?",
+          "body": "A common misconception: You need fluent German to study in Germany. False—many universities offer 100% English-taught Master's programs, and German universities are used to international students.\n\n**What you need:**\n- **For studies**: English (IELTS 6.5+) for English-taught programs. German not required.\n- **For living**: Basic German (A1-A2 level) is helpful but many international students survive on English + Google Translate. Germans in cities speak good English.\n- **For work/residence**: For some jobs, German language required; for tech/engineering, English is often fine.\n- **For citizenship**: Fluent German (B2 level) required for naturalization\n\n**Learning German**: Many universities offer free German language courses for students. A 6-month course (3-4 hours/week) gets you to A2 level (enough for daily life). Duolingo or Goethe-Institut courses are affordable (€50-150)."
         }
+      ],
+      "faqs": [
+        [
+          "Is German tuition really free for international students?",
+          "Yes, 100% free at public universities. You pay only semester fees (€250-400/semester = €1,000-1,600 total for 2 years). This is exclusively German policy—no other country in Western Europe offers it."
+        ],
+        [
+          "What is the Blocked Account and how does it work?",
+          "A Blocked Account (Sperrkonto) is a legal requirement for German student visa. You deposit €11,208 in a German bank, which releases €934/month to your regular account. After 1 year, unused balance is yours to keep. It's not a loss—it's your living money, just pre-authorized by the government."
+        ],
+        [
+          "Do I need APS to apply for German universities?",
+          "APS is mandatory for Indian students only when applying for a VISA. Universities accept applications without APS, but you won't get a student visa without it. Always get APS before visa interview."
+        ],
+        [
+          "How long does APS certification take?",
+          "2-4 weeks typically. Application is online, assessment is via document review (writing test is rare for Master's). If delays occur, contact the APS office for expedited processing."
+        ],
+        [
+          "Can I work while studying in Germany?",
+          "Yes, 20 hours/week during term time (or 120 full days/240 half days/year). During semester breaks, you can work full-time. Minimum wage is €12.41/hour. Many students do HiWi jobs (€450-550/month) to cover living costs."
+        ],
+        [
+          "What happens after my Master's degree—can I stay in Germany?",
+          "Yes. You get a 6-month Job Seeker visa after graduation, then can transition to a Work visa if you find employment (no points system like Canada). After 5 years work, you're eligible for permanent residence. Many German companies sponsor skilled workers."
+        ],
+        [
+          "Is Germany cheaper than the UK for Master's?",
+          "Yes, significantly. Germany: ₹17-30 lakhs (free tuition + low living). UK: ₹50-75 lakhs (high tuition + high living). Germany's main cost is living; UK's is tuition. Outside London/Edinburgh, UK living is similar to Germany's."
+        ],
+        [
+          "Which German cities are cheapest for students?",
+          "Leipzig, Kiel, Rostock, Greifswald: €250-400/month for rent. Berlin and Cologne: €400-650/month. Munich: €600-900/month. For cheapest 2-year cost, Leipzig + technical field = ₹17-20 lakhs."
+        ],
+        [
+          "Do German Master's programs require GMAT or GRE?",
+          "No, most don't require it. German universities focus on your bachelor's grades and transcript. GMAT/GRE only helps for top MBA programs (e.g., TUM MBA might prefer it), but it's not mandatory."
+        ]
       ]
     },
     {
@@ -9073,34 +10959,426 @@
       "id": "study-in-ireland-cost-2026",
       "tag": "Study Abroad",
       "date": "2026",
-      "title": "Cost of Studying in Ireland for Indian Students 2026: Fees, Living & Scholarships",
-      "excerpt": "A realistic full budget for studying in Ireland in 2026 — university fees, Dublin vs other cities, the €10k living cost threshold, and the 2-year stay-back visa.",
-      "kw": "cost of studying in ireland for indian students, ireland student visa 2026, study ireland fees, ireland living cost students, ireland stay back visa",
+      "title": "Study in Ireland: Complete Cost Guide, Scholarships & Graduate Visa 2026",
+      "excerpt": "Ireland offers world-class universities and a clear pathway to work visas for Indian students. Here's the complete cost breakdown, city-wise living expenses, scholarship options, and stay-back work rights.",
+      "kw": "study in Ireland cost, Ireland tuition fees 2026, Ireland living expenses Dublin, Irish universities, Ireland graduate visa, Ireland scholarships for Indian students, Ireland work visa, Trinity College Dublin, UCD, Galway",
       "sections": [
         {
-          "h": "Why Ireland for Indian students",
-          "body": "Ireland offers English-taught degrees from well-ranked universities (TCD, UCD, UCC, DCU, Maynooth), EU-aligned research networks, and critically — a 2-year post-study 'Third Level Graduate Scheme' stay-back visa that lets you work for any employer in Ireland after graduation. It is also an English-speaking EU country, giving access to the wider European job market."
+          "h": "Why Ireland for Indian Students?",
+          "body": "Ireland has become one of the top destinations for Indian students seeking quality education and work opportunities. The country offers a unique combination of world-class universities, English-medium education, reasonable international fees compared to the UK and US, and most importantly, clear post-study work visa pathways.\n\nThe Irish government actively welcomes international students and has introduced the Student Visa and subsequent work permissions that allow graduates to stay and work, making it an excellent choice for those seeking career advancement abroad."
         },
         {
-          "h": "Tuition fees 2026",
-          "body": "International postgraduate tuition runs roughly €11,000–25,000 per year for most courses; STEM and business at the higher end. Undergraduate is €12,000–25,000+. TCD and UCD are the most expensive; regional universities (UCC, Maynooth, Galway) cost less for comparable degrees."
+          "h": "Ireland Tuition Fees by University Type 2026",
+          "body": "Ireland distinguishes between EU/EEA students and international students. As an Indian student, you fall under the international category with different fee structures.\n\n**Top Universities (Russell Group equivalent):**\nTrinity College Dublin, University College Dublin (UCD), University of Limerick, and NUI Galway are among the most popular. Master's programs typically range from €12,000 to €28,000 per year depending on the field.",
+          "table": {
+            "headers": [
+              "University Type",
+              "Program Level",
+              "Annual Tuition (EUR)",
+              "Annual Tuition (INR)",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "Russell Group (Trinity, UCD)",
+                "Master's - STEM",
+                "€18,000-€28,000",
+                "₹15,80,000-₹24,50,000",
+                "Engineering, Computer Science, Data Science"
+              ],
+              [
+                "Russell Group",
+                "Master's - Business/MBA",
+                "€15,000-€22,000",
+                "₹13,15,000-₹19,35,000",
+                "Higher for executive programs"
+              ],
+              [
+                "Russell Group",
+                "Master's - Arts/Humanities",
+                "€10,000-€15,000",
+                "₹8,80,000-₹13,15,000",
+                "Lower STEM demand"
+              ],
+              [
+                "Mid-tier Universities",
+                "Master's - All Fields",
+                "€9,000-€16,000",
+                "₹7,90,000-₹14,10,000",
+                "UL, Galway, Cork, DCU"
+              ],
+              [
+                "Private/Specialized",
+                "Master's Programs",
+                "€8,000-€12,000",
+                "₹7,00,000-₹10,50,000",
+                "Davenport, Griffith, etc."
+              ]
+            ]
+          },
+          "callout": {
+            "type": "money",
+            "text": "Scholarship alert: Irish universities offer 10-30% tuition waivers for high-achieving international students. Apply early and highlight your academic strengths."
+          }
         },
         {
-          "h": "Living costs by city",
-          "body": "Dublin is expensive — rent alone is €700–1,100/month for a shared room. Budget €12,000–16,000/year for living in Dublin; €9,000–12,000 in Cork, Galway or Limerick. The student visa requires you to show €10,000 in savings for the first year, on top of tuition."
+          "h": "Living Expenses in Ireland by City",
+          "body": "Your monthly living costs depend heavily on which Irish city you choose. Dublin is the most expensive, while smaller cities like Galway and Limerick are significantly more affordable.",
+          "table": {
+            "headers": [
+              "City",
+              "Monthly Rent (Studio/1BHK)",
+              "Food, Transport, Utilities",
+              "Total Monthly (EUR)",
+              "Total Monthly (INR)",
+              "Annual Living (INR)"
+            ],
+            "rows": [
+              [
+                "Dublin (City Centre)",
+                "€700-€1,100",
+                "€600-€800",
+                "€1,300-€1,900",
+                "₹1,14,000-₹1,67,000",
+                "₹13,70,000-₹20,00,000"
+              ],
+              [
+                "Dublin (Suburbs)",
+                "€500-€700",
+                "€500-€700",
+                "€1,000-€1,400",
+                "₹87,500-₹1,22,500",
+                "₹10,50,000-₹14,70,000"
+              ],
+              [
+                "Cork",
+                "€450-€650",
+                "€400-€550",
+                "€850-€1,200",
+                "₹74,500-₹1,05,000",
+                "₹8,94,000-₹12,60,000"
+              ],
+              [
+                "Galway",
+                "€400-€600",
+                "€400-€550",
+                "€800-€1,150",
+                "₹70,000-₹1,00,750",
+                "₹8,40,000-₹12,09,000"
+              ],
+              [
+                "Limerick",
+                "€350-€550",
+                "€350-€500",
+                "€700-€1,050",
+                "₹61,250-₹92,000",
+                "₹7,35,000-₹11,04,000"
+              ]
+            ]
+          }
         },
         {
-          "h": "Visa funds requirement",
-          "body": "For an Irish student visa, you need your first-year tuition paid (or a receipt) plus €10,000 in a bank account for living costs. Private health insurance is also required. Keep funds clear and in your own or parent's name for at least 3–6 months."
+          "h": "Total Cost for Master's: Complete 2-Year Breakdown",
+          "body": "Here's what a typical 2-year Master's in Ireland costs Indian students, including tuition and living expenses for different cities.",
+          "table": {
+            "headers": [
+              "Program & Location",
+              "Tuition (2 Years)",
+              "Living (2 Years)",
+              "Total EUR",
+              "Total INR",
+              "Exchange Rate Used"
+            ],
+            "rows": [
+              [
+                "Trinity Dublin - STEM",
+                "€36,000",
+                "€31,200",
+                "€67,200",
+                "₹59,01,600",
+                "1 EUR = 88 INR"
+              ],
+              [
+                "Trinity Dublin - Business",
+                "€44,000",
+                "€31,200",
+                "€75,200",
+                "₹66,17,600",
+                "1 EUR = 88 INR"
+              ],
+              [
+                "UCD - STEM",
+                "€34,000",
+                "€24,000",
+                "€58,000",
+                "₹51,04,000",
+                "1 EUR = 88 INR"
+              ],
+              [
+                "Mid-tier (UL/Galway) - STEM",
+                "€30,000",
+                "€19,200",
+                "€49,200",
+                "₹43,29,600",
+                "1 EUR = 88 INR"
+              ],
+              [
+                "Mid-tier (Limerick) - Arts",
+                "€20,000",
+                "₹14,100",
+                "€34,100",
+                "₹30,00,800",
+                "1 EUR = 88 INR"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "Budget reality: 2 years in Ireland costs ₹30-66 lakhs total, substantially less than UK (₹40-80 lakhs) or USA (₹50-100 lakhs) for the same quality education."
+          }
         },
         {
-          "h": "2-year post-study visa",
-          "body": "After graduating in Ireland you can apply for the Third Level Graduate Scheme — 24 months of open work authorisation for degree-level graduates, 12 months for Higher Diploma. You need your award letter and to apply within 6 months of graduation."
+          "h": "Scholarships & Financial Aid for Indian Students",
+          "body": "Irish universities actively fund international students through merit scholarships, government schemes, and private sponsorships. Most scholarships cover 15-50% of tuition.",
+          "bullets": [
+            "**Irish Government Scholarships**: HEA Targeted Initiatives scheme (limited seats, highly competitive)",
+            "**University-Specific Awards**: Trinity PhD/Master's Fellowship, UCD President's Scholarship (20-40% tuition waiver)",
+            "**Subject-Based Scholarships**: Scholarships for STEM, Business, and Innovation-focused courses",
+            "**INLACS Scheme**: For Indian nationals, covers tuition + small monthly stipend",
+            "**Erasmus+ Scholarships**: Some programs include EU funding for non-EU students",
+            "**Bank Education Loans**: ICICI, HDFC, SBI offer Irish education loans at 7-8.5% interest with 5-6 years repayment"
+          ]
         },
         {
-          "h": "Scholarships and free prep",
-          "body": "Government of Ireland International Education Scholarships offer €10,000 per year to a small cohort; most universities also give merit partial-waivers at application time. A strong IELTS score (6.5 overall minimum for most courses) improves both admission and scholarship odds. Practise free on LandingPrep."
+          "h": "Ireland Graduate Visa & Post-Study Work Rights",
+          "body": "This is where Ireland truly shines for Indian students. After completing your degree, you get immediate and extended work visa options—a major advantage over many countries.",
+          "steps": [
+            "Complete your Master's program (minimum 1 year full-time study)",
+            "Within 90 days of graduation, apply for the 'Third Level Graduate' (TLG) visa",
+            "TLG visa grants you 2 years post-study work authorization (eligible immediately)",
+            "Find an employer and transition to a sponsored work permit (renewable for up to 5 years)",
+            "After 5 years work experience, you become eligible for Permanent Residence (IBC)",
+            "After 5 years IBC + citizenship eligibility, apply for Irish citizenship"
+          ],
+          "callout": {
+            "type": "tip",
+            "text": "2-year TLG is a game-changer: you have 2 full years to gain work experience, job-search flexibly, and even freelance—no employer sponsorship needed immediately."
+          }
+        },
+        {
+          "h": "Work Opportunities During Study",
+          "body": "International students in Ireland are allowed to work part-time during studies, which helps offset living costs.\n\nDuring term time, you can work up to 20 hours per week in part-time roles. During breaks (Christmas, summer), you can work full-time. Average part-time wages are €12-15/hour, translating to €960-1,200/month (₹84,000-1,05,000) for part-time work.",
+          "bullets": [
+            "Part-time retail, hospitality, tutoring roles are abundant in Dublin and Cork",
+            "Tech companies (Google, Meta, Microsoft have Dublin offices) often hire student interns",
+            "On-campus jobs (library, IT support) are popular among international students",
+            "Many Master's students combine part-time work with studies to reduce costs"
+          ]
+        },
+        {
+          "h": "Top Universities in Ireland for Indian Students",
+          "body": "Not all Irish universities rank equally. Here are the institutions that consistently attract and support Indian students.",
+          "table": {
+            "headers": [
+              "University",
+              "City",
+              "Ranking (Global)",
+              "Popular Master's Programs",
+              "International Student Support"
+            ],
+            "rows": [
+              [
+                "Trinity College Dublin",
+                "Dublin",
+                "Top 100",
+                "CS, AI, Data Science, Finance, Engineering",
+                "Strong Indian alumni network"
+              ],
+              [
+                "University College Dublin (UCD)",
+                "Dublin",
+                "Top 150",
+                "Business, STEM, Medicine, Law",
+                "Dedicated international center"
+              ],
+              [
+                "University of Limerick",
+                "Limerick",
+                "Top 500",
+                "Engineering, Business, IT",
+                "Most affordable major uni"
+              ],
+              [
+                "NUI Galway",
+                "Galway",
+                "Top 500",
+                "Engineering, Business, Arts",
+                "Low living costs, vibrant student life"
+              ],
+              [
+                "University College Cork",
+                "Cork",
+                "Top 500",
+                "Engineering, Chemistry, Business",
+                "Good scholarship offerings"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Admission Requirements for Master's in Ireland",
+          "body": "Irish universities have straightforward admission criteria for Indian students, though competitive programs have higher cutoffs.",
+          "bullets": [
+            "Bachelor's degree from a recognized Indian university (CGPA 6.5+ typically required, 7.5+ for top programs)",
+            "English proficiency: IELTS 6.5 (band score) or TOEFL 90+ (most universities flexible during COVID-impact period)",
+            "Relevant work experience: 2-3 years helps for MBA/advanced programs",
+            "Statement of purpose & 2-3 recommendation letters required",
+            "GMAT/GRE: Not always mandatory but improves chances for business/STEM programs",
+            "Visa processing: Allow 4-6 weeks for Irish student visa approval after admission"
+          ]
+        },
+        {
+          "h": "Student Visa & Health Insurance Costs",
+          "body": "Beyond tuition and living, you need to budget for visa fees and mandatory health insurance.",
+          "table": {
+            "headers": [
+              "Item",
+              "Cost (EUR)",
+              "Cost (INR)",
+              "Frequency"
+            ],
+            "rows": [
+              [
+                "Student Visa Application",
+                "€300",
+                "₹26,400",
+                "One-time on arrival"
+              ],
+              [
+                "Visa Renewal/Extension",
+                "€100-€200",
+                "₹8,800-₹17,600",
+                "If needed annually"
+              ],
+              [
+                "Health Insurance (mandatory)",
+                "€100-€150/month",
+                "₹8,800-₹13,200",
+                "Monthly, ~1,200-1,800/year"
+              ],
+              [
+                "Proof of Funds (blocked)",
+                "€10,000-€15,000",
+                "₹8,80,000-₹13,15,000",
+                "Required for visa, returned after"
+              ],
+              [
+                "Exam/Degree Certification",
+                "€50-€100",
+                "₹4,400-₹8,800",
+                "One-time"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Cost Comparison: Ireland vs UK vs USA",
+          "body": "How does Ireland stack up against its English-speaking competitors?",
+          "table": {
+            "headers": [
+              "Country",
+              "2-Year Master's Tuition",
+              "2-Year Living",
+              "Total (INR)",
+              "Post-Study Work Visa",
+              "Overall Value"
+            ],
+            "rows": [
+              [
+                "Ireland",
+                "₹30-40 lakhs",
+                "₹15-20 lakhs",
+                "₹45-60 lakhs",
+                "2 years TLG + 5 years work permit",
+                "Best overall value"
+              ],
+              [
+                "UK",
+                "₹35-50 lakhs",
+                "₹15-25 lakhs",
+                "₹50-75 lakhs",
+                "2 years PSW (new)",
+                "Expensive, strong brands"
+              ],
+              [
+                "USA",
+                "₹45-70 lakhs",
+                "₹25-40 lakhs",
+                "₹70-110 lakhs",
+                "1 year OPT (limited)",
+                "Most expensive, visa uncertain"
+              ],
+              [
+                "Canada",
+                "₹20-35 lakhs",
+                "₹15-25 lakhs",
+                "₹35-60 lakhs",
+                "3 years PGWP",
+                "Good value, cold climate"
+              ],
+              [
+                "Australia",
+                "₹25-40 lakhs",
+                "₹20-30 lakhs",
+                "₹45-70 lakhs",
+                "2 years PSW",
+                "Sunny, expensive living"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Common FAQs About Studying in Ireland",
+          "body": "Quick answers to questions Indian students ask most."
         }
+      ],
+      "faqs": [
+        [
+          "Can I work full-time after my Master's in Ireland?",
+          "Yes. The 2-year Third Level Graduate (TLG) visa allows you to work full-time without an employer sponsor. After that, you need to transition to an employer-sponsored work permit, which is typically straightforward for skilled roles."
+        ],
+        [
+          "Is tuition in Ireland fixed or does it increase yearly?",
+          "Universities typically fix tuition for your entire program at admission. However, accommodation and living costs increase annually by 3-5%. Always ask universities about tuition lock-in policies."
+        ],
+        [
+          "Can I get a scholarship covering 100% of tuition?",
+          "Full tuition scholarships are rare (typically reserved for PhD students). Most scholarships for Master's cover 15-40% of tuition. However, combining scholarships with part-time work can make it very affordable."
+        ],
+        [
+          "What's the difference between Irish and UK study costs?",
+          "Ireland's tuition is 15-25% lower than equivalent UK programs, and the 2-year TLG work visa is more generous than the UK's 2-year PSW. Living costs are similar in Dublin but cheaper outside Dublin."
+        ],
+        [
+          "Do Irish universities accept GMAT/GRE from Indian students?",
+          "Most universities are flexible—GRE/GMAT is not mandatory but strengthens applications for competitive programs like MBA. A strong academic background often compensates."
+        ],
+        [
+          "How much does a student visa cost and how long does it take?",
+          "Student visa costs €300 and takes 4-6 weeks for processing. You'll also need to show proof of funds (~€10,000-15,000) but this money is returned after your studies."
+        ],
+        [
+          "Can I extend my stay in Ireland after my Master's?",
+          "Yes. After the 2-year TLG, you can apply for work permits (1-4 years) and eventually Permanent Residence (after 5 years continuous work). Many Indian graduates become PR and eventually Irish citizens."
+        ],
+        [
+          "Is Dublin the only place to study in Ireland?",
+          "No. Limerick, Galway, Cork, and Waterford offer excellent universities with lower living costs (€700-1,000/month vs €1,300+ in Dublin). Job opportunities are increasing outside Dublin too."
+        ],
+        [
+          "What's the best time to apply for Irish Master's programs?",
+          "Apply from September-November for the next academic year (starting August-September). Early applications improve scholarship chances. Rolling admissions mean spots fill up by April-May."
+        ]
       ]
     },
     {
@@ -9726,34 +12004,320 @@
       "id": "gre-format-2026-complete-guide",
       "tag": "GRE",
       "date": "2026",
-      "title": "GRE Format 2026: Sections, Timing, Score Scale & What's New",
-      "excerpt": "The complete, updated GRE format guide for 2026 — section order, number of questions, timing, score scale, what the Shorter GRE looks like, and exactly what each section tests.",
-      "kw": "gre format 2026, gre test format, gre sections timing, gre shorter format, gre general test format, how many questions in gre",
+      "title": "GRE General 2026: Complete Format, Scoring & Question Types Guide",
+      "excerpt": "The redesigned GRE General 2026 is shorter (~1h 58m), scored 130–170, and adaptive by section. Learn the new format, scoring logic, question types, and registration process.",
+      "kw": "GRE 2026 format, GRE General redesign 2026, GRE sections Verbal Quant AWA, GRE adaptive by section, GRE scoring 130-170, GRE registration, GRE test structure",
       "sections": [
         {
-          "h": "GRE General Test 2026 — the current format",
-          "body": "ETS introduced the Shorter GRE in September 2023. The current GRE has: Analytical Writing (1 task, 30 min) → Verbal Reasoning (2 sections × 12 questions, 18 min each) → Quantitative Reasoning (2 sections × 15 questions, 21 min each). Total: about 1 hour 58 minutes. There is no longer an unscored research section or a third Verbal/Quant section. The test is computer-adaptive at the section level (not question level for most test-takers)."
+          "h": "What Changed: GRE 2026 Redesign Overview",
+          "body": "In September 2023, ETS rolled out the redesigned GRE General, making it **shorter, faster, and more flexible**. If you took the old GRE (or are using old prep materials), here's what's different:\n\n**Old Format (pre-2023)**: ~3h 45m, 6 sections (Verbal x2, Quant x2, AWA x1, 1 experimental), scored 130–170 per section, fully adaptive.\n\n**New Format (2026)**: ~1h 58m, 4 sections (Verbal x2, Quant x2, AWA x1, NO experimental), scored 130–170 per section, adaptive by section (not item-by-item).\n\nThe short answer: **same content, faster test, less stress, same scoring scale**. The long answer is nuanced—read on."
         },
         {
-          "h": "Analytical Writing",
-          "body": "One task: Analyze an Argument (30 minutes). You critique the logical flaws in a given argument — you are not sharing your opinion. Scored 0–6 in 0.5 increments by human raters and e-rater software. This section appears first. Most STEM programmes care less about AW (a 3.5–4.0 is fine); humanities/social science PhDs want 4.5+."
+          "h": "GRE 2026 Test Structure & Timing",
+          "body": "Here's the exact breakdown of the new GRE format:",
+          "table": {
+            "headers": [
+              "Section",
+              "Format",
+              "Questions",
+              "Time",
+              "Key Details"
+            ],
+            "rows": [
+              [
+                "Analytical Writing (AWA)",
+                "2 essays (Analyze an Issue + Analyze an Argument)",
+                "2 prompts",
+                "30 min total (15 min each)",
+                "Not adaptive; scored by humans + AI"
+              ],
+              [
+                "Verbal Reasoning 1",
+                "20 questions (RC, TC, SE)",
+                "20 Qs",
+                "18 min",
+                "Difficulty adjusts based on Section 1 performance"
+              ],
+              [
+                "Verbal Reasoning 2",
+                "20 questions (RC, TC, SE)",
+                "20 Qs",
+                "18 min",
+                "Difficulty locked after Section 1"
+              ],
+              [
+                "Quant 1",
+                "20 questions (Geometry, Algebra, Data Analysis, Word Problems)",
+                "20 Qs",
+                "21 min",
+                "Difficulty adjusts based on Section 1 performance"
+              ],
+              [
+                "Quant 2",
+                "20 questions (Geometry, Algebra, Data Analysis, Word Problems)",
+                "20 Qs",
+                "21 min",
+                "Difficulty locked after Section 1"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "Total time: ~1h 58m (including AWA). No experimental section = no surprises. Adaptive by section means your score on Verbal 1 determines the difficulty of Verbal 2."
+          }
         },
         {
-          "h": "Verbal Reasoning",
-          "body": "2 sections of 12 questions each, 18 minutes per section. Question types: Text Completion (fill in 1–3 blanks), Sentence Equivalence (find 2 words that complete a sentence equivalently), Reading Comprehension (passages + questions). Scored 130–170 in 1-point increments. Tests sophisticated vocabulary in context and complex reading."
+          "h": "Verbal Reasoning: Question Types & Strategy",
+          "body": "GRE Verbal tests reading comprehension, vocabulary in context, and logical reasoning. All three question types appear in both Verbal sections.",
+          "bullets": [
+            "**Reading Comprehension (RC)**: 3–4 passages (400–650 words each). Questions ask about main ideas, inferences, tone, and detail. Short-answer passages also appear. Expect 7–9 RC questions per section.",
+            "**Text Completion (TC)**: 1–3 blanks per sentence. You pick the best word(s) to fill in the blank. Logical connectors (although, therefore, while) matter heavily. ~4–5 TC per section.",
+            "**Sentence Equivalence (SE)**: Two blanks, 6 answer choices. You pick TWO words that mean the same and complete the sentence logically. This is NEW and tests vocabulary + logic simultaneously. ~4–5 SE per section.",
+            "**Vocabulary is critical**: The GRE loves advanced synonyms. Words like 'obfuscate,' 'ephemeral,' 'sagacious,' 'perspicacious,' and 'laconic' appear regularly. Flashcard apps (Anki, Quizlet) are your friend.",
+            "**No more obscure vocab**: The 2026 redesign removed archaic words (like 'solipsistic'). Focus on words actually used in academic writing.",
+            "**Adaptive difficulty**: If you ace Verbal 1, Verbal 2 becomes harder. Missing 5+ questions in V1 locks you into an easier V2. Each difficulty level has a different score ceiling."
+          ]
         },
         {
-          "h": "Quantitative Reasoning",
-          "body": "2 sections of 15 questions each, 21 minutes per section. Question types: Quantitative Comparison, Problem Solving, Data Interpretation. Tests arithmetic, algebra, geometry, and data analysis up to secondary school level — not calculus or higher. Scored 130–170 in 1-point increments. The maths is not advanced but the time pressure and problem-solving clarity required is high."
+          "h": "Quantitative Reasoning: Topics & Question Formats",
+          "body": "GRE Quant covers K–12 math (no calculus) plus some pre-calc logic. The four main categories are:\n\n**Algebra & Arithmetic**: Linear equations, inequalities, exponents, radicals, percents, ratios, averages. ~30% of Quant questions.\n\n**Geometry**: Lines, angles, triangles, circles, polygons, coordinate geometry, 3D shapes. ~20% of Quant.\n\n**Data Analysis & Statistics**: Tables, charts, probability, combinations, permutations, standard deviation, correlation. ~25% of Quant.\n\n**Word Problems**: All the above wrapped in real-world scenarios (money, time, rates, work). ~25% of Quant.",
+          "bullets": [
+            "**Multiple Choice (5 options, 1 correct)**: Traditional format. Pick the best answer.",
+            "**Numeric Entry**: Type your answer as an integer, decimal, or fraction. No multiple choices—you must calculate the exact value.",
+            "**Quantitative Comparison (QC)**: Compare two quantities (A vs B) and pick A, B, C (equal), or D (cannot be determined). Classic GRE format, tests reasoning not just calculation.",
+            "**Data Analysis (Graphs & Tables)**: Read data from bar charts, pie charts, tables, and scatter plots. Answer single or multiple questions per graph.",
+            "**Graphics-based**: Geometry diagrams, coordinate planes, and labeled shapes. Figures are not always to scale—don't eyeball it.",
+            "**Calculator allowed**: You have an on-screen calculator for Quant, BUT many problems are faster solved by hand. Know when to use and when to skip it."
+          ]
         },
         {
-          "h": "Total score and percentiles",
-          "body": "Scores: Verbal 130–170, Quant 130–170, AW 0–6. Most universities look at a combined V+Q total (260–340). GRE 320+ (V155+Q165 roughly) opens most top-50 US STEM programmes. 325+ is competitive for top-10. Percentile tables change yearly — always check the official ETS percentile rankings before applying."
+          "h": "Analytical Writing (AWA): Essays & Scoring",
+          "body": "\n**Argument Essay** (15 min): You're given a flawed argument and asked to critique it. You must identify logical fallacies (unsupported assumptions, false causality, weak evidence) and suggest improvements. DO NOT argue whether the conclusion is true or false—argue whether the logic is sound.\n\n**Scoring Logic**: 0–6 scale. 5+ is strong; 4–4.5 is competitive for most programs; 3 or below may hurt your application.\n\nBoth essays are scored by AI (software that checks grammar, essay structure, and logical flow) + human raters (who override AI scores if they disagree). **Always** assume a human will read your essay.",
+          "steps": [
+            "Read the prompt carefully—note any qualifiers (\"always,\" \"sometimes,\" \"tend to\").",
+            "Decide your stance: agree, disagree, or nuanced (best often wins higher scores).",
+            "Brainstorm 2–3 examples that support your position (historical events, literary works, or personal/professional scenarios).",
+            "Write a clear thesis in your intro (1–2 sentences).",
+            "Body paragraphs (2–3): Each example gets a paragraph. Explain the example, connect it to the prompt, and show relevance.",
+            "Conclusion (1–2 sentences): Restate your thesis briefly and reinforce your strongest example.",
+            "Proofread for 1–2 minutes: Fix typos, grammar, and awkward phrasing. Minor errors don't tank scores; major errors do."
+          ],
+          "callout": {
+            "type": "tip",
+            "text": "Don't aim for perfection—aim for clarity and logic. Raters reward ideas, not flowery prose. A clear argument with a small grammar error scores higher than rambling perfection."
+          }
         },
         {
-          "h": "Practise free with real timing",
-          "body": "The biggest GRE mistake is running out of time — the Shorter GRE is faster-paced than it looks. Take a free full-length GRE mock on LandingPrep with real section timing to benchmark your V and Q scores and find your weak question types before test day."
+          "h": "GRE Scoring: How Points Translate to Your Final Score",
+          "body": "The GRE uses a **scaled score** of 130–170 (in 1-point increments) for Verbal and Quant separately. AWA is separate: 0–6.\n\n**Raw Score → Scaled Score**: You don't need to memorize this, but here's the logic:\n- Get 20/20 on Verbal 1 → Verbal 2 is harder. Perfect Verbal 2 = 170 Verbal.\n- Get 10/20 on Verbal 1 → Verbal 2 is easier. A strong Verbal 2 might only get you 145–150 Verbal.\n- Same logic applies to Quant 1 & Quant 2.\n\nEach section's difficulty level has a built-in score range. You can't get 170 from an easy Quant 2—the cap is lower.",
+          "table": {
+            "headers": [
+              "Score",
+              "Verbal Percentile",
+              "Quant Percentile",
+              "Competitiveness"
+            ],
+            "rows": [
+              [
+                "170 (perfect)",
+                "99th %ile",
+                "99th %ile",
+                "Top PhD programs, MIT, Stanford, Harvard"
+              ],
+              [
+                "160–169",
+                "90–98th %ile",
+                "90–98th %ile",
+                "Competitive for Ivy League + strong grad schools"
+              ],
+              [
+                "150–159",
+                "69–89th %ile",
+                "69–89th %ile",
+                "Good for most Master's programs"
+              ],
+              [
+                "140–149",
+                "41–68th %ile",
+                "41–68th %ile",
+                "Acceptable for state schools + lower-tier grad"
+              ],
+              [
+                "130–139",
+                "6–40th %ile",
+                "6–40th %ile",
+                "Below average; many programs have higher minimums"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "Total score is NOT Verbal + Quant. ETS reports Verbal + Quant + AWA separately. Some programs have minimum cutoffs (e.g., 'Verbal 155+ and Quant 150+'); others just want high combined competitiveness."
+          }
+        },
+        {
+          "h": "Adaptive by Section: How It Works in 2026",
+          "body": "The new GRE is **adaptive by section**, NOT item-by-item (like the old GRE). Here's what this means in practice:",
+          "steps": [
+            "You take Verbal 1 (20 questions, 18 min). Answer as many as you can.",
+            "ETS calculates your estimated Verbal score based on Verbal 1 difficulty + accuracy.",
+            "Verbal 2 difficulty is set based on your V1 performance. High V1 score → harder V2. Low V1 → easier V2.",
+            "You take Verbal 2 (20 questions, 18 min). Final Verbal score = weighted average of V1 + V2.",
+            "Same process for Quant 1 & Quant 2."
+          ],
+          "bullets": [
+            "**You can't see your V1 score before starting V2**—no feedback mid-test.",
+            "**Easier Quant 2 doesn't mean you bombed Quant 1**—it's just the adaptive algorithm. Stay confident.",
+            "**Strategic time management matters**: If V1 is tough but you're doing well, don't panic. Your V2 might be harder, but you're in the 160+ range if you're keeping up.",
+            "**Guessing penalty is minimal**: GRE has no penalty for wrong answers. If you're running out of time, guess and move on—don't leave questions blank.",
+            "**Question order doesn't matter**: You can't skip forward and come back (within a section). Answer in order.",
+            "**The 'Mark' and 'Review' feature lets you flag questions**: You can mark up to 3 questions per section to review in your remaining time. Use this for harder questions you want to reconsider."
+          ]
+        },
+        {
+          "h": "Where & When to Take the GRE 2026",
+          "body": "You can take the GRE in three formats:",
+          "table": {
+            "headers": [
+              "Format",
+              "Location",
+              "Duration",
+              "Cost",
+              "Best For"
+            ],
+            "rows": [
+              [
+                "At Home (GRE at Home)",
+                "Your own desk (needs proctor software)",
+                "~2h",
+                "$220 (USD)",
+                "Students outside major cities or with test anxiety"
+              ],
+              [
+                "Test Center (PPT)",
+                "Official ETS center",
+                "~2h",
+                "$220 (USD)",
+                "Traditional test-takers; most common in India"
+              ],
+              [
+                "Paper (Paper-based)",
+                "Selected centers (rare in 2026)",
+                "~2h",
+                "$220 (USD)",
+                "Students without reliable internet (very rare now)"
+              ]
+            ]
+          },
+          "steps": [
+            "Create an ETS account at www.ets.org (use your real name as it appears in your passport).",
+            "Click 'Register for a Test' and select 'GRE General Test 2026.'",
+            "Choose your test format (At Home, Test Center, or Paper).",
+            "Pick a test date. Slots fill up quickly; register 6–8 weeks in advance if you want prime dates.",
+            "For Test Center: Search for centers in your city (most major Indian cities have centers).",
+            "For At Home: Your proctor will verify your identity and monitor via webcam. You need a quiet room, desktop/laptop, and stable internet.",
+            "Pay the registration fee (USD $220 ≈ INR 18,000–19,000 at current rates). ETS accepts credit cards, debit cards, and sometimes Indian payment methods.",
+            "You'll receive a confirmation email with your test date, time, and center location (or At Home instructions).",
+            "GRE scores are released 10 business days after your test."
+          ],
+          "callout": {
+            "type": "warn",
+            "text": "Score validity: GRE scores are valid for 5 years. If you're applying to grad school in 2026, take the GRE by late 2025 / early 2026 at the latest."
+          }
+        },
+        {
+          "h": "Preparation Strategy: 8-Week to 12-Week Study Plan",
+          "body": "Most students need 8–12 weeks to prepare for a competitive GRE score (150+). Here's a proven roadmap:",
+          "steps": [
+            "**Weeks 1–2: Baseline Assessment**: Take a full diagnostic test (use ETS's free PowerPrep Online). Identify weak areas (Verbal vocabulary? Quant algebra?).",
+            "**Weeks 2–4: Skill Building**: Focus on fundamentals. Review Quant formulas, geometry rules, and Verbal vocabulary. Use Khan Academy (free), Magoosh (budget-friendly), or The Economist GRE Tutor (premium). Spend 60–90 min/day.",
+            "**Weeks 5–8: Practice & Weak Areas**: Work through official ETS question banks (most accurate for the real test). Do 20–30 practice questions daily, focusing on sections where you scored below target. Review every wrong answer—understand why you missed it.",
+            "**Weeks 8–10: Mock Tests**: Take 2–3 full-length mocks under timed conditions (same time of day as your real test, if possible). Analyze your performance. Are mistakes careless, or conceptual?",
+            "**Weeks 10–12: Final Polish**: Drill your weak question types. Take one final mock 3–4 days before the real test. Rest the 2 days before—don't cram.",
+            "**Test Day**: Arrive early, eat a light breakfast, and bring your ID. You'll have breaks between sections—use them to breathe."
+          ]
+        },
+        {
+          "h": "Key Prep Resources & Study Materials",
+          "body": "The quality of your prep materials directly impacts your score. Here's what works:",
+          "bullets": [
+            "**Official ETS Materials (MUST-HAVE)**: The official GRE guide and PowerPrep Online practice tests. These are the closest to the real test. Use them for practice tests and hard question drilling.",
+            "**Manhattan Prep**: Premium but worth it. Their verbal strategy books are excellent; their Quant strategy is solid. Cost: $149–$599 depending on package.",
+            "**Magoosh**: Budget-friendly ($49–$99/month), with 800+ practice questions and video explanations. Good for drilling specific topics.",
+            "**The Economist GRE Tutor**: Adaptive, high-quality, expensive ($99–$199). Best if you're struggling with a specific section.",
+            "**Khan Academy + ETS Partnership**: Free official videos and practice questions. Great for Quant fundamentals.",
+            "**Flashcard Apps (Anki, Quizlet)**: Essential for Verbal vocabulary. Download GRE decks or create your own. 10 min/day = vocabulary mastery in 8 weeks.",
+            "**Read Academic Articles**: Improve Verbal by reading journal articles, The Economist, or scientific papers. Exposes you to passage styles.",
+            "**Practice Tests**: Take 3–4 full mocks. ETS offers 4 free PowerPrep tests; Manhattan Prep offers others. Do NOT skip this step."
+          ]
+        },
+        {
+          "h": "Common Mistakes & How to Avoid Them",
+          "body": "Test-takers often sabotage themselves. Here's how to avoid the pitfalls:",
+          "bullets": [
+            "**Rushing Verbal**: Reading Comp questions are tricky. Slow down, re-read the question, and verify your answer against the passage. Speed > accuracy is a trap.",
+            "**Calculator over-reliance**: Quant sometimes rewards mental math. Practice doing Quant without a calculator 2–3 days/week.",
+            "**Ignoring weak areas**: If you miss 8 Geometry questions, don't avoid Geometry—drill it daily until it's your strength.",
+            "**Memorizing answers**: Every real test has new questions. Don't memorize answers from practice tests; understand the concepts.",
+            "**Overthinking AWA**: Simple, clear arguments score better than philosophical rambling. An 8-minute outline + 7-minute draft beats a 15-minute written mess.",
+            "**Skipping Official Materials**: Third-party questions are slightly different from real GRE questions. Use official materials for 70% of your practice.",
+            "**Not simulating test day**: If you take all your mocks at a coffee shop, test-day silence will throw you off. Practice how you'll test.",
+            "**Timing errors in Quant**: Practice pacing. Spend 1.5 min on easy Qs, 2 min on medium, 2.5 min on hard. Flag and come back if stuck."
+          ]
+        },
+        {
+          "h": "Score Reporting & Application Timeline",
+          "body": "After you finish the GRE, scores arrive in ~10 business days. Here's what happens next:",
+          "steps": [
+            "Scores are automatically sent to ETS to email you a digital score report. Keep this safe; universities may ask for it.",
+            "You can SEND SCORES for free to up to 4 universities. Additional score reports cost USD $31 each. Send them strategically.",
+            "Scores are valid for 5 years. If applying in 2026, aim to take the GRE by October 2025.",
+            "Verify your target universities' GRE minimum scores (check their website's 'Admissions' page). Meet or exceed them.",
+            "Submit your complete application (GRE + transcripts + essays + recommendations) by the application deadline (usually December 1 for January admits, September 15 for fall admits)."
+          ],
+          "callout": {
+            "type": "info",
+            "text": "Many universities are now 'GRE-optional,' meaning it's not required for admission. Still, submitting a strong score (150+) significantly boosts your chances."
+          }
         }
+      ],
+      "faqs": [
+        [
+          "What's the difference between the old GRE and the 2026 GRE?",
+          "The 2026 GRE is **shorter** (~1h 58m vs 3h 45m), has **no experimental section**, and is **adaptive by section** (not per question). Scoring (130–170 Verbal/Quant) is the same. Easier, faster, no surprises."
+        ],
+        [
+          "Can I retake the GRE if I don't like my score?",
+          "Yes. You can retake it once every 21 days, and up to 5 times in a rolling 12-month period. Each retake costs USD $220. Most students retake once if they score below their target."
+        ],
+        [
+          "What's a good GRE score for grad school?",
+          "It depends on your program. Competitive Master's programs usually want 155+. PhD programs (especially STEM) often require 160+. Check your target university's average admitted scores on their website."
+        ],
+        [
+          "Is the GRE easier at home or at a test center?",
+          "Same difficulty. The format and questions are identical. Choose based on comfort: at-home suits students with test anxiety; test-center suits those who prefer a formal environment."
+        ],
+        [
+          "How much time should I spend on each Quant question?",
+          "On average, 1.5–2 minutes. Easy questions should take <1.5 min; hard questions up to 2.5 min. If you're stuck beyond 2 min, guess and move on."
+        ],
+        [
+          "Do universities see all my GRE scores or just the highest?",
+          "Universities typically see all scores unless you ask ETS to hide older ones. Most schools focus on the highest. A dramatic improvement (e.g., 145 → 160) can actually strengthen your app."
+        ],
+        [
+          "Can I use a calculator on the GRE?",
+          "An on-screen calculator is provided for Quant. However, many problems are faster solved mentally. Practice both approaches."
+        ],
+        [
+          "What does 'adaptive by section' mean for my strategy?",
+          "If you do well on Verbal 1, Verbal 2 is harder (but has a higher score ceiling). Don't panic if V2 feels tougher—it's a good sign. Aim for consistent performance across both sections."
+        ],
+        [
+          "How long are reading passages on the new GRE?",
+          "Passages are 400–650 words. Some shorter 'statement and question' passages appear (~100 words), but most are medium-to-long. Practice reading academic texts for focus."
+        ]
       ]
     },
     {
@@ -9862,34 +12426,505 @@
       "id": "study-in-singapore-indian-students-2026",
       "tag": "Study Abroad",
       "date": "2026",
-      "title": "Study in Singapore for Indian Students 2026: NUS, NTU, Fees & Student Pass",
-      "excerpt": "Everything Indian students need to know about studying in Singapore — NUS and NTU rankings, tuition fees, the Student's Pass, living costs, and work-after-graduation rights.",
-      "kw": "study in singapore for indian students, singapore student visa, nus ntu fees for indians, singapore student pass 2026, cost of studying in singapore",
+      "title": "Study in Singapore: Complete Cost Guide for Indian Students, Work Pass & Best Universities 2026",
+      "excerpt": "Singapore offers exceptional education quality, world-class universities, and a clear pathway to work visas and permanent residence. Discover complete tuition costs, living expenses, scholarships, and why Singapore is ideal for Indian students.",
+      "kw": "study in Singapore cost 2026, Singapore tuition fees Indian students, NUS fees, NTU fees, Singapore living expenses, Singapore work pass, Singapore graduate employment pass, Singapore scholarships, Singapore permanent residence",
       "sections": [
         {
-          "h": "Why Singapore",
-          "body": "Singapore hosts two consistently top-20 global universities: NUS (National University of Singapore) and NTU (Nanyang Technological University). English is the medium of instruction, there is no language barrier, the city is extremely safe, and its location makes it a hub for internships and careers across Southeast Asia. The government-funded scholarship system is generous for top students."
+          "h": "Why Singapore for Indian Students?",
+          "body": "Singapore has emerged as Asia's premier study destination, combining world-class education with exceptional career prospects and immigration pathways. For Indian students, Singapore offers a unique advantage: it's a multicultural hub with a significant Indian diaspora, excellent job market for graduates, and clear post-study work visa options leading to permanent residence.\n\nUnlike some countries with quota restrictions, Singapore actively seeks skilled international talent. The city-state boasts two universities in the global top 20 (NUS and NTU), a robust tech and finance sector, and extremely high graduate employment rates."
         },
         {
-          "h": "Tuition fees 2026",
-          "body": "International tuition: NUS and NTU charge roughly SGD 17,000–35,000 per year depending on the programme. Engineering, Computing and Business are at the higher end; Arts and Social Sciences lower. The Singapore government offers a tuition grant scheme that lowers fees significantly in exchange for a 3-year work commitment in Singapore post-graduation — many Indian students take this."
+          "h": "Singapore Tuition Fees: NUS, NTU & Private Universities",
+          "body": "Singapore distinguishes between citizens/PRs and international students, with international tuition being 2-3 times higher. However, the quality-to-cost ratio remains excellent.",
+          "table": {
+            "headers": [
+              "University",
+              "Program Type",
+              "Annual Tuition (SGD)",
+              "Annual Tuition (INR)",
+              "Total 2-Year (INR)"
+            ],
+            "rows": [
+              [
+                "NUS (Rank #8 Global)",
+                "Master's - STEM/Engineering",
+                "SGD 30,000-38,000",
+                "₹17,85,000-₹22,65,000",
+                "₹35,70,000-₹45,30,000"
+              ],
+              [
+                "NUS",
+                "Master's - Business/MBA",
+                "SGD 40,000-55,000",
+                "₹23,80,000-₹32,75,000",
+                "₹47,60,000-₹65,50,000"
+              ],
+              [
+                "NUS",
+                "Master's - Arts/Social Sciences",
+                "SGD 25,000-30,000",
+                "₹14,90,000-₹17,85,000",
+                "₹29,80,000-₹35,70,000"
+              ],
+              [
+                "NTU (Rank #40 Global)",
+                "Master's - STEM",
+                "SGD 27,000-32,000",
+                "₹16,05,000-₹19,05,000",
+                "₹32,10,000-₹38,10,000"
+              ],
+              [
+                "NTU",
+                "Master's - Business",
+                "SGD 32,000-42,000",
+                "₹19,05,000-₹25,00,000",
+                "₹38,10,000-₹50,00,000"
+              ],
+              [
+                "Private Universities (Kaplan, SIM)",
+                "Master's - All Fields",
+                "SGD 15,000-25,000",
+                "₹8,93,000-₹14,90,000",
+                "₹17,86,000-₹29,80,000"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "money",
+            "text": "NUS/NTU tuition is fixed regardless of program length (most Master's are 1-1.5 years), making the cost-per-month one of Asia's lowest for top-ranked universities."
+          }
         },
         {
-          "h": "Living costs",
-          "body": "Budget SGD 1,200–1,800/month for living. On-campus housing is significantly cheaper (SGD 350–700/month). Singapore is expensive but transport is world-class and affordable. All in: SGD 25,000–45,000 per year (roughly ₹16–28 lakh)."
+          "h": "Living Expenses in Singapore: Monthly Breakdown",
+          "body": "Singapore is expensive compared to India, but living costs for students are structured and predictable. Your monthly expenses depend on accommodation choice and lifestyle.",
+          "table": {
+            "headers": [
+              "Expense Category",
+              "Budget (SGD/month)",
+              "Standard (SGD/month)",
+              "Comfortable (SGD/month)",
+              "Converted (INR)"
+            ],
+            "rows": [
+              [
+                "Hostel/Shared Room",
+                "SGD 500-700",
+                "SGD 700-900",
+                "SGD 900-1,200",
+                "₹29,750-71,400"
+              ],
+              [
+                "Food (Hawker + Groceries)",
+                "SGD 300-450",
+                "SGD 450-600",
+                "SGD 600-800",
+                "₹17,850-47,600"
+              ],
+              [
+                "Transport (MRT Pass)",
+                "SGD 70-100",
+                "SGD 100-150",
+                "SGD 100-150",
+                "₹4,180-8,930"
+              ],
+              [
+                "Utilities & Internet",
+                "SGD 30-50",
+                "SGD 50-80",
+                "SGD 80-120",
+                "₹1,785-7,144"
+              ],
+              [
+                "Entertainment & Dining Out",
+                "SGD 100-150",
+                "SGD 200-300",
+                "SGD 400-600",
+                "₹5,965-35,716"
+              ],
+              [
+                "TOTAL MONTHLY",
+                "SGD 1,000-1,450",
+                "SGD 1,500-2,130",
+                "SGD 2,180-2,870",
+                "₹59,650-₹1,70,580"
+              ]
+            ]
+          }
         },
         {
-          "h": "Student's Pass (visa)",
-          "body": "You apply for a Student's Pass through ICA (Immigration and Checkpoints Authority) after receiving an offer. Processing takes 4–8 weeks. You need proof of enrolment, financial ability, and a medical examination. The pass is tied to your programme duration."
+          "h": "Total Cost for Master's in Singapore: Complete 1.5-Year Breakdown",
+          "body": "Most Master's programs in Singapore are 1-1.5 years (shorter than UK/Ireland/USA), which reduces total living costs significantly.",
+          "table": {
+            "headers": [
+              "Program & University",
+              "Tuition (SGD)",
+              "Living (1.5 Years)",
+              "Total SGD",
+              "Total INR",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "NUS Master's STEM",
+                "SGD 34,000",
+                "SGD 22,500",
+                "SGD 56,500",
+                "₹33,64,500",
+                "12 months study + 6 months job search"
+              ],
+              [
+                "NUS MBA",
+                "SGD 50,000",
+                "SGD 22,500",
+                "SGD 72,500",
+                "₹43,17,500",
+                "Premium program, excellent placements"
+              ],
+              [
+                "NTU Master's STEM",
+                "SGD 30,000",
+                "SGD 22,500",
+                "SGD 52,500",
+                "₹31,27,500",
+                "Slightly lower fees than NUS"
+              ],
+              [
+                "Private University Master's",
+                "SGD 20,000",
+                "SGD 22,500",
+                "SGD 42,500",
+                "₹25,29,000",
+                "Budget option, similar quality"
+              ],
+              [
+                "NUS + Internship Salary (offset)",
+                "SGD 34,000",
+                "SGD 8,000 net",
+                "SGD 42,000",
+                "₹24,99,000",
+                "Many students earn SGD 1,500-2,500/month"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "1.5-year programs = 40% lower living costs than 2-year Master's. Combined with part-time work/internships, total cost often falls to ₹25-40 lakhs for NUS/NTU."
+          }
         },
         {
-          "h": "Work rights and PR pathway",
-          "body": "Full-time work during the semester is not permitted for most international students. Part-time work (up to 16 hours/week during term) is allowed. After graduation, the Employment Pass or Tech.Pass lets high-skilled graduates work in Singapore. PR is possible after 2–3 years of employment, though the path is competitive."
+          "h": "Scholarships & Sponsorships for Indian Students",
+          "body": "Singapore actively funds international students through competitive scholarships and sponsorship schemes, especially in STEM and strategic fields.",
+          "bullets": [
+            "**Temasek Foundation Scholarships**: Covers full tuition + monthly stipend (highly competitive, ~50 seats/year)",
+            "**NUS Research Scholarships**: Full funding for research-based Master's (MS by Research), priority for STEM",
+            "**NTU Graduate Scholarships**: 10-30% tuition waiver for international students with strong academics",
+            "**Ministry of Education (MoE) Scholarships**: Government-funded for select programs in priority sectors",
+            "**Company Sponsorships**: Tech companies (Google, Meta, Grab, GovTech) sponsor employees for part-time Master's",
+            "**Asian Development Bank (ADB) Scholarships**: For development-related Master's programs",
+            "**Part-time Work**: Students can work 16-20 hours/week during term + full-time during breaks, earning SGD 15-20/hour"
+          ]
         },
         {
-          "h": "English score requirements",
-          "body": "NUS and NTU accept IELTS (typically 6.0–6.5) or TOEFL (85–90). Many Indian students with CBSE/ICSE schooling get waived. Practise free on LandingPrep and use the free college predictor to shortlist Singapore programmes matching your profile."
+          "h": "Work Opportunities During & After Master's",
+          "body": "Singapore is one of the most generous countries for student work and post-study employment. Part-time work is actively encouraged and post-study work visas are straightforward.",
+          "steps": [
+            "During study: Register with MOM (Ministry of Manpower) for part-time work permit—approval is routine",
+            "Work 16-20 hours/week during term time, full-time during breaks (December, May-June, August)",
+            "Typical part-time wages: SGD 15-20/hour = SGD 960-1,280/week = SGD 3,840-5,120/month (nearly offset living costs)",
+            "Upon graduation: Apply for Employment Pass (EP) with your employer—most graduates transition smoothly",
+            "EP valid for 2-5 years (renewable), salary minimum SGD 4,500-5,000/month required",
+            "After 2-3 years work experience, apply for Permanent Residence (PR)—many Indian graduates succeed"
+          ],
+          "callout": {
+            "type": "tip",
+            "text": "Internship reality: Most Master's students land 3-6 month internships (SGD 1,500-2,500/month) that count towards EP salary requirements later."
+          }
+        },
+        {
+          "h": "Singapore Graduate Employment Pass: Your Work Visa",
+          "body": "After your Master's, Singapore offers the Graduate Employment Pass (GEP), a straightforward pathway to employment and eventual PR.\n\n**GEP Requirements:**\n- Bachelor's or higher degree from recognized university\n- Minimum monthly salary: No fixed limit, but EP sponsors need SGD 4,500+ (varies by qualification)\n- Employer sponsorship required (not all employers sponsor; tech/finance/consulting firms routinely do)\n\n**Timeline:** From graduation to EP approval, typically 2-4 weeks. Many graduates are employed before graduation.\n\n**Permanent Residence (PR):** After 2 continuous years with EP, you can apply for PR. Indian professionals have high approval rates (60-70% depending on sector). PR allows you to stay indefinitely, sponsor family members, and eventually apply for citizenship (if desired).",
+          "table": {
+            "headers": [
+              "Visa Type",
+              "Duration",
+              "Work Rights",
+              "PR Pathway",
+              "Typical Timeline"
+            ],
+            "rows": [
+              [
+                "Student Pass (during study)",
+                "1.5-3 years",
+                "Part-time only (16h/week)",
+                "N/A",
+                "Duration of course"
+              ],
+              [
+                "Employment Pass (EP)",
+                "2-5 years",
+                "Full-time, any company (no sponsor change fee)",
+                "Yes, after 2 years",
+                "2-4 weeks approval"
+              ],
+              [
+                "Permanent Residence (PR)",
+                "Indefinite",
+                "Full-time, own business, unrestricted",
+                "Citizenship eligible after 2 years",
+                "2-3 years after EP"
+              ],
+              [
+                "Singapore Citizenship",
+                "Lifetime",
+                "All rights of citizen",
+                "Final status",
+                "5+ years typically"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Top Universities in Singapore & Their Strengths",
+          "body": "Singapore has two globally top-ranked universities and several strong private institutions. Which one suits you depends on field, budget, and career goals.",
+          "table": {
+            "headers": [
+              "University",
+              "Global Rank",
+              "Strengths for Indian Students",
+              "Most Popular Master's",
+              "Scholarship Rate"
+            ],
+            "rows": [
+              [
+                "National University of Singapore (NUS)",
+                "#8 globally",
+                "Largest Indian community, strongest placements, research opportunities",
+                "CS, AI, Engineering, MBA, Finance",
+                "15-20% international students get aid"
+              ],
+              [
+                "Nanyang Technological University (NTU)",
+                "#40 globally",
+                "Engineering excellence, AI focus, growing tech hub",
+                "STEM, Data Science, Engineering, Business",
+                "10-15% scholarship rate"
+              ],
+              [
+                "Kaplan Singapore",
+                "#N/A (Affiliated with UK unis)",
+                "Budget-friendly, flexible schedule, good industry connections",
+                "BBA, MBA, Accounting, Business",
+                "0-5% scholarships available"
+              ],
+              [
+                "SIM (Singapore Institute of Management)",
+                "#N/A (Dual awards UK)",
+                "Cost-effective, working professionals popular, flexible",
+                "MBA, Finance, IT",
+                "Minimal scholarships"
+              ],
+              [
+                "INSEAD",
+                "#2 MBA globally",
+                "Elite MBA, very expensive (SGD 180,000 total), 1-year program",
+                "MBA only",
+                "Rare, merit-based full rides"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Admission Requirements & Application Timeline",
+          "body": "Singapore universities have streamlined admissions for Indian students. Requirements are clear and processing is fast.",
+          "bullets": [
+            "**Bachelor's Degree**: 60% or above aggregate from recognized Indian university (Delhi, IIT, BITS, VIT etc.)",
+            "**English Proficiency**: IELTS 6.5+ or TOEFL 90+ (some programs flexible, especially for Indian English-medium graduates)",
+            "**GMAT/GRE**: Not always required but helpful for competitive programs (MBA needs 600+, CS/Engineering needs 320+)",
+            "**Work Experience**: 2-3 years preferred for MBA/specialized Master's, optional for fresh graduates",
+            "**Statement of Purpose & References**: 2-3 strong recommendation letters required",
+            "**Interview**: Many programs conduct video interviews for shortlisted candidates",
+            "**Application Timeline**: Submit Aug-Oct for Jan/Aug intake (most accept both)"
+          ]
+        },
+        {
+          "h": "Student Visa & Other Costs",
+          "body": "Beyond tuition and living, budget for visa, insurance, and administrative fees. These are typically small but important.",
+          "table": {
+            "headers": [
+              "Expense",
+              "Cost (SGD)",
+              "Cost (INR)",
+              "When Payable",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "Student Pass Application",
+                "SGD 0-20",
+                "₹0-1,193",
+                "On arrival",
+                "Some universities process free"
+              ],
+              [
+                "Accommodation Booking Deposit",
+                "SGD 500-1,000",
+                "₹29,750-59,500",
+                "Before arrival",
+                "Most returned on check-out"
+              ],
+              [
+                "Health Insurance (mandatory)",
+                "SGD 250/year",
+                "₹14,875",
+                "Annual",
+                "Minimum coverage required"
+              ],
+              [
+                "ICA Registration Fee",
+                "SGD 30-50",
+                "₹1,785-2,975",
+                "One-time",
+                "Immigration & Checkpoints Authority"
+              ],
+              [
+                "University Registration",
+                "SGD 100-300",
+                "₹5,950-17,850",
+                "First semester",
+                "Covers admin, ID card, etc."
+              ],
+              [
+                "Degree Certification",
+                "SGD 50",
+                "₹2,975",
+                "On graduation",
+                "Official transcript/degree copy"
+              ]
+            ]
+          }
+        },
+        {
+          "h": "Singapore vs Other Asia-Pacific Destinations",
+          "body": "How does Singapore stack up against other top study destinations in Asia? Here's the honest comparison.",
+          "table": {
+            "headers": [
+              "Country",
+              "Master's Tuition (1.5 yrs)",
+              "Living Costs (1.5 yrs)",
+              "Total Cost (INR)",
+              "Uni Ranking",
+              "Post-Study Work",
+              "PR Pathway"
+            ],
+            "rows": [
+              [
+                "Singapore (NUS/NTU)",
+                "₹30-45 lakhs",
+                "₹11-18 lakhs",
+                "₹41-63 lakhs",
+                "Top 50 global",
+                "2 years EP + PR after 2 yrs work",
+                "Yes, 60-70% approval"
+              ],
+              [
+                "Hong Kong",
+                "₹32-50 lakhs",
+                "₹15-22 lakhs",
+                "₹47-72 lakhs",
+                "Top 30 global",
+                "1 year IANG, harder PR",
+                "Difficult, 5+ years"
+              ],
+              [
+                "Australia",
+                "₹25-40 lakhs",
+                "₹20-30 lakhs",
+                "₹45-70 lakhs",
+                "Top 50 global",
+                "2-3 years PSW",
+                "Yes, streamlined"
+              ],
+              [
+                "Canada",
+                "₹20-35 lakhs",
+                "₹15-25 lakhs",
+                "₹35-60 lakhs",
+                "Top 50 global",
+                "3 years PGWP",
+                "Yes, most streamlined"
+              ],
+              [
+                "India (IITs/IIIT Delhi)",
+                "₹10-15 lakhs",
+                "₹5-8 lakhs",
+                "₹15-23 lakhs",
+                "Top 200 global",
+                "N/A",
+                "N/A"
+              ]
+            ]
+          },
+          "callout": {
+            "type": "key",
+            "text": "Singapore's advantage: Shortest program (1.5 years), highest graduate employment rate (97%), clearest PR pathway, AND lowest 'time-to-salary' ROI in Asia."
+          }
+        },
+        {
+          "h": "Cost Reduction Strategies: How to Study Singapore Cheaper",
+          "body": "Smart students reduce total costs by 30-40% through strategic choices.",
+          "bullets": [
+            "**Part-time work**: Earn SGD 960-1,280/month, offset 30-40% of living costs—realistic and encouraged",
+            "**Hostel living**: Share rooms drop costs to SGD 500-700/month vs SGD 1,000+ for solo studios",
+            "**Hawker food**: Local hawker centers cost SGD 3-5/meal vs SGD 12-20 for restaurants—students typically spend SGD 300-400/month",
+            "**Internship salary**: 3-6 month internships (SGD 1,500-2,500/month) are standard and nearly cover living costs",
+            "**University scholarships**: Even 15-20% tuition waivers save ₹5-7 lakhs over 1.5 years",
+            "**Research assistantships**: RA jobs on campus pay SGD 10-15/hour for flexible hours",
+            "**Shared accomodation**: Living with 2-3 roommates in 4-bedroom HDB flat reduces rent 40-50%"
+          ]
+        },
+        {
+          "h": "Why Indian Graduates Choose Singapore Long-Term",
+          "body": "Singapore isn't just a study destination—it's a launchpad for long-term careers and PR for many Indian professionals.\n\n**Key reasons:**\n1. **Transparent meritocracy**: No racial/national bias in hiring (unlike some Western countries)\n2. **High salaries**: Fresh graduates earn SGD 4,500-6,500 (₹2.7-3.9 lakhs/month), experienced roles SGD 8,000-12,000+\n3. **PR accessibility**: 60-70% of Master's graduates who work 2-3 years get PR approval\n4. **Cost of living adjusts**: Once you're earning SGD 5,000+, living costs are manageable\n5. **Multicultural environment**: Large Indian diaspora (300,000+ people), temples, restaurants, cultural events\n6. **Regional hub**: Easy travel to Asia, internship opportunities across SE Asia, tech boom\n7. **No language barrier**: English is the official business/education language"
         }
+      ],
+      "faqs": [
+        [
+          "Can Indian students get permanent residence in Singapore after Master's?",
+          "Yes. After graduating with a Master's, work for 2+ continuous years on an Employment Pass, then apply for PR. Approval rates for Indian STEM/finance professionals are 60-70%. The entire process (grad → PR) typically takes 3-4 years."
+        ],
+        [
+          "How much can I earn part-time while studying?",
+          "Part-time wages are SGD 15-20/hour. Working 16 hours/week earns SGD 240-320/week or SGD 960-1,280/month (₹57,000-76,000), which nearly covers living expenses of SGD 1,000-1,500/month."
+        ],
+        [
+          "Is 1.5-year Master's really shorter, or do I lose quality?",
+          "Singapore Master's programs are genuinely 1.5 years of intensive study (semester-based, minimal breaks). You don't lose quality—NUS/NTU maintain world-class standards in shorter timeframes. The tradeoff is less 'relaxation' and more coursework density."
+        ],
+        [
+          "What's the difference between NUS and NTU for Indian students?",
+          "NUS ranks globally #8 (vs NTU #40), has a larger Indian community, and more prestigious placements. NTU focuses on engineering/AI, has slightly lower fees, and faster admission. Both lead to similar career outcomes—choice depends on program match and budget."
+        ],
+        [
+          "Do I need a sponsor to work in Singapore after graduation?",
+          "Yes, you need an employer sponsor for an Employment Pass (EP). However, most multinational companies, tech firms, and finance companies actively hire international Master's graduates—finding a sponsor is straightforward if you have a good GPA and internship experience."
+        ],
+        [
+          "Can I switch employers after getting an EP?",
+          "Yes, you can change employers without penalty or additional cost. Your EP transfers to the new employer. This flexibility makes Singapore attractive—you're not locked to one company."
+        ],
+        [
+          "Is Singapore expensive compared to India?",
+          "Yes, living costs are 3-5x higher than India (₹60,000/month in Singapore vs ₹12,000-20,000 in India). However, salaries are 8-10x higher. A Master's graduate earning SGD 5,000 (₹3 lakhs) in Singapore buys more purchasing power than an INR 50,000 salary in India."
+        ],
+        [
+          "How long does Student Pass approval take?",
+          "1-2 weeks typically. Universities often process it as part of admission. You'll receive a One-Time-Password (OTP) to register online, then collect your pass upon arrival."
+        ],
+        [
+          "Can I study and work part-time at the same time?",
+          "Yes, explicitly allowed. You can work 16-20 hours/week during term time, full-time during breaks. University timetables are structured to allow this—it's normal for students to combine part-time work and studies."
+        ]
       ]
     },
     {
