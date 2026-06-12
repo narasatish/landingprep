@@ -863,7 +863,8 @@ function universityPage(c) {
   const proc = C_PROC[c.country] || [];
   const path = `/university/${c.id}/`;
   const title = `${c.name} — Fees, IELTS/GRE Requirements & Admission 2026 | ${BRAND}`;
-  const desc = `${c.name} (${c.city}, ${c.country}, QS #${c.rank}): tuition ${c.feeNote}, IELTS ${c.ielts}, GRE ${c.gre}, ${c.acceptance}% acceptance. Programs, scholarships, intakes & admission process — free.`;
+  const ranked = typeof c.rank === "number" && c.rank < 1000;
+  const desc = `${c.name} (${c.city}, ${c.country}${ranked ? ", QS #" + c.rank : ""}): tuition ${c.feeNote}, IELTS ${c.ielts}, GRE ${c.gre}, ${c.acceptance}% acceptance. Programs, scholarships, intakes & admission process — free.`;
   const kw = `${c.name.toLowerCase()} admission, ${c.name.toLowerCase()} fees, ${c.name.toLowerCase()} ielts requirement, ${c.name.toLowerCase()} ms requirements, ${c.name.toLowerCase()} acceptance rate, study at ${c.name.toLowerCase()}, ${c.name.toLowerCase()} scholarships`;
   const faqs = [
     { q: `What IELTS score do I need for ${c.name}?`, a: `${c.name} typically requires IELTS ${c.ielts} (TOEFL ${c.toefl}, PTE ${c.pte}). GRE: ${c.gre}.` },
@@ -904,7 +905,7 @@ function universityPage(c) {
   <div class="uni-banner-info">
     <div class="uni-flag">${FLAG[c.country] || "🎓"} ${c.country} · ${esc(c.type)}</div>
     <h1>${esc(c.name)}</h1>
-    <div class="uni-addr">📍 ${esc(c.city)}, ${esc(c.country)}${typeof c.rank === "number" ? ` · QS World Rank #${c.rank}` : ""}${c.natRank && c.natRank !== "N/A" ? ` · #${c.natRank} nationally` : ""}${site ? ` · <a href="https://${site}" target="_blank" rel="noopener">${site}</a>` : ""}</div>
+    <div class="uni-addr">📍 ${esc(c.city)}, ${esc(c.country)}${ranked ? ` · QS World Rank #${c.rank}` : ""}${ranked && c.natRank && c.natRank !== "N/A" ? ` · #${c.natRank} nationally` : ""}${site ? ` · <a href="https://${site}" target="_blank" rel="noopener">${site}</a>` : ""}</div>
   </div>
 </section>
 <section class="uni-stats">
@@ -913,7 +914,7 @@ function universityPage(c) {
   ${stat("IELTS required", c.ielts)}
   ${stat("Intl students", (c.intlPct || "—") + "%")}
   ${stat("Founded", c.founded)}
-  ${typeof c.rank === "number" ? stat("QS World rank", "#" + c.rank) : stat("Type", isCollege ? "College" : "University")}
+  ${ranked ? stat("QS World rank", "#" + c.rank) : stat("Type", isCollege ? "College" : "University")}
 </section>
 <section class="hero" style="padding-top:8px">
   <p class="lead">${c.highlight ? esc(c.highlight) + " " : ""}This guide covers ${c.name}'s courses, fees, English &amp; academic requirements, scholarships, the step-by-step admission process, student-visa and post-study-work rules, and tips to get in — everything in one place.</p>
