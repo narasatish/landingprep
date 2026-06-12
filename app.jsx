@@ -418,22 +418,34 @@ function App() {
   useEffectApp(() => {
     const reveal = (el) => el && el.classList.add("is-visible");
     const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    let io;
-    // setTimeout (not requestAnimationFrame, which is paused in background tabs) so
-    // the setup + fallback ALWAYS run and content is never left hidden.
-    const setup = setTimeout(() => {
+    let io, mo, deb;
+    // Observe (or immediately reveal) every not-yet-revealed .reveal element. Safe to
+    // call repeatedly — already-visible nodes are skipped by the selector.
+    const sweep = () => {
       const els = [...document.querySelectorAll(".reveal:not(.is-visible)")];
+      if (!els.length) return;
       if (reduce || typeof IntersectionObserver === "undefined") { els.forEach(reveal); return; }
-      io = new IntersectionObserver((entries) => {
+      if (!io) io = new IntersectionObserver((entries) => {
         entries.forEach(e => { if (e.isIntersecting) { reveal(e.target); io.unobserve(e.target); } });
       }, { rootMargin: "0px 0px -5% 0px", threshold: 0.05 });
       els.forEach(el => io.observe(el));
-    }, 50);
+    };
+    // setTimeout (not requestAnimationFrame, which is paused in background tabs) so
+    // the setup + fallback ALWAYS run and content is never left hidden.
+    const setup = setTimeout(sweep, 50);
+    // Lazy-loaded screens (blog, colleges) can mount their .reveal cards AFTER the
+    // one-shot fallback fired — which used to leave them hidden until a manual refresh.
+    // A debounced MutationObserver re-sweeps whenever new nodes appear so late content
+    // is always picked up (and revealed immediately if already in view).
+    if (typeof MutationObserver !== "undefined") {
+      mo = new MutationObserver(() => { clearTimeout(deb); deb = setTimeout(sweep, 80); });
+      mo.observe(document.body, { childList: true, subtree: true });
+    }
     // Guaranteed safety net independent of the observer.
     const fallback = setTimeout(() => {
       document.querySelectorAll(".reveal:not(.is-visible)").forEach(reveal);
     }, 1100);
-    return () => { clearTimeout(setup); clearTimeout(fallback); if (io) io.disconnect(); };
+    return () => { clearTimeout(setup); clearTimeout(fallback); clearTimeout(deb); if (io) io.disconnect(); if (mo) mo.disconnect(); };
   }, [view, exam, testCfg]);
 
   const activeExam = exam || exams[0];

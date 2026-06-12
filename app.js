@@ -417,14 +417,15 @@ function App() {
   useEffectApp(() => {
     const reveal = (el) => el && el.classList.add("is-visible");
     const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    let io;
-    const setup = setTimeout(() => {
+    let io, mo, deb;
+    const sweep = () => {
       const els = [...document.querySelectorAll(".reveal:not(.is-visible)")];
+      if (!els.length) return;
       if (reduce || typeof IntersectionObserver === "undefined") {
         els.forEach(reveal);
         return;
       }
-      io = new IntersectionObserver((entries) => {
+      if (!io) io = new IntersectionObserver((entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
             reveal(e.target);
@@ -433,14 +434,24 @@ function App() {
         });
       }, { rootMargin: "0px 0px -5% 0px", threshold: 0.05 });
       els.forEach((el) => io.observe(el));
-    }, 50);
+    };
+    const setup = setTimeout(sweep, 50);
+    if (typeof MutationObserver !== "undefined") {
+      mo = new MutationObserver(() => {
+        clearTimeout(deb);
+        deb = setTimeout(sweep, 80);
+      });
+      mo.observe(document.body, { childList: true, subtree: true });
+    }
     const fallback = setTimeout(() => {
       document.querySelectorAll(".reveal:not(.is-visible)").forEach(reveal);
     }, 1100);
     return () => {
       clearTimeout(setup);
       clearTimeout(fallback);
+      clearTimeout(deb);
       if (io) io.disconnect();
+      if (mo) mo.disconnect();
     };
   }, [view, exam, testCfg]);
   const activeExam = exam || exams[0];

@@ -1949,7 +1949,14 @@ button.send:hover:not(:disabled) { transform: scale(1.08); }
 .seo-card-cta { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 700; color: var(--accent); }
 
 /* ── Rich blog article (neat, step-by-step, FAQ) ── */
-.blg-shell { max-width: 780px; }
+/* Content-site width: uses the page instead of wasting wide side margins. Running
+   prose stays at a comfortable measure; tables/callouts/steps/TOC fill the full width. */
+.blg-shell { max-width: 1000px; }
+.blg-body > .blg-section > p,
+.blg-body > .blg-section > h2,
+.blg-body > .blg-section > h3,
+.blg-body > .blg-section > .blg-bullets,
+.blg-excerpt { max-width: 800px; }
 .blg-head { padding: 8px 0 20px; border-bottom: 1px solid var(--line); margin-bottom: 26px; }
 .blg-tag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); padding: 4px 10px; border-radius: 999px; }
 .blg-head h1 { font-family: var(--serif); font-size: clamp(28px, 4.6vw, 44px); line-height: 1.12; letter-spacing: -0.02em; margin: 14px 0 10px; }
