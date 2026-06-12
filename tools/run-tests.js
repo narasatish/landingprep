@@ -108,7 +108,7 @@ check("all ?v= cache tags share one version", uniq.length === 1, "versions: " + 
 // ── 5. Data & wiring integrity ───────────────────────────────────────────────
 group("Data & wiring");
 const data = read("data.jsx");
-const examIds = [...data.matchAll(/id: *"(ielts|toefl|pte|celpip|duolingo|gre|gmat)"/g)].map(m => m[1]);
+const examIds = [...data.matchAll(/"id": *"(ielts|toefl|pte|celpip|duolingo|gre|gmat)"/g)].map(m => m[1]);
 check("7 exams defined", new Set(examIds).size === 7, examIds.join(","));
 const articleIds = [...read("seo-pages.jsx").matchAll(/id: "([a-z0-9-]+)"/g)].map(m => m[1]);
 check("blog article ids unique", new Set(articleIds).size === articleIds.length, articleIds.length + " ids");
