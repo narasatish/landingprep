@@ -910,14 +910,14 @@ function universityPage(c) {
 </section>
 <section class="uni-stats">
   ${stat("Acceptance rate", c.acceptance + "%")}
-  ${stat("Intl tuition / yr", c.feeNote.replace(/\s*international.*/i, ""))}
+  ${stat("Tuition / yr", typeof c.tuitionUSD === "number" ? "~$" + Math.round(c.tuitionUSD / 1000) + "k" : c.feeNote)}
   ${stat("IELTS required", c.ielts)}
   ${stat("Intl students", (c.intlPct || "—") + "%")}
   ${stat("Founded", c.founded)}
   ${ranked ? stat("QS World rank", "#" + c.rank) : stat("Type", isCollege ? "College" : "University")}
 </section>
 <section class="hero" style="padding-top:8px">
-  <p class="lead">${c.highlight ? esc(c.highlight) + " " : ""}This guide covers ${c.name}'s courses, fees, English &amp; academic requirements, scholarships, the step-by-step admission process, student-visa and post-study-work rules, and tips to get in — everything in one place.</p>
+  <p class="lead">${c.highlight ? esc(c.highlight).replace(/[\s.;]*$/, "") + ". " : ""}This guide covers ${c.name}'s courses, fees, English &amp; academic requirements, scholarships, the step-by-step admission process, student-visa and post-study-work rules, and tips to get in — everything in one place.</p>
   <a class="cta" href="/#/colleges/predictor/${encodeURIComponent(c.country)}">▶ Predict my admission chances (free)</a>
 </section>
 <div class="card">
