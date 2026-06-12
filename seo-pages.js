@@ -1,5 +1,31 @@
 (function() {
   const { useState } = React;
+  const LP_STOP = new Set("the a an and or for to of in on at is are be your you our we 2025 2026 with how what which best top free guide vs your study abroad after international students".split(" "));
+  function LP_terms(a) {
+    const raw = ((a.title || "") + " " + (a.kw || "") + " " + (a.tag || "")).toLowerCase();
+    const set = /* @__PURE__ */ new Set();
+    (raw.match(/[a-z]{3,}/g) || []).forEach((w) => {
+      if (!LP_STOP.has(w)) set.add(w);
+    });
+    return set;
+  }
+  window.LP_relatedArticles = function(article, all, n) {
+    const mine = LP_terms(article);
+    const scored = all.filter((a) => a.id !== article.id).map((a) => {
+      const t = LP_terms(a);
+      let overlap = 0;
+      t.forEach((w) => {
+        if (mine.has(w)) overlap++;
+      });
+      return { a, score: overlap + (a.tag === article.tag ? 0.5 : 0) };
+    }).sort((x, y) => y.score - x.score);
+    let out = scored.filter((s) => s.score > 0).slice(0, n).map((s) => s.a);
+    if (out.length < n) {
+      const have = new Set(out.map((a) => a.id));
+      out = out.concat(all.filter((a) => a.id !== article.id && !have.has(a.id)).slice(0, n - out.length));
+    }
+    return out;
+  };
   const ARTICLES = [
     {
       id: "ielts-vs-toefl",
@@ -214,8 +240,7 @@
     const words = (article.sections || []).reduce((n, s) => n + ((s.body || "") + " " + (s.steps || []).join(" ") + " " + (s.bullets || []).join(" ")).split(/\s+/).length, 0);
     const mins = Math.max(3, Math.round(words / 200));
     const toc = (article.sections || []).filter((s) => s.h);
-    let related = ARTICLES.filter((a) => a.id !== article.id && a.tag === article.tag).slice(0, 3);
-    if (related.length < 3) related = related.concat(ARTICLES.filter((a) => a.id !== article.id && !related.includes(a)).slice(0, 3 - related.length));
+    let related = window.LP_relatedArticles(article, ARTICLES, 3);
     return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "blog", onNav }), /* @__PURE__ */ React.createElement("div", { className: "seo-shell blg-shell" }, /* @__PURE__ */ React.createElement("div", { style: { marginBottom: 18 } }, /* @__PURE__ */ React.createElement("a", { onClick: onBackToIndex, style: { color: "var(--accent)", cursor: "pointer", fontSize: 14, fontWeight: 600 } }, "\u2190 All guides")), /* @__PURE__ */ React.createElement("div", { className: "blg-head" }, /* @__PURE__ */ React.createElement("span", { className: "blg-tag" }, article.tag), /* @__PURE__ */ React.createElement("h1", null, article.title), /* @__PURE__ */ React.createElement("p", { className: "blg-excerpt" }, article.excerpt), /* @__PURE__ */ React.createElement("div", { className: "blg-meta" }, article.date ? /* @__PURE__ */ React.createElement("span", null, article.date) : null, article.date ? /* @__PURE__ */ React.createElement("span", { className: "dot" }, "\xB7") : null, /* @__PURE__ */ React.createElement("span", null, mins, " min read"), /* @__PURE__ */ React.createElement("span", { className: "dot" }, "\xB7"), /* @__PURE__ */ React.createElement("span", null, "LandingPrep"))), toc.length >= 4 && /* @__PURE__ */ React.createElement("nav", { className: "blg-toc" }, /* @__PURE__ */ React.createElement("div", { className: "blg-toc-t" }, "\u{1F4D1} On this page"), /* @__PURE__ */ React.createElement("ol", null, toc.map((s, i) => /* @__PURE__ */ React.createElement("li", { key: i }, /* @__PURE__ */ React.createElement("a", { href: "#" + slugify(s.h) }, s.h))))), /* @__PURE__ */ React.createElement("div", { className: "seo-article-body blg-body" }, (article.sections || []).map((s, i) => /* @__PURE__ */ React.createElement(Section, { key: i, s }))), Array.isArray(article.faqs) && article.faqs.length > 0 && /* @__PURE__ */ React.createElement(Faq, { faqs: article.faqs }), /* @__PURE__ */ React.createElement("div", { className: "blg-cta" }, /* @__PURE__ */ React.createElement("h3", null, "Ready to put this into practice?"), /* @__PURE__ */ React.createElement("p", null, "Take a free mock test, check your eligibility with the College Predictor, or open the Learning Club for model answers \u2014 all 100% free."), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12" }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNav("exams") }, "Free mock tests \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("colleges") }, "Study-abroad tools \u2192"))), related.length > 0 && /* @__PURE__ */ React.createElement("div", { className: "blg-related" }, /* @__PURE__ */ React.createElement("h2", null, "Keep reading"), /* @__PURE__ */ React.createElement("div", { className: "seo-grid" }, related.map((a) => /* @__PURE__ */ React.createElement(
       "div",
       {

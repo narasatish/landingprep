@@ -315,10 +315,12 @@ const EXAM_MOCK = { IELTS: "ielts", TOEFL: "toefl", PTE: "pte", GRE: "gre", GMAT
 function relatedArticles(a) {
   const aKw = new Set(String(a.kw || "").toLowerCase().split(/,\s*/).filter(Boolean));
   const aTitleWords = new Set(a.title.toLowerCase().split(/\W+/).filter((w) => w.length > 4));
+  // Topic overlap (shared countries/exams/keywords) should outweigh a shared generic
+  // tag — so a country-news post recommends related country guides, not random news.
   const score = (p) => {
-    let s = p.tag === a.tag ? 10 : 0;
+    let s = p.tag === a.tag ? 2 : 0;
     for (const k of String(p.kw || "").toLowerCase().split(/,\s*/)) if (k && aKw.has(k)) s += 3;
-    for (const w of p.title.toLowerCase().split(/\W+/)) if (w.length > 4 && aTitleWords.has(w)) s += 1;
+    for (const w of p.title.toLowerCase().split(/\W+/)) if (w.length > 4 && aTitleWords.has(w)) s += 2;
     return s;
   };
   const ranked = BLOG_EXTRA.filter((p) => p.id !== a.id)

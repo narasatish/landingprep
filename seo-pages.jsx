@@ -3,6 +3,32 @@
 (function () {
   const { useState } = React;
 
+  // Topic-relevance "Keep reading": rank other posts by shared significant terms
+  // (countries, exams, themes) in title/keywords/tag — not just identical tag.
+  // So a "Germany visa" post recommends other Germany/Europe posts, a country-news
+  // post recommends related country guides, etc. Falls back to same-tag then recent.
+  const LP_STOP = new Set(("the a an and or for to of in on at is are be your you our we 2025 2026 with how what which best top free guide vs your study abroad after international students").split(" "));
+  function LP_terms(a) {
+    const raw = ((a.title || "") + " " + (a.kw || "") + " " + (a.tag || "")).toLowerCase();
+    const set = new Set();
+    (raw.match(/[a-z]{3,}/g) || []).forEach((w) => { if (!LP_STOP.has(w)) set.add(w); });
+    return set;
+  }
+  window.LP_relatedArticles = function (article, all, n) {
+    const mine = LP_terms(article);
+    const scored = all.filter((a) => a.id !== article.id).map((a) => {
+      const t = LP_terms(a);
+      let overlap = 0; t.forEach((w) => { if (mine.has(w)) overlap++; });
+      return { a, score: overlap + (a.tag === article.tag ? 0.5 : 0) };
+    }).sort((x, y) => y.score - x.score);
+    let out = scored.filter((s) => s.score > 0).slice(0, n).map((s) => s.a);
+    if (out.length < n) {
+      const have = new Set(out.map((a) => a.id));
+      out = out.concat(all.filter((a) => a.id !== article.id && !have.has(a.id)).slice(0, n - out.length));
+    }
+    return out;
+  };
+
   const ARTICLES = [
     {
       id: "ielts-vs-toefl",
@@ -266,8 +292,7 @@
       n + ((s.body || "") + " " + (s.steps || []).join(" ") + " " + (s.bullets || []).join(" ")).split(/\s+/).length, 0);
     const mins = Math.max(3, Math.round(words / 200));
     const toc = (article.sections || []).filter((s) => s.h);
-    let related = ARTICLES.filter((a) => a.id !== article.id && a.tag === article.tag).slice(0, 3);
-    if (related.length < 3) related = related.concat(ARTICLES.filter((a) => a.id !== article.id && !related.includes(a)).slice(0, 3 - related.length));
+    let related = window.LP_relatedArticles(article, ARTICLES, 3);
     return (
       <>
         <window.LP_TopBar current="blog" onNav={onNav} />

@@ -1,6 +1,6 @@
-// LandingPrep service worker — offline support.
+﻿// LandingPrep service worker â€” offline support.
 // Bump CACHE_VERSION on every deploy so clients pick up new assets.
-const CACHE_VERSION = "lp-v232";
+const CACHE_VERSION = "lp-v233";
 const CORE = [
   "./",
   "./index.html",
@@ -26,7 +26,7 @@ self.addEventListener("message", (e) => {
   if (e.data === "skipWaiting") self.skipWaiting();
 });
 
-// Root SPA shell paths only — these are the ONLY navigations that should ever
+// Root SPA shell paths only â€” these are the ONLY navigations that should ever
 // fall back to index.html offline. Static SEO pages (/university/, /compare/,
 // /mock-test/, /study-abroad/, /blog/, etc.) must NEVER be served the app shell
 // or their relative scripts break (the "blank page" bug).
@@ -40,7 +40,7 @@ self.addEventListener("fetch", (e) => {
   const url = new URL(req.url);
   // Only handle same-origin requests; let cross-origin (CDN) pass through.
   if (url.origin !== self.location.origin) return;
-  // NEVER intercept the API — always hit the network so health checks, live
+  // NEVER intercept the API â€” always hit the network so health checks, live
   // content, community and leaderboard are always fresh (no stale cache).
   if (url.pathname.startsWith("/api/")) return;
   // Never cache/serve the service worker script itself through here.
@@ -87,7 +87,7 @@ self.addEventListener("fetch", (e) => {
   );
 });
 
-// ── Web Push: show daily-reminder notifications + handle clicks ──────────────
+// â”€â”€ Web Push: show daily-reminder notifications + handle clicks â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 self.addEventListener("push", (event) => {
   let data = {};
   try { data = event.data ? event.data.json() : {}; } catch (e) {}
