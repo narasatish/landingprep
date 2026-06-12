@@ -608,63 +608,114 @@ function countryUniPage(id) {
   const title = `Top Universities in ${d.name} for International Students 2026 — Fees, IELTS & Intakes | ${BRAND}`;
   const desc = `Top universities in ${d.name} for Master's & MBA: IELTS ${d.ielts}, tuition ${d.fee}, intakes ${d.intake}. Free college predictor, score requirements & admission process.`;
   const kw = `top universities in ${d.name.toLowerCase()}, study in ${d.name.toLowerCase()} for indian students, best universities for ms in ${d.name.toLowerCase()}, ${d.name.toLowerCase()} university fees for international students, ${d.name.toLowerCase()} ielts requirement, universities in ${d.name.toLowerCase()} admission process free, cheapest universities in ${d.name.toLowerCase()}`;
-  const ciFaq = COUNTRY_DATA.find((x) => x.id === id);
+  const ci = COUNTRY_DATA.find((x) => x.id === id) || {};
+  const has = (k) => ci[k] != null && ci[k] !== "";
+  const arr = (v) => Array.isArray(v) ? v : (v == null || v === "" ? [] : [v]);
+  const plan = arr(ci.immigrationPlan).length ? arr(ci.immigrationPlan) : (typeof ci.immigrationPlan === "string" ? ci.immigrationPlan.split(/\s*(?:→|->)\s*/).filter(Boolean) : []);
+  // Our own university pages for this country → real internal links (id mapped via d.name).
+  const ourUnis = COLLEGES.filter((c) => c.country === d.name).sort((a, b) => (typeof a.rank === "number" ? a.rank : 9999) - (typeof b.rank === "number" ? b.rank : 9999)).slice(0, 14);
+  const tuition = has("avgTuition") ? ci.avgTuition : d.fee;
+  const living = has("avgLiving") ? ci.avgLiving : "Varies by city";
+  const stat = (label, val) => `<div class="uni-stat"><div class="uni-stat-v">${val}</div><div class="uni-stat-l">${label}</div></div>`;
   const faqs = [
-    { q: `What IELTS score do I need for universities in ${d.name}?`, a: `Most universities in ${d.name} require IELTS ${d.ielts} overall for postgraduate admission. Use the free LandingPrep College Predictor to match your exact score to universities.` },
-    { q: `How much does it cost to study in ${d.name}?`, a: `International tuition is typically ${d.fee}, plus living costs. ${d.name === "Germany" ? "Public universities are largely tuition-free." : "Scholarships can offset a large part of this."}` },
-    { q: `When are the intakes in ${d.name}?`, a: `The main intakes in ${d.name} are: ${d.intake}.` },
-    { q: `Can I work and settle in ${d.name} after studying?`, a: ciFaq ? `Yes — ${d.name} offers ${ciFaq.postStudyWork}. The pathway is ${ciFaq.immigration} Permanent residence: ${ciFaq.prTimeline}.` : `Yes — ${d.name} offers post-study work options that can lead to permanent residence. See the LandingPrep Country Guide for the full roadmap.` },
-    { q: `How do I shortlist universities and check my chances in ${d.name}?`, a: `Use the free LandingPrep Profile Evaluation and College Predictor: enter your test score, GPA and budget to get Safe, Target and Reach universities in ${d.name}, plus matching scholarships and the admission process.` },
-    { q: `What is the student-visa success rate for ${d.name}?`, a: ciFaq ? `${d.name} has an indicative student-visa success rate of about ${ciFaq.visaSuccess}%. ${ciFaq.visaNote} Strong proof of funds and a genuine study plan matter most.` : `Student-visa success in ${d.name} depends on your profile — strong proof of funds and a genuine study plan matter most.` },
+    { q: `What IELTS score do I need for universities in ${d.name}?`, a: `Most universities in ${d.name} require IELTS ${d.ielts} overall for postgraduate admission, with some competitive programmes asking for 7.0+. Use the free LandingPrep College Predictor to match your exact score to universities.` },
+    { q: `How much does it cost to study in ${d.name}?`, a: `International tuition is typically ${tuition}, plus living costs of about ${living}. ${d.name === "Germany" ? "Public universities are largely tuition-free." : "Scholarships can offset a large part of this."}` },
+    { q: `When are the intakes in ${d.name}?`, a: `The main intakes in ${d.name} are: ${(has("intakes") ? ci.intakes.join(", ") : d.intake)}. Apply 4–6 months ahead for scholarships and housing.` },
+    { q: `Can I work and settle in ${d.name} after studying?`, a: has("postStudyWork") ? `Yes — ${d.name} offers ${ci.postStudyWork}. Immigration pathway: ${ci.immigration} Permanent residence: ${ci.prTimeline}.` : `Yes — ${d.name} offers post-study work options that can lead to permanent residence. See the LandingPrep Country Guide for the full roadmap.` },
+    { q: `What is the student-visa success rate for ${d.name}?`, a: has("visaSuccess") ? `${d.name} has an indicative student-visa success rate of about ${ci.visaSuccess}%. ${ci.visaNote} Strong proof of funds and a genuine study plan matter most.` : `Student-visa success in ${d.name} depends on your profile — strong proof of funds and a genuine study plan matter most.` },
+    { q: `How do I apply to universities in ${d.name} from my country?`, a: `Shortlist universities with the free Predictor, take a free IELTS/TOEFL/PTE mock to hit the required score, prepare your SOP, LORs and transcripts, apply online with the fee, then apply for the student visa with your offer and proof of funds.` },
+    { q: `Which are the best universities in ${d.name} for international students?`, a: `Top picks include ${ourUnis.slice(0, 5).map((u) => u.name).join(", ") || d.unis.slice(0, 5).join(", ")}. Open any university below for fees, requirements and the full admission process.` },
   ];
   const inner = `
-<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Top universities in ${d.name}</p>
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › ${d.name}</p>
 <section class="hero">
   <div class="badges"><span class="badge">${d.flag} ${d.name}</span><span class="badge">2026 intake</span><span class="badge">Free predictor</span></div>
-  <h1>Top Universities in ${d.name} for International Students (2026)</h1>
-  <p class="lead">IELTS ${d.ielts} · Tuition ${d.fee} · Intakes ${d.intake}. See which universities fit your scores and budget with the free College Predictor.</p>
+  <h1>Study in ${d.name}: Top Universities, Fees, Visa &amp; PR Guide (2026)</h1>
+  <p class="lead">${has("tagline") ? esc(ci.tagline) + ". " : ""}Everything to plan your move to ${d.name} — top universities, tuition &amp; living costs, English requirements, how to apply, student visa, post-study work and the PR pathway.</p>
   <a class="cta" href="/#/colleges">▶ Predict my colleges (free)</a>
 </section>
+<section class="uni-stats">
+  ${stat("Avg tuition / yr", esc(tuition))}
+  ${stat("Living cost / yr", esc(living))}
+  ${has("visaSuccess") ? stat("Visa success", "≈" + ci.visaSuccess + "%") : stat("IELTS", d.ielts)}
+  ${stat("English (IELTS)", d.ielts)}
+  ${stat("Intakes", (has("intakes") ? ci.intakes.length : (d.intake.split(",").length)) + "/yr")}
+  ${has("postStudyWork") ? stat("Post-study work", "✓") : stat("Free predictor", "✓")}
+</section>
+${has("whyStudy") ? `<div class="card">
+  <h2>🌟 Why study in ${d.name}?</h2>
+  <ul class="bcheck">${ci.whyStudy.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+</div>` : ""}
 <div class="card">
-  <h2>Top universities in ${d.name}</h2>
-  <ul>${d.unis.map(u => `<li><strong>${u}</strong></li>`).join("")}</ul>
-  <p>Each offers strong international support, work opportunities and globally-recognised degrees. Use the free predictor to see your Safe / Target / Reach matches with fees, intakes and the full admission process.</p>
+  <h2>🏛️ Top universities in ${d.name}</h2>
+  ${ourUnis.length ? `<p>Open any university for full fees, IELTS/GRE requirements, scholarships and the step-by-step admission process:</p>
+  <ul class="bcheck">${ourUnis.map((u) => `<li><a href="/university/${u.id}/"><strong>${esc(u.name)}</strong></a> — ${esc(u.city)}${typeof u.rank === "number" && u.rank < 1000 ? ` · QS #${u.rank}` : ""} · IELTS ${u.ielts} · ${esc((u.feeNote || "").replace(/\s*international.*/i, ""))}</li>`).join("")}</ul>` : `<ul class="bcheck">${d.unis.map((u) => `<li><strong>${esc(u)}</strong></li>`).join("")}</ul>`}
+  <p class="note">Use the free <a href="/#/colleges">College Predictor</a> to see your Safe / Target / Reach matches.</p>
+</div>
+${has("popularPrograms") ? `<div class="card">
+  <h2>📚 Popular courses in ${d.name}</h2>
+  <ul>${ci.popularPrograms.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+</div>` : ""}
+<div class="card">
+  <h2>💰 Cost of studying in ${d.name}</h2>
+  <table style="width:100%;border-collapse:collapse" class="uni-table">
+    <tr><td><strong>Tuition (international)</strong></td><td>${esc(tuition)}</td></tr>
+    <tr><td><strong>Living costs (est.)</strong></td><td>${esc(living)}</td></tr>
+    <tr><td><strong>English test</strong></td><td>IELTS ${d.ielts} / TOEFL / PTE</td></tr>
+    <tr><td><strong>Intakes</strong></td><td>${has("intakes") ? ci.intakes.join(", ") : d.intake}</td></tr>
+  </table>
+  <p class="note">Budget for tuition + living + health insurance + the visa fee. Compare funding with the free <a href="/#/colleges">scholarship finder</a>.</p>
 </div>
 <div class="card">
-  <h2>Admission essentials for ${d.name}</h2>
-  <ul>
-    <li><strong>English test:</strong> IELTS ${d.ielts} (or equivalent TOEFL/PTE).</li>
-    <li><strong>Tuition:</strong> ${d.fee} for international students.</li>
-    <li><strong>Intakes:</strong> ${d.intake}.</li>
-    <li><strong>Documents:</strong> SOP, 2–3 LORs, transcripts, CV, and a strong Statement of Purpose — build yours free with our SOP tool.</li>
+  <h2>📝 How to apply to ${d.name} (step by step)</h2>
+  <ol class="bsteps">
+    <li><strong>Shortlist universities.</strong> Use the free Predictor with your scores, GPA and budget to get Safe / Target / Reach matches in ${d.name}.</li>
+    <li><strong>Hit the English score.</strong> Take a free full-length <a href="/mock-test/ielts/">IELTS</a> / <a href="/mock-test/pte/">PTE</a> / <a href="/mock-test/toefl/">TOEFL</a> mock to find your gap, then book the real test.</li>
+    <li><strong>Prepare documents.</strong> SOP, 2–3 LORs, transcripts, CV and passport — see the free <a href="/blog/how-to-write-sop/">SOP guide</a>.</li>
+    <li><strong>Apply online &amp; pay the fee.</strong> Submit before the deadline (apply early for scholarships).</li>
+    <li><strong>Accept your offer &amp; apply for the student visa</strong> with proof of funds and your offer letter.</li>
+  </ol>
+</div>
+${(has("visaSuccess") || has("postStudyWork")) ? `<div class="card">
+  <h2>🛂 Student visa, post-study work &amp; PR in ${d.name}</h2>
+  <ul class="bcheck">
+    ${has("visaSuccess") ? `<li><strong>Student-visa success rate:</strong> ≈${ci.visaSuccess}% — ${esc(ci.visaNote || "")}</li>` : ""}
+    ${has("visaTypes") ? `<li><strong>Visa types:</strong> ${arr(ci.visaTypes).map(esc).join("; ")}</li>` : ""}
+    ${has("postStudyWork") ? `<li><strong>Post-study work:</strong> ${esc(ci.postStudyWork)}</li>` : ""}
+    ${has("immigration") ? `<li><strong>Immigration pathway:</strong> ${esc(ci.immigration)}</li>` : ""}
+    ${has("settlement") ? `<li><strong>Settlement / PR:</strong> ${esc(ci.settlement)}${has("prTimeline") ? ` (${esc(ci.prTimeline)})` : ""}</li>` : ""}
+  </ul>
+  ${plan.length ? `<h3>PR pathway, step by step</h3><ol class="bsteps">${plan.map((s) => `<li>${esc(s)}</li>`).join("")}</ol>` : ""}
+</div>` : ""}
+${has("topCities") ? `<div class="card">
+  <h2>🏙️ Top student cities in ${d.name}</h2>
+  <p>${arr(ci.topCities).map(esc).join(" · ")}</p>
+</div>` : ""}
+${has("changes") ? `<div class="card">
+  <h2>🆕 Recent changes (2024–26)</h2>
+  <ul class="bcheck">${arr(ci.changes).map((c) => `<li><strong>${esc(c.d || "")}:</strong> ${esc(c.t || c)}</li>`).join("")}</ul>
+</div>` : ""}
+<div class="card uni-tips">
+  <h2>🎯 Tips to get admission &amp; visa in ${d.name}</h2>
+  <ul class="bcheck">
+    <li><strong>Apply early.</strong> Submitting 4–6 months ahead keeps scholarships and on-campus housing open.</li>
+    <li><strong>Clear the English score first.</strong> Most ${d.name} programmes need IELTS ${d.ielts} — take a free mock to find your weakest section before booking.</li>
+    <li><strong>Show clear, stable funds.</strong> Visa officers want genuine proof of funds covering tuition (${tuition}) plus living costs.</li>
+    <li><strong>Write a tailored SOP.</strong> Name the exact programme and university — generic essays are the #1 reason strong profiles get rejected.</li>
+    <li><strong>Pick the right intake.</strong> Main intakes: ${has("intakes") ? ci.intakes.join(" & ") : d.intake}.</li>
   </ul>
 </div>
-${(() => {
-  const ci = COUNTRY_DATA.find(x => x.id === id);
-  if (!ci) return "";
-  return `<div class="card">
-  <h2>Visa, immigration &amp; settlement in ${d.name}</h2>
-  <ul>
-    <li><strong>Student-visa success rate:</strong> ≈${ci.visaSuccess}% — ${ci.visaNote}</li>
-    <li><strong>Post-study work:</strong> ${ci.postStudyWork}</li>
-    <li><strong>Immigration pathway:</strong> ${ci.immigration}</li>
-    <li><strong>Settlement / PR:</strong> ${ci.settlement} (${ci.prTimeline})</li>
-    <li><strong>Cost of living:</strong> ${ci.avgLiving}</li>
-  </ul>
-  <h3>Recent changes (2024–26)</h3>
-  <ul>${ci.changes.map(c => `<li><strong>${c.d}:</strong> ${c.t}</li>`).join("")}</ul>
-</div>`;
-})()}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🔮 Free College Predictor`, href: `/#/colleges` },
-  { label: `📝 Free SOP Builder & Checker`, href: `/#/colleges` },
-  { label: `Free IELTS mock test`, href: `/mock-test/ielts/` },
-  { label: `IELTS score for ${d.name}`, href: `/eligibility/` },
+  { label: `💸 Scholarships for ${d.name}`, href: `/#/colleges` },
+  { label: `🎯 Free IELTS mock test`, href: `/mock-test/ielts/` },
+  { label: `✍️ Free SOP guide & samples`, href: `/blog/how-to-write-sop/` },
+  { label: `📊 English score requirements`, href: `/eligibility/` },
 ])}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     faqJsonLd(faqs),
-    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: `Top universities in ${d.name}`, path }]),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: `Study in ${d.name}`, path }]),
   ] }) + shell(inner));
 }
 
