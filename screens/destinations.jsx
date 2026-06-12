@@ -26,8 +26,23 @@
   // ── Destinations: per-country profile (controlled by the page country) ─────
   function DestinationsPanel({ onNav, country, onFindColleges }) {
     const list = COUNTRIES();
-    const c = list.find(x => x.name === country) || list.find(x => x.name === "USA") || list[0];
+    let c = list.find(x => x.name === country) || list.find(x => x.name === "USA") || list[0];
     if (!c) return <div className="tool-card"><p className="tool-sub">Loading destinations…</p></div>;
+    // Bulletproof: coerce array-expected fields so any country-data shape (e.g. a newer
+    // country whose immigrationPlan is a string) can NEVER crash this page.
+    const _arr = (v) => Array.isArray(v) ? v : (v == null || v === "" ? [] : [v]);
+    // immigrationPlan may be a string roadmap ("step → step → step") on newer countries —
+    // split it into steps so it renders like the array-based ones.
+    const _plan = (v) => Array.isArray(v) ? v : (typeof v === "string" && v.trim() ? v.split(/\s*(?:→|->)\s*/).map(s => s.trim()).filter(Boolean) : []);
+    c = Object.assign({}, c, {
+      whyStudy: _arr(c.whyStudy),
+      intakes: _arr(c.intakes),
+      topCities: _arr(c.topCities),
+      visaTypes: _arr(c.visaTypes),
+      immigrationPlan: _plan(c.immigrationPlan),
+      changes: _arr(c.changes),
+      popularPrograms: _arr(c.popularPrograms),
+    });
     const unis = COLLEGES().filter(u => u.country === c.name).sort((a, b) => a.rank - b.rank).slice(0, 8);
     const proc = (window.LP_COLLEGE_PROCESS || {})[c.name] || [];
     const ci = (window.LP_COLLEGE_COUNTRY_INFO || {})[c.name] || {};
