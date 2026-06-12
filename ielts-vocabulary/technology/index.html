@@ -65,6 +65,13 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 .uni-flag{font-size:13px;font-weight:700;opacity:.92;text-transform:uppercase;letter-spacing:.04em}
 .uni-addr{font-size:14px;opacity:.95}.uni-addr a{color:#fff;text-decoration:underline}
 @media(max-width:560px){.uni-banner{flex-direction:column;text-align:center;align-items:center}}
+.uni-stats{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:14px 0 4px}
+.uni-stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 10px;text-align:center}
+.uni-stat-v{font-size:19px;font-weight:800;color:var(--brand);line-height:1.15}
+.uni-stat-l{font-size:11px;color:var(--ink-3,#667085);margin-top:3px;font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+@media(max-width:760px){.uni-stats{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:420px){.uni-stats{grid-template-columns:repeat(2,1fr)}}
+.uni-tips li{margin-bottom:4px}
 .cmp-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:15px}
 .cmp-table th,.cmp-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 .cmp-table thead th{background:#eef2ff;color:var(--brand);font-weight:700}

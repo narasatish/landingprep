@@ -252,6 +252,13 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
 .uni-flag{font-size:13px;font-weight:700;opacity:.92;text-transform:uppercase;letter-spacing:.04em}
 .uni-addr{font-size:14px;opacity:.95}.uni-addr a{color:#fff;text-decoration:underline}
 @media(max-width:560px){.uni-banner{flex-direction:column;text-align:center;align-items:center}}
+.uni-stats{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:14px 0 4px}
+.uni-stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 10px;text-align:center}
+.uni-stat-v{font-size:19px;font-weight:800;color:var(--brand);line-height:1.15}
+.uni-stat-l{font-size:11px;color:var(--ink-3,#667085);margin-top:3px;font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+@media(max-width:760px){.uni-stats{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:420px){.uni-stats{grid-template-columns:repeat(2,1fr)}}
+.uni-tips li{margin-bottom:4px}
 .cmp-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:15px}
 .cmp-table th,.cmp-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 .cmp-table thead th{background:#eef2ff;color:var(--brand);font-weight:700}
@@ -868,59 +875,111 @@ function universityPage(c) {
   const FLAG = { USA: "🇺🇸", UK: "🇬🇧", Canada: "🇨🇦", Australia: "🇦🇺", Germany: "🇩🇪", Ireland: "🇮🇪", "New Zealand": "🇳🇿", Singapore: "🇸🇬", Netherlands: "🇳🇱" };
   const inits = c.name.split(/\s+/).filter((w) => /[A-Za-z]/.test(w)).slice(0, 3).map((w) => w[0]).join("").toUpperCase();
   const hue = (c.name.charCodeAt(0) * 7) % 360;
+  const site = (c.website || "").replace(/^https?:\/\//, "");
+  const isCollege = /college/i.test(c.type || "");
+  const compete = c.acceptance <= 40 ? "competitive" : c.acceptance <= 70 ? "moderately selective" : "accessible";
+  const stat = (label, val) => `<div class="uni-stat"><div class="uni-stat-v">${val}</div><div class="uni-stat-l">${label}</div></div>`;
+  // Admission tips tailored by selectivity + universal best-practice (genuine guidance, no false promises).
+  const tips = [
+    c.acceptance <= 40
+      ? `<strong>Beat the bar.</strong> With about ${c.acceptance}% acceptance, aim <em>above</em> the minimums — target IELTS ${(Number(c.ielts) + 0.5) || c.ielts}+ and a strong GPA, and lead with research, projects or publications.`
+      : c.acceptance <= 70
+      ? `<strong>Clear the requirements comfortably.</strong> Meet IELTS ${c.ielts}+ and the GPA cleanly, then differentiate with a focused SOP and 1–2 strong recommendation letters.`
+      : `<strong>Apply early.</strong> With around ${c.acceptance}% acceptance, the main risk is late or incomplete applications — submit early for the best shot at scholarships and housing.`,
+    `<strong>Write a tailored SOP.</strong> Name the exact ${isCollege ? "program" : "program and 1–2 professors/labs"} at ${c.name} and connect your background to them — generic essays are the #1 reason strong profiles get rejected.`,
+    `<strong>Hit the English score first.</strong> ${c.name} needs IELTS ${c.ielts} / TOEFL ${c.toefl} / PTE ${c.pte}. Take a free full-length mock to find your weakest section before you book the real test.`,
+    `<strong>Prepare finances early.</strong> Budget for tuition (${c.feeNote}) plus living costs${ci.living ? ` (${ci.living})` : ""}; visa officers want clear, stable proof of funds.`,
+    `<strong>Apply in the right intake.</strong> ${c.name}'s main intakes are ${c.intakes.join(" & ")} — applying 4–6 months ahead keeps scholarships and on-campus housing open.`,
+  ];
+  const faqs2 = faqs.concat([
+    { q: `Is ${c.name} hard to get into?`, a: `${c.name} is ${compete}, with an indicative acceptance rate of about ${c.acceptance}%. ${c.acceptance <= 40 ? "Aim above the minimum scores and build a standout profile." : "A complete application that clearly meets the requirements has a strong chance."}` },
+    { q: `Does ${c.name} require GRE or GMAT?`, a: `GRE: ${c.gre}. GMAT (for MBA): ${c.gmat || "Not required"}. Always confirm the exact policy for your specific program on the official site.` },
+    { q: `Can I work after studying at ${c.name}?`, a: `${ci.psw || "Post-study work rights depend on the country and visa"} (${c.country}). You can typically also work part-time while studying${ci.work ? `: ${ci.work}` : ""}.` },
+    { q: `What documents do I need to apply to ${c.name}?`, a: `Typically: ${(ci.checklist || ["transcripts", "English test score", "SOP", "letters of recommendation", "passport", "proof of funds"]).join(", ")}. Check program-specific requirements before applying.` },
+  ]);
   const inner = `
-<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Colleges</a> › ${esc(c.name)}</p>
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Colleges</a> › <a href="/study-abroad/top-universities-in-${(c.country || "").toLowerCase().replace(/\s+/g, "-")}/">${esc(c.country)}</a> › ${esc(c.name)}</p>
 <section class="uni-banner" style="background:linear-gradient(120deg,hsl(${hue} 55% 32%),hsl(${(hue + 40) % 360} 60% 24%))">
   <div class="uni-logo">${inits}</div>
   <div class="uni-banner-info">
-    <div class="uni-flag">${FLAG[c.country] || "🎓"} ${c.country}</div>
+    <div class="uni-flag">${FLAG[c.country] || "🎓"} ${c.country} · ${esc(c.type)}</div>
     <h1>${esc(c.name)}</h1>
-    <div class="uni-addr">📍 ${c.city}, ${c.country} · QS World Rank #${c.rank} · #${c.natRank} nationally${c.website ? ` · <a href="https://${c.website}" target="_blank" rel="noopener">${c.website}</a>` : ""}</div>
+    <div class="uni-addr">📍 ${esc(c.city)}, ${esc(c.country)}${typeof c.rank === "number" ? ` · QS World Rank #${c.rank}` : ""}${c.natRank && c.natRank !== "N/A" ? ` · #${c.natRank} nationally` : ""}${site ? ` · <a href="https://${site}" target="_blank" rel="noopener">${site}</a>` : ""}</div>
   </div>
 </section>
-<section class="hero" style="padding-top:18px">
-  <div class="badges"><span class="badge">${c.country}</span><span class="badge">QS #${c.rank}</span><span class="badge">#${c.natRank} in ${c.country}</span><span class="badge">Founded ${c.founded}</span><span class="badge">${c.type}</span></div>
-  <p class="lead">${c.highlight || ""} Check your fit with the free College Predictor, see fees, IELTS/GRE requirements and the full admission process below.</p>
+<section class="uni-stats">
+  ${stat("Acceptance rate", c.acceptance + "%")}
+  ${stat("Intl tuition / yr", c.feeNote.replace(/\s*international.*/i, ""))}
+  ${stat("IELTS required", c.ielts)}
+  ${stat("Intl students", (c.intlPct || "—") + "%")}
+  ${stat("Founded", c.founded)}
+  ${typeof c.rank === "number" ? stat("QS World rank", "#" + c.rank) : stat("Type", isCollege ? "College" : "University")}
+</section>
+<section class="hero" style="padding-top:8px">
+  <p class="lead">${c.highlight ? esc(c.highlight) + " " : ""}This guide covers ${c.name}'s courses, fees, English &amp; academic requirements, scholarships, the step-by-step admission process, student-visa and post-study-work rules, and tips to get in — everything in one place.</p>
   <a class="cta" href="/#/colleges/predictor/${encodeURIComponent(c.country)}">▶ Predict my admission chances (free)</a>
 </section>
 <div class="card">
-  <h2>Admission requirements & key facts</h2>
+  <h2>📚 Courses &amp; programs at ${esc(c.name)}</h2>
+  <p>${esc(c.name)} is best known for ${(c.strengths || []).slice(0, 4).join(", ")}. Popular programs for international students include:</p>
+  <ul>${c.programs.map(p => `<li>${esc(p)}</li>`).join("")}</ul>
+  ${c.classProfile ? `<p class="note">Class profile: ${esc(c.classProfile)}.${c.alumni && c.alumni !== "N/A" ? " Notable alumni: " + esc(c.alumni) + "." : ""}</p>` : ""}
+</div>
+<div class="card">
+  <h2>✅ Entry requirements</h2>
   <table style="width:100%;border-collapse:collapse" class="uni-table">
-    ${row("IELTS", c.ielts)}${row("TOEFL iBT", c.toefl)}${row("PTE Academic", c.pte)}${row("Duolingo", c.duolingo)}
-    ${row("GRE", c.gre)}${row("GMAT (MBA)", c.gmat || "—")}${row("Min GPA", c.gpa)}${row("Work experience", c.workEx || "Not required")}
-    ${row("Tuition (intl)", c.feeNote)}${row("Application fee", c.appFee)}${row("Acceptance rate", c.acceptance + "%")}${row("Intl students", c.intlPct + "%")}
-    ${row("Intakes", c.intakes.join(", "))}${row("Deadline", c.deadline)}${row("Scholarships", c.scholarship || "—")}
+    ${row("IELTS (Academic)", c.ielts)}${row("TOEFL iBT", c.toefl)}${row("PTE Academic", c.pte)}${row("Duolingo English Test", c.duolingo)}
+    ${row("GRE", c.gre)}${row("GMAT (MBA)", c.gmat || "Not required")}${row("Min GPA / grade", c.gpa)}${row("Work experience", c.workEx || "Not required")}
   </table>
+  <div class="callout tip"><span class="ic">💡</span><div>Below the English score? Don't pay to find out — take a <a href="/mock-test/ielts/">free full-length IELTS mock</a> (or <a href="/mock-test/pte/">PTE</a> / <a href="/mock-test/toefl/">TOEFL</a>) and see your gap instantly. Full breakdown: <a href="/ielts-for-${c.id}/">IELTS score for ${esc(c.name)}</a>.</div></div>
 </div>
 <div class="card">
-  <h2>Popular programs</h2><ul>${c.programs.map(p => `<li>${esc(p)}</li>`).join("")}</ul>
-  <p><strong>Known for:</strong> ${(c.strengths || []).join(", ")}.${c.alumni ? ` Notable alumni: ${c.alumni}.` : ""}</p>
+  <h2>💰 Fees &amp; cost of studying</h2>
+  <table style="width:100%;border-collapse:collapse" class="uni-table">
+    ${row("Tuition (international)", c.feeNote)}${row("Application fee", c.appFee)}${row("Living costs (est.)", ci.living || "Varies by city")}${row("Scholarships", c.scholarship || "Merit & need-based options")}
+  </table>
+  <p class="note">Plan your budget for tuition + living + health insurance + the visa fee. Compare funding with the free <a href="/#/colleges">scholarship finder</a>.</p>
 </div>
 <div class="card">
-  <h2>After you graduate · ${c.country}</h2>
-  <ul>
-    <li><strong>Post-study work:</strong> ${ci.psw || "—"}</li>
-    <li><strong>Visa:</strong> ${ci.visa || "—"} · <strong>Work while studying:</strong> ${ci.work || "—"}</li>
-    <li><strong>Living cost:</strong> ${ci.living || "—"}</li>
-    <li><strong>Documents needed:</strong> ${(ci.checklist || []).join(", ")}</li>
+  <h2>📝 Step-by-step admission process</h2>
+  <ol class="bsteps">${proc.map(s => `<li>${esc(s)}</li>`).join("")}</ol>
+</div>
+<div class="card">
+  <h2>📄 Documents checklist</h2>
+  <ul class="bcheck">${(ci.checklist || ["Academic transcripts & degree certificates", "English test scorecard (IELTS/TOEFL/PTE)", "Statement of Purpose (SOP)", "Letters of Recommendation", "Passport", "Proof of funds / bank statement", "Updated CV/resume"]).map(d => `<li>${esc(d)}</li>`).join("")}</ul>
+</div>
+<div class="card">
+  <h2>🛂 Student visa &amp; post-study work · ${esc(c.country)}</h2>
+  <ul class="bcheck">
+    <li><strong>Student visa:</strong> ${esc(ci.visa || "Required — apply after your offer & proof of funds")}</li>
+    <li><strong>Work while studying:</strong> ${esc(ci.work || "Usually allowed part-time during term")}</li>
+    <li><strong>Post-study work:</strong> ${esc(ci.psw || "Varies — check current country rules")}</li>
   </ul>
 </div>
-<div class="card">
-  <h2>Step-by-step admission process</h2>
-  <ol>${proc.map(s => `<li>${esc(s)}</li>`).join("")}</ol>
-  <p class="note">All figures are indicative — confirm on the official site (${c.website}).</p>
+<div class="card uni-tips">
+  <h2>🎯 Tips &amp; tricks to get admission</h2>
+  <ul class="bcheck">${tips.map(t => `<li>${t}</li>`).join("")}</ul>
 </div>
-${faqBlock(faqs)}
+<div class="card">
+  <h2>📅 Intakes &amp; deadlines</h2>
+  <table style="width:100%;border-collapse:collapse" class="uni-table">
+    ${row("Intakes", c.intakes.join(", "))}${row("Typical deadline", c.deadline)}${row("Acceptance rate", c.acceptance + "% (" + compete + ")")}
+  </table>
+  <p class="note">All figures are indicative and change year to year — always confirm on the official site${site ? ` (<a href="https://${site}" target="_blank" rel="noopener">${site}</a>)` : ""} before applying.</p>
+</div>
+${faqBlock(faqs2)}
 ${relatedGrid([
   { label: `🎓 Predict my admission (${c.country})`, href: `/#/colleges/predictor/${encodeURIComponent(c.country)}` },
-  { label: `Top universities in ${c.country}`, href: `/#/colleges/rankings/${encodeURIComponent(c.country)}` },
-  { label: `Free IELTS mock test`, href: `/mock-test/ielts/` },
-  { label: `Scholarships for ${c.country}`, href: `/#/colleges/scholarships/${encodeURIComponent(c.country)}` },
+  { label: `🏛️ Top universities in ${c.country}`, href: `/study-abroad/top-universities-in-${(c.country || "").toLowerCase().replace(/\s+/g, "-")}/` },
+  { label: `📊 IELTS score for ${c.name}`, href: `/ielts-for-${c.id}/` },
+  { label: `🎯 Free IELTS mock test`, href: `/mock-test/ielts/` },
+  { label: `💸 Scholarships for ${c.country}`, href: `/#/colleges/scholarships/${encodeURIComponent(c.country)}` },
+  { label: `✍️ Free SOP guide & samples`, href: `/blog/how-to-write-sop/` },
 ])}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "CollegeOrUniversity", name: c.name, url: "https://" + c.website,
       address: { "@type": "PostalAddress", addressLocality: c.city, addressCountry: c.country }, foundingDate: String(c.founded) }),
-    faqJsonLd(faqs),
+    faqJsonLd(faqs2),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Colleges", path: "/#/colleges" }, { name: c.name, path }]),
   ] }) + shell(inner));
 }
