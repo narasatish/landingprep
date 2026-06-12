@@ -173,10 +173,10 @@ function trimTitle(t) {
     const brand = t.slice(i);
     let base = t.slice(0, i).replace(/\s*\(2026\)\s*$/, "");
     const room = 60 - brand.length;
-    if (base.length > room) { const cut = base.slice(0, room); const sp = cut.lastIndexOf(" "); base = (sp > 20 ? cut.slice(0, sp) : cut).replace(/[\s,;:&|·•–—-]+$/, ""); }
+    if (base.length > room) { const cut = base.slice(0, room); const sp = cut.lastIndexOf(" "); base = (sp > 20 ? cut.slice(0, sp) : cut).replace(/\s*&[a-z0-9#;]*$/i, "").replace(/[\s,;:&|·•–—-]+$/, ""); }
     return base + brand;
   }
-  const cut = t.slice(0, 60); const sp = cut.lastIndexOf(" "); return (sp > 20 ? cut.slice(0, sp) : cut).replace(/[\s,;:&|·•–—-]+$/, "");
+  const cut = t.slice(0, 60); const sp = cut.lastIndexOf(" "); return (sp > 20 ? cut.slice(0, sp) : cut).replace(/\s*&[a-z0-9#;]*$/i, "").replace(/[\s,;:&|·•–—-]+$/, "");
 }
 function trimDesc(d) {
   if (!d || d.length <= 160) return d;
