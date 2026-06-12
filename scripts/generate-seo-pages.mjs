@@ -171,10 +171,10 @@ function trimTitle(t) {
     const brand = t.slice(i);
     let base = t.slice(0, i).replace(/\s*\(2026\)\s*$/, "");
     const room = 60 - brand.length;
-    if (base.length > room) { const cut = base.slice(0, room); const sp = cut.lastIndexOf(" "); base = (sp > 20 ? cut.slice(0, sp) : cut).replace(/[\s,–-]+$/, ""); }
+    if (base.length > room) { const cut = base.slice(0, room); const sp = cut.lastIndexOf(" "); base = (sp > 20 ? cut.slice(0, sp) : cut).replace(/[\s,;:&|·•–—-]+$/, ""); }
     return base + brand;
   }
-  const cut = t.slice(0, 60); const sp = cut.lastIndexOf(" "); return (sp > 20 ? cut.slice(0, sp) : cut).replace(/[\s,–-]+$/, "");
+  const cut = t.slice(0, 60); const sp = cut.lastIndexOf(" "); return (sp > 20 ? cut.slice(0, sp) : cut).replace(/[\s,;:&|·•–—-]+$/, "");
 }
 function trimDesc(d) {
   if (!d || d.length <= 160) return d;
@@ -374,7 +374,7 @@ function emit(path, html) {
 function mockPage(id) {
   const e = EXAMS[id];
   const path = `/mock-test/${id}/`;
-  const title = `Free ${e.name} Mock Test 2026 — Full-Length Practice Online | ${BRAND}`;
+  const title = `Free ${e.short} Mock Test 2026 — Full-Length & Timed | ${BRAND}`;
   const desc = `Take a free full-length ${e.name} mock test online with real exam timing, ${e.sections} sections and instant scoring. No signup, no payment — built for students worldwide.`;
   const kw = `free ${e.short.toLowerCase()} mock test 2026, ${e.short.toLowerCase()} mock test online no signup, free ${e.short.toLowerCase()} practice test for indian students, ${e.name} mock test with answers, ${e.short.toLowerCase()} sample test free, ${e.short.toLowerCase()} full test india`;
   const faqs = [
@@ -422,7 +422,7 @@ ${relatedGrid([
 function practicePage(id) {
   const e = EXAMS[id];
   const path = `/practice/${id}/`;
-  const title = `${e.name} Practice Test Online — Free Section Practice 2026 | ${BRAND}`;
+  const title = `Free ${e.short} Practice Test 2026 — All Sections, No Signup | ${BRAND}`;
   const desc = `Free ${e.name} practice tests online: drill each section (${e.sections}) with answers, explanations and AI feedback. No signup. Perfect for ${e.for}.`;
   const kw = `${e.short.toLowerCase()} practice test online free, ${e.short.toLowerCase()} section practice questions with answers, free ${e.short.toLowerCase()} preparation for indian students, ${e.name} sample questions, ${e.short.toLowerCase()} listening reading writing speaking practice`;
   const faqs = [
@@ -2950,7 +2950,17 @@ PAGES.forEach(({ path, html }) => {
   const loc = ORIGIN + path;
   lastmodFor.set(loc, changed ? BUILD_DATE : (PRIOR_LASTMOD.get(loc) || BUILD_DATE));
   mkdirSync(dir, { recursive: true });
-  writeFileSync(file, html);
+  // OneDrive intermittently holds a file handle while syncing, causing writeFileSync to
+  // throw EBUSY/EPERM/UNKNOWN and crash the whole build mid-loop. Retry a few times with a
+  // short blocking back-off so a transient lock can't abort the generation.
+  for (let attempt = 1; ; attempt++) {
+    try { writeFileSync(file, html); break; }
+    catch (e) {
+      if (attempt >= 6 || !/EBUSY|EPERM|UNKNOWN|EACCES/.test(String(e.code || e.message))) throw e;
+      const until = Date.now() + 250 * attempt;
+      while (Date.now() < until) { /* brief blocking back-off before retry */ }
+    }
+  }
 });
 
 // Sitemap

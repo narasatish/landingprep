@@ -177,6 +177,12 @@
   } catch (e) {
   }
   function BlogIndex({ onNav, onOpen }) {
+    React.useEffect(() => {
+      if (window.LP_SEO) window.LP_SEO.set({
+        title: "Free Study-Abroad & Exam Guides 2026 \u2014 IELTS, TOEFL, GRE, GMAT, Visas | LandingPrep",
+        description: "Free step-by-step guides on study-abroad visas, costs, funding and PR for the USA, Canada, UK, Europe & Australia \u2014 plus IELTS, TOEFL, PTE, GRE & GMAT score targets and study plans."
+      });
+    }, []);
     return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "blog", onNav }), /* @__PURE__ */ React.createElement("div", { className: "seo-shell blg-index" }, /* @__PURE__ */ React.createElement("div", { className: "seo-hero" }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Study Tips \xB7 Strategy \xB7 Comparisons"), /* @__PURE__ */ React.createElement("h1", { className: "h1", style: { marginTop: 8, fontSize: "clamp(32px,5vw,48px)" } }, "Free study-abroad & exam guides"), /* @__PURE__ */ React.createElement("p", { className: "body-lg muted", style: { maxWidth: 720, marginTop: 12 } }, "Step-by-step guides on visas, costs, funding and PR for the USA, Canada, UK, Europe & Australia \u2014 plus score targets and study plans for IELTS, TOEFL, PTE, GRE and GMAT.")), /* @__PURE__ */ React.createElement("div", { className: "seo-grid" }, ARTICLES.map((a) => {
       const words = (a.sections || []).reduce((n, s) => n + ((s.body || "") + " " + (s.steps || []).join(" ") + " " + (s.bullets || []).join(" ")).split(/\s+/).length, 0);
       const mins = Math.max(2, Math.round(words / 200));

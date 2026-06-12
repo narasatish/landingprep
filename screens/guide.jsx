@@ -8,6 +8,15 @@ const TABS = [
 
 function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
   const [tab, setTab] = useStateG("Overview");
+  // Per-exam SEO (title + description + canonical) so each guide has its own meta
+  // instead of inheriting the homepage's. Effect runs before the early return below
+  // (rules-of-hooks) and no-ops when exam is absent.
+  React.useEffect(() => {
+    if (exam && window.LP_SEO) window.LP_SEO.set({
+      title: `Free ${exam.name} Guide 2026 — Pattern, Fees, Scoring & Tips | LandingPrep`,
+      description: `Free ${exam.name} guide: full exam pattern, section breakdown, registration, fees, score chart, test centres, top tips and common mistakes — plus free ${exam.short || exam.name} mock tests, no signup.`,
+    });
+  }, [exam && exam.name]);
   if (!exam) return null;
 
   // Bulletproofing: every field a tab maps/joins over MUST be an array. Coerce any

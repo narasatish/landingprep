@@ -182,6 +182,12 @@
   } catch (e) {}
 
   function BlogIndex({ onNav, onOpen }) {
+    React.useEffect(() => {
+      if (window.LP_SEO) window.LP_SEO.set({
+        title: "Free Study-Abroad & Exam Guides 2026 — IELTS, TOEFL, GRE, GMAT, Visas | LandingPrep",
+        description: "Free step-by-step guides on study-abroad visas, costs, funding and PR for the USA, Canada, UK, Europe & Australia — plus IELTS, TOEFL, PTE, GRE & GMAT score targets and study plans.",
+      });
+    }, []);
     return (
       <>
         <window.LP_TopBar current="blog" onNav={onNav} />

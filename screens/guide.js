@@ -13,6 +13,12 @@ const TABS = [
 ];
 function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
   const [tab, setTab] = useStateG("Overview");
+  React.useEffect(() => {
+    if (exam && window.LP_SEO) window.LP_SEO.set({
+      title: `Free ${exam.name} Guide 2026 \u2014 Pattern, Fees, Scoring & Tips | LandingPrep`,
+      description: `Free ${exam.name} guide: full exam pattern, section breakdown, registration, fees, score chart, test centres, top tips and common mistakes \u2014 plus free ${exam.short || exam.name} mock tests, no signup.`
+    });
+  }, [exam && exam.name]);
   if (!exam) return null;
   const toArr = (v) => Array.isArray(v) ? v : v == null || v === "" ? [] : typeof v === "string" ? v.split(/\s*;\s*|\.\s+(?=[A-Z])/).map((s) => s.trim().replace(/\.$/, "")).filter(Boolean) : [v];
   exam = {
