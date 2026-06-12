@@ -52,6 +52,8 @@ try { new Function("window", readFileSync(join(ROOT, "scholarship-data.jsx"), "u
 const SCHOLARSHIP_DATA = _cw.LP_SCHOLARSHIPS || [];
 try { new Function("window", readFileSync(join(ROOT, "blog-data.jsx"), "utf8"))(_cw); } catch (e) { console.warn("blog-data load failed:", e.message); }
 const BLOG_EXTRA = (_cw.LP_BLOG_EXTRA || []).filter((p) => p && p.id);
+let EXAM_PATTERNS = {};
+try { EXAM_PATTERNS = JSON.parse(readFileSync(join(ROOT, "data", "exam-patterns.json"), "utf8").replace(/^﻿/, "")); } catch (e) { console.warn("exam-patterns load failed:", e.message); }
 
 // ── Exam data (mirrors data.jsx; kept inline so the generator has no deps) ──
 const EXAMS = {
@@ -412,6 +414,18 @@ function mockPage(id) {
   <h2>What's inside the ${e.short} mock test</h2>
   <p>${e.name} is used for ${e.for}. Our free mock reproduces every section in order, with on-screen timers, a review screen showing the correct answers, and an AI tutor you can ask "why is this the answer?" on any question. Take it as many times as you like — new attempts, no limits, no cost.</p>
 </div>
+${(() => {
+  const ep = EXAM_PATTERNS[id];
+  if (!ep || !Array.isArray(ep.sections)) return "";
+  return `<div class="card">
+  <h2>📋 ${e.name} exam pattern (2026)</h2>
+  <p><strong>Total time:</strong> ${esc(ep.totalDuration)}${ep.totalNote ? ` — ${esc(ep.totalNote)}` : ""} · <strong>Scoring:</strong> ${esc(ep.scoring)}</p>
+  <div class="blg-tablewrap"><table class="cmp-table"><thead><tr><th>Section</th><th>Time</th><th>Questions / tasks</th><th>What it tests</th></tr></thead><tbody>${ep.sections.map((s) => `<tr><td><strong>${esc(s.name)}</strong></td><td>${esc(s.duration)}</td><td>${esc(s.count)}</td><td>${esc(s.tests)}</td></tr>`).join("")}</tbody></table></div>
+  <p class="note">Format reflects the current ${e.name} as of 2026 — always confirm details on the official site before your test.</p>
+</div>${Array.isArray(ep.benchmarks) && ep.benchmarks.length ? `
+<div class="card"><h2>🎯 What's a good ${e.short} score?</h2><ul class="bcheck">${ep.benchmarks.map((b) => `<li>${esc(b)}</li>`).join("")}</ul></div>` : ""}${Array.isArray(ep.tips) && ep.tips.length ? `
+<div class="card uni-tips"><h2>💡 ${e.short} prep tips</h2><ul class="bcheck">${ep.tips.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></div>` : ""}`;
+})()}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `${e.short} practice test (section by section)`, href: `/practice/${id}/` },

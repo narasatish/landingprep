@@ -1,0 +1,259 @@
+{
+  "ielts": {
+    "totalDuration": "2 hours 45 minutes",
+    "totalNote": "Academic version; Listening includes 10-minute transfer time",
+    "scoring": "Band 0–9 (in 0.5-point increments)",
+    "sections": [
+      {
+        "name": "Listening",
+        "duration": "30 min (+ 10 min transfer time)",
+        "count": "40 questions",
+        "tests": "Understanding conversations, lectures, and monologues in English; native and non-native accents"
+      },
+      {
+        "name": "Reading",
+        "duration": "60 minutes",
+        "count": "40 questions",
+        "tests": "Comprehension of academic texts: essays, journal extracts, research articles; matching, multiple choice, short answers"
+      },
+      {
+        "name": "Writing",
+        "duration": "60 minutes",
+        "count": "2 tasks",
+        "tests": "Task 1: describe a graph, chart, diagram, or process (150 words, 20 min); Task 2: formal essay on statement/question (250 words, 40 min)"
+      },
+      {
+        "name": "Speaking",
+        "duration": "11–14 minutes",
+        "count": "3 parts",
+        "tests": "Part 1: one-on-one interview on familiar topics (4–5 min); Part 2: 2-minute speech on topic card (3–4 min); Part 3: discussion with examiner (4–5 min)"
+      }
+    ],
+    "benchmarks": [
+      "Band 6.0–6.5: accepted by most universities; entry-level for UK/Australia visas",
+      "Band 7.0–7.5: competitive for top 50 universities; preferred by professional bodies (nursing, engineering)",
+      "Band 8.0+: advanced fluency; required for graduate research, leadership roles"
+    ],
+    "tips": [
+      "Listening: familiarize yourself with all three accents (British, American, Australian) used in IELTS tests—train on podcasts and documentaries",
+      "Reading: strict time management—allocate 18–20 minutes per passage to avoid rushing; skim headings and topic sentences first",
+      "Speaking: prioritize fluency and coherence over perfect grammar; examiners reward natural speech patterns and relevant examples"
+    ]
+  },
+  "toefl": {
+    "totalDuration": "approximately 2 hours",
+    "totalNote": "iBT format (shortened July 2023); no breaks between sections; integrated tasks test multiple skills per task",
+    "scoring": "120 (composite: 0–30 per section)",
+    "sections": [
+      {
+        "name": "Reading",
+        "duration": "35 minutes",
+        "count": "2 passages (10 questions each)",
+        "tests": "Academic texts (620–680 words); comprehension, vocabulary, inference, main idea; multiple choice, select-all-that-apply, drag-and-drop"
+      },
+      {
+        "name": "Listening",
+        "duration": "36 minutes",
+        "count": "3–4 conversations + 2–3 lectures",
+        "tests": "Academic conversations (2–3 min) and lectures (3–5 min); understanding main idea, details, inference, speaker attitude; multiple choice, select-all-that-apply"
+      },
+      {
+        "name": "Speaking",
+        "duration": "12 minutes",
+        "count": "4 tasks",
+        "tests": "Task 1: independent (15 sec prep, 45 sec response); Tasks 2–4: integrated (read/listen, then speak 30–60 sec)"
+      },
+      {
+        "name": "Writing",
+        "duration": "29 minutes",
+        "count": "2 tasks",
+        "tests": "Task 1: integrated (read 3 min + listen 2 min, write 20 min, 150–225 words); Task 2: writing for an academic discussion (30 min, 100+ words)"
+      }
+    ],
+    "benchmarks": [
+      "Score 80–90: accepted by most US universities; entry-level for graduate programs",
+      "Score 100–110: competitive for top 50 universities; preferred by strong master's programs",
+      "Score 110+: excellent for PhD, research positions, postdoctoral roles"
+    ],
+    "tips": [
+      "Reading: use skimming and scanning techniques—read topic sentences and the first question before diving into full text",
+      "Listening: take organized notes (abbreviations, key terms) during lectures—you can reference them during questions",
+      "Writing: in integrated tasks, synthesize information from reading and listening; in academic discussion, respond conversationally to peers while maintaining academic tone"
+    ]
+  },
+  "pte": {
+    "totalDuration": "approximately 2 hours",
+    "totalNote": "Delivered on computer; speaking and writing are recorded; no writing on paper",
+    "scoring": "10–90 (in 1-point increments)",
+    "sections": [
+      {
+        "name": "Speaking & Writing",
+        "duration": "77–93 minutes",
+        "count": "12 tasks",
+        "tests": "Personal introduction, read aloud (40–60 sec), repeat sentence, describe image, re-tell lecture (3 min), answer short question, summarize written text, write essay (200–300 words)"
+      },
+      {
+        "name": "Reading",
+        "duration": "32–40 minutes",
+        "count": "15 tasks",
+        "tests": "Multiple choice (single + multiple answers), re-order paragraphs (jumbled text), fill in blanks (drag-and-drop vocabulary)"
+      },
+      {
+        "name": "Listening",
+        "duration": "45–57 minutes",
+        "count": "12–15 tasks",
+        "tests": "Summarize spoken text (30–40 sec recording, write 50–70 word summary), fill blanks (listening comprehension), multiple choice, highlight correct summary, write from dictation"
+      }
+    ],
+    "benchmarks": [
+      "Score 50–58: accepted by most Australian universities and some UK institutions",
+      "Score 65+: competitive for top universities; visa requirement for Australia/UK skilled migration",
+      "Score 79+: excellent; required for professional registration (nursing, engineering, accounting)"
+    ],
+    "tips": [
+      "Speaking: enunciate clearly and maintain steady pace—machine-scored, so clear pronunciation is critical; background noise is automatically detected and may lower score",
+      "Reading: practice re-ordering paragraphs using logical flow and transition words as clues—this section trips many test-takers",
+      "Listening: the writing-from-dictation task rewards careful listening—use headphones, listen actively, and replay if available"
+    ]
+  },
+  "celpip": {
+    "totalDuration": "3 hours 16 minutes",
+    "totalNote": "Canadian English pronunciation; General version (not Academic); human-scored speaking",
+    "scoring": "CLB 4–12 (Canadian Language Benchmarks, converted to 0–10 in reports)",
+    "sections": [
+      {
+        "name": "Listening",
+        "duration": "60 minutes",
+        "count": "~50 questions",
+        "tests": "Conversations and monologues; multiple choice, multiple answers, short answer, matching; Canadian English accents and contexts"
+      },
+      {
+        "name": "Reading",
+        "duration": "60 minutes",
+        "count": "~50 questions",
+        "tests": "Emails, notices, instructions, passages; multiple choice, multiple answers, short answer, matching, cloze (fill in blanks)"
+      },
+      {
+        "name": "Writing",
+        "duration": "56 minutes",
+        "count": "2 tasks",
+        "tests": "Task 1: email or letter (150–200 words, 20 min); Task 2: essay or response (150–250 words, 36 min)"
+      },
+      {
+        "name": "Speaking",
+        "duration": "20 minutes",
+        "count": "8 tasks",
+        "tests": "Greetings, read-aloud (20 sec), describe photo, describe graph, sustain a conversation, spontaneous speech, persuade, summarize (30–45 sec each)"
+      }
+    ],
+    "benchmarks": [
+      "CLB 7–8 (CELPIP 8–9): entry-level for Canadian skilled immigration; most universities accept this",
+      "CLB 9 (CELPIP 10): competitive for professional roles and graduate programs",
+      "CLB 10–12 (CELPIP 11–12): advanced fluency; required for healthcare and regulated professions"
+    ],
+    "tips": [
+      "Speaking: CELPIP is scored by humans, not machines—engage naturally with the prompts, smile in your tone, and provide relevant examples",
+      "Listening: Canadian English vocabulary and idioms differ from US English—familiarize yourself with Canadian media, podcasts, and news",
+      "Writing: emphasis is on clarity and relevance—organize your ideas with clear topic sentences and avoid overly complex structures"
+    ]
+  },
+  "duolingo": {
+    "totalDuration": "1 hour (flexible; take when ready)",
+    "totalNote": "Online, proctored; mobile-first design; adaptive difficulty; results in 2 days",
+    "scoring": "10–160 (no bands; numerical score)",
+    "sections": [
+      {
+        "name": "Listening & Speaking",
+        "duration": "30–35 minutes",
+        "count": "~20 tasks",
+        "tests": "Listening comprehension, reading comprehension, repeating sentences, speaking spontaneously to prompts; adaptive—harder questions appear after correct answers"
+      },
+      {
+        "name": "Reading & Writing",
+        "duration": "25–30 minutes",
+        "count": "~20 tasks",
+        "tests": "Multiple choice, fill in blanks, translation (into/from English), writing short responses; adaptive difficulty"
+      }
+    ],
+    "benchmarks": [
+      "Score 100–110: entry-level for most universities; some top schools require 120+",
+      "Score 120–130: competitive for selective universities and graduate programs",
+      "Score 130+: excellent; equivalent to TOEFL 100+ or IELTS 7.0+"
+    ],
+    "tips": [
+      "Preparation: Duolingo English Test adapts to your level—correct answers trigger harder questions, so don't aim for perfection on easy questions",
+      "Speaking: speak naturally and at a conversational pace—the system evaluates fluency, not accent, so clarity matters more than perfection",
+      "Environment: test in a quiet room with stable internet; camera and microphone must work clearly; any suspicious behavior may trigger retakes"
+    ]
+  },
+  "gre": {
+    "totalDuration": "1 hour 58 minutes",
+    "totalNote": "General Test (shortened September 2023); adaptive by section; 1-minute break between Verbal and Quant",
+    "scoring": "130–170 per section (Verbal, Quant); 0–6 for Analytical Writing",
+    "sections": [
+      {
+        "name": "Analytical Writing",
+        "duration": "30 minutes",
+        "count": "1 task",
+        "tests": "Analyze an Issue: write an essay (500–600 words) taking a position on a given statement; identify implications, support reasoning, counterarguments"
+      },
+      {
+        "name": "Verbal Reasoning",
+        "duration": "41 minutes",
+        "count": "27 questions",
+        "tests": "Reading comprehension (8 Q), text completion (8 Q), sentence equivalence (11 Q); vocabulary, logic, inference"
+      },
+      {
+        "name": "Quantitative Reasoning",
+        "duration": "47 minutes",
+        "count": "27 questions",
+        "tests": "Algebra, arithmetic, data analysis, probability, word problems; quantitative comparison, multiple choice, numeric entry; focus on applications and reasoning over computation"
+      }
+    ],
+    "benchmarks": [
+      "Score 150–160 (Verbal + Quant): entry-level for master's programs in STEM/business",
+      "Score 160–165: competitive for top 20 universities across most fields",
+      "Score 165+: excellent for PhD programs, research-intensive master's, top consulting/finance roles"
+    ],
+    "tips": [
+      "Verbal: sentence equivalence tests synonym recognition—both correct answers must be semantically identical, not just similar",
+      "Quant: the 2023 shortened test focuses on data analysis and reasoning—practice graphs, charts, and probability over complex geometry calculations",
+      "Adaptive testing: your second section difficulty depends on your first section score—aim for consistency across both verbal and quant"
+    ]
+  },
+  "gmat": {
+    "totalDuration": "2 hours 15 minutes",
+    "totalNote": "GMAT Focus Edition (launched 2023); three 45-minute sections + optional 10-minute break; no Analytical Writing essay",
+    "scoring": "205–805 (composite); 60–90 each for Verbal, Quantitative, Data Insights",
+    "sections": [
+      {
+        "name": "Verbal",
+        "duration": "45 minutes",
+        "count": "23 questions",
+        "tests": "Critical Reasoning (13 Q): evaluate arguments, identify assumptions, strengthen/weaken arguments; Reading Comprehension (10 Q): passage analysis, inference, main idea"
+      },
+      {
+        "name": "Quantitative",
+        "duration": "45 minutes",
+        "count": "21 questions",
+        "tests": "Problem Solving only — algebra, arithmetic, word problems and number properties. Data Sufficiency moved to Data Insights and geometry was removed in the Focus Edition."
+      },
+      {
+        "name": "Data Insights",
+        "duration": "45 minutes",
+        "count": "20 questions",
+        "tests": "Data Sufficiency, Multi-Source Reasoning, Table Analysis, Graphics Interpretation and Two-Part Analysis — interpret and combine data across formats."
+      }
+    ],
+    "benchmarks": [
+      "Score 645–700: entry-level for top MBA programs (including Ivy League); equivalent to old GMAT ~700",
+      "Score 700–750: competitive for select MBA programs (top 10–20); some scholarships available",
+      "Score 750+: excellent; highly competitive for MBA, EMBA, and funded fellowship roles"
+    ],
+    "tips": [
+      "Verbal: Critical Reasoning remains central—practice identifying logical fallacies and argument structure; Reading passages are shorter (3–4 min) but business-focused",
+      "Quantitative: focus on Problem Solving—brush up on geometry (circles, triangles, 3D shapes) and probability; no data sufficiency means reasoning over pure calculation",
+      "Data Insights: the newest section tests real-world thinking—practice interpreting Excel-like tables, pivot tables, and statistical trends; this section is less computational and more interpretive"
+    ]
+  }
+}
