@@ -113,8 +113,9 @@ function buildTags() {
 function pickImmigrationNews(seed) {
   const N = newsItems(); if (!N.length) return null;
   const n = N[seed % N.length]; const T = THEME.immig;
-  return { type: "bulletin", bg: T.bg, accent: T.accent, category: "VISA NEWS · " + n.country.toUpperCase(),
+  return { type: "bulletin", bg: T.bg, accent: T.accent, category: "IMMIGRATION NEWS",
     headline: clip(n.text, 116), highlight: [n.country], sub: "", cta: "Full guide → link in bio",
+    flagCountry: n.country, dateStr: n.date || "",
     photoQuery: pickPhotoQuery(n.country + " " + n.text, "immig"),
     icons: [{ glyph: "doc", label: "What changed" }, { glyph: "check", label: "Who qualifies" }, { glyph: "globe", label: "How to apply" }],
     caption: `🚨 ${n.country.toUpperCase()} UPDATE ${n.flag}${n.date ? " · " + n.date : ""}\n\n${n.text}\n\n📲 SHARE this with someone planning to study in ${n.country}.\n📌 SAVE it so you don't miss the deadline.\n💬 Aiming for ${n.country}? Comment "${n.flag || n.country}" 👇\n\n👉 Full ${n.country} guide — 100% free, link in bio.\nFollow ${HANDLE} for daily visa & study-abroad news 🌍`,
@@ -126,6 +127,7 @@ function pickEducationNews(seed) {
   const pool = edu.length ? edu : B; const p = pool[seed % pool.length]; const T = THEME.edu;
   return { type: "bulletin", bg: T.bg, accent: T.accent, category: (p.tag || "STUDY ABROAD").toUpperCase(),
     headline: clip(p.title, 100), highlight: [], sub: clip(p.excerpt, 120), cta: "Read free → link in bio",
+    flagCountry: detectCountry(p.title), dateStr: "",
     photoQuery: pickPhotoQuery(p.title, "edu"),
     icons: [{ glyph: "cap", label: "Requirements" }, { glyph: "calendar", label: "Deadlines" }, { glyph: "globe", label: "Apply free" }],
     caption: `📚 ${p.title}\n\n${clip(p.excerpt, 200)}\n\n📲 SHARE this with a friend applying this year.\n📌 SAVE it for your own applications.\n💬 Which country/course are you targeting? Tell us 👇\n\n👉 Read the full guide — free, link in bio.\nFollow ${HANDLE} for daily study-abroad tips ✈️`,
@@ -227,7 +229,7 @@ function rssToContent(it, kind) {
   const title = cleanTitle(it.title); const src = (it.source || "").slice(0, 18);
   const cat = (kind === "immig" ? "IMMIGRATION NEWS" : "STUDY-ABROAD NEWS") + (src ? " · " + src.toUpperCase() : "");
   return { type: "bulletin", accent: T.accent, bg: T.bg, category: cat, headline: clip(title, 120), highlight: [],
-    photoQuery: pickPhotoQuery(title, kind), live: true, cta: "More news → link in bio",
+    flagCountry: detectCountry(title), dateStr: fmtDate(it.date), photoQuery: pickPhotoQuery(title, kind), live: true, cta: "More news → link in bio",
     caption: `🚨 ${kind === "immig" ? "IMMIGRATION" : "STUDY-ABROAD"} NEWS${it.date ? " · " + fmtDate(it.date) : ""}\n\n${title}${src ? "\n\n📰 Source: " + (it.source || "") : ""}\n\n📲 SHARE this — someone you know needs to see it.\n📌 SAVE for reference.\n💬 What's your take? Comment 👇\n\n👉 Daily study-abroad news + free guides — link in bio.\nFollow ${HANDLE} for trending updates 🌍`,
     tags: buildTags(kind === "immig" ? "studentvisa" : "studyabroad", kind === "immig" ? "immigration" : "scholarships", "studyabroadnews", "internationalstudents", "landingprep") };
 }
@@ -380,42 +382,38 @@ function centerLogo(cy) {
     logoMark(left, cy - h / 2, h, "white") +
     `<text x="${left + lw + gap}" y="${cy + 11}" font-family="${FONT}" font-size="32" font-weight="900" letter-spacing="0.3" fill="#ffffff">LandingPrep</text>`;
 }
-// content layer for the photo "news" cards: full-bleed photo + bottom headline + centered logo + red bar
+// content layer for the "news" cards — incnews style: logo + NEW tag + flag + bold multicolor headline + loud bar
 function bulletinInner(c) {
-  const red = c.accent || "#E0492B";
+  const red = c.accent || "#E0492B", gold = "#FFD400";
+  let s = logoMark(56, 48, 46, "white") + wordmark(56 + LOGOW(46) + 14, 88, 28, true);
+  const ntag = ("NEW" + (c.dateStr ? "  ·  " + c.dateStr : "")).toUpperCase();
+  s += `<rect x="56" y="110" rx="9" width="${42 + ntag.length * 13.5}" height="46" fill="${red}"/><text x="74" y="141" font-family="${FONT}" font-size="23" font-weight="900" letter-spacing="1.4" fill="#fff">${esc(ntag)}</text>`;
+  if (c.flagCountry) s += `<rect x="812" y="48" rx="12" width="220" height="152" fill="#ffffff"/>`;
   const big = (c.headline || "").length;
-  const size = big > 92 ? 56 : big > 56 ? 66 : 78;
-  const maxChars = Math.round(1040 / (size * 0.52));
-  const lines = wrapRich(c.headline, [], maxChars).slice(0, 4);
-  const lh = size * 1.08, lastBaseline = 998, firstBaseline = lastBaseline - (lines.length - 1) * lh;
-  let s = "";
-  lines.forEach((ln, i) => { const spans = ln.map((w) => `<tspan>${esc(w.t)} </tspan>`).join("");
-    s += `<text x="60" y="${firstBaseline + i * lh}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="800" fill="#ffffff" letter-spacing="-1">${spans}</text>`; });
-  const kickY = firstBaseline - size - 24;
-  s += `<text x="62" y="${kickY}" font-family="${FONT}" font-size="23" font-weight="900" letter-spacing="3" fill="#FFD66B">${esc(stripEmoji(c.category))}</text>`;
-  s = centerLogo(kickY - 64) + s;
-  s += `<rect x="0" y="1050" width="1080" height="30" fill="${red}"/>`;
-  s += `<text x="540" y="1071" text-anchor="middle" font-family="${FONT}" font-size="19" font-weight="800" letter-spacing="1" fill="#ffffff">${SITE} · daily study-abroad updates · link in bio</text>`;
+  const size = big > 96 ? 58 : big > 56 ? 70 : 84;
+  const maxChars = Math.round(1040 / (size * 0.495));
+  const lines = wrapRich(c.headline, [c.flagCountry || ""], maxChars).slice(0, 4);
+  const lh = size * 1.05, lastB = 980, firstB = lastB - (lines.length - 1) * lh;
+  lines.forEach((ln, i) => { const spans = ln.map((w) => `<tspan${w.hi ? ` fill="${gold}"` : ""}>${esc(w.t)} </tspan>`).join("");
+    s += `<text x="56" y="${firstB + i * lh}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="900" fill="#ffffff" letter-spacing="-1.5">${spans}</text>`; });
+  const kickY = firstB - size - 20, kick = stripEmoji(c.category);
+  s += `<rect x="56" y="${kickY - 32}" rx="8" width="${52 + kick.length * 15.5}" height="42" fill="${gold}"/><text x="78" y="${kickY - 3}" font-family="${FONT}" font-size="22" font-weight="900" letter-spacing="1" fill="#101828">${esc(kick)}</text>`;
+  s += `<rect x="0" y="1004" width="1080" height="76" fill="${red}"/><text x="540" y="1054" text-anchor="middle" font-family="${FONT}" font-size="31" font-weight="900" fill="#fff">Visit ${SITE} for the full story</text>`;
   return s;
 }
-// fallback (no photo): dark gradient stands in for the photo, same bottom layout
-function renderBulletin(c) {
+function darkBaseSvg(c) {
   const red = c.accent || "#E0492B";
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
-  <defs><linearGradient id="bgd" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#1A2444"/><stop offset="0.55" stop-color="#0E1730"/><stop offset="1" stop-color="#06090F"/></linearGradient></defs>
-  <rect width="1080" height="1080" fill="url(#bgd)"/>
-  <circle cx="840" cy="300" r="320" fill="${red}" opacity="0.10"/><circle cx="200" cy="180" r="200" fill="#F6C75A" opacity="0.05"/>
-  <rect width="1080" height="1080" fill="url(#scf)"/>
-  <defs><linearGradient id="scf" x1="0" y1="0" x2="0" y2="1"><stop offset="0.45" stop-color="#05070D" stop-opacity="0"/><stop offset="0.78" stop-color="#05070D" stop-opacity="0.6"/><stop offset="1" stop-color="#05070D" stop-opacity="0.95"/></linearGradient></defs>
-  ${bulletinInner(c)}
-</svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="bgd" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#1A2444"/><stop offset="0.55" stop-color="#0E1730"/><stop offset="1" stop-color="#06090F"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#bgd)"/><circle cx="840" cy="300" r="320" fill="${red}" opacity="0.14"/></svg>`;
 }
-// transparent text + bottom-weighted scrim composited OVER a fetched photo
+// flat dark card (used by buildSvg path / previews without photo compositing)
+function renderBulletin(c) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="bgd2" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#1A2444"/><stop offset="1" stop-color="#06090F"/></linearGradient><linearGradient id="sc2" x1="0" y1="0" x2="0" y2="1"><stop offset="0.4" stop-color="#05070D" stop-opacity="0"/><stop offset="0.8" stop-color="#05070D" stop-opacity="0.72"/><stop offset="1" stop-color="#05070D" stop-opacity="0.97"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#bgd2)"/><rect width="1080" height="1080" fill="url(#sc2)"/>${bulletinInner(c)}</svg>`;
+}
 function bulletinOverlaySvg(c) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
   <defs><linearGradient id="sc" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#05070D" stop-opacity="0.28"/><stop offset="0.4" stop-color="#05070D" stop-opacity="0.08"/>
-    <stop offset="0.6" stop-color="#05070D" stop-opacity="0.5"/><stop offset="0.82" stop-color="#05070D" stop-opacity="0.86"/>
+    <stop offset="0" stop-color="#05070D" stop-opacity="0.42"/><stop offset="0.38" stop-color="#05070D" stop-opacity="0.12"/>
+    <stop offset="0.58" stop-color="#05070D" stop-opacity="0.5"/><stop offset="0.8" stop-color="#05070D" stop-opacity="0.85"/>
     <stop offset="1" stop-color="#05070D" stop-opacity="0.98"/>
   </linearGradient></defs>
   <rect width="1080" height="1080" fill="url(#sc)"/>
@@ -482,19 +480,23 @@ async function fetchPexels(query, seed) {
     return Buffer.from(await img.arrayBuffer());
   } catch (e) { return null; }
 }
-// render a "news" card: photo background (if available) + dark scrim + text, else opaque dark card
+// country → ISO code for the free flagcdn.com flag images
+const ISO = { canada: "ca", australia: "au", "united kingdom": "gb", uk: "gb", britain: "gb", england: "gb", usa: "us", "united states": "us", america: "us", germany: "de", france: "fr", ireland: "ie", "new zealand": "nz", italy: "it", netherlands: "nl", singapore: "sg", india: "in", spain: "es", sweden: "se", switzerland: "ch", uae: "ae", "united arab emirates": "ae", dubai: "ae", japan: "jp", china: "cn", poland: "pl", finland: "fi", denmark: "dk", norway: "no", austria: "at" };
+async function fetchFlag(country) {
+  const code = ISO[String(country || "").toLowerCase().trim()]; if (!code) return null;
+  try { const r = await fetchT(`https://flagcdn.com/w640/${code}.png`, {}, 7000); if (!r.ok) return null; return Buffer.from(await r.arrayBuffer()); } catch (e) { return null; }
+}
+function detectCountry(text) { const f = PHOTO_COUNTRIES.find((c) => new RegExp("\\b" + c + "\\b", "i").test(text || "")); return f ? (/UK|Britain|England/i.test(f) ? "United Kingdom" : /USA|America|United States/i.test(f) ? "United States" : f) : null; }
+// render a "news" card: photo bg + scrim + text + country flag chip, else dark base
 async function renderBulletinPng(c, seed) {
   if (!sharp) throw new Error("sharp not installed");
-  const photo = await fetchPexels(c.photoQuery, seed);
-  if (photo) {
-    try {
-      return await sharp(photo).resize(1080, 1080, { fit: "cover", position: "attention", kernel: "lanczos3" })
-        .modulate({ saturation: 1.1, brightness: 1.02 }).sharpen({ sigma: 0.8 })
-        .composite([{ input: Buffer.from(bulletinOverlaySvg(c)) }])
-        .png({ quality: 100, compressionLevel: 9 }).toBuffer();
-    } catch (e) { /* corrupt/unsupported image → fall back */ }
-  }
-  return await sharp(Buffer.from(renderBulletin(c))).png().toBuffer();
+  const [photo, flag] = await Promise.all([fetchPexels(c.photoQuery, seed), c.flagCountry ? fetchFlag(c.flagCountry) : Promise.resolve(null)]);
+  let base = null;
+  if (photo) { try { base = sharp(photo).resize(1080, 1080, { fit: "cover", position: "attention", kernel: "lanczos3" }).modulate({ saturation: 1.14, brightness: 1.04 }).sharpen({ sigma: 0.8 }); } catch (e) { base = null; } }
+  if (!base) base = sharp(Buffer.from(darkBaseSvg(c)));
+  const comps = [{ input: Buffer.from(bulletinOverlaySvg(c)) }];
+  if (flag) { try { const fb = await sharp(flag).resize(204, 136, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 56, left: 820 }); } catch (e) {} }
+  return await base.composite(comps).png({ quality: 100, compressionLevel: 9 }).toBuffer();
 }
 
 // ── caption + publish ────────────────────────────────────────────────────
