@@ -237,7 +237,7 @@ const RSS_Q = {
   immig: ["international student visa news", "study abroad immigration policy", "Express Entry Canada draw", "UK Graduate Route student visa", "Australia student visa changes", "post study work visa", "student visa rule change"],
   edu: ["study abroad scholarship", "international student scholarship 2026", "study abroad university admission", "overseas education students", "study abroad intake 2026", "international students enrollment"],
 };
-const JUNK_RE = /school assembly|news headlines|top \d+ (news|stories|headlines)|round-?up|live updates?|current affairs|gk (questions?|quiz)|\bquiz\b|horoscope|cricket|\bipl\b|box office|recipe/i;
+const JUNK_RE = /school assembly|news headlines|top \d+ (news|stories|headlines)|round-?up|recap|live updates?|current affairs|gk (questions?|quiz)|\bquiz\b|horoscope|recipe|fifa|world cup|football|soccer|cricket|\bipl\b|olympic|tournament|\bmatch\b|\bgoal[s]?\b|striker|premier league|la liga|box office|\bmovie\b|\bfilm\b|actor|actress|celebrity|trailer|\bsong\b|\balbum\b|web series|box-office/i;
 const REL = {
   immig: /visa|immigration|permit|\bpr\b|residen|migrant|citizenship|deport|express entry|graduate route|work right|sponsor/i,
   edu: /student|study|universit|colleg|scholarship|admission|abroad|tuition|campus|intake|enrol|fellowship|\bms\b|graduate/i,
@@ -431,8 +431,8 @@ function bulletinInner(c) {
   s += `<rect x="56" y="110" rx="9" width="${42 + ntag.length * 13.5}" height="46" fill="${red}"/><text x="74" y="141" font-family="${FONT}" font-size="23" font-weight="900" letter-spacing="1.4" fill="#fff">${esc(ntag)}</text>`;
   if (c.flagCountry) s += `<rect x="620" y="116" rx="18" width="424" height="292" fill="#ffffff"/><rect x="620" y="116" rx="18" width="424" height="292" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>`;
   const big = (c.headline || "").length;
-  const size = big > 96 ? 58 : big > 56 ? 70 : 84;
-  const maxChars = Math.round(1040 / (size * 0.495));
+  const size = big > 96 ? 56 : big > 56 ? 66 : 80;
+  const maxChars = Math.round(1000 / (size * 0.57));
   const lines = wrapRich(c.headline, [c.flagCountry || ""], maxChars).slice(0, 4);
   const lh = size * 1.05, lastB = 980, firstB = lastB - (lines.length - 1) * lh;
   lines.forEach((ln, i) => { const spans = ln.map((w) => `<tspan${w.hi ? ` fill="${gold}"` : ""}>${esc(w.t)} </tspan>`).join("");
@@ -575,8 +575,8 @@ function cartoRings(cx, cy) {
 }
 function cartoNewsSvg(c) {
   const DX = 848, DY = 300, OX = 142, OY = 596, red = c.accent || "#E0492B";
-  const big = (c.headline || "").length, size = big > 96 ? 54 : big > 56 ? 64 : 76;
-  const lines = wrapRich(c.headline, [c.flagCountry || ""], Math.round(1040 / (size * 0.5))).slice(0, 4);
+  const big = (c.headline || "").length, size = big > 96 ? 52 : big > 56 ? 62 : 74;
+  const lines = wrapRich(c.headline, [c.flagCountry || ""], Math.round(1000 / (size * 0.57))).slice(0, 4);
   const lh = size * 1.06, lastB = 966, firstB = lastB - (lines.length - 1) * lh;
   let head = "";
   lines.forEach((ln, i) => { const sp = ln.map((w) => `<tspan${w.hi ? ` fill="${C_GOLD}"` : ""}>${esc(w.t)} </tspan>`).join("");
@@ -714,8 +714,8 @@ function slideCTASvg(s) {
 // cartographic carousel cover — flight path rising to the country flag, title at the base
 function cartoCoverSvg(s) {
   const DX = 848, DY = 300, OX = 142, OY = 596, a = s.accent || "#2563EB";
-  const size = (s.title || "").length > 44 ? 64 : 78;
-  const lines = wrapRich(s.title, [], Math.round(1040 / (size * 0.5))).slice(0, 3);
+  const size = (s.title || "").length > 44 ? 62 : 76;
+  const lines = wrapRich(s.title, [], Math.round(1000 / (size * 0.57))).slice(0, 3);
   const lh = size * 1.05, lastB = 906, firstB = lastB - (lines.length - 1) * lh;
   let head = "";
   lines.forEach((ln, i) => { head += `<text x="64" y="${firstB + i * lh}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="900" fill="${C_CREAM}" letter-spacing="-1.5">${ln.map((w) => `<tspan>${esc(w.t)} </tspan>`).join("")}</text>`; });
