@@ -780,7 +780,7 @@ function Footer() {
           <div>
             <h3>Resources</h3>
             <ul>
-              <li><a href="/ielts-band-7/">IELTS band requirements</a></li><li><a href="/which-english-test/">Which English test? (quiz)</a></li><li><a href="#/relocate">Move Abroad checklist</a></li><li><a href="/student-city-guides/">Student city guides</a></li><li><a href="/learn-german/">Learn German, French &amp; Spanish</a></li><li><a href="#/blog">Study tips & strategy</a></li><li><a href="/explore/">Explore all free pages</a></li><li><a href="#/progress">My Progress</a></li><li><a href="https://syllab.in/" rel="noopener" title="Free NCERT &amp; CBSE notes, mock tests and AI tutor">School exams? Syllab — free CBSE/NCERT prep</a></li>
+              <li><a href="/ielts-band-7/">IELTS band requirements</a></li><li><a href="/which-english-test/">Which English test? (quiz)</a></li><li><a href="#/relocate">Move Abroad checklist</a></li><li><a href="/student-city-guides/">Student city guides</a></li><li><a href="/learn-german/">Learn German, French &amp; Spanish</a></li><li><a href="#/blog">Study tips & strategy</a></li><li><a href="/explore/">Explore all free pages</a></li><li><a href="#/progress">My Progress</a></li><li><a href="https://syllab.in/" rel="noopener" title="Free school exam prep, mock tests and AI tutor">School exams? Syllab — free prep</a></li>
             </ul>
           </div>
         </div>
