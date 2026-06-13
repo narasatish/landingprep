@@ -88,6 +88,26 @@ const THEME = {
   vocab: { bg: "#E9F7FF", accent: "#0284C7", chip: "WORD OF THE DAY" },
 };
 
+// ── hashtag strategy (mix broad-reach + mid + niche + branded, IG max 30) ──
+const TAGS = {
+  core: ["studyabroad", "studyabroadlife", "internationalstudents", "studygram", "studyabroadconsultant", "landingprep", "abroadstudies", "studentlife"],
+  immig: ["immigration", "studentvisa", "visa", "immigrationnews", "studyvisa", "permanentresidency", "studyvisaupdate", "visaupdate", "workpermit", "settleabroad", "studyandwork", "visaguide"],
+  edu: ["studyabroad2026", "universityadmission", "scholarships", "collegeadmission", "admissions2026", "dreamuniversity", "studyoverseas", "highereducation", "msabroad", "fallintake2026"],
+  ielts: ["ielts", "ieltspreparation", "ieltsband7", "ieltsexam", "ieltstips", "ieltswriting", "ieltsspeaking", "learnenglish", "englishspeaking"],
+  toefl: ["toefl", "toeflpreparation", "toeflexam", "toefltips", "englishtest"],
+  gre: ["gre", "greprep", "greexam", "grevocabulary", "gremath", "grewords", "grpreparation"],
+  gmat: ["gmat", "gmatprep", "gmatexam", "mba", "gmatquant", "businessschool"],
+  pte: ["pte", "pteexam", "pteacademic", "ptepreparation"],
+  vocab: ["vocabulary", "wordoftheday", "englishvocabulary", "learnenglish", "vocabularywords", "englishwords", "improveenglish", "englishlearning", "dailyvocabulary"],
+  quiz: ["quiz", "dailyquiz", "englishquiz", "quiztime", "testyourself", "gkquiz", "knowledgeispower"],
+  exam: ["examprep", "testprep", "mocktest", "studytips", "examtips", "studymotivation", "studyhard"],
+};
+function buildTags() {
+  const out = [];
+  for (let i = 0; i < arguments.length; i++) { const a = Array.isArray(arguments[i]) ? arguments[i] : [arguments[i]]; for (const t of a) { const x = String(t || "").toLowerCase().replace(/[^a-z0-9]/g, ""); if (x && !out.includes(x)) out.push(x); } }
+  return out.slice(0, 28);
+}
+
 // ── content pickers (one per slot) ───────────────────────────────────────
 function pickImmigrationNews(seed) {
   const N = newsItems(); if (!N.length) return null;
@@ -96,8 +116,8 @@ function pickImmigrationNews(seed) {
     headline: clip(n.text, 116), highlight: [n.country], sub: "", cta: "Full guide → link in bio",
     photoQuery: /visa|permit|passport/i.test(n.text) ? n.country + " passport visa" : n.country + " city skyline",
     icons: [{ glyph: "doc", label: "What changed" }, { glyph: "check", label: "Who qualifies" }, { glyph: "globe", label: "How to apply" }],
-    caption: `🚨 Visa & immigration update — ${n.country} ${n.flag}${n.date ? " (" + n.date + ")" : ""}\n\n${n.text}\n\nFollow ${HANDLE} for daily study-abroad & visa news 🌍\nFull country guides — link in bio 🔗`,
-    tags: ["immigration", "studentvisa", "studyabroad", "visaupdate", "immigrationnews", "study" + n.country.toLowerCase().replace(/\s+/g, ""), "prpathway", "internationalstudents"] };
+    caption: `🚨 ${n.country.toUpperCase()} UPDATE ${n.flag}${n.date ? " · " + n.date : ""}\n\n${n.text}\n\n📌 SAVE this so you don't miss it.\n💬 Planning to study in ${n.country}? Drop a "${n.flag || n.country}" below 👇\n\n👉 Full ${n.country} guide — 100% free, link in bio.\nFollow ${HANDLE} for daily visa & study-abroad news 🌍`,
+    tags: buildTags(["study" + n.country.toLowerCase().replace(/\s+/g, ""), "studyin" + n.country.toLowerCase().replace(/\s+/g, "")], TAGS.immig, TAGS.core, TAGS.edu) };
 }
 function pickEducationNews(seed) {
   const B = blogPosts(); if (!B.length) return null;
@@ -107,8 +127,8 @@ function pickEducationNews(seed) {
     headline: clip(p.title, 100), highlight: [], sub: clip(p.excerpt, 120), cta: "Read free → link in bio",
     photoQuery: /scholar|fund|money|cost|fee/i.test(p.title) ? "scholarship money study" : /university|admission|college/i.test(p.title) ? "university campus students" : "international students study abroad",
     icons: [{ glyph: "cap", label: "Requirements" }, { glyph: "calendar", label: "Deadlines" }, { glyph: "globe", label: "Apply free" }],
-    caption: `📚 ${p.title}\n\n${(p.excerpt || "").slice(0, 200)}\n\nRead the full free guide — link in bio 🔗\nFollow ${HANDLE} for daily study-abroad tips`,
-    tags: ["studyabroad", "studyabroadnews", (p.tag || "study").toLowerCase().replace(/\s+/g, ""), "internationalstudents", "studentlife", "scholarships", "universityadmission"] };
+    caption: `📚 ${p.title}\n\n${clip(p.excerpt, 200)}\n\n📌 SAVE this for your applications.\n💬 Which country/course are you aiming for? Tell us below 👇\n\n👉 Read the full guide — free, link in bio.\nFollow ${HANDLE} for daily study-abroad tips ✈️`,
+    tags: buildTags((p.tag || "study").toLowerCase().replace(/[^a-z0-9]/g, ""), TAGS.edu, TAGS.core, TAGS.immig) };
 }
 function quizFrom(seedCat, question, raw, ansIdx, tags, examTag, hl) {
   const L = ["A", "B", "C", "D"]; const T = THEME.quiz;
@@ -116,7 +136,7 @@ function quizFrom(seedCat, question, raw, ansIdx, tags, examTag, hl) {
   const options = ord.map((i, k) => ({ L: L[k], text: raw[i], correct: i === ansIdx }));
   const ans = (options.find((o) => o.correct) || options[0]).L;
   return { type: "quiz", bg: T.bg, accent: T.accent, category: seedCat, question, highlight: hl || [], options, answerLetter: ans,
-    caption: `🧠 ${examTag} quiz!\n\n${question}\n\n${options.map((o) => o.L + ") " + o.text).join("\n")}\n\nDrop your answer in the comments 👇\nFollow ${HANDLE} for a daily question · free practice in bio 🔗\n.\n.\n.\n✅ Answer: ${ans}`,
+    caption: `🧠 Can YOU crack this ${examTag} question?\n\n${question}\n\n${options.map((o) => o.L + ") " + o.text).join("\n")}\n\n💬 Comment your answer — A, B, C or D 👇 Let's see who gets it!\n📌 SAVE to revise later.\n\n👉 Free ${examTag} practice — link in bio.\nFollow ${HANDLE} for a daily question 🎯\n.\n.\n.\n✅ Answer: ${ans}`,
     tags };
 }
 function pickQuiz(seed) {
@@ -126,11 +146,11 @@ function pickQuiz(seed) {
       const w = W[seed % W.length]; const d = [];
       for (let i = 1; d.length < 3 && i < W.length; i++) { const o = W[(seed + i * 41) % W.length]; if (o.w !== w.w && o.def && !d.find((x) => x.def === o.def)) d.push(o); }
       if (d.length === 3) { const raw = [w.def, d[0].def, d[1].def, d[2].def].map((x) => x.length > 52 ? x.slice(0, 50).replace(/\s\S*$/, "") + "…" : x);
-        return quizFrom("VOCAB QUIZ · IELTS · GRE", `What does “${cap(w.w)}” mean?`, raw, 0, ["ielts", "gre", "vocabularyquiz", "englishquiz", "studyabroad", "ieltspreparation", "wordpower", "dailyquiz"], "Vocabulary", [cap(w.w)]); }
+        return quizFrom("VOCAB QUIZ · IELTS · GRE", `What does “${cap(w.w)}” mean?`, raw, 0, buildTags(TAGS.quiz, TAGS.vocab, TAGS.ielts, TAGS.gre, TAGS.core), "Vocabulary", [cap(w.w)]); }
     }
   }
   const Bq = bankQuestions(); if (Bq.length) { const q = Bq[seed % Bq.length];
-    return quizFrom(q.exam + " PRACTICE QUESTION", q.question, q.options, q.ai, [q.exam.toLowerCase(), q.exam.toLowerCase() + "prep", "examquiz", "studyabroad", "testprep", "dailyquiz"], q.exam, [q.exam]); }
+    return quizFrom(q.exam + " PRACTICE QUESTION", q.question, q.options, q.ai, buildTags(TAGS.quiz, TAGS[q.exam.toLowerCase()] || [], TAGS.exam, TAGS.core, q.exam.toLowerCase() + "preparation"), q.exam, [q.exam]); }
   return pickQuiz(seed + 1 > 1e6 ? 0 : seed + 1) === null ? null : null; // safety (won't recurse on empty)
 }
 function shortVal(s, n) { s = String(s || "").replace(/\(.*?\)/g, "").replace(/hours?/i, "h").replace(/minutes?/i, "m").replace(/\s+/g, " ").trim(); return s.length > n ? s.slice(0, n).trim() + "…" : s; }
@@ -147,8 +167,8 @@ function pickExamSpotlight(seed) {
   const secNames = (e.sections || []).map((s) => s.name).filter(Boolean).slice(0, 4).join(" · ");
   return { type: "exam", bg: T.bg, accent: T.accent, category: name + " EXAM GUIDE",
     headline: name, sub: secNames, stats, highlight: [], cta: "Free " + name + " mock → link in bio",
-    caption: `🎯 The ${name} exam, explained.\n\n${e.totalDuration ? "⏱ Duration: " + e.totalDuration + "\n" : ""}${e.scoring ? "📊 Scoring: " + e.scoring + "\n" : ""}${secNames ? "📝 Sections: " + secNames + "\n" : ""}\nTake a FREE full-length ${name} mock test — link in bio 🔗\nFollow ${HANDLE} for daily exam prep`,
-    tags: [k.toLowerCase(), k.toLowerCase() + "preparation", "examprep", "studyabroad", "testprep", "mocktest", k.toLowerCase() + "exam"] };
+    caption: `🎯 The ${name} exam, explained 👇\n\n${e.totalDuration ? "⏱ Duration: " + e.totalDuration + "\n" : ""}${e.scoring ? "📊 Scoring: " + e.scoring + "\n" : ""}${secNames ? "📝 Sections: " + secNames + "\n" : ""}\n📌 SAVE this — you'll need it.\n💬 Which exam are you preparing for? Comment below 👇\n\n👉 Take a FREE full-length ${name} mock test — link in bio.\nFollow ${HANDLE} for daily exam prep 📚`,
+    tags: buildTags(TAGS[k.toLowerCase()] || [], TAGS.exam, TAGS.core, k.toLowerCase() + "preparation") };
 }
 function pickWordOfDay(seed) {
   const W = vocabWords(); if (!W.length) return null;
@@ -156,8 +176,8 @@ function pickWordOfDay(seed) {
   return { type: "vocab", bg: T.bg, accent: T.accent, category: "WORD OF THE DAY",
     word: cap(w.w), pos: w.pos || "", def: w.def, ex: w.ex || "", syn: w.syn || "", highlight: [],
     cta: "Free vocab decks → link in bio",
-    caption: `📖 Word of the day: ${cap(w.w)} ${w.pos ? "(" + w.pos + ")" : ""}\n\n${w.def}${w.ex ? "\n\n📝 “" + w.ex + "”" : ""}${w.syn ? "\n\nSimilar: " + w.syn : ""}\n\nSave this for your IELTS/GRE prep 🔖 — free vocab decks in bio 🔗\nFollow ${HANDLE} for a word every day`,
-    tags: ["ielts", "gre", "toefl", "vocabulary", "wordoftheday", "englishvocabulary", "studyabroad", "ieltspreparation"] };
+    caption: `📖 WORD OF THE DAY: ${cap(w.w)} ${w.pos ? "(" + w.pos + ")" : ""}\n\n${w.def}${w.ex ? "\n\n📝 “" + w.ex + "”" : ""}${w.syn ? "\n\n🔁 Similar: " + w.syn : ""}\n\n📌 SAVE to build your IELTS/GRE vocabulary.\n💬 Can you use “${cap(w.w)}” in a sentence? Try it below 👇\n\n👉 Free vocab decks — link in bio.\nFollow ${HANDLE} for a new word every day 📚`,
+    tags: buildTags(TAGS.vocab, TAGS.ielts, TAGS.gre, TAGS.core, "wordoftheday") };
 }
 
 // day number since epoch (UTC) → stable per-day seed
@@ -255,40 +275,51 @@ function renderHook(c) {
   if (c.sub) { const sl = wrapPlain(c.sub, 52).slice(0, 3); s += `<text font-family="${FONT}" font-size="30" font-weight="500" fill="#475569">${tspans(sl, 64, y + 10, 42)}</text>`; }
   return doc(c, s);
 }
-// content layer for the dark "news" cards (no background — composited over photo OR dark gradient)
-function bulletinInner(c) {
-  const gold = "#F6C75A", red = c.accent || "#E0492B";
-  const big = (c.headline || "").length;
-  const size = big > 95 ? 56 : big > 58 ? 66 : 80;
-  const maxChars = Math.round(1020 / (size * 0.50));
-  const h = richLines(c.headline, c.highlight, 64, 230, size, maxChars, gold, "#FFFFFF", 4);
-  let body = h.svg, y = h.endY + 16;
-  if (c.sub) { const sl = wrapPlain(c.sub, 56).slice(0, 2); body += `<text font-family="${FONT}" font-size="28" font-weight="500" fill="#C8CEDC">${tspans(sl, 64, y + 14, 40)}</text>`; }
-  const icons = c.icons || [{ glyph: "doc", label: "What's new" }, { glyph: "check", label: "Who qualifies" }, { glyph: "globe", label: "How to apply" }];
-  body += calloutRow(icons, 838, gold, "#EDF0F6");
-  return `<text x="64" y="92" font-family="${FONT}" font-size="29" font-weight="900" fill="#FFFFFF">▲ LandingPrep</text>` +
-    `<text x="1016" y="92" text-anchor="end" font-family="${FONT}" font-size="23" font-weight="700" fill="#AEB6C6">${HANDLE}</text>` +
-    pillSolid(64, 122, c.category, red) + body +
-    `<rect x="0" y="980" width="1080" height="100" fill="${red}"/>` +
-    `<text x="64" y="1043" font-family="${FONT}" font-size="31" font-weight="900" fill="#ffffff">${SITE}</text>` +
-    `<text x="1016" y="1043" text-anchor="end" font-family="${FONT}" font-size="25" font-weight="700" fill="rgba(255,255,255,0.95)">${esc(stripEmoji(c.cta || "Full guide in bio"))}</text>`;
+// centered brand wordmark with flanking rule lines (toronto.culture style)
+function centerLogo(cy) {
+  const cx = 540, tw = 250, gap = 26, len = 84;
+  const ll1 = cx - tw / 2 - gap - len, ll2 = cx - tw / 2 - gap, rl1 = cx + tw / 2 + gap, rl2 = rl1 + len;
+  return `<line x1="${ll1}" y1="${cy}" x2="${ll2}" y2="${cy}" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>` +
+    `<line x1="${rl1}" y1="${cy}" x2="${rl2}" y2="${cy}" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>` +
+    `<text x="${cx}" y="${cy + 11}" text-anchor="middle" font-family="${FONT}" font-size="32" font-weight="900" letter-spacing="2" fill="#ffffff">▲ LandingPrep</text>`;
 }
-// fallback (no photo): opaque dark gradient card
+// content layer for the photo "news" cards: full-bleed photo + bottom headline + centered logo + red bar
+function bulletinInner(c) {
+  const red = c.accent || "#E0492B";
+  const big = (c.headline || "").length;
+  const size = big > 92 ? 56 : big > 56 ? 66 : 78;
+  const maxChars = Math.round(1040 / (size * 0.52));
+  const lines = wrapRich(c.headline, [], maxChars).slice(0, 4);
+  const lh = size * 1.08, lastBaseline = 998, firstBaseline = lastBaseline - (lines.length - 1) * lh;
+  let s = "";
+  lines.forEach((ln, i) => { const spans = ln.map((w) => `<tspan>${esc(w.t)} </tspan>`).join("");
+    s += `<text x="60" y="${firstBaseline + i * lh}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="800" fill="#ffffff" letter-spacing="-1">${spans}</text>`; });
+  const kickY = firstBaseline - size - 24;
+  s += `<text x="62" y="${kickY}" font-family="${FONT}" font-size="23" font-weight="900" letter-spacing="3" fill="#FFD66B">${esc(stripEmoji(c.category))}</text>`;
+  s = centerLogo(kickY - 64) + s;
+  s += `<rect x="0" y="1050" width="1080" height="30" fill="${red}"/>`;
+  s += `<text x="540" y="1071" text-anchor="middle" font-family="${FONT}" font-size="19" font-weight="800" letter-spacing="1" fill="#ffffff">${SITE} · daily study-abroad updates · link in bio</text>`;
+  return s;
+}
+// fallback (no photo): dark gradient stands in for the photo, same bottom layout
 function renderBulletin(c) {
-  const red = c.accent || "#E0492B", gold = "#F6C75A";
+  const red = c.accent || "#E0492B";
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
-  <defs><linearGradient id="bgd" x1="0" y1="0" x2="0.7" y2="1"><stop offset="0" stop-color="#101934"/><stop offset="1" stop-color="#080B16"/></linearGradient></defs>
+  <defs><linearGradient id="bgd" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#1A2444"/><stop offset="0.55" stop-color="#0E1730"/><stop offset="1" stop-color="#06090F"/></linearGradient></defs>
   <rect width="1080" height="1080" fill="url(#bgd)"/>
-  <circle cx="1010" cy="70" r="270" fill="${red}" opacity="0.12"/><circle cx="70" cy="1010" r="230" fill="${gold}" opacity="0.06"/>
+  <circle cx="840" cy="300" r="320" fill="${red}" opacity="0.10"/><circle cx="200" cy="180" r="200" fill="#F6C75A" opacity="0.05"/>
+  <rect width="1080" height="1080" fill="url(#scf)"/>
+  <defs><linearGradient id="scf" x1="0" y1="0" x2="0" y2="1"><stop offset="0.45" stop-color="#05070D" stop-opacity="0"/><stop offset="0.78" stop-color="#05070D" stop-opacity="0.6"/><stop offset="1" stop-color="#05070D" stop-opacity="0.95"/></linearGradient></defs>
   ${bulletinInner(c)}
 </svg>`;
 }
-// transparent text+scrim layer composited OVER a fetched photo
+// transparent text + bottom-weighted scrim composited OVER a fetched photo
 function bulletinOverlaySvg(c) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
   <defs><linearGradient id="sc" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#070A14" stop-opacity="0.88"/><stop offset="0.44" stop-color="#070A14" stop-opacity="0.52"/>
-    <stop offset="0.74" stop-color="#070A14" stop-opacity="0.72"/><stop offset="1" stop-color="#070A14" stop-opacity="0.93"/>
+    <stop offset="0" stop-color="#05070D" stop-opacity="0.28"/><stop offset="0.4" stop-color="#05070D" stop-opacity="0.08"/>
+    <stop offset="0.6" stop-color="#05070D" stop-opacity="0.5"/><stop offset="0.82" stop-color="#05070D" stop-opacity="0.86"/>
+    <stop offset="1" stop-color="#05070D" stop-opacity="0.98"/>
   </linearGradient></defs>
   <rect width="1080" height="1080" fill="url(#sc)"/>
   ${bulletinInner(c)}
@@ -343,11 +374,12 @@ const PEXELS_KEY = process.env.PEXELS_API_KEY || "";
 async function fetchPexels(query, seed) {
   if (!PEXELS_KEY || !query) return null;
   try {
-    const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=15&orientation=square&size=medium`, { headers: { Authorization: PEXELS_KEY } });
+    const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=20&orientation=square&size=large`, { headers: { Authorization: PEXELS_KEY } });
     if (!r.ok) return null;
     const j = await r.json(); const ph = (j.photos || []); if (!ph.length) return null;
     const pick = ph[(Math.abs(seed || 0)) % ph.length];
-    const url = pick && pick.src && (pick.src.large2x || pick.src.large || pick.src.original); if (!url) return null;
+    // large2x (~1880px) downscaled to 1080² stays crisp without the memory cost of full-res originals
+    const url = pick && pick.src && (pick.src.large2x || pick.src.original || pick.src.large); if (!url) return null;
     const img = await fetch(url); if (!img.ok) return null;
     return Buffer.from(await img.arrayBuffer());
   } catch (e) { return null; }
@@ -358,8 +390,10 @@ async function renderBulletinPng(c, seed) {
   const photo = await fetchPexels(c.photoQuery, seed);
   if (photo) {
     try {
-      return await sharp(photo).resize(1080, 1080, { fit: "cover", position: "attention" })
-        .composite([{ input: Buffer.from(bulletinOverlaySvg(c)) }]).png().toBuffer();
+      return await sharp(photo).resize(1080, 1080, { fit: "cover", position: "attention", kernel: "lanczos3" })
+        .modulate({ saturation: 1.1, brightness: 1.02 }).sharpen({ sigma: 0.8 })
+        .composite([{ input: Buffer.from(bulletinOverlaySvg(c)) }])
+        .png({ quality: 100, compressionLevel: 9 }).toBuffer();
     } catch (e) { /* corrupt/unsupported image → fall back */ }
   }
   return await sharp(Buffer.from(renderBulletin(c))).png().toBuffer();
