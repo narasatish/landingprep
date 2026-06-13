@@ -59,7 +59,8 @@ function validateTest(exam, sec, entry) {
   if (texts.length >= 3 && dups >= Math.ceil(texts.length / 2)) fail(exam, sec, `${file}: ${dups} duplicate prompts (looks templated/repeated)`);
 
   // Section-type-specific checks
-  const isWriting = /writing|essay|task/i.test(sec) || /writing/i.test(t.type || "");
+  // "reading-writing" is an objective MCQ section (SAT), not free-form writing — exclude it
+  const isWriting = (/writing|essay|task/i.test(sec) && !/reading-writing/i.test(sec)) || /writing/i.test(t.type || "");
   const isSpeaking = /speak/i.test(sec) || /speak/i.test(t.type || "");
   const isListening = /listen/i.test(sec) || /listen/i.test(t.type || "");
   const isObjective = /reading|verbal|quant|data|listen/i.test(sec);
@@ -98,9 +99,11 @@ for (const [exam, ex] of Object.entries(manifest.exams || {})) {
   for (const [sec, arr] of Object.entries(sections)) {
     (arr || []).slice(0, 2).forEach(entry => validateTest(exam, sec, entry));
   }
-  // 3) full mocks exist
-  if (!(ex.fullMocks || []).length) fail(exam, "fullMocks", "no full mocks defined");
-  else ok();
+  // 3) full mocks exist (guide-only exams are exempt — they offer section practice only)
+  if (!ex.guideOnly) {
+    if (!(ex.fullMocks || []).length) fail(exam, "fullMocks", "no full mocks defined");
+    else ok();
+  }
 }
 
 console.log(`Ran ${checks} structural checks across ${Object.keys(manifest.exams || {}).length} exams.`);
