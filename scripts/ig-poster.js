@@ -456,7 +456,8 @@ async function fetchPexels(query, seed) {
     const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=20&orientation=square&size=large`, { headers: { Authorization: PEXELS_KEY } });
     if (!r.ok) return null;
     const j = await r.json(); const ph = (j.photos || []); if (!ph.length) return null;
-    const pick = ph[(Math.abs(seed || 0)) % ph.length];
+    // Pexels ranks by relevance — pick only from the top 3 so the photo actually matches (avoids the #14 "motel" problem)
+    const pick = ph[(Math.abs(seed || 0)) % Math.min(ph.length, 3)];
     // large2x (~1880px) downscaled to 1080² stays crisp without the memory cost of full-res originals
     const url = pick && pick.src && (pick.src.large2x || pick.src.original || pick.src.large); if (!url) return null;
     const img = await fetch(url); if (!img.ok) return null;
