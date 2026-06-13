@@ -76,6 +76,12 @@ body {
 a { color: inherit; }
 button, input, textarea, select { font: inherit; color: inherit; }
 button { border: 0; background: transparent; cursor: pointer; }
+/* Accessible keyboard focus ring (app-quality) — only on keyboard nav, never on mouse */
+a:focus-visible, button:focus-visible, .btn:focus-visible, [role="button"]:focus-visible,
+input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible,
+.chip:focus-visible, .blg-chip:focus-visible, .seo-card:focus-visible, .tab:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px;
+}
 img { max-width: 100%; display: block; }
 
 /* ───────── Layout ───────── */
