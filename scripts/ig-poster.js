@@ -421,7 +421,7 @@ function brandBgSvg(c) {
 }
 function bulletinOverlaySvg(c) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
-  <defs><linearGradient id="sc" x1="0" y1="0" x2="0" y2="1"><stop offset="0.5" stop-color="#05070D" stop-opacity="0"/><stop offset="1" stop-color="#05070D" stop-opacity="0.5"/></linearGradient></defs>
+  <defs><linearGradient id="sc" x1="0" y1="0" x2="0" y2="1"><stop offset="0.3" stop-color="#05070D" stop-opacity="0.15"/><stop offset="0.62" stop-color="#05070D" stop-opacity="0.5"/><stop offset="1" stop-color="#05070D" stop-opacity="0.92"/></linearGradient></defs>
   <rect width="1080" height="1080" fill="url(#sc)"/>
   ${bulletinInner(c)}
 </svg>`;
@@ -493,11 +493,36 @@ async function fetchFlag(country) {
   try { const r = await fetchT(`https://flagcdn.com/w640/${code}.png`, {}, 7000); if (!r.ok) return null; return Buffer.from(await r.arrayBuffer()); } catch (e) { return null; }
 }
 function detectCountry(text) { const f = PHOTO_COUNTRIES.find((c) => new RegExp("\\b" + c + "\\b", "i").test(text || "")); return f ? (/UK|Britain|England/i.test(f) ? "United Kingdom" : /USA|America|United States/i.test(f) ? "United States" : f) : null; }
-// render a "news" card: DESIGNED brand background + big country flag + bold text (no random stock photos)
+// ── AI image generation (Imagen 3) — budgeted to ~3 images/day (~₹300/mo) ──
+const IMG_KEY = process.env.IMAGE_API_KEY || process.env.GEMINI_API_KEY || "";
+const IMAGES_ON = process.env.IMAGES_ENABLED === "1";
+async function aiImage(prompt) {
+  if (!IMAGES_ON || !IMG_KEY || !prompt) return null;
+  try {
+    const r = await fetchT(`https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${encodeURIComponent(IMG_KEY)}`,
+      { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ instances: [{ prompt }], parameters: { sampleCount: 1, aspectRatio: "1:1" } }) }, 40000);
+    if (!r.ok) return null;
+    const j = await r.json();
+    const p = j && j.predictions && j.predictions[0];
+    const b64 = p && (p.bytesBase64Encoded || (p.image && p.image.imageBytes));
+    return b64 ? Buffer.from(b64, "base64") : null;
+  } catch (e) { return null; }
+}
+function newsImagePrompt(c) {
+  const country = c.flagCountry || "a study-abroad destination";
+  const subj = /visa|permit|immigration|passport|residen|migrant/i.test(c.headline) ? "a passport, modern airport terminal, or government building" : "a university campus or famous city landmark";
+  return `Cinematic premium editorial photograph for a study-abroad and immigration news post about ${country}. Subject: ${subj} of ${country}. Dramatic natural lighting, shallow depth of field, muted cinematic color grade, ultra realistic, high quality. Absolutely no text, no words, no letters, no captions, no logos, no watermarks.`;
+}
+function coverImagePrompt(s) {
+  return `Cinematic premium wide photograph of ${s.flagCountry || "a study-abroad destination"} — its most famous skyline or landmark at golden hour, dramatic lighting, ultra realistic, magazine quality. Absolutely no text, no words, no letters, no logos, no watermarks.`;
+}
+// render a "news" card: AI image (if enabled) OR designed brand bg + big country flag + bold text
 async function renderBulletinPng(c, seed) {
   if (!sharp) throw new Error("sharp not installed");
-  const flag = c.flagCountry ? await fetchFlag(c.flagCountry) : null;
-  const base = sharp(Buffer.from(brandBgSvg(c)));
+  const [ai, flag] = await Promise.all([aiImage(newsImagePrompt(c)), c.flagCountry ? fetchFlag(c.flagCountry) : Promise.resolve(null)]);
+  let base = null;
+  if (ai) { try { base = sharp(ai).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).modulate({ saturation: 1.06 }); } catch (e) { base = null; } }
+  if (!base) base = sharp(Buffer.from(brandBgSvg(c)));
   const comps = [{ input: Buffer.from(bulletinOverlaySvg(c)) }];
   if (flag) { try { const fb = await sharp(flag).resize(412, 280, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 122, left: 626 }); } catch (e) {} }
   return await base.composite(comps).png({ quality: 100, compressionLevel: 9 }).toBuffer();
@@ -607,9 +632,11 @@ function slideCoverDarkSvg(s) {
 }
 async function renderCoverPng(s, photoQuery, seed) {
   if (!sharp) throw new Error("sharp not installed");
-  // designed brand background + big country flag (no random stock photos)
-  const flag = s.flagCountry ? await fetchFlag(s.flagCountry) : null;
-  const base = sharp(Buffer.from(brandBgSvg({ accent: s.accent || "#2563EB" })));
+  // AI image (if enabled) OR designed brand background + big country flag
+  const [ai, flag] = await Promise.all([aiImage(coverImagePrompt(s)), s.flagCountry ? fetchFlag(s.flagCountry) : Promise.resolve(null)]);
+  let base = null;
+  if (ai) { try { base = sharp(ai).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).modulate({ saturation: 1.06 }); } catch (e) { base = null; } }
+  if (!base) base = sharp(Buffer.from(brandBgSvg({ accent: s.accent || "#2563EB" })));
   const comps = [{ input: Buffer.from(slideCoverOverlaySvg(s)) }];
   if (flag) { try { const fb = await sharp(flag).resize(404, 272, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 136, left: 338 }); } catch (e) {} }
   return await base.composite(comps).png({ quality: 100, compressionLevel: 9 }).toBuffer();
