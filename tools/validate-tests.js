@@ -30,16 +30,16 @@ const SPECS = {
     speaking:  { min: 3,  max: 3,  duration: { min: 720,  max: 840  } },
   },
   toefl: {
-    // Post-Jan 2026 adaptive format
-    reading:   { min: 20, max: 48, duration: { min: 1080, max: 1620 } },
-    listening: { min: 28, max: 45, duration: { min: 1080, max: 1620 } },
+    // Post-Jan 2026 adaptive format (35 min reading, 36 min listening)
+    reading:   { min: 20, max: 48, duration: { min: 2100, max: 2100 } },
+    listening: { min: 28, max: 45, duration: { min: 2160, max: 2160 } },
     speaking:  { min: 4,  max: 11, duration: { min: 480,  max: 900  } },
     writing:   { min: 2,  max: 12, duration: { min: 1380, max: 1380 } },
   },
   pte: {
     "speaking-writing": { min: 28, max: 36, duration: { min: 3600, max: 5400 } },
-    reading:            { min: 15, max: 25, duration: { min: 2700, max: 3600 } },
-    listening:          { min: 17, max: 25, duration: { min: 2400, max: 3600 } },
+    reading:            { min: 15, max: 25, duration: { min: 1740, max: 1740 } },
+    listening:          { min: 17, max: 25, duration: { min: 1800, max: 1800 } },
   },
   celpip: {
     listening: { min: 38, max: 38, duration: { min: 2820, max: 3300 }, parts: 6 },
