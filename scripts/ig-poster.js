@@ -180,6 +180,69 @@ function pickWordOfDay(seed) {
     tags: buildTags(TAGS.vocab, TAGS.ielts, TAGS.gre, TAGS.core, "wordoftheday") };
 }
 
+// ── LIVE news via Google News RSS (free, no key) — real trending headlines ─
+async function fetchT(url, opts, ms) { const c = new AbortController(); const t = setTimeout(() => c.abort(), ms || 9000); try { return await fetch(url, Object.assign({ signal: c.signal }, opts || {})); } finally { clearTimeout(t); } }
+function decodeXml(s) {
+  return String(s || "").replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/&amp;/g, "&").replace(/&#0?39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#(\d+);/g, (m, n) => String.fromCharCode(+n)).replace(/\s+/g, " ").trim();
+}
+function cleanTitle(t) { return decodeXml(t).replace(/\s+[-–|]\s+[^-–|]{2,45}$/, "").trim(); } // strip trailing " - Publisher"
+async function fetchNewsRSS(query) {
+  try {
+    const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query + " when:14d")}&hl=en-IN&gl=IN&ceid=IN:en`;
+    const r = await fetchT(url, { headers: { "User-Agent": "Mozilla/5.0 (compatible; LandingPrepBot/1.0)" } }, 9000);
+    if (!r.ok) return null;
+    const xml = await r.text(); const items = []; const re = /<item>([\s\S]*?)<\/item>/g; let m;
+    while ((m = re.exec(xml)) && items.length < 40) {
+      const b = m[1];
+      const title = decodeXml((b.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || "");
+      const date = (b.match(/<pubDate>([\s\S]*?)<\/pubDate>/) || [])[1] || "";
+      const source = decodeXml((b.match(/<source[^>]*>([\s\S]*?)<\/source>/) || [])[1] || "");
+      if (title) items.push({ title, date, source });
+    }
+    return items.length ? items : null;
+  } catch (e) { return null; }
+}
+const PHOTO_COUNTRIES = ["Canada", "Australia", "United Kingdom", "UK", "Britain", "USA", "United States", "America", "Germany", "France", "Ireland", "New Zealand", "Italy", "Netherlands", "Singapore", "Dubai", "India"];
+function pickPhotoQuery(title, kind) {
+  const f = PHOTO_COUNTRIES.find((c) => new RegExp("\\b" + c + "\\b", "i").test(title));
+  if (f) { const c = /UK|Britain/i.test(f) ? "London United Kingdom" : /USA|America|United States/i.test(f) ? "New York United States" : f; return c + " city landmark"; }
+  return kind === "immig" ? "passport visa airport travel" : "university campus students study";
+}
+function fmtDate(s) { try { const d = new Date(s); if (isNaN(d)) return ""; return d.getUTCDate() + " " + ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getUTCMonth()] + " " + d.getUTCFullYear(); } catch (e) { return ""; } }
+function rssToContent(it, kind) {
+  const T = kind === "immig" ? THEME.immig : THEME.edu;
+  const title = cleanTitle(it.title); const src = (it.source || "").slice(0, 18);
+  const cat = (kind === "immig" ? "IMMIGRATION NEWS" : "STUDY-ABROAD NEWS") + (src ? " · " + src.toUpperCase() : "");
+  return { type: "bulletin", accent: T.accent, bg: T.bg, category: cat, headline: clip(title, 120), highlight: [],
+    photoQuery: pickPhotoQuery(title, kind), live: true, cta: "More news → link in bio",
+    caption: `🚨 ${kind === "immig" ? "IMMIGRATION" : "STUDY-ABROAD"} NEWS${it.date ? " · " + fmtDate(it.date) : ""}\n\n${title}${src ? "\n\n📰 Source: " + (it.source || "") : ""}\n\n📌 SAVE & share this update.\n💬 What's your take? Comment below 👇\n\n👉 Daily study-abroad news + free guides — link in bio.\nFollow ${HANDLE} for trending updates 🌍`,
+    tags: buildTags(kind === "immig" ? TAGS.immig : TAGS.edu, TAGS.core, ["studyabroadnews", "breakingnews", "trending", "immigrationupdate"]) };
+}
+const RSS_Q = {
+  immig: ["international student visa news", "study abroad immigration policy", "Express Entry Canada draw", "UK Graduate Route student visa", "Australia student visa changes", "post study work visa", "student visa rule change"],
+  edu: ["study abroad scholarship", "international student scholarship 2026", "study abroad university admission", "overseas education students", "study abroad intake 2026", "international students enrollment"],
+};
+const JUNK_RE = /school assembly|news headlines|top \d+ (news|stories|headlines)|round-?up|live updates?|current affairs|gk (questions?|quiz)|\bquiz\b|horoscope|cricket|\bipl\b|box office|recipe/i;
+const REL = {
+  immig: /visa|immigration|permit|\bpr\b|residen|migrant|citizenship|deport|express entry|graduate route|work right|sponsor/i,
+  edu: /student|study|universit|colleg|scholarship|admission|abroad|tuition|campus|intake|enrol|fellowship|\bms\b|graduate/i,
+};
+async function liveNews(now, slot) {
+  if (process.env.LIVE_NEWS === "0") return null;
+  const kind = slot === 0 ? "immig" : "edu"; const seed = dayNumber(now);
+  const list = RSS_Q[kind]; const items = await fetchNewsRSS(list[seed % list.length]);
+  if (!items || !items.length) return null;
+  const good = items.filter((it) => { const t = cleanTitle(it.title); return t.length >= 24 && t.length <= 135 && !JUNK_RE.test(t) && REL[kind].test(t); });
+  const pool = good.length ? good : items.filter((it) => !JUNK_RE.test(cleanTitle(it.title)));
+  if (!pool.length) return null;
+  return rssToContent(pool[seed % pool.length], kind);
+}
+async function resolveDailyContent(now, slot) {
+  let c = pickForSlot(now, slot);
+  if ((slot === 0 || slot === 1)) { try { const live = await liveNews(now, slot); if (live) c = live; } catch (e) { /* keep curated fallback */ } }
+  return c;
+}
+
 // day number since epoch (UTC) → stable per-day seed
 function dayNumber(now) { now = now || new Date(); return Math.floor(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86400000); }
 const SLOT_PICKERS = [pickImmigrationNews, pickEducationNews, pickQuiz, pickExamSpotlight, pickWordOfDay];
@@ -418,7 +481,7 @@ async function whoami({ token }) {
 }
 async function generateDailyImage({ baseUrl, now, slot }) {
   if (slot == null) slot = slotFromHour(now);
-  const c = pickForSlot(now, slot); if (!c) throw new Error("no content for slot " + slot);
+  const c = await resolveDailyContent(now, slot); if (!c) throw new Error("no content for slot " + slot);
   const seed = dayNumber(now) * 5 + (Number(slot) || 0);
   const png = c.type === "bulletin" ? await renderBulletinPng(c, seed) : await renderPng(buildSvg(c));
   fs.mkdirSync(OUT_DIR, { recursive: true });
