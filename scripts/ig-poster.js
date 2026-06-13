@@ -276,7 +276,7 @@ function pickCountryHighlight(seed) {
   if (c.visaSuccess) stats.push({ v: "~" + c.visaSuccess + "%", label: "Visa success" });
   stats.push({ v: String((c.intakes || []).length || 2), label: "Intakes / yr" });
   const slug = c.name.toLowerCase().replace(/\s+/g, "");
-  return { type: "exam", accent: THEME.edu.accent, category: "COUNTRY SPOTLIGHT", headline: c.name, sub: c.tagline || "Study-abroad destination", stats: stats.slice(0, 4), cta: "Full country guide in bio",
+  return { type: "exam", accent: "#1D4ED8", category: c.name.toUpperCase(), flagCountry: c.name, headline: c.name, sub: c.tagline || "Study-abroad destination", stats: stats.slice(0, 4), cta: "Full country guide — link in bio  →",
     caption: `🌍 Why study in ${c.name}? ${c.flag || ""}\n\n${c.tagline || ""}\n${c.avgTuition ? "💰 Tuition: " + c.avgTuition + "\n" : ""}${c.postStudyWork ? "💼 Post-study work: " + c.postStudyWork + "\n" : ""}${c.prTimeline ? "🛂 PR: " + c.prTimeline + "\n" : ""}\n📲 TAG someone considering ${c.name}.\n📌 SAVE this. 💬 Is ${c.name} on your list? 👇\n\n👉 Full ${c.name} guide — link in bio.\nFollow ${HANDLE} for daily study-abroad guides 🌍`,
     tags: buildTags("study" + slug, "studyin" + slug, "studyabroad", "internationalstudents", "landingprep") };
 }
@@ -288,7 +288,7 @@ function pickCollegeSpotlight(seed) {
   if (c.acceptance) stats.push({ v: c.acceptance + "%", label: "Acceptance" });
   if (c.ielts) stats.push({ v: "IELTS " + c.ielts, label: "Min. score" });
   const cslug = String(c.country).toLowerCase().replace(/\s+/g, "");
-  return { type: "exam", accent: "#7C3AED", category: "TOP UNIVERSITY · " + String(c.country).toUpperCase(), headline: collegeShort(c.name), sub: (c.city || "") + " · " + c.country, stats: stats.slice(0, 4), cta: "Free college predictor in bio",
+  return { type: "exam", accent: "#7C3AED", category: String(c.country).toUpperCase(), flagCountry: c.country, headline: collegeShort(c.name), sub: (c.city || "") + " · " + c.country, stats: stats.slice(0, 4), cta: "Free college predictor — link in bio  →",
     caption: `🎓 ${c.name} — at a glance\n\n${c.rank ? "🌍 World rank: #" + c.rank + "\n" : ""}${c.feeNote ? "💰 Tuition: " + c.feeNote + "\n" : ""}${c.acceptance ? "✅ Acceptance: " + c.acceptance + "%\n" : ""}${c.ielts ? "📊 IELTS " + c.ielts + " · GRE " + (c.gre || "—") + "\n" : ""}${c.deadline ? "🗓 Deadline: " + c.deadline + "\n" : ""}\n📲 TAG a future applicant. 📌 SAVE this.\n💬 Is this your dream school? 👇\n\n👉 Free college predictor — link in bio.\nFollow ${HANDLE} for daily admits info 🎓`,
     tags: buildTags("studyin" + cslug, "studyabroad", "universityadmission", "topuniversities", "landingprep") };
 }
@@ -312,7 +312,7 @@ function pickScholarship(seed) {
   const s = SCHOLARSHIPS[seed % SCHOLARSHIPS.length];
   const stats = [{ v: s.award, label: "Award" }, { v: s.level, label: "Level" }, { v: s.apply, label: "Apply by" }, { v: "FREE", label: "Application" }];
   const slug = s.country.toLowerCase().replace(/\s+/g, "");
-  return { type: "exam", accent: "#0E9F6E", category: "SCHOLARSHIP · " + s.country.toUpperCase(), headline: s.n, sub: s.full + " · for " + s.who, stats, cta: "Free scholarship guide in bio",
+  return { type: "exam", accent: "#0E9F6E", category: "SCHOLARSHIP", flagCountry: ISO[s.country.toLowerCase()] ? s.country : null, headline: s.n, sub: s.full + " · " + s.country, stats, cta: "Free scholarship guide — link in bio  →",
     caption: `💰 ${s.full} (${s.country})\n\n🎓 Award: ${s.award}\n📚 Level: ${s.level}\n🗓 Apply by: ${s.apply}\n✅ For: ${s.who}\n\n📲 TAG a friend who should apply. 📌 SAVE this.\n💬 Applying this year? Comment 👇\n\n👉 Free scholarships guide — link in bio.\nFollow ${HANDLE} for daily funding alerts 💸`,
     tags: buildTags("scholarships", "studyin" + slug, "studyabroad", "fullyfunded", "landingprep") };
 }
@@ -545,10 +545,93 @@ function renderVocab(c) {
   if (c.syn && y < 900) { const sy = ("SIMILAR: " + c.syn).toUpperCase(); s += `<rect x="64" y="${y}" rx="10" width="${48 + sy.length * 13}" height="46" fill="${hexA(C_GOLD, 0.16)}"/><text x="86" y="${y + 31}" font-family="${MONO}" font-size="19" font-weight="700" fill="${C_GOLD}" letter-spacing="1">${esc(sy)}</text>`; }
   return doc(c, s);
 }
+// ══ BRIGHT illustrated design system (futuresabroad style) ════════════════
+const BR_NAVY = "#0F2150", BR_YELLOW = "#FACC15", BR_INK = "#1E293B", BR_CARD = "#F4F7FF", BR_SUB = "#64748B";
+function lighten(hex, amt) { const m = hex.replace("#", ""); const c = (i) => parseInt(m.slice(i, i + 2), 16); const L = (x) => Math.round(x + (255 - x) * amt); return `rgb(${L(c(0))},${L(c(2))},${L(c(4))})`; }
+function brIcon(cx, cy, r, glyph) {
+  const s = r * 0.92, st = `fill="none" stroke="#fff" stroke-width="${(r * 0.13).toFixed(1)}" stroke-linecap="round" stroke-linejoin="round"`;
+  if (glyph === "globe") return `<circle cx="${cx}" cy="${cy}" r="${s * 0.62}" ${st}/><ellipse cx="${cx}" cy="${cy}" rx="${s * 0.26}" ry="${s * 0.62}" ${st}/><line x1="${cx - s * 0.62}" y1="${cy}" x2="${cx + s * 0.62}" y2="${cy}" ${st}/>`;
+  if (glyph === "briefcase") return `<rect x="${cx - s * 0.55}" y="${cy - s * 0.26}" width="${s * 1.1}" height="${s * 0.76}" rx="${s * 0.12}" ${st}/><path d="M${cx - s * 0.22} ${cy - s * 0.26} v${-s * 0.18} h${s * 0.44} v${s * 0.18}" ${st}/><line x1="${cx - s * 0.55}" y1="${cy + s * 0.06}" x2="${cx + s * 0.55}" y2="${cy + s * 0.06}" ${st}/>`;
+  if (glyph === "cap") return `<path d="M${cx} ${cy - s * 0.44} L${cx + s * 0.72} ${cy - s * 0.08} L${cx} ${cy + s * 0.28} L${cx - s * 0.72} ${cy - s * 0.08} Z" ${st}/><path d="M${cx - s * 0.4} ${cy + s * 0.04} v${s * 0.3} q${s * 0.4} ${s * 0.24} ${s * 0.8} 0 v${-s * 0.3}" ${st}/>`;
+  if (glyph === "money") return `<circle cx="${cx}" cy="${cy}" r="${s * 0.6}" ${st}/><line x1="${cx}" y1="${cy - s * 0.34}" x2="${cx}" y2="${cy + s * 0.34}" ${st}/><path d="M${cx + s * 0.2} ${cy - s * 0.18} q${-s * 0.45} ${-s * 0.18} ${-s * 0.45} ${s * 0.18} q0 ${s * 0.3} ${s * 0.45} ${s * 0.18}" ${st}/>`;
+  if (glyph === "passport") return `<rect x="${cx - s * 0.46}" y="${cy - s * 0.6}" width="${s * 0.92}" height="${s * 1.2}" rx="${s * 0.1}" ${st}/><circle cx="${cx}" cy="${cy - s * 0.14}" r="${s * 0.2}" ${st}/><line x1="${cx - s * 0.2}" y1="${cy + s * 0.28}" x2="${cx + s * 0.2}" y2="${cy + s * 0.28}" ${st}/>`;
+  if (glyph === "plane") return `<path d="M${cx - s * 0.58} ${cy + s * 0.12} L${cx + s * 0.6} ${cy - s * 0.46} L${cx + s * 0.16} ${cy + s * 0.56} L${cx - s * 0.02} ${cy + s * 0.14} Z" ${st}/>`;
+  if (glyph === "star") return `<path d="M${cx} ${cy - s * 0.58} L${cx + s * 0.17} ${cy - s * 0.1} L${cx + s * 0.55} ${cy - s * 0.06} L${cx + s * 0.24} ${cy + s * 0.2} L${cx + s * 0.34} ${cy + s * 0.56} L${cx} ${cy + s * 0.34} L${cx - s * 0.34} ${cy + s * 0.56} L${cx - s * 0.24} ${cy + s * 0.2} L${cx - s * 0.55} ${cy - s * 0.06} L${cx - s * 0.17} ${cy - s * 0.1} Z" ${st}/>`;
+  if (glyph === "calendar") return `<rect x="${cx - s * 0.55}" y="${cy - s * 0.45}" width="${s * 1.1}" height="${s * 0.95}" rx="${s * 0.1}" ${st}/><line x1="${cx - s * 0.55}" y1="${cy - s * 0.16}" x2="${cx + s * 0.55}" y2="${cy - s * 0.16}" ${st}/><line x1="${cx - s * 0.25}" y1="${cy - s * 0.6}" x2="${cx - s * 0.25}" y2="${cy - s * 0.32}" ${st}/><line x1="${cx + s * 0.25}" y1="${cy - s * 0.6}" x2="${cx + s * 0.25}" y2="${cy - s * 0.32}" ${st}/>`;
+  if (glyph === "check") return `<circle cx="${cx}" cy="${cy}" r="${s * 0.6}" ${st}/><path d="M${cx - s * 0.28} ${cy} l${s * 0.18} ${s * 0.2} ${s * 0.4} -${s * 0.4}" ${st}/>`;
+  if (glyph === "book") return `<path d="M${cx} ${cy - s * 0.46} q${-s * 0.5} ${-s * 0.2} ${-s * 0.58} ${s * 0.04} v${s * 0.82} q${s * 0.08} ${-s * 0.2} ${s * 0.58} 0 q${s * 0.5} ${-s * 0.2} ${s * 0.58} 0 v${-s * 0.82} q${-s * 0.08} ${-s * 0.24} ${-s * 0.58} ${-s * 0.04} z" ${st}/><line x1="${cx}" y1="${cy - s * 0.42}" x2="${cx}" y2="${cy + s * 0.38}" ${st}/>`;
+  return `<circle cx="${cx}" cy="${cy}" r="${s * 0.5}" ${st}/>`;
+}
+function brDots(x, y, col) { let s = ""; for (let i = 0; i < 9; i++) s += `<circle cx="${x + (i % 3) * 26}" cy="${y + Math.floor(i / 3) * 26}" r="5" fill="${col}"/>`; return s; }
+function brBg(accent) {
+  return `<defs><linearGradient id="brg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${accent}"/><stop offset="1" stop-color="${lighten(accent, 0.28)}"/></linearGradient></defs>
+  <rect width="1080" height="1080" fill="url(#brg)"/>${brDots(64, 64, "rgba(255,255,255,0.5)")}${brDots(940, 930, "rgba(255,255,255,0.4)")}
+  <circle cx="1010" cy="120" r="14" fill="${BR_YELLOW}"/><circle cx="80" cy="985" r="16" fill="rgba(255,255,255,0.22)"/>`;
+}
+function brLogoBar() { return `<rect x="250" y="50" width="580" height="92" rx="26" fill="#fff"/>${logoMark(330, 66, 60, "color")}<text x="408" y="110" font-family="${FONT}" font-size="42" font-weight="900" letter-spacing="-1"><tspan fill="${BR_NAVY}">Landing</tspan><tspan fill="#2563EB">Prep</tspan></text>`; }
+function brCta(text, accent) { return `<rect x="90" y="918" width="900" height="94" rx="47" fill="${BR_YELLOW}"/><text x="540" y="978" text-anchor="middle" font-family="${FONT}" font-size="36" font-weight="900" letter-spacing="0.5" fill="${BR_NAVY}">${esc(stripEmoji(text))}</text>`; }
+function brPill(x, y, text, accent, flagGap) { const t = stripEmoji(text), w = (flagGap ? 78 : 28) + t.length * 16.5 + 28; return `<rect x="${x}" y="${y}" width="${w}" height="58" rx="29" fill="${hexA(accent, 0.14)}"/>${flagGap ? `<rect x="${x + 16}" y="${y + 13}" width="48" height="32" rx="5" fill="#fff" stroke="#e2e8f0"/>` : ""}<text x="${x + (flagGap ? 78 : 26)}" y="${y + 40}" font-family="${FONT}" font-size="27" font-weight="900" letter-spacing="1" fill="${accent}">${esc(t)}</text>`; }
+function brFrame(accent, inner, cta) { return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${brBg(accent)}${brLogoBar()}${inner}${brCta(cta, accent)}</svg>`; }
+// stat/spotlight (country, college, exam, scholarship, cost)
+function renderBrightStat(c) {
+  const a = c.accent || "#2563EB"; let s = `<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
+  s += brPill(130, 214, c.category, a, !!c.flagCountry);
+  const hl = wrapPlain(c.headline, c.headline.length > 16 ? 17 : 13).slice(0, 2); const hs = hl.length > 1 ? 72 : 92;
+  let y = 388; hl.forEach((ln, i) => { s += `<text x="130" y="${y + i * (hs + 4)}" font-family="${FONT}" font-size="${hs}" font-weight="900" fill="${BR_NAVY}" letter-spacing="-2">${esc(ln)}</text>`; });
+  y += (hl.length - 1) * (hs + 4) + 52;
+  if (c.sub) { const sl = wrapPlain(c.sub, 44).slice(0, 2); s += `<text font-family="${FONT}" font-size="29" font-weight="700" fill="${a}">${tspans(sl, 134, y, 38)}</text>`; y += (sl.length) * 38 + 14; }
+  const st = (c.stats || []).slice(0, 4); const bw = 396, bh = 132, gx = 130, gy = Math.min(Math.max(y + 12, 548), 560), gap = 28;
+  st.forEach((box, i) => { const x = gx + (i % 2) * (bw + gap), by = gy + Math.floor(i / 2) * (bh + 24);
+    s += `<rect x="${x}" y="${by}" width="${bw}" height="${bh}" rx="22" fill="${BR_CARD}"/>`;
+    s += `<text x="${x + 28}" y="${by + 66}" font-family="${FONT}" font-size="42" font-weight="900" fill="${a}">${esc(stripEmoji(String(box.v)))}</text>`;
+    s += `<text x="${x + 28}" y="${by + 104}" font-family="${FONT}" font-size="23" font-weight="800" fill="${BR_SUB}" letter-spacing="0.5">${esc(String(box.label).toUpperCase())}</text>`;
+  });
+  return brFrame(a, s, c.cta || "Full guide — link in bio  →");
+}
+function renderBrightQuiz(c) {
+  const a = c.accent || "#7C3AED"; let s = `<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
+  s += brPill(130, 214, c.category, a, false);
+  const ql = wrapRich(c.question, c.highlight, 30).slice(0, 3); let y = 326;
+  ql.forEach((ln) => { s += `<text x="130" y="${y}" xml:space="preserve" font-family="${FONT}" font-size="44" font-weight="900" fill="${BR_NAVY}" letter-spacing="-1">${ln.map((w) => `<tspan${w.hi ? ` fill="${a}"` : ""}>${esc(w.t)} </tspan>`).join("")}</text>`; y += 54; });
+  y += 16; const opts = (c.options || []).slice(0, 4); const oh = 88;
+  opts.forEach((o) => { const ok = !!o.correct; const tab = ok ? "#10B981" : a; const tl = wrapPlain(o.text, 40).slice(0, 1);
+    s += `<rect x="130" y="${y}" width="820" height="${oh}" rx="18" fill="${ok ? "#ECFDF5" : BR_CARD}" stroke="${ok ? "#10B981" : "transparent"}" stroke-width="2.5"/>`;
+    s += `<rect x="130" y="${y}" width="74" height="${oh}" rx="18" fill="${tab}"/><rect x="170" y="${y}" width="22" height="${oh}" fill="${tab}"/>`;
+    s += `<text x="167" y="${y + oh / 2 + 11}" text-anchor="middle" font-family="${FONT}" font-size="32" font-weight="900" fill="#fff">${o.L}</text>`;
+    s += `<text x="224" y="${y + oh / 2 + 10}" font-family="${FONT}" font-size="27" font-weight="600" fill="${BR_INK}">${esc(tl[0] || "")}</text>`;
+    if (ok) s += `<path d="M888,${y + oh / 2} l14,14 26,-30" fill="none" stroke="#10B981" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>`;
+    y += oh + 14;
+  });
+  return brFrame(a, s, "Answer: " + (c.answerLetter || "") + "  ·  did you get it right?");
+}
+function renderBrightVocab(c) {
+  const a = c.accent || "#2563EB"; let s = `<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
+  s += brPill(130, 214, "WORD OF THE DAY", a, false);
+  const wl = wrapPlain(c.word, 13).slice(0, 1); s += `<text x="128" y="372" font-family="${FONT}" font-size="${(c.word || "").length > 11 ? 86 : 104}" font-weight="900" fill="${BR_NAVY}" letter-spacing="-2">${esc(wl[0] || "")}</text>`;
+  if (c.pos) s += `<text x="132" y="424" font-family="${FONT}" font-size="32" font-weight="800" font-style="italic" fill="${a}">${esc(c.pos)}</text>`;
+  const dl = wrapPlain(c.def, 40).slice(0, 3); const dh = dl.length * 46 + 50; s += `<rect x="130" y="460" width="820" height="${dh}" rx="22" fill="${BR_CARD}"/><text font-family="${FONT}" font-size="34" font-weight="600" fill="${BR_INK}">${tspans(dl, 162, 524, 46)}</text>`;
+  let y = 460 + dh + 44; if (c.ex) { const el = wrapPlain("“" + c.ex + "”", 46).slice(0, 2); s += `<text font-family="${FONT}" font-size="29" font-weight="500" font-style="italic" fill="${BR_SUB}">${tspans(el, 134, y, 42)}</text>`; }
+  return brFrame(a, s, "Free vocab decks — link in bio  →");
+}
+function renderBrightNews(c) {
+  const a = c.accent || "#1D4ED8"; let s = `<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
+  s += brPill(130, 214, c.category, a, !!c.flagCountry);
+  s += `<rect x="${c.flagCountry ? 130 + (78 + stripEmoji(c.category).length * 16.5 + 28) + 16 : 760}" y="218" width="120" height="50" rx="25" fill="#EF4444"/><text x="${(c.flagCountry ? 130 + (78 + stripEmoji(c.category).length * 16.5 + 28) + 16 : 760) + 60}" y="252" text-anchor="middle" font-family="${FONT}" font-size="26" font-weight="900" letter-spacing="1" fill="#fff">NEW</text>`;
+  const hl = wrapPlain(stripEmoji(c.headline), 24).slice(0, 5); const hs = hl.length > 4 ? 56 : hl.length > 2 ? 66 : 76;
+  let y = 360; hl.forEach((ln, i) => { s += `<text x="130" y="${y + i * (hs + 6)}" font-family="${FONT}" font-size="${hs}" font-weight="900" fill="${BR_NAVY}" letter-spacing="-1.5">${esc(ln)}</text>`; });
+  return brFrame(a, s, "Read the full story — link in bio  →");
+}
 function buildSvg(c) {
-  return c.type === "bulletin" ? renderBulletin(c) : c.type === "quiz" ? renderQuiz(c) : c.type === "exam" ? renderExam(c) : c.type === "vocab" ? renderVocab(c) : renderHook(c);
+  return c.type === "quiz" ? renderBrightQuiz(c) : c.type === "vocab" ? renderBrightVocab(c) : c.type === "exam" ? renderBrightStat(c) : c.type === "bulletin" ? renderBrightNews(c) : renderBrightStat(c);
 }
 async function renderPng(svg) { if (!sharp) throw new Error("sharp not installed — run: npm install sharp"); return await sharp(Buffer.from(svg)).png().toBuffer(); }
+// render any single post in the bright style + composite its country flag into the category pill
+async function renderContentPng(c) {
+  if (!sharp) throw new Error("sharp not installed");
+  const base = sharp(Buffer.from(buildSvg(c)));
+  if (c.flagCountry) { try { const fb = await fetchFlag(c.flagCountry); if (fb) { const f = await sharp(fb).resize(46, 30, { fit: "cover" }).png().toBuffer(); return await base.composite([{ input: f, top: 228, left: 147 }]).png({ quality: 100 }).toBuffer(); } } catch (e) {} }
+  return await base.png({ quality: 100 }).toBuffer();
+}
 
 // fetch a relevant square stock photo from the free Pexels API (returns Buffer or null)
 const PEXELS_KEY = process.env.PEXELS_API_KEY || "";
@@ -679,7 +762,7 @@ async function generateDailyImage({ baseUrl, now, slot }) {
   if (slot == null) slot = slotFromHour(now);
   const c = await resolveDailyContent(now, slot); if (!c) throw new Error("no content for slot " + slot);
   const seed = dayNumber(now) * 5 + (Number(slot) || 0);
-  const png = c.type === "bulletin" ? await renderBulletinPng(c, seed) : await renderPng(buildSvg(c));
+  const png = await renderContentPng(c);
   fs.mkdirSync(OUT_DIR, { recursive: true });
   try { for (const f of fs.readdirSync(OUT_DIR)) { const fp = path.join(OUT_DIR, f); if (Date.now() - fs.statSync(fp).mtimeMs > 7200000) fs.unlinkSync(fp); } } catch (e) {}
   const name = `post-${slot}-${Date.now()}.png`; fs.writeFileSync(path.join(OUT_DIR, name), png);
@@ -720,62 +803,54 @@ function carouselFooter(idx, total, accent, swipe) {
     `<text x="1016" y="1052" text-anchor="end" font-family="${FONT}" font-size="24" font-weight="800" fill="rgba(255,255,255,0.95)">${swipe ? "SWIPE  ›" : idx + " / " + total}</text>`;
 }
 // numbered-points content slide (cartographic)
+// bright numbered-points content slide
 function slidePointsSvg(s) {
-  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${cartoBgSvgFrag()}` + slideHeader(s.topic);
-  const tl = wrapPlain(s.title, 24).slice(0, 2); let y = 252;
-  svg += `<text font-family="${FONT}" font-size="58" font-weight="900" fill="${C_CREAM}" letter-spacing="-1">${tspans(tl, 64, y, 66)}</text>`;
-  y += tl.length * 66 + 50;
-  (s.points || []).slice(0, 5).forEach((p, i) => {
-    const pl = wrapPlain(p, 36).slice(0, 2);
-    svg += `<circle cx="100" cy="${y - 6}" r="32" fill="${C_GOLD}"/><text x="100" y="${y + 5}" text-anchor="middle" font-family="${FONT}" font-size="30" font-weight="900" fill="#0A1330">${i + 1}</text>`;
-    svg += `<text font-family="${FONT}" font-size="33" font-weight="500" fill="#DCE2EE">${tspans(pl, 156, y + (pl.length > 1 ? -8 : 4), 44)}</text>`;
-    y += (pl.length > 1 ? 124 : 92);
+  const a = s.accent || "#2563EB";
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${brBg(a)}${brLogoBar()}<rect x="90" y="178" width="900" height="770" rx="40" fill="#fff"/>`;
+  svg += brPill(130, 212, s.topic, a, false);
+  svg += `<circle cx="916" cy="241" r="34" fill="${BR_CARD}"/><text x="916" y="252" text-anchor="middle" font-family="${FONT}" font-size="25" font-weight="900" fill="${a}">${s.idx}/${s.total}</text>`;
+  const tl = wrapPlain(s.title, 22).slice(0, 2); let y = 342;
+  tl.forEach((ln, i) => { svg += `<text x="130" y="${y + i * 62}" font-family="${FONT}" font-size="56" font-weight="900" fill="${BR_NAVY}" letter-spacing="-1.5">${esc(ln)}</text>`; });
+  y += (tl.length - 1) * 62 + 56;
+  const pts = (s.points || []).slice(0, 5); const oh = pts.length >= 5 ? 86 : 98;
+  pts.forEach((p, i) => { const pl = wrapPlain(p, 40).slice(0, 2);
+    svg += `<rect x="130" y="${y}" width="820" height="${oh}" rx="18" fill="${BR_CARD}"/>`;
+    svg += `<circle cx="184" cy="${y + oh / 2}" r="28" fill="${a}"/><text x="184" y="${y + oh / 2 + 10}" text-anchor="middle" font-family="${FONT}" font-size="28" font-weight="900" fill="#fff">${i + 1}</text>`;
+    svg += `<text font-family="${FONT}" font-size="27" font-weight="600" fill="${BR_INK}">${tspans(pl, 236, y + (oh - (pl.length - 1) * 34) / 2 + 9, 34)}</text>`;
+    y += oh + 12;
   });
-  return svg + carouselFooter(s.idx, s.total, s.accent) + `</svg>`;
+  svg += `<text x="540" y="1008" text-anchor="middle" font-family="${FONT}" font-size="30" font-weight="900" fill="#fff">SWIPE FOR MORE  →</text>`;
+  return svg + `</svg>`;
 }
-// final call-to-action slide (cartographic)
+// bright final CTA slide
 function slideCTASvg(s) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${cartoBgSvgFrag()}
-  <circle cx="540" cy="470" r="118" fill="none" stroke="${C_GOLD}" stroke-width="1.5" opacity="0.45"/>
-  <text x="540" y="300" text-anchor="middle" font-family="${MONO}" font-size="24" letter-spacing="3" fill="${C_GOLD}">FOUND THIS USEFUL?</text>
-  <text x="540" y="500" text-anchor="middle" font-family="${FONT}" font-size="120" font-weight="900" fill="${C_CREAM}" letter-spacing="-3">SAVE IT</text>
-  <text x="540" y="600" text-anchor="middle" font-family="${FONT}" font-size="44" font-weight="600" fill="#DCE2EE">and share it with a friend</text>
-  <text x="540" y="724" text-anchor="middle" font-family="${FONT}" font-size="40" font-weight="800" fill="${C_CREAM}">Follow ${HANDLE}</text>
-  <text x="540" y="776" text-anchor="middle" font-family="${MONO}" font-size="24" fill="${C_MUTE}">for a free daily study-abroad guide</text>
-  <rect x="330" y="848" width="420" height="84" rx="42" fill="${C_GOLD}"/><text x="540" y="902" text-anchor="middle" font-family="${FONT}" font-size="31" font-weight="900" fill="#0A1330">Full guide in bio</text>
-  <text x="540" y="1014" text-anchor="middle" font-family="${MONO}" font-size="22" fill="${C_MUTE}">LANDINGPREP · ${SITE}</text>
+  const a = s.accent || "#2563EB";
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${brBg(a)}${brLogoBar()}
+  <rect x="90" y="200" width="900" height="680" rx="40" fill="#fff"/>
+  <text x="540" y="330" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="800" fill="${a}">FOUND THIS USEFUL?</text>
+  <text x="540" y="480" text-anchor="middle" font-family="${FONT}" font-size="132" font-weight="900" fill="${BR_NAVY}" letter-spacing="-4">SAVE IT</text>
+  <text x="540" y="572" text-anchor="middle" font-family="${FONT}" font-size="42" font-weight="600" fill="${BR_INK}">and share it with a friend</text>
+  <circle cx="430" cy="690" r="42" fill="${a}"/>${brIcon(430, 690, 42, "check")}<circle cx="540" cy="690" r="42" fill="${a}"/>${brIcon(540, 690, 42, "star")}<circle cx="650" cy="690" r="42" fill="${a}"/>${brIcon(650, 690, 42, "plane")}
+  <text x="540" y="820" text-anchor="middle" font-family="${FONT}" font-size="40" font-weight="900" fill="${BR_NAVY}">Follow ${HANDLE} for daily guides</text>
+  ${brCta("Full guide — link in bio  →", a)}
 </svg>`;
 }
-// cartographic carousel cover — flight path rising to the country flag, title at the base
+// bright carousel cover
 function cartoCoverSvg(s) {
-  const DX = 848, DY = 300, OX = 142, OY = 596, a = s.accent || "#2563EB";
-  const size = (s.title || "").length > 44 ? 62 : 76;
-  const lines = wrapRich(s.title, [], Math.round(1000 / (size * 0.57))).slice(0, 3);
-  const lh = size * 1.05, lastB = 906, firstB = lastB - (lines.length - 1) * lh;
-  let head = "";
-  lines.forEach((ln, i) => { head += `<text x="64" y="${firstB + i * lh}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="900" fill="${C_CREAM}" letter-spacing="-1.5">${ln.map((w) => `<tspan>${esc(w.t)} </tspan>`).join("")}</text>`; });
-  const kickY = firstB - size - 22;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${cartoBgSvgFrag()}
-  <path d="M ${OX} ${OY} Q 400 330 ${DX} ${DY}" fill="none" stroke="${C_GOLD}" stroke-width="3"/>
-  <circle cx="${OX}" cy="${OY}" r="7" fill="none" stroke="${C_MUTE}" stroke-width="2"/><circle cx="${OX}" cy="${OY}" r="2.5" fill="${C_MUTE}"/>
-  <text x="${OX + 16}" y="${OY - 5}" font-family="${MONO}" font-size="16" fill="${C_MUTE}">ORIGIN</text>
-  <line x1="${DX - 150}" y1="${DY}" x2="${DX + 150}" y2="${DY}" stroke="${C_GOLD}" stroke-width="1" opacity="0.45"/><line x1="${DX}" y1="${DY - 150}" x2="${DX}" y2="${DY + 150}" stroke="${C_GOLD}" stroke-width="1" opacity="0.45"/>
-  <circle cx="${DX}" cy="${DY}" r="118" fill="none" stroke="${C_GOLD}" stroke-width="1.5" opacity="0.55"/>
-  ${s.flagCountry ? `<rect x="${DX - 104}" y="${DY - 72}" rx="10" width="208" height="144" fill="#ffffff"/>` : `<circle cx="${DX}" cy="${DY}" r="44" fill="none" stroke="${C_GOLD}" stroke-width="2"/><circle cx="${DX}" cy="${DY}" r="9" fill="${C_GREEN}"/>`}
-  ${logoMark(56, 46, 42, "white")}${wordmark(56 + LOGOW(42) + 12, 84, 26, true)}
-  <text x="1016" y="80" text-anchor="end" font-family="${MONO}" font-size="16" fill="${C_MUTE}">ATLAS OF DEPARTURE</text>
-  ${s.sub ? `<text x="64" y="${kickY}" font-family="${MONO}" font-size="20" font-weight="700" letter-spacing="2" fill="${C_GOLD}">${esc(stripEmoji(s.sub))}</text>` : ""}
-  ${head}
-  <rect x="0" y="1004" width="1080" height="76" fill="${a}"/><text x="64" y="1052" font-family="${FONT}" font-size="29" font-weight="900" fill="#fff">${SITE}</text><text x="1016" y="1052" text-anchor="end" font-family="${FONT}" font-size="24" font-weight="800" fill="rgba(255,255,255,0.95)">SWIPE  ›</text>
-</svg>`;
+  const a = s.accent || "#1D4ED8";
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${brBg(a)}${brLogoBar()}<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
+  svg += brPill(130, 214, s.sub || "STUDY ABROAD GUIDE", a, !!s.flagCountry);
+  const tl = wrapPlain(s.title, 15).slice(0, 3); const ts = tl.length > 2 ? 72 : 88; let y = 372;
+  tl.forEach((ln, i) => { svg += `<text x="130" y="${y + i * (ts + 4)}" font-family="${FONT}" font-size="${ts}" font-weight="900" fill="${BR_NAVY}" letter-spacing="-2">${esc(ln)}</text>`; });
+  svg += `<circle cx="810" cy="770" r="96" fill="${hexA(a, 0.12)}"/>` + brIcon(810, 770, 96, "cap").replace(/#fff/g, a);
+  svg += brCta("SWIPE TO SEE THE FULL GUIDE  →", a);
+  return svg + `</svg>`;
 }
 async function renderCoverPng(s, photoQuery, seed) {
   if (!sharp) throw new Error("sharp not installed");
-  const flag = s.flagCountry ? await fetchFlag(s.flagCountry) : null;
   const base = sharp(Buffer.from(cartoCoverSvg(s)));
-  const comps = [];
-  if (flag) { try { const fb = await sharp(flag).resize(204, 142, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 229, left: 746 }); } catch (e) {} }
-  return await base.composite(comps).png({ quality: 100, compressionLevel: 9 }).toBuffer();
+  if (s.flagCountry) { try { const fb = await fetchFlag(s.flagCountry); if (fb) { const f = await sharp(fb).resize(46, 30, { fit: "cover" }).png().toBuffer(); return await base.composite([{ input: f, top: 228, left: 147 }]).png({ quality: 100 }).toBuffer(); } } catch (e) {} }
+  return await base.png({ quality: 100 }).toBuffer();
 }
 function buildCountryCarousel(c, seed) {
   const name = c.name, slug = name.toLowerCase().replace(/\s+/g, ""), total = 5, accent = "#E0492B";
