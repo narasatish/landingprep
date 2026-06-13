@@ -1,0 +1,34 @@
+name: Daily Instagram post
+
+# Posts one on-brand image to the linked Instagram Business account every day.
+# Schedule is in UTC. 03:30 UTC = 09:00 IST. Change as you like, or hit "Run workflow".
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Warm up the server (Render free tier can cold-start)
+        run: |
+          for i in 1 2 3; do
+            curl -s -m 90 "https://landingprep.com/api/health" >/dev/null && break
+            sleep 15
+          done
+          sleep 10
+
+      - name: Publish today's post to Instagram
+        run: |
+          set -e
+          ok=0
+          for attempt in 1 2 3; do
+            code=$(curl -s -o /tmp/resp.json -w "%{http_code}" -m 240 \
+              -X POST "https://landingprep.com/api/ig/post-daily" \
+              -H "x-ig-secret: ${{ secrets.IG_POST_SECRET }}")
+            echo "Attempt $attempt — HTTP $code"; cat /tmp/resp.json || true; echo
+            if [ "$code" = "200" ]; then ok=1; break; fi
+            sleep 25
+          done
+          [ "$ok" = "1" ] || { echo "::error::Instagram post failed after retries"; exit 1; }

@@ -209,6 +209,33 @@ app.get("/api/health", (_req, res) => {
   });
 });
 
+// ── Daily Instagram auto-poster ───────────────────────────────────────────────
+// Picks on-brand content from the site's own data, renders a branded image (served
+// publicly from /ig-out/), and publishes to the linked IG Business account via the
+// Instagram Graph API. Triggered daily by a GitHub Action (cron) hitting this URL.
+//   ?preview=1  → generate the image + caption and return them WITHOUT posting (safe test)
+//   (no preview) → actually publishes to Instagram
+// Auth: pass the shared secret as ?key=... or header x-ig-secret. Never posts without IG_* env.
+const IG_POST_SECRET   = process.env.IG_POST_SECRET || "";
+const IG_USER_ID       = process.env.IG_USER_ID || "";
+const IG_ACCESS_TOKEN  = process.env.IG_ACCESS_TOKEN || "";
+const IG_PUBLIC_BASE   = process.env.PUBLIC_BASE_URL || "https://landingprep.com";
+app.all("/api/ig/post-daily", async (req, res) => {
+  const key = req.query.key || req.headers["x-ig-secret"] || "";
+  if (!IG_POST_SECRET || key !== IG_POST_SECRET) return res.status(403).json({ ok: false, error: "forbidden" });
+  let ig;
+  try { ig = require("./scripts/ig-poster.js"); }
+  catch (e) { return res.status(500).json({ ok: false, error: "poster module/sharp not available: " + e.message }); }
+  try {
+    if (String(req.query.preview || "") === "1") {
+      const gen = await ig.generateDailyImage({ baseUrl: IG_PUBLIC_BASE });
+      return res.json({ ok: true, preview: true, theme: gen.content.label, imageUrl: gen.imageUrl, caption: gen.caption });
+    }
+    const out = await ig.runDailyPost({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN });
+    res.json(out);
+  } catch (e) { res.status(500).json({ ok: false, error: String((e && e.message) || e) }); }
+});
+
 // ── Text-to-speech proxy (natural Gemini voice) ───────────────────────────────
 // The frontend can't hold the Gemini key, so it calls THIS endpoint, which
 // proxies to Gemini 2.5 TTS using the server key and returns base64 audio. This
