@@ -516,15 +516,65 @@ function newsImagePrompt(c) {
 function coverImagePrompt(s) {
   return `Cinematic premium wide photograph of ${s.flagCountry || "a study-abroad destination"} — its most famous skyline or landmark at golden hour, dramatic lighting, ultra realistic, magazine quality. Absolutely no text, no words, no letters, no logos, no watermarks.`;
 }
-// render a "news" card: AI image (if enabled) OR designed brand bg + big country flag + bold text
+// ── "Cartographic Ascent" — the canvas-skill aesthetic, free, in SVG ───────
+const MONO = "'DejaVu Sans Mono','Liberation Mono','Courier New',monospace";
+const C_GOLD = "#E4B45C", C_CREAM = "#F1ECE0", C_MUTE = "#7C8CB0", C_GREEN = "#2DD6A8", C_INK = "#2A3F66";
+function cartoRings(cx, cy) {
+  let s = "";
+  for (let i = 1; i <= 14; i++) {
+    const r = i * 28, amp = 4 + i * 0.8, k = 3 + (i % 4), ph = i * 0.7, pts = [];
+    for (let a = 0; a <= 360; a += 9) { const rad = a * Math.PI / 180, rr = r + amp * Math.sin(k * rad + ph); pts.push(`${(cx + rr * Math.cos(rad)).toFixed(1)} ${(cy + rr * Math.sin(rad)).toFixed(1)}`); }
+    s += `<path d="M ${pts.join(" L ")} Z" fill="none" stroke="${C_INK}" stroke-width="1" opacity="${Math.max(0, 0.36 - i * 0.022).toFixed(3)}"/>`;
+  }
+  return s;
+}
+function cartoNewsSvg(c) {
+  const DX = 848, DY = 300, OX = 142, OY = 596, red = c.accent || "#E0492B";
+  const big = (c.headline || "").length, size = big > 96 ? 54 : big > 56 ? 64 : 76;
+  const lines = wrapRich(c.headline, [c.flagCountry || ""], Math.round(1040 / (size * 0.5))).slice(0, 4);
+  const lh = size * 1.06, lastB = 966, firstB = lastB - (lines.length - 1) * lh;
+  let head = "";
+  lines.forEach((ln, i) => { const sp = ln.map((w) => `<tspan${w.hi ? ` fill="${C_GOLD}"` : ""}>${esc(w.t)} </tspan>`).join("");
+    head += `<text x="64" y="${firstB + i * lh}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="900" fill="${C_CREAM}" letter-spacing="-1.2">${sp}</text>`; });
+  const kickY = firstB - size - 22;
+  const ntag = ("NEW" + (c.dateStr ? "  ·  " + c.dateStr : "")).toUpperCase();
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#0A1330"/><stop offset="0.55" stop-color="#0B1124"/><stop offset="1" stop-color="#070A18"/></linearGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="${C_GOLD}" stop-opacity="0.30"/><stop offset="1" stop-color="${C_GOLD}" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <circle cx="${DX}" cy="${DY}" r="300" fill="url(#glow)"/>
+  ${cartoRings(DX, DY)}
+  <path d="M ${OX} ${OY} Q 400 330 ${DX} ${DY}" fill="none" stroke="${C_GOLD}" stroke-width="3"/>
+  <circle cx="${OX}" cy="${OY}" r="7" fill="none" stroke="${C_MUTE}" stroke-width="2"/><circle cx="${OX}" cy="${OY}" r="2.5" fill="${C_MUTE}"/>
+  <text x="${OX + 16}" y="${OY - 5}" font-family="${MONO}" font-size="16" fill="${C_MUTE}">ORIGIN</text>
+  <text x="${OX + 16}" y="${OY + 16}" font-family="${MONO}" font-size="14" fill="${C_MUTE}">00°00′ DEPARTURE</text>
+  <line x1="${DX - 150}" y1="${DY}" x2="${DX + 150}" y2="${DY}" stroke="${C_GOLD}" stroke-width="1" opacity="0.45"/>
+  <line x1="${DX}" y1="${DY - 150}" x2="${DX}" y2="${DY + 150}" stroke="${C_GOLD}" stroke-width="1" opacity="0.45"/>
+  <circle cx="${DX}" cy="${DY}" r="118" fill="none" stroke="${C_GOLD}" stroke-width="1.5" opacity="0.55"/>
+  ${c.flagCountry ? `<rect x="${DX - 104}" y="${DY - 72}" rx="10" width="208" height="144" fill="#ffffff"/>` : `<circle cx="${DX}" cy="${DY}" r="44" fill="none" stroke="${C_GOLD}" stroke-width="2"/><circle cx="${DX}" cy="${DY}" r="9" fill="${C_GREEN}"/>`}
+  ${logoMark(56, 46, 42, "white")}${wordmark(56 + LOGOW(42) + 12, 84, 26, true)}
+  <text x="1016" y="80" text-anchor="end" font-family="${MONO}" font-size="16" fill="${C_MUTE}">ATLAS OF DEPARTURE</text>
+  <rect x="56" y="108" rx="8" width="${42 + ntag.length * 13.5}" height="44" fill="${red}"/><text x="74" y="138" font-family="${FONT}" font-size="22" font-weight="900" letter-spacing="1.4" fill="#fff">${esc(ntag)}</text>
+  <text x="64" y="${kickY}" font-family="${MONO}" font-size="20" font-weight="700" letter-spacing="2" fill="${C_GOLD}">${esc(stripEmoji(c.category))}</text>
+  ${head}
+  <rect x="0" y="1004" width="1080" height="76" fill="${red}"/><text x="540" y="1054" text-anchor="middle" font-family="${FONT}" font-size="31" font-weight="900" fill="#fff">Visit ${SITE} for the full story</text>
+</svg>`;
+}
+// render a "news" card: AI photo (if enabled) OR the free cartographic-ascent art; flag = the destination
 async function renderBulletinPng(c, seed) {
   if (!sharp) throw new Error("sharp not installed");
-  const [ai, flag] = await Promise.all([aiImage(newsImagePrompt(c)), c.flagCountry ? fetchFlag(c.flagCountry) : Promise.resolve(null)]);
-  let base = null;
-  if (ai) { try { base = sharp(ai).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).modulate({ saturation: 1.06 }); } catch (e) { base = null; } }
-  if (!base) base = sharp(Buffer.from(brandBgSvg(c)));
-  const comps = [{ input: Buffer.from(bulletinOverlaySvg(c)) }];
-  if (flag) { try { const fb = await sharp(flag).resize(412, 280, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 122, left: 626 }); } catch (e) {} }
+  const flag = c.flagCountry ? await fetchFlag(c.flagCountry) : null;
+  if (IMAGES_ON && IMG_KEY) {
+    const ai = await aiImage(newsImagePrompt(c));
+    if (ai) { try {
+      const comps = [{ input: Buffer.from(bulletinOverlaySvg(c)) }];
+      if (flag) { const fb = await sharp(flag).resize(412, 280, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 122, left: 626 }); }
+      return await sharp(ai).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).modulate({ saturation: 1.06 }).composite(comps).png({ quality: 100, compressionLevel: 9 }).toBuffer();
+    } catch (e) {} }
+  }
+  const base = sharp(Buffer.from(cartoNewsSvg(c)));
+  const comps = [];
+  if (flag) { try { const fb = await sharp(flag).resize(204, 142, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 229, left: 746 }); } catch (e) {} }
   return await base.composite(comps).png({ quality: 100, compressionLevel: 9 }).toBuffer();
 }
 
