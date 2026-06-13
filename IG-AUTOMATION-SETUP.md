@@ -7,9 +7,11 @@ automatically. You only do the one-time setup below (~15 min). After that: zero 
 **What's already built (in the repo):**
 - `scripts/ig-poster.js` — content picker + image generator + Instagram Graph API publisher
 - `server.js` → endpoint `POST /api/ig/post-daily` (`?preview=1` = test without posting)
-- `.github/workflows/ig-daily.yml` — runs every day at 03:30 UTC (09:00 IST)
-- Weekly content rotation: Mon word-of-day · Tue exam tip · Wed country · Thu scholarship ·
-  Fri blog · Sat university requirement · Sun motivation
+- `.github/workflows/ig-daily.yml` — posts **5 times/day**, spaced (09:00 / 12:00 / 15:00 / 18:00 / 21:00 IST)
+- **5 daily post themes (bold "news-page" cards, content pulled from the site's own data):**
+  slot 0 visa/immigration news · 1 study-abroad/education news · 2 daily quiz (vocab + exam MCQ) ·
+  3 exam spotlight (IELTS/TOEFL/GRE/GMAT/PTE/CELPIP/Duolingo) · 4 word of the day.
+  A date offset rotates the content so every slot is fresh each day.
 
 ---
 
@@ -46,12 +48,13 @@ GitHub repo → **Settings → Secrets and variables → Actions → New reposit
 - Name: `IG_POST_SECRET` — Value: **the exact same string** you used on Render.
 
 ## Step 5 — Test safely, then go live
-1. **Preview (no posting):** open in a browser —
-   `https://landingprep.com/api/ig/post-daily?key=YOUR_SECRET&preview=1`
-   You'll get JSON with an `imageUrl` (open it to see today's image) and the `caption`.
-2. **First real post:** GitHub repo → **Actions → "Daily Instagram post" → Run workflow**.
-   Check your Instagram — the post should appear within a minute.
-3. After that it posts **automatically every day**. Nothing else to do.
+1. **Preview all 5 of today's posts (no posting):** open in a browser —
+   `https://landingprep.com/api/ig/post-daily?key=YOUR_SECRET&preview=all`
+   You'll get JSON with 5 `imageUrl`s (open each to see the card) and captions.
+   (Preview a single slot: add `&preview=1&slot=0` … `slot=4`.)
+2. **First real test — post all 5 now:** GitHub repo → **Actions → "Daily Instagram posts" →
+   Run workflow** → set **mode = `all`** → Run. Check your Instagram (5 posts in ~1–2 min).
+3. After that it posts **5×/day automatically** at 09:00/12:00/15:00/18:00/21:00 IST. Nothing else to do.
 
 ---
 

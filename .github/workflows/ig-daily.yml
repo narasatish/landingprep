@@ -1,11 +1,21 @@
-name: Daily Instagram post
+name: Daily Instagram posts
 
-# Posts one on-brand image to the linked Instagram Business account every day.
-# Schedule is in UTC. 03:30 UTC = 09:00 IST. Change as you like, or hit "Run workflow".
+# Posts 5 on-brand images/day to the linked Instagram Business account, spaced through the day.
+# Each run maps the current UTC hour to a "slot" (0..4) = a different content theme:
+#   slot 0 visa/immigration news · 1 study-abroad news · 2 daily quiz · 3 exam guide · 4 word of the day
+# Times are UTC. 03:30 UTC = 09:00 IST, etc. Edit the cron lines or hit "Run workflow" any time.
 on:
   schedule:
-    - cron: "30 3 * * *"
-  workflow_dispatch: {}
+    - cron: "30 3 * * *"    # 09:00 IST → slot 0
+    - cron: "30 6 * * *"    # 12:00 IST → slot 1
+    - cron: "30 9 * * *"    # 15:00 IST → slot 2
+    - cron: "30 12 * * *"   # 18:00 IST → slot 3
+    - cron: "30 15 * * *"   # 21:00 IST → slot 4
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "all = post all 5 now (first test) · single = post the current slot"
+        default: "single"
 
 jobs:
   post:
@@ -19,13 +29,29 @@ jobs:
           done
           sleep 10
 
-      - name: Publish today's post to Instagram
+      - name: Publish today's post(s) to Instagram
         run: |
           set -e
+          H=$(date -u +%H)
+          case "$H" in
+            03|04|05) slot=0 ;;
+            06|07|08) slot=1 ;;
+            09|10|11) slot=2 ;;
+            12|13|14) slot=3 ;;
+            15|16|17) slot=4 ;;
+            *) slot=0 ;;
+          esac
+          # Manual "Run workflow" with mode=all posts all 5 at once (for the first test).
+          if [ "${{ github.event.inputs.mode }}" = "all" ]; then
+            QS="all=1"
+          else
+            QS="slot=$slot"
+          fi
+          echo "UTC hour $H → $QS"
           ok=0
           for attempt in 1 2 3; do
-            code=$(curl -s -o /tmp/resp.json -w "%{http_code}" -m 240 \
-              -X POST "https://landingprep.com/api/ig/post-daily" \
+            code=$(curl -s -o /tmp/resp.json -w "%{http_code}" -m 300 \
+              -X POST "https://landingprep.com/api/ig/post-daily?$QS" \
               -H "x-ig-secret: ${{ secrets.IG_POST_SECRET }}")
             echo "Attempt $attempt — HTTP $code"; cat /tmp/resp.json || true; echo
             if [ "$code" = "200" ]; then ok=1; break; fi
