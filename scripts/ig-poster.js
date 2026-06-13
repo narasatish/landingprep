@@ -115,7 +115,7 @@ function pickImmigrationNews(seed) {
   const n = N[seed % N.length]; const T = THEME.immig;
   return { type: "bulletin", bg: T.bg, accent: T.accent, category: "VISA NEWS · " + n.country.toUpperCase(),
     headline: clip(n.text, 116), highlight: [n.country], sub: "", cta: "Full guide → link in bio",
-    photoQuery: /visa|permit|passport/i.test(n.text) ? n.country + " passport visa" : n.country + " city skyline",
+    photoQuery: pickPhotoQuery(n.country + " " + n.text, "immig"),
     icons: [{ glyph: "doc", label: "What changed" }, { glyph: "check", label: "Who qualifies" }, { glyph: "globe", label: "How to apply" }],
     caption: `🚨 ${n.country.toUpperCase()} UPDATE ${n.flag}${n.date ? " · " + n.date : ""}\n\n${n.text}\n\n📲 SHARE this with someone planning to study in ${n.country}.\n📌 SAVE it so you don't miss the deadline.\n💬 Aiming for ${n.country}? Comment "${n.flag || n.country}" 👇\n\n👉 Full ${n.country} guide — 100% free, link in bio.\nFollow ${HANDLE} for daily visa & study-abroad news 🌍`,
     tags: buildTags("study" + n.country.toLowerCase().replace(/\s+/g, ""), "studentvisa", "immigration", "studyabroad", "landingprep") };
@@ -126,7 +126,7 @@ function pickEducationNews(seed) {
   const pool = edu.length ? edu : B; const p = pool[seed % pool.length]; const T = THEME.edu;
   return { type: "bulletin", bg: T.bg, accent: T.accent, category: (p.tag || "STUDY ABROAD").toUpperCase(),
     headline: clip(p.title, 100), highlight: [], sub: clip(p.excerpt, 120), cta: "Read free → link in bio",
-    photoQuery: /scholar|fund|money|cost|fee/i.test(p.title) ? "scholarship money study" : /university|admission|college/i.test(p.title) ? "university campus students" : "international students study abroad",
+    photoQuery: pickPhotoQuery(p.title, "edu"),
     icons: [{ glyph: "cap", label: "Requirements" }, { glyph: "calendar", label: "Deadlines" }, { glyph: "globe", label: "Apply free" }],
     caption: `📚 ${p.title}\n\n${clip(p.excerpt, 200)}\n\n📲 SHARE this with a friend applying this year.\n📌 SAVE it for your own applications.\n💬 Which country/course are you targeting? Tell us 👇\n\n👉 Read the full guide — free, link in bio.\nFollow ${HANDLE} for daily study-abroad tips ✈️`,
     tags: buildTags((p.tag || "studyabroad").toLowerCase().replace(/[^a-z0-9]/g, ""), "scholarships", "studyabroad2026", "internationalstudents", "landingprep") };
@@ -210,11 +210,16 @@ async function fetchNewsRSS(query) {
     return items.length ? items : null;
   } catch (e) { return null; }
 }
-const PHOTO_COUNTRIES = ["Canada", "Australia", "United Kingdom", "UK", "Britain", "USA", "United States", "America", "Germany", "France", "Ireland", "New Zealand", "Italy", "Netherlands", "Singapore", "Dubai", "India"];
+const PHOTO_COUNTRIES = ["Canada", "Australia", "United Kingdom", "UK", "Britain", "England", "USA", "United States", "America", "Germany", "France", "Ireland", "New Zealand", "Italy", "Netherlands", "Singapore", "Dubai", "India", "Spain", "Sweden", "Switzerland"];
+const LANDMARK = { Canada: "Toronto Canada skyline", Australia: "Sydney Australia opera house", "United Kingdom": "London England Big Ben", UK: "London England Big Ben", Britain: "London England Big Ben", England: "London England Big Ben", USA: "New York city skyline", "United States": "New York city skyline", America: "New York city skyline", Germany: "Berlin Germany Brandenburg gate", France: "Paris France Eiffel Tower", Ireland: "Dublin Ireland", "New Zealand": "Auckland New Zealand", Italy: "Rome Italy Colosseum", Netherlands: "Amsterdam Netherlands canal", Singapore: "Singapore Marina Bay skyline", Dubai: "Dubai skyline Burj Khalifa", India: "India Gateway of India Mumbai", Spain: "Barcelona Spain", Sweden: "Stockholm Sweden", Switzerland: "Switzerland alps zurich" };
 function pickPhotoQuery(title, kind) {
   const f = PHOTO_COUNTRIES.find((c) => new RegExp("\\b" + c + "\\b", "i").test(title));
-  if (f) { const c = /UK|Britain/i.test(f) ? "London United Kingdom" : /USA|America|United States/i.test(f) ? "New York United States" : f; return c + " city landmark"; }
-  return kind === "immig" ? "passport visa airport travel" : "university campus students study";
+  if (f) return LANDMARK[f] || (f + " skyline landmark");           // country named → its iconic landmark
+  const t = String(title).toLowerCase();
+  if (/scholarship|fund|grant|tuition/.test(t)) return "graduation ceremony students celebration";
+  if (/visa|permit|passport|immigration|residen|migrant/.test(t)) return "passport visa travel documents";
+  if (/universit|admission|colleg|campus|enrol/.test(t)) return "university campus students";
+  return kind === "immig" ? "airport international travel" : "students studying abroad campus";
 }
 function fmtDate(s) { try { const d = new Date(s); if (isNaN(d)) return ""; return d.getUTCDate() + " " + ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getUTCMonth()] + " " + d.getUTCFullYear(); } catch (e) { return ""; } }
 function rssToContent(it, kind) {
