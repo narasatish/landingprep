@@ -247,9 +247,13 @@ app.all("/api/ig/post-daily", async (req, res) => {
       // ?preview=all          → preview all 5 of today's posts
       if (pv === "all") {
         const all = [];
-        for (let s = 0; s < ig.SLOTS; s++) { const g = await ig.generateDailyImage({ baseUrl: IG_PUBLIC_BASE, slot: s }); all.push({ slot: s, theme: g.content.category, imageUrl: g.imageUrl, caption: g.caption }); }
+        for (let s = 0; s < ig.SLOTS; s++) {
+          if (s === ig.CAROUSEL_SLOT) { const g = await ig.generateCarousel({ baseUrl: IG_PUBLIC_BASE }); all.push({ slot: s, type: "carousel", theme: g.content.topic, slides: g.imageUrls, caption: g.caption }); }
+          else { const g = await ig.generateDailyImage({ baseUrl: IG_PUBLIC_BASE, slot: s }); all.push({ slot: s, theme: g.content.category, imageUrl: g.imageUrl, caption: g.caption }); }
+        }
         return res.json({ ok: true, preview: true, count: all.length, posts: all });
       }
+      if (Number(slot) === ig.CAROUSEL_SLOT) { const g = await ig.generateCarousel({ baseUrl: IG_PUBLIC_BASE }); return res.json({ ok: true, preview: true, slot, type: "carousel", theme: g.content.topic, slides: g.imageUrls, caption: g.caption }); }
       const gen = await ig.generateDailyImage({ baseUrl: IG_PUBLIC_BASE, slot });
       return res.json({ ok: true, preview: true, slot: gen.slot, theme: gen.content.category, imageUrl: gen.imageUrl, caption: gen.caption });
     }

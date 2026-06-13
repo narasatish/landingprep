@@ -1,21 +1,25 @@
 name: Daily Instagram posts
 
-# Posts 5 on-brand images/day to the linked Instagram Business account, spaced through the day.
-# Each run maps the current UTC hour to a "slot" (0..4) = a different content theme:
-#   slot 0 visa/immigration news · 1 study-abroad news · 2 daily quiz · 3 exam guide · 4 word of the day
-# Times are UTC. 03:30 UTC = 09:00 IST, etc. Edit the cron lines or hit "Run workflow" any time.
+# Posts 8 on-brand posts/day to the linked Instagram Business account, spaced through the day.
+# Each run maps the current UTC hour to a "slot" (0..7) = a different content theme:
+#   0 visa/immigration news · 1 daily quiz · 2 country/college spotlight · 3 study-abroad news ·
+#   4 word of the day · 5 CAROUSEL (rotates: country guide / top colleges / roadmap / exam) ·
+#   6 exam guide · 7 tip / spotlight
+# Times are UTC. 02:30 UTC = 08:00 IST. Edit the cron lines or hit "Run workflow" any time.
 on:
   schedule:
-    - cron: "30 3 * * *"    # 09:00 IST → slot 0 (visa/immigration news)
-    - cron: "30 6 * * *"    # 12:00 IST → slot 1 (study-abroad news)
-    - cron: "30 7 * * *"    # 13:00 IST → CAROUSEL (country guide)
-    - cron: "30 9 * * *"    # 15:00 IST → slot 2 (daily quiz)
-    - cron: "30 12 * * *"   # 18:00 IST → slot 3 (exam guide)
-    - cron: "30 15 * * *"   # 21:00 IST → slot 4 (word of the day)
+    - cron: "30 2 * * *"    # 08:00 IST → slot 0 (visa/immigration news)
+    - cron: "0 4 * * *"     # 09:30 IST → slot 1 (daily quiz)
+    - cron: "30 5 * * *"    # 11:00 IST → slot 2 (country/college spotlight)
+    - cron: "0 7 * * *"     # 12:30 IST → slot 3 (study-abroad news)
+    - cron: "30 8 * * *"    # 14:00 IST → slot 4 (word of the day)
+    - cron: "0 10 * * *"    # 15:30 IST → slot 5 (CAROUSEL)
+    - cron: "0 12 * * *"    # 17:30 IST → slot 6 (exam guide)
+    - cron: "0 14 * * *"    # 19:30 IST → slot 7 (tip / spotlight)
   workflow_dispatch:
     inputs:
       mode:
-        description: "all = post all 5 · carousel = post a country-guide carousel · single = current slot"
+        description: "all = post all 8 now · carousel = post today's carousel · single = current slot"
         default: "single"
 
 jobs:
@@ -35,18 +39,20 @@ jobs:
           set -e
           H=$(date -u +%H)
           case "$H" in
-            03|04|05) slot=0 ;;
-            06) slot=1 ;;
-            07|08) slot=carousel ;;
-            09|10|11) slot=2 ;;
-            12|13|14) slot=3 ;;
-            15|16|17) slot=4 ;;
+            02|03) slot=0 ;;
+            04) slot=1 ;;
+            05|06) slot=2 ;;
+            07) slot=3 ;;
+            08|09) slot=4 ;;
+            10|11) slot=5 ;;
+            12|13) slot=6 ;;
+            14|15) slot=7 ;;
             *) slot=0 ;;
           esac
-          # Manual "Run workflow": mode=all posts all 5; mode=carousel posts a guide carousel.
+          # Manual "Run workflow": mode=all posts all 8; mode=carousel posts today's carousel.
           if [ "${{ github.event.inputs.mode }}" = "all" ]; then
             QS="all=1"
-          elif [ "${{ github.event.inputs.mode }}" = "carousel" ] || [ "$slot" = "carousel" ]; then
+          elif [ "${{ github.event.inputs.mode }}" = "carousel" ] || [ "$slot" = "5" ]; then
             QS="carousel=1"
           else
             QS="slot=$slot"

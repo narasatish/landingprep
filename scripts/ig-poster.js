@@ -22,7 +22,7 @@ const OUT_DIR = path.join(ROOT, "ig-out");
 const HANDLE = "@landing_prep";
 const SITE = "landingprep.com";
 const FONT = "Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif";
-const SLOTS = 5;
+const SLOTS = 8;
 
 // ── data loaders (cached, guarded) ───────────────────────────────────────
 function evalWindow(file) { try { const w = {}; new Function("window", fs.readFileSync(path.join(ROOT, file), "utf8"))(w); return w; } catch (e) { return {}; } }
@@ -256,21 +256,57 @@ async function liveNews(now, slot) {
 }
 async function resolveDailyContent(now, slot) {
   let c = pickForSlot(now, slot);
-  if ((slot === 0 || slot === 1)) { try { const live = await liveNews(now, slot); if (live) c = live; } catch (e) { /* keep curated fallback */ } }
+  if (slot === 0 || slot === 3) { try { const live = await liveNews(now, slot === 0 ? 0 : 1); if (live) c = live; } catch (e) { /* keep curated fallback */ } }
   return c;
 }
 
+// ── extra content: country & college spotlights (stat cards) ──────────────
+let _coll = null;
+function collegesData() { if (_coll) return _coll; const w = evalWindow("college-data.jsx"); const C = w.LP_COLLEGES || []; const a = Array.isArray(C) ? C : (Object.values(C).find((v) => Array.isArray(v)) || []); _coll = a.filter((c) => c && c.name); return _coll; }
+function moneyShort(s) { return String(s || "").replace(/,000/g, "k").replace(/\s*\/\s*yr/i, "").replace(/\s+/g, " ").trim(); }
+function pswShort(s) { const m = String(s || "").match(/(\d+)\s*year/i); return m ? "up to " + m[1] + " yrs" : shortVal(s, 12); }
+function collegeShort(n) { return String(n || "").replace(/^University of /, "U. of ").replace(/ University$/, ""); }
+function pickCountryHighlight(seed) {
+  const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || []; if (!D.length) return null;
+  const c = D[(seed * 3) % D.length]; const stats = [];
+  if (c.avgTuition) stats.push({ v: moneyShort(c.avgTuition), label: "Tuition / yr" });
+  if (c.postStudyWork) stats.push({ v: pswShort(c.postStudyWork), label: "Post-study work" });
+  if (c.visaSuccess) stats.push({ v: "~" + c.visaSuccess + "%", label: "Visa success" });
+  stats.push({ v: String((c.intakes || []).length || 2), label: "Intakes / yr" });
+  const slug = c.name.toLowerCase().replace(/\s+/g, "");
+  return { type: "exam", accent: THEME.edu.accent, category: "COUNTRY SPOTLIGHT", headline: c.name, sub: c.tagline || "Study-abroad destination", stats: stats.slice(0, 4), cta: "Full country guide in bio",
+    caption: `🌍 Why study in ${c.name}? ${c.flag || ""}\n\n${c.tagline || ""}\n${c.avgTuition ? "💰 Tuition: " + c.avgTuition + "\n" : ""}${c.postStudyWork ? "💼 Post-study work: " + c.postStudyWork + "\n" : ""}${c.prTimeline ? "🛂 PR: " + c.prTimeline + "\n" : ""}\n📲 TAG someone considering ${c.name}.\n📌 SAVE this. 💬 Is ${c.name} on your list? 👇\n\n👉 Full ${c.name} guide — link in bio.\nFollow ${HANDLE} for daily study-abroad guides 🌍`,
+    tags: buildTags("study" + slug, "studyin" + slug, "studyabroad", "internationalstudents", "landingprep") };
+}
+function pickCollegeSpotlight(seed) {
+  const C = collegesData(); if (!C.length) return null;
+  const c = C[(seed * 5) % C.length]; const stats = [];
+  if (c.rank) stats.push({ v: "#" + c.rank, label: "World rank" });
+  if (c.feeNote) stats.push({ v: moneyShort(c.feeNote), label: "Tuition / yr" });
+  if (c.acceptance) stats.push({ v: c.acceptance + "%", label: "Acceptance" });
+  if (c.ielts) stats.push({ v: "IELTS " + c.ielts, label: "Min. score" });
+  const cslug = String(c.country).toLowerCase().replace(/\s+/g, "");
+  return { type: "exam", accent: "#7C3AED", category: "TOP UNIVERSITY · " + String(c.country).toUpperCase(), headline: collegeShort(c.name), sub: (c.city || "") + " · " + c.country, stats: stats.slice(0, 4), cta: "Free college predictor in bio",
+    caption: `🎓 ${c.name} — at a glance\n\n${c.rank ? "🌍 World rank: #" + c.rank + "\n" : ""}${c.feeNote ? "💰 Tuition: " + c.feeNote + "\n" : ""}${c.acceptance ? "✅ Acceptance: " + c.acceptance + "%\n" : ""}${c.ielts ? "📊 IELTS " + c.ielts + " · GRE " + (c.gre || "—") + "\n" : ""}${c.deadline ? "🗓 Deadline: " + c.deadline + "\n" : ""}\n📲 TAG a future applicant. 📌 SAVE this.\n💬 Is this your dream school? 👇\n\n👉 Free college predictor — link in bio.\nFollow ${HANDLE} for daily admits info 🎓`,
+    tags: buildTags("studyin" + cslug, "studyabroad", "universityadmission", "topuniversities", "landingprep") };
+}
+function pickCountryOrCollege(seed) { return (seed % 2 ? pickCountryHighlight(seed) : pickCollegeSpotlight(seed)) || pickCountryHighlight(seed) || pickCollegeSpotlight(seed); }
+function pickTipOrSpotlight(seed) { const r = seed % 3; return (r === 0 ? pickTip(seed) : r === 1 ? pickCollegeSpotlight(seed + 17) : pickCountryHighlight(seed + 11)) || pickTip(seed) || pickWordOfDay(seed); }
+
 // day number since epoch (UTC) → stable per-day seed
 function dayNumber(now) { now = now || new Date(); return Math.floor(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86400000); }
-const SLOT_PICKERS = [pickImmigrationNews, pickEducationNews, pickQuiz, pickExamSpotlight, pickWordOfDay];
+// 8 posts/day: 7 singles + 1 carousel (slot 5). Fresh topics daily via date offset.
+const CAROUSEL_SLOT = 5;
+const SLOT_PICKERS = [pickImmigrationNews, pickQuiz, pickCountryOrCollege, pickEducationNews, pickWordOfDay, null, pickExamSpotlight, pickTipOrSpotlight];
 function pickForSlot(now, slot) {
   slot = ((Number(slot) || 0) % SLOTS + SLOTS) % SLOTS;
-  const seed = dayNumber(now) * 5 + slot * 911; // unique per (day, slot); large stride avoids overlap
+  if (slot === CAROUSEL_SLOT) return null;
+  const seed = dayNumber(now) * 8 + slot * 131;
   const chain = [SLOT_PICKERS[slot], pickQuiz, pickWordOfDay, pickImmigrationNews];
-  for (const fn of chain) { const r = fn(seed); if (r) return r; }
+  for (const fn of chain) { const r = fn && fn(seed); if (r) return r; }
   return null;
 }
-function slotFromHour(now) { const h = (now || new Date()).getUTCHours(); return Math.min(SLOTS - 1, Math.floor(((h + 21) % 24) / (24 / SLOTS))); } // 03:30 UTC ≈ slot 0
+function slotFromHour(now) { const h = (now || new Date()).getUTCHours(); return Math.min(SLOTS - 1, Math.max(0, Math.floor(((h + 22) % 24) / 3))); }
 
 // ── image rendering (1080x1080, bold news-page style) ────────────────────
 const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -448,13 +484,17 @@ function renderQuiz(c) {
   return doc(c, head);
 }
 function renderExam(c) {
-  let s = `<text x="64" y="392" font-family="${FONT}" font-size="158" font-weight="900" fill="${C_CREAM}" letter-spacing="-4">${esc(c.headline)}</text>`;
-  s += `<text x="68" y="440" font-family="${FONT}" font-size="28" font-weight="700" fill="${C_GOLD}">${esc(stripEmoji(c.sub || ""))}</text>`;
-  const st = (c.stats || []).slice(0, 4); const bw = 452, bh = 150, gx = 64, gy = 516, gap = 24;
-  st.forEach((box, i) => { const x = gx + (i % 2) * (bw + gap), y = gy + Math.floor(i / 2) * (bh + gap);
-    s += `<rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="20" fill="${hexA("#ffffff", 0.045)}" stroke="${hexA(C_GOLD, 0.28)}" stroke-width="1.5"/>`;
-    s += `<text x="${x + 30}" y="${y + 84}" font-family="${FONT}" font-size="48" font-weight="900" fill="${C_GOLD}">${esc(stripEmoji(box.v))}</text>`;
-    s += `<text x="${x + 30}" y="${y + 124}" font-family="${MONO}" font-size="22" font-weight="700" fill="${C_MUTE}" letter-spacing="1">${esc(box.label.toUpperCase())}</text>`;
+  const hl = String(c.headline || ""); const size = hl.length > 24 ? 60 : hl.length > 13 ? 88 : hl.length > 7 ? 124 : 156;
+  const wl = wrapPlain(hl, Math.max(7, Math.round(990 / (size * 0.58)))).slice(0, 2);
+  let s = "", y = 300;
+  wl.forEach((ln, i) => { s += `<text x="64" y="${y + i * size}" font-family="${FONT}" font-size="${size}" font-weight="900" fill="${C_CREAM}" letter-spacing="-3">${esc(ln)}</text>`; });
+  y = 300 + wl.length * size - Math.round(size * 0.22);
+  s += `<text x="68" y="${y + 12}" font-family="${FONT}" font-size="28" font-weight="700" fill="${C_GOLD}">${esc(stripEmoji(c.sub || ""))}</text>`;
+  const st = (c.stats || []).slice(0, 4); const bw = 452, bh = 146, gx = 64, gap = 24, gy = y + 72;
+  st.forEach((box, i) => { const x = gx + (i % 2) * (bw + gap), by = gy + Math.floor(i / 2) * (bh + gap);
+    s += `<rect x="${x}" y="${by}" width="${bw}" height="${bh}" rx="20" fill="${hexA("#ffffff", 0.045)}" stroke="${hexA(C_GOLD, 0.28)}" stroke-width="1.5"/>`;
+    s += `<text x="${x + 30}" y="${by + 82}" font-family="${FONT}" font-size="44" font-weight="900" fill="${C_GOLD}">${esc(stripEmoji(box.v))}</text>`;
+    s += `<text x="${x + 30}" y="${by + 120}" font-family="${MONO}" font-size="21" font-weight="700" fill="${C_MUTE}" letter-spacing="1">${esc(box.label.toUpperCase())}</text>`;
   });
   return doc(c, s);
 }
@@ -612,7 +652,9 @@ async function generateDailyImage({ baseUrl, now, slot }) {
 }
 async function runDailyPost({ baseUrl, igUserId, token, now, slot }) {
   if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
-  const gen = await generateDailyImage({ baseUrl, now, slot });
+  const sl = slot == null ? slotFromHour(now) : (((Number(slot) || 0) % SLOTS + SLOTS) % SLOTS);
+  if (sl === CAROUSEL_SLOT) { const r = await runCarousel({ baseUrl, igUserId, token, now }); return { ok: true, slot: sl, ...r }; }
+  const gen = await generateDailyImage({ baseUrl, now, slot: sl });
   const res = await postToInstagram({ imageUrl: gen.imageUrl, caption: gen.caption, igUserId, token });
   return { ok: true, slot: gen.slot, mediaId: res.mediaId, theme: gen.content.type + ":" + gen.content.category, imageUrl: gen.imageUrl };
 }
@@ -717,10 +759,64 @@ function buildCountryCarousel(c, seed) {
     tags: buildTags("study" + slug, "studentvisa", "studyabroad", "internationalstudents", "landingprep"),
   };
 }
+function buildTopCollegesCarousel(seed) {
+  const C = collegesData(); if (!C.length) return null;
+  const countries = [...new Set(C.map((c) => c.country))]; const country = countries[seed % countries.length];
+  const list = C.filter((c) => c.country === country).sort((a, b) => (a.rank || 999) - (b.rank || 999)).slice(0, 10);
+  if (list.length < 3) return null;
+  const pts = list.map((c) => `${collegeShort(c.name)} — ${c.rank ? "#" + c.rank + " · " : ""}${c.feeNote || ""}`.trim());
+  const slug = country.toLowerCase().replace(/\s+/g, "");
+  return { topic: "TOP UNIVERSITIES · " + country.toUpperCase(), accent: "#7C3AED", flagCountry: country,
+    slides: [
+      { kind: "cover", title: "Top universities in " + country, sub: "RANKED FOR INTERNATIONAL STUDENTS", flagCountry: country },
+      { kind: "points", title: "The top picks", points: pts.slice(0, 5) },
+      { kind: "points", title: "More great options", points: pts.slice(5, 10) },
+      { kind: "cta" },
+    ],
+    caption: `🎓 Top universities in ${country} for international students 👇\n\nSwipe for world rankings + tuition fees.\n\n📲 SHARE with a future applicant.\n📌 SAVE this list.\n💬 Which one is your dream? 👇\n\n👉 Free college predictor — link in bio.\nFollow ${HANDLE} for daily admits info 🎓`,
+    tags: buildTags("studyin" + slug, "topuniversities", "studyabroad", "universityadmission", "landingprep") };
+}
+function buildAdmissionCarousel(seed) {
+  return { topic: "STUDY ABROAD · ROADMAP", accent: "#0E9F6E", flagCountry: null,
+    slides: [
+      { kind: "cover", title: "How to study abroad in " + YEAR, sub: "YOUR STEP-BY-STEP ROADMAP" },
+      { kind: "points", title: "1 · Plan & prepare", points: ["Shortlist countries & courses (budget, PR, jobs)", "Take your English / aptitude test (IELTS, PTE, GRE…)", "Build your profile: grades, projects, work experience"] },
+      { kind: "points", title: "2 · Apply", points: ["Shortlist 6–8 universities (reach / match / safe)", "Write a strong SOP + get 2–3 LORs", "Submit applications before the deadlines"] },
+      { kind: "points", title: "3 · Fund & fly", points: ["Accept your offer & pay the deposit", "Apply for scholarships & an education loan", "Get your student visa — then book your flight!"] },
+      { kind: "cta" },
+    ],
+    caption: `✈️ How to study abroad — the complete ${YEAR} roadmap 👇\n\nSave this if you're starting your journey.\n\n📲 SHARE with a friend who's planning.\n📌 SAVE the roadmap.\n💬 Which step are you on? 👇\n\n👉 Free tools & guides — link in bio.\nFollow ${HANDLE} for daily study-abroad help ✈️`,
+    tags: buildTags("studyabroad", "studyabroad2026", "internationalstudents", "studyabroadtips", "landingprep") };
+}
+function buildExamCarousel(seed) {
+  const E = examPatterns(); const keys = Object.keys(E); if (!keys.length) return null;
+  const k = keys[seed % keys.length]; const e = E[k]; const name = k.toUpperCase();
+  const secs = (e.sections || []).map((s) => `${s.name}${s.duration ? " — " + s.duration : ""}`);
+  const tips = (e.tips || []).slice(0, 3);
+  return { topic: name + " · EXAM GUIDE", accent: "#0E9F6E", flagCountry: null,
+    slides: [
+      { kind: "cover", title: "The " + name + " exam, explained", sub: ((e.totalDuration ? e.totalDuration + " · " : "") + (e.scoring || "")).toUpperCase() },
+      { kind: "points", title: "The sections", points: secs.slice(0, 5) },
+      tips.length ? { kind: "points", title: "Top tips to score high", points: tips } : null,
+      { kind: "cta" },
+    ],
+    caption: `🎯 The ${name} exam, fully explained 👇\n\nSwipe for sections, scoring & top tips.\n\n📲 TAG someone taking ${name}.\n📌 SAVE this guide.\n💬 When's your test? 👇\n\n👉 Free ${name} mock test — link in bio.\nFollow ${HANDLE} for daily exam prep 📚`,
+    tags: buildTags(k.toLowerCase(), k.toLowerCase() + "preparation", "examprep", "mocktest", "landingprep") };
+}
+function finalizeCarousel(car) {
+  if (!car) return null;
+  const slides = car.slides.filter(Boolean).filter((s) => s.kind !== "points" || (s.points && s.points.filter(Boolean).length));
+  slides.forEach((s, i) => { s.idx = i + 1; s.total = slides.length; s.accent = car.accent; });
+  car.slides = slides; return car;
+}
+// rotate the daily carousel: country guide → top colleges → admission roadmap → exam guide
 function pickCarousel(now) {
-  const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || [];
-  if (!D.length) return null;
-  return buildCountryCarousel(D[dayNumber(now) % D.length], dayNumber(now));
+  const seed = dayNumber(now); const which = seed % 4; let car = null;
+  if (which === 0) { const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || []; if (D.length) car = buildCountryCarousel(D[seed % D.length], seed); }
+  else if (which === 1) car = buildTopCollegesCarousel(seed);
+  else if (which === 2) car = buildAdmissionCarousel(seed);
+  else car = buildExamCarousel(seed);
+  return finalizeCarousel(car) || finalizeCarousel(buildAdmissionCarousel(seed));
 }
 async function generateCarousel({ baseUrl, now }) {
   const car = pickCarousel(now); if (!car) throw new Error("no carousel content");
@@ -756,4 +852,4 @@ async function runCarousel({ baseUrl, igUserId, token, now }) {
   return { ok: true, type: "carousel", topic: gen.content.topic, slides: res.slides, mediaId: res.mediaId };
 }
 
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, SLOTS, OUT_DIR };
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, SLOTS, CAROUSEL_SLOT, OUT_DIR };
