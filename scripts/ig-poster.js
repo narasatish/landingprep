@@ -148,7 +148,24 @@ function wrap(text, max) {
 function tspans(lines, x, startY, lh, attrs) {
   return lines.map((l, i) => `<tspan x="${x}" y="${startY + i * lh}" ${attrs || ""}>${esc(l)}</tspan>`).join("");
 }
-function buildSvg(c) {
+// The headless Linux renderer has no color-emoji font (emoji would show as ▯ boxes),
+// so strip emoji from text drawn INTO the image. Captions keep their emoji (IG renders those).
+function stripEmoji(s) {
+  return String(s == null ? "" : s)
+    .replace(/[\u{1F1E6}-\u{1F1FF}]/gu, "")
+    .replace(/[\u{1F300}-\u{1FAFF}]/gu, "")
+    .replace(/[\u{2600}-\u{27BF}]/gu, "")
+    .replace(/[\u{2B00}-\u{2BFF}]/gu, "")
+    .replace(/[\u{FE00}-\u{FE0F}\u{200D}]/gu, "")
+    .replace(/\s{2,}/g, " ").replace(/\s+([·,.])/g, "$1").trim();
+}
+function buildSvg(c0) {
+  const c = Object.assign({}, c0, {
+    headline: stripEmoji(c0.headline),
+    label: stripEmoji(c0.label),
+    sub: c0.sub ? stripEmoji(c0.sub) : c0.sub,
+    lines: (c0.lines || []).map(stripEmoji).filter(Boolean),
+  });
   const W = 1080, H = 1080, PAD = 90;
   const headLines = wrap(c.headline, c.headline.length > 60 ? 30 : 20).slice(0, 4);
   const headSize = headLines.length >= 3 ? 62 : 78;
@@ -174,7 +191,7 @@ function buildSvg(c) {
   ${c.sub ? `<text x="${PAD}" y="${headStartY + headLines.length * (headSize * 1.06) + 8}" font-family="${fontStack}" font-size="32" font-weight="600" fill="#D7D7FA">${esc(c.sub)}</text>` : ""}
   ${body}
   <text x="${PAD}" y="980" font-family="${fontStack}" font-size="30" font-weight="700" fill="#fff">landingprep.com</text>
-  <text x="${PAD}" y="1018" font-family="${fontStack}" font-size="24" fill="#E9E9FB">100% free exam prep · study-abroad guides · link in bio 🔗</text>
+  <text x="${PAD}" y="1018" font-family="${fontStack}" font-size="24" fill="#E9E9FB">100% free exam prep · study-abroad guides · link in bio</text>
 </svg>`;
 }
 async function renderPng(svg) {
