@@ -348,19 +348,24 @@ function logoMark(x, yTop, h, mode) {
 }
 function wordmark(x, y, size, lightText) { const a = lightText ? "#fff" : "#101828", b = lightText ? "#fff" : "#2563EB"; return `<text x="${x}" y="${y}" font-family="${FONT}" font-size="${size}" font-weight="900" letter-spacing="-0.5"><tspan fill="${a}">Landing</tspan><tspan fill="${b}">Prep</tspan></text>`; }
 function header(c) {
-  return logoMark(64, 64, 46, "color") + wordmark(64 + LOGOW(46) + 14, 100, 30, false) +
-    `<text x="1016" y="92" text-anchor="end" font-family="${FONT}" font-size="24" font-weight="700" fill="#8A93A3">${HANDLE}</text>` +
-    pillSolid(64, 124, c.category, c.accent);
+  return logoMark(56, 46, 44, "white") + wordmark(56 + LOGOW(44) + 12, 86, 28, true) +
+    `<text x="1016" y="82" text-anchor="end" font-family="${MONO}" font-size="16" fill="${C_MUTE}">ATLAS OF DEPARTURE</text>` +
+    `<text x="64" y="176" font-family="${MONO}" font-size="21" font-weight="700" letter-spacing="2" fill="${C_GOLD}">${esc(stripEmoji(c.category))}</text>`;
 }
 function footer(c) {
-  return `<rect x="0" y="980" width="1080" height="100" fill="${c.accent}"/>` +
-    `<text x="64" y="1043" font-family="${FONT}" font-size="31" font-weight="900" fill="#ffffff">${SITE}</text>` +
-    `<text x="1016" y="1043" text-anchor="end" font-family="${FONT}" font-size="25" font-weight="700" fill="rgba(255,255,255,0.92)">${esc(stripEmoji(c.cta || "100% free · link in bio"))}</text>`;
+  const red = c.accent || "#E0492B";
+  return `<rect x="0" y="1004" width="1080" height="76" fill="${red}"/>` +
+    `<text x="64" y="1052" font-family="${FONT}" font-size="29" font-weight="900" fill="#ffffff">${SITE}</text>` +
+    `<text x="1016" y="1052" text-anchor="end" font-family="${FONT}" font-size="24" font-weight="700" fill="rgba(255,255,255,0.92)">${esc(stripEmoji(c.cta || "free · link in bio"))}</text>`;
 }
+// shared cartographic dark frame for quiz / exam / word cards
 function doc(c, body) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
-  <rect width="1080" height="1080" fill="${c.bg}"/>
-  <circle cx="1010" cy="60" r="220" fill="${hexA(c.accent, 0.07)}"/><circle cx="70" cy="930" r="180" fill="${hexA(c.accent, 0.05)}"/>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#0A1330"/><stop offset="0.55" stop-color="#0B1124"/><stop offset="1" stop-color="#070A18"/></linearGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="${C_GOLD}" stop-opacity="0.20"/><stop offset="1" stop-color="${C_GOLD}" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <circle cx="980" cy="150" r="300" fill="url(#glow)"/>
+  ${cartoRings(980, 150)}
   ${header(c)}${body}${footer(c)}
 </svg>`;
 }
@@ -427,42 +432,42 @@ function bulletinOverlaySvg(c) {
 </svg>`;
 }
 function renderQuiz(c) {
-  const qLines = wrapRich(c.question, c.highlight, 28).slice(0, 3); const qY = 244, qSize = 50, lh = 58;
+  const qLines = wrapRich(c.question, c.highlight, 28).slice(0, 3); const qY = 252, qSize = 50, lh = 58;
   let head = "", y = qY + qSize;
-  for (const ln of qLines) { head += `<text x="64" y="${y}" xml:space="preserve" font-family="${FONT}" font-size="${qSize}" font-weight="800" fill="#14181F" letter-spacing="-0.8">${ln.map((w) => `<tspan${w.hi ? ` fill="${c.accent}" font-weight="900"` : ""}>${esc(w.t)} </tspan>`).join("")}</text>`; y += lh; }
-  y += 28; const opts = (c.options || []).slice(0, 4); const boxH = 100;
+  for (const ln of qLines) { head += `<text x="64" y="${y}" xml:space="preserve" font-family="${FONT}" font-size="${qSize}" font-weight="800" fill="${C_CREAM}" letter-spacing="-0.8">${ln.map((w) => `<tspan${w.hi ? ` fill="${C_GOLD}" font-weight="900"` : ""}>${esc(w.t)} </tspan>`).join("")}</text>`; y += lh; }
+  y += 30; const opts = (c.options || []).slice(0, 4); const boxH = 100;
   for (const o of opts) {
     const tl = wrapPlain(o.text, 40).slice(0, 2);
-    head += `<rect x="64" y="${y}" width="952" height="${boxH}" rx="18" fill="#ffffff" stroke="${hexA(c.accent, 0.25)}" stroke-width="2"/>`;
-    head += `<rect x="64" y="${y}" width="84" height="${boxH}" rx="18" fill="${c.accent}"/><rect x="120" y="${y}" width="28" height="${boxH}" fill="${c.accent}"/>`;
-    head += `<text x="106" y="${y + boxH / 2 + 11}" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="900" fill="#fff">${o.L}</text>`;
-    head += `<text font-family="${FONT}" font-size="28" font-weight="600" fill="#1f2937">${tspans(tl, 184, y + (boxH - (tl.length - 1) * 34) / 2 + 10, 34)}</text>`;
+    head += `<rect x="64" y="${y}" width="952" height="${boxH}" rx="18" fill="${hexA("#ffffff", 0.05)}" stroke="${hexA(C_GOLD, 0.32)}" stroke-width="1.5"/>`;
+    head += `<rect x="64" y="${y}" width="92" height="${boxH}" rx="18" fill="${C_GOLD}"/><rect x="128" y="${y}" width="28" height="${boxH}" fill="${C_GOLD}"/>`;
+    head += `<text x="110" y="${y + boxH / 2 + 11}" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="900" fill="#0A1330">${o.L}</text>`;
+    head += `<text font-family="${FONT}" font-size="28" font-weight="500" fill="#DCE2EE">${tspans(tl, 188, y + (boxH - (tl.length - 1) * 34) / 2 + 10, 34)}</text>`;
     y += boxH + 16;
   }
-  head += `<text x="64" y="${Math.min(y + 30, 968)}" font-family="${FONT}" font-size="26" font-weight="800" fill="${c.accent}">Comment A, B, C or D below</text>`;
+  head += `<text x="64" y="${Math.min(y + 30, 968)}" font-family="${FONT}" font-size="26" font-weight="800" fill="${C_GOLD}">Comment A, B, C or D below</text>`;
   return doc(c, head);
 }
 function renderExam(c) {
-  let s = `<text x="64" y="380" font-family="${FONT}" font-size="170" font-weight="900" fill="#14181F" letter-spacing="-4">${esc(c.headline)}</text>`;
-  s += `<text x="68" y="430" font-family="${FONT}" font-size="28" font-weight="700" fill="${c.accent}">${esc(stripEmoji(c.sub || ""))}</text>`;
-  const st = (c.stats || []).slice(0, 4); const bw = 452, bh = 150, gx = 64, gy = 510, gap = 24;
+  let s = `<text x="64" y="392" font-family="${FONT}" font-size="158" font-weight="900" fill="${C_CREAM}" letter-spacing="-4">${esc(c.headline)}</text>`;
+  s += `<text x="68" y="440" font-family="${FONT}" font-size="28" font-weight="700" fill="${C_GOLD}">${esc(stripEmoji(c.sub || ""))}</text>`;
+  const st = (c.stats || []).slice(0, 4); const bw = 452, bh = 150, gx = 64, gy = 516, gap = 24;
   st.forEach((box, i) => { const x = gx + (i % 2) * (bw + gap), y = gy + Math.floor(i / 2) * (bh + gap);
-    s += `<rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="20" fill="#ffffff" stroke="${hexA(c.accent, 0.18)}" stroke-width="2"/>`;
-    s += `<text x="${x + 30}" y="${y + 82}" font-family="${FONT}" font-size="48" font-weight="900" fill="${c.accent}">${esc(stripEmoji(box.v))}</text>`;
-    s += `<text x="${x + 30}" y="${y + 122}" font-family="${FONT}" font-size="24" font-weight="700" fill="#64748b" letter-spacing="1">${esc(box.label.toUpperCase())}</text>`;
+    s += `<rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="20" fill="${hexA("#ffffff", 0.045)}" stroke="${hexA(C_GOLD, 0.28)}" stroke-width="1.5"/>`;
+    s += `<text x="${x + 30}" y="${y + 84}" font-family="${FONT}" font-size="48" font-weight="900" fill="${C_GOLD}">${esc(stripEmoji(box.v))}</text>`;
+    s += `<text x="${x + 30}" y="${y + 124}" font-family="${MONO}" font-size="22" font-weight="700" fill="${C_MUTE}" letter-spacing="1">${esc(box.label.toUpperCase())}</text>`;
   });
   return doc(c, s);
 }
 function renderVocab(c) {
-  const wl = wrapPlain(c.word, 15).slice(0, 2); const ws = wl.length > 1 ? 84 : 116; let y = 250;
-  let s = `<text font-family="${FONT}" font-size="${ws}" font-weight="900" fill="#14181F" letter-spacing="-2">${tspans(wl, 64, y + ws * 0.74, ws)}</text>`;
+  const wl = wrapPlain(c.word, 15).slice(0, 2); const ws = wl.length > 1 ? 84 : 116; let y = 258;
+  let s = `<text font-family="${FONT}" font-size="${ws}" font-weight="900" fill="${C_CREAM}" letter-spacing="-2">${tspans(wl, 64, y + ws * 0.74, ws)}</text>`;
   y += wl.length * ws + 4;
-  if (c.pos) { s += `<text x="66" y="${y}" font-family="${FONT}" font-size="32" font-weight="700" font-style="italic" fill="${c.accent}">${esc(c.pos)}</text>`; y += 56; }
+  if (c.pos) { s += `<text x="66" y="${y}" font-family="${FONT}" font-size="32" font-weight="700" font-style="italic" fill="${C_GOLD}">${esc(c.pos)}</text>`; y += 56; }
   const dl = wrapPlain(c.def, 38).slice(0, 4); const dh = dl.length * 48 + 48;
-  s += `<rect x="64" y="${y}" width="952" height="${dh}" rx="20" fill="${hexA(c.accent, 0.10)}"/><text font-family="${FONT}" font-size="34" font-weight="600" fill="#1f2937">${tspans(dl, 100, y + 60, 48)}</text>`;
+  s += `<rect x="64" y="${y}" width="952" height="${dh}" rx="20" fill="${hexA(C_GOLD, 0.08)}" stroke="${hexA(C_GOLD, 0.22)}" stroke-width="1.5"/><text font-family="${FONT}" font-size="34" font-weight="500" fill="#DCE2EE">${tspans(dl, 100, y + 60, 48)}</text>`;
   y += dh + 36;
-  if (c.ex) { const el = wrapPlain("“" + c.ex + "”", 46).slice(0, 3); s += `<text font-family="${FONT}" font-size="29" font-weight="500" font-style="italic" fill="#475569">${tspans(el, 64, y + 30, 42)}</text>`; y += el.length * 42 + 34; }
-  if (c.syn && y < 900) s += pillSolid(64, y, "SIMILAR: " + c.syn, hexA(c.accent, 0.85).replace("0.85", "1"));
+  if (c.ex) { const el = wrapPlain("“" + c.ex + "”", 46).slice(0, 3); s += `<text font-family="${FONT}" font-size="29" font-weight="500" font-style="italic" fill="${C_MUTE}">${tspans(el, 64, y + 30, 42)}</text>`; y += el.length * 42 + 34; }
+  if (c.syn && y < 900) { const sy = ("SIMILAR: " + c.syn).toUpperCase(); s += `<rect x="64" y="${y}" rx="10" width="${48 + sy.length * 13}" height="46" fill="${hexA(C_GOLD, 0.16)}"/><text x="86" y="${y + 31}" font-family="${MONO}" font-size="19" font-weight="700" fill="${C_GOLD}" letter-spacing="1">${esc(sy)}</text>`; }
   return doc(c, s);
 }
 function buildSvg(c) {
@@ -622,73 +627,77 @@ async function runAllSlots({ baseUrl, igUserId, token, now }) {
 
 // ── CAROUSELS (multi-slide posts — the highest-reach image format) ────────
 const YEAR = "2026";
-function slideHeader(topic, accent, dark) {
-  return logoMark(64, 60, 42, dark ? "white" : "color") + wordmark(64 + LOGOW(42) + 12, 94, 28, !!dark) + pillSolid(64, 116, topic, accent);
+function slideHeader(topic) {
+  return logoMark(56, 46, 42, "white") + wordmark(56 + LOGOW(42) + 12, 84, 26, true) +
+    `<text x="1016" y="80" text-anchor="end" font-family="${MONO}" font-size="16" fill="${C_MUTE}">ATLAS OF DEPARTURE</text>` +
+    `<text x="64" y="172" font-family="${MONO}" font-size="20" font-weight="700" letter-spacing="2" fill="${C_GOLD}">${esc(stripEmoji(topic))}</text>`;
+}
+function cartoBgSvgFrag() {
+  return `<defs><linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#0A1330"/><stop offset="0.55" stop-color="#0B1124"/><stop offset="1" stop-color="#070A18"/></linearGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="${C_GOLD}" stop-opacity="0.20"/><stop offset="1" stop-color="${C_GOLD}" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/><circle cx="980" cy="150" r="300" fill="url(#glow)"/>${cartoRings(980, 150)}`;
 }
 function carouselFooter(idx, total, accent, swipe) {
   return `<rect x="0" y="1004" width="1080" height="76" fill="${accent}"/>` +
     `<text x="64" y="1052" font-family="${FONT}" font-size="25" font-weight="900" fill="#fff">${SITE}</text>` +
     `<text x="1016" y="1052" text-anchor="end" font-family="${FONT}" font-size="24" font-weight="800" fill="rgba(255,255,255,0.95)">${swipe ? "SWIPE  ›" : idx + " / " + total}</text>`;
 }
-// numbered-points content slide (clean branded)
+// numbered-points content slide (cartographic)
 function slidePointsSvg(s) {
-  const a = s.accent;
-  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><rect width="1080" height="1080" fill="#F7F8FC"/><circle cx="1015" cy="70" r="230" fill="${hexA(a, 0.07)}"/>` + slideHeader(s.topic, a);
-  const tl = wrapPlain(s.title, 24).slice(0, 2); let y = 232;
-  svg += `<text font-family="${FONT}" font-size="58" font-weight="900" fill="#14181F" letter-spacing="-1">${tspans(tl, 64, y, 66)}</text>`;
-  y += tl.length * 66 + 46;
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${cartoBgSvgFrag()}` + slideHeader(s.topic);
+  const tl = wrapPlain(s.title, 24).slice(0, 2); let y = 252;
+  svg += `<text font-family="${FONT}" font-size="58" font-weight="900" fill="${C_CREAM}" letter-spacing="-1">${tspans(tl, 64, y, 66)}</text>`;
+  y += tl.length * 66 + 50;
   (s.points || []).slice(0, 5).forEach((p, i) => {
     const pl = wrapPlain(p, 36).slice(0, 2);
-    svg += `<circle cx="100" cy="${y - 6}" r="32" fill="${a}"/><text x="100" y="${y + 4}" text-anchor="middle" font-family="${FONT}" font-size="30" font-weight="900" fill="#fff">${i + 1}</text>`;
-    svg += `<text font-family="${FONT}" font-size="33" font-weight="500" fill="#1f2937">${tspans(pl, 156, y + (pl.length > 1 ? -8 : 4), 44)}</text>`;
+    svg += `<circle cx="100" cy="${y - 6}" r="32" fill="${C_GOLD}"/><text x="100" y="${y + 5}" text-anchor="middle" font-family="${FONT}" font-size="30" font-weight="900" fill="#0A1330">${i + 1}</text>`;
+    svg += `<text font-family="${FONT}" font-size="33" font-weight="500" fill="#DCE2EE">${tspans(pl, 156, y + (pl.length > 1 ? -8 : 4), 44)}</text>`;
     y += (pl.length > 1 ? 124 : 92);
   });
-  return svg + carouselFooter(s.idx, s.total, a) + `</svg>`;
+  return svg + carouselFooter(s.idx, s.total, s.accent) + `</svg>`;
 }
-// final call-to-action slide
+// final call-to-action slide (cartographic)
 function slideCTASvg(s) {
-  const a = s.accent;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
-  <defs><linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${hexA(a, 0.82)}"/></linearGradient></defs>
-  <rect width="1080" height="1080" fill="${a}"/><circle cx="900" cy="180" r="280" fill="rgba(255,255,255,0.07)"/><circle cx="150" cy="940" r="220" fill="rgba(255,255,255,0.06)"/>
-  <text x="540" y="300" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="800" letter-spacing="3" fill="rgba(255,255,255,0.85)">FOUND THIS USEFUL?</text>
-  <text x="540" y="452" text-anchor="middle" font-family="${FONT}" font-size="96" font-weight="900" fill="#fff" letter-spacing="-2">SAVE IT</text>
-  <text x="540" y="560" text-anchor="middle" font-family="${FONT}" font-size="46" font-weight="700" fill="#fff">and share it with a friend</text>
-  <text x="540" y="690" text-anchor="middle" font-family="${FONT}" font-size="40" font-weight="700" fill="rgba(255,255,255,0.92)">Follow ${HANDLE}</text>
-  <text x="540" y="744" text-anchor="middle" font-family="${FONT}" font-size="30" font-weight="500" fill="rgba(255,255,255,0.85)">for a free daily study-abroad guide</text>
-  <rect x="320" y="828" width="440" height="86" rx="43" fill="#fff"/><text x="540" y="883" text-anchor="middle" font-family="${FONT}" font-size="32" font-weight="900" fill="${a}">Full guide in bio</text>
-  <text x="540" y="1010" text-anchor="middle" font-family="${FONT}" font-size="30" font-weight="900" fill="rgba(255,255,255,0.9)">LandingPrep · ${SITE}</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${cartoBgSvgFrag()}
+  <circle cx="540" cy="470" r="118" fill="none" stroke="${C_GOLD}" stroke-width="1.5" opacity="0.45"/>
+  <text x="540" y="300" text-anchor="middle" font-family="${MONO}" font-size="24" letter-spacing="3" fill="${C_GOLD}">FOUND THIS USEFUL?</text>
+  <text x="540" y="500" text-anchor="middle" font-family="${FONT}" font-size="120" font-weight="900" fill="${C_CREAM}" letter-spacing="-3">SAVE IT</text>
+  <text x="540" y="600" text-anchor="middle" font-family="${FONT}" font-size="44" font-weight="600" fill="#DCE2EE">and share it with a friend</text>
+  <text x="540" y="724" text-anchor="middle" font-family="${FONT}" font-size="40" font-weight="800" fill="${C_CREAM}">Follow ${HANDLE}</text>
+  <text x="540" y="776" text-anchor="middle" font-family="${MONO}" font-size="24" fill="${C_MUTE}">for a free daily study-abroad guide</text>
+  <rect x="330" y="848" width="420" height="84" rx="42" fill="${C_GOLD}"/><text x="540" y="902" text-anchor="middle" font-family="${FONT}" font-size="31" font-weight="900" fill="#0A1330">Full guide in bio</text>
+  <text x="540" y="1014" text-anchor="middle" font-family="${MONO}" font-size="22" fill="${C_MUTE}">LANDINGPREP · ${SITE}</text>
 </svg>`;
 }
-// cover slide content (composited over a photo, or dark fallback)
-function slideCoverContent(s) {
-  const big = (s.title || "").length;
-  const size = big > 44 ? 72 : 86;
+// cartographic carousel cover — flight path rising to the country flag, title at the base
+function cartoCoverSvg(s) {
+  const DX = 848, DY = 300, OX = 142, OY = 596, a = s.accent || "#2563EB";
+  const size = (s.title || "").length > 44 ? 64 : 78;
   const lines = wrapRich(s.title, [], Math.round(1040 / (size * 0.5))).slice(0, 3);
-  const lh = size * 1.06, lastB = 940, firstB = lastB - (lines.length - 1) * lh;
-  let svg = lines.map((ln, i) => `<text x="60" y="${firstB + i * lh}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="900" fill="#fff" letter-spacing="-1.5">${ln.map((w) => `<tspan>${esc(w.t)} </tspan>`).join("")}</text>`).join("");
-  const kY = firstB - size - 26;
-  if (s.sub) svg += `<text x="62" y="${kY}" font-family="${FONT}" font-size="26" font-weight="800" fill="#FFD66B">${esc(stripEmoji(s.sub))}</text>`;
-  svg = centerLogo(kY - 70) + svg;
-  svg += `<text x="540" y="978" text-anchor="middle" font-family="${FONT}" font-size="27" font-weight="900" letter-spacing="2" fill="rgba(255,255,255,0.92)">SWIPE TO SEE THE FULL GUIDE  ›</text>`;
-  return (s.flagCountry ? `<rect x="332" y="130" rx="18" width="416" height="284" fill="#ffffff"/>` : "") + svg;
-}
-function slideCoverOverlaySvg(s) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="scc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070D" stop-opacity="0.32"/><stop offset="0.42" stop-color="#05070D" stop-opacity="0.12"/><stop offset="0.66" stop-color="#05070D" stop-opacity="0.6"/><stop offset="1" stop-color="#05070D" stop-opacity="0.96"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#scc)"/>${slideCoverContent(s)}</svg>`;
-}
-function slideCoverDarkSvg(s) {
-  const a = s.accent;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="cd" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#1A2444"/><stop offset="1" stop-color="#06090F"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#cd)"/><circle cx="840" cy="280" r="320" fill="${hexA(a, 0.14)}"/>${slideCoverContent(s)}</svg>`;
+  const lh = size * 1.05, lastB = 906, firstB = lastB - (lines.length - 1) * lh;
+  let head = "";
+  lines.forEach((ln, i) => { head += `<text x="64" y="${firstB + i * lh}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="900" fill="${C_CREAM}" letter-spacing="-1.5">${ln.map((w) => `<tspan>${esc(w.t)} </tspan>`).join("")}</text>`; });
+  const kickY = firstB - size - 22;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${cartoBgSvgFrag()}
+  <path d="M ${OX} ${OY} Q 400 330 ${DX} ${DY}" fill="none" stroke="${C_GOLD}" stroke-width="3"/>
+  <circle cx="${OX}" cy="${OY}" r="7" fill="none" stroke="${C_MUTE}" stroke-width="2"/><circle cx="${OX}" cy="${OY}" r="2.5" fill="${C_MUTE}"/>
+  <text x="${OX + 16}" y="${OY - 5}" font-family="${MONO}" font-size="16" fill="${C_MUTE}">ORIGIN</text>
+  <line x1="${DX - 150}" y1="${DY}" x2="${DX + 150}" y2="${DY}" stroke="${C_GOLD}" stroke-width="1" opacity="0.45"/><line x1="${DX}" y1="${DY - 150}" x2="${DX}" y2="${DY + 150}" stroke="${C_GOLD}" stroke-width="1" opacity="0.45"/>
+  <circle cx="${DX}" cy="${DY}" r="118" fill="none" stroke="${C_GOLD}" stroke-width="1.5" opacity="0.55"/>
+  ${s.flagCountry ? `<rect x="${DX - 104}" y="${DY - 72}" rx="10" width="208" height="144" fill="#ffffff"/>` : `<circle cx="${DX}" cy="${DY}" r="44" fill="none" stroke="${C_GOLD}" stroke-width="2"/><circle cx="${DX}" cy="${DY}" r="9" fill="${C_GREEN}"/>`}
+  ${logoMark(56, 46, 42, "white")}${wordmark(56 + LOGOW(42) + 12, 84, 26, true)}
+  <text x="1016" y="80" text-anchor="end" font-family="${MONO}" font-size="16" fill="${C_MUTE}">ATLAS OF DEPARTURE</text>
+  ${s.sub ? `<text x="64" y="${kickY}" font-family="${MONO}" font-size="20" font-weight="700" letter-spacing="2" fill="${C_GOLD}">${esc(stripEmoji(s.sub))}</text>` : ""}
+  ${head}
+  <rect x="0" y="1004" width="1080" height="76" fill="${a}"/><text x="64" y="1052" font-family="${FONT}" font-size="29" font-weight="900" fill="#fff">${SITE}</text><text x="1016" y="1052" text-anchor="end" font-family="${FONT}" font-size="24" font-weight="800" fill="rgba(255,255,255,0.95)">SWIPE  ›</text>
+</svg>`;
 }
 async function renderCoverPng(s, photoQuery, seed) {
   if (!sharp) throw new Error("sharp not installed");
-  // AI image (if enabled) OR designed brand background + big country flag
-  const [ai, flag] = await Promise.all([aiImage(coverImagePrompt(s)), s.flagCountry ? fetchFlag(s.flagCountry) : Promise.resolve(null)]);
-  let base = null;
-  if (ai) { try { base = sharp(ai).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).modulate({ saturation: 1.06 }); } catch (e) { base = null; } }
-  if (!base) base = sharp(Buffer.from(brandBgSvg({ accent: s.accent || "#2563EB" })));
-  const comps = [{ input: Buffer.from(slideCoverOverlaySvg(s)) }];
-  if (flag) { try { const fb = await sharp(flag).resize(404, 272, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 136, left: 338 }); } catch (e) {} }
+  const flag = s.flagCountry ? await fetchFlag(s.flagCountry) : null;
+  const base = sharp(Buffer.from(cartoCoverSvg(s)));
+  const comps = [];
+  if (flag) { try { const fb = await sharp(flag).resize(204, 142, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 229, left: 746 }); } catch (e) {} }
   return await base.composite(comps).png({ quality: 100, compressionLevel: 9 }).toBuffer();
 }
 function buildCountryCarousel(c, seed) {
