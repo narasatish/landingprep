@@ -102,10 +102,11 @@ const TAGS = {
   quiz: ["quiz", "dailyquiz", "englishquiz", "quiztime", "testyourself", "gkquiz", "knowledgeispower"],
   exam: ["examprep", "testprep", "mocktest", "studytips", "examtips", "studymotivation", "studyhard"],
 };
+// 2026 algorithm: 3-5 highly relevant tags out-reach 30 generic ones. Pass best-first; we keep 5.
 function buildTags() {
   const out = [];
   for (let i = 0; i < arguments.length; i++) { const a = Array.isArray(arguments[i]) ? arguments[i] : [arguments[i]]; for (const t of a) { const x = String(t || "").toLowerCase().replace(/[^a-z0-9]/g, ""); if (x && !out.includes(x)) out.push(x); } }
-  return out.slice(0, 28);
+  return out.slice(0, 5);
 }
 
 // ── content pickers (one per slot) ───────────────────────────────────────
@@ -116,8 +117,8 @@ function pickImmigrationNews(seed) {
     headline: clip(n.text, 116), highlight: [n.country], sub: "", cta: "Full guide → link in bio",
     photoQuery: /visa|permit|passport/i.test(n.text) ? n.country + " passport visa" : n.country + " city skyline",
     icons: [{ glyph: "doc", label: "What changed" }, { glyph: "check", label: "Who qualifies" }, { glyph: "globe", label: "How to apply" }],
-    caption: `🚨 ${n.country.toUpperCase()} UPDATE ${n.flag}${n.date ? " · " + n.date : ""}\n\n${n.text}\n\n📌 SAVE this so you don't miss it.\n💬 Planning to study in ${n.country}? Drop a "${n.flag || n.country}" below 👇\n\n👉 Full ${n.country} guide — 100% free, link in bio.\nFollow ${HANDLE} for daily visa & study-abroad news 🌍`,
-    tags: buildTags(["study" + n.country.toLowerCase().replace(/\s+/g, ""), "studyin" + n.country.toLowerCase().replace(/\s+/g, "")], TAGS.immig, TAGS.core, TAGS.edu) };
+    caption: `🚨 ${n.country.toUpperCase()} UPDATE ${n.flag}${n.date ? " · " + n.date : ""}\n\n${n.text}\n\n📲 SHARE this with someone planning to study in ${n.country}.\n📌 SAVE it so you don't miss the deadline.\n💬 Aiming for ${n.country}? Comment "${n.flag || n.country}" 👇\n\n👉 Full ${n.country} guide — 100% free, link in bio.\nFollow ${HANDLE} for daily visa & study-abroad news 🌍`,
+    tags: buildTags("study" + n.country.toLowerCase().replace(/\s+/g, ""), "studentvisa", "immigration", "studyabroad", "landingprep") };
 }
 function pickEducationNews(seed) {
   const B = blogPosts(); if (!B.length) return null;
@@ -127,8 +128,8 @@ function pickEducationNews(seed) {
     headline: clip(p.title, 100), highlight: [], sub: clip(p.excerpt, 120), cta: "Read free → link in bio",
     photoQuery: /scholar|fund|money|cost|fee/i.test(p.title) ? "scholarship money study" : /university|admission|college/i.test(p.title) ? "university campus students" : "international students study abroad",
     icons: [{ glyph: "cap", label: "Requirements" }, { glyph: "calendar", label: "Deadlines" }, { glyph: "globe", label: "Apply free" }],
-    caption: `📚 ${p.title}\n\n${clip(p.excerpt, 200)}\n\n📌 SAVE this for your applications.\n💬 Which country/course are you aiming for? Tell us below 👇\n\n👉 Read the full guide — free, link in bio.\nFollow ${HANDLE} for daily study-abroad tips ✈️`,
-    tags: buildTags((p.tag || "study").toLowerCase().replace(/[^a-z0-9]/g, ""), TAGS.edu, TAGS.core, TAGS.immig) };
+    caption: `📚 ${p.title}\n\n${clip(p.excerpt, 200)}\n\n📲 SHARE this with a friend applying this year.\n📌 SAVE it for your own applications.\n💬 Which country/course are you targeting? Tell us 👇\n\n👉 Read the full guide — free, link in bio.\nFollow ${HANDLE} for daily study-abroad tips ✈️`,
+    tags: buildTags((p.tag || "studyabroad").toLowerCase().replace(/[^a-z0-9]/g, ""), "scholarships", "studyabroad2026", "internationalstudents", "landingprep") };
 }
 function quizFrom(seedCat, question, raw, ansIdx, tags, examTag, hl) {
   const L = ["A", "B", "C", "D"]; const T = THEME.quiz;
@@ -136,7 +137,7 @@ function quizFrom(seedCat, question, raw, ansIdx, tags, examTag, hl) {
   const options = ord.map((i, k) => ({ L: L[k], text: raw[i], correct: i === ansIdx }));
   const ans = (options.find((o) => o.correct) || options[0]).L;
   return { type: "quiz", bg: T.bg, accent: T.accent, category: seedCat, question, highlight: hl || [], options, answerLetter: ans,
-    caption: `🧠 Can YOU crack this ${examTag} question?\n\n${question}\n\n${options.map((o) => o.L + ") " + o.text).join("\n")}\n\n💬 Comment your answer — A, B, C or D 👇 Let's see who gets it!\n📌 SAVE to revise later.\n\n👉 Free ${examTag} practice — link in bio.\nFollow ${HANDLE} for a daily question 🎯\n.\n.\n.\n✅ Answer: ${ans}`,
+    caption: `🧠 Can YOU crack this ${examTag} question?\n\n${question}\n\n${options.map((o) => o.L + ") " + o.text).join("\n")}\n\n💬 Comment your answer — A, B, C or D 👇\n📲 TAG a friend who'll get this wrong 😏\n📌 SAVE to revise later.\n\n👉 Free ${examTag} practice — link in bio.\nFollow ${HANDLE} for a daily question 🎯\n.\n.\n.\n✅ Answer: ${ans}`,
     tags };
 }
 function pickQuiz(seed) {
@@ -146,11 +147,11 @@ function pickQuiz(seed) {
       const w = W[seed % W.length]; const d = [];
       for (let i = 1; d.length < 3 && i < W.length; i++) { const o = W[(seed + i * 41) % W.length]; if (o.w !== w.w && o.def && !d.find((x) => x.def === o.def)) d.push(o); }
       if (d.length === 3) { const raw = [w.def, d[0].def, d[1].def, d[2].def].map((x) => x.length > 52 ? x.slice(0, 50).replace(/\s\S*$/, "") + "…" : x);
-        return quizFrom("VOCAB QUIZ · IELTS · GRE", `What does “${cap(w.w)}” mean?`, raw, 0, buildTags(TAGS.quiz, TAGS.vocab, TAGS.ielts, TAGS.gre, TAGS.core), "Vocabulary", [cap(w.w)]); }
+        return quizFrom("VOCAB QUIZ · IELTS · GRE", `What does “${cap(w.w)}” mean?`, raw, 0, buildTags("ielts", "vocabulary", "ieltspreparation", "englishvocabulary", "landingprep"), "Vocabulary", [cap(w.w)]); }
     }
   }
-  const Bq = bankQuestions(); if (Bq.length) { const q = Bq[seed % Bq.length];
-    return quizFrom(q.exam + " PRACTICE QUESTION", q.question, q.options, q.ai, buildTags(TAGS.quiz, TAGS[q.exam.toLowerCase()] || [], TAGS.exam, TAGS.core, q.exam.toLowerCase() + "preparation"), q.exam, [q.exam]); }
+  const Bq = bankQuestions(); if (Bq.length) { const q = Bq[seed % Bq.length]; const ex = q.exam.toLowerCase();
+    return quizFrom(q.exam + " PRACTICE QUESTION", q.question, q.options, q.ai, buildTags(ex, ex + "preparation", "examprep", "studyabroad", "landingprep"), q.exam, [q.exam]); }
   return pickQuiz(seed + 1 > 1e6 ? 0 : seed + 1) === null ? null : null; // safety (won't recurse on empty)
 }
 function shortVal(s, n) { s = String(s || "").replace(/\(.*?\)/g, "").replace(/hours?/i, "h").replace(/minutes?/i, "m").replace(/\s+/g, " ").trim(); return s.length > n ? s.slice(0, n).trim() + "…" : s; }
@@ -167,8 +168,8 @@ function pickExamSpotlight(seed) {
   const secNames = (e.sections || []).map((s) => s.name).filter(Boolean).slice(0, 4).join(" · ");
   return { type: "exam", bg: T.bg, accent: T.accent, category: name + " EXAM GUIDE",
     headline: name, sub: secNames, stats, highlight: [], cta: "Free " + name + " mock → link in bio",
-    caption: `🎯 The ${name} exam, explained 👇\n\n${e.totalDuration ? "⏱ Duration: " + e.totalDuration + "\n" : ""}${e.scoring ? "📊 Scoring: " + e.scoring + "\n" : ""}${secNames ? "📝 Sections: " + secNames + "\n" : ""}\n📌 SAVE this — you'll need it.\n💬 Which exam are you preparing for? Comment below 👇\n\n👉 Take a FREE full-length ${name} mock test — link in bio.\nFollow ${HANDLE} for daily exam prep 📚`,
-    tags: buildTags(TAGS[k.toLowerCase()] || [], TAGS.exam, TAGS.core, k.toLowerCase() + "preparation") };
+    caption: `🎯 The ${name} exam, explained 👇\n\n${e.totalDuration ? "⏱ Duration: " + e.totalDuration + "\n" : ""}${e.scoring ? "📊 Scoring: " + e.scoring + "\n" : ""}${secNames ? "📝 Sections: " + secNames + "\n" : ""}\n📲 TAG someone preparing for ${name}.\n📌 SAVE this — you'll need it.\n💬 Which exam are you taking? Comment 👇\n\n👉 FREE full-length ${name} mock test — link in bio.\nFollow ${HANDLE} for daily exam prep 📚`,
+    tags: buildTags(k.toLowerCase(), k.toLowerCase() + "preparation", "examprep", "mocktest", "landingprep") };
 }
 function pickWordOfDay(seed) {
   const W = vocabWords(); if (!W.length) return null;
@@ -176,8 +177,8 @@ function pickWordOfDay(seed) {
   return { type: "vocab", bg: T.bg, accent: T.accent, category: "WORD OF THE DAY",
     word: cap(w.w), pos: w.pos || "", def: w.def, ex: w.ex || "", syn: w.syn || "", highlight: [],
     cta: "Free vocab decks → link in bio",
-    caption: `📖 WORD OF THE DAY: ${cap(w.w)} ${w.pos ? "(" + w.pos + ")" : ""}\n\n${w.def}${w.ex ? "\n\n📝 “" + w.ex + "”" : ""}${w.syn ? "\n\n🔁 Similar: " + w.syn : ""}\n\n📌 SAVE to build your IELTS/GRE vocabulary.\n💬 Can you use “${cap(w.w)}” in a sentence? Try it below 👇\n\n👉 Free vocab decks — link in bio.\nFollow ${HANDLE} for a new word every day 📚`,
-    tags: buildTags(TAGS.vocab, TAGS.ielts, TAGS.gre, TAGS.core, "wordoftheday") };
+    caption: `📖 WORD OF THE DAY: ${cap(w.w)} ${w.pos ? "(" + w.pos + ")" : ""}\n\n${w.def}${w.ex ? "\n\n📝 “" + w.ex + "”" : ""}${w.syn ? "\n\n🔁 Similar: " + w.syn : ""}\n\n📲 TAG a study buddy who's building their vocab.\n📌 SAVE for your IELTS/GRE prep.\n💬 Use “${cap(w.w)}” in a sentence below 👇\n\n👉 Free vocab decks — link in bio.\nFollow ${HANDLE} for a new word daily 📚`,
+    tags: buildTags("ielts", "vocabulary", "wordoftheday", "englishvocabulary", "landingprep") };
 }
 
 // ── LIVE news via Google News RSS (free, no key) — real trending headlines ─
@@ -215,8 +216,8 @@ function rssToContent(it, kind) {
   const cat = (kind === "immig" ? "IMMIGRATION NEWS" : "STUDY-ABROAD NEWS") + (src ? " · " + src.toUpperCase() : "");
   return { type: "bulletin", accent: T.accent, bg: T.bg, category: cat, headline: clip(title, 120), highlight: [],
     photoQuery: pickPhotoQuery(title, kind), live: true, cta: "More news → link in bio",
-    caption: `🚨 ${kind === "immig" ? "IMMIGRATION" : "STUDY-ABROAD"} NEWS${it.date ? " · " + fmtDate(it.date) : ""}\n\n${title}${src ? "\n\n📰 Source: " + (it.source || "") : ""}\n\n📌 SAVE & share this update.\n💬 What's your take? Comment below 👇\n\n👉 Daily study-abroad news + free guides — link in bio.\nFollow ${HANDLE} for trending updates 🌍`,
-    tags: buildTags(kind === "immig" ? TAGS.immig : TAGS.edu, TAGS.core, ["studyabroadnews", "breakingnews", "trending", "immigrationupdate"]) };
+    caption: `🚨 ${kind === "immig" ? "IMMIGRATION" : "STUDY-ABROAD"} NEWS${it.date ? " · " + fmtDate(it.date) : ""}\n\n${title}${src ? "\n\n📰 Source: " + (it.source || "") : ""}\n\n📲 SHARE this — someone you know needs to see it.\n📌 SAVE for reference.\n💬 What's your take? Comment 👇\n\n👉 Daily study-abroad news + free guides — link in bio.\nFollow ${HANDLE} for trending updates 🌍`,
+    tags: buildTags(kind === "immig" ? "studentvisa" : "studyabroad", kind === "immig" ? "immigration" : "scholarships", "studyabroadnews", "internationalstudents", "landingprep") };
 }
 const RSS_Q = {
   immig: ["international student visa news", "study abroad immigration policy", "Express Entry Canada draw", "UK Graduate Route student visa", "Australia student visa changes", "post study work visa", "student visa rule change"],
