@@ -234,11 +234,12 @@ app.all("/api/ig/post-daily", async (req, res) => {
     // slot: which of the 5 daily themes (0..4). If omitted, derived from the UTC hour.
     const hasSlot = req.query.slot != null && req.query.slot !== "";
     const slot = hasSlot ? Number(req.query.slot) : null;
-    if (String(req.query.preview || "") === "1") {
+    const pv = String(req.query.preview || "");
+    if (pv) {
       // ?preview=1            → today's slot for the current hour
       // ?preview=1&slot=N     → preview a specific slot (0..4)
       // ?preview=all          → preview all 5 of today's posts
-      if (String(req.query.preview) === "all") {
+      if (pv === "all") {
         const all = [];
         for (let s = 0; s < ig.SLOTS; s++) { const g = await ig.generateDailyImage({ baseUrl: IG_PUBLIC_BASE, slot: s }); all.push({ slot: s, theme: g.content.category, imageUrl: g.imageUrl, caption: g.caption }); }
         return res.json({ ok: true, preview: true, count: all.length, posts: all });
