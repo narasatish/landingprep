@@ -92,8 +92,9 @@ const THEME = {
 function pickImmigrationNews(seed) {
   const N = newsItems(); if (!N.length) return null;
   const n = N[seed % N.length]; const T = THEME.immig;
-  return { type: "hook", bg: T.bg, accent: T.accent, category: "VISA NEWS · " + n.country.toUpperCase(),
-    headline: n.text, highlight: [n.country], sub: "", cta: "Full guide → link in bio",
+  return { type: "bulletin", bg: T.bg, accent: T.accent, category: "VISA NEWS · " + n.country.toUpperCase(),
+    headline: clip(n.text, 116), highlight: [n.country], sub: "", cta: "Full guide → link in bio",
+    icons: [{ glyph: "doc", label: "What changed" }, { glyph: "check", label: "Who qualifies" }, { glyph: "globe", label: "How to apply" }],
     caption: `🚨 Visa & immigration update — ${n.country} ${n.flag}${n.date ? " (" + n.date + ")" : ""}\n\n${n.text}\n\nFollow ${HANDLE} for daily study-abroad & visa news 🌍\nFull country guides — link in bio 🔗`,
     tags: ["immigration", "studentvisa", "studyabroad", "visaupdate", "immigrationnews", "study" + n.country.toLowerCase().replace(/\s+/g, ""), "prpathway", "internationalstudents"] };
 }
@@ -101,8 +102,9 @@ function pickEducationNews(seed) {
   const B = blogPosts(); if (!B.length) return null;
   const edu = B.filter((p) => /university|scholar|study|admission|guide|country|sop|application|career|exam|ielts|gre|gmat/i.test((p.tag || "") + " " + p.title));
   const pool = edu.length ? edu : B; const p = pool[seed % pool.length]; const T = THEME.edu;
-  return { type: "hook", bg: T.bg, accent: T.accent, category: (p.tag || "STUDY ABROAD").toUpperCase(),
-    headline: p.title, highlight: [], sub: clip(p.excerpt, 130), cta: "Read free → link in bio",
+  return { type: "bulletin", bg: T.bg, accent: T.accent, category: (p.tag || "STUDY ABROAD").toUpperCase(),
+    headline: clip(p.title, 100), highlight: [], sub: clip(p.excerpt, 120), cta: "Read free → link in bio",
+    icons: [{ glyph: "cap", label: "Requirements" }, { glyph: "calendar", label: "Deadlines" }, { glyph: "globe", label: "Apply free" }],
     caption: `📚 ${p.title}\n\n${(p.excerpt || "").slice(0, 200)}\n\nRead the full free guide — link in bio 🔗\nFollow ${HANDLE} for daily study-abroad tips`,
     tags: ["studyabroad", "studyabroadnews", (p.tag || "study").toLowerCase().replace(/\s+/g, ""), "internationalstudents", "studentlife", "scholarships", "universityadmission"] };
 }
@@ -193,14 +195,36 @@ function wrapRich(text, highlights, max) {
   for (const w of words) { if (len + w.t.length + 1 > max && cur.length) { lines.push(cur); cur = []; len = 0; } cur.push(w); len += w.t.length + 1; }
   if (cur.length) lines.push(cur); return lines;
 }
-function richLines(text, highlights, x, yTop, size, maxChars, accent) {
-  const lines = wrapRich(text, highlights, maxChars); const lh = size * 1.12; let y = yTop + size, svg = "";
+function richLines(text, highlights, x, yTop, size, maxChars, accent, baseFill, maxLines) {
+  baseFill = baseFill || "#14181F";
+  let lines = wrapRich(text, highlights, maxChars); if (maxLines) lines = lines.slice(0, maxLines);
+  const lh = size * 1.12; let y = yTop + size, svg = "";
   for (const ln of lines) {
     const spans = ln.map((w) => `<tspan${w.hi ? ` fill="${accent}" font-weight="900"` : ""}>${esc(w.t)} </tspan>`).join("");
-    svg += `<text x="${x}" y="${y}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="800" fill="#14181F" letter-spacing="-1.2">${spans}</text>`;
+    svg += `<text x="${x}" y="${y}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="800" fill="${baseFill}" letter-spacing="-1.2">${spans}</text>`;
     y += lh;
   }
   return { svg, endY: y };
+}
+// simple line-art icons for the dark "news bulletin" callout row
+function icon(name, cx, cy, s, col) {
+  const st = `fill="none" stroke="${col}" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"`;
+  if (name === "doc") return `<rect x="${cx - s * 0.5}" y="${cy - s * 0.68}" width="${s}" height="${s * 1.36}" rx="5" ${st}/><line x1="${cx - s * 0.25}" y1="${cy - s * 0.28}" x2="${cx + s * 0.25}" y2="${cy - s * 0.28}" ${st}/><line x1="${cx - s * 0.25}" y1="${cy + s * 0.02}" x2="${cx + s * 0.25}" y2="${cy + s * 0.02}" ${st}/><line x1="${cx - s * 0.25}" y1="${cy + s * 0.32}" x2="${cx + s * 0.08}" y2="${cy + s * 0.32}" ${st}/>`;
+  if (name === "check") return `<polyline points="${cx - s * 0.5},${cy} ${cx - s * 0.12},${cy + s * 0.4} ${cx + s * 0.55},${cy - s * 0.42}" ${st}/>`;
+  if (name === "globe") return `<circle cx="${cx}" cy="${cy}" r="${s * 0.7}" ${st}/><ellipse cx="${cx}" cy="${cy}" rx="${s * 0.3}" ry="${s * 0.7}" ${st}/><line x1="${cx - s * 0.7}" y1="${cy}" x2="${cx + s * 0.7}" y2="${cy}" ${st}/>`;
+  if (name === "calendar") return `<rect x="${cx - s * 0.6}" y="${cy - s * 0.5}" width="${s * 1.2}" height="${s}" rx="5" ${st}/><line x1="${cx - s * 0.6}" y1="${cy - s * 0.18}" x2="${cx + s * 0.6}" y2="${cy - s * 0.18}" ${st}/><line x1="${cx - s * 0.28}" y1="${cy - s * 0.68}" x2="${cx - s * 0.28}" y2="${cy - s * 0.4}" ${st}/><line x1="${cx + s * 0.28}" y1="${cy - s * 0.68}" x2="${cx + s * 0.28}" y2="${cy - s * 0.4}" ${st}/>`;
+  if (name === "up") return `<polyline points="${cx - s * 0.6},${cy + s * 0.4} ${cx - s * 0.15},${cy - s * 0.08} ${cx + s * 0.12},${cy + s * 0.2} ${cx + s * 0.6},${cy - s * 0.45}" ${st}/><polyline points="${cx + s * 0.28},${cy - s * 0.45} ${cx + s * 0.6},${cy - s * 0.45} ${cx + s * 0.6},${cy - s * 0.13}" ${st}/>`;
+  if (name === "cap") return `<polygon points="${cx},${cy - s * 0.55} ${cx + s * 0.78},${cy - s * 0.16} ${cx},${cy + s * 0.22} ${cx - s * 0.78},${cy - s * 0.16}" ${st}/><path d="M ${cx - s * 0.42} ${cy - s * 0.02} L ${cx - s * 0.42} ${cy + s * 0.36} Q ${cx} ${cy + s * 0.62} ${cx + s * 0.42} ${cy + s * 0.36} L ${cx + s * 0.42} ${cy - s * 0.02}" ${st}/>`;
+  return "";
+}
+function calloutRow(items, y, ring, label) {
+  const xs = [256, 540, 824]; let s = "";
+  items.slice(0, 3).forEach((it, i) => { const cx = xs[i];
+    s += `<circle cx="${cx}" cy="${y}" r="48" fill="rgba(255,255,255,0.04)" stroke="${ring}" stroke-width="2.5"/>`;
+    s += icon(it.glyph, cx, y, 38, ring);
+    s += `<text x="${cx}" y="${y + 92}" text-anchor="middle" font-family="${FONT}" font-size="21" font-weight="800" fill="${label}" letter-spacing="1">${esc(it.label.toUpperCase())}</text>`;
+  });
+  return s;
 }
 function pillSolid(x, y, text, fill) { const t = stripEmoji(text), w = 34 + t.length * 14; return `<rect x="${x}" y="${y}" rx="11" width="${w}" height="48" fill="${fill}"/><text x="${x + 17}" y="${y + 32}" font-family="${FONT}" font-size="22" font-weight="900" letter-spacing="1.2" fill="#fff">${esc(t.toUpperCase())}</text>`; }
 function header(c) {
@@ -228,6 +252,29 @@ function renderHook(c) {
   let s = h.svg, y = h.endY + 24;
   if (c.sub) { const sl = wrapPlain(c.sub, 52).slice(0, 3); s += `<text font-family="${FONT}" font-size="30" font-weight="500" fill="#475569">${tspans(sl, 64, y + 10, 42)}</text>`; }
   return doc(c, s);
+}
+function renderBulletin(c) {
+  const gold = "#F6C75A", red = c.accent || "#E0492B";
+  const big = (c.headline || "").length;
+  const size = big > 95 ? 56 : big > 58 ? 66 : 80;
+  const maxChars = Math.round(1020 / (size * 0.50));
+  const h = richLines(c.headline, c.highlight, 64, 230, size, maxChars, gold, "#FFFFFF", 4);
+  let body = h.svg, y = h.endY + 16;
+  if (c.sub) { const sl = wrapPlain(c.sub, 56).slice(0, 2); body += `<text font-family="${FONT}" font-size="28" font-weight="500" fill="#AEB6C6">${tspans(sl, 64, y + 14, 40)}</text>`; }
+  const icons = c.icons || [{ glyph: "doc", label: "What's new" }, { glyph: "check", label: "Who qualifies" }, { glyph: "globe", label: "How to apply" }];
+  body += calloutRow(icons, 838, gold, "#E6EAF2");
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs><linearGradient id="bgd" x1="0" y1="0" x2="0.7" y2="1"><stop offset="0" stop-color="#101934"/><stop offset="1" stop-color="#080B16"/></linearGradient></defs>
+  <rect width="1080" height="1080" fill="url(#bgd)"/>
+  <circle cx="1010" cy="70" r="270" fill="${red}" opacity="0.12"/><circle cx="70" cy="1010" r="230" fill="${gold}" opacity="0.06"/>
+  <text x="64" y="92" font-family="${FONT}" font-size="29" font-weight="900" fill="#FFFFFF">▲ LandingPrep</text>
+  <text x="1016" y="92" text-anchor="end" font-family="${FONT}" font-size="23" font-weight="700" fill="#7E8AA3">${HANDLE}</text>
+  ${pillSolid(64, 122, c.category, red)}
+  ${body}
+  <rect x="0" y="980" width="1080" height="100" fill="${red}"/>
+  <text x="64" y="1043" font-family="${FONT}" font-size="31" font-weight="900" fill="#ffffff">${SITE}</text>
+  <text x="1016" y="1043" text-anchor="end" font-family="${FONT}" font-size="25" font-weight="700" fill="rgba(255,255,255,0.92)">${esc(stripEmoji(c.cta || "Full guide in bio"))}</text>
+</svg>`;
 }
 function renderQuiz(c) {
   const qLines = wrapRich(c.question, c.highlight, 28).slice(0, 3); const qY = 244, qSize = 50, lh = 58;
@@ -269,7 +316,7 @@ function renderVocab(c) {
   return doc(c, s);
 }
 function buildSvg(c) {
-  return c.type === "quiz" ? renderQuiz(c) : c.type === "exam" ? renderExam(c) : c.type === "vocab" ? renderVocab(c) : renderHook(c);
+  return c.type === "bulletin" ? renderBulletin(c) : c.type === "quiz" ? renderQuiz(c) : c.type === "exam" ? renderExam(c) : c.type === "vocab" ? renderVocab(c) : renderHook(c);
 }
 async function renderPng(svg) { if (!sharp) throw new Error("sharp not installed — run: npm install sharp"); return await sharp(Buffer.from(svg)).png().toBuffer(); }
 
