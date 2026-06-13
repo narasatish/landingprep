@@ -40,6 +40,7 @@ automatically. You only do the one-time setup below (~15 min). After that: zero 
 | `IG_ACCESS_TOKEN` | the never-expiring System User token from Step 2.5 |
 | `IG_POST_SECRET` | any long random string you invent (e.g. a 32-char password) |
 | `PUBLIC_BASE_URL` | `https://landingprep.com` |
+| `PEXELS_API_KEY` | *(optional)* free key from **pexels.com/api** → adds real photo backgrounds to the news cards. If unset, news cards use the dark-gradient style instead. |
 
 Save → Render redeploys. **Never put these in code/git** — env only (same as your Firebase key).
 

@@ -94,6 +94,7 @@ function pickImmigrationNews(seed) {
   const n = N[seed % N.length]; const T = THEME.immig;
   return { type: "bulletin", bg: T.bg, accent: T.accent, category: "VISA NEWS · " + n.country.toUpperCase(),
     headline: clip(n.text, 116), highlight: [n.country], sub: "", cta: "Full guide → link in bio",
+    photoQuery: /visa|permit|passport/i.test(n.text) ? n.country + " passport visa" : n.country + " city skyline",
     icons: [{ glyph: "doc", label: "What changed" }, { glyph: "check", label: "Who qualifies" }, { glyph: "globe", label: "How to apply" }],
     caption: `🚨 Visa & immigration update — ${n.country} ${n.flag}${n.date ? " (" + n.date + ")" : ""}\n\n${n.text}\n\nFollow ${HANDLE} for daily study-abroad & visa news 🌍\nFull country guides — link in bio 🔗`,
     tags: ["immigration", "studentvisa", "studyabroad", "visaupdate", "immigrationnews", "study" + n.country.toLowerCase().replace(/\s+/g, ""), "prpathway", "internationalstudents"] };
@@ -104,6 +105,7 @@ function pickEducationNews(seed) {
   const pool = edu.length ? edu : B; const p = pool[seed % pool.length]; const T = THEME.edu;
   return { type: "bulletin", bg: T.bg, accent: T.accent, category: (p.tag || "STUDY ABROAD").toUpperCase(),
     headline: clip(p.title, 100), highlight: [], sub: clip(p.excerpt, 120), cta: "Read free → link in bio",
+    photoQuery: /scholar|fund|money|cost|fee/i.test(p.title) ? "scholarship money study" : /university|admission|college/i.test(p.title) ? "university campus students" : "international students study abroad",
     icons: [{ glyph: "cap", label: "Requirements" }, { glyph: "calendar", label: "Deadlines" }, { glyph: "globe", label: "Apply free" }],
     caption: `📚 ${p.title}\n\n${(p.excerpt || "").slice(0, 200)}\n\nRead the full free guide — link in bio 🔗\nFollow ${HANDLE} for daily study-abroad tips`,
     tags: ["studyabroad", "studyabroadnews", (p.tag || "study").toLowerCase().replace(/\s+/g, ""), "internationalstudents", "studentlife", "scholarships", "universityadmission"] };
@@ -253,27 +255,43 @@ function renderHook(c) {
   if (c.sub) { const sl = wrapPlain(c.sub, 52).slice(0, 3); s += `<text font-family="${FONT}" font-size="30" font-weight="500" fill="#475569">${tspans(sl, 64, y + 10, 42)}</text>`; }
   return doc(c, s);
 }
-function renderBulletin(c) {
+// content layer for the dark "news" cards (no background — composited over photo OR dark gradient)
+function bulletinInner(c) {
   const gold = "#F6C75A", red = c.accent || "#E0492B";
   const big = (c.headline || "").length;
   const size = big > 95 ? 56 : big > 58 ? 66 : 80;
   const maxChars = Math.round(1020 / (size * 0.50));
   const h = richLines(c.headline, c.highlight, 64, 230, size, maxChars, gold, "#FFFFFF", 4);
   let body = h.svg, y = h.endY + 16;
-  if (c.sub) { const sl = wrapPlain(c.sub, 56).slice(0, 2); body += `<text font-family="${FONT}" font-size="28" font-weight="500" fill="#AEB6C6">${tspans(sl, 64, y + 14, 40)}</text>`; }
+  if (c.sub) { const sl = wrapPlain(c.sub, 56).slice(0, 2); body += `<text font-family="${FONT}" font-size="28" font-weight="500" fill="#C8CEDC">${tspans(sl, 64, y + 14, 40)}</text>`; }
   const icons = c.icons || [{ glyph: "doc", label: "What's new" }, { glyph: "check", label: "Who qualifies" }, { glyph: "globe", label: "How to apply" }];
-  body += calloutRow(icons, 838, gold, "#E6EAF2");
+  body += calloutRow(icons, 838, gold, "#EDF0F6");
+  return `<text x="64" y="92" font-family="${FONT}" font-size="29" font-weight="900" fill="#FFFFFF">▲ LandingPrep</text>` +
+    `<text x="1016" y="92" text-anchor="end" font-family="${FONT}" font-size="23" font-weight="700" fill="#AEB6C6">${HANDLE}</text>` +
+    pillSolid(64, 122, c.category, red) + body +
+    `<rect x="0" y="980" width="1080" height="100" fill="${red}"/>` +
+    `<text x="64" y="1043" font-family="${FONT}" font-size="31" font-weight="900" fill="#ffffff">${SITE}</text>` +
+    `<text x="1016" y="1043" text-anchor="end" font-family="${FONT}" font-size="25" font-weight="700" fill="rgba(255,255,255,0.95)">${esc(stripEmoji(c.cta || "Full guide in bio"))}</text>`;
+}
+// fallback (no photo): opaque dark gradient card
+function renderBulletin(c) {
+  const red = c.accent || "#E0492B", gold = "#F6C75A";
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
   <defs><linearGradient id="bgd" x1="0" y1="0" x2="0.7" y2="1"><stop offset="0" stop-color="#101934"/><stop offset="1" stop-color="#080B16"/></linearGradient></defs>
   <rect width="1080" height="1080" fill="url(#bgd)"/>
   <circle cx="1010" cy="70" r="270" fill="${red}" opacity="0.12"/><circle cx="70" cy="1010" r="230" fill="${gold}" opacity="0.06"/>
-  <text x="64" y="92" font-family="${FONT}" font-size="29" font-weight="900" fill="#FFFFFF">▲ LandingPrep</text>
-  <text x="1016" y="92" text-anchor="end" font-family="${FONT}" font-size="23" font-weight="700" fill="#7E8AA3">${HANDLE}</text>
-  ${pillSolid(64, 122, c.category, red)}
-  ${body}
-  <rect x="0" y="980" width="1080" height="100" fill="${red}"/>
-  <text x="64" y="1043" font-family="${FONT}" font-size="31" font-weight="900" fill="#ffffff">${SITE}</text>
-  <text x="1016" y="1043" text-anchor="end" font-family="${FONT}" font-size="25" font-weight="700" fill="rgba(255,255,255,0.92)">${esc(stripEmoji(c.cta || "Full guide in bio"))}</text>
+  ${bulletinInner(c)}
+</svg>`;
+}
+// transparent text+scrim layer composited OVER a fetched photo
+function bulletinOverlaySvg(c) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs><linearGradient id="sc" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#070A14" stop-opacity="0.88"/><stop offset="0.44" stop-color="#070A14" stop-opacity="0.52"/>
+    <stop offset="0.74" stop-color="#070A14" stop-opacity="0.72"/><stop offset="1" stop-color="#070A14" stop-opacity="0.93"/>
+  </linearGradient></defs>
+  <rect width="1080" height="1080" fill="url(#sc)"/>
+  ${bulletinInner(c)}
 </svg>`;
 }
 function renderQuiz(c) {
@@ -320,6 +338,33 @@ function buildSvg(c) {
 }
 async function renderPng(svg) { if (!sharp) throw new Error("sharp not installed — run: npm install sharp"); return await sharp(Buffer.from(svg)).png().toBuffer(); }
 
+// fetch a relevant square stock photo from the free Pexels API (returns Buffer or null)
+const PEXELS_KEY = process.env.PEXELS_API_KEY || "";
+async function fetchPexels(query, seed) {
+  if (!PEXELS_KEY || !query) return null;
+  try {
+    const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=15&orientation=square&size=medium`, { headers: { Authorization: PEXELS_KEY } });
+    if (!r.ok) return null;
+    const j = await r.json(); const ph = (j.photos || []); if (!ph.length) return null;
+    const pick = ph[(Math.abs(seed || 0)) % ph.length];
+    const url = pick && pick.src && (pick.src.large2x || pick.src.large || pick.src.original); if (!url) return null;
+    const img = await fetch(url); if (!img.ok) return null;
+    return Buffer.from(await img.arrayBuffer());
+  } catch (e) { return null; }
+}
+// render a "news" card: photo background (if available) + dark scrim + text, else opaque dark card
+async function renderBulletinPng(c, seed) {
+  if (!sharp) throw new Error("sharp not installed");
+  const photo = await fetchPexels(c.photoQuery, seed);
+  if (photo) {
+    try {
+      return await sharp(photo).resize(1080, 1080, { fit: "cover", position: "attention" })
+        .composite([{ input: Buffer.from(bulletinOverlaySvg(c)) }]).png().toBuffer();
+    } catch (e) { /* corrupt/unsupported image → fall back */ }
+  }
+  return await sharp(Buffer.from(renderBulletin(c))).png().toBuffer();
+}
+
 // ── caption + publish ────────────────────────────────────────────────────
 function buildCaption(c) { const tags = (c.tags || []).map((t) => "#" + t).join(" "); return (c.caption || c.headline || "") + (tags ? "\n\n" + tags : ""); }
 async function postToInstagram({ imageUrl, caption, igUserId, token }) {
@@ -340,7 +385,8 @@ async function whoami({ token }) {
 async function generateDailyImage({ baseUrl, now, slot }) {
   if (slot == null) slot = slotFromHour(now);
   const c = pickForSlot(now, slot); if (!c) throw new Error("no content for slot " + slot);
-  const png = await renderPng(buildSvg(c));
+  const seed = dayNumber(now) * 5 + (Number(slot) || 0);
+  const png = c.type === "bulletin" ? await renderBulletinPng(c, seed) : await renderPng(buildSvg(c));
   fs.mkdirSync(OUT_DIR, { recursive: true });
   try { for (const f of fs.readdirSync(OUT_DIR)) { const fp = path.join(OUT_DIR, f); if (Date.now() - fs.statSync(fp).mtimeMs > 7200000) fs.unlinkSync(fp); } } catch (e) {}
   const name = `post-${slot}-${Date.now()}.png`; fs.writeFileSync(path.join(OUT_DIR, name), png);
