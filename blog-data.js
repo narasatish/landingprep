@@ -32390,6 +32390,40 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
           `Absolutely. Impact \u2260 headcount. A story about how you improved retention from 80% to 89% on a 3-person team is MORE impressive than "I hired 20 people" if you can't articulate the business effect. Focus on the metric change, the problem you solved, and the resources you managed (time, budget, or scope). Schools value thoughtful leadership of small teams over token management of large ones.`
         ]
       ]
+    },
+    {
+      "id": "pte-score-chart-and-score-guide",
+      "tag": "PTE",
+      "date": "2026",
+      "title": "PTE Academic Score Chart & Guide 2026: What Score You Need",
+      "excerpt": "PTE Academic scoring explained \u2014 the 10\u201390 scale, approximate conversion to IELTS, what universities and visas require, and how the score is calculated.",
+      "kw": "PTE score chart, PTE Academic scoring, PTE to IELTS conversion, PTE 65 score, PTE requirements",
+      "sections": [
+        {
+          "h": "PTE Academic Scoring Scale (10\u201390)",
+          "body": "PTE Academic uses a 10\u201390 scale in 1-point increments, not bands. Roughly, 50 is intermediate, 65 is upper-intermediate, and 79 is advanced. You cannot score half-points. Your Overall Score is based on performance across Listening, Reading, Writing, and Speaking, each also 10\u201390. The test is computer-scored and adjusts for difficulty, so raw answers vary by administration."
+        },
+        {
+          "h": "Section Breakdown and Interpretation",
+          "body": "Listening assesses comprehension; Reading tests vocabulary, grammar, and understanding; Writing evaluates essays and summaries for grammar, fluency, and coherence; Speaking assesses pronunciation and oral fluency. Because PTE uses integrated tasks, one task can contribute to more than one skill score. Universities often set minimum scores per skill (e.g., Speaking 65) in addition to the overall score."
+        },
+        {
+          "h": "PTE to IELTS Concordance (Approximate)",
+          "body": "Approximate equivalences: PTE 50 \u2248 IELTS 5\u20135.5; PTE 58 \u2248 IELTS 6; PTE 65 \u2248 IELTS 6.5; PTE 73 \u2248 IELTS 7; PTE 79 \u2248 IELTS 7.5; PTE 85 \u2248 IELTS 8. These are guidance ranges, not exact conversions, and depend on the test form. Confirm the exact requirement with your target university or visa authority, and check the official concordance table."
+        },
+        {
+          "h": "University and Visa Requirements",
+          "body": "UK universities often require PTE 59\u201367 for bachelor's and 65\u201375 for master's. Canada typically expects 60\u201370 overall. Australian universities set their own minimums, typically 58\u201375. Many universities now list PTE alongside IELTS and TOEFL. Visa authorities set their own English requirements separately from universities. Check your target institution's official website for exact PTE minimums, as they change."
+        },
+        {
+          "h": "Advantages of PTE Scoring",
+          "body": "PTE typically reports scores within about five business days, faster than IELTS. The 1-point scale allows precise differentiation, useful when programmes are competitive. Scores are sent electronically to institutions, and the test allows relatively quick rebooking for retakes. Computer scoring means your accent is not penalised as long as pronunciation is clear and consistent."
+        },
+        {
+          "h": "Preparing for Your PTE Target Score",
+          "body": "Identify your target score from your university's requirement (often 65\u201373). Practice full-length mock tests to track progress and focus on weaker sections \u2014 Speaking and Writing are often the hardest for non-native speakers. Use authentic practice questions. Practise free PTE preparation on LandingPrep to sharpen grammar, vocabulary, and timing across all tasks."
+        }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;
