@@ -183,14 +183,37 @@
         description: "Free step-by-step guides on study-abroad visas, costs, funding and PR for the USA, Canada, UK, Europe & Australia \u2014 plus IELTS, TOEFL, PTE, GRE & GMAT score targets and study plans."
       });
     }, []);
-    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "blog", onNav }), /* @__PURE__ */ React.createElement("div", { className: "seo-shell blg-index" }, /* @__PURE__ */ React.createElement("div", { className: "seo-hero" }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Study Tips \xB7 Strategy \xB7 Comparisons"), /* @__PURE__ */ React.createElement("h1", { className: "h1", style: { marginTop: 8, fontSize: "clamp(32px,5vw,48px)" } }, "Free study-abroad & exam guides"), /* @__PURE__ */ React.createElement("p", { className: "body-lg muted", style: { maxWidth: 720, marginTop: 12 } }, "Step-by-step guides on visas, costs, funding and PR for the USA, Canada, UK, Europe & Australia \u2014 plus score targets and study plans for IELTS, TOEFL, PTE, GRE and GMAT.")), /* @__PURE__ */ React.createElement("div", { className: "seo-grid" }, ARTICLES.map((a) => {
+    const [query, setQuery] = useState("");
+    const [tag, setTag] = useState("");
+    const tagCounts = {};
+    ARTICLES.forEach((a) => {
+      if (a.tag) tagCounts[a.tag] = (tagCounts[a.tag] || 0) + 1;
+    });
+    const tags = Object.keys(tagCounts).sort((a, b) => tagCounts[b] - tagCounts[a]);
+    const q = query.trim().toLowerCase();
+    const filtered = ARTICLES.filter(
+      (a) => (!tag || a.tag === tag) && (!q || (a.title + " " + (a.excerpt || "") + " " + (a.kw || "") + " " + (a.tag || "")).toLowerCase().includes(q))
+    );
+    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "blog", onNav }), /* @__PURE__ */ React.createElement("div", { className: "seo-shell blg-index" }, /* @__PURE__ */ React.createElement("div", { className: "seo-hero" }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Study Tips \xB7 Strategy \xB7 Comparisons"), /* @__PURE__ */ React.createElement("h1", { className: "h1", style: { marginTop: 8, fontSize: "clamp(32px,5vw,48px)" } }, "Free study-abroad & exam guides"), /* @__PURE__ */ React.createElement("p", { className: "body-lg muted", style: { maxWidth: 720, marginTop: 12 } }, "Step-by-step guides on visas, costs, funding and PR for the USA, Canada, UK, Europe & Australia \u2014 plus score targets and study plans for IELTS, TOEFL, PTE, GRE and GMAT.")), /* @__PURE__ */ React.createElement("div", { className: "blg-filterbar" }, /* @__PURE__ */ React.createElement("div", { className: "blg-search" }, /* @__PURE__ */ React.createElement("span", { className: "blg-search-ic", "aria-hidden": "true" }, "\u{1F50E}"), /* @__PURE__ */ React.createElement(
+      "input",
+      {
+        type: "search",
+        value: query,
+        onChange: (e) => setQuery(e.target.value),
+        placeholder: `Search ${ARTICLES.length} guides \u2014 e.g. "Canada visa", "GMAT", "scholarship"\u2026`,
+        "aria-label": "Search guides"
+      }
+    ), query && /* @__PURE__ */ React.createElement("button", { className: "blg-search-clear", onClick: () => setQuery(""), "aria-label": "Clear search" }, "\u2715")), /* @__PURE__ */ React.createElement("div", { className: "blg-chips", role: "tablist", "aria-label": "Filter by topic" }, /* @__PURE__ */ React.createElement("button", { className: "blg-chip" + (tag === "" ? " active" : ""), onClick: () => setTag("") }, "All ", /* @__PURE__ */ React.createElement("span", { className: "blg-chip-n" }, ARTICLES.length)), tags.map((t) => /* @__PURE__ */ React.createElement("button", { key: t, className: "blg-chip" + (tag === t ? " active" : ""), onClick: () => setTag(tag === t ? "" : t) }, t, " ", /* @__PURE__ */ React.createElement("span", { className: "blg-chip-n" }, tagCounts[t]))))), filtered.length === 0 ? /* @__PURE__ */ React.createElement("div", { className: "blg-noresults" }, /* @__PURE__ */ React.createElement("p", null, "No guides match ", q ? `"${query}"` : "that filter", tag ? ` in ${tag}` : "", "."), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => {
+      setQuery("");
+      setTag("");
+    } }, "Clear filters")) : /* @__PURE__ */ React.createElement("div", { className: "seo-grid" }, filtered.map((a) => {
       const words = (a.sections || []).reduce((n, s) => n + ((s.body || "") + " " + (s.steps || []).join(" ") + " " + (s.bullets || []).join(" ")).split(/\s+/).length, 0);
       const mins = Math.max(2, Math.round(words / 200));
       return /* @__PURE__ */ React.createElement(
         "div",
         {
           key: a.id,
-          className: "seo-card reveal",
+          className: "seo-card",
           onClick: () => onOpen(a.id),
           role: "button",
           tabIndex: 0,

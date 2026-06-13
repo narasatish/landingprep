@@ -209,6 +209,96 @@
           "Focus on the domain(s) where you scored lowest; drill 10–15 questions daily for 2 weeks",
           "Use this prep guide as a reference while practicing—repetition builds confidence"
         ]
+      },
+      {
+        "emoji": "📄",
+        "title": "Digital SAT Reading & Writing: Passage Types & Formats",
+        "points": [
+          "Passages: short (25-150 words), medium (150-250 words), and paired; most have one multiple-choice Q per passage",
+          "Passage types: literature, history/social science, STEM (natural science), foundational texts (Constitution, Declaration)",
+          "One Q per passage format: no long passage with multiple Qs; instead, many short passages",
+          "Paired passages: two short texts on related topics; last Q compares or synthesizes both passages"
+        ],
+        "example": {
+          "label": "Passage Format Example",
+          "text": "Literature passage: 150 words on a scene from a novel. Q: What does the author suggest about the character's motivation? (One inference Q per passage.)"
+        },
+        "tip": "Short passages reward speed and focus—identify the central claim in the first sentence, answer the Q, move on."
+      },
+      {
+        "emoji": "🎯",
+        "title": "Digital SAT Reading & Writing: Command of Evidence",
+        "points": [
+          "Command of Evidence Qs: Which choice most strongly supports the statement...? or What evidence best illustrates...?",
+          "Strategy: identify the claim in the Q, scan the passage for direct supporting evidence (facts, quotes, examples)",
+          "Match precision: evidence must directly support the claim, not just be tangentially related",
+          "Distractor trap: other options may be true but don't support the specific claim in the Q"
+        ],
+        "example": {
+          "label": "Command of Evidence Example",
+          "text": "Claim: The inventor was persistent despite setbacks. Evidence: She failed 100 times before succeeding. (Direct support.) Trap: She earned a patent. (True but doesn't show persistence through setbacks.)"
+        },
+        "tip": "For command of evidence, trace from claim to evidence; if there's no direct link, it's a distractor."
+      },
+      {
+        "emoji": "📚",
+        "title": "Digital SAT Reading & Writing: Words in Context",
+        "points": [
+          "Words in Context Qs: choose the word/phrase that best completes the sentence",
+          "Strategy: cover the blank; read the sentence and guess what word fits meaning-wise, then match to choices",
+          "Consider tone and formality: bro (casual) vs. gentleman (formal) are contextually different",
+          "Dictionary trap: a word's dictionary definition may not match its usage in the passage; rely on context, not memory"
+        ],
+        "example": {
+          "label": "Words in Context Example",
+          "text": "Sentence: The novel is a _____ of human relationships. Blank word fits? exploration (study of) or monument (structure)? Context (relationships study) — exploration."
+        },
+        "tip": "Read the full sentence and surrounding context before deciding—don't rely on the blank word in isolation."
+      },
+      {
+        "emoji": "✏️",
+        "title": "Digital SAT Reading & Writing: Standard English Conventions (Grammar)",
+        "points": [
+          "Conventions Qs: subject-verb agreement, pronoun-antecedent agreement, tense consistency, comma usage, parallelism",
+          "No tricks: unlike Reading, these have clear right/wrong answers—one choice is grammatically correct",
+          "Common traps: collective nouns (team = singular), pronoun reference (they/them must match noun), verb tense shifts",
+          "Comma rules: separate independent clauses (need and/but/or), set off introductory phrases, separate items in series"
+        ],
+        "example": {
+          "label": "Conventions Example",
+          "text": "WRONG: The team are preparing their strategy. (Collective noun team is singular.) RIGHT: The team is preparing its strategy. (Singular verb is + singular pronoun its.)"
+        },
+        "tip": "For conventions Qs, check subject-verb and pronoun-antecedent agreement first—they're the most common errors."
+      },
+      {
+        "emoji": "📊",
+        "title": "Digital SAT Reading & Writing: Transitions & Logical Flow",
+        "points": [
+          "Transition Qs: select the word/phrase that logically connects two sentences or ideas",
+          "Relationship types: addition (also, furthermore), contrast (however, in contrast), cause-effect (because, therefore), time (then, previously)",
+          "Read before and after the blank to identify the logical relationship",
+          "No relationship = trap; pick the transition that best captures the connection"
+        ],
+        "example": {
+          "label": "Transition Example",
+          "text": "Sentence 1: The experiment failed. Sentence 2: The researchers tried again with a new approach. Transition: However (contrast) or Therefore (cause-effect)? However fits—failure contradicts trying again."
+        },
+        "tip": "Identify the logical relationship (same direction or opposite direction?) before selecting a transition."
+      },
+      {
+        "emoji": "🔤",
+        "title": "Digital SAT Reading & Writing: Rhetorical Skills & Word Choice",
+        "points": [
+          "Rhetorical Qs: does a word choice strengthen the author's argument, match the tone, or clarify meaning?",
+          "Register (formality): academic paper uses indicate (formal); casual blog uses show (informal)",
+          "Connotation: slender vs. scrawny both mean thin, but connotations differ (slender = elegant; scrawny = malnourished)",
+          "Purpose: consider why the author chose a specific word—Does it persuade? Inform? Entertain?"
+        ],
+        "example": {
+          "label": "Rhetorical Word Choice",
+          "text": "Academic passage on climate: Use compelling evidence (authoritative). Casual blog: Use pretty cool findings (informal). Mismatch = wrong tone."
+        },
+        "tip": "Identify the passage's tone and audience first—it sets the bar for word-choice correctness."
       }
     ]
   },
@@ -442,6 +532,92 @@
           "Drill 15–20 questions daily in that domain for 2–3 weeks until you hit 90%+ accuracy",
           "Use this guide as your reference while solving problems—build muscle memory"
         ]
+      },
+      {
+        "emoji": "🔢",
+        "title": "Digital SAT Math: Section Format & Adaptive Testing",
+        "points": [
+          "Two modules: Module 1 (22 questions, 25 min), Module 2 (22 questions, 25 min); total 44 questions in 50 min",
+          "Adaptive: Module 2 difficulty adjusts based on Module 1 performance. Strong Module 1 = harder Module 2 = higher ceiling",
+          "Question types: Multiple-choice (4 options), Student-Produced Response (grid-in answers, no multiple choice)",
+          "Topics: algebra, advanced math, problem-solving, geometry, trigonometry, statistics, probability"
+        ],
+        "tip": "The adaptive design means performance on Module 1 directly affects Module 2 difficulty—don't rush Module 1."
+      },
+      {
+        "emoji": "🧮",
+        "title": "Digital SAT Math: Calculator Allowed Throughout",
+        "points": [
+          "Calculator rule: allowed on ALL 44 questions—use it liberally for arithmetic, roots, exponents, graphing",
+          "Desmos graphing calculator: integrated into the test; use for parabolas, exponential functions, system solutions",
+          "Efficiency: not all Qs need a calculator; simple algebra is often faster by hand",
+          "Common trap: entering expression wrong into Desmos; double-check your input before submitting"
+        ],
+        "example": {
+          "label": "Calculator Use Example",
+          "text": "Q: Solve 2x^2 + 3x - 5 = 0. Use Desmos: input y = 2x^2 + 3x - 5, find x-intercepts. Faster than quadratic formula."
+        },
+        "tip": "For graphing and complex arithmetic, use Desmos or your calculator. For simple algebra, work by hand."
+      },
+      {
+        "emoji": "📐",
+        "title": "Digital SAT Math: Major Topics & Content Areas",
+        "points": [
+          "Algebra: linear equations, inequalities, systems, polynomials, exponents, radicals (~25% of Qs)",
+          "Advanced Math: quadratics, exponential functions, polynomials, rational functions, complex numbers (~30%)",
+          "Problem-Solving & Data Analysis: percentages, ratios, probability, statistics, scatter plots (~20%)",
+          "Geometry & Trigonometry: angles, triangles, circles, area, volume, sine/cosine/tangent, radian measure (~15%)"
+        ],
+        "example": {
+          "label": "Topic Distribution",
+          "text": "In a typical 44-Q test: ~11 Algebra, ~13 Advanced Math, ~9 Problem-Solving, ~6-7 Geometry/Trig. (Varies by test.)"
+        },
+        "tip": "Know which topics are your weak areas—drill those more in practice before test day."
+      },
+      {
+        "emoji": "📝",
+        "title": "Digital SAT Math: Student-Produced Responses (Grid-In Answers)",
+        "points": [
+          "Format: you enter a numerical answer directly into a grid (no multiple choice); answer format varies (decimal, fraction, whole number)",
+          "No negatives: grid-in Qs typically ask for positive answers (percentage, distance, count)",
+          "Rounding: if your answer is 4.666..., grid 4.67 or 4.666 (both accepted). Recheck the Q for rounding instructions",
+          "Fractions: enter as decimals (2/3 = 0.666... or 0.67); no slashes allowed in the grid"
+        ],
+        "example": {
+          "label": "Grid-In Example",
+          "text": "Q: What is the average of 5, 8, and 11? Answer: (5+8+11)/3 = 8. Grid: 8. (No need for 8.0; both accepted.)"
+        },
+        "tip": "For grid-in Qs, verify your calculation twice before submitting—there's no partial credit, just right/wrong."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "Digital SAT Math: Pacing Across Two Modules (50 min total)",
+        "points": [
+          "Module 1: 22 Qs in 25 min (~68 sec/Q average); questions increase in difficulty throughout the module",
+          "Module 2: 22 Qs in 25 min; difficulty adjusts based on Module 1 (easier if you struggled; harder if you excelled)",
+          "Early Qs: typically easier; move fast (~45 sec). Late Qs: typically harder; allow more time (~2 min)",
+          "Time checkpoint: at 12.5 min, aim to finish Q1-12 in Module 1. At 37.5 min, aim to finish Module 1 (25 min) + Q1-12 of Module 2 (12.5 min)"
+        ],
+        "example": {
+          "label": "Pacing Example",
+          "text": "Module 1, Q1-5: ~5 min (1 min/Q). Module 1, Q18-22: ~10 min (2 min/Q). Allocate time proportionally to difficulty."
+        },
+        "tip": "Don't spend 5 min on a hard Module 1 Q—skip it, finish the module, come back in the remaining time."
+      },
+      {
+        "emoji": "⚠️",
+        "title": "Digital SAT Math: Common Traps & Mistakes",
+        "points": [
+          "Misread the Q: Find 2x vs. Find x; How many vs. What percent—re-read the final question before answering",
+          "Unit errors: Q asks for meters; you calculated centimeters. Check unit conversions.",
+          "Extreme answers: an answer of -1000 or 1,000,000 might be wrong if Q expects a reasonable value (e.g., percentage should be 0-100)",
+          "Desmos entry errors: y = 2x + 3 entered as 2x + 3 (missing y =) produces no graph—double-check syntax"
+        ],
+        "example": {
+          "label": "Trap Example",
+          "text": "Q: Find the number of students. Answers: (A) 0.5, (B) 5, (C) 50, (D) 500. (A) is unreasonable (half a student). Likely (B) or (C)."
+        },
+        "tip": "Before submitting, ask: Does this answer make sense in the real world? If not, recalculate."
       }
     ]
   },
@@ -645,6 +821,92 @@
           "Focus on your weakest part (A, B, or C) with targeted practice for 1–2 weeks",
           "Use this guide while practicing—return to specific strategies (Part A expeditious, Part C skimming) as needed"
         ]
+      },
+      {
+        "emoji": "📖",
+        "title": "OET Reading: Format & Three-Part Structure",
+        "points": [
+          "OET Reading = 3 parts (Parts A, B, C); total time 60 minutes; 42 questions across 3 medical texts",
+          "Part A (Expeditious Reading): 5 questions, 15 minutes; match headings to paragraphs (title-matching task)",
+          "Part B (Careful Reading): 5 questions, 20 minutes; detailed comprehension, short-answer or multiple-choice",
+          "Part C (Scanning): 10 questions, 15 minutes; locate specific information in the text (sentence completion, true/false)"
+        ],
+        "tip": "Each part tests a different skill—speed (A), detail (B), precision (C). Don't use the same strategy for all three."
+      },
+      {
+        "emoji": "⚡",
+        "title": "OET Reading Part A: Expeditious Reading & Heading Matching",
+        "points": [
+          "Task: match 5 headings to 5 paragraphs in a text; tests skimming and paragraph main ideas",
+          "Strategy: read first sentence + topic sentence of each paragraph; ignore details and examples",
+          "Don't read word-for-word; scan for keywords that match the headings",
+          "Common trap: a heading may partially match but not capture the main point—read the full paragraph before confirming"
+        ],
+        "example": {
+          "label": "Heading Matching Example",
+          "text": "Heading: Complications of Hypertension. Paragraph 1: talks about blood pressure measurement. Paragraph 2: lists stroke, MI, kidney damage. Match heading to Paragraph 2."
+        },
+        "tip": "Skim the headings first to anticipate what topics are coming—it primes your brain to spot them faster."
+      },
+      {
+        "emoji": "🔍",
+        "title": "OET Reading Parts B & C: Careful Reading & Scanning Strategies",
+        "points": [
+          "Part B: read the entire text carefully; answer detailed comprehension Qs; allows note-taking",
+          "Part C: scan for specific information (dates, names, values); questions target precise details",
+          "Note-taking (B): underline key facts, mark definitions, circle dates; saves re-reading time",
+          "Scanning (C): use question keywords to locate the answer fast; don't re-read the full text"
+        ],
+        "example": {
+          "label": "Part B vs. Part C",
+          "text": "Part B: What is the main cause of diabetes in the text? (requires understanding). Part C: What was the patient's blood glucose level on 15 March? (locate the exact value)."
+        },
+        "tip": "Part B rewards deep reading; Part C rewards fast scanning. Adjust your pace and focus for each part."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "OET Reading: Time Management Across All Three Parts",
+        "points": [
+          "Part A: 15 min (don't spend >3 min per heading; if unsure, guess and move on)",
+          "Part B: 20 min (read the text carefully once; answer Qs without re-reading unless necessary)",
+          "Part C: 15 min (scan for answers; each Q should take <1.5 min)",
+          "Overage: if you're over time in Part A, skip to Part B—Part B and C have more questions and higher value"
+        ],
+        "example": {
+          "label": "Time Checkpoint",
+          "text": "At 15 min: finish Part A (5 Qs). At 35 min: finish Part B (5 Qs). At 50 min: aim for 8/10 Part C Qs. Last 10 min: guess remaining Qs."
+        },
+        "tip": "Don't linger on hard heading matches—move on and come back if time allows. Part B and C have higher payoff."
+      },
+      {
+        "emoji": "🏥",
+        "title": "OET Reading: Medical Vocabulary & Context Recognition",
+        "points": [
+          "OET texts use healthcare jargon—you need functional medical English vocabulary (symptoms, treatments, diagnoses, procedures)",
+          "Vocabulary in context: if you don't know a word, look for clues in surrounding sentences (definitions, examples, cause-effect)",
+          "Common medical terms: hypertension (high BP), acute (sudden/short), chronic (long-term), comorbidity (two conditions together)",
+          "Abbreviations: BP (blood pressure), MI (myocardial infarction/heart attack), CVA (stroke), DM (diabetes mellitus)"
+        ],
+        "example": {
+          "label": "Medical Vocabulary in Context",
+          "text": "Text: The patient presented with acute dyspnea and was admitted to ICU. Unknown: dyspnea. Clue: admitted to ICU implies serious breathing issue. Dyspnea = shortness of breath."
+        },
+        "tip": "Build a medical vocabulary list from practice tests—focus on terms that appear multiple times across OET texts."
+      },
+      {
+        "emoji": "🎯",
+        "title": "OET Reading: Skimming vs. Scanning — When to Use Each",
+        "points": [
+          "Skimming (Part A): fast, superficial reading to find paragraph topics; ignore examples, details, supporting evidence",
+          "Scanning (Part C): eyes search for specific keywords/numbers; ignore everything else until you find the target",
+          "Skimming speed: 2-3 min for a 500-word text. Scanning speed: <1.5 min per question",
+          "Don't confuse them: skimming for Part C will miss details; scanning for Part A is too slow"
+        ],
+        "example": {
+          "label": "Skimming vs. Scanning",
+          "text": "Skim: This paragraph discusses treatment options... (main idea, move on). Scan: Find the date of the surgery. Eyes jump to 15 March 2023—don't read surrounding sentences."
+        },
+        "tip": "For Part A, rely on skim; for Part C, rely on scan. Master both speeds in practice tests."
       }
     ]
   },
@@ -847,6 +1109,92 @@
           "Practice note-taking: listen to a 3–5 minute healthcare talk and write down key information",
           "Use this guide while taking mocks—refer to specific strategies (Part A note-taking, Part C structure) as you practice"
         ]
+      },
+      {
+        "emoji": "🎧",
+        "title": "OET Listening: Format & Three-Part Structure",
+        "points": [
+          "OET Listening = 3 parts; total time 45 minutes; healthcare-context audio (consultations, handovers, presentations)",
+          "Part A (Consultation Notes): listen to patient-doctor consultation (4-5 min audio); complete notes (20 blanks)",
+          "Part B & C (Professional Exchanges): listen to healthcare professional exchanges; multiple-choice or short-answer Qs (7 Qs each)",
+          "Accent variety: accents from UK, US, Australia, India; tests listening comprehension across accents"
+        ],
+        "tip": "You hear each section ONCE—no replay. Pre-read questions/note-taking framework BEFORE listening."
+      },
+      {
+        "emoji": "📝",
+        "title": "OET Listening Part A: Note-Taking & Completion Strategy",
+        "points": [
+          "Task: complete 20 blanks in a consultation note while listening (25-30 min consultation, compressed to 4-5 min)",
+          "Pre-listening: scan the note to identify what information is missing (medication, date, symptom, test result)",
+          "Listen actively: focus on keywords related to blanks; ignore chit-chat and repetition",
+          "Spelling: correct spelling required; medical terms must be accurate (e.g., metformin not metformine)"
+        ],
+        "example": {
+          "label": "Note-Taking Example",
+          "text": "Blank: Diagnosis: _____. Audio: The patient has type 2 diabetes mellitus. Write: Type 2 diabetes mellitus (full term, correct spelling)."
+        },
+        "tip": "Pre-read the note and circle blanks—it primes your ear to listen for those specific pieces of information."
+      },
+      {
+        "emoji": "🏥",
+        "title": "OET Listening: Healthcare Contexts & Common Scenarios",
+        "points": [
+          "Consultation: patient describes symptoms to doctor; includes chief complaint, history, physical exam findings, diagnosis, treatment plan",
+          "Handover: one healthcare professional briefs another about a patient; includes patient ID, condition, recent events, plan",
+          "Presentation: clinical case discussion, research findings, or procedural briefing; formal tone",
+          "Common topics: chronic disease management, acute illness, medication review, discharge planning, test result discussion"
+        ],
+        "example": {
+          "label": "Scenario Recognition",
+          "text": "Audio cue: Good morning, I'm handing over Mr. Smith to you. He presented with... (Handover context; expect patient update, not new diagnosis)."
+        },
+        "tip": "Identify the scenario (consultation, handover, presentation) in the first 30 seconds—it sets your listening framework."
+      },
+      {
+        "emoji": "🎤",
+        "title": "OET Listening: Accents & Pronunciation Challenges",
+        "points": [
+          "OET tests British English accents (primary), American, Australian, and South Asian accents",
+          "Accent differences: aardvark pronunciation varies; word stress shifts (e.g., REcord vs. re-CORD)",
+          "Medication names: can be pronounced differently depending on accent; context + spelling clues help",
+          "Numbers: thirteen vs. thirty, 15 vs. 50 — listen carefully for clarity"
+        ],
+        "example": {
+          "label": "Accent Variation Example",
+          "text": "British: Schedule = SHED-jool. American: SKED-jool. Both correct; context helps identify which medication/procedure is meant."
+        },
+        "tip": "In practice, listen to a variety of accents—get your ear used to different pronunciations before test day."
+      },
+      {
+        "emoji": "📋",
+        "title": "OET Listening: Effective Note-Taking & Note-Sharing",
+        "points": [
+          "Note format: use abbreviations (Pt = patient, Hx = history, Sx = symptoms, R/O = rule out) to write faster",
+          "Organize: group notes by category (Chief Complaint, HPI [History of Present Illness], Exam, Plan) to mimic clinical structure",
+          "Don't transcript: don't try to write everything; focus on key facts (dates, values, names, decisions)",
+          "Re-read post-listening: after audio ends, you have time to review and fill remaining blanks from memory"
+        ],
+        "example": {
+          "label": "Effective Note-Taking",
+          "text": "Audio: Mr. Johnson, 65, presented with chest pain, shortness of breath, and diaphoresis. Write: M, 65y. CP, SOB, diaphoresis. (Abbreviations save time; organized by symptoms.)"
+        },
+        "tip": "Develop a personal abbreviation system in practice and stick to it—consistency helps you write and read your notes faster."
+      },
+      {
+        "emoji": "🔑",
+        "title": "OET Listening: Gist Recognition & Inference (Parts B & C)",
+        "points": [
+          "Gist: the main idea or purpose of what's being said, not just specific words",
+          "Inference: reading between the lines (tone, intent, implication); Q might ask What does the speaker imply about the patient's prognosis?",
+          "Keyword spotting: identify the topic (medication choice, risk discussion, discharge plan) to predict question type",
+          "Traps: one answer may contain correct words but wrong meaning; listen for context, not just matching words"
+        ],
+        "example": {
+          "label": "Inference Example",
+          "text": "Audio: The patient is stable now, but given the family history and age, we should closely monitor cardiovascular risk. Inference Q: What is the doctor concerned about? Answer: Long-term heart disease risk."
+        },
+        "tip": "Focus on tone and speaker intent, not just the literal words—OET rewards understanding, not transcription."
       }
     ]
   }

@@ -188,6 +188,17 @@
         description: "Free step-by-step guides on study-abroad visas, costs, funding and PR for the USA, Canada, UK, Europe & Australia — plus IELTS, TOEFL, PTE, GRE & GMAT score targets and study plans.",
       });
     }, []);
+    const [query, setQuery] = useState("");
+    const [tag, setTag] = useState("");
+    // Topic chips, most-used first.
+    const tagCounts = {};
+    ARTICLES.forEach((a) => { if (a.tag) tagCounts[a.tag] = (tagCounts[a.tag] || 0) + 1; });
+    const tags = Object.keys(tagCounts).sort((a, b) => tagCounts[b] - tagCounts[a]);
+    const q = query.trim().toLowerCase();
+    const filtered = ARTICLES.filter((a) =>
+      (!tag || a.tag === tag) &&
+      (!q || (a.title + " " + (a.excerpt || "") + " " + (a.kw || "") + " " + (a.tag || "")).toLowerCase().includes(q))
+    );
     return (
       <>
         <window.LP_TopBar current="blog" onNav={onNav} />
@@ -200,24 +211,49 @@
             </p>
           </div>
 
-          <div className="seo-grid">
-            {ARTICLES.map((a) => {
-              const words = (a.sections || []).reduce((n, s) => n + ((s.body || "") + " " + (s.steps || []).join(" ") + " " + (s.bullets || []).join(" ")).split(/\s+/).length, 0);
-              const mins = Math.max(2, Math.round(words / 200));
-              return (
-                <div key={a.id} className="seo-card reveal" onClick={() => onOpen(a.id)} role="button" tabIndex={0}
-                     onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && onOpen(a.id)}>
-                  <div className="seo-card-top">
-                    <span className="tag">{a.tag}</span>
-                    <span className="seo-readtime">{mins} min read</span>
-                  </div>
-                  <h3>{a.title}</h3>
-                  <p>{a.excerpt}</p>
-                  <span className="seo-card-cta">Read guide →</span>
-                </div>
-              );
-            })}
+          <div className="blg-filterbar">
+            <div className="blg-search">
+              <span className="blg-search-ic" aria-hidden="true">🔎</span>
+              <input type="search" value={query} onChange={(e) => setQuery(e.target.value)}
+                     placeholder={`Search ${ARTICLES.length} guides — e.g. "Canada visa", "GMAT", "scholarship"…`}
+                     aria-label="Search guides" />
+              {query && <button className="blg-search-clear" onClick={() => setQuery("")} aria-label="Clear search">✕</button>}
+            </div>
+            <div className="blg-chips" role="tablist" aria-label="Filter by topic">
+              <button className={"blg-chip" + (tag === "" ? " active" : "")} onClick={() => setTag("")}>All <span className="blg-chip-n">{ARTICLES.length}</span></button>
+              {tags.map((t) => (
+                <button key={t} className={"blg-chip" + (tag === t ? " active" : "")} onClick={() => setTag(tag === t ? "" : t)}>
+                  {t} <span className="blg-chip-n">{tagCounts[t]}</span>
+                </button>
+              ))}
+            </div>
           </div>
+
+          {filtered.length === 0 ? (
+            <div className="blg-noresults">
+              <p>No guides match {q ? `"${query}"` : "that filter"}{tag ? ` in ${tag}` : ""}.</p>
+              <button className="btn" onClick={() => { setQuery(""); setTag(""); }}>Clear filters</button>
+            </div>
+          ) : (
+            <div className="seo-grid">
+              {filtered.map((a) => {
+                const words = (a.sections || []).reduce((n, s) => n + ((s.body || "") + " " + (s.steps || []).join(" ") + " " + (s.bullets || []).join(" ")).split(/\s+/).length, 0);
+                const mins = Math.max(2, Math.round(words / 200));
+                return (
+                  <div key={a.id} className="seo-card" onClick={() => onOpen(a.id)} role="button" tabIndex={0}
+                       onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && onOpen(a.id)}>
+                    <div className="seo-card-top">
+                      <span className="tag">{a.tag}</span>
+                      <span className="seo-readtime">{mins} min read</span>
+                    </div>
+                    <h3>{a.title}</h3>
+                    <p>{a.excerpt}</p>
+                    <span className="seo-card-cta">Read guide →</span>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
         <window.LP_Footer />
       </>

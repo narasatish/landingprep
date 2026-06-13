@@ -271,6 +271,96 @@
         ],
         "cta": "Free ACT English Mock Test Available",
         "tip": "Consistent practice beats cramming. Aim for 15 min/day, 5 days/week."
+      },
+      {
+        "emoji": "✏️",
+        "title": "ACT English: The Three Question Subtypes",
+        "points": [
+          "Grammar/Mechanics: subject-verb agreement, pronoun usage, verb tense, comma rules, fragments, run-ons (~50 Qs)",
+          "Rhetorical Skills: word choice, tone, logical order, conciseness, relevance, transitions (~25 Qs)",
+          "NO CHANGE option: always appears; it IS sometimes the correct answer if the sentence is already correct",
+          "Strategy: Grammar Qs have a single right answer; Rhetorical Qs favor the best fit—tone and context matter"
+        ],
+        "example": {
+          "label": "Grammar vs. Rhetorical",
+          "text": "Grammar: The list of errors were... (subject-verb). Rhetorical: Choose the phrase that best captures the author's intent (subjective best fit)."
+        },
+        "tip": "If a sentence is already grammatically correct and fits the passage's tone, pick NO CHANGE—don't force a revision."
+      },
+      {
+        "emoji": "📝",
+        "title": "ACT English: Conciseness & Eliminating Redundancy",
+        "points": [
+          "Redundancy: saying the same thing twice (the final end, continue on, completely finish)",
+          "Wordiness: using unnecessary words (due to the fact that = because, at the present time = now)",
+          "Active voice: usually shorter and clearer than passive (She wrote the report vs. The report was written by her)",
+          "Filter out excess: if two answer choices mean the same thing, pick the shorter one"
+        ],
+        "example": {
+          "label": "Conciseness Example",
+          "text": "WRONG: In the end, she finally decided to ultimately choose option A. RIGHT: She chose option A. Eliminates redundant finally, ultimately."
+        },
+        "tip": "Ask: Can I say the same thing in fewer words? If yes, the longer option is probably wrong."
+      },
+      {
+        "emoji": "🔗",
+        "title": "ACT English: Transitions & Logical Flow",
+        "points": [
+          "Transitions signal relationships: addition (also, furthermore), contrast (however, yet, instead), cause-effect (therefore, as a result), sequence (first, next, later)",
+          "Wrong transition = wrong logic. I studied hard. However, I passed (implies contradiction, but shouldn't)",
+          "Insertion point: sometimes the Q asks where to place a sentence; pick where it logically fits",
+          "Coherence: sentences should flow smoothly; awkward transitions disrupt the reader"
+        ],
+        "example": {
+          "label": "Transition Example",
+          "text": "WRONG: The experiment was successful. Furthermore, the results contradicted the hypothesis. RIGHT: The experiment was successful. However, the results contradicted the hypothesis."
+        },
+        "tip": "When stuck between transitions, ask: Does this sentence add to the previous one, or contradict/change direction?"
+      },
+      {
+        "emoji": "🎭",
+        "title": "ACT English: Tone & Voice Consistency",
+        "points": [
+          "Tone: is the passage formal, casual, ironic, sarcastic, neutral? Match new words/phrases to the tone.",
+          "Voice: does the passage use active (we discovered) or passive (it was discovered)? Stay consistent.",
+          "Person shift: don't shift from one to you or from third-person to first-person without reason",
+          "Audience: academic paper vs. casual blog post = different tone; match the register"
+        ],
+        "example": {
+          "label": "Tone Consistency Example",
+          "text": "Formal passage: Use The data indicates... Not: The data is super cool... Casual passage: Use You'll love this... Not: The aforementioned phenomenon..."
+        },
+        "tip": "Read the opening sentences to identify the passage's tone—it's your baseline for every word-choice Q."
+      },
+      {
+        "emoji": "🚫",
+        "title": "ACT English: The NO CHANGE Option — When to Choose It",
+        "points": [
+          "NO CHANGE is correct ~20-25% of the time—don't avoid it",
+          "Choose NO CHANGE if: (1) the sentence is grammatically correct, (2) it fits the tone and context, (3) all alternatives are worse",
+          "Red flags for avoiding NO CHANGE: obvious grammatical error, awkward phrasing, contradicts surrounding text",
+          "Strategy: compare NO CHANGE against other choices; if NO CHANGE is the clearest and most concise, pick it"
+        ],
+        "example": {
+          "label": "When NO CHANGE Wins",
+          "text": "Original: She ran quickly down the street. All alternatives use more words or change the meaning. Pick NO CHANGE."
+        },
+        "tip": "Don't overthink—if NO CHANGE is correct, the test makers won't hide it. Compare fairly against other options."
+      },
+      {
+        "emoji": "🔄",
+        "title": "ACT English: Common Grammar Traps & How to Spot Them",
+        "points": [
+          "Prepositional phrases hiding the subject: The list of mistakes were found. (List is singular, ignore of mistakes; correct: was)",
+          "Vague pronouns: When the book fell, it broke. (What is it? The book? Unclear; rewrite with a noun.)",
+          "Misplaced modifiers: Running to the store, the dog followed me. (Who is running—you or the dog? Unclear.)",
+          "Apostrophe abuse: Its a mistake (wrong; should be It's). The Smith's house (wrong; should be The Smiths' house for plural possession)"
+        ],
+        "example": {
+          "label": "Spot the Trap",
+          "text": "TRAP: Everyone in the class submitted their homework. (Everyone = singular; their = plural pronoun mismatch.) FIX: Everyone in the class submitted his or her homework."
+        },
+        "tip": "For each answer choice, mentally check subject-verb agreement, pronoun clarity, and modifier placement—most traps hide there."
       }
     ]
   },
@@ -528,6 +618,97 @@
         ],
         "cta": "Free ACT Math Mock Test Available",
         "tip": "Consistent daily practice (30 min/day) beats cramming. Build speed and accuracy together."
+      },
+      {
+        "emoji": "🔢",
+        "title": "ACT Math: Topics Covered & Distribution",
+        "points": [
+          "Pre-Algebra & Algebra: ~35% (linear equations, inequalities, polynomials, radicals)",
+          "Intermediate Algebra: ~20% (systems of equations, quadratics, exponents, logs)",
+          "Coordinate Geometry: ~15% (distance, midpoint, slope, lines, circles)",
+          "Plane Geometry: ~20% (angles, triangles, circles, area, volume, trigonometry)",
+          "Statistics, Probability, Sequences: ~10% (mean, median, combinations, series)"
+        ],
+        "example": {
+          "label": "Topic Distribution",
+          "text": "Q1-15: mostly Pre-Algebra. Q16-40: mix of Algebra, Geometry, Coordinate. Q41-60: hardest Algebra, Plane Geometry, Trig."
+        },
+        "tip": "Know which topics are likely to appear. If you're weak in trigonometry (rare but important in hard Qs), drill those first."
+      },
+      {
+        "emoji": "🧮",
+        "title": "ACT Math: Calculator Strategy (Allowed Throughout)",
+        "points": [
+          "ACT allows calculators for ALL 60 questions—use it for arithmetic, graphs, and complex computations",
+          "But don't default to the calculator; many Qs are faster solved by hand (simple algebra, factoring)",
+          "Common trap: entering expressions wrong into the calculator; double-check your keystroke",
+          "For graphing Qs, use a graphing calculator (TI-84 preferred) to verify roots and shape"
+        ],
+        "example": {
+          "label": "Calculator vs. Hand",
+          "text": "Q: Solve 2x + 3 = 11. Hand: x = 4 (seconds). Calculator: slower. Q: square root of 12345 — calculator is faster."
+        },
+        "tip": "Use the calculator to verify complex arithmetic and graphs, but solve simple Qs by hand to save time."
+      },
+      {
+        "emoji": "📋",
+        "title": "ACT Math: Formula Recall & Essential Formulas",
+        "points": [
+          "ACT does NOT provide formulas—you must memorize: area (triangle, circle, rectangle), Pythagorean theorem, distance/midpoint, slope, quadratic formula",
+          "Trigonometry: sin = opposite/hypotenuse, cos = adjacent/hypotenuse, tan = opposite/adjacent (SOHCAHTOA)",
+          "No formula sheet—if you forget a formula, you lose time re-deriving it",
+          "Focus on formulas tested frequently; less common ones (e.g., quadratic formula) can be re-derived if needed"
+        ],
+        "example": {
+          "label": "Common Formulas to Know",
+          "text": "Area = pi*r^2 (circle), A = 0.5*b*h (triangle), d = sqrt((x2-x1)^2 + (y2-y1)^2) (distance), m = (y2-y1)/(x2-x1) (slope)."
+        },
+        "tip": "Spend 2 weeks drilling the top 20 formulas until they're automatic—don't waste test time on recall."
+      },
+      {
+        "emoji": "🎯",
+        "title": "ACT Math: Plugging In Answers (Strategy for Word Problems)",
+        "points": [
+          "When a Q has algebraic expressions in the answer choices, consider plugging them back into the problem",
+          "Work backwards: assume answer (A) is correct, substitute into the problem, verify if it satisfies all conditions",
+          "Faster than solving algebraically if the algebra is complex or unfamiliar",
+          "Not always the best approach—use only when algebra feels tedious"
+        ],
+        "example": {
+          "label": "Plugging In Example",
+          "text": "Q: Sarah's age is 5 more than twice Jim's age. If the sum is 26, how old is Jim? Choices: (A) 7, (B) 8. Test (A): 7 + 19 = 26. Correct!"
+        },
+        "tip": "Plugging in answers works only if you're fast and organized—don't use it if algebra is quicker for you."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "ACT Math: Pacing (60 Questions in 60 Minutes)",
+        "points": [
+          "Average: 1 minute per question (but questions vary in difficulty and length)",
+          "Q1-20: easier, move fast (~45 sec each); Q21-40: medium, ~1 min each; Q41-60: harder, ~1.5 min each",
+          "Watch your pace: if you've spent 20 min on first 20 Qs, you're on track. If 25 min, you're slow.",
+          "Hard Qs: if stuck after 1.5-2 min, skip and come back; don't waste 5 min on one Q"
+        ],
+        "example": {
+          "label": "Pacing Checkpoint",
+          "text": "At 15 min, you should finish Q1-18. At 30 min, finish Q1-37. At 45 min, finish Q1-53. Last 15 min for Q54-60."
+        },
+        "tip": "Set mental time checkpoints—if you're way behind at the 15-min mark, speed up or guess on hard ones."
+      },
+      {
+        "emoji": "⚠️",
+        "title": "ACT Math: Common Traps & Mistakes to Avoid",
+        "points": [
+          "Misreading the question: Find x vs. Find 2x or Find the perimeter vs. Find the area—re-read the final question",
+          "Calculation errors: use the calculator to verify arithmetic, especially in word problems",
+          "Forgetting units: if Q asks for area in square meters, don't give the answer in linear meters",
+          "Negative answers: some Qs expect negative results (e.g., temperature drops, distances going backwards); don't auto-correct to positive"
+        ],
+        "example": {
+          "label": "Trap Example",
+          "text": "Q: Find 3x if 2x = 10. Answer: 3x = 15. Trap: solving only for x = 5 and forgetting to multiply by 3."
+        },
+        "tip": "Before submitting an answer, re-read the question one more time—most careless mistakes come from misreading."
       }
     ]
   },
@@ -778,6 +959,96 @@
         ],
         "cta": "Free ACT Reading Mock Test Available",
         "tip": "Reading improves with habit. Read 20–30 min daily (articles, books, essays) to build speed and stamina."
+      },
+      {
+        "emoji": "📄",
+        "title": "ACT Reading: The Four Passage Types",
+        "points": [
+          "Prose Fiction: character-driven narratives; focus on emotions, motivations, relationships",
+          "Social Science: history, sociology, psychology; emphasizes facts, arguments, historical context",
+          "Natural Science & Humanities: technical concepts, research findings, or literary analysis",
+          "Strategy: Prose Fiction requires inference; Science requires precision on facts. Adjust your reading style."
+        ],
+        "example": {
+          "label": "Passage Type Recognition",
+          "text": "Prose Fiction questions ask what the character felt. Social Science asks what evidence supports the claim. Match your approach to the genre."
+        },
+        "tip": "Skim the introduction line—it tells you the passage type and sets your mental frame."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "ACT Reading: Time Strategy (8.75 min per Passage)",
+        "points": [
+          "You have 35 minutes for 4 passages (~8.75 min each; 5-6 min reading, 2-3 min answering)",
+          "Do NOT read every word—skim for structure, then drill into key sentences when answering",
+          "Mark up the passage: underline topic sentences, circle key names/dates, bracket key concepts",
+          "If you fall behind, skip the hardest passage and come back if time allows"
+        ],
+        "example": {
+          "label": "Pacing Example",
+          "text": "Passage 1: Read (4 min) + answer (2 min) = 6 min. Passage 2: Same. By passage 4, you may have only 5 min left—prioritize the easiest Qs."
+        },
+        "tip": "Start a mental timer after reading each passage—if you're over 7 min with 4+ questions left, speed up or skip."
+      },
+      {
+        "emoji": "❓",
+        "title": "ACT Reading: Question Types & Tactics",
+        "points": [
+          "Detail questions (According to the passage...) — answer is directly stated; find and cite it",
+          "Inference questions (The passage suggests...) — answer is NOT directly stated; synthesize context",
+          "Vocab-in-context questions — the word often has a non-dictionary meaning; re-read the sentence for clues",
+          "Main idea / author's purpose — step back and think: What is the big point?"
+        ],
+        "example": {
+          "label": "Question Pairing",
+          "text": "Detail: The study involved how many participants? (skim for the number). Inference: Why did the researchers choose this method? (reason is implied, not stated)."
+        },
+        "tip": "For inference, always ask: What does the passage directly say that implies this? Avoid answers based on outside knowledge."
+      },
+      {
+        "emoji": "🔗",
+        "title": "ACT Reading: Paired Passages (Comparative Reading)",
+        "points": [
+          "Paired passages appear in Social Science and Humanities; two short texts on related topics",
+          "First 5-7 questions cover Passage A alone; next 5-7 cover Passage B alone; final 3-4 compare both",
+          "Strategy: Read Passage A, answer its questions, then read Passage B, answer its questions, then tackle comparison Qs",
+          "Comparison Qs ask: similarities, differences, author tone, or how evidence in one supports/refutes the other"
+        ],
+        "example": {
+          "label": "Paired Passage Question",
+          "text": "Q: How would the author of Passage B respond to the claim in Passage A? Requires you to infer intent from both texts."
+        },
+        "tip": "Write A and B next to key points in each passage; makes comparison Qs faster."
+      },
+      {
+        "emoji": "🔍",
+        "title": "ACT Reading: Detail vs. Inference — How to Spot the Difference",
+        "points": [
+          "Detail Q phrasing: According to the passage..., The author states..., Which of the following is mentioned...",
+          "Inference Q phrasing: It can be inferred..., The passage suggests..., Implies..., Likely...",
+          "Detail answer = directly quoted or easily paraphrased from the text",
+          "Inference answer = logical conclusion from info in the text, not explicitly said"
+        ],
+        "example": {
+          "label": "Spotting the Difference",
+          "text": "Detail: The scientist discovered the compound in 1987 (stated). Inference: The scientist worked in chemistry (inferred from context, not explicitly stated)."
+        },
+        "tip": "If the answer is NOT directly in the text, check the phrasing—if it says inferred, your job is to connect dots."
+      },
+      {
+        "emoji": "❌",
+        "title": "ACT Reading: Elimination & Process of Elimination (POE)",
+        "points": [
+          "Cross out extreme answers: always, never, all, none (unless passage explicitly says so)",
+          "Eliminate answers that contradict the passage or introduce outside knowledge",
+          "If an answer is too specific or too vague, it's usually wrong",
+          "For inference, eliminate answers that are reasonable but NOT supported by the text"
+        ],
+        "example": {
+          "label": "POE in Action",
+          "text": "Q: The author's tone is... Options: (A) angry, (B) skeptical, (C) neutral, (D) celebratory. Passage is academic/factual (eliminate angry, celebratory). Choose (C) neutral."
+        },
+        "tip": "Even if you're unsure, eliminating 2-3 wrong answers dramatically improves your odds."
       }
     ]
   },
@@ -1026,6 +1297,96 @@
         ],
         "cta": "Free ACT Science Mock Test Available",
         "tip": "ACT Science rewards careful data reading, not science knowledge. Master graph interpretation and you'll score high."
+      },
+      {
+        "emoji": "📊",
+        "title": "ACT Science: Three Question Types",
+        "points": [
+          "Data Representation: tables, graphs, diagrams; questions ask you to read and interpret the data",
+          "Research Summaries: 2-3 experiments described; Qs test your understanding of experimental design and results",
+          "Conflicting Viewpoints: two or more theories/hypotheses presented; Qs ask you to identify assumptions, evidence, and predictions",
+          "Strategy: Each type requires a different approach—data Qs need graph-reading; viewpoint Qs need logic."
+        ],
+        "example": {
+          "label": "Type Recognition",
+          "text": "Data Rep: What is the trend in temperature from 2000-2020? (read the graph). Conflicting: Which scientist's theory predicts X? (identify views)."
+        },
+        "tip": "Before answering, identify the question type—it dictates whether you need to extract data, design an experiment, or compare arguments."
+      },
+      {
+        "emoji": "📈",
+        "title": "ACT Science: Reading Graphs & Tables (Data Literacy)",
+        "points": [
+          "Always check the axes: what variable is X? What is Y? What are the units (meters, seconds, temperature)?",
+          "Identify trends: increasing, decreasing, plateauing, cyclical, or no clear trend",
+          "Look for outliers: points that break the pattern—they're often the answer",
+          "For tables: compare rows/columns; identify missing data or inconsistencies"
+        ],
+        "example": {
+          "label": "Graph Reading Example",
+          "text": "A graph shows Temperature vs. Time (days). X-axis: 1-30 days. Y-axis: 5-20 degrees C. Trend: rises steeply from day 1-15, then plateaus. Q: When does temperature stabilize? Answer: ~day 15."
+        },
+        "tip": "Spend 10 seconds labeling the axes and identifying the trend before answering any Qs—saves time overall."
+      },
+      {
+        "emoji": "🧪",
+        "title": "ACT Science: NO Outside Knowledge Needed",
+        "points": [
+          "ACT Science does NOT require you to know chemistry, biology, or physics formulas",
+          "All the info you need is in the passage, graph, or table",
+          "If you think I need to remember Boyle's Law..., STOP—the answer is in the data",
+          "Don't overthink with outside knowledge; stick to what the passage/data shows"
+        ],
+        "example": {
+          "label": "No Outside Knowledge Rule",
+          "text": "Q: As pressure increases, what happens to volume? The table shows pressure (kPa) and volume (mL). Just read the pattern—don't recite physics."
+        },
+        "tip": "If you're tempted to use outside science knowledge, you're overcomplicating. Find the answer in the data."
+      },
+      {
+        "emoji": "⏱️",
+        "title": "ACT Science: Time Strategy (40 Questions, 35 Minutes)",
+        "points": [
+          "Total time: 35 min for 7 passages (5 min/passage average; some faster, some slower)",
+          "Data Rep: ~3-4 min (quick graph reads, straightforward Qs)",
+          "Research Summaries: ~5-6 min (more text to digest, experiment logic required)",
+          "Conflicting Viewpoints: ~6-7 min (requires comparing viewpoints and reasoning)"
+        ],
+        "example": {
+          "label": "Allocation Example",
+          "text": "3 Data Rep (12 min), 3 Research (18 min), 1 Conflicting (5 min) = 35 min. Adjust if you read slower."
+        },
+        "tip": "If a passage is complex, mark it and come back—don't waste 10 min on one passage when you have 6 others."
+      },
+      {
+        "emoji": "📉",
+        "title": "ACT Science: Identifying Trends & Predictions",
+        "points": [
+          "Trend: the overall direction of data (up, down, flat, curved). Ignore minor fluctuations.",
+          "Extrapolation: extending the trend beyond the data shown (If the trend continues...)",
+          "Causation vs. Correlation: data may show correlation (two things moving together) but NOT prove cause",
+          "Watch for: reversals in trend, nonlinear patterns, or unexpected drops/spikes"
+        ],
+        "example": {
+          "label": "Trend Prediction",
+          "text": "Graph shows bacteria count doubling every 2 hours from hour 0-8. Q: Predict bacteria count at hour 10. Trend is exponential; apply the pattern."
+        },
+        "tip": "For extrapolation, match the pattern you see (linear, exponential, cyclical) and extend it—don't guess."
+      },
+      {
+        "emoji": "🔬",
+        "title": "ACT Science: Experiment Design & Interpretation",
+        "points": [
+          "Independent variable: what the scientist changes (e.g., temperature, pH, time)",
+          "Dependent variable: what is measured (e.g., reaction rate, organism growth)",
+          "Control: the baseline; unchanged conditions for comparison",
+          "Common Qs: What would happen if we changed X? or Why did the scientist do this step?"
+        ],
+        "example": {
+          "label": "Experiment Design Example",
+          "text": "Study tests how plant growth (dependent) responds to water amount (independent). Q: What is the control? A: A plant with standard water (no change)."
+        },
+        "tip": "Identify independent and dependent variables in every experiment—they unlock most Qs."
       }
     ]
   }
