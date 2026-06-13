@@ -243,13 +243,15 @@ const REL = {
   edu: /student|study|universit|colleg|scholarship|admission|abroad|tuition|campus|intake|enrol|fellowship|\bms\b|graduate/i,
 };
 const SPAM_RE = /prediction|click here|subscribe|sponsored|how to apply step|top \d+|best \d+|list of|\bvs\b|^\s*\d+\s|apply now|enquire|book (a )?free|consultanc|register now|limited seats/i;
+// teaser headlines that promise info but don't state it (we want self-contained news, not "visit website" bait)
+const TEASER_RE = /latest .*(times?|dates?|fees?|cost|rates?)|check (all|here|now|out)|everything you|all you need|complete (guide|list|details)|how to apply|step[- ]by[- ]step|find out|here'?s (how|what|why)|what you need|things (you|to) know|you (should|need to) know|ultimate guide|a guide to|explained|breakdown|all you|know about/i;
 async function liveNews(now, slot) {
   if (process.env.LIVE_NEWS === "0") return null;
   const kind = slot === 0 ? "immig" : "edu"; const seed = dayNumber(now);
   const list = RSS_Q[kind]; const items = await fetchNewsRSS(list[seed % list.length]);
   if (!items || !items.length) return null;
   const cleaned = items.map((it) => ({ src: it.source, date: it.date, t: cleanTitle(it.title) }));
-  const good = cleaned.filter((it) => it.t.length >= 28 && it.t.length <= 110 && !JUNK_RE.test(it.t) && !SPAM_RE.test(it.t) && REL[kind].test(it.t) && !/[|/]/.test(it.t) && /^[\x20-\x7E''""–—…]+$/.test(it.t));
+  const good = cleaned.filter((it) => it.t.length >= 28 && it.t.length <= 110 && !JUNK_RE.test(it.t) && !SPAM_RE.test(it.t) && !TEASER_RE.test(it.t) && REL[kind].test(it.t) && !/[|/]/.test(it.t) && /^[\x20-\x7E''""–—…]+$/.test(it.t));
   if (!good.length) return null; // no clean headline → fall back to curated (handled by caller)
   const pick = good[seed % good.length];
   return rssToContent({ title: pick.t, source: pick.src, date: pick.date }, kind);
@@ -473,14 +475,15 @@ function renderQuiz(c) {
   for (const ln of qLines) { head += `<text x="64" y="${y}" xml:space="preserve" font-family="${FONT}" font-size="${qSize}" font-weight="800" fill="${C_CREAM}" letter-spacing="-0.8">${ln.map((w) => `<tspan${w.hi ? ` fill="${C_GOLD}" font-weight="900"` : ""}>${esc(w.t)} </tspan>`).join("")}</text>`; y += lh; }
   y += 30; const opts = (c.options || []).slice(0, 4); const boxH = 100;
   for (const o of opts) {
-    const tl = wrapPlain(o.text, 40).slice(0, 2);
-    head += `<rect x="64" y="${y}" width="952" height="${boxH}" rx="18" fill="${hexA("#ffffff", 0.05)}" stroke="${hexA(C_GOLD, 0.32)}" stroke-width="1.5"/>`;
-    head += `<rect x="64" y="${y}" width="92" height="${boxH}" rx="18" fill="${C_GOLD}"/><rect x="128" y="${y}" width="28" height="${boxH}" fill="${C_GOLD}"/>`;
+    const tl = wrapPlain(o.text, 38).slice(0, 2); const ok = !!o.correct; const tab = ok ? C_GREEN : C_GOLD;
+    head += `<rect x="64" y="${y}" width="952" height="${boxH}" rx="18" fill="${hexA(ok ? C_GREEN : "#ffffff", ok ? 0.12 : 0.05)}" stroke="${hexA(tab, ok ? 0.7 : 0.32)}" stroke-width="${ok ? 2.5 : 1.5}"/>`;
+    head += `<rect x="64" y="${y}" width="92" height="${boxH}" rx="18" fill="${tab}"/><rect x="128" y="${y}" width="28" height="${boxH}" fill="${tab}"/>`;
     head += `<text x="110" y="${y + boxH / 2 + 11}" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="900" fill="#0A1330">${o.L}</text>`;
-    head += `<text font-family="${FONT}" font-size="28" font-weight="500" fill="#DCE2EE">${tspans(tl, 188, y + (boxH - (tl.length - 1) * 34) / 2 + 10, 34)}</text>`;
+    head += `<text font-family="${FONT}" font-size="27" font-weight="500" fill="${ok ? "#fff" : "#DCE2EE"}">${tspans(tl, 188, y + (boxH - (tl.length - 1) * 34) / 2 + 10, 34)}</text>`;
+    if (ok) head += `<polyline points="958,${y + boxH / 2} 972,${y + boxH / 2 + 14} 998,${y + boxH / 2 - 16}" fill="none" stroke="${C_GREEN}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>`;
     y += boxH + 16;
   }
-  head += `<text x="64" y="${Math.min(y + 30, 968)}" font-family="${FONT}" font-size="26" font-weight="800" fill="${C_GOLD}">Comment A, B, C or D below</text>`;
+  head += `<text x="64" y="${Math.min(y + 32, 968)}" font-family="${MONO}" font-size="24" font-weight="700" fill="${C_GREEN}">ANSWER: ${esc(c.answerLetter || "")}  ·  did you get it right?</text>`;
   return doc(c, head);
 }
 function renderExam(c) {
