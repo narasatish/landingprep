@@ -327,7 +327,7 @@ function calloutRow(items, y, ring, label) {
   });
   return s;
 }
-function pillSolid(x, y, text, fill) { const t = stripEmoji(text), w = 34 + t.length * 14; return `<rect x="${x}" y="${y}" rx="11" width="${w}" height="48" fill="${fill}"/><text x="${x + 17}" y="${y + 32}" font-family="${FONT}" font-size="22" font-weight="900" letter-spacing="1.2" fill="#fff">${esc(t.toUpperCase())}</text>`; }
+function pillSolid(x, y, text, fill) { const t = stripEmoji(text), w = 36 + t.length * 15.6; return `<rect x="${x}" y="${y}" rx="11" width="${w}" height="48" fill="${fill}"/><text x="${x + 18}" y="${y + 32}" font-family="${FONT}" font-size="22" font-weight="900" letter-spacing="1.2" fill="#fff">${esc(t.toUpperCase())}</text>`; }
 function header(c) {
   return `<text x="64" y="92" font-family="${FONT}" font-size="30" font-weight="900" fill="${c.accent}">▲ LandingPrep</text>` +
     `<text x="1016" y="92" text-anchor="end" font-family="${FONT}" font-size="24" font-weight="700" fill="#8A93A3">${HANDLE}</text>` +
@@ -521,4 +521,126 @@ async function runAllSlots({ baseUrl, igUserId, token, now }) {
   return { ok: out.every((o) => o.ok), posts: out };
 }
 
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, whoami, SLOTS, OUT_DIR };
+// ── CAROUSELS (multi-slide posts — the highest-reach image format) ────────
+const YEAR = "2026";
+function slideHeader(topic, accent, dark) {
+  return `<text x="64" y="90" font-family="${FONT}" font-size="27" font-weight="900" fill="${dark ? "#fff" : accent}">▲ LandingPrep</text>` + pillSolid(64, 116, topic, accent);
+}
+function carouselFooter(idx, total, accent, swipe) {
+  return `<rect x="0" y="1004" width="1080" height="76" fill="${accent}"/>` +
+    `<text x="64" y="1052" font-family="${FONT}" font-size="25" font-weight="900" fill="#fff">${SITE}</text>` +
+    `<text x="1016" y="1052" text-anchor="end" font-family="${FONT}" font-size="24" font-weight="800" fill="rgba(255,255,255,0.95)">${swipe ? "SWIPE  ›" : idx + " / " + total}</text>`;
+}
+// numbered-points content slide (clean branded)
+function slidePointsSvg(s) {
+  const a = s.accent;
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><rect width="1080" height="1080" fill="#F7F8FC"/><circle cx="1015" cy="70" r="230" fill="${hexA(a, 0.07)}"/>` + slideHeader(s.topic, a);
+  const tl = wrapPlain(s.title, 24).slice(0, 2); let y = 232;
+  svg += `<text font-family="${FONT}" font-size="58" font-weight="900" fill="#14181F" letter-spacing="-1">${tspans(tl, 64, y, 66)}</text>`;
+  y += tl.length * 66 + 46;
+  (s.points || []).slice(0, 5).forEach((p, i) => {
+    const pl = wrapPlain(p, 36).slice(0, 2);
+    svg += `<circle cx="100" cy="${y - 6}" r="32" fill="${a}"/><text x="100" y="${y + 4}" text-anchor="middle" font-family="${FONT}" font-size="30" font-weight="900" fill="#fff">${i + 1}</text>`;
+    svg += `<text font-family="${FONT}" font-size="33" font-weight="500" fill="#1f2937">${tspans(pl, 156, y + (pl.length > 1 ? -8 : 4), 44)}</text>`;
+    y += (pl.length > 1 ? 124 : 92);
+  });
+  return svg + carouselFooter(s.idx, s.total, a) + `</svg>`;
+}
+// final call-to-action slide
+function slideCTASvg(s) {
+  const a = s.accent;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs><linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${hexA(a, 0.82)}"/></linearGradient></defs>
+  <rect width="1080" height="1080" fill="${a}"/><circle cx="900" cy="180" r="280" fill="rgba(255,255,255,0.07)"/><circle cx="150" cy="940" r="220" fill="rgba(255,255,255,0.06)"/>
+  <text x="540" y="300" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="800" letter-spacing="3" fill="rgba(255,255,255,0.85)">FOUND THIS USEFUL?</text>
+  <text x="540" y="452" text-anchor="middle" font-family="${FONT}" font-size="96" font-weight="900" fill="#fff" letter-spacing="-2">SAVE IT</text>
+  <text x="540" y="560" text-anchor="middle" font-family="${FONT}" font-size="46" font-weight="700" fill="#fff">and share it with a friend</text>
+  <text x="540" y="690" text-anchor="middle" font-family="${FONT}" font-size="40" font-weight="700" fill="rgba(255,255,255,0.92)">Follow ${HANDLE}</text>
+  <text x="540" y="744" text-anchor="middle" font-family="${FONT}" font-size="30" font-weight="500" fill="rgba(255,255,255,0.85)">for a free daily study-abroad guide</text>
+  <rect x="320" y="828" width="440" height="86" rx="43" fill="#fff"/><text x="540" y="883" text-anchor="middle" font-family="${FONT}" font-size="32" font-weight="900" fill="${a}">Full guide in bio</text>
+  <text x="540" y="1010" text-anchor="middle" font-family="${FONT}" font-size="30" font-weight="900" fill="rgba(255,255,255,0.9)">LandingPrep · ${SITE}</text>
+</svg>`;
+}
+// cover slide content (composited over a photo, or dark fallback)
+function slideCoverContent(s) {
+  const big = (s.title || "").length;
+  const size = big > 44 ? 72 : 86;
+  const lines = wrapRich(s.title, [], Math.round(1040 / (size * 0.5))).slice(0, 3);
+  const lh = size * 1.06, lastB = 940, firstB = lastB - (lines.length - 1) * lh;
+  let svg = lines.map((ln, i) => `<text x="60" y="${firstB + i * lh}" xml:space="preserve" font-family="${FONT}" font-size="${size}" font-weight="900" fill="#fff" letter-spacing="-1.5">${ln.map((w) => `<tspan>${esc(w.t)} </tspan>`).join("")}</text>`).join("");
+  const kY = firstB - size - 26;
+  if (s.sub) svg += `<text x="62" y="${kY}" font-family="${FONT}" font-size="26" font-weight="800" fill="#FFD66B">${esc(stripEmoji(s.sub))}</text>`;
+  svg = centerLogo(kY - 70) + svg;
+  svg += `<text x="540" y="978" text-anchor="middle" font-family="${FONT}" font-size="27" font-weight="900" letter-spacing="2" fill="rgba(255,255,255,0.92)">SWIPE TO SEE THE FULL GUIDE  ›</text>`;
+  return svg;
+}
+function slideCoverOverlaySvg(s) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="scc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070D" stop-opacity="0.32"/><stop offset="0.42" stop-color="#05070D" stop-opacity="0.12"/><stop offset="0.66" stop-color="#05070D" stop-opacity="0.6"/><stop offset="1" stop-color="#05070D" stop-opacity="0.96"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#scc)"/>${slideCoverContent(s)}</svg>`;
+}
+function slideCoverDarkSvg(s) {
+  const a = s.accent;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="cd" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#1A2444"/><stop offset="1" stop-color="#06090F"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#cd)"/><circle cx="840" cy="280" r="320" fill="${hexA(a, 0.14)}"/>${slideCoverContent(s)}</svg>`;
+}
+async function renderCoverPng(s, photoQuery, seed) {
+  if (!sharp) throw new Error("sharp not installed");
+  const photo = await fetchPexels(photoQuery, seed);
+  if (photo) { try { return await sharp(photo).resize(1080, 1080, { fit: "cover", position: "attention", kernel: "lanczos3" }).modulate({ saturation: 1.1, brightness: 1.02 }).sharpen({ sigma: 0.8 }).composite([{ input: Buffer.from(slideCoverOverlaySvg(s)) }]).png({ quality: 100, compressionLevel: 9 }).toBuffer(); } catch (e) {} }
+  return await sharp(Buffer.from(slideCoverDarkSvg(s))).png().toBuffer();
+}
+function buildCountryCarousel(c, seed) {
+  const name = c.name, slug = name.toLowerCase().replace(/\s+/g, ""), total = 5, accent = "#E0492B";
+  const costPoints = [c.avgTuition ? "Tuition: " + c.avgTuition : "", c.avgLiving ? "Living costs: " + c.avgLiving : "", c.postStudyWork ? "Post-study work: " + c.postStudyWork : "", c.visaSuccess ? "Visa success rate: ~" + c.visaSuccess + "%" : ""].filter(Boolean);
+  const pr = (c.immigrationPlan && c.immigrationPlan.length ? c.immigrationPlan : (c.visaTypes || []).map((v) => v.name + (v.note ? ": " + v.note : ""))).slice(0, 5);
+  return {
+    topic: "STUDY ABROAD · " + name.toUpperCase(), accent, photoQuery: pickPhotoQuery(name, "edu"),
+    slides: [
+      { kind: "cover", title: "Study in " + name + " " + YEAR, sub: (c.tagline || "The complete guide").toUpperCase(), idx: 1, total },
+      { kind: "points", title: "💰 What it costs", points: costPoints, idx: 2, total },
+      { kind: "points", title: "Why " + name + "?", points: (c.whyStudy || []).slice(0, 4), idx: 3, total },
+      { kind: "points", title: "Your visa & PR pathway", points: pr, idx: 4, total },
+      { kind: "cta", idx: 5, total },
+    ],
+    caption: `🎓 STUDY IN ${name.toUpperCase()} — your complete ${YEAR} guide 👇\n\nSwipe ➡️ for tuition, living costs, why ${name}, and the full visa → PR pathway.\n\n📲 SHARE with someone planning to study in ${name}.\n📌 SAVE this guide for later.\n💬 Is ${name} on your list? Comment 👇\n\n👉 Full free ${name} guide — link in bio.\nFollow ${HANDLE} for a daily study-abroad guide 🌍`,
+    tags: buildTags("study" + slug, "studentvisa", "studyabroad", "internationalstudents", "landingprep"),
+  };
+}
+function pickCarousel(now) {
+  const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || [];
+  if (!D.length) return null;
+  return buildCountryCarousel(D[dayNumber(now) % D.length], dayNumber(now));
+}
+async function generateCarousel({ baseUrl, now }) {
+  const car = pickCarousel(now); if (!car) throw new Error("no carousel content");
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+  try { for (const f of fs.readdirSync(OUT_DIR)) { const fp = path.join(OUT_DIR, f); if (Date.now() - fs.statSync(fp).mtimeMs > 7200000) fs.unlinkSync(fp); } } catch (e) {}
+  const urls = []; const stamp = Date.now();
+  for (let i = 0; i < car.slides.length; i++) {
+    const s = car.slides[i]; s.topic = car.topic; s.accent = car.accent;
+    const png = s.kind === "cover" ? await renderCoverPng(s, car.photoQuery, dayNumber(now) + i) : s.kind === "cta" ? await renderPng(slideCTASvg(s)) : await renderPng(slidePointsSvg(s));
+    const name = `car-${stamp}-${i}.png`; fs.writeFileSync(path.join(OUT_DIR, name), png);
+    urls.push(`${(baseUrl || "").replace(/\/$/, "")}/ig-out/${name}`);
+  }
+  return { content: car, caption: buildCaption(car), imageUrls: urls };
+}
+async function postCarousel({ imageUrls, caption, igUserId, token }) {
+  const v = "v21.0"; const children = [];
+  for (const url of imageUrls) {
+    const r = await fetch(`https://graph.facebook.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ image_url: url, is_carousel_item: true, access_token: token }) });
+    const j = await r.json(); if (!r.ok || !j.id) throw new Error("carousel child failed: " + JSON.stringify(j));
+    children.push(j.id); await new Promise((r) => setTimeout(r, 2500));
+  }
+  const cr = await fetch(`https://graph.facebook.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ media_type: "CAROUSEL", children: children.join(","), caption, access_token: token }) });
+  const cj = await cr.json(); if (!cr.ok || !cj.id) throw new Error("carousel container failed: " + JSON.stringify(cj));
+  await new Promise((r) => setTimeout(r, 4000));
+  const pr = await fetch(`https://graph.facebook.com/${v}/${igUserId}/media_publish`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: cj.id, access_token: token }) });
+  const pj = await pr.json(); if (!pr.ok || !pj.id) throw new Error("carousel publish failed: " + JSON.stringify(pj));
+  return { mediaId: pj.id, slides: imageUrls.length };
+}
+async function runCarousel({ baseUrl, igUserId, token, now }) {
+  if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
+  const gen = await generateCarousel({ baseUrl, now });
+  const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
+  return { ok: true, type: "carousel", topic: gen.content.topic, slides: res.slides, mediaId: res.mediaId };
+}
+
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, SLOTS, OUT_DIR };

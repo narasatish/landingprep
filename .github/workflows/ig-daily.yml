@@ -6,15 +6,16 @@ name: Daily Instagram posts
 # Times are UTC. 03:30 UTC = 09:00 IST, etc. Edit the cron lines or hit "Run workflow" any time.
 on:
   schedule:
-    - cron: "30 3 * * *"    # 09:00 IST → slot 0
-    - cron: "30 6 * * *"    # 12:00 IST → slot 1
-    - cron: "30 9 * * *"    # 15:00 IST → slot 2
-    - cron: "30 12 * * *"   # 18:00 IST → slot 3
-    - cron: "30 15 * * *"   # 21:00 IST → slot 4
+    - cron: "30 3 * * *"    # 09:00 IST → slot 0 (visa/immigration news)
+    - cron: "30 6 * * *"    # 12:00 IST → slot 1 (study-abroad news)
+    - cron: "30 7 * * *"    # 13:00 IST → CAROUSEL (country guide)
+    - cron: "30 9 * * *"    # 15:00 IST → slot 2 (daily quiz)
+    - cron: "30 12 * * *"   # 18:00 IST → slot 3 (exam guide)
+    - cron: "30 15 * * *"   # 21:00 IST → slot 4 (word of the day)
   workflow_dispatch:
     inputs:
       mode:
-        description: "all = post all 5 now (first test) · single = post the current slot"
+        description: "all = post all 5 · carousel = post a country-guide carousel · single = current slot"
         default: "single"
 
 jobs:
@@ -35,15 +36,18 @@ jobs:
           H=$(date -u +%H)
           case "$H" in
             03|04|05) slot=0 ;;
-            06|07|08) slot=1 ;;
+            06) slot=1 ;;
+            07|08) slot=carousel ;;
             09|10|11) slot=2 ;;
             12|13|14) slot=3 ;;
             15|16|17) slot=4 ;;
             *) slot=0 ;;
           esac
-          # Manual "Run workflow" with mode=all posts all 5 at once (for the first test).
+          # Manual "Run workflow": mode=all posts all 5; mode=carousel posts a guide carousel.
           if [ "${{ github.event.inputs.mode }}" = "all" ]; then
             QS="all=1"
+          elif [ "${{ github.event.inputs.mode }}" = "carousel" ] || [ "$slot" = "carousel" ]; then
+            QS="carousel=1"
           else
             QS="slot=$slot"
           fi

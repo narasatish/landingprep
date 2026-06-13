@@ -235,6 +235,12 @@ app.all("/api/ig/post-daily", async (req, res) => {
     const hasSlot = req.query.slot != null && req.query.slot !== "";
     const slot = hasSlot ? Number(req.query.slot) : null;
     const pv = String(req.query.preview || "");
+    // ?carousel=1 → publish today's multi-slide carousel (add &preview=1 → just return the slide URLs)
+    if (String(req.query.carousel || "") === "1") {
+      if (pv) { const g = await ig.generateCarousel({ baseUrl: IG_PUBLIC_BASE }); return res.json({ ok: true, preview: true, type: "carousel", topic: g.content.topic, slides: g.imageUrls, caption: g.caption }); }
+      const out = await ig.runCarousel({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN });
+      return res.json(out);
+    }
     if (pv) {
       // ?preview=1            → today's slot for the current hour
       // ?preview=1&slot=N     → preview a specific slot (0..4)
