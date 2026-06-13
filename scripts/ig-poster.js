@@ -22,7 +22,7 @@ const OUT_DIR = path.join(ROOT, "ig-out");
 const HANDLE = "@landing_prep";
 const SITE = "landingprep.com";
 const FONT = "Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif";
-const SLOTS = 8;
+const SLOTS = 10;
 
 // ── data loaders (cached, guarded) ───────────────────────────────────────
 function evalWindow(file) { try { const w = {}; new Function("window", fs.readFileSync(path.join(ROOT, file), "utf8"))(w); return w; } catch (e) { return {}; } }
@@ -265,7 +265,7 @@ async function resolveDailyContent(now, slot) {
 // ── extra content: country & college spotlights (stat cards) ──────────────
 let _coll = null;
 function collegesData() { if (_coll) return _coll; const w = evalWindow("college-data.jsx"); const C = w.LP_COLLEGES || []; const a = Array.isArray(C) ? C : (Object.values(C).find((v) => Array.isArray(v)) || []); _coll = a.filter((c) => c && c.name); return _coll; }
-function moneyShort(s) { return String(s || "").replace(/,000/g, "k").replace(/\s*\/\s*yr/i, "").replace(/\s+/g, " ").trim(); }
+function moneyShort(s) { s = String(s || "").replace(/\(.*?\)/g, "").split(/[;·]/)[0].replace(/,000/g, "k").replace(/\s*\/\s*yr/i, "").replace(/\s+/g, " ").trim(); return s.length > 16 ? s.slice(0, 15).trim().replace(/[–-]$/, "") + "…" : s; }
 function pswShort(s) { const m = String(s || "").match(/(\d+)\s*year/i); return m ? "up to " + m[1] + " yrs" : shortVal(s, 12); }
 function collegeShort(n) { return String(n || "").replace(/^University of /, "U. of ").replace(/ University$/, ""); }
 function pickCountryHighlight(seed) {
@@ -294,12 +294,44 @@ function pickCollegeSpotlight(seed) {
 }
 function pickCountryOrCollege(seed) { return (seed % 2 ? pickCountryHighlight(seed) : pickCollegeSpotlight(seed)) || pickCountryHighlight(seed) || pickCollegeSpotlight(seed); }
 function pickTipOrSpotlight(seed) { const r = seed % 3; return (r === 0 ? pickTip(seed) : r === 1 ? pickCollegeSpotlight(seed + 17) : pickCountryHighlight(seed + 11)) || pickTip(seed) || pickWordOfDay(seed); }
+// major study-abroad scholarships (curated, evergreen)
+const SCHOLARSHIPS = [
+  { n: "Chevening", full: "Chevening Scholarship", country: "UK", award: "Fully funded", level: "Master's", apply: "Nov", who: "future leaders worldwide" },
+  { n: "Fulbright", full: "Fulbright Foreign Student Program", country: "USA", award: "Tuition + living", level: "Master's / PhD", apply: "varies", who: "outstanding graduates" },
+  { n: "DAAD", full: "DAAD Scholarships", country: "Germany", award: "€934 / month", level: "Master's / PhD", apply: "varies", who: "all academic fields" },
+  { n: "Erasmus Mundus", full: "Erasmus Mundus Joint Masters", country: "Europe", award: "Full + €1,400/mo", level: "Master's", apply: "varies", who: "joint-degree students" },
+  { n: "Commonwealth", full: "Commonwealth Scholarship", country: "UK", award: "Full + airfare", level: "Master's / PhD", apply: "Oct", who: "Commonwealth citizens" },
+  { n: "Australia Awards", full: "Australia Awards Scholarships", country: "Australia", award: "Full tuition + living", level: "Master's", apply: "Apr", who: "developing nations" },
+  { n: "Vanier", full: "Vanier Canada Graduate Scholarship", country: "Canada", award: "CAD 50k / yr", level: "PhD", apply: "Nov", who: "top researchers" },
+  { n: "Eiffel", full: "Eiffel Excellence Scholarship", country: "France", award: "€1,181 / month", level: "Master's / PhD", apply: "Jan", who: "international students" },
+  { n: "Gates Cambridge", full: "Gates Cambridge Scholarship", country: "UK", award: "Fully funded", level: "Master's / PhD", apply: "Dec", who: "outstanding applicants" },
+  { n: "Knight-Hennessy", full: "Knight-Hennessy Scholars (Stanford)", country: "USA", award: "Full funding", level: "Any graduate", apply: "Oct", who: "future change-makers" },
+  { n: "Holland", full: "Holland Scholarship", country: "Netherlands", award: "€5,000", level: "Bachelor's / Master's", apply: "Feb", who: "non-EEA students" },
+];
+function pickScholarship(seed) {
+  const s = SCHOLARSHIPS[seed % SCHOLARSHIPS.length];
+  const stats = [{ v: s.award, label: "Award" }, { v: s.level, label: "Level" }, { v: s.apply, label: "Apply by" }, { v: "FREE", label: "Application" }];
+  const slug = s.country.toLowerCase().replace(/\s+/g, "");
+  return { type: "exam", accent: "#0E9F6E", category: "SCHOLARSHIP · " + s.country.toUpperCase(), headline: s.n, sub: s.full + " · for " + s.who, stats, cta: "Free scholarship guide in bio",
+    caption: `💰 ${s.full} (${s.country})\n\n🎓 Award: ${s.award}\n📚 Level: ${s.level}\n🗓 Apply by: ${s.apply}\n✅ For: ${s.who}\n\n📲 TAG a friend who should apply. 📌 SAVE this.\n💬 Applying this year? Comment 👇\n\n👉 Free scholarships guide — link in bio.\nFollow ${HANDLE} for daily funding alerts 💸`,
+    tags: buildTags("scholarships", "studyin" + slug, "studyabroad", "fullyfunded", "landingprep") };
+}
+function pickCostCompared(seed) {
+  const D = (evalWindow("country-data.jsx").LP_COUNTRY_DATA || []).filter((c) => c.avgTuition);
+  if (D.length < 4) return null;
+  const pick = []; for (let i = 0; pick.length < 4 && i < D.length; i++) { const c = D[(seed + i * 5) % D.length]; if (!pick.find((p) => p.name === c.name)) pick.push(c); }
+  const stats = pick.map((c) => ({ v: moneyShort(c.avgTuition), label: c.name }));
+  return { type: "exam", accent: THEME.edu.accent, category: "COST TO STUDY ABROAD", headline: "What it costs", sub: "Average tuition per year, compared", stats,
+    cta: "Full cost breakdown in bio",
+    caption: `💸 What does it cost to study abroad? (tuition / year)\n\n${pick.map((c) => `${c.flag || "•"} ${c.name}: ${c.avgTuition}`).join("\n")}\n\n📲 SHARE with someone budgeting their move.\n📌 SAVE this comparison.\n💬 Which fits your budget? Comment 👇\n\n👉 Full cost + scholarships guide — link in bio.\nFollow ${HANDLE} for daily study-abroad money tips 💰`,
+    tags: buildTags("studyabroad", "studyabroadcost", "internationalstudents", "studyabroad2026", "landingprep") };
+}
 
 // day number since epoch (UTC) → stable per-day seed
 function dayNumber(now) { now = now || new Date(); return Math.floor(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86400000); }
 // 8 posts/day: 7 singles + 1 carousel (slot 5). Fresh topics daily via date offset.
 const CAROUSEL_SLOT = 5;
-const SLOT_PICKERS = [pickImmigrationNews, pickQuiz, pickCountryOrCollege, pickEducationNews, pickWordOfDay, null, pickExamSpotlight, pickTipOrSpotlight];
+const SLOT_PICKERS = [pickImmigrationNews, pickQuiz, pickCountryOrCollege, pickEducationNews, pickWordOfDay, null, pickExamSpotlight, pickTipOrSpotlight, pickScholarship, pickCostCompared];
 function pickForSlot(now, slot) {
   slot = ((Number(slot) || 0) % SLOTS + SLOTS) % SLOTS;
   if (slot === CAROUSEL_SLOT) return null;
@@ -308,7 +340,7 @@ function pickForSlot(now, slot) {
   for (const fn of chain) { const r = fn && fn(seed); if (r) return r; }
   return null;
 }
-function slotFromHour(now) { const h = (now || new Date()).getUTCHours(); return Math.min(SLOTS - 1, Math.max(0, Math.floor(((h + 22) % 24) / 3))); }
+function slotFromHour(now) { const h = (now || new Date()).getUTCHours(); return Math.min(SLOTS - 1, Math.max(0, Math.floor(((h + 22) % 24) / 2.4))); }
 
 // ── image rendering (1080x1080, bold news-page style) ────────────────────
 const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
