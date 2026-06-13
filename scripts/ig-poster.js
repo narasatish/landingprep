@@ -328,8 +328,25 @@ function calloutRow(items, y, ring, label) {
   return s;
 }
 function pillSolid(x, y, text, fill) { const t = stripEmoji(text), w = 36 + t.length * 15.6; return `<rect x="${x}" y="${y}" rx="11" width="${w}" height="48" fill="${fill}"/><text x="${x + 18}" y="${y + 32}" font-family="${FONT}" font-size="22" font-weight="900" letter-spacing="1.2" fill="#fff">${esc(t.toUpperCase())}</text>`; }
+// ── brand logo mark (paper plane + grad cap) ──────────────────────────────
+let _lpid = 0;
+function markRaw(plane, cap, tassel) {
+  return `<path d="M330 345 L765 230 L624 635 L540 475 L424 595 L475 430 Z" fill="${plane}"/>` +
+    `<path d="M475 430 L765 230 L540 475 Z" fill="#FFFFFF" opacity="0.30"/>` +
+    `<g transform="translate(428 250) rotate(-9)"><path d="M0 65 L112 20 L224 65 L112 110 Z" fill="${cap}"/>` +
+    `<path d="M55 95 C85 120 140 120 170 95 L170 146 C130 171 95 171 55 146 Z" fill="${cap}"/>` +
+    `<path d="M224 65 L224 132" stroke="${tassel}" stroke-width="11" stroke-linecap="round"/><circle cx="224" cy="148" r="16" fill="${tassel}"/></g>`;
+}
+const LOGOW = (h) => 435 * (h / 405);
+function logoMark(x, yTop, h, mode) {
+  const s = h / 405, tx = x - 330 * s, ty = yTop - 230 * s;
+  if (mode === "white") return `<g transform="translate(${tx} ${ty}) scale(${s})">${markRaw("#fff", "#fff", "#34D399")}</g>`;
+  const id = "lpg" + (++_lpid);
+  return `<defs><linearGradient id="${id}" x1="330" y1="230" x2="765" y2="635" gradientUnits="userSpaceOnUse"><stop stop-color="#2563EB"/><stop offset="1" stop-color="#10B981"/></linearGradient></defs><g transform="translate(${tx} ${ty}) scale(${s})">${markRaw("url(#" + id + ")", "#101828", "#10B981")}</g>`;
+}
+function wordmark(x, y, size, lightText) { const a = lightText ? "#fff" : "#101828", b = lightText ? "#fff" : "#2563EB"; return `<text x="${x}" y="${y}" font-family="${FONT}" font-size="${size}" font-weight="900" letter-spacing="-0.5"><tspan fill="${a}">Landing</tspan><tspan fill="${b}">Prep</tspan></text>`; }
 function header(c) {
-  return `<text x="64" y="92" font-family="${FONT}" font-size="30" font-weight="900" fill="${c.accent}">▲ LandingPrep</text>` +
+  return logoMark(64, 64, 46, "color") + wordmark(64 + LOGOW(46) + 14, 100, 30, false) +
     `<text x="1016" y="92" text-anchor="end" font-family="${FONT}" font-size="24" font-weight="700" fill="#8A93A3">${HANDLE}</text>` +
     pillSolid(64, 124, c.category, c.accent);
 }
@@ -356,11 +373,12 @@ function renderHook(c) {
 }
 // centered brand wordmark with flanking rule lines (toronto.culture style)
 function centerLogo(cy) {
-  const cx = 540, tw = 250, gap = 26, len = 84;
-  const ll1 = cx - tw / 2 - gap - len, ll2 = cx - tw / 2 - gap, rl1 = cx + tw / 2 + gap, rl2 = rl1 + len;
-  return `<line x1="${ll1}" y1="${cy}" x2="${ll2}" y2="${cy}" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>` +
-    `<line x1="${rl1}" y1="${cy}" x2="${rl2}" y2="${cy}" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>` +
-    `<text x="${cx}" y="${cy + 11}" text-anchor="middle" font-family="${FONT}" font-size="32" font-weight="900" letter-spacing="2" fill="#ffffff">▲ LandingPrep</text>`;
+  const cx = 540, h = 46, lw = LOGOW(h), gap = 14, tw = 252, total = lw + gap + tw, left = cx - total / 2;
+  const rg = 26, len = 80;
+  return `<line x1="${left - rg - len}" y1="${cy}" x2="${left - rg}" y2="${cy}" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>` +
+    `<line x1="${left + total + rg}" y1="${cy}" x2="${left + total + rg + len}" y2="${cy}" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>` +
+    logoMark(left, cy - h / 2, h, "white") +
+    `<text x="${left + lw + gap}" y="${cy + 11}" font-family="${FONT}" font-size="32" font-weight="900" letter-spacing="0.3" fill="#ffffff">LandingPrep</text>`;
 }
 // content layer for the photo "news" cards: full-bleed photo + bottom headline + centered logo + red bar
 function bulletinInner(c) {
@@ -524,7 +542,7 @@ async function runAllSlots({ baseUrl, igUserId, token, now }) {
 // ── CAROUSELS (multi-slide posts — the highest-reach image format) ────────
 const YEAR = "2026";
 function slideHeader(topic, accent, dark) {
-  return `<text x="64" y="90" font-family="${FONT}" font-size="27" font-weight="900" fill="${dark ? "#fff" : accent}">▲ LandingPrep</text>` + pillSolid(64, 116, topic, accent);
+  return logoMark(64, 60, 42, dark ? "white" : "color") + wordmark(64 + LOGOW(42) + 12, 94, 28, !!dark) + pillSolid(64, 116, topic, accent);
 }
 function carouselFooter(idx, total, accent, swipe) {
   return `<rect x="0" y="1004" width="1080" height="76" fill="${accent}"/>` +
