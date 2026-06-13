@@ -388,7 +388,7 @@ function bulletinInner(c) {
   let s = logoMark(56, 48, 46, "white") + wordmark(56 + LOGOW(46) + 14, 88, 28, true);
   const ntag = ("NEW" + (c.dateStr ? "  ·  " + c.dateStr : "")).toUpperCase();
   s += `<rect x="56" y="110" rx="9" width="${42 + ntag.length * 13.5}" height="46" fill="${red}"/><text x="74" y="141" font-family="${FONT}" font-size="23" font-weight="900" letter-spacing="1.4" fill="#fff">${esc(ntag)}</text>`;
-  if (c.flagCountry) s += `<rect x="812" y="48" rx="12" width="220" height="152" fill="#ffffff"/>`;
+  if (c.flagCountry) s += `<rect x="620" y="116" rx="18" width="424" height="292" fill="#ffffff"/><rect x="620" y="116" rx="18" width="424" height="292" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>`;
   const big = (c.headline || "").length;
   const size = big > 96 ? 58 : big > 56 ? 70 : 84;
   const maxChars = Math.round(1040 / (size * 0.495));
@@ -409,13 +409,19 @@ function darkBaseSvg(c) {
 function renderBulletin(c) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="bgd2" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#1A2444"/><stop offset="1" stop-color="#06090F"/></linearGradient><linearGradient id="sc2" x1="0" y1="0" x2="0" y2="1"><stop offset="0.4" stop-color="#05070D" stop-opacity="0"/><stop offset="0.8" stop-color="#05070D" stop-opacity="0.72"/><stop offset="1" stop-color="#05070D" stop-opacity="0.97"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#bgd2)"/><rect width="1080" height="1080" fill="url(#sc2)"/>${bulletinInner(c)}</svg>`;
 }
+// rich DESIGNED background (no random stock photos) — brand gradient + accent wash + dark headline zone
+function brandBgSvg(c) {
+  const a = c.accent || "#E0492B";
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs><linearGradient id="bb" x1="0" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#1C2C54"/><stop offset="0.5" stop-color="#101B36"/><stop offset="1" stop-color="#070B16"/></linearGradient>
+  <linearGradient id="aw" x1="0" y1="0" x2="1" y2="0.4"><stop offset="0.45" stop-color="${a}" stop-opacity="0"/><stop offset="1" stop-color="${a}" stop-opacity="0.4"/></linearGradient></defs>
+  <rect width="1080" height="1080" fill="url(#bb)"/><rect width="1080" height="1080" fill="url(#aw)"/>
+  <path d="M0 980 L1080 560 L1080 1080 L0 1080 Z" fill="rgba(0,0,0,0.28)"/>
+  <circle cx="140" cy="180" r="200" fill="rgba(255,255,255,0.03)"/><circle cx="980" cy="900" r="240" fill="${hexA(a, 0.08)}"/></svg>`;
+}
 function bulletinOverlaySvg(c) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
-  <defs><linearGradient id="sc" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#05070D" stop-opacity="0.42"/><stop offset="0.38" stop-color="#05070D" stop-opacity="0.12"/>
-    <stop offset="0.58" stop-color="#05070D" stop-opacity="0.5"/><stop offset="0.8" stop-color="#05070D" stop-opacity="0.85"/>
-    <stop offset="1" stop-color="#05070D" stop-opacity="0.98"/>
-  </linearGradient></defs>
+  <defs><linearGradient id="sc" x1="0" y1="0" x2="0" y2="1"><stop offset="0.5" stop-color="#05070D" stop-opacity="0"/><stop offset="1" stop-color="#05070D" stop-opacity="0.5"/></linearGradient></defs>
   <rect width="1080" height="1080" fill="url(#sc)"/>
   ${bulletinInner(c)}
 </svg>`;
@@ -487,15 +493,13 @@ async function fetchFlag(country) {
   try { const r = await fetchT(`https://flagcdn.com/w640/${code}.png`, {}, 7000); if (!r.ok) return null; return Buffer.from(await r.arrayBuffer()); } catch (e) { return null; }
 }
 function detectCountry(text) { const f = PHOTO_COUNTRIES.find((c) => new RegExp("\\b" + c + "\\b", "i").test(text || "")); return f ? (/UK|Britain|England/i.test(f) ? "United Kingdom" : /USA|America|United States/i.test(f) ? "United States" : f) : null; }
-// render a "news" card: photo bg + scrim + text + country flag chip, else dark base
+// render a "news" card: DESIGNED brand background + big country flag + bold text (no random stock photos)
 async function renderBulletinPng(c, seed) {
   if (!sharp) throw new Error("sharp not installed");
-  const [photo, flag] = await Promise.all([fetchPexels(c.photoQuery, seed), c.flagCountry ? fetchFlag(c.flagCountry) : Promise.resolve(null)]);
-  let base = null;
-  if (photo) { try { base = sharp(photo).resize(1080, 1080, { fit: "cover", position: "attention", kernel: "lanczos3" }).modulate({ saturation: 1.14, brightness: 1.04 }).sharpen({ sigma: 0.8 }); } catch (e) { base = null; } }
-  if (!base) base = sharp(Buffer.from(darkBaseSvg(c)));
+  const flag = c.flagCountry ? await fetchFlag(c.flagCountry) : null;
+  const base = sharp(Buffer.from(brandBgSvg(c)));
   const comps = [{ input: Buffer.from(bulletinOverlaySvg(c)) }];
-  if (flag) { try { const fb = await sharp(flag).resize(204, 136, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 56, left: 820 }); } catch (e) {} }
+  if (flag) { try { const fb = await sharp(flag).resize(412, 280, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 122, left: 626 }); } catch (e) {} }
   return await base.composite(comps).png({ quality: 100, compressionLevel: 9 }).toBuffer();
 }
 
@@ -592,7 +596,7 @@ function slideCoverContent(s) {
   if (s.sub) svg += `<text x="62" y="${kY}" font-family="${FONT}" font-size="26" font-weight="800" fill="#FFD66B">${esc(stripEmoji(s.sub))}</text>`;
   svg = centerLogo(kY - 70) + svg;
   svg += `<text x="540" y="978" text-anchor="middle" font-family="${FONT}" font-size="27" font-weight="900" letter-spacing="2" fill="rgba(255,255,255,0.92)">SWIPE TO SEE THE FULL GUIDE  ›</text>`;
-  return svg;
+  return (s.flagCountry ? `<rect x="332" y="130" rx="18" width="416" height="284" fill="#ffffff"/>` : "") + svg;
 }
 function slideCoverOverlaySvg(s) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="scc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070D" stop-opacity="0.32"/><stop offset="0.42" stop-color="#05070D" stop-opacity="0.12"/><stop offset="0.66" stop-color="#05070D" stop-opacity="0.6"/><stop offset="1" stop-color="#05070D" stop-opacity="0.96"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#scc)"/>${slideCoverContent(s)}</svg>`;
@@ -603,9 +607,12 @@ function slideCoverDarkSvg(s) {
 }
 async function renderCoverPng(s, photoQuery, seed) {
   if (!sharp) throw new Error("sharp not installed");
-  const photo = await fetchPexels(photoQuery, seed);
-  if (photo) { try { return await sharp(photo).resize(1080, 1080, { fit: "cover", position: "attention", kernel: "lanczos3" }).modulate({ saturation: 1.1, brightness: 1.02 }).sharpen({ sigma: 0.8 }).composite([{ input: Buffer.from(slideCoverOverlaySvg(s)) }]).png({ quality: 100, compressionLevel: 9 }).toBuffer(); } catch (e) {} }
-  return await sharp(Buffer.from(slideCoverDarkSvg(s))).png().toBuffer();
+  // designed brand background + big country flag (no random stock photos)
+  const flag = s.flagCountry ? await fetchFlag(s.flagCountry) : null;
+  const base = sharp(Buffer.from(brandBgSvg({ accent: s.accent || "#2563EB" })));
+  const comps = [{ input: Buffer.from(slideCoverOverlaySvg(s)) }];
+  if (flag) { try { const fb = await sharp(flag).resize(404, 272, { fit: "cover" }).png().toBuffer(); comps.push({ input: fb, top: 136, left: 338 }); } catch (e) {} }
+  return await base.composite(comps).png({ quality: 100, compressionLevel: 9 }).toBuffer();
 }
 function buildCountryCarousel(c, seed) {
   const name = c.name, slug = name.toLowerCase().replace(/\s+/g, ""), total = 5, accent = "#E0492B";
@@ -614,7 +621,7 @@ function buildCountryCarousel(c, seed) {
   return {
     topic: "STUDY ABROAD · " + name.toUpperCase(), accent, photoQuery: pickPhotoQuery(name, "edu"),
     slides: [
-      { kind: "cover", title: "Study in " + name + " " + YEAR, sub: (c.tagline || "The complete guide").toUpperCase(), idx: 1, total },
+      { kind: "cover", title: "Study in " + name + " " + YEAR, sub: (c.tagline || "The complete guide").toUpperCase(), flagCountry: name, idx: 1, total },
       { kind: "points", title: "💰 What it costs", points: costPoints, idx: 2, total },
       { kind: "points", title: "Why " + name + "?", points: (c.whyStudy || []).slice(0, 4), idx: 3, total },
       { kind: "points", title: "Your visa & PR pathway", points: pr, idx: 4, total },
