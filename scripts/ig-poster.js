@@ -186,7 +186,14 @@ async function fetchT(url, opts, ms) { const c = new AbortController(); const t 
 function decodeXml(s) {
   return String(s || "").replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/&amp;/g, "&").replace(/&#0?39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#(\d+);/g, (m, n) => String.fromCharCode(+n)).replace(/\s+/g, " ").trim();
 }
-function cleanTitle(t) { return decodeXml(t).replace(/\s+[-–|]\s+[^-–|]{2,45}$/, "").trim(); } // strip trailing " - Publisher"
+function cleanTitle(t) {
+  t = decodeXml(t);
+  t = t.replace(/\s*\([A-Za-z0-9_-]{6,}\)\s*$/, "");          // trailing tracking code e.g. (rWiARfhRwq)
+  t = t.split(/\s+\|\s+/)[0].trim();                          // keep first segment before " | " SEO spam
+  t = t.replace(/\s+[-–—]\s+[^-–—|]{2,45}$/, "").trim();      // strip trailing " - Publisher"
+  t = stripEmoji(t);                                          // remove decorative/garbled unicode
+  return t.replace(/\s{2,}/g, " ").trim();
+}
 async function fetchNewsRSS(query) {
   try {
     const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query + " when:14d")}&hl=en-IN&gl=IN&ceid=IN:en`;
@@ -198,7 +205,7 @@ async function fetchNewsRSS(query) {
       const title = decodeXml((b.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || "");
       const date = (b.match(/<pubDate>([\s\S]*?)<\/pubDate>/) || [])[1] || "";
       const source = decodeXml((b.match(/<source[^>]*>([\s\S]*?)<\/source>/) || [])[1] || "");
-      if (title) items.push({ title, date, source });
+      if (title) { const tt = source ? title.replace(new RegExp("\\s*[-–—]\\s*" + source.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\s*$", "i"), "").trim() : title; items.push({ title: tt, date, source }); }
     }
     return items.length ? items : null;
   } catch (e) { return null; }
@@ -228,15 +235,17 @@ const REL = {
   immig: /visa|immigration|permit|\bpr\b|residen|migrant|citizenship|deport|express entry|graduate route|work right|sponsor/i,
   edu: /student|study|universit|colleg|scholarship|admission|abroad|tuition|campus|intake|enrol|fellowship|\bms\b|graduate/i,
 };
+const SPAM_RE = /prediction|click here|subscribe|sponsored|how to apply step|top \d+|best \d+|list of|\bvs\b|^\s*\d+\s|apply now|enquire|book (a )?free|consultanc|register now|limited seats/i;
 async function liveNews(now, slot) {
   if (process.env.LIVE_NEWS === "0") return null;
   const kind = slot === 0 ? "immig" : "edu"; const seed = dayNumber(now);
   const list = RSS_Q[kind]; const items = await fetchNewsRSS(list[seed % list.length]);
   if (!items || !items.length) return null;
-  const good = items.filter((it) => { const t = cleanTitle(it.title); return t.length >= 24 && t.length <= 135 && !JUNK_RE.test(t) && REL[kind].test(t); });
-  const pool = good.length ? good : items.filter((it) => !JUNK_RE.test(cleanTitle(it.title)));
-  if (!pool.length) return null;
-  return rssToContent(pool[seed % pool.length], kind);
+  const cleaned = items.map((it) => ({ src: it.source, date: it.date, t: cleanTitle(it.title) }));
+  const good = cleaned.filter((it) => it.t.length >= 28 && it.t.length <= 110 && !JUNK_RE.test(it.t) && !SPAM_RE.test(it.t) && REL[kind].test(it.t) && !/[|/]/.test(it.t) && /^[\x20-\x7E''""–—…]+$/.test(it.t));
+  if (!good.length) return null; // no clean headline → fall back to curated (handled by caller)
+  const pick = good[seed % good.length];
+  return rssToContent({ title: pick.t, source: pick.src, date: pick.date }, kind);
 }
 async function resolveDailyContent(now, slot) {
   let c = pickForSlot(now, slot);
@@ -260,7 +269,8 @@ function slotFromHour(now) { const h = (now || new Date()).getUTCHours(); return
 const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 function stripEmoji(s) {
   return String(s == null ? "" : s)
-    .replace(/[\u{1F1E6}-\u{1F1FF}]/gu, "").replace(/[\u{1F300}-\u{1FAFF}]/gu, "")
+    .replace(/[\u{1F000}-\u{1FAFF}]/gu, "")              // emoji + enclosed-alphanumeric supplement (squared letters)
+    .replace(/[\u{2460}-\u{24FF}]/gu, "")                // circled/enclosed alphanumerics
     .replace(/[\u{2600}-\u{27BF}]/gu, "").replace(/[\u{2B00}-\u{2BFF}]/gu, "")
     .replace(/[\u{2190}-\u{21FF}]/gu, "").replace(/[\u{FE00}-\u{FE0F}\u{200D}]/gu, "")
     .replace(/\s{2,}/g, " ").replace(/\s+([,.])/g, "$1").trim();
