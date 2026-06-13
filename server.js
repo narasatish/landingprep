@@ -227,6 +227,10 @@ app.all("/api/ig/post-daily", async (req, res) => {
   try { ig = require("./scripts/ig-poster.js"); }
   catch (e) { return res.status(500).json({ ok: false, error: "poster module/sharp not available: " + e.message }); }
   try {
+    if (String(req.query.whoami || "") === "1") {
+      const info = await ig.whoami({ token: IG_ACCESS_TOKEN });
+      return res.json({ ok: !info.error, ...info });
+    }
     if (String(req.query.preview || "") === "1") {
       const gen = await ig.generateDailyImage({ baseUrl: IG_PUBLIC_BASE });
       return res.json({ ok: true, preview: true, theme: gen.content.label, imageUrl: gen.imageUrl, caption: gen.caption });

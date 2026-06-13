@@ -224,6 +224,23 @@ function buildCaption(c) {
   return (c.caption || c.headline) + (tags ? "\n\n" + tags : "");
 }
 
+// Helper: use the server's token to look up the Instagram Business Account ID(s),
+// so the user doesn't have to run Graph API calls by hand. Returns each Page + its
+// linked IG account id/username — copy the igId into the IG_USER_ID env var.
+async function whoami({ token }) {
+  if (!token) throw new Error("Missing IG_ACCESS_TOKEN env");
+  const v = "v21.0";
+  const r = await fetch(`https://graph.facebook.com/${v}/me/accounts?fields=id,name,instagram_business_account{id,username}&access_token=${encodeURIComponent(token)}`);
+  const j = await r.json();
+  if (j.error) return { error: j.error };
+  const pages = (j.data || []).map((p) => ({
+    page: p.name, pageId: p.id,
+    igUserId: p.instagram_business_account && p.instagram_business_account.id,
+    igUsername: p.instagram_business_account && p.instagram_business_account.username,
+  }));
+  return { pages, hint: "Copy 'igUserId' into your Render IG_USER_ID env var." };
+}
+
 // Generate today's image to disk and return its public URL + caption (no posting).
 async function generateDailyImage({ baseUrl, now }) {
   const c = pickContent(now);
@@ -245,4 +262,4 @@ async function runDailyPost({ baseUrl, igUserId, token, now }) {
   return { ok: true, mediaId: res.mediaId, theme: gen.content.label, imageUrl: gen.imageUrl };
 }
 
-module.exports = { pickContent, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, OUT_DIR };
+module.exports = { pickContent, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, whoami, OUT_DIR };
