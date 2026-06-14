@@ -347,7 +347,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
     const top = all.slice().sort((a, b) => _voiceScore(b) - _voiceScore(a))[0];
     return { voice: top, good: _voiceScore(top) >= 55 };
   }
-  function useSpeechRecognition(onResult) {
+  function useSpeechRecognition(onResult, onError) {
     const recRef = useRef(null);
     const silenceRef = useRef(null);
     const finalRef = useRef("");
@@ -370,7 +370,11 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
       if (text) onResult(text, dur);
     }, [onResult]);
     const start = useCallback(() => {
-      if (!SpeechRecognition || activeRef.current) return;
+      if (activeRef.current) return;
+      if (!SpeechRecognition) {
+        if (onError) onError("unsupported");
+        return;
+      }
       const r = new SpeechRecognition();
       r.continuous = true;
       r.interimResults = true;
@@ -395,10 +399,11 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
         setListening(false);
         activeRef.current = false;
       };
-      r.onerror = () => {
+      r.onerror = (e) => {
         setListening(false);
         activeRef.current = false;
         clearTimeout(silenceRef.current);
+        if (onError) onError(e && e.error || "error");
       };
       recRef.current = r;
       activeRef.current = true;
@@ -407,8 +412,9 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
         setListening(true);
       } catch (_) {
         activeRef.current = false;
+        if (onError) onError("error");
       }
-    }, [submit]);
+    }, [submit, onError]);
     const stop = useCallback(() => {
       activeRef.current = false;
       clearTimeout(silenceRef.current);
@@ -644,7 +650,12 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
       pushMessage("user", transcript, dur ? { dur } : null);
       agentReply(transcript, agentState);
     }, [pushMessage, agentReply, agentState]);
-    const { supported: micSupported, listening, start: startMic, stop: stopMic } = useSpeechRecognition(handleMicResult);
+    const handleMicError = useCallback((reason) => {
+      if (reason === "no-speech" || reason === "aborted") return;
+      const msg = reason === "not-allowed" || reason === "service-not-allowed" ? "I can't access your microphone. Please allow mic access for this site (tap the lock/aA icon in the address bar), or just type your answer below \u{1F447}" : reason === "unsupported" ? "Voice input isn't supported in this browser or the installed app \u2014 please type your answer in the box below \u{1F447}" : "Mic hiccup \u2014 please try again, or type your answer below \u{1F447}";
+      pushMessage("agent", msg);
+    }, [pushMessage]);
+    const { supported: micSupported, listening, start: startMic, stop: stopMic } = useSpeechRecognition(handleMicResult, handleMicError);
     startMicRef.current = startMic;
     micSupportedRef.current = micSupported;
     const startSession = () => {
