@@ -22,7 +22,7 @@ const OUT_DIR = path.join(ROOT, "ig-out");
 const HANDLE = "@landing_prep";
 const SITE = "landingprep.com";
 const FONT = "Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif";
-const SLOTS = 10;
+const SLOTS = 5;
 
 // ── data loaders (cached, guarded) ───────────────────────────────────────
 function evalWindow(file) { try { const w = {}; new Function("window", fs.readFileSync(path.join(ROOT, file), "utf8"))(w); return w; } catch (e) { return {}; } }
@@ -262,7 +262,7 @@ async function liveNews(now, slot) {
 }
 async function resolveDailyContent(now, slot) {
   let c = pickForSlot(now, slot);
-  if (slot === 0 || slot === 3) { try { const live = await liveNews(now, slot === 0 ? 0 : 1); if (live) c = live; } catch (e) { /* keep curated fallback */ } }
+  if (slot === 0) { try { const live = await liveNews(now, dayNumber(now) % 2); if (live) c = live; } catch (e) { /* keep curated fallback */ } }
   return c;
 }
 
@@ -316,6 +316,20 @@ const SCHOLARSHIPS = [
   { n: "Gates Cambridge", full: "Gates Cambridge Scholarship", country: "UK", award: "Fully funded", level: "Master's / PhD", apply: "Dec", who: "outstanding applicants" },
   { n: "Knight-Hennessy", full: "Knight-Hennessy Scholars (Stanford)", country: "USA", award: "Full funding", level: "Any graduate", apply: "Oct", who: "future change-makers" },
   { n: "Holland", full: "Holland Scholarship", country: "Netherlands", award: "€5,000", level: "Bachelor's / Master's", apply: "Feb", who: "non-EEA students" },
+  { n: "Rhodes", full: "Rhodes Scholarship", country: "UK", award: "Fully funded", level: "Master's / PhD", apply: "Aug", who: "exceptional all-rounders" },
+  { n: "Clarendon", full: "Clarendon Fund (Oxford)", country: "UK", award: "Full + stipend", level: "Master's / PhD", apply: "Jan", who: "academic excellence" },
+  { n: "Schwarzman", full: "Schwarzman Scholars (Tsinghua)", country: "China", award: "Fully funded", level: "Master's", apply: "Sep", who: "future global leaders" },
+  { n: "MEXT", full: "MEXT (Monbukagakusho)", country: "Japan", award: "Tuition + stipend", level: "All levels", apply: "May", who: "international students" },
+  { n: "GKS", full: "Global Korea Scholarship", country: "South Korea", award: "Tuition + living", level: "Bachelor's / Grad", apply: "Feb", who: "international students" },
+  { n: "Swiss Excellence", full: "Swiss Government Excellence", country: "Switzerland", award: "CHF 1,920 / mo", level: "PhD / research", apply: "Nov", who: "researchers worldwide" },
+  { n: "Orange Tulip", full: "Orange Tulip Scholarship", country: "Netherlands", award: "Partial – full", level: "Bachelor's / Master's", apply: "varies", who: "select countries" },
+  { n: "Stipendium", full: "Stipendium Hungaricum", country: "Hungary", award: "Full + stipend", level: "All levels", apply: "Jan", who: "international students" },
+  { n: "Türkiye Bursları", full: "Türkiye Scholarships", country: "Turkey", award: "Full + stipend", level: "All levels", apply: "Feb", who: "international students" },
+  { n: "NZ Manaaki", full: "Manaaki New Zealand Scholarship", country: "New Zealand", award: "Full + living", level: "Graduate", apply: "varies", who: "developing nations" },
+  { n: "Lester Pearson", full: "Lester B. Pearson (Toronto)", country: "Canada", award: "Full tuition + living", level: "Bachelor's", apply: "Nov", who: "exceptional students" },
+  { n: "Rotary Peace", full: "Rotary Peace Fellowship", country: "Global", award: "Fully funded", level: "Master's", apply: "May", who: "peace & development" },
+  { n: "Marshall", full: "Marshall Scholarship", country: "UK", award: "Fully funded", level: "Master's / PhD", apply: "Sep", who: "US graduates" },
+  { n: "DAAD EPOS", full: "DAAD Development-Related (EPOS)", country: "Germany", award: "€934 / mo + travel", level: "Master's / PhD", apply: "varies", who: "developing countries" },
 ];
 function pickScholarship(seed) {
   const s = SCHOLARSHIPS[seed % SCHOLARSHIPS.length];
@@ -346,13 +360,16 @@ function pickCostCompared(seed) {
 // day number since epoch (UTC) → stable per-day seed
 function dayNumber(now) { now = now || new Date(); return Math.floor(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86400000); }
 // 8 posts/day: 7 singles + 1 carousel (slot 5). Fresh topics daily via date offset.
-const CAROUSEL_SLOT = 5;
-const SLOT_PICKERS = [pickImmigrationNews, pickExamFees, pickCountryOrCollege, pickEducationNews, pickWordOfDay, null, pickExamSpotlight, pickTipOrSpotlight, pickScholarship, pickCostCompared];
+const CAROUSEL_SLOT = -1; // dedicated daily-carousel slot disabled at 5/day (still available via ?carousel=1)
+function pickNewsRotating(seed) { return (seed % 2 ? pickImmigrationNews(seed) : pickEducationNews(seed)) || pickImmigrationNews(seed) || pickEducationNews(seed); }
+function pickRotatingExtra(seed) { const r = seed % 3; return (r === 0 ? pickCostCompared(seed) : r === 1 ? pickExamFees(seed) : pickExamSpotlight(seed)) || pickCostCompared(seed) || pickScholarship(seed); }
+// 5 strong posts/day — all deep pools + a rotating 5th (cost / exam-fees / exam-guide cycle).
+const SLOT_PICKERS = [pickNewsRotating, pickCountryOrCollege, pickWordOfDay, pickScholarship, pickRotatingExtra];
 function pickForSlot(now, slot) {
   slot = ((Number(slot) || 0) % SLOTS + SLOTS) % SLOTS;
   if (slot === CAROUSEL_SLOT) return null;
   const seed = dayNumber(now) * 8 + slot * 131;
-  const chain = [SLOT_PICKERS[slot], pickQuiz, pickWordOfDay, pickImmigrationNews];
+  const chain = [SLOT_PICKERS[slot], pickWordOfDay, pickScholarship, pickImmigrationNews];
   for (const fn of chain) { const r = fn && fn(seed); if (r) return r; }
   return null;
 }

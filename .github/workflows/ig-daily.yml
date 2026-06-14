@@ -7,26 +7,19 @@ name: Daily Instagram posts
 #   6 exam guide · 7 tip / spotlight
 # Times are UTC. 02:30 UTC = 08:00 IST. Edit the cron lines or hit "Run workflow" any time.
 on:
-  # 10 posts/day for a GLOBAL study-abroad audience (India-weighted, catching US/UK evenings).
-  # Peak windows: India 8-10pm IST · UK/EU 7-9pm · US 7-9pm local. Tue–Thu perform best.
-  # SCHEDULE PAUSED while Instagram API publishing is blocked (Meta error code 200) and until we
-  # settle on a gentler cadence. Manual runs via "Run workflow" (workflow_dispatch) still work.
+  # 5 strong posts/day (India-weighted, catching UK/US evenings). Quality > volume.
+  # SCHEDULE PAUSED while Instagram API publishing is blocked (Meta error code 200).
   # To re-enable automated posting, uncomment the schedule block below.
   # schedule:
-  #   - cron: "30 2 * * *"    # 08:00 IST → slot 0
-  #   - cron: "0 4 * * *"     # 09:30 IST → slot 1
-  #   - cron: "30 5 * * *"    # 11:00 IST → slot 8
-  #   - cron: "0 7 * * *"     # 12:30 IST → slot 2
-  #   - cron: "30 8 * * *"    # 14:00 IST → slot 9
-  #   - cron: "30 12 * * *"   # 18:00 IST → slot 3
-  #   - cron: "0 14 * * *"    # 19:30 IST → slot 4
-  #   - cron: "0 15 * * *"    # 20:30 IST → slot 5 (carousel)
-  #   - cron: "0 16 * * *"    # 21:30 IST → slot 6
-  #   - cron: "30 17 * * *"   # 23:00 IST → slot 7
+  #   - cron: "30 2 * * *"    # 08:00 IST → slot 0  (news)
+  #   - cron: "0 7 * * *"     # 12:30 IST → slot 1  (country / college)
+  #   - cron: "30 10 * * *"   # 16:00 IST → slot 2  (word of the day)
+  #   - cron: "0 14 * * *"    # 19:30 IST → slot 3  (scholarship)
+  #   - cron: "0 16 * * *"    # 21:30 IST → slot 4  (cost / exam-fees / exam-guide)
   workflow_dispatch:
     inputs:
       mode:
-        description: "pool = post next ready-made Canva post · all = post all 10 · carousel = today's carousel · single = current slot"
+        description: "pool = post next ready-made Canva post · all = post all 5 · carousel = a carousel · single = current slot"
         default: "single"
 
 jobs:
@@ -46,25 +39,20 @@ jobs:
           set -e
           H=$(date -u +%H)
           case "$H" in
-            02|03) slot=0 ;;
-            04) slot=1 ;;
-            05|06) slot=8 ;;
-            07) slot=2 ;;
-            08|09|10|11) slot=9 ;;
-            12|13) slot=3 ;;
-            14) slot=4 ;;
-            15) slot=5 ;;
-            16) slot=6 ;;
-            17|18) slot=7 ;;
+            02|03|04|05|06) slot=0 ;;
+            07|08|09) slot=1 ;;
+            10|11|12|13) slot=2 ;;
+            14|15) slot=3 ;;
+            16|17|18) slot=4 ;;
             *) slot=0 ;;
           esac
           # Manual "Run workflow": mode=pool posts the next ready-made Canva post;
-          # mode=all posts all 10; mode=carousel posts today's carousel.
+          # mode=all posts all 5; mode=carousel posts a carousel.
           if [ "${{ github.event.inputs.mode }}" = "pool" ]; then
             QS="pool=next"
           elif [ "${{ github.event.inputs.mode }}" = "all" ]; then
             QS="all=1"
-          elif [ "${{ github.event.inputs.mode }}" = "carousel" ] || [ "$slot" = "5" ]; then
+          elif [ "${{ github.event.inputs.mode }}" = "carousel" ]; then
             QS="carousel=1"
           else
             QS="slot=$slot"
