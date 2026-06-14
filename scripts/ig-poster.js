@@ -459,7 +459,35 @@ function pickRotatingExtra(seed) {
   return f || pickExamFees(seed) || pickCostCompared(seed) || pickScholarship(seed);
 }
 // 5 strong posts/day — all deep pools + a rotating 5th (cost / exam-fees / exam-guide cycle).
-const SLOT_PICKERS = [pickNewsRotating, pickCountryOrCollege, pickWordOfDay, pickScholarship, pickRotatingExtra];
+// per-exam tips (from our own exam-patterns data) — drives users to free practice
+function pickExamTip(seed) {
+  const E = examPatterns(); const keys = Object.keys(E).filter((k) => (E[k].tips || []).length >= 3);
+  if (!keys.length) return null;
+  const k = keys[seed % keys.length]; const e = E[k]; const name = k.toUpperCase();
+  const tips = (e.tips || []).slice(0, 6).map((t) => String(t).trim()).filter(Boolean);
+  return { type: "exam", accent: "#2563EB", category: name + " TIPS", headline: name + " tips", sub: "Boost your score with these", points: tips,
+    caption: `🎯 ${name} tips to boost your score 👇\n\n${tips.map((t) => "✅ " + t).join("\n")}\n\n📌 SAVE this. 💬 Taking ${name}? Comment your test date 👇\n\n👉 Free ${name} practice → landingprep.com\nFollow ${HANDLE} for daily exam prep 📚`,
+    tags: buildTags(k.toLowerCase(), k.toLowerCase() + "preparation", k.toLowerCase() + "tips", "examprep", "studyabroad", "landingprep") };
+}
+// "IELTS vs PTE" style exam comparison
+function pickExamComparison(seed) {
+  const E = examPatterns(); const keys = Object.keys(E);
+  if (keys.length < 2) return null;
+  const a = keys[seed % keys.length]; let b = keys[(seed * 7 + 1) % keys.length]; if (b === a) b = keys[(seed * 7 + 3) % keys.length];
+  if (a === b) return null;
+  const ea = E[a], eb = E[b], A = a.toUpperCase(), B = b.toUpperCase(), pts = [];
+  if (ea.totalDuration && eb.totalDuration) pts.push("Duration: " + A + " " + shortDur(ea.totalDuration) + " · " + B + " " + shortDur(eb.totalDuration));
+  if (ea.scoring && eb.scoring) pts.push("Score: " + A + " " + shortVal(ea.scoring, 12) + " · " + B + " " + shortVal(eb.scoring, 12));
+  if ((ea.sections || []).length && (eb.sections || []).length) pts.push("Sections: " + A + " " + ea.sections.length + " · " + B + " " + eb.sections.length);
+  pts.push("Both accepted by thousands of universities worldwide");
+  if (pts.length < 2) return null;
+  return { type: "exam", accent: "#0E9F6E", category: "EXAM COMPARISON", headline: A + " vs " + B, sub: "Which test should you take?", points: pts.slice(0, 5),
+    caption: `🆚 ${A} vs ${B} — which should you take? 👇\n\n${pts.map((p) => "• " + p).join("\n")}\n\n💬 Which are you taking? Comment 👇\n📌 SAVE this comparison.\n\n👉 Free practice for both → landingprep.com\nFollow ${HANDLE} for daily exam prep 📚`,
+    tags: buildTags(a.toLowerCase(), b.toLowerCase(), "examprep", "testprep", "studyabroad", "landingprep") };
+}
+// slot 2 now rotates 3 ways: words of the day · exam tips · exam comparison
+function pickExamPrep(seed) { const r = seed % 3; return (r === 0 ? pickWordOfDay(seed) : r === 1 ? pickExamTip(seed) : pickExamComparison(seed)) || pickWordOfDay(seed) || pickExamSpotlight(seed); }
+const SLOT_PICKERS = [pickNewsRotating, pickCountryOrCollege, pickExamPrep, pickScholarship, pickRotatingExtra];
 function pickForSlot(now, slot) {
   slot = ((Number(slot) || 0) % SLOTS + SLOTS) % SLOTS;
   if (slot === CAROUSEL_SLOT) return null;
