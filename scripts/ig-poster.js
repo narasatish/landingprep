@@ -169,6 +169,8 @@ function pickExamSpotlight(seed) {
   if (e.totalDuration) stats.push({ v: shortDur(e.totalDuration), label: "Total time" });
   if (e.scoring) stats.push({ v: shortVal(e.scoring, 11), label: "Scoring" });
   stats.push({ v: "FREE", label: "Mock test" });
+  stats.push({ v: "Worldwide", label: "Accepted" });
+  stats.push({ v: "Year-round", label: "Test dates" });
   const secNames = (e.sections || []).map((s) => s.name).filter(Boolean).slice(0, 4).join(" · ");
   return { type: "exam", bg: T.bg, accent: T.accent, category: name + " EXAM GUIDE",
     headline: name, sub: secNames, stats, highlight: [], cta: "Free " + name + " mock → link in bio",
@@ -275,10 +277,12 @@ function pickCountryHighlight(seed) {
   const c = D[(seed * 3) % D.length]; const stats = [];
   if (c.avgTuition) stats.push({ v: moneyShort(c.avgTuition), label: "Tuition / yr" });
   if (c.postStudyWork) stats.push({ v: pswShort(c.postStudyWork), label: "Post-study work" });
+  if (c.prTimeline) stats.push({ v: shortVal(c.prTimeline, 10), label: "PR pathway" });
   if (c.visaSuccess) stats.push({ v: "~" + c.visaSuccess + "%", label: "Visa success" });
   stats.push({ v: String((c.intakes || []).length || 2), label: "Intakes / yr" });
+  stats.push({ v: "20 h/wk", label: "Work while study" });
   const slug = c.name.toLowerCase().replace(/\s+/g, "");
-  return { type: "exam", accent: "#1D4ED8", category: c.name.toUpperCase(), flagCountry: c.name, headline: c.name, sub: c.tagline || "Study-abroad destination", stats: stats.slice(0, 4), cta: "Full country guide — link in bio  →",
+  return { type: "exam", accent: "#1D4ED8", category: c.name.toUpperCase(), flagCountry: c.name, headline: c.name, sub: c.tagline || "Study-abroad destination", stats: stats.slice(0, 6), cta: "Full country guide — link in bio  →",
     caption: `🌍 Why study in ${c.name}? ${c.flag || ""}\n\n${c.tagline || ""}\n${c.avgTuition ? "💰 Tuition: " + c.avgTuition + "\n" : ""}${c.postStudyWork ? "💼 Post-study work: " + c.postStudyWork + "\n" : ""}${c.prTimeline ? "🛂 PR: " + c.prTimeline + "\n" : ""}\n📲 TAG someone considering ${c.name}.\n📌 SAVE this. 💬 Is ${c.name} on your list? 👇\n\n👉 Full ${c.name} guide — link in bio.\nFollow ${HANDLE} for daily study-abroad guides 🌍`,
     tags: buildTags("study" + slug, "studyin" + slug, "studyabroad", "internationalstudents", "landingprep") };
 }
@@ -288,9 +292,12 @@ function pickCollegeSpotlight(seed) {
   if (c.rank) stats.push({ v: "#" + c.rank, label: "World rank" });
   if (c.feeNote) stats.push({ v: moneyShort(c.feeNote), label: "Tuition / yr" });
   if (c.acceptance) stats.push({ v: c.acceptance + "%", label: "Acceptance" });
-  if (c.ielts) stats.push({ v: "IELTS " + c.ielts, label: "Min. score" });
+  if (c.ielts) stats.push({ v: "IELTS " + c.ielts, label: "Min. IELTS" });
+  if (c.gre) stats.push({ v: "GRE " + c.gre, label: "Avg. GRE" });
+  if (c.deadline) stats.push({ v: shortVal(c.deadline, 10), label: "Deadline" });
+  const _pad = [["Yes", "Intl. friendly"], ["Sept · Jan", "Intakes"], ["Available", "Scholarships"]]; while (stats.length < 6) { const p = _pad[stats.length % _pad.length]; stats.push({ v: p[0], label: p[1] }); }
   const cslug = String(c.country).toLowerCase().replace(/\s+/g, "");
-  return { type: "exam", accent: "#7C3AED", category: String(c.country).toUpperCase(), flagCountry: c.country, headline: collegeShort(c.name), sub: (c.city || "") + " · " + c.country, stats: stats.slice(0, 4), cta: "Free college predictor — link in bio  →",
+  return { type: "exam", accent: "#7C3AED", category: String(c.country).toUpperCase(), flagCountry: c.country, headline: collegeShort(c.name), sub: (c.city || "") + " · " + c.country, stats: stats.slice(0, 6), cta: "Free college predictor — link in bio  →",
     caption: `🎓 ${c.name} — at a glance\n\n${c.rank ? "🌍 World rank: #" + c.rank + "\n" : ""}${c.feeNote ? "💰 Tuition: " + c.feeNote + "\n" : ""}${c.acceptance ? "✅ Acceptance: " + c.acceptance + "%\n" : ""}${c.ielts ? "📊 IELTS " + c.ielts + " · GRE " + (c.gre || "—") + "\n" : ""}${c.deadline ? "🗓 Deadline: " + c.deadline + "\n" : ""}\n📲 TAG a future applicant. 📌 SAVE this.\n💬 Is this your dream school? 👇\n\n👉 Free college predictor — link in bio.\nFollow ${HANDLE} for daily admits info 🎓`,
     tags: buildTags("studyin" + cslug, "studyabroad", "universityadmission", "topuniversities", "landingprep") };
 }
@@ -312,7 +319,7 @@ const SCHOLARSHIPS = [
 ];
 function pickScholarship(seed) {
   const s = SCHOLARSHIPS[seed % SCHOLARSHIPS.length];
-  const stats = [{ v: s.award, label: "Award" }, { v: s.level, label: "Level" }, { v: s.apply, label: "Apply by" }, { v: "FREE", label: "Application" }];
+  const stats = [{ v: clip(s.award, 16), label: "Award" }, { v: s.level, label: "Level" }, { v: s.country, label: "Study in" }, { v: s.apply, label: "Apply by" }, { v: "FREE", label: "Application" }, { v: clip(s.who, 16), label: "Open to" }];
   const slug = s.country.toLowerCase().replace(/\s+/g, "");
   return { type: "exam", accent: "#0E9F6E", category: "SCHOLARSHIP", flagCountry: ISO[s.country.toLowerCase()] ? s.country : null, headline: s.n, sub: s.full + " · " + s.country, stats, cta: "Free scholarship guide — link in bio  →",
     caption: `💰 ${s.full} (${s.country})\n\n🎓 Award: ${s.award}\n📚 Level: ${s.level}\n🗓 Apply by: ${s.apply}\n✅ For: ${s.who}\n\n📲 TAG a friend who should apply. 📌 SAVE this.\n💬 Applying this year? Comment 👇\n\n👉 Free scholarships guide — link in bio.\nFollow ${HANDLE} for daily funding alerts 💸`,
@@ -321,7 +328,7 @@ function pickScholarship(seed) {
 function pickCostCompared(seed) {
   const D = (evalWindow("country-data.jsx").LP_COUNTRY_DATA || []).filter((c) => c.avgTuition);
   if (D.length < 4) return null;
-  const pick = []; for (let i = 0; pick.length < 4 && i < D.length; i++) { const c = D[(seed + i * 5) % D.length]; if (!pick.find((p) => p.name === c.name)) pick.push(c); }
+  const pick = []; for (let i = 0; pick.length < 6 && i < D.length * 2; i++) { const c = D[(seed + i * 5) % D.length]; if (!pick.find((p) => p.name === c.name)) pick.push(c); }
   const stats = pick.map((c) => ({ v: moneyShort(c.avgTuition), label: c.name }));
   return { type: "exam", accent: THEME.edu.accent, category: "COST TO STUDY ABROAD", headline: "What it costs", sub: "Average tuition per year, compared", stats,
     cta: "Full cost breakdown in bio",
@@ -580,17 +587,17 @@ function brFrame(accent, inner, cta) { return `<svg xmlns="http://www.w3.org/200
 function renderBrightStat(c) {
   const a = c.accent || "#2563EB"; let s = `<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
   s += brPill(130, 214, c.category, a, !!c.flagCountry);
-  const hl = wrapPlain(c.headline, c.headline.length > 16 ? 17 : 13).slice(0, 2); const hs = hl.length > 1 ? 72 : 92;
-  let y = 388; hl.forEach((ln, i) => { s += `<text x="130" y="${y + i * (hs + 4)}" font-family="${FONT}" font-size="${hs}" font-weight="900" fill="${BR_NAVY}" letter-spacing="-2">${esc(ln)}</text>`; });
-  y += (hl.length - 1) * (hs + 4) + 52;
-  if (c.sub) { const sl = wrapPlain(c.sub, 44).slice(0, 2); s += `<text font-family="${FONT}" font-size="29" font-weight="700" fill="${a}">${tspans(sl, 134, y, 38)}</text>`; y += (sl.length) * 38 + 14; }
-  const st = (c.stats || []).slice(0, 4); const bw = 396, bh = 132, gx = 130, gy = Math.min(Math.max(y + 12, 548), 560), gap = 28;
-  st.forEach((box, i) => { const x = gx + (i % 2) * (bw + gap), by = gy + Math.floor(i / 2) * (bh + 24);
+  const longH = (c.headline || "").length > 13;
+  s += `<text x="130" y="352" font-family="${FONT}" font-size="${longH ? 60 : 86}" font-weight="900" fill="${BR_NAVY}" letter-spacing="-2">${esc(wrapPlain(c.headline, longH ? 20 : 13).slice(0, 1)[0] || c.headline)}</text>`;
+  if (c.sub) s += `<text x="132" y="404" font-family="${FONT}" font-size="26" font-weight="700" fill="${a}">${esc(wrapPlain(c.sub, 54).slice(0, 1)[0] || "")}</text>`;
+  const st = (c.stats || []).slice(0, 6), cols = 2, bw = 396, gap = 28, gx = 130, gy = 450, bottom = 858;
+  const rows = Math.max(1, Math.ceil(st.length / cols)), bh = Math.floor((bottom - gy - (rows - 1) * 20) / rows);
+  st.forEach((box, i) => { const x = gx + (i % cols) * (bw + gap), by = gy + Math.floor(i / cols) * (bh + 20);
     s += `<rect x="${x}" y="${by}" width="${bw}" height="${bh}" rx="22" fill="${BR_CARD}"/>`;
-    s += `<text x="${x + 28}" y="${by + 66}" font-family="${FONT}" font-size="42" font-weight="900" fill="${a}">${esc(stripEmoji(String(box.v)))}</text>`;
-    s += `<text x="${x + 28}" y="${by + 104}" font-family="${FONT}" font-size="23" font-weight="800" fill="${BR_SUB}" letter-spacing="0.5">${esc(String(box.label).toUpperCase())}</text>`;
+    s += `<text x="${x + 30}" y="${by + Math.round(bh / 2) + 4}" font-family="${FONT}" font-size="${bh > 150 ? 42 : 35}" font-weight="900" fill="${a}">${esc(stripEmoji(String(box.v)))}</text>`;
+    s += `<text x="${x + 30}" y="${by + bh - 26}" font-family="${FONT}" font-size="21" font-weight="800" fill="${BR_SUB}" letter-spacing="0.5">${esc(String(box.label).toUpperCase())}</text>`;
   });
-  return brFrame(a, s, c.cta || "Full guide — link in bio  →");
+  return brFrame(a, s);
 }
 function renderBrightQuiz(c) {
   const a = c.accent || "#7C3AED"; let s = `<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
