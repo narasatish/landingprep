@@ -335,9 +335,20 @@ function pickScholarship(seed) {
   const s = SCHOLARSHIPS[seed % SCHOLARSHIPS.length];
   const stats = [{ v: clip(s.award, 16), label: "Award" }, { v: s.level, label: "Level" }, { v: s.country, label: "Study in" }, { v: s.apply, label: "Apply by" }, { v: "FREE", label: "Application" }, { v: clip(s.who, 16), label: "Open to" }];
   const slug = s.country.toLowerCase().replace(/\s+/g, "");
-  return { type: "exam", accent: "#0E9F6E", category: "SCHOLARSHIP", flagCountry: ISO[s.country.toLowerCase()] ? s.country : null, headline: s.n, sub: s.full + " · " + s.country, stats, cta: "Free scholarship guide — link in bio  →",
+  const out = { type: "exam", accent: "#0E9F6E", category: "SCHOLARSHIP", flagCountry: ISO[s.country.toLowerCase()] ? s.country : null, headline: s.n, sub: s.full + " · " + s.country, stats, cta: "Free scholarship guide — link in bio  →",
     caption: `💰 ${s.full} (${s.country})\n\n🎓 Award: ${s.award}\n📚 Level: ${s.level}\n🗓 Apply by: ${s.apply}\n✅ For: ${s.who}\n\n📲 TAG a friend who should apply. 📌 SAVE this.\n💬 Applying this year? Comment 👇\n\n👉 Free scholarships guide — link in bio.\nFollow ${HANDLE} for daily funding alerts 💸`,
     tags: buildTags("scholarships", "studyin" + slug, "studyabroad", "fullyfunded", "landingprep") };
+  // on alternate days, present it as the Style-4 urgency/deadline card (when a real apply month exists)
+  if (/^[A-Za-z]{3}$/.test(s.apply) && (seed % 2 === 1)) {
+    out.style = "urgency";
+    out.urgentTag = "SCHOLARSHIP DEADLINE";
+    out.date = s.apply.toUpperCase() + " " + YEAR;
+    out.urgentLabel = s.full + "  ·  " + s.country;
+    out.chips = [s.level, clip(s.award, 20), "Free to apply"];
+    out.pct = 56 + (seed % 36);
+    out.noteLeft = "Apply by " + s.apply + " " + YEAR;
+  }
+  return out;
 }
 function pickExamFees(seed) {
   const FEES = [{ name: "IELTS", fee: "$245" }, { name: "TOEFL", fee: "$195" }, { name: "PTE", fee: "$200" }, { name: "GRE", fee: "$220" }, { name: "GMAT", fee: "$275" }, { name: "Duolingo", fee: "$65" }];
@@ -854,6 +865,39 @@ function viralVocab(c) {
   s += `<rect x="0" y="1000" width="1080" height="80" fill="${NAVY}"/><text x="72" y="1050" font-family="${BODY}" font-weight="700" font-size="30" fill="#fff">Save these for your IELTS / GRE prep</text><text x="1008" y="1050" text-anchor="end" font-family="${BODY}" font-weight="700" font-size="26" fill="#aab0c8">landingprep.com</text>`;
   return s + `</svg>`;
 }
+// Style 4 — urgency / deadline card (solid dark charcoal + red, big date + progress bar)
+function viralUrgency(c) {
+  const R = "#DC2626", CH = "#0B0F19", MUT = "#94a3b8";
+  const tag = String(c.urgentTag || "DEADLINE ALERT").toUpperCase();
+  const label = clip(stripEmoji(c.urgentLabel || c.sub || ""), 48).toUpperCase();
+  const kicker = String(c.kicker || "APPLICATIONS CLOSE").toUpperCase();
+  const date = String(c.date || c.headline || "").toUpperCase();
+  const pct = Math.max(20, Math.min(94, Math.round(c.pct || 70)));
+  const chips = (c.chips || []).map((t) => stripEmoji(String(t))).filter(Boolean).slice(0, 3);
+  const noteLeft = c.noteLeft || ("Application window " + pct + "% elapsed");
+  const noteRight = pct >= 78 ? "CLOSING SOON" : "APPLY EARLY";
+  const sub = c.subLine || "Free to apply — don't miss it.";
+  const dsize = date.length > 10 ? 116 : date.length > 7 ? 186 : 208;
+  const barX = 90, barW = 900, barY = 656, fillW = Math.round(barW * pct / 100);
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><radialGradient id="rg" cx="50%" cy="10%" r="58%"><stop offset="0" stop-color="${R}" stop-opacity="0.3"/><stop offset="1" stop-color="${R}" stop-opacity="0"/></radialGradient></defs>`;
+  s += `<rect width="1080" height="1080" fill="${CH}"/><rect width="1080" height="1080" fill="url(#rg)"/><rect width="1080" height="12" fill="${R}"/>`;
+  const pillW = Math.round(132 + tag.length * 16.5), px = (1080 - pillW) / 2;
+  s += `<rect x="${px}" y="124" rx="30" width="${pillW}" height="60" fill="${R}"/>`;
+  s += `<path d="M${px + 48} 140 L${px + 67} 172 L${px + 29} 172 Z" fill="none" stroke="#fff" stroke-width="3.6" stroke-linejoin="round"/><line x1="${px + 48}" y1="150" x2="${px + 48}" y2="160" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/><circle cx="${px + 48}" cy="166" r="2" fill="#fff"/>`;
+  s += `<text x="${px + pillW / 2 + 22}" y="163" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="29" fill="#fff" letter-spacing="2">${esc(tag)}</text>`;
+  if (label) s += `<text x="540" y="272" text-anchor="middle" font-family="${BODY}" font-weight="700" font-size="32" fill="${MUT}" letter-spacing="1">${esc(label)}</text>`;
+  s += `<text x="540" y="372" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="42" fill="#fff" letter-spacing="6">${esc(kicker)}</text>`;
+  s += `<text x="540" y="566" text-anchor="middle" font-family="${HEAD}" font-size="${dsize}" fill="#fff" letter-spacing="2">${esc(date)}</text>`;
+  s += `<rect x="${barX}" y="${barY}" width="${barW}" height="26" rx="13" fill="#1f2937"/><rect x="${barX}" y="${barY}" width="${fillW}" height="26" rx="13" fill="${R}"/>`;
+  s += `<text x="${barX}" y="${barY + 64}" font-family="${BODY}" font-weight="700" font-size="26" fill="${MUT}">${esc(noteLeft)}</text>`;
+  s += `<text x="${barX + barW}" y="${barY + 64}" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="26" fill="${R}">${esc(noteRight)}</text>`;
+  if (chips.length) { const cw = chips.map((t) => 44 + t.length * 15.5), total = cw.reduce((a, b) => a + b, 0) + (chips.length - 1) * 20; let cx = (1080 - total) / 2; const cy = 768;
+    chips.forEach((t, i) => { s += `<rect x="${Math.round(cx)}" y="${cy}" rx="14" width="${Math.round(cw[i])}" height="70" fill="#161c2b" stroke="#27314a" stroke-width="1.5"/><text x="${Math.round(cx + cw[i] / 2)}" y="${cy + 45}" text-anchor="middle" font-family="${BODY}" font-weight="700" font-size="26" fill="#e5e7eb">${esc(t)}</text>`; cx += cw[i] + 20; }); }
+  s += `<text x="540" y="916" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="40" fill="#fff">${esc(sub)}</text>`;
+  s += `<rect x="0" y="1004" width="1080" height="76" fill="${R}"/><text x="72" y="1052" font-family="${BODY}" font-weight="800" font-size="28" fill="#fff">${HANDLE}</text><text x="1008" y="1052" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="28" fill="#fff">landingprep.com</text>`;
+  return s + `</svg>`;
+}
 // ══ AI photographic backgrounds (Imagen via Gemini key), cached on disk ══
 // Generates a real premium background ONCE per key (country/topic), caches it, then reuses
 // it forever — so cost is a one-time ~₹3/key, not per-post. Crisp text is overlaid by resvg.
@@ -930,6 +974,7 @@ function viralOverlay(c) {
 }
 // render a single post: AI photo background + crisp overlay (premium); falls back to solid vector cards
 async function renderViral(c) {
+  if (c.style === "urgency") return Buffer.from(resvgPng(viralUrgency(c), 1080));
   if (AIBG_ON && sharp && c.type !== "vocab") {
     try {
       const bg = await aiBackground(c);
