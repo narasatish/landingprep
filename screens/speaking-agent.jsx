@@ -356,7 +356,7 @@
   // candidate pauses (~1.6s), the accumulated utterance is submitted automatically
   // — no button to hold. The agent re-opens the mic after it finishes speaking, so
   // the whole thing is a natural two-way voice conversation.
-  function useSpeechRecognition(onResult) {
+  function useSpeechRecognition(onResult, onError) {
     const recRef = useRef(null);
     const silenceRef = useRef(null);
     const finalRef = useRef("");
@@ -379,7 +379,8 @@
     }, [onResult]);
 
     const start = useCallback(() => {
-      if (!SpeechRecognition || activeRef.current) return;
+      if (activeRef.current) return;
+      if (!SpeechRecognition) { if (onError) onError("unsupported"); return; }
       const r = new SpeechRecognition();
       r.continuous = true;
       r.interimResults = true;
@@ -402,11 +403,11 @@
         }
       };
       r.onend = () => { setListening(false); activeRef.current = false; };
-      r.onerror = () => { setListening(false); activeRef.current = false; clearTimeout(silenceRef.current); };
+      r.onerror = (e) => { setListening(false); activeRef.current = false; clearTimeout(silenceRef.current); if (onError) onError((e && e.error) || "error"); };
       recRef.current = r;
       activeRef.current = true;
-      try { r.start(); setListening(true); } catch (_) { activeRef.current = false; }
-    }, [submit]);
+      try { r.start(); setListening(true); } catch (_) { activeRef.current = false; if (onError) onError("error"); }
+    }, [submit, onError]);
 
     const stop = useCallback(() => {
       activeRef.current = false;
@@ -621,8 +622,19 @@
       agentReply(transcript, agentState);
     }, [pushMessage, agentReply, agentState]);
 
+    // Surface mic problems in the chat instead of failing silently (the old bug).
+    const handleMicError = useCallback((reason) => {
+      if (reason === "no-speech" || reason === "aborted") return;        // benign — ignore
+      const msg = (reason === "not-allowed" || reason === "service-not-allowed")
+        ? "I can't access your microphone. Please allow mic access for this site (tap the lock/aA icon in the address bar), or just type your answer below \u{1F447}"
+        : reason === "unsupported"
+          ? "Voice input isn't supported in this browser or the installed app — please type your answer in the box below \u{1F447}"
+          : "Mic hiccup — please try again, or type your answer below \u{1F447}";
+      pushMessage("agent", msg);
+    }, [pushMessage]);
+
     const { supported: micSupported, listening, start: startMic, stop: stopMic } =
-      useSpeechRecognition(handleMicResult);
+      useSpeechRecognition(handleMicResult, handleMicError);
     // Keep refs current so the auto-listen loop never uses a stale mic handle.
     startMicRef.current = startMic;
     micSupportedRef.current = micSupported;
