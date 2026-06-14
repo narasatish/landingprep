@@ -570,8 +570,10 @@ function brBg(accent) {
 }
 function brLogoBar() { return `<rect x="250" y="50" width="580" height="92" rx="26" fill="#fff"/>${logoMark(330, 66, 60, "color")}<text x="408" y="110" font-family="${FONT}" font-size="42" font-weight="900" letter-spacing="-1"><tspan fill="${BR_NAVY}">Landing</tspan><tspan fill="#2563EB">Prep</tspan></text>`; }
 function brCta(text, accent) { return `<rect x="90" y="918" width="900" height="94" rx="47" fill="${BR_YELLOW}"/><text x="540" y="978" text-anchor="middle" font-family="${FONT}" font-size="36" font-weight="900" letter-spacing="0.5" fill="${BR_NAVY}">${esc(stripEmoji(text))}</text>`; }
+// Clean footer — no "link in bio" CTA. Just the handle + site, centered.
+function brFooter() { return `<text x="540" y="968" text-anchor="middle" font-family="${FONT}" font-size="31" font-weight="800" letter-spacing="1.2" fill="rgba(255,255,255,0.96)">@landing_prep    ·    landingprep.com</text>`; }
 function brPill(x, y, text, accent, flagGap) { const t = stripEmoji(text), w = (flagGap ? 78 : 28) + t.length * 16.5 + 28; return `<rect x="${x}" y="${y}" width="${w}" height="58" rx="29" fill="${hexA(accent, 0.14)}"/>${flagGap ? `<rect x="${x + 16}" y="${y + 13}" width="48" height="32" rx="5" fill="#fff" stroke="#e2e8f0"/>` : ""}<text x="${x + (flagGap ? 78 : 26)}" y="${y + 40}" font-family="${FONT}" font-size="27" font-weight="900" letter-spacing="1" fill="${accent}">${esc(t)}</text>`; }
-function brFrame(accent, inner, cta) { return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${brBg(accent)}${brLogoBar()}${inner}${brCta(cta, accent)}</svg>`; }
+function brFrame(accent, inner, cta) { return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${brBg(accent)}${brLogoBar()}${inner}${brFooter()}</svg>`; }
 // stat/spotlight (country, college, exam, scholarship, cost)
 function renderBrightStat(c) {
   const a = c.accent || "#2563EB"; let s = `<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
