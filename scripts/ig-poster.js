@@ -325,6 +325,13 @@ function pickScholarship(seed) {
     caption: `💰 ${s.full} (${s.country})\n\n🎓 Award: ${s.award}\n📚 Level: ${s.level}\n🗓 Apply by: ${s.apply}\n✅ For: ${s.who}\n\n📲 TAG a friend who should apply. 📌 SAVE this.\n💬 Applying this year? Comment 👇\n\n👉 Free scholarships guide — link in bio.\nFollow ${HANDLE} for daily funding alerts 💸`,
     tags: buildTags("scholarships", "studyin" + slug, "studyabroad", "fullyfunded", "landingprep") };
 }
+function pickExamFees(seed) {
+  const FEES = [{ name: "IELTS", fee: "$245" }, { name: "TOEFL", fee: "$195" }, { name: "PTE", fee: "$200" }, { name: "GRE", fee: "$220" }, { name: "GMAT", fee: "$275" }, { name: "Duolingo", fee: "$65" }];
+  const stats = FEES.map((e) => ({ v: e.fee, label: e.name }));
+  return { type: "exam", accent: "#7C3AED", category: "EXAM FEES · " + YEAR, headline: "What exams cost", sub: "Registration fee per attempt (USD, approx)", stats,
+    caption: `💵 What do study-abroad exams cost in ${YEAR}? 👇\n\n${FEES.map((e) => e.name + ": " + e.fee).join("\n")}\n\n📤 SHARE with someone planning their tests.\n📌 SAVE this. 💬 Which test are you taking? 👇\n\nFollow ${HANDLE} for daily exam prep 📚`,
+    tags: buildTags("ieltsfees", "toeflfees", "examfees", "greexam", "landingprep") };
+}
 function pickCostCompared(seed) {
   const D = (evalWindow("country-data.jsx").LP_COUNTRY_DATA || []).filter((c) => c.avgTuition);
   if (D.length < 4) return null;
@@ -340,7 +347,7 @@ function pickCostCompared(seed) {
 function dayNumber(now) { now = now || new Date(); return Math.floor(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86400000); }
 // 8 posts/day: 7 singles + 1 carousel (slot 5). Fresh topics daily via date offset.
 const CAROUSEL_SLOT = 5;
-const SLOT_PICKERS = [pickImmigrationNews, pickQuiz, pickCountryOrCollege, pickEducationNews, pickWordOfDay, null, pickExamSpotlight, pickTipOrSpotlight, pickScholarship, pickCostCompared];
+const SLOT_PICKERS = [pickImmigrationNews, pickExamFees, pickCountryOrCollege, pickEducationNews, pickWordOfDay, null, pickExamSpotlight, pickTipOrSpotlight, pickScholarship, pickCostCompared];
 function pickForSlot(now, slot) {
   slot = ((Number(slot) || 0) % SLOTS + SLOTS) % SLOTS;
   if (slot === CAROUSEL_SLOT) return null;
