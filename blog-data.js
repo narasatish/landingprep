@@ -32424,6 +32424,40 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
           "body": "Identify your target score from your university's requirement (often 65\u201373). Practice full-length mock tests to track progress and focus on weaker sections \u2014 Speaking and Writing are often the hardest for non-native speakers. Use authentic practice questions. Practise free PTE preparation on LandingPrep to sharpen grammar, vocabulary, and timing across all tasks."
         }
       ]
+    },
+    {
+      "id": "good-gre-score-for-top-universities",
+      "tag": "GRE",
+      "date": "2026",
+      "title": "What's a Good GRE Score for Top Universities? Percentiles 2026",
+      "excerpt": "GRE score guide \u2014 what's competitive for top-50 and top-10 universities, percentiles explained, and score ranges by field (STEM vs humanities, PhD vs master's).",
+      "kw": "good GRE score, GRE percentiles, top university GRE score, GRE 320, competitive GRE",
+      "sections": [
+        {
+          "h": "GRE Scoring and Percentile Basics",
+          "body": "The GRE Quantitative and Verbal sections are each scored 130\u2013170 in 1-point increments, for a combined 260\u2013340. Analytical Writing is scored 0\u20136 in half-point steps. Your percentile rank shows how you compare to recent test-takers \u2014 for example, a Quant score of 160 is roughly the mid-80s percentile. Percentiles shift slightly year to year as cohorts change; check current ETS tables."
+        },
+        {
+          "h": "Competitive Scores for Top-50 Universities",
+          "body": "Top-50 universities typically look for around 155\u2013162 in each section (combined 310\u2013320+) for competitive applicants, roughly the 65th\u201380th percentile. STEM fields emphasise Quant; humanities emphasise Verbal; business and social sciences want balance. These are general guidelines \u2014 confirm the specific expectations with your target programme's website."
+        },
+        {
+          "h": "Elite (Top-10) University Requirements",
+          "body": "At top-10 universities, admitted students often have 162\u2013170 Quant and 160\u2013170 Verbal (combined ~320\u2013340). However, admission is holistic; the GRE is one factor among research experience, recommendations, and statement of purpose. A 330+ signals strong ability but never guarantees admission. Check each programme's published middle-50% accepted score range."
+        },
+        {
+          "h": "Score Differences by Field (STEM vs Humanities)",
+          "body": "STEM fields (engineering, physics, computer science) average roughly 160+ Quant and 155+ Verbal \u2014 Quant strength is essential. Humanities fields (literature, history, philosophy) average about 155 Quant and 160+ Verbal \u2014 Verbal skill is prioritised. Business and social sciences sit in the middle. Confirm your field's norms on programme pages and graduate forums."
+        },
+        {
+          "h": "GRE Scores for PhD vs Master's Programs",
+          "body": "PhD programmes are usually more competitive and weigh research potential heavily alongside scores (often 315+ combined for strong applicants). Master's programmes vary widely \u2014 selective STEM or top-university programmes may want 310+, while others accept lower. Funded PhD positions often correlate with stronger scores. Always check your specific programme's historical data."
+        },
+        {
+          "h": "Strategy to Reach Your Target Score",
+          "body": "Set a target based on your field and target universities (often 310\u2013320 for competitive programmes). Take a baseline practice test to find weak areas \u2014 STEM students often start weaker on Verbal, humanities on Quant \u2014 and give your weaker section more prep time. Take full practice tests regularly to track percentile gains. Practise free GRE questions on LandingPrep to build familiarity with question types and pacing."
+        }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;
