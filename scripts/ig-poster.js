@@ -593,9 +593,10 @@ function renderBrightStat(c) {
   const st = (c.stats || []).slice(0, 6), cols = 2, bw = 396, gap = 28, gx = 130, gy = 450, bottom = 858;
   const rows = Math.max(1, Math.ceil(st.length / cols)), bh = Math.floor((bottom - gy - (rows - 1) * 20) / rows);
   st.forEach((box, i) => { const x = gx + (i % cols) * (bw + gap), by = gy + Math.floor(i / cols) * (bh + 20);
-    s += `<rect x="${x}" y="${by}" width="${bw}" height="${bh}" rx="22" fill="${BR_CARD}"/>`;
-    s += `<text x="${x + 30}" y="${by + Math.round(bh / 2) + 4}" font-family="${FONT}" font-size="${bh > 150 ? 42 : 35}" font-weight="900" fill="${a}">${esc(stripEmoji(String(box.v)))}</text>`;
-    s += `<text x="${x + 30}" y="${by + bh - 26}" font-family="${FONT}" font-size="21" font-weight="800" fill="${BR_SUB}" letter-spacing="0.5">${esc(String(box.label).toUpperCase())}</text>`;
+    s += `<rect x="${x}" y="${by}" width="${bw}" height="${bh}" rx="22" fill="${hexA(a, 0.11)}"/>`;
+    s += `<rect x="${x}" y="${by + 16}" width="9" height="${bh - 32}" rx="5" fill="${a}"/>`;
+    s += `<text x="${x + 38}" y="${by + Math.round(bh / 2) + 4}" font-family="${FONT}" font-size="${bh > 150 ? 42 : 35}" font-weight="900" fill="${a}">${esc(stripEmoji(String(box.v)))}</text>`;
+    s += `<text x="${x + 38}" y="${by + bh - 26}" font-family="${FONT}" font-size="21" font-weight="800" fill="${BR_INK}" letter-spacing="0.5">${esc(String(box.label).toUpperCase())}</text>`;
   });
   return brFrame(a, s);
 }
