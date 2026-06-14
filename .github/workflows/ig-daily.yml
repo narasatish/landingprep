@@ -9,17 +9,20 @@ name: Daily Instagram posts
 on:
   # 10 posts/day for a GLOBAL study-abroad audience (India-weighted, catching US/UK evenings).
   # Peak windows: India 8-10pm IST · UK/EU 7-9pm · US 7-9pm local. Tue–Thu perform best.
-  schedule:
-    - cron: "30 2 * * *"    # 08:00 IST (India AM) · 7:30pm US-PT  → slot 0  visa/immigration news
-    - cron: "0 4 * * *"     # 09:30 IST                            → slot 1  daily quiz
-    - cron: "30 5 * * *"    # 11:00 IST                            → slot 8  scholarship alert
-    - cron: "0 7 * * *"     # 12:30 IST (India lunch)              → slot 2  country/college spotlight
-    - cron: "30 8 * * *"    # 14:00 IST                            → slot 9  cost compared
-    - cron: "30 12 * * *"   # 18:00 IST · 1:30pm UK · 8:30am US-ET → slot 3  study-abroad news
-    - cron: "0 14 * * *"    # 19:30 IST · 3pm UK                   → slot 4  word of the day
-    - cron: "0 15 * * *"    # 20:30 IST (India PEAK) · 4pm UK      → slot 5  CAROUSEL
-    - cron: "0 16 * * *"    # 21:30 IST (India PEAK) · 5pm UK      → slot 6  exam guide
-    - cron: "30 17 * * *"   # 23:00 IST · 6:30pm UK · 1:30pm US-ET → slot 7  tip / spotlight
+  # SCHEDULE PAUSED while Instagram API publishing is blocked (Meta error code 200) and until we
+  # settle on a gentler cadence. Manual runs via "Run workflow" (workflow_dispatch) still work.
+  # To re-enable automated posting, uncomment the schedule block below.
+  # schedule:
+  #   - cron: "30 2 * * *"    # 08:00 IST → slot 0
+  #   - cron: "0 4 * * *"     # 09:30 IST → slot 1
+  #   - cron: "30 5 * * *"    # 11:00 IST → slot 8
+  #   - cron: "0 7 * * *"     # 12:30 IST → slot 2
+  #   - cron: "30 8 * * *"    # 14:00 IST → slot 9
+  #   - cron: "30 12 * * *"   # 18:00 IST → slot 3
+  #   - cron: "0 14 * * *"    # 19:30 IST → slot 4
+  #   - cron: "0 15 * * *"    # 20:30 IST → slot 5 (carousel)
+  #   - cron: "0 16 * * *"    # 21:30 IST → slot 6
+  #   - cron: "30 17 * * *"   # 23:00 IST → slot 7
   workflow_dispatch:
     inputs:
       mode:
