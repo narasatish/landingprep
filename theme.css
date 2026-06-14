@@ -761,28 +761,41 @@ img { max-width: 100%; display: block; }
   top: 0; right: 0; bottom: 0;
   width: min(86vw, 340px);
   background: var(--bg);
-  padding: 24px;
+  padding: 16px 16px calc(20px + env(safe-area-inset-bottom));
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   border-left: 1px solid var(--line);
+  overflow-y: auto;                 /* the 14 items now scroll — bottom items were cut off before */
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 .drawer-panel a {
-  padding: 14px 8px;
+  display: flex;
+  align-items: center;
+  min-height: 46px;                 /* comfortable tap target */
+  padding: 11px 12px;
   border-bottom: 1px solid var(--line-soft);
   font-size: 16px;
   color: var(--ink);
   text-decoration: none;
   font-family: var(--serif);
   letter-spacing: -0.01em;
+  border-radius: 8px;
 }
+.drawer-panel a:hover, .drawer-panel a:active, .drawer-panel a.is-on { background: var(--line-soft); }
 .drawer-panel a:last-of-type { border-bottom: 0; }
 .drawer-close {
+  position: sticky;                 /* stays reachable while the list scrolls */
+  top: 0;
+  z-index: 2;
+  flex-shrink: 0;
   align-self: flex-end;
-  width: 36px; height: 36px;
+  width: 40px; height: 40px;
   border-radius: 8px;
-  font-size: 22px;
-  margin-bottom: 8px;
+  font-size: 24px;
+  background: var(--bg);
+  margin-bottom: 4px;
 }
 
 /* utility */
