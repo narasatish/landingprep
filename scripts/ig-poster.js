@@ -103,10 +103,12 @@ const TAGS = {
   exam: ["examprep", "testprep", "mocktest", "studytips", "examtips", "studymotivation", "studyhard"],
 };
 // 2026 algorithm: 3-5 highly relevant tags out-reach 30 generic ones. Pass best-first; we keep 5.
+const TRENDING_TAGS = ["studyabroad", "studyabroad2026", "studygram", "internationalstudents", "studyvisa", "ieltspreparation", "studentlife", "studyoverseas", "scholarships", "dreamstudyabroad"];
 function buildTags() {
   const out = [];
   for (let i = 0; i < arguments.length; i++) { const a = Array.isArray(arguments[i]) ? arguments[i] : [arguments[i]]; for (const t of a) { const x = String(t || "").toLowerCase().replace(/[^a-z0-9]/g, ""); if (x && !out.includes(x)) out.push(x); } }
-  return out.slice(0, 5);
+  for (const t of TRENDING_TAGS) { if (!out.includes(t)) out.push(t); }
+  return out.slice(0, 15);
 }
 
 // ── content pickers (one per slot) ───────────────────────────────────────
@@ -174,12 +176,12 @@ function pickExamSpotlight(seed) {
     tags: buildTags(k.toLowerCase(), k.toLowerCase() + "preparation", "examprep", "mocktest", "landingprep") };
 }
 function pickWordOfDay(seed) {
-  const W = vocabWords(); if (!W.length) return null;
-  const w = W[(seed * 7) % W.length]; const T = THEME.vocab;
-  return { type: "vocab", bg: T.bg, accent: T.accent, category: "WORD OF THE DAY",
-    word: cap(w.w), pos: w.pos || "", def: w.def, ex: w.ex || "", syn: w.syn || "", highlight: [],
-    cta: "Free vocab decks → link in bio",
-    caption: `📖 WORD OF THE DAY: ${cap(w.w)} ${w.pos ? "(" + w.pos + ")" : ""}\n\n${w.def}${w.ex ? "\n\n📝 “" + w.ex + "”" : ""}${w.syn ? "\n\n🔁 Similar: " + w.syn : ""}\n\n📲 TAG a study buddy who's building their vocab.\n📌 SAVE for your IELTS/GRE prep.\n💬 Use “${cap(w.w)}” in a sentence below 👇\n\n👉 Free vocab decks — link in bio.\nFollow ${HANDLE} for a new word daily 📚`,
+  const W = vocabWords(); if (!W.length) return null; const T = THEME.vocab;
+  const n = Math.min(4, W.length); const words = []; const used = new Set();
+  for (let i = 0; i < n; i++) { let idx = (((seed * 7 + i * 13) % W.length) + W.length) % W.length; let g = 0; while (used.has(idx) && g++ < W.length) idx = (idx + 1) % W.length; used.add(idx); const w = W[idx]; words.push({ w: cap(w.w), pos: w.pos || "", def: clip(w.def, 56) }); }
+  const capList = words.map((x) => `📖 ${x.w}${x.pos ? " (" + x.pos + ")" : ""} — ${x.def}`).join("\n");
+  return { type: "vocab", bg: T.bg, accent: T.accent, category: "WORDS OF THE DAY", words, highlight: [],
+    caption: `📚 ${n} words to level up your English 👇\n\n${capList}\n\n📲 TAG a study buddy. 📌 SAVE these for your IELTS / GRE prep.\n💬 Use one in a sentence below 👇\n\nFollow ${HANDLE} for new words daily 📚`,
     tags: buildTags("ielts", "vocabulary", "wordoftheday", "englishvocabulary", "landingprep") };
 }
 
@@ -571,9 +573,9 @@ function brBg(accent) {
 function brLogoBar() { return `<rect x="250" y="50" width="580" height="92" rx="26" fill="#fff"/>${logoMark(330, 66, 60, "color")}<text x="408" y="110" font-family="${FONT}" font-size="42" font-weight="900" letter-spacing="-1"><tspan fill="${BR_NAVY}">Landing</tspan><tspan fill="#2563EB">Prep</tspan></text>`; }
 function brCta(text, accent) { return `<rect x="90" y="918" width="900" height="94" rx="47" fill="${BR_YELLOW}"/><text x="540" y="978" text-anchor="middle" font-family="${FONT}" font-size="36" font-weight="900" letter-spacing="0.5" fill="${BR_NAVY}">${esc(stripEmoji(text))}</text>`; }
 // Clean footer — no "link in bio" CTA. Just the handle + site, centered.
-function brFooter() { return `<text x="540" y="968" text-anchor="middle" font-family="${FONT}" font-size="31" font-weight="800" letter-spacing="1.2" fill="rgba(255,255,255,0.96)">@landing_prep    ·    landingprep.com</text>`; }
+function brFooter() { return `<text x="986" y="1042" text-anchor="end" font-family="${FONT}" font-size="26" font-weight="800" letter-spacing="0.5" fill="rgba(255,255,255,0.9)">landingprep.com</text>`; }
 function brPill(x, y, text, accent, flagGap) { const t = stripEmoji(text), w = (flagGap ? 78 : 28) + t.length * 16.5 + 28; return `<rect x="${x}" y="${y}" width="${w}" height="58" rx="29" fill="${hexA(accent, 0.14)}"/>${flagGap ? `<rect x="${x + 16}" y="${y + 13}" width="48" height="32" rx="5" fill="#fff" stroke="#e2e8f0"/>` : ""}<text x="${x + (flagGap ? 78 : 26)}" y="${y + 40}" font-family="${FONT}" font-size="27" font-weight="900" letter-spacing="1" fill="${accent}">${esc(t)}</text>`; }
-function brFrame(accent, inner, cta) { return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${brBg(accent)}${brLogoBar()}${inner}${brFooter()}</svg>`; }
+function brFrame(accent, inner, cta) { return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${brBg(accent)}${inner}${brFooter()}</svg>`; }
 // stat/spotlight (country, college, exam, scholarship, cost)
 function renderBrightStat(c) {
   const a = c.accent || "#2563EB"; let s = `<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
@@ -608,12 +610,16 @@ function renderBrightQuiz(c) {
 }
 function renderBrightVocab(c) {
   const a = c.accent || "#2563EB"; let s = `<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
-  s += brPill(130, 214, "WORD OF THE DAY", a, false);
-  const wl = wrapPlain(c.word, 13).slice(0, 1); s += `<text x="128" y="372" font-family="${FONT}" font-size="${(c.word || "").length > 11 ? 86 : 104}" font-weight="900" fill="${BR_NAVY}" letter-spacing="-2">${esc(wl[0] || "")}</text>`;
-  if (c.pos) s += `<text x="132" y="424" font-family="${FONT}" font-size="32" font-weight="800" font-style="italic" fill="${a}">${esc(c.pos)}</text>`;
-  const dl = wrapPlain(c.def, 40).slice(0, 3); const dh = dl.length * 46 + 50; s += `<rect x="130" y="460" width="820" height="${dh}" rx="22" fill="${BR_CARD}"/><text font-family="${FONT}" font-size="34" font-weight="600" fill="${BR_INK}">${tspans(dl, 162, 524, 46)}</text>`;
-  let y = 460 + dh + 44; if (c.ex) { const el = wrapPlain("“" + c.ex + "”", 46).slice(0, 2); s += `<text font-family="${FONT}" font-size="29" font-weight="500" font-style="italic" fill="${BR_SUB}">${tspans(el, 134, y, 42)}</text>`; }
-  return brFrame(a, s, "Free vocab decks — link in bio  →");
+  s += brPill(130, 214, c.category || "WORDS OF THE DAY", a, false);
+  const words = (c.words && c.words.length ? c.words : [{ w: c.word || "", pos: c.pos || "", def: c.def || "" }]).slice(0, 4);
+  const n = words.length, top = 318, bh = Math.floor((852 - top) / n);
+  words.forEach((wd, i) => { const by = top + i * bh;
+    s += `<text x="130" y="${by + 44}" font-family="${FONT}" font-size="46" font-weight="900" fill="${BR_NAVY}" letter-spacing="-1">${esc(wd.w)}<tspan font-size="26" font-weight="700" font-style="italic" fill="${a}">  ${esc(wd.pos || "")}</tspan></text>`;
+    const dl = wrapPlain(wd.def, 54).slice(0, 1);
+    s += `<text x="130" y="${by + 84}" font-family="${FONT}" font-size="27" font-weight="500" fill="${BR_SUB}">${esc(dl[0] || "")}</text>`;
+    if (i < n - 1) s += `<line x1="130" y1="${by + bh - 14}" x2="950" y2="${by + bh - 14}" stroke="#EEF2F7" stroke-width="2"/>`;
+  });
+  return brFrame(a, s);
 }
 function renderBrightNews(c) {
   const a = c.accent || "#1D4ED8"; let s = `<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
