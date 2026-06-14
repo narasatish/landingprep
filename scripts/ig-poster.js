@@ -708,9 +708,129 @@ function photoOverlaySvg(c) {
   s += `<text x="1018" y="1040" text-anchor="end" font-family="${FONT}" font-size="26" font-weight="800" fill="#ffffff" fill-opacity="0.92">landingprep.com</text></svg>`;
   return s;
 }
-// render a single post: photo backdrop if a matching photo exists, else the flat card
+// ══ VIRAL TEMPLATE SYSTEM — rendered with REAL fonts via resvg (Anton + Poppins) ══
+// This is the quality fix: librsvg (used by sharp) silently falls back to a plain
+// system font, which made the old cards look dull. resvg loads the bundled TTFs, so
+// the bold "immigration-news" look (heavy Anton headline + Poppins data) renders for real.
+let Resvg = null;
+try { Resvg = require("@resvg/resvg-js").Resvg; } catch (e) { /* installed at deploy on Render */ }
+const FONTS_DIR = path.join(ROOT, "assets/fonts");
+const FONT_FILES = ["Anton-Regular.ttf", "Poppins-ExtraBold.ttf", "Poppins-Bold.ttf", "Poppins-SemiBold.ttf", "Poppins-Regular.ttf"]
+  .map((f) => path.join(FONTS_DIR, f)).filter((f) => { try { return fs.existsSync(f); } catch (e) { return false; } });
+const HEAD = "Anton", BODY = "Poppins";
+function resvgPng(svg, width) {
+  if (!Resvg) throw new Error("@resvg/resvg-js not installed");
+  return new Resvg(svg, { fitTo: { mode: "width", value: width || 1080 }, font: { fontFiles: FONT_FILES, loadSystemFonts: false, defaultFontFamily: BODY } }).render().asPng();
+}
+// only use a real photo when one is named for THIS country (keeps generic posts on clean solid cards)
+function countryPhoto(c) {
+  if (!c || !c.flagCountry) return null;
+  try { if (!fs.existsSync(PHOTO_DIR)) return null; } catch (e) { return null; }
+  const k = _slug(c.flagCountry);
+  for (const e of [".jpg", ".jpeg", ".png", ".webp"]) { const p = path.join(PHOTO_DIR, k + e); try { if (fs.existsSync(p)) return p; } catch (e2) {} }
+  return null;
+}
+async function safeFlag(country, w, h) {
+  if (!sharp) return null;
+  try { const fb = await fetchFlag(country); if (!fb) return null; return await sharp(fb).resize(w || 104, h || 68, { fit: "cover" }).png().toBuffer(); } catch (e) { return null; }
+}
+// wrapped ALL-CAPS headline lines (Anton) with optional yellow keyword highlight
+function capLines(lines, x, firstBaseline, size, lh, hiSet, baseFill, hiFill) {
+  return lines.map((ln, i) => {
+    const spans = ln.split(/\s+/).filter(Boolean).map((w) => {
+      const bare = w.replace(/[^A-Za-z0-9]/g, "").toUpperCase();
+      return `<tspan${hiSet.has(bare) ? ` fill="${hiFill}"` : ""}>${esc(w)} </tspan>`;
+    }).join("");
+    return `<text x="${x}" y="${firstBaseline + i * lh}" xml:space="preserve" font-family="${HEAD}" font-size="${size}" fill="${baseFill}" letter-spacing="0.4">${spans}</text>`;
+  }).join("");
+}
+// 1 — bold black/yellow "urgent news" card (immigrationnewscanada style)
+function viralNews(c, photo) {
+  const Y = "#FFD400", R = "#E0162B";
+  let cat = stripEmoji(c.category || "UPDATE"); if (cat.length > 26) cat = cat.split(" · ")[0]; cat = clip(cat, 28).toUpperCase();
+  const head = stripEmoji(c.headline || "").toUpperCase();
+  const len = head.length, size = len > 95 ? 72 : len > 60 ? 90 : len > 34 ? 112 : 138;
+  const maxc = Math.max(8, Math.round(940 / (size * 0.50)));
+  const lines = wrapPlain(head, maxc).slice(0, 5), lh = size * 1.0;
+  const firstBase = 726 - (lines.length - 1) * lh;
+  const hiSet = new Set(String(c.flagCountry || "").toUpperCase().split(/\s+/).filter(Boolean));
+  const chips = (c.icons || []).map((i) => i.label).filter(Boolean).slice(0, 3);
+  const pw = 44 + cat.length * 17;
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="nd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06070d" stop-opacity="${photo ? 0.45 : 1}"/><stop offset="0.5" stop-color="#06070d" stop-opacity="${photo ? 0.34 : 1}"/><stop offset="1" stop-color="#06070d" stop-opacity="${photo ? 0.97 : 1}"/></linearGradient></defs>`;
+  if (!photo) s += `<rect width="1080" height="1080" fill="#0a0a0a"/><rect width="1080" height="14" fill="${Y}"/>`;
+  s += `<rect width="1080" height="1080" fill="url(#nd)"/>`;
+  s += `<rect x="72" y="74" rx="10" width="${Math.round(pw)}" height="60" fill="${R}"/><text x="${72 + pw / 2}" y="114" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="30" fill="#fff" letter-spacing="1.5">${esc(cat)}</text>`;
+  s += capLines(lines, 72, firstBase, size, lh, hiSet, "#fff", Y);
+  if (chips.length) { let cx = 72; const cy = 794; chips.forEach((t) => { const tt = stripEmoji(t), w = 44 + tt.length * 16.5; s += `<rect x="${cx}" y="${cy}" rx="12" width="${Math.round(w)}" height="78" fill="rgba(255,255,255,0.09)"/><rect x="${cx}" y="${cy}" rx="6" width="9" height="78" fill="${Y}"/><text x="${cx + 30}" y="${cy + 50}" font-family="${BODY}" font-weight="700" font-size="29" fill="#fff">${esc(tt)}</text>`; cx += w + 20; }); }
+  s += `<rect x="0" y="912" width="1080" height="104" fill="${Y}"/><text x="540" y="978" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="42" fill="#0a0a0a" letter-spacing="0.5">FULL STORY IN THE CAPTION  &#8595;</text>`;
+  s += `<text x="72" y="1060" font-family="${BODY}" font-weight="700" font-size="28" fill="#9a9a9a">${HANDLE}</text><text x="1008" y="1060" text-anchor="end" font-family="${BODY}" font-weight="700" font-size="28" fill="#9a9a9a">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+// 2 — premium indigo stat card (country / scholarship / cost / exam fees / exam guide)
+function viralStat(c, photo) {
+  const a = c.accent || "#2563EB";
+  let cat = stripEmoji(c.category || ""); if (cat.length > 30) cat = cat.split(" · ")[0]; cat = clip(cat, 30).toUpperCase();
+  const head = stripEmoji(c.headline || "").toUpperCase();
+  const stats = (c.stats || []).slice(0, 6), pw = 36 + cat.length * 15.5;
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="sg" x1="0" y1="0" x2="0.6" y2="1"><stop offset="0" stop-color="#1b2452"/><stop offset="0.55" stop-color="#111634"/><stop offset="1" stop-color="#0a0d1f"/></linearGradient><linearGradient id="sd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0d1f" stop-opacity="0.5"/><stop offset="0.5" stop-color="#0a0d1f" stop-opacity="0.62"/><stop offset="1" stop-color="#0a0d1f" stop-opacity="0.95"/></linearGradient></defs>`;
+  if (photo) s += `<rect width="1080" height="1080" fill="url(#sd)"/>`;
+  else s += `<rect width="1080" height="1080" fill="url(#sg)"/><circle cx="980" cy="120" r="240" fill="${hexA(a, 0.18)}"/><circle cx="120" cy="1000" r="180" fill="${hexA(a, 0.10)}"/>`;
+  s += `<rect x="72" y="78" rx="31" width="${Math.round(pw)}" height="62" fill="${a}"/><text x="${72 + pw / 2}" y="119" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="27" fill="#fff" letter-spacing="1.5">${esc(cat)}</text>`;
+  const hsize = head.length > 16 ? 76 : head.length > 9 ? 104 : 120;
+  const hl = wrapPlain(head, head.length > 16 ? 18 : 12).slice(0, 2); let hy = 250;
+  hl.forEach((ln, i) => { s += `<text x="70" y="${hy + i * (hsize + 2)}" font-family="${HEAD}" font-size="${hsize}" fill="#fff" letter-spacing="0.5">${esc(ln)}</text>`; });
+  let cursor = hy + hl.length * (hsize + 2) - hsize + 6;
+  if (c.sub) { s += `<text x="74" y="${cursor + 34}" font-family="${BODY}" font-weight="600" font-size="29" fill="${lighten(a, 0.5)}">${esc(clip(stripEmoji(c.sub), 54))}</text>`; cursor += 56; }
+  const gy = Math.max(cursor + 28, 358), gx = 72, gap = 26, cols = 2, bw = (1080 - gx * 2 - gap) / 2;
+  const rows = Math.max(1, Math.ceil(stats.length / cols)), bh = Math.floor((992 - gy - (rows - 1) * gap) / rows);
+  stats.forEach((b, i) => { const x = gx + (i % cols) * (bw + gap), by = gy + Math.floor(i / cols) * (bh + gap);
+    const v = stripEmoji(String(b.v)), vsize = v.length > 11 ? 30 : v.length > 8 ? 35 : 41;
+    s += `<rect x="${x}" y="${by}" width="${Math.round(bw)}" height="${bh}" rx="20" fill="rgba(255,255,255,0.07)"/><rect x="${x}" y="${by + 14}" width="8" height="${bh - 28}" rx="4" fill="${a}"/>`;
+    s += `<text x="${x + 34}" y="${by + Math.round(bh / 2) + 6}" font-family="${BODY}" font-weight="800" font-size="${vsize}" fill="#fff">${esc(v)}</text>`;
+    s += `<text x="${x + 34}" y="${by + bh - 26}" font-family="${BODY}" font-weight="700" font-size="19" fill="${lighten(a, 0.55)}" letter-spacing="0.5">${esc(String(b.label).toUpperCase())}</text>`;
+  });
+  s += `<text x="72" y="1052" font-family="${BODY}" font-weight="700" font-size="26" fill="rgba(255,255,255,0.5)">${HANDLE}</text><text x="1008" y="1052" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.88)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+// 3 — clean cream vocabulary card (TNC-explainer style)
+function viralVocab(c) {
+  const a = c.accent || "#2563EB", NAVY = "#15203f";
+  const words = (c.words && c.words.length ? c.words : [{ w: c.word || "", pos: c.pos || "", def: c.def || "" }]).slice(0, 4);
+  const n = words.length, cat = (c.category || "WORDS OF THE DAY").toUpperCase(), pw = 30 + cat.length * 14.5;
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><rect width="1080" height="1080" fill="#F3ECE4"/>`;
+  s += `<text x="72" y="116" font-family="${BODY}" font-weight="800" font-size="36" fill="${NAVY}" letter-spacing="1.5">LANDINGPREP</text>`;
+  s += `<rect x="${Math.round(1008 - pw)}" y="80" rx="26" width="${Math.round(pw)}" height="52" fill="${a}"/><text x="${Math.round(1008 - pw / 2)}" y="114" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="23" fill="#fff" letter-spacing="1">${esc(cat)}</text>`;
+  s += `<line x1="72" y1="150" x2="1008" y2="150" stroke="#dcd2c6" stroke-width="2"/>`;
+  s += `<text x="70" y="250" font-family="${HEAD}" font-size="76" fill="${NAVY}">${n} WORDS TO KNOW</text>`;
+  const top = 300, bottom = 980, rh = Math.floor((bottom - top) / n);
+  words.forEach((w, i) => { const by = top + i * rh;
+    s += `<text x="72" y="${by + 60}" font-family="${BODY}" font-weight="800" font-size="56" fill="${NAVY}">${esc(cap(w.w))}<tspan font-family="${BODY}" font-weight="600" font-size="27" font-style="italic" fill="${a}">   ${esc(w.pos || "")}</tspan></text>`;
+    s += `<text x="72" y="${by + 104}" font-family="${BODY}" font-weight="400" font-size="30" fill="#4a4a4a">${esc(wrapPlain(w.def, 62).slice(0, 1)[0] || "")}</text>`;
+    if (i < n - 1) s += `<line x1="72" y1="${by + rh - 8}" x2="1008" y2="${by + rh - 8}" stroke="#e3d9cd" stroke-width="2"/>`;
+  });
+  s += `<rect x="0" y="1000" width="1080" height="80" fill="${NAVY}"/><text x="72" y="1050" font-family="${BODY}" font-weight="700" font-size="30" fill="#fff">Save these for your IELTS / GRE prep</text><text x="1008" y="1050" text-anchor="end" font-family="${BODY}" font-weight="700" font-size="26" fill="#aab0c8">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+// render a single post in the viral style (resvg + real fonts); photo backdrop for country posts
+async function renderViral(c) {
+  const photo = (c.type === "bulletin" || c.type === "exam") ? countryPhoto(c) : null;
+  const svg = c.type === "vocab" ? viralVocab(c) : c.type === "bulletin" ? viralNews(c, !!photo) : viralStat(c, !!photo);
+  const overlay = resvgPng(svg, 1080);
+  const flagBuf = c.flagCountry ? await safeFlag(c.flagCountry) : null;
+  if (photo && sharp) {
+    const comps = [{ input: overlay }];
+    if (flagBuf) comps.push({ input: flagBuf, top: 76, left: 894 });
+    return await sharp(fs.readFileSync(photo)).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).composite(comps).png({ quality: 100 }).toBuffer();
+  }
+  if (flagBuf && sharp) return await sharp(overlay).composite([{ input: flagBuf, top: 76, left: 894 }]).png({ quality: 100 }).toBuffer();
+  return Buffer.from(overlay);
+}
+// render a single post: viral style (real fonts) when resvg is available, else legacy flat card
 async function renderContentPng(c) {
-  if (!sharp) throw new Error("sharp not installed");
+  if (Resvg) { try { return await renderViral(c); } catch (e) { console.error("[ig] viral render failed, using fallback:", e && e.message); } }
+  if (!sharp) throw new Error("neither resvg nor sharp available");
   const photo = photoFor(c);
   if (photo) {
     try {
