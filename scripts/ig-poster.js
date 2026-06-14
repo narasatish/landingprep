@@ -281,8 +281,15 @@ function pickCountryHighlight(seed) {
   if (c.visaSuccess) stats.push({ v: "~" + c.visaSuccess + "%", label: "Visa success" });
   stats.push({ v: String((c.intakes || []).length || 2), label: "Intakes / yr" });
   stats.push({ v: "20 h/wk", label: "Work while study" });
+  const points = [];
+  if (c.avgTuition) points.push("Tuition around " + String(c.avgTuition).replace(/\s*\([^)]*\)/g, "").trim() + (/\/|year|yr|annum/i.test(c.avgTuition) ? "" : " per year"));
+  if (c.postStudyWork) points.push("Post-study work visa: " + clip(c.postStudyWork, 44));
+  if (c.prTimeline) points.push("Clear pathway to PR — " + clip(c.prTimeline, 38));
+  if (c.visaSuccess) points.push("About " + c.visaSuccess + "% of student visas get approved");
+  points.push("Work up to 20 hours a week while you study");
+  if ((c.intakes || []).length) points.push((c.intakes.length) + " intakes a year — more chances to apply");
   const slug = c.name.toLowerCase().replace(/\s+/g, "");
-  return { type: "exam", accent: "#1D4ED8", category: c.name.toUpperCase(), flagCountry: c.name, headline: c.name, sub: c.tagline || "Study-abroad destination", stats: stats.slice(0, 6), cta: "Full country guide — link in bio  →",
+  return { type: "exam", accent: "#1D4ED8", category: c.name.toUpperCase(), flagCountry: c.name, headline: c.name, sub: c.tagline || "Study-abroad destination", stats: stats.slice(0, 6), points, cta: "Full country guide — link in bio  →",
     caption: `🌍 Why study in ${c.name}? ${c.flag || ""}\n\n${c.tagline || ""}\n${c.avgTuition ? "💰 Tuition: " + c.avgTuition + "\n" : ""}${c.postStudyWork ? "💼 Post-study work: " + c.postStudyWork + "\n" : ""}${c.prTimeline ? "🛂 PR: " + c.prTimeline + "\n" : ""}\n📲 TAG someone considering ${c.name}.\n📌 SAVE this. 💬 Is ${c.name} on your list? 👇\n\n👉 Full ${c.name} guide — link in bio.\nFollow ${HANDLE} for daily study-abroad guides 🌍`,
     tags: buildTags("study" + slug, "studyin" + slug, "studyabroad", "internationalstudents", "landingprep") };
 }
@@ -962,12 +969,13 @@ function viralOverlay(c) {
     hl.forEach((ln, i) => { s += `<text x="70" y="${hy + i * (hsize + 2)}" font-family="${HEAD}" font-size="${hsize}" fill="#fff" letter-spacing="0.5">${esc(ln)}</text>`; });
     let cur = hy + hl.length * (hsize + 2) - hsize + 6;
     if (c.sub) { s += `<text x="74" y="${cur + 34}" font-family="${BODY}" font-weight="600" font-size="29" fill="#e7eeff">${esc(clip(stripEmoji(c.sub), 54))}</text>`; cur += 56; }
-    const stats = (c.stats || []).slice(0, 6), gy = Math.max(cur + 28, 372), gx = 72, gap = 24, cols = 2, bw = (1080 - gx * 2 - gap) / 2;
-    const rows = Math.max(1, Math.ceil(stats.length / cols)), bh = Math.floor((986 - gy - (rows - 1) * gap) / rows);
-    stats.forEach((b, i) => { const x = gx + (i % cols) * (bw + gap), by = gy + Math.floor(i / cols) * (bh + gap), v = stripEmoji(String(b.v)), vs = v.length > 11 ? 30 : v.length > 8 ? 35 : 41;
-      s += `<rect x="${x}" y="${by}" width="${Math.round(bw)}" height="${bh}" rx="20" fill="rgba(255,255,255,0.13)"/><rect x="${x}" y="${by + 14}" width="8" height="${bh - 28}" rx="4" fill="${a}"/>`;
-      s += `<text x="${x + 34}" y="${by + Math.round(bh / 2) + 6}" font-family="${BODY}" font-weight="800" font-size="${vs}" fill="#fff">${esc(v)}</text>`;
-      s += `<text x="${x + 34}" y="${by + bh - 26}" font-family="${BODY}" font-weight="700" font-size="19" fill="#cfe0ff" letter-spacing="0.5">${esc(String(b.label).toUpperCase())}</text>`;
+    // sentence/point-based content (a clean bullet list, NOT tiny stat boxes)
+    const pts = (c.points && c.points.length ? c.points : (c.stats || []).map((b) => `${b.label}: ${stripEmoji(String(b.v))}`)).slice(0, 6);
+    const py0 = Math.max(cur + 44, 398), py1 = 988, rowH = Math.min(120, Math.floor((py1 - py0) / Math.max(1, pts.length)));
+    pts.forEach((p, i) => { const ry = py0 + i * rowH;
+      s += `<circle cx="100" cy="${ry + 14}" r="21" fill="${a}"/><path d="M89 ${ry + 14} l8 8 14 -17" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>`;
+      const lines = wrapPlain(stripEmoji(String(p)), 40).slice(0, 2);
+      lines.forEach((ln, j) => { s += `<text x="146" y="${ry + 24 + j * 40}" font-family="${BODY}" font-weight="${j === 0 ? 600 : 400}" font-size="32" fill="#fff">${esc(ln)}</text>`; });
     });
   }
   s += `<text x="72" y="1060" font-family="${BODY}" font-weight="700" font-size="27" fill="rgba(255,255,255,0.72)">${HANDLE}</text><text x="1008" y="1060" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
