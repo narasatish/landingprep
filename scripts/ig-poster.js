@@ -1132,18 +1132,18 @@ async function renderBulletinPng(c, seed) {
 function buildCaption(c) { const tags = (c.tags || []).map((t) => "#" + t).join(" "); return (c.caption || c.headline || "") + (tags ? "\n\n" + tags : ""); }
 async function postToInstagram({ imageUrl, caption, igUserId, token }) {
   const v = "v21.0";
-  const cr = await fetch(`https://graph.facebook.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ image_url: imageUrl, caption, access_token: token }) });
+  const cr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ image_url: imageUrl, caption, access_token: token }) });
   const cj = await cr.json(); if (!cr.ok || !cj.id) throw new Error("IG container failed: " + JSON.stringify(cj));
   await new Promise((r) => setTimeout(r, 4000));
-  const pr = await fetch(`https://graph.facebook.com/${v}/${igUserId}/media_publish`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: cj.id, access_token: token }) });
+  const pr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media_publish`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: cj.id, access_token: token }) });
   const pj = await pr.json(); if (!pr.ok || !pj.id) throw new Error("IG publish failed: " + JSON.stringify(pj));
   return { containerId: cj.id, mediaId: pj.id };
 }
 async function whoami({ token }) {
   if (!token) throw new Error("Missing IG_ACCESS_TOKEN env");
-  const r = await fetch(`https://graph.facebook.com/v21.0/me/accounts?fields=id,name,instagram_business_account{id,username}&access_token=${encodeURIComponent(token)}`);
+  const r = await fetch(`https://graph.instagram.com/v21.0/me?fields=user_id,username,name&access_token=${encodeURIComponent(token)}`);
   const j = await r.json(); if (j.error) return { error: j.error };
-  return { pages: (j.data || []).map((p) => ({ page: p.name, pageId: p.id, igUserId: p.instagram_business_account && p.instagram_business_account.id, igUsername: p.instagram_business_account && p.instagram_business_account.username })), hint: "Copy 'igUserId' into your Render IG_USER_ID env var." };
+  return { igUserId: j.user_id || j.id, igUsername: j.username, name: j.name, hint: "Copy 'igUserId' into your Render IG_USER_ID env var (Instagram-Login flow uses graph.instagram.com)." };
 }
 async function generateDailyImage({ baseUrl, now, slot }) {
   if (slot == null) slot = slotFromHour(now);
@@ -1331,14 +1331,14 @@ async function generateCarousel({ baseUrl, now }) {
 async function postCarousel({ imageUrls, caption, igUserId, token }) {
   const v = "v21.0"; const children = [];
   for (const url of imageUrls) {
-    const r = await fetch(`https://graph.facebook.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ image_url: url, is_carousel_item: true, access_token: token }) });
+    const r = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ image_url: url, is_carousel_item: true, access_token: token }) });
     const j = await r.json(); if (!r.ok || !j.id) throw new Error("carousel child failed: " + JSON.stringify(j));
     children.push(j.id); await new Promise((r) => setTimeout(r, 2500));
   }
-  const cr = await fetch(`https://graph.facebook.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ media_type: "CAROUSEL", children: children.join(","), caption, access_token: token }) });
+  const cr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ media_type: "CAROUSEL", children: children.join(","), caption, access_token: token }) });
   const cj = await cr.json(); if (!cr.ok || !cj.id) throw new Error("carousel container failed: " + JSON.stringify(cj));
   await new Promise((r) => setTimeout(r, 4000));
-  const pr = await fetch(`https://graph.facebook.com/${v}/${igUserId}/media_publish`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: cj.id, access_token: token }) });
+  const pr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media_publish`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: cj.id, access_token: token }) });
   const pj = await pr.json(); if (!pr.ok || !pj.id) throw new Error("carousel publish failed: " + JSON.stringify(pj));
   return { mediaId: pj.id, slides: imageUrls.length };
 }
