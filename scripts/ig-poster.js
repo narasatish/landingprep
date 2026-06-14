@@ -230,6 +230,8 @@ function pickPhotoQuery(title, kind) {
   return kind === "immig" ? "airport international travel" : "students studying abroad campus";
 }
 function fmtDate(s) { try { const d = new Date(s); if (isNaN(d)) return ""; return d.getUTCDate() + " " + ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getUTCMonth()] + " " + d.getUTCFullYear(); } catch (e) { return ""; } }
+// strip a label already baked into a data value so we never double it ("PR: PR: …")
+function stripDup(v) { return String(v || "").replace(/^\s*(post[- ]study work( visa)?|work (visa|permit)|pr( pathway| timeline)?|permanent residen\w*|tuition( fees?)?|visa success)\s*[:\-–]\s*/i, "").trim(); }
 // pull 2-4 ACCURATE facts from our own (vetted) country data to give the caption real substance
 function countryCaptionFacts(name) {
   if (!name) return "";
@@ -238,9 +240,9 @@ function countryCaptionFacts(name) {
     const c = D.find((x) => x && x.name && x.name.toLowerCase() === String(name).toLowerCase());
     if (!c) return "";
     const L = [];
-    if (c.postStudyWork) L.push("💼 Post-study work: " + c.postStudyWork);
-    if (c.prTimeline) L.push("🛂 PR pathway: " + c.prTimeline);
-    if (c.avgTuition) L.push("💰 Tuition: " + c.avgTuition);
+    if (c.postStudyWork) L.push("💼 Post-study work: " + stripDup(c.postStudyWork));
+    if (c.prTimeline) L.push("🛂 PR pathway: " + stripDup(c.prTimeline));
+    if (c.avgTuition) L.push("💰 Tuition: " + stripDup(c.avgTuition));
     if (c.visaSuccess) L.push("✅ ~" + c.visaSuccess + "% student-visa approval");
     return L.length ? "\n\n" + L.slice(0, 4).join("\n") : "";
   } catch (e) { return ""; }
@@ -300,14 +302,14 @@ function pickCountryHighlight(seed) {
   stats.push({ v: "20 h/wk", label: "Work while study" });
   const points = [];
   if (c.avgTuition) points.push("Tuition around " + String(c.avgTuition).replace(/\s*\([^)]*\)/g, "").trim() + (/\/|year|yr|annum/i.test(c.avgTuition) ? "" : " per year"));
-  if (c.postStudyWork) points.push("Post-study work visa: " + clip(c.postStudyWork, 44));
-  if (c.prTimeline) points.push("Clear pathway to PR — " + clip(c.prTimeline, 38));
+  if (c.postStudyWork) points.push("Post-study work visa: " + clip(stripDup(c.postStudyWork), 44));
+  if (c.prTimeline) points.push("Clear pathway to PR — " + clip(stripDup(c.prTimeline), 38));
   if (c.visaSuccess) points.push("About " + c.visaSuccess + "% of student visas get approved");
   points.push("Work up to 20 hours a week while you study");
   if ((c.intakes || []).length) points.push((c.intakes.length) + " intakes a year — more chances to apply");
   const slug = c.name.toLowerCase().replace(/\s+/g, "");
   return { type: "exam", accent: "#1D4ED8", category: c.name.toUpperCase(), flagCountry: c.name, headline: c.name, sub: c.tagline || "Study-abroad destination", stats: stats.slice(0, 6), points, cta: "Full country guide — link in bio  →",
-    caption: `🌍 Why study in ${c.name}? ${c.flag || ""}\n\n${c.tagline || ""}\n${c.avgTuition ? "💰 Tuition: " + c.avgTuition + "\n" : ""}${c.postStudyWork ? "💼 Post-study work: " + c.postStudyWork + "\n" : ""}${c.prTimeline ? "🛂 PR: " + c.prTimeline + "\n" : ""}\n📲 TAG someone considering ${c.name}.\n📌 SAVE this. 💬 Is ${c.name} on your list? 👇\n\n👉 Full ${c.name} guide — link in bio.\nFollow ${HANDLE} for daily study-abroad guides 🌍`,
+    caption: `🌍 Why study in ${c.name}? ${c.flag || ""}\n\n${c.tagline || ""}\n${c.avgTuition ? "💰 Tuition: " + stripDup(c.avgTuition) + "\n" : ""}${c.postStudyWork ? "💼 Post-study work: " + stripDup(c.postStudyWork) + "\n" : ""}${c.prTimeline ? "🛂 PR: " + stripDup(c.prTimeline) + "\n" : ""}\n📲 TAG someone considering ${c.name}.\n📌 SAVE this. 💬 Is ${c.name} on your list? 👇\n\n👉 Full ${c.name} guide — link in bio.\nFollow ${HANDLE} for daily study-abroad guides 🌍`,
     tags: buildTags("study" + slug, "studyin" + slug, "studyabroad", "internationalstudents", "landingprep") };
 }
 function pickCollegeSpotlight(seed) {
