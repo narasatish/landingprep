@@ -665,9 +665,60 @@ function buildSvg(c) {
   return c.type === "quiz" ? renderBrightQuiz(c) : c.type === "vocab" ? renderBrightVocab(c) : c.type === "exam" ? renderBrightStat(c) : c.type === "bulletin" ? renderBrightNews(c) : renderBrightStat(c);
 }
 async function renderPng(svg) { if (!sharp) throw new Error("sharp not installed — run: npm install sharp"); return await sharp(Buffer.from(svg)).png().toBuffer(); }
-// render any single post in the bright style + composite its country flag into the category pill
+// ── photo backdrops: text/data composited over a real photo (premium look) ──
+const PHOTO_DIR = path.join(ROOT, "assets/post-photos");
+function _slug(s) { return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
+function photoFor(c) {
+  if (!fs.existsSync(PHOTO_DIR)) return null;
+  const cat = String(c.category || "");
+  const topic = c.type === "bulletin" ? "news" : /SCHOLAR/i.test(cat) ? "scholarship" : /COST/i.test(cat) ? "cost" : "study";
+  const keys = [];
+  if (c.flagCountry) keys.push(_slug(c.flagCountry));
+  if (c.headline) keys.push(_slug(c.headline));
+  keys.push(topic, "default");
+  for (const k of keys) for (const e of [".jpg", ".jpeg", ".png", ".webp"]) { const p = path.join(PHOTO_DIR, k + e); if (fs.existsSync(p)) return p; }
+  return null;
+}
+function _pbox(x, y, v, l) {
+  return `<rect x="${x}" y="${y}" width="430" height="120" rx="20" fill="#ffffff" fill-opacity="0.13"/><text x="${x + 28}" y="${y + 58}" font-family="${FONT}" font-size="40" font-weight="900" fill="#fff">${esc(stripEmoji(String(v)))}</text><text x="${x + 28}" y="${y + 94}" font-family="${FONT}" font-size="21" font-weight="800" fill="#dbe4ff" letter-spacing="1">${esc(String(l).toUpperCase())}</text>`;
+}
+function photoOverlaySvg(c) {
+  const a = c.accent || "#2563EB", cat = stripEmoji(c.category || ""), flagGap = !!c.flagCountry;
+  const pw = (flagGap ? 92 : 32) + cat.length * 16.5 + 32;
+  let s = `<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="po" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0f28" stop-opacity="0.36"/><stop offset="0.4" stop-color="#0a0f28" stop-opacity="0.12"/><stop offset="1" stop-color="#0a0f28" stop-opacity="0.97"/></linearGradient></defs>`;
+  s += `<rect width="1080" height="1080" fill="url(#po)"/>`;
+  s += `<rect x="60" y="64" width="${Math.round(pw)}" height="62" rx="31" fill="${a}"/>`;
+  s += `<text x="${flagGap ? 150 : 92}" y="105" font-family="${FONT}" font-size="29" font-weight="900" fill="#fff" letter-spacing="2">${esc(cat)}</text>`;
+  if (c.type === "vocab" && c.words && c.words.length) {
+    s += `<text x="60" y="430" font-family="${FONT}" font-size="60" font-weight="900" fill="#fff">${esc(c.headline || "Words of the Day")}</text>`;
+    const ws = c.words.slice(0, 4), top = 500, bh = Math.floor((986 - top) / ws.length);
+    ws.forEach((w, i) => { const by = top + i * bh;
+      s += `<text x="62" y="${by + 44}" font-family="${FONT}" font-size="44" font-weight="900" fill="#fff">${esc(w.w)}<tspan font-size="25" font-style="italic" fill="#cfe0ff">  ${esc(w.pos || "")}</tspan></text>`;
+      s += `<text x="62" y="${by + 82}" font-family="${FONT}" font-size="26" font-weight="500" fill="#dbe4ff">${esc(wrapPlain(w.def, 56).slice(0, 1)[0] || "")}</text>`;
+    });
+  } else if (c.stats && c.stats.length) {
+    const longH = (c.headline || "").length > 13;
+    if (c.sub) s += `<text x="60" y="602" font-family="${FONT}" font-size="46" font-weight="800" fill="#cfe0ff">${esc(stripEmoji(c.sub)).slice(0, 42)}</text>`;
+    s += `<text x="56" y="704" font-family="${FONT}" font-size="${longH ? 80 : 116}" font-weight="900" fill="#fff" letter-spacing="-3">${esc(wrapPlain(c.headline, longH ? 16 : 11).slice(0, 1)[0] || c.headline)}</text>`;
+    c.stats.slice(0, 4).forEach((b, i) => { s += _pbox(64 + (i % 2) * 522, 754 + Math.floor(i / 2) * 134, b.v, b.label); });
+  } else {
+    const hl = wrapPlain(stripEmoji(c.headline || ""), 22).slice(0, 4), hs = hl.length > 3 ? 64 : 76, y0 = 980 - (hl.length - 1) * (hs + 6);
+    hl.forEach((ln, i) => { s += `<text x="58" y="${y0 + i * (hs + 6)}" font-family="${FONT}" font-size="${hs}" font-weight="900" fill="#fff" letter-spacing="-1">${esc(ln)}</text>`; });
+  }
+  s += `<text x="1018" y="1040" text-anchor="end" font-family="${FONT}" font-size="26" font-weight="800" fill="#ffffff" fill-opacity="0.92">landingprep.com</text></svg>`;
+  return s;
+}
+// render a single post: photo backdrop if a matching photo exists, else the flat card
 async function renderContentPng(c) {
   if (!sharp) throw new Error("sharp not installed");
+  const photo = photoFor(c);
+  if (photo) {
+    try {
+      const comps = [{ input: Buffer.from(photoOverlaySvg(c)) }];
+      if (c.flagCountry) { try { const fb = await fetchFlag(c.flagCountry); if (fb) comps.push({ input: await sharp(fb).resize(50, 34, { fit: "cover" }).png().toBuffer(), top: 78, left: 86 }); } catch (e) {} }
+      return await sharp(fs.readFileSync(photo)).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).composite(comps).png({ quality: 100 }).toBuffer();
+    } catch (e) { /* fall through to flat card */ }
+  }
   const base = sharp(Buffer.from(buildSvg(c)));
   if (c.flagCountry) { try { const fb = await fetchFlag(c.flagCountry); if (fb) { const f = await sharp(fb).resize(46, 30, { fit: "cover" }).png().toBuffer(); return await base.composite([{ input: f, top: 228, left: 147 }]).png({ quality: 100 }).toBuffer(); } } catch (e) {} }
   return await base.png({ quality: 100 }).toBuffer();
