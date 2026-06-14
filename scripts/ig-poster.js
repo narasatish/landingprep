@@ -412,13 +412,58 @@ function dayNumber(now) { now = now || new Date(); return Math.floor(Date.UTC(no
 // 8 posts/day: 7 singles + 1 carousel (slot 5). Fresh topics daily via date offset.
 const CAROUSEL_SLOT = -1; // dedicated daily-carousel slot disabled at 5/day (still available via ?carousel=1)
 function pickNewsRotating(seed) { return (seed % 2 ? pickImmigrationNews(seed) : pickEducationNews(seed)) || pickImmigrationNews(seed) || pickEducationNews(seed); }
-function pickRotatingExtra(seed) { const r = seed % 3; return (r === 0 ? pickCostCompared(seed) : r === 1 ? pickExamFees(seed) : pickExamSpotlight(seed)) || pickCostCompared(seed) || pickScholarship(seed); }
+// ── NEW content types (deepen the daily pool; all from owned/evergreen data) ──
+// "X vs Y" country comparison — high-save format, built from our own country data
+function pickComparison(seed) {
+  const D = (evalWindow("country-data.jsx").LP_COUNTRY_DATA || []).filter((c) => c && c.name && c.avgTuition);
+  if (D.length < 2) return null;
+  const a = D[(seed * 3) % D.length]; let b = D[(seed * 7 + 1) % D.length]; if (b.name === a.name) b = D[(seed * 7 + 3) % D.length];
+  if (a.name === b.name) return null;
+  const pts = [];
+  if (a.avgTuition && b.avgTuition) pts.push("Tuition/yr: " + a.name + " " + moneyShort(a.avgTuition) + " · " + b.name + " " + moneyShort(b.avgTuition));
+  if (a.postStudyWork && b.postStudyWork) pts.push("Post-study work: " + a.name + " " + shortVal(stripDup(a.postStudyWork), 12) + " · " + b.name + " " + shortVal(stripDup(b.postStudyWork), 12));
+  if (a.prTimeline && b.prTimeline) pts.push("PR: " + a.name + " " + shortVal(stripDup(a.prTimeline), 12) + " · " + b.name + " " + shortVal(stripDup(b.prTimeline), 12));
+  if (a.visaSuccess && b.visaSuccess) pts.push("Visa approval: " + a.name + " ~" + a.visaSuccess + "% · " + b.name + " ~" + b.visaSuccess + "%");
+  if (pts.length < 2) return null;
+  const sl = (n) => n.toLowerCase().replace(/\s+/g, "");
+  return { type: "exam", accent: "#7C3AED", category: "COUNTRY COMPARISON", headline: a.name + " vs " + b.name, sub: "Which fits you better?", points: pts.slice(0, 5),
+    caption: `🆚 ${a.name} vs ${b.name} — which should you pick? ${a.flag || ""}${b.flag || ""}\n\n${pts.map((p) => "• " + p).join("\n")}\n\n💬 Which would you choose? Comment 👇\n📌 SAVE this. 📲 SHARE with someone deciding.\n\n👉 Compare countries free → landingprep.com\nFollow ${HANDLE} for daily study-abroad guides 🌍`,
+    tags: buildTags("studyin" + sl(a.name), "studyin" + sl(b.name), "studyabroad", "studyabroadcomparison", "internationalstudents", "landingprep") };
+}
+const MISTAKE_SETS = [
+  { t: "5 study-abroad mistakes", sub: "Save this before you apply", items: ["Applying without checking each university's deadline", "Choosing a course for 'PR' instead of your real career fit", "Leaving proof-of-funds to the last minute", "Sending one generic SOP to every university", "Booking your visa appointment far too late"] },
+  { t: "5 student-visa mistakes", sub: "These cause most rejections", items: ["Incomplete or inconsistent financial documents", "A weak SOP with no clear study plan", "Unexplained gaps in your study history", "Applying too close to your intake date", "Not reading the country's specific visa rules"] },
+  { t: "5 university-application mistakes", sub: "Don't lose an admit over these", items: ["Shortlisting only 'dream' universities, no safe ones", "Missing or weak letters of recommendation", "Copy-pasting your SOP from the internet", "Ignoring English-test and GPA cut-offs", "Applying after scholarship deadlines close"] },
+];
+function pickMistakes(seed) {
+  const m = MISTAKE_SETS[seed % MISTAKE_SETS.length];
+  return { type: "exam", accent: "#EF4444", category: "AVOID THESE", headline: m.t, sub: m.sub, points: m.items,
+    caption: `🚫 ${m.t} 👇\n\n${m.items.map((x) => "❌ " + x).join("\n")}\n\n📌 SAVE this so you don't slip up. 📲 SHARE with a friend applying.\n💬 Made any of these? Comment 👇\n\n👉 Free study-abroad tools → landingprep.com\nFollow ${HANDLE} for daily study-abroad tips 🌍`,
+    tags: buildTags("studyabroad", "studyabroadtips", "studentvisa", "studyabroadmistakes", "internationalstudents", "landingprep") };
+}
+const CHECKLISTS = [
+  { t: "Student visa checklist", sub: "Tick these off before you apply", items: ["Valid passport (6+ months left)", "University offer / admission letter", "Proof of funds / blocked account", "English test score (IELTS / PTE / TOEFL)", "Statement of purpose", "Tuition / fee payment receipt"] },
+  { t: "SOP checklist", sub: "A strong statement of purpose covers", items: ["Why this course & this university", "Your academic & project background", "Relevant work or internship experience", "Clear career goals after graduation", "Why this country fits your plan", "No spelling / grammar errors"] },
+  { t: "Pre-departure checklist", sub: "Before you fly abroad", items: ["Visa, passport & admission letter (copies too)", "Tuition paid + initial living funds ready", "Accommodation booked for the first weeks", "Travel + health insurance sorted", "Forex card / international banking set up", "Important docs scanned to the cloud"] },
+];
+function pickChecklist(seed) {
+  const c = CHECKLISTS[seed % CHECKLISTS.length];
+  return { type: "exam", accent: "#0EA5E9", category: "SAVE THIS CHECKLIST", headline: c.t, sub: c.sub, points: c.items,
+    caption: `✅ ${c.t} 👇\n\n${c.items.map((x) => "☑️ " + x).join("\n")}\n\n📌 SAVE this checklist. 📲 SHARE with someone who needs it.\n💬 Anything you'd add? Comment 👇\n\n👉 Free study-abroad guides → landingprep.com\nFollow ${HANDLE} for daily study-abroad help 🌍`,
+    tags: buildTags("studyabroad", "studyabroadchecklist", "studentvisa", "studyabroadtips", "internationalstudents", "landingprep") };
+}
+// slot 4 now rotates 6 ways for daily variety: cost · exam fees · exam guide · comparison · mistakes · checklist
+function pickRotatingExtra(seed) {
+  const r = seed % 6;
+  const f = r === 0 ? pickCostCompared(seed) : r === 1 ? pickExamFees(seed) : r === 2 ? pickExamSpotlight(seed) : r === 3 ? pickComparison(seed) : r === 4 ? pickMistakes(seed) : pickChecklist(seed);
+  return f || pickExamFees(seed) || pickCostCompared(seed) || pickScholarship(seed);
+}
 // 5 strong posts/day — all deep pools + a rotating 5th (cost / exam-fees / exam-guide cycle).
 const SLOT_PICKERS = [pickNewsRotating, pickCountryOrCollege, pickWordOfDay, pickScholarship, pickRotatingExtra];
 function pickForSlot(now, slot) {
   slot = ((Number(slot) || 0) % SLOTS + SLOTS) % SLOTS;
   if (slot === CAROUSEL_SLOT) return null;
-  const seed = dayNumber(now) * 8 + slot * 131;
+  const seed = dayNumber(now) * 7 + slot * 131;   // *7 is coprime to common pool sizes (6,26,…) so EVERY item is reachable
   const chain = [SLOT_PICKERS[slot], pickWordOfDay, pickScholarship, pickImmigrationNews];
   for (const fn of chain) { const r = fn && fn(seed); if (r) return r; }
   return null;
