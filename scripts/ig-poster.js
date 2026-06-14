@@ -854,23 +854,99 @@ function viralVocab(c) {
   s += `<rect x="0" y="1000" width="1080" height="80" fill="${NAVY}"/><text x="72" y="1050" font-family="${BODY}" font-weight="700" font-size="30" fill="#fff">Save these for your IELTS / GRE prep</text><text x="1008" y="1050" text-anchor="end" font-family="${BODY}" font-weight="700" font-size="26" fill="#aab0c8">landingprep.com</text>`;
   return s + `</svg>`;
 }
-// render a single post in the viral style (resvg + real fonts); photo backdrop for country posts
+// ══ AI photographic backgrounds (Imagen via Gemini key), cached on disk ══
+// Generates a real premium background ONCE per key (country/topic), caches it, then reuses
+// it forever — so cost is a one-time ~₹3/key, not per-post. Crisp text is overlaid by resvg.
+const AIBG_DIR = path.join(ROOT, "assets/ai-bg");
+const IMG_MODEL = process.env.IMAGE_MODEL || "imagen-4.0-generate-001";
+const AIBG_ON = process.env.AIBG !== "0";
+function aibgKey(c) {
+  if (c.flagCountry && ISO[String(c.flagCountry).toLowerCase()]) return "country-" + _slug(c.flagCountry);
+  const cat = String(c.category || "");
+  if (c.type === "bulletin") return "news";
+  if (/SCHOLARSHIP/i.test(cat)) return "scholarship";
+  if (/COST/i.test(cat)) return "cost";
+  if (/EXAM/i.test(cat)) return "exam";
+  return "study";
+}
+function aibgPrompt(c, key) {
+  const base = " Premium cinematic editorial photograph, golden-hour dusk, dramatic atmospheric moody lighting, deep navy-blue and warm amber tones, soft bokeh, shallow depth of field, high-end magazine quality, slightly darker toward the bottom for text. No text, no words, no logos, no watermarks, no visible faces. Ultra realistic, square 1:1.";
+  if (key.indexOf("country-") === 0) return "A stunning view of " + (LANDMARK[c.flagCountry] || (c.flagCountry + " famous city skyline")) + " — iconic landmark and modern skyline." + base;
+  const M = { news: "A modern government building beside a city skyline, immigration and visa news theme.", scholarship: "An elegant historic university campus and grand library facade at dusk, scholarship theme.", cost: "A clean flat-lay desk with a small globe, stacked coins and travel documents, study-budget theme.", exam: "A calm tidy study desk with open books, a laptop and notes beside a bright window.", study: "A beautiful modern university campus with students walking in the distance, warm light." };
+  return (M[key] || M.study) + base;
+}
+async function imagenGen(prompt) {
+  if (!IMG_KEY) return null;
+  try {
+    const r = await fetchT(`https://generativelanguage.googleapis.com/v1beta/models/${IMG_MODEL}:predict?key=${encodeURIComponent(IMG_KEY)}`,
+      { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ instances: [{ prompt }], parameters: { sampleCount: 1, aspectRatio: "1:1" } }) }, 60000);
+    if (!r.ok) return null;
+    const j = await r.json(), p = j && j.predictions && j.predictions[0];
+    const b64 = p && (p.bytesBase64Encoded || (p.image && p.image.imageBytes));
+    return b64 ? Buffer.from(b64, "base64") : null;
+  } catch (e) { return null; }
+}
+async function aiBackground(c) {
+  if (!AIBG_ON || !IMG_KEY || !sharp) return null;
+  const key = aibgKey(c);
+  try { fs.mkdirSync(AIBG_DIR, { recursive: true }); } catch (e) {}
+  for (const e of [".jpg", ".png", ".webp"]) { const p = path.join(AIBG_DIR, key + e); if (fs.existsSync(p)) return p; }
+  const buf = await imagenGen(aibgPrompt(c, key)); if (!buf) return null;
+  const p = path.join(AIBG_DIR, key + ".jpg");
+  try { const out = await sharp(buf).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).jpeg({ quality: 88 }).toBuffer(); fs.writeFileSync(p, out); return p; } catch (e) { return null; }
+}
+// transparent text/data overlay (real fonts) composited OVER an AI photo background
+function viralOverlay(c) {
+  const news = c.type === "bulletin", a = news ? "#E0162B" : (c.accent || "#2563EB"), Y = "#FFD400";
+  let cat = stripEmoji(c.category || (news ? "UPDATE" : "")); if (cat.length > 28) cat = cat.split(" · ")[0]; cat = clip(cat, 28).toUpperCase();
+  const pw = 44 + cat.length * 16.5;
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="ov" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070d" stop-opacity="0.22"/><stop offset="0.42" stop-color="#05070d" stop-opacity="0.44"/><stop offset="1" stop-color="#05070d" stop-opacity="0.95"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#ov)"/>`;
+  s += `<rect x="72" y="74" rx="${news ? 10 : 31}" width="${Math.round(pw)}" height="60" fill="${a}"/><text x="${72 + pw / 2}" y="114" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="29" fill="#fff" letter-spacing="1.5">${esc(cat)}</text>`;
+  if (news) {
+    const head = stripEmoji(c.headline || "").toUpperCase(), len = head.length, size = len > 95 ? 70 : len > 60 ? 88 : len > 34 ? 110 : 134;
+    const lines = wrapPlain(head, Math.max(8, Math.round(950 / (size * 0.50)))).slice(0, 5), lh = size, firstBase = 720 - (lines.length - 1) * lh;
+    const hiSet = new Set(String(c.flagCountry || "").toUpperCase().split(/\s+/).filter(Boolean));
+    s += capLines(lines, 72, firstBase, size, lh, hiSet, "#fff", Y);
+    const chips = (c.icons || []).map((i) => i.label).filter(Boolean).slice(0, 3);
+    if (chips.length) { let cx = 72; const cy = 792; chips.forEach((t) => { const tt = stripEmoji(t), w = 44 + tt.length * 16.5; s += `<rect x="${cx}" y="${cy}" rx="12" width="${Math.round(w)}" height="74" fill="rgba(255,255,255,0.13)"/><rect x="${cx}" y="${cy}" rx="6" width="9" height="74" fill="${Y}"/><text x="${cx + 30}" y="${cy + 48}" font-family="${BODY}" font-weight="700" font-size="28" fill="#fff">${esc(tt)}</text>`; cx += w + 18; }); }
+    s += `<rect x="0" y="912" width="1080" height="104" fill="${Y}"/><text x="540" y="978" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="42" fill="#0a0a0a" letter-spacing="0.5">FULL STORY IN THE CAPTION  &#8595;</text>`;
+  } else {
+    const head = stripEmoji(c.headline || "").toUpperCase(), hsize = head.length > 16 ? 76 : head.length > 9 ? 104 : 120;
+    const hl = wrapPlain(head, head.length > 16 ? 18 : 12).slice(0, 2); let hy = 250;
+    hl.forEach((ln, i) => { s += `<text x="70" y="${hy + i * (hsize + 2)}" font-family="${HEAD}" font-size="${hsize}" fill="#fff" letter-spacing="0.5">${esc(ln)}</text>`; });
+    let cur = hy + hl.length * (hsize + 2) - hsize + 6;
+    if (c.sub) { s += `<text x="74" y="${cur + 34}" font-family="${BODY}" font-weight="600" font-size="29" fill="#e7eeff">${esc(clip(stripEmoji(c.sub), 54))}</text>`; cur += 56; }
+    const stats = (c.stats || []).slice(0, 6), gy = Math.max(cur + 28, 372), gx = 72, gap = 24, cols = 2, bw = (1080 - gx * 2 - gap) / 2;
+    const rows = Math.max(1, Math.ceil(stats.length / cols)), bh = Math.floor((986 - gy - (rows - 1) * gap) / rows);
+    stats.forEach((b, i) => { const x = gx + (i % cols) * (bw + gap), by = gy + Math.floor(i / cols) * (bh + gap), v = stripEmoji(String(b.v)), vs = v.length > 11 ? 30 : v.length > 8 ? 35 : 41;
+      s += `<rect x="${x}" y="${by}" width="${Math.round(bw)}" height="${bh}" rx="20" fill="rgba(255,255,255,0.13)"/><rect x="${x}" y="${by + 14}" width="8" height="${bh - 28}" rx="4" fill="${a}"/>`;
+      s += `<text x="${x + 34}" y="${by + Math.round(bh / 2) + 6}" font-family="${BODY}" font-weight="800" font-size="${vs}" fill="#fff">${esc(v)}</text>`;
+      s += `<text x="${x + 34}" y="${by + bh - 26}" font-family="${BODY}" font-weight="700" font-size="19" fill="#cfe0ff" letter-spacing="0.5">${esc(String(b.label).toUpperCase())}</text>`;
+    });
+  }
+  s += `<text x="72" y="1060" font-family="${BODY}" font-weight="700" font-size="27" fill="rgba(255,255,255,0.72)">${HANDLE}</text><text x="1008" y="1060" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+// render a single post: AI photo background + crisp overlay (premium); falls back to solid vector cards
 async function renderViral(c) {
+  if (AIBG_ON && sharp && c.type !== "vocab") {
+    try {
+      const bg = await aiBackground(c);
+      if (bg) {
+        const comps = [{ input: resvgPng(viralOverlay(c), 1080) }];
+        if (c.flagCountry) { const f = await safeFlag(c.flagCountry); if (f) comps.push({ input: f, top: 76, left: 894 }); }
+        return await sharp(fs.readFileSync(bg)).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).composite(comps).png({ quality: 100 }).toBuffer();
+      }
+    } catch (e) { console.error("[ig] ai-bg render failed, using vector fallback:", e && e.message); }
+  }
+  // fallback: solid vector templates (no key / generation failed / vocab)
   let svg, light = false;
   if (c.type === "vocab") svg = viralVocab(c);
   else if (c.type === "bulletin") svg = viralNews(c);
-  else { // exam-type data cards
-    const cat = String(c.category || "");
-    if (/SCHOLARSHIP/i.test(cat)) svg = viralStat(c, true, "#E7B24B");          // premium dark gold
-    else if (c.flagCountry) { svg = viralCountry(c); light = true; }            // blue/yellow country/college card
-    else svg = viralStat(c, false);                                            // clean indigo data card (cost/fees/exam)
-  }
+  else { const cat = String(c.category || ""); if (/SCHOLARSHIP/i.test(cat)) svg = viralStat(c, true, "#E7B24B"); else if (c.flagCountry) { svg = viralCountry(c); light = true; } else svg = viralStat(c, false); }
   const overlay = resvgPng(svg, 1080);
-  // flag chip top-right (on the dark templates); the blue country card carries its own header instead
-  if (!light && c.flagCountry && sharp) {
-    const flagBuf = await safeFlag(c.flagCountry);
-    if (flagBuf) return await sharp(overlay).composite([{ input: flagBuf, top: 76, left: 894 }]).png({ quality: 100 }).toBuffer();
-  }
+  if (!light && c.flagCountry && sharp) { const f = await safeFlag(c.flagCountry); if (f) return await sharp(overlay).composite([{ input: f, top: 76, left: 894 }]).png({ quality: 100 }).toBuffer(); }
   return Buffer.from(overlay);
 }
 // render a single post: viral style (real fonts) when resvg is available, else legacy flat card
