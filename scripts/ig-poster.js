@@ -744,22 +744,63 @@ function capLines(lines, x, firstBaseline, size, lh, hiSet, baseFill, hiFill) {
     return `<text x="${x}" y="${firstBaseline + i * lh}" xml:space="preserve" font-family="${HEAD}" font-size="${size}" fill="${baseFill}" letter-spacing="0.4">${spans}</text>`;
   }).join("");
 }
-// 1 — bold black/yellow "urgent news" card (immigrationnewscanada style)
-function viralNews(c, photo) {
+// designed "photo-style" backdrop — a dusk skyline imitated with vector shapes + lit windows
+// (gives news/scholarship posts a premium photographic feel with NO real photos)
+function sceneBg(accent) {
+  let s = `<defs><linearGradient id="sky" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#13203f"/><stop offset="0.5" stop-color="#0c1228"/><stop offset="1" stop-color="#070a16"/></linearGradient>`;
+  s += `<radialGradient id="sun" cx="76%" cy="20%" r="46%"><stop offset="0" stop-color="${hexA(accent, 0.5)}"/><stop offset="1" stop-color="${hexA(accent, 0)}"/></radialGradient>`;
+  s += `<linearGradient id="vg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070d" stop-opacity="0.1"/><stop offset="0.5" stop-color="#05070d" stop-opacity="0.46"/><stop offset="1" stop-color="#05070d" stop-opacity="0.96"/></linearGradient></defs>`;
+  s += `<rect width="1080" height="1080" fill="url(#sky)"/><circle cx="838" cy="232" r="380" fill="url(#sun)"/>`;
+  const H = [300, 470, 360, 540, 410, 320, 500, 380, 560, 330, 450, 360, 420], baseY = 1082; let x = -30, i = 0;
+  while (x < 1110) { const h = H[i % H.length], w = 78 + (h % 70), by = baseY - h;
+    s += `<rect x="${x}" y="${by}" width="${w}" height="${h}" fill="#0a1226" opacity="0.5"/>`;
+    for (let wy = by + 26; wy < baseY - 30; wy += 36) for (let wx = x + 12; wx < x + w - 12; wx += 26) if (((wx * 5 + wy * 3 + i * 7) % 4) === 0) s += `<rect x="${wx}" y="${wy}" width="7" height="11" fill="${hexA(accent, 0.45)}"/>`;
+    x += w + 7; i++;
+  }
+  return s + `<rect width="1080" height="1080" fill="url(#vg)"/>`;
+}
+// blue/yellow education-consultancy card (futuresabroad style) — country / college spotlight
+function viralCountry(c) {
+  const BLUE = "#1657E0", DK = "#0B265F", Y = "#FFC83A", INK = "#11203f";
+  const cat = clip(stripEmoji(c.category || "STUDY ABROAD"), 22).toUpperCase();
+  const head = stripEmoji(c.headline || ""), stats = (c.stats || []).slice(0, 4);
+  const iconFor = (l) => { l = l.toLowerCase(); return /tuition|cost|fee|\$/.test(l) ? "money" : /work|job|opt/.test(l) ? "briefcase" : /pr|visa|permit|green/.test(l) ? "passport" : /intake|deadline|date/.test(l) ? "calendar" : /rank|accept|ielts|gre|score/.test(l) ? "star" : /study|hour/.test(l) ? "cap" : "globe"; };
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="bl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${BLUE}"/><stop offset="1" stop-color="${DK}"/></linearGradient></defs>`;
+  s += `<rect width="1080" height="1080" fill="url(#bl)"/>${brDots(72, 70, "rgba(255,255,255,0.32)")}`;
+  s += `<rect x="60" y="150" width="960" height="744" rx="40" fill="#fff"/>`;
+  s += `<text x="100" y="224" font-family="${BODY}" font-weight="800" font-size="33" fill="${INK}">Landing<tspan fill="${BLUE}">Prep</tspan></text>`;
+  const pw = 30 + cat.length * 14.5;
+  s += `<rect x="${Math.round(980 - pw)}" y="192" rx="23" width="${Math.round(pw)}" height="46" fill="${BLUE}"/><text x="${Math.round(980 - pw / 2)}" y="222" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="21" fill="#fff" letter-spacing="1">${esc(cat)}</text>`;
+  const hsize = head.length > 14 ? 66 : 94, hl = wrapPlain(head, head.length > 14 ? 17 : 12).slice(0, 2); let hy = 322;
+  hl.forEach((ln, i) => { s += `<text x="100" y="${hy + i * (hsize + 2)}" font-family="${HEAD}" font-size="${hsize}" fill="${INK}">${esc(ln.toUpperCase())}</text>`; });
+  let cy = hy + hl.length * (hsize + 2) - hsize + 4;
+  if (c.sub) { s += `<text x="102" y="${cy + 30}" font-family="${BODY}" font-weight="600" font-size="27" fill="${BLUE}">${esc(clip(stripEmoji(c.sub), 50))}</text>`; cy += 50; }
+  const gy = Math.max(cy + 22, 452), gx = 100, gap = 22, bw = (880 - gap) / 2, bh = Math.min(152, Math.floor((858 - gy - gap) / 2));
+  stats.forEach((b, i) => { const x = gx + (i % 2) * (bw + gap), by = gy + Math.floor(i / 2) * (bh + gap);
+    s += `<rect x="${x}" y="${by}" width="${Math.round(bw)}" height="${bh}" rx="20" fill="#F1F5FF"/>`;
+    s += `<circle cx="${x + 44}" cy="${by + 46}" r="26" fill="${BLUE}"/>${brIcon(x + 44, by + 46, 26, iconFor(String(b.label)))}`;
+    s += `<text x="${x + 84}" y="${by + 56}" font-family="${BODY}" font-weight="800" font-size="30" fill="${INK}">${esc(stripEmoji(String(b.v)).slice(0, 14))}</text>`;
+    s += `<text x="${x + 24}" y="${by + bh - 24}" font-family="${BODY}" font-weight="700" font-size="20" fill="${BLUE}" letter-spacing="0.5">${esc(String(b.label).toUpperCase())}</text>`;
+  });
+  s += `<rect x="60" y="916" width="960" height="96" rx="22" fill="${Y}"/><text x="540" y="976" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="37" fill="${INK}" letter-spacing="0.5">SAVE THIS  &#183;  landingprep.com</text>`;
+  s += `<text x="540" y="1058" text-anchor="middle" font-family="${BODY}" font-weight="700" font-size="25" fill="rgba(255,255,255,0.85)">${HANDLE}  &#183;  Follow for daily study-abroad guides</text>`;
+  return s + `</svg>`;
+}
+// 1 — bold black/yellow "urgent news" over a designed dusk-city scene (no real photo)
+function viralNews(c) {
   const Y = "#FFD400", R = "#E0162B";
   let cat = stripEmoji(c.category || "UPDATE"); if (cat.length > 26) cat = cat.split(" · ")[0]; cat = clip(cat, 28).toUpperCase();
   const head = stripEmoji(c.headline || "").toUpperCase();
-  const len = head.length, size = len > 95 ? 72 : len > 60 ? 90 : len > 34 ? 112 : 138;
-  const maxc = Math.max(8, Math.round(940 / (size * 0.50)));
+  const len = head.length, size = len > 95 ? 70 : len > 60 ? 88 : len > 34 ? 110 : 134;
+  const maxc = Math.max(8, Math.round(950 / (size * 0.50)));
   const lines = wrapPlain(head, maxc).slice(0, 5), lh = size * 1.0;
-  const firstBase = 726 - (lines.length - 1) * lh;
+  const firstBase = 728 - (lines.length - 1) * lh;
   const hiSet = new Set(String(c.flagCountry || "").toUpperCase().split(/\s+/).filter(Boolean));
   const chips = (c.icons || []).map((i) => i.label).filter(Boolean).slice(0, 3);
   const pw = 44 + cat.length * 17;
   let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
-  s += `<defs><linearGradient id="nd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06070d" stop-opacity="${photo ? 0.45 : 1}"/><stop offset="0.5" stop-color="#06070d" stop-opacity="${photo ? 0.34 : 1}"/><stop offset="1" stop-color="#06070d" stop-opacity="${photo ? 0.97 : 1}"/></linearGradient></defs>`;
-  if (!photo) s += `<rect width="1080" height="1080" fill="#0a0a0a"/><rect width="1080" height="14" fill="${Y}"/>`;
-  s += `<rect width="1080" height="1080" fill="url(#nd)"/>`;
+  s += sceneBg("#2b6cff");
   s += `<rect x="72" y="74" rx="10" width="${Math.round(pw)}" height="60" fill="${R}"/><text x="${72 + pw / 2}" y="114" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="30" fill="#fff" letter-spacing="1.5">${esc(cat)}</text>`;
   s += capLines(lines, 72, firstBase, size, lh, hiSet, "#fff", Y);
   if (chips.length) { let cx = 72; const cy = 794; chips.forEach((t) => { const tt = stripEmoji(t), w = 44 + tt.length * 16.5; s += `<rect x="${cx}" y="${cy}" rx="12" width="${Math.round(w)}" height="78" fill="rgba(255,255,255,0.09)"/><rect x="${cx}" y="${cy}" rx="6" width="9" height="78" fill="${Y}"/><text x="${cx + 30}" y="${cy + 50}" font-family="${BODY}" font-weight="700" font-size="29" fill="#fff">${esc(tt)}</text>`; cx += w + 20; }); }
@@ -768,15 +809,15 @@ function viralNews(c, photo) {
   return s + `</svg>`;
 }
 // 2 — premium indigo stat card (country / scholarship / cost / exam fees / exam guide)
-function viralStat(c, photo) {
-  const a = c.accent || "#2563EB";
+function viralStat(c, scene, accentOverride) {
+  const a = accentOverride || c.accent || "#2563EB";
   let cat = stripEmoji(c.category || ""); if (cat.length > 30) cat = cat.split(" · ")[0]; cat = clip(cat, 30).toUpperCase();
   const head = stripEmoji(c.headline || "").toUpperCase();
   const stats = (c.stats || []).slice(0, 6), pw = 36 + cat.length * 15.5;
   let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
-  s += `<defs><linearGradient id="sg" x1="0" y1="0" x2="0.6" y2="1"><stop offset="0" stop-color="#1b2452"/><stop offset="0.55" stop-color="#111634"/><stop offset="1" stop-color="#0a0d1f"/></linearGradient><linearGradient id="sd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0d1f" stop-opacity="0.5"/><stop offset="0.5" stop-color="#0a0d1f" stop-opacity="0.62"/><stop offset="1" stop-color="#0a0d1f" stop-opacity="0.95"/></linearGradient></defs>`;
-  if (photo) s += `<rect width="1080" height="1080" fill="url(#sd)"/>`;
-  else s += `<rect width="1080" height="1080" fill="url(#sg)"/><circle cx="980" cy="120" r="240" fill="${hexA(a, 0.18)}"/><circle cx="120" cy="1000" r="180" fill="${hexA(a, 0.10)}"/>`;
+  if (scene) s += sceneBg(a);
+  else { s += `<defs><linearGradient id="sg" x1="0" y1="0" x2="0.6" y2="1"><stop offset="0" stop-color="#1b2452"/><stop offset="0.55" stop-color="#111634"/><stop offset="1" stop-color="#0a0d1f"/></linearGradient></defs>`;
+    s += `<rect width="1080" height="1080" fill="url(#sg)"/><circle cx="980" cy="120" r="240" fill="${hexA(a, 0.18)}"/><circle cx="120" cy="1000" r="180" fill="${hexA(a, 0.10)}"/>`; }
   s += `<rect x="72" y="78" rx="31" width="${Math.round(pw)}" height="62" fill="${a}"/><text x="${72 + pw / 2}" y="119" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="27" fill="#fff" letter-spacing="1.5">${esc(cat)}</text>`;
   const hsize = head.length > 16 ? 76 : head.length > 9 ? 104 : 120;
   const hl = wrapPlain(head, head.length > 16 ? 18 : 12).slice(0, 2); let hy = 250;
@@ -815,16 +856,21 @@ function viralVocab(c) {
 }
 // render a single post in the viral style (resvg + real fonts); photo backdrop for country posts
 async function renderViral(c) {
-  const photo = (c.type === "bulletin" || c.type === "exam") ? countryPhoto(c) : null;
-  const svg = c.type === "vocab" ? viralVocab(c) : c.type === "bulletin" ? viralNews(c, !!photo) : viralStat(c, !!photo);
-  const overlay = resvgPng(svg, 1080);
-  const flagBuf = c.flagCountry ? await safeFlag(c.flagCountry) : null;
-  if (photo && sharp) {
-    const comps = [{ input: overlay }];
-    if (flagBuf) comps.push({ input: flagBuf, top: 76, left: 894 });
-    return await sharp(fs.readFileSync(photo)).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).composite(comps).png({ quality: 100 }).toBuffer();
+  let svg, light = false;
+  if (c.type === "vocab") svg = viralVocab(c);
+  else if (c.type === "bulletin") svg = viralNews(c);
+  else { // exam-type data cards
+    const cat = String(c.category || "");
+    if (/SCHOLARSHIP/i.test(cat)) svg = viralStat(c, true, "#E7B24B");          // premium dark gold
+    else if (c.flagCountry) { svg = viralCountry(c); light = true; }            // blue/yellow country/college card
+    else svg = viralStat(c, false);                                            // clean indigo data card (cost/fees/exam)
   }
-  if (flagBuf && sharp) return await sharp(overlay).composite([{ input: flagBuf, top: 76, left: 894 }]).png({ quality: 100 }).toBuffer();
+  const overlay = resvgPng(svg, 1080);
+  // flag chip top-right (on the dark templates); the blue country card carries its own header instead
+  if (!light && c.flagCountry && sharp) {
+    const flagBuf = await safeFlag(c.flagCountry);
+    if (flagBuf) return await sharp(overlay).composite([{ input: flagBuf, top: 76, left: 894 }]).png({ quality: 100 }).toBuffer();
+  }
   return Buffer.from(overlay);
 }
 // render a single post: viral style (real fonts) when resvg is available, else legacy flat card
