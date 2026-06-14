@@ -931,10 +931,11 @@ async function imagenGen(prompt) {
   } catch (e) { return null; }
 }
 async function aiBackground(c) {
-  if (!AIBG_ON || !IMG_KEY || !sharp) return null;
+  if (!AIBG_ON || !sharp) return null;
   const key = aibgKey(c);
   try { fs.mkdirSync(AIBG_DIR, { recursive: true }); } catch (e) {}
-  for (const e of [".jpg", ".png", ".webp"]) { const p = path.join(AIBG_DIR, key + e); if (fs.existsSync(p)) return p; }
+  for (const e of [".jpg", ".png", ".webp"]) { const p = path.join(AIBG_DIR, key + e); if (fs.existsSync(p)) return p; }   // cache hit — no key needed (works on Render from the committed library)
+  if (!IMG_KEY) return null;                                                                                              // a key is only needed to GENERATE a new background
   const buf = await imagenGen(aibgPrompt(c, key)); if (!buf) return null;
   const p = path.join(AIBG_DIR, key + ".jpg");
   try { const out = await sharp(buf).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).jpeg({ quality: 88 }).toBuffer(); fs.writeFileSync(p, out); return p; } catch (e) { return null; }
