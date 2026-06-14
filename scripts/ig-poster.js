@@ -802,7 +802,7 @@ function viralCountry(c) {
     s += `<text x="${x + 24}" y="${by + bh - 24}" font-family="${BODY}" font-weight="700" font-size="20" fill="${BLUE}" letter-spacing="0.5">${esc(String(b.label).toUpperCase())}</text>`;
   });
   s += `<rect x="60" y="916" width="960" height="96" rx="22" fill="${Y}"/><text x="540" y="976" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="37" fill="${INK}" letter-spacing="0.5">SAVE THIS  &#183;  landingprep.com</text>`;
-  s += `<text x="540" y="1058" text-anchor="middle" font-family="${BODY}" font-weight="700" font-size="25" fill="rgba(255,255,255,0.85)">${HANDLE}  &#183;  Follow for daily study-abroad guides</text>`;
+  s += `<text x="540" y="1058" text-anchor="middle" font-family="${BODY}" font-weight="700" font-size="25" fill="rgba(255,255,255,0.85)">Follow for daily study-abroad guides</text>`;
   return s + `</svg>`;
 }
 // 1 — bold black/yellow "urgent news" over a designed dusk-city scene (no real photo)
@@ -823,7 +823,7 @@ function viralNews(c) {
   s += capLines(lines, 72, firstBase, size, lh, hiSet, "#fff", Y);
   if (chips.length) { let cx = 72; const cy = 794; chips.forEach((t) => { const tt = stripEmoji(t), w = 44 + tt.length * 16.5; s += `<rect x="${cx}" y="${cy}" rx="12" width="${Math.round(w)}" height="78" fill="rgba(255,255,255,0.09)"/><rect x="${cx}" y="${cy}" rx="6" width="9" height="78" fill="${Y}"/><text x="${cx + 30}" y="${cy + 50}" font-family="${BODY}" font-weight="700" font-size="29" fill="#fff">${esc(tt)}</text>`; cx += w + 20; }); }
   s += `<rect x="0" y="912" width="1080" height="104" fill="${Y}"/><text x="540" y="978" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="42" fill="#0a0a0a" letter-spacing="0.5">FULL STORY IN THE CAPTION  &#8595;</text>`;
-  s += `<text x="72" y="1060" font-family="${BODY}" font-weight="700" font-size="28" fill="#9a9a9a">${HANDLE}</text><text x="1008" y="1060" text-anchor="end" font-family="${BODY}" font-weight="700" font-size="28" fill="#9a9a9a">landingprep.com</text>`;
+  s += `<text x="540" y="1060" text-anchor="middle" font-family="${BODY}" font-weight="700" font-size="28" fill="#9a9a9a">landingprep.com</text>`;
   return s + `</svg>`;
 }
 // 2 — premium indigo stat card (country / scholarship / cost / exam fees / exam guide)
@@ -850,7 +850,7 @@ function viralStat(c, scene, accentOverride) {
     s += `<text x="${x + 34}" y="${by + Math.round(bh / 2) + 6}" font-family="${BODY}" font-weight="800" font-size="${vsize}" fill="#fff">${esc(v)}</text>`;
     s += `<text x="${x + 34}" y="${by + bh - 26}" font-family="${BODY}" font-weight="700" font-size="19" fill="${lighten(a, 0.55)}" letter-spacing="0.5">${esc(String(b.label).toUpperCase())}</text>`;
   });
-  s += `<text x="72" y="1052" font-family="${BODY}" font-weight="700" font-size="26" fill="rgba(255,255,255,0.5)">${HANDLE}</text><text x="1008" y="1052" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.88)">landingprep.com</text>`;
+  s += `<text x="540" y="1052" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.88)">landingprep.com</text>`;
   return s + `</svg>`;
 }
 // 3 — clean cream vocabulary card (TNC-explainer style)
@@ -902,7 +902,7 @@ function viralUrgency(c) {
   if (chips.length) { const cw = chips.map((t) => 44 + t.length * 15.5), total = cw.reduce((a, b) => a + b, 0) + (chips.length - 1) * 20; let cx = (1080 - total) / 2; const cy = 768;
     chips.forEach((t, i) => { s += `<rect x="${Math.round(cx)}" y="${cy}" rx="14" width="${Math.round(cw[i])}" height="70" fill="#161c2b" stroke="#27314a" stroke-width="1.5"/><text x="${Math.round(cx + cw[i] / 2)}" y="${cy + 45}" text-anchor="middle" font-family="${BODY}" font-weight="700" font-size="26" fill="#e5e7eb">${esc(t)}</text>`; cx += cw[i] + 20; }); }
   s += `<text x="540" y="916" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="40" fill="#fff">${esc(sub)}</text>`;
-  s += `<rect x="0" y="1004" width="1080" height="76" fill="${R}"/><text x="72" y="1052" font-family="${BODY}" font-weight="800" font-size="28" fill="#fff">${HANDLE}</text><text x="1008" y="1052" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="28" fill="#fff">landingprep.com</text>`;
+  s += `<rect x="0" y="1004" width="1080" height="76" fill="${R}"/><text x="540" y="1052" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="#fff">landingprep.com</text>`;
   return s + `</svg>`;
 }
 // ══ AI photographic backgrounds (Imagen via Gemini key), cached on disk ══
@@ -978,7 +978,7 @@ function viralOverlay(c) {
       lines.forEach((ln, j) => { s += `<text x="146" y="${ry + 24 + j * 40}" font-family="${BODY}" font-weight="${j === 0 ? 600 : 400}" font-size="32" fill="#fff">${esc(ln)}</text>`; });
     });
   }
-  s += `<text x="72" y="1060" font-family="${BODY}" font-weight="700" font-size="27" fill="rgba(255,255,255,0.72)">${HANDLE}</text><text x="1008" y="1060" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
+  s += `<text x="540" y="1060" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
   return s + `</svg>`;
 }
 // render a single post: AI photo background + crisp overlay (premium); falls back to solid vector cards
@@ -1387,4 +1387,78 @@ async function runPoolPost({ baseUrl, igUserId, token, index, now }) {
   return { ok: true, pool: true, index: i, id: item.id, type: "single", mediaId: res.mediaId };
 }
 
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, listPool, runPoolPost, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
+// ══ "TOP CITIES TO STUDY IN …" carousels — cover slide + one paragraph-rich slide per city ══
+const STUDY_CITIES = {
+  usa: { name: "the USA", cover: "country-usa", cities: [
+    { city: "Boston", slug: "boston", unis: "Harvard, MIT, BU, Northeastern", text: "America's ultimate student city — walkable, safe and packed with world-leading research in tech, biotech and finance. Rents are high, but you get unmatched academic prestige and more internships than almost anywhere in the world." },
+    { city: "New York", slug: "new-york", unis: "Columbia, NYU, Cornell Tech", text: "The city that never sleeps. Unrivalled for business, media, art and finance, with Wall Street on your doorstep. It's expensive and competitive, but the networking and internship pull are simply world-class." },
+    { city: "Los Angeles", slug: "los-angeles", unis: "UCLA, USC, Caltech", text: "Sun, beaches and serious academics. LA is the hub for film, media, aerospace and a booming tech scene. It's sprawling and car-dependent, but the lifestyle and entertainment-industry access are hard to beat." },
+    { city: "San Francisco", slug: "san-francisco", unis: "Stanford, UC Berkeley", text: "The heart of global tech. Silicon Valley puts you next to Google, Apple and thousands of startups, paying the highest salaries in the US. Living costs are steep, but the CS, AI and engineering opportunities are unmatched." },
+    { city: "Chicago", slug: "chicago", unis: "UChicago, Northwestern", text: "A powerhouse for economics, business and law at a friendlier cost than the coasts. Big-city culture on Lake Michigan, strong finance and consulting recruiting — and famously cold winters to push through." },
+  ] },
+};
+function cityPrompt(country, city) {
+  return "A stunning view of the " + city + " city skyline and iconic landmarks in " + country + ". Premium cinematic editorial photograph, golden-hour dusk, dramatic atmospheric lighting, deep blue and warm amber tones, soft bokeh, high-end magazine quality, darker toward the bottom for text. No text, no words, no logos, no visible faces. Ultra realistic, square 1:1.";
+}
+async function cityBg(country, slug, city) {
+  if (!sharp) return null;
+  try { fs.mkdirSync(AIBG_DIR, { recursive: true }); } catch (e) {}
+  const key = "city-" + slug;
+  for (const e of [".jpg", ".png", ".webp"]) { const p = path.join(AIBG_DIR, key + e); if (fs.existsSync(p)) return p; }
+  if (!IMG_KEY) return null;
+  const buf = await imagenGen(cityPrompt(country, city)); if (!buf) return null;
+  const p = path.join(AIBG_DIR, key + ".jpg");
+  try { const out = await sharp(buf).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).jpeg({ quality: 88 }).toBuffer(); fs.writeFileSync(p, out); return p; } catch (e) { return null; }
+}
+function _csPill(x, y, txt, a) { const w = 40 + txt.length * 14; return `<rect x="${x}" y="${y}" rx="28" width="${Math.round(w)}" height="56" fill="${a}"/><text x="${x + w / 2}" y="${y + 38}" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="25" fill="#fff" letter-spacing="1.5">${esc(txt)}</text>`; }
+function cityCoverSvg(cc, total) {
+  const a = "#1657E0", Y = "#FFC83A";
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="cc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070d" stop-opacity="0.3"/><stop offset="0.45" stop-color="#05070d" stop-opacity="0.55"/><stop offset="1" stop-color="#05070d" stop-opacity="0.96"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#cc)"/>`;
+  s += _csPill(72, 74, "TOP STUDY CITIES", a);
+  const title = ("BEST CITIES TO STUDY IN " + cc.name).toUpperCase(), lines = wrapPlain(title, 13).slice(0, 4);
+  let y = 600 - (lines.length - 1) * 100;
+  lines.forEach((ln, i) => { s += `<text x="72" y="${y + i * 100}" font-family="${HEAD}" font-size="98" fill="#fff" letter-spacing="0.5">${esc(ln)}</text>`; });
+  s += `<text x="74" y="${y + lines.length * 100 + 8}" font-family="${BODY}" font-weight="600" font-size="34" fill="#e7eeff">The universities, the jobs, and real student life.</text>`;
+  s += `<rect x="0" y="912" width="1080" height="104" fill="${Y}"/><text x="540" y="978" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="40" fill="#0a0a0a" letter-spacing="0.5">SWIPE TO SEE ALL ${total - 1} CITIES  &#8594;</text>`;
+  s += `<text x="540" y="1060" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+function citySlideSvg(slide, idx, total) {
+  const a = "#3B82F6", Y = "#FFD400";
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="ci" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070d" stop-opacity="0.22"/><stop offset="0.4" stop-color="#05070d" stop-opacity="0.55"/><stop offset="1" stop-color="#05070d" stop-opacity="0.97"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#ci)"/>`;
+  s += _csPill(72, 74, "TOP STUDY CITIES", a);
+  s += `<text x="1008" y="112" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="30" fill="rgba(255,255,255,0.85)">${idx} / ${total}</text>`;
+  const cityUp = stripEmoji(slide.city).toUpperCase(), csize = cityUp.length > 11 ? 92 : 124;
+  s += `<text x="72" y="436" font-family="${HEAD}" font-size="${csize}" fill="#fff" letter-spacing="0.5">${esc(cityUp)}</text>`;
+  s += `<text x="74" y="492" font-family="${BODY}" font-weight="700" font-size="30" fill="${lighten(a, 0.45)}">Top universities: ${esc(clip(slide.unis, 40))}</text>`;
+  const para = wrapPlain(stripEmoji(slide.text), 40).slice(0, 7);
+  para.forEach((ln, i) => { s += `<text x="72" y="${560 + i * 48}" font-family="${BODY}" font-weight="500" font-size="34" fill="#eef2ff">${esc(ln)}</text>`; });
+  if (idx < total) s += `<text x="1008" y="980" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="30" fill="${Y}">SWIPE  &#8594;</text>`;
+  s += `<text x="72" y="980" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+function buildCitiesCarousel(key) {
+  const cc = STUDY_CITIES[key]; if (!cc) return null;
+  const cities = cc.cities.slice(0, 5), total = cities.length + 1;
+  const slides = [{ kind: "cover" }].concat(cities.map((c) => Object.assign({ kind: "city" }, c)));
+  const caption = `🌍 The ${cities.length} best cities to study in ${cc.name} 👇\n\nSwipe ➡️ for each city — the top universities, the jobs, and what student life is really like.\n\n${cities.map((c) => "📍 " + c.city + " — " + c.unis).join("\n")}\n\n📌 SAVE this for your shortlist. 📲 SHARE it with someone applying.\n💬 Which city is your pick? Comment 👇\n\nFollow ${HANDLE} for daily study-abroad guides 🌍`;
+  return { slides, total, caption, tags: buildTags("studyin" + key, "studyabroad", "topuniversities", "internationalstudents", "landingprep") };
+}
+async function renderCitiesCarousel({ baseUrl, key }) {
+  const cc = STUDY_CITIES[key]; const car = buildCitiesCarousel(key); if (!car) throw new Error("no cities for " + key);
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+  const urls = [], stamp = Date.now();
+  for (let i = 0; i < car.slides.length; i++) {
+    const sl = car.slides[i]; let photoPath = null, svg;
+    if (sl.kind === "cover") { for (const e of [".jpg", ".png", ".webp"]) { const p = path.join(AIBG_DIR, cc.cover + e); if (fs.existsSync(p)) { photoPath = p; break; } } svg = cityCoverSvg(cc, car.total); }
+    else { photoPath = await cityBg(cc.name, sl.slug, sl.city); svg = citySlideSvg(sl, i + 1, car.total); }
+    const overlay = resvgPng(svg, 1080);
+    let png;
+    if (photoPath && sharp) png = await sharp(fs.readFileSync(photoPath)).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).composite([{ input: overlay }]).png({ quality: 100 }).toBuffer();
+    else png = Buffer.from(overlay);
+    const name = `cities-${stamp}-${i}.png`; fs.writeFileSync(path.join(OUT_DIR, name), png);
+    urls.push(`${(baseUrl || "").replace(/\/$/, "")}/ig-out/${name}`);
+  }
+  return { imageUrls: urls, caption: car.caption, slides: car.slides.length };
+}
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
