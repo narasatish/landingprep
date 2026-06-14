@@ -74,6 +74,12 @@ jobs:
               -H "x-ig-secret: ${{ secrets.IG_POST_SECRET }}")
             echo "Attempt $attempt — HTTP $code"; cat /tmp/resp.json || true; echo
             if [ "$code" = "200" ]; then ok=1; break; fi
+            # Fail fast on Instagram auth/permission/abuse blocks — retrying won't help and can deepen the block.
+            # Only genuine transient failures (cold start, gateway, timeout, empty body) fall through to a retry.
+            if grep -qiE 'OAuthException|API access blocked|access token|"code":(190|200|10|803|368)|permission' /tmp/resp.json 2>/dev/null; then
+              echo "::error::Instagram blocked the request (auth/permission, not transient). Not retrying — fix the token/app in Meta, then re-run."
+              exit 1
+            fi
             sleep 25
           done
           [ "$ok" = "1" ] || { echo "::error::Instagram post failed after retries"; exit 1; }
