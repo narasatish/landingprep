@@ -327,7 +327,20 @@ function pickCollegeSpotlight(seed) {
     caption: `🎓 ${c.name} — at a glance\n\n${c.rank ? "🌍 World rank: #" + c.rank + "\n" : ""}${c.feeNote ? "💰 Tuition: " + c.feeNote + "\n" : ""}${c.acceptance ? "✅ Acceptance: " + c.acceptance + "%\n" : ""}${c.ielts ? "📊 IELTS " + c.ielts + " · GRE " + (c.gre || "—") + "\n" : ""}${c.deadline ? "🗓 Deadline: " + c.deadline + "\n" : ""}\n📲 TAG a future applicant. 📌 SAVE this.\n💬 Is this your dream school? 👇\n\n👉 Free college predictor — link in bio.\nFollow ${HANDLE} for daily admits info 🎓`,
     tags: buildTags("studyin" + cslug, "studyabroad", "universityadmission", "topuniversities", "landingprep") };
 }
-function pickCountryOrCollege(seed) { return (seed % 2 ? pickCountryHighlight(seed) : pickCollegeSpotlight(seed)) || pickCountryHighlight(seed) || pickCollegeSpotlight(seed); }
+// "Did you know?" — surprising facts about studying in a country (from our own whyStudy data)
+function pickCountryFact(seed) {
+  const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || [];
+  const pool = D.filter((c) => c && c.name && (c.whyStudy || []).length >= 3);
+  if (!pool.length) return null;
+  const c = pool[(seed * 7) % pool.length];
+  const facts = (c.whyStudy || []).slice(0, 6).map((f) => String(f).trim()).filter(Boolean);
+  const slug = c.name.toLowerCase().replace(/\s+/g, "");
+  return { type: "exam", accent: "#0EA5E9", category: "DID YOU KNOW? · " + c.name.toUpperCase(), flagCountry: c.name, headline: c.name, sub: "What students don't realise about " + c.name, points: facts,
+    caption: `🤯 Did you know? Facts about studying in ${c.name} ${c.flag || ""}\n\n${facts.map((f) => "✅ " + f).join("\n")}\n\n📲 TAG someone who should see this.\n📌 SAVE it. 💬 Surprised? Comment 👇\n\n👉 Full ${c.name} guide → landingprep.com\nFollow ${HANDLE} for daily study-abroad facts 🌍`,
+    tags: buildTags("studyin" + slug, "study" + slug, "studyabroad", "didyouknow", "internationalstudents", "landingprep") };
+}
+// slot 1 now rotates 3 ways for more daily variety: country spotlight / college spotlight / did-you-know facts
+function pickCountryOrCollege(seed) { const r = seed % 3; return (r === 0 ? pickCountryHighlight(seed) : r === 1 ? pickCollegeSpotlight(seed) : pickCountryFact(seed)) || pickCountryHighlight(seed) || pickCollegeSpotlight(seed); }
 function pickTipOrSpotlight(seed) { const r = seed % 3; return (r === 0 ? pickTip(seed) : r === 1 ? pickCollegeSpotlight(seed + 17) : pickCountryHighlight(seed + 11)) || pickTip(seed) || pickWordOfDay(seed); }
 // major study-abroad scholarships (curated, evergreen)
 const SCHOLARSHIPS = [
@@ -1415,6 +1428,30 @@ const STUDY_CITIES = {
     { city: "San Francisco", slug: "san-francisco", unis: "Stanford, UC Berkeley", text: "The heart of global tech. Silicon Valley puts you next to Google, Apple and thousands of startups, paying the highest salaries in the US. Living costs are steep, but the CS, AI and engineering opportunities are unmatched." },
     { city: "Chicago", slug: "chicago", unis: "UChicago, Northwestern", text: "A powerhouse for economics, business and law at a friendlier cost than the coasts. Big-city culture on Lake Michigan, strong finance and consulting recruiting — and famously cold winters to push through." },
   ] },
+  uk: { name: "the UK", cover: "country-uk", cities: [
+    { city: "London", slug: "london", unis: "UCL, Imperial, KCL, LSE", text: "Four world-top-40 universities in one city, plus the biggest graduate job market in Europe — finance, tech, media and law. Rent is steep, but the 2-year Graduate Route lets you stay and work after your degree." },
+    { city: "Oxford", slug: "oxford", unis: "University of Oxford", text: "One of the oldest, most prestigious universities on earth. A small, walkable college town an hour from London, strong in everything from PPE to medicine and AI research. Highly competitive — but unmatched prestige." },
+    { city: "Manchester", slug: "manchester", unis: "University of Manchester", text: "A big, affordable student city with a famous music and football culture. Strong in engineering, computer science and business, with much lower living costs than London and a huge international community." },
+    { city: "Edinburgh", slug: "edinburgh", unis: "University of Edinburgh", text: "Scotland's stunning capital and a top-20 global university, especially for AI, data science and medicine. Compact, historic and friendly, with a lively festival scene and easy access to the Highlands." },
+  ] },
+  canada: { name: "Canada", cover: "country-canada", cities: [
+    { city: "Toronto", slug: "toronto", unis: "U of Toronto, TMU, York", text: "Canada's biggest, most diverse city and home to the #1-ranked University of Toronto. The hub for finance, tech and AI jobs, with a clear study → work permit → PR pathway. Pricey, but the opportunities are unmatched." },
+    { city: "Vancouver", slug: "vancouver", unis: "UBC, SFU", text: "Mountains, ocean and a top-40 global university (UBC). Mild weather, a booming film and tech scene, and a strong Asian-Pacific community. Cost of living is high, but the lifestyle and PR pathway are big draws." },
+    { city: "Montreal", slug: "montreal", unis: "McGill, Concordia", text: "A bilingual, European-feeling city with the lowest tuition and rent of Canada's big three — and McGill, one of the country's best universities. Vibrant, artsy and affordable, ideal for students on a budget." },
+    { city: "Waterloo", slug: "waterloo", unis: "U of Waterloo, Laurier", text: "Canada's tech and engineering capital, famous for the world's largest co-op (paid internship) program. Grads get hired by Google, Apple and top startups. A smaller, student-focused city with strong job outcomes." },
+  ] },
+  australia: { name: "Australia", cover: "country-australia", cities: [
+    { city: "Melbourne", slug: "melbourne", unis: "U of Melbourne, Monash, RMIT", text: "Regularly voted one of the world's most liveable cities, and home to the #1-ranked University of Melbourne. Great coffee, sport and arts, a big job market, and post-study work rights of up to 4–6 years." },
+    { city: "Sydney", slug: "sydney", unis: "USYD, UNSW, UTS", text: "Iconic harbour, beaches and two top-20 global universities. The finance and tech hub of Australia with the strongest graduate job market — but also the highest cost of living, so budget carefully." },
+    { city: "Brisbane", slug: "brisbane", unis: "UQ, QUT, Griffith", text: "Sunny, warm and noticeably cheaper than Sydney or Melbourne, with the highly-ranked University of Queensland. A growing job market, an easy outdoor lifestyle and a fast-rising international student scene." },
+    { city: "Canberra", slug: "canberra", unis: "ANU, U of Canberra", text: "Australia's capital and home to ANU, the country's #1 research university. Smaller and quieter, with strong government, policy and research jobs, lower competition for housing, and generous regional migration points." },
+  ] },
+  germany: { name: "Germany", cover: "country-germany", cities: [
+    { city: "Munich", slug: "munich", unis: "TUM, LMU", text: "Home to TUM and LMU — two of Europe's best universities — and the headquarters of BMW, Siemens and Allianz. Public university tuition is essentially €0, even for international students. Higher rent, but huge engineering and business opportunities." },
+    { city: "Berlin", slug: "berlin", unis: "TU Berlin, Humboldt, FU", text: "Germany's creative, startup-driven capital, with several strong public universities and near-zero tuition. Affordable, international and English-friendly, with a booming tech scene and an 18-month post-study job-seeker visa." },
+    { city: "Aachen", slug: "aachen", unis: "RWTH Aachen", text: "Home to RWTH Aachen, Germany's top university for engineering and technology. A compact, affordable student city on the Dutch/Belgian border, with deep industry links and excellent job prospects in mechanical, electrical and computer engineering." },
+    { city: "Heidelberg", slug: "heidelberg", unis: "Heidelberg University", text: "Germany's oldest university and a global leader in medicine, life sciences and physics. A beautiful, historic riverside town — safe, walkable and research-intensive, with strong funding and PhD opportunities." },
+  ] },
 };
 function cityPrompt(country, city) {
   return "A stunning view of the " + city + " city skyline and iconic landmarks in " + country + ". Premium cinematic editorial photograph, golden-hour dusk, dramatic atmospheric lighting, deep blue and warm amber tones, soft bokeh, high-end magazine quality, darker toward the bottom for text. No text, no words, no logos, no visible faces. Ultra realistic, square 1:1.";
@@ -1480,4 +1517,13 @@ async function renderCitiesCarousel({ baseUrl, key }) {
   }
   return { imageUrls: urls, caption: car.caption, slides: car.slides.length };
 }
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
+// pick this week's country for the Top-Cities carousel (rotates one country/week)
+function citiesWeekKey(now) { const keys = Object.keys(STUDY_CITIES); return keys[Math.floor(dayNumber(now) / 7) % keys.length]; }
+async function generateCitiesCarousel({ baseUrl, now }) { const key = citiesWeekKey(now); const g = await renderCitiesCarousel({ baseUrl, key }); return Object.assign({ country: key }, g); }
+async function runCitiesCarousel({ baseUrl, igUserId, token, now }) {
+  if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
+  const gen = await generateCitiesCarousel({ baseUrl, now });
+  const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
+  return { ok: true, type: "cities-carousel", country: gen.country, slides: res.slides, mediaId: res.mediaId };
+}
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, generateCitiesCarousel, runCitiesCarousel, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };

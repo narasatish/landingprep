@@ -252,6 +252,12 @@ app.all("/api/ig/post-daily", async (req, res) => {
       const out = await ig.runCarousel({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN });
       return res.json(out);
     }
+    // ?cities=1 → publish this week's "Top cities to study in <country>" carousel (rotates weekly)
+    if (String(req.query.cities || "") === "1") {
+      if (pv) { const g = await ig.generateCitiesCarousel({ baseUrl: IG_PUBLIC_BASE }); return res.json({ ok: true, preview: true, type: "cities-carousel", country: g.country, slides: g.imageUrls, caption: g.caption }); }
+      const out = await ig.runCitiesCarousel({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN });
+      return res.json(out);
+    }
     if (pv) {
       // ?preview=1            → today's slot for the current hour
       // ?preview=1&slot=N     → preview a specific slot (0..4)

@@ -16,6 +16,7 @@ on:
     - cron: "30 10 * * *"   # 16:00 IST → slot 2  (word of the day)
     - cron: "0 14 * * *"    # 19:30 IST → slot 3  (scholarship)
     - cron: "0 16 * * *"    # 21:30 IST → slot 4  (cost / exam-fees / exam-guide)
+    - cron: "0 6 * * 0"    # Sun 11:30 IST - weekly Top-Cities carousel (rotates country/week)
   workflow_dispatch:
     inputs:
       mode:
@@ -48,7 +49,9 @@ jobs:
           esac
           # Manual "Run workflow": mode=pool posts the next ready-made Canva post;
           # mode=all posts all 5; mode=carousel posts a carousel.
-          if [ "${{ github.event.inputs.mode }}" = "pool" ]; then
+          if [ "${{ github.event.schedule }}" = "0 6 * * 0" ] || [ "${{ github.event.inputs.mode }}" = "cities" ]; then
+            QS="cities=1"
+          elif [ "${{ github.event.inputs.mode }}" = "pool" ]; then
             QS="pool=next"
           elif [ "${{ github.event.inputs.mode }}" = "all" ]; then
             QS="all=1"
