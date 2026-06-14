@@ -103,12 +103,14 @@ const TAGS = {
   exam: ["examprep", "testprep", "mocktest", "studytips", "examtips", "studymotivation", "studyhard"],
 };
 // 2026 algorithm: 3-5 highly relevant tags out-reach 30 generic ones. Pass best-first; we keep 5.
-const TRENDING_TAGS = ["studyabroad", "studyabroad2026", "studygram", "internationalstudents", "studyvisa", "ieltspreparation", "studentlife", "studyoverseas", "scholarships", "dreamstudyabroad"];
+// High-traffic, ON-TOPIC tags only. Irrelevant "trending" tags (war/news events) get an
+// account shadow-banned by IG's relevance filter — they HURT reach, so we never use them.
+const TRENDING_TAGS = ["studyabroad", "studyabroad2026", "studygram", "internationalstudents", "studyvisa", "ieltspreparation", "studentlife", "studyoverseas", "scholarships", "dreamstudyabroad", "studyabroadlife", "abroadstudies", "highereducation", "msabroad", "futureabroad", "studentvisaupdate"];
 function buildTags() {
   const out = [];
   for (let i = 0; i < arguments.length; i++) { const a = Array.isArray(arguments[i]) ? arguments[i] : [arguments[i]]; for (const t of a) { const x = String(t || "").toLowerCase().replace(/[^a-z0-9]/g, ""); if (x && !out.includes(x)) out.push(x); } }
   for (const t of TRENDING_TAGS) { if (!out.includes(t)) out.push(t); }
-  return out.slice(0, 15);
+  return out.slice(0, 20);
 }
 
 // ── content pickers (one per slot) ───────────────────────────────────────
@@ -228,13 +230,28 @@ function pickPhotoQuery(title, kind) {
   return kind === "immig" ? "airport international travel" : "students studying abroad campus";
 }
 function fmtDate(s) { try { const d = new Date(s); if (isNaN(d)) return ""; return d.getUTCDate() + " " + ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getUTCMonth()] + " " + d.getUTCFullYear(); } catch (e) { return ""; } }
+// pull 2-4 ACCURATE facts from our own (vetted) country data to give the caption real substance
+function countryCaptionFacts(name) {
+  if (!name) return "";
+  try {
+    const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || [];
+    const c = D.find((x) => x && x.name && x.name.toLowerCase() === String(name).toLowerCase());
+    if (!c) return "";
+    const L = [];
+    if (c.postStudyWork) L.push("💼 Post-study work: " + c.postStudyWork);
+    if (c.prTimeline) L.push("🛂 PR pathway: " + c.prTimeline);
+    if (c.avgTuition) L.push("💰 Tuition: " + c.avgTuition);
+    if (c.visaSuccess) L.push("✅ ~" + c.visaSuccess + "% student-visa approval");
+    return L.length ? "\n\n" + L.slice(0, 4).join("\n") : "";
+  } catch (e) { return ""; }
+}
 function rssToContent(it, kind) {
   const T = kind === "immig" ? THEME.immig : THEME.edu;
-  const title = cleanTitle(it.title); const src = (it.source || "").slice(0, 18);
-  const cat = (kind === "immig" ? "IMMIGRATION NEWS" : "STUDY-ABROAD NEWS") + (src ? " · " + src.toUpperCase() : "");
+  const title = cleanTitle(it.title); const country = detectCountry(title);
+  const cat = kind === "immig" ? "IMMIGRATION NEWS" : "STUDY-ABROAD NEWS";   // no source name on the image anymore
   return { type: "bulletin", accent: T.accent, bg: T.bg, category: cat, headline: clip(title, 120), highlight: [],
-    flagCountry: detectCountry(title), dateStr: fmtDate(it.date), photoQuery: pickPhotoQuery(title, kind), live: true, cta: "More news → link in bio",
-    caption: `🚨 ${kind === "immig" ? "IMMIGRATION" : "STUDY-ABROAD"} NEWS${it.date ? " · " + fmtDate(it.date) : ""}\n\n${title}${src ? "\n\n📰 Source: " + (it.source || "") : ""}\n\n📲 SHARE this — someone you know needs to see it.\n📌 SAVE for reference.\n💬 What's your take? Comment 👇\n\n👉 Daily study-abroad news + free guides — link in bio.\nFollow ${HANDLE} for trending updates 🌍`,
+    flagCountry: country, dateStr: fmtDate(it.date), photoQuery: pickPhotoQuery(title, kind), live: true, cta: "Full guide → landingprep.com",
+    caption: `🚨 ${kind === "immig" ? "IMMIGRATION" : "STUDY-ABROAD"} NEWS${it.date ? " · " + fmtDate(it.date) : ""}\n\n${title}${countryCaptionFacts(country)}\n\n⚠️ Rules change often — always confirm the latest on official government / university websites before you act.\n\n📲 SHARE this with someone who needs it.\n📌 SAVE for reference.\n💬 What's your take? Comment 👇\n\n👉 Free study-abroad guides & tools → landingprep.com\nFollow ${HANDLE} for daily updates 🌍`,
     tags: buildTags(kind === "immig" ? "studentvisa" : "studyabroad", kind === "immig" ? "immigration" : "scholarships", "studyabroadnews", "internationalstudents", "landingprep") };
 }
 const RSS_Q = {
