@@ -1,0 +1,12 @@
+{
+  "_comment": "Pre-made Canva posts. The server posts these from /ig-pool/ via /api/ig/post-daily?pool=next (rotates by day) or ?pool=N (specific index). Refreshed in batches; add new items to 'posts'.",
+  "posts": [
+    {
+      "id": "study-in-canada-carousel",
+      "type": "carousel",
+      "theme": "country-highlight",
+      "images": ["canada-1.png", "canada-2.png", "canada-3.png"],
+      "caption": "🇨🇦 Planning to study in Canada in 2026? Save this before you apply 👇\n\nWhy Canada is a top pick:\n✅ Post-study work permit up to 3 years\n✅ Clear pathway to PR\n✅ World top-25 universities\n\nSwipe ➡️ for the top universities, the real costs, and the scholarships that cover them.\n\n📌 Save it for your application & send it to a friend who's planning to study abroad.\nFollow @landing_prep for a daily study-abroad guide.\n\n#StudyInCanada #StudyAbroad #CanadaStudyVisa #ScholarshipsForStudents #LandingPrep"
+    }
+  ]
+}

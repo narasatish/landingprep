@@ -962,4 +962,42 @@ async function runCarousel({ baseUrl, igUserId, token, now }) {
   return { ok: true, type: "carousel", topic: gen.content.topic, slides: res.slides, mediaId: res.mediaId };
 }
 
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, SLOTS, CAROUSEL_SLOT, OUT_DIR };
+// ── pre-made image pool (batch mode) ─────────────────────────────────────────
+// Posts are designed in Canva and dropped into /ig-pool/ alongside a pool.json
+// manifest. The server serves the PNGs statically and posts them as-is, so no
+// image generation (or Canva API token) is needed at post time.
+const POOL_DIR = path.join(ROOT, "ig-pool");
+function loadPool() {
+  try {
+    const j = JSON.parse(fs.readFileSync(path.join(POOL_DIR, "pool.json"), "utf8"));
+    return Array.isArray(j && j.posts) ? j.posts : [];
+  } catch (e) { return []; }
+}
+function poolItemUrls(item, baseUrl) {
+  const base = (baseUrl || "").replace(/\/$/, "");
+  return ((item && item.images) || []).map((f) => `${base}/ig-pool/${encodeURIComponent(f)}`);
+}
+function poolItemType(item) {
+  return (item && item.type) || (item && item.images && item.images.length > 1 ? "carousel" : "single");
+}
+function listPool({ baseUrl } = {}) {
+  return loadPool().map((it, i) => ({ index: i, id: it.id, type: poolItemType(it), images: poolItemUrls(it, baseUrl), caption: it.caption || "" }));
+}
+async function runPoolPost({ baseUrl, igUserId, token, index, now }) {
+  if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
+  const pool = loadPool();
+  if (!pool.length) throw new Error("ig-pool/pool.json is empty or missing");
+  const i = (index == null) ? (dayNumber(now) % pool.length) : ((((Number(index) || 0) % pool.length) + pool.length) % pool.length);
+  const item = pool[i];
+  const urls = poolItemUrls(item, baseUrl);
+  if (!urls.length) throw new Error("pool item has no images: " + (item.id || i));
+  const caption = item.caption || buildCaption(item);
+  if (poolItemType(item) === "carousel" || urls.length > 1) {
+    const res = await postCarousel({ imageUrls: urls, caption, igUserId, token });
+    return { ok: true, pool: true, index: i, id: item.id, type: "carousel", slides: urls.length, mediaId: res.mediaId };
+  }
+  const res = await postToInstagram({ imageUrl: urls[0], caption, igUserId, token });
+  return { ok: true, pool: true, index: i, id: item.id, type: "single", mediaId: res.mediaId };
+}
+
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, listPool, runPoolPost, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };

@@ -231,6 +231,17 @@ app.all("/api/ig/post-daily", async (req, res) => {
       const info = await ig.whoami({ token: IG_ACCESS_TOKEN });
       return res.json({ ok: !info.error, ...info });
     }
+    // ── batch/pool mode (pre-made Canva posts in /ig-pool/) ───────────────────
+    // ?pool=preview → list pool items (no posting)
+    // ?pool=next    → post today's pool item (rotates by date)
+    // ?pool=N       → post the pool item at index N
+    if (req.query.pool != null && req.query.pool !== "") {
+      const pq = String(req.query.pool);
+      if (pq === "preview") return res.json({ ok: true, preview: true, pool: ig.listPool({ baseUrl: IG_PUBLIC_BASE }) });
+      const index = pq === "next" ? null : Number(pq);
+      const out = await ig.runPoolPost({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN, index });
+      return res.json(out);
+    }
     // slot: which of the 5 daily themes (0..4). If omitted, derived from the UTC hour.
     const hasSlot = req.query.slot != null && req.query.slot !== "";
     const slot = hasSlot ? Number(req.query.slot) : null;

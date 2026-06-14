@@ -23,7 +23,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "all = post all 10 now · carousel = post today's carousel · single = current slot"
+        description: "pool = post next ready-made Canva post · all = post all 10 · carousel = today's carousel · single = current slot"
         default: "single"
 
 jobs:
@@ -55,8 +55,11 @@ jobs:
             17|18) slot=7 ;;
             *) slot=0 ;;
           esac
-          # Manual "Run workflow": mode=all posts all 10; mode=carousel posts today's carousel.
-          if [ "${{ github.event.inputs.mode }}" = "all" ]; then
+          # Manual "Run workflow": mode=pool posts the next ready-made Canva post;
+          # mode=all posts all 10; mode=carousel posts today's carousel.
+          if [ "${{ github.event.inputs.mode }}" = "pool" ]; then
+            QS="pool=next"
+          elif [ "${{ github.event.inputs.mode }}" = "all" ]; then
             QS="all=1"
           elif [ "${{ github.event.inputs.mode }}" = "carousel" ] || [ "$slot" = "5" ]; then
             QS="carousel=1"
