@@ -289,13 +289,19 @@ const REL = {
 const SPAM_RE = /prediction|click here|subscribe|sponsored|how to apply step|top \d+|best \d+|list of|\bvs\b|^\s*\d+\s|apply now|enquire|book (a )?free|consultanc|register now|limited seats/i;
 // teaser headlines that promise info but don't state it (we want self-contained news, not "visit website" bait)
 const TEASER_RE = /latest .*(times?|dates?|fees?|cost|rates?)|check (all|here|now|out)|everything you|all you need|complete (guide|list|details)|how to apply|step[- ]by[- ]step|find out|here'?s (how|what|why)|what you need|things (you|to) know|you (should|need to) know|ultimate guide|a guide to|explained|breakdown|all you|know about/i;
+// vague / opinion / thought-piece headlines — no concrete, actionable news (e.g. "a transition
+// from study abroad to global education"). These read as filler, so we skip them.
+const OPINION_RE = /transition|global education|future of|rise of|reimagin|rethink|redefin|\bera of\b|why .* matters?|is .* dead|the case for|\bopinion\b|perspective|mindset|paradigm|revolution|transform|\bjourney\b|empower|unlock your|holistic|ecosystem|landscape|narrative|gateway to|bridge to|new chapter|changing face|evolution of|shaping|reshap|trend(s|ing)?\b|what .* means for/i;
+// a headline must contain at least one CONCRETE, actionable anchor (a real policy/number/exam/
+// money/place) — otherwise it's too abstract to be useful news.
+const CONCRETE_RE = /visa|permit|scholarship|fund|grant|tuition|\bfee|deadline|intake|\brule|\bban\b|\bcap\b|quota|approv|reject|ielts|toefl|pte|\bgre\b|gmat|duolingo|admission|enrol|express entry|graduate route|\bpr\b|points|sponsor|work (right|permit|visa)|universit|college|campus|\b20\d\d\b|\$|£|€|%|raise|cut|hike|drop|new \w+ (rule|policy|law|scheme|route)/i;
 async function liveNews(now, slot) {
   if (process.env.LIVE_NEWS === "0") return null;
   const kind = slot === 0 ? "immig" : "edu"; const seed = dayNumber(now);
   const list = RSS_Q[kind]; const items = await fetchNewsRSS(list[seed % list.length]);
   if (!items || !items.length) return null;
   const cleaned = items.map((it) => ({ src: it.source, date: it.date, t: cleanTitle(it.title) }));
-  const good = cleaned.filter((it) => it.t.length >= 28 && it.t.length <= 110 && !JUNK_RE.test(it.t) && !SPAM_RE.test(it.t) && !TEASER_RE.test(it.t) && REL[kind].test(it.t) && !/[|/]/.test(it.t) && /^[\x20-\x7E''""–—…]+$/.test(it.t));
+  const good = cleaned.filter((it) => it.t.length >= 28 && it.t.length <= 110 && !JUNK_RE.test(it.t) && !SPAM_RE.test(it.t) && !TEASER_RE.test(it.t) && !OPINION_RE.test(it.t) && CONCRETE_RE.test(it.t) && REL[kind].test(it.t) && !/[|/]/.test(it.t) && /^[\x20-\x7E''""–—…]+$/.test(it.t));
   if (!good.length) return null; // no clean headline → fall back to curated (handled by caller)
   const pick = good[seed % good.length];
   return rssToContent({ title: pick.t, source: pick.src, date: pick.date }, kind);
@@ -1353,7 +1359,33 @@ async function renderBulletinPng(c, seed) {
 }
 
 // ── caption + publish ────────────────────────────────────────────────────
-function buildCaption(c) { const tags = (c.tags || []).map((t) => "#" + t).join(" "); return (c.caption || c.headline || "") + (tags ? "\n\n" + tags : ""); }
+// Every post shows only a few words on the image, so the caption must EXPLAIN. This returns a
+// tailored 1–2 sentence "why this matters / how to use it" intro per post type, injected just
+// under the caption's headline. News (bulletin) and carousels already carry their own explainer.
+function captionIntro(c) {
+  if (!c || c.type === "bulletin" || c.slides || c.imageUrls) return "";
+  const cat = String(c.category || "").toLowerCase();
+  const h = String(c.headline || "").toLowerCase();
+  if (/scholarship|funding|deadline/.test(cat)) return "💡 Scholarships close on fixed dates and rarely reopen — the students who win them are simply the ones who apply early with every document ready. Treat this as your checklist and start before the deadline rush.";
+  if (/no gre/.test(cat)) return "💡 The GRE costs time and money, and many strong programs no longer require it. If your GPA, projects and experience are solid, these universities let you skip it and still aim high.";
+  if (/low ielts/.test(cat)) return "💡 A 6.0–6.5 IELTS is enough to get admitted here — but a higher band still unlocks better scholarships and smoother visas, so treat the minimum as a floor, not your goal.";
+  if (/top universit/.test(cat)) return "💡 Rankings aren't everything, but they're a smart starting shortlist. Pair these with your budget, course fit and post-study-work plans, and apply to a mix of Safe, Target and Reach schools.";
+  if (/did you know/.test(cat)) return "💡 Most students choose a country on reputation alone and miss what actually shapes life there — cost, work rights, PR and culture. These are the details that decide how your years abroad really go.";
+  if (/vocab|words/.test(cat)) return "💡 High-band IELTS/GRE writing comes from using precise words naturally, not memorising lists. Use each of these in a sentence today and you'll recall them under exam pressure.";
+  if (/cost|fees|tuition|budget|cheap/.test(cat) || /cost|fees|tuition/.test(h)) return "💡 Tuition is only part of the bill — living, visa and insurance add up fast. Knowing the real numbers early lets you target the right countries and the right scholarships.";
+  if (/mistake|avoid/.test(cat)) return "💡 Most rejections come from avoidable slips, not weak profiles. Run through these before you submit so one small mistake doesn't cost you an admit or a visa.";
+  if (/checklist/.test(cat)) return "💡 A study-abroad application has dozens of moving parts, and missing one can cost you an intake. Work through this step by step so nothing slips.";
+  if (/exam|ielts|toefl|pte|gre|gmat|duolingo|band|writing|speaking|score/.test(cat) || /exam|ielts|toefl|pte|gre|gmat/.test(h)) return "💡 Knowing the format before you start is half the score — most students lose marks to surprises, not difficulty. Save this and revise it the week before your test.";
+  // country spotlight + default
+  return "💡 Where you study is the biggest decision of your application — cost, work rights, PR and visa odds matter as much as the university name. Here's the quick reality so you can compare properly.";
+}
+function buildCaption(c) {
+  const tags = (c.tags || []).map((t) => "#" + t).join(" ");
+  let body = c.caption || c.headline || "";
+  const intro = captionIntro(c);
+  if (intro) { const i = body.indexOf("\n\n"); body = i > 0 ? body.slice(0, i) + "\n\n" + intro + body.slice(i) : intro + "\n\n" + body; }
+  return body + (tags ? "\n\n" + tags : "");
+}
 async function postToInstagram({ imageUrl, caption, igUserId, token }) {
   const v = "v21.0";
   const cr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ image_url: imageUrl, caption, access_token: token }) });
@@ -1776,15 +1808,16 @@ async function renderTopicCarousel({ baseUrl, key }) {
 }
 // weekly carousel rotates: 5 cities countries + topic carousels (one per week)
 const WEEKLY_CAROUSELS = Object.keys(STUDY_CITIES).concat(Object.keys(TOPIC_CAROUSELS));
-function citiesWeekKey(now) { return WEEKLY_CAROUSELS[Math.floor(dayNumber(now) / 7) % WEEKLY_CAROUSELS.length]; }
-async function generateCitiesCarousel({ baseUrl, now }) {
-  const key = citiesWeekKey(now);
+// offset lets us run a SECOND carousel in the same week on a different topic (mid-week vs Sunday)
+function citiesWeekKey(now, offset) { return WEEKLY_CAROUSELS[(Math.floor(dayNumber(now || new Date()) / 7) + (offset || 0)) % WEEKLY_CAROUSELS.length]; }
+async function generateCitiesCarousel({ baseUrl, now, offset }) {
+  const key = citiesWeekKey(now, offset);
   const g = STUDY_CITIES[key] ? await renderCitiesCarousel({ baseUrl, key }) : await renderTopicCarousel({ baseUrl, key });
   return Object.assign({ country: key }, g);
 }
-async function runCitiesCarousel({ baseUrl, igUserId, token, now }) {
+async function runCitiesCarousel({ baseUrl, igUserId, token, now, offset }) {
   if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
-  const gen = await generateCitiesCarousel({ baseUrl, now });
+  const gen = await generateCitiesCarousel({ baseUrl, now: now || new Date(), offset });
   const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
   return { ok: true, type: "carousel", topic: gen.country, slides: res.slides, mediaId: res.mediaId };
 }

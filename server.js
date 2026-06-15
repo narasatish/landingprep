@@ -233,10 +233,14 @@ async function igCatchUp(ig) {
   const docRef = FS_DB ? FS_DB.collection("ig_daily_log").doc(date) : null;
   if (docRef) { try { const d = await docRef.get(); if (d.exists) log = d.data() || {}; } catch (e) { errors.push("log-read: " + e.message); } }
   const args = { baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN };
-  // weekly carousel — Sundays, due 06:00 UTC
+  // multi-slide carousels — Sunday (06:00 UTC) and Wednesday (08:00 UTC), different topics.
   if (dow === 0 && nowH >= 6 && !log.carousel) {
-    try { const r = await ig.runCitiesCarousel(args); log.carousel = { mediaId: r.mediaId, ts: Date.now() }; postedNow.carousel = r.mediaId; if (docRef) await docRef.set(log, { merge: true }); }
+    try { const r = await ig.runCitiesCarousel(args); log.carousel = { mediaId: r.mediaId, topic: r.topic, ts: Date.now() }; postedNow.carousel = r.mediaId; if (docRef) await docRef.set(log, { merge: true }); }
     catch (e) { errors.push("carousel: " + String(e.message || e).slice(0, 160)); }
+  }
+  if (dow === 3 && nowH >= 8 && !log.carousel2) {
+    try { const r = await ig.runCitiesCarousel(Object.assign({ offset: 3 }, args)); log.carousel2 = { mediaId: r.mediaId, topic: r.topic, ts: Date.now() }; postedNow.carousel2 = r.mediaId; if (docRef) await docRef.set(log, { merge: true }); }
+    catch (e) { errors.push("carousel2: " + String(e.message || e).slice(0, 160)); }
   }
   for (let slot = 0; slot < IG_SLOT_DUE_UTC.length; slot++) {
     if (nowH < IG_SLOT_DUE_UTC[slot] || log[slot]) continue;            // not due yet, or already posted
