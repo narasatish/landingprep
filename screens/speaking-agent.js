@@ -316,6 +316,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
     }
   }
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+  const IS_MOBILE = typeof navigator !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent || "");
   let _voices = [];
   function _refreshVoices() {
     try {
@@ -588,11 +589,12 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
     const [agentState, setAgentState] = useState(null);
     const [feedback, setFeedback] = useState(null);
     const [agentTyping, setAgentTyping] = useState(false);
-    const [autoMic, setAutoMic] = useState(true);
+    const [autoMic, setAutoMic] = useState(!IS_MOBILE);
     const chatEndRef = useRef(null);
     const startMicRef = useRef(null);
     const micSupportedRef = useRef(false);
-    const autoMicRef = useRef(true);
+    const voiceOnRef = useRef(false);
+    const autoMicRef = useRef(!IS_MOBILE);
     autoMicRef.current = autoMic;
     const listenSoon = () => {
       if (autoMicRef.current && micSupportedRef.current && startMicRef.current) {
@@ -637,7 +639,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
       const advance = (reply) => {
         setAgentTyping(false);
         pushMessage("agent", reply);
-        speak(reply, listenSoon);
+        if (voiceOnRef.current) speak(reply, listenSoon);
         setAgentState((prev) => ({
           ...prev,
           turnCount: (prev ? prev.turnCount : 0) + 1,
@@ -658,6 +660,8 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
     const { supported: micSupported, listening, start: startMic, stop: stopMic } = useSpeechRecognition(handleMicResult, handleMicError);
     startMicRef.current = startMic;
     micSupportedRef.current = micSupported;
+    const voiceOn = micSupported && !IS_MOBILE;
+    voiceOnRef.current = voiceOn;
     const startSession = () => {
       const topic = selectedTopic;
       const opener = promptData.openers[topic];
@@ -676,7 +680,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
       setTimeout(() => {
         setAgentTyping(false);
         pushMessage("agent", opener);
-        speak(opener, listenSoon);
+        if (voiceOnRef.current) speak(opener, listenSoon);
       }, 500);
     };
     const sendText = () => {
@@ -715,7 +719,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
             React.createElement(
               "p",
               { style: { margin: 0, color: "#6b7280", fontSize: "0.9rem" } },
-              `${exam && exam.name || "IELTS"} speaking practice \u2014 two\u2011way voice conversation`
+              `${exam && exam.name || "IELTS"} speaking practice \u2014 ${voiceOn ? "two\u2011way voice conversation" : "chat-based practice with model answers"}`
             )
           )
         ),
@@ -748,10 +752,10 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
             React.createElement(
               "ul",
               null,
-              React.createElement("li", null, "Click ", React.createElement("strong", null, "Start Session"), " \u2014 the agent asks the opening question aloud, then listens automatically."),
-              React.createElement("li", null, "Just ", React.createElement("strong", null, "speak naturally"), " \u2014 when you pause, the agent replies and re-opens the mic. It's a hands-free two-way conversation. Tap the mic to pause, or type instead."),
-              React.createElement("li", null, "Say or type ", React.createElement("em", null, '"give me feedback"'), " at any point, or click ", React.createElement("strong", null, "End & Get Feedback"), "."),
-              !micSupported && React.createElement("li", { style: { color: "#f59e0b" } }, "Microphone not available in this browser \u2014 use the text input instead.")
+              voiceOn ? React.createElement("li", null, "Click ", React.createElement("strong", null, "Start Session"), " \u2014 the agent asks the opening question aloud, then listens automatically.") : React.createElement("li", null, "Click ", React.createElement("strong", null, "Start Session"), " \u2014 the agent asks a question; ", React.createElement("strong", null, "type your answer"), " and it replies instantly."),
+              voiceOn ? React.createElement("li", null, "Just ", React.createElement("strong", null, "speak naturally"), " \u2014 when you pause, the agent replies and re-opens the mic. It's a hands-free two-way conversation. Tap the mic to pause, or type instead.") : React.createElement("li", null, "You'll get the same ", React.createElement("strong", null, "examiner-style questions, replies and feedback"), " \u2014 just typed instead of spoken."),
+              React.createElement("li", null, "Type ", React.createElement("em", null, '"give me feedback"'), " at any point, or click ", React.createElement("strong", null, "End & Get Feedback"), "."),
+              !voiceOn && React.createElement("li", { style: { color: "#6b7280" } }, "\u{1F4F1} On phones we use text chat \u2014 live voice recognition isn't supported by mobile browsers. For two-way voice, open this on a desktop browser.")
             )
           ),
           React.createElement("button", {
@@ -789,7 +793,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
           React.createElement(
             "p",
             { style: { margin: 0, color: "#6b7280", fontSize: "0.85rem" } },
-            speaking ? "\u{1F50A} Agent speaking\u2026" : listening ? "\u{1F399} Listening \u2014 just speak\u2026" : autoMic ? "Your turn \u2014 speak when ready" : "Microphone paused"
+            !voiceOn ? "\u{1F4AC} Type your answer below \u2014 I'll reply instantly" : speaking ? "\u{1F50A} Agent speaking\u2026" : listening ? "\u{1F399} Listening \u2014 just speak\u2026" : autoMic ? "Your turn \u2014 speak when ready" : "Microphone paused"
           )
         ),
         React.createElement("button", {
@@ -816,7 +820,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
       React.createElement(
         "div",
         { className: "input-bar" },
-        micSupported && React.createElement(
+        voiceOn && React.createElement(
           "button",
           {
             className: `mic-btn ${listening ? "recording" : ""}`,
@@ -838,7 +842,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
         React.createElement("input", {
           className: "chat-input",
           type: "text",
-          placeholder: "Or type your response and press Enter\u2026",
+          placeholder: voiceOn ? "Or type your response and press Enter\u2026" : "Type your answer and press Enter\u2026",
           value: inputText,
           // Typing pauses hands-free listening so the two don't collide.
           onFocus: () => {

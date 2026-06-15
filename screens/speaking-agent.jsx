@@ -344,6 +344,9 @@
 
   // ── SpeechRecognition setup ───────────────────────────────────────────────
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+  // Browser speech recognition does NOT work on iPhones/iPads (Apple/WebKit limitation) and is
+  // flaky on Android — so on phones we run a clean TEXT-FIRST tutor (no mic/speaker controls).
+  const IS_MOBILE = typeof navigator !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent || "");
 
   // Pick the best English browser voice — neural/online voices are natural AND instant.
   let _voices = [];
@@ -547,12 +550,13 @@
     const [agentState, setAgentState] = useState(null);
     const [feedback, setFeedback] = useState(null);
     const [agentTyping, setAgentTyping] = useState(false);
-    const [autoMic, setAutoMic] = useState(true); // hands-free conversation on by default
+    const [autoMic, setAutoMic] = useState(!IS_MOBILE); // hands-free voice on desktop; text-first on mobile
     const chatEndRef = useRef(null);
     // Refs keep the auto-listen loop free of stale closures.
     const startMicRef = useRef(null);
     const micSupportedRef = useRef(false);
-    const autoMicRef = useRef(true);
+    const voiceOnRef = useRef(false); // true only when voice is usable (desktop + supported)
+    const autoMicRef = useRef(!IS_MOBILE);
     autoMicRef.current = autoMic;
     // Re-open the mic shortly after the agent finishes speaking → two-way flow.
     const listenSoon = () => {
@@ -604,7 +608,7 @@
       const advance = (reply) => {
         setAgentTyping(false);
         pushMessage("agent", reply);
-        speak(reply, listenSoon); // re-open mic when the agent finishes speaking
+        if (voiceOnRef.current) speak(reply, listenSoon); // voice only on desktop; mobile reads the text reply
         setAgentState((prev) => ({
           ...prev,
           turnCount: (prev ? prev.turnCount : 0) + 1,
@@ -638,6 +642,9 @@
     // Keep refs current so the auto-listen loop never uses a stale mic handle.
     startMicRef.current = startMic;
     micSupportedRef.current = micSupported;
+    // Voice is usable only on desktop with a supporting browser. On mobile → text-first.
+    const voiceOn = micSupported && !IS_MOBILE;
+    voiceOnRef.current = voiceOn;
 
     const startSession = () => {
       const topic = selectedTopic;
@@ -657,7 +664,7 @@
       setTimeout(() => {
         setAgentTyping(false);
         pushMessage("agent", opener);
-        speak(opener, listenSoon); // auto-open the mic after the opener
+        if (voiceOnRef.current) speak(opener, listenSoon); // desktop: speak + auto-mic; mobile: text only
       }, 500);
     };
 
@@ -694,7 +701,7 @@
             React.createElement("div", null,
               React.createElement("h2", { style: { margin: 0 } }, "AI Speaking Agent"),
               React.createElement("p", { style: { margin: 0, color: "#6b7280", fontSize: "0.9rem" } },
-                `${(exam && exam.name) || "IELTS"} speaking practice — two‑way voice conversation`
+                `${(exam && exam.name) || "IELTS"} speaking practice — ${voiceOn ? "two‑way voice conversation" : "chat-based practice with model answers"}`
               )
             )
           ),
@@ -720,10 +727,14 @@
             React.createElement("div", { className: "setup-tips" },
               React.createElement("h4", null, "How it works"),
               React.createElement("ul", null,
-                React.createElement("li", null, "Click ", React.createElement("strong", null, "Start Session"), " — the agent asks the opening question aloud, then listens automatically."),
-                React.createElement("li", null, "Just ", React.createElement("strong", null, "speak naturally"), " — when you pause, the agent replies and re-opens the mic. It's a hands-free two-way conversation. Tap the mic to pause, or type instead."),
-                React.createElement("li", null, "Say or type ", React.createElement("em", null, "\"give me feedback\""), " at any point, or click ", React.createElement("strong", null, "End & Get Feedback"), "."),
-                !micSupported && React.createElement("li", { style: { color: "#f59e0b" } }, "Microphone not available in this browser — use the text input instead.")
+                voiceOn
+                  ? React.createElement("li", null, "Click ", React.createElement("strong", null, "Start Session"), " — the agent asks the opening question aloud, then listens automatically.")
+                  : React.createElement("li", null, "Click ", React.createElement("strong", null, "Start Session"), " — the agent asks a question; ", React.createElement("strong", null, "type your answer"), " and it replies instantly."),
+                voiceOn
+                  ? React.createElement("li", null, "Just ", React.createElement("strong", null, "speak naturally"), " — when you pause, the agent replies and re-opens the mic. It's a hands-free two-way conversation. Tap the mic to pause, or type instead.")
+                  : React.createElement("li", null, "You'll get the same ", React.createElement("strong", null, "examiner-style questions, replies and feedback"), " — just typed instead of spoken."),
+                React.createElement("li", null, "Type ", React.createElement("em", null, "\"give me feedback\""), " at any point, or click ", React.createElement("strong", null, "End & Get Feedback"), "."),
+                !voiceOn && React.createElement("li", { style: { color: "#6b7280" } }, "📱 On phones we use text chat — live voice recognition isn't supported by mobile browsers. For two-way voice, open this on a desktop browser.")
               )
             ),
 
@@ -758,7 +769,8 @@
           React.createElement("div", { style: { flex: 1 } },
             React.createElement("h2", { style: { margin: 0 } }, "Speaking Practice"),
             React.createElement("p", { style: { margin: 0, color: "#6b7280", fontSize: "0.85rem" } },
-              speaking ? "🔊 Agent speaking…" : listening ? "🎙 Listening — just speak…" : autoMic ? "Your turn — speak when ready" : "Microphone paused"
+              !voiceOn ? "💬 Type your answer below — I'll reply instantly"
+                : speaking ? "🔊 Agent speaking…" : listening ? "🎙 Listening — just speak…" : autoMic ? "Your turn — speak when ready" : "Microphone paused"
             )
           ),
           React.createElement("button", {
@@ -779,7 +791,7 @@
 
         // Input bar
         React.createElement("div", { className: "input-bar" },
-          micSupported && React.createElement("button", {
+          voiceOn && React.createElement("button", {
             className: `mic-btn ${listening ? "recording" : ""}`,
             style: listening ? { background: "#ef4444" } : { background: autoMic ? examColor : "#9ca3af" },
             // Tap to pause/resume hands-free listening (no need to hold).
@@ -796,7 +808,7 @@
           React.createElement("input", {
             className: "chat-input",
             type: "text",
-            placeholder: "Or type your response and press Enter…",
+            placeholder: voiceOn ? "Or type your response and press Enter…" : "Type your answer and press Enter…",
             value: inputText,
             // Typing pauses hands-free listening so the two don't collide.
             onFocus: () => { if (listening) { stopMic(); setAutoMic(false); } },
