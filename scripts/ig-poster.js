@@ -1670,13 +1670,83 @@ async function renderCitiesCarousel({ baseUrl, key }) {
   }
   return { imageUrls: urls, caption: car.caption, slides: car.slides.length };
 }
-// pick this week's country for the Top-Cities carousel (rotates one country/week)
-function citiesWeekKey(now) { const keys = Object.keys(STUDY_CITIES); return keys[Math.floor(dayNumber(now) / 7) % keys.length]; }
-async function generateCitiesCarousel({ baseUrl, now }) { const key = citiesWeekKey(now); const g = await renderCitiesCarousel({ baseUrl, key }); return Object.assign({ country: key }, g); }
+// ── generic TOPIC carousels (cover + paragraph slides over cached photos) ──
+const TOPIC_CAROUSELS = {
+  "cheapest-countries": {
+    cover: "study", title: "Cheapest countries to study abroad", sub: "World-class education that won't break the bank.",
+    caption: `💸 The cheapest countries to study abroad in ${YEAR} 👇\n\nSwipe ➡️ for the tuition, the catch, and why students pick each one.\n\n📌 SAVE this for your shortlist. 📲 SHARE with someone budgeting.\n💬 Which would you pick? Comment 👇\n\n👉 Compare costs free → landingprep.com\nFollow ${HANDLE} for daily study-abroad money tips 💰`,
+    slides: [
+      { title: "Germany", sub: "Public unis ≈ €0 tuition", text: "Most public universities charge no tuition — even for international students; you only pay a small semester fee. Budget about €11,000/year for living, and many Master's are taught fully in English.", photo: "country-germany" },
+      { title: "France", sub: "≈ €170–€600/yr public tuition", text: "Public-university tuition is heavily subsidised — often only a few hundred euros a year. Living is moderate outside Paris, and scholarships like Eiffel support international students.", photo: "country-france" },
+      { title: "Italy", sub: "≈ €900–€4,000/yr tuition", text: "Public universities are affordable, with income-based fee waivers and regional DSU scholarships that can cover tuition, meals and housing. Living costs are low in smaller cities.", photo: "country-italy" },
+      { title: "Poland", sub: "≈ €2,000–€4,000/yr tuition", text: "Low tuition and one of the lowest costs of living in the EU, with a growing number of English-taught programs and a Schengen location for easy travel.", photo: "country-poland" },
+      { title: "Norway", sub: "Free at public universities", text: "Public universities are tuition-free for everyone, including non-EU students (just a small semester fee). Living costs are high, but no tuition makes it strong value if you can budget.", photo: "country-norway" },
+    ],
+  },
+  "visa-mistakes": {
+    cover: "news", title: "Student visa mistakes to avoid", sub: "These cause most rejections.",
+    caption: `🚫 Student-visa mistakes that get people rejected 👇\n\nSwipe ➡️ for the 5 to avoid.\n\n⚠️ Always confirm the latest rules on the official embassy/government website.\n📌 SAVE this. 📲 SHARE with someone applying.\n\n👉 Free study-abroad guides → landingprep.com\nFollow ${HANDLE} for daily visa tips 🌍`,
+    slides: [
+      { title: "Weak finances", sub: "The #1 rejection reason", text: "Incomplete or inconsistent bank statements get applications refused. Show clear, sufficient, properly-sourced funds for tuition + living, and keep the money in the account long enough to look genuine.", photo: "cost" },
+      { title: "Vague study plan", sub: "", text: "A weak statement of purpose that doesn't explain why this course, this university and this country raises doubts about your real intent. Be specific and tie it to your career goals.", photo: "study" },
+      { title: "Unexplained gaps", sub: "", text: "Gaps in study or work with no explanation worry visa officers. Address them honestly with evidence — work, internships, or a valid documented reason.", photo: "study" },
+      { title: "Applying too late", sub: "", text: "Booking your appointment close to your intake risks missing it entirely and losing your seat. Apply as early as your offer and documents allow.", photo: "news" },
+      { title: "Ignoring the rules", sub: "", text: "Every country has specific requirements — English test, financial thresholds, medicals. Read the official checklist and follow it exactly; don't rely on hearsay.", photo: "news" },
+    ],
+  },
+};
+function topicCoverSvg(title, sub, total) {
+  const a = "#1657E0", Y = "#FFC83A";
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="tc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070d" stop-opacity="0.3"/><stop offset="0.45" stop-color="#05070d" stop-opacity="0.55"/><stop offset="1" stop-color="#05070d" stop-opacity="0.96"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#tc)"/>`;
+  s += _csPill(72, 74, "STUDY ABROAD", a);
+  const lines = wrapPlain(stripEmoji(title).toUpperCase(), 14).slice(0, 4); let y = 600 - (lines.length - 1) * 96;
+  lines.forEach((ln, i) => { s += `<text x="72" y="${y + i * 96}" font-family="${HEAD}" font-size="90" fill="#fff" letter-spacing="0.5">${esc(ln)}</text>`; });
+  s += `<text x="74" y="${y + lines.length * 96 + 6}" font-family="${BODY}" font-weight="600" font-size="34" fill="#e7eeff">${esc(clip(sub, 54))}</text>`;
+  s += `<rect x="0" y="912" width="1080" height="104" fill="${Y}"/><text x="540" y="978" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="40" fill="#0a0a0a" letter-spacing="0.5">SWIPE TO SEE ALL ${total - 1}  &#8594;</text>`;
+  s += `<text x="540" y="1060" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+function topicSlideSvg(slide, idx, total) {
+  const a = "#3B82F6", Y = "#FFD400";
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><defs><linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070d" stop-opacity="0.22"/><stop offset="0.4" stop-color="#05070d" stop-opacity="0.55"/><stop offset="1" stop-color="#05070d" stop-opacity="0.97"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#ts)"/>`;
+  s += _csPill(72, 74, "STUDY ABROAD", a);
+  s += `<text x="1008" y="112" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="30" fill="rgba(255,255,255,0.85)">${idx} / ${total}</text>`;
+  const titleUp = stripEmoji(slide.title).toUpperCase(), tsize = titleUp.length > 12 ? 78 : 110;
+  s += `<text x="72" y="430" font-family="${HEAD}" font-size="${tsize}" fill="#fff" letter-spacing="0.5">${esc(titleUp)}</text>`;
+  let py = 500;
+  if (slide.sub) { s += `<text x="74" y="486" font-family="${BODY}" font-weight="700" font-size="30" fill="${lighten(a, 0.45)}">${esc(clip(slide.sub, 44))}</text>`; py = 558; }
+  wrapPlain(stripEmoji(slide.text), 40).slice(0, 7).forEach((ln, i) => { s += `<text x="72" y="${py + i * 48}" font-family="${BODY}" font-weight="500" font-size="34" fill="#eef2ff">${esc(ln)}</text>`; });
+  if (idx < total) s += `<text x="1008" y="980" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="30" fill="${Y}">SWIPE  &#8594;</text>`;
+  s += `<text x="72" y="980" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+function _carouselPhoto(k) { for (const e of [".jpg", ".png", ".webp"]) { const p = path.join(AIBG_DIR, k + e); if (fs.existsSync(p)) return p; } const f = path.join(AIBG_DIR, "study.jpg"); return fs.existsSync(f) ? f : null; }
+async function renderTopicCarousel({ baseUrl, key }) {
+  const spec = TOPIC_CAROUSELS[key]; if (!spec) return null;
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+  const total = spec.slides.length + 1, urls = [], stamp = Date.now();
+  const items = [{ cover: true, photo: spec.cover }].concat(spec.slides.map((sl) => ({ slide: sl, photo: sl.photo })));
+  for (let i = 0; i < items.length; i++) {
+    const it = items[i], svg = it.cover ? topicCoverSvg(spec.title, spec.sub, total) : topicSlideSvg(it.slide, i + 1, total);
+    const overlay = resvgPng(svg, 1080), pp = _carouselPhoto(it.photo);
+    const png = (pp && sharp) ? await sharp(fs.readFileSync(pp)).resize(1080, 1080, { fit: "cover", kernel: "lanczos3" }).composite([{ input: overlay }]).png({ quality: 100 }).toBuffer() : Buffer.from(overlay);
+    const name = `topic-${stamp}-${i}.png`; fs.writeFileSync(path.join(OUT_DIR, name), png);
+    urls.push(`${(baseUrl || "").replace(/\/$/, "")}/ig-out/${name}`);
+  }
+  return { imageUrls: urls, caption: spec.caption, slides: items.length };
+}
+// weekly carousel rotates: 5 cities countries + topic carousels (one per week)
+const WEEKLY_CAROUSELS = Object.keys(STUDY_CITIES).concat(Object.keys(TOPIC_CAROUSELS));
+function citiesWeekKey(now) { return WEEKLY_CAROUSELS[Math.floor(dayNumber(now) / 7) % WEEKLY_CAROUSELS.length]; }
+async function generateCitiesCarousel({ baseUrl, now }) {
+  const key = citiesWeekKey(now);
+  const g = STUDY_CITIES[key] ? await renderCitiesCarousel({ baseUrl, key }) : await renderTopicCarousel({ baseUrl, key });
+  return Object.assign({ country: key }, g);
+}
 async function runCitiesCarousel({ baseUrl, igUserId, token, now }) {
   if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
   const gen = await generateCitiesCarousel({ baseUrl, now });
   const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
-  return { ok: true, type: "cities-carousel", country: gen.country, slides: res.slides, mediaId: res.mediaId };
+  return { ok: true, type: "carousel", topic: gen.country, slides: res.slides, mediaId: res.mediaId };
 }
 module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, generateCitiesCarousel, runCitiesCarousel, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };

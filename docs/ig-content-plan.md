@@ -12,7 +12,7 @@ Goal: never repeat a topic within ~45 days. Seed uses `dayNumber*7` (coprime) so
 | 2 | 16:00 | Vocabulary | 4 IELTS/GRE words of the day |
 | 3 | 19:30 | Scholarship | scholarship spotlight · **deadline/urgency card** |
 | 4 | 21:30 | Cost / extra | cost compare · exam fees · exam guide · **country comparison** · **mistakes** · **checklist** |
-| weekly | Sun 11:30 | Carousel | "Top cities to study in <country>" (rotates USA→UK→Canada→Australia→Germany) |
+| weekly | Sun 11:30 | Carousel | rotates 7 topics: Top-Cities (USA/UK/Canada/Australia/Germany) + Cheapest-Countries + Visa-Mistakes |
 
 ## Rules (enforced in the engine)
 - **Never invent** current visa rules / fees / deadlines. News = real RSS headline + facts pulled from our **own vetted country data** + a "confirm on official sources" line.
