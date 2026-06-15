@@ -603,10 +603,10 @@ function pickChecklist(seed) {
     caption: `✅ ${c.t} 👇\n\n${c.items.map((x) => "☑️ " + x).join("\n")}\n\n📌 SAVE this checklist. 📲 SHARE with someone who needs it.\n💬 Anything you'd add? Comment 👇\n\n👉 Free study-abroad guides → landingprep.com\nFollow ${HANDLE} for daily study-abroad help 🌍`,
     tags: buildTags("studyabroad", "studyabroadchecklist", "studentvisa", "studyabroadtips", "internationalstudents", "landingprep") };
 }
-// slot 4 now rotates 6 ways for daily variety: cost · exam fees · exam guide · comparison · mistakes · checklist
+// slot 4 now rotates 7 ways: cost · exam fees · exam guide · comparison · mistakes · checklist · practice question
 function pickRotatingExtra(seed) {
-  const r = seed % 6, s = _mix(seed);
-  const f = r === 0 ? pickCostCompared(s) : r === 1 ? pickExamFees(s) : r === 2 ? pickExamSpotlight(s) : r === 3 ? pickComparison(s) : r === 4 ? pickMistakes(s) : pickChecklist(s);
+  const r = seed % 7, s = _mix(seed);
+  const f = r === 0 ? pickCostCompared(s) : r === 1 ? pickExamFees(s) : r === 2 ? pickExamSpotlight(s) : r === 3 ? pickComparison(s) : r === 4 ? pickMistakes(s) : r === 5 ? pickChecklist(s) : pickPracticeQuestion(s);
   return f || pickExamFees(s) || pickCostCompared(s) || pickScholarship(s);
 }
 // 5 strong posts/day — all deep pools + a rotating 5th (cost / exam-fees / exam-guide cycle).
@@ -662,10 +662,82 @@ function pickWritingTemplate(seed) { const w = WRITING_TEMPLATES[seed % WRITING_
   return { type: "exam", accent: "#0EA5E9", category: "WRITING TEMPLATE", headline: w.t, sub: w.sub, points: w.items,
     caption: `✍️ ${w.t} 👇\n\n${w.items.map((x) => "• " + x).join("\n")}\n\n📌 SAVE this template. 💬 Want a Speaking framework next? Comment 👇\n\n👉 Free practice + model answers → landingprep.com\nFollow ${HANDLE} for daily exam prep 📚`,
     tags: buildTags("ielts", "ieltswriting", "ieltspreparation", "examprep", "studyabroad", "landingprep") }; }
-// slot 2 now rotates 6 ways: vocab · exam tips · exam comparison · quiz · band targets · writing template
+// ── STAGE 2: real exam practice questions (image = the question, caption = full model
+// answer / worked solution — the IRCC principle applied to exams). All questions authored
+// by us (accurate, self-contained, no copyrighted exam material). ────────────────────────
+const QUANT_MCQS = [
+  { exam: "GRE", topic: "Algebra", q: "If 3x + 7 = 22, what is the value of x?", opts: ["3", "5", "7", "15"], ans: 1, sol: "Subtract 7 from both sides: 3x = 15. Divide by 3: x = 5." },
+  { exam: "GMAT", topic: "Percentages", q: "A shirt is discounted 20% to $48. What was the original price?", opts: ["$56", "$60", "$68", "$72"], ans: 1, sol: "$48 is 80% of the original. Original = 48 ÷ 0.8 = $60." },
+  { exam: "GRE", topic: "Averages", q: "The average of 5 numbers is 18. What is their sum?", opts: ["72", "80", "90", "100"], ans: 2, sol: "Sum = average × count = 18 × 5 = 90." },
+  { exam: "GMAT", topic: "Rates", q: "A train travels 360 km in 4 hours. What is its average speed?", opts: ["80 km/h", "90 km/h", "100 km/h", "120 km/h"], ans: 1, sol: "Speed = distance ÷ time = 360 ÷ 4 = 90 km/h." },
+  { exam: "GRE", topic: "Exponents", q: "If x² = 49 and x < 0, what is x?", opts: ["7", "−7", "±7", "0"], ans: 1, sol: "x² = 49 gives x = 7 or −7. Since x < 0, x = −7." },
+  { exam: "GMAT", topic: "Ratios", q: "If the ratio of boys to girls is 3:2 and there are 30 students, how many are girls?", opts: ["10", "12", "15", "18"], ans: 1, sol: "Total parts = 3 + 2 = 5. Girls = (2/5) × 30 = 12." },
+  { exam: "GRE", topic: "Fractions", q: "What is 15% of 240?", opts: ["24", "30", "36", "40"], ans: 2, sol: "15% = 0.15. 0.15 × 240 = 36." },
+];
+const VERBAL_MCQS = [
+  { exam: "GRE", topic: "Vocabulary", q: "Choose the word closest in meaning to UBIQUITOUS:", opts: ["Rare", "Omnipresent", "Hidden", "Ancient"], ans: 1, sol: "Ubiquitous means existing everywhere at once — its synonym is omnipresent." },
+  { exam: "GRE", topic: "Vocabulary", q: "EPHEMERAL most nearly means:", opts: ["Lasting forever", "Short-lived", "Colourful", "Heavy"], ans: 1, sol: "Ephemeral describes something that lasts a very short time — short-lived." },
+  { exam: "GRE", topic: "Vocabulary", q: "Select the synonym for GREGARIOUS:", opts: ["Sociable", "Shy", "Dishonest", "Tired"], ans: 0, sol: "Gregarious means fond of company / sociable." },
+  { exam: "GMAT", topic: "Sentence correction", q: "Pick the correct option: 'Neither the students nor the teacher ___ ready.'", opts: ["are", "is", "were", "be"], ans: 1, sol: "With 'neither…nor', the verb agrees with the nearer subject ('teacher', singular) → 'is'." },
+];
+const SPEAKING_QS = [
+  { exam: "IELTS", part: "Speaking Part 2", q: "Describe a skill you would like to learn. You should say: what it is, why you want to learn it, how you would learn it, and how it would help you.", model: "I'd love to learn how to code, specifically Python. I'm drawn to it because so much of the modern world runs on software, and I feel I'm missing out by not understanding how it works. I'd learn it through free online platforms and by building small projects, like a budgeting app, because I learn best by doing rather than just watching tutorials. Ultimately it would help me automate boring tasks at work and open up better career opportunities in tech.", tip: "Cover all four bullet points, speak for the full 2 minutes, and add a personal reason ('because…') and a feeling to sound natural." },
+  { exam: "IELTS", part: "Speaking Part 1", q: "Do you prefer studying in the morning or at night? Why?", model: "I definitely prefer studying in the morning. My mind is fresh and the house is quiet, so I can concentrate far better and remember more. At night I tend to feel tired and distracted, so I usually save easier tasks like revision for the evening.", tip: "Give a clear preference, then a reason and a small contrast. Don't answer in one word — extend with 'because' and an example." },
+  { exam: "TOEFL", part: "Speaking (Independent)", q: "Some students prefer online classes; others prefer attending in person. Which do you prefer, and why?", model: "I prefer attending classes in person. First, I find it easier to stay focused when I'm physically in a classroom, away from the distractions at home. Second, in-person classes make it simple to ask questions and discuss ideas with classmates straight away, which deepens my understanding. While online classes are convenient, the interaction I get in person is more valuable to me.", tip: "Use a clear template: state your choice, give two reasons each with a detail, then a short concession + restate. Aim for 45 seconds." },
+  { exam: "PTE", part: "Speaking (Personal intro / opinion)", q: "Do you think students should take a gap year before university? Give your opinion.", model: "Yes, I believe a gap year can be very valuable if it's used well. Taking a year to work, volunteer or travel helps students mature, clarify what they actually want to study, and build real-world skills. The key is having a plan — an unstructured gap year can waste time, but a purposeful one often makes students more focused and motivated when they start university.", tip: "Speak clearly and at a steady pace — PTE scores fluency and pronunciation by computer, so avoid long pauses and 'um'." },
+];
+const WRITING_QS = [
+  { exam: "IELTS", task: "Writing Task 2", q: "Some people think university education should be free for everyone. To what extent do you agree or disagree?", model: "Intro — Paraphrase + position: 'It is argued that higher education should be provided at no cost to all students. I largely agree, because the benefits to society outweigh the costs.'\n\nBody 1 — Reason for agreeing: free education widens access for talented students from poorer backgrounds, building a more skilled, equal workforce (e.g. Germany's tuition-free model attracts top talent).\n\nBody 2 — Address the other side: it is expensive for governments, so a balanced solution is means-tested support or income-contingent loans rather than fully free for everyone.\n\nConclusion — Restate: 'On balance, the social gains justify heavy subsidies, even if completely free education must be carefully funded.'\n\n(≈ 260–290 words, 4 paragraphs.)", tip: "State your position in the intro and keep it consistent. Develop each idea with a reason AND an example. Aim for 260–290 words." },
+  { exam: "TOEFL", task: "Writing (Independent)", q: "Do you agree or disagree: Technology has made students lazier than in the past?", model: "Thesis: I disagree — technology has made students more efficient, not lazier.\n\nReason 1: Tools like search engines and apps remove busywork, freeing time for deeper thinking and creativity, with a specific example from your own study.\n\nReason 2: Online courses and tutorials let motivated students learn far beyond the classroom, which is the opposite of laziness.\n\nConcession + rebuttal: Yes, some misuse technology to cut corners, but that reflects the individual, not the tool.\n\nConclusion: Restate that technology is a powerful aid for students who choose to use it well. (≈ 300+ words, 5 paragraphs.)", tip: "Pick ONE clear side. Use 4–5 paragraphs with specific examples. Transitions (first, moreover, however) lift your score." },
+];
+function _mcqContent(m, seed) {
+  const L = ["A", "B", "C", "D"];
+  const opts = m.opts.map((t, i) => L[i] + ") " + t);
+  const ansL = L[m.ans];
+  return {
+    type: "exam", noIntro: true, accent: m.exam === "GMAT" ? "#7C3AED" : "#0E9F6E", category: m.exam + " " + m.topic.toUpperCase() + " · PRACTICE",
+    headline: "Can you solve it?", sub: m.exam + " practice question", points: [m.q].concat(opts),
+    cta: "Free " + m.exam + " practice → landingprep.com",
+    caption: `🧠 ${m.exam} ${m.topic} — can you solve it?\n\n❓ ${m.q}\n${opts.join("\n")}\n\n✅ Answer: ${ansL}) ${m.opts[m.ans]}\n🧩 Solution: ${m.sol}\n\n💡 Practising real questions like this — timed — is the fastest way to lift your ${m.exam} score. Try a few every day.\n\n💬 Did you get it right? Comment your answer 👇\n📌 SAVE to revise later. 📲 TAG someone taking the ${m.exam}.\n\n👉 Free full-length ${m.exam} practice → landingprep.com\nFollow ${HANDLE} for a daily ${m.exam} question 🎯`,
+    tags: buildTags(m.exam.toLowerCase(), m.exam.toLowerCase() + "preparation", m.exam.toLowerCase() + "practice", m.exam.toLowerCase() + "questions", "examprep", "studyabroad", "landingprep"),
+  };
+}
+function pickMcqQuestion(seed) {
+  const bank = QUANT_MCQS.concat(VERBAL_MCQS); if (!bank.length) return null;
+  return _mcqContent(bank[((seed % bank.length) + bank.length) % bank.length], seed);
+}
+function pickSpeakingQuestion(seed) {
+  if (!SPEAKING_QS.length) return null;
+  const s = SPEAKING_QS[((seed % SPEAKING_QS.length) + SPEAKING_QS.length) % SPEAKING_QS.length];
+  return {
+    type: "exam", noIntro: true, accent: "#E11D48", category: s.exam + " · " + s.part.toUpperCase(),
+    headline: s.exam + " Speaking", sub: s.part, points: [s.q],
+    cta: "Free " + s.exam + " speaking practice → landingprep.com",
+    caption: `🎤 ${s.exam} ${s.part} — practice question\n\n❓ ${s.q}\n\n🗣 Model answer (Band 8 / high score):\n"${s.model}"\n\n💡 Examiner tip: ${s.tip}\n\n📲 SAVE this and practise it OUT LOUD. 💬 Record your answer in the comments 👇\n📌 The more you rehearse real prompts, the more fluent you sound on test day.\n\n👉 Free ${s.exam} speaking practice + model answers → landingprep.com\nFollow ${HANDLE} for daily speaking prompts 🎯`,
+    tags: buildTags(s.exam.toLowerCase(), s.exam.toLowerCase() + "speaking", s.exam.toLowerCase() + "preparation", "speakingpractice", "examprep", "studyabroad", "landingprep"),
+  };
+}
+function pickWritingQuestion(seed) {
+  if (!WRITING_QS.length) return null;
+  const w = WRITING_QS[((seed % WRITING_QS.length) + WRITING_QS.length) % WRITING_QS.length];
+  return {
+    type: "exam", noIntro: true, accent: "#0EA5E9", category: w.exam + " · " + w.task.toUpperCase(),
+    headline: w.exam + " " + w.task.replace(/Writing\s*/i, "Writing "), sub: "Practice prompt + model answer", points: [w.q],
+    cta: "Free " + w.exam + " writing practice → landingprep.com",
+    caption: `✍️ ${w.exam} ${w.task} — practice prompt\n\n❓ ${w.q}\n\n📝 Model answer plan (high-band):\n${w.model}\n\n💡 Examiner tip: ${w.tip}\n\n📲 SAVE this and write your own version. 💬 Want it marked? Drop it below 👇\n📌 Writing to a clear structure is what separates Band 6 from Band 7+.\n\n👉 Free ${w.exam} writing practice + model answers → landingprep.com\nFollow ${HANDLE} for daily writing prompts ✍️`,
+    tags: buildTags(w.exam.toLowerCase(), w.exam.toLowerCase() + "writing", w.exam.toLowerCase() + "preparation", "writingpractice", "examprep", "studyabroad", "landingprep"),
+  };
+}
+// rotates the 3 question formats (MCQ / speaking / writing) for variety
+function pickPracticeQuestion(seed) {
+  const r = seed % 3, s = _mix(seed + 17);
+  const f = r === 0 ? pickMcqQuestion(s) : r === 1 ? pickSpeakingQuestion(s) : pickWritingQuestion(s);
+  return f || pickMcqQuestion(s) || pickSpeakingQuestion(s);
+}
+// slot 2 now rotates 8 ways: vocab · exam tips · exam comparison · quiz · band targets · writing template · practice question · MCQ
 function pickExamPrep(seed) {
-  const r = seed % 6, s = _mix(seed);
-  const f = r === 0 ? pickWordOfDay(s) : r === 1 ? pickExamTip(s) : r === 2 ? pickExamComparison(s) : r === 3 ? pickQuiz(s) : r === 4 ? pickBandTargets(s) : pickWritingTemplate(s);
+  const r = seed % 8, s = _mix(seed);
+  const f = r === 0 ? pickWordOfDay(s) : r === 1 ? pickExamTip(s) : r === 2 ? pickExamComparison(s) : r === 3 ? pickQuiz(s) : r === 4 ? pickBandTargets(s) : r === 5 ? pickWritingTemplate(s) : r === 6 ? pickPracticeQuestion(s) : pickMcqQuestion(s);
   return f || pickWordOfDay(s) || pickExamSpotlight(s);
 }
 const SLOT_PICKERS = [pickNewsRotating, pickCountryOrCollege, pickExamPrep, pickScholarship, pickRotatingExtra];
