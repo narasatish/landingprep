@@ -220,6 +220,33 @@ const IG_POST_SECRET   = process.env.IG_POST_SECRET || "";
 const IG_USER_ID       = process.env.IG_USER_ID || "";
 const IG_ACCESS_TOKEN  = process.env.IG_ACCESS_TOKEN || "";
 const IG_PUBLIC_BASE   = process.env.PUBLIC_BASE_URL || "https://landingprep.com";
+// ── self-healing daily poster: post any of TODAY's slots that aren't posted yet ──
+// A Firestore log (per UTC date) records what's already gone out, so repeated catch-up
+// runs NEVER double-post — and a missed slot (skipped/failed cron) is caught up on the
+// next run. This is what makes posting effectively mandatory even if GitHub cron flakes.
+const IG_SLOT_DUE_UTC = [2.5, 7, 10.5, 14, 16];   // when each daily slot becomes due (UTC hours)
+async function igCatchUp(ig) {
+  if (!IG_USER_ID || !IG_ACCESS_TOKEN) return { ok: false, error: "Missing IG_USER_ID / IG_ACCESS_TOKEN" };
+  const now = new Date(), date = now.toISOString().slice(0, 10);
+  const nowH = now.getUTCHours() + now.getUTCMinutes() / 60, dow = now.getUTCDay();
+  const postedNow = {}, errors = []; let log = {};
+  const docRef = FS_DB ? FS_DB.collection("ig_daily_log").doc(date) : null;
+  if (docRef) { try { const d = await docRef.get(); if (d.exists) log = d.data() || {}; } catch (e) { errors.push("log-read: " + e.message); } }
+  const args = { baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN };
+  // weekly carousel — Sundays, due 06:00 UTC
+  if (dow === 0 && nowH >= 6 && !log.carousel) {
+    try { const r = await ig.runCitiesCarousel(args); log.carousel = { mediaId: r.mediaId, ts: Date.now() }; postedNow.carousel = r.mediaId; if (docRef) await docRef.set(log, { merge: true }); }
+    catch (e) { errors.push("carousel: " + String(e.message || e).slice(0, 160)); }
+  }
+  for (let slot = 0; slot < IG_SLOT_DUE_UTC.length; slot++) {
+    if (nowH < IG_SLOT_DUE_UTC[slot] || log[slot]) continue;            // not due yet, or already posted
+    if (!docRef) { errors.push("slot" + slot + ": no Firestore log — refusing (would risk duplicates)"); continue; }
+    try { const r = await ig.runDailyPost(Object.assign({ slot }, args)); log[slot] = { mediaId: r.mediaId, ts: Date.now() }; postedNow[slot] = r.mediaId; await docRef.set(log, { merge: true }); }
+    catch (e) { errors.push("slot" + slot + ": " + String(e.message || e).slice(0, 160)); }
+    await new Promise((r) => setTimeout(r, 4000));                       // small gap between posts
+  }
+  return { ok: errors.length === 0, date, postedNow: Object.keys(postedNow), alreadyDone: Object.keys(log).filter((k) => k !== "carousel" || log.carousel), errors };
+}
 app.all("/api/ig/post-daily", async (req, res) => {
   const key = req.query.key || req.headers["x-ig-secret"] || "";
   if (!IG_POST_SECRET || key !== IG_POST_SECRET) return res.status(403).json({ ok: false, error: "forbidden" });
@@ -231,6 +258,9 @@ app.all("/api/ig/post-daily", async (req, res) => {
       const info = await ig.whoami({ token: IG_ACCESS_TOKEN });
       return res.json({ ok: !info.error, ...info });
     }
+    // ?catchup=1 → self-healing daily poster (used by the cron): posts any of today's
+    // still-unposted slots, idempotent via the Firestore log. This is the reliable path.
+    if (String(req.query.catchup || "") === "1") { const out = await igCatchUp(ig); return res.status(out.ok ? 200 : 207).json(out); }
     // ── batch/pool mode (pre-made Canva posts in /ig-pool/) ───────────────────
     // ?pool=preview → list pool items (no posting)
     // ?pool=next    → post today's pool item (rotates by date)
