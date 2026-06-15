@@ -258,6 +258,25 @@ app.all("/api/ig/post-daily", async (req, res) => {
       const info = await ig.whoami({ token: IG_ACCESS_TOKEN });
       return res.json({ ok: !info.error, ...info });
     }
+    // ?status=1 → READ-ONLY: today's posting log (which slots are posted / due / pending). No posting.
+    if (String(req.query.status || "") === "1") {
+      const now = new Date(), date = now.toISOString().slice(0, 10);
+      const nowH = now.getUTCHours() + now.getUTCMinutes() / 60, dow = now.getUTCDay();
+      let log = {};
+      if (FS_DB) { try { const d = await FS_DB.collection("ig_daily_log").doc(date).get(); if (d.exists) log = d.data() || {}; } catch (e) { /* ignore */ } }
+      const hhmm = (h) => String(Math.floor(h)).padStart(2, "0") + ":" + String(Math.round((h % 1) * 60)).padStart(2, "0");
+      const slots = IG_SLOT_DUE_UTC.map((due, i) => ({
+        slot: i, dueUTC: hhmm(due),
+        state: log[i] ? "posted" : (nowH >= due ? "PENDING (will post next catch-up window)" : "not due yet"),
+        mediaId: log[i] ? log[i].mediaId : null,
+      }));
+      const pending = slots.filter((s) => s.state.startsWith("PENDING")).map((s) => s.slot);
+      return res.json({ ok: true, date, nowUTC: now.toISOString(), firestore: !!FS_DB,
+        carousel: dow === 0 ? (log.carousel ? "posted" : (nowH >= 6 ? "PENDING" : "not due")) : "not Sunday",
+        posted: slots.filter((s) => s.state === "posted").map((s) => s.slot),
+        pending, slots,
+        note: pending.length ? "Pending slots self-heal on the next cron window. To force now: run the GitHub Action (mode=catchup)." : "All due slots are posted." });
+    }
     // ?catchup=1 → self-healing daily poster (used by the cron): posts any of today's
     // still-unposted slots, idempotent via the Firestore log. This is the reliable path.
     if (String(req.query.catchup || "") === "1") { const out = await igCatchUp(ig); return res.status(out.ok ? 200 : 207).json(out); }

@@ -245,13 +245,36 @@ function countryCaptionFacts(name) {
     return L.length ? "\n\n" + L.slice(0, 4).join("\n") : "";
   } catch (e) { return ""; }
 }
+// The image promises "FULL STORY IN THE CAPTION", so a caption can NEVER be just the
+// headline. RSS gives only a title (and copying the article body would be copyright), so
+// we write our OWN explanatory body: what it means for Indian students + accurate evergreen
+// next-steps keyed to the topic, plus any vetted facts from our own country data.
+function newsExplainer(title, country, kind) {
+  const facts = countryCaptionFacts(country); // vetted, from our own data (may be "")
+  const t = String(title).toLowerCase();
+  let lead, steps;
+  if (/visa|permit|passport|immigration|residen|migrant|express entry|graduate route|pr\b|citizenship|sponsor|work right/.test(t)) {
+    lead = "What this means for you: visa and post-study-work rules are reviewed often, and your eligibility depends on the rules in force when you APPLY — not when you start your course.";
+    steps = ["Confirm the current rule on the official immigration/embassy site before paying any fee.", "Keep documents (funds, English score, offer letter) ready so a deadline never catches you out.", "Shortlist 2–3 countries as a backup so one policy change can't derail your plan."];
+  } else if (/scholarship|fund|grant|tuition|fee|cost|financial/.test(t)) {
+    lead = "What this means for you: funding for international students moves on fixed annual cycles, so timing is everything.";
+    steps = ["Apply 6–12 months before your intake — most scholarships close early.", "Apply for merit AND need-based aid separately wherever you're eligible.", "A strong SOP, LORs and test scores move the needle most on funding."];
+  } else if (/admission|universit|colleg|campus|intake|enrol|course|program|rank/.test(t)) {
+    lead = "What this means for you: admissions for many universities are rolling, so earlier applications get the best scholarship odds.";
+    steps = ["Meet the English-test minimum (IELTS/TOEFL/PTE/Duolingo) before deadlines.", "Balance your list: a few Safe, Target and Reach universities.", "Line up SOP + LORs early — they take longer than you expect."];
+  } else {
+    lead = "What this means for you: the study-abroad landscape keeps shifting, so a clear plan beats chasing every update.";
+    steps = ["Plan 12–18 months out: tests → shortlist → applications → visa.", "Budget for tuition + living + visa + insurance, and check scholarships early.", "Use free tools to compare countries, costs and colleges before you commit."];
+  }
+  return "\n\n" + lead + facts + "\n\n📋 Your next steps:\n" + steps.map((s) => "• " + s).join("\n");
+}
 function rssToContent(it, kind) {
   const T = kind === "immig" ? THEME.immig : THEME.edu;
   const title = cleanTitle(it.title); const country = detectCountry(title);
   const cat = kind === "immig" ? "IMMIGRATION NEWS" : "STUDY-ABROAD NEWS";   // no source name on the image anymore
   return { type: "bulletin", accent: T.accent, bg: T.bg, category: cat, headline: clip(title, 120), highlight: [],
     flagCountry: country, dateStr: fmtDate(it.date), photoQuery: pickPhotoQuery(title, kind), live: true, cta: "Full guide → landingprep.com",
-    caption: `🚨 ${kind === "immig" ? "IMMIGRATION" : "STUDY-ABROAD"} NEWS${it.date ? " · " + fmtDate(it.date) : ""}\n\n${title}${countryCaptionFacts(country)}\n\n⚠️ Rules change often — always confirm the latest on official government / university websites before you act.\n\n📲 SHARE this with someone who needs it.\n📌 SAVE for reference.\n💬 What's your take? Comment 👇\n\n👉 Free study-abroad guides & tools → landingprep.com\nFollow ${HANDLE} for daily updates 🌍`,
+    caption: `🚨 ${kind === "immig" ? "IMMIGRATION" : "STUDY-ABROAD"} NEWS${it.date ? " · " + fmtDate(it.date) : ""}\n\n${title}${newsExplainer(title, country, kind)}\n\n⚠️ Rules change often — always confirm the latest on official government / university websites before you act.\n\n📲 SHARE this with someone who needs it.\n📌 SAVE for reference.\n💬 What's your take? Comment 👇\n\n👉 Free study-abroad guides & tools → landingprep.com\nFollow ${HANDLE} for daily updates 🌍`,
     tags: buildTags(kind === "immig" ? "studentvisa" : "studyabroad", kind === "immig" ? "immigration" : "scholarships", "studyabroadnews", "internationalstudents", "landingprep") };
 }
 const RSS_Q = {
