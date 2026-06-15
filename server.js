@@ -663,6 +663,47 @@ function fsSaveUser(key) {
 // Write-through: persist to the local file (fast) AND mirror this user to Firestore (durable).
 function persistUser(key) { persist(); fsSaveUser(key); }
 
+// ── Durable mirror of the NON-account state ────────────────────────────────────
+// Newsletter subscribers, reviews, web-push subs and the community Q&A live only in
+// JSON files — Render wipes those on every restart. Mirror them to Firestore singleton
+// docs (collection "app_state") and reload on boot, exactly like accounts above.
+// SAFETY: never write before a successful hydrate, so a Firestore read-blip can't make
+// us overwrite good cloud data with the empty file-state we boot with.
+let fsStateReady = false;
+let fsStateTimer = null;
+const fsStatePending = new Set();
+async function fsHydrateState() {
+  if (!FS_DB) { fsStateReady = true; return; } // no cloud → file-only is fine, allow saves (no-op)
+  try {
+    const get = async (id) => { const d = await FS_DB.collection("app_state").doc(id).get(); return d.exists ? (d.data() || {}).data : undefined; };
+    const subs = await get("subscribers"); if (subs && typeof subs === "object") STORE.subscribers = subs;
+    const revs = await get("reviews"); if (Array.isArray(revs)) STORE.reviews = revs;
+    const push = await get("pushSubs"); if (push && typeof push === "object") STORE.pushSubs = push;
+    const comm = await get("community"); if (comm && Array.isArray(comm.questions)) COMM = comm;
+    fsStateReady = true;
+    console.log("[firestore] hydrated app state — subscribers:" + Object.keys(STORE.subscribers || {}).length +
+      " reviews:" + (STORE.reviews || []).length + " push:" + Object.keys(STORE.pushSubs || {}).length +
+      " community-Q:" + ((COMM && COMM.questions) || []).length);
+  } catch (e) { console.warn("[firestore] state hydrate failed (staying file-only to avoid data loss):", e.message); }
+}
+// Mirror one state "part" to Firestore (debounced + batched). Singleton docs are fine up to
+// ~1 MB each; at scale, migrate subscribers/reviews to per-doc collections.
+function fsSaveState(part) {
+  if (!FS_DB || !fsStateReady) return;
+  fsStatePending.add(part);
+  clearTimeout(fsStateTimer);
+  fsStateTimer = setTimeout(() => {
+    const map = { subscribers: STORE.subscribers, reviews: STORE.reviews, pushSubs: STORE.pushSubs, community: COMM };
+    for (const p of fsStatePending) {
+      const data = map[p];
+      if (data === undefined) continue;
+      FS_DB.collection("app_state").doc(p).set({ data, ts: Date.now() })
+        .catch((e) => console.warn("[firestore] state save failed (" + p + "):", e.message));
+    }
+    fsStatePending.clear();
+  }, 400);
+}
+
 function hashPw(password) {
   const salt = crypto.randomBytes(16).toString("hex");
   const hash = crypto.scryptSync(password, salt, 32).toString("hex");
@@ -727,13 +768,16 @@ async function sendMail(to, subject, html) {
 const ADMIN_SECRET = process.env.ADMIN_SECRET || "";
 function unsubToken(email) { return crypto.createHmac("sha256", AUTH_SECRET).update("unsub|" + String(email).toLowerCase()).digest("base64url"); }
 function unsubLink(email) { return "https://landingprep.com/api/newsletter/unsubscribe?email=" + encodeURIComponent(email) + "&token=" + unsubToken(email); }
+// Double opt-in: a separate signed token to confirm a newsletter sign-up.
+function confirmToken(email) { return crypto.createHmac("sha256", AUTH_SECRET).update("confirm|" + String(email).toLowerCase()).digest("base64url"); }
+function confirmLink(email) { return "https://landingprep.com/api/newsletter/confirm?email=" + encodeURIComponent(email) + "&token=" + confirmToken(email); }
 
 app.get("/api/newsletter/unsubscribe", (req, res) => {
   const email = String(req.query.email || "").toLowerCase();
   const token = String(req.query.token || "");
   if (!validEmail(email) || token !== unsubToken(email)) return res.status(400).send("Invalid or expired unsubscribe link.");
   if (STORE.users[email]) { STORE.users[email].noNewsletter = true; persistUser(email); }
-  if (STORE.subscribers && STORE.subscribers[email]) { delete STORE.subscribers[email]; persist(); }
+  if (STORE.subscribers && STORE.subscribers[email]) { delete STORE.subscribers[email]; persist(); fsSaveState("subscribers"); }
   res.set("Content-Type", "text/html").send(
     "<div style='font-family:system-ui;max-width:540px;margin:60px auto;text-align:center'>" +
     "<h2>You're unsubscribed ✅</h2><p style='color:#475569'>You won't receive LandingPrep newsletters anymore. " +
@@ -741,17 +785,40 @@ app.get("/api/newsletter/unsubscribe", (req, res) => {
 });
 
 // Public newsletter sign-up (no account needed) — grows the owned email list.
+// DOUBLE OPT-IN: a sign-up is stored as unconfirmed and only counts (and receives the
+// newsletter) after the user clicks the confirmation link we email them. This keeps the
+// list clean, cuts spam complaints, and protects sender reputation.
 app.post("/api/newsletter/subscribe", (req, res) => {
   const email = String((req.body && req.body.email) || "").trim().toLowerCase();
   const source = String((req.body && req.body.source) || "site").slice(0, 40);
   if (!validEmail(email)) return res.status(400).json({ error: "Enter a valid email address." });
-  if (!STORE.subscribers[email] && !STORE.users[email]) {
-    STORE.subscribers[email] = { email, source, ts: Date.now() };
-    persist();
-    // fire-and-forget welcome (only actually sends if SMTP is configured)
-    try { sendMail(email, "Welcome to LandingPrep 🎓", emailTemplate("welcome", { NAME: "there" })); } catch (e) {}
+  // Account holders and already-confirmed subscribers are done — don't re-spam them.
+  const existing = STORE.subscribers[email];
+  if (STORE.users[email] || (existing && existing.confirmed !== false)) {
+    return res.json({ ok: true, confirmed: true });
   }
-  res.json({ ok: true });
+  // New or still-unconfirmed: (re)store as pending and send the confirmation email.
+  STORE.subscribers[email] = { email, source, ts: (existing && existing.ts) || Date.now(), confirmed: false };
+  persist(); fsSaveState("subscribers");
+  try { sendMail(email, "Confirm your LandingPrep subscription 📬", emailTemplate("confirm", { CONFIRM_LINK: confirmLink(email) })); } catch (e) {}
+  res.json({ ok: true, pending: true });
+});
+
+// Double opt-in confirmation — clicked from the email. Marks the subscriber confirmed.
+app.get("/api/newsletter/confirm", (req, res) => {
+  const email = String(req.query.email || "").toLowerCase();
+  const token = String(req.query.token || "");
+  if (!validEmail(email) || token !== confirmToken(email)) return res.status(400).send("Invalid or expired confirmation link.");
+  const sub = STORE.subscribers[email];
+  const firstTime = !sub || sub.confirmed === false;
+  STORE.subscribers[email] = Object.assign({ email, source: "site", ts: Date.now() }, sub || {}, { confirmed: true, confirmedAt: Date.now() });
+  persist(); fsSaveState("subscribers");
+  // Now that they've opted in for real, send the welcome email (once).
+  if (firstTime) { try { sendMail(email, "Welcome to LandingPrep 🎓", emailTemplate("welcome", { NAME: "there" })); } catch (e) {} }
+  res.set("Content-Type", "text/html").send(
+    "<div style='font-family:system-ui;max-width:540px;margin:60px auto;text-align:center'>" +
+    "<h2>You're subscribed ✅</h2><p style='color:#475569'>Thanks for confirming — you'll get the free LandingPrep weekly newsletter with study-abroad tips, scholarships and mock tests. " +
+    "<a href='https://landingprep.com/'>Back to LandingPrep</a></p></div>");
 });
 
 // Real user reviews (replaced fabricated testimonials). Public submit + read.
@@ -770,7 +837,7 @@ app.post("/api/reviews", (req, res) => {
   };
   STORE.reviews.unshift(review);
   if (STORE.reviews.length > 500) STORE.reviews.length = 500;
-  persist();
+  persist(); fsSaveState("reviews");
   res.json({ ok: true, review });
 });
 app.get("/api/reviews", (_req, res) => {
@@ -799,12 +866,12 @@ app.post("/api/push/subscribe", (req, res) => {
   if (!sub || !sub.endpoint) return res.status(400).json({ error: "subscription required" });
   STORE.pushSubs[sub.endpoint] = { sub, ts: Date.now() };
   if (Object.keys(STORE.pushSubs).length > 50000) { const k = Object.keys(STORE.pushSubs)[0]; delete STORE.pushSubs[k]; }
-  persist();
+  persist(); fsSaveState("pushSubs");
   res.json({ ok: true });
 });
 app.post("/api/push/unsubscribe", (req, res) => {
   const ep = req.body && req.body.endpoint;
-  if (ep && STORE.pushSubs[ep]) { delete STORE.pushSubs[ep]; persist(); }
+  if (ep && STORE.pushSubs[ep]) { delete STORE.pushSubs[ep]; persist(); fsSaveState("pushSubs"); }
   res.json({ ok: true });
 });
 // Admin: fan out a push to all subscribers (use for the daily reminder).
@@ -820,7 +887,7 @@ app.post("/api/admin/send-push", async (req, res) => {
     catch (e) { if (e && (e.statusCode === 404 || e.statusCode === 410)) { delete STORE.pushSubs[ep]; removed++; } }
     await new Promise((r) => setTimeout(r, 20));
   }
-  if (removed) persist();
+  if (removed) { persist(); fsSaveState("pushSubs"); }
   res.json({ ok: true, subscribers: Object.keys(STORE.pushSubs).length, sent, removed });
 });
 
@@ -830,7 +897,8 @@ app.get("/api/admin/stats", (req, res) => {
   const reviews = STORE.reviews || [];
   res.json({
     users: Object.keys(STORE.users || {}).length,
-    subscribers: Object.keys(STORE.subscribers || {}).length,
+    subscribers: Object.values(STORE.subscribers || {}).filter((s) => s && s.confirmed !== false).length,
+    subscribersPending: Object.values(STORE.subscribers || {}).filter((s) => s && s.confirmed === false).length,
     reviews: reviews.length,
     avgRating: reviews.length ? +(reviews.reduce((s, r) => s + (r.stars || 0), 0) / reviews.length).toFixed(2) : null,
     recentReviews: reviews.slice(0, 6).map((r) => ({ stars: r.stars, text: String(r.text || "").slice(0, 90), name: r.name, exam: r.exam })),
@@ -854,7 +922,8 @@ app.post("/api/admin/send-newsletter", async (req, res) => {
   // Recipients = opted-in account holders + standalone newsletter subscribers (deduped by email).
   const byEmail = {};
   for (const u of Object.values(STORE.users)) if (u && validEmail(u.email) && !u.noNewsletter) byEmail[u.email.toLowerCase()] = { name: u.name, email: u.email };
-  for (const s of Object.values(STORE.subscribers || {})) if (s && validEmail(s.email)) byEmail[s.email.toLowerCase()] = byEmail[s.email.toLowerCase()] || { name: "", email: s.email };
+  // Only confirmed subscribers (double opt-in). Legacy rows without the field count as confirmed.
+  for (const s of Object.values(STORE.subscribers || {})) if (s && validEmail(s.email) && s.confirmed !== false) byEmail[s.email.toLowerCase()] = byEmail[s.email.toLowerCase()] || { name: "", email: s.email };
   const recipients = Object.values(byEmail);
   let sent = 0, failed = 0;
   for (const u of recipients) {
@@ -968,6 +1037,7 @@ function persistComm() {
     }
     catch (e) { console.warn("[community] persist failed:", e.message); }
   }, 200);
+  fsSaveState("community"); // mirror Q&A + leaderboard to Firestore (durable across Render restarts)
 }
 const clean = (s, max) => String(s == null ? "" : s).replace(/[\u0000-\u001F\u007F]/g, " ").trim().slice(0, max);
 const newId = () => { try { return crypto.randomUUID(); } catch (_) { return "id" + Date.now() + Math.floor(Math.random() * 1e6); } };
@@ -1262,6 +1332,7 @@ process.on("uncaughtException", (err) => {
 const server = app.listen(PORT, () => {
   SERVER_READY = true;
   fsHydrate(); // load durable accounts from Firestore (if configured) on boot
+  fsHydrateState(); // load durable subscribers/reviews/push/community from Firestore on boot
   console.log(`\n🚀  LandingPrep server running at http://localhost:${PORT}`);
   console.log(`   Gemini key: ${GEMINI_API_KEY ? "✅ loaded from .env" : "❌ NOT SET — add to .env"}`);
   console.log(`   CORS origin: ${FRONTEND_ORIGIN}`);
