@@ -146,19 +146,17 @@ function quizFrom(seedCat, question, raw, ansIdx, tags, examTag, hl) {
     caption: `🧠 Can YOU crack this ${examTag} question?\n\n${question}\n\n${options.map((o) => o.L + ") " + o.text).join("\n")}\n\n💬 Comment your answer — A, B, C or D 👇\n📲 TAG a friend who'll get this wrong 😏\n📌 SAVE to revise later.\n\n👉 Free ${examTag} practice — link in bio.\nFollow ${HANDLE} for a daily question 🎯\n.\n.\n.\n✅ Answer: ${ans}`,
     tags };
 }
+function _vocabQuiz(seed) {
+  const W = vocabWords(); if (W.length < 4) return null;
+  const w = W[((seed % W.length) + W.length) % W.length]; const d = [];
+  for (let i = 1; d.length < 3 && i < W.length; i++) { const o = W[(seed + i * 41) % W.length]; if (o.w !== w.w && o.def && !d.find((x) => x.def === o.def)) d.push(o); }
+  if (d.length < 3) return null;
+  const raw = [w.def, d[0].def, d[1].def, d[2].def].map((x) => x.length > 52 ? x.slice(0, 50).replace(/\s\S*$/, "") + "…" : x);
+  return quizFrom("VOCAB QUIZ · IELTS · GRE", `What does “${cap(w.w)}” mean?`, raw, 0, buildTags("ielts", "vocabulary", "ieltspreparation", "englishvocabulary", "landingprep"), "Vocabulary", [cap(w.w)]);
+}
+// IG quiz = vocabulary MCQ only (always self-contained; bank questions assume a passage/scenario).
 function pickQuiz(seed) {
-  // alternate vocab MCQ and real exam questions
-  if (seed % 2 === 0) {
-    const W = vocabWords(); if (W.length >= 4) {
-      const w = W[seed % W.length]; const d = [];
-      for (let i = 1; d.length < 3 && i < W.length; i++) { const o = W[(seed + i * 41) % W.length]; if (o.w !== w.w && o.def && !d.find((x) => x.def === o.def)) d.push(o); }
-      if (d.length === 3) { const raw = [w.def, d[0].def, d[1].def, d[2].def].map((x) => x.length > 52 ? x.slice(0, 50).replace(/\s\S*$/, "") + "…" : x);
-        return quizFrom("VOCAB QUIZ · IELTS · GRE", `What does “${cap(w.w)}” mean?`, raw, 0, buildTags("ielts", "vocabulary", "ieltspreparation", "englishvocabulary", "landingprep"), "Vocabulary", [cap(w.w)]); }
-    }
-  }
-  const Bq = bankQuestions(); if (Bq.length) { const q = Bq[seed % Bq.length]; const ex = q.exam.toLowerCase();
-    return quizFrom(q.exam + " PRACTICE QUESTION", q.question, q.options, q.ai, buildTags(ex, ex + "preparation", "examprep", "studyabroad", "landingprep"), q.exam, [q.exam]); }
-  return pickQuiz(seed + 1 > 1e6 ? 0 : seed + 1) === null ? null : null; // safety (won't recurse on empty)
+  return _vocabQuiz(seed) || _vocabQuiz(seed + 1) || _vocabQuiz(seed + 3);
 }
 function shortVal(s, n) { s = String(s || "").replace(/\(.*?\)/g, "").replace(/hours?/i, "h").replace(/minutes?/i, "m").replace(/\s+/g, " ").trim(); return s.length > n ? s.slice(0, n).trim() + "…" : s; }
 function shortDur(s) { s = String(s || ""); const h = (s.match(/(\d+)\s*(?:hours?|hrs?|h)\b/i) || [])[1], m = (s.match(/(\d+)\s*(?:minutes?|mins?|m)\b/i) || [])[1]; if (h || m) return (h ? h + "h" : "") + (h && m ? " " : "") + (m ? m + "m" : ""); return shortVal(s, 10); }
@@ -521,8 +519,31 @@ function pickExamComparison(seed) {
     caption: `🆚 ${A} vs ${B} — which should you take? 👇\n\n${pts.map((p) => "• " + p).join("\n")}\n\n💬 Which are you taking? Comment 👇\n📌 SAVE this comparison.\n\n👉 Free practice for both → landingprep.com\nFollow ${HANDLE} for daily exam prep 📚`,
     tags: buildTags(a.toLowerCase(), b.toLowerCase(), "examprep", "testprep", "studyabroad", "landingprep") };
 }
-// slot 2 now rotates 3 ways: words of the day · exam tips · exam comparison
-function pickExamPrep(seed) { const r = seed % 3; return (r === 0 ? pickWordOfDay(seed) : r === 1 ? pickExamTip(seed) : pickExamComparison(seed)) || pickWordOfDay(seed) || pickExamSpotlight(seed); }
+// band/score target guides (curated, evergreen)
+const BAND_GUIDES = [
+  { exam: "IELTS", title: "What IELTS score do you need?", items: ["Top global universities: 7.0–7.5+", "Most Master's programs: 6.5 overall", "Foundation / pathway courses: 5.5–6.0", "Canada Express Entry (max points): 8.0+", "No band usually below 6.0 for top unis", "Aim 0.5 above the minimum to be safe"] },
+  { exam: "PTE", title: "What PTE score do you need?", items: ["Top universities: 70–79+", "Most Master's programs: 58–64", "Foundation courses: 50–58", "Australia student visa: 50 each section", "Australia PR (max points): 79+", "PTE is scored 10–90"] },
+  { exam: "TOEFL", title: "What TOEFL score do you need?", items: ["Top US universities: 100–110+", "Most US programs: 80–90", "Foundation / conditional: 60–79", "Scored out of 120 (4 sections × 30)", "Many UK & Canada unis accept TOEFL too", "Aim higher for assistantships & scholarships"] },
+];
+function pickBandTargets(seed) { const b = BAND_GUIDES[seed % BAND_GUIDES.length];
+  return { type: "exam", accent: "#2563EB", category: b.exam + " SCORE GUIDE", headline: b.title, sub: "Target scores for " + b.exam, points: b.items,
+    caption: `📊 ${b.title} 👇\n\n${b.items.map((x) => "✅ " + x).join("\n")}\n\n💡 These are typical targets — always check each university/visa's exact requirement.\n📌 SAVE this.\n\n👉 Free ${b.exam} practice → landingprep.com\nFollow ${HANDLE} for daily exam prep 📚`,
+    tags: buildTags(b.exam.toLowerCase(), b.exam.toLowerCase() + "score", b.exam.toLowerCase() + "preparation", "examprep", "studyabroad", "landingprep") }; }
+// writing-task templates (curated)
+const WRITING_TEMPLATES = [
+  { t: "IELTS Task 2 essay structure", sub: "The Band-7+ 4-paragraph framework", items: ["Intro: paraphrase the question + clear thesis", "Body 1: first main idea + an example", "Body 2: second main idea + an example", "Conclusion: restate your position, no new ideas", "Linkers: however, moreover, therefore, overall", "≈ 260–290 words in ~38 minutes"] },
+  { t: "IELTS Task 1 (Academic) structure", sub: "Describe data like a Band-7+ candidate", items: ["Intro: paraphrase what the chart shows", "Overview: 2–3 biggest trends (no numbers)", "Body 1: detail the main features + data", "Body 2: detail the remaining features", "Compare & contrast — don't just list", "150+ words in ~20 minutes"] },
+];
+function pickWritingTemplate(seed) { const w = WRITING_TEMPLATES[seed % WRITING_TEMPLATES.length];
+  return { type: "exam", accent: "#0EA5E9", category: "WRITING TEMPLATE", headline: w.t, sub: w.sub, points: w.items,
+    caption: `✍️ ${w.t} 👇\n\n${w.items.map((x) => "• " + x).join("\n")}\n\n📌 SAVE this template. 💬 Want a Speaking framework next? Comment 👇\n\n👉 Free practice + model answers → landingprep.com\nFollow ${HANDLE} for daily exam prep 📚`,
+    tags: buildTags("ielts", "ieltswriting", "ieltspreparation", "examprep", "studyabroad", "landingprep") }; }
+// slot 2 now rotates 6 ways: vocab · exam tips · exam comparison · quiz · band targets · writing template
+function pickExamPrep(seed) {
+  const r = seed % 6;
+  const f = r === 0 ? pickWordOfDay(seed) : r === 1 ? pickExamTip(seed) : r === 2 ? pickExamComparison(seed) : r === 3 ? pickQuiz(seed) : r === 4 ? pickBandTargets(seed) : pickWritingTemplate(seed);
+  return f || pickWordOfDay(seed) || pickExamSpotlight(seed);
+}
 const SLOT_PICKERS = [pickNewsRotating, pickCountryOrCollege, pickExamPrep, pickScholarship, pickRotatingExtra];
 function pickForSlot(now, slot) {
   slot = ((Number(slot) || 0) % SLOTS + SLOTS) % SLOTS;
@@ -1123,8 +1144,31 @@ function viralOverlay(c) {
   return s + `</svg>`;
 }
 // render a single post: AI photo background + crisp overlay (premium); falls back to solid vector cards
+// quiz card — question + A/B/C/D options; answer stays in the caption (drives comments)
+function viralQuiz(c) {
+  const a = c.accent || "#7C3AED";
+  let cat = clip(stripEmoji(c.category || "QUIZ TIME"), 28).toUpperCase();
+  const q = stripEmoji(c.question || c.headline || ""), opts = (c.options || []).slice(0, 4), pw = 36 + cat.length * 15.5;
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="qg" x1="0" y1="0" x2="0.6" y2="1"><stop offset="0" stop-color="#1b2452"/><stop offset="0.55" stop-color="#111634"/><stop offset="1" stop-color="#0a0d1f"/></linearGradient></defs>`;
+  s += `<rect width="1080" height="1080" fill="url(#qg)"/><circle cx="980" cy="120" r="240" fill="${hexA(a, 0.18)}"/>`;
+  s += `<rect x="72" y="78" rx="31" width="${Math.round(pw)}" height="62" fill="${a}"/><text x="${72 + pw / 2}" y="119" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="27" fill="#fff" letter-spacing="1.5">${esc(cat)}</text>`;
+  const ql = wrapPlain(q, 28).slice(0, 3); let y = 250;
+  ql.forEach((ln, i) => { s += `<text x="72" y="${y + i * 58}" font-family="${BODY}" font-weight="800" font-size="46" fill="#fff">${esc(ln)}</text>`; });
+  const oy = y + ql.length * 58 + 30, oh = Math.max(86, Math.min(116, Math.floor((898 - oy) / Math.max(1, opts.length)) - 14));
+  opts.forEach((o, i) => { const by = oy + i * (oh + 16);
+    s += `<rect x="72" y="${by}" width="936" height="${oh}" rx="18" fill="rgba(255,255,255,0.08)"/>`;
+    s += `<circle cx="${72 + oh / 2}" cy="${by + oh / 2}" r="${oh / 2 - 16}" fill="${a}"/><text x="${72 + oh / 2}" y="${by + oh / 2 + 13}" text-anchor="middle" font-family="${HEAD}" font-size="36" fill="#fff">${esc(o.L)}</text>`;
+    const tl = wrapPlain(stripEmoji(o.text), 36).slice(0, 2);
+    tl.forEach((ln, j) => { s += `<text x="${72 + oh + 18}" y="${by + (tl.length > 1 ? 40 : oh / 2 + 12) + j * 36}" font-family="${BODY}" font-weight="600" font-size="29" fill="#eef2ff">${esc(ln)}</text>`; });
+  });
+  s += `<rect x="0" y="912" width="1080" height="104" fill="${a}"/><text x="540" y="978" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="40" fill="#fff" letter-spacing="0.5">ANSWER IN THE CAPTION  &#8595;</text>`;
+  s += `<text x="540" y="1060" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.9)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
 async function renderViral(c) {
   if (c.style === "urgency") return Buffer.from(resvgPng(viralUrgency(c), 1080));
+  if (c.type === "quiz") return Buffer.from(resvgPng(viralQuiz(c), 1080));
   if (AIBG_ON && sharp && c.type !== "vocab") {
     try {
       const bg = await aiBackground(c);
