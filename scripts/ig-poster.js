@@ -369,11 +369,14 @@ function pickLowIeltsUnis(seed) {
     caption: `📊 Universities with LOWER IELTS requirements 👇\n\n${list.map((c) => "• " + c.name + " — IELTS " + c.ielts + " (" + c.country + ")").join("\n")}\n\n💡 Confirm on the official page — and aim higher anyway for scholarships.\n📌 SAVE this.\n\n👉 Free IELTS practice → landingprep.com\nFollow ${HANDLE} for daily admits info 🎓`,
     tags: buildTags("lowielts", "ielts", "studyabroad", "universityadmission", "msabroad", "landingprep") };
 }
+// integer hash — decorrelates the within-pool index from the rotation stride so small pools
+// don't collapse to one item (the variant `r` stays a clean cycle; the sub-picker gets a hashed seed)
+function _mix(x) { x = (x | 0) >>> 0; x = Math.imul(x ^ (x >>> 16), 0x45d9f3b) >>> 0; x = Math.imul(x ^ (x >>> 16), 0x45d9f3b) >>> 0; return (x ^ (x >>> 16)) >>> 0; }
 // slot 1 now rotates 6 ways: country · college · did-you-know · top-unis · no-GRE · low-IELTS
 function pickCountryOrCollege(seed) {
-  const r = seed % 6;
-  const f = r === 0 ? pickCountryHighlight(seed) : r === 1 ? pickCollegeSpotlight(seed) : r === 2 ? pickCountryFact(seed) : r === 3 ? pickTopUnis(seed) : r === 4 ? pickNoGreUnis(seed) : pickLowIeltsUnis(seed);
-  return f || pickCountryHighlight(seed) || pickCollegeSpotlight(seed);
+  const r = seed % 6, s = _mix(seed);
+  const f = r === 0 ? pickCountryHighlight(s) : r === 1 ? pickCollegeSpotlight(s) : r === 2 ? pickCountryFact(s) : r === 3 ? pickTopUnis(s) : r === 4 ? pickNoGreUnis(s) : pickLowIeltsUnis(s);
+  return f || pickCountryHighlight(s) || pickCollegeSpotlight(s);
 }
 function pickTipOrSpotlight(seed) { const r = seed % 3; return (r === 0 ? pickTip(seed) : r === 1 ? pickCollegeSpotlight(seed + 17) : pickCountryHighlight(seed + 11)) || pickTip(seed) || pickWordOfDay(seed); }
 // major study-abroad scholarships (curated, evergreen)
@@ -468,6 +471,9 @@ const MISTAKE_SETS = [
   { t: "5 study-abroad mistakes", sub: "Save this before you apply", items: ["Applying without checking each university's deadline", "Choosing a course for 'PR' instead of your real career fit", "Leaving proof-of-funds to the last minute", "Sending one generic SOP to every university", "Booking your visa appointment far too late"] },
   { t: "5 student-visa mistakes", sub: "These cause most rejections", items: ["Incomplete or inconsistent financial documents", "A weak SOP with no clear study plan", "Unexplained gaps in your study history", "Applying too close to your intake date", "Not reading the country's specific visa rules"] },
   { t: "5 university-application mistakes", sub: "Don't lose an admit over these", items: ["Shortlisting only 'dream' universities, no safe ones", "Missing or weak letters of recommendation", "Copy-pasting your SOP from the internet", "Ignoring English-test and GPA cut-offs", "Applying after scholarship deadlines close"] },
+  { t: "5 SOP mistakes", sub: "Don't sink your application", items: ["Opening with a famous quote or clichés", "Writing your entire life story", "Being vague about why THIS university", "No clear career goal after graduation", "Sending the same SOP everywhere"] },
+  { t: "5 scholarship mistakes", sub: "Why students miss out on funding", items: ["Applying to only 1–2 scholarships", "Missing deadlines (often months early)", "A generic, untailored essay", "Ignoring smaller / department scholarships", "Not checking eligibility before applying"] },
+  { t: "5 IELTS prep mistakes", sub: "Stop losing easy bands", items: ["Practising without timing yourself", "Memorising answers instead of skills", "Skipping Writing Task 1 & Speaking Part 2", "Never reviewing your mistakes", "Booking the test before you're ready"] },
 ];
 function pickMistakes(seed) {
   const m = MISTAKE_SETS[seed % MISTAKE_SETS.length];
@@ -479,6 +485,9 @@ const CHECKLISTS = [
   { t: "Student visa checklist", sub: "Tick these off before you apply", items: ["Valid passport (6+ months left)", "University offer / admission letter", "Proof of funds / blocked account", "English test score (IELTS / PTE / TOEFL)", "Statement of purpose", "Tuition / fee payment receipt"] },
   { t: "SOP checklist", sub: "A strong statement of purpose covers", items: ["Why this course & this university", "Your academic & project background", "Relevant work or internship experience", "Clear career goals after graduation", "Why this country fits your plan", "No spelling / grammar errors"] },
   { t: "Pre-departure checklist", sub: "Before you fly abroad", items: ["Visa, passport & admission letter (copies too)", "Tuition paid + initial living funds ready", "Accommodation booked for the first weeks", "Travel + health insurance sorted", "Forex card / international banking set up", "Important docs scanned to the cloud"] },
+  { t: "Scholarship application checklist", sub: "Before you hit submit", items: ["Updated CV / resume", "A tailored motivation essay", "2–3 strong recommendation letters", "Academic transcripts + certificates", "Proof of English proficiency", "Met every eligibility criterion"] },
+  { t: "University shortlist checklist", sub: "Pick the right 6–8 universities", items: ["A mix of reach / match / safe schools", "Course matches your career goal", "Tuition + living within budget", "You meet the GPA + test cut-offs", "Scholarships / funding available", "Post-study work & PR options"] },
+  { t: "IELTS test-day checklist", sub: "Walk in ready", items: ["Valid passport / ID (same as booking)", "Confirmation email / test details", "Know your centre + travel time", "Water in a clear, label-free bottle", "Arrive 30+ minutes early", "Good sleep — no last-minute cramming"] },
 ];
 function pickChecklist(seed) {
   const c = CHECKLISTS[seed % CHECKLISTS.length];
@@ -488,9 +497,9 @@ function pickChecklist(seed) {
 }
 // slot 4 now rotates 6 ways for daily variety: cost · exam fees · exam guide · comparison · mistakes · checklist
 function pickRotatingExtra(seed) {
-  const r = seed % 6;
-  const f = r === 0 ? pickCostCompared(seed) : r === 1 ? pickExamFees(seed) : r === 2 ? pickExamSpotlight(seed) : r === 3 ? pickComparison(seed) : r === 4 ? pickMistakes(seed) : pickChecklist(seed);
-  return f || pickExamFees(seed) || pickCostCompared(seed) || pickScholarship(seed);
+  const r = seed % 6, s = _mix(seed);
+  const f = r === 0 ? pickCostCompared(s) : r === 1 ? pickExamFees(s) : r === 2 ? pickExamSpotlight(s) : r === 3 ? pickComparison(s) : r === 4 ? pickMistakes(s) : pickChecklist(s);
+  return f || pickExamFees(s) || pickCostCompared(s) || pickScholarship(s);
 }
 // 5 strong posts/day — all deep pools + a rotating 5th (cost / exam-fees / exam-guide cycle).
 // per-exam tips (from our own exam-patterns data) — drives users to free practice
@@ -524,6 +533,9 @@ const BAND_GUIDES = [
   { exam: "IELTS", title: "What IELTS score do you need?", items: ["Top global universities: 7.0–7.5+", "Most Master's programs: 6.5 overall", "Foundation / pathway courses: 5.5–6.0", "Canada Express Entry (max points): 8.0+", "No band usually below 6.0 for top unis", "Aim 0.5 above the minimum to be safe"] },
   { exam: "PTE", title: "What PTE score do you need?", items: ["Top universities: 70–79+", "Most Master's programs: 58–64", "Foundation courses: 50–58", "Australia student visa: 50 each section", "Australia PR (max points): 79+", "PTE is scored 10–90"] },
   { exam: "TOEFL", title: "What TOEFL score do you need?", items: ["Top US universities: 100–110+", "Most US programs: 80–90", "Foundation / conditional: 60–79", "Scored out of 120 (4 sections × 30)", "Many UK & Canada unis accept TOEFL too", "Aim higher for assistantships & scholarships"] },
+  { exam: "GRE", title: "What GRE score do you need?", items: ["Top programs: 320–330+", "Most Master's: 300–315", "Quant matters most for STEM & MBA", "Verbal matters for humanities", "Scored 260–340 (Verbal + Quant)", "AWA: aim 4.0+"] },
+  { exam: "GMAT", title: "What GMAT score do you need?", items: ["Top MBA programs: 700–730+", "Most MBA programs: 650–700", "GMAT Focus is scored 205–805", "Quant + Verbal + Data Insights", "A strong score offsets a weaker GPA", "Beat your target school's average"] },
+  { exam: "Duolingo", title: "What Duolingo (DET) score do you need?", items: ["Top universities: 120–130+", "Most programs: 105–120", "Foundation / pathway: 90–105", "Scored 10–160", "Accepted by 5,000+ universities", "Cheapest & fastest English test"] },
 ];
 function pickBandTargets(seed) { const b = BAND_GUIDES[seed % BAND_GUIDES.length];
   return { type: "exam", accent: "#2563EB", category: b.exam + " SCORE GUIDE", headline: b.title, sub: "Target scores for " + b.exam, points: b.items,
@@ -533,6 +545,10 @@ function pickBandTargets(seed) { const b = BAND_GUIDES[seed % BAND_GUIDES.length
 const WRITING_TEMPLATES = [
   { t: "IELTS Task 2 essay structure", sub: "The Band-7+ 4-paragraph framework", items: ["Intro: paraphrase the question + clear thesis", "Body 1: first main idea + an example", "Body 2: second main idea + an example", "Conclusion: restate your position, no new ideas", "Linkers: however, moreover, therefore, overall", "≈ 260–290 words in ~38 minutes"] },
   { t: "IELTS Task 1 (Academic) structure", sub: "Describe data like a Band-7+ candidate", items: ["Intro: paraphrase what the chart shows", "Overview: 2–3 biggest trends (no numbers)", "Body 1: detail the main features + data", "Body 2: detail the remaining features", "Compare & contrast — don't just list", "150+ words in ~20 minutes"] },
+  { t: "IELTS Speaking Part 2 framework", sub: "Structure a cue-card answer", items: ["Use the 1 minute to jot quick notes", "Open: directly answer what / who / where", "Middle: 2–3 details + a short story", "Add feelings + a reason (\"because…\")", "Close: a final opinion or reflection", "Keep going for the full 2 minutes"] },
+  { t: "TOEFL Independent essay structure", sub: "The 5-paragraph framework", items: ["Intro: hook + restate + clear thesis", "Body 1–3: one reason each + an example", "Use specific, personal examples", "Transitions: first, moreover, in addition", "Conclusion: restate + summarise reasons", "≈ 300+ words in 30 minutes"] },
+  { t: "IELTS Task 1 (General) letter", sub: "Formal / semi-formal / informal", items: ["Match the greeting to the tone", "State your purpose in the first line", "Cover all 3 bullet points given", "One paragraph per bullet point", "Close right (Yours faithfully / sincerely)", "150+ words in ~20 minutes"] },
+  { t: "PTE Summarize Written Text", sub: "One sentence, 5–75 words", items: ["Read the passage for the main idea", "Write ONE single sentence only", "Combine key points with linking words", "5–75 words, one full stop only", "Grammar is heavily scored — check it", "No spelling mistakes"] },
 ];
 function pickWritingTemplate(seed) { const w = WRITING_TEMPLATES[seed % WRITING_TEMPLATES.length];
   return { type: "exam", accent: "#0EA5E9", category: "WRITING TEMPLATE", headline: w.t, sub: w.sub, points: w.items,
@@ -540,9 +556,9 @@ function pickWritingTemplate(seed) { const w = WRITING_TEMPLATES[seed % WRITING_
     tags: buildTags("ielts", "ieltswriting", "ieltspreparation", "examprep", "studyabroad", "landingprep") }; }
 // slot 2 now rotates 6 ways: vocab · exam tips · exam comparison · quiz · band targets · writing template
 function pickExamPrep(seed) {
-  const r = seed % 6;
-  const f = r === 0 ? pickWordOfDay(seed) : r === 1 ? pickExamTip(seed) : r === 2 ? pickExamComparison(seed) : r === 3 ? pickQuiz(seed) : r === 4 ? pickBandTargets(seed) : pickWritingTemplate(seed);
-  return f || pickWordOfDay(seed) || pickExamSpotlight(seed);
+  const r = seed % 6, s = _mix(seed);
+  const f = r === 0 ? pickWordOfDay(s) : r === 1 ? pickExamTip(s) : r === 2 ? pickExamComparison(s) : r === 3 ? pickQuiz(s) : r === 4 ? pickBandTargets(s) : pickWritingTemplate(s);
+  return f || pickWordOfDay(s) || pickExamSpotlight(s);
 }
 const SLOT_PICKERS = [pickNewsRotating, pickCountryOrCollege, pickExamPrep, pickScholarship, pickRotatingExtra];
 function pickForSlot(now, slot) {
