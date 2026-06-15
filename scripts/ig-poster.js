@@ -340,7 +340,43 @@ function pickCountryFact(seed) {
     tags: buildTags("studyin" + slug, "study" + slug, "studyabroad", "didyouknow", "internationalstudents", "landingprep") };
 }
 // slot 1 now rotates 3 ways for more daily variety: country spotlight / college spotlight / did-you-know facts
-function pickCountryOrCollege(seed) { const r = seed % 3; return (r === 0 ? pickCountryHighlight(seed) : r === 1 ? pickCollegeSpotlight(seed) : pickCountryFact(seed)) || pickCountryHighlight(seed) || pickCollegeSpotlight(seed); }
+// "Top universities in <country>" — high-save list post from our own college data
+function pickTopUnis(seed) {
+  const C = collegesData(); if (!C.length) return null;
+  const countries = [...new Set(C.map((c) => c.country).filter(Boolean))]; if (!countries.length) return null;
+  const country = countries[(seed * 3) % countries.length];
+  const list = C.filter((c) => String(c.country).toLowerCase() === String(country).toLowerCase()).sort((a, b) => (a.rank || 999) - (b.rank || 999)).slice(0, 6);
+  if (list.length < 3) return null;
+  const slug = String(country).toLowerCase().replace(/\s+/g, "");
+  return { type: "exam", accent: "#7C3AED", category: "TOP UNIVERSITIES", flagCountry: ISO[String(country).toLowerCase()] ? country : null, headline: "Top unis in " + country, sub: "Ranked for international students", points: list.map((c) => collegeShort(c.name) + (c.rank ? " — #" + c.rank + " world" : "")),
+    caption: `🎓 Top universities in ${country} for international students 👇\n\n${list.map((c, i) => (i + 1) + ". " + c.name + (c.rank ? " (#" + c.rank + " world)" : "")).join("\n")}\n\n📌 SAVE this shortlist. 💬 Which is your dream? 👇\n\n👉 Free college predictor → landingprep.com\nFollow ${HANDLE} for daily admits info 🎓`,
+    tags: buildTags("studyin" + slug, "topuniversities", "studyabroad", "universityadmission", "internationalstudents", "landingprep") };
+}
+function _pickUniList(C, seed) { const out = []; for (let i = 0; out.length < 6 && i < C.length * 2; i++) { const c = C[(seed * 5 + i) % C.length]; if (c && !out.find((x) => x.name === c.name)) out.push(c); } return out; }
+// "Apply without GRE" — universities that don't require the GRE
+function pickNoGreUnis(seed) {
+  const C = collegesData().filter((c) => c.name && (!c.gre || /not|waiv|option|none|^no\b|^[-—–]$/i.test(String(c.gre).trim())));
+  if (C.length < 4) return null;
+  const list = _pickUniList(C, seed); if (list.length < 4) return null;
+  return { type: "exam", accent: "#0E9F6E", category: "NO GRE NEEDED", headline: "Apply without GRE", sub: "Universities that don't require the GRE", points: list.map((c) => collegeShort(c.name) + " · " + c.country),
+    caption: `🎯 Universities you can apply to WITHOUT the GRE 👇\n\n${list.map((c) => "• " + c.name + " (" + c.country + ")").join("\n")}\n\n💡 Always confirm on the official program page — requirements change.\n📌 SAVE this. 📲 SHARE with someone skipping the GRE.\n\n👉 Free college predictor → landingprep.com\nFollow ${HANDLE} for daily admits info 🎓`,
+    tags: buildTags("studywithoutgre", "nogre", "msabroad", "studyabroad", "universityadmission", "landingprep") };
+}
+// "Low IELTS universities" — accepting IELTS 6.0–6.5
+function pickLowIeltsUnis(seed) {
+  const C = collegesData().filter((c) => c.name && c.ielts && parseFloat(c.ielts) > 0 && parseFloat(c.ielts) <= 6.5);
+  if (C.length < 4) return null;
+  const list = _pickUniList(C, seed); if (list.length < 4) return null;
+  return { type: "exam", accent: "#1D4ED8", category: "LOW IELTS", headline: "Low IELTS unis", sub: "Universities accepting IELTS 6.0–6.5", points: list.map((c) => collegeShort(c.name) + " — IELTS " + c.ielts),
+    caption: `📊 Universities with LOWER IELTS requirements 👇\n\n${list.map((c) => "• " + c.name + " — IELTS " + c.ielts + " (" + c.country + ")").join("\n")}\n\n💡 Confirm on the official page — and aim higher anyway for scholarships.\n📌 SAVE this.\n\n👉 Free IELTS practice → landingprep.com\nFollow ${HANDLE} for daily admits info 🎓`,
+    tags: buildTags("lowielts", "ielts", "studyabroad", "universityadmission", "msabroad", "landingprep") };
+}
+// slot 1 now rotates 6 ways: country · college · did-you-know · top-unis · no-GRE · low-IELTS
+function pickCountryOrCollege(seed) {
+  const r = seed % 6;
+  const f = r === 0 ? pickCountryHighlight(seed) : r === 1 ? pickCollegeSpotlight(seed) : r === 2 ? pickCountryFact(seed) : r === 3 ? pickTopUnis(seed) : r === 4 ? pickNoGreUnis(seed) : pickLowIeltsUnis(seed);
+  return f || pickCountryHighlight(seed) || pickCollegeSpotlight(seed);
+}
 function pickTipOrSpotlight(seed) { const r = seed % 3; return (r === 0 ? pickTip(seed) : r === 1 ? pickCollegeSpotlight(seed + 17) : pickCountryHighlight(seed + 11)) || pickTip(seed) || pickWordOfDay(seed); }
 // major study-abroad scholarships (curated, evergreen)
 const SCHOLARSHIPS = [

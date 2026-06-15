@@ -28,7 +28,7 @@ Goal: never repeat a topic within ~45 days. Seed uses `dayNumber*7` (coprime) so
 ## Content buckets — BUILT ✅ / TODO ⬜
 **News/visa:** ✅ live RSS + curated (Canada/UK/Australia/USA/Germany)
 **Country guides:** ✅ spotlight · ✅ did-you-know facts · ✅ cost · ✅ comparison (X vs Y) · ⬜ cheapest cities · ⬜ popular courses · ⬜ application timeline
-**Universities:** ✅ college spotlight · ✅ Top-Cities carousels (5 countries) · ⬜ top unis by country · ⬜ no-GRE / Duolingo-accepted / low-IELTS lists · ⬜ best colleges by field
+**Universities:** ✅ college spotlight · ✅ Top-Cities carousels (5 countries) · ✅ top unis by country · ✅ no-GRE list · ✅ low-IELTS list · ⬜ Duolingo-accepted · ⬜ best colleges by field
 **Exam prep:** ✅ exam guide/spotlight · ✅ exam fees · ✅ vocab · ✅ per-exam tips · ✅ exam comparisons (IELTS vs PTE) · ⬜ band-score guides · ⬜ writing-task templates
 **Scholarships:** ✅ 26 scholarships · ✅ deadline cards · ⬜ scholarship-by-country
 **Application:** ✅ checklists (visa/SOP/pre-departure) · ✅ mistakes/avoid-these · ⬜ SOP/LOR/resume tips · ⬜ intake comparison (Fall vs Spring)
