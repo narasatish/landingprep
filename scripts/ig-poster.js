@@ -105,7 +105,10 @@ const TAGS = {
 // 2026 algorithm: 3-5 highly relevant tags out-reach 30 generic ones. Pass best-first; we keep 5.
 // High-traffic, ON-TOPIC tags only. Irrelevant "trending" tags (war/news events) get an
 // account shadow-banned by IG's relevance filter — they HURT reach, so we never use them.
-const TRENDING_TAGS = ["studyabroad", "studyabroad2026", "studygram", "internationalstudents", "studyvisa", "ieltspreparation", "studentlife", "studyoverseas", "scholarships", "dreamstudyabroad", "studyabroadlife", "abroadstudies", "highereducation", "msabroad", "futureabroad", "studentvisaupdate"];
+// Refreshed June 2026 from current top study-abroad / IELTS IG + TikTok hashtag research:
+// a mix of high-volume reach tags + niche on-topic tags. On-topic ONLY (off-topic "trending"
+// tags trip IG's relevance filter and shadow-ban the account).
+const TRENDING_TAGS = ["studyabroad", "studyabroad2026", "internationalstudents", "studyvisa", "studentvisa", "ieltspreparation", "ielts", "studygram", "overseaseducation", "studyoverseas", "scholarships", "abroadeducation", "studentlife", "highereducation", "msabroad", "studyincanada", "studyinuk", "dreamstudyabroad", "studyabroadlife", "futureabroad", "educationabroad", "studentvisaupdate"];
 function buildTags() {
   const out = [];
   for (let i = 0; i < arguments.length; i++) { const a = Array.isArray(arguments[i]) ? arguments[i] : [arguments[i]]; for (const t of a) { const x = String(t || "").toLowerCase().replace(/[^a-z0-9]/g, ""); if (x && !out.includes(x)) out.push(x); } }
@@ -295,6 +298,76 @@ const OPINION_RE = /transition|global education|future of|rise of|reimagin|rethi
 // a headline must contain at least one CONCRETE, actionable anchor (a real policy/number/exam/
 // money/place) — otherwise it's too abstract to be useful news.
 const CONCRETE_RE = /visa|permit|scholarship|fund|grant|tuition|\bfee|deadline|intake|\brule|\bban\b|\bcap\b|quota|approv|reject|ielts|toefl|pte|\bgre\b|gmat|duolingo|admission|enrol|express entry|graduate route|\bpr\b|points|sponsor|work (right|permit|visa)|universit|college|campus|\b20\d\d\b|\$|£|€|%|raise|cut|hike|drop|new \w+ (rule|policy|law|scheme|route)/i;
+// ── Canada Express Entry — REAL, official draw data from IRCC's published JSON feed ──
+// Accurate numbers only (never invented): draw number, date, category, ITAs, CRS cut-off,
+// plus year-to-date totals computed from the feed. https://www.canada.ca/.../express-entry
+const EE_FEED = "https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json";
+const _eeStrip = (s) => String(s || "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+function eeCategoryBlurb(name) {
+  const n = String(name).toLowerCase();
+  if (/canadian experience/.test(n)) return ["Canadian Experience Class (CEC)", "for candidates who already have skilled work experience in Canada."];
+  if (/provincial nominee/.test(n)) return ["Provincial Nominee Program (PNP)", "for candidates nominated by a Canadian province — a nomination adds 600 CRS points."];
+  if (/french/.test(n)) return ["French-language proficiency", "a category-based draw favouring strong French speakers, regardless of CRS-heavy profiles."];
+  if (/health/.test(n)) return ["Healthcare & social-services occupations", "a category-based draw targeting in-demand healthcare and care roles."];
+  if (/trade/.test(n)) return ["Trade occupations", "a category-based draw for skilled-trades candidates (electricians, plumbers, welders, etc.)."];
+  if (/stem|science|tech/.test(n)) return ["STEM occupations", "a category-based draw for science, tech, engineering and maths professionals."];
+  if (/educat/.test(n)) return ["Education occupations", "a category-based draw targeting teachers and education professionals."];
+  if (/agricultur/.test(n)) return ["Agriculture & agri-food occupations", "a category-based draw for agriculture and food-processing roles."];
+  if (/general/.test(n)) return ["General (all-program)", "open to eligible Express Entry candidates across all programs."];
+  return [_eeStrip(name) || "Express Entry", "an Express Entry round of invitations."];
+}
+function buildExpressEntryPost(feed, now) {
+  const rounds = (feed && feed.rounds) || []; if (!rounds.length) return null;
+  const r = rounds[0];
+  const cat = eeCategoryBlurb(r.drawName); const yr = String((now || new Date()).getUTCFullYear());
+  const ytd = rounds.filter((x) => String(x.drawDate).startsWith(yr));
+  const ytdItas = ytd.reduce((s, x) => s + (parseInt(String(x.drawSize).replace(/,/g, ""), 10) || 0), 0);
+  const itas = _eeStrip(r.drawSize), crs = _eeStrip(r.drawCRS), num = _eeStrip(r.drawNumber);
+  const catShort = cat[0].replace(/\s*\(.*?\)\s*/g, "").split(" ").slice(0, 2).join(" ");
+  const caption =
+    `🇨🇦 CANADA EXPRESS ENTRY — Draw #${num}\n📅 ${r.drawDateFull}\n\n` +
+    `✅ What happened: Canada (IRCC) invited ${itas} candidates to apply for permanent residence in the latest Express Entry round.\n\n` +
+    `📂 Which draw: ${cat[0]} — ${cat[1]}\n` +
+    `📊 CRS cut-off: ${crs} — every invited candidate had a Comprehensive Ranking System score of ${crs} or higher.\n` +
+    `🎟 Invitations issued (ITAs): ${itas}\n` +
+    `🔢 Round number: #${num}\n\n` +
+    `📈 2026 so far: ${ytd.length} Express Entry draws and ${ytdItas.toLocaleString("en-US")} invitations issued year-to-date.\n\n` +
+    `ℹ️ What is CRS? Your score out of 1,200 from age, education, work experience and language (IELTS/CELPIP/French). The higher your score, the better your odds each draw.\n\n` +
+    `🎯 How to improve your odds: boost your language score, gain skilled experience, claim a provincial nomination (+600), or add French — category-based draws like this reward specific profiles.\n\n` +
+    `⚠️ Always verify the latest on the official IRCC website before you act.\n\n` +
+    `📲 SHARE with someone in the Express Entry pool.\n📌 SAVE this. 💬 What's your CRS? Comment 👇\n\n` +
+    `👉 Free study-in-Canada + PR guides → landingprep.com\nFollow ${HANDLE} for daily immigration updates 🌍`;
+  return {
+    type: "exam", noIntro: true, accent: "#D52B1E", category: "CANADA · EXPRESS ENTRY", flagCountry: "Canada",
+    headline: "Draw #" + num, sub: "Express Entry · " + cat[0] + " · " + r.drawDateFull,
+    stats: [
+      { v: itas, label: "Invitations" }, { v: "CRS " + crs, label: "Cut-off" }, { v: catShort, label: "Category" },
+      { v: "#" + num, label: "Round" }, { v: String(ytd.length), label: "Draws in " + yr }, { v: ytdItas.toLocaleString("en-US"), label: "ITAs in " + yr },
+    ],
+    points: [
+      itas + " invitations to apply (ITAs) issued",
+      "CRS cut-off: " + crs + " — invited candidates scored " + crs + "+",
+      "Category: " + cat[0],
+      ytd.length + " draws · " + ytdItas.toLocaleString("en-US") + " ITAs in " + yr + " so far",
+    ],
+    cta: "Check your CRS free → landingprep.com",
+    caption,
+    tags: buildTags("expressentry", "canadapr", "canadaimmigration", "studyincanada", "ircc", "crsscore", "canadavisa", "movetocanada"),
+  };
+}
+async function expressEntryDraw(now) {
+  if (process.env.LIVE_NEWS === "0") return null;
+  try {
+    const r = await fetchT(EE_FEED, { headers: { "User-Agent": "Mozilla/5.0 (compatible; LandingPrepBot/1.0)" } }, 12000);
+    if (!r.ok) return null;
+    const feed = JSON.parse(await r.text());
+    const latest = (feed.rounds || [])[0]; if (!latest) return null;
+    // Only post when the draw is fresh (≤2 days old) so we never repeat a stale draw daily.
+    const dd = new Date(latest.drawDate + "T00:00:00Z"); const ageDays = ((now || new Date()) - dd) / 86400000;
+    if (!(ageDays >= -1 && ageDays <= 2)) return null;
+    return buildExpressEntryPost(feed, now);
+  } catch (e) { return null; }
+}
 async function liveNews(now, slot) {
   if (process.env.LIVE_NEWS === "0") return null;
   const kind = slot === 0 ? "immig" : "edu"; const seed = dayNumber(now);
@@ -308,7 +381,13 @@ async function liveNews(now, slot) {
 }
 async function resolveDailyContent(now, slot) {
   let c = pickForSlot(now, slot);
-  if (slot === 0) { try { const live = await liveNews(now, dayNumber(now) % 2); if (live) c = live; } catch (e) { /* keep curated fallback */ } }
+  if (slot === 0) {
+    try {
+      const ee = await expressEntryDraw(now);                       // accurate Canada draw (preferred when fresh)
+      if (ee) { c = ee; }
+      else { const live = await liveNews(now, dayNumber(now) % 2); if (live) c = live; }
+    } catch (e) { /* keep curated fallback */ }
+  }
   return c;
 }
 
@@ -1363,7 +1442,7 @@ async function renderBulletinPng(c, seed) {
 // tailored 1–2 sentence "why this matters / how to use it" intro per post type, injected just
 // under the caption's headline. News (bulletin) and carousels already carry their own explainer.
 function captionIntro(c) {
-  if (!c || c.type === "bulletin" || c.slides || c.imageUrls) return "";
+  if (!c || c.noIntro || c.type === "bulletin" || c.slides || c.imageUrls) return "";
   const cat = String(c.category || "").toLowerCase();
   const h = String(c.headline || "").toLowerCase();
   if (/scholarship|funding|deadline/.test(cat)) return "💡 Scholarships close on fixed dates and rarely reopen — the students who win them are simply the ones who apply early with every document ready. Treat this as your checklist and start before the deadline rush.";
@@ -1765,6 +1844,39 @@ const TOPIC_CAROUSELS = {
       { title: "Ignoring the rules", sub: "", text: "Every country has specific requirements — English test, financial thresholds, medicals. Read the official checklist and follow it exactly; don't rely on hearsay.", photo: "news" },
     ],
   },
+  "sop-mistakes": {
+    cover: "study", title: "SOP mistakes that get you rejected", sub: "Your statement of purpose can make or break your application.",
+    caption: `📝 SOP mistakes that quietly cost students their admit 👇\n\nSwipe ➡️ for the 5 to fix before you submit.\n\n📌 SAVE this before you write. 📲 SHARE with someone applying.\n💬 Stuck on your SOP? Comment 👇\n\n👉 Free SOP builder & samples → landingprep.com\nFollow ${HANDLE} for daily application tips ✍️`,
+    slides: [
+      { title: "Generic opening", sub: "The #1 SOP killer", text: "Starting with a quote or 'Since childhood I loved…' bores admissions in the first line. Open with a specific moment, project or problem that pulled you into this field.", photo: "study" },
+      { title: "Listing your CV", sub: "", text: "An SOP is not a resume in paragraphs. Don't re-list grades and titles — explain what you LEARNED and how it shaped your goal for THIS course.", photo: "study" },
+      { title: "No 'why this university'", sub: "", text: "Vague praise ('world-class faculty') shows you didn't research. Name specific professors, labs, courses or projects and tie them to your goals.", photo: "exam" },
+      { title: "Weak career goal", sub: "", text: "'I want a good job' isn't a goal. State a clear short-term and long-term objective, and show how this exact program bridges where you are and where you're going.", photo: "study" },
+      { title: "Errors & over-length", sub: "", text: "Typos, clichés and going over the word limit signal carelessness. Keep it tight (usually 800–1,000 words), proofread twice, and get one person to review it.", photo: "news" },
+    ],
+  },
+  "ielts-writing-band7": {
+    cover: "exam", title: "IELTS Writing Task 2: Band 7 structure", sub: "The exact 4-paragraph plan examiners reward.",
+    caption: `✍️ The IELTS Writing Task 2 structure that scores Band 7+ 👇\n\nSwipe ➡️ for the paragraph-by-paragraph plan.\n\n💡 Band 7 needs a clear position, developed ideas and a range of linking words — structure does half the work.\n📌 SAVE this for your next practice essay. 📲 SHARE with a study buddy.\n\n👉 Free IELTS Writing practice + model answers → landingprep.com\nFollow ${HANDLE} for daily IELTS tips 📚`,
+    slides: [
+      { title: "Introduction", sub: "2 sentences", text: "Paraphrase the question (don't copy it), then state your clear position or outline. The examiner must know your answer from the first paragraph.", photo: "exam" },
+      { title: "Body 1", sub: "Main idea + support", text: "One clear main idea as the topic sentence, then explain it, give a reason, and add a specific example. Depth beats listing many shallow points.", photo: "exam" },
+      { title: "Body 2", sub: "Second idea + support", text: "A different main idea, developed the same way: topic sentence → explanation → example. Use linkers (However, Moreover, As a result) naturally, not forced.", photo: "study" },
+      { title: "Conclusion", sub: "1–2 sentences", text: "Restate your position in new words and summarise your two reasons. No new ideas — just a confident close.", photo: "study" },
+      { title: "Band-7 checklist", sub: "", text: "Answer all parts of the question · clear position throughout · 4 paragraphs · 260–290 words · range of vocabulary & complex sentences · few errors. Aim for these every essay.", photo: "news" },
+    ],
+  },
+  "fall-vs-spring": {
+    cover: "study", title: "Fall vs Spring intake: which is better?", sub: "Pick the intake that fits YOUR profile and budget.",
+    caption: `🍂🌱 Fall vs Spring intake — which should you target? 👇\n\nSwipe ➡️ for the honest comparison.\n\n💡 There's no 'best' intake — only the one that matches your test dates, finances and program. Here's how to choose.\n📌 SAVE this. 📲 SHARE with someone deciding. 💬 Which are you aiming for? 👇\n\n👉 Plan your intake free → landingprep.com\nFollow ${HANDLE} for daily study-abroad guides 🌍`,
+    slides: [
+      { title: "Fall intake", sub: "Aug–Sept · the big one", text: "The largest intake: most programs, seats, scholarships and on-campus jobs open. Best for funding and networking — but it's the most competitive, so apply 9–12 months ahead.", photo: "study" },
+      { title: "Spring intake", sub: "Jan–Feb · the second wave", text: "Fewer programs and scholarships, but smaller applicant pools and a great fallback if you need more time for tests or documents. Not all courses accept it — check first.", photo: "study" },
+      { title: "Choose Fall if…", sub: "", text: "You want maximum program choice, the best scholarship odds, and you're ready with IELTS/GRE and documents in time. Most STEM and funded Master's favour Fall.", photo: "exam" },
+      { title: "Choose Spring if…", sub: "", text: "You missed Fall deadlines, need a higher test score, or your finances need a few more months. A strong Spring application beats a rushed Fall one.", photo: "news" },
+      { title: "The real rule", sub: "", text: "A complete, polished application in the RIGHT intake beats a rushed one in the 'better' intake. Match the intake to when your profile is genuinely ready.", photo: "study" },
+    ],
+  },
 };
 function topicCoverSvg(title, sub, total) {
   const a = "#1657E0", Y = "#FFC83A";
@@ -1821,4 +1933,4 @@ async function runCitiesCarousel({ baseUrl, igUserId, token, now, offset }) {
   const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
   return { ok: true, type: "carousel", topic: gen.country, slides: res.slides, mediaId: res.mediaId };
 }
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, generateCitiesCarousel, runCitiesCarousel, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
