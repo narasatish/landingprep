@@ -790,13 +790,14 @@ function pickInsiderTips(seed) {
     tags: buildTags("studyabroad", "studyabroadtips", "studyabroadlife", "internationalstudents", "studyabroad2026", "landingprep") };
 }
 const THIS_OR_THAT = [
-  { t: "This or that? Comment your pick 👇", items: ["IELTS or PTE?", "USA or Canada?", "Fall or Spring intake?", "On-campus or off-campus?", "Big city or small town?"] },
-  { t: "Study-abroad: this or that? 👇", items: ["Scholarship or education loan?", "MS or MBA?", "Europe or Australia?", "Public or private university?", "Coffee or chai while studying? ☕"] },
+  { pairs: [["IELTS", "PTE"], ["USA", "Canada"], ["Fall", "Spring"], ["On-campus", "Off-campus"], ["City", "Town"]] },
+  { pairs: [["Scholarship", "Loan"], ["MS", "MBA"], ["Europe", "Australia"], ["Public", "Private"], ["Coffee", "Chai"]] },
 ];
 function pickThisOrThat(seed) {
   const t = THIS_OR_THAT[((seed % THIS_OR_THAT.length) + THIS_OR_THAT.length) % THIS_OR_THAT.length];
-  return { type: "exam", noIntro: true, accent: "#EC4899", category: "THIS OR THAT", headline: "This or that?", sub: "Drop your answers in the comments", points: t.items, bulletStyle: "dot", cta: "Find your best-fit free → landingprep.com",
-    caption: `🤔 ${t.t}\n\n${t.items.map((x) => "👉 " + x).join("\n")}\n\nThere's no wrong answer — it depends on YOUR goals, budget and profile. Comment your picks and we'll tell you what each choice really means for your plan.\n\n📲 TAG a friend and compare. 📌 SAVE for later.\n\n👉 Confused which to pick? Our free tools compare them → landingprep.com\nFollow ${HANDLE} for daily study-abroad help 🌍`,
+  const lines = t.pairs.map((p) => "👉 " + p[0] + " or " + p[1] + "?");
+  return { type: "versus", noIntro: true, accent: "#EC4899", category: "THIS OR THAT", headline: "This or that?", pairs: t.pairs, cta: "Find your best-fit free → landingprep.com",
+    caption: `🤔 This or that? Comment your picks 👇\n\n${lines.join("\n")}\n\nThere's no wrong answer — the right pick depends on YOUR goals, budget and profile. Comment your choices and we'll tell you what each one really means for your plan.\n\n📲 TAG a friend and compare. 📌 SAVE for later.\n\n👉 Confused which to pick? Our free tools compare them → landingprep.com\nFollow ${HANDLE} for daily study-abroad help 🌍`,
     tags: buildTags("studyabroad", "thisorthat", "studyabroadcommunity", "internationalstudents", "studyabroad2026", "landingprep") };
 }
 // rotates the fresh engagement formats
@@ -1445,8 +1446,35 @@ function viralQuiz(c) {
   s += `<text x="540" y="1060" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.9)">landingprep.com</text>`;
   return s + `</svg>`;
 }
+// split-screen "This or That" — bold teal-vs-pink VS card (a deliberate break from the photo cards)
+function viralVersus(c) {
+  const L = "#0EA5E9", R = "#EC4899";
+  const pairs = (c.pairs || []).slice(0, 5);
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="vl" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="${lighten(L, 0.12)}"/><stop offset="1" stop-color="#075985"/></linearGradient>`;
+  s += `<linearGradient id="vr" x1="1" y1="0" x2="0.6" y2="1"><stop offset="0" stop-color="${lighten(R, 0.12)}"/><stop offset="1" stop-color="#9D174D"/></linearGradient></defs>`;
+  s += `<rect x="0" y="0" width="540" height="1080" fill="url(#vl)"/><rect x="540" y="0" width="540" height="1080" fill="url(#vr)"/>`;
+  s += `<line x1="540" y1="196" x2="540" y2="922" stroke="rgba(255,255,255,0.4)" stroke-width="4" stroke-dasharray="2 18" stroke-linecap="round"/>`;
+  // header pill
+  s += `<rect x="300" y="74" width="480" height="92" rx="46" fill="#0a0a0a"/><text x="540" y="136" text-anchor="middle" font-family="${HEAD}" font-size="52" fill="#fff" letter-spacing="1">THIS OR THAT?</text>`;
+  const top = 250, bottom = 884, rowH = (bottom - top) / Math.max(1, pairs.length);
+  const fit = (txt) => { let f = 58; while (txt.length * f * 0.56 > 410 && f > 26) f -= 2; return f; };
+  pairs.forEach((p, i) => {
+    const cy = top + i * rowH + rowH / 2;
+    const left = stripEmoji(String(p[0] || "")).toUpperCase(), right = stripEmoji(String(p[1] || "")).toUpperCase();
+    const lf = fit(left), rf = fit(right);
+    s += `<text x="476" y="${cy + lf * 0.34}" text-anchor="end" font-family="${HEAD}" font-size="${lf}" fill="#fff">${esc(left)}</text>`;
+    s += `<text x="604" y="${cy + rf * 0.34}" text-anchor="start" font-family="${HEAD}" font-size="${rf}" fill="#fff">${esc(right)}</text>`;
+    s += `<circle cx="540" cy="${cy}" r="36" fill="#0a0a0a"/><text x="540" y="${cy + 10}" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="26" fill="#FFD400" letter-spacing="0.5">OR</text>`;
+  });
+  s += `<rect x="0" y="946" width="1080" height="134" fill="rgba(0,0,0,0.38)"/>`;
+  s += `<text x="540" y="1004" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="36" fill="#fff" letter-spacing="0.5">COMMENT YOUR PICKS  &#8595;</text>`;
+  s += `<text x="540" y="1052" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="26" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
 async function renderViral(c) {
   if (c.style === "urgency") return Buffer.from(resvgPng(viralUrgency(c), 1080));
+  if (c.type === "versus") return Buffer.from(resvgPng(viralVersus(c), 1080));
   if (c.type === "quiz") return Buffer.from(resvgPng(viralQuiz(c), 1080));
   if (AIBG_ON && sharp && c.type !== "vocab") {
     try {
