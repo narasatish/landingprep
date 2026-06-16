@@ -673,8 +673,15 @@ const QUANT_MCQS = [
   { exam: "GRE", topic: "Exponents", q: "If x² = 49 and x < 0, what is x?", opts: ["7", "−7", "±7", "0"], ans: 1, sol: "x² = 49 gives x = 7 or −7. Since x < 0, x = −7." },
   { exam: "GMAT", topic: "Ratios", q: "If the ratio of boys to girls is 3:2 and there are 30 students, how many are girls?", opts: ["10", "12", "15", "18"], ans: 1, sol: "Total parts = 3 + 2 = 5. Girls = (2/5) × 30 = 12." },
   { exam: "GRE", topic: "Fractions", q: "What is 15% of 240?", opts: ["24", "30", "36", "40"], ans: 2, sol: "15% = 0.15. 0.15 × 240 = 36." },
+  { exam: "GRE", topic: "Percentages", q: "A number increased by 25% becomes 60. What was the number?", opts: ["44", "48", "50", "45"], ans: 1, sol: "x × 1.25 = 60, so x = 60 ÷ 1.25 = 48." },
+  { exam: "GMAT", topic: "Geometry", q: "A rectangle measures 8 by 5. What is its area?", opts: ["13", "26", "40", "45"], ans: 2, sol: "Area = length × width = 8 × 5 = 40." },
+  { exam: "GRE", topic: "Number properties", q: "What is the remainder when 47 is divided by 5?", opts: ["1", "2", "3", "4"], ans: 1, sol: "5 × 9 = 45, and 47 − 45 = 2." },
+  { exam: "GMAT", topic: "Averages", q: "The average of 4 numbers is 25. If three are 20, 24 and 30, what is the fourth?", opts: ["24", "26", "28", "30"], ans: 1, sol: "Sum = 25 × 4 = 100. Fourth = 100 − (20+24+30) = 26." },
 ];
 const VERBAL_MCQS = [
+  { exam: "GRE", topic: "Vocabulary", q: "PRAGMATIC most nearly means:", opts: ["Idealistic", "Practical", "Careless", "Hostile"], ans: 1, sol: "Pragmatic means dealing with things in a practical, realistic way." },
+  { exam: "GRE", topic: "Vocabulary", q: "Choose the antonym of BENEVOLENT:", opts: ["Kind", "Generous", "Malevolent", "Cheerful"], ans: 2, sol: "Benevolent means kind/well-meaning; its opposite is malevolent (wishing harm)." },
+  { exam: "GRE", topic: "Vocabulary", q: "METICULOUS most nearly means:", opts: ["Careless", "Very careful", "Lazy", "Loud"], ans: 1, sol: "Meticulous means showing great attention to detail — very careful." },
   { exam: "GRE", topic: "Vocabulary", q: "Choose the word closest in meaning to UBIQUITOUS:", opts: ["Rare", "Omnipresent", "Hidden", "Ancient"], ans: 1, sol: "Ubiquitous means existing everywhere at once — its synonym is omnipresent." },
   { exam: "GRE", topic: "Vocabulary", q: "EPHEMERAL most nearly means:", opts: ["Lasting forever", "Short-lived", "Colourful", "Heavy"], ans: 1, sol: "Ephemeral describes something that lasts a very short time — short-lived." },
   { exam: "GRE", topic: "Vocabulary", q: "Select the synonym for GREGARIOUS:", opts: ["Sociable", "Shy", "Dishonest", "Tired"], ans: 0, sol: "Gregarious means fond of company / sociable." },
@@ -840,10 +847,49 @@ function pickBrightFact(seed) {
     caption: `💥 ${b.headline}.\n\n${b.points.map((x) => "• " + x).join("\n")}\n\n💡 Most students hold themselves back over things that simply aren't true. Don't be one of them.\n\n📌 SAVE this. 📲 SHARE with someone who needs to hear it. 💬 Agree? 👇\n\n👉 Free study-abroad tools & guides → landingprep.com\nFollow ${HANDLE} for daily study-abroad facts 🌍`,
     tags: buildTags(...(b.tags || []), "studyabroad", "studyabroadtips", "internationalstudents", "landingprep") };
 }
-// rotates the fresh engagement formats (7 ways)
+// Roadmap / timeline — numbered milestones on a connecting line.
+const TIMELINES = [
+  { title: "12-month study-abroad roadmap", accent: "#2563EB", steps: [
+    { t: "Months 1–3", d: "Prep your English/aptitude test and shortlist universities" },
+    { t: "Months 4–6", d: "Write your SOP, get recommendation letters, submit applications" },
+    { t: "Months 7–9", d: "Collect offers, apply for scholarships, arrange your funds" },
+    { t: "Months 10–12", d: "Apply for your visa and prepare for the interview" },
+    { t: "Departure", d: "Book flights, accommodation and insurance — then go!" }] },
+  { title: "Student visa process", accent: "#0E9F6E", steps: [
+    { t: "Step 1", d: "Accept your offer and pay the deposit / get the CAS/I-20" },
+    { t: "Step 2", d: "Show genuine, sufficient funds for tuition + living" },
+    { t: "Step 3", d: "Complete the visa application and pay the fees" },
+    { t: "Step 4", d: "Do the biometrics / medical and attend the interview" },
+    { t: "Step 5", d: "Get the visa, then plan travel and accommodation" }] },
+  { title: "Scholarship application timeline", accent: "#E11D48", steps: [
+    { t: "9–12 months out", d: "Research scholarships you're eligible for and note deadlines" },
+    { t: "6–9 months out", d: "Draft a tailored motivation essay and gather documents" },
+    { t: "3–6 months out", d: "Get strong recommendation letters and finalise your essay" },
+    { t: "By the deadline", d: "Submit early — most awards close before your intake" }] },
+];
+function pickTimeline(seed) {
+  const t = TIMELINES[((seed % TIMELINES.length) + TIMELINES.length) % TIMELINES.length];
+  return { type: "timeline", noIntro: true, accent: t.accent, category: "ROADMAP", title: t.title, steps: t.steps,
+    caption: `🗺️ ${t.title} 👇\n\n${t.steps.map((x, i) => (i + 1) + ". " + x.t + " — " + x.d).join("\n")}\n\n💡 The students who get in aren't smarter — they just start earlier and follow a plan. Here's the plan.\n\n📌 SAVE this roadmap. 📲 SHARE with someone starting out. 💬 Which step are you on? 👇\n\n👉 Free tools for every step → landingprep.com\nFollow ${HANDLE} for daily study-abroad help 🌍`,
+    tags: buildTags("studyabroad", "studyabroadroadmap", "studentvisa", "studyabroad2026", "internationalstudents", "landingprep") };
+}
+// Comparison table — a clean A-vs-B table across several rows.
+const COMPARE_TABLES = [
+  { title: "IELTS vs PTE", a: "IELTS", b: "PTE", rows: [["Scoring", "0–9 bands", "10–90"], ["Results", "3–13 days", "~2 days"], ["Format", "Paper or computer", "Computer only"], ["Speaking", "With a human", "To a computer"], ["Accepted", "Worldwide", "Worldwide"]] },
+  { title: "USA vs Canada for study", a: "USA", b: "Canada", rows: [["Tuition/yr", "$25–55k", "$15–30k"], ["Work while study", "20 h/wk", "20 h/wk"], ["Post-study work", "1–3 yrs (OPT)", "Up to 3 yrs"], ["PR pathway", "Harder", "Clearer"], ["Top universities", "Many", "Many"]] },
+  { title: "MS vs MBA", a: "MS", b: "MBA", rows: [["Best for", "Technical depth", "Management"], ["Work exp needed", "Little / none", "2–5 yrs typical"], ["Duration", "1.5–2 yrs", "1–2 yrs"], ["Common test", "GRE", "GMAT"], ["Outcome", "Specialist roles", "Leadership roles"]] },
+  { title: "Scholarship vs Education loan", a: "Scholarship", b: "Loan", rows: [["Repay?", "No", "Yes, with interest"], ["Based on", "Merit / need", "Eligibility + collateral"], ["Covers", "Part or full", "Up to full"], ["Effort", "Essays + deadlines", "Paperwork"], ["Best move", "Apply to both", "Apply to both"]] },
+];
+function pickCompareTable(seed) {
+  const t = COMPARE_TABLES[((seed % COMPARE_TABLES.length) + COMPARE_TABLES.length) % COMPARE_TABLES.length];
+  return { type: "comparetable", noIntro: true, accent: "#7C3AED", category: "COMPARISON", title: t.title, colA: t.a, colB: t.b, rows: t.rows,
+    caption: `🆚 ${t.title} — the honest comparison 👇\n\n${t.rows.map((r) => "• " + r[0] + ": " + t.a + " " + r[1] + " · " + t.b + " " + r[2]).join("\n")}\n\n💡 There's no universal winner — the right choice depends on YOUR goals, budget and profile.\n\n📌 SAVE this. 📲 SHARE with someone deciding. 💬 Which would you pick? 👇\n\n👉 Compare your options free → landingprep.com\nFollow ${HANDLE} for daily study-abroad guides 🌍`,
+    tags: buildTags("studyabroad", "studyabroadcomparison", "internationalstudents", "studyabroad2026", "landingprep") };
+}
+// rotates the fresh engagement formats (9 ways)
 function pickEngagement(seed) {
-  const r = seed % 7, s = _mix(seed + 53);
-  const f = r === 0 ? pickMythFact(s) : r === 1 ? pickFlags(s) : r === 2 ? pickInsiderTips(s) : r === 3 ? pickThisOrThat(s) : r === 4 ? pickStatHero(s) : r === 5 ? pickTransformation(s) : pickBrightFact(s);
+  const r = seed % 9, s = _mix(seed + 53);
+  const f = r === 0 ? pickMythFact(s) : r === 1 ? pickFlags(s) : r === 2 ? pickInsiderTips(s) : r === 3 ? pickThisOrThat(s) : r === 4 ? pickStatHero(s) : r === 5 ? pickTransformation(s) : r === 6 ? pickBrightFact(s) : r === 7 ? pickTimeline(s) : pickCompareTable(s);
   return f || pickMythFact(s) || pickInsiderTips(s);
 }
 const SLOT_PICKERS = [pickNewsRotating, pickCountryOrCollege, pickExamPrep, pickScholarship, pickRotatingExtra];
@@ -1582,9 +1628,60 @@ function viralBright(c) {
   s += `<text x="540" y="1042" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.94)">landingprep.com</text>`;
   return s + `</svg>`;
 }
+// Roadmap / timeline — numbered milestones on a vertical connecting line.
+function viralTimeline(c) {
+  const a = c.accent || "#2563EB", steps = (c.steps || []).slice(0, 5);
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="tlg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111a2e"/><stop offset="1" stop-color="#070b14"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#tlg)"/>`;
+  const cat = clip(stripEmoji(c.category || "ROADMAP"), 18).toUpperCase(), pw = 44 + cat.length * 16;
+  s += `<rect x="72" y="78" width="${Math.round(pw)}" height="58" rx="14" fill="${a}"/><text x="${72 + pw / 2}" y="116" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="26" fill="#fff" letter-spacing="1">${esc(cat)}</text>`;
+  const tl = wrapPlain(stripEmoji(c.title || "").toUpperCase(), 22).slice(0, 2); let ty = 210;
+  tl.forEach((ln, i) => { s += `<text x="72" y="${ty + i * 64}" font-family="${HEAD}" font-size="62" fill="#fff">${esc(ln)}</text>`; });
+  const top = ty + tl.length * 64 + 30, bottom = 968, n = Math.max(1, steps.length), rowH = (bottom - top) / n, cx = 116;
+  s += `<line x1="${cx}" y1="${top + 24}" x2="${cx}" y2="${top + (n - 1) * rowH + 24}" stroke="${hexA(a, 0.5)}" stroke-width="5"/>`;
+  steps.forEach((st, i) => {
+    const y = top + i * rowH;
+    s += `<circle cx="${cx}" cy="${y + 24}" r="28" fill="${a}"/><text x="${cx}" y="${y + 33}" text-anchor="middle" font-family="${HEAD}" font-size="30" fill="#fff">${i + 1}</text>`;
+    s += `<text x="${cx + 56}" y="${y + 18}" font-family="${HEAD}" font-size="38" fill="#fff">${esc(stripEmoji(st.t || "").toUpperCase())}</text>`;
+    const dl = wrapPlain(stripEmoji(st.d || ""), 44).slice(0, 2);
+    dl.forEach((ln, j) => { s += `<text x="${cx + 56}" y="${y + 56 + j * 36}" font-family="${BODY}" font-weight="500" font-size="29" fill="#c7d2e3">${esc(ln)}</text>`; });
+  });
+  s += `<text x="540" y="1042" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="26" fill="rgba(255,255,255,0.9)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+// Comparison table — clean A-vs-B rows.
+function viralCompareTable(c) {
+  const a = c.accent || "#7C3AED", rows = (c.rows || []).slice(0, 6);
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="ctg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f1626"/><stop offset="1" stop-color="#070a12"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#ctg)"/>`;
+  const tl = wrapPlain(stripEmoji(c.title || "").toUpperCase(), 20).slice(0, 2); let ty = 150;
+  s += `<rect x="72" y="80" width="${44 + Math.min((c.category || "COMPARISON").length, 18) * 16}" height="56" rx="14" fill="${a}"/><text x="${72 + (44 + Math.min((c.category || "COMPARISON").length, 18) * 16) / 2}" y="118" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="25" fill="#fff" letter-spacing="1">${esc(clip(stripEmoji(c.category || "COMPARISON"), 18).toUpperCase())}</text>`;
+  tl.forEach((ln, i) => { s += `<text x="72" y="${ty + 60 + i * 60}" font-family="${HEAD}" font-size="58" fill="#fff">${esc(ln)}</text>`; });
+  let y = ty + 60 + tl.length * 60 + 26;
+  // column headers
+  const xa = 590, xb = 838, colW = 232;
+  s += `<rect x="${xa - colW / 2}" y="${y}" width="${colW}" height="64" rx="14" fill="${hexA(a, 0.22)}"/><text x="${xa}" y="${y + 42}" text-anchor="middle" font-family="${HEAD}" font-size="34" fill="#fff">${esc(stripEmoji(c.colA || "A").toUpperCase())}</text>`;
+  s += `<rect x="${xb - colW / 2}" y="${y}" width="${colW}" height="64" rx="14" fill="${hexA("#10B981", 0.22)}"/><text x="${xb}" y="${y + 42}" text-anchor="middle" font-family="${HEAD}" font-size="34" fill="#fff">${esc(stripEmoji(c.colB || "B").toUpperCase())}</text>`;
+  y += 80;
+  const rh = Math.min(116, Math.floor((958 - y) / Math.max(1, rows.length)));
+  rows.forEach((r, i) => {
+    if (i % 2 === 0) s += `<rect x="64" y="${y}" width="952" height="${rh}" rx="14" fill="rgba(255,255,255,0.04)"/>`;
+    const lab = wrapPlain(stripEmoji(String(r[0] || "")), 16).slice(0, 2);
+    lab.forEach((ln, j) => { s += `<text x="86" y="${y + (lab.length > 1 ? 40 : rh / 2 + 10) + j * 34}" font-family="${BODY}" font-weight="700" font-size="27" fill="${lighten(a, 0.4)}">${esc(ln)}</text>`; });
+    const av = wrapPlain(stripEmoji(String(r[1] || "")), 14).slice(0, 2);
+    av.forEach((ln, j) => { s += `<text x="${xa}" y="${y + (av.length > 1 ? 40 : rh / 2 + 10) + j * 32}" text-anchor="middle" font-family="${BODY}" font-weight="600" font-size="26" fill="#fff">${esc(ln)}</text>`; });
+    const bv = wrapPlain(stripEmoji(String(r[2] || "")), 14).slice(0, 2);
+    bv.forEach((ln, j) => { s += `<text x="${xb}" y="${y + (bv.length > 1 ? 40 : rh / 2 + 10) + j * 32}" text-anchor="middle" font-family="${BODY}" font-weight="600" font-size="26" fill="#fff">${esc(ln)}</text>`; });
+    y += rh;
+  });
+  s += `<text x="540" y="1042" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="26" fill="rgba(255,255,255,0.9)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
 async function renderViral(c) {
   if (c.style === "urgency") return Buffer.from(resvgPng(viralUrgency(c), 1080));
   if (c.type === "versus") return Buffer.from(resvgPng(viralVersus(c), 1080));
+  if (c.type === "timeline") return Buffer.from(resvgPng(viralTimeline(c), 1080));
+  if (c.type === "comparetable") return Buffer.from(resvgPng(viralCompareTable(c), 1080));
   if (c.type === "bignum") return Buffer.from(resvgPng(viralBigNum(c), 1080));
   if (c.type === "beforeafter") return Buffer.from(resvgPng(viralBeforeAfter(c), 1080));
   if (c.type === "brightfact") return Buffer.from(resvgPng(viralBright(c), 1080));
