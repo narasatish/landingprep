@@ -597,11 +597,15 @@ function pickScholarship(seed) {
   if (/^[A-Za-z]{3}$/.test(s.apply) && (seed % 2 === 1)) {
     out.style = "urgency";
     out.urgentTag = "SCHOLARSHIP DEADLINE";
-    out.date = s.apply.toUpperCase() + " " + YEAR;
+    // Deadlines recur yearly and we hold only the month — show the NEXT upcoming occurrence
+    // (never a past date) and tell users to confirm the exact date, so we never assert a false one.
+    const _mIdx = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"].indexOf(s.apply.toLowerCase());
+    const _now = new Date(); const _dYear = (_mIdx >= 0 && _mIdx < _now.getUTCMonth()) ? _now.getUTCFullYear() + 1 : _now.getUTCFullYear();
+    out.date = "~ " + s.apply.toUpperCase() + " " + _dYear;
     out.urgentLabel = s.full + "  ·  " + s.country;
     out.chips = [s.level, clip(s.award, 20), "Free to apply"];
     out.pct = 56 + (seed % 36);
-    out.noteLeft = "Apply by " + s.apply + " " + YEAR;
+    out.noteLeft = "Typical deadline — confirm the exact date";
   }
   return out;
 }

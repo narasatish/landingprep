@@ -766,6 +766,8 @@ function scholarshipPage(id) {
     { q: `What scholarships can I get to study in ${d.name}?`, a: `Top options include ${d.list.slice(0, 3).map(s => s.split(" (")[0]).join(", ")}. Use the free LandingPrep Scholarship Finder to filter by level and funding type.` },
     { q: `Are there fully funded scholarships for ${d.name}?`, a: `Yes — several scholarships for ${d.name} cover full tuition plus living costs. ${d.list[0]} is one of the most generous.` },
     { q: `Do I need IELTS for a ${d.name} scholarship?`, a: `Most ${d.name} scholarships require proof of English (IELTS/TOEFL) plus university admission. Practise free on LandingPrep to hit the required score.` },
+    { q: `How do I apply for a scholarship to study in ${d.name}?`, a: `Research scholarships that match your profile (course level, field, nationality). Prepare strong academic records, an SOP, 2–3 LORs and English test scores. Apply early — most deadlines fall 6–9 months before intake.` },
+    { q: `What is the typical deadline for ${d.name} scholarships?`, a: `Deadlines vary widely but often cluster 2–3 times a year around main intakes. Always check the official scholarship website — applying early improves your odds and gives you backup time.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Scholarships</a> › Study in ${d.name}</p>
@@ -775,16 +777,44 @@ function scholarshipPage(id) {
   <p class="lead">Fully-funded and partial scholarships for international students heading to ${d.name}. Filter them all free in the Scholarship Finder, then practise for the English test you'll need.</p>
   <a class="cta" href="/#/colleges">▶ Open the free Scholarship Finder</a>
 </section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Many fully-funded scholarships cover tuition and living costs for international students in ${d.name}. Top options include ${d.list.slice(0, 2).map(s => s.split(" (")[0]).join(" and ")}. Always confirm eligibility and deadlines on the official scholarship website, as requirements change each year.</div>
 <div class="card">
   <h2>Top scholarships for ${d.name}</h2>
   <ul>${d.list.map(s => `<li>${s}</li>`).join("")}</ul>
   <p>Each has its own eligibility and deadline — many require strong academics, leadership and a high IELTS/TOEFL score. The free finder lets you compare award size, level and funding type side by side.</p>
+</div>
+<div class="card">
+  <h2>What these scholarships cover</h2>
+  <p>Fully-funded scholarships typically cover tuition fees in full, plus monthly or annual living allowances (€500–1,500/month typical). Some include airfare and health insurance. Always check the official page for exact details — funding amounts vary by scholarship, level (Master's vs PhD), and year.</p>
+  <p class="note">Partial scholarships cover only tuition or a fixed amount; you fund living costs separately. Compare all awards in the finder.</p>
+</div>
+<div class="card">
+  <h2>How to apply for scholarships to study in ${d.name}</h2>
+  <ol>
+    <li><strong>Know your profile:</strong> Bachelor's, Master's, or PhD? Which field or course? Check the finder to shortlist matching scholarships.</li>
+    <li><strong>Gather documents:</strong> Academic transcripts, passport, CV, SOP (Statement of Purpose), 2–3 letters of reference from professors or employers, and a clean English test score (IELTS/TOEFL).</li>
+    <li><strong>Take an English test early:</strong> Most scholarships need proof — take a free IELTS or TOEFL mock here first to find your gap.</li>
+    <li><strong>Write a strong SOP:</strong> Name the specific course and university, explain why you chose it, how it fits your career, and why you deserve funding. Generic essays get rejected.</li>
+    <li><strong>Submit before the deadline:</strong> Apply 2–3 months early — funding and interview slots fill fast. Confirm the exact deadline on the official scholarship website.</li>
+  </ol>
+</div>
+<div class="card">
+  <h2>Who can apply: typical eligibility</h2>
+  <ul>
+    <li><strong>Nationality:</strong> Most scholarships are open to international students globally, but some favour or require specific nationalities. Check each award.</li>
+    <li><strong>Academic record:</strong> Usually require a strong bachelor's (3.0+ GPA / upper second-class honours) for Master's scholarships; excellent Master's for PhD.</li>
+    <li><strong>English proficiency:</strong> IELTS Band 6.5–7.5 or TOEFL 80–100 typical. Prove it with an official test score from an exam authority.</li>
+    <li><strong>Work experience:</strong> Some prefer applicants with 2–5 years of relevant work experience; others welcome fresh graduates.</li>
+  </ul>
+  <p class="note">Eligibility varies by scholarship — always confirm on the official website. Test these requirements early so you know if you're on track.</p>
 </div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `💸 Free Scholarship Finder`, href: `/#/colleges` },
   { label: `🏛️ Top universities in ${d.name}`, href: `/study-abroad/top-universities-in-${id}/` },
   { label: `Free IELTS mock test`, href: `/mock-test/ielts/` },
+  { label: `Free TOEFL mock test`, href: `/mock-test/toefl/` },
+  { label: `How to write an SOP`, href: `/blog/how-to-write-sop/` },
   { label: `IELTS score for ${d.name}`, href: `/eligibility/` },
 ])}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
@@ -1981,7 +2011,8 @@ function examForCountryPage(x) {
   const faqs = [
     { q: `What ${x.exam} score do I need for ${x.c}?`, a: `Typically ${x.study}. ${x.extra}` },
     { q: `Is ${x.exam} accepted in ${x.c}?`, a: `Yes — ${x.extra}` },
-    { q: `How can I reach that score for free?`, a: `Take free ${x.exam} mock tests, learn the strategy in the PPT lessons, and check your writing/speaking band with the free band checker.` },
+    { q: `How can I reach that score for free?`, a: `Take free ${x.exam} mock tests, learn the strategy in the prep lessons, and check your writing/speaking band with the free band checker.` },
+    { q: `How long does it take to reach the required ${x.exam} score?`, a: `Most learners improve 1–2 score points (0.5 band in IELTS terms) every 4–6 weeks of focused, feedback-driven practice. Start early — aim to sit the test 2–3 months before your application deadline.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › ${x.exam} for ${x.c}</p>
@@ -1989,14 +2020,37 @@ function examForCountryPage(x) {
 <h1>${x.exam} Score for ${x.c}: Study &amp; Visa Requirements</h1>
 <p class="lead">For ${x.c}, the typical ${x.exam} requirement is <strong>${x.study}</strong>. ${esc(x.extra)}</p>
 <a class="cta" href="/mock-test/${x.slug}/">▶ Take a free ${x.exam} mock test</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> For ${x.c}, you typically need <strong>${x.study}</strong> on ${x.exam}. ${esc(x.extra)} Always confirm the exact requirement on your target university's official admission page or the visa authority's website, as scores vary by course and change annually.</div>
+<div class="card">
+  <h2>Typical ${x.exam} requirement for ${x.c}</h2>
+  <p><strong>${x.study}</strong></p>
+  <p class="note">${esc(x.extra)}</p>
+  <p class="note">Guidance only — always confirm the exact requirement with your chosen university or visa programme, as minimums vary by course level and update yearly.</p>
+</div>
+<div class="card">
+  <h2>What different ${x.exam} scores mean for ${x.c}</h2>
+  <p>${x.slug === "ielts" ? "IELTS Band 5.5 = Foundation level (basic communication); Band 6.0–6.5 = Competent for most Master's programmes; Band 7.0+ = Strong candidate for top universities and scholarship programmes." : x.slug === "toefl" ? "TOEFL 78–85 = Meets most universities; 85–100 = Competitive for strong programmes; 100+ = Top-tier university and scholarship qualifier." : x.slug === "pte" ? "PTE 50 = Competent; 65 = Proficient for most study visas; 79+ = Superior (strong visa/scholarship chances)." : "CELPIP CLB 9 = Very high proficiency; CLB 8 = Strong proficiency for most universities; CLB 7 = Basic university entry."}</p>
+  <p class="note">Aim slightly above the minimum — higher scores strengthen scholarships and visa applications, especially with competitive programmes.</p>
+</div>
+<div class="card">
+  <h2>How to hit your ${x.exam} target for ${x.c}</h2>
+  <ol>
+    <li><strong>Diagnose.</strong> Take a free ${x.exam} mock test to see your current score and your weakest section.</li>
+    <li><strong>Learn the strategy.</strong> Study the free ${x.exam} prep lessons — focus on high-yield tips for the sections where you dropped points.</li>
+    <li><strong>Practise under real conditions.</strong> Do full-length timed mocks every 1–2 weeks. Track your score progress to confirm improvement.</li>
+    <li><strong>Get feedback.</strong> For speaking and writing, use the free band checker to understand exactly where you lost marks, then redo weak answers.</li>
+    <li><strong>Test 2–3 times if needed.</strong> Most learners book the real exam, and if they miss by a few points, they resit once or twice. Budget time for retakes.</li>
+  </ol>
+</div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free ${x.exam} mock test`, href: `/mock-test/${x.slug}/` },
   { label: `${x.exam} prep lessons`, href: "/prep-lessons/" },
   { label: "Free band checker", href: "/ielts-writing-checker/" },
   { label: `Student guide to ${x.c === "USA" ? "New York" : x.c === "Canada" ? "Toronto" : x.c === "Australia" ? "Sydney" : x.c === "UK" ? "London" : x.c === "Germany" ? "Berlin" : "Dublin"}`, href: "/student-city-guides/" },
+  { label: `Study in ${x.c}`, href: `/study-abroad/top-universities-in-${x.c.toLowerCase().replace(/\s+/g, "-")}/` },
 ])}`;
-  emit(path, head({ title, desc, path, kw: `${x.exam.toLowerCase()} score for ${x.c.toLowerCase()}, ${x.exam.toLowerCase()} requirement ${x.c.toLowerCase()}, ${x.exam.toLowerCase()} for ${x.c.toLowerCase()} study visa, study in ${x.c.toLowerCase()} ${x.exam.toLowerCase()}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${x.exam} for ${x.c}`, path }])] }) + shell(inner));
+  emit(path, head({ title, desc, path, kw: `${x.exam.toLowerCase()} score for ${x.c.toLowerCase()}, ${x.exam.toLowerCase()} requirement ${x.c.toLowerCase()}, ${x.exam.toLowerCase()} for ${x.c.toLowerCase()} study visa, study in ${x.c.toLowerCase()} ${x.exam.toLowerCase()}, ${x.exam.toLowerCase()} score to study in ${x.c.toLowerCase()}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${x.exam} for ${x.c}`, path }])] }) + shell(inner));
 }
 
 // ── "[Exam] vs [Exam]" comparison pages ─────────────────────────────────────
