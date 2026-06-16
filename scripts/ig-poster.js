@@ -800,10 +800,50 @@ function pickThisOrThat(seed) {
     caption: `🤔 This or that? Comment your picks 👇\n\n${lines.join("\n")}\n\nThere's no wrong answer — the right pick depends on YOUR goals, budget and profile. Comment your choices and we'll tell you what each one really means for your plan.\n\n📲 TAG a friend and compare. 📌 SAVE for later.\n\n👉 Confused which to pick? Our free tools compare them → landingprep.com\nFollow ${HANDLE} for daily study-abroad help 🌍`,
     tags: buildTags("studyabroad", "thisorthat", "studyabroadcommunity", "internationalstudents", "studyabroad2026", "landingprep") };
 }
-// rotates the fresh engagement formats
+// Big-number hero — one giant, accurate, evergreen stat (changing live numbers stay in the
+// Express Entry post; these never go stale).
+const STAT_HEROES = [
+  { number: "€0", label: "tuition at most German public universities", sub: "Even for international students — you pay only a small semester fee.", accent: "#1D4ED8", tags: ["studyingermany", "freeeducation"] },
+  { number: "5,000+", label: "universities accept the Duolingo English Test", sub: "The cheapest, fastest way to prove your English.", accent: "#16A34A", tags: ["duolingo", "duolingoenglishtest"] },
+  { number: "20 hrs", label: "a week you can work on most student visas", sub: "Full-time in the holidays — but it won't cover tuition, so plan your funds.", accent: "#7C3AED", tags: ["studentvisa", "studyabroad"] },
+  { number: "2", label: "main intakes a year: Fall & Spring", sub: "Fall has the most seats and scholarships; Spring is the second chance.", accent: "#0EA5E9", tags: ["studyabroad", "intake"] },
+  { number: "6 mo", label: "before your intake to start applying", sub: "The best scholarships and seats close earliest — start now.", accent: "#E11D48", tags: ["studyabroad", "studyabroad2026"] },
+];
+function pickStatHero(seed) {
+  const h = STAT_HEROES[((seed % STAT_HEROES.length) + STAT_HEROES.length) % STAT_HEROES.length];
+  return { type: "bignum", noIntro: true, accent: h.accent, category: "BY THE NUMBERS", number: h.number, label: h.label, sub: h.sub,
+    caption: `📊 ${h.number} — ${h.label}.\n\n${h.sub}\n\n💡 Numbers like this change how you plan. Save it, factor it in, and build your shortlist around the reality — not the myths.\n\n📌 SAVE this. 📲 SHARE with someone planning their move. 💬 Surprised? Comment 👇\n\n👉 Free study-abroad tools & guides → landingprep.com\nFollow ${HANDLE} for daily study-abroad facts 🌍`,
+    tags: buildTags(...(h.tags || []), "studyabroad", "internationalstudents", "studyabroad2026", "landingprep") };
+}
+// Before → After transformation — the journey + the steps that made it happen.
+const TRANSFORMATIONS = [
+  { before: "IELTS 6.0", after: "IELTS 7.5", title: "How to jump 1.5 bands", steps: ["Learned the band descriptors instead of memorising answers", "Did timed full tests, then reviewed every single error", "Recorded speaking and fixed fluency + pronunciation", "Built topic vocabulary and used it in writing daily"], accent: "#2563EB", tags: ["ielts", "ieltspreparation"] },
+  { before: "Rejected", after: "Admitted", title: "What changed in the application", steps: ["Rewrote a generic SOP into a specific, story-led one", "Applied to Safe / Target / Reach, not only dream schools", "Got stronger, tailored recommendation letters", "Applied early — before the scholarship deadlines closed"], accent: "#16A34A", tags: ["studyabroad", "sop"] },
+  { before: "No plan", after: "Visa in hand", title: "The 12-month roadmap that worked", steps: ["Months 1–3: test prep + shortlist universities", "Months 4–6: SOP, recommendation letters, applications", "Months 7–9: offers, scholarships, arrange funds", "Months 10–12: visa application + interview prep"], accent: "#7C3AED", tags: ["studentvisa", "studyabroad"] },
+];
+function pickTransformation(seed) {
+  const t = TRANSFORMATIONS[((seed % TRANSFORMATIONS.length) + TRANSFORMATIONS.length) % TRANSFORMATIONS.length];
+  return { type: "beforeafter", noIntro: true, accent: t.accent, category: "BEFORE → AFTER", title: t.title, before: t.before, after: t.after, steps: t.steps,
+    caption: `✨ ${t.before} → ${t.after}: ${t.title} 👇\n\n${t.steps.map((x, i) => (i + 1) + ". " + x).join("\n")}\n\n💡 The jump isn't luck — it's a few deliberate changes done consistently. Steal this and make it yours.\n\n📌 SAVE this roadmap. 📲 SHARE with someone stuck. 💬 Where are you right now? 👇\n\n👉 Free practice + tools to get there → landingprep.com\nFollow ${HANDLE} for daily study-abroad help 🌍`,
+    tags: buildTags(...(t.tags || []), "studyabroad", "studyabroadtips", "internationalstudents", "landingprep") };
+}
+// Bright "reality check" — a bold statement on a colourful, non-photo card.
+const BRIGHT_FACTS = [
+  { headline: "You don't need IELTS 8 to study abroad", points: ["Most Master's accept 6.5 overall", "Only a few competitive courses want 7.0+", "Aim 0.5 above the minimum to be safe"], accent: "#EC4899", tags: ["ielts", "ieltspreparation"] },
+  { headline: "Free-tuition countries actually exist", points: ["Germany & Norway: public unis ≈ €0", "You pay living costs + a small fee", "Many Master's are taught in English"], accent: "#0EA5E9", tags: ["studyabroad", "freeeducation"] },
+  { headline: "Your SOP matters more than your GPA", points: ["A clear story beats a perfect transcript", "Show WHY this course and this university", "Tie everything to a real career goal"], accent: "#16A34A", tags: ["sop", "studyabroad"] },
+  { headline: "You can study abroad on a budget", points: ["Affordable countries + scholarships exist", "Part-time work covers some living costs", "Plan tuition + living before you apply"], accent: "#F59E0B", tags: ["studyabroad", "scholarships"] },
+];
+function pickBrightFact(seed) {
+  const b = BRIGHT_FACTS[((seed % BRIGHT_FACTS.length) + BRIGHT_FACTS.length) % BRIGHT_FACTS.length];
+  return { type: "brightfact", noIntro: true, accent: b.accent, category: "REALITY CHECK", headline: b.headline, points: b.points,
+    caption: `💥 ${b.headline}.\n\n${b.points.map((x) => "• " + x).join("\n")}\n\n💡 Most students hold themselves back over things that simply aren't true. Don't be one of them.\n\n📌 SAVE this. 📲 SHARE with someone who needs to hear it. 💬 Agree? 👇\n\n👉 Free study-abroad tools & guides → landingprep.com\nFollow ${HANDLE} for daily study-abroad facts 🌍`,
+    tags: buildTags(...(b.tags || []), "studyabroad", "studyabroadtips", "internationalstudents", "landingprep") };
+}
+// rotates the fresh engagement formats (7 ways)
 function pickEngagement(seed) {
-  const r = seed % 4, s = _mix(seed + 53);
-  const f = r === 0 ? pickMythFact(s) : r === 1 ? pickFlags(s) : r === 2 ? pickInsiderTips(s) : pickThisOrThat(s);
+  const r = seed % 7, s = _mix(seed + 53);
+  const f = r === 0 ? pickMythFact(s) : r === 1 ? pickFlags(s) : r === 2 ? pickInsiderTips(s) : r === 3 ? pickThisOrThat(s) : r === 4 ? pickStatHero(s) : r === 5 ? pickTransformation(s) : pickBrightFact(s);
   return f || pickMythFact(s) || pickInsiderTips(s);
 }
 const SLOT_PICKERS = [pickNewsRotating, pickCountryOrCollege, pickExamPrep, pickScholarship, pickRotatingExtra];
@@ -1472,9 +1512,82 @@ function viralVersus(c) {
   s += `<text x="540" y="1052" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="26" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
   return s + `</svg>`;
 }
+// Big-number hero — one giant accurate stat dominating the card.
+function viralBigNum(c) {
+  const a = c.accent || "#2563EB";
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="bn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${lighten(a, 0.16)}"/><stop offset="1" stop-color="${a}"/></linearGradient></defs>`;
+  s += `<rect width="1080" height="1080" fill="url(#bn)"/><circle cx="120" cy="980" r="200" fill="rgba(255,255,255,0.06)"/><circle cx="990" cy="120" r="150" fill="rgba(255,255,255,0.07)"/>`;
+  const cat = clip(stripEmoji(c.category || "BY THE NUMBERS"), 22).toUpperCase(), pw = 44 + cat.length * 16;
+  s += `<rect x="72" y="92" width="${Math.round(pw)}" height="62" rx="31" fill="rgba(0,0,0,0.22)"/><text x="${72 + pw / 2}" y="132" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="#fff" letter-spacing="1.5">${esc(cat)}</text>`;
+  const num = stripEmoji(String(c.number || "")); let nf = 300; while (num.length * nf * 0.6 > 980 && nf > 110) nf -= 8;
+  s += `<text x="540" y="540" text-anchor="middle" font-family="${HEAD}" font-size="${nf}" fill="#fff" letter-spacing="-4">${esc(num)}</text>`;
+  const ll = wrapPlain(stripEmoji(c.label || ""), 28).slice(0, 3); let ly = 640;
+  ll.forEach((ln, i) => { s += `<text x="540" y="${ly + i * 54}" text-anchor="middle" font-family="${HEAD}" font-size="46" fill="#fff">${esc(ln.toUpperCase())}</text>`; });
+  if (c.sub) { const sl = wrapPlain(stripEmoji(c.sub), 48).slice(0, 2); let sy = ly + ll.length * 54 + 34; sl.forEach((ln, i) => { s += `<text x="540" y="${sy + i * 42}" text-anchor="middle" font-family="${BODY}" font-weight="500" font-size="30" fill="rgba(255,255,255,0.94)">${esc(ln)}</text>`; }); }
+  s += `<text x="540" y="1042" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+// Before → After transformation — the two states + the steps that bridged them.
+function viralBeforeAfter(c) {
+  const a = c.accent || "#2563EB", steps = (c.steps || []).slice(0, 4);
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="ba" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101a30"/><stop offset="1" stop-color="#070b15"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#ba)"/>`;
+  const title = stripEmoji(c.title || "").toUpperCase(), tl = wrapPlain(title, 24).slice(0, 2); let ty = 224;
+  s += `<rect x="72" y="78" width="${44 + Math.min(title.length, 22) * 17}" height="58" rx="14" fill="${a}"/><text x="${72 + (44 + Math.min(title.length, 22) * 17) / 2}" y="117" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="26" fill="#fff" letter-spacing="1">BEFORE &#8594; AFTER</text>`;
+  tl.forEach((ln, i) => { s += `<text x="72" y="${ty + i * 64}" font-family="${HEAD}" font-size="66" fill="#fff">${esc(ln)}</text>`; });
+  const py = ty + tl.length * 64 + 34;
+  const fit = (t) => { let f = 56; while (t.length * f * 0.56 > 330 && f > 26) f -= 2; return f; };
+  // BEFORE box
+  s += `<rect x="72" y="${py}" width="396" height="172" rx="24" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="1.5"/>`;
+  s += `<text x="270" y="${py + 52}" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="24" fill="#94a3b8" letter-spacing="2">BEFORE</text>`;
+  s += `<text x="270" y="${py + 128}" text-anchor="middle" font-family="${HEAD}" font-size="${fit(stripEmoji(c.before || ""))}" fill="#fff">${esc(stripEmoji(c.before || ""))}</text>`;
+  // AFTER box
+  s += `<rect x="612" y="${py}" width="396" height="172" rx="24" fill="${hexA(a, 0.2)}" stroke="${a}" stroke-width="2.5"/>`;
+  s += `<text x="810" y="${py + 52}" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="24" fill="${lighten(a, 0.45)}" letter-spacing="2">AFTER</text>`;
+  s += `<text x="810" y="${py + 128}" text-anchor="middle" font-family="${HEAD}" font-size="${fit(stripEmoji(c.after || ""))}" fill="#fff">${esc(stripEmoji(c.after || ""))}</text>`;
+  // arrow between (vector)
+  const ay = py + 86; s += `<path d="M488 ${ay} h84 M560 ${ay - 18} l24 18 -24 18" fill="none" stroke="${a}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>`;
+  // steps
+  let y = py + 232; const ss = `WHAT CHANGED`;
+  s += `<text x="72" y="${y}" font-family="${BODY}" font-weight="800" font-size="26" fill="${lighten(a, 0.4)}" letter-spacing="2">${ss}</text>`; y += 30;
+  let fs = 31, lh = 40, gap = 16;
+  let wrapped = steps.map((p) => wrapPlain(stripEmoji(String(p)), 38));
+  const usedH = () => wrapped.reduce((n, ln) => n + ln.length * lh, 0) + (steps.length) * gap;
+  while (usedH() > (982 - y) && fs > 22) { fs -= 2; lh -= 2; wrapped = steps.map((p) => wrapPlain(stripEmoji(String(p)), Math.round(38 * 31 / fs))); }
+  wrapped.forEach((lns, i) => {
+    s += `<circle cx="96" cy="${y + 14}" r="20" fill="${a}"/><text x="96" y="${y + 22}" text-anchor="middle" font-family="${HEAD}" font-size="25" fill="#fff">${i + 1}</text>`;
+    lns.forEach((ln, j) => { s += `<text x="138" y="${y + 22 + j * lh}" font-family="${BODY}" font-weight="${j === 0 ? 600 : 400}" font-size="${fs}" fill="#fff">${esc(ln)}</text>`; });
+    y += lns.length * lh + gap;
+  });
+  s += `<text x="540" y="1052" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="26" fill="rgba(255,255,255,0.9)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
+// Bright "reality check" — bold statement + supporting chips on a colourful, non-photo card.
+function viralBright(c) {
+  const a = c.accent || "#EC4899", pts = (c.points || []).slice(0, 3);
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">`;
+  s += `<defs><linearGradient id="brf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${lighten(a, 0.2)}"/><stop offset="1" stop-color="${a}"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#brf)"/>`;
+  s += brDots(72, 78, "rgba(255,255,255,0.45)") + brDots(930, 928, "rgba(255,255,255,0.4)");
+  const cat = clip(stripEmoji(c.category || "REALITY CHECK"), 20).toUpperCase(), pw = 44 + cat.length * 16;
+  s += `<rect x="72" y="150" width="${Math.round(pw)}" height="60" rx="30" fill="rgba(0,0,0,0.2)"/><text x="${72 + pw / 2}" y="190" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="27" fill="#fff" letter-spacing="1.5">${esc(cat)}</text>`;
+  const hl = wrapPlain(stripEmoji(c.headline || ""), 17).slice(0, 4), hsize = 92; let hy = 300;
+  hl.forEach((ln, i) => { s += `<text x="72" y="${hy + i * (hsize + 4)}" font-family="${HEAD}" font-size="${hsize}" fill="#fff" letter-spacing="-1">${esc(ln.toUpperCase())}</text>`; });
+  let y = hy + hl.length * (hsize + 4) + 30;
+  pts.forEach((p) => { const tl = wrapPlain(stripEmoji(String(p)), 38).slice(0, 2); const ch = 28 + tl.length * 40;
+    s += `<rect x="72" y="${y}" width="936" height="${ch}" rx="20" fill="rgba(255,255,255,0.16)"/><rect x="72" y="${y}" width="12" height="${ch}" rx="6" fill="#fff"/>`;
+    tl.forEach((ln, j) => { s += `<text x="116" y="${y + (tl.length > 1 ? 44 : ch / 2 + 11) + j * 40}" font-family="${BODY}" font-weight="600" font-size="33" fill="#fff">${esc(ln)}</text>`; });
+    y += ch + 20;
+  });
+  s += `<text x="540" y="1042" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.94)">landingprep.com</text>`;
+  return s + `</svg>`;
+}
 async function renderViral(c) {
   if (c.style === "urgency") return Buffer.from(resvgPng(viralUrgency(c), 1080));
   if (c.type === "versus") return Buffer.from(resvgPng(viralVersus(c), 1080));
+  if (c.type === "bignum") return Buffer.from(resvgPng(viralBigNum(c), 1080));
+  if (c.type === "beforeafter") return Buffer.from(resvgPng(viralBeforeAfter(c), 1080));
+  if (c.type === "brightfact") return Buffer.from(resvgPng(viralBright(c), 1080));
   if (c.type === "quiz") return Buffer.from(resvgPng(viralQuiz(c), 1080));
   if (AIBG_ON && sharp && c.type !== "vocab") {
     try {
