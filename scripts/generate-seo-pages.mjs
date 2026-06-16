@@ -214,7 +214,7 @@ function head({ title, desc, path, kw, jsonLdBlocks }) {
 <link rel="icon" href="/icon.svg" type="image/svg+xml"/>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ60SKWWKH"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XZ60SKWWKH');</script>
-${jsonLdBlocks.join("\n")}
+${(jsonLdBlocks || []).filter(Boolean).map((b) => typeof b === "string" ? b : jsonld(b)).join("\n")}
 <style>
 :root{--brand:#4F46E5;--brand2:#7C3AED;--ink:#0f172a;--muted:#64748b;--bg:#f7f9fc;--card:#fff;--line:#e8edf4;--shadow-sm:0 1px 2px rgba(16,24,40,.05);--shadow:0 1px 2px rgba(16,24,40,.04),0 10px 28px -14px rgba(16,24,40,.14);--shadow-lg:0 16px 40px -16px rgba(16,24,40,.22)}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -587,17 +587,22 @@ function eligibilityHub() {
   const path = `/eligibility/`;
   const title = `English Test & Admission Score Requirements by Country 2026 | ${BRAND}`;
   const desc = `IELTS, TOEFL, PTE, CELPIP, GRE & GMAT score requirements for Canada, USA, UK, Australia, Germany and more. Free guides + free practice tests.`;
-  const links = Object.keys(ELIGIBILITY).map((slug) => {
-    const d = ELIGIBILITY[slug]; const e = EXAMS[d.exam];
-    return { label: `${e.short} score for ${d.country} ${d.flag}`, href: `/eligibility/${slug}/` };
-  });
+  const entries = Object.keys(ELIGIBILITY).map((slug) => ({ slug, d: ELIGIBILITY[slug], e: EXAMS[ELIGIBILITY[slug].exam] }));
+  const links = entries.map(({ slug, d, e }) => ({ label: `${e.short} score for ${d.country} ${d.flag}`, href: `/eligibility/${slug}/` }));
+  const rows = entries.map(({ slug, d, e }) => `<tr><td><a href="/eligibility/${slug}/">${e.short}</a></td><td>${d.flag} ${esc(d.country)}</td><td>${esc(d.min)}</td></tr>`).join("");
   const inner = `
 <p class="crumb"><a href="/">Home</a> › Eligibility</p>
 <section class="hero"><h1>Score Requirements by Country</h1>
 <p class="lead">Find the English-test and admission score you need for your destination — then practise free until you hit it.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Most universities ask for around IELTS 6.0–6.5 (≈ TOEFL 80–90 / PTE 58–64); top universities want IELTS 7.0+. Visa minimums can differ from university minimums. Exact requirements vary by course and country — use the table below, then confirm on the official page.</div>
+<div class="card"><h2>English-test &amp; admission score requirements by country</h2>
+<table class="uni-table" style="width:100%;border-collapse:collapse"><thead><tr><th>Test</th><th>Country</th><th>Typical requirement</th></tr></thead><tbody>${rows}</tbody></table>
+<p class="note">Guidance only — minimums change and vary by course/university/visa. Always confirm on the official source.</p></div>
+<div class="card"><h2>How to use this</h2><ul class="bsteps"><li>Find your destination + test in the table and open its page for the full breakdown.</li><li>Aim 0.5–1 band (or the equivalent) above the minimum — it widens your options and helps with scholarships and visas.</li><li>Not sure of your level? Take a free full-length mock test and see your gap instantly.</li><li>Remember university vs visa requirements can differ — check both.</li></ul></div>
 ${relatedGrid(links)}`;
   emit(path, head({ title, desc, path, kw: "english test score by country, ielts toefl pte requirement, study abroad score requirement", jsonLdBlocks: [
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Eligibility", path }]),
+    { "@context": "https://schema.org", "@type": "Dataset", name: "English-test & admission score requirements by country (2026)", description: desc, url: ORIGIN + path, creator: { "@type": "Organization", name: BRAND }, keywords: "IELTS requirement, TOEFL requirement, PTE requirement, study abroad score by country", measurementTechnique: "Compiled from official university and visa English-language requirements", variableMeasured: "Typical minimum English-test / admission score by exam and country" },
   ] }) + shell(inner));
 }
 
@@ -709,7 +714,7 @@ ${(has("visaSuccess") || has("postStudyWork")) ? `<div class="card">
   <h2>🛂 Student visa, post-study work &amp; PR in ${d.name}</h2>
   <ul class="bcheck">
     ${has("visaSuccess") ? `<li><strong>Student-visa success rate:</strong> ≈${ci.visaSuccess}% — ${esc(ci.visaNote || "")}</li>` : ""}
-    ${has("visaTypes") ? `<li><strong>Visa types:</strong> ${arr(ci.visaTypes).map(esc).join("; ")}</li>` : ""}
+    ${has("visaTypes") ? `<li><strong>Visa types:</strong><ul class="bcheck">${arr(ci.visaTypes).map((v) => typeof v === "string" ? `<li>${esc(v)}</li>` : `<li><strong>${esc(v.name || "")}</strong>${v.note ? ` — ${esc(v.note)}` : ""}</li>`).join("")}</ul></li>` : ""}
     ${has("postStudyWork") ? `<li><strong>Post-study work:</strong> ${esc(ci.postStudyWork)}</li>` : ""}
     ${has("immigration") ? `<li><strong>Immigration pathway:</strong> ${esc(ci.immigration)}</li>` : ""}
     ${has("settlement") ? `<li><strong>Settlement / PR:</strong> ${esc(ci.settlement)}${has("prTimeline") ? ` (${esc(ci.prTimeline)})` : ""}</li>` : ""}
@@ -933,6 +938,7 @@ function scholarshipDetailPage(s) {
   <p class="lead">${esc(s.highlight)} Compare it with other awards in the free Scholarship Finder.</p>
   <a class="cta" href="/#/colleges">▶ Open the free Scholarship Finder</a>
 </section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The ${esc(s.name)} is a ${esc(s.type.toLowerCase())} scholarship for ${esc(s.level)} study in ${esc(s.country)}, worth ${esc(s.amount)}. It's open to ${esc(s.who)}, with applications typically due around ${esc(s.deadline)}. Always confirm the exact award, criteria and deadline on the official scholarship website, as they change each year.</div>
 <div class="card">
   <h2>Key facts</h2>
   <table style="width:100%;border-collapse:collapse" class="uni-table">
@@ -945,20 +951,29 @@ function scholarshipDetailPage(s) {
   </table>
 </div>
 <div class="card">
-  <h2>How to apply</h2>
+  <h2>What the ${esc(s.name)} covers — and why it's worth applying</h2>
+  <p>${esc(s.highlight)} The award (${esc(s.amount)}) is aimed at ${esc(s.level)} study in ${esc(s.country)}, and goes to ${esc(s.who)}.</p>
+  <p>Beyond the money, prestigious scholarships like this strengthen your CV, open alumni and professional networks, and can make your visa application stronger by proving your funding. Even if you're unsure you'll win, applying costs nothing here and the process sharpens your SOP for every other application.</p>
+</div>
+<div class="card">
+  <h2>How to apply (and stand out)</h2>
   <ol>
-    <li>Confirm you meet the eligibility (${esc(s.who)}).</li>
-    <li>Secure your university admission / nomination where required.</li>
-    <li>Prepare a strong SOP and LORs — build yours free with our SOP tool.</li>
-    <li>Submit before the ${esc(s.deadline)} deadline on the official portal.</li>
+    <li>Confirm you meet the eligibility: ${esc(s.who)}.</li>
+    <li>Read the official criteria carefully and note exactly what the scholarship values.</li>
+    <li>Secure your university admission or nomination first, where it's required.</li>
+    <li>Write a specific, story-led SOP that ties your goals to the scholarship's mission — build and refine yours free with our SOP tool.</li>
+    <li>Line up strong, tailored recommendation letters early (referees need 2–3 weeks).</li>
+    <li>Highlight leadership, impact and a clear plan for how you'll use the opportunity.</li>
+    <li>Submit well before the ${esc(s.deadline)} deadline, and prepare for an interview if you're shortlisted.</li>
   </ol>
-  <p class="note">Always verify amounts, eligibility and deadlines on the official scholarship website.</p>
+  <p class="note">Always verify amounts, eligibility and deadlines on the official scholarship website — these change every year.</p>
 </div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `💸 All scholarships (free finder)`, href: `/#/colleges` },
   { label: `📝 Free SOP Builder`, href: `/#/colleges` },
   { label: `Scholarships to study in ${esc(s.country)}`, href: `/scholarships/study-in-${({ USA: "usa", UK: "uk", Germany: "germany", Canada: "canada", Australia: "australia" })[s.country] || "usa"}/` },
+  { label: `Fully funded scholarships`, href: `/fully-funded-scholarships/` },
   { label: `Free IELTS mock test`, href: `/mock-test/ielts/` },
 ])}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
