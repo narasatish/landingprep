@@ -252,6 +252,38 @@ async function igCatchUp(ig) {
   return { ok: errors.length === 0, date, postedNow: Object.keys(postedNow), alreadyDone: Object.keys(log).filter((k) => k !== "carousel" || log.carousel), errors };
 }
 app.all("/api/ig/post-daily", async (req, res) => {
+  // ?selftest=1 → SAFE diagnostic, NO secret required. Reveals WHY automation may be failing
+  // without exposing any secret/token values: which env vars are set, whether the Instagram
+  // token is still valid right now, and how many of today's slots are logged as posted.
+  if (String(req.query.selftest || "") === "1") {
+    const out = {
+      ok: true,
+      env: { IG_USER_ID: !!IG_USER_ID, IG_ACCESS_TOKEN: !!IG_ACCESS_TOKEN, IG_POST_SECRET: !!IG_POST_SECRET, FIRESTORE: !!FS_DB, IG_PUBLIC_BASE: IG_PUBLIC_BASE || null },
+      tokenValid: null, tokenError: null, account: null, today: null, hint: null,
+    };
+    try {
+      const ig = require("./scripts/ig-poster.js");
+      if (IG_ACCESS_TOKEN) {
+        const info = await ig.whoami({ token: IG_ACCESS_TOKEN });
+        if (info && !info.error) { out.tokenValid = true; out.account = info.username || info.name || null; }
+        else { out.tokenValid = false; out.tokenError = (info && (info.error && info.error.message || info.error)) || "unknown"; }
+      }
+    } catch (e) { out.tokenError = "poster module: " + e.message; }
+    try {
+      if (FS_DB) {
+        const now = new Date(), date = now.toISOString().slice(0, 10);
+        const d = await FS_DB.collection("ig_daily_log").doc(date).get();
+        const log = d.exists ? (d.data() || {}) : {};
+        out.today = { date, postedSlots: IG_SLOT_DUE_UTC.map((_, i) => i).filter((i) => log[i]).length, ofSlots: IG_SLOT_DUE_UTC.length, carousel: !!log.carousel, carousel2: !!log.carousel2 };
+      }
+    } catch (e) { /* ignore */ }
+    out.hint = !out.env.IG_ACCESS_TOKEN ? "IG_ACCESS_TOKEN is not set in Render env."
+      : !out.env.IG_POST_SECRET ? "IG_POST_SECRET is not set — the GitHub cron gets 403 and nothing posts."
+      : out.tokenValid === false ? "Instagram token is INVALID/EXPIRED — regenerate it in Meta and update IG_ACCESS_TOKEN in Render. Catch-up self-heals once fixed."
+      : !out.env.FIRESTORE ? "Firestore not configured — catch-up refuses to post without its log (to avoid duplicates)."
+      : "Config looks healthy. If posts are missing, check that the GitHub Actions cron is enabled and IG_POST_SECRET matches Render.";
+    return res.status(200).json(out);
+  }
   const key = req.query.key || req.headers["x-ig-secret"] || "";
   if (!IG_POST_SECRET || key !== IG_POST_SECRET) return res.status(403).json({ ok: false, error: "forbidden" });
   let ig;
