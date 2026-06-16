@@ -480,10 +480,10 @@ function pickLowIeltsUnis(seed) {
 // integer hash — decorrelates the within-pool index from the rotation stride so small pools
 // don't collapse to one item (the variant `r` stays a clean cycle; the sub-picker gets a hashed seed)
 function _mix(x) { x = (x | 0) >>> 0; x = Math.imul(x ^ (x >>> 16), 0x45d9f3b) >>> 0; x = Math.imul(x ^ (x >>> 16), 0x45d9f3b) >>> 0; return (x ^ (x >>> 16)) >>> 0; }
-// slot 1 now rotates 6 ways: country · college · did-you-know · top-unis · no-GRE · low-IELTS
+// slot 1 now rotates 7 ways: country · college · did-you-know · top-unis · no-GRE · low-IELTS · engagement
 function pickCountryOrCollege(seed) {
-  const r = seed % 6, s = _mix(seed);
-  const f = r === 0 ? pickCountryHighlight(s) : r === 1 ? pickCollegeSpotlight(s) : r === 2 ? pickCountryFact(s) : r === 3 ? pickTopUnis(s) : r === 4 ? pickNoGreUnis(s) : pickLowIeltsUnis(s);
+  const r = seed % 7, s = _mix(seed);
+  const f = r === 0 ? pickCountryHighlight(s) : r === 1 ? pickCollegeSpotlight(s) : r === 2 ? pickCountryFact(s) : r === 3 ? pickTopUnis(s) : r === 4 ? pickNoGreUnis(s) : r === 5 ? pickLowIeltsUnis(s) : pickEngagement(s);
   return f || pickCountryHighlight(s) || pickCollegeSpotlight(s);
 }
 function pickTipOrSpotlight(seed) { const r = seed % 3; return (r === 0 ? pickTip(seed) : r === 1 ? pickCollegeSpotlight(seed + 17) : pickCountryHighlight(seed + 11)) || pickTip(seed) || pickWordOfDay(seed); }
@@ -603,10 +603,10 @@ function pickChecklist(seed) {
     caption: `✅ ${c.t} 👇\n\n${c.items.map((x) => "☑️ " + x).join("\n")}\n\n📌 SAVE this checklist. 📲 SHARE with someone who needs it.\n💬 Anything you'd add? Comment 👇\n\n👉 Free study-abroad guides → landingprep.com\nFollow ${HANDLE} for daily study-abroad help 🌍`,
     tags: buildTags("studyabroad", "studyabroadchecklist", "studentvisa", "studyabroadtips", "internationalstudents", "landingprep") };
 }
-// slot 4 now rotates 7 ways: cost · exam fees · exam guide · comparison · mistakes · checklist · practice question
+// slot 4 now rotates 8 ways: cost · exam fees · exam guide · comparison · mistakes · checklist · practice question · engagement
 function pickRotatingExtra(seed) {
-  const r = seed % 7, s = _mix(seed);
-  const f = r === 0 ? pickCostCompared(s) : r === 1 ? pickExamFees(s) : r === 2 ? pickExamSpotlight(s) : r === 3 ? pickComparison(s) : r === 4 ? pickMistakes(s) : r === 5 ? pickChecklist(s) : pickPracticeQuestion(s);
+  const r = seed % 8, s = _mix(seed);
+  const f = r === 0 ? pickCostCompared(s) : r === 1 ? pickExamFees(s) : r === 2 ? pickExamSpotlight(s) : r === 3 ? pickComparison(s) : r === 4 ? pickMistakes(s) : r === 5 ? pickChecklist(s) : r === 6 ? pickPracticeQuestion(s) : pickEngagement(s);
   return f || pickExamFees(s) || pickCostCompared(s) || pickScholarship(s);
 }
 // 5 strong posts/day — all deep pools + a rotating 5th (cost / exam-fees / exam-guide cycle).
@@ -739,6 +739,71 @@ function pickExamPrep(seed) {
   const r = seed % 8, s = _mix(seed);
   const f = r === 0 ? pickWordOfDay(s) : r === 1 ? pickExamTip(s) : r === 2 ? pickExamComparison(s) : r === 3 ? pickQuiz(s) : r === 4 ? pickBandTargets(s) : r === 5 ? pickWritingTemplate(s) : r === 6 ? pickPracticeQuestion(s) : pickMcqQuestion(s);
   return f || pickWordOfDay(s) || pickExamSpotlight(s);
+}
+// ── Fresh, high-engagement content (myth-vs-fact, red/green flags, insider tips, this-or-that).
+// All authored by us (accurate, evergreen) and built to drive saves, shares and comments. ──
+const MYTH_FACTS = [
+  { t: "Study-abroad MYTHS — busted", pairs: [
+    ["You need IELTS 8.0 for top universities", "Most Master's accept 6.5 overall — only a few competitive courses want 7.0+"],
+    ["Studying abroad is only for rich families", "Tuition-free countries (Germany, Norway) + scholarships make it affordable"],
+    ["A low GPA means no admission anywhere", "A strong SOP, projects and test scores can offset a modest GPA"]] },
+  { t: "Student-VISA myths — busted", pairs: [
+    ["One rejection means you can never reapply", "You can reapply once you fix the reason for the refusal"],
+    ["Showing more money guarantees a visa", "Genuine, well-sourced, stable funds matter more than a big number"],
+    ["You can't work on a student visa", "Most countries allow about 20 hours/week during term time"]] },
+  { t: "Scholarship myths — busted", pairs: [
+    ["Scholarships are only for top rankers", "Many reward leadership, need, essays or specific fields — not just GPA"],
+    ["You can only win one scholarship", "You can stack multiple awards — apply to several"],
+    ["Applying is a waste of time", "Most students never apply, so the odds are better than you think"]] },
+];
+function pickMythFact(seed) {
+  const m = MYTH_FACTS[((seed % MYTH_FACTS.length) + MYTH_FACTS.length) % MYTH_FACTS.length];
+  const points = [], marks = [], capLines = [];
+  m.pairs.forEach((p) => { points.push("MYTH: " + p[0]); marks.push("cross"); points.push("FACT: " + p[1]); marks.push("check"); capLines.push("❌ MYTH: " + p[0] + "\n✅ FACT: " + p[1]); });
+  return { type: "exam", noIntro: true, accent: "#F59E0B", category: "MYTH vs FACT", headline: m.t, sub: "Don't let these hold you back", points, pointMarks: marks, cta: "Free study-abroad guides → landingprep.com",
+    caption: `🤯 ${m.t} 👇\n\n${capLines.join("\n\n")}\n\n💡 Half the battle is knowing what's actually true. Most students hold back because of myths like these — don't be one of them.\n\n📌 SAVE this. 📲 SHARE with someone who believes the myths. 💬 Which surprised you? 👇\n\n👉 Free study-abroad tools & guides → landingprep.com\nFollow ${HANDLE} for daily study-abroad facts 🌍`,
+    tags: buildTags("studyabroad", "studyabroadmyths", "studyvisa", "studyabroadtips", "internationalstudents", "landingprep") };
+}
+const FLAG_SETS = [
+  { kind: "red", t: "Red flags: choosing a study-abroad agent", items: ["Promises 'guaranteed' admission or a guaranteed visa", "Asks for large cash payments with no proper receipt", "Won't let you contact the university directly", "Only pushes one university (they earn commission)", "Has no verifiable reviews from past students"] },
+  { kind: "red", t: "Red flags: a university not worth your money", items: ["Vague or hidden fees and no scholarship info", "No data on graduate jobs or post-study work", "Not accredited / not recognised for your goal country", "Pressures you to pay and enrol immediately", "Poor or no international-student support"] },
+  { kind: "green", t: "Green flags: a university worth choosing", items: ["Transparent fees + clear scholarship information", "Strong graduate-employment and post-study work record", "Properly accredited and recognised for your goal", "Good international-student support and community", "A clear, documented pathway to work or PR"] },
+  { kind: "green", t: "Green flags: a study plan that will get a visa", items: ["Course clearly matches your past study or career", "Funds are genuine, sufficient and well-documented", "A specific reason for this country and university", "Strong ties / clear plans after graduation", "Every official requirement met exactly"] },
+];
+function pickFlags(seed) {
+  const f = FLAG_SETS[((seed % FLAG_SETS.length) + FLAG_SETS.length) % FLAG_SETS.length];
+  const red = f.kind === "red";
+  return { type: "exam", noIntro: true, accent: red ? "#EF4444" : "#10B981", category: red ? "RED FLAGS 🚩" : "GREEN FLAGS", headline: f.t.split(":")[0], sub: f.t.split(":").slice(1).join(":").trim(),
+    points: f.items, pointMarks: f.items.map(() => red ? "cross" : "check"), cta: "Free study-abroad guides → landingprep.com",
+    caption: `${red ? "🚩" : "✅"} ${f.t} 👇\n\n${f.items.map((x) => (red ? "🚩 " : "✅ ") + x).join("\n")}\n\n💡 ${red ? "Spotting these early saves you money, time and a lot of stress." : "Tick these off and you're choosing with your eyes open."}\n\n📌 SAVE this. 📲 SHARE with someone deciding right now. 💬 Seen any of these? 👇\n\n👉 Free study-abroad tools & guides → landingprep.com\nFollow ${HANDLE} for daily study-abroad tips 🌍`,
+    tags: buildTags("studyabroad", red ? "studyabroadscams" : "studyabroadtips", "studentvisa", "studyabroad2026", "internationalstudents", "landingprep") };
+}
+const INSIDER_TIPS = [
+  { t: "5 things nobody tells you about studying abroad", items: ["Your first month is the most expensive — keep a buffer", "Part-time work won't cover tuition — plan your funds upfront", "Culture shock is real, but it usually fades by month 2–3", "Open a local bank account and build credit early", "Most jobs come from networking — start from day one"] },
+  { t: "5 things nobody tells you about applications", items: ["Apply early — many scholarships close before the deadline", "A great SOP beats a perfect GPA more often than you think", "Professors take 2–3 weeks to write recommendation letters", "Each university wants a tailored SOP, not a copy-paste", "Keep digital + physical copies of every document"] },
+  { t: "5 things nobody tells you about student visas", items: ["Start the visa process the moment you get your offer", "Funds must usually sit in your account for a set period", "A weak interview can sink a strong application — practise", "Health insurance is mandatory in most countries", "Rules can change between applying and travelling — recheck"] },
+];
+function pickInsiderTips(seed) {
+  const t = INSIDER_TIPS[((seed % INSIDER_TIPS.length) + INSIDER_TIPS.length) % INSIDER_TIPS.length];
+  return { type: "exam", noIntro: true, accent: "#8B5CF6", category: "NOBODY TELLS YOU", headline: t.t.replace(/^5 things /, "5 things "), sub: "The stuff you only learn the hard way", points: t.items, bulletStyle: "number", cta: "Free study-abroad guides → landingprep.com",
+    caption: `👀 ${t.t} 👇\n\n${t.items.map((x, i) => (i + 1) + ". " + x).join("\n")}\n\n💡 These are the lessons most students learn the hard way — now you don't have to.\n\n📌 SAVE this for later. 📲 SHARE with a friend about to start. 💬 What would you add? 👇\n\n👉 Free study-abroad tools & guides → landingprep.com\nFollow ${HANDLE} for daily study-abroad tips 🌍`,
+    tags: buildTags("studyabroad", "studyabroadtips", "studyabroadlife", "internationalstudents", "studyabroad2026", "landingprep") };
+}
+const THIS_OR_THAT = [
+  { t: "This or that? Comment your pick 👇", items: ["IELTS or PTE?", "USA or Canada?", "Fall or Spring intake?", "On-campus or off-campus?", "Big city or small town?"] },
+  { t: "Study-abroad: this or that? 👇", items: ["Scholarship or education loan?", "MS or MBA?", "Europe or Australia?", "Public or private university?", "Coffee or chai while studying? ☕"] },
+];
+function pickThisOrThat(seed) {
+  const t = THIS_OR_THAT[((seed % THIS_OR_THAT.length) + THIS_OR_THAT.length) % THIS_OR_THAT.length];
+  return { type: "exam", noIntro: true, accent: "#EC4899", category: "THIS OR THAT", headline: "This or that?", sub: "Drop your answers in the comments", points: t.items, bulletStyle: "dot", cta: "Find your best-fit free → landingprep.com",
+    caption: `🤔 ${t.t}\n\n${t.items.map((x) => "👉 " + x).join("\n")}\n\nThere's no wrong answer — it depends on YOUR goals, budget and profile. Comment your picks and we'll tell you what each choice really means for your plan.\n\n📲 TAG a friend and compare. 📌 SAVE for later.\n\n👉 Confused which to pick? Our free tools compare them → landingprep.com\nFollow ${HANDLE} for daily study-abroad help 🌍`,
+    tags: buildTags("studyabroad", "thisorthat", "studyabroadcommunity", "internationalstudents", "studyabroad2026", "landingprep") };
+}
+// rotates the fresh engagement formats
+function pickEngagement(seed) {
+  const r = seed % 4, s = _mix(seed + 53);
+  const f = r === 0 ? pickMythFact(s) : r === 1 ? pickFlags(s) : r === 2 ? pickInsiderTips(s) : pickThisOrThat(s);
+  return f || pickMythFact(s) || pickInsiderTips(s);
 }
 const SLOT_PICKERS = [pickNewsRotating, pickCountryOrCollege, pickExamPrep, pickScholarship, pickRotatingExtra];
 function pickForSlot(now, slot) {
@@ -1339,8 +1404,17 @@ function viralOverlay(c) {
     const usedH = () => wrapped.reduce((n, ln) => n + ln.length * lh, 0) + (pts.length - 1) * gap;
     while (usedH() > (py1 - py0) && fs > 23) { fs -= 2; lh -= 2; wrapped = wrapAt(); }
     let py = py0;
+    // per-point marker (vector, since the bundled fonts can't render emoji): check / cross /
+    // number / dot. c.pointMarks[i] overrides per point; c.bulletStyle sets one for all.
+    const drawMark = (mark, cy) => {
+      if (mark === "cross") return `<circle cx="100" cy="${cy}" r="21" fill="#EF4444"/><path d="M91 ${cy - 9} l18 18 M109 ${cy - 9} l-18 18" stroke="#fff" stroke-width="4.4" stroke-linecap="round"/>`;
+      if (mark === "dot") return `<circle cx="100" cy="${cy}" r="10" fill="${a}"/>`;
+      if (typeof mark === "number") return `<circle cx="100" cy="${cy}" r="21" fill="${a}"/><text x="100" y="${cy + 9}" text-anchor="middle" font-family="${HEAD}" font-size="27" fill="#fff">${mark}</text>`;
+      return `<circle cx="100" cy="${cy}" r="21" fill="${a}"/><path d="M89 ${cy} l8 8 14 -17" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>`; // check
+    };
     wrapped.forEach((lns, i) => {
-      s += `<circle cx="100" cy="${py + 14}" r="21" fill="${a}"/><path d="M89 ${py + 14} l8 8 14 -17" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>`;
+      const mark = (c.pointMarks && c.pointMarks[i]) || (c.bulletStyle === "number" ? (i + 1) : c.bulletStyle) || "check";
+      s += drawMark(mark, py + 14);
       lns.forEach((ln, j) => { s += `<text x="146" y="${py + 24 + j * lh}" font-family="${BODY}" font-weight="${j === 0 ? 600 : 400}" font-size="${fs}" fill="#fff">${esc(ln)}</text>`; });
       py += lns.length * lh + gap;
     });
