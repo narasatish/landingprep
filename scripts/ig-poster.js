@@ -474,7 +474,7 @@ function pickCollegeSpotlight(seed) {
   if (c.deadline) stats.push({ v: shortVal(c.deadline, 10), label: "Deadline" });
   const _pad = [["Yes", "Intl. friendly"], ["Sept · Jan", "Intakes"], ["Available", "Scholarships"]]; while (stats.length < 6) { const p = _pad[stats.length % _pad.length]; stats.push({ v: p[0], label: p[1] }); }
   const cslug = String(c.country).toLowerCase().replace(/\s+/g, "");
-  return { type: "exam", accent: "#7C3AED", category: String(c.country).toUpperCase(), flagCountry: c.country, headline: collegeShort(c.name), sub: (c.city || "") + " · " + c.country, stats: stats.slice(0, 6), cta: "Free college predictor — link in bio  →",
+  return { type: "exam", accent: "#7C3AED", category: String(c.country).toUpperCase(), flagCountry: c.country, headline: c.name, sub: (c.city || "") + " · " + c.country, stats: stats.slice(0, 6), cta: "Free college predictor — link in bio  →",
     caption: `🎓 ${c.name} — at a glance\n\n${c.rank ? "🌍 World rank: #" + c.rank + "\n" : ""}${c.feeNote ? "💰 Tuition: " + c.feeNote + "\n" : ""}${c.acceptance ? "✅ Acceptance: " + c.acceptance + "%\n" : ""}${c.ielts ? "📊 IELTS " + c.ielts + " · GRE " + (c.gre || "—") + "\n" : ""}${c.deadline ? "🗓 Deadline: " + c.deadline + "\n" : ""}\n📲 TAG a future applicant. 📌 SAVE this.\n💬 Is this your dream school? 👇\n\n👉 Free college predictor — link in bio.\nFollow ${HANDLE} for daily admits info 🎓`,
     tags: buildTags("studyin" + cslug, "studyabroad", "universityadmission", "topuniversities", "landingprep") };
 }
@@ -499,7 +499,7 @@ function pickTopUnis(seed) {
   const list = C.filter((c) => String(c.country).toLowerCase() === String(country).toLowerCase()).sort((a, b) => (a.rank || 999) - (b.rank || 999)).slice(0, 6);
   if (list.length < 3) return null;
   const slug = String(country).toLowerCase().replace(/\s+/g, "");
-  return { type: "exam", accent: "#7C3AED", category: "TOP UNIVERSITIES", flagCountry: ISO[String(country).toLowerCase()] ? country : null, headline: "Top unis in " + country, sub: "Ranked for international students", points: list.map((c) => collegeShort(c.name) + (c.rank ? " — #" + c.rank + " world" : "")),
+  return { type: "exam", accent: "#7C3AED", category: "TOP UNIVERSITIES", flagCountry: ISO[String(country).toLowerCase()] ? country : null, headline: "Top universities in " + country, sub: "Ranked for international students", points: list.map((c) => c.name + (c.rank ? " — #" + c.rank + " world" : "")),
     caption: `🎓 Top universities in ${country} for international students 👇\n\n${list.map((c, i) => (i + 1) + ". " + c.name + (c.rank ? " (#" + c.rank + " world)" : "")).join("\n")}\n\n📌 SAVE this shortlist. 💬 Which is your dream? 👇\n\n👉 Free college predictor → landingprep.com\nFollow ${HANDLE} for daily admits info 🎓`,
     tags: buildTags("studyin" + slug, "topuniversities", "studyabroad", "universityadmission", "internationalstudents", "landingprep") };
 }
@@ -509,7 +509,7 @@ function pickNoGreUnis(seed) {
   const C = collegesData().filter((c) => c.name && (!c.gre || /not|waiv|option|none|^no\b|^[-—–]$/i.test(String(c.gre).trim())));
   if (C.length < 4) return null;
   const list = _pickUniList(C, seed); if (list.length < 4) return null;
-  return { type: "exam", accent: "#0E9F6E", category: "NO GRE NEEDED", headline: "Apply without GRE", sub: "Universities that don't require the GRE", points: list.map((c) => collegeShort(c.name) + " · " + c.country),
+  return { type: "exam", accent: "#0E9F6E", category: "NO GRE NEEDED", headline: "Apply without GRE", sub: "Universities that don't require the GRE", points: list.map((c) => c.name + " · " + c.country),
     caption: `🎯 Universities you can apply to WITHOUT the GRE 👇\n\n${list.map((c) => "• " + c.name + " (" + c.country + ")").join("\n")}\n\n💡 Always confirm on the official program page — requirements change.\n📌 SAVE this. 📲 SHARE with someone skipping the GRE.\n\n👉 Free college predictor → landingprep.com\nFollow ${HANDLE} for daily admits info 🎓`,
     tags: buildTags("studywithoutgre", "nogre", "msabroad", "studyabroad", "universityadmission", "landingprep") };
 }
@@ -518,7 +518,7 @@ function pickLowIeltsUnis(seed) {
   const C = collegesData().filter((c) => c.name && c.ielts && parseFloat(c.ielts) > 0 && parseFloat(c.ielts) <= 6.5);
   if (C.length < 4) return null;
   const list = _pickUniList(C, seed); if (list.length < 4) return null;
-  return { type: "exam", accent: "#1D4ED8", category: "LOW IELTS", headline: "Low IELTS unis", sub: "Universities accepting IELTS 6.0–6.5", points: list.map((c) => collegeShort(c.name) + " — IELTS " + c.ielts),
+  return { type: "exam", accent: "#1D4ED8", category: "LOW IELTS", headline: "Low IELTS universities", sub: "Universities accepting IELTS 6.0–6.5", points: list.map((c) => c.name + " — IELTS " + c.ielts),
     caption: `📊 Universities with LOWER IELTS requirements 👇\n\n${list.map((c) => "• " + c.name + " — IELTS " + c.ielts + " (" + c.country + ")").join("\n")}\n\n💡 Confirm on the official page — and aim higher anyway for scholarships.\n📌 SAVE this.\n\n👉 Free IELTS practice → landingprep.com\nFollow ${HANDLE} for daily admits info 🎓`,
     tags: buildTags("lowielts", "ielts", "studyabroad", "universityadmission", "msabroad", "landingprep") };
 }
@@ -559,6 +559,21 @@ const SCHOLARSHIPS = [
   { n: "Rotary Peace", full: "Rotary Peace Fellowship", country: "Global", award: "Fully funded", level: "Master's", apply: "May", who: "peace & development" },
   { n: "Marshall", full: "Marshall Scholarship", country: "UK", award: "Fully funded", level: "Master's / PhD", apply: "Sep", who: "US graduates" },
   { n: "DAAD EPOS", full: "DAAD Development-Related (EPOS)", country: "Germany", award: "€934 / mo + travel", level: "Master's / PhD", apply: "varies", who: "developing countries" },
+  { n: "Gates Cambridge", full: "Gates Cambridge Scholarship", country: "UK", award: "Fully funded", level: "Master's / PhD", apply: "Oct–Dec", who: "outstanding students outside the UK" },
+  { n: "Rhodes", full: "Rhodes Scholarship", country: "UK", award: "Fully funded", level: "Postgraduate", apply: "varies by country", who: "exceptional all-round students" },
+  { n: "Clarendon", full: "Clarendon Fund (Oxford)", country: "UK", award: "Fully funded", level: "Postgraduate", apply: "with admission", who: "academic excellence" },
+  { n: "Commonwealth", full: "Commonwealth Scholarship", country: "UK", award: "Fully funded", level: "Master's / PhD", apply: "varies", who: "Commonwealth-country students" },
+  { n: "Knight-Hennessy", full: "Knight-Hennessy Scholars (Stanford)", country: "USA", award: "Fully funded", level: "Graduate", apply: "Oct", who: "future global leaders" },
+  { n: "Fulbright-Nehru", full: "Fulbright-Nehru Master's Fellowship", country: "USA", award: "Fully funded", level: "Master's", apply: "May", who: "Indian students & professionals" },
+  { n: "Inlaks", full: "Inlaks Shivdasani Scholarship", country: "Global", award: "Up to $100,000", level: "Master's / PhD", apply: "varies", who: "Indian citizens under 30" },
+  { n: "J.N. Tata", full: "J.N. Tata Endowment", country: "Global", award: "Loan scholarship + gift", level: "Postgraduate", apply: "Mar", who: "Indian graduates going abroad" },
+  { n: "K.C. Mahindra", full: "K.C. Mahindra Scholarship", country: "Global", award: "Interest-free loan scholarship", level: "Postgraduate", apply: "Mar–Apr", who: "Indian graduates abroad" },
+  { n: "Aga Khan", full: "Aga Khan Foundation ISP", country: "Global", award: "50% grant + 50% loan", level: "Master's / PhD", apply: "varies", who: "developing-country students" },
+  { n: "Vanier", full: "Vanier Canada Graduate Scholarship", country: "Canada", award: "CAD 50,000 / yr", level: "PhD", apply: "Nov", who: "world-class doctoral students" },
+  { n: "Australia Awards", full: "Australia Awards Scholarships", country: "Australia", award: "Fully funded", level: "Master's", apply: "Apr–Jun", who: "developing-country students" },
+  { n: "Erasmus Mundus", full: "Erasmus Mundus Joint Master's", country: "Europe", award: "Fully funded", level: "Joint Master's", apply: "Oct–Jan", who: "students worldwide" },
+  { n: "Swedish Institute", full: "Swedish Institute Scholarships (SISGP)", country: "Sweden", award: "Full + living + travel", level: "Master's", apply: "Feb", who: "selected-country students" },
+  { n: "Narotam Sekhsaria", full: "Narotam Sekhsaria Scholarship", country: "Global", award: "Interest-free loan up to ₹20L", level: "Postgraduate", apply: "Jan", who: "Indian students abroad" },
 ];
 function pickScholarship(seed) {
   const s = SCHOLARSHIPS[seed % SCHOLARSHIPS.length];
@@ -805,10 +820,27 @@ function pickPracticeQuestion(seed) {
   const f = r === 0 ? pickMcqQuestion(s) : r === 1 ? pickSpeakingQuestion(s) : pickWritingQuestion(s);
   return f || pickMcqQuestion(s) || pickSpeakingQuestion(s);
 }
-// slot 2 now rotates 8 ways: vocab · exam tips · exam comparison · quiz · band targets · writing template · practice question · MCQ
+// Common English mistakes → fixed (huge value for IELTS/TOEFL writing & speaking + everyday English).
+const GRAMMAR_FIXES = [
+  { t: "Common English mistakes — fixed", pairs: [["I am agree with you", "I agree with you"], ["He don't like coffee", "He doesn't like coffee"], ["I have visited Paris last year", "I visited Paris last year"]] },
+  { t: "Prepositions & articles — fixed", pairs: [["I am going to home", "I am going home"], ["Discuss about the topic", "Discuss the topic"], ["I have a information", "I have some information"]] },
+  { t: "IELTS Writing mistakes — fixed", pairs: [["There is many reasons", "There are many reasons"], ["Nowadays people is busy", "Nowadays people are busy"], ["It depends of the situation", "It depends on the situation"]] },
+  { t: "Speaking mistakes — fixed", pairs: [["I am living here since 2020", "I have lived here since 2020"], ["Yesterday I have gone there", "Yesterday I went there"], ["Less people came", "Fewer people came"]] },
+  { t: "Tricky pairs people get wrong", pairs: [["Their going to win", "They're going to win"], ["Its raining today", "It's raining today"], ["I could of done it", "I could have done it"]] },
+  { t: "More English fixes", pairs: [["She is married with a doctor", "She is married to a doctor"], ["I am interesting in science", "I am interested in science"], ["Give me an advice", "Give me some advice"]] },
+];
+function pickGrammarFix(seed) {
+  const g = GRAMMAR_FIXES[((seed % GRAMMAR_FIXES.length) + GRAMMAR_FIXES.length) % GRAMMAR_FIXES.length];
+  const points = [], marks = [], cap = [];
+  g.pairs.forEach((p) => { points.push(p[0]); marks.push("cross"); points.push(p[1]); marks.push("check"); cap.push("❌ " + p[0] + "\n✅ " + p[1]); });
+  return { type: "exam", noIntro: true, accent: "#0E9F6E", category: "GRAMMAR FIX", headline: "Fix these mistakes", sub: g.t, points, pointMarks: marks, cta: "Free English & IELTS practice → landingprep.com",
+    caption: `✍️ ${g.t} 👇\n\n${cap.join("\n\n")}\n\n💡 Small grammar slips like these quietly cost you marks in IELTS/TOEFL writing and speaking — and credibility in emails and interviews. Fix them once and they stick.\n\n📌 SAVE this. 📲 SHARE with a study buddy. 💬 Which one did you not know? 👇\n\n👉 Free English + IELTS practice → landingprep.com\nFollow ${HANDLE} for daily English tips ✍️`,
+    tags: buildTags("englishgrammar", "ielts", "learnenglish", "ieltspreparation", "englishtips", "studyabroad", "landingprep") };
+}
+// slot 2 now rotates 9 ways: vocab · exam tips · exam comparison · quiz · band targets · writing template · practice question · MCQ · grammar fix
 function pickExamPrep(seed) {
-  const r = seed % 8, s = _mix(seed);
-  const f = r === 0 ? pickWordOfDay(s) : r === 1 ? pickExamTip(s) : r === 2 ? pickExamComparison(s) : r === 3 ? pickQuiz(s) : r === 4 ? pickBandTargets(s) : r === 5 ? pickWritingTemplate(s) : r === 6 ? pickPracticeQuestion(s) : pickMcqQuestion(s);
+  const r = seed % 9, s = _mix(seed);
+  const f = r === 0 ? pickWordOfDay(s) : r === 1 ? pickExamTip(s) : r === 2 ? pickExamComparison(s) : r === 3 ? pickQuiz(s) : r === 4 ? pickBandTargets(s) : r === 5 ? pickWritingTemplate(s) : r === 6 ? pickPracticeQuestion(s) : r === 7 ? pickGrammarFix(s) : pickMcqQuestion(s);
   return f || pickWordOfDay(s) || pickExamSpotlight(s);
 }
 // ── Fresh, high-engagement content (myth-vs-fact, red/green flags, insider tips, this-or-that).
@@ -1603,8 +1635,11 @@ function viralOverlay(c) {
     if (chips.length) { let cx = 72; const cy = 792; chips.forEach((t) => { const tt = stripEmoji(t), w = 44 + tt.length * 16.5; s += `<rect x="${cx}" y="${cy}" rx="12" width="${Math.round(w)}" height="74" fill="rgba(255,255,255,0.13)"/><rect x="${cx}" y="${cy}" rx="6" width="9" height="74" fill="${Y}"/><text x="${cx + 30}" y="${cy + 48}" font-family="${BODY}" font-weight="700" font-size="28" fill="#fff">${esc(tt)}</text>`; cx += w + 18; }); }
     s += `<rect x="0" y="912" width="1080" height="104" fill="${Y}"/><text x="540" y="978" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="42" fill="#0a0a0a" letter-spacing="0.5">FULL STORY IN THE CAPTION  &#8595;</text>`;
   } else {
-    const head = stripEmoji(c.headline || "").toUpperCase(), hsize = head.length > 16 ? 76 : head.length > 9 ? 104 : 120;
-    const hl = wrapPlain(head, head.length > 16 ? 18 : 12).slice(0, 2); let hy = 250;
+    const head = stripEmoji(c.headline || "").toUpperCase();
+    // tiered sizing + up to 3 lines so long FULL names (no abbreviations) never clip
+    const hsize = head.length > 30 ? 56 : head.length > 22 ? 66 : head.length > 16 ? 76 : head.length > 9 ? 104 : 120;
+    const wrapW = hsize <= 56 ? 26 : hsize <= 66 ? 22 : head.length > 16 ? 18 : 12;
+    const hl = wrapPlain(head, wrapW).slice(0, head.length > 22 ? 3 : 2); let hy = 250;
     hl.forEach((ln, i) => { s += `<text x="70" y="${hy + i * (hsize + 2)}" font-family="${HEAD}" font-size="${hsize}" fill="#fff" letter-spacing="0.5">${esc(ln)}</text>`; });
     let cur = hy + hl.length * (hsize + 2) - hsize + 6;
     if (c.sub) { s += `<text x="74" y="${cur + 34}" font-family="${BODY}" font-weight="600" font-size="29" fill="#e7eeff">${esc(clip(stripEmoji(c.sub), 54))}</text>`; cur += 56; }
