@@ -1886,10 +1886,26 @@ ${relatedGrid([
 // ── Per-band × per-section IELTS pages ("Band 7 in Writing") ─────────────────
 const SEC_RAW = { "6": "23/40", "6.5": "27/40", "7": "30/40", "7.5": "32/40", "8": "35/40" };
 const SECTIONS = [
-  { s: "Listening", emoji: "🎧", raw: true, tips: ["Read the questions and predict answers before the audio plays.", "Obey the word limit (e.g. 'NO MORE THAN TWO WORDS').", "If you miss one, let it go and keep listening — don't freeze.", "Drill spelling, names and numbers — they are easy marks."] },
-  { s: "Reading", emoji: "📖", raw: true, tips: ["Skim for structure first, then scan for keywords and synonyms.", "Spend about 20 minutes per passage; leave the hardest for last.", "Master True/False/Not Given vs Yes/No/Not Given logic.", "Locate, decide, move on — don't read every word."] },
-  { s: "Writing", emoji: "✍️", raw: false, tips: ["Answer the exact question — Task Response is 25% of the mark.", "Plan for 5 minutes; one clear idea per paragraph.", "Use a range of linkers and precise, topic-specific vocabulary.", "Vary your sentence structures and proofread grammar at the end."] },
-  { s: "Speaking", emoji: "🗣️", raw: false, tips: ["Extend every answer with a reason and an example.", "Use the Part 2 prep minute to jot quick notes.", "Don't memorise scripts — speak naturally and keep flowing.", "Work on pronunciation, word stress and intonation."] },
+  { s: "Listening", emoji: "🎧", raw: true, tips: ["Read the questions and predict answers before the audio plays.", "Obey the word limit (e.g. 'NO MORE THAN TWO WORDS').", "If you miss one, let it go and keep listening — don't freeze.", "Drill spelling, names and numbers — they are easy marks."],
+    format: "IELTS Listening is 40 questions across 4 recordings (a conversation, a monologue, an academic discussion and a lecture), played ONCE, in about 30 minutes. The same Listening test is used for Academic and General Training.",
+    mistakes: ["Writing more than the word limit — e.g. three words when it says 'NO MORE THAN TWO WORDS' — which marks the answer wrong.", "Spelling, singular/plural or number errors (both British and American spelling are accepted, but it must be correct).", "Losing your place after one missed answer and panicking instead of moving on.", "Careless answer transfer on paper, or mis-clicking on the computer-delivered test."],
+    improve: "Train with a range of accents (British, Australian, North American), do full timed sections, and review every wrong answer to see whether it was vocabulary, spelling or a lapse in concentration.",
+    example: "Section 1 gap-fills usually ask for a name, date or number — drilling these to spell accurately recovers the easy marks most students lose." },
+  { s: "Reading", emoji: "📖", raw: true, tips: ["Skim for structure first, then scan for keywords and synonyms.", "Spend about 20 minutes per passage; leave the hardest for last.", "Master True/False/Not Given vs Yes/No/Not Given logic.", "Locate, decide, move on — don't read every word."],
+    format: "IELTS Academic Reading is 3 long passages with 40 questions in 60 minutes — and there is NO extra transfer time. General Training Reading uses shorter, everyday texts but the same band boundaries.",
+    mistakes: ["Reading every word instead of skimming then scanning — the #1 reason people run out of time.", "Confusing True/False/Not Given with Yes/No/Not Given (statement of fact vs writer's opinion).", "Spending too long on the hardest passage and rushing the easy marks at the end.", "Copying an answer straight from the text but with a spelling slip."],
+    improve: "Practise finding answers by synonym (the text rarely repeats the question's exact words), time each passage to roughly 20 minutes, and drill the logic of True/False/Not Given.",
+    example: "'Not Given' means the passage neither confirms nor contradicts the statement — students lose marks by guessing 'False' when the text simply doesn't mention it." },
+  { s: "Writing", emoji: "✍️", raw: false, tips: ["Answer the exact question — Task Response is 25% of the mark.", "Plan for 5 minutes; one clear idea per paragraph.", "Use a range of linkers and precise, topic-specific vocabulary.", "Vary your sentence structures and proofread grammar at the end."],
+    format: "IELTS Writing is two tasks in 60 minutes: Task 1 (at least 150 words, ~20 min) and Task 2 (at least 250 words, ~40 min and worth twice as much). It is scored on four equally-weighted criteria: Task Response, Coherence & Cohesion, Lexical Resource, and Grammatical Range & Accuracy.",
+    mistakes: ["Writing under the word count (under 150 / 250 words) — an automatic penalty.", "Memorised templates that don't actually fit the question asked.", "Repeating the same linkers ('Firstly, Secondly') instead of natural cohesion.", "Over-complex sentences full of errors — accuracy beats ambition."],
+    improve: "Learn the public band descriptors, write to a clear 4-paragraph structure, and score each essay on the four criteria (the free band checker does this instantly), then rewrite your weakest criterion.",
+    example: "A clear position held throughout, two developed ideas each with an example, and a range of accurate grammar will out-score a brilliant idea written with frequent mistakes." },
+  { s: "Speaking", emoji: "🗣️", raw: false, tips: ["Extend every answer with a reason and an example.", "Use the Part 2 prep minute to jot quick notes.", "Don't memorise scripts — speak naturally and keep flowing.", "Work on pronunciation, word stress and intonation."],
+    format: "IELTS Speaking is an 11–14 minute face-to-face interview in three parts: Part 1 (familiar questions), Part 2 (a 2-minute talk from a cue card after 1 minute of prep), and Part 3 (a deeper discussion). It is scored on Fluency & Coherence, Lexical Resource, Grammatical Range & Accuracy, and Pronunciation.",
+    mistakes: ["Memorised answers — examiners spot them and they pull down your Fluency score.", "One-word or very short answers in Part 1.", "Going silent or saying 'I don't know' in Part 3 instead of giving an opinion and a reason.", "Speaking too fast to seem fluent — clarity matters more than speed."],
+    improve: "Record yourself answering real prompts, extend every answer with a reason and example, build topic vocabulary, and rehearse speaking for the full two minutes in Part 2.",
+    example: "In Part 2, a full two-minute answer that covers every cue-card point with natural fluency and varied vocabulary is what separates the higher bands — practise with a timer." },
 ];
 function bandSectionPage(band, sec) {
   const b = band.b;
@@ -1907,18 +1923,23 @@ function bandSectionPage(band, sec) {
     { q: `What do I need for Band ${b} in IELTS ${sec.s}?`, a: `You need ${need}. ${sec.raw ? "Every question is one mark with no negative marking, so never leave a blank." : "Focus on the four criteria for this section equally."}` },
     { q: `Is Band ${b} in ${sec.s} hard to get?`, a: `It's very achievable with focused, feedback-driven practice — most learners gain about 0.5 band in 4–6 weeks. The free mocks and band checker show your progress.` },
   ];
+  const siblings = SECTIONS.filter((x) => x.s !== sec.s).map((x) => ({ label: `Band ${b} in ${x.s}`, href: `/ielts-band-${b.replace(".", "-")}-${x.s.toLowerCase()}/` }));
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/ielts-band-${b.replace(".", "-")}/">IELTS Band ${b}</a> › ${sec.s}</p>
 <section class="hero"><div class="badges"><span class="badge">${sec.emoji} ${sec.s}</span><span class="badge">Band ${b}</span><span class="badge">Free plan</span></div>
 <h1>How to Get IELTS Band ${b} in ${sec.s}</h1>
 <p class="lead">To score <strong>Band ${b}</strong> in IELTS ${sec.s} you need ${need}. Here's the exact strategy — free.</p>
 <a class="cta" href="${sec.raw ? "/mock-test/ielts/" : "/ielts-" + (sec.s === "Writing" ? "writing" : "speaking") + "-checker/"}">▶ ${sec.raw ? "Take a free IELTS mock" : "Check your " + sec.s.toLowerCase() + " band free"}</a></section>
-<div class="card"><h2>Step-by-step plan</h2><ol>${steps.map((s) => `<li><strong>${s.name}.</strong> ${esc(s.text)}</li>`).join("")}</ol></div>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> To score Band ${b} in IELTS ${sec.s}, you need ${need}. ${sec.raw ? "Every question is worth one mark with no negative marking — never leave a blank." : "All four scoring criteria are weighted equally, so a weakness in one drags your band down."}</div>
+<div class="card"><h2>What Band ${b} requires in ${sec.s}</h2><p>${esc(sec.format)}</p><p><strong>For Band ${b} specifically:</strong> you need ${need}.</p></div>
+<div class="card"><h2>Step-by-step plan to Band ${b} in ${sec.s}</h2><ol>${steps.map((s) => `<li><strong>${s.name}.</strong> ${esc(s.text)}</li>`).join("")}</ol></div>
+<div class="card"><h2>Common mistakes that keep you below Band ${b}</h2><ul class="bsteps">${(sec.mistakes || []).map((m) => `<li>${esc(m)}</li>`).join("")}</ul></div>
+<div class="card"><h2>How to reach Band ${b} faster</h2><p>${esc(sec.improve)}</p><div class="callout key"><span class="ic">💡</span><div>${esc(sec.example)}</div></div></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `All IELTS Band ${b} requirements`, href: `/ielts-band-${b.replace(".", "-")}/` },
+  ...siblings,
   { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
-  { label: "IELTS prep lessons (PPT)", href: "/prep-lessons/" },
   { label: "Free band checker", href: "/ielts-writing-checker/" },
 ])}`;
   emit(path, head({ title, desc, path, kw: `ielts band ${b} ${sec.s.toLowerCase()}, how to get band ${b} in ${sec.s.toLowerCase()}, ielts ${sec.s.toLowerCase()} band ${b}, ielts ${sec.s.toLowerCase()} tips band ${b}`, jsonLdBlocks: [
