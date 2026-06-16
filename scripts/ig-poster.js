@@ -102,18 +102,20 @@ const TAGS = {
   quiz: ["quiz", "dailyquiz", "englishquiz", "quiztime", "testyourself", "gkquiz", "knowledgeispower"],
   exam: ["examprep", "testprep", "mocktest", "studytips", "examtips", "studymotivation", "studyhard"],
 };
-// 2026 algorithm: 3-5 highly relevant tags out-reach 30 generic ones. Pass best-first; we keep 5.
-// High-traffic, ON-TOPIC tags only. Irrelevant "trending" tags (war/news events) get an
-// account shadow-banned by IG's relevance filter — they HURT reach, so we never use them.
-// Refreshed June 2026 from current top study-abroad / IELTS IG + TikTok hashtag research:
-// a mix of high-volume reach tags + niche on-topic tags. On-topic ONLY (off-topic "trending"
-// tags trip IG's relevance filter and shadow-ban the account).
-const TRENDING_TAGS = ["studyabroad", "studyabroad2026", "internationalstudents", "studyvisa", "studentvisa", "ieltspreparation", "ielts", "studygram", "overseaseducation", "studyoverseas", "scholarships", "abroadeducation", "studentlife", "highereducation", "msabroad", "studyincanada", "studyinuk", "dreamstudyabroad", "studyabroadlife", "futureabroad", "educationabroad", "studentvisaupdate"];
+// 2026 Instagram: a few HIGHLY RELEVANT tags out-reach a wall of generic ones — Instagram
+// has said hashtags barely lift reach and mainly aid search, and stuffing 20–30 broad tags
+// trips the relevance filter (it reads as spam). So we cap at TAG_MAX, keeping the caller's
+// topic/country/exam-specific tags FIRST and topping up with a couple of broad reach tags only
+// if the post didn't supply enough. On-topic ONLY (off-topic "trending" tags shadow-ban).
+const TAG_MAX = 6;
+// Broad reach tags used ONLY to top up a post that passed fewer than TAG_MAX of its own.
+const TRENDING_TAGS = ["studyabroad", "studyabroad2026", "internationalstudents", "studyvisa", "studentvisa", "ieltspreparation", "studygram", "overseaseducation", "scholarships", "highereducation", "msabroad"];
 function buildTags() {
   const out = [];
   for (let i = 0; i < arguments.length; i++) { const a = Array.isArray(arguments[i]) ? arguments[i] : [arguments[i]]; for (const t of a) { const x = String(t || "").toLowerCase().replace(/[^a-z0-9]/g, ""); if (x && !out.includes(x)) out.push(x); } }
-  for (const t of TRENDING_TAGS) { if (!out.includes(t)) out.push(t); }
-  return out.slice(0, 20);
+  // Top up only if the post supplied fewer than TAG_MAX of its own topic tags.
+  for (const t of TRENDING_TAGS) { if (out.length >= TAG_MAX) break; if (!out.includes(t)) out.push(t); }
+  return out.slice(0, TAG_MAX);
 }
 
 // ── content pickers (one per slot) ───────────────────────────────────────
