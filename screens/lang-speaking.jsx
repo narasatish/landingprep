@@ -1,6 +1,6 @@
 /* global React, window */
 "use strict";
-// LandingPrep — German/French AI speaking partner. Hands-free, NATURAL voice, and it
+// LandingPrep — German/French speaking partner. Hands-free, NATURAL voice, and it
 // gently AUTO-CORRECTS your mistakes:
 //  • Continuous recognition that captures the WHOLE utterance (final + trailing words)
 //    so it stops missing your last words; submits ~0.9s after you stop talking.

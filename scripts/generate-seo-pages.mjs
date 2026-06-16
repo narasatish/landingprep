@@ -392,7 +392,7 @@ function mockPage(id) {
   const faqs = [
     { q: `Is this ${e.name} mock test really free?`, a: `Yes. Every ${e.name} mock test on ${BRAND} is 100% free with no signup, no credit card and no hidden paywall.` },
     { q: `Does the mock test match the real ${e.name}?`, a: `It mirrors the official ${e.name} format, timing and question types across ${e.sections}, scored on the ${e.score} scale.` },
-    { q: `How is my ${e.short} score calculated?`, a: `Objective sections are auto-scored instantly; writing and speaking get AI rubric feedback so you see a realistic ${e.score} estimate.` },
+    { q: `How is my ${e.short} score calculated?`, a: `Objective sections are auto-scored instantly; writing and speaking get rubric feedback so you see a realistic ${e.score} estimate.` },
     { q: `Can I practise ${e.short} on mobile?`, a: `Yes — ${BRAND} works in any browser on phone, tablet or laptop and even installs as an app for offline study.` },
   ];
   const inner = `
@@ -400,7 +400,7 @@ function mockPage(id) {
 <section class="hero">
   <div class="badges"><span class="badge">100% Free</span><span class="badge">Real exam timing</span><span class="badge">Instant scoring</span><span class="badge">No signup</span></div>
   <h1>Free ${e.name} Mock Test 2026</h1>
-  <p class="lead">Sit a full-length ${e.name} practice test online with authentic timing and ${e.sections}. Get an instant ${e.score} estimate plus AI feedback on writing and speaking — completely free.</p>
+  <p class="lead">Sit a full-length ${e.name} practice test online with authentic timing and ${e.sections}. Get an instant ${e.score} estimate plus instant feedback on writing and speaking — completely free.</p>
   <a class="cta" href="/#/exam-prep/${e.appPath}">▶ Start the ${e.short} mock test free</a>
 </section>
 <div class="card">
@@ -409,13 +409,13 @@ function mockPage(id) {
     <li><strong>Real format:</strong> ${e.sections} — matched to the official ${e.name} blueprint.</li>
     <li><strong>Exam-accurate timing</strong> so you build the stamina the real test demands.</li>
     <li><strong>Instant results</strong> on the ${e.score} scale, with answer explanations.</li>
-    <li><strong>AI writing &amp; speaking feedback</strong> with model answers and band-style scoring.</li>
+    <li><strong>Writing &amp; speaking feedback</strong> with model answers and band-style scoring.</li>
     <li><strong>Accepted everywhere:</strong> ${e.name} is recognised by ${e.accepted}.</li>
   </ul>
 </div>
 <div class="card">
   <h2>What's inside the ${e.short} mock test</h2>
-  <p>${e.name} is used for ${e.for}. Our free mock reproduces every section in order, with on-screen timers, a review screen showing the correct answers, and an AI tutor you can ask "why is this the answer?" on any question. Take it as many times as you like — new attempts, no limits, no cost.</p>
+  <p>${e.name} is used for ${e.for}. Our free mock reproduces every section in order, with on-screen timers, a review screen showing the correct answers, and an smart tutor you can ask "why is this the answer?" on any question. Take it as many times as you like — new attempts, no limits, no cost.</p>
 </div>
 ${(() => {
   const ep = EXAM_PATTERNS[id];
@@ -433,7 +433,7 @@ ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `${e.short} practice test (section by section)`, href: `/practice/${id}/` },
   { label: `${e.short} score calculator & converter`, href: `/tools/english-test-score-converter/` },
-  { label: `${e.short} AI speaking & writing practice`, href: `/#/agents` },
+  { label: `${e.short} speaking & writing practice`, href: `/#/agents` },
   { label: `All free exams`, href: `/#/exam-prep` },
 ])}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
@@ -447,28 +447,28 @@ function practicePage(id) {
   const e = EXAMS[id];
   const path = `/practice/${id}/`;
   const title = `Free ${e.short} Practice Test 2026 — All Sections, No Signup | ${BRAND}`;
-  const desc = `Free ${e.name} practice tests online: drill each section (${e.sections}) with answers, explanations and AI feedback. No signup. Perfect for ${e.for}.`;
+  const desc = `Free ${e.name} practice tests online: drill each section (${e.sections}) with answers, explanations and feedback. No signup. Perfect for ${e.for}.`;
   const kw = `${e.short.toLowerCase()} practice test online free, ${e.short.toLowerCase()} section practice questions with answers, free ${e.short.toLowerCase()} preparation for indian students, ${e.name} sample questions, ${e.short.toLowerCase()} listening reading writing speaking practice`;
   const faqs = [
     { q: `How can I practise ${e.short} for free?`, a: `Open ${BRAND}, pick ${e.name}, and choose a full mock or a single section. Everything is free with instant feedback.` },
     { q: `Which ${e.short} sections can I practise?`, a: `All of them: ${e.sections}. Each section can be practised on its own or as part of a full test.` },
-    { q: `Do I get answer explanations?`, a: `Yes — every objective question shows the correct answer, and you can ask the AI tutor to explain the reasoning.` },
+    { q: `Do I get answer explanations?`, a: `Yes — every objective question shows the correct answer, and you can ask the smart tutor to explain the reasoning.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/#/exam-prep">Mock Tests</a> › ${e.name} practice</p>
 <section class="hero">
   <div class="badges"><span class="badge">Free forever</span><span class="badge">Section drills</span><span class="badge">Answer explanations</span></div>
   <h1>${e.name} Practice Test (Online &amp; Free)</h1>
-  <p class="lead">Drill ${e.name} one section at a time or sit a full mock. Every question is scored on the ${e.score} scale with explanations and AI feedback — free, in your browser, no account needed.</p>
+  <p class="lead">Drill ${e.name} one section at a time or sit a full mock. Every question is scored on the ${e.score} scale with explanations and feedback — free, in your browser, no account needed.</p>
   <a class="cta" href="/#/exam-prep/${e.appPath}">▶ Practise ${e.short} free now</a>
 </section>
 <div class="card">
   <h2>Practise every ${e.short} section</h2>
-  <p>${e.name} covers ${e.sections}. ${BRAND} lets you target your weakest skill with focused section practice, then prove it on a timed full-length mock. You get instant scoring, a review screen with correct answers, model answers for writing, and two-way AI speaking practice.</p>
+  <p>${e.name} covers ${e.sections}. ${BRAND} lets you target your weakest skill with focused section practice, then prove it on a timed full-length mock. You get instant scoring, a review screen with correct answers, model answers for writing, and two-way speaking practice.</p>
   <ul>
     <li>Unlimited free attempts — fresh practice every time</li>
     <li>Realistic, exam-matched questions and timing</li>
-    <li>AI tutor for instant doubt-solving on any question</li>
+    <li>smart tutor for instant doubt-solving on any question</li>
     <li>Progress tracking, streaks and a personalised study plan</li>
   </ul>
 </div>
@@ -496,7 +496,7 @@ function eligibilityPage(slug) {
   const faqs = [
     { q: `What ${e.short} score do I need for ${d.country}?`, a: `Typical minimum: ${d.min}. ${d.note}` },
     { q: `Is the ${e.short} accepted in ${d.country}?`, a: `Yes — ${e.name} is widely accepted in ${d.country}. ${d.note}` },
-    { q: `How do I reach the ${e.short} score for ${d.country}?`, a: `Practise free on ${BRAND} with full ${e.name} mocks, section drills and AI feedback until you consistently hit your target.` },
+    { q: `How do I reach the ${e.short} score for ${d.country}?`, a: `Practise free on ${BRAND} with full ${e.name} mocks, section drills and feedback until you consistently hit your target.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/#/exam-prep">Mock Tests</a> › ${e.short} for ${d.country}</p>
@@ -516,7 +516,7 @@ function eligibilityPage(slug) {
   <ul>
     <li>Take a free full-length ${e.name} mock to get your baseline ${e.score} score.</li>
     <li>Use section practice to fix your weakest skill among ${e.sections}.</li>
-    <li>Get AI writing &amp; speaking feedback with model answers.</li>
+    <li>Get Writing &amp; speaking feedback with model answers.</li>
     <li>Track progress and repeat until you clear the ${d.country} requirement.</li>
   </ul>
 </div>
@@ -553,7 +553,7 @@ function toolPage(slug) {
 </section>
 <div class="card">
   <h2>About this tool</h2>
-  <p>${t.lead} ${BRAND} is a 100% free platform for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT preparation. Use this tool alongside our free full-length mock tests and AI speaking &amp; writing practice to plan exactly what score you need and how to reach it.</p>
+  <p>${t.lead} ${BRAND} is a 100% free platform for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT preparation. Use this tool alongside our free full-length mock tests and speaking &amp; writing practice to plan exactly what score you need and how to reach it.</p>
 </div>
 ${faqBlock(faqs)}
 ${relatedGrid([
@@ -1220,7 +1220,7 @@ function aboutPage() {
   const desc = `LandingPrep is a free platform helping international students worldwide go from mock test to campus abroad: free IELTS, TOEFL, PTE, GRE & GMAT mock tests plus a complete study-abroad toolkit. Learn about our mission and contact us.`;
   const kw = `about landingprep, landingprep contact, free exam prep platform, study abroad platform, landingprep mission`;
   const faqs = [
-    { q: `Is LandingPrep really free?`, a: `Yes — all mock tests, AI practice, the college predictor, scholarship finder, SOP builder and study-abroad tools are 100% free with no signup required.` },
+    { q: `Is LandingPrep really free?`, a: `Yes — all mock tests, practice, the college predictor, scholarship finder, SOP builder and study-abroad tools are 100% free with no signup required.` },
     { q: `How can I contact LandingPrep?`, a: `Email us at support@landingprep.com. We help with exam prep, college selection, scholarships, SOPs and study-abroad questions.` },
     { q: `Who is LandingPrep for?`, a: `International students worldwide preparing for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE or GMAT and planning to study abroad.` },
   ];
@@ -1238,7 +1238,7 @@ function aboutPage() {
 <div class="card">
   <h2>What we offer — all free</h2>
   <ul>
-    <li><strong>1,000+ mock tests</strong> across 7 exams with real timings, AI speaking & writing practice and model answers.</li>
+    <li><strong>1,000+ mock tests</strong> across 7 exams with real timings, speaking & writing practice and model answers.</li>
     <li><strong>College Predictor</strong> across 99 top universities with Safe/Target/Reach matches, fees and requirements.</li>
     <li><strong>Scholarship finder, SOP/LOR/resume builders, university & country comparison, loan & ROI calculators.</li>
     <li><strong>Visa-interview practice and step-by-step immigration & PR roadmaps for 9 destinations.</li>
@@ -1298,12 +1298,12 @@ function privacyPage() {
   </ul>
 </div>
 <div class="card">
-  <h2>AI features</h2>
-  <p>When you use an AI tool (the band checker, AI speaking/writing partner or AI tutor), the text or transcript you submit is sent to Google's Gemini API to generate feedback. We do not use your submissions to train models, and we don't store them beyond what's needed to show your result. Do not paste sensitive personal information into AI tools.</p>
+  <h2>Smart features</h2>
+  <p>When you use a smart tool (the band checker, speaking/writing partner or smart tutor), the text or transcript you submit is sent to Google's Gemini API to generate feedback. We do not use your submissions to train models, and we don't store them beyond what's needed to show your result. Do not paste sensitive personal information into smart tools.</p>
 </div>
 <div class="card">
   <h2>Cookies & third parties</h2>
-  <p>We use a small number of essential and analytics cookies (mainly Google Analytics). Optional accounts and sync are powered by Google Firebase. Our AI features use the Google Gemini API. These providers process data under their own privacy policies. We do not use third-party advertising trackers.</p>
+  <p>We use a small number of essential and analytics cookies (mainly Google Analytics). Optional accounts and sync are powered by Google Firebase. Our smart features use the Google Gemini API. These providers process data under their own privacy policies. We do not use third-party advertising trackers.</p>
 </div>
 <div class="card">
   <h2>Your rights & contact</h2>
@@ -1323,7 +1323,7 @@ ${relatedGrid([
 function termsPage() {
   const path = `/terms/`;
   const title = `Terms of Service — LandingPrep`;
-  const desc = `The terms for using LandingPrep's free exam prep and study-abroad tools. AI scores are estimates, not official results, and we are not affiliated with any test provider.`;
+  const desc = `The terms for using LandingPrep's free exam prep and study-abroad tools. Scores shown are estimates, not official results, and we are not affiliated with any test provider.`;
   const kw = `landingprep terms of service, terms and conditions, free exam prep terms`;
   const inner = `
 <p class="crumb"><a href="/">Home</a> › Terms of Service</p>
@@ -1334,11 +1334,11 @@ function termsPage() {
 </section>
 <div class="card">
   <h2>The service</h2>
-  <p>LandingPrep provides free practice tests, AI feedback tools and study-abroad resources for international students. The service is provided free of charge, "as is", and we may add, change or remove features at any time.</p>
+  <p>LandingPrep provides free practice tests, instant feedback tools and study-abroad resources for international students. The service is provided free of charge, "as is", and we may add, change or remove features at any time.</p>
 </div>
 <div class="card">
   <h2>Scores and information are estimates</h2>
-  <p>AI band scores, predicted university chances, cost calculators and exam information are <strong>estimates and guidance only</strong> — they are not official scores or guarantees. Always confirm fees, score requirements, deadlines and visa rules with the official test provider, university or government source before making decisions.</p>
+  <p>band scores, predicted university chances, cost calculators and exam information are <strong>estimates and guidance only</strong> — they are not official scores or guarantees. Always confirm fees, score requirements, deadlines and visa rules with the official test provider, university or government source before making decisions.</p>
 </div>
 <div class="card">
   <h2>No affiliation</h2>
@@ -1348,7 +1348,7 @@ function termsPage() {
   <h2>Acceptable use</h2>
   <ul>
     <li>Use LandingPrep for your own personal exam preparation and study-abroad planning.</li>
-    <li>Don't abuse, overload, scrape at scale, or attempt to disrupt the service or its AI features.</li>
+    <li>Don't abuse, overload, scrape at scale, or attempt to disrupt the service or its smart features.</li>
     <li>Don't submit unlawful content or other people's personal data into the tools.</li>
   </ul>
 </div>
@@ -1499,7 +1499,7 @@ function prExamPage(c) {
 <div class="card"><h2>The competitive (high-points) target</h2><p>${c.top}</p></div>
 <div class="card"><h2>Why your score matters</h2><p>${c.why}</p></div>
 <div class="card"><h2>Key tips</h2><p>${c.tip}</p></div>
-<div class="card"><h2>Practice free for your ${c.exam}</h2><p>Take full-length, real-timing ${c.exam} mock tests free on LandingPrep — with instant scoring and AI feedback so you hit your ${c.co} PR target faster. <a href="/#/exam-prep">Start a free ${c.exam} mock test →</a></p></div>
+<div class="card"><h2>Practice free for your ${c.exam}</h2><p>Take full-length, real-timing ${c.exam} mock tests free on LandingPrep — with instant scoring and feedback so you hit your ${c.co} PR target faster. <a href="/#/exam-prep">Start a free ${c.exam} mock test →</a></p></div>
 ${faqBlock(c.faqs)}
 ${relatedGrid([
   { label: `🎯 Free ${c.exam} mock tests`, href: `/#/exam-prep` },
@@ -1548,10 +1548,10 @@ const LANG_SEO = {
     units: ["Greetings &amp; introductions", "Numbers, days &amp; time", "Articles &amp; gender (der/die/das)", "Present tense &amp; common verbs", "Survival German for uni, shops &amp; café"],
     kw: "learn german free, free german course online, german a1, learn german for beginners, goethe a1 practice, german for study abroad, free german lessons, german vocabulary with audio, german speaking practice ai, german mock test free, study in germany language requirement, learn german online free for beginners",
     faqs: [
-      { q: "Is the German course on LandingPrep really free?", a: "Yes — the German A1 course, vocabulary with natural-voice pronunciation, AI speaking practice and mock tests are 100% free with no signup and no payment." },
+      { q: "Is the German course on LandingPrep really free?", a: "Yes — the German A1 course, vocabulary with natural-voice pronunciation, speaking practice and mock tests are 100% free with no signup and no payment." },
       { q: "What level of German do I need to study in Germany?", a: "Most German-taught degrees require B1–B2 (TestDaF or DSH); many English-taught Master's programmes need no German. Start at A1 here and build up." },
       { q: "Which German exam should I take?", a: "The Goethe-Zertifikat is the most widely recognised worldwide; TestDaF and DSH are used for university admission. Pick the one your university accepts." },
-      { q: "Can I practise speaking German with AI for free?", a: "Yes — our hands-free AI speaking partner holds a real two-way German conversation, gently auto-corrects your mistakes, replies in a natural German voice and shows the English translation. Just press Start and talk." },
+      { q: "Can I practise speaking German for free?", a: "Yes — our hands-free speaking partner holds a real two-way German conversation, gently auto-corrects your mistakes, replies in a natural German voice and shows the English translation. Just press Start and talk." },
     ],
   },
   french: {
@@ -1561,10 +1561,10 @@ const LANG_SEO = {
     units: ["Greetings &amp; introductions", "Numbers &amp; everyday words", "Articles &amp; gender (le/la/les)", "Key verbs: être &amp; avoir", "Survival French for daily life"],
     kw: "learn french free, free french course online, french a1, learn french for beginners, delf a1 practice, french for study abroad, free french lessons, french vocabulary with audio, french speaking practice ai, french mock test free, study in france language, tcf tef practice free",
     faqs: [
-      { q: "Is the French course free?", a: "Yes — the French A1 course, vocabulary with native-voice pronunciation, AI speaking practice and mock tests are completely free with no signup." },
+      { q: "Is the French course free?", a: "Yes — the French A1 course, vocabulary with native-voice pronunciation, speaking practice and mock tests are completely free with no signup." },
       { q: "What French level do I need to study in France?", a: "Most French-taught degrees want B2 (DELF/DALF or TCF). Campus France guides the level; English-taught programmes may need none. Start A1 here." },
       { q: "Which French exam is best for Canada?", a: "For Canadian immigration, the TEF and TCF are accepted (Express Entry). For study, DELF/DALF and TCF are widely recognised." },
-      { q: "Can I practise speaking French with AI?", a: "Yes — our hands-free AI partner chats with you in simple French, gently auto-corrects your mistakes, speaks in a natural French voice and shows English translations. Just press Start and talk." },
+      { q: "Can I practise speaking French with AI?", a: "Yes — our hands-free speaking partner chats with you in simple French, gently auto-corrects your mistakes, speaks in a natural French voice and shows English translations. Just press Start and talk." },
     ],
   },
   spanish: {
@@ -1574,10 +1574,10 @@ const LANG_SEO = {
     units: ["Greetings &amp; introductions", "Numbers, days &amp; time", "Articles &amp; gender (el/la/los/las)", "Ser vs estar &amp; key verbs", "Survival Spanish for uni, shops &amp; café"],
     kw: "learn spanish free, free spanish course online, spanish a1, learn spanish for beginners, dele a1 practice, siele practice free, spanish for study abroad, free spanish lessons, spanish vocabulary with audio, spanish speaking practice ai, spanish mock test free, study in spain language requirement, learn spanish online free for beginners",
     faqs: [
-      { q: "Is the Spanish course on LandingPrep really free?", a: "Yes — the Spanish A1 course, vocabulary with natural-voice pronunciation, AI speaking practice and DELE-style mock tests are 100% free with no signup and no payment." },
+      { q: "Is the Spanish course on LandingPrep really free?", a: "Yes — the Spanish A1 course, vocabulary with natural-voice pronunciation, speaking practice and DELE-style mock tests are 100% free with no signup and no payment." },
       { q: "What level of Spanish do I need to study in Spain?", a: "Most Spanish-taught degrees require B1–B2 (DELE or SIELE); many English-taught programmes need no Spanish. Start at A1 here and build up." },
       { q: "Which Spanish exam should I take?", a: "The DELE (issued by Instituto Cervantes) is the most recognised worldwide and is lifelong; SIELE is faster and fully digital. The CCSE is needed for Spanish nationality. Pick the one your university or pathway accepts." },
-      { q: "Can I practise speaking Spanish with AI for free?", a: "Yes — our hands-free AI speaking partner holds a real two-way Spanish conversation, gently auto-corrects your mistakes, replies in a natural Spanish voice and shows the English translation. Just press Start and talk." },
+      { q: "Can I practise speaking Spanish for free?", a: "Yes — our hands-free speaking partner holds a real two-way Spanish conversation, gently auto-corrects your mistakes, replies in a natural Spanish voice and shows the English translation. Just press Start and talk." },
     ],
   },
 };
@@ -1585,13 +1585,13 @@ function languageLandingPage(key) {
   const L = LANG_SEO[key];
   const path = `/${L.slug}/`;
   const title = `Learn ${L.name} Free — Online A1 Course, Vocabulary &amp; Exam Prep 2026 | ${BRAND}`;
-  const desc = `Learn ${L.name} (${L.native}) for free: a structured A1 course, vocabulary with natural-voice pronunciation, an AI speaking partner and ${L.name} mock tests. Built for students heading to ${L.countries}. No signup.`;
+  const desc = `Learn ${L.name} (${L.native}) for free: a structured A1 course, vocabulary with natural-voice pronunciation, an speaking partner and ${L.name} mock tests. Built for students heading to ${L.countries}. No signup.`;
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/#/languages">Languages</a> › Learn ${L.name}</p>
 <section class="hero">
-  <div class="badges"><span class="badge">100% Free</span><span class="badge">Natural voice</span><span class="badge">AI speaking</span><span class="badge">No signup</span></div>
+  <div class="badges"><span class="badge">100% Free</span><span class="badge">Natural voice</span><span class="badge">speaking</span><span class="badge">No signup</span></div>
   <h1>Learn ${L.name} Free — ${L.flag} Online A1 Course</h1>
-  <p class="lead">Study abroad in ${L.countries}? Learn ${L.name} from scratch with a free A1 course, vocabulary you can <em>hear</em> in a natural voice, a 2-way AI speaking partner and ${L.name} mock tests — all free, for students worldwide.</p>
+  <p class="lead">Study abroad in ${L.countries}? Learn ${L.name} from scratch with a free A1 course, vocabulary you can <em>hear</em> in a natural voice, a 2-way speaking partner and ${L.name} mock tests — all free, for students worldwide.</p>
   <a class="cta" href="/#/languages">▶ Start the free ${L.name} course</a>
 </section>
 <div class="card">
@@ -1613,7 +1613,7 @@ function languageLandingPage(key) {
 </div>
 <div class="card">
   <h2>Practise speaking ${L.name} with AI</h2>
-  <p>Our free AI speaking partner holds a real two-way ${L.name} conversation: speak (or type), and it replies in simple ${L.name} with the English translation and the natural ${L.name} voice — the fastest way to build confidence.</p>
+  <p>Our free speaking partner holds a real two-way ${L.name} conversation: speak (or type), and it replies in simple ${L.name} with the English translation and the natural ${L.name} voice — the fastest way to build confidence.</p>
 </div>
 ${faqBlock(L.faqs)}
 ${relatedGrid([
@@ -1637,7 +1637,7 @@ function prepLessonsPage() {
     { q: "Are the prep lessons free?", a: "Yes — all 24 lesson decks (600+ slides) are 100% free with no signup. Learn the strategy, then practise with our free mock tests." },
     { q: "Which exams have lessons?", a: "Every section of all 7 exams: IELTS, TOEFL iBT, PTE Academic, GRE, GMAT Focus, CELPIP and the Duolingo English Test — plus German and French foundations. Each deck has 22–32 slides of tips, traps and worked examples." },
     { q: "What do the IELTS lessons cover?", a: "Separate decks for Listening, Reading, Writing and Speaking — format, every question/task type, scoring bands, distractor traps, time management and band-8 strategy, all with examples." },
-    { q: "Do you have lessons for German and French?", a: "Yes — German and French foundation decks cover pronunciation, gender (der/die/das, le/la), key verbs, word order and a smart learning plan, alongside free A1 courses, vocabulary, mock tests and an AI speaking partner." },
+    { q: "Do you have lessons for German and French?", a: "Yes — German and French foundation decks cover pronunciation, gender (der/die/das, le/la), key verbs, word order and a smart learning plan, alongside free A1 courses, vocabulary, mock tests and an speaking partner." },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › Prep Lessons</p>
@@ -1674,29 +1674,29 @@ function bandCheckerPage(mode) {
   const isW = mode === "writing";
   const path = isW ? `/ielts-writing-checker/` : `/ielts-speaking-checker/`;
   const title = isW
-    ? `Free IELTS Writing Checker — Instant AI Band Score (Task 1 &amp; 2) | ${BRAND}`
-    : `Free IELTS Speaking Checker — Instant AI Band Score &amp; Feedback | ${BRAND}`;
+    ? `Free IELTS Writing Checker — Instant Band Score (Task 1 &amp; 2) | ${BRAND}`
+    : `Free IELTS Speaking Checker — Instant Band Score &amp; Feedback | ${BRAND}`;
   const desc = isW
-    ? `Free AI IELTS Writing checker: paste your Task 1 or Task 2 answer and get an instant estimated band with a Task Response, Coherence, Lexical Resource &amp; Grammar breakdown, corrections and a Band 9 rewrite. No signup.`
-    : `Free AI IELTS Speaking checker: record a Part 2 answer and get an instant estimated band with Fluency, Lexical, Grammar &amp; Pronunciation feedback and a Band 9 model answer. No signup.`;
+    ? `Free IELTS Writing checker: paste your Task 1 or Task 2 answer and get an instant estimated band with a Task Response, Coherence, Lexical Resource &amp; Grammar breakdown, corrections and a Band 9 rewrite. No signup.`
+    : `Free IELTS Speaking checker: record a Part 2 answer and get an instant estimated band with Fluency, Lexical, Grammar &amp; Pronunciation feedback and a Band 9 model answer. No signup.`;
   const kw = isW
     ? "free ielts writing checker, ielts band score checker, ielts essay checker free, ai ielts writing feedback, ielts writing task 2 checker, ielts writing task 1 checker, check my ielts essay band, ielts writing evaluator free, ielts essay band score calculator"
     : "free ielts speaking checker, ielts speaking band score, ai ielts speaking test free, ielts speaking practice with band score, check my ielts speaking, ielts speaking evaluator, ielts part 2 practice free";
   const faqs = isW ? [
     { q: "Is the IELTS Writing checker really free?", a: "Yes — paste your essay and get an instant estimated band with a full criterion breakdown, corrections and a Band 9 rewrite. No signup, no payment." },
-    { q: "How accurate is the AI band score?", a: "It's calibrated to the official IELTS public band descriptors and is a strong guide for practice (most AI checkers are 80–90% accurate). For a high-stakes decision, confirm with a certified teacher." },
+    { q: "How accurate is the band score?", a: "It's calibrated to the official IELTS public band descriptors and is a strong guide for practice (most band checkers are 80–90% accurate). For a high-stakes decision, confirm with a certified teacher." },
     { q: "Does it score Task 1 and Task 2?", a: "Both. Pick Task 1 (report/letter) or Task 2 (essay) and the checker applies the right descriptors (Task Achievement vs Task Response)." },
     { q: "What feedback do I get?", a: "An overall band, sub-scores for Task Response/Achievement, Coherence & Cohesion, Lexical Resource and Grammatical Range & Accuracy, your key mistakes corrected, and a full Band 9 rewrite to learn from." },
   ] : [
     { q: "Is the IELTS Speaking checker free?", a: "Yes — record a Part 2 long-turn answer and get an instant estimated band with feedback and a Band 9 model answer. No signup." },
-    { q: "How does it work?", a: "You get a real Part 2 cue card, record your 1–2 minute answer (it transcribes live), and the AI examiner scores Fluency & Coherence, Lexical Resource, Grammar and Pronunciation against the band descriptors." },
+    { q: "How does it work?", a: "You get a real Part 2 cue card, record your 1–2 minute answer (it transcribes live), and the examiner scores Fluency & Coherence, Lexical Resource, Grammar and Pronunciation against the band descriptors." },
     { q: "How accurate is it?", a: "It's a strong practice guide calibrated to the IELTS descriptors; pronunciation is estimated from the transcript, so pair it with a teacher for a precise pronunciation score." },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › ${isW ? "IELTS Writing Checker" : "IELTS Speaking Checker"}</p>
 <section class="hero">
   <div class="badges"><span class="badge">100% Free</span><span class="badge">Instant band</span><span class="badge">No signup</span><span class="badge">Band 9 ${isW ? "rewrite" : "model"}</span></div>
-  <h1>Free IELTS ${isW ? "Writing" : "Speaking"} Checker — Instant AI Band Score</h1>
+  <h1>Free IELTS ${isW ? "Writing" : "Speaking"} Checker — Instant Band Score</h1>
   <p class="lead">${isW ? "Paste your Task 1 or Task 2 answer" : "Record a Part 2 answer"} and get an estimated IELTS band in seconds, with a full criterion breakdown, ${isW ? "corrections and a Band 9 rewrite" : "feedback and a Band 9 model answer"}. Free, unlimited, no account.</p>
   <a class="cta" href="/#/${isW ? "writing-checker" : "speaking-checker"}">▶ Check my band score</a>
 </section>
@@ -1704,7 +1704,7 @@ function bandCheckerPage(mode) {
   <h2>How it works</h2>
   <ul>
     <li><strong>1.</strong> ${isW ? "Pick Task 1 or Task 2 and paste your answer." : "Get a real Part 2 cue card and record your answer (it transcribes as you speak)."}</li>
-    <li><strong>2.</strong> Our AI examiner applies the official IELTS band descriptors.</li>
+    <li><strong>2.</strong> Our examiner applies the official IELTS band descriptors.</li>
     <li><strong>3.</strong> Get your overall band + ${isW ? "Task Response, Coherence, Lexical Resource &amp; Grammar" : "Fluency, Lexical, Grammar &amp; Pronunciation"} sub-scores, ${isW ? "key corrections and a Band 9 rewrite" : "targeted tips and a Band 9 model answer"}.</li>
   </ul>
 </div>
@@ -1789,20 +1789,20 @@ const BANDS = [
 function bandPage(item) {
   const path = `/ielts-band-${item.b.replace(".", "-")}/`;
   const title = `IELTS Band ${item.b} — Requirements &amp; How to Get It (2026) | ${BRAND}`;
-  const desc = `What IELTS Band ${item.b} means, the raw score you need (about ${item.raw} in Listening/Reading), who needs it, and a step-by-step plan to reach Band ${item.b}. Free practice tests, lessons and an AI band checker.`;
+  const desc = `What IELTS Band ${item.b} means, the raw score you need (about ${item.raw} in Listening/Reading), who needs it, and a step-by-step plan to reach Band ${item.b}. Free practice tests, lessons and an band checker.`;
   const kw = `ielts band ${item.b}, how to get ielts band ${item.b} in one month, ielts band ${item.b} raw score, ielts band ${item.b} requirements for study abroad, is ielts ${item.b} good for universities, ielts band ${item.b} meaning, strategy to reach ielts band ${item.b}`;
   const steps = [
     { name: "Know your target", text: `Band ${item.b} ≈ about ${item.raw} correct in Listening and Reading. Writing & Speaking are marked on the official band descriptors (Task Response/Fluency, Coherence, Lexical Resource, Grammar).` },
     { name: "Diagnose with a free mock test", text: `Take a full free IELTS mock test to see your current band in each of the four skills and find your weakest one.` },
     { name: "Learn the strategy", text: `Study the free PPT lessons for your weak sections — question types, traps and timing for Band ${item.b}.` },
     { name: "Build vocabulary & grammar", text: `Lexical Resource and Grammar are each 25% of Writing/Speaking. Learn topic vocabulary and Band 9 linking words.` },
-    { name: "Practise Writing & Speaking with feedback", text: `Use the free AI band-score checker to get a TR/CC/LR/GRA breakdown and a Band 9 model, then redo your weak answers.` },
+    { name: "Practise Writing & Speaking with feedback", text: `Use the free band-score checker to get a TR/CC/LR/GRA breakdown and a Band 9 model, then redo your weak answers.` },
     { name: "Do timed full tests until consistent", text: `Repeat full mocks under exam timing until you hit Band ${item.b} two or three times in a row.` },
   ];
   const faqs = [
     { q: `What raw score is IELTS Band ${item.b}?`, a: `Roughly ${item.raw} correct out of 40 in Listening and in Reading (the exact boundary shifts slightly per test). Writing and Speaking are scored on the band descriptors, not a raw count.` },
     { q: `Is Band ${item.b} good?`, a: `Band ${item.b} is "${item.level}" on the IELTS scale and is typically needed for ${item.use}.` },
-    { q: `How long does it take to reach Band ${item.b}?`, a: `It depends on your starting band — most learners move up about 0.5 band with 4–6 weeks of focused, feedback-driven practice. Use the free mock tests and AI checker to track progress.` },
+    { q: `How long does it take to reach Band ${item.b}?`, a: `It depends on your starting band — most learners move up about 0.5 band with 4–6 weeks of focused, feedback-driven practice. Use the free mock tests and band checker to track progress.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › IELTS Band ${item.b}</p>
@@ -1814,7 +1814,7 @@ function bandPage(item) {
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
-  { label: "Free AI writing band checker", href: "/ielts-writing-checker/" },
+  { label: "Free Writing band checker", href: "/ielts-writing-checker/" },
   { label: "IELTS prep lessons (PPT)", href: "/prep-lessons/" },
   { label: "IELTS vocabulary by topic", href: "/ielts-vocabulary/" },
 ])}`;
@@ -1896,16 +1896,16 @@ function bandSectionPage(band, sec) {
   const path = `/ielts-band-${b.replace(".", "-")}-${sec.s.toLowerCase()}/`;
   const need = sec.raw ? `about ${SEC_RAW[b]} correct out of 40` : `consistently meeting the Band ${b} descriptors`;
   const title = `How to Get IELTS Band ${b} in ${sec.s} (2026) | ${BRAND}`;
-  const desc = `Get IELTS Band ${b} in ${sec.s}: what you need (${need}), the exact strategy, common mistakes and free practice. Step-by-step plan with mock tests${sec.raw ? "" : " and a free AI band checker"}.`;
+  const desc = `Get IELTS Band ${b} in ${sec.s}: what you need (${need}), the exact strategy, common mistakes and free practice. Step-by-step plan with mock tests${sec.raw ? "" : " and a free band checker"}.`;
   const steps = [
     { name: "Know the target", text: sec.raw ? `For ${sec.s}, Band ${b} is ${need} (boundaries shift slightly per test).` : `For ${sec.s}, Band ${b} means ${need} — there is no raw score; examiners use the public band descriptors.` },
     { name: "Diagnose", text: `Take a free IELTS ${sec.s} mock to see your current band and your specific weaknesses.` },
     ...sec.tips.map((t, i) => ({ name: "Tactic " + (i + 1), text: t })),
-    { name: sec.raw ? "Practise under timing" : "Get feedback and redo", text: sec.raw ? `Do timed ${sec.s} sections until you hit ${need} two or three times in a row.` : `Use the free AI band checker to score your ${sec.s.toLowerCase()} on each criterion, then rewrite/re-record your weak answers.` },
+    { name: sec.raw ? "Practise under timing" : "Get feedback and redo", text: sec.raw ? `Do timed ${sec.s} sections until you hit ${need} two or three times in a row.` : `Use the free band checker to score your ${sec.s.toLowerCase()} on each criterion, then rewrite/re-record your weak answers.` },
   ];
   const faqs = [
     { q: `What do I need for Band ${b} in IELTS ${sec.s}?`, a: `You need ${need}. ${sec.raw ? "Every question is one mark with no negative marking, so never leave a blank." : "Focus on the four criteria for this section equally."}` },
-    { q: `Is Band ${b} in ${sec.s} hard to get?`, a: `It's very achievable with focused, feedback-driven practice — most learners gain about 0.5 band in 4–6 weeks. The free mocks and AI checker show your progress.` },
+    { q: `Is Band ${b} in ${sec.s} hard to get?`, a: `It's very achievable with focused, feedback-driven practice — most learners gain about 0.5 band in 4–6 weeks. The free mocks and band checker show your progress.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/ielts-band-${b.replace(".", "-")}/">IELTS Band ${b}</a> › ${sec.s}</p>
@@ -1919,7 +1919,7 @@ ${relatedGrid([
   { label: `All IELTS Band ${b} requirements`, href: `/ielts-band-${b.replace(".", "-")}/` },
   { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
   { label: "IELTS prep lessons (PPT)", href: "/prep-lessons/" },
-  { label: "Free AI band checker", href: "/ielts-writing-checker/" },
+  { label: "Free band checker", href: "/ielts-writing-checker/" },
 ])}`;
   emit(path, head({ title, desc, path, kw: `ielts band ${b} ${sec.s.toLowerCase()}, how to get band ${b} in ${sec.s.toLowerCase()}, ielts ${sec.s.toLowerCase()} band ${b}, ielts ${sec.s.toLowerCase()} tips band ${b}`, jsonLdBlocks: [
     { "@context": "https://schema.org", "@type": "HowTo", name: title.replace(` | ${BRAND}`, ""), description: desc, step: steps.map((s) => ({ "@type": "HowToStep", name: s.name, text: s.text })) },
@@ -1948,7 +1948,7 @@ function examForCountryPage(x) {
   const faqs = [
     { q: `What ${x.exam} score do I need for ${x.c}?`, a: `Typically ${x.study}. ${x.extra}` },
     { q: `Is ${x.exam} accepted in ${x.c}?`, a: `Yes — ${x.extra}` },
-    { q: `How can I reach that score for free?`, a: `Take free ${x.exam} mock tests, learn the strategy in the PPT lessons, and check your writing/speaking band with the free AI checker.` },
+    { q: `How can I reach that score for free?`, a: `Take free ${x.exam} mock tests, learn the strategy in the PPT lessons, and check your writing/speaking band with the free band checker.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › ${x.exam} for ${x.c}</p>
@@ -1960,7 +1960,7 @@ ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free ${x.exam} mock test`, href: `/mock-test/${x.slug}/` },
   { label: `${x.exam} prep lessons`, href: "/prep-lessons/" },
-  { label: "Free AI band checker", href: "/ielts-writing-checker/" },
+  { label: "Free band checker", href: "/ielts-writing-checker/" },
   { label: `Student guide to ${x.c === "USA" ? "New York" : x.c === "Canada" ? "Toronto" : x.c === "Australia" ? "Sydney" : x.c === "UK" ? "London" : x.c === "Germany" ? "Berlin" : "Dublin"}`, href: "/student-city-guides/" },
 ])}`;
   emit(path, head({ title, desc, path, kw: `${x.exam.toLowerCase()} score for ${x.c.toLowerCase()}, ${x.exam.toLowerCase()} requirement ${x.c.toLowerCase()}, ${x.exam.toLowerCase()} for ${x.c.toLowerCase()} study visa, study in ${x.c.toLowerCase()} ${x.exam.toLowerCase()}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${x.exam} for ${x.c}`, path }])] }) + shell(inner));
@@ -1969,7 +1969,7 @@ ${relatedGrid([
 // ── "[Exam] vs [Exam]" comparison pages ─────────────────────────────────────
 const EXAM_VS = [
   { a: "IELTS", b: "TOEFL", rows: [["Scoring", "Band 0–9", "0–120"], ["Format", "Paper or computer; face-to-face speaking", "Internet-based; speak into a microphone"], ["Length", "About 2h 45m", "About 2 hours"], ["Speaking", "Live, with a real examiner", "Recorded, AI + human scored"], ["Best for", "UK, Australia, Canada, Ireland, NZ", "USA, and widely accepted worldwide"]], verdict: "Pick IELTS if you prefer a human speaking examiner or are heading to the UK/Australia; pick TOEFL for the USA or if you like an all-computer test." },
-  { a: "IELTS", b: "PTE", rows: [["Scoring", "Band 0–9", "10–90 (Global Scale of English)"], ["Marking", "Human examiners", "Fully computer (AI) scored"], ["Results", "3–13 days", "Often within 48 hours"], ["Speaking", "With a real examiner", "Into a microphone, AI scored"], ["Best for", "Those who prefer human marking", "Fast results and Australia migration"]], verdict: "Choose PTE for fast, fully-computer scoring and quick turnaround; choose IELTS if you prefer a human examiner and the most universal recognition." },
+  { a: "IELTS", b: "PTE", rows: [["Scoring", "Band 0–9", "10–90 (Global Scale of English)"], ["Marking", "Human examiners", "Fully computer (AI) scored"], ["Results", "3–13 days", "Often within 48 hours"], ["Speaking", "With a real examiner", "Into a microphone, scored"], ["Best for", "Those who prefer human marking", "Fast results and Australia migration"]], verdict: "Choose PTE for fast, fully-computer scoring and quick turnaround; choose IELTS if you prefer a human examiner and the most universal recognition." },
   { a: "TOEFL", b: "PTE", rows: [["Scoring", "0–120", "10–90"], ["Marking", "AI + human", "Fully AI"], ["Results", "4–8 days", "~48 hours"], ["Strength", "Strong US recognition", "Fast, growing acceptance"], ["Best for", "USA universities", "Australia, fast results"]], verdict: "Both are computer-based; TOEFL is the safer choice for the USA, PTE for the fastest results and Australian migration." },
   { a: "IELTS", b: "Duolingo", rows: [["Scoring", "Band 0–9", "10–160"], ["Cost", "Higher (~US$200+)", "Much cheaper (~US$65)"], ["Length", "~2h 45m, at a centre", "~1 hour, at home"], ["Results", "3–13 days", "~2 days"], ["Acceptance", "Universal", "Thousands of universities, growing"]], verdict: "Duolingo is far cheaper, shorter and taken at home — great if your university accepts it. IELTS has the widest acceptance including visas/PR." },
   { a: "GRE", b: "GMAT", rows: [["Used for", "Most Master's & PhD programmes", "MBA & business Master's"], ["Score", "260–340 (+ AWA 0–6)", "205–805 (Focus Edition)"], ["Maths", "Calculator allowed", "No calculator (Quant)"], ["Length", "~1h 58m", "~2h 15m"], ["Best for", "Broad grad-school options", "Top business schools"]], verdict: "Take the GRE for the widest range of graduate programmes; take the GMAT Focus if you're targeting competitive MBA programmes that prefer it." },
@@ -1983,7 +1983,7 @@ function examVsExamPage(v) {
   const faqs = [
     { q: `Is ${v.a} easier than ${v.b}?`, a: `Neither is universally easier — it depends on your strengths. ${v.verdict}` },
     { q: `Which is more accepted, ${v.a} or ${v.b}?`, a: v.verdict },
-    { q: `Can I practise both for free?`, a: `Yes — LandingPrep has free full-length mock tests, strategy lessons and an AI band checker for both ${v.a} and ${v.b}.` },
+    { q: `Can I practise both for free?`, a: `Yes — LandingPrep has free full-length mock tests, strategy lessons and an band checker for both ${v.a} and ${v.b}.` },
   ];
   const slugA = v.a.toLowerCase(), slugB = v.b.toLowerCase();
   const inner = `
@@ -2036,7 +2036,7 @@ function examForUniPage(c) {
   const faqs = [
     { q: `What IELTS score do I need for ${c.name}?`, a: `${c.name} typically requires around IELTS Band ${band} overall${c.toefl ? " (equivalent to TOEFL iBT ~" + c.toefl + " or PTE ~" + c.pte + ")" : ""}. Undergraduate courses are often 0.5 lower; some postgraduate programmes ask higher — confirm on your course page.` },
     { q: `Does ${c.name} accept TOEFL or PTE too?`, a: `Yes — ${c.name} also accepts ${c.toefl ? "TOEFL iBT (~" + c.toefl + ") and PTE Academic (~" + c.pte + ")" : "TOEFL iBT and PTE Academic"} alongside IELTS.` },
-    { q: `How can I reach Band ${band} for free?`, a: `Take free IELTS mocks to find your weak section, learn the strategy in the PPT lessons, and check your Writing/Speaking band with the free AI band checker.` },
+    { q: `How can I reach Band ${band} for free?`, a: `Take free IELTS mocks to find your weak section, learn the strategy in the PPT lessons, and check your Writing/Speaking band with the free band checker.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/university/${c.id}/">${esc(c.name)}</a> › IELTS score</p>
@@ -2049,14 +2049,14 @@ ${uniFacts(c)}
 <li><strong>Diagnose.</strong> Take a free IELTS mock to see your band in each skill.</li>
 <li><strong>Target the gap.</strong> See exactly what <a href="${bandLink}">Band ${band}</a> needs in each section.</li>
 <li><strong>Learn the strategy.</strong> Use the free <a href="/prep-lessons/">IELTS prep lessons</a> for your weak sections.</li>
-<li><strong>Get feedback.</strong> Check your Writing &amp; Speaking with the free <a href="/ielts-writing-checker/">AI band checker</a> and redo weak answers.</li>
+<li><strong>Get feedback.</strong> Check your Writing &amp; Speaking with the free <a href="/ielts-writing-checker/">band checker</a> and redo weak answers.</li>
 </ol></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `${esc(c.name)} — full profile`, href: `/university/${c.id}/` },
   { label: `TOEFL score for ${esc(c.name)}`, href: `/toefl-for-${c.id}/` },
   { label: `How to get IELTS Band ${band}`, href: bandLink },
-  { label: "Free AI band checker", href: "/ielts-writing-checker/" },
+  { label: "Free band checker", href: "/ielts-writing-checker/" },
 ])}`;
   emit(path, head({ title, desc, path, kw: `ielts score for ${c.name.toLowerCase()}, ielts requirement ${c.name.toLowerCase()}, ${c.name.toLowerCase()} ielts, ielts band for ${c.name.toLowerCase()}, english requirement ${c.name.toLowerCase()}, ${c.name.toLowerCase()} admission requirements`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: c.name, path: `/university/${c.id}/` }, { name: "IELTS score", path }])] }) + shell(inner));
 }
@@ -2072,7 +2072,7 @@ function altExamForUniPage(c, ex) {
   const faqs = [
     { q: `What ${ex.name} score do I need for ${c.name}?`, a: `${c.name} typically needs about ${ex.full} ${score}${c.ielts ? ", equivalent to IELTS " + c.ielts : ""}. Confirm the exact figure on the official course page.` },
     { q: `Does ${c.name} accept ${ex.name}?`, a: `Yes — ${c.name} accepts ${ex.full} alongside IELTS for English proficiency.` },
-    { q: `How do I prepare for free?`, a: `Take free ${ex.full} mock tests, learn the strategy in the prep lessons, and practise writing/speaking with the free AI band checker.` },
+    { q: `How do I prepare for free?`, a: `Take free ${ex.full} mock tests, learn the strategy in the prep lessons, and practise writing/speaking with the free band checker.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/university/${c.id}/">${esc(c.name)}</a> › ${ex.name} score</p>
@@ -2084,7 +2084,7 @@ ${uniFacts(c)}
 <div class="card"><h2>How to reach ${ex.name} ${score}</h2><ol>
 <li><strong>Diagnose.</strong> Take a free <a href="/mock-test/${ex.k}/">${ex.full} mock</a> to find your weak section.</li>
 <li><strong>Learn the strategy.</strong> Use the free <a href="/prep-lessons/">${ex.name} prep lessons</a>.</li>
-<li><strong>Get feedback.</strong> Check your writing &amp; speaking with the free <a href="/ielts-writing-checker/">AI band checker</a>.</li>
+<li><strong>Get feedback.</strong> Check your writing &amp; speaking with the free <a href="/ielts-writing-checker/">band checker</a>.</li>
 </ol></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
@@ -2166,7 +2166,7 @@ function examForPRPage(x) {
   const faqs = [
     { q: `What ${x.exam} score do I need for ${x.country} PR?`, a: `For ${x.scheme}: ${x.levels.map((l) => `${l[0]} = ${l[1]}`).join("; ")}. ${x.note}` },
     { q: `Which English tests are accepted for ${x.country} immigration?`, a: x.tests },
-    { q: `How do I reach that score for free?`, a: `Take free ${x.exam} mock tests, learn the strategy in the prep lessons, and check your writing/speaking band with the free AI band checker.` },
+    { q: `How do I reach that score for free?`, a: `Take free ${x.exam} mock tests, learn the strategy in the prep lessons, and check your writing/speaking band with the free band checker.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › ${x.exam} for ${x.country} PR</p>
@@ -2179,7 +2179,7 @@ ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free ${x.exam} mock test`, href: `/mock-test/${x.k}/` },
   { label: `${x.exam} score for ${x.country} (study)`, href: `/${x.k}-for-${x.country.toLowerCase().replace(/\s+/g, "-")}/` },
-  { label: "Free AI band checker", href: "/ielts-writing-checker/" },
+  { label: "Free band checker", href: "/ielts-writing-checker/" },
   { label: "Move-abroad checklist", href: "/#/relocate" },
 ])}`;
   emit(path, head({ title, desc, path, kw: `${x.exam.toLowerCase()} for ${x.country.toLowerCase()} pr, ${x.exam.toLowerCase()} score for ${x.country.toLowerCase()} immigration, ${x.country.toLowerCase()} pr english requirement, ${x.exam.toLowerCase()} ${x.country.toLowerCase()} express entry points, ${x.country.toLowerCase()} skilled migration english`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${x.exam} for ${x.country} PR`, path }])] }) + shell(inner));
@@ -2202,11 +2202,11 @@ function examForRolePage(x) {
   const path = `/${x.slug}/`;
   const cleanRole = x.role.replace(/&amp;/g, "&");
   const title = `IELTS for ${cleanRole} — Score Needed for ${x.body.replace(/the |\/ /g, "").slice(0, 40)} (2026) | ${BRAND}`.replace(/\s+\(/, " (");
-  const desc = `What IELTS score do ${cleanRole.toLowerCase()} need? For ${x.body.replace(/&amp;/g, "&")}: ${x.req.replace(/&amp;/g, "&")} ${x.alt.replace(/&amp;/g, "&")} Free IELTS mock tests and an AI band checker to get there.`;
+  const desc = `What IELTS score do ${cleanRole.toLowerCase()} need? For ${x.body.replace(/&amp;/g, "&")}: ${x.req.replace(/&amp;/g, "&")} ${x.alt.replace(/&amp;/g, "&")} Free IELTS mock tests and an band checker to get there.`;
   const faqs = [
     { q: `What IELTS score do ${cleanRole.toLowerCase()} need?`, a: `For ${x.body.replace(/&amp;/g, "&")}: ${x.req.replace(/&amp;/g, "&")}` },
     { q: `Is OET accepted instead of IELTS?`, a: x.alt.replace(/&amp;/g, "&") },
-    { q: `How can I reach this score for free?`, a: `Take free IELTS Academic mock tests, study the prep lessons, and check your Writing & Speaking band with the free AI band checker — Writing is often the hardest 7.0 to hit.` },
+    { q: `How can I reach this score for free?`, a: `Take free IELTS Academic mock tests, study the prep lessons, and check your Writing & Speaking band with the free band checker — Writing is often the hardest 7.0 to hit.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › IELTS for ${x.role}</p>
@@ -2221,14 +2221,14 @@ function examForRolePage(x) {
 </ul><p class="note">Always confirm the current rule on the official regulator's website — requirements change.</p></div>
 <div class="card"><h2>How to hit your target — free</h2><ol>
 <li>Take a free <a href="/mock-test/ielts/">IELTS mock</a> to find your weakest skill.</li>
-<li>Most ${x.role.toLowerCase()} struggle with Writing 7.0 — use the free <a href="/ielts-writing-checker/">AI band checker</a> for criterion feedback.</li>
+<li>Most ${x.role.toLowerCase()} struggle with Writing 7.0 — use the free <a href="/ielts-writing-checker/">band checker</a> for criterion feedback.</li>
 <li>Learn the strategy in the free <a href="/prep-lessons/">IELTS prep lessons</a>.</li>
 <li>See exactly what <a href="/ielts-band-7/">Band 7</a> needs in each section.</li>
 </ol></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
-  { label: "Free AI band checker", href: "/ielts-writing-checker/" },
+  { label: "Free band checker", href: "/ielts-writing-checker/" },
   { label: "How to get IELTS Band 7 in Writing", href: "/ielts-band-7-writing/" },
   { label: "IELTS prep lessons", href: "/prep-lessons/" },
 ])}`;
@@ -2295,13 +2295,13 @@ EXAM_VS.forEach(examVsExamPage);
 const LP_CMP = {
   price: "100% free, forever — no paywall, no card",
   mocks: "Unlimited free full-length mock tests",
-  ai: "Free AI speaking partner + essay feedback",
+  ai: "Free speaking partner + essay feedback",
   signup: "None — start instantly",
   predictor: "Free — 99 universities, by your profile",
   sop: "Free SOP builder + sample library",
 };
 const lpPitch = (kind) => kind === "exam"
-  ? `${BRAND} gives you unlimited full-length mock tests with real exam timing, instant scoring and an AI speaking partner that talks back — across IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT. There is no paywall and no signup, so you can start practising in seconds.`
+  ? `${BRAND} gives you unlimited full-length mock tests with real exam timing, instant scoring and an speaking partner that talks back — across IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT. There is no paywall and no signup, so you can start practising in seconds.`
   : `${BRAND} gives you a free college predictor across 99 universities, an SOP builder with samples, a scholarship finder and free exam mock tests — everything to go from shortlisting to admission without paying for counselling, and with no signup.`;
 const COMPETITORS = [
   { slug: "magoosh", name: "Magoosh", what: "GRE, GMAT, IELTS & TOEFL prep", kind: "exam", exams: ["gre", "gmat", "ielts", "toefl"], coverShort: "GRE, GMAT, IELTS, TOEFL",
@@ -2313,9 +2313,9 @@ const COMPETITORS = [
     intro: "E2 (E2 Test Prep / E2 Language) offers YouTube lessons, live classes and practice for IELTS, PTE, TOEFL and OET, with free content plus paid subscriptions and live tutoring.",
     freeAnswer: "E2 has plenty of free YouTube lessons, but full mock tests, scored practice and live classes are part of its paid plans.", paidPerk: "live classes with teachers" },
   { slug: "apeuni", name: "APEUni", what: "PTE practice", kind: "exam", exams: ["pte"], coverShort: "PTE",
-    their: { price: "Freemium (free practice + paid VIP)", mocks: "Practice free; scored mocks paid (VIP)", ai: "AI scoring in VIP", signup: "Account required", coverage: "PTE (some IELTS)" },
-    intro: "APEUni is a widely-used PTE practice app with a large free question bank and a paid VIP tier for AI scoring and full mock tests.",
-    freeAnswer: "APEUni's question bank is free to practise, but AI scoring and full scored mock tests require its paid VIP plan.", paidPerk: "detailed AI scoring on every task" },
+    their: { price: "Freemium (free practice + paid VIP)", mocks: "Practice free; scored mocks paid (VIP)", ai: "score estimates in VIP", signup: "Account required", coverage: "PTE (some IELTS)" },
+    intro: "APEUni is a widely-used PTE practice app with a large free question bank and a paid VIP tier for score estimates and full mock tests.",
+    freeAnswer: "APEUni's question bank is free to practise, but score estimates and full scored mock tests require its paid VIP plan.", paidPerk: "detailed score estimates on every task" },
   { slug: "kaplan", name: "Kaplan", what: "GRE, GMAT & TOEFL courses", kind: "exam", exams: ["gre", "gmat", "toefl"], coverShort: "GRE, GMAT, TOEFL",
     their: { price: "Paid courses (self-paced & live)", mocks: "Included in paid course", ai: "Limited", signup: "Account + payment", coverage: "GRE, GMAT, GMAT Focus, TOEFL, SAT/ACT/MCAT +" },
     intro: "Kaplan is a long-established test-prep company offering self-paced and live online courses, books and practice tests for the GRE, GMAT, TOEFL and many other exams, sold as paid packages.",
@@ -2361,15 +2361,15 @@ function alternativePage(c) {
   const path = `/${c.slug}-alternative/`;
   const name = c.name;
   const title = `Free ${name} Alternative (2026) — ${c.what} | ${BRAND}`;
-  const desc = `Looking for a free ${name} alternative? ${BRAND} is 100% free — ${c.kind === "exam" ? "unlimited mock tests, instant scoring and AI feedback" : "a free college predictor, SOP builder and scholarship finder"}, no signup. See the side-by-side comparison.`;
+  const desc = `Looking for a free ${name} alternative? ${BRAND} is 100% free — ${c.kind === "exam" ? "unlimited mock tests, instant scoring and feedback" : "a free college predictor, SOP builder and scholarship finder"}, no signup. See the side-by-side comparison.`;
   const rows = c.kind === "exam"
-    ? [["Price", LP_CMP.price, c.their.price], ["Full-length mock tests", LP_CMP.mocks, c.their.mocks], ["AI feedback", LP_CMP.ai, c.their.ai], ["Sign-up needed", LP_CMP.signup, c.their.signup], ["Covers", c.coverShort + " + more", c.their.coverage]]
+    ? [["Price", LP_CMP.price, c.their.price], ["Full-length mock tests", LP_CMP.mocks, c.their.mocks], ["instant feedback", LP_CMP.ai, c.their.ai], ["Sign-up needed", LP_CMP.signup, c.their.signup], ["Covers", c.coverShort + " + more", c.their.coverage]]
     : [["Price", LP_CMP.price, c.their.price], ["Free college predictor", LP_CMP.predictor, c.their.predictor], ["Free SOP builder", LP_CMP.sop, c.their.sop], ["Free exam mock tests", LP_CMP.mocks, c.their.mocks], ["Sign-up needed", LP_CMP.signup, c.their.signup]];
   const table = `<div class="card"><h2>${esc(name)} vs ${BRAND} at a glance</h2><table class="cmp-table"><thead><tr><th></th><th>${BRAND}</th><th>${esc(name)}</th></tr></thead><tbody>${rows.map((r) => `<tr><td><strong>${esc(r[0])}</strong></td><td>${esc(r[1])}</td><td>${esc(r[2])}</td></tr>`).join("")}</tbody></table></div>`;
   const faqs = [
-    { q: `Is there a free alternative to ${name}?`, a: `Yes — ${BRAND} (landingprep.com) is 100% free. ${c.kind === "exam" ? `You get unlimited full-length mock tests, instant scoring and an AI speaking partner for ${c.coverShort}, with no signup.` : `You get a free college predictor, SOP builder, scholarship finder and exam mock tests, with no signup.`}` },
+    { q: `Is there a free alternative to ${name}?`, a: `Yes — ${BRAND} (landingprep.com) is 100% free. ${c.kind === "exam" ? `You get unlimited full-length mock tests, instant scoring and an speaking partner for ${c.coverShort}, with no signup.` : `You get a free college predictor, SOP builder, scholarship finder and exam mock tests, with no signup.`}` },
     { q: `Is ${name} free?`, a: c.freeAnswer },
-    { q: `Why choose ${BRAND} over ${name}?`, a: `If cost is your priority, ${BRAND} gives you ${c.kind === "exam" ? "the core practice you need — real-timing mock tests and AI feedback" : "the core tools you need — a predictor, SOP builder and scholarships"} entirely free. ${name} is a strong option too; the right pick depends on whether you want paid extras like ${c.paidPerk}.` },
+    { q: `Why choose ${BRAND} over ${name}?`, a: `If cost is your priority, ${BRAND} gives you ${c.kind === "exam" ? "the core practice you need — real-timing mock tests and feedback" : "the core tools you need — a predictor, SOP builder and scholarships"} entirely free. ${name} is a strong option too; the right pick depends on whether you want paid extras like ${c.paidPerk}.` },
   ];
   const related = c.kind === "exam"
     ? [...(c.exams || []).slice(0, 2).map((e) => ({ label: `Free ${e.toUpperCase()} mock test`, href: `/mock-test/${e}/` })), { label: "Score converter", href: "/tools/english-test-score-converter/" }, { label: "Study & exam blog", href: "/blog/" }]
@@ -2395,9 +2395,9 @@ function altIndexPage() {
 <p class="crumb"><a href="/">Home</a> › Free alternatives</p>
 <section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">No signup</span></div>
 <h1>Free Alternatives to Popular Exam-Prep &amp; Study-Abroad Tools</h1>
-<p class="lead">${BRAND} is a 100% free alternative to paid test-prep and study-abroad platforms — unlimited mock tests, AI feedback, a college predictor, SOP builder and scholarship finder, all with no signup. Compare us with the tools you already know.</p></section>
+<p class="lead">${BRAND} is a 100% free alternative to paid test-prep and study-abroad platforms — unlimited mock tests, instant feedback, a college predictor, SOP builder and scholarship finder, all with no signup. Compare us with the tools you already know.</p></section>
 <div class="card"><h2>Compare ${BRAND} with…</h2><div class="grid">${tiles}</div></div>`;
-  emit("/free-alternatives/", head({ title: `Free Alternatives to Magoosh, Yocket, Leverage Edu &amp; More (2026) | ${BRAND}`, desc: `${BRAND} is a free alternative to paid exam-prep and study-abroad platforms — free mock tests, AI feedback, college predictor and SOP tools, no signup.`, path: "/free-alternatives/", kw: "free exam prep alternative, free study abroad tool, magoosh alternative free, yocket alternative, leverage edu alternative, free ielts practice alternative", jsonLdBlocks: [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Free alternatives", path: "/free-alternatives/" }])] }) + shell(inner));
+  emit("/free-alternatives/", head({ title: `Free Alternatives to Magoosh, Yocket, Leverage Edu &amp; More (2026) | ${BRAND}`, desc: `${BRAND} is a free alternative to paid exam-prep and study-abroad platforms — free mock tests, instant feedback, college predictor and SOP tools, no signup.`, path: "/free-alternatives/", kw: "free exam prep alternative, free study abroad tool, magoosh alternative free, yocket alternative, leverage edu alternative, free ielts practice alternative", jsonLdBlocks: [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Free alternatives", path: "/free-alternatives/" }])] }) + shell(inner));
 }
 COMPETITORS.forEach(alternativePage);
 altIndexPage();
@@ -2616,7 +2616,7 @@ const CONTENT_HUBS = [
     sections: [
       { h: "What Band 8 requires", body: "Band 8 means roughly 35/40 in Listening and Reading, Writing that fully develops ideas with rare errors, and Speaking that is fluent and precise with wide vocabulary. You can make occasional, non-systematic mistakes, but accuracy must be high and consistent." },
       { h: "Listening and Reading to 8", body: "At this level, almost every question must be correct, so eliminate careless errors: read instructions and word limits exactly, watch spelling, and master the trickiest types (Not Given, matching, multiple-select). Practise full timed sections and review every single miss." },
-      { h: "Writing and Speaking to 8", body: "Writing Band 8 needs a clear, fully extended response with precise vocabulary and varied, accurate grammar — over-complex sentences with errors hurt you. Speaking Band 8 needs effortless fluency, idiomatic but natural vocabulary and clear pronunciation. Use the free AI Writing and Speaking tools to refine both." },
+      { h: "Writing and Speaking to 8", body: "Writing Band 8 needs a clear, fully extended response with precise vocabulary and varied, accurate grammar — over-complex sentences with errors hurt you. Speaking Band 8 needs effortless fluency, idiomatic but natural vocabulary and clear pronunciation. Use the free Writing and Speaking tools to refine both." },
     ],
     faqs: [
       { q: "Is IELTS Band 8 hard to get?", a: "Yes — Band 8 is a very high score requiring near-native accuracy and fluency. It is achievable with strong English and disciplined, error-focused practice, especially in Writing and Speaking." },
@@ -2670,22 +2670,22 @@ const CONTENT_HUBS = [
       { href: "/blog/", label: "Exam-Prep Blog" },
     ] },
   { path: "/how-it-works/", title: "How LandingPrep Works — Our Method, Scoring & Why It's Free",
-    desc: "How LandingPrep builds free mock tests that mirror the real IELTS, TOEFL, PTE, GRE & GMAT, how the AI scoring and feedback work, how we keep content current for 2026, and why it's 100% free — with honest limitations.",
+    desc: "How LandingPrep builds free mock tests that mirror the real IELTS, TOEFL, PTE, GRE & GMAT, how the scoring and feedback work, how we keep content current for 2026, and why it's 100% free — with honest limitations.",
     kw: "how landingprep works, are landingprep mock tests accurate, how is ielts mock test scored, ai ielts band score accuracy, who is behind landingprep, free ielts practice methodology",
-    lead: "Trust matters when you are preparing for a high-stakes exam. Here is exactly how LandingPrep builds its practice, how the scoring and AI feedback work, how we keep everything current — and the honest limits of any practice tool.",
+    lead: "Trust matters when you are preparing for a high-stakes exam. Here is exactly how LandingPrep builds its practice, how the scoring and feedback work, how we keep everything current — and the honest limits of any practice tool.",
     sections: [
       { h: "Built to mirror the real exams", body: "Every mock test is modelled on the official test specification for that exam — the same section order, time limits, question types and answer formats as the real IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo English Test, GRE and GMAT Focus. The goal is that test day feels familiar: the timing pressure, the instructions and the question styles match what you will actually see." },
-      { h: "How scoring works", body: "Objective sections (listening, reading, multiple-choice, quant) are auto-scored instantly against a verified answer key, with a point-to-point explanation for every question. Writing and speaking are assessed by an AI examiner against the official rubric for that exam and mapped onto its real scale — the IELTS band, the TOEFL 0–120, the PTE 10–90, and so on — so you get a realistic estimate to guide your practice." },
-      { h: "How the AI feedback is built", body: "The AI Writing and Speaking agents are prompted with the official assessment criteria — for IELTS that means Task Achievement, Coherence & Cohesion, Lexical Resource and Grammatical Range & Accuracy; other exams use their own rubrics. You get structured, criterion-by-criterion feedback plus a Band 7+/CEFR C1 model answer to compare against, not just a number." },
+      { h: "How scoring works", body: "Objective sections (listening, reading, multiple-choice, quant) are auto-scored instantly against a verified answer key, with a point-to-point explanation for every question. Writing and speaking are assessed by an examiner against the official rubric for that exam and mapped onto its real scale — the IELTS band, the TOEFL 0–120, the PTE 10–90, and so on — so you get a realistic estimate to guide your practice." },
+      { h: "How the feedback is built", body: "The Writing and Speaking tools are prompted with the official assessment criteria — for IELTS that means Task Achievement, Coherence & Cohesion, Lexical Resource and Grammatical Range & Accuracy; other exams use their own rubrics. You get structured, criterion-by-criterion feedback plus a Band 7+/CEFR C1 model answer to compare against, not just a number." },
       { h: "Kept current for 2026", body: "Exam formats, fees and visa rules change. We review and update content for the current year, cross-checking official test-maker and immigration sources, and date our study-abroad guides so you can see how fresh they are. The GMAT Focus edition, the latest Duolingo format and 2025–26 visa changes are already reflected." },
-      { h: "Why it's 100% free", body: "Good exam prep and honest study-abroad guidance are usually locked behind a paywall, which shuts out the students who need them most. LandingPrep's mission is to remove that barrier — every mock test, AI tool, lesson and study-abroad resource is free, with no signup, no credit card and no trial that expires." },
-      { h: "Honest limitations", body: "No practice tool — ours or anyone's — can issue an official score, and an AI estimate is an estimate. Use your LandingPrep results to track progress and find weak areas, but always confirm the exact score and the precise requirement with your chosen university and visa authority before you rely on it. We would rather be upfront about this than over-promise." },
+      { h: "Why it's 100% free", body: "Good exam prep and honest study-abroad guidance are usually locked behind a paywall, which shuts out the students who need them most. LandingPrep's mission is to remove that barrier — every mock test, smart tool, lesson and study-abroad resource is free, with no signup, no credit card and no trial that expires." },
+      { h: "Honest limitations", body: "No practice tool — ours or anyone's — can issue an official score, and an estimate is an estimate. Use your LandingPrep results to track progress and find weak areas, but always confirm the exact score and the precise requirement with your chosen university and visa authority before you rely on it. We would rather be upfront about this than over-promise." },
     ],
     faqs: [
-      { q: "How accurate is the AI band/score estimate?", a: "It is a realistic guide, not an official result. Objective sections are scored exactly against an answer key; writing and speaking are rated against the official rubric and mapped to the real scale. Treat it as a progress indicator and verify your target with the official test." },
+      { q: "How accurate is the band/score estimate?", a: "It is a realistic guide, not an official result. Objective sections are scored exactly against an answer key; writing and speaking are rated against the official rubric and mapped to the real scale. Treat it as a progress indicator and verify your target with the official test." },
       { q: "Do the mock tests really match the real exam?", a: "Yes — each mock mirrors the official format, section order, timing and question types for that exam, so test day feels familiar. We update them as exam formats change." },
       { q: "Who is behind LandingPrep?", a: "LandingPrep is built by an education-technology team focused on making exam prep and study-abroad guidance free and accessible. Content is modelled on official test specifications and reviewed for accuracy; we do not claim affiliation with any official test maker." },
-      { q: "Is it really free, forever?", a: "Yes. Every mock test, AI tool, lesson and study-abroad resource is 100% free with no signup or payment. An optional free account only adds progress tracking across devices." },
+      { q: "Is it really free, forever?", a: "Yes. Every mock test, smart tool, lesson and study-abroad resource is 100% free with no signup or payment. An optional free account only adds progress tracking across devices." },
       { q: "How often is content updated?", a: "We review content for the current year and reflect changes to exam formats, fees and visa rules as they happen, cross-checking official sources. Study-abroad guides are dated so you can see how current they are." },
     ],
     related: [
@@ -3116,7 +3116,7 @@ ${urls.map((u) => `  <url>
 `;
 writeFileSync(join(ROOT, "sitemap.xml"), sitemap);
 
-// robots.txt — allow all search + AI crawlers (visibility in Google AND AI answers)
+// robots.txt — allow all search + AI crawlers (visibility in Google AND feedback)
 writeFileSync(join(ROOT, "robots.txt"), `# LandingPrep — 100% Free Exam Prep Platform
 # Fully open to search engines and AI answer engines.
 # All content is freely accessible — no paywalls, no signup required.
@@ -3249,7 +3249,7 @@ All include real exam question types, answer explanations, and sample solutions.
 ### 2. AI-Powered Feedback Tools
 - **IELTS Writing Band Checker**: Paste an essay → get estimated band (6–9) with IELTS rubric feedback (Task Response, Coherence & Cohesion, Lexical Range, Grammatical Accuracy), corrections, and Band 9 model answer.
 - **IELTS Speaking Band Checker**: Record a Part 2 response → estimated band with fluency feedback.
-- **AI Speaking Partner**: Two-way voice conversation that auto-corrects mistakes in real time.
+- **Speaking Partner**: Two-way voice conversation that auto-corrects mistakes in real time.
 
 ### 3. Free Prep Lessons & Strategy (600+ slides across 24 decks)
 - IELTS section-by-section strategy (Listening, Reading, Writing, Speaking)
@@ -3286,13 +3286,13 @@ All include real exam question types, answer explanations, and sample solutions.
 ## Key Facts
 - **Cost**: 100% free, forever. No credit card. No paywalls. No freemium.
 - **Format**: Browser-based (works on mobile, tablet, desktop). Offline study via PWA app.
-- **Scoring**: Auto-scored objective sections + AI rubric feedback for Writing & Speaking.
+- **Scoring**: Auto-scored objective sections + rubric feedback for Writing & Speaking.
 - **Real Users**: 500,000+ students worldwide; strong Indian student base.
 - **Owned Content**: All mock tests, lessons, and tools are built in-house — not resold third-party materials.
 
 ## Most-Used Pages & Entry Points
 - Homepage: ${ORIGIN}/
-- **IELTS Writing Band Checker** (free AI feedback): ${ORIGIN}/#/writing-checker
+- **IELTS Writing Band Checker** (free instant feedback): ${ORIGIN}/#/writing-checker
 - **IELTS Speaking Band Checker**: ${ORIGIN}/#/speaking-checker
 - **All Mock Tests** (IELTS, TOEFL, PTE, GRE, GMAT): ${ORIGIN}/#/exam-prep
 - **Prep Lessons** (strategy decks for all exams): ${ORIGIN}/#/lessons

@@ -30,9 +30,9 @@ const FAQS = [
   { q: "Do the mock tests use real exam patterns and timings?",
     a: "Every test mirrors the official 2026 format and timing — IELTS Listening 30+10 minutes, Reading 60, Writing 60; PTE Read Aloud, Repeat Sentence, Describe Image and Write Essay; GMAT Focus Quant, Verbal and Data Insights. We rebuild the formats and timing, never the copyrighted questions." },
   { q: "Can I practise IELTS and PTE speaking with a real voice?",
-    a: "Yes. Our AI Speaking Agent uses natural neural voices — you speak into your mic, get live transcripts and AI follow-up questions, just like a real examiner. Listening sections and Describe Image / Re-tell Lecture tasks also play real audio." },
+    a: "Yes. Our Speaking Practice uses natural neural voices — you speak into your mic, get live transcripts and follow-up questions, just like a real examiner. Listening sections and Describe Image / Re-tell Lecture tasks also play real audio." },
   { q: "Do I get model answers and band-level feedback for writing?",
-    a: "Every writing task — IELTS Task 1 & 2, TOEFL integrated and discussion, PTE essay, GRE issue, GMAT and CELPIP — includes a free Band 7+/CEFR C1 model answer plus live word-count and rubric guidance. The AI Writing Agent gives instant structured feedback on any essay you paste." },
+    a: "Every writing task — IELTS Task 1 & 2, TOEFL integrated and discussion, PTE essay, GRE issue, GMAT and CELPIP — includes a free Band 7+/CEFR C1 model answer plus live word-count and rubric guidance. Our Writing Feedback gives instant structured feedback on any essay you paste." },
   { q: "Can LandingPrep also help me choose a university and apply abroad?",
     a: "Yes. Beyond free mock tests, LandingPrep includes a free College Predictor across 99 top universities (USA, UK, Canada, Australia, Germany and more) with fees, requirements, scholarships and admission process, plus an SOP builder, study-abroad destination guides with visa-success rates and immigration pathways, and an education-loan comparison — everything to go from test prep to admission, free." },
   { q: "How accurate is the scoring?",
@@ -319,7 +319,7 @@ function Home({ onGuide, onPractice, onNav }) {
           <div className="lp-pros reveal">
             {[
               ["📝", "1,000+ realistic mocks", "Real timings & patterns across all 7 exams with instant scoring.", "exam-prep"],
-              ["🎤", "AI speaking practice", "Speak into your mic, get live transcripts, follow-ups & fluency scoring.", "agents"],
+              ["🎤", "Speaking practice", "Speak into your mic, get live transcripts, follow-ups & fluency scoring.", "agents"],
               ["✍️", "AI band-score checker", "Paste an essay or record a Part 2 — instant IELTS band, TR/CC/LR/GRA breakdown & Band 9 model.", "writing-checker"],
               ["🏛️", "College Predictor", "99 top universities with fees, requirements & Safe/Target/Reach matches.", "colleges"],
               ["💸", "Scholarships & loans", "Country-based scholarship finder and a 10-lender education-loan compare.", "colleges"],
@@ -402,7 +402,7 @@ function Home({ onGuide, onPractice, onNav }) {
           <div className="eyebrow" style={{ marginBottom: 12 }}>Popular free tools</div>
           <div className="hp-tools-grid">
             {[
-              ["🎯", "AI Band Checker", "Instant IELTS Writing/Speaking band + Band 9 model", "writing-checker"],
+              ["🎯", "Band Checker", "Instant IELTS Writing/Speaking band + Band 9 model", "writing-checker"],
               ["📖", "Vocabulary by topic", "Band-9 words with audio for every IELTS topic", "vocabulary"],
               ["📊", "Prep Lessons", "600+ PPT strategy slides for all 7 exams", "learn"],
               ["✈️", "Move Abroad", "Pre-departure checklist, visa timeline & city guides", "relocate"],
@@ -428,7 +428,7 @@ function Home({ onGuide, onPractice, onNav }) {
             </p>
             <div className="row-gap-12" style={{ marginTop: 18 }}>
               <button className="btn btn-primary" onClick={() => onNav("learning")}>Open Learning Club</button>
-              <button className="btn" onClick={() => onNav("agents")}>Try AI Agents</button>
+              <button className="btn" onClick={() => onNav("agents")}>Try Speaking & Writing</button>
               <button className="btn" onClick={() => onNav("blog")}>Study tips & strategy</button>
             </div>
           </div>
@@ -522,7 +522,7 @@ function Home({ onGuide, onPractice, onNav }) {
             <summary>Free IELTS, TOEFL, PTE, GRE &amp; GMAT mock tests + a complete study-abroad toolkit</summary>
             <div className="seo-content-inner">
             <p>
-              <strong>LandingPrep</strong> is a 100% free platform that takes you from your first mock test all the way to your campus abroad. Practise <a href="#/exam-hub/ielts" onClick={(e)=>{e.preventDefault();onGuide(exams[0]);}}>IELTS</a>, TOEFL iBT, PTE Academic, CELPIP, the Duolingo English Test, GRE and GMAT Focus with 1,000+ full-length <a href="#/exam-prep" onClick={(e)=>{e.preventDefault();onNav("exam-prep");}}>mock tests</a> built on real exam timings and section-honest scoring — plus free AI speaking and writing practice with model answers. There is no signup, no credit card and no paywall.
+              <strong>LandingPrep</strong> is a 100% free platform that takes you from your first mock test all the way to your campus abroad. Practise <a href="#/exam-hub/ielts" onClick={(e)=>{e.preventDefault();onGuide(exams[0]);}}>IELTS</a>, TOEFL iBT, PTE Academic, CELPIP, the Duolingo English Test, GRE and GMAT Focus with 1,000+ full-length <a href="#/exam-prep" onClick={(e)=>{e.preventDefault();onNav("exam-prep");}}>mock tests</a> built on real exam timings and section-honest scoring — plus free speaking and writing practice with model answers. There is no signup, no credit card and no paywall.
             </p>
             <p>
               Beyond test prep, LandingPrep is a full <a href="#/colleges" onClick={(e)=>{e.preventDefault();onNav("colleges");}}>study-abroad</a> toolkit. Use the free <strong>College Predictor</strong> to find your Safe, Target and Reach universities across 99 top institutions in the USA, UK, Canada, Australia, Germany, Ireland, New Zealand, Singapore and the Netherlands. Compare universities and whole countries, find scholarships, build your <strong>SOP, LOR and resume</strong>, estimate cost and ROI, compare 10 education-loan lenders, practise your visa interview, and follow step-by-step immigration and PR roadmaps for every destination.
@@ -577,7 +577,7 @@ function TopBar({ current = "home", onNav }) {
   };
   // Desktop nav: the brand logo already returns Home, so it's omitted here to
   // keep the row tidy. Labels are kept short so they arrange neatly on one line.
-  // Slim primary nav (5 items). Exam Hub is folded into "Exams"; AI Agents and
+  // Slim primary nav (5 items). Exam Hub is folded into "Exams"; Speaking & Writing and
   // Progress live in the profile menu + mobile drawer.
   const items = [
     ["home", "Home"],
@@ -595,10 +595,10 @@ function TopBar({ current = "home", onNav }) {
     ["exam-prep", "Mock Tests"],
     ["exams", "Exam Guides"],
     ["learn", "📚 Learn (Lessons + Club)"],
-    ["writing-checker", "🎯 AI Band-Score Checker"],
+    ["writing-checker", "🎯 Band-Score Checker"],
     ["vocabulary", "📖 Vocabulary"],
     ["achievements", "🏆 Achievements & XP"],
-    ["agents", "AI Speaking & Writing"],
+    ["agents", "Speaking & Writing"],
     ["colleges", "Study Abroad"],
     ["relocate", "✈️ Move Abroad (checklist + visa)"],
     ["tools", "Tools"],
@@ -774,7 +774,7 @@ function Footer() {
           <div>
             <h3>Practice</h3>
             <ul>
-              <li><a href="#/exam-prep">Mock tests</a></li><li><a href="/ielts-writing-checker/">AI Band Checker</a></li><li><a href="/ielts-vocabulary/">Vocabulary</a></li><li><a href="/prep-lessons/">Prep Lessons</a></li><li><a href="#/learning">Learning Club</a></li><li><a href="#/agents">AI Speaking &amp; Writing</a></li>
+              <li><a href="#/exam-prep">Mock tests</a></li><li><a href="/ielts-writing-checker/">Band Checker</a></li><li><a href="/ielts-vocabulary/">Vocabulary</a></li><li><a href="/prep-lessons/">Prep Lessons</a></li><li><a href="#/learning">Learning Club</a></li><li><a href="#/agents">Speaking &amp; Writing</a></li>
             </ul>
           </div>
           <div>

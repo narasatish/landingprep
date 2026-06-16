@@ -11,7 +11,7 @@ const { useState: useStateApp, useEffect: useEffectApp, useRef: useRefApp } = Re
 //   #/exam-prep/ielts        → exam detail (drill-down handled internally)
 //   #/exam-hub/toefl         → guide view (exam hub)
 //   #/learning               → learning club
-//   #/agents                 → AI agents hub
+//   #/agents                 → Speaking & Writing hub
 //   #/progress               → my progress
 //   #/login                  → login
 //   #/blog                   → blog index
@@ -116,8 +116,8 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
     if (!window.LP_SEO) return;
     const examLabel = exam?.name || "IELTS";
     window.LP_SEO.set({
-      title: `Free ${examLabel} AI Speaking & Writing Practice with Feedback | LandingPrep`,
-      description: `Two-way voice practice and instant writing feedback for ${examLabel}. Speak naturally with an AI examiner, get model answers and rubric-based scoring — free, browser-based, no signup.`
+      title: `Free ${examLabel} Speaking & Writing Practice with Feedback | LandingPrep`,
+      description: `Two-way voice practice and instant writing feedback for ${examLabel}. Speak naturally with a speaking examiner, get model answers and rubric-based scoring — free, browser-based, no signup.`
     });
   }, [exam?.id]);
 
@@ -126,8 +126,8 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
       <window.LP_TopBar current="agents" onNav={onNav} />
       <div className="shell" style={{ paddingTop: "2rem", paddingBottom: "4rem" }}>
         <div style={{ marginBottom: "1rem" }}>
-          <div className="eyebrow" style={{ color: "var(--accent)" }}>AI Agents</div>
-          <h1 className="h1" style={{ margin: "8px 0 4px", fontSize: "clamp(28px,4.5vw,42px)" }}>Practice with AI</h1>
+          <div className="eyebrow" style={{ color: "var(--accent)" }}>Speaking & Writing</div>
+          <h1 className="h1" style={{ margin: "8px 0 4px", fontSize: "clamp(28px,4.5vw,42px)" }}>Practice Speaking & Writing</h1>
           <p className="muted" style={{ margin: 0, maxWidth: 640 }}>Two-way voice speaking practice and instant writing feedback — both built on the same heuristic scoring engine that powers our mocks.</p>
         </div>
 
@@ -169,14 +169,14 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
                   className={`wa-tab ${tab === "speaking" ? "active" : ""}`}
                   style={tab === "speaking" ? { borderBottomColor: accentColor, color: accentColor } : {}}
                   onClick={() => setTab("speaking")}
-                >🎤 AI Speaking Agent</button>
+                >🎤 Speaking Practice</button>
               )}
               {support.writing && (
                 <button
                   className={`wa-tab ${tab === "writing" ? "active" : ""}`}
                   style={tab === "writing" ? { borderBottomColor: accentColor, color: accentColor } : {}}
                   onClick={() => setTab("writing")}
-                >✍️ AI Writing Agent</button>
+                >✍️ Writing Feedback</button>
               )}
             </div>
 

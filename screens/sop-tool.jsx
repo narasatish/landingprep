@@ -142,7 +142,7 @@ Career goal: ${f.career || "(unspecified)"}`;
       try {
         if (window.LP_AI_TUTOR && window.LP_AI_TUTOR.generate) {
           const r = (await window.LP_AI_TUTOR.generate(prompt) || "").trim();
-          if (r && !/AI Tutor is offline/i.test(r)) { setOut(r); setSrc("ai"); setBusy(false); return; }
+          if (r && !/(?:AI|Smart) Tutor is offline/i.test(r)) { setOut(r); setSrc("ai"); setBusy(false); return; }
         }
       } catch (e) {}
       setOut(template()); setSrc("template"); setBusy(false);
@@ -163,7 +163,7 @@ Career goal: ${f.career || "(unspecified)"}`;
         <button className="tool-btn" onClick={generate} disabled={busy}>{busy ? "✨ Writing…" : "✨ Generate SOP draft"}</button>
         {out && (
           <div className="sop-output">
-            {src === "template" && <p className="tool-note">AI offline — generated a full structured draft from your inputs. Add specific details (names, numbers, a real hook) before submitting.</p>}
+            {src === "template" && <p className="tool-note">Offline — generated a full structured draft from your inputs. Add specific details (names, numbers, a real hook) before submitting.</p>}
             <textarea className="sop-result" rows={14} value={out} onChange={e => setOut(e.target.value)} />
             <div className="tool-row btns">
               <span className="sop-count">{out.trim().split(/\s+/).filter(Boolean).length} words</span>
@@ -193,7 +193,7 @@ SOP:
       try {
         if (window.LP_AI_TUTOR && window.LP_AI_TUTOR.generate) {
           const r = (await window.LP_AI_TUTOR.generate(prompt) || "").trim();
-          if (r && !/AI Tutor is offline/i.test(r)) { setFb({ ai: r }); setBusy(false); return; }
+          if (r && !/(?:AI|Smart) Tutor is offline/i.test(r)) { setFb({ ai: r }); setBusy(false); return; }
         }
       } catch (e) {}
       setFb({ offline: true }); setBusy(false);
@@ -209,8 +209,8 @@ SOP:
             {a.checks.map((c, i) => <div key={i} className={"sop-check " + (c.ok ? "ok" : "no")}>{c.ok ? "✓" : "✗"} {c.label}</div>)}
           </div>
         )}
-        <button className="tool-btn" onClick={review} disabled={busy || !text.trim()}>{busy ? "✨ Reviewing…" : "✨ Get AI feedback & rewrite"}</button>
-        {fb && fb.offline && <p className="tool-note">AI tutor is offline. The structure check and cliché scan above still work — fix those points, then re-run when the backend is reachable for a full rewrite.</p>}
+        <button className="tool-btn" onClick={review} disabled={busy || !text.trim()}>{busy ? "✨ Reviewing…" : "✨ Get instant feedback & rewrite"}</button>
+        {fb && fb.offline && <p className="tool-note">The tutor is offline. The structure check and cliché scan above still work — fix those points, then re-run when the backend is reachable for a full rewrite.</p>}
         {fb && fb.ai && <div className="sop-ai-feedback md-body">{window.LP_MD ? window.LP_MD(fb.ai) : fb.ai.split("\n").map((ln, i) => <p key={i}>{ln}</p>)}</div>}
       </div>
     );
@@ -254,7 +254,7 @@ SOP:
     const generate = async () => {
       setBusy(true); setSrc("");
       const prompt = `Write a formal ~350-word Letter of Recommendation for a graduate-school applicant. Recommender: ${f.recommender || "(unspecified)"} (${f.role || "professor"}). Student: ${f.student || "(unspecified)"}. Program: ${f.program || "(unspecified)"}. Relationship: ${f.relationship || "(unspecified)"}. Key strengths: ${f.strengths || "(unspecified)"}. Specific example: ${f.anecdote || "(unspecified)"}. Be specific, credible and warm; avoid clichés. Write ONLY the letter.`;
-      try { if (window.LP_AI_TUTOR && window.LP_AI_TUTOR.generate) { const r = (await window.LP_AI_TUTOR.generate(prompt) || "").trim(); if (r && !/AI Tutor is offline/i.test(r)) { setOut(r); setSrc("ai"); setBusy(false); return; } } } catch (e) {}
+      try { if (window.LP_AI_TUTOR && window.LP_AI_TUTOR.generate) { const r = (await window.LP_AI_TUTOR.generate(prompt) || "").trim(); if (r && !/(?:AI|Smart) Tutor is offline/i.test(r)) { setOut(r); setSrc("ai"); setBusy(false); return; } } } catch (e) {}
       setOut(template()); setSrc("template"); setBusy(false);
     };
     const copy = () => { try { navigator.clipboard.writeText(out); } catch (e) {} };
@@ -274,7 +274,7 @@ SOP:
         <button className="tool-btn" onClick={generate} disabled={busy}>{busy ? "✨ Writing…" : "✨ Generate LOR draft"}</button>
         {out && (
           <div className="sop-output">
-            {src === "template" && <p className="tool-note">AI offline — generated a structured letter from your inputs. Personalise specifics before sending.</p>}
+            {src === "template" && <p className="tool-note">Offline — generated a structured letter from your inputs. Personalise specifics before sending.</p>}
             <textarea className="sop-result" rows={14} value={out} onChange={(e) => setOut(e.target.value)} />
             <div className="tool-row btns"><span className="sop-count">{out.trim().split(/\s+/).filter(Boolean).length} words</span><button className="tool-btn ghost" onClick={copy}>📋 Copy</button></div>
           </div>
@@ -299,7 +299,7 @@ SOP:
     const generate = async () => {
       setBusy(true); setSrc("");
       const prompt = `Format a clean, one-page academic CV/resume for a graduate-school applicant from these details. Use clear section headers (Education, Technical Skills, Experience, Projects, Achievements) and concise, quantified bullet points starting with strong action verbs. Name: ${f.name}. Contact: ${f.contact}. Degree: ${f.degree}, ${f.university}, GPA ${f.gpa}. Skills: ${f.skills}. Experience: ${f.experience}. Projects: ${f.projects}. Achievements: ${f.achievements}. Output ONLY the resume text.`;
-      try { if (window.LP_AI_TUTOR && window.LP_AI_TUTOR.generate) { const r = (await window.LP_AI_TUTOR.generate(prompt) || "").trim(); if (r && !/AI Tutor is offline/i.test(r)) { setOut(r); setSrc("ai"); setBusy(false); return; } } } catch (e) {}
+      try { if (window.LP_AI_TUTOR && window.LP_AI_TUTOR.generate) { const r = (await window.LP_AI_TUTOR.generate(prompt) || "").trim(); if (r && !/(?:AI|Smart) Tutor is offline/i.test(r)) { setOut(r); setSrc("ai"); setBusy(false); return; } } } catch (e) {}
       setOut(template()); setSrc("template"); setBusy(false);
     };
     const copy = () => { try { navigator.clipboard.writeText(out); } catch (e) {} };
@@ -321,7 +321,7 @@ SOP:
         <button className="tool-btn" onClick={generate} disabled={busy}>{busy ? "✨ Building…" : "✨ Generate resume"}</button>
         {out && (
           <div className="sop-output">
-            {src === "template" && <p className="tool-note">AI offline — formatted a clean CV from your inputs. Refine bullets and quantify results before submitting.</p>}
+            {src === "template" && <p className="tool-note">Offline — formatted a clean CV from your inputs. Refine bullets and quantify results before submitting.</p>}
             <textarea className="sop-result" rows={16} value={out} onChange={(e) => setOut(e.target.value)} />
             <div className="tool-row btns"><span className="sop-count">{out.trim().split(/\s+/).filter(Boolean).length} words</span><button className="tool-btn ghost" onClick={copy}>📋 Copy</button></div>
           </div>

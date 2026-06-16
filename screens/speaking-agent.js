@@ -309,7 +309,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
       const out = await ai.generate(prompt);
       if (!out) return null;
       const trimmed = out.trim();
-      if (trimmed.startsWith("\u26A0\uFE0F") || /AI Tutor is offline/i.test(trimmed)) return null;
+      if (trimmed.startsWith("\u26A0\uFE0F") || /(?:AI|Smart) Tutor is offline/i.test(trimmed)) return null;
       return trimmed;
     } catch (_) {
       return null;
@@ -715,7 +715,7 @@ Reply as the examiner in 1\u20133 short sentences: if they made a clear grammar 
           React.createElement(
             "div",
             null,
-            React.createElement("h2", { style: { margin: 0 } }, "AI Speaking Agent"),
+            React.createElement("h2", { style: { margin: 0 } }, "Speaking Practice"),
             React.createElement(
               "p",
               { style: { margin: 0, color: "#6b7280", fontSize: "0.9rem" } },

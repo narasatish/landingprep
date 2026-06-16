@@ -62,7 +62,7 @@
     }
     return ref;
   }
-  var DEFAULT_MSG = "I'm prepping for IELTS/TOEFL/PTE/GRE free on LandingPrep \u2014 1,000+ free mock tests with instant band scores and an AI speaking partner that talks back. No signup, no fees. Try it \u{1F447}";
+  var DEFAULT_MSG = "I'm prepping for IELTS/TOEFL/PTE/GRE free on LandingPrep \u2014 1,000+ free mock tests with instant band scores and an speaking partner that talks back. No signup, no fees. Try it \u{1F447}";
   function invite(opts) {
     var o = opts || {};
     var url = link();

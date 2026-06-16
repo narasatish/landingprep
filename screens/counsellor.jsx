@@ -37,7 +37,7 @@
       try {
         if (window.LP_AI_TUTOR && window.LP_AI_TUTOR.generate) {
           const r = (await window.LP_AI_TUTOR.generate(prompt) || "").trim();
-          if (r && !/AI Tutor is offline/i.test(r) && !r.startsWith("⚠")) reply = r;
+          if (r && !/(?:AI|Smart) Tutor is offline/i.test(r) && !r.startsWith("⚠")) reply = r;
         }
       } catch (e) {}
       if (!reply) {
@@ -66,7 +66,7 @@
             <button className="tool-btn" type="submit" disabled={busy || !input.trim()}>{busy ? "…" : "Ask"}</button>
           </form>
         </div>
-        <p className="tool-note">AI guidance is informational — always verify visa, deadline and eligibility details with the official source.</p>
+        <p className="tool-note">This guidance is informational — always verify visa, deadline and eligibility details with the official source.</p>
       </div>
     );
   }

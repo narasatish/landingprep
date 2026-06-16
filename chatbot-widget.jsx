@@ -1,4 +1,4 @@
-// chatbot-widget.jsx — AI Tutor floating widget + full-page expand
+// chatbot-widget.jsx — Smart Tutor floating widget + full-page expand
 // API key is now on the backend — no key input in this UI.
 (function () {
   const { useState, useRef, useEffect, useCallback } = React;
@@ -24,7 +24,7 @@
         style={{ alignSelf: isUser ? "flex-end" : "flex-start" }}
       >
         {!isUser && (
-          <div className="bubble-label">✨ AI Tutor</div>
+          <div className="bubble-label">✨ Smart Tutor</div>
         )}
         <div className={"bubble-text" + (isUser ? "" : " md-body")} style={isUser ? { whiteSpace: "pre-wrap" } : undefined}>
           {isUser || !window.LP_MD ? msg.text : window.LP_MD(msg.text)}
@@ -38,7 +38,7 @@
   function TypingDots() {
     return (
       <div className="chat-bubble chat-agent" style={{ alignSelf: "flex-start" }}>
-        <div className="bubble-label">✨ AI Tutor</div>
+        <div className="bubble-label">✨ Smart Tutor</div>
         <div className="bubble-text typing-dots"><span /><span /><span /></div>
       </div>
     );
@@ -67,7 +67,7 @@
         <textarea
           ref={inputRef}
           className="cpf-textarea"
-          placeholder="Ask your AI tutor…"
+          placeholder="Ask your smart tutor…"
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
@@ -94,7 +94,7 @@
     const [expanded, setExpanded] = useState(false); // full-page mode
     const [msgs,     setMsgs]     = useState([{
       role: "bot",
-      text: "Hi! I'm your LandingPrep AI tutor. Ask me about IELTS band scores, TOEFL strategy, GRE verbal, GMAT Data Insights, writing feedback, or model answers.\n\nNote: the AI Tutor requires the backend server to be running (node server.js).",
+      text: "Hi! I'm your LandingPrep smart tutor. Ask me about IELTS band scores, TOEFL strategy, GRE verbal, GMAT Data Insights, writing feedback, or model answers.\n\nNote: the Smart Tutor requires the backend server to be running (node server.js).",
     }]);
     const [input,   setInput]   = useState("");
     const [loading, setLoading] = useState(false);
@@ -177,7 +177,7 @@
             {/* Header */}
             <div className="cpf-head cpf-head--full">
               <div className="cpf-head-left">
-                <span className="cpf-title">✨ AI Tutor</span>
+                <span className="cpf-title">✨ Smart Tutor</span>
               </div>
               <div className="cpf-head-right">
                 <button className="cpf-tab-btn" title="Compact view" onClick={() => setExpanded(false)}>⊡</button>
@@ -214,7 +214,7 @@
             {/* Header */}
             <div className="cpf-head">
               <div className="cpf-head-left">
-                <span className="cpf-title">✨ AI Tutor</span>
+                <span className="cpf-title">✨ Smart Tutor</span>
               </div>
               <div className="cpf-head-right">
                 <button
@@ -249,8 +249,8 @@
         <button
           className={`chat-fab chat-fab--ai ${open ? "is-open" : ""}`}
           onClick={() => setOpen(o => !o)}
-          aria-label={open ? "Close AI tutor" : "Open AI tutor"}
-          title="AI Tutor"
+          aria-label={open ? "Close smart tutor" : "Open smart tutor"}
+          title="Smart Tutor"
         >
           {open
             ? <span style={{ fontSize: 22, lineHeight: 1 }}>×</span>

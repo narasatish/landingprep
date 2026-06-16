@@ -60,7 +60,7 @@
   }
 
   var DEFAULT_MSG =
-    "I'm prepping for IELTS/TOEFL/PTE/GRE free on LandingPrep — 1,000+ free mock tests with instant band scores and an AI speaking partner that talks back. No signup, no fees. Try it 👇";
+    "I'm prepping for IELTS/TOEFL/PTE/GRE free on LandingPrep — 1,000+ free mock tests with instant band scores and an speaking partner that talks back. No signup, no fees. Try it 👇";
 
   // Open the native share sheet (mobile) or WhatsApp (desktop fallback) with a
   // pre-written invite + the user's referral link. opts: { text, title, channel }.

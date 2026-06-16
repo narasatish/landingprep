@@ -39,12 +39,12 @@
       "Build a 20-word academic vocabulary list from today's passages and add them to flashcards."
     ],
     writing: [
-      "Write 1 essay under time, self-score with the rubric, then paste it into the AI Writing Agent for Task-Response, Coherence, Lexical & Grammar feedback.",
+      "Write 1 essay under time, self-score with the rubric, then paste it into Writing Feedback for Task-Response, Coherence, Lexical & Grammar feedback.",
       "Rewrite yesterday's essay fixing the AI's top 2 issues; focus on linking words and clear topic sentences.",
       "Drill the shorter task (graph/letter/summary): master 1 template and 8 high-value phrases."
     ],
     speaking: [
-      "Record 3 answers with the AI Speaking Agent; review fluency, pronunciation and the model answer, then re-record your weakest one.",
+      "Record 3 answers with Speaking Practice; review fluency, pronunciation and the model answer, then re-record your weakest one.",
       "Long-turn drill: 1-min prep, 2-min talk using a 4-point structure \u2014 time it strictly.",
       "Shadow a native audio clip for 10 minutes (repeat aloud in sync) to fix rhythm and intonation."
     ],
@@ -59,7 +59,7 @@
       "Reading-comprehension focus: summarise each passage's main point and author's tone in one line."
     ],
     awa: [
-      "Write 1 Issue/Argument essay in 30 minutes (outline first); score with the rubric and the AI Writing Agent.",
+      "Write 1 Issue/Argument essay in 30 minutes (outline first); score with the rubric and Writing Feedback.",
       "Study 3 high-scoring sample essays and copy their structure and transition phrases into your notes."
     ],
     data: [
@@ -148,7 +148,7 @@
       (s, i) => `${i === 0 ? "Priority" : i === 1 ? "Priority" : "Maintain"}: ${s} \u2014 daily targeted drills${i < 2 ? " + review every mistake with 'Explain with AI'" : ""}.`
     );
     buildTasks.push("Build vocabulary daily with flashcards (spaced repetition) and the Daily Challenge.");
-    buildTasks.push("Use the AI Speaking & Writing agents for instant feedback on those sections.");
+    buildTasks.push("Use the Speaking & Writing tools for instant feedback on those sections.");
     phases.push({
       title: "Phase 2 \xB7 Build skills (weak areas first)",
       span: `${buildDays} day${buildDays > 1 ? "s" : ""}`,
@@ -192,7 +192,7 @@
           const prompt = `You are an encouraging ${plan.examName} coach. In 2\u20133 sentences, give motivating, specific advice to a student who has ${plan.daysLeft} days until their test, studies about ${plan.hoursPerDay} hours a day, is targeting ${plan.target || "a strong score"}${plan.weakKeys.length ? ", and is weakest at " + plan.weakKeys.join(" and ") : ""}. Be warm and practical. Do not use a greeting.`;
           const out = await window.LP_AI_TUTOR.generate(prompt);
           const clean = (out || "").trim();
-          if (!cancelled && clean && !/AI Tutor is offline/i.test(clean)) {
+          if (!cancelled && clean && !/(?:AI|Smart) Tutor is offline/i.test(clean)) {
             setCoach(clean);
             setCoachState("done");
           } else if (!cancelled) setCoachState("idle");

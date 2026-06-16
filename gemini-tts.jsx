@@ -247,7 +247,7 @@
         ),
 
         React.createElement("p", { className: "settings-sub" },
-          "Enable studio-quality TTS for IELTS Listening and the AI Speaking examiner using Google's Gemini API. Free tier available at ",
+          "Enable studio-quality TTS for IELTS Listening and the speaking examiner using Google's Gemini API. Free tier available at ",
           React.createElement("a", { href: "https://aistudio.google.com/apikey", target: "_blank", rel: "noopener noreferrer", style: { color: "var(--accent)", textDecoration: "underline" } }, "aistudio.google.com/apikey"),
           "."
         ),
@@ -287,7 +287,7 @@
         ),
 
         isEnabled() && React.createElement("div", { className: "settings-status" },
-          "🟢 Natural voice is enabled. Listening audio and the AI examiner will now use Gemini voices."
+          "🟢 Natural voice is enabled. Listening audio and the speaking examiner will now use Gemini voices."
         )
       )
     );

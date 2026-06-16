@@ -740,14 +740,14 @@ function TestSelect({ exam, onSelect, onBack, onNav }) {
       { id:"section_listening", icon:"🎧", name:"Listening Drill", desc:"40 questions across 4 parts", meta:["40 min", "40 questions", "Band 0–9"] },
       { id:"section_reading", icon:"📖", name:"Reading Drill", desc:"3 passages, side-by-side layout", meta:["60 min", "40 questions", "Band 0–9"] },
       { id:"section_writing", icon:"✍️", name:"Writing Practice", desc:"Task 1 (150w) + Task 2 (250w)", meta:["60 min", "2 tasks", "Scored"] },
-      { id:"section_speaking", icon:"🎤", name:"Speaking with AI Examiner", desc:"Part 1 · Cue Card · Part 3 discussion", meta:["14 min", "AI voice", "Scored"] },
+      { id:"section_speaking", icon:"🎤", name:"Speaking with Examiner", desc:"Part 1 · Cue Card · Part 3 discussion", meta:["14 min", "natural voice", "Scored"] },
     ],
     toefl: [
       { id:"full", icon:"📋", name:"Full Mock Test", desc:"All 4 sections · Official timings", meta:[exam.duration, "0–120", "Full report"] },
       { id:"section_reading", icon:"📖", name:"Reading Drill", desc:"2 academic passages, 10 Q each", meta:["35 min", "20 questions", "0–30"] },
       { id:"section_listening", icon:"🎧", name:"Listening Drill", desc:"4 lectures/conversations, 28 Q", meta:["36 min", "28 questions", "0–30"] },
       { id:"section_writing", icon:"✍️", name:"Writing Practice", desc:"Integrated + Academic Discussion", meta:["29 min", "2 tasks", "0–30"] },
-      { id:"section_speaking", icon:"🎤", name:"Speaking with AI", desc:"4 tasks · AI examiner", meta:["16 min", "4 tasks", "0–30"] },
+      { id:"section_speaking", icon:"🎤", name:"Speaking with Examiner", desc:"4 tasks · speaking examiner", meta:["16 min", "4 tasks", "0–30"] },
     ],
     gmat: [
       { id:"full", icon:"📋", name:"Full Mock Test", desc:"3 sections · 64 questions · 2h 15m", meta:[exam.duration, "205–805", "Full report"] },
@@ -772,7 +772,7 @@ function TestSelect({ exam, onSelect, onBack, onNav }) {
       { id:"section_listening", icon:"🎧", name:"Listening Drill", desc:"6 parts · daily/workplace English", meta:["47 min", "38 questions", "CLB 1–12"] },
       { id:"section_reading", icon:"📖", name:"Reading Drill", desc:"4 reading parts", meta:["55 min", "36 questions", "CLB 1–12"] },
       { id:"section_writing", icon:"✍️", name:"Writing Practice", desc:"Email + Survey (real Canadian format)", meta:["53 min", "2 tasks", "CLB 1–12"] },
-      { id:"section_speaking", icon:"🎤", name:"Speaking with AI", desc:"8 tasks: advice · scene · prediction · opinion", meta:["20 min", "8 tasks", "CLB 1–12"] },
+      { id:"section_speaking", icon:"🎤", name:"Speaking with Examiner", desc:"8 tasks: advice · scene · prediction · opinion", meta:["20 min", "8 tasks", "CLB 1–12"] },
     ],
     duolingo: [
       { id:"full", icon:"📋", name:"Full Adaptive Test", desc:"Adaptive questions · Speaking & writing sample · ~1 hour", meta:[exam.duration, "10–160", "Full report"] },
@@ -903,7 +903,7 @@ function SectionIntro({ sec, sectionNum, total, onBegin, onHome }) {
             {sec.type === "listening" && <p style={{ fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 }}>You will hear audio for each part. Click the play button before answering questions. In the real exam, audio plays once only.</p>}
             {(sec.type === "reading" || sec.type === "pte_reading") && <p style={{ fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 }}>Read each passage carefully and answer all questions. Manage your time across all items.</p>}
             {sec.type.includes("writing") && <p style={{ fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 }}>Write your response in the text area provided. Word count is shown live. Check the minimum word requirement for each task.</p>}
-            {sec.type === "pte_sw" && <p style={{ fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 }}>This section mixes speaking and writing tasks. For speaking items, use the prep and record timers (enable the AI voice in AI Agents settings to hear audio). For Summarize Written Text and Write Essay, type your response — a model answer is provided for each.</p>}
+            {sec.type === "pte_sw" && <p style={{ fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 }}>This section mixes speaking and writing tasks. For speaking items, use the prep and record timers (enable the natural voice in Speaking & Writing settings to hear audio). For Summarize Written Text and Write Essay, type your response — a model answer is provided for each.</p>}
             {sec.type.includes("speaking") && <p style={{ fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 }}>Click the microphone button to record your response. You may also type your response if preferred.</p>}
             {sec.type === "pte_listening" && <p style={{ fontSize: 14, color: "var(--ink-2)", lineHeight: 1.6 }}>Click ▶ Play Audio for each item. The audio transcript will appear for practice. In the real exam, you hear actual audio once only.</p>}
             <div style={{ display:"flex", gap:12, marginTop:20, flexWrap:"wrap" }}>
@@ -2198,7 +2198,7 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
           <div className="avatar-ring" data-state={phase}>
             <div className="avatar-face">🎓</div>
           </div>
-          <div className="avatar-label">AI Examiner</div>
+          <div className="avatar-label">Examiner</div>
           <div className="avatar-status">
             {phase === "speaking_question" && <span className="status-speaking">🔊 Speaking…</span>}
             {phase === "listening" && <span className="status-listening">🎙 Listening for your response…</span>}
@@ -2854,7 +2854,7 @@ function scoreTest(config, answers) {
   return result;
 }
 
-/* ── Speaking review item — shows transcript + AI model answer ── */
+/* ── Speaking review item — shows transcript + model answer ── */
 function SpeakingReviewItem({ q, given, sectionId }) {
   const [modelAnswer, setModelAnswer] = useStateT(q.modelAnswer || q.sampleAnswer || q.answerGuide || q.exampleAnswer || q.sample || "");
   const [generating, setGenerating] = useStateT(false);
@@ -2911,12 +2911,12 @@ function SpeakingReviewItem({ q, given, sectionId }) {
         <div style={{ marginTop: 8 }}>
           {canGenerate && (
             <button className="btn btn-sm" onClick={generateModelAnswer} disabled={generating}>
-              {generating ? "Generating…" : "✨ Generate AI model answer"}
+              {generating ? "Generating…" : "✨ Generate model answer"}
             </button>
           )}
           {!canGenerate && !modelAnswer && (
             <div className="review-explanation" style={{ color: "var(--ink-3)" }}>
-              No model answer available. Set a Gemini API key in AI Agents to enable AI model answers.
+              No model answer available. Set a Gemini API key in Speaking & Writing to enable model answers.
             </div>
           )}
           {error && <div style={{ color: "var(--error)", fontSize: 13, marginTop: 6 }}>{error}</div>}
@@ -2948,7 +2948,7 @@ Student's answer: ${formatAnswer(given) || "(not answered)"}
 Correct answer: ${correctText}`;
       const out = await window.LP_AI_TUTOR.generate(prompt);
       const clean = (out || "").trim();
-      if (!clean || /AI Tutor is offline/i.test(clean)) { setState("error"); return; }
+      if (!clean || /(?:AI|Smart) Tutor is offline/i.test(clean)) { setState("error"); return; }
       setText(clean); setState("done");
     } catch (e) { setState("error"); }
   };
@@ -2960,7 +2960,7 @@ Correct answer: ${correctText}`;
         </button>
       )}
       {state === "error" && <span className="explain-ai-err">Couldn't reach the AI tutor right now — please try again.</span>}
-      {state === "done" && <div className="explain-ai-out"><strong>✨ AI explanation:</strong> {text}</div>}
+      {state === "done" && <div className="explain-ai-out"><strong>✨ Explanation:</strong> {text}</div>}
     </div>
   );
 }
@@ -3337,7 +3337,7 @@ function TestReport({ exam, config, answers, onBack, onNav, onRetake }) {
               return <div className="feedback-row"><span className="fr-icon">{tier.i}</span><span>{tier.t}</span></div>;
             })()}
             {(id === "writing" || id === "speaking" || id === "aw") && (
-              <div className="feedback-row"><span className="fr-icon">💡</span><span>Writing and speaking scores are estimated based on word count, structure, and coherence signals. For accurate scoring, use the AI Writing Agent or speak with a qualified tutor.</span></div>
+              <div className="feedback-row"><span className="fr-icon">💡</span><span>Writing and speaking scores are estimated based on word count, structure, and coherence signals. For accurate scoring, use the Writing Feedback tool or speak with a qualified tutor.</span></div>
             )}
           </div>
         ))}
@@ -3350,8 +3350,8 @@ function TestReport({ exam, config, answers, onBack, onNav, onRetake }) {
         <div className="report-section">
           <h3>What to do next</h3>
           <div className="feedback-row"><span className="fr-icon">📚</span><span>Visit the <strong>Learning Club</strong> for model answers, vocabulary, and topic practice.</span></div>
-          <div className="feedback-row"><span className="fr-icon">✍️</span><span>Use the <strong>Writing Agent</strong> to get detailed feedback on your writing tasks.</span></div>
-          <div className="feedback-row"><span className="fr-icon">🎤</span><span>Use the <strong>Speaking Agent</strong> to practice two-way voice conversation.</span></div>
+          <div className="feedback-row"><span className="fr-icon">✍️</span><span>Use the <strong>Writing Feedback</strong> tool to get detailed feedback on your writing tasks.</span></div>
+          <div className="feedback-row"><span className="fr-icon">🎤</span><span>Use the <strong>Speaking Practice</strong> tool to practice two-way voice conversation.</span></div>
           <div className="feedback-row"><span className="fr-icon">📊</span><span>Track your progress over time in <strong>My Progress</strong>.</span></div>
         </div>
 

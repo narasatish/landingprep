@@ -2,7 +2,7 @@
 "use strict";
 
 // LandingPrep — AI Visa Mock-Interview. Country-specific student-visa interview
-// questions; the student answers and gets AI feedback (clarity, credibility,
+// questions; the student answers and gets instant feedback (clarity, credibility,
 // red flags). Works offline with model guidance per question.
 (function () {
   const { useState } = React;
@@ -55,7 +55,7 @@
       try {
         if (window.LP_AI_TUTOR && window.LP_AI_TUTOR.generate) {
           const r = (await window.LP_AI_TUTOR.generate(prompt) || "").trim();
-          if (r && !/AI Tutor is offline/i.test(r) && !r.startsWith("⚠")) out = r;
+          if (r && !/(?:AI|Smart) Tutor is offline/i.test(r) && !r.startsWith("⚠")) out = r;
         }
       } catch (e) {}
       if (!out) out = "AI is offline — self-check against this model guidance: " + cur.tip + " Make sure your answer is specific, consistent with your documents, confident and concise (under 30 seconds spoken).";
@@ -68,7 +68,7 @@
       <div className="visa-panel">
         <div className="tool-card">
           <h2>🛂 Visa Interview — Mock &amp; Coach</h2>
-          <p className="tool-sub">Practise real student-visa interview questions and get instant AI feedback on credibility, clarity and red flags.</p>
+          <p className="tool-sub">Practise real student-visa interview questions and get instant feedback on credibility, clarity and red flags.</p>
           <div className="tool-row">
             <label>Destination
               <select value={c} onChange={(e) => { setC(e.target.value); setIdx(0); setAnswer(""); setFb(null); }}>{COUNTRIES.map((x) => <option key={x} value={x}>{x}</option>)}</select>
@@ -81,7 +81,7 @@
           <div className="visa-q">❓ {cur.q}</div>
           <textarea className="visa-answer" rows={4} value={answer} onChange={(e) => setAnswer(e.target.value)} placeholder="Type your answer as you would say it to the officer…" />
           <div className="visa-btns">
-            <button className="tool-btn" onClick={review} disabled={busy || !answer.trim()}>{busy ? "✨ Reviewing…" : "✨ Get AI feedback"}</button>
+            <button className="tool-btn" onClick={review} disabled={busy || !answer.trim()}>{busy ? "✨ Reviewing…" : "✨ Get instant feedback"}</button>
             <button className="tool-btn ghost" onClick={next}>Next question →</button>
           </div>
           {!fb && <p className="visa-tip">💡 <strong>Tip:</strong> {cur.tip}</p>}

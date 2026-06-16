@@ -1,4 +1,4 @@
-// ai-tutor.jsx — Live AI Tutor engine
+// ai-tutor.jsx — Live Smart Tutor engine
 // All Gemini calls now go through the backend at /api/ai-tutor/chat.
 // The Gemini API key lives in server .env — never in the frontend.
 //
@@ -48,7 +48,7 @@
   }
 
   // ── Offline message (shown when backend is unreachable) ─────────────────
-  const OFFLINE_MSG = "⚠️ AI Tutor is offline. Please start the backend server to use this feature.\n\nRun: node server.js\n\nMake sure your GEMINI_API_KEY is set in the .env file.";
+  const OFFLINE_MSG = "⚠️ Smart Tutor is offline. Please start the backend server to use this feature.\n\nRun: node server.js\n\nMake sure your GEMINI_API_KEY is set in the .env file.";
 
   function fallbackReply(_msg) {
     return OFFLINE_MSG;

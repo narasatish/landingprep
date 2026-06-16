@@ -31,7 +31,7 @@ Student question: ${question}`;
       try {
         if (window.LP_AI_TUTOR && window.LP_AI_TUTOR.generate) {
           const r = (await window.LP_AI_TUTOR.generate(prompt) || "").trim();
-          if (r && !/AI Tutor is offline/i.test(r) && !r.startsWith("\u26A0")) reply = r;
+          if (r && !/(?:AI|Smart) Tutor is offline/i.test(r) && !r.startsWith("\u26A0")) reply = r;
         }
       } catch (e) {
       }
@@ -44,7 +44,7 @@ Student question: ${question}`;
     return /* @__PURE__ */ React.createElement("div", { className: "couns-panel" }, /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h2", null, "\u{1F4AC} AI Study-Abroad Counsellor"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Free, instant guidance on countries, universities, scholarships, visas and timelines. Currently focused on ", /* @__PURE__ */ React.createElement("strong", null, country || "all destinations"), " \u2014 switch the country above to change context.")), /* @__PURE__ */ React.createElement("div", { className: "couns-chat tool-card" }, /* @__PURE__ */ React.createElement("div", { className: "couns-messages", ref: listRef }, messages.map((m, i) => /* @__PURE__ */ React.createElement("div", { key: i, className: "couns-msg " + m.role + (m.role === "bot" ? " md-body" : "") }, m.role === "bot" && window.LP_MD ? window.LP_MD(m.text) : m.text)), busy && /* @__PURE__ */ React.createElement("div", { className: "couns-msg bot couns-typing" }, "Thinking\u2026")), /* @__PURE__ */ React.createElement("div", { className: "couns-quick" }, QUICK.map((q, i) => /* @__PURE__ */ React.createElement("button", { key: i, className: "couns-chip", onClick: () => ask(q), disabled: busy }, q))), /* @__PURE__ */ React.createElement("form", { className: "couns-input", onSubmit: (e) => {
       e.preventDefault();
       ask();
-    } }, /* @__PURE__ */ React.createElement("input", { type: "text", value: input, onChange: (e) => setInput(e.target.value), placeholder: "Ask anything about studying abroad\u2026" }), /* @__PURE__ */ React.createElement("button", { className: "tool-btn", type: "submit", disabled: busy || !input.trim() }, busy ? "\u2026" : "Ask"))), /* @__PURE__ */ React.createElement("p", { className: "tool-note" }, "AI guidance is informational \u2014 always verify visa, deadline and eligibility details with the official source."));
+    } }, /* @__PURE__ */ React.createElement("input", { type: "text", value: input, onChange: (e) => setInput(e.target.value), placeholder: "Ask anything about studying abroad\u2026" }), /* @__PURE__ */ React.createElement("button", { className: "tool-btn", type: "submit", disabled: busy || !input.trim() }, busy ? "\u2026" : "Ask"))), /* @__PURE__ */ React.createElement("p", { className: "tool-note" }, "This guidance is informational \u2014 always verify visa, deadline and eligibility details with the official source."));
   }
   window.LP_CounsellorPanel = CounsellorPanel;
   function ProgramFinderPanel({ country, onNav }) {

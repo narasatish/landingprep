@@ -27,7 +27,7 @@
       mode: "practice"
     };
   }
-  const OFFLINE_MSG = "\u26A0\uFE0F AI Tutor is offline. Please start the backend server to use this feature.\n\nRun: node server.js\n\nMake sure your GEMINI_API_KEY is set in the .env file.";
+  const OFFLINE_MSG = "\u26A0\uFE0F Smart Tutor is offline. Please start the backend server to use this feature.\n\nRun: node server.js\n\nMake sure your GEMINI_API_KEY is set in the .env file.";
   function fallbackReply(_msg) {
     return OFFLINE_MSG;
   }

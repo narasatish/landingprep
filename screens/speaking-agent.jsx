@@ -335,7 +335,7 @@
       if (!out) return null;
       const trimmed = out.trim();
       // Detect the offline placeholder (starts with a warning emoji).
-      if (trimmed.startsWith("⚠️") || /AI Tutor is offline/i.test(trimmed)) return null;
+      if (trimmed.startsWith("⚠️") || /(?:AI|Smart) Tutor is offline/i.test(trimmed)) return null;
       return trimmed;
     } catch (_) {
       return null;
@@ -699,7 +699,7 @@
           React.createElement("div", { className: "agent-header", style: { borderColor: examColor } },
             React.createElement("div", { className: "agent-icon", style: { background: examColor } }, "🎤"),
             React.createElement("div", null,
-              React.createElement("h2", { style: { margin: 0 } }, "AI Speaking Agent"),
+              React.createElement("h2", { style: { margin: 0 } }, "Speaking Practice"),
               React.createElement("p", { style: { margin: 0, color: "#6b7280", fontSize: "0.9rem" } },
                 `${(exam && exam.name) || "IELTS"} speaking practice — ${voiceOn ? "two‑way voice conversation" : "chat-based practice with model answers"}`
               )

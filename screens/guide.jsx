@@ -140,7 +140,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
               {langTarget ? (
                 <>
                   <h3 className="h2" style={{ color: "white" }}>Build your {langName} now</h3>
-                  <p>{exam.name} tests your {langName}. Practise free with our {langName} A1 course, mock tests and a 2-way AI speaking partner — the fastest way to start building the skills {exam.name} measures.</p>
+                  <p>{exam.name} tests your {langName}. Practise free with our {langName} A1 course, mock tests and a 2-way speaking partner — the fastest way to start building the skills {exam.name} measures.</p>
                   <button
                     className="btn"
                     style={{ background: "white", color: "var(--ink)", borderColor: "white", marginTop: 16 }}

@@ -596,7 +596,7 @@
         `REWRITE: (one of the candidate's weaker sentences, rewritten to a higher band).`;
       try {
         const out = window.LP_AI_TUTOR && window.LP_AI_TUTOR.generate ? await window.LP_AI_TUTOR.generate(prompt) : null;
-        if (!out || /AI Tutor is offline/i.test(out) || out.trim().startsWith("⚠")) setAiFb({ offline: true });
+        if (!out || /(?:AI|Smart) Tutor is offline/i.test(out) || out.trim().startsWith("⚠")) setAiFb({ offline: true });
         else setAiFb({ text: out.trim() });
       } catch (_) { setAiFb({ offline: true }); }
       setAiLoading(false);
@@ -615,7 +615,7 @@
         React.createElement("div", { className: "agent-header", style: { borderColor: examColor } },
           React.createElement("div", { className: "agent-icon", style: { background: examColor } }, "✍️"),
           React.createElement("div", null,
-            React.createElement("h2", { style: { margin: 0 } }, "AI Writing Agent"),
+            React.createElement("h2", { style: { margin: 0 } }, "Writing Feedback"),
             React.createElement("p", { style: { margin: 0, color: "#6b7280", fontSize: "0.9rem" } },
               `${(exam && exam.name) || "IELTS"} writing practice with instant scoring`
             )
@@ -770,7 +770,7 @@
               onClick: getAIFeedback,
               disabled: !text.trim() || aiLoading,
               title: "Detailed examiner feedback from AI (needs the AI backend online)",
-            }, aiLoading ? "✨ Analysing…" : "✨ Get AI feedback"),
+            }, aiLoading ? "✨ Analysing…" : "✨ Get instant feedback"),
             React.createElement("button", {
               className: "btn-outline",
               onClick: () => { setText(""); setResult(null); setShowSample(false); setAiFb(null); setWordCount(0); setShowMinWarning(false); },
@@ -779,7 +779,7 @@
           ),
 
           aiFb && React.createElement("div", { className: "ai-feedback-panel" },
-            React.createElement("div", { className: "ai-fb-head" }, "✨ AI Examiner Feedback"),
+            React.createElement("div", { className: "ai-fb-head" }, "✨ Examiner Feedback"),
             aiFb.offline
               ? React.createElement("p", { className: "ai-fb-offline" }, "The AI examiner is offline right now (start the AI backend to enable it). Your instant heuristic score and the Band model answer below are still available.")
               : React.createElement("div", { className: "ai-fb-body" }, aiFb.text)

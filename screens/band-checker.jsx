@@ -1,6 +1,6 @@
 /* global React, window */
 "use strict";
-// LandingPrep — free AI Band-Score Checker (IELTS Writing & Speaking). Paste an essay
+// LandingPrep — free Band-Score Checker (IELTS Writing & Speaking). Paste an essay
 // or record a Part-2 answer and get an instant estimated band with a TR/CC/LR/GRA
 // breakdown, fixes and a Band-9 model. Targets the highest-intent prep niche
 // ("free IELTS writing checker / band score"). Uses the backend Gemini proxy (jsonMode).
@@ -187,8 +187,8 @@
     useEffect(() => {
       try {
         document.title = mode === "writing"
-          ? "Free IELTS Writing Checker — Instant AI Band Score (Task 1 & 2) | LandingPrep"
-          : "Free IELTS Speaking Checker — Instant AI Band Score & Feedback | LandingPrep";
+          ? "Free IELTS Writing Checker — Instant Band Score (Task 1 & 2) | LandingPrep"
+          : "Free IELTS Speaking Checker — Instant Band Score & Feedback | LandingPrep";
         const m = document.querySelector('meta[name="description"]');
         if (m) m.setAttribute("content", "Free AI IELTS band-score checker: paste your essay or record your speaking answer and get an instant estimated band with a TR/CC/LR/GRA breakdown, corrections and a Band 9 model. No signup.");
       } catch (e) {}
@@ -198,7 +198,7 @@
         <window.LP_TopBar current="tools" onNav={onNav} />
         <main className="tools-shell tools-shell-wide">
           <header className="tools-hero">
-            <h1>🎯 AI Band-Score Checker</h1>
+            <h1>🎯 Band-Score Checker</h1>
             <p>Paste your essay or record your speaking answer — get an instant estimated IELTS band with a full criterion breakdown, fixes and a Band 9 model. 100% free, no signup.</p>
           </header>
           <div className="tools-tabs">

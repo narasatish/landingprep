@@ -45,7 +45,7 @@
           </button>
         ) : (
           <div style={{ fontSize:13, color:"#4b5563", lineHeight:1.6 }}>
-            <em>Audio playback needs the AI voice enabled. Transcript shown for practice:</em>
+            <em>Audio playback needs the natural voice enabled. Transcript shown for practice:</em>
             <div style={{ marginTop:6, color:"var(--ink)" }}>{script}</div>
           </div>
         )}

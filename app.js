@@ -104,11 +104,11 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
     if (!window.LP_SEO) return;
     const examLabel = (exam == null ? void 0 : exam.name) || "IELTS";
     window.LP_SEO.set({
-      title: `Free ${examLabel} AI Speaking & Writing Practice with Feedback | LandingPrep`,
-      description: `Two-way voice practice and instant writing feedback for ${examLabel}. Speak naturally with an AI examiner, get model answers and rubric-based scoring \u2014 free, browser-based, no signup.`
+      title: `Free ${examLabel} Speaking & Writing Practice with Feedback | LandingPrep`,
+      description: `Two-way voice practice and instant writing feedback for ${examLabel}. Speak naturally with a speaking examiner, get model answers and rubric-based scoring \u2014 free, browser-based, no signup.`
     });
   }, [exam == null ? void 0 : exam.id]);
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "agents", onNav }), /* @__PURE__ */ React.createElement("div", { className: "shell", style: { paddingTop: "2rem", paddingBottom: "4rem" } }, /* @__PURE__ */ React.createElement("div", { style: { marginBottom: "1rem" } }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow", style: { color: "var(--accent)" } }, "AI Agents"), /* @__PURE__ */ React.createElement("h1", { className: "h1", style: { margin: "8px 0 4px", fontSize: "clamp(28px,4.5vw,42px)" } }, "Practice with AI"), /* @__PURE__ */ React.createElement("p", { className: "muted", style: { margin: 0, maxWidth: 640 } }, "Two-way voice speaking practice and instant writing feedback \u2014 both built on the same heuristic scoring engine that powers our mocks.")), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: "0.5rem", flexWrap: "wrap", margin: "1.5rem 0" } }, exams.map(
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "agents", onNav }), /* @__PURE__ */ React.createElement("div", { className: "shell", style: { paddingTop: "2rem", paddingBottom: "4rem" } }, /* @__PURE__ */ React.createElement("div", { style: { marginBottom: "1rem" } }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow", style: { color: "var(--accent)" } }, "Speaking & Writing"), /* @__PURE__ */ React.createElement("h1", { className: "h1", style: { margin: "8px 0 4px", fontSize: "clamp(28px,4.5vw,42px)" } }, "Practice Speaking & Writing"), /* @__PURE__ */ React.createElement("p", { className: "muted", style: { margin: 0, maxWidth: 640 } }, "Two-way voice speaking practice and instant writing feedback \u2014 both built on the same heuristic scoring engine that powers our mocks.")), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: "0.5rem", flexWrap: "wrap", margin: "1.5rem 0" } }, exams.map(
     (e) => /* @__PURE__ */ React.createElement(
       "button",
       {
@@ -137,7 +137,7 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
       style: tab === "speaking" ? { borderBottomColor: accentColor, color: accentColor } : {},
       onClick: () => setTab("speaking")
     },
-    "\u{1F3A4} AI Speaking Agent"
+    "\u{1F3A4} Speaking Practice"
   ), support.writing && /* @__PURE__ */ React.createElement(
     "button",
     {
@@ -145,7 +145,7 @@ function AgentsHub({ onNav, exams, exam, onSelectExam }) {
       style: tab === "writing" ? { borderBottomColor: accentColor, color: accentColor } : {},
       onClick: () => setTab("writing")
     },
-    "\u270D\uFE0F AI Writing Agent"
+    "\u270D\uFE0F Writing Feedback"
   )), tab === "speaking" && support.speaking ? /* @__PURE__ */ React.createElement(LazyScreen, { key: "agent-speaking", scripts: ["screens/speaking-agent.js"], isReady: () => !!window.LP_SpeakingAgent, label: "the speaking agent" }, () => /* @__PURE__ */ React.createElement(window.LP_SpeakingAgent, { exam })) : /* @__PURE__ */ React.createElement(LazyScreen, { key: "agent-writing", scripts: ["screens/writing-agent.js"], isReady: () => !!window.LP_WritingAgent, label: "the writing agent" }, () => /* @__PURE__ */ React.createElement(window.LP_WritingAgent, { exam })))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
 }
 function LazyScreen({ scripts, isReady, label, children }) {

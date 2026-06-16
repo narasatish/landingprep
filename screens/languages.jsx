@@ -223,7 +223,7 @@
             ))}
           </div>
           <div className="tools-tabs">
-            {[["learn", "📚 Learn"], ["vocab", "🗂 Vocabulary"], ["stories", "📖 Stories"], ["speak", "🎙️ AI Speaking"], ["test", "✅ Placement Test"], ["mock", "📝 Mock Test"], ["exams", "🎓 Exams & Why"]].map(([id, label]) => (
+            {[["learn", "📚 Learn"], ["vocab", "🗂 Vocabulary"], ["stories", "📖 Stories"], ["speak", "🎙️ Speaking Practice"], ["test", "✅ Placement Test"], ["mock", "📝 Mock Test"], ["exams", "🎓 Exams & Why"]].map(([id, label]) => (
               <button key={id} className={"tools-tab" + (tab === id ? " active" : "")} onClick={() => setTab(id)}>{label}</button>
             ))}
           </div>
