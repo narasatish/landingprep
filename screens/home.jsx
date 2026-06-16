@@ -387,6 +387,38 @@ function Home({ onGuide, onPractice, onNav }) {
         </div>
       </section>
 
+      {/* Compare, convert & plan — surfaces the free static guides (comparisons,
+          score converter, eligibility, scholarships, PR) for users + crawlers. */}
+      <section className="section" style={{ paddingTop: 28 }}>
+        <div className="shell">
+          <div className="section-header reveal">
+            <div>
+              <div className="eyebrow">Compare, convert &amp; plan — free</div>
+              <h2 className="h1">Pick the right test, hit the right score.</h2>
+              <p className="muted" style={{ maxWidth: 660, marginTop: 10 }}>
+                Free, in-depth guides to help you choose between exams, convert your score across every test, and find the exact score — and scholarships — your country and university want.
+              </p>
+            </div>
+          </div>
+          <div className="hp-tools-grid reveal">
+            {[
+              ["🆚", "Compare the tests", "IELTS vs PTE, IELTS vs TOEFL, GRE vs GMAT — side by side, with which to take.", "/english-test-comparisons/"],
+              ["🔄", "Score converter", "Convert IELTS ↔ TOEFL ↔ PTE ↔ CEFR ↔ Duolingo with a full concordance table.", "/tools/english-test-score-converter/"],
+              ["🌍", "Score needed by country", "The exact English-test & admission score each country and university expects.", "/eligibility/"],
+              ["💸", "Scholarships by country", "Fully-funded and merit awards with eligibility, amounts and deadlines.", "/fully-funded-scholarships/"],
+              ["🛂", "Test scores for PR & visa", "IELTS, PTE & CELPIP scores for Canada, Australia & UK immigration.", "/ielts-for-canada-pr/"],
+              ["🧮", "IELTS band calculator", "Turn your raw Listening & Reading answers into the official 0–9 band.", "/tools/ielts-band-score-calculator/"],
+            ].map(([ic, t, d, href]) => (
+              <a key={href} className="hp-tool-card" href={href} style={{ textDecoration: "none" }}>
+                <span className="hp-tool-ic">{ic}</span>
+                <span className="hp-tool-t">{t}</span>
+                <span className="hp-tool-d">{d}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Gamification: XP / level / streak (retention) — signed-in users only */}
       {window.LP_GamifyCard && window.LP_AUTH && window.LP_AUTH.getUser() ? (
         <section className="section" style={{ paddingTop: 0 }}>
@@ -781,6 +813,12 @@ function Footer() {
             <h3>Resources</h3>
             <ul>
               <li><a href="/ielts-band-7/">IELTS band requirements</a></li><li><a href="/which-english-test/">Which English test? (quiz)</a></li><li><a href="#/relocate">Move Abroad checklist</a></li><li><a href="/student-city-guides/">Student city guides</a></li><li><a href="/learn-german/">Learn German, French &amp; Spanish</a></li><li><a href="#/blog">Study tips & strategy</a></li><li><a href="/explore/">Explore all free pages</a></li><li><a href="#/progress">My Progress</a></li><li><a href="https://syllab.in/" rel="noopener" title="Free NCERT &amp; CBSE notes, mock tests and AI tutor">School exams? Syllab — free CBSE/NCERT prep</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Compare &amp; Plan</h3>
+            <ul>
+              <li><a href="/english-test-comparisons/">Compare all tests</a></li><li><a href="/ielts-vs-pte/">IELTS vs PTE</a></li><li><a href="/ielts-vs-toefl/">IELTS vs TOEFL</a></li><li><a href="/tools/english-test-score-converter/">Score converter</a></li><li><a href="/eligibility/">Score needed by country</a></li><li><a href="/fully-funded-scholarships/">Scholarships by country</a></li><li><a href="/ielts-for-canada-pr/">Test scores for PR &amp; visa</a></li>
             </ul>
           </div>
         </div>
