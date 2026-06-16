@@ -486,6 +486,16 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// Accurate, evergreen "what different scores mean" levels per exam (for the eligibility pages).
+const SCORE_LEVELS = {
+  ielts: ["Foundation / pathway courses: 5.5–6.0", "Most Master's programs: 6.5 overall (no band below 6.0)", "Top universities: 7.0–7.5+"],
+  toefl: ["Foundation / conditional: 60–79", "Most programs: 80–90", "Top universities: 100–110+"],
+  pte: ["Foundation: 50–58", "Most programs: 58–64", "Top universities: 70–79+"],
+  gre: ["Most Master's: 300–315", "Competitive programs: 315–325", "Top programs: 325–330+"],
+  gmat: ["Most MBA programs: 585–645 (Focus)", "Strong applications: 645–685", "Top MBA programs: 685–705"],
+  duolingo: ["Foundation / pathway: 90–105", "Most programs: 105–120", "Top universities: 120–130+"],
+  celpip: ["Most programs: CLB 7 (≈ CELPIP 7)", "Stronger profile: CLB 8–9", "Canada Express Entry (max points): CLB 9+"],
+};
 function eligibilityPage(slug) {
   const d = ELIGIBILITY[slug];
   const e = EXAMS[d.exam];
@@ -506,11 +516,13 @@ function eligibilityPage(slug) {
   <p class="lead">${d.note}</p>
   <a class="cta" href="/#/exam-prep/${e.appPath}">▶ Practise ${e.short} free for ${d.country}</a>
 </section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> For ${d.country}, the typical ${e.short} requirement is <strong>${d.min}</strong>. ${esc(d.note)} Always confirm the exact figure on your university's or the visa authority's official page, as it varies by course and changes over time.</div>
 <div class="card">
   <h2>Typical ${e.short} requirement for ${d.country}</h2>
   <p><strong>${d.min}</strong></p>
   <p class="note">Guidance only — always confirm the exact requirement with the official body or your target university/visa programme, as minimums change and vary by course.</p>
 </div>
+${SCORE_LEVELS[d.exam] ? `<div class="card"><h2>What different ${e.short} scores mean</h2><ul class="bsteps">${SCORE_LEVELS[d.exam].map((l) => `<li>${esc(l)}</li>`).join("")}</ul><p class="note">Aim a little above the minimum — a higher ${e.short} score widens your university options and strengthens scholarship and visa applications.</p></div>` : ""}
 <div class="card">
   <h2>How to hit your ${e.short} target for ${d.country}</h2>
   <ul>
@@ -523,8 +535,8 @@ function eligibilityPage(slug) {
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free ${e.short} mock test`, href: `/mock-test/${d.exam}/` },
-  { label: `${e.short} practice by section`, href: `/practice/${d.exam}/` },
-  { label: `Eligibility checker tool`, href: `/tools/university-eligibility-checker/` },
+  ...Object.keys(ELIGIBILITY).filter((s) => ELIGIBILITY[s].exam === d.exam && s !== slug).slice(0, 3).map((s) => ({ label: `${e.short} score for ${ELIGIBILITY[s].country}`, href: `/eligibility/${s}/` })),
+  { label: `All score requirements by country`, href: `/eligibility/` },
   { label: `Score converter`, href: `/tools/english-test-score-converter/` },
 ])}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
