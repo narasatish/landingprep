@@ -32492,6 +32492,40 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
           "body": "Most European countries grant student visas/residence permits for the programme length, with renewals. You must show proof of funds for living costs and tuition. Scholarships include Erasmus Mundus (full tuition plus stipend), DAAD (Germany), and many university awards. Search MastersPortal and university sites, and apply to several programmes and scholarships in parallel. Build your English score now \u2014 practise free on LandingPrep to meet requirements comfortably."
         }
       ]
+    },
+    {
+      "id": "fully-funded-masters-scholarships-2026",
+      "tag": "Scholarships",
+      "date": "2026",
+      "title": "Fully Funded Master's Scholarships Worldwide 2026: How to Win",
+      "excerpt": "Top fully-funded master's scholarships \u2014 Chevening, Fulbright, DAAD, Erasmus Mundus, Australia Awards and Commonwealth \u2014 with eligibility, deadlines and winning tips.",
+      "kw": "fully funded scholarships, master's scholarships 2026, Chevening scholarship, Fulbright, DAAD scholarship",
+      "sections": [
+        {
+          "h": "Chevening Scholarship (UK)",
+          "body": "Chevening is the UK government's flagship scholarship, fully funding a one-year UK master's \u2014 tuition, living stipend, flights and visa. It is open to applicants worldwide and rewards leadership and a clear career plan. Applications typically close in early November, and it is highly competitive (around 1,500 awarded). You usually need a bachelor's, around two years of work experience, and a UK offer. Confirm current rules on the official Chevening site."
+        },
+        {
+          "h": "Fulbright Program (USA)",
+          "body": "Fulbright funds US master's study for selected countries, typically covering tuition, airfare, a living stipend and health insurance. It is administered country by country through US embassies, so eligibility and deadlines vary (often October\u2013December). It is highly selective and involves essays and interviews. You generally need a strong English score (e.g., TOEFL 90+ or IELTS 7). Confirm your country's specific Fulbright programme and deadlines."
+        },
+        {
+          "h": "DAAD Scholarships (Germany)",
+          "body": "DAAD (the German Academic Exchange Service) offers many scholarships, including fully-funded master's, covering a monthly living stipend (tuition is often already free in Germany), plus insurance and travel allowances. It is open to many fields and nationalities. Deadlines vary by programme, often 6\u201312 months before the start. Apply through the DAAD portal; you typically need a strong academic record and English (or German) proficiency."
+        },
+        {
+          "h": "Erasmus Mundus Joint Masters",
+          "body": "Erasmus Mundus Joint Master's are prestigious programmes delivered across several European universities, with full scholarships (tuition plus a monthly allowance) for selected students. They are open to applicants worldwide and usually run two years. Deadlines vary (often autumn to winter for the following year). You need English proficiency and, for some STEM courses, relevant background. Browse programmes on the Erasmus Mundus catalogue."
+        },
+        {
+          "h": "Australia Awards and Commonwealth Scholarships",
+          "body": "Australia Awards fully fund tuition and living costs for master's study in Australia for eligible developing countries, with deadlines often around early in the year. Commonwealth Scholarships, funded by the UK and Commonwealth members, cover full tuition plus a stipend for eligible Commonwealth citizens, with varying deadlines. Both are rigorous; confirm eligibility and dates on their official websites."
+        },
+        {
+          "h": "Application Strategy and Winning Tips",
+          "body": "Apply to 5\u201310 scholarships in parallel rather than relying on one. Write a custom essay for each \u2014 generic essays are rejected. Secure strong references and start 12\u201318 months ahead: take IELTS/TOEFL early and build a clear leadership and impact story. Scholarships favour purposeful candidates with a plan to contribute back home. Prepare well for interviews. Build your English proficiency now \u2014 practise free on LandingPrep to exceed every minimum language requirement."
+        }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;
