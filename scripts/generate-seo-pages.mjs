@@ -10,7 +10,7 @@
 // Output: top-level folders (mock-test/, practice/, eligibility/, tools/) +
 // sitemap.xml + robots.txt at repo root.
 
-import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync, unlinkSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -148,10 +148,12 @@ const ELIGIBILITY = {
 const TOOLS = {
   "ielts-band-score-calculator": { title: "IELTS Band Score Calculator", exam: "ielts",
     kw: "ielts band score calculator free, ielts score calculator online, calculate ielts band from raw score, ielts overall band score calculator, what is my ielts band",
-    lead: "Convert your raw IELTS Listening and Reading answers into the official 0–9 band score and get your overall band in seconds." },
+    lead: "Convert your raw IELTS Listening and Reading answers into the official 0–9 band score and get your overall band in seconds.",
+    ref: `<div class="card"><h2>IELTS raw score → band score (Listening &amp; Academic Reading)</h2><p>Both the Listening and Academic Reading tests have 40 questions. Your number of correct answers maps to a band as shown below (these are the widely-published bands and can vary slightly by test version).</p><table class="cmp-table"><thead><tr><th>Band</th><th>Listening (out of 40)</th><th>Academic Reading (out of 40)</th></tr></thead><tbody><tr><td><strong>9.0</strong></td><td>39–40</td><td>39–40</td></tr><tr><td><strong>8.5</strong></td><td>37–38</td><td>37–38</td></tr><tr><td><strong>8.0</strong></td><td>35–36</td><td>35–36</td></tr><tr><td><strong>7.5</strong></td><td>32–34</td><td>33–34</td></tr><tr><td><strong>7.0</strong></td><td>30–31</td><td>30–32</td></tr><tr><td><strong>6.5</strong></td><td>26–29</td><td>27–29</td></tr><tr><td><strong>6.0</strong></td><td>23–25</td><td>23–26</td></tr><tr><td><strong>5.5</strong></td><td>18–22</td><td>19–22</td></tr><tr><td><strong>5.0</strong></td><td>16–17</td><td>15–18</td></tr></tbody></table><p class="note">General Training Reading needs slightly more correct answers for the same band. Your overall band is the average of the four skills, rounded to the nearest 0.5. Always treat these as a guide and confirm with the official band descriptors.</p></div>` },
   "english-test-score-converter": { title: "English Test Score Converter (IELTS ↔ TOEFL ↔ PTE ↔ CEFR)", exam: "ielts",
     kw: "ielts to toefl converter, toefl to ielts score conversion, pte to ielts equivalency, ielts to pte converter free, cefr level calculator, english test score equivalency",
-    lead: "Instantly convert between IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo and CEFR levels with one free tool." },
+    lead: "Instantly convert between IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo and CEFR levels with one free tool.",
+    ref: `<div class="card"><h2>IELTS ↔ TOEFL iBT ↔ PTE ↔ CEFR ↔ Duolingo equivalences</h2><p>This is an approximate concordance based on the test makers' published comparison tables. Use it to estimate an equivalent score — universities and visa systems set their own exact requirements, so always confirm against the official source.</p><table class="cmp-table"><thead><tr><th>IELTS</th><th>TOEFL iBT</th><th>PTE Academic</th><th>CEFR</th><th>Duolingo</th></tr></thead><tbody><tr><td><strong>9.0</strong></td><td>118–120</td><td>89–90</td><td>C2</td><td>160</td></tr><tr><td><strong>8.0</strong></td><td>110–114</td><td>83–86</td><td>C1</td><td>145</td></tr><tr><td><strong>7.5</strong></td><td>102–109</td><td>79–82</td><td>C1</td><td>130–135</td></tr><tr><td><strong>7.0</strong></td><td>94–101</td><td>73–78</td><td>C1</td><td>120–125</td></tr><tr><td><strong>6.5</strong></td><td>79–93</td><td>65–72</td><td>B2</td><td>110–115</td></tr><tr><td><strong>6.0</strong></td><td>60–78</td><td>59–64</td><td>B2</td><td>105</td></tr><tr><td><strong>5.5</strong></td><td>46–59</td><td>51–58</td><td>B2</td><td>95</td></tr><tr><td><strong>5.0</strong></td><td>35–45</td><td>43–50</td><td>B1</td><td>80</td></tr></tbody></table><p class="note">Sources: the official ETS TOEFL–IELTS concordance, Pearson PTE score guide and Duolingo English Test comparison. Figures are approximate and updated periodically by the test makers — confirm the exact equivalence and the requirement your university or visa actually accepts.</p></div>` },
   "university-eligibility-checker": { title: "Study Abroad Eligibility Checker", exam: "ielts",
     kw: "study abroad eligibility checker, am i eligible to study abroad free, university english requirement checker, visa requirements by country, study abroad requirements by exam score",
     lead: "Enter your English-test score and target country to see whether you meet typical university and visa requirements." },
@@ -567,11 +569,13 @@ function toolPage(slug) {
   <h2>About this tool</h2>
   <p>${t.lead} ${BRAND} is a 100% free platform for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT preparation. Use this tool alongside our free full-length mock tests and speaking &amp; writing practice to plan exactly what score you need and how to reach it.</p>
 </div>
+${t.ref || ""}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free IELTS mock test`, href: `/mock-test/ielts/` },
   { label: `Free TOEFL mock test`, href: `/mock-test/toefl/` },
-  { label: `Free PTE mock test`, href: `/mock-test/pte/` },
+  { label: `Score requirements by country`, href: `/eligibility/` },
+  { label: `Compare the tests`, href: `/english-test-comparisons/` },
   { label: `All free exams`, href: `/#/exam-prep` },
 ])}`;
   emit(path, head({ title, desc, path, kw: t.kw, jsonLdBlocks: [
@@ -2070,12 +2074,12 @@ ${relatedGrid([
 
 // ── "[Exam] vs [Exam]" comparison pages ─────────────────────────────────────
 const EXAM_VS = [
-  { a: "IELTS", b: "TOEFL", rows: [["Scoring", "Band 0–9", "0–120"], ["Format", "Paper or computer; face-to-face speaking", "Internet-based; speak into a microphone"], ["Length", "About 2h 45m", "About 2 hours"], ["Speaking", "Live, with a real examiner", "Recorded, AI + human scored"], ["Best for", "UK, Australia, Canada, Ireland, NZ", "USA, and widely accepted worldwide"]], verdict: "Pick IELTS if you prefer a human speaking examiner or are heading to the UK/Australia; pick TOEFL for the USA or if you like an all-computer test." },
-  { a: "IELTS", b: "PTE", rows: [["Scoring", "Band 0–9", "10–90 (Global Scale of English)"], ["Marking", "Human examiners", "Fully computer (AI) scored"], ["Results", "3–13 days", "Often within 48 hours"], ["Speaking", "With a real examiner", "Into a microphone, scored"], ["Best for", "Those who prefer human marking", "Fast results and Australia migration"]], verdict: "Choose PTE for fast, fully-computer scoring and quick turnaround; choose IELTS if you prefer a human examiner and the most universal recognition." },
-  { a: "TOEFL", b: "PTE", rows: [["Scoring", "0–120", "10–90"], ["Marking", "AI + human", "Fully AI"], ["Results", "4–8 days", "~48 hours"], ["Strength", "Strong US recognition", "Fast, growing acceptance"], ["Best for", "USA universities", "Australia, fast results"]], verdict: "Both are computer-based; TOEFL is the safer choice for the USA, PTE for the fastest results and Australian migration." },
-  { a: "IELTS", b: "Duolingo", rows: [["Scoring", "Band 0–9", "10–160"], ["Cost", "Higher (~US$200+)", "Much cheaper (~US$65)"], ["Length", "~2h 45m, at a centre", "~1 hour, at home"], ["Results", "3–13 days", "~2 days"], ["Acceptance", "Universal", "Thousands of universities, growing"]], verdict: "Duolingo is far cheaper, shorter and taken at home — great if your university accepts it. IELTS has the widest acceptance including visas/PR." },
-  { a: "GRE", b: "GMAT", rows: [["Used for", "Most Master's & PhD programmes", "MBA & business Master's"], ["Score", "260–340 (+ AWA 0–6)", "205–805 (Focus Edition)"], ["Maths", "Calculator allowed", "No calculator (Quant)"], ["Length", "~1h 58m", "~2h 15m"], ["Best for", "Broad grad-school options", "Top business schools"]], verdict: "Take the GRE for the widest range of graduate programmes; take the GMAT Focus if you're targeting competitive MBA programmes that prefer it." },
-  { a: "CELPIP", b: "IELTS", rows: [["Scoring", "CLB level 1–12", "Band 0–9"], ["Delivery", "Fully computer (incl. speaking)", "Paper/computer; speaking with a real examiner"], ["Accent", "North American English", "British/International English"], ["Results", "Usually 4–5 days", "3–13 days"], ["Best for", "Canadian PR, citizenship & some study", "Universal — study, work & migration worldwide"]], verdict: "For Canadian immigration both are accepted by IRCC — pick CELPIP if you prefer North American English and an all-computer test, or IELTS General for the widest global recognition." },
+  { a: "IELTS", b: "TOEFL", rows: [["Scoring", "Band 0–9", "0–120"], ["Format", "Paper or computer; face-to-face speaking", "Internet-based; speak into a microphone"], ["Length", "About 2h 45m", "About 2 hours"], ["Speaking", "Live, with a real examiner", "Recorded, AI + human scored"], ["Best for", "UK, Australia, Canada, Ireland, NZ", "USA, and widely accepted worldwide"]], verdict: "Pick IELTS if you prefer a human speaking examiner or are heading to the UK/Australia; pick TOEFL for the USA or if you like an all-computer test.", chooseA: ["You're applying to the UK, Ireland, Australia, New Zealand or Canada, or need the test for a visa or permanent residence — IELTS is accepted almost everywhere.", "You prefer speaking to a real human examiner instead of a microphone.", "You're comfortable with British and international English and a mix of accents.", "You may need the General Training version for migration, not only Academic for university."], chooseB: ["Your target universities are in the United States, where TOEFL is the most familiar test to admissions offices.", "You prefer an all-computer test with no face-to-face interview.", "You're comfortable typing your essays and speaking into a microphone.", "You're confident with North American academic English."], cost: "Both tests cost roughly US$190–250 depending on country and are valid for 2 years. IELTS results arrive in 3–13 days; TOEFL in about 4–8 days." },
+  { a: "IELTS", b: "PTE", rows: [["Scoring", "Band 0–9", "10–90 (Global Scale of English)"], ["Marking", "Human examiners", "Fully computer (AI) scored"], ["Results", "3–13 days", "Often within 48 hours"], ["Speaking", "With a real examiner", "Into a microphone, scored"], ["Best for", "Those who prefer human marking", "Fast results and Australia migration"]], verdict: "Choose PTE for fast, fully-computer scoring and quick turnaround; choose IELTS if you prefer a human examiner and the most universal recognition.", chooseA: ["You want the single most widely accepted test — universities, employers and every major visa and permanent-residence system take IELTS.", "You prefer a human examiner marking your speaking and writing.", "You're heading to the UK and need a UKVI-approved test.", "You value the broadest possible recognition over speed."], chooseB: ["You need your result fast — PTE often returns scores within 48 hours.", "You're applying for Australian study or migration, where PTE is very popular.", "You're comfortable with fully computer (AI) scoring and speaking into a microphone.", "You want flexible test dates and quick rebooking."], cost: "Both tests cost roughly US$200–260 and are valid for 2 years. PTE's main advantage is turnaround — often 48 hours versus IELTS's 3–13 days." },
+  { a: "TOEFL", b: "PTE", rows: [["Scoring", "0–120", "10–90"], ["Marking", "AI + human", "Fully AI"], ["Results", "4–8 days", "~48 hours"], ["Strength", "Strong US recognition", "Fast, growing acceptance"], ["Best for", "USA universities", "Australia, fast results"]], verdict: "Both are computer-based; TOEFL is the safer choice for the USA, PTE for the fastest results and Australian migration.", chooseA: ["Your universities are in the United States, where TOEFL has the deepest recognition.", "You want a test that has been the US academic standard for decades.", "You're comfortable with integrated tasks that combine reading, listening and speaking or writing."], chooseB: ["You need results in about 48 hours.", "You're applying to Australia for study or migration.", "You prefer fully AI scoring with no human examiner and quick rebooking."], cost: "Both are computer-based, cost roughly US$200–260 and are valid for 2 years. PTE is faster to results; TOEFL is more established in the United States." },
+  { a: "IELTS", b: "Duolingo", rows: [["Scoring", "Band 0–9", "10–160"], ["Cost", "Higher (~US$200+)", "Much cheaper (~US$65)"], ["Length", "~2h 45m, at a centre", "~1 hour, at home"], ["Results", "3–13 days", "~2 days"], ["Acceptance", "Universal", "Thousands of universities, growing"]], verdict: "Duolingo is far cheaper, shorter and taken at home — great if your university accepts it. IELTS has the widest acceptance including visas/PR.", chooseA: ["Your university, student visa or permanent-residence pathway requires it — IELTS is accepted virtually everywhere, while the Duolingo English Test is not yet accepted by every institution or immigration system.", "You're applying for a student visa or migration, where Duolingo often isn't accepted.", "You want a result recognised by essentially every university worldwide."], chooseB: ["Your chosen universities explicitly accept the Duolingo English Test — always confirm this first.", "You want a much cheaper test (around US$65) taken at home in about an hour.", "You want results in roughly 2 days without booking a test centre.", "You're early in your search and want a low-cost way to gauge your level."], cost: "The Duolingo English Test (around US$65, about 1 hour, taken at home) is far cheaper and faster than IELTS (around US$200+, about 2h 45m, at a test centre). But IELTS is accepted for visas and permanent residence and by virtually every university — confirm Duolingo is accepted before relying on it." },
+  { a: "GRE", b: "GMAT", rows: [["Used for", "Most Master's & PhD programmes", "MBA & business Master's"], ["Score", "260–340 (+ AWA 0–6)", "205–805 (Focus Edition)"], ["Maths", "Calculator allowed", "No calculator (Quant)"], ["Length", "~1h 58m", "~2h 15m"], ["Best for", "Broad grad-school options", "Top business schools"]], verdict: "Take the GRE for the widest range of graduate programmes; take the GMAT Focus if you're targeting competitive MBA programmes that prefer it.", chooseA: ["You're applying to a wide range of Master's or PhD programmes, not only business.", "You want one test accepted by most graduate schools, including many MBA programmes.", "You're stronger at vocabulary-based verbal reasoning and like having a calculator for the maths.", "You're keeping your options open across several fields."], chooseB: ["You're focused on competitive MBA or business Master's programmes, some of which still prefer the GMAT.", "You're strong at data and quantitative reasoning and comfortable working without a calculator.", "You want a score that business schools have benchmarked for years."], cost: "The GRE costs about US$220; the GMAT Focus Edition about US$275–300. Both scores are valid for 5 years. Most business schools now accept both — check each programme's stated preference before deciding." },
+  { a: "CELPIP", b: "IELTS", rows: [["Scoring", "CLB level 1–12", "Band 0–9"], ["Delivery", "Fully computer (incl. speaking)", "Paper/computer; speaking with a real examiner"], ["Accent", "North American English", "British/International English"], ["Results", "Usually 4–5 days", "3–13 days"], ["Best for", "Canadian PR, citizenship & some study", "Universal — study, work & migration worldwide"]], verdict: "For Canadian immigration both are accepted by IRCC — pick CELPIP if you prefer North American English and an all-computer test, or IELTS General for the widest global recognition.", chooseA: ["You're applying for Canadian permanent residence, citizenship or some Canadian study, and prefer North American English.", "You want a fully computer-based test, including the speaking section, with no live examiner.", "You're in Canada or a country where CELPIP test centres are available.", "You're more comfortable with Canadian and American accents and contexts."], chooseB: ["You want a result accepted worldwide — study, work and migration in many countries, not only Canada.", "You're comfortable with British and international English and a real speaking examiner.", "You might also apply outside Canada and want one test that covers everything.", "You need IELTS General Training for migration or Academic for university."], cost: "Both are accepted by Immigration, Refugees and Citizenship Canada (IRCC) for Canadian immigration. CELPIP is Canada-focused, fully computer-based and returns results in about 4–5 days; IELTS has global recognition with results in 3–13 days. For Canada-only plans CELPIP is convenient; for global flexibility choose IELTS." },
 ];
 function examVsExamPage(v) {
   const path = `/${v.a.toLowerCase()}-vs-${v.b.toLowerCase()}/`;
@@ -2085,21 +2089,30 @@ function examVsExamPage(v) {
   const faqs = [
     { q: `Is ${v.a} easier than ${v.b}?`, a: `Neither is universally easier — it depends on your strengths. ${v.verdict}` },
     { q: `Which is more accepted, ${v.a} or ${v.b}?`, a: v.verdict },
-    { q: `Can I practise both for free?`, a: `Yes — LandingPrep has free full-length mock tests, strategy lessons and an band checker for both ${v.a} and ${v.b}.` },
+    ...(v.cost ? [{ q: `How much do ${v.a} and ${v.b} cost, and how long are scores valid?`, a: v.cost }] : []),
+    { q: `Can I prepare for both ${v.a} and ${v.b} for free?`, a: `Yes — LandingPrep has free full-length mock tests, strategy lessons and a band/score checker for both ${v.a} and ${v.b}, so you can try each format before you pay for the real test.` },
   ];
   const slugA = v.a.toLowerCase(), slugB = v.b.toLowerCase();
+  const chooseCol = (name, slug, points) => `<div class="card" style="flex:1;min-width:260px"><h2>Choose ${name} if…</h2><ul class="bcheck">${(points || []).map((p) => `<li>${esc(p)}</li>`).join("")}</ul><a class="cta" href="/mock-test/${slug}/" style="margin-top:8px">▶ Free ${name} mock test</a></div>`;
+  const chooseBlock = (v.chooseA && v.chooseB) ? `<div style="display:flex;gap:16px;flex-wrap:wrap;margin:0 0 8px">${chooseCol(v.a, slugA, v.chooseA)}${chooseCol(v.b, slugB, v.chooseB)}</div>` : "";
+  const costBlock = v.cost ? `<div class="card"><h2>Cost, results &amp; validity</h2><p>${esc(v.cost)}</p><p class="note">Prices vary by country and change over time — always confirm the current fee and accepted test on the official test and university websites.</p></div>` : "";
   const inner = `
 <p class="crumb"><a href="/">Home</a> › ${v.a} vs ${v.b}</p>
 <section class="hero"><div class="badges"><span class="badge">${v.a}</span><span class="badge">vs</span><span class="badge">${v.b}</span></div>
 <h1>${v.a} vs ${v.b}: Which Should You Take?</h1>
 <p class="lead">${esc(v.verdict)}</p>
 <a class="cta" href="/mock-test/${slugA}/">▶ Try a free ${v.a} mock test</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> ${esc(v.verdict)} Both are accepted by many of the same universities, so the best test is the one that fits your destination, your strengths and your timeline — compare them below.</div>
 ${table}
+${chooseBlock}
+${costBlock}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free ${v.a} mock test`, href: `/mock-test/${slugA}/` },
   { label: `Free ${v.b} mock test`, href: `/mock-test/${slugB}/` },
+  { label: "Score requirements by country", href: "/eligibility/" },
   { label: "Score converter", href: "/tools/english-test-score-converter/" },
+  { label: "All test comparisons", href: "/english-test-comparisons/" },
   { label: "Prep lessons", href: "/prep-lessons/" },
 ])}`;
   emit(path, head({ title, desc, path, kw: `${slugA} vs ${slugB} which is better, ${slugA} or ${slugB} which is easier, ${slugA} vs ${slugB} which should i take, ${slugA} vs ${slugB} university acceptance, which test for study abroad ${slugA} ${slugB}`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${v.a} vs ${v.b}`, path }])] }) + shell(inner));
@@ -2207,22 +2220,29 @@ function scholarshipCountryPages() {
     if (!list.length) return;
     const slug = country.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
     const path = `/scholarships-in-${slug}/`;
+    const hasFunded = list.some((s) => /fully|full/i.test((s.type || "") + " " + (s.amount || "")));
     const faqs = [
-      { q: `Are there scholarships to study in ${country}?`, a: `Yes — there are ${list.length} notable scholarships for international students heading to ${country}, ranging from partial tuition waivers to fully-funded awards.` },
-      { q: `Are these scholarships free to apply for?`, a: `Browsing and our scholarship finder are 100% free. Each scholarship links to its official application — never pay a third party to "apply" for you.` },
+      { q: `Are there scholarships to study in ${country}?`, a: `Yes — this page lists ${list.length} notable scholarship${list.length === 1 ? "" : "s"} for international students heading to ${country}, ranging from partial tuition waivers${hasFunded ? " to fully-funded awards that cover tuition and living costs" : " to larger merit and need-based awards"}.` },
+      { q: `When should I apply for ${country} scholarships?`, a: `Most major scholarships close 6–12 months before the course starts, and many require you to have a university offer first. Start at least a year ahead: shortlist awards, prepare your statement of purpose and recommendation letters early, and note each deadline.` },
+      { q: `Are these scholarships free to apply for?`, a: `Yes — browsing this list and our scholarship finder is 100% free, and reputable scholarships never charge an application fee. Each award links to its official page — never pay a third party to "apply" for you.` },
     ];
+    const cityFor = country === "USA" ? "New York" : country === "Canada" ? "Toronto" : country === "Australia" ? "Sydney" : country === "UK" ? "London" : country === "Germany" ? "Berlin" : "Dublin";
     const inner = `
 <p class="crumb"><a href="/">Home</a> › Scholarships in ${esc(country)}</p>
-<section class="hero"><div class="badges"><span class="badge">${list.length} scholarships</span><span class="badge">${esc(country)}</span><span class="badge">2026</span></div>
+<section class="hero"><div class="badges"><span class="badge">${list.length} scholarship${list.length === 1 ? "" : "s"}</span><span class="badge">${esc(country)}</span><span class="badge">2026</span></div>
 <h1>Scholarships to Study in ${esc(country)}</h1>
-<p class="lead">Funding for international students in ${esc(country)} — from partial awards to fully-funded scholarships. Free to browse, with eligibility and deadlines.</p>
+<p class="lead">Funding for international students in ${esc(country)} — from partial awards${hasFunded ? " to fully-funded scholarships" : " to large merit and need-based grants"}. Free to browse, with eligibility and deadlines.</p>
 <a class="cta" href="/#/colleges">▶ Open the free scholarship finder</a></section>
-<div class="card"><h2>${list.length} scholarships for ${esc(country)}</h2>${list.map((s) => `<div class="vrow"><strong>${esc(s.name)}</strong> — ${esc(s.level || "")} · ${esc(s.type || "")} · ${esc(s.amount || "")}<br/><span class="vex">${esc(s.who || "")}${s.deadline ? " · Deadline: " + esc(s.deadline) : ""}</span></div>`).join("")}</div>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> There ${list.length === 1 ? "is" : "are"} ${list.length} well-known scholarship${list.length === 1 ? "" : "s"} below for studying in ${esc(country)} as an international student. ${hasFunded ? "Some are fully funded (tuition plus living costs); others cover part of your tuition." : "These range from partial tuition discounts to substantial merit and need-based awards."} Apply early — most close 6–12 months before the intake and often need a university offer first. Always confirm amounts and deadlines on each official page.</div>
+<div class="card"><h2>${list.length} scholarship${list.length === 1 ? "" : "s"} for ${esc(country)}</h2>${list.map((s) => `<div class="vrow"><strong>${s.id ? `<a href="/scholarship/${esc(s.id)}/">${esc(s.name)}</a>` : esc(s.name)}</strong> — ${esc(s.level || "")} · ${esc(s.type || "")} · ${esc(s.amount || "")}<br/><span class="vex">${esc(s.who || "")}${s.deadline ? " · Deadline: " + esc(s.deadline) : ""}</span>${s.highlight ? `<br/><span class="vex">${esc(s.highlight)}</span>` : ""}</div>`).join("")}</div>
+<div class="card"><h2>Types of funding you'll find in ${esc(country)}</h2><ul class="bcheck"><li><strong>Government scholarships</strong> — national schemes (often the most generous and competitive), usually fully or largely funded.</li><li><strong>University awards</strong> — merit-based tuition discounts or scholarships offered directly by the institution, sometimes automatic with your application.</li><li><strong>Need-based grants</strong> — aimed at students who demonstrate financial need.</li><li><strong>Course or department awards</strong> — tied to a specific subject, faculty or research area.</li><li><strong>External / private scholarships</strong> — from foundations, companies and trusts, often for specific nationalities or fields.</li></ul></div>
+<div class="card"><h2>How to find and win a scholarship in ${esc(country)}</h2><ol class="bsteps"><li><strong>Shortlist early.</strong> Begin at least 12 months before your intake — the best awards close first.</li><li><strong>Check eligibility precisely.</strong> Nationality, level of study, subject and minimum grades all matter; don't waste effort on awards you can't qualify for.</li><li><strong>Secure your admission or nomination</strong> where the scholarship requires it — many do.</li><li><strong>Write a specific, story-led statement of purpose</strong> that ties your goals to what the scholarship values — build and refine yours free with our <a href="/blog/how-to-write-sop/">SOP guide</a>.</li><li><strong>Line up strong recommendation letters early</strong> — referees usually need 2–3 weeks.</li><li><strong>Apply to several.</strong> Scholarships are competitive; a portfolio of applications improves your odds.</li><li><strong>Track every deadline</strong> and submit well before the closing date. Never pay a third party to apply on your behalf.</li></ol></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: "Free scholarship finder", href: "/#/colleges" },
-  { label: "College predictor", href: "/#/colleges" },
-  { label: `Student guide to ${country === "USA" ? "New York" : country === "Canada" ? "Toronto" : country === "Australia" ? "Sydney" : country === "UK" ? "London" : country === "Germany" ? "Berlin" : "Dublin"}`, href: "/student-city-guides/" },
+  { label: "Fully funded scholarships", href: "/fully-funded-scholarships/" },
+  { label: "Score requirements by country", href: "/eligibility/" },
+  { label: `Student guide to ${cityFor}`, href: "/student-city-guides/" },
   { label: "Move-abroad checklist", href: "/#/relocate" },
 ])}`;
     emit(path, head({ title: `Scholarships to Study in ${esc(country)} for International Students (2026) | ${BRAND}`, desc: `${list.length} scholarships to study in ${country} for international students — partial and fully-funded awards with eligibility and deadlines. Free scholarship finder.`, path, kw: `scholarships in ${country.toLowerCase()}, study in ${country.toLowerCase()} scholarships, ${country.toLowerCase()} scholarships for international students, fully funded scholarships ${country.toLowerCase()}, ${country.toLowerCase()} student funding`, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `Scholarships in ${country}`, path }])] }) + shell(inner));
@@ -2270,17 +2290,22 @@ function examForPRPage(x) {
     { q: `Which English tests are accepted for ${x.country} immigration?`, a: x.tests },
     { q: `How do I reach that score for free?`, a: `Take free ${x.exam} mock tests, learn the strategy in the prep lessons, and check your writing/speaking band with the free band checker.` },
   ];
+  const minLevel = x.levels[0];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › ${x.exam} for ${x.country} PR</p>
 <section class="hero"><div class="badges"><span class="badge">${esc(x.country)} PR</span><span class="badge">${x.exam}</span><span class="badge">2026</span></div>
 <h1>${x.exam} Score for ${x.country} PR / Immigration</h1>
 <p class="lead">For <strong>${esc(x.scheme)}</strong>, your ${x.exam} score directly affects eligibility and points. ${esc(x.note)}</p>
 <a class="cta" href="/mock-test/${x.k}/">▶ Take a free ${x.exam} mock test</a></section>
-<div class="card"><h2>${x.exam} levels for ${x.country} immigration</h2><table class="cmp-table"><thead><tr><th>Level</th><th>${x.exam} requirement</th><th>What it means</th></tr></thead><tbody>${rows}</tbody></table><p class="note">${esc(x.tests)}</p></div>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> For ${esc(x.country)} immigration via ${esc(x.scheme)}, the minimum is usually ${esc(minLevel[0])} — ${esc(minLevel[1])}. ${x.levels.length > 1 ? "Higher scores earn more points and improve your chances of an invitation." : ""} ${esc(x.note)} Always confirm the current requirement on the official government website before you book.</div>
+<div class="card"><h2>${x.exam} levels for ${x.country} immigration</h2><table class="cmp-table"><thead><tr><th>Level</th><th>${x.exam} requirement</th><th>What it means</th></tr></thead><tbody>${rows}</tbody></table></div>
+<div class="card"><h2>Which English tests are accepted for ${esc(x.country)} immigration?</h2><p>${esc(x.tests)}</p><p class="note">Make sure you book the exact test version the immigration authority accepts (for example, the General/Core version where required, not the Academic one) — taking the wrong version is a common, costly mistake.</p></div>
+<div class="card"><h2>How to reach your target ${x.exam} score</h2><ol class="bsteps"><li><strong>Find your starting point.</strong> Take a free full-length ${x.exam} mock test to see exactly which skills are below target.</li><li><strong>Prioritise your weakest skill.</strong> In points-based systems, one low skill can cap your whole score — lift the lowest band first.</li><li><strong>Learn the test strategy,</strong> not just the English — timing, question types and how each skill is marked, in the free prep lessons.</li><li><strong>Check your writing and speaking</strong> against the official criteria with the free band checker before you book.</li><li><strong>Book once you're consistently hitting the target</strong> in practice — re-sits cost money and time.</li></ol></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free ${x.exam} mock test`, href: `/mock-test/${x.k}/` },
   { label: `${x.exam} score for ${x.country} (study)`, href: `/${x.k}-for-${x.country.toLowerCase().replace(/\s+/g, "-")}/` },
+  { label: "Score requirements by country", href: "/eligibility/" },
   { label: "Free band checker", href: "/ielts-writing-checker/" },
   { label: "Move-abroad checklist", href: "/#/relocate" },
 ])}`;
@@ -3186,9 +3211,13 @@ PAGES.forEach(({ path, html }) => {
   for (let attempt = 1; ; attempt++) {
     try { writeFileSync(file, html); break; }
     catch (e) {
-      if (attempt >= 6 || !/EBUSY|EPERM|UNKNOWN|EACCES/.test(String(e.code || e.message))) throw e;
-      const until = Date.now() + 250 * attempt;
-      while (Date.now() < until) { /* brief blocking back-off before retry */ }
+      if (attempt >= 25 || !/EBUSY|EPERM|UNKNOWN|EACCES|user-mapped/i.test(String(e.code || e.message))) throw e;
+      // A watcher/indexer/OneDrive can hold a memory-mapped section on the existing file so
+      // overwriting fails repeatedly. Unlinking drops that mapping; the next write creates a
+      // fresh file. Ignore unlink errors (file may already be gone) and back off briefly.
+      try { unlinkSync(file); } catch (_) {}
+      const until = Date.now() + Math.min(400 * attempt, 2000);
+      while (Date.now() < until) { /* blocking back-off so a transient OneDrive/AV/indexer lock can't abort the build */ }
     }
   }
 });
