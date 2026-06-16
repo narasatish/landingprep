@@ -252,24 +252,69 @@ function countryCaptionFacts(name) {
 // headline. RSS gives only a title (and copying the article body would be copyright), so
 // we write our OWN explanatory body: what it means for Indian students + accurate evergreen
 // next-steps keyed to the topic, plus any vetted facts from our own country data.
+// Build a rich, multi-section explanation of the news TOPIC. RSS only gives the headline (and
+// reproducing the article body would be copyright), so we explain the topic with accurate,
+// evergreen, verifiable context + a concrete action plan — never inventing the specific news.
+const NEWS_TOPICS = {
+  psw: {
+    context: "Most top destinations let graduates work after their course — the US has OPT (12 months, plus a 24-month STEM extension), the UK its Graduate Route (2 years; 3 for PhDs), Canada the PGWP (up to 3 years) and Australia 2–4 years. This 'stay-back' period is your runway to earn, gain experience and aim for longer-term settlement, so it's one of the biggest factors when choosing a country.",
+    keep: "These rules are politically sensitive and can tighten or loosen with little notice. What counts is the rule in force when you GRADUATE and APPLY — not today's. Eligibility usually depends on your course level, its length, and the institution being on the approved list.",
+    steps: ["Confirm the current post-study-work rules on the OFFICIAL immigration site (USCIS, gov.uk, canada.ca, Home Affairs) — not third-party blogs.", "Pick a course + university that keep you eligible (right level, length, approved institution).", "Keep your visa status valid at all times — even a short lapse can cost you work rights.", "Have a backup country or pathway so one policy change can't end your plans.", "Re-check the rules in your final year — they often change between starting and finishing."],
+    verify: "your country's official immigration website (USCIS / gov.uk / canada.ca / homeaffairs.gov.au)." },
+  pr: {
+    context: "Permanent residence in most countries runs on a points system — age, education, skilled work experience and language scores. Canada's Express Entry and the points-based systems in Australia and the UK periodically revise the points, the in-demand categories or the cut-off thresholds, which changes who gets invited.",
+    keep: "Your points and eligibility are assessed at the moment you APPLY, not when you start studying. The fastest levers you actually control are your language score and gaining experience in an in-demand occupation.",
+    steps: ["Check the current points and cut-off on the official PR/immigration site.", "Boost your language score — usually the biggest, fastest points gain.", "Build skilled work experience in an in-demand occupation.", "Look at provincial / state nomination routes for bonus points.", "Keep your education, work and language documents current and ready."],
+    verify: "the official PR site (e.g. canada.ca for Express Entry)." },
+  visa: {
+    context: "A student visa is approved when you convincingly show three things: a genuine offer from an approved institution, enough money for tuition plus living costs, and genuine intent to study and comply with the visa terms. Countries adjust the financial thresholds, document lists and scrutiny levels fairly often.",
+    keep: "Most refusals come from weak or inconsistent finances and a vague study plan — not bad luck. When rules change, it's usually the money requirement and the document list that move first.",
+    steps: ["Read the OFFICIAL visa checklist for your country and follow it to the letter.", "Show genuine, sufficient, properly-sourced funds — kept stable for the required holding period.", "Write a clear, specific study plan: why this course, this university, this country.", "Apply as early as your offer allows so a deadline never catches you out.", "If your country interviews applicants, rehearse calm, honest answers."],
+    verify: "your destination's official embassy / immigration website." },
+  scholarship: {
+    context: "Scholarships for international students run on fixed annual cycles and fall into a few buckets: merit (grades/test scores), need-based, and specific ones (country, field, women-in-STEM, department awards). Most close several months before your intake, and many go under-claimed every year.",
+    keep: "The students who win aren't always the top rankers — they're the ones who apply early, to several scholarships, with a tailored essay. Department and university-specific awards are the most under-applied-for.",
+    steps: ["List every scholarship you're eligible for and note each deadline now.", "Apply 6–12 months before your intake — many close very early.", "Apply for merit AND need-based aid separately wherever you qualify.", "Tailor each motivation essay to that specific scholarship.", "Don't ignore smaller department / university awards — far less competition."],
+    verify: "the official university and government scholarship pages." },
+  cost: {
+    context: "The real cost of studying abroad is tuition + living + visa + insurance + flights — and tuition is often only half the bill. Costs vary hugely by country and city, and exchange-rate swings can reshape your budget overnight.",
+    keep: "Compare the TOTAL cost, not just tuition. Lower-tuition countries (Germany, Norway) can beat 'prestige' destinations on overall value once living costs and post-study earnings are factored in.",
+    steps: ["Build a full budget: tuition + living + visa + insurance + flights + a buffer.", "Compare countries on total cost AND post-study earning potential, not tuition alone.", "Check scholarships and assistantships early — they change the maths.", "Treat part-time work (usually ~20 hrs/week) as a top-up, not your tuition plan.", "Keep a currency buffer — exchange rates move."],
+    verify: "official university fee pages and government cost-of-living guidance." },
+  admission: {
+    context: "University admissions abroad weigh your academics, test scores (IELTS/TOEFL/PTE and GRE/GMAT where needed), your SOP and recommendation letters, and your fit for the course. Many universities admit on a rolling basis, so earlier applications get better odds and more scholarship money.",
+    keep: "A compelling SOP and the right shortlist often matter more than a perfect GPA. Apply to a balanced mix so you always have an option, whatever the decisions.",
+    steps: ["Meet the English-test and GPA minimums before deadlines.", "Build a balanced list: a few Safe, Target and Reach universities.", "Write a specific, story-led SOP for each university — not a copy-paste.", "Line up recommendation letters early — they take weeks.", "Apply early for rolling-admission programs and scholarships."],
+    verify: "each university's official admissions page." },
+  english: {
+    context: "English tests (IELTS, TOEFL, PTE, Duolingo) are accepted differently by each university and visa system, and they occasionally change format, scoring or what's accepted. Your required score depends on both the course and the country's visa rules.",
+    keep: "Always check the exact score each university AND the visa require — by section, not just overall — and aim 0.5–1 band above the minimum for scholarships and a safety margin.",
+    steps: ["Confirm which test your universities and the visa actually accept.", "Check the exact score required — by section, not just overall.", "Pick the test that suits you (PTE/Duolingo are faster and cheaper).", "Aim above the minimum to stay scholarship-eligible.", "Book the test only when your practice scores are consistently on target."],
+    verify: "the official test site and each university's English requirements." },
+  general: {
+    context: "The study-abroad landscape — visa rules, costs, intakes and scholarships — shifts constantly. The students who succeed treat it as a 12–18 month project with a clear plan rather than reacting to every headline.",
+    keep: "Verify anything that affects money or eligibility on an official source before you act. One clear plan beats chasing every update.",
+    steps: ["Map a 12–18 month timeline: tests → shortlist → applications → visa.", "Budget for tuition + living + visa + insurance, with a buffer.", "Track scholarships and their deadlines from the start.", "Keep your documents organised and backed up.", "Confirm any rule that affects you on an official source."],
+    verify: "official university and government websites." },
+};
+function newsTopic(t) {
+  t = String(t).toLowerCase();
+  if (/post[- ]?study|\bopt\b|graduate route|pgwp|stay[- ]?back|work (visa|permit|rights?)/.test(t)) return "psw";
+  if (/\bpr\b|permanent residen|express entry|\bpoints\b|citizenship|settle|nominee|migration/.test(t)) return "pr";
+  if (/visa|permit|immigration|embassy|approval|reject|deport|sponsor|biometr/.test(t)) return "visa";
+  if (/scholarship|fund|grant|bursary|financial aid|stipend|fee waiver/.test(t)) return "scholarship";
+  if (/ielts|toefl|\bpte\b|duolingo|english test|language test/.test(t)) return "english";
+  if (/admission|universit|colleg|campus|intake|enrol|course|program|rank|application/.test(t)) return "admission";
+  if (/tuition|\bfees?\b|\bcost|expensive|cheaper|budget|affordab/.test(t)) return "cost";
+  return "general";
+}
 function newsExplainer(title, country, kind) {
   const facts = countryCaptionFacts(country); // vetted, from our own data (may be "")
-  const t = String(title).toLowerCase();
-  let lead, steps;
-  if (/visa|permit|passport|immigration|residen|migrant|express entry|graduate route|pr\b|citizenship|sponsor|work right/.test(t)) {
-    lead = "What this means for you: visa and post-study-work rules are reviewed often, and your eligibility depends on the rules in force when you APPLY — not when you start your course.";
-    steps = ["Confirm the current rule on the official immigration/embassy site before paying any fee.", "Keep documents (funds, English score, offer letter) ready so a deadline never catches you out.", "Shortlist 2–3 countries as a backup so one policy change can't derail your plan."];
-  } else if (/scholarship|fund|grant|tuition|fee|cost|financial/.test(t)) {
-    lead = "What this means for you: funding for international students moves on fixed annual cycles, so timing is everything.";
-    steps = ["Apply 6–12 months before your intake — most scholarships close early.", "Apply for merit AND need-based aid separately wherever you're eligible.", "A strong SOP, LORs and test scores move the needle most on funding."];
-  } else if (/admission|universit|colleg|campus|intake|enrol|course|program|rank/.test(t)) {
-    lead = "What this means for you: admissions for many universities are rolling, so earlier applications get the best scholarship odds.";
-    steps = ["Meet the English-test minimum (IELTS/TOEFL/PTE/Duolingo) before deadlines.", "Balance your list: a few Safe, Target and Reach universities.", "Line up SOP + LORs early — they take longer than you expect."];
-  } else {
-    lead = "What this means for you: the study-abroad landscape keeps shifting, so a clear plan beats chasing every update.";
-    steps = ["Plan 12–18 months out: tests → shortlist → applications → visa.", "Budget for tuition + living + visa + insurance, and check scholarships early.", "Use free tools to compare countries, costs and colleges before you commit."];
-  }
-  return "\n\n" + lead + facts + "\n\n📋 Your next steps:\n" + steps.map((s) => "• " + s).join("\n");
+  const e = NEWS_TOPICS[newsTopic(title)] || NEWS_TOPICS.general;
+  return "\n\n📌 The background:\n" + e.context +
+    "\n\n🔑 Keep in mind:\n" + e.keep + facts +
+    "\n\n📋 Your action plan:\n" + e.steps.map((s) => "• " + s).join("\n") +
+    "\n\n🔎 Confirm on: " + e.verify;
 }
 function rssToContent(it, kind) {
   const T = kind === "immig" ? THEME.immig : THEME.edu;
@@ -1852,11 +1897,17 @@ function captionIntro(c) {
   return "💡 Where you study is the biggest decision of your application — cost, work rights, PR and visa odds matter as much as the university name. Here's the quick reality so you can compare properly.";
 }
 function buildCaption(c) {
-  const tags = (c.tags || []).map((t) => "#" + t).join(" ");
+  let tagList = (c.tags || []).map((t) => "#" + t);
   let body = c.caption || c.headline || "";
   const intro = captionIntro(c);
   if (intro) { const i = body.indexOf("\n\n"); body = i > 0 ? body.slice(0, i) + "\n\n" + intro + body.slice(i) : intro + "\n\n" + body; }
-  return body + (tags ? "\n\n" + tags : "");
+  // Instagram hard-limits captions at 2,200 chars — exceeding it makes the post FAIL. Stay safely
+  // under by trimming trailing hashtags first, then (last resort) the body. Protects reliability.
+  const LIMIT = 2150;
+  let out = body + (tagList.length ? "\n\n" + tagList.join(" ") : "");
+  while (out.length > LIMIT && tagList.length) { tagList.pop(); out = body + (tagList.length ? "\n\n" + tagList.join(" ") : ""); }
+  if (out.length > LIMIT) out = out.slice(0, LIMIT - 1).replace(/\s+\S*$/, "") + "…";
+  return out;
 }
 async function postToInstagram({ imageUrl, caption, igUserId, token }) {
   const v = "v21.0";
