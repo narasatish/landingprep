@@ -499,8 +499,16 @@ function pickTopUnis(seed) {
   const list = C.filter((c) => String(c.country).toLowerCase() === String(country).toLowerCase()).sort((a, b) => (a.rank || 999) - (b.rank || 999)).slice(0, 6);
   if (list.length < 3) return null;
   const slug = String(country).toLowerCase().replace(/\s+/g, "");
-  return { type: "exam", accent: "#7C3AED", category: "TOP UNIVERSITIES", flagCountry: ISO[String(country).toLowerCase()] ? country : null, headline: "Top universities in " + country, sub: "Ranked for international students", points: list.map((c) => c.name + (c.rank ? " — #" + c.rank + " world" : "")),
-    caption: `🎓 Top universities in ${country} for international students 👇\n\n${list.map((c, i) => (i + 1) + ". " + c.name + (c.rank ? " (#" + c.rank + " world)" : "")).join("\n")}\n\n📌 SAVE this shortlist. 💬 Which is your dream? 👇\n\n👉 Free college predictor → landingprep.com\nFollow ${HANDLE} for daily admits info 🎓`,
+  // image: full name + world rank + acceptance rate (real admit data, reference quality)
+  const pt = (c) => c.name + (c.rank ? " · #" + c.rank + " world" : "") + (c.acceptance ? " · " + c.acceptance + "% accept" : "");
+  // caption: a genuinely useful breakdown per university — stats + what each is strong in.
+  const capLine = (c, i) => {
+    const stats = [c.acceptance ? "✅ " + c.acceptance + "% acceptance" : "", c.ielts ? "📊 IELTS " + c.ielts : "", c.feeNote ? "💰 " + c.feeNote : ""].filter(Boolean).join(" · ");
+    const strong = (c.strengths || []).length ? "\n   ⭐ Strong in: " + c.strengths.slice(0, 3).join(", ") : "";
+    return (i + 1) + ". " + c.name + (c.rank ? " — #" + c.rank + " world" : "") + (stats ? "\n   " + stats : "") + strong;
+  };
+  return { type: "exam", accent: "#7C3AED", category: "TOP UNIVERSITIES", flagCountry: ISO[String(country).toLowerCase()] ? country : null, headline: "Top universities in " + country, sub: "World rank · acceptance rate", points: list.map(pt),
+    caption: `🎓 Top universities in ${country} for international students 👇\n\n${list.map(capLine).join("\n\n")}\n\n💡 A lower acceptance rate doesn't mean it's the right fit for YOU. Match each university's strengths, your budget and your career goal to the program — not just the ranking. Always confirm requirements on the official page.\n\n📌 SAVE this shortlist. 📲 SHARE with a future applicant. 💬 Which is your dream? 👇\n\n👉 Free college predictor → landingprep.com\nFollow ${HANDLE} for daily admits info 🎓`,
     tags: buildTags("studyin" + slug, "topuniversities", "studyabroad", "universityadmission", "internationalstudents", "landingprep") };
 }
 function _pickUniList(C, seed) { const out = []; for (let i = 0; out.length < 6 && i < C.length * 2; i++) { const c = C[(seed * 5 + i) % C.length]; if (c && !out.find((x) => x.name === c.name)) out.push(c); } return out; }
@@ -525,9 +533,12 @@ function pickLowIeltsUnis(seed) {
 // integer hash — decorrelates the within-pool index from the rotation stride so small pools
 // don't collapse to one item (the variant `r` stays a clean cycle; the sub-picker gets a hashed seed)
 function _mix(x) { x = (x | 0) >>> 0; x = Math.imul(x ^ (x >>> 16), 0x45d9f3b) >>> 0; x = Math.imul(x ^ (x >>> 16), 0x45d9f3b) >>> 0; return (x ^ (x >>> 16)) >>> 0; }
-// slot 1 now rotates 7 ways: country · college · did-you-know · top-unis · no-GRE · low-IELTS · engagement
+// slot 1 rotates 7 ways: country · college · did-you-know · top-unis · no-GRE · low-IELTS · engagement.
+// NOTE: the day-seed (dayNumber*7 + slot*131) shares a factor of 7, so `seed % 7` is CONSTANT —
+// it would lock the slot to one variant forever. We hash the rotation index so all 7 are reached.
+// (Counts coprime to 7 — like %8, %9 elsewhere — cycle cleanly with a plain `seed % N`.)
 function pickCountryOrCollege(seed) {
-  const r = seed % 7, s = _mix(seed);
+  const r = _mix(seed) % 7, s = _mix(seed * 3 + 1);
   const f = r === 0 ? pickCountryHighlight(s) : r === 1 ? pickCollegeSpotlight(s) : r === 2 ? pickCountryFact(s) : r === 3 ? pickTopUnis(s) : r === 4 ? pickNoGreUnis(s) : r === 5 ? pickLowIeltsUnis(s) : pickEngagement(s);
   return f || pickCountryHighlight(s) || pickCollegeSpotlight(s);
 }
