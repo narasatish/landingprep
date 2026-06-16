@@ -18,6 +18,25 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const ORIGIN = "https://landingprep.com";
 const BRAND = "LandingPrep";
 const TODAY = "2026-05-30";
+// Build date (ISO yyyy-mm-dd) — used for sitemap <lastmod>, feed, and Article dateModified
+// (honest freshness signal: every page is regenerated on each build). Defined early so all
+// page builders can reference it.
+const BUILD_DATE = (() => { try { return new Date().toISOString().slice(0, 10); } catch (e) { return TODAY; } })();
+// Resilient write: OneDrive / antivirus / the search indexer can hold a (sometimes
+// memory-mapped) handle on a file mid-build, making writeFileSync throw EBUSY/EPERM/
+// UNKNOWN and abort the whole generation. Retry with a short back-off; if the existing
+// file is locked, unlink it first (drops the mapping) so the next write creates fresh.
+function writeFileSafe(file, data) {
+  for (let attempt = 1; ; attempt++) {
+    try { writeFileSync(file, data); return; }
+    catch (e) {
+      if (attempt >= 25 || !/EBUSY|EPERM|UNKNOWN|EACCES|user-mapped/i.test(String(e.code || e.message))) throw e;
+      try { unlinkSync(file); } catch (_) {}
+      const until = Date.now() + Math.min(400 * attempt, 2000);
+      while (Date.now() < until) { /* blocking back-off before retry */ }
+    }
+  }
+}
 
 // Topic-cluster hubs — every prerendered page is linked from one of these, and these
 // are linked from every page's footer (shell). Kills crawl-orphans + builds topical
@@ -903,9 +922,10 @@ function blogPage(a) {
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/#/blog">Blog</a> › ${esc(a.tag)}</p>
 <section class="hero">
-  <div class="badges"><span class="badge">${esc(a.tag)}</span><span class="badge">Updated ${esc(a.date || "2026")}</span></div>
+  <div class="badges"><span class="badge">${esc(a.tag)}</span><span class="badge">Updated ${esc(BUILD_DATE)}</span></div>
   <h1>${esc(a.title)}</h1>
   <p class="lead">${esc(a.excerpt)}</p>
+  <p class="byline" style="font-size:13px;color:#64748b;margin:2px 0 10px">Written and reviewed by the <a href="/about/" style="color:#4338ca;font-weight:600">${BRAND} editorial team</a> · Last updated ${esc(BUILD_DATE)} · Sources are linked inline and verified against official test-maker, university and government pages.</p>
   <a class="cta" href="/#/colleges">▶ Free College Predictor &amp; study-abroad tools</a>
 </section>
 ${qaBlock}
@@ -915,7 +935,9 @@ ${relatedArticles(a)}
 ${relatedGrid(blogTiles(a))}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.excerpt,
-      author: { "@type": "Organization", name: BRAND }, publisher: { "@type": "Organization", name: BRAND }, datePublished: "2026-01-01", inLanguage: "en" }),
+      author: { "@type": "Organization", name: BRAND + " editorial team", url: ORIGIN + "/about/" },
+      publisher: { "@type": "Organization", name: BRAND, logo: { "@type": "ImageObject", url: ORIGIN + "/og-image.png" } },
+      datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Blog", path: "/#/blog" }, { name: a.title, path }]),
     jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
     ...(isHowTo ? [howToJsonLd(a)] : []),
@@ -1101,6 +1123,7 @@ ${faqBlock(faqs2)}
 ${relatedGrid([
   { label: `🎓 Predict my admission (${c.country})`, href: `/#/colleges/predictor/${encodeURIComponent(c.country)}` },
   { label: `🏛️ Top universities in ${c.country}`, href: `/study-abroad/top-universities-in-${(c.country || "").toLowerCase().replace(/\s+/g, "-")}/` },
+  ...(UNI_VS_LINK[c.id] ? [UNI_VS_LINK[c.id]] : []),
   { label: `📊 IELTS score for ${c.name}`, href: `/ielts-for-${c.id}/` },
   { label: `🎯 Free IELTS mock test`, href: `/mock-test/ielts/` },
   { label: `💸 Scholarships for ${c.country}`, href: `/#/colleges/scholarships/${encodeURIComponent(c.country)}` },
@@ -1109,6 +1132,10 @@ ${relatedGrid([
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "CollegeOrUniversity", name: c.name, url: "https://" + c.website,
       address: { "@type": "PostalAddress", addressLocality: c.city, addressCountry: c.country }, foundingDate: String(c.founded) }),
+    jsonld({ "@context": "https://schema.org", "@type": "ItemList", name: `Popular programs at ${c.name}`,
+      itemListElement: (c.programs || []).slice(0, 8).map((p, i) => ({ "@type": "ListItem", position: i + 1,
+        item: { "@type": "Course", name: p, description: `${p} for international students at ${c.name}, ${c.city}, ${c.country}.`, url: ORIGIN + path,
+          provider: { "@type": "CollegeOrUniversity", name: c.name, sameAs: "https://" + c.website } } })) }),
     faqJsonLd(faqs2),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Colleges", path: "/#/colleges" }, { name: c.name, path }]),
   ] }) + shell(inner));
@@ -1581,6 +1608,21 @@ embedPage();
 PR_COMBOS.forEach(prExamPage);
 Object.keys(EXAMS).forEach((id) => { mockPage(id); practicePage(id); });
 COUNTRY_DATA.forEach((co) => { costPage(co); SEO_FIELDS.forEach((f) => studyFieldPage(f, co)); });
+// Map each top-ranked university to one "vs" comparison page, so the (already-existing)
+// /compare/ pages get bidirectional internal links from the university pages too.
+const UNI_VS_LINK = (() => {
+  const map = {}, byC = {};
+  COLLEGES.forEach((c) => { (byC[c.country] = byC[c.country] || []).push(c); });
+  Object.values(byC).forEach((list) => {
+    const top = list.slice().sort((a, b) => a.rank - b.rank).slice(0, 6);
+    for (let i = 0; i < top.length - 1; i++) {
+      const a = top[i], b = top[i + 1], link = { label: `🆚 ${a.name} vs ${b.name}`, href: `/compare/${a.id}-vs-${b.id}/` };
+      if (!map[a.id]) map[a.id] = link;
+      if (!map[b.id]) map[b.id] = link;
+    }
+  });
+  return map;
+})();
 COLLEGES.forEach(universityPage);
 // University-vs-University pages: adjacent-ranked rivals within each country
 // (top 6 per country) — high-intent "X vs Y" searches, kept to a sane count.
@@ -2541,15 +2583,18 @@ function labelOf(html) {
   return t.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/\s*\|\s*LandingPrep.*$/i, "")
           .replace(/\s*\(2026\)\s*/g, " ").replace(/\s+/g, " ").trim().slice(0, 95);
 }
-function hubPage(path, title, desc, kw, sections) {
+function hubPage(path, title, desc, kw, sections, opts = {}) {
   if (PAGES.some((p) => p.path === path)) return [];
   const total = sections.reduce((n, s) => n + s.links.length, 0);
   if (!total) return [];
+  const faqs = Array.isArray(opts.faqs) ? opts.faqs : [];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › ${esc(title)}</p>
 <section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">${total} pages</span></div>
 <h1>${esc(title)}</h1><p class="lead">${esc(desc)}</p></section>
+${opts.intro || ""}
 ${sections.filter((s) => s.links.length).map((s) => `<div class="card"><h2>${esc(s.h)}</h2><div class="grid">${s.links.map((l) => `<a class="tile" href="${l.href}">${esc(l.label)}</a>`).join("")}</div></div>`).join("")}
+${faqs.length ? faqBlock(faqs) : ""}
 <div class="card"><h2>More free LandingPrep hubs</h2><div class="grid">${HUB_LINKS.filter((h) => h.href !== path).map((h) => `<a class="tile" href="${h.href}">${esc(h.label)}</a>`).join("")}</div></div>`;
   // ItemList structured data → eligible for list/carousel treatment in search results.
   const allLinks = sections.flatMap((s) => s.links);
@@ -2557,7 +2602,7 @@ ${sections.filter((s) => s.links.length).map((s) => `<div class="card"><h2>${esc
     "@context": "https://schema.org", "@type": "ItemList", name: title, numberOfItems: allLinks.length,
     itemListElement: allLinks.slice(0, 100).map((l, i) => ({ "@type": "ListItem", position: i + 1, url: ORIGIN + l.href, name: l.label })),
   });
-  emit(path, head({ title: `${title} (2026) | ${BRAND}`, desc, path, kw, jsonLdBlocks: [itemList, breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: title, path }])] }) + shell(inner));
+  emit(path, head({ title: `${title} (2026) | ${BRAND}`, desc, path, kw, jsonLdBlocks: [itemList, breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: title, path }]), ...(faqs.length ? [faqJsonLd(faqs)] : [])] }) + shell(inner));
   return sections.flatMap((s) => s.links.map((l) => l.href));
 }
 // ── Pillar / hub content pages (prose + FAQ schema + internal links) ──────────
@@ -3163,12 +3208,28 @@ function buildHubs() {
     ["/study-abroad-courses/", "Study Abroad by Course & Country", "Where to study an MS, MBA or specialised master's by country — costs, top universities, entry requirements and ROI, free.", "ms in usa, mba abroad, ms computer science abroad, study abroad by country", () => [{ h: "Courses by country", links: grab((p) => /^\/study-abroad\//.test(p)) }]],
     ["/scholarships/", "Scholarships to Study Abroad (Fully & Partially Funded)", "Scholarships for international students — eligibility, award and deadlines — grouped by country and by award. Free scholarship finder.", "scholarships to study abroad, fully funded scholarships, international student scholarships", () => [{ h: "Scholarships", links: grab((p) => /^\/scholarship/.test(p)) }]],
     ["/ielts-band-guides/", "IELTS Band Score Guides — Band 6 to Band 8", "How to reach each IELTS band overall and by section (Listening, Reading, Writing, Speaking) — free tips, strategy and practice.", "ielts band 7, how to get ielts band 8, ielts band requirements, ielts band by section", () => [{ h: "IELTS band guides", links: grab((p) => /^\/ielts-band-/.test(p)) }]],
-    ["/english-test-comparisons/", "English Test Comparisons — IELTS vs TOEFL vs PTE vs Duolingo", "Honest, free comparisons of the major English tests so you take the right one for your country and goal.", "ielts vs toefl, ielts vs pte, which english test, duolingo vs ielts", () => [{ h: "Comparisons & chooser", links: grab((p) => (/-vs-[a-z]+\/$/.test(p) && !/^\/compare\//.test(p)) || /^\/which-english-test\/$/.test(p)) }]],
+    ["/english-test-comparisons/", "English Test Comparisons — IELTS vs TOEFL vs PTE vs Duolingo", "Honest, free comparisons of the major English tests so you take the right one for your country and goal.", "ielts vs toefl, ielts vs pte, which english test, duolingo vs ielts", () => [{ h: "Comparisons & chooser", links: grab((p) => (/-vs-[a-z]+\/$/.test(p) && !/^\/compare\//.test(p)) || /^\/which-english-test\/$/.test(p)) }], {
+      intro: `<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> There is no single "best" English test — the right one is whichever your university and visa accept, that plays to your strengths and timeline. IELTS and TOEFL are the most widely accepted; PTE and the Duolingo English Test are faster and often cheaper; CELPIP is built for Canada. Compare them below, then practise free until you hit your target.</div>
+<div class="card"><h2>The major English tests at a glance</h2><table class="cmp-table"><thead><tr><th>Test</th><th>Score scale</th><th>Marking</th><th>Results</th><th>Best for</th></tr></thead><tbody>
+<tr><td><strong>IELTS</strong></td><td>Band 0–9</td><td>Human examiner (live speaking)</td><td>3–13 days</td><td>The widest acceptance — study, work &amp; migration worldwide; UK/Australia/Canada</td></tr>
+<tr><td><strong>TOEFL iBT</strong></td><td>0–120</td><td>AI + human, all-computer</td><td>~4–8 days</td><td>United States universities</td></tr>
+<tr><td><strong>PTE Academic</strong></td><td>10–90</td><td>Fully computer (AI)</td><td>Often ~48 hours</td><td>Fast results; Australia study &amp; migration</td></tr>
+<tr><td><strong>CELPIP</strong></td><td>CLB 1–12</td><td>Fully computer (North American English)</td><td>~4–5 days</td><td>Canadian permanent residence, citizenship &amp; some study</td></tr>
+<tr><td><strong>Duolingo English Test</strong></td><td>10–160</td><td>AI, taken at home</td><td>~2 days</td><td>Cheapest &amp; fastest — where accepted (always confirm)</td></tr>
+</tbody></table><p class="note">Figures are indicative for 2026 and change — always confirm the current format, fee and the test your university or visa accepts on the official websites. Use the score converter to see your equivalent score across every test.</p></div>
+<div class="card"><h2>How to choose in 3 steps</h2><ol class="bsteps"><li><strong>Check what's accepted.</strong> Start from your shortlisted universities and visa route — pick a test all of them accept.</li><li><strong>Play to your strengths and timeline.</strong> Prefer a human examiner? IELTS. Need results in days? PTE or Duolingo. Heading to the USA? TOEFL. Canada-only? CELPIP.</li><li><strong>Practise free until you hit the target,</strong> then book once — re-sits cost money and time. Take a free full-length mock for each test you're weighing.</li></ol></div>`,
+      faqs: [
+        { q: "Which English test is the easiest?", a: "None is universally easier — it depends on your strengths. If you prefer speaking to a real person, IELTS may feel easier; if you're comfortable with computers and a microphone, PTE or TOEFL may suit you. The Duolingo English Test is the shortest and cheapest, but is not accepted everywhere." },
+        { q: "Which English test is the cheapest?", a: "The Duolingo English Test is usually the cheapest (around US$65) and is taken at home in about an hour. IELTS, TOEFL and PTE typically cost roughly US$190–260. Always confirm the current fee for your country, and check the cheaper test is accepted before booking." },
+        { q: "Which English test is most widely accepted?", a: "IELTS and TOEFL have the broadest acceptance across universities, employers and immigration systems. PTE acceptance is growing fast (especially for Australia). CELPIP is mainly for Canadian immigration. Duolingo is accepted by many universities but fewer visa systems — always check your specific institution and visa." },
+        { q: "Can I prepare for these tests for free?", a: "Yes — LandingPrep has free full-length mock tests, strategy lessons and a band/score checker for IELTS, TOEFL, PTE, CELPIP and the Duolingo English Test, so you can try each format before paying for the real exam." },
+      ],
+    }],
     ["/exam-requirements-by-country/", "English Test Requirements by Country & Profession", "The English test and score you need for study, PR and professional registration in each country — IELTS, PTE, CELPIP and more.", "ielts for canada pr, ielts for nurses uk, english test for immigration, celpip for canada", () => [{ h: "By country, PR & profession", links: grab((p) => /-for-[a-z0-9-]+\/$/.test(p) || /^\/celpip-/.test(p)) }]],
     ["/blog/", "Study Abroad & Exam-Prep Blog", "Free guides on IELTS/TOEFL/PTE prep, study-abroad visas, scholarships and immigration news for 2026.", "study abroad blog, ielts tips, student visa news, scholarship guides", () => [{ h: "Latest articles", links: grab((p) => /^\/blog\//.test(p)) }]],
   ];
-  for (const [path, title, desc, kw, mk] of hubs) {
-    hubPage(path, title, desc, kw, mk()).forEach((h) => claimed.add(h));
+  for (const [path, title, desc, kw, mk, opts] of hubs) {
+    hubPage(path, title, desc, kw, mk(), opts || {}).forEach((h) => claimed.add(h));
   }
   // Master HTML sitemap — hubs + every page no hub claimed (guarantees zero orphans).
   const leftovers = sortL(PAGES.filter((p) => !claimed.has(p.path) && !HUB_LINKS.some((h) => h.href === p.path)).map((p) => ({ href: p.path, label: labelOf(p.html) })));
@@ -3184,7 +3245,7 @@ buildHubs();
 // every build. So we only advance a page's lastmod when its rendered HTML actually
 // changed: diff the new HTML against the on-disk copy BEFORE overwriting, and reuse
 // the previous lastmod (read back from the existing sitemap) for unchanged pages.
-const BUILD_DATE = (() => { try { return new Date().toISOString().slice(0, 10); } catch (e) { return TODAY; } })();
+// BUILD_DATE is defined near the top of the file (reused here for sitemap <lastmod>).
 const PRIOR_LASTMOD = (() => {
   const map = new Map();
   try {
@@ -3205,21 +3266,7 @@ PAGES.forEach(({ path, html }) => {
   const loc = ORIGIN + path;
   lastmodFor.set(loc, changed ? BUILD_DATE : (PRIOR_LASTMOD.get(loc) || BUILD_DATE));
   mkdirSync(dir, { recursive: true });
-  // OneDrive intermittently holds a file handle while syncing, causing writeFileSync to
-  // throw EBUSY/EPERM/UNKNOWN and crash the whole build mid-loop. Retry a few times with a
-  // short blocking back-off so a transient lock can't abort the generation.
-  for (let attempt = 1; ; attempt++) {
-    try { writeFileSync(file, html); break; }
-    catch (e) {
-      if (attempt >= 25 || !/EBUSY|EPERM|UNKNOWN|EACCES|user-mapped/i.test(String(e.code || e.message))) throw e;
-      // A watcher/indexer/OneDrive can hold a memory-mapped section on the existing file so
-      // overwriting fails repeatedly. Unlinking drops that mapping; the next write creates a
-      // fresh file. Ignore unlink errors (file may already be gone) and back off briefly.
-      try { unlinkSync(file); } catch (_) {}
-      const until = Date.now() + Math.min(400 * attempt, 2000);
-      while (Date.now() < until) { /* blocking back-off so a transient OneDrive/AV/indexer lock can't abort the build */ }
-    }
-  }
+  writeFileSafe(file, html);
 });
 
 // Sitemap
@@ -3245,10 +3292,10 @@ ${urls.map((u) => `  <url>
   </url>`).join("\n")}
 </urlset>
 `;
-writeFileSync(join(ROOT, "sitemap.xml"), sitemap);
+writeFileSafe(join(ROOT, "sitemap.xml"), sitemap);
 
 // robots.txt — allow all search + AI crawlers (visibility in Google AND feedback)
-writeFileSync(join(ROOT, "robots.txt"), `# LandingPrep — 100% Free Exam Prep Platform
+writeFileSafe(join(ROOT, "robots.txt"), `# LandingPrep — 100% Free Exam Prep Platform
 # Fully open to search engines and AI answer engines.
 # All content is freely accessible — no paywalls, no signup required.
 
@@ -3450,16 +3497,16 @@ All include real exam question types, answer explanations, and sample solutions.
 ## Tagline
 "From mock test to campus abroad — 100% free, forever."
 `;
-writeFileSync(join(ROOT, "llms.txt"), llms);
+writeFileSafe(join(ROOT, "llms.txt"), llms);
 
 const groups = {};
 for (const p of PAGES) { const k = p.path.split("/").filter(Boolean)[0] || "root"; (groups[k] = groups[k] || []).push(ORIGIN + p.path); }
 const llmsFull = `# LandingPrep — full page index (for AI answer engines)\n\n> Complete list of LandingPrep's free, prerendered content pages. All are 100% free, no signup.\n\n- Homepage: ${ORIGIN}/\n\n` +
   Object.keys(groups).sort().map((k) => `## /${k}/\n` + groups[k].sort().map((u) => `- ${u}`).join("\n")).join("\n\n") + "\n";
-writeFileSync(join(ROOT, "llms-full.txt"), llmsFull);
+writeFileSafe(join(ROOT, "llms-full.txt"), llmsFull);
 
 // ── humans.txt ──────────────────────────────────────────────────────────────
-writeFileSync(join(ROOT, "humans.txt"), `/* TEAM */
+writeFileSafe(join(ROOT, "humans.txt"), `/* TEAM */
 Site: LandingPrep — free exam prep + study-abroad toolkit
 Contact: support@landingprep.com
 Location: Worldwide
@@ -3478,8 +3525,8 @@ Preferred-Languages: en
 Canonical: ${ORIGIN}/.well-known/security.txt
 `;
 mkdirSync(join(ROOT, ".well-known"), { recursive: true });
-writeFileSync(join(ROOT, ".well-known", "security.txt"), securityTxt);
-writeFileSync(join(ROOT, "security.txt"), securityTxt);
+writeFileSafe(join(ROOT, ".well-known", "security.txt"), securityTxt);
+writeFileSafe(join(ROOT, "security.txt"), securityTxt);
 
 // ── RSS feed (blog) — helps crawl + freshness ───────────────────────────────
 const rssItems = BLOG_EXTRA.map((a) => {
@@ -3494,7 +3541,7 @@ const rssItems = BLOG_EXTRA.map((a) => {
       <description>${esc(a.excerpt || "")}</description>
     </item>`;
 }).join("\n");
-writeFileSync(join(ROOT, "feed.xml"), `<?xml version="1.0" encoding="UTF-8"?>
+writeFileSafe(join(ROOT, "feed.xml"), `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
   <title>LandingPrep — Study Abroad &amp; Exam Prep Blog</title>
   <link>${ORIGIN}/#/blog</link>
