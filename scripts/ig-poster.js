@@ -278,7 +278,7 @@ const NEWS_TOPICS = {
     verify: "the official university and government scholarship pages." },
   cost: {
     context: "The real cost of studying abroad is tuition + living + visa + insurance + flights — and tuition is often only half the bill. Costs vary hugely by country and city, and exchange-rate swings can reshape your budget overnight.",
-    keep: "Compare the TOTAL cost, not just tuition. Lower-tuition countries (Germany, Norway) can beat 'prestige' destinations on overall value once living costs and post-study earnings are factored in.",
+    keep: "Compare the TOTAL cost, not just tuition. Lower-tuition countries (Germany, Iceland) can beat 'prestige' destinations on overall value once living costs and post-study earnings are factored in.",
     steps: ["Build a full budget: tuition + living + visa + insurance + flights + a buffer.", "Compare countries on total cost AND post-study earning potential, not tuition alone.", "Check scholarships and assistantships early — they change the maths.", "Treat part-time work (usually ~20 hrs/week) as a top-up, not your tuition plan.", "Keep a currency buffer — exchange rates move."],
     verify: "official university fee pages and government cost-of-living guidance." },
   admission: {
@@ -627,6 +627,8 @@ const MISTAKE_SETS = [
   { t: "5 SOP mistakes", sub: "Don't sink your application", items: ["Opening with a famous quote or clichés", "Writing your entire life story", "Being vague about why THIS university", "No clear career goal after graduation", "Sending the same SOP everywhere"] },
   { t: "5 scholarship mistakes", sub: "Why students miss out on funding", items: ["Applying to only 1–2 scholarships", "Missing deadlines (often months early)", "A generic, untailored essay", "Ignoring smaller / department scholarships", "Not checking eligibility before applying"] },
   { t: "5 IELTS prep mistakes", sub: "Stop losing easy bands", items: ["Practising without timing yourself", "Memorising answers instead of skills", "Skipping Writing Task 1 & Speaking Part 2", "Never reviewing your mistakes", "Booking the test before you're ready"] },
+  { t: "5 GRE prep mistakes", sub: "Why your score plateaus", items: ["Doing practice questions without learning the strategy", "Ignoring your error log — doing the same mistakes again", "Practicing the easy section instead of your weakness", "Not taking timed full-length tests", "Running out of official practice tests before exam day"] },
+  { t: "5 accommodation mistakes", sub: "Don't get scammed abroad", items: ["Paying deposits without a signed lease or receipt", "Not visiting the area or checking neighbourhood safety", "Trusting Airbnb for a year-long rental", "Ignoring reviews or ignoring glaring red flags", "Signing 12-month leases before visiting the city"] },
 ];
 function pickMistakes(seed) {
   const m = MISTAKE_SETS[seed % MISTAKE_SETS.length];
@@ -641,6 +643,8 @@ const CHECKLISTS = [
   { t: "Scholarship application checklist", sub: "Before you hit submit", items: ["Updated CV / resume", "A tailored motivation essay", "2–3 strong recommendation letters", "Academic transcripts + certificates", "Proof of English proficiency", "Met every eligibility criterion"] },
   { t: "University shortlist checklist", sub: "Pick the right 6–8 universities", items: ["A mix of reach / match / safe schools", "Course matches your career goal", "Tuition + living within budget", "You meet the GPA + test cut-offs", "Scholarships / funding available", "Post-study work & PR options"] },
   { t: "IELTS test-day checklist", sub: "Walk in ready", items: ["Valid passport / ID (same as booking)", "Confirmation email / test details", "Know your centre + travel time", "Water in a clear, label-free bottle", "Arrive 30+ minutes early", "Good sleep — no last-minute cramming"] },
+  { t: "First month abroad checklist", sub: "Land safely and set up", items: ["Airport transport arranged (taxi, shuttle or pickup)", "Accommodation keys collected / access confirmed", "Local phone SIM card + mobile plan activated", "Bank account opened at a local bank", "Health insurance documents and contact info saved", "Campus map and class schedule downloaded"] },
+  { t: "International banking checklist", sub: "Before you transfer money", items: ["Local bank account opened (bring passport + offer letter)", "Proof of address (dorm letter or rental agreement)", "Home bank's details for incoming transfers (SWIFT/IBAN)", "Understand currency conversion rates and fees", "Forex card or debit card with no foreign transaction fees", "Emergency fund in cash + backup payment method"] },
 ];
 function pickChecklist(seed) {
   const c = CHECKLISTS[seed % CHECKLISTS.length];
@@ -687,7 +691,7 @@ const BAND_GUIDES = [
   { exam: "PTE", title: "What PTE score do you need?", items: ["Top universities: 70–79+", "Most Master's programs: 58–64", "Foundation courses: 50–58", "Australia student visa: 50 each section", "Australia PR (max points): 79+", "PTE is scored 10–90"] },
   { exam: "TOEFL", title: "What TOEFL score do you need?", items: ["Top US universities: 100–110+", "Most US programs: 80–90", "Foundation / conditional: 60–79", "Scored out of 120 (4 sections × 30)", "Many UK & Canada unis accept TOEFL too", "Aim higher for assistantships & scholarships"] },
   { exam: "GRE", title: "What GRE score do you need?", items: ["Top programs: 320–330+", "Most Master's: 300–315", "Quant matters most for STEM & MBA", "Verbal matters for humanities", "Scored 260–340 (Verbal + Quant)", "AWA: aim 4.0+"] },
-  { exam: "GMAT", title: "What GMAT score do you need?", items: ["Top MBA programs: 700–730+", "Most MBA programs: 650–700", "GMAT Focus is scored 205–805", "Quant + Verbal + Data Insights", "A strong score offsets a weaker GPA", "Beat your target school's average"] },
+  { exam: "GMAT", title: "What GMAT score do you need?", items: ["Top MBA programs: 645–705 (Focus)", "Most MBA programs: 585–645", "GMAT Focus is scored 205–805", "Quant + Verbal + Data Insights", "A strong score offsets a weaker GPA", "Beat your target school's average"] },
   { exam: "Duolingo", title: "What Duolingo (DET) score do you need?", items: ["Top universities: 120–130+", "Most programs: 105–120", "Foundation / pathway: 90–105", "Scored 10–160", "Accepted by 5,000+ universities", "Cheapest & fastest English test"] },
 ];
 function pickBandTargets(seed) { const b = BAND_GUIDES[seed % BAND_GUIDES.length];
@@ -722,6 +726,15 @@ const QUANT_MCQS = [
   { exam: "GMAT", topic: "Geometry", q: "A rectangle measures 8 by 5. What is its area?", opts: ["13", "26", "40", "45"], ans: 2, sol: "Area = length × width = 8 × 5 = 40." },
   { exam: "GRE", topic: "Number properties", q: "What is the remainder when 47 is divided by 5?", opts: ["1", "2", "3", "4"], ans: 1, sol: "5 × 9 = 45, and 47 − 45 = 2." },
   { exam: "GMAT", topic: "Averages", q: "The average of 4 numbers is 25. If three are 20, 24 and 30, what is the fourth?", opts: ["24", "26", "28", "30"], ans: 1, sol: "Sum = 25 × 4 = 100. Fourth = 100 − (20+24+30) = 26." },
+  { exam: "GRE", topic: "Algebra", q: "If 2(x − 3) = 10, what is x?", opts: ["4", "8", "5", "6"], ans: 1, sol: "2(x − 3) = 10 → x − 3 = 5 → x = 8." },
+  { exam: "GMAT", topic: "Geometry", q: "A circle has radius 7. What is its approximate area?", opts: ["43.96", "154", "49", "98"], ans: 1, sol: "Area = πr² ≈ 3.14 × 49 ≈ 154." },
+  { exam: "GRE", topic: "Percentages", q: "If a book costs $80 and is on sale for 15% off, what is the sale price?", opts: ["$65", "$68", "$72", "$75"], ans: 1, sol: "15% of 80 = 12. Sale price = 80 − 12 = $68." },
+  { exam: "GMAT", topic: "Ratios", q: "The ratio of red balls to blue balls is 4:5. If there are 36 balls total, how many are blue?", opts: ["16", "20", "24", "32"], ans: 1, sol: "Total parts = 4 + 5 = 9. Blue = (5/9) × 36 = 20." },
+  { exam: "GRE", topic: "Speed/Distance/Time", q: "A cyclist rides 45 km in 3 hours. What is the speed?", opts: ["12 km/h", "15 km/h", "20 km/h", "25 km/h"], ans: 1, sol: "Speed = distance ÷ time = 45 ÷ 3 = 15 km/h." },
+  { exam: "GMAT", topic: "Fractions", q: "What is 2/3 of 90?", opts: ["45", "60", "75", "80"], ans: 1, sol: "2/3 × 90 = (2 × 90) ÷ 3 = 180 ÷ 3 = 60." },
+  { exam: "GRE", topic: "Probability", q: "A deck has 52 cards. What is the probability of drawing a single specific card?", opts: ["1/13", "1/26", "1/52", "1/4"], ans: 2, sol: "There is 1 specific card out of 52 total → probability = 1/52." },
+  { exam: "GRE", topic: "Algebra", q: "Solve for y: 3y + 5 = 20", opts: ["5", "10", "7", "15"], ans: 0, sol: "3y + 5 = 20 → 3y = 15 → y = 5." },
+  { exam: "GMAT", topic: "Number properties", q: "Which of the following is a multiple of both 6 and 8?", opts: ["30", "32", "36", "48"], ans: 3, sol: "A number divisible by both 6 and 8 must be a multiple of their LCM, 24. Of the options, only 48 (6×8) qualifies." },
 ];
 const VERBAL_MCQS = [
   { exam: "GRE", topic: "Vocabulary", q: "PRAGMATIC most nearly means:", opts: ["Idealistic", "Practical", "Careless", "Hostile"], ans: 1, sol: "Pragmatic means dealing with things in a practical, realistic way." },
@@ -731,6 +744,12 @@ const VERBAL_MCQS = [
   { exam: "GRE", topic: "Vocabulary", q: "EPHEMERAL most nearly means:", opts: ["Lasting forever", "Short-lived", "Colourful", "Heavy"], ans: 1, sol: "Ephemeral describes something that lasts a very short time — short-lived." },
   { exam: "GRE", topic: "Vocabulary", q: "Select the synonym for GREGARIOUS:", opts: ["Sociable", "Shy", "Dishonest", "Tired"], ans: 0, sol: "Gregarious means fond of company / sociable." },
   { exam: "GMAT", topic: "Sentence correction", q: "Pick the correct option: 'Neither the students nor the teacher ___ ready.'", opts: ["are", "is", "were", "be"], ans: 1, sol: "With 'neither…nor', the verb agrees with the nearer subject ('teacher', singular) → 'is'." },
+  { exam: "GRE", topic: "Vocabulary", q: "LACONIC most nearly means:", opts: ["Lengthy", "Brief", "Confusing", "Musical"], ans: 1, sol: "Laconic means using few words; brief and concise." },
+  { exam: "GRE", topic: "Vocabulary", q: "Choose the antonym of VERBOSE:", opts: ["Chatty", "Concise", "Talkative", "Loud"], ans: 1, sol: "Verbose means wordy; its opposite is concise or brief." },
+  { exam: "GRE", topic: "Vocabulary", q: "AMELIORATE most nearly means:", opts: ["Worsen", "Improve", "Ignore", "Complain"], ans: 1, sol: "Ameliorate means to make better or improve a situation." },
+  { exam: "GRE", topic: "Vocabulary", q: "Select the synonym for OBDURATE:", opts: ["Flexible", "Stubborn", "Happy", "Soft"], ans: 1, sol: "Obdurate means stubborn and unwilling to change." },
+  { exam: "GRE", topic: "Vocabulary", q: "AUGUST most nearly means:", opts: ["A month", "Impressive", "Funny", "Angry"], ans: 1, sol: "August (adjective) means grand, impressive, or worthy of respect." },
+  { exam: "GMAT", topic: "Sentence correction", q: "Choose the correct option: 'Each of the students ___ a laptop.'", opts: ["have", "has", "were", "are"], ans: 1, sol: "'Each' is always singular, so it takes a singular verb → 'has'." },
 ];
 const SPEAKING_QS = [
   { exam: "IELTS", part: "Speaking Part 2", q: "Describe a skill you would like to learn. You should say: what it is, why you want to learn it, how you would learn it, and how it would help you.", model: "I'd love to learn how to code, specifically Python. I'm drawn to it because so much of the modern world runs on software, and I feel I'm missing out by not understanding how it works. I'd learn it through free online platforms and by building small projects, like a budgeting app, because I learn best by doing rather than just watching tutorials. Ultimately it would help me automate boring tasks at work and open up better career opportunities in tech.", tip: "Cover all four bullet points, speak for the full 2 minutes, and add a personal reason ('because…') and a feeling to sound natural." },
@@ -797,7 +816,7 @@ function pickExamPrep(seed) {
 const MYTH_FACTS = [
   { t: "Study-abroad MYTHS — busted", pairs: [
     ["You need IELTS 8.0 for top universities", "Most Master's accept 6.5 overall — only a few competitive courses want 7.0+"],
-    ["Studying abroad is only for rich families", "Tuition-free countries (Germany, Norway) + scholarships make it affordable"],
+    ["Studying abroad is only for rich families", "Tuition-free countries (Germany, Iceland) + scholarships make it affordable"],
     ["A low GPA means no admission anywhere", "A strong SOP, projects and test scores can offset a modest GPA"]] },
   { t: "Student-VISA myths — busted", pairs: [
     ["One rejection means you can never reapply", "You can reapply once you fix the reason for the refusal"],
@@ -807,6 +826,26 @@ const MYTH_FACTS = [
     ["Scholarships are only for top rankers", "Many reward leadership, need, essays or specific fields — not just GPA"],
     ["You can only win one scholarship", "You can stack multiple awards — apply to several"],
     ["Applying is a waste of time", "Most students never apply, so the odds are better than you think"]] },
+  { t: "IELTS / TOEFL myths — busted", pairs: [
+    ["You need perfect grammar to score 8", "Natural fluency and minor errors matter less than clarity and range"],
+    ["Memorised phrases help you score higher", "Examiners reward original, personal examples much more"],
+    ["Taking the test multiple times hurts your profile", "Schools only see your highest score; retakes are normal"]] },
+  { t: "GPA myths — busted", pairs: [
+    ["A 3.5 GPA is not good enough for top schools", "With a strong SOP and test scores, 3.3–3.5 can get you admitted"],
+    ["Your first-year grades doom you", "Upward trends, strong last-year performance, and context in your SOP matter more"],
+    ["All universities weight GPA equally", "Many top schools value work experience, essays and fit over a perfect transcript"]] },
+  { t: "Application timeline myths — busted", pairs: [
+    ["You should apply in the last month before the deadline", "Early applications often get better scholarships and more places available"],
+    ["Apply to 20+ universities to guarantee an admit", "A strategic list of 5–8 (Safe/Target/Reach) is more effective than blanket applications"],
+    ["You need to wait until your grades are out", "Many universities consider mid-semester transcripts; apply early and update later"]] },
+  { t: "Visa interview myths — busted", pairs: [
+    ["Any hesitation or wrong answer means rejection", "Examiners understand accents and pauses; honesty and clarity matter"],
+    ["You must memorise every detail of your documents", "Knowing key dates and your genuine reasons is enough"],
+    ["A low test score automatically fails you", "Visa officers evaluate your entire profile — documents, funds, purpose — not one factor"]] },
+  { t: "PR myths — busted", pairs: [
+    ["You need to live in Canada for 5 years before PR", "Canadian PR is possible within 1–2 years if you meet points through work experience and language"],
+    ["Only people with PhDs can get PR", "Skilled trades and non-degree qualifications can qualify under various pathways"],
+    ["Your score in the draw is fixed", "Re-taking IELTS / language tests is common; improving your score reopens opportunities"]] },
 ];
 function pickMythFact(seed) {
   const m = MYTH_FACTS[((seed % MYTH_FACTS.length) + MYTH_FACTS.length) % MYTH_FACTS.length];
@@ -821,6 +860,10 @@ const FLAG_SETS = [
   { kind: "red", t: "Red flags: a university not worth your money", items: ["Vague or hidden fees and no scholarship info", "No data on graduate jobs or post-study work", "Not accredited / not recognised for your goal country", "Pressures you to pay and enrol immediately", "Poor or no international-student support"] },
   { kind: "green", t: "Green flags: a university worth choosing", items: ["Transparent fees + clear scholarship information", "Strong graduate-employment and post-study work record", "Properly accredited and recognised for your goal", "Good international-student support and community", "A clear, documented pathway to work or PR"] },
   { kind: "green", t: "Green flags: a study plan that will get a visa", items: ["Course clearly matches your past study or career", "Funds are genuine, sufficient and well-documented", "A specific reason for this country and university", "Strong ties / clear plans after graduation", "Every official requirement met exactly"] },
+  { kind: "red", t: "Red flags: a risky accommodation choice", items: ["Price is unusually low — too good to be true", "Landlord asks for payment upfront without a signed lease", "No utility costs listed or shared accommodation is unclear", "Listing doesn't show recent photos or address details", "No verifiable reviews from international students"] },
+  { kind: "green", t: "Green flags: safe accommodation abroad", items: ["Verified university accommodation or official housing provider", "Clear lease with all terms, conditions and utility costs", "Located near campus or reliable public transport", "Good reviews from current and past international students", "Move-in costs transparent; flexible lease terms"] },
+  { kind: "red", t: "Red flags: a job offer that's a scam", items: ["Employer asks for money upfront for visas or documents", "The job description is vague or pays unusually high per hour", "Communication only via email, never a phone call or video interview", "No verifiable company website or LinkedIn presence", "They ask you to move money or provide personal banking details"] },
+  { kind: "green", t: "Green flags: a legitimate part-time job abroad", items: ["Interview conducted by phone or video — you speak to a real person", "Employer verifies your visa status and working rights", "Job description and duties are specific and realistic", "Wage is market-rate for the country and role", "Proper contract with clear hours, pay and terms"] },
 ];
 function pickFlags(seed) {
   const f = FLAG_SETS[((seed % FLAG_SETS.length) + FLAG_SETS.length) % FLAG_SETS.length];
@@ -834,6 +877,11 @@ const INSIDER_TIPS = [
   { t: "5 things nobody tells you about studying abroad", items: ["Your first month is the most expensive — keep a buffer", "Part-time work won't cover tuition — plan your funds upfront", "Culture shock is real, but it usually fades by month 2–3", "Open a local bank account and build credit early", "Most jobs come from networking — start from day one"] },
   { t: "5 things nobody tells you about applications", items: ["Apply early — many scholarships close before the deadline", "A great SOP beats a perfect GPA more often than you think", "Professors take 2–3 weeks to write recommendation letters", "Each university wants a tailored SOP, not a copy-paste", "Keep digital + physical copies of every document"] },
   { t: "5 things nobody tells you about student visas", items: ["Start the visa process the moment you get your offer", "Funds must usually sit in your account for a set period", "A weak interview can sink a strong application — practise", "Health insurance is mandatory in most countries", "Rules can change between applying and travelling — recheck"] },
+  { t: "5 things nobody tells you about homesickness", items: ["It peaks around week 2–3, not day 1 — homesickness hits harder later", "Staying busy and making friends is the fastest cure", "Calling home every day actually prolongs it — weekly is healthier", "Your family misses you too — they'll understand if you're quiet some weeks", "Most students feel better by month 3–4 when they build routine"] },
+  { t: "5 things nobody tells you about your first semester", items: ["Grades matter less in first semester — universities know you're adjusting", "Making friends is harder than you think — join clubs and speak up in class", "You'll spend more on books + supplies than tuition in some months", "Skipping class catches up with you fast — attendance is key", "Your relationship with your course often changes — you might pivot your major"] },
+  { t: "5 things nobody tells you about international banking", items: ["Opening a local account takes 2–4 weeks — do it before you need it", "International transfers cost ≈ 2–3% of the amount — batch transfers together", "Your home bank's ATM cards might have withdrawal limits — check limits upfront", "Building credit takes months — a student card or rent history helps", "Blocked accounts for visa purposes freeze your money — don't spend it"] },
+  { t: "5 things nobody tells you about choosing your major", items: ["Changing majors is easier in year 1 — delays get costly in year 2", "Industry demand for your major can shift — build flexible skills", "The 'best' major is one you actually care about — passion matters", "Your backup plan B matters more than your dream major — have options", "Internships (usually year 2+) are where you really test fit — explore early"] },
+  { t: "5 things nobody tells you about study partnerships", items: ["Group studying is slower — mix group sessions with solo deep work", "People make friends in study groups but don't study as well — pick your rhythm", "The strongest students often study alone — don't feel bad saying no to groups", "Finding your study place (library, café) matters more than people", "Explaining concepts to others is the best way to learn — teach your notes"] },
 ];
 function pickInsiderTips(seed) {
   const t = INSIDER_TIPS[((seed % INSIDER_TIPS.length) + INSIDER_TIPS.length) % INSIDER_TIPS.length];
@@ -860,6 +908,11 @@ const STAT_HEROES = [
   { number: "20 hrs", label: "a week you can work on most student visas", sub: "Full-time in the holidays — but it won't cover tuition, so plan your funds.", accent: "#7C3AED", tags: ["studentvisa", "studyabroad"] },
   { number: "2", label: "main intakes a year: Fall & Spring", sub: "Fall has the most seats and scholarships; Spring is the second chance.", accent: "#0EA5E9", tags: ["studyabroad", "intake"] },
   { number: "6 mo", label: "before your intake to start applying", sub: "The best scholarships and seats close earliest — start now.", accent: "#E11D48", tags: ["studyabroad", "studyabroad2026"] },
+  { number: "9", label: "IELTS band scale (0–9)", sub: "Native speakers typically score 8–9. Target: 0.5 above your university's minimum.", accent: "#0EA5E9", tags: ["ielts", "ieltspreparation"] },
+  { number: "120", label: "TOEFL maximum score", sub: "Scored out of 120 across 4 sections. Most US programs want 80–100.", accent: "#7C3AED", tags: ["toefl", "englishtest"] },
+  { number: "340", label: "GRE maximum score (Verbal + Quant)", sub: "Scored 260–340. Top programs want 320+; MBA average is 310.", accent: "#0EA5E9", tags: ["gre", "greprep"] },
+  { number: "805", label: "GMAT Focus maximum score", sub: "The current GMAT (Focus Edition), scored 205–805. Aim above your target school's average.", accent: "#8B5CF6", tags: ["gmat", "gmatprep"] },
+  { number: "160", label: "Duolingo English Test maximum score", sub: "Scored 10–160. Most programs accept 100+. Cheapest test option.", accent: "#16A34A", tags: ["duolingo", "englishtest"] },
 ];
 function pickStatHero(seed) {
   const h = STAT_HEROES[((seed % STAT_HEROES.length) + STAT_HEROES.length) % STAT_HEROES.length];
@@ -872,6 +925,9 @@ const TRANSFORMATIONS = [
   { before: "IELTS 6.0", after: "IELTS 7.5", title: "How to jump 1.5 bands", steps: ["Learned the band descriptors instead of memorising answers", "Did timed full tests, then reviewed every single error", "Recorded speaking and fixed fluency + pronunciation", "Built topic vocabulary and used it in writing daily"], accent: "#2563EB", tags: ["ielts", "ieltspreparation"] },
   { before: "Rejected", after: "Admitted", title: "What changed in the application", steps: ["Rewrote a generic SOP into a specific, story-led one", "Applied to Safe / Target / Reach, not only dream schools", "Got stronger, tailored recommendation letters", "Applied early — before the scholarship deadlines closed"], accent: "#16A34A", tags: ["studyabroad", "sop"] },
   { before: "No plan", after: "Visa in hand", title: "The 12-month roadmap that worked", steps: ["Months 1–3: test prep + shortlist universities", "Months 4–6: SOP, recommendation letters, applications", "Months 7–9: offers, scholarships, arrange funds", "Months 10–12: visa application + interview prep"], accent: "#7C3AED", tags: ["studentvisa", "studyabroad"] },
+  { before: "GRE 300", after: "GRE 330", title: "The prep method that works", steps: ["Focused on weakest section (quant or verbal) first", "Did 10–15 timed practice questions per day, reviewed ALL mistakes", "Took a full mock test every Sunday, tracked trends", "Joined a study group to explain difficult topics aloud"], accent: "#2563EB", tags: ["gre", "greprep"] },
+  { before: "Generic SOP", after: "Strong SOP", title: "How to tell your real story", steps: ["Started with a personal hook — why THIS course, THIS country", "Showed evidence: relevant projects, internships, courses", "Ended with a specific, realistic career goal — not vague dreams", "Had 3 people proofread — a professor, a friend, a native speaker"], accent: "#16A34A", tags: ["sop", "studyabroad"] },
+  { before: "No scholarship", after: "Full scholarship", title: "How to win funding", steps: ["Applied 6–12 months before intake — not the week before", "Tailored the motivation essay to EACH scholarship's mission", "Got strong recommendation letters from people who knew them well", "Applied to 8–10 scholarships (merit + need + specific) at once"], accent: "#0EA5E9", tags: ["scholarships", "studyabroad"] },
 ];
 function pickTransformation(seed) {
   const t = TRANSFORMATIONS[((seed % TRANSFORMATIONS.length) + TRANSFORMATIONS.length) % TRANSFORMATIONS.length];
@@ -882,9 +938,13 @@ function pickTransformation(seed) {
 // Bright "reality check" — a bold statement on a colourful, non-photo card.
 const BRIGHT_FACTS = [
   { headline: "You don't need IELTS 8 to study abroad", points: ["Most Master's accept 6.5 overall", "Only a few competitive courses want 7.0+", "Aim 0.5 above the minimum to be safe"], accent: "#EC4899", tags: ["ielts", "ieltspreparation"] },
-  { headline: "Free-tuition countries actually exist", points: ["Germany & Norway: public unis ≈ €0", "You pay living costs + a small fee", "Many Master's are taught in English"], accent: "#0EA5E9", tags: ["studyabroad", "freeeducation"] },
+  { headline: "Free-tuition countries actually exist", points: ["Germany & Iceland: public unis ≈ €0 tuition", "You pay living costs + a small fee", "Many Master's are taught in English"], accent: "#0EA5E9", tags: ["studyabroad", "freeeducation"] },
   { headline: "Your SOP matters more than your GPA", points: ["A clear story beats a perfect transcript", "Show WHY this course and this university", "Tie everything to a real career goal"], accent: "#16A34A", tags: ["sop", "studyabroad"] },
   { headline: "You can study abroad on a budget", points: ["Affordable countries + scholarships exist", "Part-time work covers some living costs", "Plan tuition + living before you apply"], accent: "#F59E0B", tags: ["studyabroad", "scholarships"] },
+  { headline: "Changing majors mid-course is normal", points: ["Most students pivot at least once", "Year 1 is when it's easiest and cheapest", "Universities expect students to explore"], accent: "#EC4899", tags: ["studyabroad", "university"] },
+  { headline: "Your age doesn't disqualify you", points: ["Gap years are becoming the standard", "Mature students often get better scholarships", "Universities value life experience"], accent: "#2563EB", tags: ["studyabroad", "scholarship"] },
+  { headline: "Introverts absolutely can thrive abroad", points: ["You don't need to be outgoing to build real friendships", "Quality over quantity — a few close friends beats lots of acquaintances", "Study groups, clubs and online communities count"], accent: "#0EA5E9", tags: ["studentlife", "studyabroad"] },
+  { headline: "Visa interviews are fair and predictable", points: ["Examiners want you to succeed — they're not out to reject you", "They care about consistency, honesty and a clear plan", "Practice the basics and you'll be fine"], accent: "#16A34A", tags: ["studentvisa", "visa"] },
 ];
 function pickBrightFact(seed) {
   const b = BRIGHT_FACTS[((seed % BRIGHT_FACTS.length) + BRIGHT_FACTS.length) % BRIGHT_FACTS.length];
@@ -911,6 +971,26 @@ const TIMELINES = [
     { t: "6–9 months out", d: "Draft a tailored motivation essay and gather documents" },
     { t: "3–6 months out", d: "Get strong recommendation letters and finalise your essay" },
     { t: "By the deadline", d: "Submit early — most awards close before your intake" }] },
+  { title: "8-week IELTS prep plan", accent: "#0EA5E9", steps: [
+    { t: "Weeks 1–2", d: "Diagnostic full test, identify weakest section, learn band descriptors" },
+    { t: "Weeks 3–5", d: "Daily target practice (reading, writing, speaking, listening separately)" },
+    { t: "Weeks 6–7", d: "Full practice tests under timed conditions, detailed error review" },
+    { t: "Week 8", d: "Final full test simulation, light review, rest before exam day" }] },
+  { title: "GRE prep timeline", accent: "#8B5CF6", steps: [
+    { t: "Weeks 1–2", d: "Diagnostic test, understand score scale, identify weak areas" },
+    { t: "Weeks 3–8", d: "Focus on weakest section daily, learn strategies and shortcuts" },
+    { t: "Weeks 9–11", d: "Alternate full-length practice tests, review all errors thoroughly" },
+    { t: "Week 12", d: "Light review, take a practice test, final prep for exam day" }] },
+  { title: "Accommodation search timeline", accent: "#16A34A", steps: [
+    { t: "4–6 months before intake", d: "Research neighbourhoods, university halls, and landlord reviews" },
+    { t: "3 months before", d: "Contact university housing, apply for halls if available" },
+    { t: "2 months before", d: "View properties (in-person or virtual), sign lease and pay deposits" },
+    { t: "1 month before", d: "Confirm move-in date, arrange utilities, get forwarding address set up" }] },
+  { title: "Pre-departure checklist timeline", accent: "#EC4899", steps: [
+    { t: "3 months before", d: "Apply for passport (if needed), start visa application process" },
+    { t: "2 months before", d: "Book flights, get travel insurance, book accommodation" },
+    { t: "1 month before", d: "Arrange health insurance, forex card, scan all important documents" },
+    { t: "1 week before", d: "Confirm flights and accommodation, check visa status, pack essentials" }] },
 ];
 function pickTimeline(seed) {
   const t = TIMELINES[((seed % TIMELINES.length) + TIMELINES.length) % TIMELINES.length];
@@ -924,6 +1004,10 @@ const COMPARE_TABLES = [
   { title: "USA vs Canada for study", a: "USA", b: "Canada", rows: [["Tuition/yr", "$25–55k", "$15–30k"], ["Work while study", "20 h/wk", "20 h/wk"], ["Post-study work", "1–3 yrs (OPT)", "Up to 3 yrs"], ["PR pathway", "Harder", "Clearer"], ["Top universities", "Many", "Many"]] },
   { title: "MS vs MBA", a: "MS", b: "MBA", rows: [["Best for", "Technical depth", "Management"], ["Work exp needed", "Little / none", "2–5 yrs typical"], ["Duration", "1.5–2 yrs", "1–2 yrs"], ["Common test", "GRE", "GMAT"], ["Outcome", "Specialist roles", "Leadership roles"]] },
   { title: "Scholarship vs Education loan", a: "Scholarship", b: "Loan", rows: [["Repay?", "No", "Yes, with interest"], ["Based on", "Merit / need", "Eligibility + collateral"], ["Covers", "Part or full", "Up to full"], ["Effort", "Essays + deadlines", "Paperwork"], ["Best move", "Apply to both", "Apply to both"]] },
+  { title: "UK vs Australia for study", a: "United Kingdom", b: "Australia", rows: [["Tuition/yr", "£12–35k", "AUD 18–45k"], ["Study duration", "1–2 yrs typical", "2 yrs typical"], ["Post-study work", "2–3 yrs", "1.5–3 yrs (varies)"], ["PR pathway", "Limited", "Points-based"], ["Climate", "Temperate", "Warm/tropical"]] },
+  { title: "Germany vs Netherlands", a: "Germany", b: "Netherlands", rows: [["Tuition/yr", "€0 (public)", "€8–15k (non-EU)"], ["Language", "German + English", "Mostly English"], ["Cities cost", "Moderate", "Expensive"], ["Work post-grad", "18 months", "12-month search year"], ["Scholarships", "Many available", "Fewer for intl"]] },
+  { title: "TOEFL vs IELTS", a: "TOEFL", b: "IELTS", rows: [["Scoring", "0–120", "0–9 bands"], ["Duration", "~3 hours", "~2.75 hours"], ["Test type", "Computer-based", "Paper/computer"], ["Accepted", "More in USA", "Worldwide"], ["Cost", "Similar", "Similar"]] },
+  { title: "On-campus vs Off-campus housing", a: "On-campus", b: "Off-campus", rows: [["Cost", "Usually more", "Varies widely"], ["Community", "Built-in", "Less structured"], ["Flexibility", "Limited lease terms", "More options"], ["Utilities", "Included usually", "You pay"], ["Independence", "Less", "More"]] },
 ];
 function pickCompareTable(seed) {
   const t = COMPARE_TABLES[((seed % COMPARE_TABLES.length) + COMPARE_TABLES.length) % COMPARE_TABLES.length];
@@ -2274,7 +2358,7 @@ const TOPIC_CAROUSELS = {
       { title: "France", sub: "≈ €170–€600/yr public tuition", text: "Public-university tuition is heavily subsidised — often only a few hundred euros a year. Living is moderate outside Paris, and scholarships like Eiffel support international students.", photo: "country-france" },
       { title: "Italy", sub: "≈ €900–€4,000/yr tuition", text: "Public universities are affordable, with income-based fee waivers and regional DSU scholarships that can cover tuition, meals and housing. Living costs are low in smaller cities.", photo: "country-italy" },
       { title: "Poland", sub: "≈ €2,000–€4,000/yr tuition", text: "Low tuition and one of the lowest costs of living in the EU, with a growing number of English-taught programs and a Schengen location for easy travel.", photo: "country-poland" },
-      { title: "Norway", sub: "Free at public universities", text: "Public universities are tuition-free for everyone, including non-EU students (just a small semester fee). Living costs are high, but no tuition makes it strong value if you can budget.", photo: "country-norway" },
+      { title: "Iceland", sub: "Free public-university tuition", text: "Public universities such as the University of Iceland charge no tuition — only a small annual registration fee (around €500) — even for international students. Living costs are high, but free tuition makes it strong value.", photo: "country-norway" },
     ],
   },
   "visa-mistakes": {
