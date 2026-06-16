@@ -232,6 +232,9 @@ async function igCatchUp(ig) {
   const postedNow = {}, errors = []; let log = {};
   const docRef = FS_DB ? FS_DB.collection("ig_daily_log").doc(date) : null;
   if (docRef) { try { const d = await docRef.get(); if (d.exists) log = d.data() || {}; } catch (e) { errors.push("log-read: " + e.message); } }
+  // Owner-approval gate: post by default (auto-approve) UNLESS the owner explicitly REJECTED
+  // today's content via the review email. A missed reply never stops posting.
+  if (FS_DB) { try { const pd = await FS_DB.collection("ig_prepared").doc(date).get(); if (pd.exists && (pd.data() || {}).status === "rejected") return { ok: true, date, skipped: "owner rejected this day's content", postedNow: [], errors: [] }; } catch (e) { /* ignore — never block posting */ } }
   const args = { baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN };
   // multi-slide carousels — Sunday (06:00 UTC) and Wednesday (08:00 UTC), different topics.
   if (dow === 0 && nowH >= 6 && !log.carousel) {
@@ -251,6 +254,99 @@ async function igCatchUp(ig) {
   }
   return { ok: errors.length === 0, date, postedNow: Object.keys(postedNow), alreadyDone: Object.keys(log).filter((k) => k !== "carousel" || log.carousel), errors };
 }
+
+// ── Day-ahead content prep + AI verification + owner approval email ──────────────
+// Each evening a cron hits ?prepare=1 → we generate TOMORROW's posts, AI-verify each
+// (image rendered? caption complete & under the IG limit? Gemini fact/clarity check),
+// store the plan in Firestore, and email the owner a preview with Approve/Reject links.
+// Posting proceeds by default tomorrow ("auto-approve") UNLESS the owner clicks Reject —
+// so a missed reply never stops posting, and an explicit reject holds the whole day.
+const OWNER_EMAIL = process.env.OWNER_EMAIL || "narasatish966@gmail.com";
+function prepToken(date, action) { return crypto.createHmac("sha256", AUTH_SECRET).update("igprep|" + action + "|" + date).digest("base64url"); }
+function prepLink(date, action) { return IG_PUBLIC_BASE + "/api/ig/review?date=" + date + "&action=" + action + "&token=" + prepToken(date, action); }
+async function sendMailRich(to, subject, html, attachments) {
+  const t = mailer(); if (!t || !html) return false;
+  try { await t.sendMail({ from: SMTP.from, to, subject, html, replyTo: SMTP.user, attachments: attachments || [] }); return true; }
+  catch (e) { console.warn("[mail] rich send failed:", e.message); return false; }
+}
+// AI verification of one caption (best-effort; NEVER blocks posting). Returns { ok, issues[] }.
+async function geminiVerifyCaption(caption) {
+  if (!GEMINI_API_KEY || !caption) return { ok: true, issues: [] };
+  const prompt = "You are a strict fact-checker for a study-abroad Instagram brand for Indian students. " +
+    "Review this caption ONLY for: (1) clear factual errors about exams, visas, universities or countries; " +
+    "(2) obviously cut-off / incomplete sentences; (3) anything misleading. Ignore style and tone. " +
+    "If it is fine, reply with exactly: OK. Otherwise reply with a short bullet list of the specific problems.\n\nCAPTION:\n" + caption;
+  try {
+    const r = await Promise.race([
+      geminiPost("gemini-2.5-flash", { contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0, thinkingConfig: { thinkingBudget: 0 } } }),
+      new Promise((_, rej) => setTimeout(() => rej(new Error("timeout")), 15000)),
+    ]);
+    const txt = String((r && r.text) || "").trim();
+    if (!txt || /^ok\b/i.test(txt)) return { ok: true, issues: [] };
+    const issues = txt.split("\n").map((l) => l.replace(/^[-•*\d.\s]+/, "").trim()).filter(Boolean).slice(0, 5);
+    return { ok: issues.length === 0, issues };
+  } catch (e) { return { ok: true, issues: [] }; }
+}
+async function verifyPreparedPost(g) {
+  const issues = []; const cap = (g && g.caption) || "";
+  if (!g || !g.file) issues.push("⛔ image did not render");
+  if (cap.length < 60) issues.push("⛔ caption too short or empty");
+  if (cap.length > 2200) issues.push("⛔ caption exceeds Instagram's 2,200-char limit");
+  const hard = issues.length > 0;
+  const ai = await geminiVerifyCaption(cap);
+  if (!ai.ok) ai.issues.forEach((i) => issues.push("⚠️ " + i));
+  return { ok: !hard && ai.ok, issues };
+}
+function igDigestHtml(date, posts, carousel, allOk) {
+  const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const slotTime = ["8:00am", "12:30pm", "4:00pm", "7:30pm", "9:30pm"];
+  let b = `<div style="font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:680px;margin:0 auto;color:#0f172a">`;
+  b += `<h2 style="margin:0 0 4px">📅 Tomorrow's Instagram posts — ${esc(date)}</h2>`;
+  b += `<p style="color:#475569;margin:0 0 14px">AI verification: <b style="color:${allOk ? "#16a34a" : "#d97706"}">${allOk ? "all clear ✅" : "please check the ⚠️ items"}</b>. Reply by <b>11:59 pm IST</b>. If you don't, these auto-post tomorrow.</p>`;
+  b += `<div style="margin:14px 0"><a href="${prepLink(date, "approve")}" style="background:#16a34a;color:#fff;text-decoration:none;padding:11px 22px;border-radius:9px;font-weight:700;margin-right:10px">✅ Approve &amp; post</a><a href="${prepLink(date, "reject")}" style="background:#ef4444;color:#fff;text-decoration:none;padding:11px 22px;border-radius:9px;font-weight:700">🛑 Reject (hold tomorrow)</a></div>`;
+  posts.forEach((p) => {
+    b += `<div style="border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin:12px 0"><div style="font-weight:700;margin-bottom:6px">Slot ${p.slot + 1} · ${esc(slotTime[p.slot] || "")} IST · ${esc(p.theme || "")} ${p.ok ? "✅" : "⚠️"}</div>`;
+    if (p.imageUrl) b += `<img src="cid:slot${p.slot}" alt="post" style="max-width:280px;border-radius:8px;display:block;margin:6px 0"/>`;
+    if (p.issues && p.issues.length) b += `<div style="color:#b45309;font-size:13px;margin:4px 0">${p.issues.map(esc).join("<br>")}</div>`;
+    b += `<pre style="white-space:pre-wrap;font-family:inherit;font-size:13px;color:#334155;background:#f8fafc;padding:10px;border-radius:8px;margin:6px 0 0">${esc(p.caption || "")}</pre></div>`;
+  });
+  if (carousel) b += `<div style="border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin:12px 0"><div style="font-weight:700">Carousel · ${esc(carousel.topic || "")} ${carousel.ok ? "✅" : "⚠️"}</div>${carousel.issues && carousel.issues.length ? `<div style="color:#b45309;font-size:13px">${carousel.issues.map(esc).join("<br>")}</div>` : ""}<pre style="white-space:pre-wrap;font-family:inherit;font-size:13px;color:#334155;background:#f8fafc;padding:10px;border-radius:8px">${esc(carousel.caption || "")}</pre></div>`;
+  b += `<p style="color:#94a3b8;font-size:12px;margin-top:16px">LandingPrep auto-poster · internal owner notification.</p></div>`;
+  return b;
+}
+async function prepareTomorrow(ig) {
+  if (!ig || !ig.generateDailyImage) return { ok: false, error: "poster not ready" };
+  const tmrw = new Date(Date.now() + 24 * 3600 * 1000);
+  const date = tmrw.toISOString().slice(0, 10), dow = tmrw.getUTCDay();
+  const baseUrl = IG_PUBLIC_BASE, OUT = ig.OUT_DIR;
+  const posts = [], attachments = [];
+  for (let slot = 0; slot < 5; slot++) {
+    try {
+      const g = await ig.generateDailyImage({ slot, now: tmrw, baseUrl });
+      const v = await verifyPreparedPost(g);
+      posts.push({ slot, theme: (g.content && g.content.category) || "", caption: g.caption, imageUrl: g.imageUrl, ok: v.ok, issues: v.issues });
+      if (g.file && OUT) { const p = path.join(OUT, g.file); if (fs.existsSync(p)) attachments.push({ filename: "slot" + slot + ".png", path: p, cid: "slot" + slot }); }
+    } catch (e) { posts.push({ slot, ok: false, issues: ["⛔ render failed: " + e.message] }); }
+  }
+  let carousel = null;
+  if (dow === 0 || dow === 3) {
+    try { const r = await ig.generateCitiesCarousel({ baseUrl, now: tmrw, offset: dow === 3 ? 3 : 0 }); carousel = { topic: r.country, caption: r.caption, ok: true, issues: [] };
+      const av = await geminiVerifyCaption(r.caption); if (!av.ok) { carousel.ok = false; carousel.issues = av.issues.map((i) => "⚠️ " + i); } }
+    catch (e) { carousel = { ok: false, issues: ["⛔ carousel render failed: " + e.message], caption: "" }; }
+  }
+  const allOk = posts.every((p) => p.ok) && (!carousel || carousel.ok);
+  if (FS_DB) { try { await FS_DB.collection("ig_prepared").doc(date).set({ date, status: "pending", allOk, posts: posts.map((p) => ({ slot: p.slot, theme: p.theme || "", ok: p.ok, issues: p.issues || [] })), carousel: carousel ? { topic: carousel.topic || "", ok: carousel.ok, issues: carousel.issues || [] } : null, preparedAt: Date.now() }, { merge: false }); } catch (e) { console.warn("[igprep] store:", e.message); } }
+  await sendMailRich(OWNER_EMAIL, `📅 Tomorrow's Instagram posts (${date}) — ${allOk ? "verified ✅" : "needs a look ⚠️"}`, igDigestHtml(date, posts, carousel, allOk), attachments);
+  return { ok: true, date, emailedTo: OWNER_EMAIL, allOk, posts: posts.map((p) => ({ slot: p.slot, ok: p.ok, issues: p.issues })), carousel: carousel && { ok: carousel.ok, issues: carousel.issues } };
+}
+// Owner clicks Approve / Reject from the email (signed link — no secret needed).
+app.get("/api/ig/review", async (req, res) => {
+  const date = String(req.query.date || ""), action = String(req.query.action || ""), token = String(req.query.token || "");
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !["approve", "reject"].includes(action) || token !== prepToken(date, action)) return res.status(400).send("Invalid or expired review link.");
+  const status = action === "approve" ? "approved" : "rejected";
+  if (FS_DB) { try { await FS_DB.collection("ig_prepared").doc(date).set({ status, reviewedAt: Date.now() }, { merge: true }); } catch (e) { return res.status(500).send("Could not save — try again."); } }
+  res.set("Content-Type", "text/html").send(`<div style="font-family:system-ui;max-width:520px;margin:60px auto;text-align:center"><h2>${action === "approve" ? "✅ Approved" : "🛑 Rejected"}</h2><p style="color:#475569">${action === "approve" ? "Tomorrow's posts (" + date + ") are approved and will publish on schedule." : "Tomorrow's posts (" + date + ") are on hold and will NOT publish."} <a href="https://landingprep.com/">Back to LandingPrep</a></p></div>`);
+});
 app.all("/api/ig/post-daily", async (req, res) => {
   // ?selftest=1 → SAFE diagnostic, NO secret required. Reveals WHY automation may be failing
   // without exposing any secret/token values: which env vars are set, whether the Instagram
@@ -316,6 +412,9 @@ app.all("/api/ig/post-daily", async (req, res) => {
     // ?catchup=1 → self-healing daily poster (used by the cron): posts any of today's
     // still-unposted slots, idempotent via the Firestore log. This is the reliable path.
     if (String(req.query.catchup || "") === "1") { const out = await igCatchUp(ig); return res.status(out.ok ? 200 : 207).json(out); }
+    // ?prepare=1 → prepare TOMORROW's posts, AI-verify them, and email the owner for approval.
+    // Run this each evening (cron). Posting auto-approves unless the owner clicks Reject.
+    if (String(req.query.prepare || "") === "1") { const out = await prepareTomorrow(ig); return res.status(out.ok ? 200 : 500).json(out); }
     // ── batch/pool mode (pre-made Canva posts in /ig-pool/) ───────────────────
     // ?pool=preview → list pool items (no posting)
     // ?pool=next    → post today's pool item (rotates by date)
