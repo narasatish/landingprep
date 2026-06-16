@@ -1327,13 +1327,22 @@ function viralOverlay(c) {
     hl.forEach((ln, i) => { s += `<text x="70" y="${hy + i * (hsize + 2)}" font-family="${HEAD}" font-size="${hsize}" fill="#fff" letter-spacing="0.5">${esc(ln)}</text>`; });
     let cur = hy + hl.length * (hsize + 2) - hsize + 6;
     if (c.sub) { s += `<text x="74" y="${cur + 34}" font-family="${BODY}" font-weight="600" font-size="29" fill="#e7eeff">${esc(clip(stripEmoji(c.sub), 54))}</text>`; cur += 56; }
-    // sentence/point-based content (a clean bullet list, NOT tiny stat boxes)
+    // sentence/point-based content (a clean bullet list, NOT tiny stat boxes).
+    // Flow layout: wrap each point FULLY and auto-shrink the font so complete sentences
+    // always fit — never clip a point mid-word (the old `.slice(0,2)` truncation bug).
     const pts = (c.points && c.points.length ? c.points : (c.stats || []).map((b) => `${b.label}: ${stripEmoji(String(b.v))}`)).slice(0, 6);
-    const py0 = Math.max(cur + 44, 398), py1 = 988, rowH = Math.min(120, Math.floor((py1 - py0) / Math.max(1, pts.length)));
-    pts.forEach((p, i) => { const ry = py0 + i * rowH;
-      s += `<circle cx="100" cy="${ry + 14}" r="21" fill="${a}"/><path d="M89 ${ry + 14} l8 8 14 -17" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>`;
-      const lines = wrapPlain(stripEmoji(String(p)), 40).slice(0, 2);
-      lines.forEach((ln, j) => { s += `<text x="146" y="${ry + 24 + j * 40}" font-family="${BODY}" font-weight="${j === 0 ? 600 : 400}" font-size="32" fill="#fff">${esc(ln)}</text>`; });
+    const py0 = Math.max(cur + 44, 398), py1 = 982, gap = 20;
+    const baseW = pts.length <= 2 ? 36 : 40;       // fewer points → can use bigger text
+    let fs = 32, lh = 40;
+    const wrapAt = () => pts.map((p) => wrapPlain(stripEmoji(String(p)), Math.round(baseW * 32 / fs)));
+    let wrapped = wrapAt();
+    const usedH = () => wrapped.reduce((n, ln) => n + ln.length * lh, 0) + (pts.length - 1) * gap;
+    while (usedH() > (py1 - py0) && fs > 23) { fs -= 2; lh -= 2; wrapped = wrapAt(); }
+    let py = py0;
+    wrapped.forEach((lns, i) => {
+      s += `<circle cx="100" cy="${py + 14}" r="21" fill="${a}"/><path d="M89 ${py + 14} l8 8 14 -17" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>`;
+      lns.forEach((ln, j) => { s += `<text x="146" y="${py + 24 + j * lh}" font-family="${BODY}" font-weight="${j === 0 ? 600 : 400}" font-size="${fs}" fill="#fff">${esc(ln)}</text>`; });
+      py += lns.length * lh + gap;
     });
   }
   s += `<text x="540" y="1060" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="28" fill="rgba(255,255,255,0.92)">landingprep.com</text>`;
