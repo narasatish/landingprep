@@ -50,6 +50,7 @@ const HUB_LINKS = [
   { label: "Scholarships", href: "/scholarships/" },
   { label: "IELTS band guides", href: "/ielts-band-guides/" },
   { label: "English test comparisons", href: "/english-test-comparisons/" },
+  { label: "SOP, LOR & motivation samples", href: "/sop-samples/" },
   { label: "Test requirements by country", href: "/exam-requirements-by-country/" },
   { label: "How LandingPrep works", href: "/how-it-works/" },
   { label: "Free alternatives", href: "/free-alternatives/" },
@@ -71,6 +72,8 @@ try { new Function("window", readFileSync(join(ROOT, "scholarship-data.jsx"), "u
 const SCHOLARSHIP_DATA = _cw.LP_SCHOLARSHIPS || [];
 try { new Function("window", readFileSync(join(ROOT, "blog-data.jsx"), "utf8"))(_cw); } catch (e) { console.warn("blog-data load failed:", e.message); }
 const BLOG_EXTRA = (_cw.LP_BLOG_EXTRA || []).filter((p) => p && p.id);
+try { new Function("window", readFileSync(join(ROOT, "sop-samples.jsx"), "utf8"))(_cw); } catch (e) { console.warn("sop-samples load failed:", e.message); }
+const SOP_SAMPLES = (_cw.LP_SOP_SAMPLES || []).filter((s) => s && s.id);
 let EXAM_PATTERNS = {};
 try { EXAM_PATTERNS = JSON.parse(readFileSync(join(ROOT, "data", "exam-patterns.json"), "utf8").replace(/^﻿/, "")); } catch (e) { console.warn("exam-patterns load failed:", e.message); }
 
@@ -1008,6 +1011,88 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// ── SOP / LOR / motivation-letter sample library (high-intent, pairs with the SOP builder) ──
+function sopSamplePage(s) {
+  const path = `/sop-samples/${s.id}/`;
+  const title = `${s.title} (2026) | ${BRAND}`;
+  const desc = s.metaDesc;
+  const others = SOP_SAMPLES.filter((x) => x.id !== s.id).slice(0, 4);
+  const faqs = [
+    { q: `Can I copy this ${s.type.toLowerCase()} sample?`, a: `No — use it only as a structural model. Admissions systems run plagiarism checks, and a copied ${s.type.toLowerCase()} is easy to spot and will hurt your application. Replace every fact, example and sentence with your own.` },
+    { q: `How long should a ${s.course} ${s.type.toLowerCase()} be?`, a: `Most ${s.type.toLowerCase() === "letter of recommendation" ? "recommendation letters run about 400–600 words (roughly one page)" : "statements of purpose run about 800–1,000 words (one to two pages)"}, unless the university sets a specific word or page limit — always follow their stated limit.` },
+    { q: `Where can I build my own ${s.type.toLowerCase()} for free?`, a: `Use the free ${BRAND} SOP builder to draft and refine your own ${s.type.toLowerCase()} step by step, then tailor it to each university and program.` },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/sop-samples/">SOP &amp; LOR Samples</a> › ${esc(s.course)}</p>
+<section class="hero">
+  <div class="badges"><span class="badge">${esc(s.type)}</span><span class="badge">${esc(s.course)}</span><span class="badge">2026</span></div>
+  <h1>${esc(s.title)}</h1>
+  <p class="lead">${esc(s.sampleIntro)}</p>
+  <a class="cta" href="/#/colleges">▶ Build your own ${esc(s.type)} free (SOP builder)</a>
+</section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> ${esc(s.quick)}</div>
+<div class="card" style="border-left:4px solid #f59e0b;background:#fffbeb">
+  <h2>⚠️ Use as a model — never copy</h2>
+  <p>This is an original, illustrative ${esc(s.type.toLowerCase())} written by the ${BRAND} editorial team — realistic but fictional. Universities and scholarship bodies run plagiarism checks, so copying any online sample (including this one) will damage your application. Study the structure, then write something that is unmistakably <em>you</em>.</p>
+</div>
+<div class="card">
+  <h2>${esc(s.title)} — full sample</h2>
+  ${s.sample.map((p) => `<p>${esc(p)}</p>`).join("")}
+</div>
+<div class="card">
+  <h2>Structure — paragraph by paragraph</h2>
+  <table style="width:100%;border-collapse:collapse" class="uni-table"><tbody>${s.structure.map((r) => `<tr><td style="white-space:nowrap"><strong>${esc(r[0])}</strong></td><td>${esc(r[1])}</td></tr>`).join("")}</tbody></table>
+</div>
+<div class="card">
+  <h2>Common mistakes to avoid</h2>
+  <ul class="bcheck">${s.mistakes.map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
+</div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `📝 Build your ${esc(s.type)} free`, href: `/#/colleges` },
+  { label: `✍️ How to write a winning SOP`, href: `/blog/how-to-write-sop/` },
+  ...others.map((o) => ({ label: `${o.type === "Letter of Recommendation" ? "📄" : "📋"} ${o.course} ${o.type === "Statement of Purpose" ? "SOP" : o.type}`, href: `/sop-samples/${o.id}/` })),
+  { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
+])}`;
+  emit(path, head({ title, desc, path, kw: s.kw, jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: s.title, description: s.metaDesc,
+      author: { "@type": "Organization", name: BRAND + " editorial team", url: ORIGIN + "/about/" },
+      publisher: { "@type": "Organization", name: BRAND, logo: { "@type": "ImageObject", url: ORIGIN + "/og-image.png" } },
+      datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "SOP & LOR Samples", path: "/sop-samples/" }, { name: s.course, path }]),
+  ] }) + shell(inner));
+}
+function sopSamplesIndex() {
+  if (!SOP_SAMPLES.length) return;
+  const path = `/sop-samples/`;
+  const cards = SOP_SAMPLES.map((s) => `<div class="card"><h2><a href="/sop-samples/${s.id}/">${esc(s.title)}</a></h2><p>${esc(s.metaDesc)}</p><a class="tile" href="/sop-samples/${s.id}/">Read the sample →</a></div>`).join("");
+  const faqs = [
+    { q: "Are these SOP and LOR samples free?", a: `Yes — every sample, the paragraph-by-paragraph breakdown and the ${BRAND} SOP builder are 100% free, with no signup.` },
+    { q: "Should I copy a sample SOP?", a: "Never. Use samples only to understand structure and tone. Admissions systems check for plagiarism, and a copied statement is easy to detect and will hurt your application. Write your own, tailored to each university." },
+    { q: "What's the difference between an SOP and a motivation letter?", a: "They overlap heavily. A Statement of Purpose (SOP) is the academic essay most universities ask for; a motivation letter is the European/scholarship equivalent and is often slightly shorter and more personal. Both must connect your background, your fit for the specific program or award, and your goals." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › SOP &amp; LOR Samples</p>
+<section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">${SOP_SAMPLES.length} samples</span><span class="badge">2026</span></div>
+<h1>Free SOP, LOR &amp; Motivation Letter Samples</h1>
+<p class="lead">Complete, original sample Statements of Purpose, Letters of Recommendation and scholarship motivation letters — each with a paragraph-by-paragraph breakdown and the mistakes to avoid. Study them, then build your own free.</p>
+<a class="cta" href="/#/colleges">▶ Build your own SOP free</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> A strong Statement of Purpose tells one focused story: a specific motivation, concrete evidence of your ability, exactly why you want <em>this</em> program, and clear goals. Use the samples below as structural models — never copy them, because universities run plagiarism checks. Build and tailor your own with the free SOP builder.</div>
+${cards}
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `📝 Free SOP Builder`, href: `/#/colleges` },
+  { label: `✍️ How to write a winning SOP`, href: `/blog/how-to-write-sop/` },
+  { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
+  { label: `💸 Scholarships (free finder)`, href: `/fully-funded-scholarships/` },
+])}`;
+  emit(path, head({ title: `Free SOP, LOR & Motivation Letter Samples (2026) | ${BRAND}`, desc: `Free, complete SOP, Letter of Recommendation and scholarship motivation letter samples with paragraph-by-paragraph breakdowns. Build your own free — never copy.`, path, kw: "sop samples, statement of purpose sample, lor sample, motivation letter sample, sop for masters sample, free sop examples", jsonLdBlocks: [
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "SOP & LOR Samples", path }]),
+  ] }) + shell(inner));
+}
+
 // ── Per-university pages (long-tail SEO, auto-generated from college-data) ──
 function universityPage(c) {
   const ci = C_INFO[c.country] || {};
@@ -1623,6 +1708,8 @@ const UNI_VS_LINK = (() => {
   });
   return map;
 })();
+SOP_SAMPLES.forEach(sopSamplePage);
+sopSamplesIndex();
 COLLEGES.forEach(universityPage);
 // University-vs-University pages: adjacent-ranked rivals within each country
 // (top 6 per country) — high-intent "X vs Y" searches, kept to a sane count.
