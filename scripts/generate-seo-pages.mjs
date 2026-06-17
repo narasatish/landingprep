@@ -52,6 +52,7 @@ const HUB_LINKS = [
   { label: "English test comparisons", href: "/english-test-comparisons/" },
   { label: "SOP, LOR & motivation samples", href: "/sop-samples/" },
   { label: "Visa interview questions", href: "/visa-interview/" },
+  { label: "Intakes & deadlines by country", href: "/intakes/" },
   { label: "Test requirements by country", href: "/exam-requirements-by-country/" },
   { label: "How LandingPrep works", href: "/how-it-works/" },
   { label: "Free alternatives", href: "/free-alternatives/" },
@@ -1163,6 +1164,88 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// ── Intake & deadline pages per country (high-intent, from real college data) ───
+const INTAKE_NOTES = {
+  USA: { slug: "usa", main: "Fall (August–September)", others: "Spring (January) and a limited Summer (May–June) intake", note: "Fall is by far the largest intake in the United States — the widest choice of programmes, funding and assistantships. Spring is a smaller second intake; Summer is rare for degree programmes." },
+  UK: { slug: "uk", main: "September/October", others: "a smaller January intake at many universities", note: "Most UK degrees start in September or October. A growing number of universities also offer a January intake, useful if you miss the autumn deadline." },
+  Canada: { slug: "canada", main: "Fall (September)", others: "Winter (January) and a smaller Spring/Summer (May) intake", note: "Fall is the primary Canadian intake with the most programmes and funding. Winter (January) is a solid second option; Spring/Summer is limited. Note: the Student Direct Stream closed in November 2024, so apply through the regular study-permit stream and start early." },
+  Australia: { slug: "australia", main: "Semester 1 (February–March)", others: "Semester 2 (July), and some institutions offer additional intakes", note: "Australia's academic year starts in February, so Semester 1 (Feb–Mar) is the main intake; Semester 2 (July) is the strong second intake." },
+  Germany: { slug: "germany", main: "Winter semester (October)", others: "Summer semester (April)", note: "German universities run two semesters: the Winter semester (starting October) is the main intake with the most programmes; the Summer semester (starting April) has fewer options. Application deadlines fall months earlier (often mid-July for Winter)." },
+  Ireland: { slug: "ireland", main: "September", others: "a smaller January intake for some programmes", note: "Most Irish university programmes begin in September; some offer a January start." },
+  "New Zealand": { slug: "new-zealand", main: "Semester 1 (February–March)", others: "Semester 2 (July)", note: "Like Australia, New Zealand's year starts in February, so Semester 1 is the main intake and Semester 2 (July) is the second." },
+  Singapore: { slug: "singapore", main: "August", others: "a January intake at some universities", note: "Singapore's main university intake is in August, with a smaller January intake for some programmes." },
+  Netherlands: { slug: "netherlands", main: "September", others: "a February intake for some programmes", note: "Most Dutch programmes start in September; some also offer a February intake. Deadlines for international students can be early (often 1 May), so check well ahead." },
+};
+function intakeDeadlinePage(country, list) {
+  const info = INTAKE_NOTES[country]; if (!info) return;
+  const path = `/intakes/${info.slug}/`;
+  const ranked = list.slice().sort((a, b) => (a.rank || 9999) - (b.rank || 9999)).slice(0, 22);
+  const rows = ranked.map((c) => `<tr><td><a href="/university/${c.id}/">${esc(c.name)}</a></td><td>${esc((c.intakes || []).join(", "))}</td><td>${esc(c.deadline || "Varies")}</td></tr>`).join("");
+  const title = `${country} University Intakes & Application Deadlines 2026`;
+  const desc = `${country} university intakes and application deadlines for 2026 — main intake ${info.main}. Deadlines for ${ranked.length} top universities, plus an application timeline. Free.`;
+  const faqs = [
+    { q: `What is the main intake in ${country}?`, a: `The main intake in ${country} is ${info.main}, with ${info.others}. ${info.note}` },
+    { q: `When should I apply for a ${country} university?`, a: `Start 12–18 months before your intake: take your English/admission tests early, then apply roughly 6–12 months ahead. Top universities and scholarships close first, so earlier is always safer.` },
+    { q: `Are these ${country} deadlines exact?`, a: `They're indicative typical deadlines and vary by university and programme — always confirm the exact date on each university's official admissions page before applying.` },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/intakes/">Intakes &amp; Deadlines</a> › ${esc(country)}</p>
+<section class="hero"><div class="badges"><span class="badge">${esc(country)}</span><span class="badge">2026 intakes</span><span class="badge">${ranked.length} universities</span></div>
+<h1>${esc(country)} University Intakes &amp; Application Deadlines (2026)</h1>
+<p class="lead">When to apply to study in ${esc(country)} — the intake seasons, a clear application timeline, and typical deadlines for top universities. Free.</p>
+<a class="cta" href="/#/colleges">▶ Find your universities (free predictor)</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The main intake in ${esc(country)} is <strong>${esc(info.main)}</strong>, with ${esc(info.others)}. Apply roughly 6–12 months before your intake — the best programmes and scholarships close first. Always confirm exact deadlines on each university's official page.</div>
+<div class="card"><h2>Intake seasons in ${esc(country)}</h2><p>${esc(info.note)}</p></div>
+<div class="card"><h2>Application timeline — work backwards from your intake</h2><ol class="bsteps">
+<li><strong>12–18 months before:</strong> shortlist universities and take a free <a href="/mock-test/ielts/">IELTS</a> / <a href="/mock-test/pte/">PTE</a> / <a href="/mock-test/toefl/">TOEFL</a> mock to find your gap, then book the real test.</li>
+<li><strong>8–12 months before:</strong> prepare your <a href="/sop-samples/">SOP and recommendation letters</a>, finalise your test scores, and submit applications — apply early for scholarships.</li>
+<li><strong>3–6 months before:</strong> accept your offer, arrange proof of funds, and apply for your student visa (prepare for the <a href="/visa-interview/">visa interview</a>).</li>
+<li><strong>1–3 months before:</strong> book travel and accommodation, and complete pre-departure steps.</li>
+</ol></div>
+<div class="card"><h2>Intakes &amp; typical deadlines — top ${esc(country)} universities</h2>
+<table style="width:100%;border-collapse:collapse" class="uni-table"><thead><tr><th>University</th><th>Intakes</th><th>Typical deadline</th></tr></thead><tbody>${rows}</tbody></table>
+<p class="note">Indicative for 2026 — deadlines vary by programme and change yearly. Always confirm on each university's official admissions page.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🏛️ Top universities in ${country}`, href: `/study-abroad/top-universities-in-${info.slug}/` },
+  { label: `🌍 Score requirements by country`, href: `/eligibility/` },
+  { label: `📝 SOP samples & builder`, href: `/sop-samples/` },
+  { label: `🛂 ${country} visa interview`, href: `/visa-interview/` },
+  { label: `📅 All intakes & deadlines`, href: `/intakes/` },
+])}`;
+  emit(path, head({ title: `${title} | ${BRAND}`, desc, path, kw: `${country.toLowerCase()} intake 2026, ${country.toLowerCase()} university application deadline, fall intake ${country.toLowerCase()}, ${country.toLowerCase()} university intakes, when to apply ${country.toLowerCase()} university`, jsonLdBlocks: [
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Intakes & Deadlines", path: "/intakes/" }, { name: country, path }]),
+  ] }) + shell(inner));
+}
+function intakeDeadlineIndex(byCountry) {
+  const path = `/intakes/`;
+  const cards = Object.keys(INTAKE_NOTES).filter((c) => byCountry[c] && byCountry[c].length).map((c) => `<div class="card"><h2><a href="/intakes/${INTAKE_NOTES[c].slug}/">${esc(c)} — main intake: ${esc(INTAKE_NOTES[c].main)}</a></h2><p>Intake seasons, application timeline and typical deadlines for top universities in ${esc(c)}.</p><a class="tile" href="/intakes/${INTAKE_NOTES[c].slug}/">See ${esc(c)} deadlines →</a></div>`).join("");
+  const faqs = [
+    { q: "What is an intake when studying abroad?", a: "An intake is the term in which a university starts new students. Most countries have a main intake (the one with the most programmes and funding) and one or two smaller secondary intakes. Picking the main intake usually gives you the widest choice." },
+    { q: "How early should I apply?", a: "Start 12–18 months before your intake and apply roughly 6–12 months ahead. Top universities and scholarships fill first, so applying early materially improves your chances." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › Intakes &amp; Deadlines</p>
+<section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">9 countries</span><span class="badge">2026</span></div>
+<h1>University Intakes &amp; Application Deadlines by Country (2026)</h1>
+<p class="lead">When to apply to study abroad — the main and secondary intakes, application timelines and typical university deadlines for every major destination. Free.</p>
+<a class="cta" href="/#/colleges">▶ Find your universities (free predictor)</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Intakes differ by country — the US and UK start in autumn (Aug–Oct), Germany's main intake is October, while Australia and New Zealand start in February. Whatever your destination, apply 6–12 months ahead; the main intake always has the most programmes and scholarships. Pick a country below for its exact timeline.</div>
+${cards}
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
+  { label: `🌍 Score requirements by country`, href: `/eligibility/` },
+  { label: `📝 SOP samples & builder`, href: `/sop-samples/` },
+  { label: `🛂 Visa interview questions`, href: `/visa-interview/` },
+])}`;
+  emit(path, head({ title: `University Intakes & Application Deadlines by Country (2026) | ${BRAND}`, desc: `When to apply to study abroad — main and secondary intakes, application timelines and typical university deadlines for the USA, UK, Canada, Australia, Germany and more. Free.`, path, kw: "university intakes by country, study abroad application deadlines 2026, fall intake, spring intake, when to apply university abroad", jsonLdBlocks: [
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Intakes & Deadlines", path }]),
+  ] }) + shell(inner));
+}
+
 // ── Per-university pages (long-tail SEO, auto-generated from college-data) ──
 function universityPage(c) {
   const ci = C_INFO[c.country] || {};
@@ -1782,6 +1865,12 @@ SOP_SAMPLES.forEach(sopSamplePage);
 sopSamplesIndex();
 VISA_INTERVIEWS.forEach(visaInterviewPage);
 visaInterviewIndex();
+(() => {
+  const byCountry = {};
+  COLLEGES.forEach((c) => { (byCountry[c.country] = byCountry[c.country] || []).push(c); });
+  Object.keys(byCountry).forEach((country) => intakeDeadlinePage(country, byCountry[country]));
+  intakeDeadlineIndex(byCountry);
+})();
 COLLEGES.forEach(universityPage);
 // University-vs-University pages: adjacent-ranked rivals within each country
 // (top 6 per country) — high-intent "X vs Y" searches, kept to a sane count.
