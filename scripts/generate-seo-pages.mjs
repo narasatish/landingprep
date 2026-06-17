@@ -51,6 +51,7 @@ const HUB_LINKS = [
   { label: "IELTS band guides", href: "/ielts-band-guides/" },
   { label: "English test comparisons", href: "/english-test-comparisons/" },
   { label: "SOP, LOR & motivation samples", href: "/sop-samples/" },
+  { label: "Visa interview questions", href: "/visa-interview/" },
   { label: "Test requirements by country", href: "/exam-requirements-by-country/" },
   { label: "How LandingPrep works", href: "/how-it-works/" },
   { label: "Free alternatives", href: "/free-alternatives/" },
@@ -74,6 +75,8 @@ try { new Function("window", readFileSync(join(ROOT, "blog-data.jsx"), "utf8"))(
 const BLOG_EXTRA = (_cw.LP_BLOG_EXTRA || []).filter((p) => p && p.id);
 try { new Function("window", readFileSync(join(ROOT, "sop-samples.jsx"), "utf8"))(_cw); } catch (e) { console.warn("sop-samples load failed:", e.message); }
 const SOP_SAMPLES = (_cw.LP_SOP_SAMPLES || []).filter((s) => s && s.id);
+try { new Function("window", readFileSync(join(ROOT, "visa-interview-data.jsx"), "utf8"))(_cw); } catch (e) { console.warn("visa-interview load failed:", e.message); }
+const VISA_INTERVIEWS = (_cw.LP_VISA_INTERVIEWS || []).filter((v) => v && v.id);
 let EXAM_PATTERNS = {};
 try { EXAM_PATTERNS = JSON.parse(readFileSync(join(ROOT, "data", "exam-patterns.json"), "utf8").replace(/^﻿/, "")); } catch (e) { console.warn("exam-patterns load failed:", e.message); }
 
@@ -1093,6 +1096,73 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// ── Student-visa interview question banks (very high intent, evergreen) ──────────
+function visaInterviewPage(v) {
+  const path = `/visa-interview/${v.id}/`;
+  const title = `${v.title} | ${BRAND}`;
+  const desc = v.metaDesc;
+  const others = VISA_INTERVIEWS.filter((x) => x.id !== v.id);
+  const catBlocks = v.categories.map((cat) => `<div class="card"><h2>${esc(cat.h)}</h2>${cat.qs.map((q) => `<div class="vrow"><strong>${esc(q.q)}</strong><br/><span class="vex">💡 ${esc(q.how)}</span></div>`).join("")}</div>`).join("");
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/visa-interview/">Visa Interviews</a> › ${esc(v.country)}</p>
+<section class="hero">
+  <div class="badges"><span class="badge">${v.flag} ${esc(v.country)}</span><span class="badge">${esc(v.visa)}</span><span class="badge">2026</span></div>
+  <h1>${esc(v.title)}</h1>
+  <p class="lead">Genuine, consistent answers — not memorised scripts — are what pass a visa interview. Use these as practice prompts, then answer in your own words.</p>
+  <a class="cta" href="/#/colleges">▶ Plan your study abroad free</a>
+</section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> ${esc(v.quick)}</div>
+<div class="card"><h2>How the ${esc(v.visa)} assessment works</h2><p>${esc(v.format)}</p></div>
+${catBlocks}
+<div class="card"><h2>Why applications get refused</h2><ul class="bcheck">${v.rejections.map((r) => `<li>${esc(r)}</li>`).join("")}</ul></div>
+<div class="card"><h2>How to prepare</h2><ol class="bsteps">${v.tips.map((t) => `<li>${esc(t)}</li>`).join("")}</ol></div>
+<div class="card" style="border-left:4px solid #f59e0b;background:#fffbeb"><h2>⚠️ Answer honestly — never script or fake it</h2><p>Visa officers are trained to spot rehearsed or false answers, and inconsistency with your documents is the fastest way to be refused. Use these questions to <em>practise</em> and to make sure your real reasons, finances and plans are clear and consistent — never to invent a story. Always confirm current requirements on the official government website before you apply.</p></div>
+${faqBlock(v.faqs)}
+${relatedGrid([
+  { label: `🎓 Free College Predictor`, href: `/#/colleges` },
+  { label: `📝 Free SOP samples & builder`, href: `/sop-samples/` },
+  ...others.map((o) => ({ label: `${o.flag} ${o.country} visa interview`, href: `/visa-interview/${o.id}/` })),
+  { label: `🌍 Score requirements by country`, href: `/eligibility/` },
+])}`;
+  emit(path, head({ title, desc, path, kw: v.kw, jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: v.title, description: v.metaDesc,
+      author: { "@type": "Organization", name: BRAND + " editorial team", url: ORIGIN + "/about/" },
+      publisher: { "@type": "Organization", name: BRAND, logo: { "@type": "ImageObject", url: ORIGIN + "/og-image.png" } },
+      datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+    faqJsonLd(v.faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Visa Interviews", path: "/visa-interview/" }, { name: v.country, path }]),
+  ] }) + shell(inner));
+}
+function visaInterviewIndex() {
+  if (!VISA_INTERVIEWS.length) return;
+  const path = `/visa-interview/`;
+  const cards = VISA_INTERVIEWS.map((v) => `<div class="card"><h2><a href="/visa-interview/${v.id}/">${v.flag} ${esc(v.country)} — ${esc(v.visa)}</a></h2><p>${esc(v.metaDesc)}</p><a class="tile" href="/visa-interview/${v.id}/">See the questions →</a></div>`).join("");
+  const faqs = [
+    { q: "Are these visa interview guides free?", a: `Yes — every question bank, the answering guidance and the ${BRAND} study-abroad tools are 100% free, with no signup.` },
+    { q: "Should I memorise answers to visa interview questions?", a: "No. Visa officers are trained to detect rehearsed or coached answers, and any inconsistency with your documents can cause a refusal. Use these questions to practise and to make sure your genuine reasons, finances and plans are clear — then answer in your own words." },
+    { q: "How accurate is this information?", a: "It's written and fact-checked by the LandingPrep editorial team against official government sources and kept current for 2026 (for example, Canada's Student Direct Stream closed in November 2024, and Australia replaced the GTE test with the Genuine Student requirement in March 2024). Visa rules change — always confirm on the official government website before applying." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › Visa Interviews</p>
+<section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">${VISA_INTERVIEWS.length} countries</span><span class="badge">2026</span></div>
+<h1>Student Visa Interview Questions & Answers (2026)</h1>
+<p class="lead">The most common student-visa interview questions for the USA, UK, Canada and Australia — with honest guidance on how to answer each, why applications get refused, and how to prepare. Free.</p>
+<a class="cta" href="/#/colleges">▶ Plan your study abroad free</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Every student-visa interview is really one test: are you a <em>genuine</em>, funded student with a credible plan? Officers assess your reasons, your finances and (for some countries) your ties to home. The way to pass is to know your own course, costs and goals and answer honestly and consistently — never with a memorised script. Pick your destination below.</div>
+${cards}
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🎓 Free College Predictor`, href: `/#/colleges` },
+  { label: `📝 SOP, LOR & motivation samples`, href: `/sop-samples/` },
+  { label: `🌍 Score requirements by country`, href: `/eligibility/` },
+  { label: `✈️ Move-abroad checklist`, href: `/#/relocate` },
+])}`;
+  emit(path, head({ title: `Student Visa Interview Questions & Answers — USA, UK, Canada, Australia (2026) | ${BRAND}`, desc: `Free student-visa interview question banks for the USA (F-1), UK, Canada and Australia with honest answering guidance, refusal reasons and prep checklists.`, path, kw: "student visa interview questions, f1 visa interview questions, uk student visa interview, canada study permit interview, australia student visa questions", jsonLdBlocks: [
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Visa Interviews", path }]),
+  ] }) + shell(inner));
+}
+
 // ── Per-university pages (long-tail SEO, auto-generated from college-data) ──
 function universityPage(c) {
   const ci = C_INFO[c.country] || {};
@@ -1710,6 +1780,8 @@ const UNI_VS_LINK = (() => {
 })();
 SOP_SAMPLES.forEach(sopSamplePage);
 sopSamplesIndex();
+VISA_INTERVIEWS.forEach(visaInterviewPage);
+visaInterviewIndex();
 COLLEGES.forEach(universityPage);
 // University-vs-University pages: adjacent-ranked rivals within each country
 // (top 6 per country) — high-intent "X vs Y" searches, kept to a sane count.
