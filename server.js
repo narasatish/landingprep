@@ -219,6 +219,12 @@ app.get("/api/health", (_req, res) => {
 const IG_POST_SECRET   = process.env.IG_POST_SECRET || "";
 const IG_USER_ID       = process.env.IG_USER_ID || "";
 const IG_ACCESS_TOKEN  = process.env.IG_ACCESS_TOKEN || "";
+// Live Instagram token. Seeds from the env var, but the server auto-refreshes it (Instagram
+// long-lived tokens expire ~60 days from creation regardless of how little you post) and persists
+// the fresh token in Firestore — env vars can't be rewritten at runtime, so posting must read this
+// live value, never the static env var. Once seeded, the token then never lapses.
+let IG_TOKEN = IG_ACCESS_TOKEN;
+let IG_TOKEN_REFRESHED_AT = 0;
 const IG_PUBLIC_BASE   = process.env.PUBLIC_BASE_URL || "https://landingprep.com";
 // ── self-healing daily poster: post any of TODAY's slots that aren't posted yet ──
 // A Firestore log (per UTC date) records what's already gone out, so repeated catch-up
@@ -226,7 +232,7 @@ const IG_PUBLIC_BASE   = process.env.PUBLIC_BASE_URL || "https://landingprep.com
 // next run. This is what makes posting effectively mandatory even if GitHub cron flakes.
 const IG_SLOT_DUE_UTC = [2.5, 7, 10.5, 14, 16];   // when each daily slot becomes due (UTC hours)
 async function igCatchUp(ig) {
-  if (!IG_USER_ID || !IG_ACCESS_TOKEN) return { ok: false, error: "Missing IG_USER_ID / IG_ACCESS_TOKEN" };
+  if (!IG_USER_ID || !IG_TOKEN) return { ok: false, error: "Missing IG_USER_ID / IG_ACCESS_TOKEN" };
   const now = new Date(), date = now.toISOString().slice(0, 10);
   const nowH = now.getUTCHours() + now.getUTCMinutes() / 60, dow = now.getUTCDay();
   const postedNow = {}, errors = []; let log = {};
@@ -235,7 +241,7 @@ async function igCatchUp(ig) {
   // Owner-approval gate: post by default (auto-approve) UNLESS the owner explicitly REJECTED
   // today's content via the review email. A missed reply never stops posting.
   if (FS_DB) { try { const pd = await FS_DB.collection("ig_prepared").doc(date).get(); if (pd.exists && (pd.data() || {}).status === "rejected") return { ok: true, date, skipped: "owner rejected this day's content", postedNow: [], errors: [] }; } catch (e) { /* ignore — never block posting */ } }
-  const args = { baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN };
+  const args = { baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_TOKEN };
   // multi-slide carousels — Sunday (06:00 UTC) and Wednesday (08:00 UTC), different topics.
   if (dow === 0 && nowH >= 6 && !log.carousel) {
     try { const r = await ig.runCitiesCarousel(args); log.carousel = { mediaId: r.mediaId, topic: r.topic, ts: Date.now() }; postedNow.carousel = r.mediaId; if (docRef) await docRef.set(log, { merge: true }); }
@@ -385,8 +391,8 @@ app.all("/api/ig/post-daily", async (req, res) => {
     };
     try {
       const ig = require("./scripts/ig-poster.js");
-      if (IG_ACCESS_TOKEN) {
-        const info = await ig.whoami({ token: IG_ACCESS_TOKEN });
+      if (IG_TOKEN) {
+        const info = await ig.whoami({ token: IG_TOKEN });
         if (info && !info.error) { out.tokenValid = true; out.account = info.username || info.name || null; }
         else { out.tokenValid = false; out.tokenError = (info && (info.error && info.error.message || info.error)) || "unknown"; }
       }
@@ -401,6 +407,11 @@ app.all("/api/ig/post-daily", async (req, res) => {
         const pd = await FS_DB.collection("ig_prepared").doc(tmrw).get();
         out.email.tomorrowPrepared = pd.exists;
         out.email.tomorrowEmailSent = pd.exists ? ((pd.data() || {}).emailSent === true) : false;
+        const auth = await FS_DB.collection("ig_config").doc("auth").get();
+        const at = auth.exists ? (auth.data() || {}) : {};
+        out.token = { autoRefresh: true, lastRefreshedAt: at.refreshedAt ? new Date(at.refreshedAt).toISOString() : "not yet (refreshes on the next server tick)" };
+        const al = await FS_DB.collection("ig_config").doc("alerts").get();
+        out.recentAlerts = al.exists ? al.data() : null;
       }
     } catch (e) { /* ignore */ }
     out.hint = !out.env.IG_ACCESS_TOKEN ? "IG_ACCESS_TOKEN is not set in Render env."
@@ -417,8 +428,15 @@ app.all("/api/ig/post-daily", async (req, res) => {
   try { ig = require("./scripts/ig-poster.js"); }
   catch (e) { return res.status(500).json({ ok: false, error: "poster module/sharp not available: " + e.message }); }
   try {
+    // ?refreshtoken=1 → force an Instagram token refresh now (secret-gated). Verifies the
+    // refreshed token with whoami so you can confirm it worked.
+    if (String(req.query.refreshtoken || "") === "1") {
+      const rr = await refreshIgToken(true);
+      let account = null; try { const info = await ig.whoami({ token: IG_TOKEN }); if (info && !info.error) account = info.igUsername || info.username || info.name || null; } catch (e) {}
+      return res.status(rr.ok ? 200 : 500).json({ ...rr, account, tokenLength: (IG_TOKEN || "").length });
+    }
     if (String(req.query.whoami || "") === "1") {
-      const info = await ig.whoami({ token: IG_ACCESS_TOKEN });
+      const info = await ig.whoami({ token: IG_TOKEN });
       return res.json({ ok: !info.error, ...info });
     }
     // ?status=1 → READ-ONLY: today's posting log (which slots are posted / due / pending). No posting.
@@ -454,7 +472,7 @@ app.all("/api/ig/post-daily", async (req, res) => {
       const pq = String(req.query.pool);
       if (pq === "preview") return res.json({ ok: true, preview: true, pool: ig.listPool({ baseUrl: IG_PUBLIC_BASE }) });
       const index = pq === "next" ? null : Number(pq);
-      const out = await ig.runPoolPost({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN, index });
+      const out = await ig.runPoolPost({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_TOKEN, index });
       return res.json(out);
     }
     // slot: which of the 5 daily themes (0..4). If omitted, derived from the UTC hour.
@@ -464,13 +482,13 @@ app.all("/api/ig/post-daily", async (req, res) => {
     // ?carousel=1 → publish today's multi-slide carousel (add &preview=1 → just return the slide URLs)
     if (String(req.query.carousel || "") === "1") {
       if (pv) { const g = await ig.generateCarousel({ baseUrl: IG_PUBLIC_BASE }); return res.json({ ok: true, preview: true, type: "carousel", topic: g.content.topic, slides: g.imageUrls, caption: g.caption }); }
-      const out = await ig.runCarousel({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN });
+      const out = await ig.runCarousel({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_TOKEN });
       return res.json(out);
     }
     // ?cities=1 → publish this week's "Top cities to study in <country>" carousel (rotates weekly)
     if (String(req.query.cities || "") === "1") {
       if (pv) { const g = await ig.generateCitiesCarousel({ baseUrl: IG_PUBLIC_BASE }); return res.json({ ok: true, preview: true, type: "cities-carousel", country: g.country, slides: g.imageUrls, caption: g.caption }); }
-      const out = await ig.runCitiesCarousel({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN });
+      const out = await ig.runCitiesCarousel({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_TOKEN });
       return res.json(out);
     }
     if (pv) {
@@ -491,10 +509,10 @@ app.all("/api/ig/post-daily", async (req, res) => {
     }
     // ?all=1 → publish all 5 of today's posts in one run (used for the first manual test)
     if (String(req.query.all || "") === "1") {
-      const out = await ig.runAllSlots({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN });
+      const out = await ig.runAllSlots({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_TOKEN });
       return res.json(out);
     }
-    const out = await ig.runDailyPost({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_ACCESS_TOKEN, slot });
+    const out = await ig.runDailyPost({ baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_TOKEN, slot });
     res.json(out);
   } catch (e) { res.status(500).json({ ok: false, error: String((e && e.message) || e) }); }
 });
@@ -1537,6 +1555,52 @@ server.on("clientError", (err, socket) => {
   if (socket.writable && !socket.destroyed) socket.end("HTTP/1.1 400 Bad Request\r\n\r\n");
 });
 
+// ── Instagram token auto-refresh + fail-loud alerts ───────────────────────────────
+// graph.instagram.com (Instagram-Login) long-lived tokens expire ~60 days from creation, no
+// matter how little you post. The ig_refresh_token flow returns a fresh 60-day token using ONLY
+// the current token (no app secret). We refresh well before expiry and persist the new token in
+// Firestore (env can't be rewritten at runtime), so once seeded it never lapses.
+async function loadStoredToken() {
+  if (!FS_DB) return;
+  try {
+    const d = await FS_DB.collection("ig_config").doc("auth").get();
+    const data = d.exists ? (d.data() || {}) : {};
+    if (data.token && typeof data.token === "string" && data.token.length > 20) {
+      IG_TOKEN = data.token; IG_TOKEN_REFRESHED_AT = data.refreshedAt || 0;
+      console.log("[ig-token] using refreshed token from Firestore (last refresh", IG_TOKEN_REFRESHED_AT ? new Date(IG_TOKEN_REFRESHED_AT).toISOString() : "n/a", ")");
+    }
+  } catch (e) { /* keep env token */ }
+}
+async function refreshIgToken(force) {
+  if (!IG_TOKEN) return { ok: false, error: "no token to refresh" };
+  // Refresh at most once/day (the API also requires the token to be ≥24h old). Each refresh
+  // extends validity ~60 days, so refreshing daily means it can never expire.
+  if (!force && IG_TOKEN_REFRESHED_AT && (Date.now() - IG_TOKEN_REFRESHED_AT) < 24 * 3600 * 1000) return { ok: true, skipped: "refreshed <24h ago" };
+  try {
+    const r = await fetch(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${encodeURIComponent(IG_TOKEN)}`);
+    const j = await r.json().catch(() => ({}));
+    if (r.ok && j.access_token) {
+      IG_TOKEN = j.access_token; IG_TOKEN_REFRESHED_AT = Date.now();
+      if (FS_DB) { try { await FS_DB.collection("ig_config").doc("auth").set({ token: IG_TOKEN, refreshedAt: IG_TOKEN_REFRESHED_AT, expiresInSec: j.expires_in || null }, { merge: true }); } catch (e) { /* keep in-memory token */ } }
+      console.log("[ig-token] refreshed OK — valid ~" + Math.round((j.expires_in || 5184000) / 86400) + " more days");
+      return { ok: true, expiresIn: j.expires_in };
+    }
+    return { ok: false, error: (j.error && (j.error.message || JSON.stringify(j.error))) || ("HTTP " + r.status) };
+  } catch (e) { return { ok: false, error: e.message }; }
+}
+// Fail-loud alert — emails the owner the moment something fails, throttled to once per kind per
+// ~6h so a real problem is seen in minutes instead of days. Also recorded in Firestore for the self-test.
+const _lastAlert = {};
+async function igAlert(kind, detail) {
+  const now = Date.now();
+  if (_lastAlert[kind] && now - _lastAlert[kind] < 6 * 3600 * 1000) return;
+  _lastAlert[kind] = now;
+  if (FS_DB) { try { await FS_DB.collection("ig_config").doc("alerts").set({ [kind]: { detail: String(detail).slice(0, 500), at: now } }, { merge: true }); } catch (e) { /* ignore */ } }
+  const html = `<div style="font-family:system-ui;max-width:600px"><h2>⚠️ Instagram auto-poster needs attention</h2><p><b>${String(kind)}</b></p><pre style="white-space:pre-wrap;background:#f8fafc;padding:12px;border-radius:8px">${String(detail).slice(0, 1500).replace(/</g, "&lt;")}</pre><p>Open <a href="https://landingprep.com/api/ig/post-daily?selftest=1">the self-test</a>. If the token is invalid, regenerate it once in Meta and update IG_ACCESS_TOKEN in Render — auto-refresh keeps it alive after that.</p></div>`;
+  try { await sendMailRich(OWNER_EMAIL, "⚠️ LandingPrep Instagram auto-poster: " + kind, html); } catch (e) { /* ignore */ }
+  console.warn("[ig-alert]", kind, "-", String(detail).slice(0, 200));
+}
+
 // ── Instagram backup scheduler — the "never breaks" safety net ────────────────────
 // The IG automation must NOT depend solely on GitHub Actions (which can be disabled, throttled,
 // or silently lose a cron — which is exactly what broke the owner-approval email). This in-process
@@ -1549,15 +1613,26 @@ server.on("clientError", (err, socket) => {
 let _igTickBusy = false;
 async function igAutoTick(reason) {
   if (_igTickBusy) return;
-  if (!IG_USER_ID || !IG_ACCESS_TOKEN || !IG_POST_SECRET) return; // not configured → no-op
+  if (!IG_USER_ID || !IG_TOKEN || !IG_POST_SECRET) return; // not configured → no-op
   _igTickBusy = true;
   let ig;
   try { ig = require("./scripts/ig-poster.js"); }
   catch (e) { console.warn("[ig-tick] poster module not available:", e.message); _igTickBusy = false; return; }
   try {
-    // 1) Self-heal today's posting (idempotent).
-    try { const r = await igCatchUp(ig); if (r && r.postedNow && r.postedNow.length) console.log("[ig-tick] posted slots:", r.postedNow.join(",")); }
-    catch (e) { console.warn("[ig-tick] catchup:", e.message); }
+    // 0) Keep the Instagram token alive (idempotent, once/day) so it can never expire.
+    try { const tr = await refreshIgToken(); if (!tr.ok) await igAlert("token-refresh-failed", tr.error); }
+    catch (e) { console.warn("[ig-tick] token refresh:", e.message); }
+    // 1) Self-heal today's posting (idempotent). On a hard failure, alert loudly — and if it
+    //    looks token-related, force a refresh immediately so the next window self-heals.
+    try {
+      const r = await igCatchUp(ig);
+      if (r && r.postedNow && r.postedNow.length) console.log("[ig-tick] posted slots:", r.postedNow.join(","));
+      if (r && r.errors && r.errors.length) {
+        const blob = r.errors.join(" | ");
+        if (/oauth|token|expired|session|code\D*190|permission/i.test(blob)) { await refreshIgToken(true); await igAlert("posting-token-error", blob); }
+        else await igAlert("posting-error", blob);
+      }
+    } catch (e) { console.warn("[ig-tick] catchup:", e.message); await igAlert("posting-exception", e.message); }
     // 2) Evening owner-approval email for TOMORROW — once per day, ~15:00–18:00 UTC
     //    (≈20:30–23:30 IST, before the 11:59pm IST auto-approve deadline). prepareTomorrow is
     //    internally idempotent (skips if already prepared & emailed), so this is safe to call often.
@@ -1568,10 +1643,11 @@ async function igAutoTick(reason) {
     }
   } finally { _igTickBusy = false; }
 }
-// Tick every 20 min; first run shortly after boot. unref() so it never keeps the process alive on its own.
+// Tick every 20 min; first run shortly after boot (after loading any refreshed token from
+// Firestore). unref() so it never keeps the process alive on its own.
 const _igTimer = setInterval(() => { igAutoTick("interval"); }, 20 * 60 * 1000);
 if (_igTimer && _igTimer.unref) _igTimer.unref();
-setTimeout(() => { igAutoTick("boot"); }, 30 * 1000);
+setTimeout(async () => { await loadStoredToken(); igAutoTick("boot"); }, 30 * 1000);
 
 // ── Keep-warm self-ping ────────────────────────────────────────────────────────
 // Render's free tier sleeps the dyno after ~15 min idle (then a 30–45s cold start
