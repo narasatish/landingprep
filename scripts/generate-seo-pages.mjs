@@ -1164,6 +1164,78 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// ── Cost-of-studying-abroad calculator (self-contained interactive tool page) ────
+function costCalculatorPage() {
+  const path = `/tools/cost-of-studying-abroad-calculator/`;
+  const refRows = COUNTRY_DATA.map((c) => `<tr><td>${c.flag || "🎓"} <a href="/study-abroad/cost-of-studying-in-${c.id}/">${esc(c.name)}</a></td><td>${esc(c.avgTuition || "—")}</td><td>${esc(c.avgLiving || "—")}</td></tr>`).join("");
+  const faqs = [
+    { q: "How much does it cost to study abroad?", a: "It varies hugely by country: tuition can be near-zero (public universities in Germany) to US$30,000–60,000/year (USA), and living costs roughly US$10,000–20,000/year. Use the calculator above with your own numbers, and the per-country table below for typical ranges." },
+    { q: "What costs should I include in a study-abroad budget?", a: "Tuition, living (rent, food, transport), one-time costs (visa fee, flights, health insurance, a security/blocked-account deposit), plus application and English-test fees. The calculator covers tuition, living, visa, flights and other one-time costs." },
+    { q: "How can I reduce the cost of studying abroad?", a: "Scholarships, education loans, choosing lower-tuition countries (e.g. Germany), part-time work (most student visas allow ~20 hours/week), and applying early for funding all reduce the net cost." },
+  ];
+  const calc = `
+<div class="card">
+  <h2>💰 Estimate your total cost</h2>
+  <p class="note">Enter every value in the <strong>same currency</strong> (your tuition currency is easiest). Use the per-country ranges below as a guide.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:10px 0">
+    <label>Tuition per year<input id="lp_tuition" type="number" inputmode="decimal" min="0" placeholder="e.g. 30000" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Living cost per month<input id="lp_living" type="number" inputmode="decimal" min="0" placeholder="e.g. 1200" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Programme length (years)<input id="lp_years" type="number" inputmode="decimal" min="0.5" step="0.5" value="2" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Visa fee (one-time)<input id="lp_visa" type="number" inputmode="decimal" min="0" placeholder="e.g. 500" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Flights (one-time)<input id="lp_flights" type="number" inputmode="decimal" min="0" placeholder="e.g. 800" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Other one-time (insurance, deposit)<input id="lp_other" type="number" inputmode="decimal" min="0" placeholder="e.g. 1500" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button id="lp_calc_btn" class="cta" type="button" style="border:0;cursor:pointer">Calculate total cost →</button>
+  <div id="lpCalcOut" style="margin-top:12px"></div>
+</div>
+<script>
+(function(){
+  function num(id){var v=parseFloat((document.getElementById(id)||{}).value);return isNaN(v)?0:Math.max(0,v);}
+  function fmt(x){try{return Math.round(x).toLocaleString();}catch(e){return Math.round(x);}}
+  function calc(){
+    var years=num('lp_years')||1, tuition=num('lp_tuition'), living=num('lp_living');
+    var visa=num('lp_visa'), flights=num('lp_flights'), other=num('lp_other');
+    var perYear=tuition+living*12;
+    var total=perYear*years+visa+flights+other;
+    var out=document.getElementById('lpCalcOut');
+    if(out) out.innerHTML='<div class="callout money"><span class="ic">💰</span><div><strong>Per year:</strong> '+fmt(perYear)+'<br><strong>Total for '+years+' year(s):</strong> '+fmt(total)+'<br><span style="color:var(--muted);font-size:13px">Tuition + (monthly living × 12), times years, plus one-time visa, flights &amp; other costs — in the currency you entered. An estimate; confirm exact figures with your university and consulate.</span></div></div>';
+  }
+  var b=document.getElementById('lp_calc_btn');
+  if(b) b.addEventListener('click',calc);
+})();
+</script>`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › Cost of Studying Abroad Calculator</p>
+<section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">Instant</span><span class="badge">No signup</span></div>
+<h1>Cost of Studying Abroad Calculator (2026)</h1>
+<p class="lead">Add up the real cost of studying abroad — tuition, living, visa, flights and one-time costs — for your programme, instantly and free.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Your total study-abroad cost = (tuition per year + 12 × monthly living) × programme length + one-time costs (visa, flights, insurance, deposits). Tuition ranges from near-zero (public universities in Germany) to US$30,000–60,000/year (USA); living is roughly US$10,000–20,000/year. Use the calculator below with your own numbers.</div>
+${calc}
+<div class="card"><h2>Typical tuition &amp; living costs by country (2026)</h2>
+<table style="width:100%;border-collapse:collapse" class="uni-table"><thead><tr><th>Country</th><th>Tuition / year (international)</th><th>Living cost</th></tr></thead><tbody>${refRows}</tbody></table>
+<p class="note">Indicative 2026 ranges in each country's local currency — always confirm current figures with the university. Tap a country for a full cost &amp; ROI breakdown.</p></div>
+<div class="card"><h2>What's included in the cost of studying abroad</h2><ul class="bcheck">
+<li><strong>Tuition</strong> — the biggest variable; public universities in some countries are near-free, top private/US universities are the most expensive.</li>
+<li><strong>Living costs</strong> — rent, food, transport and personal expenses; big cities cost much more than smaller towns.</li>
+<li><strong>One-time costs</strong> — student-visa fee, flights, health insurance, and any security or blocked-account deposit (e.g. Germany).</li>
+<li><strong>Application costs</strong> — English test (IELTS/TOEFL/PTE), application fees, and document/courier costs.</li>
+<li><strong>Offsets</strong> — scholarships, education loans and part-time work (most student visas allow about 20 hours/week) reduce the net cost.</li>
+</ul></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🌍 Score requirements by country`, href: `/eligibility/` },
+  { label: `💸 Scholarships by country`, href: `/fully-funded-scholarships/` },
+  { label: `📅 Intakes & deadlines`, href: `/intakes/` },
+  { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
+  { label: `🔄 Score converter`, href: `/tools/english-test-score-converter/` },
+])}`;
+  emit(path, head({ title: `Cost of Studying Abroad Calculator 2026 — Free Tuition + Living Estimator | ${BRAND}`, desc: `Free cost-of-studying-abroad calculator: add tuition, living, visa, flights & one-time costs for your programme. Plus typical 2026 tuition & living ranges for every country.`, path, kw: "cost of studying abroad calculator, study abroad cost calculator, tuition and living cost calculator, how much does it cost to study abroad, study abroad budget calculator", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "Cost of Studying Abroad Calculator", applicationCategory: "FinanceApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "Cost of Studying Abroad Calculator", path }]),
+  ] }) + shell(inner));
+}
+
 // ── Intake & deadline pages per country (high-intent, from real college data) ───
 const INTAKE_NOTES = {
   USA: { slug: "usa", main: "Fall (August–September)", others: "Spring (January) and a limited Summer (May–June) intake", note: "Fall is by far the largest intake in the United States — the widest choice of programmes, funding and assistantships. Spring is a smaller second intake; Summer is rare for degree programmes." },
@@ -1865,6 +1937,7 @@ SOP_SAMPLES.forEach(sopSamplePage);
 sopSamplesIndex();
 VISA_INTERVIEWS.forEach(visaInterviewPage);
 visaInterviewIndex();
+costCalculatorPage();
 (() => {
   const byCountry = {};
   COLLEGES.forEach((c) => { (byCountry[c.country] = byCountry[c.country] || []).push(c); });

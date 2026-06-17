@@ -407,6 +407,10 @@ function Home({ onGuide, onPractice, onNav }) {
               ["🌍", "Score needed by country", "The exact English-test & admission score each country and university expects.", "/eligibility/"],
               ["💸", "Scholarships by country", "Fully-funded and merit awards with eligibility, amounts and deadlines.", "/fully-funded-scholarships/"],
               ["🛂", "Test scores for PR & visa", "IELTS, PTE & CELPIP scores for Canada, Australia & UK immigration.", "/ielts-for-canada-pr/"],
+              ["💰", "Cost of studying abroad", "Add up tuition, living, visa & flights with the free cost calculator.", "/tools/cost-of-studying-abroad-calculator/"],
+              ["🛂", "Visa interview questions", "Real F-1, UK, Canada & Australia student-visa questions, answered.", "/visa-interview/"],
+              ["📝", "SOP & LOR samples", "Complete statement-of-purpose & recommendation samples to adapt.", "/sop-samples/"],
+              ["📅", "Intakes & deadlines", "When to apply — intake seasons & deadlines for every country.", "/intakes/"],
               ["🧮", "IELTS band calculator", "Turn your raw Listening & Reading answers into the official 0–9 band.", "/tools/ielts-band-score-calculator/"],
             ].map(([ic, t, d, href]) => (
               <a key={href} className="hp-tool-card" href={href} style={{ textDecoration: "none" }}>
