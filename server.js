@@ -265,9 +265,17 @@ const OWNER_EMAIL = process.env.OWNER_EMAIL || "narasatish966@gmail.com";
 function prepToken(date, action) { return crypto.createHmac("sha256", AUTH_SECRET).update("igprep|" + action + "|" + date).digest("base64url"); }
 function prepLink(date, action) { return IG_PUBLIC_BASE + "/api/ig/review?date=" + date + "&action=" + action + "&token=" + prepToken(date, action); }
 async function sendMailRich(to, subject, html, attachments) {
-  const t = mailer(); if (!t || !html) return false;
-  try { await t.sendMail({ from: SMTP.from, to, subject, html, replyTo: SMTP.user, attachments: attachments || [] }); return true; }
-  catch (e) { console.warn("[mail] rich send failed:", e.message); return false; }
+  const t = mailer(); if (!t || !html) { if (!t) console.warn("[mail] rich send skipped: SMTP not configured (SMTP_PASS missing)"); return false; }
+  // Retry transient SMTP failures (Hostinger occasionally throttles / drops the connection)
+  // so a single hiccup doesn't silently kill the owner-approval email.
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try { await t.sendMail({ from: SMTP.from, to, subject, html, replyTo: SMTP.user, attachments: attachments || [] }); return true; }
+    catch (e) {
+      console.warn(`[mail] rich send failed (attempt ${attempt}/3):`, e.message);
+      if (attempt < 3) await new Promise((r) => setTimeout(r, 1500 * attempt));
+    }
+  }
+  return false;
 }
 // AI verification of one caption (best-effort; NEVER blocks posting). Returns { ok, issues[] }.
 async function geminiVerifyCaption(caption) {
@@ -314,10 +322,22 @@ function igDigestHtml(date, posts, carousel, allOk) {
   b += `<p style="color:#94a3b8;font-size:12px;margin-top:16px">LandingPrep auto-poster · internal owner notification.</p></div>`;
   return b;
 }
-async function prepareTomorrow(ig) {
+async function prepareTomorrow(ig, opts = {}) {
   if (!ig || !ig.generateDailyImage) return { ok: false, error: "poster not ready" };
   const tmrw = new Date(Date.now() + 24 * 3600 * 1000);
   const date = tmrw.toISOString().slice(0, 10), dow = tmrw.getUTCDay();
+  // Idempotency: if tomorrow is already prepared AND the approval email went out (or the owner
+  // already approved/rejected), don't re-render or re-email. Lets the server scheduler and the
+  // GitHub cron both call this safely without sending duplicate emails. ?prepare=1&force=1 overrides.
+  if (FS_DB && !opts.force) {
+    try {
+      const d = await FS_DB.collection("ig_prepared").doc(date).get();
+      const pd = d.exists ? (d.data() || {}) : null;
+      if (pd && (pd.emailSent === true || pd.status === "approved" || pd.status === "rejected")) {
+        return { ok: true, skipped: "already prepared & emailed", emailSent: true, date };
+      }
+    } catch (e) { /* on read error, fall through and prepare (better a rare dup than no email) */ }
+  }
   const baseUrl = IG_PUBLIC_BASE, OUT = ig.OUT_DIR;
   const posts = [], attachments = [];
   for (let slot = 0; slot < 5; slot++) {
@@ -336,8 +356,12 @@ async function prepareTomorrow(ig) {
   }
   const allOk = posts.every((p) => p.ok) && (!carousel || carousel.ok);
   if (FS_DB) { try { await FS_DB.collection("ig_prepared").doc(date).set({ date, status: "pending", allOk, posts: posts.map((p) => ({ slot: p.slot, theme: p.theme || "", ok: p.ok, issues: p.issues || [] })), carousel: carousel ? { topic: carousel.topic || "", ok: carousel.ok, issues: carousel.issues || [] } : null, preparedAt: Date.now() }, { merge: false }); } catch (e) { console.warn("[igprep] store:", e.message); } }
-  await sendMailRich(OWNER_EMAIL, `📅 Tomorrow's Instagram posts (${date}) — ${allOk ? "verified ✅" : "needs a look ⚠️"}`, igDigestHtml(date, posts, carousel, allOk), attachments);
-  return { ok: true, date, emailedTo: OWNER_EMAIL, allOk, posts: posts.map((p) => ({ slot: p.slot, ok: p.ok, issues: p.issues })), carousel: carousel && { ok: carousel.ok, issues: carousel.issues } };
+  const emailSent = await sendMailRich(OWNER_EMAIL, `📅 Tomorrow's Instagram posts (${date}) — ${allOk ? "verified ✅" : "needs a look ⚠️"}`, igDigestHtml(date, posts, carousel, allOk), attachments);
+  // Record email status on the prepared doc so the self-test / scheduler can see whether the
+  // owner-approval email actually went out (the missing-email failure mode is now visible).
+  if (FS_DB) { try { await FS_DB.collection("ig_prepared").doc(date).set({ emailSent, emailedAt: emailSent ? Date.now() : null }, { merge: true }); } catch (e) { /* ignore */ } }
+  if (!emailSent) console.warn("[igprep] approval email did NOT send for", date, "— check SMTP_PASS in env");
+  return { ok: true, emailSent, date, emailedTo: OWNER_EMAIL, allOk, posts: posts.map((p) => ({ slot: p.slot, ok: p.ok, issues: p.issues })), carousel: carousel && { ok: carousel.ok, issues: carousel.issues } };
 }
 // Owner clicks Approve / Reject from the email (signed link — no secret needed).
 app.get("/api/ig/review", async (req, res) => {
@@ -356,6 +380,8 @@ app.all("/api/ig/post-daily", async (req, res) => {
       ok: true,
       env: { IG_USER_ID: !!IG_USER_ID, IG_ACCESS_TOKEN: !!IG_ACCESS_TOKEN, IG_POST_SECRET: !!IG_POST_SECRET, FIRESTORE: !!FS_DB, IG_PUBLIC_BASE: IG_PUBLIC_BASE || null },
       tokenValid: null, tokenError: null, account: null, today: null, hint: null,
+      email: { smtpConfigured: !!SMTP.pass, ownerEmail: OWNER_EMAIL, tomorrowPrepared: null, tomorrowEmailSent: null },
+      scheduler: { serverSideBackup: !!(IG_USER_ID && IG_ACCESS_TOKEN && IG_POST_SECRET) },
     };
     try {
       const ig = require("./scripts/ig-poster.js");
@@ -371,13 +397,18 @@ app.all("/api/ig/post-daily", async (req, res) => {
         const d = await FS_DB.collection("ig_daily_log").doc(date).get();
         const log = d.exists ? (d.data() || {}) : {};
         out.today = { date, postedSlots: IG_SLOT_DUE_UTC.map((_, i) => i).filter((i) => log[i]).length, ofSlots: IG_SLOT_DUE_UTC.length, carousel: !!log.carousel, carousel2: !!log.carousel2 };
+        const tmrw = new Date(Date.now() + 24 * 3600 * 1000).toISOString().slice(0, 10);
+        const pd = await FS_DB.collection("ig_prepared").doc(tmrw).get();
+        out.email.tomorrowPrepared = pd.exists;
+        out.email.tomorrowEmailSent = pd.exists ? ((pd.data() || {}).emailSent === true) : false;
       }
     } catch (e) { /* ignore */ }
     out.hint = !out.env.IG_ACCESS_TOKEN ? "IG_ACCESS_TOKEN is not set in Render env."
       : !out.env.IG_POST_SECRET ? "IG_POST_SECRET is not set — the GitHub cron gets 403 and nothing posts."
       : out.tokenValid === false ? "Instagram token is INVALID/EXPIRED — regenerate it in Meta and update IG_ACCESS_TOKEN in Render. Catch-up self-heals once fixed."
       : !out.env.FIRESTORE ? "Firestore not configured — catch-up refuses to post without its log (to avoid duplicates)."
-      : "Config looks healthy. If posts are missing, check that the GitHub Actions cron is enabled and IG_POST_SECRET matches Render.";
+      : !out.email.smtpConfigured ? "SMTP_PASS is not set in Render env — that's why the daily owner-approval email never arrives. Posting still works; set SMTP_PASS (Hostinger mailbox password for support@landingprep.com) to get the emails."
+      : "Config looks healthy. Posting + the evening approval email now also run from the server itself (backup scheduler), so they no longer depend on GitHub Actions.";
     return res.status(200).json(out);
   }
   const key = req.query.key || req.headers["x-ig-secret"] || "";
@@ -414,7 +445,7 @@ app.all("/api/ig/post-daily", async (req, res) => {
     if (String(req.query.catchup || "") === "1") { const out = await igCatchUp(ig); return res.status(out.ok ? 200 : 207).json(out); }
     // ?prepare=1 → prepare TOMORROW's posts, AI-verify them, and email the owner for approval.
     // Run this each evening (cron). Posting auto-approves unless the owner clicks Reject.
-    if (String(req.query.prepare || "") === "1") { const out = await prepareTomorrow(ig); return res.status(out.ok ? 200 : 500).json(out); }
+    if (String(req.query.prepare || "") === "1") { const out = await prepareTomorrow(ig, { force: String(req.query.force || "") === "1" }); return res.status(out.ok && out.emailSent !== false ? 200 : 500).json(out); }
     // ── batch/pool mode (pre-made Canva posts in /ig-pool/) ───────────────────
     // ?pool=preview → list pool items (no posting)
     // ?pool=next    → post today's pool item (rotates by date)
@@ -1505,6 +1536,42 @@ server.keepAliveTimeout = 61000;    // > typical 60s LB idle to avoid 502s on Re
 server.on("clientError", (err, socket) => {
   if (socket.writable && !socket.destroyed) socket.end("HTTP/1.1 400 Bad Request\r\n\r\n");
 });
+
+// ── Instagram backup scheduler — the "never breaks" safety net ────────────────────
+// The IG automation must NOT depend solely on GitHub Actions (which can be disabled, throttled,
+// or silently lose a cron — which is exactly what broke the owner-approval email). This in-process
+// loop runs the SAME idempotent functions as the cron endpoints:
+//   • igCatchUp      — posts any due-but-unposted slot for today; Firestore-gated so it NEVER
+//                      double-posts, even alongside the GitHub cron.
+//   • prepareTomorrow — the evening owner-approval email; guarded to send exactly once per day.
+// Render keeps this instance warm via the keep-alive ping, so the loop stays alive. If GitHub
+// Actions stops entirely, posting + the daily email keep running from here.
+let _igTickBusy = false;
+async function igAutoTick(reason) {
+  if (_igTickBusy) return;
+  if (!IG_USER_ID || !IG_ACCESS_TOKEN || !IG_POST_SECRET) return; // not configured → no-op
+  _igTickBusy = true;
+  let ig;
+  try { ig = require("./scripts/ig-poster.js"); }
+  catch (e) { console.warn("[ig-tick] poster module not available:", e.message); _igTickBusy = false; return; }
+  try {
+    // 1) Self-heal today's posting (idempotent).
+    try { const r = await igCatchUp(ig); if (r && r.postedNow && r.postedNow.length) console.log("[ig-tick] posted slots:", r.postedNow.join(",")); }
+    catch (e) { console.warn("[ig-tick] catchup:", e.message); }
+    // 2) Evening owner-approval email for TOMORROW — once per day, ~15:00–18:00 UTC
+    //    (≈20:30–23:30 IST, before the 11:59pm IST auto-approve deadline). prepareTomorrow is
+    //    internally idempotent (skips if already prepared & emailed), so this is safe to call often.
+    const hUTC = new Date().getUTCHours();
+    if (FS_DB && hUTC >= 15 && hUTC < 18) {
+      try { const p = await prepareTomorrow(ig); if (p && p.emailSent && !p.skipped) console.log("[ig-tick] emailed tomorrow's approval digest:", p.date); }
+      catch (e) { console.warn("[ig-tick] prepare:", e.message); }
+    }
+  } finally { _igTickBusy = false; }
+}
+// Tick every 20 min; first run shortly after boot. unref() so it never keeps the process alive on its own.
+const _igTimer = setInterval(() => { igAutoTick("interval"); }, 20 * 60 * 1000);
+if (_igTimer && _igTimer.unref) _igTimer.unref();
+setTimeout(() => { igAutoTick("boot"); }, 30 * 1000);
 
 // ── Keep-warm self-ping ────────────────────────────────────────────────────────
 // Render's free tier sleeps the dyno after ~15 min idle (then a 30–45s cold start
