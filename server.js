@@ -1619,8 +1619,11 @@ async function igAutoTick(reason) {
   try { ig = require("./scripts/ig-poster.js"); }
   catch (e) { console.warn("[ig-tick] poster module not available:", e.message); _igTickBusy = false; return; }
   try {
-    // 0) Keep the Instagram token alive (idempotent, once/day) so it can never expire.
-    try { const tr = await refreshIgToken(); if (!tr.ok) await igAlert("token-refresh-failed", tr.error); }
+    // 0) Keep the Instagram token alive (idempotent, once/day). If the token is set to
+    //    "never expire" (a non-expiring Page token), the refresh simply doesn't apply — that's
+    //    NOT a failure, so we only log it quietly and never alert. Real token death is caught by
+    //    the posting-failure path below, which is the signal that actually matters.
+    try { const tr = await refreshIgToken(); if (!tr.ok && !tr.skipped) console.warn("[ig-token] refresh not applied (fine if your token never expires):", tr.error); }
     catch (e) { console.warn("[ig-tick] token refresh:", e.message); }
     // 1) Self-heal today's posting (idempotent). On a hard failure, alert loudly — and if it
     //    looks token-related, force a refresh immediately so the next window self-heals.
