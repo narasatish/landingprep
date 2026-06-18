@@ -1581,6 +1581,7 @@ function costPage(co) {
   <p class="lead">Tuition ${co.avgTuition} · Living ${co.avgLiving}. A full breakdown of fees, living costs, scholarships, loans and post-study earnings.</p>
   <a class="cta" href="/#/colleges/loan/${encodeURIComponent(co.name)}">▶ Free cost &amp; loan calculator</a>
 </section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Studying in ${esc(co.name)} costs about <strong>${esc(co.avgTuition)}</strong> in tuition plus <strong>${esc(co.avgLiving)}</strong> in living costs per year for international students. Scholarships, part-time work (≈20 hours/week) and ${esc((co.postStudyWork || "post-study work").toLowerCase())} bring the real, after-graduation cost down significantly. Figures are indicative for 2026 — confirm with each university.</div>
 <div class="card">
   <h2>Annual cost breakdown</h2>
   <ul>
@@ -1598,11 +1599,22 @@ function costPage(co) {
     <li><strong>Choose by ROI:</strong> ${co.name} offers ${co.postStudyWork}; model payback with the Cost &amp; ROI calculator.</li>
   </ul>
 </div>
+${Array.isArray(co.whyStudy) && co.whyStudy.length ? `<div class="card"><h2>Why ${esc(co.name)} is good value for international students</h2><ul class="bcheck">${co.whyStudy.slice(0, 5).map((w) => `<li>${esc(w)}</li>`).join("")}</ul></div>` : ""}
+${Array.isArray(co.topCities) && co.topCities.length ? `<div class="card"><h2>Living costs vary by city</h2><p>Your living budget in ${esc(co.name)} depends heavily on the city. The most popular student cities are <strong>${co.topCities.slice(0, 6).map(esc).join(", ")}</strong> — the largest cities (typically the first one or two) cost noticeably more for rent than smaller university towns, so choosing a lower-cost city can save a significant amount over your degree.</p></div>` : ""}
+${Array.isArray(co.popularPrograms) && co.popularPrograms.length ? `<div class="card"><h2>Popular programmes in ${esc(co.name)}</h2><p>International students in ${esc(co.name)} most commonly study:</p><ul class="bcheck">${co.popularPrograms.slice(0, 6).map((p) => `<li>${esc(p)}</li>`).join("")}</ul></div>` : ""}
+<div class="card"><h2>Earning it back — post-study work &amp; PR in ${esc(co.name)}</h2><ul class="bcheck">
+${co.postStudyWork ? `<li><strong>Post-study work:</strong> ${esc(co.postStudyWork)}</li>` : ""}
+${co.visaSuccess ? `<li><strong>Student-visa success rate:</strong> ≈${esc(String(co.visaSuccess))}%${co.visaNote ? ` — ${esc(co.visaNote)}` : ""}</li>` : ""}
+${co.immigration ? `<li><strong>Immigration pathway:</strong> ${esc(co.immigration)}</li>` : ""}
+${co.prTimeline ? `<li><strong>Permanent residence:</strong> ${esc(co.prTimeline)}</li>` : ""}
+</ul><p class="note">A clear post-study work and PR pathway is what turns tuition into an investment — graduates who stay and work often recover the cost within a few years.</p></div>
+${Array.isArray(co.changes) && co.changes.length ? `<div class="card"><h2>Recent updates affecting cost &amp; study in ${esc(co.name)}</h2><ul class="bcheck">${co.changes.slice(0, 4).map((c) => `<li><strong>${esc(c.d || c.date || "")}:</strong> ${esc(c.t || c.text || c)}</li>`).join("")}</ul><p class="note">Always verify current fees, visa rules and policies on official government and university websites before you apply.</p></div>` : ""}
 ${faqBlock(faqs)}
 ${relatedGrid([
-  { label: `🧮 Cost & ROI calculator`, href: `/#/colleges/loan/${encodeURIComponent(co.name)}` },
+  { label: `🧮 Cost of studying abroad calculator`, href: `/tools/cost-of-studying-abroad-calculator/` },
   { label: `Scholarships for ${co.name}`, href: `/#/colleges/scholarships/${encodeURIComponent(co.name)}` },
   { label: `Top universities in ${co.name}`, href: `/study-abroad/top-universities-in-${co.id}/` },
+  { label: `📅 Intakes & deadlines`, href: `/intakes/` },
   { label: `🔮 Free College Predictor`, href: `/#/colleges/predictor/${encodeURIComponent(co.name)}` },
 ])}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
