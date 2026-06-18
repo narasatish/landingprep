@@ -1658,7 +1658,10 @@ setTimeout(async () => { await loadStoredToken(); igAutoTick("boot"); }, 30 * 10
 // /api/health every ~13 min keeps the dyno awake so real users never hit a cold
 // start. Only runs when a public URL is known (RENDER_EXTERNAL_URL is auto-set on
 // Render) — it's a no-op locally. Fully guarded: a failed ping never crashes anything.
-const SELF_PING_URL = (process.env.RENDER_EXTERNAL_URL || process.env.SELF_PING_URL || "").replace(/\/$/, "");
+// Fall back to the known public URL so the self-ping ALWAYS runs in production even if
+// RENDER_EXTERNAL_URL isn't set — this keeps the dyno awake (and the IG posting scheduler
+// running) with zero dependence on GitHub Actions or any external pinger.
+const SELF_PING_URL = (process.env.RENDER_EXTERNAL_URL || process.env.SELF_PING_URL || (/^https:\/\//.test(IG_PUBLIC_BASE) ? IG_PUBLIC_BASE : "")).replace(/\/$/, "");
 if (SELF_PING_URL && typeof fetch === "function") {
   const warm = () => {
     try {
