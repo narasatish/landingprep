@@ -1565,9 +1565,15 @@ async function loadStoredToken() {
   try {
     const d = await FS_DB.collection("ig_config").doc("auth").get();
     const data = d.exists ? (d.data() || {}) : {};
-    if (data.token && typeof data.token === "string" && data.token.length > 20) {
+    // Only adopt the Firestore (auto-refreshed) token if it descended from the CURRENT env seed.
+    // If IG_ACCESS_TOKEN was changed in the host env — a manual re-seed after a revoked/blocked
+    // token — the stored token is stale and also broken, so we IGNORE it and use the fresh env
+    // token. This is what makes "update IG_ACCESS_TOKEN in Render" actually recover posting.
+    if (data.token && typeof data.token === "string" && data.token.length > 20 && data.seed === IG_ACCESS_TOKEN) {
       IG_TOKEN = data.token; IG_TOKEN_REFRESHED_AT = data.refreshedAt || 0;
       console.log("[ig-token] using refreshed token from Firestore (last refresh", IG_TOKEN_REFRESHED_AT ? new Date(IG_TOKEN_REFRESHED_AT).toISOString() : "n/a", ")");
+    } else if (data.token) {
+      console.log("[ig-token] env IG_ACCESS_TOKEN changed (re-seed) — ignoring stale Firestore token, using the fresh env token");
     }
   } catch (e) { /* keep env token */ }
 }
@@ -1581,7 +1587,7 @@ async function refreshIgToken(force) {
     const j = await r.json().catch(() => ({}));
     if (r.ok && j.access_token) {
       IG_TOKEN = j.access_token; IG_TOKEN_REFRESHED_AT = Date.now();
-      if (FS_DB) { try { await FS_DB.collection("ig_config").doc("auth").set({ token: IG_TOKEN, refreshedAt: IG_TOKEN_REFRESHED_AT, expiresInSec: j.expires_in || null }, { merge: true }); } catch (e) { /* keep in-memory token */ } }
+      if (FS_DB) { try { await FS_DB.collection("ig_config").doc("auth").set({ token: IG_TOKEN, seed: IG_ACCESS_TOKEN, refreshedAt: IG_TOKEN_REFRESHED_AT, expiresInSec: j.expires_in || null }, { merge: true }); } catch (e) { /* keep in-memory token */ } }
       console.log("[ig-token] refreshed OK — valid ~" + Math.round((j.expires_in || 5184000) / 86400) + " more days");
       return { ok: true, expiresIn: j.expires_in };
     }
