@@ -460,10 +460,28 @@ app.all("/api/ig/post-daily", async (req, res) => {
     }
     // ?catchup=1 → self-healing daily poster (used by the cron): posts any of today's
     // still-unposted slots, idempotent via the Firestore log. This is the reliable path.
-    if (String(req.query.catchup || "") === "1") { const out = await igCatchUp(ig); return res.status(out.ok ? 200 : 207).json(out); }
+    // Responds INSTANTLY (202) and does the posting in the background, so external cron
+    // pingers (cron-job.org has a ~30s request limit) never see a "timeout" while the
+    // server is busy rendering images. Idempotent → safe to fire-and-forget. Add &wait=1
+    // to block for the JSON result instead (handy for manual debugging).
+    if (String(req.query.catchup || "") === "1") {
+      if (String(req.query.wait || "") === "1") { const out = await igCatchUp(ig); return res.status(out.ok ? 200 : 207).json(out); }
+      res.status(202).json({ ok: true, started: true, mode: "catchup", note: "running in background" });
+      igCatchUp(ig).then((r) => { if (r && r.postedNow && r.postedNow.length) console.log("[catchup-http] posted:", r.postedNow.join(",")); if (r && r.errors && r.errors.length) console.warn("[catchup-http] errors:", r.errors.join(" | ")); })
+                   .catch((e) => console.warn("[catchup-http]", e.message));
+      return;
+    }
     // ?prepare=1 → prepare TOMORROW's posts, AI-verify them, and email the owner for approval.
     // Run this each evening (cron). Posting auto-approves unless the owner clicks Reject.
-    if (String(req.query.prepare || "") === "1") { const out = await prepareTomorrow(ig, { force: String(req.query.force || "") === "1" }); return res.status(out.ok && out.emailSent !== false ? 200 : 500).json(out); }
+    // Also background (renders 5 images + AI checks → well over a cron's timeout). &wait=1 to block.
+    if (String(req.query.prepare || "") === "1") {
+      const force = String(req.query.force || "") === "1";
+      if (String(req.query.wait || "") === "1") { const out = await prepareTomorrow(ig, { force }); return res.status(out.ok && out.emailSent !== false ? 200 : 500).json(out); }
+      res.status(202).json({ ok: true, started: true, mode: "prepare", note: "running in background" });
+      prepareTomorrow(ig, { force }).then((p) => { if (p && p.date) console.log("[prepare-http] prepared", p.date, "emailSent=" + p.emailSent); })
+                                    .catch((e) => console.warn("[prepare-http]", e.message));
+      return;
+    }
     // ── batch/pool mode (pre-made Canva posts in /ig-pool/) ───────────────────
     // ?pool=preview → list pool items (no posting)
     // ?pool=next    → post today's pool item (rotates by date)
