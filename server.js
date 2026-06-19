@@ -231,34 +231,52 @@ const IG_PUBLIC_BASE   = process.env.PUBLIC_BASE_URL || "https://landingprep.com
 // runs NEVER double-post — and a missed slot (skipped/failed cron) is caught up on the
 // next run. This is what makes posting effectively mandatory even if GitHub cron flakes.
 const IG_SLOT_DUE_UTC = [2.5, 7, 10.5, 14, 16];   // when each daily slot becomes due (UTC hours)
+let _catchupRunning = false, _catchupStartedAt = 0;
 async function igCatchUp(ig) {
   if (!IG_USER_ID || !IG_TOKEN) return { ok: false, error: "Missing IG_USER_ID / IG_ACCESS_TOKEN" };
-  const now = new Date(), date = now.toISOString().slice(0, 10);
-  const nowH = now.getUTCHours() + now.getUTCMinutes() / 60, dow = now.getUTCDay();
-  const postedNow = {}, errors = []; let log = {};
-  const docRef = FS_DB ? FS_DB.collection("ig_daily_log").doc(date) : null;
-  if (docRef) { try { const d = await docRef.get(); if (d.exists) log = d.data() || {}; } catch (e) { errors.push("log-read: " + e.message); } }
-  // Owner-approval gate: post by default (auto-approve) UNLESS the owner explicitly REJECTED
-  // today's content via the review email. A missed reply never stops posting.
-  if (FS_DB) { try { const pd = await FS_DB.collection("ig_prepared").doc(date).get(); if (pd.exists && (pd.data() || {}).status === "rejected") return { ok: true, date, skipped: "owner rejected this day's content", postedNow: [], errors: [] }; } catch (e) { /* ignore — never block posting */ } }
-  const args = { baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_TOKEN };
-  // multi-slide carousels — Sunday (06:00 UTC) and Wednesday (08:00 UTC), different topics.
-  if (dow === 0 && nowH >= 6 && !log.carousel) {
-    try { const r = await ig.runCitiesCarousel(args); log.carousel = { mediaId: r.mediaId, topic: r.topic, ts: Date.now() }; postedNow.carousel = r.mediaId; if (docRef) await docRef.set(log, { merge: true }); }
-    catch (e) { errors.push("carousel: " + String(e.message || e).slice(0, 160)); }
-  }
-  if (dow === 3 && nowH >= 8 && !log.carousel2) {
-    try { const r = await ig.runCitiesCarousel(Object.assign({ offset: 3 }, args)); log.carousel2 = { mediaId: r.mediaId, topic: r.topic, ts: Date.now() }; postedNow.carousel2 = r.mediaId; if (docRef) await docRef.set(log, { merge: true }); }
-    catch (e) { errors.push("carousel2: " + String(e.message || e).slice(0, 160)); }
-  }
-  for (let slot = 0; slot < IG_SLOT_DUE_UTC.length; slot++) {
-    if (nowH < IG_SLOT_DUE_UTC[slot] || log[slot]) continue;            // not due yet, or already posted
-    if (!docRef) { errors.push("slot" + slot + ": no Firestore log — refusing (would risk duplicates)"); continue; }
-    try { const r = await ig.runDailyPost(Object.assign({ slot }, args)); log[slot] = { mediaId: r.mediaId, ts: Date.now() }; postedNow[slot] = r.mediaId; await docRef.set(log, { merge: true }); }
-    catch (e) { errors.push("slot" + slot + ": " + String(e.message || e).slice(0, 160)); }
-    await new Promise((r) => setTimeout(r, 4000));                       // small gap between posts
-  }
-  return { ok: errors.length === 0, date, postedNow: Object.keys(postedNow), alreadyDone: Object.keys(log).filter((k) => k !== "carousel" || log.carousel), errors };
+  // GUARD against DUPLICATE POSTS — never run two catch-ups at once. The in-server scheduler,
+  // the GitHub cron and the cron-job.org ping can all fire in the same window; without this
+  // lock, two runs both read "slot not posted yet" and BOTH publish it. One Render instance,
+  // so an in-memory lock is sufficient; the per-slot Firestore claim below is a second layer.
+  // The lock auto-releases after 10 min so a hung run (a promise that never resolves) can never
+  // wedge posting forever — the finally below covers exceptions, this covers hangs.
+  if (_catchupRunning && (Date.now() - _catchupStartedAt) < 10 * 60 * 1000) return { ok: true, skipped: "another catch-up already in progress", postedNow: [], errors: [] };
+  _catchupRunning = true; _catchupStartedAt = Date.now();
+  try {
+    const now = new Date(), date = now.toISOString().slice(0, 10);
+    const nowH = now.getUTCHours() + now.getUTCMinutes() / 60, dow = now.getUTCDay();
+    const postedNow = {}, errors = []; let log = {};
+    const docRef = FS_DB ? FS_DB.collection("ig_daily_log").doc(date) : null;
+    if (docRef) { try { const d = await docRef.get(); if (d.exists) log = d.data() || {}; } catch (e) { errors.push("log-read: " + e.message); } }
+    // Owner-approval gate: post by default (auto-approve) UNLESS the owner explicitly REJECTED.
+    if (FS_DB) { try { const pd = await FS_DB.collection("ig_prepared").doc(date).get(); if (pd.exists && (pd.data() || {}).status === "rejected") return { ok: true, date, skipped: "owner rejected this day's content", postedNow: [], errors: [] }; } catch (e) { /* never block posting */ } }
+    const args = { baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_TOKEN };
+    // A slot is "done" if it has a real mediaId, or "in flight" if claimed in the last 5 min
+    // (being posted now). A stale claim (claimed, no mediaId, >5 min) means the earlier attempt
+    // failed → it may be retried. CLAIMING in Firestore BEFORE posting guarantees at-most-once.
+    const CLAIM_TTL = 5 * 60 * 1000;
+    const isDone = (e) => !!(e && (e.mediaId || (e.claimedAt && Date.now() - e.claimedAt < CLAIM_TTL)));
+    const claim = async (key) => { if (docRef) await docRef.set({ [key]: { claimedAt: Date.now() } }, { merge: true }); };
+    // multi-slide carousels — Sunday (06:00 UTC) and Wednesday (08:00 UTC), different topics.
+    if (dow === 0 && nowH >= 6 && !isDone(log.carousel)) {
+      try { await claim("carousel"); const r = await ig.runCitiesCarousel(args); log.carousel = { mediaId: r.mediaId, topic: r.topic, ts: Date.now() }; postedNow.carousel = r.mediaId; if (docRef) await docRef.set({ carousel: log.carousel }, { merge: true }); }
+      catch (e) { errors.push("carousel: " + String(e.message || e).slice(0, 160)); }
+    }
+    if (dow === 3 && nowH >= 8 && !isDone(log.carousel2)) {
+      try { await claim("carousel2"); const r = await ig.runCitiesCarousel(Object.assign({ offset: 3 }, args)); log.carousel2 = { mediaId: r.mediaId, topic: r.topic, ts: Date.now() }; postedNow.carousel2 = r.mediaId; if (docRef) await docRef.set({ carousel2: log.carousel2 }, { merge: true }); }
+      catch (e) { errors.push("carousel2: " + String(e.message || e).slice(0, 160)); }
+    }
+    for (let slot = 0; slot < IG_SLOT_DUE_UTC.length; slot++) {
+      if (nowH < IG_SLOT_DUE_UTC[slot] || isDone(log[slot])) continue;         // not due, posted, or in-flight
+      if (!docRef) { errors.push("slot" + slot + ": no Firestore log — refusing (would risk duplicates)"); continue; }
+      try { await claim(slot); log[slot] = { claimedAt: Date.now() }; }         // claim BEFORE posting → at-most-once
+      catch (e) { errors.push("slot" + slot + " claim: " + e.message); continue; }
+      try { const r = await ig.runDailyPost(Object.assign({ slot }, args)); log[slot] = { mediaId: r.mediaId, ts: Date.now() }; postedNow[slot] = r.mediaId; await docRef.set({ [slot]: log[slot] }, { merge: true }); }
+      catch (e) { errors.push("slot" + slot + ": " + String(e.message || e).slice(0, 160)); } // claim stays; TTL-expires for a later retry
+      await new Promise((r) => setTimeout(r, 4000));                            // small gap between posts
+    }
+    return { ok: errors.length === 0, date, postedNow: Object.keys(postedNow), errors };
+  } finally { _catchupRunning = false; }
 }
 
 // ── Day-ahead content prep + AI verification + owner approval email ──────────────
