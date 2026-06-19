@@ -2217,19 +2217,39 @@ function buildExamCarousel(seed) {
     caption: `🎯 The ${name} exam, fully explained 👇\n\nSwipe for sections, scoring & top tips.\n\n📲 TAG someone taking ${name}.\n📌 SAVE this guide.\n💬 When's your test? 👇\n\n👉 Free ${name} mock test — link in bio.\nFollow ${HANDLE} for daily exam prep 📚`,
     tags: buildTags(k.toLowerCase(), k.toLowerCase() + "preparation", "examprep", "mocktest", "landingprep") };
 }
+// RANKING carousel — pure save-bait: rank all countries on one real, numeric dimension.
+// 100% from country-data (visaSuccess is a clean integer), so it's always accurate.
+function buildRankingCarousel(seed) {
+  const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || [];
+  const ranked = D.filter((c) => c && c.name && typeof c.visaSuccess === "number")
+    .sort((a, b) => b.visaSuccess - a.visaSuccess);
+  if (ranked.length < 6) return null;
+  const line = (c) => `${c.flag ? c.flag + " " : ""}${c.name} — ${c.visaSuccess}% approved`;
+  const pts = ranked.map(line);
+  return { topic: "STUDENT VISA · SUCCESS RATES", accent: "#0EA5E9", flagCountry: null,
+    slides: [
+      { kind: "cover", title: "Countries with the highest student-visa approval", sub: "RANKED BY VISA SUCCESS RATE · " + YEAR },
+      { kind: "points", title: "🏆 The safest bets", points: pts.slice(0, 6) },
+      { kind: "points", title: "Strong options too", points: pts.slice(6, 12) },
+      { kind: "cta" },
+    ],
+    caption: `🛂 Student-visa approval rates, ranked 👇\n\nPicking a country with a high approval rate means less risk and stress. Swipe to see where your visa is most likely to get approved in ${YEAR}.\n\n📲 SHARE with someone choosing a country.\n📌 SAVE this comparison.\n💬 Which country are you applying to? 👇\n\n👉 Free country picker — link in bio.\nFollow ${HANDLE} for daily study-abroad data 🌍`,
+    tags: buildTags("studentvisa", "visaapproval", "studyabroad", "studyabroad2026", "landingprep") };
+}
 function finalizeCarousel(car) {
   if (!car) return null;
   const slides = car.slides.filter(Boolean).filter((s) => s.kind !== "points" || (s.points && s.points.filter(Boolean).length));
   slides.forEach((s, i) => { s.idx = i + 1; s.total = slides.length; s.accent = car.accent; });
   car.slides = slides; return car;
 }
-// rotate the daily carousel: country guide → top colleges → admission roadmap → exam guide
+// rotate the daily carousel: country guide → top colleges → admission roadmap → exam guide → visa-rankings
 function pickCarousel(now) {
-  const seed = dayNumber(now); const which = seed % 4; let car = null;
+  const seed = dayNumber(now); const which = seed % 5; let car = null;
   if (which === 0) { const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || []; if (D.length) car = buildCountryCarousel(D[seed % D.length], seed); }
   else if (which === 1) car = buildTopCollegesCarousel(seed);
   else if (which === 2) car = buildAdmissionCarousel(seed);
-  else car = buildExamCarousel(seed);
+  else if (which === 3) car = buildExamCarousel(seed);
+  else car = buildRankingCarousel(seed);
   return finalizeCarousel(car) || finalizeCarousel(buildAdmissionCarousel(seed));
 }
 async function generateCarousel({ baseUrl, now, offset }) {
