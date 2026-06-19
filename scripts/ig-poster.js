@@ -16,6 +16,8 @@ const fs = require("fs");
 const path = require("path");
 let sharp = null;
 try { sharp = require("sharp"); } catch (e) { /* installed at deploy time on Render */ }
+let _reels = null;
+try { _reels = require("./ig-reels.js"); } catch (e) { /* ffmpeg-static optional; Reels disabled if absent */ }
 
 const ROOT = path.resolve(__dirname, "..");
 const OUT_DIR = path.join(ROOT, "ig-out");
@@ -2230,7 +2232,8 @@ function pickCarousel(now) {
   else car = buildExamCarousel(seed);
   return finalizeCarousel(car) || finalizeCarousel(buildAdmissionCarousel(seed));
 }
-async function generateCarousel({ baseUrl, now }) {
+async function generateCarousel({ baseUrl, now, offset }) {
+  if (offset) now = new Date((now || new Date()).getTime() + offset * 86400000);  // shift the day → a different topic
   const car = pickCarousel(now); if (!car) throw new Error("no carousel content");
   fs.mkdirSync(OUT_DIR, { recursive: true });
   try { for (const f of fs.readdirSync(OUT_DIR)) { const fp = path.join(OUT_DIR, f); if (Date.now() - fs.statSync(fp).mtimeMs > 7200000) fs.unlinkSync(fp); } } catch (e) {}
@@ -2257,11 +2260,50 @@ async function postCarousel({ imageUrls, caption, igUserId, token }) {
   const pj = await pr.json(); if (!pr.ok || !pj.id) throw new Error("carousel publish failed: " + JSON.stringify(pj));
   return { mediaId: pj.id, slides: imageUrls.length };
 }
-async function runCarousel({ baseUrl, igUserId, token, now }) {
+async function runCarousel({ baseUrl, igUserId, token, now, offset }) {
   if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
-  const gen = await generateCarousel({ baseUrl, now });
+  const gen = await generateCarousel({ baseUrl, now, offset });
   const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
   return { ok: true, type: "carousel", topic: gen.content.topic, slides: res.slides, mediaId: res.mediaId };
+}
+
+// ── Reels (video) ────────────────────────────────────────────────────────────
+// A Reel = a vertical video slideshow of the SAME slides a carousel uses, rendered to mp4
+// by ig-reels.js (ffmpeg). The mp4 is written to /ig-out and served statically so Instagram
+// can fetch it via video_url. Reuses all the carousel content/design — just a different format.
+async function generateReel({ baseUrl, now, offset }) {
+  if (!_reels) throw new Error("Reels unavailable (ffmpeg-static not installed)");
+  const car = await generateCarousel({ baseUrl, now: offset ? new Date((now || new Date()).getTime() + offset * 86400000) : now });
+  const slidePaths = car.imageUrls.map((u) => path.join(OUT_DIR, u.split("/").pop()));
+  const out = path.join(OUT_DIR, "reel-" + Date.now() + ".mp4");
+  await _reels.buildReel({ slidePaths, per: 2.6, music: _reels.pickMusic(dayNumber(now)), out });
+  const videoUrl = (baseUrl || "").replace(/\/$/, "") + "/ig-out/" + path.basename(out);
+  return { videoUrl, caption: car.caption, topic: car.content.topic };
+}
+async function postReel({ videoUrl, caption, igUserId, token }) {
+  const v = "v21.0";
+  const cr = await fetch("https://graph.instagram.com/" + v + "/" + igUserId + "/media", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ media_type: "REELS", video_url: videoUrl, caption, share_to_feed: true, access_token: token }) });
+  const cj = await cr.json(); if (!cr.ok || !cj.id) throw new Error("reel container failed: " + JSON.stringify(cj));
+  // A Reel must finish server-side processing before it can be published. Poll status_code.
+  let status = "IN_PROGRESS";
+  for (let i = 0; i < 40 && status !== "FINISHED"; i++) {
+    await new Promise((r) => setTimeout(r, 6000));
+    try {
+      const sr = await fetch("https://graph.instagram.com/" + v + "/" + cj.id + "?fields=status_code&access_token=" + encodeURIComponent(token));
+      const sj = await sr.json(); status = (sj && sj.status_code) || status;
+      if (status === "ERROR") throw new Error("reel processing ERROR: " + JSON.stringify(sj));
+    } catch (e) { if (/ERROR/.test(e.message)) throw e; /* transient poll error → keep waiting */ }
+  }
+  if (status !== "FINISHED") throw new Error("reel not FINISHED after polling (last: " + status + ")");
+  const pr = await fetch("https://graph.instagram.com/" + v + "/" + igUserId + "/media_publish", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: cj.id, access_token: token }) });
+  const pj = await pr.json(); if (!pr.ok || !pj.id) throw new Error("reel publish failed: " + JSON.stringify(pj));
+  return { mediaId: pj.id };
+}
+async function runReel({ baseUrl, igUserId, token, now, offset }) {
+  if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
+  const gen = await generateReel({ baseUrl, now, offset });
+  const res = await postReel({ videoUrl: gen.videoUrl, caption: gen.caption, igUserId, token });
+  return { ok: true, type: "reel", topic: gen.topic, mediaId: res.mediaId };
 }
 
 // ── pre-made image pool (batch mode) ─────────────────────────────────────────
@@ -2513,4 +2555,4 @@ async function runCitiesCarousel({ baseUrl, igUserId, token, now, offset }) {
   const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
   return { ok: true, type: "carousel", topic: gen.country, slides: res.slides, mediaId: res.mediaId };
 }
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, generateReel, postReel, runReel, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
