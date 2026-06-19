@@ -2293,10 +2293,12 @@ async function runCarousel({ baseUrl, igUserId, token, now, offset }) {
 // can fetch it via video_url. Reuses all the carousel content/design — just a different format.
 async function generateReel({ baseUrl, now, offset }) {
   if (!_reels) throw new Error("Reels unavailable (ffmpeg-static not installed)");
-  const car = await generateCarousel({ baseUrl, now: offset ? new Date((now || new Date()).getTime() + offset * 86400000) : now });
+  const reelDay = offset ? new Date((now || new Date()).getTime() + offset * 86400000) : (now || new Date());
+  const car = await generateCarousel({ baseUrl, now: reelDay });
   const slidePaths = car.imageUrls.map((u) => path.join(OUT_DIR, u.split("/").pop()));
   const out = path.join(OUT_DIR, "reel-" + Date.now() + ".mp4");
-  await _reels.buildReel({ slidePaths, per: 2.6, music: _reels.pickMusic(dayNumber(now)), out });
+  // pick music by the SAME (offset) day as the content, so each day's reels rotate topic AND track
+  await _reels.buildReel({ slidePaths, per: 2.6, music: _reels.pickMusic(dayNumber(reelDay)), out });
   const videoUrl = (baseUrl || "").replace(/\/$/, "") + "/ig-out/" + path.basename(out);
   return { videoUrl, caption: car.caption, topic: car.content.topic };
 }
