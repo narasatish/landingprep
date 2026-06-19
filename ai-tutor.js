@@ -33,24 +33,29 @@
   }
   let _backendAvailable = null;
   let _backendPromise = null;
+  let _lastProbeFail = 0;
   async function checkBackend() {
-    if (_backendAvailable !== null) return _backendAvailable;
+    if (_backendAvailable === true) return true;
     if (_backendPromise) return _backendPromise;
+    if (_lastProbeFail && Date.now() - _lastProbeFail < 8e3) return false;
     _backendPromise = (async () => {
       for (const base of API_CANDIDATES) {
         try {
-          const r = await fetch(base + "/api/health", { signal: AbortSignal.timeout(2500) });
+          const r = await fetch(base + "/api/health", { signal: AbortSignal.timeout(9e3) });
           if (r.ok) {
             API_BASE = base;
             _backendAvailable = true;
+            _backendPromise = null;
             return true;
           }
         } catch (_) {
         }
       }
       _backendAvailable = false;
-      console.warn("[LP_AI_TUTOR] Backend not reachable (tried: " + API_CANDIDATES.map((b) => b || "same-origin").join(", ") + "). Using offline mode.");
-      return _backendAvailable;
+      _lastProbeFail = Date.now();
+      _backendPromise = null;
+      console.warn("[LP_AI_TUTOR] Backend not reachable yet \u2014 will retry automatically on next use.");
+      return false;
     })();
     return _backendPromise;
   }

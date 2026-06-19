@@ -58,19 +58,25 @@
   let _backendAvailable = null; // null=unknown, true/false
 
   let _backendPromise = null;
+  let _lastProbeFail = 0;
   async function checkBackend() {
-    if (_backendAvailable !== null) return _backendAvailable;
-    if (_backendPromise) return _backendPromise;        // dedupe concurrent probes
+    if (_backendAvailable === true) return true;        // once confirmed up, it stays up
+    if (_backendPromise) return _backendPromise;         // dedupe concurrent probes
+    // A failed probe is NOT cached forever — only a short back-off — so a free-tier server
+    // that was cold/asleep on the first try recovers automatically once it warms up, instead
+    // of leaving Speaking/Writing stuck "offline" for the whole session.
+    if (_lastProbeFail && (Date.now() - _lastProbeFail) < 8000) return false;
     _backendPromise = (async () => {
       for (const base of API_CANDIDATES) {
         try {
-          const r = await fetch(base + "/api/health", { signal: AbortSignal.timeout(2500) });
-          if (r.ok) { API_BASE = base; _backendAvailable = true; return true; }
+          // 9s timeout (was 2.5s): a Render cold start / slow network must not be mistaken for "offline".
+          const r = await fetch(base + "/api/health", { signal: AbortSignal.timeout(9000) });
+          if (r.ok) { API_BASE = base; _backendAvailable = true; _backendPromise = null; return true; }
         } catch (_) { /* try next candidate */ }
       }
-      _backendAvailable = false;
-      console.warn("[LP_AI_TUTOR] Backend not reachable (tried: " + API_CANDIDATES.map(b => b || "same-origin").join(", ") + "). Using offline mode.");
-      return _backendAvailable;
+      _backendAvailable = false; _lastProbeFail = Date.now(); _backendPromise = null;
+      console.warn("[LP_AI_TUTOR] Backend not reachable yet — will retry automatically on next use.");
+      return false;
     })();
     return _backendPromise;
   }
