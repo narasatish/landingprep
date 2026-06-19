@@ -32594,6 +32594,40 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
           "body": "Take a full listening test weekly under exam conditions \u2014 no pausing or replaying. Afterwards, review every error and categorise it: misheard, misread the question, didn't know the word, or spelled it wrong. The pattern reveals your real weakness so you can target it. Practise free IELTS listening tests on LandingPrep to apply these techniques and build confidence before test day."
         }
       ]
+    },
+    {
+      "id": "gmat-vs-gre-for-mba-2026",
+      "tag": "Comparison",
+      "date": "2026",
+      "title": "GMAT vs GRE for MBA 2026: Which Should You Take?",
+      "excerpt": "GMAT vs GRE for MBA admissions \u2014 what business schools prefer, score conversion, which test plays to your strengths, and a clear decision framework.",
+      "kw": "GMAT vs GRE MBA, GRE for MBA, GMAT for business school, MBA entrance exam, GMAT score MBA",
+      "sections": [
+        {
+          "h": "Format and Scale Differences",
+          "body": "The GMAT Focus Edition is scored 205\u2013805 across Quantitative, Verbal, and Data Insights, and runs about 2 hours 15 minutes. The GRE is scored 130\u2013170 each for Quantitative and Verbal (260\u2013340 combined) plus Analytical Writing 0\u20136, over about 2 hours. The GMAT is purpose-built for business reasoning (notably Data Insights), while the GRE is a general graduate-admissions test."
+        },
+        {
+          "h": "Business School Acceptance and Preference",
+          "body": "Nearly all top MBA programmes (Harvard, Stanford, Wharton, INSEAD, LBS) accept both the GMAT and the GRE. Historically more applicants take the GMAT, and many schools report GMAT averages, so it is the traditional default. GRE acceptance is now near-universal, so either is fine \u2014 choose the test on which you can score higher. Check each programme's stated policy."
+        },
+        {
+          "h": "Score Conversion (Approximate)",
+          "body": "Business schools and test makers publish concordance tools to compare GMAT and GRE scores, but the match is not exact \u2014 the GMAT's Data Insights section has no direct GRE equivalent. Report scores in each test's own scale rather than converting. Use the official GMAC and ETS comparison tools for current, accurate equivalences."
+        },
+        {
+          "h": "Which Test Plays to Your Strengths",
+          "body": "Choose the GMAT if you are strong at business-style logic, data interpretation, and multi-source reasoning. Choose the GRE if you are strong at vocabulary and reading comprehension; GRE Verbal leans heavily on these. The GRE also lets you preview your unofficial score before deciding to send it, and is often slightly cheaper. Take a practice section of each to see which suits you."
+        },
+        {
+          "h": "Admissions Impact and Decision Framework",
+          "body": "Both tests carry comparable weight, and neither guarantees admission \u2014 MBA selection is holistic, weighing work experience, essays, recommendations, and interviews alongside the test. A strong score (high GMAT or 320+ GRE) makes you competitive at top schools, but exceptional experience and essays can offset a lower score. Many applicants retake and improve. If your target school's profile centres on GMAT averages, the GMAT may signal fit."
+        },
+        {
+          "h": "Next Steps: Choosing and Preparing",
+          "body": "Take one timed practice test of each and compare your comfort and score. Prepare for 2\u20134 months with daily practice, focusing on weaker sections, and set a target around your programme's 75th percentile. Register 6\u20138 weeks before your application deadline. Practise free GMAT and GRE questions on LandingPrep to learn the question types before committing to a test."
+        }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;
