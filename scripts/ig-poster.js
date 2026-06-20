@@ -2151,6 +2151,75 @@ function slideReelHookSvg(s) {
   svg += `<text x="540" y="940" text-anchor="middle" font-family="${FONT}" font-size="40" font-weight="900" letter-spacing="0.5" fill="${BR_YELLOW}">WATCH TILL THE END →</text>`;
   return svg + `</svg>`;
 }
+// ── FULL-SCREEN 9:16 REEL SLIDES (1080×1920, edge-to-edge — no letterbox bars) ──
+// Reels render their OWN vertical slides (not the square carousel PNGs) so the video fills the
+// whole phone screen. Same brand system, taller layout. Used by generateReel.
+function reelBg(accent) {
+  return `<defs><linearGradient id="brg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${accent}"/><stop offset="1" stop-color="${lighten(accent, 0.30)}"/></linearGradient></defs>
+  <rect width="1080" height="1920" fill="url(#brg)"/>${brDots(64, 80, "rgba(255,255,255,0.5)")}${brDots(940, 1772, "rgba(255,255,255,0.4)")}
+  <circle cx="1012" cy="170" r="14" fill="${BR_YELLOW}"/><circle cx="80" cy="1792" r="16" fill="rgba(255,255,255,0.22)"/>`;
+}
+function reelHookSlide(hook, a) {
+  a = a || "#2563EB";
+  const lines = wrapPlain(hook, 14).slice(0, 5);
+  const ts = lines.length > 4 ? 92 : 110; const block = (lines.length - 1) * (ts + 16);
+  let y = 900 - block / 2;
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${reelBg(a)}${brLogoBar()}`;
+  svg += `<rect x="405" y="360" width="270" height="66" rx="33" fill="${BR_YELLOW}"/><text x="540" y="406" text-anchor="middle" font-family="${FONT}" font-size="32" font-weight="900" letter-spacing="2" fill="${BR_NAVY}">NEW · ${YEAR}</text>`;
+  lines.forEach((ln, i) => { svg += `<text x="540" y="${y + i * (ts + 16)}" text-anchor="middle" font-family="${FONT}" font-size="${ts}" font-weight="900" letter-spacing="-2" fill="#fff">${esc(ln)}</text>`; });
+  svg += `<text x="540" y="1648" text-anchor="middle" font-family="${FONT}" font-size="46" font-weight="900" letter-spacing="0.5" fill="${BR_YELLOW}">WATCH TILL THE END →</text>`;
+  return svg + `</svg>`;
+}
+function reelCoverSlide(s) {
+  const a = s.accent || "#1D4ED8";
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${reelBg(a)}${brLogoBar()}<rect x="80" y="250" width="920" height="1360" rx="52" fill="#fff"/>`;
+  svg += brPill(140, 320, s.sub || "STUDY ABROAD GUIDE", a, !!s.flagCountry);
+  const tl = wrapPlain(s.title, 13).slice(0, 4); const ts = tl.length > 3 ? 90 : 106; let y = 560;
+  tl.forEach((ln, i) => { svg += `<text x="140" y="${y + i * (ts + 8)}" font-family="${FONT}" font-size="${ts}" font-weight="900" fill="${BR_NAVY}" letter-spacing="-2">${esc(ln)}</text>`; });
+  svg += `<circle cx="820" cy="1330" r="120" fill="${hexA(a, 0.12)}"/>` + brIcon(820, 1330, 120, "cap").replace(/#fff/g, a);
+  svg += `<rect x="80" y="1684" width="920" height="120" rx="60" fill="${BR_YELLOW}"/><text x="540" y="1762" text-anchor="middle" font-family="${FONT}" font-size="44" font-weight="900" fill="${BR_NAVY}">WATCH THE FULL GUIDE →</text>`;
+  return svg + `</svg>`;
+}
+function reelPointsSlide(s) {
+  const a = s.accent || "#2563EB";
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${reelBg(a)}${brLogoBar()}<rect x="80" y="250" width="920" height="1360" rx="52" fill="#fff"/>`;
+  svg += brPill(140, 312, s.topic, a, false);
+  svg += `<circle cx="912" cy="341" r="40" fill="${BR_CARD}"/><text x="912" y="353" text-anchor="middle" font-family="${FONT}" font-size="29" font-weight="900" fill="${a}">${s.idx}/${s.total}</text>`;
+  const tl = wrapPlain(s.title, 20).slice(0, 2); let y = 480;
+  tl.forEach((ln, i) => { svg += `<text x="140" y="${y + i * 74}" font-family="${FONT}" font-size="66" font-weight="900" fill="${BR_NAVY}" letter-spacing="-1.5">${esc(ln)}</text>`; });
+  y += (tl.length - 1) * 74 + 96;
+  const pts = (s.points || []).slice(0, 5); const oh = pts.length >= 5 ? 150 : 172;
+  pts.forEach((p, i) => { const pl = wrapPlain(p, 33).slice(0, 2);
+    svg += `<rect x="140" y="${y}" width="800" height="${oh}" rx="24" fill="${BR_CARD}"/>`;
+    svg += `<circle cx="210" cy="${y + oh / 2}" r="36" fill="${a}"/><text x="210" y="${y + oh / 2 + 12}" text-anchor="middle" font-family="${FONT}" font-size="36" font-weight="900" fill="#fff">${i + 1}</text>`;
+    svg += `<text font-family="${FONT}" font-size="33" font-weight="600" fill="${BR_INK}">${tspans(pl, 278, y + (oh - (pl.length - 1) * 40) / 2 + 11, 40)}</text>`;
+    y += oh + 16;
+  });
+  svg += `<text x="540" y="1752" text-anchor="middle" font-family="${FONT}" font-size="44" font-weight="900" fill="#fff">KEEP WATCHING →</text>`;
+  return svg + `</svg>`;
+}
+function reelCtaSlide(s) {
+  const a = s.accent || "#2563EB";
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${reelBg(a)}${brLogoBar()}<rect x="80" y="300" width="920" height="1244" rx="52" fill="#fff"/>`;
+  svg += `<text x="540" y="540" text-anchor="middle" font-family="${FONT}" font-size="44" font-weight="800" fill="${a}">FOUND THIS USEFUL?</text>`;
+  svg += `<text x="540" y="752" text-anchor="middle" font-family="${FONT}" font-size="172" font-weight="900" fill="${BR_NAVY}" letter-spacing="-5">SAVE IT</text>`;
+  svg += `<text x="540" y="858" text-anchor="middle" font-family="${FONT}" font-size="50" font-weight="600" fill="${BR_INK}">and share it with a friend</text>`;
+  svg += `<circle cx="420" cy="1040" r="54" fill="${a}"/>` + brIcon(420, 1040, 54, "check") + `<circle cx="540" cy="1040" r="54" fill="${a}"/>` + brIcon(540, 1040, 54, "star") + `<circle cx="660" cy="1040" r="54" fill="${a}"/>` + brIcon(660, 1040, 54, "plane");
+  svg += `<text x="540" y="1268" text-anchor="middle" font-family="${FONT}" font-size="50" font-weight="900" fill="${BR_NAVY}">Follow ${HANDLE}</text>`;
+  svg += `<text x="540" y="1338" text-anchor="middle" font-family="${FONT}" font-size="40" font-weight="600" fill="${BR_INK}">for a daily study-abroad guide</text>`;
+  svg += `<rect x="80" y="1620" width="920" height="120" rx="60" fill="${BR_YELLOW}"/><text x="540" y="1698" text-anchor="middle" font-family="${FONT}" font-size="44" font-weight="900" fill="${BR_NAVY}">Full guide — link in bio →</text>`;
+  return svg + `</svg>`;
+}
+// Render one 9:16 reel slide → PNG. Cover composites the real flag (emoji don't render in SVG).
+async function renderReelSlidePng(s) {
+  if (!sharp) throw new Error("sharp not installed");
+  if (s.kind === "cover") {
+    const base = sharp(Buffer.from(reelCoverSlide(s)));
+    if (s.flagCountry) { try { const fb = await fetchFlag(s.flagCountry); if (fb) { const f = await sharp(fb).resize(46, 30, { fit: "cover" }).png().toBuffer(); return await base.composite([{ input: f, top: 333, left: 156 }]).png({ quality: 100 }).toBuffer(); } } catch (e) {} }
+    return await base.png({ quality: 100 }).toBuffer();
+  }
+  return await renderPng(s.kind === "cta" ? reelCtaSlide(s) : reelPointsSlide(s));
+}
 // bright final CTA slide
 function slideCTASvg(s) {
   const a = s.accent || "#2563EB";
@@ -2375,25 +2444,33 @@ async function runCarousel({ baseUrl, igUserId, token, now, offset }) {
 }
 
 // ── Reels (video) ────────────────────────────────────────────────────────────
-// A Reel = a vertical video slideshow of the SAME slides a carousel uses, rendered to mp4
-// by ig-reels.js (ffmpeg). The mp4 is written to /ig-out and served statically so Instagram
-// can fetch it via video_url. Reuses all the carousel content/design — just a different format.
+// A Reel = a FULL-SCREEN 9:16 video slideshow. It renders its OWN vertical 1080×1920 slides
+// (hook → cover → points → cta) — NOT the square carousel PNGs — so the video fills the whole
+// phone screen edge-to-edge with no letterbox bars. Same brand + content as the matching carousel.
 async function generateReel({ baseUrl, now, offset }) {
   if (!_reels) throw new Error("Reels unavailable (ffmpeg-static not installed)");
   const reelDay = offset ? new Date((now || new Date()).getTime() + offset * 86400000) : (now || new Date());
-  const car = await generateCarousel({ baseUrl, now: reelDay });
-  const slidePaths = car.imageUrls.map((u) => path.join(OUT_DIR, u.split("/").pop()));
-  // Open the Reel with a bold HOOK frame (watch-time = reach). Best-effort: if it fails, fall back to slides.
+  const car = pickCarousel(reelDay);                 // content object {topic, accent, slides, caption, flagCountry}
+  if (!car) throw new Error("no reel content");
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+  try { for (const f of fs.readdirSync(OUT_DIR)) { const fp = path.join(OUT_DIR, f); if (Date.now() - fs.statSync(fp).mtimeMs > 7200000) fs.unlinkSync(fp); } } catch (e) {}
+  const stamp = Date.now(); const slidePaths = [];
+  // 1) bold full-screen HOOK frame first (watch-time = reach)
   try {
-    const hookPng = await renderPng(slideReelHookSvg({ hook: reelHook(car.content), accent: car.content.accent }));
-    const hookName = "reelhook-" + Date.now() + ".png"; fs.writeFileSync(path.join(OUT_DIR, hookName), hookPng);
-    slidePaths.unshift(path.join(OUT_DIR, hookName));
+    const hookPng = await renderPng(reelHookSlide(reelHook(car), car.accent));
+    const hn = "reelhook-" + stamp + ".png"; fs.writeFileSync(path.join(OUT_DIR, hn), hookPng); slidePaths.push(path.join(OUT_DIR, hn));
   } catch (e) { /* no hook → reel still valid from the cover slide */ }
-  const out = path.join(OUT_DIR, "reel-" + Date.now() + ".mp4");
+  // 2) the content slides, each rendered natively at 1080×1920
+  for (let i = 0; i < car.slides.length; i++) {
+    const s = car.slides[i]; s.topic = car.topic; s.accent = car.accent;
+    const png = await renderReelSlidePng(s);
+    const nm = "reelsl-" + stamp + "-" + i + ".png"; fs.writeFileSync(path.join(OUT_DIR, nm), png); slidePaths.push(path.join(OUT_DIR, nm));
+  }
+  const out = path.join(OUT_DIR, "reel-" + stamp + ".mp4");
   // pick music by the SAME (offset) day as the content, so each day's reels rotate topic AND track
   await _reels.buildReel({ slidePaths, per: 2.6, music: _reels.pickMusic(dayNumber(reelDay)), out });
   const videoUrl = (baseUrl || "").replace(/\/$/, "") + "/ig-out/" + path.basename(out);
-  return { videoUrl, caption: car.caption, topic: car.content.topic };
+  return { videoUrl, caption: buildCaption(car), topic: car.topic };
 }
 async function postReel({ videoUrl, caption, igUserId, token }) {
   const v = "v21.0";
