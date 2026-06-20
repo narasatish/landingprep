@@ -35,6 +35,13 @@ const TRACKS = [
   { name: "lofi-dream",   chord: [130.81, 164.81, 196.00, 246.94], mood: "Cmaj7 — bright, calm" },
   { name: "lofi-study",   chord: [146.83, 174.61, 220.00, 261.63], mood: "Dm7 — focused, soft" },
   { name: "lofi-float",   chord: [164.81, 196.00, 246.94, 293.66], mood: "Em7 — airy, dreamy" },
+  { name: "lofi-sunset",  chord: [196.00, 246.94, 293.66, 369.99], mood: "Gmaj7 — golden-hour glow" },
+  { name: "lofi-rain",    chord: [116.54, 146.83, 174.61, 220.00], mood: "Bbmaj7 — deep, rainy calm" },
+  { name: "lofi-amber",   chord: [130.81, 155.56, 196.00, 233.08], mood: "Cm7 — moody, warm" },
+  { name: "lofi-velvet",  chord: [155.56, 196.00, 233.08, 293.66], mood: "Ebmaj7 — smooth, plush" },
+  { name: "lofi-drift",   chord: [123.47, 146.83, 185.00, 220.00], mood: "Bm7 — slow, reflective" },
+  { name: "lofi-glow",    chord: [110.00, 138.59, 164.81, 207.65], mood: "Amaj7 — soft, hopeful" },
+  { name: "lofi-mist",    chord: [146.83, 185.00, 220.00, 277.18], mood: "Dmaj7 — light, gentle" },
 ];
 
 // Nested-if that selects the melody note frequency for the current step index.
