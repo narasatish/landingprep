@@ -2034,11 +2034,44 @@ function captionIntro(c) {
   // country spotlight + default
   return "💡 Where you study is the biggest decision of your application — cost, work rights, PR and visa odds matter as much as the university name. Here's the quick reality so you can compare properly.";
 }
+// Deep-link a post to the most relevant REAL blog guide on landingprep.com (every slug below is a
+// live page). Drives Instagram → website traffic + brand searches, which compounds the blog's SEO.
+function blogLinkFor(c) {
+  const t = String((c && c.topic) || "").toUpperCase();
+  if (!t) return null;
+  if (/SUCCESS RATES/.test(t)) return "best-countries-study-abroad-2026";
+  if (/FASTEST PR/.test(t)) return "fastest-pr-countries-for-international-students-2026";
+  if (/WORK VISA/.test(t)) return "easiest-countries-to-immigrate-after-study-2026";
+  if (/INTAKES/.test(t)) return "fall-vs-spring-intake-which-better";
+  if (/ROADMAP/.test(t)) return "how-to-build-profile-for-ms-admission";
+  if (/TOP UNIVERSITIES/.test(t)) return "best-countries-study-abroad-2026";
+  if (/EXAM GUIDE/.test(t)) {
+    if (/GRE/.test(t)) return "gre-format-2026-complete-guide";
+    if (/GMAT/.test(t)) return "gmat-focus-edition-mock-test-free-2026";
+    if (/IELTS/.test(t)) return "how-to-get-ielts-band-7";
+    if (/TOEFL/.test(t)) return "ielts-to-toefl-score-conversion-2026";
+    if (/PTE/.test(t)) return "ielts-vs-pte-which-easier-2026";
+    if (/CELPIP/.test(t)) return "celpip-clb-9-tips";
+    if (/DUOLINGO/.test(t)) return "duolingo-english-test-guide";
+    return "free-ielts-mock-test-online-2026";
+  }
+  if (/STUDY ABROAD · /.test(t)) {
+    if (/CANADA/.test(t)) return "canada-student-visa-sds-requirements";
+    if (/AUSTRALIA/.test(t)) return "australia-genuine-student-2026";
+    if (/GERMANY/.test(t)) return "germany-opportunity-card-2026";
+    if (/USA|UNITED STATES/.test(t)) return "cost-of-studying-in-usa-for-indian-students-2026";
+    return "best-countries-study-abroad-2026";
+  }
+  return null;
+}
 function buildCaption(c) {
   let tagList = (c.tags || []).map((t) => "#" + t);
   let body = c.caption || c.headline || "";
   const intro = captionIntro(c);
   if (intro) { const i = body.indexOf("\n\n"); body = i > 0 ? body.slice(0, i) + "\n\n" + intro + body.slice(i) : intro + "\n\n" + body; }
+  // Deep-link to the matching blog guide (specific URL = brand searches + IG→site traffic).
+  const slug = blogLinkFor(c);
+  if (slug) body += `\n\n📖 Full guide → landingprep.com/blog/${slug}`;
   // Instagram hard-limits captions at 2,200 chars — exceeding it makes the post FAIL. Stay safely
   // under by trimming trailing hashtags first, then (last resort) the body. Protects reliability.
   const LIMIT = 2150;
