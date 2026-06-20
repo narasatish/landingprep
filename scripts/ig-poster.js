@@ -2617,6 +2617,33 @@ async function replyToComment({ commentId, message, token }) {
   const r = await fetch(`https://graph.instagram.com/v21.0/${commentId}/replies`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message, access_token: token }) });
   const j = await r.json().catch(() => ({})); return { ok: !!(j && j.id), id: j && j.id, error: j && j.error };
 }
+// Account + post engagement stats for the weekly report AND best-time scheduling. Every field is
+// best-effort — a missing permission or deprecated metric just leaves that field null. byHourIST
+// buckets each post's engagement by its IST hour-of-day so we can find the account's best windows.
+async function weeklyStats({ igUserId, token }) {
+  const out = { followers: null, mediaCount: null, weekPosts: 0, weekLikes: 0, weekComments: 0, top: null, reach: null, byHourIST: {}, analyzed: 0 };
+  try {
+    const r = await fetch(`https://graph.instagram.com/v21.0/${igUserId}?fields=followers_count,media_count&access_token=${encodeURIComponent(token)}`);
+    const j = await r.json(); if (!j.error) { out.followers = (j.followers_count != null ? j.followers_count : null); out.mediaCount = (j.media_count != null ? j.media_count : null); }
+  } catch (e) {}
+  try {
+    const r = await fetch(`https://graph.instagram.com/v21.0/${igUserId}/media?fields=id,caption,like_count,comments_count,media_type,timestamp,permalink&limit=50&access_token=${encodeURIComponent(token)}`);
+    const j = await r.json(); const media = j.data || []; const weekAgo = Date.now() - 7 * 86400000; let top = null;
+    for (const m of media) {
+      const ts = m.timestamp ? Date.parse(m.timestamp) : 0; const eng = (m.like_count || 0) + (m.comments_count || 0); out.analyzed++;
+      if (ts) { const d = new Date(ts); const hIST = Math.floor((((d.getUTCHours() * 60 + d.getUTCMinutes()) + 330) % 1440) / 60); const b = out.byHourIST[hIST] || { posts: 0, eng: 0 }; b.posts++; b.eng += eng; out.byHourIST[hIST] = b; }
+      if (ts >= weekAgo) { out.weekPosts++; out.weekLikes += (m.like_count || 0); out.weekComments += (m.comments_count || 0); }
+      if (!top || eng > top.eng) top = { eng, likes: m.like_count || 0, comments: m.comments_count || 0, type: m.media_type, permalink: m.permalink || "", caption: String(m.caption || "").split("\n")[0].slice(0, 90) };
+    }
+    out.top = top;
+  } catch (e) {}
+  try {
+    const since = Math.floor((Date.now() - 7 * 86400000) / 1000), until = Math.floor(Date.now() / 1000);
+    const r = await fetch(`https://graph.instagram.com/v21.0/${igUserId}/insights?metric=reach&period=day&since=${since}&until=${until}&access_token=${encodeURIComponent(token)}`);
+    const j = await r.json(); if (!j.error && j.data && j.data[0] && j.data[0].values) out.reach = j.data[0].values.reduce((a, v) => a + (v.value || 0), 0);
+  } catch (e) {}
+  return out;
+}
 
 // ── pre-made image pool (batch mode) ─────────────────────────────────────────
 // Posts are designed in Canva and dropped into /ig-pool/ alongside a pool.json
@@ -2867,4 +2894,4 @@ async function runCitiesCarousel({ baseUrl, igUserId, token, now, offset }) {
   const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
   return { ok: true, type: "carousel", topic: gen.country, slides: res.slides, mediaId: res.mediaId };
 }
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, generateReel, postReel, runReel, postFirstComment, firstCommentText, seriesTag, reelHook, generateStory, postStory, runStory, storyContent, listRecentMedia, listComments, replyToComment, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, generateReel, postReel, runReel, postFirstComment, firstCommentText, seriesTag, reelHook, generateStory, postStory, runStory, storyContent, listRecentMedia, listComments, replyToComment, weeklyStats, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };

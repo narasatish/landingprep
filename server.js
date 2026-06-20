@@ -281,8 +281,10 @@ async function igCatchUp(ig, opts) {
     const claim = async (key) => { if (docRef) await docRef.set({ [key]: { claimedAt: Date.now() } }, { merge: true }); };
     // Post each due entry of today's plan, by type (image / carousel / reel). Idempotent via the
     // claim-before-post, so concurrent triggers never double-publish.
+    const smartSched = await loadSmartSchedule();                               // null unless IG_SMART_SCHEDULE=1 + enough data
     for (const p of IG_DAILY_PLAN) {
-      if (nowH < p.dueUTC || isDone(log[p.id])) continue;                       // not due, posted, or in-flight
+      const dueUTC = (smartSched && typeof smartSched[p.id] === "number") ? smartSched[p.id] : p.dueUTC;
+      if (nowH < dueUTC || isDone(log[p.id])) continue;                         // not due, posted, or in-flight
       if (!docRef) { errors.push(p.id + ": no Firestore log — refusing (would risk duplicates)"); continue; }
       try { await claim(p.id); log[p.id] = { claimedAt: Date.now() }; }         // claim BEFORE posting → at-most-once
       catch (e) { errors.push(p.id + " claim: " + e.message); continue; }
@@ -572,6 +574,11 @@ app.all("/api/ig/post-daily", async (req, res) => {
       prepareTomorrow(ig, { force }).then((p) => { if (p && p.date) console.log("[prepare-http] prepared", p.date, "emailSent=" + p.emailSent); })
                                     .catch((e) => console.warn("[prepare-http]", e.message));
       return;
+    }
+    // ?insights=1 → send the weekly report email now (secret-gated; &force=1 to re-send same day).
+    if (String(req.query.insights || "") === "1") {
+      const out = await igWeeklyInsights(ig, String(req.query.force || "") === "1");
+      return res.status(out && out.ok ? 200 : 500).json(out || { ok: false });
     }
     // ── batch/pool mode (pre-made Canva posts in /ig-pool/) ───────────────────
     // ?pool=preview → list pool items (no posting)
@@ -1764,6 +1771,60 @@ async function igAutoReply(ig) {
   finally { _autoReplyBusy = false; }
 }
 
+// ── Weekly insights email + best-time auto-scheduling ────────────────────────────
+// Once a week we email the owner a plain report (followers, weekly likes/comments, reach, top post,
+// best posting hours) AND — only if there's enough history and IG_SMART_SCHEDULE=1 — store a
+// data-driven schedule so posting auto-shifts to the hours that actually perform.
+function bestHoursFrom(byHourIST) {
+  return Object.keys(byHourIST || {}).map((h) => ({ h: +h, posts: byHourIST[h].posts, avg: byHourIST[h].eng / Math.max(1, byHourIST[h].posts) }))
+    .filter((r) => r.posts >= 2).sort((a, b) => b.avg - a.avg);
+}
+function insightsEmailHtml(s, best) {
+  const n = (v) => (v == null ? "—" : v); const esc = (x) => String(x == null ? "" : x).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const istLabel = (h) => { const ap = h < 12 ? "am" : "pm"; const hh = (h % 12 === 0) ? 12 : h % 12; return hh + ap; };
+  const bestTxt = (best && best.length) ? best.slice(0, 5).map((r) => istLabel(r.h) + " IST").join(" · ") : "not enough data yet — keep posting and this fills in";
+  const row = (l, v) => `<tr><td style="padding:8px;border-bottom:1px solid #eef2f7">${l}</td><td style="padding:8px;border-bottom:1px solid #eef2f7;text-align:right;font-weight:700">${v}</td></tr>`;
+  const top = s.top ? `<div style="border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin:10px 0"><b>🏆 Top post</b><br>${esc(s.top.caption)}<br><span style="color:#475569">${s.top.likes} likes · ${s.top.comments} comments${s.top.permalink ? ` · <a href="${esc(s.top.permalink)}">view</a>` : ""}</span></div>` : "";
+  return `<div style="font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:640px;margin:0 auto;color:#0f172a">
+    <h2>📊 Your Instagram week — @landing_prep</h2>
+    <table style="width:100%;border-collapse:collapse;margin:8px 0">
+      ${row("👥 Followers", n(s.followers))}${row("🖼️ Posts this week", s.weekPosts)}${row("❤️ Likes this week", s.weekLikes)}${row("💬 Comments this week", s.weekComments)}${row("📈 Reach (7 days)", n(s.reach))}
+    </table>
+    ${top}
+    <div style="background:#eef2ff;border-radius:12px;padding:14px;margin:10px 0"><b>⏰ Best posting times (IST)</b><br>${bestTxt}<br><span style="color:#64748b;font-size:13px">Set <b>IG_SMART_SCHEDULE=1</b> in Render to auto-shift posts to these windows (activates once there are 15+ posts of history).</span></div>
+    <p style="color:#94a3b8;font-size:12px">Based on your last ${s.analyzed} posts. Figures are best-effort from the Instagram API.</p></div>`;
+}
+async function igWeeklyInsights(ig, force) {
+  if (!FS_DB || !IG_USER_ID || !IG_TOKEN) return { ok: false, reason: "not configured" };
+  const today = new Date().toISOString().slice(0, 10);
+  const ref = FS_DB.collection("ig_config").doc("insights");
+  if (!force) { try { const snap = await ref.get(); if (snap.exists && (snap.data() || {}).lastDate === today) return { ok: true, skipped: "already sent today" }; } catch (e) {} }
+  const s = await ig.weeklyStats({ igUserId: IG_USER_ID, token: IG_TOKEN });
+  const best = bestHoursFrom(s.byHourIST);
+  // Store a data-driven schedule once there's enough history (the plan only USES it if IG_SMART_SCHEDULE=1).
+  try {
+    if (s.analyzed >= 15 && best.length >= 6) {
+      const topHours = best.slice(0, 6).map((r) => r.h).sort((a, b) => a - b);
+      const ids = ["img1", "carA", "reelA", "img2", "carB", "reelB"]; const dueUTC = {};
+      ids.forEach((id, i) => { dueUTC[id] = ((topHours[i] - 5.5) + 24) % 24; });
+      await FS_DB.collection("ig_config").doc("schedule").set({ dueUTC, hoursIST: topHours, enough: true, computedAt: Date.now() }, { merge: true });
+    }
+  } catch (e) {}
+  const sent = await sendMailRich(OWNER_EMAIL, "📊 LandingPrep Instagram — your weekly report", insightsEmailHtml(s, best));
+  if (sent) { try { await ref.set({ lastDate: today, at: Date.now() }, { merge: true }); } catch (e) {} }
+  return { ok: true, sent, analyzed: s.analyzed, bestHoursIST: best.slice(0, 6).map((r) => r.h) };
+}
+// Data-driven schedule override (cached 1h). Returns null unless IG_SMART_SCHEDULE=1 AND a schedule
+// with enough history exists — so by default the proven static plan is used UNCHANGED.
+let _smartSched = null, _smartSchedAt = 0;
+async function loadSmartSchedule() {
+  if (process.env.IG_SMART_SCHEDULE !== "1" || !FS_DB) return null;
+  if (_smartSched && Date.now() - _smartSchedAt < 3600000) return _smartSched;
+  try { const d = await FS_DB.collection("ig_config").doc("schedule").get(); const data = d.exists ? (d.data() || {}) : {}; _smartSched = (data.enough && data.dueUTC) ? data.dueUTC : null; _smartSchedAt = Date.now(); }
+  catch (e) { _smartSched = null; }
+  return _smartSched;
+}
+
 // ── Instagram backup scheduler — the "never breaks" safety net ────────────────────
 // The IG automation must NOT depend solely on GitHub Actions (which can be disabled, throttled,
 // or silently lose a cron — which is exactly what broke the owner-approval email). This in-process
@@ -1813,6 +1874,11 @@ async function igAutoTick(reason) {
     if (FS_DB && hUTC >= 15 && hUTC < 18) {
       try { const p = await prepareTomorrow(ig); if (p && p.emailSent && !p.skipped) console.log("[ig-tick] emailed tomorrow's approval digest:", p.date); }
       catch (e) { console.warn("[ig-tick] prepare:", e.message); }
+    }
+    // 3) Weekly insights email + best-time schedule refresh — Mondays ~03:00–05:00 UTC, once/week.
+    if (FS_DB && new Date().getUTCDay() === 1 && hUTC >= 3 && hUTC < 5) {
+      try { const w = await igWeeklyInsights(ig); if (w && w.sent) console.log("[ig-tick] weekly insights emailed (analysed", w.analyzed, "posts)"); }
+      catch (e) { console.warn("[ig-tick] insights:", e.message); }
     }
   } finally { _igTickBusy = false; }
 }
