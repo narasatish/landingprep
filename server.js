@@ -299,6 +299,10 @@ async function igCatchUp(ig, opts) {
         if (IG_BLOCK_RE.test(msg)) {                                            // Meta hard-block → stop now, pause auto-attempts ~2h
           _igBlockUntil = Date.now() + 2 * 3600 * 1000;
           errors.push("⏸ Meta is blocking publishing — pausing auto-attempts ~2h so we don't escalate the block. Fix the token/permission, then hit ?catchup=1 to resume instantly.");
+          // SAFETY NET: email the owner the still-due posts (caption + media attached) so nothing is
+          // lost while blocked. Detached + throttled so it never holds or breaks the posting path.
+          const stillDue = IG_DAILY_PLAN.filter((e) => nowH >= e.dueUTC && !isDone(log[e.id]));
+          emailReadyPosts(ig, stillDue).catch(() => {});
           break;
         }
       }
@@ -329,6 +333,44 @@ async function sendMailRich(to, subject, html, attachments) {
     }
   }
   return false;
+}
+// SAFETY NET — if Instagram publishing is blocked, the content is still rendered. Rather than let
+// a post silently vanish, email the owner each due-but-unposted post: the caption + the ACTUAL
+// rendered image / carousel slides / reel video attached, so they can publish it manually in
+// seconds. Best-effort, throttled to once / 6h, detached (never holds the posting path). Auto-heals
+// the moment direct publishing works again.
+let _lastFallbackEmail = 0;
+async function emailReadyPosts(ig, dueEntries) {
+  if (!OWNER_EMAIL || !Array.isArray(dueEntries) || !dueEntries.length) return;
+  if (Date.now() - _lastFallbackEmail < 6 * 3600 * 1000) return; // one digest per block episode
+  _lastFallbackEmail = Date.now();
+  const baseUrl = IG_PUBLIC_BASE, now = new Date();
+  const localPath = (u) => path.join(ig.OUT_DIR, String(u).split("/").pop());
+  const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const attachments = []; const cards = [];
+  for (const p of dueEntries) {
+    try {
+      let topic = "", caption = "";
+      if (p.type === "carousel") {
+        const g = await ig.generateCarousel({ baseUrl, now, offset: p.offset });
+        topic = g.content.topic; caption = g.caption;
+        g.imageUrls.forEach((u, i) => { const fp = localPath(u); if (fs.existsSync(fp)) attachments.push({ filename: p.id + "-slide" + (i + 1) + ".png", path: fp }); });
+      } else if (p.type === "reel") {
+        const g = await ig.generateReel({ baseUrl, now, offset: p.offset });
+        topic = g.topic; caption = g.caption;
+        const fp = localPath(g.videoUrl); if (fs.existsSync(fp)) attachments.push({ filename: p.id + ".mp4", path: fp });
+      } else {
+        const g = await ig.generateDailyImage({ baseUrl, now, slot: p.slot });
+        topic = (g.content && g.content.category) || "Post"; caption = g.caption;
+        const fp = localPath(g.imageUrl); if (fs.existsSync(fp)) attachments.push({ filename: p.id + ".png", path: fp });
+      }
+      cards.push(`<div style="border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin:12px 0"><div style="font-weight:700;margin-bottom:6px">${esc(p.type.toUpperCase())} · ${esc(topic)}</div><pre style="white-space:pre-wrap;font-family:inherit;background:#f8fafc;padding:10px;border-radius:8px;margin:0">${esc(caption)}</pre><div style="color:#64748b;font-size:13px;margin-top:6px">📎 attached: ${esc(p.id)} media — tap, save, and post on Instagram.</div></div>`);
+    } catch (e) { /* skip this one; still email the rest */ }
+  }
+  if (!cards.length) return;
+  const html = `<div style="font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:680px;margin:0 auto;color:#0f172a"><h2 style="margin:0 0 4px">📲 Instagram auto-posting is blocked — here are today's ready posts</h2><p style="color:#475569;margin:0 0 12px">Direct publishing is temporarily blocked by Meta, so I couldn't auto-post. The content is ready below with the image/video <b>attached</b> — post it manually in a few taps. This auto-resumes the moment publishing works again; no action needed beyond posting these.</p>${cards.join("")}<p style="color:#94a3b8;font-size:12px">Check the <a href="https://landingprep.com/api/ig/post-daily?selftest=1">self-test</a> for status.</p></div>`;
+  try { await sendMailRich(OWNER_EMAIL, "📲 LandingPrep IG blocked — " + cards.length + " ready post(s) to publish manually", html, attachments); }
+  catch (e) { /* email is best-effort */ }
 }
 // AI verification of one caption (best-effort; NEVER blocks posting). Returns { ok, issues[] }.
 async function geminiVerifyCaption(caption) {
