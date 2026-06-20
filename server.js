@@ -235,6 +235,7 @@ const IG_PUBLIC_BASE   = process.env.PUBLIC_BASE_URL || "https://landingprep.com
 // `offset` shifts the source day so the two of each type are DIFFERENT topics (not duplicates).
 const IG_DAILY_PLAN = [
   { id: "img1",  type: "image",    slot: 0, dueUTC: 2.5  },   // ~08:00 IST — news/update image
+  { id: "story1",type: "story",             dueUTC: 4.0  },   // ~09:30 IST — daily fact/tip Story
   { id: "carA",  type: "carousel", offset: 0, dueUTC: 6.0  }, // ~11:30 IST — carousel #1
   { id: "reelA", type: "reel",     offset: 2, dueUTC: 9.5  }, // ~15:00 IST — reel #1
   { id: "img2",  type: "image",    slot: 2, dueUTC: 13.0 },   // ~18:30 IST — quiz/exam image
@@ -289,6 +290,7 @@ async function igCatchUp(ig, opts) {
         let r;
         if (p.type === "carousel") r = await ig.runCarousel(Object.assign({ offset: p.offset }, args));
         else if (p.type === "reel") r = await ig.runReel(Object.assign({ offset: p.offset }, args));
+        else if (p.type === "story") r = await ig.runStory(args);
         else r = await ig.runDailyPost(Object.assign({ slot: p.slot }, args));
         log[p.id] = { mediaId: r.mediaId, type: p.type, ts: Date.now() }; postedNow[p.id] = r.mediaId;
         await docRef.set({ [p.id]: log[p.id] }, { merge: true });
@@ -542,7 +544,7 @@ app.all("/api/ig/post-daily", async (req, res) => {
       }));
       const pending = slots.filter((s) => s.state.startsWith("PENDING")).map((s) => s.id);
       return res.json({ ok: true, date, nowUTC: now.toISOString(), firestore: !!FS_DB,
-        plan: "6/day (2 image · 2 carousel · 2 reel)",
+        plan: "6 posts + 1 story/day (2 image · 2 carousel · 2 reel · 1 story) + comment auto-reply",
         posted: slots.filter((s) => s.state === "posted").map((s) => s.id),
         pending, slots,
         note: pending.length ? "Pending posts self-heal on the next catch-up window." : "All due posts are done." });
@@ -1714,6 +1716,54 @@ async function igAlert(kind, detail) {
   console.warn("[ig-alert]", kind, "-", String(detail).slice(0, 200));
 }
 
+// ── Auto-reply to new comments — engagement = reach ──────────────────────────────
+// Polls the latest few posts and replies ONCE to each new top-level comment with a warm, varied,
+// non-spammy message (a question gets pointed to the free guides; praise gets a thank-you). Dedup
+// via Firestore so a comment is never replied to twice; capped per run; skips the account's own
+// comments. Best-effort — a missing permission or error never breaks posting. Toggle: IG_AUTOREPLY=0.
+let _autoReplyBusy = false, _lastAutoReply = 0, _acctUsername = null;
+async function acctUsername(ig) {
+  if (_acctUsername) return _acctUsername;
+  try { const w = await ig.whoami({ token: IG_TOKEN }); _acctUsername = (w && (w.igUsername || w.username)) || null; } catch (e) {}
+  return _acctUsername;
+}
+function autoReplyText(comment, i) {
+  const t = String((comment && comment.text) || "").toLowerCase();
+  if (/\?|how |which |when |where |can i|cost|fee|visa|ielts|toefl|gre|gmat|scholarship|loan|deadline|intake/.test(t))
+    return "Great question! 🙌 We break this down in our free guides — link in bio. Want a post on anything specific next? 👇";
+  const thanks = ["Thank you so much! 🙌 Follow for a daily study-abroad guide 🌍", "So glad this helped! 🙏 More free guides in our bio ✨", "Appreciate you! 🌍 Save it for when you apply 📌", "Thanks for the love! ✨ A new tip drops here every day 🎓"];
+  return thanks[Math.abs(i) % thanks.length];
+}
+async function igAutoReply(ig) {
+  if (process.env.IG_AUTOREPLY === "0") return;                 // kill-switch
+  if (_autoReplyBusy || !IG_USER_ID || !IG_TOKEN || !FS_DB) return;
+  if (Date.now() - _lastAutoReply < 25 * 60 * 1000) return;     // gentle cadence (~once/25 min)
+  _autoReplyBusy = true; _lastAutoReply = Date.now();
+  try {
+    const me = await acctUsername(ig);
+    const media = await ig.listRecentMedia({ igUserId: IG_USER_ID, token: IG_TOKEN, limit: 4 });
+    const ref = FS_DB.collection("ig_config").doc("replied");
+    const snap = await ref.get(); const replied = (snap.exists && (snap.data() || {}).ids) || {};
+    let count = 0; const MAX = 8;
+    for (const m of media) {
+      if (count >= MAX) break;
+      let comments = []; try { comments = await ig.listComments({ mediaId: m.id, token: IG_TOKEN }); } catch (e) { continue; }
+      for (const c of comments) {
+        if (count >= MAX) break;
+        if (!c.id || replied[c.id]) continue;
+        if (me && c.username && c.username.toLowerCase() === me.toLowerCase()) { replied[c.id] = 1; continue; } // skip our own
+        const r = await ig.replyToComment({ commentId: c.id, message: autoReplyText(c, count), token: IG_TOKEN });
+        replied[c.id] = r.ok ? Date.now() : 1;                  // mark either way → never retry-storm a bad comment
+        if (r.ok) { count++; await new Promise((rr) => setTimeout(rr, 2500)); }
+      }
+    }
+    const ids = Object.keys(replied); if (ids.length > 600) ids.slice(0, ids.length - 600).forEach((k) => delete replied[k]); // prune
+    if (count > 0 || !snap.exists) await ref.set({ ids: replied, updatedAt: Date.now() }, { merge: true });
+    if (count > 0) console.log("[ig-autoreply] replied to", count, "comment(s)");
+  } catch (e) { console.warn("[ig-autoreply]", e.message); }
+  finally { _autoReplyBusy = false; }
+}
+
 // ── Instagram backup scheduler — the "never breaks" safety net ────────────────────
 // The IG automation must NOT depend solely on GitHub Actions (which can be disabled, throttled,
 // or silently lose a cron — which is exactly what broke the owner-approval email). This in-process
@@ -1754,6 +1804,8 @@ async function igAutoTick(reason) {
         else await igAlert("posting-error", blob);
       }
     } catch (e) { console.warn("[ig-tick] catchup:", e.message); await igAlert("posting-exception", e.message); }
+    // 1b) Auto-reply to new comments (engagement → reach). Best-effort, throttled internally.
+    try { await igAutoReply(ig); } catch (e) { console.warn("[ig-tick] autoreply:", e.message); }
     // 2) Evening owner-approval email for TOMORROW — once per day, ~15:00–18:00 UTC
     //    (≈20:30–23:30 IST, before the 11:59pm IST auto-approve deadline). prepareTomorrow is
     //    internally idempotent (skips if already prepared & emailed), so this is safe to call often.

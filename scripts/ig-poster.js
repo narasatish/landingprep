@@ -2367,23 +2367,43 @@ function buildWorkVisaCarousel(seed) {
     caption: `💼 How long you can stay & WORK after graduating abroad 👇\n\nThe post-study work visa is how you turn a degree into a career (and often PR). Swipe to compare stay-back rights by country in ${YEAR}.\n\n📲 TAG a friend deciding where to study.\n📌 SAVE this guide.\n💬 Which country's work visa fits your plan? 👇\n\n👉 Free guides — link in bio.\nFollow ${HANDLE} for daily study-abroad help 💼`,
     tags: buildTags("poststudywork", "workvisa", "studyabroad", "internationalstudents", "landingprep") };
 }
+// INTAKES — when to apply, by country (Fall / Spring intakes), 100% from country-data.intakes.
+// Timely + high-save: "when do I apply?" is one of the most-asked study-abroad questions.
+function buildIntakesCarousel(seed) {
+  const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || [];
+  const rows = D.filter((c) => c && c.name && Array.isArray(c.intakes) && c.intakes.length)
+    .map((c) => ({ name: c.name, flag: c.flag, intakes: c.intakes }));
+  if (rows.length < 6) return null;
+  const pts = rows.map((r) => `${r.flag ? r.flag + " " : ""}${r.name} — ${r.intakes.join(", ")}`);
+  return { topic: "INTAKES · WHEN TO APPLY", accent: "#7C3AED", flagCountry: null,
+    slides: [
+      { kind: "cover", title: "When to apply to study abroad — intakes by country", sub: "FALL vs SPRING INTAKES · " + YEAR },
+      { kind: "points", title: "📅 Intakes by country", points: pts.slice(0, 5) },
+      { kind: "points", title: "More countries", points: pts.slice(5, 10) },
+      { kind: "points", title: "The golden rule", points: ["Apply 6–9 months BEFORE your intake month", "Fall (Aug–Sep) = the biggest intake & most scholarships", "Spring (Jan–Mar) = smaller, but less competition", "Check each university's own deadline — they vary"] },
+      { kind: "cta" },
+    ],
+    caption: `📅 When to apply to study abroad — intakes by country 👇\n\nMost students miss deadlines simply because they start late. Fall (Aug–Sep) is the biggest intake; Spring (Jan–Mar) is smaller but less competitive. The golden rule: apply 6–9 months BEFORE your intake.\n\n📲 SHARE with someone planning their application.\n📌 SAVE this so you don't miss a deadline.\n💬 Which intake are you aiming for? 👇\n\n👉 Free guides & deadlines — link in bio.\nFollow ${HANDLE} for daily study-abroad help 📅`,
+    tags: buildTags("studyabroad", "intake" + YEAR, "studyabroaddeadlines", "internationalstudents", "landingprep") };
+}
 function finalizeCarousel(car) {
   if (!car) return null;
   const slides = car.slides.filter(Boolean).filter((s) => s.kind !== "points" || (Array.isArray(s.points) && s.points.filter(Boolean).length));
   slides.forEach((s, i) => { s.idx = i + 1; s.total = slides.length; s.accent = car.accent; });
   car.slides = slides; return car;
 }
-// rotate the daily carousel across 7 formats: country guide → top colleges → roadmap → exam guide
-// → visa-success ranking → fastest-PR ranking → post-study-work comparison
+// rotate the daily carousel across 8 formats: country guide → top colleges → roadmap → exam guide
+// → visa-success ranking → fastest-PR ranking → post-study-work comparison → intakes/deadlines
 function pickCarousel(now) {
-  const seed = dayNumber(now); const which = seed % 7; let car = null;
+  const seed = dayNumber(now); const which = seed % 8; let car = null;
   if (which === 0) { const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || []; if (D.length) car = buildCountryCarousel(D[seed % D.length], seed); }
   else if (which === 1) car = buildTopCollegesCarousel(seed);
   else if (which === 2) car = buildAdmissionCarousel(seed);
   else if (which === 3) car = buildExamCarousel(seed);
   else if (which === 4) car = buildRankingCarousel(seed);
   else if (which === 5) car = buildPRRankingCarousel(seed);
-  else car = buildWorkVisaCarousel(seed);
+  else if (which === 6) car = buildWorkVisaCarousel(seed);
+  else car = buildIntakesCarousel(seed);
   return finalizeCarousel(car) || finalizeCarousel(buildAdmissionCarousel(seed));
 }
 async function generateCarousel({ baseUrl, now, offset }) {
@@ -2497,6 +2517,72 @@ async function runReel({ baseUrl, igUserId, token, now, offset }) {
   const res = await postReel({ videoUrl: gen.videoUrl, caption: gen.caption, igUserId, token });
   const comment = await postFirstComment({ mediaId: res.mediaId, igUserId, token, message: firstCommentText({ topic: gen.topic }, now) });
   return { ok: true, type: "reel", topic: gen.topic, mediaId: res.mediaId, comment: comment.ok };
+}
+
+// ── STORIES (full-screen 9:16 daily Story card) ──────────────────────────────
+// A daily Story keeps the account top-of-mind and drives profile visits → follows. Note: the IG
+// API can publish an image/video Story but CANNOT add an interactive poll/quiz sticker (Meta
+// doesn't expose sticker creation), so we design an engaging fact/tip card with a reply CTA.
+function storyContent(now) {
+  const facts = [
+    { kicker: "DID YOU KNOW?", big: "The UK approves 96% of student visas", sub: "the highest of any major study destination." },
+    { kicker: "FAST FACT", big: "PR in about 4 years", sub: "in Sweden, Finland and Denmark after you study." },
+    { kicker: "TIP OF THE DAY", big: "Apply 6 to 9 months early", sub: "Fall (Aug–Sep) has the most seats and scholarships." },
+    { kicker: "DID YOU KNOW?", big: "Germany has near-free tuition", sub: "at public universities, even for international students." },
+    { kicker: "REMINDER", big: "Your SOP beats your GPA", sub: "a clear, specific story wins over a perfect transcript." },
+    { kicker: "FAST FACT", big: "Ireland keeps 96% visa approval", sub: "with a 2-year stay-back to find work after study." },
+  ];
+  return facts[Math.abs(dayNumber(now)) % facts.length];
+}
+function storyCardSvg(c, a) {
+  a = a || "#2563EB";
+  const big = wrapPlain(c.big, 15).slice(0, 4); const ts = big.length > 3 ? 92 : 110; const block = (big.length - 1) * (ts + 12);
+  let y = 800 - block / 2;
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${reelBg(a)}${brLogoBar()}`;
+  const kw = String(c.kicker).length * 22 + 90; svg += `<rect x="${540 - kw / 2}" y="430" width="${kw}" height="70" rx="35" fill="${BR_YELLOW}"/><text x="540" y="478" text-anchor="middle" font-family="${FONT}" font-size="32" font-weight="900" letter-spacing="2" fill="${BR_NAVY}">${esc(c.kicker)}</text>`;
+  big.forEach((ln, i) => { svg += `<text x="540" y="${y + i * (ts + 12)}" text-anchor="middle" font-family="${FONT}" font-size="${ts}" font-weight="900" letter-spacing="-2" fill="#fff">${esc(ln)}</text>`; });
+  const sub = wrapPlain(c.sub, 30).slice(0, 3); let sy = y + block + ts + 36;
+  sub.forEach((ln, i) => { svg += `<text x="540" y="${sy + i * 54}" text-anchor="middle" font-family="${FONT}" font-size="42" font-weight="600" fill="rgba(255,255,255,0.92)">${esc(ln)}</text>`; });
+  svg += `<text x="540" y="1640" text-anchor="middle" font-family="${FONT}" font-size="44" font-weight="900" letter-spacing="0.5" fill="${BR_YELLOW}">SEE TODAY'S POST →</text>`;
+  return svg + `</svg>`;
+}
+async function generateStory({ baseUrl, now }) {
+  const c = storyContent(now); const accent = ["#2563EB", "#7C3AED", "#0EA5E9", "#16A34A"][Math.abs(dayNumber(now)) % 4];
+  const png = await renderPng(storyCardSvg(c, accent));
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+  const name = "story-" + Date.now() + ".png"; fs.writeFileSync(path.join(OUT_DIR, name), png);
+  return { imageUrl: (baseUrl || "").replace(/\/$/, "") + "/ig-out/" + name, content: c };
+}
+async function postStory({ imageUrl, igUserId, token }) {
+  const v = "v21.0";
+  const cr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ image_url: imageUrl, media_type: "STORIES", access_token: token }) });
+  const cj = await cr.json(); if (!cr.ok || !cj.id) throw new Error("story container failed: " + JSON.stringify(cj));
+  await new Promise((r) => setTimeout(r, 4000));
+  const pr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media_publish`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: cj.id, access_token: token }) });
+  const pj = await pr.json(); if (!pr.ok || !pj.id) throw new Error("story publish failed: " + JSON.stringify(pj));
+  return { mediaId: pj.id };
+}
+async function runStory({ baseUrl, igUserId, token, now }) {
+  if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
+  const gen = await generateStory({ baseUrl, now });
+  const res = await postStory({ imageUrl: gen.imageUrl, igUserId, token });
+  return { ok: true, type: "story", mediaId: res.mediaId };
+}
+
+// ── Comment auto-reply API wrappers (orchestration + dedup live in server.js) ──
+async function listRecentMedia({ igUserId, token, limit }) {
+  const r = await fetch(`https://graph.instagram.com/v21.0/${igUserId}/media?fields=id,caption,timestamp&limit=${limit || 4}&access_token=${encodeURIComponent(token)}`);
+  const j = await r.json(); if (j.error) throw new Error("listRecentMedia: " + JSON.stringify(j.error));
+  return (j.data || []).map((m) => ({ id: m.id, caption: m.caption || "", timestamp: m.timestamp }));
+}
+async function listComments({ mediaId, token }) {
+  const r = await fetch(`https://graph.instagram.com/v21.0/${mediaId}/comments?fields=id,text,username,timestamp&limit=50&access_token=${encodeURIComponent(token)}`);
+  const j = await r.json(); if (j.error) throw new Error("listComments: " + JSON.stringify(j.error));
+  return (j.data || []).map((c) => ({ id: c.id, text: c.text || "", username: c.username || "", timestamp: c.timestamp }));
+}
+async function replyToComment({ commentId, message, token }) {
+  const r = await fetch(`https://graph.instagram.com/v21.0/${commentId}/replies`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message, access_token: token }) });
+  const j = await r.json().catch(() => ({})); return { ok: !!(j && j.id), id: j && j.id, error: j && j.error };
 }
 
 // ── pre-made image pool (batch mode) ─────────────────────────────────────────
@@ -2748,4 +2834,4 @@ async function runCitiesCarousel({ baseUrl, igUserId, token, now, offset }) {
   const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
   return { ok: true, type: "carousel", topic: gen.country, slides: res.slides, mediaId: res.mediaId };
 }
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, generateReel, postReel, runReel, postFirstComment, firstCommentText, seriesTag, reelHook, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, generateReel, postReel, runReel, postFirstComment, firstCommentText, seriesTag, reelHook, generateStory, postStory, runStory, storyContent, listRecentMedia, listComments, replyToComment, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
