@@ -211,7 +211,7 @@ function trimDesc(d) {
   const cut = d.slice(0, 157); const sp = cut.lastIndexOf(" ");
   return (sp > 120 ? cut.slice(0, sp) : cut).replace(/[\s,;:–-]+$/, "") + "…";
 }
-function head({ title, desc, path, kw, jsonLdBlocks }) {
+function head({ title, desc, path, kw, jsonLdBlocks, robots }) {
   const url = ORIGIN + path;
   title = trimTitle(title);
   desc = trimDesc(desc);
@@ -223,7 +223,7 @@ function head({ title, desc, path, kw, jsonLdBlocks }) {
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}"/>
 <meta name="keywords" content="${esc(kw)}"/>
-<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"/>
+<meta name="robots" content="${robots || "index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"}"/>
 <link rel="canonical" href="${url}"/>
 <link rel="alternate" type="application/rss+xml" title="LandingPrep Blog" href="${ORIGIN}/feed.xml"/>
 <link rel="alternate" hreflang="en-IN" href="${url}"/>
@@ -1733,7 +1733,7 @@ ${relatedGrid([
   { label: `ℹ️ About LandingPrep`, href: `/about/` },
   { label: `🎯 Free mock tests`, href: `/#/exam-prep` },
 ])}`;
-  emit(path, head({ title, desc, path, kw, robots: "index, follow", jsonLdBlocks: [
+  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "WebPage", name: title, url: ORIGIN + path, description: desc, publisher: { "@type": "Organization", name: BRAND, url: ORIGIN } }),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Privacy Policy", path }]),
   ] }) + shell(inner));
@@ -1781,9 +1781,42 @@ ${relatedGrid([
   { label: `ℹ️ About LandingPrep`, href: `/about/` },
   { label: `🏛️ Study-abroad toolkit`, href: `/#/colleges` },
 ])}`;
-  emit(path, head({ title, desc, path, kw, robots: "index, follow", jsonLdBlocks: [
+  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "WebPage", name: title, url: ORIGIN + path, description: desc, publisher: { "@type": "Organization", name: BRAND, url: ORIGIN } }),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Terms of Service", path }]),
+  ] }) + shell(inner));
+}
+
+// Link-in-bio hub — the single Instagram bio link points here; one tap → the exact guide/tool a
+// post mentions. noindex,follow (it's a curated link menu, not original content) but passes equity.
+function linksPage() {
+  const path = `/links/`;
+  const title = `LandingPrep — Free Study-Abroad Guides & Tools`;
+  const desc = `Every free LandingPrep study-abroad guide and tool in one place: mock tests, college predictor, best countries, fastest PR, scholarships, SOP help and more. Tap any link.`;
+  const kw = `landingprep links, free study abroad guides, free mock tests, college predictor, link in bio`;
+  const LINKS = [
+    { icon: "🎓", label: "Free College Predictor & study-abroad tools", href: "/#/colleges" },
+    { icon: "📝", label: "Free mock tests — IELTS, TOEFL, PTE, GRE, GMAT", href: "/#/exam-prep" },
+    { icon: "🌍", label: "Best countries to study abroad 2026", href: "/blog/best-countries-study-abroad-2026" },
+    { icon: "⚡", label: "Fastest PR countries after study", href: "/blog/fastest-pr-countries-for-international-students-2026" },
+    { icon: "💼", label: "Easiest countries to immigrate after study", href: "/blog/easiest-countries-to-immigrate-after-study-2026" },
+    { icon: "💰", label: "Cheapest countries to study abroad", href: "/blog/cheapest-countries-to-study-abroad" },
+    { icon: "📅", label: "Fall vs Spring intake — when to apply", href: "/blog/fall-vs-spring-intake-which-better" },
+    { icon: "🎁", label: "Fully-funded scholarships 2026", href: "/blog/fully-funded-scholarships-study-abroad" },
+    { icon: "✍️", label: "How to write a strong SOP", href: "/blog/how-to-write-sop" },
+    { icon: "🎯", label: "GRE 2026 — full format & study plan", href: "/blog/gre-format-2026-complete-guide" },
+    { icon: "🗣️", label: "How to get IELTS Band 7+", href: "/blog/how-to-get-ielts-band-7" },
+  ];
+  const buttons = LINKS.map((l) => `<a href="${l.href}" style="display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:12px 0;text-decoration:none;color:#0f172a;font-weight:700;font-size:17px;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><span style="font-size:24px;line-height:1">${l.icon}</span><span>${esc(l.label)}</span></a>`).join("");
+  const inner = `
+<section class="hero" style="text-align:center">
+  <div class="badges" style="justify-content:center"><span class="badge">100% free</span><span class="badge">No signup</span></div>
+  <h1>Everything for your study-abroad journey</h1>
+  <p class="lead">Free guides, mock tests and tools — tap any link below. Follow <a href="https://instagram.com/landing_prep">@landing_prep</a> for a daily study-abroad guide.</p>
+</section>
+<div style="max-width:560px;margin:0 auto 8px">${buttons}</div>`;
+  emit(path, head({ title, desc, path, kw, robots: "noindex, follow", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebPage", name: title, url: ORIGIN + path, description: desc, publisher: { "@type": "Organization", name: BRAND, url: ORIGIN } }),
   ] }) + shell(inner));
 }
 
@@ -1935,6 +1968,7 @@ ${relatedGrid([
 aboutPage();
 privacyPage();
 termsPage();
+linksPage();
 embedPage();
 PR_COMBOS.forEach(prExamPage);
 Object.keys(EXAMS).forEach((id) => { mockPage(id); practicePage(id); });
