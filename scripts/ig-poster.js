@@ -2285,6 +2285,74 @@ async function renderCoverPng(s, photoQuery, seed) {
   if (s.flagCountry) { try { const fb = await fetchFlag(s.flagCountry); if (fb) { const f = await sharp(fb).resize(46, 30, { fit: "cover" }).png().toBuffer(); return await base.composite([{ input: f, top: 228, left: 147 }]).png({ quality: 100 }).toBuffer(); } } catch (e) {} }
   return await base.png({ quality: 100 }).toBuffer();
 }
+
+// ══ DARK "MAGAZINE" CAROUSEL THEME ══════════════════════════════════════════════
+// Matches the premium photo-style image posts the brand prefers: a dusk-skyline scene (sceneBg),
+// bold ALL-CAPS Anton headline with a yellow keyword highlight, a coloured category badge, and a
+// yellow footer bar — rendered via resvg for REAL fonts. Same content, far more professional look.
+const Y_BAR = "#FFD400";
+function darkBadge(x, y, text, accent) {
+  const t = stripEmoji(text || "").toUpperCase(); const w = 40 + t.length * 15.5;
+  return `<rect x="${x}" y="${y}" rx="14" width="${Math.round(w)}" height="58" fill="${accent}"/><text x="${Math.round(x + w / 2)}" y="${y + 39}" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="26" fill="#fff" letter-spacing="1.5">${esc(t)}</text>`;
+}
+function darkWordmark() { return `<text x="72" y="118" font-family="${BODY}" font-weight="800" font-size="34" fill="#fff">Landing<tspan fill="${Y_BAR}">Prep</tspan></text>`; }
+function darkFooterBar(text) {
+  return `<rect x="0" y="918" width="1080" height="98" fill="${Y_BAR}"/><text x="540" y="980" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="38" fill="#0a0a0a" letter-spacing="0.5">${esc(stripEmoji(text))}</text><text x="540" y="1056" text-anchor="middle" font-family="${BODY}" font-weight="700" font-size="24" fill="rgba(255,255,255,0.82)">landingprep.com</text>`;
+}
+function darkCoverSvg(s) {
+  const a = s.accent || "#2563EB";
+  const head = stripEmoji(s.title || "").toUpperCase(); const len = head.length;
+  const size = len > 42 ? 72 : len > 26 ? 92 : 112; const maxc = Math.max(8, Math.round(940 / (size * 0.52)));
+  const lines = wrapPlain(head, maxc).slice(0, 4); const lh = size * 1.02; const firstBase = 326;
+  const hiSet = new Set(String(s.flagCountry || "").toUpperCase().split(/\s+/).filter(Boolean));
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${sceneBg(a)}${darkWordmark()}`;
+  svg += darkBadge(72, 168, s.sub || "STUDY ABROAD GUIDE", a);
+  svg += capLines(lines, 72, firstBase, size, lh, hiSet, "#fff", Y_BAR);
+  svg += darkFooterBar("SWIPE TO SEE THE FULL GUIDE  →");
+  return svg + `</svg>`;
+}
+function darkPointsSvg(s) {
+  const a = s.accent || "#2563EB";
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${sceneBg(a)}${darkWordmark()}`;
+  svg += darkBadge(72, 168, s.topic, a);
+  svg += `<text x="1008" y="206" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="30" fill="rgba(255,255,255,0.7)">${s.idx}/${s.total}</text>`;
+  const tl = wrapPlain(stripEmoji(s.title || "").toUpperCase(), 20).slice(0, 2); let y = 312;
+  tl.forEach((ln, i) => { svg += `<text x="72" y="${y + i * 66}" font-family="${HEAD}" font-size="60" fill="#fff" letter-spacing="0.4">${esc(ln)}</text>`; });
+  y += (tl.length - 1) * 66 + 64;
+  const pts = (s.points || []).slice(0, 5); const bh = pts.length >= 5 ? 116 : 138;
+  pts.forEach((p, i) => { const pl = wrapPlain(stripEmoji(p), 38).slice(0, 2);
+    svg += `<rect x="72" y="${y}" width="936" height="${bh}" rx="18" fill="rgba(255,255,255,0.12)"/>`;
+    svg += `<circle cx="134" cy="${y + bh / 2}" r="30" fill="${a}"/><text x="134" y="${y + bh / 2 + 11}" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="30" fill="#fff">${i + 1}</text>`;
+    svg += `<text font-family="${BODY}" font-weight="600" font-size="29" fill="#fff">${tspans(pl, 190, y + (bh - (pl.length - 1) * 36) / 2 + 10, 36)}</text>`;
+    y += bh + 14;
+  });
+  svg += `<text x="540" y="1042" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="32" fill="${Y_BAR}">SWIPE FOR MORE  →</text>`;
+  return svg + `</svg>`;
+}
+function darkCtaSvg(s) {
+  const a = s.accent || "#2563EB";
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${sceneBg(a)}${darkWordmark()}`;
+  svg += `<text x="540" y="404" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="40" fill="${Y_BAR}">FOUND THIS USEFUL?</text>`;
+  svg += `<text x="540" y="556" text-anchor="middle" font-family="${HEAD}" font-size="156" fill="#fff" letter-spacing="1">SAVE IT</text>`;
+  svg += `<text x="540" y="636" text-anchor="middle" font-family="${BODY}" font-weight="600" font-size="44" fill="#dbe4ff">then SEND it to a friend</text>`;
+  svg += `<text x="540" y="788" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="42" fill="#fff">Follow ${esc(HANDLE)}</text>`;
+  svg += darkFooterBar("Full guide — link in bio  →");
+  return svg + `</svg>`;
+}
+// Render a carousel slide in the dark magazine theme (resvg, real fonts). Falls back to the flat
+// card if resvg isn't available, so a slide always renders.
+async function renderCarouselSlidePng(s) {
+  if (Resvg) {
+    try {
+      const svg = s.kind === "cover" ? darkCoverSvg(s) : s.kind === "cta" ? darkCtaSvg(s) : darkPointsSvg(s);
+      let buf = Buffer.from(resvgPng(svg, 1080));
+      if (s.kind === "cover" && s.flagCountry && sharp) { try { const f = await safeFlag(s.flagCountry, 52, 35); if (f) buf = await sharp(buf).composite([{ input: f, top: 168, left: 80 }]).png().toBuffer(); } catch (e) {} }
+      return buf;
+    } catch (e) { /* fall through to flat */ }
+  }
+  if (s.kind === "cover") return await renderCoverPng(s, null, 0);
+  return await renderPng(s.kind === "cta" ? slideCTASvg(s) : slidePointsSvg(s));
+}
 function buildCountryCarousel(c, seed) {
   const name = c.name, slug = name.toLowerCase().replace(/\s+/g, ""), total = 5, accent = "#E0492B";
   const costPoints = [c.avgTuition ? "Tuition: " + c.avgTuition : "", c.avgLiving ? "Living costs: " + c.avgLiving : "", c.postStudyWork ? "Post-study work: " + c.postStudyWork : "", c.visaSuccess ? "Visa success rate: ~" + c.visaSuccess + "%" : ""].filter(Boolean);
@@ -2475,7 +2543,7 @@ async function generateCarousel({ baseUrl, now, offset }) {
   const urls = []; const stamp = Date.now();
   for (let i = 0; i < car.slides.length; i++) {
     const s = car.slides[i]; s.topic = car.topic; s.accent = car.accent;
-    const png = s.kind === "cover" ? await renderCoverPng(s, car.photoQuery, dayNumber(now) + i) : s.kind === "cta" ? await renderPng(slideCTASvg(s)) : await renderPng(slidePointsSvg(s));
+    const png = await renderCarouselSlidePng(s);
     const name = `car-${stamp}-${i}.png`; fs.writeFileSync(path.join(OUT_DIR, name), png);
     urls.push(`${(baseUrl || "").replace(/\/$/, "")}/ig-out/${name}`);
   }
