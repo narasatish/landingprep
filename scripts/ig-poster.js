@@ -2246,6 +2246,12 @@ function reelCtaSlide(s) {
 }
 // Render one 9:16 reel slide → PNG. Cover composites the real flag (emoji don't render in SVG).
 async function renderReelSlidePng(s) {
+  // Dark magazine theme via resvg (real Anton fonts) to match the carousels; fall back to the light
+  // full-screen slides if resvg is unavailable, so a reel always renders.
+  if (Resvg) {
+    try { return Buffer.from(resvgPng(s.kind === "cover" ? darkReelCoverSvg(s) : s.kind === "cta" ? darkReelCtaSvg(s) : darkReelPointsSvg(s), 1080)); }
+    catch (e) { /* fall through to light */ }
+  }
   if (!sharp) throw new Error("sharp not installed");
   if (s.kind === "cover") {
     const base = sharp(Buffer.from(reelCoverSlide(s)));
@@ -2352,6 +2358,73 @@ async function renderCarouselSlidePng(s) {
   }
   if (s.kind === "cover") return await renderCoverPng(s, null, 0);
   return await renderPng(s.kind === "cta" ? slideCTASvg(s) : slidePointsSvg(s));
+}
+
+// ── DARK magazine theme for REELS (full-screen 9:16, 1080×1920) — same look as the carousels ──
+function sceneBgTall(accent) {
+  let s = `<defs><linearGradient id="skyT" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#13203f"/><stop offset="0.5" stop-color="#0c1228"/><stop offset="1" stop-color="#070a16"/></linearGradient>`;
+  s += `<radialGradient id="sunT" cx="76%" cy="13%" r="42%"><stop offset="0" stop-color="${hexA(accent, 0.5)}"/><stop offset="1" stop-color="${hexA(accent, 0)}"/></radialGradient>`;
+  s += `<linearGradient id="vgT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070d" stop-opacity="0.1"/><stop offset="0.55" stop-color="#05070d" stop-opacity="0.42"/><stop offset="1" stop-color="#05070d" stop-opacity="0.96"/></linearGradient></defs>`;
+  s += `<rect width="1080" height="1920" fill="url(#skyT)"/><circle cx="838" cy="320" r="430" fill="url(#sunT)"/>`;
+  const H = [300, 470, 360, 540, 410, 320, 500, 380, 560, 330, 450, 360, 420], baseY = 1922; let x = -30, i = 0;
+  while (x < 1110) { const h = H[i % H.length], w = 78 + (h % 70), by = baseY - h;
+    s += `<rect x="${x}" y="${by}" width="${w}" height="${h}" fill="#0a1226" opacity="0.5"/>`;
+    for (let wy = by + 26; wy < baseY - 30; wy += 36) for (let wx = x + 12; wx < x + w - 12; wx += 26) if (((wx * 5 + wy * 3 + i * 7) % 4) === 0) s += `<rect x="${wx}" y="${wy}" width="7" height="11" fill="${hexA(accent, 0.45)}"/>`;
+    x += w + 7; i++;
+  }
+  return s + `<rect width="1080" height="1920" fill="url(#vgT)"/>`;
+}
+function darkFooterBarTall(text) {
+  return `<rect x="0" y="1736" width="1080" height="110" fill="${Y_BAR}"/><text x="540" y="1806" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="42" fill="#0a0a0a" letter-spacing="0.5">${esc(stripEmoji(text))}</text><text x="540" y="1892" text-anchor="middle" font-family="${BODY}" font-weight="700" font-size="26" fill="rgba(255,255,255,0.82)">landingprep.com</text>`;
+}
+function darkReelHookSvg(hook, a) {
+  a = a || "#2563EB";
+  const lines = wrapPlain(stripEmoji(hook || "").toUpperCase(), 13).slice(0, 5); const ts = lines.length > 4 ? 92 : 112; const block = (lines.length - 1) * (ts + 8);
+  let y = 880 - block / 2;
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${sceneBgTall(a)}${darkWordmark()}`;
+  svg += `<rect x="405" y="380" rx="34" width="270" height="68" fill="${Y_BAR}"/><text x="540" y="427" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="30" fill="#0a0a0a" letter-spacing="2">NEW · ${YEAR}</text>`;
+  lines.forEach((ln, i) => { svg += `<text x="540" y="${y + i * (ts + 8)}" text-anchor="middle" font-family="${HEAD}" font-size="${ts}" fill="#fff" letter-spacing="0.5">${esc(ln)}</text>`; });
+  svg += `<text x="540" y="1648" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="46" fill="${Y_BAR}">WATCH TILL THE END →</text>`;
+  return svg + `</svg>`;
+}
+function darkReelCoverSvg(s) {
+  const a = s.accent || "#2563EB";
+  const head = stripEmoji(s.title || "").toUpperCase(); const len = head.length; const size = len > 38 ? 84 : len > 22 ? 104 : 124;
+  const lines = wrapPlain(head, Math.max(7, Math.round(940 / (size * 0.52)))).slice(0, 4); const lh = size * 1.04; const firstBase = 560;
+  const hiSet = new Set(String(s.flagCountry || "").toUpperCase().split(/\s+/).filter(Boolean));
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${sceneBgTall(a)}${darkWordmark()}`;
+  svg += darkBadge(72, 196, s.sub || "STUDY ABROAD GUIDE", a);
+  svg += capLines(lines, 72, firstBase, size, lh, hiSet, "#fff", Y_BAR);
+  svg += darkFooterBarTall("WATCH THE FULL GUIDE →");
+  return svg + `</svg>`;
+}
+function darkReelPointsSvg(s) {
+  const a = s.accent || "#2563EB";
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${sceneBgTall(a)}${darkWordmark()}`;
+  svg += darkBadge(72, 196, s.topic, a);
+  svg += `<text x="1008" y="234" text-anchor="end" font-family="${BODY}" font-weight="800" font-size="32" fill="rgba(255,255,255,0.7)">${s.idx}/${s.total}</text>`;
+  const tl = wrapPlain(stripEmoji(s.title || "").toUpperCase(), 18).slice(0, 2); let y = 360;
+  tl.forEach((ln, i) => { svg += `<text x="72" y="${y + i * 78}" font-family="${HEAD}" font-size="72" fill="#fff" letter-spacing="0.4">${esc(ln)}</text>`; });
+  y += (tl.length - 1) * 78 + 96;
+  const pts = (s.points || []).slice(0, 5); const bh = pts.length >= 5 ? 150 : 172;
+  pts.forEach((p, i) => { const pl = wrapPlain(stripEmoji(p), 34).slice(0, 2);
+    svg += `<rect x="72" y="${y}" width="936" height="${bh}" rx="22" fill="rgba(255,255,255,0.12)"/>`;
+    svg += `<circle cx="146" cy="${y + bh / 2}" r="36" fill="${a}"/><text x="146" y="${y + bh / 2 + 12}" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="36" fill="#fff">${i + 1}</text>`;
+    svg += `<text font-family="${BODY}" font-weight="600" font-size="33" fill="#fff">${tspans(pl, 214, y + (bh - (pl.length - 1) * 40) / 2 + 11, 40)}</text>`;
+    y += bh + 16;
+  });
+  svg += `<text x="540" y="1664" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="44" fill="${Y_BAR}">KEEP WATCHING →</text>`;
+  return svg + `</svg>`;
+}
+function darkReelCtaSvg(s) {
+  const a = s.accent || "#2563EB";
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${sceneBgTall(a)}${darkWordmark()}`;
+  svg += `<text x="540" y="700" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="46" fill="${Y_BAR}">FOUND THIS USEFUL?</text>`;
+  svg += `<text x="540" y="880" text-anchor="middle" font-family="${HEAD}" font-size="190" fill="#fff" letter-spacing="1">SAVE IT</text>`;
+  svg += `<text x="540" y="976" text-anchor="middle" font-family="${BODY}" font-weight="600" font-size="50" fill="#dbe4ff">then SEND it to a friend</text>`;
+  svg += `<text x="540" y="1180" text-anchor="middle" font-family="${BODY}" font-weight="800" font-size="50" fill="#fff">Follow ${esc(HANDLE)}</text>`;
+  svg += darkFooterBarTall("Full guide — link in bio →");
+  return svg + `</svg>`;
 }
 function buildCountryCarousel(c, seed) {
   const name = c.name, slug = name.toLowerCase().replace(/\s+/g, ""), total = 5, accent = "#E0492B";
@@ -2607,7 +2680,7 @@ async function generateReel({ baseUrl, now, offset }) {
   const stamp = Date.now(); const slidePaths = [];
   // 1) bold full-screen HOOK frame first (watch-time = reach)
   try {
-    const hookPng = await renderPng(reelHookSlide(reelHook(car), car.accent));
+    const hookPng = Resvg ? Buffer.from(resvgPng(darkReelHookSvg(reelHook(car), car.accent), 1080)) : await renderPng(reelHookSlide(reelHook(car), car.accent));
     const hn = "reelhook-" + stamp + ".png"; fs.writeFileSync(path.join(OUT_DIR, hn), hookPng); slidePaths.push(path.join(OUT_DIR, hn));
   } catch (e) { /* no hook → reel still valid from the cover slide */ }
   // 2) the content slides, each rendered natively at 1080×1920
