@@ -2272,7 +2272,7 @@ function buildTopCollegesCarousel(seed) {
   const countries = [...new Set(C.map((c) => c.country))]; const country = countries[seed % countries.length];
   const list = C.filter((c) => c.country === country).sort((a, b) => (a.rank || 999) - (b.rank || 999)).slice(0, 10);
   if (list.length < 3) return null;
-  const pts = list.map((c) => `${collegeShort(c.name)} — ${c.rank ? "#" + c.rank + " · " : ""}${c.feeNote || ""}`.trim());
+  const pts = list.map((c) => `${c.name} — ${c.rank ? "#" + c.rank + " · " : ""}${c.feeNote || ""}`.trim());
   const slug = country.toLowerCase().replace(/\s+/g, "");
   return { topic: "TOP UNIVERSITIES · " + country.toUpperCase(), accent: "#7C3AED", flagCountry: country,
     slides: [
