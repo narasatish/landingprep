@@ -54,4 +54,31 @@ function buildReel({ slidePaths, per = 2.6, music = null, out }) {
   });
 }
 
-module.exports = { buildReel, pickMusic, OUT_DIR };
+// MOTION version — a gentle Ken-Burns slow-zoom on each slide so the Reel isn't a static slideshow.
+// Watch time / completion is the #1 Reels ranking signal in 2026; subtle motion lifts hold-rate.
+// Heavier than buildReel, so generateReel falls back to the static build if this errors/times out.
+function buildReelMotion({ slidePaths, per = 2.6, music = null, out }) {
+  return new Promise((resolve, reject) => {
+    if (!Array.isArray(slidePaths) || !slidePaths.length) return reject(new Error("buildReelMotion: no slides"));
+    const W = 720, H = 1280, FPS = 24, frames = Math.round(per * FPS);
+    const args = ["-y"];
+    for (const p of slidePaths) args.push("-i", p);   // one still frame per slide; zoompan's d= generates the duration
+    const aIdx = slidePaths.length;
+    if (music) args.push("-stream_loop", "-1", "-i", music);
+    else args.push("-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100");
+    // Per-slide slow zoom-in (z 1.0→1.10), centred; then concat. yuv420p for Instagram.
+    const zp = `zoompan=z='min(zoom+0.0010,1.10)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=${FPS}`;
+    let fc = slidePaths.map((_, i) => `[${i}:v]${zp},format=yuv420p,setsar=1[v${i}]`).join(";");
+    fc += ";" + slidePaths.map((_, i) => `[v${i}]`).join("") + `concat=n=${slidePaths.length}:v=1:a=0[v]`;
+    args.push("-filter_complex", fc, "-map", "[v]", "-map", `${aIdx}:a`,
+      "-c:v", "libx264", "-preset", "ultrafast", "-threads", "1", "-pix_fmt", "yuv420p", "-r", String(FPS),
+      "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart", out);
+    execFile(ffmpegPath, args, { timeout: 200000, maxBuffer: 32 * 1024 * 1024 }, (err) => {
+      if (err) return reject(new Error("ffmpeg(motion) failed: " + String(err.message).slice(0, 200)));
+      try { if (!fs.existsSync(out) || fs.statSync(out).size < 1000) return reject(new Error("motion reel missing/empty")); } catch (e) { return reject(e); }
+      resolve(out);
+    });
+  });
+}
+
+module.exports = { buildReel, buildReelMotion, pickMusic, OUT_DIR };

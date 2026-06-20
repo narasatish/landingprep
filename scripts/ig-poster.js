@@ -2236,7 +2236,7 @@ function reelCtaSlide(s) {
   let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${reelBg(a)}${brLogoBar()}<rect x="80" y="300" width="920" height="1244" rx="52" fill="#fff"/>`;
   svg += `<text x="540" y="540" text-anchor="middle" font-family="${FONT}" font-size="44" font-weight="800" fill="${a}">FOUND THIS USEFUL?</text>`;
   svg += `<text x="540" y="752" text-anchor="middle" font-family="${FONT}" font-size="172" font-weight="900" fill="${BR_NAVY}" letter-spacing="-5">SAVE IT</text>`;
-  svg += `<text x="540" y="858" text-anchor="middle" font-family="${FONT}" font-size="50" font-weight="600" fill="${BR_INK}">and share it with a friend</text>`;
+  svg += `<text x="540" y="858" text-anchor="middle" font-family="${FONT}" font-size="50" font-weight="600" fill="${BR_INK}">then SEND it to a friend</text>`;
   svg += `<circle cx="420" cy="1040" r="54" fill="${a}"/>` + brIcon(420, 1040, 54, "check") + `<circle cx="540" cy="1040" r="54" fill="${a}"/>` + brIcon(540, 1040, 54, "star") + `<circle cx="660" cy="1040" r="54" fill="${a}"/>` + brIcon(660, 1040, 54, "plane");
   svg += `<text x="540" y="1268" text-anchor="middle" font-family="${FONT}" font-size="50" font-weight="900" fill="${BR_NAVY}">Follow ${HANDLE}</text>`;
   svg += `<text x="540" y="1338" text-anchor="middle" font-family="${FONT}" font-size="40" font-weight="600" fill="${BR_INK}">for a daily study-abroad guide</text>`;
@@ -2260,7 +2260,7 @@ function slideCTASvg(s) {
   <rect x="90" y="200" width="900" height="680" rx="40" fill="#fff"/>
   <text x="540" y="330" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="800" fill="${a}">FOUND THIS USEFUL?</text>
   <text x="540" y="480" text-anchor="middle" font-family="${FONT}" font-size="132" font-weight="900" fill="${BR_NAVY}" letter-spacing="-4">SAVE IT</text>
-  <text x="540" y="572" text-anchor="middle" font-family="${FONT}" font-size="42" font-weight="600" fill="${BR_INK}">and share it with a friend</text>
+  <text x="540" y="572" text-anchor="middle" font-family="${FONT}" font-size="42" font-weight="600" fill="${BR_INK}">then SEND it to a friend</text>
   <circle cx="430" cy="690" r="42" fill="${a}"/>${brIcon(430, 690, 42, "check")}<circle cx="540" cy="690" r="42" fill="${a}"/>${brIcon(540, 690, 42, "star")}<circle cx="650" cy="690" r="42" fill="${a}"/>${brIcon(650, 690, 42, "plane")}
   <text x="540" y="820" text-anchor="middle" font-family="${FONT}" font-size="40" font-weight="900" fill="${BR_NAVY}">Follow ${HANDLE} for daily guides</text>
   ${brCta("Full guide — link in bio  →", a)}
@@ -2271,9 +2271,10 @@ function cartoCoverSvg(s) {
   const a = s.accent || "#1D4ED8";
   let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${brBg(a)}${brLogoBar()}<rect x="90" y="178" width="900" height="700" rx="40" fill="#fff"/>`;
   svg += brPill(130, 214, s.sub || "STUDY ABROAD GUIDE", a, !!s.flagCountry);
-  const tl = wrapPlain(s.title, 15).slice(0, 3); const ts = tl.length > 2 ? 72 : 88; let y = 372;
-  tl.forEach((ln, i) => { svg += `<text x="130" y="${y + i * (ts + 4)}" font-family="${FONT}" font-size="${ts}" font-weight="900" fill="${BR_NAVY}" letter-spacing="-2">${esc(ln)}</text>`; });
-  svg += `<circle cx="810" cy="770" r="96" fill="${hexA(a, 0.12)}"/>` + brIcon(810, 770, 96, "cap").replace(/#fff/g, a);
+  // allow up to 4 lines so curiosity-question covers (the strongest hooks) never clip
+  const tl = wrapPlain(s.title, 15).slice(0, 4); const ts = tl.length >= 4 ? 60 : tl.length === 3 ? 72 : 88; let y = 362;
+  tl.forEach((ln, i) => { svg += `<text x="130" y="${y + i * (ts + 8)}" font-family="${FONT}" font-size="${ts}" font-weight="900" fill="${BR_NAVY}" letter-spacing="-2">${esc(ln)}</text>`; });
+  svg += `<circle cx="810" cy="788" r="92" fill="${hexA(a, 0.12)}"/>` + brIcon(810, 788, 92, "cap").replace(/#fff/g, a);
   svg += brCta("SWIPE TO SEE THE FULL GUIDE  →", a);
   return svg + `</svg>`;
 }
@@ -2355,7 +2356,7 @@ function buildRankingCarousel(seed) {
   const pts = ranked.map(line);
   return { topic: "STUDENT VISA · SUCCESS RATES", accent: "#0EA5E9", flagCountry: null,
     slides: [
-      { kind: "cover", title: "Countries with the highest student-visa approval", sub: "RANKED BY VISA SUCCESS RATE · " + YEAR },
+      { kind: "cover", title: "Which country approves the MOST student visas?", sub: "RANKED BY VISA SUCCESS RATE · " + YEAR },
       { kind: "points", title: "🏆 The safest bets", points: pts.slice(0, 6) },
       { kind: "points", title: "Strong options too", points: pts.slice(6, 12) },
       { kind: "cta" },
@@ -2373,7 +2374,7 @@ function buildPRRankingCarousel(seed) {
   const pts = rows.map((r) => `${r.flag ? r.flag + " " : ""}${r.name} — PR from ~${r.yrs} yrs`);
   return { topic: "FASTEST PR · STUDY ABROAD", accent: "#16A34A", flagCountry: null,
     slides: [
-      { kind: "cover", title: "Where you can get permanent residency the fastest", sub: "RANKED BY YEARS TO PR · " + YEAR },
+      { kind: "cover", title: "Where do you get PR the FASTEST?", sub: "RANKED BY YEARS TO PR · " + YEAR },
       { kind: "points", title: "🟢 Fastest routes to PR", points: pts.slice(0, 6) },
       { kind: "points", title: "Also worth a look", points: pts.slice(6, 12) },
       { kind: "cta" },
@@ -2392,7 +2393,7 @@ function buildWorkVisaCarousel(seed) {
   const pts = rows.map((r) => `${r.flag ? r.flag + " " : ""}${r.name}: ${r.w}`);
   return { topic: "POST-STUDY WORK VISAS", accent: "#EA580C", flagCountry: null,
     slides: [
-      { kind: "cover", title: "How long you can work abroad after you graduate", sub: "STAY-BACK RIGHTS BY COUNTRY · " + YEAR },
+      { kind: "cover", title: "Work abroad LONGEST after you graduate?", sub: "STAY-BACK RIGHTS BY COUNTRY · " + YEAR },
       { kind: "points", title: "💼 Your stay-back options", points: pts.slice(0, 5) },
       { kind: "points", title: "More countries", points: pts.slice(5, 10) },
       { kind: "cta" },
@@ -2410,7 +2411,7 @@ function buildIntakesCarousel(seed) {
   const pts = rows.map((r) => `${r.flag ? r.flag + " " : ""}${r.name} — ${r.intakes.join(", ")}`);
   return { topic: "INTAKES · WHEN TO APPLY", accent: "#7C3AED", flagCountry: null,
     slides: [
-      { kind: "cover", title: "When to apply to study abroad — intakes by country", sub: "FALL vs SPRING INTAKES · " + YEAR },
+      { kind: "cover", title: "When should you ACTUALLY apply?", sub: "FALL vs SPRING INTAKES · " + YEAR },
       { kind: "points", title: "📅 Intakes by country", points: pts.slice(0, 5) },
       { kind: "points", title: "More countries", points: pts.slice(5, 10) },
       { kind: "points", title: "The golden rule", points: ["Apply 6–9 months BEFORE your intake month", "Fall (Aug–Sep) = the biggest intake & most scholarships", "Spring (Jan–Mar) = smaller, but less competition", "Check each university's own deadline — they vary"] },
@@ -2476,7 +2477,8 @@ function seriesTag(now) {
 // First comment = a strong engagement CTA + 3–5 niche/community hashtags (kept OUT of the caption
 // per current best practice). Posted AFTER publish, best-effort — never blocks or fails the post.
 function firstCommentText(content, now) {
-  const cta = "💬 Which country is on your list? Drop it below — we reply to everyone! 👇\n📌 Save this for when you apply.";
+  // Sends/tags are the #1 reach signal in 2026 — explicitly prompt a DM-send + a tag, then a reply CTA.
+  const cta = "📩 Send this to a friend who's planning to study abroad — they'll thank you!\n👯 Tag someone applying this year 👇\n💬 Which country is on your list? We reply to everyone!\n📌 Save it for when you apply.";
   const tags = ["#" + seriesTag(now), "#studyabroad", "#studygram", "#internationalstudents", "#studyabroad" + YEAR];
   return cta + "\n\n" + tags.join(" ");
 }
@@ -2520,8 +2522,11 @@ async function generateReel({ baseUrl, now, offset }) {
     const nm = "reelsl-" + stamp + "-" + i + ".png"; fs.writeFileSync(path.join(OUT_DIR, nm), png); slidePaths.push(path.join(OUT_DIR, nm));
   }
   const out = path.join(OUT_DIR, "reel-" + stamp + ".mp4");
-  // pick music by the SAME (offset) day as the content, so each day's reels rotate topic AND track
-  await _reels.buildReel({ slidePaths, per: 2.6, music: _reels.pickMusic(dayNumber(reelDay)), out });
+  const music = _reels.pickMusic(dayNumber(reelDay));   // same (offset) day as content → topic AND track rotate
+  // Prefer the Ken-Burns MOTION build (better watch-time); fall back to the proven static slideshow
+  // if ffmpeg's heavier filter errors/times out — a reel always renders.
+  try { await _reels.buildReelMotion({ slidePaths, per: 2.6, music, out }); }
+  catch (e) { await _reels.buildReel({ slidePaths, per: 2.6, music, out }); }
   const videoUrl = (baseUrl || "").replace(/\/$/, "") + "/ig-out/" + path.basename(out);
   return { videoUrl, caption: buildCaption(car), topic: car.topic };
 }
