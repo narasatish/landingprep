@@ -2078,7 +2078,8 @@ async function runDailyPost({ baseUrl, igUserId, token, now, slot }) {
   if (sl === CAROUSEL_SLOT) { const r = await runCarousel({ baseUrl, igUserId, token, now }); return { ok: true, slot: sl, ...r }; }
   const gen = await generateDailyImage({ baseUrl, now, slot: sl });
   const res = await postToInstagram({ imageUrl: gen.imageUrl, caption: gen.caption, igUserId, token });
-  return { ok: true, slot: gen.slot, mediaId: res.mediaId, theme: gen.content.type + ":" + gen.content.category, imageUrl: gen.imageUrl };
+  const comment = await postFirstComment({ mediaId: res.mediaId, igUserId, token, message: firstCommentText(gen.content, now) });
+  return { ok: true, slot: gen.slot, mediaId: res.mediaId, theme: gen.content.type + ":" + gen.content.category, imageUrl: gen.imageUrl, comment: comment.ok };
 }
 async function runAllSlots({ baseUrl, igUserId, token, now }) {
   const out = [];
@@ -2126,6 +2127,30 @@ function slidePointsSvg(s) {
   svg += `<text x="540" y="1008" text-anchor="middle" font-family="${FONT}" font-size="30" font-weight="900" fill="#fff">SWIPE FOR MORE  →</text>`;
   return svg + `</svg>`;
 }
+// REEL HOOK — a punchy curiosity/stat line shown as the FIRST frame of every Reel. Watch-time
+// is the #1 driver of Reel reach, so we open with a hook, not the cover. Honest, topic-derived.
+function reelHook(c) {
+  const t = (c && c.topic) || "";
+  if (/SUCCESS RATES/.test(t)) return "Which country approves the MOST student visas?";
+  if (/FASTEST PR/.test(t)) return "How fast can you get PR after studying abroad?";
+  if (/WORK VISA/.test(t)) return "How long can you work abroad after you graduate?";
+  if (/TOP UNIVERSITIES/.test(t)) return "The top universities you should be applying to";
+  if (/ROADMAP/.test(t)) return "How to study abroad — the full plan in 30 seconds";
+  if (/EXAM/.test(t)) return "This exam, explained in 30 seconds";
+  if (/STUDY ABROAD ·/.test(t)) { const n = (c.slides && c.slides[0] && c.slides[0].title) || ""; return n ? n.replace(/\s+20\d\d$/, "") + "?" : "Your complete study-abroad guide"; }
+  return "Save this before you apply abroad";
+}
+function slideReelHookSvg(s) {
+  const a = s.accent || "#2563EB";
+  const lines = wrapPlain(s.hook, 15).slice(0, 4);
+  const ts = lines.length > 3 ? 74 : 90; const block = (lines.length - 1) * (ts + 10);
+  let y = 500 - block / 2;
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">${brBg(a)}${brLogoBar()}`;
+  svg += `<rect x="430" y="232" width="220" height="58" rx="29" fill="${BR_YELLOW}"/><text x="540" y="271" text-anchor="middle" font-family="${FONT}" font-size="28" font-weight="900" letter-spacing="2" fill="${BR_NAVY}">NEW · ${YEAR}</text>`;
+  lines.forEach((ln, i) => { svg += `<text x="540" y="${y + i * (ts + 10)}" text-anchor="middle" font-family="${FONT}" font-size="${ts}" font-weight="900" letter-spacing="-1.5" fill="#fff">${esc(ln)}</text>`; });
+  svg += `<text x="540" y="940" text-anchor="middle" font-family="${FONT}" font-size="40" font-weight="900" letter-spacing="0.5" fill="${BR_YELLOW}">WATCH TILL THE END →</text>`;
+  return svg + `</svg>`;
+}
 // bright final CTA slide
 function slideCTASvg(s) {
   const a = s.accent || "#2563EB";
@@ -2159,7 +2184,7 @@ async function renderCoverPng(s, photoQuery, seed) {
 function buildCountryCarousel(c, seed) {
   const name = c.name, slug = name.toLowerCase().replace(/\s+/g, ""), total = 5, accent = "#E0492B";
   const costPoints = [c.avgTuition ? "Tuition: " + c.avgTuition : "", c.avgLiving ? "Living costs: " + c.avgLiving : "", c.postStudyWork ? "Post-study work: " + c.postStudyWork : "", c.visaSuccess ? "Visa success rate: ~" + c.visaSuccess + "%" : ""].filter(Boolean);
-  const pr = (c.immigrationPlan && c.immigrationPlan.length ? c.immigrationPlan : (c.visaTypes || []).map((v) => v.name + (v.note ? ": " + v.note : ""))).slice(0, 5);
+  const pr = (Array.isArray(c.immigrationPlan) && c.immigrationPlan.length ? c.immigrationPlan : (c.visaTypes || []).map((v) => v.name + (v.note ? ": " + v.note : ""))).slice(0, 5);
   return {
     topic: "STUDY ABROAD · " + name.toUpperCase(), accent, photoQuery: pickPhotoQuery(name, "edu"),
     slides: [
@@ -2236,20 +2261,60 @@ function buildRankingCarousel(seed) {
     caption: `🛂 Student-visa approval rates, ranked 👇\n\nPicking a country with a high approval rate means less risk and stress. Swipe to see where your visa is most likely to get approved in ${YEAR}.\n\n📲 SHARE with someone choosing a country.\n📌 SAVE this comparison.\n💬 Which country are you applying to? 👇\n\n👉 Free country picker — link in bio.\nFollow ${HANDLE} for daily study-abroad data 🌍`,
     tags: buildTags("studentvisa", "visaapproval", "studyabroad", "studyabroad2026", "landingprep") };
 }
+// FASTEST PR — ranked by the years-to-PR parsed from prTimeline ("after N years"). Honest "~N yrs"
+// labels, only countries with a clean parse, ascending (fastest first). Pure save-bait, accurate.
+function buildPRRankingCarousel(seed) {
+  const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || [];
+  const rows = D.map((c) => { const m = /after\s+(\d+)/i.exec(c.prTimeline || ""); return m ? { name: c.name, flag: c.flag, yrs: +m[1] } : null; })
+    .filter(Boolean).sort((a, b) => a.yrs - b.yrs);
+  if (rows.length < 6) return null;
+  const pts = rows.map((r) => `${r.flag ? r.flag + " " : ""}${r.name} — PR from ~${r.yrs} yrs`);
+  return { topic: "FASTEST PR · STUDY ABROAD", accent: "#16A34A", flagCountry: null,
+    slides: [
+      { kind: "cover", title: "Where you can get permanent residency the fastest", sub: "RANKED BY YEARS TO PR · " + YEAR },
+      { kind: "points", title: "🟢 Fastest routes to PR", points: pts.slice(0, 6) },
+      { kind: "points", title: "Also worth a look", points: pts.slice(6, 12) },
+      { kind: "cta" },
+    ],
+    caption: `🌍 Where you get permanent residency the FASTEST after studying 👇\n\nIf settling abroad is your goal, the years-to-PR matters as much as the degree. Swipe for the quickest routes in ${YEAR}.\n\n📲 SHARE with someone planning their move.\n📌 SAVE this comparison.\n💬 Which country is your goal? 👇\n\n👉 Free country picker — link in bio.\nFollow ${HANDLE} for daily study-abroad data 🌍`,
+    tags: buildTags("permanentresidency", "studyabroad", "immigration", "studyabroad2026", "landingprep") };
+}
+// POST-STUDY WORK VISAS — a clean, verbatim comparison (NOT a numeric rank, so it's always accurate).
+// Shows each country's actual stay-back right, lead clause only, so the text stays true.
+function buildWorkVisaCarousel(seed) {
+  const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || [];
+  const shortWork = (t) => String(t || "").split(/[;(]/)[0].replace(/\s+/g, " ").trim().slice(0, 64);
+  const rows = D.filter((c) => c && c.name && c.postStudyWork).map((c) => ({ name: c.name, flag: c.flag, w: shortWork(c.postStudyWork) }))
+    .filter((r) => r.w).sort((a, b) => a.name.localeCompare(b.name));
+  if (rows.length < 6) return null;
+  const pts = rows.map((r) => `${r.flag ? r.flag + " " : ""}${r.name}: ${r.w}`);
+  return { topic: "POST-STUDY WORK VISAS", accent: "#EA580C", flagCountry: null,
+    slides: [
+      { kind: "cover", title: "How long you can work abroad after you graduate", sub: "STAY-BACK RIGHTS BY COUNTRY · " + YEAR },
+      { kind: "points", title: "💼 Your stay-back options", points: pts.slice(0, 5) },
+      { kind: "points", title: "More countries", points: pts.slice(5, 10) },
+      { kind: "cta" },
+    ],
+    caption: `💼 How long you can stay & WORK after graduating abroad 👇\n\nThe post-study work visa is how you turn a degree into a career (and often PR). Swipe to compare stay-back rights by country in ${YEAR}.\n\n📲 TAG a friend deciding where to study.\n📌 SAVE this guide.\n💬 Which country's work visa fits your plan? 👇\n\n👉 Free guides — link in bio.\nFollow ${HANDLE} for daily study-abroad help 💼`,
+    tags: buildTags("poststudywork", "workvisa", "studyabroad", "internationalstudents", "landingprep") };
+}
 function finalizeCarousel(car) {
   if (!car) return null;
-  const slides = car.slides.filter(Boolean).filter((s) => s.kind !== "points" || (s.points && s.points.filter(Boolean).length));
+  const slides = car.slides.filter(Boolean).filter((s) => s.kind !== "points" || (Array.isArray(s.points) && s.points.filter(Boolean).length));
   slides.forEach((s, i) => { s.idx = i + 1; s.total = slides.length; s.accent = car.accent; });
   car.slides = slides; return car;
 }
-// rotate the daily carousel: country guide → top colleges → admission roadmap → exam guide → visa-rankings
+// rotate the daily carousel across 7 formats: country guide → top colleges → roadmap → exam guide
+// → visa-success ranking → fastest-PR ranking → post-study-work comparison
 function pickCarousel(now) {
-  const seed = dayNumber(now); const which = seed % 5; let car = null;
+  const seed = dayNumber(now); const which = seed % 7; let car = null;
   if (which === 0) { const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || []; if (D.length) car = buildCountryCarousel(D[seed % D.length], seed); }
   else if (which === 1) car = buildTopCollegesCarousel(seed);
   else if (which === 2) car = buildAdmissionCarousel(seed);
   else if (which === 3) car = buildExamCarousel(seed);
-  else car = buildRankingCarousel(seed);
+  else if (which === 4) car = buildRankingCarousel(seed);
+  else if (which === 5) car = buildPRRankingCarousel(seed);
+  else car = buildWorkVisaCarousel(seed);
   return finalizeCarousel(car) || finalizeCarousel(buildAdmissionCarousel(seed));
 }
 async function generateCarousel({ baseUrl, now, offset }) {
@@ -2280,11 +2345,33 @@ async function postCarousel({ imageUrls, caption, igUserId, token }) {
   const pj = await pr.json(); if (!pr.ok || !pj.id) throw new Error("carousel publish failed: " + JSON.stringify(pj));
   return { mediaId: pj.id, slides: imageUrls.length };
 }
+// Recurring weekly series — a branded community hashtag per weekday. Trains followers to come
+// back and rides existing community tags. Content-agnostic, so it's never a false claim.
+function seriesTag(now) {
+  const d = (now || new Date()).getUTCDay(); // 0 Sun … 6 Sat
+  return ["ScholarshipSunday", "MotivationMonday", "TopUniversityTuesday", "VisaWinWednesday", "ThrowbackThursday", "FundingFriday", "StudyAbroadSaturday"][d];
+}
+// First comment = a strong engagement CTA + 3–5 niche/community hashtags (kept OUT of the caption
+// per current best practice). Posted AFTER publish, best-effort — never blocks or fails the post.
+function firstCommentText(content, now) {
+  const cta = "💬 Which country is on your list? Drop it below — we reply to everyone! 👇\n📌 Save this for when you apply.";
+  const tags = ["#" + seriesTag(now), "#studyabroad", "#studygram", "#internationalstudents", "#studyabroad" + YEAR];
+  return cta + "\n\n" + tags.join(" ");
+}
+async function postFirstComment({ mediaId, igUserId, token, message }) {
+  if (!mediaId || !igUserId || !token) return { ok: false, skipped: true };
+  try {
+    const r = await fetch("https://graph.instagram.com/v21.0/" + mediaId + "/comments", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message, access_token: token }) });
+    const j = await r.json().catch(() => ({}));
+    return { ok: !!(j && j.id), id: j && j.id, error: j && j.error };
+  } catch (e) { return { ok: false, error: String((e && e.message) || e) }; }
+}
 async function runCarousel({ baseUrl, igUserId, token, now, offset }) {
   if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
   const gen = await generateCarousel({ baseUrl, now, offset });
   const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
-  return { ok: true, type: "carousel", topic: gen.content.topic, slides: res.slides, mediaId: res.mediaId };
+  const comment = await postFirstComment({ mediaId: res.mediaId, igUserId, token, message: firstCommentText(gen.content, now) });
+  return { ok: true, type: "carousel", topic: gen.content.topic, slides: res.slides, mediaId: res.mediaId, comment: comment.ok };
 }
 
 // ── Reels (video) ────────────────────────────────────────────────────────────
@@ -2296,6 +2383,12 @@ async function generateReel({ baseUrl, now, offset }) {
   const reelDay = offset ? new Date((now || new Date()).getTime() + offset * 86400000) : (now || new Date());
   const car = await generateCarousel({ baseUrl, now: reelDay });
   const slidePaths = car.imageUrls.map((u) => path.join(OUT_DIR, u.split("/").pop()));
+  // Open the Reel with a bold HOOK frame (watch-time = reach). Best-effort: if it fails, fall back to slides.
+  try {
+    const hookPng = await renderPng(slideReelHookSvg({ hook: reelHook(car.content), accent: car.content.accent }));
+    const hookName = "reelhook-" + Date.now() + ".png"; fs.writeFileSync(path.join(OUT_DIR, hookName), hookPng);
+    slidePaths.unshift(path.join(OUT_DIR, hookName));
+  } catch (e) { /* no hook → reel still valid from the cover slide */ }
   const out = path.join(OUT_DIR, "reel-" + Date.now() + ".mp4");
   // pick music by the SAME (offset) day as the content, so each day's reels rotate topic AND track
   await _reels.buildReel({ slidePaths, per: 2.6, music: _reels.pickMusic(dayNumber(reelDay)), out });
@@ -2325,7 +2418,8 @@ async function runReel({ baseUrl, igUserId, token, now, offset }) {
   if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
   const gen = await generateReel({ baseUrl, now, offset });
   const res = await postReel({ videoUrl: gen.videoUrl, caption: gen.caption, igUserId, token });
-  return { ok: true, type: "reel", topic: gen.topic, mediaId: res.mediaId };
+  const comment = await postFirstComment({ mediaId: res.mediaId, igUserId, token, message: firstCommentText({ topic: gen.topic }, now) });
+  return { ok: true, type: "reel", topic: gen.topic, mediaId: res.mediaId, comment: comment.ok };
 }
 
 // ── pre-made image pool (batch mode) ─────────────────────────────────────────
@@ -2577,4 +2671,4 @@ async function runCitiesCarousel({ baseUrl, igUserId, token, now, offset }) {
   const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
   return { ok: true, type: "carousel", topic: gen.country, slides: res.slides, mediaId: res.mediaId };
 }
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, generateReel, postReel, runReel, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, generateReel, postReel, runReel, postFirstComment, firstCommentText, seriesTag, reelHook, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
