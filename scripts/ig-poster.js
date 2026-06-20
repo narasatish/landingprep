@@ -2043,6 +2043,7 @@ function blogLinkFor(c) {
   if (/FASTEST PR/.test(t)) return "fastest-pr-countries-for-international-students-2026";
   if (/WORK VISA/.test(t)) return "easiest-countries-to-immigrate-after-study-2026";
   if (/INTAKES/.test(t)) return "fall-vs-spring-intake-which-better";
+  if (/MYTH/.test(t)) return "best-countries-study-abroad-2026";
   if (/ROADMAP/.test(t)) return "how-to-build-profile-for-ms-admission";
   if (/TOP UNIVERSITIES/.test(t)) return "best-countries-study-abroad-2026";
   if (/EXAM GUIDE/.test(t)) {
@@ -2420,16 +2421,41 @@ function buildIntakesCarousel(seed) {
     caption: `📅 When to apply to study abroad — intakes by country 👇\n\nMost students miss deadlines simply because they start late. Fall (Aug–Sep) is the biggest intake; Spring (Jan–Mar) is smaller but less competitive. The golden rule: apply 6–9 months BEFORE your intake.\n\n📲 SHARE with someone planning their application.\n📌 SAVE this so you don't miss a deadline.\n💬 Which intake are you aiming for? 👇\n\n👉 Free guides & deadlines — link in bio.\nFollow ${HANDLE} for daily study-abroad help 📅`,
     tags: buildTags("studyabroad", "intake" + YEAR, "studyabroaddeadlines", "internationalstudents", "landingprep") };
 }
+// MYTH vs FACT — the most SHARE-worthy education format (sends are the #1 reach signal in 2026).
+// Every "Fact" is accurate and verifiable; the myths are ones students genuinely believe.
+function buildMythFactCarousel(seed) {
+  return { topic: "STUDY ABROAD · MYTHS vs FACTS", accent: "#E11D48", flagCountry: null,
+    slides: [
+      { kind: "cover", title: "5 study-abroad myths you still believe", sub: "MYTH vs FACT · " + YEAR },
+      { kind: "points", title: "Myths 1–3, busted", points: [
+        "Myth: IELTS is needed everywhere. Fact: PTE, TOEFL & Duolingo work too.",
+        "Myth: only rich students can go. Fact: scholarships, loans & cheap countries.",
+        "Myth: a low GPA means no admission. Fact: your SOP & scores matter more.",
+      ] },
+      { kind: "points", title: "Myths 4–5, busted", points: [
+        "Myth: you can't work while studying. Fact: most allow about 20 hrs/week.",
+        "Myth: apply a year ahead. Fact: 6–9 months is the real sweet spot.",
+      ] },
+      { kind: "points", title: "What ACTUALLY matters", points: [
+        "A specific, story-led SOP — not a copy-paste",
+        "A balanced list: safe, target & reach universities",
+        "Solid test scores and a clear budget plan",
+      ] },
+      { kind: "cta" },
+    ],
+    caption: `🧠 5 study-abroad MYTHS you probably still believe 👇\n\nMost students delay their plans because of myths like these. Swipe for the truth on IELTS, money, GPA, working while studying, and timelines.\n\n📩 SEND this to a friend who believes these myths!\n📌 SAVE it so you don't fall for them.\n💬 Which myth did YOU believe? 👇\n\n👉 Free guides & tools — link in bio.\nFollow ${HANDLE} for daily study-abroad truth 🌍`,
+    tags: buildTags("studyabroad", "studyabroadmyths", "studyabroadtips", "internationalstudents", "landingprep") };
+}
 function finalizeCarousel(car) {
   if (!car) return null;
   const slides = car.slides.filter(Boolean).filter((s) => s.kind !== "points" || (Array.isArray(s.points) && s.points.filter(Boolean).length));
   slides.forEach((s, i) => { s.idx = i + 1; s.total = slides.length; s.accent = car.accent; });
   car.slides = slides; return car;
 }
-// rotate the daily carousel across 8 formats: country guide → top colleges → roadmap → exam guide
-// → visa-success ranking → fastest-PR ranking → post-study-work comparison → intakes/deadlines
+// rotate the daily carousel across 9 formats: country guide → top colleges → roadmap → exam guide
+// → visa-success → fastest-PR → post-study-work → intakes/deadlines → myth-vs-fact
 function pickCarousel(now) {
-  const seed = dayNumber(now); const which = seed % 8; let car = null;
+  const seed = dayNumber(now); const which = seed % 9; let car = null;
   if (which === 0) { const D = evalWindow("country-data.jsx").LP_COUNTRY_DATA || []; if (D.length) car = buildCountryCarousel(D[seed % D.length], seed); }
   else if (which === 1) car = buildTopCollegesCarousel(seed);
   else if (which === 2) car = buildAdmissionCarousel(seed);
@@ -2437,7 +2463,8 @@ function pickCarousel(now) {
   else if (which === 4) car = buildRankingCarousel(seed);
   else if (which === 5) car = buildPRRankingCarousel(seed);
   else if (which === 6) car = buildWorkVisaCarousel(seed);
-  else car = buildIntakesCarousel(seed);
+  else if (which === 7) car = buildIntakesCarousel(seed);
+  else car = buildMythFactCarousel(seed);
   return finalizeCarousel(car) || finalizeCarousel(buildAdmissionCarousel(seed));
 }
 async function generateCarousel({ baseUrl, now, offset }) {
