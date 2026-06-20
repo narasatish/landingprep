@@ -242,7 +242,14 @@ const IG_DAILY_PLAN = [
   { id: "reelB", type: "reel",     offset: 3, dueUTC: 17.0 }, // ~22:30 IST — reel #2
 ];
 let _catchupRunning = false, _catchupStartedAt = 0;
-async function igCatchUp(ig) {
+// Anti-hammer state. When Meta hard-blocks publishing ("API access blocked", code 200), retrying
+// every 20 min AND force-refreshing the token each time can ESCALATE the block. So on a block we
+// pause AUTO attempts for a couple of hours (manual ?catchup=1 still forces through), and we cap
+// forced token refreshes. A single successful post clears the pause.
+let _igBlockUntil = 0, _lastForcedRefresh = 0;
+const IG_BLOCK_RE = /api access blocked|code\D*200|\bpermission|oauth|\bblocked\b/i;
+async function igCatchUp(ig, opts) {
+  opts = opts || {};
   if (!IG_USER_ID || !IG_TOKEN) return { ok: false, error: "Missing IG_USER_ID / IG_ACCESS_TOKEN" };
   // GUARD against DUPLICATE POSTS — never run two catch-ups at once. The in-server scheduler,
   // the GitHub cron and the cron-job.org ping can all fire in the same window; without this
@@ -260,6 +267,10 @@ async function igCatchUp(ig) {
     if (docRef) { try { const d = await docRef.get(); if (d.exists) log = d.data() || {}; } catch (e) { errors.push("log-read: " + e.message); } }
     // Owner-approval gate: post by default (auto-approve) UNLESS the owner explicitly REJECTED.
     if (FS_DB) { try { const pd = await FS_DB.collection("ig_prepared").doc(date).get(); if (pd.exists && (pd.data() || {}).status === "rejected") return { ok: true, date, skipped: "owner rejected this day's content", postedNow: [], errors: [] }; } catch (e) { /* never block posting */ } }
+    // Backing off after a recent Meta publish-block? Skip AUTO attempts (manual ?catchup=1 forces).
+    if (!opts.force && _igBlockUntil && Date.now() < _igBlockUntil) {
+      return { ok: true, date, skipped: "paused after a Meta publish-block until " + new Date(_igBlockUntil).toISOString() + " (avoids escalating the block; auto-retries after)", postedNow: [], errors: [] };
+    }
     const args = { baseUrl: IG_PUBLIC_BASE, igUserId: IG_USER_ID, token: IG_TOKEN, now };
     // An entry is "done" if it has a real mediaId, or "in flight" if claimed in the last 5 min
     // (being posted now). A stale claim (claimed, no mediaId, >5 min) means the earlier attempt
@@ -281,7 +292,16 @@ async function igCatchUp(ig) {
         else r = await ig.runDailyPost(Object.assign({ slot: p.slot }, args));
         log[p.id] = { mediaId: r.mediaId, type: p.type, ts: Date.now() }; postedNow[p.id] = r.mediaId;
         await docRef.set({ [p.id]: log[p.id] }, { merge: true });
-      } catch (e) { errors.push(p.id + " (" + p.type + "): " + String(e.message || e).slice(0, 160)); } // claim stays; TTL-expires for a retry
+        _igBlockUntil = 0;                                                      // publishing works → clear any backoff
+      } catch (e) {
+        const msg = String(e.message || e).slice(0, 160);
+        errors.push(p.id + " (" + p.type + "): " + msg);                        // claim stays; TTL-expires for a retry
+        if (IG_BLOCK_RE.test(msg)) {                                            // Meta hard-block → stop now, pause auto-attempts ~2h
+          _igBlockUntil = Date.now() + 2 * 3600 * 1000;
+          errors.push("⏸ Meta is blocking publishing — pausing auto-attempts ~2h so we don't escalate the block. Fix the token/permission, then hit ?catchup=1 to resume instantly.");
+          break;
+        }
+      }
       await new Promise((r) => setTimeout(r, 5000));                            // gap between posts (reels need processing headroom)
     }
     return { ok: errors.length === 0, date, posts: IG_DAILY_PLAN.length, postedNow: Object.keys(postedNow), errors };
@@ -492,9 +512,9 @@ app.all("/api/ig/post-daily", async (req, res) => {
     // server is busy rendering images. Idempotent → safe to fire-and-forget. Add &wait=1
     // to block for the JSON result instead (handy for manual debugging).
     if (String(req.query.catchup || "") === "1") {
-      if (String(req.query.wait || "") === "1") { const out = await igCatchUp(ig); return res.status(out.ok ? 200 : 207).json(out); }
+      if (String(req.query.wait || "") === "1") { const out = await igCatchUp(ig, { force: true }); return res.status(out.ok ? 200 : 207).json(out); }
       res.status(202).json({ ok: true, started: true, mode: "catchup", note: "running in background" });
-      igCatchUp(ig).then((r) => { if (r && r.postedNow && r.postedNow.length) console.log("[catchup-http] posted:", r.postedNow.join(",")); if (r && r.errors && r.errors.length) console.warn("[catchup-http] errors:", r.errors.join(" | ")); })
+      igCatchUp(ig, { force: true }).then((r) => { if (r && r.postedNow && r.postedNow.length) console.log("[catchup-http] posted:", r.postedNow.join(",")); if (r && r.errors && r.errors.length) console.warn("[catchup-http] errors:", r.errors.join(" | ")); })
                    .catch((e) => console.warn("[catchup-http]", e.message));
       return;
     }
@@ -1683,7 +1703,12 @@ async function igAutoTick(reason) {
       if (r && r.postedNow && r.postedNow.length) console.log("[ig-tick] posted slots:", r.postedNow.join(","));
       if (r && r.errors && r.errors.length) {
         const blob = r.errors.join(" | ");
-        if (/oauth|token|expired|session|code\D*190|permission/i.test(blob)) { await refreshIgToken(true); await igAlert("posting-token-error", blob); }
+        if (/oauth|token|expired|session|code\D*190|permission/i.test(blob)) {
+          // Throttle forced refreshes to once/6h — refreshing on every 20-min tick while blocked
+          // is itself abusive and can deepen Meta's block.
+          if (Date.now() - _lastForcedRefresh > 6 * 3600 * 1000) { _lastForcedRefresh = Date.now(); await refreshIgToken(true); }
+          await igAlert("posting-token-error", blob);
+        }
         else await igAlert("posting-error", blob);
       }
     } catch (e) { console.warn("[ig-tick] catchup:", e.message); await igAlert("posting-exception", e.message); }
