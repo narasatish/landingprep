@@ -1719,6 +1719,15 @@ function privacyPage() {
   <h2>Your rights & contact</h2>
   <p>You can access, correct or delete your data, or opt out of analytics, at any time. Email <a href="mailto:support@landingprep.com">support@landingprep.com</a> and we'll action your request. LandingPrep is not directed at children under 13; if you believe a child has provided data, contact us and we'll remove it.</p>
 </div>
+<div class="card" id="data-deletion">
+  <h2>Data deletion</h2>
+  <p>You can request deletion of all data LandingPrep holds about you at any time. To delete your data:</p>
+  <ol>
+    <li>Email <a href="mailto:support@landingprep.com?subject=Delete%20my%20data">support@landingprep.com</a> from the address linked to your account, with the subject "Delete my data".</li>
+    <li>We verify the request and permanently delete your account and associated personal data within 30 days, and confirm by email.</li>
+  </ol>
+  <p>If you connected to LandingPrep through Instagram or Facebook, this same process removes any data we received via that login. Most of LandingPrep works with no account at all, in which case we hold no personal data tied to you. Questions about data deletion: <a href="mailto:support@landingprep.com">support@landingprep.com</a>.</p>
+</div>
 ${relatedGrid([
   { label: `📄 Terms of Service`, href: `/terms/` },
   { label: `ℹ️ About LandingPrep`, href: `/about/` },
