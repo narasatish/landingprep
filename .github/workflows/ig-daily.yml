@@ -57,6 +57,10 @@ jobs:
               -H "x-ig-secret: ${{ secrets.IG_POST_SECRET }}")
             echo "Attempt $attempt - HTTP $code"; cat /tmp/resp.json || true; echo
             if [ "$code" = "200" ]; then ok=1; break; fi
+            # 202 = accepted; the catch-up posts in the BACKGROUND (instant response so external
+            # cron pingers never time out). The Firestore log + in-server scheduler guarantee the
+            # posts complete, and any real failure emails an alert — so 202 is success for the trigger.
+            if [ "$code" = "202" ]; then ok=1; echo "Accepted (202) - posting in background; completion guaranteed by the Firestore log + scheduler."; break; fi
             if [ "$code" = "207" ]; then
               ok=1
               echo "::warning::Some slots failed this run; the next catch-up window will retry them."
