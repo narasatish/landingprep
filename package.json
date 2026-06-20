@@ -10,11 +10,12 @@
     "precompile": "node scripts/precompile-jsx.mjs",
     "build": "node scripts/make-app-assets.cjs && node scripts/precompile-jsx.mjs && node scripts/generate-seo-pages.mjs && node scripts/audit-seo.mjs",
     "assets": "node scripts/make-app-assets.cjs",
-    "test": "node tools/run-tests.js && node tools/exam-validation.mjs && node scripts/audit-seo.mjs && node tools/audit-answers.mjs && node tools/ig-pipeline.test.js",
+    "test": "node tools/run-tests.js && node tools/exam-validation.mjs && node scripts/audit-seo.mjs && node tools/audit-answers.mjs && node tools/ig-pipeline.test.js && node tools/ig-full.test.js",
     "test:ig": "node tools/ig-pipeline.test.js",
     "check:ig": "node tools/ig-livecheck.mjs",
     "test:exams": "node tools/exam-validation.mjs",
-    "test:seo": "node scripts/audit-seo.mjs"
+    "test:seo": "node scripts/audit-seo.mjs",
+    "test:ig-full": "node tools/ig-full.test.js"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",
