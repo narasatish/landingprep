@@ -402,8 +402,12 @@ function uniqueContentLen(html) {
   const main = (html.match(/<main[\s\S]*?<\/main>/i) || [html])[0];
   return main.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<style[\s\S]*?<\/style>/gi, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().length;
 }
-function emit(path, html) {
-  if (uniqueContentLen(html) < THIN_MIN_CHARS) {
+function emit(path, html, opts) {
+  // opts.thin forces noindex,follow even on >1500-char pages — for SCALED/programmatic clusters
+  // (university-vs-university combos, competitor "alternative" doorways) that the March-2026 core
+  // update penalises regardless of length. noindex + sitemap-exclusion raises the domain quality
+  // ratio so the substantive pages rank better. Fully reversible (drop the flag to re-index).
+  if ((opts && opts.thin) || uniqueContentLen(html) < THIN_MIN_CHARS) {
     html = html.replace(/<meta name="robots" content="index,follow[^"]*"\/>/i, '<meta name="robots" content="noindex,follow"/>');
     THIN_PATHS.add(path);
   }
@@ -1499,7 +1503,7 @@ ${relatedGrid([
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Compare", path: "/#/colleges" }, { name: `${a.name} vs ${b.name}`, path }]),
-  ] }) + shell(inner));
+  ] }) + shell(inner), { thin: true });   // programmatic university-vs-university combo → noindex (prune for SEO recovery)
 }
 
 // ── High-intent study-abroad pages: "Study [field] in [country]" + "Cost of
@@ -2932,7 +2936,7 @@ ${faqBlock(faqs)}
 ${relatedGrid(related)}`;
   const lc = name.toLowerCase();
   const kw = `${c.slug} alternative, free ${c.slug} alternative, ${lc} alternative, ${lc} free alternative, is ${lc} free, ${lc} vs landingprep, free alternative to ${lc}`;
-  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Free alternatives", path: "/free-alternatives/" }, { name: name, path }])] }) + shell(inner));
+  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Free alternatives", path: "/free-alternatives/" }, { name: name, path }])] }) + shell(inner), { thin: true });   // competitor "alternative" doorway → noindex (prune for SEO recovery)
 }
 function altIndexPage() {
   const tiles = COMPETITORS.map((c) => `<a class="tile" href="/${c.slug}-alternative/">Free ${esc(c.name)} alternative</a>`).join("");
