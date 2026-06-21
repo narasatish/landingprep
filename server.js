@@ -256,9 +256,10 @@ async function igCatchUp(ig, opts) {
   // the GitHub cron and the cron-job.org ping can all fire in the same window; without this
   // lock, two runs both read "slot not posted yet" and BOTH publish it. One Render instance,
   // so an in-memory lock is sufficient; the per-slot Firestore claim below is a second layer.
-  // The lock auto-releases after 10 min so a hung run (a promise that never resolves) can never
-  // wedge posting forever — the finally below covers exceptions, this covers hangs.
-  if (_catchupRunning && (Date.now() - _catchupStartedAt) < 10 * 60 * 1000) return { ok: true, skipped: "another catch-up already in progress", postedNow: [], errors: [] };
+  // The lock auto-releases after 20 min so a hung run can never wedge posting forever (the finally
+  // below covers exceptions; this covers hangs). 20 min — not 10 — because a full catch-up with two
+  // slow reels can legitimately run ~15 min, and releasing mid-run is what let a second run overlap.
+  if (_catchupRunning && (Date.now() - _catchupStartedAt) < 20 * 60 * 1000) return { ok: true, skipped: "another catch-up already in progress", postedNow: [], errors: [] };
   _catchupRunning = true; _catchupStartedAt = Date.now();
   try {
     const now = new Date(), date = now.toISOString().slice(0, 10);
@@ -276,18 +277,36 @@ async function igCatchUp(ig, opts) {
     // An entry is "done" if it has a real mediaId, or "in flight" if claimed in the last 5 min
     // (being posted now). A stale claim (claimed, no mediaId, >5 min) means the earlier attempt
     // failed → it may be retried. CLAIMING in Firestore BEFORE posting guarantees at-most-once.
-    const CLAIM_TTL = 5 * 60 * 1000;
+    // A REEL can take 5–6 min (video render + upload + Meta processing poll up to 240s + publish).
+    // CLAIM_TTL MUST exceed the worst-case single post, or a slow reel's claim expires mid-post and
+    // a concurrent/next run re-posts it → the duplicate-video bug. 15 min covers it with margin.
+    const CLAIM_TTL = 15 * 60 * 1000;
     const isDone = (e) => !!(e && (e.mediaId || (e.claimedAt && Date.now() - e.claimedAt < CLAIM_TTL)));
-    const claim = async (key) => { if (docRef) await docRef.set({ [key]: { claimedAt: Date.now() } }, { merge: true }); };
+    // ATOMIC check-and-claim in ONE Firestore transaction → two runs (in-server scheduler + GitHub
+    // cron + cron-job.org) can NEVER both claim the same entry, even if the in-memory lock released.
+    // Returns false if it's already posted or in-flight. This is the hard guarantee against duplicates.
+    const tryClaim = async (key) => {
+      if (!docRef || !FS_DB) return false;
+      return await FS_DB.runTransaction(async (tx) => {
+        const d = await tx.get(docRef);
+        const cur = (d.exists ? (d.data() || {}) : {})[key];
+        if (isDone(cur)) return false;
+        tx.set(docRef, { [key]: { claimedAt: Date.now() } }, { merge: true });
+        return true;
+      });
+    };
     // Post each due entry of today's plan, by type (image / carousel / reel). Idempotent via the
     // claim-before-post, so concurrent triggers never double-publish.
     const smartSched = await loadSmartSchedule();                               // null unless IG_SMART_SCHEDULE=1 + enough data
     for (const p of IG_DAILY_PLAN) {
       const dueUTC = (smartSched && typeof smartSched[p.id] === "number") ? smartSched[p.id] : p.dueUTC;
-      if (nowH < dueUTC || isDone(log[p.id])) continue;                         // not due, posted, or in-flight
+      if (nowH < dueUTC || isDone(log[p.id])) continue;                         // fast skip: not due, posted, or in-flight
       if (!docRef) { errors.push(p.id + ": no Firestore log — refusing (would risk duplicates)"); continue; }
-      try { await claim(p.id); log[p.id] = { claimedAt: Date.now() }; }         // claim BEFORE posting → at-most-once
+      let claimed;
+      try { claimed = await tryClaim(p.id); }                                   // ATOMIC claim → guarantees at-most-once
       catch (e) { errors.push(p.id + " claim: " + e.message); continue; }
+      if (!claimed) continue;                                                   // another run already owns it (posted or in-flight)
+      log[p.id] = { claimedAt: Date.now() };
       try {
         let r;
         if (p.type === "carousel") r = await ig.runCarousel(Object.assign({ offset: p.offset }, args));
