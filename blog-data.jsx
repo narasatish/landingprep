@@ -27950,6 +27950,44 @@
           "body": "Prepare for TOEFL Home with timed full-length mocks to simulate the test environment—connectivity matters. Once you register, ETS lets you choose test center or home; pick based on your location's broadband and your comfort with self-proctored testing. Practice free full-length TOEFL mocks on LandingPrep to identify weak areas before committing to your test date."
         }
       ]
+    },
+    {
+      "id": "duolingo-english-test-validity-and-acceptance-2026",
+      "tag": "Duolingo",
+      "date": "2026",
+      "title": "Duolingo English Test Validity Period & University Acceptance 2026",
+      "excerpt": "Duolingo English Test (DET) scores are valid for 2 years and accepted by 4,500+ universities globally, including top US, UK, and Canadian schools. Find out which institutions accept DET and its limitations.",
+      "kw": "Duolingo English Test validity period, DET score validity 2 years, Duolingo accepted universities, DET acceptance",
+      "sections": [
+        {
+          "h": "How Long Are Duolingo English Test Scores Valid?",
+          "body": "Duolingo English Test (DET) scores remain valid for exactly 2 years from your test date. After 2 years, scores expire and universities will not accept them for admissions or visa purposes. If you test on June 8, 2026, your score is valid through June 8, 2028. Plan your applications within this window; retesting is required if your score expires before you enroll."
+        },
+        {
+          "h": "Which Universities Accept Duolingo English Test?",
+          "body": "Over 4,500 universities worldwide accept DET, including: Harvard, Stanford, MIT, Yale, Duke (US); Oxford, Cambridge, LSE, Imperial, UCL (UK); University of Toronto, UBC, McGill (Canada); and Melbourne, UNSW, ANU (Australia). Most universities explicitly list DET on their admissions pages alongside TOEFL and IELTS. Always confirm DET acceptance on your target university's website, as a small number still exclusively require IELTS or TOEFL."
+        },
+        {
+          "h": "Duolingo English Test & Student Visa Acceptance",
+          "body": "DET is accepted for student visas in the US (SEVP-approved), UK (Tier 4 visa), Canada (Study Permit), Australia (all visa types), and the EU/Schengen. Each country's immigration authority has slightly different approval timelines—UK added DET support in 2020, and Australia followed in 2021. Visa validity follows DET score validity: once your score expires, you cannot use it for visa renewal, though your visa itself remains valid if already granted."
+        },
+        {
+          "h": "Countries Where Duolingo Acceptance Is Limited",
+          "body": "While DET is widely accepted, some conservative institutions in India, Middle East, and smaller regional universities (non-Russell Group UK, non-Go8 Australia) may not explicitly list it or prefer IELTS/TOEFL. New Zealand and some professional licensing bodies (UK medical schools, Australian teaching registration) still prefer traditional TOEFL/IELTS. Always confirm with the specific institution's admissions office before taking DET if they are not a major international university."
+        },
+        {
+          "h": "DET vs. IELTS vs. TOEFL: Acceptance & Test Validity",
+          "body": "All three tests are valid for 2 years. DET (4,500+ universities) is fastest-growing but newer; TOEFL (11,000+ universities) is most traditional; IELTS (10,000+ universities) is most popular outside North America. For US schools: TOEFL and DET equally strong, some prefer TOEFL. UK: IELTS is default, DET growing. Canada/Australia: IELTS leading, DET now mainstream. For any given university, check their official requirements—accepting one doesn't mean accepting all three."
+        },
+        {
+          "h": "Retesting & Extending DET Validity",
+          "body": "If your 2-year DET validity window is closing and you have not enrolled, you must retest—there is no validity extension or appeal process. DET allows retesting immediately (you can test again after 1 day), so if your score falls short or expires, book another attempt within your application cycle. Duolingo emails you 30 days before expiration as a reminder; plan ahead if multiple universities are still reviewing your profile."
+        },
+        {
+          "h": "Prepare for Duolingo & Practice Free",
+          "body": "DET is a 1-hour online test (reading, writing, speaking, listening) scored 10–160. Prepare with full-length mocks to familiarize yourself with the adaptive format. Free practice materials include Duolingo's official sample questions. For comprehensive TOEFL, IELTS, and DET practice mocks, use LandingPrep's free full-length tests—track your progress and identify weak areas before test day."
+        }
+      ]
     }
   ];
 
