@@ -1454,8 +1454,8 @@ window.LP_DATA = {
       "official": "https://www.oet.com",
       "booking": "https://www.oet.com/booking",
       "fees": {
-        "inr": "\u20B915,000\u2013\u20B918,000",
-        "usd": "$200\u2013$250"
+        "inr": "\u20B928,000\u2013\u20B932,000",
+        "usd": "$370\u2013$420"
       },
       "colour": "#00A86B",
       "pattern": [

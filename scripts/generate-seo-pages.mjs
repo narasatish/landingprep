@@ -104,6 +104,10 @@ const EXAMS = {
   gmat:     { name: "GMAT Focus",            short: "GMAT",  score: "205–805",   scale: "points", appPath: "gmat",
               for: "MBA & business school", accepted: "2,400+ business schools / 7,700+ programmes",
               sections: "Quant, Verbal, Data Insights" },
+  oet:      { name: "OET (Occupational English Test)", short: "OET", score: "0–500 (A–E)", scale: "grade", appPath: "oet",
+              for: "healthcare registration & migration (nurses, doctors, pharmacists & more)",
+              accepted: "healthcare boards in the UK, Ireland, Australia, New Zealand, Canada, USA & more",
+              sections: "Listening, Reading, Writing, Speaking" },
 };
 
 // ── Country eligibility data (typical minimums; advisory, verify official) ──

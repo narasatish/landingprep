@@ -14629,6 +14629,32 @@
             "version": 3,
             "variant": "healthcare"
           }
+        ],
+        "writing": [
+          {
+            "id": "oet-writing-001",
+            "title": "OET Writing Practice Test 1",
+            "exam": "oet",
+            "section": "writing",
+            "type": "section",
+            "durationSeconds": 2700,
+            "questionCount": 1,
+            "file": "oet/writing/test-001.json",
+            "version": 3,
+            "variant": "healthcare"
+          },
+          {
+            "id": "oet-writing-002",
+            "title": "OET Writing Practice Test 2",
+            "exam": "oet",
+            "section": "writing",
+            "type": "section",
+            "durationSeconds": 2700,
+            "questionCount": 1,
+            "file": "oet/writing/test-002.json",
+            "version": 3,
+            "variant": "healthcare"
+          }
         ]
       },
       "fullMocks": []

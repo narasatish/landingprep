@@ -1,0 +1,42 @@
+{
+  "id": "oet-writing-002",
+  "exam": "oet",
+  "section": "writing",
+  "type": "section",
+  "title": "OET Writing Practice Test 2",
+  "durationSeconds": 2700,
+  "questionCount": 1,
+  "variant": "healthcare",
+  "instructions": "You have 45 minutes (5 minutes reading, 40 minutes writing). Read the case notes and write a referral letter of about 180–200 words. You are assessed on Purpose, Content, Conflict & clarity, Language and Genre. Select only the information relevant to your reader.",
+  "questions": [
+    {
+      "id": "oet-writing-002-q1",
+      "taskNumber": 1,
+      "taskType": "letter",
+      "letterType": "referral",
+      "minWords": 180,
+      "title": "Referral Letter — COPD Exacerbation",
+      "timeMinutes": 45,
+      "wordCountGuideline": "180–200 words",
+      "scenario": "You are a nurse on a respiratory ward. CASE NOTES — Patient: Mr Raymond Doyle, 68. Admitted 6 days ago with an acute exacerbation of chronic obstructive pulmonary disease (COPD). Treated with nebulised bronchodilators, oral corticosteroids (5-day course completed) and a course of antibiotics (completed). Oxygen saturations now stable at 94% on room air. Ex-smoker (stopped 3 years ago). Inhaler technique poor on admission — improved after teaching but needs reinforcement. Lives with wife, who is his main carer. Two flights of stairs to the flat; becomes breathless on exertion. For discharge in two days. Requires community respiratory follow-up, inhaler-technique review and consideration for pulmonary rehabilitation.",
+      "recipient": "the Community Respiratory Team",
+      "bulletPoints": [
+        "State who the patient is and why you are writing (request community respiratory follow-up after discharge)",
+        "Summarise the relevant history: COPD exacerbation, treatment given and current respiratory status",
+        "Highlight the issues affecting ongoing care: poor inhaler technique needing reinforcement and exertional breathlessness with stairs",
+        "Specify your requests: inhaler-technique review and assessment for pulmonary rehabilitation"
+      ],
+      "formatGuidance": "Use a formal letter format with a clear opening sentence stating purpose, logically ordered body paragraphs, and a professional closing. Include only information the community team needs to continue care.",
+      "rubric": [
+        "purpose",
+        "content",
+        "conflict and clarity",
+        "language",
+        "genre and format"
+      ],
+      "modelAnswerNotes": "A strong response identifies the patient and request up front, conveys the current respiratory status and the specific ongoing needs (inhaler technique, pulmonary rehab assessment, home/stairs context), and omits irrelevant detail.",
+      "prompt": "You are a nurse on a respiratory ward. Read the case notes below, then write a referral letter.\n\nCASE NOTES\nPatient: Mr Raymond Doyle, aged 68.\nAdmitted: 6 days ago with an acute exacerbation of chronic obstructive pulmonary disease (COPD).\nTreatment: nebulised bronchodilators, a completed 5-day course of oral corticosteroids, and a completed course of antibiotics.\nCurrent status: oxygen saturations stable at 94% on room air; condition improved.\nIssues: inhaler technique poor on admission — improved with teaching but needs reinforcement; becomes breathless on exertion (two flights of stairs to the flat).\nSocial: Lives with wife, who is his main carer. Ex-smoker (stopped 3 years ago).\nDischarge: In two days.\n\nWRITING TASK\nWrite a referral letter to the Community Respiratory Team requesting follow-up for Mr Doyle after discharge. In your letter:\n• state who the patient is and why you are writing;\n• summarise the COPD exacerbation, treatment given and current respiratory status;\n• highlight the poor inhaler technique needing reinforcement and his exertional breathlessness;\n• request an inhaler-technique review and assessment for pulmonary rehabilitation.\n\nWrite about 180–200 words. Expand the case notes into full sentences — do not use note form.",
+      "modelAnswer": "Community Respiratory Team\n[Date]\n\nDear Colleague,\n\nRe: Mr Raymond Doyle, aged 68\n\nI am writing to refer Mr Doyle, who is being discharged in two days following a six-day admission, for community respiratory follow-up.\n\nMr Doyle was admitted with an acute exacerbation of COPD. He was treated with nebulised bronchodilators, a completed five-day course of oral corticosteroids and a course of antibiotics. His oxygen saturations are now stable at 94% on room air, and his condition has improved.\n\nTwo issues require your attention. First, his inhaler technique was poor on admission; it improved with teaching on the ward but would benefit from reinforcement. Second, he becomes breathless on exertion and must manage two flights of stairs at home, where his wife is his main carer.\n\nI would be grateful if your team could review his inhaler technique and assess his suitability for pulmonary rehabilitation. He is an ex-smoker, having stopped three years ago.\n\nPlease contact the ward if you require any further information.\n\nYours faithfully,\n[Name], Registered Nurse"
+    }
+  ]
+}

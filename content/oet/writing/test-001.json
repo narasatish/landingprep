@@ -1,0 +1,42 @@
+{
+  "id": "oet-writing-001",
+  "exam": "oet",
+  "section": "writing",
+  "type": "section",
+  "title": "OET Writing Practice Test 1",
+  "durationSeconds": 2700,
+  "questionCount": 1,
+  "variant": "healthcare",
+  "instructions": "You have 45 minutes (5 minutes reading, 40 minutes writing). Read the case notes and write a referral letter of about 180–200 words. You are assessed on Purpose, Content, Conflict & clarity, Language and Genre. Select only the information relevant to your reader.",
+  "questions": [
+    {
+      "id": "oet-writing-001-q1",
+      "taskNumber": 1,
+      "taskType": "letter",
+      "letterType": "referral",
+      "minWords": 180,
+      "title": "Referral Letter — Venous Leg Ulcer",
+      "timeMinutes": 45,
+      "wordCountGuideline": "180–200 words",
+      "scenario": "You are a nurse on a general medical ward. CASE NOTES — Patient: Mrs Eleanor Hughes, 74. Admitted 8 days ago with a venous leg ulcer (right lower leg) and cellulitis. Treated with IV antibiotics (now completed), switched to oral; ulcer cleaned and dressed daily with a compression bandage. Wound improving but not yet healed — requires continued dressing changes three times weekly with compression. Lives alone in a ground-floor flat; daughter visits daily. Mobile with a stick. Type 2 diabetes (diet-controlled). Allergic to penicillin. For discharge tomorrow.",
+      "recipient": "the District Nursing Team",
+      "bulletPoints": [
+        "State who the patient is and why you are writing (request ongoing community wound care after discharge)",
+        "Summarise the relevant history: venous leg ulcer with cellulitis, treatment given, current dressing regimen",
+        "Include the information that affects care: type 2 diabetes, penicillin allergy, and her home/social situation",
+        "Specify what you are requesting: dressing changes three times weekly with compression until healed"
+      ],
+      "formatGuidance": "Use a formal letter format: recipient line, date, 'Dear Colleague', a clear opening sentence stating purpose, well-organised body paragraphs in a logical order, and a professional closing. Do not simply copy every case note — select what the district nurses need.",
+      "rubric": [
+        "purpose",
+        "content",
+        "conflict and clarity",
+        "language",
+        "genre and format"
+      ],
+      "modelAnswerNotes": "A strong response opens by identifying the patient and the request, includes only reader-relevant detail (wound, treatment, diabetes, allergy, home situation), and states the specific ongoing care required. Irrelevant observations are omitted.",
+      "prompt": "You are a nurse on a general medical ward. Read the case notes below, then write a referral letter.\n\nCASE NOTES\nPatient: Mrs Eleanor Hughes, aged 74.\nAdmitted: 8 days ago with a venous leg ulcer (right lower leg) and cellulitis.\nTreatment: IV antibiotics (completed), switched to oral; ulcer cleaned and dressed daily with a compression bandage. Cellulitis resolved; ulcer improving but not yet fully healed.\nOngoing need: dressing changes three times weekly with compression until healed.\nSocial: Lives alone in a ground-floor flat; daughter visits daily. Mobile with a stick.\nMedical: Type 2 diabetes (diet-controlled). Allergic to penicillin.\nDischarge: Tomorrow.\n\nWRITING TASK\nWrite a referral letter to the District Nursing Team requesting ongoing wound care for Mrs Hughes after discharge. In your letter:\n• state who the patient is and why you are writing;\n• summarise the relevant history, treatment given and the current dressing regimen;\n• note her type 2 diabetes, penicillin allergy and home/social situation;\n• specify the ongoing care required (dressing changes three times weekly with compression).\n\nWrite about 180–200 words. Expand the case notes into full sentences — do not use note form.",
+      "modelAnswer": "District Nursing Team\n[Date]\n\nDear Colleague,\n\nRe: Mrs Eleanor Hughes, aged 74\n\nI am writing to refer Mrs Hughes, who is being discharged tomorrow following an eight-day admission, for ongoing community wound care.\n\nMrs Hughes was admitted with a venous leg ulcer to the right lower leg complicated by cellulitis. She completed a course of intravenous antibiotics, now switched to oral, and the cellulitis has resolved. The ulcer has been cleaned and dressed daily with a compression bandage and is improving, although it has not yet fully healed.\n\nOn discharge, she requires continued dressing changes three times weekly with ongoing compression until the ulcer heals. Please note she has type 2 diabetes (diet-controlled), which may affect healing, and she is allergic to penicillin.\n\nMrs Hughes lives alone in a ground-floor flat and is mobile with a stick. Her daughter visits daily and is supportive.\n\nI would be grateful if your team could take over her wound management. Please contact the ward should you require any further information.\n\nYours faithfully,\n[Name], Registered Nurse"
+    }
+  ]
+}
