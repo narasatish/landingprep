@@ -109,7 +109,7 @@ const TAGS = {
 // trips the relevance filter (it reads as spam). So we cap at TAG_MAX, keeping the caller's
 // topic/country/exam-specific tags FIRST and topping up with a couple of broad reach tags only
 // if the post didn't supply enough. On-topic ONLY (off-topic "trending" tags shadow-ban).
-const TAG_MAX = 6;
+const TAG_MAX = 5;
 // Broad reach tags used ONLY to top up a post that passed fewer than TAG_MAX of its own.
 const TRENDING_TAGS = ["studyabroad", "studyabroad2026", "internationalstudents", "studyvisa", "studentvisa", "ieltspreparation", "studygram", "overseaseducation", "scholarships", "highereducation", "msabroad"];
 function buildTags() {
@@ -2647,7 +2647,9 @@ function seriesTag(now) {
 function firstCommentText(content, now) {
   // Sends/tags are the #1 reach signal in 2026 — explicitly prompt a DM-send + a tag, then a reply CTA.
   const cta = "📩 Send this to a friend who's planning to study abroad — they'll thank you!\n👯 Tag someone applying this year 👇\n💬 Which country is on your list? We reply to everyone!\n📌 Save it for when you apply.";
-  const tags = ["#" + seriesTag(now), "#studyabroad", "#studygram", "#internationalstudents", "#studyabroad" + YEAR];
+  // 2026: ~5 hashtags total is the practical max — the caption already carries the topic tags, so the
+  // first comment keeps just 3 niche/community tags (more reads as spam and trips the relevance filter).
+  const tags = ["#" + seriesTag(now), "#studyabroad", "#internationalstudents"];
   return cta + "\n\n" + tags.join(" ");
 }
 async function postFirstComment({ mediaId, igUserId, token, message }) {
