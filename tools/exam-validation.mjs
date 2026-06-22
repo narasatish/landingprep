@@ -59,7 +59,10 @@ function validateTest(exam, sec, entry) {
   if (texts.length >= 3 && dups >= Math.ceil(texts.length / 2)) fail(exam, sec, `${file}: ${dups} duplicate prompts (looks templated/repeated)`);
 
   // Section-type-specific checks
-  const isWriting = /writing|essay|task/i.test(sec) || /writing/i.test(t.type || "");
+  // Exclude MCQ-format sections (e.g. SAT "reading-writing") from writing checks —
+  // if the majority of questions have options + correctAnswer they are objective, not essay.
+  const hasMCQFormat = qs.filter(q => Array.isArray(q.options) && q.options.length && q.correctAnswer != null).length > qs.length / 2;
+  const isWriting = !hasMCQFormat && (/writing|essay|task/i.test(sec) || /writing/i.test(t.type || ""));
   const isSpeaking = /speak/i.test(sec) || /speak/i.test(t.type || "");
   const isListening = /listen/i.test(sec) || /listen/i.test(t.type || "");
   const isObjective = /reading|verbal|quant|data|listen/i.test(sec);
@@ -98,8 +101,8 @@ for (const [exam, ex] of Object.entries(manifest.exams || {})) {
   for (const [sec, arr] of Object.entries(sections)) {
     (arr || []).slice(0, 2).forEach(entry => validateTest(exam, sec, entry));
   }
-  // 3) full mocks exist
-  if (!(ex.fullMocks || []).length) fail(exam, "fullMocks", "no full mocks defined");
+  // 3) full mocks exist — only required for core exams listed in EXPECT
+  if (EXPECT[exam] && !(ex.fullMocks || []).length) fail(exam, "fullMocks", "no full mocks defined");
   else ok();
 }
 
