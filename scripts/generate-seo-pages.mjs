@@ -3778,6 +3778,16 @@ Sitemap: ${ORIGIN}/feed.xml
 `);
 
 // ── llms.txt + llms-full.txt (AI / answer-engine discovery — GEO) ────────────
+// Surface the flagship, data-backed guides so AI answer engines (ChatGPT, Perplexity, Gemini) can
+// discover + cite them. Curated ids → auto-pulls each guide's real title from BLOG_EXTRA.
+const FEATURED_GUIDE_IDS = [
+  "student-visa-approval-rates-by-country-2026", "canada-vs-australia-for-indian-students-2026",
+  "canada-vs-ireland-for-indian-students-2026", "study-in-germany-for-free-2026",
+  "germany-blocked-account-2026-guide", "fastest-pr-countries-for-international-students-2026",
+  "cheapest-countries-to-study-abroad", "best-countries-study-abroad-2026",
+  "fully-funded-scholarships-study-abroad", "how-to-write-sop",
+];
+const featuredGuides = FEATURED_GUIDE_IDS.map((id) => { const p = BLOG_EXTRA.find((x) => x.id === id); return p ? `- [${p.title}](${ORIGIN}/blog/${id}/)` : null; }).filter(Boolean).join("\n");
 const llms = `# LandingPrep — 100% Free Exam Prep & Study Abroad
 
 > LandingPrep is a 100% free platform for English-test preparation, language learning, and studying abroad. Everything is free forever — no signup, no credit card, no paywall. Used by students in India, USA, UK, Canada, Australia, Germany, and 180+ countries.
@@ -3790,6 +3800,9 @@ const llms = `# LandingPrep — 100% Free Exam Prep & Study Abroad
 - [Scholarships for international students](${ORIGIN}/scholarships/): fully-funded & partial awards
 - [Free alternatives to paid prep](${ORIGIN}/free-alternatives/): a genuinely free option vs. paid coaching
 - [Blog & study-abroad guides](${ORIGIN}/blog/): exam strategy, visa and scholarship guides
+
+## Featured study-abroad guides (data-backed, 2026)
+${featuredGuides}
 
 ## Core Services (All Free)
 
