@@ -603,6 +603,18 @@ app.all("/api/ig/post-daily", async (req, res) => {
     // ?pool=preview → list pool items (no posting)
     // ?pool=next    → post today's pool item (rotates by date)
     // ?pool=N       → post the pool item at index N
+    // ── DUPLICATE GUARD ──────────────────────────────────────────────────────
+    // The direct one-off posting endpoints below (pool / carousel / cities / all / slot) BYPASS the
+    // daily-log dedup, so ANY cron hitting one of them re-posts the same content on every fire —
+    // the duplicate-post bug. Automated posting MUST use ?catchup=1 (atomic, at-most-once). Allow a
+    // direct post only for an explicit human one-off (&manual=1) or a preview (which never posts).
+    {
+      const _manual = String(req.query.manual || "") === "1";
+      const _preview = String(req.query.preview || "") !== "" || String(req.query.pool || "") === "preview";
+      if (!_manual && !_preview) {
+        return res.status(200).json({ ok: true, skipped: "direct posting disabled to prevent duplicates — automated posting runs through ?catchup=1 (deduplicated). Add &manual=1 to force a one-off post." });
+      }
+    }
     if (req.query.pool != null && req.query.pool !== "") {
       const pq = String(req.query.pool);
       if (pq === "preview") return res.json({ ok: true, preview: true, pool: ig.listPool({ baseUrl: IG_PUBLIC_BASE }) });

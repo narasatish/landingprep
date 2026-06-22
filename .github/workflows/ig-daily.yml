@@ -39,13 +39,13 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.mode }}" = "catchup" ]; then
             QS="catchup=1"
           elif [ "${{ github.event.inputs.mode }}" = "cities" ]; then
-            QS="cities=1"
+            QS="cities=1&manual=1"
           elif [ "${{ github.event.inputs.mode }}" = "pool" ]; then
-            QS="pool=next"
+            QS="pool=next&manual=1"
           elif [ "${{ github.event.inputs.mode }}" = "all" ]; then
-            QS="all=1"
+            QS="all=1&manual=1"
           elif [ "${{ github.event.inputs.mode }}" = "carousel" ]; then
-            QS="carousel=1"
+            QS="carousel=1&manual=1"
           else
             QS="catchup=1"
           fi
