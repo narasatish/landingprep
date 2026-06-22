@@ -1,0 +1,55 @@
+{
+  "id": "oet-speaking-002",
+  "exam": "oet",
+  "section": "speaking",
+  "type": "section",
+  "title": "OET Speaking Practice Test 2",
+  "durationSeconds": 1200,
+  "questionCount": 2,
+  "variant": "healthcare",
+  "instructions": "You will complete two role-plays based on typical healthcare workplace situations. Read your role card during the preparation time, then carry out the role-play. You are assessed on both your language (intelligibility, fluency, appropriateness, grammar and vocabulary) and your clinical communication (building the relationship, understanding the patient's perspective, providing structure, and giving information clearly).",
+  "scoringDimensions": [
+    "Intelligibility & fluency",
+    "Appropriateness of language",
+    "Relationship building & empathy",
+    "Providing structure & clear information"
+  ],
+  "questions": [
+    {
+      "id": "oet-speaking-002-q1",
+      "taskNumber": 1,
+      "taskType": "role_play",
+      "title": "Role-play — Explaining wound care at discharge",
+      "prepSeconds": 60,
+      "responseSeconds": 240,
+      "prompt": "SETTING: A surgical ward. You are a nurse.\nPATIENT: A 45-year-old being discharged after an appendix operation, with a small wound closed by dissolvable stitches. They are keen to get back to work as a delivery driver and seem to be only half-listening to the discharge advice.\nYOUR TASK:\n• Explain how to look after the wound at home.\n• Explain what signs of infection to watch for.\n• Advise on returning to activity and heavy lifting.\n• Check the patient has understood.",
+      "tip": "Keep instructions simple and prioritised — the patient won't remember ten points. Give clear safety-netting (what to look for and who to call), be realistic about their job, and finish by asking them to tell you the plan back in their own words.",
+      "rubric": [
+        "intelligibility_fluency",
+        "appropriateness",
+        "relationship_building",
+        "providing_structure"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "Before you head off, let's quickly go through looking after your wound, because getting this right will get you back to work sooner. Keep the dressing clean and dry for the first 48 hours; after that you can shower, but pat the area dry rather than rubbing it. The stitches dissolve on their own, so you don't need them removed. The main thing I want you to watch for is signs of infection — that's increasing redness spreading from the wound, swelling, the area feeling hot, any discharge, or a fever. If you notice any of those, contact your GP or call us on the ward number on your discharge sheet. On work — I know you're keen to get back, but you've had abdominal surgery, so please avoid heavy lifting and anything strenuous for about two weeks; gentle walking is good. Driving for work should wait until you can do an emergency stop without pain. Just so I know it's clear, could you tell me what you'd look out for that would make you call us?"
+    },
+    {
+      "id": "oet-speaking-002-q2",
+      "taskNumber": 2,
+      "taskType": "role_play",
+      "title": "Role-play — Reassuring a worried parent",
+      "prepSeconds": 60,
+      "responseSeconds": 240,
+      "prompt": "SETTING: A paediatric clinic. You are a healthcare professional.\nPARENT: The parent of a 7-year-old who has just been prescribed a preventer (steroid) inhaler for asthma. The parent is worried about 'giving a child steroids every day' and is thinking about only using it when the child is wheezy.\nYOUR TASK:\n• Acknowledge the concern.\n• Explain the difference between a preventer and a reliever inhaler.\n• Explain why daily use and the spacer matter.\n• Reassure about the low dose and agree a plan.",
+      "tip": "Validate the worry — 'steroids' sounds alarming to parents. Explain preventer vs reliever simply, why consistency prevents attacks, and the role of the spacer and rinsing the mouth. Avoid lecturing; agree a plan together.",
+      "rubric": [
+        "intelligibility_fluency",
+        "appropriateness",
+        "relationship_building",
+        "providing_structure"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "I can completely understand why the word 'steroid' makes you cautious — lots of parents feel exactly the same, so thank you for raising it. Let me explain how this inhaler works. There are two types: a reliever, usually blue, which opens the airways quickly when your child is wheezy, and this one — the preventer. The preventer works in the background, calming the inflammation in the airways so that attacks are far less likely to happen in the first place. That's why it needs to be taken every day, even when your child seems perfectly well; if you only use it when she's wheezy, the protection isn't there. The dose is very small and acts mainly in the lungs, not the whole body, so it's quite different from the steroids people worry about. Using the spacer helps the medicine reach the lungs and reduces side effects, and rinsing her mouth afterwards prevents a sore mouth. My suggestion is that we start it daily with the spacer, and I'll review her in six weeks to see how she's doing. How does that sound to you?"
+    }
+  ]
+}

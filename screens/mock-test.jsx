@@ -2005,7 +2005,20 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
   // Flatten cue cards + speaking tasks + part1/part3 questions into a single ordered list
   useEffectT(() => {
     const items = [];
-    if (sec.type === "speaking" || sec.type === "speaking_ielts") {
+    const isOetRolePlay = sec.examId === "oet" || sec.variant === "healthcare";
+    if (isOetRolePlay) {
+      // ── OET speaking sub-test — profession role-plays (no IELTS Part 1/2/3 small-talk) ──
+      items.push({ kind: "greeting", id: "greet", text: "Welcome to the OET speaking sub-test. You will take part in role-plays based on typical situations in your profession. Read your role card during the preparation time, then carry out the role-play. Let's begin." });
+      (sec.cards || []).forEach((card, i) => {
+        const prep = card.prepSeconds || 60;
+        items.push({ kind: "roleplay", id: card.id || ("rp_" + i),
+          text: `Here is role-play ${i + 1}. Please read your role card carefully. You have ${prep} seconds to prepare, then begin the role-play when you are ready.`,
+          roleplay: card.prompt || card.topic || "", tip: card.tip || "",
+          prep, expectSec: card.responseSeconds || 240,
+          modelAnswer: card.sampleAnswer || "" });
+      });
+      items.push({ kind: "closing", id: "closing", text: "Thank you. That is the end of the OET speaking sub-test. Click Submit section above to continue." });
+    } else if (sec.type === "speaking" || sec.type === "speaking_ielts") {
       // IELTS — Part 1 (4-6 short Qs), Part 2 (cue card), Part 3 (3-4 discussion Qs)
       // Greeting first
       items.push({ kind: "greeting", id: "greet", text: "Hello, my name is your AI examiner today. I'll be conducting your speaking test. Let's begin." });
@@ -2183,6 +2196,7 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
     item.kind.startsWith("part1") ? "Part 1 · Introduction"
     : item.kind.startsWith("part2") ? "Part 2 · Cue Card"
     : item.kind.startsWith("part3") ? "Part 3 · Discussion"
+    : item.kind === "roleplay" ? "Role-play"
     : item.kind === "greeting" ? "Greeting"
     : item.kind === "closing" ? "Closing"
     : "Speaking Task"
@@ -2225,6 +2239,14 @@ function SpeakingSection({ sec, answers, setAnswer, sectionId }) {
                   {item.card.points.map((pt, i) => <li key={i}>{pt}</li>)}
                 </ul>
               )}
+            </div>
+          )}
+          {/* OET role-play card — shown persistently so the candidate can read it while preparing & speaking */}
+          {item?.roleplay && (
+            <div className="cue-card">
+              <div className="cc-label">Your role-play card</div>
+              <div className="cc-topic" style={{ whiteSpace: "pre-wrap", lineHeight: 1.6 }}>{item.roleplay}</div>
+              {item.tip && <div style={{ marginTop: 10, fontSize: 13, color: "var(--ink-3)", fontStyle: "italic" }}>💡 {item.tip}</div>}
             </div>
           )}
           {/* Image to describe — PTE "describe_image" (chart/graph) or Duolingo photo task */}

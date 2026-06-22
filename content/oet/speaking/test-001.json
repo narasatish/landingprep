@@ -1,0 +1,55 @@
+{
+  "id": "oet-speaking-001",
+  "exam": "oet",
+  "section": "speaking",
+  "type": "section",
+  "title": "OET Speaking Practice Test 1",
+  "durationSeconds": 1200,
+  "questionCount": 2,
+  "variant": "healthcare",
+  "instructions": "You will complete two role-plays based on typical healthcare workplace situations. Read your role card during the preparation time, then carry out the role-play. You are assessed on both your language (intelligibility, fluency, appropriateness, grammar and vocabulary) and your clinical communication (building the relationship, understanding the patient's perspective, providing structure, and giving information clearly).",
+  "scoringDimensions": [
+    "Intelligibility & fluency",
+    "Appropriateness of language",
+    "Relationship building & empathy",
+    "Providing structure & clear information"
+  ],
+  "questions": [
+    {
+      "id": "oet-speaking-001-q1",
+      "taskNumber": 1,
+      "taskType": "role_play",
+      "title": "Role-play — Reassuring a patient before a procedure",
+      "prepSeconds": 60,
+      "responseSeconds": 240,
+      "prompt": "SETTING: A hospital ward. You are a nurse.\nPATIENT: A 58-year-old who is due to have a routine endoscopy (camera test) tomorrow and is very anxious — they have heard it is painful and are considering cancelling.\nYOUR TASK:\n• Find out the patient's specific concerns.\n• Explain simply what the procedure involves and what is done for comfort (numbing throat spray or light sedation).\n• Reassure the patient without dismissing their fear.\n• Agree a plan together.",
+      "tip": "Acknowledge the fear first, ask what specifically worries them, then explain in plain language. Avoid jargon. Manage the patient's emotions, not just the clinical facts, and check understanding before agreeing a plan.",
+      "rubric": [
+        "intelligibility_fluency",
+        "appropriateness",
+        "relationship_building",
+        "providing_structure"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "I can see you're worried about tomorrow — that's completely understandable, and I'm glad you've told me. Can I ask what's concerning you the most? ... Those are common worries, so let me talk them through with you. The test uses a thin, flexible camera to look at your stomach. Beforehand, you'll be offered either a numbing throat spray or a light sedative to help you relax — many patients remember very little afterwards. Your breathing isn't affected, because the camera goes into your food pipe, not your windpipe, and a nurse stays beside you the whole time. It can feel a little uncomfortable and you may gag slightly at first, but it isn't the severe pain you've been told about, and it usually takes only ten to fifteen minutes. How does that sound? My suggestion is that we don't cancel just yet — I'll arrange for you to speak with the endoscopy nurse this afternoon so you can ask anything else, and you can make your final decision then. Would that feel okay?"
+    },
+    {
+      "id": "oet-speaking-001-q2",
+      "taskNumber": 2,
+      "taskType": "role_play",
+      "title": "Role-play — Explaining a new medication",
+      "prepSeconds": 60,
+      "responseSeconds": 240,
+      "prompt": "SETTING: A community clinic. You are a healthcare professional.\nPATIENT: A 65-year-old just started on a statin for high cholesterol who is reluctant to take it because a friend told them 'statins ruin your muscles'.\nYOUR TASK:\n• Acknowledge the concern.\n• Explain in plain language why the medication has been offered and the realistic risk of side effects.\n• Explain what to do if muscle aches occur.\n• Agree a follow-up.",
+      "tip": "Don't dismiss the friend's claim — put it in proportion. Explain the benefit in terms the patient cares about, give clear safety-netting advice, and agree a concrete review date.",
+      "rubric": [
+        "intelligibility_fluency",
+        "appropriateness",
+        "relationship_building",
+        "providing_structure"
+      ],
+      "difficulty": "medium",
+      "modelAnswer": "I understand your hesitation — it's sensible to ask questions before starting a new medication, and I'd rather you raised this now than stopped it later. Your friend isn't entirely wrong: a small number of people do get muscle aches on statins. But it's worth putting that in proportion — significant muscle problems are uncommon, and for most people the aches, if they happen at all, are mild and settle. The reason this has been offered is that lowering your cholesterol meaningfully reduces your risk of a heart attack or stroke over the coming years, and at your level that benefit is substantial. Here's what I'd suggest: start the tablet, and if you notice any new, persistent muscle pain — especially if it's widespread or comes with dark urine — stop it and contact us, because there's a simple blood test we can do, and often switching to a different statin solves it. I'll book you a review in about eight weeks to check your cholesterol and see how you're getting on. Does that feel like a reasonable plan to try it and keep a close eye on things together?"
+    }
+  ]
+}

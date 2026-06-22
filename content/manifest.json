@@ -14655,6 +14655,32 @@
             "version": 3,
             "variant": "healthcare"
           }
+        ],
+        "speaking": [
+          {
+            "id": "oet-speaking-001",
+            "title": "OET Speaking Practice Test 1",
+            "exam": "oet",
+            "section": "speaking",
+            "type": "section",
+            "durationSeconds": 1200,
+            "questionCount": 2,
+            "file": "oet/speaking/test-001.json",
+            "version": 3,
+            "variant": "healthcare"
+          },
+          {
+            "id": "oet-speaking-002",
+            "title": "OET Speaking Practice Test 2",
+            "exam": "oet",
+            "section": "speaking",
+            "type": "section",
+            "durationSeconds": 1200,
+            "questionCount": 2,
+            "file": "oet/speaking/test-002.json",
+            "version": 3,
+            "variant": "healthcare"
+          }
         ]
       },
       "fullMocks": []

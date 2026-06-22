@@ -400,6 +400,8 @@
         points: n.points,
         prepSeconds: n.prepSeconds,
         responseSeconds: n.responseSeconds,
+        tip: q.tip || "",
+        // role-play guidance (OET)
         sampleAnswer: n.sampleAnswer || q.modelAnswer || q.sampleAnswer || "",
         rubric: n.rubric || q.rubric || ["fluency", "coherence", "vocabulary", "grammar", "pronunciation"]
       };
@@ -410,6 +412,8 @@
       icon: "\u{1F3A4}",
       timeSecs: test.durationSeconds || 840,
       type: "speaking",
+      examId: test.exam || "",
+      variant: test.variant || "",
       cards
     };
   }
