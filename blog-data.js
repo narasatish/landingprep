@@ -13489,7 +13489,7 @@ Check your occupation's code and see if it's on the SOL: [Department of Home Aff
       "id": "education-loan-without-collateral",
       "tag": "Funding",
       "date": "2026",
-      "title": "Unsecured Education Loans for Study Abroad 2026: No Collateral Required",
+      "title": "Education Loan Without Collateral 2026: No-Security Study-Abroad Loans (Banks, NBFCs & Rates)",
       "excerpt": "Get an unsecured (no-collateral) education loan for USA, Canada, UK, or Europe. Indian lenders HDFC Credila, Avanse, Auxilo, Prodigy, and MPOWER offer \u20B950\u201375 lakh loans. Learn eligibility, interest rates, no-collateral criteria.",
       "kw": "unsecured education loan abroad no collateral, education loan without security, HDFC Credila Avanse Auxilo Prodigy MPOWER, education loan USA Canada UK, no-collateral study loan India",
       "sections": [
@@ -13741,7 +13741,7 @@ Check your occupation's code and see if it's on the SOL: [Department of Home Aff
           "Loan agreement specifies the course and university. If you drop out, you must immediately begin repaying the loan (moratorium is voided). Avoid this situation. If circumstances change, contact your lender and explain; some allow course switches with updated docs."
         ]
       ],
-      "metaDesc": "Get unsecured education loans for study abroad 2026 without collateral. Compare rates, banks, and repayment options for Indian students."
+      "metaDesc": "Education loan without collateral for study abroad 2026 \u2014 which banks and NBFCs give no-security loans, the interest rates, eligibility and how to apply. Indian students."
     },
     {
       "id": "international-student-part-time-jobs",
@@ -16146,7 +16146,7 @@ After taking the LandingPrep mock, use your results to plan your 12-week study c
       "id": "gic-account-canada-2026-guide",
       "tag": "Funding",
       "date": "2026",
-      "title": "Canada GIC (Guaranteed Investment Certificate) for Study Permit 2026: Complete Guide for Indian Students",
+      "title": "GIC Account for Canada 2026: How Much You Need, Where to Open It & Why It's Required",
       "excerpt": "Canadian study permit now requires CAD 20,635 in a GIC (Guaranteed Investment Certificate) for SDS applicants in 2025. Learn how to open with ICICI, SBI Canada, CIBC, or other providers\u2014and how funds release monthly.",
       "kw": "Canada GIC study permit 2026, CAD 20635 GIC SDS, ICICI SBI Canada CIBC RBC GIC, how to open GIC Canada, GIC funds release monthly, Canada study visa funding",
       "sections": [
