@@ -32706,6 +32706,44 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
           "body": "DET is a 1-hour online test (reading, writing, speaking, listening) scored 10\u2013160. Prepare with full-length mocks to familiarize yourself with the adaptive format. Free practice materials include Duolingo's official sample questions. For comprehensive TOEFL, IELTS, and DET practice mocks, use LandingPrep's free full-length tests\u2014track your progress and identify weak areas before test day."
         }
       ]
+    },
+    {
+      "id": "gre-score-for-isb-iim-indian-bschools-2026",
+      "tag": "GRE",
+      "date": "2026",
+      "title": "GRE Score for ISB, IIM & Top Indian B-Schools 2026",
+      "excerpt": "Competitive GRE scores for ISB, IIMs, and Indian MBA programs range from 320\u2013330+. Learn what scores are needed, how GRE compares to GMAT, and acceptance by India's top business schools.",
+      "kw": "GRE score ISB IIM, GRE score Indian MBA, GRE vs GMAT India, ISB GRE requirement",
+      "sections": [
+        {
+          "h": "What GRE Score Do You Need for ISB & IIMs?",
+          "body": "Indian School of Business (ISB) Hyderabad admits students with GRE scores averaging 323\u2013328 (162 Quant, 165 Verbal), though minimum accepted is typically 310+. IIM Ahmedabad and IIM Bangalore now accept both GMAT and GRE, with GRE scores in the 320\u2013330 range being competitive. IIM Calcutta, Lucknow, and newer GMAT-accepting IIMs typically see admitted GRE candidates in the 315\u2013325 band. Note: ISB has accepted GRE since 2023; GMAT was historically preferred, but both are now equally valued."
+        },
+        {
+          "h": "ISB GRE Score Breakdown: Quant & Verbal",
+          "body": "ISB applicants with 160+ in Quant and 160+ in Verbal are typically competitive. The school values balanced scores, though Quant is slightly weighted higher for some profiles. Average admitted profile at ISB shows 162 Quant + 165 Verbal = 327 overall. IIMs follow similar patterns but with slightly lower averages (158 Quant + 162 Verbal = 320 is strong). If you score 310\u2013315, you may still interview but without scholarship."
+        },
+        {
+          "h": "GRE vs. GMAT: Which Should You Take for Indian MBAs?",
+          "body": "ISB officially accepts both GRE and GMAT equally; GMAT has historically been more prevalent but GRE adoption is rising. IIM Ahmedabad, Bangalore, and Calcutta now accept both. Decisioning: if you are stronger in Quant, GMAT (focus on data sufficiency, geometry) may suit you. If Verbal/Reading is a strength, GRE (vocabulary, reading comprehension) is your lane. For Indian B-schools, GMAT is still slightly preferred (60% of ISB admits), but a strong GRE (325+) is absolutely competitive\u2014pick based on your strengths, not the exam brand."
+        },
+        {
+          "h": "Other Top Indian B-Schools Accepting GRE",
+          "body": "Jamnalal Bajaj Institute of Management (JBIM), XLRI Xavier School of Management, and FORE School of Management now accept GRE alongside GMAT, though GMAT remains primary. SPJIMR (SP Jain) and Great Lakes Institute prefer GMAT but increasingly accept GRE for select applicants. Nirma University (NUIM) and Apeejay School of Management welcome both. Always verify on each school's admissions page, as acceptance policies evolve annually. Non-tier-1 schools typically accept GRE more readily."
+        },
+        {
+          "h": "GRE Score & ISB Scholarship Eligibility",
+          "body": "ISB data shows: 330+ GRE typically qualifies for merit scholarship consideration; 325\u2013330 is borderline; 315\u2013325 is unlikely without exceptional work experience. IIMs are less transparent but follow similar patterns. A 320 GRE with 8+ years experience and strong profile (engineering background, tech leadership) may compensate. Scholarships are holistic (GMAT/GRE + work ex + essays + interview), not formula-based. ISB website shows average scholarship recipient GRE is ~327."
+        },
+        {
+          "h": "How Many Attempts Can You Take & Timeline",
+          "body": "GRE allows 5 attempts in 12 months and 10 lifetime attempts, with at least 21 days between tests. If aiming for ISB/IIM round 1, test 2\u20133 months before application deadlines (typically September for round 1). Most Indian applicants apply in October\u2013November for intake the following year. Plan to test by August if targeting R1; if targeting R2 (December deadlines), test by October. Retesting adds 1\u20132 weeks to score reporting."
+        },
+        {
+          "h": "Practice GRE & Boost Your Score Before Submitting",
+          "body": "Free GRE prep includes ETS's PowerPrep software and reading comprehension drills. For a 320+ target score, aim for 3\u20134 months of focused preparation with daily Quant and Verbal practice. Full-length GRE mocks help you manage the 3.75-hour test under pressure. Practice free GRE mocks and Indian MBA-specific question banks on LandingPrep to diagnose weak areas and track your month-by-month improvement."
+        }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;
