@@ -2790,6 +2790,23 @@ async function replyToComment({ commentId, message, token }) {
   const r = await fetch(`https://graph.instagram.com/v21.0/${commentId}/replies`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message, access_token: token }) });
   const j = await r.json().catch(() => ({})); return { ok: !!(j && j.id), id: j && j.id, error: j && j.error };
 }
+// ── Direct-message API wrappers (auto-welcome responder; orchestration + dedup live in server.js) ──
+// Needs instagram_business_manage_messages. Reply only — IG policy forbids cold DMs; you can message
+// a user within ~24h of THEIR message, which is exactly the inbound-welcome case.
+async function listConversations({ igUserId, token, limit }) {
+  const r = await fetch(`https://graph.instagram.com/v21.0/${igUserId}/conversations?platform=instagram&fields=id,updated_time&limit=${limit || 15}&access_token=${encodeURIComponent(token)}`);
+  const j = await r.json(); if (j.error) throw new Error("listConversations: " + JSON.stringify(j.error));
+  return (j.data || []).map((c) => ({ id: c.id, updated: c.updated_time }));
+}
+async function listMessages({ conversationId, token }) {
+  const r = await fetch(`https://graph.instagram.com/v21.0/${conversationId}?fields=messages{id,from,message,created_time}&access_token=${encodeURIComponent(token)}`);
+  const j = await r.json(); if (j.error) throw new Error("listMessages: " + JSON.stringify(j.error));
+  return (((j.messages && j.messages.data) || [])).map((m) => ({ id: m.id, fromId: m.from && m.from.id, text: m.message || "", created: m.created_time }));
+}
+async function sendDM({ igUserId, recipientId, text, token }) {
+  const r = await fetch(`https://graph.instagram.com/v21.0/${igUserId}/messages`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ recipient: { id: recipientId }, message: { text }, access_token: token }) });
+  const j = await r.json().catch(() => ({})); return { ok: !!(j && j.message_id), id: j && j.message_id, error: j && j.error };
+}
 // Account + post engagement stats for the weekly report AND best-time scheduling. Every field is
 // best-effort — a missing permission or deprecated metric just leaves that field null. byHourIST
 // buckets each post's engagement by its IST hour-of-day so we can find the account's best windows.
@@ -3067,4 +3084,4 @@ async function runCitiesCarousel({ baseUrl, igUserId, token, now, offset }) {
   const res = await postCarousel({ imageUrls: gen.imageUrls, caption: gen.caption, igUserId, token });
   return { ok: true, type: "carousel", topic: gen.country, slides: res.slides, mediaId: res.mediaId };
 }
-module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, generateReel, postReel, runReel, postFirstComment, firstCommentText, seriesTag, reelHook, generateStory, postStory, runStory, storyContent, listRecentMedia, listComments, replyToComment, weeklyStats, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };
+module.exports = { pickForSlot, slotFromHour, buildSvg, renderPng, buildCaption, captionIntro, generateDailyImage, postToInstagram, runDailyPost, runAllSlots, generateCarousel, postCarousel, runCarousel, generateReel, postReel, runReel, postFirstComment, firstCommentText, seriesTag, reelHook, generateStory, postStory, runStory, storyContent, listRecentMedia, listComments, replyToComment, listConversations, listMessages, sendDM, weeklyStats, whoami, listPool, runPoolPost, buildCitiesCarousel, renderCitiesCarousel, renderTopicCarousel, generateCitiesCarousel, runCitiesCarousel, buildExpressEntryPost, expressEntryDraw, SLOTS, CAROUSEL_SLOT, OUT_DIR, POOL_DIR };

@@ -16400,7 +16400,7 @@ After taking the LandingPrep mock, use your results to plan your 12-week study c
       "id": "germany-blocked-account-2026-guide",
       "tag": "Funding",
       "date": "2026",
-      "title": "Germany Blocked Account (Sperrkonto) 2026: Complete Setup Guide for Indian Students",
+      "title": "Germany Blocked Account 2026: How Much You Need (EUR 11,904) & Best Providers",
       "excerpt": "German student visa requires a blocked account (Sperrkonto) with EUR 11,904/year (EUR 992/month). Learn how to open one with Fintiba, Expatrio, Deutsche Bank, or Coracle\u2014and unlock funds after arrival.",
       "kw": "Germany blocked account Sperrkonto 2026, German Sperrkonto EUR 11904, Fintiba Expatrio Deutsche Bank, how to open German blocked account, unblock Sperrkonto after arrival, student visa Germany funding",
       "sections": [
@@ -16633,7 +16633,7 @@ After taking the LandingPrep mock, use your results to plan your 12-week study c
           "For 2 years, double the amount: EUR 23,808. For a spouse or dependent, add another EUR 5,952 per person. Adjust your Sperrkonto deposit accordingly."
         ]
       ],
-      "metaDesc": "Germany blocked account (Sperrkonto) setup 2026: Required funds, which banks offer it, withdrawal rules, and step-by-step for Indians."
+      "metaDesc": "Germany blocked account 2026: the exact amount you need (EUR 11,904), the best Sperrkonto providers (Fintiba, Expatrio, Deutsche Bank), step-by-step setup and withdrawal rules."
     },
     {
       "id": "sop-for-uk-student-visa-sample",

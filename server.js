@@ -1790,6 +1790,40 @@ async function igAutoReply(ig) {
   finally { _autoReplyBusy = false; }
 }
 
+// ── DM auto-welcome responder (engagement → follows) ─────────────────────────────
+// Replies ONCE to each new conversation with a warm welcome + the link hub. IG forbids cold DMs,
+// so this only ever replies to people who messaged YOU (within the policy window). OFF by default —
+// set IG_DM_AUTOREPLY=1 to enable (after confirming the instagram_business_manage_messages scope).
+// Best-effort, deduped per conversation, throttled, capped — never breaks posting.
+let _dmBusy = false, _lastDm = 0;
+async function igDmAutoReply(ig) {
+  if (process.env.IG_DM_AUTOREPLY !== "1") return;             // opt-in only (messaging is sensitive)
+  if (_dmBusy || !IG_USER_ID || !IG_TOKEN || !FS_DB) return;
+  if (Date.now() - _lastDm < 25 * 60 * 1000) return;
+  _dmBusy = true; _lastDm = Date.now();
+  try {
+    const convos = await ig.listConversations({ igUserId: IG_USER_ID, token: IG_TOKEN, limit: 15 });
+    const ref = FS_DB.collection("ig_config").doc("dm_replied");
+    const snap = await ref.get(); const replied = (snap.exists && (snap.data() || {}).ids) || {};
+    const welcome = "Hey! 👋 Thanks for messaging LandingPrep. For free study-abroad guides, mock tests & our College Predictor, tap the link in our bio (landingprep.com/links). Which country or exam are you planning? We're happy to point you to the right free resources 🌍";
+    let count = 0; const MAX = 6;
+    for (const c of convos) {
+      if (count >= MAX) break;
+      if (replied[c.id]) continue;                              // one welcome per conversation, ever
+      let msgs = []; try { msgs = await ig.listMessages({ conversationId: c.id, token: IG_TOKEN }); } catch (e) { continue; }
+      const inbound = msgs.find((m) => m.fromId && String(m.fromId) !== String(IG_USER_ID));   // a message from THEM
+      if (!inbound) continue;
+      const r = await ig.sendDM({ igUserId: IG_USER_ID, recipientId: inbound.fromId, text: welcome, token: IG_TOKEN });
+      replied[c.id] = r.ok ? Date.now() : 1;                    // mark either way → never retry-storm a bad convo
+      if (r.ok) { count++; await new Promise((rr) => setTimeout(rr, 3000)); }
+    }
+    const ids = Object.keys(replied); if (ids.length > 500) ids.slice(0, ids.length - 500).forEach((k) => delete replied[k]);
+    if (count > 0 || !snap.exists) await ref.set({ ids: replied, updatedAt: Date.now() }, { merge: true });
+    if (count > 0) console.log("[ig-dm] welcomed", count, "new conversation(s)");
+  } catch (e) { console.warn("[ig-dm]", e.message); }
+  finally { _dmBusy = false; }
+}
+
 // ── Weekly insights email + best-time auto-scheduling ────────────────────────────
 // Once a week we email the owner a plain report (followers, weekly likes/comments, reach, top post,
 // best posting hours) AND — only if there's enough history and IG_SMART_SCHEDULE=1 — store a
@@ -1886,6 +1920,8 @@ async function igAutoTick(reason) {
     } catch (e) { console.warn("[ig-tick] catchup:", e.message); await igAlert("posting-exception", e.message); }
     // 1b) Auto-reply to new comments (engagement → reach). Best-effort, throttled internally.
     try { await igAutoReply(ig); } catch (e) { console.warn("[ig-tick] autoreply:", e.message); }
+    // 1c) DM auto-welcome for new conversations (opt-in: IG_DM_AUTOREPLY=1). Best-effort.
+    try { await igDmAutoReply(ig); } catch (e) { console.warn("[ig-tick] dm:", e.message); }
     // 2) Evening owner-approval email for TOMORROW — once per day, ~15:00–18:00 UTC
     //    (≈20:30–23:30 IST, before the 11:59pm IST auto-approve deadline). prepareTomorrow is
     //    internally idempotent (skips if already prepared & emailed), so this is safe to call often.
