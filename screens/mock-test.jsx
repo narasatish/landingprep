@@ -3215,22 +3215,39 @@ function ScoreCardButton({ exam, report }) {
   const [busy, setBusy] = useStateT(false);
   if (report.overall == null) return null;
   const draw = () => {
+    const W = 1200, H = 630;
     const c = document.createElement("canvas");
-    c.width = 1200; c.height = 630;
+    c.width = W; c.height = H;
     const ctx = c.getContext("2d");
-    const g = ctx.createLinearGradient(0, 0, 1200, 630);
-    g.addColorStop(0, "#4F46E5"); g.addColorStop(1, "#7C3AED");
-    ctx.fillStyle = g; ctx.fillRect(0, 0, 1200, 630);
-    ctx.fillStyle = "rgba(255,255,255,0.09)"; roundRectPath(ctx, 60, 60, 1080, 510, 28); ctx.fill();
-    ctx.fillStyle = "#fff"; ctx.font = "700 44px system-ui,Segoe UI,Arial"; ctx.fillText("▲ LandingPrep", 100, 150);
-    ctx.font = "500 34px system-ui,Segoe UI,Arial"; ctx.fillStyle = "rgba(255,255,255,0.85)";
-    ctx.fillText(exam.name + " · Mock Test", 100, 225);
-    ctx.font = "800 190px system-ui,Segoe UI,Arial"; ctx.fillStyle = "#fff";
-    ctx.fillText(String(report.overall), 100, 430);
-    ctx.font = "600 42px system-ui,Segoe UI,Arial"; ctx.fillStyle = "rgba(255,255,255,0.92)";
-    ctx.fillText(report.overallLabel || "Score", 100, 495);
-    ctx.font = "500 30px system-ui,Segoe UI,Arial"; ctx.fillStyle = "rgba(255,255,255,0.82)";
-    ctx.fillText("100% free practice · landingprep.com", 100, 545);
+    const accent = (exam && exam.colour) || "#22D3EE";
+    // Background — deep brand gradient
+    const g = ctx.createLinearGradient(0, 0, W, H);
+    g.addColorStop(0, "#4F46E5"); g.addColorStop(0.55, "#6D28D9"); g.addColorStop(1, "#7C3AED");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    // Soft decorative circles for depth
+    ctx.fillStyle = "rgba(255,255,255,0.07)";
+    ctx.beginPath(); ctx.arc(1070, 110, 240, 0, Math.PI * 2); ctx.fill();
+    ctx.beginPath(); ctx.arc(150, 610, 190, 0, Math.PI * 2); ctx.fill();
+    // Glass card
+    ctx.fillStyle = "rgba(255,255,255,0.10)"; roundRectPath(ctx, 56, 56, W - 112, H - 112, 32); ctx.fill();
+    ctx.strokeStyle = "rgba(255,255,255,0.20)"; ctx.lineWidth = 2; roundRectPath(ctx, 56, 56, W - 112, H - 112, 32); ctx.stroke();
+    ctx.textBaseline = "alphabetic";
+    // Brand wordmark
+    ctx.fillStyle = "#fff"; ctx.font = "800 46px system-ui,Segoe UI,Arial";
+    ctx.fillText("🎓 LandingPrep", 100, 152);
+    // Eyebrow — exam name in its own brand colour
+    ctx.font = "700 30px system-ui,Segoe UI,Arial"; ctx.fillStyle = accent;
+    ctx.fillText((exam.name + "  ·  MOCK TEST").toUpperCase(), 102, 250);
+    // Accent bar + big score
+    ctx.fillStyle = accent; roundRectPath(ctx, 100, 300, 14, 172, 7); ctx.fill();
+    ctx.fillStyle = "#fff"; ctx.font = "900 200px system-ui,Segoe UI,Arial";
+    ctx.fillText(String(report.overall), 142, 470);
+    // Label
+    ctx.font = "700 40px system-ui,Segoe UI,Arial"; ctx.fillStyle = "rgba(255,255,255,0.95)";
+    ctx.fillText(report.overallLabel || "Score", 146, 520);
+    // Footer CTA
+    ctx.font = "600 30px system-ui,Segoe UI,Arial"; ctx.fillStyle = "rgba(255,255,255,0.90)";
+    ctx.fillText("Practise free for 15+ exams  →  landingprep.com", 100, 575);
     return c;
   };
   const share = () => {
@@ -3268,7 +3285,7 @@ function ShareScoreCard({ exam, report }) {
   const examName = (exam && exam.name) || "English";
   const scoreTxt = String(report.overall) + (report.overallLabel ? " (" + report.overallLabel + ")" : "");
   const url = "https://landingprep.com/?utm_source=share&utm_medium=score&utm_campaign=" + encodeURIComponent(examId);
-  const msg = "I scored " + scoreTxt + " on a free " + examName + " mock test on LandingPrep 🎯 Practise free for IELTS, TOEFL, PTE, GRE & GMAT 👉 " + url;
+  const msg = "I scored " + scoreTxt + " on a free " + examName + " mock test on LandingPrep 🎯 Practise free for 15+ exams — IELTS, TOEFL, OET, PTE, GRE & GMAT 👉 " + url;
   const ga = (method) => { try { if (typeof window.gtag === "function") window.gtag("event", "share", { method: method, content_type: "score", item_id: examId }); } catch (e) {} };
   const copyMsg = async () => {
     ga("copy");
