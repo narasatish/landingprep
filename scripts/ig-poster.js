@@ -2086,9 +2086,7 @@ async function postToInstagram({ imageUrl, caption, igUserId, token }) {
   const cr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ image_url: imageUrl, caption, access_token: token }) });
   const cj = await cr.json(); if (!cr.ok || !cj.id) throw new Error("IG container failed: " + JSON.stringify(cj));
   await new Promise((r) => setTimeout(r, 4000));
-  const pr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media_publish`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: cj.id, access_token: token }) });
-  const pj = await pr.json(); if (!pr.ok || !pj.id) throw new Error("IG publish failed: " + JSON.stringify(pj));
-  return { containerId: cj.id, mediaId: pj.id };
+  return { containerId: cj.id, mediaId: await publishContainer({ creationId: cj.id, caption, igUserId, token }) };
 }
 async function whoami({ token }) {
   if (!token) throw new Error("Missing IG_ACCESS_TOKEN env");
@@ -2632,9 +2630,7 @@ async function postCarousel({ imageUrls, caption, igUserId, token }) {
   const cr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ media_type: "CAROUSEL", children: children.join(","), caption, access_token: token }) });
   const cj = await cr.json(); if (!cr.ok || !cj.id) throw new Error("carousel container failed: " + JSON.stringify(cj));
   await new Promise((r) => setTimeout(r, 4000));
-  const pr = await fetch(`https://graph.instagram.com/${v}/${igUserId}/media_publish`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: cj.id, access_token: token }) });
-  const pj = await pr.json(); if (!pr.ok || !pj.id) throw new Error("carousel publish failed: " + JSON.stringify(pj));
-  return { mediaId: pj.id, slides: imageUrls.length };
+  return { mediaId: await publishContainer({ creationId: cj.id, caption, igUserId, token }), slides: imageUrls.length };
 }
 // Recurring weekly series — a branded community hashtag per weekday. Trains followers to come
 // back and rides existing community tags. Content-agnostic, so it's never a false claim.
@@ -2715,9 +2711,7 @@ async function postReel({ videoUrl, caption, igUserId, token }) {
     } catch (e) { if (/ERROR/.test(e.message)) throw e; /* transient poll error → keep waiting */ }
   }
   if (status !== "FINISHED") throw new Error("reel not FINISHED after polling (last: " + status + ")");
-  const pr = await fetch("https://graph.instagram.com/" + v + "/" + igUserId + "/media_publish", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: cj.id, access_token: token }) });
-  const pj = await pr.json(); if (!pr.ok || !pj.id) throw new Error("reel publish failed: " + JSON.stringify(pj));
-  return { mediaId: pj.id };
+  return { mediaId: await publishContainer({ creationId: cj.id, caption, igUserId, token }) };
 }
 async function runReel({ baseUrl, igUserId, token, now, offset }) {
   if (!igUserId || !token) throw new Error("Missing IG_USER_ID or IG_ACCESS_TOKEN env");
@@ -2778,6 +2772,44 @@ async function runStory({ baseUrl, igUserId, token, now }) {
 }
 
 // ── Comment auto-reply API wrappers (orchestration + dedup live in server.js) ──
+// ── Idempotent publishing (kills the duplicate-post bug) ─────────────────────
+// A media_publish call can SUCCEED on Meta's side but fail to return a clean response (a network
+// blip at that instant). Previously that threw, the catch-up never recorded the mediaId, and 15 min
+// later the SAME post was published again → a DUPLICATE. Before reporting a publish as failed we now
+// check the account's recent media: if this exact caption was just posted, it's already live — return
+// that mediaId and do NOT retry. Only a genuinely-unpublished post throws (still safe to retry).
+async function findJustPostedByCaption({ igUserId, token, caption }) {
+  try {
+    const sig = String(caption || "").replace(/\s+/g, " ").trim().slice(0, 80);
+    if (!sig) return null;
+    const recent = await listRecentMedia({ igUserId, token, limit: 5 });
+    const now = Date.now();
+    for (const m of recent) {
+      const cap = String(m.caption || "").replace(/\s+/g, " ").trim().slice(0, 80);
+      const age = m.timestamp ? (now - new Date(m.timestamp).getTime()) : 1e12;
+      if (cap === sig && age < 20 * 60 * 1000) return m.id;   // same caption, posted in the last 20 min
+    }
+  } catch (e) { /* verification is best-effort — never let it block posting */ }
+  return null;
+}
+async function publishContainer({ creationId, caption, igUserId, token }) {
+  const v = "v21.0";
+  // PRE-CHECK: if a prior attempt already published this exact caption (but failed to record the
+  // mediaId — lost publish response, Firestore write blip, process restart), don't publish again.
+  const already = await findJustPostedByCaption({ igUserId, token, caption });
+  if (already) return already;
+  try {
+    const pr = await fetch("https://graph.instagram.com/" + v + "/" + igUserId + "/media_publish", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ creation_id: creationId, access_token: token }) });
+    const pj = await pr.json().catch(() => ({}));
+    if (pr.ok && pj && pj.id) return pj.id;
+    throw new Error("publish failed: " + JSON.stringify(pj));
+  } catch (e) {
+    // POST-CHECK: the publish response failed, but Meta may have published anyway — verify before retry.
+    const existing = await findJustPostedByCaption({ igUserId, token, caption });
+    if (existing) return existing;                                  // it actually published — don't duplicate
+    throw e;                                                        // genuinely not published — safe to retry
+  }
+}
 async function listRecentMedia({ igUserId, token, limit }) {
   const r = await fetch(`https://graph.instagram.com/v21.0/${igUserId}/media?fields=id,caption,timestamp&limit=${limit || 4}&access_token=${encodeURIComponent(token)}`);
   const j = await r.json(); if (j.error) throw new Error("listRecentMedia: " + JSON.stringify(j.error));
