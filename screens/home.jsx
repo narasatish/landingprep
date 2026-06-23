@@ -238,8 +238,8 @@ function Home({ onGuide, onPractice, onNav }) {
   React.useEffect(() => {
     if (!window.LP_SEO) return;
     window.LP_SEO.set({
-      title: "Free IELTS, TOEFL, PTE, GRE & GMAT Mock Tests Online | LandingPrep",
-      description: "1,000+ free practice tests with answers and model responses. Real exam patterns, instant scoring, natural-voice listening — no signup required."
+      title: "Free IELTS, TOEFL, OET, PTE, GRE & GMAT Mock Tests | LandingPrep",
+      description: "1,000+ free practice tests across 15+ exams — IELTS, TOEFL, OET, PTE, GRE, GMAT, SAT & more. Real exam patterns, instant scoring & AI band feedback — no signup."
     });
   }, []);
   const faqActive = faqTab === "abroad" ? STUDY_FAQS : FAQS;
@@ -264,7 +264,7 @@ function Home({ onGuide, onPractice, onNav }) {
               Prep for your exam.<br />Land your <em style={{ fontStyle: "italic", fontFamily: "var(--serif)", color: "var(--accent)" }}>dream university</em> abroad.
             </h1>
             <p className="body-lg muted" style={{ maxWidth: 760, marginTop: 18, marginInline: "auto" }}>
-              1,000+ free mock tests for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE &amp; GMAT — plus a complete study-abroad toolkit: college predictor, scholarships, SOP, visa &amp; more. All free, for students in every country.
+              1,000+ free mock tests across 15+ exams — IELTS, TOEFL, OET, PTE, GRE, GMAT, SAT &amp; more — plus a complete study-abroad toolkit: college predictor, scholarships, SOP &amp; visa guidance. All free, for students in every country.
             </p>
             <div className="hero-cta">
               <button className="btn btn-primary btn-lg" onClick={() => onNav("exam-prep")}>Browse all mock tests →</button>
@@ -297,8 +297,8 @@ function Home({ onGuide, onPractice, onNav }) {
       <section className="section lp-stats-section reveal" style={{ paddingTop: 24, paddingBottom: 8 }}>
         <div className="shell">
           <div className="lp-stats">
-            {[["7", "exams covered"], ["1,000+", "free mock tests"], ["99", "universities"], ["100%", "free, forever"], ["0", "signups to start"]].map(([n, l]) => (
-              <div className="lp-stat" key={l}><span className="lp-stat-n">{n}</span><span className="lp-stat-l">{l}</span></div>
+            {[[exams.length + "+", "exams covered", "var(--accent)"], ["1,000+", "free mock tests", "#16a34a"], ["99", "universities", "#0ea5e9"], ["100%", "free, forever", "#f59e0b"], ["0", "signups to start", "#ec4899"]].map(([n, l, c]) => (
+              <div className="lp-stat" key={l}><span className="lp-stat-n" style={{ color: c }}>{n}</span><span className="lp-stat-l">{l}</span></div>
             ))}
           </div>
         </div>
@@ -318,7 +318,7 @@ function Home({ onGuide, onPractice, onNav }) {
           </div>
           <div className="lp-pros reveal">
             {[
-              ["📝", "1,000+ realistic mocks", "Real timings & patterns across all 7 exams with instant scoring.", "exam-prep"],
+              ["📝", "1,000+ realistic mocks", "Real timings & patterns across all 15+ exams with instant scoring.", "exam-prep"],
               ["🎤", "Speaking practice", "Speak into your mic, get live transcripts, follow-ups & fluency scoring.", "agents"],
               ["✍️", "AI band-score checker", "Paste an essay or record a Part 2 — instant IELTS band, TR/CC/LR/GRA breakdown & Band 9 model.", "writing-checker"],
               ["🏛️", "College Predictor", "99 top universities with fees, requirements & Safe/Target/Reach matches.", "colleges"],
@@ -373,16 +373,20 @@ function Home({ onGuide, onPractice, onNav }) {
           </div>
 
           <ul className="exam-list-simple reveal">
-            {exams.map((e) => (
+            {exams.map((e) => {
+              const isNew = e.id === "oet";
+              return (
               <li key={e.id}>
-                <a href="#" onClick={(ev) => { ev.preventDefault(); onGuide(e); }}>
-                  <span className="el-dot" style={{ background: e.colour }} />
+                <a href="#" onClick={(ev) => { ev.preventDefault(); onGuide(e); }}
+                   style={{ borderLeft: "3px solid " + e.colour }}>
+                  <span className="el-dot" style={{ background: e.colour, boxShadow: "0 0 0 4px " + e.colour + "26" }} />
                   <span className="el-name">{e.name}</span>
+                  {isNew && <span className="el-new">NEW</span>}
                   <span className="el-tag">{e.tagline}</span>
-                  <span className="el-arrow">→</span>
+                  <span className="el-arrow" style={{ color: e.colour }}>→</span>
                 </a>
               </li>
-            ))}
+            );})}
           </ul>
         </div>
       </section>

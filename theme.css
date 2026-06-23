@@ -1618,7 +1618,9 @@ img { max-width: 100%; display: block; }
 .exam-list-simple .el-dot { width: 12px; height: 12px; border-radius: 999px; flex-shrink: 0; }
 .exam-list-simple .el-name { font-family: var(--serif); font-size: 18px; letter-spacing: -0.01em; flex-shrink: 0; }
 .exam-list-simple .el-tag { color: var(--ink-3); font-size: 13px; flex: 1; }
-.exam-list-simple .el-arrow { color: var(--accent); font-size: 18px; }
+.exam-list-simple .el-arrow { color: var(--accent); font-size: 18px; transition: transform .2s ease; }
+.exam-list-simple a:hover .el-arrow { transform: translateX(3px); }
+.exam-list-simple .el-new { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.06em; padding: 2px 7px; border-radius: 999px; background: linear-gradient(135deg, #16a34a, #0ea5e9); color: #fff; flex-shrink: 0; box-shadow: 0 2px 8px -2px rgba(14,165,233,0.5); }
 
 .card-cta {
   background: linear-gradient(135deg, rgba(79,70,229,0.08), rgba(124,58,237,0.06), rgba(14,165,233,0.05));
