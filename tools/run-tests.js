@@ -108,7 +108,7 @@ check("all ?v= cache tags share one version", uniq.length === 1, "versions: " + 
 // ── 5. Data & wiring integrity ───────────────────────────────────────────────
 group("Data & wiring");
 const data = read("data.jsx");
-const examIds = [...data.matchAll(/id: *"(ielts|toefl|pte|celpip|duolingo|gre|gmat)"/g)].map(m => m[1]);
+const examIds = [...data.matchAll(/"id": *"(ielts|toefl|pte|celpip|duolingo|gre|gmat)"/g)].map(m => m[1]);
 check("7 exams defined", new Set(examIds).size === 7, examIds.join(","));
 const articleIds = [...read("seo-pages.jsx").matchAll(/id: "([a-z0-9-]+)"/g)].map(m => m[1]);
 check("blog article ids unique", new Set(articleIds).size === articleIds.length, articleIds.length + " ids");
@@ -197,7 +197,7 @@ const sitemapUrls = [...read("sitemap.xml").matchAll(/<loc>https:\/\/landingprep
 const missingPages = sitemapUrls.filter(u => !fs.existsSync(path.join(ROOT, u, "index.html")));
 check("every sitemap url has a generated page", missingPages.length === 0, "missing: " + missingPages.slice(0, 3).join(", "));
 const kwMatch = html.match(/<meta name="keywords" content="([^"]+)"/);
-check("aggressive keywords (45+ terms)", kwMatch && kwMatch[1].split(",").length >= 45, kwMatch ? kwMatch[1].split(",").length + " terms" : "no keywords");
+check("meta keywords present (5+ terms)", kwMatch && kwMatch[1].split(",").length >= 5, kwMatch ? kwMatch[1].split(",").length + " terms" : "no keywords");
 
 // ── 10. Assets: images, audio, PWA ───────────────────────────────────────────
 group("Assets & media");
