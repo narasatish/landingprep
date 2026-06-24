@@ -42,7 +42,7 @@
     return "#dc2626";
   }
 
-  function BandResult({ data, rewriteLabel }) {
+  function BandResult({ data, rewriteLabel, overallLabel }) {
     const [open, setOpen] = useState(false);
     if (!data) return null;
     const overall = data.overall != null ? data.overall : "—";
@@ -50,7 +50,7 @@
       <div className="bc-result">
         <div className="bc-overall" style={{ background: "linear-gradient(135deg, " + bandColor(overall) + ", #0ea5e9)" }}>
           <div className="bc-overall-num">{overall}</div>
-          <div className="bc-overall-lbl">Estimated Band</div>
+          <div className="bc-overall-lbl">{overallLabel || "Estimated Band"}</div>
         </div>
         <div className="bc-criteria">
           {(data.criteria || []).map((c, i) => (
@@ -182,8 +182,43 @@
     );
   }
 
+  // AI SOP / Statement-of-Purpose reviewer — reuses the same Gemini proxy + BandResult renderer.
+  function SopReviewer() {
+    const [text, setText] = useState("");
+    const [data, setData] = useState(null);
+    const [busy, setBusy] = useState(false);
+    const [err, setErr] = useState("");
+    const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+    async function check() {
+      setBusy(true); setErr(""); setData(null);
+      try {
+        const prompt = `You are an experienced study-abroad admissions consultant reviewing a Statement of Purpose (SOP) for a university application. Be critical but constructive and specific. SOP:\n"""${text.slice(0, 7000)}"""\n\nReturn ONLY a JSON object: {"overall": <score 0-10>, "wordCount": <int>, "criteria": [{"key":"Clarity of purpose","score":<0-10>,"comment":"<one sentence>"},{"key":"Specificity & evidence","score":<0-10>,"comment":"<one sentence>"},{"key":"Structure & flow","score":<0-10>,"comment":"<one sentence>"},{"key":"Language & tone","score":<0-10>,"comment":"<one sentence>"}], "strengths": ["<2-3 short points>"], "improvements": ["<4-5 specific, actionable points: vague claims to make concrete, clichés to cut, missing details to add>"], "corrections": [{"original":"<a weak or cliché phrase taken from the SOP>","fixed":"<a stronger, specific rewrite>"}], "band9Rewrite": "<a stronger, more specific rewrite of the OPENING paragraph (3-4 sentences) that hooks the reader>"}`;
+        const d = await evaluate(prompt);
+        if (!d || d.overall == null) throw new Error("parse");
+        setData(d);
+        try { window.LP_Gamify && window.LP_Gamify.award(30, "sop review"); } catch (e) {}
+      } catch (e) { setErr("Couldn't review that — please try again (the AI may be warming up)."); }
+      setBusy(false);
+    }
+    return (
+      <div>
+        <div className="tool-card">
+          <p style={{ margin: "0 0 10px", color: "var(--ink-3, #667085)", fontSize: 14 }}>Paste your Statement of Purpose and get instant, specific feedback on clarity, specificity, structure and tone — plus a stronger opening. Your text isn't stored.</p>
+          <textarea className="bc-textarea" rows={12} placeholder="Paste your Statement of Purpose (SOP) here…" value={text} onChange={(e) => setText(e.target.value)} />
+          <div className="bc-meta">
+            <span className={words < 150 ? "bc-words low" : "bc-words ok"}>{words} words {words < 150 ? "· an SOP is usually 500–1000 words" : "✓"}</span>
+            <button className="btn btn-primary" disabled={busy || words < 80} onClick={check}>{busy ? "Reviewing…" : "Review my SOP →"}</button>
+          </div>
+          {err && <div className="bc-err">{err}</div>}
+        </div>
+        {busy && <div className="tool-card bc-loading">⏳ The AI consultant is reading your SOP and checking clarity, specificity and structure…</div>}
+        <BandResult data={data} rewriteLabel="Stronger opening paragraph" overallLabel="SOP Score / 10" />
+      </div>
+    );
+  }
+
   function BandChecker({ onNav, initialMode }) {
-    const [mode, setMode] = useState(initialMode === "speaking" ? "speaking" : "writing");
+    const [mode, setMode] = useState(initialMode === "speaking" ? "speaking" : initialMode === "sop" ? "sop" : "writing");
     useEffect(() => {
       try {
         document.title = mode === "writing"
@@ -204,8 +239,9 @@
           <div className="tools-tabs">
             <button className={"tools-tab" + (mode === "writing" ? " active" : "")} onClick={() => setMode("writing")}>✍️ Writing</button>
             <button className={"tools-tab" + (mode === "speaking" ? " active" : "")} onClick={() => setMode("speaking")}>🎙️ Speaking</button>
+            <button className={"tools-tab" + (mode === "sop" ? " active" : "")} onClick={() => setMode("sop")}>📝 SOP Review</button>
           </div>
-          {mode === "writing" ? <WritingChecker /> : <SpeakingChecker />}
+          {mode === "writing" ? <WritingChecker /> : mode === "speaking" ? <SpeakingChecker /> : <SopReviewer />}
         </main>
         <window.LP_Footer />
       </>
