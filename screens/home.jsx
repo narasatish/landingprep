@@ -241,6 +241,42 @@ function LatestGuides() {
     </section>
   );
 }
+// 5-second first-visit onboarding — routes a new visitor straight to their goal. Shows once
+// (localStorage), non-blocking (delayed + easily dismissed), so it never hurts bounce/SEO.
+function GoalOnboarding({ onNav }) {
+  const [show, setShow] = React.useState(false);
+  React.useEffect(() => {
+    try { if (!localStorage.getItem("lp_onboarded")) { const t = setTimeout(() => setShow(true), 1400); return () => clearTimeout(t); } } catch (e) {}
+  }, []);
+  if (!show) return null;
+  const done = (goal, nav) => { try { localStorage.setItem("lp_onboarded", goal || "skip"); } catch (e) {} setShow(false); if (nav) onNav(nav); };
+  const opts = [
+    ["🎓", "Study abroad", "Universities, scholarships & visa", "colleges"],
+    ["📝", "Crack an exam", "IELTS, TOEFL, OET, PTE, GRE & more", "exam-prep"],
+    ["🌍", "Check my English level", "Score → CEFR → what I qualify for", "tools"],
+  ];
+  return (
+    <div onClick={() => done("skip")} style={{ position: "fixed", inset: 0, background: "rgba(8,12,30,0.62)", backdropFilter: "blur(3px)", zIndex: 9999, display: "grid", placeItems: "center", padding: 20 }}>
+      <div onClick={(e) => e.stopPropagation()} style={{ background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 20, padding: "26px 24px", maxWidth: 460, width: "100%", boxShadow: "0 30px 70px -20px rgba(0,0,0,.55)" }}>
+        <div style={{ fontSize: 12.5, fontWeight: 800, color: "var(--accent)", letterSpacing: ".06em" }}>👋 WELCOME — TAKES 5 SECONDS</div>
+        <h2 style={{ margin: "6px 0 4px", fontSize: 24, letterSpacing: "-.02em" }}>What brings you here?</h2>
+        <p style={{ margin: "0 0 16px", color: "var(--ink-3, #667085)", fontSize: 14 }}>We'll take you straight to the right place. Everything's free — no signup.</p>
+        <div style={{ display: "grid", gap: 10 }}>
+          {opts.map(([ic, t, d, nav]) => (
+            <button key={t} onClick={() => done(t, nav)} style={{ display: "flex", gap: 14, alignItems: "center", textAlign: "left", padding: "14px 16px", borderRadius: 14, border: "1px solid var(--line)", background: "var(--surface-2)", cursor: "pointer", transition: "border-color .15s, transform .15s" }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--accent)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderColor = "var(--line)"; e.currentTarget.style.transform = "none"; }}>
+              <span style={{ fontSize: 26, lineHeight: 1 }}>{ic}</span>
+              <span><span style={{ display: "block", fontWeight: 700, fontSize: 16 }}>{t}</span><span style={{ fontSize: 13, color: "var(--ink-3, #667085)" }}>{d}</span></span>
+              <span style={{ marginLeft: "auto", color: "var(--accent)", fontSize: 18 }}>→</span>
+            </button>
+          ))}
+        </div>
+        <button onClick={() => done("skip")} style={{ display: "block", margin: "14px auto 0", background: "none", border: "none", color: "var(--ink-3, #667085)", fontSize: 14, cursor: "pointer", textDecoration: "underline" }}>Just exploring — skip</button>
+      </div>
+    </div>
+  );
+}
 function BandPredictor() {
   const [exam, setExam] = useStateH("ielts");
   const [score, setScore] = useStateH("");
@@ -335,6 +371,7 @@ function Home({ onGuide, onPractice, onNav }) {
       <window.LP_TopBar current="home" onNav={onNav} />
       <window.LP_Marquee />
 
+      <GoalOnboarding onNav={onNav} />
       <main id="main-content">
       <div className="shell"><ReturningBar onNav={onNav} /></div>
       {/* Hero */}

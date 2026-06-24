@@ -201,6 +201,51 @@ function LatestGuides() {
   if (!posts.length) return null;
   return /* @__PURE__ */ React.createElement("section", { className: "section reveal", style: { paddingTop: 22 } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "section-header reveal" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "\u{1F4F0} Fresh study-abroad guides"), /* @__PURE__ */ React.createElement("h2", { className: "h1" }, "Latest from the blog"))), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 14, marginTop: 14 } }, posts.map((p) => /* @__PURE__ */ React.createElement("a", { key: p.id, href: "/blog/" + p.id + "/", style: { display: "block", background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 16, padding: "18px 20px", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-sm,0 1px 2px rgba(0,0,0,.05))" } }, p.tag && /* @__PURE__ */ React.createElement("span", { style: { fontSize: 11, fontWeight: 700, letterSpacing: ".05em", textTransform: "uppercase", color: "var(--accent)" } }, p.tag), /* @__PURE__ */ React.createElement("h3", { style: { margin: "6px 0 8px", fontSize: 17, lineHeight: 1.3 } }, p.title), /* @__PURE__ */ React.createElement("p", { style: { margin: 0, fontSize: 14, color: "var(--ink-3)", lineHeight: 1.55 } }, p.excerpt, "\u2026"), /* @__PURE__ */ React.createElement("span", { style: { display: "inline-block", marginTop: 10, color: "var(--accent)", fontWeight: 600, fontSize: 14 } }, "Read guide \u2192")))), /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", marginTop: 16 } }, /* @__PURE__ */ React.createElement("a", { href: "/blog/", style: { color: "var(--accent)", fontWeight: 600 } }, "See all guides \u2192"))));
 }
+function GoalOnboarding({ onNav }) {
+  const [show, setShow] = React.useState(false);
+  React.useEffect(() => {
+    try {
+      if (!localStorage.getItem("lp_onboarded")) {
+        const t = setTimeout(() => setShow(true), 1400);
+        return () => clearTimeout(t);
+      }
+    } catch (e) {
+    }
+  }, []);
+  if (!show) return null;
+  const done = (goal, nav) => {
+    try {
+      localStorage.setItem("lp_onboarded", goal || "skip");
+    } catch (e) {
+    }
+    setShow(false);
+    if (nav) onNav(nav);
+  };
+  const opts = [
+    ["\u{1F393}", "Study abroad", "Universities, scholarships & visa", "colleges"],
+    ["\u{1F4DD}", "Crack an exam", "IELTS, TOEFL, OET, PTE, GRE & more", "exam-prep"],
+    ["\u{1F30D}", "Check my English level", "Score \u2192 CEFR \u2192 what I qualify for", "tools"]
+  ];
+  return /* @__PURE__ */ React.createElement("div", { onClick: () => done("skip"), style: { position: "fixed", inset: 0, background: "rgba(8,12,30,0.62)", backdropFilter: "blur(3px)", zIndex: 9999, display: "grid", placeItems: "center", padding: 20 } }, /* @__PURE__ */ React.createElement("div", { onClick: (e) => e.stopPropagation(), style: { background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 20, padding: "26px 24px", maxWidth: 460, width: "100%", boxShadow: "0 30px 70px -20px rgba(0,0,0,.55)" } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 12.5, fontWeight: 800, color: "var(--accent)", letterSpacing: ".06em" } }, "\u{1F44B} WELCOME \u2014 TAKES 5 SECONDS"), /* @__PURE__ */ React.createElement("h2", { style: { margin: "6px 0 4px", fontSize: 24, letterSpacing: "-.02em" } }, "What brings you here?"), /* @__PURE__ */ React.createElement("p", { style: { margin: "0 0 16px", color: "var(--ink-3, #667085)", fontSize: 14 } }, "We'll take you straight to the right place. Everything's free \u2014 no signup."), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gap: 10 } }, opts.map(([ic, t, d, nav]) => /* @__PURE__ */ React.createElement(
+    "button",
+    {
+      key: t,
+      onClick: () => done(t, nav),
+      style: { display: "flex", gap: 14, alignItems: "center", textAlign: "left", padding: "14px 16px", borderRadius: 14, border: "1px solid var(--line)", background: "var(--surface-2)", cursor: "pointer", transition: "border-color .15s, transform .15s" },
+      onMouseEnter: (e) => {
+        e.currentTarget.style.borderColor = "var(--accent)";
+        e.currentTarget.style.transform = "translateY(-2px)";
+      },
+      onMouseLeave: (e) => {
+        e.currentTarget.style.borderColor = "var(--line)";
+        e.currentTarget.style.transform = "none";
+      }
+    },
+    /* @__PURE__ */ React.createElement("span", { style: { fontSize: 26, lineHeight: 1 } }, ic),
+    /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { style: { display: "block", fontWeight: 700, fontSize: 16 } }, t), /* @__PURE__ */ React.createElement("span", { style: { fontSize: 13, color: "var(--ink-3, #667085)" } }, d)),
+    /* @__PURE__ */ React.createElement("span", { style: { marginLeft: "auto", color: "var(--accent)", fontSize: 18 } }, "\u2192")
+  ))), /* @__PURE__ */ React.createElement("button", { onClick: () => done("skip"), style: { display: "block", margin: "14px auto 0", background: "none", border: "none", color: "var(--ink-3, #667085)", fontSize: 14, cursor: "pointer", textDecoration: "underline" } }, "Just exploring \u2014 skip")));
+}
 function BandPredictor() {
   const [exam, setExam] = useStateH("ielts");
   const [score, setScore] = useStateH("");
@@ -267,7 +312,7 @@ function Home({ onGuide, onPractice, onNav }) {
     });
   }, []);
   const faqActive = faqTab === "abroad" ? STUDY_FAQS : FAQS;
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "home", onNav }), /* @__PURE__ */ React.createElement(window.LP_Marquee, null), /* @__PURE__ */ React.createElement("main", { id: "main-content" }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement(ReturningBar, { onNav })), /* @__PURE__ */ React.createElement("section", { className: "hero" }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "hero-inner-clean" }, /* @__PURE__ */ React.createElement("div", { className: "hero-meta" }, /* @__PURE__ */ React.createElement("span", { className: "chip" }, /* @__PURE__ */ React.createElement("span", { className: "dot", style: { background: "var(--leaf)" } }), " Trusted by students worldwide"), /* @__PURE__ */ React.createElement("span", { className: "chip" }, "100% free"), /* @__PURE__ */ React.createElement("span", { className: "chip" }, "No signup")), /* @__PURE__ */ React.createElement("div", { className: "hero-tagline" }, "\u{1F30D} ", LP_TAGLINE), /* @__PURE__ */ React.createElement("h1", { className: "display" }, "Prep for your exam.", /* @__PURE__ */ React.createElement("br", null), "Land your ", /* @__PURE__ */ React.createElement("em", { style: { fontStyle: "italic", fontFamily: "var(--serif)", color: "var(--accent)" } }, "dream university"), " abroad."), /* @__PURE__ */ React.createElement("p", { className: "body-lg muted", style: { maxWidth: 760, marginTop: 18, marginInline: "auto" } }, "1,000+ free mock tests across 15+ exams \u2014 IELTS, TOEFL, OET, PTE, GRE, GMAT, SAT & more \u2014 plus a complete study-abroad toolkit: college predictor, scholarships, SOP & visa guidance. All free, for students in every country."), /* @__PURE__ */ React.createElement("div", { className: "hero-cta" }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary btn-lg", onClick: () => onNav("exam-prep") }, "Browse all mock tests \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-lg", onClick: () => {
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "home", onNav }), /* @__PURE__ */ React.createElement(window.LP_Marquee, null), /* @__PURE__ */ React.createElement(GoalOnboarding, { onNav }), /* @__PURE__ */ React.createElement("main", { id: "main-content" }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement(ReturningBar, { onNav })), /* @__PURE__ */ React.createElement("section", { className: "hero" }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "hero-inner-clean" }, /* @__PURE__ */ React.createElement("div", { className: "hero-meta" }, /* @__PURE__ */ React.createElement("span", { className: "chip" }, /* @__PURE__ */ React.createElement("span", { className: "dot", style: { background: "var(--leaf)" } }), " Trusted by students worldwide"), /* @__PURE__ */ React.createElement("span", { className: "chip" }, "100% free"), /* @__PURE__ */ React.createElement("span", { className: "chip" }, "No signup")), /* @__PURE__ */ React.createElement("div", { className: "hero-tagline" }, "\u{1F30D} ", LP_TAGLINE), /* @__PURE__ */ React.createElement("h1", { className: "display" }, "Prep for your exam.", /* @__PURE__ */ React.createElement("br", null), "Land your ", /* @__PURE__ */ React.createElement("em", { style: { fontStyle: "italic", fontFamily: "var(--serif)", color: "var(--accent)" } }, "dream university"), " abroad."), /* @__PURE__ */ React.createElement("p", { className: "body-lg muted", style: { maxWidth: 760, marginTop: 18, marginInline: "auto" } }, "1,000+ free mock tests across 15+ exams \u2014 IELTS, TOEFL, OET, PTE, GRE, GMAT, SAT & more \u2014 plus a complete study-abroad toolkit: college predictor, scholarships, SOP & visa guidance. All free, for students in every country."), /* @__PURE__ */ React.createElement("div", { className: "hero-cta" }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary btn-lg", onClick: () => onNav("exam-prep") }, "Browse all mock tests \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-lg", onClick: () => {
     window.location.hash = "#/colleges/onboard";
     onNav("colleges");
   } }, "\u{1F680} Build my study-abroad plan"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-lg", onClick: () => window.LP_REFERRAL && window.LP_REFERRAL.invite(), title: "Share free prep with a friend" }, "\u{1F4F2} Invite a friend")), /* @__PURE__ */ React.createElement("div", { className: "hero-fine" }, /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "dot" }), " No registration to start"), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "dot" }), " 100% free, forever"), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "dot" }), " Browser-based \u2014 works anywhere"))))), /* @__PURE__ */ React.createElement("section", { className: "section reveal", style: { paddingTop: 8, paddingBottom: 8 } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "home-hero-photo" }, /* @__PURE__ */ React.createElement(

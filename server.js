@@ -1658,6 +1658,18 @@ app.get("/api/health/report", (req, res) => {
   res.json({ lastRun: MONITOR.lastRun, clientErrorCount: MONITOR.clientErrors.length, recentClientErrors: MONITOR.clientErrors.slice(-50) });
 });
 
+// One-tap unsubscribe for the weekly digest (token-signed). Registered BEFORE the /api catch-all.
+app.get("/api/unsubscribe", (req, res) => {
+  const email = String(req.query.e || "").toLowerCase();
+  const wrap = (msg) => "<div style='font-family:system-ui,Arial;max-width:480px;margin:12vh auto;text-align:center;color:#1f2937'><div style='font-size:40px'>✅</div><h1 style='font-size:22px'>You're unsubscribed</h1><p style='color:#6b7280'>" + msg + " You can still use everything on <a href='/' style='color:#4F46E5'>landingprep.com</a> free.</p></div>";
+  if (!email || String(req.query.t || "") !== unsubToken(email)) return res.status(400).send("<p style='font-family:system-ui;max-width:480px;margin:12vh auto;text-align:center'>This unsubscribe link is invalid or expired.</p>");
+  let done = false;
+  for (const [key, u] of Object.entries(STORE.users || {})) {
+    if (u && String(u.email || "").toLowerCase() === email) { u.noNewsletter = true; persistUser(key); done = true; }
+  }
+  res.send(wrap(done ? "You won't receive weekly emails anymore." : "You won't be emailed."));
+});
+
 // ── Resilience: unknown API routes + central error handler ─────────────────────
 // Any /api/* path that no route matched → clean JSON 404 (never an HTML error page).
 app.use("/api", (req, res) => res.status(404).json({ error: "Not found", path: req.path }));
@@ -1998,6 +2010,50 @@ async function dailyReminderTick() {
 const _reminderTimer = setInterval(() => { dailyReminderTick().catch(() => {}); }, 17 * 60 * 1000);
 if (_reminderTimer && _reminderTimer.unref) _reminderTimer.unref();
 setTimeout(() => { dailyReminderTick().catch(() => {}); }, 60 * 1000);
+
+// ── Weekly digest email (OFF by default — set WEEKLY_DIGEST=1 to enable) ──────────
+// Personalised progress lives in the browser, so this is a "new guides + practice nudge" digest to
+// registered users who haven't opted out — NOT per-user stats. Every email carries a one-tap,
+// token-signed unsubscribe link. Off by default + once/week + throttled, so it can NEVER spam: the
+// owner flips WEEKLY_DIGEST=1 only when ready.
+function unsubToken(email) { return crypto.createHmac("sha256", AUTH_SECRET).update("unsub|" + String(email).toLowerCase()).digest("base64url"); }
+let _lastDigestDate = "";
+function digestGuidesHtml() {
+  try {
+    const idx = JSON.parse(fs.readFileSync(path.join(__dirname, "blog-index.json"), "utf8"));
+    return (idx || []).slice(0, 3).map((p) => `<li style="margin:8px 0"><a href="https://landingprep.com/blog/${p.id}/" style="color:#4F46E5;font-weight:600;text-decoration:none">${String(p.title || "").replace(/</g, "")}</a></li>`).join("");
+  } catch (e) { return ""; }
+}
+async function sendWeeklyDigest() {
+  try {
+    if (process.env.WEEKLY_DIGEST !== "1") return;                                  // OFF unless explicitly enabled
+    const now = new Date();
+    if (now.getUTCDay() !== 0 || now.getUTCHours() < 9 || now.getUTCHours() >= 11) return; // Sundays ~09:00–11:00 UTC
+    const today = now.toISOString().slice(0, 10);
+    if (_lastDigestDate === today) return;
+    _lastDigestDate = today;                                                        // claim before sending (once/week)
+    const recips = [];
+    for (const u of Object.values(STORE.users || {})) if (u && u.email && !u.noNewsletter) recips.push(u);
+    if (!recips.length) return;
+    const guides = digestGuidesHtml();
+    let sent = 0;
+    for (const u of recips) {
+      const unsub = "https://landingprep.com/api/unsubscribe?e=" + encodeURIComponent(u.email) + "&t=" + unsubToken(u.email);
+      const html = `<div style="font-family:system-ui,Arial;max-width:560px;margin:0 auto;color:#1f2937">`
+        + `<h2 style="color:#4F46E5">Hi ${String(u.name || "there").replace(/</g, "")}, keep your prep going 📚</h2>`
+        + `<p>A quick nudge — a little practice each week adds up. Jump back into your free mock tests anytime.</p>`
+        + `<p style="margin:18px 0"><a href="https://landingprep.com/" style="background:#4F46E5;color:#fff;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:700">Practise free →</a></p>`
+        + (guides ? `<p style="font-weight:700;margin:18px 0 6px">📰 New study-abroad guides:</p><ul style="padding-left:18px">${guides}</ul>` : "")
+        + `<hr style="border:none;border-top:1px solid #e5e7eb;margin:22px 0"/>`
+        + `<p style="font-size:12px;color:#9ca3af">You're receiving this because you created a free LandingPrep account. <a href="${unsub}" style="color:#9ca3af">Unsubscribe</a>.</p></div>`;
+      if (await sendMailRich(u.email, "Your weekly LandingPrep update 📚", html)) sent++;
+      await new Promise((r) => setTimeout(r, 200));                                 // throttle SMTP
+    }
+    console.log("[digest] weekly digest sent to", sent, "of", recips.length);
+  } catch (e) { console.warn("[digest] tick:", e.message); }
+}
+const _digestTimer = setInterval(() => { sendWeeklyDigest().catch(() => {}); }, 31 * 60 * 1000);
+if (_digestTimer && _digestTimer.unref) _digestTimer.unref();
 
 // ── Keep-warm self-ping ────────────────────────────────────────────────────────
 // Render's free tier sleeps the dyno after ~15 min idle (then a 30–45s cold start
