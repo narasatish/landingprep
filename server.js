@@ -189,7 +189,14 @@ app.get(Object.keys(REDIRECTS), (req, res) => res.redirect(301, REDIRECTS[req.pa
 // backend/build read them from disk directly. Registered BEFORE express.static so
 // it wins. (.well-known/ is allowed for security.txt etc.)
 app.use((req, res, next) => {
-  if (/^\/(data|scripts|tools|node_modules)(\/|$)|^\/(server\.js|package\.json|package-lock\.json)$|^\/\.(?!well-known)/i.test(req.path)) {
+  const p = req.path;
+  // NOTE: tools/ holds BOTH dev scripts (fix-*.js, audit-*.mjs…) AND the public SEO tool PAGES
+  // (/tools/<name>/index.html — cost calc, EMI, eligibility, etc.). Block only the dev FILES
+  // directly in tools/ (anything with an extension), never the /tools/<page>/ directories.
+  if (/^\/(data|scripts|node_modules)(\/|$)/i.test(p)
+    || /^\/tools\/[^/]+\.[a-z0-9]+$/i.test(p)
+    || /^\/(server\.js|package\.json|package-lock\.json)$/i.test(p)
+    || /^\/\.(?!well-known)/i.test(p)) {
     return res.status(404).end();
   }
   next();
