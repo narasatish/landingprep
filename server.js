@@ -1962,6 +1962,43 @@ const _igTimer = setInterval(() => { igAutoTick("interval"); }, 20 * 60 * 1000);
 if (_igTimer && _igTimer.unref) _igTimer.unref();
 setTimeout(async () => { await loadStoredToken(); igAutoTick("boot"); }, 30 * 1000);
 
+// ── Daily practice-reminder push (retention) ─────────────────────────────────
+// Web Push, subscribe/unsubscribe and the SW handler already exist; the only gap was a daily
+// TRIGGER. Self-contained: once/day in a target UTC window, fan out an opt-in reminder to every
+// stored subscriber (users explicitly subscribed; unsubscribe endpoint handles opt-out). Claims
+// the day BEFORE sending so a restart or overlapping tick can never double-send.
+let _lastReminderDate = "";
+async function dailyReminderTick() {
+  try {
+    if (!webpush || process.env.DAILY_REMINDER === "0") return;          // push off, or disabled
+    const now = new Date(); const h = now.getUTCHours();
+    if (h < 13 || h >= 15) return;                                       // window ~13:00–15:00 UTC (≈6:30–8:30pm IST)
+    const today = now.toISOString().slice(0, 10);
+    if (_lastReminderDate === today) return;                            // already sent today
+    const subs = Object.entries(STORE.pushSubs || {});
+    _lastReminderDate = today;                                           // claim the day up front (at-most-once)
+    if (!subs.length) return;
+    const lines = [
+      "Time for today's free practice — keep your streak going! 🔥",
+      "5 minutes today beats an hour next week. Let's go 💪",
+      "Your next free mock is ready — a little every day adds up 📈",
+      "Don't break your streak! Today's free practice is waiting 🎯",
+    ];
+    const payload = JSON.stringify({ title: "LandingPrep", body: lines[now.getUTCDate() % lines.length], url: "/" });
+    let sent = 0, removed = 0;
+    for (const [ep, rec] of subs) {
+      try { await webpush.sendNotification(rec.sub, payload); sent++; }
+      catch (e) { if (e && (e.statusCode === 404 || e.statusCode === 410)) { delete STORE.pushSubs[ep]; removed++; } }
+      await new Promise((r) => setTimeout(r, 20));
+    }
+    if (removed) { persist(); fsSaveState("pushSubs"); }
+    console.log("[reminder] daily push — sent:", sent, "removed:", removed);
+  } catch (e) { console.warn("[reminder] tick:", e.message); }
+}
+const _reminderTimer = setInterval(() => { dailyReminderTick().catch(() => {}); }, 17 * 60 * 1000);
+if (_reminderTimer && _reminderTimer.unref) _reminderTimer.unref();
+setTimeout(() => { dailyReminderTick().catch(() => {}); }, 60 * 1000);
+
 // ── Keep-warm self-ping ────────────────────────────────────────────────────────
 // Render's free tier sleeps the dyno after ~15 min idle (then a 30–45s cold start
 // that can look like a failure to the first visitor). Pinging our own public
