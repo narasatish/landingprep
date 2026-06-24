@@ -32788,6 +32788,44 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
           "body": "Band 8 requires 12\u201316 weeks of consistent prep with 3\u20135 full-length reading tests weekly. Timed mocks expose your weak question types (e.g., T/F/NG, headings). Review every wrong answer\u2014did you misunderstand, miss the word, or misread the question? Track which passage types trap you (science, history, social policy). Free full-length IELTS Reading mocks with detailed explanations are available on LandingPrep\u2014practice daily, time yourself strictly, and review patterns weekly."
         }
       ]
+    },
+    {
+      "id": "pte-vs-ielts-for-australia-pr-2026",
+      "tag": "Comparison",
+      "date": "2026",
+      "title": "PTE vs. IELTS for Australia PR & Points System 2026",
+      "excerpt": "PTE and IELTS are both accepted for Australia PR, but scoring differs: PTE uses 90 as top score, IELTS uses 9. Learn which is easier, point conversion, and visa acceptance.",
+      "kw": "PTE vs IELTS Australia, PTE IELTS points Australia PR, which is easier PTE or IELTS, DHA PTE acceptance",
+      "sections": [
+        {
+          "h": "PTE vs. IELTS: Which Is Accepted by DHA for Australia PR?",
+          "body": "Both PTE and IELTS are Department of Home Affairs (DHA) approved for Australia PR visas. DHA treats both equally: a PTE score of 79 (Professional level) = IELTS 7.0. PTE 65 = IELTS 6.0. PTE 86 = IELTS 8.0. Both are valid for 3 years from test date. Visa processing does not favor one over the other\u2014pick based on your strength, not visa approval odds. However, IELTS is slightly more established in Australia, so some employers may recognize it faster, though visa authorities treat both identically."
+        },
+        {
+          "h": "Points System: PTE & IELTS Score-to-Points Conversion",
+          "body": "Under Australia's SkillSelect (General Skilled Migration), English proficiency adds up to 20 points. IELTS 8.0 = 20 points. IELTS 7.0 = 10 points. IELTS 6.0 = 0 points (minimum to qualify). PTE 86+ = 20 points. PTE 79\u201386 = 10 points. PTE 65\u201379 = 0 points (minimum). So PTE 79 and IELTS 7.0 score the same (10 points). PTE scoring is more granular (scored 30\u201390 in increments), while IELTS is banded (6.0\u20139.0 in 0.5 increments). Both pathways to 189 visa require similar English levels; your overall points (age, work exp, state sponsorship) matter more than English test choice."
+        },
+        {
+          "h": "Scoring Scales: PTE 30\u201390 vs. IELTS 4.5\u20139.0",
+          "body": "PTE Global scale: 30\u201390 (lower = harder, like a percentile). IELTS: 4.5\u20139.0 (higher = better). For Australia PR minimum (Band 6 IELTS), you need PTE 65. Competitive scores: PTE 79+ (band 7 IELTS) earns 10 visa points; PTE 86+ (band 8 IELTS) earns 20 points. The scales are not directly comparable\u2014a PTE 75 is not 75% of an IELTS 9.0. Always convert to the official DHA table when comparing; PTE's lower scores are not weaker despite the lower number."
+        },
+        {
+          "h": "Which Is Easier: PTE or IELTS?",
+          "body": "PTE is computer-marked, automated, and less subjective in Speaking (no human rater bias). IELTS uses human examiners, which can introduce slight variability but may feel more familiar if you are used to face-to-face interviews. PTE takers often report Reading & Writing are harder (longer, faster-paced passages), but Speaking is easier (no small-talk with examiner). IELTS takers cite Speaking as more natural, Reading as more time-forgiving. For Australia: neither is 'easier,' it is personal. Test both if you are unsure\u2014PTE results in 5 days vs. IELTS 13 days. Budget-conscious candidates often choose PTE for speed."
+        },
+        {
+          "h": "DHA & Visa Processing: Are Both Treated Equally?",
+          "body": "Yes, DHA's skillselect system treats PTE and IELTS identically in point calculation. No visa is rejected because you took PTE over IELTS or vice versa. Both are approved, both are converted to points, both are valid for 3 years. If applying for state sponsorship (e.g., NSW, Victoria), confirm that state's preferred test, though all states accept both. Some employers (private sponsorship 482 visa) might have internal preferences (e.g., prefer IELTS historically), but visa authorities do not discriminate."
+        },
+        {
+          "h": "Testing Logistics: Availability, Cost, & Timing",
+          "body": "IELTS: conducted ~4 times per month across most Australian cities; cost ~AUD 330; results in 13 calendar days. PTE: computer-based, available weekly in major cities, cost ~AUD 330; results in 5 days. PTE's fast turnaround is a major advantage if you are in a time-crunch or want to retest quickly. IELTS has more centers globally, so if you are still overseas when applying, IELTS is easier to access. Both allow retesting, but PTE turnaround (5 days) beats IELTS (13 days) if you need to fast-track."
+        },
+        {
+          "h": "Preparation & Which Test to Choose",
+          "body": "For Australia PR, if you need quick results and prefer computer-based tests, PTE is faster. If you are comfortable with spoken interviews and want a test that is widely recognized globally, IELTS is reliable. Practice both diagnostic tests to see where you naturally score higher\u2014that is your test. Most Australians take IELTS for familiarity, but PTE is increasingly popular for speed. Free full-length PTE and IELTS mocks are available on LandingPrep; test yourself under timed conditions to decide which format suits you better."
+        }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;
