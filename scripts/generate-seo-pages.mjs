@@ -1244,6 +1244,134 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// ── Education Loan EMI Calculator — a free, self-contained financial tool (link magnet) ──
+function loanEmiPage() {
+  const path = `/tools/education-loan-emi-calculator/`;
+  const faqs = [
+    { q: "How is education loan EMI calculated?", a: "EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P is the loan amount, r is the monthly interest rate (annual rate ÷ 12 ÷ 100) and n is the number of monthly instalments (years × 12). The calculator above does this instantly." },
+    { q: "Do I pay EMI while studying?", a: "Most education loans have a moratorium (grace period) covering your course plus 6–12 months. During it you usually pay only simple interest, or nothing (interest is added to the principal). Full EMIs start after the moratorium — paying the interest during study reduces your total cost a lot." },
+    { q: "What interest rate do education loans charge?", a: "In India, secured education loans (with collateral) are typically ~8.5–11% p.a. and unsecured / no-collateral loans ~11–15% p.a. The rate depends on the lender, collateral, your course and the university. Always compare the effective rate, processing fee and prepayment terms — not just the headline rate." },
+    { q: "Can I prepay an education loan?", a: "Yes — most education loans allow part- or full prepayment, usually with no penalty on floating-rate loans. Because interest is front-loaded, prepaying early cuts the total interest substantially. Use the calculator to compare different tenures." },
+  ];
+  const calc = `
+<div class="card">
+  <h2>🧮 Estimate your monthly EMI</h2>
+  <p class="note">Enter your loan amount, interest rate and tenure. Works in any currency.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:10px 0">
+    <label>Loan amount<input id="lp_amt" type="number" inputmode="decimal" min="0" placeholder="e.g. 2000000" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Interest rate (% per year)<input id="lp_rate" type="number" inputmode="decimal" min="0" step="0.1" placeholder="e.g. 11" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Tenure (years)<input id="lp_tenure" type="number" inputmode="decimal" min="0.5" step="0.5" value="7" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button id="lp_emi_btn" class="cta" type="button" style="border:0;cursor:pointer">Calculate EMI →</button>
+  <div id="lpEmiOut" style="margin-top:12px"></div>
+</div>
+<script>
+(function(){
+  function num(id){var v=parseFloat((document.getElementById(id)||{}).value);return isNaN(v)?0:Math.max(0,v);}
+  function fmt(x){try{return Math.round(x).toLocaleString();}catch(e){return Math.round(x);}}
+  function calc(){
+    var P=num('lp_amt'), rate=num('lp_rate'), years=num('lp_tenure')||1;
+    var n=Math.round(years*12); var r=rate/12/100;
+    var out=document.getElementById('lpEmiOut');
+    if(!P||!n){ if(out) out.innerHTML='<div class="callout tip"><span class="ic">💡</span><div>Enter a loan amount and tenure to see your EMI.</div></div>'; return; }
+    var emi = r>0 ? P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1) : P/n;
+    var total = emi*n; var interest = total - P;
+    if(out) out.innerHTML='<div class="callout money"><span class="ic">💰</span><div><strong>Monthly EMI:</strong> '+fmt(emi)+'<br><strong>Total interest:</strong> '+fmt(interest)+'<br><strong>Total payable:</strong> '+fmt(total)+' over '+n+' months<br><span style="color:var(--muted);font-size:13px">An estimate in the currency you entered, assuming EMIs start immediately. A moratorium during study changes the figures — confirm with your lender.</span></div></div>';
+  }
+  var b=document.getElementById('lp_emi_btn');
+  if(b) b.addEventListener('click',calc);
+})();
+</script>`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › Education Loan EMI Calculator</p>
+<section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">Instant</span><span class="badge">No signup</span></div>
+<h1>Education Loan EMI Calculator (2026)</h1>
+<p class="lead">Work out your monthly EMI, total interest and total repayment on a study-abroad education loan — instantly and free.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> EMI = P × r × (1+r)ⁿ ÷ ((1+r)ⁿ − 1), where P = loan amount, r = monthly rate (annual ÷ 12 ÷ 100), n = months (years × 12). Indian secured education loans run ~8.5–11% p.a.; no-collateral loans ~11–15%. Enter your numbers below.</div>
+${calc}
+<div class="card"><h2>What affects your education-loan EMI</h2><ul class="bcheck">
+<li><strong>Loan amount</strong> — a bigger principal means a bigger EMI. Borrow only what you need after scholarships and savings.</li>
+<li><strong>Interest rate</strong> — secured (collateral) loans are cheaper than unsecured ones. Even 1–2% lower saves lakhs over the tenure.</li>
+<li><strong>Tenure</strong> — a longer tenure lowers the EMI but raises total interest; a shorter tenure does the opposite.</li>
+<li><strong>Moratorium</strong> — most loans don't charge full EMIs during your course + 6–12 months. Paying the simple interest during study cuts the total a lot.</li>
+<li><strong>Prepayment</strong> — floating-rate loans usually allow penalty-free prepayment; paying early saves the most interest.</li>
+</ul></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🏦 Education loan without collateral`, href: `/blog/education-loan-without-collateral/` },
+  { label: `💸 Scholarships by country`, href: `/fully-funded-scholarships/` },
+  { label: `🧮 Cost of studying abroad calculator`, href: `/tools/cost-of-studying-abroad-calculator/` },
+  { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
+])}`;
+  emit(path, head({ title: `Education Loan EMI Calculator 2026 — Free Study-Abroad Loan EMI | ${BRAND}`, desc: `Free education loan EMI calculator: enter your loan amount, interest rate and tenure to see your monthly EMI, total interest and total repayment for a study-abroad loan.`, path, kw: "education loan emi calculator, study abroad loan emi calculator, student loan emi calculator, education loan monthly payment, abroad education loan calculator", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "Education Loan EMI Calculator", applicationCategory: "FinanceApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "Education Loan EMI Calculator", path }]),
+  ] }) + shell(inner));
+}
+
+// ── "Am I ready?" study-abroad application readiness checker — free interactive tool ──
+function readinessPage() {
+  const path = `/tools/study-abroad-readiness-checker/`;
+  const items = [
+    ["English test score achieved (IELTS / TOEFL / PTE)", 20, "/eligibility/", "Check the score you need"],
+    ["Target universities shortlisted", 15, "/#/colleges", "Use the free College Predictor"],
+    ["Proof of funds or education loan arranged", 20, "/tools/education-loan-emi-calculator/", "Plan your loan EMI"],
+    ["Statement of Purpose (SOP) drafted", 15, "/sop-samples/", "See free SOP samples"],
+    ["Letters of Recommendation (LORs) arranged", 10, "/sop-samples/", "See LOR samples"],
+    ["Transcripts & academic documents ready", 10, "/student-guide/", "Document checklist"],
+    ["Valid passport (6+ months) & visa plan", 10, "/visa-interview/", "Visa interview prep"],
+  ];
+  const rows = items.map((it, i) => `<label class="rd-item" style="display:flex;gap:10px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line)"><input type="checkbox" class="rd-cb" data-w="${it[1]}" data-label="${esc(it[0])}" data-link="${it[2]}" data-cta="${esc(it[3])}" style="margin-top:3px;width:18px;height:18px;flex-shrink:0"/><span><strong>${esc(it[0])}</strong> <span style="color:var(--muted);font-size:13px">(${it[1]}%)</span></span></label>`).join("");
+  const tool = `
+<div class="card">
+  <h2>✅ Tick what you've done</h2>
+  <div id="lpRd">${rows}</div>
+  <div id="lpRdOut" style="margin-top:16px"></div>
+</div>
+<script>
+(function(){
+  var cbs=[].slice.call(document.querySelectorAll('.rd-cb'));
+  function render(){
+    var pct=0, gaps=[];
+    cbs.forEach(function(cb){ if(cb.checked){ pct+=parseFloat(cb.getAttribute('data-w'))||0; } else { gaps.push(cb); } });
+    pct=Math.round(pct);
+    var col = pct>=80?'#16a34a':pct>=50?'#f59e0b':'#ef4444';
+    var msg = pct>=80?'You\\'re application-ready — finish the last items and apply!':pct>=50?'Good progress — close these gaps to be ready.':'Early days — here\\'s your roadmap.';
+    var bar='<div style="height:14px;border-radius:999px;background:var(--line);overflow:hidden;margin:6px 0 12px"><div style="width:'+pct+'%;height:100%;background:'+col+';border-radius:999px;transition:width .3s"></div></div>';
+    var next = gaps.length? '<strong>Your next steps:</strong><ul style="margin:8px 0 0;padding-left:18px">'+gaps.map(function(cb){return '<li style="margin:5px 0">'+cb.getAttribute('data-label')+' — <a href="'+cb.getAttribute('data-link')+'">'+cb.getAttribute('data-cta')+' →</a></li>';}).join('')+'</ul>' : '<p style="margin:8px 0 0;color:#16a34a;font-weight:600">🎉 Everything checked — you\\'re ready to apply. Good luck!</p>';
+    document.getElementById('lpRdOut').innerHTML='<div style="font-size:34px;font-weight:800;color:'+col+'">'+pct+'% ready</div><p style="margin:2px 0 0;color:var(--muted)">'+msg+'</p>'+bar+next;
+  }
+  cbs.forEach(function(cb){ cb.addEventListener('change',render); });
+  render();
+})();
+</script>`;
+  const faqs = [
+    { q: "How do I know if I'm ready to apply to study abroad?", a: "You're ready when you have: your English test score, a shortlist of universities, proof of funds or an education loan, a drafted SOP and LORs, your academic documents, and a valid passport. The checker above scores your readiness and lists exactly what's left." },
+    { q: "What documents do I need to study abroad?", a: "Typically: passport, academic transcripts & certificates, English-test scorecard, a Statement of Purpose, 1–3 Letters of Recommendation, proof of funds (bank statements / loan sanction), and the university offer letter for your visa. Requirements vary by country and university." },
+    { q: "When should I start preparing?", a: "Begin 12–18 months before your intake: take the English test early, shortlist universities, arrange funds, then draft your SOP and gather documents. Applying early gives the best shot at admission and scholarships." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › Study-Abroad Readiness Checker</p>
+<section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">Instant</span><span class="badge">No signup</span></div>
+<h1>Study-Abroad Readiness Checker (2026)</h1>
+<p class="lead">Find out how ready you are to apply abroad — get a readiness score and a personalised checklist of exactly what's left, free.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> You're ready to apply when you have your English-test score, a university shortlist, proof of funds (or a loan), an SOP, LORs, academic documents and a valid passport. Tick what you've done below to see your readiness score and next steps.</div>
+${tool}
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🌍 Score requirements by country`, href: `/eligibility/` },
+  { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
+  { label: `🧮 Education loan EMI calculator`, href: `/tools/education-loan-emi-calculator/` },
+  { label: `📝 Free SOP & LOR samples`, href: `/sop-samples/` },
+])}`;
+  emit(path, head({ title: `Study Abroad Readiness Checker 2026 — Am I Ready to Apply? | ${BRAND}`, desc: `Free study-abroad readiness checker: tick what you've done — English test, funds, SOP, documents — and get a readiness score plus a personalised checklist of what's left.`, path, kw: "study abroad readiness checker, am i ready to study abroad, study abroad application checklist, study abroad eligibility checker, what do i need to study abroad", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "Study-Abroad Readiness Checker", applicationCategory: "EducationalApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "Study-Abroad Readiness Checker", path }]),
+  ] }) + shell(inner));
+}
+
 // ── Intake & deadline pages per country (high-intent, from real college data) ───
 const INTAKE_NOTES = {
   USA: { slug: "usa", main: "Fall (August–September)", others: "Spring (January) and a limited Summer (May–June) intake", note: "Fall is by far the largest intake in the United States — the widest choice of programmes, funding and assistantships. Spring is a smaller second intake; Summer is rare for degree programmes." },
@@ -2001,6 +2129,8 @@ sopSamplesIndex();
 VISA_INTERVIEWS.forEach(visaInterviewPage);
 visaInterviewIndex();
 costCalculatorPage();
+loanEmiPage();
+readinessPage();
 (() => {
   const byCountry = {};
   COLLEGES.forEach((c) => { (byCountry[c.country] = byCountry[c.country] || []).push(c); });
