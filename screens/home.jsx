@@ -88,7 +88,16 @@ function Reviews() {
     <div>
       <div className="testimonial-grid reveal">
         {reviews.length === 0 ? (
-          <figure className="testimonial-card"><blockquote>Be the first to share how LandingPrep helped you — your honest story helps other students decide. Click “Share your experience” below.</blockquote></figure>
+          <div className="trust-block reveal" style={{ textAlign: "center", padding: "8px 0 4px" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
+              {[["💯", "100% free"], ["🚫", "No signup to start"], ["💳", "No card needed"], ["📚", "15+ exams"], ["🌍", "9 study destinations"], ["⚡", "Instant scoring"]].map(([ic, t]) => (
+                <span key={t} style={{ background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 999, padding: "9px 15px", fontWeight: 600, fontSize: 14, boxShadow: "var(--shadow-sm, 0 1px 2px rgba(0,0,0,.05))" }}>{ic} {t}</span>
+              ))}
+            </div>
+            <p style={{ maxWidth: 580, margin: "0 auto", color: "var(--ink-2)", fontSize: 16, lineHeight: 1.65 }}>
+              Built by people who <strong>studied abroad themselves</strong> — we know the journey, so every tool is genuinely free with no catch. <strong>Be the first to share your story</strong> and help the next student decide.
+            </p>
+          </div>
         ) : reviews.map((t, i) => (
           <figure className="testimonial-card" key={i}>
             <div className="t-stars" aria-label={t.stars + " stars"}>{"★★★★★".slice(0, t.stars)}</div>
@@ -163,6 +172,75 @@ const PREDICTOR_EXAMS = [
   { id: "celpip", name: "CELPIP", ph: "e.g. 9", step: "1", min: "1", max: "12" },
   { id: "duolingo", name: "Duolingo", ph: "e.g. 120", step: "5", min: "10", max: "160" },
 ];
+// Above-the-fold interactive hook: a 20-second "enter your score → instant eligibility" check.
+// Reuses the CEFR mapping; converts cold visitors who already have a score.
+function QuickScoreCheck({ onNav }) {
+  const [exam, setExam] = React.useState("ielts");
+  const [score, setScore] = React.useState("");
+  const meta = PREDICTOR_EXAMS.find((e) => e.id === exam) || PREDICTOR_EXAMS[0];
+  const lvl = score !== "" ? scoreToCEFR(exam, score) : null;
+  const row = lvl ? CEFR_TABLE[lvl] : null;
+  const fieldStyle = { padding: "11px 13px", borderRadius: 10, border: "1px solid var(--line)", fontSize: 15, background: "var(--surface-2)", color: "var(--ink)" };
+  return (
+    <section className="section reveal" style={{ paddingTop: 18, paddingBottom: 6 }}>
+      <div className="shell">
+        <div style={{ background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 18, padding: "22px 24px", boxShadow: "var(--shadow, 0 10px 28px -16px rgba(16,24,40,.18))" }}>
+          <div className="eyebrow">⚡ 20-second check · no signup</div>
+          <h3 className="h2" style={{ margin: "4px 0 14px" }}>Already have a score? See what you qualify for — instantly.</h3>
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
+            <select value={exam} onChange={(e) => { setExam(e.target.value); setScore(""); }} style={fieldStyle} aria-label="Exam">
+              {PREDICTOR_EXAMS.map((e) => <option key={e.id} value={e.id}>{e.name}</option>)}
+            </select>
+            <input type="number" inputMode="decimal" step={meta.step} min={meta.min} max={meta.max} placeholder={meta.ph}
+              value={score} onChange={(e) => setScore(e.target.value)} style={{ ...fieldStyle, width: 140 }} aria-label="Your score" />
+            {!row && <span style={{ color: "var(--ink-3)", fontSize: 14 }}>← enter your {meta.name} score</span>}
+          </div>
+          {row && (
+            <div style={{ marginTop: 16, padding: "14px 16px", borderRadius: 12, background: "var(--surface-2)", border: "1px solid var(--line)" }}>
+              <strong style={{ fontSize: 16, color: "var(--accent)" }}>{row.label}</strong>
+              <p style={{ margin: "6px 0 12px", color: "var(--ink-2)", fontSize: 15, lineHeight: 1.6 }}>{row.elig}</p>
+              <button className="btn btn-primary" onClick={() => onNav("tools")}>See full eligibility + universities →</button>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+// "Latest guides" strip — pulls the newest posts from the lightweight blog-index.json (not the 2.6 MB
+// bundle), so the homepage stays fresh as the auto-blog publishes, with crawlable links + internal SEO.
+function LatestGuides() {
+  const [posts, setPosts] = React.useState([]);
+  React.useEffect(() => {
+    fetch("/blog-index.json").then((r) => r.json()).then((d) => setPosts((Array.isArray(d) ? d : []).slice(0, 3))).catch(() => {});
+  }, []);
+  if (!posts.length) return null;
+  return (
+    <section className="section reveal" style={{ paddingTop: 22 }}>
+      <div className="shell">
+        <div className="section-header reveal">
+          <div>
+            <div className="eyebrow">📰 Fresh study-abroad guides</div>
+            <h2 className="h1">Latest from the blog</h2>
+          </div>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 14, marginTop: 14 }}>
+          {posts.map((p) => (
+            <a key={p.id} href={"/blog/" + p.id + "/"} style={{ display: "block", background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 16, padding: "18px 20px", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-sm,0 1px 2px rgba(0,0,0,.05))" }}>
+              {p.tag && <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: ".05em", textTransform: "uppercase", color: "var(--accent)" }}>{p.tag}</span>}
+              <h3 style={{ margin: "6px 0 8px", fontSize: 17, lineHeight: 1.3 }}>{p.title}</h3>
+              <p style={{ margin: 0, fontSize: 14, color: "var(--ink-3)", lineHeight: 1.55 }}>{p.excerpt}…</p>
+              <span style={{ display: "inline-block", marginTop: 10, color: "var(--accent)", fontWeight: 600, fontSize: 14 }}>Read guide →</span>
+            </a>
+          ))}
+        </div>
+        <div style={{ textAlign: "center", marginTop: 16 }}>
+          <a href="/blog/" style={{ color: "var(--accent)", fontWeight: 600 }}>See all guides →</a>
+        </div>
+      </div>
+    </section>
+  );
+}
 function BandPredictor() {
   const [exam, setExam] = useStateH("ielts");
   const [score, setScore] = useStateH("");
@@ -235,6 +313,15 @@ function ReturningBar({ onNav }) {
 function Home({ onGuide, onPractice, onNav }) {
   const exams = window.LP_DATA.EXAMS;
   const [faqTab, setFaqTab] = useStateH("exams");
+  const [examFilter, setExamFilter] = useStateH("all");
+  const POPULAR_EXAMS = ["ielts", "toefl", "pte", "duolingo"];
+  const examMatchesFilter = (e, f) => {
+    if (f === "all") return true;
+    const s = ((e.tagline || "") + " " + (e.for || "") + " " + (e.blurb || "")).toLowerCase();
+    const isWork = /\bpr\b|immigration|migration|citizenship|express entry/.test(s);
+    if (f === "work") return isWork || /\bwork\b/.test(s);
+    return !isWork || /study|admission|universit|mba|graduate|college|academic|school/.test(s); // study
+  };
   React.useEffect(() => {
     if (!window.LP_SEO) return;
     window.LP_SEO.set({
@@ -297,12 +384,15 @@ function Home({ onGuide, onPractice, onNav }) {
       <section className="section lp-stats-section reveal" style={{ paddingTop: 24, paddingBottom: 8 }}>
         <div className="shell">
           <div className="lp-stats">
-            {[[exams.length + "+", "exams covered", "var(--accent)"], ["1,000+", "free mock tests", "#16a34a"], ["99", "universities", "#0ea5e9"], ["100%", "free, forever", "#f59e0b"], ["0", "signups to start", "#ec4899"]].map(([n, l, c]) => (
+            {[[exams.length + "+", "exams covered", "var(--accent)"], ["1,000+", "free mock tests", "#16a34a"], ["99", "universities", "#0ea5e9"], ["100%", "free, forever", "#f59e0b"], ["9", "study destinations", "#ec4899"]].map(([n, l, c]) => (
               <div className="lp-stat" key={l}><span className="lp-stat-n" style={{ color: c }}>{n}</span><span className="lp-stat-l">{l}</span></div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Above-the-fold interactive hook — instant score → eligibility */}
+      <QuickScoreCheck onNav={onNav} />
 
       {/* Main pros — everything you get, free */}
       <section className="section reveal" style={{ paddingTop: 18 }}>
@@ -372,9 +462,19 @@ function Home({ onGuide, onPractice, onNav }) {
             </div>
           </div>
 
+          <div className="exam-filter reveal" style={{ display: "flex", gap: 8, flexWrap: "wrap", margin: "0 0 16px" }}>
+            {[["all", "All exams"], ["study", "🎓 Study & admissions"], ["work", "🛂 Work & PR"]].map(([f, label]) => (
+              <button key={f} onClick={() => setExamFilter(f)}
+                style={{ padding: "8px 16px", borderRadius: 999, fontWeight: 600, fontSize: 14, cursor: "pointer",
+                  border: "1px solid " + (examFilter === f ? "var(--accent)" : "var(--line)"),
+                  background: examFilter === f ? "var(--accent)" : "var(--surface)",
+                  color: examFilter === f ? "#fff" : "var(--ink)" }}>{label}</button>
+            ))}
+          </div>
           <ul className="exam-list-simple reveal">
-            {exams.map((e) => {
+            {exams.filter((e) => examMatchesFilter(e, examFilter)).map((e) => {
               const isNew = e.id === "oet";
+              const isPopular = POPULAR_EXAMS.includes(e.id);
               return (
               <li key={e.id}>
                 <a href="#" onClick={(ev) => { ev.preventDefault(); onGuide(e); }}
@@ -382,6 +482,7 @@ function Home({ onGuide, onPractice, onNav }) {
                   <span className="el-dot" style={{ background: e.colour, boxShadow: "0 0 0 4px " + e.colour + "26" }} />
                   <span className="el-name">{e.name}</span>
                   {isNew && <span className="el-new">NEW</span>}
+                  {!isNew && isPopular && <span className="el-new" style={{ background: "linear-gradient(135deg,#f59e0b,#ef4444)", boxShadow: "0 2px 8px -2px rgba(239,68,68,.5)" }}>POPULAR</span>}
                   <span className="el-tag">{e.tagline}</span>
                   <span className="el-arrow" style={{ color: e.colour }}>→</span>
                 </a>
@@ -508,6 +609,9 @@ function Home({ onGuide, onPractice, onNav }) {
         </div>
       </section>
 
+      {/* Latest guides strip — fresh auto-blog content */}
+      <LatestGuides />
+
       {/* FAQ */}
       <section className="section faq-section" style={{ background: "var(--surface-2)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }}>
         <div className="shell">
@@ -541,15 +645,33 @@ function Home({ onGuide, onPractice, onNav }) {
       {/* Sign up CTA */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="shell">
-          <div className="card-signup reveal">
-            <div>
+          <div className="card-signup reveal" style={{ display: "flex", gap: 28, alignItems: "center", flexWrap: "wrap", justifyContent: "space-between" }}>
+            <div style={{ flex: "1 1 320px" }}>
               <div className="eyebrow">Optional · Free account</div>
               <h2 className="h2" style={{ marginTop: 4 }}>Track your progress over time</h2>
               <p className="muted" style={{ marginTop: 6, maxWidth: 540 }}>
                 Sign in to save your test history, track streaks, see skill splits across all exams, and continue where you left off — on any device.
               </p>
+              <button className="btn btn-primary btn-lg" style={{ marginTop: 16 }} onClick={() => onNav("login")}>Create free account</button>
             </div>
-            <button className="btn btn-primary btn-lg" onClick={() => onNav("login")}>Create free account</button>
+            {/* Dashboard preview mockup — gives the section a visual so sign-up feels tangible */}
+            <div aria-hidden="true" style={{ flex: "0 0 300px", maxWidth: 300, background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 16, padding: 18, boxShadow: "var(--shadow, 0 10px 28px -14px rgba(16,24,40,.18))" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 13, fontWeight: 700 }}>
+                <span style={{ color: "#f59e0b" }}>🔥 7-day streak</span>
+                <span style={{ color: "var(--ink-3)" }}>Level 4 · 532 XP</span>
+              </div>
+              <svg viewBox="0 0 260 80" style={{ width: "100%", height: 78, marginTop: 12 }}>
+                <polyline points="0,66 43,58 86,60 130,42 173,34 216,22 260,10" fill="none" stroke="var(--accent)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                {[[0,66],[43,58],[86,60],[130,42],[173,34],[216,22],[260,10]].map(([x,y],i)=>(<circle key={i} cx={x} cy={y} r="3.5" fill="var(--accent)" />))}
+              </svg>
+              <div style={{ fontSize: 11, color: "var(--ink-3)", fontWeight: 600, margin: "2px 0 12px" }}>IELTS band trend · last 7 mocks</div>
+              {[["Listening", 86, "#16a34a"], ["Reading", 74, "#0ea5e9"], ["Writing", 62, "#f59e0b"]].map(([s, w, c]) => (
+                <div key={s} style={{ marginBottom: 9 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontWeight: 600, marginBottom: 4 }}><span>{s}</span><span style={{ color: c }}>{w}%</span></div>
+                  <div style={{ height: 7, borderRadius: 999, background: "var(--line)" }}><div style={{ width: w + "%", height: "100%", borderRadius: 999, background: c }} /></div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

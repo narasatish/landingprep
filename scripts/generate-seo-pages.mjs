@@ -3678,6 +3678,14 @@ ${urls.map((u) => `  <url>
 `;
 writeFileSafe(join(ROOT, "sitemap.xml"), sitemap);
 
+// blog-index.json — a LIGHTWEIGHT list of the most recent guides (no post bodies) so the homepage
+// can show a fresh "Latest guides" strip WITHOUT loading the 2.6 MB blog-data bundle. Auto-blog
+// appends new posts at the end, so the newest are the last entries → take them and reverse.
+const blogIndex = BLOG_EXTRA.slice(-8).reverse().map((p) => ({
+  id: p.id, title: p.title, tag: p.tag || "", excerpt: String(p.excerpt || "").slice(0, 140),
+}));
+writeFileSafe(join(ROOT, "blog-index.json"), JSON.stringify(blogIndex));
+
 // robots.txt — allow all search + AI crawlers (visibility in Google AND feedback)
 writeFileSafe(join(ROOT, "robots.txt"), `# LandingPrep — 100% Free Exam Prep Platform
 # Fully open to search engines and AI answer engines.
