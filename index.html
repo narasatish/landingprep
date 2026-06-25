@@ -328,8 +328,8 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=306" />
-  <link rel="stylesheet" href="pro.css?v=306" />
+  <link rel="stylesheet" href="theme.css?v=307" />
+  <link rel="stylesheet" href="pro.css?v=307" />
 </head>
 <body>
   <div id="root"></div>
@@ -361,8 +361,8 @@
 
   <!-- React 18.3.1 PRODUCTION (minified), SELF-HOSTED: same-origin load avoids a third-party
        DNS+TLS handshake on first paint → faster LCP, and it's precached by the service worker. -->
-  <script src="vendor/react.production.min.js?v=306"></script>
-  <script src="vendor/react-dom.production.min.js?v=306"></script>
+  <script src="vendor/react.production.min.js?v=307"></script>
+  <script src="vendor/react-dom.production.min.js?v=307"></script>
   <!-- Failover: if the local copy ever fails to define React, boot from unpkg, then jsdelivr. -->
   <script>
     if (!window.React) document.write('<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"><\/script>');
@@ -372,84 +372,84 @@
   </script>
 
   <!-- Data layer -->
-  <script defer src="data.js?v=306"></script>
+  <script defer src="data.js?v=307"></script>
   <!-- data-questions.js (~142 KB) is lazy-loaded with the test runner via MockTestGate when a mock starts -->
-  <script defer src="gemini-tts.js?v=306"></script>
-  <script defer src="seo.js?v=306"></script>
-  <script defer src="test-catalog.js?v=306"></script>
-  <script defer src="normalize-test.js?v=306"></script>
-  <script defer src="learning-hub-catalog.js?v=306"></script>
-  <script defer src="visual-renderer.js?v=306"></script>
+  <script defer src="gemini-tts.js?v=307"></script>
+  <script defer src="seo.js?v=307"></script>
+  <script defer src="test-catalog.js?v=307"></script>
+  <script defer src="normalize-test.js?v=307"></script>
+  <script defer src="learning-hub-catalog.js?v=307"></script>
+  <script defer src="visual-renderer.js?v=307"></script>
 
   <!-- Auth + Smart Tutor + Chatbot (must load before screens) -->
-  <script defer src="auth.js?v=306"></script>
-  <script defer src="reminders.js?v=306"></script>
-  <script defer src="md.js?v=306"></script>
-  <script defer src="ai-tutor.js?v=306"></script>
-  <script defer src="chatbot-widget.js?v=306"></script>
+  <script defer src="auth.js?v=307"></script>
+  <script defer src="reminders.js?v=307"></script>
+  <script defer src="md.js?v=307"></script>
+  <script defer src="ai-tutor.js?v=307"></script>
+  <script defer src="chatbot-widget.js?v=307"></script>
 
   <!-- Screens -->
-  <script defer src="screens/pte-renderer.js?v=306"></script>
-  <script defer src="screens/pte-listening-renderer.js?v=306"></script>
-  <script defer src="screens/pte-sw-renderer.js?v=306"></script>
-  <script defer src="screens/celpip-renderer.js?v=306"></script>
-  <script defer src="screens/home.js?v=306"></script>
-  <script defer src="screens/guide.js?v=306"></script>
+  <script defer src="screens/pte-renderer.js?v=307"></script>
+  <script defer src="screens/pte-listening-renderer.js?v=307"></script>
+  <script defer src="screens/pte-sw-renderer.js?v=307"></script>
+  <script defer src="screens/celpip-renderer.js?v=307"></script>
+  <script defer src="screens/home.js?v=307"></script>
+  <script defer src="screens/guide.js?v=307"></script>
   <!-- screens/mock-test.js (~160 KB) is lazy-loaded on demand by MockTestGate when a mock starts -->
-  <script defer src="screens/learning-club.js?v=306"></script>
+  <script defer src="screens/learning-club.js?v=307"></script>
   <!-- speaking-agent.js (~37 KB) + writing-agent.js (~81 KB) are lazy-loaded by LazyScreen when the AI agent tab opens -->
-  <script defer src="screens/error-log.js?v=306"></script>
-  <script defer src="screens/progress.js?v=306"></script>
-  <script defer src="screens/exam-prep.js?v=306"></script>
+  <script defer src="screens/error-log.js?v=307"></script>
+  <script defer src="screens/progress.js?v=307"></script>
+  <script defer src="screens/exam-prep.js?v=307"></script>
   <!-- college-data.js (~79 KB) is lazy-loaded by the Colleges hub gate (+ idle-preload); sop-tool.js (~47 KB) loads when the SOP tab opens -->
-  <script defer src="screens/college-tools.js?v=306"></script>
-  <script defer src="screens/calculators.js?v=306"></script>
-  <script defer src="scholarship-data.js?v=306"></script>
-  <script defer src="screens/scholarship-tool.js?v=306"></script>
-  <script defer src="country-data.js?v=306"></script>
-  <script defer src="live-data.js?v=306"></script>
-  <script defer src="firebase-config.js?v=306"></script>
-  <script defer src="country-landmarks.js?v=306"></script>
-  <script defer src="screens/destinations.js?v=306"></script>
-  <script defer src="screens/counsellor.js?v=306"></script>
-  <script defer src="screens/profile-eval.js?v=306"></script>
-  <script defer src="screens/compare.js?v=306"></script>
-  <script defer src="screens/apply-partners.js?v=306"></script>
-  <script defer src="screens/visa-interview.js?v=306"></script>
-  <script defer src="screens/onboarding.js?v=306"></script>
-  <script defer src="screens/community.js?v=306"></script>
-  <script defer src="screens/leaderboard.js?v=306"></script>
-  <script defer src="focus-engine.js?v=306"></script>
-  <script defer src="screens/focus-timer.js?v=306"></script>
-  <script defer src="screens/focus-widget.js?v=306"></script>
-  <script defer src="screens/tools.js?v=306"></script>
-  <script defer src="screens/colleges.js?v=306"></script>
-  <script defer src="screens/study-planner.js?v=306"></script>
+  <script defer src="screens/college-tools.js?v=307"></script>
+  <script defer src="screens/calculators.js?v=307"></script>
+  <script defer src="scholarship-data.js?v=307"></script>
+  <script defer src="screens/scholarship-tool.js?v=307"></script>
+  <script defer src="country-data.js?v=307"></script>
+  <script defer src="live-data.js?v=307"></script>
+  <script defer src="firebase-config.js?v=307"></script>
+  <script defer src="country-landmarks.js?v=307"></script>
+  <script defer src="screens/destinations.js?v=307"></script>
+  <script defer src="screens/counsellor.js?v=307"></script>
+  <script defer src="screens/profile-eval.js?v=307"></script>
+  <script defer src="screens/compare.js?v=307"></script>
+  <script defer src="screens/apply-partners.js?v=307"></script>
+  <script defer src="screens/visa-interview.js?v=307"></script>
+  <script defer src="screens/onboarding.js?v=307"></script>
+  <script defer src="screens/community.js?v=307"></script>
+  <script defer src="screens/leaderboard.js?v=307"></script>
+  <script defer src="focus-engine.js?v=307"></script>
+  <script defer src="screens/focus-timer.js?v=307"></script>
+  <script defer src="screens/focus-widget.js?v=307"></script>
+  <script defer src="screens/tools.js?v=307"></script>
+  <script defer src="screens/colleges.js?v=307"></script>
+  <script defer src="screens/study-planner.js?v=307"></script>
   <!-- blog-data.js (~122 KB) + seo-pages.js are lazy-loaded by the blog route (LazyScreen) when opened, keeping them off the initial load. The static /blog/* SEO pages are generated at build time and don't depend on these. -->
 
 
   <!-- App router (must be last) -->
-  <script defer src="language-data.js?v=306"></script>
-  <script defer src="screens/languages.js?v=306"></script>
-  <script defer src="screens/lang-speaking.js?v=306"></script>
-  <script defer src="lang-mock-data.js?v=306"></script>
-  <script defer src="screens/lang-mock.js?v=306"></script>
+  <script defer src="language-data.js?v=307"></script>
+  <script defer src="screens/languages.js?v=307"></script>
+  <script defer src="screens/lang-speaking.js?v=307"></script>
+  <script defer src="lang-mock-data.js?v=307"></script>
+  <script defer src="screens/lang-mock.js?v=307"></script>
   <!-- slide-decks-data.js (~384 KB) is lazy-loaded on demand by the Lessons screen via window.LP_loadScript -->
-  <script defer src="screens/slide-deck.js?v=306"></script>
-  <script defer src="screens/learn-hub.js?v=306"></script>
-  <script defer src="gamify.js?v=306"></script>
-  <script defer src="share-card.js?v=306"></script>
-  <script defer src="referral.js?v=306"></script>
-  <script defer src="vocab-data.js?v=306"></script>
-  <script defer src="lang-stories-data.js?v=306"></script>
-  <script defer src="sa-extra-data.js?v=306"></script>
-  <script defer src="screens/vocabulary.js?v=306"></script>
-  <script defer src="screens/relocate.js?v=306"></script>
-  <script defer src="screens/test-finder.js?v=306"></script>
-  <script defer src="screens/achievements.js?v=306"></script>
-  <script defer src="screens/band-checker.js?v=306"></script>
-  <script defer src="app.js?v=306"></script>
-  <script defer src="pro.js?v=306"></script>
+  <script defer src="screens/slide-deck.js?v=307"></script>
+  <script defer src="screens/learn-hub.js?v=307"></script>
+  <script defer src="gamify.js?v=307"></script>
+  <script defer src="share-card.js?v=307"></script>
+  <script defer src="referral.js?v=307"></script>
+  <script defer src="vocab-data.js?v=307"></script>
+  <script defer src="lang-stories-data.js?v=307"></script>
+  <script defer src="sa-extra-data.js?v=307"></script>
+  <script defer src="screens/vocabulary.js?v=307"></script>
+  <script defer src="screens/relocate.js?v=307"></script>
+  <script defer src="screens/test-finder.js?v=307"></script>
+  <script defer src="screens/achievements.js?v=307"></script>
+  <script defer src="screens/band-checker.js?v=307"></script>
+  <script defer src="app.js?v=307"></script>
+  <script defer src="pro.js?v=307"></script>
 </body>
 </html>
 
