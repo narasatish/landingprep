@@ -1312,6 +1312,7 @@ ${calc}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🏦 Education loan without collateral`, href: `/blog/education-loan-without-collateral/` },
+  { label: `📊 Study-abroad funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
   { label: `💸 Scholarships by country`, href: `/fully-funded-scholarships/` },
   { label: `🧮 Cost of studying abroad calculator`, href: `/tools/cost-of-studying-abroad-calculator/` },
   { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
@@ -2141,9 +2142,86 @@ SOP_SAMPLES.forEach(sopSamplePage);
 sopSamplesIndex();
 VISA_INTERVIEWS.forEach(visaInterviewPage);
 visaInterviewIndex();
+// ── Linkable data-study asset: study-abroad funding facts (proof-of-funds +
+//    post-study-work + loan facts) compiled from official sources + LandingPrep
+//    guides. Substantive + citable + Dataset schema → built to earn backlinks. ──
+function fundingFactsPage() {
+  const path = `/study-abroad-funding-facts-2026/`;
+  const tStyle = `width:100%;border-collapse:collapse;margin:14px 0;font-size:15px`;
+  const th = `text-align:left;padding:10px 12px;border-bottom:2px solid var(--line);font-weight:700`;
+  const td = `padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top`;
+  const funds = [
+    ["🇩🇪 Germany", "EUR 11,904 / year (EUR 992 / month)", "Blocked account (Sperrkonto) — released to you monthly after arrival"],
+    ["🇨🇦 Canada", "CAD 20,635 (plus first-year tuition)", "GIC — required for the SDS study-permit stream; returned in instalments"],
+    ["🇬🇧 UK", "GBP 1,334 / month (London) · GBP 1,023 / month (elsewhere), up to 9 months", "Maintenance funds held 28 days (UKVI)"],
+    ["🇦🇺 Australia", "AUD 29,710 / year living costs", "Financial evidence under the Genuine Student requirement"],
+    ["🇮🇪 Ireland", "EUR 10,000 / year", "Proof of funds shown to immigration (ISD)"],
+    ["🇺🇸 USA", "First-year cost of attendance (varies by university)", "Financial evidence for the Form I-20 (F-1 visa)"],
+  ];
+  const work = [
+    ["🇺🇸 USA", "OPT (F-1)", "12 months, plus 24 months for STEM degrees = up to 36 months"],
+    ["🇨🇦 Canada", "Post-Graduation Work Permit (PGWP)", "Up to 3 years"],
+    ["🇦🇺 Australia", "Temporary Graduate visa (subclass 485)", "2–4 years depending on qualification"],
+    ["🇳🇿 New Zealand", "Post-study work visa", "Up to 3 years"],
+    ["🇬🇧 UK", "Graduate Route", "2 years (3 years for PhD)"],
+    ["🇮🇪 Ireland", "Third Level Graduate Programme", "Up to 24 months"],
+    ["🇩🇪 Germany", "Residence permit to seek work", "18 months after graduating"],
+  ];
+  const fundsRows = funds.map((r) => `<tr><td style="${td}"><strong>${r[0]}</strong></td><td style="${td}">${r[1]}</td><td style="${td}">${r[2]}</td></tr>`).join("");
+  const workRows = work.map((r) => `<tr><td style="${td}"><strong>${r[0]}</strong></td><td style="${td}">${r[1]}</td><td style="${td}">${r[2]}</td></tr>`).join("");
+  const faqs = [
+    { q: "How much money do I need to show for a student visa in 2026?", a: "It varies by country. Germany requires about EUR 11,904 per year in a blocked account; Canada about CAD 20,635 via a GIC; the UK about GBP 1,023–1,334 per month of maintenance for up to 9 months; Australia about AUD 29,710 per year; Ireland about EUR 10,000 per year. The USA has no fixed figure — you prove the first-year cost of attendance for your university. Always confirm the current amount with the official authority before applying." },
+    { q: "Which country gives the longest post-study work visa?", a: "Canada's PGWP (up to 3 years), Australia's subclass 485 (2–4 years) and New Zealand's post-study work visa (up to 3 years) are the longest. The UK Graduate Route is 2 years (3 for a PhD), and US OPT is 12 months plus 24 months for STEM graduates." },
+    { q: "Is the German blocked account or Canadian GIC refundable?", a: "Both are your own money. A German Sperrkonto releases roughly EUR 992 to you each month once you arrive and register; the Canadian GIC is returned to you in instalments over your first year. Neither is a fee — they are proof of funds." },
+    { q: "Do these funding figures change?", a: "Yes — most countries update proof-of-funds amounts every year, and exchange rates move. Treat the figures here as indicative 2026 values and confirm the exact current requirement on the official immigration website before you apply." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Funding Facts 2026</p>
+<section class="hero"><div class="badges"><span class="badge">Free data study</span><span class="badge">2026</span><span class="badge">Cite freely</span></div>
+<h1>Study-Abroad Funding Facts 2026: Proof of Funds &amp; Post-Study Work by Country</h1>
+<p class="lead">A free, citable reference comparing how much money you must show for a student visa, and how long you can work after graduating, across the top study destinations.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> In 2026, proof-of-funds runs from about <strong>EUR 10,000/year (Ireland)</strong> and <strong>EUR 11,904 (Germany Sperrkonto)</strong> to <strong>CAD 20,635 (Canada GIC)</strong> and <strong>AUD 29,710 (Australia)</strong>. The longest post-study work rights are <strong>Canada PGWP (up to 3 years)</strong> and <strong>Australia 485 (2–4 years)</strong>. Figures are indicative — confirm with the official authority.</div>
+
+<div class="card"><h2>Proof of funds / blocked-account requirement by country (2026)</h2>
+<table style="${tStyle}"><thead><tr><th style="${th}">Country</th><th style="${th}">Amount to show</th><th style="${th}">How it works</th></tr></thead><tbody>${fundsRows}</tbody></table>
+<p class="note">Amounts are living-cost / proof-of-funds figures and usually exclude tuition. Always confirm the current requirement on the official immigration website before applying.</p></div>
+
+<div class="card"><h2>Post-study work visa duration by country (2026)</h2>
+<table style="${tStyle}"><thead><tr><th style="${th}">Country</th><th style="${th}">Post-study work visa</th><th style="${th}">How long you can stay &amp; work</th></tr></thead><tbody>${workRows}</tbody></table>
+<p class="note">Durations depend on your qualification level and current immigration rules. Use each <a href="/#/colleges">country guide</a> for the full step-by-step path from study to work to PR.</p></div>
+
+<div class="card"><h2>Education-loan facts (studying abroad from India)</h2><ul class="bcheck">
+<li><strong>Secured loans (with collateral):</strong> typically ~8.5–11% p.a. — the cheapest option.</li>
+<li><strong>Unsecured / no-collateral loans:</strong> typically ~11–15% p.a.; the limit varies by lender, course and university.</li>
+<li><strong>Moratorium:</strong> most education loans don't charge full EMIs during your course plus 6–12 months — paying the simple interest during study cuts the total a lot.</li>
+<li>Model your repayment with the free <a href="/tools/education-loan-emi-calculator/">education-loan EMI calculator</a>, or read the guide to <a href="/blog/education-loan-without-collateral/">loans without collateral</a>.</li>
+</ul></div>
+
+<div class="card"><h2>Methodology &amp; sources</h2><p>Figures are compiled from official immigration authorities (German Federal Foreign Office, IRCC, UKVI, Australian Department of Home Affairs, Irish ISD, US SEVP) and LandingPrep's own country and funding guides, current for the 2026 intake cycle. Requirements change every year — this page is a free reference, not legal advice. Verify the exact, current figure with the official authority before you apply or transfer money. You may cite this page with a link to ${ORIGIN}${path}.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🇩🇪 Germany blocked account guide`, href: `/blog/germany-blocked-account-2026-guide/` },
+  { label: `🇨🇦 Canada GIC guide`, href: `/blog/gic-account-canada-2026-guide/` },
+  { label: `🧮 Education loan EMI calculator`, href: `/tools/education-loan-emi-calculator/` },
+  { label: `💰 Cost of studying abroad`, href: `/tools/cost-of-studying-abroad-calculator/` },
+  { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
+])}`;
+  emit(path, head({
+    title: `Study-Abroad Funding Facts 2026: Proof of Funds & Post-Study Work by Country | ${BRAND}`,
+    desc: `Free 2026 data study: how much money to show for a student visa (Germany EUR 11,904, Canada CAD 20,635, UK, Australia, Ireland, USA) and post-study work visa length by country. Citable reference.`,
+    path,
+    kw: "proof of funds student visa 2026, blocked account amount by country, post study work visa by country, how much money for student visa, germany sperrkonto canada gic, study abroad funding requirements",
+    jsonLdBlocks: [
+      jsonld({ "@context": "https://schema.org", "@type": "Dataset", name: "Study-Abroad Funding Facts 2026", description: "Proof-of-funds requirements and post-study work visa durations for top study-abroad destinations, 2026.", isAccessibleForFree: true, creator: { "@type": "Organization", name: BRAND }, url: ORIGIN + path, license: "https://creativecommons.org/licenses/by/4.0/" }),
+      faqJsonLd(faqs),
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Funding Facts 2026", path }]),
+    ],
+  }) + shell(inner));
+}
 costCalculatorPage();
 loanEmiPage();
 readinessPage();
+fundingFactsPage();
 (() => {
   const byCountry = {};
   COLLEGES.forEach((c) => { (byCountry[c.country] = byCountry[c.country] || []).push(c); });
