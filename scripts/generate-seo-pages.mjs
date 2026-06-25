@@ -402,6 +402,19 @@ function blogTiles(a) {
 const PAGES = []; // { path, html }
 const THIN_PATHS = new Set(); // thin pages → noindex,follow + excluded from sitemap (concentrates crawl budget on substantive pages)
 const THIN_MIN_CHARS = 1500; // below this much unique <main> text = thin/templated
+// KEEP_INDEXED — exam×university + compare pages that the blanket prune wrongly noindexed despite
+// proven Search-Console traction: these 26 rank page 2–3 (positions 8–27) with real impressions
+// (GSC export 2026-06-25), and carry substantive content (~400–600 body words, 4–7 sections) — i.e.
+// they are on the HELPFUL side of the quality ratio, not thin doorways. Re-indexing only the proven
+// performers (while ~440 zero-impression combos stay pruned) is "quality over quantity" done right.
+const KEEP_INDEXED = new Set([
+  "/ielts-for-tum/", "/ielts-for-sydney/", "/ielts-for-rwth/", "/ielts-for-ucd/", "/ielts-for-nyu/",
+  "/ielts-for-ubc/", "/ielts-for-dalhousie/", "/ielts-for-vuw/", "/ielts-for-uiuc/", "/ielts-for-adelaide/",
+  "/ielts-for-waterloo/", "/pte-for-rmit/", "/pte-for-canterbury/", "/pte-for-tum/", "/toefl-for-lse/",
+  "/toefl-for-ntu/", "/toefl-for-concordia/", "/toefl-for-waterloo/", "/toefl-for-ucd/", "/toefl-for-uts/",
+  "/compare/ubc-vs-alberta/", "/compare/rwth-vs-kit/", "/compare/unsw-vs-anu/", "/compare/auckland-vs-otago/",
+  "/compare/lmu-vs-heidelberg/", "/compare/ucd-vs-ucc/",
+]);
 function uniqueContentLen(html) {
   const main = (html.match(/<main[\s\S]*?<\/main>/i) || [html])[0];
   return main.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<style[\s\S]*?<\/style>/gi, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().length;
@@ -411,7 +424,7 @@ function emit(path, html, opts) {
   // (university-vs-university combos, competitor "alternative" doorways) that the March-2026 core
   // update penalises regardless of length. noindex + sitemap-exclusion raises the domain quality
   // ratio so the substantive pages rank better. Fully reversible (drop the flag to re-index).
-  if ((opts && opts.thin) || uniqueContentLen(html) < THIN_MIN_CHARS) {
+  if (!KEEP_INDEXED.has(path) && ((opts && opts.thin) || uniqueContentLen(html) < THIN_MIN_CHARS)) {
     html = html.replace(/<meta name="robots" content="index,follow[^"]*"\/>/i, '<meta name="robots" content="noindex,follow"/>');
     THIN_PATHS.add(path);
   }
