@@ -26,29 +26,31 @@
   // Colleges; Course Finder → Find Colleges; Compare → Top Universities;
   // Calculators → Loans & Costs). Combined tabs use an in-tab mode toggle.
   const TABS = [
-    ["destinations", "🌍 Country Guide"],
-    ["onboard", "🚀 Build My Plan"],
-    ["predictor", "🏛️ Find Colleges"],
-    ["rankings", "🏆 Universities"],
-    ["scholarships", "💸 Scholarships"],
-    ["apply", "🎓 Apply Now"],
-    ["counsellor", "💬 AI Counsellor"],
-    ["visa", "🛂 Visa Interview"],
-    ["community", "🙋 Community Q&A"],
-    ["leaderboard", "🏆 Leaderboard"],
-    ["updates", "❓ Help & FAQ"],
-    ["loan", "💰 Loans & Costs"],
-    ["sop", "✍️ Documents"],
-    ["apps", "📋 My Applications"],
+    ["destinations", "globe",     "Country Guide"],
+    ["onboard",      "rocket",    "Build My Plan"],
+    ["predictor",    "building",  "Find Colleges"],
+    ["rankings",     "trophy",    "Universities"],
+    ["scholarships", "wallet",    "Scholarships"],
+    ["apply",        "cap",       "Apply Now"],
+    ["counsellor",   "chat",      "AI Counsellor"],
+    ["visa",         "stamp",     "Visa Interview"],
+    ["community",    "users",     "Community Q&A"],
+    ["leaderboard",  "trophy",    "Leaderboard"],
+    ["updates",      "help",      "Help & FAQ"],
+    ["loan",         "money",     "Loans & Costs"],
+    ["sop",          "pen",       "Documents"],
+    ["apps",         "clipboard", "My Applications"],
   ];
-  const TAB_LABEL = Object.fromEntries(TABS);
+  const TAB_LABEL = Object.fromEntries(TABS.map((t) => [t[0], t[2]]));
+  const TAB_ICON = Object.fromEntries(TABS.map((t) => [t[0], t[1]]));
+  const ic = (name, size) => (window.LP_Ic ? <window.LP_Ic name={name} size={size || 15} style={{ verticalAlign: "-3px", marginRight: 6 }} /> : null);
   // Group the tabs into clean categories so the page shows 2–4 tabs at a time.
   const GROUPS = [
-    { id: "explore", label: "🌍 Explore", tabs: ["destinations", "rankings"] },
-    { id: "plan", label: "🧭 Plan", tabs: ["onboard", "predictor"] },
-    { id: "apply", label: "🎓 Apply", tabs: ["apply", "scholarships", "sop", "apps"] },
-    { id: "guidance", label: "💬 Guidance", tabs: ["counsellor", "visa", "loan"] },
-    { id: "community", label: "🌐 Community", tabs: ["community", "leaderboard", "updates"] },
+    { id: "explore",   icon: "globe",   label: "Explore",   tabs: ["destinations", "rankings"] },
+    { id: "plan",      icon: "compass", label: "Plan",      tabs: ["onboard", "predictor"] },
+    { id: "apply",     icon: "cap",     label: "Apply",     tabs: ["apply", "scholarships", "sop", "apps"] },
+    { id: "guidance",  icon: "chat",    label: "Guidance",  tabs: ["counsellor", "visa", "loan"] },
+    { id: "community", icon: "users",   label: "Community", tabs: ["community", "leaderboard", "updates"] },
   ];
   // Tabs that are scoped to the selected country.
   const COUNTRY_TABS = ["destinations", "onboard", "predictor", "rankings", "scholarships", "apply", "counsellor", "visa"];
@@ -110,12 +112,12 @@
 
           <div className="tools-groups">
             {GROUPS.map((g) => (
-              <button key={g.id} className={"tools-group" + (g.tabs.includes(tab) ? " active" : "")} onClick={() => { if (!g.tabs.includes(tab)) setTab(g.tabs[0]); }}>{g.label}</button>
+              <button key={g.id} className={"tools-group" + (g.tabs.includes(tab) ? " active" : "")} onClick={() => { if (!g.tabs.includes(tab)) setTab(g.tabs[0]); }}>{ic(g.icon, 16)}{g.label}</button>
             ))}
           </div>
           <div className="tools-tabs">
             {(GROUPS.find((g) => g.tabs.includes(tab)) || GROUPS[0]).tabs.map((id) => (
-              <button key={id} className={"tools-tab" + (tab === id ? " active" : "")} onClick={() => setTab(id)}>{TAB_LABEL[id]}</button>
+              <button key={id} className={"tools-tab" + (tab === id ? " active" : "")} onClick={() => setTab(id)}>{ic(TAB_ICON[id])}{TAB_LABEL[id]}</button>
             ))}
           </div>
 
