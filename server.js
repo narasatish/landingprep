@@ -2036,12 +2036,26 @@ async function sendWeeklyDigest() {
     for (const u of Object.values(STORE.users || {})) if (u && u.email && !u.noNewsletter) recips.push(u);
     if (!recips.length) return;
     const guides = digestGuidesHtml();
+    const weekAgo = Date.now() - 7 * 24 * 3600 * 1000;
     let sent = 0;
     for (const u of recips) {
       const unsub = "https://landingprep.com/api/unsubscribe?e=" + encodeURIComponent(u.email) + "&t=" + unsubToken(u.email);
+      // Personalise from the user's synced test history (cross-device, server-stored).
+      const hist = STORE.history[u.email] || [];
+      const thisWeek = hist.filter((h) => (h.ts || Date.parse(h.date) || 0) >= weekAgo).length;
+      const best = {};
+      for (const h of hist) { const ex = String(h.exam || "").toUpperCase(); const sc = h.score != null ? h.score : h.overall; if (ex && sc != null && (best[ex] == null || sc > best[ex])) best[ex] = sc; }
+      const bestLine = Object.entries(best).slice(0, 4).map(([e, s]) => `${e} ${s}`).join(" · ");
+      const statsBlock = hist.length
+        ? `<div style="background:#eef2ff;border-radius:12px;padding:14px 16px;margin:14px 0;font-size:15px"><strong>📊 Your progress</strong><br/>${hist.length} test${hist.length > 1 ? "s" : ""} completed${thisWeek ? ` · <strong>${thisWeek} this week</strong> 🔥` : ""}${bestLine ? `<br/>Best scores: ${bestLine}` : ""}</div>`
+        : "";
+      const nudge = !hist.length ? "Take your first free mock today — it only takes a few minutes."
+        : thisWeek ? "Great momentum this week — keep the streak going!"
+        : "It's been a quiet week. Jump back in — a little practice adds up fast.";
       const html = `<div style="font-family:system-ui,Arial;max-width:560px;margin:0 auto;color:#1f2937">`
         + `<h2 style="color:#4F46E5">Hi ${String(u.name || "there").replace(/</g, "")}, keep your prep going 📚</h2>`
-        + `<p>A quick nudge — a little practice each week adds up. Jump back into your free mock tests anytime.</p>`
+        + statsBlock
+        + `<p>${nudge}</p>`
         + `<p style="margin:18px 0"><a href="https://landingprep.com/" style="background:#4F46E5;color:#fff;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:700">Practise free →</a></p>`
         + (guides ? `<p style="font-weight:700;margin:18px 0 6px">📰 New study-abroad guides:</p><ul style="padding-left:18px">${guides}</ul>` : "")
         + `<hr style="border:none;border-top:1px solid #e5e7eb;margin:22px 0"/>`
