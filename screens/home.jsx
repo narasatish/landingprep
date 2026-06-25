@@ -4,6 +4,124 @@ const { useState: useStateH } = React;
 // Brand tagline (international, premium).
 const LP_TAGLINE = "From mock test to campus abroad";
 
+// ─────────────────────────────────────────────────────────────────────────────
+// HOME PRO — a scoped visual upgrade (UI/UX Pro Max). Everything below lives under
+// the `.home-pro` wrapper + a single injected <style>, and uses crisp SVG icons
+// instead of emoji. 100% reversible: restore screens/home.jsx.bak (or remove the
+// `home-pro` class + <LPProStyles/>) and the original design returns untouched.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Crisp, consistent SVG icon set (Lucide-style, 1.75 stroke) — replaces emoji as
+// structural icons (UI/UX Pro Max rule #4: no-emoji-icons / vector-only assets).
+const LP_ICONS = {
+  file: "M14 3v4a1 1 0 0 0 1 1h4 M9 13h6 M9 17h4 M5 3h9l5 5v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z",
+  mic: "M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z M19 10v1a7 7 0 0 1-14 0v-1 M12 18v4 M8 22h8",
+  pen: "M12 20h9 M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z",
+  building: "M3 21h18 M5 21V7l8-4v18 M19 21V11l-6-4 M9 9h0 M9 13h0 M9 17h0",
+  wallet: "M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z M3 10h18 M16 14h2",
+  stamp: "M5 22h14 M6 18h12v-1a4 4 0 0 0-2-3.4 3 3 0 0 1-1.3-3.3l.3-1.3A3 3 0 0 0 12 4a3 3 0 0 0-3 6l.3 1.3A3 3 0 0 1 8 14.6 4 4 0 0 0 6 17z",
+  calendar: "M8 2v4 M16 2v4 M3 8h18 M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z",
+  chart: "M3 3v18h18 M7 16v-5 M12 16V8 M17 16v-9",
+  book: "M12 7v14 M3 18a2 2 0 0 1 2-2h7V4H5a2 2 0 0 0-2 2z M21 18a2 2 0 0 1-2-2h-7V4h7a2 2 0 0 0 2 2z",
+  target: "M12 12m-9 0a9 9 0 1 0 18 0 9 9 0 1 0-18 0 M12 12m-5 0a5 5 0 1 0 10 0 5 5 0 1 0-10 0 M12 12h.01",
+  plane: "M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a1 1 0 0 0-.9 1.7l5.1 3.5-2 2-2.5-.3a.8.8 0 0 0-.7 1.3L7 19l1.6 2.6a.8.8 0 0 0 1.3-.7l-.3-2.5 2-2 3.5 5.1a1 1 0 0 0 1.7-.9z",
+  compare: "M16 3h5v5 M21 3l-7 7 M8 21H3v-5 M3 21l7-7 M21 16v5h-5 M16 21l5-5 M3 8V3h5 M3 3l5 5",
+  refresh: "M3 12a9 9 0 0 1 15-6.7L21 8 M21 3v5h-5 M21 12a9 9 0 0 1-15 6.7L3 16 M3 21v-5h5",
+  globe: "M12 12m-10 0a10 10 0 1 0 20 0 10 10 0 1 0-20 0 M2 12h20 M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z",
+  money: "M12 1v22 M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6",
+  bolt: "M13 2 3 14h9l-1 8 10-12h-9l1-8z",
+  spark: "M12 3v4 M12 17v4 M3 12h4 M17 12h4 M6 6l2.5 2.5 M15.5 15.5 18 18 M6 18l2.5-2.5 M15.5 8.5 18 6",
+  check: "M20 6 9 17l-5-5",
+  shield: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z M9 12l2 2 4-4",
+  cap: "M22 10 12 5 2 10l10 5 10-5z M6 12v5c3 2 9 2 12 0v-5 M22 10v6",
+  rocket: "M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2a2.1 2.1 0 1 0-3-3z M12 15l-3-3a16 16 0 0 1 6-9c4-1 7 2 6 6a16 16 0 0 1-9 6z M9 12H4s.5-3 2-4 5 0 5 0 M12 15v5s3-.5 4-2 0-5 0-5",
+};
+function Ic({ name, size = 22, style }) {
+  const d = LP_ICONS[name] || LP_ICONS.spark;
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={style}>
+      {d.split(" M").map((seg, i) => <path key={i} d={(i ? "M" : "") + seg} />)}
+    </svg>
+  );
+}
+// Icon "chip" — a gradient-tinted rounded square holding an SVG (consistent sizing/rhythm).
+function IcChip({ name, tone = "accent" }) {
+  return <span className={"pro-icchip pro-tone-" + tone} aria-hidden="true"><Ic name={name} size={22} /></span>;
+}
+
+// The injected, scoped design layer. Restyles the existing section class-names so
+// the whole page lifts cohesively, plus a refined hero. Dark-mode aware (uses the
+// theme's CSS vars) and respects prefers-reduced-motion.
+const LP_PRO_CSS = `
+.home-pro{ --pro-grad: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+
+/* ── Hero ─────────────────────────────────────────────────────────────────── */
+.home-pro .hero{ position:relative; overflow:hidden; isolation:isolate;
+  background:
+    radial-gradient(60% 80% at 12% 8%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 60%),
+    radial-gradient(55% 75% at 92% 18%, color-mix(in srgb, var(--accent-2) 18%, transparent), transparent 62%),
+    radial-gradient(45% 60% at 50% 110%, color-mix(in srgb, var(--leaf) 12%, transparent), transparent 60%); }
+.home-pro .hero::after{ content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+  background-image: radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--ink) 9%, transparent) 1px, transparent 0);
+  background-size: 26px 26px; -webkit-mask-image: radial-gradient(70% 60% at 50% 30%, #000 0%, transparent 75%);
+          mask-image: radial-gradient(70% 60% at 50% 30%, #000 0%, transparent 75%); opacity:.5; }
+.home-pro .hero-meta .chip{ backdrop-filter:saturate(1.4) blur(6px); background:color-mix(in srgb, var(--surface) 70%, transparent);
+  border:1px solid var(--line); font-weight:600; }
+.home-pro .hero-tagline{ display:inline-flex; align-items:center; gap:7px; padding:6px 14px; border-radius:999px;
+  background:color-mix(in srgb, var(--accent) 10%, transparent); color:var(--accent); font-weight:700;
+  border:1px solid color-mix(in srgb, var(--accent) 22%, transparent); }
+.home-pro .display{ letter-spacing:-.035em; line-height:1.02; }
+.home-pro .display .grad{ background:var(--pro-grad); -webkit-background-clip:text; background-clip:text; color:transparent;
+  font-family:var(--serif); font-style:italic; }
+.home-pro .hero-cta{ gap:12px; }
+
+/* ── Buttons ──────────────────────────────────────────────────────────────── */
+.home-pro .btn{ border-radius:13px; font-weight:650; transition:transform .14s ease, box-shadow .2s ease, background .2s ease, border-color .2s; }
+.home-pro .btn:active{ transform:scale(.975); }
+.home-pro .btn-primary{ background:var(--pro-grad); border:none; color:#fff;
+  box-shadow:0 8px 22px -8px color-mix(in srgb, var(--accent) 70%, transparent); }
+.home-pro .btn-primary:hover{ box-shadow:0 12px 30px -8px color-mix(in srgb, var(--accent) 80%, transparent); transform:translateY(-1px); }
+.home-pro .btn-lg{ padding:14px 22px; font-size:16px; }
+
+/* ── Icon chips ───────────────────────────────────────────────────────────── */
+.home-pro .pro-icchip{ width:46px; height:46px; border-radius:14px; display:inline-grid; place-items:center; flex:0 0 auto;
+  background:linear-gradient(135deg, color-mix(in srgb, var(--accent) 16%, transparent), color-mix(in srgb, var(--accent-2) 16%, transparent));
+  color:var(--accent); border:1px solid color-mix(in srgb, var(--accent) 18%, transparent); transition:transform .18s ease; }
+.home-pro .pro-tone-green{ color:var(--leaf); background:linear-gradient(135deg, color-mix(in srgb, var(--leaf) 16%, transparent), color-mix(in srgb, var(--leaf) 6%, transparent)); border-color:color-mix(in srgb, var(--leaf) 20%, transparent); }
+.home-pro .pro-tone-sky{ color:#0ea5e9; background:linear-gradient(135deg, rgba(14,165,233,.16), rgba(14,165,233,.06)); border-color:rgba(14,165,233,.22); }
+.home-pro .pro-tone-amber{ color:#f59e0b; background:linear-gradient(135deg, rgba(245,158,11,.18), rgba(245,158,11,.06)); border-color:rgba(245,158,11,.24); }
+.home-pro .pro-tone-pink{ color:#ec4899; background:linear-gradient(135deg, rgba(236,72,153,.16), rgba(236,72,153,.06)); border-color:rgba(236,72,153,.22); }
+
+/* ── Feature cards (bento lift) ───────────────────────────────────────────── */
+.home-pro .lp-pro, .home-pro .hp-tool-card{ border-radius:18px; border:1px solid var(--line); background:var(--surface);
+  transition:transform .18s ease, box-shadow .22s ease, border-color .2s ease; }
+.home-pro .lp-pro:hover, .home-pro .hp-tool-card:hover{ transform:translateY(-4px);
+  border-color:color-mix(in srgb, var(--accent) 40%, var(--line));
+  box-shadow:0 18px 38px -20px color-mix(in srgb, var(--accent) 60%, transparent); }
+.home-pro .lp-pro:hover .pro-icchip, .home-pro .hp-tool-card:hover .pro-icchip{ transform:scale(1.08) rotate(-3deg); }
+.home-pro .lp-pro-ic{ margin-bottom:6px; }
+
+/* ── Stats ────────────────────────────────────────────────────────────────── */
+.home-pro .lp-stat-n{ font-weight:800; letter-spacing:-.02em; }
+.home-pro .lp-stats{ gap:14px; }
+
+/* ── Eyebrows ─────────────────────────────────────────────────────────────── */
+.home-pro .eyebrow{ display:inline-flex; align-items:center; gap:8px; text-transform:uppercase; letter-spacing:.08em;
+  font-size:12px; font-weight:750; color:var(--accent); }
+.home-pro .eyebrow::before{ content:""; width:18px; height:2px; border-radius:2px; background:var(--pro-grad); }
+
+/* ── Section headings get a touch more air ────────────────────────────────── */
+.home-pro .h1{ letter-spacing:-.025em; }
+
+/* ── Reduced motion ───────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce){
+  .home-pro .btn, .home-pro .lp-pro, .home-pro .hp-tool-card, .home-pro .pro-icchip{ transition:none !important; }
+  .home-pro .lp-pro:hover, .home-pro .hp-tool-card:hover, .home-pro .btn-primary:hover{ transform:none !important; }
+}
+`;
+function LPProStyles() { return <style>{LP_PRO_CSS}</style>; }
+
 // Brand logo — gradient graduation-cap monogram (crisp at any size, no assets).
 function LPLogo({ size = 30 }) {
   return (
@@ -368,11 +486,12 @@ function Home({ onGuide, onPractice, onNav }) {
   const faqActive = faqTab === "abroad" ? STUDY_FAQS : FAQS;
   return (
     <>
+      <LPProStyles />
       <window.LP_TopBar current="home" onNav={onNav} />
       <window.LP_Marquee />
 
       <GoalOnboarding onNav={onNav} />
-      <main id="main-content">
+      <main id="main-content" className="home-pro">
       <div className="shell"><ReturningBar onNav={onNav} /></div>
       {/* Hero */}
       <section className="hero">
@@ -383,17 +502,17 @@ function Home({ onGuide, onPractice, onNav }) {
               <span className="chip">100% free</span>
               <span className="chip">No signup</span>
             </div>
-            <div className="hero-tagline">🌍 {LP_TAGLINE}</div>
+            <div className="hero-tagline"><Ic name="globe" size={15} /> {LP_TAGLINE}</div>
             <h1 className="display">
-              Prep for your exam.<br />Land your <em style={{ fontStyle: "italic", fontFamily: "var(--serif)", color: "var(--accent)" }}>dream university</em> abroad.
+              Prep for your exam.<br />Land your <em className="grad">dream university</em> abroad.
             </h1>
             <p className="body-lg muted" style={{ maxWidth: 760, marginTop: 18, marginInline: "auto" }}>
               1,000+ free mock tests across 15+ exams — IELTS, TOEFL, OET, PTE, GRE, GMAT, SAT &amp; more — plus a complete study-abroad toolkit: college predictor, scholarships, SOP &amp; visa guidance. All free, for students in every country.
             </p>
             <div className="hero-cta">
               <button className="btn btn-primary btn-lg" onClick={() => onNav("exam-prep")}>Browse all mock tests →</button>
-              <button className="btn btn-lg" onClick={() => { window.location.hash = "#/colleges/onboard"; onNav("colleges"); }}>🚀 Build my study-abroad plan</button>
-              <button className="btn btn-lg" onClick={() => window.LP_REFERRAL && window.LP_REFERRAL.invite()} title="Share free prep with a friend">📲 Invite a friend</button>
+              <button className="btn btn-lg" onClick={() => { window.location.hash = "#/colleges/onboard"; onNav("colleges"); }}><Ic name="rocket" size={17} style={{ marginRight: 7, verticalAlign: "-3px" }} />Build my study-abroad plan</button>
+              <button className="btn btn-lg" onClick={() => window.LP_REFERRAL && window.LP_REFERRAL.invite()} title="Share free prep with a friend">Invite a friend</button>
             </div>
             <div className="hero-fine">
               <span><span className="dot" /> No registration to start</span>
@@ -445,17 +564,17 @@ function Home({ onGuide, onPractice, onNav }) {
           </div>
           <div className="lp-pros reveal">
             {[
-              ["📝", "1,000+ realistic mocks", "Real timings & patterns across all 15+ exams with instant scoring.", "exam-prep"],
-              ["🎤", "Speaking practice", "Speak into your mic, get live transcripts, follow-ups & fluency scoring.", "agents"],
-              ["✍️", "AI band-score checker", "Paste an essay or record a Part 2 — instant IELTS band, TR/CC/LR/GRA breakdown & Band 9 model.", "writing-checker"],
-              ["🏛️", "College Predictor", "99 top universities with fees, requirements & Safe/Target/Reach matches.", "colleges"],
-              ["💸", "Scholarships & loans", "Country-based scholarship finder and a 10-lender education-loan compare.", "colleges"],
-              ["🛂", "Visa, PR & immigration", "Visa types, settlement options and a step-by-step student→PR roadmap.", "colleges"],
-              ["📅", "Personalised study plan", "A real week-by-week schedule built around your weakest sections.", "tools"],
-              ["📊", "Progress & analytics", "Track scores, streaks and skill splits across every exam — on any device.", "progress"],
-            ].map(([icon, title, desc, nav]) => (
+              ["file", "accent", "1,000+ realistic mocks", "Real timings & patterns across all 15+ exams with instant scoring.", "exam-prep"],
+              ["mic", "pink", "Speaking practice", "Speak into your mic, get live transcripts, follow-ups & fluency scoring.", "agents"],
+              ["pen", "sky", "AI band-score checker", "Paste an essay or record a Part 2 — instant IELTS band, TR/CC/LR/GRA breakdown & Band 9 model.", "writing-checker"],
+              ["building", "accent", "College Predictor", "99 top universities with fees, requirements & Safe/Target/Reach matches.", "colleges"],
+              ["wallet", "green", "Scholarships & loans", "Country-based scholarship finder and a 10-lender education-loan compare.", "colleges"],
+              ["stamp", "amber", "Visa, PR & immigration", "Visa types, settlement options and a step-by-step student→PR roadmap.", "colleges"],
+              ["calendar", "sky", "Personalised study plan", "A real week-by-week schedule built around your weakest sections.", "tools"],
+              ["chart", "green", "Progress & analytics", "Track scores, streaks and skill splits across every exam — on any device.", "progress"],
+            ].map(([icon, tone, title, desc, nav]) => (
               <button className="lp-pro" key={title} onClick={() => onNav(nav)}>
-                <span className="lp-pro-ic" aria-hidden>{icon}</span>
+                <span className="lp-pro-ic"><IcChip name={icon} tone={tone} /></span>
                 <span className="lp-pro-t">{title}</span>
                 <span className="lp-pro-d">{desc}</span>
               </button>
@@ -544,19 +663,19 @@ function Home({ onGuide, onPractice, onNav }) {
           </div>
           <div className="hp-tools-grid reveal">
             {[
-              ["🆚", "Compare the tests", "IELTS vs PTE, IELTS vs TOEFL, GRE vs GMAT — side by side, with which to take.", "/english-test-comparisons/"],
-              ["🔄", "Score converter", "Convert IELTS ↔ TOEFL ↔ PTE ↔ CEFR ↔ Duolingo with a full concordance table.", "/tools/english-test-score-converter/"],
-              ["🌍", "Score needed by country", "The exact English-test & admission score each country and university expects.", "/eligibility/"],
-              ["💸", "Scholarships by country", "Fully-funded and merit awards with eligibility, amounts and deadlines.", "/fully-funded-scholarships/"],
-              ["🛂", "Test scores for PR & visa", "IELTS, PTE & CELPIP scores for Canada, Australia & UK immigration.", "/ielts-for-canada-pr/"],
-              ["💰", "Cost of studying abroad", "Add up tuition, living, visa & flights with the free cost calculator.", "/tools/cost-of-studying-abroad-calculator/"],
-              ["🛂", "Visa interview questions", "Real F-1, UK, Canada & Australia student-visa questions, answered.", "/visa-interview/"],
-              ["📝", "SOP & LOR samples", "Complete statement-of-purpose & recommendation samples to adapt.", "/sop-samples/"],
-              ["📅", "Intakes & deadlines", "When to apply — intake seasons & deadlines for every country.", "/intakes/"],
-              ["🧮", "IELTS band calculator", "Turn your raw Listening & Reading answers into the official 0–9 band.", "/tools/ielts-band-score-calculator/"],
-            ].map(([ic, t, d, href]) => (
-              <a key={href} className="hp-tool-card" href={href} style={{ textDecoration: "none" }}>
-                <span className="hp-tool-ic">{ic}</span>
+              ["compare", "accent", "Compare the tests", "IELTS vs PTE, IELTS vs TOEFL, GRE vs GMAT — side by side, with which to take.", "/english-test-comparisons/"],
+              ["refresh", "sky", "Score converter", "Convert IELTS ↔ TOEFL ↔ PTE ↔ CEFR ↔ Duolingo with a full concordance table.", "/tools/english-test-score-converter/"],
+              ["globe", "accent", "Score needed by country", "The exact English-test & admission score each country and university expects.", "/eligibility/"],
+              ["wallet", "green", "Scholarships by country", "Fully-funded and merit awards with eligibility, amounts and deadlines.", "/fully-funded-scholarships/"],
+              ["stamp", "amber", "Test scores for PR & visa", "IELTS, PTE & CELPIP scores for Canada, Australia & UK immigration.", "/ielts-for-canada-pr/"],
+              ["money", "green", "Cost of studying abroad", "Add up tuition, living, visa & flights with the free cost calculator.", "/tools/cost-of-studying-abroad-calculator/"],
+              ["stamp", "amber", "Visa interview questions", "Real F-1, UK, Canada & Australia student-visa questions, answered.", "/visa-interview/"],
+              ["pen", "pink", "SOP & LOR samples", "Complete statement-of-purpose & recommendation samples to adapt.", "/sop-samples/"],
+              ["calendar", "sky", "Intakes & deadlines", "When to apply — intake seasons & deadlines for every country.", "/intakes/"],
+              ["target", "accent", "IELTS band calculator", "Turn your raw Listening & Reading answers into the official 0–9 band.", "/tools/ielts-band-score-calculator/"],
+            ].map(([ic, tone, t, d, href]) => (
+              <a key={href + t} className="hp-tool-card" href={href} style={{ textDecoration: "none" }}>
+                <span className="hp-tool-ic"><IcChip name={ic} tone={tone} /></span>
                 <span className="hp-tool-t">{t}</span>
                 <span className="hp-tool-d">{d}</span>
               </a>
@@ -580,13 +699,13 @@ function Home({ onGuide, onPractice, onNav }) {
           <div className="eyebrow" style={{ marginBottom: 12 }}>Popular free tools</div>
           <div className="hp-tools-grid">
             {[
-              ["🎯", "Band Checker", "Instant IELTS Writing/Speaking band + Band 9 model", "writing-checker"],
-              ["📖", "Vocabulary by topic", "Band-9 words with audio for every IELTS topic", "vocabulary"],
-              ["📊", "Prep Lessons", "600+ PPT strategy slides for all 7 exams", "learn"],
-              ["✈️", "Move Abroad", "Pre-departure checklist, visa timeline & city guides", "relocate"],
-            ].map(([ic, t, d, id]) => (
+              ["target", "accent", "Band Checker", "Instant IELTS Writing/Speaking band + Band 9 model", "writing-checker"],
+              ["book", "sky", "Vocabulary by topic", "Band-9 words with audio for every IELTS topic", "vocabulary"],
+              ["chart", "green", "Prep Lessons", "600+ PPT strategy slides for all 7 exams", "learn"],
+              ["plane", "pink", "Move Abroad", "Pre-departure checklist, visa timeline & city guides", "relocate"],
+            ].map(([ic, tone, t, d, id]) => (
               <button key={id} className="hp-tool-card" onClick={() => onNav(id)}>
-                <span className="hp-tool-ic">{ic}</span>
+                <span className="hp-tool-ic"><IcChip name={ic} tone={tone} /></span>
                 <span className="hp-tool-t">{t}</span>
                 <span className="hp-tool-d">{d}</span>
               </button>
