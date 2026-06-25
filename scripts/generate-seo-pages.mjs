@@ -1319,7 +1319,7 @@ function readinessPage() {
     ["Proof of funds or education loan arranged", 20, "/tools/education-loan-emi-calculator/", "Plan your loan EMI"],
     ["Statement of Purpose (SOP) drafted", 15, "/sop-samples/", "See free SOP samples"],
     ["Letters of Recommendation (LORs) arranged", 10, "/sop-samples/", "See LOR samples"],
-    ["Transcripts & academic documents ready", 10, "/student-guide/", "Document checklist"],
+    ["Transcripts & academic documents ready", 10, "/visa-interview/", "Documents & visa prep"],
     ["Valid passport (6+ months) & visa plan", 10, "/visa-interview/", "Visa interview prep"],
   ];
   const rows = items.map((it, i) => `<label class="rd-item" style="display:flex;gap:10px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line)"><input type="checkbox" class="rd-cb" data-w="${it[1]}" data-label="${esc(it[0])}" data-link="${it[2]}" data-cta="${esc(it[3])}" style="margin-top:3px;width:18px;height:18px;flex-shrink:0"/><span><strong>${esc(it[0])}</strong> <span style="color:var(--muted);font-size:13px">(${it[1]}%)</span></span></label>`).join("");
