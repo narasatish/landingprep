@@ -1,0 +1,86 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   pro.css — site-wide "top-class" design layer (UI/UX Pro Max).
+   Globalised version of the home redesign so every SPA view (Mock Tests, Study
+   Abroad, Tools, Exam Guides, …) shares one cohesive language: gradient primary
+   buttons, refined cards with hover-lift, tonal SVG icon chips, tracked eyebrows,
+   tighter display type, and accessible focus rings. Uses the theme's CSS vars, so
+   it is fully light/dark aware. 100% reversible: remove the <link> in index.html
+   and delete this file (or `git reset --hard home-redesign-only`).
+   ───────────────────────────────────────────────────────────────────────────── */
+:root { --pro-grad: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+
+/* ── Buttons (site-wide) ──────────────────────────────────────────────────── */
+.btn { border-radius: 13px; font-weight: 650;
+  transition: transform .14s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease; }
+.btn:active { transform: scale(.975); }
+.btn-primary { background: var(--pro-grad); border: none; color: #fff;
+  box-shadow: 0 8px 22px -8px color-mix(in srgb, var(--accent) 70%, transparent); }
+.btn-primary:hover { transform: translateY(-1px);
+  box-shadow: 0 12px 30px -8px color-mix(in srgb, var(--accent) 80%, transparent); }
+.btn-lg { padding: 14px 22px; font-size: 16px; }
+
+/* ── Accessible focus (UI/UX Pro Max rule #1) ─────────────────────────────── */
+a:focus-visible, button:focus-visible, .btn:focus-visible,
+input:focus-visible, select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+
+/* ── Eyebrows ─────────────────────────────────────────────────────────────── */
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; text-transform: uppercase;
+  letter-spacing: .08em; font-size: 12px; font-weight: 750; color: var(--accent); }
+.eyebrow::before { content: ""; width: 18px; height: 2px; border-radius: 2px; background: var(--pro-grad); }
+
+/* ── Headings ─────────────────────────────────────────────────────────────── */
+.h1 { letter-spacing: -.025em; }
+.display { letter-spacing: -.035em; line-height: 1.02; }
+.display .grad { background: var(--pro-grad); -webkit-background-clip: text; background-clip: text;
+  color: transparent; font-family: var(--serif); font-style: italic; }
+
+/* ── Hero (only present on the home view) ─────────────────────────────────── */
+.hero { position: relative; overflow: hidden; isolation: isolate;
+  background:
+    radial-gradient(60% 80% at 12% 8%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 60%),
+    radial-gradient(55% 75% at 92% 18%, color-mix(in srgb, var(--accent-2) 18%, transparent), transparent 62%),
+    radial-gradient(45% 60% at 50% 110%, color-mix(in srgb, var(--leaf) 12%, transparent), transparent 60%); }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background-image: radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--ink) 9%, transparent) 1px, transparent 0);
+  background-size: 26px 26px;
+  -webkit-mask-image: radial-gradient(70% 60% at 50% 30%, #000 0%, transparent 75%);
+          mask-image: radial-gradient(70% 60% at 50% 30%, #000 0%, transparent 75%); opacity: .5; }
+.hero-tagline { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px; border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--accent); font-weight: 700;
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent); }
+.hero-meta .chip { backdrop-filter: saturate(1.4) blur(6px);
+  background: color-mix(in srgb, var(--surface) 70%, transparent); border: 1px solid var(--line); font-weight: 600; }
+.hero-cta { gap: 12px; }
+
+/* ── Icon chips (where SVG icons are used) ────────────────────────────────── */
+.pro-icchip { width: 46px; height: 46px; border-radius: 14px; display: inline-grid; place-items: center; flex: 0 0 auto;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 16%, transparent), color-mix(in srgb, var(--accent-2) 16%, transparent));
+  color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent); transition: transform .18s ease; }
+.pro-tone-green { color: var(--leaf); background: linear-gradient(135deg, color-mix(in srgb, var(--leaf) 16%, transparent), color-mix(in srgb, var(--leaf) 6%, transparent)); border-color: color-mix(in srgb, var(--leaf) 20%, transparent); }
+.pro-tone-sky   { color: #0ea5e9; background: linear-gradient(135deg, rgba(14,165,233,.16), rgba(14,165,233,.06)); border-color: rgba(14,165,233,.22); }
+.pro-tone-amber { color: #f59e0b; background: linear-gradient(135deg, rgba(245,158,11,.18), rgba(245,158,11,.06)); border-color: rgba(245,158,11,.24); }
+.pro-tone-pink  { color: #ec4899; background: linear-gradient(135deg, rgba(236,72,153,.16), rgba(236,72,153,.06)); border-color: rgba(236,72,153,.22); }
+
+/* ── Cards: cohesive hover-lift across every grid/view ────────────────────── */
+.lp-pro, .hp-tool-card, .card, .testimonial-card {
+  border-radius: 18px; transition: transform .18s ease, box-shadow .22s ease, border-color .2s ease; }
+.lp-pro:hover, .hp-tool-card:hover, .card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+  box-shadow: 0 18px 38px -20px color-mix(in srgb, var(--accent) 60%, transparent); }
+.lp-pro:hover .pro-icchip, .hp-tool-card:hover .pro-icchip { transform: scale(1.08) rotate(-3deg); }
+.lp-pro-ic { margin-bottom: 6px; }
+
+/* ── Stats ────────────────────────────────────────────────────────────────── */
+.lp-stat-n { font-weight: 800; letter-spacing: -.02em; }
+
+/* ── Inputs / selects (subtle accent focus) ───────────────────────────────── */
+input:focus, select:focus, textarea:focus {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--line)) !important; }
+
+/* ── Reduced motion ───────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .btn, .lp-pro, .hp-tool-card, .card, .pro-icchip { transition: none !important; }
+  .lp-pro:hover, .hp-tool-card:hover, .card:hover, .btn-primary:hover { transform: none !important; }
+}
