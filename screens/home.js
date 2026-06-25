@@ -21,7 +21,8 @@ const LP_ICONS = {
   check: "M20 6 9 17l-5-5",
   shield: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z M9 12l2 2 4-4",
   cap: "M22 10 12 5 2 10l10 5 10-5z M6 12v5c3 2 9 2 12 0v-5 M22 10v6",
-  rocket: "M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2a2.1 2.1 0 1 0-3-3z M12 15l-3-3a16 16 0 0 1 6-9c4-1 7 2 6 6a16 16 0 0 1-9 6z M9 12H4s.5-3 2-4 5 0 5 0 M12 15v5s3-.5 4-2 0-5 0-5"
+  rocket: "M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2a2.1 2.1 0 1 0-3-3z M12 15l-3-3a16 16 0 0 1 6-9c4-1 7 2 6 6a16 16 0 0 1-9 6z M9 12H4s.5-3 2-4 5 0 5 0 M12 15v5s3-.5 4-2 0-5 0-5",
+  clock: "M12 12m-9 0a9 9 0 1 0 18 0 9 9 0 1 0-18 0 M12 7v5l3 2"
 };
 function Ic({ name, size = 22, style }) {
   const d = LP_ICONS[name] || LP_ICONS.spark;
@@ -44,6 +45,12 @@ function Ic({ name, size = 22, style }) {
 }
 function IcChip({ name, tone = "accent" }) {
   return /* @__PURE__ */ React.createElement("span", { className: "pro-icchip pro-tone-" + tone, "aria-hidden": "true" }, /* @__PURE__ */ React.createElement(Ic, { name, size: 22 }));
+}
+try {
+  window.LP_Ic = Ic;
+  window.LP_IcChip = IcChip;
+  window.LP_ICONS = LP_ICONS;
+} catch (e) {
 }
 const LP_PRO_CSS = `
 .home-pro{ --pro-grad: linear-gradient(135deg, var(--accent), var(--accent-2)); }

@@ -394,14 +394,14 @@
 
   // Tool launcher metadata (icon + name + one-liner). Order = display order.
   const TOOLS_META = [
-    { id: "planner",   icon: "📅", name: "AI Study Plan",     desc: "Personalised plan to your test date" },
-    { id: "convert",   icon: "🔁", name: "Score Converter",   desc: "IELTS · TOEFL · PTE · CELPIP · DET" },
-    { id: "clb",       icon: "🍁", name: "IELTS → CLB",        desc: "Canada PR / Express Entry levels" },
-    { id: "writing",   icon: "📊", name: "Word & Readability", desc: "Count, timing & readability" },
-    { id: "reading",   icon: "⚡", name: "Reading Speed",      desc: "Words-per-minute test" },
-    { id: "shadow",    icon: "🎤", name: "Listen & Repeat",    desc: "Pronunciation shadowing" },
-    { id: "countdown", icon: "⏳", name: "Exam Countdown",     desc: "Days left + study pace" },
-    { id: "timer",     icon: "🍅", name: "Focus Timer",        desc: "Pomodoro study sessions" },
+    { id: "planner",   icon: "calendar", tone: "accent", name: "AI Study Plan",     desc: "Personalised plan to your test date" },
+    { id: "convert",   icon: "refresh",  tone: "sky",    name: "Score Converter",   desc: "IELTS · TOEFL · PTE · CELPIP · DET" },
+    { id: "clb",       icon: "globe",    tone: "green",  name: "IELTS → CLB",        desc: "Canada PR / Express Entry levels" },
+    { id: "writing",   icon: "chart",    tone: "sky",    name: "Word & Readability", desc: "Count, timing & readability" },
+    { id: "reading",   icon: "bolt",     tone: "amber",  name: "Reading Speed",      desc: "Words-per-minute test" },
+    { id: "shadow",    icon: "mic",      tone: "pink",   name: "Listen & Repeat",    desc: "Pronunciation shadowing" },
+    { id: "countdown", icon: "clock",    tone: "amber",  name: "Exam Countdown",     desc: "Days left + study pace" },
+    { id: "timer",     icon: "target",   tone: "pink",   name: "Focus Timer",        desc: "Pomodoro study sessions" },
   ];
 
   function Tools({ onNav, initialTab }) {
@@ -441,7 +441,7 @@
                 className={"tool-launch-card" + (tab === t.id ? " active" : "")}
                 style={{ animationDelay: (i * 45) + "ms" }}
                 onClick={() => setTab(t.id)}>
-                <span className="tlc-icon">{t.icon}</span>
+                <span className="tlc-icon">{window.LP_IcChip ? <window.LP_IcChip name={t.icon} tone={t.tone} /> : null}</span>
                 <span className="tlc-name">{t.name}</span>
                 <span className="tlc-desc">{t.desc}</span>
               </button>
