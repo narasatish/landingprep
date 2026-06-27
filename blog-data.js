@@ -32910,6 +32910,48 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
           "body": "Proof of funds is one of the most common student visa rejection reasons. Plan your finances 6\u201312 months before applying: accumulate savings in a dedicated account, arrange sponsorship affidavits from family, or secure education loans early. Ensure your bank account shows consistent deposits, not sudden large transfers (which trigger source of funds questions). Keep records of all financial transactions for 12 months prior to visa submission. For personalized guidance on balances, consult your target country's official visa website or a certified education loan provider. Free study abroad planning resources and visa guidance are available on LandingPrep to help you organize your application."
         }
       ]
+    },
+    {
+      "id": "scholarships-for-women-in-stem-abroad-2026",
+      "tag": "Scholarships",
+      "date": "2026",
+      "title": "Top Scholarships for Women in STEM Studying Abroad 2026",
+      "excerpt": "Women in STEM can access USD 5,000\u201340,000+ annual scholarships including Schlumberger, AAUW, Google Scholarships, and country-specific awards. Learn how to apply.",
+      "kw": "scholarships for women STEM, women in STEM abroad, full scholarships women engineering, AAUW Schlumberger scholarships",
+      "sections": [
+        {
+          "h": "Top Global Scholarships for Women in STEM",
+          "body": "Schlumberger Foundation's Faculty for the Future (up to USD 35,000/year for masters in STEM, focuses on developing-world women), AAUW International Fellowships (USD 20,000\u201330,000 for master's in STEM for non-US citizens), Google Scholarship for Women in Engineering/Computer Science (USD 10,000\u201320,000, open to all countries), Anita Borg Institute Scholarship (USD 5,000\u201315,000 for women undergraduates/postgrads in computing), and Microsoft TEALS Scholarship (USD 10,000\u201325,000 for women in data science/cloud engineering) are globally recognized. Country-specific examples: UK (British Council\u2013STEM Scholarships, fully funded), Canada (Canada Foundation for Innovation Women in STEM), Australia (Women in STEM Grants, AUD 10,000\u201320,000). All require excellent grades (GPA 3.5+), strong Statement of Purpose, and letters of reference. Most deadline in February\u2013April for September intake."
+        },
+        {
+          "h": "Schlumberger Foundation Faculty for the Future",
+          "body": "Award: USD 35,000 per year (covers tuition + living stipend). Eligibility: women from developing countries pursuing master's in STEM (engineering, geosciences, math, physics, technology). No citizenship requirement; applicants must intend to return to home country or work for global development. 100+ awards annually, highly competitive. Application: online portal, requires transcripts, TOEFL/IELTS, 3 references, personal essay. Deadline: typically March 31. Awardees also get mentorship from Schlumberger mentors. Strong candidates: Indian women in petroleum engineering, civil engineering, environmental science with 3.5+ GPA and clear development goals."
+        },
+        {
+          "h": "AAUW International Fellowships: Master's & Doctorate",
+          "body": "Award: USD 20,000 (M.A.); USD 25,000\u201330,000 (Ph.D.); varies by country. Eligibility: women from any country (except USA, Canada for this specific fellowship) pursuing graduate STEM. US universities only. 50+ awards annually. Application: online system, requires transcripts (converted to US GPA), TOEFL/IELTS, 3 references, Statement of Purpose, CV. Deadline: December 1 for the following academic year. Candidates are evaluated on academic merit + likelihood of significant contribution to women in STEM globally. STEM focus includes engineering, physical sciences, math, computer science."
+        },
+        {
+          "h": "Google Scholarship for Women in Engineering/Tech",
+          "body": "Award: USD 10,000\u201320,000 per year (renewable for up to 4 years of undergrad, 2 years postgrad). Eligibility: women pursuing undergraduate or graduate degrees in engineering, computer science, or related tech fields globally. 500+ scholarships annually. Application: online via Google's official scholarship portal, requires GPA 3.5+, TOEFL/IELTS (for international), 2 references, essay on why you are pursuing tech, and diversity statement. Deadline: varies by region but typically April\u2013June. Strong candidates: women in CS, EE, CE with demonstrated coding projects, hackathon wins, or internship experience. Google has regional preferences; check localizations for India, Southeast Asia, Europe."
+        },
+        {
+          "h": "Region-Specific & University-Based Awards",
+          "body": "UK: British Council STEM Scholarships (fully funded master's for developing-world applicants, USD 40,000+/year), University of Cambridge Cambridge Trust (women scientists, varies by college). Canada: Canada Foundation for Innovation Women in STEM (CAD 10,000+), University of Toronto International Excellence Scholarship (women in engineering). Australia: Women in STEM Grants (AUD 10,000\u201320,000, all universities), Australian National University Diversity Scholarship (all degrees, women prioritized). USA: MIT Graduate Fellowship for Women (fully funded PhD in STEM), Stanford Knight-Hennessy Scholars (needs-based, women encouraged). Always check university-specific awards; many are easier to win than international schemes because they have fewer applicants."
+        },
+        {
+          "h": "How to Apply: Step-by-Step Timeline",
+          "body": "August\u2013September: Identify 5\u201310 scholarships matching your degree/country. September\u2013October: Prepare documents (transcripts, TOEFL, GRE/GMAT if required, CV, Statement of Purpose\u2014draft 3\u20134 versions tailored to each scholarship). November\u2013January: Get strong reference letters from professors/mentors (ask 6+ weeks in advance). February\u2013April: Submit applications (track each deadline in a spreadsheet to avoid missing deadlines). May\u2013July: Attend interviews if shortlisted (prepare story of your STEM journey, why you chose this field, post-study plans). August\u2013September: Enroll with scholarship confirmation. Most scholarships have 8\u201312 month decision cycles; submit early (2\u20133 weeks before deadline) to stand out."
+        },
+        {
+          "h": "What Makes a Winning STEM Scholarship Application",
+          "body": "1) Strong academics: 3.5+ GPA, consistent improvement over time. 2) Clear narrative: why STEM, which sub-field, impact you intend to create (e.g., 'I want to develop solar tech for rural electrification'). 3) Demonstrated commitment: research projects, hackathons, internships, publications, volunteer work in STEM. 4) Letters of reference: from professors/mentors who know your technical abilities, not just character. 5) Language proficiency: TOEFL 100+/IELTS 7.0+ shows you can succeed in English-speaking universities. 6) Diversity angle: how your background (woman, first-generation, developing country, minority) adds diversity to the program. Avoid generic essays; funders reject 'I love science'\u2014they want 'I designed X, learned Y, now I want to solve Z.'"
+        },
+        {
+          "h": "Maximize Your Chances: Scholarship Strategy",
+          "body": "Apply to at least 10 scholarships simultaneously (August\u2013April). Mix reach (Schlumberger, AAUW), target (Google, university-based), and safety (smaller regional awards) scholarships. Some women win 2\u20133 scholarships and must decline\u2014that is normal. If first-round rejections come, analyze feedback, improve your Statement, retarget, and reapply next year. Many scholarships allow re-applications; persistence pays. Network with scholarship recipients; their insights on winning applications are invaluable. Free STEM scholarship databases, essay templates, and interview prep guides are available on LandingPrep to help you craft competitive applications."
+        }
+      ]
     }
   ];
   window.LP_BLOG_EXTRA = EXTRA;
