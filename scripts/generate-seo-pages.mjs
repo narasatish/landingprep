@@ -1809,6 +1809,22 @@ function aboutPage() {
   <p>Questions, feedback or partnerships? Email <a href="mailto:support@landingprep.com">support@landingprep.com</a> and our team will help. We cover exam prep, college selection, scholarships, SOPs, visas and study-abroad planning.</p>
   <p class="note">LandingPrep is an independent education platform and is not affiliated with any official test provider or university. Always verify fees, requirements and visa rules with the official source.</p>
 </div>
+<div class="card">
+  <h2>Editorial standards &amp; how we verify content</h2>
+  <ul>
+    <li><strong>Fact-checking:</strong> Exam formats, scores, fees, deadlines and visa rules are verified against official sources — test makers (IELTS, ETS, Pearson), university websites and government immigration portals — with sources linked inline.</li>
+    <li><strong>Currency:</strong> Guides are reviewed regularly and re-dated whenever the underlying exam format, fees or visa rules change.</li>
+    <li><strong>Independence:</strong> We are not affiliated with any test provider or university, and we never publish pay-to-rank placements.</li>
+    <li><strong>No invention:</strong> We never fabricate statistics, reviews, author credentials or success stories. Where a figure is indicative (e.g. visa-success rates), we say so explicitly.</li>
+  </ul>
+  <!-- TODO(owner): to strengthen E-E-A-T, add named author(s)/reviewer(s) with real qualifications here
+       (e.g. "Reviewed by <Name>, <qualification>") and switch the article 'author' schema from
+       Organization to a Person entity in the byline blocks above. Do NOT invent credentials. -->
+</div>
+<div class="card">
+  <h2>Disclaimer</h2>
+  <p>LandingPrep provides free educational information and practice tools. This is general guidance, not professional immigration, legal, financial or admissions advice. Exam formats, university requirements, fees and visa rules change — always confirm the latest details with the official test maker, university or government authority before you act. Your use of the platform is at your own risk.</p>
+</div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🎯 Free mock tests`, href: `/#/exam-prep` },
