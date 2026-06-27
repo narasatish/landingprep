@@ -12,7 +12,8 @@ const PRODUCTIVE = new Set(["essay", "write_essay", "writing_task", "email", "su
   "describing_a_scene", "making_predictions", "comparing_and_persuading", "dealing_with_situation",
   "expressing_opinions", "unusual_situation", "describe_image", "write_about_photo", "speak_about_photo",
   "read_then_speak", "integrated_writing", "academic_discussion", "retell_lecture",
-  "read_aloud", "repeat_sentence", "answer_short_question"]); // spoken-repetition: model answer, no explanation needed
+  "read_aloud", "repeat_sentence", "answer_short_question",
+  "role_play", "letter"]); // oet speaking/writing: free-form productive, no single correct answer
 const has = (it, keys) => keys.some(k => { const v = it[k]; return v !== undefined && v !== null && v !== "" && !(Array.isArray(v) && v.length === 0); });
 const itemsOf = (j) => j.questions || j.items || j.tasks || (j.parts || []).flatMap(p => p.questions || p.items || []) || [];
 
