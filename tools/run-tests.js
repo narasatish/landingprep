@@ -108,7 +108,7 @@ check("all ?v= cache tags share one version", uniq.length === 1, "versions: " + 
 // ── 5. Data & wiring integrity ───────────────────────────────────────────────
 group("Data & wiring");
 const data = read("data.jsx");
-const examIds = [...data.matchAll(/id: *"(ielts|toefl|pte|celpip|duolingo|gre|gmat)"/g)].map(m => m[1]);
+const examIds = [...data.matchAll(/"id": *"(ielts|toefl|pte|celpip|duolingo|gre|gmat)"/g)].map(m => m[1]);
 check("7 exams defined", new Set(examIds).size === 7, examIds.join(","));
 const articleIds = [...read("seo-pages.jsx").matchAll(/id: "([a-z0-9-]+)"/g)].map(m => m[1]);
 check("blog article ids unique", new Set(articleIds).size === articleIds.length, articleIds.length + " ids");
@@ -157,7 +157,7 @@ check("every screen jsx is wired (eager tag or lazy-loaded)", (() => {
 group("Colleges & Tools panels");
 const panelGlobals = ["LP_CollegePredictorPanel", "LP_DestinationsPanel", "LP_RankingsPanel", "LP_ScholarshipPanel", "LP_LoanPanel", "LP_SOPPanel", "LP_ApplicationsPanel", "LP_CalculatorsPanel", "LP_StudyPlannerPanel", "LP_ErrorLogPanel", "LP_Colleges", "LP_Tools"];
 for (const g of panelGlobals) check(`${g} defined`, new RegExp("window\\." + g + "\\s*=").test(allSrc), "missing");
-check("colleges page has 8 tabs", (read("screens/colleges.jsx").match(/\["[a-z]+", "[^"]+"\]/g) || []).length >= 8);
+check("colleges page has 8 tabs", (read("screens/colleges.jsx").match(/\["[a-z]+",\s*"[a-z-]+",\s*"[^"]+"\]/g) || []).length >= 8);
 
 // ── 8. Study-abroad data integrity ───────────────────────────────────────────
 group("Study-abroad data");

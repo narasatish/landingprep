@@ -38,8 +38,8 @@ const SPECS = {
   },
   pte: {
     "speaking-writing": { min: 28, max: 36, duration: { min: 3600, max: 5400 } },
-    reading:            { min: 15, max: 25, duration: { min: 2700, max: 3600 } },
-    listening:          { min: 17, max: 25, duration: { min: 2400, max: 3600 } },
+    reading:            { min: 15, max: 25, duration: { min: 1740, max: 1800 } }, // latest PTE Academic Reading: 29-30 min
+    listening:          { min: 17, max: 25, duration: { min: 1800, max: 2580 } }, // latest PTE Academic Listening: 30-43 min
   },
   celpip: {
     listening: { min: 38, max: 38, duration: { min: 2820, max: 3300 }, parts: 6 },
