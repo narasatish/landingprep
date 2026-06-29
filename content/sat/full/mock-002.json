@@ -1,0 +1,20 @@
+{
+  "id": "sat-full-002",
+  "exam": "sat",
+  "type": "full",
+  "title": "undefined Full Mock Test 2",
+  "durationSeconds": 8040,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "reading-writing",
+      "testId": "sat-reading-writing-002",
+      "file": "sat/reading-writing/test-002.json"
+    },
+    {
+      "section": "math",
+      "testId": "sat-math-002",
+      "file": "sat/math/test-002.json"
+    }
+  ]
+}

@@ -14683,7 +14683,30 @@
           }
         ]
       },
-      "fullMocks": []
+      "fullMocks": [
+        {
+          "id": "oet-full-001",
+          "title": "undefined Full Mock Test 1",
+          "exam": "oet",
+          "type": "full",
+          "durationSeconds": 10200,
+          "sectionCount": 4,
+          "file": "oet/full/mock-001.json",
+          "version": 3,
+          "variant": "healthcare"
+        },
+        {
+          "id": "oet-full-002",
+          "title": "undefined Full Mock Test 2",
+          "exam": "oet",
+          "type": "full",
+          "durationSeconds": 10200,
+          "sectionCount": 4,
+          "file": "oet/full/mock-002.json",
+          "version": 3,
+          "variant": "healthcare"
+        }
+      ]
     },
     "sat": {
       "label": "SAT",
@@ -14765,7 +14788,41 @@
           }
         ]
       },
-      "fullMocks": []
+      "fullMocks": [
+        {
+          "id": "sat-full-001",
+          "title": "undefined Full Mock Test 1",
+          "exam": "sat",
+          "type": "full",
+          "durationSeconds": 8040,
+          "sectionCount": 2,
+          "file": "sat/full/mock-001.json",
+          "version": 3,
+          "variant": "digital"
+        },
+        {
+          "id": "sat-full-002",
+          "title": "undefined Full Mock Test 2",
+          "exam": "sat",
+          "type": "full",
+          "durationSeconds": 8040,
+          "sectionCount": 2,
+          "file": "sat/full/mock-002.json",
+          "version": 3,
+          "variant": "digital"
+        },
+        {
+          "id": "sat-full-003",
+          "title": "undefined Full Mock Test 3",
+          "exam": "sat",
+          "type": "full",
+          "durationSeconds": 8040,
+          "sectionCount": 2,
+          "file": "sat/full/mock-003.json",
+          "version": 3,
+          "variant": "digital"
+        }
+      ]
     },
     "act": {
       "label": "ACT",
@@ -14923,7 +14980,41 @@
           }
         ]
       },
-      "fullMocks": []
+      "fullMocks": [
+        {
+          "id": "act-full-001",
+          "title": "undefined Full Mock Test 1",
+          "exam": "act",
+          "type": "full",
+          "durationSeconds": 10500,
+          "sectionCount": 4,
+          "file": "act/full/mock-001.json",
+          "version": 3,
+          "variant": "standard"
+        },
+        {
+          "id": "act-full-002",
+          "title": "undefined Full Mock Test 2",
+          "exam": "act",
+          "type": "full",
+          "durationSeconds": 10500,
+          "sectionCount": 4,
+          "file": "act/full/mock-002.json",
+          "version": 3,
+          "variant": "standard"
+        },
+        {
+          "id": "act-full-003",
+          "title": "undefined Full Mock Test 3",
+          "exam": "act",
+          "type": "full",
+          "durationSeconds": 10500,
+          "sectionCount": 4,
+          "file": "act/full/mock-003.json",
+          "version": 3,
+          "variant": "standard"
+        }
+      ]
     }
   }
 }

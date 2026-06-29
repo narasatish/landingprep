@@ -1,0 +1,30 @@
+{
+  "id": "act-full-002",
+  "exam": "act",
+  "type": "full",
+  "title": "undefined Full Mock Test 2",
+  "durationSeconds": 10500,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "english",
+      "testId": "act-english-002",
+      "file": "act/english/test-002.json"
+    },
+    {
+      "section": "math",
+      "testId": "act-math-002",
+      "file": "act/math/test-002.json"
+    },
+    {
+      "section": "reading",
+      "testId": "act-reading-002",
+      "file": "act/reading/test-002.json"
+    },
+    {
+      "section": "science",
+      "testId": "act-science-002",
+      "file": "act/science/test-002.json"
+    }
+  ]
+}

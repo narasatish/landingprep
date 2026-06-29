@@ -59,7 +59,9 @@ function validateTest(exam, sec, entry) {
   if (texts.length >= 3 && dups >= Math.ceil(texts.length / 2)) fail(exam, sec, `${file}: ${dups} duplicate prompts (looks templated/repeated)`);
 
   // Section-type-specific checks
-  const isWriting = /writing|essay|task/i.test(sec) || /writing/i.test(t.type || "");
+  // NOTE: SAT "reading-writing" is a multiple-choice module (no essays), so it must NOT be
+  // treated as an essay/writing section that requires model answers.
+  const isWriting = (/writing|essay|task/i.test(sec) || /writing/i.test(t.type || "")) && !/reading-writing|reading_writing/i.test(sec);
   const isSpeaking = /speak/i.test(sec) || /speak/i.test(t.type || "");
   const isListening = /listen/i.test(sec) || /listen/i.test(t.type || "");
   const isObjective = /reading|verbal|quant|data|listen/i.test(sec);

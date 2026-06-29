@@ -32,8 +32,8 @@ for (const exam of fs.readdirSync(BASE)) {
       for (const it of itemsOf(j)) {
         totalQ++;
         const t = it.questionType || it.type || it.taskType || "?";
-        const productive = PRODUCTIVE.has(t);
         const hasAns = has(it, ANS), hasModel = has(it, MODEL);
+        const productive = PRODUCTIVE.has(t) || hasModel; // an item carrying a model answer IS a productive task
         if (!hasAns && !hasModel) { noAns++; g.ansN++; g.ansTests.add(f); }
         if (!productive && !it.explanation) { noExpl++; g.explN++; g.explTests.add(f); }
       }

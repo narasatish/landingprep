@@ -1,0 +1,30 @@
+{
+  "id": "oet-full-002",
+  "exam": "oet",
+  "type": "full",
+  "title": "undefined Full Mock Test 2",
+  "durationSeconds": 10200,
+  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "sections": [
+    {
+      "section": "listening",
+      "testId": "oet-listening-002",
+      "file": "oet/listening/test-002.json"
+    },
+    {
+      "section": "reading",
+      "testId": "oet-reading-002",
+      "file": "oet/reading/test-002.json"
+    },
+    {
+      "section": "writing",
+      "testId": "oet-writing-002",
+      "file": "oet/writing/test-002.json"
+    },
+    {
+      "section": "speaking",
+      "testId": "oet-speaking-002",
+      "file": "oet/speaking/test-002.json"
+    }
+  ]
+}
