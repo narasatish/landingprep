@@ -8,10 +8,11 @@
     "dev": "node --watch server.js",
     "seo": "node scripts/generate-seo-pages.mjs",
     "precompile": "node scripts/precompile-jsx.mjs",
-    "build": "node scripts/make-app-assets.cjs && node scripts/precompile-jsx.mjs && node scripts/bump-version.mjs && node scripts/generate-seo-pages.mjs && node scripts/audit-seo.mjs",
+    "build": "node tools/check-hooks.js && node scripts/make-app-assets.cjs && node scripts/precompile-jsx.mjs && node scripts/bump-version.mjs && node scripts/generate-seo-pages.mjs && node scripts/audit-seo.mjs",
     "bump": "node scripts/bump-version.mjs",
     "assets": "node scripts/make-app-assets.cjs",
-    "test": "node tools/run-tests.js && node tools/exam-validation.mjs && node scripts/audit-seo.mjs && node tools/audit-answers.mjs && node tools/ig-pipeline.test.js && node tools/ig-full.test.js",
+    "check:hooks": "node tools/check-hooks.js",
+    "test": "node tools/check-hooks.js && node tools/run-tests.js && node tools/exam-validation.mjs && node scripts/audit-seo.mjs && node tools/audit-answers.mjs && node tools/ig-pipeline.test.js && node tools/ig-full.test.js",
     "test:ig": "node tools/ig-pipeline.test.js",
     "check:ig": "node tools/ig-livecheck.mjs",
     "test:exams": "node tools/exam-validation.mjs",
@@ -30,6 +31,7 @@
     "web-push": "^3.6.7"
   },
   "devDependencies": {
+    "@babel/parser": "^7.25.0",
     "esbuild": "^0.28.0"
   }
 }
