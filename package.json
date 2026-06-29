@@ -12,7 +12,8 @@
     "bump": "node scripts/bump-version.mjs",
     "assets": "node scripts/make-app-assets.cjs",
     "check:hooks": "node tools/check-hooks.js",
-    "test": "node tools/check-hooks.js && node tools/run-tests.js && node tools/exam-validation.mjs && node scripts/audit-seo.mjs && node tools/audit-answers.mjs && node tools/ig-pipeline.test.js && node tools/ig-full.test.js",
+    "test:smoke": "node tools/smoke-test.js",
+    "test": "node tools/check-hooks.js && node tools/run-tests.js && node tools/exam-validation.mjs && node scripts/audit-seo.mjs && node tools/audit-answers.mjs && node tools/ig-pipeline.test.js && node tools/ig-full.test.js && node tools/smoke-test.js",
     "test:ig": "node tools/ig-pipeline.test.js",
     "check:ig": "node tools/ig-livecheck.mjs",
     "test:exams": "node tools/exam-validation.mjs",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@babel/parser": "^7.25.0",
-    "esbuild": "^0.28.0"
+    "esbuild": "^0.28.0",
+    "playwright": "^1.49.0"
   }
 }
