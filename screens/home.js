@@ -318,7 +318,12 @@ function QuickScoreCheck({ onNav }) {
       style: { ...fieldStyle, width: 140 },
       "aria-label": "Your score"
     }
-  ), !row && /* @__PURE__ */ React.createElement("span", { style: { color: "var(--ink-3)", fontSize: 14 } }, "\u2190 enter your ", meta.name, " score")), row && /* @__PURE__ */ React.createElement("div", { style: { marginTop: 16, padding: "14px 16px", borderRadius: 12, background: "var(--surface-2)", border: "1px solid var(--line)" } }, /* @__PURE__ */ React.createElement("strong", { style: { fontSize: 16, color: "var(--accent)" } }, row.label), /* @__PURE__ */ React.createElement("p", { style: { margin: "6px 0 12px", color: "var(--ink-2)", fontSize: 15, lineHeight: 1.6 } }, row.elig), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNav("tools") }, "See full eligibility + universities \u2192")))));
+  ), !row && /* @__PURE__ */ React.createElement("span", { style: { color: "var(--ink-3)", fontSize: 14 } }, "\u2190 enter your ", meta.name, " score")), row && /* @__PURE__ */ React.createElement("div", { style: { marginTop: 16, padding: "14px 16px", borderRadius: 12, background: "var(--surface-2)", border: "1px solid var(--line)" } }, /* @__PURE__ */ React.createElement("strong", { style: { fontSize: 16, color: "var(--accent)" } }, row.label), /* @__PURE__ */ React.createElement("p", { style: { margin: "6px 0 12px", color: "var(--ink-2)", fontSize: 15, lineHeight: 1.6 } }, row.elig), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 10, flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNav("tools") }, "See full eligibility + universities \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => {
+    try {
+      window.LP_ShareCard && window.LP_ShareCard.make({ title: "My English level: " + meta.name + " " + score, big: lvl, label: row.label, sub: "Checked free on LandingPrep \u2014 see what you qualify for" });
+    } catch (e) {
+    }
+  } }, "\u{1F4E4} Share"))))));
 }
 function LatestGuides() {
   const [posts, setPosts] = React.useState([]);

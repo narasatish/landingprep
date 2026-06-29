@@ -326,7 +326,10 @@ function QuickScoreCheck({ onNav }) {
             <div style={{ marginTop: 16, padding: "14px 16px", borderRadius: 12, background: "var(--surface-2)", border: "1px solid var(--line)" }}>
               <strong style={{ fontSize: 16, color: "var(--accent)" }}>{row.label}</strong>
               <p style={{ margin: "6px 0 12px", color: "var(--ink-2)", fontSize: 15, lineHeight: 1.6 }}>{row.elig}</p>
-              <button className="btn btn-primary" onClick={() => onNav("tools")}>See full eligibility + universities →</button>
+              <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+                <button className="btn btn-primary" onClick={() => onNav("tools")}>See full eligibility + universities →</button>
+                <button className="btn" onClick={() => { try { window.LP_ShareCard && window.LP_ShareCard.make({ title: "My English level: " + meta.name + " " + score, big: lvl, label: row.label, sub: "Checked free on LandingPrep — see what you qualify for" }); } catch (e) {} }}>📤 Share</button>
+              </div>
             </div>
           )}
         </div>
