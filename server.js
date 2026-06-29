@@ -1379,6 +1379,24 @@ app.post("/api/auth/forgot", async (req, res) => {
   res.json({ ok: true });
 });
 
+// Admin SMTP diagnostic: verify the mailbox connection + send a test email, returning
+// the REAL error so misconfiguration is obvious. Gated by ADMIN_SECRET.
+//   GET /api/admin/test-mail?key=<ADMIN_SECRET>&to=you@example.com
+app.get("/api/admin/test-mail", async (req, res) => {
+  if (!adminOK(req)) return res.status(403).json({ error: "Forbidden — set ADMIN_SECRET in Render env and pass ?key=<it>." });
+  const info = { host: SMTP.host, port: SMTP.port, user: SMTP.user, from: SMTP.from, smtpPassSet: !!SMTP.pass };
+  if (!SMTP.pass) return res.json({ ok: false, ...info, error: "SMTP_PASS is not set in Render env. Set it to the mailbox password for " + SMTP.user + " (create that mailbox in Hostinger first if needed)." });
+  const to = String(req.query.to || SMTP.user);
+  try {
+    const t = mailer();
+    await t.verify(); // tests TCP connection + SMTP auth
+    await sendMail(to, "LandingPrep SMTP test ✅", "<p>Your SMTP works — this confirms password-reset codes and welcome emails will deliver. Sent from " + SMTP.from + ".</p>");
+    res.json({ ok: true, ...info, sentTo: to, message: "Connected, authenticated and sent. Check the inbox (and spam)." });
+  } catch (e) {
+    res.json({ ok: false, ...info, error: String((e && e.message) || e), hint: "Common causes: wrong SMTP_PASS, the mailbox doesn't exist in Hostinger, or port/SSL mismatch (Hostinger = 465 SSL)." });
+  }
+});
+
 app.get("/api/auth/me", (req, res) => {
   const email = authedEmail(req);
   if (!email || !STORE.users[email]) return res.status(401).json({ error: "Not authenticated." });
