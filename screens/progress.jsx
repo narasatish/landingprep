@@ -442,6 +442,14 @@
     const [history, setHistory] = useState(loadHistory);
     useEffect(() => { setHistory(loadHistory()); }, []);
 
+    // ⚠️ ALL React hooks must run on EVERY render — keep them ABOVE any conditional
+    // return. Previously this useMemo sat after the `if (!user)` gate, so a signed-out
+    // render ran fewer hooks than a signed-in one; when auth state flipped React threw
+    // error #300 ("rendered fewer hooks than expected") and crashed the page. Moved up.
+    const filtered = useMemo(() =>
+      filter === "all" ? history : history.filter(e => e.exam === filter),
+    [history, filter]);
+
     // Login gate
     if (!user) {
       return (
@@ -464,10 +472,6 @@
         </>
       );
     }
-
-    const filtered = useMemo(() =>
-      filter === "all" ? history : history.filter(e => e.exam === filter),
-    [history, filter]);
 
     const totalTests = history.length;
     const allScores = history.map(scoreNumOf).filter(n => typeof n === "number");

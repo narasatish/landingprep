@@ -108,7 +108,7 @@ app.use("/api/auth/", rateLimiter({ windowMs: 15 * 60 * 1000, max: 20, message: 
 // Stricter cap on abuse-prone PUBLIC writes (reviews/community/newsletter/push/clienterror)
 // — 20 POSTs/min/IP on top of the global 120/min, so a bot can't flood the homepage.
 const _writeCap = rateLimiter({ windowMs: 60 * 1000, max: 20, message: "You're doing that too quickly — please wait a minute." });
-app.use(["/api/reviews", "/api/community", "/api/newsletter", "/api/push/subscribe", "/api/clienterror"],
+app.use(["/api/reviews", "/api/community", "/api/newsletter", "/api/push/subscribe", "/api/clienterror", "/api/auth/forgot", "/api/auth/reset"],
   (req, res, next) => (req.method === "POST" ? _writeCap(req, res, next) : next()));
 // Constant-time admin-key check (no timing oracle; denies when ADMIN_SECRET unset).
 function adminOK(req) {
@@ -1316,27 +1316,65 @@ app.post("/api/auth/signin", (req, res) => {
   res.json({ ok: true, user: { name: u.name, email: u.email }, token: signToken(key) });
 });
 
+// Branded, authentic password-reset code email. The code is the only secret; the rest
+// is reassurance + anti-phishing guidance.
+function resetCodeEmail(firstName, code) {
+  const spaced = String(code).split("").join("&nbsp;&nbsp;");
+  return `<div style="font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;max-width:520px;margin:0 auto;color:#1f2937">
+  <div style="text-align:center;padding:8px 0 4px"><span style="font-size:22px;font-weight:800;background:linear-gradient(135deg,#4F46E5,#9333EA);-webkit-background-clip:text;background-clip:text;color:transparent">LandingPrep</span></div>
+  <div style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:28px 26px;margin-top:10px">
+    <h1 style="font-size:20px;margin:0 0 6px;color:#111827">Reset your password</h1>
+    <p style="font-size:15px;line-height:1.6;margin:0 0 18px;color:#4b5563">Hi ${firstName}, we received a request to reset your LandingPrep password. Enter this 6-digit code on the reset screen to continue:</p>
+    <div style="text-align:center;margin:18px 0">
+      <div style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;border-radius:12px;padding:16px 28px;font-size:30px;font-weight:800;letter-spacing:4px;color:#4338ca;font-family:'Courier New',monospace">${spaced}</div>
+    </div>
+    <p style="font-size:14px;line-height:1.6;margin:0 0 6px;color:#6b7280">This code expires in <strong>15 minutes</strong> and can be used once.</p>
+    <p style="font-size:14px;line-height:1.6;margin:0;color:#6b7280"><strong>Didn't request this?</strong> You can safely ignore this email — your password won't change unless someone enters this code. LandingPrep will never ask for your code or password by email, phone or chat.</p>
+  </div>
+  <p style="font-size:12px;color:#9ca3af;text-align:center;margin:14px 0 0">Sent by LandingPrep · 100% free study-abroad prep · landingprep.com</p>
+</div>`;
+}
+
+// Step 2 of reset: verify the emailed code, then set the new password. The code is
+// single-use, expires in 15 min, and locks after 5 wrong attempts (anti brute-force).
 app.post("/api/auth/reset", (req, res) => {
-  const { email, password } = req.body || {};
+  const { email, code, password } = req.body || {};
   const key = String(email || "").toLowerCase();
-  if (!STORE.users[key]) return res.status(404).json({ error: "No account found with this email." });
+  const u = STORE.users[key];
+  if (!u) return res.status(404).json({ error: "No account found with this email." });
   if (String(password || "").length < 6) return res.status(400).json({ error: "New password must be at least 6 characters." });
-  STORE.users[key].hash = hashPw(password);
+  STORE.resets = STORE.resets || {};
+  const rec = STORE.resets[key];
+  if (!rec) return res.status(400).json({ error: "Request a reset code first." });
+  if (Date.now() > rec.expires) { delete STORE.resets[key]; return res.status(400).json({ error: "That code has expired. Request a new one." }); }
+  if (rec.attempts >= 5) { delete STORE.resets[key]; return res.status(429).json({ error: "Too many incorrect attempts. Request a new code." }); }
+  const provided = crypto.createHmac("sha256", AUTH_SECRET).update("reset|" + key + "|" + String(code || "").trim()).digest("hex");
+  const ok = Buffer.from(provided).length === Buffer.from(rec.codeHash).length &&
+             crypto.timingSafeEqual(Buffer.from(provided), Buffer.from(rec.codeHash));
+  if (!ok) { rec.attempts++; return res.status(400).json({ error: "Incorrect or expired code. Check the email and try again." }); }
+  // Valid → set new password, invalidate the code immediately.
+  u.hash = hashPw(password);
+  delete STORE.resets[key];
   persistUser(key);
-  // Security notification email (fire-and-forget).
-  sendMail(STORE.users[key].email, "Your LandingPrep password was changed",
-    emailTemplate("password-reset", { NAME: (STORE.users[key].name || "there").split(" ")[0], RESET_LINK: (process.env.FRONTEND_ORIGIN || "https://landingprep.com") + "/#/login" }));
+  sendMail(u.email, "Your LandingPrep password was changed",
+    emailTemplate("password-reset", { NAME: (u.name || "there").split(" ")[0], RESET_LINK: (process.env.FRONTEND_ORIGIN || "https://landingprep.com") + "/#/login" }));
   res.json({ ok: true });
 });
 
-// Optional: email a password-reset link (for a future "forgot password" email flow).
-// Always responds ok (never reveals whether an email exists).
-app.post("/api/auth/forgot", (req, res) => {
+// Step 1 of reset: email a single-use 6-digit code. Always responds ok — never reveals
+// whether an account exists (anti-enumeration). Rate-limited (see _writeCap above).
+app.post("/api/auth/forgot", async (req, res) => {
   const key = String((req.body && req.body.email) || "").toLowerCase();
   const u = STORE.users[key];
   if (u) {
-    const link = (process.env.FRONTEND_ORIGIN || "https://landingprep.com") + "/#/login?reset=1&email=" + encodeURIComponent(u.email);
-    sendMail(u.email, "Reset your LandingPrep password", emailTemplate("password-reset", { NAME: (u.name || "there").split(" ")[0], RESET_LINK: link }));
+    const code = String(crypto.randomInt(0, 1000000)).padStart(6, "0");
+    STORE.resets = STORE.resets || {};
+    STORE.resets[key] = {
+      codeHash: crypto.createHmac("sha256", AUTH_SECRET).update("reset|" + key + "|" + code).digest("hex"),
+      expires: Date.now() + 15 * 60 * 1000,
+      attempts: 0,
+    };
+    try { await sendMailRich(u.email, "Your LandingPrep password reset code", resetCodeEmail((u.name || "there").split(" ")[0], code)); } catch (e) {}
   }
   res.json({ ok: true });
 });

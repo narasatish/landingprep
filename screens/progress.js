@@ -255,13 +255,13 @@
     useEffect(() => {
       setHistory(loadHistory());
     }, []);
-    if (!user) {
-      return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "progress", onNav }), /* @__PURE__ */ React.createElement("main", { id: "main-content" }, /* @__PURE__ */ React.createElement("div", { className: "login-shell" }, /* @__PURE__ */ React.createElement("div", { className: "login-card", style: { textAlign: "center" } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 48, marginBottom: 8 } }, "\u{1F4CA}"), /* @__PURE__ */ React.createElement("h1", null, "Sign in to track your progress"), /* @__PURE__ */ React.createElement("p", { className: "sub" }, "Save your test history, track streaks, see skill splits across all exams, and continue where you left off \u2014 on any device. Free forever, takes 30 seconds."), /* @__PURE__ */ React.createElement("button", { className: "login-btn", onClick: () => onNav("login") }, "Sign in or create account \u2192"), /* @__PURE__ */ React.createElement("div", { className: "toggle", style: { marginTop: 16 } }, /* @__PURE__ */ React.createElement("a", { onClick: () => onNav("home") }, "\u2190 Back to home"))))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
-    }
     const filtered = useMemo(
       () => filter === "all" ? history : history.filter((e) => e.exam === filter),
       [history, filter]
     );
+    if (!user) {
+      return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "progress", onNav }), /* @__PURE__ */ React.createElement("main", { id: "main-content" }, /* @__PURE__ */ React.createElement("div", { className: "login-shell" }, /* @__PURE__ */ React.createElement("div", { className: "login-card", style: { textAlign: "center" } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 48, marginBottom: 8 } }, "\u{1F4CA}"), /* @__PURE__ */ React.createElement("h1", null, "Sign in to track your progress"), /* @__PURE__ */ React.createElement("p", { className: "sub" }, "Save your test history, track streaks, see skill splits across all exams, and continue where you left off \u2014 on any device. Free forever, takes 30 seconds."), /* @__PURE__ */ React.createElement("button", { className: "login-btn", onClick: () => onNav("login") }, "Sign in or create account \u2192"), /* @__PURE__ */ React.createElement("div", { className: "toggle", style: { marginTop: 16 } }, /* @__PURE__ */ React.createElement("a", { onClick: () => onNav("home") }, "\u2190 Back to home"))))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
+    }
     const totalTests = history.length;
     const allScores = history.map(scoreNumOf).filter((n) => typeof n === "number");
     const avgScore = allScores.length ? (allScores.reduce((a, b) => a + b, 0) / allScores.length).toFixed(1) : "\u2014";

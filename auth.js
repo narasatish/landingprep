@@ -142,21 +142,32 @@
     localStorage.removeItem(TOKEN_KEY);
     notify(null);
   }
-  async function resetPassword(email, newPassword) {
+  async function requestReset(email) {
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return { ok: false, error: "Enter a valid email address." };
+    email = email.trim().toLowerCase();
+    if (!await backendReady()) return { ok: false, error: "Resetting your password needs an internet connection. Please try again online." };
+    try {
+      await api("/api/auth/forgot", "POST", { email });
+      return { ok: true };
+    } catch (e) {
+      return { ok: false, error: "Couldn't send the code right now. Check your connection and try again." };
+    }
+  }
+  async function resetPassword(email, code, newPassword) {
     if (!email || !newPassword) return { ok: false, error: "Enter your email and a new password." };
+    if (!/^\d{6}$/.test(String(code || "").trim())) return { ok: false, error: "Enter the 6-digit code from your email." };
     if (newPassword.length < 6) return { ok: false, error: "New password must be at least 6 characters." };
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return { ok: false, error: "Enter a valid email address." };
     email = email.trim().toLowerCase();
-    if (await backendReady()) {
-      try {
-        const { status, data } = await api("/api/auth/reset", "POST", { email, password: newPassword });
-        if (status === 200) return { ok: true };
-        if (status === 404) return { ok: false, error: data.error || "No account found with this email. Create one instead." };
-        if (data && data.error && status < 500) return { ok: false, error: data.error };
-      } catch (e) {
-      }
+    if (!await backendReady()) return { ok: false, error: "Resetting your password needs an internet connection. Please try again online." };
+    try {
+      const { status, data } = await api("/api/auth/reset", "POST", { email, code: String(code).trim(), password: newPassword });
+      if (status === 200) return { ok: true };
+      if (data && data.error) return { ok: false, error: data.error };
+      return { ok: false, error: "Couldn't reset your password. Please try again." };
+    } catch (e) {
+      return { ok: false, error: "Couldn't reach the server. Please try again." };
     }
-    return localReset(email, newPassword);
   }
   function readHistory() {
     try {
@@ -204,7 +215,7 @@
     subscribers.add(fn);
     return () => subscribers.delete(fn);
   }
-  window.LP_AUTH = { getUser, signUp, signIn, signOut, resetPassword, emailExists, subscribe, getToken, pushHistory, pullHistory, backendReady };
+  window.LP_AUTH = { getUser, signUp, signIn, signOut, requestReset, resetPassword, emailExists, subscribe, getToken, pushHistory, pullHistory, backendReady };
 })();
 (function() {
   const { useState } = React;
@@ -213,12 +224,16 @@
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [code, setCode] = useState("");
+    const [resetStep, setResetStep] = useState(1);
     const [error, setError] = useState("");
     const [notice, setNotice] = useState("");
     const switchMode = (m) => {
       setMode(m);
       setError("");
       setNotice("");
+      setResetStep(1);
+      setCode("");
     };
     React.useEffect(() => {
       if (!window.LP_SEO) return;
@@ -239,7 +254,7 @@
       let result;
       try {
         if (mode === "signup") result = await A.signUp(name, email, password);
-        else if (mode === "reset") result = await A.resetPassword(email, password);
+        else if (mode === "reset") result = resetStep === 1 ? await A.requestReset(email) : await A.resetPassword(email, code, password);
         else result = await A.signIn(email, password);
       } catch (err) {
         result = { ok: false, error: "Something went wrong. Please try again." };
@@ -250,18 +265,49 @@
         return;
       }
       if (mode === "reset") {
+        if (resetStep === 1) {
+          setResetStep(2);
+          setNotice("If an account exists for " + email + ", we've emailed a 6-digit reset code. It expires in 15 minutes \u2014 check your inbox and spam.");
+          return;
+        }
         setPassword("");
-        setNotice("Password updated. You can sign in with your new password now.");
+        setCode("");
+        setResetStep(1);
         setMode("signin");
+        setNotice("Password updated \u2014 you can sign in with your new password now.");
         return;
       }
       if (onSuccess) onSuccess(result.user);
       else onNav("home");
     };
-    const title = mode === "signin" ? "Welcome back" : mode === "signup" ? "Create your free account" : "Reset your password";
-    const sub = mode === "signin" ? "Sign in to track your progress, save your test history, and continue where you left off." : mode === "signup" ? "Free forever. No credit card. Track scores across IELTS, TOEFL, GRE, GMAT and more." : "Enter your account email and a new password to reset it.";
-    const submitLabel = mode === "signin" ? "Sign in" : mode === "signup" ? "Create account" : "Reset password";
-    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "login", onNav }), /* @__PURE__ */ React.createElement("div", { className: "login-shell" }, /* @__PURE__ */ React.createElement("form", { className: "login-card", onSubmit: submit }, /* @__PURE__ */ React.createElement("h1", null, title), /* @__PURE__ */ React.createElement("p", { className: "sub" }, sub), error && /* @__PURE__ */ React.createElement("div", { className: "login-error" }, error), notice && /* @__PURE__ */ React.createElement("div", { className: "login-notice" }, notice), mode === "signup" && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("label", null, "Full name"), /* @__PURE__ */ React.createElement("input", { type: "text", placeholder: "Your name", value: name, onChange: (e) => setName(e.target.value), required: true })), /* @__PURE__ */ React.createElement("label", null, "Email"), /* @__PURE__ */ React.createElement("input", { type: "email", placeholder: "you@example.com", value: email, onChange: (e) => setEmail(e.target.value), required: true }), /* @__PURE__ */ React.createElement("label", null, mode === "reset" ? "New password" : "Password"), /* @__PURE__ */ React.createElement(
+    const title = mode === "signin" ? "Welcome back" : mode === "signup" ? "Create your free account" : resetStep === 1 ? "Reset your password" : "Enter your reset code";
+    const sub = mode === "signin" ? "Sign in to track your progress, save your test history, and continue where you left off." : mode === "signup" ? "Free forever. No credit card. Track scores across IELTS, TOEFL, GRE, GMAT and more." : resetStep === 1 ? "Enter your account email and we'll send a 6-digit code to verify it's you." : "We emailed a 6-digit code to " + email + ". Enter it below with your new password.";
+    const submitLabel = mode === "signin" ? "Sign in" : mode === "signup" ? "Create account" : resetStep === 1 ? "Send reset code" : "Reset password";
+    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(window.LP_TopBar, { current: "login", onNav }), /* @__PURE__ */ React.createElement("div", { className: "login-shell" }, /* @__PURE__ */ React.createElement("form", { className: "login-card", onSubmit: submit }, /* @__PURE__ */ React.createElement("h1", null, title), /* @__PURE__ */ React.createElement("p", { className: "sub" }, sub), error && /* @__PURE__ */ React.createElement("div", { className: "login-error" }, error), notice && /* @__PURE__ */ React.createElement("div", { className: "login-notice" }, notice), mode === "signup" && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("label", null, "Full name"), /* @__PURE__ */ React.createElement("input", { type: "text", placeholder: "Your name", value: name, onChange: (e) => setName(e.target.value), required: true })), /* @__PURE__ */ React.createElement("label", null, "Email"), /* @__PURE__ */ React.createElement(
+      "input",
+      {
+        type: "email",
+        placeholder: "you@example.com",
+        value: email,
+        onChange: (e) => setEmail(e.target.value),
+        required: true,
+        readOnly: mode === "reset" && resetStep === 2,
+        style: mode === "reset" && resetStep === 2 ? { opacity: 0.7 } : void 0
+      }
+    ), mode === "reset" && resetStep === 2 && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("label", null, "6-digit code"), /* @__PURE__ */ React.createElement(
+      "input",
+      {
+        type: "text",
+        inputMode: "numeric",
+        autoComplete: "one-time-code",
+        maxLength: 6,
+        placeholder: "123456",
+        value: code,
+        onChange: (e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 6)),
+        required: true,
+        style: { letterSpacing: "6px", fontSize: 18, textAlign: "center" }
+      }
+    )), (mode !== "reset" || resetStep === 2) && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("label", null, mode === "reset" ? "New password" : "Password"), /* @__PURE__ */ React.createElement(
       "input",
       {
         type: "password",
@@ -270,7 +316,13 @@
         onChange: (e) => setPassword(e.target.value),
         required: true
       }
-    ), mode === "signin" && /* @__PURE__ */ React.createElement("div", { className: "login-forgot" }, /* @__PURE__ */ React.createElement("a", { onClick: () => switchMode("reset") }, "Forgot password?")), /* @__PURE__ */ React.createElement("button", { type: "submit", className: "login-btn", disabled: busy }, busy ? "Please wait\u2026" : submitLabel), /* @__PURE__ */ React.createElement("div", { className: "toggle" }, mode === "signin" && /* @__PURE__ */ React.createElement(React.Fragment, null, "Don't have an account? ", /* @__PURE__ */ React.createElement("a", { onClick: () => switchMode("signup") }, "Create one \u2192")), mode === "signup" && /* @__PURE__ */ React.createElement(React.Fragment, null, "Already have an account? ", /* @__PURE__ */ React.createElement("a", { onClick: () => switchMode("signin") }, "Sign in \u2192")), mode === "reset" && /* @__PURE__ */ React.createElement(React.Fragment, null, "Remembered it? ", /* @__PURE__ */ React.createElement("a", { onClick: () => switchMode("signin") }, "Back to sign in \u2192"))), /* @__PURE__ */ React.createElement("div", { className: "toggle", style: { marginTop: 8 } }, /* @__PURE__ */ React.createElement("a", { onClick: () => onNav("home") }, "\u2190 Back to home")))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
+    )), mode === "signin" && /* @__PURE__ */ React.createElement("div", { className: "login-forgot" }, /* @__PURE__ */ React.createElement("a", { onClick: () => switchMode("reset") }, "Forgot password?")), mode === "reset" && resetStep === 2 && /* @__PURE__ */ React.createElement("div", { className: "login-forgot" }, /* @__PURE__ */ React.createElement("a", { onClick: () => {
+      setResetStep(1);
+      setCode("");
+      setPassword("");
+      setError("");
+      setNotice("");
+    } }, "\u2190 Use a different email / resend code")), /* @__PURE__ */ React.createElement("button", { type: "submit", className: "login-btn", disabled: busy }, busy ? "Please wait\u2026" : submitLabel), /* @__PURE__ */ React.createElement("div", { className: "toggle" }, mode === "signin" && /* @__PURE__ */ React.createElement(React.Fragment, null, "Don't have an account? ", /* @__PURE__ */ React.createElement("a", { onClick: () => switchMode("signup") }, "Create one \u2192")), mode === "signup" && /* @__PURE__ */ React.createElement(React.Fragment, null, "Already have an account? ", /* @__PURE__ */ React.createElement("a", { onClick: () => switchMode("signin") }, "Sign in \u2192")), mode === "reset" && /* @__PURE__ */ React.createElement(React.Fragment, null, "Remembered it? ", /* @__PURE__ */ React.createElement("a", { onClick: () => switchMode("signin") }, "Back to sign in \u2192"))), /* @__PURE__ */ React.createElement("div", { className: "toggle", style: { marginTop: 8 } }, /* @__PURE__ */ React.createElement("a", { onClick: () => onNav("home") }, "\u2190 Back to home")))), /* @__PURE__ */ React.createElement(window.LP_Footer, null));
   }
   window.LP_LoginScreen = LoginScreen;
 })();
