@@ -355,8 +355,27 @@ async function igCatchUp(ig, opts) {
 const OWNER_EMAIL = process.env.OWNER_EMAIL || "narasatish966@gmail.com";
 function prepToken(date, action) { return crypto.createHmac("sha256", AUTH_SECRET).update("igprep|" + action + "|" + date).digest("base64url"); }
 function prepLink(date, action) { return IG_PUBLIC_BASE + "/api/ig/review?date=" + date + "&action=" + action + "&token=" + prepToken(date, action); }
+// HTTP email via Resend (https://resend.com) — sends over HTTPS:443, which Render never
+// blocks (unlike SMTP ports 465/587). Set RESEND_API_KEY in env to use it; it takes
+// priority over SMTP. `from` must be a domain you've verified in Resend (e.g. landingprep.com).
+async function sendViaResend(to, subject, html) {
+  const key = process.env.RESEND_API_KEY;
+  if (!key) return null; // not configured → caller falls back to SMTP
+  try {
+    const r = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: { Authorization: "Bearer " + key, "Content-Type": "application/json" },
+      body: JSON.stringify({ from: process.env.RESEND_FROM || SMTP.from, to: [to], subject, html, reply_to: SMTP.user }),
+    });
+    if (r.ok) return true;
+    console.warn("[mail] Resend failed:", r.status, (await r.text().catch(() => "")).slice(0, 200));
+    return false;
+  } catch (e) { console.warn("[mail] Resend error:", e.message); return false; }
+}
 async function sendMailRich(to, subject, html, attachments) {
-  const t = mailer(); if (!t || !html) { if (!t) console.warn("[mail] rich send skipped: SMTP not configured (SMTP_PASS missing)"); return false; }
+  if (!html) return false;
+  if (process.env.RESEND_API_KEY && !(attachments && attachments.length)) { const r = await sendViaResend(to, subject, html); if (r) return true; }
+  const t = mailer(); if (!t) { console.warn("[mail] rich send skipped: no email transport (set RESEND_API_KEY or SMTP_PASS)"); return false; }
   // Retry transient SMTP failures (Hostinger occasionally throttles / drops the connection)
   // so a single hiccup doesn't silently kill the owner-approval email.
   for (let attempt = 1; attempt <= 3; attempt++) {
@@ -1119,8 +1138,10 @@ function emailTemplate(name, vars) {
   } catch (e) { return null; }
 }
 async function sendMail(to, subject, html) {
+  if (!html) return false;
+  if (process.env.RESEND_API_KEY) { const r = await sendViaResend(to, subject, html); if (r) return true; }
   const t = mailer();
-  if (!t || !html) return false;
+  if (!t) return false;
   try { await t.sendMail({ from: SMTP.from, to, subject, html, replyTo: SMTP.user }); return true; }
   catch (e) { console.warn("[mail] send failed:", e.message); return false; }
 }
@@ -1396,16 +1417,26 @@ app.post("/api/auth/forgot", (req, res) => {
 //   GET /api/admin/test-mail?key=<ADMIN_SECRET>&to=you@example.com
 app.get("/api/admin/test-mail", async (req, res) => {
   if (!adminOK(req)) return res.status(403).json({ error: "Forbidden — set ADMIN_SECRET in Render env and pass ?key=<it>." });
-  const info = { host: SMTP.host, port: SMTP.port, user: SMTP.user, from: SMTP.from, smtpPassSet: !!SMTP.pass };
-  if (!SMTP.pass) return res.json({ ok: false, ...info, error: "SMTP_PASS is not set in Render env. Set it to the mailbox password for " + SMTP.user + " (create that mailbox in Hostinger first if needed)." });
   const to = String(req.query.to || SMTP.user);
+  const provider = process.env.RESEND_API_KEY ? "resend" : "smtp";
+  const info = { provider, from: process.env.RESEND_FROM || SMTP.from, user: SMTP.user };
+  // Resend (HTTPS) — works on Render even when SMTP ports are blocked.
+  if (provider === "resend") {
+    const ok = await sendViaResend(to, "LandingPrep email test ✅", "<p>Email works via Resend — password-reset codes & welcome emails will deliver. Sent to " + to + ".</p>");
+    return ok
+      ? res.json({ ok: true, ...info, sentTo: to, message: "Sent via Resend (HTTPS). Check inbox + spam." })
+      : res.json({ ok: false, ...info, error: "Resend send failed — see server logs. Usually: RESEND_API_KEY wrong, or the 'from' domain isn't verified in Resend yet." });
+  }
+  // SMTP fallback
+  if (!SMTP.pass) return res.json({ ok: false, ...info, host: SMTP.host, port: SMTP.port, smtpPassSet: false, error: "Neither RESEND_API_KEY nor SMTP_PASS is set." });
   try {
     const t = mailer();
-    await t.verify(); // tests TCP connection + SMTP auth
-    await sendMail(to, "LandingPrep SMTP test ✅", "<p>Your SMTP works — this confirms password-reset codes and welcome emails will deliver. Sent from " + SMTP.from + ".</p>");
-    res.json({ ok: true, ...info, sentTo: to, message: "Connected, authenticated and sent. Check the inbox (and spam)." });
+    await t.verify();
+    await sendMail(to, "LandingPrep SMTP test ✅", "<p>Your SMTP works — reset codes & welcome emails will deliver.</p>");
+    res.json({ ok: true, ...info, host: SMTP.host, port: SMTP.port, sentTo: to, message: "Connected, authenticated and sent. Check inbox + spam." });
   } catch (e) {
-    res.json({ ok: false, ...info, error: String((e && e.message) || e), hint: "Common causes: wrong SMTP_PASS, the mailbox doesn't exist in Hostinger, or port/SSL mismatch (Hostinger = 465 SSL)." });
+    res.json({ ok: false, ...info, host: SMTP.host, port: SMTP.port, error: String((e && e.message) || e),
+      hint: "Render's free tier often BLOCKS outbound SMTP (465 & 587), which causes this timeout. The reliable fix: sign up at resend.com, verify landingprep.com, and set RESEND_API_KEY in Render — it sends over HTTPS, which Render allows." });
   }
 });
 
