@@ -1102,7 +1102,8 @@ const SMTP = {
 let _transport = null;
 function mailer() {
   if (!SMTP.pass) return null;
-  if (!_transport) _transport = nodemailer.createTransport({ host: SMTP.host, port: SMTP.port, secure: SMTP.port === 465, auth: { user: SMTP.user, pass: SMTP.pass } });
+  if (!_transport) _transport = nodemailer.createTransport({ host: SMTP.host, port: SMTP.port, secure: SMTP.port === 465, auth: { user: SMTP.user, pass: SMTP.pass },
+    connectionTimeout: 12000, greetingTimeout: 10000, socketTimeout: 20000 }); // never hang forever on a slow SMTP server
   return _transport;
 }
 function emailTemplate(name, vars) {
@@ -1363,7 +1364,7 @@ app.post("/api/auth/reset", (req, res) => {
 
 // Step 1 of reset: email a single-use 6-digit code. Always responds ok — never reveals
 // whether an account exists (anti-enumeration). Rate-limited (see _writeCap above).
-app.post("/api/auth/forgot", async (req, res) => {
+app.post("/api/auth/forgot", (req, res) => {
   const key = String((req.body && req.body.email) || "").toLowerCase();
   const u = STORE.users[key];
   if (u) {
@@ -1374,9 +1375,15 @@ app.post("/api/auth/forgot", async (req, res) => {
       expires: Date.now() + 15 * 60 * 1000,
       attempts: 0,
     };
-    try { await sendMailRich(u.email, "Your LandingPrep password reset code", resetCodeEmail((u.name || "there").split(" ")[0], code)); } catch (e) {}
+    // FIRE-AND-FORGET — do NOT await. Hostinger SMTP (plus a Render cold start) can take
+    // several seconds; awaiting it made the browser's request time out, so the UI showed
+    // "couldn't send the code" and never advanced to the code-entry step — even though the
+    // email was actually sent. The reset record is stored synchronously above, so the
+    // emailed code is valid the instant it arrives.
+    Promise.resolve().then(() => sendMailRich(u.email, "Your LandingPrep password reset code",
+      resetCodeEmail((u.name || "there").split(" ")[0], code))).catch(() => {});
   }
-  res.json({ ok: true });
+  res.json({ ok: true }); // respond instantly so the client advances to the code box
 });
 
 // Admin SMTP diagnostic: verify the mailbox connection + send a test email, returning
