@@ -1108,7 +1108,7 @@ function mailer() {
   if (!SMTP.pass) return null;
   if (!_transport) _transport = nodemailer.createTransport({ host: SMTP.host, port: SMTP.port, secure: SMTP.port === 465, auth: { user: SMTP.user, pass: SMTP.pass },
     family: 4, // force IPv4 — Render has no IPv6 route, so an IPv6 SMTP address fails ENETUNREACH
-    connectionTimeout: 12000, greetingTimeout: 10000, socketTimeout: 20000 }); // never hang forever on a slow SMTP server
+    connectionTimeout: 30000, greetingTimeout: 25000, socketTimeout: 45000 }); // generous — Render↔Hostinger can be slow, but never hang forever
   return _transport;
 }
 function emailTemplate(name, vars) {
