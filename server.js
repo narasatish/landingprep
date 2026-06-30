@@ -12,6 +12,10 @@
 "use strict";
 
 require("dotenv").config();
+// Prefer IPv4 for all outbound connections. Render containers have no IPv6 route, so when
+// smtp.hostinger.com (or any host) resolves to IPv6 the connection fails with ENETUNREACH —
+// which is what made password-reset / welcome emails fail intermittently.
+try { require("dns").setDefaultResultOrder("ipv4first"); } catch (e) {}
 
 const http    = require("http");
 const https   = require("https");
@@ -1103,6 +1107,7 @@ let _transport = null;
 function mailer() {
   if (!SMTP.pass) return null;
   if (!_transport) _transport = nodemailer.createTransport({ host: SMTP.host, port: SMTP.port, secure: SMTP.port === 465, auth: { user: SMTP.user, pass: SMTP.pass },
+    family: 4, // force IPv4 — Render has no IPv6 route, so an IPv6 SMTP address fails ENETUNREACH
     connectionTimeout: 12000, greetingTimeout: 10000, socketTimeout: 20000 }); // never hang forever on a slow SMTP server
   return _transport;
 }
