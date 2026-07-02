@@ -8,7 +8,7 @@
     "dev": "node --watch server.js",
     "seo": "node scripts/generate-seo-pages.mjs",
     "precompile": "node scripts/precompile-jsx.mjs",
-    "build": "node tools/check-hooks.js && node scripts/make-app-assets.cjs && node scripts/precompile-jsx.mjs && node scripts/bump-version.mjs && node scripts/generate-seo-pages.mjs && node scripts/audit-seo.mjs",
+    "build": "node tools/check-hooks.js && node scripts/make-app-assets.cjs && node scripts/precompile-jsx.mjs && node scripts/make-bundle.mjs && node scripts/bump-version.mjs && node scripts/generate-seo-pages.mjs && node scripts/audit-seo.mjs",
     "bump": "node scripts/bump-version.mjs",
     "assets": "node scripts/make-app-assets.cjs",
     "check:hooks": "node tools/check-hooks.js",
