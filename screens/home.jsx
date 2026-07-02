@@ -373,6 +373,58 @@ function LatestGuides() {
 }
 // 5-second first-visit onboarding — routes a new visitor straight to their goal. Shows once
 // (localStorage), non-blocking (delayed + easily dismissed), so it never hurts bounce/SEO.
+// Free 2026 Scholarships & Funding Guide — real 6-page PDF (10 fully-funded scholarships,
+// proof-of-funds by country, loans, timeline, saving tips). Email unlocks the download
+// INSTANTLY (we never hold the file hostage on email delivery) and subscribes them to
+// the weekly digest via the existing double-opt-in newsletter flow.
+function GuideDownload() {
+  const PDF = "/marketing/2026-scholarships-funding-guide.pdf";
+  const [email, setEmail] = React.useState("");
+  const [state, setState] = React.useState(() => { try { return localStorage.getItem("lp_guide_dl") ? "done" : "idle"; } catch (e) { return "idle"; } });
+  const submit = async (e) => {
+    e.preventDefault();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { setState("err"); return; }
+    setState("busy");
+    try {
+      const base = window.LP_API_BASE || "";
+      fetch(base + "/api/newsletter/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email.trim(), source: "funding-guide-pdf" }) }).catch(() => {});
+      try { if (window.gtag) window.gtag("event", "guide_download", { source: "home" }); } catch (e2) {}
+    } catch (e2) {}
+    try { localStorage.setItem("lp_guide_dl", "1"); } catch (e2) {}
+    setState("done");
+    // auto-start the download
+    const a = document.createElement("a"); a.href = PDF; a.download = "2026-scholarships-funding-guide.pdf"; document.body.appendChild(a); a.click(); a.remove();
+  };
+  const field = { padding: "12px 14px", borderRadius: 10, border: "1px solid var(--line)", fontSize: 15, background: "var(--surface)", color: "var(--ink)", flex: "1 1 220px" };
+  return (
+    <section className="section reveal" style={{ paddingTop: 10 }}>
+      <div className="shell">
+        <div style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, var(--surface)), color-mix(in srgb, var(--accent-2) 10%, var(--surface)))", border: "1px solid var(--line)", borderRadius: 18, padding: "24px 26px", display: "flex", gap: 24, alignItems: "center", flexWrap: "wrap" }}>
+          <div style={{ flex: "1 1 320px" }}>
+            <div className="eyebrow">Free PDF guide · 2026</div>
+            <h2 className="h2" style={{ margin: "4px 0 6px" }}>Scholarships &amp; Funding Guide 2026</h2>
+            <p className="muted" style={{ margin: 0, maxWidth: 520 }}>10 fully-funded scholarships (DAAD, Chevening, Fulbright…), exact proof-of-funds by country, education-loan basics and a month-by-month application timeline — in one free 6-page PDF.</p>
+          </div>
+          <div style={{ flex: "1 1 300px" }}>
+            {state === "done" ? (
+              <div>
+                <p style={{ margin: "0 0 10px", fontWeight: 650, color: "var(--leaf)" }}>✅ Your guide is downloading.</p>
+                <a className="btn btn-primary" href={PDF} download>⬇️ Download again</a>
+              </div>
+            ) : (
+              <form onSubmit={submit} style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+                <input type="email" required placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} style={field} aria-label="Email for the free guide" />
+                <button type="submit" className="btn btn-primary" disabled={state === "busy"}>{state === "busy" ? "…" : "Get the free PDF →"}</button>
+                {state === "err" && <span style={{ color: "#dc2626", fontSize: 13, flexBasis: "100%" }}>Enter a valid email address.</span>}
+                <span style={{ fontSize: 12, color: "var(--ink-3)", flexBasis: "100%" }}>Instant download. We'll also send the free weekly study-abroad digest — unsubscribe anytime.</span>
+              </form>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 function GoalOnboarding({ onNav }) {
   const [show, setShow] = React.useState(false);
   React.useEffect(() => {
@@ -780,6 +832,9 @@ function Home({ onGuide, onPractice, onNav }) {
       {/* Latest guides strip — fresh auto-blog content */}
       <LatestGuides />
 
+      {/* Free 2026 funding guide — real value for email (instant download) */}
+      <GuideDownload />
+
       {/* FAQ */}
       <section className="section faq-section" style={{ background: "var(--surface-2)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }}>
         <div className="shell">
@@ -909,10 +964,11 @@ function TopBar({ current = "home", onNav }) {
   // keep the row tidy. Labels are kept short so they arrange neatly on one line.
   // Slim primary nav (5 items). Exam Hub is folded into "Exams"; Speaking & Writing and
   // Progress live in the profile menu + mobile drawer.
+  // "Mock Tests" + "Exam Guides" are merged into one "Exams" destination: the exam hub
+  // lists every exam with its mocks AND a guide link per tile — one intent, one place.
   const items = [
     ["home", "Home"],
-    ["exam-prep", "Mock Tests"],
-    ["exams", "Exam Guides"],
+    ["exam-prep", "Exams"],
     ["learn", "Learn"],
     ["colleges", "Study Abroad"],
     ["tools", "Tools"],
@@ -922,8 +978,7 @@ function TopBar({ current = "home", onNav }) {
   // The slide-out drawer (mobile) offers the full set for discoverability.
   const drawerItems = [
     ["home", "Home"],
-    ["exam-prep", "Mock Tests"],
-    ["exams", "Exam Guides"],
+    ["exam-prep", "📝 Exams (mocks + guides)"],
     ["learn", "📚 Learn (Lessons + Club)"],
     ["writing-checker", "🎯 Band-Score Checker"],
     ["vocabulary", "📖 Vocabulary"],
@@ -953,7 +1008,7 @@ function TopBar({ current = "home", onNav }) {
           </div>
           <nav className="nav">
             {items.map(([id, label]) => (
-              <a key={id} className={current === id ? "is-on" : ""} onClick={(e) => { e.preventDefault(); onNav && onNav(id); }} href="#">{label}</a>
+              <a key={id} className={(current === id || (id === "exam-prep" && current === "exams")) ? "is-on" : ""} onClick={(e) => { e.preventDefault(); onNav && onNav(id); }} href="#">{label}</a>
             ))}
           </nav>
           <div className="topbar-actions">

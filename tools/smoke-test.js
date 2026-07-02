@@ -56,10 +56,18 @@ function waitForServer(timeoutMs) {
         try { await page.waitForSelector("main, .report-shell, .login-shell, #root > *", { state: "attached", timeout: 14000 }); }
         catch (e) { mounted = false; }
         await page.waitForTimeout(700); // settle, let an error boundary surface if it's going to
-        const res = await page.evaluate(() => ({
-          boundary: /Something hiccupped|didn.t load right/i.test(document.body.innerText || ""),
-          appErrors: (window.__lpErrors || []).slice(0, 5),
-        }));
+        // The app normalizes the hash on some routes, which can destroy the evaluation
+        // context mid-call — retry once after a beat instead of failing a healthy page.
+        let res;
+        for (let attempt = 0; attempt < 2; attempt++) {
+          try {
+            res = await page.evaluate(() => ({
+              boundary: /Something hiccupped|didn.t load right/i.test((document.body && document.body.innerText) || ""),
+              appErrors: (window.__lpErrors || []).slice(0, 5),
+            }));
+            break;
+          } catch (e) { if (attempt === 1) throw e; await page.waitForTimeout(1200); }
+        }
         // Only count app/React errors — ignore third-party noise (Google Analytics / Clarity blocked in headless).
         const isAppErr = (e) => /Minified React error|render error|#3\d\d|rendered (more|fewer) hooks/i.test(e);
         const reactErr = [...errs, ...(res.appErrors || [])].some(isAppErr);

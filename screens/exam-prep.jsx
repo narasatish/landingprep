@@ -83,6 +83,13 @@
                   <span><strong>{c.full || 0}</strong> full mocks</span>
                   <span><strong>{c.total - (c.full || 0)}</strong> section tests</span>
                 </div>
+                {/* Guides + mocks now live together — one place per exam (nav merge) */}
+                <span className="ep-exam-guide" role="link" tabIndex={0}
+                  onClick={(e) => { e.stopPropagation(); window.location.hash = "#/exam-hub/" + eid; }}
+                  onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); window.location.hash = "#/exam-hub/" + eid; } }}
+                  style={{ display: "inline-block", marginTop: 10, fontSize: 13, fontWeight: 650, color: brand.color, textDecoration: "underline", textUnderlineOffset: 3, cursor: "pointer" }}>
+                  📖 Guide — pattern, fees &amp; tips
+                </span>
               </button>
             );
           })}

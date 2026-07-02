@@ -68,7 +68,27 @@
         /* @__PURE__ */ React.createElement("div", { className: "ep-exam-icon", style: { background: brand.color + "18", color: brand.color } }, brand.icon),
         /* @__PURE__ */ React.createElement("div", { className: "ep-exam-name" }, c.label || eid.toUpperCase()),
         /* @__PURE__ */ React.createElement("div", { className: "ep-exam-tag" }, brand.tagline),
-        /* @__PURE__ */ React.createElement("div", { className: "ep-exam-stats" }, /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("strong", null, c.full || 0), " full mocks"), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("strong", null, c.total - (c.full || 0)), " section tests"))
+        /* @__PURE__ */ React.createElement("div", { className: "ep-exam-stats" }, /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("strong", null, c.full || 0), " full mocks"), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("strong", null, c.total - (c.full || 0)), " section tests")),
+        /* @__PURE__ */ React.createElement(
+          "span",
+          {
+            className: "ep-exam-guide",
+            role: "link",
+            tabIndex: 0,
+            onClick: (e) => {
+              e.stopPropagation();
+              window.location.hash = "#/exam-hub/" + eid;
+            },
+            onKeyDown: (e) => {
+              if (e.key === "Enter") {
+                e.stopPropagation();
+                window.location.hash = "#/exam-hub/" + eid;
+              }
+            },
+            style: { display: "inline-block", marginTop: 10, fontSize: 13, fontWeight: 650, color: brand.color, textDecoration: "underline", textUnderlineOffset: 3, cursor: "pointer" }
+          },
+          "\u{1F4D6} Guide \u2014 pattern, fees & tips"
+        )
       );
     })));
   }

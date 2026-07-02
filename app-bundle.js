@@ -5941,6 +5941,48 @@ function LatestGuides() {
   if (!posts.length) return null;
   return /* @__PURE__ */ React.createElement("section", { className: "section reveal", style: { paddingTop: 22 } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "section-header reveal" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "\u{1F4F0} Fresh study-abroad guides"), /* @__PURE__ */ React.createElement("h2", { className: "h1" }, "Latest from the blog"))), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 14, marginTop: 14 } }, posts.map((p) => /* @__PURE__ */ React.createElement("a", { key: p.id, href: "/blog/" + p.id + "/", style: { display: "block", background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 16, padding: "18px 20px", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-sm,0 1px 2px rgba(0,0,0,.05))" } }, p.tag && /* @__PURE__ */ React.createElement("span", { style: { fontSize: 11, fontWeight: 700, letterSpacing: ".05em", textTransform: "uppercase", color: "var(--accent)" } }, p.tag), /* @__PURE__ */ React.createElement("h3", { style: { margin: "6px 0 8px", fontSize: 17, lineHeight: 1.3 } }, p.title), /* @__PURE__ */ React.createElement("p", { style: { margin: 0, fontSize: 14, color: "var(--ink-3)", lineHeight: 1.55 } }, p.excerpt, "\u2026"), /* @__PURE__ */ React.createElement("span", { style: { display: "inline-block", marginTop: 10, color: "var(--accent)", fontWeight: 600, fontSize: 14 } }, "Read guide \u2192")))), /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", marginTop: 16 } }, /* @__PURE__ */ React.createElement("a", { href: "/blog/", style: { color: "var(--accent)", fontWeight: 600 } }, "See all guides \u2192"))));
 }
+function GuideDownload() {
+  const PDF = "/marketing/2026-scholarships-funding-guide.pdf";
+  const [email, setEmail] = React.useState("");
+  const [state, setState] = React.useState(() => {
+    try {
+      return localStorage.getItem("lp_guide_dl") ? "done" : "idle";
+    } catch (e) {
+      return "idle";
+    }
+  });
+  const submit = async (e) => {
+    e.preventDefault();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      setState("err");
+      return;
+    }
+    setState("busy");
+    try {
+      const base = window.LP_API_BASE || "";
+      fetch(base + "/api/newsletter/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email.trim(), source: "funding-guide-pdf" }) }).catch(() => {
+      });
+      try {
+        if (window.gtag) window.gtag("event", "guide_download", { source: "home" });
+      } catch (e2) {
+      }
+    } catch (e2) {
+    }
+    try {
+      localStorage.setItem("lp_guide_dl", "1");
+    } catch (e2) {
+    }
+    setState("done");
+    const a = document.createElement("a");
+    a.href = PDF;
+    a.download = "2026-scholarships-funding-guide.pdf";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  };
+  const field = { padding: "12px 14px", borderRadius: 10, border: "1px solid var(--line)", fontSize: 15, background: "var(--surface)", color: "var(--ink)", flex: "1 1 220px" };
+  return /* @__PURE__ */ React.createElement("section", { className: "section reveal", style: { paddingTop: 10 } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { style: { background: "linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, var(--surface)), color-mix(in srgb, var(--accent-2) 10%, var(--surface)))", border: "1px solid var(--line)", borderRadius: 18, padding: "24px 26px", display: "flex", gap: 24, alignItems: "center", flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("div", { style: { flex: "1 1 320px" } }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Free PDF guide \xB7 2026"), /* @__PURE__ */ React.createElement("h2", { className: "h2", style: { margin: "4px 0 6px" } }, "Scholarships & Funding Guide 2026"), /* @__PURE__ */ React.createElement("p", { className: "muted", style: { margin: 0, maxWidth: 520 } }, "10 fully-funded scholarships (DAAD, Chevening, Fulbright\u2026), exact proof-of-funds by country, education-loan basics and a month-by-month application timeline \u2014 in one free 6-page PDF.")), /* @__PURE__ */ React.createElement("div", { style: { flex: "1 1 300px" } }, state === "done" ? /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { style: { margin: "0 0 10px", fontWeight: 650, color: "var(--leaf)" } }, "\u2705 Your guide is downloading."), /* @__PURE__ */ React.createElement("a", { className: "btn btn-primary", href: PDF, download: true }, "\u2B07\uFE0F Download again")) : /* @__PURE__ */ React.createElement("form", { onSubmit: submit, style: { display: "flex", gap: 10, flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("input", { type: "email", required: true, placeholder: "you@example.com", value: email, onChange: (e) => setEmail(e.target.value), style: field, "aria-label": "Email for the free guide" }), /* @__PURE__ */ React.createElement("button", { type: "submit", className: "btn btn-primary", disabled: state === "busy" }, state === "busy" ? "\u2026" : "Get the free PDF \u2192"), state === "err" && /* @__PURE__ */ React.createElement("span", { style: { color: "#dc2626", fontSize: 13, flexBasis: "100%" } }, "Enter a valid email address."), /* @__PURE__ */ React.createElement("span", { style: { fontSize: 12, color: "var(--ink-3)", flexBasis: "100%" } }, "Instant download. We'll also send the free weekly study-abroad digest \u2014 unsubscribe anytime."))))));
+}
 function GoalOnboarding({ onNav }) {
   const [show, setShow] = React.useState(false);
   React.useEffect(() => {
@@ -6131,7 +6173,7 @@ function Home({ onGuide, onPractice, onNav }) {
     ["book", "sky", "Vocabulary by topic", "Band-9 words with audio for every IELTS topic", "vocabulary"],
     ["chart", "green", "Prep Lessons", "600+ PPT strategy slides for all 7 exams", "learn"],
     ["plane", "pink", "Move Abroad", "Pre-departure checklist, visa timeline & city guides", "relocate"]
-  ].map(([ic, tone, t, d, id]) => /* @__PURE__ */ React.createElement("button", { key: id, className: "hp-tool-card", onClick: () => onNav(id) }, /* @__PURE__ */ React.createElement("span", { className: "hp-tool-ic" }, /* @__PURE__ */ React.createElement(IcChip, { name: ic, tone })), /* @__PURE__ */ React.createElement("span", { className: "hp-tool-t" }, t), /* @__PURE__ */ React.createElement("span", { className: "hp-tool-d" }, d)))))), /* @__PURE__ */ React.createElement("section", { className: "section" }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "card-cta reveal" }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Free Learning Club \xB7 200+ topics"), /* @__PURE__ */ React.createElement("h2", { className: "h1" }, "Topics, model answers,", /* @__PURE__ */ React.createElement("br", null), "and vocabulary you can actually use."), /* @__PURE__ */ React.createElement("p", { className: "body-lg muted", style: { maxWidth: 640, marginTop: 8 } }, "30+ writing prompts and 30+ speaking topics per English exam. GRE issue tasks and GMAT data insight walk-throughs. Every answer at full word count, every word with usage examples."), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12", style: { marginTop: 18 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNav("learning") }, "Open Learning Club"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("agents") }, "Try Speaking & Writing"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("blog") }, "Study tips & strategy"))))), /* @__PURE__ */ React.createElement("section", { className: "section", style: { background: "var(--surface-2)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "card-cta reveal" }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Free tool \xB7 No signup"), /* @__PURE__ */ React.createElement("h2", { className: "h1" }, "Score & eligibility checker"), /* @__PURE__ */ React.createElement("p", { className: "body-lg muted", style: { maxWidth: 640, marginTop: 8 } }, "Convert your score across IELTS, TOEFL, PTE, CELPIP & Duolingo, see your CEFR level, and find out which universities and visas you qualify for."), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12", style: { marginTop: 18 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNav("tools") }, "Open Score & Eligibility \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("colleges") }, "\u{1F9ED} Build my study-abroad plan"))))), /* @__PURE__ */ React.createElement("section", { className: "section" }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "section-header reveal" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Loved by test-takers worldwide"), /* @__PURE__ */ React.createElement("h2", { className: "h1" }, "Real results, zero cost."), /* @__PURE__ */ React.createElement("p", { className: "muted", style: { maxWidth: 640, marginTop: 10 } }, "Students across India, Canada, Australia, the US and beyond reach their target scores with LandingPrep \u2014 free."))), /* @__PURE__ */ React.createElement(Reviews, null))), /* @__PURE__ */ React.createElement(LatestGuides, null), /* @__PURE__ */ React.createElement("section", { className: "section faq-section", style: { background: "var(--surface-2)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "section-header reveal" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Frequently asked questions"), /* @__PURE__ */ React.createElement("h2", { className: "h1" }, "Everything you need to know"), /* @__PURE__ */ React.createElement("p", { className: "muted", style: { maxWidth: 640, marginTop: 10 } }, "Free exam prep and study-abroad guidance for students worldwide \u2014 answered. Switch between exam and study-abroad questions below."))), /* @__PURE__ */ React.createElement("div", { className: "faq-tabs reveal" }, /* @__PURE__ */ React.createElement("button", { className: "faq-tab" + (faqTab === "exams" ? " active" : ""), onClick: () => setFaqTab("exams") }, "\u{1F4DD} Exam prep"), /* @__PURE__ */ React.createElement("button", { className: "faq-tab" + (faqTab === "abroad" ? " active" : ""), onClick: () => setFaqTab("abroad") }, "\u{1F30D} Study abroad")), /* @__PURE__ */ React.createElement("div", { className: "faq-list reveal", key: faqTab }, faqActive.map((f, i) => /* @__PURE__ */ React.createElement("details", { className: "faq-item", key: i }, /* @__PURE__ */ React.createElement("summary", null, f.q, /* @__PURE__ */ React.createElement("span", { className: "faq-toggle", "aria-hidden": true }, "+")), /* @__PURE__ */ React.createElement("div", { className: "faq-answer" }, f.a))), faqTab === "abroad" && /* @__PURE__ */ React.createElement("button", { className: "btn", style: { marginTop: 16 }, onClick: () => onNav("colleges") }, "See the full study-abroad FAQ \u2192")))), /* @__PURE__ */ React.createElement("section", { className: "section", style: { paddingTop: 0 } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "card-signup reveal", style: { display: "flex", gap: 28, alignItems: "center", flexWrap: "wrap", justifyContent: "space-between" } }, /* @__PURE__ */ React.createElement("div", { style: { flex: "1 1 320px" } }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Optional \xB7 Free account"), /* @__PURE__ */ React.createElement("h2", { className: "h2", style: { marginTop: 4 } }, "Track your progress over time"), /* @__PURE__ */ React.createElement("p", { className: "muted", style: { marginTop: 6, maxWidth: 540 } }, "Sign in to save your test history, track streaks, see skill splits across all exams, and continue where you left off \u2014 on any device."), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary btn-lg", style: { marginTop: 16 }, onClick: () => onNav("login") }, "Create free account")), /* @__PURE__ */ React.createElement("div", { "aria-hidden": "true", style: { flex: "0 0 300px", maxWidth: 300, background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 16, padding: 18, boxShadow: "var(--shadow, 0 10px 28px -14px rgba(16,24,40,.18))" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 13, fontWeight: 700 } }, /* @__PURE__ */ React.createElement("span", { style: { color: "#f59e0b" } }, "\u{1F525} 7-day streak"), /* @__PURE__ */ React.createElement("span", { style: { color: "var(--ink-3)" } }, "Level 4 \xB7 532 XP")), /* @__PURE__ */ React.createElement("svg", { viewBox: "0 0 260 80", style: { width: "100%", height: 78, marginTop: 12 } }, /* @__PURE__ */ React.createElement("polyline", { points: "0,66 43,58 86,60 130,42 173,34 216,22 260,10", fill: "none", stroke: "var(--accent)", strokeWidth: "3", strokeLinecap: "round", strokeLinejoin: "round" }), [[0, 66], [43, 58], [86, 60], [130, 42], [173, 34], [216, 22], [260, 10]].map(([x, y], i) => /* @__PURE__ */ React.createElement("circle", { key: i, cx: x, cy: y, r: "3.5", fill: "var(--accent)" }))), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: "var(--ink-3)", fontWeight: 600, margin: "2px 0 12px" } }, "IELTS band trend \xB7 last 7 mocks"), [["Listening", 86, "#16a34a"], ["Reading", 74, "#0ea5e9"], ["Writing", 62, "#f59e0b"]].map(([s, w, c]) => /* @__PURE__ */ React.createElement("div", { key: s, style: { marginBottom: 9 } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", fontSize: 12, fontWeight: 600, marginBottom: 4 } }, /* @__PURE__ */ React.createElement("span", null, s), /* @__PURE__ */ React.createElement("span", { style: { color: c } }, w, "%")), /* @__PURE__ */ React.createElement("div", { style: { height: 7, borderRadius: 999, background: "var(--line)" } }, /* @__PURE__ */ React.createElement("div", { style: { width: w + "%", height: "100%", borderRadius: 999, background: c } })))))))), /* @__PURE__ */ React.createElement("section", { className: "section seo-content", style: { background: "var(--surface-2)", borderTop: "1px solid var(--line)", paddingTop: 18, paddingBottom: 18 } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("details", { className: "seo-disclosure reveal" }, /* @__PURE__ */ React.createElement("summary", null, "Free IELTS, TOEFL, PTE, GRE & GMAT mock tests + a complete study-abroad toolkit"), /* @__PURE__ */ React.createElement("div", { className: "seo-content-inner" }, /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("strong", null, "LandingPrep"), " is a 100% free platform that takes you from your first mock test all the way to your campus abroad. Practise ", /* @__PURE__ */ React.createElement("a", { href: "#/exam-hub/ielts", onClick: (e) => {
+  ].map(([ic, tone, t, d, id]) => /* @__PURE__ */ React.createElement("button", { key: id, className: "hp-tool-card", onClick: () => onNav(id) }, /* @__PURE__ */ React.createElement("span", { className: "hp-tool-ic" }, /* @__PURE__ */ React.createElement(IcChip, { name: ic, tone })), /* @__PURE__ */ React.createElement("span", { className: "hp-tool-t" }, t), /* @__PURE__ */ React.createElement("span", { className: "hp-tool-d" }, d)))))), /* @__PURE__ */ React.createElement("section", { className: "section" }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "card-cta reveal" }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Free Learning Club \xB7 200+ topics"), /* @__PURE__ */ React.createElement("h2", { className: "h1" }, "Topics, model answers,", /* @__PURE__ */ React.createElement("br", null), "and vocabulary you can actually use."), /* @__PURE__ */ React.createElement("p", { className: "body-lg muted", style: { maxWidth: 640, marginTop: 8 } }, "30+ writing prompts and 30+ speaking topics per English exam. GRE issue tasks and GMAT data insight walk-throughs. Every answer at full word count, every word with usage examples."), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12", style: { marginTop: 18 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNav("learning") }, "Open Learning Club"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("agents") }, "Try Speaking & Writing"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("blog") }, "Study tips & strategy"))))), /* @__PURE__ */ React.createElement("section", { className: "section", style: { background: "var(--surface-2)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "card-cta reveal" }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Free tool \xB7 No signup"), /* @__PURE__ */ React.createElement("h2", { className: "h1" }, "Score & eligibility checker"), /* @__PURE__ */ React.createElement("p", { className: "body-lg muted", style: { maxWidth: 640, marginTop: 8 } }, "Convert your score across IELTS, TOEFL, PTE, CELPIP & Duolingo, see your CEFR level, and find out which universities and visas you qualify for."), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12", style: { marginTop: 18 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => onNav("tools") }, "Open Score & Eligibility \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn", onClick: () => onNav("colleges") }, "\u{1F9ED} Build my study-abroad plan"))))), /* @__PURE__ */ React.createElement("section", { className: "section" }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "section-header reveal" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Loved by test-takers worldwide"), /* @__PURE__ */ React.createElement("h2", { className: "h1" }, "Real results, zero cost."), /* @__PURE__ */ React.createElement("p", { className: "muted", style: { maxWidth: 640, marginTop: 10 } }, "Students across India, Canada, Australia, the US and beyond reach their target scores with LandingPrep \u2014 free."))), /* @__PURE__ */ React.createElement(Reviews, null))), /* @__PURE__ */ React.createElement(LatestGuides, null), /* @__PURE__ */ React.createElement(GuideDownload, null), /* @__PURE__ */ React.createElement("section", { className: "section faq-section", style: { background: "var(--surface-2)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "section-header reveal" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Frequently asked questions"), /* @__PURE__ */ React.createElement("h2", { className: "h1" }, "Everything you need to know"), /* @__PURE__ */ React.createElement("p", { className: "muted", style: { maxWidth: 640, marginTop: 10 } }, "Free exam prep and study-abroad guidance for students worldwide \u2014 answered. Switch between exam and study-abroad questions below."))), /* @__PURE__ */ React.createElement("div", { className: "faq-tabs reveal" }, /* @__PURE__ */ React.createElement("button", { className: "faq-tab" + (faqTab === "exams" ? " active" : ""), onClick: () => setFaqTab("exams") }, "\u{1F4DD} Exam prep"), /* @__PURE__ */ React.createElement("button", { className: "faq-tab" + (faqTab === "abroad" ? " active" : ""), onClick: () => setFaqTab("abroad") }, "\u{1F30D} Study abroad")), /* @__PURE__ */ React.createElement("div", { className: "faq-list reveal", key: faqTab }, faqActive.map((f, i) => /* @__PURE__ */ React.createElement("details", { className: "faq-item", key: i }, /* @__PURE__ */ React.createElement("summary", null, f.q, /* @__PURE__ */ React.createElement("span", { className: "faq-toggle", "aria-hidden": true }, "+")), /* @__PURE__ */ React.createElement("div", { className: "faq-answer" }, f.a))), faqTab === "abroad" && /* @__PURE__ */ React.createElement("button", { className: "btn", style: { marginTop: 16 }, onClick: () => onNav("colleges") }, "See the full study-abroad FAQ \u2192")))), /* @__PURE__ */ React.createElement("section", { className: "section", style: { paddingTop: 0 } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "card-signup reveal", style: { display: "flex", gap: 28, alignItems: "center", flexWrap: "wrap", justifyContent: "space-between" } }, /* @__PURE__ */ React.createElement("div", { style: { flex: "1 1 320px" } }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow" }, "Optional \xB7 Free account"), /* @__PURE__ */ React.createElement("h2", { className: "h2", style: { marginTop: 4 } }, "Track your progress over time"), /* @__PURE__ */ React.createElement("p", { className: "muted", style: { marginTop: 6, maxWidth: 540 } }, "Sign in to save your test history, track streaks, see skill splits across all exams, and continue where you left off \u2014 on any device."), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary btn-lg", style: { marginTop: 16 }, onClick: () => onNav("login") }, "Create free account")), /* @__PURE__ */ React.createElement("div", { "aria-hidden": "true", style: { flex: "0 0 300px", maxWidth: 300, background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 16, padding: 18, boxShadow: "var(--shadow, 0 10px 28px -14px rgba(16,24,40,.18))" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 13, fontWeight: 700 } }, /* @__PURE__ */ React.createElement("span", { style: { color: "#f59e0b" } }, "\u{1F525} 7-day streak"), /* @__PURE__ */ React.createElement("span", { style: { color: "var(--ink-3)" } }, "Level 4 \xB7 532 XP")), /* @__PURE__ */ React.createElement("svg", { viewBox: "0 0 260 80", style: { width: "100%", height: 78, marginTop: 12 } }, /* @__PURE__ */ React.createElement("polyline", { points: "0,66 43,58 86,60 130,42 173,34 216,22 260,10", fill: "none", stroke: "var(--accent)", strokeWidth: "3", strokeLinecap: "round", strokeLinejoin: "round" }), [[0, 66], [43, 58], [86, 60], [130, 42], [173, 34], [216, 22], [260, 10]].map(([x, y], i) => /* @__PURE__ */ React.createElement("circle", { key: i, cx: x, cy: y, r: "3.5", fill: "var(--accent)" }))), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: "var(--ink-3)", fontWeight: 600, margin: "2px 0 12px" } }, "IELTS band trend \xB7 last 7 mocks"), [["Listening", 86, "#16a34a"], ["Reading", 74, "#0ea5e9"], ["Writing", 62, "#f59e0b"]].map(([s, w, c]) => /* @__PURE__ */ React.createElement("div", { key: s, style: { marginBottom: 9 } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", fontSize: 12, fontWeight: 600, marginBottom: 4 } }, /* @__PURE__ */ React.createElement("span", null, s), /* @__PURE__ */ React.createElement("span", { style: { color: c } }, w, "%")), /* @__PURE__ */ React.createElement("div", { style: { height: 7, borderRadius: 999, background: "var(--line)" } }, /* @__PURE__ */ React.createElement("div", { style: { width: w + "%", height: "100%", borderRadius: 999, background: c } })))))))), /* @__PURE__ */ React.createElement("section", { className: "section seo-content", style: { background: "var(--surface-2)", borderTop: "1px solid var(--line)", paddingTop: 18, paddingBottom: 18 } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("details", { className: "seo-disclosure reveal" }, /* @__PURE__ */ React.createElement("summary", null, "Free IELTS, TOEFL, PTE, GRE & GMAT mock tests + a complete study-abroad toolkit"), /* @__PURE__ */ React.createElement("div", { className: "seo-content-inner" }, /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("strong", null, "LandingPrep"), " is a 100% free platform that takes you from your first mock test all the way to your campus abroad. Practise ", /* @__PURE__ */ React.createElement("a", { href: "#/exam-hub/ielts", onClick: (e) => {
     e.preventDefault();
     onGuide(exams[0]);
   } }, "IELTS"), ", TOEFL iBT, PTE Academic, CELPIP, the Duolingo English Test, GRE and GMAT Focus with 1,000+ full-length ", /* @__PURE__ */ React.createElement("a", { href: "#/exam-prep", onClick: (e) => {
@@ -6192,8 +6234,7 @@ function TopBar({ current = "home", onNav }) {
   };
   const items = [
     ["home", "Home"],
-    ["exam-prep", "Mock Tests"],
-    ["exams", "Exam Guides"],
+    ["exam-prep", "Exams"],
     ["learn", "Learn"],
     ["colleges", "Study Abroad"],
     ["tools", "Tools"],
@@ -6202,8 +6243,7 @@ function TopBar({ current = "home", onNav }) {
   ];
   const drawerItems = [
     ["home", "Home"],
-    ["exam-prep", "Mock Tests"],
-    ["exams", "Exam Guides"],
+    ["exam-prep", "\u{1F4DD} Exams (mocks + guides)"],
     ["learn", "\u{1F4DA} Learn (Lessons + Club)"],
     ["writing-checker", "\u{1F3AF} Band-Score Checker"],
     ["vocabulary", "\u{1F4D6} Vocabulary"],
@@ -6220,7 +6260,7 @@ function TopBar({ current = "home", onNav }) {
     if (window.history.length > 1) window.history.back();
     else onNav && onNav("home");
   };
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("header", { className: "topbar" }, /* @__PURE__ */ React.createElement("div", { className: "shell topbar-inner" }, /* @__PURE__ */ React.createElement("div", { className: "topbar-left" }, /* @__PURE__ */ React.createElement("button", { className: "brand", onClick: () => onNav && onNav("home"), style: { background: "transparent" } }, /* @__PURE__ */ React.createElement(LPLogo, { size: 32 }), /* @__PURE__ */ React.createElement("span", { className: "brand-name" }, "LandingPrep"))), /* @__PURE__ */ React.createElement("nav", { className: "nav" }, items.map(([id, label]) => /* @__PURE__ */ React.createElement("a", { key: id, className: current === id ? "is-on" : "", onClick: (e) => {
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("header", { className: "topbar" }, /* @__PURE__ */ React.createElement("div", { className: "shell topbar-inner" }, /* @__PURE__ */ React.createElement("div", { className: "topbar-left" }, /* @__PURE__ */ React.createElement("button", { className: "brand", onClick: () => onNav && onNav("home"), style: { background: "transparent" } }, /* @__PURE__ */ React.createElement(LPLogo, { size: 32 }), /* @__PURE__ */ React.createElement("span", { className: "brand-name" }, "LandingPrep"))), /* @__PURE__ */ React.createElement("nav", { className: "nav" }, items.map(([id, label]) => /* @__PURE__ */ React.createElement("a", { key: id, className: current === id || id === "exam-prep" && current === "exams" ? "is-on" : "", onClick: (e) => {
     e.preventDefault();
     onNav && onNav(id);
   }, href: "#" }, label))), /* @__PURE__ */ React.createElement("div", { className: "topbar-actions" }, canInstall && /* @__PURE__ */ React.createElement("button", { className: "topbar-icon-btn", onClick: installApp, "aria-label": "Install app", title: "Install LandingPrep app" }, "\u2B07\uFE0F"), /* @__PURE__ */ React.createElement("button", { className: "topbar-icon-btn", onClick: toggleDark, "aria-label": "Toggle night study mode", title: dark ? "Switch to light mode" : "Night study (dark mode)" }, dark ? "\u2600\uFE0F" : "\u{1F319}"), user ? /* @__PURE__ */ React.createElement("button", { className: "topbar-profile", onClick: () => onNav && onNav("progress"), title: user.email }, /* @__PURE__ */ React.createElement("span", { className: "user-avatar", "aria-hidden": true }, ((_b = (_a = user.name) == null ? void 0 : _a[0]) == null ? void 0 : _b.toUpperCase()) || "U"), /* @__PURE__ */ React.createElement("span", { className: "tp-name" }, ((_c = user.name) == null ? void 0 : _c.split(" ")[0]) || "Account")) : /* @__PURE__ */ React.createElement("button", { className: "topbar-auth", onClick: () => onNav && onNav("login") }, "Log in / Sign up"), /* @__PURE__ */ React.createElement("button", { className: "menu-btn", "aria-label": "Menu", onClick: () => setOpen(true) }, /* @__PURE__ */ React.createElement("span", null), /* @__PURE__ */ React.createElement("span", null), /* @__PURE__ */ React.createElement("span", null))))), current !== "home" && /* @__PURE__ */ React.createElement("div", { className: "page-back" }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("button", { className: "back-inline", onClick: goBack, "aria-label": "Go back to the previous page" }, /* @__PURE__ */ React.createElement("span", { "aria-hidden": true }, "\u2190"), " Back"))), window.LP_TTS && /* @__PURE__ */ React.createElement(window.LP_TTS.SettingsModal, { open: settingsOpen, onClose: closeSettings }), open && /* @__PURE__ */ React.createElement("div", { className: "drawer is-open", onClick: () => setOpen(false) }, /* @__PURE__ */ React.createElement("aside", { className: "drawer-panel", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement("button", { className: "drawer-close", onClick: () => setOpen(false) }, "\xD7"), drawerItems.map(([id, label]) => /* @__PURE__ */ React.createElement("a", { key: id, href: "#", onClick: (e) => {
@@ -7741,7 +7781,27 @@ window.LP_LearningClub = LearningClub;
         /* @__PURE__ */ React.createElement("div", { className: "ep-exam-icon", style: { background: brand.color + "18", color: brand.color } }, brand.icon),
         /* @__PURE__ */ React.createElement("div", { className: "ep-exam-name" }, c.label || eid.toUpperCase()),
         /* @__PURE__ */ React.createElement("div", { className: "ep-exam-tag" }, brand.tagline),
-        /* @__PURE__ */ React.createElement("div", { className: "ep-exam-stats" }, /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("strong", null, c.full || 0), " full mocks"), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("strong", null, c.total - (c.full || 0)), " section tests"))
+        /* @__PURE__ */ React.createElement("div", { className: "ep-exam-stats" }, /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("strong", null, c.full || 0), " full mocks"), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("strong", null, c.total - (c.full || 0)), " section tests")),
+        /* @__PURE__ */ React.createElement(
+          "span",
+          {
+            className: "ep-exam-guide",
+            role: "link",
+            tabIndex: 0,
+            onClick: (e) => {
+              e.stopPropagation();
+              window.location.hash = "#/exam-hub/" + eid;
+            },
+            onKeyDown: (e) => {
+              if (e.key === "Enter") {
+                e.stopPropagation();
+                window.location.hash = "#/exam-hub/" + eid;
+              }
+            },
+            style: { display: "inline-block", marginTop: 10, fontSize: 13, fontWeight: 650, color: brand.color, textDecoration: "underline", textUnderlineOffset: 3, cursor: "pointer" }
+          },
+          "\u{1F4D6} Guide \u2014 pattern, fees & tips"
+        )
       );
     })));
   }
@@ -9365,31 +9425,53 @@ Student question: ${question}`;
 /* ══════════ screens/visa-interview.js ══════════ */
 ;"use strict";
 (function() {
-  const { useState } = React;
+  const { useState, useRef, useEffect } = React;
   const QUESTIONS = {
     USA: [
       { q: "Why do you want to study in the USA instead of your home country?", tip: "Name specific program strengths, faculty or research \u2014 not just 'better education'. Show genuine academic intent." },
       { q: "Why did you choose this particular university and course?", tip: "Mention the curriculum, professors, ranking for your field and how it fits your goals. Avoid 'it was easy to get in'." },
+      { q: "How many universities did you apply to, and which ones accepted you?", tip: "Answer honestly with numbers. Officers check whether this university was a considered choice, not a fallback." },
       { q: "Who is sponsoring your education and what do they do?", tip: "State your sponsor clearly, their occupation and that funds are sufficient and genuine. Have figures ready." },
+      { q: "What is your sponsor's annual income? How will you cover the total cost?", tip: "Know the exact numbers: annual income, tuition + living cost, and how much is savings vs loan. Vague finances are the #1 rejection reason." },
+      { q: "You have a gap year / backlogs \u2014 explain them.", tip: "Own it briefly: what you did in the gap (work, courses) or how you cleared backlogs. Never sound defensive or make excuses." },
       { q: "What are your plans after graduation?", tip: "Show ties to home / a clear career plan. For F-1, emphasise intent consistent with a temporary visa." },
-      { q: "Do you have relatives in the USA?", tip: "Answer honestly and briefly; disclose any relatives without over-explaining." }
+      { q: "Do you have relatives or friends in the USA?", tip: "Answer honestly and briefly; disclose any relatives without over-explaining. Inconsistency here is a credibility killer." },
+      { q: "Why should I approve your visa?", tip: "A 20-second closing summary: genuine student + strong academics + funds ready + clear plan. Calm confidence, no begging." }
     ],
     UK: [
       { q: "Why do you want to study in the UK?", tip: "Reference the one-year master's, your course content and career relevance \u2014 be specific." },
-      { q: "How will you fund your studies and living costs?", tip: "Show maintenance funds meeting UKVI requirements held for the required period; mention any scholarship/loan." },
-      { q: "What do you know about your university and course modules?", tip: "Name 2\u20133 modules and why they matter to your goals \u2014 proves you're a genuine student." },
-      { q: "What are your plans after completing your degree?", tip: "Mention the Graduate Route and a credible career direction." }
+      { q: "Why this university? What other offers did you have?", tip: "Compare honestly \u2014 mention rankings for your subject, modules or industry links that decided it." },
+      { q: "How will you fund your studies and living costs?", tip: "Show maintenance funds meeting UKVI requirements held for the required 28 days; mention any scholarship/loan." },
+      { q: "What do you know about your course modules?", tip: "Name 2\u20133 modules and why they matter to your goals \u2014 proves you're a genuine student." },
+      { q: "Where will you live, and what are your estimated monthly costs?", tip: "Know your city's realistic rent + living costs (London vs elsewhere differ). Shows real preparation." },
+      { q: "What are your plans after completing your degree?", tip: "Mention the Graduate Route honestly and a credible career direction." }
     ],
     Canada: [
       { q: "Why did you choose to study in Canada?", tip: "Talk about your program, the institution (a DLI) and Canada's strengths in your field." },
-      { q: "How will you finance your studies and stay?", tip: "Reference your GIC, tuition payment and proof of funds; be precise with amounts." },
-      { q: "Will you return to your home country after your studies?", tip: "Show ties and a plan; if pursuing PGWP/PR, be honest and consistent." },
+      { q: "How will you finance your studies and stay?", tip: "Reference your GIC, first-year tuition payment and proof of funds; be precise with amounts." },
+      { q: "Why this program \u2014 how does it connect to your past studies or work?", tip: "Draw a clear line: background \u2192 this program \u2192 career. A logical study plan is what officers look for." },
+      { q: "Will you return to your home country after your studies?", tip: "Show ties and a plan; if pursuing PGWP/PR, be honest and consistent \u2014 never contradict your SOP." },
       { q: "Why this college and not one in your home country?", tip: "Highlight specific program quality, co-op options and outcomes." }
     ],
     Australia: [
       { q: "Why do you want to study in Australia (Genuine Student)?", tip: "Explain your course choice, career relevance and why now \u2014 the GS test assesses genuine intent." },
-      { q: "How will you support yourself financially?", tip: "Show funds meeting the savings requirement (AUD ~29,710) plus tuition." },
+      { q: "How will you support yourself financially?", tip: "Show funds meeting the savings requirement (about AUD 29,710/yr living) plus tuition." },
+      { q: "What do you know about your course structure and the institution?", tip: "Name the units/majors and why they fit. Generic answers fail the Genuine Student assessment." },
+      { q: "Have you ever been refused a visa for any country?", tip: "Disclose truthfully \u2014 refusals are on record, and hiding one is worse than having one." },
       { q: "What are your plans after your course finishes?", tip: "Give a credible plan; you can mention the 485 visa honestly." }
+    ],
+    Germany: [
+      { q: "Why do you want to study in Germany?", tip: "Mention low/zero tuition honestly but LEAD with academics: the program, the university's strength in your field, industry links." },
+      { q: "How will you finance your stay?", tip: "Reference your blocked account (Sperrkonto, ~EUR 11,904/yr) and who funded it. Precise figures build credibility." },
+      { q: "Why this course, and what do you know about its contents?", tip: "Name modules and how they build on your bachelor's. German officers probe academic fit hard." },
+      { q: "Do you speak German? How will you manage daily life?", tip: "Be honest about your level; mention any A1/A2 course and willingness to learn \u2014 it signals genuine settlement readiness." },
+      { q: "What will you do after graduating?", tip: "You can honestly mention the 18-month job-seeker residence permit and your target industry in Germany or home." }
+    ],
+    Ireland: [
+      { q: "Why did you choose Ireland for your studies?", tip: "Mention your course, the university, and Ireland's strengths (tech/pharma hub, English-speaking EU) \u2014 specific to YOUR field." },
+      { q: "How are you funding your education?", tip: "Show tuition paid/payable plus the ~EUR 10,000 living funds requirement; name the source." },
+      { q: "What do you know about your college and course?", tip: "Name modules, duration and why this program over alternatives \u2014 genuine-student evidence." },
+      { q: "What are your plans after finishing your course?", tip: "You can honestly mention the Third Level Graduate Programme (up to 24 months) and a clear career direction." }
     ]
   };
   const COUNTRIES = Object.keys(QUESTIONS);
@@ -9400,10 +9482,40 @@ Student question: ${question}`;
     const [answer, setAnswer] = useState("");
     const [fb, setFb] = useState(null);
     const [busy, setBusy] = useState(false);
+    const [listening, setListening] = useState(false);
+    const recogRef = useRef(null);
     const list = QUESTIONS[c];
     const cur = list[idx];
+    const micSupported = !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+    const startMic = () => {
+      const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SR) return;
+      const recog = new SR();
+      recog.lang = "en-US";
+      recog.continuous = true;
+      recog.interimResults = true;
+      recog.onresult = (e) => {
+        let t = "";
+        for (let i = 0; i < e.results.length; i++) t += e.results[i][0].transcript + " ";
+        setAnswer(t.trim());
+      };
+      recog.onerror = () => setListening(false);
+      recog.onend = () => setListening(false);
+      recogRef.current = recog;
+      setListening(true);
+      recog.start();
+    };
+    const stopMic = () => {
+      try {
+        recogRef.current && recogRef.current.stop();
+      } catch (e) {
+      }
+      setListening(false);
+    };
+    useEffect(() => () => stopMic(), []);
     const review = async () => {
       if (!answer.trim()) return;
+      stopMic();
       setBusy(true);
       setFb(null);
       const prompt = `You are a ${c} student-visa officer and coach. The applicant was asked: "${cur.q}". Their answer: "${answer.trim()}". In under 140 words give: (1) a credibility score out of 10, (2) what worked, (3) 2 specific improvements, (4) one red flag to avoid. Be direct and practical.`;
@@ -9420,16 +9532,35 @@ Student question: ${question}`;
       setBusy(false);
     };
     const next = () => {
+      stopMic();
       setIdx((i) => (i + 1) % list.length);
       setAnswer("");
       setFb(null);
     };
-    return /* @__PURE__ */ React.createElement("div", { className: "visa-panel" }, /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h2", null, "\u{1F6C2} Visa Interview \u2014 Mock & Coach"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Practise real student-visa interview questions and get instant feedback on credibility, clarity and red flags."), /* @__PURE__ */ React.createElement("div", { className: "tool-row" }, /* @__PURE__ */ React.createElement("label", null, "Destination", /* @__PURE__ */ React.createElement("select", { value: c, onChange: (e) => {
+    return /* @__PURE__ */ React.createElement("div", { className: "visa-panel" }, /* @__PURE__ */ React.createElement("div", { className: "tool-card" }, /* @__PURE__ */ React.createElement("h2", null, "\u{1F6C2} Visa Interview \u2014 Mock & Coach"), /* @__PURE__ */ React.createElement("p", { className: "tool-sub" }, "Practise real student-visa interview questions ", /* @__PURE__ */ React.createElement("strong", null, "out loud"), " \u2014 speak your answer into the mic (or type it) and get instant feedback on credibility, clarity and red flags."), /* @__PURE__ */ React.createElement("div", { className: "tool-row" }, /* @__PURE__ */ React.createElement("label", null, "Destination", /* @__PURE__ */ React.createElement("select", { value: c, onChange: (e) => {
+      stopMic();
       setC(e.target.value);
       setIdx(0);
       setAnswer("");
       setFb(null);
-    } }, COUNTRIES.map((x) => /* @__PURE__ */ React.createElement("option", { key: x, value: x }, x)))), /* @__PURE__ */ React.createElement("div", { className: "visa-progress" }, "Question ", idx + 1, " of ", list.length))), /* @__PURE__ */ React.createElement("div", { className: "tool-card visa-q-card" }, /* @__PURE__ */ React.createElement("div", { className: "visa-q" }, "\u2753 ", cur.q), /* @__PURE__ */ React.createElement("textarea", { className: "visa-answer", rows: 4, value: answer, onChange: (e) => setAnswer(e.target.value), placeholder: "Type your answer as you would say it to the officer\u2026" }), /* @__PURE__ */ React.createElement("div", { className: "visa-btns" }, /* @__PURE__ */ React.createElement("button", { className: "tool-btn", onClick: review, disabled: busy || !answer.trim() }, busy ? "\u2728 Reviewing\u2026" : "\u2728 Get instant feedback"), /* @__PURE__ */ React.createElement("button", { className: "tool-btn ghost", onClick: next }, "Next question \u2192")), !fb && /* @__PURE__ */ React.createElement("p", { className: "visa-tip" }, "\u{1F4A1} ", /* @__PURE__ */ React.createElement("strong", null, "Tip:"), " ", cur.tip), fb && /* @__PURE__ */ React.createElement("div", { className: "visa-feedback md-body" }, window.LP_MD ? window.LP_MD(fb) : fb.split("\n").map((ln, i) => /* @__PURE__ */ React.createElement("p", { key: i }, ln)))), /* @__PURE__ */ React.createElement("p", { className: "tool-note" }, "Practice tool only \u2014 real interviews vary. Always answer truthfully and consistently with your documents."));
+    } }, COUNTRIES.map((x) => /* @__PURE__ */ React.createElement("option", { key: x, value: x }, x)))), /* @__PURE__ */ React.createElement("div", { className: "visa-progress" }, "Question ", idx + 1, " of ", list.length))), /* @__PURE__ */ React.createElement("div", { className: "tool-card visa-q-card" }, /* @__PURE__ */ React.createElement("div", { className: "visa-q" }, "\u2753 ", cur.q), /* @__PURE__ */ React.createElement(
+      "textarea",
+      {
+        className: "visa-answer",
+        rows: 4,
+        value: answer,
+        onChange: (e) => setAnswer(e.target.value),
+        placeholder: micSupported ? "Tap \u{1F3A4} and answer aloud like you would to the officer \u2014 or type here\u2026" : "Type your answer as you would say it to the officer\u2026"
+      }
+    ), /* @__PURE__ */ React.createElement("div", { className: "visa-btns" }, micSupported && /* @__PURE__ */ React.createElement(
+      "button",
+      {
+        className: "tool-btn" + (listening ? "" : " ghost"),
+        onClick: listening ? stopMic : startMic,
+        style: listening ? { background: "#dc2626", color: "#fff", border: "none" } : void 0
+      },
+      listening ? "\u23F9 Stop \u2014 I'm done" : "\u{1F3A4} Answer aloud"
+    ), /* @__PURE__ */ React.createElement("button", { className: "tool-btn", onClick: review, disabled: busy || !answer.trim() }, busy ? "\u2728 Reviewing\u2026" : "\u2728 Get instant feedback"), /* @__PURE__ */ React.createElement("button", { className: "tool-btn ghost", onClick: next }, "Next question \u2192")), listening && /* @__PURE__ */ React.createElement("p", { className: "visa-tip", style: { color: "#dc2626", fontWeight: 600 } }, "\u25CF Listening\u2026 speak naturally, then press Stop."), !fb && !listening && /* @__PURE__ */ React.createElement("p", { className: "visa-tip" }, "\u{1F4A1} ", /* @__PURE__ */ React.createElement("strong", null, "Tip:"), " ", cur.tip), fb && /* @__PURE__ */ React.createElement("div", { className: "visa-feedback md-body" }, window.LP_MD ? window.LP_MD(fb) : fb.split("\n").map((ln, i) => /* @__PURE__ */ React.createElement("p", { key: i }, ln)))), /* @__PURE__ */ React.createElement("p", { className: "tool-note" }, "Practice tool only \u2014 real interviews vary. Always answer truthfully and consistently with your documents."));
   }
   window.LP_VisaInterviewPanel = VisaInterviewPanel;
 })();
