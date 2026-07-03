@@ -559,6 +559,45 @@ function MockTest({ exam, testCfg, onBack, onNav }) {
     setAnswers(prev => ({ ...prev, [qId]: val }));
   }
 
+  // ── TOEFL multi-stage adaptive: score stage 1, then swap in the routed
+  // stage-2 content (≥70% correct → hard, ≤35% → easy, else the mock's own
+  // medium content). sec.adaptive is attached by buildFullMockConfig. ──
+  function routeAdaptiveStage(sIdx) {
+    setConfig(prev => {
+      const sec = prev.sections[sIdx];
+      if (!sec || !sec.adaptive || sec.adaptiveRouted) return prev;
+      const stage1Qs = sec.adaptive.kind === "reading"
+        ? ((sec.passages[0] || {}).questions || [])
+        : sec.parts.slice(0, sec.adaptive.stage1Count).flatMap(p => p.questions || []);
+      let correct = 0;
+      for (const q of stage1Qs) {
+        const given = answers[sec.id + "_" + q.id];
+        if (given == null || given === "") continue;
+        if (q.type === "mcq_multi") {
+          const exp = (Array.isArray(q.answer) ? [...q.answer] : String(q.answer || "").split(",")).sort().join(",");
+          const got = (Array.isArray(given) ? [...given] : String(given || "").split(",")).sort().join(",");
+          if (got && got === exp) correct++;
+        } else if (given === q.answer) correct++;
+      }
+      const pct = stage1Qs.length ? correct / stage1Qs.length : 0;
+      const path = pct >= 0.7 ? "hard" : pct <= 0.35 ? "easy" : "medium";
+      const next = { ...sec, adaptiveRouted: path };
+      if (sec.adaptive.kind === "reading") {
+        const alt = path === "medium" ? sec.passages[1] : sec.adaptive.alternates[path];
+        next.passages = [sec.passages[0], alt].filter(Boolean);
+      } else {
+        const stage1 = sec.parts.slice(0, sec.adaptive.stage1Count);
+        const alt = path === "medium"
+          ? sec.parts.slice(sec.adaptive.stage1Count)
+          : sec.adaptive.alternates[path];
+        next.parts = stage1.concat((alt || []).map((p, i) => ({ ...p, partNum: stage1.length + i + 1 })));
+      }
+      const sections = prev.sections.slice();
+      sections[sIdx] = next;
+      return { ...prev, sections };
+    });
+  }
+
   function playAudio(script) {
     stopAudio();
     if (!window.speechSynthesis) return;
@@ -660,7 +699,8 @@ function MockTest({ exam, testCfg, onBack, onNav }) {
 
         <div className="question-layout">
           {sec.type === "listening" && (
-            <ListeningSection sec={sec} answers={answers} setAnswer={setAnswer} sectionId={sec.id} />
+            <ListeningSection sec={sec} answers={answers} setAnswer={setAnswer} sectionId={sec.id}
+              onRouteStage={() => routeAdaptiveStage(sectionIdx)} />
           )}
           {sec.type === "pte_reading" && window.LP_PTE_RENDERER && (
             <window.LP_PTE_RENDERER.PTEReadingSection sec={sec} answers={answers} setAnswer={setAnswer} sectionId={sec.id} />
@@ -683,7 +723,8 @@ function MockTest({ exam, testCfg, onBack, onNav }) {
           )}
           {/* Generic reading renderer (IELTS/TOEFL/GRE/GMAT style) */}
           {sec.type === "reading" && !sec.isCelpip && (
-            <ReadingSection sec={sec} answers={answers} setAnswer={setAnswer} sectionId={sec.id} />
+            <ReadingSection sec={sec} answers={answers} setAnswer={setAnswer} sectionId={sec.id}
+              onRouteStage={() => routeAdaptiveStage(sectionIdx)} />
           )}
           {/* Generic writing renderer (IELTS/TOEFL/GRE/GMAT) */}
           {(sec.type === "writing" || sec.type === "writing_aw") && !sec.isCelpip && (
@@ -936,14 +977,18 @@ function SceneImage({ scene }) {
   );
 }
 
-function ListeningSection({ sec, answers, setAnswer, sectionId }) {
+function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) {
   const [partIdx, setPartIdx] = useStateT(0);
   const [playing, setPlaying] = useStateT(false);
   const [played, setPlayed] = useStateT({});
   const [progress, setProgress] = useStateT(null);
   const [revealed, setRevealed] = useStateT({}); // CELPIP: which parts have moved to the answer phase
   const abortRef = useRefT(null);
-  const parts = sec.parts || [];
+  // TOEFL adaptive: only stage-1 parts are visible until stage 1 is submitted
+  const adaptiveGated = !!(sec.adaptive && !sec.adaptiveRouted);
+  const parts = adaptiveGated
+    ? (sec.parts || []).slice(0, sec.adaptive.stage1Count || 2)
+    : (sec.parts || []);
   const current = parts[partIdx];
 
   useEffectT(() => () => { stopAllSpeech(); abortRef.current?.abort?.(); }, []);
@@ -1132,6 +1177,25 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
         onPrevPart={() => goToPart(Math.max(0, partIdx - 1))}
         onNextPart={() => goToPart(Math.min(parts.length - 1, partIdx + 1))}
       />}
+
+      {adaptiveGated && (
+        <div className="q-section-header" style={{ marginTop: 20, padding: 16, border: "1px solid var(--line)", borderRadius: 12 }}>
+          <div className="qsh-range">Multi-stage adaptive · Stage 1</div>
+          <div className="qsh-instruction">
+            Like the real 2026 TOEFL, your Stage-2 listening block adapts to how you do on
+            these first {parts.length} recordings. Submitting locks your Stage-1 answers.
+          </div>
+          <button className="btn btn-primary" style={{ marginTop: 10 }} onClick={onRouteStage}>
+            Submit Stage 1 → unlock Stage 2
+          </button>
+        </div>
+      )}
+      {sec.adaptiveRouted && (
+        <div className="qsh-instruction" style={{ marginTop: 14, padding: "10px 14px", background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 10 }}>
+          ✅ Stage 2 loaded — difficulty adjusted to your Stage-1 performance
+          (routed to the <strong>{sec.adaptiveRouted}</strong> block), just like the real TOEFL iBT.
+        </div>
+      )}
     </div>
   );
 }
@@ -1653,10 +1717,14 @@ function ListeningQuestions({ questions, answers, setAnswer, sectionId, partIdx,
 }
 
 /* ── Reading section — ONE question per page, side-by-side ── */
-function ReadingSection({ sec, answers, setAnswer, sectionId }) {
+function ReadingSection({ sec, answers, setAnswer, sectionId, onRouteStage }) {
   // Build flat question list with parent passage reference
   const flat = [];
-  const passages = sec.passages || [];
+  // TOEFL adaptive: only stage-1 passages are visible until stage 1 is submitted
+  const adaptiveGated = !!(sec.adaptive && !sec.adaptiveRouted);
+  const passages = adaptiveGated
+    ? (sec.passages || []).slice(0, sec.adaptive.stage1Count || 1)
+    : (sec.passages || []);
   const [pIdx, setPIdx] = useStateT(0);
   const [qIdxInPassage, setQIdxInPassage] = useStateT(0);
   useEffectT(() => { setPIdx(0); setQIdxInPassage(0); }, [sec.id]);
@@ -1783,6 +1851,26 @@ function ReadingSection({ sec, answers, setAnswer, sectionId }) {
               <button className="btn" disabled={pIdx === 0} onClick={() => setPIdx(Math.max(0, pIdx - 1))}>← Previous passage</button>
               <span className="qp-counter">Passage {pIdx + 1} of {passages.length} · {answeredInPassage}/{passageQs.length}</span>
               <button className="btn btn-primary" disabled={pIdx >= passages.length - 1} onClick={() => setPIdx(Math.min(passages.length - 1, pIdx + 1))}>Next passage →</button>
+            </div>
+          )}
+
+          {adaptiveGated && (
+            <div className="q-section-header" style={{ marginTop: 20, padding: 16, border: "1px solid var(--line)", borderRadius: 12 }}>
+              <div className="qsh-range">Multi-stage adaptive · Stage 1</div>
+              <div className="qsh-instruction">
+                Like the real 2026 TOEFL, your Stage-2 passage adapts to how you do here.
+                You have answered {answeredInPassage} of {passageQs.length} Stage-1 questions.
+                Submitting locks your Stage-1 answers.
+              </div>
+              <button className="btn btn-primary" style={{ marginTop: 10 }} onClick={onRouteStage}>
+                Submit Stage 1 → unlock Stage 2
+              </button>
+            </div>
+          )}
+          {sec.adaptiveRouted && (
+            <div className="qsh-instruction" style={{ marginTop: 14, padding: "10px 14px", background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 10 }}>
+              ✅ Stage 2 loaded — difficulty adjusted to your Stage-1 performance
+              (routed to the <strong>{sec.adaptiveRouted}</strong> passage), just like the real TOEFL iBT.
             </div>
           )}
         </div>
@@ -2729,7 +2817,14 @@ function scoreTest(config, answers) {
 
   for (const sec of config.sections) {
     if (sec.type === "listening" || sec.type === "reading" || sec.type === "reading_pte") {
-      const qs = getAllQuestions(sec);
+      let qs = getAllQuestions(sec);
+      // TOEFL adaptive section submitted without routing: the user never saw the
+      // stage-2 content, so score only the stage-1 questions they had access to.
+      if (sec.adaptive && !sec.adaptiveRouted) {
+        qs = sec.adaptive.kind === "reading"
+          ? (sec.passages || []).slice(0, sec.adaptive.stage1Count || 1).flatMap(p => p.questions || [])
+          : (sec.parts || []).slice(0, sec.adaptive.stage1Count || 2).flatMap(p => p.questions || []);
+      }
       let correct = 0;
       for (const q of qs) {
         const given = answers[sec.id + "_" + q.id];
@@ -2774,8 +2869,19 @@ function scoreTest(config, answers) {
           : window.LP_SCORE.ieltsReadingBand(correct);
         result.sections[sec.id] = { correct, total: qs.length, band, pct: Math.round(pct*100), label: sec.name };
       } else {
-        const scaled = scaleScore(pct);
-        result.sections[sec.id] = { correct, total: qs.length, band: scaled, pct: Math.round(pct*100), label: sec.name };
+        let scaled = scaleScore(pct);
+        // TOEFL adaptive: the 0–30 scale is path-aware, mirroring how ETS scales
+        // multi-stage results — a hard route scores from a higher band, an easy
+        // route is capped lower.
+        if (examId === "toefl" && sec.adaptiveRouted) {
+          scaled = sec.adaptiveRouted === "hard" ? Math.round(12 + pct * 18)
+                 : sec.adaptiveRouted === "easy" ? Math.round(pct * 20)
+                 : Math.round(6 + pct * 21);
+        }
+        const label = sec.adaptiveRouted
+          ? sec.name + " · routed to " + sec.adaptiveRouted + " Stage 2"
+          : sec.name;
+        result.sections[sec.id] = { correct, total: qs.length, band: scaled, pct: Math.round(pct*100), label };
       }
     } else if (sec.type === "writing" || sec.type === "writing_aw") {
       const tasks = sec.tasks || [];

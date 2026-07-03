@@ -700,6 +700,68 @@
       sections: [secObj]
     };
   }
+  let adaptiveIndexPromise = null;
+  function loadAdaptiveIndex() {
+    if (!adaptiveIndexPromise) {
+      adaptiveIndexPromise = fetch("content/toefl/adaptive-index.json?v=1").then((r) => r.ok ? r.json() : null).catch(() => null);
+    }
+    return adaptiveIndexPromise;
+  }
+  function hashPick(arr, seed, excludeFile) {
+    const pool = (arr || []).filter((e) => e.file !== excludeFile);
+    if (!pool.length) return null;
+    let h = 0;
+    for (let i = 0; i < seed.length; i++) h = h * 31 + seed.charCodeAt(i) >>> 0;
+    return pool[h % pool.length];
+  }
+  async function attachToeflAdaptive(sectionConfigs, mockComposition, loadTest) {
+    const idx = await loadAdaptiveIndex();
+    if (!idx) return;
+    const seed = String(mockComposition.id || "toefl");
+    const refBysection = {};
+    for (const r of mockComposition.sections || []) refBysection[r.section] = r;
+    const reading = sectionConfigs.find((s) => s.id === "reading" && s.type === "reading");
+    if (reading && (reading.passages || []).length >= 2) {
+      const ownFile = (refBysection.reading || {}).file;
+      const alternates = {};
+      for (const tier of ["easy", "hard"]) {
+        const pick = hashPick(idx.reading[tier], seed + tier, ownFile);
+        if (!pick) continue;
+        try {
+          const altTest = await loadTest(pick.file);
+          const norm = normaliseReading(altTest);
+          const p = (norm.passages || []).find((x) => x.id === pick.passageId) || norm.passages[0];
+          if (p && (p.questions || []).length) alternates[tier] = p;
+        } catch (e) {
+        }
+      }
+      if (alternates.easy && alternates.hard) {
+        reading.adaptive = { kind: "reading", stage1Count: 1, alternates };
+      }
+    }
+    const listening = sectionConfigs.find((s) => s.id === "listening" && s.type === "listening");
+    if (listening && (listening.parts || []).length >= 4) {
+      const ownFile = (refBysection.listening || {}).file;
+      const stage2Count = listening.parts.length - 2;
+      const alternates = {};
+      for (const tier of ["easy", "hard"]) {
+        const pick = hashPick(idx.listening[tier], seed + tier, ownFile);
+        if (!pick) continue;
+        try {
+          const altTest = await loadTest(pick.file);
+          const norm = normaliseListening(altTest);
+          const parts = (norm.parts || []).slice(-stage2Count);
+          if (parts.length === stage2Count && parts.every((p) => (p.questions || []).length)) {
+            alternates[tier] = parts;
+          }
+        } catch (e) {
+        }
+      }
+      if (alternates.easy && alternates.hard) {
+        listening.adaptive = { kind: "listening", stage1Count: 2, alternates };
+      }
+    }
+  }
   async function buildFullMockConfig(mockComposition, loadTest) {
     const sectionConfigs = [];
     for (const ref of mockComposition.sections || []) {
@@ -709,6 +771,12 @@
         if (normal && normal.sections[0]) sectionConfigs.push(normal.sections[0]);
       } catch (e) {
         console.warn("Skipping section in full mock:", ref.section, e == null ? void 0 : e.message);
+      }
+    }
+    if (mockComposition.exam === "toefl") {
+      try {
+        await attachToeflAdaptive(sectionConfigs, mockComposition, loadTest);
+      } catch (e) {
       }
     }
     return {

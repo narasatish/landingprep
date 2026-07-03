@@ -126,7 +126,11 @@ check("all LP_* components referenced in app.jsx are defined", undefinedRefs.len
 check("PTE SW renderer registered", /window\.LP_PTE_SW\s*=/.test(read("screens/pte-sw-renderer.jsx")));
 check("PTE SW normaliser routes correctly", /normalisePteSpeakingWriting/.test(read("normalize-test.jsx")));
 check("PTE SW dispatched in mock-test", /sec\.type === "pte_sw"/.test(read("screens/mock-test.jsx")));
-check("pte-sw-renderer loaded in index.html", /pte-sw-renderer\.jsx?/.test(html));
+// Since v315 most scripts ship inside app-bundle.js — "loaded" means an eager
+// <script> in index.html OR membership in the bundle MANIFEST.
+const bundleManifest = read("scripts/make-bundle.mjs");
+const loaded = (name) => new RegExp(name + "\\.jsx?").test(html) || new RegExp(name + "\\.js").test(bundleManifest);
+check("pte-sw-renderer loaded (index.html or bundle)", loaded("pte-sw-renderer"));
 // visual renderer wired for the 4 visual paths
 check("VisualRenderer consumed by QuestionCard (GMAT DI)", /q\.visual && window\.LP_VisualRenderer/.test(read("screens/mock-test.jsx")));
 check("Blog in nav", /\["blog", "Blog"\]/.test(read("screens/home.jsx")));
@@ -148,7 +152,8 @@ check("every screen jsx is wired (eager tag or lazy-loaded)", (() => {
   // (allSrc = index.html + all jsx). This lets us defer heavy screens off the initial load.
   const miss = screens.filter(f => {
     const js = "screens/" + f.replace(/\.jsx$/, ".js");
-    return !html.includes("screens/" + f) && !html.includes(js) && !allSrc.includes(js);
+    return !html.includes("screens/" + f) && !html.includes(js) && !allSrc.includes(js)
+      && !bundleManifest.includes(js);
   });
   return miss.length === 0 || miss.join(",");
 })() === true, "some screens neither in index.html nor lazy-loaded");
@@ -205,7 +210,7 @@ check("icon.svg exists", exists("icon.svg"));
 check("manifest.json valid JSON", exists("manifest.json") && (() => { try { JSON.parse(read("manifest.json")); return true; } catch (e) { return false; } })());
 check("service worker exists & versioned", exists("sw.js") && /CACHE_VERSION\s*=\s*"lp-v\d+"/.test(read("sw.js")));
 check("visual renderer (charts/images) present", exists("visual-renderer.jsx") && /window\.LP_VisualRenderer/.test(read("visual-renderer.jsx")));
-check("TTS audio engine present & loaded", exists("gemini-tts.jsx") && /window\.LP_TTS/.test(read("gemini-tts.jsx")) && /gemini-tts\.jsx?/.test(html));
+check("TTS audio engine present & loaded", exists("gemini-tts.jsx") && /window\.LP_TTS/.test(read("gemini-tts.jsx")) && loaded("gemini-tts"));
 check("IELTS listening map scenes present", /SCENES|pickScene/.test(read("screens/mock-test.jsx")));
 check("og:image referenced", /og:image/.test(html));
 

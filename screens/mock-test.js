@@ -626,6 +626,37 @@ function MockTest({ exam, testCfg, onBack, onNav }) {
   function setAnswer(qId, val) {
     setAnswers((prev) => ({ ...prev, [qId]: val }));
   }
+  function routeAdaptiveStage(sIdx) {
+    setConfig((prev) => {
+      const sec = prev.sections[sIdx];
+      if (!sec || !sec.adaptive || sec.adaptiveRouted) return prev;
+      const stage1Qs = sec.adaptive.kind === "reading" ? (sec.passages[0] || {}).questions || [] : sec.parts.slice(0, sec.adaptive.stage1Count).flatMap((p) => p.questions || []);
+      let correct = 0;
+      for (const q of stage1Qs) {
+        const given = answers[sec.id + "_" + q.id];
+        if (given == null || given === "") continue;
+        if (q.type === "mcq_multi") {
+          const exp = (Array.isArray(q.answer) ? [...q.answer] : String(q.answer || "").split(",")).sort().join(",");
+          const got = (Array.isArray(given) ? [...given] : String(given || "").split(",")).sort().join(",");
+          if (got && got === exp) correct++;
+        } else if (given === q.answer) correct++;
+      }
+      const pct = stage1Qs.length ? correct / stage1Qs.length : 0;
+      const path = pct >= 0.7 ? "hard" : pct <= 0.35 ? "easy" : "medium";
+      const next = { ...sec, adaptiveRouted: path };
+      if (sec.adaptive.kind === "reading") {
+        const alt = path === "medium" ? sec.passages[1] : sec.adaptive.alternates[path];
+        next.passages = [sec.passages[0], alt].filter(Boolean);
+      } else {
+        const stage1 = sec.parts.slice(0, sec.adaptive.stage1Count);
+        const alt = path === "medium" ? sec.parts.slice(sec.adaptive.stage1Count) : sec.adaptive.alternates[path];
+        next.parts = stage1.concat((alt || []).map((p, i) => ({ ...p, partNum: stage1.length + i + 1 })));
+      }
+      const sections = prev.sections.slice();
+      sections[sIdx] = next;
+      return { ...prev, sections };
+    });
+  }
   function playAudio(script) {
     stopAudio();
     if (!window.speechSynthesis) return;
@@ -718,7 +749,25 @@ function MockTest({ exam, testCfg, onBack, onNav }) {
       },
       /* @__PURE__ */ React.createElement("span", { className: "sec-pill-icon" }, s.icon),
       /* @__PURE__ */ React.createElement("span", { className: "sec-pill-name" }, s.name)
-    ))), /* @__PURE__ */ React.createElement("div", { className: "test-progress-bar" }, /* @__PURE__ */ React.createElement("i", { style: { width: `${Math.min(100, answeredCount / Math.max(1, totalQ) * 100)}%` } })), /* @__PURE__ */ React.createElement("div", { className: "question-layout" }, sec.type === "listening" && /* @__PURE__ */ React.createElement(ListeningSection, { sec, answers, setAnswer, sectionId: sec.id }), sec.type === "pte_reading" && window.LP_PTE_RENDERER && /* @__PURE__ */ React.createElement(window.LP_PTE_RENDERER.PTEReadingSection, { sec, answers, setAnswer, sectionId: sec.id }), sec.type === "pte_listening" && window.LP_PTE_LISTENING && /* @__PURE__ */ React.createElement(window.LP_PTE_LISTENING.PTEListeningSection, { sec, answers, setAnswer, sectionId: sec.id }), sec.type === "pte_sw" && window.LP_PTE_SW && /* @__PURE__ */ React.createElement(window.LP_PTE_SW.PteSwSection, { sec, answers, setAnswer, sectionId: sec.id }), sec.type === "reading" && sec.isCelpip && sec.passages && ((_a = sec.passages[0]) == null ? void 0 : _a.type) && ["correspondence", "schedule", "viewpoints"].includes(sec.passages[0].type) && window.LP_CELPIP && /* @__PURE__ */ React.createElement(window.LP_CELPIP.CelpipReadingSection, { sec, answers, setAnswer: (id, v) => setAnswer(id, v) }), sec.type === "writing" && sec.isCelpip && window.LP_CELPIP && /* @__PURE__ */ React.createElement(window.LP_CELPIP.CelpipWritingSection, { sec, answers, setAnswer: (id, v) => setAnswer(id, v) }), sec.type === "speaking" && sec.isCelpip && window.LP_CELPIP && /* @__PURE__ */ React.createElement(window.LP_CELPIP.CelpipSpeakingSection, { sec, answers, setAnswer: (id, v) => setAnswer(id, v) }), sec.type === "reading" && !sec.isCelpip && /* @__PURE__ */ React.createElement(ReadingSection, { sec, answers, setAnswer, sectionId: sec.id }), (sec.type === "writing" || sec.type === "writing_aw") && !sec.isCelpip && /* @__PURE__ */ React.createElement(WritingSection, { sec, answers, setAnswer, sectionId: sec.id }), (sec.type === "speaking" || sec.type === "speaking_toefl") && !sec.isCelpip && /* @__PURE__ */ React.createElement(SpeakingSection, { sec, answers, setAnswer, sectionId: sec.id })), /* @__PURE__ */ React.createElement("div", { className: "question-nav-bar" }, /* @__PURE__ */ React.createElement("span", { className: "q-counter" }, Object.keys(answers).filter((k) => answers[k] !== "" && answers[k] != null).length, " answered"), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12" }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-sm", onClick: advanceSection }, sectionIdx < config.sections.length - 1 ? "Next section \u2192" : "Submit test \u2192"))));
+    ))), /* @__PURE__ */ React.createElement("div", { className: "test-progress-bar" }, /* @__PURE__ */ React.createElement("i", { style: { width: `${Math.min(100, answeredCount / Math.max(1, totalQ) * 100)}%` } })), /* @__PURE__ */ React.createElement("div", { className: "question-layout" }, sec.type === "listening" && /* @__PURE__ */ React.createElement(
+      ListeningSection,
+      {
+        sec,
+        answers,
+        setAnswer,
+        sectionId: sec.id,
+        onRouteStage: () => routeAdaptiveStage(sectionIdx)
+      }
+    ), sec.type === "pte_reading" && window.LP_PTE_RENDERER && /* @__PURE__ */ React.createElement(window.LP_PTE_RENDERER.PTEReadingSection, { sec, answers, setAnswer, sectionId: sec.id }), sec.type === "pte_listening" && window.LP_PTE_LISTENING && /* @__PURE__ */ React.createElement(window.LP_PTE_LISTENING.PTEListeningSection, { sec, answers, setAnswer, sectionId: sec.id }), sec.type === "pte_sw" && window.LP_PTE_SW && /* @__PURE__ */ React.createElement(window.LP_PTE_SW.PteSwSection, { sec, answers, setAnswer, sectionId: sec.id }), sec.type === "reading" && sec.isCelpip && sec.passages && ((_a = sec.passages[0]) == null ? void 0 : _a.type) && ["correspondence", "schedule", "viewpoints"].includes(sec.passages[0].type) && window.LP_CELPIP && /* @__PURE__ */ React.createElement(window.LP_CELPIP.CelpipReadingSection, { sec, answers, setAnswer: (id, v) => setAnswer(id, v) }), sec.type === "writing" && sec.isCelpip && window.LP_CELPIP && /* @__PURE__ */ React.createElement(window.LP_CELPIP.CelpipWritingSection, { sec, answers, setAnswer: (id, v) => setAnswer(id, v) }), sec.type === "speaking" && sec.isCelpip && window.LP_CELPIP && /* @__PURE__ */ React.createElement(window.LP_CELPIP.CelpipSpeakingSection, { sec, answers, setAnswer: (id, v) => setAnswer(id, v) }), sec.type === "reading" && !sec.isCelpip && /* @__PURE__ */ React.createElement(
+      ReadingSection,
+      {
+        sec,
+        answers,
+        setAnswer,
+        sectionId: sec.id,
+        onRouteStage: () => routeAdaptiveStage(sectionIdx)
+      }
+    ), (sec.type === "writing" || sec.type === "writing_aw") && !sec.isCelpip && /* @__PURE__ */ React.createElement(WritingSection, { sec, answers, setAnswer, sectionId: sec.id }), (sec.type === "speaking" || sec.type === "speaking_toefl") && !sec.isCelpip && /* @__PURE__ */ React.createElement(SpeakingSection, { sec, answers, setAnswer, sectionId: sec.id })), /* @__PURE__ */ React.createElement("div", { className: "question-nav-bar" }, /* @__PURE__ */ React.createElement("span", { className: "q-counter" }, Object.keys(answers).filter((k) => answers[k] !== "" && answers[k] != null).length, " answered"), /* @__PURE__ */ React.createElement("div", { className: "row-gap-12" }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-sm", onClick: advanceSection }, sectionIdx < config.sections.length - 1 ? "Next section \u2192" : "Submit test \u2192"))));
   }
   if (phase === "report" && config) {
     return /* @__PURE__ */ React.createElement(TestReport, { exam, config, answers, onBack, onNav, onRetake: () => {
@@ -837,14 +886,15 @@ function SceneImage({ scene }) {
   const showImg = scene.image && !failed;
   return /* @__PURE__ */ React.createElement("div", { className: "scene-panel" }, /* @__PURE__ */ React.createElement("div", { className: "scene-frame" }, showImg ? /* @__PURE__ */ React.createElement("img", { src: scene.image, alt: scene.label || "Scenario", className: "scene-img", loading: "lazy", onError: () => setFailed(true) }) : /* @__PURE__ */ React.createElement("div", { className: "scene-illus", style: { background: scene.bg || "linear-gradient(135deg,#e0f2fe,#ede9fe)" } }, /* @__PURE__ */ React.createElement("span", { className: "scene-emoji", "aria-hidden": true }, scene.emoji || "\u{1F3A7}"))), scene.label && /* @__PURE__ */ React.createElement("div", { className: "scene-cap" }, scene.label));
 }
-function ListeningSection({ sec, answers, setAnswer, sectionId }) {
+function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) {
   const [partIdx, setPartIdx] = useStateT(0);
   const [playing, setPlaying] = useStateT(false);
   const [played, setPlayed] = useStateT({});
   const [progress, setProgress] = useStateT(null);
   const [revealed, setRevealed] = useStateT({});
   const abortRef = useRefT(null);
-  const parts = sec.parts || [];
+  const adaptiveGated = !!(sec.adaptive && !sec.adaptiveRouted);
+  const parts = adaptiveGated ? (sec.parts || []).slice(0, sec.adaptive.stage1Count || 2) : sec.parts || [];
   const current = parts[partIdx];
   useEffectT(() => () => {
     var _a, _b;
@@ -1004,7 +1054,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId }) {
       onPrevPart: () => goToPart(Math.max(0, partIdx - 1)),
       onNextPart: () => goToPart(Math.min(parts.length - 1, partIdx + 1))
     }
-  ));
+  ), adaptiveGated && /* @__PURE__ */ React.createElement("div", { className: "q-section-header", style: { marginTop: 20, padding: 16, border: "1px solid var(--line)", borderRadius: 12 } }, /* @__PURE__ */ React.createElement("div", { className: "qsh-range" }, "Multi-stage adaptive \xB7 Stage 1"), /* @__PURE__ */ React.createElement("div", { className: "qsh-instruction" }, "Like the real 2026 TOEFL, your Stage-2 listening block adapts to how you do on these first ", parts.length, " recordings. Submitting locks your Stage-1 answers."), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", style: { marginTop: 10 }, onClick: onRouteStage }, "Submit Stage 1 \u2192 unlock Stage 2")), sec.adaptiveRouted && /* @__PURE__ */ React.createElement("div", { className: "qsh-instruction", style: { marginTop: 14, padding: "10px 14px", background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 10 } }, "\u2705 Stage 2 loaded \u2014 difficulty adjusted to your Stage-1 performance (routed to the ", /* @__PURE__ */ React.createElement("strong", null, sec.adaptiveRouted), " block), just like the real TOEFL iBT."));
 }
 function mapTitleHash(mapTitle) {
   let h = 0;
@@ -1369,9 +1419,10 @@ function ListeningQuestions({ questions, answers, setAnswer, sectionId, partIdx,
     }
   )))), /* @__PURE__ */ React.createElement("div", { className: "q-pager", style: { marginTop: 24 } }, /* @__PURE__ */ React.createElement("button", { className: "btn", disabled: partIdx === 0, onClick: onPrevPart }, "\u2190 Previous part"), /* @__PURE__ */ React.createElement("span", { className: "qp-counter" }, "Part ", partIdx + 1, " of ", totalParts, " \xB7 ", answeredCount, "/", total, " answered"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", disabled: partIdx >= totalParts - 1, onClick: onNextPart }, "Next part \u2192")));
 }
-function ReadingSection({ sec, answers, setAnswer, sectionId }) {
+function ReadingSection({ sec, answers, setAnswer, sectionId, onRouteStage }) {
   const flat = [];
-  const passages = sec.passages || [];
+  const adaptiveGated = !!(sec.adaptive && !sec.adaptiveRouted);
+  const passages = adaptiveGated ? (sec.passages || []).slice(0, sec.adaptive.stage1Count || 1) : sec.passages || [];
   const [pIdx, setPIdx] = useStateT(0);
   const [qIdxInPassage, setQIdxInPassage] = useStateT(0);
   useEffectT(() => {
@@ -1456,7 +1507,7 @@ function ReadingSection({ sec, answers, setAnswer, sectionId }) {
       onAnswer: (val) => setAnswer(sectionId + "_" + q.id, val),
       hideInstruction: true
     }
-  )))), passages.length > 1 && /* @__PURE__ */ React.createElement("div", { className: "q-pager", style: { marginTop: 16 } }, /* @__PURE__ */ React.createElement("button", { className: "btn", disabled: pIdx === 0, onClick: () => setPIdx(Math.max(0, pIdx - 1)) }, "\u2190 Previous passage"), /* @__PURE__ */ React.createElement("span", { className: "qp-counter" }, "Passage ", pIdx + 1, " of ", passages.length, " \xB7 ", answeredInPassage, "/", passageQs.length), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", disabled: pIdx >= passages.length - 1, onClick: () => setPIdx(Math.min(passages.length - 1, pIdx + 1)) }, "Next passage \u2192")))));
+  )))), passages.length > 1 && /* @__PURE__ */ React.createElement("div", { className: "q-pager", style: { marginTop: 16 } }, /* @__PURE__ */ React.createElement("button", { className: "btn", disabled: pIdx === 0, onClick: () => setPIdx(Math.max(0, pIdx - 1)) }, "\u2190 Previous passage"), /* @__PURE__ */ React.createElement("span", { className: "qp-counter" }, "Passage ", pIdx + 1, " of ", passages.length, " \xB7 ", answeredInPassage, "/", passageQs.length), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", disabled: pIdx >= passages.length - 1, onClick: () => setPIdx(Math.min(passages.length - 1, pIdx + 1)) }, "Next passage \u2192")), adaptiveGated && /* @__PURE__ */ React.createElement("div", { className: "q-section-header", style: { marginTop: 20, padding: 16, border: "1px solid var(--line)", borderRadius: 12 } }, /* @__PURE__ */ React.createElement("div", { className: "qsh-range" }, "Multi-stage adaptive \xB7 Stage 1"), /* @__PURE__ */ React.createElement("div", { className: "qsh-instruction" }, "Like the real 2026 TOEFL, your Stage-2 passage adapts to how you do here. You have answered ", answeredInPassage, " of ", passageQs.length, " Stage-1 questions. Submitting locks your Stage-1 answers."), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", style: { marginTop: 10 }, onClick: onRouteStage }, "Submit Stage 1 \u2192 unlock Stage 2")), sec.adaptiveRouted && /* @__PURE__ */ React.createElement("div", { className: "qsh-instruction", style: { marginTop: 14, padding: "10px 14px", background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 10 } }, "\u2705 Stage 2 loaded \u2014 difficulty adjusted to your Stage-1 performance (routed to the ", /* @__PURE__ */ React.createElement("strong", null, sec.adaptiveRouted), " passage), just like the real TOEFL iBT."))));
 }
 function QuestionPalette({ items, qIdx, setQIdx, answers, sectionId, groupBy }) {
   return /* @__PURE__ */ React.createElement("div", { className: "qpalette" }, /* @__PURE__ */ React.createElement("div", { className: "qp-label" }, "Questions"), /* @__PURE__ */ React.createElement("div", { className: "qp-dots" }, items.map((f, i) => {
@@ -2058,7 +2109,10 @@ function scoreTest(config, answers) {
   };
   for (const sec of config.sections) {
     if (sec.type === "listening" || sec.type === "reading" || sec.type === "reading_pte") {
-      const qs = getAllQuestions(sec);
+      let qs = getAllQuestions(sec);
+      if (sec.adaptive && !sec.adaptiveRouted) {
+        qs = sec.adaptive.kind === "reading" ? (sec.passages || []).slice(0, sec.adaptive.stage1Count || 1).flatMap((p) => p.questions || []) : (sec.parts || []).slice(0, sec.adaptive.stage1Count || 2).flatMap((p) => p.questions || []);
+      }
       let correct = 0;
       for (const q of qs) {
         const given = answers[sec.id + "_" + q.id];
@@ -2098,8 +2152,12 @@ function scoreTest(config, answers) {
         const band = sec.id === "listening" ? window.LP_SCORE.ieltsListeningBand(correct) : window.LP_SCORE.ieltsReadingBand(correct);
         result.sections[sec.id] = { correct, total: qs.length, band, pct: Math.round(pct * 100), label: sec.name };
       } else {
-        const scaled = scaleScore(pct);
-        result.sections[sec.id] = { correct, total: qs.length, band: scaled, pct: Math.round(pct * 100), label: sec.name };
+        let scaled = scaleScore(pct);
+        if (examId === "toefl" && sec.adaptiveRouted) {
+          scaled = sec.adaptiveRouted === "hard" ? Math.round(12 + pct * 18) : sec.adaptiveRouted === "easy" ? Math.round(pct * 20) : Math.round(6 + pct * 21);
+        }
+        const label = sec.adaptiveRouted ? sec.name + " \xB7 routed to " + sec.adaptiveRouted + " Stage 2" : sec.name;
+        result.sections[sec.id] = { correct, total: qs.length, band: scaled, pct: Math.round(pct * 100), label };
       }
     } else if (sec.type === "writing" || sec.type === "writing_aw") {
       const tasks = sec.tasks || [];
