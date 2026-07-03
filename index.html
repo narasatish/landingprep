@@ -328,35 +328,36 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=325" />
-  <link rel="stylesheet" href="pro.css?v=325" />
+  <link rel="stylesheet" href="theme.css?v=326" />
+  <link rel="stylesheet" href="pro.css?v=326" />
 </head>
 <body>
-  <div id="root"></div>
-
-  <!-- Crawlable fallback for non-JS crawlers/scrapers + the no-JS case. React (createRoot)
-       replaces #root on mount, so this never shows to JS users; it gives bots real homepage
-       content + internal links to the main prerendered pages without touching the JS path. -->
-  <noscript>
+  <!-- #root holds a real, crawlable homepage fallback in the raw HTML. React
+       (createRoot) replaces it on mount, so JS users see the full app; every
+       crawler (including AI crawlers that don't run JS) and no-JS users get
+       genuine homepage content + internal links. All claims here are literally
+       true (10 exams, 1,000+ mock tests, 100% free, no signup). -->
+  <div id="root">
     <div style="max-width:900px;margin:0 auto;padding:24px;font-family:system-ui,Arial,sans-serif">
-      <h1>Free Practice Tests for IELTS, PTE, TOEFL, Duolingo, CELPIP, GRE &amp; GMAT</h1>
-      <p>LandingPrep is a 100% free exam-prep and study-abroad platform: full-length mock tests with
-         real timing and instant scoring, an AI speaking &amp; writing partner, strategy lessons, a
-         free college predictor and study-abroad guides. No signup, no paywall.</p>
-      <p>Everything you need to go from mock test to campus abroad — practise your target exam, find
+      <h1>Free Practice Tests for IELTS, TOEFL, PTE, Duolingo, CELPIP, GRE, GMAT, OET, SAT &amp; ACT</h1>
+      <p>LandingPrep is a 100% free exam-prep and study-abroad platform with <strong>over 1,000 full-length
+         mock tests across 10 exams</strong> — real timing and instant scoring, an AI speaking &amp; writing
+         partner, strategy lessons, a free College Predictor and study-abroad guides. No signup, no paywall.</p>
+      <p>Everything you need to go from mock test to campus abroad: practise your target exam, find
          Safe/Target/Reach universities with the free College Predictor, compare costs and education
-         loans, build your SOP, LOR and resume, and prepare for your visa interview.</p>
+         loans, build your SOP, LOR and resume, and rehearse your visa interview.</p>
       <h2>Free mock tests</h2>
       <ul>
         <li><a href="/mock-test/ielts/">Free IELTS mock test</a> &middot; <a href="/practice/ielts/">IELTS section practice</a></li>
-        <li><a href="/mock-test/pte/">Free PTE mock test</a> &middot; <a href="/mock-test/toefl/">Free TOEFL iBT mock test</a></li>
+        <li><a href="/mock-test/toefl/">Free TOEFL iBT mock test</a> &middot; <a href="/mock-test/pte/">Free PTE Academic mock test</a></li>
         <li><a href="/mock-test/duolingo/">Free Duolingo English Test practice</a> &middot; <a href="/mock-test/celpip/">Free CELPIP practice</a></li>
-        <li><a href="/mock-test/gre/">Free GRE mock test</a> &middot; <a href="/mock-test/gmat/">Free GMAT Focus mock test</a></li>
+        <li><a href="/mock-test/gre/">Free GRE mock test</a> &middot; <a href="/mock-test/gmat/">Free GMAT Focus mock test</a> &middot; <a href="/mock-test/oet/">Free OET practice</a></li>
       </ul>
       <h2>Free study-abroad toolkit</h2>
       <ul>
         <li><a href="/#/colleges">College Predictor — Safe, Target &amp; Reach universities</a></li>
         <li><a href="/#/tools">SOP, LOR &amp; resume builders, cost &amp; education-loan calculators</a></li>
+        <li><a href="/study-abroad-funding-facts-2026/">Study-abroad funding facts 2026 (proof of funds by country)</a></li>
         <li><a href="/eligibility/">English score requirements by country</a></li>
       </ul>
       <h2>Free tools &amp; guides</h2>
@@ -369,17 +370,17 @@
         <dt>Is LandingPrep really free?</dt>
         <dd>Yes — all mock tests, the College Predictor, SOP/LOR builders and study-abroad tools are 100% free, with no signup or paywall.</dd>
         <dt>Which exams can I prepare for?</dt>
-        <dd>IELTS, TOEFL iBT, PTE Academic, CELPIP, the Duolingo English Test, GRE and GMAT Focus — each with full-length mock tests and section practice.</dd>
+        <dd>IELTS, TOEFL iBT, PTE Academic, CELPIP, the Duolingo English Test, GRE, GMAT Focus, OET, SAT and ACT — each with full-length mock tests and section practice.</dd>
         <dt>Do I need an account?</dt>
         <dd>No. You can take mock tests and use every tool without signing up.</dd>
       </dl>
     </div>
-  </noscript>
+  </div>
 
   <!-- React 18.3.1 PRODUCTION (minified), SELF-HOSTED: same-origin load avoids a third-party
        DNS+TLS handshake on first paint → faster LCP, and it's precached by the service worker. -->
-  <script src="vendor/react.production.min.js?v=325"></script>
-  <script src="vendor/react-dom.production.min.js?v=325"></script>
+  <script src="vendor/react.production.min.js?v=326"></script>
+  <script src="vendor/react-dom.production.min.js?v=326"></script>
   <!-- Failover: if the local copy ever fails to define React, boot from unpkg, then jsdelivr. -->
   <script>
     if (!window.React) document.write('<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"><\/script>');
@@ -389,7 +390,7 @@
   </script>
 
   <!-- Data layer -->
-  <script defer src="app-bundle.js?v=325"></script>
+  <script defer src="app-bundle.js?v=326"></script>
   <!-- data-questions.js (~142 KB) is lazy-loaded with the test runner via MockTestGate when a mock starts -->
 
   <!-- Auth + Smart Tutor + Chatbot (must load before screens) -->

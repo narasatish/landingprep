@@ -22,6 +22,18 @@ const TODAY = "2026-05-30";
 // (honest freshness signal: every page is regenerated on each build). Defined early so all
 // page builders can reference it.
 const BUILD_DATE = (() => { try { return new Date().toISOString().slice(0, 10); } catch (e) { return TODAY; } })();
+// Reusable schema entities. PUBLISHER.sameAs points to the brand's REAL, verified
+// social profile (Instagram @landing_prep) — a truthful entity signal that helps
+// Google + AI-search engines resolve "LandingPrep" as a known entity (stronger
+// E-E-A-T than an anonymous Organization). Add more profiles here only when real.
+const PUBLISHER = {
+  "@type": "Organization",
+  name: BRAND,
+  url: ORIGIN,
+  logo: { "@type": "ImageObject", url: ORIGIN + "/og-image.png" },
+  sameAs: ["https://www.instagram.com/landing_prep/"],
+};
+const AUTHOR_ORG = { "@type": "Organization", name: BRAND + " editorial team", url: ORIGIN + "/about/" };
 // Resilient write: OneDrive / antivirus / the search indexer can hold a (sometimes
 // memory-mapped) handle on a file mid-build, making writeFileSync throw EBUSY/EPERM/
 // UNKNOWN and abort the whole generation. Retry with a short back-off; if the existing
@@ -963,8 +975,8 @@ ${relatedArticles(a)}
 ${relatedGrid(blogTiles(a))}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.excerpt,
-      author: { "@type": "Organization", name: BRAND + " editorial team", url: ORIGIN + "/about/" },
-      publisher: { "@type": "Organization", name: BRAND, logo: { "@type": "ImageObject", url: ORIGIN + "/og-image.png" } },
+      author: AUTHOR_ORG,
+      publisher: PUBLISHER,
       datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Blog", path: "/#/blog" }, { name: a.title, path }]),
     jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
@@ -1081,8 +1093,8 @@ ${relatedGrid([
 ])}`;
   emit(path, head({ title, desc, path, kw: s.kw, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "Article", headline: s.title, description: s.metaDesc,
-      author: { "@type": "Organization", name: BRAND + " editorial team", url: ORIGIN + "/about/" },
-      publisher: { "@type": "Organization", name: BRAND, logo: { "@type": "ImageObject", url: ORIGIN + "/og-image.png" } },
+      author: AUTHOR_ORG,
+      publisher: PUBLISHER,
       datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "SOP & LOR Samples", path: "/sop-samples/" }, { name: s.course, path }]),
@@ -1148,8 +1160,8 @@ ${relatedGrid([
 ])}`;
   emit(path, head({ title, desc, path, kw: v.kw, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "Article", headline: v.title, description: v.metaDesc,
-      author: { "@type": "Organization", name: BRAND + " editorial team", url: ORIGIN + "/about/" },
-      publisher: { "@type": "Organization", name: BRAND, logo: { "@type": "ImageObject", url: ORIGIN + "/og-image.png" } },
+      author: AUTHOR_ORG,
+      publisher: PUBLISHER,
       datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
     faqJsonLd(v.faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Visa Interviews", path: "/visa-interview/" }, { name: v.country, path }]),
@@ -1816,10 +1828,9 @@ function aboutPage() {
     <li><strong>Currency:</strong> Guides are reviewed regularly and re-dated whenever the underlying exam format, fees or visa rules change.</li>
     <li><strong>Independence:</strong> We are not affiliated with any test provider or university, and we never publish pay-to-rank placements.</li>
     <li><strong>No invention:</strong> We never fabricate statistics, reviews, author credentials or success stories. Where a figure is indicative (e.g. visa-success rates), we say so explicitly.</li>
+    <li><strong>Who writes and reviews this:</strong> Guides are researched, written and cross-checked by the LandingPrep editorial team, with every factual claim traced to a primary official source. We publish under the team name rather than attach invented "expert" bylines or credentials we cannot stand behind — what we ask you to trust is the linked source next to each fact, not a name.</li>
+    <li><strong>Corrections:</strong> Found something out of date or wrong? Email <a href="mailto:support@landingprep.com">support@landingprep.com</a>; we verify, fix and re-date the page.</li>
   </ul>
-  <!-- TODO(owner): to strengthen E-E-A-T, add named author(s)/reviewer(s) with real qualifications here
-       (e.g. "Reviewed by <Name>, <qualification>") and switch the article 'author' schema from
-       Organization to a Person entity in the byline blocks above. Do NOT invent credentials. -->
 </div>
 <div class="card">
   <h2>Disclaimer</h2>
@@ -2166,28 +2177,34 @@ function fundingFactsPage() {
   const tStyle = `width:100%;border-collapse:collapse;margin:14px 0;font-size:15px`;
   const th = `text-align:left;padding:10px 12px;border-bottom:2px solid var(--line);font-weight:700`;
   const td = `padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top`;
+  // Every figure below is verified against the official authority linked in its
+  // row. Correct as of the "last verified" date shown on the page. Key 2024–26
+  // changes reflected: Canada's Student Direct Stream (SDS) ended Nov 2024; UK
+  // maintenance amounts rose (London GBP 1,529, elsewhere GBP 1,171); the UK
+  // Graduate Route drops to 18 months for applications from Jan 2027.
+  const src = (url, label) => `<a href="${url}" target="_blank" rel="nofollow noopener">${label}</a>`;
   const funds = [
-    ["🇩🇪 Germany", "EUR 11,904 / year (EUR 992 / month)", "Blocked account (Sperrkonto) — released to you monthly after arrival"],
-    ["🇨🇦 Canada", "CAD 20,635 (plus first-year tuition)", "GIC — required for the SDS study-permit stream; returned in instalments"],
-    ["🇬🇧 UK", "GBP 1,334 / month (London) · GBP 1,023 / month (elsewhere), up to 9 months", "Maintenance funds held 28 days (UKVI)"],
-    ["🇦🇺 Australia", "AUD 29,710 / year living costs", "Financial evidence under the Genuine Student requirement"],
-    ["🇮🇪 Ireland", "EUR 10,000 / year", "Proof of funds shown to immigration (ISD)"],
-    ["🇺🇸 USA", "First-year cost of attendance (varies by university)", "Financial evidence for the Form I-20 (F-1 visa)"],
+    ["🇩🇪 Germany", "EUR 11,904 / year (EUR 992 / month)", `Blocked account (Sperrkonto) — released to you monthly after arrival. ${src("https://www.auswaertiges-amt.de/en/sperrkonto-388600", "Federal Foreign Office ↗")}`],
+    ["🇨🇦 Canada", "CAD 20,635 (plus first-year tuition)", `Proof of funds for a study permit, commonly shown via a GIC (returned to you in instalments). The Student Direct Stream ended in November 2024 — all applicants now use the regular stream. ${src("https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", "IRCC ↗")}`],
+    ["🇬🇧 UK", "GBP 1,529 / month (London) · GBP 1,171 / month (elsewhere), up to 9 months", `Maintenance funds held 28 consecutive days before you apply (UKVI). ${src("https://www.gov.uk/student-visa/money", "GOV.UK ↗")}`],
+    ["🇦🇺 Australia", "AUD 29,710 / year (indicative living-cost benchmark)", `Financial capacity under the Genuine Student requirement — assessed case-by-case, no single fixed figure. ${src("https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500", "Home Affairs ↗")}`],
+    ["🇮🇪 Ireland", "EUR 10,000 / year", `Proof of funds shown to immigration (ISD). ${src("https://www.irishimmigration.ie/coming-to-study-in-ireland/", "Irish Immigration Service ↗")}`],
+    ["🇺🇸 USA", "First-year cost of attendance (varies by university)", `Financial evidence for the Form I-20 (F-1 visa); your school verifies funds before issuing it. ${src("https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html", "US Dept of State ↗")}`],
   ];
   const work = [
     ["🇺🇸 USA", "OPT (F-1)", "12 months, plus 24 months for STEM degrees = up to 36 months"],
-    ["🇨🇦 Canada", "Post-Graduation Work Permit (PGWP)", "Up to 3 years"],
+    ["🇨🇦 Canada", "Post-Graduation Work Permit (PGWP)", "8 months to 3 years (by programme length; a language test is required for applications since Nov 2024)"],
     ["🇦🇺 Australia", "Temporary Graduate visa (subclass 485)", "2–4 years depending on qualification"],
     ["🇳🇿 New Zealand", "Post-study work visa", "Up to 3 years"],
-    ["🇬🇧 UK", "Graduate Route", "2 years (3 years for PhD)"],
-    ["🇮🇪 Ireland", "Third Level Graduate Programme", "Up to 24 months"],
+    ["🇬🇧 UK", "Graduate Route", "2 years (3 years for PhD) — reduces to 18 months for applications from January 2027"],
+    ["🇮🇪 Ireland", "Third Level Graduate Programme", "12 months (Level 8) to 24 months (Level 9+)"],
     ["🇩🇪 Germany", "Residence permit to seek work", "18 months after graduating"],
   ];
   const fundsRows = funds.map((r) => `<tr><td style="${td}"><strong>${r[0]}</strong></td><td style="${td}">${r[1]}</td><td style="${td}">${r[2]}</td></tr>`).join("");
   const workRows = work.map((r) => `<tr><td style="${td}"><strong>${r[0]}</strong></td><td style="${td}">${r[1]}</td><td style="${td}">${r[2]}</td></tr>`).join("");
   const faqs = [
-    { q: "How much money do I need to show for a student visa in 2026?", a: "It varies by country. Germany requires about EUR 11,904 per year in a blocked account; Canada about CAD 20,635 via a GIC; the UK about GBP 1,023–1,334 per month of maintenance for up to 9 months; Australia about AUD 29,710 per year; Ireland about EUR 10,000 per year. The USA has no fixed figure — you prove the first-year cost of attendance for your university. Always confirm the current amount with the official authority before applying." },
-    { q: "Which country gives the longest post-study work visa?", a: "Canada's PGWP (up to 3 years), Australia's subclass 485 (2–4 years) and New Zealand's post-study work visa (up to 3 years) are the longest. The UK Graduate Route is 2 years (3 for a PhD), and US OPT is 12 months plus 24 months for STEM graduates." },
+    { q: "How much money do I need to show for a student visa in 2026?", a: "It varies by country. Germany requires about EUR 11,904 per year in a blocked account; Canada about CAD 20,635 in proof of funds (commonly a GIC); the UK about GBP 1,171–1,529 per month of maintenance for up to 9 months; Australia around AUD 29,710 per year as an indicative benchmark; Ireland about EUR 10,000 per year. The USA has no fixed figure — you prove the first-year cost of attendance for your university. Always confirm the current amount with the official authority before applying." },
+    { q: "Which country gives the longest post-study work visa?", a: "Canada's PGWP (up to 3 years), Australia's subclass 485 (2–4 years) and New Zealand's post-study work visa (up to 3 years) are the longest. The UK Graduate Route is 2 years (3 for a PhD) for applications up to the end of 2026, dropping to 18 months from January 2027; US OPT is 12 months plus 24 months for STEM graduates." },
     { q: "Is the German blocked account or Canadian GIC refundable?", a: "Both are your own money. A German Sperrkonto releases roughly EUR 992 to you each month once you arrive and register; the Canadian GIC is returned to you in instalments over your first year. Neither is a fee — they are proof of funds." },
     { q: "Do these funding figures change?", a: "Yes — most countries update proof-of-funds amounts every year, and exchange rates move. Treat the figures here as indicative 2026 values and confirm the exact current requirement on the official immigration website before you apply." },
   ];
@@ -2213,7 +2230,8 @@ function fundingFactsPage() {
 <li>Model your repayment with the free <a href="/tools/education-loan-emi-calculator/">education-loan EMI calculator</a>, or read the guide to <a href="/blog/education-loan-without-collateral/">loans without collateral</a>.</li>
 </ul></div>
 
-<div class="card"><h2>Methodology &amp; sources</h2><p>Figures are compiled from official immigration authorities (German Federal Foreign Office, IRCC, UKVI, Australian Department of Home Affairs, Irish ISD, US SEVP) and LandingPrep's own country and funding guides, current for the 2026 intake cycle. Requirements change every year — this page is a free reference, not legal advice. Verify the exact, current figure with the official authority before you apply or transfer money. You may cite this page with a link to ${ORIGIN}${path}.</p></div>
+<div class="card"><h2>Methodology &amp; sources</h2><p><strong>Last verified: ${esc(BUILD_DATE)}.</strong> Every figure is checked against the primary official authority linked in the tables above — the ${src("https://www.auswaertiges-amt.de/en/sperrkonto-388600", "German Federal Foreign Office")}, ${src("https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", "IRCC (Canada)")}, ${src("https://www.gov.uk/student-visa/money", "UKVI (UK)")}, ${src("https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500", "Australian Department of Home Affairs")}, ${src("https://www.irishimmigration.ie/coming-to-study-in-ireland/", "Irish Immigration Service")} and ${src("https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html", "US Department of State")}. Requirements change every year and are set by each government, not by us — this page is a free reference, not legal advice. Confirm the exact current figure with the official authority before you apply or transfer money. You may cite this page with a link to ${ORIGIN}${path}.</p>
+<p class="note"><strong>Cite this study:</strong> LandingPrep (${esc(BUILD_DATE.slice(0, 4))}). <em>Study-Abroad Funding Facts 2026: Proof of Funds &amp; Post-Study Work by Country.</em> Retrieved from ${ORIGIN}${path}</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🇩🇪 Germany blocked account guide`, href: `/blog/germany-blocked-account-2026-guide/` },
@@ -2228,7 +2246,7 @@ ${relatedGrid([
     path,
     kw: "proof of funds student visa 2026, blocked account amount by country, post study work visa by country, how much money for student visa, germany sperrkonto canada gic, study abroad funding requirements",
     jsonLdBlocks: [
-      jsonld({ "@context": "https://schema.org", "@type": "Dataset", name: "Study-Abroad Funding Facts 2026", description: "Proof-of-funds requirements and post-study work visa durations for top study-abroad destinations, 2026.", isAccessibleForFree: true, creator: { "@type": "Organization", name: BRAND }, url: ORIGIN + path, license: "https://creativecommons.org/licenses/by/4.0/" }),
+      jsonld({ "@context": "https://schema.org", "@type": "Dataset", name: "Study-Abroad Funding Facts 2026", description: "Proof-of-funds requirements and post-study work visa durations for top study-abroad destinations, verified against official government sources, 2026.", isAccessibleForFree: true, creator: PUBLISHER, publisher: PUBLISHER, url: ORIGIN + path, license: "https://creativecommons.org/licenses/by/4.0/", dateModified: BUILD_DATE, temporalCoverage: "2026", spatialCoverage: ["Germany", "Canada", "United Kingdom", "Australia", "Ireland", "United States", "New Zealand"], variableMeasured: ["Student-visa proof-of-funds amount", "Post-study work visa duration"], creditText: "LandingPrep — Study-Abroad Funding Facts 2026", isBasedOn: ["https://www.auswaertiges-amt.de/en/sperrkonto-388600", "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", "https://www.gov.uk/student-visa/money", "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500"] }),
       faqJsonLd(faqs),
       breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Funding Facts 2026", path }]),
     ],

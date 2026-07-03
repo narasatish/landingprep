@@ -206,8 +206,31 @@ app.use((req, res, next) => {
   next();
 });
 
-// Serve static files from the same directory
-app.use(express.static(__dirname));
+// Serve static files from the same directory.
+// Cache-Control matters a lot on Render's free tier: without it Express sends
+// `max-age=0`, so Cloudflare marks every response DYNAMIC and each visit + each
+// Googlebot crawl hits the (possibly sleeping) dyno for a 30–45 s cold start.
+// Prerendered HTML is cache-busted on deploy via the sw.js CACHE_VERSION bump and
+// the ?v= asset tags, so it is safe to let the CDN/browser cache and revalidate.
+app.use(express.static(__dirname, {
+  setHeaders: (res, filePath) => {
+    const p = filePath.toLowerCase();
+    if (p.endsWith("sw.js") || p.endsWith("service-worker.js")) {
+      // The service worker must always revalidate, or users never get new builds.
+      res.setHeader("Cache-Control", "no-cache, max-age=0, must-revalidate");
+    } else if (p.endsWith(".html")) {
+      // Prerendered pages: revalidate hourly but serve stale instantly while it
+      // refreshes, so neither users nor crawlers ever wait on a cold dyno.
+      res.setHeader("Cache-Control", "public, max-age=3600, stale-while-revalidate=86400");
+    } else if (/(sitemap.*\.xml|feed\.xml|robots\.txt|llms.*\.txt|manifest\.(json|webmanifest))$/.test(p)) {
+      // SEO/feed files regenerate ~hourly (auto-blog) — keep them fresh-ish.
+      res.setHeader("Cache-Control", "public, max-age=3600");
+    } else if (/\.(js|css|png|jpe?g|webp|gif|svg|woff2?|ttf|otf|ico|mp3|mp4|webm|pdf|json)$/.test(p)) {
+      // Assets are cache-busted via ?v=NNN on each deploy → safe to cache a day.
+      res.setHeader("Cache-Control", "public, max-age=86400");
+    }
+  },
+}));
 
 // ── Health check ─────────────────────────────────────────────────────────────
 app.get("/api/health", (_req, res) => {
