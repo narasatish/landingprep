@@ -24,23 +24,28 @@
   }
   // Consolidated tabs (merged duplicates: Profile Eval → Build My Plan/Find
   // Colleges; Course Finder → Find Colleges; Compare → Top Universities;
-  // Calculators → Loans & Costs). Combined tabs use an in-tab mode toggle.
+  // Loans & Costs → Scholarships & Loans; Documents + My Applications → Apply
+  // Now; Leaderboard → Community). Combined tabs use an in-tab mode toggle.
   const TABS = [
     ["destinations", "globe",     "Country Guide"],
     ["onboard",      "rocket",    "Build My Plan"],
     ["predictor",    "building",  "Find Colleges"],
     ["rankings",     "trophy",    "Universities"],
-    ["scholarships", "wallet",    "Scholarships"],
+    ["scholarships", "wallet",    "Scholarships & Loans"],
     ["apply",        "cap",       "Apply Now"],
     ["counsellor",   "chat",      "AI Counsellor"],
     ["visa",         "stamp",     "Visa Interview"],
-    ["community",    "users",     "Community Q&A"],
-    ["leaderboard",  "trophy",    "Leaderboard"],
+    ["community",    "users",     "Community"],
     ["updates",      "help",      "Help & FAQ"],
-    ["loan",         "money",     "Loans & Costs"],
-    ["sop",          "pen",       "Documents"],
-    ["apps",         "clipboard", "My Applications"],
   ];
+  // Old tab ids stay valid forever (deep links #/colleges/<tab>/<country>, SEO
+  // pages, panel onOpenTab calls): they resolve to a merged tab + its sub-mode.
+  const TAB_ALIAS = {
+    loan:        { tab: "scholarships", mode: "loan" },
+    sop:         { tab: "apply",        mode: "sop" },
+    apps:        { tab: "apply",        mode: "apps" },
+    leaderboard: { tab: "community",    mode: "leaderboard" },
+  };
   const TAB_LABEL = Object.fromEntries(TABS.map((t) => [t[0], t[2]]));
   const TAB_ICON = Object.fromEntries(TABS.map((t) => [t[0], t[1]]));
   const ic = (name, size) => (window.LP_Ic ? <window.LP_Ic name={name} size={size || 15} style={{ verticalAlign: "-3px", marginRight: 6 }} /> : null);
@@ -48,9 +53,8 @@
   const GROUPS = [
     { id: "explore",   icon: "globe",   label: "Explore",   tabs: ["destinations", "rankings"] },
     { id: "plan",      icon: "compass", label: "Plan",      tabs: ["onboard", "predictor"] },
-    { id: "apply",     icon: "cap",     label: "Apply",     tabs: ["apply", "scholarships", "sop", "apps"] },
-    { id: "guidance",  icon: "chat",    label: "Guidance",  tabs: ["counsellor", "visa", "loan"] },
-    { id: "community", icon: "users",   label: "Community", tabs: ["community", "leaderboard", "updates"] },
+    { id: "apply",     icon: "cap",     label: "Apply",     tabs: ["apply", "scholarships"] },
+    { id: "guidance",  icon: "chat",    label: "Guidance",  tabs: ["counsellor", "visa", "community", "updates"] },
   ];
   // Tabs that are scoped to the selected country.
   const COUNTRY_TABS = ["destinations", "onboard", "predictor", "rankings", "scholarships", "apply", "counsellor", "visa"];
@@ -64,18 +68,34 @@
 
   function Colleges({ onNav, initialTab, initialCountry }) {
     const valid = TABS.map((t) => t[0]);
+    const init = TAB_ALIAS[initialTab] || { tab: valid.includes(initialTab) ? initialTab : "destinations", mode: null };
     const validCountry = getCountries().some(([c]) => c === initialCountry);
-    const [tab, setTab] = useState(valid.includes(initialTab) ? initialTab : "destinations");
+    const [tab, setTab] = useState(init.tab);
     const [country, setCountry] = useState(validCountry ? initialCountry : "USA");
     const [findMode, setFindMode] = useState("predict"); // predict | program
     const [uniMode, setUniMode] = useState("rankings");   // rankings | compare
+    const [fundMode, setFundMode] = useState(init.mode === "loan" ? "loan" : "scholarships"); // scholarships | loan
+    const [applyMode, setApplyMode] = useState(init.mode === "sop" || init.mode === "apps" ? init.mode : "apply"); // apply | sop | apps
+    const [commMode, setCommMode] = useState(init.mode === "leaderboard" ? "leaderboard" : "qa"); // qa | leaderboard
     const [, setLazyTick] = useState(0); // re-render when an on-demand panel bundle finishes loading
+    // Panels navigate with old AND new ids; resolve aliases to tab + sub-mode.
+    const openTab = (id) => {
+      const a = TAB_ALIAS[id];
+      if (a) {
+        if (a.tab === "scholarships") setFundMode(a.mode);
+        if (a.tab === "apply") setApplyMode(a.mode);
+        if (a.tab === "community") setCommMode(a.mode);
+        setTab(a.tab);
+      } else if (valid.includes(id)) {
+        setTab(id);
+      }
+    };
     useEffect(() => {
       // Lazy-load panel bundles kept off the initial app load (currently the SOP tool, ~47 KB).
-      if (tab === "sop" && window.LP_loadScript && !window.LP_SOPPanel) {
+      if (tab === "apply" && applyMode === "sop" && window.LP_loadScript && !window.LP_SOPPanel) {
         window.LP_loadScript("screens/sop-tool.js").then(() => setLazyTick((t) => t + 1)).catch(() => {});
       }
-    }, [tab]);
+    }, [tab, applyMode]);
     useEffect(() => {
       if (!window.LP_SEO) return;
       const n = (window.LP_COLLEGES || []).length || 99;
@@ -122,7 +142,7 @@
           </div>
 
           {tab === "destinations" && (window.LP_DestinationsPanel ? <window.LP_DestinationsPanel onNav={onNav} country={country} setCountry={setCountry} onFindColleges={() => setTab("predictor")} /> : loadingCard("Country guide is loading…"))}
-          {tab === "onboard" && (window.LP_OnboardingPanel ? <window.LP_OnboardingPanel onNav={onNav} country={country} onOpenTab={setTab} /> : loadingCard("Plan builder is loading…"))}
+          {tab === "onboard" && (window.LP_OnboardingPanel ? <window.LP_OnboardingPanel onNav={onNav} country={country} onOpenTab={openTab} /> : loadingCard("Plan builder is loading…"))}
 
           {/* Find Colleges = Predict chances + Search by program */}
           {tab === "predictor" && (<>
@@ -140,22 +160,37 @@
               : (window.LP_ComparePanel ? <window.LP_ComparePanel country={country} /> : loadingCard("Compare is loading…"))}
           </>)}
 
-          {tab === "scholarships" && (window.LP_ScholarshipPanel ? <window.LP_ScholarshipPanel onNav={onNav} country={country} /> : loadingCard("Scholarship finder is loading…"))}
-          {tab === "apply" && (window.LP_ApplyPanel ? <window.LP_ApplyPanel country={country} onOpenTab={setTab} /> : loadingCard("Apply panel is loading…"))}
-          {tab === "counsellor" && (window.LP_CounsellorPanel ? <window.LP_CounsellorPanel country={country} /> : loadingCard("AI counsellor is loading…"))}
-          {tab === "visa" && (window.LP_VisaInterviewPanel ? <window.LP_VisaInterviewPanel country={country} /> : loadingCard("Visa interview is loading…"))}
-          {tab === "community" && (window.LP_CommunityPanel ? <window.LP_CommunityPanel country={country} /> : loadingCard("Community is loading…"))}
-          {tab === "leaderboard" && (window.LP_LeaderboardPanel ? <window.LP_LeaderboardPanel /> : loadingCard("Leaderboard is loading…"))}
-          {tab === "updates" && (window.LP_UpdatesPanel ? <window.LP_UpdatesPanel onOpenTab={setTab} /> : loadingCard("Help is loading…"))}
-
-          {/* Loans & Costs = lender comparison + GPA/EMI/ROI calculators */}
-          {tab === "loan" && (<>
-            {window.LP_LoanPanel ? <window.LP_LoanPanel onNav={onNav} /> : loadingCard("Loan comparison is loading…")}
-            {window.LP_CalculatorsPanel ? <window.LP_CalculatorsPanel /> : null}
+          {/* Scholarships & Loans = scholarship finder + lender comparison + calculators */}
+          {tab === "scholarships" && (<>
+            {modeToggle(fundMode, setFundMode, [["scholarships", "💸 Scholarships"], ["loan", "🏦 Loans & Costs"]])}
+            {fundMode === "scholarships"
+              ? (window.LP_ScholarshipPanel ? <window.LP_ScholarshipPanel onNav={onNav} country={country} /> : loadingCard("Scholarship finder is loading…"))
+              : (<>
+                  {window.LP_LoanPanel ? <window.LP_LoanPanel onNav={onNav} /> : loadingCard("Loan comparison is loading…")}
+                  {window.LP_CalculatorsPanel ? <window.LP_CalculatorsPanel /> : null}
+                </>)}
           </>)}
 
-          {tab === "sop" && (window.LP_SOPPanel ? <window.LP_SOPPanel /> : loadingCard("SOP tool is loading…"))}
-          {tab === "apps" && (window.LP_ApplicationsPanel ? <window.LP_ApplicationsPanel onNav={onNav} onOpenTab={setTab} /> : loadingCard("Applications tracker is loading…"))}
+          {/* Apply Now = partner applications + SOP/LOR documents + application tracker */}
+          {tab === "apply" && (<>
+            {modeToggle(applyMode, setApplyMode, [["apply", "🎓 Apply now"], ["sop", "📝 Documents"], ["apps", "📋 My Applications"]])}
+            {applyMode === "apply" && (window.LP_ApplyPanel ? <window.LP_ApplyPanel country={country} onOpenTab={openTab} /> : loadingCard("Apply panel is loading…"))}
+            {applyMode === "sop" && (window.LP_SOPPanel ? <window.LP_SOPPanel /> : loadingCard("SOP tool is loading…"))}
+            {applyMode === "apps" && (window.LP_ApplicationsPanel ? <window.LP_ApplicationsPanel onNav={onNav} onOpenTab={openTab} /> : loadingCard("Applications tracker is loading…"))}
+          </>)}
+
+          {tab === "counsellor" && (window.LP_CounsellorPanel ? <window.LP_CounsellorPanel country={country} /> : loadingCard("AI counsellor is loading…"))}
+          {tab === "visa" && (window.LP_VisaInterviewPanel ? <window.LP_VisaInterviewPanel country={country} /> : loadingCard("Visa interview is loading…"))}
+
+          {/* Community = Q&A + leaderboard */}
+          {tab === "community" && (<>
+            {modeToggle(commMode, setCommMode, [["qa", "💬 Q&A"], ["leaderboard", "🏆 Leaderboard"]])}
+            {commMode === "qa"
+              ? (window.LP_CommunityPanel ? <window.LP_CommunityPanel country={country} /> : loadingCard("Community is loading…"))
+              : (window.LP_LeaderboardPanel ? <window.LP_LeaderboardPanel /> : loadingCard("Leaderboard is loading…"))}
+          </>)}
+
+          {tab === "updates" && (window.LP_UpdatesPanel ? <window.LP_UpdatesPanel onOpenTab={openTab} /> : loadingCard("Help is loading…"))}
 
           <div className="tools-foot">
             <a className="tool-btn ghost" onClick={() => onNav && onNav("tools")}>🧰 English-test tools &amp; study planner →</a>
