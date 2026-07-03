@@ -227,6 +227,23 @@ function trimDesc(d) {
   const cut = d.slice(0, 157); const sp = cut.lastIndexOf(" ");
   return (sp > 120 ? cut.slice(0, sp) : cut).replace(/[\s,;:–-]+$/, "") + "…";
 }
+// Shorten long university names so <title>s stay complete (never trimmed mid-name
+// by trimTitle). Explicit map for the big, commonly-searched ones; generic rules
+// for the rest ("University of Manchester" → "Manchester", "RMIT University" → "RMIT").
+const UNI_ABBR = {
+  "Technical University of Munich": "TU Munich", "University College Dublin": "UCD",
+  "London School of Economics": "LSE", "London School of Economics and Political Science": "LSE",
+  "RMIT University": "RMIT", "RWTH Aachen University": "RWTH Aachen",
+  "Nanyang Technological University": "NTU", "University College Cork": "UCC",
+  "Karlsruhe Institute of Technology": "KIT",
+};
+function shortUni(name) {
+  const n = String(name || "").trim();
+  // Many college names already carry their abbreviation, e.g. "…Munich (TUM)" — use it.
+  const paren = n.match(/\(([A-Z][A-Za-z&.\- ]{1,10})\)\s*$/);
+  if (paren) return paren[1].trim();
+  return UNI_ABBR[n] || n.replace(/^The /, "").replace(/^University of /, "").replace(/ University$/, "").trim();
+}
 function head({ title, desc, path, kw, jsonLdBlocks, robots }) {
   const url = ORIGIN + path;
   title = trimTitle(title);
@@ -3013,7 +3030,7 @@ function examForUniPage(c) {
   const path = `/ielts-for-${c.id}/`;
   const bandStr = String(band);
   const bandLink = ["6", "6.5", "7", "7.5", "8"].includes(bandStr) ? `/ielts-band-${bandStr.replace(".", "-")}/` : "/ielts-band-7/";
-  const title = `IELTS Score for ${esc(c.name)} — Requirement &amp; How to Get It (2026) | ${BRAND}`;
+  const title = `${esc(shortUni(c.name))}: IELTS Band ${band} Needed (2026) | ${BRAND}`;
   const desc = `What IELTS score do you need for ${c.name} (${c.country})? Around Band ${band} overall${c.toefl ? " (≈ TOEFL " + c.toefl + ", PTE " + c.pte + ")" : ""}. Plus ${c.name}'s rank, fees, deadlines, programmes and a free plan to reach your target.`;
   const faqs = [
     { q: `What IELTS score do I need for ${c.name}?`, a: `${c.name} typically requires around IELTS Band ${band} overall${c.toefl ? " (equivalent to TOEFL iBT ~" + c.toefl + " or PTE ~" + c.pte + ")" : ""}. Undergraduate courses are often 0.5 lower; some postgraduate programmes ask higher — confirm on your course page.` },
@@ -3049,7 +3066,7 @@ function altExamForUniPage(c, ex) {
   if (!c || !c.id || c[ex.k] == null) return;
   const score = c[ex.k];
   const path = `/${ex.k}-for-${c.id}/`;
-  const title = `${ex.name} Score for ${esc(c.name)} — Requirement (2026) | ${BRAND}`;
+  const title = `${esc(shortUni(c.name))}: ${ex.name} ${score} Needed (2026) | ${BRAND}`;
   const desc = `What ${ex.full} score do you need for ${c.name} (${c.country})? Around ${ex.name} ${score}${c.ielts ? " (≈ IELTS " + c.ielts + ")" : ""}. Plus ${c.name}'s rank, fees, deadlines, programmes and a free plan to reach it.`;
   const faqs = [
     { q: `What ${ex.name} score do I need for ${c.name}?`, a: `${c.name} typically needs about ${ex.full} ${score}${c.ielts ? ", equivalent to IELTS " + c.ielts : ""}. Confirm the exact figure on the official course page.` },
@@ -3952,11 +3969,12 @@ const CONTENT_HUBS = [
       { href: "/gre-quant-160/", label: "GRE Quant 160+ Strategy" },
       { href: "/which-english-test/", label: "Which English Test Should I Take?" },
     ] },
-  { path: "/gmat-quant-formulas/", title: "GMAT Focus Quant Formulas: Essential Cheat Sheet",
-    desc: "GMAT Focus Quant formulas for algebra, geometry, arithmetic and statistics. Free formula sheet with worked examples.",
-    kw: "gmat quant formulas, gmat focus formulas, gmat math formulas, gmat algebra geometry, gmat statistics, free gmat formula sheet",
-    lead: "GMAT Focus Quant tests business-school-level maths. Here are the formulas grouped by topic, with tips on when to apply them.",
+  { path: "/gmat-quant-formulas/", title: "GMAT Quant Formula Sheet 2026 — Free GMAT Math",
+    desc: "Free GMAT Focus Quant formula sheet: every essential GMAT math formula for algebra, geometry, arithmetic and statistics, grouped by topic with worked examples and when to use each.",
+    kw: "gmat quant formulas, gmat math formulas, gmat formula sheet, gmat focus formulas, gmat formulas, gmat algebra geometry, gmat statistics, free gmat formula sheet, gmat india",
+    lead: "GMAT Focus Quant tests business-school-level maths. This free formula sheet lists every formula you actually need, grouped by topic, with worked examples and tips on when to apply each one.",
     sections: [
+      { h: "The one-page GMAT Quant formula sheet", body: "Arithmetic: Percent change = ((New − Old) / Old) × 100; Compound interest A = P(1 + r/n)^(nt); Average = Sum / Count, so Sum = Average × Count. Algebra: (a + b)² = a² + 2ab + b²; (a − b)² = a² − 2ab + b²; a² − b² = (a + b)(a − b). Geometry: Circle Area = πr², Circumference = 2πr; Triangle Area = ½ × base × height; Rectangle Area = l × w; Box volume = l × w × h; Cylinder volume = πr²h; Pythagoras a² + b² = c² (triples 3-4-5, 5-12-13). Statistics: Mean = Sum / Count; Probability = Favourable / Total; independent events P(A and B) = P(A) × P(B); Speed = Distance / Time; Work rate = 1 / time. Keep this list beside you while you practise, then take a timed mock to lock it in." },
       { h: "GMAT Focus Quant section overview", body: "GMAT Focus Quant is one of three equally weighted sections (Quant, Verbal, Data Insights). It covers Problem Solving (choose the answer) and Data Sufficiency (decide if statements are sufficient to solve). Formulas help, but GMAT rewards problem-solving logic and estimation." },
       { h: "Arithmetic and algebraic identities", body: "Percent problems: Percent change = ((New – Old) / Old) × 100. Interest (compound): A = P(1 + r/n)^(nt). Ratios and proportions: a/b = c/d. Algebraic identities: (a + b)² = a² + 2ab + b², (a – b)² = a² – 2ab + b², a² – b² = (a + b)(a – b). These shortcuts save time." },
       { h: "Geometry for GMAT", body: "Circle: Area = πr², Circumference = 2πr. Triangle: Area = (1/2) × base × height, and for a right triangle, remember 3–4–5, 5–12–13 Pythagorean triples. Rectangle: Area = l × w. Volume: Box = l × w × h, Cylinder = πr²h. GMAT often tests these in combination (e.g. comparing volumes of different shapes)." },
