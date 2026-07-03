@@ -2346,6 +2346,101 @@ costCalculatorPage();
 loanEmiPage();
 proofOfFundsCalculatorPage();
 readinessPage();
+
+// ── Study in Germany — PILLAR hub. Broad, substantive guide that interlinks the
+// existing Germany "spoke" pages (blocked account, free universities, opportunity
+// card, cost, scholarships, intakes, MS programmes) into one topical cluster.
+// Non-duplicative: it covers the whole journey; the spokes cover the specifics. ──
+function germanyPillarPage() {
+  const path = `/study-in-germany/`;
+  const faqs = [
+    { q: "Is studying in Germany really free for international students?", a: "At public universities, tuition is free or near-free for everyone, including international students — you usually pay only a semester contribution of about EUR 150–350 (which often includes a public-transport pass). The main exception is the state of Baden-Württemberg, which charges non-EU students about EUR 1,500 per semester. Private universities charge full tuition. You still need to cover living costs (about EUR 992/month)." },
+    { q: "How much money do I need to show for a German student visa?", a: "About EUR 11,904 for the year, deposited in a blocked account (Sperrkonto), which releases roughly EUR 992 to you each month after you arrive. Use the free proof-of-funds calculator for your exact total, and see the blocked-account guide for how to open one." },
+    { q: "Can I work while studying in Germany?", a: "Yes. International students can work up to 140 full days or 280 half days per year (recently expanded), alongside their studies. A part-time job helps with living costs but should not be your main funding source for the visa." },
+    { q: "Can I stay and work in Germany after I graduate?", a: "Yes. After graduating you can apply for an 18-month residence permit to look for a job related to your degree. Once you have a qualifying job you can move to a work permit or the EU Blue Card, which is a fast route to permanent residence (a settlement permit) in Germany." },
+    { q: "Do Indian students need an APS certificate for Germany?", a: "Yes. Since late 2022, Indian students must obtain an APS certificate (academic verification) before applying for a student visa. Factor the APS timeline into your application planning." },
+    { q: "When should I apply to study in Germany?", a: "Germany has two intakes: the Winter intake (starts October, the main one with the most courses) and the Summer intake (starts April). Apply 6–9 months ahead — winter deadlines are often around May–July, summer around November–January. Many applications go through uni-assist." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Study in Germany</p>
+<section class="hero"><div class="badges"><span class="badge">Complete guide</span><span class="badge">2026</span><span class="badge">Free public universities</span></div>
+<h1>Study in Germany 2026: The Complete Guide for International Students</h1>
+<p class="lead">Germany offers world-class, tuition-free public universities, a low cost of living, strong post-study work rights and a clear path to permanent residence. This guide walks the whole journey — universities, admission, the blocked account, the student visa, working while you study and staying on after graduation — and links the detailed step-by-step resources for each stage.</p>
+<a class="cta" href="/tools/proof-of-funds-calculator/">▶ Calculate your German proof of funds (free)</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Public universities in Germany are tuition-free (you pay only a ~EUR 150–350/semester contribution); you need about <strong>EUR 11,904</strong> in a blocked account for the student visa; Indian students need an <strong>APS certificate</strong>; the main intake is <strong>Winter (October)</strong>; and after graduating you get an <strong>18-month permit to find work</strong>, leading to the EU Blue Card and permanent residence.</div>
+
+<div class="card"><h2>Why study in Germany?</h2>
+<ul class="bcheck">
+<li><strong>Tuition-free public universities.</strong> Most public universities charge no tuition to any student, international included — only a small semester contribution. See <a href="/blog/study-in-germany-for-free-2026/">how to study in Germany for free</a> and <a href="/blog/study-germany-english-free-universities/">free English-taught universities</a>.</li>
+<li><strong>Globally ranked, engineering &amp; research strength.</strong> TU Munich, RWTH Aachen, Heidelberg, LMU Munich and others rank among the world's best, especially for engineering, computer science and the sciences.</li>
+<li><strong>Low cost of living</strong> relative to the UK/US/Australia, and a strong student-job market.</li>
+<li><strong>Clear stay-back and PR path</strong> — an 18-month job-seeking permit, the EU Blue Card, and a settlement permit within a few years.</li>
+</ul></div>
+
+<div class="card"><h2>What it costs (tuition + living)</h2>
+<p>Public-university <strong>tuition is free or near-free</strong> — you pay a semester contribution of roughly <strong>EUR 150–350</strong>, which often includes a regional public-transport ticket. The one notable exception is <strong>Baden-Württemberg</strong> (Stuttgart, Heidelberg, Karlsruhe…), which charges non-EU students about <strong>EUR 1,500/semester</strong>. Private universities charge full tuition.</p>
+<p>Living costs run about <strong>EUR 992/month (EUR 11,904/year)</strong> — the same figure you must show for the visa. Big cities like Munich cost more; smaller towns cost less. Model your full budget with the free <a href="/tools/cost-of-studying-abroad-calculator/">cost-of-studying-abroad calculator</a>, and see the <a href="/study-abroad/cost-of-studying-in-germany/">Germany cost breakdown</a>.</p></div>
+
+<div class="card"><h2>Admission &amp; requirements</h2>
+<ul class="bcheck">
+<li><strong>Academic:</strong> a recognised school-leaving/bachelor qualification for your level. Many programmes require a Studienkolleg (foundation year) if your qualification isn't directly equivalent.</li>
+<li><strong>APS certificate (Indian students):</strong> mandatory academic verification you must complete before the visa — start it early.</li>
+<li><strong>English proficiency</strong> for English-taught programmes: typically IELTS 6.5+ or TOEFL 80–90+. Check and practise with <a href="/ielts-for-germany/">IELTS for Germany</a> and a <a href="/mock-test/ielts/">free IELTS mock test</a> or <a href="/mock-test/toefl/">TOEFL mock test</a>.</li>
+<li><strong>German proficiency</strong> (for German-taught programmes): usually TestDaF or DSH at B2–C1.</li>
+<li><strong>Applications</strong> are often submitted through <strong>uni-assist</strong> (a central portal) or directly to the university.</li>
+</ul></div>
+
+<div class="card"><h2>Money: the blocked account (Sperrkonto)</h2>
+<p>For the student visa you must prove about <strong>EUR 11,904</strong> for one year, held in a <strong>blocked account</strong> that releases roughly <strong>EUR 992 to you each month</strong> after you arrive and register. It is your own money, not a fee. Full walkthrough: the <a href="/blog/germany-blocked-account-2026-guide/">Germany blocked account (Sperrkonto) guide</a>. Work out your exact proof-of-funds total with the <a href="/tools/proof-of-funds-calculator/">proof-of-funds calculator</a>, and compare Germany with other destinations in the <a href="/study-abroad-funding-facts-2026/">2026 funding facts</a>.</p></div>
+
+<div class="card"><h2>The student visa &amp; timeline</h2>
+<p>Germany has two intakes: <strong>Winter (starts October)</strong> — the main intake with the most courses — and <strong>Summer (starts April)</strong>. Apply <strong>6–9 months ahead</strong>. A rough sequence: shortlist universities → sit IELTS/TOEFL and (for Indians) complete APS → apply via uni-assist → receive admission → open the blocked account → book the national (D-type) student-visa appointment → arrive, register (Anmeldung) and enrol. See <a href="/intakes/germany/">Germany intakes &amp; deadlines</a> and rehearse your interview with the <a href="/#/colleges">visa-interview coach</a>.</p></div>
+
+<div class="card"><h2>Working while you study</h2>
+<p>International students can work up to <strong>140 full days (or 280 half days) per year</strong> alongside studies — recently expanded — which helps with living costs. Student jobs (Werkstudent roles, research assistant/HiWi positions) are common and can be relevant to your field. Keep work within the legal limit and treat it as a supplement, not your visa funding.</p></div>
+
+<div class="card"><h2>After graduation: work &amp; permanent residence</h2>
+<ul class="bcheck">
+<li><strong>18-month job-seeking permit:</strong> after graduating you can stay up to 18 months to find work related to your degree.</li>
+<li><strong>EU Blue Card:</strong> with a qualifying graduate-level job and salary, the Blue Card is a fast track — it can lead to a <strong>settlement permit (permanent residence)</strong> within roughly 2–3 years (sooner with strong German).</li>
+<li><strong>Opportunity Card (Chancenkarte):</strong> a points-based route (launched 2024) that lets qualified people come to look for work. See the <a href="/blog/germany-opportunity-card-2026/">Germany Opportunity Card guide</a>.</li>
+</ul>
+<p class="note">Immigration rules and salary thresholds change — always confirm the current details on the official <a href="https://www.make-it-in-germany.com/en/" target="_blank" rel="nofollow noopener">Make it in Germany ↗</a> portal before you rely on them.</p></div>
+
+<div class="card"><h2>Scholarships &amp; funding</h2>
+<p>Even with free tuition, scholarships help with living costs. <strong>DAAD</strong> is the largest provider, alongside the Deutschlandstipendium and university/foundation awards. Browse <a href="/scholarships/study-in-germany/">scholarships to study in Germany</a> and the wider <a href="/fully-funded-scholarships/">fully-funded scholarships database</a>. If you need a loan, model repayments with the <a href="/tools/education-loan-emi-calculator/">education-loan EMI calculator</a>.</p></div>
+
+<div class="card"><h2>Popular Master's programmes in Germany</h2>
+<p>Germany is especially strong for STEM and business Master's:
+<a href="/study-abroad/ms-computer-science-in-germany/">MS Computer Science</a> ·
+<a href="/study-abroad/ms-data-science-in-germany/">MS Data Science</a> ·
+<a href="/study-abroad/ms-engineering-in-germany/">MS Engineering</a> ·
+<a href="/study-abroad/ms-business-analytics-in-germany/">MS Business Analytics</a> ·
+<a href="/study-abroad/mba-in-germany/">MBA</a>.</p>
+<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)}. Figures (tuition contributions, blocked-account amount, work limits, post-study permits) are checked against official German sources and change over time — confirm the current details with your university and the German mission before you apply.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
+  { label: `🏦 Germany blocked account guide`, href: `/blog/germany-blocked-account-2026-guide/` },
+  { label: `🎓 Study in Germany for free`, href: `/blog/study-in-germany-for-free-2026/` },
+  { label: `💸 Germany scholarships`, href: `/scholarships/study-in-germany/` },
+  { label: `📅 Germany intakes & deadlines`, href: `/intakes/germany/` },
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+])}`;
+  emit(path, head({
+    title: `Study in Germany 2026: Complete Guide for International Students | ${BRAND}`,
+    desc: `Free complete guide to studying in Germany 2026: tuition-free public universities, admission & APS, the EUR 11,904 blocked account, student visa, working while studying, and the post-study 18-month permit to PR. Free tools included.`,
+    path,
+    kw: "study in germany, study in germany for international students, study in germany for free, germany student visa 2026, germany blocked account amount, study in germany from india, aps certificate germany, germany post study work visa, ms in germany, cost of studying in germany",
+    jsonLdBlocks: [
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Germany 2026: The Complete Guide for International Students", description: "Universities, admission, blocked account, student visa, working while studying and post-study work in Germany, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
+      faqJsonLd(faqs),
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Germany", path }]),
+    ],
+  }) + shell(inner));
+}
+germanyPillarPage();
 fundingFactsPage();
 (() => {
   const byCountry = {};
@@ -3300,6 +3395,59 @@ function altIndexPage() {
 }
 COMPETITORS.forEach(alternativePage);
 altIndexPage();
+
+// ── Substantive head-to-head comparison pages (NOT the thin "alternative"
+// doorways above). Balanced, honest, genuinely useful decision resources for a
+// curated set of the most-compared tools — this is the "comparison as a real
+// resource" the SEO strategy explicitly allows (vs. thin combos it penalises). ──
+function comparisonPage(c) {
+  const path = `/landingprep-vs-${c.slug}/`;
+  const name = c.name;
+  const isExam = c.kind === "exam";
+  const rows = isExam
+    ? [["Price", LP_CMP.price, c.their.price], ["Full-length mock tests", LP_CMP.mocks, c.their.mocks], ["AI speaking + essay feedback", LP_CMP.ai, c.their.ai || "—"], ["Sign-up needed", LP_CMP.signup, c.their.signup], ["Exams covered", c.coverShort + " + more", c.their.coverage]]
+    : [["Price", LP_CMP.price, c.their.price], ["Free college predictor", LP_CMP.predictor, c.their.predictor], ["Free SOP builder", LP_CMP.sop, c.their.sop], ["Free exam mock tests", LP_CMP.mocks, c.their.mocks], ["Sign-up needed", LP_CMP.signup, c.their.signup]];
+  const table = `<div class="card"><h2>${BRAND} vs ${esc(name)} — side by side</h2><table class="cmp-table"><thead><tr><th></th><th>${BRAND}</th><th>${esc(name)}</th></tr></thead><tbody>${rows.map((r) => `<tr><td><strong>${esc(r[0])}</strong></td><td>${esc(r[1])}</td><td>${esc(r[2])}</td></tr>`).join("")}</tbody></table></div>`;
+  const chooseThem = isExam
+    ? `you want ${c.paidPerk} and are happy to pay for a structured, guided course`
+    : `you want ${c.paidPerk} and prefer paid, hands-on support through your applications`;
+  const chooseLP = isExam
+    ? `you want to practise as much as you like for free — real-timing mock tests, instant scoring and an AI speaking &amp; writing partner — with no signup and no paywall`
+    : `you want to shortlist universities, build your SOP and find scholarships for free, and prepare for your exams and visa in the same place, with no signup`;
+  const faqs = [
+    { q: `Is ${BRAND} or ${name} better?`, a: `Neither is simply "better" — they suit different needs. ${BRAND} is 100% free with unlimited practice and no signup, so it wins on cost and instant access. ${name} is a strong paid option if ${chooseThem.replace(/&amp;/g, "and")}. Many students use ${BRAND} for free practice and turn to a paid service only if they want that extra structure.` },
+    { q: `Is ${name} free?`, a: c.freeAnswer },
+    { q: `Can I use both ${BRAND} and ${name}?`, a: `Absolutely. A common approach is to do your unlimited practice and mock tests free on ${BRAND}, and use ${name} for its paid strengths (${c.paidPerk}) if and when you feel you need them.` },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/free-alternatives/">Compare</a> › ${BRAND} vs ${esc(name)}</p>
+<section class="hero"><div class="badges"><span class="badge">Honest comparison</span><span class="badge">2026</span><span class="badge">Independent</span></div>
+<h1>${BRAND} vs ${esc(name)}: An Honest 2026 Comparison</h1>
+<p class="lead">A fair, side-by-side look at ${BRAND} and ${esc(name)} — what each does best, what they cost, and which one fits your situation. We run ${BRAND}, so we say up front where ${esc(name)} is the better choice.</p>
+<a class="cta" href="${isExam ? `/mock-test/${(c.exams && c.exams[0]) || "ielts"}/` : "/#/colleges"}">▶ ${isExam ? "Try a free mock test" : "Open the free college predictor"}</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Choose <strong>${BRAND}</strong> if ${chooseLP}. Choose <strong>${esc(name)}</strong> if ${chooseThem}. They can also be used together.</div>
+${table}
+<div class="card"><h2>What ${BRAND} does best</h2><p>${esc(lpPitch(c.kind))}</p><p>Because everything is free and needs no account, the barrier to just <em>starting</em> is zero — useful when you want to benchmark your level today, drill a weak section, or take a full timed mock the night before your test without buying anything.</p></div>
+<div class="card"><h2>What ${esc(name)} does best</h2><p>${esc(c.intro)}</p><p>Its main strength is <strong>${esc(c.paidPerk)}</strong>. If that structured, paid support is what you're looking for, ${esc(name)} is a genuinely good choice — this comparison isn't here to talk you out of it, only to show you the free option alongside it.</p></div>
+<div class="card"><h2>Which should you choose?</h2><ul class="bcheck">
+<li><strong>Pick ${BRAND} if</strong> ${chooseLP}, or if cost is a constraint and you're a motivated self-studier.</li>
+<li><strong>Pick ${esc(name)} if</strong> ${chooseThem}.</li>
+<li><strong>Use both if</strong> you want free unlimited practice (${BRAND}) plus ${esc(name)}'s paid extras when you need them.</li>
+</ul>
+<p class="note">Pricing and features for ${esc(name)} change over time — always check the latest on their official site. ${BRAND} is independent and not affiliated with ${esc(name)}; this comparison reflects publicly available information and our own free tools.</p></div>
+${faqBlock(faqs)}
+${relatedGrid(isExam
+  ? [...(c.exams || []).slice(0, 2).map((e) => ({ label: `Free ${e.toUpperCase()} mock test`, href: `/mock-test/${e}/` })), { label: "All free alternatives", href: "/free-alternatives/" }, { label: "Score converter", href: "/tools/english-test-score-converter/" }]
+  : [{ label: "Free college predictor", href: "/#/colleges" }, { label: "Scholarships", href: "/fully-funded-scholarships/" }, { label: "All free alternatives", href: "/free-alternatives/" }, { label: "Study-abroad blog", href: "/blog/" }])}`;
+  const lc = name.toLowerCase();
+  const kw = `${BRAND.toLowerCase()} vs ${lc}, ${lc} vs ${BRAND.toLowerCase()}, ${lc} or ${BRAND.toLowerCase()}, ${lc} comparison, is ${lc} worth it, free alternative to ${lc}`;
+  emit(path, head({ title: `${BRAND} vs ${name} (2026): Honest Comparison — Free vs Paid | ${BRAND}`, desc: `${BRAND} vs ${name}: an honest, independent 2026 comparison — features, price and who each suits. ${BRAND} is 100% free; see where ${name} is the better pick.`, path, kw, jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Compare", path: "/free-alternatives/" }, { name: `${BRAND} vs ${name}`, path }])] }) + shell(inner));
+}
+// Curated: only the most-compared tools, as substantive resources (not a mass batch).
+["magoosh", "yocket", "leverage-edu", "ielts-liz"].forEach((slug) => {
+  const c = COMPETITORS.find((x) => x.slug === slug);
+  if (c) comparisonPage(c);
+});
 COLLEGES.forEach(examForUniPage);
 COLLEGES.forEach((c) => ALT_EXAMS.forEach((ex) => altExamForUniPage(c, ex)));
 scholarshipCountryPages();
