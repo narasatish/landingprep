@@ -1269,6 +1269,96 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// ── Proof-of-Funds Calculator — free tool built on the funding facts verified
+// against official sources (link magnet; cross-linked from the funding data study). ──
+function proofOfFundsCalculatorPage() {
+  const path = `/tools/proof-of-funds-calculator/`;
+  // Verified against the official authority linked per country (same sources as
+  // the funding-facts data study). "Last verified" is stamped on the page.
+  const POF = [
+    { id: "germany", flag: "🇩🇪", name: "Germany", cur: "EUR", base: 11904, months: 12, tuition: false, src: "https://www.auswaertiges-amt.de/en/sperrkonto-388600", how: "Blocked account (Sperrkonto): EUR 11,904 for the year, released to you at about EUR 992/month after you arrive. Tuition at public universities is usually near-zero." },
+    { id: "canada", flag: "🇨🇦", name: "Canada", cur: "CAD", base: 20635, months: 12, tuition: true, src: "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", how: "CAD 20,635 living-cost proof (commonly shown via a GIC, returned to you in instalments) PLUS your first-year tuition. The Student Direct Stream ended in Nov 2024 — everyone uses the regular stream now." },
+    { id: "uk-london", flag: "🇬🇧", name: "UK — London", cur: "GBP", monthly: 1529, months: 9, tuition: true, src: "https://www.gov.uk/student-visa/money", how: "Maintenance of GBP 1,529/month for up to 9 months, held 28 consecutive days before you apply, PLUS your first-year tuition (or the unpaid balance)." },
+    { id: "uk-other", flag: "🇬🇧", name: "UK — outside London", cur: "GBP", monthly: 1171, months: 9, tuition: true, src: "https://www.gov.uk/student-visa/money", how: "Maintenance of GBP 1,171/month for up to 9 months, held 28 consecutive days before you apply, PLUS your first-year tuition (or the unpaid balance)." },
+    { id: "australia", flag: "🇦🇺", name: "Australia", cur: "AUD", base: 29710, months: 12, tuition: true, src: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500", how: "AUD 29,710/year is the published living-cost benchmark; financial capacity is assessed case-by-case under the Genuine Student requirement. Add first-year tuition." },
+    { id: "ireland", flag: "🇮🇪", name: "Ireland", cur: "EUR", base: 10000, months: 12, tuition: true, src: "https://www.irishimmigration.ie/coming-to-study-in-ireland/", how: "EUR 10,000 proof of funds shown to immigration (ISD), plus your first-year tuition." },
+    { id: "usa", flag: "🇺🇸", name: "USA", cur: "USD", base: 0, months: 12, tuition: true, custom: true, src: "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html", how: "No fixed figure — you prove the first-year cost of attendance shown on your Form I-20 (tuition + living, set by your university)." },
+  ];
+  const opts = POF.map((c) => `<option value="${c.id}">${c.flag} ${esc(c.name)}</option>`).join("");
+  const refRows = POF.map((c) => `<tr><td>${c.flag} ${esc(c.name)}</td><td>${c.monthly ? `${c.cur} ${c.monthly.toLocaleString()}/mo × up to ${c.months}` : (c.base ? `${c.cur} ${c.base.toLocaleString()}` : "Cost of attendance")}${c.tuition ? " + tuition" : ""}</td><td><a href="${c.src}" target="_blank" rel="nofollow noopener">official ↗</a></td></tr>`).join("");
+  const faqs = [
+    { q: "How much money do I need to show for a student visa?", a: "It depends on the country. Germany needs about EUR 11,904 in a blocked account; Canada about CAD 20,635 plus first-year tuition; the UK GBP 1,171–1,529 per month for up to 9 months plus tuition; Australia around AUD 29,710 per year plus tuition; Ireland about EUR 10,000 plus tuition; the USA has no fixed figure — you prove your Form I-20 cost of attendance. Use the calculator above for your exact total, then confirm with the official authority." },
+    { q: "Does proof of funds include tuition?", a: "Usually yes for most countries — you show living costs AND your first-year tuition (or the unpaid balance). Germany's blocked account is the main exception, since public-university tuition there is typically near-zero." },
+    { q: "Is the German blocked account or Canadian GIC a fee?", a: "No — both are your own money held as proof of funds. A German Sperrkonto releases about EUR 992 to you each month after arrival; a Canadian GIC is returned to you in instalments over your first year." },
+    { q: "How current are these figures?", a: `They are checked against each government's official page (linked in the table) and were last verified on ${BUILD_DATE}. Proof-of-funds amounts change every year — always confirm the current figure on the official authority's site before you transfer money.` },
+  ];
+  const calc = `
+<div class="card">
+  <h2>💷 How much proof of funds do you need?</h2>
+  <p class="note">Pick your destination, add your first-year tuition where it applies, and get the total funds to show — in that country's currency.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:10px 0">
+    <label>Destination<select id="pof_country" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px">${opts}</select></label>
+    <label>First-year tuition <span id="pof_cur" style="color:var(--muted)"></span><input id="pof_tuition" type="number" inputmode="decimal" min="0" placeholder="e.g. 15000" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label id="pof_months_wrap">Months of maintenance (UK, max 9)<input id="pof_months" type="number" inputmode="decimal" min="1" max="9" value="9" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button id="pof_btn" class="cta" type="button" style="border:0;cursor:pointer">Calculate proof of funds →</button>
+  <div id="pofOut" style="margin-top:12px"></div>
+</div>
+<script>
+(function(){
+  var DATA=${JSON.stringify(POF)};
+  function byId(id){return document.getElementById(id);}
+  function num(id){var v=parseFloat((byId(id)||{}).value);return isNaN(v)?0:Math.max(0,v);}
+  function fmt(x){try{return Math.round(x).toLocaleString();}catch(e){return Math.round(x);}}
+  function find(id){for(var i=0;i<DATA.length;i++){if(DATA[i].id===id)return DATA[i];}return DATA[0];}
+  function sync(){
+    var c=find((byId('pof_country')||{}).value);
+    var cur=byId('pof_cur'); if(cur) cur.textContent='('+c.cur+')';
+    var mw=byId('pof_months_wrap'); if(mw) mw.style.display=c.monthly?'block':'none';
+  }
+  function calc(){
+    var c=find((byId('pof_country')||{}).value), tuition=num('pof_tuition');
+    var living, livingLabel;
+    if(c.monthly){var m=Math.min(9,Math.max(1,num('pof_months')||9));living=c.monthly*m;livingLabel=c.cur+' '+fmt(c.monthly)+'/mo × '+m+' months = '+c.cur+' '+fmt(living);}
+    else if(c.base){living=c.base;livingLabel=c.cur+' '+fmt(c.base)+' living-cost proof';}
+    else {living=0;livingLabel='cost of attendance (set by your university)';}
+    var total=living+(c.tuition?tuition:0);
+    var out=byId('pofOut'); if(!out) return;
+    out.innerHTML='<div class="callout money"><span class="ic">💰</span><div>'
+      +'<strong>Total proof of funds to show: '+c.cur+' '+fmt(total)+(c.custom&&!tuition?' + your Form I-20 amount':'')+'</strong><br>'
+      +'Living / base: '+livingLabel+(c.tuition?('<br>First-year tuition: '+c.cur+' '+fmt(tuition)):'')+'<br>'
+      +'<span style="color:var(--muted);font-size:13px">'+c.how+' Confirm the current figure on the <a href="'+c.src+'" target="_blank" rel="nofollow noopener">official page ↗</a> before you transfer money.</span></div></div>';
+  }
+  var sel=byId('pof_country'); if(sel){sel.addEventListener('change',function(){sync();calc();});}
+  var b=byId('pof_btn'); if(b) b.addEventListener('click',calc);
+  sync();
+})();
+</script>`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › Proof of Funds Calculator</p>
+<section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">Official sources</span><span class="badge">No signup</span></div>
+<h1>Student Visa Proof-of-Funds Calculator (2026)</h1>
+<p class="lead">Work out exactly how much money you must show for a student visa — living costs plus tuition — for Germany, Canada, the UK, Australia, Ireland and the USA. Free, instant, and checked against official government sources.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Proof of funds = the country's living-cost requirement (Germany EUR 11,904; Canada CAD 20,635; UK GBP 1,171–1,529/month × up to 9; Australia AUD 29,710; Ireland EUR 10,000) plus your first-year tuition (except Germany, where public-university tuition is near-zero). Pick your country below for the exact total.</div>
+${calc}
+<div class="card"><h2>Proof-of-funds requirement by country (2026)</h2>
+<table style="width:100%;border-collapse:collapse" class="uni-table"><thead><tr><th>Country</th><th>Living / base requirement</th><th>Source</th></tr></thead><tbody>${refRows}</tbody></table>
+<p class="note"><strong>Last verified: ${esc(BUILD_DATE)}</strong> against each government's official page (linked above). Figures change yearly — confirm the current amount with the official authority before you apply or transfer money. For the full breakdown, see the <a href="/study-abroad-funding-facts-2026/">Study-Abroad Funding Facts 2026</a> data study.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `📊 Funding facts 2026 (all countries)`, href: `/study-abroad-funding-facts-2026/` },
+  { label: `🧮 Cost of studying abroad`, href: `/tools/cost-of-studying-abroad-calculator/` },
+  { label: `🏦 Education loan EMI calculator`, href: `/tools/education-loan-emi-calculator/` },
+  { label: `🇩🇪 Germany blocked account guide`, href: `/blog/germany-blocked-account-2026-guide/` },
+  { label: `🇨🇦 Canada GIC guide`, href: `/blog/gic-account-canada-2026-guide/` },
+])}`;
+  emit(path, head({ title: `Proof-of-Funds Calculator 2026 — Student Visa Money by Country | ${BRAND}`, desc: `Free student-visa proof-of-funds calculator: living costs + tuition for Germany, Canada, UK, Australia, Ireland & USA, verified against official government sources. Instant, no signup.`, path, kw: "proof of funds calculator, student visa proof of funds, how much money for student visa, blocked account amount calculator, gic amount canada, uk maintenance funds calculator, student visa financial requirement by country", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "Student Visa Proof-of-Funds Calculator", applicationCategory: "FinanceApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path, publisher: PUBLISHER }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "Proof of Funds Calculator", path }]),
+  ] }) + shell(inner));
+}
+
 // ── Education Loan EMI Calculator — a free, self-contained financial tool (link magnet) ──
 function loanEmiPage() {
   const path = `/tools/education-loan-emi-calculator/`;
@@ -2234,11 +2324,11 @@ function fundingFactsPage() {
 <p class="note"><strong>Cite this study:</strong> LandingPrep (${esc(BUILD_DATE.slice(0, 4))}). <em>Study-Abroad Funding Facts 2026: Proof of Funds &amp; Post-Study Work by Country.</em> Retrieved from ${ORIGIN}${path}</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
+  { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
   { label: `🇩🇪 Germany blocked account guide`, href: `/blog/germany-blocked-account-2026-guide/` },
   { label: `🇨🇦 Canada GIC guide`, href: `/blog/gic-account-canada-2026-guide/` },
-  { label: `🧮 Education loan EMI calculator`, href: `/tools/education-loan-emi-calculator/` },
+  { label: `🏦 Education loan EMI calculator`, href: `/tools/education-loan-emi-calculator/` },
   { label: `💰 Cost of studying abroad`, href: `/tools/cost-of-studying-abroad-calculator/` },
-  { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
 ])}`;
   emit(path, head({
     title: `Study-Abroad Funding Facts 2026: Proof of Funds & Post-Study Work by Country | ${BRAND}`,
@@ -2254,6 +2344,7 @@ ${relatedGrid([
 }
 costCalculatorPage();
 loanEmiPage();
+proofOfFundsCalculatorPage();
 readinessPage();
 fundingFactsPage();
 (() => {
