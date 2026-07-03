@@ -1,7 +1,29 @@
 # LandingPrep — Session Handoff (read me first in a new session)
 
-Last updated: 2026-07-03 · repo synced at v320. This file lets a fresh Claude session
-continue with full context. Keep it updated at the end of major work.
+Last updated: 2026-07-03 (session 2) · repo at v323, committed locally on branch
+seo/latest-exam-durations-and-quality — NOT yet pushed (push to main auto-deploys on
+Render; needs user OK). This file lets a fresh Claude session continue with full
+context. Keep it updated at the end of major work.
+
+## Shipped this session (v321–v323, local commits a5a16ef0 / dde732e8 / 8e00c156)
+- **TOEFL true multi-stage adaptive full mocks (v321)** — spec in
+  docs/superpowers/specs/2026-07-03-toefl-adaptive-design.md. Reading/Listening have a
+  Stage-1 gate; routing ≥70%→hard, ≤35%→easy, else medium; path-aware 0–30 scoring.
+  tools/tag-toefl-difficulty.mjs (re-runnable) tags passages/files + emits
+  content/toefl/adaptive-index.json. Engine: normalize-test.jsx (attachToeflAdaptive
+  pre-loads alternates) + mock-test.jsx (routeAdaptiveStage, renderer gating). Any
+  failure → fixed-form fallback. Old fixed-form disclaimers removed from 30 mocks.
+- **Colleges hub 14 tabs → 10 (v322)** — loan→Scholarships & Loans, sop+apps→Apply
+  Now, leaderboard→Community (sub-mode toggles); 4 nav groups. TAB_ALIAS keeps ALL old
+  tab ids/deep-links working (#/colleges/loan/..., /sop, /apps, /leaderboard).
+- **E2E + growth (v323)** — smoke-test now 25 routes + a real TOEFL-adaptive
+  click-through; SW blocked in test context (first install reload was killing
+  click-throughs). Funding-guide PDF email gate reused on Scholarships & Loans tab
+  (window.LP_GuideDownload, per-page source analytics).
+- run-tests.js "script loaded" checks now accept app-bundle.js membership (stale
+  since v315 bundling; they were failing and blocking the npm-test chain).
+- FLAGGED (chip spawned, not done): several content/toefl/reading files (e.g.
+  test-005) have template-boilerplate passages — need rewriting as real content.
 
 ## What this project is
 landingprep.com — 100% free exam-prep (15 exams) + study-abroad SPA (React-via-CDN, no
