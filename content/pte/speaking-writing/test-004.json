@@ -4,9 +4,9 @@
   "section": "speaking-writing",
   "type": "section",
   "title": "PTE Academic Speaking Writing Practice Test 4",
-  "durationSeconds": 4500,
-  "questionCount": 34,
-  "instructions": "Original exam-style practice test with answers and explanations.",
+  "durationSeconds": 4800,
+  "questionCount": 36,
+  "instructions": "Original exam-style practice test with answers and explanations. Includes the two task types added to the PTE Academic pattern in 2026: Summarize Group Discussion and Respond to a Situation.",
   "questions": [
     {
       "id": "pte-speaking-writing-004-q01",
@@ -116,6 +116,31 @@
       "fingerprint": "21771d3b233032e8b1",
       "modelAnswer": "Preservation",
       "audioScript": "What is the primary goal of museum conservation?"
+    },
+    {
+      "id": "pte-speaking-writing-004-sgd-1",
+      "questionType": "summarize_group_discussion",
+      "prompt": "You will hear three people discussing a topic. After listening, summarize the discussion in your own words — cover the main points of view and any decision reached. You have 10 seconds to prepare and 2 minutes to speak.",
+      "audioScript": "Speaker A: Our club's budget was cut by thirty percent, so I suggest cancelling the printed newsletter — most members read the email version anyway. Speaker B: Some alumni donors only get the print copy. Dropping it might cost us donations larger than the saving. Speaker C: We could print a smaller quarterly edition just for donors and move everyone else to email. Speaker A: That cuts printing by about eighty percent while keeping donors happy. Speaker B: Fine, but let's survey the donors first rather than assume what they want.",
+      "keyPoints": [
+        "Thirty percent budget cut forces a decision on the printed newsletter",
+        "Risk raised: donors who prefer print might reduce donations",
+        "Compromise: quarterly print for donors only, email for the rest — pending a donor survey"
+      ],
+      "rubric": "Content: covers each speaker's position and the outcome. Fluency: natural pace, minimal hesitation. Vocabulary/grammar: clear connectors (while, whereas, they agreed that…).",
+      "difficulty": "medium",
+      "topic": "campus life",
+      "modelAnswer": "The discussion was about coping with a thirty percent budget cut. The first speaker proposed cancelling the printed newsletter since most members read the email version, but the second warned that some alumni donors only receive print and dropping it could cost more in donations than it saves. The third suggested a compromise — a small quarterly print edition just for donors, with everyone else moved to email. They accepted this but agreed to survey the donors first rather than assume their preference."
+    },
+    {
+      "id": "pte-speaking-writing-004-rts-1",
+      "questionType": "respond_to_situation",
+      "prompt": "Read the situation below. You have 20 seconds to prepare, then 40 seconds to respond as you would in real life — appropriate tone, clear request, natural spoken English.",
+      "situation": "Your noisy neighbours in the student residence play loud music after midnight during exam week. Speak to them politely but firmly.",
+      "modelAnswer": "Hi — sorry to knock this late. I'm your neighbour in 4B. I don't want to make this awkward, but it's exam week and the music has been going past midnight the last few nights, and I really need to sleep. Would you mind keeping it down after eleven until exams finish? Happy to return the favour whenever you need quiet. Thanks for understanding.",
+      "rubric": "Appropriacy: tone fits the situation (polite/firm as needed). Content: states the problem and a clear request. Fluency and pronunciation.",
+      "difficulty": "medium",
+      "topic": "everyday situations"
     },
     {
       "id": "pte-speaking-writing-004-q06",

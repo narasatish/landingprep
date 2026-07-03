@@ -4,8 +4,8 @@
   "section": "reading",
   "type": "section",
   "title": "ACT Reading Practice Test 2",
-  "durationSeconds": 2100,
-  "questionCount": 40,
+  "durationSeconds": 2400,
+  "questionCount": 36,
   "instructions": "Read each passage and choose the best answer to each question based on the passage.",
   "passages": [
     {
@@ -641,74 +641,6 @@
       "explanation": "By explaining how the brain can isolate a single conversation in a noisy environment, the author demonstrates the sophisticated processing capabilities of the auditory system.",
       "difficulty": "medium",
       "questionNumber": 36
-    },
-    {
-      "id": "act-reading-002-q37",
-      "passageId": "act-reading-002-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Comparison",
-      "prompt": "How does conductive hearing loss differ from sensorineural hearing loss?",
-      "options": [
-        "both are permanent and untreatable",
-        "sensorineural loss is caused by age while conductive loss is not",
-        "conductive loss involves impaired mechanical transmission while sensorineural loss involves disrupted translation of vibrations to neural signals",
-        "conductive loss affects only the eardrum"
-      ],
-      "correctAnswer": "conductive loss involves impaired mechanical transmission while sensorineural loss involves disrupted translation of vibrations to neural signals",
-      "explanation": "The passage explicitly distinguishes: 'Damage to the outer or middle ear causes \"conductive hearing loss,\" where mechanical sound transmission is impaired' versus 'Damage to the cochlea or auditory nerve causes \"sensorineural hearing loss,\" where the translation of mechanical vibration to neural signals is disrupted.'",
-      "difficulty": "medium",
-      "questionNumber": 37
-    },
-    {
-      "id": "act-reading-002-q38",
-      "passageId": "act-reading-002-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Inference",
-      "prompt": "Based on the passage, why is sensorineural hearing loss typically permanent?",
-      "options": [
-        "the auditory nerve cannot be repaired",
-        "the brain cannot process sound signals",
-        "cochlear hair cells cannot regenerate naturally",
-        "the passage does not explain this"
-      ],
-      "correctAnswer": "cochlear hair cells cannot regenerate naturally",
-      "explanation": "The passage states: 'Unlike hair cells in other organs, cochlear hair cells do not regenerate, making hearing loss from this source permanent unless future regenerative therapies develop.'",
-      "difficulty": "easy",
-      "questionNumber": 38
-    },
-    {
-      "id": "act-reading-002-q39",
-      "passageId": "act-reading-002-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Detail",
-      "prompt": "According to the passage, what factors can cause sensorineural hearing loss?",
-      "options": [
-        "only age causes this type of hearing loss",
-        "only genetic mutations cause this type",
-        "age, noise exposure, and certain medications",
-        "only loud concerts cause this type"
-      ],
-      "correctAnswer": "age, noise exposure, and certain medications",
-      "explanation": "The passage states: 'Age, noise exposure, and certain medications can all cause sensorineural hearing loss by damaging hair cells in the cochlea.'",
-      "difficulty": "easy",
-      "questionNumber": 39
-    },
-    {
-      "id": "act-reading-002-q40",
-      "passageId": "act-reading-002-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Author's Purpose",
-      "prompt": "The passage's final mention of 'future regenerative therapies' serves primarily to:",
-      "options": [
-        "guarantee that hearing loss will be curable in the future",
-        "suggest possibility for restoration of function while acknowledging current permanence of sensorineural hearing loss",
-        "argue that medicine is becoming too advanced",
-        "recommend that people should ignore hearing loss"
-      ],
-      "correctAnswer": "suggest possibility for restoration of function while acknowledging current permanence of sensorineural hearing loss",
-      "explanation": "By mentioning regenerative therapies as a future possibility, the author indicates there may be hope for treatment while acknowledging that hearing loss is currently permanent—a balanced presentation of current reality and future potential.",
-      "difficulty": "medium",
-      "questionNumber": 40
     }
   ]
 }

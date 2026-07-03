@@ -2177,13 +2177,18 @@ function scoreTest(config, answers) {
     }
   } else if (examId === "toefl" && bands.length > 0) {
     result.overall = bands.reduce((a, b) => a + b, 0);
-    result.overallLabel = "TOEFL iBT Total";
+    const band26 = Math.min(6, Math.max(1, Math.round((result.overall / 120 * 5 + 1) * 2) / 2));
+    result.overallLabel = "TOEFL iBT Total (legacy 0\u2013120) \xB7 \u2248 Band " + band26 + " of 6 (indicative, 2026 scale)";
   } else if (examId === "pte" && bands.length > 0) {
     result.overall = Math.round(bands.reduce((a, b) => a + b, 0) / bands.length);
     result.overallLabel = "PTE Overall (10\u201390)";
   } else if (examId === "celpip" && bands.length > 0) {
     result.overall = Math.round(bands.reduce((a, b) => a + b, 0) / bands.length);
     result.overallLabel = "CELPIP CLB Average";
+  } else if (examId === "act" && bands.length > 0) {
+    const core = ["english", "math", "reading"].map((k) => result.sections[k] && result.sections[k].band).filter((b) => b != null && b > 0);
+    result.overall = core.length ? Math.round(core.reduce((a, b) => a + b, 0) / core.length) : Math.round(bands.reduce((a, b) => a + b, 0) / bands.length);
+    result.overallLabel = "ACT Composite (English + Math + Reading)";
   } else if (examId === "duolingo" && bands.length > 0) {
     result.overall = Math.round(bands.reduce((a, b) => a + b, 0) / bands.length);
     result.overallLabel = "Duolingo Overall (10\u2013160)";

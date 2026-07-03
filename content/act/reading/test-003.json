@@ -4,8 +4,8 @@
   "section": "reading",
   "type": "section",
   "title": "ACT Reading Practice Test 3",
-  "durationSeconds": 2100,
-  "questionCount": 40,
+  "durationSeconds": 2400,
+  "questionCount": 36,
   "instructions": "Read each passage and choose the best answer to each question based on the passage.",
   "passages": [
     {
@@ -641,74 +641,6 @@
       "explanation": "By explaining how stomata opening/closing represents a tradeoff between water and carbon dioxide availability, the author shows how plants adapt to environmental constraints.",
       "difficulty": "medium",
       "questionNumber": 36
-    },
-    {
-      "id": "act-reading-003-q37",
-      "passageId": "act-reading-003-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Comparison",
-      "prompt": "How would photosynthetic rates likely differ between a desert plant and a rainforest plant?",
-      "options": [
-        "desert plants have higher rates",
-        "plants don't photosynthesize in rainforests",
-        "they are identical",
-        "rainforest plants likely have higher rates due to abundant water allowing them to maintain open stomata and maximize photosynthesis"
-      ],
-      "correctAnswer": "rainforest plants likely have higher rates due to abundant water allowing them to maintain open stomata and maximize photosynthesis",
-      "explanation": "The passage explains: 'In deserts, plants have evolved to minimize water loss; in tropical rainforests, abundant water allows plants to maintain open stomata and maximize photosynthesis.'",
-      "difficulty": "medium",
-      "questionNumber": 37
-    },
-    {
-      "id": "act-reading-003-q38",
-      "passageId": "act-reading-003-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Detail",
-      "prompt": "According to the passage, what percentage of Earth's oxygen is produced by photosynthetic organisms?",
-      "options": [
-        "50%",
-        "70%",
-        "100%",
-        "approximately 90%"
-      ],
-      "correctAnswer": "approximately 90%",
-      "explanation": "The passage states: 'Photosynthetic organisms produce approximately 90% of Earth's oxygen.'",
-      "difficulty": "easy",
-      "questionNumber": 38
-    },
-    {
-      "id": "act-reading-003-q39",
-      "passageId": "act-reading-003-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Inference",
-      "prompt": "Based on the passage, why is understanding plant response to elevated CO2 increasingly critical?",
-      "options": [
-        "it is not important",
-        "CO2 has no effect on photosynthesis",
-        "plants are becoming extinct",
-        "atmospheric carbon dioxide levels are rising, and understanding how plants respond is essential for predicting ecosystem functioning"
-      ],
-      "correctAnswer": "atmospheric carbon dioxide levels are rising, and understanding how plants respond is essential for predicting ecosystem functioning",
-      "explanation": "The passage states: 'As atmospheric carbon dioxide levels rise, understanding how plants respond to elevated CO2 concentrations becomes increasingly critical for predicting future ecosystem functioning.'",
-      "difficulty": "medium",
-      "questionNumber": 39
-    },
-    {
-      "id": "act-reading-003-q40",
-      "passageId": "act-reading-003-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Main Idea",
-      "prompt": "The passage suggests that photosynthesis is fundamental to life on Earth primarily because:",
-      "options": [
-        "it produces oxygen and forms the base of food chains while supporting ecosystem function",
-        "it produces the most beautiful colors",
-        "it happens to be efficient",
-        "it only occurs in plants"
-      ],
-      "correctAnswer": "it produces oxygen and forms the base of food chains while supporting ecosystem function",
-      "explanation": "The passage states: 'Photosynthetic organisms produce approximately 90% of Earth's oxygen...photosynthetically-fixed carbon forms the base of virtually all food chains and food webs. Understanding photosynthesis is therefore central to understanding ecosystem function.'",
-      "difficulty": "medium",
-      "questionNumber": 40
     }
   ]
 }

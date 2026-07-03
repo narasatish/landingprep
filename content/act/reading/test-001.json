@@ -4,8 +4,8 @@
   "section": "reading",
   "type": "section",
   "title": "ACT Reading Practice Test 1",
-  "durationSeconds": 2100,
-  "questionCount": 40,
+  "durationSeconds": 2400,
+  "questionCount": 36,
   "instructions": "Read each passage and choose the best answer to each question based on the passage.",
   "passages": [
     {
@@ -641,74 +641,6 @@
       "explanation": "The passage explains: 'This adaptation reflects the scarcity of food in the deep ocean; organisms cannot be selective when potential meals are rare.'",
       "difficulty": "medium",
       "questionNumber": 36
-    },
-    {
-      "id": "act-reading-001-q37",
-      "passageId": "act-reading-001-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Inference",
-      "prompt": "Based on the passage, what can be inferred about the cell membranes of deep-sea organisms compared to those of surface-dwelling organisms?",
-      "options": [
-        "they are identical",
-        "they contain different proportions of lipids to maintain function in cold conditions",
-        "they are less complex",
-        "the passage does not provide information about this"
-      ],
-      "correctAnswer": "they contain different proportions of lipids to maintain function in cold conditions",
-      "explanation": "The passage states: 'Their cell membranes contain higher proportions of unsaturated lipids, maintaining flexibility despite the cold temperatures that would make ordinary fats brittle.'",
-      "difficulty": "medium",
-      "questionNumber": 37
-    },
-    {
-      "id": "act-reading-001-q38",
-      "passageId": "act-reading-001-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Main Idea",
-      "prompt": "The discovery of hydrothermal vent ecosystems was significant primarily because it:",
-      "options": [
-        "proved that no other life exists in the deep ocean",
-        "showed that life can exist and thrive independently of solar energy",
-        "demonstrated that deep-sea organisms are stronger than surface organisms",
-        "revealed that the ocean is warmer than previously thought"
-      ],
-      "correctAnswer": "showed that life can exist and thrive independently of solar energy",
-      "explanation": "The passage states this discovery 'challenged the scientific consensus that all life ultimately depends on solar energy and demonstrated the remarkable adaptability of life on Earth.'",
-      "difficulty": "medium",
-      "questionNumber": 38
-    },
-    {
-      "id": "act-reading-001-q39",
-      "passageId": "act-reading-001-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Comparison",
-      "prompt": "How does bioluminescence in deep-sea organisms differ from photosynthesis in shallow-water organisms?",
-      "options": [
-        "both use sunlight as energy",
-        "bioluminescence produces light through chemical reactions while photosynthesis uses solar energy",
-        "photosynthesis is used for hunting while bioluminescence is used for food production",
-        "they are essentially the same process"
-      ],
-      "correctAnswer": "bioluminescence produces light through chemical reactions while photosynthesis uses solar energy",
-      "explanation": "The passage contrasts them directly: 'Unlike the sun-powered photosynthesis of shallow-water organisms, deep-sea creatures use bioluminescence, the ability to produce light through chemical reactions.'",
-      "difficulty": "medium",
-      "questionNumber": 39
-    },
-    {
-      "id": "act-reading-001-q40",
-      "passageId": "act-reading-001-p4",
-      "questionType": "multiple_choice_single",
-      "topic": "Author's Purpose",
-      "prompt": "The passage's opening description of deep-ocean conditions as 'extreme' and 'presenting challenges' primarily serves to:",
-      "options": [
-        "discourage further exploration of the ocean",
-        "suggest that life cannot survive in harsh environments",
-        "establish the context for understanding why organisms need remarkable adaptations",
-        "prove that evolution is impossible"
-      ],
-      "correctAnswer": "establish the context for understanding why organisms need remarkable adaptations",
-      "explanation": "By establishing the severity of deep-ocean conditions first, the author creates a framework for the reader to appreciate the significance and ingenuity of the adaptations that follow.",
-      "difficulty": "medium",
-      "questionNumber": 40
     }
   ]
 }

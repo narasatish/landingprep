@@ -4,9 +4,9 @@
   "section": "speaking-writing",
   "type": "section",
   "title": "PTE Academic Speaking Writing Practice Test 1",
-  "durationSeconds": 4500,
-  "questionCount": 34,
-  "instructions": "Original exam-style practice test with answers and explanations.",
+  "durationSeconds": 4800,
+  "questionCount": 36,
+  "instructions": "Original exam-style practice test with answers and explanations. Includes the two task types added to the PTE Academic pattern in 2026: Summarize Group Discussion and Respond to a Situation.",
   "questions": [
     {
       "id": "pte-speaking-writing-001-q01",
@@ -118,6 +118,31 @@
       "fingerprint": "0e35d8498f163cbbcf",
       "modelAnswer": "Radio waves",
       "audioScript": "What is the primary medium for transmitting information wirelessly over long distances?"
+    },
+    {
+      "id": "pte-speaking-writing-001-sgd-1",
+      "questionType": "summarize_group_discussion",
+      "prompt": "You will hear three people discussing a topic. After listening, summarize the discussion in your own words — cover the main points of view and any decision reached. You have 10 seconds to prepare and 2 minutes to speak.",
+      "audioScript": "Speaker A: I think our project should survey students online — we'd reach far more people in a week. Speaker B: But online surveys get rushed answers. Face-to-face interviews would give us deeper reasons, even if we only manage thirty. Speaker C: Why not both? Start with a short online survey to find patterns, then interview ten people about the most surprising results. Speaker A: That works, but we'd need to finish the survey by Friday to leave time for interviews. Speaker B: Agreed — I'll draft the questions tonight and we can review them tomorrow.",
+      "keyPoints": [
+        "The group debated online surveys (reach) versus interviews (depth)",
+        "They agreed on a combined approach: survey first, then follow-up interviews",
+        "Deadline set — survey done by Friday; questions drafted tonight"
+      ],
+      "rubric": "Content: covers each speaker's position and the outcome. Fluency: natural pace, minimal hesitation. Vocabulary/grammar: clear connectors (while, whereas, they agreed that…).",
+      "difficulty": "medium",
+      "topic": "campus life",
+      "modelAnswer": "The three speakers discussed how to gather data for their project. The first speaker preferred an online survey because it reaches more people quickly, while the second worried that online answers would be rushed and argued for deeper face-to-face interviews. The third speaker proposed combining both — running a short survey first, then interviewing about the most surprising results. They agreed on this combined plan, set Friday as the survey deadline, and one member offered to draft the questions that night."
+    },
+    {
+      "id": "pte-speaking-writing-001-rts-1",
+      "questionType": "respond_to_situation",
+      "prompt": "Read the situation below. You have 20 seconds to prepare, then 40 seconds to respond as you would in real life — appropriate tone, clear request, natural spoken English.",
+      "situation": "Your professor returned your assignment with a grade you believe overlooks a section you completed. You are at office hours. Politely explain the issue and ask for a review.",
+      "modelAnswer": "Good afternoon, Professor. Thank you for the feedback on my assignment. I noticed the grade summary says section three was missing, but I did submit it — it starts on page six, just after the data tables. Could I ask you to take another look when you have a moment? I'm happy to walk you through it now or leave a printed copy. I appreciate your time.",
+      "rubric": "Appropriacy: tone fits the situation (polite/firm as needed). Content: states the problem and a clear request. Fluency and pronunciation.",
+      "difficulty": "medium",
+      "topic": "everyday situations"
     },
     {
       "id": "pte-speaking-writing-001-q06",

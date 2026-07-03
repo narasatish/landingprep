@@ -1312,19 +1312,19 @@ window.LP_DATA = {
       "pattern": [
         [
           "English",
-          "Grammar, punctuation, rhetoric, and style · 75 questions · 45 mins"
+          "Grammar, punctuation, rhetoric, and style · 50 questions · 35 mins"
         ],
         [
           "Mathematics",
-          "Pre-algebra, algebra, geometry, trigonometry · 60 questions · 60 mins"
+          "Pre-algebra, algebra, geometry, trigonometry · 45 questions · 50 mins"
         ],
         [
           "Reading",
-          "Four passages (narrative, social science, humanities, natural science) · 40 questions · 35 mins"
+          "Passages across narrative, social science, humanities and natural science · 36 questions · 40 mins"
         ],
         [
-          "Science",
-          "Data interpretation, research summaries, conflicting viewpoints · 40 questions · 35 mins"
+          "Science (optional)",
+          "Data interpretation, research summaries, conflicting viewpoints · 40 questions · 40 mins · reported separately, not in the composite"
         ]
       ],
       "sections_detail": [
@@ -1409,7 +1409,7 @@ window.LP_DATA = {
       "centres": "ACT is offered at international test centres in major Indian cities (Delhi, Mumbai, Bangalore, Hyderabad, Pune, Chennai); online proctoring is not available. Test dates vary; plan 2–3 months ahead.",
       "commonMistakes": [
         "Neglecting the Science section; students underprepare because they assume science background is required—graphs and reasoning are what matter, not vocabulary.",
-        "Mismanaging English time; 75 questions in 45 minutes is tight; mark ambiguous answers and return quickly rather than overthinking.",
+        "Mismanaging English time; 50 questions in 35 minutes is tight; mark ambiguous answers and return quickly rather than overthinking.",
         "Reading too passively in the Reading section; ACT tests literal comprehension; jot notes on passage margins; refer back to text for detail.",
         "Skipping ACT Writing practice; the Writing section (optional but recommended for selective colleges) requires an essay in 40 minutes; plan, draft, review.",
         "Not checking unit consistency in Math; 'feet to inches' or 'miles to kilometres' errors are common; always verify your final answer's units."

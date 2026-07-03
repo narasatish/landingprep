@@ -15,6 +15,9 @@
     describe_image:        { label: "Describe Image",        icon: "📊", mode: "speak", prep: 25, resp: 40 },
     retell_lecture:        { label: "Re-tell Lecture",       icon: "🎓", mode: "speak", prep: 10, resp: 40 },
     answer_short_question: { label: "Answer Short Question", icon: "❓", mode: "speak", prep: 3,  resp: 10 },
+    // New task types on the 2026 PTE Academic pattern:
+    summarize_group_discussion: { label: "Summarize Group Discussion", icon: "🗣️", mode: "speak", prep: 10, resp: 120 },
+    respond_to_situation:       { label: "Respond to a Situation",     icon: "💬", mode: "speak", prep: 20, resp: 40 },
     summarize_written_text:{ label: "Summarize Written Text",icon: "✍️", mode: "write", min: 5,  max: 75,  minutes: 10 },
     essay:                 { label: "Write Essay",           icon: "📝", mode: "write", min: 200, max: 300, minutes: 20 },
   };
@@ -105,8 +108,14 @@
         {item.questionType === "describe_image" && item.visual && window.LP_VisualRenderer && (
           <div style={{ marginBottom: 12 }}><window.LP_VisualRenderer task={{ visual: item.visual, prompt: item.prompt }} /></div>
         )}
-        {(item.questionType === "repeat_sentence" || item.questionType === "retell_lecture" || item.questionType === "answer_short_question") && item.audioScript && (
-          <AudioStimulus script={item.audioScript} label={item.questionType === "retell_lecture" ? "Lecture" : "Listen"} />
+        {(item.questionType === "repeat_sentence" || item.questionType === "retell_lecture" || item.questionType === "answer_short_question" || item.questionType === "summarize_group_discussion") && item.audioScript && (
+          <AudioStimulus script={item.audioScript} label={item.questionType === "retell_lecture" ? "Lecture" : item.questionType === "summarize_group_discussion" ? "Group discussion" : "Listen"} />
+        )}
+        {item.questionType === "respond_to_situation" && item.situation && (
+          <div style={{ background:"var(--tint)", border:"1px solid var(--line)", borderRadius:12, padding:"16px 18px", marginBottom:12, fontSize:15.5, lineHeight:1.7 }}>
+            <strong style={{ fontSize:11, textTransform:"uppercase", letterSpacing:".08em", color:"var(--ink-3)" }}>Situation</strong>
+            <div style={{ marginTop:6 }}>{item.situation}</div>
+          </div>
         )}
         {item.questionType === "retell_lecture" && Array.isArray(item.keyPoints) && item.keyPoints.length > 0 && phase === "done" && (
           <div style={{ background:"var(--tint-orange)", border:"1px solid #ffd0a0", borderRadius:12, padding:"12px 14px", marginBottom:12 }}>

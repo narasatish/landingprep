@@ -3,8 +3,8 @@
   "exam": "act",
   "type": "full",
   "title": "undefined Full Mock Test 1",
-  "durationSeconds": 10500,
-  "instructions": "Full mock composition file. Load section files lazily in order.",
+  "durationSeconds": 9900,
+  "instructions": "Enhanced ACT format (standard from 2025–26): English 50 questions / 35 min, Math 45 / 50 min, Reading 36 / 40 min are the required core (2h 5m). Science (40 questions / 40 min) is OPTIONAL on the real exam and does not count toward your 1–36 composite — it is reported separately. We include it here so you can practise it; skip it if your target colleges don't need it.",
   "sections": [
     {
       "section": "english",
@@ -24,7 +24,8 @@
     {
       "section": "science",
       "testId": "act-science-001",
-      "file": "act/science/test-001.json"
+      "file": "act/science/test-001.json",
+      "optional": true
     }
   ]
 }

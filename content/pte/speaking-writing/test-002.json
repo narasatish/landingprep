@@ -4,9 +4,9 @@
   "section": "speaking-writing",
   "type": "section",
   "title": "PTE Academic Speaking Writing Practice Test 2",
-  "durationSeconds": 4500,
-  "questionCount": 34,
-  "instructions": "Original exam-style practice test with answers and explanations.",
+  "durationSeconds": 4800,
+  "questionCount": 36,
+  "instructions": "Original exam-style practice test with answers and explanations. Includes the two task types added to the PTE Academic pattern in 2026: Summarize Group Discussion and Respond to a Situation.",
   "questions": [
     {
       "id": "pte-speaking-writing-002-q01",
@@ -116,6 +116,31 @@
       "fingerprint": "3e777a9bb4b79e4f48",
       "modelAnswer": "Practice",
       "audioScript": "What is a common daily habit for effective language learning?"
+    },
+    {
+      "id": "pte-speaking-writing-002-sgd-1",
+      "questionType": "summarize_group_discussion",
+      "prompt": "You will hear three people discussing a topic. After listening, summarize the discussion in your own words — cover the main points of view and any decision reached. You have 10 seconds to prepare and 2 minutes to speak.",
+      "audioScript": "Speaker A: The library's group rooms are always booked. I propose we ask the university to extend booking hours to midnight. Speaker B: Longer hours won't help if the same few groups block-book every slot. A two-hour daily limit per group would free up rooms. Speaker C: Both ideas cost nothing, so we could suggest them together. My worry is enforcement — who checks that a group actually leaves? Speaker A: The card-swipe system already logs entry, so overstays could be flagged automatically. Speaker B: Then let's write the proposal with both changes and mention the card data.",
+      "keyPoints": [
+        "Problem: group study rooms are always booked",
+        "Two fixes proposed: longer hours and a two-hour per-group daily limit",
+        "Enforcement concern answered by using existing card-swipe logs; both ideas go in one proposal"
+      ],
+      "rubric": "Content: covers each speaker's position and the outcome. Fluency: natural pace, minimal hesitation. Vocabulary/grammar: clear connectors (while, whereas, they agreed that…).",
+      "difficulty": "medium",
+      "topic": "campus life",
+      "modelAnswer": "The group discussed the shortage of bookable library rooms. One speaker wanted booking hours extended to midnight, while another argued that a two-hour daily limit per group would do more, since a few groups block-book every slot. A third raised the problem of enforcement, which was answered by using the existing card-swipe entry logs to flag overstays. In the end they decided to write one proposal containing both changes and to mention the card data as the enforcement mechanism."
+    },
+    {
+      "id": "pte-speaking-writing-002-rts-1",
+      "questionType": "respond_to_situation",
+      "prompt": "Read the situation below. You have 20 seconds to prepare, then 40 seconds to respond as you would in real life — appropriate tone, clear request, natural spoken English.",
+      "situation": "You lent a classmate your only textbook two weeks ago and your exam is in five days. Call them and ask for it back without damaging the friendship.",
+      "modelAnswer": "Hey, it's me — hope the semester's treating you well! Quick favour: I need my textbook back for the exam on Friday, so could I collect it tomorrow, or could you drop it at the library desk for me? If you still need it after my exam, you're welcome to borrow it again. Thanks so much — good luck with your revision too!",
+      "rubric": "Appropriacy: tone fits the situation (polite/firm as needed). Content: states the problem and a clear request. Fluency and pronunciation.",
+      "difficulty": "medium",
+      "topic": "everyday situations"
     },
     {
       "id": "pte-speaking-writing-002-q06",

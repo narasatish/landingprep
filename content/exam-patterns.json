@@ -253,7 +253,7 @@
           "label": "Reading",
           "icon": "📖",
           "rendererType": "toefl-reading",
-          "durationMinutes": 35,
+          "durationMinutes": 27,
           "passageCount": 2,
           "questionsPerPassage": 10,
           "questionCount": 20,
@@ -284,7 +284,7 @@
           "label": "Listening",
           "icon": "🎧",
           "rendererType": "toefl-listening",
-          "durationMinutes": 36,
+          "durationMinutes": 27,
           "audioCount": 5,
           "structure": "2 conversations (2 min each) + 3 lectures (4–6 min each)",
           "questionsPerAudio": [
@@ -316,7 +316,7 @@
           "label": "Speaking",
           "icon": "🎤",
           "rendererType": "toefl-speaking",
-          "durationMinutes": 16,
+          "durationMinutes": 12,
           "questionCount": 4,
           "structure": {
             "task1": "Independent: Express and support an opinion on a familiar topic (45 sec prep, 60 sec response)",
@@ -340,7 +340,7 @@
           "label": "Writing",
           "icon": "✍️",
           "rendererType": "toefl-writing",
-          "durationMinutes": 29,
+          "durationMinutes": 23,
           "questionCount": 2,
           "structure": {
             "task1": "Integrated: Read passage (3 min) + Listen to lecture, then write 150–225 words (20 min)",
@@ -517,7 +517,9 @@
             "retell_lecture",
             "answer_short_question",
             "summarize_written_text",
-            "write_essay"
+            "write_essay",
+            "summarize_group_discussion",
+            "respond_to_situation"
           ]
         },
         "reading": {
@@ -1197,8 +1199,8 @@
           "label": "English",
           "icon": "✏️",
           "rendererType": "act-english",
-          "durationMinutes": 45,
-          "questionCount": 75,
+          "durationMinutes": 35,
+          "questionCount": 50,
           "itemTypes": [
             "multiple_choice_single"
           ],
@@ -1212,8 +1214,8 @@
           "label": "Math",
           "icon": "🔢",
           "rendererType": "act-math",
-          "durationMinutes": 60,
-          "questionCount": 60,
+          "durationMinutes": 50,
+          "questionCount": 45,
           "itemTypes": [
             "multiple_choice_single"
           ],
@@ -1227,8 +1229,8 @@
           "label": "Reading",
           "icon": "📖",
           "rendererType": "act-reading",
-          "durationMinutes": 35,
-          "questionCount": 40,
+          "durationMinutes": 40,
+          "questionCount": 36,
           "itemTypes": [
             "multiple_choice_single"
           ],
@@ -1239,10 +1241,10 @@
         },
         "science": {
           "id": "science",
-          "label": "Science",
+          "label": "Science (optional)",
           "icon": "🔬",
           "rendererType": "act-science",
-          "durationMinutes": 35,
+          "durationMinutes": 40,
           "questionCount": 40,
           "itemTypes": [
             "multiple_choice_single"
@@ -1250,7 +1252,8 @@
           "reviewRequirements": [
             "answer_key",
             "explanation"
-          ]
+          ],
+          "optional": true
         }
       },
       "fullMockStructure": {

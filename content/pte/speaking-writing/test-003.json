@@ -4,9 +4,9 @@
   "section": "speaking-writing",
   "type": "section",
   "title": "PTE Academic Speaking Writing Practice Test 3",
-  "durationSeconds": 4500,
-  "questionCount": 34,
-  "instructions": "Original exam-style practice test with answers and explanations.",
+  "durationSeconds": 4800,
+  "questionCount": 36,
+  "instructions": "Original exam-style practice test with answers and explanations. Includes the two task types added to the PTE Academic pattern in 2026: Summarize Group Discussion and Respond to a Situation.",
   "questions": [
     {
       "id": "pte-speaking-writing-003-q01",
@@ -116,6 +116,31 @@
       "fingerprint": "6d0b3e14acc56f0cb1",
       "modelAnswer": "Public health",
       "audioScript": "What type of campaign aims to improve community health through education and awareness?"
+    },
+    {
+      "id": "pte-speaking-writing-003-sgd-1",
+      "questionType": "summarize_group_discussion",
+      "prompt": "You will hear three people discussing a topic. After listening, summarize the discussion in your own words — cover the main points of view and any decision reached. You have 10 seconds to prepare and 2 minutes to speak.",
+      "audioScript": "Speaker A: For the science fair, a live demonstration would draw the biggest crowd — something with immediate visual impact. Speaker B: Live demos can fail in front of everyone. A recorded version with a live commentary is safer. Speaker C: The judges' criteria say originality and interaction matter most, so maybe visitors could run a safe, simple version of the experiment themselves. Speaker A: Hands-on would be memorable, but we'd need safety approval first. Speaker B: Let's check the safety rules tonight and decide tomorrow between the live demo and the hands-on table.",
+      "keyPoints": [
+        "Options debated: live demo, recorded demo with commentary, or hands-on visitor table",
+        "Judges reward originality and interaction, favouring hands-on",
+        "Decision postponed until safety rules are checked tonight"
+      ],
+      "rubric": "Content: covers each speaker's position and the outcome. Fluency: natural pace, minimal hesitation. Vocabulary/grammar: clear connectors (while, whereas, they agreed that…).",
+      "difficulty": "medium",
+      "topic": "campus life",
+      "modelAnswer": "The speakers debated their science-fair format. The first wanted a live demonstration for impact, the second preferred a recorded demo with live commentary because live experiments can fail, and the third pointed out that the judges reward originality and interaction, which favours letting visitors try a safe version themselves. They liked the hands-on idea but noted it needs safety approval, so they agreed to check the safety rules that night and decide the next day."
+    },
+    {
+      "id": "pte-speaking-writing-003-rts-1",
+      "questionType": "respond_to_situation",
+      "prompt": "Read the situation below. You have 20 seconds to prepare, then 40 seconds to respond as you would in real life — appropriate tone, clear request, natural spoken English.",
+      "situation": "Your flight to an important university interview was cancelled. You are at the airline counter. Explain your urgency and ask what options are available.",
+      "modelAnswer": "Hello — my flight this afternoon was cancelled, and I have a university interview tomorrow morning that I can't reschedule. Could you tell me what my options are? I'd take any earlier alternative — a different route, another airport, or a seat on tonight's flight if there's a waitlist. If nothing is available, could you confirm what compensation or hotel support applies? Thank you for your help.",
+      "rubric": "Appropriacy: tone fits the situation (polite/firm as needed). Content: states the problem and a clear request. Fluency and pronunciation.",
+      "difficulty": "medium",
+      "topic": "everyday situations"
     },
     {
       "id": "pte-speaking-writing-003-q06",

@@ -2856,15 +2856,27 @@ function scoreTest(config, answers) {
       result.overallLabel = "GRE Section Average";
     }
   } else if (examId === "toefl" && bands.length > 0) {
-    // TOEFL iBT: sum of four sections (0–30 each) → 0–120
+    // TOEFL iBT: sum of four sections (0–30 each) → 0–120. From January 2026 ETS
+    // reports a 1–6 band scale alongside the legacy 0–120 (dual-reported through
+    // 2028) — we show an INDICATIVE band from a linear mapping, since practice
+    // scores are estimates either way.
     result.overall = bands.reduce((a,b)=>a+b,0);
-    result.overallLabel = "TOEFL iBT Total";
+    const band26 = Math.min(6, Math.max(1, Math.round(((result.overall / 120) * 5 + 1) * 2) / 2));
+    result.overallLabel = "TOEFL iBT Total (legacy 0–120) · ≈ Band " + band26 + " of 6 (indicative, 2026 scale)";
   } else if (examId === "pte" && bands.length > 0) {
     result.overall = Math.round(bands.reduce((a,b)=>a+b,0) / bands.length);
     result.overallLabel = "PTE Overall (10–90)";
   } else if (examId === "celpip" && bands.length > 0) {
     result.overall = Math.round(bands.reduce((a,b)=>a+b,0) / bands.length);
     result.overallLabel = "CELPIP CLB Average";
+  } else if (examId === "act" && bands.length > 0) {
+    // Enhanced ACT (2025–26): the 1–36 composite averages English, Math and Reading
+    // ONLY. Science is optional and reported as its own section score (feeds STEM).
+    const core = ["english", "math", "reading"]
+      .map(k => result.sections[k] && result.sections[k].band)
+      .filter(b => b != null && b > 0);
+    result.overall = core.length ? Math.round(core.reduce((a,b)=>a+b,0) / core.length) : Math.round(bands.reduce((a,b)=>a+b,0) / bands.length);
+    result.overallLabel = "ACT Composite (English + Math + Reading)";
   } else if (examId === "duolingo" && bands.length > 0) {
     result.overall = Math.round(bands.reduce((a,b)=>a+b,0) / bands.length);
     result.overallLabel = "Duolingo Overall (10–160)";

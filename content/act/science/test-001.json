@@ -4,7 +4,7 @@
   "section": "science",
   "type": "section",
   "title": "ACT Science Practice Test 1",
-  "durationSeconds": 2100,
+  "durationSeconds": 2400,
   "questionCount": 40,
   "instructions": "Each passage presents scientific information. Read it and choose the best answer based on the data and descriptions given.",
   "passages": [
@@ -497,7 +497,7 @@
       "correctAnswer": "Wheat",
       "explanation": "On day 2, oxygen consumption was: Soybeans = 0.8, Corn = 1.1, Wheat = 0.6 mL/hr. Wheat showed the lowest rate.",
       "difficulty": "easy",
-      "questionNumber": 26
+      "questionNumber": 27
     },
     {
       "id": "act-science-001-q27",
@@ -514,7 +514,7 @@
       "correctAnswer": "350 ppm",
       "explanation": "Table 4 shows that at 350 ppm CO2, the net photosynthesis rate was 15.3 µmol CO2/m²/s.",
       "difficulty": "easy",
-      "questionNumber": 27
+      "questionNumber": 28
     },
     {
       "id": "act-science-001-q28",
@@ -531,7 +531,7 @@
       "correctAnswer": "2.1 µmol CO2/m²/s",
       "explanation": "At 500 ppm, rate = 18.7; at 1000 ppm, rate = 20.8 µmol CO2/m²/s. Increase = 20.8 - 18.7 = 2.1 µmol CO2/m²/s.",
       "difficulty": "medium",
-      "questionNumber": 28
+      "questionNumber": 29
     },
     {
       "id": "act-science-001-q29",
@@ -548,7 +548,7 @@
       "correctAnswer": "12.1 µmol CO2/m²/s",
       "explanation": "At 100 ppm, rate = 3.2; at 350 ppm, rate = 15.3 µmol CO2/m²/s. Increase = 15.3 - 3.2 = 12.1 µmol CO2/m²/s.",
       "difficulty": "medium",
-      "questionNumber": 29
+      "questionNumber": 30
     },
     {
       "id": "act-science-001-q30",
@@ -565,7 +565,7 @@
       "correctAnswer": "another factor becomes the limiting constraint on photosynthesis",
       "explanation": "The passage explains that 'at very high CO2 concentrations (750–1000 ppm), the rate of increase in photosynthesis was minimal, suggesting that another factor (possibly light saturation or enzyme availability) becomes limiting.' This indicates CO2 is no longer the limiting factor.",
       "difficulty": "hard",
-      "questionNumber": 30
+      "questionNumber": 31
     },
     {
       "id": "act-science-001-q31",
@@ -582,7 +582,7 @@
       "correctAnswer": "3.8 µmol CO2/m²/s per 100 ppm",
       "explanation": "From 100 to 500 ppm (400 ppm increase), rate changed from 3.2 to 18.7 µmol CO2/m²/s (15.5 increase). Per 100 ppm: 15.5 / 4 = 3.875, approximately 3.8 µmol CO2/m²/s per 100 ppm.",
       "difficulty": "hard",
-      "questionNumber": 31
+      "questionNumber": 32
     },
     {
       "id": "act-science-001-q32",
@@ -599,7 +599,7 @@
       "correctAnswer": "oxygen production is directly proportional to catalase activity in the decomposition of hydrogen peroxide",
       "explanation": "Catalase catalyzes H2O2 → H2O + O2. Higher enzyme activity produces more product (oxygen) per unit time, making oxygen production a direct measure of catalase activity rate.",
       "difficulty": "medium",
-      "questionNumber": 32
+      "questionNumber": 33
     },
     {
       "id": "act-science-001-q33",
@@ -616,7 +616,7 @@
       "correctAnswer": "approximately 38.1-38.3 g/100g H2O",
       "explanation": "The trend shows a consistent increase of approximately 0.35 g per 10°C. From 60°C (37.8) to 70°C would add roughly 0.35 g, giving approximately 38.1-38.3 g/100g H2O.",
       "difficulty": "medium",
-      "questionNumber": 33
+      "questionNumber": 34
     },
     {
       "id": "act-science-001-q34",
@@ -633,7 +633,7 @@
       "correctAnswer": "light source wavelength",
       "explanation": "The passage states: 'identical soil moisture, temperature (22°C), and nutrient conditions' while light sources differed between groups. Wavelength was the independent variable.",
       "difficulty": "easy",
-      "questionNumber": 34
+      "questionNumber": 35
     },
     {
       "id": "act-science-001-q35",
@@ -650,7 +650,7 @@
       "correctAnswer": "Scientist B's hypothesis only",
       "explanation": "Scientist B attributes activity to detection of water movement and food cues. If crabs respond to artificially induced water movement in isolation from tides, this directly supports B. Scientist A's gravity-based hypothesis would not explain this response since gravitational changes from the moon would not occur in an isolated tank.",
       "difficulty": "hard",
-      "questionNumber": 35
+      "questionNumber": 36
     },
     {
       "id": "act-science-001-q36",
@@ -667,7 +667,7 @@
       "correctAnswer": "1.2 mL/hr",
       "explanation": "At day 8: Soybeans = 5.6 mL/hr, Wheat = 4.4 mL/hr. Difference = 5.6 - 4.4 = 1.2 mL/hr.",
       "difficulty": "easy",
-      "questionNumber": 36
+      "questionNumber": 37
     },
     {
       "id": "act-science-001-q37",
@@ -684,7 +684,7 @@
       "correctAnswer": "the plateau would occur at a lower CO2 concentration",
       "explanation": "If light becomes limiting first with reduced light intensity, the photosynthetic rate would plateau (saturate) earlier in the CO2 range. The limiting factor determines where saturation occurs.",
       "difficulty": "hard",
-      "questionNumber": 37
+      "questionNumber": 38
     },
     {
       "id": "act-science-001-q38",
@@ -701,7 +701,7 @@
       "correctAnswer": "9.0:1",
       "explanation": "At 35°C: 18.9 mL/min; at 5°C: 2.1 mL/min. Ratio = 18.9 / 2.1 = 9.0 (approximately).",
       "difficulty": "medium",
-      "questionNumber": 38
+      "questionNumber": 39
     },
     {
       "id": "act-science-001-q39",
@@ -718,7 +718,7 @@
       "correctAnswer": "10°C to 20°C",
       "explanation": "From Table 2: 0→10°C = +0.1, 10→20°C = +0.5, 20→30°C = +0.3, 30→40°C = +0.4, 40→50°C = +0.3. Among the options, 10°C to 20°C shows the largest single increase (0.5 g/100g).",
       "difficulty": "easy",
-      "questionNumber": 39
+      "questionNumber": 40
     }
   ]
 }

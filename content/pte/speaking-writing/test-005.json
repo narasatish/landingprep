@@ -4,9 +4,9 @@
   "section": "speaking-writing",
   "type": "section",
   "title": "PTE Academic Speaking Writing Practice Test 5",
-  "durationSeconds": 4500,
-  "questionCount": 34,
-  "instructions": "Original exam-style practice test with answers and explanations.",
+  "durationSeconds": 4800,
+  "questionCount": 36,
+  "instructions": "Original exam-style practice test with answers and explanations. Includes the two task types added to the PTE Academic pattern in 2026: Summarize Group Discussion and Respond to a Situation.",
   "questions": [
     {
       "id": "pte-speaking-writing-005-q01",
@@ -116,6 +116,31 @@
       "fingerprint": "ca18c1bf3239b8bef3",
       "modelAnswer": "Citizen science",
       "audioScript": "What kind of scientific projects involve public participation?"
+    },
+    {
+      "id": "pte-speaking-writing-005-sgd-1",
+      "questionType": "summarize_group_discussion",
+      "prompt": "You will hear three people discussing a topic. After listening, summarize the discussion in your own words — cover the main points of view and any decision reached. You have 10 seconds to prepare and 2 minutes to speak.",
+      "audioScript": "Speaker A: I've analysed our café's queue times — the morning rush peaks at nine, and we lose customers who wait more than six minutes. Speaker B: Then we should open the second till from eight thirty. The extra staffing cost is small compared with lost sales. Speaker C: Or we could add mobile ordering, so students order on the way and just collect. Speaker B: Mobile ordering takes months to set up; the second till helps on Monday. Speaker A: Let's do the till now and trial mobile ordering next term.",
+      "keyPoints": [
+        "Data shows a nine o'clock peak and customers lost after six-minute waits",
+        "Quick fix (second till from 8:30) versus long-term fix (mobile ordering)",
+        "Decision: open the till now, trial mobile ordering next term"
+      ],
+      "rubric": "Content: covers each speaker's position and the outcome. Fluency: natural pace, minimal hesitation. Vocabulary/grammar: clear connectors (while, whereas, they agreed that…).",
+      "difficulty": "medium",
+      "topic": "campus life",
+      "modelAnswer": "The group analysed long queues at their café. Data showed a nine o'clock peak with customers leaving after six-minute waits. One speaker proposed opening a second till from eight thirty as a cheap immediate fix, while another suggested mobile ordering so students could order ahead and collect. Since mobile ordering would take months to set up, they decided to open the second till right away and trial mobile ordering next term."
+    },
+    {
+      "id": "pte-speaking-writing-005-rts-1",
+      "questionType": "respond_to_situation",
+      "prompt": "Read the situation below. You have 20 seconds to prepare, then 40 seconds to respond as you would in real life — appropriate tone, clear request, natural spoken English.",
+      "situation": "You ordered a laptop online for your studies; it arrived with a cracked screen. Call customer service to request a replacement before your course starts next week.",
+      "modelAnswer": "Hello, I'm calling about order number 4-7-2-1. The laptop arrived today, but the screen is cracked in the top corner — it was damaged in transit, and the box shows an impact mark. My course starts next Monday, so I'd like to request an express replacement rather than a refund. I can send photos of the damage and the packaging right away. Could you confirm how quickly a replacement could reach me?",
+      "rubric": "Appropriacy: tone fits the situation (polite/firm as needed). Content: states the problem and a clear request. Fluency and pronunciation.",
+      "difficulty": "medium",
+      "topic": "everyday situations"
     },
     {
       "id": "pte-speaking-writing-005-q06",
