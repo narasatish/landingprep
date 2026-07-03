@@ -12,14 +12,14 @@
     {
       "id": "toefl-reading-026-p1",
       "title": "Deep Learning and Artificial Intelligence",
-      "text": "Deep Learning and Artificial Intelligence is an important subject of modern scientific and scholarly investigation. Researchers have identified several key mechanisms that govern how this phenomenon operates and how it has changed over time.\n\nEarly studies of deep learning and artificial intelligence focused on descriptive accounts, but more recent work employs quantitative methods that allow more precise measurement of patterns and processes. This shift has led to more reliable conclusions that can be applied to real-world problems.\n\nThe environmental and social implications of deep learning and artificial intelligence are considerable. Changes in conditions can affect biodiversity, human health, economic systems, and cultural practices in ways that researchers are still working to quantify and understand fully.\n\nTechnological advances have accelerated progress in understanding deep learning and artificial intelligence. Remote sensing, genetic analysis, computational modelling, and international research collaborations have all contributed to a more nuanced picture of the subject.\n\nPolicymakers and practitioners increasingly draw on research about deep learning and artificial intelligence to inform decisions about conservation, public health, urban planning, and resource management. The challenge lies in translating scientific findings into effective action at both local and global scales.",
-      "difficulty": "hard"
+      "text": "Deep learning is a subset of machine learning that employs artificial neural networks with multiple layers — hence the term \"deep\" — to learn hierarchical representations of data. The field has emerged as a transformative force in artificial intelligence over the past two decades, enabling breakthrough advances in image recognition, natural language processing, and autonomous systems. Despite its recent popular success, the theoretical foundations of deep learning rest on concepts developed decades earlier, which were only recently combined with modern computational power and vast datasets to achieve unprecedented performance.\n\nNeural networks are inspired by the structure and function of biological neurons. An artificial neuron takes multiple inputs, applies weighted operations to them, and produces an output through a mathematical function called an activation function. A single layer of neurons can learn simple patterns, but deep neural networks with many interconnected layers can learn complex, hierarchical features. For example, in computer vision, the first layer might detect simple edges and curves, the second layer might recognise textures, and deeper layers might identify specific objects or faces. This hierarchical feature learning is a key advantage of deep learning over traditional machine learning approaches, which rely on hand-engineered features.\n\nTraining deep neural networks requires enormous amounts of data and computational resources. The process, called backpropagation, involves feeding data through the network, calculating the error between predicted and actual outputs, and then working backwards through the network to adjust the weights of connections. This process is repeated thousands of times with millions of data points, requiring graphics processing units (GPUs) that can perform massive parallel calculations. The availability of large datasets — such as ImageNet, which contains millions of labeled images — and the development of efficient GPUs in the 2000s were crucial enablers of the deep learning revolution.\n\nConvolutional neural networks (CNNs) are a specialised architecture designed for processing image data. CNNs use convolutional layers that apply filters across images to detect features, followed by pooling layers that reduce dimensionality. This architecture has proven remarkably effective for tasks like image classification, object detection, and medical image analysis. Recurrent neural networks (RNNs) and their variants, including Long Short-Term Memory (LSTM) networks, excel at processing sequential data such as text and time-series information. Transformer networks, introduced in 2017, use attention mechanisms to capture long-range dependencies in sequences and have become the foundation for large language models like GPT and BERT, which have revolutionised natural language processing.\n\nThe rapid progress in deep learning has raised important questions about interpretability and bias. Despite their impressive performance, deep neural networks are often described as \"black boxes\" because it is difficult to understand precisely why they make particular predictions. Additionally, deep learning models can inherit or amplify biases present in their training data, leading to discrimination in deployed systems. Researchers are actively developing explainable AI techniques to address these concerns, seeking to make neural network decision-making more transparent and to identify sources of bias. As deep learning systems are increasingly deployed in high-stakes applications like medical diagnosis, criminal justice, and autonomous vehicles, addressing interpretability and fairness has become not merely an academic concern but an urgent practical necessity.\n\nThe future of deep learning depends on several ongoing research directions. Researchers are exploring ways to improve sample efficiency — training effective models with smaller datasets — and to develop more robust algorithms that perform reliably in novel environments. Energy efficiency remains another pressing concern, as training large language models consumes enormous amounts of electricity. Additionally, the field is moving towards more integrated systems that combine deep learning with other AI techniques like symbolic reasoning, hoping to achieve the kind of flexible, general intelligence humans display. While deep learning has delivered remarkable practical advances, the field recognises that these models alone are insufficient for artificial general intelligence; they must be integrated with other approaches to create more complete and capable systems.",
+      "difficulty": "medium"
     },
     {
       "id": "toefl-reading-026-p2",
       "title": "Freshwater Scarcity",
-      "text": "Freshwater Scarcity is an important subject of modern scientific and scholarly investigation. Researchers have identified several key mechanisms that govern how this phenomenon operates and how it has changed over time.\n\nEarly studies of freshwater scarcity focused on descriptive accounts, but more recent work employs quantitative methods that allow more precise measurement of patterns and processes. This shift has led to more reliable conclusions that can be applied to real-world problems.\n\nThe environmental and social implications of freshwater scarcity are considerable. Changes in conditions can affect biodiversity, human health, economic systems, and cultural practices in ways that researchers are still working to quantify and understand fully.\n\nTechnological advances have accelerated progress in understanding freshwater scarcity. Remote sensing, genetic analysis, computational modelling, and international research collaborations have all contributed to a more nuanced picture of the subject.\n\nPolicymakers and practitioners increasingly draw on research about freshwater scarcity to inform decisions about conservation, public health, urban planning, and resource management. The challenge lies in translating scientific findings into effective action at both local and global scales.",
-      "difficulty": "medium"
+      "text": "Freshwater scarcity is among the most pressing environmental challenges facing humanity in the twenty-first century. Approximately 2 billion people currently face high levels of water stress, and the United Nations estimates that by 2050, as many as 5.7 billion people could experience water scarcity for at least one month per year due to climate change, population growth, and over-extraction of groundwater. Paradoxically, water covers more than 70 percent of Earth's surface, yet fresh water — the water available for human use — comprises less than 3 percent of the total, with much of that locked in ice caps and glaciers. Understanding the causes and consequences of freshwater scarcity is essential for developing sustainable management strategies.\n\nWater scarcity manifests in different forms. Physical water scarcity occurs when water withdrawal exceeds renewable water supply in a region, typically in arid and semi-arid climates. Economic water scarcity, by contrast, results from insufficient investment in water infrastructure and management systems; water exists but is not accessible to those who need it due to poverty or lack of infrastructure. The distinction is important because it determines the appropriate solution: physical scarcity requires either demand reduction or alternative sources, while economic scarcity primarily requires investment in infrastructure and institutional capacity. Many water-stressed regions experience both forms simultaneously, complicating policy responses.\n\nAgriculture is the largest consumer of freshwater globally, accounting for approximately 70 percent of all water withdrawal. In many regions, irrigation systems are inefficient, losing water to evaporation and seepage through leaky pipes and unlined channels. Groundwater depletion is particularly problematic: aquifers such as the Ogallala Aquifer in North America and the Indus Aquifer in Pakistan are being depleted far faster than natural recharge rates can sustain. Once an aquifer is depleted, recovery takes decades or centuries, if it occurs at all. Climate change exacerbates freshwater stress by altering precipitation patterns, reducing snowmelt that traditionally replenished rivers, and increasing evaporation rates during dry seasons.\n\nWater contamination further reduces the availability of usable freshwater. Industrial discharge, agricultural runoff containing fertilizers and pesticides, and improper sewage treatment have polluted rivers and groundwater in many regions. Algal blooms triggered by nutrient pollution render water unsafe for drinking and recreation. In South Asia, arsenic contamination of groundwater affects tens of millions of people relying on shallow wells. Addressing water contamination requires both regulatory controls on pollution sources and investments in treatment infrastructure, which many developing countries lack the resources to implement.\n\nResponses to freshwater scarcity involve both supply-side and demand-side strategies. Supply-side approaches include constructing dams and reservoirs, drilling deeper wells, developing desalination technology to convert seawater to fresh water, and implementing water transfer schemes. Demand-side strategies seek to reduce consumption through more efficient irrigation techniques, industrial water recycling, and behaviour change. Watershed restoration and protection of freshwater ecosystems also help maintain water supply resilience. Singapore and Israel, facing severe water stress, have invested heavily in desalination and water recycling technology, achieving near self-sufficiency; however, these approaches are energy-intensive and not economically viable everywhere. Ultimately, addressing freshwater scarcity requires integrated water resource management that accounts for competing demands from agriculture, industry, domestic use, and ecosystem health, whilst adapting to climate change and population growth.",
+      "difficulty": "easy"
     }
   ],
   "questions": [
@@ -29,14 +29,14 @@
       "passageIndex": 0,
       "questionType": "factual_information",
       "num": 1,
-      "prompt": "According to the passage, what has recent research on deep learning and artificial intelligence primarily focused on?",
-      "correctAnswer": "Quantitative methods allowing more precise measurement",
-      "explanation": "The passage states recent work 'employs quantitative methods that allow more precise measurement.'",
+      "prompt": "According to paragraph 1, what is a key advantage of deep learning?",
+      "correctAnswer": "Neural networks can learn hierarchical representations of data",
+      "explanation": "Paragraph 1 explains that deep learning employs 'neural networks with multiple layers to learn hierarchical representations of data.'",
       "options": [
-        "Purely descriptive accounts",
-        "Quantitative methods allowing more precise measurement",
-        "Historical records only",
-        "Economic analysis"
+        "It uses less computational power than traditional computing",
+        "Neural networks can learn hierarchical representations of data",
+        "It requires less data than traditional machine learning",
+        "It can only be applied to image recognition"
       ]
     },
     {
@@ -45,14 +45,14 @@
       "passageIndex": 0,
       "questionType": "vocabulary_in_context",
       "num": 2,
-      "prompt": "The word 'quantitative' as used in the passage is closest in meaning to:",
-      "correctAnswer": "numerical and measurable",
-      "explanation": "Quantitative refers to data that can be expressed in numbers and measured precisely.",
+      "prompt": "The word 'hierarchical' in paragraph 2 is closest in meaning to:",
+      "correctAnswer": "arranged in levels or layers",
+      "explanation": "'Hierarchical' refers to a system organised in ranked or layered levels, from simple to complex.",
       "options": [
-        "numerical and measurable",
-        "subjective and personal",
-        "historical and archival",
-        "theoretical and abstract"
+        "randomly organised",
+        "arranged in levels or layers",
+        "artificially created",
+        "biologically inspired"
       ]
     },
     {
@@ -61,14 +61,14 @@
       "passageIndex": 0,
       "questionType": "factual_information",
       "num": 3,
-      "prompt": "According to the passage, which of the following has contributed to advances in understanding deep learning and artificial intelligence?",
-      "correctAnswer": "International research collaborations",
-      "explanation": "The passage lists international collaborations among the technological and methodological advances.",
+      "prompt": "According to paragraph 2, what roles do activation functions play in artificial neurons?",
+      "correctAnswer": "They produce output based on weighted inputs",
+      "explanation": "Paragraph 2 states that 'An artificial neuron...produces an output through a mathematical function called an activation function.'",
       "options": [
-        "Reduced funding for research",
-        "International research collaborations",
-        "Government censorship of findings",
-        "Declining interest from scientists"
+        "They eliminate unnecessary data",
+        "They produce output based on weighted inputs",
+        "They control the learning rate",
+        "They store historical data"
       ]
     },
     {
@@ -77,14 +77,14 @@
       "passageIndex": 0,
       "questionType": "inference",
       "num": 4,
-      "prompt": "What can be inferred about the relationship between deep learning and artificial intelligence and policymaking?",
-      "correctAnswer": "Scientific findings are increasingly applied to real-world decisions",
-      "explanation": "The passage notes policymakers 'increasingly draw on research' to inform decisions.",
+      "prompt": "What can be inferred from paragraph 3 about the relationship between data availability and deep learning progress?",
+      "correctAnswer": "Large datasets were a necessary condition for deep learning breakthroughs",
+      "explanation": "Paragraph 3 mentions that 'The availability of large datasets...were crucial enablers of the deep learning revolution.'",
       "options": [
-        "Policymakers generally ignore scientific research",
-        "Scientific findings are increasingly applied to real-world decisions",
-        "Research on this topic has no practical applications",
-        "Policymakers and scientists always disagree"
+        "Large datasets are irrelevant to deep learning success",
+        "Deep learning cannot work with structured data",
+        "Large datasets were a necessary condition for deep learning breakthroughs",
+        "Only small, carefully curated datasets are useful"
       ]
     },
     {
@@ -93,14 +93,14 @@
       "passageIndex": 0,
       "questionType": "rhetorical_purpose",
       "num": 5,
-      "prompt": "Why does the author contrast early and recent studies in the passage?",
-      "correctAnswer": "To show how the field has evolved toward more rigorous methods",
-      "explanation": "The contrast highlights the field's progression from description to quantitative measurement.",
+      "prompt": "Why does the author discuss Convolutional Neural Networks (CNNs) in paragraph 4?",
+      "correctAnswer": "To illustrate specialised neural network architectures designed for specific data types",
+      "explanation": "Paragraph 4 presents CNNs as 'a specialised architecture designed for processing image data' as an example of tailored approaches.",
       "options": [
-        "To suggest that early research was worthless",
-        "To show how the field has evolved toward more rigorous methods",
-        "To argue that new methods are too complicated",
-        "To criticise researchers who use descriptive approaches"
+        "To argue that CNNs are the only useful neural network type",
+        "To illustrate specialised neural network architectures designed for specific data types",
+        "To show that all neural networks are identical",
+        "To explain why RNNs are obsolete"
       ]
     },
     {
@@ -109,14 +109,14 @@
       "passageIndex": 0,
       "questionType": "negative_factual",
       "num": 6,
-      "prompt": "According to the passage, which of the following is NOT mentioned as an area affected by deep learning and artificial intelligence?",
-      "correctAnswer": "Space exploration",
-      "explanation": "The passage mentions biodiversity, human health, economic systems, and cultural practices — not space exploration.",
+      "prompt": "According to paragraph 5, which is NOT mentioned as a concern about deep learning?",
+      "correctAnswer": "Deep neural networks are too expensive to build",
+      "explanation": "Paragraph 5 discusses interpretability, bias, and fairness, but does not mention overall cost of building networks.",
       "options": [
-        "Biodiversity",
-        "Human health",
-        "Economic systems",
-        "Space exploration"
+        "Neural networks are difficult to interpret",
+        "Models can inherit biases from training data",
+        "Deep neural networks are too expensive to build",
+        "High-stakes applications require transparency"
       ]
     },
     {
@@ -125,14 +125,14 @@
       "passageIndex": 0,
       "questionType": "factual_information",
       "num": 7,
-      "prompt": "According to the passage, what challenge is identified regarding the practical use of research?",
-      "correctAnswer": "Translating scientific findings into effective action",
-      "explanation": "The passage states 'the challenge lies in translating scientific findings into effective action.'",
+      "prompt": "According to paragraph 1, when did deep learning emerge as a transformative force?",
+      "correctAnswer": "Over the past two decades",
+      "explanation": "Paragraph 1 states 'The field has emerged as a transformative force in artificial intelligence over the past two decades.'",
       "options": [
-        "Finding funding for new studies",
-        "Translating scientific findings into effective action",
-        "Publishing research in academic journals",
-        "Attracting students to the field"
+        "In the 1950s",
+        "In the 1980s",
+        "Over the past two decades",
+        "Only in the last five years"
       ]
     },
     {
@@ -141,14 +141,14 @@
       "passageIndex": 0,
       "questionType": "vocabulary_in_context",
       "num": 8,
-      "prompt": "The word 'nuanced' in the passage is closest in meaning to:",
-      "correctAnswer": "detailed and carefully qualified",
-      "explanation": "Nuanced means showing subtle distinctions and careful qualification.",
+      "prompt": "The word 'amplify' in paragraph 5 is closest in meaning to:",
+      "correctAnswer": "increase or strengthen",
+      "explanation": "'Amplify' means to make something larger or stronger, as in models amplifying biases from training data.",
       "options": [
-        "simplified",
-        "biased",
-        "detailed and carefully qualified",
-        "entirely new"
+        "decrease or weaken",
+        "increase or strengthen",
+        "reproduce exactly",
+        "eliminate completely"
       ]
     },
     {
@@ -157,14 +157,14 @@
       "passageIndex": 0,
       "questionType": "sentence_simplification",
       "num": 9,
-      "prompt": "Which best expresses: 'The challenge lies in translating scientific findings into effective action at both local and global scales.'",
-      "correctAnswer": "Putting research knowledge into practical use is difficult at all levels",
-      "explanation": "The sentence identifies the gap between having knowledge and using it effectively.",
+      "prompt": "Which best expresses the essential information in this sentence: 'As deep learning systems are increasingly deployed in high-stakes applications like medical diagnosis, criminal justice, and autonomous vehicles, addressing interpretability and fairness has become not merely an academic concern but an urgent practical necessity.'",
+      "correctAnswer": "When deep learning is used in critical applications, understanding how it works and ensuring fairness are essential",
+      "explanation": "The sentence emphasizes that transparency and fairness are practically necessary, not just theoretical concerns, when AI affects important decisions.",
       "options": [
-        "Scientists do not want their work used in practice",
-        "Putting research knowledge into practical use is difficult at all levels",
-        "Only global action can address the challenges identified",
-        "Local action is more effective than global coordination"
+        "Deep learning should never be used in medical applications",
+        "When deep learning is used in critical applications, understanding how it works and ensuring fairness are essential",
+        "Interpretability is only important for academic researchers",
+        "Autonomous vehicles do not need fair decision-making algorithms"
       ]
     },
     {
@@ -173,16 +173,16 @@
       "passageIndex": 0,
       "questionType": "prose_summary",
       "num": 10,
-      "prompt": "Select THREE answer choices that express the most important ideas in the passage.",
-      "correctAnswer": "A,C,D",
-      "explanation": "The three main ideas cover the methodological shift (A), real-world significance (C), and technological advances enabling new understanding (D).",
+      "prompt": "Complete a summary of the passage. Select THREE answer choices that express the most important ideas.",
+      "correctAnswer": "A,B,D",
+      "explanation": "The passage emphasizes deep learning fundamentals (A), neural network architecture (B), and challenges with interpretability and bias (D).",
       "options": [
-        "A. Research on deep learning and artificial intelligence has shifted from descriptive to more rigorous quantitative methods.",
-        "B. The topic has no relevance to environmental or social concerns.",
-        "C. Deep Learning and Artificial Intelligence has significant implications for biodiversity, health, economics, and culture.",
-        "D. Technological advances have greatly improved understanding of the subject.",
-        "E. Policymakers have no interest in applying research findings.",
-        "F. Translating research into practical action remains a key challenge."
+        "A. Deep learning uses multilayered neural networks to learn hierarchical representations and has achieved major advances in AI.",
+        "B. Different neural network architectures like CNNs and Transformers are specialised for different types of data.",
+        "C. All neural networks are equally interpretable and contain no biases whatsoever.",
+        "D. Deep learning systems face significant challenges regarding interpretability and bias that must be addressed.",
+        "E. Deep learning was invented in the 1950s with full practical success immediately.",
+        "F. Future deep learning research must improve efficiency, robustness, and integrate with other AI approaches."
       ]
     },
     {
@@ -191,14 +191,14 @@
       "passageIndex": 1,
       "questionType": "factual_information",
       "num": 11,
-      "prompt": "According to the passage, what has recent research on freshwater scarcity primarily focused on?",
-      "correctAnswer": "Quantitative methods allowing more precise measurement",
-      "explanation": "The passage states recent work 'employs quantitative methods that allow more precise measurement.'",
+      "prompt": "According to paragraph 1, what percentage of the earth's surface is covered by water?",
+      "correctAnswer": "More than 70 percent",
+      "explanation": "Paragraph 1 states 'water covers more than 70 percent of Earth's surface.'",
       "options": [
-        "Purely descriptive accounts",
-        "Quantitative methods allowing more precise measurement",
-        "Historical records only",
-        "Economic analysis"
+        "About 30 percent",
+        "About 50 percent",
+        "More than 70 percent",
+        "Approximately 95 percent"
       ]
     },
     {
@@ -207,14 +207,14 @@
       "passageIndex": 1,
       "questionType": "vocabulary_in_context",
       "num": 12,
-      "prompt": "The word 'quantitative' as used in the passage is closest in meaning to: [Question 12 — test-026]",
-      "correctAnswer": "numerical and measurable",
-      "explanation": "Quantitative refers to data that can be expressed in numbers and measured precisely.",
+      "prompt": "The word 'paradoxically' in paragraph 1 is closest in meaning to:",
+      "correctAnswer": "in a way that seems contradictory",
+      "explanation": "'Paradoxically' indicates an apparent contradiction: water covers most of Earth yet freshwater is scarce.",
       "options": [
-        "numerical and measurable",
-        "subjective and personal",
-        "historical and archival",
-        "theoretical and abstract"
+        "unfortunately",
+        "in a way that seems contradictory",
+        "clearly and obviously",
+        "scientifically proven"
       ]
     },
     {
@@ -223,78 +223,78 @@
       "passageIndex": 1,
       "questionType": "factual_information",
       "num": 13,
-      "prompt": "According to the passage, which of the following has contributed to advances in understanding freshwater scarcity? [Question 13 — test-026]",
-      "correctAnswer": "International research collaborations",
-      "explanation": "The passage lists international collaborations among the technological and methodological advances.",
+      "prompt": "According to paragraph 2, what is the difference between physical and economic water scarcity?",
+      "correctAnswer": "Physical scarcity involves water supply exceeding demand; economic scarcity results from lack of infrastructure",
+      "explanation": "Paragraph 2 distinguishes physical scarcity (water withdrawal exceeds supply) from economic scarcity (insufficient infrastructure despite available water).",
       "options": [
-        "Reduced funding for research",
-        "International research collaborations",
-        "Government censorship of findings",
-        "Declining interest from scientists"
+        "They occur in different countries only",
+        "Physical scarcity involves water supply exceeding demand; economic scarcity results from lack of infrastructure",
+        "They are the same phenomenon with different names",
+        "Economic scarcity is more severe than physical scarcity"
       ]
     },
     {
       "id": "toefl-reading-026-q14",
       "passageId": "toefl-reading-026-p2",
       "passageIndex": 1,
-      "questionType": "inference",
+      "questionType": "rhetorical_purpose",
       "num": 14,
-      "prompt": "What can be inferred about the relationship between freshwater scarcity and policymaking?",
-      "correctAnswer": "Scientific findings are increasingly applied to real-world decisions",
-      "explanation": "The passage notes policymakers 'increasingly draw on research' to inform decisions.",
+      "prompt": "Why does the author mention the Ogallala Aquifer in paragraph 3?",
+      "correctAnswer": "To illustrate groundwater depletion occurring faster than natural recharge",
+      "explanation": "The Ogallala Aquifer is cited as an example of aquifer depletion rates exceeding natural recharge rates.",
       "options": [
-        "Policymakers generally ignore scientific research",
-        "Scientific findings are increasingly applied to real-world decisions",
-        "Research on this topic has no practical applications",
-        "Policymakers and scientists always disagree"
+        "To show that all aquifers are endless sources of water",
+        "To illustrate groundwater depletion occurring faster than natural recharge",
+        "To argue that irrigation is always beneficial",
+        "To explain how aquifers form"
       ]
     },
     {
       "id": "toefl-reading-026-q15",
       "passageId": "toefl-reading-026-p2",
       "passageIndex": 1,
-      "questionType": "rhetorical_purpose",
+      "questionType": "inference",
       "num": 15,
-      "prompt": "Why does the author contrast early and recent studies in the passage? [Question 15 — test-026]",
-      "correctAnswer": "To show how the field has evolved toward more rigorous methods",
-      "explanation": "The contrast highlights the field's progression from description to quantitative measurement.",
+      "prompt": "What can be inferred from paragraph 3 about the long-term viability of current groundwater extraction practices?",
+      "correctAnswer": "Current extraction rates are unsustainable and will deplete aquifers",
+      "explanation": "Paragraph 3 states aquifers are being depleted 'far faster than natural recharge rates can sustain,' implying current practices are not viable long-term.",
       "options": [
-        "To suggest that early research was worthless",
-        "To show how the field has evolved toward more rigorous methods",
-        "To argue that new methods are too complicated",
-        "To criticise researchers who use descriptive approaches"
+        "Groundwater extraction can continue indefinitely without limits",
+        "Current extraction rates are unsustainable and will deplete aquifers",
+        "Aquifers recharge as fast as water is extracted",
+        "Groundwater is not important for agriculture"
       ]
     },
     {
       "id": "toefl-reading-026-q16",
       "passageId": "toefl-reading-026-p2",
       "passageIndex": 1,
-      "questionType": "negative_factual",
+      "questionType": "factual_information",
       "num": 16,
-      "prompt": "According to the passage, which of the following is NOT mentioned as an area affected by freshwater scarcity? [Question 16 — test-026]",
-      "correctAnswer": "Space exploration",
-      "explanation": "The passage mentions biodiversity, human health, economic systems, and cultural practices — not space exploration.",
+      "prompt": "According to paragraph 3, what percentage of global freshwater withdrawal is used in agriculture?",
+      "correctAnswer": "Approximately 70 percent",
+      "explanation": "Paragraph 3 states 'Agriculture is the largest consumer of freshwater globally, accounting for approximately 70 percent of all water withdrawal.'",
       "options": [
-        "Biodiversity",
-        "Human health",
-        "Economic systems",
-        "Space exploration"
+        "Approximately 30 percent",
+        "Approximately 50 percent",
+        "Approximately 70 percent",
+        "Approximately 90 percent"
       ]
     },
     {
       "id": "toefl-reading-026-q17",
       "passageId": "toefl-reading-026-p2",
       "passageIndex": 1,
-      "questionType": "factual_information",
+      "questionType": "negative_factual",
       "num": 17,
-      "prompt": "According to the passage, what challenge is identified regarding the practical use of research? [Question 17 — test-026]",
-      "correctAnswer": "Translating scientific findings into effective action",
-      "explanation": "The passage states 'the challenge lies in translating scientific findings into effective action.'",
+      "prompt": "According to paragraph 4, which is NOT mentioned as a source of water contamination?",
+      "correctAnswer": "Volcanic eruptions",
+      "explanation": "Paragraph 4 mentions industrial discharge, agricultural runoff, sewage, and nutrient pollution — not volcanic eruptions.",
       "options": [
-        "Finding funding for new studies",
-        "Translating scientific findings into effective action",
-        "Publishing research in academic journals",
-        "Attracting students to the field"
+        "Industrial discharge",
+        "Agricultural runoff with fertilizers",
+        "Improper sewage treatment",
+        "Volcanic eruptions"
       ]
     },
     {
@@ -303,14 +303,14 @@
       "passageIndex": 1,
       "questionType": "vocabulary_in_context",
       "num": 18,
-      "prompt": "The word 'nuanced' in the passage is closest in meaning to: [Question 18 — test-026]",
-      "correctAnswer": "detailed and carefully qualified",
-      "explanation": "Nuanced means showing subtle distinctions and careful qualification.",
+      "prompt": "The word 'exacerbates' in paragraph 3 is closest in meaning to:",
+      "correctAnswer": "makes worse",
+      "explanation": "'Exacerbates' means to make a situation worse or more severe, as climate change worsens water stress.",
       "options": [
-        "simplified",
-        "biased",
-        "detailed and carefully qualified",
-        "entirely new"
+        "improves or enhances",
+        "makes worse",
+        "has no effect on",
+        "reverses completely"
       ]
     },
     {
@@ -319,14 +319,14 @@
       "passageIndex": 1,
       "questionType": "sentence_simplification",
       "num": 19,
-      "prompt": "(19) Which best expresses: 'The challenge lies in translating scientific findings into effective action at both local and global scales.' [Question 19 — test-026]",
-      "correctAnswer": "Putting research knowledge into practical use is difficult at all levels",
-      "explanation": "The sentence identifies the gap between having knowledge and using it effectively.",
+      "prompt": "Which best expresses the essential information in this sentence: 'Watershed restoration and protection of freshwater ecosystems also help maintain water supply resilience.'",
+      "correctAnswer": "Protecting natural water systems helps ensure reliable water supplies",
+      "explanation": "The sentence conveys that maintaining healthy ecosystems supports sustainable water availability.",
       "options": [
-        "Scientists do not want their work used in practice",
-        "Putting research knowledge into practical use is difficult at all levels",
-        "Only global action can address the challenges identified",
-        "Local action is more effective than global coordination"
+        "Dams are the only way to maintain water supply",
+        "Protecting natural water systems helps ensure reliable water supplies",
+        "Freshwater ecosystems are less important than agriculture",
+        "Water supply resilience requires technology only"
       ]
     },
     {
@@ -335,16 +335,16 @@
       "passageIndex": 1,
       "questionType": "prose_summary",
       "num": 20,
-      "prompt": "Select THREE answer choices that express the most important ideas in the passage. [Question 20 — test-026]",
-      "correctAnswer": "A,C,D",
-      "explanation": "The three main ideas cover the methodological shift (A), real-world significance (C), and technological advances enabling new understanding (D).",
+      "prompt": "Select THREE answer choices that express the most important ideas in the passage.",
+      "correctAnswer": "A,C,E",
+      "explanation": "The passage emphasizes global water scarcity challenges (A), agriculture's dominant consumption (C), and the need for integrated management strategies (E).",
       "options": [
-        "A. Research on freshwater scarcity has shifted from descriptive to more rigorous quantitative methods.",
-        "B. The topic has no relevance to environmental or social concerns.",
-        "C. Freshwater Scarcity has significant implications for biodiversity, health, economics, and culture.",
-        "D. Technological advances have greatly improved understanding of the subject.",
-        "E. Policymakers have no interest in applying research findings.",
-        "F. Translating research into practical action remains a key challenge."
+        "A. Billions of people face water scarcity due to climate change, population growth, and over-extraction of groundwater.",
+        "B. Fresh water comprises more than 70 percent of Earth's water and is unlimited.",
+        "C. Agriculture accounts for 70 percent of freshwater use, and groundwater depletion is a critical problem.",
+        "D. Water contamination has never affected human populations.",
+        "E. Solutions require integrated management balancing agricultural, industrial, domestic, and ecosystem needs.",
+        "F. Desalination and water recycling are equally viable solutions everywhere regardless of economic context."
       ]
     }
   ]
