@@ -377,7 +377,7 @@ function LatestGuides() {
 // proof-of-funds by country, loans, timeline, saving tips). Email unlocks the download
 // INSTANTLY (we never hold the file hostage on email delivery) and subscribes them to
 // the weekly digest via the existing double-opt-in newsletter flow.
-function GuideDownload() {
+function GuideDownload({ source } = {}) {
   const PDF = "/marketing/2026-scholarships-funding-guide.pdf";
   const [email, setEmail] = React.useState("");
   const [state, setState] = React.useState(() => { try { return localStorage.getItem("lp_guide_dl") ? "done" : "idle"; } catch (e) { return "idle"; } });
@@ -388,7 +388,7 @@ function GuideDownload() {
     try {
       const base = window.LP_API_BASE || "";
       fetch(base + "/api/newsletter/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email.trim(), source: "funding-guide-pdf" }) }).catch(() => {});
-      try { if (window.gtag) window.gtag("event", "guide_download", { source: "home" }); } catch (e2) {}
+      try { if (window.gtag) window.gtag("event", "guide_download", { source: source || "home" }); } catch (e2) {}
     } catch (e2) {}
     try { localStorage.setItem("lp_guide_dl", "1"); } catch (e2) {}
     setState("done");
@@ -1185,6 +1185,7 @@ function Footer() {
 }
 
 window.LP_Home = Home;
+window.LP_GuideDownload = GuideDownload; // email-gated funding-guide PDF, reused on other pages
 window.LP_TopBar = TopBar;
 window.LP_Footer = Footer;
 window.LP_Logo = LPLogo;

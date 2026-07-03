@@ -23,6 +23,11 @@ const ROUTES = [
   "/#/learn", "/#/vocabulary", "/#/languages", "/#/writing-checker", "/#/speaking-checker",
   "/#/blog", "/#/login", "/#/achievements", "/#/relocate",
   "/mock-test/ielts/", "/study-abroad-funding-facts-2026/",
+  // Colleges hub consolidation (v322): legacy tab ids must still resolve via TAB_ALIAS
+  "/#/colleges/loan/Germany", "/#/colleges/sop", "/#/colleges/leaderboard", "/#/colleges/visa",
+  // Exam-prep deep routes incl. the TOEFL adaptive mock list
+  "/#/exam-prep/toefl/full", "/#/exam-prep/ielts/reading", "/#/exam-hub/toefl",
+  "/practice/toefl/",
 ];
 
 function waitForServer(timeoutMs) {
@@ -43,8 +48,12 @@ function waitForServer(timeoutMs) {
   try {
     await waitForServer(20000);
     browser = await chromium.launch({ headless: true });
+    // Block service workers: on a fresh profile the first SW install fires
+    // controllerchange → location.reload() (index.html), which kills any
+    // click-through scenario mid-flight. Real users only reload once ever.
+    const ctx = await browser.newContext({ serviceWorkers: "block" });
     for (const route of ROUTES) {
-      const page = await browser.newPage();
+      const page = await ctx.newPage();
       const errs = [];
       page.on("console", (m) => { if (m.type() === "error") errs.push(m.text()); });
       page.on("pageerror", (e) => errs.push(String(e && e.message || e)));
@@ -77,6 +86,22 @@ function waitForServer(timeoutMs) {
         else process.stdout.write(".");
       } catch (e) { failures.push(route + " → " + String(e.message).slice(0, 120)); }
       await page.close();
+    }
+    // ── Deep scenario: the TOEFL multi-stage adaptive mock gates stage 1 and
+    // routes stage 2 (the v321 engine) — a real click-through, not just a load.
+    try {
+      const page = await ctx.newPage();
+      await page.goto(BASE + "/#/exam-prep/toefl/full", { waitUntil: "domcontentloaded", timeout: 20000 });
+      await page.click(".ep-start-btn", { timeout: 15000 });                    // open mock 1
+      await page.click("text=Begin test", { timeout: 15000 });                  // test intro
+      await page.click("text=Start section", { timeout: 15000 });               // reading intro
+      await page.waitForSelector("text=Multi-stage adaptive", { timeout: 15000 }); // stage-1 gate visible
+      await page.click("text=Submit Stage 1", { timeout: 15000 });              // route (0 answers → easy)
+      await page.waitForSelector("text=Stage 2 loaded", { timeout: 15000 });    // stage-2 swapped in
+      process.stdout.write(".");
+      await page.close();
+    } catch (e) {
+      failures.push("TOEFL adaptive click-through → " + String(e.message).slice(0, 120));
     }
   } catch (e) {
     failures.push("harness error: " + e.message);

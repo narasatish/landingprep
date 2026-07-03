@@ -169,6 +169,7 @@
                   {window.LP_LoanPanel ? <window.LP_LoanPanel onNav={onNav} /> : loadingCard("Loan comparison is loading…")}
                   {window.LP_CalculatorsPanel ? <window.LP_CalculatorsPanel /> : null}
                 </>)}
+            {window.LP_GuideDownload && <window.LP_GuideDownload source={"colleges-" + fundMode} />}
           </>)}
 
           {/* Apply Now = partner applications + SOP/LOR documents + application tracker */}
