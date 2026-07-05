@@ -2458,6 +2458,163 @@ ${relatedGrid([
   }) + shell(inner));
 }
 germanyPillarPage();
+
+// ── Education Loan for Studying Abroad — PILLAR hub. Targets the collateral/
+// unsecured-loan query cluster (GSC: "non collateral education loan", "unsecured
+// education loan", "education loan is secured or unsecured") and interlinks the
+// loan spokes + the EMI calculator. Figures are ranges, not fixed quotes. ──
+function educationLoanPillarPage() {
+  const path = `/study-abroad-education-loan/`;
+  const th = `text-align:left;padding:10px 12px;border-bottom:2px solid var(--line);font-weight:700`;
+  const td = `padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top`;
+  const rows = [
+    ["Secured (with collateral)", "~8.5–11% p.a.", "Up to ~INR 1.5 crore", "Property, FD or LIC policy pledged; lowest rates, highest limits"],
+    ["Unsecured (no collateral)", "~11–15% p.a.", "Typically up to ~INR 40–75 lakh", "No asset pledged; depends on university, course and co-applicant income"],
+    ["International lenders (no co-signer)", "Varies (often higher)", "Course-cost based", "E.g. Prodigy Finance, MPOWER — for select universities, no Indian collateral/co-signer"],
+  ].map((r) => `<tr><td style="${td}"><strong>${r[0]}</strong></td><td style="${td}">${r[1]}</td><td style="${td}">${r[2]}</td><td style="${td}">${r[3]}</td></tr>`).join("");
+  const faqs = [
+    { q: "Is an education loan secured or unsecured?", a: "It can be either. A secured (collateral) loan is backed by an asset — property, a fixed deposit or an LIC policy — and carries the lowest interest (about 8.5–11% p.a.) and the highest limits. An unsecured (collateral-free) loan pledges no asset and is approved on the strength of your university, course and co-applicant's income, at a higher rate (about 11–15% p.a.) and a lower limit. Many students take an unsecured loan when they don't have collateral to pledge." },
+    { q: "Can I get an education loan without collateral for studying abroad?", a: "Yes. Private banks and NBFCs (such as Avanse, Auxilo, InCred and HDFC Credila) offer collateral-free education loans up to roughly INR 40–75 lakh, depending on the university, course and your co-applicant's income. International lenders like Prodigy Finance and MPOWER Financing lend to select universities with no Indian collateral or co-signer. Rates are higher than secured loans — compare the total cost, not just the headline rate." },
+    { q: "Do I pay EMIs while I'm still studying?", a: "Usually not in full. Most education loans give a moratorium (repayment holiday) covering your course plus 6–12 months. Interest still accrues during this period, so paying at least the simple interest while you study meaningfully reduces your total repayment. Model it with the free EMI calculator." },
+    { q: "What tax benefit does an education loan give?", a: "Under Section 80E of the Indian Income Tax Act, the interest paid on an education loan is fully deductible from your taxable income for up to 8 years (there is no upper limit on the interest amount). The principal is not deductible. This applies to loans taken for higher education for yourself, your spouse or your children." },
+    { q: "How much can I borrow, and what do lenders check?", a: "Limits range from a few lakh up to about INR 1.5 crore with strong collateral. Lenders weigh your university's ranking and the course's employability, your academic record, the co-applicant's income and stability, and the collateral offered. A strong admit to a well-ranked, employable course improves both your approval odds and your rate." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › Education Loan for Studying Abroad</p>
+<section class="hero"><div class="badges"><span class="badge">Complete guide</span><span class="badge">2026</span><span class="badge">Secured vs collateral-free</span></div>
+<h1>Education Loan for Studying Abroad (2026): Secured vs Collateral-Free</h1>
+<p class="lead">A clear guide to funding your study abroad with an education loan from India — secured versus unsecured (collateral-free) loans, typical interest rates and limits, the moratorium, tax benefits, and how to pick the cheapest total option. Model your repayment free.</p>
+<a class="cta" href="/tools/education-loan-emi-calculator/">▶ Free education-loan EMI calculator</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> An education loan is <strong>secured</strong> (backed by collateral — property, FD or LIC — at about <strong>8.5–11% p.a.</strong>, highest limits) or <strong>unsecured / collateral-free</strong> (no asset pledged, at about <strong>11–15% p.a.</strong>, approved on your university, course and co-applicant income). No collateral? Private banks, NBFCs (Avanse, Auxilo, InCred, HDFC Credila) and international lenders (Prodigy, MPOWER) offer collateral-free loans. Compare total cost, not just the rate.</div>
+
+<div class="card"><h2>Secured vs collateral-free education loans</h2>
+<table style="width:100%;border-collapse:collapse;font-size:15px"><thead><tr><th style="${th}">Loan type</th><th style="${th}">Typical interest</th><th style="${th}">Typical limit</th><th style="${th}">How it works</th></tr></thead><tbody>${rows}</tbody></table>
+<p class="note">Rates and limits are indicative ranges for Indian students in 2026 and vary by lender, university, course and profile — always get current quotes from two or three lenders. Full walkthrough: <a href="/blog/education-loan-without-collateral/">education loan without collateral</a> and <a href="/blog/education-loan-study-abroad/">education loan for study abroad</a>.</p></div>
+
+<div class="card"><h2>The moratorium: pay less overall</h2>
+<p>Most education loans include a <strong>moratorium</strong> (repayment holiday) of your <strong>course duration plus 6–12 months</strong>. Full EMIs start after that. But interest still <em>accrues</em> during the moratorium — so paying at least the <strong>simple interest</strong> while you study can cut your total repayment substantially. See exactly how much with the <a href="/tools/education-loan-emi-calculator/">EMI calculator</a>.</p></div>
+
+<div class="card"><h2>Interest, tax and total cost</h2>
+<ul class="bcheck">
+<li><strong>Section 80E:</strong> the interest you pay is fully tax-deductible in India for up to 8 years — a real saving that lowers the effective rate.</li>
+<li><strong>Compare total cost, not the headline rate:</strong> a slightly higher rate with no processing fee or with interest paid during study can be cheaper overall than a low advertised rate with high fees.</li>
+<li><strong>Forex &amp; proof of funds:</strong> a loan sanction letter can serve as proof of funds, and loans can fund a blocked account or GIC — check your destination's rule in the <a href="/study-abroad-funding-facts-2026/">funding facts</a> and the <a href="/tools/proof-of-funds-calculator/">proof-of-funds calculator</a>.</li>
+</ul></div>
+
+<div class="card"><h2>Which lenders to consider</h2>
+<ul class="bcheck">
+<li><strong>Public-sector banks</strong> (e.g. SBI Global Ed-Vantage, Bank of Baroda): lowest rates, usually need collateral for larger amounts.</li>
+<li><strong>Private banks &amp; NBFCs</strong> (Axis, ICICI, IDFC First; Avanse, Auxilo, InCred, HDFC Credila): faster processing and collateral-free options up to higher limits, at higher rates.</li>
+<li><strong>International lenders</strong> (Prodigy Finance, MPOWER Financing): no Indian collateral or co-signer, for select universities — useful if you have neither.</li>
+</ul>
+<p class="note">LandingPrep is independent and does not sell loans or take lender commissions on this page — always compare current offers directly with the lenders.</p></div>
+
+<div class="card"><h2>A simple plan</h2><ol>
+<li><strong>Estimate the total cost</strong> of your course with the <a href="/tools/cost-of-studying-abroad-calculator/">cost-of-studying calculator</a>.</li>
+<li><strong>Decide secured vs collateral-free</strong> based on whether you can pledge an asset.</li>
+<li><strong>Get quotes from 2–3 lenders</strong> and compare the <em>total</em> cost (rate + fees + moratorium terms).</li>
+<li><strong>Model the EMI</strong> and see the saving from paying interest during study — <a href="/tools/education-loan-emi-calculator/">EMI calculator</a>.</li>
+<li><strong>Keep Section 80E in mind</strong> when you start repaying.</li>
+</ol>
+<p class="note"><strong>Last updated:</strong> ${esc(BUILD_DATE)}. This is general information, not financial advice; confirm current rates, limits and terms directly with lenders.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🏦 EMI calculator`, href: `/tools/education-loan-emi-calculator/` },
+  { label: `📄 Loan without collateral`, href: `/blog/education-loan-without-collateral/` },
+  { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+  { label: `💰 Cost of studying abroad`, href: `/tools/cost-of-studying-abroad-calculator/` },
+])}`;
+  emit(path, head({
+    title: `Education Loan for Studying Abroad 2026: Secured vs Collateral-Free | ${BRAND}`,
+    desc: `Education loan for study abroad from India (2026): secured vs unsecured (collateral-free) loans, interest rates, limits, moratorium, Section 80E tax benefit and best lenders. Free EMI calculator.`,
+    path,
+    kw: "education loan for study abroad, education loan without collateral, collateral free education loan, unsecured education loan, is education loan secured or unsecured, nbfc education loan without collateral, study abroad loan, non collateral education loan",
+    jsonLdBlocks: [
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Education Loan for Studying Abroad 2026: Secured vs Collateral-Free", description: "Secured vs unsecured education loans for Indian students going abroad — rates, limits, moratorium, tax and lenders.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
+      faqJsonLd(faqs),
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "Education Loan for Studying Abroad", path }]),
+    ],
+  }) + shell(inner));
+}
+educationLoanPillarPage();
+
+// ── Study in Canada — PILLAR hub. Broad guide reflecting the 2024–26 rule
+// changes (SDS ended, study-permit cap + PAL with a master's/PhD exemption from
+// Jan 2026, PGWP language + field-of-study rules, 24 hrs/week work), interlinking
+// the existing Canada spokes. Facts verified against IRCC/canada.ca. ──
+function canadaPillarPage() {
+  const path = `/study-in-canada/`;
+  const IRCC = "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html";
+  const faqs = [
+    { q: "How much money do I need to study in Canada in 2026?", a: "You must show living costs of about CAD 20,635 for a single applicant (set by IRCC, adjusted yearly), plus your first-year tuition and travel. Many students show the living-cost portion via a GIC (Guaranteed Investment Certificate), which is returned to them in instalments after arrival. Use the free proof-of-funds calculator for your exact total." },
+    { q: "Did the Student Direct Stream (SDS) end?", a: "Yes. The SDS fast-track ended on 8 November 2024. All students now apply through the regular study-permit stream, which still accepts a GIC as proof of funds but is not the old two-week fast-track. Plan for standard processing times." },
+    { q: "Do I need a Provincial Attestation Letter (PAL) for Canada?", a: "Most undergraduate and college students do — Canada caps international study permits and requires a Provincial/Territorial Attestation Letter (PAL/TAL) with the application. As of 1 January 2026, master's and doctoral students at public designated learning institutions are exempt from the PAL/TAL requirement. Always confirm your category with the official IRCC page." },
+    { q: "How many hours can I work while studying in Canada?", a: "Up to 24 hours per week off campus during academic sessions (this is the current permanent rule, raised from 20 hours), and unlimited hours during scheduled breaks such as summer and winter holidays." },
+    { q: "Can I stay and work in Canada after graduating?", a: "Yes, via the Post-Graduation Work Permit (PGWP), valid from 8 months to 3 years depending on your programme (master's graduates can get 3 years even from a shorter programme). Since November 2024 you must submit a language-test result, and non-degree graduates must have studied an eligible field of study. PGWP work experience then counts toward permanent residence through Express Entry (Canadian Experience Class)." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Study in Canada</p>
+<section class="hero"><div class="badges"><span class="badge">Complete guide</span><span class="badge">2026</span><span class="badge">Updated for the 2024–26 rules</span></div>
+<h1>Study in Canada 2026: The Complete Guide for International Students</h1>
+<p class="lead">Canada offers strong universities, generous work rights and a clear study-to-PR pathway — but the rules changed a lot in 2024–2026. This guide covers the whole journey (costs, proof of funds, the study-permit cap and PAL, the visa, working while studying and the PGWP-to-PR route) and links the detailed resource for each stage, all verified against IRCC.</p>
+<a class="cta" href="/tools/proof-of-funds-calculator/">▶ Calculate your Canada proof of funds (free)</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> For 2026 you need about <strong>CAD 20,635</strong> in living-cost proof (often via a <strong>GIC</strong>) plus first-year tuition; the <strong>SDS fast-track ended in Nov 2024</strong>; most undergrads need a <strong>Provincial Attestation Letter (PAL)</strong> — master's/PhD are exempt from Jan 2026; you can work <strong>24 hours/week</strong>; and the <strong>PGWP</strong> (8 months–3 years) leads to PR via Express Entry.</div>
+
+<div class="card"><h2>Why study in Canada?</h2><ul class="bcheck">
+<li><strong>Respected universities</strong> (Toronto, UBC, McGill, Waterloo, Alberta…) with strong research and co-op/work-integrated learning.</li>
+<li><strong>Generous work rights</strong> — 24 hours/week during term, unlimited during breaks.</li>
+<li><strong>A clear study-to-PR pathway</strong> — the PGWP lets you gain Canadian work experience that counts toward permanent residence.</li>
+<li><strong>Multicultural, safe, and welcoming to international graduates.</strong></li>
+</ul></div>
+
+<div class="card"><h2>What it costs &amp; proof of funds</h2>
+<p>Budget for <strong>tuition</strong> (roughly CAD 15,000–40,000/year for international students, by course and university) plus <strong>living costs</strong>. For the study permit you must show about <strong>CAD 20,635</strong> for a single applicant (IRCC's living-cost figure, updated yearly) <strong>plus your first-year tuition</strong>. Many students show the living-cost portion through a <strong>GIC</strong>, returned to them in instalments after arrival. See the <a href="/blog/gic-account-canada-2026-guide/">Canada GIC guide</a>, estimate your total with the <a href="/tools/proof-of-funds-calculator/">proof-of-funds calculator</a>, and the <a href="/blog/cost-of-studying-in-canada-for-indians-2026/">cost of studying in Canada</a>.</p></div>
+
+<div class="card"><h2>The 2024–2026 rule changes you must know</h2><ul class="bcheck">
+<li><strong>SDS ended (Nov 2024):</strong> everyone now uses the regular study-permit stream — no more two-week fast-track.</li>
+<li><strong>Study-permit cap + PAL:</strong> Canada limits international permits and requires a <strong>Provincial Attestation Letter</strong> for most undergraduate/college applicants. <strong>Master's and doctoral students at public institutions are exempt from Jan 2026.</strong></li>
+<li><strong>PGWP tightened:</strong> a language-test result is required (since Nov 2024), and non-degree graduates must have studied an <strong>eligible field of study</strong>.</li>
+<li><strong>Work hours raised</strong> to 24/week during term.</li>
+</ul>
+<p>Full detail: <a href="/blog/canada-study-permit-changes-2026/">Canada study-permit changes 2026</a>. Confirm your own case on the official <a href="${IRCC}" target="_blank" rel="nofollow noopener">IRCC study-permit page ↗</a>.</p></div>
+
+<div class="card"><h2>Admission &amp; English requirements</h2>
+<p>Each university sets its own English requirement — there is <strong>no single national IELTS score</strong> — but a Band around 6.5 (with no band below 6.0) is common for undergraduate entry, and some programmes ask higher. Canada also accepts TOEFL, PTE and, for many programmes, CELPIP. Check and practise with <a href="/ielts-for-canada-pr/">IELTS for Canada</a>, <a href="/blog/celpip-vs-ielts-for-canada-pr-2026/">CELPIP vs IELTS</a>, and a <a href="/mock-test/ielts/">free IELTS mock test</a>. Always confirm the exact score on your course page.</p></div>
+
+<div class="card"><h2>The study-permit process &amp; timeline</h2>
+<p>A rough sequence: get admission from a Designated Learning Institution → obtain your <strong>PAL</strong> (if required for your category) → open a <strong>GIC</strong> and arrange proof of funds → complete the <strong>study-permit application</strong>, medical and biometrics → get approval and travel. Apply <strong>3–6 months ahead</strong> of your intake (Fall/September is the main one; Winter/January and some Spring intakes exist). Rehearse with the <a href="/#/colleges">visa-interview coach</a>.</p></div>
+
+<div class="card"><h2>Working while studying &amp; after graduation</h2><ul class="bcheck">
+<li><strong>During study:</strong> up to 24 hours/week off campus in term, unlimited during breaks.</li>
+<li><strong>PGWP:</strong> 8 months to 3 years by programme length (master's graduates can get 3 years); needs a language test since Nov 2024; non-degree grads need an eligible field of study. See the <a href="/blog/canada-pgwp-2026-guide/">Canada PGWP guide</a>.</li>
+<li><strong>Permanent residence:</strong> PGWP work experience counts toward the Canadian Experience Class under <a href="/blog/canada-pr-express-entry-basics/">Express Entry</a> — the main study-to-PR route.</li>
+</ul>
+<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against IRCC/canada.ca. Canadian immigration rules change frequently — always confirm the current details on the official IRCC site before you apply.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
+  { label: `🏦 Canada GIC guide`, href: `/blog/gic-account-canada-2026-guide/` },
+  { label: `📋 Study-permit changes 2026`, href: `/blog/canada-study-permit-changes-2026/` },
+  { label: `💼 Canada PGWP guide`, href: `/blog/canada-pgwp-2026-guide/` },
+  { label: `🍁 Express Entry basics`, href: `/blog/canada-pr-express-entry-basics/` },
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+])}`;
+  emit(path, head({
+    title: `Study in Canada 2026: Complete Guide (Costs, PAL, PGWP, PR) | ${BRAND}`,
+    desc: `Free complete guide to studying in Canada 2026: proof of funds (CAD 20,635 + tuition, GIC), the study-permit cap & PAL, the SDS-ended rules, 24 hrs/week work, and the PGWP-to-PR pathway. Verified against IRCC.`,
+    path,
+    kw: "study in canada, study in canada for international students, canada student visa 2026, canada study permit requirements, canada proof of funds gic, provincial attestation letter pal, canada pgwp 2026, study in canada from india, cost of studying in canada",
+    jsonLdBlocks: [
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Canada 2026: The Complete Guide for International Students", description: "Costs, proof of funds, the study-permit cap and PAL, the visa, working while studying and the PGWP-to-PR pathway in Canada, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
+      faqJsonLd(faqs),
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Canada", path }]),
+    ],
+  }) + shell(inner));
+}
+canadaPillarPage();
 fundingFactsPage();
 (() => {
   const byCountry = {};
