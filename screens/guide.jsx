@@ -139,7 +139,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
             <div className="aside-card">
               {langTarget ? (
                 <>
-                  <h3 className="h2" style={{ color: "white" }}>Build your {langName} now</h3>
+                  <h2 className="h2" style={{ color: "white" }}>Build your {langName} now</h2>
                   <p>{exam.name} tests your {langName}. Practise free with our {langName} A1 course, mock tests and a 2-way speaking partner — the fastest way to start building the skills {exam.name} measures.</p>
                   <button
                     className="btn"
@@ -151,7 +151,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
                 </>
               ) : exam.mockAlias ? (
                 <>
-                  <h3 className="h2" style={{ color: "white" }}>Practise the same skills as {aliasName}</h3>
+                  <h2 className="h2" style={{ color: "white" }}>Practise the same skills as {aliasName}</h2>
                   <p>{exam.name} and {aliasName} test the same core English skills at a similar level. Practise free on our {aliasName} mocks with real timings while you prepare for {exam.name}.</p>
                   <button
                     className="btn"
@@ -163,7 +163,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
                 </>
               ) : exam.guideOnly ? (
                 <>
-                  <h3 className="h2" style={{ color: "white" }}>Full {exam.name} guide</h3>
+                  <h2 className="h2" style={{ color: "white" }}>Full {exam.name} guide</h2>
                   <p>This is your complete {exam.name} format, scoring and prep guide. Full practice mocks are on the way — meanwhile, explore our free mock tests for IELTS, TOEFL, PTE, CELPIP and more.</p>
                   <button
                     className="btn"
@@ -175,7 +175,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
                 </>
               ) : (
                 <>
-                  <h3 className="h2" style={{ color: "white" }}>Start practising free</h3>
+                  <h2 className="h2" style={{ color: "white" }}>Start practising free</h2>
                   <p>Take a free {exam.name} mock test with real timings. Get a section-by-section score and model answers for writing and speaking.</p>
                   <button
                     className="btn"
@@ -231,7 +231,7 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
 function OverviewTab({ exam }) {
   return (
     <div className="guide-card">
-      <h3 className="h2">About {exam.name}</h3>
+      <h2 className="h2">About {exam.name}</h2>
       <p>{exam.blurb}</p>
       <p>Administered by {exam.body}. Available in {exam.streams.length > 1 ? `two versions: ${exam.streams.join(" and ")}` : `one format: ${exam.streams[0]}`}. Choose your stream carefully — confirm with the receiving institution or immigration authority before booking.</p>
       <dl style={{ margin: "20px 0 0", padding: 0 }}>
@@ -257,7 +257,7 @@ function PatternTab({ exam }) {
   return (
     <div>
       <div className="guide-card">
-        <h3 className="h2">Test pattern &amp; syllabus</h3>
+        <h2 className="h2">Test pattern &amp; syllabus</h2>
         <p>The {exam.name} runs for {exam.duration} across {exam.sections} sections. The structure below reflects the latest official format.</p>
         {note && <div className="live-note">🆕 <strong>Latest:</strong> {note}{window.LP_LIVE.updatedAt() && <span className="live-stamp"> · updated {window.LP_LIVE.updatedAt()}</span>}</div>}
         <dl style={{ margin: "20px 0 0", padding: 0 }}>
@@ -269,7 +269,7 @@ function PatternTab({ exam }) {
 
       {exam.sections_detail && exam.sections_detail.map((sec) => (
         <div key={sec.name} className="guide-card" style={{ marginTop: 16 }}>
-          <h3 className="h2">{sec.icon} {sec.name}</h3>
+          <h2 className="h2">{sec.icon} {sec.name}</h2>
           <p style={{ margin: "4px 0 12px", fontSize: 14, color: "var(--ink-3)" }}>
             {sec.time} minutes · {sec.questions > 0 ? `${sec.questions} questions` : "variable tasks"}
           </p>
@@ -300,7 +300,7 @@ function RegistrationTab({ exam }) {
   ];
   return (
     <div className="guide-card">
-      <h3 className="h2">Registration &amp; booking</h3>
+      <h2 className="h2">Registration &amp; booking</h2>
       <p>All bookings are made through the official portal. Slots typically open 8–12 weeks in advance with rolling availability. Book early — popular dates and centres fill quickly.</p>
       <ol style={{ paddingLeft: 20, margin: "16px 0", color: "var(--ink-2)", lineHeight: 1.8 }}>
         {steps.map((s, i) => <li key={i}>{s}</li>)}
@@ -323,7 +323,7 @@ function FeesTab({ exam }) {
   const stamp = (live && live.updated) || (window.LP_LIVE && window.LP_LIVE.updatedAt());
   return (
     <div className="guide-card">
-      <h3 className="h2">Test fees</h3>
+      <h2 className="h2">Test fees</h2>
       <p>Fees vary by country, delivery format (centre vs. home), and applicable taxes. The figures below are typical at time of writing — always confirm the current amount on the official site before checkout.</p>
       {stamp && <div className="live-note">💰 Fees shown are current as of <strong>{stamp}</strong> and update automatically when our team refreshes them.</div>}
       <dl style={{ margin: "20px 0 0", padding: 0 }}>
@@ -343,7 +343,7 @@ function ScoreTab({ exam }) {
   const guide = exam.scoreGuide || [];
   return (
     <div className="guide-card">
-      <h3 className="h2">Score guide</h3>
+      <h2 className="h2">Score guide</h2>
       <p>Scores are calculated based on your performance across all sections. The table below shows typical score ranges and their implications.</p>
       <table className="score-guide-table">
         <tbody>
@@ -365,7 +365,7 @@ function ScoreTab({ exam }) {
 function CentresTab({ exam }) {
   return (
     <div className="guide-card">
-      <h3 className="h2">Test centres &amp; delivery</h3>
+      <h2 className="h2">Test centres &amp; delivery</h2>
       <p>{exam.centres || "Available at authorised test centres worldwide. Check the official site for the most current list of available locations."}</p>
       {exam.id === "duolingo" && (
         <div className="tip-box" style={{ marginTop: 12 }}>
@@ -416,7 +416,7 @@ function MockTab({ exam, onPractice }) {
   return (
     <div>
       <div className="guide-card" style={{ marginBottom: 16 }}>
-        <h3 className="h2">Mock tests for {exam.name}</h3>
+        <h2 className="h2">Mock tests for {exam.name}</h2>
         <p>LandingPrep includes {exam.mocks} {exam.name} mock tests — full-length tests with real timings, section drills for targeted practice, and an adaptive difficulty engine. All mocks are scored dynamically against an answer key or writing heuristic.</p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginTop: 18 }}>
           {[["20", "Full mocks", "All sections, real timings"], ["40", "Section drills", "Targeted skill practice"]].map(([n, label, sub]) => (
@@ -500,7 +500,7 @@ function TipsTab({ exam }) {
   const examTips = tips[exam.id] || tips.ielts;
   return (
     <div className="guide-card">
-      <h3 className="h2">Last-minute tips for {exam.name}</h3>
+      <h2 className="h2">Last-minute tips for {exam.name}</h2>
       <ul style={{ paddingLeft: 18, margin: "16px 0 0", color: "var(--ink-2)", lineHeight: 1.8 }}>
         {examTips.map((t, i) => <li key={i} style={{ marginBottom: 8 }}>{t}</li>)}
       </ul>
@@ -512,7 +512,7 @@ function MistakesTab({ exam }) {
   const mistakes = exam.commonMistakes || [];
   return (
     <div className="guide-card">
-      <h3 className="h2">Common mistakes to avoid</h3>
+      <h2 className="h2">Common mistakes to avoid</h2>
       <p style={{ marginBottom: 16 }}>These are the most frequently observed errors by candidates preparing for {exam.name}. Address them in your practice sessions before test day.</p>
       <ul className="cm-list">
         {mistakes.map((m, i) => <li key={i}>{m}</li>)}
@@ -525,7 +525,7 @@ function FAQsTab({ exam }) {
   const [open, setOpen] = useStateG(0);
   return (
     <div className="guide-card">
-      <h3 className="h2">Frequently asked questions</h3>
+      <h2 className="h2">Frequently asked questions</h2>
       <div className="faq" style={{ marginTop: 12 }}>
         {exam.faqs.map(([q, a], i) => (
           <details key={i} open={i === open} onToggle={() => setOpen(i)}>

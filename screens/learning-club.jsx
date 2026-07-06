@@ -526,7 +526,7 @@ function Flashcards() {
     <div className="flashcard-shell">
       <div className="flashcard-top">
         <span>Card {idx + 1} of {queue.length}</span>
-        <button className="flash-close" onClick={() => setOpen(false)}>✕</button>
+        <button className="flash-close" aria-label="Close" onClick={() => setOpen(false)}>✕</button>
       </div>
       <div className={"flashcard" + (revealed ? " is-flipped" : "")} onClick={() => !revealed && setRevealed(true)}>
         <div className="flash-word">{card.w} <span className="flash-pos">{card.pos}</span></div>
@@ -987,7 +987,7 @@ function TipsMistakes({ content, examId }) {
     <div>
       {tips.length > 0 && (
         <div className="guide-card" style={{ marginBottom: 20 }}>
-          <h3 className="h2">Last-minute tips</h3>
+          <h2 className="h2">Last-minute tips</h2>
           <ul style={{ paddingLeft:18, margin:"12px 0 0", color:"var(--ink-2)", lineHeight:1.8 }}>
             {tips.map((t,i) => <li key={i} style={{ marginBottom:8 }}>{t}</li>)}
           </ul>
@@ -995,7 +995,7 @@ function TipsMistakes({ content, examId }) {
       )}
       {mistakes.length > 0 && (
         <div className="guide-card">
-          <h3 className="h2">Common mistakes</h3>
+          <h2 className="h2">Common mistakes</h2>
           <ul className="cm-list" style={{ marginTop: 12 }}>
             {mistakes.map((m,i) => <li key={i}>{m}</li>)}
           </ul>

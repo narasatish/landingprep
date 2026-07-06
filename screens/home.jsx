@@ -313,7 +313,7 @@ function QuickScoreCheck({ onNav }) {
       <div className="shell">
         <div style={{ background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 18, padding: "22px 24px", boxShadow: "var(--shadow, 0 10px 28px -16px rgba(16,24,40,.18))" }}>
           <div className="eyebrow">⚡ 20-second check · no signup</div>
-          <h3 className="h2" style={{ margin: "4px 0 14px" }}>Already have a score? See what you qualify for — instantly.</h3>
+          <h2 className="h2" style={{ margin: "4px 0 14px" }}>Already have a score? See what you qualify for — instantly.</h2>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
             <select value={exam} onChange={(e) => { setExam(e.target.value); setScore(""); }} style={fieldStyle} aria-label="Exam">
               {PREDICTOR_EXAMS.map((e) => <option key={e.id} value={e.id}>{e.name}</option>)}
@@ -604,7 +604,7 @@ function Home({ onGuide, onPractice, onNav }) {
       <section className="section lp-stats-section reveal" style={{ paddingTop: 24, paddingBottom: 8 }}>
         <div className="shell">
           <div className="lp-stats">
-            {[[exams.length + "+", "exams covered", "var(--accent)"], ["1,000+", "free mock tests", "#16a34a"], ["99", "universities", "#0ea5e9"], ["100%", "free, forever", "#f59e0b"], ["9", "study destinations", "#ec4899"]].map(([n, l, c]) => (
+            {[[exams.length + "+", "exams covered", "var(--accent)"], ["1,000+", "free mock tests", "#16a34a"], ["99", "universities", "#0284c7"], ["100%", "free, forever", "#b45309"], ["9", "study destinations", "#ec4899"]].map(([n, l, c]) => (
               <div className="lp-stat" key={l}><span className="lp-stat-n" style={{ color: c }}>{n}</span><span className="lp-stat-l">{l}</span></div>
             ))}
           </div>
@@ -880,7 +880,7 @@ function Home({ onGuide, onPractice, onNav }) {
             {/* Dashboard preview mockup — gives the section a visual so sign-up feels tangible */}
             <div aria-hidden="true" style={{ flex: "0 0 300px", maxWidth: 300, background: "var(--surface)", border: "1px solid var(--line)", borderRadius: 16, padding: 18, boxShadow: "var(--shadow, 0 10px 28px -14px rgba(16,24,40,.18))" }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 13, fontWeight: 700 }}>
-                <span style={{ color: "#f59e0b" }}>🔥 7-day streak</span>
+                <span style={{ color: "#b45309" }}>🔥 7-day streak</span>
                 <span style={{ color: "var(--ink-3)" }}>Level 4 · 532 XP</span>
               </div>
               <svg viewBox="0 0 260 80" style={{ width: "100%", height: 78, marginTop: 12 }}>
@@ -890,7 +890,7 @@ function Home({ onGuide, onPractice, onNav }) {
               <div style={{ fontSize: 11, color: "var(--ink-3)", fontWeight: 600, margin: "2px 0 12px" }}>IELTS band trend · last 7 mocks</div>
               {[["Listening", 86, "#16a34a"], ["Reading", 74, "#0ea5e9"], ["Writing", 62, "#f59e0b"]].map(([s, w, c]) => (
                 <div key={s} style={{ marginBottom: 9 }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontWeight: 600, marginBottom: 4 }}><span>{s}</span><span style={{ color: c }}>{w}%</span></div>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontWeight: 600, marginBottom: 4 }}><span>{s}</span><span style={{ color: "var(--ink)", fontWeight: 700 }}>{w}%</span></div>
                   <div style={{ height: 7, borderRadius: 999, background: "var(--line)" }}><div style={{ width: w + "%", height: "100%", borderRadius: 999, background: c }} /></div>
                 </div>
               ))}
@@ -1001,7 +1001,7 @@ function TopBar({ current = "home", onNav }) {
       <header className="topbar">
         <div className="shell topbar-inner">
           <div className="topbar-left">
-            <button className="brand" onClick={() => onNav && onNav("home")} style={{ background: "transparent" }}>
+            <button className="brand" onClick={() => onNav && onNav("home")} style={{ background: "transparent" }} aria-label="LandingPrep — home">
               <LPLogo size={32} />
               <span className="brand-name">LandingPrep</span>
             </button>
@@ -1046,7 +1046,7 @@ function TopBar({ current = "home", onNav }) {
       {open && (
         <div className={"drawer is-open"} onClick={() => setOpen(false)}>
           <aside className="drawer-panel" onClick={(e) => e.stopPropagation()}>
-            <button className="drawer-close" onClick={() => setOpen(false)}>×</button>
+            <button className="drawer-close" aria-label="Close menu" onClick={() => setOpen(false)}>×</button>
             {drawerItems.map(([id, label]) => (
               <a key={id} href="#" onClick={(e) => { e.preventDefault(); setOpen(false); onNav && onNav(id); }}>{label}</a>
             ))}

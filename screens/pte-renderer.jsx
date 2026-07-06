@@ -309,7 +309,7 @@
                   </div>
                   <span className="pte-para-id">{p.id}</span>
                   <span className="pte-para-text">{p.text}</span>
-                  <button className="pte-para-remove" onClick={() => removeFromTarget(p.id)}>✕</button>
+                  <button className="pte-para-remove" aria-label="Remove paragraph" onClick={() => removeFromTarget(p.id)}>✕</button>
                 </div>
               ))
           }
