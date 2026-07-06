@@ -2615,6 +2615,454 @@ ${relatedGrid([
   }) + shell(inner));
 }
 canadaPillarPage();
+
+// ── Study in the UK — PILLAR hub. Facts verified vs gov.uk/UKVI (2026). ──
+function ukPillarPage() {
+  const path = `/study-in-uk/`;
+  const faqs = [
+    { q: "How much money do I need for a UK student visa in 2026?", a: "You must show course fees plus living costs (maintenance) of GBP 1,529/month if studying in London or GBP 1,171/month elsewhere, for up to 9 months — so about GBP 13,761 (London) or GBP 10,539 (outside London) of maintenance, on top of your tuition. The money must sit in your account for 28 consecutive days before you apply." },
+    { q: "How long can I stay in the UK after my degree?", a: "The Graduate Route lets you stay to work for 2 years after a bachelor's or master's (3 years after a PhD). Note the announced change: for applications made from 1 January 2027 the post-study period drops to 18 months (PhD stays 3 years)." },
+    { q: "Can I work while studying in the UK?", a: "Yes — degree-level students can work up to 20 hours per week during term time and full-time during holidays." },
+    { q: "Can I bring my family on a UK student visa?", a: "Since January 2024, students on taught master's and most other courses can no longer bring dependants. Only students on PhD/research programmes (and government-sponsored students) can bring family." },
+    { q: "Do I need IELTS for the UK?", a: "You need to prove English at roughly CEFR B2 level, but IELTS is not the only accepted test — universities and UKVI accept several tests, and some applicants are exempt (e.g. from majority-English-speaking countries or with an English-taught degree). Check your university's list." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Study in the UK</p>
+<section class="hero"><div class="badges"><span class="badge">Complete guide</span><span class="badge">2026</span><span class="badge">Verified vs gov.uk</span></div>
+<h1>Study in the UK 2026: The Complete Guide for International Students</h1>
+<p class="lead">The UK offers world-leading universities, one-year master's degrees and a post-study work route — with some important 2024–26 rule changes. This guide walks the whole journey (costs, the student visa, working, and staying on after your degree) and links the detailed resource for each step, verified against gov.uk.</p>
+<a class="cta" href="/tools/proof-of-funds-calculator/">▶ Calculate your UK proof of funds (free)</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The UK student visa needs tuition + maintenance of <strong>GBP 1,529/mo (London)</strong> or <strong>GBP 1,171/mo (elsewhere)</strong> for up to 9 months, held 28 days; you can work <strong>20 hrs/week</strong> in term; the <strong>Graduate Route</strong> gives 2 years' post-study work (3 for PhD), <strong>dropping to 18 months for applications from Jan 2027</strong>; and taught-master's students can no longer bring dependants.</div>
+
+<div class="card"><h2>Why study in the UK?</h2><ul class="bcheck">
+<li><strong>Top-ranked universities</strong> (Oxford, Cambridge, Imperial, UCL, Manchester, Edinburgh…) with global recognition.</li>
+<li><strong>One-year master's degrees</strong> — you finish faster and spend less than a two-year programme.</li>
+<li><strong>The Graduate Route</strong> — 2 years' post-study work (3 for a PhD) to gain UK experience.</li>
+<li><strong>English-taught throughout</strong>, with strong student support for international students.</li>
+</ul></div>
+
+<div class="card"><h2>What it costs</h2>
+<p>International <strong>tuition</strong> is set by each university and is not capped — roughly <strong>GBP 11,400–38,000/year</strong> for undergraduate and <strong>GBP 12,000–50,000+/year</strong> for postgraduate (taught master's are often GBP 15,000–25,000). <strong>Maintenance</strong> for the visa is GBP 1,529/month (London) or GBP 1,171/month (elsewhere) for up to 9 months. Budget also for the visa fee (about GBP 558) and the Immigration Health Surcharge (about GBP 776/year). Estimate your full budget with the <a href="/tools/cost-of-studying-abroad-calculator/">cost calculator</a> and see the <a href="/study-abroad/cost-of-studying-in-uk/">UK cost breakdown</a>.</p></div>
+
+<div class="card"><h2>Admission &amp; English</h2><ul class="bcheck">
+<li><strong>Undergraduate:</strong> apply through <strong>UCAS</strong>. <strong>Postgraduate:</strong> usually apply directly to each university.</li>
+<li><strong>English:</strong> prove roughly CEFR B2 — IELTS is common but not the only accepted test; some applicants are exempt. Prep with <a href="/ielts-for-uk-visa/">IELTS for the UK</a> and a <a href="/mock-test/ielts/">free IELTS mock test</a>.</li>
+<li><strong>Documents:</strong> once you accept an offer you receive a <strong>CAS</strong> (Confirmation of Acceptance for Studies) for the visa. See the <a href="/blog/uk-student-visa-pre-cas-requirements/">pre-CAS requirements</a> and a <a href="/blog/sop-for-uk-student-visa-sample/">sample SOP</a>.</li>
+</ul></div>
+
+<div class="card"><h2>The student visa</h2>
+<p>With your CAS and financial evidence (held 28 consecutive days), you apply for the Student visa, pay the fee and the Immigration Health Surcharge, give biometrics, and (from many countries including India) provide a <strong>TB test certificate</strong>. Use the <a href="/tools/student-visa-document-checklist/">document checklist</a> to gather everything, and rehearse with the <a href="/#/colleges">visa-interview coach</a>.</p></div>
+
+<div class="card"><h2>Working, family &amp; staying on</h2><ul class="bcheck">
+<li><strong>During study:</strong> 20 hours/week in term, full-time on holidays.</li>
+<li><strong>Dependants:</strong> since Jan 2024, taught-master's (and most) students cannot bring family; PhD/research students can.</li>
+<li><strong>After graduating:</strong> the <a href="/blog/uk-graduate-route-visa-2026/">Graduate Route</a> gives 2 years' work (3 for PhD) — reducing to 18 months for applications from January 2027. It can lead on to a Skilled Worker visa.</li>
+</ul>
+<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against <a href="https://www.gov.uk/student-visa" target="_blank" rel="nofollow noopener">gov.uk ↗</a>. UK rules change — confirm the current details before you apply.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
+  { label: `✅ Visa document checklist`, href: `/tools/student-visa-document-checklist/` },
+  { label: `🎓 UK Graduate Route`, href: `/blog/uk-graduate-route-visa-2026/` },
+  { label: `💷 Cost of studying in the UK`, href: `/study-abroad/cost-of-studying-in-uk/` },
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+])}`;
+  emit(path, head({ title: `Study in the UK 2026: Complete Guide (Costs, Visa, Graduate Route) | ${BRAND}`, desc: `Free complete guide to studying in the UK 2026: tuition & maintenance (GBP 1,171–1,529/mo), the student visa & CAS, 20 hrs/week work, the dependant rules, and the Graduate Route (2yr, 18mo from Jan 2027). Verified vs gov.uk.`, path, kw: "study in uk, study in uk for international students, uk student visa 2026, uk graduate route, cost of studying in uk, uk student visa requirements, study in uk from india, uk maintenance funds", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in the UK 2026: The Complete Guide for International Students", description: "Costs, the student visa and CAS, working, dependant rules and the Graduate Route in the UK, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+    jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in the UK", path }]),
+  ] }) + shell(inner));
+}
+ukPillarPage();
+
+// ── Study in Australia — PILLAR hub. Facts verified vs Home Affairs / Study Australia (2026). ──
+function australiaPillarPage() {
+  const path = `/study-in-australia/`;
+  const faqs = [
+    { q: "How much money do I need for an Australian student visa in 2026?", a: "You must show financial capacity for living costs of at least AUD 29,710 per year for a single student, plus tuition and travel. This is a minimum benchmark — actual living costs in Sydney or Melbourne are usually higher." },
+    { q: "How much is the Australian student visa fee in 2026?", a: "The subclass 500 student visa application charge rose to AUD 2,500 from 1 July 2026 (up sharply from earlier years). Additional charges apply for any dependants." },
+    { q: "How many hours can I work as a student in Australia?", a: "Up to 48 hours per fortnight during study periods, and unlimited hours during scheduled course breaks. Master's-by-research and PhD students have no work-hour limit." },
+    { q: "How long is the post-study work visa in Australia?", a: "The Temporary Graduate visa (subclass 485) gives 2 years for a bachelor's or coursework master's, and 3 years for a research master's or PhD. The longer 4–6 year extensions were removed in July 2024." },
+    { q: "What English score do I need for Australia?", a: "The student-visa minimum was raised in 2024 to around IELTS 6.0 (or an equivalent approved test); many universities ask for higher. Your test generally must be recent." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Study in Australia</p>
+<section class="hero"><div class="badges"><span class="badge">Complete guide</span><span class="badge">2026</span><span class="badge">Updated for the 2024–26 rules</span></div>
+<h1>Study in Australia 2026: The Complete Guide for International Students</h1>
+<p class="lead">Australia pairs strong universities with generous work rights and a post-study work visa — but 2024–2026 brought major changes to funds, fees, English and post-study work. This guide covers the whole journey and links the detail for each step, verified against the Department of Home Affairs.</p>
+<a class="cta" href="/tools/proof-of-funds-calculator/">▶ Calculate your Australia proof of funds (free)</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The subclass 500 student visa needs <strong>AUD 29,710/yr</strong> living-cost capacity plus tuition; the visa fee is <strong>AUD 2,500</strong> (from Jul 2026); you can work <strong>48 hours/fortnight</strong> in term; English is about <strong>IELTS 6.0</strong> minimum; and the post-study <strong>485 visa</strong> gives 2 years (bachelor/coursework master) or 3 years (research/PhD).</div>
+
+<div class="card"><h2>Why study in Australia?</h2><ul class="bcheck">
+<li><strong>Highly ranked universities</strong> (Melbourne, Sydney, UNSW, ANU, Monash, UQ…).</li>
+<li><strong>Strong work rights</strong> — 48 hours/fortnight in term, unlimited on breaks.</li>
+<li><strong>Post-study work</strong> via the 485 visa (2–3 years) to gain experience.</li>
+<li><strong>High quality of life</strong> and a large, well-supported international student community.</li>
+</ul></div>
+
+<div class="card"><h2>What it costs</h2>
+<p><strong>Tuition</strong> for international students is roughly <strong>AUD 15,000–45,000/year</strong> depending on the course. For the visa you must show <strong>living-cost capacity of AUD 29,710/year</strong> (a minimum — Sydney/Melbourne cost more), and the <strong>visa application charge is AUD 2,500</strong> from July 2026. You also need <strong>OSHC health cover</strong> for your whole stay. Estimate your budget with the <a href="/tools/cost-of-studying-abroad-calculator/">cost calculator</a> and see the <a href="/study-abroad/cost-of-studying-in-australia/">Australia cost breakdown</a>.</p></div>
+
+<div class="card"><h2>Admission, English &amp; the Genuine Student test</h2><ul class="bcheck">
+<li><strong>Apply</strong> to your university (often via an agent or directly) and receive a <strong>Confirmation of Enrolment (CoE)</strong>.</li>
+<li><strong>English:</strong> minimum around <strong>IELTS 6.0</strong> (raised in 2024); prep with <a href="/ielts-for-australia-pr/">IELTS for Australia</a>, <a href="/blog/pte-academic-vs-ielts-australia-pr-2026/">PTE vs IELTS</a>, and a <a href="/mock-test/ielts/">free mock test</a>.</li>
+<li><strong>Genuine Student (GS)</strong> requirement replaced the old GTE in March 2024 — you explain your study intent in structured statements. See the <a href="/blog/australia-genuine-student-2026/">Genuine Student guide</a>.</li>
+</ul></div>
+
+<div class="card"><h2>Working, post-study &amp; PR</h2><ul class="bcheck">
+<li><strong>During study:</strong> 48 hours/fortnight in term, unlimited on breaks (no limit for research students).</li>
+<li><strong>485 visa:</strong> 2 years (bachelor/coursework master) or 3 years (research/PhD) — the longer STEM extensions ended in July 2024.</li>
+<li><strong>PR:</strong> skilled work can lead to permanent residence via the points-tested skilled pathways. See <a href="/blog/australia-pr-international-students-points/">Australia PR points</a>.</li>
+</ul>
+<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500" target="_blank" rel="nofollow noopener">Home Affairs ↗</a>. Australian rules change frequently — confirm the current details before you apply.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
+  { label: `✅ Visa document checklist`, href: `/tools/student-visa-document-checklist/` },
+  { label: `📝 Genuine Student guide`, href: `/blog/australia-genuine-student-2026/` },
+  { label: `🇦🇺 Australia PR points`, href: `/blog/australia-pr-international-students-points/` },
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+])}`;
+  emit(path, head({ title: `Study in Australia 2026: Complete Guide (Costs, Visa, 485, PR) | ${BRAND}`, desc: `Free complete guide to studying in Australia 2026: AUD 29,710 funds, the AUD 2,500 subclass 500 visa, 48 hrs/fortnight work, Genuine Student rule, IELTS 6.0, and the 485 post-study visa. Verified vs Home Affairs.`, path, kw: "study in australia, study in australia for international students, australia student visa 2026, subclass 500, australia 485 visa, genuine student requirement, cost of studying in australia, study in australia from india", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Australia 2026: The Complete Guide for International Students", description: "Costs, the subclass 500 visa, Genuine Student rule, working, and the 485 post-study visa in Australia, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+    jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Australia", path }]),
+  ] }) + shell(inner));
+}
+australiaPillarPage();
+
+// ── Study in the USA — PILLAR hub. Facts verified vs travel.state.gov / DHS SEVP (2026). ──
+function usaPillarPage() {
+  const path = `/study-in-usa/`;
+  const faqs = [
+    { q: "How much money do I need for a US student visa (F-1)?", a: "There is no single fixed figure — you must prove you can cover the first-year cost of attendance shown on your Form I-20 (tuition plus living expenses, set by your university). Your school verifies your funds before issuing the I-20, and you show the evidence at your visa interview." },
+    { q: "What fees do I pay for an F-1 visa?", a: "The SEVIS I-901 fee is USD 350, and the visa application (MRV) fee is USD 185, on top of your university's costs. Pay the SEVIS fee before your visa interview." },
+    { q: "Can I work on an F-1 visa?", a: "Yes — up to 20 hours/week on campus during term (full-time on breaks). Off-campus work needs authorisation: CPT (usually after one academic year) during study, and OPT after graduating." },
+    { q: "How long can I work in the USA after graduating?", a: "OPT gives 12 months of work authorisation, and STEM-degree graduates can apply for a 24-month STEM OPT extension — up to 36 months total." },
+    { q: "What has changed for F-1 applicants in 2025–26?", a: "US consular screening now includes reviewing applicants' online presence, and F/M/J applicants are asked to set their social-media profiles to public. Interview-waiver rules were updated in late 2025. Always check your local US embassy's current guidance." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Study in the USA</p>
+<section class="hero"><div class="badges"><span class="badge">Complete guide</span><span class="badge">2026</span><span class="badge">Verified vs travel.state.gov</span></div>
+<h1>Study in the USA 2026: The Complete Guide for International Students</h1>
+<p class="lead">The USA has the world's largest choice of universities, strong funding and research, and the OPT work pathway. This guide walks the F-1 journey end to end — costs, the I-20, the visa, working, and OPT/STEM OPT — and links the detail for each step, verified against US government sources.</p>
+<a class="cta" href="/tools/student-visa-document-checklist/">▶ Free US visa document checklist</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The F-1 visa has no fixed fund figure — you prove your <strong>first-year cost of attendance</strong> on the <strong>Form I-20</strong>; you pay a <strong>USD 350 SEVIS fee</strong> and <strong>USD 185 visa fee</strong>; you can work <strong>20 hrs/week on campus</strong>; and after graduating you get <strong>12 months OPT</strong> (+24 months for STEM). Note the 2025 online-screening / social-media rules.</div>
+
+<div class="card"><h2>Why study in the USA?</h2><ul class="bcheck">
+<li><strong>The widest choice of universities</strong> and programmes anywhere, across every field.</li>
+<li><strong>Strong funding, research and assistantships</strong>, especially at graduate level.</li>
+<li><strong>OPT + STEM OPT</strong> — up to 3 years of post-study work for STEM graduates.</li>
+<li><strong>Flexible curricula</strong> (majors, minors, electives) and huge alumni networks.</li>
+</ul></div>
+
+<div class="card"><h2>What it costs</h2>
+<p><strong>Tuition</strong> varies widely by university (public vs private) and programme. For the visa you prove the <strong>first-year cost of attendance</strong> printed on your Form I-20 — tuition plus living, set by your school. Add the <strong>SEVIS I-901 fee (USD 350)</strong> and the <strong>MRV visa fee (USD 185)</strong>. Estimate your budget with the <a href="/tools/cost-of-studying-abroad-calculator/">cost calculator</a> and see the <a href="/study-abroad/cost-of-studying-in-usa/">USA cost breakdown</a>.</p></div>
+
+<div class="card"><h2>Admission &amp; English</h2><ul class="bcheck">
+<li><strong>Apply</strong> to SEVP-certified universities (Fall/September is the main intake; Spring/January also common).</li>
+<li><strong>English:</strong> each university sets its own requirement (TOEFL, IELTS or others). Prep with a <a href="/mock-test/toefl/">free TOEFL mock test</a>, <a href="/blog/toefl-vs-ielts-usa-universities/">TOEFL vs IELTS for the US</a>, and check <a href="/blog/ms-usa-requirements-costs/">MS in USA requirements</a>.</li>
+<li><strong>After admission</strong> the school issues your <strong>Form I-20</strong> for the visa.</li>
+</ul></div>
+
+<div class="card"><h2>The F-1 visa process</h2>
+<p>Sequence: receive the <strong>I-20</strong> → pay the <strong>SEVIS I-901 fee</strong> → complete the <strong>DS-160</strong> → book and attend the <strong>visa interview</strong> with your financial and academic documents. In 2025 US screening began reviewing applicants' online presence, and F/M/J applicants are asked to make social-media profiles public. Gather everything with the <a href="/tools/student-visa-document-checklist/">document checklist</a> and rehearse with the <a href="/#/colleges">visa-interview coach</a>.</p></div>
+
+<div class="card"><h2>Working &amp; OPT</h2><ul class="bcheck">
+<li><strong>On campus:</strong> up to 20 hours/week in term, full-time on breaks.</li>
+<li><strong>CPT:</strong> course-related work, usually after one academic year.</li>
+<li><strong>OPT:</strong> 12 months after graduation; <strong>STEM OPT</strong> adds 24 months (up to 36 total). See the <a href="/blog/usa-f1-opt-2026/">F-1 OPT &amp; STEM extension guide</a>.</li>
+</ul>
+<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against <a href="https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html" target="_blank" rel="nofollow noopener">travel.state.gov ↗</a> and DHS SEVP. US rules change — confirm the current details with your school and local US embassy before you apply.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `✅ Visa document checklist`, href: `/tools/student-visa-document-checklist/` },
+  { label: `💼 F-1 OPT & STEM extension`, href: `/blog/usa-f1-opt-2026/` },
+  { label: `🎓 MS in USA requirements`, href: `/blog/ms-usa-requirements-costs/` },
+  { label: `💵 Cost of studying in the USA`, href: `/study-abroad/cost-of-studying-in-usa/` },
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+])}`;
+  emit(path, head({ title: `Study in the USA 2026: Complete F-1 Guide (I-20, Visa, OPT) | ${BRAND}`, desc: `Free complete guide to studying in the USA 2026: F-1 proof of funds (I-20 cost of attendance), SEVIS $350 + $185 visa fees, on-campus work, CPT, and OPT + 24-month STEM extension. Verified vs US gov sources.`, path, kw: "study in usa, study in usa for international students, f1 visa 2026, form i-20, sevis fee, opt stem extension, cost of studying in usa, study in usa from india, us student visa process", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in the USA 2026: The Complete Guide for International Students", description: "F-1 costs, the I-20, the visa process, working, and OPT/STEM OPT in the USA, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+    jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in the USA", path }]),
+  ] }) + shell(inner));
+}
+usaPillarPage();
+
+// ── Student-Visa Document Checklist — free interactive tool. Pick a country →
+// tick off the documents you need, print/save. Targets "student visa checklist"
+// (GSC pos ~23, real impressions). Document lists are the standard, stable
+// requirements per destination (not volatile figures). ──
+function visaChecklistPage() {
+  const path = `/tools/student-visa-document-checklist/`;
+  const CORE = [
+    "Valid passport (usually valid 6+ months beyond your stay)",
+    "University offer / admission letter",
+    "Proof of funds (bank statements, loan sanction, or the country's specific vehicle)",
+    "English test scorecard (IELTS / TOEFL / PTE) — if required",
+    "Academic transcripts, degree/marksheets and certificates",
+    "Passport-size photographs (to the country's spec)",
+    "Statement of Purpose (SOP) / study plan",
+    "Completed visa application form + visa fee payment",
+  ];
+  const COUNTRIES = [
+    { id: "uk", flag: "🇬🇧", name: "United Kingdom", extra: ["CAS (Confirmation of Acceptance for Studies) from your university", "Financial evidence held for 28 consecutive days before applying", "Tuberculosis (TB) test certificate (required from India and many countries)", "Immigration Health Surcharge (IHS) paid", "ATAS certificate (only for certain science/technology postgraduate courses)", "Parental consent + birth certificate if under 18"], link: "/study-in-uk/" },
+    { id: "canada", flag: "🇨🇦", name: "Canada", extra: ["Letter of Acceptance from a Designated Learning Institution (DLI)", "Provincial Attestation Letter (PAL) — if required for your category", "Proof of funds (commonly a GIC) + first-year tuition", "Upfront medical exam (from a panel physician)", "Biometrics (fingerprints + photo)", "Custodianship declaration if a minor"], link: "/study-in-canada/" },
+    { id: "australia", flag: "🇦🇺", name: "Australia", extra: ["Confirmation of Enrolment (CoE) from your provider", "Genuine Student (GS) statement", "Overseas Student Health Cover (OSHC) for your full stay", "Evidence of financial capacity", "Health examination (if requested)"], link: "/study-in-australia/" },
+    { id: "usa", flag: "🇺🇸", name: "USA (F-1)", extra: ["Form I-20 from an SEVP-certified school", "SEVIS I-901 fee payment receipt", "DS-160 confirmation page", "Visa interview appointment (at the US embassy/consulate)", "Financial documents proving cost of attendance"], link: "/study-in-usa/" },
+    { id: "germany", flag: "🇩🇪", name: "Germany", extra: ["University admission letter (Zulassungsbescheid)", "Blocked account (Sperrkonto) confirmation — about EUR 11,904", "APS certificate (required for Indian students)", "Health insurance", "Proof of language (German or English, per course)"], link: "/study-in-germany/" },
+    { id: "ireland", flag: "🇮🇪", name: "Ireland", extra: ["Letter of Acceptance from the institution", "Proof of funds (about EUR 10,000)", "Private medical insurance", "Evidence tuition fees are paid"], link: "/study-abroad-funding-facts-2026/" },
+  ];
+  const opts = COUNTRIES.map((c) => `<option value="${c.id}">${c.flag} ${esc(c.name)}</option>`).join("");
+  const faqs = [
+    { q: "What documents do I need for a student visa?", a: "Every country wants the core set: a valid passport, your university offer/admission letter, proof of funds, an English test score (if required), academic transcripts, photos, an SOP, and the completed visa form with fee. On top of that each country adds its own — for example a CAS and TB test for the UK, a Letter of Acceptance + proof of funds (GIC) for Canada, a Form I-20 + SEVIS fee for the USA, a blocked account for Germany, and a Confirmation of Enrolment + OSHC health cover for Australia. Pick your country above for the full list." },
+    { q: "When should I start collecting documents?", a: "Start 3–6 months before your intake. Some items take time — the UK's 28-day financial-holding rule, Canada's medical exam and biometrics, Germany's APS certificate and blocked account, and the USA's SEVIS fee and visa-interview slot all need lead time. Build your checklist early and track each item." },
+    { q: "Can I use an education loan as proof of funds?", a: "Usually yes — a loan sanction letter is widely accepted as proof of funds, and loans can fund a blocked account or GIC. Confirm your specific country's rule and see the education-loan guide." },
+  ];
+  const tool = `
+<div class="card">
+  <h2>✅ Build your checklist</h2>
+  <p class="note">Pick your destination, tick items as you gather them, and print or save this page. Always cross-check the exact list on the official visa page for your country.</p>
+  <label style="display:block;margin:8px 0">Destination
+    <select id="vc_country" style="width:100%;max-width:320px;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px">${opts}</select>
+  </label>
+  <div id="vcList" style="margin-top:12px"></div>
+  <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+    <button id="vc_print" class="cta" type="button" style="border:0;cursor:pointer">🖨 Print / save checklist</button>
+    <span id="vc_progress" style="align-self:center;color:var(--muted);font-size:14px"></span>
+  </div>
+</div>
+<script>
+(function(){
+  var DATA=${JSON.stringify(COUNTRIES.map((c) => ({ id: c.id, name: c.flag + " " + c.name, items: CORE.concat(c.extra), link: c.link })))};
+  var CORE_N=${CORE.length};
+  function byId(id){return document.getElementById(id);}
+  function esc(s){return String(s).replace(/[&<>]/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[m];});}
+  function find(id){for(var i=0;i<DATA.length;i++){if(DATA[i].id===id)return DATA[i];}return DATA[0];}
+  function render(){
+    var c=find((byId("vc_country")||{}).value);
+    var html="<h3 style=\\"margin:0 0 8px\\">"+esc(c.name)+" — student visa documents</h3><ul style=\\"list-style:none;padding:0;margin:0\\">";
+    c.items.forEach(function(it,i){
+      var tag=i<CORE_N?"Core":"Country-specific";
+      html+="<li style=\\"display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)\\">"
+        +"<input type=\\"checkbox\\" class=\\"vc_chk\\" id=\\"vc_"+i+"\\" style=\\"margin-top:3px;width:18px;height:18px;flex:0 0 auto\\"/>"
+        +"<label for=\\"vc_"+i+"\\" style=\\"cursor:pointer\\"><span style=\\"font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em\\">"+tag+"</span><br>"+esc(it)+"</label></li>";
+    });
+    html+="</ul>";
+    if(c.link) html+="<p class=\\"note\\" style=\\"margin-top:10px\\">Full step-by-step: <a href=\\""+c.link+"\\">"+esc(c.name)+" guide</a>.</p>";
+    var out=byId("vcList"); if(out){out.innerHTML=html; wire();}
+  }
+  function wire(){
+    var chks=document.querySelectorAll(".vc_chk");
+    function upd(){var done=0;chks.forEach(function(x){if(x.checked)done++;});var p=byId("vc_progress");if(p)p.textContent=done+" / "+chks.length+" ready";}
+    chks.forEach(function(x){x.addEventListener("change",upd);}); upd();
+  }
+  var sel=byId("vc_country"); if(sel) sel.addEventListener("change",render);
+  var pb=byId("vc_print"); if(pb) pb.addEventListener("click",function(){window.print();});
+  render();
+})();
+</script>`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › Student Visa Document Checklist</p>
+<section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">Printable</span><span class="badge">6 countries</span></div>
+<h1>Student Visa Document Checklist (2026)</h1>
+<p class="lead">A free, printable student-visa document checklist for the UK, Canada, Australia, USA, Germany and Ireland — the core documents everyone needs plus each country's specific extras. Tick items off as you gather them.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Every student visa needs the core set — passport, admission letter, proof of funds, English score, transcripts, photos, SOP, and the visa form + fee — plus country-specific documents: UK (CAS + TB test), Canada (Letter of Acceptance + GIC + PAL), USA (Form I-20 + SEVIS fee), Germany (blocked account + APS), Australia (CoE + OSHC). Pick your country below for the full checklist.</div>
+${tool}
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
+  { label: `🏦 Education loan guide`, href: `/study-abroad-education-loan/` },
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+  { label: `🎤 Visa interview coach`, href: `/#/colleges` },
+])}`;
+  emit(path, head({
+    title: `Student Visa Document Checklist 2026 (Free, Printable) | ${BRAND}`,
+    desc: `Free printable student-visa document checklist for the UK, Canada, Australia, USA, Germany & Ireland — core documents plus each country's specific requirements. Tick off as you go.`,
+    path,
+    kw: "student visa checklist, student visa document checklist, documents required for student visa, student visa requirements, first-time student visa application checklist, uk canada usa student visa documents",
+    jsonLdBlocks: [
+      jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "Student Visa Document Checklist", applicationCategory: "EducationalApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path, publisher: PUBLISHER }),
+      faqJsonLd(faqs),
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "Student Visa Document Checklist", path }]),
+    ],
+  }) + shell(inner));
+}
+visaChecklistPage();
+
+// ── Canada Express Entry CRS calculator — free tool. Uses the OFFICIAL IRCC
+// point grid (single applicant, no spouse) for the core human-capital factors +
+// additional points. Skill-transferability and spouse factors are intentionally
+// left out (they need many extra inputs) — the page says so and links the official
+// tool. Verified vs canada.ca/express-entry (Jul 2026; job-offer points removed Mar 2025). ──
+function crsCalculatorPage() {
+  const path = `/tools/canada-express-entry-crs-calculator/`;
+  const OFFICIAL = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score.html";
+  const faqs = [
+    { q: "What CRS score do I need for Canada PR?", a: "It varies by draw — recent Express Entry cut-offs for general draws have often been in the roughly 480–540 range, while category-based and PNP draws differ. A provincial nomination adds 600 points and effectively guarantees an invitation. Calculate your baseline above, then check current draw cut-offs on IRCC." },
+    { q: "How is the CRS score calculated?", a: "Out of 1,200: up to 500 for core human capital (age, education, language, Canadian work experience), up to 100 for skill transferability, and up to 600 additional (a provincial nomination is 600; French, a sibling in Canada, and Canadian study add more). This calculator covers the core factors plus the common additional points for a single applicant." },
+    { q: "Which IELTS do I need for Express Entry?", a: "Express Entry uses IELTS General Training (not Academic), converted to a CLB level per ability. Roughly, CLB 9 needs about Listening 8.0 / Reading 7.0 / Writing 7.0 / Speaking 7.0; CLB 7 needs about 6.0 in each. Higher CLB adds a lot of points, so language is often the fastest lever." },
+    { q: "Does a job offer still add CRS points?", a: "No — IRCC removed points for a job offer in March 2025. A provincial nomination (+600) is now the main way to add a large block of points." },
+  ];
+  const eduOpts = [["", "Select…"], ["0", "Less than high school"], ["30", "High school"], ["90", "One-year diploma"], ["98", "Two-year diploma"], ["120", "Bachelor's / 3+ year degree"], ["128", "Two or more credentials (one 3+ yrs)"], ["135", "Master's / professional degree"], ["150", "Doctoral (PhD)"]].map(([v, l]) => `<option value="${v}">${l}</option>`).join("");
+  const workOpts = [["0", "None"], ["40", "1 year"], ["53", "2 years"], ["64", "3 years"], ["72", "4 years"], ["80", "5+ years"]].map(([v, l]) => `<option value="${v}">${l}</option>`).join("");
+  const tool = `
+<div class="card">
+  <h2>🍁 Estimate your CRS score (single applicant)</h2>
+  <p class="note">Uses IRCC's official point grid. Covers core factors + common additional points; skill-transferability and spouse factors aren't included — for your exact score use the <a href="${OFFICIAL}" target="_blank" rel="nofollow noopener">official IRCC calculator ↗</a>.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:10px 0">
+    <label>Age<input id="crs_age" type="number" inputmode="numeric" min="17" max="60" placeholder="e.g. 26" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Highest education<select id="crs_edu" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px">${eduOpts}</select></label>
+    <label>Canadian work experience<select id="crs_work" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px">${workOpts}</select></label>
+  </div>
+  <div style="margin:6px 0 2px;font-weight:600;font-size:14px">IELTS (General Training) band per skill</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin:4px 0">
+    <label>Listening<input id="crs_l" type="number" step="0.5" min="0" max="9" placeholder="e.g. 8.0" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Reading<input id="crs_r" type="number" step="0.5" min="0" max="9" placeholder="e.g. 7.0" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Writing<input id="crs_w" type="number" step="0.5" min="0" max="9" placeholder="e.g. 7.0" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Speaking<input id="crs_s" type="number" step="0.5" min="0" max="9" placeholder="e.g. 7.0" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <div style="display:flex;gap:16px;flex-wrap:wrap;margin:8px 0">
+    <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="crs_pnp" style="width:18px;height:18px"/> Provincial nomination (+600)</label>
+    <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="crs_study" style="width:18px;height:18px"/> Canadian post-secondary study (+30)</label>
+    <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="crs_sib" style="width:18px;height:18px"/> Sibling in Canada (+15)</label>
+  </div>
+  <button id="crs_btn" class="cta" type="button" style="border:0;cursor:pointer">Calculate my CRS →</button>
+  <div id="crsOut" style="margin-top:12px"></div>
+</div>
+<script>
+(function(){
+  function byId(id){return document.getElementById(id);}
+  function n(id){var v=parseFloat((byId(id)||{}).value);return isNaN(v)?0:v;}
+  // Age -> points (single applicant)
+  var AGE={17:0,18:99,19:105,30:105,31:99,32:94,33:88,34:83,35:77,36:72,37:66,38:61,39:55,40:50,41:39,42:28,43:17,44:6};
+  function agePts(a){a=Math.floor(a);if(a<=17)return 0;if(a>=20&&a<=29)return 110;if(a>=45)return 0;return AGE[a]!==undefined?AGE[a]:0;}
+  // IELTS GT band -> CLB, per ability (descending thresholds)
+  var MAP={
+    l:[[8.5,10],[8.0,9],[7.5,8],[6.0,7],[5.5,6],[5.0,5],[4.5,4]],
+    r:[[8.0,10],[7.0,9],[6.5,8],[6.0,7],[5.0,6],[4.0,5],[3.5,4]],
+    w:[[7.5,10],[7.0,9],[6.5,8],[6.0,7],[5.5,6],[5.0,5],[4.0,4]],
+    s:[[7.5,10],[7.0,9],[6.5,8],[6.0,7],[5.5,6],[5.0,5],[4.0,4]]
+  };
+  var CLBPTS={10:34,9:31,8:23,7:17,6:9,5:6,4:6};
+  function clb(ab,band){var t=MAP[ab];for(var i=0;i<t.length;i++){if(band>=t[i][0])return t[i][1];}return 0;}
+  function langPts(){var abil=[["l","crs_l"],["r","crs_r"],["w","crs_w"],["s","crs_s"]];var total=0,minClb=99;
+    abil.forEach(function(x){var c=clb(x[0],n(x[1]));minClb=Math.min(minClb,c);total+=(CLBPTS[c]||0);});
+    return {pts:total,minClb:minClb===99?0:minClb};}
+  function calc(){
+    var age=agePts(n("crs_age"));
+    var edu=parseInt((byId("crs_edu")||{}).value||"0",10)||0;
+    var work=parseInt((byId("crs_work")||{}).value||"0",10)||0;
+    var L=langPts();
+    var core=age+edu+work+L.pts;
+    if(core>500)core=500;
+    var add=0;
+    if(byId("crs_pnp").checked)add+=600;
+    if(byId("crs_study").checked)add+=30;
+    if(byId("crs_sib").checked)add+=15;
+    var total=core+add;
+    var out=byId("crsOut");if(!out)return;
+    out.innerHTML='<div class="callout money"><span class="ic">🍁</span><div>'
+      +'<strong>Estimated CRS: '+total+' / 1200</strong><br>'
+      +'Age '+age+' · Education '+edu+' · Language '+L.pts+' (min CLB '+L.minClb+') · Canadian work '+work
+      +(add?' · Additional '+add:'')+'<br>'
+      +'<span style="color:var(--muted);font-size:13px">Baseline for a single applicant — <strong>skill-transferability (up to +100)</strong> and spouse factors are not included, so your official score may be higher. Check current draw cut-offs and your exact score on the <a href="'+"${OFFICIAL}"+'" target="_blank" rel="nofollow noopener">official IRCC calculator ↗</a>.</span></div></div>';
+  }
+  var b=byId("crs_btn");if(b)b.addEventListener("click",calc);
+})();
+</script>`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › Canada CRS Calculator</p>
+<section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">Official IRCC grid</span><span class="badge">2026</span></div>
+<h1>Canada Express Entry CRS Score Calculator (2026)</h1>
+<p class="lead">Estimate your Comprehensive Ranking System (CRS) score for Canada's Express Entry — age, education, IELTS/language, Canadian work experience and additional points — using IRCC's official point grid. Free and instant.</p>
+<a class="cta" href="/blog/canada-pr-express-entry-basics/">▶ How Express Entry works</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Your CRS score (out of 1,200) comes from age, education, language (IELTS→CLB), and work experience, plus additional points — a <strong>provincial nomination adds 600</strong>. Job-offer points were removed in March 2025. Enter your details below for a baseline, then confirm on IRCC's official tool.</div>
+${tool}
+<div class="card"><h2>How to raise your CRS score</h2><ul class="bcheck">
+<li><strong>Language is the fastest lever</strong> — moving from CLB 7 to CLB 9 (about IELTS 8/7/7/7) adds a large block of points across all four abilities.</li>
+<li><strong>A provincial nomination (+600)</strong> effectively guarantees an invitation — worth exploring if your baseline is short.</li>
+<li><strong>Canadian study or work experience</strong> adds points and can qualify you for the Canadian Experience Class.</li>
+<li><strong>French</strong> (even as a second language at CLB 7+) adds up to 50 points.</li>
+</ul>
+<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against IRCC's official CRS criteria. Point values change — confirm your exact score and current draw cut-offs on the <a href="${OFFICIAL}" target="_blank" rel="nofollow noopener">official IRCC calculator ↗</a>.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🍁 Express Entry basics`, href: `/blog/canada-pr-express-entry-basics/` },
+  { label: `🇨🇦 Study in Canada guide`, href: `/study-in-canada/` },
+  { label: `🎯 Free IELTS mock test`, href: `/mock-test/ielts/` },
+  { label: `💼 Canada PGWP guide`, href: `/blog/canada-pgwp-2026-guide/` },
+])}`;
+  emit(path, head({ title: `Canada CRS Score Calculator 2026 (Express Entry) — Free | ${BRAND}`, desc: `Free Canada Express Entry CRS calculator using IRCC's official point grid: age, education, IELTS/CLB language, Canadian work experience + additional points. Estimate your PR score instantly.`, path, kw: "crs calculator, express entry crs calculator, canada pr points calculator, crs score calculator 2026, express entry points, canada immigration points calculator, ielts clb crs", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "Canada Express Entry CRS Calculator", applicationCategory: "EducationalApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path, publisher: PUBLISHER }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "Canada CRS Calculator", path }]),
+  ] }) + shell(inner));
+}
+crsCalculatorPage();
+
+// ── Cheapest countries to study abroad 2026 — data study / linkable asset.
+// Ranks top destinations by indicative total first-year cost (public-university
+// tuition + the country's official living-cost figure). Funds figures are the
+// verified official ones; tuition + USD conversions are indicative ranges. ──
+function cheapestCountriesPage() {
+  const path = `/cheapest-countries-to-study-abroad-2026/`;
+  const th = `text-align:left;padding:10px 12px;border-bottom:2px solid var(--line);font-weight:700`;
+  const td = `padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top`;
+  // rank, country, public tuition (indicative/yr), official living/funds, indicative total USD/yr, note
+  const rows = [
+    ["1", "🇩🇪 Germany", "Free–€1,500 (public)", "€11,904 blocked account", "≈ $13,000–15,000", "Tuition-free public universities make it the cheapest by far; you mainly fund living costs."],
+    ["2", "🇮🇪 Ireland", "€10,000–25,000", "€10,000 proof of funds", "≈ $23,000–38,000", "Lower living costs outside Dublin; strong tech/pharma job market."],
+    ["3", "🇨🇦 Canada", "CAD 15,000–40,000", "CAD 20,635 + tuition (GIC)", "≈ $26,000–46,000", "Public tuition is moderate; the GIC is returned to you. Strong study-to-PR path."],
+    ["4", "🇦🇺 Australia", "AUD 15,000–45,000", "AUD 29,710 living capacity", "≈ $29,000–50,000", "Higher living-cost benchmark; strong graduate work rights."],
+    ["5", "🇬🇧 UK", "£11,400–38,000", "£1,171–1,529/mo maintenance", "≈ $27,000–65,000", "One-year master's shortens total spend even though yearly cost is high."],
+    ["6", "🇺🇸 USA", "$20,000–55,000+", "First-year cost of attendance", "≈ $35,000–75,000", "Widest range; assistantships and scholarships can cut the net cost sharply."],
+  ];
+  const body = rows.map((r) => `<tr><td style="${td}"><strong>${r[0]}</strong></td><td style="${td}"><strong>${r[1]}</strong></td><td style="${td}">${r[2]}</td><td style="${td}">${r[3]}</td><td style="${td}"><strong>${r[4]}</strong></td><td style="${td}">${r[5]}</td></tr>`).join("");
+  const faqs = [
+    { q: "Which is the cheapest country to study abroad in 2026?", a: "Germany is the cheapest of the major destinations because public universities charge little or no tuition — you mainly need to cover living costs (about €11,904/year in a blocked account). Ireland and Canada are the next most affordable for many students. The USA and Australia tend to be the most expensive on a total-cost basis, though scholarships and assistantships can change that." },
+    { q: "How was this ranking calculated?", a: "By indicative total first-year cost = typical public-university tuition + the country's official living-cost/proof-of-funds figure, converted to approximate US dollars. The living-cost and proof-of-funds figures are the official government amounts (verified against each authority); tuition ranges and USD conversions are indicative and vary by university, city and exchange rate." },
+    { q: "Can scholarships or loans make an expensive country affordable?", a: "Yes. Scholarships (e.g. DAAD in Germany, university awards in the UK/USA), graduate assistantships in the USA, and education loans can substantially cut the net cost — sometimes making a 'pricey' country cheaper than a 'cheap' one for a given student. Model your own numbers with the cost and loan calculators." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Cheapest Countries 2026</p>
+<section class="hero"><div class="badges"><span class="badge">Free data study</span><span class="badge">2026</span><span class="badge">Cite freely</span></div>
+<h1>Cheapest Countries to Study Abroad in 2026 (Ranked by Total Cost)</h1>
+<p class="lead">A free, citable ranking of the top study destinations by indicative total first-year cost — public-university tuition plus each country's official living-cost requirement. Germany comes out cheapest; the USA the most expensive.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Ranked cheapest to most expensive by total first-year cost (2026): <strong>1. Germany (≈ $13–15k)</strong>, 2. Ireland (≈ $23–38k), 3. Canada (≈ $26–46k), 4. Australia (≈ $29–50k), 5. UK (≈ $27–65k), 6. USA (≈ $35–75k). Germany wins because public-university tuition is free — you mainly fund living costs.</div>
+
+<div class="card"><h2>Cheapest study-abroad destinations, ranked (2026)</h2>
+<table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="${th}">#</th><th style="${th}">Country</th><th style="${th}">Public tuition / yr</th><th style="${th}">Official living / funds</th><th style="${th}">Indicative total / yr</th><th style="${th}">Notes</th></tr></thead><tbody>${body}</tbody></table>
+<p class="note">Totals are indicative (tuition ranges + official living-cost figure, converted to approximate USD) and vary by university, city and exchange rate. Living-cost/proof-of-funds figures are the official government amounts — see the verified <a href="/study-abroad-funding-facts-2026/">funding facts 2026</a>.</p></div>
+
+<div class="card"><h2>How to bring the cost down further</h2><ul class="bcheck">
+<li><strong>Pick tuition-free or low-tuition public universities</strong> (Germany, and public options in Ireland/Canada).</li>
+<li><strong>Apply for scholarships</strong> early — <a href="/fully-funded-scholarships/">fully-funded scholarships</a> and country awards.</li>
+<li><strong>Use an education loan wisely</strong> — pay interest during study; see the <a href="/study-abroad-education-loan/">education-loan guide</a> and <a href="/tools/education-loan-emi-calculator/">EMI calculator</a>.</li>
+<li><strong>Work part-time</strong> within your visa's limit to offset living costs.</li>
+</ul></div>
+
+<div class="card"><h2>Methodology &amp; sources</h2><p><strong>Last verified: ${esc(BUILD_DATE)}.</strong> Ranking = indicative total first-year cost (typical public-university tuition + the official living-cost / proof-of-funds figure), converted to approximate US dollars. Living-cost and proof-of-funds figures are the official government amounts, verified against the German Federal Foreign Office, IRCC, UKVI, the Australian Department of Home Affairs, the Irish Immigration Service and the US Department of State (linked in the <a href="/study-abroad-funding-facts-2026/">funding facts</a>). Tuition ranges and USD conversions are indicative and change with exchange rates and by university. This is a free reference, not financial advice — confirm current figures before you rely on them.</p>
+<p class="note"><strong>Cite this study:</strong> LandingPrep (${esc(BUILD_DATE.slice(0, 4))}). <em>Cheapest Countries to Study Abroad in 2026 (Ranked by Total Cost).</em> Retrieved from ${ORIGIN}${path}</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+  { label: `🧮 Cost of studying abroad`, href: `/tools/cost-of-studying-abroad-calculator/` },
+  { label: `🇩🇪 Study in Germany (cheapest)`, href: `/study-in-germany/` },
+  { label: `💸 Fully-funded scholarships`, href: `/fully-funded-scholarships/` },
+  { label: `🏦 Education loan guide`, href: `/study-abroad-education-loan/` },
+])}`;
+  emit(path, head({ title: `Cheapest Countries to Study Abroad 2026 (Ranked by Total Cost) | ${BRAND}`, desc: `Free 2026 data study ranking the cheapest countries to study abroad by total first-year cost (tuition + official living funds): Germany, Ireland, Canada, Australia, UK, USA. Citable reference.`, path, kw: "cheapest countries to study abroad, cheapest country to study abroad 2026, affordable study abroad destinations, study abroad cost by country, cheapest place to study masters abroad, low cost study abroad", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "Dataset", name: "Cheapest Countries to Study Abroad 2026", description: "Top study-abroad destinations ranked by indicative total first-year cost (public tuition + official living-cost figure), 2026.", isAccessibleForFree: true, creator: PUBLISHER, publisher: PUBLISHER, url: ORIGIN + path, license: "https://creativecommons.org/licenses/by/4.0/", dateModified: BUILD_DATE, temporalCoverage: "2026", spatialCoverage: ["Germany", "Ireland", "Canada", "Australia", "United Kingdom", "United States"], variableMeasured: ["Public-university tuition (indicative)", "Official living-cost / proof-of-funds", "Indicative total first-year cost"], creditText: "LandingPrep — Cheapest Countries to Study Abroad 2026" }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Cheapest Countries 2026", path }]),
+  ] }) + shell(inner));
+}
+cheapestCountriesPage();
 fundingFactsPage();
 (() => {
   const byCountry = {};

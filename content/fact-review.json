@@ -114,6 +114,70 @@
         "/study-abroad-funding-facts-2026/"
       ],
       "source": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students"
+    },
+    {
+      "id": "uk-work-dependants",
+      "claim": "UK student work hours + dependant rule",
+      "value": "20 hrs/week in term; taught-master s cannot bring dependants (since Jan 2024)",
+      "pages": [
+        "/study-in-uk/"
+      ],
+      "source": "https://www.gov.uk/student-visa/work"
+    },
+    {
+      "id": "uk-fees",
+      "claim": "UK student visa fee + IHS",
+      "value": "Visa ~GBP 558; IHS ~GBP 776/yr",
+      "pages": [
+        "/study-in-uk/"
+      ],
+      "source": "https://www.gov.uk/student-visa/how-much-it-costs"
+    },
+    {
+      "id": "australia-visa-fee",
+      "claim": "Australia subclass 500 visa application charge",
+      "value": "AUD 2,500 (from 1 Jul 2026)",
+      "pages": [
+        "/study-in-australia/"
+      ],
+      "source": "https://www.studyaustralia.gov.au/en/tools-and-resources/news/student-visa-application-charge-increase"
+    },
+    {
+      "id": "australia-485",
+      "claim": "Australia Temporary Graduate (485) duration",
+      "value": "2yr bachelor/coursework master; 3yr research/PhD (long STEM extensions ended Jul 2024)",
+      "pages": [
+        "/study-in-australia/"
+      ],
+      "source": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/changes"
+    },
+    {
+      "id": "australia-english-work",
+      "claim": "Australia student English min + work cap",
+      "value": "IELTS 6.0 min (raised 2024); work 48 hrs/fortnight in term",
+      "pages": [
+        "/study-in-australia/"
+      ],
+      "source": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500"
+    },
+    {
+      "id": "usa-fees",
+      "claim": "USA F-1 SEVIS + visa fees",
+      "value": "SEVIS I-901 USD 350; MRV visa fee USD 185",
+      "pages": [
+        "/study-in-usa/",
+        "/tools/student-visa-document-checklist/"
+      ],
+      "source": "https://www.ice.gov/sevis/i901"
+    },
+    {
+      "id": "canada-crs-joboffer",
+      "claim": "Canada CRS job-offer points",
+      "value": "REMOVED Mar 2025; PNP nomination still +600",
+      "pages": [
+        "/tools/canada-express-entry-crs-calculator/"
+      ],
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html"
     }
   ]
 }
