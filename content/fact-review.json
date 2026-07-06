@@ -1,0 +1,119 @@
+{
+  "_comment": "Volatile facts that go stale silently (visa amounts, policy rules). The generated pages stamp BUILD_DATE ('verified today') on every build, which HIDES fact rot — e.g. Canada's SDS ended Nov 2024 while pages still called it active. This manifest tracks the MANUAL last-verified date per fact so tools/audit-freshness.mjs can flag when a re-check against the official source is overdue. Update lastReviewed (and any changed values) only after actually re-checking the source URLs.",
+  "lastReviewed": "2026-07-05",
+  "reviewIntervalDays": 90,
+  "facts": [
+    {
+      "id": "germany-sperrkonto",
+      "claim": "Germany blocked account (Sperrkonto) amount",
+      "value": "EUR 11,904/yr (EUR 992/mo)",
+      "pages": [
+        "/study-in-germany/",
+        "/study-abroad-funding-facts-2026/",
+        "/tools/proof-of-funds-calculator/",
+        "/blog/germany-blocked-account-2026-guide/"
+      ],
+      "source": "https://www.auswaertiges-amt.de/en/sperrkonto-388600"
+    },
+    {
+      "id": "canada-proof-of-funds",
+      "claim": "Canada study-permit living-cost proof (single applicant)",
+      "value": "CAD 20,635 + first-year tuition",
+      "pages": [
+        "/study-in-canada/",
+        "/study-abroad-funding-facts-2026/",
+        "/tools/proof-of-funds-calculator/",
+        "/blog/gic-account-canada-2026-guide/"
+      ],
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html"
+    },
+    {
+      "id": "canada-sds",
+      "claim": "Canada Student Direct Stream status",
+      "value": "ENDED 8 Nov 2024 — regular stream only",
+      "pages": [
+        "/study-in-canada/",
+        "/study-abroad-funding-facts-2026/",
+        "/blog/canada-student-visa-sds-requirements/"
+      ],
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/end-student-direct-stream-nigeria-student-express.html"
+    },
+    {
+      "id": "canada-pal",
+      "claim": "Canada study-permit cap + Provincial Attestation Letter (PAL)",
+      "value": "PAL required for most; master's/PhD at public DLIs EXEMPT from Jan 2026",
+      "pages": [
+        "/study-in-canada/",
+        "/blog/canada-study-permit-changes-2026/"
+      ],
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html"
+    },
+    {
+      "id": "canada-work-hours",
+      "claim": "Canada off-campus work limit while studying",
+      "value": "24 hours/week in term (permanent), unlimited on breaks",
+      "pages": [
+        "/study-in-canada/"
+      ],
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/work-off-campus.html"
+    },
+    {
+      "id": "canada-pgwp",
+      "claim": "Canada PGWP duration + 2024 language/field-of-study rules",
+      "value": "8mo-3yr; language test required since Nov 2024; non-degree needs eligible field of study",
+      "pages": [
+        "/study-in-canada/",
+        "/blog/canada-pgwp-2026-guide/"
+      ],
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html"
+    },
+    {
+      "id": "uk-maintenance",
+      "claim": "UK student-visa maintenance funds",
+      "value": "GBP 1,529/mo London, GBP 1,171/mo elsewhere, up to 9 months",
+      "pages": [
+        "/study-abroad-funding-facts-2026/",
+        "/tools/proof-of-funds-calculator/"
+      ],
+      "source": "https://www.gov.uk/student-visa/money"
+    },
+    {
+      "id": "uk-graduate-route",
+      "claim": "UK Graduate Route duration",
+      "value": "2yr (3yr PhD); DROPS to 18 months for applications from Jan 2027",
+      "pages": [
+        "/study-abroad-funding-facts-2026/"
+      ],
+      "source": "https://www.gov.uk/graduate-visa"
+    },
+    {
+      "id": "australia-funds",
+      "claim": "Australia student living-cost benchmark",
+      "value": "AUD 29,710/yr (indicative; assessed case-by-case)",
+      "pages": [
+        "/study-abroad-funding-facts-2026/",
+        "/tools/proof-of-funds-calculator/"
+      ],
+      "source": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500"
+    },
+    {
+      "id": "ireland-funds",
+      "claim": "Ireland student proof of funds",
+      "value": "EUR 10,000/yr",
+      "pages": [
+        "/study-abroad-funding-facts-2026/",
+        "/tools/proof-of-funds-calculator/"
+      ],
+      "source": "https://www.irishimmigration.ie/coming-to-study-in-ireland/"
+    },
+    {
+      "id": "usa-opt",
+      "claim": "USA F-1 OPT / STEM OPT duration",
+      "value": "12 months + 24 months STEM = up to 36",
+      "pages": [
+        "/study-abroad-funding-facts-2026/"
+      ],
+      "source": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students"
+    }
+  ]
+}
