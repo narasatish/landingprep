@@ -2992,6 +2992,7 @@ ${tool}
 <p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against IRCC's official CRS criteria. Point values change — confirm your exact score and current draw cut-offs on the <a href="${OFFICIAL}" target="_blank" rel="nofollow noopener">official IRCC calculator ↗</a>.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
+  { label: `📅 Latest Express Entry draws`, href: `/express-entry-draws-2026/` },
   { label: `🍁 Express Entry basics`, href: `/blog/canada-pr-express-entry-basics/` },
   { label: `🇨🇦 Study in Canada guide`, href: `/study-in-canada/` },
   { label: `🎯 Free IELTS mock test`, href: `/mock-test/ielts/` },
@@ -3004,6 +3005,75 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 crsCalculatorPage();
+
+// ── Express Entry draw tracker — timely, high-intent page. Draw data lives in
+// content/express-entry-draws.json (update after each ~bi-weekly draw). Figures
+// are exact IRCC ministerial-instruction results — never approximated. ──
+function expressEntryDrawsPage() {
+  const path = `/express-entry-draws-2026/`;
+  let data;
+  try { data = JSON.parse(readFileSync(join(ROOT, "content", "express-entry-draws.json"), "utf8").replace(/^﻿/, "")); }
+  catch (e) { console.warn("express-entry-draws load failed:", e.message); return; }
+  const draws = (data.draws || []);
+  if (!draws.length) return;
+  const fmtDate = (iso) => { const [y, m, d] = iso.split("-"); const mo = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m - 1]; return `${+d} ${mo} ${y}`; };
+  const latest = draws[0];
+  const td = `padding:9px 12px;border-bottom:1px solid var(--line)`;
+  const th = `text-align:left;padding:9px 12px;border-bottom:2px solid var(--line);font-weight:700`;
+  const rows = draws.map((d) => `<tr><td style="${td}">${fmtDate(d.date)}</td><td style="${td}">${esc(d.category)}</td><td style="${td}">${d.itas.toLocaleString()}</td><td style="${td}"><strong>${d.crs}</strong></td></tr>`).join("");
+  const cecs = draws.filter((d) => /Canadian Experience/i.test(d.category)).map((d) => d.crs);
+  const cecRange = cecs.length ? `${Math.min(...cecs)}–${Math.max(...cecs)}` : "—";
+  const src = data.source || "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html";
+  const faqs = [
+    { q: "When is the next Express Entry draw?", a: "IRCC typically holds Express Entry rounds of invitations about every two weeks, though the schedule varies. This page lists the most recent draws; for the very latest round, always check the official IRCC rounds-of-invitations page." },
+    { q: "What was the latest Express Entry draw?", a: `The most recent draw in our tracker was on ${fmtDate(latest.date)} — a ${esc(latest.category)} round that issued ${latest.itas.toLocaleString()} invitations with a CRS cut-off of ${latest.crs}. Update dates are shown on the page.` },
+    { q: "What CRS score do I need for a CEC draw in 2026?", a: `Recent Canadian Experience Class (CEC) draws in 2026 have cut off around CRS ${cecRange}. Provincial Nominee (PNP) draws are much higher (a nomination adds 600 points), while French-language draws have been the most accessible (often around CRS 400). Estimate your score with the free CRS calculator.` },
+    { q: "How has Express Entry changed in 2026?", a: "Two big shifts: (1) job-offer CRS points were removed in March 2025, and (2) IRCC has moved firmly to category-based selection — running targeted draws for CEC, PNP, French-language proficiency, healthcare, trades, physicians, and new-for-2026 categories (researchers/senior managers, transport, and skilled military recruits). Most renewed categories now require 12 months of Canadian work experience." },
+    { q: "Which Express Entry category is easiest to get invited under?", a: "In 2026, French-language proficiency draws have had the lowest CRS cut-offs (often around 400), so strong French (CLB 7+) is a major advantage. Category-based draws for in-demand occupations (healthcare, trades, physicians) can also invite lower CRS scores than general or PNP rounds." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/study-in-canada/">Study in Canada</a> › Express Entry Draws</p>
+<section class="hero"><div class="badges"><span class="badge">Live tracker</span><span class="badge">2026</span><span class="badge">IRCC data</span></div>
+<h1>Canada Express Entry Draws 2026 (Latest Rounds &amp; CRS Cut-offs)</h1>
+<p class="lead">The most recent Canada Express Entry rounds of invitations — dates, category, invitations (ITAs) issued and CRS cut-off scores — compiled from IRCC ministerial instructions. Updated as new draws are published.</p>
+<a class="cta" href="/tools/canada-express-entry-crs-calculator/">▶ Calculate your CRS score (free)</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Latest draw:</strong> ${fmtDate(latest.date)} — <strong>${esc(latest.category)}</strong>, ${latest.itas.toLocaleString()} invitations, CRS cut-off <strong>${latest.crs}</strong>. Draws run roughly every two weeks; recent CEC rounds have cut off around CRS ${cecRange}. Check IRCC for the very latest.</div>
+
+<div class="card"><h2>Recent Express Entry draws (2026)</h2>
+<table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="${th}">Date</th><th style="${th}">Category</th><th style="${th}">Invitations</th><th style="${th}">CRS cut-off</th></tr></thead><tbody>${rows}</tbody></table>
+<p class="note"><strong>Last updated: ${esc(data.lastUpdated || BUILD_DATE)}.</strong> Compiled from IRCC's <a href="${src}" target="_blank" rel="nofollow noopener">rounds of invitations ↗</a>. For the very latest round, always confirm on the official IRCC page.</p></div>
+
+<div class="card"><h2>What the 2026 numbers tell you</h2><ul class="bcheck">
+<li><strong>CEC draws</strong> have been steady around CRS ${cecRange} — the core route for candidates with Canadian work experience.</li>
+<li><strong>PNP draws</strong> show very high cut-offs because a provincial nomination adds 600 CRS points; the score reflects nominees, not the general pool.</li>
+<li><strong>French-language draws</strong> have been the most accessible (often around CRS 400) — strong French is a powerful lever.</li>
+<li><strong>Category-based selection</strong> now dominates: targeted rounds for healthcare, trades, physicians, and the new-for-2026 researchers, transport and military categories.</li>
+</ul></div>
+
+<div class="card"><h2>How to improve your CRS score</h2>
+<p>Your best levers are language (moving to CLB 9 adds a large block of points), provincial nomination (+600), Canadian study or work experience, and French. Estimate your baseline with the free <a href="/tools/canada-express-entry-crs-calculator/">Express Entry CRS calculator</a>, then read <a href="/blog/canada-pr-express-entry-basics/">how Express Entry works</a> and the full <a href="/study-in-canada/">study-in-Canada guide</a>.</p></div>
+
+<div class="card"><h2>Methodology &amp; source</h2><p>Draw dates, categories, invitation counts and CRS cut-offs are taken from IRCC's official rounds of invitations (ministerial instructions), cross-checked against immigration-news reporting, and updated as new draws are published. This is a free reference, not immigration advice — confirm the latest round and your eligibility on the official <a href="${src}" target="_blank" rel="nofollow noopener">IRCC rounds-of-invitations page ↗</a> before acting. You may cite this page with a link.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🧮 CRS score calculator`, href: `/tools/canada-express-entry-crs-calculator/` },
+  { label: `🍁 How Express Entry works`, href: `/blog/canada-pr-express-entry-basics/` },
+  { label: `🇨🇦 Study in Canada guide`, href: `/study-in-canada/` },
+  { label: `💼 Canada PGWP guide`, href: `/blog/canada-pgwp-2026-guide/` },
+])}`;
+  emit(path, head({
+    title: `Canada Express Entry Draws 2026 — Latest Rounds & CRS Cut-offs | ${BRAND}`,
+    desc: `Latest Canada Express Entry draws 2026: dates, category, invitations and CRS cut-off scores from IRCC data. Newest round ${fmtDate(latest.date)} (${esc(latest.category)}, CRS ${latest.crs}). Free CRS calculator.`,
+    path,
+    kw: "express entry draws 2026, latest express entry draw, canada pr draw, cec draw 2026, express entry cut off score, crs cut off 2026, express entry latest draw, canada invitation to apply",
+    jsonLdBlocks: [
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Canada Express Entry Draws 2026: Latest Rounds & CRS Cut-offs", description: "Recent Canada Express Entry rounds of invitations with dates, categories, ITAs and CRS cut-offs, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: data.lastUpdated || BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      faqJsonLd(faqs),
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study in Canada", path: "/study-in-canada/" }, { name: "Express Entry Draws", path }]),
+    ],
+  }) + shell(inner));
+}
+expressEntryDrawsPage();
 
 // ── Cheapest countries to study abroad 2026 — data study / linkable asset.
 // Ranks top destinations by indicative total first-year cost (public-university

@@ -36,6 +36,7 @@ console.log(`Tracked volatile facts: ${facts.length} | last manual review: ${dat
 
 if (remaining > 0) {
   console.log(`✓ Facts reviewed ${days} days ago — next review due in ${remaining} days.`);
+  checkExpressEntry();
   process.exit(0);
 }
 
@@ -45,4 +46,17 @@ for (const f of facts) {
   console.log(`      source: ${f.source}`);
 }
 console.log(`\n(Fastest path: skim each source URL, correct any changed value on the listed pages, then set lastReviewed to today.)`);
+checkExpressEntry();
 process.exit(strict ? 1 : 0);
+
+// The Express Entry draw tracker updates on a much shorter cycle (IRCC draws are
+// roughly bi-weekly). Flag it separately if its own lastUpdated is >21 days old.
+function checkExpressEntry() {
+  try {
+    const ee = JSON.parse(fs.readFileSync(path.join(ROOT, "content", "express-entry-draws.json"), "utf8"));
+    const age = Math.floor((today - new Date(ee.lastUpdated + "T00:00:00Z")) / 86400000);
+    console.log(`\n── EXPRESS ENTRY DRAW TRACKER ──`);
+    if (age > 21) console.log(`⚠ Draw tracker last updated ${age} days ago — add the newest IRCC draw(s) to content/express-entry-draws.json and bump lastUpdated. Source: ${ee.source}`);
+    else console.log(`✓ Draw tracker updated ${age} days ago (bi-weekly cadence).`);
+  } catch (e) { /* file optional */ }
+}

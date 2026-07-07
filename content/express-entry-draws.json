@@ -1,0 +1,19 @@
+{
+  "_comment": "Canada Express Entry draw tracker data. UPDATE after each new draw (roughly every 2 weeks): add the newest draw to the TOP of the draws array and bump lastUpdated. Figures compiled from IRCC ministerial instructions (rounds of invitations). Keep it current — a stale draw tracker hurts more than none.",
+  "lastUpdated": "2026-07-07",
+  "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html",
+  "draws": [
+    { "date": "2026-07-06", "category": "Provincial Nominee Program (PNP)", "itas": 534, "crs": 708 },
+    { "date": "2026-06-25", "category": "Healthcare & social services", "itas": 4000, "crs": 475 },
+    { "date": "2026-06-24", "category": "Physicians (Canadian experience)", "itas": 271, "crs": 223 },
+    { "date": "2026-06-23", "category": "Canadian Experience Class (CEC)", "itas": 4000, "crs": 516 },
+    { "date": "2026-06-22", "category": "Provincial Nominee Program (PNP)", "itas": 995, "crs": 730 },
+    { "date": "2026-05-28", "category": "French-language proficiency", "itas": 4500, "crs": 409 },
+    { "date": "2026-05-27", "category": "Canadian Experience Class (CEC)", "itas": 3000, "crs": 518 },
+    { "date": "2026-05-26", "category": "Provincial Nominee Program (PNP)", "itas": 334, "crs": 805 },
+    { "date": "2026-05-11", "category": "Provincial Nominee Program (PNP)", "itas": 380, "crs": 798 },
+    { "date": "2026-04-29", "category": "French-language proficiency", "itas": 4000, "crs": 400 },
+    { "date": "2026-04-28", "category": "Canadian Experience Class (CEC)", "itas": 2000, "crs": 514 },
+    { "date": "2026-04-27", "category": "Provincial Nominee Program (PNP)", "itas": 473, "crs": 795 }
+  ]
+}
