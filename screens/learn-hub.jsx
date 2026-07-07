@@ -25,7 +25,7 @@
       fetch(`/content/smart-notes/${exam}/${note.slug}.json`)
         .then((r) => r.json())
         .then((fullNote) => { setActive(fullNote); setLoading(false); })
-        .catch((e) => { console.log("Smart Note fetch failed:", exam, note.slug, e); setLoading(false); });
+        .catch((e) => { console.log("Smart Note fetch failed:", exam, note.slug, e); setActive(null); setLoading(false); });
     };
 
     if (active) {
@@ -39,7 +39,7 @@
 
     if (loading) return <div style={{ padding: "2rem", textAlign: "center" }}>Loading...</div>;
     if (Object.keys(catalog).length === 0) {
-      return <div style={{ padding: "2rem", textAlign: "center", color: "#666" }}>Smart Notes are coming soon.</div>;
+      return <div style={{ padding: "2rem", textAlign: "center", color: "var(--ink-2)" }}>Smart Notes are coming soon.</div>;
     }
 
     return (
@@ -53,10 +53,10 @@
                   key={note.id}
                   className="tile"
                   onClick={() => openNote(exam, note)}
-                  style={{ padding: "1rem", textAlign: "left", border: "1px solid #ddd", borderRadius: "8px", backgroundColor: "#f9f9f9", cursor: "pointer" }}
+                  style={{ padding: "1rem", textAlign: "left", border: "1px solid var(--line)", borderRadius: "var(--r-lg)", backgroundColor: "var(--surface)", color: "var(--ink)", cursor: "pointer" }}
                 >
                   <strong>{note.title}</strong>
-                  <div style={{ fontSize: "0.9rem", color: "#666", marginTop: "0.5rem" }}>
+                  <div style={{ fontSize: "0.9rem", color: "var(--ink-2)", marginTop: "0.5rem" }}>
                     {note.section} · {note.estMinutes} min
                   </div>
                 </button>

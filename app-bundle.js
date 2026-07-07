@@ -11986,6 +11986,7 @@ Keep it short and encouraging. If they spoke English, gently nudge them to try $
         setLoading(false);
       }).catch((e) => {
         console.log("Smart Note fetch failed:", exam, note.slug, e);
+        setActive(null);
         setLoading(false);
       });
     };
@@ -11994,7 +11995,7 @@ Keep it short and encouraging. If they spoke English, gently nudge them to try $
     }
     if (loading) return /* @__PURE__ */ React.createElement("div", { style: { padding: "2rem", textAlign: "center" } }, "Loading...");
     if (Object.keys(catalog).length === 0) {
-      return /* @__PURE__ */ React.createElement("div", { style: { padding: "2rem", textAlign: "center", color: "#666" } }, "Smart Notes are coming soon.");
+      return /* @__PURE__ */ React.createElement("div", { style: { padding: "2rem", textAlign: "center", color: "var(--ink-2)" } }, "Smart Notes are coming soon.");
     }
     return /* @__PURE__ */ React.createElement("div", { className: "smartnotes-catalog" }, Object.entries(catalog).map(([exam, notes]) => /* @__PURE__ */ React.createElement("section", { key: exam, className: "smartnotes-section" }, /* @__PURE__ */ React.createElement("h2", { style: { marginTop: "2rem", marginBottom: "1rem" } }, exam.toUpperCase()), /* @__PURE__ */ React.createElement("div", { className: "grid", style: { display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1rem" } }, notes.map((note) => /* @__PURE__ */ React.createElement(
       "button",
@@ -12002,10 +12003,10 @@ Keep it short and encouraging. If they spoke English, gently nudge them to try $
         key: note.id,
         className: "tile",
         onClick: () => openNote(exam, note),
-        style: { padding: "1rem", textAlign: "left", border: "1px solid #ddd", borderRadius: "8px", backgroundColor: "#f9f9f9", cursor: "pointer" }
+        style: { padding: "1rem", textAlign: "left", border: "1px solid var(--line)", borderRadius: "var(--r-lg)", backgroundColor: "var(--surface)", color: "var(--ink)", cursor: "pointer" }
       },
       /* @__PURE__ */ React.createElement("strong", null, note.title),
-      /* @__PURE__ */ React.createElement("div", { style: { fontSize: "0.9rem", color: "#666", marginTop: "0.5rem" } }, note.section, " \xB7 ", note.estMinutes, " min")
+      /* @__PURE__ */ React.createElement("div", { style: { fontSize: "0.9rem", color: "var(--ink-2)", marginTop: "0.5rem" } }, note.section, " \xB7 ", note.estMinutes, " min")
     ))))));
   }
   function LearnHub({ onNav, exams, initialTab }) {
