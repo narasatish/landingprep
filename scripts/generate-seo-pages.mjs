@@ -10,7 +10,7 @@
 // Output: top-level folders (mock-test/, practice/, eligibility/, tools/) +
 // sitemap.xml + robots.txt at repo root.
 
-import { writeFileSync, mkdirSync, readFileSync, unlinkSync, existsSync, readdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync, unlinkSync, existsSync, readdirSync, statSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -3215,8 +3215,14 @@ function smartNotesPages() {
   const base = join(ROOT, "content", "smart-notes");
   if (!existsSync(base)) return;
   const byExam = {};
+  const manifest = {}; // Manifest of notes for the app: { exam: [{id,title,section,estMinutes,slug},...] }
   for (const exam of readdirSync(base)) {
-    const ed = join(base, exam); const notes = [];
+    // GUARD: skip non-directories (e.g., index.json)
+    const ed = join(base, exam);
+    if (!statSync(ed).isDirectory()) continue;
+
+    const notes = [];
+    const examNotes = []; // For manifest
     for (const f of readdirSync(ed)) {
       if (!f.endsWith(".json")) continue;
       let n; try { n = JSON.parse(readFileSync(join(ed, f), "utf8").replace(/^﻿/, "")); } catch (e) { console.warn("smart-note skip", f, e.message); continue; }
@@ -3238,8 +3244,17 @@ ${relatedGrid([{ label: `🎯 Free ${exam.toUpperCase()} mock test`, href: `/moc
           breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${exam.toUpperCase()} Smart Notes`, path: `/learn/${exam}/` }, { name: n.title, path }]),
         ] }) + shell(inner));
       notes.push({ path, title: n.title, summary: n.summary, mins: n.estMinutes });
+      examNotes.push({ id: n.id, title: n.title, section: n.section, estMinutes: n.estMinutes, slug });
     }
-    if (notes.length) byExam[exam] = notes;
+    if (notes.length) {
+      byExam[exam] = notes;
+      manifest[exam] = examNotes;
+    }
+  }
+  // Write app manifest
+  if (Object.keys(manifest).length > 0) {
+    const manifestPath = join(base, "index.json");
+    writeFileSafe(manifestPath, JSON.stringify(manifest, null, 2));
   }
   for (const [exam, notes] of Object.entries(byExam)) {
     const path = `/learn/${exam}/`;
