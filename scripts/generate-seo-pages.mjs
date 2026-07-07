@@ -968,6 +968,14 @@ function blogPage(a) {
   const desc = a.metaDesc || a.excerpt.slice(0, 230);
   const kw = a.kw || (a.tag + ", study abroad, " + a.title.toLowerCase());
   const isHowTo = /^how-to-/.test(a.id) || /^how to /i.test(a.title);
+  // Time-boxed / trending posts: set a.expires = "YYYY-MM-DD". Once it passes, the
+  // post auto-noindexes + drops from the sitemap (page stays reachable, so no 404s
+  // and no broken backlinks) — stale trend content never accumulates as domain-quality
+  // drag, which is the whole point. tools/audit-expiring.mjs lists what's expiring/expired.
+  const expired = a.expires && String(a.expires) < BUILD_DATE;
+  const expiredBanner = expired
+    ? `<div class="callout" style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:12px 16px;margin:0 0 12px;color:#9a3412"><strong>⏳ Archived update.</strong> This was a time-sensitive post (expired ${esc(String(a.expires))}) and may be out of date. For current information, see our <a href="/#/blog" style="color:#9a3412;font-weight:600">latest guides</a>.</div>`
+    : "";
   const lk = { used: new Set(), count: 0, max: 6, cur: path };
   const sectionsHtml = a.sections.map((s) => renderBlogSection(s, lk)).join("\n");
   const faqs = Array.isArray(a.faqs) ? a.faqs.map((f) => Array.isArray(f) ? { q: f[0], a: f[1] } : f).filter((f) => f && f.q && f.a) : [];
@@ -985,7 +993,7 @@ function blogPage(a) {
   <p class="byline" style="font-size:13px;color:#64748b;margin:2px 0 10px">Written and reviewed by the <a href="/about/" style="color:#4338ca;font-weight:600">${BRAND} editorial team</a> · Last updated ${esc(BUILD_DATE)} · Sources are linked inline and verified against official test-maker, university and government pages.</p>
   <a class="cta" href="/#/colleges">▶ Free College Predictor &amp; study-abroad tools</a>
 </section>
-${qaBlock}
+${expiredBanner}${qaBlock}
 ${sectionsHtml}
 ${faqs.length ? faqBlock(faqs) : ""}
 ${relatedArticles(a)}
@@ -999,7 +1007,7 @@ ${relatedGrid(blogTiles(a))}`;
     jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
     ...(isHowTo ? [howToJsonLd(a)] : []),
     ...(faqs.length ? [faqJsonLd(faqs)] : []),
-  ] }) + shell(inner));
+  ] }) + shell(inner), expired ? { thin: true } : undefined);   // expired trend post → noindex + drop from sitemap
 }
 
 // ── Per-scholarship detail pages (auto-generated from scholarship-data) ─────
