@@ -1,0 +1,43 @@
+{
+  "id": "ielts-writing-task1-overview",
+  "exam": "ielts",
+  "section": "writing",
+  "title": "IELTS Writing Task 1: The Overview That Wins Band 7",
+  "estMinutes": 7,
+  "summary": "How to structure Academic Task 1 in 20 minutes — and why the overview paragraph is the single biggest lever on your score.",
+  "conceptMap": {
+    "central": "Task 1 (150+ words, 20 min)",
+    "nodes": [
+      { "label": "Introduction", "note": "Paraphrase what the chart/map/process shows — one sentence" },
+      { "label": "Overview", "note": "The 2–3 biggest trends, with NO specific numbers" },
+      { "label": "Detail 1", "note": "Group related data and give the key figures" },
+      { "label": "Detail 2", "note": "Group the rest; compare and contrast" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Paraphrase the prompt (don't copy it)",
+      "body": "Open with **one sentence** that rewrites the chart's title in your own words: what it shows, where, and over what period. Copying the prompt word-for-word is not counted toward your 150.",
+      "realExample": "Prompt: 'The graph shows electricity production by source in Germany, 2000–2020.' Paraphrase: 'The line graph illustrates how Germany generated its electricity from four sources over a twenty-year period.'",
+      "memoryHook": "Same meaning, new words. If you could copy-paste it, rewrite it." },
+    { "heading": "Write an overview — this is the paragraph that scores",
+      "body": "State the **2–3 most important patterns** in one short paragraph, with **no specific figures**. Examiners reward a clear overview under Task Achievement; without one, Band 7 is very hard to reach.",
+      "realExample": "'Overall, renewable sources rose steadily across the period, while coal fell sharply, so that by 2020 the two had almost swapped places.' No numbers — just the big picture.",
+      "memoryHook": "Overview = the view from the plane, not the street. Zoom out, no numbers." },
+    { "heading": "Select and group key features — don't describe everything",
+      "body": "Pick the standout features and **group** them into two body paragraphs (e.g. highest vs lowest, rising vs falling). Support each with a few exact figures. Describing every data point wastes words and time.",
+      "realExample": "Group by direction: paragraph 1 = the sources that grew (solar 5%→24%), paragraph 2 = the sources that shrank (coal 45%→18%). Two tidy paragraphs beat a list of ten numbers.",
+      "memoryHook": "Group, don't dump. Two buckets, a few numbers each." },
+    { "heading": "Academic vs General Training",
+      "body": "In **Academic** Task 1 you describe a visual and stay **neutral** — never give an opinion. In **General Training** Task 1 you write a **letter** (formal, semi-formal or informal) and must match the tone to who you're writing to. Both need at least **150 words** in about **20 minutes**.",
+      "realExample": "Academic: 'The proportion of adults cycling to work doubled.' General letter: 'I am writing to complain about the noise from the building work next door.' Different task, same 150-word, 20-minute budget.",
+      "memoryHook": "Academic = describe & stay neutral. General = write a letter & match the tone." }
+  ],
+  "recall": [
+    { "q": "What is the minimum word count and recommended time for IELTS Writing Task 1?", "a": "At least 150 words in about 20 minutes (leaving 40 minutes for Task 2)." },
+    { "q": "What must the overview paragraph contain — and what must it avoid?", "a": "The 2–3 most important overall trends, with no specific numbers." },
+    { "q": "Why is the overview so important?", "a": "Examiners reward a clear overview under Task Achievement; without one it is very hard to reach Band 7." },
+    { "q": "How should you organise the detail paragraphs?", "a": "Group related features (e.g. rising vs falling) into two paragraphs and support each with a few exact figures — don't describe every point." },
+    { "q": "How does Academic Task 1 differ from General Training Task 1?", "a": "Academic asks you to describe a visual neutrally with no opinion; General Training asks you to write a letter with a tone matched to the reader." }
+  ],
+  "sources": ["https://www.ielts.org/for-test-takers/how-to-prepare/ielts-writing", "https://takeielts.britishcouncil.org/take-ielts/prepare/free-ielts-practice-tests/writing"]
+}

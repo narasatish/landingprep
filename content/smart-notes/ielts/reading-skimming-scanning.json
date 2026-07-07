@@ -1,0 +1,43 @@
+{
+  "id": "ielts-reading-skimming-scanning",
+  "exam": "ielts",
+  "section": "reading",
+  "title": "IELTS Reading: Skimming and Scanning to Beat the Clock",
+  "estMinutes": 7,
+  "summary": "Two reading gears — skim for gist, scan for answers — plus how to survive 40 questions in 60 minutes with no extra transfer time.",
+  "conceptMap": {
+    "central": "Reading: 60 min · 40 Qs",
+    "nodes": [
+      { "label": "Skim first", "note": "Gist + structure of each passage in ~2 minutes" },
+      { "label": "Read questions", "note": "Know what you're hunting before you dive back in" },
+      { "label": "Scan for keywords", "note": "Find the spot fast using synonyms, not exact words" },
+      { "label": "~20 min/passage", "note": "Write answers straight on the sheet — no transfer time" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Skim vs scan — two different gears",
+      "body": "**Skimming** is reading fast for the **general idea** — titles, first lines, topic sentences. **Scanning** is hunting for **specific information** like a name, date or keyword. You use skim to map the passage, then scan to land each answer.",
+      "realExample": "Skim a paragraph and you learn 'this one is about how bees navigate.' Scan the same paragraph for '1962' and your eyes jump straight to the date without reading every word.",
+      "memoryHook": "Skim = the map. Scan = the search. Map first, search second." },
+    { "heading": "Read the questions, then hunt",
+      "body": "After a quick skim, **read the questions before re-reading the text**. Underline the keyword in each question so you know exactly what to scan for. Most question sets follow the **order of the passage**, so answers appear roughly top to bottom.",
+      "realExample": "Question: 'Which decade saw the sharpest decline?' Keyword = 'decade / decline'. You now scan only for dates and downward language, ignoring everything else.",
+      "memoryHook": "Never read the passage twice blind. Questions first, then targeted hunting." },
+    { "heading": "Answers are paraphrased — match meaning, not words",
+      "body": "The text rarely uses the **same words** as the question; it uses **synonyms**. Train yourself to match **meaning**. The word you scan for in your head may be a paraphrase of what's printed.",
+      "realExample": "Question says 'children'; the passage says 'youngsters'. Question says 'expensive'; passage says 'costly'. Same idea, different word — that swap is often the whole test.",
+      "memoryHook": "IELTS hides answers behind synonyms. Hunt the idea, not the exact word." },
+    { "heading": "Mind the clock — and there's no transfer time",
+      "body": "You have **60 minutes for 40 questions across 3 passages** — about **20 minutes each**. Unlike Listening, Reading gives you **no extra time** to copy answers, so **write them straight onto the answer sheet** as you go and don't leave blanks.",
+      "realExample": "Stuck on one question at minute 18 of a passage? Guess, mark it, and move on — an unanswered question and a wrong guess score the same, but the guess might be right.",
+      "memoryHook": "20-20-20 and write as you go. No blanks, no transfer time." }
+  ],
+  "recall": [
+    { "q": "What's the difference between skimming and scanning?", "a": "Skimming is fast reading for the general idea; scanning is hunting for specific information like a keyword, name or date." },
+    { "q": "How long is the IELTS Reading test and how many questions?", "a": "60 minutes for 40 questions, across 3 passages — roughly 20 minutes per passage." },
+    { "q": "Does Reading give you extra time to transfer your answers?", "a": "No — unlike Listening, there is no extra transfer time, so write answers straight onto the answer sheet." },
+    { "q": "Why should you read the questions before re-reading the passage?", "a": "So you know the keyword to scan for; and because answers usually follow the order of the passage." },
+    { "q": "Why won't the passage use the same words as the question?", "a": "IELTS paraphrases — answers are hidden behind synonyms, so you must match meaning, not the exact word." }
+  ],
+  "sources": ["https://www.ielts.org/for-test-takers/how-to-prepare/ielts-reading", "https://takeielts.britishcouncil.org/take-ielts/prepare/free-ielts-practice-tests/reading"]
+}
