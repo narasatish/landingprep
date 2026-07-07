@@ -2691,7 +2691,7 @@ function australiaPillarPage() {
     { q: "How much money do I need for an Australian student visa in 2026?", a: "You must show financial capacity for living costs of at least AUD 29,710 per year for a single student, plus tuition and travel. This is a minimum benchmark — actual living costs in Sydney or Melbourne are usually higher." },
     { q: "How much is the Australian student visa fee in 2026?", a: "The subclass 500 student visa application charge rose to AUD 2,500 from 1 July 2026 (up sharply from earlier years). Additional charges apply for any dependants." },
     { q: "How many hours can I work as a student in Australia?", a: "Up to 48 hours per fortnight during study periods, and unlimited hours during scheduled course breaks. Master's-by-research and PhD students have no work-hour limit." },
-    { q: "How long is the post-study work visa in Australia?", a: "The Temporary Graduate visa (subclass 485) gives 2 years for a bachelor's or coursework master's, and 3 years for a research master's or PhD. The longer 4–6 year extensions were removed in July 2024." },
+    { q: "How long is the post-study work visa in Australia?", a: "The Temporary Graduate visa (subclass 485) gives 2 years for a bachelor's or coursework master's, and longer for research degrees (a research master's or doctorate). The longer 4–6 year STEM extensions were removed in July 2024 — confirm the exact period for your qualification on the official Home Affairs page." },
     { q: "What English score do I need for Australia?", a: "The student-visa minimum was raised in 2024 to around IELTS 6.0 (or an equivalent approved test); many universities ask for higher. Your test generally must be recent." },
   ];
   const inner = `
@@ -2700,7 +2700,7 @@ function australiaPillarPage() {
 <h1>Study in Australia 2026: The Complete Guide for International Students</h1>
 <p class="lead">Australia pairs strong universities with generous work rights and a post-study work visa — but 2024–2026 brought major changes to funds, fees, English and post-study work. This guide covers the whole journey and links the detail for each step, verified against the Department of Home Affairs.</p>
 <a class="cta" href="/tools/proof-of-funds-calculator/">▶ Calculate your Australia proof of funds (free)</a></section>
-<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The subclass 500 student visa needs <strong>AUD 29,710/yr</strong> living-cost capacity plus tuition; the visa fee is <strong>AUD 2,500</strong> (from Jul 2026); you can work <strong>48 hours/fortnight</strong> in term; English is about <strong>IELTS 6.0</strong> minimum; and the post-study <strong>485 visa</strong> gives 2 years (bachelor/coursework master) or 3 years (research/PhD).</div>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The subclass 500 student visa needs <strong>AUD 29,710/yr</strong> living-cost capacity plus tuition; the visa fee is <strong>AUD 2,500</strong> (from Jul 2026); you can work <strong>48 hours/fortnight</strong> in term; English is about <strong>IELTS 6.0</strong> minimum; and the post-study <strong>485 visa</strong> gives 2 years (bachelor/coursework master) or longer for research degrees.</div>
 
 <div class="card"><h2>Why study in Australia?</h2><ul class="bcheck">
 <li><strong>Highly ranked universities</strong> (Melbourne, Sydney, UNSW, ANU, Monash, UQ…).</li>
@@ -2720,7 +2720,7 @@ function australiaPillarPage() {
 
 <div class="card"><h2>Working, post-study &amp; PR</h2><ul class="bcheck">
 <li><strong>During study:</strong> 48 hours/fortnight in term, unlimited on breaks (no limit for research students).</li>
-<li><strong>485 visa:</strong> 2 years (bachelor/coursework master) or 3 years (research/PhD) — the longer STEM extensions ended in July 2024.</li>
+<li><strong>485 visa:</strong> 2 years (bachelor/coursework master), longer for research degrees (research master's/doctorate) — the longer STEM extensions ended in July 2024.</li>
 <li><strong>PR:</strong> skilled work can lead to permanent residence via the points-tested skilled pathways. See <a href="/blog/australia-pr-international-students-points/">Australia PR points</a>.</li>
 </ul>
 <p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500" target="_blank" rel="nofollow noopener">Home Affairs ↗</a>. Australian rules change frequently — confirm the current details before you apply.</p></div>
