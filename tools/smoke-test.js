@@ -23,6 +23,8 @@ const ROUTES = [
   "/#/learn", "/#/vocabulary", "/#/languages", "/#/writing-checker", "/#/speaking-checker",
   "/#/blog", "/#/login", "/#/achievements", "/#/relocate",
   "/mock-test/ielts/", "/study-abroad-funding-facts-2026/",
+  // Smart Notes: a prerendered /learn/<exam>/<slug>/ page must render (concept map + quiz)
+  "/learn/ielts/writing-task2-structure/",
   // Colleges hub consolidation (v322): legacy tab ids must still resolve via TAB_ALIAS
   "/#/colleges/loan/Germany", "/#/colleges/sop", "/#/colleges/leaderboard", "/#/colleges/visa",
   // Exam-prep deep routes incl. the TOEFL adaptive mock list
