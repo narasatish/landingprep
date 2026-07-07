@@ -10,7 +10,7 @@
 // Output: top-level folders (mock-test/, practice/, eligibility/, tools/) +
 // sitemap.xml + robots.txt at repo root.
 
-import { writeFileSync, mkdirSync, readFileSync, unlinkSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync, unlinkSync, existsSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -3209,6 +3209,46 @@ const LANG_SEO = {
     ],
   },
 };
+
+// ── Smart Notes: prerender each note at /learn/<exam>/<slug>/ + per-exam index ──
+function smartNotesPages() {
+  const base = join(ROOT, "content", "smart-notes");
+  if (!existsSync(base)) return;
+  const byExam = {};
+  for (const exam of readdirSync(base)) {
+    const ed = join(base, exam); const notes = [];
+    for (const f of readdirSync(ed)) {
+      if (!f.endsWith(".json")) continue;
+      let n; try { n = JSON.parse(readFileSync(join(ed, f), "utf8").replace(/^﻿/, "")); } catch (e) { console.warn("smart-note skip", f, e.message); continue; }
+      const slug = n.id.replace(new RegExp("^" + exam + "-"), "");
+      const path = `/learn/${exam}/${slug}/`;
+      const faqs = (n.recall || []).map((r) => ({ q: r.q, a: r.a }));
+      const mapHtml = `<ul class="sn-map"><li><strong>${esc(n.conceptMap.central)}</strong><ul>${n.conceptMap.nodes.map((x) => `<li><strong>${esc(x.label)}</strong> — ${esc(x.note)}</li>`).join("")}</ul></li></ul>`;
+      const chunks = n.chunks.map((c) => `<div class="card"><h2>${esc(c.heading)}</h2><p>${mdInline(esc(c.body))}</p><div class="callout tip"><span class="ic">💡</span><div><strong>Real example:</strong> ${esc(c.realExample)}</div></div><div class="callout"><strong>🧠 Memory hook:</strong> ${esc(c.memoryHook)}</div></div>`).join("");
+      const inner = `<p class="crumb"><a href="/">Home</a> › <a href="/learn/${exam}/">${exam.toUpperCase()} Smart Notes</a> › ${esc(n.title)}</p>
+<section class="hero"><div class="badges"><span class="badge">Smart Note</span><span class="badge">${n.estMinutes} min</span></div><h1>${esc(n.title)}</h1><p class="lead">${esc(n.summary)}</p></section>
+<div class="card"><h2>The big picture</h2>${mapHtml}</div>${chunks}
+${faqBlock(faqs)}
+${relatedGrid([{ label: `🎯 Free ${exam.toUpperCase()} mock test`, href: `/mock-test/${exam}/` }, { label: `📚 More ${exam.toUpperCase()} Smart Notes`, href: `/learn/${exam}/` }])}`;
+      emit(path, head({ title: `${n.title} | ${BRAND}`, desc: n.summary, path,
+        kw: `${n.title.toLowerCase()}, ${exam} ${n.section} notes, ${exam} ${n.section} tips`,
+        jsonLdBlocks: [
+          jsonld({ "@context": "https://schema.org", "@type": "Article", headline: n.title, description: n.summary, author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+          faqJsonLd(faqs),
+          breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${exam.toUpperCase()} Smart Notes`, path: `/learn/${exam}/` }, { name: n.title, path }]),
+        ] }) + shell(inner));
+      notes.push({ path, title: n.title, summary: n.summary, mins: n.estMinutes });
+    }
+    if (notes.length) byExam[exam] = notes;
+  }
+  for (const [exam, notes] of Object.entries(byExam)) {
+    const path = `/learn/${exam}/`;
+    const tiles = notes.map((t) => `<a class="tile" href="${t.path}"><strong>${esc(t.title)}</strong><span class="muted"> · ${t.mins} min</span><br><span class="muted">${esc(t.summary)}</span></a>`).join("");
+    const inner = `<p class="crumb"><a href="/">Home</a> › ${exam.toUpperCase()} Smart Notes</p><section class="hero"><h1>${exam.toUpperCase()} Smart Notes — Visual, Memorable Lessons</h1><p class="lead">Short, visual lessons with concept maps, real examples and built-in spaced-repetition recall for ${exam.toUpperCase()}.</p></section><div class="card"><div class="grid">${tiles}</div></div>`;
+    emit(path, head({ title: `${exam.toUpperCase()} Smart Notes — Visual Lessons & Concept Maps | ${BRAND}`, desc: `Free ${exam.toUpperCase()} Smart Notes: visual concept maps, chunked notes, real examples and spaced-repetition recall.`, path, kw: `${exam} notes, ${exam} lessons, ${exam} concept map, ${exam} study notes`, jsonLdBlocks: [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${exam.toUpperCase()} Smart Notes`, path }])] }) + shell(inner));
+  }
+}
+
 function languageLandingPage(key) {
   const L = LANG_SEO[key];
   const path = `/${L.slug}/`;
@@ -3969,6 +4009,7 @@ ${relatedGrid([
 }
 
 Object.keys(LANG_SEO).forEach(languageLandingPage);
+smartNotesPages();
 prepLessonsPage();
 bandCheckerPage("writing");
 bandCheckerPage("speaking");
