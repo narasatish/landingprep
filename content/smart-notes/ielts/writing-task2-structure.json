@@ -1,0 +1,43 @@
+{
+  "id": "ielts-writing-task2-structure",
+  "exam": "ielts",
+  "section": "writing",
+  "title": "IELTS Writing Task 2: Essay Structure",
+  "estMinutes": 7,
+  "summary": "The 4-paragraph structure that scores Band 7+ on Task 2, and how to plan it in 5 minutes.",
+  "conceptMap": {
+    "central": "Task 2 essay (4 paragraphs)",
+    "nodes": [
+      { "label": "Introduction", "note": "Paraphrase the question + clear thesis (your position)" },
+      { "label": "Body 1", "note": "First main idea → explain → one specific example" },
+      { "label": "Body 2", "note": "Second main idea → explain → one specific example" },
+      { "label": "Conclusion", "note": "Restate your position; add no new ideas" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Introduction: paraphrase + thesis",
+      "body": "Rewrite the question in your own words (don't copy it), then state your **position** in one clear sentence. Examiners look for a thesis they can find in 5 seconds.",
+      "realExample": "Question: 'Some think exams are the best way to assess students.' Intro thesis: 'While exams measure knowledge under pressure, I believe continuous assessment gives a fairer overall picture.'",
+      "memoryHook": "PT = Paraphrase, then Thesis. Two sentences, no more." },
+    { "heading": "Body paragraphs: one idea each",
+      "body": "Each body paragraph = **one** main idea, an explanation of *why* it matters, and **one specific example**. Two focused paragraphs beat one crowded one.",
+      "realExample": "Body idea: 'Continuous assessment reduces exam anxiety.' Example: 'A 2019 UK pilot found coursework-based grading cut reported student stress by a third.'",
+      "memoryHook": "IEE: Idea → Explain → Example. Say it out loud before you write." },
+    { "heading": "Conclusion: restate, don't add",
+      "body": "Summarise your position in one or two sentences. **Never** introduce a new argument in the conclusion — it costs you Coherence marks.",
+      "realExample": "'Overall, although exams have their place, a mix of continuous assessment and exams assesses students more fairly.'",
+      "memoryHook": "A conclusion is a mirror, not a window: it reflects what you said, it doesn't open new views." },
+    { "heading": "Plan in 5 minutes",
+      "body": "Spend 5 of your 40 minutes planning: decide your position, jot one idea + example per body paragraph. Planning is the single biggest predictor of a coherent essay.",
+      "realExample": "Scribble: 'Pos: mix is fairer | B1: anxiety (UK pilot) | B2: measures different skills (creativity)'. That's a whole essay mapped.",
+      "memoryHook": "5 to plan, 30 to write, 5 to check. 5-30-5." }
+  ],
+  "recall": [
+    { "q": "How many sentences should a Task 2 introduction be, and what are they?", "a": "Two: a paraphrase of the question, then a clear thesis stating your position." },
+    { "q": "What three parts make up a good body paragraph?", "a": "One main idea, an explanation of why it matters, and one specific example (IEE)." },
+    { "q": "What must you never do in the conclusion?", "a": "Introduce a new argument or idea — only restate your position." },
+    { "q": "How should you split your 40 minutes on Task 2?", "a": "About 5 minutes planning, 30 writing, 5 checking (5-30-5)." },
+    { "q": "Why is paraphrasing the question important?", "a": "Copying the question wording scores zero for that text and signals weak vocabulary; paraphrasing shows range." }
+  ],
+  "sources": ["https://www.ielts.org/for-test-takers/how-to-prepare/ielts-writing"]
+}
