@@ -236,6 +236,27 @@
         </h1>
         <p className="muted">Choose any test below. Each loads on demand.</p>
 
+        {examId === "toefl" && (
+          <div
+            role="note"
+            style={{
+              margin: "0 0 20px",
+              padding: "12px 14px",
+              borderRadius: "var(--r-lg, 12px)",
+              border: "1px solid var(--line)",
+              background: "rgba(2, 132, 199, 0.08)",
+              color: "var(--ink)",
+              fontSize: "0.9rem",
+              lineHeight: 1.5,
+            }}
+          >
+            <strong>Heads-up:</strong> these mocks reflect the <strong>pre-2026 TOEFL</strong> (0–120 scale).
+            TOEFL iBT changed in January 2026 — it's now a 1–6 band with adaptive Reading &amp; Listening and new task types.
+            For the current format, see our{" "}
+            <a href="/learn/toefl/" style={{ color: "var(--accent)", fontWeight: 700 }}>TOEFL 2026 Smart Notes →</a>.
+          </div>
+        )}
+
         {showVariantPills && variants && (
           <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", margin: "0.75rem 0 1.25rem" }}>
             {variants.map(v => (

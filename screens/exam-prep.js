@@ -197,7 +197,29 @@
     return /* @__PURE__ */ React.createElement("div", { className: "ep-list" }, /* @__PURE__ */ React.createElement("div", { className: "ep-breadcrumb" }, /* @__PURE__ */ React.createElement("a", { onClick: (e) => {
       e.preventDefault();
       onBack();
-    }, href: "#/exam-prep" }, examLabel), " ", /* @__PURE__ */ React.createElement("span", null, "/"), " ", /* @__PURE__ */ React.createElement("span", null, pres.name)), /* @__PURE__ */ React.createElement("h1", { style: { borderLeft: `4px solid ${brand.color}`, paddingLeft: 16 } }, /* @__PURE__ */ React.createElement("span", { style: { marginRight: 10 } }, pres.icon), examLabel, " \u2014 ", pres.name), /* @__PURE__ */ React.createElement("p", { className: "muted" }, "Choose any test below. Each loads on demand."), showVariantPills && variants && /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: "0.5rem", flexWrap: "wrap", margin: "0.75rem 0 1.25rem" } }, variants.map((v) => /* @__PURE__ */ React.createElement(
+    }, href: "#/exam-prep" }, examLabel), " ", /* @__PURE__ */ React.createElement("span", null, "/"), " ", /* @__PURE__ */ React.createElement("span", null, pres.name)), /* @__PURE__ */ React.createElement("h1", { style: { borderLeft: `4px solid ${brand.color}`, paddingLeft: 16 } }, /* @__PURE__ */ React.createElement("span", { style: { marginRight: 10 } }, pres.icon), examLabel, " \u2014 ", pres.name), /* @__PURE__ */ React.createElement("p", { className: "muted" }, "Choose any test below. Each loads on demand."), examId === "toefl" && /* @__PURE__ */ React.createElement(
+      "div",
+      {
+        role: "note",
+        style: {
+          margin: "0 0 20px",
+          padding: "12px 14px",
+          borderRadius: "var(--r-lg, 12px)",
+          border: "1px solid var(--line)",
+          background: "rgba(2, 132, 199, 0.08)",
+          color: "var(--ink)",
+          fontSize: "0.9rem",
+          lineHeight: 1.5
+        }
+      },
+      /* @__PURE__ */ React.createElement("strong", null, "Heads-up:"),
+      " these mocks reflect the ",
+      /* @__PURE__ */ React.createElement("strong", null, "pre-2026 TOEFL"),
+      " (0\u2013120 scale). TOEFL iBT changed in January 2026 \u2014 it's now a 1\u20136 band with adaptive Reading & Listening and new task types. For the current format, see our",
+      " ",
+      /* @__PURE__ */ React.createElement("a", { href: "/learn/toefl/", style: { color: "var(--accent)", fontWeight: 700 } }, "TOEFL 2026 Smart Notes \u2192"),
+      "."
+    ), showVariantPills && variants && /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: "0.5rem", flexWrap: "wrap", margin: "0.75rem 0 1.25rem" } }, variants.map((v) => /* @__PURE__ */ React.createElement(
       "button",
       {
         key: v.id,
