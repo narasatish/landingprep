@@ -255,7 +255,7 @@
           "steps": [
             "**Step 1 (Dec 2025)**: Choose a college in a province that fits your field. Ontario/BC = higher competition but more opportunity. Look for colleges advertising PAL-ready programs.",
             "**Step 2 (Jan 2026)**: Check your chosen province's study permit cap status on IRCC website. If near cap, apply immediately or switch provinces.",
-            "**Step 3 (Jan\u2013Feb 2026)**: Take IELTS/TOEFL. Target 6.5+ (IELTS) or 90+ (TOEFL).",
+            "**Step 3 (Jan\u2013Feb 2026)**: Take IELTS/TOEFL. Target 6.5+ (IELTS), or the TOEFL equivalent (TOEFL now uses a 1\u20136 band; 90+ refers to the transitional 0\u2013120 many universities still list).",
             "**Step 4 (Feb\u2013Mar)**: Get admitted to the college. Ask in writing: 'Is PAL required? Will your office submit it on my behalf?'",
             "**Step 5 (Mar)**: Collect PAL from college/province. This usually takes 2\u20134 weeks.",
             "**Step 6 (Mar\u2013Apr)**: Open GIC with the CORRECT provincial amount. For Ontario/BC, that's CAD 24,000\u201326,000; for others, CAD 20,635.",
@@ -959,7 +959,7 @@
           "body": "If you're targeting an Australian student visa in 2026, here's your action plan:",
           "bullets": [
             "**NOW (Jan 2026)**: Research universities (Go8 is top-tier; others are solid too). Shortlist 3\u20134 programs. Check entry requirements.",
-            "**Jan\u2013Feb**: Take IELTS/TOEFL. Aim for 5.5\u20136.0 (IELTS) or 72\u201379 (TOEFL).",
+            "**Jan\u2013Feb**: Take IELTS/TOEFL. Aim for 5.5\u20136.0 (IELTS), or the TOEFL equivalent (TOEFL now scores 1\u20136; a comparable 0\u2013120 around 72\u201379 is shown during the transition \u2014 check your university's requirement).",
             "**Feb\u2013Mar**: Apply to universities. Prepare transcripts, cover letter, resume.",
             "**Mar\u2013Apr**: Receive LOAs (admission letters) from 1\u20133 universities. Choose one and accept.",
             "**Apr**: Open GIC with Australian bank (AUD 20,000\u201330,000) OR finalize parental savings proof + education loan (if applicable).",
@@ -8201,12 +8201,16 @@ If you speak at 100 words/minute, you'll finish Task 1 (45 seconds) with only 75
       "kw": "TOEFL 100 score, TOEFL 120, reading strategies, listening strategies, speaking TOEFL, writing TOEFL, integrated tasks, TOEFL preparation",
       "sections": [
         {
+          "h": "2026 update: the TOEFL changed",
+          "body": "Heads-up: TOEFL iBT was redesigned in January 2026. It's now under two hours, **scored on a 1\u20136 band scale** (with a comparable 0\u2013120 shown during a two-year transition), and **Reading and Listening are adaptive**. The task types are new \u2014 Complete the Words, Write an Email, Listen and Repeat and more. The strategy below still helps, and many universities still list 0\u2013120 requirements during the transition, but for the current format see our [TOEFL 2026 Smart Notes](/learn/toefl/)."
+        },
+        {
           "h": "Why TOEFL 100+ Matters",
           "body": "A TOEFL score of 100 or higher is the gateway to elite universities. Most top-50 US universities expect 100+, and UK Russell Group schools want 110+. Beyond admission, a high TOEFL score boosts visa approval odds, scholarship eligibility, and employer sponsorship confidence. Students aiming for competitive programs cannot afford below-par English proficiency scores."
         },
         {
           "h": "Understanding TOEFL Scoring",
-          "body": "The iBT (internet-based test) is scored out of 120 total:\n\n**Reading**: 0\u201330 points (14\u201356 questions, 54\u201372 minutes)\n**Listening**: 0\u201330 points (28\u201339 questions, 41\u201357 minutes)\n**Speaking**: 0\u201330 points (4 independent/integrated tasks, 17 minutes)\n**Writing**: 0\u201330 points (1 integrated + 1 academic discussion task, 50 minutes)\n\nEach section is independent; you can excel in Reading but falter in Speaking. A 100+ score typically requires 24+ in Reading/Listening and 23+ in Speaking/Writing.",
+          "body": "Note: this section describes the **legacy 0\u2013120 format** \u2014 still dual-reported during the 2026 transition, though the current primary score is a 1\u20136 band. The iBT (internet-based test) is scored out of 120 total:\n\n**Reading**: 0\u201330 points (14\u201356 questions, 54\u201372 minutes)\n**Listening**: 0\u201330 points (28\u201339 questions, 41\u201357 minutes)\n**Speaking**: 0\u201330 points (4 independent/integrated tasks, 17 minutes)\n**Writing**: 0\u201330 points (1 integrated + 1 academic discussion task, 50 minutes)\n\nEach section is independent; you can excel in Reading but falter in Speaking. A 100+ score typically requires 24+ in Reading/Listening and 23+ in Speaking/Writing.",
           "callout": {
             "type": "key",
             "text": "The 100-point threshold is not equal strength across sections. Most students hit 100 with 26/30 Reading, 25/30 Listening, 23/30 Speaking, 26/30 Writing. Balance is less critical than avoiding weak sections."
@@ -24637,8 +24641,8 @@ For example, you scored IELTS 7.0 (which should correspond to TOEFL 100-105), bu
           ]
         },
         {
-          "h": "TOEFL iBT Breakdown: How the 0-120 Score is Calculated",
-          "body": "Understanding TOEFL's scoring structure helps you see how it compares to IELTS.\n\n**TOEFL iBT Sections and Scoring:**\n- **Reading:** 0-30 points\n- **Listening:** 0-30 points\n- **Writing:** 0-30 points\n- **Speaking:** 0-30 points\n- **Total:** 0-120 points\n\nYour total TOEFL score is the sum of all four section scores.\n\n**Example: How TOEFL Scores Add Up**\n- Reading: 28, Listening: 27, Writing: 25, Speaking: 26 = Total TOEFL 106 (equivalent to IELTS 7.5)\n\n**IELTS Section Scoring:**\nIELTS reports each section as a separate 0-9 band, then averages them for the overall band. If you scored Listening 7.5, Reading 7.0, Writing 6.5, Speaking 7.0, your overall band would be 6.75 (rounded to 6.5 or 7.0 depending on rounding rules).\n\n**Why This Matters:**\nWith TOEFL, one weak section can significantly drag down your total score (e.g., scoring 20 in Speaking when you need 25+ could drop your total from 105 to 100). With IELTS, weaker sections are diluted by the averaging process, but weak sections also prevent you from reaching higher overall bands.",
+          "h": "TOEFL iBT Breakdown: How the Legacy 0\u2013120 Score Works (Transitional)",
+          "body": "Since January 2026 the primary TOEFL score is a 1\u20136 band; the 0\u2013120 total below is the comparable scale that ETS still reports during the two-year transition, and that many universities still list. Understanding TOEFL's scoring structure helps you see how it compares to IELTS.\n\n**TOEFL iBT Sections and Scoring:**\n- **Reading:** 0-30 points\n- **Listening:** 0-30 points\n- **Writing:** 0-30 points\n- **Speaking:** 0-30 points\n- **Total:** 0-120 points\n\nYour total TOEFL score is the sum of all four section scores.\n\n**Example: How TOEFL Scores Add Up**\n- Reading: 28, Listening: 27, Writing: 25, Speaking: 26 = Total TOEFL 106 (equivalent to IELTS 7.5)\n\n**IELTS Section Scoring:**\nIELTS reports each section as a separate 0-9 band, then averages them for the overall band. If you scored Listening 7.5, Reading 7.0, Writing 6.5, Speaking 7.0, your overall band would be 6.75 (rounded to 6.5 or 7.0 depending on rounding rules).\n\n**Why This Matters:**\nWith TOEFL, one weak section can significantly drag down your total score (e.g., scoring 20 in Speaking when you need 25+ could drop your total from 105 to 100). With IELTS, weaker sections are diluted by the averaging process, but weak sections also prevent you from reaching higher overall bands.",
           "callout": {
             "type": "tip",
             "text": "If you're weak in one specific skill (e.g., Speaking), TOEFL might penalize you more because that section counts directly toward the 120 total. IELTS might be slightly more forgiving because weaker sections are averaged."
