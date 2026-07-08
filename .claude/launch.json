@@ -18,6 +18,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "5533", "--directory", "C:/Users/naras/OneDrive/Desktop/ApplyDash/web"],
       "port": 5533
+    },
+    {
+      "name": "applydash-platform",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5544", "--directory", "C:/Users/naras/OneDrive/Desktop/ApplyDash/platform-web"],
+      "port": 5544
     }
   ]
 }
