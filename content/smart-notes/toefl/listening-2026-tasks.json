@@ -1,0 +1,44 @@
+{
+  "id": "toefl-listening-2026-tasks",
+  "exam": "toefl",
+  "section": "listening",
+  "title": "TOEFL Listening 2026: The Four Task Types",
+  "estMinutes": 7,
+  "summary": "How Listen and Choose a Response, plus conversations, announcements and academic talks work in the new adaptive Listening section.",
+  "conceptMap": {
+    "central": "TOEFL Listening 2026 (~47 items, ~29 min)",
+    "nodes": [
+      { "label": "Choose a Response", "note": "Hear a prompt, pick the best reply" },
+      { "label": "Conversation", "note": "Campus-life dialogue" },
+      { "label": "Announcement", "note": "Academic or campus notice" },
+      { "label": "Academic Talk", "note": "Short lecture by a professor/expert" },
+      { "label": "Two-stage adaptive", "note": "Difficulty shifts after the first stage" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Listen and Choose a Response — functional English",
+      "body": "You **hear a short spoken prompt and choose the most appropriate response**. It tests everyday, functional listening — recognising what a natural, polite reply sounds like.",
+      "realExample": "You hear: 'Would you mind if I joined your study group?' The best response is something like 'Not at all — we meet on Tuesdays,' not a literal 'Yes, I would mind.'",
+      "memoryHook": "Pick the reply a real, polite speaker would give — function over literal words." },
+    { "heading": "Conversation & Announcement — campus situations",
+      "body": "You listen to a **campus-life conversation** and to an **announcement** in an academic or campus setting, then answer questions. Listen for the **purpose** (why are they talking?) and the **key detail or change**.",
+      "realExample": "An announcement: 'Tomorrow's lab session is moved from Room 210 to the Science Annexe.' Expect a question on what changed — the new location — so catch specifics like rooms, times and dates.",
+      "memoryHook": "Catch purpose + the one detail that changed (room, time, date)." },
+    { "heading": "Academic Talk — the mini-lecture",
+      "body": "You hear a **short academic talk** from a professor or expert and answer questions on the **main idea and supporting points**. Take brief notes — you can't replay the audio.",
+      "realExample": "A talk on why bees waggle-dance: jot 'main = communicate food location' and one or two supports. Your notes, not your memory, answer the detail questions.",
+      "memoryHook": "Note the MAIN idea first, then 2 supports. Notes beat memory." },
+    { "heading": "It's adaptive — and you can take notes",
+      "body": "Listening is **two-stage adaptive**, so the first stage shapes the difficulty of the second. You **can take notes throughout** — build the habit so you're not relying on recall.",
+      "realExample": "Use a quick shorthand: arrows for cause/effect, a star for the main point. Consistent note symbols save you seconds you don't have.",
+      "memoryHook": "Always be note-taking. First stage sets the level — start sharp." }
+  ],
+  "recall": [
+    { "q": "What do you do in the 'Listen and Choose a Response' task?", "a": "Hear a short spoken prompt and choose the most appropriate, natural response — it tests functional listening." },
+    { "q": "What should you listen for in the conversation and announcement tasks?", "a": "The purpose of the exchange and the key detail or change, such as a new room, time or date." },
+    { "q": "What is the best strategy for the academic talk task?", "a": "Take brief notes of the main idea and a couple of supporting points, since you can't replay the audio." },
+    { "q": "Is the Listening section adaptive, and can you take notes?", "a": "Yes — it's two-stage adaptive, and you can take notes throughout." },
+    { "q": "Why do the early Listening items matter?", "a": "Because the first stage sets the difficulty of the second stage in the adaptive format." }
+  ],
+  "sources": ["https://www.ets.org/toefl/test-takers/ibt/about/content/listening.html", "https://www.ets.org/toefl/test-takers/ibt/about/content.html"]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "toefl-reading-2026-tasks",
+  "exam": "toefl",
+  "section": "reading",
+  "title": "TOEFL Reading 2026: The Three New Task Types",
+  "estMinutes": 7,
+  "summary": "What Complete the Words, Read in Daily Life and Read an Academic Passage actually ask you to do — and how the two-stage adaptive section works.",
+  "conceptMap": {
+    "central": "TOEFL Reading 2026 (~50 items, ~30 min)",
+    "nodes": [
+      { "label": "Complete the Words", "note": "Fill in missing letters in key words" },
+      { "label": "Read in Daily Life", "note": "Notices, messages, short info texts" },
+      { "label": "Academic Passage", "note": "A university-style passage + questions" },
+      { "label": "Two-stage adaptive", "note": "Difficulty shifts after the first stage" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Complete the Words — vocabulary in context",
+      "body": "You see a short text with **letters missing from key words** and complete them. It rewards a strong vocabulary and accurate **spelling** in context, read quickly.",
+      "realExample": "You might see: 'Students must ret_rn library books before the end of te_m.' You complete 'return' and 'term'. The surrounding sentence tells you the word; you supply the spelling.",
+      "memoryHook": "Read the whole sentence first — the context hands you the word, you just spell it." },
+    { "heading": "Read in Daily Life — everyday English",
+      "body": "You read **brief, practical texts** — notices, messages, short informational texts — and answer comprehension questions. This is real-world reading, not academic prose.",
+      "realExample": "A dorm notice: 'The laundry room on Floor 2 is closed for repairs; please use Floor 4 until Monday.' A question might ask where students should do laundry this week.",
+      "memoryHook": "Skim for the practical point: what changed, who's affected, what to do." },
+    { "heading": "Read an Academic Passage — the university text",
+      "body": "You read a **short academic passage**, similar to what you'd meet in a university course, and answer questions on main ideas and details. Shorter than the old TOEFL passages, but the academic reading skills are the same.",
+      "realExample": "A passage on why coral reefs bleach: a question tests the main cause, another tests a specific detail. Locate the sentence that answers it rather than re-reading the whole text.",
+      "memoryHook": "Find the sentence, not the whole passage. Questions point to a spot." },
+    { "heading": "It's adaptive — do your best early",
+      "body": "Reading is **two-stage adaptive**: your performance in the first stage sets the difficulty of the second. So **give the early items your full focus** — they steer the rest of the section.",
+      "realExample": "If items start feeling harder in the second stage, that's usually a good sign — the test raised the level because you handled stage one well. Don't panic; keep going.",
+      "memoryHook": "Harder second half? That often means you're doing well. Strong start = higher ceiling." }
+  ],
+  "recall": [
+    { "q": "What does the 'Complete the Words' task ask you to do?", "a": "Fill in letters missing from key words in a short text — it tests vocabulary and spelling in context." },
+    { "q": "What kind of texts appear in 'Read in Daily Life'?", "a": "Brief practical texts such as notices, messages and short informational texts, with comprehension questions." },
+    { "q": "How does the 'Read an Academic Passage' task compare to the old TOEFL reading?", "a": "It's a shorter university-style passage with questions, but it tests the same academic reading skills as before." },
+    { "q": "How does the two-stage adaptive Reading section work?", "a": "Your performance in the first stage sets the difficulty of the second stage, so early items matter." },
+    { "q": "Why might questions feel harder in the second stage?", "a": "Because you did well in the first stage and the test raised the difficulty — it's usually a positive sign." }
+  ],
+  "sources": ["https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html", "https://www.ets.org/toefl/test-takers/ibt/about/content.html"]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "toefl-format-2026-overview",
+  "exam": "toefl",
+  "section": "overview",
+  "title": "The New TOEFL iBT (2026): Format & What Changed",
+  "estMinutes": 7,
+  "summary": "The January 2026 TOEFL overhaul in one glance — under 2 hours, an adaptive Reading & Listening, new task types, and the 1–6 band score.",
+  "conceptMap": {
+    "central": "TOEFL iBT 2026 (under 2 hours)",
+    "nodes": [
+      { "label": "Reading", "note": "~50 items · ~30 min · two-stage adaptive" },
+      { "label": "Listening", "note": "~47 items · ~29 min · two-stage adaptive" },
+      { "label": "Writing", "note": "~12 items · ~23 min · linear (same for everyone)" },
+      { "label": "Speaking", "note": "~11 items · ~8 min · linear" },
+      { "label": "Score", "note": "New 1–6 band scale (0–120 also shown for 2 years)" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Shorter, and now adaptive",
+      "body": "Since **21 January 2026** the TOEFL iBT takes **under two hours**. The **Reading and Listening** sections are **two-stage adaptive** — the test adjusts the difficulty partway through based on how you're doing — while **Writing and Speaking** are **linear** (everyone on a form gets the same tasks).",
+      "realExample": "Do well in the first Reading stage and the second stage serves you harder items; your final score reflects the level you can actually handle. Struggle early and it eases off.",
+      "memoryHook": "Two sections watch and adapt: Reading & Listening. Two stay fixed: Writing & Speaking." },
+    { "heading": "New task types in every section",
+      "body": "The old tasks are gone. Reading now has **Complete the Words**, **Read in Daily Life** and **Read an Academic Passage**. Listening adds **Listen and Choose a Response**. Writing adds **Build a Sentence** and **Write an Email**. Speaking is now **Listen and Repeat** plus **Take an Interview**.",
+      "realExample": "Reading's 'Complete the Words' shows a short text with letters missing from key words — e.g. 'The library will be cl_s_d on holidays' — and you fill them in. Nothing like the old long passages.",
+      "memoryHook": "If a tip mentions a 20-minute integrated essay or 0–120 only, it's about the OLD test. Ignore it." },
+    { "heading": "A new 1–6 band score",
+      "body": "Scores are now reported on a **1–6 scale in half-point steps**, aligned to the CEFR. Your **overall** score is the **average of the four sections, rounded to the nearest half band**. For two years, reports **also** show a comparable **0–120** overall so you can still meet universities' older requirements.",
+      "realExample": "If your four sections average 5.25, your overall is rounded to 5.5. Alongside it you'll see a comparable 0–120 figure during the transition.",
+      "memoryHook": "Think CEFR-style 1–6, not 0–120. Average the four, round to the nearest half." }
+  ],
+  "recall": [
+    { "q": "How long is the 2026 TOEFL iBT and when did the new format start?", "a": "Under two hours, effective 21 January 2026." },
+    { "q": "Which two sections are adaptive, and which are linear?", "a": "Reading and Listening are two-stage adaptive; Writing and Speaking are linear (everyone gets the same tasks)." },
+    { "q": "What is the new score scale?", "a": "A 1–6 band scale in half-point increments, aligned to the CEFR; the 0–120 scale is also shown for a two-year transition." },
+    { "q": "How is the overall score calculated?", "a": "It's the average of the four section scores, rounded to the nearest half band (e.g. 5.25 → 5.5)." },
+    { "q": "Why should you ignore older 'integrated essay' TOEFL advice?", "a": "Those tasks were removed in the January 2026 overhaul; the sections and task types are now different." }
+  ],
+  "sources": ["https://www.ets.org/toefl/test-takers/ibt/about/content.html", "https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html", "https://www.ets.org/toefl/test-takers/ibt/upcoming-updates-jan-2026.html"]
+}

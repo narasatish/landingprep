@@ -12,6 +12,12 @@
       "runtimeExecutable": "node",
       "runtimeArgs": ["server.js"],
       "port": 3015
+    },
+    {
+      "name": "applydash",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5533", "--directory", "C:/Users/naras/OneDrive/Desktop/ApplyDash/web"],
+      "port": 5533
     }
   ]
 }
