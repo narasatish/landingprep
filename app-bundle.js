@@ -195,77 +195,69 @@
       "pattern": [
         [
           "Reading",
-          "2 passages \xB7 10 questions each \xB7 ~35 min"
+          "Two-stage adaptive \xB7 Complete the Words, Read in Daily Life, Read an Academic Passage \xB7 ~50 items \xB7 ~30 min"
         ],
         [
           "Listening",
-          "2 lectures + 1 conversation \xB7 ~36 min (approx. 28 questions)"
+          "Two-stage adaptive \xB7 Choose a Response, Conversation, Announcement, Academic Talk \xB7 ~47 items \xB7 ~29 min"
         ],
         [
           "Speaking",
-          "4 tasks (1 independent + 3 integrated) \xB7 ~16 min"
+          "Listen and Repeat + Take an Interview \xB7 ~11 items \xB7 ~8 min"
         ],
         [
           "Writing",
-          "Integrated task (read-listen-write) + Academic Discussion task \xB7 ~29 min"
+          "Build a Sentence, Write an Email, Write for an Academic Discussion \xB7 ~12 items \xB7 ~23 min"
         ]
       ],
       "sections_detail": [
         {
           "name": "Reading",
           "icon": "\u{1F4D6}",
-          "time": 35,
-          "questions": 20,
+          "time": 30,
+          "questions": 50,
           "types": [
-            "Factual information",
-            "Negative factual information",
-            "Inference",
-            "Rhetorical purpose",
-            "Vocabulary in context",
-            "Reference",
-            "Sentence simplification",
-            "Insert text",
-            "Prose summary"
+            "Complete the Words \u2014 fill missing letters in key words",
+            "Read in Daily Life \u2014 notices, messages, short informational texts",
+            "Read an Academic Passage \u2014 a short university-style passage"
           ],
-          "tips": "Read actively \u2014 mark supporting details. The 'summary' question at the end is worth 2 points; check all 6 options carefully."
+          "tips": "Reading is two-stage adaptive: give the first stage your full focus, as it sets the difficulty of the second. For 'Complete the Words', read the whole sentence \u2014 the context gives you the word."
         },
         {
           "name": "Listening",
           "icon": "\u{1F3A7}",
-          "time": 36,
-          "questions": 28,
+          "time": 29,
+          "questions": 47,
           "types": [
-            "Main idea/gist",
-            "Detail",
-            "Function and attitude",
-            "Organization",
-            "Connecting information"
+            "Listen and Choose a Response \u2014 pick the best reply to a prompt",
+            "Listen to a Conversation \u2014 campus-life dialogue",
+            "Listen to an Announcement \u2014 academic or campus notice",
+            "Listen to an Academic Talk \u2014 a short lecture"
           ],
-          "tips": "Take notes on the Cornell method (main idea left, detail right, summary below). Lectures can cover biology, history, art, economics \u2014 anything."
+          "tips": "Listening is two-stage adaptive. Take notes of the main idea plus a couple of supporting points; you can't replay the audio."
         },
         {
           "name": "Speaking",
           "icon": "\u{1F3A4}",
-          "time": 16,
-          "questions": 4,
+          "time": 8,
+          "questions": 11,
           "types": [
-            "Task 1: Independent \u2014 your opinion on a topic (45 sec prep, 60 sec response)",
-            "Task 2: Campus situation (read + listen + speak)",
-            "Task 3: Academic topic (read + listen + speak)",
-            "Task 4: Academic lecture (listen + speak)"
+            "Listen and Repeat \u2014 repeat short sentences exactly (pronunciation and intelligibility)",
+            "Take an Interview \u2014 answer questions about your experiences and opinions"
           ],
-          "tips": "Use 3 seconds of the prep time to breathe and state your point clearly. Integrated tasks reward accuracy over fluency."
+          "tips": "Mirror the sentence exactly in Listen and Repeat \u2014 words, stress and rhythm. In the interview, speak clearly at a natural pace; clarity beats fancy vocabulary."
         },
         {
           "name": "Writing",
           "icon": "\u270D\uFE0F",
-          "time": 29,
-          "questions": 2,
+          "time": 23,
+          "questions": 12,
           "types": [
-            "Integrated: summarise lecture points vs reading passage (150\u2013225 words, 20 min)",
-            "Academic Discussion: contribute a response to a professor's discussion post (\u2265100 words, 10 min)"
+            "Build a Sentence \u2014 rearrange words into a grammatical sentence",
+            "Write an Email \u2014 an academic or social request/response",
+            "Write for an Academic Discussion \u2014 post an opinion in an online class discussion"
           ],
-          "tips": "Integrated Writing: the lecture will contradict, support or qualify the reading. Academic Discussion: take a clear position and support it with a specific reason."
+          "tips": "For the email: greeting \u2192 reason \u2192 specific request \u2192 thanks. Scoring rewards communicating clearly, not a perfect first draft."
         }
       ],
       "scoreGuide": [
@@ -7982,7 +7974,29 @@ window.LP_LearningClub = LearningClub;
     return /* @__PURE__ */ React.createElement("div", { className: "ep-list" }, /* @__PURE__ */ React.createElement("div", { className: "ep-breadcrumb" }, /* @__PURE__ */ React.createElement("a", { onClick: (e) => {
       e.preventDefault();
       onBack();
-    }, href: "#/exam-prep" }, examLabel), " ", /* @__PURE__ */ React.createElement("span", null, "/"), " ", /* @__PURE__ */ React.createElement("span", null, pres.name)), /* @__PURE__ */ React.createElement("h1", { style: { borderLeft: `4px solid ${brand.color}`, paddingLeft: 16 } }, /* @__PURE__ */ React.createElement("span", { style: { marginRight: 10 } }, pres.icon), examLabel, " \u2014 ", pres.name), /* @__PURE__ */ React.createElement("p", { className: "muted" }, "Choose any test below. Each loads on demand."), showVariantPills && variants && /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: "0.5rem", flexWrap: "wrap", margin: "0.75rem 0 1.25rem" } }, variants.map((v) => /* @__PURE__ */ React.createElement(
+    }, href: "#/exam-prep" }, examLabel), " ", /* @__PURE__ */ React.createElement("span", null, "/"), " ", /* @__PURE__ */ React.createElement("span", null, pres.name)), /* @__PURE__ */ React.createElement("h1", { style: { borderLeft: `4px solid ${brand.color}`, paddingLeft: 16 } }, /* @__PURE__ */ React.createElement("span", { style: { marginRight: 10 } }, pres.icon), examLabel, " \u2014 ", pres.name), /* @__PURE__ */ React.createElement("p", { className: "muted" }, "Choose any test below. Each loads on demand."), examId === "toefl" && /* @__PURE__ */ React.createElement(
+      "div",
+      {
+        role: "note",
+        style: {
+          margin: "0 0 20px",
+          padding: "12px 14px",
+          borderRadius: "var(--r-lg, 12px)",
+          border: "1px solid var(--line)",
+          background: "rgba(2, 132, 199, 0.08)",
+          color: "var(--ink)",
+          fontSize: "0.9rem",
+          lineHeight: 1.5
+        }
+      },
+      /* @__PURE__ */ React.createElement("strong", null, "Heads-up:"),
+      " these mocks reflect the ",
+      /* @__PURE__ */ React.createElement("strong", null, "pre-2026 TOEFL"),
+      " (0\u2013120 scale). TOEFL iBT changed in January 2026 \u2014 it's now a 1\u20136 band with adaptive Reading & Listening and new task types. For the current format, see our",
+      " ",
+      /* @__PURE__ */ React.createElement("a", { href: "/learn/toefl/", style: { color: "var(--accent)", fontWeight: 700 } }, "TOEFL 2026 Smart Notes \u2192"),
+      "."
+    ), showVariantPills && variants && /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: "0.5rem", flexWrap: "wrap", margin: "0.75rem 0 1.25rem" } }, variants.map((v) => /* @__PURE__ */ React.createElement(
       "button",
       {
         key: v.id,
