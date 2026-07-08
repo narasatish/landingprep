@@ -192,77 +192,69 @@ window.LP_DATA = {
       "pattern": [
         [
           "Reading",
-          "2 passages · 10 questions each · ~35 min"
+          "Two-stage adaptive · Complete the Words, Read in Daily Life, Read an Academic Passage · ~50 items · ~30 min"
         ],
         [
           "Listening",
-          "2 lectures + 1 conversation · ~36 min (approx. 28 questions)"
+          "Two-stage adaptive · Choose a Response, Conversation, Announcement, Academic Talk · ~47 items · ~29 min"
         ],
         [
           "Speaking",
-          "4 tasks (1 independent + 3 integrated) · ~16 min"
+          "Listen and Repeat + Take an Interview · ~11 items · ~8 min"
         ],
         [
           "Writing",
-          "Integrated task (read-listen-write) + Academic Discussion task · ~29 min"
+          "Build a Sentence, Write an Email, Write for an Academic Discussion · ~12 items · ~23 min"
         ]
       ],
       "sections_detail": [
         {
           "name": "Reading",
           "icon": "📖",
-          "time": 35,
-          "questions": 20,
+          "time": 30,
+          "questions": 50,
           "types": [
-            "Factual information",
-            "Negative factual information",
-            "Inference",
-            "Rhetorical purpose",
-            "Vocabulary in context",
-            "Reference",
-            "Sentence simplification",
-            "Insert text",
-            "Prose summary"
+            "Complete the Words — fill missing letters in key words",
+            "Read in Daily Life — notices, messages, short informational texts",
+            "Read an Academic Passage — a short university-style passage"
           ],
-          "tips": "Read actively — mark supporting details. The 'summary' question at the end is worth 2 points; check all 6 options carefully."
+          "tips": "Reading is two-stage adaptive: give the first stage your full focus, as it sets the difficulty of the second. For 'Complete the Words', read the whole sentence — the context gives you the word."
         },
         {
           "name": "Listening",
           "icon": "🎧",
-          "time": 36,
-          "questions": 28,
+          "time": 29,
+          "questions": 47,
           "types": [
-            "Main idea/gist",
-            "Detail",
-            "Function and attitude",
-            "Organization",
-            "Connecting information"
+            "Listen and Choose a Response — pick the best reply to a prompt",
+            "Listen to a Conversation — campus-life dialogue",
+            "Listen to an Announcement — academic or campus notice",
+            "Listen to an Academic Talk — a short lecture"
           ],
-          "tips": "Take notes on the Cornell method (main idea left, detail right, summary below). Lectures can cover biology, history, art, economics — anything."
+          "tips": "Listening is two-stage adaptive. Take notes of the main idea plus a couple of supporting points; you can't replay the audio."
         },
         {
           "name": "Speaking",
           "icon": "🎤",
-          "time": 16,
-          "questions": 4,
+          "time": 8,
+          "questions": 11,
           "types": [
-            "Task 1: Independent — your opinion on a topic (45 sec prep, 60 sec response)",
-            "Task 2: Campus situation (read + listen + speak)",
-            "Task 3: Academic topic (read + listen + speak)",
-            "Task 4: Academic lecture (listen + speak)"
+            "Listen and Repeat — repeat short sentences exactly (pronunciation and intelligibility)",
+            "Take an Interview — answer questions about your experiences and opinions"
           ],
-          "tips": "Use 3 seconds of the prep time to breathe and state your point clearly. Integrated tasks reward accuracy over fluency."
+          "tips": "Mirror the sentence exactly in Listen and Repeat — words, stress and rhythm. In the interview, speak clearly at a natural pace; clarity beats fancy vocabulary."
         },
         {
           "name": "Writing",
           "icon": "✍️",
-          "time": 29,
-          "questions": 2,
+          "time": 23,
+          "questions": 12,
           "types": [
-            "Integrated: summarise lecture points vs reading passage (150–225 words, 20 min)",
-            "Academic Discussion: contribute a response to a professor's discussion post (≥100 words, 10 min)"
+            "Build a Sentence — rearrange words into a grammatical sentence",
+            "Write an Email — an academic or social request/response",
+            "Write for an Academic Discussion — post an opinion in an online class discussion"
           ],
-          "tips": "Integrated Writing: the lecture will contradict, support or qualify the reading. Academic Discussion: take a clear position and support it with a specific reason."
+          "tips": "For the email: greeting → reason → specific request → thanks. Scoring rewards communicating clearly, not a perfect first draft."
         }
       ],
       "scoreGuide": [
