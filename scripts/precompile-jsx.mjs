@@ -5,7 +5,9 @@
 // or globals changes; we only remove the runtime JSX transform.
 //
 // Run:  node scripts/precompile-jsx.mjs   (also part of `npm run build`)
-import { transformSync } from "esbuild";
+let transformSync;
+try { ({ transformSync } = await import("esbuild")); }
+catch (e) { console.log("↷ esbuild not installed — skipping JSX precompile (pre-compiled .js in repo)"); process.exit(0); }
 import { readFileSync, writeFileSync, existsSync, readdirSync } from "fs";
 import path from "path";
 
