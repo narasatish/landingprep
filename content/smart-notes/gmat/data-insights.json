@@ -1,0 +1,44 @@
+{
+  "id": "gmat-data-insights",
+  "exam": "gmat",
+  "section": "data-insights",
+  "title": "GMAT Data Insights: The Section That Defines Focus Edition",
+  "estMinutes": 8,
+  "summary": "The new third of the GMAT — five question types that test whether you can read data and reason across sources, calculator allowed.",
+  "conceptMap": {
+    "central": "Data Insights (20 Qs, 45 min)",
+    "nodes": [
+      { "label": "Data Sufficiency", "note": "Is the info ENOUGH to answer?" },
+      { "label": "Multi-Source Reasoning", "note": "Combine tabs of text/tables" },
+      { "label": "Table Analysis", "note": "Sort a table, judge statements" },
+      { "label": "Graphics Interpretation", "note": "Read a chart, fill dropdowns" },
+      { "label": "Two-Part Analysis", "note": "Pick two linked answers" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Why Data Insights matters",
+      "body": "Data Insights is **equally weighted** with Quant and Verbal, so it's a full third of your score — no longer an afterthought. It tests **reading, interpreting and combining data** from tables, charts and text to make decisions, and an **on-screen calculator is available** here (unlike Quant).",
+      "realExample": "Business schools care about this section because it mirrors real analytics work — turning messy data into a decision. Neglecting it now costs a third of your total score.",
+      "memoryHook": "DI = a full third of the score, with a calculator. Never treat it as optional." },
+    { "heading": "Data Sufficiency — enough, not the answer",
+      "body": "Data Sufficiency gives a question plus **two statements**; you decide **whether each alone, both together, or neither is enough to answer** — you usually **don't compute the final answer**. The five choices never change, so learn them cold.",
+      "realExample": "'Is x > 5?' Statement 1: x > 3 (not enough). Statement 2: x = 7 (enough alone). You answer 'statement 2 alone is sufficient' — without needing anything beyond that judgement.",
+      "memoryHook": "DS asks 'is it ENOUGH?', not 'what's the answer?'. Judge sufficiency, don't solve." },
+    { "heading": "Multi-Source & Table — organise before you answer",
+      "body": "**Multi-Source Reasoning** spreads information across **tabs** (text, tables, charts) you must combine. **Table Analysis** lets you **sort a table** to judge true/false statements. Both reward a calm, **find-the-relevant-data-first** approach over rushing.",
+      "realExample": "In Table Analysis, sorting the column the statement is about (e.g. by revenue) often makes 'the top 3 all exceed X' instantly checkable — use the sort, don't eyeball.",
+      "memoryHook": "Sort and locate first. In DI, finding the right data is half the answer." },
+    { "heading": "Graphics & Two-Part — read the format carefully",
+      "body": "**Graphics Interpretation** gives a chart and **dropdown sentences** to complete from it. **Two-Part Analysis** asks for **two answers** (one per column) that together satisfy a condition. Both punish careless reading of the chart or the prompt's exact requirement.",
+      "realExample": "In Two-Part Analysis, the two columns might be 'maximises revenue' and 'minimises cost' — a choice can be right for one column and wrong for the other, so read each column's requirement separately.",
+      "memoryHook": "Read the chart axes / each column's requirement exactly. DI traps are misreads." }
+  ],
+  "recall": [
+    { "q": "How is the Data Insights section weighted, and is a calculator allowed?", "a": "It's equally weighted with Quant and Verbal (a full third of the score), and an on-screen calculator is available in Data Insights." },
+    { "q": "What does a Data Sufficiency question actually ask?", "a": "Whether the given statements are sufficient to answer — not what the final answer is." },
+    { "q": "What are the five Data Insights question types?", "a": "Data Sufficiency, Multi-Source Reasoning, Table Analysis, Graphics Interpretation and Two-Part Analysis." },
+    { "q": "What's the best approach to Table Analysis?", "a": "Sort the relevant column first, then judge the true/false statements — don't eyeball the data." },
+    { "q": "What must you watch for in Two-Part Analysis?", "a": "Each of the two columns has its own requirement, so an option can be right for one and wrong for the other." }
+  ],
+  "sources": ["https://www.mba.com/exams/gmat-focus-edition/about/exam-content", "https://www.mba.com/exams/gmat-exam/prep-for-the-exam/prep-strategies/data-insights"]
+}

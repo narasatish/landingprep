@@ -1,0 +1,44 @@
+{
+  "id": "gre-format-overview",
+  "exam": "gre",
+  "section": "overview",
+  "title": "GRE Format (Short Version): The One-Glance Map",
+  "estMinutes": 7,
+  "summary": "The current ~2-hour GRE — five sections, section-level adaptive Verbal & Quant, and how the scores work.",
+  "conceptMap": {
+    "central": "GRE General Test (~1h 58m)",
+    "nodes": [
+      { "label": "Analytical Writing", "note": "1 'Analyze an Issue' essay · 30 min · always first" },
+      { "label": "Verbal Reasoning", "note": "2 sections · 27 questions · ~41 min" },
+      { "label": "Quantitative Reasoning", "note": "2 sections · 27 questions · ~47 min" },
+      { "label": "Section-adaptive", "note": "2nd V/Q section adapts to your 1st" },
+      { "label": "Scores", "note": "V 130–170 · Q 130–170 · AW 0–6" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Five sections, under two hours",
+      "body": "Since September 2023 the GRE is **shorter — about 1 hour 58 minutes, five sections, no scheduled break and no unscored experimental section**. The **Analytical Writing essay is always first**; the two **Verbal** and two **Quantitative** sections follow in any order.",
+      "realExample": "You write the Issue essay, then move through V and Q sections back-to-back. Compared with the old 3h45m GRE, there's no long break to reset — pacing and stamina planning change accordingly.",
+      "memoryHook": "1 essay + 2 Verbal + 2 Quant = 5 sections, ~2 hours. No break, no experimental." },
+    { "heading": "It's section-level adaptive",
+      "body": "The GRE adapts **by section, not by question**. Your first Verbal section is average difficulty; **how you do on it sets the difficulty — and scoring ceiling — of your second Verbal section** (same for Quant). Within a section you can move back and forth freely.",
+      "realExample": "Do well on Verbal section 1 and section 2 serves harder questions worth more — so the early section is high-leverage. You can flag and revisit questions inside a section, unlike a question-adaptive test.",
+      "memoryHook": "Nail section 1 to unlock the harder, higher-scoring section 2. Early = leverage." },
+    { "heading": "How the scores work",
+      "body": "You get three scores: **Verbal 130–170**, **Quantitative 130–170** (both in 1-point steps), and **Analytical Writing 0–6** (half-point steps). Programmes weight these differently — many grad programmes care most about the section that matches your field.",
+      "realExample": "An engineering programme may focus on your Quant score; a humanities PhD on Verbal and Writing. Check your target programme's stated expectations rather than chasing a single 'good' total.",
+      "memoryHook": "Two 130–170 scores + one 0–6. Your field decides which one matters most." },
+    { "heading": "Question counts and timing",
+      "body": "**Verbal:** 27 questions across two sections (12 in ~18 min, then 15 in ~23 min). **Quant:** 27 questions across two sections (12 in ~21 min, then 15 in ~26 min). That's roughly **1.5 minutes per Verbal question and 1.75 per Quant** — tight but manageable.",
+      "realExample": "If a single Quant question is eating two minutes, mark it, move on, and come back — leaving easy later questions unanswered to fight one hard one is the classic timing mistake.",
+      "memoryHook": "~1.5 min Verbal, ~1.75 min Quant. Never let one question sink the section." }
+  ],
+  "recall": [
+    { "q": "How long is the current GRE and how many sections?", "a": "About 1 hour 58 minutes, with five sections and no scheduled break or unscored experimental section." },
+    { "q": "Which section is always first?", "a": "Analytical Writing — a single 'Analyze an Issue' essay (30 minutes)." },
+    { "q": "How is the GRE adaptive?", "a": "Section-level adaptive: your performance on the first Verbal/Quant section sets the difficulty of the second." },
+    { "q": "What are the three GRE score scales?", "a": "Verbal 130–170, Quantitative 130–170, and Analytical Writing 0–6 (half-point increments)." },
+    { "q": "Why is the first Verbal or Quant section high-leverage?", "a": "It determines the difficulty and scoring ceiling of your second section in that measure." }
+  ],
+  "sources": ["https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html", "https://www.ets.org/gre/test-takers/general-test/scores/understand-scores.html"]
+}

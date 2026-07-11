@@ -1,0 +1,43 @@
+{
+  "id": "gre-vocabulary-strategy",
+  "exam": "gre",
+  "section": "verbal",
+  "title": "GRE Vocabulary: Learn It the Way It's Tested",
+  "estMinutes": 6,
+  "summary": "GRE Verbal lives or dies on vocabulary in context — here's how to build it fast and make it stick.",
+  "conceptMap": {
+    "central": "GRE vocabulary in context",
+    "nodes": [
+      { "label": "Roots & families", "note": "One root unlocks many words" },
+      { "label": "Words in sentences", "note": "Learn usage, not bare definitions" },
+      { "label": "Connotation", "note": "Positive / negative charge matters" },
+      { "label": "Spaced review", "note": "Revisit on a schedule so it sticks" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Learn roots, not just words",
+      "body": "GRE words cluster around **Latin and Greek roots**. Learning one root unlocks a family: *bene-* (good) gives benefactor, benevolent, benign. This multiplies your coverage far faster than memorising isolated words.",
+      "realExample": "Know 'loqu/loc = speak' and you can reason out loquacious (talkative), eloquent, circumlocution and grandiloquent — four GRE words from one root.",
+      "memoryHook": "One root = a whole word family. Learn the root, earn the family." },
+    { "heading": "Always learn a word in a sentence",
+      "body": "The test uses words **in context**, so learn them that way. A word paired with a vivid sentence is remembered far better than a dictionary definition — and it teaches you the **usage** Text Completion actually checks.",
+      "realExample": "'Cantankerous' as a bare word is forgettable; 'the cantankerous old man argued with everyone' gives you the meaning AND the feel of how it's used.",
+      "memoryHook": "No naked definitions. Every new word rides in a sentence." },
+    { "heading": "Track connotation — positive or negative",
+      "body": "Many Verbal questions hinge on whether a blank needs a **positive or negative** word. Tag each new word with its **charge** (+/−). Even if you're unsure of the exact meaning, the right charge often eliminates half the options.",
+      "realExample": "In 'the critic's ___ review ended the play's run', the charge must be negative — 'scathing', not 'glowing'. Charge alone kills the wrong-direction traps.",
+      "memoryHook": "Tag every word +, − or neutral. Charge alone eliminates half the traps." },
+    { "heading": "Review on a spaced schedule",
+      "body": "Vocabulary fades without **spaced repetition** — revisit words at growing intervals (a day, three days, a week) so they move into long-term memory. A steady 15–20 words a day, reviewed, beats cramming hundreds once.",
+      "realExample": "Use these Smart Note recall cards: finishing the quiz schedules the words for spaced review automatically, so they resurface right before you'd forget them.",
+      "memoryHook": "Little and often, on a spacing schedule. Cramming vocab is forgetting vocab." }
+  ],
+  "recall": [
+    { "q": "Why learn Latin and Greek roots for the GRE?", "a": "One root unlocks a whole family of words (e.g. loqu/loc → loquacious, eloquent), multiplying your coverage." },
+    { "q": "Why learn each word inside a sentence?", "a": "The GRE tests words in context, so learning usage sticks better and matches how Text Completion checks them." },
+    { "q": "What does tagging a word's 'connotation' help you do?", "a": "Knowing whether a blank needs a positive or negative word often eliminates half the options, even without the exact meaning." },
+    { "q": "What's the most effective review schedule for vocabulary?", "a": "Spaced repetition — revisit words at growing intervals so they enter long-term memory." },
+    { "q": "Is it better to cram hundreds of words or do a steady daily set?", "a": "A steady daily set (e.g. 15–20 words) with spaced review beats cramming hundreds at once." }
+  ],
+  "sources": ["https://www.ets.org/gre/test-takers/general-test/prepare/content/verbal-reasoning.html"]
+}

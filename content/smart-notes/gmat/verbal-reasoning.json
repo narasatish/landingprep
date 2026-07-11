@@ -1,0 +1,43 @@
+{
+  "id": "gmat-verbal-reasoning",
+  "exam": "gmat",
+  "section": "verbal",
+  "title": "GMAT Verbal: Reading Comprehension & Critical Reasoning",
+  "estMinutes": 7,
+  "summary": "GMAT Focus Verbal dropped Sentence Correction — it's now 23 questions of Reading Comprehension and Critical Reasoning, all about logic.",
+  "conceptMap": {
+    "central": "GMAT Verbal (23 Qs, 45 min)",
+    "nodes": [
+      { "label": "Reading Comprehension", "note": "Passages + detail/inference/purpose questions" },
+      { "label": "Critical Reasoning", "note": "Evaluate a short argument" },
+      { "label": "No Sentence Correction", "note": "Grammar item type removed in Focus" },
+      { "label": "Logic over grammar", "note": "Reasoning is the whole game" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Grammar's gone — it's reasoning now",
+      "body": "GMAT Focus Verbal has **just two question types: Reading Comprehension and Critical Reasoning**. **Sentence Correction was removed**, so pure grammar drills no longer help — the section is entirely about **understanding and evaluating arguments**.",
+      "realExample": "If your old prep leaned on memorising idiom and modifier rules for Sentence Correction, redirect that time to Critical Reasoning logic — those points don't exist anymore.",
+      "memoryHook": "No more Sentence Correction. GMAT Verbal = reading + reasoning only." },
+    { "heading": "Critical Reasoning — find the argument's skeleton",
+      "body": "You read a **short argument** and answer a question: strengthen it, weaken it, find the assumption, or spot the flaw. The key skill is separating the **conclusion** from the **evidence**, then seeing the **assumption** that links them.",
+      "realExample": "'Sales rose after we changed the logo, so the logo caused the rise.' The unstated assumption is 'nothing else changed'. Weaken it by naming another cause (a price cut, a holiday).",
+      "memoryHook": "Split conclusion from evidence, then attack the assumption between them." },
+    { "heading": "Reading Comprehension — map, don't memorise",
+      "body": "Passages are dense but short. **Read for structure** — main point, how each paragraph functions, the author's tone — rather than memorising details. Then return to the text to answer specific questions; **every answer must be supported by the passage**.",
+      "realExample": "Jot a two-word label per paragraph ('problem', 'counter-view', 'author's fix'). When a question asks about paragraph 3, your map sends you straight there instead of rereading everything.",
+      "memoryHook": "Map the passage's structure. Answers hide in specific lines, not your memory." },
+    { "heading": "Pace: about two minutes each",
+      "body": "23 questions in 45 minutes is roughly **under two minutes each**, and Reading Comprehension passages serve **several questions**, so time spent understanding a passage pays back across its question set. It's **adaptive** — steady accuracy beats rushing.",
+      "realExample": "Invest 3 minutes truly understanding a passage that has 4 questions, and each question then takes 45 seconds — far better than skimming and re-reading for every question.",
+      "memoryHook": "Understand the passage once; it pays back across all its questions." }
+  ],
+  "recall": [
+    { "q": "What two question types make up GMAT Focus Verbal?", "a": "Reading Comprehension and Critical Reasoning — Sentence Correction was removed." },
+    { "q": "What is the core skill in Critical Reasoning?", "a": "Separating the conclusion from the evidence and identifying the assumption that links them." },
+    { "q": "How should you read GMAT Reading Comprehension passages?", "a": "For structure — main point, each paragraph's function and tone — then return to the text for specifics." },
+    { "q": "How do you weaken an argument in Critical Reasoning?", "a": "Attack its assumption — for example, by naming an alternative cause the argument overlooked." },
+    { "q": "Why is understanding a passage upfront efficient?", "a": "Each Reading Comprehension passage serves several questions, so upfront understanding pays back across the set." }
+  ],
+  "sources": ["https://www.mba.com/exams/gmat-exam/about/exam-structure", "https://www.mba.com/exams/gmat-focus-edition/about/exam-content"]
+}

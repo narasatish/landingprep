@@ -1,4 +1,92 @@
 {
+  "gmat": [
+    {
+      "id": "gmat-data-insights",
+      "title": "GMAT Data Insights: The Section That Defines Focus Edition",
+      "section": "data-insights",
+      "estMinutes": 8,
+      "slug": "data-insights"
+    },
+    {
+      "id": "gmat-data-sufficiency",
+      "title": "GMAT Data Sufficiency: Master the Five Choices",
+      "section": "data-insights",
+      "estMinutes": 7,
+      "slug": "data-sufficiency"
+    },
+    {
+      "id": "gmat-format-overview",
+      "title": "GMAT Focus Edition: The One-Glance Format",
+      "section": "overview",
+      "estMinutes": 7,
+      "slug": "format-overview"
+    },
+    {
+      "id": "gmat-quantitative-reasoning",
+      "title": "GMAT Quant: Problem Solving (No Data Sufficiency Here)",
+      "section": "quant",
+      "estMinutes": 7,
+      "slug": "quantitative-reasoning"
+    },
+    {
+      "id": "gmat-scoring-strategy",
+      "title": "GMAT Focus Scores: 205–805 and How to Play the Test",
+      "section": "scoring",
+      "estMinutes": 6,
+      "slug": "scoring-strategy"
+    },
+    {
+      "id": "gmat-verbal-reasoning",
+      "title": "GMAT Verbal: Reading Comprehension & Critical Reasoning",
+      "section": "verbal",
+      "estMinutes": 7,
+      "slug": "verbal-reasoning"
+    }
+  ],
+  "gre": [
+    {
+      "id": "gre-analytical-writing",
+      "title": "GRE Analytical Writing: The Analyze an Issue Essay",
+      "section": "writing",
+      "estMinutes": 6,
+      "slug": "analytical-writing"
+    },
+    {
+      "id": "gre-format-overview",
+      "title": "GRE Format (Short Version): The One-Glance Map",
+      "section": "overview",
+      "estMinutes": 7,
+      "slug": "format-overview"
+    },
+    {
+      "id": "gre-quantitative-reasoning",
+      "title": "GRE Quant: Question Types & the Comparison Trick",
+      "section": "quant",
+      "estMinutes": 7,
+      "slug": "quantitative-reasoning"
+    },
+    {
+      "id": "gre-scoring-strategy",
+      "title": "GRE Scores: What They Mean & How to Play the Adaptive Test",
+      "section": "scoring",
+      "estMinutes": 6,
+      "slug": "scoring-strategy"
+    },
+    {
+      "id": "gre-verbal-reasoning",
+      "title": "GRE Verbal: The Three Question Types",
+      "section": "verbal",
+      "estMinutes": 7,
+      "slug": "verbal-reasoning"
+    },
+    {
+      "id": "gre-vocabulary-strategy",
+      "title": "GRE Vocabulary: Learn It the Way It's Tested",
+      "section": "verbal",
+      "estMinutes": 6,
+      "slug": "vocabulary-strategy"
+    }
+  ],
   "ielts": [
     {
       "id": "ielts-linking-words-cohesion",

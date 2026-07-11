@@ -1,0 +1,43 @@
+{
+  "id": "gre-verbal-reasoning",
+  "exam": "gre",
+  "section": "verbal",
+  "title": "GRE Verbal: The Three Question Types",
+  "estMinutes": 7,
+  "summary": "Text Completion, Sentence Equivalence and Reading Comprehension — what each tests and the fastest way to attack it.",
+  "conceptMap": {
+    "central": "GRE Verbal (27 Qs, 2 sections)",
+    "nodes": [
+      { "label": "Text Completion", "note": "Fill 1–3 blanks from context" },
+      { "label": "Sentence Equivalence", "note": "Pick TWO words → same meaning sentence" },
+      { "label": "Reading Comprehension", "note": "Passages + inference/detail questions" },
+      { "label": "Vocabulary + logic", "note": "Meaning from context is everything" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Text Completion — read the clue, then the blank",
+      "body": "A short passage has **one to three blanks**; choose the word that best fits each (no partial credit for multi-blank — all must be right). The trick: find the **clue and the signpost** (a word like 'although', 'because', 'yet') that tells you whether the blank agrees or contrasts with the rest.",
+      "realExample": "'Although praised as ___, the plan was actually reckless.' 'Although' signals contrast, so the blank must be positive — 'prudent'. Predict your own word before reading the options.",
+      "memoryHook": "Find the signpost (although/because) first. It tells you the blank's direction." },
+    { "heading": "Sentence Equivalence — two words, one meaning",
+      "body": "One blank, **six options — pick the TWO** that both fit AND produce **sentences with the same meaning**. So you're hunting a **synonym pair**, not just any two workable words.",
+      "realExample": "If 'gregarious' fits, look for its partner 'sociable' — two options that mean the same. Two words that both fit but mean different things is the classic trap answer.",
+      "memoryHook": "Two answers that are SYNONYMS. Find the pair, not just two that fit." },
+    { "heading": "Reading Comprehension — answer from the text, not your view",
+      "body": "Passages come with detail, inference and 'purpose' questions. Every answer must be **provable from the passage** — the right choice is supported by specific lines; wrong ones are true-in-the-world but unsupported, or distort the text.",
+      "realExample": "Question: 'The author implies…' → find the exact sentence that backs the choice. If you can't point to it, it's probably the trap that 'sounds reasonable' but isn't stated.",
+      "memoryHook": "If you can't underline the proof in the passage, it's not the answer." },
+    { "heading": "Vocabulary in context wins Verbal",
+      "body": "GRE Verbal rewards **knowing words in context** far more than obscure trivia. Build vocabulary through **word families and roots**, and always learn a word inside a sentence — that's exactly how the test uses it.",
+      "realExample": "Learning 'laconic' as 'using few words' inside 'his laconic reply' sticks better than a bare definition — and that's the form Text Completion tests.",
+      "memoryHook": "Learn words in sentences, not on flashcards alone. Context is the test." }
+  ],
+  "recall": [
+    { "q": "How many blanks can a Text Completion question have, and is there partial credit?", "a": "One to three blanks, and there's no partial credit — every blank must be correct." },
+    { "q": "What must the two answers in Sentence Equivalence have in common?", "a": "They must be a synonym pair that both fit and produce sentences with the same meaning." },
+    { "q": "How do you identify the direction of a Text Completion blank?", "a": "Find the signpost word (e.g. although, because, yet) that tells you whether the blank agrees or contrasts with the clue." },
+    { "q": "What makes an answer correct in Reading Comprehension?", "a": "It must be provable from specific lines in the passage — not merely true in general." },
+    { "q": "What's the most effective way to build GRE vocabulary?", "a": "Learn words in context via sentences, word families and roots — the way the test uses them." }
+  ],
+  "sources": ["https://www.ets.org/gre/test-takers/general-test/prepare/content/verbal-reasoning.html"]
+}

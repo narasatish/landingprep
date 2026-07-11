@@ -1,0 +1,44 @@
+{
+  "id": "gre-scoring-strategy",
+  "exam": "gre",
+  "section": "scoring",
+  "title": "GRE Scores: What They Mean & How to Play the Adaptive Test",
+  "estMinutes": 6,
+  "summary": "The 130–170 scales, section-level adaptivity, and the pacing strategy that follows from how the GRE is built.",
+  "conceptMap": {
+    "central": "GRE scoring (130–170 + 0–6)",
+    "nodes": [
+      { "label": "Verbal 130–170", "note": "1-point steps" },
+      { "label": "Quant 130–170", "note": "1-point steps" },
+      { "label": "Writing 0–6", "note": "Half-point steps" },
+      { "label": "Section-adaptive", "note": "Section 1 sets section 2's difficulty" },
+      { "label": "Free to move", "note": "Flag & revisit within a section" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Three scores, weighted by your field",
+      "body": "You receive **Verbal 130–170**, **Quantitative 130–170** and **Analytical Writing 0–6**. There's **no single composite** — programmes read the section that matches their discipline. Percentiles tell you how you rank, which is what admissions really compare.",
+      "realExample": "A 165 Quant is far more impressive percentile-wise for a humanities applicant than for an engineer, because the applicant pools differ. Judge your score against your field's typical range, not a universal bar.",
+      "memoryHook": "No total score. Your field decides which of the three numbers matters." },
+    { "heading": "The first section decides your ceiling",
+      "body": "Because Verbal and Quant are **section-level adaptive**, your **first section's performance sets the difficulty — and top possible score — of the second**. That makes the **first Verbal and first Quant sections the highest-leverage minutes on the test**.",
+      "realExample": "Coasting through section 1 to 'save energy' caps your section 2 difficulty and your ceiling. Treat section 1 as the most important, not a warm-up.",
+      "memoryHook": "Section 1 is the gatekeeper to the high-scoring section 2. No coasting." },
+    { "heading": "Use the freedom within a section",
+      "body": "Within a section you can **skip, flag and revisit** questions and use a **mark-and-review** screen. So **do the easy questions first**, bank those points, and return to the hard ones — never let one stubborn question burn minutes that easy later questions need.",
+      "realExample": "On a Quant section, a two-pass approach — sweep for quick wins, then circle back to the flagged hard ones — usually nets more points than grinding in order.",
+      "memoryHook": "Two passes: easy wins first, hard ones flagged for later. Bank points early." },
+    { "heading": "Guess smart — there's no penalty",
+      "body": "The GRE has **no negative marking**, so **never leave a question blank**. Before time runs out, put an answer on every question. On tough ones, **eliminate what you can** and guess from the rest to raise your odds.",
+      "realExample": "30 seconds left with three unanswered? Fill them all in — even blind guesses have a chance, and a blank is a guaranteed zero.",
+      "memoryHook": "No penalty for wrong. A blank is the only guaranteed loss — always answer." }
+  ],
+  "recall": [
+    { "q": "What three scores does the GRE report, and is there a composite?", "a": "Verbal 130–170, Quantitative 130–170 and Analytical Writing 0–6 — there is no single composite score." },
+    { "q": "Why is the first Verbal or Quant section so important?", "a": "The GRE is section-level adaptive, so your first section sets the difficulty and scoring ceiling of the second." },
+    { "q": "What can you do within a GRE section that a question-adaptive test doesn't allow?", "a": "Skip, flag and revisit questions using a mark-and-review screen." },
+    { "q": "What's a good two-pass strategy within a section?", "a": "Answer the easy questions first to bank points, then return to the flagged hard ones." },
+    { "q": "Is there a penalty for wrong answers on the GRE?", "a": "No — so never leave a question blank; always guess if needed." }
+  ],
+  "sources": ["https://www.ets.org/gre/test-takers/general-test/scores/understand-scores.html", "https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html"]
+}

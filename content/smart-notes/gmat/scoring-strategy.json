@@ -1,0 +1,43 @@
+{
+  "id": "gmat-scoring-strategy",
+  "exam": "gmat",
+  "section": "scoring",
+  "title": "GMAT Focus Scores: 205–805 and How to Play the Test",
+  "estMinutes": 6,
+  "summary": "How the new 205–805 scale works, why every section counts equally, and the pacing + review strategy that follows.",
+  "conceptMap": {
+    "central": "GMAT Focus scoring (205–805)",
+    "nodes": [
+      { "label": "Three equal sections", "note": "Quant, Verbal, Data Insights all count" },
+      { "label": "New scale", "note": "205–805, not comparable to old 200–800" },
+      { "label": "Percentiles", "note": "How schools actually compare you" },
+      { "label": "Adaptive + review", "note": "Steady accuracy; edit up to 3 per section" }
+    ]
+  },
+  "chunks": [
+    { "heading": "A new scale — don't compare to the old 800",
+      "body": "GMAT Focus totals run **205–805 in 10-point steps**, built from **all three sections equally**. Crucially, **a Focus score is NOT the same as an old-GMAT score** — a 645 Focus is a very different percentile from a 645 on the old 200–800 scale, so **compare using percentiles, not raw numbers**.",
+      "realExample": "Someone quoting '650 is average' from old GMAT advice is misleading you — on Focus, look up what percentile your target total sits at, because the scale and distribution changed.",
+      "memoryHook": "205–805 is a NEW scale. Judge by percentile, never by old-GMAT numbers." },
+    { "heading": "Every section counts — balance wins",
+      "body": "Because **Quant, Verbal and Data Insights are equally weighted**, a lopsided profile hurts more than before. **Data Insights is now a full third**, so the old habit of coasting through Integrated Reasoning is a costly mistake.",
+      "realExample": "A strong-Quant, weak-DI candidate who ignored Data Insights can score lower overall than a balanced candidate — the third that used to barely count now counts fully.",
+      "memoryHook": "Three equal thirds. A weak section (especially DI) drags the whole total." },
+    { "heading": "Adaptive: accuracy beats speed-guessing",
+      "body": "Each section is **computer-adaptive**, adjusting difficulty to your answers. Careless early errors can lower your difficulty path, but **rushing to finish blindly is worse** — aim for **steady accuracy** and use the timer as a guide, not a whip.",
+      "realExample": "Getting three easy questions wrong by rushing hurts more than spending your time and missing one hard one — the adaptive engine rewards consistent correctness.",
+      "memoryHook": "Adaptive rewards steady accuracy. Don't trade easy points for speed." },
+    { "heading": "Use the review & edit safety net",
+      "body": "You can **bookmark and change up to three answers per section**. Bank an answer for every question, **flag the ones you're unsure of**, and if time remains, revisit up to three. Never leave a question blank — the adaptive test needs an answer to move on.",
+      "realExample": "Finish a section with four minutes left? Reopen your two bookmarked coin-flips on the review screen and give them a second, calmer look — that's points the old GMAT never let you reclaim.",
+      "memoryHook": "Answer all, bookmark doubts, edit up to 3. A blank is a wasted safety net." }
+  ],
+  "recall": [
+    { "q": "What is the GMAT Focus total score range and step size?", "a": "205 to 805, in 10-point increments, from three equally-weighted sections." },
+    { "q": "Why can't you compare a GMAT Focus score to an old GMAT score directly?", "a": "It's a new scale with a different distribution, so you should compare using percentiles, not raw numbers." },
+    { "q": "Why does Data Insights matter more now?", "a": "It's equally weighted with Quant and Verbal — a full third of the total — not a minor add-on." },
+    { "q": "What does the adaptive format reward?", "a": "Steady accuracy — rushing and making careless early errors hurts more than spending time on fewer questions." },
+    { "q": "How does the review-and-edit feature work?", "a": "You can bookmark questions and change up to three answers per section before time expires." }
+  ],
+  "sources": ["https://www.mba.com/exams/gmat-exam/about/exam-structure", "https://www.mba.com/exams/gmat-exam/scores"]
+}

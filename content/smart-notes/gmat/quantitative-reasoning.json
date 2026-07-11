@@ -1,0 +1,43 @@
+{
+  "id": "gmat-quantitative-reasoning",
+  "exam": "gmat",
+  "section": "quant",
+  "title": "GMAT Quant: Problem Solving (No Data Sufficiency Here)",
+  "estMinutes": 7,
+  "summary": "GMAT Focus Quant is now pure Problem Solving — 21 questions of algebra and arithmetic reasoning, no geometry-heavy tricks, no calculator.",
+  "conceptMap": {
+    "central": "GMAT Quant (21 Qs, 45 min)",
+    "nodes": [
+      { "label": "Problem Solving only", "note": "Data Sufficiency moved to Data Insights" },
+      { "label": "Algebra & arithmetic", "note": "Word problems, ratios, percents, number properties" },
+      { "label": "No calculator", "note": "Mental & paper maths only" },
+      { "label": "~2 min/question", "note": "45 min for 21 questions" }
+    ]
+  },
+  "chunks": [
+    { "heading": "One question type: Problem Solving",
+      "body": "GMAT Focus Quant is **only Problem Solving** — standard five-option multiple-choice maths questions. **Data Sufficiency has moved to the Data Insights section**, so Quant is now a cleaner, single-format section of **21 questions in 45 minutes**.",
+      "realExample": "If you prepped from old GMAT material expecting Data Sufficiency in Quant, drop it here — you'll meet DS in Data Insights instead. Quant is pure 'solve and pick the answer'.",
+      "memoryHook": "Quant = Problem Solving only. Data Sufficiency lives in Data Insights now." },
+    { "heading": "It's reasoning, not heavy computation",
+      "body": "Content is **algebra and arithmetic** — word problems, ratios, percentages, number properties, basic statistics. There's **no on-screen calculator in Quant**, so the test rewards **smart setup and estimation**, not brute-force calculation.",
+      "realExample": "Instead of computing 17% of 350 exactly, estimate: 10% is 35, plus half again ≈ 52.5. Fast estimation often eliminates enough options to answer without exact arithmetic.",
+      "memoryHook": "No calculator = they want reasoning, not arithmetic. Estimate and eliminate." },
+    { "heading": "Plug in and back-solve",
+      "body": "Two reliable tactics: **plug in numbers** for variable-heavy questions, and **back-solve** by testing the answer choices (start with the middle value). These turn abstract algebra into concrete arithmetic you can check.",
+      "realExample": "For 'if the answer choices are 10, 20, 30, 40, 50', test 30 first: too big or small tells you which way to jump, so you rarely test more than two choices.",
+      "memoryHook": "Stuck on algebra? Plug in real numbers or back-solve from the middle choice." },
+    { "heading": "Pace and don't stall",
+      "body": "About **2 minutes per question**. Because it's **adaptive**, an early stumble matters — but so does finishing, so **don't sink five minutes into one question**. Bookmark a monster, make your best guess, and use the review screen if time allows.",
+      "realExample": "Two minutes in with no path forward? Eliminate what you can, guess, bookmark, and move — one skipped-but-guessed question costs far less than three rushed ones at the end.",
+      "memoryHook": "~2 min each. Never let one question eat five. Guess, bookmark, move." }
+  ],
+  "recall": [
+    { "q": "What question type does GMAT Focus Quant contain?", "a": "Only Problem Solving — Data Sufficiency has moved to the Data Insights section." },
+    { "q": "How many questions and minutes is the Quant section?", "a": "21 questions in 45 minutes (about 2 minutes each)." },
+    { "q": "Is a calculator allowed in GMAT Quant?", "a": "No — Quant has no on-screen calculator, so it rewards smart setup and estimation." },
+    { "q": "What are two reliable tactics for hard Quant questions?", "a": "Plugging in real numbers for variables, and back-solving by testing the answer choices from the middle." },
+    { "q": "What should you do when stuck on a Quant question?", "a": "Eliminate what you can, guess, bookmark it, and move on — don't let one question eat several minutes." }
+  ],
+  "sources": ["https://www.mba.com/exams/gmat-exam/about/exam-structure", "https://www.mba.com/exams/gmat-focus-edition/about/exam-content"]
+}

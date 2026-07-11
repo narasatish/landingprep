@@ -1,0 +1,44 @@
+{
+  "id": "gmat-format-overview",
+  "exam": "gmat",
+  "section": "overview",
+  "title": "GMAT Focus Edition: The One-Glance Format",
+  "estMinutes": 7,
+  "summary": "Three 45-minute sections, a 205–805 score, and two powers the old GMAT never gave you: choose your order and edit answers.",
+  "conceptMap": {
+    "central": "GMAT Focus (2h 15m)",
+    "nodes": [
+      { "label": "Quantitative", "note": "21 questions · Problem Solving · 45 min" },
+      { "label": "Verbal", "note": "23 questions · RC + Critical Reasoning · 45 min" },
+      { "label": "Data Insights", "note": "20 questions · the new data section · 45 min" },
+      { "label": "Choose your order", "note": "Take the 3 sections in any order" },
+      { "label": "Review & edit", "note": "Bookmark and change up to 3 answers per section" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Three equal sections, 45 minutes each",
+      "body": "The GMAT Focus Edition has **three 45-minute sections — Quantitative Reasoning, Verbal Reasoning and Data Insights — for a total of 2 hours 15 minutes** (about an hour shorter than the old GMAT). Each section is **equally weighted** in your total score.",
+      "realExample": "Unlike the old GMAT, there's no essay (AWA) and no separate Integrated Reasoning tacked on — Data Insights absorbed that role and now counts fully toward your score.",
+      "memoryHook": "3 sections × 45 min, all equal. No essay. Data Insights counts now." },
+    { "heading": "You choose the section order",
+      "body": "You pick **which of the three sections to take first, second and third**. Play to your energy: **lead with your strongest section** to bank confidence, or your weakest while fresh — but decide your order in advance so you're not choosing under pressure.",
+      "realExample": "A candidate who tightens up on Quant might do Verbal first to settle in; another might attack Quant first while sharpest. Rehearse your chosen order in every practice test.",
+      "memoryHook": "Your order, your call. Pick a strategy and rehearse it — don't improvise on test day." },
+    { "heading": "You can bookmark and edit answers",
+      "body": "Within each section you can **bookmark questions and change up to three answers** before time runs out (using the question review & edit screen). This rewards a **two-pass approach**: answer everything, flag the shaky ones, then revisit.",
+      "realExample": "Unsure between two answers? Lock one in, bookmark it, and if you have time at the end, the review screen lets you reconsider up to three — a safety net the old GMAT never offered.",
+      "memoryHook": "Bookmark + edit up to 3 per section. Answer all, flag doubts, revisit." },
+    { "heading": "It's adaptive and scored 205–805",
+      "body": "The GMAT is **computer-adaptive** — each section adjusts difficulty to your performance — and your **total score runs 205–805** in 10-point steps, built from all three equally-weighted sections. Business schools compare **percentiles**, so check your target programme's typical range.",
+      "realExample": "Because sections are equal, a lopsided profile (great Quant, weak Verbal) drags your total more than on the old GMAT — balance across all three now matters.",
+      "memoryHook": "205–805, adaptive, 3 equal sections. Balance beats one heroic section." }
+  ],
+  "recall": [
+    { "q": "What are the three GMAT Focus sections and how long is each?", "a": "Quantitative Reasoning, Verbal Reasoning and Data Insights — each 45 minutes, 2 hours 15 minutes total." },
+    { "q": "What two flexibilities does GMAT Focus give test takers?", "a": "You can choose the order of the three sections and bookmark and edit up to three answers per section." },
+    { "q": "What is the GMAT Focus total score range?", "a": "205 to 805, in 10-point increments, from three equally-weighted sections." },
+    { "q": "What happened to the essay (AWA) and Integrated Reasoning?", "a": "The essay was removed and Integrated Reasoning evolved into the Data Insights section, which now counts fully toward the score." },
+    { "q": "Why does a balanced profile matter more on GMAT Focus?", "a": "All three sections are equally weighted, so a weak section drags the total more than on the old GMAT." }
+  ],
+  "sources": ["https://www.mba.com/exams/gmat-exam/about/exam-structure", "https://www.mba.com/exams/gmat-focus-edition/about/exam-content"]
+}

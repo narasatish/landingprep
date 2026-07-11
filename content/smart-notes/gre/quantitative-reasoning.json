@@ -1,0 +1,44 @@
+{
+  "id": "gre-quantitative-reasoning",
+  "exam": "gre",
+  "section": "quant",
+  "title": "GRE Quant: Question Types & the Comparison Trick",
+  "estMinutes": 7,
+  "summary": "Quantitative Comparison, multiple choice, numeric entry and data interpretation — school-level maths, tested cleverly.",
+  "conceptMap": {
+    "central": "GRE Quant (27 Qs, 2 sections)",
+    "nodes": [
+      { "label": "Quantitative Comparison", "note": "Compare A vs B → 4 fixed choices" },
+      { "label": "Multiple choice", "note": "One or one-or-more correct answers" },
+      { "label": "Numeric Entry", "note": "Type the number — no options" },
+      { "label": "Data Interpretation", "note": "Read graphs & tables to answer" },
+      { "label": "On-screen calculator", "note": "Provided — use it wisely" }
+    ]
+  },
+  "chunks": [
+    { "heading": "The maths is basic — the traps aren't",
+      "body": "GRE Quant covers **arithmetic, algebra, geometry and data analysis at roughly high-school level**. The difficulty is in **careful reading and avoiding traps**, not advanced maths. An **on-screen calculator** is provided, so speed comes from setup, not arithmetic.",
+      "realExample": "A question looks like it needs heavy computation but is really testing whether you noticed 'x is negative' — the trap rewards the reader, not the fastest calculator.",
+      "memoryHook": "Easy maths, sneaky wording. Read twice, compute once." },
+    { "heading": "Quantitative Comparison — the four choices never change",
+      "body": "You compare **Quantity A and Quantity B** and pick: A is greater, B is greater, they're equal, or **it cannot be determined**. The winning move: **test edge cases** — try negatives, zero, and fractions before deciding.",
+      "realExample": "If x² > x looks like 'A is greater', test x = 1/2: then x² < x. One counter-example flips it to 'cannot be determined'. Always try 0, 1, a negative, and a fraction.",
+      "memoryHook": "QC = same four choices always. Plug in 0, 1, −1, ½ before you commit." },
+    { "heading": "Numeric Entry & multi-answer — read the instruction",
+      "body": "**Numeric Entry** gives no options — you **type the exact number** (mind units and rounding). Some multiple-choice questions ask for **one or more** correct answers — check whether it's 'select one' or 'select all that apply' before answering.",
+      "realExample": "A 'select all' question with 8 options may have 3 correct — miss one and you get zero. Read 'Indicate all such values' as a flag to check every option, not stop at the first.",
+      "memoryHook": "No options = type it (watch units). 'Select all' = check every option." },
+    { "heading": "Data Interpretation — one dataset, several questions",
+      "body": "A graph or table feeds **a small set of questions**. Spend a moment **understanding the axes, units and what's being counted** before answering — the same misread (e.g. thousands vs millions) can sink every question in the set.",
+      "realExample": "If the y-axis is 'in millions', an answer of '5' means 5,000,000. Getting the units right once protects the whole set of questions on that chart.",
+      "memoryHook": "Read the axes and units first. One misread sinks the whole set." }
+  ],
+  "recall": [
+    { "q": "What level of maths does GRE Quant test, and is a calculator provided?", "a": "Roughly high-school arithmetic, algebra, geometry and data analysis, with an on-screen calculator provided." },
+    { "q": "What are the four fixed answer choices in Quantitative Comparison?", "a": "Quantity A is greater, Quantity B is greater, the two are equal, or it cannot be determined." },
+    { "q": "What's the key technique for Quantitative Comparison?", "a": "Test edge cases — plug in 0, 1, a negative and a fraction before deciding." },
+    { "q": "What must you watch for in Numeric Entry questions?", "a": "There are no options — you type the exact number, minding units and any rounding instruction." },
+    { "q": "What should you check first on a Data Interpretation graph?", "a": "The axes, units and what's being counted — a single misread can affect every question in the set." }
+  ],
+  "sources": ["https://www.ets.org/gre/test-takers/general-test/prepare/content/quantitative-reasoning.html"]
+}

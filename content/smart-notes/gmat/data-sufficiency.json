@@ -1,0 +1,43 @@
+{
+  "id": "gmat-data-sufficiency",
+  "exam": "gmat",
+  "section": "data-insights",
+  "title": "GMAT Data Sufficiency: Master the Five Choices",
+  "estMinutes": 7,
+  "summary": "The GMAT's most misunderstood question — a deep dive into judging sufficiency instead of solving, with the AD/BCE shortcut.",
+  "conceptMap": {
+    "central": "Data Sufficiency logic",
+    "nodes": [
+      { "label": "The question", "note": "Statements 1 & 2 — is each enough?" },
+      { "label": "Five fixed choices", "note": "1, 2, both, either, or neither" },
+      { "label": "Don't solve", "note": "Judge sufficiency, stop there" },
+      { "label": "AD / BCE grid", "note": "Eliminate systematically" }
+    ]
+  },
+  "chunks": [
+    { "heading": "You judge sufficiency, you don't solve",
+      "body": "A Data Sufficiency item gives a question and **two statements**. Your job is to decide **whether the information is enough to answer** — not to produce the number. **The five answer choices never change**, so memorise them: (A) statement 1 alone, (B) statement 2 alone, (C) both together, (D) either alone, (E) neither.",
+      "realExample": "'What is x?' If statement 1 says 'x is even' and statement 2 says 'x = 4', you don't care that x is 4 for its own sake — you note that statement 2 alone pins it down, so the answer is (B).",
+      "memoryHook": "The question is 'ENOUGH?', never 'what's the value?'. Five choices, memorised cold." },
+    { "heading": "Test each statement alone, first",
+      "body": "Always evaluate **statement 1 by itself, then statement 2 by itself, before combining**. Combining too early is the classic error — it makes insufficient statements look sufficient because you've smuggled in the other one.",
+      "realExample": "If statement 1 alone answers it AND statement 2 alone answers it, the answer is (D) 'either alone' — you'd miss that if you jumped straight to combining them.",
+      "memoryHook": "One at a time BEFORE together. Combining early fakes sufficiency." },
+    { "heading": "Use the AD / BCE elimination grid",
+      "body": "A fast framework: if **statement 1 is sufficient**, the answer is **A or D** (cross off B, C, E). If **statement 1 is not sufficient**, it's **B, C or E** (cross off A and D). Then test statement 2 to finish. This turns five options into two or three quickly.",
+      "realExample": "Statement 1 works → you're in 'AD'. Now check statement 2: if it also works alone, it's D; if not, it's A. Two clean decisions instead of juggling five options.",
+      "memoryHook": "Statement 1 works → AD. Doesn't → BCE. Then check statement 2." },
+    { "heading": "Beware the 'looks sufficient' trap",
+      "body": "A statement can seem to pin down an answer but leave **two possibilities** — often a **positive/negative or an integer/fraction** case. Before calling something sufficient, ask **'could there be another value that also fits?'**",
+      "realExample": "'x² = 16' feels sufficient for 'what is x?' but x could be 4 OR −4 — two values, so it's NOT sufficient. Always test whether a second case sneaks in.",
+      "memoryHook": "Before you say 'sufficient', hunt a second value (±, integer vs fraction)." }
+  ],
+  "recall": [
+    { "q": "What is your task in a Data Sufficiency question?", "a": "To judge whether the statements provide enough information to answer — not to solve for the value." },
+    { "q": "What do the five Data Sufficiency answer choices represent?", "a": "Statement 1 alone, statement 2 alone, both together, either alone, or neither is sufficient." },
+    { "q": "Why must you test each statement alone before combining them?", "a": "Combining too early makes insufficient statements look sufficient by smuggling in the other statement." },
+    { "q": "What does the AD/BCE grid do?", "a": "If statement 1 is sufficient the answer is A or D; if not, it's B, C or E — narrowing five choices to a couple." },
+    { "q": "What's a common 'looks sufficient' trap?", "a": "A statement that leaves two possible values, such as x² = 16 giving x = 4 or −4, which is not sufficient." }
+  ],
+  "sources": ["https://www.mba.com/exams/gmat-focus-edition/about/exam-content", "https://www.mba.com/exams/gmat-exam/prep-for-the-exam/prep-strategies/data-insights"]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "gre-analytical-writing",
+  "exam": "gre",
+  "section": "writing",
+  "title": "GRE Analytical Writing: The Analyze an Issue Essay",
+  "estMinutes": 6,
+  "summary": "The single 30-minute GRE essay — how to build a clear, well-supported argument that scores 5+.",
+  "conceptMap": {
+    "central": "Analyze an Issue (30 min, 0–6)",
+    "nodes": [
+      { "label": "Take a position", "note": "Respond to the specific instructions" },
+      { "label": "Reasons + examples", "note": "Each body paragraph: one reason, real support" },
+      { "label": "Address the other side", "note": "Acknowledge a counter-view, then rebut" },
+      { "label": "Clear structure", "note": "Intro → 2–3 bodies → conclusion" }
+    ]
+  },
+  "chunks": [
+    { "heading": "One essay, and it's about reasoning",
+      "body": "The current GRE has **one 30-minute Analytical Writing task: 'Analyze an Issue'** (the old Argument essay is gone). You **take a position on a claim and support it**. The score (0–6, half points) rewards **the quality of your reasoning and clarity**, not your opinion.",
+      "realExample": "The prompt might claim 'Universities should require every student to take science courses.' You can agree, disagree or qualify — what's marked is how logically and clearly you defend your stance.",
+      "memoryHook": "It grades your THINKING, not your side. One 30-minute essay, that's it." },
+    { "heading": "Follow the specific instruction",
+      "body": "Each Issue prompt comes with a **specific task line** ('Discuss the extent to which you agree… and explain your reasoning', or 'address the most compelling reasons someone could disagree'). **Answer that exact instruction** — ignoring it caps your score however good the prose.",
+      "realExample": "If the instruction says 'address views that oppose yours', an essay that only argues one side loses marks even if it's well written. Reread the task line before you plan.",
+      "memoryHook": "The instruction line is the rubric. Do exactly what it asks." },
+    { "heading": "Structure: reason + real example per paragraph",
+      "body": "Use a clear shape: **intro** (position), **2–3 body paragraphs** each with **one reason and a specific example**, a paragraph that **concedes and rebuts a counter-view**, and a short **conclusion**. Specific, concrete examples beat vague generalities.",
+      "realExample": "Instead of 'science helps society', write 'requiring statistics would help non-scientists judge medical claims, as the COVID data debates showed'. Concrete beats abstract every time.",
+      "memoryHook": "One reason + one concrete example per paragraph. Concede once, then rebut." },
+    { "heading": "Spend 5 minutes planning",
+      "body": "Plan for about **5 of the 30 minutes**: pick your position, jot 2–3 reasons with an example each, and note the counter-argument. A planned essay reads as coherent; an unplanned one drifts. Leave 2–3 minutes to proofread.",
+      "realExample": "Scribble: 'Pos: agree with qualification | R1: literacy in data (COVID) | R2: interdisciplinary jobs | Counter: overload → rebut: one course, not a major'. That outline is the whole essay.",
+      "memoryHook": "5 to plan, 22 to write, 3 to check. A plan is the difference between 4 and 5+." }
+  ],
+  "recall": [
+    { "q": "How many essays are on the current GRE, and how long?", "a": "One — the 'Analyze an Issue' task, 30 minutes (the Argument essay was removed)." },
+    { "q": "What does the Analytical Writing score reward?", "a": "The quality and clarity of your reasoning, not which side you take." },
+    { "q": "Why must you read the prompt's specific instruction line?", "a": "Each Issue prompt has a task line you must address exactly; ignoring it caps your score." },
+    { "q": "What should each body paragraph contain?", "a": "One reason supported by a specific, concrete example." },
+    { "q": "How should you split the 30 minutes?", "a": "About 5 minutes planning, ~22 writing and 2–3 proofreading." }
+  ],
+  "sources": ["https://www.ets.org/gre/test-takers/general-test/prepare/content/analytical-writing.html"]
+}
