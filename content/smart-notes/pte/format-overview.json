@@ -1,0 +1,44 @@
+{
+  "id": "pte-format-overview",
+  "exam": "pte",
+  "section": "overview",
+  "title": "PTE Academic Format: The One-Glance Overview",
+  "estMinutes": 7,
+  "summary": "The 3-part, ~2-hour, AI-scored structure of PTE Academic — and why 'integrated skills' is the whole game.",
+  "conceptMap": {
+    "central": "PTE Academic (~2 hours)",
+    "nodes": [
+      { "label": "Speaking & Writing", "note": "~76–84 min · Read Aloud, Describe Image, essay & more" },
+      { "label": "Reading", "note": "Fill-in-blanks, MCQ, Reorder Paragraph" },
+      { "label": "Listening", "note": "Summarize Spoken Text, Write from Dictation & more" },
+      { "label": "AI-scored", "note": "10–90 Global Scale of English" },
+      { "label": "Integrated skills", "note": "One task can score two skills at once" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Three parts, about two hours",
+      "body": "PTE Academic runs in **three parts** in a fixed order: **Speaking & Writing** (about 76–84 minutes), then **Reading**, then **Listening**. In total you'll answer **65–75 questions** drawn from about **22 question types**, all on a computer at a test centre.",
+      "realExample": "You sit down, put on the headset, and the first thing you do is a short spoken 'Personal Introduction' that isn't even scored — then straight into Read Aloud. No long reading passages to warm up on.",
+      "memoryHook": "Order never changes: Speak+Write → Read → Listen. S-W-R-L." },
+    { "heading": "It's scored by AI, 10–90",
+      "body": "Your responses are marked by **Pearson's AI scoring**, with some responses also reviewed by a human, on the **10–90 Global Scale of English (GSE)**. Machine scoring means **consistency and speed** — results usually come within a couple of days — but also that **clarity and timing matter more than clever, risky answers**.",
+      "realExample": "In Read Aloud, a steady, clearly-pronounced read scores better than a fast, dramatic one — the AI rewards fluency and intelligibility, not performance.",
+      "memoryHook": "A machine is listening. Be clear, steady and on-time — not fancy." },
+    { "heading": "Integrated skills — one task, two scores",
+      "body": "PTE's defining feature: many tasks are **integrated**, so a single task feeds **more than one skill score**. Read Aloud counts for **speaking and reading**; Write from Dictation counts for **listening and writing**; Summarize Written Text counts for **reading and writing**.",
+      "realExample": "Nail 'Write from Dictation' (just type the sentence you hear, exactly) and you quietly boost BOTH your Listening and your Writing score from one 15-second task. High value for low effort.",
+      "memoryHook": "Some tasks pay double. Hunt the two-skill tasks — they're the best ROI." },
+    { "heading": "What this means for your prep",
+      "body": "Because scoring is integrated and automated, **prioritise the high-value repeatable tasks** (Read Aloud, Repeat Sentence, Write from Dictation) and practise **timing and clarity** over memorised templates. Every task has a strict on-screen timer.",
+      "realExample": "A candidate weak in Writing lifted their Writing score mainly by drilling Write from Dictation and Summarize Written Text — Listening and Reading tasks that also feed Writing.",
+      "memoryHook": "Train the double-scoring tasks first. They lift two bars at once." }
+  ],
+  "recall": [
+    { "q": "What are the three parts of PTE Academic, in order?", "a": "Speaking & Writing, then Reading, then Listening." },
+    { "q": "How is PTE Academic scored, and on what scale?", "a": "By Pearson's AI (with some human review) on the 10–90 Global Scale of English." },
+    { "q": "What does 'integrated skills' mean in PTE?", "a": "A single task can contribute to more than one skill score — e.g. Read Aloud scores speaking and reading." },
+    { "q": "Which task boosts both Listening and Writing at once?", "a": "Write from Dictation — you type the sentence you hear, and it feeds both scores." },
+    { "q": "Roughly how long is the test and how many questions?", "a": "About two hours, with 65–75 questions across roughly 22 question types." }
+  ],
+  "sources": ["https://www.pearsonpte.com/pte-academic/test-format/", "https://www.pearsonpte.com/pte-academic/scoring/"]
+}

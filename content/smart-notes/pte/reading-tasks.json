@@ -1,0 +1,44 @@
+{
+  "id": "pte-reading-tasks",
+  "exam": "pte",
+  "section": "reading",
+  "title": "PTE Reading: The Five Task Types",
+  "estMinutes": 7,
+  "summary": "Fill in the Blanks, Multiple Choice and Reorder Paragraph — what each asks and where the easy marks are.",
+  "conceptMap": {
+    "central": "PTE Reading tasks",
+    "nodes": [
+      { "label": "Fill in Blanks (dropdown)", "note": "Pick words from menus (reading + writing)" },
+      { "label": "Fill in Blanks (drag-drop)", "note": "Drag words into gaps" },
+      { "label": "Reorder Paragraph", "note": "Drag jumbled boxes into order" },
+      { "label": "MCQ, single answer", "note": "One correct option" },
+      { "label": "MCQ, multiple answers", "note": "Careful — wrong picks lose marks" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Fill in the Blanks — the reading workhorses",
+      "body": "Two versions: **dropdown** (choose the right word from a menu in each gap — this one also feeds your **writing** score) and **drag-and-drop** (drag words from a box into gaps). Both reward **grammar and collocation** sense — which word simply *fits*.",
+      "realExample": "Gap: 'a ___ increase in prices' → the options might include 'sharp', 'sharply', 'sharpen'. Grammar picks 'sharp' (adjective before noun). Read the words around the gap, not just the gap.",
+      "memoryHook": "The words either side of the blank tell you the answer. Read the collocation." },
+    { "heading": "Reorder Paragraph — find the opener first",
+      "body": "You get jumbled text boxes and **drag them into the logical order**. The trick: **find the sentence that can stand alone as an opener** (no 'this', 'they', 'however' pointing back), then follow the referring words and linkers to chain the rest.",
+      "realExample": "A box starting 'However, this later failed…' can never be first — 'However' and 'this' point backward. The opener is usually the one naming the topic in full.",
+      "memoryHook": "The opener has no backward-pointing words. Then follow this/these/however like breadcrumbs." },
+    { "heading": "Multiple Choice — mind the negative marking",
+      "body": "**Single answer**: pick the one correct option (safe). **Multiple answers**: select all correct options — but **wrong selections lose marks**, so only tick what you're sure of. Don't select everything hoping to catch them all.",
+      "realExample": "On a 'multiple answers' question, picking 3 options where only 2 are right can score the same as picking just the 2 you're confident about — guess-all is a trap.",
+      "memoryHook": "Multiple-answer = only tick what you're sure of. Wrong picks bite back." },
+    { "heading": "Speed and timing",
+      "body": "Reading is **section-timed**, not per-question, so **budget your time** and don't sink minutes into one Reorder Paragraph. Answer the quick single-answer and fill-in-blanks items first, then spend leftover time on the fiddly reorder.",
+      "realExample": "Stuck on a reorder after 90 seconds? Lock in your best order and move on — an imperfect reorder still earns partial marks for correctly-adjacent pairs.",
+      "memoryHook": "Quick wins first. Reorder gives partial marks — never let it eat the clock." }
+  ],
+  "recall": [
+    { "q": "Which PTE reading task also contributes to your writing score?", "a": "Fill in the Blanks (dropdown / 'Reading and Writing: Fill in the Blanks')." },
+    { "q": "How do you find the first box in Reorder Paragraph?", "a": "Find the sentence that stands alone with no backward-pointing words (this, they, however), usually the one naming the topic in full." },
+    { "q": "Why be cautious on 'Multiple Choice, Multiple Answers'?", "a": "Wrong selections lose marks, so only select the options you're confident are correct." },
+    { "q": "How is the Reading section timed?", "a": "It's section-timed overall, not per question, so you must budget time across the tasks." },
+    { "q": "What's the fastest way to answer Fill in the Blanks?", "a": "Read the words on either side of the gap and pick by grammar and collocation — the word that simply fits." }
+  ],
+  "sources": ["https://www.pearsonpte.com/pte-academic/test-format/reading/"]
+}

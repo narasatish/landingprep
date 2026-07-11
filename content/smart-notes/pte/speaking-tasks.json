@@ -1,0 +1,44 @@
+{
+  "id": "pte-speaking-tasks",
+  "exam": "pte",
+  "section": "speaking",
+  "title": "PTE Speaking: Every Task and How to Score It",
+  "estMinutes": 8,
+  "summary": "Read Aloud, Repeat Sentence, Describe Image, Retell Lecture and the rest — what the AI rewards, task by task.",
+  "conceptMap": {
+    "central": "PTE Speaking tasks",
+    "nodes": [
+      { "label": "Read Aloud", "note": "Speak the text on screen (speaking + reading)" },
+      { "label": "Repeat Sentence", "note": "Hear it, say it back exactly (listening + speaking)" },
+      { "label": "Describe Image", "note": "Describe a chart/picture aloud" },
+      { "label": "Retell Lecture", "note": "Summarise a short lecture in your words" },
+      { "label": "Answer Short Question", "note": "One or a few words" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Fluency and pronunciation are the scores",
+      "body": "Across almost every speaking task the AI marks two things: **oral fluency** (a steady, natural flow without long pauses or restarts) and **pronunciation** (clear, intelligible sounds). **Content matters, but a fluent, clear delivery is what separates a good score from an average one.**",
+      "realExample": "In Read Aloud, a candidate who reads at a calm, even pace with no stumbles beats one who reads faster but restarts twice — even if both cover every word.",
+      "memoryHook": "Flow beats speed. Never restart — a stumble costs less than a stop." },
+    { "heading": "Read Aloud & Repeat Sentence — the double-scorers",
+      "body": "**Read Aloud**: a short text appears; after a short prep, read it aloud (scores **speaking + reading**). **Repeat Sentence**: hear a sentence once and say it back exactly (scores **listening + speaking**). Both are high-value because they feed two skills.",
+      "realExample": "Repeat Sentence tip: don't try to 'understand' long sentences — chunk them into 3–4 word groups and echo the rhythm. Getting most words in the right order scores well.",
+      "memoryHook": "Read Aloud = speak+read. Repeat Sentence = listen+speak. Two-for-one." },
+    { "heading": "Describe Image & Retell Lecture — structure saves you",
+      "body": "**Describe Image**: describe a graph, map or picture aloud. **Retell Lecture**: listen to a short lecture, then recount it. For both, a **fixed spoken template** keeps you fluent: open → 2–3 key features → a closing line, filling the whole time without pausing.",
+      "realExample": "Describe Image opener you can reuse: 'This image shows… The most striking feature is… followed by… Overall, it suggests…' — a scaffold that stops you freezing on an unfamiliar chart.",
+      "memoryHook": "Have a reusable opener + closer. Fill the time; silence is the only real fail." },
+    { "heading": "The short ones and the newer tasks",
+      "body": "**Answer Short Question**: reply in one or a few words. PTE has also added tasks like **Summarize Group Discussion** and **Respond to a Situation** — listen to a scenario or discussion, then give a spoken response. Same rule: **keep talking clearly until the time or your point is done.**",
+      "realExample": "Answer Short Question: 'What do we call frozen water?' → just say 'ice.' Don't over-explain — these are quick, factual, one-word wins.",
+      "memoryHook": "Short question = short answer. Everything else: fill the time, stay clear." }
+  ],
+  "recall": [
+    { "q": "What two things does the AI score across most PTE speaking tasks?", "a": "Oral fluency (steady, natural flow) and pronunciation (clear, intelligible speech)." },
+    { "q": "Which two skills does Read Aloud contribute to?", "a": "Speaking and reading." },
+    { "q": "What is the best strategy if you can't remember a full sentence in Repeat Sentence?", "a": "Chunk it into 3–4 word groups and echo the rhythm — getting most words in order still scores." },
+    { "q": "Why use a fixed template for Describe Image and Retell Lecture?", "a": "It keeps you fluent and fills the time without pausing, which protects your fluency score." },
+    { "q": "What should you avoid at all costs in the speaking tasks?", "a": "Long pauses and restarts — silence and stopping hurt the fluency score most." }
+  ],
+  "sources": ["https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/"]
+}

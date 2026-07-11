@@ -1,0 +1,43 @@
+{
+  "id": "pte-integrated-scoring",
+  "exam": "pte",
+  "section": "scoring",
+  "title": "PTE Scoring: The Integrated-Skills Strategy",
+  "estMinutes": 6,
+  "summary": "How PTE's 10–90 AI scoring and 'one task, two skills' design should reshape what you practise.",
+  "conceptMap": {
+    "central": "PTE scoring (10–90 GSE)",
+    "nodes": [
+      { "label": "AI-scored", "note": "Consistent, fast; rewards clarity & timing" },
+      { "label": "Integrated tasks", "note": "One task feeds two skill scores" },
+      { "label": "Enabling skills", "note": "Grammar, fluency, pronunciation, spelling" },
+      { "label": "Partial credit", "note": "Most tasks award marks per correct element" }
+    ]
+  },
+  "chunks": [
+    { "heading": "The 10–90 Global Scale of English",
+      "body": "PTE reports an **overall score and four skill scores (Listening, Reading, Speaking, Writing) on a 10–90 scale**, aligned to the Global Scale of English. Universities and visa authorities set their own required scores, so **check your target's exact requirement** rather than assuming a number.",
+      "realExample": "A programme asking for 'PTE 65' wants an overall 65; some also set a minimum per skill (e.g. no skill below 58). Always read both the overall AND the per-skill minimums.",
+      "memoryHook": "Overall + four skills, all 10–90. Check the per-skill minimum too, not just overall." },
+    { "heading": "Integrated tasks change what's worth practising",
+      "body": "Because many tasks score **two skills at once**, the smartest prep targets the **double-scoring tasks**: Read Aloud (speaking+reading), Repeat Sentence (listening+speaking), Write from Dictation and Summarize Spoken Text (listening+writing), Summarize Written Text (reading+writing).",
+      "realExample": "If your Writing is weakest, you don't only practise essays — you drill Write from Dictation and Summarize Spoken Text, because those Listening tasks also lift your Writing score.",
+      "memoryHook": "Weak in one skill? Train the tasks that feed it from ANOTHER section." },
+    { "heading": "Enabling skills and partial credit",
+      "body": "Beneath the four skills, the AI scores **'enabling skills'** — grammar, oral fluency, pronunciation, spelling, vocabulary — that cut across tasks. And most tasks give **partial credit**: you earn marks for each correct word, box or option, so **attempt everything**; a partial answer beats a blank.",
+      "realExample": "A half-correct Reorder Paragraph still scores the pairs you got adjacent; a half-typed dictation still scores the right words. Never leave an item empty.",
+      "memoryHook": "Partial credit everywhere — always attempt. Clean grammar & spelling lift every task." },
+    { "heading": "Play to the machine",
+      "body": "AI scoring is **consistent and literal**: it rewards **clear pronunciation, steady fluency, correct grammar and staying within word/format limits** — and it won't be charmed by risky, complex answers that misfire. **Simple, correct and on-time wins.**",
+      "realExample": "A calm, clearly-pronounced Read Aloud with no restarts outscores a faster, expressive read that stumbles — the AI is measuring intelligibility, not personality.",
+      "memoryHook": "Write for the machine: clear, correct, in-range, on-time. No heroics." }
+  ],
+  "recall": [
+    { "q": "What does PTE Academic report, and on what scale?", "a": "An overall score plus four skill scores (Listening, Reading, Speaking, Writing) on the 10–90 Global Scale of English." },
+    { "q": "Why should a weak skill be trained through other sections' tasks?", "a": "Because integrated tasks score two skills at once — e.g. Listening tasks like Write from Dictation also feed the Writing score." },
+    { "q": "What are 'enabling skills'?", "a": "Cross-cutting elements the AI scores — grammar, oral fluency, pronunciation, spelling and vocabulary." },
+    { "q": "Why should you attempt every item?", "a": "Most PTE tasks give partial credit for each correct word, box or option, so a partial answer beats a blank." },
+    { "q": "What kind of answers does the AI reward?", "a": "Clear, correct, in-range and on-time responses — not risky, complex ones that may misfire." }
+  ],
+  "sources": ["https://www.pearsonpte.com/pte-academic/scoring/", "https://www.pearsonpte.com/pte-academic/test-format/"]
+}

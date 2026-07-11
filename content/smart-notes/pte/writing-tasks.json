@@ -1,0 +1,43 @@
+{
+  "id": "pte-writing-tasks",
+  "exam": "pte",
+  "section": "writing",
+  "title": "PTE Writing: Summarize Written Text & Essay",
+  "estMinutes": 7,
+  "summary": "The two PTE writing tasks — a one-sentence summary and a 200–300 word essay — and the exact rules the AI checks.",
+  "conceptMap": {
+    "central": "PTE Writing tasks",
+    "nodes": [
+      { "label": "Summarize Written Text", "note": "ONE sentence, max 75 words (reading + writing)" },
+      { "label": "Write Essay", "note": "200–300 words, argumentative" },
+      { "label": "Form rules", "note": "Word count & one-sentence rule are scored" },
+      { "label": "Grammar + spelling", "note": "Accuracy counts heavily for the AI" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Summarize Written Text — exactly one sentence",
+      "body": "Read a passage and write a **single sentence of no more than 75 words** that captures its main point. The **one-sentence rule is strict**: use a full stop anywhere in the middle and you can lose the form mark entirely. It scores **reading and writing** together.",
+      "realExample": "Combine ideas with linkers instead of full stops: 'Although X, the passage argues that Y, because Z.' One long, grammatical sentence — comma and 'because', never a period until the end.",
+      "memoryHook": "One sentence, one full stop, ≤75 words. A second full stop = zero for form." },
+    { "heading": "Write Essay — 200 to 300 words, argue clearly",
+      "body": "Write a **200–300 word** argumentative essay responding to a prompt. Stay **inside the word range** (too short or too long is penalised), take a **clear position**, and organise it into intro → body paragraphs → conclusion.",
+      "realExample": "A safe, AI-friendly shape: intro (paraphrase + your position), two body paragraphs (each one reason + one example), a short conclusion restating the position. ~250 words, every time.",
+      "memoryHook": "250 words, 4 paragraphs, one clear position. Stay in the 200–300 lane." },
+    { "heading": "The AI rewards correctness over flair",
+      "body": "Machine scoring weighs **grammar, spelling, vocabulary range and structure**. Clean, correct sentences beat ambitious ones with errors. **Leave 30 seconds to proofread** for typos and subject–verb agreement — cheap points the AI notices.",
+      "realExample": "'The government should to invest' loses marks a human might forgive; the AI won't. A quick reread catches exactly these slips.",
+      "memoryHook": "Correct beats clever. Always leave 30 seconds to proofread." },
+    { "heading": "Templates help — but fill them with real content",
+      "body": "A memorised **essay skeleton** keeps you fast and organised, but the AI scores **relevance to the prompt** too — so your reasons and examples must actually address the question, not just fill the template.",
+      "realExample": "If the prompt is about remote work, a generic 'technology has changed our lives' intro scores worse than one that names the actual topic in the first sentence.",
+      "memoryHook": "Template for the frame, real content for the marks. Name the topic early." }
+  ],
+  "recall": [
+    { "q": "What is the strict form rule for Summarize Written Text?", "a": "It must be one single sentence of no more than 75 words — a second full stop can cost you the form mark." },
+    { "q": "Which two skills does Summarize Written Text score?", "a": "Reading and writing." },
+    { "q": "What is the word range for the PTE essay, and why does it matter?", "a": "200–300 words; going under or over the range is penalised." },
+    { "q": "What does the AI weigh most in PTE writing?", "a": "Grammar, spelling, vocabulary range and structure — correctness over ambitious but error-prone writing." },
+    { "q": "Why must your essay name the actual topic early?", "a": "The AI also scores relevance to the prompt, so a generic template intro scores worse than one that addresses the question." }
+  ],
+  "sources": ["https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/"]
+}
