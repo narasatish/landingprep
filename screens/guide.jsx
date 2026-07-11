@@ -91,6 +91,9 @@ function ExamGuide({ exam, exams, onBack, onPractice, onNav, onSelectExam }) {
                 : mockId
                 ? <button className="btn btn-primary" onClick={() => { window.location.hash = '#/exam-prep/' + mockId; }}>{aliasName ? `Practise with ${aliasName} mocks →` : "Start mock test →"}</button>
                 : <a className="btn btn-primary" href="#guide-format">Read the full guide ↓</a>}
+              {["ielts", "toefl"].includes(exam.id) && (
+                <a className="btn" href={"/learn/" + exam.id + "/"}>📚 Smart Notes →</a>
+              )}
               <a className="btn" href={exam.official} target="_blank" rel="noopener noreferrer">Official site ↗</a>
               <a className="btn" href={exam.booking} target="_blank" rel="noopener noreferrer">Book your slot ↗</a>
             </div>

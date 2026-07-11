@@ -509,6 +509,7 @@ ${(() => {
 })()}
 ${faqBlock(faqs)}
 ${relatedGrid([
+  ...(["ielts", "toefl"].includes(id) ? [{ label: `${e.short} Smart Notes — visual lessons & recall`, href: `/learn/${id}/` }] : []),
   { label: `${e.short} practice test (section by section)`, href: `/practice/${id}/` },
   { label: `${e.short} score calculator & converter`, href: `/tools/english-test-score-converter/` },
   { label: `${e.short} speaking & writing practice`, href: `/#/agents` },
@@ -553,6 +554,7 @@ function practicePage(id) {
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free ${e.short} full mock test`, href: `/mock-test/${id}/` },
+  ...(["ielts", "toefl"].includes(id) ? [{ label: `${e.short} Smart Notes — visual lessons & recall`, href: `/learn/${id}/` }] : []),
   { label: `${e.short} eligibility by country`, href: `/eligibility/` },
   { label: `Free study tools`, href: `/tools/english-test-score-converter/` },
   { label: `All free exams`, href: `/#/exam-prep` },
