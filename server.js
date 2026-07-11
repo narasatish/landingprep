@@ -25,6 +25,7 @@ const fs      = require("fs");
 const path    = require("path");
 const express = require("express");
 const cors    = require("cors");
+const compression = require("compression");
 
 const app  = express();
 const PORT = parseInt(process.env.PORT || "3001", 10);
@@ -36,6 +37,10 @@ if (!GEMINI_API_KEY) {
 }
 
 // ── Middleware ────────────────────────────────────────────────────────────────
+// gzip/brotli-style compression for all text assets (JS/CSS/HTML/JSON). The app
+// bundle is ~1.2 MB raw; compression cuts transfer ~70–75%, a big LCP win on
+// mobile and the Render free tier. compression skips already-compressed types.
+app.use(compression());
 app.use(cors({
   origin: [
     FRONTEND_ORIGIN,
