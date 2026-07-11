@@ -3241,6 +3241,7 @@ ${relatedGrid([{ label: `🎯 Free ${exam.toUpperCase()} mock test`, href: `/moc
       emit(path, head({ title: `${n.title} | ${BRAND}`, desc: n.summary, path,
         kw: `${n.title.toLowerCase()}, ${exam} ${n.section} notes, ${exam} ${n.section} tips`,
         jsonLdBlocks: [
+          jsonld({ "@context": "https://schema.org", "@type": "LearningResource", name: n.title, description: n.summary, learningResourceType: "concept-map study notes", educationalUse: "self-study", teaches: n.conceptMap.central, timeRequired: `PT${n.estMinutes}M`, isAccessibleForFree: true, inLanguage: "en-IN", audience: { "@type": "EducationalAudience", educationalRole: "student" }, provider: PUBLISHER, url: ORIGIN + path }),
           jsonld({ "@context": "https://schema.org", "@type": "Article", headline: n.title, description: n.summary, author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
           faqJsonLd(faqs),
           breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${exam.toUpperCase()} Smart Notes`, path: `/learn/${exam}/` }, { name: n.title, path }]),
@@ -3261,8 +3262,37 @@ ${relatedGrid([{ label: `🎯 Free ${exam.toUpperCase()} mock test`, href: `/moc
   for (const [exam, notes] of Object.entries(byExam)) {
     const path = `/learn/${exam}/`;
     const tiles = notes.map((t) => `<a class="tile" href="${t.path}"><strong>${esc(t.title)}</strong><span class="muted"> · ${t.mins} min</span><br><span class="muted">${esc(t.summary)}</span></a>`).join("");
-    const inner = `<p class="crumb"><a href="/">Home</a> › ${exam.toUpperCase()} Smart Notes</p><section class="hero"><h1>${exam.toUpperCase()} Smart Notes — Visual, Memorable Lessons</h1><p class="lead">Short, visual lessons with concept maps, real examples and built-in spaced-repetition recall for ${exam.toUpperCase()}.</p></section><div class="card"><div class="grid">${tiles}</div></div>`;
-    emit(path, head({ title: `${exam.toUpperCase()} Smart Notes — Visual Lessons & Concept Maps | ${BRAND}`, desc: `Free ${exam.toUpperCase()} Smart Notes: visual concept maps, chunked notes, real examples and spaced-repetition recall.`, path, kw: `${exam} notes, ${exam} lessons, ${exam} concept map, ${exam} study notes`, jsonLdBlocks: [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${exam.toUpperCase()} Smart Notes`, path }])] }) + shell(inner));
+    const inner = `<p class="crumb"><a href="/">Home</a> › <a href="/learn/">Smart Notes</a> › ${exam.toUpperCase()}</p><section class="hero"><h1>${exam.toUpperCase()} Smart Notes — Visual, Memorable Lessons</h1><p class="lead">Short, visual lessons with concept maps, real examples and built-in spaced-repetition recall for ${exam.toUpperCase()}.</p></section><div class="card"><div class="grid">${tiles}</div></div>`;
+    emit(path, head({ title: `${exam.toUpperCase()} Smart Notes — Visual Lessons & Concept Maps | ${BRAND}`, desc: `Free ${exam.toUpperCase()} Smart Notes: visual concept maps, chunked notes, real examples and spaced-repetition recall.`, path, kw: `${exam} notes, ${exam} lessons, ${exam} concept map, ${exam} study notes`, jsonLdBlocks: [
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Smart Notes", path: "/learn/" }, { name: `${exam.toUpperCase()} Smart Notes`, path }]),
+      jsonld({ "@context": "https://schema.org", "@type": "ItemList", name: `${exam.toUpperCase()} Smart Notes`, numberOfItems: notes.length, itemListElement: notes.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: ORIGIN + t.path, name: t.title })) }),
+    ] }) + shell(inner));
+  }
+  // ── Top-level /learn/ hub listing every exam's Smart Notes ──
+  const examList = Object.entries(byExam);
+  if (examList.length) {
+    const path = `/learn/`;
+    const totalNotes = examList.reduce((s, [, ns]) => s + ns.length, 0);
+    const examNames = examList.map(([e]) => e.toUpperCase()).join(", ");
+    const cards = examList.map(([exam, ns]) => `<a class="tile" href="/learn/${exam}/"><strong>${exam.toUpperCase()} Smart Notes</strong><span class="muted"> · ${ns.length} lessons</span><br><span class="muted">Concept maps, real examples, memory hooks &amp; spaced-repetition recall for ${exam.toUpperCase()}.</span></a>`).join("");
+    const hubFaqs = [
+      { q: "What are Smart Notes?", a: "Smart Notes are short, visual lessons that make an exam topic easy to learn and hard to forget. Each note has a one-glance concept map, three to five chunked explanations that each include a real example and a memory hook, and a five-question recall quiz that schedules itself for spaced review — so what you learn actually sticks." },
+      { q: "Which exams have Smart Notes?", a: `Smart Notes currently cover ${examNames} — ${totalNotes} free lessons in total, with more topics added over time.` },
+      { q: "Are Smart Notes really free?", a: "Yes — every Smart Note is 100% free, with no signup, no credit card and no paywall, like everything on LandingPrep." },
+      { q: "How do Smart Notes help me remember more?", a: "They combine three evidence-based techniques: a visual concept map (dual coding), a short recall quiz (active recall, the testing effect), and automatic spaced repetition that resurfaces each question right before you would forget it." },
+      { q: "How long does one Smart Note take?", a: "About 5–8 minutes to read and quiz yourself — designed as focused, mobile-friendly microlearning you can fit between other study." },
+    ];
+    const inner = `<p class="crumb"><a href="/">Home</a> › Smart Notes</p>
+<section class="hero"><div class="badges"><span class="badge">100% Free</span><span class="badge">${totalNotes} lessons</span><span class="badge">Spaced repetition</span></div><h1>Smart Notes — Free Visual Lessons for Every Exam</h1><p class="lead">Short, memorable lessons with visual concept maps, real examples, memory hooks and built-in spaced-repetition recall — free for ${examNames}. No signup, learn on any device.</p></section>
+<div class="card"><h2>Pick your exam</h2><div class="grid">${cards}</div></div>
+<div class="card"><h2>What is a Smart Note?</h2><p>A Smart Note turns one exam topic into a lesson you can finish in about <strong>5–8 minutes</strong> and actually remember. Instead of a wall of text, each note gives you three things:</p><ul><li><strong>A visual concept map</strong> — the whole topic at a glance, so its structure sticks in your memory.</li><li><strong>3–5 chunked explanations</strong> — each paired with a <strong>real example</strong> and a <strong>memory hook</strong> (a mnemonic or analogy) that makes the idea easy to recall under exam pressure.</li><li><strong>A 5-question recall quiz</strong> — you test yourself, and the questions are then <strong>scheduled for spaced review</strong> so they come back to you right before you would forget them.</li></ul></div>
+<div class="card"><h2>Why this works</h2><p>Smart Notes are built on the best-evidenced ways to learn. <strong>Active recall</strong> — testing yourself — beats re-reading or highlighting. <strong>Dual coding</strong> pairs a picture with words so ideas are stored two ways. <strong>Worked examples</strong> show a concept in action, and <strong>spaced repetition</strong> reviews each fact on a schedule tuned to how memory fades. Together they make revision faster and far more durable than cramming — and every note is free, with no signup, on any device.</p></div>
+${faqBlock(hubFaqs)}`;
+    emit(path, head({ title: `Smart Notes — Free Visual Exam Lessons & Concept Maps | ${BRAND}`, desc: `Free Smart Notes for ${examNames}: visual concept maps, real examples, memory hooks and spaced-repetition recall. ${totalNotes} lessons, no signup.`, path, kw: `free exam smart notes, visual study notes, concept map exam prep, spaced repetition exam notes, ielts toefl pte gre gmat notes`, jsonLdBlocks: [
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Smart Notes", path }]),
+      faqJsonLd(hubFaqs),
+      jsonld({ "@context": "https://schema.org", "@type": "CollectionPage", name: "Smart Notes", description: `Free visual exam lessons for ${examNames} — concept maps, real examples and spaced-repetition recall.`, url: ORIGIN + path, isPartOf: PUBLISHER, inLanguage: "en-IN", hasPart: examList.map(([exam]) => ({ "@type": "CollectionPage", name: `${exam.toUpperCase()} Smart Notes`, url: ORIGIN + `/learn/${exam}/` })) }),
+    ] }) + shell(inner));
   }
 }
 
@@ -5059,6 +5089,7 @@ const llms = `# LandingPrep — 100% Free Exam Prep & Study Abroad
 
 ## Key pages
 - [Free IELTS mock tests](${ORIGIN}/mock-test/ielts/): full Academic & General mocks with instant band scoring (also TOEFL, PTE, CELPIP, Duolingo, GRE, GMAT)
+- [Smart Notes — free visual exam lessons](${ORIGIN}/learn/): concept maps, real examples, memory hooks & spaced-repetition recall for IELTS, TOEFL, PTE, GRE & GMAT
 - [Which English test should I take?](${ORIGIN}/which-english-test/): compare IELTS, TOEFL, PTE, CELPIP & Duolingo
 - [Explore all free tools & practice](${ORIGIN}/explore/): the full LandingPrep hub
 - [College predictor & study abroad](${ORIGIN}/#/colleges): admission chances across 99+ universities
@@ -5073,11 +5104,11 @@ ${featuredGuides}
 
 ### 1. Mock Tests & Practice (1,000+ full-length tests)
 - **IELTS (Academic & General)**: Real exam timing, all 4 sections, instant band scoring (0–9)
-- **TOEFL iBT**: Reading, Listening, Speaking, Writing — scored 0–120
+- **TOEFL iBT (2026 format)**: adaptive Reading & Listening + Writing & Speaking — scored on the new 1–6 band scale (a comparable 0–120 is shown during the 2026 transition)
 - **PTE Academic**: Speaking & Writing, Reading, Listening — scored 10–90
 - **CELPIP**: Listening, Reading, Writing, Speaking — scored 1–12 (for Canadian PR)
 - **Duolingo English Test**: Adaptive + Writing & Speaking — scored 10–160
-- **GRE General Test**: Verbal, Quantitative, Analytical Writing — scored 260–340
+- **GRE General Test**: Verbal Reasoning, Quantitative Reasoning, Analytical Writing — scored Verbal 130–170, Quant 130–170, Writing 0–6
 - **GMAT Focus**: Quant, Verbal, Data Insights — scored 205–805
 
 All include real exam question types, answer explanations, and sample solutions.
