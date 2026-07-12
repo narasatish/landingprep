@@ -1,4 +1,48 @@
 {
+  "celpip": [
+    {
+      "id": "celpip-format-overview",
+      "title": "CELPIP-General: Format & Why It's Canada's Test",
+      "section": "overview",
+      "estMinutes": 7,
+      "slug": "format-overview"
+    },
+    {
+      "id": "celpip-listening",
+      "title": "CELPIP Listening: Six Parts, One Play",
+      "section": "listening",
+      "estMinutes": 6,
+      "slug": "listening"
+    },
+    {
+      "id": "celpip-reading",
+      "title": "CELPIP Reading: The Four Parts",
+      "section": "reading",
+      "estMinutes": 6,
+      "slug": "reading"
+    },
+    {
+      "id": "celpip-scoring-clb",
+      "title": "CELPIP Scores: CLB Levels & Express Entry Points",
+      "section": "scoring",
+      "estMinutes": 6,
+      "slug": "scoring-clb"
+    },
+    {
+      "id": "celpip-speaking",
+      "title": "CELPIP Speaking: The Eight Tasks",
+      "section": "speaking",
+      "estMinutes": 7,
+      "slug": "speaking"
+    },
+    {
+      "id": "celpip-writing",
+      "title": "CELPIP Writing: The Email & the Survey",
+      "section": "writing",
+      "estMinutes": 6,
+      "slug": "writing"
+    }
+  ],
   "duolingo": [
     {
       "id": "duolingo-format-overview",
@@ -217,6 +261,50 @@
       "section": "writing",
       "estMinutes": 7,
       "slug": "writing-tasks"
+    }
+  ],
+  "sat": [
+    {
+      "id": "sat-adaptive-modules",
+      "title": "SAT Adaptive Modules: How the Two-Stage Test Really Works",
+      "section": "strategy",
+      "estMinutes": 6,
+      "slug": "adaptive-modules"
+    },
+    {
+      "id": "sat-digital-test-day",
+      "title": "SAT Test Day: Bluebook, Desmos & Pacing",
+      "section": "strategy",
+      "estMinutes": 6,
+      "slug": "digital-test-day"
+    },
+    {
+      "id": "sat-format-overview",
+      "title": "Digital SAT: Format & the Adaptive Modules",
+      "section": "overview",
+      "estMinutes": 7,
+      "slug": "format-overview"
+    },
+    {
+      "id": "sat-math",
+      "title": "SAT Math: Content, Calculator & Grid-Ins",
+      "section": "math",
+      "estMinutes": 7,
+      "slug": "math"
+    },
+    {
+      "id": "sat-reading-writing",
+      "title": "SAT Reading & Writing: Short Passages, Four Skills",
+      "section": "reading-writing",
+      "estMinutes": 7,
+      "slug": "reading-writing"
+    },
+    {
+      "id": "sat-scoring-strategy",
+      "title": "SAT Scores: 400–1600 and What Colleges Want",
+      "section": "scoring",
+      "estMinutes": 6,
+      "slug": "scoring-strategy"
     }
   ],
   "toefl": [

@@ -1,0 +1,43 @@
+{
+  "id": "celpip-reading",
+  "exam": "celpip",
+  "section": "reading",
+  "title": "CELPIP Reading: The Four Parts",
+  "estMinutes": 6,
+  "summary": "CELPIP Reading's four real-life parts — correspondence, a diagram, information and viewpoints — and how to work them fast.",
+  "conceptMap": {
+    "central": "CELPIP Reading (4 parts)",
+    "nodes": [
+      { "label": "Reading Correspondence", "note": "A letter/email + a reply to complete" },
+      { "label": "Apply a Diagram", "note": "Match a diagram to a message" },
+      { "label": "Reading for Information", "note": "A passage with paragraph-matched questions" },
+      { "label": "Reading for Viewpoints", "note": "Opinions in an article + comments" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Reading Correspondence — a message and a reply",
+      "body": "You read a **letter or email**, then complete a **related reply** by choosing the words that fit. It tests whether you follow the message's **details and tone**. Read the original carefully — the reply's blanks depend on facts and feelings in it.",
+      "realExample": "If the email complains about a late delivery, the reply's blanks will hinge on that complaint — pick options that match the situation and an appropriate, polite tone.",
+      "memoryHook": "Read the message for facts + tone; the reply's blanks come straight from it." },
+    { "heading": "Reading to Apply a Diagram",
+      "body": "You're given a **diagram or a set of options plus a message**, and you **match information between them** — for example, picking the right choice from a table based on what an email says. It's practical, everyday reading, not academic.",
+      "realExample": "A message describes what someone needs (a size, a date, a budget); you scan a chart and choose the option that fits all their conditions.",
+      "memoryHook": "Match the message's requirements to the diagram. Find the option that fits all conditions." },
+    { "heading": "Reading for Information — match to paragraphs",
+      "body": "You read a **longer informational passage** split into paragraphs and answer questions that **map to specific paragraphs**. Skim for structure first, then locate the paragraph each question points to — don't reread the whole thing per question.",
+      "realExample": "If a question asks about a specific fact, find the paragraph that covers that topic and read only there — the passage's structure tells you where to look.",
+      "memoryHook": "Skim the structure, then jump to the right paragraph. Don't reread everything." },
+    { "heading": "Reading for Viewpoints — opinions and attitude",
+      "body": "You read an **article expressing opinions** (often with comments), and answer questions about **who thinks what** and each person's **attitude**. Track the different viewpoints — the trap is mixing up whose opinion is whose.",
+      "realExample": "If the writer supports a policy but a commenter opposes it, a question may ask the commenter's view — keep the viewpoints clearly separated as you read.",
+      "memoryHook": "Separate the viewpoints — who supports, who opposes, and the attitude of each." }
+  ],
+  "recall": [
+    { "q": "What do you do in the 'Reading Correspondence' part?", "a": "Read a letter or email, then complete a related reply by choosing the words that fit its details and tone." },
+    { "q": "What does 'Reading to Apply a Diagram' involve?", "a": "Matching information between a message and a diagram or set of options — practical, everyday reading." },
+    { "q": "How should you approach 'Reading for Information'?", "a": "Skim the passage's structure, then jump to the specific paragraph each question maps to, rather than rereading everything." },
+    { "q": "What is the key skill in 'Reading for Viewpoints'?", "a": "Tracking the different opinions and attitudes — keeping clear who thinks what." },
+    { "q": "Is there a penalty for wrong answers in CELPIP Reading?", "a": "No — multiple-choice items have no penalty, so always answer every question." }
+  ],
+  "sources": ["https://www.celpip.ca/take-celpip/test-format/"]
+}

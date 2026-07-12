@@ -1,0 +1,43 @@
+{
+  "id": "sat-scoring-strategy",
+  "exam": "sat",
+  "section": "scoring",
+  "title": "SAT Scores: 400–1600 and What Colleges Want",
+  "estMinutes": 6,
+  "summary": "How the 400–1600 score is built, what counts as a strong score, and how test-optional policies change the calculus.",
+  "conceptMap": {
+    "central": "SAT scoring (400–1600)",
+    "nodes": [
+      { "label": "Two section scores", "note": "RW 200–800 + Math 200–800" },
+      { "label": "Total 400–1600", "note": "Sum of the two sections" },
+      { "label": "Percentiles", "note": "How you rank vs other test-takers" },
+      { "label": "Test-optional", "note": "Many US colleges don't require the SAT" }
+    ]
+  },
+  "chunks": [
+    { "heading": "How the score is built",
+      "body": "Your total is the **sum of two section scores — Reading and Writing (200–800) and Math (200–800) — for a 400–1600 total**. Each section score comes from your performance across **both modules** (harder questions earn more), not a simple right-answer count.",
+      "realExample": "Because harder questions weigh more, two students with the same number correct can get different section scores if one answered the tougher adaptive items — accuracy on hard questions pays.",
+      "memoryHook": "RW + Math, each 200–800 → 400–1600. Hard questions are worth more." },
+    { "heading": "What's a strong score?",
+      "body": "Judge your score by **percentile and by your target colleges**, not a universal bar. Very roughly, **1200+ is above average, 1400+ is competitive for selective universities, and 1500+ for the most selective**. Always check the **middle-50% range** your specific colleges publish.",
+      "realExample": "A 1450 is strong for many universities but only mid-range at the most selective ones — look up each college's middle-50% SAT range to see where you stand for THAT school.",
+      "memoryHook": "1200+ above average, 1400+ selective, 1500+ elite — but check each college's own range." },
+    { "heading": "Test-optional changes the game",
+      "body": "Many US universities are **test-optional**, meaning you can apply without an SAT. A **strong score still helps** (and some scholarships use it), but a weak score can be **left off**. Decide per college whether submitting helps or hurts your application.",
+      "realExample": "If your SAT is at or above a college's middle-50%, submit it; if it's below, a test-optional college may prefer you don't — check each school's policy before deciding.",
+      "memoryHook": "Test-optional: submit if your score helps, withhold if it doesn't. Decide per college." },
+    { "heading": "Retakes, superscoring and no penalty",
+      "body": "There's **no penalty for wrong answers**, so answer everything. You can **retake the SAT**, and many colleges **superscore** (best section scores across dates) — so a focused retake to lift your weaker section is often the fastest way to raise your total.",
+      "realExample": "Weaker in Math? A retake that lifts only Math, combined with superscoring, raises your effective total without needing to re-ace Reading & Writing.",
+      "memoryHook": "No penalty, retakes allowed, superscoring common — target your weaker section." }
+  ],
+  "recall": [
+    { "q": "How is the SAT total score calculated?", "a": "It's the sum of two section scores — Reading and Writing (200–800) and Math (200–800) — for a 400–1600 total." },
+    { "q": "Why can two students with the same number correct get different section scores?", "a": "Because harder adaptive questions are worth more, so accuracy on tougher items raises the section score." },
+    { "q": "Roughly what SAT totals count as above-average, selective and elite?", "a": "About 1200+ above average, 1400+ competitive for selective universities, and 1500+ for the most selective — but check each college's middle-50% range." },
+    { "q": "What does 'test-optional' mean for submitting your SAT?", "a": "You can apply without it; submit a strong score that helps, and consider withholding a weak one — decide per college." },
+    { "q": "How can superscoring help on a retake?", "a": "Many colleges take your best section scores across dates, so a retake lifting only your weaker section can raise your effective total." }
+  ],
+  "sources": ["https://satsuite.collegeboard.org/sat/scores/understanding-scores/how-scores-are-calculated", "https://satsuite.collegeboard.org/sat/scores"]
+}

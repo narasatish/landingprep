@@ -1,0 +1,43 @@
+{
+  "id": "celpip-listening",
+  "exam": "celpip",
+  "section": "listening",
+  "title": "CELPIP Listening: Six Parts, One Play",
+  "estMinutes": 6,
+  "summary": "The CELPIP Listening parts, the fact that audio plays only once, and the note-taking habit that saves your score.",
+  "conceptMap": {
+    "central": "CELPIP Listening",
+    "nodes": [
+      { "label": "Plays once", "note": "No replays — listen the first time" },
+      { "label": "Questions after", "note": "You answer once the audio ends" },
+      { "label": "Everyday + workplace", "note": "Conversations, information, news, discussion" },
+      { "label": "Take notes", "note": "Scratch paper is your memory" }
+    ]
+  },
+  "chunks": [
+    { "heading": "You hear it once — so listen actively",
+      "body": "Each audio passage **plays only once**, and the **questions appear after** the audio ends. There are **no replays**, so you must **listen actively the first time** and take notes as you go. Missing the first listen means guessing.",
+      "realExample": "Because questions come after the audio, you can't read them while listening — so jot key facts (names, numbers, the problem, the decision) as you hear them, ready for whatever's asked.",
+      "memoryHook": "One play, questions after. Note the key facts live — there's no rewind." },
+    { "heading": "Everyday and workplace situations",
+      "body": "The parts move through **real-life Canadian contexts** — a problem-solving conversation, a daily-life chat, an information segment, a news item, a discussion, and viewpoints. Listen for **purpose, key details, and the speaker's attitude**, not every word.",
+      "realExample": "In a problem-solving conversation, catch what the problem is and what each speaker suggests — those decisions are what the questions ask about.",
+      "memoryHook": "Catch purpose + key detail + attitude. Situations are everyday, not academic." },
+    { "heading": "Note-taking is the whole skill",
+      "body": "Use the **scratch paper** to capture **names, numbers, dates and the outcome** as you listen. Your notes — not your memory — answer the detail questions, especially in longer segments like the news item or discussion.",
+      "realExample": "For a news item, note who/what/where/when and any figure mentioned; a question will almost certainly hinge on one of those specifics.",
+      "memoryHook": "Who / what / number / outcome — write it down. Notes beat memory." },
+    { "heading": "Don't stall on one question",
+      "body": "Since there's **no penalty for wrong answers**, never leave a blank, and don't freeze on a question you missed — **make your best choice and keep pace** so you're ready for the next audio. Some items are unscored trial questions, so a tough one may not even count.",
+      "realExample": "Missed a detail? Pick the most likely option and move on — dwelling on it risks missing the start of the next passage, which you also can't replay.",
+      "memoryHook": "Best guess, keep moving. No penalty, and some items don't even count." }
+  ],
+  "recall": [
+    { "q": "How many times does each CELPIP listening audio play, and when do questions appear?", "a": "Each audio plays only once, and the questions appear after the audio ends." },
+    { "q": "Why is note-taking essential in CELPIP Listening?", "a": "There are no replays, so your notes of names, numbers, dates and outcomes — not memory — answer the detail questions." },
+    { "q": "What should you listen for rather than trying to catch every word?", "a": "The purpose, key details and the speaker's attitude." },
+    { "q": "Should you leave a listening question blank if unsure?", "a": "No — there's no penalty for wrong answers, so always make your best choice." },
+    { "q": "What kinds of situations does CELPIP Listening cover?", "a": "Everyday and workplace Canadian contexts — problem-solving, daily-life conversation, information, a news item, a discussion and viewpoints." }
+  ],
+  "sources": ["https://www.celpip.ca/take-celpip/test-format/"]
+}

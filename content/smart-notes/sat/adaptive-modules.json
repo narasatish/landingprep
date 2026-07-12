@@ -1,0 +1,43 @@
+{
+  "id": "sat-adaptive-modules",
+  "exam": "sat",
+  "section": "strategy",
+  "title": "SAT Adaptive Modules: How the Two-Stage Test Really Works",
+  "estMinutes": 6,
+  "summary": "Why the Digital SAT's module-1-decides-module-2 design changes your strategy — and how to play it.",
+  "conceptMap": {
+    "central": "Two-stage adaptive design",
+    "nodes": [
+      { "label": "Module 1", "note": "Broad mix of easy/medium/hard" },
+      { "label": "Module 2", "note": "Harder or easier, based on module 1" },
+      { "label": "Score ceiling", "note": "The harder module 2 unlocks top scores" },
+      { "label": "Move within a module", "note": "Flag & revisit — but not across modules" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Module 1 routes you",
+      "body": "Each section's **first module is a broad mix** of easy, medium and hard questions. Your performance on it decides whether **module 2 is the harder ('higher') form or the easier ('lower') form** — and only the harder form lets you reach the top of the scale. So **module 1 is the most important stretch of the test**.",
+      "realExample": "Two students both get similar raw counts, but the one who did better on module 1 is routed to a harder module 2 and can score higher — because harder questions are worth more. Module 1 is where the ceiling is set.",
+      "memoryHook": "Module 1 picks your module 2 — and your ceiling. It's the highest-leverage part." },
+    { "heading": "You can't go back a module",
+      "body": "Within a module you can **skip, flag and revisit** freely, but once you **submit a module you cannot return to it**. So finish each module deliberately: answer everything, use the flag for hard ones, and **review flagged questions before the module timer ends**.",
+      "realExample": "Two minutes left in module 1? Reopen your flagged questions and lock in answers — you won't get another chance once you move to module 2.",
+      "memoryHook": "Free to move inside a module, never back across one. Clear your flags before submitting." },
+    { "heading": "Don't panic if module 2 feels hard",
+      "body": "A **harder-feeling module 2 is usually good news** — it means you earned the higher form. Don't let the difficulty rattle you; steady accuracy on a hard module 2 is exactly what produces a top score.",
+      "realExample": "If module 2 questions feel tougher than module 1, that's the adaptive engine rewarding your strong start — keep calm and work carefully, you're on the high-score path.",
+      "memoryHook": "Harder module 2 = you're winning. Stay calm; it's the road to a top score." },
+    { "heading": "Practise in Bluebook to know the flow",
+      "body": "Because the adaptivity and navigation are built into the **Bluebook app**, take **official Bluebook practice tests** so the module timing, the flag tool and the module-submit step are familiar. Surprises on test day cost points; rehearsal removes them.",
+      "realExample": "Doing a full Bluebook practice test teaches you the rhythm — when the module timer warns you, how the flag list looks — so on test day you're executing, not learning the interface.",
+      "memoryHook": "Rehearse in Bluebook. Know the timing and the flag tool before it counts." }
+  ],
+  "recall": [
+    { "q": "What determines whether SAT module 2 is the harder or easier form?", "a": "Your performance on module 1 of that section." },
+    { "q": "Why is module 1 the highest-leverage part of the test?", "a": "It routes you to a harder or easier module 2, and only the harder form unlocks the top of the score scale." },
+    { "q": "Can you return to a module after submitting it?", "a": "No — you can move freely within a module, but once you submit it you can't go back, so clear your flags first." },
+    { "q": "What does a harder-feeling module 2 usually mean?", "a": "That you did well on module 1 and earned the higher-difficulty form — which is the path to a top score." },
+    { "q": "How should you prepare for the module flow?", "a": "Take official Bluebook practice tests so the timing, flag tool and module-submit step are familiar on test day." }
+  ],
+  "sources": ["https://satsuite.collegeboard.org/sat/whats-on-the-test/structure", "https://blog.collegeboard.org/what-digital-sat-adaptive-testing"]
+}

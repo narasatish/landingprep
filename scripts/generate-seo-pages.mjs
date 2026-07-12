@@ -509,7 +509,7 @@ ${(() => {
 })()}
 ${faqBlock(faqs)}
 ${relatedGrid([
-  ...(["ielts", "toefl", "pte", "gre", "gmat", "duolingo"].includes(id) ? [{ label: `${e.short} Smart Notes — visual lessons & recall`, href: `/learn/${id}/` }] : []),
+  ...(["ielts", "toefl", "pte", "gre", "gmat", "duolingo", "sat", "celpip"].includes(id) ? [{ label: `${e.short} Smart Notes — visual lessons & recall`, href: `/learn/${id}/` }] : []),
   { label: `${e.short} practice test (section by section)`, href: `/practice/${id}/` },
   { label: `${e.short} score calculator & converter`, href: `/tools/english-test-score-converter/` },
   { label: `${e.short} speaking & writing practice`, href: `/#/agents` },
@@ -554,7 +554,7 @@ function practicePage(id) {
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free ${e.short} full mock test`, href: `/mock-test/${id}/` },
-  ...(["ielts", "toefl", "pte", "gre", "gmat", "duolingo"].includes(id) ? [{ label: `${e.short} Smart Notes — visual lessons & recall`, href: `/learn/${id}/` }] : []),
+  ...(["ielts", "toefl", "pte", "gre", "gmat", "duolingo", "sat", "celpip"].includes(id) ? [{ label: `${e.short} Smart Notes — visual lessons & recall`, href: `/learn/${id}/` }] : []),
   { label: `${e.short} eligibility by country`, href: `/eligibility/` },
   { label: `Free study tools`, href: `/tools/english-test-score-converter/` },
   { label: `All free exams`, href: `/#/exam-prep` },
@@ -3495,7 +3495,11 @@ function smartNotesPages() {
 <section class="hero"><div class="badges"><span class="badge">Smart Note</span><span class="badge">${n.estMinutes} min</span></div><h1>${esc(n.title)}</h1><p class="lead">${esc(n.summary)}</p></section>
 <div class="card"><h2>The big picture</h2>${mapHtml}</div>${chunks}
 ${faqBlock(faqs)}
-${relatedGrid([{ label: `🎯 Free ${exam.toUpperCase()} mock test`, href: `/mock-test/${exam}/` }, { label: `📚 More ${exam.toUpperCase()} Smart Notes`, href: `/learn/${exam}/` }])}`;
+${relatedGrid([
+  EXAMS[exam] ? { label: `🎯 Free ${exam.toUpperCase()} mock test`, href: `/mock-test/${exam}/` } : { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
+  { label: `📚 More ${exam.toUpperCase()} Smart Notes`, href: `/learn/${exam}/` },
+  { label: `📚 All Smart Notes`, href: `/learn/` },
+])}`;
       emit(path, head({ title: `${n.title} | ${BRAND}`, desc: n.summary, path,
         kw: `${n.title.toLowerCase()}, ${exam} ${n.section} notes, ${exam} ${n.section} tips`,
         jsonLdBlocks: [

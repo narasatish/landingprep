@@ -1,0 +1,44 @@
+{
+  "id": "sat-format-overview",
+  "exam": "sat",
+  "section": "overview",
+  "title": "Digital SAT: Format & the Adaptive Modules",
+  "estMinutes": 7,
+  "summary": "The ~2h14m Digital SAT — two sections, two adaptive modules each, scored 400–1600 — and what the module design means for you.",
+  "conceptMap": {
+    "central": "Digital SAT (~2h 14m)",
+    "nodes": [
+      { "label": "Reading & Writing", "note": "54 questions · 64 min · 2 modules" },
+      { "label": "Math", "note": "44 questions · 70 min · 2 modules · calculator allowed" },
+      { "label": "Two-stage adaptive", "note": "Module 2 difficulty depends on module 1" },
+      { "label": "Score 400–1600", "note": "RW 200–800 + Math 200–800" },
+      { "label": "On Bluebook app", "note": "Digital, with a built-in Desmos calculator & timer" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Two sections, two modules each",
+      "body": "The Digital SAT has two sections — **Reading and Writing (RW)** and **Math** — and each is split into **two separately-timed modules**. RW is **54 questions in 64 minutes** (two 32-minute modules of 27); Math is **44 questions in 70 minutes** (two 35-minute modules of 22). Total testing time is about **2 hours 14 minutes**.",
+      "realExample": "You do RW module 1, then module 2, then Math module 1, then module 2. Within a module you can move freely — flag a hard question and come back before the module's timer ends.",
+      "memoryHook": "2 sections × 2 modules. RW = 54 in 64; Math = 44 in 70. ~2h14m total." },
+    { "heading": "It's multistage adaptive",
+      "body": "Each section is **two-stage adaptive**: **module 1 has a broad mix of easy, medium and hard questions**, and **how you do on module 1 sets whether module 2 is harder or easier** — which in turn sets your score ceiling. So module 1 is the high-leverage part.",
+      "realExample": "Do well on RW module 1 and module 2 serves a harder set worth more points; a weaker module 1 routes you to an easier module 2 with a lower ceiling. Treat module 1 as the one that matters most.",
+      "memoryHook": "Module 1 decides module 2 — and your ceiling. No coasting on the first module." },
+    { "heading": "Scored 400–1600",
+      "body": "You get a **section score of 200–800 for Reading and Writing and 200–800 for Math**, added to a **total of 400–1600**. There's **no penalty for wrong answers**, so never leave a question blank.",
+      "realExample": "A 1400 might be RW 700 + Math 700, or RW 650 + Math 750 — colleges see both the total and the sections, so a balanced profile and a strong total both help.",
+      "memoryHook": "200–800 per section → 400–1600 total. No wrong-answer penalty — always answer." },
+    { "heading": "Digital, with built-in tools",
+      "body": "The test runs in the **Bluebook app** with an **on-screen timer, a mark-for-review flag, annotation, and a built-in Desmos graphing calculator you can use on all of Math**. Practise in Bluebook first so the tools are second nature on test day.",
+      "realExample": "The Desmos calculator can graph equations to solve them visually — learning it before test day turns some Math questions into a quick graph-and-read.",
+      "memoryHook": "Bluebook + Desmos (all of Math) + flag tool. Rehearse the app before test day." }
+  ],
+  "recall": [
+    { "q": "What are the two sections of the Digital SAT and how long is each?", "a": "Reading and Writing (54 questions, 64 minutes) and Math (44 questions, 70 minutes) — about 2 hours 14 minutes total." },
+    { "q": "How is each SAT section structured?", "a": "Into two separately-timed modules; the second module's difficulty depends on your performance on the first (two-stage adaptive)." },
+    { "q": "Why does module 1 matter most?", "a": "Your performance on module 1 determines whether module 2 is harder or easier — and therefore your scoring ceiling." },
+    { "q": "What is the SAT score range and is there a wrong-answer penalty?", "a": "400–1600 (200–800 per section), with no penalty for wrong answers — so never leave a blank." },
+    { "q": "What tools are available in the Bluebook app?", "a": "An on-screen timer, a mark-for-review flag, annotation, and a built-in Desmos graphing calculator usable on all Math questions." }
+  ],
+  "sources": ["https://satsuite.collegeboard.org/sat/whats-on-the-test/structure", "https://satsuite.collegeboard.org/sat/scores/understanding-scores/how-scores-are-calculated"]
+}

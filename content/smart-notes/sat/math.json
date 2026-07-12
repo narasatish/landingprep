@@ -1,0 +1,44 @@
+{
+  "id": "sat-math",
+  "exam": "sat",
+  "section": "math",
+  "title": "SAT Math: Content, Calculator & Grid-Ins",
+  "estMinutes": 7,
+  "summary": "The Digital SAT Math section — what it covers, the built-in calculator on every question, and the grid-in answers to watch.",
+  "conceptMap": {
+    "central": "SAT Math (44 Qs, 70 min)",
+    "nodes": [
+      { "label": "Algebra", "note": "Linear equations, systems, inequalities" },
+      { "label": "Advanced Math", "note": "Quadratics, functions, exponents" },
+      { "label": "Problem-Solving & Data", "note": "Ratios, percentages, stats, graphs" },
+      { "label": "Geometry & Trig", "note": "Area, volume, angles, right triangles" },
+      { "label": "Calculator always", "note": "Built-in Desmos on every Math question" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Four content areas",
+      "body": "Math covers **Algebra** (linear equations, systems, inequalities), **Advanced Math** (quadratics, functions, exponents), **Problem-Solving and Data Analysis** (ratios, percentages, statistics, reading graphs), and **Geometry and Trigonometry** (area, volume, angles, right triangles). Algebra and Advanced Math make up the bulk.",
+      "realExample": "A typical question gives a word problem you must translate into an equation — the maths is high-school level; the skill is turning the words into algebra correctly.",
+      "memoryHook": "Algebra + Advanced Math dominate. Most questions = translate words into an equation." },
+    { "heading": "The calculator is on every question",
+      "body": "A **built-in Desmos graphing calculator is available on all 44 Math questions** (you can also bring an approved one). Desmos can **graph equations to solve them visually** — often faster than algebra. But don't over-rely on it: many questions are quicker by reasoning.",
+      "realExample": "For 'where do these two lines intersect?', typing both into Desmos and reading the intersection point is faster and less error-prone than solving the system by hand.",
+      "memoryHook": "Desmos on every question — learn to graph-and-read. But reason first when it's faster." },
+    { "heading": "Watch the grid-in (student-produced) answers",
+      "body": "Most questions are multiple choice, but **some ask you to type the answer** (no options). These 'grid-ins' have **no choices to check your work against**, so double-check the **format** — fractions or decimals are fine, but follow any instruction and don't round unless told to.",
+      "realExample": "If the answer is 7/3, you can enter '7/3' or a decimal like '2.33' — but entering '2.3' (over-rounded) can be marked wrong. Enter enough digits.",
+      "memoryHook": "Grid-ins have no options — mind the format and don't over-round." },
+    { "heading": "Adaptive + no penalty — pace and attempt everything",
+      "body": "Math is **two-stage adaptive**, so **module 1 sets your ceiling** — give the first module your best. With **no penalty for wrong answers**, always put something for every question, and use the **flag tool** to bank easy points first, then return to hard ones.",
+      "realExample": "About 95 seconds per question. Stuck at two minutes? Flag it, guess, move on — a skipped question you never return to is a guaranteed zero.",
+      "memoryHook": "Module 1 = ceiling. No penalty = never blank. Easy points first, flag the rest." }
+  ],
+  "recall": [
+    { "q": "What four content areas does SAT Math cover?", "a": "Algebra, Advanced Math, Problem-Solving and Data Analysis, and Geometry and Trigonometry." },
+    { "q": "Is a calculator allowed on SAT Math?", "a": "Yes — a built-in Desmos graphing calculator is available on all Math questions (you may also bring an approved one)." },
+    { "q": "What's special about 'grid-in' questions?", "a": "You type the answer with no options, so you must mind the format and avoid over-rounding." },
+    { "q": "Why does the first Math module matter most?", "a": "Math is two-stage adaptive, so module 1 determines the difficulty of module 2 and your scoring ceiling." },
+    { "q": "How should you handle a hard Math question under time pressure?", "a": "Flag it, put a best-guess answer (no penalty for wrong), and move on — banking easy points first." }
+  ],
+  "sources": ["https://satsuite.collegeboard.org/sat/whats-on-the-test/structure", "https://satsuite.collegeboard.org/sat/whats-on-the-test/math"]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "sat-reading-writing",
+  "exam": "sat",
+  "section": "reading-writing",
+  "title": "SAT Reading & Writing: Short Passages, Four Skills",
+  "estMinutes": 7,
+  "summary": "The Digital SAT RW section — one short passage per question across four skill areas — and how to read for exactly what's asked.",
+  "conceptMap": {
+    "central": "SAT Reading & Writing (54 Qs)",
+    "nodes": [
+      { "label": "Information & Ideas", "note": "Main idea, detail, inference, evidence" },
+      { "label": "Craft & Structure", "note": "Vocabulary in context, purpose, structure" },
+      { "label": "Expression of Ideas", "note": "Make the writing clearer/more effective" },
+      { "label": "Standard English Conventions", "note": "Grammar, punctuation, sentence structure" }
+    ]
+  },
+  "chunks": [
+    { "heading": "One short passage per question",
+      "body": "Unlike the old SAT, each RW question has its **own short passage** (roughly 25–150 words). You read a small text, answer one question, and move on — so it's **fast reading in tight focus**, not long-passage endurance. Questions are grouped so the four skill areas appear in order of difficulty within a module.",
+      "realExample": "You'll read a two-sentence excerpt and answer one question about it, then a fresh excerpt for the next — treat each as a self-contained mini-task, not a passage to master.",
+      "memoryHook": "New tiny passage every question. Read it, answer it, move on — no long passages." },
+    { "heading": "Information & Ideas — answer from the text",
+      "body": "These test **main idea, detail, inference and command of evidence**. Every answer must be **supported by the passage** (or a small data graphic). For evidence questions, pick the option the text actually backs — not the one that merely sounds true.",
+      "realExample": "'Which finding, if true, would most support the researcher's claim?' → choose the option that directly strengthens the specific claim, not a generally related fact.",
+      "memoryHook": "If you can't point to the words that prove it, it's not the answer." },
+    { "heading": "Craft & Structure — words and purpose",
+      "body": "This covers **vocabulary in context**, the **purpose** of a sentence or text, and connections between two texts. For 'words in context', **predict the meaning from the sentence first**, then match the option.",
+      "realExample": "'As used in the text, \"novel\" most nearly means…' → the sentence context might make it 'new/original', not 'a book'. Predict from context before reading the choices.",
+      "memoryHook": "Predict the meaning from the sentence, THEN look at the options." },
+    { "heading": "Expression of Ideas & Conventions — the writing half",
+      "body": "**Expression of Ideas** asks you to make writing **clearer or more effective** (transitions, combining ideas, meeting a stated goal). **Standard English Conventions** tests **grammar and punctuation** — subject-verb agreement, verb tense, pronouns, commas, apostrophes. Learn the handful of rules that repeat.",
+      "realExample": "A 'transition' question gives a blank between two sentences — read the logic (contrast? cause?) and pick the linker that fits, exactly like choosing 'however' vs 'therefore'.",
+      "memoryHook": "Expression = clearer/effective. Conventions = grammar rules. Both reward reading the logic." }
+  ],
+  "recall": [
+    { "q": "How are passages presented in the Digital SAT Reading & Writing section?", "a": "Each question has its own short passage (about 25–150 words) — there are no long shared passages." },
+    { "q": "What must every Information & Ideas answer be?", "a": "Supported by the passage (or its data graphic) — not merely true-sounding." },
+    { "q": "How should you tackle 'words in context' questions?", "a": "Predict the meaning from the sentence's context first, then match it to an answer choice." },
+    { "q": "What do 'Expression of Ideas' questions ask you to do?", "a": "Make the writing clearer or more effective — e.g. choose the right transition or combine ideas to meet a stated goal." },
+    { "q": "What does 'Standard English Conventions' test?", "a": "Grammar and punctuation — subject-verb agreement, verb tense, pronouns, commas, apostrophes and sentence structure." }
+  ],
+  "sources": ["https://satsuite.collegeboard.org/sat/whats-on-the-test/structure", "https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing"]
+}

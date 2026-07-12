@@ -1,0 +1,43 @@
+{
+  "id": "sat-digital-test-day",
+  "exam": "sat",
+  "section": "strategy",
+  "title": "SAT Test Day: Bluebook, Desmos & Pacing",
+  "estMinutes": 6,
+  "summary": "The digital tools and pacing that quietly win points on test day — the app, the calculator, the flag and the clock.",
+  "conceptMap": {
+    "central": "Digital SAT test day",
+    "nodes": [
+      { "label": "Bluebook app", "note": "Timer, flag, annotate — rehearse it" },
+      { "label": "Desmos", "note": "Graph to solve Math visually" },
+      { "label": "Mark for review", "note": "Flag & return within the module" },
+      { "label": "Pacing", "note": "~71s per RW Q · ~95s per Math Q" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Know Bluebook cold",
+      "body": "The SAT runs in the **Bluebook app** on your own or a provided device. It has an **on-screen countdown timer, a mark-for-review flag, an answer-eliminator, and annotation**. Master these in practice so you're **spending brain-power on questions, not the interface**.",
+      "realExample": "The answer-eliminator lets you cross out wrong options with a click — using it turns a hard 4-option question into an easier 2-option guess. Small tool, real points.",
+      "memoryHook": "Rehearse Bluebook's timer, flag, eliminator and annotate. Tools = free points." },
+    { "heading": "Use Desmos deliberately",
+      "body": "The **built-in Desmos calculator works on all Math questions**. It shines for **graphing, systems of equations, and checking answers** — but for simple arithmetic or setups, reasoning is faster. Decide per question whether Desmos saves time.",
+      "realExample": "Graph a quadratic to read its vertex or roots instantly; but don't fire up Desmos to compute 15% of 80 — that's slower than doing it in your head.",
+      "memoryHook": "Desmos for graphs and systems; your head for quick arithmetic." },
+    { "heading": "Pace to finish every module",
+      "body": "Budget roughly **71 seconds per Reading & Writing question** and **95 seconds per Math question**. Do a **first pass answering the ones you're sure of**, flagging the rest, then return. Finishing each module — with a guess on every question — beats perfecting a few and leaving others blank.",
+      "realExample": "On RW, don't sink two minutes into one tricky logic question — flag it, keep the easy points flowing, and revisit with your leftover time.",
+      "memoryHook": "~71s RW, ~95s Math. First pass = sure ones; flag the rest; no blanks." },
+    { "heading": "No penalty — and superscoring helps",
+      "body": "There's **no penalty for wrong answers**, so **answer every question**. Many colleges also **superscore** — taking your best section scores across test dates — so a retake to lift just one section can raise your effective total.",
+      "realExample": "If your first SAT is RW 700 / Math 640, a retake that lifts Math to 720 can give a superscore of RW 700 + Math 720 — check whether your target colleges superscore.",
+      "memoryHook": "Never blank (no penalty). Superscoring means a targeted retake can lift your total." }
+  ],
+  "recall": [
+    { "q": "What app is the Digital SAT taken in, and what tools does it include?", "a": "The Bluebook app, which includes an on-screen timer, a mark-for-review flag, an answer-eliminator and annotation." },
+    { "q": "When is the built-in Desmos calculator most useful?", "a": "For graphing, solving systems of equations and checking answers — but quick arithmetic is often faster by reasoning." },
+    { "q": "What's a good per-question pace for each section?", "a": "About 71 seconds per Reading & Writing question and 95 seconds per Math question." },
+    { "q": "Why should you answer every SAT question?", "a": "There's no penalty for wrong answers, so a guess can only help." },
+    { "q": "What is superscoring and why does it matter?", "a": "Many colleges take your best section scores across test dates, so a retake that lifts one section can raise your effective total." }
+  ],
+  "sources": ["https://satsuite.collegeboard.org/digital", "https://satsuite.collegeboard.org/sat/scores/understanding-scores/how-scores-are-calculated"]
+}

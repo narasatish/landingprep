@@ -1,0 +1,43 @@
+{
+  "id": "celpip-scoring-clb",
+  "exam": "celpip",
+  "section": "scoring",
+  "title": "CELPIP Scores: CLB Levels & Express Entry Points",
+  "estMinutes": 6,
+  "summary": "How CELPIP's 1–12 levels map to the CLB, why CLB 7 and CLB 9 are the numbers to know, and how each skill counts.",
+  "conceptMap": {
+    "central": "CELPIP scoring (CLB 1–12)",
+    "nodes": [
+      { "label": "Per-skill level", "note": "1–12 for each of the 4 skills" },
+      { "label": "= CLB level", "note": "CELPIP level maps directly to CLB" },
+      { "label": "CLB 7", "note": "Common Express Entry minimum" },
+      { "label": "CLB 9", "note": "Unlocks maximum language points" }
+    ]
+  },
+  "chunks": [
+    { "heading": "One level per skill, mapped to the CLB",
+      "body": "CELPIP reports a **level from 1 to 12 for each skill** (Listening, Reading, Writing, Speaking), and each level **corresponds directly to a Canadian Language Benchmark (CLB) level**. There's no single 'overall' number — immigration looks at your **per-skill CLB**.",
+      "realExample": "A report of Listening 9, Reading 8, Writing 9, Speaking 9 means CLB 9/8/9/9 — and Express Entry scores each skill, so your lowest skill can hold back your points.",
+      "memoryHook": "A level per skill = a CLB per skill. No overall — your weakest skill matters." },
+    { "heading": "CLB 7 and CLB 9 are the magic numbers",
+      "body": "For Express Entry, **CLB 7 in all four skills** is a common minimum (e.g. for Federal Skilled Worker eligibility), and **CLB 9 in all four** unlocks the **maximum language points** in the CRS. Pushing every skill to 9 can be worth a large jump in your ranking score.",
+      "realExample": "Moving from CLB 8 to CLB 9 across all skills can add substantial CRS points — often more than any other single improvement — so it's a high-value target if you're close.",
+      "memoryHook": "CLB 7 = common minimum. CLB 9 = maximum points. Aim every skill at 9 if you can." },
+    { "heading": "Your lowest skill is the constraint",
+      "body": "Because Express Entry awards points **per skill**, your **weakest skill caps your language points**. So identify your lowest CELPIP level and focus practice there — lifting the weakest skill usually adds more points than improving one you're already strong in.",
+      "realExample": "If you're CLB 9 in three skills but CLB 7 in Writing, your Writing is the one dragging your points — targeted Writing practice is the fastest CRS gain.",
+      "memoryHook": "Points are per skill. Fix the weakest link — that's where the points are." },
+    { "heading": "Fast results, valid two years, no penalty",
+      "body": "CELPIP results arrive in a **few business days** and are **valid for two years**. Multiple-choice sections have **no wrong-answer penalty**, so always answer everything, and you can **retake** if a skill falls short of your target CLB.",
+      "realExample": "A skill one level below target? Retake with focused practice on that skill — with fast results, you can slot a new report into your Express Entry profile quickly.",
+      "memoryHook": "Results in days, valid 2 years, retakes allowed. No penalty — never leave blanks." }
+  ],
+  "recall": [
+    { "q": "How does CELPIP report scores?", "a": "As a level from 1 to 12 for each skill, with each level mapping directly to a Canadian Language Benchmark (CLB) level — there's no single overall number." },
+    { "q": "Why do CLB 7 and CLB 9 matter for Express Entry?", "a": "CLB 7 in all skills is a common minimum, and CLB 9 in all skills unlocks the maximum language points in the CRS." },
+    { "q": "Why does your weakest skill matter most?", "a": "Express Entry awards points per skill, so your lowest CELPIP level caps your language points." },
+    { "q": "Which skill should you focus practice on?", "a": "Your lowest-scoring skill — lifting the weakest one usually adds the most CRS points." },
+    { "q": "How quickly do CELPIP results come and how long are they valid?", "a": "Results in a few business days, valid for two years." }
+  ],
+  "sources": ["https://www.celpip.ca/take-celpip/test-results/", "https://www.celpip.ca/celpip-general/"]
+}
