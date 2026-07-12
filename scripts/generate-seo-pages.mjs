@@ -1452,6 +1452,105 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// ── IELTS One Skill Retake decision tool + guide (self-contained page) ──────────
+// Facts verified against ielts.org: retake ONE section, computer-delivered IELTS only,
+// within 60 days, one retake per full test, new TRF, and NOT universally accepted.
+function ieltsOsrPage() {
+  const path = `/tools/ielts-one-skill-retake-calculator/`;
+  const faqs = [
+    { q: "What is IELTS One Skill Retake?", a: "IELTS One Skill Retake (OSR) lets you retake just one section of the IELTS — Listening, Reading, Writing or Speaking — instead of sitting the whole test again. You receive a new Test Report Form showing the improved skill alongside your other three original scores." },
+    { q: "Who is eligible for IELTS One Skill Retake?", a: "You must have taken your full IELTS as a computer-delivered test at a centre that offers OSR, and you must sit the retake within 60 days of your original test. It is available on computer only, in selected centres and countries. You can retake only one skill, once, per full test." },
+    { q: "How long do I have to book One Skill Retake?", a: "You must take your One Skill Retake within 60 days of your full IELTS test date — this deadline applies to both booking and completing the retake." },
+    { q: "Is IELTS One Skill Retake accepted everywhere?", a: "No — not every university, employer or immigration authority accepts an OSR result. IELTS advises you to confirm directly with the organisation you are applying to before booking. Many visa/immigration routes still require a single full test sitting." },
+    { q: "How much does One Skill Retake cost?", a: "It is cheaper than a full test — roughly a quarter of the full IELTS fee (about INR 12,650 in India at the time of writing). Fees change and vary by centre, so confirm the current amount with IDP or British Council." },
+    { q: "Which skill should I retake?", a: "Retake the single skill where a realistic improvement lifts your overall band to your target. Use the calculator above: enter your four section scores and target, and it shows the score you'd need on each skill and which retake is most achievable." },
+  ];
+  const calc = `
+<div class="card">
+  <h2>🎯 Which one skill should you retake?</h2>
+  <p class="note">Enter your four section scores and your target overall band. The tool shows the score you'd need on a retake of each skill — and which single retake actually reaches your target.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:10px 0">
+    <label>Listening<input id="lp_l" type="number" inputmode="decimal" min="0" max="9" step="0.5" placeholder="e.g. 6.5" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Reading<input id="lp_r" type="number" inputmode="decimal" min="0" max="9" step="0.5" placeholder="e.g. 6.5" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Writing<input id="lp_w" type="number" inputmode="decimal" min="0" max="9" step="0.5" placeholder="e.g. 6.0" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Speaking<input id="lp_s" type="number" inputmode="decimal" min="0" max="9" step="0.5" placeholder="e.g. 7.0" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Target overall band<input id="lp_target" type="number" inputmode="decimal" min="0" max="9" step="0.5" placeholder="e.g. 7.0" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button id="lp_osr_btn" class="cta" type="button" style="border:0;cursor:pointer">Find the skill to retake →</button>
+  <div id="lpOsrOut" style="margin-top:12px"></div>
+</div>
+<script>
+(function(){
+  function num(id){var e=document.getElementById(id);var v=parseFloat(e&&e.value);return isNaN(v)?NaN:v;}
+  function overall(a){ return Math.round(((a[0]+a[1]+a[2]+a[3])/4)*2)/2; } // IELTS rounding
+  function conv(){
+    var out=document.getElementById('lpOsrOut');
+    var s=[num('lp_l'),num('lp_r'),num('lp_w'),num('lp_s')], names=['Listening','Reading','Writing','Speaking'], target=num('lp_target');
+    if(s.some(isNaN)||isNaN(target)){ out.innerHTML='<div class="callout"><span class="ic">⚠️</span><div>Enter all four section scores and your target band.</div></div>'; return; }
+    var cur=overall(s);
+    if(cur>=target){ out.innerHTML='<div class="callout tip"><span class="ic">✅</span><div><strong>You already meet your target.</strong> Your current overall band is '+cur+', which is at or above your target of '+target+'. No retake needed.</div></div>'; return; }
+    var rows='', best=null;
+    for(var i=0;i<4;i++){
+      var need=null;
+      for(var x=Math.max(0,s[i]+0.5); x<=9.0001; x+=0.5){
+        var t=s.slice(); t[i]=Math.min(9,Math.round(x*2)/2);
+        if(overall(t)>=target){ need=t[i]; break; }
+      }
+      var reachable = need!==null;
+      var improve = reachable ? (need - s[i]) : null;
+      if(reachable && (best===null || improve<best.improve)) best={i:i,need:need,improve:improve};
+      rows+='<tr><td>'+names[i]+'</td><td>'+s[i]+'</td><td>'+(reachable?need:'—')+'</td><td>'+(reachable?('+'+improve.toFixed(1)):'not enough alone')+'</td></tr>';
+    }
+    var head='<div class="callout money"><span class="ic">📊</span><div><strong>Current overall: '+cur+' · Target: '+target+'</strong></div></div>';
+    var rec;
+    if(best){
+      var hard = best.improve>1.5;
+      rec='<div class="callout '+(hard?'':'tip')+'"><span class="ic">'+(hard?'🤔':'🎯')+'</span><div><strong>Best single retake: '+names[best.i]+'</strong> — you\\'d need <strong>'+best.need+'</strong> (a +'+best.improve.toFixed(1)+' improvement) to reach an overall '+target+'.'+(hard?' That\\'s a big jump for one sitting — make sure it\\'s realistic before booking.':' A realistic improvement — this is your best-value retake.')+'</div></div>';
+    } else {
+      rec='<div class="callout"><span class="ic">🚫</span><div><strong>One retake can\\'t reach '+target+'.</strong> Even a perfect score on a single skill wouldn\\'t lift your overall to your target — you\\'d need to improve more than one skill, so a full retake is the better option.</div></div>';
+    }
+    out.innerHTML=head+'<table style="width:100%;border-collapse:collapse;margin:10px 0" class="uni-table"><thead><tr><th>Skill</th><th>Your score</th><th>Need on retake</th><th>Improvement</th></tr></thead><tbody>'+rows+'</tbody></table>'+rec+'<p class="note" style="margin-top:8px">Overall band is the average of the four sections, rounded to the nearest half band. One Skill Retake replaces a single skill only — and not every institution accepts it, so confirm before booking.</p>';
+  }
+  var b=document.getElementById('lp_osr_btn');
+  if(b) b.addEventListener('click',conv);
+})();
+</script>`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › IELTS One Skill Retake Calculator</p>
+<section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">2026</span><span class="badge">No signup</span></div>
+<h1>IELTS One Skill Retake Calculator &amp; Guide (2026)</h1>
+<p class="lead">Should you retake one IELTS skill — and which one? Enter your scores to see the fastest way to your target band, plus everything One Skill Retake does and doesn't allow.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> IELTS One Skill Retake (OSR) lets you retake <strong>one</strong> section (Listening, Reading, Writing or Speaking) instead of the whole test, on <strong>computer-delivered IELTS only</strong>, <strong>within 60 days</strong> of your original test. You get a new Test Report Form — but <strong>not every institution accepts OSR, so confirm first</strong>.</div>
+${calc}
+<div class="card"><h2>How IELTS One Skill Retake works</h2><ul class="bcheck">
+<li><strong>One skill only:</strong> retake Listening, Reading, Writing OR Speaking — just one, once, per full test.</li>
+<li><strong>Computer-delivered only:</strong> your original test must have been IELTS on computer, at a centre that offers OSR (selected centres/countries).</li>
+<li><strong>60-day window:</strong> you must sit the retake within 60 days of your full test — this covers both booking and taking it.</li>
+<li><strong>New Test Report Form:</strong> you receive a fresh TRF with the improved skill plus your other three original scores.</li>
+<li><strong>Cheaper than a full retake:</strong> roughly a quarter of the full fee (about INR 12,650 in India at the time of writing — confirm the current amount with your centre).</li>
+</ul></div>
+<div class="card"><h2>The catch: check acceptance first</h2>
+<p>IELTS itself advises confirming that the organisation you're applying to accepts a One Skill Retake result <strong>before you book</strong>. Many universities do, but some — and several visa/immigration routes — still require a single full IELTS sitting. A quick email to the admissions or visa office saves you a wasted retake.</p></div>
+<div class="card"><h2>How to book</h2><ol>
+<li>Confirm your original test was <strong>computer-delivered</strong> and your centre offers One Skill Retake.</li>
+<li>Check the receiving university/authority <strong>accepts OSR</strong>.</li>
+<li>Use the calculator above to pick the <strong>single skill</strong> that reaches your target.</li>
+<li>Book through <strong>IDP</strong> or <strong>British Council</strong> within <strong>60 days</strong> of your full test.</li>
+</ol></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🎧 Free IELTS mock test`, href: `/mock-test/ielts/` },
+  { label: `📚 IELTS Smart Notes`, href: `/learn/ielts/` },
+  { label: `🎯 IELTS band score calculator`, href: `/tools/ielts-band-score-calculator/` },
+  { label: `🔄 English test score converter`, href: `/tools/english-test-score-converter/` },
+])}`;
+  emit(path, head({ title: `IELTS One Skill Retake Calculator &amp; Guide 2026 — Which Skill to Retake | ${BRAND}`, desc: `Free IELTS One Skill Retake tool: enter your scores to see which single skill to retake to hit your target band, plus the full OSR rules (computer-only, 60 days, acceptance).`, path, kw: "ielts one skill retake, ielts osr, ielts retake one skill, which ielts skill to retake, ielts one skill retake eligibility, ielts one skill retake calculator", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "IELTS One Skill Retake Calculator", applicationCategory: "EducationApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "IELTS One Skill Retake Calculator", path }]),
+  ] }) + shell(inner));
+}
+
 // ── Proof-of-Funds Calculator — free tool built on the funding facts verified
 // against official sources (link magnet; cross-linked from the funding data study). ──
 function proofOfFundsCalculatorPage() {
@@ -2528,6 +2627,7 @@ ${relatedGrid([
 costCalculatorPage();
 cgpaToPercentagePage();
 percentageToGpaPage();
+ieltsOsrPage();
 loanEmiPage();
 proofOfFundsCalculatorPage();
 readinessPage();

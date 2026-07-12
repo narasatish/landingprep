@@ -739,6 +739,7 @@ function Home({ onGuide, onPractice, onNav }) {
               ["target", "accent", "IELTS band calculator", "Turn your raw Listening & Reading answers into the official 0–9 band.", "/tools/ielts-band-score-calculator/"],
               ["compare", "sky", "CGPA to percentage", "Convert CGPA/SGPA to a percentage using your university's exact formula.", "/tools/cgpa-to-percentage-calculator/"],
               ["target", "green", "Percentage to US GPA", "Estimate your US 4.0 GPA from an Indian percentage — the band method universities use.", "/tools/percentage-to-gpa-calculator/"],
+              ["refresh", "amber", "IELTS One Skill Retake", "See which single IELTS skill to retake to hit your target band — plus the 2026 OSR rules.", "/tools/ielts-one-skill-retake-calculator/"],
             ].map(([ic, tone, t, d, href]) => (
               <a key={href + t} className="hp-tool-card" href={href} style={{ textDecoration: "none" }}>
                 <span className="hp-tool-ic"><IcChip name={ic} tone={tone} /></span>
