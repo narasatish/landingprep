@@ -737,6 +737,8 @@ function Home({ onGuide, onPractice, onNav }) {
               ["pen", "pink", "SOP & LOR samples", "Complete statement-of-purpose & recommendation samples to adapt.", "/sop-samples/"],
               ["calendar", "sky", "Intakes & deadlines", "When to apply — intake seasons & deadlines for every country.", "/intakes/"],
               ["target", "accent", "IELTS band calculator", "Turn your raw Listening & Reading answers into the official 0–9 band.", "/tools/ielts-band-score-calculator/"],
+              ["compare", "sky", "CGPA to percentage", "Convert CGPA/SGPA to a percentage using your university's exact formula.", "/tools/cgpa-to-percentage-calculator/"],
+              ["target", "green", "Percentage to US GPA", "Estimate your US 4.0 GPA from an Indian percentage — the band method universities use.", "/tools/percentage-to-gpa-calculator/"],
             ].map(([ic, tone, t, d, href]) => (
               <a key={href + t} className="hp-tool-card" href={href} style={{ textDecoration: "none" }}>
                 <span className="hp-tool-ic"><IcChip name={ic} tone={tone} /></span>

@@ -1296,6 +1296,162 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// ── CGPA / SGPA → Percentage converter (self-contained interactive tool page) ────
+// India has NO single official CGPA→% formula — it is set per university. The tool is
+// honest about this: it offers the common conventions + a custom multiplier, and tells
+// users to confirm their university's official rule. Accuracy/honesty over false precision.
+function cgpaToPercentagePage() {
+  const path = `/tools/cgpa-to-percentage-calculator/`;
+  const faqs = [
+    { q: "How do I convert CGPA to percentage?", a: "There is no single national formula — each university sets its own. The most common conventions on a 10-point scale are: CBSE style, Percentage = CGPA × 9.5; many universities (e.g. VTU) use Percentage = CGPA × 10 − 7.5; and some simply use Percentage = CGPA × 10. Always confirm the exact rule printed on your marksheet or your university's website." },
+    { q: "Which CGPA to percentage formula should I use?", a: "Use the one your own university officially specifies — it is usually on the marksheet, grade card or the university website. If you don't know it, the CBSE ×9.5 rule is the most widely quoted for 10-point CGPA, but it is only an approximation for other universities." },
+    { q: "Is CGPA × 9.5 an official formula?", a: "It is the official conversion CBSE published for its 10-point grading, and it is widely reused as an approximation. It is NOT automatically valid for every university — many use ×10 − 7.5 or their own table. Treat any generic formula as an estimate until you confirm your university's official rule." },
+    { q: "Do foreign universities accept a converted percentage?", a: "Most prefer your original CGPA and official transcript, and may run their own conversion (or use a service like WES). Provide your real CGPA and let them convert; use this tool only for a quick personal estimate." },
+  ];
+  const calc = `
+<div class="card">
+  <h2>🎓 Convert CGPA to percentage</h2>
+  <p class="note">Pick the formula your <strong>university</strong> uses (check your marksheet). No single formula is official for all universities.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:10px 0">
+    <label>Your CGPA / SGPA<input id="lp_cgpa" type="number" inputmode="decimal" min="0" max="10" step="0.01" placeholder="e.g. 8.2" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Scale (max CGPA)<input id="lp_scale" type="number" inputmode="decimal" min="1" step="0.5" value="10" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Formula<select id="lp_formula" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px">
+      <option value="9.5">CBSE style — CGPA × 9.5</option>
+      <option value="m7.5">Many universities — CGPA × 10 − 7.5</option>
+      <option value="10">Simple — CGPA × 10</option>
+      <option value="custom">Custom multiplier…</option>
+    </select></label>
+    <label id="lp_custom_wrap" style="display:none">Custom multiplier<input id="lp_custom" type="number" inputmode="decimal" min="0" step="0.1" placeholder="e.g. 9.5" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button id="lp_cgpa_btn" class="cta" type="button" style="border:0;cursor:pointer">Convert to percentage →</button>
+  <div id="lpCgpaOut" style="margin-top:12px"></div>
+</div>
+<script>
+(function(){
+  function num(id){var e=document.getElementById(id);var v=parseFloat(e&&e.value);return isNaN(v)?0:v;}
+  var sel=document.getElementById('lp_formula'), cw=document.getElementById('lp_custom_wrap');
+  if(sel) sel.addEventListener('change',function(){cw.style.display=sel.value==='custom'?'':'none';});
+  function conv(){
+    var cgpa=Math.max(0,num('lp_cgpa')), scale=num('lp_scale')||10, f=sel?sel.value:'9.5';
+    var out=document.getElementById('lpCgpaOut');
+    if(!cgpa){ if(out) out.innerHTML='<div class="callout"><span class="ic">⚠️</span><div>Enter your CGPA to convert.</div></div>'; return; }
+    var base = scale===10 ? cgpa : (cgpa/scale*10); // normalise to a 10-point CGPA first
+    var pct, how;
+    if(f==='9.5'){ pct=base*9.5; how='CGPA × 9.5 (CBSE style)'; }
+    else if(f==='m7.5'){ pct=base*10-7.5; how='CGPA × 10 − 7.5'; }
+    else if(f==='10'){ pct=base*10; how='CGPA × 10'; }
+    else { var m=num('lp_custom'); pct=base*m; how='CGPA × '+m+' (custom)'; }
+    pct=Math.max(0,Math.min(100,pct));
+    if(out) out.innerHTML='<div class="callout tip"><span class="ic">🎓</span><div><strong>Estimated percentage: '+pct.toFixed(2)+'%</strong><br><span style="color:var(--muted);font-size:13px">Using '+how+(scale!==10?', normalised from your '+scale+'-point scale':'')+'. This is an estimate — your university sets the official formula, so confirm it on your marksheet or university website before using it on any application.</span></div></div>';
+  }
+  var b=document.getElementById('lp_cgpa_btn');
+  if(b) b.addEventListener('click',conv);
+})();
+</script>`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › CGPA to Percentage Calculator</p>
+<section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">Instant</span><span class="badge">No signup</span></div>
+<h1>CGPA to Percentage Calculator</h1>
+<p class="lead">Convert your CGPA or SGPA to a percentage instantly — using the exact formula your university applies. Free, no signup.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> There is no single national formula. On a 10-point scale the common conventions are <strong>Percentage = CGPA × 9.5</strong> (CBSE style), <strong>CGPA × 10 − 7.5</strong> (many universities such as VTU), or <strong>CGPA × 10</strong>. Use the one your university officially specifies — check your marksheet.</div>
+${calc}
+<div class="card"><h2>Common CGPA → percentage formulas (10-point scale)</h2>
+<table style="width:100%;border-collapse:collapse" class="uni-table"><thead><tr><th>Convention</th><th>Formula</th><th>Example (CGPA 8.0)</th></tr></thead><tbody>
+<tr><td>CBSE style</td><td>CGPA × 9.5</td><td>76.0%</td></tr>
+<tr><td>Many universities (e.g. VTU)</td><td>CGPA × 10 − 7.5</td><td>72.5%</td></tr>
+<tr><td>Simple</td><td>CGPA × 10</td><td>80.0%</td></tr>
+</tbody></table>
+<p class="note">These are the most-used conventions, not a universal rule. Autonomous colleges and many universities publish their own conversion — always use the official one for applications.</p></div>
+<div class="card"><h2>How to find your university's official formula</h2><ul class="bcheck">
+<li>Check your <strong>marksheet / grade card</strong> — many print the conversion formula or a percentage directly.</li>
+<li>Search your <strong>university's website</strong> for "CGPA to percentage" or the examination/results rules.</li>
+<li>Ask your <strong>examination cell / registrar</strong> if it isn't published.</li>
+<li>For <strong>foreign applications</strong>, submit your real CGPA and transcript — the university (or WES) will convert it themselves.</li>
+</ul></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🎯 Percentage to US GPA (4.0)`, href: `/tools/percentage-to-gpa-calculator/` },
+  { label: `🔄 English test score converter`, href: `/tools/english-test-score-converter/` },
+  { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
+  { label: `💰 Cost of studying abroad`, href: `/tools/cost-of-studying-abroad-calculator/` },
+])}`;
+  emit(path, head({ title: `CGPA to Percentage Calculator — Free & Instant (2026) | ${BRAND}`, desc: `Free CGPA/SGPA to percentage calculator using your university's formula (CBSE ×9.5, ×10−7.5 or custom). Instant, honest estimate with no signup.`, path, kw: "cgpa to percentage calculator, sgpa to percentage, cgpa to percentage formula, convert cgpa to percentage, 10 point cgpa to percentage, cgpa calculator", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "CGPA to Percentage Calculator", applicationCategory: "EducationApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "CGPA to Percentage Calculator", path }]),
+  ] }) + shell(inner));
+}
+
+// ── Percentage → US 4.0 GPA converter (self-contained interactive tool page) ────
+// No universal India%→US-GPA formula exists; WES and individual universities differ.
+// The tool gives a widely-used band estimate with a clear "official conversion varies" note.
+function percentageToGpaPage() {
+  const path = `/tools/percentage-to-gpa-calculator/`;
+  const faqs = [
+    { q: "How do I convert my percentage to a US 4.0 GPA?", a: "There is no single official formula. US universities and evaluation services (like WES) usually use a band/grade mapping rather than simple division. A widely-used approximation puts 85%+ at about 4.0, 75–84% at roughly 3.3–3.7, 65–74% at about 2.7–3.0, and 55–64% at about 2.0–2.3. Treat any converted GPA as an estimate — the university or WES makes the official conversion." },
+    { q: "Is percentage ÷ 25 a correct way to get GPA?", a: "No — 'percentage ÷ 25' (so 80% = 3.2) is a crude shortcut that most US universities do NOT use. Admissions offices and services like WES convert grade by grade using bands, which is why this tool uses a band estimate and tells you to confirm with the university." },
+    { q: "Should I convert my GPA myself for applications?", a: "Usually not. Most US universities ask for your original transcript and percentage/CGPA and either convert it themselves or require a WES/credential evaluation. Use this tool for a personal estimate, not as the number you submit." },
+    { q: "What is a good GPA for US universities?", a: "Competitive master's programmes often look for roughly a 3.0+ GPA (about 65%+ in the Indian system), with top programmes wanting 3.5+ (about 80%+). Requirements vary widely by university and course — always check the specific programme." },
+  ];
+  const calc = `
+<div class="card">
+  <h2>🎯 Convert percentage to US GPA (4.0 scale)</h2>
+  <p class="note">A band-based estimate (the way most US universities and WES actually convert). Not an official figure.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:10px 0">
+    <label>Your percentage<input id="lp_pct" type="number" inputmode="decimal" min="0" max="100" step="0.1" placeholder="e.g. 78" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button id="lp_gpa_btn" class="cta" type="button" style="border:0;cursor:pointer">Convert to GPA →</button>
+  <div id="lpGpaOut" style="margin-top:12px"></div>
+</div>
+<script>
+(function(){
+  function num(id){var e=document.getElementById(id);var v=parseFloat(e&&e.value);return isNaN(v)?0:v;}
+  var bands=[[85,4.0,'A'],[80,3.7,'A−'],[75,3.3,'B+'],[70,3.0,'B'],[65,2.7,'B−'],[60,2.3,'C+'],[55,2.0,'C'],[50,1.7,'C−'],[0,1.0,'D/F']];
+  function conv(){
+    var p=num('lp_pct'), out=document.getElementById('lpGpaOut');
+    if(!p){ if(out) out.innerHTML='<div class="callout"><span class="ic">⚠️</span><div>Enter your percentage to convert.</div></div>'; return; }
+    p=Math.max(0,Math.min(100,p));
+    var g=1.0,letter='D/F';
+    for(var i=0;i<bands.length;i++){ if(p>=bands[i][0]){ g=bands[i][1]; letter=bands[i][2]; break; } }
+    if(out) out.innerHTML='<div class="callout tip"><span class="ic">🎯</span><div><strong>Estimated GPA: '+g.toFixed(1)+' / 4.0 ('+letter+')</strong><br><span style="color:var(--muted);font-size:13px">Band estimate for '+p+'%. US universities and services like WES make the official conversion (often grade-by-grade), so this is a guide only — confirm the requirement with your target programme.</span></div></div>';
+  }
+  var b=document.getElementById('lp_gpa_btn');
+  if(b) b.addEventListener('click',conv);
+})();
+</script>`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › Percentage to GPA Calculator</p>
+<section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">4.0 scale</span><span class="badge">No signup</span></div>
+<h1>Percentage to GPA Calculator (US 4.0 Scale)</h1>
+<p class="lead">Estimate your US 4.0 GPA from an Indian percentage — using the band method most universities and WES actually apply. Free, instant, honest.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> There is no single official formula. US universities and services like WES map grades to a 4.0 scale by <strong>bands</strong>, not by dividing. Roughly: <strong>85%+ ≈ 4.0</strong>, 75–84% ≈ 3.3–3.7, 65–74% ≈ 2.7–3.0, 55–64% ≈ 2.0–2.3. Use it as an estimate and confirm with your university.</div>
+${calc}
+<div class="card"><h2>Percentage → GPA band table (estimate)</h2>
+<table style="width:100%;border-collapse:collapse" class="uni-table"><thead><tr><th>Percentage</th><th>GPA (4.0)</th><th>Letter</th></tr></thead><tbody>
+<tr><td>85–100%</td><td>4.0</td><td>A</td></tr>
+<tr><td>80–84%</td><td>3.7</td><td>A−</td></tr>
+<tr><td>75–79%</td><td>3.3</td><td>B+</td></tr>
+<tr><td>70–74%</td><td>3.0</td><td>B</td></tr>
+<tr><td>65–69%</td><td>2.7</td><td>B−</td></tr>
+<tr><td>60–64%</td><td>2.3</td><td>C+</td></tr>
+<tr><td>55–59%</td><td>2.0</td><td>C</td></tr>
+<tr><td>50–54%</td><td>1.7</td><td>C−</td></tr>
+</tbody></table>
+<p class="note">A widely-used approximation. Your university or a credential-evaluation service (e.g. WES) makes the official conversion, often grade-by-grade — always use their figure for applications.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🎓 CGPA to percentage`, href: `/tools/cgpa-to-percentage-calculator/` },
+  { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
+  { label: `🔄 English test score converter`, href: `/tools/english-test-score-converter/` },
+  { label: `💰 Cost of studying abroad`, href: `/tools/cost-of-studying-abroad-calculator/` },
+])}`;
+  emit(path, head({ title: `Percentage to GPA Calculator — Indian % to US 4.0 GPA (2026) | ${BRAND}`, desc: `Free percentage-to-GPA calculator: estimate your US 4.0 GPA from an Indian percentage using the band method universities and WES use. Instant, honest, no signup.`, path, kw: "percentage to gpa calculator, percentage to gpa, indian percentage to us gpa, convert percentage to 4.0 gpa, gpa calculator for us universities, wes gpa calculator", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "Percentage to GPA Calculator", applicationCategory: "EducationApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "Percentage to GPA Calculator", path }]),
+  ] }) + shell(inner));
+}
+
 // ── Proof-of-Funds Calculator — free tool built on the funding facts verified
 // against official sources (link magnet; cross-linked from the funding data study). ──
 function proofOfFundsCalculatorPage() {
@@ -2370,6 +2526,8 @@ ${relatedGrid([
   }) + shell(inner));
 }
 costCalculatorPage();
+cgpaToPercentagePage();
+percentageToGpaPage();
 loanEmiPage();
 proofOfFundsCalculatorPage();
 readinessPage();
