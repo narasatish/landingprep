@@ -1,0 +1,43 @@
+{
+  "id": "duolingo-reading-vocabulary-tasks",
+  "exam": "duolingo",
+  "section": "reading",
+  "title": "DET Reading & Vocabulary: Read and Complete, Read and Select & More",
+  "estMinutes": 7,
+  "summary": "The fast-fire reading and vocabulary tasks that make up much of the DET — and the pattern-spotting that wins them.",
+  "conceptMap": {
+    "central": "DET reading & vocabulary tasks",
+    "nodes": [
+      { "label": "Read and Complete", "note": "Fill missing letters in words in a passage" },
+      { "label": "Read and Select", "note": "Pick the REAL English words from a list" },
+      { "label": "Fill in the Blanks", "note": "Complete a word with the right letters" },
+      { "label": "Interactive Reading", "note": "A longer passage with several sub-questions" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Read and Complete — context fills the word",
+      "body": "A short passage appears with **letters missing from many words**; you type the missing letters. The trick is **reading for meaning** — the sentence around each gap tells you the word, and English **spelling patterns** (common prefixes, suffixes, letter pairs) fill the rest.",
+      "realExample": "'The comp_ny ann__nced record pr_fits' → context + spelling give 'company announced profits'. Read the whole sentence before completing any single word.",
+      "memoryHook": "Read for meaning first; spelling patterns finish the word. Context beats guessing letters." },
+    { "heading": "Read and Select — is it a real word?",
+      "body": "You see a list of items and **select only the real English words** (the rest are invented non-words). It tests **vocabulary breadth** fast. Trust your instinct — if a word looks and sounds like real English you've seen, select it; if it's oddly spelled, skip it.",
+      "realExample": "In a row like 'plausible / mordent / gribble / sincere', you'd pick 'plausible' and 'sincere' — and probably 'mordent' (a real music term) if you know it. Don't select convincing-looking fakes like 'gribble'.",
+      "memoryHook": "Only tick words you genuinely recognise. A fake often has one letter that feels 'off'." },
+    { "heading": "Fill in the Blanks — spelling under time",
+      "body": "You complete a **single word that has letters removed**, using the sentence for context. Same skill as Read and Complete but focused — quick reading plus accurate **spelling**.",
+      "realExample": "'She was ex_a_sted after the trip' → 'exhausted'. The meaning is obvious; the marks come from spelling it correctly and fast.",
+      "memoryHook": "Meaning is easy; the points are in the spelling. Type it right, move on." },
+    { "heading": "Interactive Reading — the longer set",
+      "body": "**Interactive Reading** gives a **longer passage broken into several tasks** — completing sentences, choosing the best title, picking the idea that fits, or highlighting the answer. Read the passage's **structure and main point** first, then answer each sub-task from the text.",
+      "realExample": "If one sub-task asks for the best title, choose the option that covers the WHOLE passage, not just one paragraph — the classic trap is a title that's true but too narrow.",
+      "memoryHook": "Get the passage's main point first; then every sub-task answers itself from the text." }
+  ],
+  "recall": [
+    { "q": "What do you do in the 'Read and Complete' task?", "a": "Type the missing letters in words within a short passage, using context and English spelling patterns." },
+    { "q": "What does 'Read and Select' test, and how do you approach it?", "a": "Vocabulary breadth — you select only the real English words from a list and skip the invented non-words." },
+    { "q": "Where do the marks mainly come from in 'Fill in the Blanks'?", "a": "Accurate spelling — the meaning is usually easy, so correct, fast spelling earns the points." },
+    { "q": "What does the 'Interactive Reading' task involve?", "a": "A longer passage split into several sub-tasks (complete sentences, choose a title, highlight the answer) that you answer from the text." },
+    { "q": "How should you choose the best title in Interactive Reading?", "a": "Pick the option that covers the whole passage, not one that is true but too narrow." }
+  ],
+  "sources": ["https://englishtest.duolingo.com/resources", "https://englishtest.duolingo.com/readiness"]
+}

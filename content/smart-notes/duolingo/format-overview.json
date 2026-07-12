@@ -1,0 +1,44 @@
+{
+  "id": "duolingo-format-overview",
+  "exam": "duolingo",
+  "section": "overview",
+  "title": "Duolingo English Test: Format & Why It's Booming",
+  "estMinutes": 7,
+  "summary": "The ~1-hour, at-home, adaptive DET — how it's structured, the 10–160 score, and why 5,500+ universities now accept it.",
+  "conceptMap": {
+    "central": "Duolingo English Test (~1 hour)",
+    "nodes": [
+      { "label": "Adaptive graded section", "note": "Difficulty adjusts; no fixed number of questions" },
+      { "label": "Writing & Speaking samples", "note": "Longer responses shared with institutions" },
+      { "label": "10–160 score", "note": "Overall = average of 4 skill subscores, rounded to nearest 5" },
+      { "label": "At home, ~$65", "note": "On your own computer; results in ~48 hours" },
+      { "label": "5,500+ institutions", "note": "Strong US acceptance; growing fast" }
+    ]
+  },
+  "chunks": [
+    { "heading": "One hour, at home, adaptive",
+      "body": "The Duolingo English Test (DET) takes about **an hour on your own computer** with a webcam — no test centre. The main **graded section is adaptive**: questions get harder or easier based on your answers, and there's **no fixed number of questions** — it ends when the scoring engine is confident of your level.",
+      "realExample": "Because it's adaptive, two test-takers can see different questions and a different number of them. Do well early and you'll get harder items that let you reach a higher score.",
+      "memoryHook": "No fixed length — it stops when it's sure of your level. Early answers set the ceiling." },
+    { "heading": "Mixed tasks, plus samples sent to universities",
+      "body": "Rather than four separate sections, the DET **mixes short task types across reading, listening, speaking and writing**. Near the end you record a longer **Writing Sample** and **Speaking Sample (video)** that are **shared with the institutions** you send scores to, alongside your number.",
+      "realExample": "So an admissions officer sees both your score AND a short video and writing sample — meaning your real communication, not just the number, is on show. Treat those samples seriously.",
+      "memoryHook": "Score + a video + a writing sample all go to the university. The samples count too." },
+    { "heading": "Scored 10–160",
+      "body": "The DET reports an **overall score from 10 to 160 in 5-point steps**, which is the **average of four skill subscores** (Reading, Writing, Speaking, Listening), rounded to the nearest 5. It also gives integrated subscores (see the scoring note).",
+      "realExample": "A university asking for 'DET 120' wants an overall 120 — but many also set minimum subscores, so a strong overall with one weak skill can still fall short.",
+      "memoryHook": "10–160 overall = average of the 4 skills. Check subscore minimums too." },
+    { "heading": "Why it's exploding — and its one limit",
+      "body": "The DET is **cheaper (~$65 vs $200+), faster (results in ~48 hours) and taken at home**, and it's now accepted by **5,500+ universities**, especially in the US. Its main limit: it is **not on the approved list for some visa/immigration routes** (e.g. UK visas), so confirm your destination accepts it.",
+      "realExample": "For US university admission the DET is often ideal; for a UK Student visa you'll usually still need IELTS UKVI. Always check both the university AND the visa route.",
+      "memoryHook": "Great for US admissions, cheap and fast — but check visa acceptance separately." }
+  ],
+  "recall": [
+    { "q": "How long is the Duolingo English Test and where is it taken?", "a": "About one hour, at home on your own computer with a webcam — no test centre." },
+    { "q": "Why does the number of questions vary between test-takers?", "a": "The graded section is adaptive and has no fixed length — it ends when the scoring engine is confident of your level." },
+    { "q": "What is the DET score range and how is the overall calculated?", "a": "10–160 in 5-point steps; the overall is the average of the four skill subscores (Reading, Writing, Speaking, Listening), rounded to the nearest 5." },
+    { "q": "What extra material do universities receive besides your score?", "a": "A Writing Sample and a Speaking Sample (video) recorded during the test are shared with the institutions you send scores to." },
+    { "q": "What is the main limitation of the DET?", "a": "It isn't accepted for every visa/immigration route (e.g. UK visas), so you must confirm your destination and visa accept it." }
+  ],
+  "sources": ["https://englishtest.duolingo.com/scores", "https://englishtest.duolingo.com/applicants"]
+}

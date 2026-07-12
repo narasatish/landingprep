@@ -1,0 +1,43 @@
+{
+  "id": "duolingo-writing-tasks",
+  "exam": "duolingo",
+  "section": "writing",
+  "title": "DET Writing: Write About the Photo & the Writing Sample",
+  "estMinutes": 6,
+  "summary": "The two DET writing tasks — a quick photo description and a longer sample universities read — and how to write clearly under time.",
+  "conceptMap": {
+    "central": "DET writing tasks",
+    "nodes": [
+      { "label": "Write About the Photo", "note": "Describe an image in 1+ sentences (~1 min)" },
+      { "label": "Writing Sample", "note": "Longer response shared with universities" },
+      { "label": "Clarity + grammar", "note": "Correct, on-topic sentences score" },
+      { "label": "Keep writing", "note": "More relevant, correct text = more marks" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Write About the Photo — fast and specific",
+      "body": "You see an image and **write at least one sentence describing it**, in about **a minute**. Write as much **accurate, relevant** English as you can in the time — name what's there, the action, and a detail. Quantity helps only if it's **correct and on-topic**.",
+      "realExample": "Photo of a market? Write: 'A busy outdoor market where vendors sell fresh fruit and vegetables while shoppers browse the stalls in the afternoon sun.' One rich, correct sentence beats three vague ones.",
+      "memoryHook": "Name it, the action, a detail — in correct English. Specific and accurate, fast." },
+    { "heading": "The Writing Sample — the one universities read",
+      "body": "You write a **longer response to a prompt** (a few minutes), and this **Writing Sample is shared with the institutions** you apply to. Give it a **clear structure** — a position or main idea, one or two supporting points, a short close — so an admissions reader sees organised thinking.",
+      "realExample": "Prompt about whether students should work part-time? State your view, give a reason with an example, add a brief counter-point, and conclude — a mini-essay an admissions officer will actually read.",
+      "memoryHook": "The Writing Sample is read by humans. Give it a clear position + support + close." },
+    { "heading": "Correctness beats big words",
+      "body": "The DET rewards **clear, grammatically correct, on-topic** writing over ambitious sentences full of errors. Use vocabulary you control, keep sentences complete, and **leave a few seconds to reread** for typos and agreement.",
+      "realExample": "'The students who works part time' has an error a reader notices instantly; 'Students who work part-time' is simple and correct. Choose correct-and-simple over fancy-and-flawed.",
+      "memoryHook": "Correct beats clever. Use words you control, then reread for slips." },
+    { "heading": "Keep going — don't leave it short",
+      "body": "Both tasks reward **producing enough relevant text** within the time. Don't stop early: as long as it stays **on-topic and correct**, more developed writing gives the scoring engine (and universities) more to reward.",
+      "realExample": "Finished your main point with time left in the Writing Sample? Add a concrete example or a sentence addressing the other side — developed writing scores better than a short, thin answer.",
+      "memoryHook": "Use the whole time. On-topic, correct, and developed beats short and safe." }
+  ],
+  "recall": [
+    { "q": "What does the 'Write About the Photo' task ask for?", "a": "At least one sentence describing an image, written in about a minute — as much accurate, relevant English as you can." },
+    { "q": "Why does the Writing Sample matter beyond the score?", "a": "It's a longer response shared with the institutions you apply to, so admissions readers see your organised writing directly." },
+    { "q": "What structure suits the Writing Sample?", "a": "A clear main idea or position, one or two supporting points, and a short conclusion." },
+    { "q": "What does DET writing reward more than ambitious vocabulary?", "a": "Clear, grammatically correct, on-topic writing using vocabulary you control." },
+    { "q": "Why keep writing until time is up (if it stays on-topic)?", "a": "Both tasks reward producing enough relevant, correct text — developed answers give more to score than short ones." }
+  ],
+  "sources": ["https://englishtest.duolingo.com/resources", "https://englishtest.duolingo.com/applicants"]
+}

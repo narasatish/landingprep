@@ -1,0 +1,43 @@
+{
+  "id": "duolingo-scoring-subscores",
+  "exam": "duolingo",
+  "section": "scoring",
+  "title": "DET Scoring: The 10–160 Scale & Subscores Explained",
+  "estMinutes": 6,
+  "summary": "How the Duolingo English Test builds your 10–160 overall from four skills, what the integrated subscores mean, and what universities check.",
+  "conceptMap": {
+    "central": "DET scoring (10–160)",
+    "nodes": [
+      { "label": "4 skill subscores", "note": "Reading, Writing, Speaking, Listening" },
+      { "label": "Overall", "note": "Average of the 4 skills, rounded to nearest 5" },
+      { "label": "Integrated subscores", "note": "Literacy, Comprehension, Conversation, Production" },
+      { "label": "Check minimums", "note": "Universities may set overall AND subscore floors" }
+    ]
+  },
+  "chunks": [
+    { "heading": "10–160, built from four skills",
+      "body": "Your **overall DET score runs 10–160 in 5-point steps** and is the **average of four Individual Subscores** — Reading, Writing, Speaking and Listening — **rounded to the nearest 5**. So each skill pulls the overall equally.",
+      "realExample": "Reading 125, Writing 115, Speaking 110, Listening 120 → average 117.5 → overall rounds to about 120. One weak skill visibly drags the average, so balance pays.",
+      "memoryHook": "Overall = average of the 4 skills, rounded to the nearest 5. Balance beats one spike." },
+    { "heading": "Integrated subscores — skills in pairs",
+      "body": "Alongside the four skills, the DET reports **four Integrated Subscores**, each an average of two skills: **Literacy** (Reading + Writing), **Comprehension** (Reading + Listening), **Conversation** (Listening + Speaking) and **Production** (Speaking + Writing). Some programmes look at these.",
+      "realExample": "A programme heavy on discussion might care about your Conversation subscore (Listening + Speaking); a research course might weigh Literacy (Reading + Writing). Know which pair your target values.",
+      "memoryHook": "Four skills → four paired subscores: Literacy, Comprehension, Conversation, Production." },
+    { "heading": "Check the university's exact requirement",
+      "body": "Universities set their own required DET score, and many list **both an overall minimum AND minimum subscores**. A strong overall with one weak skill can still miss a subscore floor — so read the **full requirement**, not just the headline number.",
+      "realExample": "'DET 120, no subscore below 105' means a 120 overall with a Writing of 100 would fall short. Always check for per-skill minimums before you decide you've met the bar.",
+      "memoryHook": "Read the WHOLE requirement — overall AND any subscore minimums." },
+    { "heading": "Fast, and free to retake",
+      "body": "DET **results arrive in about 48 hours**, and you can **take it again** (Duolingo allows multiple attempts, with limits per period) — so a below-target score isn't the end. Use your subscores to see exactly which skill to push before retaking.",
+      "realExample": "If your overall is 5 points short and Speaking is your lowest subscore, focus practice there — lifting one weak skill is the fastest way to raise the average on a retake.",
+      "memoryHook": "Results in ~48h; retakes allowed. Let your weakest subscore tell you what to fix." }
+  ],
+  "recall": [
+    { "q": "What is the DET overall score range and how is it calculated?", "a": "10–160 in 5-point steps; it's the average of the four skill subscores (Reading, Writing, Speaking, Listening), rounded to the nearest 5." },
+    { "q": "What are the four integrated subscores and how are they formed?", "a": "Literacy (Reading + Writing), Comprehension (Reading + Listening), Conversation (Listening + Speaking) and Production (Speaking + Writing) — each an average of two skills." },
+    { "q": "Why check more than the overall score requirement?", "a": "Many universities set both an overall minimum and minimum subscores, so a strong overall with one weak skill can still miss a subscore floor." },
+    { "q": "How quickly do DET results arrive?", "a": "In about 48 hours." },
+    { "q": "How should you use subscores before a retake?", "a": "Identify your weakest skill subscore and focus practice there, since lifting one weak skill raises the overall average fastest." }
+  ],
+  "sources": ["https://englishtest.duolingo.com/scores", "https://blog.englishtest.duolingo.com/det-subscores/"]
+}

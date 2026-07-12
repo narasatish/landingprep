@@ -1,0 +1,43 @@
+{
+  "id": "duolingo-listening-tasks",
+  "exam": "duolingo",
+  "section": "listening",
+  "title": "DET Listening: Listen and Type & Interactive Listening",
+  "estMinutes": 6,
+  "summary": "How the DET tests listening — precise dictation and a two-way interactive conversation — and how to score both.",
+  "conceptMap": {
+    "central": "DET listening tasks",
+    "nodes": [
+      { "label": "Listen and Type", "note": "Type the sentence you hear, exactly" },
+      { "label": "Replays limited", "note": "You can hear it only a couple of times" },
+      { "label": "Interactive Listening", "note": "Respond within a conversation + summarise" },
+      { "label": "Spelling counts", "note": "Accurate typing earns the marks" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Listen and Type — dictation, exactly",
+      "body": "You **hear a spoken sentence and type it exactly**. You can replay it only a **limited number of times**, so listen for the **whole sentence** and reconstruct it — every correctly-spelled word in the right place scores.",
+      "realExample": "Hear 'The lecture will begin at half past nine' → type it word-for-word. A slip like 'the lectures will begin' loses marks, so lock in the exact words and spelling.",
+      "memoryHook": "Catch the whole sentence, then type it exactly. Limited replays — focus the first listen." },
+    { "heading": "Chunk it and hold it",
+      "body": "For longer sentences, **break the audio into 3–4 word chunks** and hold them in memory, then write them out. Getting the **structure and key content words** right matters most; don't freeze over one word you missed.",
+      "realExample": "Missed one word in the middle? Type the rest correctly and make your best guess for the gap — a near-complete, correctly-spelled sentence still scores well.",
+      "memoryHook": "Hear in chunks, rebuild the sentence. A near-complete answer beats a frozen one." },
+    { "heading": "Interactive Listening — a two-way conversation",
+      "body": "**Interactive Listening** puts you in a **realistic conversation**: you listen, **choose appropriate responses** as it unfolds, and then **summarise** what was discussed. It rewards following the thread and catching the speaker's intent, not just isolated words.",
+      "realExample": "If the speaker proposes a meeting time and asks if it works, the right response addresses that specific point — picking a reply that ignores the question is the trap.",
+      "memoryHook": "Follow the thread and answer the actual point. Then summarise the gist." },
+    { "heading": "Spelling and attention win listening",
+      "body": "Across the listening tasks, **accurate spelling** and **sustained attention** decide your score. There's no penalty for a natural accent in your own speaking — but in Listen and Type, precise transcription is everything.",
+      "realExample": "Practise by transcribing short English clips and checking every word — the habit of exact transcription is exactly what Listen and Type rewards.",
+      "memoryHook": "Attention + exact spelling. Listen and Type is a transcription test, so transcribe precisely." }
+  ],
+  "recall": [
+    { "q": "What do you do in the 'Listen and Type' task?", "a": "Type a spoken sentence exactly as you hear it, with only a limited number of replays." },
+    { "q": "What's a good technique for longer sentences in Listen and Type?", "a": "Break the audio into 3–4 word chunks, hold them in memory, and reconstruct the full sentence." },
+    { "q": "What happens in the 'Interactive Listening' task?", "a": "You take part in a realistic conversation — choosing appropriate responses as it unfolds — and then summarise what was discussed." },
+    { "q": "What should you do if you miss one word in dictation?", "a": "Type the rest correctly and make your best guess for the gap — a near-complete, correctly-spelled sentence still scores." },
+    { "q": "What mainly determines your score on the listening tasks?", "a": "Accurate spelling and sustained attention — Listen and Type is effectively a precise transcription task." }
+  ],
+  "sources": ["https://englishtest.duolingo.com/resources", "https://englishtest.duolingo.com/readiness"]
+}
