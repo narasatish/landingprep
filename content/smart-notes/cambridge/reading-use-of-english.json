@@ -1,0 +1,44 @@
+{
+  "id": "cambridge-reading-use-of-english",
+  "exam": "cambridge",
+  "section": "reading",
+  "title": "Cambridge Reading & Use of English",
+  "estMinutes": 7,
+  "summary": "The combined paper that tests comprehension plus grammar and vocabulary control — the cloze, word-formation and key-word transformation tasks.",
+  "conceptMap": {
+    "central": "Reading & Use of English",
+    "nodes": [
+      { "label": "Multiple-choice cloze", "note": "Choose the word that fits a gap" },
+      { "label": "Open cloze", "note": "Fill gaps with your own words (grammar)" },
+      { "label": "Word formation", "note": "Change a root word to fit" },
+      { "label": "Key word transformations", "note": "Rewrite a sentence using a given word" },
+      { "label": "Reading parts", "note": "Multiple choice, gapped text, multiple matching" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Grammar and vocabulary control",
+      "body": "The **Use of English** parts test your **control of grammar and vocabulary** through gap-fill tasks. **Multiple-choice cloze** and **open cloze** fill gaps in a text; **word formation** changes a root ('happy' → 'happiness') to fit; **key word transformations** rewrite a sentence using a **given word** while keeping the meaning.",
+      "realExample": "Key word transformation: 'It's too cold to swim' → using 'ENOUGH': 'It isn't warm ENOUGH to swim.' You must keep the meaning and use the given word without changing it.",
+      "memoryHook": "Cloze + word formation + key-word transformations = your grammar/vocabulary under the microscope." },
+    { "heading": "Open cloze — think grammar words",
+      "body": "In **open cloze** you supply **one word per gap with no options** — usually **grammar words** (articles, prepositions, auxiliaries, pronouns, linkers). Read the whole sentence and ask what **structure** the gap needs.",
+      "realExample": "'She succeeded ___ passing the exam' → 'in' (the phrase is 'succeed in doing'). The missing word is grammatical, driven by the words around it.",
+      "memoryHook": "Open cloze = one grammar word per gap. Let the structure tell you which." },
+    { "heading": "Word formation — change the root",
+      "body": "**Word formation** gives a root word in capitals at the end of the line; you **change its form** (prefix, suffix, noun/adjective/adverb) to fit the sentence. Watch for **negatives and plurals** — the trap is the right word in the wrong form.",
+      "realExample": "'It was a very ___ decision (WISE)' → 'unwise' if the sentence implies criticism — you must judge meaning AND form, including any negative prefix.",
+      "memoryHook": "Change the root's form to fit — and check for negatives/plurals." },
+    { "heading": "Reading parts — answer from the text",
+      "body": "The **Reading** parts include **multiple choice, gapped text (insert missing sentences/paragraphs), and multiple matching** (match questions to sections). As always, answers are **supported by the text** — for gapped text, use **referencing and linkers** to slot pieces correctly.",
+      "realExample": "In gapped text, a removed paragraph that starts 'However, this changed…' must follow a paragraph it contrasts with — use the linking words and pronouns to place it.",
+      "memoryHook": "Reading answers come from the text; gapped text is solved by linkers and references." }
+  ],
+  "recall": [
+    { "q": "What does the 'Use of English' portion test?", "a": "Your control of grammar and vocabulary, through tasks like cloze, word formation and key word transformations." },
+    { "q": "What do you supply in an open cloze task?", "a": "One word per gap with no options — usually a grammar word (article, preposition, auxiliary, pronoun or linker)." },
+    { "q": "What must you watch for in word-formation questions?", "a": "Both the correct meaning and the correct form — including negative prefixes and plurals." },
+    { "q": "What is a key word transformation?", "a": "Rewriting a sentence to keep the same meaning while using a given word that you can't change." },
+    { "q": "How do you solve gapped-text reading tasks?", "a": "Use referencing words and linkers (e.g. 'however', pronouns) to place the missing sentences or paragraphs correctly." }
+  ],
+  "sources": ["https://www.cambridgeenglish.org/exams-and-tests/qualifications/first/format/", "https://www.cambridgeenglish.org/exams-and-tests/advanced/exam-format/"]
+}

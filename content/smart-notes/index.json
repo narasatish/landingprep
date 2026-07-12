@@ -1,4 +1,92 @@
 {
+  "act": [
+    {
+      "id": "act-english",
+      "title": "ACT English: Grammar & Rhetoric in Passages",
+      "section": "english",
+      "estMinutes": 6,
+      "slug": "english"
+    },
+    {
+      "id": "act-format-overview",
+      "title": "The ACT: Format & the 'Enhanced' Changes",
+      "section": "overview",
+      "estMinutes": 7,
+      "slug": "format-overview"
+    },
+    {
+      "id": "act-math",
+      "title": "ACT Math: Content & Calculator Strategy",
+      "section": "math",
+      "estMinutes": 6,
+      "slug": "math"
+    },
+    {
+      "id": "act-reading",
+      "title": "ACT Reading: Four Passages, Fast",
+      "section": "reading",
+      "estMinutes": 6,
+      "slug": "reading"
+    },
+    {
+      "id": "act-science",
+      "title": "ACT Science: Reading Data, Not Memorising It",
+      "section": "science",
+      "estMinutes": 6,
+      "slug": "science"
+    },
+    {
+      "id": "act-scoring-strategy",
+      "title": "ACT Scores: The 1–36 Composite & How to Lift It",
+      "section": "scoring",
+      "estMinutes": 6,
+      "slug": "scoring-strategy"
+    }
+  ],
+  "cambridge": [
+    {
+      "id": "cambridge-format-overview",
+      "title": "Cambridge English (B2 First & C1 Advanced): Format",
+      "section": "overview",
+      "estMinutes": 7,
+      "slug": "format-overview"
+    },
+    {
+      "id": "cambridge-listening",
+      "title": "Cambridge Listening: The Four Parts",
+      "section": "listening",
+      "estMinutes": 6,
+      "slug": "listening"
+    },
+    {
+      "id": "cambridge-reading-use-of-english",
+      "title": "Cambridge Reading & Use of English",
+      "section": "reading",
+      "estMinutes": 7,
+      "slug": "reading-use-of-english"
+    },
+    {
+      "id": "cambridge-scoring-scale",
+      "title": "Cambridge Scoring: The Scale, Grades & CEFR",
+      "section": "scoring",
+      "estMinutes": 6,
+      "slug": "scoring-scale"
+    },
+    {
+      "id": "cambridge-speaking",
+      "title": "Cambridge Speaking: Four Parts With a Partner",
+      "section": "speaking",
+      "estMinutes": 6,
+      "slug": "speaking"
+    },
+    {
+      "id": "cambridge-writing",
+      "title": "Cambridge Writing: The Essay & the Choice",
+      "section": "writing",
+      "estMinutes": 6,
+      "slug": "writing"
+    }
+  ],
   "celpip": [
     {
       "id": "celpip-format-overview",
@@ -217,6 +305,50 @@
       "section": "writing",
       "estMinutes": 7,
       "slug": "writing-task2-structure"
+    }
+  ],
+  "oet": [
+    {
+      "id": "oet-format-overview",
+      "title": "OET: The Healthcare English Test Format",
+      "section": "overview",
+      "estMinutes": 7,
+      "slug": "format-overview"
+    },
+    {
+      "id": "oet-listening",
+      "title": "OET Listening: Three Parts, Healthcare Audio",
+      "section": "listening",
+      "estMinutes": 6,
+      "slug": "listening"
+    },
+    {
+      "id": "oet-reading",
+      "title": "OET Reading: Three Parts in 60 Minutes",
+      "section": "reading",
+      "estMinutes": 6,
+      "slug": "reading"
+    },
+    {
+      "id": "oet-scoring-grades",
+      "title": "OET Scores: 0–500, A–E and the Grade You Need",
+      "section": "scoring",
+      "estMinutes": 6,
+      "slug": "scoring-grades"
+    },
+    {
+      "id": "oet-speaking",
+      "title": "OET Speaking: The Two Role Plays",
+      "section": "speaking",
+      "estMinutes": 6,
+      "slug": "speaking"
+    },
+    {
+      "id": "oet-writing",
+      "title": "OET Writing: The Referral Letter",
+      "section": "writing",
+      "estMinutes": 6,
+      "slug": "writing"
     }
   ],
   "pte": [

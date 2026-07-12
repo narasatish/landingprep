@@ -1,0 +1,43 @@
+{
+  "id": "act-english",
+  "exam": "act",
+  "section": "english",
+  "title": "ACT English: Grammar & Rhetoric in Passages",
+  "estMinutes": 6,
+  "summary": "The ACT English section — editing passages for grammar and effectiveness — and the rules that repeat most.",
+  "conceptMap": {
+    "central": "ACT English",
+    "nodes": [
+      { "label": "Usage & Mechanics", "note": "Grammar, punctuation, sentence structure" },
+      { "label": "Rhetorical Skills", "note": "Strategy, organisation, style" },
+      { "label": "Underlined portions", "note": "Fix the underlined part or 'NO CHANGE'" },
+      { "label": "Shorter is often right", "note": "Cut redundancy; be concise" }
+    ]
+  },
+  "chunks": [
+    { "heading": "You're an editor",
+      "body": "ACT English gives you **passages with underlined portions**; for each you choose the **best replacement or 'NO CHANGE'**. It splits into **Usage & Mechanics** (grammar, punctuation, sentence structure) and **Rhetorical Skills** (strategy, organisation, style). You're editing writing, not reading for content.",
+      "realExample": "An underlined comma-splice like 'It rained, we stayed in' should become 'It rained, so we stayed in' or 'It rained; we stayed in' — you pick the option that's grammatically correct and clear.",
+      "memoryHook": "You're the editor. Fix the underlined part — or pick NO CHANGE if it's already right." },
+    { "heading": "A handful of rules repeat",
+      "body": "Most Usage questions test the **same rules**: comma use, apostrophes (its/it's), subject-verb agreement, verb tense, pronouns, and run-ons vs fragments. **Learn these few rules cold** and you'll recognise most questions instantly.",
+      "realExample": "'Its/it's' appears constantly: 'its' = possessive, 'it's' = it is. Nail that one rule and you bank easy points every test.",
+      "memoryHook": "Same rules repeat: commas, its/it's, agreement, tense, run-ons. Master the few." },
+    { "heading": "Shorter and clearer usually wins",
+      "body": "For style questions, the ACT rewards **concise, non-redundant writing**. When options say the same thing, the **shortest correct one is often right**. Delete repetition ('the reason is because' → 'because').",
+      "realExample": "'In my personal opinion, I think' is redundant — 'I think' is enough. If one option is shorter and still correct and clear, it's usually the answer.",
+      "memoryHook": "When in doubt, shorter and clearer wins. Cut the redundancy." },
+    { "heading": "Read for the whole sentence",
+      "body": "Answer each question by **reading the full sentence (and sometimes the sentence before/after)** — punctuation and pronoun questions depend on context you'll miss if you look only at the underlined words.",
+      "realExample": "A pronoun question ('it' vs 'they') needs you to find what the pronoun refers back to — that noun may be in the previous sentence, so read around the underline.",
+      "memoryHook": "Read the whole sentence, not just the underline. Context decides commas and pronouns." }
+  ],
+  "recall": [
+    { "q": "What do you do in ACT English?", "a": "Edit passages — for each underlined portion, choose the best replacement or 'NO CHANGE'." },
+    { "q": "What two broad skill areas does ACT English test?", "a": "Usage & Mechanics (grammar, punctuation, sentence structure) and Rhetorical Skills (strategy, organisation, style)." },
+    { "q": "Which grammar rules appear most often?", "a": "Commas, apostrophes (its/it's), subject-verb agreement, verb tense, pronouns, and run-ons vs fragments." },
+    { "q": "When options mean the same thing, which is usually correct?", "a": "The shortest correct and clear one — the ACT rewards concise, non-redundant writing." },
+    { "q": "Why read the whole sentence for each question?", "a": "Punctuation and pronoun answers depend on context (sometimes the neighbouring sentence), which you'd miss looking only at the underlined words." }
+  ],
+  "sources": ["https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/act-exam-sections-and-structure.html"]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "oet-scoring-grades",
+  "exam": "oet",
+  "section": "scoring",
+  "title": "OET Scores: 0–500, A–E and the Grade You Need",
+  "estMinutes": 6,
+  "summary": "How OET's per-sub-test score and grade work, why Grade B is the common target, and how to reach the bar in every skill.",
+  "conceptMap": {
+    "central": "OET scoring (0–500 + A–E)",
+    "nodes": [
+      { "label": "Per sub-test", "note": "A score and grade for each of the 4 skills" },
+      { "label": "0–500 scale", "note": "In 10-point increments" },
+      { "label": "A–E grade", "note": "Mapped from the numerical score" },
+      { "label": "Grade B ≈ 350", "note": "A common regulator requirement" }
+    ]
+  },
+  "chunks": [
+    { "heading": "A score and grade per sub-test",
+      "body": "OET reports a **numerical score from 0 to 500 (in 10-point steps)** for **each of the four sub-tests**, mapped to a **letter grade A to E**. There's **no single overall score** — your **Listening, Reading, Writing and Speaking are each graded separately**.",
+      "realExample": "You might get Listening 380 (B), Reading 420 (B), Writing 360 (B), Speaking 340 (C) — each skill has its own number and grade, and regulators read them individually.",
+      "memoryHook": "0–500 + A–E for EACH skill. No overall — every sub-test stands alone." },
+    { "heading": "Grade B is the usual target",
+      "body": "Many healthcare regulators and visa routes require **Grade B (a score of about 350) in every sub-test**. Because each skill is judged separately, **your weakest sub-test is the constraint** — a strong Reading can't rescue a Speaking below B.",
+      "realExample": "If your council needs B in all four but your Writing is a C, you don't meet the requirement despite three Bs — the weakest sub-test decides whether you qualify.",
+      "memoryHook": "Usually you need Grade B (~350) in ALL four. The weakest sub-test decides it." },
+    { "heading": "Fix the weakest sub-test",
+      "body": "Since every skill must clear the bar, **identify your lowest sub-test and focus practice there**. For most candidates that's **Writing or Speaking** (the profession-specific, human-judged ones), so targeted work on task selection and communication pays off most.",
+      "realExample": "If Writing is your weak point, drill selecting relevant information and organising the referral letter — lifting that one sub-test to B can be what finally meets the requirement.",
+      "memoryHook": "Every skill must pass — so pour practice into your weakest sub-test." },
+    { "heading": "Check the exact requirement and retake if needed",
+      "body": "Requirements **differ by regulator, country and visa route**, so **confirm the exact grade** you need before booking. If one sub-test falls short, you can **retake** — and in some cases combine sub-test results across sittings (check your authority's rules).",
+      "realExample": "Two authorities may both accept OET but require different grades — verify yours, and if only one skill is short, a focused retake is faster than resitting everything.",
+      "memoryHook": "Confirm the exact grade you need; retake the weak skill rather than the whole test." }
+  ],
+  "recall": [
+    { "q": "How does OET report results?", "a": "A numerical score from 0 to 500 (in 10-point steps) and a letter grade A–E for each of the four sub-tests — there's no single overall score." },
+    { "q": "What grade do healthcare regulators commonly require?", "a": "Grade B (about 350) in every sub-test, though it varies by authority." },
+    { "q": "Why does your weakest sub-test matter most?", "a": "Each skill is graded separately and must clear the bar, so a strong skill can't compensate for a weak one." },
+    { "q": "Which sub-tests are most often the weak point?", "a": "Writing and Speaking — the profession-specific, human-judged ones — so they usually deserve the most focused practice." },
+    { "q": "What should you do before booking, and if one skill falls short?", "a": "Confirm the exact grade your regulator/visa route requires, and if one sub-test is short, consider a focused retake." }
+  ],
+  "sources": ["https://support.occupationalenglishtest.org/s/article/What-information-is-included-in-my-OET-Statement-of-Results", "https://www.occupationalenglishtest.org/test-information/test-statistics/"]
+}

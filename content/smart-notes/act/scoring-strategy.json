@@ -1,0 +1,43 @@
+{
+  "id": "act-scoring-strategy",
+  "exam": "act",
+  "section": "scoring",
+  "title": "ACT Scores: The 1–36 Composite & How to Lift It",
+  "estMinutes": 6,
+  "summary": "How the ACT composite is built, what's a strong score, and the retake and superscore tactics that raise it.",
+  "conceptMap": {
+    "central": "ACT scoring (1–36)",
+    "nodes": [
+      { "label": "Section scores 1–36", "note": "English, Math, Reading (+ Science)" },
+      { "label": "Composite", "note": "Average of English, Math & Reading" },
+      { "label": "Percentiles", "note": "How you rank vs other test-takers" },
+      { "label": "Superscore", "note": "Best sections across dates" }
+    ]
+  },
+  "chunks": [
+    { "heading": "How the composite is built",
+      "body": "Each core section (**English, Math, Reading**) is scored **1–36**, and your **Composite is their average, rounded** to a whole number. **Science** (and **Writing**) are reported separately, not in the Composite under the updated scoring.",
+      "realExample": "English 30, Math 27, Reading 33 → average 30 → Composite 30. Science, if taken, shows as its own 1–36 score plus a STEM score.",
+      "memoryHook": "Composite = round(average of English, Math, Reading). Science/Writing separate." },
+    { "heading": "What's a strong score?",
+      "body": "Judge by **percentile and your target colleges**, not a fixed bar. Very roughly, the **national average is around 19–20**, **~26+ is competitive** for many universities, and **~32+ for highly selective** ones. Always check each college's **middle-50% ACT range**.",
+      "realExample": "A 30 is strong for many universities but mid-pack at the most selective — look up your target colleges' published middle-50% range to see where you actually stand.",
+      "memoryHook": "~20 average, ~26+ competitive, ~32+ selective — but check each college's own range." },
+    { "heading": "No penalty — answer everything",
+      "body": "There's **no penalty for wrong answers**, so **never leave a blank**. On any section, if time is short, put a 'letter of the day' on every unanswered question — random guesses will win some points, blanks win none.",
+      "realExample": "One minute left with eight questions unread? Bubble the same letter for all eight — statistically you'll pick up a couple of points you'd otherwise lose to blanks.",
+      "memoryHook": "No penalty. Fill every bubble — a 'letter of the day' beats blanks." },
+    { "heading": "Retake and superscore",
+      "body": "You can **retake the ACT**, and many colleges **superscore** — combining your **best section scores across test dates**. So a focused retake to lift your weakest section can raise your effective Composite without re-acing the others.",
+      "realExample": "First ACT: English 32 / Math 25 / Reading 31. A retake lifting Math to 30 gives a superscore Composite around 31 — target your weakest section for the biggest gain.",
+      "memoryHook": "Retakes + superscoring = target your weakest section to lift the Composite." }
+  ],
+  "recall": [
+    { "q": "How is the ACT Composite calculated?", "a": "It's the average of English, Math and Reading (each 1–36), rounded to a whole number — Science and Writing are separate." },
+    { "q": "Roughly what ACT scores count as average, competitive and selective?", "a": "Around 20 is average, ~26+ is competitive for many universities, and ~32+ for highly selective ones — but check each college's middle-50% range." },
+    { "q": "Is there a penalty for wrong answers on the ACT?", "a": "No — so you should answer every question, using a 'letter of the day' guess if time runs out." },
+    { "q": "What is superscoring on the ACT?", "a": "Many colleges combine your best section scores across different test dates into a higher Composite." },
+    { "q": "What's the fastest way to raise your Composite on a retake?", "a": "Focus on lifting your weakest section, since superscoring keeps your already-strong sections." }
+  ],
+  "sources": ["https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/act-exam-sections-and-structure.html", "https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html"]
+}

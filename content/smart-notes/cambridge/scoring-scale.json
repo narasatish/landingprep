@@ -1,0 +1,43 @@
+{
+  "id": "cambridge-scoring-scale",
+  "exam": "cambridge",
+  "section": "scoring",
+  "title": "Cambridge Scoring: The Scale, Grades & CEFR",
+  "estMinutes": 6,
+  "summary": "How the Cambridge English Scale works, what grades A/B/C mean, and why a top grade can certify the level above.",
+  "conceptMap": {
+    "central": "Cambridge English Scale",
+    "nodes": [
+      { "label": "Score per skill", "note": "Reading, Writing, Listening, Speaking + Use of English" },
+      { "label": "Overall = average", "note": "Of the skills' scale scores" },
+      { "label": "Grades A / B / C", "note": "All are a pass" },
+      { "label": "Maps to CEFR", "note": "e.g. B2 First covers B1–C1" }
+    ]
+  },
+  "chunks": [
+    { "heading": "One scale, a score per skill",
+      "body": "Results use the **Cambridge English Scale**. You get a **scale score for each skill** — Reading, Writing, Listening, Speaking (and Use of English) — and your **overall score is their average**. Each exam covers a **band on the scale** (for example, **B2 First 140–190**).",
+      "realExample": "If your skills average to 172 on B2 First, that's your overall Cambridge English Scale score — and it sits within the B2 First band with clear per-skill detail.",
+      "memoryHook": "A scale score per skill; overall = their average. Each exam covers a band." },
+    { "heading": "Grades A, B and C all pass",
+      "body": "A result of **Grade A, B or C is a pass** at the exam's level. **Grade A** is the strongest; **B and C** still certify the level. Below the pass range you may receive a certificate at the **level below** instead.",
+      "realExample": "On C1 Advanced, Grades A, B and C all certify C1; a strong-but-not-passing result might instead be reported at B2 — you still get recognised for the level you demonstrated.",
+      "memoryHook": "A, B, C all pass. A is top; miss the pass range and you may certify the level below." },
+    { "heading": "A top grade can certify the level up",
+      "body": "The Cambridge Scale is **continuous across exams**, so a **very high result can be reported at the next CEFR level**. A Grade A on **B2 First** can be certified at **C1**; a Grade A on **C1 Advanced** at **C2** — your certificate reflects the higher level you reached.",
+      "realExample": "Score exceptionally on B2 First and your certificate can state C1 — useful if a university needed C1 and you took the B2 exam but performed above it.",
+      "memoryHook": "Exceed the exam's level and your certificate can show the level above." },
+    { "heading": "It doesn't expire — check what's needed",
+      "body": "Unlike many tests, **Cambridge English qualifications don't have an official expiry date** (though institutions may prefer recent results). Always **confirm the exact level and, if relevant, per-skill scores** your university or employer requires.",
+      "realExample": "A university might accept C1 Advanced with a minimum overall and no skill below a set score — check both the level and any per-skill minimum before you rely on your result.",
+      "memoryHook": "No official expiry (but recent is preferred). Confirm the level + any per-skill minimum." }
+  ],
+  "recall": [
+    { "q": "How is the Cambridge overall score calculated?", "a": "It's the average of your scale scores across the skills (Reading, Writing, Listening, Speaking and Use of English) on the Cambridge English Scale." },
+    { "q": "Which Cambridge grades are a pass?", "a": "Grades A, B and C all pass at the exam's level; A is the strongest." },
+    { "q": "What can a top grade do?", "a": "Certify the next CEFR level up — e.g. a Grade A on B2 First can be reported at C1." },
+    { "q": "What happens if you score below the pass range?", "a": "You may receive a certificate at the level below the exam's target level." },
+    { "q": "Do Cambridge English qualifications expire?", "a": "There's no official expiry date, though institutions may prefer recent results — confirm the exact level and any per-skill minimums required." }
+  ],
+  "sources": ["https://www.cambridgeenglish.org/exams-and-tests/qualifications/first/format/", "https://www.cambridgeenglish.org/exams-and-tests/advanced/exam-format/"]
+}

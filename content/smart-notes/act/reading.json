@@ -1,0 +1,43 @@
+{
+  "id": "act-reading",
+  "exam": "act",
+  "section": "reading",
+  "title": "ACT Reading: Four Passages, Fast",
+  "estMinutes": 6,
+  "summary": "The ACT Reading passages, why speed is the challenge, and how to answer from the text under time pressure.",
+  "conceptMap": {
+    "central": "ACT Reading",
+    "nodes": [
+      { "label": "Passage types", "note": "Literary, social science, humanities, natural science" },
+      { "label": "Answer from the text", "note": "Every answer is provable in the passage" },
+      { "label": "Speed is the test", "note": "Tight time per passage" },
+      { "label": "Line references", "note": "Use them to jump to the spot" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Four passage types",
+      "body": "Reading has passages across **literary narrative, social science, humanities, and natural science**. The content is unfamiliar on purpose — you're not expected to know the topic, only to **find and understand what the passage says**.",
+      "realExample": "A natural-science passage about ocean currents doesn't test your science knowledge — every answer is about what THIS passage states, so read it as new information.",
+      "memoryHook": "Four passage types, all unfamiliar. You answer from the passage, not prior knowledge." },
+    { "heading": "Every answer is in the text",
+      "body": "Correct answers are **directly supported by the passage**; wrong ones are true-in-general, too extreme, or twist a detail. If you can't **point to the lines** that prove a choice, it's probably a trap.",
+      "realExample": "'The author suggests…' → find the sentence that backs it. An option that sounds sensible but isn't stated is the classic wrong answer.",
+      "memoryHook": "Underline the proof. No proof in the text = not the answer." },
+    { "heading": "Speed is the real challenge",
+      "body": "You have **limited time per passage**, so **don't read every word slowly**. Skim for the main idea and structure, then **go to the passage for each question** — most detail questions send you to a specific spot rather than needing a full re-read.",
+      "realExample": "Read the passage briskly for gist, then let each question's keyword or line reference point you to the exact place to check — targeted, not exhaustive, reading.",
+      "memoryHook": "Skim for gist, then hunt per question. Reading every word slowly runs out the clock." },
+    { "heading": "Use line references and keywords",
+      "body": "Many questions give a **line number or a keyword** — jump straight there and read a little around it. Answer the detail from that spot rather than from memory, and **don't leave any question blank** (no penalty).",
+      "realExample": "'In line 24, \"current\" most nearly means…' → read lines 23–25 and pick the meaning that fits the context, not the dictionary default.",
+      "memoryHook": "Line reference? Jump there, read around it, answer from the text. Never blank." }
+  ],
+  "recall": [
+    { "q": "What are the four ACT Reading passage types?", "a": "Literary narrative, social science, humanities, and natural science." },
+    { "q": "What makes an ACT Reading answer correct?", "a": "It's directly supported by lines in the passage — not merely true in general." },
+    { "q": "Why is speed the main challenge in ACT Reading?", "a": "Time per passage is tight, so you must skim for gist and target the passage per question rather than reading every word slowly." },
+    { "q": "How should you use line references and keywords?", "a": "Jump to that spot, read a little around it, and answer the detail from the text rather than from memory." },
+    { "q": "Should you leave a Reading question blank if short on time?", "a": "No — there's no penalty, so guess on every remaining question." }
+  ],
+  "sources": ["https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/act-exam-sections-and-structure.html"]
+}

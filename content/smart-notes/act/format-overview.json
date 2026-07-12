@@ -1,0 +1,44 @@
+{
+  "id": "act-format-overview",
+  "exam": "act",
+  "section": "overview",
+  "title": "The ACT: Format & the 'Enhanced' Changes",
+  "estMinutes": 7,
+  "summary": "The ACT's core sections, the new composite based on English/Math/Reading, and what the enhanced-ACT changes mean for you.",
+  "conceptMap": {
+    "central": "ACT (English · Math · Reading + options)",
+    "nodes": [
+      { "label": "English", "note": "Grammar, usage & rhetoric in passages" },
+      { "label": "Math", "note": "Algebra, geometry, trig · calculator allowed" },
+      { "label": "Reading", "note": "Passages + comprehension questions" },
+      { "label": "Science (optional)", "note": "Interpret data & experiments; reported separately" },
+      { "label": "Composite 1–36", "note": "Average of English, Math & Reading" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Three core sections, plus options",
+      "body": "The ACT's **scored core is English, Mathematics and Reading**. **Science** and **Writing (an essay)** are **additional** sections. Each section is scored **1–36**, and the **Composite is the average of English, Math and Reading** (rounded), with Science reported separately if you take it.",
+      "realExample": "A Composite of 30 might come from English 31, Math 28, Reading 31 — averaged and rounded. Science, if taken, appears as its own score and a STEM score, not folded into the Composite.",
+      "memoryHook": "Composite = average of English, Math, Reading. Science & Writing are extras, scored separately." },
+    { "heading": "The 'enhanced ACT' is changing things",
+      "body": "The ACT is being **updated**: the **Composite moved to the English/Math/Reading average**, **Science is becoming optional**, and the test is getting **more time per question and slightly shorter** — changes rolling out across 2025–2026. Because it's phased, **confirm what your specific test date and target colleges require**.",
+      "realExample": "Some test dates/colleges still expect Science; others treat it as optional. Check your registration and each college's policy rather than assuming — the rules are mid-transition.",
+      "memoryHook": "Enhanced ACT = E/M/R composite + optional Science + more time. It's phased — confirm your date." },
+    { "heading": "Each section 1–36",
+      "body": "Every section is scored on the **1–36 ACT scale**, based on the number of correct answers converted to a scaled score. There's **no penalty for wrong answers**, so **always fill in an answer** for every question, even a guess.",
+      "realExample": "With no wrong-answer penalty, a blank is a wasted chance — in the last 30 seconds, put an answer on every remaining question (a 'letter of the day' guess beats blanks).",
+      "memoryHook": "1–36 per section. No penalty — never leave a bubble blank." },
+    { "heading": "Pacing is the ACT's real challenge",
+      "body": "The ACT is known for its **fast pace** — you have limited time per question, so **timing and momentum matter as much as knowledge**. Do a first pass answering what you know, mark the hard ones, and return with leftover time.",
+      "realExample": "In Reading, don't perfect one passage while the clock runs — get the answerable questions across all passages first, then revisit tough ones. Finishing beats perfecting a few.",
+      "memoryHook": "The ACT rewards pace. Answer the sure ones first; never let one question sink the section." }
+  ],
+  "recall": [
+    { "q": "Which sections make up the ACT Composite score?", "a": "The average of English, Mathematics and Reading (each 1–36), rounded — Science and Writing are scored separately." },
+    { "q": "What are the main 'enhanced ACT' changes?", "a": "The Composite is now the English/Math/Reading average, Science is becoming optional (phased), and there's more time per question with a slightly shorter test." },
+    { "q": "How is each ACT section scored?", "a": "On a 1–36 scale, from correct answers converted to a scaled score." },
+    { "q": "Is there a penalty for wrong answers on the ACT?", "a": "No — so you should always put an answer for every question, even a guess." },
+    { "q": "Why should you confirm requirements with your test date and colleges?", "a": "The enhanced-ACT changes (composite, optional Science, timing) are rolling out in phases, so requirements vary by date and college." }
+  ],
+  "sources": ["https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/act-exam-sections-and-structure.html", "https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html"]
+}

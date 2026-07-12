@@ -1,0 +1,44 @@
+{
+  "id": "cambridge-format-overview",
+  "exam": "cambridge",
+  "section": "overview",
+  "title": "Cambridge English (B2 First & C1 Advanced): Format",
+  "estMinutes": 7,
+  "summary": "The four papers behind Cambridge English qualifications, the Cambridge English Scale, and how the levels map to the CEFR.",
+  "conceptMap": {
+    "central": "Cambridge English (4 papers)",
+    "nodes": [
+      { "label": "Reading & Use of English", "note": "One combined paper" },
+      { "label": "Writing", "note": "Two parts: an essay + a choice" },
+      { "label": "Listening", "note": "Four parts" },
+      { "label": "Speaking", "note": "Four parts, usually with a partner" },
+      { "label": "Cambridge Scale", "note": "One scale; level fixed per exam (B2 First, C1 Advanced…)" }
+    ]
+  },
+  "chunks": [
+    { "heading": "One exam per CEFR level",
+      "body": "Cambridge English offers a **qualification per CEFR level** — A2 Key, B1 Preliminary, **B2 First**, **C1 Advanced**, C2 Proficiency. Each targets a level, and **B2 First and C1 Advanced** are the ones most used for university and work. You pick the exam that matches your target level.",
+      "realExample": "If a university asks for CEFR C1, you'd take C1 Advanced; for B2, B2 First. Choose the exam whose level matches what you need — you don't pick a band, you pick the exam.",
+      "memoryHook": "One exam per level. B2 = B2 First, C1 = C1 Advanced. Pick the exam for your target." },
+    { "heading": "Four papers",
+      "body": "B2 First and C1 Advanced share the same **four-paper structure: Reading and Use of English (one combined paper), Writing, Listening, and Speaking**. Reading and Use of English blends **comprehension with grammar and vocabulary control** in one paper.",
+      "realExample": "Reading and Use of English mixes reading passages with tasks like open cloze and word formation — so grammar and vocabulary are tested alongside comprehension, not separately.",
+      "memoryHook": "4 papers: Reading & Use of English, Writing, Listening, Speaking." },
+    { "heading": "Speaking is usually with a partner",
+      "body": "Cambridge **Speaking is typically taken with another candidate and two examiners** — one asks questions, one assesses. You'll do an **interview, a long individual turn, a collaborative task with your partner, and a discussion**. It rewards natural interaction, not memorised speeches.",
+      "realExample": "In the collaborative task you discuss options with your partner to reach a decision — the examiners want real turn-taking, listening and responding, not two monologues.",
+      "memoryHook": "Speaking = you + a partner + 2 examiners. Interact naturally; don't recite." },
+    { "heading": "Scored on the Cambridge English Scale",
+      "body": "Results use the **Cambridge English Scale**, with each exam covering a level range (for example, **B2 First 140–190**). You get a **score for each skill plus an overall**, and grades **A, B or C are a pass** — a top grade can even certify the **next level up**.",
+      "realExample": "A very high B2 First result (Grade A) can be reported at C1 level — so strong performance is recognised above the exam's target band.",
+      "memoryHook": "Cambridge English Scale; A/B/C pass. A top grade can certify the level above." }
+  ],
+  "recall": [
+    { "q": "How do Cambridge English qualifications map to levels?", "a": "There's one exam per CEFR level (A2 Key, B1 Preliminary, B2 First, C1 Advanced, C2 Proficiency) — you choose the exam that matches your target level." },
+    { "q": "What four papers make up B2 First and C1 Advanced?", "a": "Reading and Use of English (one combined paper), Writing, Listening, and Speaking." },
+    { "q": "What is unusual about the Cambridge Speaking test?", "a": "It's usually taken with another candidate and two examiners, across an interview, a long turn, a collaborative task and a discussion." },
+    { "q": "What does the 'Reading and Use of English' paper combine?", "a": "Reading comprehension with grammar and vocabulary control (e.g. cloze and word-formation tasks) in one paper." },
+    { "q": "How are Cambridge results scored and graded?", "a": "On the Cambridge English Scale, with a score per skill and overall; grades A, B and C are a pass, and a top grade can certify the next level up." }
+  ],
+  "sources": ["https://www.cambridgeenglish.org/exams-and-tests/qualifications/first/format/", "https://www.cambridgeenglish.org/exams-and-tests/advanced/exam-format/"]
+}

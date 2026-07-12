@@ -1,0 +1,44 @@
+{
+  "id": "cambridge-listening",
+  "exam": "cambridge",
+  "section": "listening",
+  "title": "Cambridge Listening: The Four Parts",
+  "estMinutes": 6,
+  "summary": "Cambridge Listening's four parts — from sentence completion to multiple matching — and how the two plays of each recording help you.",
+  "conceptMap": {
+    "central": "Cambridge Listening (4 parts)",
+    "nodes": [
+      { "label": "Multiple choice", "note": "Short extracts with questions" },
+      { "label": "Sentence completion", "note": "Write a word/short phrase you hear" },
+      { "label": "Multiple choice (long)", "note": "One longer recording, detail & opinion" },
+      { "label": "Multiple matching", "note": "Match speakers to statements" },
+      { "label": "Heard twice", "note": "Each recording plays two times" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Four parts, each recording twice",
+      "body": "Cambridge Listening has **four parts** with a mix of **short extracts and longer recordings**, and — helpfully — **each recording is played twice**. Use the **first listen for the gist and answers you're sure of**, and the **second to confirm and fill gaps**.",
+      "realExample": "On the first play, note likely answers; on the second, check them and catch anything you missed — the two plays are a built-in safety net, so plan to use both.",
+      "memoryHook": "4 parts, each played twice. First listen = answers; second = confirm and fill." },
+    { "heading": "Sentence completion — exact words",
+      "body": "One part is **sentence completion**: you write a **word or short phrase you hear** to complete notes. Write the **actual words** (usually 1–3), spell them correctly, and make sure they **fit the sentence grammatically**.",
+      "realExample": "'The museum was founded in ___' → write the year exactly as said. Don't paraphrase — the gap wants the words from the recording, correctly spelled.",
+      "memoryHook": "Sentence completion = the exact words you hear, spelled right, that fit the sentence." },
+    { "heading": "Multiple choice & multiple matching",
+      "body": "**Multiple-choice** parts test **detail, gist, opinion and attitude** across short or long recordings. **Multiple matching** has several speakers you **match to statements** (e.g. each speaker's opinion). Track **who says what** and listen for the **meaning**, not just matching words.",
+      "realExample": "In multiple matching, a speaker might use different words than the statement but mean the same thing — match on meaning, and beware options that repeat a word the speaker used in a different sense.",
+      "memoryHook": "Match on meaning, not repeated words. Track each speaker's actual point." },
+    { "heading": "Read the questions first",
+      "body": "Before each recording you get **time to read the questions** — use it to **predict what to listen for** (a name? a number? an opinion?). Knowing the target in advance turns passive listening into a focused search.",
+      "realExample": "If a question asks how a speaker FELT, prime yourself for tone and attitude words; if it asks WHEN, listen for times and dates. Predicting the target sharpens both listens.",
+      "memoryHook": "Read the questions first; predict the target. Then listen for exactly that." }
+  ],
+  "recall": [
+    { "q": "How many times is each Cambridge Listening recording played?", "a": "Twice — so you can note answers on the first play and confirm or fill gaps on the second." },
+    { "q": "What do you write in the sentence-completion part?", "a": "The exact word or short phrase you hear (usually 1–3 words), spelled correctly and fitting the sentence." },
+    { "q": "What does multiple matching require?", "a": "Matching several speakers to statements (such as their opinions), based on meaning rather than repeated words." },
+    { "q": "What do the multiple-choice parts test?", "a": "Detail, gist, opinion and attitude across short and longer recordings." },
+    { "q": "How should you use the time before each recording?", "a": "Read the questions and predict what to listen for (a name, number, opinion), turning listening into a focused search." }
+  ],
+  "sources": ["https://www.cambridgeenglish.org/exams-and-tests/qualifications/first/format/", "https://www.cambridgeenglish.org/exams-and-tests/advanced/exam-format/"]
+}

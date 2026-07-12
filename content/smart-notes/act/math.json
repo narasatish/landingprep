@@ -1,0 +1,43 @@
+{
+  "id": "act-math",
+  "exam": "act",
+  "section": "math",
+  "title": "ACT Math: Content & Calculator Strategy",
+  "estMinutes": 6,
+  "summary": "What ACT Math covers, why a calculator is allowed throughout, and how to keep pace on a fast section.",
+  "conceptMap": {
+    "central": "ACT Math (1–36)",
+    "nodes": [
+      { "label": "Pre-Algebra & Algebra", "note": "Numbers, equations, functions" },
+      { "label": "Geometry", "note": "Lines, angles, area, volume, coordinates" },
+      { "label": "Trigonometry", "note": "Right triangles, basic trig ratios" },
+      { "label": "Calculator allowed", "note": "On every Math question" }
+    ]
+  },
+  "chunks": [
+    { "heading": "School-level content, broad coverage",
+      "body": "ACT Math spans **pre-algebra and algebra, geometry, and some trigonometry** — all standard high-school topics. It's **broad rather than deep**: many topics, mostly straightforward, so gaps in any one area cost points across the section.",
+      "realExample": "You'll see everything from percentages and linear equations to the area of a circle and a basic sine ratio — reviewing your weak topics matters more than mastering advanced tricks.",
+      "memoryHook": "Broad high-school maths: algebra, geometry, a little trig. Fix your weak topics." },
+    { "heading": "A calculator is allowed throughout",
+      "body": "You can use an **approved calculator on every ACT Math question** — but many are faster by reasoning or estimation. Use the calculator for real computation, not for problems you can set up and solve in your head.",
+      "realExample": "For '15% of 240', mental math (10% = 24, plus half = 36) is faster than typing; save the calculator for messy arithmetic and graphing.",
+      "memoryHook": "Calculator on every question — but reason first when it's quicker than typing." },
+    { "heading": "Answer choices are a tool",
+      "body": "Since questions are **multiple choice**, use the options: **plug in the answer choices** (start with a middle value) or **plug in your own numbers** for variable problems. This turns hard algebra into quick checking.",
+      "realExample": "'For which value of x is the equation true?' Test the middle option first — too big or small tells you which way to go, so you rarely test more than two.",
+      "memoryHook": "Use the options: back-solve from the middle, or plug in your own numbers." },
+    { "heading": "Pace and never leave a blank",
+      "body": "Math is **timed tightly**, so keep moving — do the quick questions first, **flag the long ones**, and return. With **no penalty for wrong answers**, put an answer on every question before time runs out.",
+      "realExample": "A multi-step geometry problem eating two minutes? Flag it, bubble a guess, and move to easier points — come back if time allows.",
+      "memoryHook": "Quick ones first, flag the long ones. No penalty — bubble every question." }
+  ],
+  "recall": [
+    { "q": "What content does ACT Math cover?", "a": "Pre-algebra and algebra, geometry, and some trigonometry — standard high-school topics, broad rather than deep." },
+    { "q": "Is a calculator allowed on ACT Math?", "a": "Yes — an approved calculator can be used on every Math question, though many are faster by reasoning." },
+    { "q": "How can you use the multiple-choice format to your advantage?", "a": "Plug in the answer choices (starting from the middle) or plug in your own numbers for variable problems." },
+    { "q": "Why should you flag long questions?", "a": "Math is tightly timed, so banking quick points first and returning to long questions later protects your score." },
+    { "q": "Should you ever leave an ACT Math question blank?", "a": "No — there's no penalty for wrong answers, so guess on every question you can't finish." }
+  ],
+  "sources": ["https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/act-exam-sections-and-structure.html"]
+}

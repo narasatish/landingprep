@@ -1,0 +1,43 @@
+{
+  "id": "oet-reading",
+  "exam": "oet",
+  "section": "reading",
+  "title": "OET Reading: Three Parts in 60 Minutes",
+  "estMinutes": 6,
+  "summary": "OET Reading's three parts — fast text-matching, gap-fill from short texts, and two longer passages — and how to beat the clock.",
+  "conceptMap": {
+    "central": "OET Reading (60 min, 42 items)",
+    "nodes": [
+      { "label": "Part A", "note": "Fast text-matching · ~15 min · 4 short texts" },
+      { "label": "Part B", "note": "Short workplace texts · gist/detail" },
+      { "label": "Part C", "note": "Two longer passages · deeper meaning" },
+      { "label": "Generic healthcare", "note": "Same for all professions" }
+    ]
+  },
+  "chunks": [
+    { "heading": "Three parts, 60 minutes, healthcare texts",
+      "body": "OET Reading has **three parts, about 42 questions in 60 minutes**, on **generic healthcare topics**. Part A is **strictly timed (~15 minutes)** and speed-based; Parts B and C give you the remaining time for shorter and longer texts.",
+      "realExample": "Because Part A has its own tight time limit, treat it as a separate sprint — don't carry a slow Part A pace into it or you'll run out before finishing.",
+      "memoryHook": "3 parts, 60 min total. Part A is a ~15-min sprint; B & C take the rest." },
+    { "heading": "Part A — scan four texts fast",
+      "body": "Part A gives **four short healthcare texts** and questions (matching, sentence completion, short answer) that you answer by **quickly locating information across the texts**. It's a **skimming-and-scanning** race — find the right text and spot, don't read everything.",
+      "realExample": "A question asks which text mentions a dosage — scan headings and keywords to jump to the right text, grab the figure, and move on. Speed and location, not deep reading.",
+      "memoryHook": "Part A = locate fast across 4 texts. Scan for the keyword; don't read it all." },
+    { "heading": "Parts B & C — read for meaning",
+      "body": "**Part B** has **short workplace texts** (memos, guidelines, notices) with one multiple-choice question each — catch the **main point or detail**. **Part C** has **two longer passages** testing **deeper comprehension, opinion and attitude**, so read those more carefully.",
+      "realExample": "A Part B guideline extract may hinge on one instruction ('administer only if…'); a Part C opinion piece may ask the writer's stance — match the reading depth to the part.",
+      "memoryHook": "B = quick point per short text. C = deeper meaning in two longer passages." },
+    { "heading": "Manage the clock across parts",
+      "body": "Because Part A is separately timed, **finish Parts B and C without overspending** on any one question. Answer what's clear first, flag the tricky ones, and **never leave a blank** — there's no penalty for wrong answers.",
+      "realExample": "Stuck on a Part C inference? Mark it, keep answering, and return with spare time — a guessed answer can score, a blank never will.",
+      "memoryHook": "Budget across B & C, flag the hard ones, guess before the end. No blanks." }
+  ],
+  "recall": [
+    { "q": "How is OET Reading structured?", "a": "Three parts with about 42 questions in 60 minutes, on generic healthcare topics." },
+    { "q": "What's special about Part A?", "a": "It's strictly timed (about 15 minutes) and speed-based — you scan four short texts to locate information fast." },
+    { "q": "How do Parts B and C differ?", "a": "Part B has short workplace texts with one question each (main point/detail); Part C has two longer passages testing deeper comprehension, opinion and attitude." },
+    { "q": "What reading technique wins Part A?", "a": "Skimming and scanning to find the right text and spot quickly, rather than reading everything." },
+    { "q": "Should you leave OET Reading questions blank?", "a": "No — there's no penalty, so flag hard ones and guess before time runs out." }
+  ],
+  "sources": ["https://www.occupationalenglishtest.org/test-information/reading/"]
+}

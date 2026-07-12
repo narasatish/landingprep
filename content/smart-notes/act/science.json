@@ -1,0 +1,43 @@
+{
+  "id": "act-science",
+  "exam": "act",
+  "section": "science",
+  "title": "ACT Science: Reading Data, Not Memorising It",
+  "estMinutes": 6,
+  "summary": "The ACT Science section — graphs, experiments and competing viewpoints — and why it tests data skills, not science facts (plus its new optional status).",
+  "conceptMap": {
+    "central": "ACT Science (optional/separate)",
+    "nodes": [
+      { "label": "Data Representation", "note": "Read graphs, tables, charts" },
+      { "label": "Research Summaries", "note": "Interpret described experiments" },
+      { "label": "Conflicting Viewpoints", "note": "Compare competing hypotheses" },
+      { "label": "Little outside knowledge", "note": "It's data-reading, not memorised science" }
+    ]
+  },
+  "chunks": [
+    { "heading": "It's a data-reading test",
+      "body": "ACT Science gives you **graphs, tables and experiment descriptions** and asks you to **interpret them** — trends, relationships, what an experiment showed. It requires **very little memorised science**; the skill is **reading data accurately and fast**.",
+      "realExample": "A question might ask 'as temperature rises, what happens to the reaction rate?' — you read the trend off the graph, not recall chemistry. Get the axes and units right and the answer is there.",
+      "memoryHook": "It tests reading data, not knowing science. Read the graph, not your memory." },
+    { "heading": "Three question formats",
+      "body": "The section has three types: **Data Representation** (read graphs/tables), **Research Summaries** (interpret described experiments and their design), and **Conflicting Viewpoints** (compare two or more scientists' competing hypotheses). Each rewards careful reading of what's presented.",
+      "realExample": "In Conflicting Viewpoints, keep each scientist's claim straight — a question may ask which viewpoint a new finding supports, and the trap is mixing up whose theory is whose.",
+      "memoryHook": "Data, Experiments, Viewpoints. Keep each scientist's claim separate in Viewpoints." },
+    { "heading": "Read axes, units and labels first",
+      "body": "Most mistakes come from **misreading the figure** — the axis, the units, or which line is which. Spend a couple of seconds **orienting to each graph** before answering; a single misread can sink several questions on the same figure.",
+      "realExample": "If a y-axis is in 'thousands', an answer of '5' means 5,000 — reading the units once correctly protects the whole set of questions on that graph.",
+      "memoryHook": "Orient to the figure first: axes, units, which line. One misread sinks the set." },
+    { "heading": "Now optional — but check your date",
+      "body": "Under the **enhanced ACT, Science is becoming an optional section reported separately** (with a STEM score), rolling out through 2025–2026. Whether you need it depends on your **test date and target colleges** — many STEM programmes still value a Science score, so confirm before skipping it.",
+      "realExample": "If you're applying to engineering or science programmes, a strong Science score can help even where it's optional — check each college's stance rather than assuming you can skip it.",
+      "memoryHook": "Science is going optional (phased). STEM applicants: confirm before you skip it." }
+  ],
+  "recall": [
+    { "q": "What does the ACT Science section actually test?", "a": "Your ability to read and interpret data — graphs, tables and experiments — with very little memorised science." },
+    { "q": "What are the three ACT Science question formats?", "a": "Data Representation, Research Summaries, and Conflicting Viewpoints." },
+    { "q": "What's the key skill in Conflicting Viewpoints?", "a": "Keeping each scientist's competing hypothesis straight so you can compare them accurately." },
+    { "q": "What causes most ACT Science mistakes?", "a": "Misreading the figure — the axes, units or which line is which — so orient to each graph first." },
+    { "q": "What is the new status of the ACT Science section?", "a": "It's becoming optional and reported separately (with a STEM score), phased through 2025–2026 — so confirm your test date and college requirements." }
+  ],
+  "sources": ["https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/act-exam-sections-and-structure.html", "https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html"]
+}
