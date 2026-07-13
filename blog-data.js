@@ -11295,11 +11295,11 @@ Avoid courses promising 'instant CLB 9' or 'guaranteed scores.' Only official pr
         },
         {
           "h": "Blocked Account (Sperrkonten): Required for Student Visa",
-          "body": "To get a German student visa, you must deposit \u20AC11,208 (or equivalent) in a German blocked account (Sperrkonto). This is NOT a deposit you lose\u2014it's money released to you monthly (\u20AC934/month) for living expenses. It's a legal requirement to prove financial stability.",
+          "body": "To get a German student visa, you must deposit \u20AC11,904 (or equivalent) in a German blocked account (Sperrkonto). This is NOT a deposit you lose\u2014it's money released to you monthly (\u20AC992/month) for living expenses. It's a legal requirement to prove financial stability.",
           "steps": [
             "Open a blocked account with a German bank (most offer free accounts for students)",
-            "Wire \u20AC11,208 from India to the blocked account in Germany",
-            "Bank freezes the amount and releases \u20AC934/month automatically to your regular account",
+            "Wire \u20AC11,904 from India to the blocked account in Germany",
+            "Bank freezes the amount and releases \u20AC992/month automatically to your regular account",
             "After 12 months (1 year of study), the blocked account is closed and any remaining balance is yours",
             "For second year, some students maintain the balance or open a new blocked account (optional if employed)"
           ],
@@ -11311,7 +11311,7 @@ Avoid courses promising 'instant CLB 9' or 'guaranteed scores.' Only official pr
             "rows": [
               [
                 "Amount Required",
-                "\u20AC11,208 (updated annually by German govt)"
+                "\u20AC11,904 (updated annually by German govt)"
               ],
               [
                 "Bank Options",
@@ -11327,7 +11327,7 @@ Avoid courses promising 'instant CLB 9' or 'guaranteed scores.' Only official pr
               ],
               [
                 "Release Mechanism",
-                "Automatic: \u20AC934/month to regular checking account"
+                "Automatic: \u20AC992/month to regular checking account"
               ],
               [
                 "Timing",
@@ -11434,7 +11434,7 @@ Avoid courses promising 'instant CLB 9' or 'guaranteed scores.' Only official pr
           "steps": [
             "Get APS certificate from German embassy in your city (2-4 weeks)",
             "Receive admission letter from German university (happens after you apply and are accepted)",
-            "Open blocked account in Germany and deposit \u20AC11,208",
+            "Open blocked account in Germany and deposit \u20AC11,904",
             "Gather documents: passport, bachelor's degree, transcripts, APS cert, admission letter, blocked account proof, health insurance",
             "Apply for German student visa at German consulate (visa fee \u20AC75)",
             "Visa interview: Usually brief, 15-20 min\u2014they confirm your study plans and financial situation",
@@ -11594,7 +11594,7 @@ Avoid courses promising 'instant CLB 9' or 'guaranteed scores.' Only official pr
         ],
         [
           "What is the Blocked Account and how does it work?",
-          "A Blocked Account (Sperrkonto) is a legal requirement for German student visa. You deposit \u20AC11,208 in a German bank, which releases \u20AC934/month to your regular account. After 1 year, unused balance is yours to keep. It's not a loss\u2014it's your living money, just pre-authorized by the government."
+          "A Blocked Account (Sperrkonto) is a legal requirement for German student visa. You deposit \u20AC11,904 in a German bank, which releases \u20AC992/month to your regular account. After 1 year, unused balance is yours to keep. It's not a loss\u2014it's your living money, just pre-authorized by the government."
         ],
         [
           "Do I need APS to apply for German universities?",
@@ -16408,7 +16408,7 @@ After taking the LandingPrep mock, use your results to plan your 12-week study c
       "id": "germany-blocked-account-2026-guide",
       "tag": "Funding",
       "date": "2026",
-      "title": "Germany Blocked Account 2026: How Much You Need (EUR 11,904) & Best Providers",
+      "title": "Germany Blocked Account Amount 2026: How Much You Need (EUR 11,904) & Best Providers",
       "excerpt": "German student visa requires a blocked account (Sperrkonto) with EUR 11,904/year (EUR 992/month). Learn how to open one with Fintiba, Expatrio, Deutsche Bank, or Coracle\u2014and unlock funds after arrival.",
       "kw": "Germany blocked account Sperrkonto 2026, German Sperrkonto EUR 11904, Fintiba Expatrio Deutsche Bank, how to open German blocked account, unblock Sperrkonto after arrival, student visa Germany funding",
       "sections": [

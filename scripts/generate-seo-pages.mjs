@@ -5002,7 +5002,7 @@ const CONTENT_HUBS = [
       { href: "/gre-quant-160/", label: "GRE Quant 160+ Strategy" },
       { href: "/which-english-test/", label: "Which English Test Should I Take?" },
     ] },
-  { path: "/gmat-quant-formulas/", title: "GMAT Quant Formula Sheet 2026 — Free GMAT Math",
+  { path: "/gmat-quant-formulas/", title: "GMAT Quant Formulas 2026: Free Formula Sheet (Algebra, Geometry, Stats)",
     desc: "Free GMAT Focus Quant formula sheet: every essential GMAT math formula for algebra, geometry, arithmetic and statistics, grouped by topic with worked examples and when to use each.",
     kw: "gmat quant formulas, gmat math formulas, gmat formula sheet, gmat focus formulas, gmat formulas, gmat algebra geometry, gmat statistics, free gmat formula sheet, gmat india",
     lead: "GMAT Focus Quant tests business-school-level maths. This free formula sheet lists every formula you actually need, grouped by topic, with worked examples and tips on when to apply each one.",
