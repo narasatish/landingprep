@@ -2,6 +2,8 @@
 .env
 .env.*
 data/                 # auth password hashes + community/leaderboard json (local only)
+backups/              # Firestore dumps — contain user emails + password hashes, NEVER commit
+*.backup.json
 
 # Dependencies / build noise
 node_modules/

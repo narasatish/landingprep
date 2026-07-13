@@ -10,6 +10,8 @@
     "precompile": "node scripts/precompile-jsx.mjs",
     "build": "node tools/check-hooks.js && node scripts/make-app-assets.cjs && node scripts/precompile-jsx.mjs && node scripts/make-bundle.mjs && node scripts/bump-version.mjs && node scripts/generate-seo-pages.mjs && node scripts/audit-seo.mjs",
     "bump": "node scripts/bump-version.mjs",
+    "backup": "node scripts/backup-firestore.mjs",
+    "restore": "node scripts/backup-firestore.mjs --restore",
     "assets": "node scripts/make-app-assets.cjs",
     "check:hooks": "node tools/check-hooks.js",
     "test:smoke": "node tools/smoke-test.js",
