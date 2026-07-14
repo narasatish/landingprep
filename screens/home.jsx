@@ -742,6 +742,7 @@ function Home({ onGuide, onPractice, onNav }) {
               ["refresh", "amber", "IELTS One Skill Retake", "See which single IELTS skill to retake to hit your target band — plus the 2026 OSR rules.", "/tools/ielts-one-skill-retake-calculator/"],
               ["clock", "pink", "Reading speed test", "Time your reading and build the 200+ wpm pace IELTS, TOEFL & GRE reward.", "/tools/reading-speed-test/"],
               ["check", "green", "Eligibility checker", "Enter your test score + destination to see if you clear the typical minimum.", "/tools/university-eligibility-checker/"],
+              ["chart", "sky", "GRE percentile calculator", "Turn your GRE Verbal, Quant & Writing scores into official ETS percentiles.", "/tools/gre-score-percentile-calculator/"],
             ].map(([ic, tone, t, d, href]) => (
               <a key={href + t} className="hp-tool-card" href={href} style={{ textDecoration: "none" }}>
                 <span className="hp-tool-ic"><IcChip name={ic} tone={tone} /></span>

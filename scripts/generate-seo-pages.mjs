@@ -318,7 +318,7 @@ const TOOLS = {
   <h2>Test your reading speed</h2>
   <p>This simply times how fast you read — no microphone. Tap start, read the passage at your normal pace, then tap stop to get your words-per-minute. IELTS, TOEFL and GRE reward 200+ wpm with good comprehension.</p>
   <div id="rs_ready">
-    <p><strong>Urban Green Spaces</strong> · <span id="rs_wc">…</span> words</p>
+    <p><strong id="rs_title">…</strong> · <span id="rs_wc">…</span> words</p>
     <button class="cta" id="rs_start" type="button" style="border:0;cursor:pointer;font-size:15px">▶ Start reading</button>
   </div>
   <div id="rs_reading" style="display:none">
@@ -329,11 +329,17 @@ const TOOLS = {
   <div id="rs_out" aria-live="polite" style="margin-top:12px"></div>
 </div>
 <script>(function(){
-  var TEXT="Cities around the world are rediscovering the value of green spaces. For much of the twentieth century, urban planners prioritised roads, factories and housing, treating parks as a pleasant but optional extra. That attitude has shifted dramatically. Researchers now understand that access to trees, grass and water has measurable effects on physical and mental health. People who live near parks report lower levels of stress, take more exercise, and recover from illness more quickly than those surrounded only by concrete. Green spaces also perform practical functions that are easy to overlook. Trees absorb rainfall and reduce the risk of flooding during heavy storms. Their leaves filter dust and pollutants from the air, while their shade lowers temperatures during increasingly frequent heatwaves. A single mature tree can cool the area around it as effectively as several air conditioners, but without consuming electricity or releasing additional heat. Wildlife benefits too, as parks and gardens provide corridors that allow birds, insects and small mammals to move safely through the built environment. Despite these advantages, green space is unevenly distributed. Wealthier neighbourhoods often enjoy generous parks and tree-lined streets, while poorer districts may have almost none. Closing this gap has become a priority for many city governments, which are now planting trees, converting derelict land into community gardens, and even installing gardens on rooftops. The challenge is considerable, because land in growing cities is expensive and competition for it is fierce. Yet the evidence is increasingly clear: investing in nature is not a luxury but a sensible strategy for healthier, more resilient cities.";
+  var PASSAGES=[
+    {t:"Urban Green Spaces",x:"Cities around the world are rediscovering the value of green spaces. For much of the twentieth century, urban planners prioritised roads, factories and housing, treating parks as a pleasant but optional extra. That attitude has shifted dramatically. Researchers now understand that access to trees, grass and water has measurable effects on physical and mental health. People who live near parks report lower levels of stress, take more exercise, and recover from illness more quickly than those surrounded only by concrete. Green spaces also perform practical functions that are easy to overlook. Trees absorb rainfall and reduce the risk of flooding during heavy storms. Their leaves filter dust and pollutants from the air, while their shade lowers temperatures during increasingly frequent heatwaves. A single mature tree can cool the area around it as effectively as several air conditioners, but without consuming electricity or releasing additional heat. Wildlife benefits too, as parks and gardens provide corridors that allow birds, insects and small mammals to move safely through the built environment. Despite these advantages, green space is unevenly distributed. Wealthier neighbourhoods often enjoy generous parks and tree-lined streets, while poorer districts may have almost none. Closing this gap has become a priority for many city governments, which are now planting trees, converting derelict land into community gardens, and even installing gardens on rooftops. The challenge is considerable, because land in growing cities is expensive and competition for it is fierce. Yet the evidence is increasingly clear: investing in nature is not a luxury but a sensible strategy for healthier, more resilient cities."},
+    {t:"The Science of Sleep",x:"Sleep occupies roughly a third of human life, yet for centuries it was dismissed as a passive state in which little of importance happened. Modern research has overturned that view completely. Far from switching off, the brain is intensely active during sleep, carrying out tasks that are essential for memory, learning and health. During the deepest stages of sleep, the brain consolidates the day's experiences, transferring fragile new memories into more stable long-term storage. Skills that are practised before sleep are often performed better the following morning, as if the brain has continued rehearsing them overnight. Sleep also appears to clear away waste products that accumulate in brain tissue during waking hours, a kind of nightly cleaning that may help protect against disease. The consequences of insufficient sleep are serious and wide-ranging. People who regularly sleep too little show reduced concentration, weaker immune responses and a greater risk of heart disease, diabetes and depression. Reaction times slow, and the ability to regulate emotions declines, making conflicts and mistakes more likely. Despite this, sleep is frequently sacrificed in modern societies that prize productivity and offer endless distractions on glowing screens. Scientists recommend a consistent schedule, a cool and dark bedroom, and a deliberate wind-down period before bed. They warn that no amount of weekend recovery can fully repair the damage of chronic sleep loss. Understanding sleep, then, is not merely an academic exercise but a practical necessity for anyone who wishes to think clearly and live well."}
+  ];
+  var P=PASSAGES[Math.floor(Math.random()*PASSAGES.length)];
+  var TEXT=P.x;
   var WORDS=TEXT.trim().split(' ').filter(function(x){return x.length>0;}).length;
   var start=0,timer=null;
   function g(id){return document.getElementById(id);}
   function fmt(sec){return Math.floor(sec/60)+':'+String(sec%60<0?0:sec%60).padStart(2,'0');}
+  g('rs_title').textContent=P.t;
   g('rs_wc').textContent=WORDS;
   g('rs_text').textContent=TEXT;
   g('rs_start').addEventListener('click',function(){
@@ -2782,6 +2788,96 @@ percentageToGpaPage();
 ieltsOsrPage();
 loanEmiPage();
 proofOfFundsCalculatorPage();
+greScorePercentilePage();
+
+// ── GRE Score Percentile Calculator (official ETS interpretive data) ────────────
+function greScorePercentilePage() {
+  const path = `/tools/gre-score-percentile-calculator/`;
+  // Official ETS GRE Interpretive Data — percentile = % of test takers scoring lower.
+  // Reference group: all test takers 1 July 2022 – 30 June 2025 (used on score reports
+  // through the 2025–26 reporting year). Source: ets.org/pdfs/gre/gre-guide-table-1a.pdf
+  const V = {170:99,169:99,168:98,167:97,166:96,165:95,164:93,163:90,162:88,161:85,160:82,159:79,158:76,157:72,156:68,155:64,154:59,153:54,152:48,151:43,150:39,149:34,148:30,147:27,146:24,145:21,144:18,143:16,142:14,141:11,140:10,139:8,138:6,137:5,136:4,135:3,134:2,133:2,132:1,131:1,130:0};
+  const Q = {170:89,169:85,168:80,167:75,166:72,165:67,164:63,163:60,162:57,161:53,160:50,159:47,158:45,157:42,156:39,155:37,154:34,153:31,152:29,151:26,150:23,149:21,148:19,147:16,146:14,145:12,144:10,143:9,142:7,141:6,140:5,139:4,138:3,137:2,136:2,135:1,134:1,133:1,132:0,131:0,130:0};
+  const AW = {"6.0":99,"5.5":98,"5.0":93,"4.5":85,"4.0":63,"3.5":40,"3.0":16,"2.5":7,"2.0":3,"1.5":1,"1.0":1,"0.5":0,"0.0":0};
+  const pctCell = (n) => (n > 0 ? `${n}` : "&lt;1");
+  let vqRows = "";
+  for (let s = 170; s >= 130; s--) vqRows += `<tr><td><strong>${s}</strong></td><td>${pctCell(V[s])}</td><td>${pctCell(Q[s])}</td></tr>`;
+  const awRows = ["6.0","5.5","5.0","4.5","4.0","3.5","3.0","2.5","2.0","1.5","1.0"].map((k) => `<tr><td><strong>${k}</strong></td><td>${pctCell(AW[k])}</td></tr>`).join("");
+  const faqs = [
+    { q: "What is a good GRE percentile?", a: "A percentile is the share of test takers you scored above. Broadly, 90th percentile and up is excellent, around the 75th is competitive for many programmes, and the 50th is roughly average. On the current ETS data that is about Verbal 163 (90th) and Quant 166 (72nd)." },
+    { q: "Why is a perfect 170 Quant only the 89th percentile?", a: "Because a large share of GRE test takers score very high on Quantitative Reasoning, so even a top 170 sits at the 89th percentile — while a 170 Verbal is the 99th. Quant percentiles run lower across the whole scale; that is normal and reflects the test-taker population, per ETS." },
+    { q: "What GRE score is the 50th percentile (average)?", a: "On the current ETS reference data, about Verbal 152 (48th) to 153 (54th) and Quant 160 (50th). The mean scaled scores are roughly Verbal 151 and Quant 158." },
+    { q: "How are GRE percentiles calculated?", a: "ETS reports the percentile rank as the percentage of test takers who scored lower than your score, based on everyone who tested in a recent three-year window — currently 1 July 2022 to 30 June 2025. This tool uses those official figures exactly." },
+  ];
+  const DATA = JSON.stringify({ V, Q, AW });
+  const calc = `
+<div class="card" id="lp-tool">
+  <h2>📊 Your GRE percentiles</h2>
+  <p class="note">Enter your official GRE scores to see the percentile rank — the % of test takers you scored above — for each measure, using the current ETS interpretive data. Fill in any or all three.</p>
+  <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(150px,1fr))">
+    <label>Verbal (130–170)<input id="gr_v" type="number" min="130" max="170" step="1" inputmode="numeric" placeholder="e.g. 158" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Quantitative (130–170)<input id="gr_q" type="number" min="130" max="170" step="1" inputmode="numeric" placeholder="e.g. 162" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Analytical Writing (0–6)<input id="gr_w" type="number" min="0" max="6" step="0.5" inputmode="decimal" placeholder="e.g. 4.5" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button class="cta" id="gr_btn" type="button" style="margin-top:12px;border:0;cursor:pointer;font-size:15px">Show my percentiles</button>
+  <div id="gr_out" aria-live="polite" style="margin-top:14px"></div>
+</div>
+<script>(function(){
+  var D=${DATA};
+  function g(id){return document.getElementById(id);}
+  function ord(n){var s=["th","st","nd","rd"],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0]);}
+  function row(label,tbl,key,raw){
+    var p=tbl[key];
+    if(p===undefined)return '<div style="margin:3px 0">'+label+' '+raw+': out of range.</div>';
+    return '<div style="margin:3px 0"><strong>'+label+' '+raw+'</strong> → '+(p>0?ord(p)+' percentile':'below the 1st percentile')+'</div>';
+  }
+  function calc(){
+    var out=g('gr_out');if(!out)return;
+    var vR=g('gr_v').value,qR=g('gr_q').value,wR=g('gr_w').value;
+    if(vR===''&&qR===''&&wR===''){out.innerHTML='<div class="callout"><span class="ic">✏️</span><div>Enter at least one GRE score (Verbal, Quant or Writing) to see your percentile.</div></div>';return;}
+    var parts=[],bad=[];
+    if(vR!==''){var v=parseInt(vR,10);if(isNaN(v)||v<130||v>170)bad.push('Verbal must be 130–170');else parts.push(row('Verbal',D.V,v,v));}
+    if(qR!==''){var q=parseInt(qR,10);if(isNaN(q)||q<130||q>170)bad.push('Quant must be 130–170');else parts.push(row('Quantitative',D.Q,q,q));}
+    if(wR!==''){var w=parseFloat(wR);if(isNaN(w)||w<0||w>6||Math.round(w*2)/2!==w)bad.push('Writing must be 0–6 in half-point steps');else parts.push(row('Analytical Writing',D.AW,w.toFixed(1),w.toFixed(1)));}
+    if(bad.length){out.innerHTML='<div class="callout warn"><span class="ic">⚠️</span><div>'+bad.join('<br>')+'</div></div>';return;}
+    out.innerHTML='<div class="callout money"><span class="ic">📊</span><div>'+parts.join('')+'<br><span style="color:var(--muted);font-size:13px">Percentile = the % of GRE test takers who scored lower, per ETS interpretive data (test takers 1 Jul 2022 – 30 Jun 2025).</span></div></div>';
+  }
+  var b=g('gr_btn');if(b)b.addEventListener('click',calc);
+  ['gr_v','gr_q','gr_w'].forEach(function(id){var el=g(id);if(el)el.addEventListener('input',calc);});
+})();</script>`;
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/tools">Tools</a> › GRE Score Percentile Calculator</p>
+<section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">Official ETS data</span><span class="badge">No signup</span></div>
+<h1>GRE Score Percentile Calculator (2026)</h1>
+<p class="lead">Turn your GRE Verbal, Quantitative and Analytical Writing scores into official percentile ranks — instantly, using the current ETS interpretive data.</p></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> A GRE percentile is the % of test takers you scored above. On the current ETS data, Verbal 170 = 99th and Quant 170 = 89th percentile; the average is about Verbal 151 and Quant 158. Quant percentiles run lower than Verbal because the test-taker pool is quantitatively strong. Enter your scores below for the exact figure.</div>
+${calc}
+<div class="card"><h2>GRE Verbal &amp; Quantitative percentile table (130–170)</h2>
+<p class="note">Percentile rank = the percentage of test takers who scored lower than that scaled score. Based on all individuals who tested 1 July 2022 – 30 June 2025 (used on score reports through 2025–26).</p>
+<table style="width:100%;border-collapse:collapse" class="uni-table"><thead><tr><th>Scaled score</th><th>Verbal percentile</th><th>Quant percentile</th></tr></thead><tbody>${vqRows}</tbody></table></div>
+<div class="card"><h2>GRE Analytical Writing percentile table</h2>
+<table style="width:100%;border-collapse:collapse" class="uni-table"><thead><tr><th>Writing score</th><th>Percentile</th></tr></thead><tbody>${awRows}</tbody></table>
+<p class="note">Source: <a href="https://www.ets.org/pdfs/gre/gre-guide-table-1a.pdf" target="_blank" rel="nofollow noopener">ETS GRE General Test Interpretive Data</a>. Percentiles are updated periodically by ETS — always confirm the current figures on your official score report.</p></div>
+<div class="card"><h2>How to read your GRE percentiles</h2><ul class="bcheck">
+<li><strong>Percentile, not raw score, is what admissions compares</strong> — a 160 Verbal (82nd) is stronger than a 160 Quant (50th), even though the scaled score is identical.</li>
+<li><strong>Quant runs lower across the whole scale</strong> — the GRE population is quantitatively strong, so a perfect 170 Quant is the 89th percentile while a 170 Verbal is the 99th.</li>
+<li><strong>Target the percentile your programme expects</strong> — competitive programmes often look for ~75th percentile and up in the measure most relevant to the field (Quant for STEM/quant, Verbal for humanities).</li>
+<li><strong>Analytical Writing matters at the margins</strong> — a 4.5 is the 85th percentile; many programmes want 4.0+ (63rd) for coursework that is writing-heavy.</li>
+</ul></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🧠 GRE Smart Notes — visual lessons & recall`, href: `/learn/gre/` },
+  { label: `📝 Free GRE mock test`, href: `/mock-test/gre/` },
+  { label: `🔄 GMAT ↔ GRE & score tools`, href: `/tools/english-test-score-converter/` },
+  { label: `🌍 Score requirements by country`, href: `/eligibility/` },
+  { label: `🎓 Free College Predictor`, href: `/#/colleges` },
+])}`;
+  emit(path, head({ title: `GRE Score Percentile Calculator 2026 — Verbal, Quant & Writing | ${BRAND}`, desc: `Free GRE percentile calculator using official ETS data: convert your Verbal, Quantitative and Analytical Writing scores to percentile ranks, plus the full 130–170 percentile table.`, path, kw: "gre percentile calculator, gre score percentile, gre verbal percentile, gre quant percentile, what percentile is my gre score, gre percentile chart, good gre score percentile", jsonLdBlocks: [
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: "GRE Score Percentile Calculator", description: "Convert GRE Verbal, Quantitative and Analytical Writing scores to official ETS percentile ranks.", applicationCategory: "EducationApplication", operatingSystem: "Any browser", browserRequirements: "Requires JavaScript", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path }),
+    faqJsonLd(faqs),
+    breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "GRE Score Percentile Calculator", path }]),
+  ] }) + shell(inner));
+}
 readinessPage();
 
 // ── Study in Germany — PILLAR hub. Broad, substantive guide that interlinks the
