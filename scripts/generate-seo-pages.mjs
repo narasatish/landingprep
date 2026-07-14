@@ -801,6 +801,7 @@ ${t.widget || ""}
 ${t.ref || ""}
 ${faqBlock(faqs)}
 ${relatedGrid([
+  { label: `IELTS Smart Notes — visual lessons & recall`, href: `/learn/ielts/` },
   { label: `Free IELTS mock test`, href: `/mock-test/ielts/` },
   { label: `Free TOEFL mock test`, href: `/mock-test/toefl/` },
   { label: `Score requirements by country`, href: `/eligibility/` },
@@ -808,8 +809,8 @@ ${relatedGrid([
   { label: `All free exams`, href: `/#/exam-prep` },
 ])}`;
   emit(path, head({ title, desc, path, kw: t.kw, jsonLdBlocks: [
-    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: t.title, applicationCategory: "EducationApplication",
-      operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path }),
+    jsonld({ "@context": "https://schema.org", "@type": "WebApplication", name: t.title, description: t.lead, applicationCategory: "EducationApplication",
+      operatingSystem: "Any browser", browserRequirements: "Requires JavaScript", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, isAccessibleForFree: true, url: ORIGIN + path }),
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: t.title, path }]),
   ] }) + shell(inner));

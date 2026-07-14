@@ -736,10 +736,12 @@ function Home({ onGuide, onPractice, onNav }) {
               ["stamp", "amber", "Visa interview questions", "Real F-1, UK, Canada & Australia student-visa questions, answered.", "/visa-interview/"],
               ["pen", "pink", "SOP & LOR samples", "Complete statement-of-purpose & recommendation samples to adapt.", "/sop-samples/"],
               ["calendar", "sky", "Intakes & deadlines", "When to apply — intake seasons & deadlines for every country.", "/intakes/"],
-              ["target", "accent", "IELTS band calculator", "Turn your raw Listening & Reading answers into the official 0–9 band.", "/tools/ielts-band-score-calculator/"],
+              ["target", "accent", "IELTS band calculator", "Enter your four section scores → your official overall IELTS band, instantly.", "/tools/ielts-band-score-calculator/"],
               ["compare", "sky", "CGPA to percentage", "Convert CGPA/SGPA to a percentage using your university's exact formula.", "/tools/cgpa-to-percentage-calculator/"],
               ["target", "green", "Percentage to US GPA", "Estimate your US 4.0 GPA from an Indian percentage — the band method universities use.", "/tools/percentage-to-gpa-calculator/"],
               ["refresh", "amber", "IELTS One Skill Retake", "See which single IELTS skill to retake to hit your target band — plus the 2026 OSR rules.", "/tools/ielts-one-skill-retake-calculator/"],
+              ["clock", "pink", "Reading speed test", "Time your reading and build the 200+ wpm pace IELTS, TOEFL & GRE reward.", "/tools/reading-speed-test/"],
+              ["check", "green", "Eligibility checker", "Enter your test score + destination to see if you clear the typical minimum.", "/tools/university-eligibility-checker/"],
             ].map(([ic, tone, t, d, href]) => (
               <a key={href + t} className="hp-tool-card" href={href} style={{ textDecoration: "none" }}>
                 <span className="hp-tool-ic"><IcChip name={ic} tone={tone} /></span>
