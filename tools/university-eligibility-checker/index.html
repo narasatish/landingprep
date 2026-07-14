@@ -105,9 +105,45 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
   <div class="badges"><span class="badge">Free tool</span><span class="badge">Instant</span><span class="badge">No signup</span></div>
   <h1>Study Abroad Eligibility Checker</h1>
   <p class="lead">Enter your English-test score and target country to see whether you meet typical university and visa requirements.</p>
-  <a class="cta" href="/#/tools">▶ Open the free tool</a>
+  <a class="cta" href="#lp-tool">▶ Use the calculator</a>
 </section>
-
+<div class="card" id="lp-tool">
+  <h2>Check your eligibility</h2>
+  <p>Pick your test and destination, then enter your score to see whether you clear the typical minimum. Minimums vary by university, course and visa stream — always verify with the official body.</p>
+  <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(150px,1fr))">
+    <label>Test<select id="el_test" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"><option value="ielts">IELTS</option><option value="toefl">TOEFL iBT</option><option value="pte">PTE Academic</option><option value="celpip">CELPIP</option><option value="duolingo">Duolingo</option></select></label>
+    <label>Destination<select id="el_country" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"></select></label>
+    <label>Your score<input id="el_score" type="number" step="0.5" inputmode="decimal" placeholder="score" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button class="cta" id="el_btn" type="button" style="margin-top:12px;border:0;cursor:pointer;font-size:15px">Check eligibility</button>
+  <div id="el_out" aria-live="polite" style="margin-top:14px"></div>
+</div>
+<script>(function(){
+  var ELIG={
+    ielts:{name:'IELTS',countries:{Canada:6.0,Australia:6.0,UK:5.5,USA:6.5,'New Zealand':6.5}},
+    toefl:{name:'TOEFL iBT',countries:{USA:80,Canada:86,Germany:80,UK:80}},
+    pte:{name:'PTE Academic',countries:{Australia:50,Canada:60,UK:59,'New Zealand':58}},
+    celpip:{name:'CELPIP',countries:{Canada:7}},
+    duolingo:{name:'Duolingo',countries:{USA:105,Canada:110,UK:110}}
+  };
+  function g(id){return document.getElementById(id);}
+  function fillCountries(){
+    var t=g('el_test').value,sel=g('el_country');sel.innerHTML='';
+    Object.keys(ELIG[t].countries).forEach(function(c){var o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o);});
+  }
+  function calc(){
+    var out=g('el_out');if(!out)return;
+    var t=g('el_test').value,c=g('el_country').value,e=ELIG[t],min=e.countries[c];
+    var v=g('el_score').value,s=parseFloat(v);
+    if(v===''||isNaN(s)){out.innerHTML='<div class="callout"><span class="ic">✏️</span><div>Enter your '+e.name+' score to check eligibility.</div></div>';return;}
+    if(s>=min){out.innerHTML='<div class="callout money"><span class="ic">✅</span><div><strong>Likely eligible for '+c+'</strong><br>You meet the typical '+e.name+' minimum of '+min+'. Always confirm the exact requirement on the official university or visa site.</div></div>';}
+    else{out.innerHTML='<div class="callout warn"><span class="ic">⚠️</span><div><strong>Below the typical minimum for '+c+'</strong><br>Most programmes want '+e.name+' '+min+'+; you entered '+s+'. Keep practising — you are close!</div></div>';}
+  }
+  var ts=g('el_test');if(ts)ts.addEventListener('change',function(){fillCountries();g('el_out').innerHTML='';});
+  var b=g('el_btn');if(b)b.addEventListener('click',calc);
+  ['el_country','el_score'].forEach(function(id){var el=g(id);if(el)el.addEventListener('input',calc);});
+  fillCountries();
+})();</script>
 <div class="card">
   <h2>About this tool</h2>
   <p>Enter your English-test score and target country to see whether you meet typical university and visa requirements. LandingPrep is a 100% free platform for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT preparation. Use this tool alongside our free full-length mock tests and speaking &amp; writing practice to plan exactly what score you need and how to reach it.</p>

@@ -105,9 +105,46 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
   <div class="badges"><span class="badge">Free tool</span><span class="badge">Instant</span><span class="badge">No signup</span></div>
   <h1>Reading Speed Test (Words Per Minute)</h1>
   <p class="lead">Measure your reading speed in words per minute and build the pace you need to finish IELTS, TOEFL and GRE reading on time.</p>
-  <a class="cta" href="/#/tools">▶ Open the free tool</a>
+  <a class="cta" href="#lp-tool">▶ Use the calculator</a>
 </section>
-
+<div class="card" id="lp-tool">
+  <h2>Test your reading speed</h2>
+  <p>This simply times how fast you read — no microphone. Tap start, read the passage at your normal pace, then tap stop to get your words-per-minute. IELTS, TOEFL and GRE reward 200+ wpm with good comprehension.</p>
+  <div id="rs_ready">
+    <p><strong>Urban Green Spaces</strong> · <span id="rs_wc">…</span> words</p>
+    <button class="cta" id="rs_start" type="button" style="border:0;cursor:pointer;font-size:15px">▶ Start reading</button>
+  </div>
+  <div id="rs_reading" style="display:none">
+    <div style="font-weight:600;margin:6px 0">⏱ <span id="rs_timer">0:00</span> — read at your normal pace, then tap stop</div>
+    <p id="rs_text" style="line-height:1.75"></p>
+    <button class="cta" id="rs_finish" type="button" style="border:0;cursor:pointer;font-size:15px">⏹ I've finished — show my speed</button>
+  </div>
+  <div id="rs_out" aria-live="polite" style="margin-top:12px"></div>
+</div>
+<script>(function(){
+  var TEXT="Cities around the world are rediscovering the value of green spaces. For much of the twentieth century, urban planners prioritised roads, factories and housing, treating parks as a pleasant but optional extra. That attitude has shifted dramatically. Researchers now understand that access to trees, grass and water has measurable effects on physical and mental health. People who live near parks report lower levels of stress, take more exercise, and recover from illness more quickly than those surrounded only by concrete. Green spaces also perform practical functions that are easy to overlook. Trees absorb rainfall and reduce the risk of flooding during heavy storms. Their leaves filter dust and pollutants from the air, while their shade lowers temperatures during increasingly frequent heatwaves. A single mature tree can cool the area around it as effectively as several air conditioners, but without consuming electricity or releasing additional heat. Wildlife benefits too, as parks and gardens provide corridors that allow birds, insects and small mammals to move safely through the built environment. Despite these advantages, green space is unevenly distributed. Wealthier neighbourhoods often enjoy generous parks and tree-lined streets, while poorer districts may have almost none. Closing this gap has become a priority for many city governments, which are now planting trees, converting derelict land into community gardens, and even installing gardens on rooftops. The challenge is considerable, because land in growing cities is expensive and competition for it is fierce. Yet the evidence is increasingly clear: investing in nature is not a luxury but a sensible strategy for healthier, more resilient cities.";
+  var WORDS=TEXT.trim().split(' ').filter(function(x){return x.length>0;}).length;
+  var start=0,timer=null;
+  function g(id){return document.getElementById(id);}
+  function fmt(sec){return Math.floor(sec/60)+':'+String(sec%60<0?0:sec%60).padStart(2,'0');}
+  g('rs_wc').textContent=WORDS;
+  g('rs_text').textContent=TEXT;
+  g('rs_start').addEventListener('click',function(){
+    start=(new Date()).getTime();g('rs_out').innerHTML='';g('rs_ready').style.display='none';g('rs_reading').style.display='';
+    timer=setInterval(function(){var s=Math.max(0,Math.round(((new Date()).getTime()-start)/1000));g('rs_timer').textContent=fmt(s);},250);
+  });
+  g('rs_finish').addEventListener('click',function(){
+    if(timer){clearInterval(timer);timer=null;}
+    var secs=((new Date()).getTime()-start)/1000;
+    g('rs_reading').style.display='none';g('rs_ready').style.display='';
+    var out=g('rs_out');
+    if(secs<15){out.innerHTML='<div class="callout warn"><span class="ic">🤔</span><div>That was too quick to be a real read — tap start and read the whole passage at your normal pace.</div></div>';return;}
+    var w=Math.round(WORDS/(secs/60));
+    if(w>700){out.innerHTML='<div class="callout warn"><span class="ic">🤔</span><div>That was too quick to be a real read — read the whole passage at your normal pace.</div></div>';return;}
+    var verdict=w>=250?'Excellent':w>=180?'Solid — exam-ready pace':w>=120?'Average — push for 200+ wpm':'Slow — practise daily reading';
+    out.innerHTML='<div class="callout money"><span class="ic">⚡</span><div><strong style="font-size:20px">'+w+' wpm</strong> · '+verdict+'<br><span style="color:var(--muted);font-size:13px">You read '+WORDS+' words in '+fmt(Math.round(secs))+'. Aim for 200+ wpm with strong comprehension for timed exam reading.</span></div></div>';
+  });
+})();</script>
 <div class="card">
   <h2>About this tool</h2>
   <p>Measure your reading speed in words per minute and build the pace you need to finish IELTS, TOEFL and GRE reading on time. LandingPrep is a 100% free platform for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT preparation. Use this tool alongside our free full-length mock tests and speaking &amp; writing practice to plan exactly what score you need and how to reach it.</p>

@@ -226,14 +226,132 @@ const TOOLS = {
     ref: `<div class="card"><h2>IELTS raw score → band score (Listening &amp; Academic Reading)</h2><p>Both the Listening and Academic Reading tests have 40 questions. Your number of correct answers maps to a band as shown below (these are the widely-published bands and can vary slightly by test version).</p><table class="cmp-table"><thead><tr><th>Band</th><th>Listening (out of 40)</th><th>Academic Reading (out of 40)</th></tr></thead><tbody><tr><td><strong>9.0</strong></td><td>39–40</td><td>39–40</td></tr><tr><td><strong>8.5</strong></td><td>37–38</td><td>37–38</td></tr><tr><td><strong>8.0</strong></td><td>35–36</td><td>35–36</td></tr><tr><td><strong>7.5</strong></td><td>32–34</td><td>33–34</td></tr><tr><td><strong>7.0</strong></td><td>30–31</td><td>30–32</td></tr><tr><td><strong>6.5</strong></td><td>26–29</td><td>27–29</td></tr><tr><td><strong>6.0</strong></td><td>23–25</td><td>23–26</td></tr><tr><td><strong>5.5</strong></td><td>18–22</td><td>19–22</td></tr><tr><td><strong>5.0</strong></td><td>16–17</td><td>15–18</td></tr></tbody></table><p class="note">General Training Reading needs slightly more correct answers for the same band. Your overall band is the average of the four skills, rounded to the nearest 0.5. Always treat these as a guide and confirm with the official band descriptors.</p></div>` },
   "english-test-score-converter": { title: "English Test Score Converter (IELTS ↔ TOEFL ↔ PTE ↔ CEFR)", exam: "ielts",
     kw: "ielts to toefl converter, toefl to ielts score conversion, pte to ielts equivalency, ielts to pte converter free, cefr level calculator, english test score equivalency",
-    lead: "Instantly convert between IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo and CEFR levels with one free tool.",
+    lead: "Instantly convert between IELTS, TOEFL iBT, PTE Academic, Duolingo and CEFR levels with one free tool.",
+    widget: `<div class="card" id="lp-tool">
+  <h2>Convert your score</h2>
+  <p>Pick the test you took, enter your score, and see the approximate equivalent in the other tests. Based on the official concordance tables — always confirm the exact requirement your university or visa accepts.</p>
+  <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr))">
+    <label>Your test<select id="cv_test" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"><option value="ielts">IELTS</option><option value="toefl">TOEFL iBT</option><option value="pte">PTE Academic</option><option value="duo">Duolingo</option></select></label>
+    <label>Your score<input id="cv_score" type="number" step="0.5" inputmode="decimal" placeholder="e.g. 7.0" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button class="cta" id="cv_btn" type="button" style="margin-top:12px;border:0;cursor:pointer;font-size:15px">Convert</button>
+  <div id="cv_out" aria-live="polite" style="margin-top:14px"></div>
+</div>
+<script>(function(){
+  var ROWS=[
+    {ielts:9.0,toefl:[118,120],pte:[89,90],cefr:'C2',duo:[160,160]},
+    {ielts:8.0,toefl:[110,114],pte:[83,86],cefr:'C1',duo:[145,145]},
+    {ielts:7.5,toefl:[102,109],pte:[79,82],cefr:'C1',duo:[130,135]},
+    {ielts:7.0,toefl:[94,101],pte:[73,78],cefr:'C1',duo:[120,125]},
+    {ielts:6.5,toefl:[79,93],pte:[65,72],cefr:'B2',duo:[110,115]},
+    {ielts:6.0,toefl:[60,78],pte:[59,64],cefr:'B2',duo:[105,105]},
+    {ielts:5.5,toefl:[46,59],pte:[51,58],cefr:'B2',duo:[95,95]},
+    {ielts:5.0,toefl:[35,45],pte:[43,50],cefr:'B1',duo:[80,80]}
+  ];
+  function g(id){return document.getElementById(id);}
+  function pick(test,score){
+    var best=null,bd=1e9;
+    for(var i=0;i<ROWS.length;i++){var r=ROWS[i],d;
+      if(test==='ielts'){d=Math.abs(r.ielts-score);}
+      else{var rg=r[test];if(score>=rg[0]&&score<=rg[1])return r;d=Math.min(Math.abs(score-rg[0]),Math.abs(score-rg[1]));}
+      if(d<bd){bd=d;best=r;}}
+    return best;
+  }
+  function rng(a){return a[0]===a[1]?(''+a[0]):(a[0]+'–'+a[1]);}
+  function calc(){
+    var out=g('cv_out');if(!out)return;
+    var test=g('cv_test').value,v=g('cv_score').value,sc=parseFloat(v);
+    if(v===''||isNaN(sc)){out.innerHTML='<div class="callout"><span class="ic">✏️</span><div>Enter your score to see the equivalents.</div></div>';return;}
+    var r=pick(test,sc);
+    out.innerHTML='<div class="callout money"><span class="ic">🔁</span><div><strong>Approximate equivalent</strong><br>'
+      +'IELTS <strong>'+r.ielts.toFixed(1)+'</strong> · TOEFL iBT <strong>'+rng(r.toefl)+'</strong> · PTE <strong>'+rng(r.pte)+'</strong> · CEFR <strong>'+r.cefr+'</strong> · Duolingo <strong>'+rng(r.duo)+'</strong>'
+      +'<br><span style="color:var(--muted);font-size:13px">Approximate concordance — universities and visa systems set their own exact requirements. Confirm against the official source.</span></div></div>';
+  }
+  var b=g('cv_btn');if(b)b.addEventListener('click',calc);
+  ['cv_test','cv_score'].forEach(function(id){var el=g(id);if(el)el.addEventListener('input',calc);});
+})();</script>`,
     ref: `<div class="card"><h2>IELTS ↔ TOEFL iBT ↔ PTE ↔ CEFR ↔ Duolingo equivalences</h2><p>This is an approximate concordance based on the test makers' published comparison tables. Use it to estimate an equivalent score — universities and visa systems set their own exact requirements, so always confirm against the official source.</p><table class="cmp-table"><thead><tr><th>IELTS</th><th>TOEFL iBT</th><th>PTE Academic</th><th>CEFR</th><th>Duolingo</th></tr></thead><tbody><tr><td><strong>9.0</strong></td><td>118–120</td><td>89–90</td><td>C2</td><td>160</td></tr><tr><td><strong>8.0</strong></td><td>110–114</td><td>83–86</td><td>C1</td><td>145</td></tr><tr><td><strong>7.5</strong></td><td>102–109</td><td>79–82</td><td>C1</td><td>130–135</td></tr><tr><td><strong>7.0</strong></td><td>94–101</td><td>73–78</td><td>C1</td><td>120–125</td></tr><tr><td><strong>6.5</strong></td><td>79–93</td><td>65–72</td><td>B2</td><td>110–115</td></tr><tr><td><strong>6.0</strong></td><td>60–78</td><td>59–64</td><td>B2</td><td>105</td></tr><tr><td><strong>5.5</strong></td><td>46–59</td><td>51–58</td><td>B2</td><td>95</td></tr><tr><td><strong>5.0</strong></td><td>35–45</td><td>43–50</td><td>B1</td><td>80</td></tr></tbody></table><p class="note">Sources: the official ETS TOEFL–IELTS concordance, Pearson PTE score guide and Duolingo English Test comparison. Figures are approximate and updated periodically by the test makers — confirm the exact equivalence and the requirement your university or visa actually accepts.</p></div>` },
   "university-eligibility-checker": { title: "Study Abroad Eligibility Checker", exam: "ielts",
     kw: "study abroad eligibility checker, am i eligible to study abroad free, university english requirement checker, visa requirements by country, study abroad requirements by exam score",
-    lead: "Enter your English-test score and target country to see whether you meet typical university and visa requirements." },
+    lead: "Enter your English-test score and target country to see whether you meet typical university and visa requirements.",
+    widget: `<div class="card" id="lp-tool">
+  <h2>Check your eligibility</h2>
+  <p>Pick your test and destination, then enter your score to see whether you clear the typical minimum. Minimums vary by university, course and visa stream — always verify with the official body.</p>
+  <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(150px,1fr))">
+    <label>Test<select id="el_test" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"><option value="ielts">IELTS</option><option value="toefl">TOEFL iBT</option><option value="pte">PTE Academic</option><option value="celpip">CELPIP</option><option value="duolingo">Duolingo</option></select></label>
+    <label>Destination<select id="el_country" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"></select></label>
+    <label>Your score<input id="el_score" type="number" step="0.5" inputmode="decimal" placeholder="score" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button class="cta" id="el_btn" type="button" style="margin-top:12px;border:0;cursor:pointer;font-size:15px">Check eligibility</button>
+  <div id="el_out" aria-live="polite" style="margin-top:14px"></div>
+</div>
+<script>(function(){
+  var ELIG={
+    ielts:{name:'IELTS',countries:{Canada:6.0,Australia:6.0,UK:5.5,USA:6.5,'New Zealand':6.5}},
+    toefl:{name:'TOEFL iBT',countries:{USA:80,Canada:86,Germany:80,UK:80}},
+    pte:{name:'PTE Academic',countries:{Australia:50,Canada:60,UK:59,'New Zealand':58}},
+    celpip:{name:'CELPIP',countries:{Canada:7}},
+    duolingo:{name:'Duolingo',countries:{USA:105,Canada:110,UK:110}}
+  };
+  function g(id){return document.getElementById(id);}
+  function fillCountries(){
+    var t=g('el_test').value,sel=g('el_country');sel.innerHTML='';
+    Object.keys(ELIG[t].countries).forEach(function(c){var o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o);});
+  }
+  function calc(){
+    var out=g('el_out');if(!out)return;
+    var t=g('el_test').value,c=g('el_country').value,e=ELIG[t],min=e.countries[c];
+    var v=g('el_score').value,s=parseFloat(v);
+    if(v===''||isNaN(s)){out.innerHTML='<div class="callout"><span class="ic">✏️</span><div>Enter your '+e.name+' score to check eligibility.</div></div>';return;}
+    if(s>=min){out.innerHTML='<div class="callout money"><span class="ic">✅</span><div><strong>Likely eligible for '+c+'</strong><br>You meet the typical '+e.name+' minimum of '+min+'. Always confirm the exact requirement on the official university or visa site.</div></div>';}
+    else{out.innerHTML='<div class="callout warn"><span class="ic">⚠️</span><div><strong>Below the typical minimum for '+c+'</strong><br>Most programmes want '+e.name+' '+min+'+; you entered '+s+'. Keep practising — you are close!</div></div>';}
+  }
+  var ts=g('el_test');if(ts)ts.addEventListener('change',function(){fillCountries();g('el_out').innerHTML='';});
+  var b=g('el_btn');if(b)b.addEventListener('click',calc);
+  ['el_country','el_score'].forEach(function(id){var el=g(id);if(el)el.addEventListener('input',calc);});
+  fillCountries();
+})();</script>` },
   "reading-speed-test": { title: "Reading Speed Test (Words Per Minute)", exam: "ielts",
     kw: "reading speed test online free, words per minute test, improve reading speed ielts, wpm reading practice, ielts reading speed time management",
-    lead: "Measure your reading speed in words per minute and build the pace you need to finish IELTS, TOEFL and GRE reading on time." },
+    lead: "Measure your reading speed in words per minute and build the pace you need to finish IELTS, TOEFL and GRE reading on time.",
+    widget: `<div class="card" id="lp-tool">
+  <h2>Test your reading speed</h2>
+  <p>This simply times how fast you read — no microphone. Tap start, read the passage at your normal pace, then tap stop to get your words-per-minute. IELTS, TOEFL and GRE reward 200+ wpm with good comprehension.</p>
+  <div id="rs_ready">
+    <p><strong>Urban Green Spaces</strong> · <span id="rs_wc">…</span> words</p>
+    <button class="cta" id="rs_start" type="button" style="border:0;cursor:pointer;font-size:15px">▶ Start reading</button>
+  </div>
+  <div id="rs_reading" style="display:none">
+    <div style="font-weight:600;margin:6px 0">⏱ <span id="rs_timer">0:00</span> — read at your normal pace, then tap stop</div>
+    <p id="rs_text" style="line-height:1.75"></p>
+    <button class="cta" id="rs_finish" type="button" style="border:0;cursor:pointer;font-size:15px">⏹ I've finished — show my speed</button>
+  </div>
+  <div id="rs_out" aria-live="polite" style="margin-top:12px"></div>
+</div>
+<script>(function(){
+  var TEXT="Cities around the world are rediscovering the value of green spaces. For much of the twentieth century, urban planners prioritised roads, factories and housing, treating parks as a pleasant but optional extra. That attitude has shifted dramatically. Researchers now understand that access to trees, grass and water has measurable effects on physical and mental health. People who live near parks report lower levels of stress, take more exercise, and recover from illness more quickly than those surrounded only by concrete. Green spaces also perform practical functions that are easy to overlook. Trees absorb rainfall and reduce the risk of flooding during heavy storms. Their leaves filter dust and pollutants from the air, while their shade lowers temperatures during increasingly frequent heatwaves. A single mature tree can cool the area around it as effectively as several air conditioners, but without consuming electricity or releasing additional heat. Wildlife benefits too, as parks and gardens provide corridors that allow birds, insects and small mammals to move safely through the built environment. Despite these advantages, green space is unevenly distributed. Wealthier neighbourhoods often enjoy generous parks and tree-lined streets, while poorer districts may have almost none. Closing this gap has become a priority for many city governments, which are now planting trees, converting derelict land into community gardens, and even installing gardens on rooftops. The challenge is considerable, because land in growing cities is expensive and competition for it is fierce. Yet the evidence is increasingly clear: investing in nature is not a luxury but a sensible strategy for healthier, more resilient cities.";
+  var WORDS=TEXT.trim().split(' ').filter(function(x){return x.length>0;}).length;
+  var start=0,timer=null;
+  function g(id){return document.getElementById(id);}
+  function fmt(sec){return Math.floor(sec/60)+':'+String(sec%60<0?0:sec%60).padStart(2,'0');}
+  g('rs_wc').textContent=WORDS;
+  g('rs_text').textContent=TEXT;
+  g('rs_start').addEventListener('click',function(){
+    start=(new Date()).getTime();g('rs_out').innerHTML='';g('rs_ready').style.display='none';g('rs_reading').style.display='';
+    timer=setInterval(function(){var s=Math.max(0,Math.round(((new Date()).getTime()-start)/1000));g('rs_timer').textContent=fmt(s);},250);
+  });
+  g('rs_finish').addEventListener('click',function(){
+    if(timer){clearInterval(timer);timer=null;}
+    var secs=((new Date()).getTime()-start)/1000;
+    g('rs_reading').style.display='none';g('rs_ready').style.display='';
+    var out=g('rs_out');
+    if(secs<15){out.innerHTML='<div class="callout warn"><span class="ic">🤔</span><div>That was too quick to be a real read — tap start and read the whole passage at your normal pace.</div></div>';return;}
+    var w=Math.round(WORDS/(secs/60));
+    if(w>700){out.innerHTML='<div class="callout warn"><span class="ic">🤔</span><div>That was too quick to be a real read — read the whole passage at your normal pace.</div></div>';return;}
+    var verdict=w>=250?'Excellent':w>=180?'Solid — exam-ready pace':w>=120?'Average — push for 200+ wpm':'Slow — practise daily reading';
+    out.innerHTML='<div class="callout money"><span class="ic">⚡</span><div><strong style="font-size:20px">'+w+' wpm</strong> · '+verdict+'<br><span style="color:var(--muted);font-size:13px">You read '+WORDS+' words in '+fmt(Math.round(secs))+'. Aim for 200+ wpm with strong comprehension for timed exam reading.</span></div></div>';
+  });
+})();</script>` },
 };
 
 // ── HTML helpers ────────────────────────────────────────────────────────────
