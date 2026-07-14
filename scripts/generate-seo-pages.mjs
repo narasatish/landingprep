@@ -190,7 +190,39 @@ const ELIGIBILITY = {
 const TOOLS = {
   "ielts-band-score-calculator": { title: "IELTS Band Score Calculator", exam: "ielts",
     kw: "ielts band score calculator free, ielts score calculator online, calculate ielts band from raw score, ielts overall band score calculator, what is my ielts band",
-    lead: "Convert your raw IELTS Listening and Reading answers into the official 0–9 band score and get your overall band in seconds.",
+    lead: "Enter your four IELTS section scores to get your official overall band instantly — or use the raw-score table to convert Listening & Reading answers to a band.",
+    widget: `<div class="card" id="lp-tool">
+  <h2>Your overall IELTS band</h2>
+  <p>Enter your four section scores (0–9, half bands allowed). Your <strong>overall band</strong> is the average of the four, rounded to the nearest half band using the <strong>official IELTS rounding rule</strong>.</p>
+  <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(150px,1fr))">
+    <label>Listening<input id="ib_l" type="number" step="0.5" min="0" max="9" inputmode="decimal" placeholder="e.g. 7.5" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Reading<input id="ib_r" type="number" step="0.5" min="0" max="9" inputmode="decimal" placeholder="e.g. 6.5" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Writing<input id="ib_w" type="number" step="0.5" min="0" max="9" inputmode="decimal" placeholder="e.g. 6.5" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+    <label>Speaking<input id="ib_s" type="number" step="0.5" min="0" max="9" inputmode="decimal" placeholder="e.g. 7.0" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-top:4px"/></label>
+  </div>
+  <button class="cta" id="ib_btn" type="button" style="margin-top:12px;border:0;cursor:pointer;font-size:15px">Calculate overall band</button>
+  <div id="ib_out" aria-live="polite" style="margin-top:14px"></div>
+</div>
+<script>(function(){
+  function g(id){return document.getElementById(id);}
+  function val(id){var el=g(id);if(!el||el.value==='')return null;var v=parseFloat(el.value);return isNaN(v)?NaN:v;}
+  function calc(){
+    var out=g('ib_out');if(!out)return;
+    var s=[val('ib_l'),val('ib_r'),val('ib_w'),val('ib_s')];
+    for(var i=0;i<4;i++){
+      if(s[i]===null){out.innerHTML='<div class="callout"><span class="ic">✏️</span><div>Enter all four section scores (0–9) to see your overall band.</div></div>';return;}
+      if(isNaN(s[i])||s[i]<0||s[i]>9){out.innerHTML='<div class="callout warn"><span class="ic">⚠️</span><div>Each band must be a number between 0 and 9.</div></div>';return;}
+    }
+    var avg=(s[0]+s[1]+s[2]+s[3])/4;
+    var band=Math.round(avg*2)/2; // official IELTS rule: .25 rounds up to .5; .75 rounds up to the next whole band
+    out.innerHTML='<div class="callout money"><span class="ic">🎯</span><div>'
+      +'<strong style="font-size:20px">Overall band: '+band.toFixed(1)+'</strong><br>'
+      +'Average of your four scores = '+avg.toFixed(2)+', rounded to the nearest half band.<br>'
+      +'<span style="color:var(--muted);font-size:13px">Official rounding: an average ending in .25 rounds up to the next half band (e.g. 6.25 → 6.5); ending in .75 rounds up to the next whole band (e.g. 6.75 → 7.0).</span></div></div>';
+  }
+  var b=g('ib_btn');if(b)b.addEventListener('click',calc);
+  ['ib_l','ib_r','ib_w','ib_s'].forEach(function(id){var el=g(id);if(el)el.addEventListener('input',calc);});
+})();</script>`,
     ref: `<div class="card"><h2>IELTS raw score → band score (Listening &amp; Academic Reading)</h2><p>Both the Listening and Academic Reading tests have 40 questions. Your number of correct answers maps to a band as shown below (these are the widely-published bands and can vary slightly by test version).</p><table class="cmp-table"><thead><tr><th>Band</th><th>Listening (out of 40)</th><th>Academic Reading (out of 40)</th></tr></thead><tbody><tr><td><strong>9.0</strong></td><td>39–40</td><td>39–40</td></tr><tr><td><strong>8.5</strong></td><td>37–38</td><td>37–38</td></tr><tr><td><strong>8.0</strong></td><td>35–36</td><td>35–36</td></tr><tr><td><strong>7.5</strong></td><td>32–34</td><td>33–34</td></tr><tr><td><strong>7.0</strong></td><td>30–31</td><td>30–32</td></tr><tr><td><strong>6.5</strong></td><td>26–29</td><td>27–29</td></tr><tr><td><strong>6.0</strong></td><td>23–25</td><td>23–26</td></tr><tr><td><strong>5.5</strong></td><td>18–22</td><td>19–22</td></tr><tr><td><strong>5.0</strong></td><td>16–17</td><td>15–18</td></tr></tbody></table><p class="note">General Training Reading needs slightly more correct answers for the same band. Your overall band is the average of the four skills, rounded to the nearest 0.5. Always treat these as a guide and confirm with the official band descriptors.</p></div>` },
   "english-test-score-converter": { title: "English Test Score Converter (IELTS ↔ TOEFL ↔ PTE ↔ CEFR)", exam: "ielts",
     kw: "ielts to toefl converter, toefl to ielts score conversion, pte to ielts equivalency, ielts to pte converter free, cefr level calculator, english test score equivalency",
@@ -641,8 +673,9 @@ function toolPage(slug) {
   <div class="badges"><span class="badge">Free tool</span><span class="badge">Instant</span><span class="badge">No signup</span></div>
   <h1>${t.title}</h1>
   <p class="lead">${t.lead}</p>
-  <a class="cta" href="/#/tools">▶ Open the free tool</a>
+  <a class="cta" href="${t.widget ? "#lp-tool" : "/#/tools"}">▶ ${t.widget ? "Use the calculator" : "Open the free tool"}</a>
 </section>
+${t.widget || ""}
 <div class="card">
   <h2>About this tool</h2>
   <p>${t.lead} ${BRAND} is a 100% free platform for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT preparation. Use this tool alongside our free full-length mock tests and speaking &amp; writing practice to plan exactly what score you need and how to reach it.</p>
