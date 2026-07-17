@@ -238,14 +238,33 @@ app.use(express.static(__dirname, {
 }));
 
 // ── Health check ─────────────────────────────────────────────────────────────
-app.get("/api/health", (_req, res) => {
-  res.json({
+// `hasKey` only means the env var is SET — it does NOT mean the AI works. That false
+// comfort hid an ~8-day outage when Google retired every model in MODEL_CHAIN.
+// Add ?probe=ai to actually call the model chain and report which model answers.
+// It's opt-in because each probe costs one real Gemini call — keep it off the
+// high-frequency keep-alive pinger; a daily probe is plenty.
+app.get("/api/health", async (req, res) => {
+  const base = {
     status: "ok",
     hasKey: !!GEMINI_API_KEY,
     firestore: FS_DB ? "connected" : "local-file-ephemeral",
     accounts: Object.keys(STORE.users || {}).length,
     ts: new Date().toISOString(),
-  });
+  };
+  if (req.query.probe !== "ai") return res.json(base);
+
+  if (!GEMINI_API_KEY) return res.json({ ...base, ai: { ok: false, reason: "GEMINI_API_KEY not set" } });
+  let lastErr = null;
+  for (const model of MODEL_CHAIN) {
+    try {
+      const r = await geminiPost(model, {
+        contents: [{ role: "user", parts: [{ text: "Reply with the single word: ok" }] }],
+        generationConfig: { maxOutputTokens: 8, temperature: 0, ...(model.startsWith("gemini-2.5") ? { thinkingConfig: { thinkingBudget: 0 } } : {}) },
+      });
+      return res.json({ ...base, ai: { ok: true, model: r.model, sample: (r.text || "").trim().slice(0, 40) } });
+    } catch (e) { lastErr = e; }
+  }
+  return res.status(503).json({ ...base, status: "degraded", ai: { ok: false, triedModels: MODEL_CHAIN, reason: scrubSecrets(lastErr && lastErr.message) } });
 });
 
 // ── Daily Instagram auto-poster ───────────────────────────────────────────────
@@ -776,7 +795,14 @@ app.get("/api/live", (_req, res) => {
 });
 
 // ── Gemini helpers ────────────────────────────────────────────────────────────
-const MODEL_CHAIN = ["gemini-2.5-flash", "gemini-1.5-flash"];
+// Gemini model fallback chain — tried in order until one succeeds.
+// ⚠️ Google RETIRES these on a rolling basis and a retired id returns HTTP 404, which
+// silently kills every AI feature (tutor, band checker, speaking). Both previous entries
+// died: gemini-1.5-flash (1.5 family shut down) and gemini-2.5-flash (pulled 9 Jul 2026,
+// ahead of its announced 16 Oct 2026 date) — that outage ran ~8 days unnoticed.
+// Keep newest-GA first, and re-check https://ai.google.dev/gemini-api/docs/deprecations
+// whenever AI answers start failing. GET /api/health?probe=ai verifies the chain live.
+const MODEL_CHAIN = ["gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-2.5-flash"];
 
 const EXAM_META = {
   ielts:    { name: "IELTS",                scale: "Band 0–9",           sections: "Listening, Reading, Writing, Speaking" },
@@ -809,6 +835,16 @@ Guidelines:
 - If you don't know something specific, say so honestly
 
 Tone: professional but warm — like a trusted tutor who wants the student to succeed.`;
+}
+
+// Never let an upstream error echo the API key back to a caller or into a log.
+// The key travels in the Gemini URL query string, so any error that quotes the URL
+// would otherwise leak it.
+function scrubSecrets(msg) {
+  if (!msg) return undefined;
+  let s = String(msg).slice(0, 300);
+  if (GEMINI_API_KEY) s = s.split(GEMINI_API_KEY).join("[redacted]");
+  return s.replace(/([?&]key=)[^&\s"']+/gi, "$1[redacted]");
 }
 
 // Make a non-streaming HTTPS POST to Gemini and return the response text
@@ -947,6 +983,7 @@ app.post("/api/ai-tutor/chat", async (req, res) => {
     },
   });
 
+  let lastErr = null;
   for (const model of MODEL_CHAIN) {
     try {
       if (wantStream) {
@@ -957,14 +994,18 @@ app.post("/api/ai-tutor/chat", async (req, res) => {
         return res.json({ answer: result.text, model: result.model });
       }
     } catch (e) {
+      lastErr = e;
       console.warn(`[ai-tutor] ${model} failed:`, e.message.slice(0, 150));
     }
   }
 
-  // All models failed
+  // All models failed. Surface a sanitised reason: the previous generic message hid an
+  // 8-day outage caused by Google retiring every model in MODEL_CHAIN (HTTP 404).
   res.status(502).json({
     error: "AI service temporarily unavailable. Please try again in a moment.",
     fallback: true,
+    reason: scrubSecrets(lastErr && lastErr.message),
+    triedModels: MODEL_CHAIN,
   });
 });
 
