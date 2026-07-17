@@ -1,12 +1,25 @@
 name: Keep Render Awake
 
-# Render's free tier sleeps after 15 min idle, causing a 30-50s cold start for
-# the first visitor. This pings the health endpoint every ~10 minutes so the
-# service stays warm and pages load fast. (One always-on free service fits in
-# Render's monthly free hours.)
+# Render's free tier sleeps after 15 min idle, causing a 30-50s cold start for the
+# first visitor. This pings the health endpoint to keep it warm.
+#
+# ⚠️ THE SCHEDULE IS DISABLED ON PURPOSE — DO NOT RE-ENABLE IT HERE.
+#
+# GitHub bills Actions per minute ROUNDED UP, so booting a whole Ubuntu VM every
+# 10 minutes to send one curl cost ~4,380 min/month. This repo is PRIVATE, where the
+# free allowance is only 2,000 min/month — so this single workflow blew the entire
+# budget by itself and, combined with a $0 spending budget, got ALL jobs blocked
+# ("Failed in 2 seconds"). It was the main cause of the CI failure emails.
+#
+# ✅ Use a free external pinger instead — it costs nothing and is more reliable than
+#    GitHub's scheduler (GitHub delays/drops cron runs under load, which a 10-minute
+#    keep-alive cannot tolerate):
+#      • cron-job.org  — free, intervals down to 1 minute
+#      • UptimeRobot   — free, 5-minute checks + email alerts
+#    Point either at: https://landingprep.com/api/health
+#
+# Kept here as a manual button (Actions tab → Run workflow) for one-off warm-ups.
 on:
-  schedule:
-    - cron: "*/10 * * * *"   # every 10 minutes
   workflow_dispatch: {}
 
 jobs:

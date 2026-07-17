@@ -3,9 +3,20 @@ name: Production health check
 # External uptime + content check of the LIVE site every 15 minutes. If anything is
 # down, returns a 500, or a key page/tool/content stops serving, this job fails and
 # GitHub emails the repo owner. Complements the in-app monitor (which also emails you).
+# ⚠️ FREQUENCY IS DELIBERATELY LOW — see the cost note below before changing it.
+#
+# This ran every 15 min = ~2,920 billed min/month (GitHub rounds each run UP to a full
+# minute). This repo is PRIVATE, where the free allowance is 2,000 min/month, so this
+# plus keep-alive (~4,380) put us ~3.7x over budget — which, with a $0 spending budget,
+# blocked every job in the repo.
+#
+# ✅ For real uptime monitoring use a free external service (UptimeRobot / BetterUptime):
+#    it checks from outside, alerts by email, costs nothing, and — unlike this workflow —
+#    still works when GitHub Actions itself is blocked or down.
+# This job is kept as a cheap backstop that also verifies page CONTENT, not just uptime.
 on:
   schedule:
-    - cron: "*/15 * * * *"   # every 15 minutes (UTC)
+    - cron: "0 */6 * * *"    # every 6 hours (~120 billed min/month)
   workflow_dispatch: {}       # allow manual run from the Actions tab
 
 jobs:
