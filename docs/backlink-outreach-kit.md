@@ -12,18 +12,42 @@
 
 ## 0. Your linkable assets (lead with these — they're free, which competitors aren't)
 
+> ⚠️ **Every URL below is verified live (200).** Never paste a URL you haven't loaded first — a 404 in an
+> outreach email burns the relationship permanently. (`/mock-test` with no exam **404s** — always use the
+> per-exam URL, e.g. `/mock-test/ielts/`.)
+
+### Tier 1 — the differentiators (lead with these; competitors charge for this or don't have it)
+
 | Asset | URL | Best pitch angle |
 |-------|-----|------------------|
-| Free **AI IELTS Writing Checker** | landingprep.com/ielts-writing-checker | "Free instant band-score feedback — no signup" |
-| Free **AI IELTS Speaking Checker** | landingprep.com/ielts-speaking-checker | "Practise speaking out loud + AI feedback, free" |
-| Free **Mock Tests** (IELTS/PTE/TOEFL) | landingprep.com/mock-test | "Full-length free mocks, no paywall" |
-| **GRE Vocabulary List** | landingprep.com/gre-vocabulary-list | "Curated high-frequency GRE words, free" |
-| **Scholarship database** | landingprep.com/fully-funded-scholarships | "Fully-funded scholarships for Indian students" |
-| **IELTS Band Guides** (5.5–8) | landingprep.com/ielts-band-guides | "How to hit each band, by skill" |
-| **Visa Approval Rates data report** | landingprep.com/blog/student-visa-approval-rates-by-country-2026 | "Original 2026 data — citeable" |
+| **Smart Notes** — 66 visual notes, 11 exams, spaced-repetition recall | landingprep.com/learn/ | "Free visual revision notes + built-in flashcard recall for 11 exams (IELTS, TOEFL, PTE, GRE, GMAT, SAT, ACT, OET, CELPIP, Cambridge, Duolingo) — no signup" |
+| **Free tool suite** — 14 calculators | landingprep.com/#/tools | "14 free exam & study-abroad calculators, no signup, no paywall" |
+| **GRE Score Percentile Calculator** | landingprep.com/tools/gre-score-percentile-calculator/ | "Built on the official ETS interpretive data — a citeable free percentile lookup" |
+| **Proof-of-Funds Calculator** | landingprep.com/tools/proof-of-funds-calculator/ | "2026 figures verified against each government's own source (gov.uk, IRCC, Sperrkonto) — **strongest journalist hook after the data report**" |
+| **Canada Express Entry CRS Calculator** | landingprep.com/tools/canada-express-entry-crs-calculator/ | "Free CRS estimator built on the official IRCC grid" |
+| **IELTS Band Score Calculator** | landingprep.com/tools/ielts-band-score-calculator/ | "Enter 4 section scores → overall band using the official IELTS rounding rule" |
+
+### Tier 2 — proven assets
+
+| Asset | URL | Best pitch angle |
+|-------|-----|------------------|
+| **Visa Approval Rates data report** | landingprep.com/blog/student-visa-approval-rates-by-country-2026/ | "Original 2026 data — citeable" |
+| Free **AI IELTS Writing Checker** | landingprep.com/ielts-writing-checker/ | "Free instant band-score feedback — no signup" |
+| Free **AI IELTS Speaking Checker** | landingprep.com/ielts-speaking-checker/ | "Practise speaking out loud + AI feedback, free" |
+| Free **Mock Tests** (per exam) | landingprep.com/mock-test/ielts/ (also /toefl/, /pte/, /gre/, /gmat/, …) | "Full-length free mocks, no paywall" |
+| **GRE Vocabulary List** | landingprep.com/gre-vocabulary-list/ | "Curated high-frequency GRE words, free" |
+| **Scholarship database** | landingprep.com/fully-funded-scholarships/ | "Fully-funded scholarships for Indian students" |
+| **IELTS Band Guides** (5.5–8) | landingprep.com/ielts-band-guides/ | "How to hit each band, by skill" |
+
+*(Trailing slashes are the canonical form — they avoid a 301 hop, so link equity lands directly.)*
 
 **Rule of thumb:** consultancies and forums link to *free tools and original data*, not to blog posts that
-sound like ads. Lead with the AI checkers, the free mocks, and the data report.
+sound like ads. **Lead with Smart Notes** (the thing nobody else gives away free), then the calculators
+built on official data (GRE percentile, proof-of-funds, CRS), then the data report.
+
+**Why the official-data tools punch above their weight:** every figure in them is traceable to a primary
+source (ETS, IRCC, gov.uk, GMAC). That's exactly what makes a page *citeable* — journalists and .edu
+librarians link to things they can verify, not to opinions.
 
 ---
 

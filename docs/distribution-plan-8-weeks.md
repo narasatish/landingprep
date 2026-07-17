@@ -1,14 +1,15 @@
 # LandingPrep — 8-Week Distribution Plan (build the authority the site can't build itself)
 
-**Why this exists.** The site is now technically excellent and content-deep (SEO 100, a11y 100, accurate verified content, 5-country pillar cluster, 5 free tools, 3 data studies). It is *not* ranking because almost nothing off-site links to or mentions you — Google has no authority signal to justify ranking you above IDP, Magoosh and government sites. **No code fixes this.** Authority is built by publishing off your own site and earning links/mentions. This plan does that.
+**Why this exists.** The site is now technically excellent and content-deep (SEO 100, a11y 100, accurate verified content, 5-country pillar cluster, **14 free tools**, **66 Smart Notes across 11 exams**, 3 data studies). It is *not* ranking because almost nothing off-site links to or mentions you — Google has no authority signal to justify ranking you above IDP, Magoosh and government sites. **No code fixes this.** Authority is built by publishing off your own site and earning links/mentions. This plan does that.
 
 **Honest expectations.** This is a 6–12 month game, not a 3-month one. What you should see: branded searches and referring domains ticking up by week 6–8, first AI-search citations around month 3, and ranking movement on your traction topics over months 3–6. Consistency beats intensity — 5–7 focused hours a week, every week, beats a burst then silence.
 
 **Time budget:** ~5–7 hrs/week. **The one prerequisite:** finish Resend setup (Week 0) so the email flywheel can run.
 
-**Your ready ammunition (all built this session):**
+**Your ready ammunition:**
+- **Smart Notes — your single best differentiator:** `/learn/` — 66 visual notes with spaced-repetition recall across **11 exams** (IELTS, TOEFL, PTE, GRE, GMAT, SAT, ACT, OET, CELPIP, Cambridge, Duolingo). Free, no signup. Competitors either charge for this or don't offer it. **Lead with this everywhere.**
 - Data studies (accurate, citable): `/study-abroad-funding-facts-2026/`, `/cheapest-countries-to-study-abroad-2026/`, `/blog/student-visa-approval-rates-by-country-2026/`
-- Tools: proof-of-funds, Canada CRS, visa-document-checklist, cost, education-loan EMI
+- **Tools (14, all live & verified).** Built on *official* data → citeable: **GRE score percentile** (ETS interpretive data), **proof-of-funds** (gov.uk / IRCC / Sperrkonto), **Canada CRS** (IRCC grid), **IELTS band score** (official rounding rule). Plus: score converter, eligibility checker, reading-speed test, IELTS One Skill Retake, CGPA→%, %→GPA, cost, education-loan EMI, visa-document checklist, readiness checker.
 - Pillars: study-in-germany / canada / uk / australia / usa
 - Assets: 3 IG carousels + 15 slides (`marketing/carousels/`), backlink kit (`docs/backlink-outreach-kit.md`), channel starter content (`docs/ig-content-plan.md`)
 - Proven-demand topics (from GSC): **Germany blocked account, GMAT formulas, education loans, Canada study permit, student visa checklist**
