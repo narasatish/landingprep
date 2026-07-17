@@ -274,6 +274,23 @@ const TOOLS = {
   "university-eligibility-checker": { title: "Study Abroad Eligibility Checker", exam: "ielts",
     kw: "study abroad eligibility checker, am i eligible to study abroad free, university english requirement checker, visa requirements by country, study abroad requirements by exam score",
     lead: "Enter your English-test score and target country to see whether you meet typical university and visa requirements.",
+    ref: `<div class="card"><h2>Typical minimum English scores by destination</h2>
+<p>These are the typical minimums the checker above scores you against — a realistic floor for mainstream undergraduate and taught-Master's entry. They are a starting point, not a guarantee.</p>
+<table class="cmp-table"><thead><tr><th>Test</th><th>Canada</th><th>Australia</th><th>UK</th><th>USA</th><th>New Zealand</th><th>Germany</th></tr></thead><tbody>
+<tr><td><strong>IELTS</strong> (band)</td><td>6.0</td><td>6.0</td><td>5.5</td><td>6.5</td><td>6.5</td><td>—</td></tr>
+<tr><td><strong>TOEFL iBT</strong> (pts)</td><td>86</td><td>—</td><td>80</td><td>80</td><td>—</td><td>80</td></tr>
+<tr><td><strong>PTE Academic</strong> (pts)</td><td>60</td><td>50</td><td>59</td><td>—</td><td>58</td><td>—</td></tr>
+<tr><td><strong>CELPIP</strong> (level)</td><td>7</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><strong>Duolingo</strong> (pts)</td><td>110</td><td>—</td><td>110</td><td>105</td><td>—</td><td>—</td></tr>
+</tbody></table>
+<p class="note">A dash means that combination isn't a common route — not that the test is never accepted. Always confirm the exact requirement with the university and the visa authority.</p></div>
+<div class="card"><h2>Why "eligible" is only half the answer</h2><ul class="bcheck">
+<li><strong>The university minimum and the visa minimum are different bars.</strong> You must clear both, and they're set by different bodies — meeting one tells you nothing about the other.</li>
+<li><strong>Per-section minimums catch people out.</strong> Many universities want an overall band <em>and</em> no individual band below a floor (often 5.5 or 6.0). A strong overall can still be rejected on one weak skill.</li>
+<li><strong>Competitive courses sit well above the floor.</strong> Meeting the minimum makes you eligible, not competitive — top programmes often expect a band or two higher.</li>
+<li><strong>Requirements shift.</strong> Visa English rules in particular change with policy; a figure that was right last intake may not be right this one.</li>
+<li><strong>If you're just short on one skill</strong>, check whether your destination accepts <a href="/tools/ielts-one-skill-retake-calculator/">IELTS One Skill Retake</a> before rebooking the whole test.</li>
+</ul></div>`,
     widget: `<div class="card" id="lp-tool">
   <h2>Check your eligibility</h2>
   <p>Pick your test and destination, then enter your score to see whether you clear the typical minimum. Minimums vary by university, course and visa stream — always verify with the official body.</p>
@@ -314,6 +331,22 @@ const TOOLS = {
   "reading-speed-test": { title: "Reading Speed Test (Words Per Minute)", exam: "ielts",
     kw: "reading speed test online free, words per minute test, improve reading speed ielts, wpm reading practice, ielts reading speed time management",
     lead: "Measure your reading speed in words per minute and build the pace you need to finish IELTS, TOEFL and GRE reading on time.",
+    ref: `<div class="card"><h2>What your words-per-minute score means</h2>
+<p>These are the bands this tool scores you against. They assume you actually read the passage for comprehension — skimming inflates the number without helping you answer questions.</p>
+<table class="cmp-table"><thead><tr><th>Reading speed</th><th>What it means for timed exams</th></tr></thead><tbody>
+<tr><td><strong>Under 120 wpm</strong></td><td>Slow — timed reading sections will be a real struggle. Daily reading practice is the fix, not speed tricks.</td></tr>
+<tr><td><strong>120–179 wpm</strong></td><td>Average — workable, but you'll finish with little time to check answers. Push toward 200+.</td></tr>
+<tr><td><strong>180–249 wpm</strong></td><td>Solid, exam-ready pace for IELTS, TOEFL and GRE reading.</td></tr>
+<tr><td><strong>250+ wpm</strong></td><td>Excellent — provided comprehension holds up. Speed without accuracy scores nothing.</td></tr>
+</tbody></table>
+<p class="note">Reading speed only matters alongside comprehension. A 400 wpm skim that misses the writer's argument is worth less than a careful 200 wpm read.</p></div>
+<div class="card"><h2>Why reading speed decides timed reading sections</h2><ul class="bcheck">
+<li><strong>IELTS Academic Reading</strong> gives you 60 minutes for three passages and 40 questions — including the time to find and check each answer, not just to read.</li>
+<li><strong>The bottleneck is usually re-reading</strong>, not raw speed. Every time you lose the thread and go back to the top of a paragraph, you pay twice.</li>
+<li><strong>Build speed by reading more, not faster.</strong> Twenty minutes a day of real academic prose (news analysis, journal abstracts, long-form features) moves your pace far more reliably than speed-reading drills.</li>
+<li><strong>Practise reading for structure first</strong> — what each paragraph <em>does</em>, not just what it says. Knowing where an answer lives is faster than re-scanning the whole passage.</li>
+<li><strong>Retest every couple of weeks</strong> rather than daily; this tool rotates passages so you're not just re-reading a text you already know.</li>
+</ul></div>`,
     widget: `<div class="card" id="lp-tool">
   <h2>Test your reading speed</h2>
   <p>This simply times how fast you read — no microphone. Tap start, read the passage at your normal pace, then tap stop to get your words-per-minute. IELTS, TOEFL and GRE reward 200+ wpm with good comprehension.</p>
@@ -3771,11 +3804,46 @@ ${relatedGrid([
   }
   for (const [exam, notes] of Object.entries(byExam)) {
     const path = `/learn/${exam}/`;
+    const EX = exam.toUpperCase();
+    const e = EXAMS[exam];
+    const examName = e ? e.name : EX;
+    const mins = notes.map((t) => t.mins || 0);
+    const lo = Math.min(...mins), hi = Math.max(...mins);
+    const totalMins = mins.reduce((s, m) => s + m, 0);
     const tiles = notes.map((t) => `<a class="tile" href="${t.path}"><strong>${esc(t.title)}</strong><span class="muted"> · ${t.mins} min</span><br><span class="muted">${esc(t.summary)}</span></a>`).join("");
-    const inner = `<p class="crumb"><a href="/">Home</a> › <a href="/learn/">Smart Notes</a> › ${exam.toUpperCase()}</p><section class="hero"><h1>${exam.toUpperCase()} Smart Notes — Visual, Memorable Lessons</h1><p class="lead">Short, visual lessons with concept maps, real examples and built-in spaced-repetition recall for ${exam.toUpperCase()}.</p></section><div class="card"><div class="grid">${tiles}</div></div>`;
-    emit(path, head({ title: `${exam.toUpperCase()} Smart Notes — Visual Lessons & Concept Maps | ${BRAND}`, desc: `Free ${exam.toUpperCase()} Smart Notes: visual concept maps, chunked notes, real examples and spaced-repetition recall.`, path, kw: `${exam} notes, ${exam} lessons, ${exam} concept map, ${exam} study notes`, jsonLdBlocks: [
-      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Smart Notes", path: "/learn/" }, { name: `${exam.toUpperCase()} Smart Notes`, path }]),
-      jsonld({ "@context": "https://schema.org", "@type": "ItemList", name: `${exam.toUpperCase()} Smart Notes`, numberOfItems: notes.length, itemListElement: notes.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: ORIGIN + t.path, name: t.title })) }),
+    const faqs = [
+      { q: `Are the ${EX} Smart Notes free?`, a: `Yes — all ${notes.length} ${EX} Smart Notes are completely free. No signup, no paywall, and no limit on how often you revise them.` },
+      { q: `How long do the ${EX} Smart Notes take?`, a: `Each note takes about ${lo === hi ? lo : `${lo}–${hi}`} minutes, so the full ${EX} set is roughly ${totalMins} minutes of focused reading — deliberately short enough to finish one in a single sitting.` },
+      { q: `What makes a Smart Note different from a normal ${EX} study guide?`, a: `A normal guide optimises for coverage; a Smart Note optimises for memory. Each one gives you a visual concept map, 3–5 short chunks with a real example and a memory hook, and five active-recall questions. Active recall and spaced repetition are the two study techniques with the strongest evidence behind them.` },
+      { q: `How should I use these notes to prepare for ${examName}?`, a: `Read one note, study its concept map before the detail, then answer the five recall questions from memory. Revisit when the built-in scheduler resurfaces the note — the spacing is what moves it into long-term memory. Pair the notes with full practice to apply what you have revised.` },
+    ];
+    const inner = `<p class="crumb"><a href="/">Home</a> › <a href="/learn/">Smart Notes</a> › ${EX}</p>
+<section class="hero"><div class="badges"><span class="badge">${notes.length} free notes</span><span class="badge">Concept maps</span><span class="badge">Spaced repetition</span></div>
+<h1>${EX} Smart Notes — Visual, Memorable Lessons</h1>
+<p class="lead">Short, visual lessons with concept maps, real examples and built-in spaced-repetition recall for ${examName}. ${notes.length} free notes, about ${totalMins} minutes in total.</p></section>
+<div class="card"><div class="grid">${tiles}</div></div>
+<div class="card"><h2>How to revise ${EX} with Smart Notes</h2><ul class="bcheck">
+<li><strong>One note, one sitting.</strong> Each note is ${lo === hi ? lo : `${lo}–${hi}`} minutes. Don't binge them — spacing beats cramming, and the notes are built to be returned to.</li>
+<li><strong>Start with the concept map.</strong> It shows how the ideas connect <em>before</em> you read the detail, so the detail has something to attach to instead of floating loose.</li>
+<li><strong>Read the chunks, not a wall of text.</strong> Every chunk carries a real example and a memory hook — something you can actually retrieve under exam pressure.</li>
+<li><strong>Always answer the five recall questions.</strong> Pulling an answer out of memory is what builds it. Re-reading feels productive but barely shifts retention.</li>
+<li><strong>Come back when prompted.</strong> The scheduler resurfaces each note just before you'd naturally forget it — that timing is the whole point.</li>
+</ul></div>
+<div class="card"><h2>Why this format works</h2>
+<p>Most ${EX} revision fails for the same reason: highlighting and re-reading feel like learning but produce weak, short-lived memories. Smart Notes are built around the two techniques that consistently outperform them in learning research — <strong>active recall</strong> (retrieving an answer instead of reviewing it) and <strong>spaced repetition</strong> (meeting the material again at widening intervals).</p>
+<p>The visual concept map adds a third layer: seeing a topic's structure as a picture as well as words gives you two routes back to the same memory, which is why a diagram often sticks when a paragraph doesn't. Each note is deliberately small so you can finish it, recall it, and move on — rather than abandoning a 40-page PDF halfway.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `📚 All Smart Notes (every exam)`, href: `/learn/` },
+  ...(e ? [{ label: `📝 Free ${EX} full mock test`, href: `/mock-test/${exam}/` }] : [{ label: `🎓 Free College Predictor`, href: `/#/colleges` }]),
+  { label: `🌍 ${EX} score requirements by country`, href: `/eligibility/` },
+  { label: `🔄 Score converter`, href: `/tools/english-test-score-converter/` },
+  { label: `🎯 All free exams`, href: `/#/exam-prep` },
+])}`;
+    emit(path, head({ title: `${EX} Smart Notes — Visual Lessons & Concept Maps | ${BRAND}`, desc: `Free ${EX} Smart Notes: ${notes.length} visual lessons with concept maps, real examples and spaced-repetition recall. No signup.`, path, kw: `${exam} notes, ${exam} lessons, ${exam} concept map, ${exam} study notes, ${exam} revision notes, free ${exam} notes`, jsonLdBlocks: [
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Smart Notes", path: "/learn/" }, { name: `${EX} Smart Notes`, path }]),
+      jsonld({ "@context": "https://schema.org", "@type": "ItemList", name: `${EX} Smart Notes`, numberOfItems: notes.length, itemListElement: notes.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: ORIGIN + t.path, name: t.title })) }),
+      faqJsonLd(faqs),
     ] }) + shell(inner));
   }
   // ── Top-level /learn/ hub listing every exam's Smart Notes ──
