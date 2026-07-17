@@ -94,15 +94,42 @@ app.use((req, res, next) => {
   next();
 });
 
+// ── /api/v1/* is an alias of /api/* ──────────────────────────────────────────
+// Ship a versioned URL BEFORE a mobile app exists, not after. On the web you deploy
+// client and server together, so a contract change is safe; once an app is installed
+// you cannot — users update on their own schedule, and an old build must keep working.
+// Point the app at /api/v1 from day one: /api/* stays as-is for the website, and a
+// future breaking change becomes /api/v2 instead of an outage for everyone on v1.
+// Must sit ABOVE the rate limiters so versioned calls are throttled identically.
+app.use((req, _res, next) => {
+  if (req.url === "/api/v1" || req.url.startsWith("/api/v1/") || req.url.startsWith("/api/v1?")) {
+    req.url = "/api" + req.url.slice("/api/v1".length);
+  }
+  next();
+});
+
 // ── Lightweight in-memory rate limiting (brute-force / abuse / DDoS dampening) ──
-function rateLimiter({ windowMs, max, message }) {
-  const hits = new Map(); // ip -> { count, reset }
+// keyBy:"user" buckets a signed-in caller by account instead of IP. Without it, a whole
+// school/hostel or a mobile carrier behind one NAT shares a single 120/min budget and
+// students collectively 429 each other — which an app makes much likelier than the web.
+// Anonymous callers still fall back to IP, and auth/write caps stay IP-keyed on purpose
+// (an attacker brute-forcing a password is unauthenticated, so IP is the only real key).
+function rateLimiter({ windowMs, max, message, keyBy }) {
+  const hits = new Map(); // key -> { count, reset }
   setInterval(() => { const now = Date.now(); for (const [k, v] of hits) if (v.reset <= now) hits.delete(k); }, windowMs).unref();
   return (req, res, next) => {
     const ip = (req.headers["x-forwarded-for"] || "").split(",")[0].trim() || req.socket.remoteAddress || "unknown";
+    let key = "ip:" + ip;
+    if (keyBy === "user") {
+      // Must VERIFY the token — keying on a raw header would let anyone mint unlimited
+      // buckets by sending random strings.
+      let who = null;
+      try { who = authedEmail(req); } catch (_) { who = null; }
+      if (who) key = "u:" + who;
+    }
     const now = Date.now();
-    let rec = hits.get(ip);
-    if (!rec || rec.reset <= now) { rec = { count: 0, reset: now + windowMs }; hits.set(ip, rec); }
+    let rec = hits.get(key);
+    if (!rec || rec.reset <= now) { rec = { count: 0, reset: now + windowMs }; hits.set(key, rec); }
     rec.count++;
     if (rec.count > max) {
       res.setHeader("Retry-After", Math.ceil((rec.reset - now) / 1000));
@@ -111,8 +138,9 @@ function rateLimiter({ windowMs, max, message }) {
     next();
   };
 }
-// 120 API calls/min/IP overall; 20 auth attempts/15min/IP (stops password brute-force).
-app.use("/api/", rateLimiter({ windowMs: 60 * 1000, max: 120, message: "Too many requests — please wait a minute." }));
+// 120 API calls/min per signed-in user (falling back to IP when anonymous);
+// 20 auth attempts/15min/IP (stops password brute-force).
+app.use("/api/", rateLimiter({ windowMs: 60 * 1000, max: 120, keyBy: "user", message: "Too many requests — please wait a minute." }));
 app.use("/api/auth/", rateLimiter({ windowMs: 15 * 60 * 1000, max: 20, message: "Too many attempts — please try again in 15 minutes." }));
 // Stricter cap on abuse-prone PUBLIC writes (reviews/community/newsletter/push/clienterror)
 // — 20 POSTs/min/IP on top of the global 120/min, so a bot can't flood the homepage.
