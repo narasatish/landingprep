@@ -1564,7 +1564,28 @@ function persistComm() {
   }, 200);
   fsSaveState("community"); // mirror Q&A + leaderboard to Firestore (durable across Render restarts)
 }
-const clean = (s, max) => String(s == null ? "" : s).replace(/[\u0000-\u001F\u007F]/g, " ").trim().slice(0, max);
+// Strip HTML tag-like runs from user-supplied text.
+//
+// Why on WRITE, not just on render: /api/community serves this text raw as JSON to ANY
+// client. The React web app auto-escapes, so it is safe today - but a native/WebView
+// mobile client or an email digest would happily execute a stored <script>. We cannot
+// guarantee every future consumer escapes, so the store itself must be clean.
+//
+// Deliberately conservative: only *complete* tag-like runs are removed, so the maths
+// students actually write - "x<y", "a < b", "score <6.5" - survives untouched (a bare
+// "<" not followed by a letter or "/" is never a tag).
+//
+// Looped because one pass is bypassable: "<<script>script>" collapses INTO a live
+// "<script>" after a single replace. Repeat until the string stops changing.
+//
+// Stripped rather than entity-encoded: escaping on write would double-escape, since
+// React re-escapes the "&" and users would literally see "&lt;script&gt;".
+const stripTags = (s) => {
+  let out = String(s), prev;
+  do { prev = out; out = out.replace(/<\/?[a-zA-Z][^>]*>/g, ""); } while (out !== prev);
+  return out;
+};
+const clean = (s, max) => stripTags(String(s == null ? "" : s)).replace(/[\u0000-\u001F\u007F]/g, " ").trim().slice(0, max);
 const newId = () => { try { return crypto.randomUUID(); } catch (_) { return "id" + Date.now() + Math.floor(Math.random() * 1e6); } };
 
 app.get("/api/community", (_req, res) => {
