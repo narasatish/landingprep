@@ -6,7 +6,8 @@
 const fs = require("fs");
 const path = require("path");
 const { execFile } = require("child_process");
-const ffmpegPath = require("ffmpeg-static");
+let ffmpegPath = null;
+try { ffmpegPath = require("ffmpeg-static"); } catch (_) { /* optional: not installed in CI */ }
 
 const ROOT = path.resolve(__dirname, "..");
 const OUT_DIR = path.join(ROOT, "ig-out");
