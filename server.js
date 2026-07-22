@@ -221,6 +221,36 @@ const REDIRECTS = {
 };
 app.get(Object.keys(REDIRECTS), (req, res) => res.redirect(301, REDIRECTS[req.path] || "/"));
 
+// ── /go/<slug> — tracked outbound affiliate/partner redirect ──────────────────
+// Why a redirect instead of linking the partner URL directly on the page:
+//  1. The affiliate code lives in ONE config file (config/affiliates.json), not baked
+//     into hundreds of prerendered HTML files — change your code once, everywhere.
+//  2. The indexed HTML links to a same-site /go/ URL, so no raw money link sits in the
+//     crawlable page. /go/ is Disallowed in robots.txt and 302 (temporary) so search
+//     engines don't pass equity or index the destination.
+//  3. Clicks are counted here, so you can see which offers convert (GET /api/go/stats).
+// This does NOT replace rel="sponsored nofollow" on the on-page link — that's also set.
+let AFFILIATES = { partners: {} };
+try { AFFILIATES = JSON.parse(fs.readFileSync(path.join(__dirname, "config", "affiliates.json"), "utf8")); }
+catch (e) { console.warn("[affiliates] config not loaded:", e.message); }
+const GO_CLICKS = Object.create(null); // slug -> count (in-memory; fine for trend, resets on redeploy)
+app.get("/go/:slug", (req, res) => {
+  const p = AFFILIATES.partners && AFFILIATES.partners[req.params.slug];
+  // Unknown or deactivated partner → send the user somewhere useful, never a dead end.
+  if (!p || p.active === false || !/^https:\/\//.test(p.target || "")) return res.redirect(302, "/#/tools");
+  GO_CLICKS[req.params.slug] = (GO_CLICKS[req.params.slug] || 0) + 1;
+  let dest = p.target;
+  if (p.ref && p.refParam) dest += (dest.includes("?") ? "&" : "?") + encodeURIComponent(p.refParam) + "=" + encodeURIComponent(p.ref);
+  else if (p.ref) dest += (dest.includes("?") ? "&" : "?") + "ref=" + encodeURIComponent(p.ref);
+  res.set("Cache-Control", "no-store");
+  res.redirect(302, dest);
+});
+// Owner-only click tally (same admin key as the other admin routes).
+app.get("/api/go/stats", (req, res) => {
+  if (!ADMIN_SECRET || req.query.key !== ADMIN_SECRET) return res.status(403).json({ error: "Forbidden — pass ?key=ADMIN_SECRET" });
+  res.json({ clicks: GO_CLICKS, ts: new Date().toISOString() });
+});
+
 // ── SECURITY: never serve backend source, configs, dependencies, dotfiles, or the
 // data dir (user accounts + content pools). The frontend needs NONE of these; the
 // backend/build read them from disk directly. Registered BEFORE express.static so

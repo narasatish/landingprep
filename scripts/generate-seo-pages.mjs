@@ -571,6 +571,29 @@ function relatedGrid(links) {
   return `<h2>Keep going — free practice</h2><div class="grid">${links.map((l) => `<a class="tile" href="${l.href}">${esc(l.label)}</a>`).join("")}</div>`;
 }
 
+// ── Affiliate / partner CTA block (monetisation, SEO-safe) ────────────────────
+// Reads config/affiliates.json (shared with server.js /go/<slug>). Renders only ACTIVE
+// partners for the requested slugs, always with:
+//  • rel="sponsored nofollow noopener" (Google REQUIRES paid links be tagged; untagged
+//    money links from a low-authority domain are a real penalty risk),
+//  • a visible disclosure (legally required — India's ASCI code — and an E-E-A-T signal),
+//  • links to same-site /go/<slug> (which is robots-Disallowed) rather than the raw
+//    partner URL, so no crawlable money link and the affiliate code stays in one place.
+// Returns "" if no requested partner is active, so a page never shows an empty shell.
+let AFFILIATES = { partners: {}, disclosure: "" };
+try { AFFILIATES = JSON.parse(readFileSync(join(ROOT, "config", "affiliates.json"), "utf8")); } catch (e) { /* no monetisation configured */ }
+function affiliateBlock(slugs, heading) {
+  const active = slugs.filter((s) => AFFILIATES.partners[s] && AFFILIATES.partners[s].active !== false);
+  if (!active.length) return "";
+  const cards = active.map((slug) => {
+    const p = AFFILIATES.partners[slug];
+    return `<a class="tile" href="/go/${esc(slug)}" rel="sponsored nofollow noopener" target="_blank"><strong>${esc(p.name)}</strong><br><span class="muted">${esc(p.blurb || "")}</span><br><span style="color:var(--brand);font-weight:600">${esc(p.cta || "Visit →")}</span></a>`;
+  }).join("");
+  return `<div class="card"><h2>${esc(heading || "Recommended services")}</h2>
+<p class="note" style="font-size:13px">${esc(AFFILIATES.disclosure || "")}</p>
+<div class="grid">${cards}</div></div>`;
+}
+
 // Topic-cluster internal linking: the 6 most topically-related OTHER blog posts,
 // scored by shared tag + keyword + title-word overlap. Builds real topic clusters
 // (distributes link equity, deepens crawl) while staying visually clean.
@@ -1818,6 +1841,7 @@ ${calc}
 <table style="width:100%;border-collapse:collapse" class="uni-table"><thead><tr><th>Country</th><th>Living / base requirement</th><th>Source</th></tr></thead><tbody>${refRows}</tbody></table>
 <p class="note"><strong>Last verified: ${esc(BUILD_DATE)}</strong> against each government's official page (linked above). Figures change yearly — confirm the current amount with the official authority before you apply or transfer money. For the full breakdown, see the <a href="/study-abroad-funding-facts-2026/">Study-Abroad Funding Facts 2026</a> data study.</p></div>
 ${faqBlock(faqs)}
+${affiliateBlock(["wise", "bookmyforex"], "Moving that money abroad")}
 ${relatedGrid([
   { label: `📊 Funding facts 2026 (all countries)`, href: `/study-abroad-funding-facts-2026/` },
   { label: `🧮 Cost of studying abroad`, href: `/tools/cost-of-studying-abroad-calculator/` },
@@ -2898,6 +2922,7 @@ ${calc}
 <li><strong>Analytical Writing matters at the margins</strong> — a 4.5 is the 85th percentile; many programmes want 4.0+ (63rd) for coursework that is writing-heavy.</li>
 </ul></div>
 ${faqBlock(faqs)}
+${affiliateBlock(["amazon-gre", "amazon-gmat"], "Prep books (optional)")}
 ${relatedGrid([
   { label: `🧠 GRE Smart Notes — visual lessons & recall`, href: `/learn/gre/` },
   { label: `📝 Free GRE mock test`, href: `/mock-test/gre/` },
@@ -3422,6 +3447,13 @@ function visaChecklistPage() {
 <p class="lead">A free, printable student-visa document checklist for the UK, Canada, Australia, USA, Germany and Ireland — the core documents everyone needs plus each country's specific extras. Tick items off as you gather them.</p></section>
 <div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Every student visa needs the core set — passport, admission letter, proof of funds, English score, transcripts, photos, SOP, and the visa form + fee — plus country-specific documents: UK (CAS + TB test), Canada (Letter of Acceptance + GIC + PAL), USA (Form I-20 + SEVIS fee), Germany (blocked account + APS), Australia (CoE + OSHC). Pick your country below for the full checklist.</div>
 ${tool}
+<div class="card"><h2>Before you fly — the day-you-land essentials</h2>
+<p>Once your documents are in order, two things are worth sorting <strong>before</strong> departure so you're not stranded at the airport: a way to stay connected the moment you land, and a cheaper way to move money than an airport bank counter.</p>
+<ul class="bcheck">
+<li><strong>Connectivity on arrival</strong> — a travel eSIM activates before you fly, so you have data to call your ride, open maps and message home the instant you land — no roaming bill, no hunting for a local SIM desk.</li>
+<li><strong>Your first money transfer</strong> — the mid-market rate beats a bank's counter rate for tuition and living-cost transfers; sort your account before you travel so the money's ready.</li>
+</ul></div>
+${affiliateBlock(["airalo"], "Stay connected the day you land")}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
@@ -5557,6 +5589,8 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /go/
+Disallow: /api/
 
 # ── Google Search & Indexing ──
 User-agent: Googlebot

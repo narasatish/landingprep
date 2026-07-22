@@ -50,6 +50,9 @@ for (const [r] of diskRoutes) {
 const routeExists = (href) => {
   let p = href.split("#")[0].split("?")[0];
   if (!p.startsWith("/")) return true;          // relative/asset — skip
+  // Server-handled routes with no on-disk file: /go/<slug> (affiliate redirect) and
+  // /api/* (JSON). These are real endpoints, not broken links — never files on disk.
+  if (p.startsWith("/go/") || p.startsWith("/api/")) return true;
   if (/\.(png|jpg|jpeg|svg|webp|ico|xml|txt|json|js|css|pdf|webmanifest)$/i.test(p)) {
     return fs.existsSync(path.join(ROOT, p.replace(/^\//, "")));
   }

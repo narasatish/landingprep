@@ -1,0 +1,90 @@
+{
+  "_README": "Single source of truth for affiliate/partner links. server.js serves /go/<slug> (302 → target+ref, logs a click) and scripts/generate-seo-pages.mjs renders disclosed CTA blocks that link to /go/<slug> with rel='sponsored nofollow'. To activate an earner: sign up, paste your code into `ref`, set active:true, rebuild. Links work (unattributed) even before you add a code, so nothing is ever a dead link. NEVER commit a real code you consider secret — these are public by nature, but treat them as config, not source.",
+  "disclosure": "Some links below are partner links: if you sign up or buy through them, LandingPrep may earn a small commission at no extra cost to you. We only list services we'd genuinely point a student to, and it never changes what you pay. LandingPrep's own tools and notes are, and always will be, 100% free.",
+  "partners": {
+    "wise": {
+      "name": "Wise (formerly TransferWise)",
+      "category": "forex",
+      "target": "https://wise.com/",
+      "ref": "",
+      "refParam": "",
+      "cta": "Compare on Wise →",
+      "blurb": "Mid-market exchange rate with transparent fees — usually far cheaper than a bank for tuition and living-cost transfers abroad.",
+      "requiresAgreement": false,
+      "howToJoin": "Referral link: Wise app → Invite friends. Or join Wise's affiliate programme (via Partnerize) for publisher payouts.",
+      "active": true
+    },
+    "bookmyforex": {
+      "name": "BookMyForex",
+      "category": "forex",
+      "target": "https://www.bookmyforex.com/",
+      "ref": "",
+      "refParam": "",
+      "cta": "Check forex rates →",
+      "blurb": "India-based forex + international student remittance; live rates for outward tuition transfers and forex cards.",
+      "requiresAgreement": false,
+      "howToJoin": "BookMyForex has an affiliate/refer-and-earn programme — self-serve signup on their site.",
+      "active": true
+    },
+    "airalo": {
+      "name": "Airalo",
+      "category": "esim",
+      "target": "https://www.airalo.com/",
+      "ref": "",
+      "refParam": "",
+      "cta": "Get a travel eSIM →",
+      "blurb": "Data eSIM for the day you land — no roaming bill, no hunting for a local SIM at the airport.",
+      "requiresAgreement": false,
+      "howToJoin": "Airalo affiliate programme is self-serve via the Impact network — no traffic minimum to apply.",
+      "active": true
+    },
+    "amazon-gre": {
+      "name": "GRE prep books on Amazon",
+      "category": "books",
+      "target": "https://www.amazon.in/s?k=GRE+official+guide",
+      "ref": "",
+      "refParam": "tag",
+      "cta": "See GRE books →",
+      "blurb": "The official ETS guide and top-rated practice books — a search, so it stays current as new editions publish.",
+      "requiresAgreement": false,
+      "howToJoin": "Amazon Associates (India): instant self-serve signup, no human approval. Put your store tag in `ref`. Note: you must make 3 qualifying sales within 180 days to stay in the programme.",
+      "active": true
+    },
+    "amazon-gmat": {
+      "name": "GMAT prep books on Amazon",
+      "category": "books",
+      "target": "https://www.amazon.in/s?k=GMAT+official+guide+focus+edition",
+      "ref": "",
+      "refParam": "tag",
+      "cta": "See GMAT books →",
+      "blurb": "Official GMAC guides and quant/verbal practice sets for the Focus Edition.",
+      "requiresAgreement": false,
+      "howToJoin": "Same Amazon Associates tag as amazon-gre.",
+      "active": true
+    },
+    "gyandhan": {
+      "name": "GyanDhan (education loans)",
+      "category": "loan",
+      "target": "https://www.gyandhan.com/",
+      "ref": "",
+      "refParam": "",
+      "cta": "Check loan eligibility →",
+      "blurb": "Free education-loan eligibility check + comparison across lenders for study abroad.",
+      "requiresAgreement": true,
+      "howToJoin": "Requires a lead-partner/referral agreement (they pay per disbursed loan). Apply via GyanDhan partnerships — NOT a click-through affiliate. Keep inactive until the agreement is signed.",
+      "active": false
+    },
+    "prodigy": {
+      "name": "Prodigy Finance (no-cosigner loans)",
+      "category": "loan",
+      "target": "https://prodigyfinance.com/",
+      "ref": "",
+      "refParam": "",
+      "cta": "See no-cosigner loans →",
+      "blurb": "Collateral-free, no-cosigner loans for international Master's students at select universities.",
+      "requiresAgreement": true,
+      "howToJoin": "Prodigy has a refer-a-friend/ambassador programme; publisher payouts need their partner agreement. Keep inactive until confirmed.",
+      "active": false
+    }
+  }
+}
