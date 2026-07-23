@@ -29,11 +29,31 @@ const compression = require("compression");
 
 const app  = express();
 const PORT = parseInt(process.env.PORT || "3001", 10);
+// ── Gemini credentials: FREE tier first, paid only as fallback ────────────────
+// A single key cannot be "free then paid" — Google bills per-project, and linking
+// billing to a project silently makes EVERY call on that key paid. So we use two
+// credentials and a ladder:
+//   GEMINI_API_KEY_FREE — from a Google AI Studio project with NO billing linked.
+//                         This is the real free tier. Tried first, always.
+//   GEMINI_API_KEY      — the paid/billing-linked key. Used ONLY when the free key
+//                         is rate-limited or quota-exhausted (429 / RESOURCE_EXHAUSTED).
+// Only PAID calls count against the spend caps below; free calls and cache hits are free
+// and must never be charged against the budget.
+const GEMINI_API_KEY_FREE = process.env.GEMINI_API_KEY_FREE || "";
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
+// Ordered ladder of {key, paid} actually available at boot.
+const AI_KEYS = [
+  ...(GEMINI_API_KEY_FREE ? [{ key: GEMINI_API_KEY_FREE, paid: false, label: "free" }] : []),
+  ...(GEMINI_API_KEY ? [{ key: GEMINI_API_KEY, paid: true, label: "paid" }] : []),
+];
+// Kill switch — set AI_ENABLED=0 in Render to stop ALL model spend instantly.
+const AI_ENABLED = process.env.AI_ENABLED !== "0";
 const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || "http://localhost:5500";
 
-if (!GEMINI_API_KEY) {
-  console.warn("⚠️  GEMINI_API_KEY not set in .env — AI Tutor calls will fail.");
+if (!AI_KEYS.length) {
+  console.warn("⚠️  No Gemini key set (GEMINI_API_KEY_FREE / GEMINI_API_KEY) — AI calls will fail.");
+} else if (!GEMINI_API_KEY_FREE) {
+  console.warn("⚠️  GEMINI_API_KEY_FREE not set — every AI call bills to the PAID key. Create a Google AI Studio project with NO billing linked and set GEMINI_API_KEY_FREE to use the free tier first.");
 }
 
 // ── Middleware ────────────────────────────────────────────────────────────────
@@ -304,25 +324,32 @@ app.use(express.static(__dirname, {
 app.get("/api/health", async (req, res) => {
   const base = {
     status: "ok",
-    hasKey: !!GEMINI_API_KEY,
+    hasKey: AI_KEYS.length > 0,
+    aiKeys: AI_KEYS.map((k) => k.label), // e.g. ["free","paid"] — which tiers are configured
+    aiEnabled: AI_ENABLED,
     firestore: FS_DB ? "connected" : "local-file-ephemeral",
     accounts: Object.keys(STORE.users || {}).length,
     ts: new Date().toISOString(),
   };
   if (req.query.probe !== "ai") return res.json(base);
 
-  if (!GEMINI_API_KEY) return res.json({ ...base, ai: { ok: false, reason: "GEMINI_API_KEY not set" } });
-  let lastErr = null;
-  for (const model of MODEL_CHAIN) {
-    try {
-      const r = await geminiPost(model, {
-        contents: [{ role: "user", parts: [{ text: "Reply with the single word: ok" }] }],
-        generationConfig: { maxOutputTokens: 8, temperature: 0, ...(model.startsWith("gemini-2.5") ? { thinkingConfig: { thinkingBudget: 0 } } : {}) },
-      });
-      return res.json({ ...base, ai: { ok: true, model: r.model, sample: (r.text || "").trim().slice(0, 40) } });
-    } catch (e) { lastErr = e; }
+  if (!AI_KEYS.length) return res.json({ ...base, ai: { ok: false, reason: "no Gemini key set (GEMINI_API_KEY_FREE / GEMINI_API_KEY)" } });
+  if (!AI_ENABLED) return res.json({ ...base, ai: { ok: false, reason: "AI_ENABLED=0 (kill switch on)" } });
+  aiRollDay();
+  try {
+    // Probe deliberately skips the cache (a fresh live call is the point) and refuses to
+    // spend paid credit — a health check must never cost money.
+    const r = await geminiWithLadder((model) => ({
+      contents: [{ role: "user", parts: [{ text: "Reply with the single word: ok" }] }],
+      generationConfig: { maxOutputTokens: 8, temperature: 0, ...(model.startsWith("gemini-2.5") ? { thinkingConfig: { thinkingBudget: 0 } } : {}) },
+      // Spend paid credit ONLY when there is no free key to test with — otherwise the
+      // probe would report "degraded" on a perfectly healthy paid-only setup. The call
+      // is 8 output tokens, so the cost is effectively nil either way.
+    }), { allowPaid: !GEMINI_API_KEY_FREE, cacheSeed: { probe: Date.now() } });
+    return res.json({ ...base, ai: { ok: true, model: r.model, tier: r.cached ? "cache" : (r.paid ? "paid" : "free"), sample: (r.text || "").trim().slice(0, 40) }, spend: AI_SPEND });
+  } catch (e) {
+    return res.status(503).json({ ...base, status: "degraded", ai: { ok: false, triedModels: MODEL_CHAIN, keys: AI_KEYS.map((k) => k.label), reason: scrubSecrets(e && e.message) }, spend: AI_SPEND });
   }
-  return res.status(503).json({ ...base, status: "degraded", ai: { ok: false, triedModels: MODEL_CHAIN, reason: scrubSecrets(lastErr && lastErr.message) } });
 });
 
 // ── Daily Instagram auto-poster ───────────────────────────────────────────────
@@ -860,7 +887,12 @@ app.get("/api/live", (_req, res) => {
 // ahead of its announced 16 Oct 2026 date) — that outage ran ~8 days unnoticed.
 // Keep newest-GA first, and re-check https://ai.google.dev/gemini-api/docs/deprecations
 // whenever AI answers start failing. GET /api/health?probe=ai verifies the chain live.
-const MODEL_CHAIN = ["gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-2.5-flash"];
+// Cheapest + FASTEST first. Measured on production (same 3 questions, July 2026):
+//   gemini-3.1-flash-lite  ~3.4s
+//   gemini-3.5-flash       ~30s, and 78s on one answer — unusable for a chat UI
+// flash-lite answers exam questions correctly, so leading with the frontier model was
+// paying more for a far worse experience. Later entries are fallbacks only.
+const MODEL_CHAIN = ["gemini-3.1-flash-lite", "gemini-2.5-flash-lite", "gemini-3.5-flash"];
 
 const EXAM_META = {
   ielts:    { name: "IELTS",                scale: "Band 0–9",           sections: "Listening, Reading, Writing, Speaking" },
@@ -883,8 +915,25 @@ Your expertise covers: IELTS (Academic & General Training), TOEFL iBT, PTE Acade
 
 ${examLine}
 
+VERIFIED FACTS — use these exact numbers; do NOT estimate or recall your own:
+- GRE percentiles (official ETS interpretive data, test takers Jul 2022–Jun 2025):
+  Quantitative 170=89th, 168=80th, 165=67th, 162=57th, 160=50th, 155=37th, 150=23rd.
+  Verbal 170=99th, 165=95th, 163=90th, 160=82nd, 155=64th, 152=48th, 150=39th.
+  Analytical Writing 6.0=99th, 5.0=93rd, 4.5=85th, 4.0=63rd, 3.5=40th.
+  A perfect 170 Quant is the 89th percentile (NOT 94th/96th) — Quant percentiles run far
+  lower than Verbal because the GRE pool is quantitatively strong. If asked for a
+  percentile not listed, say it varies and link /tools/gre-score-percentile-calculator/.
+- GMAT Focus Edition total score range is 205–805 (scores end in 5, 10-point steps).
+- IELTS overall band = the average of the four sections rounded to the nearest half band
+  (an average ending .25 rounds UP to .5; .75 rounds UP to the next whole band).
+- Germany blocked account (2026): EUR 11,904/year (EUR 992/month). Canada GIC: CAD 20,635.
+  UK maintenance: GBP 1,529/month in London, GBP 1,171/month outside, for up to 9 months.
+
 Guidelines:
 - Give specific, actionable advice — not generic encouragement
+- NEVER invent a statistic, percentile, fee or deadline. If it is not in the verified list
+  above and you are not certain, say so plainly and point to the official body or the
+  relevant free LandingPrep tool rather than guessing a number.
 - Reference real exam patterns (e.g. IELTS Listening has 4 parts, 40 questions; TOEFL Writing uses Integrated + Academic Discussion tasks)
 - Keep responses focused and under 200 words unless the user explicitly asks for a detailed explanation
 - If the user pastes their writing, give structured feedback on Task Achievement, Coherence, Lexical Resource, and Grammar
@@ -901,14 +950,84 @@ Tone: professional but warm — like a trusted tutor who wants the student to su
 function scrubSecrets(msg) {
   if (!msg) return undefined;
   let s = String(msg).slice(0, 300);
-  if (GEMINI_API_KEY) s = s.split(GEMINI_API_KEY).join("[redacted]");
+  for (const k of [GEMINI_API_KEY_FREE, GEMINI_API_KEY]) if (k) s = s.split(k).join("[redacted]");
   return s.replace(/([?&]key=)[^&\s"']+/gi, "$1[redacted]");
 }
 
+// ── AI response cache ─────────────────────────────────────────────────────────
+// Identical (model + system prompt + conversation) → identical answer, so serve it
+// from memory instead of paying for it again. Exam questions repeat heavily across
+// students ("how many parts in IELTS listening?"), so this is the single biggest
+// lever on spend. A cache hit costs nothing and bypasses BOTH the quota caps and the
+// free/paid ladder entirely — it never touches Google.
+const AI_CACHE = new Map(); // key -> { text, model, ts }
+const AI_CACHE_MAX = parseInt(process.env.AI_CACHE_MAX || "500", 10);
+const AI_CACHE_TTL_MS = parseInt(process.env.AI_CACHE_TTL_H || "72", 10) * 3600 * 1000;
+const aiCacheKey = (model, body) => crypto.createHash("sha256")
+  .update(model + " " + JSON.stringify(body)).digest("base64url");
+function aiCacheGet(key) {
+  const hit = AI_CACHE.get(key);
+  if (!hit) return null;
+  if (Date.now() - hit.ts > AI_CACHE_TTL_MS) { AI_CACHE.delete(key); return null; }
+  // Refresh recency so hot answers survive eviction (approximate LRU).
+  AI_CACHE.delete(key); AI_CACHE.set(key, hit);
+  return hit;
+}
+function aiCacheSet(key, text, model) {
+  if (!text) return; // never cache an empty answer
+  if (AI_CACHE.size >= AI_CACHE_MAX) AI_CACHE.delete(AI_CACHE.keys().next().value); // evict oldest
+  AI_CACHE.set(key, { text, model, ts: Date.now() });
+}
+
+// Paid-call accounting. Free-key calls and cache hits are deliberately NOT counted —
+// only real spend counts against the budget.
+const AI_SPEND = { paidCalls: 0, freeCalls: 0, cacheHits: 0, day: new Date().toISOString().slice(0, 10) };
+const AI_PAID_RPD = parseInt(process.env.AI_PAID_RPD || "200", 10); // hard daily cap on PAID calls
+function aiRollDay() {
+  const d = new Date().toISOString().slice(0, 10);
+  if (d !== AI_SPEND.day) { AI_SPEND.day = d; AI_SPEND.paidCalls = 0; AI_SPEND.freeCalls = 0; AI_SPEND.cacheHits = 0; }
+}
+
+// Try every model on the FREE key first, then (only if allowed) the paid key.
+// Quota/rate errors fall through to the next option; a genuine model error does too,
+// so one dead model never takes the whole feature down.
+// bodyFor may be an object, or a function(model) when the payload varies per model
+// (e.g. thinkingConfig only applies to some families).
+async function geminiWithLadder(bodyFor, { allowPaid = true, cacheSeed } = {}) {
+  aiRollDay();
+  const bodyOf = (m) => (typeof bodyFor === "function" ? bodyFor(m) : bodyFor);
+  // Cache key is model-INDEPENDENT (seeded on the conversation), so an answer already
+  // paid for is reused no matter which model in the ladder produced it.
+  const key = aiCacheKey("v1", cacheSeed || bodyOf(MODEL_CHAIN[0]));
+  const cached = aiCacheGet(key);
+  if (cached) { AI_SPEND.cacheHits++; return { text: cached.text, model: cached.model, cached: true, paid: false }; }
+
+  let lastErr = null;
+  for (const cred of AI_KEYS) {
+    if (cred.paid && !allowPaid) continue;
+    if (cred.paid && AI_SPEND.paidCalls >= AI_PAID_RPD) {
+      lastErr = new Error(`Paid daily cap reached (${AI_PAID_RPD}) — refusing to spend more today.`);
+      continue;
+    }
+    for (const model of MODEL_CHAIN) {
+      try {
+        const r = await geminiPost(model, bodyOf(model), cred.key);
+        if (cred.paid) AI_SPEND.paidCalls++; else AI_SPEND.freeCalls++;
+        aiCacheSet(key, r.text, r.model);
+        return { text: r.text, model: r.model, cached: false, paid: cred.paid };
+      } catch (e) {
+        lastErr = e;
+        console.warn(`[ai] ${cred.label}/${model} failed:`, String(e.message).slice(0, 120));
+      }
+    }
+  }
+  throw lastErr || new Error("No Gemini credential configured");
+}
+
 // Make a non-streaming HTTPS POST to Gemini and return the response text
-function geminiPost(model, body) {
+function geminiPost(model, body, apiKey) {
   return new Promise((resolve, reject) => {
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`;
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey || GEMINI_API_KEY}`;
     const parsed = url.parse(apiUrl);
     const bodyStr = JSON.stringify(body);
     const opts = {
@@ -939,9 +1058,9 @@ function geminiPost(model, body) {
 }
 
 // Make a streaming HTTPS POST to Gemini and pipe SSE to Express response
-function geminiStream(model, body, res) {
+function geminiStream(model, body, res, apiKey) {
   return new Promise((resolve, reject) => {
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:streamGenerateContent?alt=sse&key=${GEMINI_API_KEY}`;
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:streamGenerateContent?alt=sse&key=${apiKey || GEMINI_API_KEY}`;
     const parsed = url.parse(apiUrl);
     const bodyStr = JSON.stringify(body);
     const opts = {
@@ -1000,7 +1119,10 @@ function geminiStream(model, body, res) {
 //              (default) → JSON response { answer, model }
 //
 app.post("/api/ai-tutor/chat", async (req, res) => {
-  if (!GEMINI_API_KEY) {
+  if (!AI_ENABLED) {
+    return res.status(503).json({ error: "AI is temporarily switched off.", killSwitch: true });
+  }
+  if (!AI_KEYS.length) {
     return res.status(503).json({ error: "AI Tutor not configured — contact site admin." });
   }
 
@@ -1042,18 +1164,29 @@ app.post("/api/ai-tutor/chat", async (req, res) => {
   });
 
   let lastErr = null;
-  for (const model of MODEL_CHAIN) {
+
+  // Non-streaming: free-key-first ladder + cache (a repeat question costs nothing).
+  if (!wantStream) {
     try {
-      if (wantStream) {
-        await geminiStream(model, geminiBody(model), res);
-        return;
-      } else {
-        const result = await geminiPost(model, geminiBody(model));
-        return res.json({ answer: result.text, model: result.model });
-      }
+      const r = await geminiWithLadder(geminiBody, { cacheSeed: { sys: systemPrompt, msgs: fixed } });
+      return res.json({ answer: r.text, model: r.model, cached: r.cached, tier: r.cached ? "cache" : (r.paid ? "paid" : "free") });
     } catch (e) {
       lastErr = e;
-      console.warn(`[ai-tutor] ${model} failed:`, e.message.slice(0, 150));
+    }
+  } else {
+    // Streaming can't be cached mid-flight, but still prefers the free key.
+    for (const cred of AI_KEYS) {
+      if (cred.paid && AI_SPEND.paidCalls >= AI_PAID_RPD) continue;
+      for (const model of MODEL_CHAIN) {
+        try {
+          await geminiStream(model, geminiBody(model), res, cred.key);
+          if (cred.paid) AI_SPEND.paidCalls++; else AI_SPEND.freeCalls++;
+          return;
+        } catch (e) {
+          lastErr = e;
+          console.warn(`[ai-tutor] ${cred.label}/${model} stream failed:`, String(e.message).slice(0, 120));
+        }
+      }
     }
   }
 
@@ -1071,27 +1204,24 @@ app.post("/api/ai-tutor/chat", async (req, res) => {
 // One-shot generation used by rebuild tools.
 // Body: { prompt: "...", json: true }
 app.post("/api/ai-tutor/generate", async (req, res) => {
-  if (!GEMINI_API_KEY) {
-    return res.status(503).json({ error: "Not configured" });
-  }
+  if (!AI_ENABLED) return res.status(503).json({ error: "AI is temporarily switched off.", killSwitch: true });
+  if (!AI_KEYS.length) return res.status(503).json({ error: "Not configured" });
   const { prompt, jsonMode } = req.body;
   if (!prompt) return res.status(400).json({ error: "prompt required" });
 
-  for (const model of MODEL_CHAIN) {
-    try {
-      const result = await geminiPost(model, {
-        contents: [{ role: "user", parts: [{ text: prompt }] }],
-        generationConfig: {
-          temperature: 0.4,
-          maxOutputTokens: 4096,
-          ...(jsonMode ? { responseMimeType: "application/json" } : {}),
-          ...(model.startsWith("gemini-2.5") ? { thinkingConfig: { thinkingBudget: 0 } } : {}),
-        },
-      });
-      return res.json({ text: result.text, model: result.model });
-    } catch (e) {
-      console.warn(`[generate] ${model} failed:`, e.message.slice(0, 150));
-    }
+  try {
+    const r = await geminiWithLadder((model) => ({
+      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      generationConfig: {
+        temperature: 0.4,
+        maxOutputTokens: 4096,
+        ...(jsonMode ? { responseMimeType: "application/json" } : {}),
+        ...(model.startsWith("gemini-2.5") ? { thinkingConfig: { thinkingBudget: 0 } } : {}),
+      },
+    }), { cacheSeed: { gen: prompt, json: !!jsonMode } });
+    return res.json({ text: r.text, model: r.model, cached: r.cached, tier: r.cached ? "cache" : (r.paid ? "paid" : "free") });
+  } catch (e) {
+    console.warn("[generate] all options failed:", String(e.message).slice(0, 150));
   }
   res.status(502).json({ error: "All models failed" });
 });
