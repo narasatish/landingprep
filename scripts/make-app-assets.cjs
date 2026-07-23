@@ -2,7 +2,7 @@
 // Generates the PWA app icons (PNG, required by Android / install / Play Store) and the
 // og-image.png social card (referenced by OG tags + Article schema). Brand-consistent with
 // icon.svg (the gradient graduation-cap monogram). Run: node scripts/make-app-assets.cjs
-const sharp = require("sharp");
+let sharp; try { sharp = require("sharp"); } catch (e) { console.log("↷ sharp not installed — skipping icon/og-image generation (pre-built files in repo are used on Render)"); process.exit(0); }
 const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
 const out = (f) => path.join(ROOT, f);
