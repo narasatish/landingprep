@@ -49,7 +49,9 @@ function waitForServer(timeoutMs) {
   const failures = [];
   try {
     await waitForServer(20000);
-    browser = await chromium.launch({ headless: true });
+    // Use the pre-installed system Chromium when available (CI may pin a different Playwright version).
+    const _execPath = require("fs").existsSync("/opt/pw-browsers/chromium") ? "/opt/pw-browsers/chromium" : undefined;
+    browser = await chromium.launch({ headless: true, ...(_execPath ? { executablePath: _execPath } : {}) });
     // Block service workers: on a fresh profile the first SW install fires
     // controllerchange → location.reload() (index.html), which kills any
     // click-through scenario mid-flight. Real users only reload once ever.
