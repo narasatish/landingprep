@@ -49,7 +49,21 @@ function waitForServer(timeoutMs) {
   const failures = [];
   try {
     await waitForServer(20000);
-    browser = await chromium.launch({ headless: true });
+    // Try the default binary first; fall back to the pre-installed Chromium symlink
+    // that Claude Code on the web provides at a different revision than the package expects.
+    try {
+      browser = await chromium.launch({ headless: true });
+    } catch (launchErr) {
+      if (!/Executable doesn.t exist/i.test(launchErr.message)) throw launchErr;
+      const fallback = (process.env.PLAYWRIGHT_BROWSERS_PATH || "") + "/chromium";
+      try {
+        browser = await chromium.launch({ headless: true, executablePath: fallback });
+      } catch (_) {
+        console.warn("⚠ smoke-test skipped — Playwright browser binary not found. Run `npx playwright install chromium`.");
+        server.kill();
+        process.exit(0);
+      }
+    }
     // Block service workers: on a fresh profile the first SW install fires
     // controllerchange → location.reload() (index.html), which kills any
     // click-through scenario mid-flight. Real users only reload once ever.
