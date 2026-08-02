@@ -1135,6 +1135,7 @@ function Footer() {
             <p className="muted" style={{ fontSize: 13, marginTop: 12 }}>
               📧 <a href="mailto:support@landingprep.com" style={{ color: "var(--accent)", fontWeight: 600 }}>support@landingprep.com</a>
               {"  ·  "}<a href="/about/" style={{ color: "var(--accent)", fontWeight: 600 }}>About</a>
+              {"  ·  "}<a href="https://www.instagram.com/landing_prep/" target="_blank" rel="me noopener" aria-label="LandingPrep on Instagram" style={{ color: "var(--accent)", fontWeight: 600 }}>📸 Instagram</a>
             </p>
             <form onSubmit={subscribe} aria-label="Newsletter signup" style={{ marginTop: 14, display: "flex", gap: 8, flexWrap: "wrap", maxWidth: 380 }}>
               <input type="email" value={nlEmail} onChange={(e) => setNlEmail(e.target.value)} placeholder="Email for free weekly study tips" aria-label="Email address"

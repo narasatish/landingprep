@@ -5767,6 +5767,8 @@ All include real exam question types, answer explanations, and sample solutions.
 - **Scoring**: Auto-scored objective sections + rubric feedback for Writing & Speaking.
 - **Real Users**: 500,000+ students worldwide; strong Indian student base.
 - **Owned Content**: All mock tests, lessons, and tools are built in-house — not resold third-party materials.
+- **Official Instagram**: https://www.instagram.com/landing_prep/ (@landing_prep) — daily study tips, exam-format updates and study-abroad news.
+- **Contact**: support@landingprep.com
 
 ## Most-Used Pages & Entry Points
 - Homepage: ${ORIGIN}/
