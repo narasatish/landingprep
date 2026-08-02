@@ -3122,6 +3122,173 @@ ${relatedGrid([
 }
 switzerlandPillarPage();
 
+// ── Study in Sweden — PILLAR hub. Honest framing: non-EU students DO pay tuition
+// (free myth busted), but strong English-taught Master's, a clear 12-month post-
+// study job-search permit and a real PR path. Figures verified vs Migrationsverket
+// (SEK 10,314/month maintenance, 2026). Interlinks only existing spokes. ──
+function swedenPillarPage() {
+  const path = `/study-in-sweden/`;
+  const faqs = [
+    { q: "Is studying in Sweden free for international students?", a: "No — this is a common myth. Sweden was tuition-free until 2011, but since then non-EU/EEA students pay tuition, typically about SEK 140,000–310,000 per year for most Master's programmes (engineering and tech at the higher end). Students from the EU/EEA and Switzerland still study free. There are, however, strong scholarships (notably the Swedish Institute Scholarships) that can cover tuition and living costs." },
+    { q: "How much money do I need to show for a Swedish student residence permit?", a: "For 2026 the Swedish Migration Agency requires you to show about SEK 10,314 per month for the length of your studies, to cover living costs. The amount can be reduced if your accommodation or food is provided free. You apply for a residence permit for studies (not a visa sticker) through Migrationsverket, and you normally need to have paid your first tuition instalment first." },
+    { q: "Can I study in Sweden in English?", a: "Yes, very widely at Master's level — Sweden has one of Europe's largest ranges of English-taught Master's programmes, so you generally don't need Swedish to study there. A typical English requirement is IELTS 6.5 (with no band below 5.5) or equivalent. Bachelor's programmes are more often taught in Swedish." },
+    { q: "Can I work while studying in Sweden?", a: "Yes. Unusually, Sweden sets no fixed legal cap on how many hours international students may work during their studies — but your studies must remain your main activity, and full-time study is demanding, so treat any job as a supplement. A part-time job also helps you build local experience and language skills." },
+    { q: "Can I stay and work in Sweden after I graduate?", a: "Yes. After completing a bachelor's or master's you can apply for a residence permit of up to 12 months to look for work or start a business in Sweden. If you find qualifying employment you move to a work permit, and holding a work permit for a few years opens a clear route to permanent residence — one of the more straightforward PR paths in Europe." },
+    { q: "When should I apply to study in Sweden?", a: "The main intake is Autumn (starts late August), with applications through the central portal universityadmissions.se opening around mid-October and closing around mid-January for the following autumn. A smaller Spring intake (January start) exists for some programmes. There is a one-time application fee of about SEK 900 (waived for scholarship holders and EU/EEA students)." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Study in Sweden</p>
+<section class="hero"><div class="badges"><span class="badge">Complete guide</span><span class="badge">2026</span><span class="badge">English-taught Master's</span><span class="badge">Clear PR path</span></div>
+<h1>Study in Sweden 2026: The Complete Guide for International Students</h1>
+<p class="lead">Sweden offers one of Europe's widest ranges of English-taught Master's, strong engineering and tech universities, generous scholarships, a 12-month post-study job-search permit and a genuinely clear route to permanent residence. The honest catch: since 2011, non-EU students pay tuition, and living costs are moderate-to-high. This guide walks the whole journey — universities, admission, the residence permit, working, and staying on after graduation.</p>
+<a class="cta" href="/study-abroad/top-universities-in-sweden/">▶ See the top universities in Sweden</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Non-EU students pay tuition (<strong>≈ SEK 140,000–310,000/yr</strong> for most Master's); you must show about <strong>SEK 10,314/month</strong> for the study residence permit; most Master's are <strong>English-taught</strong> (IELTS 6.5); apply via <strong>universityadmissions.se</strong> for the <strong>Autumn (August)</strong> intake; and after graduating you get a <strong>12-month permit</strong> to find work, leading to a clear PR path.</div>
+
+<div class="card"><h2>Why study in Sweden?</h2>
+<ul class="bcheck">
+<li><strong>Huge choice of English-taught Master's.</strong> You rarely need Swedish at postgraduate level, which makes Sweden very accessible for international students.</li>
+<li><strong>World-class engineering, tech &amp; innovation.</strong> <a href="/university/kth/">KTH Royal Institute of Technology</a>, <a href="/university/lund/">Lund University</a> and <a href="/university/chalmers/">Chalmers</a> are globally ranked, with deep industry links (Ericsson, Spotify, Volvo). See all <a href="/study-abroad/top-universities-in-sweden/">top universities in Sweden</a>.</li>
+<li><strong>Clear post-study &amp; PR pathway</strong> — a 12-month job-search permit, then a work permit, then permanent residence within a few years.</li>
+<li><strong>High quality of life</strong> — strong work-life balance, sustainability, and near-universal English fluency.</li>
+</ul></div>
+
+<div class="card"><h2>What it costs (tuition myth busted)</h2>
+<p>The biggest misconception is that Sweden is free. It was tuition-free until 2011, but <strong>non-EU/EEA students now pay tuition</strong> — typically <strong>SEK 140,000–310,000 per year</strong> for most Master's (engineering and computer science at the higher end; business and social sciences often lower). EU/EEA and Swiss students still study free.</p>
+<p>Living costs run about <strong>SEK 9,000–12,000 per month</strong>, higher in Stockholm. Model your full budget with the free <a href="/tools/cost-of-studying-abroad-calculator/">cost-of-studying-abroad calculator</a>, and compare Sweden with other destinations in the <a href="/study-abroad-funding-facts-2026/">2026 funding facts</a>. Good news: scholarships are strong (see below).</p></div>
+
+<div class="card"><h2>Admission &amp; requirements</h2>
+<ul class="bcheck">
+<li><strong>Academic:</strong> a recognised bachelor's degree for Master's entry, with relevant background for the programme.</li>
+<li><strong>English proficiency:</strong> typically <strong>IELTS 6.5</strong> (no band below 5.5) or TOEFL ~90. Check the exact bar and practise with <a href="/ielts-for-kth/">IELTS for KTH</a>, <a href="/toefl-for-kth/">TOEFL for KTH</a>, and a free <a href="/mock-test/ielts/">IELTS mock test</a> or <a href="/mock-test/toefl/">TOEFL mock test</a>.</li>
+<li><strong>GRE:</strong> generally <em>not required</em> at Swedish universities — a nice cost saving.</li>
+<li><strong>Applications</strong> go through the central portal <strong>universityadmissions.se</strong> — one application can list up to four programmes, with a single SEK 900 fee.</li>
+</ul></div>
+
+<div class="card"><h2>Money &amp; the student residence permit</h2>
+<p>Non-EU/EEA students apply for a <strong>residence permit for studies</strong> (not a visa sticker) through the <strong>Swedish Migration Agency (Migrationsverket)</strong>. You must show funds of about <strong>SEK 10,314 per month (2026)</strong> for the whole study period, and normally prove your <strong>first tuition instalment is paid</strong> and that you have comprehensive health insurance. Work out your target total with the free <a href="/tools/proof-of-funds-calculator/">proof-of-funds calculator</a>. Apply as soon as you are admitted — processing can take several weeks to a few months.</p></div>
+
+<div class="card"><h2>Working while you study</h2>
+<p>Sweden is unusual: there is <strong>no fixed legal limit</strong> on how many hours international students may work during their studies. That said, <strong>full-time study must remain your main activity</strong>, and Swedish Master's are intensive — so treat part-time work as a supplement, useful mainly for local experience and living costs, not as your funding plan.</p></div>
+
+<div class="card"><h2>After graduation: work &amp; permanent residence</h2>
+<ul class="bcheck">
+<li><strong>12-month job-search permit:</strong> after a bachelor's or master's you can stay up to 12 months to look for work or start a business (doctoral graduates can get up to 18 months).</li>
+<li><strong>Work permit → PR:</strong> with qualifying employment you move to a work permit; holding one for a few years (while meeting the self-support requirement) opens a clear route to <strong>permanent residence</strong>.</li>
+<li><strong>In-demand fields help most</strong> — tech, engineering and data roles are strong in Sweden's job market.</li>
+</ul>
+<p class="note">Immigration rules and amounts change — always confirm the current details on the official <a href="https://www.migrationsverket.se/en.html" target="_blank" rel="nofollow noopener">Swedish Migration Agency (Migrationsverket) ↗</a> before you rely on them.</p></div>
+
+<div class="card"><h2>Scholarships &amp; funding</h2>
+<p>Because non-EU students pay tuition, scholarships matter. The flagship is the <strong>Swedish Institute Scholarships for Global Professionals (SISGP)</strong> — highly competitive, covering tuition <em>and</em> living costs — alongside university-specific awards at <a href="/university/kth/">KTH</a>, <a href="/university/lund/">Lund</a> and <a href="/university/chalmers/">Chalmers</a>. Browse <a href="/scholarships-in-sweden/">scholarships to study in Sweden</a> and the wider <a href="/fully-funded-scholarships/">fully-funded scholarships database</a>. If you need a loan, model repayments with the <a href="/tools/education-loan-emi-calculator/">education-loan EMI calculator</a>.</p></div>
+
+<div class="card"><h2>Popular Master's in Sweden</h2>
+<p>Sweden is especially strong for STEM Master's:
+<a href="/study-abroad/ms-computer-science-in-sweden/">MS Computer Science</a> ·
+<a href="/study-abroad/ms-data-science-in-sweden/">MS Data Science</a> ·
+<a href="/study-abroad/mba-in-sweden/">MBA</a>.</p>
+<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)}. Figures (tuition ranges, the SEK 10,314/month maintenance amount, work rules and post-study permits) are checked against official Swedish sources and change over time — confirm the current details with your university and Migrationsverket before you apply.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🎓 Top universities in Sweden`, href: `/study-abroad/top-universities-in-sweden/` },
+  { label: `💸 Scholarships in Sweden`, href: `/scholarships-in-sweden/` },
+  { label: `💻 MS Computer Science in Sweden`, href: `/study-abroad/ms-computer-science-in-sweden/` },
+  { label: `🧮 Cost-of-studying calculator`, href: `/tools/cost-of-studying-abroad-calculator/` },
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+  { label: `📝 IELTS for KTH`, href: `/ielts-for-kth/` },
+])}`;
+  emit(path, head({
+    title: `Study in Sweden 2026: Complete Guide for International Students | ${BRAND}`,
+    desc: `Honest complete guide to studying in Sweden 2026: English-taught Master's, real tuition for non-EU students, the SEK 10,314/month residence-permit requirement, working while studying, and the 12-month post-study job-search permit to PR. Free tools included.`,
+    path,
+    kw: "study in sweden, study in sweden for international students, is sweden free to study, sweden student visa 2026, sweden residence permit for studies, masters in sweden in english, cost of studying in sweden, sweden post study work permit, study in sweden from india, sweden scholarships",
+    jsonLdBlocks: [
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Sweden 2026: The Complete Guide for International Students", description: "Universities, English-taught admission, tuition, residence permit, working while studying and post-study work in Sweden, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-08-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
+      faqJsonLd(faqs),
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Sweden", path }]),
+    ],
+  }) + shell(inner));
+}
+swedenPillarPage();
+
+// ── Study in Hong Kong — PILLAR hub. Hook: English-medium world-top-50 unis + the
+// standout IANG 24-month stay-back (no job offer needed) and 7-year PR path.
+// Verified vs immd.gov.hk. Interlinks only existing spokes (no ms-* pages yet). ──
+function hongKongPillarPage() {
+  const path = `/study-in-hong-kong/`;
+  const faqs = [
+    { q: "Is Hong Kong good for international students?", a: "Yes, especially if you want a world-ranked, English-medium education in Asia with a strong stay-back option. Universities like HKU, HKUST and CUHK rank in the global top 50, teach in English, and sit in a major finance and tech hub. The standout benefit is the IANG scheme, which lets graduates stay 24 months after finishing — with no job offer required for recent graduates." },
+    { q: "How much does it cost to study in Hong Kong?", a: "Tuition for non-local students is roughly HKD 140,000–210,000 per year (about US$18,000–27,000), which is lower than comparable programmes in the US or UK. Living costs add about HKD 60,000–120,000 per year, with accommodation the biggest and most expensive factor. Budget carefully for housing, especially near campus." },
+    { q: "Can I study in Hong Kong in English?", a: "Yes. English is the medium of instruction at most Hong Kong universities, particularly for postgraduate programmes, so you do not need Cantonese or Mandarin to study there. A typical English requirement is IELTS 6.0–6.5 or TOEFL ~79–90, depending on the university and programme." },
+    { q: "Can I stay and work in Hong Kong after I graduate?", a: "Yes — this is Hong Kong's biggest draw. Under the Immigration Arrangements for Non-local Graduates (IANG), graduates are normally granted an initial stay of 24 months, and recent graduates (applying within six months of graduating) do NOT need a job offer to apply. If you find work you can renew and extend your stay, making it one of Asia's most graduate-friendly stay-back schemes." },
+    { q: "Can I get permanent residency in Hong Kong?", a: "Yes, through the 7-year rule: after seven years of continuous ordinary residence you can apply for the right of abode (permanent residence). Importantly, your years spent studying in Hong Kong count toward those seven years, so studying there is a genuine long-term settlement route — one of the clearer PR paths in Asia." },
+    { q: "When should I apply to study in Hong Kong?", a: "The main intake is September (Autumn). Postgraduate applications typically open around September–November of the year before and are assessed in rounds through to spring, so applying early improves both your admission and scholarship chances. Allow time afterwards for the university-sponsored student visa." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Study in Hong Kong</p>
+<section class="hero"><div class="badges"><span class="badge">Complete guide</span><span class="badge">2026</span><span class="badge">English-medium</span><span class="badge">24-month stay-back</span></div>
+<h1>Study in Hong Kong 2026: The Complete Guide for International Students</h1>
+<p class="lead">Hong Kong pairs world-top-50, English-medium universities with the most generous stay-back scheme in Asia: the IANG arrangement gives graduates 24 months to stay — with no job offer required for recent graduates — and your study years count toward the 7-year path to permanent residence. This guide walks the whole journey: universities, admission, costs, the student visa, IANG, and settling long-term.</p>
+<a class="cta" href="/study-abroad/top-universities-in-hong-kong/">▶ See the top universities in Hong Kong</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Hong Kong's universities are <strong>English-medium</strong> and globally ranked (HKU #17, CUHK #36, HKUST #47); tuition is <strong>≈ HKD 140,000–210,000/yr</strong> (US$18–27k); the main intake is <strong>September</strong>; and after graduating the <strong>IANG scheme gives 24 months to stay with no job offer needed</strong> — with study years counting toward the <strong>7-year PR</strong> path.</div>
+
+<div class="card"><h2>Why study in Hong Kong?</h2>
+<ul class="bcheck">
+<li><strong>World-top-50, English-medium universities.</strong> <a href="/university/hku/">HKU</a> (#17), <a href="/university/cuhk/">CUHK</a> (#36) and <a href="/university/hkust/">HKUST</a> (#47) teach in English and rank among the world's best. See all <a href="/study-abroad/top-universities-in-hong-kong/">top universities in Hong Kong</a>.</li>
+<li><strong>The standout stay-back:</strong> the IANG scheme gives graduates a 24-month stay with <em>no job offer required</em> for recent graduates — rare in Asia.</li>
+<li><strong>Gateway to Greater China &amp; a global finance/tech hub</strong> — strong for business, finance, computer science and data.</li>
+<li><strong>Real PR route:</strong> seven years of ordinary residence (your study years count) leads to the right of abode.</li>
+</ul></div>
+
+<div class="card"><h2>What it costs</h2>
+<p>Tuition for non-local students is roughly <strong>HKD 140,000–210,000 per year (about US$18,000–27,000)</strong> — meaningfully lower than comparable US or UK programmes for a similar global ranking. Living costs add about <strong>HKD 60,000–120,000 per year</strong>, with <strong>accommodation the biggest expense</strong> (Hong Kong housing is famously pricey, and on-campus places are limited). Model your full budget with the free <a href="/tools/cost-of-studying-abroad-calculator/">cost-of-studying-abroad calculator</a>, and compare destinations in the <a href="/study-abroad-funding-facts-2026/">2026 funding facts</a>.</p></div>
+
+<div class="card"><h2>Admission &amp; requirements</h2>
+<ul class="bcheck">
+<li><strong>Academic:</strong> a recognised bachelor's degree with a strong record for Master's entry; top programmes are competitive.</li>
+<li><strong>English proficiency:</strong> typically <strong>IELTS 6.0–6.5</strong> or TOEFL ~79–90. Check the exact bar and practise with <a href="/ielts-for-hku/">IELTS for HKU</a>, <a href="/toefl-for-hku/">TOEFL for HKU</a>, and a free <a href="/mock-test/ielts/">IELTS mock test</a> or <a href="/mock-test/toefl/">TOEFL mock test</a>.</li>
+<li><strong>GRE/GMAT:</strong> often recommended for competitive business and analytics Master's (GMAT ~650–680 range at the top schools).</li>
+<li><strong>Applications</strong> go directly to each university, usually in rounds — apply early for the best admission and scholarship odds.</li>
+</ul></div>
+
+<div class="card"><h2>The student visa</h2>
+<p>Once admitted, your university <strong>sponsors your student visa</strong> application to the Hong Kong Immigration Department. You'll need your admission/enrolment proof, financial evidence covering tuition and living costs, and a valid passport. Start as soon as you have your offer, as processing takes several weeks. Most non-local students may take <strong>on-campus part-time work and study-related internships</strong> — always confirm the current conditions attached to your visa (the "No Limit of Stay"/student conditions) before working.</p></div>
+
+<div class="card"><h2>After graduation: IANG &amp; the 7-year PR path</h2>
+<ul class="bcheck">
+<li><strong>IANG — 24-month stay, no job offer needed:</strong> under the Immigration Arrangements for Non-local Graduates, graduates are normally granted an initial <strong>24-month</strong> stay. <strong>Recent graduates</strong> — those applying within six months of graduating — do <strong>not</strong> need a job offer to apply.</li>
+<li><strong>Renew &amp; extend:</strong> once you're working you can renew your IANG status and keep building residence.</li>
+<li><strong>Permanent residence at 7 years:</strong> after <strong>seven years of continuous ordinary residence</strong> — and your <em>study years count</em> — you can apply for the right of abode (PR).</li>
+</ul>
+<p class="note">Immigration rules change — always confirm the current IANG and right-of-abode details on the official <a href="https://www.immd.gov.hk/eng/services/visas/IANG.html" target="_blank" rel="nofollow noopener">Hong Kong Immigration Department ↗</a> before you rely on them.</p></div>
+
+<div class="card"><h2>Scholarships &amp; funding</h2>
+<p>Hong Kong universities offer <strong>entrance and merit scholarships</strong> for strong international applicants, plus <strong>Belt and Road</strong> scholarships for students from participating regions and the highly competitive <strong>Hong Kong PhD Fellowship Scheme (HKPFS)</strong> for research students. Browse the wider <a href="/fully-funded-scholarships/">fully-funded scholarships database</a>, and if you need a loan, model repayments with the <a href="/tools/education-loan-emi-calculator/">education-loan EMI calculator</a>.</p>
+<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)}. Figures (tuition and living ranges, the IANG 24-month stay and the 7-year PR rule) are checked against official Hong Kong sources and change over time — confirm the current details with your university and the Hong Kong Immigration Department before you apply.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🎓 Top universities in Hong Kong`, href: `/study-abroad/top-universities-in-hong-kong/` },
+  { label: `🏛️ HKU profile`, href: `/university/hku/` },
+  { label: `🏛️ HKUST profile`, href: `/university/hkust/` },
+  { label: `🧮 Cost-of-studying calculator`, href: `/tools/cost-of-studying-abroad-calculator/` },
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+  { label: `📝 IELTS for HKU`, href: `/ielts-for-hku/` },
+])}`;
+  emit(path, head({
+    title: `Study in Hong Kong 2026: Complete Guide for International Students | ${BRAND}`,
+    desc: `Complete guide to studying in Hong Kong 2026: English-medium world-top-50 universities (HKU, CUHK, HKUST), tuition & costs, the student visa, the IANG 24-month stay-back (no job offer needed), and the 7-year path to permanent residence. Free tools included.`,
+    path,
+    kw: "study in hong kong, study in hong kong for international students, hong kong student visa 2026, iang visa hong kong, hong kong post study work, cost of studying in hong kong, masters in hong kong, hku admission, study in hong kong from india, hong kong permanent residency 7 years",
+    jsonLdBlocks: [
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Hong Kong 2026: The Complete Guide for International Students", description: "Universities, English-medium admission, costs, student visa, the IANG stay-back and the 7-year PR path in Hong Kong, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-08-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
+      faqJsonLd(faqs),
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Hong Kong", path }]),
+    ],
+  }) + shell(inner));
+}
+hongKongPillarPage();
+
 // ── Education Loan for Studying Abroad — PILLAR hub. Targets the collateral/
 // unsecured-loan query cluster (GSC: "non collateral education loan", "unsecured
 // education loan", "education loan is secured or unsecured") and interlinks the
@@ -3480,6 +3647,8 @@ function visaChecklistPage() {
     { id: "germany", flag: "🇩🇪", name: "Germany", extra: ["University admission letter (Zulassungsbescheid)", "Blocked account (Sperrkonto) confirmation — about EUR 11,904", "APS certificate (required for Indian students)", "Health insurance", "Proof of language (German or English, per course)"], link: "/study-in-germany/" },
     { id: "ireland", flag: "🇮🇪", name: "Ireland", extra: ["Letter of Acceptance from the institution", "Proof of funds (about EUR 10,000)", "Private medical insurance", "Evidence tuition fees are paid"], link: "/study-abroad-funding-facts-2026/" },
     { id: "switzerland", flag: "🇨🇭", name: "Switzerland", extra: ["University admission/enrolment letter", "Proof of funds for living costs (commonly ~CHF 21,000/yr — set by your canton)", "Proof of paid or payable tuition", "Health insurance valid in Switzerland", "Applied via the cantonal migration office (national D visa + B residence permit)"], link: "/study-in-switzerland/" },
+    { id: "sweden", flag: "🇸🇪", name: "Sweden", extra: ["Notification of admission (via universityadmissions.se)", "Proof of first tuition instalment paid", "Proof of funds (~SEK 10,314/month for the study period — Migrationsverket, 2026)", "Comprehensive health insurance", "Applied for a residence permit for studies (not a visa sticker)"], link: "/study-in-sweden/" },
+    { id: "hong-kong", flag: "🇭🇰", name: "Hong Kong", extra: ["University admission/enrolment proof (your university sponsors the visa)", "Financial evidence covering tuition + living costs", "Valid passport", "Completed application form ID 995A + sponsorship form ID 990A", "Recent photographs"], link: "/study-in-hong-kong/" },
   ];
   const opts = COUNTRIES.map((c) => `<option value="${c.id}">${c.flag} ${esc(c.name)}</option>`).join("");
   const faqs = [
