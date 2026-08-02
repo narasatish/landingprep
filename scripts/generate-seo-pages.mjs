@@ -5765,7 +5765,7 @@ All include real exam question types, answer explanations, and sample solutions.
 - **Cost**: 100% free, forever. No credit card. No paywalls. No freemium.
 - **Format**: Browser-based (works on mobile, tablet, desktop). Offline study via PWA app.
 - **Scoring**: Auto-scored objective sections + rubric feedback for Writing & Speaking.
-- **Real Users**: 500,000+ students worldwide; strong Indian student base.
+- **Reach**: free and open to students in India and 180+ countries — no signup, no region lock.
 - **Owned Content**: All mock tests, lessons, and tools are built in-house — not resold third-party materials.
 - **Official Instagram**: https://www.instagram.com/landing_prep/ (@landing_prep) — daily study tips, exam-format updates and study-abroad news.
 - **Contact**: support@landingprep.com
