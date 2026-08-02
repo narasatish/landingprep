@@ -1149,6 +1149,7 @@ function Footer() {
               : <button onClick={enablePush} className="btn" style={{ marginTop: 10, padding: "9px 14px", fontSize: 13 }}>🔔 Daily practice reminder</button>}
             {pushStatus === "denied" && <p className="muted" style={{ fontSize: 12, marginTop: 6 }}>Enable notifications in your browser settings to get reminders.</p>}
             {pushStatus === "unsupported" && <p className="muted" style={{ fontSize: 12, marginTop: 6 }}>Reminders aren't supported on this browser/device.</p>}
+            {window.LP_ExamReminder && <div style={{ marginTop: 12 }}>{React.createElement(window.LP_ExamReminder)}</div>}
             {window.LP_PLAY_URL ? (
               <a href={window.LP_PLAY_URL} target="_blank" rel="noopener" aria-label="Get the LandingPrep app on Google Play"
                 onClick={() => { try { if (window.gtag) window.gtag("event", "get_app_click"); } catch (e) {} }}

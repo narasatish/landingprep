@@ -7,8 +7,36 @@
 (function () {
   const OPT = "lp_reminder_optin";
   const SEEN = "lp_last_seen";
+  const EXAM_DATE = "lp_exam_date";   // "YYYY-MM-DD"
+  const EXAM_NAME = "lp_exam_name";   // e.g. "IELTS"
+  const EXAM_FIRED = "lp_exam_fired"; // JSON array of milestones already notified
+  const MILESTONES = [7, 3, 1, 0];    // days-before-exam nudges
   const dayKey = () => Math.floor(Date.now() / 86400000);
   const supported = () => typeof Notification !== "undefined";
+
+  // Whole-day difference (exam midnight − today midnight), timezone-safe.
+  function daysUntil(str) {
+    if (!str) return null;
+    const p = String(str).split("-").map(Number);
+    if (p.length !== 3 || p.some(isNaN)) return null;
+    const exam = new Date(p[0], p[1] - 1, p[2]); exam.setHours(0, 0, 0, 0);
+    const now = new Date(); now.setHours(0, 0, 0, 0);
+    return Math.round((exam - now) / 86400000);
+  }
+  function getExam() {
+    try { return { date: localStorage.getItem(EXAM_DATE) || "", name: localStorage.getItem(EXAM_NAME) || "" }; }
+    catch (e) { return { date: "", name: "" }; }
+  }
+  function setExam(date, name) {
+    try {
+      localStorage.setItem(EXAM_DATE, date);
+      localStorage.setItem(EXAM_NAME, name || "exam");
+      localStorage.removeItem(EXAM_FIRED); // reset milestones when the date changes
+    } catch (e) {}
+  }
+  function clearExam() {
+    try { [EXAM_DATE, EXAM_NAME, EXAM_FIRED].forEach((k) => localStorage.removeItem(k)); } catch (e) {}
+  }
 
   function isOptedIn() {
     try { return localStorage.getItem(OPT) === "1" && supported() && Notification.permission === "granted"; }
@@ -35,11 +63,37 @@
     } catch (e) {}
   }
 
+  // Exam-day countdown: on app open, fire a nudge as each milestone (7/3/1/0 days
+  // before the saved exam date) is reached. Each milestone fires at most once.
+  async function checkExam() {
+    try {
+      if (!isOptedIn()) return;
+      const { date, name } = getExam();
+      const days = daysUntil(date);
+      if (days === null || days < 0) return; // no date, or exam already passed
+      let fired = [];
+      try { fired = JSON.parse(localStorage.getItem(EXAM_FIRED) || "[]"); } catch (e) {}
+      const reached = MILESTONES.filter((m) => days <= m);        // milestones now due
+      const fresh = reached.filter((m) => !fired.includes(m));    // not yet notified
+      if (!fresh.length) return;
+      const label = name || "exam";
+      const title = days === 0 ? `${label} day! 🎯` : `${label} in ${days} day${days === 1 ? "" : "s"} ⏳`;
+      const body = days === 0
+        ? "Today's the day — good luck! Keep it light: a short warm-up, not a full mock."
+        : days === 1
+          ? `Your ${label} is tomorrow. One confidence run — a single section — then rest well.`
+          : `Your ${label} is in ${days} days. Time for a full timed mock to lock in your pacing.`;
+      await showNote(title, body);
+      localStorage.setItem(EXAM_FIRED, JSON.stringify(Array.from(new Set(fired.concat(reached)))));
+    } catch (e) {}
+  }
+
   // Called once on app load. Fires a nudge only when returning on a NEW day.
   async function maybeRemind() {
     try {
       const today = dayKey();
       if (!isOptedIn()) { localStorage.setItem(SEEN, String(today)); return; }
+      await checkExam(); // exam-countdown nudges run every load (guarded per milestone)
       const last = Number(localStorage.getItem(SEEN) || "0");
       if (last && today > last) {
         let hasHistory = false;
@@ -77,6 +131,50 @@
     );
   }
 
-  window.LP_REMINDERS = { optIn, optOut, isOptedIn, maybeRemind };
+  // Exam-date reminder widget: pick your exam + date → get 7/3/1/0-day nudges.
+  function ExamReminder() {
+    const { useState } = React;
+    const saved = getExam();
+    const [name, setName] = useState(saved.name || "IELTS");
+    const [date, setDate] = useState(saved.date || "");
+    const [set, setSet] = useState(!!saved.date);
+    const [msg, setMsg] = useState("");
+    if (!supported()) return null;
+    const EXAMS = ["IELTS", "TOEFL", "PTE", "Duolingo", "CELPIP", "GRE", "GMAT", "OET", "SAT", "Other"];
+    const today = new Date().toISOString().slice(0, 10);
+    const left = date ? daysUntil(date) : null;
+    const save = async () => {
+      if (!date) { setMsg("Pick your exam date first."); return; }
+      if (daysUntil(date) < 0) { setMsg("That date is in the past."); return; }
+      if (!isOptedIn()) { const r = await optIn(); if (!r.ok) { setMsg(r.error); return; } }
+      setExam(date, name); setSet(true);
+      setMsg("Set — I'll nudge you 7, 3 & 1 days before, and on the day.");
+      setTimeout(() => setMsg(""), 4500);
+    };
+    const clear = () => { clearExam(); setDate(""); setSet(false); setMsg("Exam reminder cleared."); setTimeout(() => setMsg(""), 3000); };
+    return (
+      <div className="exam-reminder">
+        {set && left !== null && left >= 0
+          ? <p style={{ margin: "0 0 6px", fontWeight: 700, color: "var(--brand, #4f46e5)" }}>
+              📅 {left === 0 ? `${name} is today — good luck!` : `${name} in ${left} day${left === 1 ? "" : "s"}`}
+            </p>
+          : <p className="muted" style={{ margin: "0 0 6px", fontSize: 13 }}>🎯 Get reminded before your exam:</p>}
+        <div style={{ display: "flex", gap: 6, flexWrap: "wrap", alignItems: "center" }}>
+          <select value={name} onChange={(e) => setName(e.target.value)} aria-label="Exam"
+            style={{ padding: "7px 8px", borderRadius: 8, border: "1px solid #cbd5e1", fontSize: 13 }}>
+            {EXAMS.map((x) => <option key={x} value={x}>{x}</option>)}
+          </select>
+          <input type="date" value={date} min={today} onChange={(e) => setDate(e.target.value)} aria-label="Exam date"
+            style={{ padding: "6px 8px", borderRadius: 8, border: "1px solid #cbd5e1", fontSize: 13 }} />
+          <button className="btn btn-sm" onClick={save} style={{ fontSize: 13 }}>{set ? "Update" : "Set reminder"}</button>
+          {set && <button className="btn btn-sm" onClick={clear} style={{ fontSize: 13, opacity: 0.75 }}>Clear</button>}
+        </div>
+        {msg && <p className="muted" style={{ fontSize: 12, marginTop: 6 }}>{msg}</p>}
+      </div>
+    );
+  }
+
+  window.LP_REMINDERS = { optIn, optOut, isOptedIn, maybeRemind, checkExam, getExam, setExam, clearExam, daysUntil };
   window.LP_ReminderBell = ReminderBell;
+  window.LP_ExamReminder = ExamReminder;
 })();

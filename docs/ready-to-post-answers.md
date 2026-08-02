@@ -182,5 +182,82 @@ for a Short. (A second Short: "Every GMAT formula on one page" → the new PDF s
 - **Expect the curve, not the spike:** branded searches + referring domains tick up around week 6–8;
   ranking movement on these topics is a months-3–6 thing. Consistency is the whole game.
 
+---
+
+# Week 2 batch — fresh angles (never reuse Week 1's text)
+
+> Same clusters, **different threads and different wording**, plus one new cluster (IELTS Band 7). Pasting
+> Week 1's text again = duplicate spam. These are written to sit on *different* questions than Week 1.
+
+## 2·1  GMAT — the "Data Sufficiency confuses me" angle  (r/GMAT, Quora)
+
+> DS trips people up because they try to *solve* it. You don't — you decide whether a statement gives
+> **enough** info to answer, nothing more. Drill this habit: (1) look at each statement alone first,
+> never together, (2) ask "can I get one definite value / one definite yes-no?" — if a statement leaves
+> two possible answers, it's insufficient, (3) only combine the two statements if each alone failed.
+> The classic trap is silently importing info from statement 1 while judging statement 2 — cover it up
+> physically. Formulas matter less here than this discipline; once it clicks, DS becomes the fastest
+> points on the section. (One-page formula sheet if you want it, free: landingprep.com/gmat-quant-formulas/)
+
+## 2·2  Germany blocked account — the "Fintiba vs Expatrio / is it refundable" angle  (r/germany, Quora)
+
+> Both Fintiba and Expatrio are accepted by German missions — pick on fees and speed, not prestige; people
+> use both fine. Key facts people ask: yes, the ~€11,904 is **your** money — after you arrive and open a
+> local bank account, the balance moves to you at ~€992/month, and if you leave you get the remainder
+> back. Two gotchas: the monthly release means you can't withdraw the whole lump at once, and the total
+> figure is reviewed most years (it's ~€11,904 for 2026 but confirm before transferring). Free
+> proof-of-funds calculator to get your exact number: landingprep.com/tools/proof-of-funds-calculator/
+> *(disclosure: I help build that free site.)*
+
+## 2·3  Education loan — the "public bank vs NBFC / how big can unsecured go" angle  (r/india, r/StudyAbroad)
+
+> Rough shape for an unsecured (no-collateral) study loan: **public banks** are cheapest but slower and
+> stricter on the unsecured ceiling; **NBFCs/private lenders** approve larger unsecured amounts and faster,
+> but cost more. The single biggest lever is your **admit** — a higher-ranked / better-employability
+> university literally raises your unsecured limit and can lower your rate, because the lender is betting
+> on your future salary. Your co-applicant's income is the second lever. Compare on *unsecured limit +
+> rate + when EMI starts (moratorium)*, not the headline rate alone. Never pay an "agent" to arrange it.
+> EMI calculator to sanity-check the monthly number: landingprep.com/tools/education-loan-emi-calculator/
+> *(disclosure: I help build that free site.)*
+
+## 2·4  Canada GIC — the "old vs new amount" correction angle  (r/ImmigrationCanada, Quora)
+
+> Heads up if you're reading older threads: the GIC amount **went up**. It was CAD 20,635 for years, but
+> IRCC raised it to **CAD 22,895 (Sept 2025)**, so a lot of 2023–24 guides now quote a number that's too
+> low — showing the old amount can get your proof-of-funds questioned. Everything else is the same: deposit
+> with a participating bank, it releases to you in instalments after you land, earns ~4–5% interest, and
+> it's your money over the year. Pair it with the current permit rules (caps + PAL letters changed in
+> 2024–25). Full 2026 breakdown: landingprep.com/blog/gic-account-canada-2026-guide/
+> *(disclosure: I help build that free site.)*
+
+## 2·5  NEW cluster — IELTS Band 7  ("ielts band 7" + "target band 7", ~38 impr/mo)  (r/IELTS, Quora)
+
+> Band 7 is less about vocabulary and more about **consistency + avoiding band-limiters**. The things that
+> actually cap people at 6.5: (Writing) not answering every part of the task, and paragraphs without a
+> clear central idea; (Speaking) short answers and audible hesitation fillers; (Reading/Listening) losing
+> marks to spelling and "no more than TWO words" instruction slips. Band 7 = you do the basics reliably,
+> not that you use rare words. Highest-ROI moves: write to the exact task, extend Part 1 speaking answers
+> to 2–3 sentences, and time yourself so pacing never collapses. Free Band-7 guide + full mock to test
+> pacing: landingprep.com/ielts-band-7/  ·  landingprep.com/mock-test/ielts/  *(disclosure: I help build
+> that free site.)*
+
+## 2·6  YouTube Short #2 (≤60s) — "Every GMAT formula on one page"
+
+> **[0–3s hook]** "Stop memorising 200 GMAT formulas. You need about 20."
+> **[3–20s]** "Arithmetic: percent change, average equals sum over count. Algebra: the three identities —
+> a-plus-b squared, a-minus-b squared, difference of squares. Geometry: circle is pi-r-squared, and
+> *memorise* the 3-4-5 and 5-12-13 triangles. Stats: probability is favourable over total. That's most of
+> the section."
+> **[20–40s]** "The secret isn't formulas though — it's Data Sufficiency. You never solve. You just decide
+> if a statement is *enough*. Master that and Quant gets fast."
+> **[40–60s CTA]** "I put every formula on one printable page — link in the description, free, no signup.
+> Follow for GMAT stuff that doesn't waste your time."
+> **Description/pinned:** Free one-page sheet → landingprep.com/gmat-quant-formulas/
+
+*(After Week 2, repeat the loop: search each sub for the query, sort by New, and answer the freshest
+real question in your own words using these as the backbone. Rotate clusters so you're never repetitive.)*
+
+---
+
 *(Complements `docs/distribution-plan-8-weeks.md` (the schedule) and `docs/backlink-outreach-kit.md`
 (the email templates). This file is the copy-paste answer bank.)*
