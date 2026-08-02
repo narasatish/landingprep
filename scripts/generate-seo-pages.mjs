@@ -3037,6 +3037,91 @@ ${relatedGrid([
 }
 germanyPillarPage();
 
+// ── Study in Switzerland — PILLAR hub. Hook: world top-15 universities (ETH #7,
+// EPFL #14) at near-free public tuition (~CHF 1,500/yr), with an HONEST counter-
+// weight (high living costs, competitive non-EU work quotas, slow PR). Interlinks
+// only pages that already exist (top-universities-in-switzerland, ielts/toefl-for-ethz,
+// university/ethz + epfl, the calculators, funding facts). Figures are ranges. ──
+function switzerlandPillarPage() {
+  const path = `/study-in-switzerland/`;
+  const faqs = [
+    { q: "Is studying in Switzerland expensive?", a: "It's a study-abroad paradox: tuition is remarkably low but living is not. Public universities charge everyone — including international students — very little (ETH Zurich and EPFL are about CHF 1,460 per year; most other public universities are roughly CHF 1,000–4,000 per year). The real cost is living: budget about CHF 22,000–27,000 per year (roughly CHF 1,800–2,200 a month), higher in Zurich and Geneva. So the tuition rivals Germany's, but you need a bigger living budget." },
+    { q: "How much money do I need to show for a Swiss student visa?", a: "Non-EU students must prove they can cover living costs — commonly around CHF 21,000 for the year — but the exact figure and format are set by the cantonal migration office you apply through, so it varies by canton. This is your own money to live on, not a fee. Model your full budget with the free cost-of-studying-abroad calculator and always confirm the current amount with the relevant Swiss cantonal authority." },
+    { q: "Can I study in Switzerland in English?", a: "Most Master's programmes at ETH Zurich and EPFL, and many Master's elsewhere, are taught entirely in English (typically requiring IELTS 6.5–7.0 or equivalent). Bachelor's programmes are usually taught in the local language — German, French or Italian depending on the region — so English-taught options are far more common at postgraduate level." },
+    { q: "Can I work while studying in Switzerland?", a: "Yes, but with real limits. Non-EU/EFTA students may work a maximum of 15 hours per week during term (full-time in holidays), and — importantly — you are generally only permitted to start working six months after you arrive. Treat a part-time job as a supplement to your living budget, never as your visa funding." },
+    { q: "Can I stay and work in Switzerland after I graduate?", a: "Non-EU graduates of a Swiss university get a six-month residence permit to look for a job related to their studies. If you find qualifying work, you can convert to a work permit — but Switzerland applies annual quotas to non-EU workers, so it is competitive. Permanent residence (a C permit) generally takes about ten years of residence, so Switzerland is a strong career destination but not a fast PR route." },
+    { q: "When should I apply to study in Switzerland?", a: "The main intake is Autumn (September), with some Master's also offering a Spring (February) start. Apply about 6–9 months ahead — many Autumn deadlines fall between December and April of the same year. Then allow 8–12 weeks for the national (D) visa and cantonal residence-permit process after you receive admission." },
+  ];
+  const inner = `
+<p class="crumb"><a href="/">Home</a> › <a href="/#/colleges">Study abroad</a> › Study in Switzerland</p>
+<section class="hero"><div class="badges"><span class="badge">Complete guide</span><span class="badge">2026</span><span class="badge">Near-free tuition</span><span class="badge">World top-15 unis</span></div>
+<h1>Study in Switzerland 2026: The Complete Guide for International Students</h1>
+<p class="lead">Switzerland offers a rare combination — universities ranked among the world's very best (ETH Zurich is 7th, EPFL 14th) at near-free public tuition, roughly CHF 1,500 a year. The trade-off is a high cost of living and a competitive, quota-limited job market for non-EU graduates. This guide walks the whole journey honestly: universities, English-taught admission, what it really costs, the student visa, working while you study, and your realistic options after graduation.</p>
+<a class="cta" href="/study-abroad/top-universities-in-switzerland/">▶ See the top universities in Switzerland</a></section>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Public-university tuition in Switzerland is very low for everyone (<strong>ETH Zurich &amp; EPFL ≈ CHF 1,460/yr</strong>); the real cost is <strong>living (≈ CHF 22,000–27,000/yr)</strong>; most Master's at ETH/EPFL are <strong>English-taught</strong> (IELTS 6.5–7.0); the main intake is <strong>Autumn (September)</strong>; you can work <strong>15 hrs/week</strong> (only after 6 months); and graduates get a <strong>6-month permit to find work</strong>, though non-EU work quotas make it competitive.</div>
+
+<div class="card"><h2>Why study in Switzerland?</h2>
+<ul class="bcheck">
+<li><strong>World-elite universities at near-free tuition.</strong> <a href="/university/ethz/">ETH Zurich</a> (world #7) and <a href="/university/epfl/">EPFL</a> (#14) charge international students only about CHF 1,460 a year — among the best value-for-quality in the world. See the full list of <a href="/study-abroad/top-universities-in-switzerland/">top universities in Switzerland</a>.</li>
+<li><strong>Global strength in science, engineering &amp; tech.</strong> Switzerland is a research powerhouse — especially computer science, robotics, engineering and the life sciences — with deep links to industry (pharma, finance, deep tech).</li>
+<li><strong>English-taught Master's</strong> are widely available at postgraduate level, so you don't necessarily need German or French to study there.</li>
+<li><strong>High quality of life &amp; strong graduate salaries</strong> — Switzerland consistently ranks among the world's best for safety, healthcare and earnings.</li>
+</ul></div>
+
+<div class="card"><h2>What it costs (the honest trade-off)</h2>
+<p>Switzerland is the study-abroad paradox: <strong>tuition is low, living is high.</strong> Public-university tuition is roughly <strong>CHF 1,000–4,000 per year</strong> for international students (ETH Zurich and EPFL are about <strong>CHF 1,460/yr</strong>; a few universities charge non-residents somewhat more). That rivals Germany's near-free model.</p>
+<p>The real budget line is <strong>living costs: about CHF 22,000–27,000 per year</strong> (roughly CHF 1,800–2,200/month), higher in Zurich and Geneva. That is more than most European destinations, so plan carefully. Model your full budget with the free <a href="/tools/cost-of-studying-abroad-calculator/">cost-of-studying-abroad calculator</a>, and compare Switzerland against other destinations in the <a href="/study-abroad-funding-facts-2026/">2026 funding facts</a>.</p></div>
+
+<div class="card"><h2>Admission &amp; requirements</h2>
+<ul class="bcheck">
+<li><strong>Academic:</strong> a recognised bachelor's degree (for Master's) with a strong record — ETH Zurich and EPFL are highly selective and expect a solid quantitative background.</li>
+<li><strong>Language of instruction:</strong> most <strong>Master's at ETH/EPFL and many elsewhere are English-taught</strong>; bachelor's programmes are usually in German, French or Italian depending on the region.</li>
+<li><strong>English proficiency:</strong> typically <strong>IELTS 6.5–7.0</strong> or TOEFL ~90–100 for English-taught programmes. Check the exact bar and practise with <a href="/ielts-for-ethz/">IELTS for ETH Zurich</a>, <a href="/toefl-for-ethz/">TOEFL for ETH Zurich</a>, and a free <a href="/mock-test/ielts/">IELTS mock test</a> or <a href="/mock-test/toefl/">TOEFL mock test</a>.</li>
+<li><strong>GRE:</strong> often <em>not required</em> at ETH Zurich for many Master's, and recommended (not always mandatory) at EPFL — always check the specific programme page.</li>
+<li><strong>Applications</strong> go directly to each university, usually with a small application fee (about CHF 100–150).</li>
+</ul></div>
+
+<div class="card"><h2>Money &amp; the student visa</h2>
+<p>Non-EU/EFTA students need a <strong>national (D) visa</strong> to enter, then apply for a <strong>residence permit (B permit)</strong> at the <strong>cantonal migration office</strong> after arriving. As part of the application you must prove you can support yourself — commonly around <strong>CHF 21,000 for the year</strong>, though the exact figure and format are <strong>set by each canton</strong>. Work out your target total with the free <a href="/tools/proof-of-funds-calculator/">proof-of-funds calculator</a>. Allow <strong>8–12 weeks</strong> for the visa and permit process, so apply as soon as you have your admission letter.</p></div>
+
+<div class="card"><h2>Working while you study</h2>
+<p>Non-EU/EFTA students may work a <strong>maximum of 15 hours per week during term</strong> (and full-time during holidays). One rule catches many students out: you are generally <strong>only allowed to start working six months after you arrive</strong>. So budget for your first semester without job income, and treat part-time work as a top-up — not your visa funding.</p></div>
+
+<div class="card"><h2>After graduation: work &amp; residence (realistic view)</h2>
+<ul class="bcheck">
+<li><strong>6-month job-search permit:</strong> after graduating from a Swiss university, non-EU graduates can stay up to six months to find work related to their degree.</li>
+<li><strong>Work permit, but with quotas:</strong> Switzerland caps the number of non-EU/EFTA work permits each year, so converting to a work permit is <strong>competitive</strong> — strong, in-demand skills (tech, engineering, finance) help most.</li>
+<li><strong>Permanent residence is a long road:</strong> a C settlement permit generally takes <strong>about ten years</strong> of residence (sometimes less for certain nationalities). Switzerland is an outstanding career and salary destination, but <strong>not a fast-PR one</strong> like Canada or Germany — plan accordingly.</li>
+</ul>
+<p class="note">Immigration rules, quotas and cantonal amounts change — always confirm the current details on the official <a href="https://www.sem.admin.ch/sem/en/home.html" target="_blank" rel="nofollow noopener">State Secretariat for Migration (SEM) ↗</a> and your cantonal migration office before you rely on them.</p></div>
+
+<div class="card"><h2>Scholarships &amp; funding</h2>
+<p>Because tuition is already low, funding mainly targets living costs. The big names are the <strong>ETH Excellence Scholarship (ESOP)</strong> and <strong>EPFL Excellence Fellowships</strong> (competitive, partial-to-full support for outstanding Master's applicants), plus the <strong>Swiss Government Excellence Scholarships (ESKAS)</strong> for research and PhD study. Browse the wider <a href="/fully-funded-scholarships/">fully-funded scholarships database</a>, and if you need a loan, model repayments with the <a href="/tools/education-loan-emi-calculator/">education-loan EMI calculator</a>.</p>
+<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)}. Figures (tuition, living costs, cantonal proof-of-funds amounts, work limits and post-study permits) are checked against official Swiss sources and change over time — confirm the current details with your university and the relevant Swiss cantonal authority before you apply.</p></div>
+${faqBlock(faqs)}
+${relatedGrid([
+  { label: `🎓 Top universities in Switzerland`, href: `/study-abroad/top-universities-in-switzerland/` },
+  { label: `🏛️ ETH Zurich profile`, href: `/university/ethz/` },
+  { label: `🏛️ EPFL profile`, href: `/university/epfl/` },
+  { label: `🧮 Cost-of-studying calculator`, href: `/tools/cost-of-studying-abroad-calculator/` },
+  { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
+  { label: `📝 IELTS for ETH Zurich`, href: `/ielts-for-ethz/` },
+])}`;
+  emit(path, head({
+    title: `Study in Switzerland 2026: Complete Guide for International Students | ${BRAND}`,
+    desc: `Honest complete guide to studying in Switzerland 2026: near-free public tuition at world-top ETH Zurich & EPFL, English-taught Master's, real living costs (CHF 22–27k/yr), the student visa, working while studying and realistic post-study work options. Free tools included.`,
+    path,
+    kw: "study in switzerland, study in switzerland for international students, study in switzerland for free, switzerland student visa 2026, cost of studying in switzerland, study in switzerland from india, eth zurich admission, epfl admission, masters in switzerland in english, switzerland post study work",
+    jsonLdBlocks: [
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Switzerland 2026: The Complete Guide for International Students", description: "Universities, English-taught admission, real costs, student visa, working while studying and post-study work in Switzerland, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-08-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
+      faqJsonLd(faqs),
+      breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Switzerland", path }]),
+    ],
+  }) + shell(inner));
+}
+switzerlandPillarPage();
+
 // ── Education Loan for Studying Abroad — PILLAR hub. Targets the collateral/
 // unsecured-loan query cluster (GSC: "non collateral education loan", "unsecured
 // education loan", "education loan is secured or unsecured") and interlinks the
@@ -3394,6 +3479,7 @@ function visaChecklistPage() {
     { id: "usa", flag: "🇺🇸", name: "USA (F-1)", extra: ["Form I-20 from an SEVP-certified school", "SEVIS I-901 fee payment receipt", "DS-160 confirmation page", "Visa interview appointment (at the US embassy/consulate)", "Financial documents proving cost of attendance"], link: "/study-in-usa/" },
     { id: "germany", flag: "🇩🇪", name: "Germany", extra: ["University admission letter (Zulassungsbescheid)", "Blocked account (Sperrkonto) confirmation — about EUR 11,904", "APS certificate (required for Indian students)", "Health insurance", "Proof of language (German or English, per course)"], link: "/study-in-germany/" },
     { id: "ireland", flag: "🇮🇪", name: "Ireland", extra: ["Letter of Acceptance from the institution", "Proof of funds (about EUR 10,000)", "Private medical insurance", "Evidence tuition fees are paid"], link: "/study-abroad-funding-facts-2026/" },
+    { id: "switzerland", flag: "🇨🇭", name: "Switzerland", extra: ["University admission/enrolment letter", "Proof of funds for living costs (commonly ~CHF 21,000/yr — set by your canton)", "Proof of paid or payable tuition", "Health insurance valid in Switzerland", "Applied via the cantonal migration office (national D visa + B residence permit)"], link: "/study-in-switzerland/" },
   ];
   const opts = COUNTRIES.map((c) => `<option value="${c.id}">${c.flag} ${esc(c.name)}</option>`).join("");
   const faqs = [
