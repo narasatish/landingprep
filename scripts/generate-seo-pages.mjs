@@ -448,7 +448,6 @@ function head({ title, desc, path, kw, jsonLdBlocks, robots }) {
 <meta name="robots" content="${robots || "index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"}"/>
 <link rel="canonical" href="${url}"/>
 <link rel="alternate" type="application/rss+xml" title="LandingPrep Blog" href="${ORIGIN}/feed.xml"/>
-<link rel="alternate" hreflang="en-IN" href="${url}"/>
 <link rel="alternate" hreflang="en" href="${url}"/>
 <link rel="alternate" hreflang="x-default" href="${url}"/>
 <meta property="og:type" content="website"/>

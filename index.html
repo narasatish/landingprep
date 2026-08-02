@@ -117,12 +117,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="LandingPrep" />
   <meta name="mobile-web-app-capable" content="yes" />
+  <!-- Single worldwide English site → only en + x-default (both self-referencing this URL).
+       The old en-US/en-GB/en-CA/en-AU/en-IN tags all pointed here too, which falsely
+       claimed regional pages that don't exist — a genuine hreflang misconfiguration. -->
   <link rel="alternate" hreflang="en" href="https://landingprep.com/" />
-  <link rel="alternate" hreflang="en-US" href="https://landingprep.com/" />
-  <link rel="alternate" hreflang="en-GB" href="https://landingprep.com/" />
-  <link rel="alternate" hreflang="en-CA" href="https://landingprep.com/" />
-  <link rel="alternate" hreflang="en-AU" href="https://landingprep.com/" />
-  <link rel="alternate" hreflang="en-IN" href="https://landingprep.com/" />
   <link rel="alternate" hreflang="x-default" href="https://landingprep.com/" />
 
   <!-- â•â•â• Open Graph â•â•â• -->
@@ -328,8 +326,8 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=372" />
-  <link rel="stylesheet" href="pro.css?v=372" />
+  <link rel="stylesheet" href="theme.css?v=373" />
+  <link rel="stylesheet" href="pro.css?v=373" />
 </head>
 <body>
   <!-- #root holds a real, crawlable homepage fallback in the raw HTML. React
@@ -379,8 +377,8 @@
 
   <!-- React 18.3.1 PRODUCTION (minified), SELF-HOSTED: same-origin load avoids a third-party
        DNS+TLS handshake on first paint → faster LCP, and it's precached by the service worker. -->
-  <script src="vendor/react.production.min.js?v=372"></script>
-  <script src="vendor/react-dom.production.min.js?v=372"></script>
+  <script src="vendor/react.production.min.js?v=373"></script>
+  <script src="vendor/react-dom.production.min.js?v=373"></script>
   <!-- Failover: if the local copy ever fails to define React, boot from unpkg, then jsdelivr. -->
   <script>
     if (!window.React) document.write('<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"><\/script>');
@@ -390,7 +388,7 @@
   </script>
 
   <!-- Data layer -->
-  <script defer src="app-bundle.js?v=372"></script>
+  <script defer src="app-bundle.js?v=373"></script>
   <!-- data-questions.js (~142 KB) is lazy-loaded with the test runner via MockTestGate when a mock starts -->
 
   <!-- Auth + Smart Tutor + Chatbot (must load before screens) -->

@@ -49,7 +49,11 @@ for (const t of ["EducationalOrganization", "FAQPage", "SoftwareApplication", "B
   check("JSON-LD includes " + t, ldTypes.includes(t));
 check("sitemap.xml exists", exists("sitemap.xml"));
 check("robots.txt exists & references sitemap", exists("robots.txt") && /Sitemap:/i.test(read("robots.txt")));
-check("hreflang en-IN present", /hreflang="en-IN"/.test(html));
+// Single worldwide English site → hreflang must be exactly en + x-default (both self-ref).
+// Regional variants (en-IN/en-US/en-GB/en-CA/en-AU) all pointing at the same URL falsely
+// claim localized pages that don't exist — a real misconfiguration, so we now assert their ABSENCE.
+check("hreflang en + x-default present", /hreflang="en"/.test(html) && /hreflang="x-default"/.test(html));
+check("no bogus regional hreflang", !/hreflang="en-(IN|US|GB|CA|AU)"/.test(html));
 check("robots meta allows max-snippet", /max-snippet:-1/.test(html));
 check("canonical present", /rel="canonical"/.test(html));
 // FAQ schema count matches visible FAQ count in home.jsx
@@ -218,7 +222,9 @@ check("og:image referenced", /og:image/.test(html));
 group("Universality");
 check("no NCERT (India-only) reference", !/NCERT/i.test(html) && !/NCERT/i.test(homeSrc));
 check("description is not India-first", !/students in India,/.test(html));
-check("multi-locale hreflang (US/GB/CA/AU)", ["en-US", "en-GB", "en-CA", "en-AU"].every(l => new RegExp('hreflang="' + l + '"').test(html)));
+// Universality is signalled by x-default (one page for every region), NOT by faking
+// per-country hreflang variants that all point at the same URL.
+check("x-default hreflang signals a worldwide page", /hreflang="x-default"/.test(html));
 check("destinations span 9 countries", countries.length >= 9);
 check("colleges span 8+ countries", new Set(colleges.map(c => c.country)).size >= 8, new Set(colleges.map(c => c.country)).size + " countries");
 
