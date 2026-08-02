@@ -19,7 +19,7 @@
       "sections": [
         {
           "h": "2025–26: Major Policy Changes Overview",
-          "body": "Canada's international student policies shifted significantly in 2025–26. The Canadian government has implemented stricter controls to manage immigration volumes and prioritize students from priority countries. Here are the major changes:\n\n1. **SDS program ended** (November 2024): Fast-track 2-week approval no longer available for any country, including India.\n2. **Study permit caps introduced**: Provinces now have caps on new international student permits issued per year.\n3. **PAL requirement**: New Provincial Attestation Letter required to prove provincial government approval.\n4. **Higher proof of funds**: Requirements increased in some provinces (CAD 20,635 → CAD 25,000–30,000).\n5. **PGWP field restrictions**: Post-graduation work permit duration now tied to field of study. Some fields get 3 years; others get 1 year or less.\n6. **Stricter ties-to-home assessment**: IRCC now closely reviews proof that you'll return to India after studies (not immigrate permanently).",
+          "body": "Canada's international student policies shifted significantly in 2025–26. The Canadian government has implemented stricter controls to manage immigration volumes and prioritize students from priority countries. Here are the major changes:\n\n1. **SDS program ended** (November 2024): Fast-track 2-week approval no longer available for any country, including India.\n2. **Study permit caps introduced**: Provinces now have caps on new international student permits issued per year.\n3. **PAL requirement**: New Provincial Attestation Letter required to prove provincial government approval.\n4. **Higher proof of funds**: IRCC raised the national cost-of-living requirement from CAD 20,635 to CAD 22,895 (effective 1 September 2025, outside Quebec; Quebec sets its own, CAD 24,617 for 2026).\n5. **PGWP field restrictions**: Post-graduation work permit duration now tied to field of study. Some fields get 3 years; others get 1 year or less.\n6. **Stricter ties-to-home assessment**: IRCC now closely reviews proof that you'll return to India after studies (not immigrate permanently).",
           "callout": {
             "type": "key",
             "text": "These are the biggest changes since 2020. Students applying in spring/summer 2026 MUST understand the new caps, PAL requirement, and PGWP field rules. Plan 12 weeks ahead instead of 8."
@@ -124,50 +124,50 @@
               [
                 "Ontario",
                 "CAD 20,635",
-                "CAD 24,000–26,000",
+                "CAD 22,895",
                 "ICICI, SBI, CIBC, RBC"
               ],
               [
                 "British Columbia",
                 "CAD 20,635",
-                "CAD 22,000–24,000",
+                "CAD 22,895",
                 "ICICI, SBI, CIBC, RBC"
               ],
               [
                 "Alberta",
                 "CAD 20,635",
-                "CAD 20,635 (unchanged)",
+                "CAD 22,895",
                 "ICICI, SBI, CIBC"
               ],
               [
                 "Quebec",
                 "CAD 20,635",
-                "CAD 21,000–22,000",
+                "CAD 24,617",
                 "ICICI, SBI, CIBC"
               ],
               [
                 "Manitoba",
                 "CAD 20,635",
-                "CAD 20,635 (unchanged)",
+                "CAD 22,895",
                 "ICICI, SBI, Wise"
               ],
               [
                 "Saskatchewan",
                 "CAD 20,635",
-                "CAD 20,635 (unchanged)",
+                "CAD 22,895",
                 "ICICI, SBI, CIBC"
               ],
               [
                 "Nova Scotia",
                 "CAD 20,635",
-                "CAD 20,635 (unchanged)",
+                "CAD 22,895",
                 "ICICI, SBI"
               ]
             ]
           },
           "callout": {
             "type": "money",
-            "text": "If you're applying to Ontario or BC in 2026, budget for CAD 24,000–26,000 in GIC/proof of funds. This is ~₹14–15 lakhs at current rates. Confirm the exact provincial requirement on your college's website or IRCC provincial guidance."
+            "text": "For 2026, budget CAD 22,895 in GIC/proof of funds if you study anywhere outside Quebec (about ₹14 lakhs). IRCC sets ONE national amount, so it is identical in Ontario, BC and every other province outside Quebec. Only Quebec sets its own, higher figure (CAD 24,617 for a single applicant in 2026). Always confirm the current amount on the IRCC website."
           }
         },
         {
@@ -260,7 +260,7 @@
             "**Step 3 (Jan–Feb 2026)**: Take IELTS/TOEFL. Target 6.5+ (IELTS), or the TOEFL equivalent (TOEFL now uses a 1–6 band; 90+ refers to the transitional 0–120 many universities still list).",
             "**Step 4 (Feb–Mar)**: Get admitted to the college. Ask in writing: 'Is PAL required? Will your office submit it on my behalf?'",
             "**Step 5 (Mar)**: Collect PAL from college/province. This usually takes 2–4 weeks.",
-            "**Step 6 (Mar–Apr)**: Open GIC with the CORRECT provincial amount. For Ontario/BC, that's CAD 24,000–26,000; for others, CAD 20,635.",
+            "**Step 6 (Mar–Apr)**: Open a GIC for CAD 22,895 — IRCC's single national cost-of-living amount for a study permit outside Quebec (it is the same in every province outside Quebec). Quebec sets its own, CAD 24,617 for a single applicant in 2026.",
             "**Step 7 (Apr)**: Compile ties-to-India proof: property deed, parents' employment letter (with employer phone number for verification), 12 months bank statements, family photos, utility bills.",
             "**Step 8 (Apr)**: Get medical exam (Form IMM 1017) done.",
             "**Step 9 (May)**: Submit study permit application online with PAL, GIC, LOA, medical exam, ties-to-home documents, and strong SOP.",
@@ -363,7 +363,7 @@
         ],
         [
           "Did the proof-of-funds requirement increase in 2026?",
-          "Yes, in some provinces. Ontario and BC increased it from CAD 20,635 to CAD 24,000–26,000. Other provinces remain at CAD 20,635. Check your specific province on the IRCC website or your college's international office."
+          "No — outside Quebec the amount is national, not provincial. IRCC raised it from CAD 20,635 (2024) to CAD 22,895 on 1 September 2025, and that same figure applies in Ontario, BC and every other province outside Quebec. Only Quebec is different (CAD 24,617 for a single applicant in 2026). Always confirm on the IRCC website."
         ],
         [
           "How long is the PGWP (Post-Graduation Work Permit) in 2026?",
@@ -748,7 +748,7 @@
         },
         {
           "h": "Financial Proof for GS: How Much You Need (AUD)",
-          "body": "Australia doesn't have a fixed 'proof of funds' requirement like Canada (CAD 20,635) or Germany (EUR 11,904). Instead, the Department assesses whether YOUR specific situation is financially viable. However, here are rough benchmarks:",
+          "body": "Australia doesn't have a fixed 'proof of funds' requirement like Canada (CAD 22,895) or Germany (EUR 11,904). Instead, the Department assesses whether YOUR specific situation is financially viable. However, here are rough benchmarks:",
           "bullets": [
             "**Undergraduate (3–4 years, ~AUD 80,000–100,000 tuition)**: Minimum AUD 30,000 in accessible savings + evidence of family income AUD 40,000+/year. Total financial capacity should cover tuition + living expenses.",
             "**Master's degree (2 years, ~AUD 50,000–80,000 tuition)**: Minimum AUD 25,000 in accessible savings + family income AUD 30,000+/year.",
@@ -984,7 +984,7 @@
         ],
         [
           "How much proof of funds do I need for Australia GS?",
-          "Australia doesn't have a fixed amount like Canada (CAD 20,635) or Germany (EUR 11,904). Instead, you must show financial capacity matching your course cost + living expenses. Rough benchmark: AUD 20,000–30,000 in accessible savings + parental income AUD 30,000+/year. If you have a scholarship, reduce this proportionally."
+          "Australia doesn't have a fixed amount like Canada (CAD 22,895) or Germany (EUR 11,904). Instead, you must show financial capacity matching your course cost + living expenses. Rough benchmark: AUD 20,000–30,000 in accessible savings + parental income AUD 30,000+/year. If you have a scholarship, reduce this proportionally."
         ],
         [
           "Can I use a GIC for Australian student visa, or is a bank statement better?",
@@ -10815,7 +10815,7 @@
       "date": "2026",
       "title": "Canada Student Visa & Study Permit 2026: SDS Requirements, GIC, and New 2024+ Process",
       "excerpt": "Canada study permit via SDS (Student Direct Stream) ended November 2024. Learn the current process for 2026: GIC proof-of-funds, language requirements, document checklist, and who qualifies. Processing time, costs, and FAQs.",
-      "kw": "Canada study permit 2026, Canada student visa SDS 2024 ended, GIC proof funds CAD 20635, Canada study permit language requirement, student permit documents checklist, Canada visa processing time",
+      "kw": "Canada study permit 2026, Canada student visa SDS 2024 ended, GIC proof funds CAD 22895, Canada study permit language requirement, student permit documents checklist, Canada visa processing time",
       "sections": [
         {
           "h": "What Changed: SDS Ended November 2024",
@@ -10829,8 +10829,8 @@
           "h": "Proof of Funds: GIC vs. Bank Statement (2026)",
           "body": "You must prove you have funds to study and live in Canada. Here are the accepted methods post-SDS:",
           "bullets": [
-            "**GIC (Guaranteed Investment Certificate)**: Lock CAD 20,635 (2025–26 amount) in a Canadian bank GIC for 1 year. This earns 4–5% interest and is released monthly once you enroll. ICICI Bank Canada, SBI Canada, CIBC, RBC, and Wise all offer these.",
-            "**Bank statement (parents/sponsor)**: Show a lump-sum bank statement from a Canadian or Indian bank proving CAD 20,635+ available. This is less preferred because IRCC will scrutinize the source and ask for 6–12 months' transaction history.",
+            "**GIC (Guaranteed Investment Certificate)**: Lock CAD 22,895 (2025–26 amount) in a Canadian bank GIC for 1 year. This earns 4–5% interest and is released monthly once you enroll. ICICI Bank Canada, SBI Canada, CIBC, RBC, and Wise all offer these.",
+            "**Bank statement (parents/sponsor)**: Show a lump-sum bank statement from a Canadian or Indian bank proving CAD 22,895+ available. This is less preferred because IRCC will scrutinize the source and ask for 6–12 months' transaction history.",
             "**Combination**: GIC (CAD 15,000) + parent's bank statement (CAD 10,000+) is acceptable and often reviewed more favorably.",
             "**Scholarship**: If you've received a partial/full scholarship, you may need less proof of funds. Full scholarship = no GIC needed. Partial scholarship = GIC for the remaining amount.",
             "**Study permit without GIC**: If your program is under 6 months or you have a co-op/work-integrated placement, some students get approved without GIC, but this is rare."
@@ -10928,7 +10928,7 @@
           "bullets": [
             "**Passport**: Biographical page + all pages with stamps/visas + validity of at least 2 years beyond your program end date.",
             "**Letter of Acceptance (LOA)**: Original from your Canadian college. Must show program name, duration, start date, and your full name matching passport.",
-            "**GIC certificate + account statement**: From ICICI, SBI, CIBC, or other provider. Must show your name, amount (CAD 20,635+), account number, and issue date.",
+            "**GIC certificate + account statement**: From ICICI, SBI, CIBC, or other provider. Must show your name, amount (CAD 22,895+), account number, and issue date.",
             "**Proof of payment**: Receipt or bank statement showing the GIC deposit came from your/parents' account (proof of funds source).",
             "**Education credentials**: Transcripts + mark sheets from 12th and/or bachelor's degree (if applying for master's). Get these in English or certified translation.",
             "**Identity proof**: Birth certificate, notarized copy of 12th standard marksheet, school leaving certificate, or driver's license.",
@@ -10958,7 +10958,7 @@
             "**Age**: Minimum 18 years old (some colleges require 21+ for specific programs). Maximum age is not restricted.",
             "**Educational qualification**: Minimum 12th pass (for undergraduate) or bachelor's degree (for master's/PhD). Transcript must show you completed prior degree.",
             "**Admission letter**: You MUST have an unconditional Letter of Acceptance (LOA) from a Designated Learning Institution (DLI) in Canada. Canada's colleges are all DLI-approved; private institutions may not be. Check [the official DLI list](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/designated-learning-institutions-list.html).",
-            "**Proof of funds**: GIC (CAD 20,635+) or equivalent bank statement.",
+            "**Proof of funds**: GIC (CAD 22,895+) or equivalent bank statement.",
             "**Health**: No communicable diseases (TB screening negative). Provide clear medical exam.",
             "**Language**: English proficiency (IELTS 6.0+ or equivalent). Some colleges allow conditional admission if you complete English bridge course first.",
             "**Intent**: IRCC believes you'll study and return to India (not immigrate illegally). Proof of ties to India helps here.",
@@ -10970,12 +10970,12 @@
           "h": "Common Reasons for Study Permit Refusal & How to Avoid Them",
           "body": "IRCC refuses ~15–20% of study permit applications. Here are the top reasons:",
           "bullets": [
-            "**Insufficient proof of funds**: GIC is outdated, bank statement shows funds < CAD 20,635, or source of funds is unclear. Solution: Open fresh GIC 2 weeks before applying.",
+            "**Insufficient proof of funds**: GIC is outdated, bank statement shows funds < CAD 22,895, or source of funds is unclear. Solution: Open fresh GIC 2 weeks before applying.",
             "**Incomplete/inconsistent documents**: Name spelling differs across passport, LOA, and application form. LOA has wrong program name or duration. Solution: Cross-check every document 3 times before uploading.",
             "**Failed medical exam**: Positive TB result. Solution: Get TB screening done before applying, if you're at risk. Retake if needed.",
             "**Lack of ties to India**: No proof of employment, property, or family in India. IRCC thinks you'll overstay. Solution: Upload property deed, parents' employment letter, family documents, and a genuine SOP.",
             "**Weak SOP**: Vague career goals, poor English writing, or inconsistent with your program choice. Solution: Write a clear, personalized SOP explaining why this specific program leads to your career goals.",
-            "**GIC source unclear**: IRCC can't verify where the CAD 20,635 came from (looks like a loan, not your own money). Solution: Provide family affidavit + parental bank statement showing the money came from their account.",
+            "**GIC source unclear**: IRCC can't verify where the CAD 22,895 came from (looks like a loan, not your own money). Solution: Provide family affidavit + parental bank statement showing the money came from their account.",
             "**Previous study permit refusal**: You applied before and were rejected. IRCC is cautious. Solution: Address the original rejection reason explicitly in your new SOP; get a professional immigration consultant's help.",
             "**Non-DLI institution**: You got admitted to a private college NOT on Canada's DLI list. Study permit will be refused. Solution: Verify your college is on the [official DLI list](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/designated-learning-institutions-list.html) before applying."
           ]
@@ -11007,7 +11007,7 @@
             "rows": [
               [
                 "GIC (proof of funds)",
-                "CAD 20,635",
+                "CAD 22,895",
                 "2–3 weeks before applying"
               ],
               [
@@ -11068,7 +11068,7 @@
           "bullets": [
             "**Now (Jan–Feb 2026)**: Take IELTS/TOEFL. Target 6.5+ (IELTS) or 90+ (TOEFL).",
             "**Feb–March**: Get admitted to a Canadian college (DLI-listed). Receive LOA.",
-            "**March**: Open GIC with ICICI/SBI/CIBC. Deposit CAD 20,635. Receive GIC certificate.",
+            "**March**: Open GIC with ICICI/SBI/CIBC. Deposit CAD 22,895. Receive GIC certificate.",
             "**March–April**: Get medical exam done (Form IMM 1017).",
             "**April**: Submit study permit application online. Pay fees. Upload all documents.",
             "**April–May**: Wait for approval (4–8 weeks). Check portal regularly.",
@@ -11087,11 +11087,11 @@
         ],
         [
           "How much proof of funds (GIC) is required for a Canadian study permit in 2026?",
-          "**CAD 20,635 for 1 year** of study (2025–26 amount). This covers living expenses (~CAD 16,000) + miscellaneous (~CAD 4,635). For 2-year programs, double this to CAD 41,270. Confirm the exact 2026 amount on the IRCC website."
+          "**CAD 22,895 for 1 year** of study (2025–26 amount). This covers living expenses (~CAD 16,000) + miscellaneous (~CAD 6,895). For 2-year programs, double this to CAD 45,790. Confirm the exact 2026 amount on the IRCC website."
         ],
         [
           "Can I use a regular bank statement instead of a GIC for proof of funds?",
-          "Yes, but GIC is preferred. A regular bank statement works if it shows CAD 20,635+ available AND you can explain the source clearly. GIC is safer because it's a formal investment product that IRCC recognizes immediately."
+          "Yes, but GIC is preferred. A regular bank statement works if it shows CAD 22,895+ available AND you can explain the source clearly. GIC is safer because it's a formal investment product that IRCC recognizes immediately."
         ],
         [
           "How long does study permit approval take in 2026?",
@@ -13128,7 +13128,7 @@
           "body": "Canada prioritizes proof of funds and simplicity:",
           "bullets": [
             "**Letter of Acceptance (LOA)**: From your Canadian college/university. Official document proving admission.",
-            "**GIC certificate or bank proof**: CAD 20,635 in a GIC or savings account (for SDS pathway). Certificate from the bank showing your funds are locked/available.",
+            "**GIC certificate or bank proof**: CAD 22,895 in a GIC or savings account (for SDS pathway). Certificate from the bank showing your funds are locked/available.",
             "**Proof of parental income**: Last 2 years of taxation notice (NOA/ITR) or recent pay slips (3 months). Proves you can afford to pay for remaining costs.",
             "**Passport**: Valid for entire stay + 6 months.",
             "**Police clearance**: Certificate of Good Conduct (Canada is strict; any criminal record = automatic denial).",
@@ -14371,8 +14371,8 @@
       "tag": "Funding",
       "date": "2026",
       "title": "GIC Account for Canada 2026: How Much You Need, Where to Open It & Why It's Required",
-      "excerpt": "Canadian study permit now requires CAD 20,635 in a GIC (Guaranteed Investment Certificate) for SDS applicants in 2025. Learn how to open with ICICI, SBI Canada, CIBC, or other providers—and how funds release monthly.",
-      "kw": "Canada GIC study permit 2026, CAD 20635 GIC SDS, ICICI SBI Canada CIBC RBC GIC, how to open GIC Canada, GIC funds release monthly, Canada study visa funding",
+      "excerpt": "Canadian study permit now requires CAD 22,895 in a GIC (Guaranteed Investment Certificate) for SDS applicants in 2025. Learn how to open with ICICI, SBI Canada, CIBC, or other providers—and how funds release monthly.",
+      "kw": "Canada GIC study permit 2026, CAD 22895 GIC SDS, ICICI SBI Canada CIBC RBC GIC, how to open GIC Canada, GIC funds release monthly, Canada study visa funding",
       "sections": [
         {
           "h": "What Is a GIC (Guaranteed Investment Certificate)?",
@@ -14383,10 +14383,10 @@
           "body": "Immigration, Refugees and Citizenship Canada (IRCC) specifies the required amount based on your program length and living costs.",
           "callout": {
             "type": "money",
-            "text": "For 2025–26: **CAD 20,635 for Year 1 + tuition**. This covers 1 year of living expenses (food, rent, transport, books). Confirm the exact 2026 amount on the official IRCC website."
+            "text": "For 2025–26: **CAD 22,895 for Year 1 + tuition**. This covers 1 year of living expenses (food, rent, transport, books). Confirm the exact 2026 amount on the official IRCC website."
           },
           "bullets": [
-            "The amount is per year of study. A 2-year master's program requires ~CAD 41,270 (CAD 20,635 × 2).",
+            "The amount is per year of study. A 2-year master's program requires ~CAD 45,790 (CAD 22,895 × 2).",
             "Some provinces (Ontario, BC, Alberta) have slightly different requirements—check your provincial government website.",
             "SDS applicants (from eligible countries including India) benefit from a streamlined process: GIC + valid passport + proof of admission = faster approval (~2 weeks).",
             "Non-SDS applicants face stricter scrutiny and may need additional proof of funds (parental bank statements, property deeds, etc.)."
@@ -14442,7 +14442,7 @@
               [
                 "Wise (TransferWise)",
                 "0% (no interest)",
-                "CAD 20,635",
+                "CAD 22,895",
                 "1 week",
                 "Fast; no interest, but lowest fees; good for transfers"
               ]
@@ -14456,7 +14456,7 @@
             "Visit ICICI Bank Canada's website (icicibankcanada.ca) and click 'Open a GIC' or 'Student GIC.'",
             "Fill out the online application form with your full name, date of birth, passport number, email, and contact address in India.",
             "Verify your email and confirm your identity. ICICI may request a copy of your passport (upload via secure portal).",
-            "Select 'GIC for Study Permit' as the account type, and enter the amount (CAD 20,635 for 1 year, or CAD 41,270 for 2 years, etc.).",
+            "Select 'GIC for Study Permit' as the account type, and enter the amount (CAD 22,895 for 1 year, or CAD 45,790 for 2 years, etc.).",
             "Choose the GIC term (usually 1 year recommended, as you'll need access when you arrive in Canada).",
             "Provide your proof of admission to a Canadian college or university (acceptance letter, LOA—Letter of Acceptance).",
             "Fund the GIC via wire transfer from your Indian bank. ICICI Canada will provide wire instructions. Typical wire transfer fee from India: ₹500–₹2,000.",
@@ -14472,7 +14472,7 @@
           "body": "The GIC is NOT a lump-sum disbursement. Here's the release mechanism:",
           "bullets": [
             "**Before arrival**: GIC is locked and held by the bank. You cannot touch it.",
-            "**After arrival & enrollment**: You contact the bank and authorize the release schedule. Standard release = monthly (CAD 1,718/month for a CAD 20,635 GIC over 12 months).",
+            "**After arrival & enrollment**: You contact the bank and authorize the release schedule. Standard release = monthly (CAD 1,908/month for a CAD 22,895 GIC over 12 months).",
             "**Proof of study**: To release funds, you must provide proof of enrollment each month (or semester). Typically a letter from your college/university confirming you're a full-time student.",
             "**Transfer to your account**: Released funds go to your primary Canadian bank account (chequings), from which you draw for rent, groceries, transport, etc.",
             "**Interest accrual**: While the GIC is active, it earns interest (4–5% per year). This interest is added to your account when you withdraw funds or the GIC matures.",
@@ -14481,10 +14481,10 @@
           ]
         },
         {
-          "h": "Funding Sources: How to Get CAD 20,635",
-          "body": "Where does the CAD 20,635 come from? Several options:",
+          "h": "Funding Sources: How to Get CAD 22,895",
+          "body": "Where does the CAD 22,895 come from? Several options:",
           "bullets": [
-            "**Parents' savings**: Most common. Parents transfer CAD 20,635 from their Indian bank to ICICI Canada. Provide a family relation affidavit.",
+            "**Parents' savings**: Most common. Parents transfer CAD 22,895 from their Indian bank to ICICI Canada. Provide a family relation affidavit.",
             "**Education loan**: Indian lenders like HDFC Credila, Avanse, Auxilo offer education loans for Canada, often covering the full GIC amount. See our [education loan guide](/blog/education-loan-study-abroad/).",
             "**NRI parent in Canada**: If your parent is already working in Canada, they can deposit into the GIC directly (fastest, no wire transfer needed).",
             "**Combination**: Partial loan + partial parental funds. E.g., education loan covers CAD 10,000, parents contribute CAD 10,635.",
@@ -14505,7 +14505,7 @@
             "rows": [
               [
                 "GIC (SDS)",
-                "CAD 20,635",
+                "CAD 22,895",
                 "GIC certificate + account statement",
                 "2 weeks",
                 "Most Indian students (fastest approval)"
@@ -14547,11 +14547,11 @@
           "bullets": [
             "**Account opening**: 1–2 weeks (ICICI) to 3–4 weeks (CIBC/RBC). Start 8–10 weeks before your study permit application deadline.",
             "**Wire transfer**: ₹500–₹2,000 fee from your Indian bank. Wise is often cheaper (₹200–₹400) but takes an extra 2–3 days.",
-            "**Exchange rate**: INR-to-CAD conversion has a 1–3% spread. Budget 2.5% extra (~₹40,000 for a CAD 20,635 deposit).",
+            "**Exchange rate**: INR-to-CAD conversion has a 1–3% spread. Budget 2.5% extra (~₹40,000 for a CAD 22,895 deposit).",
             "**GIC interest**: 4–5% per year earned on your deposit. Over 1 year, you earn CAD 826–1,032 in interest (free money!).",
             "**Account maintenance**: Most Canadian banks charge $0–$5 CAD/month for student accounts. ICICI is often free.",
             "**Study permit processing**: FREE for SDS applicants. Paper-based non-SDS is ~CAD 150.",
-            "**Total all-in cost**: CAD 20,635 + ₹40,000 (~CAD 700) for fees + transfer costs = ~CAD 21,350 budgeted. You get interest back, so net cost is lower."
+            "**Total all-in cost**: CAD 22,895 + ₹40,000 (~CAD 700) for fees + transfer costs = ~CAD 23,595 budgeted. You get interest back, so net cost is lower."
           ]
         },
         {
@@ -14560,7 +14560,7 @@
           "bullets": [
             "**Opening a GIC after applying for study permit**: IRCC needs proof of funds BEFORE approval. Open the GIC first, then apply.",
             "**Linking a savings account instead of a GIC**: A regular savings account won't work. IRCC requires a formal GIC certificate from a regulated bank.",
-            "**Wrong amount**: Depositing CAD 15,000 when CAD 20,635 is required will trigger a rejection or request for additional funds.",
+            "**Wrong amount**: Depositing CAD 15,000 when CAD 22,895 is required will trigger a rejection or request for additional funds.",
             "**Forgetting to authorize monthly releases**: Many students arrive in Canada and discover their GIC is still locked because they never called the bank. Do this within 1 week of enrollment.",
             "**Missing the SDS deadline**: SDS requires application within a specific time window. Missing it forces you into the regular stream (4–6 weeks processing instead of 2 weeks).",
             "**Not providing proof of enrollment**: When requesting monthly releases, you must provide a letter from your college confirming full-time enrollment. Get this from your registrar's office ASAP.",
@@ -14585,7 +14585,7 @@
       "faqs": [
         [
           "How much is the Canadian GIC amount for study permit in 2026?",
-          "The required GIC amount for 2025–26 is **CAD 20,635 for 1 year** of study. This includes living expenses (~CAD 16,000) + tuition (~CAD 4,635). Confirm the exact 2026 figure on the official IRCC website before applying."
+          "The required GIC amount for 2025–26 is **CAD 22,895 for 1 year** of study. This includes living expenses (~CAD 16,000) + tuition (~CAD 4,635). Confirm the exact 2026 figure on the official IRCC website before applying."
         ],
         [
           "Which GIC provider is best for Indian students?",
@@ -14605,7 +14605,7 @@
         ],
         [
           "Do I earn interest on the GIC?",
-          "Yes! GICs typically earn 4–5% per year. On CAD 20,635, you'll earn CAD 826–1,032 in interest over 1 year. This interest is added to your account when you withdraw or the GIC matures."
+          "Yes! GICs typically earn 4–5% per year. On CAD 22,895, you'll earn CAD 916–1,145 in interest over 1 year. This interest is added to your account when you withdraw or the GIC matures."
         ],
         [
           "What is SDS (Student Direct Stream), and do I need it?",
@@ -14616,8 +14616,8 @@
           "No. Most GIC providers require proof of admission (an acceptance letter or LOA from a Canadian institution). Get admitted first, then open the GIC."
         ],
         [
-          "What if I need more than CAD 20,635 because my program is 2 years or I have dependents?",
-          "For a 2-year program, you need CAD 41,270 (double). If you have a spouse or dependent, add another CAD 20,635 per person. Adjust your GIC deposit accordingly and submit updated documentation to IRCC."
+          "What if I need more than CAD 22,895 because my program is 2 years or I have dependents?",
+          "For a 2-year program, you need CAD 41,270 (double). If you have a spouse or dependent, add more for each family member (IRCC publishes a family-size table; a single applicant is CAD 22,895). Adjust your GIC deposit accordingly and submit updated documentation to IRCC."
         ]
       ],
       "metaDesc": "Canada GIC explained: What it is, how much you need, where to open one, and why it's mandatory for student visa 2026."
@@ -22700,7 +22700,7 @@
               [
                 "Canada (SDS)",
                 "Insufficient GIC or funds",
-                "CAD 20635 in GIC",
+                "CAD 22895 in GIC",
                 "Clear connection to course",
                 "IELTS 6.0"
               ],
@@ -22734,7 +22734,7 @@
         },
         {
           "h": "Canada Study Permit Rejection: Top Reasons and How to Reapply",
-          "body": "Canada has a streamlined SDS (Student Direct Stream) program for Indians but is still rejective if documentation is weak.\n\nReason: GIC missing or insufficient amount. You applied for SDS but did not have a GIC or the amount was below CAD 20635.\n\nHow to fix: Open a GIC immediately with ICICI Bank Canada, SBI Canada, or another provider. Deposit the full required amount. Get the GIC certificate and reapply with it as proof of funds.\n\nReason: Weak connection between previous education and new program. You studied commerce but are applying for a master's in computer science.\n\nHow to fix: Write a detailed letter explaining your career transition. Include your work experience letter, projects you have worked on, and how the Master's supports your career goals."
+          "body": "Canada has a streamlined SDS (Student Direct Stream) program for Indians but is still rejective if documentation is weak.\n\nReason: GIC missing or insufficient amount. You applied for SDS but did not have a GIC or the amount was below CAD 22895.\n\nHow to fix: Open a GIC immediately with ICICI Bank Canada, SBI Canada, or another provider. Deposit the full required amount. Get the GIC certificate and reapply with it as proof of funds.\n\nReason: Weak connection between previous education and new program. You studied commerce but are applying for a master's in computer science.\n\nHow to fix: Write a detailed letter explaining your career transition. Include your work experience letter, projects you have worked on, and how the Master's supports your career goals."
         },
         {
           "h": "UK Student Visa Rejection: Top Reasons and How to Reapply",
