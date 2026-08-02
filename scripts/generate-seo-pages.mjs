@@ -930,6 +930,10 @@ const COUNTRY_UNIS = {
     unis: ["National University of Singapore", "Nanyang Technological University", "Singapore Management University"] },
   netherlands: { name: "Netherlands", flag: "🇳🇱", ielts: "6.5", fee: "€15,000–20,000/yr", intake: "September",
     unis: ["Delft University of Technology", "University of Amsterdam", "Eindhoven University of Technology", "Utrecht University"] },
+  switzerland: { name: "Switzerland", flag: "🇨🇭", ielts: "7.0", fee: "≈ CHF 1,500/yr (public) — world-class at near-free tuition", intake: "September, February",
+    unis: ["ETH Zurich", "EPFL (Lausanne)", "University of Zurich", "University of Geneva", "University of Bern", "University of Basel"] },
+  "hong-kong": { name: "Hong Kong", flag: "🇭🇰", ielts: "6.0–6.5", fee: "≈ HKD 170,000–210,000/yr (~US$22,000–27,000)", intake: "September",
+    unis: ["University of Hong Kong (HKU)", "HKUST", "Chinese University of Hong Kong (CUHK)", "City University of Hong Kong", "Hong Kong Polytechnic University"] },
 };
 function countryUniPage(id) {
   const d = COUNTRY_UNIS[id];
