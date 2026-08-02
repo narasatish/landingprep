@@ -13083,7 +13083,7 @@
       "sections": [
         {
           "h": "Why a Documents Checklist Matters",
-          "body": "A single missing document can delay your visa by weeks or trigger a rejection. Visa officers review hundreds of applications, and they approve or reject based on what's in your file—no second chances.\n\nEach country has its own requirements. USA needs an I-20, Canada needs an LOA, UK needs a CAS. Skip the wrong document, and you reapply from scratch (losing fees and time).\n\nThis guide walks through every country's requirements, what to prepare, where to get documents, and a master checklist to print and track."
+          "body": "**Want an interactive version?** Use our free [Student-Visa Document Checklist tool](/tools/student-visa-document-checklist/) to tick off every document for your country as you gather it — this article is the detailed read-through behind that tool.\n\nA single missing document can delay your visa by weeks or trigger a rejection. Visa officers review hundreds of applications, and they approve or reject based on what's in your file—no second chances.\n\nEach country has its own requirements. USA needs an I-20, Canada needs an LOA, UK needs a CAS. Skip the wrong document, and you reapply from scratch (losing fees and time).\n\nThis guide walks through every country's requirements, what to prepare, where to get documents, and a master checklist to print and track."
         },
         {
           "h": "Universal Documents Needed for ALL Countries",

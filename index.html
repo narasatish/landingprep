@@ -326,8 +326,8 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=387" />
-  <link rel="stylesheet" href="pro.css?v=387" />
+  <link rel="stylesheet" href="theme.css?v=388" />
+  <link rel="stylesheet" href="pro.css?v=388" />
 </head>
 <body>
   <!-- #root holds a real, crawlable homepage fallback in the raw HTML. React
@@ -358,9 +358,18 @@
         <li><a href="/study-abroad-funding-facts-2026/">Study-abroad funding facts 2026 (proof of funds by country)</a></li>
         <li><a href="/eligibility/">English score requirements by country</a></li>
       </ul>
+      <h2>Study-abroad country guides</h2>
+      <p>Complete 2026 guides for every major destination — universities, admission, real costs, the student visa, working while you study and staying on after graduation:</p>
+      <ul>
+        <li><a href="/study-in-germany/">Study in Germany</a> (free public universities) &middot; <a href="/study-in-canada/">Study in Canada</a> (GIC &amp; PGWP) &middot; <a href="/study-in-uk/">Study in the UK</a> (Graduate Route)</li>
+        <li><a href="/study-in-usa/">Study in the USA</a> (F-1 &amp; OPT) &middot; <a href="/study-in-australia/">Study in Australia</a> (485 visa) &middot; <a href="/study-in-switzerland/">Study in Switzerland</a> (near-free tuition)</li>
+        <li><a href="/study-in-sweden/">Study in Sweden</a> (English-taught Master's) &middot; <a href="/study-in-hong-kong/">Study in Hong Kong</a> (IANG 24-month stay-back)</li>
+      </ul>
       <h2>Free tools &amp; guides</h2>
       <ul>
-        <li><a href="/tools/english-test-score-converter/">IELTS ↔ TOEFL ↔ PTE score converter</a></li>
+        <li><a href="/tools/english-test-score-converter/">IELTS ↔ TOEFL ↔ PTE score converter</a> &middot; <a href="/tools/student-visa-document-checklist/">Student-visa document checklist</a></li>
+        <li><a href="/gmat-quant-formulas/">GMAT Quant formula sheet</a> &middot; <a href="/ielts-band-7/">How to get IELTS Band 7</a></li>
+        <li><a href="/blog/germany-blocked-account-2026-guide/">Germany blocked account 2026 guide</a> &middot; <a href="/blog/gic-account-canada-2026-guide/">Canada GIC account 2026 guide</a></li>
         <li><a href="/blog/">Study-abroad &amp; exam blog</a> &middot; <a href="/about/">About LandingPrep</a></li>
       </ul>
       <h2>Frequently asked questions</h2>
@@ -377,8 +386,8 @@
 
   <!-- React 18.3.1 PRODUCTION (minified), SELF-HOSTED: same-origin load avoids a third-party
        DNS+TLS handshake on first paint → faster LCP, and it's precached by the service worker. -->
-  <script src="vendor/react.production.min.js?v=387"></script>
-  <script src="vendor/react-dom.production.min.js?v=387"></script>
+  <script src="vendor/react.production.min.js?v=388"></script>
+  <script src="vendor/react-dom.production.min.js?v=388"></script>
   <!-- Failover: if the local copy ever fails to define React, boot from unpkg, then jsdelivr. -->
   <script>
     if (!window.React) document.write('<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"><\/script>');
@@ -388,7 +397,7 @@
   </script>
 
   <!-- Data layer -->
-  <script defer src="app-bundle.js?v=387"></script>
+  <script defer src="app-bundle.js?v=388"></script>
   <!-- data-questions.js (~142 KB) is lazy-loaded with the test runner via MockTestGate when a mock starts -->
 
   <!-- Auth + Smart Tutor + Chatbot (must load before screens) -->
