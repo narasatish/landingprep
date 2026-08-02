@@ -1186,7 +1186,7 @@ function blogPage(a) {
   // over the raw excerpt, which is longer and gets truncated mid-thought in SERPs.
   const desc = a.metaDesc || a.excerpt.slice(0, 230);
   const kw = a.kw || (a.tag + ", study abroad, " + a.title.toLowerCase());
-  const isHowTo = /^how-to-/.test(a.id) || /^how to /i.test(a.title);
+  const isHowTo = a.howTo === true || /^how-to-/.test(a.id) || /^how to /i.test(a.title);
   // Time-boxed / trending posts: set a.expires = "YYYY-MM-DD". Once it passes, the
   // post auto-noindexes + drops from the sitemap (page stays reachable, so no 404s
   // and no broken backlinks) — stale trend content never accumulates as domain-quality
@@ -1200,8 +1200,14 @@ function blogPage(a) {
   const faqs = Array.isArray(a.faqs) ? a.faqs.map((f) => Array.isArray(f) ? { q: f[0], a: f[1] } : f).filter((f) => f && f.q && f.a) : [];
   // AEO: a "Quick answer" box that LLMs + featured snippets lift verbatim (the first
   // ~2 sentences that directly answer the title). Auto-derived from section 1.
-  const qaSrc = ((a.sections[0] && a.sections[0].body) || a.excerpt || "").replace(/\s+/g, " ").trim();
-  let qa = ""; for (const s of qaSrc.split(/(?<=[.!?])\s+/)) { if (qa && (qa + " " + s).length > 340) break; qa += (qa ? " " : "") + s; }
+  // A hand-tuned a.answer (figure-first, matches the exact head query) is preferred for
+  // AEO/AI-Overview extraction; otherwise auto-derive from section 1.
+  let qa;
+  if (a.answer) { qa = String(a.answer).replace(/\s+/g, " ").trim(); }
+  else {
+    const qaSrc = ((a.sections[0] && a.sections[0].body) || a.excerpt || "").replace(/\s+/g, " ").trim();
+    qa = ""; for (const s of qaSrc.split(/(?<=[.!?])\s+/)) { if (qa && (qa + " " + s).length > 340) break; qa += (qa ? " " : "") + s; }
+  }
   const qaBlock = qa ? `<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 6px"><strong style="color:#4338ca">⚡ Quick answer:</strong> ${esc(qa)}</div>` : "";
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/#/blog">Blog</a> › ${esc(a.tag)}</p>
@@ -5160,12 +5166,13 @@ function hubRelated(kw, title) {
   return `<section class="related-articles"><h2>Related articles</h2><ul class="rel-list">${ranked.map((p) => `<li><a href="/blog/${p.id}/">${esc(p.title)}</a></li>`).join("")}</ul></section>`;
 }
 
-function contentHub({ path, title, desc, kw, lead, sections, faqs, related }) {
+function contentHub({ path, title, desc, kw, lead, sections, faqs, related, topHtml }) {
   const secHtml = sections.map((s) => `<div class="card"><h2>${esc(s.h)}</h2><p>${esc(s.body)}</p></div>`).join("");
   const inner = `
 <p class="crumb"><a href="/">Home</a> › ${esc(title)}</p>
 <section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">No signup</span></div>
 <h1>${esc(title)}</h1><p class="lead">${esc(lead || desc)}</p></section>
+${topHtml || ""}
 ${secHtml}
 ${faqs && faqs.length ? faqBlock(faqs) : ""}
 ${hubRelated(kw, title)}
@@ -5614,6 +5621,16 @@ const CONTENT_HUBS = [
     desc: "Free GMAT Focus Quant formula sheet: every essential GMAT math formula for algebra, geometry, arithmetic and statistics, grouped by topic with worked examples and when to use each.",
     kw: "gmat quant formulas, gmat math formulas, gmat formula sheet, gmat focus formulas, gmat formulas, gmat algebra geometry, gmat statistics, free gmat formula sheet, gmat india",
     lead: "GMAT Focus Quant tests business-school-level maths. This free formula sheet lists every formula you actually need, grouped by topic, with worked examples and tips on when to apply each one.",
+    topHtml: `<div class="card no-print" style="background:#eef2ff;border-left:4px solid #4f46e5"><p style="margin:0">📄 <strong>One-page GMAT Quant formula sheet</strong> — the reference below is print-ready. Click to download a clean one-pager: <button onclick="window.print()" style="margin-left:6px;background:#4f46e5;color:#fff;border:0;border-radius:8px;padding:8px 16px;font-size:14px;font-weight:700;cursor:pointer">🖨️ Print / Save as PDF</button></p></div>
+<style>@media print{body *{visibility:hidden!important}#gmat-formula-sheet,#gmat-formula-sheet *{visibility:visible!important}#gmat-formula-sheet{position:absolute;left:0;top:0;width:100%;border:none;box-shadow:none;padding:0}.no-print{display:none!important}}#gmat-formula-sheet h3{margin:14px 0 6px;font-size:15px;color:#4338ca}#gmat-formula-sheet ul{margin:0 0 4px;padding-left:18px}#gmat-formula-sheet li{margin:3px 0;font-size:14px}#gmat-formula-sheet .fs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:6px 24px}</style>
+<div class="card" id="gmat-formula-sheet"><h2 style="margin-top:0">GMAT Focus Quant — Formula Sheet (2026)</h2>
+<div class="fs-grid">
+<div><h3>Arithmetic</h3><ul><li>Percent change = ((New − Old) / Old) × 100</li><li>Compound interest: A = P(1 + r/n)^(nt)</li><li>Average = Sum / Count → Sum = Average × Count</li><li>Ratio / proportion: a/b = c/d</li></ul></div>
+<div><h3>Algebra</h3><ul><li>(a + b)² = a² + 2ab + b²</li><li>(a − b)² = a² − 2ab + b²</li><li>a² − b² = (a + b)(a − b)</li><li>Quadratic: x = (−b ± √(b² − 4ac)) / 2a</li></ul></div>
+<div><h3>Geometry</h3><ul><li>Circle: Area = πr², Circumference = 2πr</li><li>Triangle: Area = ½ × base × height</li><li>Pythagoras: a² + b² = c² (triples 3-4-5, 5-12-13)</li><li>Rectangle: Area = l × w</li><li>Box = l × w × h; Cylinder = πr²h</li></ul></div>
+<div><h3>Statistics, Probability &amp; Rate</h3><ul><li>Mean = Sum / Count</li><li>Probability = Favourable / Total</li><li>Independent events: P(A and B) = P(A) × P(B)</li><li>Speed = Distance / Time</li><li>Work rate = 1 / time</li></ul></div>
+</div>
+<p class="muted" style="margin:10px 0 0;font-size:13px">Keep this sheet beside you while you practise, then lock it in with a free <a href="/mock-test/gmat/">GMAT Focus mock test</a>.</p></div>`,
     sections: [
       { h: "The one-page GMAT Quant formula sheet", body: "Arithmetic: Percent change = ((New − Old) / Old) × 100; Compound interest A = P(1 + r/n)^(nt); Average = Sum / Count, so Sum = Average × Count. Algebra: (a + b)² = a² + 2ab + b²; (a − b)² = a² − 2ab + b²; a² − b² = (a + b)(a − b). Geometry: Circle Area = πr², Circumference = 2πr; Triangle Area = ½ × base × height; Rectangle Area = l × w; Box volume = l × w × h; Cylinder volume = πr²h; Pythagoras a² + b² = c² (triples 3-4-5, 5-12-13). Statistics: Mean = Sum / Count; Probability = Favourable / Total; independent events P(A and B) = P(A) × P(B); Speed = Distance / Time; Work rate = 1 / time. Keep this list beside you while you practise, then take a timed mock to lock it in." },
       { h: "GMAT Focus Quant section overview", body: "GMAT Focus Quant is one of three equally weighted sections (Quant, Verbal, Data Insights). It covers Problem Solving (choose the answer) and Data Sufficiency (decide if statements are sufficient to solve). Formulas help, but GMAT rewards problem-solving logic and estimation." },

@@ -13075,6 +13075,8 @@
     },
     {
       "id": "student-visa-documents-checklist",
+      "howTo": true,
+      "answer": "A student-visa documents checklist covers what every country requires: a valid passport, your university offer/acceptance letter, proof of funds, English-test scores, a statement of purpose, academic transcripts, and visa-specific forms (USA I-20, Canada LOA, UK CAS, Australia CoE). Requirements differ by country, so build a country-specific list and gather originals plus copies well before your appointment.",
       "tag": "Visa",
       "date": "2026",
       "title": "Student Visa Documents Checklist 2026: USA, Canada, UK, Australia, Germany & Ireland",
@@ -14368,6 +14370,8 @@
     },
     {
       "id": "gic-account-canada-2026-guide",
+      "howTo": true,
+      "answer": "A Canada GIC (Guaranteed Investment Certificate) for the SDS study-permit stream is about CAD 22,895 in 2026. You deposit it with a participating Canadian bank as proof of funds; after you arrive it is released to you in monthly instalments to cover living costs, and it earns interest (typically 4–5%) until maturity. Confirm the current amount with IRCC and your bank before applying.",
       "tag": "Funding",
       "date": "2026",
       "title": "GIC Account for Canada 2026: How Much You Need, Where to Open It & Why It's Required",
@@ -14624,6 +14628,8 @@
     },
     {
       "id": "germany-blocked-account-2026-guide",
+      "howTo": true,
+      "answer": "A German blocked account (Sperrkonto) needs about EUR 11,904 for 2026 — roughly EUR 992 per month — as proof of funds for a student visa. You open it before applying (common providers are Fintiba and Expatrio); after you arrive it releases about EUR 992 to you each month to cover living costs. Confirm the current figure with the German mission before you apply.",
       "tag": "Funding",
       "date": "2026",
       "title": "Germany Blocked Account Amount 2026: How Much You Need (EUR 11,904) & Best Providers",
