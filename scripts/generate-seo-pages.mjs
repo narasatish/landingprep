@@ -1772,7 +1772,7 @@ function proofOfFundsCalculatorPage() {
   // the funding-facts data study). "Last verified" is stamped on the page.
   const POF = [
     { id: "germany", flag: "🇩🇪", name: "Germany", cur: "EUR", base: 11904, months: 12, tuition: false, src: "https://www.auswaertiges-amt.de/en/sperrkonto-388600", how: "Blocked account (Sperrkonto): EUR 11,904 for the year, released to you at about EUR 992/month after you arrive. Tuition at public universities is usually near-zero." },
-    { id: "canada", flag: "🇨🇦", name: "Canada", cur: "CAD", base: 20635, months: 12, tuition: true, src: "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", how: "CAD 20,635 living-cost proof (commonly shown via a GIC, returned to you in instalments) PLUS your first-year tuition. The Student Direct Stream ended in Nov 2024 — everyone uses the regular stream now." },
+    { id: "canada", flag: "🇨🇦", name: "Canada", cur: "CAD", base: 22895, months: 12, tuition: true, src: "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", how: "CAD 22,895 living-cost proof (commonly shown via a GIC, returned to you in instalments) PLUS your first-year tuition. The Student Direct Stream ended in Nov 2024 — everyone uses the regular stream now." },
     { id: "uk-london", flag: "🇬🇧", name: "UK — London", cur: "GBP", monthly: 1529, months: 9, tuition: true, src: "https://www.gov.uk/student-visa/money", how: "Maintenance of GBP 1,529/month for up to 9 months, held 28 consecutive days before you apply, PLUS your first-year tuition (or the unpaid balance)." },
     { id: "uk-other", flag: "🇬🇧", name: "UK — outside London", cur: "GBP", monthly: 1171, months: 9, tuition: true, src: "https://www.gov.uk/student-visa/money", how: "Maintenance of GBP 1,171/month for up to 9 months, held 28 consecutive days before you apply, PLUS your first-year tuition (or the unpaid balance)." },
     { id: "australia", flag: "🇦🇺", name: "Australia", cur: "AUD", base: 29710, months: 12, tuition: true, src: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500", how: "AUD 29,710/year is the published living-cost benchmark; financial capacity is assessed case-by-case under the Genuine Student requirement. Add first-year tuition." },
@@ -1782,7 +1782,7 @@ function proofOfFundsCalculatorPage() {
   const opts = POF.map((c) => `<option value="${c.id}">${c.flag} ${esc(c.name)}</option>`).join("");
   const refRows = POF.map((c) => `<tr><td>${c.flag} ${esc(c.name)}</td><td>${c.monthly ? `${c.cur} ${c.monthly.toLocaleString()}/mo × up to ${c.months}` : (c.base ? `${c.cur} ${c.base.toLocaleString()}` : "Cost of attendance")}${c.tuition ? " + tuition" : ""}</td><td><a href="${c.src}" target="_blank" rel="nofollow noopener">official ↗</a></td></tr>`).join("");
   const faqs = [
-    { q: "How much money do I need to show for a student visa?", a: "It depends on the country. Germany needs about EUR 11,904 in a blocked account; Canada about CAD 20,635 plus first-year tuition; the UK GBP 1,171–1,529 per month for up to 9 months plus tuition; Australia around AUD 29,710 per year plus tuition; Ireland about EUR 10,000 plus tuition; the USA has no fixed figure — you prove your Form I-20 cost of attendance. Use the calculator above for your exact total, then confirm with the official authority." },
+    { q: "How much money do I need to show for a student visa?", a: "It depends on the country. Germany needs about EUR 11,904 in a blocked account; Canada about CAD 22,895 plus first-year tuition; the UK GBP 1,171–1,529 per month for up to 9 months plus tuition; Australia around AUD 29,710 per year plus tuition; Ireland about EUR 10,000 plus tuition; the USA has no fixed figure — you prove your Form I-20 cost of attendance. Use the calculator above for your exact total, then confirm with the official authority." },
     { q: "Does proof of funds include tuition?", a: "Usually yes for most countries — you show living costs AND your first-year tuition (or the unpaid balance). Germany's blocked account is the main exception, since public-university tuition there is typically near-zero." },
     { q: "Is the German blocked account or Canadian GIC a fee?", a: "No — both are your own money held as proof of funds. A German Sperrkonto releases about EUR 992 to you each month after arrival; a Canadian GIC is returned to you in instalments over your first year." },
     { q: "How current are these figures?", a: `They are checked against each government's official page (linked in the table) and were last verified on ${BUILD_DATE}. Proof-of-funds amounts change every year — always confirm the current figure on the official authority's site before you transfer money.` },
@@ -1834,7 +1834,7 @@ function proofOfFundsCalculatorPage() {
 <section class="hero"><div class="badges"><span class="badge">Free tool</span><span class="badge">Official sources</span><span class="badge">No signup</span></div>
 <h1>Student Visa Proof-of-Funds Calculator (2026)</h1>
 <p class="lead">Work out exactly how much money you must show for a student visa — living costs plus tuition — for Germany, Canada, the UK, Australia, Ireland and the USA. Free, instant, and checked against official government sources.</p></section>
-<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Proof of funds = the country's living-cost requirement (Germany EUR 11,904; Canada CAD 20,635; UK GBP 1,171–1,529/month × up to 9; Australia AUD 29,710; Ireland EUR 10,000) plus your first-year tuition (except Germany, where public-university tuition is near-zero). Pick your country below for the exact total.</div>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> Proof of funds = the country's living-cost requirement (Germany EUR 11,904; Canada CAD 22,895; UK GBP 1,171–1,529/month × up to 9; Australia AUD 29,710; Ireland EUR 10,000) plus your first-year tuition (except Germany, where public-university tuition is near-zero). Pick your country below for the exact total.</div>
 ${calc}
 <div class="card"><h2>Proof-of-funds requirement by country (2026)</h2>
 <table style="width:100%;border-collapse:collapse" class="uni-table"><thead><tr><th>Country</th><th>Living / base requirement</th><th>Source</th></tr></thead><tbody>${refRows}</tbody></table>
@@ -2585,10 +2585,11 @@ function linksPage() {
 
 function embedPage() {
   const path = `/embed/`;
-  const title = `Free Embeddable Study-Abroad Widgets — Score, GPA & Loan Tools`;
-  const desc = `Embed LandingPrep's free widgets on your site with one line of HTML: an IELTS↔TOEFL↔PTE score converter, a GPA (%↔CGPA↔4.0) converter, and an education-loan EMI calculator. Free forever, no signup.`;
-  const kw = `embed score converter, ielts toefl converter widget, gpa converter widget, education loan emi calculator widget, free study abroad widget, free education widget`;
+  const title = `Free Embeddable Study-Abroad Widgets — Proof of Funds, Score, GPA & Loan`;
+  const desc = `Embed LandingPrep's free widgets on your site with one line of HTML: a student-visa proof-of-funds checker by country, an IELTS↔TOEFL↔PTE score converter, a GPA (%↔CGPA↔4.0) converter, and an education-loan EMI calculator. Free forever, no signup.`;
+  const kw = `proof of funds widget, student visa funds by country, embed score converter, ielts toefl converter widget, gpa converter widget, education loan emi calculator widget, free study abroad widget, free education widget`;
   const WIDGETS = [
+    { slug: "proof-of-funds", h: 470, title: "Student Visa Proof-of-Funds by Country" },
     { slug: "score-converter", h: 360, title: "IELTS ↔ TOEFL ↔ PTE Score Converter" },
     { slug: "gpa-converter", h: 470, title: "GPA Converter — % ↔ CGPA ↔ US 4.0" },
     { slug: "loan-emi", h: 560, title: "Education Loan EMI Calculator" },
@@ -2771,7 +2772,7 @@ function fundingFactsPage() {
   const src = (url, label) => `<a href="${url}" target="_blank" rel="nofollow noopener">${label}</a>`;
   const funds = [
     ["🇩🇪 Germany", "EUR 11,904 / year (EUR 992 / month)", `Blocked account (Sperrkonto) — released to you monthly after arrival. ${src("https://www.auswaertiges-amt.de/en/sperrkonto-388600", "Federal Foreign Office ↗")}`],
-    ["🇨🇦 Canada", "CAD 20,635 (plus first-year tuition)", `Proof of funds for a study permit, commonly shown via a GIC (returned to you in instalments). The Student Direct Stream ended in November 2024 — all applicants now use the regular stream. ${src("https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", "IRCC ↗")}`],
+    ["🇨🇦 Canada", "CAD 22,895 (plus first-year tuition)", `Proof of funds for a study permit, commonly shown via a GIC (returned to you in instalments). The Student Direct Stream ended in November 2024 — all applicants now use the regular stream. ${src("https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", "IRCC ↗")}`],
     ["🇬🇧 UK", "GBP 1,529 / month (London) · GBP 1,171 / month (elsewhere), up to 9 months", `Maintenance funds held 28 consecutive days before you apply (UKVI). ${src("https://www.gov.uk/student-visa/money", "GOV.UK ↗")}`],
     ["🇦🇺 Australia", "AUD 29,710 / year (indicative living-cost benchmark)", `Financial capacity under the Genuine Student requirement — assessed case-by-case, no single fixed figure. ${src("https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500", "Home Affairs ↗")}`],
     ["🇮🇪 Ireland", "EUR 10,000 / year", `Proof of funds shown to immigration (ISD). ${src("https://www.irishimmigration.ie/coming-to-study-in-ireland/", "Irish Immigration Service ↗")}`],
@@ -2789,7 +2790,7 @@ function fundingFactsPage() {
   const fundsRows = funds.map((r) => `<tr><td style="${td}"><strong>${r[0]}</strong></td><td style="${td}">${r[1]}</td><td style="${td}">${r[2]}</td></tr>`).join("");
   const workRows = work.map((r) => `<tr><td style="${td}"><strong>${r[0]}</strong></td><td style="${td}">${r[1]}</td><td style="${td}">${r[2]}</td></tr>`).join("");
   const faqs = [
-    { q: "How much money do I need to show for a student visa in 2026?", a: "It varies by country. Germany requires about EUR 11,904 per year in a blocked account; Canada about CAD 20,635 in proof of funds (commonly a GIC); the UK about GBP 1,171–1,529 per month of maintenance for up to 9 months; Australia around AUD 29,710 per year as an indicative benchmark; Ireland about EUR 10,000 per year. The USA has no fixed figure — you prove the first-year cost of attendance for your university. Always confirm the current amount with the official authority before applying." },
+    { q: "How much money do I need to show for a student visa in 2026?", a: "It varies by country. Germany requires about EUR 11,904 per year in a blocked account; Canada about CAD 22,895 in proof of funds (commonly a GIC); the UK about GBP 1,171–1,529 per month of maintenance for up to 9 months; Australia around AUD 29,710 per year as an indicative benchmark; Ireland about EUR 10,000 per year. The USA has no fixed figure — you prove the first-year cost of attendance for your university. Always confirm the current amount with the official authority before applying." },
     { q: "Which country gives the longest post-study work visa?", a: "Canada's PGWP (up to 3 years), Australia's subclass 485 (2–4 years) and New Zealand's post-study work visa (up to 3 years) are the longest. The UK Graduate Route is 2 years (3 for a PhD) for applications up to the end of 2026, dropping to 18 months from January 2027; US OPT is 12 months plus 24 months for STEM graduates." },
     { q: "Is the German blocked account or Canadian GIC refundable?", a: "Both are your own money. A German Sperrkonto releases roughly EUR 992 to you each month once you arrive and register; the Canadian GIC is returned to you in instalments over your first year. Neither is a fee — they are proof of funds." },
     { q: "Do these funding figures change?", a: "Yes — most countries update proof-of-funds amounts every year, and exchange rates move. Treat the figures here as indicative 2026 values and confirm the exact current requirement on the official immigration website before you apply." },
@@ -2799,7 +2800,7 @@ function fundingFactsPage() {
 <section class="hero"><div class="badges"><span class="badge">Free data study</span><span class="badge">2026</span><span class="badge">Cite freely</span></div>
 <h1>Study-Abroad Funding Facts 2026: Proof of Funds &amp; Post-Study Work by Country</h1>
 <p class="lead">A free, citable reference comparing how much money you must show for a student visa, and how long you can work after graduating, across the top study destinations.</p></section>
-<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> In 2026, proof-of-funds runs from about <strong>EUR 10,000/year (Ireland)</strong> and <strong>EUR 11,904 (Germany Sperrkonto)</strong> to <strong>CAD 20,635 (Canada GIC)</strong> and <strong>AUD 29,710 (Australia)</strong>. The longest post-study work rights are <strong>Canada PGWP (up to 3 years)</strong> and <strong>Australia 485 (2–4 years)</strong>. Figures are indicative — confirm with the official authority.</div>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> In 2026, proof-of-funds runs from about <strong>EUR 10,000/year (Ireland)</strong> and <strong>EUR 11,904 (Germany Sperrkonto)</strong> to <strong>CAD 22,895 (Canada GIC)</strong> and <strong>AUD 29,710 (Australia)</strong>. The longest post-study work rights are <strong>Canada PGWP (up to 3 years)</strong> and <strong>Australia 485 (2–4 years)</strong>. Figures are indicative — confirm with the official authority.</div>
 
 <div class="card"><h2>Proof of funds / blocked-account requirement by country (2026)</h2>
 <table style="${tStyle}"><thead><tr><th style="${th}">Country</th><th style="${th}">Amount to show</th><th style="${th}">How it works</th></tr></thead><tbody>${fundsRows}</tbody></table>
@@ -2828,7 +2829,7 @@ ${relatedGrid([
 ])}`;
   emit(path, head({
     title: `Study-Abroad Funding Facts 2026: Proof of Funds & Post-Study Work by Country | ${BRAND}`,
-    desc: `Free 2026 data study: how much money to show for a student visa (Germany EUR 11,904, Canada CAD 20,635, UK, Australia, Ireland, USA) and post-study work visa length by country. Citable reference.`,
+    desc: `Free 2026 data study: how much money to show for a student visa (Germany EUR 11,904, Canada CAD 22,895, UK, Australia, Ireland, USA) and post-study work visa length by country. Citable reference.`,
     path,
     kw: "proof of funds student visa 2026, blocked account amount by country, post study work visa by country, how much money for student visa, germany sperrkonto canada gic, study abroad funding requirements",
     jsonLdBlocks: [
@@ -3121,7 +3122,7 @@ function canadaPillarPage() {
   const path = `/study-in-canada/`;
   const IRCC = "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html";
   const faqs = [
-    { q: "How much money do I need to study in Canada in 2026?", a: "You must show living costs of about CAD 20,635 for a single applicant (set by IRCC, adjusted yearly), plus your first-year tuition and travel. Many students show the living-cost portion via a GIC (Guaranteed Investment Certificate), which is returned to them in instalments after arrival. Use the free proof-of-funds calculator for your exact total." },
+    { q: "How much money do I need to study in Canada in 2026?", a: "You must show living costs of about CAD 22,895 for a single applicant (set by IRCC, adjusted yearly), plus your first-year tuition and travel. Many students show the living-cost portion via a GIC (Guaranteed Investment Certificate), which is returned to them in instalments after arrival. Use the free proof-of-funds calculator for your exact total." },
     { q: "Did the Student Direct Stream (SDS) end?", a: "Yes. The SDS fast-track ended on 8 November 2024. All students now apply through the regular study-permit stream, which still accepts a GIC as proof of funds but is not the old two-week fast-track. Plan for standard processing times." },
     { q: "Do I need a Provincial Attestation Letter (PAL) for Canada?", a: "Most undergraduate and college students do — Canada caps international study permits and requires a Provincial/Territorial Attestation Letter (PAL/TAL) with the application. As of 1 January 2026, master's and doctoral students at public designated learning institutions are exempt from the PAL/TAL requirement. Always confirm your category with the official IRCC page." },
     { q: "How many hours can I work while studying in Canada?", a: "Up to 24 hours per week off campus during academic sessions (this is the current permanent rule, raised from 20 hours), and unlimited hours during scheduled breaks such as summer and winter holidays." },
@@ -3133,7 +3134,7 @@ function canadaPillarPage() {
 <h1>Study in Canada 2026: The Complete Guide for International Students</h1>
 <p class="lead">Canada offers strong universities, generous work rights and a clear study-to-PR pathway — but the rules changed a lot in 2024–2026. This guide covers the whole journey (costs, proof of funds, the study-permit cap and PAL, the visa, working while studying and the PGWP-to-PR route) and links the detailed resource for each stage, all verified against IRCC.</p>
 <a class="cta" href="/tools/proof-of-funds-calculator/">▶ Calculate your Canada proof of funds (free)</a></section>
-<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> For 2026 you need about <strong>CAD 20,635</strong> in living-cost proof (often via a <strong>GIC</strong>) plus first-year tuition; the <strong>SDS fast-track ended in Nov 2024</strong>; most undergrads need a <strong>Provincial Attestation Letter (PAL)</strong> — master's/PhD are exempt from Jan 2026; you can work <strong>24 hours/week</strong>; and the <strong>PGWP</strong> (8 months–3 years) leads to PR via Express Entry.</div>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> For 2026 you need about <strong>CAD 22,895</strong> in living-cost proof (often via a <strong>GIC</strong>) plus first-year tuition; the <strong>SDS fast-track ended in Nov 2024</strong>; most undergrads need a <strong>Provincial Attestation Letter (PAL)</strong> — master's/PhD are exempt from Jan 2026; you can work <strong>24 hours/week</strong>; and the <strong>PGWP</strong> (8 months–3 years) leads to PR via Express Entry.</div>
 
 <div class="card"><h2>Why study in Canada?</h2><ul class="bcheck">
 <li><strong>Respected universities</strong> (Toronto, UBC, McGill, Waterloo, Alberta…) with strong research and co-op/work-integrated learning.</li>
@@ -3143,7 +3144,7 @@ function canadaPillarPage() {
 </ul></div>
 
 <div class="card"><h2>What it costs &amp; proof of funds</h2>
-<p>Budget for <strong>tuition</strong> (roughly CAD 15,000–40,000/year for international students, by course and university) plus <strong>living costs</strong>. For the study permit you must show about <strong>CAD 20,635</strong> for a single applicant (IRCC's living-cost figure, updated yearly) <strong>plus your first-year tuition</strong>. Many students show the living-cost portion through a <strong>GIC</strong>, returned to them in instalments after arrival. See the <a href="/blog/gic-account-canada-2026-guide/">Canada GIC guide</a>, estimate your total with the <a href="/tools/proof-of-funds-calculator/">proof-of-funds calculator</a>, and the <a href="/blog/cost-of-studying-in-canada-for-indians-2026/">cost of studying in Canada</a>.</p></div>
+<p>Budget for <strong>tuition</strong> (roughly CAD 15,000–40,000/year for international students, by course and university) plus <strong>living costs</strong>. For the study permit you must show about <strong>CAD 22,895</strong> for a single applicant (IRCC's living-cost figure, updated yearly) <strong>plus your first-year tuition</strong>. Many students show the living-cost portion through a <strong>GIC</strong>, returned to them in instalments after arrival. See the <a href="/blog/gic-account-canada-2026-guide/">Canada GIC guide</a>, estimate your total with the <a href="/tools/proof-of-funds-calculator/">proof-of-funds calculator</a>, and the <a href="/blog/cost-of-studying-in-canada-for-indians-2026/">cost of studying in Canada</a>.</p></div>
 
 <div class="card"><h2>The 2024–2026 rule changes you must know</h2><ul class="bcheck">
 <li><strong>SDS ended (Nov 2024):</strong> everyone now uses the regular study-permit stream — no more two-week fast-track.</li>
@@ -3176,7 +3177,7 @@ ${relatedGrid([
 ])}`;
   emit(path, head({
     title: `Study in Canada 2026: Complete Guide (Costs, PAL, PGWP, PR) | ${BRAND}`,
-    desc: `Free complete guide to studying in Canada 2026: proof of funds (CAD 20,635 + tuition, GIC), the study-permit cap & PAL, the SDS-ended rules, 24 hrs/week work, and the PGWP-to-PR pathway. Verified against IRCC.`,
+    desc: `Free complete guide to studying in Canada 2026: proof of funds (CAD 22,895 + tuition, GIC), the study-permit cap & PAL, the SDS-ended rules, 24 hrs/week work, and the PGWP-to-PR pathway. Verified against IRCC.`,
     path,
     kw: "study in canada, study in canada for international students, canada student visa 2026, canada study permit requirements, canada proof of funds gic, provincial attestation letter pal, canada pgwp 2026, study in canada from india, cost of studying in canada",
     jsonLdBlocks: [
@@ -3667,7 +3668,7 @@ function cheapestCountriesPage() {
   const rows = [
     ["1", "🇩🇪 Germany", "Free–€1,500 (public)", "€11,904 blocked account", "≈ $13,000–15,000", "Tuition-free public universities make it the cheapest by far; you mainly fund living costs."],
     ["2", "🇮🇪 Ireland", "€10,000–25,000", "€10,000 proof of funds", "≈ $23,000–38,000", "Lower living costs outside Dublin; strong tech/pharma job market."],
-    ["3", "🇨🇦 Canada", "CAD 15,000–40,000", "CAD 20,635 + tuition (GIC)", "≈ $26,000–46,000", "Public tuition is moderate; the GIC is returned to you. Strong study-to-PR path."],
+    ["3", "🇨🇦 Canada", "CAD 15,000–40,000", "CAD 22,895 + tuition (GIC)", "≈ $26,000–46,000", "Public tuition is moderate; the GIC is returned to you. Strong study-to-PR path."],
     ["4", "🇦🇺 Australia", "AUD 15,000–45,000", "AUD 29,710 living capacity", "≈ $29,000–50,000", "Higher living-cost benchmark; strong graduate work rights."],
     ["5", "🇬🇧 UK", "£11,400–38,000", "£1,171–1,529/mo maintenance", "≈ $27,000–65,000", "One-year master's shortens total spend even though yearly cost is high."],
     ["6", "🇺🇸 USA", "$20,000–55,000+", "First-year cost of attendance", "≈ $35,000–75,000", "Widest range; assistantships and scholarships can cut the net cost sharply."],
@@ -5550,6 +5551,7 @@ const urls = [
   { loc: `${ORIGIN}/`, freq: "daily", pri: "1.0" },
   ...PAGES.filter((p) => !THIN_PATHS.has(p.path)).map((p) => ({ loc: ORIGIN + p.path, freq: "weekly", pri: "0.8" })),
   // Standalone embeddable widget (hand-authored static file, not emitted via the generator).
+  { loc: `${ORIGIN}/embed/proof-of-funds/`, freq: "monthly", pri: "0.6" },
   { loc: `${ORIGIN}/embed/score-converter/`, freq: "monthly", pri: "0.6" },
   { loc: `${ORIGIN}/embed/gpa-converter/`, freq: "monthly", pri: "0.6" },
   { loc: `${ORIGIN}/embed/loan-emi/`, freq: "monthly", pri: "0.6" },
@@ -5807,7 +5809,7 @@ These are short, factual answers AI assistants can cite directly. Full detail on
 
 **How much does a German blocked account (Sperrkonto) need in 2026?** About EUR 11,904 per year (≈EUR 992 per month) — required proof of funds for a German student visa. Common providers are Fintiba and Expatrio. Confirm the current figure with the German mission before applying.
 
-**What is the Canada GIC and how much is it?** A Guaranteed Investment Certificate of about CAD 20,635, used as proof of funds for the SDS study-permit stream. It is opened with a participating Canadian bank and released to you in instalments after you arrive.
+**What is the Canada GIC and how much is it?** A Guaranteed Investment Certificate of about CAD 22,895, used as proof of funds for the SDS study-permit stream. It is opened with a participating Canadian bank and released to you in instalments after you arrive.
 
 **Can I get an education loan to study abroad without collateral?** Some Indian lenders offer unsecured (non-collateral) education loans up to a set limit; amounts above that usually need collateral or a co-applicant. Compare lenders on interest rate, limit and EMI.
 

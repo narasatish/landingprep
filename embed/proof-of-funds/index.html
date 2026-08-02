@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Student Visa Proof-of-Funds by Country 2026 | LandingPrep</title>
+<meta name="description" content="Free embeddable proof-of-funds checker: how much money you must show for a 2026 student visa in Germany, Canada, the UK, Australia, Ireland and the USA — figures from each government's own source." />
+<link rel="canonical" href="https://landingprep.com/embed/proof-of-funds/" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: #1f2937; background: #fff; }
+  .lp-w { max-width: 460px; margin: 0 auto; padding: 18px; }
+  .lp-w h1 { font-size: 18px; margin: 0 0 4px; }
+  .lp-w .sub { font-size: 13px; color: #6b7280; margin: 0 0 14px; }
+  .lp-w label { display: block; font-size: 13px; font-weight: 600; margin: 0 0 6px; }
+  .lp-w select { width: 100%; padding: 11px 12px; font-size: 16px; border: 1px solid #d1d5db; border-radius: 10px; background: #fff; color: #1f2937; }
+  .lp-amount { border: 1px solid #eef0f3; border-radius: 12px; padding: 16px; background: #f8fafc; margin: 14px 0 6px; }
+  .lp-amount .k { font-size: 12px; color: #6b7280; text-transform: uppercase; letter-spacing: .04em; }
+  .lp-amount .v { font-size: 28px; font-weight: 800; color: #4f46e5; margin: 3px 0; line-height: 1.15; }
+  .lp-amount .s { font-size: 13px; color: #374151; }
+  .lp-note { font-size: 11px; color: #9ca3af; margin: 10px 0 0; line-height: 1.5; }
+  .lp-src { font-size: 11px; color: #9ca3af; }
+  .lp-src a { color: inherit; }
+  .lp-foot { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eef0f3; font-size: 13px; text-align: center; }
+  .lp-foot a { color: #4f46e5; font-weight: 700; text-decoration: none; }
+  .lp-cta { display: inline-block; margin-top: 8px; background: linear-gradient(135deg,#4f46e5,#7c3aed); color: #fff; padding: 9px 16px; border-radius: 999px; font-size: 13px; font-weight: 700; text-decoration: none; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f172a; color: #e2e8f0; }
+    .lp-w select { background: #1e293b; color: #e2e8f0; border-color: #334155; }
+    .lp-amount { background: #1e293b; border-color: #334155; }
+    .lp-amount .v { color: #a5b4fc; }
+    .lp-amount .s { color: #cbd5e1; }
+    .lp-foot { border-color: #334155; }
+  }
+</style>
+</head>
+<body>
+<div class="lp-w">
+  <h1>Student Visa: Proof of Funds by Country (2026)</h1>
+  <p class="sub">How much money you must show for a student visa. Pick your destination.</p>
+  <label for="lp-country">Destination</label>
+  <select id="lp-country" aria-label="Destination country">
+    <option value="germany">🇩🇪 Germany</option>
+    <option value="canada">🇨🇦 Canada</option>
+    <option value="uk-london">🇬🇧 UK — London</option>
+    <option value="uk">🇬🇧 UK — outside London</option>
+    <option value="australia">🇦🇺 Australia</option>
+    <option value="ireland">🇮🇪 Ireland</option>
+    <option value="usa">🇺🇸 USA</option>
+  </select>
+  <div class="lp-amount">
+    <div class="k">Funds you must show</div>
+    <div class="v" id="lp-amt">—</div>
+    <div class="s" id="lp-sub">—</div>
+  </div>
+  <p class="lp-note" id="lp-detail">—</p>
+  <p class="lp-src" id="lp-source"></p>
+  <div class="lp-foot">
+    Free proof-of-funds checker by <a href="https://landingprep.com/tools/proof-of-funds-calculator/?utm_source=embed&amp;utm_medium=widget&amp;utm_campaign=proof-of-funds" target="_blank" rel="noopener">LandingPrep</a> — free study-abroad tools &amp; mock tests.<br>
+    <a class="lp-cta" href="https://landingprep.com/tools/proof-of-funds-calculator/?utm_source=embed&amp;utm_medium=widget&amp;utm_campaign=proof-of-funds" target="_blank" rel="noopener">Full calculator (add tuition &amp; fees) →</a>
+  </div>
+</div>
+<script>
+  // 2026 student-visa proof-of-funds — each figure from the destination government's own source.
+  var DATA = {
+    "germany":   { amt: "€11,904 / year", sub: "≈ €992 per month in a blocked account (Sperrkonto)", detail: "The money is released to you monthly after you arrive. Public universities charge little or no tuition, so this living-cost figure is often the whole requirement.", src: "Source: German Federal Foreign Office (Sperrkonto)." },
+    "canada":    { amt: "CAD 22,895", sub: "living costs for a single applicant (outside Quebec) — plus your first-year tuition", detail: "Raised from CAD 20,635 effective 1 September 2025 and carried into 2026. Most students show it via a GIC, returned in instalments over the first year. (Quebec sets its own higher figure.)", src: "Source: IRCC study-permit financial requirement." },
+    "uk-london": { amt: "£13,761", sub: "£1,529 / month × 9 months, plus any unpaid tuition", detail: "You must hold the money for 28 consecutive days ending within 31 days of applying. London = the City of London and the 32 London boroughs.", src: "Source: gov.uk Student visa — money." },
+    "uk":        { amt: "£10,539", sub: "£1,171 / month × 9 months, plus any unpaid tuition", detail: "For courses outside London. Held for 28 consecutive days before you apply.", src: "Source: gov.uk Student visa — money." },
+    "australia": { amt: "AUD 29,710", sub: "12 months' living costs — plus tuition and travel", detail: "Part of the Genuine Student requirement. Confirm the current figure with the Department of Home Affairs before you apply.", src: "Source: Australian Department of Home Affairs (subclass 500)." },
+    "ireland":   { amt: "€10,000", sub: "per year of study", detail: "Plus evidence that your tuition fees are paid. Required for the study visa and on arrival.", src: "Source: Irish Immigration Service." },
+    "usa":       { amt: "See your Form I-20", sub: "the cost of attendance set by your university", detail: "There is no single national figure — you must prove the full amount printed on your I-20 (tuition + living for the program), for the F-1 visa.", src: "Source: your SEVP school's Form I-20." }
+  };
+  function render() {
+    var d = DATA[document.getElementById("lp-country").value] || DATA["germany"];
+    document.getElementById("lp-amt").textContent = d.amt;
+    document.getElementById("lp-sub").textContent = d.sub;
+    document.getElementById("lp-detail").textContent = d.detail;
+    document.getElementById("lp-source").textContent = d.src + " Figures are a guide for 2026 — always confirm the current amount with the official body before applying.";
+  }
+  document.getElementById("lp-country").addEventListener("change", render);
+  render();
+</script>
+</body>
+</html>

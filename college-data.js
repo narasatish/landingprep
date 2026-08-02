@@ -1213,7 +1213,7 @@
     },
     Canada: {
       psw: "PGWP: up to 3 years",
-      living: "CAD 12,000\u201318,000/yr (CAD 20,635 for visa)",
+      living: "CAD 12,000\u201318,000/yr (CAD 22,895 for visa)",
       visa: "Study permit",
       work: "24 hrs/week off-campus during term",
       dependents: "Spouse open work permit available",
