@@ -64,3 +64,25 @@ if (errors.length) {
   console.error("[precompile] FAILURES:\n  " + errors.join("\n  "));
   process.exit(1);
 }
+
+// ── Guardrail (added after a v385→v388 incident where college-data.js and
+// blog-data.js were 404 on production for several deploys). These modules are
+// LAZY-loaded (not <script src> in index.html), so they are only re-transpiled
+// when their .js sibling already exists (see the sibling rule above). If a
+// sibling is ever deleted (e.g. a stray `rm` to dodge a Windows/OneDrive file
+// lock), precompile silently skips it, `git add -A` stages the deletion, and
+// because Render serves committed files as-is (no build step), the file 404s on
+// the live site — taking down the College Predictor / in-app blog. Fail LOUD
+// here so it can never ship silently again.
+const REQUIRED_LAZY_OUTPUTS = ["college-data.js", "blog-data.js", "seo-pages.js"];
+const missingCritical = REQUIRED_LAZY_OUTPUTS.filter((f) => !existsSync(path.join(root, f)));
+if (missingCritical.length) {
+  console.error(
+    "[precompile] ❌ CRITICAL: required lazy-loaded output(s) missing after transpile: " +
+    missingCritical.join(", ") +
+    "\n  These are served as-is on production (Render has no build step) and would 404." +
+    "\n  Do NOT `rm` these .js files before building — they only regenerate when the sibling exists." +
+    "\n  Recover: run `npm run precompile` with the .js present, or transpile the .jsx directly."
+  );
+  process.exit(1);
+}

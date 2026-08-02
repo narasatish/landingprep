@@ -118,7 +118,7 @@
       ["Which country is best for international students?", "There's no single best — it depends on your budget, field and PR goals. The USA leads on research and salaries, Canada and Australia on clear PR pathways, the UK on a fast 1-year master's, and Germany on near-free tuition. Open the Country Guide tab to compare visa-success rates, costs and immigration routes."],
     ]},
     { stage: "🎯 Find course & university", qa: [
-      ["How do I shortlist universities?", "Build a balanced list of Safe, Target and Reach schools using your test score, GPA and budget — our Profile Evaluation and College Predictor do this automatically across 99 universities, with fees, requirements and acceptance rates."],
+      ["How do I shortlist universities?", "Build a balanced list of Safe, Target and Reach schools using your test score, GPA and budget — our Profile Evaluation and College Predictor do this automatically across 110 universities in 15 countries, with fees, requirements and acceptance rates."],
       ["Should I pick the university or the course first?", "Pick the course first. A program that matches your goals — with the right specialisations, faculty and capstone — matters more than rank alone. Use the Course Finder to search a program across universities."],
     ]},
     { stage: "📝 Test prep", qa: [

@@ -654,10 +654,10 @@ function Home({ onGuide, onPractice, onNav }) {
             <div className="sa-band-text">
               <div className="eyebrow">🌍 Study abroad — free</div>
               <h2 className="h1" style={{ margin: "6px 0 8px" }}>Find your university, scholarships &amp; visa path</h2>
-              <p className="muted" style={{ maxWidth: 560 }}>99 top universities across 9 countries with fees, requirements, scholarships, visa-success rates, immigration & PR pathways — plus a college predictor, SOP builder and loan comparison. All free.</p>
+              <p className="muted" style={{ maxWidth: 560 }}>110 top universities across 15 countries with fees, requirements, scholarships, visa-success rates, immigration & PR pathways — plus a college predictor, SOP builder and loan comparison. All free.</p>
               <div style={{ marginTop: 16, display: "flex", gap: 10, flexWrap: "wrap" }}>
                 <button className="btn btn-primary" onClick={() => onNav("colleges")}>🏛️ Open College Predictor →</button>
-                <button className="btn" onClick={() => { window.location.hash = "#/colleges/apply"; onNav("colleges"); }}>🎓 Apply to 99+ universities</button>
+                <button className="btn" onClick={() => { window.location.hash = "#/colleges/apply"; onNav("colleges"); }}>🎓 Apply to 110+ universities</button>
               </div>
             </div>
             <div className="sa-band-flags">

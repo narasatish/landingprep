@@ -2044,14 +2044,15 @@ ${relatedGrid([
 }
 function intakeDeadlineIndex(byCountry) {
   const path = `/intakes/`;
-  const cards = Object.keys(INTAKE_NOTES).filter((c) => byCountry[c] && byCountry[c].length).map((c) => `<div class="card"><h2><a href="/intakes/${INTAKE_NOTES[c].slug}/">${esc(c)} — main intake: ${esc(INTAKE_NOTES[c].main)}</a></h2><p>Intake seasons, application timeline and typical deadlines for top universities in ${esc(c)}.</p><a class="tile" href="/intakes/${INTAKE_NOTES[c].slug}/">See ${esc(c)} deadlines →</a></div>`).join("");
+  const intakeCountries = Object.keys(INTAKE_NOTES).filter((c) => byCountry[c] && byCountry[c].length);
+  const cards = intakeCountries.map((c) => `<div class="card"><h2><a href="/intakes/${INTAKE_NOTES[c].slug}/">${esc(c)} — main intake: ${esc(INTAKE_NOTES[c].main)}</a></h2><p>Intake seasons, application timeline and typical deadlines for top universities in ${esc(c)}.</p><a class="tile" href="/intakes/${INTAKE_NOTES[c].slug}/">See ${esc(c)} deadlines →</a></div>`).join("");
   const faqs = [
     { q: "What is an intake when studying abroad?", a: "An intake is the term in which a university starts new students. Most countries have a main intake (the one with the most programmes and funding) and one or two smaller secondary intakes. Picking the main intake usually gives you the widest choice." },
     { q: "How early should I apply?", a: "Start 12–18 months before your intake and apply roughly 6–12 months ahead. Top universities and scholarships fill first, so applying early materially improves your chances." },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › Intakes &amp; Deadlines</p>
-<section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">9 countries</span><span class="badge">2026</span></div>
+<section class="hero"><div class="badges"><span class="badge">100% free</span><span class="badge">${intakeCountries.length} countries</span><span class="badge">2026</span></div>
 <h1>University Intakes &amp; Application Deadlines by Country (2026)</h1>
 <p class="lead">When to apply to study abroad — the main and secondary intakes, application timelines and typical university deadlines for every major destination. Free.</p>
 <a class="cta" href="/#/colleges">▶ Find your universities (free predictor)</a></section>
@@ -4948,12 +4949,12 @@ const LP_CMP = {
   mocks: "Unlimited free full-length mock tests",
   ai: "Free speaking partner + essay feedback",
   signup: "None — start instantly",
-  predictor: "Free — 99 universities, by your profile",
+  predictor: "Free — 110 universities, by your profile",
   sop: "Free SOP builder + sample library",
 };
 const lpPitch = (kind) => kind === "exam"
   ? `${BRAND} gives you unlimited full-length mock tests with real exam timing, instant scoring and an speaking partner that talks back — across IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT. There is no paywall and no signup, so you can start practising in seconds.`
-  : `${BRAND} gives you a free college predictor across 99 universities, an SOP builder with samples, a scholarship finder and free exam mock tests — everything to go from shortlisting to admission without paying for counselling, and with no signup.`;
+  : `${BRAND} gives you a free college predictor across 110 universities in 15 countries, an SOP builder with samples, a scholarship finder and free exam mock tests — everything to go from shortlisting to admission without paying for counselling, and with no signup.`;
 const COMPETITORS = [
   { slug: "magoosh", name: "Magoosh", what: "GRE, GMAT, IELTS & TOEFL prep", kind: "exam", exams: ["gre", "gmat", "ielts", "toefl"], coverShort: "GRE, GMAT, IELTS, TOEFL",
     their: { price: "Paid subscription (time-limited plans)", mocks: "Included in paid plan", ai: "Practice + scores; no live speaking partner", signup: "Account + payment", coverage: "GRE, GMAT, IELTS, TOEFL, SAT/ACT" },
@@ -5964,7 +5965,7 @@ const llms = `# LandingPrep — 100% Free Exam Prep & Study Abroad
 - [Smart Notes — free visual exam lessons](${ORIGIN}/learn/): concept maps, real examples, memory hooks & spaced-repetition recall for IELTS, TOEFL, PTE, GRE & GMAT
 - [Which English test should I take?](${ORIGIN}/which-english-test/): compare IELTS, TOEFL, PTE, CELPIP & Duolingo
 - [Explore all free tools & practice](${ORIGIN}/explore/): the full LandingPrep hub
-- [College predictor & study abroad](${ORIGIN}/#/colleges): admission chances across 99+ universities
+- [College predictor & study abroad](${ORIGIN}/#/colleges): admission chances across 110 universities in 15 countries
 - [Scholarships for international students](${ORIGIN}/scholarships/): fully-funded & partial awards
 - [Free alternatives to paid prep](${ORIGIN}/free-alternatives/): a genuinely free option vs. paid coaching
 - [Blog & study-abroad guides](${ORIGIN}/blog/): exam strategy, visa and scholarship guides
@@ -6000,7 +6001,7 @@ All include real exam question types, answer explanations, and sample solutions.
 - GRE/GMAT word lists for Quant and Verbal sections
 
 ### 5. Study Abroad Toolkit (Free)
-- **College Predictor**: Enter your exam scores → see your admission chances at 99+ universities (USA, UK, Canada, Australia, Germany, Ireland, New Zealand, Singapore, Netherlands)
+- **College Predictor**: Enter your exam scores → see your admission chances at 110 universities across 15 countries (USA, UK, Canada, Australia, Germany, Ireland, New Zealand, Singapore, Netherlands, Switzerland, Sweden, Hong Kong, Italy, Denmark, Finland)
 - **University Profiles**: Fees, deadlines, application process, IELTS/TOEFL/PTE requirements for each university
 - **Scholarships Database**: Fully-funded and partial awards for international students (sorted by country, field, eligibility)
 - **SOP/LOR/CV Builder**: AI-guided templates to write Statement of Purpose, Letter of Recommendation, and CV
