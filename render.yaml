@@ -27,6 +27,8 @@ services:
         sync: false        # long random string; same value as the GitHub ADMIN_SECRET secret (for weekly newsletter)
       - key: FIREBASE_SERVICE_ACCOUNT
         sync: false        # Firebase service-account JSON (one line) → makes user accounts durable across redeploys
+      - key: VAPID_PRIVATE
+        sync: false        # web-push PRIVATE key paired with the committed public VAPID key → enables the daily-practice + exam-date push reminders. Without it, subscriptions are still stored but no push is sent (graceful no-op). See docs/push-setup.md.
       - key: SMTP_USER
         value: support@landingprep.com
       - key: SMTP_HOST
