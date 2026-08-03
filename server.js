@@ -1505,7 +1505,18 @@ app.get("/api/push/key", (_req, res) => res.json({ key: VAPID_PUBLIC }));
 app.post("/api/push/subscribe", (req, res) => {
   const sub = req.body && req.body.subscription;
   if (!sub || !sub.endpoint) return res.status(400).json({ error: "subscription required" });
-  STORE.pushSubs[sub.endpoint] = { sub, ts: Date.now() };
+  const prev = STORE.pushSubs[sub.endpoint] || {};
+  const rec = { sub, ts: Date.now() };
+  // Optional exam-date reminder: fires server-side (even when the app is closed) at
+  // 7/3/1/0 days before. `exam` object → set; `exam: null` → clear; absent → preserve.
+  const hasExamField = req.body && Object.prototype.hasOwnProperty.call(req.body, "exam");
+  const exam = hasExamField ? req.body.exam : undefined;
+  if (exam && /^\d{4}-\d{2}-\d{2}$/.test(String(exam.date || ""))) {
+    rec.exam = { date: exam.date, name: String(exam.name || "exam").slice(0, 24), fired: [] };
+  } else if (exam === null) {
+    /* explicit clear — leave rec.exam undefined */
+  } else if (prev.exam) { rec.exam = prev.exam; }
+  STORE.pushSubs[sub.endpoint] = rec;
   if (Object.keys(STORE.pushSubs).length > 50000) { const k = Object.keys(STORE.pushSubs)[0]; delete STORE.pushSubs[k]; }
   persist(); fsSaveState("pushSubs");
   res.json({ ok: true });
@@ -1530,6 +1541,45 @@ app.post("/api/admin/send-push", async (req, res) => {
   }
   if (removed) { persist(); fsSaveState("pushSubs"); }
   res.json({ ok: true, subscribers: Object.keys(STORE.pushSubs).length, sent, removed });
+});
+
+// Cron: exam-countdown pushes. Hit ONCE A DAY (GitHub Action / cron-job.org) so
+// subscribers get a nudge at 7/3/1/0 days before their saved exam — even with the
+// app closed. Each milestone fires at most once; past exams are cleared.
+//   GET /api/admin/run-exam-reminders?key=ADMIN_SECRET
+app.get("/api/admin/run-exam-reminders", async (req, res) => {
+  if (!adminOK(req)) return res.status(403).json({ error: "Forbidden — pass ?key=ADMIN_SECRET" });
+  if (!webpush) return res.status(503).json({ error: "Push not configured — set VAPID_PRIVATE in Render env." });
+  const MS = [7, 3, 1, 0];
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  let checked = 0, sent = 0, pruned = 0, changed = false;
+  for (const [ep, rec] of Object.entries(STORE.pushSubs || {})) {
+    if (!rec || !rec.exam || !/^\d{4}-\d{2}-\d{2}$/.test(String(rec.exam.date || ""))) continue;
+    checked++;
+    const p = rec.exam.date.split("-").map(Number);
+    const exam = new Date(p[0], p[1] - 1, p[2]); exam.setHours(0, 0, 0, 0);
+    const days = Math.round((exam - today) / 86400000);
+    if (days < 0) { delete rec.exam; changed = true; continue; } // exam passed → clear
+    const fired = Array.isArray(rec.exam.fired) ? rec.exam.fired : [];
+    if (!MS.some((m) => days <= m && !fired.includes(m))) continue;
+    const name = rec.exam.name || "exam";
+    const title = days === 0 ? `${name} day! 🎯` : `${name} in ${days} day${days === 1 ? "" : "s"} ⏳`;
+    const body = days === 0
+      ? "Today's the day — good luck! Keep it light: a short warm-up, not a full mock."
+      : days === 1
+        ? `Your ${name} is tomorrow. One confidence run — a single section — then rest well.`
+        : `Your ${name} is in ${days} days. Time for a full timed mock to lock in your pacing.`;
+    const payload = JSON.stringify({ title, body, url: "/#/exam-prep" });
+    try {
+      await webpush.sendNotification(rec.sub, payload); sent++;
+      rec.exam.fired = Array.from(new Set(fired.concat(MS.filter((x) => days <= x)))); changed = true;
+    } catch (e) {
+      if (e && (e.statusCode === 404 || e.statusCode === 410)) { delete STORE.pushSubs[ep]; pruned++; changed = true; }
+    }
+    await new Promise((r) => setTimeout(r, 20));
+  }
+  if (changed) { persist(); fsSaveState("pushSubs"); }
+  res.json({ ok: true, checked, sent, pruned });
 });
 
 // Owner dashboard data (behind the admin key). Powers /admin/.

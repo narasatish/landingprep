@@ -38,6 +38,47 @@
     try { [EXAM_DATE, EXAM_NAME, EXAM_FIRED].forEach((k) => localStorage.removeItem(k)); } catch (e) {}
   }
 
+  // ── Server-side push (fires even when the app is closed) ──────────────────────
+  function urlB64ToUint8Array(base64) {
+    const pad = "=".repeat((4 - (base64.length % 4)) % 4);
+    const b64 = (base64 + pad).replace(/-/g, "+").replace(/_/g, "/");
+    const raw = atob(b64); const arr = new Uint8Array(raw.length);
+    for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+    return arr;
+  }
+  async function getPushSub() {
+    if (!("serviceWorker" in navigator) || !("PushManager" in window)) return null;
+    const key = window.LP_VAPID_PUBLIC; if (!key) return null;
+    const reg = await navigator.serviceWorker.ready;
+    let sub = await reg.pushManager.getSubscription();
+    if (!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: urlB64ToUint8Array(key) });
+    return sub;
+  }
+  // Register the exam with the backend so it can push at 7/3/1/0 days even when the
+  // app is closed. Best-effort: returns false (and the client-side nudge still works)
+  // if push is unsupported, blocked, or the server hasn't got VAPID_PRIVATE set.
+  async function registerExamPush(date, name) {
+    try {
+      const sub = await getPushSub(); if (!sub) return false;
+      const base = window.LP_API_BASE || "";
+      const r = await fetch(base + "/api/push/subscribe", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subscription: sub, exam: { date, name } }),
+      });
+      return r.ok;
+    } catch (e) { return false; }
+  }
+  async function clearExamPush() {
+    try {
+      const sub = await getPushSub(); if (!sub) return;
+      const base = window.LP_API_BASE || "";
+      await fetch(base + "/api/push/subscribe", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subscription: sub, exam: null }),
+      });
+    } catch (e) {}
+  }
+
   function isOptedIn() {
     try { return localStorage.getItem(OPT) === "1" && supported() && Notification.permission === "granted"; }
     catch (e) { return false; }
@@ -148,10 +189,13 @@
       if (daysUntil(date) < 0) { setMsg("That date is in the past."); return; }
       if (!isOptedIn()) { const r = await optIn(); if (!r.ok) { setMsg(r.error); return; } }
       setExam(date, name); setSet(true);
-      setMsg("Set — I'll nudge you 7, 3 & 1 days before, and on the day.");
-      setTimeout(() => setMsg(""), 4500);
+      const pushed = await registerExamPush(date, name);
+      setMsg(pushed
+        ? "Set — you'll be nudged 7, 3 & 1 days before (and on the day), even with the app closed."
+        : "Set — I'll nudge you 7, 3 & 1 days before, and on the day.");
+      setTimeout(() => setMsg(""), 5000);
     };
-    const clear = () => { clearExam(); setDate(""); setSet(false); setMsg("Exam reminder cleared."); setTimeout(() => setMsg(""), 3000); };
+    const clear = () => { clearExam(); clearExamPush(); setDate(""); setSet(false); setMsg("Exam reminder cleared."); setTimeout(() => setMsg(""), 3000); };
     return (
       <div className="exam-reminder">
         {set && left !== null && left >= 0
@@ -174,7 +218,7 @@
     );
   }
 
-  window.LP_REMINDERS = { optIn, optOut, isOptedIn, maybeRemind, checkExam, getExam, setExam, clearExam, daysUntil };
+  window.LP_REMINDERS = { optIn, optOut, isOptedIn, maybeRemind, checkExam, getExam, setExam, clearExam, daysUntil, registerExamPush, clearExamPush };
   window.LP_ReminderBell = ReminderBell;
   window.LP_ExamReminder = ExamReminder;
 })();

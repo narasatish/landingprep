@@ -4013,6 +4013,51 @@
     } catch (e) {
     }
   }
+  function urlB64ToUint8Array(base64) {
+    const pad = "=".repeat((4 - base64.length % 4) % 4);
+    const b64 = (base64 + pad).replace(/-/g, "+").replace(/_/g, "/");
+    const raw = atob(b64);
+    const arr = new Uint8Array(raw.length);
+    for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+    return arr;
+  }
+  async function getPushSub() {
+    if (!("serviceWorker" in navigator) || !("PushManager" in window)) return null;
+    const key = window.LP_VAPID_PUBLIC;
+    if (!key) return null;
+    const reg = await navigator.serviceWorker.ready;
+    let sub = await reg.pushManager.getSubscription();
+    if (!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: urlB64ToUint8Array(key) });
+    return sub;
+  }
+  async function registerExamPush(date, name) {
+    try {
+      const sub = await getPushSub();
+      if (!sub) return false;
+      const base = window.LP_API_BASE || "";
+      const r = await fetch(base + "/api/push/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subscription: sub, exam: { date, name } })
+      });
+      return r.ok;
+    } catch (e) {
+      return false;
+    }
+  }
+  async function clearExamPush() {
+    try {
+      const sub = await getPushSub();
+      if (!sub) return;
+      const base = window.LP_API_BASE || "";
+      await fetch(base + "/api/push/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subscription: sub, exam: null })
+      });
+    } catch (e) {
+    }
+  }
   function isOptedIn() {
     try {
       return localStorage.getItem(OPT) === "1" && supported() && Notification.permission === "granted";
@@ -4150,11 +4195,13 @@
       }
       setExam(date, name);
       setSet(true);
-      setMsg("Set \u2014 I'll nudge you 7, 3 & 1 days before, and on the day.");
-      setTimeout(() => setMsg(""), 4500);
+      const pushed = await registerExamPush(date, name);
+      setMsg(pushed ? "Set \u2014 you'll be nudged 7, 3 & 1 days before (and on the day), even with the app closed." : "Set \u2014 I'll nudge you 7, 3 & 1 days before, and on the day.");
+      setTimeout(() => setMsg(""), 5e3);
     };
     const clear = () => {
       clearExam();
+      clearExamPush();
       setDate("");
       setSet(false);
       setMsg("Exam reminder cleared.");
@@ -4181,7 +4228,7 @@
       }
     ), /* @__PURE__ */ React.createElement("button", { className: "btn btn-sm", onClick: save, style: { fontSize: 13 } }, set ? "Update" : "Set reminder"), set && /* @__PURE__ */ React.createElement("button", { className: "btn btn-sm", onClick: clear, style: { fontSize: 13, opacity: 0.75 } }, "Clear")), msg && /* @__PURE__ */ React.createElement("p", { className: "muted", style: { fontSize: 12, marginTop: 6 } }, msg));
   }
-  window.LP_REMINDERS = { optIn, optOut, isOptedIn, maybeRemind, checkExam, getExam, setExam, clearExam, daysUntil };
+  window.LP_REMINDERS = { optIn, optOut, isOptedIn, maybeRemind, checkExam, getExam, setExam, clearExam, daysUntil, registerExamPush, clearExamPush };
   window.LP_ReminderBell = ReminderBell;
   window.LP_ExamReminder = ExamReminder;
 })();

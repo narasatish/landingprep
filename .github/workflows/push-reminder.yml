@@ -20,3 +20,9 @@ jobs:
             -d '{"title":"LandingPrep","body":"Time for today’s free practice — keep your streak going! 🔥","url":"/#/exam-prep"}' \
             && echo "reminder sent" \
             || echo "skipped (ADMIN_SECRET/VAPID not configured, or no subscribers yet) — non-fatal"
+
+      - name: Fire exam-countdown reminders (7/3/1/0 days before each user's exam)
+        run: |
+          curl -fsS "https://landingprep.com/api/admin/run-exam-reminders?key=${{ secrets.ADMIN_SECRET }}" \
+            && echo "exam reminders processed" \
+            || echo "skipped (ADMIN_SECRET/VAPID not configured, or no exam subscribers yet) — non-fatal"

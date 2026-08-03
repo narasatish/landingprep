@@ -1179,6 +1179,43 @@ function renderBlogSection(s, lk) {
   h += `</div>`;
   return h;
 }
+
+// Interactive IELTS↔TOEFL converter, embedded on the post that already ranks for
+// "ielts to toefl" (pos ~21) — matches the tool intent without a duplicate page.
+// Uses the official ETS concordance; vanilla JS runs on the static prerendered page.
+function ieltsToeflConverterWidget() {
+  return `<div class="card" id="ietc" style="border:1px solid #c7d2fe;background:#f8faff">
+<h2 style="margin-top:0">Interactive IELTS ↔ TOEFL converter</h2>
+<p class="muted" style="margin:0 0 10px;font-size:13px">Based on the official ETS concordance. Ranges are approximate — always confirm the exact score your university requires.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px">
+  <div><label for="ietc-ielts" style="font-weight:700;font-size:14px">Your IELTS band</label><br>
+    <select id="ietc-ielts" style="margin-top:6px;padding:8px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:14px;width:100%">
+      <option value="">Select band…</option>
+      <option>9.0</option><option>8.5</option><option>8.0</option><option>7.5</option><option selected>7.0</option><option>6.5</option><option>6.0</option><option>5.5</option><option>5.0</option><option>4.5</option>
+    </select>
+    <p id="ietc-out1" style="margin:10px 0 0;font-size:15px;font-weight:700;color:#4338ca">≈ TOEFL iBT 94–101</p></div>
+  <div><label for="ietc-toefl" style="font-weight:700;font-size:14px">Your TOEFL iBT score</label><br>
+    <input id="ietc-toefl" type="number" min="0" max="120" placeholder="e.g. 100" style="margin-top:6px;padding:8px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:14px;width:100%">
+    <p id="ietc-out2" style="margin:10px 0 0;font-size:15px;font-weight:700;color:#4338ca">Enter a score 0–120</p></div>
+</div>
+<p style="margin:12px 0 0;font-size:13px"><a href="/tools/english-test-score-converter/">Need PTE, CEFR or Duolingo too? Use the full score converter →</a></p>
+<script>
+(function(){
+  var T={9:"118–120",8.5:"115–117",8:"110–114",7.5:"102–109",7:"94–101",6.5:"79–93",6:"60–78",5.5:"46–59",5:"35–45",4.5:"32–34"};
+  var bands=[[118,"9.0"],[115,"8.5"],[110,"8.0"],[102,"7.5"],[94,"7.0"],[79,"6.5"],[60,"6.0"],[46,"5.5"],[35,"5.0"],[32,"4.5"]];
+  var s=document.getElementById("ietc-ielts"),o1=document.getElementById("ietc-out1"),
+      t=document.getElementById("ietc-toefl"),o2=document.getElementById("ietc-out2");
+  function i2t(){var v=parseFloat(s.value);o1.textContent=T[v]?("≈ TOEFL iBT "+T[v]):"Select a band";}
+  function t2i(){var n=parseInt(t.value,10);if(isNaN(n)||n<0||n>120){o2.textContent="Enter a score 0–120";return;}var b="below 4.5";for(var i=0;i<bands.length;i++){if(n>=bands[i][0]){b="IELTS "+bands[i][1];break;}}o2.textContent="≈ "+b;}
+  if(s){s.addEventListener("change",i2t);i2t();}
+  if(t){t.addEventListener("input",t2i);}
+})();
+</script></div>`;
+}
+const BLOG_WIDGETS = {
+  "ielts-to-toefl-score-conversion-2026": ieltsToeflConverterWidget(),
+};
+
 function blogPage(a) {
   const path = `/blog/${a.id}/`;
   const title = `${a.title} | ${BRAND}`;
@@ -1219,6 +1256,7 @@ function blogPage(a) {
   <a class="cta" href="/#/colleges">▶ Free College Predictor &amp; study-abroad tools</a>
 </section>
 ${expiredBanner}${qaBlock}
+${(typeof BLOG_WIDGETS !== "undefined" && BLOG_WIDGETS[a.id]) || a.topHtml || ""}
 ${sectionsHtml}
 ${faqs.length ? faqBlock(faqs) : ""}
 ${relatedArticles(a)}
