@@ -174,17 +174,23 @@
   }
   </script>
 
-  <!-- Structured Data: WebSite (entity for search + AI answer engines) -->
+  <!-- Structured Data: WebSite (single canonical entity — search, AI answer engines + Sitelinks Search Box) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "LandingPrep",
+    "alternateName": "LandingPrep Free Mock Tests",
     "url": "https://landingprep.com",
     "description": "100% free mock tests, AI band-score checker, prep lessons, language courses and a study-abroad toolkit for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT.",
     "inLanguage": "en",
     "isAccessibleForFree": true,
-    "publisher": {"@type":"Organization","name":"LandingPrep","logo":"https://landingprep.com/og-image.png"}
+    "publisher": {"@type":"Organization","name":"LandingPrep","logo":"https://landingprep.com/og-image.png"},
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": { "@type": "EntryPoint", "urlTemplate": "https://landingprep.com/#/exam-prep?q={search_term_string}" },
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
 
@@ -241,22 +247,6 @@
   }
   </script>
 
-  <!-- Structured Data: WebSite + Sitelinks Search Box -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "LandingPrep",
-    "alternateName": "LandingPrep Free Mock Tests",
-    "url": "https://landingprep.com/",
-    "inLanguage": "en",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": { "@type": "EntryPoint", "urlTemplate": "https://landingprep.com/#/exam-prep?q={search_term_string}" },
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
 
   <!-- Structured Data: Courses (free) for all 7 exams -->
   <script type="application/ld+json">
@@ -326,8 +316,8 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=393" />
-  <link rel="stylesheet" href="pro.css?v=393" />
+  <link rel="stylesheet" href="theme.css?v=394" />
+  <link rel="stylesheet" href="pro.css?v=394" />
 </head>
 <body>
   <!-- #root holds a real, crawlable homepage fallback in the raw HTML. React
@@ -386,8 +376,8 @@
 
   <!-- React 18.3.1 PRODUCTION (minified), SELF-HOSTED: same-origin load avoids a third-party
        DNS+TLS handshake on first paint → faster LCP, and it's precached by the service worker. -->
-  <script src="vendor/react.production.min.js?v=393"></script>
-  <script src="vendor/react-dom.production.min.js?v=393"></script>
+  <script src="vendor/react.production.min.js?v=394"></script>
+  <script src="vendor/react-dom.production.min.js?v=394"></script>
   <!-- Failover: if the local copy ever fails to define React, boot from unpkg, then jsdelivr. -->
   <script>
     if (!window.React) document.write('<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"><\/script>');
@@ -397,7 +387,7 @@
   </script>
 
   <!-- Data layer -->
-  <script defer src="app-bundle.js?v=393"></script>
+  <script defer src="app-bundle.js?v=394"></script>
   <!-- data-questions.js (~142 KB) is lazy-loaded with the test runner via MockTestGate when a mock starts -->
 
   <!-- Auth + Smart Tutor + Chatbot (must load before screens) -->
