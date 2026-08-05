@@ -413,6 +413,21 @@ const jsonld = (obj) => `<script type="application/ld+json">${JSON.stringify(obj
 
 // SEO hygiene: keep <title> ≤ ~60 chars (preserving the "| Brand" suffix) and the meta
 // description ≤ ~158 chars, trimmed on a word boundary so Google doesn't cut them mid-word.
+// A word-boundary cut can land INSIDE a parenthetical, leaving an orphaned opening bracket
+// that ships verbatim to the SERP — "Study in Canada 2026: Complete Guide (Costs | Brand".
+// Trailing-punctuation stripping does not catch it because the "(" is not at the end. When
+// the cut orphaned a bracket, drop the whole incomplete parenthetical: a clean shorter title
+// reads better than half a phrase. Loops because a title may contain more than one.
+function dropUnclosedParen(s) {
+  if (!s) return s;
+  let out = s;
+  while ((out.match(/\(/g) || []).length > (out.match(/\)/g) || []).length) {
+    const at = out.lastIndexOf("(");
+    if (at < 0) break;
+    out = out.slice(0, at).replace(/\s*&[a-z0-9#;]*$/i, "").replace(/[\s,;:&|·•–—-]+$/, "");
+  }
+  return out;
+}
 function trimTitle(t) {
   if (!t || t.length <= 60) return t;
   const i = t.lastIndexOf(" | ");
@@ -421,14 +436,21 @@ function trimTitle(t) {
     let base = t.slice(0, i).replace(/\s*\(2026\)\s*$/, "");
     const room = 60 - brand.length;
     if (base.length > room) { const cut = base.slice(0, room); const sp = cut.lastIndexOf(" "); base = (sp > 20 ? cut.slice(0, sp) : cut).replace(/\s*&[a-z0-9#;]*$/i, "").replace(/[\s,;:&|·•–—-]+$/, ""); }
-    return base + brand;
+    return dropUnclosedParen(base) + brand;
   }
-  const cut = t.slice(0, 60); const sp = cut.lastIndexOf(" "); return (sp > 20 ? cut.slice(0, sp) : cut).replace(/\s*&[a-z0-9#;]*$/i, "").replace(/[\s,;:&|·•–—-]+$/, "");
+  const cut = t.slice(0, 60); const sp = cut.lastIndexOf(" "); return dropUnclosedParen((sp > 20 ? cut.slice(0, sp) : cut).replace(/\s*&[a-z0-9#;]*$/i, "").replace(/[\s,;:&|·•–—-]+$/, ""));
 }
 function trimDesc(d) {
   if (!d || d.length <= 160) return d;
   const cut = d.slice(0, 157); const sp = cut.lastIndexOf(" ");
-  return (sp > 120 ? cut.slice(0, sp) : cut).replace(/[\s,;:–-]+$/, "") + "…";
+  // Same orphaned-bracket problem as trimTitle, but the fix differs. A description is a
+  // sentence, and the parenthetical (typically a cost breakdown) often starts early — so
+  // DROPPING it, as trimTitle does, would bin most of the useful text and leave a 60-char
+  // description in a 160-char budget. Closing the bracket instead keeps the content and
+  // still reads correctly: "(accommodation GBP 700-1,200, food GBP 250-400, transport…)".
+  const base = (sp > 120 ? cut.slice(0, sp) : cut).replace(/[\s,;:–-]+$/, "");
+  const unclosed = (base.match(/\(/g) || []).length - (base.match(/\)/g) || []).length;
+  return base + "…" + (unclosed > 0 ? ")".repeat(unclosed) : "");
 }
 // Shorten long university names so <title>s stay complete (never trimmed mid-name
 // by trimTitle). Explicit map for the big, commonly-searched ones; generic rules
@@ -704,6 +726,20 @@ function emit(path, html, opts) {
   PAGES.push({ path, html });
 }
 
+// Curated deep links from an exam's hub pages (mock + practice) to that exam's strongest
+// asset page. Added after measuring inbound internal links across the whole sitemap: the
+// two best-performing pages in Search Console were among the WORST linked —
+// /gmat-quant-formulas/ (the #1 page by impressions) had 2 inbound links, and
+// /blog/ielts-to-toefl-score-conversion-2026/ (position ~21, the closest to page one) had
+// exactly 1, from the blog index. Internal linking is the one ranking lever fully under our
+// control, so point the relevant exam hubs at them. Keep this list SHORT and topical —
+// blanket link-stuffing is what the March-2026 update penalises.
+const EXAM_ASSET_LINK = {
+  gmat: { label: "GMAT Quant formula sheet (free, printable)", href: "/gmat-quant-formulas/" },
+  ielts: { label: "IELTS ↔ TOEFL score conversion table", href: "/blog/ielts-to-toefl-score-conversion-2026/" },
+  toefl: { label: "IELTS ↔ TOEFL score conversion table", href: "/blog/ielts-to-toefl-score-conversion-2026/" },
+};
+
 // ── Page builders ───────────────────────────────────────────────────────────
 function mockPage(id) {
   const e = EXAMS[id];
@@ -756,6 +792,7 @@ ${relatedGrid([
   ...(["ielts", "toefl", "pte", "gre", "gmat", "duolingo", "sat", "celpip", "act", "oet", "cambridge"].includes(id) ? [{ label: `${e.short} Smart Notes — visual lessons & recall`, href: `/learn/${id}/` }] : []),
   { label: `${e.short} practice test (section by section)`, href: `/practice/${id}/` },
   { label: `${e.short} score calculator & converter`, href: `/tools/english-test-score-converter/` },
+  ...(EXAM_ASSET_LINK[id] ? [EXAM_ASSET_LINK[id]] : []),
   { label: `${e.short} speaking & writing practice`, href: `/#/agents` },
   { label: `All free exams`, href: `/#/exam-prep` },
 ])}`;
@@ -801,6 +838,7 @@ ${relatedGrid([
   ...(["ielts", "toefl", "pte", "gre", "gmat", "duolingo", "sat", "celpip", "act", "oet", "cambridge"].includes(id) ? [{ label: `${e.short} Smart Notes — visual lessons & recall`, href: `/learn/${id}/` }] : []),
   { label: `${e.short} eligibility by country`, href: `/eligibility/` },
   { label: `Free study tools`, href: `/tools/english-test-score-converter/` },
+  ...(EXAM_ASSET_LINK[id] ? [EXAM_ASSET_LINK[id]] : []),
   { label: `All free exams`, href: `/#/exam-prep` },
 ])}`;
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
@@ -898,6 +936,9 @@ ${relatedGrid([
   { label: `IELTS Smart Notes — visual lessons & recall`, href: `/learn/ielts/` },
   { label: `Free IELTS mock test`, href: `/mock-test/ielts/` },
   { label: `Free TOEFL mock test`, href: `/mock-test/toefl/` },
+  // The converter tool and the conversion explainer answer the same question in different
+  // formats; linking them is genuinely useful and lifts a page sitting just off page one.
+  ...(slug === "english-test-score-converter" ? [{ label: `IELTS ↔ TOEFL score conversion explained`, href: `/blog/ielts-to-toefl-score-conversion-2026/` }] : []),
   { label: `Score requirements by country`, href: `/eligibility/` },
   { label: `Compare the tests`, href: `/english-test-comparisons/` },
   { label: `All free exams`, href: `/#/exam-prep` },
@@ -5922,6 +5963,25 @@ const lastmodFor = new Map();
   if (clashes.length) {
     console.warn(`\n  ⚠ DUPLICATE <title> across ${clashes.length} indexed page group(s):`);
     for (const [t, paths] of clashes.slice(0, 10)) console.warn(`     "${t}"\n       ${paths.join("\n       ")}`);
+  }
+}
+
+// Guard: the same clamp can cut INSIDE a parenthetical and ship "… Guide (Costs | Brand"
+// straight to the SERP. dropUnclosedParen() handles it at trim time; this asserts the result
+// on every indexed page so a new title format can't quietly reintroduce it. Warn-only, in
+// keeping with the duplicate-title guard above — the SEO audit is the build-failing gate.
+{
+  const malformed = [];
+  for (const { path, html } of PAGES) {
+    if (THIN_PATHS.has(path)) continue;
+    const t = (html.match(/<title>([^<]*)<\/title>/) || [])[1];
+    if (!t) continue;
+    const dec = t.replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+    if ((dec.match(/\(/g) || []).length !== (dec.match(/\)/g) || []).length) malformed.push([path, dec]);
+  }
+  if (malformed.length) {
+    console.warn(`\n  ⚠ MALFORMED <title> (unbalanced parenthesis) on ${malformed.length} indexed page(s):`);
+    for (const [p, t] of malformed.slice(0, 15)) console.warn(`     ${p}\n       "${t}"`);
   }
 }
 

@@ -102,7 +102,16 @@ for (const [route, file] of diskRoutes) {
       const cr = can.replace(BASE, "");
       const want = route;
       if (cr !== want && cr + "/" !== want && cr !== want.replace(/\/$/, "")) {
-        warnings.push(`CANONICAL-MISMATCH: ${route} → canonical points to ${cr}`);
+        // Pointing elsewhere is legitimate when it is a deliberate consolidation of a
+        // near-duplicate — but ONLY if the target actually exists and is itself indexable.
+        // A canonical aimed at a missing or noindexed page silently deletes this page from
+        // the index, so that stays a warning.
+        const tgt = cr.endsWith("/") ? cr : cr + "/";
+        const tgtFile = diskRoutes.get(tgt);
+        const tgtOk = !!tgtFile
+          && (sitemapRoutes.has(tgt) || sitemapRoutes.has(tgt.replace(/\/$/, "")))
+          && !/<meta\s+name="robots"\s+content="[^"]*noindex/i.test(fs.readFileSync(tgtFile, "utf8"));
+        if (!tgtOk) warnings.push(`CANONICAL-MISMATCH: ${route} → canonical points to ${cr} (target missing, noindexed, or not in sitemap)`);
       }
     }
     // JSON-LD validity

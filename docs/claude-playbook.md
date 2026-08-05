@@ -33,9 +33,16 @@ dropped because of ~1,175 URLs, many of them thin programmatic combos.
 - **Aggressive keyword density** — real phrases Indians type: "free NCERT notes Class 10",
   "JEE mock test free 2026", "CBSE Class 10 Maths important chapters"
 
-**Be aggressive on keywords — Syllab's content is FREE.** Every page description should contain:
-"free", the class/exam name, "India" or "Indian students", and the action ("practice",
+**Be aggressive on keywords — LandingPrep's content is FREE.** Every page description should
+contain: "free", the exam name, "India" or "Indian students", and the action ("practice",
 "mock test", "notes", "AI tutor").
+
+> ⚠️ **This is the LandingPrep repo. Never write "Syllab" (a different project) into content,
+> docs or config.** A QA sweep found Syllab branding live on 10 GMAT/PTE/TOEFL prep-lesson
+> decks — on the final "Next Steps" slide, recommending a different site to LandingPrep's own
+> users. Fixed in v395. Also note LandingPrep's **AI feedback tools are IELTS-only** (Writing
+> and Speaking band checkers, Speaking Partner) — do NOT claim AI feedback for PTE/GMAT/TOEFL,
+> and do not claim "unlimited" or "100+ mocks" anywhere; neither is verifiable.
 
 ## Debugging Lessons (HARD-LEARNED — check these FIRST)
 
