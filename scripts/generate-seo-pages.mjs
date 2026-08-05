@@ -272,10 +272,15 @@ const TOOLS = {
     return best;
   }
   function rng(a){return a[0]===a[1]?(''+a[0]):(a[0]+'–'+a[1]);}
+  // pick() snaps to the NEAREST row, so without a bounds check a typo like IELTS "99"
+  // silently returned a confident "IELTS 9.0 · C2" instead of flagging the input.
+  var LIMITS={ielts:[0,9,'0–9'],toefl:[0,120,'0–120'],pte:[10,90,'10–90'],duo:[10,160,'10–160']};
   function calc(){
     var out=g('cv_out');if(!out)return;
     var test=g('cv_test').value,v=g('cv_score').value,sc=parseFloat(v);
     if(v===''||isNaN(sc)){out.innerHTML='<div class="callout"><span class="ic">✏️</span><div>Enter your score to see the equivalents.</div></div>';return;}
+    var lim=LIMITS[test];
+    if(lim&&(sc<lim[0]||sc>lim[1])){out.innerHTML='<div class="callout"><span class="ic">⚠️</span><div>Enter a valid score in the range <strong>'+lim[2]+'</strong> for this test.</div></div>';return;}
     var r=pick(test,sc);
     out.innerHTML='<div class="callout money"><span class="ic">🔁</span><div><strong>Approximate equivalent</strong><br>'
       +'IELTS <strong>'+r.ielts.toFixed(1)+'</strong> · TOEFL iBT <strong>'+rng(r.toefl)+'</strong> · PTE <strong>'+rng(r.pte)+'</strong> · CEFR <strong>'+r.cefr+'</strong> · Duolingo <strong>'+rng(r.duo)+'</strong>'
@@ -428,17 +433,51 @@ function dropUnclosedParen(s) {
   }
   return out;
 }
+// Cutting on a word boundary keeps whole words but not whole PHRASES. Two ways it still
+// ships a broken snippet to the SERP:
+//   1. it strands a function word — "Working While Studying Abroad: Rules by"
+//   2. it severs a comma/ampersand list — "Best Countries to Study Abroad 2026: USA",
+//      where the real title continues ", Canada, UK, Australia".
+// Both read as a sentence that got interrupted. Walk the cut back to the last point the
+// text is grammatically self-contained; a shorter complete title beats a longer broken one.
+const STRANDED_WORD = /[\s]+(?:and|or|the|a|an|for|with|to|in|of|by|on|from|vs|via|your|&)$/i;
+// Words that exist to modify a NOUN that follows. If the untrimmed title continues with
+// another word, a title ending on one of these is a noun phrase sliced in half —
+// "IELTS to TOEFL Score Conversion: Official" (…Concordance Table 2026).
+const STRANDED_MODIFIER = /[\s]+(?:official|complete|full|free|best|top|new|higher|common|detailed|comprehensive|ultimate|essential|advanced|basic|sample|real|latest|proof|accepted)$/i;
+// Runs to a fixed point, because each repair can expose the next one: dropping the stranded
+// "vs" from "…Should I Take? IELTS vs" reveals that "IELTS" is itself a severed list item.
+function dropDanglingTail(base, source) {
+  let out = base, prev;
+  do {
+    prev = out;
+    // `source` is the untrimmed text this was cut from, so what follows the cut tells us
+    // whether we landed mid-list. Separator may be a comma, an ampersand or " vs ".
+    if (/^\s*(?:[,&]|vs\b)/i.test(source.slice(out.length))) {
+      // Fall back to the previous complete list item. If the severed item was the FIRST one
+      // after a colon, drop the whole colon clause rather than leave a trailing "Title:".
+      // A "?" is kept — "Which English Test Should I Take?" is complete on its own.
+      const at = Math.max(out.lastIndexOf(","), out.lastIndexOf(":"), out.lastIndexOf("?"));
+      if (at > 20) out = out.slice(0, out[at] === "?" ? at + 1 : at);
+    }
+    // Cut landed mid-phrase (the source continues straight into another word).
+    if (/^\s*[A-Za-z0-9]/.test(source.slice(out.length))) out = out.replace(STRANDED_MODIFIER, "");
+    out = out.replace(STRANDED_WORD, "").replace(/[\s,;:&|·•–—-]+$/, "");
+  } while (out !== prev && out.length > 20);
+  return out;
+}
 function trimTitle(t) {
   if (!t || t.length <= 60) return t;
   const i = t.lastIndexOf(" | ");
   if (i > 12) {
     const brand = t.slice(i);
-    let base = t.slice(0, i).replace(/\s*\(2026\)\s*$/, "");
+    const source = t.slice(0, i).replace(/\s*\(2026\)\s*$/, "");
+    let base = source;
     const room = 60 - brand.length;
-    if (base.length > room) { const cut = base.slice(0, room); const sp = cut.lastIndexOf(" "); base = (sp > 20 ? cut.slice(0, sp) : cut).replace(/\s*&[a-z0-9#;]*$/i, "").replace(/[\s,;:&|·•–—-]+$/, ""); }
+    if (base.length > room) { const cut = base.slice(0, room); const sp = cut.lastIndexOf(" "); base = dropDanglingTail((sp > 20 ? cut.slice(0, sp) : cut).replace(/\s*&[a-z0-9#;]*$/i, "").replace(/[\s,;:&|·•–—-]+$/, ""), source); }
     return dropUnclosedParen(base) + brand;
   }
-  const cut = t.slice(0, 60); const sp = cut.lastIndexOf(" "); return dropUnclosedParen((sp > 20 ? cut.slice(0, sp) : cut).replace(/\s*&[a-z0-9#;]*$/i, "").replace(/[\s,;:&|·•–—-]+$/, ""));
+  const cut = t.slice(0, 60); const sp = cut.lastIndexOf(" "); return dropUnclosedParen(dropDanglingTail((sp > 20 ? cut.slice(0, sp) : cut).replace(/\s*&[a-z0-9#;]*$/i, "").replace(/[\s,;:&|·•–—-]+$/, ""), t));
 }
 function trimDesc(d) {
   if (!d || d.length <= 160) return d;
@@ -5977,11 +6016,18 @@ const lastmodFor = new Map();
     const t = (html.match(/<title>([^<]*)<\/title>/) || [])[1];
     if (!t) continue;
     const dec = t.replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"');
-    if ((dec.match(/\(/g) || []).length !== (dec.match(/\)/g) || []).length) malformed.push([path, dec]);
+    if ((dec.match(/\(/g) || []).length !== (dec.match(/\)/g) || []).length) malformed.push([path, dec, "unbalanced parenthesis"]);
+    // Same failure class, different shape: a title left hanging on a function word.
+    // dropDanglingTail() handles it at trim time; assert the shipped result too.
+    else {
+      const bare = dec.replace(/\s*\|\s*LandingPrep\s*$/, "");
+      if (STRANDED_WORD.test(bare)) malformed.push([path, dec, "ends on a stranded function word"]);
+      else if (STRANDED_MODIFIER.test(bare)) malformed.push([path, dec, "ends on a stranded modifier"]);
+    }
   }
   if (malformed.length) {
-    console.warn(`\n  ⚠ MALFORMED <title> (unbalanced parenthesis) on ${malformed.length} indexed page(s):`);
-    for (const [p, t] of malformed.slice(0, 15)) console.warn(`     ${p}\n       "${t}"`);
+    console.warn(`\n  ⚠ MALFORMED <title> on ${malformed.length} indexed page(s):`);
+    for (const [p, t, why] of malformed.slice(0, 15)) console.warn(`     ${p}  (${why})\n       "${t}"`);
   }
 }
 
@@ -6022,6 +6068,9 @@ const urls = [
 ];
 // The SPA homepage ships a fresh build every deploy, so it legitimately changes.
 lastmodFor.set(`${ORIGIN}/`, BUILD_DATE);
+// hreflang here MUST match what head() puts on the page itself (see the `hreflang="en"`
+// tags above). The sitemap said en-IN while every page said en — two contradictory answers
+// to the same question, on all 811 URLs. Single worldwide English site => en + x-default.
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls.map((u) => `  <url>
@@ -6029,7 +6078,7 @@ ${urls.map((u) => `  <url>
     <lastmod>${lastmodFor.get(u.loc) || PRIOR_LASTMOD.get(u.loc) || BUILD_DATE}</lastmod>
     <changefreq>${u.freq}</changefreq>
     <priority>${u.pri}</priority>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="${u.loc}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="${u.loc}"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="${u.loc}"/>
   </url>`).join("\n")}
 </urlset>

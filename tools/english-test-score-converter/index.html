@@ -137,10 +137,15 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:
     return best;
   }
   function rng(a){return a[0]===a[1]?(''+a[0]):(a[0]+'–'+a[1]);}
+  // pick() snaps to the NEAREST row, so without a bounds check a typo like IELTS "99"
+  // silently returned a confident "IELTS 9.0 · C2" instead of flagging the input.
+  var LIMITS={ielts:[0,9,'0–9'],toefl:[0,120,'0–120'],pte:[10,90,'10–90'],duo:[10,160,'10–160']};
   function calc(){
     var out=g('cv_out');if(!out)return;
     var test=g('cv_test').value,v=g('cv_score').value,sc=parseFloat(v);
     if(v===''||isNaN(sc)){out.innerHTML='<div class="callout"><span class="ic">✏️</span><div>Enter your score to see the equivalents.</div></div>';return;}
+    var lim=LIMITS[test];
+    if(lim&&(sc<lim[0]||sc>lim[1])){out.innerHTML='<div class="callout"><span class="ic">⚠️</span><div>Enter a valid score in the range <strong>'+lim[2]+'</strong> for this test.</div></div>';return;}
     var r=pick(test,sc);
     out.innerHTML='<div class="callout money"><span class="ic">🔁</span><div><strong>Approximate equivalent</strong><br>'
       +'IELTS <strong>'+r.ielts.toFixed(1)+'</strong> · TOEFL iBT <strong>'+rng(r.toefl)+'</strong> · PTE <strong>'+rng(r.pte)+'</strong> · CEFR <strong>'+r.cefr+'</strong> · Duolingo <strong>'+rng(r.duo)+'</strong>'

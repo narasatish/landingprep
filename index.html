@@ -62,12 +62,32 @@
           into BOTH places below, then uncomment the two <script> lines.
   ===================================================================================== -->
   <!-- <meta name="google-site-verification" content="PASTE_YOUR_GSC_TOKEN_HERE" /> -->
-  <!-- Google Analytics 4 (GA4) — LandingPrep -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ60SKWWKH"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XZ60SKWWKH');</script>
-  <!-- Microsoft Clarity — free heatmaps + session recordings (UX/CWV insight) -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","x4zj933n8s");
+  <!-- Google Analytics 4 (GA4) + Microsoft Clarity — LandingPrep.
+       The QUEUES are created immediately (cheap, no network) so nothing measured before
+       boot is lost; only the two third-party SCRIPTS are deferred. Loaded eagerly they
+       cost ~4s of main-thread time on a Lighthouse mobile trace (clarity.js 2,494ms +
+       gtag 1,561ms) and were the single biggest contributor to LCP 9.7s / TBT 5,220ms on
+       the homepage. Analytics is measurement, not content — it can wait for the first
+       interaction, or 3.5s after load if the visitor never interacts. -->
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XZ60SKWWKH');window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments)};</script>
+  <script>
+    (function () {
+      var EVENTS = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
+      var OPTS = { once: true, passive: true, capture: true };
+      var started = false;
+      function boot() {
+        if (started) return; started = true;
+        EVENTS.forEach(function (e) { window.removeEventListener(e, boot, OPTS); });
+        var g = document.createElement('script');
+        g.async = 1; g.src = 'https://www.googletagmanager.com/gtag/js?id=G-XZ60SKWWKH';
+        document.head.appendChild(g);
+        var c = document.createElement('script');
+        c.async = 1; c.src = 'https://www.clarity.ms/tag/x4zj933n8s';
+        document.head.appendChild(c);
+      }
+      EVENTS.forEach(function (e) { window.addEventListener(e, boot, OPTS); });
+      window.addEventListener('load', function () { setTimeout(boot, 3500); });
+    })();
   </script>
 
   <!-- ════════ BACKEND API LOCATION ════════════════════════════════════════════
@@ -133,7 +153,7 @@
   <meta property="og:image" content="https://landingprep.com/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="LandingPrep â€” Free IELTS, TOEFL, GRE Mock Tests" />
+  <meta property="og:image:alt" content="LandingPrep — Free IELTS, TOEFL, GRE Mock Tests" />
 
   <!-- â•â•â• Twitter Card â•â•â• -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -316,8 +336,8 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=401" />
-  <link rel="stylesheet" href="pro.css?v=401" />
+  <link rel="stylesheet" href="theme.css?v=405" />
+  <link rel="stylesheet" href="pro.css?v=405" />
 </head>
 <body>
   <!-- Keyboard users land on the nav first and would otherwise tab through every link
@@ -379,8 +399,8 @@
 
   <!-- React 18.3.1 PRODUCTION (minified), SELF-HOSTED: same-origin load avoids a third-party
        DNS+TLS handshake on first paint → faster LCP, and it's precached by the service worker. -->
-  <script src="vendor/react.production.min.js?v=401"></script>
-  <script src="vendor/react-dom.production.min.js?v=401"></script>
+  <script src="vendor/react.production.min.js?v=405"></script>
+  <script src="vendor/react-dom.production.min.js?v=405"></script>
   <!-- Failover: if the local copy ever fails to define React, boot from unpkg, then jsdelivr. -->
   <script>
     if (!window.React) document.write('<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"><\/script>');
@@ -390,7 +410,7 @@
   </script>
 
   <!-- Data layer -->
-  <script defer src="app-bundle.js?v=401"></script>
+  <script defer src="app-bundle.js?v=405"></script>
   <!-- data-questions.js (~142 KB) is lazy-loaded with the test runner via MockTestGate when a mock starts -->
 
   <!-- Auth + Smart Tutor + Chatbot (must load before screens) -->
